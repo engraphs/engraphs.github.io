@@ -1,0 +1,10 @@
+s/d_1_A_Hirodai_mission.html/1_d_A_Hirodai_mission.html/g
+s/d_2_A_Hirodai_mission.html/2_d_A_Hirodai_mission.html/g
+s/d_3_A_Hirodai_mission.html/2_d_A_Hirodai_mission.html/g
+s/d_4_A_Hirodai_mission.html/3_d_A_Hirodai_mission.html/g
+s/d_5_A_Hirodai_mission.html/4_d_A_Hirodai_mission.html/g
+s/d_6_A_Hirodai_mission.html/4_d_A_Hirodai_mission.html/g
+s/d_7_A_Hirodai_mission.html/5_d_A_Hirodai_mission.html/g
+s/d_8_A_Hirodai_mission.html/6_d_A_Hirodai_mission.html/g
+s/d_9_A_Hirodai_mission.html/7_d_A_Hirodai_mission.html/g
+s/d_10_A_Hirodai_mission.html/8_d_A_Hirodai_mission.html/g

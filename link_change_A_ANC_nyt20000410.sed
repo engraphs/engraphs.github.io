@@ -1,0 +1,13 @@
+s/d_1_A_ANC_nyt20000410.html/1_d_A_ANC_nyt20000410.html/g
+s/d_2_A_ANC_nyt20000410.html/2_d_A_ANC_nyt20000410.html/g
+s/d_3_A_ANC_nyt20000410.html/3_d_A_ANC_nyt20000410.html/g
+s/d_4_A_ANC_nyt20000410.html/3_d_A_ANC_nyt20000410.html/g
+s/d_5_A_ANC_nyt20000410.html/4_d_A_ANC_nyt20000410.html/g
+s/d_6_A_ANC_nyt20000410.html/5_d_A_ANC_nyt20000410.html/g
+s/d_7_A_ANC_nyt20000410.html/5_d_A_ANC_nyt20000410.html/g
+s/d_8_A_ANC_nyt20000410.html/6_d_A_ANC_nyt20000410.html/g
+s/d_9_A_ANC_nyt20000410.html/7_d_A_ANC_nyt20000410.html/g
+s/d_10_A_ANC_nyt20000410.html/8_d_A_ANC_nyt20000410.html/g
+s/d_11_A_ANC_nyt20000410.html/8_d_A_ANC_nyt20000410.html/g
+s/d_12_A_ANC_nyt20000410.html/8_d_A_ANC_nyt20000410.html/g
+s/d_13_A_ANC_nyt20000410.html/9_d_A_ANC_nyt20000410.html/g

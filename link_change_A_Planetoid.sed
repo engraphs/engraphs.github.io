@@ -1,0 +1,17 @@
+s/d_1_A_Planetoid.html/1_d_A_Planetoid.html/g
+s/d_2_A_Planetoid.html/2_d_A_Planetoid.html/g
+s/d_3_A_Planetoid.html/2_d_A_Planetoid.html/g
+s/d_4_A_Planetoid.html/2_d_A_Planetoid.html/g
+s/d_5_A_Planetoid.html/3_d_A_Planetoid.html/g
+s/d_6_A_Planetoid.html/4_d_A_Planetoid.html/g
+s/d_7_A_Planetoid.html/4_d_A_Planetoid.html/g
+s/d_8_A_Planetoid.html/5_d_A_Planetoid.html/g
+s/d_9_A_Planetoid.html/5_d_A_Planetoid.html/g
+s/d_10_A_Planetoid.html/6_d_A_Planetoid.html/g
+s/d_11_A_Planetoid.html/7_d_A_Planetoid.html/g
+s/d_12_A_Planetoid.html/8_d_A_Planetoid.html/g
+s/d_13_A_Planetoid.html/9_d_A_Planetoid.html/g
+s/d_14_A_Planetoid.html/9_d_A_Planetoid.html/g
+s/d_15_A_Planetoid.html/10_d_A_Planetoid.html/g
+s/d_16_A_Planetoid.html/11_d_A_Planetoid.html/g
+s/d_17_A_Planetoid.html/12_d_A_Planetoid.html/g

@@ -1,0 +1,15 @@
+s/d_1_A_Voyager.html/1_d_A_Voyager.html/g
+s/d_2_A_Voyager.html/2_d_A_Voyager.html/g
+s/d_3_A_Voyager.html/3_d_A_Voyager.html/g
+s/d_4_A_Voyager.html/4_d_A_Voyager.html/g
+s/d_5_A_Voyager.html/5_d_A_Voyager.html/g
+s/d_6_A_Voyager.html/6_d_A_Voyager.html/g
+s/d_7_A_Voyager.html/6_d_A_Voyager.html/g
+s/d_8_A_Voyager.html/6_d_A_Voyager.html/g
+s/d_9_A_Voyager.html/6_d_A_Voyager.html/g
+s/d_10_A_Voyager.html/7_d_A_Voyager.html/g
+s/d_11_A_Voyager.html/8_d_A_Voyager.html/g
+s/d_12_A_Voyager.html/9_d_A_Voyager.html/g
+s/d_13_A_Voyager.html/9_d_A_Voyager.html/g
+s/d_14_A_Voyager.html/9_d_A_Voyager.html/g
+s/d_15_A_Voyager.html/9_d_A_Voyager.html/g

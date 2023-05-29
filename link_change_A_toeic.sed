@@ -1,0 +1,13 @@
+s/d_1_A_toeic.html/1_d_A_toeic.html/g
+s/d_2_A_toeic.html/1_d_A_toeic.html/g
+s/d_3_A_toeic.html/1_d_A_toeic.html/g
+s/d_4_A_toeic.html/1_d_A_toeic.html/g
+s/d_5_A_toeic.html/2_d_A_toeic.html/g
+s/d_6_A_toeic.html/2_d_A_toeic.html/g
+s/d_7_A_toeic.html/3_d_A_toeic.html/g
+s/d_8_A_toeic.html/4_d_A_toeic.html/g
+s/d_9_A_toeic.html/5_d_A_toeic.html/g
+s/d_10_A_toeic.html/6_d_A_toeic.html/g
+s/d_11_A_toeic.html/7_d_A_toeic.html/g
+s/d_12_A_toeic.html/8_d_A_toeic.html/g
+s/d_13_A_toeic.html/9_d_A_toeic.html/g

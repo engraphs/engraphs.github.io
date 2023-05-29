@@ -1,0 +1,9 @@
+s/d_1_A_ANC_artb_4_A1_E2.html/1_d_A_ANC_artb_4_A1_E2.html/g
+s/d_2_A_ANC_artb_4_A1_E2.html/2_d_A_ANC_artb_4_A1_E2.html/g
+s/d_3_A_ANC_artb_4_A1_E2.html/3_d_A_ANC_artb_4_A1_E2.html/g
+s/d_4_A_ANC_artb_4_A1_E2.html/3_d_A_ANC_artb_4_A1_E2.html/g
+s/d_5_A_ANC_artb_4_A1_E2.html/3_d_A_ANC_artb_4_A1_E2.html/g
+s/d_6_A_ANC_artb_4_A1_E2.html/3_d_A_ANC_artb_4_A1_E2.html/g
+s/d_7_A_ANC_artb_4_A1_E2.html/3_d_A_ANC_artb_4_A1_E2.html/g
+s/d_8_A_ANC_artb_4_A1_E2.html/3_d_A_ANC_artb_4_A1_E2.html/g
+s/d_9_A_ANC_artb_4_A1_E2.html/3_d_A_ANC_artb_4_A1_E2.html/g

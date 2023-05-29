@@ -1,0 +1,14 @@
+s/d_1_A_maptext.html/1_d_A_maptext.html/g
+s/d_2_A_maptext.html/2_d_A_maptext.html/g
+s/d_3_A_maptext.html/3_d_A_maptext.html/g
+s/d_4_A_maptext.html/3_d_A_maptext.html/g
+s/d_5_A_maptext.html/4_d_A_maptext.html/g
+s/d_6_A_maptext.html/4_d_A_maptext.html/g
+s/d_7_A_maptext.html/4_d_A_maptext.html/g
+s/d_8_A_maptext.html/4_d_A_maptext.html/g
+s/d_9_A_maptext.html/5_d_A_maptext.html/g
+s/d_10_A_maptext.html/5_d_A_maptext.html/g
+s/d_11_A_maptext.html/5_d_A_maptext.html/g
+s/d_12_A_maptext.html/6_d_A_maptext.html/g
+s/d_13_A_maptext.html/7_d_A_maptext.html/g
+s/d_14_A_maptext.html/8_d_A_maptext.html/g

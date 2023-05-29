@@ -1,0 +1,13 @@
+s/d_1_A_KYOTO_3.html/1_d_A_KYOTO_3.html/g
+s/d_2_A_KYOTO_3.html/2_d_A_KYOTO_3.html/g
+s/d_3_A_KYOTO_3.html/3_d_A_KYOTO_3.html/g
+s/d_4_A_KYOTO_3.html/4_d_A_KYOTO_3.html/g
+s/d_5_A_KYOTO_3.html/5_d_A_KYOTO_3.html/g
+s/d_6_A_KYOTO_3.html/6_d_A_KYOTO_3.html/g
+s/d_7_A_KYOTO_3.html/7_d_A_KYOTO_3.html/g
+s/d_8_A_KYOTO_3.html/8_d_A_KYOTO_3.html/g
+s/d_9_A_KYOTO_3.html/9_d_A_KYOTO_3.html/g
+s/d_10_A_KYOTO_3.html/10_d_A_KYOTO_3.html/g
+s/d_11_A_KYOTO_3.html/11_d_A_KYOTO_3.html/g
+s/d_12_A_KYOTO_3.html/12_d_A_KYOTO_3.html/g
+s/d_13_A_KYOTO_3.html/13_d_A_KYOTO_3.html/g
