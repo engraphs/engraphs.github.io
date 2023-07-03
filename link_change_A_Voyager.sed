@@ -3,7 +3,7 @@ s/d_2_A_Voyager.html/2_d_A_Voyager.html/g
 s/d_3_A_Voyager.html/3_d_A_Voyager.html/g
 s/d_4_A_Voyager.html/4_d_A_Voyager.html/g
 s/d_5_A_Voyager.html/5_d_A_Voyager.html/g
-s/d_6_A_Voyager.html/6_d_A_Voyager.html/g
+s/d_6_A_Voyager.html/5_d_A_Voyager.html/g
 s/d_7_A_Voyager.html/6_d_A_Voyager.html/g
 s/d_8_A_Voyager.html/6_d_A_Voyager.html/g
 s/d_9_A_Voyager.html/6_d_A_Voyager.html/g
