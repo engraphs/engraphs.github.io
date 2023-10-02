@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta charset="utf-8" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>TSPC 6_A_PaulFellows</title>
+  <style type="text/css">
+  div.menu {
+     margin-top: 0%;
+     line-height: 0.2;
+     position: fixed;
+     width: 100%;
+     background-color: white;
+  }
+  a:hover {
+    background-color: #ddbbbb; color: black;
+  }
+  </style>
+</head>
+<body>
+<div class="menu">
+<a href="../d_A_PaulFellows.html">Context</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="5_d_A_PaulFellows.html">Previous</a>,&nbsp;<a href="7_d_A_PaulFellows.html">Next</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../index.html">Top</a>
+</div>
+<br>
+<br>
+<b>6_A_PaulFellows</b>
+<br>
+I got to write the I2C drivers , actually I was given some I2C drivers by John Biggs , who 's at ARM today , they were written in Modula2 which had been ripped off out of the ARX implementation , he said &ldquo; here , this is how you do it , make the Real Time Clock work , that 'll be fine , just test it for me will you ? &rdquo; .
+<br>
+<br>
+<svg width="1153pt" height="1001pt"
+ viewBox="0.00 0.00 1153.39 1001.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 997)">
+<title>%3</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-997 1149.39,-997 1149.39,4 -4,4"/>
+<!-- 0006_0001 -->
+<g id="node1" class="node">
+<title>0006_0001</title>
+<ellipse fill="none" stroke="black" cx="193.74" cy="-279" rx="27" ry="18"/>
+<text text-anchor="middle" x="193.74" y="-275.3" font-family="fixed" font-size="14.00">I</text>
+</g>
+<!-- 0006_0002 -->
+<g id="node2" class="node">
+<title>0006_0002</title>
+<ellipse fill="none" stroke="black" cx="293.74" cy="-975" rx="27" ry="18"/>
+<text text-anchor="middle" x="293.74" y="-971.3" font-family="fixed" font-size="14.00">got</text>
+</g>
+<!-- 0006_0004 -->
+<g id="node3" class="node">
+<title>0006_0004</title>
+<ellipse fill="none" stroke="black" cx="151.74" cy="-888" rx="33.29" ry="18"/>
+<text text-anchor="middle" x="151.74" y="-884.3" font-family="fixed" font-size="14.00">write</text>
+</g>
+<!-- 0006_0002&#45;&gt;0006_0004 -->
+<g id="edge1" class="edge">
+<title>0006_0002&#45;&gt;0006_0004</title>
+<path fill="none" stroke="black" d="M274.3,-962.36C250.55,-948.14 210.1,-923.93 182.21,-907.24"/>
+<polygon fill="black" stroke="black" points="183.65,-904.02 173.28,-901.89 180.06,-910.03 183.65,-904.02"/>
+<text text-anchor="middle" x="273.24" y="-927.8" font-family="fixed" font-size="14.00">[catenative]</text>
+</g>
+<!-- 0006_0009 -->
+<g id="node4" class="node">
+<title>0006_0009</title>
+<ellipse fill="none" stroke="black" cx="379.74" cy="-888" rx="46.29" ry="18"/>
+<text text-anchor="middle" x="379.74" y="-884.3" font-family="fixed" font-size="14.00">actually</text>
+</g>
+<!-- 0006_0002&#45;&gt;0006_0009 -->
+<g id="edge2" class="edge">
+<title>0006_0002&#45;&gt;0006_0009</title>
+<path fill="none" stroke="black" d="M308.33,-959.58C321.51,-946.56 341.13,-927.16 356.48,-912"/>
+<polygon fill="black" stroke="black" points="358.97,-914.46 363.62,-904.94 354.05,-909.48 358.97,-914.46"/>
+<text text-anchor="middle" x="359.74" y="-927.8" font-family="fixed" font-size="14.00">[prn]</text>
+</g>
+<!-- 0006_0004&#45;&gt;0006_0001 -->
+<g id="edge3" class="edge">
+<title>0006_0004&#45;&gt;0006_0001</title>
+<path fill="none" stroke="black" d="M151.74,-869.74C151.74,-852.57 151.74,-825.46 151.74,-802 151.74,-802 151.74,-802 151.74,-365 151.74,-342.5 163.72,-319.8 174.88,-303.52"/>
+<polygon fill="black" stroke="black" points="177.89,-305.33 180.91,-295.18 172.22,-301.23 177.89,-305.33"/>
+<text text-anchor="middle" x="173.24" y="-579.8" font-family="fixed" font-size="14.00">[arg0]</text>
+</g>
+<!-- 0006_0006_0006_0007 -->
+<g id="node5" class="node">
+<title>0006_0006_0006_0007</title>
+<ellipse fill="none" stroke="black" cx="61.74" cy="-801" rx="61.99" ry="18"/>
+<text text-anchor="middle" x="61.74" y="-797.3" font-family="fixed" font-size="14.00">I2C_drivers</text>
+</g>
+<!-- 0006_0004&#45;&gt;0006_0006_0006_0007 -->
+<g id="edge4" class="edge">
+<title>0006_0004&#45;&gt;0006_0006_0006_0007</title>
+<path fill="none" stroke="black" d="M127.93,-875.45C117.03,-869.43 104.42,-861.37 94.74,-852 87.5,-844.99 81.01,-836.12 75.74,-827.8"/>
+<polygon fill="black" stroke="black" points="78.67,-825.88 70.53,-819.11 72.67,-829.48 78.67,-825.88"/>
+<text text-anchor="middle" x="116.24" y="-840.8" font-family="fixed" font-size="14.00">[arg1]</text>
+</g>
+<!-- 0006_0011 -->
+<g id="node6" class="node">
+<title>0006_0011</title>
+<ellipse fill="none" stroke="black" cx="387.74" cy="-801" rx="28.7" ry="18"/>
+<text text-anchor="middle" x="387.74" y="-797.3" font-family="fixed" font-size="14.00">was</text>
+</g>
+<!-- 0006_0009&#45;&gt;0006_0011 -->
+<g id="edge5" class="edge">
+<title>0006_0009&#45;&gt;0006_0011</title>
+<path fill="none" stroke="black" d="M381.36,-869.8C382.46,-858.16 383.93,-842.55 385.18,-829.24"/>
+<polygon fill="black" stroke="black" points="388.68,-829.46 386.13,-819.18 381.71,-828.8 388.68,-829.46"/>
+<text text-anchor="middle" x="410.74" y="-840.8" font-family="fixed" font-size="14.00">[scope]</text>
+</g>
+<!-- 0006_0012 -->
+<g id="node7" class="node">
+<title>0006_0012</title>
+<ellipse fill="none" stroke="black" cx="558.74" cy="-714" rx="36" ry="18"/>
+<text text-anchor="middle" x="558.74" y="-710.3" font-family="fixed" font-size="14.00">given</text>
+</g>
+<!-- 0006_0011&#45;&gt;0006_0012 -->
+<g id="edge6" class="edge">
+<title>0006_0011&#45;&gt;0006_0012</title>
+<path fill="none" stroke="black" d="M409.4,-789.23C438.56,-774.74 490.75,-748.8 525.06,-731.74"/>
+<polygon fill="black" stroke="black" points="526.83,-734.77 534.23,-727.19 523.72,-728.5 526.83,-734.77"/>
+<text text-anchor="middle" x="525.24" y="-753.8" font-family="fixed" font-size="14.00">[catenative]</text>
+</g>
+<!-- 0006_0027 -->
+<g id="node8" class="node">
+<title>0006_0027</title>
+<ellipse fill="none" stroke="black" cx="433.74" cy="-714" rx="32.49" ry="18"/>
+<text text-anchor="middle" x="433.74" y="-710.3" font-family="fixed" font-size="14.00">were</text>
+</g>
+<!-- 0006_0011&#45;&gt;0006_0027 -->
+<g id="edge7" class="edge">
+<title>0006_0011&#45;&gt;0006_0027</title>
+<path fill="none" stroke="black" d="M396.61,-783.61C403.23,-771.38 412.4,-754.44 419.97,-740.46"/>
+<polygon fill="black" stroke="black" points="423.22,-741.8 424.9,-731.34 417.06,-738.47 423.22,-741.8"/>
+<text text-anchor="middle" x="430.74" y="-753.8" font-family="fixed" font-size="14.00">[prn]</text>
+</g>
+<!-- 0006_0042 -->
+<g id="node9" class="node">
+<title>0006_0042</title>
+<ellipse fill="none" stroke="black" cx="272.74" cy="-714" rx="29.5" ry="18"/>
+<text text-anchor="middle" x="272.74" y="-710.3" font-family="fixed" font-size="14.00">said</text>
+</g>
+<!-- 0006_0011&#45;&gt;0006_0042 -->
+<g id="edge8" class="edge">
+<title>0006_0011&#45;&gt;0006_0042</title>
+<path fill="none" stroke="black" d="M369.78,-786.72C350.81,-772.7 320.74,-750.47 299.09,-734.48"/>
+<polygon fill="black" stroke="black" points="301.09,-731.6 290.97,-728.47 296.93,-737.23 301.09,-731.6"/>
+<text text-anchor="middle" x="354.74" y="-753.8" font-family="fixed" font-size="14.00">[prn]</text>
+</g>
+<!-- 0006_0012&#45;&gt;0006_0001 -->
+<g id="edge9" class="edge">
+<title>0006_0012&#45;&gt;0006_0001</title>
+<path fill="none" stroke="black" d="M526.36,-706.33C457.58,-691.98 301.48,-658.4 280.74,-645 260.13,-631.68 224.16,-579.72 212.74,-558 199.63,-533.05 193.74,-525.68 193.74,-497.5 193.74,-497.5 193.74,-497.5 193.74,-365 193.74,-345.75 193.74,-324.05 193.74,-307.4"/>
+<polygon fill="black" stroke="black" points="197.24,-307.26 193.74,-297.26 190.24,-307.26 197.24,-307.26"/>
+<text text-anchor="middle" x="216.24" y="-492.8" font-family="fixed" font-size="14.00">[arg2]</text>
+</g>
+<!-- 0006_0014_0006_0015 -->
+<g id="node10" class="node">
+<title>0006_0014_0006_0015</title>
+<ellipse fill="none" stroke="black" cx="593.74" cy="-627" rx="61.99" ry="18"/>
+<text text-anchor="middle" x="593.74" y="-623.3" font-family="fixed" font-size="14.00">I2C_drivers</text>
+</g>
+<!-- 0006_0012&#45;&gt;0006_0014_0006_0015 -->
+<g id="edge10" class="edge">
+<title>0006_0012&#45;&gt;0006_0014_0006_0015</title>
+<path fill="none" stroke="black" d="M565.66,-696.21C570.56,-684.29 577.25,-668.06 582.86,-654.42"/>
+<polygon fill="black" stroke="black" points="586.15,-655.63 586.72,-645.05 579.68,-652.96 586.15,-655.63"/>
+<text text-anchor="middle" x="599.24" y="-666.8" font-family="fixed" font-size="14.00">[arg1]</text>
+</g>
+<!-- 0006_0017_0006_0018 -->
+<g id="node11" class="node">
+<title>0006_0017_0006_0018</title>
+<ellipse fill="none" stroke="black" cx="733.74" cy="-627" rx="60.39" ry="18"/>
+<text text-anchor="middle" x="733.74" y="-623.3" font-family="fixed" font-size="14.00">John_Biggs</text>
+</g>
+<!-- 0006_0012&#45;&gt;0006_0017_0006_0018 -->
+<g id="edge11" class="edge">
+<title>0006_0012&#45;&gt;0006_0017_0006_0018</title>
+<path fill="none" stroke="black" d="M583.82,-700.82C612.67,-686.81 660.42,-663.61 694.27,-647.17"/>
+<polygon fill="black" stroke="black" points="695.96,-650.24 703.43,-642.73 692.9,-643.95 695.96,-650.24"/>
+<text text-anchor="middle" x="704.24" y="-666.8" font-family="fixed" font-size="14.00">[arg0]by_[lgs]</text>
+</g>
+<!-- 0006_0028 -->
+<g id="node16" class="node">
+<title>0006_0028</title>
+<ellipse fill="none" stroke="black" cx="471.74" cy="-627" rx="42.49" ry="18"/>
+<text text-anchor="middle" x="471.74" y="-623.3" font-family="fixed" font-size="14.00">written</text>
+</g>
+<!-- 0006_0027&#45;&gt;0006_0028 -->
+<g id="edge15" class="edge">
+<title>0006_0027&#45;&gt;0006_0028</title>
+<path fill="none" stroke="black" d="M441.25,-696.21C446.61,-684.22 453.93,-667.85 460.05,-654.16"/>
+<polygon fill="black" stroke="black" points="463.37,-655.32 464.25,-644.76 456.98,-652.46 463.37,-655.32"/>
+<text text-anchor="middle" x="497.24" y="-666.8" font-family="fixed" font-size="14.00">[catenative]</text>
+</g>
+<!-- 0006_0041 -->
+<g id="node22" class="node">
+<title>0006_0041</title>
+<ellipse fill="none" stroke="black" cx="206.74" cy="-627" rx="27" ry="18"/>
+<text text-anchor="middle" x="206.74" y="-623.3" font-family="fixed" font-size="14.00">he</text>
+</g>
+<!-- 0006_0042&#45;&gt;0006_0041 -->
+<g id="edge22" class="edge">
+<title>0006_0042&#45;&gt;0006_0041</title>
+<path fill="none" stroke="black" d="M246.33,-705.88C232.29,-700.61 216.23,-691.89 207.74,-678 203.59,-671.2 202.29,-662.85 202.32,-654.93"/>
+<polygon fill="black" stroke="black" points="205.81,-655.16 203.02,-644.94 198.83,-654.68 205.81,-655.16"/>
+<text text-anchor="middle" x="229.24" y="-666.8" font-family="fixed" font-size="14.00">[arg0]</text>
+</g>
+<!-- utterance_0006_1024 -->
+<g id="node23" class="node">
+<title>utterance_0006_1024</title>
+<ellipse fill="none" stroke="black" cx="350.74" cy="-627" rx="61.19" ry="18"/>
+<text text-anchor="middle" x="350.74" y="-623.3" font-family="fixed" font-size="14.00">[utterance]</text>
+</g>
+<!-- 0006_0042&#45;&gt;utterance_0006_1024 -->
+<g id="edge23" class="edge">
+<title>0006_0042&#45;&gt;utterance_0006_1024</title>
+<path fill="none" stroke="black" d="M286.69,-697.8C298.3,-685.15 315.04,-666.9 328.5,-652.24"/>
+<polygon fill="black" stroke="black" points="331.41,-654.25 335.59,-644.52 326.25,-649.52 331.41,-654.25"/>
+<text text-anchor="middle" x="338.24" y="-666.8" font-family="fixed" font-size="14.00">[arg1]</text>
+</g>
+<!-- 0006_0021 -->
+<g id="node12" class="node">
+<title>0006_0021</title>
+<ellipse fill="none" stroke="black" cx="843.74" cy="-714" rx="27" ry="18"/>
+<text text-anchor="middle" x="843.74" y="-710.3" font-family="fixed" font-size="14.00">&#39;s</text>
+</g>
+<!-- 0006_0021&#45;&gt;0006_0017_0006_0018 -->
+<g id="edge12" class="edge">
+<title>0006_0021&#45;&gt;0006_0017_0006_0018</title>
+<path fill="none" stroke="black" d="M826.24,-700.16C817.35,-693.6 806.42,-685.44 796.74,-678 785.19,-669.12 772.58,-659.16 761.7,-650.49"/>
+<polygon fill="black" stroke="black" points="763.76,-647.66 753.77,-644.15 759.39,-653.12 763.76,-647.66"/>
+<text text-anchor="middle" x="818.24" y="-666.8" font-family="fixed" font-size="14.00">[arg0]</text>
+</g>
+<!-- 0006_0023 -->
+<g id="node13" class="node">
+<title>0006_0023</title>
+<ellipse fill="none" stroke="black" cx="843.74" cy="-627" rx="31.4" ry="18"/>
+<text text-anchor="middle" x="843.74" y="-623.3" font-family="fixed" font-size="14.00">ARM</text>
+</g>
+<!-- 0006_0021&#45;&gt;0006_0023 -->
+<g id="edge13" class="edge">
+<title>0006_0021&#45;&gt;0006_0023</title>
+<path fill="none" stroke="black" d="M843.74,-695.8C843.74,-684.16 843.74,-668.55 843.74,-655.24"/>
+<polygon fill="black" stroke="black" points="847.24,-655.18 843.74,-645.18 840.24,-655.18 847.24,-655.18"/>
+<text text-anchor="middle" x="875.74" y="-666.8" font-family="fixed" font-size="14.00">at_[prd2]</text>
+</g>
+<!-- 0006_0024 -->
+<g id="node14" class="node">
+<title>0006_0024</title>
+<ellipse fill="none" stroke="black" cx="930.74" cy="-627" rx="36.29" ry="18"/>
+<text text-anchor="middle" x="930.74" y="-623.3" font-family="fixed" font-size="14.00">today</text>
+</g>
+<!-- 0006_0021&#45;&gt;0006_0024 -->
+<g id="edge14" class="edge">
+<title>0006_0021&#45;&gt;0006_0024</title>
+<path fill="none" stroke="black" d="M867.27,-704.81C880.85,-699.07 897.44,-690.24 908.74,-678 914.87,-671.36 919.49,-662.74 922.87,-654.53"/>
+<polygon fill="black" stroke="black" points="926.25,-655.48 926.39,-644.88 919.67,-653.07 926.25,-655.48"/>
+<text text-anchor="middle" x="938.24" y="-666.8" font-family="fixed" font-size="14.00">[tmp]</text>
+</g>
+<!-- 0006_0026 -->
+<g id="node15" class="node">
+<title>0006_0026</title>
+<ellipse fill="none" stroke="black" cx="695.74" cy="-540" rx="30.59" ry="18"/>
+<text text-anchor="middle" x="695.74" y="-536.3" font-family="fixed" font-size="14.00">they</text>
+</g>
+<!-- 0006_0028&#45;&gt;0006_0026 -->
+<g id="edge16" class="edge">
+<title>0006_0028&#45;&gt;0006_0026</title>
+<path fill="none" stroke="black" d="M502.77,-614.64C509.3,-612.54 516.2,-610.53 522.74,-609 579.98,-595.65 602.29,-619.4 653.74,-591 664.54,-585.04 673.74,-575.13 680.75,-565.69"/>
+<polygon fill="black" stroke="black" points="683.75,-567.5 686.56,-557.29 678,-563.52 683.75,-567.5"/>
+<text text-anchor="middle" x="692.24" y="-579.8" font-family="fixed" font-size="14.00">[arg1]</text>
+</g>
+<!-- 0006_0030 -->
+<g id="node17" class="node">
+<title>0006_0030</title>
+<ellipse fill="none" stroke="black" cx="793.74" cy="-540" rx="49.29" ry="18"/>
+<text text-anchor="middle" x="793.74" y="-536.3" font-family="fixed" font-size="14.00">Modula2</text>
+</g>
+<!-- 0006_0028&#45;&gt;0006_0030 -->
+<g id="edge17" class="edge">
+<title>0006_0028&#45;&gt;0006_0030</title>
+<path fill="none" stroke="black" d="M502.45,-614.5C509.06,-612.38 516.08,-610.4 522.74,-609 607.92,-591.12 635.6,-619.78 717.74,-591 735.64,-584.73 753.47,-573.34 767.36,-563.01"/>
+<polygon fill="black" stroke="black" points="769.67,-565.65 775.46,-556.78 765.4,-560.1 769.67,-565.65"/>
+<text text-anchor="middle" x="776.24" y="-579.8" font-family="fixed" font-size="14.00">in_[mnr]</text>
+</g>
+<!-- 0006_0032 -->
+<g id="node18" class="node">
+<title>0006_0032</title>
+<ellipse fill="none" stroke="black" cx="1040.74" cy="-801" rx="27.9" ry="18"/>
+<text text-anchor="middle" x="1040.74" y="-797.3" font-family="fixed" font-size="14.00">had</text>
+</g>
+<!-- 0006_0033 -->
+<g id="node19" class="node">
+<title>0006_0033</title>
+<ellipse fill="none" stroke="black" cx="1040.74" cy="-714" rx="33.29" ry="18"/>
+<text text-anchor="middle" x="1040.74" y="-710.3" font-family="fixed" font-size="14.00">been</text>
+</g>
+<!-- 0006_0032&#45;&gt;0006_0033 -->
+<g id="edge18" class="edge">
+<title>0006_0032&#45;&gt;0006_0033</title>
+<path fill="none" stroke="black" d="M1040.74,-782.8C1040.74,-771.16 1040.74,-755.55 1040.74,-742.24"/>
+<polygon fill="black" stroke="black" points="1044.24,-742.18 1040.74,-732.18 1037.24,-742.18 1044.24,-742.18"/>
+<text text-anchor="middle" x="1082.24" y="-753.8" font-family="fixed" font-size="14.00">[catenative]</text>
+</g>
+<!-- 0006_0034_0006_0035 -->
+<g id="node20" class="node">
+<title>0006_0034_0006_0035</title>
+<ellipse fill="none" stroke="black" cx="1040.74" cy="-627" rx="55.79" ry="18"/>
+<text text-anchor="middle" x="1040.74" y="-623.3" font-family="fixed" font-size="14.00">ripped_off</text>
+</g>
+<!-- 0006_0033&#45;&gt;0006_0034_0006_0035 -->
+<g id="edge19" class="edge">
+<title>0006_0033&#45;&gt;0006_0034_0006_0035</title>
+<path fill="none" stroke="black" d="M1040.74,-695.8C1040.74,-684.16 1040.74,-668.55 1040.74,-655.24"/>
+<polygon fill="black" stroke="black" points="1044.24,-655.18 1040.74,-645.18 1037.24,-655.18 1044.24,-655.18"/>
+<text text-anchor="middle" x="1082.24" y="-666.8" font-family="fixed" font-size="14.00">[catenative]</text>
+</g>
+<!-- 0006_0034_0006_0035&#45;&gt;0006_0030 -->
+<g id="edge20" class="edge">
+<title>0006_0034_0006_0035&#45;&gt;0006_0030</title>
+<path fill="none" stroke="black" d="M1004.03,-613.37C959.74,-598.13 885.35,-572.52 837.95,-556.21"/>
+<polygon fill="black" stroke="black" points="838.86,-552.82 828.26,-552.88 836.58,-559.44 838.86,-552.82"/>
+<text text-anchor="middle" x="953.24" y="-579.8" font-family="fixed" font-size="14.00">[arg1]</text>
+</g>
+<!-- 0006_0038_0006_0039 -->
+<g id="node21" class="node">
+<title>0006_0038_0006_0039</title>
+<ellipse fill="none" stroke="black" cx="1040.74" cy="-540" rx="104.78" ry="18"/>
+<text text-anchor="middle" x="1040.74" y="-536.3" font-family="fixed" font-size="14.00">ARX_implementation</text>
+</g>
+<!-- 0006_0034_0006_0035&#45;&gt;0006_0038_0006_0039 -->
+<g id="edge21" class="edge">
+<title>0006_0034_0006_0035&#45;&gt;0006_0038_0006_0039</title>
+<path fill="none" stroke="black" d="M1040.74,-608.8C1040.74,-597.16 1040.74,-581.55 1040.74,-568.24"/>
+<polygon fill="black" stroke="black" points="1044.24,-568.18 1040.74,-558.18 1037.24,-568.18 1044.24,-568.18"/>
+<text text-anchor="middle" x="1080.24" y="-579.8" font-family="fixed" font-size="14.00">out_of_[dir]</text>
+</g>
+<!-- 0006_0047 -->
+<g id="node25" class="node">
+<title>0006_0047</title>
+<ellipse fill="none" stroke="black" cx="619.74" cy="-540" rx="27" ry="18"/>
+<text text-anchor="middle" x="619.74" y="-536.3" font-family="fixed" font-size="14.00">is</text>
+</g>
+<!-- utterance_0006_1024&#45;&gt;0006_0047 -->
+<g id="edge43" class="edge">
+<title>utterance_0006_1024&#45;&gt;0006_0047</title>
+<path fill="none" stroke="black" d="M396.27,-614.9C435.98,-605.2 487.99,-592.44 492.74,-591 533.91,-578.5 544.03,-574.54 583.74,-558 585.56,-557.24 587.42,-556.44 589.29,-555.62"/>
+<polygon fill="black" stroke="black" points="590.92,-558.73 598.57,-551.4 588.02,-552.35 590.92,-558.73"/>
+<text text-anchor="middle" x="563.24" y="-579.8" font-family="fixed" font-size="14.00">[part1]</text>
+</g>
+<!-- 0006_0061 -->
+<g id="node35" class="node">
+<title>0006_0061</title>
+<ellipse fill="none" stroke="black" cx="248.74" cy="-540" rx="27" ry="18"/>
+<text text-anchor="middle" x="248.74" y="-536.3" font-family="fixed" font-size="14.00">&#39;ll</text>
+</g>
+<!-- utterance_0006_1024&#45;&gt;0006_0061 -->
+<g id="edge44" class="edge">
+<title>utterance_0006_1024&#45;&gt;0006_0061</title>
+<path fill="none" stroke="black" d="M327.33,-610.25C319.06,-604.43 309.82,-597.64 301.74,-591 291.06,-582.21 279.83,-571.81 270.47,-562.77"/>
+<polygon fill="black" stroke="black" points="272.7,-560.05 263.1,-555.57 267.81,-565.06 272.7,-560.05"/>
+<text text-anchor="middle" x="326.24" y="-579.8" font-family="fixed" font-size="14.00">[part3]</text>
+</g>
+<!-- imperative_0006_1032 -->
+<g id="node44" class="node">
+<title>imperative_0006_1032</title>
+<ellipse fill="none" stroke="black" cx="508.74" cy="-540" rx="65.79" ry="18"/>
+<text text-anchor="middle" x="508.74" y="-536.3" font-family="fixed" font-size="14.00">[imperative]</text>
+</g>
+<!-- utterance_0006_1024&#45;&gt;imperative_0006_1032 -->
+<g id="edge45" class="edge">
+<title>utterance_0006_1024&#45;&gt;imperative_0006_1032</title>
+<path fill="none" stroke="black" d="M378.99,-610.8C404.78,-596.93 443.09,-576.32 471.4,-561.09"/>
+<polygon fill="black" stroke="black" points="473.06,-564.17 480.21,-556.35 469.74,-558.01 473.06,-564.17"/>
+<text text-anchor="middle" x="464.24" y="-579.8" font-family="fixed" font-size="14.00">[part2]</text>
+</g>
+<!-- imperative_0006_1046 -->
+<g id="node45" class="node">
+<title>imperative_0006_1046</title>
+<ellipse fill="none" stroke="black" cx="359.74" cy="-540" rx="65.79" ry="18"/>
+<text text-anchor="middle" x="359.74" y="-536.3" font-family="fixed" font-size="14.00">[imperative]</text>
+</g>
+<!-- utterance_0006_1024&#45;&gt;imperative_0006_1046 -->
+<g id="edge46" class="edge">
+<title>utterance_0006_1024&#45;&gt;imperative_0006_1046</title>
+<path fill="none" stroke="black" d="M352.57,-608.8C353.8,-597.16 355.45,-581.55 356.86,-568.24"/>
+<polygon fill="black" stroke="black" points="360.35,-568.49 357.93,-558.18 353.39,-567.75 360.35,-568.49"/>
+<text text-anchor="middle" x="381.24" y="-579.8" font-family="fixed" font-size="14.00">[part4]</text>
+</g>
+<!-- 0006_0046 -->
+<g id="node24" class="node">
+<title>0006_0046</title>
+<ellipse fill="none" stroke="black" cx="619.74" cy="-453" rx="27.1" ry="18"/>
+<text text-anchor="middle" x="619.74" y="-449.3" font-family="fixed" font-size="14.00">this</text>
+</g>
+<!-- 0006_0047&#45;&gt;0006_0046 -->
+<g id="edge24" class="edge">
+<title>0006_0047&#45;&gt;0006_0046</title>
+<path fill="none" stroke="black" d="M619.74,-521.8C619.74,-510.16 619.74,-494.55 619.74,-481.24"/>
+<polygon fill="black" stroke="black" points="623.24,-481.18 619.74,-471.18 616.24,-481.18 623.24,-481.18"/>
+<text text-anchor="middle" x="641.24" y="-492.8" font-family="fixed" font-size="14.00">[arg0]</text>
+</g>
+<!-- z_0006_1027 -->
+<g id="node26" class="node">
+<title>z_0006_1027</title>
+<ellipse fill="none" stroke="black" cx="724.74" cy="-453" rx="51.99" ry="18"/>
+<text text-anchor="middle" x="724.74" y="-449.3" font-family="fixed" font-size="14.00">#6_1027</text>
+</g>
+<!-- 0006_0047&#45;&gt;z_0006_1027 -->
+<g id="edge25" class="edge">
+<title>0006_0047&#45;&gt;z_0006_1027</title>
+<path fill="none" stroke="black" d="M637.38,-526.33C646.3,-519.8 657.22,-511.64 666.74,-504 677.55,-495.34 689.16,-485.45 699.14,-476.76"/>
+<polygon fill="black" stroke="black" points="701.53,-479.32 706.74,-470.1 696.91,-474.06 701.53,-479.32"/>
+<text text-anchor="middle" x="705.24" y="-492.8" font-family="fixed" font-size="14.00">[prd2]</text>
+</g>
+<!-- 0006_0049 -->
+<g id="node27" class="node">
+<title>0006_0049</title>
+<ellipse fill="none" stroke="black" cx="847.74" cy="-18" rx="27.1" ry="18"/>
+<text text-anchor="middle" x="847.74" y="-14.3" font-family="fixed" font-size="14.00">you</text>
+</g>
+<!-- 0006_0050 -->
+<g id="node28" class="node">
+<title>0006_0050</title>
+<ellipse fill="none" stroke="black" cx="887.74" cy="-540" rx="27" ry="18"/>
+<text text-anchor="middle" x="887.74" y="-536.3" font-family="fixed" font-size="14.00">do</text>
+</g>
+<!-- 0006_0050&#45;&gt;z_0006_1027 -->
+<g id="edge28" class="edge">
+<title>0006_0050&#45;&gt;z_0006_1027</title>
+<path fill="none" stroke="black" d="M866.71,-528.25C861.87,-526.01 856.69,-523.78 851.74,-522 821.53,-511.09 810.15,-519 781.74,-504 769.07,-497.31 756.86,-487.26 747.02,-477.93"/>
+<polygon fill="black" stroke="black" points="749.25,-475.2 739.67,-470.67 744.33,-480.19 749.25,-475.2"/>
+<text text-anchor="middle" x="801.74" y="-492.8" font-family="fixed" font-size="14.00">[mnr]</text>
+</g>
+<!-- 0006_0050&#45;&gt;0006_0049 -->
+<g id="edge26" class="edge">
+<title>0006_0050&#45;&gt;0006_0049</title>
+<path fill="none" stroke="black" d="M887.74,-521.74C887.74,-504.57 887.74,-477.46 887.74,-454 887.74,-454 887.74,-454 887.74,-104 887.74,-81.71 876.34,-58.99 865.71,-42.65"/>
+<polygon fill="black" stroke="black" points="868.51,-40.54 859.96,-34.28 862.74,-44.5 868.51,-40.54"/>
+<text text-anchor="middle" x="909.24" y="-275.3" font-family="fixed" font-size="14.00">[arg0]</text>
+</g>
+<!-- 0006_0051 -->
+<g id="node29" class="node">
+<title>0006_0051</title>
+<ellipse fill="none" stroke="black" cx="829.74" cy="-453" rx="27" ry="18"/>
+<text text-anchor="middle" x="829.74" y="-449.3" font-family="fixed" font-size="14.00">it</text>
+</g>
+<!-- 0006_0050&#45;&gt;0006_0051 -->
+<g id="edge27" class="edge">
+<title>0006_0050&#45;&gt;0006_0051</title>
+<path fill="none" stroke="black" d="M866.34,-528.62C851.93,-521.14 834.84,-511.15 830.74,-504 826.89,-497.27 825.6,-489.14 825.56,-481.41"/>
+<polygon fill="black" stroke="black" points="829.07,-481.48 826.16,-471.3 822.08,-481.07 829.07,-481.48"/>
+<text text-anchor="middle" x="852.24" y="-492.8" font-family="fixed" font-size="14.00">[arg1]</text>
+</g>
+<!-- 0006_0053 -->
+<g id="node30" class="node">
+<title>0006_0053</title>
+<ellipse fill="none" stroke="black" cx="508.74" cy="-453" rx="35.19" ry="18"/>
+<text text-anchor="middle" x="508.74" y="-449.3" font-family="fixed" font-size="14.00">make</text>
+</g>
+<!-- 0006_0056_0006_0057 -->
+<g id="node31" class="node">
+<title>0006_0056_0006_0057</title>
+<ellipse fill="none" stroke="black" cx="616.74" cy="-366" rx="61.99" ry="18"/>
+<text text-anchor="middle" x="616.74" y="-362.3" font-family="fixed" font-size="14.00">Time_Clock</text>
+</g>
+<!-- 0006_0053&#45;&gt;0006_0056_0006_0057 -->
+<g id="edge29" class="edge">
+<title>0006_0053&#45;&gt;0006_0056_0006_0057</title>
+<path fill="none" stroke="black" d="M527.07,-437.58C543.81,-424.4 568.84,-404.7 588.21,-389.46"/>
+<polygon fill="black" stroke="black" points="590.43,-392.17 596.12,-383.23 586.1,-386.67 590.43,-392.17"/>
+<text text-anchor="middle" x="590.24" y="-405.8" font-family="fixed" font-size="14.00">[arg1]</text>
+</g>
+<!-- 0006_0058 -->
+<g id="node32" class="node">
+<title>0006_0058</title>
+<ellipse fill="none" stroke="black" cx="504.74" cy="-366" rx="32.49" ry="18"/>
+<text text-anchor="middle" x="504.74" y="-362.3" font-family="fixed" font-size="14.00">work</text>
+</g>
+<!-- 0006_0053&#45;&gt;0006_0058 -->
+<g id="edge30" class="edge">
+<title>0006_0053&#45;&gt;0006_0058</title>
+<path fill="none" stroke="black" d="M507.94,-434.8C507.39,-423.16 506.65,-407.55 506.03,-394.24"/>
+<polygon fill="black" stroke="black" points="509.52,-394 505.55,-384.18 502.53,-394.33 509.52,-394"/>
+<text text-anchor="middle" x="523.74" y="-405.8" font-family="fixed" font-size="14.00">[prd]</text>
+</g>
+<!-- 0006_0055 -->
+<g id="node33" class="node">
+<title>0006_0055</title>
+<ellipse fill="none" stroke="black" cx="616.74" cy="-279" rx="29.8" ry="18"/>
+<text text-anchor="middle" x="616.74" y="-275.3" font-family="fixed" font-size="14.00">Real</text>
+</g>
+<!-- 0006_0056_0006_0057&#45;&gt;0006_0055 -->
+<g id="edge31" class="edge">
+<title>0006_0056_0006_0057&#45;&gt;0006_0055</title>
+<path fill="none" stroke="black" d="M616.74,-347.8C616.74,-336.16 616.74,-320.55 616.74,-307.24"/>
+<polygon fill="black" stroke="black" points="620.24,-307.18 616.74,-297.18 613.24,-307.18 620.24,-307.18"/>
+<text text-anchor="middle" x="641.24" y="-318.8" font-family="fixed" font-size="14.00">[attrib]</text>
+</g>
+<!-- 0006_0060 -->
+<g id="node34" class="node">
+<title>0006_0060</title>
+<ellipse fill="none" stroke="black" cx="324.74" cy="-366" rx="28.7" ry="18"/>
+<text text-anchor="middle" x="324.74" y="-362.3" font-family="fixed" font-size="14.00">that</text>
+</g>
+<!-- 0006_0062 -->
+<g id="node36" class="node">
+<title>0006_0062</title>
+<ellipse fill="none" stroke="black" cx="259.74" cy="-453" rx="27" ry="18"/>
+<text text-anchor="middle" x="259.74" y="-449.3" font-family="fixed" font-size="14.00">be</text>
+</g>
+<!-- 0006_0061&#45;&gt;0006_0062 -->
+<g id="edge32" class="edge">
+<title>0006_0061&#45;&gt;0006_0062</title>
+<path fill="none" stroke="black" d="M250.97,-521.8C252.48,-510.16 254.5,-494.55 256.22,-481.24"/>
+<polygon fill="black" stroke="black" points="259.71,-481.54 257.52,-471.18 252.77,-480.64 259.71,-481.54"/>
+<text text-anchor="middle" x="281.74" y="-492.8" font-family="fixed" font-size="14.00">[scope]</text>
+</g>
+<!-- 0006_0062&#45;&gt;0006_0060 -->
+<g id="edge33" class="edge">
+<title>0006_0062&#45;&gt;0006_0060</title>
+<path fill="none" stroke="black" d="M278.62,-439.7C286.84,-433.62 296.09,-425.73 302.74,-417 308.14,-409.92 312.53,-401.31 315.94,-393.25"/>
+<polygon fill="black" stroke="black" points="319.24,-394.41 319.6,-383.82 312.72,-391.87 319.24,-394.41"/>
+<text text-anchor="middle" x="333.24" y="-405.8" font-family="fixed" font-size="14.00">[arg0]</text>
+</g>
+<!-- 0006_0063 -->
+<g id="node37" class="node">
+<title>0006_0063</title>
+<ellipse fill="none" stroke="black" cx="249.74" cy="-366" rx="27.9" ry="18"/>
+<text text-anchor="middle" x="249.74" y="-362.3" font-family="fixed" font-size="14.00">fine</text>
+</g>
+<!-- 0006_0062&#45;&gt;0006_0063 -->
+<g id="edge34" class="edge">
+<title>0006_0062&#45;&gt;0006_0063</title>
+<path fill="none" stroke="black" d="M257.72,-434.8C256.35,-423.16 254.51,-407.55 252.95,-394.24"/>
+<polygon fill="black" stroke="black" points="256.41,-393.7 251.77,-384.18 249.46,-394.52 256.41,-393.7"/>
+<text text-anchor="middle" x="277.24" y="-405.8" font-family="fixed" font-size="14.00">[prd2]</text>
+</g>
+<!-- 0006_0065 -->
+<g id="node38" class="node">
+<title>0006_0065</title>
+<ellipse fill="none" stroke="black" cx="386.74" cy="-453" rx="27.1" ry="18"/>
+<text text-anchor="middle" x="386.74" y="-449.3" font-family="fixed" font-size="14.00">just</text>
+</g>
+<!-- 0006_0066 -->
+<g id="node39" class="node">
+<title>0006_0066</title>
+<ellipse fill="none" stroke="black" cx="399.74" cy="-366" rx="27.9" ry="18"/>
+<text text-anchor="middle" x="399.74" y="-362.3" font-family="fixed" font-size="14.00">test</text>
+</g>
+<!-- 0006_0065&#45;&gt;0006_0066 -->
+<g id="edge35" class="edge">
+<title>0006_0065&#45;&gt;0006_0066</title>
+<path fill="none" stroke="black" d="M389.38,-434.8C391.15,-423.16 393.54,-407.55 395.58,-394.24"/>
+<polygon fill="black" stroke="black" points="399.07,-394.59 397.12,-384.18 392.15,-393.53 399.07,-394.59"/>
+<text text-anchor="middle" x="420.74" y="-405.8" font-family="fixed" font-size="14.00">[scope]</text>
+</g>
+<!-- 0006_0066&#45;&gt;0006_0001 -->
+<g id="edge36" class="edge">
+<title>0006_0066&#45;&gt;0006_0001</title>
+<path fill="none" stroke="black" d="M377.91,-354.76C372.94,-352.49 367.68,-350.12 362.74,-348 315.55,-327.68 260.2,-305.76 226.04,-292.46"/>
+<polygon fill="black" stroke="black" points="227.17,-289.14 216.58,-288.78 224.63,-295.67 227.17,-289.14"/>
+<text text-anchor="middle" x="347.24" y="-318.8" font-family="fixed" font-size="14.00">for_[bnf]</text>
+</g>
+<!-- 0006_0067 -->
+<g id="node40" class="node">
+<title>0006_0067</title>
+<ellipse fill="none" stroke="black" cx="399.74" cy="-279" rx="27" ry="18"/>
+<text text-anchor="middle" x="399.74" y="-275.3" font-family="fixed" font-size="14.00">it</text>
+</g>
+<!-- 0006_0066&#45;&gt;0006_0067 -->
+<g id="edge37" class="edge">
+<title>0006_0066&#45;&gt;0006_0067</title>
+<path fill="none" stroke="black" d="M399.74,-347.8C399.74,-336.16 399.74,-320.55 399.74,-307.24"/>
+<polygon fill="black" stroke="black" points="403.24,-307.18 399.74,-297.18 396.24,-307.18 403.24,-307.18"/>
+<text text-anchor="middle" x="421.24" y="-318.8" font-family="fixed" font-size="14.00">[arg1]</text>
+</g>
+<!-- question_0006_1051 -->
+<g id="node41" class="node">
+<title>question_0006_1051</title>
+<ellipse fill="none" stroke="black" cx="505.74" cy="-279" rx="56.59" ry="18"/>
+<text text-anchor="middle" x="505.74" y="-275.3" font-family="fixed" font-size="14.00">[question]</text>
+</g>
+<!-- 0006_0066&#45;&gt;question_0006_1051 -->
+<g id="edge38" class="edge">
+<title>0006_0066&#45;&gt;question_0006_1051</title>
+<path fill="none" stroke="black" d="M417.8,-351.97C426.63,-345.49 437.35,-337.47 446.74,-330 457.69,-321.3 469.5,-311.4 479.65,-302.72"/>
+<polygon fill="black" stroke="black" points="482.09,-305.24 487.39,-296.07 477.53,-299.93 482.09,-305.24"/>
+<text text-anchor="middle" x="482.74" y="-318.8" font-family="fixed" font-size="14.00">[prn]</text>
+</g>
+<!-- 0006_0070 -->
+<g id="node42" class="node">
+<title>0006_0070</title>
+<ellipse fill="none" stroke="black" cx="677.74" cy="-192" rx="27" ry="18"/>
+<text text-anchor="middle" x="677.74" y="-188.3" font-family="fixed" font-size="14.00">will</text>
+</g>
+<!-- question_0006_1051&#45;&gt;0006_0070 -->
+<g id="edge42" class="edge">
+<title>question_0006_1051&#45;&gt;0006_0070</title>
+<path fill="none" stroke="black" d="M534.92,-263.58C566.19,-248.13 615.6,-223.71 647.34,-208.03"/>
+<polygon fill="black" stroke="black" points="649.16,-211.03 656.58,-203.46 646.06,-204.75 649.16,-211.03"/>
+<text text-anchor="middle" x="627.74" y="-231.8" font-family="fixed" font-size="14.00">[scope]</text>
+</g>
+<!-- z_0006_1054 -->
+<g id="node43" class="node">
+<title>z_0006_1054</title>
+<ellipse fill="none" stroke="black" cx="788.74" cy="-105" rx="51.99" ry="18"/>
+<text text-anchor="middle" x="788.74" y="-101.3" font-family="fixed" font-size="14.00">#6_1054</text>
+</g>
+<!-- 0006_0070&#45;&gt;z_0006_1054 -->
+<g id="edge39" class="edge">
+<title>0006_0070&#45;&gt;z_0006_1054</title>
+<path fill="none" stroke="black" d="M695.09,-177.72C712.45,-164.42 739.47,-143.73 760.04,-127.98"/>
+<polygon fill="black" stroke="black" points="762.31,-130.65 768.13,-121.79 758.06,-125.09 762.31,-130.65"/>
+<text text-anchor="middle" x="765.74" y="-144.8" font-family="fixed" font-size="14.00">[scope]</text>
+</g>
+<!-- z_0006_1054&#45;&gt;0006_0049 -->
+<g id="edge47" class="edge">
+<title>z_0006_1054&#45;&gt;0006_0049</title>
+<path fill="none" stroke="black" d="M800.4,-87.21C809.19,-74.55 821.36,-57.01 831.16,-42.89"/>
+<polygon fill="black" stroke="black" points="834.08,-44.82 836.91,-34.61 828.33,-40.83 834.08,-44.82"/>
+<text text-anchor="middle" x="843.24" y="-57.8" font-family="fixed" font-size="14.00">[arg0]</text>
+</g>
+<!-- imperative_0006_1032&#45;&gt;0006_0053 -->
+<g id="edge40" class="edge">
+<title>imperative_0006_1032&#45;&gt;0006_0053</title>
+<path fill="none" stroke="black" d="M508.74,-521.8C508.74,-510.16 508.74,-494.55 508.74,-481.24"/>
+<polygon fill="black" stroke="black" points="512.24,-481.18 508.74,-471.18 505.24,-481.18 512.24,-481.18"/>
+<text text-anchor="middle" x="534.74" y="-492.8" font-family="fixed" font-size="14.00">[scope]</text>
+</g>
+<!-- imperative_0006_1046&#45;&gt;0006_0065 -->
+<g id="edge41" class="edge">
+<title>imperative_0006_1046&#45;&gt;0006_0065</title>
+<path fill="none" stroke="black" d="M365.21,-521.8C368.97,-509.97 374.03,-494.03 378.3,-480.58"/>
+<polygon fill="black" stroke="black" points="381.69,-481.48 381.38,-470.89 375.02,-479.36 381.69,-481.48"/>
+<text text-anchor="middle" x="401.74" y="-492.8" font-family="fixed" font-size="14.00">[scope]</text>
+</g>
+</g>
+</svg>
+<br>
+<pre>
+arc(imperative_0006_1032,r__make_0006_0053,scope).
+arc(imperative_0006_1046,r__just_0006_0065,scope).
+arc(question_0006_1051,r__will_0006_0070,scope).
+arc(utterance_0006_1024,imperative_0006_1032,part2).
+arc(utterance_0006_1024,imperative_0006_1046,part4).
+arc(utterance_0006_1024,r__is_0006_0047,part1).
+arc(utterance_0006_1024,r___apos_ll_0006_0061,part3).
+arc(r__got_0006_0002,r__write_0006_0004,catenative).
+arc(r__got_0006_0002,r__actually_0006_0009,prn5).
+arc(r__write_0006_0004,r__I_0006_0001,arg0).
+arc(r__write_0006_0004,r__I2C_0006_0006_r__drivers_0006_0007,arg1).
+arc(r__actually_0006_0009,r__was_0006_0011,scope).
+arc(r__was_0006_0011,r__given_0006_0012,catenative).
+arc(r__was_0006_0011,r__were_0006_0027,prn6).
+arc(r__was_0006_0011,r__said_0006_0042,prn8).
+arc(r__given_0006_0012,r__I_0006_0001,arg2).
+arc(r__given_0006_0012,r__I2C_0006_0014_r__drivers_0006_0015,arg1).
+arc(r__given_0006_0012,r__John_0006_0017_r__Biggs_0006_0018,arg0_r__by_0006_0016_lgs).
+arc(r___apos_s_0006_0021,r__John_0006_0017_r__Biggs_0006_0018,arg0).
+arc(r___apos_s_0006_0021,r__ARM_0006_0023,r__at_0006_0022_prd2).
+arc(r___apos_s_0006_0021,r__today_0006_0024,tmp).
+arc(r__were_0006_0027,r__written_0006_0028,catenative).
+arc(r__written_0006_0028,r__they_0006_0026,arg1).
+arc(r__written_0006_0028,r__Modula2_0006_0030,r__in_0006_0029_mnr).
+arc(r__had_0006_0032,r__been_0006_0033,catenative).
+arc(r__been_0006_0033,r__ripped_0006_0034_r__off_0006_0035,catenative).
+arc(r__ripped_0006_0034_r__off_0006_0035,r__Modula2_0006_0030,arg1).
+arc(r__ripped_0006_0034_r__off_0006_0035,r__ARX_0006_0038_r__implementation_0006_0039,r__out_of_0006_0036_dir).
+arc(r__said_0006_0042,utterance_0006_1024,arg1).
+arc(r__said_0006_0042,r__he_0006_0041,arg0).
+arc(r__is_0006_0047,r__this_0006_0046,arg0).
+arc(r__is_0006_0047,z_0006_1027,prd2).
+arc(r__do_0006_0050,r__you_0006_0049,arg0).
+arc(r__do_0006_0050,r__it_0006_0051,arg1).
+arc(r__do_0006_0050,z_0006_1027,mnr1).
+arc(r__make_0006_0053,r__Time_0006_0056_r__Clock_0006_0057,arg1).
+arc(r__make_0006_0053,r__work_0006_0058,prd).
+arc(r__Time_0006_0056_r__Clock_0006_0057,r__Real_0006_0055,attrib2).
+arc(r___apos_ll_0006_0061,r__be_0006_0062,scope).
+arc(r__be_0006_0062,r__that_0006_0060,arg0).
+arc(r__be_0006_0062,r__fine_0006_0063,prd2).
+arc(r__just_0006_0065,r__test_0006_0066,scope).
+arc(r__test_0006_0066,question_0006_1051,prn5).
+arc(r__test_0006_0066,r__I_0006_0001,r__for_0006_0068_bnf).
+arc(r__test_0006_0066,r__it_0006_0067,arg1).
+arc(r__will_0006_0070,z_0006_1054,scope).
+arc(z_0006_1054,r__you_0006_0049,arg0).
+
+</pre>
+<br>
+<pre>
+fof(id_6_A_PaulFellows,axiom,
+    ? [STATEX1,EVENTX4,EVENTX7,CATENATIVEX9,CATENATIVEX11,CATENATIVEX12,EVENTX20,STATEX22,STATEX35,EVENTX49,CATENATIVEX59,SPEAKERX6,DRIVERSX8,BIGGSX21,SPEAKERX48,HEARERX52,EVENTX66,OPERATORX5,EVENTX65,EVENTX64,EVENTX63,EVENTX58,CONJX57,OPERATORX46,OPERATORX47,EVENTX56,OPERATORX51,OPERATORX53,EVENTX55,OPERATORX41,EVENTX42,OPERATORX32,EVENTX39,EVENTX38,EVENTX28,EVENTX26,EVENTX19,EVENTX18,EVENTX17,EVENTX16,EVENTX15,EVENTX3,DRIVERSX60,ENTITYX61,ENTITYX62,ENTITYX33,ENTITYX25,ENTITYX14,ENTITYX2,ATTRIBX40,ATTRIBX34] :
+      ( STATEX1 = EVENTX3
+      &amp; isA(EVENTX3,r__write_0006_0004)
+      &amp; arg0(EVENTX3) = r__I_0006_0001
+      &amp; arg1(EVENTX3) = ENTITYX2
+      &amp; EVENTX4 = OPERATORX5
+      &amp; isA(OPERATORX5,r__actually_0006_0009)
+      &amp; scope(OPERATORX5) = EVENTX65
+      &amp; isA(EVENTX65,r__was_0006_0011)
+      &amp; catenative(EVENTX65) = CATENATIVEX59
+      &amp; prn6(EVENTX65) = EVENTX7
+      &amp; prn8(EVENTX65) = EVENTX20
+      &amp; EVENTX7 = EVENTX19
+      &amp; isA(EVENTX19,r__were_0006_0027)
+      &amp; catenative(EVENTX19) = CATENATIVEX9
+      &amp; CATENATIVEX9 = EVENTX18
+      &amp; isA(EVENTX18,r__written_0006_0028)
+      &amp; arg1(EVENTX18) = DRIVERSX8
+      &amp; r__in_0006_0029_mnr(EVENTX18) = r__Modula2_0006_0030
+      &amp; CATENATIVEX11 = EVENTX16
+      &amp; isA(EVENTX16,r__been_0006_0033)
+      &amp; catenative(EVENTX16) = CATENATIVEX12
+      &amp; CATENATIVEX12 = EVENTX15
+      &amp; isA(EVENTX15,r__ripped_0006_0034_r__off_0006_0035)
+      &amp; arg1(EVENTX15) = r__Modula2_0006_0030
+      &amp; r__out_of_0006_0036_dir(EVENTX15) = ENTITYX14
+      &amp; EVENTX20 = EVENTX58
+      &amp; isA(EVENTX58,r__said_0006_0042)
+      &amp; arg0(EVENTX58) = BIGGSX21
+      &amp; arg1(EVENTX58) = STATEX22
+      &amp; STATEX22 = CONJX57
+      &amp; isA(CONJX57,utterance_0006_1024)
+      &amp; part1(CONJX57) = EVENTX28
+      &amp; isA(EVENTX28,r__is_0006_0047)
+      &amp; arg0(EVENTX28) = r__this_0006_0046
+      &amp; prd2(EVENTX28) = ENTITYX25
+      &amp; part2(CONJX57) = OPERATORX32
+      &amp; isA(OPERATORX32,imperative_0006_1032)
+      &amp; scope(OPERATORX32) = EVENTX39
+      &amp; isA(EVENTX39,r__make_0006_0053)
+      &amp; arg1(EVENTX39) = ENTITYX33
+      &amp; prd(EVENTX39) = STATEX35
+      &amp; part3(CONJX57) = OPERATORX41
+      &amp; isA(OPERATORX41,r___apos_ll_0006_0061)
+      &amp; scope(OPERATORX41) = EVENTX42
+      &amp; isA(EVENTX42,r__be_0006_0062)
+      &amp; arg0(EVENTX42) = r__that_0006_0060
+      &amp; prd2(EVENTX42) = ATTRIBX40
+      &amp; part4(CONJX57) = OPERATORX46
+      &amp; isA(OPERATORX46,imperative_0006_1046)
+      &amp; scope(OPERATORX46) = OPERATORX47
+      &amp; isA(OPERATORX47,r__just_0006_0065)
+      &amp; scope(OPERATORX47) = EVENTX56
+      &amp; isA(EVENTX56,r__test_0006_0066)
+      &amp; arg1(EVENTX56) = r__it_0006_0067
+      &amp; r__for_0006_0068_bnf(EVENTX56) = SPEAKERX48
+      &amp; prn5(EVENTX56) = EVENTX49
+      &amp; STATEX35 = EVENTX38
+      &amp; isA(EVENTX38,r__work_0006_0058)
+      &amp; EVENTX49 = OPERATORX51
+      &amp; isA(OPERATORX51,question_0006_1051)
+      &amp; scope(OPERATORX51) = OPERATORX53
+      &amp; isA(OPERATORX53,r__will_0006_0070)
+      &amp; scope(OPERATORX53) = EVENTX55
+      &amp; isA(EVENTX55,z_0006_1054)
+      &amp; arg0(EVENTX55) = HEARERX52
+      &amp; CATENATIVEX59 = EVENTX64
+      &amp; isA(EVENTX64,r__given_0006_0012)
+      &amp; arg0_r__by_0006_0016_lgs(EVENTX64) = r__John_0006_0017_r__Biggs_0006_0018
+      &amp; arg2(EVENTX64) = SPEAKERX6
+      &amp; arg1(EVENTX64) = DRIVERSX60
+      &amp; isA(ENTITYX2,r__I2C_0006_0006_r__drivers_0006_0007)
+      &amp; SPEAKERX6 = r__I_0006_0001
+      &amp; isA(DRIVERSX8,r__they_0006_0026)
+      &amp; isA(ENTITYX14,r__ARX_0006_0038_r__implementation_0006_0039)
+      &amp; isA(BIGGSX21,r__he_0006_0041)
+      &amp; isA(EVENTX26,r__do_0006_0050)
+      &amp; mnr1(EVENTX26) = ENTITYX25
+      &amp; arg0(EVENTX26) = r__you_0006_0049
+      &amp; arg1(EVENTX26) = r__it_0006_0051
+      &amp; isA(ENTITYX25,z_0006_1027)
+      &amp; isA(ENTITYX33,r__Time_0006_0056_r__Clock_0006_0057)
+      &amp; attrib2(ENTITYX33) = ATTRIBX34
+      &amp; ( SPEAKERX48 = SPEAKERX6
+        | SPEAKERX48 = r__I_0006_0001 )
+      &amp; HEARERX52 = r__you_0006_0049
+      &amp; isA(DRIVERSX60,r__I2C_0006_0014_r__drivers_0006_0015)
+      &amp; isA(ENTITYX61,r__ARM_0006_0023)
+      &amp; isA(ENTITYX62,r__today_0006_0024)
+      &amp; isA(EVENTX17,r__had_0006_0032)
+      &amp; catenative(EVENTX17) = CATENATIVEX11
+      &amp; isA(r__Modula2_0006_0030,r__Modula2_0006_0030)
+      &amp; isA(EVENTX63,r___apos_s_0006_0021)
+      &amp; arg0(EVENTX63) = r__John_0006_0017_r__Biggs_0006_0018
+      &amp; r__at_0006_0022_prd2(EVENTX63) = ENTITYX61
+      &amp; tmp(EVENTX63) = ENTITYX62
+      &amp; isA(r__John_0006_0017_r__Biggs_0006_0018,r__John_0006_0017_r__Biggs_0006_0018)
+      &amp; isA(ATTRIBX34,r__Real_0006_0055)
+      &amp; isA(ATTRIBX40,r__fine_0006_0063)
+      &amp; isA(EVENTX66,r__got_0006_0002)
+      &amp; catenative(EVENTX66) = STATEX1
+      &amp; prn5(EVENTX66) = EVENTX4 ) ).
+
+
+</pre>
+<br>
+<html>
+<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns:exslt="http://exslt.org/common" width="7600" height="900" viewBox="-38.000 -4.500 9500.00 1125.00">
+<text x="3800.60" y="50" text-anchor="middle">IP-MAT</text>
+<text x="50.60" y="110" text-anchor="middle">NP-SBJ</text>
+<text x="50.30" y="170" text-anchor="middle">PRO</text>
+<text x="50.30" y="230" text-anchor="middle">I</text>
+<line x1="50.30" y1="180" x2="50.30" y2="210" style="stroke:#000000;stroke-width:2;"/>
+<line x1="50.60" y1="120" x2="50" y2="150" style="stroke:#000000;stroke-width:2;"/>
+<line x1="3800.60" y1="60" x2="50" y2="90" style="stroke:#000000;stroke-width:2;"/>
+<text x="151.10" y="110" text-anchor="middle">VBD;~cat_Vt</text>
+<text x="151.10" y="170" text-anchor="middle">got</text>
+<line x1="151.10" y1="120" x2="151.10" y2="150" style="stroke:#000000;stroke-width:2;"/>
+<line x1="3800.60" y1="60" x2="150" y2="90" style="stroke:#000000;stroke-width:2;"/>
+<text x="451.0" y="110" text-anchor="middle">IP-INF-CAT</text>
+<text x="250.20" y="170" text-anchor="middle">TO</text>
+<text x="250.20" y="230" text-anchor="middle">to</text>
+<line x1="250.20" y1="180" x2="250.20" y2="210" style="stroke:#000000;stroke-width:2;"/>
+<line x1="451.0" y1="120" x2="250" y2="150" style="stroke:#000000;stroke-width:2;"/>
+<text x="350.60" y="170" text-anchor="middle">VB;~Tn</text>
+<text x="350.60" y="230" text-anchor="middle">write</text>
+<line x1="350.60" y1="180" x2="350.60" y2="210" style="stroke:#000000;stroke-width:2;"/>
+<line x1="451.0" y1="120" x2="350" y2="150" style="stroke:#000000;stroke-width:2;"/>
+<text x="550.60" y="170" text-anchor="middle">NP-OB1</text>
+<text x="450.30" y="230" text-anchor="middle">D</text>
+<text x="450.30" y="290" text-anchor="middle">the</text>
+<line x1="450.30" y1="240" x2="450.30" y2="270" style="stroke:#000000;stroke-width:2;"/>
+<line x1="550.60" y1="180" x2="450" y2="210" style="stroke:#000000;stroke-width:2;"/>
+<text x="550.30" y="230" text-anchor="middle">NPR</text>
+<text x="550.30" y="290" text-anchor="middle">I2C</text>
+<line x1="550.30" y1="240" x2="550.30" y2="270" style="stroke:#000000;stroke-width:2;"/>
+<line x1="550.60" y1="180" x2="550" y2="210" style="stroke:#000000;stroke-width:2;"/>
+<text x="650.70" y="230" text-anchor="middle">NS</text>
+<text x="650.70" y="290" text-anchor="middle">drivers</text>
+<line x1="650.70" y1="240" x2="650.70" y2="270" style="stroke:#000000;stroke-width:2;"/>
+<line x1="550.60" y1="180" x2="650" y2="210" style="stroke:#000000;stroke-width:2;"/>
+<line x1="451.0" y1="120" x2="550" y2="150" style="stroke:#000000;stroke-width:2;"/>
+<line x1="3800.60" y1="60" x2="450" y2="90" style="stroke:#000000;stroke-width:2;"/>
+<text x="750.40" y="110" text-anchor="middle">PUNC</text>
+<text x="750.40" y="170" text-anchor="middle">,</text>
+<line x1="750.40" y1="120" x2="750.40" y2="150" style="stroke:#000000;stroke-width:2;"/>
+<line x1="3800.60" y1="60" x2="750" y2="90" style="stroke:#000000;stroke-width:2;"/>
+<text x="4150.30" y="110" text-anchor="middle">PRN</text>
+<text x="4150.60" y="170" text-anchor="middle">IP-MAT</text>
+<text x="850.80" y="230" text-anchor="middle">ADVP-MOD</text>
+<text x="850.80" y="290" text-anchor="middle">ADV</text>
+<text x="850.80" y="350" text-anchor="middle">actually</text>
+<line x1="850.80" y1="300" x2="850.80" y2="330" style="stroke:#000000;stroke-width:2;"/>
+<line x1="850.80" y1="240" x2="850" y2="270" style="stroke:#000000;stroke-width:2;"/>
+<line x1="4150.60" y1="180" x2="850" y2="210" style="stroke:#000000;stroke-width:2;"/>
+<text x="950.60" y="230" text-anchor="middle">NP-SBJ</text>
+<text x="950.30" y="290" text-anchor="middle">PRO</text>
+<text x="950.30" y="350" text-anchor="middle">I</text>
+<line x1="950.30" y1="300" x2="950.30" y2="330" style="stroke:#000000;stroke-width:2;"/>
+<line x1="950.60" y1="240" x2="950" y2="270" style="stroke:#000000;stroke-width:2;"/>
+<line x1="4150.60" y1="180" x2="950" y2="210" style="stroke:#000000;stroke-width:2;"/>
+<text x="1052.0" y="230" text-anchor="middle">BED;~cat_Ve_passive_</text>
+<text x="1052.0" y="290" text-anchor="middle">was</text>
+<line x1="1052.0" y1="240" x2="1052.0" y2="270" style="stroke:#000000;stroke-width:2;"/>
+<line x1="4150.60" y1="180" x2="1050" y2="210" style="stroke:#000000;stroke-width:2;"/>
+<text x="1751.0" y="230" text-anchor="middle">IP-PPL-CAT</text>
+<text x="1150.90" y="290" text-anchor="middle">VVN;~Dn.n</text>
+<text x="1150.90" y="350" text-anchor="middle">given</text>
+<line x1="1150.90" y1="300" x2="1150.90" y2="330" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1751.0" y1="240" x2="1150" y2="270" style="stroke:#000000;stroke-width:2;"/>
+<text x="1350.60" y="290" text-anchor="middle">NP-OB1</text>
+<text x="1250.40" y="350" text-anchor="middle">D</text>
+<text x="1250.40" y="410" text-anchor="middle">some</text>
+<line x1="1250.40" y1="360" x2="1250.40" y2="390" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1350.60" y1="300" x2="1250" y2="330" style="stroke:#000000;stroke-width:2;"/>
+<text x="1350.30" y="350" text-anchor="middle">NPR</text>
+<text x="1350.30" y="410" text-anchor="middle">I2C</text>
+<line x1="1350.30" y1="360" x2="1350.30" y2="390" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1350.60" y1="300" x2="1350" y2="330" style="stroke:#000000;stroke-width:2;"/>
+<text x="1450.70" y="350" text-anchor="middle">NS</text>
+<text x="1450.70" y="410" text-anchor="middle">drivers</text>
+<line x1="1450.70" y1="360" x2="1450.70" y2="390" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1350.60" y1="300" x2="1450" y2="330" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1751.0" y1="240" x2="1350" y2="270" style="stroke:#000000;stroke-width:2;"/>
+<text x="1950.60" y="290" text-anchor="middle">PP-LGS</text>
+<text x="1550.60" y="350" text-anchor="middle">P-ROLE</text>
+<text x="1550.60" y="410" text-anchor="middle">by</text>
+<line x1="1550.60" y1="360" x2="1550.60" y2="390" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1950.60" y1="300" x2="1550" y2="330" style="stroke:#000000;stroke-width:2;"/>
+<text x="2000.20" y="350" text-anchor="middle">NP</text>
+<text x="1650.40" y="410" text-anchor="middle">NPR</text>
+<text x="1650.40" y="470" text-anchor="middle">John</text>
+<line x1="1650.40" y1="420" x2="1650.40" y2="450" style="stroke:#000000;stroke-width:2;"/>
+<line x1="2000.20" y1="360" x2="1650" y2="390" style="stroke:#000000;stroke-width:2;"/>
+<text x="1750.5" y="410" text-anchor="middle">NPR</text>
+<text x="1750.5" y="470" text-anchor="middle">Biggs</text>
+<line x1="1750.5" y1="420" x2="1750.5" y2="450" style="stroke:#000000;stroke-width:2;"/>
+<line x1="2000.20" y1="360" x2="1750" y2="390" style="stroke:#000000;stroke-width:2;"/>
+<text x="1850.40" y="410" text-anchor="middle">PUNC</text>
+<text x="1850.40" y="470" text-anchor="middle">,</text>
+<line x1="1850.40" y1="420" x2="1850.40" y2="450" style="stroke:#000000;stroke-width:2;"/>
+<line x1="2000.20" y1="360" x2="1850" y2="390" style="stroke:#000000;stroke-width:2;"/>
+<text x="2150.60" y="410" text-anchor="middle">IP-REL</text>
+<text x="1950.60" y="470" text-anchor="middle">NP-SBJ</text>
+<text x="1950.40" y="530" text-anchor="middle">RPRO</text>
+<text x="1950.40" y="590" text-anchor="middle">who</text>
+<line x1="1950.40" y1="540" x2="1950.40" y2="570" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1950.60" y1="480" x2="1950" y2="510" style="stroke:#000000;stroke-width:2;"/>
+<line x1="2150.60" y1="420" x2="1950" y2="450" style="stroke:#000000;stroke-width:2;"/>
+<text x="2051.30" y="470" text-anchor="middle">BEP;~La</text>
+<text x="2051.30" y="530" text-anchor="middle">&lt;apos&gt;s</text>
+<line x1="2051.30" y1="480" x2="2051.30" y2="510" style="stroke:#000000;stroke-width:2;"/>
+<line x1="2150.60" y1="420" x2="2050" y2="450" style="stroke:#000000;stroke-width:2;"/>
+<text x="2200.70" y="470" text-anchor="middle">PP-PRD2</text>
+<text x="2150.60" y="530" text-anchor="middle">P-ROLE</text>
+<text x="2150.60" y="590" text-anchor="middle">at</text>
+<line x1="2150.60" y1="540" x2="2150.60" y2="570" style="stroke:#000000;stroke-width:2;"/>
+<line x1="2200.70" y1="480" x2="2150" y2="510" style="stroke:#000000;stroke-width:2;"/>
+<text x="2250.20" y="530" text-anchor="middle">NP</text>
+<text x="2250.30" y="590" text-anchor="middle">N</text>
+<text x="2250.30" y="650" text-anchor="middle">ARM</text>
+<line x1="2250.30" y1="600" x2="2250.30" y2="630" style="stroke:#000000;stroke-width:2;"/>
+<line x1="2250.20" y1="540" x2="2250" y2="570" style="stroke:#000000;stroke-width:2;"/>
+<line x1="2200.70" y1="480" x2="2250" y2="510" style="stroke:#000000;stroke-width:2;"/>
+<line x1="2150.60" y1="420" x2="2200" y2="450" style="stroke:#000000;stroke-width:2;"/>
+<text x="2350.60" y="470" text-anchor="middle">NP-TMP</text>
+<text x="2350.5" y="530" text-anchor="middle">N</text>
+<text x="2350.5" y="590" text-anchor="middle">today</text>
+<line x1="2350.5" y1="540" x2="2350.5" y2="570" style="stroke:#000000;stroke-width:2;"/>
+<line x1="2350.60" y1="480" x2="2350" y2="510" style="stroke:#000000;stroke-width:2;"/>
+<line x1="2150.60" y1="420" x2="2350" y2="450" style="stroke:#000000;stroke-width:2;"/>
+<line x1="2000.20" y1="360" x2="2150" y2="390" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1950.60" y1="300" x2="2000" y2="330" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1751.0" y1="240" x2="1950" y2="270" style="stroke:#000000;stroke-width:2;"/>
+<line x1="4150.60" y1="180" x2="1750" y2="210" style="stroke:#000000;stroke-width:2;"/>
+<text x="2450.40" y="230" text-anchor="middle">PUNC</text>
+<text x="2450.40" y="290" text-anchor="middle">,</text>
+<line x1="2450.40" y1="240" x2="2450.40" y2="270" style="stroke:#000000;stroke-width:2;"/>
+<line x1="4150.60" y1="180" x2="2450" y2="210" style="stroke:#000000;stroke-width:2;"/>
+<text x="3300.30" y="230" text-anchor="middle">PRN</text>
+<text x="3300.60" y="290" text-anchor="middle">IP-MAT</text>
+<text x="2550.60" y="350" text-anchor="middle">NP-SBJ</text>
+<text x="2550.40" y="410" text-anchor="middle">PRO</text>
+<text x="2550.40" y="470" text-anchor="middle">they</text>
+<line x1="2550.40" y1="420" x2="2550.40" y2="450" style="stroke:#000000;stroke-width:2;"/>
+<line x1="2550.60" y1="360" x2="2550" y2="390" style="stroke:#000000;stroke-width:2;"/>
+<line x1="3300.60" y1="300" x2="2550" y2="330" style="stroke:#000000;stroke-width:2;"/>
+<text x="2652.0" y="350" text-anchor="middle">BED;~cat_Ve_passive_</text>
+<text x="2652.0" y="410" text-anchor="middle">were</text>
+<line x1="2652.0" y1="360" x2="2652.0" y2="390" style="stroke:#000000;stroke-width:2;"/>
+<line x1="3300.60" y1="300" x2="2650" y2="330" style="stroke:#000000;stroke-width:2;"/>
+<text x="3401.0" y="350" text-anchor="middle">IP-PPL-CAT</text>
+<text x="2750.60" y="410" text-anchor="middle">NP-LGS</text>
+<text x="2750.60" y="470" text-anchor="middle">*</text>
+<line x1="2750.60" y1="420" x2="2750.60" y2="450" style="stroke:#000000;stroke-width:2;"/>
+<line x1="3401.0" y1="360" x2="2750" y2="390" style="stroke:#000000;stroke-width:2;"/>
+<text x="2850.70" y="410" text-anchor="middle">VVN</text>
+<text x="2850.70" y="470" text-anchor="middle">written</text>
+<line x1="2850.70" y1="420" x2="2850.70" y2="450" style="stroke:#000000;stroke-width:2;"/>
+<line x1="3401.0" y1="360" x2="2850" y2="390" style="stroke:#000000;stroke-width:2;"/>
+<text x="3500.60" y="410" text-anchor="middle">PP-MNR</text>
+<text x="2950.60" y="470" text-anchor="middle">P-ROLE</text>
+<text x="2950.60" y="530" text-anchor="middle">in</text>
+<line x1="2950.60" y1="480" x2="2950.60" y2="510" style="stroke:#000000;stroke-width:2;"/>
+<line x1="3500.60" y1="420" x2="2950" y2="450" style="stroke:#000000;stroke-width:2;"/>
+<text x="3550.20" y="470" text-anchor="middle">NP</text>
+<text x="3050.70" y="530" text-anchor="middle">NPR</text>
+<text x="3050.70" y="590" text-anchor="middle">Modula2</text>
+<line x1="3050.70" y1="540" x2="3050.70" y2="570" style="stroke:#000000;stroke-width:2;"/>
+<line x1="3550.20" y1="480" x2="3050" y2="510" style="stroke:#000000;stroke-width:2;"/>
+<text x="3600.60" y="530" text-anchor="middle">IP-REL</text>
+<text x="3150.60" y="590" text-anchor="middle">NP-SBJ</text>
+<text x="3150.5" y="650" text-anchor="middle">RPRO</text>
+<text x="3150.5" y="710" text-anchor="middle">which</text>
+<line x1="3150.5" y1="660" x2="3150.5" y2="690" style="stroke:#000000;stroke-width:2;"/>
+<line x1="3150.60" y1="600" x2="3150" y2="630" style="stroke:#000000;stroke-width:2;"/>
+<line x1="3600.60" y1="540" x2="3150" y2="570" style="stroke:#000000;stroke-width:2;"/>
+<text x="3251.10" y="590" text-anchor="middle">HVD;~cat_Ve</text>
+<text x="3251.10" y="650" text-anchor="middle">had</text>
+<line x1="3251.10" y1="600" x2="3251.10" y2="630" style="stroke:#000000;stroke-width:2;"/>
+<line x1="3600.60" y1="540" x2="3250" y2="570" style="stroke:#000000;stroke-width:2;"/>
+<text x="3701.0" y="590" text-anchor="middle">IP-PPL-CAT</text>
+<text x="3352.0" y="650" text-anchor="middle">BEN;~cat_Ve_passive_</text>
+<text x="3352.0" y="710" text-anchor="middle">been</text>
+<line x1="3352.0" y1="660" x2="3352.0" y2="690" style="stroke:#000000;stroke-width:2;"/>
+<line x1="3701.0" y1="600" x2="3350" y2="630" style="stroke:#000000;stroke-width:2;"/>
+<text x="3751.0" y="650" text-anchor="middle">IP-PPL-CAT</text>
+<text x="3450.60" y="710" text-anchor="middle">NP-LGS</text>
+<text x="3450.60" y="770" text-anchor="middle">*</text>
+<line x1="3450.60" y1="720" x2="3450.60" y2="750" style="stroke:#000000;stroke-width:2;"/>
+<line x1="3751.0" y1="660" x2="3450" y2="690" style="stroke:#000000;stroke-width:2;"/>
+<text x="3550.60" y="710" text-anchor="middle">VVN</text>
+<text x="3550.60" y="770" text-anchor="middle">ripped</text>
+<line x1="3550.60" y1="720" x2="3550.60" y2="750" style="stroke:#000000;stroke-width:2;"/>
+<line x1="3751.0" y1="660" x2="3550" y2="690" style="stroke:#000000;stroke-width:2;"/>
+<text x="3650.30" y="710" text-anchor="middle">RP</text>
+<text x="3650.30" y="770" text-anchor="middle">off</text>
+<line x1="3650.30" y1="720" x2="3650.30" y2="750" style="stroke:#000000;stroke-width:2;"/>
+<line x1="3751.0" y1="660" x2="3650" y2="690" style="stroke:#000000;stroke-width:2;"/>
+<text x="3900.60" y="710" text-anchor="middle">PP-DIR</text>
+<text x="3750.60" y="770" text-anchor="middle">P-ROLE</text>
+<text x="3750.60" y="830" text-anchor="middle">out_of</text>
+<line x1="3750.60" y1="780" x2="3750.60" y2="810" style="stroke:#000000;stroke-width:2;"/>
+<line x1="3900.60" y1="720" x2="3750" y2="750" style="stroke:#000000;stroke-width:2;"/>
+<text x="3950.20" y="770" text-anchor="middle">NP</text>
+<text x="3850.30" y="830" text-anchor="middle">D</text>
+<text x="3850.30" y="890" text-anchor="middle">the</text>
+<line x1="3850.30" y1="840" x2="3850.30" y2="870" style="stroke:#000000;stroke-width:2;"/>
+<line x1="3950.20" y1="780" x2="3850" y2="810" style="stroke:#000000;stroke-width:2;"/>
+<text x="3950.30" y="830" text-anchor="middle">NPR</text>
+<text x="3950.30" y="890" text-anchor="middle">ARX</text>
+<line x1="3950.30" y1="840" x2="3950.30" y2="870" style="stroke:#000000;stroke-width:2;"/>
+<line x1="3950.20" y1="780" x2="3950" y2="810" style="stroke:#000000;stroke-width:2;"/>
+<text x="4051.40" y="830" text-anchor="middle">N</text>
+<text x="4051.40" y="890" text-anchor="middle">implementation</text>
+<line x1="4051.40" y1="840" x2="4051.40" y2="870" style="stroke:#000000;stroke-width:2;"/>
+<line x1="3950.20" y1="780" x2="4050" y2="810" style="stroke:#000000;stroke-width:2;"/>
+<line x1="3900.60" y1="720" x2="3950" y2="750" style="stroke:#000000;stroke-width:2;"/>
+<line x1="3751.0" y1="660" x2="3900" y2="690" style="stroke:#000000;stroke-width:2;"/>
+<line x1="3701.0" y1="600" x2="3750" y2="630" style="stroke:#000000;stroke-width:2;"/>
+<line x1="3600.60" y1="540" x2="3700" y2="570" style="stroke:#000000;stroke-width:2;"/>
+<line x1="3550.20" y1="480" x2="3600" y2="510" style="stroke:#000000;stroke-width:2;"/>
+<line x1="3500.60" y1="420" x2="3550" y2="450" style="stroke:#000000;stroke-width:2;"/>
+<line x1="3401.0" y1="360" x2="3500" y2="390" style="stroke:#000000;stroke-width:2;"/>
+<line x1="3300.60" y1="300" x2="3400" y2="330" style="stroke:#000000;stroke-width:2;"/>
+<line x1="3300.30" y1="240" x2="3300" y2="270" style="stroke:#000000;stroke-width:2;"/>
+<line x1="4150.60" y1="180" x2="3300" y2="210" style="stroke:#000000;stroke-width:2;"/>
+<text x="4150.40" y="230" text-anchor="middle">PUNC</text>
+<text x="4150.40" y="290" text-anchor="middle">,</text>
+<line x1="4150.40" y1="240" x2="4150.40" y2="270" style="stroke:#000000;stroke-width:2;"/>
+<line x1="4150.60" y1="180" x2="4150" y2="210" style="stroke:#000000;stroke-width:2;"/>
+<text x="5850.30" y="230" text-anchor="middle">PRN</text>
+<text x="5850.60" y="290" text-anchor="middle">IP-MAT</text>
+<text x="4250.60" y="350" text-anchor="middle">NP-SBJ</text>
+<text x="4250.30" y="410" text-anchor="middle">PRO</text>
+<text x="4250.30" y="470" text-anchor="middle">he</text>
+<line x1="4250.30" y1="420" x2="4250.30" y2="450" style="stroke:#000000;stroke-width:2;"/>
+<line x1="4250.60" y1="360" x2="4250" y2="390" style="stroke:#000000;stroke-width:2;"/>
+<line x1="5850.60" y1="300" x2="4250" y2="330" style="stroke:#000000;stroke-width:2;"/>
+<text x="4350.70" y="350" text-anchor="middle">VBD;~Tr</text>
+<text x="4350.70" y="410" text-anchor="middle">said</text>
+<line x1="4350.70" y1="360" x2="4350.70" y2="390" style="stroke:#000000;stroke-width:2;"/>
+<line x1="5850.60" y1="300" x2="4350" y2="330" style="stroke:#000000;stroke-width:2;"/>
+<text x="4451.30" y="350" text-anchor="middle">PULQ</text>
+<text x="4451.30" y="410" text-anchor="middle">&lt;ldquo&gt;</text>
+<line x1="4451.30" y1="360" x2="4451.30" y2="390" style="stroke:#000000;stroke-width:2;"/>
+<line x1="5850.60" y1="300" x2="4450" y2="330" style="stroke:#000000;stroke-width:2;"/>
+<text x="5951.30" y="350" text-anchor="middle">utterance-OB1</text>
+<text x="4950.60" y="410" text-anchor="middle">IP-MAT</text>
+<text x="4550.5" y="470" text-anchor="middle">REACT</text>
+<text x="4550.5" y="530" text-anchor="middle">here</text>
+<line x1="4550.5" y1="480" x2="4550.5" y2="510" style="stroke:#000000;stroke-width:2;"/>
+<line x1="4950.60" y1="420" x2="4550" y2="450" style="stroke:#000000;stroke-width:2;"/>
+<text x="4650.40" y="470" text-anchor="middle">PUNC</text>
+<text x="4650.40" y="530" text-anchor="middle">,</text>
+<line x1="4650.40" y1="480" x2="4650.40" y2="510" style="stroke:#000000;stroke-width:2;"/>
+<line x1="4950.60" y1="420" x2="4650" y2="450" style="stroke:#000000;stroke-width:2;"/>
+<text x="4750.60" y="470" text-anchor="middle">NP-SBJ</text>
+<text x="4750.80" y="530" text-anchor="middle">D;_nphd_</text>
+<text x="4750.80" y="590" text-anchor="middle">this</text>
+<line x1="4750.80" y1="540" x2="4750.80" y2="570" style="stroke:#000000;stroke-width:2;"/>
+<line x1="4750.60" y1="480" x2="4750" y2="510" style="stroke:#000000;stroke-width:2;"/>
+<line x1="4950.60" y1="420" x2="4750" y2="450" style="stroke:#000000;stroke-width:2;"/>
+<text x="4850.70" y="470" text-anchor="middle">BEP;~Ln</text>
+<text x="4850.70" y="530" text-anchor="middle">is</text>
+<line x1="4850.70" y1="480" x2="4850.70" y2="510" style="stroke:#000000;stroke-width:2;"/>
+<line x1="4950.60" y1="420" x2="4850" y2="450" style="stroke:#000000;stroke-width:2;"/>
+<text x="5100.70" y="470" text-anchor="middle">NP-PRD2</text>
+<text x="5100.60" y="530" text-anchor="middle">IP-REL</text>
+<text x="4950.80" y="590" text-anchor="middle">ADVP-MNR</text>
+<text x="4950.40" y="650" text-anchor="middle">RADV</text>
+<text x="4950.40" y="710" text-anchor="middle">how</text>
+<line x1="4950.40" y1="660" x2="4950.40" y2="690" style="stroke:#000000;stroke-width:2;"/>
+<line x1="4950.80" y1="600" x2="4950" y2="630" style="stroke:#000000;stroke-width:2;"/>
+<line x1="5100.60" y1="540" x2="4950" y2="570" style="stroke:#000000;stroke-width:2;"/>
+<text x="5050.60" y="590" text-anchor="middle">NP-SBJ</text>
+<text x="5050.30" y="650" text-anchor="middle">PRO</text>
+<text x="5050.30" y="710" text-anchor="middle">you</text>
+<line x1="5050.30" y1="660" x2="5050.30" y2="690" style="stroke:#000000;stroke-width:2;"/>
+<line x1="5050.60" y1="600" x2="5050" y2="630" style="stroke:#000000;stroke-width:2;"/>
+<line x1="5100.60" y1="540" x2="5050" y2="570" style="stroke:#000000;stroke-width:2;"/>
+<text x="5150.30" y="590" text-anchor="middle">DOP</text>
+<text x="5150.30" y="650" text-anchor="middle">do</text>
+<line x1="5150.30" y1="600" x2="5150.30" y2="630" style="stroke:#000000;stroke-width:2;"/>
+<line x1="5100.60" y1="540" x2="5150" y2="570" style="stroke:#000000;stroke-width:2;"/>
+<text x="5250.60" y="590" text-anchor="middle">NP-OB1</text>
+<text x="5250.30" y="650" text-anchor="middle">PRO</text>
+<text x="5250.30" y="710" text-anchor="middle">it</text>
+<line x1="5250.30" y1="660" x2="5250.30" y2="690" style="stroke:#000000;stroke-width:2;"/>
+<line x1="5250.60" y1="600" x2="5250" y2="630" style="stroke:#000000;stroke-width:2;"/>
+<line x1="5100.60" y1="540" x2="5250" y2="570" style="stroke:#000000;stroke-width:2;"/>
+<line x1="5100.70" y1="480" x2="5100" y2="510" style="stroke:#000000;stroke-width:2;"/>
+<line x1="4950.60" y1="420" x2="5100" y2="450" style="stroke:#000000;stroke-width:2;"/>
+<text x="5350.40" y="470" text-anchor="middle">PUNC</text>
+<text x="5350.40" y="530" text-anchor="middle">,</text>
+<line x1="5350.40" y1="480" x2="5350.40" y2="510" style="stroke:#000000;stroke-width:2;"/>
+<line x1="4950.60" y1="420" x2="5350" y2="450" style="stroke:#000000;stroke-width:2;"/>
+<line x1="5951.30" y1="360" x2="4950" y2="390" style="stroke:#000000;stroke-width:2;"/>
+<text x="5750.60" y="410" text-anchor="middle">IP-IMP</text>
+<text x="5450.40" y="470" text-anchor="middle">VB</text>
+<text x="5450.40" y="530" text-anchor="middle">make</text>
+<line x1="5450.40" y1="480" x2="5450.40" y2="510" style="stroke:#000000;stroke-width:2;"/>
+<line x1="5750.60" y1="420" x2="5450" y2="450" style="stroke:#000000;stroke-width:2;"/>
+<text x="5700.60" y="470" text-anchor="middle">NP-OB1</text>
+<text x="5550.30" y="530" text-anchor="middle">D</text>
+<text x="5550.30" y="590" text-anchor="middle">the</text>
+<line x1="5550.30" y1="540" x2="5550.30" y2="570" style="stroke:#000000;stroke-width:2;"/>
+<line x1="5700.60" y1="480" x2="5550" y2="510" style="stroke:#000000;stroke-width:2;"/>
+<text x="5650.40" y="530" text-anchor="middle">ADJP</text>
+<text x="5650.40" y="590" text-anchor="middle">ADJ</text>
+<text x="5650.40" y="650" text-anchor="middle">Real</text>
+<line x1="5650.40" y1="600" x2="5650.40" y2="630" style="stroke:#000000;stroke-width:2;"/>
+<line x1="5650.40" y1="540" x2="5650" y2="570" style="stroke:#000000;stroke-width:2;"/>
+<line x1="5700.60" y1="480" x2="5650" y2="510" style="stroke:#000000;stroke-width:2;"/>
+<text x="5750.40" y="530" text-anchor="middle">N</text>
+<text x="5750.40" y="590" text-anchor="middle">Time</text>
+<line x1="5750.40" y1="540" x2="5750.40" y2="570" style="stroke:#000000;stroke-width:2;"/>
+<line x1="5700.60" y1="480" x2="5750" y2="510" style="stroke:#000000;stroke-width:2;"/>
+<text x="5850.5" y="530" text-anchor="middle">N</text>
+<text x="5850.5" y="590" text-anchor="middle">Clock</text>
+<line x1="5850.5" y1="540" x2="5850.5" y2="570" style="stroke:#000000;stroke-width:2;"/>
+<line x1="5700.60" y1="480" x2="5850" y2="510" style="stroke:#000000;stroke-width:2;"/>
+<line x1="5750.60" y1="420" x2="5700" y2="450" style="stroke:#000000;stroke-width:2;"/>
+<text x="5951.0" y="470" text-anchor="middle">IP-INF-PRD</text>
+<text x="5950.40" y="530" text-anchor="middle">VB</text>
+<text x="5950.40" y="590" text-anchor="middle">work</text>
+<line x1="5950.40" y1="540" x2="5950.40" y2="570" style="stroke:#000000;stroke-width:2;"/>
+<line x1="5951.0" y1="480" x2="5950" y2="510" style="stroke:#000000;stroke-width:2;"/>
+<line x1="5750.60" y1="420" x2="5950" y2="450" style="stroke:#000000;stroke-width:2;"/>
+<text x="6050.40" y="470" text-anchor="middle">PUNC</text>
+<text x="6050.40" y="530" text-anchor="middle">,</text>
+<line x1="6050.40" y1="480" x2="6050.40" y2="510" style="stroke:#000000;stroke-width:2;"/>
+<line x1="5750.60" y1="420" x2="6050" y2="450" style="stroke:#000000;stroke-width:2;"/>
+<line x1="5951.30" y1="360" x2="5750" y2="390" style="stroke:#000000;stroke-width:2;"/>
+<text x="6350.60" y="410" text-anchor="middle">IP-MAT</text>
+<text x="6150.60" y="470" text-anchor="middle">NP-SBJ</text>
+<text x="6150.80" y="530" text-anchor="middle">D;_nphd_</text>
+<text x="6150.80" y="590" text-anchor="middle">that</text>
+<line x1="6150.80" y1="540" x2="6150.80" y2="570" style="stroke:#000000;stroke-width:2;"/>
+<line x1="6150.60" y1="480" x2="6150" y2="510" style="stroke:#000000;stroke-width:2;"/>
+<line x1="6350.60" y1="420" x2="6150" y2="450" style="stroke:#000000;stroke-width:2;"/>
+<text x="6251.40" y="470" text-anchor="middle">MD</text>
+<text x="6251.40" y="530" text-anchor="middle">&lt;apos&gt;ll</text>
+<line x1="6251.40" y1="480" x2="6251.40" y2="510" style="stroke:#000000;stroke-width:2;"/>
+<line x1="6350.60" y1="420" x2="6250" y2="450" style="stroke:#000000;stroke-width:2;"/>
+<text x="6350.60" y="470" text-anchor="middle">BE;~La</text>
+<text x="6350.60" y="530" text-anchor="middle">be</text>
+<line x1="6350.60" y1="480" x2="6350.60" y2="510" style="stroke:#000000;stroke-width:2;"/>
+<line x1="6350.60" y1="420" x2="6350" y2="450" style="stroke:#000000;stroke-width:2;"/>
+<text x="6450.90" y="470" text-anchor="middle">ADJP-PRD2</text>
+<text x="6450.40" y="530" text-anchor="middle">ADJ</text>
+<text x="6450.40" y="590" text-anchor="middle">fine</text>
+<line x1="6450.40" y1="540" x2="6450.40" y2="570" style="stroke:#000000;stroke-width:2;"/>
+<line x1="6450.90" y1="480" x2="6450" y2="510" style="stroke:#000000;stroke-width:2;"/>
+<line x1="6350.60" y1="420" x2="6450" y2="450" style="stroke:#000000;stroke-width:2;"/>
+<text x="6550.40" y="470" text-anchor="middle">PUNC</text>
+<text x="6550.40" y="530" text-anchor="middle">,</text>
+<line x1="6550.40" y1="480" x2="6550.40" y2="510" style="stroke:#000000;stroke-width:2;"/>
+<line x1="6350.60" y1="420" x2="6550" y2="450" style="stroke:#000000;stroke-width:2;"/>
+<line x1="5951.30" y1="360" x2="6350" y2="390" style="stroke:#000000;stroke-width:2;"/>
+<text x="7000.60" y="410" text-anchor="middle">IP-IMP</text>
+<text x="6650.80" y="470" text-anchor="middle">ADVP-MOD</text>
+<text x="6650.40" y="530" text-anchor="middle">ADV</text>
+<text x="6650.40" y="590" text-anchor="middle">just</text>
+<line x1="6650.40" y1="540" x2="6650.40" y2="570" style="stroke:#000000;stroke-width:2;"/>
+<line x1="6650.80" y1="480" x2="6650" y2="510" style="stroke:#000000;stroke-width:2;"/>
+<line x1="7000.60" y1="420" x2="6650" y2="450" style="stroke:#000000;stroke-width:2;"/>
+<text x="6750.40" y="470" text-anchor="middle">VB</text>
+<text x="6750.40" y="530" text-anchor="middle">test</text>
+<line x1="6750.40" y1="480" x2="6750.40" y2="510" style="stroke:#000000;stroke-width:2;"/>
+<line x1="7000.60" y1="420" x2="6750" y2="450" style="stroke:#000000;stroke-width:2;"/>
+<text x="6850.60" y="470" text-anchor="middle">NP-OB1</text>
+<text x="6850.30" y="530" text-anchor="middle">PRO</text>
+<text x="6850.30" y="590" text-anchor="middle">it</text>
+<line x1="6850.30" y1="540" x2="6850.30" y2="570" style="stroke:#000000;stroke-width:2;"/>
+<line x1="6850.60" y1="480" x2="6850" y2="510" style="stroke:#000000;stroke-width:2;"/>
+<line x1="7000.60" y1="420" x2="6850" y2="450" style="stroke:#000000;stroke-width:2;"/>
+<text x="7000.60" y="470" text-anchor="middle">PP-BNF</text>
+<text x="6950.60" y="530" text-anchor="middle">P-ROLE</text>
+<text x="6950.60" y="590" text-anchor="middle">for</text>
+<line x1="6950.60" y1="540" x2="6950.60" y2="570" style="stroke:#000000;stroke-width:2;"/>
+<line x1="7000.60" y1="480" x2="6950" y2="510" style="stroke:#000000;stroke-width:2;"/>
+<text x="7050.20" y="530" text-anchor="middle">NP</text>
+<text x="7050.30" y="590" text-anchor="middle">PRO</text>
+<text x="7050.30" y="650" text-anchor="middle">me</text>
+<line x1="7050.30" y1="600" x2="7050.30" y2="630" style="stroke:#000000;stroke-width:2;"/>
+<line x1="7050.20" y1="540" x2="7050" y2="570" style="stroke:#000000;stroke-width:2;"/>
+<line x1="7000.60" y1="480" x2="7050" y2="510" style="stroke:#000000;stroke-width:2;"/>
+<line x1="7000.60" y1="420" x2="7000" y2="450" style="stroke:#000000;stroke-width:2;"/>
+<text x="7200.30" y="470" text-anchor="middle">PRN</text>
+<text x="7200.60" y="530" text-anchor="middle">CP-QUE</text>
+<text x="7200.60" y="590" text-anchor="middle">IP-SUB</text>
+<text x="7150.40" y="650" text-anchor="middle">MD</text>
+<text x="7150.40" y="710" text-anchor="middle">will</text>
+<line x1="7150.40" y1="660" x2="7150.40" y2="690" style="stroke:#000000;stroke-width:2;"/>
+<line x1="7200.60" y1="600" x2="7150" y2="630" style="stroke:#000000;stroke-width:2;"/>
+<text x="7250.60" y="650" text-anchor="middle">NP-SBJ</text>
+<text x="7250.30" y="710" text-anchor="middle">PRO</text>
+<text x="7250.30" y="770" text-anchor="middle">you</text>
+<line x1="7250.30" y1="720" x2="7250.30" y2="750" style="stroke:#000000;stroke-width:2;"/>
+<line x1="7250.60" y1="660" x2="7250" y2="690" style="stroke:#000000;stroke-width:2;"/>
+<line x1="7200.60" y1="600" x2="7250" y2="630" style="stroke:#000000;stroke-width:2;"/>
+<line x1="7200.60" y1="540" x2="7200" y2="570" style="stroke:#000000;stroke-width:2;"/>
+<line x1="7200.30" y1="480" x2="7200" y2="510" style="stroke:#000000;stroke-width:2;"/>
+<line x1="7000.60" y1="420" x2="7200" y2="450" style="stroke:#000000;stroke-width:2;"/>
+<text x="7350.40" y="470" text-anchor="middle">PUNC</text>
+<text x="7350.40" y="530" text-anchor="middle">?</text>
+<line x1="7350.40" y1="480" x2="7350.40" y2="510" style="stroke:#000000;stroke-width:2;"/>
+<line x1="7000.60" y1="420" x2="7350" y2="450" style="stroke:#000000;stroke-width:2;"/>
+<line x1="5951.30" y1="360" x2="7000" y2="390" style="stroke:#000000;stroke-width:2;"/>
+<line x1="5850.60" y1="300" x2="5950" y2="330" style="stroke:#000000;stroke-width:2;"/>
+<text x="7451.30" y="350" text-anchor="middle">PURQ</text>
+<text x="7451.30" y="410" text-anchor="middle">&lt;rdquo&gt;</text>
+<line x1="7451.30" y1="360" x2="7451.30" y2="390" style="stroke:#000000;stroke-width:2;"/>
+<line x1="5850.60" y1="300" x2="7450" y2="330" style="stroke:#000000;stroke-width:2;"/>
+<line x1="5850.30" y1="240" x2="5850" y2="270" style="stroke:#000000;stroke-width:2;"/>
+<line x1="4150.60" y1="180" x2="5850" y2="210" style="stroke:#000000;stroke-width:2;"/>
+<line x1="4150.30" y1="120" x2="4150" y2="150" style="stroke:#000000;stroke-width:2;"/>
+<line x1="3800.60" y1="60" x2="4150" y2="90" style="stroke:#000000;stroke-width:2;"/>
+<text x="7550.40" y="110" text-anchor="middle">PUNC</text>
+<text x="7550.40" y="170" text-anchor="middle">.</text>
+<line x1="7550.40" y1="120" x2="7550.40" y2="150" style="stroke:#000000;stroke-width:2;"/>
+<line x1="3800.60" y1="60" x2="7550" y2="90" style="stroke:#000000;stroke-width:2;"/>
+</svg>
+</html>
+<br>
+<pre>
+( (IP-MAT (NP-SBJ (PRO I;{I}))
+          (VBD;~cat_Vt got;{get})
+          (IP-INF-CAT (TO to;{to})
+                      (VB;~Tn write;{write})
+                      (NP-OB1 (D the;{the})
+                              (NPR I2C;{I2C})
+                              (NS drivers;{driver})))
+          (PUNC ,)
+          (PRN (IP-MAT (ADVP-MOD (ADV actually;{actually}))
+                       (NP-SBJ (PRO I;{I}))
+                       (BED;~cat_Ve_passive_ was;{be})
+                       (IP-PPL-CAT (VVN;~Dn.n given;{give})
+                                   (NP-OB1;{DRIVERS} (D some;{some})
+                                                     (NPR I2C;{I2C})
+                                                     (NS drivers;{driver}))
+                                   (PP-LGS (P-ROLE by;{by})
+                                           (NP;{BIGGS} (NPR John;{John})
+                                                       (NPR Biggs;{Biggs})
+                                                       (PUNC ,)
+                                                       (IP-REL (NP-SBJ (RPRO who;{who}))
+                                                               (BEP;~La &lt;apos&gt;s;{be})
+                                                               (PP-PRD2 (P-ROLE at;{at})
+                                                                        (NP (N ARM;{arm})))
+                                                               (NP-TMP (N today;{today}))))))
+                       (PUNC ,)
+                       (PRN (IP-MAT (NP-SBJ;{DRIVERS} (PRO they;{they}))
+                                    (BED;~cat_Ve_passive_ were;{be})
+                                    (IP-PPL-CAT (NP-LGS *)
+                                                (VVN written;{write})
+                                                (PP-MNR (P-ROLE in;{in})
+                                                        (NP (NPR Modula2;{Modula2})
+                                                            (IP-REL (NP-SBJ (RPRO which;{which}))
+                                                                    (HVD;~cat_Ve had;{have})
+                                                                    (IP-PPL-CAT (BEN;~cat_Ve_passive_ been;{be})
+                                                                                (IP-PPL-CAT (NP-LGS *)
+                                                                                            (VVN ripped;{rip})
+                                                                                            (RP off;{off})
+                                                                                            (PP-DIR (P-ROLE out_of;{out_of})
+                                                                                                    (NP (D the;{the})
+                                                                                                        (NPR ARX;{ARX})
+                                                                                                        (N implementation;{implementation})))))))))))
+                       (PUNC ,)
+                       (PRN (IP-MAT (NP-SBJ;{BIGGS} (PRO he;{he}))
+                                    (VBD;~Tr said;{say})
+                                    (PULQ &lt;ldquo&gt;)
+                                    (utterance-OB1 (IP-MAT (REACT here)
+                                                           (PUNC ,)
+                                                           (NP-SBJ (D;_nphd_ this;{this}))
+                                                           (BEP;~Ln is;{be})
+                                                           (NP-PRD2 (IP-REL (ADVP-MNR (RADV how;{how}))
+                                                                            (NP-SBJ (PRO you;{you}))
+                                                                            (DOP do;{do})
+                                                                            (NP-OB1 (PRO it;{it}))))
+                                                           (PUNC ,))
+                                                   (IP-IMP (VB make;{make})
+                                                           (NP-OB1 (D the;{the})
+                                                                   (ADJP (ADJ Real;{real}))
+                                                                   (N Time;{time})
+                                                                   (N Clock;{clock}))
+                                                           (IP-INF-PRD (VB work;{work}))
+                                                           (PUNC ,))
+                                                   (IP-MAT (NP-SBJ (D;_nphd_ that;{that}))
+                                                           (MD &lt;apos&gt;ll;{will})
+                                                           (BE;~La be;{be})
+                                                           (ADJP-PRD2 (ADJ fine;{fine}))
+                                                           (PUNC ,))
+                                                   (IP-IMP (ADVP-MOD (ADV just;{just}))
+                                                           (VB test;{test})
+                                                           (NP-OB1 (PRO it;{it}))
+                                                           (PP-BNF (P-ROLE for;{for})
+                                                                   (NP (PRO me;{I})))
+                                                           (PRN (CP-QUE (IP-SUB (MD will;{will})
+                                                                                (NP-SBJ (PRO you;{you})))))
+                                                           (PUNC ?)))
+                                    (PURQ &lt;rdquo&gt;)))))
+          (PUNC .))
+  (ID 6_A_PaulFellows))
+</pre>
+<br>
+<br>
+<br>
+<br>
+</body>
+</html>
