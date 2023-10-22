@@ -135,13 +135,13 @@ The press , many doctors and public were denouncing the proposals .
 </svg>
 <br>
 <pre>
-arc(r__doctors_0096_0005,r__many_0096_0004,attrib1).
-arc(r__and_0096_0006,r__press_0096_0002,conj1).
-arc(r__and_0096_0006,r__doctors_0096_0005,conj2).
-arc(r__and_0096_0006,r__public_0096_0007,conj3).
-arc(r__were_0096_0008,r__denouncing_0096_0009,catenative).
-arc(r__denouncing_0096_0009,r__and_0096_0006,arg0).
-arc(r__denouncing_0096_0009,r__proposals_0096_0011,arg1).
+arc(r_0096_0005__doctors,r_0096_0004__many,attrib1).
+arc(r_0096_0006__and,r_0096_0002__press,conj1).
+arc(r_0096_0006__and,r_0096_0005__doctors,conj2).
+arc(r_0096_0006__and,r_0096_0007__public,conj3).
+arc(r_0096_0008__were,r_0096_0009__denouncing,catenative).
+arc(r_0096_0009__denouncing,r_0096_0006__and,arg0).
+arc(r_0096_0009__denouncing,r_0096_0011__proposals,arg1).
 
 </pre>
 <br>
@@ -149,20 +149,20 @@ arc(r__denouncing_0096_0009,r__proposals_0096_0011,arg1).
 fof(id_96_A_lob_A01,axiom,
     ? [CATENATIVEX6,EVENTX9,EVENTX8,ENTITYX1,ENTITYX7,ENTITYX2,ENTITYX3,ENTITYX5,ATTRIBX4] :
       ( CATENATIVEX6 = EVENTX8
-      &amp; isA(EVENTX8,r__denouncing_0096_0009)
+      &amp; isA(EVENTX8,r_0096_0009__denouncing)
       &amp; arg0(EVENTX8) = ENTITYX1
       &amp; arg1(EVENTX8) = ENTITYX7
-      &amp; isA(ENTITYX1,r__and_0096_0006)
+      &amp; isA(ENTITYX1,r_0096_0006__and)
       &amp; conj1(ENTITYX1) = ENTITYX2
       &amp; conj2(ENTITYX1) = ENTITYX3
       &amp; conj3(ENTITYX1) = ENTITYX5
-      &amp; isA(ENTITYX2,r__press_0096_0002)
-      &amp; isA(ENTITYX3,r__doctors_0096_0005)
+      &amp; isA(ENTITYX2,r_0096_0002__press)
+      &amp; isA(ENTITYX3,r_0096_0005__doctors)
       &amp; attrib1(ENTITYX3) = ATTRIBX4
-      &amp; isA(ENTITYX5,r__public_0096_0007)
-      &amp; isA(ENTITYX7,r__proposals_0096_0011)
-      &amp; isA(ATTRIBX4,r__many_0096_0004)
-      &amp; isA(EVENTX9,r__were_0096_0008)
+      &amp; isA(ENTITYX5,r_0096_0007__public)
+      &amp; isA(ENTITYX7,r_0096_0011__proposals)
+      &amp; isA(ATTRIBX4,r_0096_0004__many)
+      &amp; isA(EVENTX9,r_0096_0008__were)
       &amp; catenative(EVENTX9) = CATENATIVEX6 ) ).
 
 

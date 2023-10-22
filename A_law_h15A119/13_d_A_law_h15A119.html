@@ -110,11 +110,11 @@ however , the following entities shall be excluded ;
 </svg>
 <br>
 <pre>
-arc(r__however_0013_0001,r__shall_0013_0006,scope).
-arc(r__entities_0013_0005,r__following_0013_0004,attrib2).
-arc(r__shall_0013_0006,r__be_0013_0007,scope).
-arc(r__be_0013_0007,r__excluded_0013_0008,catenative).
-arc(r__excluded_0013_0008,r__entities_0013_0005,arg1).
+arc(r_0013_0001__however,r_0013_0006__shall,scope).
+arc(r_0013_0005__entities,r_0013_0004__following,attrib2).
+arc(r_0013_0006__shall,r_0013_0007__be,scope).
+arc(r_0013_0007__be,r_0013_0008__excluded,catenative).
+arc(r_0013_0008__excluded,r_0013_0005__entities,arg1).
 
 </pre>
 <br>
@@ -122,16 +122,16 @@ arc(r__excluded_0013_0008,r__entities_0013_0005,arg1).
 fof(id_13_A_law_h15A119,axiom,
     ? [CATENATIVEX5,OPERATORX1,OPERATORX4,EVENTX8,EVENTX7,ENTITYX2,ATTRIBX3] :
       ( CATENATIVEX5 = EVENTX7
-      &amp; isA(EVENTX7,r__excluded_0013_0008)
+      &amp; isA(EVENTX7,r_0013_0008__excluded)
       &amp; arg1(EVENTX7) = ENTITYX2
-      &amp; isA(ENTITYX2,r__entities_0013_0005)
+      &amp; isA(ENTITYX2,r_0013_0005__entities)
       &amp; attrib2(ENTITYX2) = ATTRIBX3
-      &amp; isA(ATTRIBX3,r__following_0013_0004)
-      &amp; isA(OPERATORX1,r__however_0013_0001)
+      &amp; isA(ATTRIBX3,r_0013_0004__following)
+      &amp; isA(OPERATORX1,r_0013_0001__however)
       &amp; scope(OPERATORX1) = OPERATORX4
-      &amp; isA(OPERATORX4,r__shall_0013_0006)
+      &amp; isA(OPERATORX4,r_0013_0006__shall)
       &amp; scope(OPERATORX4) = EVENTX8
-      &amp; isA(EVENTX8,r__be_0013_0007)
+      &amp; isA(EVENTX8,r_0013_0007__be)
       &amp; catenative(EVENTX8) = CATENATIVEX5 ) ).
 
 

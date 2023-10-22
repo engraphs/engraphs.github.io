@@ -37,8 +37,8 @@ Because you do n't think of Shakespeare being a child , do you ?
 <!-- 0099_0001_cnt -->
 <g id="node1" class="node">
 <title>0099_0001_cnt</title>
-<ellipse fill="none" stroke="black" cx="270.3" cy="-366" rx="74.19" ry="18"/>
-<text text-anchor="middle" x="270.3" y="-362.3" font-family="fixed" font-size="14.00">Because_[cnt]</text>
+<ellipse fill="none" stroke="black" cx="270.3" cy="-366" rx="69.59" ry="18"/>
+<text text-anchor="middle" x="270.3" y="-362.3" font-family="fixed" font-size="14.00">Because[cnt]</text>
 </g>
 <!-- 0099_0004 -->
 <g id="node2" class="node">
@@ -49,7 +49,7 @@ Because you do n't think of Shakespeare being a child , do you ?
 <!-- 0099_0001_cnt&#45;&gt;0099_0004 -->
 <g id="edge1" class="edge">
 <title>0099_0001_cnt&#45;&gt;0099_0004</title>
-<path fill="none" stroke="black" d="M239.75,-349.59C231.8,-344.32 223.91,-337.76 218.3,-330 213.45,-323.29 210.28,-314.97 208.21,-307.05"/>
+<path fill="none" stroke="black" d="M240.02,-349.77C231.98,-344.47 223.97,-337.85 218.3,-330 213.45,-323.29 210.28,-314.97 208.21,-307.05"/>
 <polygon fill="black" stroke="black" points="211.58,-306.09 206.06,-297.04 204.74,-307.55 211.58,-306.09"/>
 <text text-anchor="middle" x="258.8" y="-318.8" font-family="fixed" font-size="14.00">[restriction]</text>
 </g>
@@ -114,9 +114,9 @@ Because you do n't think of Shakespeare being a child , do you ?
 <!-- 0099_0003_0099_0005&#45;&gt;0099_0007 -->
 <g id="edge4" class="edge">
 <title>0099_0003_0099_0005&#45;&gt;0099_0007</title>
-<path fill="none" stroke="black" d="M119.74,-173.62C119.33,-163.88 119.62,-151.61 122.3,-141 123.06,-137.98 124.12,-134.93 125.35,-131.96"/>
-<polygon fill="black" stroke="black" points="128.56,-133.36 129.69,-122.83 122.23,-130.36 128.56,-133.36"/>
-<text text-anchor="middle" x="146.8" y="-144.8" font-family="fixed" font-size="14.00">of_[clr]</text>
+<path fill="none" stroke="black" d="M122.36,-173.7C123.21,-163.99 124.71,-151.71 127.3,-141 127.95,-138.32 128.74,-135.56 129.61,-132.82"/>
+<polygon fill="black" stroke="black" points="132.98,-133.79 132.99,-123.19 126.38,-131.47 132.98,-133.79"/>
+<text text-anchor="middle" x="148.3" y="-144.8" font-family="fixed" font-size="14.00">of[clr]</text>
 </g>
 <!-- 0099_0008 -->
 <g id="node7" class="node">
@@ -168,15 +168,15 @@ Because you do n't think of Shakespeare being a child , do you ?
 </svg>
 <br>
 <pre>
-arc(question_0099_1008,r__do_0099_0012,scope).
-arc(r__Because_0099_0001_cnt,r__n_apos_t_0099_0004,restriction).
-arc(r__Because_0099_0001_cnt,z_0099_1011,scope).
-arc(r__do_0099_0003_r__think_0099_0005,r__you_0099_0002,arg0).
-arc(r__do_0099_0003_r__think_0099_0005,r__Shakespeare_0099_0007,r__of_0099_0006_clr).
-arc(r__n_apos_t_0099_0004,r__do_0099_0003_r__think_0099_0005,scope).
-arc(r__being_0099_0008,r__Shakespeare_0099_0007,arg0).
-arc(r__being_0099_0008,r__child_0099_0010,prd2).
-arc(r__do_0099_0012,r__you_0099_0002,arg0).
+arc(question_0099_1008,r_0099_0012__do,scope).
+arc(r_0099_0001__Because_cnt,r_0099_0004__n_apos_t,restriction).
+arc(r_0099_0001__Because_cnt,z_0099_1011,scope).
+arc(r_0099_0003__do_think,r_0099_0002__you,arg0).
+arc(r_0099_0003__do_think,r_0099_0007__Shakespeare,r_0099_0006__of_clr).
+arc(r_0099_0004__n_apos_t,r_0099_0003__do_think,scope).
+arc(r_0099_0008__being,r_0099_0007__Shakespeare,arg0).
+arc(r_0099_0008__being,r_0099_0010__child,prd2).
+arc(r_0099_0012__do,r_0099_0002__you,arg0).
 arc(z_0099_1011,question_0099_1008,prn3).
 
 </pre>
@@ -187,21 +187,21 @@ fof(id_99_A_TED_talk_11,axiom,
       ( EVENTX6 = OPERATORX8
       &amp; isA(OPERATORX8,question_0099_1008)
       &amp; scope(OPERATORX8) = EVENTX10
-      &amp; isA(EVENTX10,r__do_0099_0012)
+      &amp; isA(EVENTX10,r_0099_0012__do)
       &amp; arg0(EVENTX10) = HEARERX9
-      &amp; isA(ENTITYX2,r__child_0099_0010)
-      &amp; HEARERX9 = r__you_0099_0002
-      &amp; isA(BEINGCHILDX3,r__being_0099_0008)
-      &amp; arg0(BEINGCHILDX3) = r__Shakespeare_0099_0007
+      &amp; isA(ENTITYX2,r_0099_0010__child)
+      &amp; HEARERX9 = r_0099_0002__you
+      &amp; isA(BEINGCHILDX3,r_0099_0008__being)
+      &amp; arg0(BEINGCHILDX3) = r_0099_0007__Shakespeare
       &amp; prd2(BEINGCHILDX3) = ENTITYX2
-      &amp; isA(r__Shakespeare_0099_0007,r__Shakespeare_0099_0007)
-      &amp; isA(CONNX1,r__Because_0099_0001_cnt)
+      &amp; isA(r_0099_0007__Shakespeare,r_0099_0007__Shakespeare)
+      &amp; isA(CONNX1,r_0099_0001__Because_cnt)
       &amp; restriction(CONNX1) = OPERATORX4
-      &amp; isA(OPERATORX4,r__n_apos_t_0099_0004)
+      &amp; isA(OPERATORX4,r_0099_0004__n_apos_t)
       &amp; scope(OPERATORX4) = EVENTX5
-      &amp; isA(EVENTX5,r__do_0099_0003_r__think_0099_0005)
-      &amp; arg0(EVENTX5) = r__you_0099_0002
-      &amp; r__of_0099_0006_clr(EVENTX5) = r__Shakespeare_0099_0007
+      &amp; isA(EVENTX5,r_0099_0003__do_think)
+      &amp; arg0(EVENTX5) = r_0099_0002__you
+      &amp; r_0099_0006__of_clr(EVENTX5) = r_0099_0007__Shakespeare
       &amp; scope(CONNX1) = EVENTX12
       &amp; isA(EVENTX12,z_0099_1011)
       &amp; prn3(EVENTX12) = EVENTX6 ) ).

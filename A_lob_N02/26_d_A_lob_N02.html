@@ -56,8 +56,8 @@
 <!-- 0064_0004_cnt -->
 <g id="node3" class="node">
 <title>0064_0004_cnt</title>
-<ellipse fill="none" stroke="black" cx="102" cy="-192" rx="83.39" ry="18"/>
-<text text-anchor="middle" x="102" y="-188.3" font-family="fixed" font-size="14.00">as_though_[cnt]</text>
+<ellipse fill="none" stroke="black" cx="102" cy="-192" rx="78.79" ry="18"/>
+<text text-anchor="middle" x="102" y="-188.3" font-family="fixed" font-size="14.00">as_though[cnt]</text>
 </g>
 <!-- 0064_0004_cnt&#45;&gt;0064_0003 -->
 <g id="edge2" class="edge">
@@ -116,34 +116,34 @@
 <title>0064_0006&#45;&gt;0064_0009</title>
 <path fill="none" stroke="black" d="M182.32,-91.71C193.34,-85.35 206.67,-77.21 218,-69 229.55,-60.63 241.61,-50.49 251.72,-41.53"/>
 <polygon fill="black" stroke="black" points="254.27,-43.95 259.37,-34.66 249.59,-38.75 254.27,-43.95"/>
-<text text-anchor="middle" x="263.5" y="-57.8" font-family="fixed" font-size="14.00">on_[loc]</text>
+<text text-anchor="middle" x="260" y="-57.8" font-family="fixed" font-size="14.00">on[loc]</text>
 </g>
 </g>
 </svg>
 <br>
 <pre>
-arc(r__talk_0064_0003,r__You_0064_0002,arg0).
-arc(r__as_though_0064_0004_cnt,r__talk_0064_0003,scope).
-arc(r__as_though_0064_0004_cnt,r__were_0064_0006,restriction).
-arc(r__were_0064_0006,r__we_0064_0005,arg0).
-arc(r__were_0064_0006,r__alone_0064_0007,prd2).
-arc(r__were_0064_0006,r__Balicou_0064_0009,r__on_0064_0008_loc).
+arc(r_0064_0003__talk,r_0064_0002__You,arg0).
+arc(r_0064_0004__as_though_cnt,r_0064_0003__talk,scope).
+arc(r_0064_0004__as_though_cnt,r_0064_0006__were,restriction).
+arc(r_0064_0006__were,r_0064_0005__we,arg0).
+arc(r_0064_0006__were,r_0064_0007__alone,prd2).
+arc(r_0064_0006__were,r_0064_0009__Balicou,r_0064_0008__on_loc).
 
 </pre>
 <br>
 <pre>
 fof(id_64_A_lob_N02,axiom,
     ? [CONNX1,EVENTX3,EVENTX4,ATTRIBX2] :
-      ( isA(ATTRIBX2,r__alone_0064_0007)
-      &amp; isA(CONNX1,r__as_though_0064_0004_cnt)
+      ( isA(ATTRIBX2,r_0064_0007__alone)
+      &amp; isA(CONNX1,r_0064_0004__as_though_cnt)
       &amp; scope(CONNX1) = EVENTX4
-      &amp; isA(EVENTX4,r__talk_0064_0003)
-      &amp; arg0(EVENTX4) = r__You_0064_0002
+      &amp; isA(EVENTX4,r_0064_0003__talk)
+      &amp; arg0(EVENTX4) = r_0064_0002__You
       &amp; restriction(CONNX1) = EVENTX3
-      &amp; isA(EVENTX3,r__were_0064_0006)
-      &amp; arg0(EVENTX3) = r__we_0064_0005
+      &amp; isA(EVENTX3,r_0064_0006__were)
+      &amp; arg0(EVENTX3) = r_0064_0005__we
       &amp; prd2(EVENTX3) = ATTRIBX2
-      &amp; r__on_0064_0008_loc(EVENTX3) = r__Balicou_0064_0009 ) ).
+      &amp; r_0064_0008__on_loc(EVENTX3) = r_0064_0009__Balicou ) ).
 
 
 </pre>

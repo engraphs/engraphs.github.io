@@ -196,19 +196,19 @@ My hon. Friend has been reading my speech or has had prior notice of it .
 </svg>
 <br>
 <pre>
-arc(r__hon._0046_0002_r__Friend_0046_0003,r__My_0046_0001,genv).
-arc(r__has_0046_0004,r__been_0046_0005,catenative).
-arc(r__been_0046_0005,r__reading_0046_0006,catenative).
-arc(r__reading_0046_0006,r__hon._0046_0002_r__Friend_0046_0003,arg0).
-arc(r__reading_0046_0006,r__speech_0046_0008,arg1).
-arc(r__speech_0046_0008,r__My_0046_0001,genv).
-arc(r__or_0046_0009,r__has_0046_0004,conj1).
-arc(r__or_0046_0009,r__has_0046_0010,conj2).
-arc(r__has_0046_0010,r__had_0046_0011,catenative).
-arc(r__had_0046_0011,r__hon._0046_0002_r__Friend_0046_0003,arg0).
-arc(r__had_0046_0011,r__notice_0046_0013,arg1).
-arc(r__notice_0046_0013,r__speech_0046_0008,r__of_0046_0014).
-arc(r__notice_0046_0013,r__prior_0046_0012,attrib1).
+arc(r_0046_0002__hon._Friend,r_0046_0001__My,genv).
+arc(r_0046_0004__has,r_0046_0005__been,catenative).
+arc(r_0046_0005__been,r_0046_0006__reading,catenative).
+arc(r_0046_0006__reading,r_0046_0002__hon._Friend,arg0).
+arc(r_0046_0006__reading,r_0046_0008__speech,arg1).
+arc(r_0046_0008__speech,r_0046_0001__My,genv).
+arc(r_0046_0009__or,r_0046_0004__has,conj1).
+arc(r_0046_0009__or,r_0046_0010__has,conj2).
+arc(r_0046_0010__has,r_0046_0011__had,catenative).
+arc(r_0046_0011__had,r_0046_0002__hon._Friend,arg0).
+arc(r_0046_0011__had,r_0046_0013__notice,arg1).
+arc(r_0046_0013__notice,r_0046_0008__speech,r_0046_0014__of).
+arc(r_0046_0013__notice,r_0046_0012__prior,attrib1).
 
 </pre>
 <br>
@@ -216,32 +216,32 @@ arc(r__notice_0046_0013,r__prior_0046_0012,attrib1).
 fof(id_46_A_Hedgehog,axiom,
     ? [CATENATIVEX2,CATENATIVEX3,CATENATIVEX9,SPEAKERX5,SPEECHX12,CONJX15,EVENTX14,EVENTX13,EVENTX8,EVENTX7,EVENTX6,ENTITYX1,ENTITYX10,SPEECHX4,ATTRIBX11] :
       ( CATENATIVEX2 = EVENTX7
-      &amp; isA(EVENTX7,r__been_0046_0005)
+      &amp; isA(EVENTX7,r_0046_0005__been)
       &amp; catenative(EVENTX7) = CATENATIVEX3
       &amp; CATENATIVEX3 = EVENTX6
-      &amp; isA(EVENTX6,r__reading_0046_0006)
+      &amp; isA(EVENTX6,r_0046_0006__reading)
       &amp; arg0(EVENTX6) = ENTITYX1
       &amp; arg1(EVENTX6) = SPEECHX4
       &amp; CATENATIVEX9 = EVENTX13
-      &amp; isA(EVENTX13,r__had_0046_0011)
+      &amp; isA(EVENTX13,r_0046_0011__had)
       &amp; arg0(EVENTX13) = ENTITYX1
       &amp; arg1(EVENTX13) = ENTITYX10
-      &amp; isA(ENTITYX1,r__hon._0046_0002_r__Friend_0046_0003)
-      &amp; genv(ENTITYX1) = r__My_0046_0001
-      &amp; isA(SPEECHX4,r__speech_0046_0008)
+      &amp; isA(ENTITYX1,r_0046_0002__hon._Friend)
+      &amp; genv(ENTITYX1) = r_0046_0001__My
+      &amp; isA(SPEECHX4,r_0046_0008__speech)
       &amp; genv(SPEECHX4) = SPEAKERX5
-      &amp; SPEAKERX5 = r__My_0046_0001
-      &amp; isA(ENTITYX10,r__notice_0046_0013)
+      &amp; SPEAKERX5 = r_0046_0001__My
+      &amp; isA(ENTITYX10,r_0046_0013__notice)
       &amp; attrib1(ENTITYX10) = ATTRIBX11
-      &amp; r__of_0046_0014(ENTITYX10) = SPEECHX12
+      &amp; r_0046_0014__of(ENTITYX10) = SPEECHX12
       &amp; SPEECHX12 = SPEECHX4
-      &amp; isA(ATTRIBX11,r__prior_0046_0012)
-      &amp; isA(CONJX15,r__or_0046_0009)
+      &amp; isA(ATTRIBX11,r_0046_0012__prior)
+      &amp; isA(CONJX15,r_0046_0009__or)
       &amp; conj1(CONJX15) = EVENTX8
-      &amp; isA(EVENTX8,r__has_0046_0004)
+      &amp; isA(EVENTX8,r_0046_0004__has)
       &amp; catenative(EVENTX8) = CATENATIVEX2
       &amp; conj2(CONJX15) = EVENTX14
-      &amp; isA(EVENTX14,r__has_0046_0010)
+      &amp; isA(EVENTX14,r_0046_0010__has)
       &amp; catenative(EVENTX14) = CATENATIVEX9 ) ).
 
 

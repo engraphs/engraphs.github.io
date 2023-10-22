@@ -174,16 +174,16 @@ The weekend cost over £ 60 , which many people felt did not offer value for mon
 </svg>
 <br>
 <pre>
-arc(r__cost_0013_0003,r__weekend_0013_0002,arg0).
-arc(r__cost_0013_0003,r____0013_0005_r__60_0013_0006,arg1).
-arc(r____0013_0005_r__60_0013_0006,r__over_0013_0004,quality1).
-arc(r__people_0013_0010,r__many_0013_0009,attrib1).
-arc(r__felt_0013_0011,r__people_0013_0010,arg0).
-arc(r__felt_0013_0011,r__not_0013_0013,arg1).
-arc(r__did_0013_0012_r__offer_0013_0014,r____0013_0005_r__60_0013_0006,arg0).
-arc(r__did_0013_0012_r__offer_0013_0014,r__value_0013_0015,arg1).
-arc(r__not_0013_0013,r__did_0013_0012_r__offer_0013_0014,scope).
-arc(r__value_0013_0015,r__money_0013_0017,r__for_0013_0016).
+arc(r_0013_0003__cost,r_0013_0002__weekend,arg0).
+arc(r_0013_0003__cost,r_0013_0005____60,arg1).
+arc(r_0013_0005____60,r_0013_0004__over,quality1).
+arc(r_0013_0010__people,r_0013_0009__many,attrib1).
+arc(r_0013_0011__felt,r_0013_0010__people,arg0).
+arc(r_0013_0011__felt,r_0013_0013__not,arg1).
+arc(r_0013_0012__did_offer,r_0013_0005____60,arg0).
+arc(r_0013_0012__did_offer,r_0013_0015__value,arg1).
+arc(r_0013_0013__not,r_0013_0012__did_offer,scope).
+arc(r_0013_0015__value,r_0013_0017__money,r_0013_0016__for).
 
 </pre>
 <br>
@@ -191,25 +191,25 @@ arc(r__value_0013_0015,r__money_0013_0017,r__for_0013_0016).
 fof(id_13_A_fce_0101_2001_06,axiom,
     ? [STATEX6,EVENTX12,EVENTX11,OPERATORX9,EVENTX10,ENTITYX1,ENTITYX2,ENTITYX4,ENTITYX7,ENTITYX8,QUALITYX3,ATTRIBX5] :
       ( STATEX6 = OPERATORX9
-      &amp; isA(OPERATORX9,r__not_0013_0013)
+      &amp; isA(OPERATORX9,r_0013_0013__not)
       &amp; scope(OPERATORX9) = EVENTX10
-      &amp; isA(EVENTX10,r__did_0013_0012_r__offer_0013_0014)
+      &amp; isA(EVENTX10,r_0013_0012__did_offer)
       &amp; arg0(EVENTX10) = ENTITYX2
       &amp; arg1(EVENTX10) = ENTITYX7
-      &amp; isA(ENTITYX1,r__weekend_0013_0002)
-      &amp; isA(EVENTX11,r__felt_0013_0011)
+      &amp; isA(ENTITYX1,r_0013_0002__weekend)
+      &amp; isA(EVENTX11,r_0013_0011__felt)
       &amp; arg0(EVENTX11) = ENTITYX4
       &amp; arg1(EVENTX11) = STATEX6
-      &amp; isA(ENTITYX2,r____0013_0005_r__60_0013_0006)
+      &amp; isA(ENTITYX2,r_0013_0005____60)
       &amp; quality1(ENTITYX2) = QUALITYX3
-      &amp; isA(ENTITYX4,r__people_0013_0010)
+      &amp; isA(ENTITYX4,r_0013_0010__people)
       &amp; attrib1(ENTITYX4) = ATTRIBX5
-      &amp; isA(ENTITYX7,r__value_0013_0015)
-      &amp; r__for_0013_0016(ENTITYX7) = ENTITYX8
-      &amp; isA(ENTITYX8,r__money_0013_0017)
-      &amp; isA(QUALITYX3,r__over_0013_0004)
-      &amp; isA(ATTRIBX5,r__many_0013_0009)
-      &amp; isA(EVENTX12,r__cost_0013_0003)
+      &amp; isA(ENTITYX7,r_0013_0015__value)
+      &amp; r_0013_0016__for(ENTITYX7) = ENTITYX8
+      &amp; isA(ENTITYX8,r_0013_0017__money)
+      &amp; isA(QUALITYX3,r_0013_0004__over)
+      &amp; isA(ATTRIBX5,r_0013_0009__many)
+      &amp; isA(EVENTX12,r_0013_0003__cost)
       &amp; arg0(EVENTX12) = ENTITYX1
       &amp; arg1(EVENTX12) = ENTITYX2 ) ).
 

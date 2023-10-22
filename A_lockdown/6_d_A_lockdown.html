@@ -196,19 +196,19 @@ It just takes forever to unload everything and disinfect it and put it all away 
 </svg>
 <br>
 <pre>
-arc(quantificational_r__everything_0032_0007,r__unload_0032_0006,scope).
-arc(quantificational_r__everything_0032_0007,z_0032_1007,restriction).
-arc(r__just_0032_0002,r__takes_0032_0003,scope).
-arc(r__takes_0032_0003,r__forever_0032_0004,tmp4).
-arc(r__takes_0032_0003,r__and_0032_0008_r__and_0032_0011,arg0).
-arc(r__unload_0032_0006,z_0032_1007,arg1).
-arc(r__and_0032_0008_r__and_0032_0011,quantificational_r__everything_0032_0007,conj1).
-arc(r__and_0032_0008_r__and_0032_0011,r__disinfect_0032_0009,conj2).
-arc(r__and_0032_0008_r__and_0032_0011,r__put_0032_0012,conj3).
-arc(r__disinfect_0032_0009,z_0032_1007,arg1).
-arc(r__put_0032_0012,r__away_0032_0015,loc3).
-arc(r__put_0032_0012,z_0032_1007,arg1).
-arc(r__away_0032_0015,r__all_0032_0014,quality1).
+arc(r_0032_0002__just,r_0032_0003__takes,scope).
+arc(r_0032_0003__takes,r_0032_0004__forever,tmp4).
+arc(r_0032_0003__takes,r_0032_0008__and_and,arg0).
+arc(r_0032_0006__unload,z_0032_1007,arg1).
+arc(r_0032_0007__quantificational__everything,r_0032_0006__unload,scope).
+arc(r_0032_0007__quantificational__everything,z_0032_1007,restriction).
+arc(r_0032_0008__and_and,r_0032_0007__quantificational__everything,conj1).
+arc(r_0032_0008__and_and,r_0032_0009__disinfect,conj2).
+arc(r_0032_0008__and_and,r_0032_0012__put,conj3).
+arc(r_0032_0009__disinfect,z_0032_1007,arg1).
+arc(r_0032_0012__put,r_0032_0015__away,loc3).
+arc(r_0032_0012__put,z_0032_1007,arg1).
+arc(r_0032_0015__away,r_0032_0014__all,quality1).
 
 </pre>
 <br>
@@ -216,30 +216,30 @@ arc(r__away_0032_0015,r__all_0032_0014,quality1).
 fof(id_32_A_lockdown,axiom,
     ? [STATEX4,GROCERIESX9,GROCERIESX11,OPERATORX2,EVENTX16,CONJX15,EVENTX14,EVENTX10,QUANTX6,EVENTX8,GROCERIESX5,QUALITYX3,QUALITYX12,QUALITYX13] :
       ( STATEX4 = CONJX15
-      &amp; isA(CONJX15,r__and_0032_0008_r__and_0032_0011)
+      &amp; isA(CONJX15,r_0032_0008__and_and)
       &amp; conj1(CONJX15) = QUANTX6
-      &amp; isA(QUANTX6,quantificational_r__everything_0032_0007)
+      &amp; isA(QUANTX6,r_0032_0007__quantificational__everything)
       &amp; restriction(QUANTX6) = GROCERIESX5
       &amp; isA(GROCERIESX5,z_0032_1007)
       &amp; scope(QUANTX6) = EVENTX8
-      &amp; isA(EVENTX8,r__unload_0032_0006)
+      &amp; isA(EVENTX8,r_0032_0006__unload)
       &amp; arg1(EVENTX8) = GROCERIESX5
       &amp; conj2(CONJX15) = EVENTX10
-      &amp; isA(EVENTX10,r__disinfect_0032_0009)
+      &amp; isA(EVENTX10,r_0032_0009__disinfect)
       &amp; arg1(EVENTX10) = GROCERIESX9
       &amp; conj3(CONJX15) = EVENTX14
-      &amp; isA(EVENTX14,r__put_0032_0012)
+      &amp; isA(EVENTX14,r_0032_0012__put)
       &amp; arg1(EVENTX14) = GROCERIESX11
       &amp; loc3(EVENTX14) = QUALITYX12
       &amp; GROCERIESX9 = GROCERIESX5
       &amp; GROCERIESX11 = GROCERIESX5
-      &amp; isA(QUALITYX3,r__forever_0032_0004)
-      &amp; isA(QUALITYX12,r__away_0032_0015)
+      &amp; isA(QUALITYX3,r_0032_0004__forever)
+      &amp; isA(QUALITYX12,r_0032_0015__away)
       &amp; quality1(QUALITYX12) = QUALITYX13
-      &amp; isA(QUALITYX13,r__all_0032_0014)
-      &amp; isA(OPERATORX2,r__just_0032_0002)
+      &amp; isA(QUALITYX13,r_0032_0014__all)
+      &amp; isA(OPERATORX2,r_0032_0002__just)
       &amp; scope(OPERATORX2) = EVENTX16
-      &amp; isA(EVENTX16,r__takes_0032_0003)
+      &amp; isA(EVENTX16,r_0032_0003__takes)
       &amp; arg0(EVENTX16) = STATEX4
       &amp; tmp4(EVENTX16) = QUALITYX3
       &amp; arg0(EVENTX16) = STATEX4 ) ).

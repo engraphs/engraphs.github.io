@@ -109,26 +109,26 @@ Some books tell us a lot about a historical period .
 </svg>
 <br>
 <pre>
-arc(r__tell_0034_0003,r__books_0034_0002,arg0).
-arc(r__tell_0034_0003,r__us_0034_0004,arg2).
-arc(r__tell_0034_0003,r__lot_0034_0006,arg1).
-arc(r__lot_0034_0006,r__period_0034_0010,r__about_0034_0007).
-arc(r__period_0034_0010,r__historical_0034_0009,attrib2).
+arc(r_0034_0003__tell,r_0034_0002__books,arg0).
+arc(r_0034_0003__tell,r_0034_0004__us,arg2).
+arc(r_0034_0003__tell,r_0034_0006__lot,arg1).
+arc(r_0034_0006__lot,r_0034_0010__period,r_0034_0007__about).
+arc(r_0034_0010__period,r_0034_0009__historical,attrib2).
 
 </pre>
 <br>
 <pre>
 fof(id_34_A_fce_0102_2001_06,axiom,
     ? [EVENTX5,ENTITYX1,ENTITYX2,ENTITYX3,ATTRIBX4] :
-      ( isA(ENTITYX1,r__books_0034_0002)
-      &amp; isA(ENTITYX2,r__lot_0034_0006)
-      &amp; r__about_0034_0007(ENTITYX2) = ENTITYX3
-      &amp; isA(ENTITYX3,r__period_0034_0010)
+      ( isA(ENTITYX1,r_0034_0002__books)
+      &amp; isA(ENTITYX2,r_0034_0006__lot)
+      &amp; r_0034_0007__about(ENTITYX2) = ENTITYX3
+      &amp; isA(ENTITYX3,r_0034_0010__period)
       &amp; attrib2(ENTITYX3) = ATTRIBX4
-      &amp; isA(ATTRIBX4,r__historical_0034_0009)
-      &amp; isA(EVENTX5,r__tell_0034_0003)
+      &amp; isA(ATTRIBX4,r_0034_0009__historical)
+      &amp; isA(EVENTX5,r_0034_0003__tell)
       &amp; arg0(EVENTX5) = ENTITYX1
-      &amp; arg2(EVENTX5) = r__us_0034_0004
+      &amp; arg2(EVENTX5) = r_0034_0004__us
       &amp; arg1(EVENTX5) = ENTITYX2 ) ).
 
 

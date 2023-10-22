@@ -29,16 +29,16 @@
 &lsquo; Where are you from ? &rsquo; I asked .
 <br>
 <br>
-<svg width="216pt" height="392pt"
- viewBox="0.00 0.00 216.00 392.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="212pt" height="392pt"
+ viewBox="0.00 0.00 212.00 392.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 388)">
 <title>%3</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-388 212,-388 212,4 -4,4"/>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-388 208,-388 208,4 -4,4"/>
 <!-- 0071_0002 -->
 <g id="node1" class="node">
 <title>0071_0002</title>
-<ellipse fill="none" stroke="black" cx="87" cy="-18" rx="39.79" ry="18"/>
-<text text-anchor="middle" x="87" y="-14.3" font-family="fixed" font-size="14.00">Where</text>
+<ellipse fill="none" stroke="black" cx="90" cy="-18" rx="39.79" ry="18"/>
+<text text-anchor="middle" x="90" y="-14.3" font-family="fixed" font-size="14.00">Where</text>
 </g>
 <!-- 0071_0003 -->
 <g id="node2" class="node">
@@ -49,22 +49,22 @@
 <!-- 0071_0003&#45;&gt;0071_0002 -->
 <g id="edge1" class="edge">
 <title>0071_0003&#45;&gt;0071_0002</title>
-<path fill="none" stroke="black" d="M111.96,-93.25C102.87,-87.41 93.15,-79.26 88,-69 84.52,-62.06 83.35,-53.88 83.3,-46.16"/>
-<polygon fill="black" stroke="black" points="86.8,-46.25 83.81,-36.08 79.81,-45.89 86.8,-46.25"/>
-<text text-anchor="middle" x="123" y="-57.8" font-family="fixed" font-size="14.00">from_[loc]</text>
+<path fill="none" stroke="black" d="M112.89,-92.64C104.53,-86.76 95.69,-78.75 91,-69 87.64,-62.01 86.5,-53.8 86.45,-46.08"/>
+<polygon fill="black" stroke="black" points="89.95,-46.18 86.93,-36.02 82.95,-45.84 89.95,-46.18"/>
+<text text-anchor="middle" x="122.5" y="-57.8" font-family="fixed" font-size="14.00">from[loc]</text>
 </g>
 <!-- 0071_0004 -->
 <g id="node3" class="node">
 <title>0071_0004</title>
-<ellipse fill="none" stroke="black" cx="180" cy="-18" rx="27.1" ry="18"/>
-<text text-anchor="middle" x="180" y="-14.3" font-family="fixed" font-size="14.00">you</text>
+<ellipse fill="none" stroke="black" cx="176" cy="-18" rx="27.1" ry="18"/>
+<text text-anchor="middle" x="176" y="-14.3" font-family="fixed" font-size="14.00">you</text>
 </g>
 <!-- 0071_0003&#45;&gt;0071_0004 -->
 <g id="edge2" class="edge">
 <title>0071_0003&#45;&gt;0071_0004</title>
-<path fill="none" stroke="black" d="M144.91,-88.77C149.31,-82.79 154.16,-75.75 158,-69 162.29,-61.47 166.32,-52.94 169.73,-45.09"/>
-<polygon fill="black" stroke="black" points="173.06,-46.2 173.69,-35.63 166.6,-43.5 173.06,-46.2"/>
-<text text-anchor="middle" x="186.5" y="-57.8" font-family="fixed" font-size="14.00">[arg0]</text>
+<path fill="none" stroke="black" d="M143.05,-88.21C146.67,-82.28 150.68,-75.42 154,-69 157.92,-61.42 161.81,-52.99 165.19,-45.24"/>
+<polygon fill="black" stroke="black" points="168.47,-46.48 169.18,-35.91 162.03,-43.73 168.47,-46.48"/>
+<text text-anchor="middle" x="182.5" y="-57.8" font-family="fixed" font-size="14.00">[arg0]</text>
 </g>
 <!-- 0071_0008 -->
 <g id="node4" class="node">
@@ -122,12 +122,12 @@
 </svg>
 <br>
 <pre>
-arc(question_0071_1005,r__are_0071_0003,scope).
+arc(question_0071_1005,r_0071_0003__are,scope).
+arc(r_0071_0003__are,r_0071_0002__Where,r_0071_0005__from_loc).
+arc(r_0071_0003__are,r_0071_0004__you,arg0).
+arc(r_0071_0009__asked,r_0071_0008__I,arg0).
+arc(r_0071_0009__asked,utterance_0071_1003,arg1).
 arc(utterance_0071_1003,question_0071_1005,part1).
-arc(r__are_0071_0003,r__Where_0071_0002,r__from_0071_0005_loc).
-arc(r__are_0071_0003,r__you_0071_0004,arg0).
-arc(r__asked_0071_0009,utterance_0071_1003,arg1).
-arc(r__asked_0071_0009,r__I_0071_0008,arg0).
 
 </pre>
 <br>
@@ -139,13 +139,13 @@ fof(id_71_A_LooseChange,axiom,
       &amp; part1(CONJX8) = OPERATORX5
       &amp; isA(OPERATORX5,question_0071_1005)
       &amp; scope(OPERATORX5) = EVENTX7
-      &amp; isA(EVENTX7,r__are_0071_0003)
-      &amp; arg0(EVENTX7) = r__you_0071_0004
-      &amp; r__from_0071_0005_loc(EVENTX7) = QUALITYX6
-      &amp; isA(QUALITYX6,r__Where_0071_0002)
-      &amp; isA(EVENTX9,r__asked_0071_0009)
+      &amp; isA(EVENTX7,r_0071_0003__are)
+      &amp; arg0(EVENTX7) = r_0071_0004__you
+      &amp; r_0071_0005__from_loc(EVENTX7) = QUALITYX6
+      &amp; isA(QUALITYX6,r_0071_0002__Where)
+      &amp; isA(EVENTX9,r_0071_0009__asked)
       &amp; arg1(EVENTX9) = STATEX1
-      &amp; arg0(EVENTX9) = r__I_0071_0008 ) ).
+      &amp; arg0(EVENTX9) = r_0071_0008__I ) ).
 
 
 </pre>

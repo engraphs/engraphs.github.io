@@ -97,23 +97,23 @@ One is the question of conflict with the badger .
 </svg>
 <br>
 <pre>
-arc(r__is_0157_0002,r__One_0157_0001,arg0).
-arc(r__is_0157_0002,r__question_0157_0004,prd2).
-arc(r__question_0157_0004,r__conflict_0157_0006,r__of_0157_0005).
-arc(r__conflict_0157_0006,r__badger_0157_0009,r__with_0157_0007).
+arc(r_0157_0002__is,r_0157_0001__One,arg0).
+arc(r_0157_0002__is,r_0157_0004__question,prd2).
+arc(r_0157_0004__question,r_0157_0006__conflict,r_0157_0005__of).
+arc(r_0157_0006__conflict,r_0157_0009__badger,r_0157_0007__with).
 
 </pre>
 <br>
 <pre>
 fof(id_157_A_Hedgehog,axiom,
     ? [EVENTX5,ENTITYX1,ENTITYX2,ENTITYX3,ENTITYX4] :
-      ( isA(ENTITYX1,r__One_0157_0001)
-      &amp; isA(ENTITYX2,r__question_0157_0004)
-      &amp; r__of_0157_0005(ENTITYX2) = ENTITYX3
-      &amp; isA(ENTITYX3,r__conflict_0157_0006)
-      &amp; r__with_0157_0007(ENTITYX3) = ENTITYX4
-      &amp; isA(ENTITYX4,r__badger_0157_0009)
-      &amp; isA(EVENTX5,r__is_0157_0002)
+      ( isA(ENTITYX1,r_0157_0001__One)
+      &amp; isA(ENTITYX2,r_0157_0004__question)
+      &amp; r_0157_0005__of(ENTITYX2) = ENTITYX3
+      &amp; isA(ENTITYX3,r_0157_0006__conflict)
+      &amp; r_0157_0007__with(ENTITYX3) = ENTITYX4
+      &amp; isA(ENTITYX4,r_0157_0009__badger)
+      &amp; isA(EVENTX5,r_0157_0002__is)
       &amp; arg0(EVENTX5) = ENTITYX1
       &amp; prd2(EVENTX5) = ENTITYX2 ) ).
 

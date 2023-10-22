@@ -161,38 +161,38 @@ A boa constrictor is a very dangerous creature , and an elephant is very cumbers
 </svg>
 <br>
 <pre>
-arc(r__is_0072_0004,r__boa_0072_0002_r__constrictor_0072_0003,arg0).
-arc(r__is_0072_0004,r__creature_0072_0008,prd2).
-arc(r__dangerous_0072_0007,r__very_0072_0006,quality1).
-arc(r__creature_0072_0008,r__dangerous_0072_0007,attrib2).
-arc(r__and_0072_0010,r__is_0072_0004,conj1).
-arc(r__and_0072_0010,r__is_0072_0013,conj2).
-arc(r__is_0072_0013,r__elephant_0072_0012,arg0).
-arc(r__is_0072_0013,r__cumbersome_0072_0015,prd2).
-arc(r__cumbersome_0072_0015,r__very_0072_0014,quality1).
+arc(r_0072_0004__is,r_0072_0002__boa_constrictor,arg0).
+arc(r_0072_0004__is,r_0072_0008__creature,prd2).
+arc(r_0072_0007__dangerous,r_0072_0006__very,quality1).
+arc(r_0072_0008__creature,r_0072_0007__dangerous,attrib2).
+arc(r_0072_0010__and,r_0072_0004__is,conj1).
+arc(r_0072_0010__and,r_0072_0013__is,conj2).
+arc(r_0072_0013__is,r_0072_0012__elephant,arg0).
+arc(r_0072_0013__is,r_0072_0015__cumbersome,prd2).
+arc(r_0072_0015__cumbersome,r_0072_0014__very,quality1).
 
 </pre>
 <br>
 <pre>
 fof(id_72_A_SAINT_EXUPERY_1943,axiom,
     ? [CONJX10,EVENTX9,EVENTX5,ENTITYX6,ENTITYX1,ENTITYX2,ATTRIBX7,ATTRIBX3,QUALITYX8,QUALITYX4] :
-      ( isA(ENTITYX1,r__boa_0072_0002_r__constrictor_0072_0003)
-      &amp; isA(ENTITYX2,r__creature_0072_0008)
+      ( isA(ENTITYX1,r_0072_0002__boa_constrictor)
+      &amp; isA(ENTITYX2,r_0072_0008__creature)
       &amp; attrib2(ENTITYX2) = ATTRIBX3
-      &amp; isA(ENTITYX6,r__elephant_0072_0012)
-      &amp; isA(ATTRIBX3,r__dangerous_0072_0007)
+      &amp; isA(ENTITYX6,r_0072_0012__elephant)
+      &amp; isA(ATTRIBX3,r_0072_0007__dangerous)
       &amp; quality1(ATTRIBX3) = QUALITYX4
-      &amp; isA(ATTRIBX7,r__cumbersome_0072_0015)
+      &amp; isA(ATTRIBX7,r_0072_0015__cumbersome)
       &amp; quality1(ATTRIBX7) = QUALITYX8
-      &amp; isA(QUALITYX4,r__very_0072_0006)
-      &amp; isA(QUALITYX8,r__very_0072_0014)
-      &amp; isA(CONJX10,r__and_0072_0010)
+      &amp; isA(QUALITYX4,r_0072_0006__very)
+      &amp; isA(QUALITYX8,r_0072_0014__very)
+      &amp; isA(CONJX10,r_0072_0010__and)
       &amp; conj1(CONJX10) = EVENTX5
-      &amp; isA(EVENTX5,r__is_0072_0004)
+      &amp; isA(EVENTX5,r_0072_0004__is)
       &amp; arg0(EVENTX5) = ENTITYX1
       &amp; prd2(EVENTX5) = ENTITYX2
       &amp; conj2(CONJX10) = EVENTX9
-      &amp; isA(EVENTX9,r__is_0072_0013)
+      &amp; isA(EVENTX9,r_0072_0013__is)
       &amp; arg0(EVENTX9) = ENTITYX6
       &amp; prd2(EVENTX9) = ATTRIBX7 ) ).
 

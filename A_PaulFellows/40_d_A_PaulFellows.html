@@ -116,7 +116,7 @@ We spent ages trying to create some code on the ARM end make it reliably boot up
 <title>0046_0006&#45;&gt;0046_0011_0046_0012</title>
 <path fill="none" stroke="black" d="M454.43,-89.4C462.79,-83.26 472.49,-75.95 481,-69 491.41,-60.5 502.52,-50.74 512.08,-42.1"/>
 <polygon fill="black" stroke="black" points="514.66,-44.49 519.69,-35.17 509.94,-39.32 514.66,-44.49"/>
-<text text-anchor="middle" x="526.5" y="-57.8" font-family="fixed" font-size="14.00">on_[loc]</text>
+<text text-anchor="middle" x="523" y="-57.8" font-family="fixed" font-size="14.00">on[loc]</text>
 </g>
 <!-- 0046_0013 -->
 <g id="node8" class="node">
@@ -226,55 +226,55 @@ We spent ages trying to create some code on the ARM end make it reliably boot up
 </svg>
 <br>
 <pre>
-arc(cnt_0046_1002,r__spent_0046_0002,scope).
-arc(cnt_0046_1002,r__trying_0046_0004,restriction).
-arc(r__spent_0046_0002,r__We_0046_0001,arg0).
-arc(r__spent_0046_0002,r__ages_0046_0003,arg1).
-arc(r__trying_0046_0004,r__ages_0046_0003,arg0).
-arc(r__create_0046_0006,r__ages_0046_0003,arg0).
-arc(r__create_0046_0006,r__code_0046_0008,arg1).
-arc(r__create_0046_0006,r__ARM_0046_0011_r__end_0046_0012,r__on_0046_0009_loc).
-arc(r__make_0046_0013,r__ages_0046_0003,arg0).
-arc(r__make_0046_0013,r__it_0046_0014,arg1).
-arc(r__boot_0046_0016_r__up_0046_0017,r__reliably_0046_0015,mnr1).
-arc(r__start_0046_0019,r__reliably_0046_0015,mnr1).
-arc(r__start_0046_0019,r__keyboard_0046_0021,arg1).
-arc(r__start_0046_0019,r__properly_0046_0022,mnr3).
+arc(cnt_0046_1002,r_0046_0002__spent,scope).
+arc(cnt_0046_1002,r_0046_0004__trying,restriction).
+arc(r_0046_0002__spent,r_0046_0001__We,arg0).
+arc(r_0046_0002__spent,r_0046_0003__ages,arg1).
+arc(r_0046_0004__trying,r_0046_0003__ages,arg0).
+arc(r_0046_0006__create,r_0046_0003__ages,arg0).
+arc(r_0046_0006__create,r_0046_0008__code,arg1).
+arc(r_0046_0006__create,r_0046_0011__ARM_end,r_0046_0009__on_loc).
+arc(r_0046_0013__make,r_0046_0003__ages,arg0).
+arc(r_0046_0013__make,r_0046_0014__it,arg1).
+arc(r_0046_0016__boot_up,r_0046_0015__reliably,mnr1).
+arc(r_0046_0019__start,r_0046_0015__reliably,mnr1).
+arc(r_0046_0019__start,r_0046_0021__keyboard,arg1).
+arc(r_0046_0019__start,r_0046_0022__properly,mnr3).
 
 </pre>
 <br>
 <pre>
 fof(id_46_A_PaulFellows,axiom,
     ? [STATEX4,STATEX8,CONNX3,EVENTX17,EVENTX16,EVENTX15,EVENTX12,EVENTX7,EVENTX18,ENTITYX1,ENTITYX13,ENTITYX5,ENTITYX6,QUALITYX11,QUALITYX14] :
-      ( isA(EVENTX7,r__create_0046_0006)
+      ( isA(EVENTX7,r_0046_0006__create)
       &amp; arg0(EVENTX7) = ENTITYX1
       &amp; arg1(EVENTX7) = ENTITYX5
-      &amp; r__on_0046_0009_loc(EVENTX7) = ENTITYX6
-      &amp; isA(EVENTX16,r__make_0046_0013)
+      &amp; r_0046_0009__on_loc(EVENTX7) = ENTITYX6
+      &amp; isA(EVENTX16,r_0046_0013__make)
       &amp; arg0(EVENTX16) = ENTITYX1
-      &amp; arg1(EVENTX16) = r__it_0046_0014
+      &amp; arg1(EVENTX16) = r_0046_0014__it
       &amp; prd(EVENTX16) = STATEX8
       &amp; isA(EVENTX16,STATEX4)
-      &amp; isA(EVENTX12,r__boot_0046_0016_r__up_0046_0017)
+      &amp; isA(EVENTX12,r_0046_0016__boot_up)
       &amp; mnr1(EVENTX12) = QUALITYX11
-      &amp; isA(EVENTX15,r__start_0046_0019)
+      &amp; isA(EVENTX15,r_0046_0019__start)
       &amp; mnr1(EVENTX15) = QUALITYX11
       &amp; arg1(EVENTX15) = ENTITYX13
       &amp; mnr3(EVENTX15) = QUALITYX14
       &amp; isA(EVENTX15,STATEX8)
-      &amp; isA(ENTITYX1,r__ages_0046_0003)
-      &amp; isA(ENTITYX5,r__code_0046_0008)
-      &amp; isA(ENTITYX6,r__ARM_0046_0011_r__end_0046_0012)
-      &amp; isA(ENTITYX13,r__keyboard_0046_0021)
-      &amp; isA(QUALITYX11,r__reliably_0046_0015)
-      &amp; isA(QUALITYX14,r__properly_0046_0022)
+      &amp; isA(ENTITYX1,r_0046_0003__ages)
+      &amp; isA(ENTITYX5,r_0046_0008__code)
+      &amp; isA(ENTITYX6,r_0046_0011__ARM_end)
+      &amp; isA(ENTITYX13,r_0046_0021__keyboard)
+      &amp; isA(QUALITYX11,r_0046_0015__reliably)
+      &amp; isA(QUALITYX14,r_0046_0022__properly)
       &amp; isA(CONNX3,cnt_0046_1002)
       &amp; scope(CONNX3) = EVENTX18
-      &amp; isA(EVENTX18,r__spent_0046_0002)
-      &amp; arg0(EVENTX18) = r__We_0046_0001
+      &amp; isA(EVENTX18,r_0046_0002__spent)
+      &amp; arg0(EVENTX18) = r_0046_0001__We
       &amp; arg1(EVENTX18) = ENTITYX1
       &amp; restriction(CONNX3) = EVENTX17
-      &amp; isA(EVENTX17,r__trying_0046_0004)
+      &amp; isA(EVENTX17,r_0046_0004__trying)
       &amp; arg0(EVENTX17) = ENTITYX1
       &amp; arg1(EVENTX17) = STATEX4 ) ).
 

@@ -109,11 +109,11 @@ African delegates are studying them today .
 </svg>
 <br>
 <pre>
-arc(r__delegates_0025_0002,r__African_0025_0001,attrib1).
-arc(r__are_0025_0003,r__studying_0025_0004,catenative).
-arc(r__studying_0025_0004,r__delegates_0025_0002,arg0).
-arc(r__studying_0025_0004,r__them_0025_0005,arg1).
-arc(r__studying_0025_0004,r__today_0025_0006,tmp3).
+arc(r_0025_0002__delegates,r_0025_0001__African,attrib1).
+arc(r_0025_0003__are,r_0025_0004__studying,catenative).
+arc(r_0025_0004__studying,r_0025_0002__delegates,arg0).
+arc(r_0025_0004__studying,r_0025_0005__them,arg1).
+arc(r_0025_0004__studying,r_0025_0006__today,tmp3).
 
 </pre>
 <br>
@@ -121,15 +121,15 @@ arc(r__studying_0025_0004,r__today_0025_0006,tmp3).
 fof(id_25_A_lob_A01,axiom,
     ? [CATENATIVEX3,EVENTX6,EVENTX5,ENTITYX1,ATTRIBX2,QUALITYX4] :
       ( CATENATIVEX3 = EVENTX5
-      &amp; isA(EVENTX5,r__studying_0025_0004)
+      &amp; isA(EVENTX5,r_0025_0004__studying)
       &amp; arg0(EVENTX5) = ENTITYX1
-      &amp; arg1(EVENTX5) = r__them_0025_0005
+      &amp; arg1(EVENTX5) = r_0025_0005__them
       &amp; tmp3(EVENTX5) = QUALITYX4
-      &amp; isA(ENTITYX1,r__delegates_0025_0002)
+      &amp; isA(ENTITYX1,r_0025_0002__delegates)
       &amp; attrib1(ENTITYX1) = ATTRIBX2
-      &amp; isA(ATTRIBX2,r__African_0025_0001)
-      &amp; isA(QUALITYX4,r__today_0025_0006)
-      &amp; isA(EVENTX6,r__are_0025_0003)
+      &amp; isA(ATTRIBX2,r_0025_0001__African)
+      &amp; isA(QUALITYX4,r_0025_0006__today)
+      &amp; isA(EVENTX6,r_0025_0003__are)
       &amp; catenative(EVENTX6) = CATENATIVEX3 ) ).
 
 

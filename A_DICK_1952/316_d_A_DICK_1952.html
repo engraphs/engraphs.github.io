@@ -108,8 +108,8 @@ I thought something like this might happen when I saw that the gun was &mdash; &
 <!-- 0405_0008_tmp -->
 <g id="node7" class="node">
 <title>0405_0008_tmp</title>
-<ellipse fill="none" stroke="black" cx="156.49" cy="-453" rx="64.19" ry="18"/>
-<text text-anchor="middle" x="156.49" y="-449.3" font-family="fixed" font-size="14.00">when_[tmp]</text>
+<ellipse fill="none" stroke="black" cx="156.49" cy="-453" rx="59.59" ry="18"/>
+<text text-anchor="middle" x="156.49" y="-449.3" font-family="fixed" font-size="14.00">when[tmp]</text>
 </g>
 <!-- 0405_0008_tmp&#45;&gt;0405_0002 -->
 <g id="edge6" class="edge">
@@ -168,16 +168,16 @@ I thought something like this might happen when I saw that the gun was &mdash; &
 </svg>
 <br>
 <pre>
-arc(r__thought_0405_0002,r__I_0405_0001,arg0).
-arc(r__thought_0405_0002,r__might_0405_0006,arg1).
-arc(r__something_0405_0003,r__this_0405_0005,r__like_0405_0004).
-arc(r__might_0405_0006,r__happen_0405_0007,scope).
-arc(r__happen_0405_0007,r__something_0405_0003,arg0).
-arc(r__when_0405_0008_tmp,r__thought_0405_0002,scope).
-arc(r__when_0405_0008_tmp,r__saw_0405_0010,restriction).
-arc(r__saw_0405_0010,r__I_0405_0001,arg0).
-arc(r__saw_0405_0010,r__was_0405_0014,arg1).
-arc(r__was_0405_0014,r__gun_0405_0013,arg0).
+arc(r_0405_0002__thought,r_0405_0001__I,arg0).
+arc(r_0405_0002__thought,r_0405_0006__might,arg1).
+arc(r_0405_0003__something,r_0405_0005__this,r_0405_0004__like).
+arc(r_0405_0006__might,r_0405_0007__happen,scope).
+arc(r_0405_0007__happen,r_0405_0003__something,arg0).
+arc(r_0405_0008__when_tmp,r_0405_0002__thought,scope).
+arc(r_0405_0008__when_tmp,r_0405_0010__saw,restriction).
+arc(r_0405_0010__saw,r_0405_0001__I,arg0).
+arc(r_0405_0010__saw,r_0405_0014__was,arg1).
+arc(r_0405_0014__was,r_0405_0013__gun,arg0).
 
 </pre>
 <br>
@@ -185,24 +185,24 @@ arc(r__was_0405_0014,r__gun_0405_0013,arg0).
 fof(id_405_A_DICK_1952,axiom,
     ? [STATEX1,STATEX6,DORLEX5,CONNX4,EVENTX9,EVENTX8,EVENTX10,OPERATORX2,EVENTX3,ENTITYX7] :
       ( STATEX1 = OPERATORX2
-      &amp; isA(OPERATORX2,r__might_0405_0006)
+      &amp; isA(OPERATORX2,r_0405_0006__might)
       &amp; scope(OPERATORX2) = EVENTX3
-      &amp; isA(EVENTX3,r__happen_0405_0007)
-      &amp; arg0(EVENTX3) = r__something_0405_0003
+      &amp; isA(EVENTX3,r_0405_0007__happen)
+      &amp; arg0(EVENTX3) = r_0405_0003__something
       &amp; STATEX6 = EVENTX8
-      &amp; isA(EVENTX8,r__was_0405_0014)
+      &amp; isA(EVENTX8,r_0405_0014__was)
       &amp; arg0(EVENTX8) = ENTITYX7
-      &amp; DORLEX5 = r__I_0405_0001
-      &amp; isA(ENTITYX7,r__gun_0405_0013)
-      &amp; isA(r__something_0405_0003,r__something_0405_0003)
-      &amp; r__like_0405_0004(r__something_0405_0003) = r__this_0405_0005
-      &amp; isA(CONNX4,r__when_0405_0008_tmp)
+      &amp; DORLEX5 = r_0405_0001__I
+      &amp; isA(ENTITYX7,r_0405_0013__gun)
+      &amp; isA(r_0405_0003__something,r_0405_0003__something)
+      &amp; r_0405_0004__like(r_0405_0003__something) = r_0405_0005__this
+      &amp; isA(CONNX4,r_0405_0008__when_tmp)
       &amp; scope(CONNX4) = EVENTX10
-      &amp; isA(EVENTX10,r__thought_0405_0002)
-      &amp; arg0(EVENTX10) = r__I_0405_0001
+      &amp; isA(EVENTX10,r_0405_0002__thought)
+      &amp; arg0(EVENTX10) = r_0405_0001__I
       &amp; arg1(EVENTX10) = STATEX1
       &amp; restriction(CONNX4) = EVENTX9
-      &amp; isA(EVENTX9,r__saw_0405_0010)
+      &amp; isA(EVENTX9,r_0405_0010__saw)
       &amp; arg0(EVENTX9) = DORLEX5
       &amp; arg1(EVENTX9) = STATEX6 ) ).
 

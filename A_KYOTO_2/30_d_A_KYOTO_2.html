@@ -44,15 +44,15 @@ For this reason , it is considered crucial to choose the right Zen master .
 <!-- 0037_0006 -->
 <g id="node2" class="node">
 <title>0037_0006</title>
-<ellipse fill="none" stroke="black" cx="82.95" cy="-366" rx="27" ry="18"/>
-<text text-anchor="middle" x="82.95" y="-362.3" font-family="fixed" font-size="14.00">is</text>
+<ellipse fill="none" stroke="black" cx="79.95" cy="-366" rx="27" ry="18"/>
+<text text-anchor="middle" x="79.95" y="-362.3" font-family="fixed" font-size="14.00">is</text>
 </g>
 <!-- 0037_0006&#45;&gt;0037_0003 -->
 <g id="edge1" class="edge">
 <title>0037_0006&#45;&gt;0037_0003</title>
-<path fill="none" stroke="black" d="M71.06,-349.5C66.88,-343.6 62.37,-336.69 58.95,-330 55.2,-322.69 51.89,-314.42 49.15,-306.74"/>
-<polygon fill="black" stroke="black" points="52.42,-305.47 45.91,-297.12 45.79,-307.71 52.42,-305.47"/>
-<text text-anchor="middle" x="89.45" y="-318.8" font-family="fixed" font-size="14.00">For_[cnt]</text>
+<path fill="none" stroke="black" d="M71.26,-348.75C68.21,-342.89 64.83,-336.19 61.95,-330 58.37,-322.32 54.71,-313.86 51.47,-306.12"/>
+<polygon fill="black" stroke="black" points="54.68,-304.72 47.63,-296.81 48.21,-307.39 54.68,-304.72"/>
+<text text-anchor="middle" x="89.45" y="-318.8" font-family="fixed" font-size="14.00">For[cnt]</text>
 </g>
 <!-- 0037_0007 -->
 <g id="node3" class="node">
@@ -63,9 +63,9 @@ For this reason , it is considered crucial to choose the right Zen master .
 <!-- 0037_0006&#45;&gt;0037_0007 -->
 <g id="edge2" class="edge">
 <title>0037_0006&#45;&gt;0037_0007</title>
-<path fill="none" stroke="black" d="M98.53,-351.15C105.32,-344.9 113.24,-337.29 119.95,-330 127.29,-322.02 134.84,-312.87 141.37,-304.6"/>
-<polygon fill="black" stroke="black" points="144.15,-306.73 147.53,-296.69 138.62,-302.43 144.15,-306.73"/>
-<text text-anchor="middle" x="174.45" y="-318.8" font-family="fixed" font-size="14.00">[catenative]</text>
+<path fill="none" stroke="black" d="M95.41,-351.04C102.18,-344.76 110.11,-337.17 116.95,-330 124.65,-321.92 132.72,-312.74 139.77,-304.48"/>
+<polygon fill="black" stroke="black" points="142.65,-306.49 146.42,-296.59 137.3,-301.98 142.65,-306.49"/>
+<text text-anchor="middle" x="172.45" y="-318.8" font-family="fixed" font-size="14.00">[catenative]</text>
 </g>
 <!-- 0037_0008 -->
 <g id="node4" class="node">
@@ -123,12 +123,12 @@ For this reason , it is considered crucial to choose the right Zen master .
 </svg>
 <br>
 <pre>
-arc(r__is_0037_0006,r__reason_0037_0003,r__For_0037_0001_cnt).
-arc(r__is_0037_0006,r__considered_0037_0007,catenative).
-arc(r__considered_0037_0007,r__crucial_0037_0008,prd).
-arc(r__considered_0037_0007,r__choose_0037_0010,arg1).
-arc(r__choose_0037_0010,r__Zen_0037_0013_r__master_0037_0014,arg1).
-arc(r__Zen_0037_0013_r__master_0037_0014,r__right_0037_0012,attrib2).
+arc(r_0037_0006__is,r_0037_0003__reason,r_0037_0001__For_cnt).
+arc(r_0037_0006__is,r_0037_0007__considered,catenative).
+arc(r_0037_0007__considered,r_0037_0008__crucial,prd).
+arc(r_0037_0007__considered,r_0037_0010__choose,arg1).
+arc(r_0037_0010__choose,r_0037_0013__Zen_master,arg1).
+arc(r_0037_0013__Zen_master,r_0037_0012__right,attrib2).
 
 </pre>
 <br>
@@ -136,19 +136,19 @@ arc(r__Zen_0037_0013_r__master_0037_0014,r__right_0037_0012,attrib2).
 fof(id_37_A_KYOTO_2,axiom,
     ? [CATENATIVEX3,STATEX6,EVENTX11,EVENTX10,EVENTX9,ENTITYX1,ENTITYX7,ATTRIBX5,ATTRIBX8] :
       ( CATENATIVEX3 = EVENTX10
-      &amp; isA(EVENTX10,r__considered_0037_0007)
+      &amp; isA(EVENTX10,r_0037_0007__considered)
       &amp; arg1(EVENTX10) = STATEX6
       &amp; prd(EVENTX10) = ATTRIBX5
       &amp; STATEX6 = EVENTX9
-      &amp; isA(EVENTX9,r__choose_0037_0010)
+      &amp; isA(EVENTX9,r_0037_0010__choose)
       &amp; arg1(EVENTX9) = ENTITYX7
-      &amp; isA(ENTITYX1,r__reason_0037_0003)
-      &amp; isA(ENTITYX7,r__Zen_0037_0013_r__master_0037_0014)
+      &amp; isA(ENTITYX1,r_0037_0003__reason)
+      &amp; isA(ENTITYX7,r_0037_0013__Zen_master)
       &amp; attrib2(ENTITYX7) = ATTRIBX8
-      &amp; isA(ATTRIBX5,r__crucial_0037_0008)
-      &amp; isA(ATTRIBX8,r__right_0037_0012)
-      &amp; isA(EVENTX11,r__is_0037_0006)
-      &amp; r__For_0037_0001_cnt(EVENTX11) = ENTITYX1
+      &amp; isA(ATTRIBX5,r_0037_0008__crucial)
+      &amp; isA(ATTRIBX8,r_0037_0012__right)
+      &amp; isA(EVENTX11,r_0037_0006__is)
+      &amp; r_0037_0001__For_cnt(EVENTX11) = ENTITYX1
       &amp; catenative(EVENTX11) = CATENATIVEX3 ) ).
 
 

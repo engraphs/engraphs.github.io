@@ -64,7 +64,7 @@ Story Filed By Cox Newspapers
 <title>0013_0002&#45;&gt;0013_0004_0013_0005</title>
 <path fill="none" stroke="black" d="M117.29,-88.41C127.51,-75.99 142.03,-58.36 153.88,-43.98"/>
 <polygon fill="black" stroke="black" points="156.83,-45.89 160.49,-35.95 151.43,-41.44 156.83,-45.89"/>
-<text text-anchor="middle" x="192.45" y="-57.8" font-family="fixed" font-size="14.00">[arg0]By_[lgs]</text>
+<text text-anchor="middle" x="188.95" y="-57.8" font-family="fixed" font-size="14.00">[arg0]By[lgs]</text>
 </g>
 <!-- z_0013_1005 -->
 <g id="node4" class="node">
@@ -83,9 +83,9 @@ Story Filed By Cox Newspapers
 </svg>
 <br>
 <pre>
-arc(r__Filed_0013_0002,r__Story_0013_0001,arg1).
-arc(r__Filed_0013_0002,r__Cox_0013_0004_r__Newspapers_0013_0005,arg0_r__By_0013_0003_lgs).
-arc(z_0013_1005,r__Filed_0013_0002,catenative).
+arc(r_0013_0002__Filed,r_0013_0001__Story,arg1).
+arc(r_0013_0002__Filed,r_0013_0004__Cox_Newspapers,arg0_By_lgs).
+arc(z_0013_1005,r_0013_0002__Filed,catenative).
 
 </pre>
 <br>
@@ -93,11 +93,11 @@ arc(z_0013_1005,r__Filed_0013_0002,catenative).
 fof(id_13_A_ANC_nyt20000410,axiom,
     ? [CATENATIVEX2,EVENTX6,EVENTX4,ENTITYX1,ENTITYX3] :
       ( CATENATIVEX2 = EVENTX4
-      &amp; isA(EVENTX4,r__Filed_0013_0002)
-      &amp; arg0_r__By_0013_0003_lgs(EVENTX4) = ENTITYX3
+      &amp; isA(EVENTX4,r_0013_0002__Filed)
+      &amp; arg0_By_lgs(EVENTX4) = ENTITYX3
       &amp; arg1(EVENTX4) = ENTITYX1
-      &amp; isA(ENTITYX1,r__Story_0013_0001)
-      &amp; isA(ENTITYX3,r__Cox_0013_0004_r__Newspapers_0013_0005)
+      &amp; isA(ENTITYX1,r_0013_0001__Story)
+      &amp; isA(ENTITYX3,r_0013_0004__Cox_Newspapers)
       &amp; isA(EVENTX6,z_0013_1005)
       &amp; catenative(EVENTX6) = CATENATIVEX2 ) ).
 

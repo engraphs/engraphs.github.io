@@ -78,7 +78,7 @@ The sect was begun in 1337 by Egen KANZAN .
 <title>0094_0004&#45;&gt;0094_0006</title>
 <path fill="none" stroke="black" d="M111.25,-86.8C111.25,-75.16 111.25,-59.55 111.25,-46.24"/>
 <polygon fill="black" stroke="black" points="114.75,-46.18 111.25,-36.18 107.75,-46.18 114.75,-46.18"/>
-<text text-anchor="middle" x="140.25" y="-57.8" font-family="fixed" font-size="14.00">in_[tmp]</text>
+<text text-anchor="middle" x="137.25" y="-57.8" font-family="fixed" font-size="14.00">in[tmp]</text>
 </g>
 <!-- 0094_0008_0094_0009 -->
 <g id="node5" class="node">
@@ -89,18 +89,18 @@ The sect was begun in 1337 by Egen KANZAN .
 <!-- 0094_0004&#45;&gt;0094_0008_0094_0009 -->
 <g id="edge4" class="edge">
 <title>0094_0004&#45;&gt;0094_0008_0094_0009</title>
-<path fill="none" stroke="black" d="M136.12,-90.91C147.62,-84.61 161.34,-76.76 173.25,-69 186.16,-60.58 199.9,-50.54 211.54,-41.68"/>
-<polygon fill="black" stroke="black" points="213.82,-44.34 219.62,-35.47 209.55,-38.79 213.82,-44.34"/>
-<text text-anchor="middle" x="242.75" y="-57.8" font-family="fixed" font-size="14.00">[arg0]by_[lgs]</text>
+<path fill="none" stroke="black" d="M134,-90.08C144.23,-83.75 156.41,-76.1 167.25,-69 180.93,-60.05 195.85,-49.89 208.62,-41.09"/>
+<polygon fill="black" stroke="black" points="210.84,-43.81 217.07,-35.24 206.86,-38.05 210.84,-43.81"/>
+<text text-anchor="middle" x="235.75" y="-57.8" font-family="fixed" font-size="14.00">[arg0]by[lgs]</text>
 </g>
 </g>
 </svg>
 <br>
 <pre>
-arc(r__was_0094_0003,r__begun_0094_0004,catenative).
-arc(r__begun_0094_0004,r__sect_0094_0002,arg1).
-arc(r__begun_0094_0004,r__1337_0094_0006,r__in_0094_0005_tmp).
-arc(r__begun_0094_0004,r__Egen_0094_0008_r__KANZAN_0094_0009,arg0_r__by_0094_0007_lgs).
+arc(r_0094_0003__was,r_0094_0004__begun,catenative).
+arc(r_0094_0004__begun,r_0094_0002__sect,arg1).
+arc(r_0094_0004__begun,r_0094_0006__1337,r_0094_0005__in_tmp).
+arc(r_0094_0004__begun,r_0094_0008__Egen_KANZAN,arg0_by_lgs).
 
 </pre>
 <br>
@@ -108,13 +108,13 @@ arc(r__begun_0094_0004,r__Egen_0094_0008_r__KANZAN_0094_0009,arg0_r__by_0094_000
 fof(id_94_A_KYOTO_2,axiom,
     ? [CATENATIVEX2,EVENTX5,EVENTX4,ENTITYX1,ENTITYX3] :
       ( CATENATIVEX2 = EVENTX4
-      &amp; isA(EVENTX4,r__begun_0094_0004)
-      &amp; arg0_r__by_0094_0007_lgs(EVENTX4) = r__Egen_0094_0008_r__KANZAN_0094_0009
+      &amp; isA(EVENTX4,r_0094_0004__begun)
+      &amp; arg0_by_lgs(EVENTX4) = r_0094_0008__Egen_KANZAN
       &amp; arg1(EVENTX4) = ENTITYX1
-      &amp; r__in_0094_0005_tmp(EVENTX4) = ENTITYX3
-      &amp; isA(ENTITYX1,r__sect_0094_0002)
-      &amp; isA(ENTITYX3,r__1337_0094_0006)
-      &amp; isA(EVENTX5,r__was_0094_0003)
+      &amp; r_0094_0005__in_tmp(EVENTX4) = ENTITYX3
+      &amp; isA(ENTITYX1,r_0094_0002__sect)
+      &amp; isA(ENTITYX3,r_0094_0006__1337)
+      &amp; isA(EVENTX5,r_0094_0003__was)
       &amp; catenative(EVENTX5) = CATENATIVEX2 ) ).
 
 

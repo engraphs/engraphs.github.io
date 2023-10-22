@@ -135,13 +135,13 @@ Still , encrypting corporate communications is only a partial remedy .
 </svg>
 <br>
 <pre>
-arc(r__Still_0014_0001,r__only_0014_0007,scope).
-arc(r__encrypting_0014_0003,r__communications_0014_0005,arg1).
-arc(r__communications_0014_0005,r__corporate_0014_0004,attrib1).
-arc(r__is_0014_0006,r__encrypting_0014_0003,arg0).
-arc(r__is_0014_0006,r__remedy_0014_0010,prd2).
-arc(r__only_0014_0007,r__is_0014_0006,scope).
-arc(r__remedy_0014_0010,r__partial_0014_0009,attrib2).
+arc(r_0014_0001__Still,r_0014_0007__only,scope).
+arc(r_0014_0003__encrypting,r_0014_0005__communications,arg1).
+arc(r_0014_0005__communications,r_0014_0004__corporate,attrib1).
+arc(r_0014_0006__is,r_0014_0003__encrypting,arg0).
+arc(r_0014_0006__is,r_0014_0010__remedy,prd2).
+arc(r_0014_0007__only,r_0014_0006__is,scope).
+arc(r_0014_0010__remedy,r_0014_0009__partial,attrib2).
 
 </pre>
 <br>
@@ -149,19 +149,19 @@ arc(r__remedy_0014_0010,r__partial_0014_0009,attrib2).
 fof(id_14_A_ANC_wsj_1640,axiom,
     ? [STATEX2,OPERATORX1,OPERATORX8,EVENTX11,EVENTX7,ENTITYX9,ENTITYX5,ATTRIBX10,ATTRIBX6] :
       ( STATEX2 = EVENTX7
-      &amp; isA(EVENTX7,r__encrypting_0014_0003)
+      &amp; isA(EVENTX7,r_0014_0003__encrypting)
       &amp; arg1(EVENTX7) = ENTITYX5
-      &amp; isA(ENTITYX5,r__communications_0014_0005)
+      &amp; isA(ENTITYX5,r_0014_0005__communications)
       &amp; attrib1(ENTITYX5) = ATTRIBX6
-      &amp; isA(ENTITYX9,r__remedy_0014_0010)
+      &amp; isA(ENTITYX9,r_0014_0010__remedy)
       &amp; attrib2(ENTITYX9) = ATTRIBX10
-      &amp; isA(ATTRIBX6,r__corporate_0014_0004)
-      &amp; isA(ATTRIBX10,r__partial_0014_0009)
-      &amp; isA(OPERATORX1,r__Still_0014_0001)
+      &amp; isA(ATTRIBX6,r_0014_0004__corporate)
+      &amp; isA(ATTRIBX10,r_0014_0009__partial)
+      &amp; isA(OPERATORX1,r_0014_0001__Still)
       &amp; scope(OPERATORX1) = OPERATORX8
-      &amp; isA(OPERATORX8,r__only_0014_0007)
+      &amp; isA(OPERATORX8,r_0014_0007__only)
       &amp; scope(OPERATORX8) = EVENTX11
-      &amp; isA(EVENTX11,r__is_0014_0006)
+      &amp; isA(EVENTX11,r_0014_0006__is)
       &amp; arg0(EVENTX11) = STATEX2
       &amp; prd2(EVENTX11) = ENTITYX9 ) ).
 

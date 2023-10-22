@@ -90,31 +90,31 @@ The next day the Swallow flew down to the harbour .
 <title>0159_0006&#45;&gt;0159_0009</title>
 <path fill="none" stroke="black" d="M140.9,-177.44C149.6,-170.98 160.14,-163.12 169.55,-156 181.79,-146.74 195.25,-136.4 206.73,-127.55"/>
 <polygon fill="black" stroke="black" points="208.92,-130.28 214.7,-121.4 204.64,-124.74 208.92,-130.28"/>
-<text text-anchor="middle" x="233.55" y="-144.8" font-family="fixed" font-size="14.00">down_to_[dir]</text>
+<text text-anchor="middle" x="230.55" y="-144.8" font-family="fixed" font-size="14.00">down_to[dir]</text>
 </g>
 </g>
 </svg>
 <br>
 <pre>
-arc(r__day_0159_0003,r__next_0159_0002,attrib2).
-arc(r__flew_0159_0006,r__day_0159_0003,tmp).
-arc(r__flew_0159_0006,r__Swallow_0159_0005,arg0).
-arc(r__flew_0159_0006,r__harbour_0159_0009,r__down_to_0159_0007_dir).
+arc(r_0159_0003__day,r_0159_0002__next,attrib2).
+arc(r_0159_0006__flew,r_0159_0003__day,tmp).
+arc(r_0159_0006__flew,r_0159_0005__Swallow,arg0).
+arc(r_0159_0006__flew,r_0159_0009__harbour,r_0159_0007__down_to_dir).
 
 </pre>
 <br>
 <pre>
 fof(id_159_A_WILDE_1_1888,axiom,
     ? [EVENTX5,ENTITYX1,ENTITYX3,ENTITYX4,ATTRIBX2] :
-      ( isA(ENTITYX1,r__day_0159_0003)
+      ( isA(ENTITYX1,r_0159_0003__day)
       &amp; attrib2(ENTITYX1) = ATTRIBX2
-      &amp; isA(ENTITYX3,r__Swallow_0159_0005)
-      &amp; isA(ENTITYX4,r__harbour_0159_0009)
-      &amp; isA(ATTRIBX2,r__next_0159_0002)
-      &amp; isA(EVENTX5,r__flew_0159_0006)
+      &amp; isA(ENTITYX3,r_0159_0005__Swallow)
+      &amp; isA(ENTITYX4,r_0159_0009__harbour)
+      &amp; isA(ATTRIBX2,r_0159_0002__next)
+      &amp; isA(EVENTX5,r_0159_0006__flew)
       &amp; tmp(EVENTX5) = ENTITYX1
       &amp; arg0(EVENTX5) = ENTITYX3
-      &amp; r__down_to_0159_0007_dir(EVENTX5) = ENTITYX4 ) ).
+      &amp; r_0159_0007__down_to_dir(EVENTX5) = ENTITYX4 ) ).
 
 
 </pre>

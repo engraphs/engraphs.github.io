@@ -149,15 +149,15 @@ Is there anything you 'd like to change ?
 </svg>
 <br>
 <pre>
-arc(quantificational_r__anything_0029_0003,r__Is_0029_0001,scope).
-arc(quantificational_r__anything_0029_0003,z_0029_1009,restriction).
-arc(question_0029_1002,quantificational_r__anything_0029_0003,scope).
-arc(r__Is_0029_0001,z_0029_1009,arg0).
-arc(r___apos_d_0029_0005,r__like_0029_0006,scope).
-arc(r__like_0029_0006,r__you_0029_0004,arg0).
-arc(r__like_0029_0006,r__change_0029_0008,arg1).
-arc(r__change_0029_0008,r__you_0029_0004,arg0).
-arc(r__change_0029_0008,z_0029_1009,arg1).
+arc(question_0029_1002,r_0029_0003__quantificational__anything,scope).
+arc(r_0029_0001__Is,z_0029_1009,arg0).
+arc(r_0029_0003__quantificational__anything,r_0029_0001__Is,scope).
+arc(r_0029_0003__quantificational__anything,z_0029_1009,restriction).
+arc(r_0029_0005___apos_d,r_0029_0006__like,scope).
+arc(r_0029_0006__like,r_0029_0004__you,arg0).
+arc(r_0029_0006__like,r_0029_0008__change,arg1).
+arc(r_0029_0008__change,r_0029_0004__you,arg0).
+arc(r_0029_0008__change,z_0029_1009,arg1).
 
 </pre>
 <br>
@@ -165,21 +165,21 @@ arc(r__change_0029_0008,z_0029_1009,arg1).
 fof(id_29_A_fce_0102_2000_12,axiom,
     ? [STATEX5,OPERATORX2,QUANTX4,EVENTX10,OPERATORX7,EVENTX8,EVENTX6,ENTITYX3] :
       ( STATEX5 = EVENTX6
-      &amp; isA(EVENTX6,r__change_0029_0008)
-      &amp; arg0(EVENTX6) = r__you_0029_0004
+      &amp; isA(EVENTX6,r_0029_0008__change)
+      &amp; arg0(EVENTX6) = r_0029_0004__you
       &amp; arg1(EVENTX6) = ENTITYX3
       &amp; isA(OPERATORX2,question_0029_1002)
       &amp; scope(OPERATORX2) = QUANTX4
-      &amp; isA(QUANTX4,quantificational_r__anything_0029_0003)
-      &amp; isA(OPERATORX7,r___apos_d_0029_0005)
+      &amp; isA(QUANTX4,r_0029_0003__quantificational__anything)
+      &amp; isA(OPERATORX7,r_0029_0005___apos_d)
       &amp; scope(OPERATORX7) = EVENTX8
-      &amp; isA(EVENTX8,r__like_0029_0006)
-      &amp; arg0(EVENTX8) = r__you_0029_0004
+      &amp; isA(EVENTX8,r_0029_0006__like)
+      &amp; arg0(EVENTX8) = r_0029_0004__you
       &amp; arg1(EVENTX8) = STATEX5
       &amp; isA(ENTITYX3,z_0029_1009)
       &amp; restriction(QUANTX4) = ENTITYX3
       &amp; scope(QUANTX4) = EVENTX10
-      &amp; isA(EVENTX10,r__Is_0029_0001)
+      &amp; isA(EVENTX10,r_0029_0001__Is)
       &amp; arg0(EVENTX10) = ENTITYX3 ) ).
 
 

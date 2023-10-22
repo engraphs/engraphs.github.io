@@ -155,15 +155,15 @@ Tance had stopped dead in his tracks , his mouth half open .
 </svg>
 <br>
 <pre>
-arc(r__had_0300_0002,r__stopped_0300_0003,catenative).
-arc(r__stopped_0300_0003,r__Tance_0300_0001,arg0).
-arc(r__stopped_0300_0003,r__dead_0300_0004,prd2).
-arc(r__dead_0300_0004,r__tracks_0300_0007,r__in_0300_0005).
-arc(r__tracks_0300_0007,r__Tance_0300_0001,genv).
-arc(r__mouth_0300_0010,r__Tance_0300_0001,genv).
-arc(r__open_0300_0012,r__half_0300_0011,quality1).
-arc(z_0300_1011,r__mouth_0300_0010,arg0).
-arc(z_0300_1011,r__open_0300_0012,prd2).
+arc(r_0300_0002__had,r_0300_0003__stopped,catenative).
+arc(r_0300_0003__stopped,r_0300_0001__Tance,arg0).
+arc(r_0300_0003__stopped,r_0300_0004__dead,prd2).
+arc(r_0300_0004__dead,r_0300_0007__tracks,r_0300_0005__in).
+arc(r_0300_0007__tracks,r_0300_0001__Tance,genv).
+arc(r_0300_0010__mouth,r_0300_0001__Tance,genv).
+arc(r_0300_0012__open,r_0300_0011__half,quality1).
+arc(z_0300_1011,r_0300_0010__mouth,arg0).
+arc(z_0300_1011,r_0300_0012__open,prd2).
 
 </pre>
 <br>
@@ -171,21 +171,21 @@ arc(z_0300_1011,r__open_0300_0012,prd2).
 fof(id_300_A_DICK_1952,axiom,
     ? [CATENATIVEX1,TANCEX4,TANCEX8,EVENTX12,EVENTX6,EVENTX5,ENTITYX7,ENTITYX3,ATTRIBX9,ATTRIBX2,QUALITYX10] :
       ( CATENATIVEX1 = EVENTX5
-      &amp; isA(EVENTX5,r__stopped_0300_0003)
-      &amp; arg0(EVENTX5) = r__Tance_0300_0001
+      &amp; isA(EVENTX5,r_0300_0003__stopped)
+      &amp; arg0(EVENTX5) = r_0300_0001__Tance
       &amp; prd2(EVENTX5) = ATTRIBX2
-      &amp; isA(ENTITYX3,r__tracks_0300_0007)
+      &amp; isA(ENTITYX3,r_0300_0007__tracks)
       &amp; genv(ENTITYX3) = TANCEX4
-      &amp; TANCEX4 = r__Tance_0300_0001
-      &amp; isA(ENTITYX7,r__mouth_0300_0010)
+      &amp; TANCEX4 = r_0300_0001__Tance
+      &amp; isA(ENTITYX7,r_0300_0010__mouth)
       &amp; genv(ENTITYX7) = TANCEX8
-      &amp; TANCEX8 = r__Tance_0300_0001
-      &amp; isA(ATTRIBX2,r__dead_0300_0004)
-      &amp; r__in_0300_0005(ATTRIBX2) = ENTITYX3
-      &amp; isA(ATTRIBX9,r__open_0300_0012)
+      &amp; TANCEX8 = r_0300_0001__Tance
+      &amp; isA(ATTRIBX2,r_0300_0004__dead)
+      &amp; r_0300_0005__in(ATTRIBX2) = ENTITYX3
+      &amp; isA(ATTRIBX9,r_0300_0012__open)
       &amp; quality1(ATTRIBX9) = QUALITYX10
-      &amp; isA(QUALITYX10,r__half_0300_0011)
-      &amp; isA(EVENTX6,r__had_0300_0002)
+      &amp; isA(QUALITYX10,r_0300_0011__half)
+      &amp; isA(EVENTX6,r_0300_0002__had)
       &amp; catenative(EVENTX6) = CATENATIVEX1
       &amp; isA(EVENTX12,z_0300_1011)
       &amp; arg0(EVENTX12) = ENTITYX7

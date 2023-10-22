@@ -69,7 +69,7 @@
 <title>0108_0004&#45;&gt;0108_0006</title>
 <path fill="none" stroke="black" d="M351.34,-87.61C339.47,-74.5 322.69,-55.99 309.56,-41.49"/>
 <polygon fill="black" stroke="black" points="312.01,-38.98 302.7,-33.92 306.82,-43.68 312.01,-38.98"/>
-<text text-anchor="middle" x="368.19" y="-57.8" font-family="fixed" font-size="14.00">like_[mnr]</text>
+<text text-anchor="middle" x="364.69" y="-57.8" font-family="fixed" font-size="14.00">like[mnr]</text>
 </g>
 <!-- 0109_0003 -->
 <g id="node4" class="node">
@@ -147,14 +147,14 @@
 </svg>
 <br>
 <pre>
-arc(imperative_0108_1004,r__stop_0108_0003,scope).
-arc(quantificational_r__everybody_0109_0005,r__confusing_0109_0004,scope).
-arc(quantificational_r__everybody_0109_0005,z_0108_1012,restriction).
-arc(r__stop_0108_0003,r__speaking_0108_0004,arg1).
-arc(r__speaking_0108_0004,r__that_0108_0006,r__like_0108_0005_mnr).
-arc(r___apos_s_0109_0003,quantificational_r__everybody_0109_0005,catenative).
-arc(r__confusing_0109_0004,r__that_0108_0006,arg0).
-arc(r__confusing_0109_0004,z_0108_1012,arg1).
+arc(imperative_0108_1004,r_0108_0003__stop,scope).
+arc(r_0108_0003__stop,r_0108_0004__speaking,arg1).
+arc(r_0108_0004__speaking,r_0108_0006__that,r_0108_0005__like_mnr).
+arc(r_0109_0003___apos_s,r_0109_0005__quantificational__everybody,catenative).
+arc(r_0109_0004__confusing,r_0108_0006__that,arg0).
+arc(r_0109_0004__confusing,z_0108_1012,arg1).
+arc(r_0109_0005__quantificational__everybody,r_0109_0004__confusing,scope).
+arc(r_0109_0005__quantificational__everybody,z_0108_1012,restriction).
 
 </pre>
 <br>
@@ -162,22 +162,22 @@ arc(r__confusing_0109_0004,z_0108_1012,arg1).
 fof(id_108_A_TED_talk_11__109_A_TED_talk_11,axiom,
     ? [STATEX5,CATENATIVEX9,WAY_OF_SPEAKINGX8,EVENTX14,QUANTX11,EVENTX13,OPERATORX4,EVENTX7,EVENTX6,ENTITYX10] :
       ( STATEX5 = EVENTX6
-      &amp; isA(EVENTX6,r__speaking_0108_0004)
-      &amp; r__like_0108_0005_mnr(EVENTX6) = r__that_0108_0006
+      &amp; isA(EVENTX6,r_0108_0004__speaking)
+      &amp; r_0108_0005__like_mnr(EVENTX6) = r_0108_0006__that
       &amp; CATENATIVEX9 = QUANTX11
-      &amp; isA(QUANTX11,quantificational_r__everybody_0109_0005)
+      &amp; isA(QUANTX11,r_0109_0005__quantificational__everybody)
       &amp; restriction(QUANTX11) = ENTITYX10
       &amp; isA(ENTITYX10,z_0108_1012)
       &amp; scope(QUANTX11) = EVENTX13
-      &amp; isA(EVENTX13,r__confusing_0109_0004)
+      &amp; isA(EVENTX13,r_0109_0004__confusing)
       &amp; arg0(EVENTX13) = WAY_OF_SPEAKINGX8
       &amp; arg1(EVENTX13) = ENTITYX10
-      &amp; WAY_OF_SPEAKINGX8 = r__that_0108_0006
+      &amp; WAY_OF_SPEAKINGX8 = r_0108_0006__that
       &amp; isA(OPERATORX4,imperative_0108_1004)
       &amp; scope(OPERATORX4) = EVENTX7
-      &amp; isA(EVENTX7,r__stop_0108_0003)
+      &amp; isA(EVENTX7,r_0108_0003__stop)
       &amp; arg1(EVENTX7) = STATEX5
-      &amp; isA(EVENTX14,r___apos_s_0109_0003)
+      &amp; isA(EVENTX14,r_0109_0003___apos_s)
       &amp; catenative(EVENTX14) = CATENATIVEX9 ) ).
 
 

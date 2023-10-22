@@ -343,29 +343,29 @@ To ensure these parts work together properly , periodic inspection including cle
 </svg>
 <br>
 <pre>
-arc(cnt_0088_1001,r__ensure_0088_0002,restriction).
-arc(cnt_0088_1001,r__is_0088_0031,scope).
-arc(r__ensure_0088_0002,r__properly_0088_0007,arg1).
-arc(r__work_0088_0005,r__parts_0088_0004,arg0).
-arc(r__work_0088_0005,r__together_0088_0006,mnr3).
-arc(r__properly_0088_0007,r__work_0088_0005,scope).
-arc(r__inspection_0088_0010,r__periodic_0088_0009,attrib1).
-arc(r__including_0088_0011,r__inspection_0088_0010,arg0).
-arc(r__including_0088_0011,r__and_0088_0026,arg1).
-arc(r__cleaning_0088_0012,r__and_0088_0015,r__of_0088_0013).
-arc(r__and_0088_0015,r__parts_0088_0014,conj1).
-arc(r__and_0088_0015,r__movement_0088_0016,conj2).
-arc(r__adjustment_0088_0020,r__accuracy_0088_0022,r__of_0088_0021).
-arc(r__check_0088_0025,r__functional_0088_0024,attrib1).
-arc(r__and_0088_0026,r__cleaning_0088_0012,conj1).
-arc(r__and_0088_0026,r__oiling_0088_0018,conj2).
-arc(r__and_0088_0026,r__adjustment_0088_0020,conj3).
-arc(r__and_0088_0026,r__check_0088_0025,conj4).
-arc(r__and_0088_0026,r__replacement_0088_0027,conj5).
-arc(r__replacement_0088_0027,r__parts_0088_0030,r__of_0088_0028).
-arc(r__parts_0088_0030,r__worn_0088_0029,attrib1).
-arc(r__is_0088_0031,r__needed_0088_0032,catenative).
-arc(r__needed_0088_0032,r__inspection_0088_0010,arg1).
+arc(cnt_0088_1001,r_0088_0002__ensure,restriction).
+arc(cnt_0088_1001,r_0088_0031__is,scope).
+arc(r_0088_0002__ensure,r_0088_0007__properly,arg1).
+arc(r_0088_0005__work,r_0088_0004__parts,arg0).
+arc(r_0088_0005__work,r_0088_0006__together,mnr3).
+arc(r_0088_0007__properly,r_0088_0005__work,scope).
+arc(r_0088_0010__inspection,r_0088_0009__periodic,attrib1).
+arc(r_0088_0011__including,r_0088_0010__inspection,arg0).
+arc(r_0088_0011__including,r_0088_0026__and,arg1).
+arc(r_0088_0012__cleaning,r_0088_0015__and,r_0088_0013__of).
+arc(r_0088_0015__and,r_0088_0014__parts,conj1).
+arc(r_0088_0015__and,r_0088_0016__movement,conj2).
+arc(r_0088_0020__adjustment,r_0088_0022__accuracy,r_0088_0021__of).
+arc(r_0088_0025__check,r_0088_0024__functional,attrib1).
+arc(r_0088_0026__and,r_0088_0012__cleaning,conj1).
+arc(r_0088_0026__and,r_0088_0018__oiling,conj2).
+arc(r_0088_0026__and,r_0088_0020__adjustment,conj3).
+arc(r_0088_0026__and,r_0088_0025__check,conj4).
+arc(r_0088_0026__and,r_0088_0027__replacement,conj5).
+arc(r_0088_0027__replacement,r_0088_0030__parts,r_0088_0028__of).
+arc(r_0088_0030__parts,r_0088_0029__worn,attrib1).
+arc(r_0088_0031__is,r_0088_0032__needed,catenative).
+arc(r_0088_0032__needed,r_0088_0010__inspection,arg1).
 
 </pre>
 <br>
@@ -373,53 +373,53 @@ arc(r__needed_0088_0032,r__inspection_0088_0010,arg1).
 fof(id_88_A_seiko_9R65,axiom,
     ? [STATEX5,CATENATIVEX27,CONNX2,EVENTX30,EVENTX29,EVENTX26,EVENTX10,OPERATORX8,EVENTX9,ENTITYX11,ENTITYX13,ENTITYX14,ENTITYX18,ENTITYX19,ENTITYX21,ENTITYX23,ENTITYX24,ENTITYX20,ENTITYX15,ENTITYX16,ENTITYX17,ENTITYX6,QUALITYX7,ATTRIBX12,ATTRIBX25,ATTRIBX22] :
       ( STATEX5 = OPERATORX8
-      &amp; isA(OPERATORX8,r__properly_0088_0007)
+      &amp; isA(OPERATORX8,r_0088_0007__properly)
       &amp; scope(OPERATORX8) = EVENTX9
-      &amp; isA(EVENTX9,r__work_0088_0005)
+      &amp; isA(EVENTX9,r_0088_0005__work)
       &amp; arg0(EVENTX9) = ENTITYX6
       &amp; mnr3(EVENTX9) = QUALITYX7
       &amp; CATENATIVEX27 = EVENTX29
-      &amp; isA(EVENTX29,r__needed_0088_0032)
+      &amp; isA(EVENTX29,r_0088_0032__needed)
       &amp; arg1(EVENTX29) = ENTITYX11
-      &amp; isA(ENTITYX6,r__parts_0088_0004)
-      &amp; isA(EVENTX26,r__including_0088_0011)
+      &amp; isA(ENTITYX6,r_0088_0004__parts)
+      &amp; isA(EVENTX26,r_0088_0011__including)
       &amp; arg0(EVENTX26) = ENTITYX11
       &amp; arg1(EVENTX26) = ENTITYX13
-      &amp; isA(ENTITYX11,r__inspection_0088_0010)
+      &amp; isA(ENTITYX11,r_0088_0010__inspection)
       &amp; attrib1(ENTITYX11) = ATTRIBX12
-      &amp; isA(ENTITYX13,r__and_0088_0026)
+      &amp; isA(ENTITYX13,r_0088_0026__and)
       &amp; conj1(ENTITYX13) = ENTITYX14
       &amp; conj2(ENTITYX13) = ENTITYX18
       &amp; conj3(ENTITYX13) = ENTITYX19
       &amp; conj4(ENTITYX13) = ENTITYX21
       &amp; conj5(ENTITYX13) = ENTITYX23
-      &amp; isA(ENTITYX14,r__cleaning_0088_0012)
-      &amp; r__of_0088_0013(ENTITYX14) = ENTITYX15
-      &amp; isA(ENTITYX15,r__and_0088_0015)
+      &amp; isA(ENTITYX14,r_0088_0012__cleaning)
+      &amp; r_0088_0013__of(ENTITYX14) = ENTITYX15
+      &amp; isA(ENTITYX15,r_0088_0015__and)
       &amp; conj1(ENTITYX15) = ENTITYX16
       &amp; conj2(ENTITYX15) = ENTITYX17
-      &amp; isA(ENTITYX16,r__parts_0088_0014)
-      &amp; isA(ENTITYX17,r__movement_0088_0016)
-      &amp; isA(ENTITYX18,r__oiling_0088_0018)
-      &amp; isA(ENTITYX19,r__adjustment_0088_0020)
-      &amp; r__of_0088_0021(ENTITYX19) = ENTITYX20
-      &amp; isA(ENTITYX20,r__accuracy_0088_0022)
-      &amp; isA(ENTITYX21,r__check_0088_0025)
+      &amp; isA(ENTITYX16,r_0088_0014__parts)
+      &amp; isA(ENTITYX17,r_0088_0016__movement)
+      &amp; isA(ENTITYX18,r_0088_0018__oiling)
+      &amp; isA(ENTITYX19,r_0088_0020__adjustment)
+      &amp; r_0088_0021__of(ENTITYX19) = ENTITYX20
+      &amp; isA(ENTITYX20,r_0088_0022__accuracy)
+      &amp; isA(ENTITYX21,r_0088_0025__check)
       &amp; attrib1(ENTITYX21) = ATTRIBX22
-      &amp; isA(ENTITYX23,r__replacement_0088_0027)
-      &amp; r__of_0088_0028(ENTITYX23) = ENTITYX24
-      &amp; isA(ENTITYX24,r__parts_0088_0030)
+      &amp; isA(ENTITYX23,r_0088_0027__replacement)
+      &amp; r_0088_0028__of(ENTITYX23) = ENTITYX24
+      &amp; isA(ENTITYX24,r_0088_0030__parts)
       &amp; attrib1(ENTITYX24) = ATTRIBX25
-      &amp; isA(QUALITYX7,r__together_0088_0006)
-      &amp; isA(ATTRIBX12,r__periodic_0088_0009)
-      &amp; isA(ATTRIBX22,r__functional_0088_0024)
-      &amp; isA(ATTRIBX25,r__worn_0088_0029)
+      &amp; isA(QUALITYX7,r_0088_0006__together)
+      &amp; isA(ATTRIBX12,r_0088_0009__periodic)
+      &amp; isA(ATTRIBX22,r_0088_0024__functional)
+      &amp; isA(ATTRIBX25,r_0088_0029__worn)
       &amp; isA(CONNX2,cnt_0088_1001)
       &amp; restriction(CONNX2) = EVENTX10
-      &amp; isA(EVENTX10,r__ensure_0088_0002)
+      &amp; isA(EVENTX10,r_0088_0002__ensure)
       &amp; arg1(EVENTX10) = STATEX5
       &amp; scope(CONNX2) = EVENTX30
-      &amp; isA(EVENTX30,r__is_0088_0031)
+      &amp; isA(EVENTX30,r_0088_0031__is)
       &amp; catenative(EVENTX30) = CATENATIVEX27 ) ).
 
 

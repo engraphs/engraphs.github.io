@@ -155,15 +155,15 @@ The school where you learn English has decided to buy some videos in English .
 </svg>
 <br>
 <pre>
-arc(r__learn_0018_0005,r__school_0018_0002,loc1).
-arc(r__learn_0018_0005,r__you_0018_0004,arg0).
-arc(r__learn_0018_0005,r__English_0018_0006,arg1).
-arc(r__has_0018_0007,r__decided_0018_0008,catenative).
-arc(r__decided_0018_0008,r__school_0018_0002,arg0).
-arc(r__decided_0018_0008,r__buy_0018_0010,arg1).
-arc(r__buy_0018_0010,r__school_0018_0002,arg0).
-arc(r__buy_0018_0010,r__videos_0018_0012,arg1).
-arc(r__videos_0018_0012,r__English_0018_0014,r__in_0018_0013).
+arc(r_0018_0005__learn,r_0018_0002__school,loc1).
+arc(r_0018_0005__learn,r_0018_0004__you,arg0).
+arc(r_0018_0005__learn,r_0018_0006__English,arg1).
+arc(r_0018_0007__has,r_0018_0008__decided,catenative).
+arc(r_0018_0008__decided,r_0018_0002__school,arg0).
+arc(r_0018_0008__decided,r_0018_0010__buy,arg1).
+arc(r_0018_0010__buy,r_0018_0002__school,arg0).
+arc(r_0018_0010__buy,r_0018_0012__videos,arg1).
+arc(r_0018_0012__videos,r_0018_0014__English,r_0018_0013__in).
 
 </pre>
 <br>
@@ -171,21 +171,21 @@ arc(r__videos_0018_0012,r__English_0018_0014,r__in_0018_0013).
 fof(id_18_A_fce_0102_2001_03,axiom,
     ? [CATENATIVEX3,STATEX4,EVENTX8,EVENTX7,EVENTX6,EVENTX2,ENTITYX1,ENTITYX5] :
       ( CATENATIVEX3 = EVENTX7
-      &amp; isA(EVENTX7,r__decided_0018_0008)
+      &amp; isA(EVENTX7,r_0018_0008__decided)
       &amp; arg0(EVENTX7) = ENTITYX1
       &amp; arg1(EVENTX7) = STATEX4
       &amp; STATEX4 = EVENTX6
-      &amp; isA(EVENTX6,r__buy_0018_0010)
+      &amp; isA(EVENTX6,r_0018_0010__buy)
       &amp; arg0(EVENTX6) = ENTITYX1
       &amp; arg1(EVENTX6) = ENTITYX5
-      &amp; isA(EVENTX2,r__learn_0018_0005)
+      &amp; isA(EVENTX2,r_0018_0005__learn)
       &amp; loc1(EVENTX2) = ENTITYX1
-      &amp; arg0(EVENTX2) = r__you_0018_0004
-      &amp; arg1(EVENTX2) = r__English_0018_0006
-      &amp; isA(ENTITYX1,r__school_0018_0002)
-      &amp; isA(ENTITYX5,r__videos_0018_0012)
-      &amp; r__in_0018_0013(ENTITYX5) = r__English_0018_0014
-      &amp; isA(EVENTX8,r__has_0018_0007)
+      &amp; arg0(EVENTX2) = r_0018_0004__you
+      &amp; arg1(EVENTX2) = r_0018_0006__English
+      &amp; isA(ENTITYX1,r_0018_0002__school)
+      &amp; isA(ENTITYX5,r_0018_0012__videos)
+      &amp; r_0018_0013__in(ENTITYX5) = r_0018_0014__English
+      &amp; isA(EVENTX8,r_0018_0007__has)
       &amp; catenative(EVENTX8) = CATENATIVEX3 ) ).
 
 

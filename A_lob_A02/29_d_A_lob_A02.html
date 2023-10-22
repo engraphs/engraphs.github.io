@@ -142,7 +142,7 @@ Root of the discontent : the austerity budget , including a compulsory savings s
 <title>0029_0019&#45;&gt;0029_0021</title>
 <path fill="none" stroke="black" d="M505.17,-175.61C530.4,-160.71 568.54,-138.2 594.57,-122.84"/>
 <polygon fill="black" stroke="black" points="596.4,-125.82 603.23,-117.73 592.84,-119.79 596.4,-125.82"/>
-<text text-anchor="middle" x="588.09" y="-144.8" font-family="fixed" font-size="14.00">in_[tmp]</text>
+<text text-anchor="middle" x="585.09" y="-144.8" font-family="fixed" font-size="14.00">in[tmp]</text>
 </g>
 <!-- z_0029_1011 -->
 <g id="node10" class="node">
@@ -161,37 +161,37 @@ Root of the discontent : the austerity budget , including a compulsory savings s
 </svg>
 <br>
 <pre>
-arc(r__Root_0029_0001,r__discontent_0029_0004,r__of_0029_0002).
-arc(r__discontent_0029_0004,r__austerity_0029_0007_r__budget_0029_0008,prn4).
-arc(r__including_0029_0010,r__austerity_0029_0007_r__budget_0029_0008,arg0).
-arc(r__including_0029_0010,r__savings_0029_0013_r__scheme_0029_0014,arg1).
-arc(r__savings_0029_0013_r__scheme_0029_0014,r__compulsory_0029_0012,attrib2).
-arc(r__introduced_0029_0019,r__savings_0029_0013_r__scheme_0029_0014,arg1).
-arc(r__introduced_0029_0019,r__Ghana_0029_0017_r__government_0029_0018,arg0).
-arc(r__introduced_0029_0019,r__July_0029_0021,r__in_0029_0020_tmp).
-arc(z_0029_1011,r__Root_0029_0001,z_0029_1002).
+arc(r_0029_0001__Root,r_0029_0004__discontent,r_0029_0002__of).
+arc(r_0029_0004__discontent,r_0029_0007__austerity_budget,prn4).
+arc(r_0029_0010__including,r_0029_0007__austerity_budget,arg0).
+arc(r_0029_0010__including,r_0029_0013__savings_scheme,arg1).
+arc(r_0029_0013__savings_scheme,r_0029_0012__compulsory,attrib2).
+arc(r_0029_0019__introduced,r_0029_0013__savings_scheme,arg1).
+arc(r_0029_0019__introduced,r_0029_0017__Ghana_government,arg0).
+arc(r_0029_0019__introduced,r_0029_0021__July,r_0029_0020__in_tmp).
+arc(z_0029_1011,r_0029_0001__Root,z_0029_1002).
 
 </pre>
 <br>
 <pre>
 fof(id_29_A_lob_A02,axiom,
     ? [EVENTX12,EVENTX10,EVENTX9,ENTITYX3,ENTITYX4,ENTITYX5,ENTITYX6,ENTITYX8,ATTRIBX7] :
-      ( isA(ENTITYX3,r__Root_0029_0001)
-      &amp; r__of_0029_0002(ENTITYX3) = ENTITYX4
-      &amp; isA(ENTITYX4,r__discontent_0029_0004)
+      ( isA(ENTITYX3,r_0029_0001__Root)
+      &amp; r_0029_0002__of(ENTITYX3) = ENTITYX4
+      &amp; isA(ENTITYX4,r_0029_0004__discontent)
       &amp; prn4(ENTITYX4) = ENTITYX5
-      &amp; isA(EVENTX10,r__including_0029_0010)
+      &amp; isA(EVENTX10,r_0029_0010__including)
       &amp; arg0(EVENTX10) = ENTITYX5
       &amp; arg1(EVENTX10) = ENTITYX6
-      &amp; isA(ENTITYX5,r__austerity_0029_0007_r__budget_0029_0008)
-      &amp; isA(EVENTX9,r__introduced_0029_0019)
+      &amp; isA(ENTITYX5,r_0029_0007__austerity_budget)
+      &amp; isA(EVENTX9,r_0029_0019__introduced)
       &amp; arg1(EVENTX9) = ENTITYX6
       &amp; arg0(EVENTX9) = ENTITYX8
-      &amp; r__in_0029_0020_tmp(EVENTX9) = r__July_0029_0021
-      &amp; isA(ENTITYX6,r__savings_0029_0013_r__scheme_0029_0014)
+      &amp; r_0029_0020__in_tmp(EVENTX9) = r_0029_0021__July
+      &amp; isA(ENTITYX6,r_0029_0013__savings_scheme)
       &amp; attrib2(ENTITYX6) = ATTRIBX7
-      &amp; isA(ENTITYX8,r__Ghana_0029_0017_r__government_0029_0018)
-      &amp; isA(ATTRIBX7,r__compulsory_0029_0012)
+      &amp; isA(ENTITYX8,r_0029_0017__Ghana_government)
+      &amp; isA(ATTRIBX7,r_0029_0012__compulsory)
       &amp; isA(EVENTX12,z_0029_1011)
       &amp; z_0029_1002(EVENTX12) = ENTITYX3 ) ).
 

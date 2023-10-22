@@ -43,8 +43,8 @@ Standardize as follows : &mdash;
 <!-- 0101_0002_mnr -->
 <g id="node2" class="node">
 <title>0101_0002_mnr</title>
-<ellipse fill="none" stroke="black" cx="94.25" cy="-192" rx="50.89" ry="18"/>
-<text text-anchor="middle" x="94.25" y="-188.3" font-family="fixed" font-size="14.00">as_[mnr]</text>
+<ellipse fill="none" stroke="black" cx="94.25" cy="-192" rx="46.29" ry="18"/>
+<text text-anchor="middle" x="94.25" y="-188.3" font-family="fixed" font-size="14.00">as[mnr]</text>
 </g>
 <!-- 0101_0003 -->
 <g id="node3" class="node">
@@ -55,7 +55,7 @@ Standardize as follows : &mdash;
 <!-- 0101_0002_mnr&#45;&gt;0101_0003 -->
 <g id="edge1" class="edge">
 <title>0101_0002_mnr&#45;&gt;0101_0003</title>
-<path fill="none" stroke="black" d="M73.79,-175.19C67.75,-169.67 61.61,-163.08 57.25,-156 52.95,-149.03 49.82,-140.74 47.56,-132.95"/>
+<path fill="none" stroke="black" d="M74.17,-175.54C68.02,-169.95 61.7,-163.23 57.25,-156 52.95,-149.03 49.82,-140.74 47.56,-132.95"/>
 <polygon fill="black" stroke="black" points="50.92,-131.96 45.08,-123.12 44.14,-133.68 50.92,-131.96"/>
 <text text-anchor="middle" x="97.75" y="-144.8" font-family="fixed" font-size="14.00">[restriction]</text>
 </g>
@@ -68,7 +68,7 @@ Standardize as follows : &mdash;
 <!-- 0101_0002_mnr&#45;&gt;z_0101_1008 -->
 <g id="edge2" class="edge">
 <title>0101_0002_mnr&#45;&gt;z_0101_1008</title>
-<path fill="none" stroke="black" d="M116.3,-175.37C123.65,-169.68 131.65,-162.92 138.25,-156 145.29,-148.61 152.09,-139.78 157.84,-131.61"/>
+<path fill="none" stroke="black" d="M115.85,-175.72C123.32,-169.95 131.51,-163.07 138.25,-156 145.29,-148.61 152.09,-139.78 157.84,-131.61"/>
 <polygon fill="black" stroke="black" points="160.9,-133.33 163.64,-123.1 155.12,-129.39 160.9,-133.33"/>
 <text text-anchor="middle" x="176.25" y="-144.8" font-family="fixed" font-size="14.00">[scope]</text>
 </g>
@@ -83,19 +83,19 @@ Standardize as follows : &mdash;
 </svg>
 <br>
 <pre>
-arc(r__as_0101_0002_mnr,r__follows_0101_0003,restriction).
-arc(r__as_0101_0002_mnr,z_0101_1008,scope).
-arc(z_0101_1008,r__Standardize_0101_0001,z_0101_1002).
+arc(r_0101_0002__as_mnr,r_0101_0003__follows,restriction).
+arc(r_0101_0002__as_mnr,z_0101_1008,scope).
+arc(z_0101_1008,r_0101_0001__Standardize,z_0101_1002).
 
 </pre>
 <br>
 <pre>
 fof(id_101_A_lob_J01,axiom,
     ? [CONNX4,EVENTX9,EVENTX7,ENTITYX3] :
-      ( isA(ENTITYX3,r__Standardize_0101_0001)
-      &amp; isA(CONNX4,r__as_0101_0002_mnr)
+      ( isA(ENTITYX3,r_0101_0001__Standardize)
+      &amp; isA(CONNX4,r_0101_0002__as_mnr)
       &amp; restriction(CONNX4) = EVENTX7
-      &amp; isA(EVENTX7,r__follows_0101_0003)
+      &amp; isA(EVENTX7,r_0101_0003__follows)
       &amp; scope(CONNX4) = EVENTX9
       &amp; isA(EVENTX9,z_0101_1008)
       &amp; z_0101_1002(EVENTX9) = ENTITYX3 ) ).

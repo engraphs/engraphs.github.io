@@ -97,22 +97,22 @@ Kenni-ji is the oldest Zen temple in Japan .
 </svg>
 <br>
 <pre>
-arc(r__is_0063_0002,r__Kenni_ji_0063_0001,arg0).
-arc(r__is_0063_0002,r__Zen_0063_0005_r__temple_0063_0006,prd2).
-arc(r__Zen_0063_0005_r__temple_0063_0006,r__oldest_0063_0004,attrib2).
-arc(r__Zen_0063_0005_r__temple_0063_0006,r__Japan_0063_0008,r__in_0063_0007).
+arc(r_0063_0002__is,r_0063_0001__Kenni_ji,arg0).
+arc(r_0063_0002__is,r_0063_0005__Zen_temple,prd2).
+arc(r_0063_0005__Zen_temple,r_0063_0004__oldest,attrib2).
+arc(r_0063_0005__Zen_temple,r_0063_0008__Japan,r_0063_0007__in).
 
 </pre>
 <br>
 <pre>
 fof(id_63_A_KYOTO_2,axiom,
     ? [EVENTX3,ENTITYX1,ATTRIBX2] :
-      ( isA(ENTITYX1,r__Zen_0063_0005_r__temple_0063_0006)
+      ( isA(ENTITYX1,r_0063_0005__Zen_temple)
       &amp; attrib2(ENTITYX1) = ATTRIBX2
-      &amp; r__in_0063_0007(ENTITYX1) = r__Japan_0063_0008
-      &amp; isA(ATTRIBX2,r__oldest_0063_0004)
-      &amp; isA(EVENTX3,r__is_0063_0002)
-      &amp; arg0(EVENTX3) = r__Kenni_ji_0063_0001
+      &amp; r_0063_0007__in(ENTITYX1) = r_0063_0008__Japan
+      &amp; isA(ATTRIBX2,r_0063_0004__oldest)
+      &amp; isA(EVENTX3,r_0063_0002__is)
+      &amp; arg0(EVENTX3) = r_0063_0001__Kenni_ji
       &amp; prd2(EVENTX3) = ENTITYX1 ) ).
 
 

@@ -161,15 +161,15 @@ For that cheerful rustic was entertaining a large party in glorification of the 
 </svg>
 <br>
 <pre>
-arc(r__rustic_0021_0004,r__cheerful_0021_0003,attrib2).
-arc(r__was_0021_0005,r__entertaining_0021_0006,catenative).
-arc(r__entertaining_0021_0006,r__rustic_0021_0004,arg0).
-arc(r__entertaining_0021_0006,r__party_0021_0009,arg1).
-arc(r__party_0021_0009,r__large_0021_0008,attrib2).
-arc(r__party_0021_0009,r__glorification_0021_0011,r__in_0021_0010).
-arc(r__glorification_0021_0011,r__christening_0021_0014,r__of_0021_0012).
-arc(r__christening_0021_0014,r__second_0021_0017_r__girl_0021_0018,r__of_0021_0015).
-arc(r__second_0021_0017_r__girl_0021_0018,r__his_0021_0016,genv).
+arc(r_0021_0004__rustic,r_0021_0003__cheerful,attrib2).
+arc(r_0021_0005__was,r_0021_0006__entertaining,catenative).
+arc(r_0021_0006__entertaining,r_0021_0004__rustic,arg0).
+arc(r_0021_0006__entertaining,r_0021_0009__party,arg1).
+arc(r_0021_0009__party,r_0021_0008__large,attrib2).
+arc(r_0021_0009__party,r_0021_0011__glorification,r_0021_0010__in).
+arc(r_0021_0011__glorification,r_0021_0014__christening,r_0021_0012__of).
+arc(r_0021_0014__christening,r_0021_0017__second_girl,r_0021_0015__of).
+arc(r_0021_0017__second_girl,r_0021_0016__his,genv).
 
 </pre>
 <br>
@@ -177,23 +177,23 @@ arc(r__second_0021_0017_r__girl_0021_0018,r__his_0021_0016,genv).
 fof(id_21_A_HARDY_1883,axiom,
     ? [CATENATIVEX3,EVENTX10,EVENTX9,ENTITYX1,ENTITYX4,ENTITYX6,ENTITYX7,ENTITYX8,ATTRIBX5,ATTRIBX2] :
       ( CATENATIVEX3 = EVENTX9
-      &amp; isA(EVENTX9,r__entertaining_0021_0006)
+      &amp; isA(EVENTX9,r_0021_0006__entertaining)
       &amp; arg0(EVENTX9) = ENTITYX1
       &amp; arg1(EVENTX9) = ENTITYX4
-      &amp; isA(ENTITYX1,r__rustic_0021_0004)
+      &amp; isA(ENTITYX1,r_0021_0004__rustic)
       &amp; attrib2(ENTITYX1) = ATTRIBX2
-      &amp; isA(ENTITYX4,r__party_0021_0009)
+      &amp; isA(ENTITYX4,r_0021_0009__party)
       &amp; attrib2(ENTITYX4) = ATTRIBX5
-      &amp; r__in_0021_0010(ENTITYX4) = ENTITYX6
-      &amp; isA(ENTITYX6,r__glorification_0021_0011)
-      &amp; r__of_0021_0012(ENTITYX6) = ENTITYX7
-      &amp; isA(ENTITYX7,r__christening_0021_0014)
-      &amp; r__of_0021_0015(ENTITYX7) = ENTITYX8
-      &amp; isA(ENTITYX8,r__second_0021_0017_r__girl_0021_0018)
-      &amp; genv(ENTITYX8) = r__his_0021_0016
-      &amp; isA(ATTRIBX2,r__cheerful_0021_0003)
-      &amp; isA(ATTRIBX5,r__large_0021_0008)
-      &amp; isA(EVENTX10,r__was_0021_0005)
+      &amp; r_0021_0010__in(ENTITYX4) = ENTITYX6
+      &amp; isA(ENTITYX6,r_0021_0011__glorification)
+      &amp; r_0021_0012__of(ENTITYX6) = ENTITYX7
+      &amp; isA(ENTITYX7,r_0021_0014__christening)
+      &amp; r_0021_0015__of(ENTITYX7) = ENTITYX8
+      &amp; isA(ENTITYX8,r_0021_0017__second_girl)
+      &amp; genv(ENTITYX8) = r_0021_0016__his
+      &amp; isA(ATTRIBX2,r_0021_0003__cheerful)
+      &amp; isA(ATTRIBX5,r_0021_0008__large)
+      &amp; isA(EVENTX10,r_0021_0005__was)
       &amp; catenative(EVENTX10) = CATENATIVEX3 ) ).
 
 

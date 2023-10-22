@@ -82,7 +82,7 @@ Eliza smoothed her dress over her knees .
 <title>0135_0002&#45;&gt;0135_0007</title>
 <path fill="none" stroke="black" d="M115.11,-436.53C123.06,-430.74 131.87,-423.89 139.35,-417 147.99,-409.04 156.69,-399.53 164.06,-390.95"/>
 <polygon fill="black" stroke="black" points="166.91,-393 170.66,-383.09 161.55,-388.5 166.91,-393"/>
-<text text-anchor="middle" x="187.85" y="-405.8" font-family="fixed" font-size="14.00">over_[dir]</text>
+<text text-anchor="middle" x="184.85" y="-405.8" font-family="fixed" font-size="14.00">over[dir]</text>
 </g>
 <!-- 0135_0004&#45;&gt;0135_0001 -->
 <g id="edge4" class="edge">
@@ -167,16 +167,16 @@ Eliza smoothed her dress over her knees .
 </svg>
 <br>
 <pre>
+arc(r_0135_0002__smoothed,r_0135_0001__Eliza,arg0).
+arc(r_0135_0002__smoothed,r_0135_0004__dress,arg1).
+arc(r_0135_0002__smoothed,r_0135_0007__knees,r_0135_0005__over_dir).
+arc(r_0135_0004__dress,r_0135_0001__Eliza,genv).
+arc(r_0135_0007__knees,r_0135_0001__Eliza,genv).
+arc(r_0136_0005__James,r_0136_0004__poor,attrib1).
+arc(r_0136_0009__said,r_0135_0001__Eliza,arg0).
+arc(r_0136_0009__said,utterance_0135_1009,arg1).
 arc(utterance_0135_1009,z_0135_1015,part1).
-arc(r__smoothed_0135_0002,r__Eliza_0135_0001,arg0).
-arc(r__smoothed_0135_0002,r__dress_0135_0004,arg1).
-arc(r__smoothed_0135_0002,r__knees_0135_0007,r__over_0135_0005_dir).
-arc(r__dress_0135_0004,r__Eliza_0135_0001,genv).
-arc(r__knees_0135_0007,r__Eliza_0135_0001,genv).
-arc(r__James_0136_0005,r__poor_0136_0004,attrib1).
-arc(r__said_0136_0009,utterance_0135_1009,arg1).
-arc(r__said_0136_0009,r__Eliza_0135_0001,arg0).
-arc(z_0135_1015,r__James_0136_0005,z_0135_1013).
+arc(z_0135_1015,r_0136_0005__James,z_0135_1013).
 
 </pre>
 <br>
@@ -187,22 +187,22 @@ fof(id_135_A_JOYCE_1914__136_A_JOYCE_1914,axiom,
       &amp; isA(CONJX17,utterance_0135_1009)
       &amp; part1(CONJX17) = EVENTX16
       &amp; isA(EVENTX16,z_0135_1015)
-      &amp; z_0135_1013(EVENTX16) = r__James_0136_0005
-      &amp; isA(ENTITYX1,r__dress_0135_0004)
+      &amp; z_0135_1013(EVENTX16) = r_0136_0005__James
+      &amp; isA(ENTITYX1,r_0135_0004__dress)
       &amp; genv(ENTITYX1) = ELIZAX2
-      &amp; ELIZAX2 = r__Eliza_0135_0001
-      &amp; isA(ENTITYX3,r__knees_0135_0007)
+      &amp; ELIZAX2 = r_0135_0001__Eliza
+      &amp; isA(ENTITYX3,r_0135_0007__knees)
       &amp; genv(ENTITYX3) = ELIZAX4
-      &amp; ELIZAX4 = r__Eliza_0135_0001
-      &amp; ELIZAX18 = r__Eliza_0135_0001
-      &amp; isA(r__James_0136_0005,r__James_0136_0005)
-      &amp; attrib1(r__James_0136_0005) = ATTRIBX14
-      &amp; isA(ATTRIBX14,r__poor_0136_0004)
-      &amp; isA(EVENTX5,r__smoothed_0135_0002)
-      &amp; arg0(EVENTX5) = r__Eliza_0135_0001
+      &amp; ELIZAX4 = r_0135_0001__Eliza
+      &amp; ELIZAX18 = r_0135_0001__Eliza
+      &amp; isA(r_0136_0005__James,r_0136_0005__James)
+      &amp; attrib1(r_0136_0005__James) = ATTRIBX14
+      &amp; isA(ATTRIBX14,r_0136_0004__poor)
+      &amp; isA(EVENTX5,r_0135_0002__smoothed)
+      &amp; arg0(EVENTX5) = r_0135_0001__Eliza
       &amp; arg1(EVENTX5) = ENTITYX1
-      &amp; r__over_0135_0005_dir(EVENTX5) = ENTITYX3
-      &amp; isA(EVENTX19,r__said_0136_0009)
+      &amp; r_0135_0005__over_dir(EVENTX5) = ENTITYX3
+      &amp; isA(EVENTX19,r_0136_0009__said)
       &amp; arg1(EVENTX19) = STATEX7
       &amp; arg0(EVENTX19) = ELIZAX18 ) ).
 

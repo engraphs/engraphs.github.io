@@ -77,7 +77,7 @@
 <title>0063_0003&#45;&gt;0063_0017</title>
 <path fill="none" stroke="black" d="M544.57,-263.39C567.08,-249.52 601.1,-228.56 626.17,-213.12"/>
 <polygon fill="black" stroke="black" points="628.29,-215.93 634.97,-207.71 624.62,-209.97 628.29,-215.93"/>
-<text text-anchor="middle" x="657.84" y="-231.8" font-family="fixed" font-size="14.00">because_of_[cnt]</text>
+<text text-anchor="middle" x="654.34" y="-231.8" font-family="fixed" font-size="14.00">because_of[cnt]</text>
 </g>
 <!-- 0063_0004 -->
 <g id="node5" class="node">
@@ -181,46 +181,46 @@
 </svg>
 <br>
 <pre>
-arc(r__produce_0063_0003,r__1401_0063_0001_r__computers_0063_0002,arg0).
-arc(r__produce_0063_0003,r__reports_0063_0005,arg1).
-arc(r__produce_0063_0003,r__abilities_0063_0017,r__because_of_0063_0011_cnt).
-arc(r__reports_0063_0005,r__important_0063_0004,attrib1).
-arc(r__reports_0063_0005,r__management_0063_0007,r__for_0063_0006).
-arc(r__reports_0063_0005,r__record_0063_0009_r__time_0063_0010,r__in_0063_0008).
-arc(r__and_0063_0015,r__processing_0063_0014,conj1).
-arc(r__and_0063_0015,r__printing_0063_0016,conj2).
-arc(r__abilities_0063_0017,r__1401_0063_0001_r__computers_0063_0002,genv).
-arc(r__abilities_0063_0017,r__outstanding_0063_0013,attrib2).
-arc(r__abilities_0063_0017,r__and_0063_0015,nlyr3).
+arc(r_0063_0003__produce,r_0063_0001__1401_computers,arg0).
+arc(r_0063_0003__produce,r_0063_0005__reports,arg1).
+arc(r_0063_0003__produce,r_0063_0017__abilities,r_0063_0011__because_of_cnt).
+arc(r_0063_0005__reports,r_0063_0004__important,attrib1).
+arc(r_0063_0005__reports,r_0063_0007__management,r_0063_0006__for).
+arc(r_0063_0005__reports,r_0063_0009__record_time,r_0063_0008__in).
+arc(r_0063_0015__and,r_0063_0014__processing,conj1).
+arc(r_0063_0015__and,r_0063_0016__printing,conj2).
+arc(r_0063_0017__abilities,r_0063_0001__1401_computers,genv).
+arc(r_0063_0017__abilities,r_0063_0013__outstanding,attrib2).
+arc(r_0063_0017__abilities,r_0063_0015__and,nlyr3).
 
 </pre>
 <br>
 <pre>
 fof(id_63_A_IBM_1401,axiom,
     ? [COMPUTERS1401X7,EVENTX12,COMPUTERS1401X1,ENTITYX2,ENTITYX6,ENTITYX9,ENTITYX10,ENTITYX11,ENTITYX4,ENTITYX5,ATTRIBX8,ATTRIBX3] :
-      ( isA(COMPUTERS1401X1,r__1401_0063_0001_r__computers_0063_0002)
-      &amp; isA(ENTITYX2,r__reports_0063_0005)
+      ( isA(COMPUTERS1401X1,r_0063_0001__1401_computers)
+      &amp; isA(ENTITYX2,r_0063_0005__reports)
       &amp; attrib1(ENTITYX2) = ATTRIBX3
-      &amp; r__for_0063_0006(ENTITYX2) = ENTITYX4
-      &amp; r__in_0063_0008(ENTITYX2) = ENTITYX5
-      &amp; isA(ENTITYX4,r__management_0063_0007)
-      &amp; isA(ENTITYX5,r__record_0063_0009_r__time_0063_0010)
-      &amp; isA(ENTITYX6,r__abilities_0063_0017)
+      &amp; r_0063_0006__for(ENTITYX2) = ENTITYX4
+      &amp; r_0063_0008__in(ENTITYX2) = ENTITYX5
+      &amp; isA(ENTITYX4,r_0063_0007__management)
+      &amp; isA(ENTITYX5,r_0063_0009__record_time)
+      &amp; isA(ENTITYX6,r_0063_0017__abilities)
       &amp; genv(ENTITYX6) = COMPUTERS1401X7
       &amp; attrib2(ENTITYX6) = ATTRIBX8
       &amp; nlyr3(ENTITYX6) = ENTITYX9
       &amp; COMPUTERS1401X7 = COMPUTERS1401X1
-      &amp; isA(ENTITYX9,r__and_0063_0015)
+      &amp; isA(ENTITYX9,r_0063_0015__and)
       &amp; conj1(ENTITYX9) = ENTITYX10
       &amp; conj2(ENTITYX9) = ENTITYX11
-      &amp; isA(ENTITYX10,r__processing_0063_0014)
-      &amp; isA(ENTITYX11,r__printing_0063_0016)
-      &amp; isA(ATTRIBX3,r__important_0063_0004)
-      &amp; isA(ATTRIBX8,r__outstanding_0063_0013)
-      &amp; isA(EVENTX12,r__produce_0063_0003)
+      &amp; isA(ENTITYX10,r_0063_0014__processing)
+      &amp; isA(ENTITYX11,r_0063_0016__printing)
+      &amp; isA(ATTRIBX3,r_0063_0004__important)
+      &amp; isA(ATTRIBX8,r_0063_0013__outstanding)
+      &amp; isA(EVENTX12,r_0063_0003__produce)
       &amp; arg0(EVENTX12) = COMPUTERS1401X1
       &amp; arg1(EVENTX12) = ENTITYX2
-      &amp; r__because_of_0063_0011_cnt(EVENTX12) = ENTITYX6 ) ).
+      &amp; r_0063_0011__because_of_cnt(EVENTX12) = ENTITYX6 ) ).
 
 
 </pre>

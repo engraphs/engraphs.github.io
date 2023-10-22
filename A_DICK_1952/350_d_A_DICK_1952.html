@@ -174,41 +174,41 @@ Wood crates lined the walls , huge boxes and crates , packages and containers .
 </svg>
 <br>
 <pre>
-arc(r__Wood_0451_0001_r__crates_0451_0002,z_0451_1010,prn3).
-arc(r__lined_0451_0003,r__Wood_0451_0001_r__crates_0451_0002,arg0).
-arc(r__lined_0451_0003,r__walls_0451_0005,arg1).
-arc(r__boxes_0451_0008,r__huge_0451_0007,attrib1).
-arc(r__and_0451_0009,r__boxes_0451_0008,conj1).
-arc(r__and_0451_0009,r__crates_0451_0010,conj2).
-arc(r__and_0451_0013,r__packages_0451_0012,conj1).
-arc(r__and_0451_0013,r__containers_0451_0014,conj2).
-arc(z_0451_1010,r__and_0451_0009,conj1).
-arc(z_0451_1010,r__and_0451_0013,conj2).
+arc(r_0451_0001__Wood_crates,z_0451_1010,prn3).
+arc(r_0451_0003__lined,r_0451_0001__Wood_crates,arg0).
+arc(r_0451_0003__lined,r_0451_0005__walls,arg1).
+arc(r_0451_0008__boxes,r_0451_0007__huge,attrib1).
+arc(r_0451_0009__and,r_0451_0008__boxes,conj1).
+arc(r_0451_0009__and,r_0451_0010__crates,conj2).
+arc(r_0451_0013__and,r_0451_0012__packages,conj1).
+arc(r_0451_0013__and,r_0451_0014__containers,conj2).
+arc(z_0451_1010,r_0451_0009__and,conj1).
+arc(z_0451_1010,r_0451_0013__and,conj2).
 
 </pre>
 <br>
 <pre>
 fof(id_451_A_DICK_1952,axiom,
     ? [EVENTX12,ENTITYX1,ENTITYX11,ENTITYX2,ENTITYX3,ENTITYX7,ENTITYX8,ENTITYX9,ENTITYX4,ENTITYX6,ATTRIBX5] :
-      ( isA(ENTITYX1,r__Wood_0451_0001_r__crates_0451_0002)
+      ( isA(ENTITYX1,r_0451_0001__Wood_crates)
       &amp; prn3(ENTITYX1) = ENTITYX2
       &amp; isA(ENTITYX2,z_0451_1010)
       &amp; conj1(ENTITYX2) = ENTITYX3
       &amp; conj2(ENTITYX2) = ENTITYX7
-      &amp; isA(ENTITYX3,r__and_0451_0009)
+      &amp; isA(ENTITYX3,r_0451_0009__and)
       &amp; conj1(ENTITYX3) = ENTITYX4
       &amp; conj2(ENTITYX3) = ENTITYX6
-      &amp; isA(ENTITYX4,r__boxes_0451_0008)
+      &amp; isA(ENTITYX4,r_0451_0008__boxes)
       &amp; attrib1(ENTITYX4) = ATTRIBX5
-      &amp; isA(ENTITYX6,r__crates_0451_0010)
-      &amp; isA(ENTITYX7,r__and_0451_0013)
+      &amp; isA(ENTITYX6,r_0451_0010__crates)
+      &amp; isA(ENTITYX7,r_0451_0013__and)
       &amp; conj1(ENTITYX7) = ENTITYX8
       &amp; conj2(ENTITYX7) = ENTITYX9
-      &amp; isA(ENTITYX8,r__packages_0451_0012)
-      &amp; isA(ENTITYX9,r__containers_0451_0014)
-      &amp; isA(ENTITYX11,r__walls_0451_0005)
-      &amp; isA(ATTRIBX5,r__huge_0451_0007)
-      &amp; isA(EVENTX12,r__lined_0451_0003)
+      &amp; isA(ENTITYX8,r_0451_0012__packages)
+      &amp; isA(ENTITYX9,r_0451_0014__containers)
+      &amp; isA(ENTITYX11,r_0451_0005__walls)
+      &amp; isA(ATTRIBX5,r_0451_0007__huge)
+      &amp; isA(EVENTX12,r_0451_0003__lined)
       &amp; arg0(EVENTX12) = ENTITYX1
       &amp; arg1(EVENTX12) = ENTITYX11 ) ).
 

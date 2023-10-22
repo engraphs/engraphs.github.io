@@ -152,7 +152,7 @@ fatality rates 30 % .
 <title>0030_0013&#45;&gt;0030_0016</title>
 <path fill="none" stroke="black" d="M408.2,-173.8C408.33,-162.16 408.52,-146.55 408.67,-133.24"/>
 <polygon fill="black" stroke="black" points="412.18,-133.22 408.79,-123.18 405.18,-133.13 412.18,-133.22"/>
-<text text-anchor="middle" x="441" y="-144.8" font-family="fixed" font-size="14.00">with_[clr]</text>
+<text text-anchor="middle" x="438" y="-144.8" font-family="fixed" font-size="14.00">with[clr]</text>
 </g>
 <!-- 0030_0015 -->
 <g id="node10" class="node">
@@ -236,7 +236,7 @@ fatality rates 30 % .
 <title>0031_0004&#45;&gt;0031_0010</title>
 <path fill="none" stroke="black" d="M579.57,-176.96C609.63,-161.67 657.58,-137.26 688.67,-121.43"/>
 <polygon fill="black" stroke="black" points="690.42,-124.47 697.74,-116.82 687.24,-118.23 690.42,-124.47"/>
-<text text-anchor="middle" x="671" y="-144.8" font-family="fixed" font-size="14.00">to_[dir]</text>
+<text text-anchor="middle" x="667.5" y="-144.8" font-family="fixed" font-size="14.00">to[dir]</text>
 </g>
 <!-- 0031_0006 -->
 <g id="node17" class="node">
@@ -326,70 +326,70 @@ fatality rates 30 % .
 </svg>
 <br>
 <pre>
-arc(r__Encephalitis_0030_0002,r__Japanese_0030_0001,attrib1).
-arc(r__Encephalitis_0030_0002,r__disease_0030_0012,prn4).
-arc(r__mosquito_0030_0004,r__Culex_0030_0008_r__tritaeniorhynchus_0030_0009,prn2).
-arc(r__borne_0030_0006,r__mosquito_0030_0004,arg0_lgs).
-arc(r__borne_0030_0006,r__disease_0030_0012,arg1).
-arc(r__disease_0030_0012,r__viral_0030_0011,attrib4).
-arc(r__associated_0030_0013,r__disease_0030_0012,arg1).
-arc(r__associated_0030_0013,r__areas_0030_0016,r__with_0030_0014_clr).
-arc(r__areas_0030_0016,r__rural_0030_0015,attrib1).
-arc(r__areas_0030_0016,r__Asia_0030_0018,r__in_0030_0017).
-arc(r__encephalitis_0031_0002,r__acute_0031_0001,attrib1).
-arc(r__can_0031_0003,r__progress_0031_0004,scope).
-arc(r__progress_0031_0004,r__encephalitis_0031_0002,arg0).
-arc(r__progress_0031_0004,r__and_0031_0010,r__to_0031_0005_dir).
-arc(r__and_0031_0010,r__paralysis_0031_0006,conj1).
-arc(r__and_0031_0010,r__coma_0031_0008,conj2).
-arc(r__and_0031_0010,r__death_0031_0011,conj3).
-arc(z_0030_1014,r__Encephalitis_0030_0002,z_0030_1004).
-arc(z_0030_1026,r__fatality_0032_0001_r__rates_0032_0002,arg0).
-arc(z_0030_1026,r__30_0032_0003_r____0032_0004,prd2).
+arc(r_0030_0002__Encephalitis,r_0030_0001__Japanese,attrib1).
+arc(r_0030_0002__Encephalitis,r_0030_0012__disease,prn4).
+arc(r_0030_0004__mosquito,r_0030_0008__Culex_tritaeniorhynchus,prn2).
+arc(r_0030_0006__borne,r_0030_0004__mosquito,arg0_lgs).
+arc(r_0030_0006__borne,r_0030_0012__disease,arg1).
+arc(r_0030_0012__disease,r_0030_0011__viral,attrib4).
+arc(r_0030_0013__associated,r_0030_0012__disease,arg1).
+arc(r_0030_0013__associated,r_0030_0016__areas,r_0030_0014__with_clr).
+arc(r_0030_0016__areas,r_0030_0015__rural,attrib1).
+arc(r_0030_0016__areas,r_0030_0018__Asia,r_0030_0017__in).
+arc(r_0031_0002__encephalitis,r_0031_0001__acute,attrib1).
+arc(r_0031_0003__can,r_0031_0004__progress,scope).
+arc(r_0031_0004__progress,r_0031_0002__encephalitis,arg0).
+arc(r_0031_0004__progress,r_0031_0010__and,r_0031_0005__to_dir).
+arc(r_0031_0010__and,r_0031_0006__paralysis,conj1).
+arc(r_0031_0010__and,r_0031_0008__coma,conj2).
+arc(r_0031_0010__and,r_0031_0011__death,conj3).
+arc(z_0030_1014,r_0030_0002__Encephalitis,z_0030_1004).
+arc(z_0030_1026,r_0032_0001__fatality_rates,arg0).
+arc(z_0030_1026,r_0032_0003__30__,prd2).
 
 </pre>
 <br>
 <pre>
 fof(id_30_A_FACTBOOK_1_2010__31_A_FACTBOOK_1_2010__32_A_FACTBOOK_1_2010,axiom,
     ? [EVENTX27,OPERATORX22,EVENTX23,EVENTX15,EVENTX13,EVENTX8,ENTITYX24,ENTITYX25,ENTITYX16,ENTITYX18,ENTITYX19,ENTITYX20,ENTITYX21,ENTITYX6,ENTITYX11,ENTITYX7,ATTRIBX17,ATTRIBX5,ATTRIBX9,ATTRIBX12] :
-      ( isA(EVENTX8,r__borne_0030_0006)
+      ( isA(EVENTX8,r_0030_0006__borne)
       &amp; arg0_lgs(EVENTX8) = ENTITYX7
       &amp; arg1(EVENTX8) = ENTITYX6
-      &amp; isA(EVENTX13,r__associated_0030_0013)
+      &amp; isA(EVENTX13,r_0030_0013__associated)
       &amp; arg1(EVENTX13) = ENTITYX6
-      &amp; r__with_0030_0014_clr(EVENTX13) = ENTITYX11
-      &amp; isA(ENTITYX6,r__disease_0030_0012)
+      &amp; r_0030_0014__with_clr(EVENTX13) = ENTITYX11
+      &amp; isA(ENTITYX6,r_0030_0012__disease)
       &amp; attrib4(ENTITYX6) = ATTRIBX9
-      &amp; isA(ENTITYX7,r__mosquito_0030_0004)
-      &amp; prn2(ENTITYX7) = r__Culex_0030_0008_r__tritaeniorhynchus_0030_0009
-      &amp; isA(ENTITYX11,r__areas_0030_0016)
+      &amp; isA(ENTITYX7,r_0030_0004__mosquito)
+      &amp; prn2(ENTITYX7) = r_0030_0008__Culex_tritaeniorhynchus
+      &amp; isA(ENTITYX11,r_0030_0016__areas)
       &amp; attrib1(ENTITYX11) = ATTRIBX12
-      &amp; r__in_0030_0017(ENTITYX11) = r__Asia_0030_0018
-      &amp; isA(ENTITYX16,r__encephalitis_0031_0002)
+      &amp; r_0030_0017__in(ENTITYX11) = r_0030_0018__Asia
+      &amp; isA(ENTITYX16,r_0031_0002__encephalitis)
       &amp; attrib1(ENTITYX16) = ATTRIBX17
-      &amp; isA(ENTITYX18,r__and_0031_0010)
+      &amp; isA(ENTITYX18,r_0031_0010__and)
       &amp; conj1(ENTITYX18) = ENTITYX19
       &amp; conj2(ENTITYX18) = ENTITYX20
       &amp; conj3(ENTITYX18) = ENTITYX21
-      &amp; isA(ENTITYX19,r__paralysis_0031_0006)
-      &amp; isA(ENTITYX20,r__coma_0031_0008)
-      &amp; isA(ENTITYX21,r__death_0031_0011)
-      &amp; isA(ENTITYX24,r__fatality_0032_0001_r__rates_0032_0002)
-      &amp; isA(ENTITYX25,r__30_0032_0003_r____0032_0004)
-      &amp; isA(ATTRIBX5,r__Japanese_0030_0001)
-      &amp; isA(ATTRIBX9,r__viral_0030_0011)
-      &amp; isA(ATTRIBX12,r__rural_0030_0015)
-      &amp; isA(ATTRIBX17,r__acute_0031_0001)
-      &amp; isA(r__Encephalitis_0030_0002,r__Encephalitis_0030_0002)
-      &amp; attrib1(r__Encephalitis_0030_0002) = ATTRIBX5
-      &amp; prn4(r__Encephalitis_0030_0002) = ENTITYX6
+      &amp; isA(ENTITYX19,r_0031_0006__paralysis)
+      &amp; isA(ENTITYX20,r_0031_0008__coma)
+      &amp; isA(ENTITYX21,r_0031_0011__death)
+      &amp; isA(ENTITYX24,r_0032_0001__fatality_rates)
+      &amp; isA(ENTITYX25,r_0032_0003__30__)
+      &amp; isA(ATTRIBX5,r_0030_0001__Japanese)
+      &amp; isA(ATTRIBX9,r_0030_0011__viral)
+      &amp; isA(ATTRIBX12,r_0030_0015__rural)
+      &amp; isA(ATTRIBX17,r_0031_0001__acute)
+      &amp; isA(r_0030_0002__Encephalitis,r_0030_0002__Encephalitis)
+      &amp; attrib1(r_0030_0002__Encephalitis) = ATTRIBX5
+      &amp; prn4(r_0030_0002__Encephalitis) = ENTITYX6
       &amp; isA(EVENTX15,z_0030_1014)
-      &amp; z_0030_1004(EVENTX15) = r__Encephalitis_0030_0002
-      &amp; isA(OPERATORX22,r__can_0031_0003)
+      &amp; z_0030_1004(EVENTX15) = r_0030_0002__Encephalitis
+      &amp; isA(OPERATORX22,r_0031_0003__can)
       &amp; scope(OPERATORX22) = EVENTX23
-      &amp; isA(EVENTX23,r__progress_0031_0004)
+      &amp; isA(EVENTX23,r_0031_0004__progress)
       &amp; arg0(EVENTX23) = ENTITYX16
-      &amp; r__to_0031_0005_dir(EVENTX23) = ENTITYX18
+      &amp; r_0031_0005__to_dir(EVENTX23) = ENTITYX18
       &amp; isA(EVENTX27,z_0030_1026)
       &amp; arg0(EVENTX27) = ENTITYX24
       &amp; prd2(EVENTX27) = ENTITYX25 ) ).

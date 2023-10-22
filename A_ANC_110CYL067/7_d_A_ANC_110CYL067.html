@@ -37,8 +37,8 @@ Because people want to work .
 <!-- 0018_0001_cnt -->
 <g id="node1" class="node">
 <title>0018_0001_cnt</title>
-<ellipse fill="none" stroke="black" cx="96.95" cy="-279" rx="74.19" ry="18"/>
-<text text-anchor="middle" x="96.95" y="-275.3" font-family="fixed" font-size="14.00">Because_[cnt]</text>
+<ellipse fill="none" stroke="black" cx="96.95" cy="-279" rx="69.59" ry="18"/>
+<text text-anchor="middle" x="96.95" y="-275.3" font-family="fixed" font-size="14.00">Because[cnt]</text>
 </g>
 <!-- 0018_0003 -->
 <g id="node2" class="node">
@@ -49,7 +49,7 @@ Because people want to work .
 <!-- 0018_0001_cnt&#45;&gt;0018_0003 -->
 <g id="edge1" class="edge">
 <title>0018_0001_cnt&#45;&gt;0018_0003</title>
-<path fill="none" stroke="black" d="M62.13,-263.06C54.13,-257.91 46.6,-251.29 41.95,-243 38.14,-236.24 36.88,-228.1 36.83,-220.38"/>
+<path fill="none" stroke="black" d="M62.42,-263.24C54.31,-258.06 46.66,-251.39 41.95,-243 38.14,-236.24 36.88,-228.1 36.83,-220.38"/>
 <polygon fill="black" stroke="black" points="40.34,-220.45 37.42,-210.26 33.35,-220.05 40.34,-220.45"/>
 <text text-anchor="middle" x="82.45" y="-231.8" font-family="fixed" font-size="14.00">[restriction]</text>
 </g>
@@ -103,11 +103,11 @@ Because people want to work .
 </svg>
 <br>
 <pre>
-arc(r__Because_0018_0001_cnt,r__want_0018_0003,restriction).
-arc(r__Because_0018_0001_cnt,z_0018_1006,scope).
-arc(r__want_0018_0003,r__people_0018_0002,arg0).
-arc(r__want_0018_0003,r__work_0018_0005,arg1).
-arc(r__work_0018_0005,r__people_0018_0002,arg0).
+arc(r_0018_0001__Because_cnt,r_0018_0003__want,restriction).
+arc(r_0018_0001__Because_cnt,z_0018_1006,scope).
+arc(r_0018_0003__want,r_0018_0002__people,arg0).
+arc(r_0018_0003__want,r_0018_0005__work,arg1).
+arc(r_0018_0005__work,r_0018_0002__people,arg0).
 
 </pre>
 <br>
@@ -115,12 +115,12 @@ arc(r__work_0018_0005,r__people_0018_0002,arg0).
 fof(id_18_A_ANC_110CYL067,axiom,
     ? [STATEX3,CONNX1,EVENTX7,EVENTX5,EVENTX4,ENTITYX2] :
       ( STATEX3 = EVENTX4
-      &amp; isA(EVENTX4,r__work_0018_0005)
+      &amp; isA(EVENTX4,r_0018_0005__work)
       &amp; arg0(EVENTX4) = ENTITYX2
-      &amp; isA(ENTITYX2,r__people_0018_0002)
-      &amp; isA(CONNX1,r__Because_0018_0001_cnt)
+      &amp; isA(ENTITYX2,r_0018_0002__people)
+      &amp; isA(CONNX1,r_0018_0001__Because_cnt)
       &amp; restriction(CONNX1) = EVENTX5
-      &amp; isA(EVENTX5,r__want_0018_0003)
+      &amp; isA(EVENTX5,r_0018_0003__want)
       &amp; arg0(EVENTX5) = ENTITYX2
       &amp; arg1(EVENTX5) = STATEX3
       &amp; scope(CONNX1) = EVENTX7

@@ -293,27 +293,27 @@ Your teacher has now asked you to write a composition , giving your opinions on 
 </svg>
 <br>
 <pre>
-arc(cnt_0033_1007,r__write_0033_0008,scope).
-arc(cnt_0033_1007,r__giving_0033_0012,restriction).
-arc(r__teacher_0033_0002,r__Your_0033_0001,genv).
-arc(r__has_0033_0003,r__asked_0033_0005,catenative).
-arc(r__asked_0033_0005,cnt_0033_1007,arg1).
-arc(r__asked_0033_0005,r__Your_0033_0001,arg2).
-arc(r__asked_0033_0005,r__teacher_0033_0002,arg0).
-arc(r__asked_0033_0005,r__now_0033_0004,tmp1).
-arc(r__write_0033_0008,r__Your_0033_0001,arg0).
-arc(r__write_0033_0008,r__composition_0033_0010,arg1).
-arc(r__giving_0033_0012,r__Your_0033_0001,arg0).
-arc(r__giving_0033_0012,r__opinions_0033_0014,arg1).
-arc(r__opinions_0033_0014,r__Your_0033_0001,genv).
-arc(r__opinions_0033_0014,r__statement_0033_0018,r__on_0033_0015).
-arc(r__statement_0033_0018,r__following_0033_0017,attrib2).
-arc(r__statement_0033_0018,r__are_0033_0021,prn5).
-arc(r__are_0033_0021,r__Telephones_0033_0020,arg0).
-arc(r__are_0033_0021,r__part_0033_0024,prd2).
-arc(r__part_0033_0024,r__essential_0033_0023,attrib2).
-arc(r__part_0033_0024,r__life_0033_0027,r__of_0033_0025).
-arc(r__life_0033_0027,r__modern_0033_0026,attrib1).
+arc(cnt_0033_1007,r_0033_0008__write,scope).
+arc(cnt_0033_1007,r_0033_0012__giving,restriction).
+arc(r_0033_0002__teacher,r_0033_0001__Your,genv).
+arc(r_0033_0003__has,r_0033_0005__asked,catenative).
+arc(r_0033_0005__asked,cnt_0033_1007,arg1).
+arc(r_0033_0005__asked,r_0033_0001__Your,arg2).
+arc(r_0033_0005__asked,r_0033_0002__teacher,arg0).
+arc(r_0033_0005__asked,r_0033_0004__now,tmp1).
+arc(r_0033_0008__write,r_0033_0001__Your,arg0).
+arc(r_0033_0008__write,r_0033_0010__composition,arg1).
+arc(r_0033_0012__giving,r_0033_0001__Your,arg0).
+arc(r_0033_0012__giving,r_0033_0014__opinions,arg1).
+arc(r_0033_0014__opinions,r_0033_0001__Your,genv).
+arc(r_0033_0014__opinions,r_0033_0018__statement,r_0033_0015__on).
+arc(r_0033_0018__statement,r_0033_0017__following,attrib2).
+arc(r_0033_0018__statement,r_0033_0021__are,prn5).
+arc(r_0033_0021__are,r_0033_0020__Telephones,arg0).
+arc(r_0033_0021__are,r_0033_0024__part,prd2).
+arc(r_0033_0024__part,r_0033_0023__essential,attrib2).
+arc(r_0033_0024__part,r_0033_0027__life,r_0033_0025__of).
+arc(r_0033_0027__life,r_0033_0026__modern,attrib1).
 
 </pre>
 <br>
@@ -321,7 +321,7 @@ arc(r__life_0033_0027,r__modern_0033_0026,attrib1).
 fof(id_33_A_fce_0101_2001_06,axiom,
     ? [CATENATIVEX2,STATEX5,EVENTX13,HEARERX4,HEARERX10,EVENTX23,EVENTX22,CONNX8,EVENTX20,EVENTX19,EVENTX21,ENTITYX1,ENTITYX6,ENTITYX9,ENTITYX11,ENTITYX14,ENTITYX15,ENTITYX17,QUALITYX3,ATTRIBX12,ATTRIBX16,ATTRIBX18] :
       ( CATENATIVEX2 = EVENTX22
-      &amp; isA(EVENTX22,r__asked_0033_0005)
+      &amp; isA(EVENTX22,r_0033_0005__asked)
       &amp; arg0(EVENTX22) = ENTITYX1
       &amp; tmp1(EVENTX22) = QUALITYX3
       &amp; arg2(EVENTX22) = HEARERX4
@@ -329,40 +329,40 @@ fof(id_33_A_fce_0101_2001_06,axiom,
       &amp; STATEX5 = CONNX8
       &amp; isA(CONNX8,cnt_0033_1007)
       &amp; scope(CONNX8) = EVENTX21
-      &amp; isA(EVENTX21,r__write_0033_0008)
+      &amp; isA(EVENTX21,r_0033_0008__write)
       &amp; arg0(EVENTX21) = HEARERX4
       &amp; arg1(EVENTX21) = ENTITYX6
       &amp; restriction(CONNX8) = EVENTX20
-      &amp; isA(EVENTX20,r__giving_0033_0012)
+      &amp; isA(EVENTX20,r_0033_0012__giving)
       &amp; arg0(EVENTX20) = HEARERX4
       &amp; arg1(EVENTX20) = ENTITYX9
       &amp; EVENTX13 = EVENTX19
-      &amp; isA(EVENTX19,r__are_0033_0021)
+      &amp; isA(EVENTX19,r_0033_0021__are)
       &amp; arg0(EVENTX19) = ENTITYX14
       &amp; prd2(EVENTX19) = ENTITYX15
-      &amp; isA(ENTITYX1,r__teacher_0033_0002)
-      &amp; genv(ENTITYX1) = r__Your_0033_0001
-      &amp; HEARERX4 = r__Your_0033_0001
-      &amp; isA(ENTITYX6,r__composition_0033_0010)
-      &amp; isA(ENTITYX9,r__opinions_0033_0014)
+      &amp; isA(ENTITYX1,r_0033_0002__teacher)
+      &amp; genv(ENTITYX1) = r_0033_0001__Your
+      &amp; HEARERX4 = r_0033_0001__Your
+      &amp; isA(ENTITYX6,r_0033_0010__composition)
+      &amp; isA(ENTITYX9,r_0033_0014__opinions)
       &amp; genv(ENTITYX9) = HEARERX10
-      &amp; r__on_0033_0015(ENTITYX9) = ENTITYX11
+      &amp; r_0033_0015__on(ENTITYX9) = ENTITYX11
       &amp; ( HEARERX10 = HEARERX4
-        | HEARERX10 = r__Your_0033_0001 )
-      &amp; isA(ENTITYX11,r__statement_0033_0018)
+        | HEARERX10 = r_0033_0001__Your )
+      &amp; isA(ENTITYX11,r_0033_0018__statement)
       &amp; attrib2(ENTITYX11) = ATTRIBX12
       &amp; prn5(ENTITYX11) = EVENTX13
-      &amp; isA(ENTITYX14,r__Telephones_0033_0020)
-      &amp; isA(ENTITYX15,r__part_0033_0024)
+      &amp; isA(ENTITYX14,r_0033_0020__Telephones)
+      &amp; isA(ENTITYX15,r_0033_0024__part)
       &amp; attrib2(ENTITYX15) = ATTRIBX16
-      &amp; r__of_0033_0025(ENTITYX15) = ENTITYX17
-      &amp; isA(ENTITYX17,r__life_0033_0027)
+      &amp; r_0033_0025__of(ENTITYX15) = ENTITYX17
+      &amp; isA(ENTITYX17,r_0033_0027__life)
       &amp; attrib1(ENTITYX17) = ATTRIBX18
-      &amp; isA(QUALITYX3,r__now_0033_0004)
-      &amp; isA(ATTRIBX12,r__following_0033_0017)
-      &amp; isA(ATTRIBX16,r__essential_0033_0023)
-      &amp; isA(ATTRIBX18,r__modern_0033_0026)
-      &amp; isA(EVENTX23,r__has_0033_0003)
+      &amp; isA(QUALITYX3,r_0033_0004__now)
+      &amp; isA(ATTRIBX12,r_0033_0017__following)
+      &amp; isA(ATTRIBX16,r_0033_0023__essential)
+      &amp; isA(ATTRIBX18,r_0033_0026__modern)
+      &amp; isA(EVENTX23,r_0033_0003__has)
       &amp; catenative(EVENTX23) = CATENATIVEX2 ) ).
 
 

@@ -37,8 +37,8 @@
 <!-- 0237_0002_cnt -->
 <g id="node1" class="node">
 <title>0237_0002_cnt</title>
-<ellipse fill="none" stroke="black" cx="150.35" cy="-366" rx="47.39" ry="18"/>
-<text text-anchor="middle" x="150.35" y="-362.3" font-family="fixed" font-size="14.00">As_[cnt]</text>
+<ellipse fill="none" stroke="black" cx="150.35" cy="-366" rx="42.79" ry="18"/>
+<text text-anchor="middle" x="150.35" y="-362.3" font-family="fixed" font-size="14.00">As[cnt]</text>
 </g>
 <!-- 0237_0004 -->
 <g id="node2" class="node">
@@ -49,7 +49,7 @@
 <!-- 0237_0002_cnt&#45;&gt;0237_0004 -->
 <g id="edge1" class="edge">
 <title>0237_0002_cnt&#45;&gt;0237_0004</title>
-<path fill="none" stroke="black" d="M158.21,-347.93C160.82,-342.24 163.72,-335.85 166.35,-330 169.84,-322.21 173.6,-313.72 177,-305.98"/>
+<path fill="none" stroke="black" d="M158.05,-348.29C160.69,-342.5 163.67,-335.97 166.35,-330 169.84,-322.21 173.6,-313.72 177,-305.98"/>
 <polygon fill="black" stroke="black" points="180.26,-307.26 181.07,-296.69 173.85,-304.45 180.26,-307.26"/>
 <text text-anchor="middle" x="213.85" y="-318.8" font-family="fixed" font-size="14.00">[restriction]</text>
 </g>
@@ -62,7 +62,7 @@
 <!-- 0237_0002_cnt&#45;&gt;0237_0009 -->
 <g id="edge2" class="edge">
 <title>0237_0002_cnt&#45;&gt;0237_0009</title>
-<path fill="none" stroke="black" d="M129.26,-349.72C123.33,-344.23 117.61,-337.52 114.35,-330 111.34,-323.07 110.26,-315.08 110.14,-307.54"/>
+<path fill="none" stroke="black" d="M129.64,-350.07C123.58,-344.52 117.68,-337.68 114.35,-330 111.34,-323.07 110.26,-315.08 110.14,-307.54"/>
 <polygon fill="black" stroke="black" points="113.65,-307.48 110.53,-297.35 106.65,-307.22 113.65,-307.48"/>
 <text text-anchor="middle" x="140.35" y="-318.8" font-family="fixed" font-size="14.00">[scope]</text>
 </g>
@@ -260,24 +260,24 @@
 </svg>
 <br>
 <pre>
-arc(quantificational_r__no_0237_0005,r__longer_0237_0006,scope).
-arc(quantificational_r__no_0237_0005,z_0237_1009,restriction).
-arc(quantificational_r__no_0237_0010,r__longer_0237_0011,scope).
-arc(quantificational_r__no_0237_0010,z_0237_1016,restriction).
-arc(utterance_0237_1003,r__As_0237_0002_cnt,part1).
-arc(r__As_0237_0002_cnt,r__is_0237_0004,restriction).
-arc(r__As_0237_0002_cnt,r__is_0237_0009,scope).
-arc(r__is_0237_0004,r__he_0237_0003,arg0).
-arc(r__is_0237_0004,r__beautiful_0237_0007,prd2).
-arc(r__longer_0237_0006,z_0237_1009,modifier1).
-arc(r__beautiful_0237_0007,r__longer_0237_0006,quality1).
-arc(r__is_0237_0009,r__he_0237_0003,arg0).
-arc(r__is_0237_0009,r__useful_0237_0012,prd2).
-arc(r__longer_0237_0011,z_0237_1016,modifier1).
-arc(r__useful_0237_0012,r__longer_0237_0011,quality1).
-arc(r__said_0237_0015,utterance_0237_1003,arg1).
-arc(r__said_0237_0015,r__Art_0237_0017_r__Professor_0237_0018,arg0).
-arc(r__Art_0237_0017_r__Professor_0237_0018,r__University_0237_0021,r__at_0237_0019).
+arc(r_0237_0002__As_cnt,r_0237_0004__is,restriction).
+arc(r_0237_0002__As_cnt,r_0237_0009__is,scope).
+arc(r_0237_0004__is,r_0237_0003__he,arg0).
+arc(r_0237_0004__is,r_0237_0007__beautiful,prd2).
+arc(r_0237_0005__quantificational__no,r_0237_0006__longer,scope).
+arc(r_0237_0005__quantificational__no,z_0237_1009,restriction).
+arc(r_0237_0006__longer,z_0237_1009,modifier1).
+arc(r_0237_0007__beautiful,r_0237_0006__longer,quality1).
+arc(r_0237_0009__is,r_0237_0003__he,arg0).
+arc(r_0237_0009__is,r_0237_0012__useful,prd2).
+arc(r_0237_0010__quantificational__no,r_0237_0011__longer,scope).
+arc(r_0237_0010__quantificational__no,z_0237_1016,restriction).
+arc(r_0237_0011__longer,z_0237_1016,modifier1).
+arc(r_0237_0012__useful,r_0237_0011__longer,quality1).
+arc(r_0237_0015__said,r_0237_0017__Art_Professor,arg0).
+arc(r_0237_0015__said,utterance_0237_1003,arg1).
+arc(r_0237_0017__Art_Professor,r_0237_0021__University,r_0237_0019__at).
+arc(utterance_0237_1003,r_0237_0002__As_cnt,part1).
 
 </pre>
 <br>
@@ -287,36 +287,36 @@ fof(id_237_A_WILDE_1_1888,axiom,
       ( STATEX1 = CONJX18
       &amp; isA(CONJX18,utterance_0237_1003)
       &amp; part1(CONJX18) = CONNX4
-      &amp; isA(CONNX4,r__As_0237_0002_cnt)
+      &amp; isA(CONNX4,r_0237_0002__As_cnt)
       &amp; restriction(CONNX4) = EVENTX10
-      &amp; isA(EVENTX10,r__is_0237_0004)
-      &amp; arg0(EVENTX10) = r__he_0237_0003
+      &amp; isA(EVENTX10,r_0237_0004__is)
+      &amp; arg0(EVENTX10) = r_0237_0003__he
       &amp; prd2(EVENTX10) = ATTRIBX5
       &amp; scope(CONNX4) = EVENTX17
-      &amp; isA(EVENTX17,r__is_0237_0009)
+      &amp; isA(EVENTX17,r_0237_0009__is)
       &amp; arg0(EVENTX17) = PRINCEX11
       &amp; prd2(EVENTX17) = ATTRIBX12
-      &amp; PRINCEX11 = r__he_0237_0003
-      &amp; isA(ART_PROFESSORX19,r__Art_0237_0017_r__Professor_0237_0018)
-      &amp; r__at_0237_0019(ART_PROFESSORX19) = ENTITYX20
-      &amp; isA(ENTITYX20,r__University_0237_0021)
-      &amp; isA(ATTRIBX5,r__beautiful_0237_0007)
+      &amp; PRINCEX11 = r_0237_0003__he
+      &amp; isA(ART_PROFESSORX19,r_0237_0017__Art_Professor)
+      &amp; r_0237_0019__at(ART_PROFESSORX19) = ENTITYX20
+      &amp; isA(ENTITYX20,r_0237_0021__University)
+      &amp; isA(ATTRIBX5,r_0237_0007__beautiful)
       &amp; quality1(ATTRIBX5) = QUALITYX6
-      &amp; isA(ATTRIBX12,r__useful_0237_0012)
+      &amp; isA(ATTRIBX12,r_0237_0012__useful)
       &amp; quality1(ATTRIBX12) = QUALITYX13
-      &amp; isA(QUANTX8,quantificational_r__no_0237_0005)
+      &amp; isA(QUANTX8,r_0237_0005__quantificational__no)
       &amp; restriction(QUANTX8) = ENTITYX7
       &amp; isA(ENTITYX7,z_0237_1009)
       &amp; scope(QUANTX8) = QUALITYX6
-      &amp; isA(QUALITYX6,r__longer_0237_0006)
+      &amp; isA(QUALITYX6,r_0237_0006__longer)
       &amp; modifier1(QUALITYX6) = ENTITYX7
-      &amp; isA(QUANTX15,quantificational_r__no_0237_0010)
+      &amp; isA(QUANTX15,r_0237_0010__quantificational__no)
       &amp; restriction(QUANTX15) = ENTITYX14
       &amp; isA(ENTITYX14,z_0237_1016)
       &amp; scope(QUANTX15) = QUALITYX13
-      &amp; isA(QUALITYX13,r__longer_0237_0011)
+      &amp; isA(QUALITYX13,r_0237_0011__longer)
       &amp; modifier1(QUALITYX13) = ENTITYX14
-      &amp; isA(EVENTX21,r__said_0237_0015)
+      &amp; isA(EVENTX21,r_0237_0015__said)
       &amp; arg1(EVENTX21) = STATEX1
       &amp; arg0(EVENTX21) = ART_PROFESSORX19 ) ).
 

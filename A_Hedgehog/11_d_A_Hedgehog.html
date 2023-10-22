@@ -91,7 +91,7 @@ The victory for the ultimate underdog came about with 42 % and more than 9,000 v
 <title>0011_0007_0011_0008&#45;&gt;0011_0012</title>
 <path fill="none" stroke="black" d="M122.86,-347.8C129.95,-335.5 139.6,-318.76 147.54,-304.99"/>
 <polygon fill="black" stroke="black" points="150.75,-306.44 152.71,-296.03 144.68,-302.94 150.75,-306.44"/>
-<text text-anchor="middle" x="178.95" y="-318.8" font-family="fixed" font-size="14.00">with_[mnr]</text>
+<text text-anchor="middle" x="175.45" y="-318.8" font-family="fixed" font-size="14.00">with[mnr]</text>
 </g>
 <!-- 0011_0010_0011_0011 -->
 <g id="node6" class="node">
@@ -169,49 +169,49 @@ The victory for the ultimate underdog came about with 42 % and more than 9,000 v
 <title>0011_0017&#45;&gt;0011_0020</title>
 <path fill="none" stroke="black" d="M345.46,-261.21C350.09,-249.29 356.39,-233.06 361.69,-219.42"/>
 <polygon fill="black" stroke="black" points="364.97,-220.64 365.33,-210.05 358.44,-218.1 364.97,-220.64"/>
-<text text-anchor="middle" x="387.45" y="-231.8" font-family="fixed" font-size="14.00">for_[bnf]</text>
+<text text-anchor="middle" x="383.95" y="-231.8" font-family="fixed" font-size="14.00">for[bnf]</text>
 </g>
 </g>
 </svg>
 <br>
 <pre>
-arc(r__victory_0011_0002,r__underdog_0011_0006,r__for_0011_0003).
-arc(r__underdog_0011_0006,r__ultimate_0011_0005,attrib2).
-arc(r__came_0011_0007_r__about_0011_0008,r__victory_0011_0002,arg0).
-arc(r__came_0011_0007_r__about_0011_0008,r__and_0011_0012,r__with_0011_0009_mnr).
-arc(r__and_0011_0012,r__42_0011_0010_r____0011_0011,conj1).
-arc(r__and_0011_0012,r__votes_0011_0016,conj2).
-arc(r__more_0011_0013,r__9,000_0011_0015,r__than_0011_0014).
-arc(r__votes_0011_0016,r__more_0011_0013,attrib1).
-arc(r__cast_0011_0017,r__votes_0011_0016,arg0).
-arc(r__cast_0011_0017,r__hedgehog_0011_0020,r__for_0011_0018_bnf).
+arc(r_0011_0002__victory,r_0011_0006__underdog,r_0011_0003__for).
+arc(r_0011_0006__underdog,r_0011_0005__ultimate,attrib2).
+arc(r_0011_0007__came_about,r_0011_0002__victory,arg0).
+arc(r_0011_0007__came_about,r_0011_0012__and,r_0011_0009__with_mnr).
+arc(r_0011_0012__and,r_0011_0010__42__,conj1).
+arc(r_0011_0012__and,r_0011_0016__votes,conj2).
+arc(r_0011_0013__more,r_0011_0015__9,000,r_0011_0014__than).
+arc(r_0011_0016__votes,r_0011_0013__more,attrib1).
+arc(r_0011_0017__cast,r_0011_0016__votes,arg0).
+arc(r_0011_0017__cast,r_0011_0020__hedgehog,r_0011_0018__for_bnf).
 
 </pre>
 <br>
 <pre>
 fof(id_11_A_Hedgehog,axiom,
     ? [EVENTX11,EVENTX10,ENTITYX1,ENTITYX4,ENTITYX5,ENTITYX6,ENTITYX9,ENTITYX8,ENTITYX2,ATTRIBX7,ATTRIBX3] :
-      ( isA(ENTITYX1,r__victory_0011_0002)
-      &amp; r__for_0011_0003(ENTITYX1) = ENTITYX2
-      &amp; isA(ENTITYX2,r__underdog_0011_0006)
+      ( isA(ENTITYX1,r_0011_0002__victory)
+      &amp; r_0011_0003__for(ENTITYX1) = ENTITYX2
+      &amp; isA(ENTITYX2,r_0011_0006__underdog)
       &amp; attrib2(ENTITYX2) = ATTRIBX3
-      &amp; isA(ENTITYX4,r__and_0011_0012)
+      &amp; isA(ENTITYX4,r_0011_0012__and)
       &amp; conj1(ENTITYX4) = ENTITYX5
       &amp; conj2(ENTITYX4) = ENTITYX6
-      &amp; isA(ENTITYX5,r__42_0011_0010_r____0011_0011)
-      &amp; isA(EVENTX10,r__cast_0011_0017)
+      &amp; isA(ENTITYX5,r_0011_0010__42__)
+      &amp; isA(EVENTX10,r_0011_0017__cast)
       &amp; arg0(EVENTX10) = ENTITYX6
-      &amp; r__for_0011_0018_bnf(EVENTX10) = ENTITYX9
-      &amp; isA(ENTITYX6,r__votes_0011_0016)
+      &amp; r_0011_0018__for_bnf(EVENTX10) = ENTITYX9
+      &amp; isA(ENTITYX6,r_0011_0016__votes)
       &amp; attrib1(ENTITYX6) = ATTRIBX7
-      &amp; isA(ENTITYX8,r__9,000_0011_0015)
-      &amp; isA(ENTITYX9,r__hedgehog_0011_0020)
-      &amp; isA(ATTRIBX3,r__ultimate_0011_0005)
-      &amp; isA(ATTRIBX7,r__more_0011_0013)
-      &amp; r__than_0011_0014(ATTRIBX7) = ENTITYX8
-      &amp; isA(EVENTX11,r__came_0011_0007_r__about_0011_0008)
+      &amp; isA(ENTITYX8,r_0011_0015__9,000)
+      &amp; isA(ENTITYX9,r_0011_0020__hedgehog)
+      &amp; isA(ATTRIBX3,r_0011_0005__ultimate)
+      &amp; isA(ATTRIBX7,r_0011_0013__more)
+      &amp; r_0011_0014__than(ATTRIBX7) = ENTITYX8
+      &amp; isA(EVENTX11,r_0011_0007__came_about)
       &amp; arg0(EVENTX11) = ENTITYX1
-      &amp; r__with_0011_0009_mnr(EVENTX11) = ENTITYX4 ) ).
+      &amp; r_0011_0009__with_mnr(EVENTX11) = ENTITYX4 ) ).
 
 
 </pre>

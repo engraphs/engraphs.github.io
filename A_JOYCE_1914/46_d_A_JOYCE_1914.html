@@ -83,9 +83,9 @@ He had been coffined .
 </svg>
 <br>
 <pre>
-arc(r__had_0101_0002,r__been_0101_0003,catenative).
-arc(r__been_0101_0003,r__coffined_0101_0004,catenative).
-arc(r__coffined_0101_0004,r__He_0101_0001,arg1).
+arc(r_0101_0002__had,r_0101_0003__been,catenative).
+arc(r_0101_0003__been,r_0101_0004__coffined,catenative).
+arc(r_0101_0004__coffined,r_0101_0001__He,arg1).
 
 </pre>
 <br>
@@ -93,12 +93,12 @@ arc(r__coffined_0101_0004,r__He_0101_0001,arg1).
 fof(id_101_A_JOYCE_1914,axiom,
     ? [CATENATIVEX1,CATENATIVEX2,EVENTX6,EVENTX5,EVENTX4] :
       ( CATENATIVEX1 = EVENTX5
-      &amp; isA(EVENTX5,r__been_0101_0003)
+      &amp; isA(EVENTX5,r_0101_0003__been)
       &amp; catenative(EVENTX5) = CATENATIVEX2
       &amp; CATENATIVEX2 = EVENTX4
-      &amp; isA(EVENTX4,r__coffined_0101_0004)
-      &amp; arg1(EVENTX4) = r__He_0101_0001
-      &amp; isA(EVENTX6,r__had_0101_0002)
+      &amp; isA(EVENTX4,r_0101_0004__coffined)
+      &amp; arg1(EVENTX4) = r_0101_0001__He
+      &amp; isA(EVENTX6,r_0101_0002__had)
       &amp; catenative(EVENTX6) = CATENATIVEX1 ) ).
 
 

@@ -104,31 +104,31 @@ Head temple is Kencho-ji in Kamakura , founded by Douryuu RANKEI .
 <title>0070_0008&#45;&gt;0070_0010_0070_0011</title>
 <path fill="none" stroke="black" d="M286.35,-175.01C301.43,-162.2 322.79,-144.04 339.83,-129.56"/>
 <polygon fill="black" stroke="black" points="342.44,-131.93 347.79,-122.79 337.91,-126.6 342.44,-131.93"/>
-<text text-anchor="middle" x="371.04" y="-144.8" font-family="fixed" font-size="14.00">[arg0]by_[lgs]</text>
+<text text-anchor="middle" x="368.04" y="-144.8" font-family="fixed" font-size="14.00">[arg0]by[lgs]</text>
 </g>
 </g>
 </svg>
 <br>
 <pre>
-arc(r__is_0070_0003,r__Head_0070_0001_r__temple_0070_0002,arg0).
-arc(r__is_0070_0003,r__Kencho_ji_0070_0004,prd2).
-arc(r__Kencho_ji_0070_0004,r__Kamakura_0070_0006,r__in_0070_0005).
-arc(r__founded_0070_0008,r__Kencho_ji_0070_0004,arg1).
-arc(r__founded_0070_0008,r__Douryuu_0070_0010_r__RANKEI_0070_0011,arg0_r__by_0070_0009_lgs).
+arc(r_0070_0003__is,r_0070_0001__Head_temple,arg0).
+arc(r_0070_0003__is,r_0070_0004__Kencho_ji,prd2).
+arc(r_0070_0004__Kencho_ji,r_0070_0006__Kamakura,r_0070_0005__in).
+arc(r_0070_0008__founded,r_0070_0004__Kencho_ji,arg1).
+arc(r_0070_0008__founded,r_0070_0010__Douryuu_RANKEI,arg0_by_lgs).
 
 </pre>
 <br>
 <pre>
 fof(id_70_A_KYOTO_2,axiom,
     ? [EVENTX2,EVENTX1] :
-      ( isA(EVENTX1,r__founded_0070_0008)
-      &amp; arg0_r__by_0070_0009_lgs(EVENTX1) = r__Douryuu_0070_0010_r__RANKEI_0070_0011
-      &amp; arg1(EVENTX1) = r__Kencho_ji_0070_0004
-      &amp; isA(r__Kencho_ji_0070_0004,r__Kencho_ji_0070_0004)
-      &amp; r__in_0070_0005(r__Kencho_ji_0070_0004) = r__Kamakura_0070_0006
-      &amp; isA(EVENTX2,r__is_0070_0003)
-      &amp; arg0(EVENTX2) = r__Head_0070_0001_r__temple_0070_0002
-      &amp; prd2(EVENTX2) = r__Kencho_ji_0070_0004 ) ).
+      ( isA(EVENTX1,r_0070_0008__founded)
+      &amp; arg0_by_lgs(EVENTX1) = r_0070_0010__Douryuu_RANKEI
+      &amp; arg1(EVENTX1) = r_0070_0004__Kencho_ji
+      &amp; isA(r_0070_0004__Kencho_ji,r_0070_0004__Kencho_ji)
+      &amp; r_0070_0005__in(r_0070_0004__Kencho_ji) = r_0070_0006__Kamakura
+      &amp; isA(EVENTX2,r_0070_0003__is)
+      &amp; arg0(EVENTX2) = r_0070_0001__Head_temple
+      &amp; prd2(EVENTX2) = r_0070_0004__Kencho_ji ) ).
 
 
 </pre>

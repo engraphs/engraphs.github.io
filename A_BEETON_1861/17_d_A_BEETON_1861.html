@@ -149,35 +149,35 @@ This quantity of clarified wine will fine thirteen dozen of port or sherry .
 </svg>
 <br>
 <pre>
-arc(r__quantity_0030_0002,r__wine_0030_0005,r__of_0030_0003).
-arc(r__wine_0030_0005,r__clarified_0030_0004,attrib1).
-arc(r__will_0030_0006,r__fine_0030_0007,scope).
-arc(r__fine_0030_0007,r__quantity_0030_0002,arg0).
-arc(r__fine_0030_0007,r__thirteen_0030_0008_r__dozen_0030_0009,arg1).
-arc(r__thirteen_0030_0008_r__dozen_0030_0009,r__or_0030_0012,r__of_0030_0010).
-arc(r__or_0030_0012,r__port_0030_0011,conj1).
-arc(r__or_0030_0012,r__sherry_0030_0013,conj2).
+arc(r_0030_0002__quantity,r_0030_0005__wine,r_0030_0003__of).
+arc(r_0030_0005__wine,r_0030_0004__clarified,attrib1).
+arc(r_0030_0006__will,r_0030_0007__fine,scope).
+arc(r_0030_0007__fine,r_0030_0002__quantity,arg0).
+arc(r_0030_0007__fine,r_0030_0008__thirteen_dozen,arg1).
+arc(r_0030_0008__thirteen_dozen,r_0030_0012__or,r_0030_0010__of).
+arc(r_0030_0012__or,r_0030_0011__port,conj1).
+arc(r_0030_0012__or,r_0030_0013__sherry,conj2).
 
 </pre>
 <br>
 <pre>
 fof(id_30_A_BEETON_1861,axiom,
     ? [OPERATORX8,EVENTX9,ENTITYX1,ENTITYX4,ENTITYX5,ENTITYX6,ENTITYX7,ENTITYX2,ATTRIBX3] :
-      ( isA(ENTITYX1,r__quantity_0030_0002)
-      &amp; r__of_0030_0003(ENTITYX1) = ENTITYX2
-      &amp; isA(ENTITYX2,r__wine_0030_0005)
+      ( isA(ENTITYX1,r_0030_0002__quantity)
+      &amp; r_0030_0003__of(ENTITYX1) = ENTITYX2
+      &amp; isA(ENTITYX2,r_0030_0005__wine)
       &amp; attrib1(ENTITYX2) = ATTRIBX3
-      &amp; isA(ENTITYX4,r__thirteen_0030_0008_r__dozen_0030_0009)
-      &amp; r__of_0030_0010(ENTITYX4) = ENTITYX5
-      &amp; isA(ENTITYX5,r__or_0030_0012)
+      &amp; isA(ENTITYX4,r_0030_0008__thirteen_dozen)
+      &amp; r_0030_0010__of(ENTITYX4) = ENTITYX5
+      &amp; isA(ENTITYX5,r_0030_0012__or)
       &amp; conj1(ENTITYX5) = ENTITYX6
       &amp; conj2(ENTITYX5) = ENTITYX7
-      &amp; isA(ENTITYX6,r__port_0030_0011)
-      &amp; isA(ENTITYX7,r__sherry_0030_0013)
-      &amp; isA(ATTRIBX3,r__clarified_0030_0004)
-      &amp; isA(OPERATORX8,r__will_0030_0006)
+      &amp; isA(ENTITYX6,r_0030_0011__port)
+      &amp; isA(ENTITYX7,r_0030_0013__sherry)
+      &amp; isA(ATTRIBX3,r_0030_0004__clarified)
+      &amp; isA(OPERATORX8,r_0030_0006__will)
       &amp; scope(OPERATORX8) = EVENTX9
-      &amp; isA(EVENTX9,r__fine_0030_0007)
+      &amp; isA(EVENTX9,r_0030_0007__fine)
       &amp; arg0(EVENTX9) = ENTITYX1
       &amp; arg1(EVENTX9) = ENTITYX4 ) ).
 

@@ -96,10 +96,10 @@ How to wind the main spring
 </svg>
 <br>
 <pre>
-arc(r__How_0075_0001,z_0075_1008,scope).
-arc(r__wind_0075_0003,r__spring_0075_0006,arg1).
-arc(r__spring_0075_0006,r__main_0075_0005,attrib2).
-arc(z_0075_1008,r__wind_0075_0003,arg1).
+arc(r_0075_0001__How,z_0075_1008,scope).
+arc(r_0075_0003__wind,r_0075_0006__spring,arg1).
+arc(r_0075_0006__spring,r_0075_0005__main,attrib2).
+arc(z_0075_1008,r_0075_0003__wind,arg1).
 
 </pre>
 <br>
@@ -107,12 +107,12 @@ arc(z_0075_1008,r__wind_0075_0003,arg1).
 fof(id_75_A_seiko_9R65,axiom,
     ? [STATEX2,OPERATORX1,EVENTX9,EVENTX7,ENTITYX5,ATTRIBX6] :
       ( STATEX2 = EVENTX7
-      &amp; isA(EVENTX7,r__wind_0075_0003)
+      &amp; isA(EVENTX7,r_0075_0003__wind)
       &amp; arg1(EVENTX7) = ENTITYX5
-      &amp; isA(ENTITYX5,r__spring_0075_0006)
+      &amp; isA(ENTITYX5,r_0075_0006__spring)
       &amp; attrib2(ENTITYX5) = ATTRIBX6
-      &amp; isA(ATTRIBX6,r__main_0075_0005)
-      &amp; isA(OPERATORX1,r__How_0075_0001)
+      &amp; isA(ATTRIBX6,r_0075_0005__main)
+      &amp; isA(OPERATORX1,r_0075_0001__How)
       &amp; scope(OPERATORX1) = EVENTX9
       &amp; isA(EVENTX9,z_0075_1008)
       &amp; arg1(EVENTX9) = STATEX2 ) ).

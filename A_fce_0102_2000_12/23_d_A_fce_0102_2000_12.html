@@ -123,13 +123,13 @@ You have decided to write a story from your country .
 </svg>
 <br>
 <pre>
-arc(r__have_0023_0002,r__decided_0023_0003,catenative).
-arc(r__decided_0023_0003,r__You_0023_0001,arg0).
-arc(r__decided_0023_0003,r__write_0023_0005,arg1).
-arc(r__write_0023_0005,r__You_0023_0001,arg0).
-arc(r__write_0023_0005,r__story_0023_0007,arg1).
-arc(r__story_0023_0007,r__country_0023_0010,r__from_0023_0008).
-arc(r__country_0023_0010,r__You_0023_0001,genv).
+arc(r_0023_0002__have,r_0023_0003__decided,catenative).
+arc(r_0023_0003__decided,r_0023_0001__You,arg0).
+arc(r_0023_0003__decided,r_0023_0005__write,arg1).
+arc(r_0023_0005__write,r_0023_0001__You,arg0).
+arc(r_0023_0005__write,r_0023_0007__story,arg1).
+arc(r_0023_0007__story,r_0023_0010__country,r_0023_0008__from).
+arc(r_0023_0010__country,r_0023_0001__You,genv).
 
 </pre>
 <br>
@@ -137,19 +137,19 @@ arc(r__country_0023_0010,r__You_0023_0001,genv).
 fof(id_23_A_fce_0102_2000_12,axiom,
     ? [CATENATIVEX1,STATEX2,HEARERX5,EVENTX8,EVENTX7,EVENTX6,ENTITYX3,ENTITYX4] :
       ( CATENATIVEX1 = EVENTX7
-      &amp; isA(EVENTX7,r__decided_0023_0003)
-      &amp; arg0(EVENTX7) = r__You_0023_0001
+      &amp; isA(EVENTX7,r_0023_0003__decided)
+      &amp; arg0(EVENTX7) = r_0023_0001__You
       &amp; arg1(EVENTX7) = STATEX2
       &amp; STATEX2 = EVENTX6
-      &amp; isA(EVENTX6,r__write_0023_0005)
-      &amp; arg0(EVENTX6) = r__You_0023_0001
+      &amp; isA(EVENTX6,r_0023_0005__write)
+      &amp; arg0(EVENTX6) = r_0023_0001__You
       &amp; arg1(EVENTX6) = ENTITYX3
-      &amp; isA(ENTITYX3,r__story_0023_0007)
-      &amp; r__from_0023_0008(ENTITYX3) = ENTITYX4
-      &amp; isA(ENTITYX4,r__country_0023_0010)
+      &amp; isA(ENTITYX3,r_0023_0007__story)
+      &amp; r_0023_0008__from(ENTITYX3) = ENTITYX4
+      &amp; isA(ENTITYX4,r_0023_0010__country)
       &amp; genv(ENTITYX4) = HEARERX5
-      &amp; HEARERX5 = r__You_0023_0001
-      &amp; isA(EVENTX8,r__have_0023_0002)
+      &amp; HEARERX5 = r_0023_0001__You
+      &amp; isA(EVENTX8,r_0023_0002__have)
       &amp; catenative(EVENTX8) = CATENATIVEX1 ) ).
 
 

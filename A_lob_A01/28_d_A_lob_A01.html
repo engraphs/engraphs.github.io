@@ -129,7 +129,7 @@ But representatives of Sir Roy Welensky , Prime Minister of the central African 
 <title>0031_0016&#45;&gt;0031_0018</title>
 <path fill="none" stroke="black" d="M246.25,-434.8C246.25,-423.16 246.25,-407.55 246.25,-394.24"/>
 <polygon fill="black" stroke="black" points="249.75,-394.18 246.25,-384.18 242.75,-394.18 249.75,-394.18"/>
-<text text-anchor="middle" x="271.75" y="-405.8" font-family="fixed" font-size="14.00">to_[loc]</text>
+<text text-anchor="middle" x="268.25" y="-405.8" font-family="fixed" font-size="14.00">to[loc]</text>
 </g>
 <!-- 0031_0021 -->
 <g id="node9" class="node">
@@ -140,9 +140,9 @@ But representatives of Sir Roy Welensky , Prime Minister of the central African 
 <!-- 0031_0016&#45;&gt;0031_0021 -->
 <g id="edge8" class="edge">
 <title>0031_0016&#45;&gt;0031_0021</title>
-<path fill="none" stroke="black" d="M267.01,-439.07C277.36,-432.55 290.03,-424.46 301.25,-417 315.04,-407.82 330.13,-397.41 342.91,-388.47"/>
-<polygon fill="black" stroke="black" points="345.17,-391.16 351.35,-382.55 341.15,-385.43 345.17,-391.16"/>
-<text text-anchor="middle" x="352.75" y="-405.8" font-family="fixed" font-size="14.00">at_[tmp]</text>
+<path fill="none" stroke="black" d="M266.09,-438.72C286.35,-425.16 318.09,-403.92 341.77,-388.06"/>
+<polygon fill="black" stroke="black" points="343.74,-390.96 350.1,-382.49 339.84,-385.14 343.74,-390.96"/>
+<text text-anchor="middle" x="344.25" y="-405.8" font-family="fixed" font-size="14.00">at[tmp]</text>
 </g>
 <!-- 0031_0023 -->
 <g id="node10" class="node">
@@ -174,41 +174,41 @@ But representatives of Sir Roy Welensky , Prime Minister of the central African 
 </svg>
 <br>
 <pre>
-arc(r__representatives_0031_0002,r__Sir_0031_0004_r__Roy_0031_0005_r__Welensky_0031_0006,r__of_0031_0003).
-arc(r__Sir_0031_0004_r__Roy_0031_0005_r__Welensky_0031_0006,r__Prime_0031_0008_r__Minister_0031_0009,prn5).
-arc(r__Prime_0031_0008_r__Minister_0031_0009,r__federation_0031_0014,r__of_0031_0010).
-arc(r__federation_0031_0014,r__central_0031_0012,attrib2).
-arc(r__federation_0031_0014,r__African_0031_0013,attrib3).
-arc(r__went_0031_0016,r__representatives_0031_0002,arg0).
-arc(r__went_0031_0016,r__Chequers_0031_0018,r__to_0031_0017_loc).
-arc(r__went_0031_0016,r__week_end_0031_0021,r__at_0031_0019_tmp).
-arc(r__week_end_0031_0021,r__talks_0031_0023,r__for_0031_0022).
-arc(r__talks_0031_0023,r__Mr_0031_0025_r__Macmillan_0031_0026,r__with_0031_0024).
+arc(r_0031_0002__representatives,r_0031_0004__Sir_Roy_Welensky,r_0031_0003__of).
+arc(r_0031_0004__Sir_Roy_Welensky,r_0031_0008__Prime_Minister,prn5).
+arc(r_0031_0008__Prime_Minister,r_0031_0014__federation,r_0031_0010__of).
+arc(r_0031_0014__federation,r_0031_0012__central,attrib2).
+arc(r_0031_0014__federation,r_0031_0013__African,attrib3).
+arc(r_0031_0016__went,r_0031_0002__representatives,arg0).
+arc(r_0031_0016__went,r_0031_0018__Chequers,r_0031_0017__to_loc).
+arc(r_0031_0016__went,r_0031_0021__week_end,r_0031_0019__at_tmp).
+arc(r_0031_0021__week_end,r_0031_0023__talks,r_0031_0022__for).
+arc(r_0031_0023__talks,r_0031_0025__Mr_Macmillan,r_0031_0024__with).
 
 </pre>
 <br>
 <pre>
 fof(id_31_A_lob_A01,axiom,
     ? [EVENTX8,ENTITYX1,ENTITYX6,ENTITYX7,ENTITYX2,ENTITYX3,ATTRIBX4,ATTRIBX5] :
-      ( isA(ENTITYX1,r__representatives_0031_0002)
-      &amp; r__of_0031_0003(ENTITYX1) = r__Sir_0031_0004_r__Roy_0031_0005_r__Welensky_0031_0006
-      &amp; isA(ENTITYX2,r__Prime_0031_0008_r__Minister_0031_0009)
-      &amp; r__of_0031_0010(ENTITYX2) = ENTITYX3
-      &amp; isA(ENTITYX3,r__federation_0031_0014)
+      ( isA(ENTITYX1,r_0031_0002__representatives)
+      &amp; r_0031_0003__of(ENTITYX1) = r_0031_0004__Sir_Roy_Welensky
+      &amp; isA(ENTITYX2,r_0031_0008__Prime_Minister)
+      &amp; r_0031_0010__of(ENTITYX2) = ENTITYX3
+      &amp; isA(ENTITYX3,r_0031_0014__federation)
       &amp; attrib2(ENTITYX3) = ATTRIBX4
       &amp; attrib3(ENTITYX3) = ATTRIBX5
-      &amp; isA(ENTITYX6,r__week_end_0031_0021)
-      &amp; r__for_0031_0022(ENTITYX6) = ENTITYX7
-      &amp; isA(ENTITYX7,r__talks_0031_0023)
-      &amp; r__with_0031_0024(ENTITYX7) = r__Mr_0031_0025_r__Macmillan_0031_0026
-      &amp; isA(r__Sir_0031_0004_r__Roy_0031_0005_r__Welensky_0031_0006,r__Sir_0031_0004_r__Roy_0031_0005_r__Welensky_0031_0006)
-      &amp; prn5(r__Sir_0031_0004_r__Roy_0031_0005_r__Welensky_0031_0006) = ENTITYX2
-      &amp; isA(ATTRIBX4,r__central_0031_0012)
-      &amp; isA(ATTRIBX5,r__African_0031_0013)
-      &amp; isA(EVENTX8,r__went_0031_0016)
+      &amp; isA(ENTITYX6,r_0031_0021__week_end)
+      &amp; r_0031_0022__for(ENTITYX6) = ENTITYX7
+      &amp; isA(ENTITYX7,r_0031_0023__talks)
+      &amp; r_0031_0024__with(ENTITYX7) = r_0031_0025__Mr_Macmillan
+      &amp; isA(r_0031_0004__Sir_Roy_Welensky,r_0031_0004__Sir_Roy_Welensky)
+      &amp; prn5(r_0031_0004__Sir_Roy_Welensky) = ENTITYX2
+      &amp; isA(ATTRIBX4,r_0031_0012__central)
+      &amp; isA(ATTRIBX5,r_0031_0013__African)
+      &amp; isA(EVENTX8,r_0031_0016__went)
       &amp; arg0(EVENTX8) = ENTITYX1
-      &amp; r__to_0031_0017_loc(EVENTX8) = r__Chequers_0031_0018
-      &amp; r__at_0031_0019_tmp(EVENTX8) = ENTITYX6 ) ).
+      &amp; r_0031_0017__to_loc(EVENTX8) = r_0031_0018__Chequers
+      &amp; r_0031_0019__at_tmp(EVENTX8) = ENTITYX6 ) ).
 
 
 </pre>

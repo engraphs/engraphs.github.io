@@ -122,28 +122,28 @@ It was early the next morning when they reached the ship .
 </svg>
 <br>
 <pre>
-arc(r__was_0550_0002,r__next_0550_0005_r__morning_0550_0006,foc).
-arc(r__was_0550_0002,z_0550_1007,clf).
-arc(r__next_0550_0005_r__morning_0550_0006,r__early_0550_0003,quality1).
-arc(r__reached_0550_0009,r__they_0550_0008,arg0).
-arc(r__reached_0550_0009,r__ship_0550_0011,arg1).
-arc(r__reached_0550_0009,z_0550_1007,tmp1).
+arc(r_0550_0002__was,r_0550_0005__next_morning,foc).
+arc(r_0550_0002__was,z_0550_1007,clf).
+arc(r_0550_0005__next_morning,r_0550_0003__early,quality1).
+arc(r_0550_0009__reached,r_0550_0008__they,arg0).
+arc(r_0550_0009__reached,r_0550_0011__ship,arg1).
+arc(r_0550_0009__reached,z_0550_1007,tmp1).
 
 </pre>
 <br>
 <pre>
 fof(id_550_A_DICK_1952,axiom,
     ? [EVENTX8,EVENTX6,ENTITYX2,ENTITYX4,ENTITYX5,QUALITYX3] :
-      ( isA(ENTITYX2,r__next_0550_0005_r__morning_0550_0006)
+      ( isA(ENTITYX2,r_0550_0005__next_morning)
       &amp; quality1(ENTITYX2) = QUALITYX3
-      &amp; isA(EVENTX6,r__reached_0550_0009)
+      &amp; isA(EVENTX6,r_0550_0009__reached)
       &amp; tmp1(EVENTX6) = ENTITYX4
-      &amp; arg0(EVENTX6) = r__they_0550_0008
+      &amp; arg0(EVENTX6) = r_0550_0008__they
       &amp; arg1(EVENTX6) = ENTITYX5
       &amp; isA(ENTITYX4,z_0550_1007)
-      &amp; isA(ENTITYX5,r__ship_0550_0011)
-      &amp; isA(QUALITYX3,r__early_0550_0003)
-      &amp; isA(EVENTX8,r__was_0550_0002)
+      &amp; isA(ENTITYX5,r_0550_0011__ship)
+      &amp; isA(QUALITYX3,r_0550_0003__early)
+      &amp; isA(EVENTX8,r_0550_0002__was)
       &amp; foc(EVENTX8) = ENTITYX2
       &amp; clf(EVENTX8) = ENTITYX4 ) ).
 

@@ -129,13 +129,13 @@
 </svg>
 <br>
 <pre>
-arc(r__is_0066_0003,r__not_0066_0004,catenative).
-arc(r__not_0066_0004,r__going_0066_0005,scope).
-arc(r__going_0066_0005,r__agree_0066_0007,catenative).
-arc(r__agree_0066_0007,r__He_0066_0002,arg0).
-arc(r__agree_0066_0007,r__be_0066_0009,arg1).
-arc(r__be_0066_0009,r__bound_0066_0010_r__over_0066_0011,catenative).
-arc(r__bound_0066_0010_r__over_0066_0011,r__He_0066_0002,arg1).
+arc(r_0066_0003__is,r_0066_0004__not,catenative).
+arc(r_0066_0004__not,r_0066_0005__going,scope).
+arc(r_0066_0005__going,r_0066_0007__agree,catenative).
+arc(r_0066_0007__agree,r_0066_0002__He,arg0).
+arc(r_0066_0007__agree,r_0066_0009__be,arg1).
+arc(r_0066_0009__be,r_0066_0010__bound_over,catenative).
+arc(r_0066_0010__bound_over,r_0066_0002__He,arg1).
 
 </pre>
 <br>
@@ -143,21 +143,21 @@ arc(r__bound_0066_0010_r__over_0066_0011,r__He_0066_0002,arg1).
 fof(id_66_A_lob_A02,axiom,
     ? [CATENATIVEX1,STATEX2,STATEX3,CATENATIVEX4,EVENTX11,OPERATORX9,EVENTX10,EVENTX8,EVENTX7,EVENTX6] :
       ( CATENATIVEX1 = OPERATORX9
-      &amp; isA(OPERATORX9,r__not_0066_0004)
+      &amp; isA(OPERATORX9,r_0066_0004__not)
       &amp; scope(OPERATORX9) = EVENTX10
-      &amp; isA(EVENTX10,r__going_0066_0005)
+      &amp; isA(EVENTX10,r_0066_0005__going)
       &amp; catenative(EVENTX10) = STATEX2
       &amp; STATEX2 = EVENTX8
-      &amp; isA(EVENTX8,r__agree_0066_0007)
-      &amp; arg0(EVENTX8) = r__He_0066_0002
+      &amp; isA(EVENTX8,r_0066_0007__agree)
+      &amp; arg0(EVENTX8) = r_0066_0002__He
       &amp; arg1(EVENTX8) = STATEX3
       &amp; STATEX3 = EVENTX7
-      &amp; isA(EVENTX7,r__be_0066_0009)
+      &amp; isA(EVENTX7,r_0066_0009__be)
       &amp; catenative(EVENTX7) = CATENATIVEX4
       &amp; CATENATIVEX4 = EVENTX6
-      &amp; isA(EVENTX6,r__bound_0066_0010_r__over_0066_0011)
-      &amp; arg1(EVENTX6) = r__He_0066_0002
-      &amp; isA(EVENTX11,r__is_0066_0003)
+      &amp; isA(EVENTX6,r_0066_0010__bound_over)
+      &amp; arg1(EVENTX6) = r_0066_0002__He
+      &amp; isA(EVENTX11,r_0066_0003__is)
       &amp; catenative(EVENTX11) = CATENATIVEX1 ) ).
 
 

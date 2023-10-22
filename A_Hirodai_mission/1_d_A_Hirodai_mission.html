@@ -70,17 +70,17 @@ Message from the President
 </svg>
 <br>
 <pre>
-arc(r__Message_0001_0001,r__President_0001_0004,z_0001_1005).
-arc(z_0001_1007,r__Message_0001_0001,z_0001_1002).
+arc(r_0001_0001__Message,r_0001_0004__President,z_0001_1005).
+arc(z_0001_1007,r_0001_0001__Message,z_0001_1002).
 
 </pre>
 <br>
 <pre>
 fof(id_1_A_Hirodai_mission,axiom,
     ? [EVENTX8,ENTITYX3,ENTITYX6] :
-      ( isA(ENTITYX3,r__Message_0001_0001)
+      ( isA(ENTITYX3,r_0001_0001__Message)
       &amp; z_0001_1005(ENTITYX3) = ENTITYX6
-      &amp; isA(ENTITYX6,r__President_0001_0004)
+      &amp; isA(ENTITYX6,r_0001_0004__President)
       &amp; isA(EVENTX8,z_0001_1007)
       &amp; z_0001_1002(EVENTX8) = ENTITYX3 ) ).
 

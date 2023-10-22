@@ -201,18 +201,18 @@ The hedgehog is a generalist species , and traditionally we have not paid much a
 </svg>
 <br>
 <pre>
-arc(r__is_0152_0003,r__hedgehog_0152_0002,arg0).
-arc(r__is_0152_0003,r__generalist_0152_0005_r__species_0152_0006,prd2).
-arc(r__and_0152_0008,r__is_0152_0003,conj1).
-arc(r__and_0152_0008,r__have_0152_0011,conj2).
-arc(r__have_0152_0011,r__traditionally_0152_0009,mnr1).
-arc(r__have_0152_0011,r__not_0152_0012,catenative).
-arc(r__not_0152_0012,r__paid_0152_0013,scope).
-arc(r__paid_0152_0013,r__we_0152_0010,arg0).
-arc(r__paid_0152_0013,r__attention_0152_0015,arg1).
-arc(r__attention_0152_0015,r__much_0152_0014,attrib1).
-arc(r__attention_0152_0015,r__species_0152_0018,r__to_0152_0016).
-arc(r__species_0152_0018,r__such_0152_0017,attrib1).
+arc(r_0152_0003__is,r_0152_0002__hedgehog,arg0).
+arc(r_0152_0003__is,r_0152_0005__generalist_species,prd2).
+arc(r_0152_0008__and,r_0152_0003__is,conj1).
+arc(r_0152_0008__and,r_0152_0011__have,conj2).
+arc(r_0152_0011__have,r_0152_0009__traditionally,mnr1).
+arc(r_0152_0011__have,r_0152_0012__not,catenative).
+arc(r_0152_0012__not,r_0152_0013__paid,scope).
+arc(r_0152_0013__paid,r_0152_0010__we,arg0).
+arc(r_0152_0013__paid,r_0152_0015__attention,arg1).
+arc(r_0152_0015__attention,r_0152_0014__much,attrib1).
+arc(r_0152_0015__attention,r_0152_0018__species,r_0152_0016__to).
+arc(r_0152_0018__species,r_0152_0017__such,attrib1).
 
 </pre>
 <br>
@@ -220,28 +220,28 @@ arc(r__species_0152_0018,r__such_0152_0017,attrib1).
 fof(id_152_A_Hedgehog,axiom,
     ? [CATENATIVEX5,CONJX13,EVENTX12,OPERATORX10,EVENTX11,EVENTX3,ENTITYX6,ENTITYX8,ENTITYX1,ENTITYX2,QUALITYX4,ATTRIBX7,ATTRIBX9] :
       ( CATENATIVEX5 = OPERATORX10
-      &amp; isA(OPERATORX10,r__not_0152_0012)
+      &amp; isA(OPERATORX10,r_0152_0012__not)
       &amp; scope(OPERATORX10) = EVENTX11
-      &amp; isA(EVENTX11,r__paid_0152_0013)
-      &amp; arg0(EVENTX11) = r__we_0152_0010
+      &amp; isA(EVENTX11,r_0152_0013__paid)
+      &amp; arg0(EVENTX11) = r_0152_0010__we
       &amp; arg1(EVENTX11) = ENTITYX6
-      &amp; isA(ENTITYX1,r__hedgehog_0152_0002)
-      &amp; isA(ENTITYX2,r__generalist_0152_0005_r__species_0152_0006)
-      &amp; isA(ENTITYX6,r__attention_0152_0015)
+      &amp; isA(ENTITYX1,r_0152_0002__hedgehog)
+      &amp; isA(ENTITYX2,r_0152_0005__generalist_species)
+      &amp; isA(ENTITYX6,r_0152_0015__attention)
       &amp; attrib1(ENTITYX6) = ATTRIBX7
-      &amp; r__to_0152_0016(ENTITYX6) = ENTITYX8
-      &amp; isA(ENTITYX8,r__species_0152_0018)
+      &amp; r_0152_0016__to(ENTITYX6) = ENTITYX8
+      &amp; isA(ENTITYX8,r_0152_0018__species)
       &amp; attrib1(ENTITYX8) = ATTRIBX9
-      &amp; isA(QUALITYX4,r__traditionally_0152_0009)
-      &amp; isA(ATTRIBX7,r__much_0152_0014)
-      &amp; isA(ATTRIBX9,r__such_0152_0017)
-      &amp; isA(CONJX13,r__and_0152_0008)
+      &amp; isA(QUALITYX4,r_0152_0009__traditionally)
+      &amp; isA(ATTRIBX7,r_0152_0014__much)
+      &amp; isA(ATTRIBX9,r_0152_0017__such)
+      &amp; isA(CONJX13,r_0152_0008__and)
       &amp; conj1(CONJX13) = EVENTX3
-      &amp; isA(EVENTX3,r__is_0152_0003)
+      &amp; isA(EVENTX3,r_0152_0003__is)
       &amp; arg0(EVENTX3) = ENTITYX1
       &amp; prd2(EVENTX3) = ENTITYX2
       &amp; conj2(CONJX13) = EVENTX12
-      &amp; isA(EVENTX12,r__have_0152_0011)
+      &amp; isA(EVENTX12,r_0152_0011__have)
       &amp; mnr1(EVENTX12) = QUALITYX4
       &amp; catenative(EVENTX12) = CATENATIVEX5 ) ).
 

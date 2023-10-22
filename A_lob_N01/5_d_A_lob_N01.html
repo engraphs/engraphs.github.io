@@ -109,11 +109,11 @@ They might have been arranging a supper party .
 </svg>
 <br>
 <pre>
-arc(r__might_0010_0002,r__have_0010_0003,scope).
-arc(r__have_0010_0003,r__been_0010_0004,catenative).
-arc(r__been_0010_0004,r__arranging_0010_0005,catenative).
-arc(r__arranging_0010_0005,r__They_0010_0001,arg0).
-arc(r__arranging_0010_0005,r__supper_0010_0007_r__party_0010_0008,arg1).
+arc(r_0010_0002__might,r_0010_0003__have,scope).
+arc(r_0010_0003__have,r_0010_0004__been,catenative).
+arc(r_0010_0004__been,r_0010_0005__arranging,catenative).
+arc(r_0010_0005__arranging,r_0010_0001__They,arg0).
+arc(r_0010_0005__arranging,r_0010_0007__supper_party,arg1).
 
 </pre>
 <br>
@@ -121,16 +121,16 @@ arc(r__arranging_0010_0005,r__supper_0010_0007_r__party_0010_0008,arg1).
 fof(id_10_A_lob_N01,axiom,
     ? [CATENATIVEX2,CATENATIVEX3,OPERATORX1,EVENTX7,EVENTX6,EVENTX5,ENTITYX4] :
       ( CATENATIVEX2 = EVENTX6
-      &amp; isA(EVENTX6,r__been_0010_0004)
+      &amp; isA(EVENTX6,r_0010_0004__been)
       &amp; catenative(EVENTX6) = CATENATIVEX3
       &amp; CATENATIVEX3 = EVENTX5
-      &amp; isA(EVENTX5,r__arranging_0010_0005)
-      &amp; arg0(EVENTX5) = r__They_0010_0001
+      &amp; isA(EVENTX5,r_0010_0005__arranging)
+      &amp; arg0(EVENTX5) = r_0010_0001__They
       &amp; arg1(EVENTX5) = ENTITYX4
-      &amp; isA(ENTITYX4,r__supper_0010_0007_r__party_0010_0008)
-      &amp; isA(OPERATORX1,r__might_0010_0002)
+      &amp; isA(ENTITYX4,r_0010_0007__supper_party)
+      &amp; isA(OPERATORX1,r_0010_0002__might)
       &amp; scope(OPERATORX1) = EVENTX7
-      &amp; isA(EVENTX7,r__have_0010_0003)
+      &amp; isA(EVENTX7,r_0010_0003__have)
       &amp; catenative(EVENTX7) = CATENATIVEX2 ) ).
 
 

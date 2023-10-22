@@ -122,29 +122,29 @@ Write a composition , explaining your views .
 </svg>
 <br>
 <pre>
-arc(cnt_0040_1005,r__Write_0040_0001,scope).
-arc(cnt_0040_1005,r__explaining_0040_0005,restriction).
+arc(cnt_0040_1005,r_0040_0001__Write,scope).
+arc(cnt_0040_1005,r_0040_0005__explaining,restriction).
 arc(imperative_0040_1002,cnt_0040_1005,scope).
-arc(r__Write_0040_0001,r__composition_0040_0003,arg1).
-arc(r__explaining_0040_0005,r__views_0040_0007,arg1).
-arc(r__views_0040_0007,r__your_0040_0006,genv).
+arc(r_0040_0001__Write,r_0040_0003__composition,arg1).
+arc(r_0040_0005__explaining,r_0040_0007__views,arg1).
+arc(r_0040_0007__views,r_0040_0006__your,genv).
 
 </pre>
 <br>
 <pre>
 fof(id_40_A_fce_0102_2001_03,axiom,
     ? [OPERATORX2,CONNX6,EVENTX8,EVENTX9,ENTITYX4,ENTITYX7] :
-      ( isA(ENTITYX4,r__composition_0040_0003)
-      &amp; isA(ENTITYX7,r__views_0040_0007)
-      &amp; genv(ENTITYX7) = r__your_0040_0006
+      ( isA(ENTITYX4,r_0040_0003__composition)
+      &amp; isA(ENTITYX7,r_0040_0007__views)
+      &amp; genv(ENTITYX7) = r_0040_0006__your
       &amp; isA(OPERATORX2,imperative_0040_1002)
       &amp; scope(OPERATORX2) = CONNX6
       &amp; isA(CONNX6,cnt_0040_1005)
       &amp; scope(CONNX6) = EVENTX9
-      &amp; isA(EVENTX9,r__Write_0040_0001)
+      &amp; isA(EVENTX9,r_0040_0001__Write)
       &amp; arg1(EVENTX9) = ENTITYX4
       &amp; restriction(CONNX6) = EVENTX8
-      &amp; isA(EVENTX8,r__explaining_0040_0005)
+      &amp; isA(EVENTX8,r_0040_0005__explaining)
       &amp; arg1(EVENTX8) = ENTITYX7 ) ).
 
 

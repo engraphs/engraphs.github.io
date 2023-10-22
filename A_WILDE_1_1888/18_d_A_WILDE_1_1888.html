@@ -148,14 +148,14 @@ But the Happy Prince looked so sad that the little Swallow was sorry .
 </svg>
 <br>
 <pre>
-arc(r__Prince_0089_0004,r__Happy_0089_0003,attrib2).
-arc(r__looked_0089_0005,r__Prince_0089_0004,arg0).
-arc(r__looked_0089_0005,r__sad_0089_0007,prd2).
-arc(r__so_0089_0006,r__was_0089_0012,emb2).
-arc(r__sad_0089_0007,r__so_0089_0006,quality1).
-arc(r__Swallow_0089_0011,r__little_0089_0010,attrib2).
-arc(r__was_0089_0012,r__Swallow_0089_0011,arg0).
-arc(r__was_0089_0012,r__sorry_0089_0013,prd2).
+arc(r_0089_0004__Prince,r_0089_0003__Happy,attrib2).
+arc(r_0089_0005__looked,r_0089_0004__Prince,arg0).
+arc(r_0089_0005__looked,r_0089_0007__sad,prd2).
+arc(r_0089_0006__so,r_0089_0012__was,emb2).
+arc(r_0089_0007__sad,r_0089_0006__so,quality1).
+arc(r_0089_0011__Swallow,r_0089_0010__little,attrib2).
+arc(r_0089_0012__was,r_0089_0011__Swallow,arg0).
+arc(r_0089_0012__was,r_0089_0013__sorry,prd2).
 
 </pre>
 <br>
@@ -163,21 +163,21 @@ arc(r__was_0089_0012,r__sorry_0089_0013,prd2).
 fof(id_89_A_WILDE_1_1888,axiom,
     ? [STATEX5,EVENTX10,EVENTX9,ENTITYX1,ENTITYX6,ATTRIBX3,ATTRIBX8,ATTRIBX7,ATTRIBX2,QUALITYX4] :
       ( STATEX5 = EVENTX9
-      &amp; isA(EVENTX9,r__was_0089_0012)
+      &amp; isA(EVENTX9,r_0089_0012__was)
       &amp; arg0(EVENTX9) = ENTITYX6
       &amp; prd2(EVENTX9) = ATTRIBX8
-      &amp; isA(ENTITYX1,r__Prince_0089_0004)
+      &amp; isA(ENTITYX1,r_0089_0004__Prince)
       &amp; attrib2(ENTITYX1) = ATTRIBX2
-      &amp; isA(ENTITYX6,r__Swallow_0089_0011)
+      &amp; isA(ENTITYX6,r_0089_0011__Swallow)
       &amp; attrib2(ENTITYX6) = ATTRIBX7
-      &amp; isA(ATTRIBX2,r__Happy_0089_0003)
-      &amp; isA(ATTRIBX3,r__sad_0089_0007)
+      &amp; isA(ATTRIBX2,r_0089_0003__Happy)
+      &amp; isA(ATTRIBX3,r_0089_0007__sad)
       &amp; quality1(ATTRIBX3) = QUALITYX4
-      &amp; isA(ATTRIBX7,r__little_0089_0010)
-      &amp; isA(ATTRIBX8,r__sorry_0089_0013)
-      &amp; isA(QUALITYX4,r__so_0089_0006)
+      &amp; isA(ATTRIBX7,r_0089_0010__little)
+      &amp; isA(ATTRIBX8,r_0089_0013__sorry)
+      &amp; isA(QUALITYX4,r_0089_0006__so)
       &amp; emb2(QUALITYX4) = STATEX5
-      &amp; isA(EVENTX10,r__looked_0089_0005)
+      &amp; isA(EVENTX10,r_0089_0005__looked)
       &amp; arg0(EVENTX10) = ENTITYX1
       &amp; prd2(EVENTX10) = ATTRIBX3 ) ).
 

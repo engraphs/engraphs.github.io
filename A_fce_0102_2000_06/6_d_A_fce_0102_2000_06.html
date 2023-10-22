@@ -103,7 +103,7 @@ Then , write a letter to the manager of the theatre , explaining what the proble
 <title>0006_0003&#45;&gt;0006_0008</title>
 <path fill="none" stroke="black" d="M138.45,-347.8C138.45,-336.16 138.45,-320.55 138.45,-307.24"/>
 <polygon fill="black" stroke="black" points="141.95,-307.18 138.45,-297.18 134.95,-307.18 141.95,-307.18"/>
-<text text-anchor="middle" x="169.95" y="-318.8" font-family="fixed" font-size="14.00">to_[arg2]</text>
+<text text-anchor="middle" x="166.45" y="-318.8" font-family="fixed" font-size="14.00">to[arg2]</text>
 </g>
 <!-- 0006_0011 -->
 <g id="node6" class="node">
@@ -207,7 +207,7 @@ Then , write a letter to the manager of the theatre , explaining what the proble
 <title>0006_0019&#45;&gt;0006_0022</title>
 <path fill="none" stroke="black" d="M381.45,-260.8C381.45,-249.16 381.45,-233.55 381.45,-220.24"/>
 <polygon fill="black" stroke="black" points="384.95,-220.18 381.45,-210.18 377.95,-220.18 384.95,-220.18"/>
-<text text-anchor="middle" x="408.95" y="-231.8" font-family="fixed" font-size="14.00">for_[clr]</text>
+<text text-anchor="middle" x="405.45" y="-231.8" font-family="fixed" font-size="14.00">for[clr]</text>
 </g>
 <!-- 0006_0023 -->
 <g id="node15" class="node">
@@ -239,21 +239,21 @@ Then , write a letter to the manager of the theatre , explaining what the proble
 </svg>
 <br>
 <pre>
-arc(cnt_0006_1008,r__write_0006_0003,scope).
-arc(cnt_0006_1008,r__and_0006_0018,restriction).
-arc(imperative_0006_1002,r__Then_0006_0001,scope).
-arc(question_0006_1012,r__were_0006_0017,scope).
-arc(r__Then_0006_0001,cnt_0006_1008,scope).
-arc(r__write_0006_0003,r__letter_0006_0005,arg1).
-arc(r__write_0006_0003,r__manager_0006_0008,r__to_0006_0006_arg2).
-arc(r__manager_0006_0008,r__theatre_0006_0011,r__of_0006_0009).
-arc(r__explaining_0006_0013,question_0006_1012,arg1).
-arc(r__were_0006_0017,r__what_0006_0014,prd2).
-arc(r__were_0006_0017,r__problems_0006_0016,arg0).
-arc(r__and_0006_0018,r__explaining_0006_0013,conj1).
-arc(r__and_0006_0018,r__asking_0006_0019,conj2).
-arc(r__asking_0006_0019,r__money_0006_0022,r__for_0006_0020_clr).
-arc(r__money_0006_0022,r__back_0006_0023,quality3).
+arc(cnt_0006_1008,r_0006_0003__write,scope).
+arc(cnt_0006_1008,r_0006_0018__and,restriction).
+arc(imperative_0006_1002,r_0006_0001__Then,scope).
+arc(question_0006_1012,r_0006_0017__were,scope).
+arc(r_0006_0001__Then,cnt_0006_1008,scope).
+arc(r_0006_0003__write,r_0006_0005__letter,arg1).
+arc(r_0006_0003__write,r_0006_0008__manager,r_0006_0006__to_arg2).
+arc(r_0006_0008__manager,r_0006_0011__theatre,r_0006_0009__of).
+arc(r_0006_0013__explaining,question_0006_1012,arg1).
+arc(r_0006_0017__were,r_0006_0014__what,prd2).
+arc(r_0006_0017__were,r_0006_0016__problems,arg0).
+arc(r_0006_0018__and,r_0006_0013__explaining,conj1).
+arc(r_0006_0018__and,r_0006_0019__asking,conj2).
+arc(r_0006_0019__asking,r_0006_0022__money,r_0006_0020__for_clr).
+arc(r_0006_0022__money,r_0006_0023__back,quality3).
 
 </pre>
 <br>
@@ -263,35 +263,35 @@ fof(id_6_A_fce_0102_2000_06,axiom,
       ( STATEX10 = OPERATORX12
       &amp; isA(OPERATORX12,question_0006_1012)
       &amp; scope(OPERATORX12) = EVENTX15
-      &amp; isA(EVENTX15,r__were_0006_0017)
+      &amp; isA(EVENTX15,r_0006_0017__were)
       &amp; prd2(EVENTX15) = ENTITYX13
       &amp; arg0(EVENTX15) = ENTITYX14
-      &amp; isA(ENTITYX5,r__letter_0006_0005)
-      &amp; isA(ENTITYX6,r__manager_0006_0008)
-      &amp; r__of_0006_0009(ENTITYX6) = ENTITYX7
-      &amp; isA(ENTITYX7,r__theatre_0006_0011)
-      &amp; isA(ENTITYX13,r__what_0006_0014)
-      &amp; isA(ENTITYX14,r__problems_0006_0016)
-      &amp; isA(ENTITYX17,r__money_0006_0022)
+      &amp; isA(ENTITYX5,r_0006_0005__letter)
+      &amp; isA(ENTITYX6,r_0006_0008__manager)
+      &amp; r_0006_0009__of(ENTITYX6) = ENTITYX7
+      &amp; isA(ENTITYX7,r_0006_0011__theatre)
+      &amp; isA(ENTITYX13,r_0006_0014__what)
+      &amp; isA(ENTITYX14,r_0006_0016__problems)
+      &amp; isA(ENTITYX17,r_0006_0022__money)
       &amp; quality3(ENTITYX17) = QUALITYX18
-      &amp; isA(QUALITYX18,r__back_0006_0023)
+      &amp; isA(QUALITYX18,r_0006_0023__back)
       &amp; isA(OPERATORX2,imperative_0006_1002)
       &amp; scope(OPERATORX2) = OPERATORX4
-      &amp; isA(OPERATORX4,r__Then_0006_0001)
+      &amp; isA(OPERATORX4,r_0006_0001__Then)
       &amp; scope(OPERATORX4) = CONNX9
       &amp; isA(CONNX9,cnt_0006_1008)
       &amp; scope(CONNX9) = EVENTX21
-      &amp; isA(EVENTX21,r__write_0006_0003)
+      &amp; isA(EVENTX21,r_0006_0003__write)
       &amp; arg1(EVENTX21) = ENTITYX5
-      &amp; r__to_0006_0006_arg2(EVENTX21) = ENTITYX6
+      &amp; r_0006_0006__to_arg2(EVENTX21) = ENTITYX6
       &amp; restriction(CONNX9) = CONJX20
-      &amp; isA(CONJX20,r__and_0006_0018)
+      &amp; isA(CONJX20,r_0006_0018__and)
       &amp; conj1(CONJX20) = EVENTX16
-      &amp; isA(EVENTX16,r__explaining_0006_0013)
+      &amp; isA(EVENTX16,r_0006_0013__explaining)
       &amp; arg1(EVENTX16) = STATEX10
       &amp; conj2(CONJX20) = EVENTX19
-      &amp; isA(EVENTX19,r__asking_0006_0019)
-      &amp; r__for_0006_0020_clr(EVENTX19) = ENTITYX17 ) ).
+      &amp; isA(EVENTX19,r_0006_0019__asking)
+      &amp; r_0006_0020__for_clr(EVENTX19) = ENTITYX17 ) ).
 
 
 </pre>

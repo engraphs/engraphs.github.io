@@ -82,8 +82,8 @@ The Captain slid back the port window so that the surface of the planet under th
 <!-- 0045_0008_cnt -->
 <g id="node5" class="node">
 <title>0045_0008_cnt</title>
-<ellipse fill="none" stroke="black" cx="266.5" cy="-366" rx="68.79" ry="18"/>
-<text text-anchor="middle" x="266.5" y="-362.3" font-family="fixed" font-size="14.00">so_that_[cnt]</text>
+<ellipse fill="none" stroke="black" cx="266.5" cy="-366" rx="64.19" ry="18"/>
+<text text-anchor="middle" x="266.5" y="-362.3" font-family="fixed" font-size="14.00">so_that[cnt]</text>
 </g>
 <!-- 0045_0008_cnt&#45;&gt;0045_0003 -->
 <g id="edge4" class="edge">
@@ -161,37 +161,37 @@ The Captain slid back the port window so that the surface of the planet under th
 </svg>
 <br>
 <pre>
-arc(r__slid_0045_0003,r__Captain_0045_0002,arg0).
-arc(r__slid_0045_0003,r__back_0045_0004,dir3).
-arc(r__slid_0045_0003,r__port_0045_0006_r__window_0045_0007,arg1).
-arc(r__so_that_0045_0008_cnt,r__slid_0045_0003,scope).
-arc(r__so_that_0045_0008_cnt,r__was_0045_0016,restriction).
-arc(r__surface_0045_0010,r__planet_0045_0013,r__of_0045_0011).
-arc(r__planet_0045_0013,r__them_0045_0015,r__under_0045_0014).
-arc(r__was_0045_0016,r__surface_0045_0010,arg0).
-arc(r__was_0045_0016,r__visible_0045_0017,prd2).
+arc(r_0045_0003__slid,r_0045_0002__Captain,arg0).
+arc(r_0045_0003__slid,r_0045_0004__back,dir3).
+arc(r_0045_0003__slid,r_0045_0006__port_window,arg1).
+arc(r_0045_0008__so_that_cnt,r_0045_0003__slid,scope).
+arc(r_0045_0008__so_that_cnt,r_0045_0016__was,restriction).
+arc(r_0045_0010__surface,r_0045_0013__planet,r_0045_0011__of).
+arc(r_0045_0013__planet,r_0045_0015__them,r_0045_0014__under).
+arc(r_0045_0016__was,r_0045_0010__surface,arg0).
+arc(r_0045_0016__was,r_0045_0017__visible,prd2).
 
 </pre>
 <br>
 <pre>
 fof(id_45_A_DICK_1952,axiom,
     ? [CONNX4,EVENTX8,EVENTX9,CAPTAINX1,ENTITYX3,ENTITYX5,ENTITYX6,QUALITYX2,ATTRIBX7] :
-      ( isA(CAPTAINX1,r__Captain_0045_0002)
-      &amp; isA(ENTITYX3,r__port_0045_0006_r__window_0045_0007)
-      &amp; isA(ENTITYX5,r__surface_0045_0010)
-      &amp; r__of_0045_0011(ENTITYX5) = ENTITYX6
-      &amp; isA(ENTITYX6,r__planet_0045_0013)
-      &amp; r__under_0045_0014(ENTITYX6) = r__them_0045_0015
-      &amp; isA(QUALITYX2,r__back_0045_0004)
-      &amp; isA(ATTRIBX7,r__visible_0045_0017)
-      &amp; isA(CONNX4,r__so_that_0045_0008_cnt)
+      ( isA(CAPTAINX1,r_0045_0002__Captain)
+      &amp; isA(ENTITYX3,r_0045_0006__port_window)
+      &amp; isA(ENTITYX5,r_0045_0010__surface)
+      &amp; r_0045_0011__of(ENTITYX5) = ENTITYX6
+      &amp; isA(ENTITYX6,r_0045_0013__planet)
+      &amp; r_0045_0014__under(ENTITYX6) = r_0045_0015__them
+      &amp; isA(QUALITYX2,r_0045_0004__back)
+      &amp; isA(ATTRIBX7,r_0045_0017__visible)
+      &amp; isA(CONNX4,r_0045_0008__so_that_cnt)
       &amp; scope(CONNX4) = EVENTX9
-      &amp; isA(EVENTX9,r__slid_0045_0003)
+      &amp; isA(EVENTX9,r_0045_0003__slid)
       &amp; arg0(EVENTX9) = CAPTAINX1
       &amp; dir3(EVENTX9) = QUALITYX2
       &amp; arg1(EVENTX9) = ENTITYX3
       &amp; restriction(CONNX4) = EVENTX8
-      &amp; isA(EVENTX8,r__was_0045_0016)
+      &amp; isA(EVENTX8,r_0045_0016__was)
       &amp; arg0(EVENTX8) = ENTITYX5
       &amp; prd2(EVENTX8) = ATTRIBX7 ) ).
 

@@ -82,8 +82,8 @@ Some books win literary prizes because they are special in some way .
 <!-- 0027_0006_cnt -->
 <g id="node5" class="node">
 <title>0027_0006_cnt</title>
-<ellipse fill="none" stroke="black" cx="140.9" cy="-279" rx="73.39" ry="18"/>
-<text text-anchor="middle" x="140.9" y="-275.3" font-family="fixed" font-size="14.00">because_[cnt]</text>
+<ellipse fill="none" stroke="black" cx="140.9" cy="-279" rx="69.59" ry="18"/>
+<text text-anchor="middle" x="140.9" y="-275.3" font-family="fixed" font-size="14.00">because[cnt]</text>
 </g>
 <!-- 0027_0006_cnt&#45;&gt;0027_0003 -->
 <g id="edge4" class="edge">
@@ -142,35 +142,35 @@ Some books win literary prizes because they are special in some way .
 </svg>
 <br>
 <pre>
-arc(r__win_0027_0003,r__books_0027_0002,arg0).
-arc(r__win_0027_0003,r__prizes_0027_0005,arg1).
-arc(r__prizes_0027_0005,r__literary_0027_0004,attrib1).
-arc(r__because_0027_0006_cnt,r__win_0027_0003,scope).
-arc(r__because_0027_0006_cnt,r__are_0027_0008,restriction).
-arc(r__are_0027_0008,r__books_0027_0002,arg0).
-arc(r__are_0027_0008,r__special_0027_0009,prd2).
-arc(r__special_0027_0009,r__way_0027_0012,r__in_0027_0010).
+arc(r_0027_0003__win,r_0027_0002__books,arg0).
+arc(r_0027_0003__win,r_0027_0005__prizes,arg1).
+arc(r_0027_0005__prizes,r_0027_0004__literary,attrib1).
+arc(r_0027_0006__because_cnt,r_0027_0003__win,scope).
+arc(r_0027_0006__because_cnt,r_0027_0008__are,restriction).
+arc(r_0027_0008__are,r_0027_0002__books,arg0).
+arc(r_0027_0008__are,r_0027_0009__special,prd2).
+arc(r_0027_0009__special,r_0027_0012__way,r_0027_0010__in).
 
 </pre>
 <br>
 <pre>
 fof(id_27_A_fce_0101_2000_06,axiom,
     ? [BOOKSX5,CONNX4,EVENTX8,EVENTX9,BOOKSX1,ENTITYX2,ENTITYX7,ATTRIBX6,ATTRIBX3] :
-      ( isA(BOOKSX1,r__books_0027_0002)
-      &amp; isA(ENTITYX2,r__prizes_0027_0005)
+      ( isA(BOOKSX1,r_0027_0002__books)
+      &amp; isA(ENTITYX2,r_0027_0005__prizes)
       &amp; attrib1(ENTITYX2) = ATTRIBX3
       &amp; BOOKSX5 = BOOKSX1
-      &amp; isA(ENTITYX7,r__way_0027_0012)
-      &amp; isA(ATTRIBX3,r__literary_0027_0004)
-      &amp; isA(ATTRIBX6,r__special_0027_0009)
-      &amp; r__in_0027_0010(ATTRIBX6) = ENTITYX7
-      &amp; isA(CONNX4,r__because_0027_0006_cnt)
+      &amp; isA(ENTITYX7,r_0027_0012__way)
+      &amp; isA(ATTRIBX3,r_0027_0004__literary)
+      &amp; isA(ATTRIBX6,r_0027_0009__special)
+      &amp; r_0027_0010__in(ATTRIBX6) = ENTITYX7
+      &amp; isA(CONNX4,r_0027_0006__because_cnt)
       &amp; scope(CONNX4) = EVENTX9
-      &amp; isA(EVENTX9,r__win_0027_0003)
+      &amp; isA(EVENTX9,r_0027_0003__win)
       &amp; arg0(EVENTX9) = BOOKSX1
       &amp; arg1(EVENTX9) = ENTITYX2
       &amp; restriction(CONNX4) = EVENTX8
-      &amp; isA(EVENTX8,r__are_0027_0008)
+      &amp; isA(EVENTX8,r_0027_0008__are)
       &amp; arg0(EVENTX8) = BOOKSX5
       &amp; prd2(EVENTX8) = ATTRIBX6 ) ).
 

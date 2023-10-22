@@ -78,7 +78,7 @@ The sect was begun in 1339 by Soseki MUSOU .
 <title>0099_0004&#45;&gt;0099_0006</title>
 <path fill="none" stroke="black" d="M111.25,-86.8C111.25,-75.16 111.25,-59.55 111.25,-46.24"/>
 <polygon fill="black" stroke="black" points="114.75,-46.18 111.25,-36.18 107.75,-46.18 114.75,-46.18"/>
-<text text-anchor="middle" x="140.25" y="-57.8" font-family="fixed" font-size="14.00">in_[tmp]</text>
+<text text-anchor="middle" x="137.25" y="-57.8" font-family="fixed" font-size="14.00">in[tmp]</text>
 </g>
 <!-- 0099_0008_0099_0009 -->
 <g id="node5" class="node">
@@ -89,18 +89,18 @@ The sect was begun in 1339 by Soseki MUSOU .
 <!-- 0099_0004&#45;&gt;0099_0008_0099_0009 -->
 <g id="edge4" class="edge">
 <title>0099_0004&#45;&gt;0099_0008_0099_0009</title>
-<path fill="none" stroke="black" d="M136.04,-90.79C147.53,-84.47 161.26,-76.64 173.25,-69 186.76,-60.4 201.23,-50.23 213.5,-41.31"/>
-<polygon fill="black" stroke="black" points="215.6,-44.11 221.59,-35.37 211.46,-38.47 215.6,-44.11"/>
-<text text-anchor="middle" x="243.75" y="-57.8" font-family="fixed" font-size="14.00">[arg0]by_[lgs]</text>
+<path fill="none" stroke="black" d="M133.67,-90.15C143.94,-83.77 156.25,-76.06 167.25,-69 181.42,-59.91 196.98,-49.71 210.3,-40.91"/>
+<polygon fill="black" stroke="black" points="212.29,-43.8 218.7,-35.36 208.43,-37.96 212.29,-43.8"/>
+<text text-anchor="middle" x="236.75" y="-57.8" font-family="fixed" font-size="14.00">[arg0]by[lgs]</text>
 </g>
 </g>
 </svg>
 <br>
 <pre>
-arc(r__was_0099_0003,r__begun_0099_0004,catenative).
-arc(r__begun_0099_0004,r__sect_0099_0002,arg1).
-arc(r__begun_0099_0004,r__1339_0099_0006,r__in_0099_0005_tmp).
-arc(r__begun_0099_0004,r__Soseki_0099_0008_r__MUSOU_0099_0009,arg0_r__by_0099_0007_lgs).
+arc(r_0099_0003__was,r_0099_0004__begun,catenative).
+arc(r_0099_0004__begun,r_0099_0002__sect,arg1).
+arc(r_0099_0004__begun,r_0099_0006__1339,r_0099_0005__in_tmp).
+arc(r_0099_0004__begun,r_0099_0008__Soseki_MUSOU,arg0_by_lgs).
 
 </pre>
 <br>
@@ -108,13 +108,13 @@ arc(r__begun_0099_0004,r__Soseki_0099_0008_r__MUSOU_0099_0009,arg0_r__by_0099_00
 fof(id_99_A_KYOTO_2,axiom,
     ? [CATENATIVEX2,EVENTX5,EVENTX4,ENTITYX1,ENTITYX3] :
       ( CATENATIVEX2 = EVENTX4
-      &amp; isA(EVENTX4,r__begun_0099_0004)
-      &amp; arg0_r__by_0099_0007_lgs(EVENTX4) = r__Soseki_0099_0008_r__MUSOU_0099_0009
+      &amp; isA(EVENTX4,r_0099_0004__begun)
+      &amp; arg0_by_lgs(EVENTX4) = r_0099_0008__Soseki_MUSOU
       &amp; arg1(EVENTX4) = ENTITYX1
-      &amp; r__in_0099_0005_tmp(EVENTX4) = ENTITYX3
-      &amp; isA(ENTITYX1,r__sect_0099_0002)
-      &amp; isA(ENTITYX3,r__1339_0099_0006)
-      &amp; isA(EVENTX5,r__was_0099_0003)
+      &amp; r_0099_0005__in_tmp(EVENTX4) = ENTITYX3
+      &amp; isA(ENTITYX1,r_0099_0002__sect)
+      &amp; isA(ENTITYX3,r_0099_0006__1339)
+      &amp; isA(EVENTX5,r_0099_0003__was)
       &amp; catenative(EVENTX5) = CATENATIVEX2 ) ).
 
 

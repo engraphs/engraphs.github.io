@@ -75,9 +75,9 @@ Bob Daley wrote an editor called qedx in PL&lt;slash&gt;1 for the Multics projec
 <!-- 0056_0003&#45;&gt;0056_0009 -->
 <g id="edge3" class="edge">
 <title>0056_0003&#45;&gt;0056_0009</title>
-<path fill="none" stroke="black" d="M273.7,-94.77C251.94,-87.95 221.84,-78.28 195.64,-69 167.17,-58.92 135.53,-46.77 110.59,-36.97"/>
-<polygon fill="black" stroke="black" points="111.63,-33.62 101.04,-33.21 109.06,-40.13 111.63,-33.62"/>
-<text text-anchor="middle" x="225.14" y="-57.8" font-family="fixed" font-size="14.00">in_[mnr]</text>
+<path fill="none" stroke="black" d="M274.73,-93.97C254.75,-87.02 227.56,-77.52 203.64,-69 173.39,-58.23 139.48,-45.94 112.85,-36.25"/>
+<polygon fill="black" stroke="black" points="113.98,-32.93 103.38,-32.8 111.58,-39.51 113.98,-32.93"/>
+<text text-anchor="middle" x="229.64" y="-57.8" font-family="fixed" font-size="14.00">in[mnr]</text>
 </g>
 <!-- 0056_0012_0056_0013 -->
 <g id="node5" class="node">
@@ -88,9 +88,9 @@ Bob Daley wrote an editor called qedx in PL&lt;slash&gt;1 for the Multics projec
 <!-- 0056_0003&#45;&gt;0056_0012_0056_0013 -->
 <g id="edge4" class="edge">
 <title>0056_0003&#45;&gt;0056_0012_0056_0013</title>
-<path fill="none" stroke="black" d="M289.28,-88.34C283.76,-82.31 277.4,-75.34 271.64,-69 264.03,-60.61 255.73,-51.4 248.35,-43.19"/>
-<polygon fill="black" stroke="black" points="250.9,-40.79 241.61,-35.7 245.69,-45.47 250.9,-40.79"/>
-<text text-anchor="middle" x="302.14" y="-57.8" font-family="fixed" font-size="14.00">for_[bnf]</text>
+<path fill="none" stroke="black" d="M289.52,-88.41C278.17,-75.87 262,-58.03 248.91,-43.58"/>
+<polygon fill="black" stroke="black" points="251.31,-41.01 242,-35.95 246.12,-45.71 251.31,-41.01"/>
+<text text-anchor="middle" x="296.64" y="-57.8" font-family="fixed" font-size="14.00">for[bnf]</text>
 </g>
 <!-- 0056_0006 -->
 <g id="node6" class="node">
@@ -122,30 +122,30 @@ Bob Daley wrote an editor called qedx in PL&lt;slash&gt;1 for the Multics projec
 </svg>
 <br>
 <pre>
-arc(r__wrote_0056_0003,r__Bob_0056_0001_r__Daley_0056_0002,arg0).
-arc(r__wrote_0056_0003,r__editor_0056_0005,arg1).
-arc(r__wrote_0056_0003,r__PL_slash_1_0056_0009,r__in_0056_0008_mnr).
-arc(r__wrote_0056_0003,r__Multics_0056_0012_r__project_0056_0013,r__for_0056_0010_bnf).
-arc(r__called_0056_0006,r__editor_0056_0005,arg1).
-arc(r__called_0056_0006,r__qedx_0056_0007,prd).
+arc(r_0056_0003__wrote,r_0056_0001__Bob_Daley,arg0).
+arc(r_0056_0003__wrote,r_0056_0005__editor,arg1).
+arc(r_0056_0003__wrote,r_0056_0009__PL_slash_1,r_0056_0008__in_mnr).
+arc(r_0056_0003__wrote,r_0056_0012__Multics_project,r_0056_0010__for_bnf).
+arc(r_0056_0006__called,r_0056_0005__editor,arg1).
+arc(r_0056_0006__called,r_0056_0007__qedx,prd).
 
 </pre>
 <br>
 <pre>
 fof(id_56_A_history_of_qed,axiom,
     ? [EVENTX7,EVENTX4,ENTITYX1,ENTITYX5,ENTITYX6,ENTITYX3] :
-      ( isA(EVENTX4,r__called_0056_0006)
+      ( isA(EVENTX4,r_0056_0006__called)
       &amp; arg1(EVENTX4) = ENTITYX1
       &amp; prd(EVENTX4) = ENTITYX3
-      &amp; isA(ENTITYX1,r__editor_0056_0005)
-      &amp; isA(ENTITYX3,r__qedx_0056_0007)
-      &amp; isA(ENTITYX5,r__PL_slash_1_0056_0009)
-      &amp; isA(ENTITYX6,r__Multics_0056_0012_r__project_0056_0013)
-      &amp; isA(EVENTX7,r__wrote_0056_0003)
-      &amp; arg0(EVENTX7) = r__Bob_0056_0001_r__Daley_0056_0002
+      &amp; isA(ENTITYX1,r_0056_0005__editor)
+      &amp; isA(ENTITYX3,r_0056_0007__qedx)
+      &amp; isA(ENTITYX5,r_0056_0009__PL_slash_1)
+      &amp; isA(ENTITYX6,r_0056_0012__Multics_project)
+      &amp; isA(EVENTX7,r_0056_0003__wrote)
+      &amp; arg0(EVENTX7) = r_0056_0001__Bob_Daley
       &amp; arg1(EVENTX7) = ENTITYX1
-      &amp; r__in_0056_0008_mnr(EVENTX7) = ENTITYX5
-      &amp; r__for_0056_0010_bnf(EVENTX7) = ENTITYX6 ) ).
+      &amp; r_0056_0008__in_mnr(EVENTX7) = ENTITYX5
+      &amp; r_0056_0010__for_bnf(EVENTX7) = ENTITYX6 ) ).
 
 
 </pre>

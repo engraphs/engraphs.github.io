@@ -51,7 +51,7 @@ Apply to Ocean World now !
 <title>0028_0001&#45;&gt;0028_0003_0028_0004</title>
 <path fill="none" stroke="black" d="M116.36,-87.61C107.96,-75.31 96.32,-58.23 86.74,-44.2"/>
 <polygon fill="black" stroke="black" points="89.62,-42.21 81.09,-35.92 83.83,-46.15 89.62,-42.21"/>
-<text text-anchor="middle" x="127.04" y="-57.8" font-family="fixed" font-size="14.00">to_[clr]</text>
+<text text-anchor="middle" x="123.54" y="-57.8" font-family="fixed" font-size="14.00">to[clr]</text>
 </g>
 <!-- 0028_0005 -->
 <g id="node3" class="node">
@@ -62,9 +62,9 @@ Apply to Ocean World now !
 <!-- 0028_0001&#45;&gt;0028_0005 -->
 <g id="edge2" class="edge">
 <title>0028_0001&#45;&gt;0028_0005</title>
-<path fill="none" stroke="black" d="M141.06,-87.93C145.8,-82.09 151.06,-75.36 155.54,-69 161.19,-61 166.96,-51.97 171.97,-43.82"/>
-<polygon fill="black" stroke="black" points="175.07,-45.45 177.24,-35.08 169.08,-41.83 175.07,-45.45"/>
-<text text-anchor="middle" x="185.04" y="-57.8" font-family="fixed" font-size="14.00">[tmp]</text>
+<path fill="none" stroke="black" d="M138.92,-87.61C147.68,-74.99 159.93,-57.34 169.81,-43.11"/>
+<polygon fill="black" stroke="black" points="172.77,-44.97 175.6,-34.76 167.02,-40.98 172.77,-44.97"/>
+<text text-anchor="middle" x="181.04" y="-57.8" font-family="fixed" font-size="14.00">[tmp]</text>
 </g>
 <!-- imperative_0028_1002 -->
 <g id="node4" class="node">
@@ -83,20 +83,20 @@ Apply to Ocean World now !
 </svg>
 <br>
 <pre>
-arc(imperative_0028_1002,r__Apply_0028_0001,scope).
-arc(r__Apply_0028_0001,r__Ocean_0028_0003_r__World_0028_0004,r__to_0028_0002_clr).
-arc(r__Apply_0028_0001,r__now_0028_0005,tmp3).
+arc(imperative_0028_1002,r_0028_0001__Apply,scope).
+arc(r_0028_0001__Apply,r_0028_0003__Ocean_World,r_0028_0002__to_clr).
+arc(r_0028_0001__Apply,r_0028_0005__now,tmp3).
 
 </pre>
 <br>
 <pre>
 fof(id_28_A_fce_0102_2001_03,axiom,
     ? [OPERATORX2,EVENTX5,QUALITYX4] :
-      ( isA(QUALITYX4,r__now_0028_0005)
+      ( isA(QUALITYX4,r_0028_0005__now)
       &amp; isA(OPERATORX2,imperative_0028_1002)
       &amp; scope(OPERATORX2) = EVENTX5
-      &amp; isA(EVENTX5,r__Apply_0028_0001)
-      &amp; r__to_0028_0002_clr(EVENTX5) = r__Ocean_0028_0003_r__World_0028_0004
+      &amp; isA(EVENTX5,r_0028_0001__Apply)
+      &amp; r_0028_0002__to_clr(EVENTX5) = r_0028_0003__Ocean_World
       &amp; tmp3(EVENTX5) = QUALITYX4 ) ).
 
 

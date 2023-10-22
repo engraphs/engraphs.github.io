@@ -233,21 +233,21 @@ Mr Powell devoted half his speech to giving details of plans for improving the h
 </svg>
 <br>
 <pre>
-arc(quantificational_r__half_0125_0004,r__devoted_0125_0003,scope).
-arc(quantificational_r__half_0125_0004,r__speech_0125_0006,restriction).
-arc(r__devoted_0125_0003,r__Mr_0125_0001_r__Powell_0125_0002,arg0).
-arc(r__devoted_0125_0003,r__speech_0125_0006,arg1).
-arc(r__speech_0125_0006,r__his_0125_0005,genv).
-arc(r__speech_0125_0006,r__giving_0125_0008,r__to_0125_0007).
-arc(r__giving_0125_0008,r__details_0125_0009,arg1).
-arc(r__details_0125_0009,r__plans_0125_0011,r__of_0125_0010).
-arc(r__plans_0125_0011,r__improving_0125_0013,r__for_0125_0012).
-arc(r__improving_0125_0013,r__hospital_0125_0015_r__service_0125_0016,arg1).
-arc(r__indeed_0125_0020,r__is_0125_0023,scope).
-arc(r__is_0125_0023,r__making_0125_0024,catenative).
-arc(r__making_0125_0024,r__government_0125_0022,arg0).
-arc(r__making_0125_0024,r__progress_0125_0025,arg1).
-arc(r__progress_0125_0025,r__hospital_0125_0015_r__service_0125_0016,r__on_0125_0018).
+arc(r_0125_0003__devoted,r_0125_0001__Mr_Powell,arg0).
+arc(r_0125_0003__devoted,r_0125_0006__speech,arg1).
+arc(r_0125_0004__quantificational__half,r_0125_0003__devoted,scope).
+arc(r_0125_0004__quantificational__half,r_0125_0006__speech,restriction).
+arc(r_0125_0006__speech,r_0125_0005__his,genv).
+arc(r_0125_0006__speech,r_0125_0008__giving,r_0125_0007__to).
+arc(r_0125_0008__giving,r_0125_0009__details,arg1).
+arc(r_0125_0009__details,r_0125_0011__plans,r_0125_0010__of).
+arc(r_0125_0011__plans,r_0125_0013__improving,r_0125_0012__for).
+arc(r_0125_0013__improving,r_0125_0015__hospital_service,arg1).
+arc(r_0125_0020__indeed,r_0125_0023__is,scope).
+arc(r_0125_0023__is,r_0125_0024__making,catenative).
+arc(r_0125_0024__making,r_0125_0022__government,arg0).
+arc(r_0125_0024__making,r_0125_0025__progress,arg1).
+arc(r_0125_0025__progress,r_0125_0015__hospital_service,r_0125_0018__on).
 
 </pre>
 <br>
@@ -255,35 +255,35 @@ arc(r__progress_0125_0025,r__hospital_0125_0015_r__service_0125_0016,r__on_0125_
 fof(id_125_A_lob_A01,axiom,
     ? [EVENTX3,EVENTX8,CATENATIVEX14,QUANTX2,EVENTX20,EVENTX19,EVENTX18,OPERATORX12,EVENTX17,EVENTX16,ENTITYX1,ENTITYX6,ENTITYX7,ENTITYX11,ENTITYX13,ENTITYX15] :
       ( EVENTX3 = EVENTX19
-      &amp; isA(EVENTX19,r__giving_0125_0008)
+      &amp; isA(EVENTX19,r_0125_0008__giving)
       &amp; arg1(EVENTX19) = ENTITYX6
       &amp; EVENTX8 = EVENTX18
-      &amp; isA(EVENTX18,r__improving_0125_0013)
+      &amp; isA(EVENTX18,r_0125_0013__improving)
       &amp; arg1(EVENTX18) = ENTITYX11
       &amp; CATENATIVEX14 = EVENTX16
-      &amp; isA(EVENTX16,r__making_0125_0024)
+      &amp; isA(EVENTX16,r_0125_0024__making)
       &amp; arg0(EVENTX16) = ENTITYX13
       &amp; arg1(EVENTX16) = ENTITYX15
-      &amp; isA(ENTITYX6,r__details_0125_0009)
-      &amp; r__of_0125_0010(ENTITYX6) = ENTITYX7
-      &amp; isA(ENTITYX7,r__plans_0125_0011)
-      &amp; r__for_0125_0012(ENTITYX7) = EVENTX8
-      &amp; isA(OPERATORX12,r__indeed_0125_0020)
+      &amp; isA(ENTITYX6,r_0125_0009__details)
+      &amp; r_0125_0010__of(ENTITYX6) = ENTITYX7
+      &amp; isA(ENTITYX7,r_0125_0011__plans)
+      &amp; r_0125_0012__for(ENTITYX7) = EVENTX8
+      &amp; isA(OPERATORX12,r_0125_0020__indeed)
       &amp; scope(OPERATORX12) = EVENTX17
-      &amp; isA(EVENTX17,r__is_0125_0023)
+      &amp; isA(EVENTX17,r_0125_0023__is)
       &amp; catenative(EVENTX17) = CATENATIVEX14
-      &amp; isA(ENTITYX11,r__hospital_0125_0015_r__service_0125_0016)
-      &amp; isA(ENTITYX13,r__government_0125_0022)
-      &amp; isA(ENTITYX15,r__progress_0125_0025)
-      &amp; r__on_0125_0018(ENTITYX15) = ENTITYX11
-      &amp; isA(QUANTX2,quantificational_r__half_0125_0004)
+      &amp; isA(ENTITYX11,r_0125_0015__hospital_service)
+      &amp; isA(ENTITYX13,r_0125_0022__government)
+      &amp; isA(ENTITYX15,r_0125_0025__progress)
+      &amp; r_0125_0018__on(ENTITYX15) = ENTITYX11
+      &amp; isA(QUANTX2,r_0125_0004__quantificational__half)
       &amp; restriction(QUANTX2) = ENTITYX1
-      &amp; isA(ENTITYX1,r__speech_0125_0006)
-      &amp; genv(ENTITYX1) = r__his_0125_0005
-      &amp; r__to_0125_0007(ENTITYX1) = EVENTX3
+      &amp; isA(ENTITYX1,r_0125_0006__speech)
+      &amp; genv(ENTITYX1) = r_0125_0005__his
+      &amp; r_0125_0007__to(ENTITYX1) = EVENTX3
       &amp; scope(QUANTX2) = EVENTX20
-      &amp; isA(EVENTX20,r__devoted_0125_0003)
-      &amp; arg0(EVENTX20) = r__Mr_0125_0001_r__Powell_0125_0002
+      &amp; isA(EVENTX20,r_0125_0003__devoted)
+      &amp; arg0(EVENTX20) = r_0125_0001__Mr_Powell
       &amp; arg1(EVENTX20) = ENTITYX1 ) ).
 
 

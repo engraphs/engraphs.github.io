@@ -65,7 +65,7 @@ A Rat Drawn In Tears
 <title>0029_0003&#45;&gt;0029_0005</title>
 <path fill="none" stroke="black" d="M74.81,-87.37C77.81,-81.59 81.12,-75.04 84,-69 87.67,-61.3 91.48,-52.83 94.88,-45.09"/>
 <polygon fill="black" stroke="black" points="98.15,-46.35 98.92,-35.78 91.72,-43.56 98.15,-46.35"/>
-<text text-anchor="middle" x="115.5" y="-57.8" font-family="fixed" font-size="14.00">In_[loc]</text>
+<text text-anchor="middle" x="112" y="-57.8" font-family="fixed" font-size="14.00">In[loc]</text>
 </g>
 <!-- z_0029_1006 -->
 <g id="node4" class="node">
@@ -84,9 +84,9 @@ A Rat Drawn In Tears
 </svg>
 <br>
 <pre>
-arc(r__Drawn_0029_0003,r__Rat_0029_0002,arg1).
-arc(r__Drawn_0029_0003,r__Tears_0029_0005,r__In_0029_0004_loc).
-arc(z_0029_1006,r__Drawn_0029_0003,catenative).
+arc(r_0029_0003__Drawn,r_0029_0002__Rat,arg1).
+arc(r_0029_0003__Drawn,r_0029_0005__Tears,r_0029_0004__In_loc).
+arc(z_0029_1006,r_0029_0003__Drawn,catenative).
 
 </pre>
 <br>
@@ -94,11 +94,11 @@ arc(z_0029_1006,r__Drawn_0029_0003,catenative).
 fof(id_29_A_KYOTO_1,axiom,
     ? [CATENATIVEX2,EVENTX7,EVENTX5,ENTITYX1,ENTITYX4] :
       ( CATENATIVEX2 = EVENTX5
-      &amp; isA(EVENTX5,r__Drawn_0029_0003)
+      &amp; isA(EVENTX5,r_0029_0003__Drawn)
       &amp; arg1(EVENTX5) = ENTITYX1
-      &amp; r__In_0029_0004_loc(EVENTX5) = ENTITYX4
-      &amp; isA(ENTITYX1,r__Rat_0029_0002)
-      &amp; isA(ENTITYX4,r__Tears_0029_0005)
+      &amp; r_0029_0004__In_loc(EVENTX5) = ENTITYX4
+      &amp; isA(ENTITYX1,r_0029_0002__Rat)
+      &amp; isA(ENTITYX4,r_0029_0005__Tears)
       &amp; isA(EVENTX7,z_0029_1006)
       &amp; catenative(EVENTX7) = CATENATIVEX2 ) ).
 

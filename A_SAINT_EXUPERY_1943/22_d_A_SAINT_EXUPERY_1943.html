@@ -37,8 +37,8 @@
 <!-- 0096_0002_cnt -->
 <g id="node1" class="node">
 <title>0096_0002_cnt</title>
-<ellipse fill="none" stroke="black" cx="404" cy="-366" rx="74.19" ry="18"/>
-<text text-anchor="middle" x="404" y="-362.3" font-family="fixed" font-size="14.00">Because_[cnt]</text>
+<ellipse fill="none" stroke="black" cx="404" cy="-366" rx="69.59" ry="18"/>
+<text text-anchor="middle" x="404" y="-362.3" font-family="fixed" font-size="14.00">Because[cnt]</text>
 </g>
 <!-- quantificational_0096_0006 -->
 <g id="node2" class="node">
@@ -168,36 +168,36 @@
 </svg>
 <br>
 <pre>
-arc(quantificational_r__everything_0096_0006,r__is_0096_0007,scope).
-arc(quantificational_r__everything_0096_0006,z_0096_1007,restriction).
-arc(r__Because_0096_0002_cnt,quantificational_r__everything_0096_0006,restriction).
-arc(r__Because_0096_0002_cnt,z_0096_1011,scope).
-arc(r__live_0096_0005,r__I_0096_0004,arg0).
-arc(r__live_0096_0005,z_0096_1004,loc1).
-arc(r__is_0096_0007,r__small_0096_0009,prd2).
-arc(r__is_0096_0007,z_0096_1004,loc).
-arc(r__is_0096_0007,z_0096_1007,arg0).
-arc(r__small_0096_0009,r__very_0096_0008,quality1).
+arc(r_0096_0002__Because_cnt,r_0096_0006__quantificational__everything,restriction).
+arc(r_0096_0002__Because_cnt,z_0096_1011,scope).
+arc(r_0096_0005__live,r_0096_0004__I,arg0).
+arc(r_0096_0005__live,z_0096_1004,loc1).
+arc(r_0096_0006__quantificational__everything,r_0096_0007__is,scope).
+arc(r_0096_0006__quantificational__everything,z_0096_1007,restriction).
+arc(r_0096_0007__is,r_0096_0009__small,prd2).
+arc(r_0096_0007__is,z_0096_1004,loc).
+arc(r_0096_0007__is,z_0096_1007,arg0).
+arc(r_0096_0009__small,r_0096_0008__very,quality1).
 
 </pre>
 <br>
 <pre>
 fof(id_96_A_SAINT_EXUPERY_1943,axiom,
     ? [CONNX1,EVENTX12,QUANTX6,EVENTX10,EVENTX3,ENTITYX2,ENTITYX5,QUALITYX9,ATTRIBX8] :
-      ( isA(EVENTX3,r__live_0096_0005)
+      ( isA(EVENTX3,r_0096_0005__live)
       &amp; loc1(EVENTX3) = ENTITYX2
-      &amp; arg0(EVENTX3) = r__I_0096_0004
+      &amp; arg0(EVENTX3) = r_0096_0004__I
       &amp; isA(ENTITYX2,z_0096_1004)
-      &amp; isA(QUALITYX9,r__very_0096_0008)
-      &amp; isA(ATTRIBX8,r__small_0096_0009)
+      &amp; isA(QUALITYX9,r_0096_0008__very)
+      &amp; isA(ATTRIBX8,r_0096_0009__small)
       &amp; quality1(ATTRIBX8) = QUALITYX9
-      &amp; isA(CONNX1,r__Because_0096_0002_cnt)
+      &amp; isA(CONNX1,r_0096_0002__Because_cnt)
       &amp; restriction(CONNX1) = QUANTX6
-      &amp; isA(QUANTX6,quantificational_r__everything_0096_0006)
+      &amp; isA(QUANTX6,r_0096_0006__quantificational__everything)
       &amp; restriction(QUANTX6) = ENTITYX5
       &amp; isA(ENTITYX5,z_0096_1007)
       &amp; scope(QUANTX6) = EVENTX10
-      &amp; isA(EVENTX10,r__is_0096_0007)
+      &amp; isA(EVENTX10,r_0096_0007__is)
       &amp; loc(EVENTX10) = ENTITYX2
       &amp; arg0(EVENTX10) = ENTITYX5
       &amp; prd2(EVENTX10) = ATTRIBX8

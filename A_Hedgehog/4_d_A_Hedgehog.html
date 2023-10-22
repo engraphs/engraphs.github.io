@@ -162,15 +162,15 @@ Thank you , Madam Deputy Speaker , for giving me an Adjournment debate on hedgeh
 </svg>
 <br>
 <pre>
-arc(r__giving_0004_0008,r__me_0004_0009,arg2).
-arc(r__giving_0004_0008,r__Adjournment_0004_0011_r__debate_0004_0012,arg1).
-arc(r__Adjournment_0004_0011_r__debate_0004_0012,r__and_0004_0016,r__on_0004_0013).
-arc(r__and_0004_0016,r__hedgehog_0004_0014_r__habitats_0004_0015,conj1).
-arc(r__and_0004_0016,r__need_0004_0018,conj2).
-arc(r__need_0004_0018,r__protect_0004_0020,emb3).
-arc(r__protect_0004_0020,r__species_0004_0022,arg1).
-arc(z_0004_1014,r__Madam_0004_0003_r__Deputy_0004_0004_r__Speaker_0004_0005,voc).
-arc(z_0004_1014,r__giving_0004_0008,r__for_0004_0007).
+arc(r_0004_0008__giving,r_0004_0009__me,arg2).
+arc(r_0004_0008__giving,r_0004_0011__Adjournment_debate,arg1).
+arc(r_0004_0011__Adjournment_debate,r_0004_0016__and,r_0004_0013__on).
+arc(r_0004_0016__and,r_0004_0014__hedgehog_habitats,conj1).
+arc(r_0004_0016__and,r_0004_0018__need,conj2).
+arc(r_0004_0018__need,r_0004_0020__protect,emb3).
+arc(r_0004_0020__protect,r_0004_0022__species,arg1).
+arc(z_0004_1014,r_0004_0003__Madam_Deputy_Speaker,voc).
+arc(z_0004_1014,r_0004_0008__giving,r_0004_0007__for).
 
 </pre>
 <br>
@@ -178,24 +178,24 @@ arc(z_0004_1014,r__giving_0004_0008,r__for_0004_0007).
 fof(id_4_A_Hedgehog,axiom,
     ? [EVENTX1,STATEX8,EVENTX15,EVENTX13,EVENTX12,ENTITYX4,ENTITYX5,ENTITYX6,ENTITYX7,ENTITYX11] :
       ( EVENTX1 = EVENTX13
-      &amp; isA(EVENTX13,r__giving_0004_0008)
-      &amp; arg2(EVENTX13) = r__me_0004_0009
+      &amp; isA(EVENTX13,r_0004_0008__giving)
+      &amp; arg2(EVENTX13) = r_0004_0009__me
       &amp; arg1(EVENTX13) = ENTITYX4
       &amp; STATEX8 = EVENTX12
-      &amp; isA(EVENTX12,r__protect_0004_0020)
+      &amp; isA(EVENTX12,r_0004_0020__protect)
       &amp; arg1(EVENTX12) = ENTITYX11
-      &amp; isA(ENTITYX4,r__Adjournment_0004_0011_r__debate_0004_0012)
-      &amp; r__on_0004_0013(ENTITYX4) = ENTITYX5
-      &amp; isA(ENTITYX5,r__and_0004_0016)
+      &amp; isA(ENTITYX4,r_0004_0011__Adjournment_debate)
+      &amp; r_0004_0013__on(ENTITYX4) = ENTITYX5
+      &amp; isA(ENTITYX5,r_0004_0016__and)
       &amp; conj1(ENTITYX5) = ENTITYX6
       &amp; conj2(ENTITYX5) = ENTITYX7
-      &amp; isA(ENTITYX6,r__hedgehog_0004_0014_r__habitats_0004_0015)
-      &amp; isA(ENTITYX7,r__need_0004_0018)
+      &amp; isA(ENTITYX6,r_0004_0014__hedgehog_habitats)
+      &amp; isA(ENTITYX7,r_0004_0018__need)
       &amp; emb3(ENTITYX7) = STATEX8
-      &amp; isA(ENTITYX11,r__species_0004_0022)
+      &amp; isA(ENTITYX11,r_0004_0022__species)
       &amp; isA(EVENTX15,z_0004_1014)
-      &amp; voc(EVENTX15) = r__Madam_0004_0003_r__Deputy_0004_0004_r__Speaker_0004_0005
-      &amp; r__for_0004_0007(EVENTX15) = EVENTX1 ) ).
+      &amp; voc(EVENTX15) = r_0004_0003__Madam_Deputy_Speaker
+      &amp; r_0004_0007__for(EVENTX15) = EVENTX1 ) ).
 
 
 </pre>

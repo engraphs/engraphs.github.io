@@ -187,17 +187,17 @@ African delegates to the talks yesterday called on Mr Macmillan to cease his neg
 </svg>
 <br>
 <pre>
-arc(r__delegates_0040_0002,r__African_0040_0001,attrib1).
-arc(r__delegates_0040_0002,r__talks_0040_0005,r__to_0040_0003).
-arc(r__talks_0040_0005,r__yesterday_0040_0006,tmp3).
-arc(r__called_0040_0007_r__on_0040_0008,r__delegates_0040_0002,arg0).
-arc(r__called_0040_0007_r__on_0040_0008,r__cease_0040_0012,arg1).
-arc(r__cease_0040_0012,r__Mr_0040_0009_r__Macmillan_0040_0010,arg0).
-arc(r__cease_0040_0012,r__negotiations_0040_0014,arg1).
-arc(r__negotiations_0040_0014,r__his_0040_0013,genv).
-arc(r__negotiations_0040_0014,r__representative_0040_0019,r__with_0040_0015).
-arc(r__representative_0040_0019,r__Sir_0040_0016_r__Roy_0040_0017,genv).
-arc(r__representative_0040_0019,r__Mr_0040_0021_r__Julius_0040_0022_r__Greenfield_0040_0023,prn4).
+arc(r_0040_0002__delegates,r_0040_0001__African,attrib1).
+arc(r_0040_0002__delegates,r_0040_0005__talks,r_0040_0003__to).
+arc(r_0040_0005__talks,r_0040_0006__yesterday,tmp3).
+arc(r_0040_0007__called_on,r_0040_0002__delegates,arg0).
+arc(r_0040_0007__called_on,r_0040_0012__cease,arg1).
+arc(r_0040_0012__cease,r_0040_0009__Mr_Macmillan,arg0).
+arc(r_0040_0012__cease,r_0040_0014__negotiations,arg1).
+arc(r_0040_0014__negotiations,r_0040_0013__his,genv).
+arc(r_0040_0014__negotiations,r_0040_0019__representative,r_0040_0015__with).
+arc(r_0040_0019__representative,r_0040_0016__Sir_Roy,genv).
+arc(r_0040_0019__representative,r_0040_0021__Mr_Julius_Greenfield,prn4).
 
 </pre>
 <br>
@@ -205,23 +205,23 @@ arc(r__representative_0040_0019,r__Mr_0040_0021_r__Julius_0040_0022_r__Greenfiel
 fof(id_40_A_lob_A01,axiom,
     ? [STATEX5,EVENTX9,EVENTX8,ENTITYX1,ENTITYX6,ENTITYX7,ENTITYX3,ATTRIBX2,QUALITYX4] :
       ( STATEX5 = EVENTX8
-      &amp; isA(EVENTX8,r__cease_0040_0012)
-      &amp; arg0(EVENTX8) = r__Mr_0040_0009_r__Macmillan_0040_0010
+      &amp; isA(EVENTX8,r_0040_0012__cease)
+      &amp; arg0(EVENTX8) = r_0040_0009__Mr_Macmillan
       &amp; arg1(EVENTX8) = ENTITYX6
-      &amp; isA(ENTITYX1,r__delegates_0040_0002)
+      &amp; isA(ENTITYX1,r_0040_0002__delegates)
       &amp; attrib1(ENTITYX1) = ATTRIBX2
-      &amp; r__to_0040_0003(ENTITYX1) = ENTITYX3
-      &amp; isA(ENTITYX3,r__talks_0040_0005)
+      &amp; r_0040_0003__to(ENTITYX1) = ENTITYX3
+      &amp; isA(ENTITYX3,r_0040_0005__talks)
       &amp; tmp3(ENTITYX3) = QUALITYX4
-      &amp; isA(ENTITYX6,r__negotiations_0040_0014)
-      &amp; genv(ENTITYX6) = r__his_0040_0013
-      &amp; r__with_0040_0015(ENTITYX6) = ENTITYX7
-      &amp; isA(ENTITYX7,r__representative_0040_0019)
-      &amp; genv(ENTITYX7) = r__Sir_0040_0016_r__Roy_0040_0017
-      &amp; prn4(ENTITYX7) = r__Mr_0040_0021_r__Julius_0040_0022_r__Greenfield_0040_0023
-      &amp; isA(ATTRIBX2,r__African_0040_0001)
-      &amp; isA(QUALITYX4,r__yesterday_0040_0006)
-      &amp; isA(EVENTX9,r__called_0040_0007_r__on_0040_0008)
+      &amp; isA(ENTITYX6,r_0040_0014__negotiations)
+      &amp; genv(ENTITYX6) = r_0040_0013__his
+      &amp; r_0040_0015__with(ENTITYX6) = ENTITYX7
+      &amp; isA(ENTITYX7,r_0040_0019__representative)
+      &amp; genv(ENTITYX7) = r_0040_0016__Sir_Roy
+      &amp; prn4(ENTITYX7) = r_0040_0021__Mr_Julius_Greenfield
+      &amp; isA(ATTRIBX2,r_0040_0001__African)
+      &amp; isA(QUALITYX4,r_0040_0006__yesterday)
+      &amp; isA(EVENTX9,r_0040_0007__called_on)
       &amp; arg0(EVENTX9) = ENTITYX1
       &amp; arg1(EVENTX9) = STATEX5 ) ).
 

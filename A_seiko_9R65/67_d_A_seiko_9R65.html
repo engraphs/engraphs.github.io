@@ -168,16 +168,16 @@
 </svg>
 <br>
 <pre>
-arc(r__movement_0087_0003,r__watch_0087_0006,r__of_0087_0004).
-arc(r__has_0087_0007,r__movement_0087_0003,arg0).
-arc(r__has_0087_0007,r__structure_0087_0009,arg1).
-arc(r__pressure_0087_0012,r__consistent_0087_0011,attrib1).
-arc(r__is_0087_0013,r__structure_0087_0009,mnr).
-arc(r__is_0087_0013,r__applied_0087_0014,catenative).
-arc(r__applied_0087_0014,r__pressure_0087_0012,arg1).
-arc(r__applied_0087_0014,r__wheels_0087_0018,r__on_0087_0015).
-arc(r__wheels_0087_0018,r__watch_0087_0006,genv).
-arc(r__wheels_0087_0018,r__power_transmitting_0087_0017,attrib2).
+arc(r_0087_0003__movement,r_0087_0006__watch,r_0087_0004__of).
+arc(r_0087_0007__has,r_0087_0003__movement,arg0).
+arc(r_0087_0007__has,r_0087_0009__structure,arg1).
+arc(r_0087_0012__pressure,r_0087_0011__consistent,attrib1).
+arc(r_0087_0013__is,r_0087_0009__structure,mnr).
+arc(r_0087_0013__is,r_0087_0014__applied,catenative).
+arc(r_0087_0014__applied,r_0087_0012__pressure,arg1).
+arc(r_0087_0014__applied,r_0087_0018__wheels,r_0087_0015__on).
+arc(r_0087_0018__wheels,r_0087_0006__watch,genv).
+arc(r_0087_0018__wheels,r_0087_0017__power_transmitting,attrib2).
 
 </pre>
 <br>
@@ -185,25 +185,25 @@ arc(r__wheels_0087_0018,r__power_transmitting_0087_0017,attrib2).
 fof(id_87_A_seiko_9R65,axiom,
     ? [CATENATIVEX6,WATCHX9,EVENTX13,EVENTX12,EVENTX11,ENTITYX1,ENTITYX3,ENTITYX4,ENTITYX8,WATCHX2,ATTRIBX10,ATTRIBX5] :
       ( CATENATIVEX6 = EVENTX11
-      &amp; isA(EVENTX11,r__applied_0087_0014)
+      &amp; isA(EVENTX11,r_0087_0014__applied)
       &amp; arg1(EVENTX11) = ENTITYX4
-      &amp; r__on_0087_0015(EVENTX11) = ENTITYX8
-      &amp; isA(ENTITYX1,r__movement_0087_0003)
-      &amp; r__of_0087_0004(ENTITYX1) = WATCHX2
-      &amp; isA(WATCHX2,r__watch_0087_0006)
-      &amp; isA(EVENTX12,r__is_0087_0013)
+      &amp; r_0087_0015__on(EVENTX11) = ENTITYX8
+      &amp; isA(ENTITYX1,r_0087_0003__movement)
+      &amp; r_0087_0004__of(ENTITYX1) = WATCHX2
+      &amp; isA(WATCHX2,r_0087_0006__watch)
+      &amp; isA(EVENTX12,r_0087_0013__is)
       &amp; mnr(EVENTX12) = ENTITYX3
       &amp; catenative(EVENTX12) = CATENATIVEX6
-      &amp; isA(ENTITYX3,r__structure_0087_0009)
-      &amp; isA(ENTITYX4,r__pressure_0087_0012)
+      &amp; isA(ENTITYX3,r_0087_0009__structure)
+      &amp; isA(ENTITYX4,r_0087_0012__pressure)
       &amp; attrib1(ENTITYX4) = ATTRIBX5
-      &amp; isA(ENTITYX8,r__wheels_0087_0018)
+      &amp; isA(ENTITYX8,r_0087_0018__wheels)
       &amp; genv(ENTITYX8) = WATCHX9
       &amp; attrib2(ENTITYX8) = ATTRIBX10
       &amp; WATCHX9 = WATCHX2
-      &amp; isA(ATTRIBX5,r__consistent_0087_0011)
-      &amp; isA(ATTRIBX10,r__power_transmitting_0087_0017)
-      &amp; isA(EVENTX13,r__has_0087_0007)
+      &amp; isA(ATTRIBX5,r_0087_0011__consistent)
+      &amp; isA(ATTRIBX10,r_0087_0017__power_transmitting)
+      &amp; isA(EVENTX13,r_0087_0007__has)
       &amp; arg0(EVENTX13) = ENTITYX1
       &amp; arg1(EVENTX13) = ENTITYX3 ) ).
 

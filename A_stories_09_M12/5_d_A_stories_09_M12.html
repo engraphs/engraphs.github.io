@@ -110,12 +110,12 @@ John 's friend told him to clean the bulldog .
 </svg>
 <br>
 <pre>
-arc(r__friend_0005_0003,r__John_0005_0001,genv).
-arc(r__told_0005_0004,r__John_0005_0001,arg2).
-arc(r__told_0005_0004,r__friend_0005_0003,arg0).
-arc(r__told_0005_0004,r__clean_0005_0007,arg1).
-arc(r__clean_0005_0007,r__John_0005_0001,arg0).
-arc(r__clean_0005_0007,r__bulldog_0005_0009,arg1).
+arc(r_0005_0003__friend,r_0005_0001__John,genv).
+arc(r_0005_0004__told,r_0005_0001__John,arg2).
+arc(r_0005_0004__told,r_0005_0003__friend,arg0).
+arc(r_0005_0004__told,r_0005_0007__clean,arg1).
+arc(r_0005_0007__clean,r_0005_0001__John,arg0).
+arc(r_0005_0007__clean,r_0005_0009__bulldog,arg1).
 
 </pre>
 <br>
@@ -123,14 +123,14 @@ arc(r__clean_0005_0007,r__bulldog_0005_0009,arg1).
 fof(id_5_A_stories_09_M12,axiom,
     ? [STATEX3,JOHNX2,EVENTX6,EVENTX5,ENTITYX1,BULLDOGX4] :
       ( STATEX3 = EVENTX5
-      &amp; isA(EVENTX5,r__clean_0005_0007)
+      &amp; isA(EVENTX5,r_0005_0007__clean)
       &amp; arg0(EVENTX5) = JOHNX2
       &amp; arg1(EVENTX5) = BULLDOGX4
-      &amp; isA(ENTITYX1,r__friend_0005_0003)
-      &amp; genv(ENTITYX1) = r__John_0005_0001
-      &amp; JOHNX2 = r__John_0005_0001
-      &amp; isA(BULLDOGX4,r__bulldog_0005_0009)
-      &amp; isA(EVENTX6,r__told_0005_0004)
+      &amp; isA(ENTITYX1,r_0005_0003__friend)
+      &amp; genv(ENTITYX1) = r_0005_0001__John
+      &amp; JOHNX2 = r_0005_0001__John
+      &amp; isA(BULLDOGX4,r_0005_0009__bulldog)
+      &amp; isA(EVENTX6,r_0005_0004__told)
       &amp; arg0(EVENTX6) = ENTITYX1
       &amp; arg2(EVENTX6) = JOHNX2
       &amp; arg1(EVENTX6) = STATEX3 ) ).

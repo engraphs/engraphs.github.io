@@ -136,7 +136,7 @@ You first float , and then move your legs and hands to a certain position .
 <title>0004_0007&#45;&gt;0004_0015</title>
 <path fill="none" stroke="black" d="M157,-177.53C179.73,-163.63 215.45,-141.79 241.44,-125.89"/>
 <polygon fill="black" stroke="black" points="243.48,-128.75 250.19,-120.54 239.83,-122.78 243.48,-128.75"/>
-<text text-anchor="middle" x="251.97" y="-144.8" font-family="fixed" font-size="14.00">to_[clr][dir]</text>
+<text text-anchor="middle" x="248.47" y="-144.8" font-family="fixed" font-size="14.00">to[clr][dir]</text>
 </g>
 <!-- 0004_0010&#45;&gt;0004_0001 -->
 <g id="edge9" class="edge">
@@ -188,47 +188,47 @@ You first float , and then move your legs and hands to a certain position .
 </svg>
 <br>
 <pre>
-arc(r__float_0004_0003,r__You_0004_0001,arg0).
-arc(r__float_0004_0003,r__first_0004_0002,tmp1).
-arc(r__and_0004_0005,r__float_0004_0003,conj1).
-arc(r__and_0004_0005,r__then_0004_0006,conj2).
-arc(r__then_0004_0006,r__move_0004_0007,scope).
-arc(r__move_0004_0007,r__You_0004_0001,arg0).
-arc(r__move_0004_0007,r__and_0004_0010,arg1).
-arc(r__move_0004_0007,r__position_0004_0015,r__to_0004_0012_clr_dir).
-arc(r__and_0004_0010,r__You_0004_0001,genv).
-arc(r__and_0004_0010,r__legs_0004_0009,conj1).
-arc(r__and_0004_0010,r__hands_0004_0011,conj2).
-arc(r__position_0004_0015,r__certain_0004_0014,attrib2).
+arc(r_0004_0003__float,r_0004_0001__You,arg0).
+arc(r_0004_0003__float,r_0004_0002__first,tmp1).
+arc(r_0004_0005__and,r_0004_0003__float,conj1).
+arc(r_0004_0005__and,r_0004_0006__then,conj2).
+arc(r_0004_0006__then,r_0004_0007__move,scope).
+arc(r_0004_0007__move,r_0004_0001__You,arg0).
+arc(r_0004_0007__move,r_0004_0010__and,arg1).
+arc(r_0004_0007__move,r_0004_0015__position,r_0004_0012__to_clr_dir).
+arc(r_0004_0010__and,r_0004_0001__You,genv).
+arc(r_0004_0010__and,r_0004_0009__legs,conj1).
+arc(r_0004_0010__and,r_0004_0011__hands,conj2).
+arc(r_0004_0015__position,r_0004_0014__certain,attrib2).
 
 </pre>
 <br>
 <pre>
 fof(id_4_A_stories_09_M14,axiom,
     ? [HEARERX5,CONJX11,OPERATORX3,EVENTX10,EVENTX2,ENTITYX4,ENTITYX8,ENTITYX6,ENTITYX7,QUALITYX1,ATTRIBX9] :
-      ( isA(ENTITYX4,r__and_0004_0010)
+      ( isA(ENTITYX4,r_0004_0010__and)
       &amp; genv(ENTITYX4) = HEARERX5
       &amp; conj1(ENTITYX4) = ENTITYX6
       &amp; conj2(ENTITYX4) = ENTITYX7
-      &amp; HEARERX5 = r__You_0004_0001
-      &amp; isA(ENTITYX6,r__legs_0004_0009)
-      &amp; isA(ENTITYX7,r__hands_0004_0011)
-      &amp; isA(ENTITYX8,r__position_0004_0015)
+      &amp; HEARERX5 = r_0004_0001__You
+      &amp; isA(ENTITYX6,r_0004_0009__legs)
+      &amp; isA(ENTITYX7,r_0004_0011__hands)
+      &amp; isA(ENTITYX8,r_0004_0015__position)
       &amp; attrib2(ENTITYX8) = ATTRIBX9
-      &amp; isA(QUALITYX1,r__first_0004_0002)
-      &amp; isA(ATTRIBX9,r__certain_0004_0014)
-      &amp; isA(CONJX11,r__and_0004_0005)
+      &amp; isA(QUALITYX1,r_0004_0002__first)
+      &amp; isA(ATTRIBX9,r_0004_0014__certain)
+      &amp; isA(CONJX11,r_0004_0005__and)
       &amp; conj1(CONJX11) = EVENTX2
-      &amp; isA(EVENTX2,r__float_0004_0003)
-      &amp; arg0(EVENTX2) = r__You_0004_0001
+      &amp; isA(EVENTX2,r_0004_0003__float)
+      &amp; arg0(EVENTX2) = r_0004_0001__You
       &amp; tmp1(EVENTX2) = QUALITYX1
       &amp; conj2(CONJX11) = OPERATORX3
-      &amp; isA(OPERATORX3,r__then_0004_0006)
+      &amp; isA(OPERATORX3,r_0004_0006__then)
       &amp; scope(OPERATORX3) = EVENTX10
-      &amp; isA(EVENTX10,r__move_0004_0007)
-      &amp; arg0(EVENTX10) = r__You_0004_0001
+      &amp; isA(EVENTX10,r_0004_0007__move)
+      &amp; arg0(EVENTX10) = r_0004_0001__You
       &amp; arg1(EVENTX10) = ENTITYX4
-      &amp; r__to_0004_0012_clr_dir(EVENTX10) = ENTITYX8 ) ).
+      &amp; r_0004_0012__to_clr_dir(EVENTX10) = ENTITYX8 ) ).
 
 
 </pre>

@@ -135,31 +135,31 @@ More than 200 branch offices serve customer needs promptly and efficiently .
 </svg>
 <br>
 <pre>
-arc(r__More_0086_0001,r__200_0086_0003,r__than_0086_0002).
-arc(r__branch_0086_0004_r__offices_0086_0005,r__More_0086_0001,attrib1).
-arc(r__serve_0086_0006,r__branch_0086_0004_r__offices_0086_0005,arg0).
-arc(r__serve_0086_0006,r__customer_0086_0007_r__needs_0086_0008,arg1).
-arc(r__serve_0086_0006,r__and_0086_0010,mnr4).
-arc(r__and_0086_0010,r__promptly_0086_0009,conj1).
-arc(r__and_0086_0010,r__efficiently_0086_0011,conj2).
+arc(r_0086_0001__More,r_0086_0003__200,r_0086_0002__than).
+arc(r_0086_0004__branch_offices,r_0086_0001__More,attrib1).
+arc(r_0086_0006__serve,r_0086_0004__branch_offices,arg0).
+arc(r_0086_0006__serve,r_0086_0007__customer_needs,arg1).
+arc(r_0086_0006__serve,r_0086_0010__and,mnr4).
+arc(r_0086_0010__and,r_0086_0009__promptly,conj1).
+arc(r_0086_0010__and,r_0086_0011__efficiently,conj2).
 
 </pre>
 <br>
 <pre>
 fof(id_86_A_IBM_1401,axiom,
     ? [EVENTX8,ENTITYX1,ENTITYX4,ENTITYX3,ATTRIBX2,QUALITYX5,QUALITYX6,QUALITYX7] :
-      ( isA(ENTITYX1,r__branch_0086_0004_r__offices_0086_0005)
+      ( isA(ENTITYX1,r_0086_0004__branch_offices)
       &amp; attrib1(ENTITYX1) = ATTRIBX2
-      &amp; isA(ENTITYX3,r__200_0086_0003)
-      &amp; isA(ENTITYX4,r__customer_0086_0007_r__needs_0086_0008)
-      &amp; isA(ATTRIBX2,r__More_0086_0001)
-      &amp; r__than_0086_0002(ATTRIBX2) = ENTITYX3
-      &amp; isA(QUALITYX5,r__and_0086_0010)
+      &amp; isA(ENTITYX3,r_0086_0003__200)
+      &amp; isA(ENTITYX4,r_0086_0007__customer_needs)
+      &amp; isA(ATTRIBX2,r_0086_0001__More)
+      &amp; r_0086_0002__than(ATTRIBX2) = ENTITYX3
+      &amp; isA(QUALITYX5,r_0086_0010__and)
       &amp; conj1(QUALITYX5) = QUALITYX6
       &amp; conj2(QUALITYX5) = QUALITYX7
-      &amp; isA(QUALITYX6,r__promptly_0086_0009)
-      &amp; isA(QUALITYX7,r__efficiently_0086_0011)
-      &amp; isA(EVENTX8,r__serve_0086_0006)
+      &amp; isA(QUALITYX6,r_0086_0009__promptly)
+      &amp; isA(QUALITYX7,r_0086_0011__efficiently)
+      &amp; isA(EVENTX8,r_0086_0006__serve)
       &amp; arg0(EVENTX8) = ENTITYX1
       &amp; arg1(EVENTX8) = ENTITYX4
       &amp; mnr4(EVENTX8) = QUALITYX5 ) ).

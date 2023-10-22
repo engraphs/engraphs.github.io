@@ -109,25 +109,25 @@ Informal talks at Lancaster House will resume today .
 </svg>
 <br>
 <pre>
-arc(r__talks_0043_0002,r__Informal_0043_0001,attrib1).
-arc(r__talks_0043_0002,r__Lancaster_0043_0004_r__House_0043_0005,r__at_0043_0003).
-arc(r__will_0043_0006,r__resume_0043_0007,scope).
-arc(r__resume_0043_0007,r__talks_0043_0002,arg0).
-arc(r__resume_0043_0007,r__today_0043_0008,tmp4).
+arc(r_0043_0002__talks,r_0043_0001__Informal,attrib1).
+arc(r_0043_0002__talks,r_0043_0004__Lancaster_House,r_0043_0003__at).
+arc(r_0043_0006__will,r_0043_0007__resume,scope).
+arc(r_0043_0007__resume,r_0043_0002__talks,arg0).
+arc(r_0043_0007__resume,r_0043_0008__today,tmp4).
 
 </pre>
 <br>
 <pre>
 fof(id_43_A_lob_A01,axiom,
     ? [OPERATORX4,EVENTX5,ENTITYX1,ATTRIBX2,QUALITYX3] :
-      ( isA(ENTITYX1,r__talks_0043_0002)
+      ( isA(ENTITYX1,r_0043_0002__talks)
       &amp; attrib1(ENTITYX1) = ATTRIBX2
-      &amp; r__at_0043_0003(ENTITYX1) = r__Lancaster_0043_0004_r__House_0043_0005
-      &amp; isA(ATTRIBX2,r__Informal_0043_0001)
-      &amp; isA(QUALITYX3,r__today_0043_0008)
-      &amp; isA(OPERATORX4,r__will_0043_0006)
+      &amp; r_0043_0003__at(ENTITYX1) = r_0043_0004__Lancaster_House
+      &amp; isA(ATTRIBX2,r_0043_0001__Informal)
+      &amp; isA(QUALITYX3,r_0043_0008__today)
+      &amp; isA(OPERATORX4,r_0043_0006__will)
       &amp; scope(OPERATORX4) = EVENTX5
-      &amp; isA(EVENTX5,r__resume_0043_0007)
+      &amp; isA(EVENTX5,r_0043_0007__resume)
       &amp; arg0(EVENTX5) = ENTITYX1
       &amp; tmp4(EVENTX5) = QUALITYX3 ) ).
 

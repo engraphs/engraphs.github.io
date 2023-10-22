@@ -142,34 +142,34 @@ Please see the power reserve indicator to check the level of the remaining power
 </svg>
 <br>
 <pre>
-arc(cnt_0079_1005,r__see_0079_0002,scope).
-arc(cnt_0079_1005,r__check_0079_0008,restriction).
+arc(cnt_0079_1005,r_0079_0002__see,scope).
+arc(cnt_0079_1005,r_0079_0008__check,restriction).
 arc(imperative_0079_1002,cnt_0079_1005,scope).
-arc(r__see_0079_0002,r__power_0079_0004_r__reserve_0079_0005_r__indicator_0079_0006,arg1).
-arc(r__check_0079_0008,r__power_0079_0004_r__reserve_0079_0005_r__indicator_0079_0006,arg0).
-arc(r__check_0079_0008,r__level_0079_0010,arg1).
-arc(r__level_0079_0010,r__power_0079_0014,r__of_0079_0011).
-arc(r__power_0079_0014,r__remaining_0079_0013,attrib2).
+arc(r_0079_0002__see,r_0079_0004__power_reserve_indicator,arg1).
+arc(r_0079_0008__check,r_0079_0004__power_reserve_indicator,arg0).
+arc(r_0079_0008__check,r_0079_0010__level,arg1).
+arc(r_0079_0010__level,r_0079_0014__power,r_0079_0011__of).
+arc(r_0079_0014__power,r_0079_0013__remaining,attrib2).
 
 </pre>
 <br>
 <pre>
 fof(id_79_A_seiko_9R65,axiom,
     ? [OPERATORX2,CONNX6,EVENTX10,EVENTX11,ENTITYX4,ENTITYX7,ENTITYX8,ATTRIBX9] :
-      ( isA(ENTITYX4,r__power_0079_0004_r__reserve_0079_0005_r__indicator_0079_0006)
-      &amp; isA(ENTITYX7,r__level_0079_0010)
-      &amp; r__of_0079_0011(ENTITYX7) = ENTITYX8
-      &amp; isA(ENTITYX8,r__power_0079_0014)
+      ( isA(ENTITYX4,r_0079_0004__power_reserve_indicator)
+      &amp; isA(ENTITYX7,r_0079_0010__level)
+      &amp; r_0079_0011__of(ENTITYX7) = ENTITYX8
+      &amp; isA(ENTITYX8,r_0079_0014__power)
       &amp; attrib2(ENTITYX8) = ATTRIBX9
-      &amp; isA(ATTRIBX9,r__remaining_0079_0013)
+      &amp; isA(ATTRIBX9,r_0079_0013__remaining)
       &amp; isA(OPERATORX2,imperative_0079_1002)
       &amp; scope(OPERATORX2) = CONNX6
       &amp; isA(CONNX6,cnt_0079_1005)
       &amp; scope(CONNX6) = EVENTX11
-      &amp; isA(EVENTX11,r__see_0079_0002)
+      &amp; isA(EVENTX11,r_0079_0002__see)
       &amp; arg1(EVENTX11) = ENTITYX4
       &amp; restriction(CONNX6) = EVENTX10
-      &amp; isA(EVENTX10,r__check_0079_0008)
+      &amp; isA(EVENTX10,r_0079_0008__check)
       &amp; arg0(EVENTX10) = ENTITYX4
       &amp; arg1(EVENTX10) = ENTITYX7 ) ).
 

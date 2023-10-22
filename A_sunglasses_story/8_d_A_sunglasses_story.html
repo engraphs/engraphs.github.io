@@ -182,46 +182,46 @@ The yellow lenses are your attitudes , your faith , your values and your cultura
 </svg>
 <br>
 <pre>
-arc(r__lenses_0010_0003,r__yellow_0010_0002,attrib2).
-arc(r__are_0010_0004,r__lenses_0010_0003,arg0).
-arc(r__are_0010_0004,r__and_0010_0013,prd2).
-arc(r__attitudes_0010_0006,r__your_0010_0005,genv).
-arc(r__faith_0010_0009,r__your_0010_0005,genv).
-arc(r__values_0010_0012,r__your_0010_0005,genv).
-arc(r__and_0010_0013,r__attitudes_0010_0006,conj1).
-arc(r__and_0010_0013,r__faith_0010_0009,conj2).
-arc(r__and_0010_0013,r__values_0010_0012,conj3).
-arc(r__and_0010_0013,r__background_0010_0016,conj4).
-arc(r__background_0010_0016,r__your_0010_0005,genv).
-arc(r__background_0010_0016,r__cultural_0010_0015,attrib2).
+arc(r_0010_0003__lenses,r_0010_0002__yellow,attrib2).
+arc(r_0010_0004__are,r_0010_0003__lenses,arg0).
+arc(r_0010_0004__are,r_0010_0013__and,prd2).
+arc(r_0010_0006__attitudes,r_0010_0005__your,genv).
+arc(r_0010_0009__faith,r_0010_0005__your,genv).
+arc(r_0010_0012__values,r_0010_0005__your,genv).
+arc(r_0010_0013__and,r_0010_0006__attitudes,conj1).
+arc(r_0010_0013__and,r_0010_0009__faith,conj2).
+arc(r_0010_0013__and,r_0010_0012__values,conj3).
+arc(r_0010_0013__and,r_0010_0016__background,conj4).
+arc(r_0010_0016__background,r_0010_0005__your,genv).
+arc(r_0010_0016__background,r_0010_0015__cultural,attrib2).
 
 </pre>
 <br>
 <pre>
 fof(id_10_A_sunglasses_story,axiom,
     ? [HEARERX6,HEARERX8,HEARERX10,EVENTX12,ENTITYX1,ENTITYX3,ENTITYX4,ENTITYX5,ENTITYX7,ENTITYX9,ATTRIBX11,ATTRIBX2] :
-      ( isA(ENTITYX1,r__lenses_0010_0003)
+      ( isA(ENTITYX1,r_0010_0003__lenses)
       &amp; attrib2(ENTITYX1) = ATTRIBX2
-      &amp; isA(ENTITYX3,r__and_0010_0013)
+      &amp; isA(ENTITYX3,r_0010_0013__and)
       &amp; conj1(ENTITYX3) = ENTITYX4
       &amp; conj2(ENTITYX3) = ENTITYX5
       &amp; conj3(ENTITYX3) = ENTITYX7
       &amp; conj4(ENTITYX3) = ENTITYX9
-      &amp; isA(ENTITYX4,r__attitudes_0010_0006)
-      &amp; genv(ENTITYX4) = r__your_0010_0005
-      &amp; isA(ENTITYX5,r__faith_0010_0009)
+      &amp; isA(ENTITYX4,r_0010_0006__attitudes)
+      &amp; genv(ENTITYX4) = r_0010_0005__your
+      &amp; isA(ENTITYX5,r_0010_0009__faith)
       &amp; genv(ENTITYX5) = HEARERX6
-      &amp; HEARERX6 = r__your_0010_0005
-      &amp; isA(ENTITYX7,r__values_0010_0012)
+      &amp; HEARERX6 = r_0010_0005__your
+      &amp; isA(ENTITYX7,r_0010_0012__values)
       &amp; genv(ENTITYX7) = HEARERX8
-      &amp; HEARERX8 = r__your_0010_0005
-      &amp; isA(ENTITYX9,r__background_0010_0016)
+      &amp; HEARERX8 = r_0010_0005__your
+      &amp; isA(ENTITYX9,r_0010_0016__background)
       &amp; genv(ENTITYX9) = HEARERX10
       &amp; attrib2(ENTITYX9) = ATTRIBX11
-      &amp; HEARERX10 = r__your_0010_0005
-      &amp; isA(ATTRIBX2,r__yellow_0010_0002)
-      &amp; isA(ATTRIBX11,r__cultural_0010_0015)
-      &amp; isA(EVENTX12,r__are_0010_0004)
+      &amp; HEARERX10 = r_0010_0005__your
+      &amp; isA(ATTRIBX2,r_0010_0002__yellow)
+      &amp; isA(ATTRIBX11,r_0010_0015__cultural)
+      &amp; isA(EVENTX12,r_0010_0004__are)
       &amp; arg0(EVENTX12) = ENTITYX1
       &amp; prd2(EVENTX12) = ENTITYX3 ) ).
 

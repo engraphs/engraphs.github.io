@@ -64,7 +64,7 @@ Write the letter to your pen friend .
 <title>0030_0001&#45;&gt;0030_0006_0030_0007</title>
 <path fill="none" stroke="black" d="M82.27,-175.36C87.97,-169.32 94.53,-162.36 100.45,-156 108.24,-147.63 116.74,-138.42 124.28,-130.22"/>
 <polygon fill="black" stroke="black" points="126.98,-132.45 131.16,-122.71 121.82,-127.71 126.98,-132.45"/>
-<text text-anchor="middle" x="144.95" y="-144.8" font-family="fixed" font-size="14.00">to_[arg2]</text>
+<text text-anchor="middle" x="141.45" y="-144.8" font-family="fixed" font-size="14.00">to[arg2]</text>
 </g>
 <!-- 0030_0005 -->
 <g id="node4" class="node">
@@ -96,24 +96,24 @@ Write the letter to your pen friend .
 </svg>
 <br>
 <pre>
-arc(imperative_0030_1002,r__Write_0030_0001,scope).
-arc(r__Write_0030_0001,r__letter_0030_0003,arg1).
-arc(r__Write_0030_0001,r__pen_0030_0006_r__friend_0030_0007,r__to_0030_0004_arg2).
-arc(r__pen_0030_0006_r__friend_0030_0007,r__your_0030_0005,genv).
+arc(imperative_0030_1002,r_0030_0001__Write,scope).
+arc(r_0030_0001__Write,r_0030_0003__letter,arg1).
+arc(r_0030_0001__Write,r_0030_0006__pen_friend,r_0030_0004__to_arg2).
+arc(r_0030_0006__pen_friend,r_0030_0005__your,genv).
 
 </pre>
 <br>
 <pre>
 fof(id_30_A_fce_0102_2000_12,axiom,
     ? [OPERATORX2,EVENTX6,ENTITYX4,ENTITYX5] :
-      ( isA(ENTITYX4,r__letter_0030_0003)
-      &amp; isA(ENTITYX5,r__pen_0030_0006_r__friend_0030_0007)
-      &amp; genv(ENTITYX5) = r__your_0030_0005
+      ( isA(ENTITYX4,r_0030_0003__letter)
+      &amp; isA(ENTITYX5,r_0030_0006__pen_friend)
+      &amp; genv(ENTITYX5) = r_0030_0005__your
       &amp; isA(OPERATORX2,imperative_0030_1002)
       &amp; scope(OPERATORX2) = EVENTX6
-      &amp; isA(EVENTX6,r__Write_0030_0001)
+      &amp; isA(EVENTX6,r_0030_0001__Write)
       &amp; arg1(EVENTX6) = ENTITYX4
-      &amp; r__to_0030_0004_arg2(EVENTX6) = ENTITYX5 ) ).
+      &amp; r_0030_0004__to_arg2(EVENTX6) = ENTITYX5 ) ).
 
 
 </pre>

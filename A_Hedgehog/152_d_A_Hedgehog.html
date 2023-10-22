@@ -156,15 +156,15 @@ Ultimately , we need to understand that the hedgehog is a very prickly issue .
 </svg>
 <br>
 <pre>
-arc(r__need_0175_0004,r__Ultimately_0175_0001,mnr1).
-arc(r__need_0175_0004,r__we_0175_0003,arg0).
-arc(r__need_0175_0004,r__understand_0175_0006,arg1).
-arc(r__understand_0175_0006,r__we_0175_0003,arg0).
-arc(r__understand_0175_0006,r__is_0175_0010,arg1).
-arc(r__is_0175_0010,r__hedgehog_0175_0009,arg0).
-arc(r__is_0175_0010,r__issue_0175_0014,prd2).
-arc(r__prickly_0175_0013,r__very_0175_0012,quality1).
-arc(r__issue_0175_0014,r__prickly_0175_0013,attrib2).
+arc(r_0175_0004__need,r_0175_0001__Ultimately,mnr1).
+arc(r_0175_0004__need,r_0175_0003__we,arg0).
+arc(r_0175_0004__need,r_0175_0006__understand,arg1).
+arc(r_0175_0006__understand,r_0175_0003__we,arg0).
+arc(r_0175_0006__understand,r_0175_0010__is,arg1).
+arc(r_0175_0010__is,r_0175_0009__hedgehog,arg0).
+arc(r_0175_0010__is,r_0175_0014__issue,prd2).
+arc(r_0175_0013__prickly,r_0175_0012__very,quality1).
+arc(r_0175_0014__issue,r_0175_0013__prickly,attrib2).
 
 </pre>
 <br>
@@ -172,23 +172,23 @@ arc(r__issue_0175_0014,r__prickly_0175_0013,attrib2).
 fof(id_175_A_Hedgehog,axiom,
     ? [STATEX2,STATEX3,EVENTX10,EVENTX9,EVENTX8,QUALITYX1,QUALITYX7,ENTITYX4,ENTITYX5,ATTRIBX6] :
       ( STATEX2 = EVENTX9
-      &amp; isA(EVENTX9,r__understand_0175_0006)
-      &amp; arg0(EVENTX9) = r__we_0175_0003
+      &amp; isA(EVENTX9,r_0175_0006__understand)
+      &amp; arg0(EVENTX9) = r_0175_0003__we
       &amp; arg1(EVENTX9) = STATEX3
       &amp; STATEX3 = EVENTX8
-      &amp; isA(EVENTX8,r__is_0175_0010)
+      &amp; isA(EVENTX8,r_0175_0010__is)
       &amp; arg0(EVENTX8) = ENTITYX4
       &amp; prd2(EVENTX8) = ENTITYX5
-      &amp; isA(QUALITYX1,r__Ultimately_0175_0001)
-      &amp; isA(QUALITYX7,r__very_0175_0012)
-      &amp; isA(ENTITYX4,r__hedgehog_0175_0009)
-      &amp; isA(ENTITYX5,r__issue_0175_0014)
+      &amp; isA(QUALITYX1,r_0175_0001__Ultimately)
+      &amp; isA(QUALITYX7,r_0175_0012__very)
+      &amp; isA(ENTITYX4,r_0175_0009__hedgehog)
+      &amp; isA(ENTITYX5,r_0175_0014__issue)
       &amp; attrib2(ENTITYX5) = ATTRIBX6
-      &amp; isA(ATTRIBX6,r__prickly_0175_0013)
+      &amp; isA(ATTRIBX6,r_0175_0013__prickly)
       &amp; quality1(ATTRIBX6) = QUALITYX7
-      &amp; isA(EVENTX10,r__need_0175_0004)
+      &amp; isA(EVENTX10,r_0175_0004__need)
       &amp; mnr1(EVENTX10) = QUALITYX1
-      &amp; arg0(EVENTX10) = r__we_0175_0003
+      &amp; arg0(EVENTX10) = r_0175_0003__we
       &amp; arg1(EVENTX10) = STATEX2 ) ).
 
 

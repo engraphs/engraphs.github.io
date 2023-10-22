@@ -259,23 +259,23 @@ Senator Robertson later disclosed he had sent a letter to Mr Kennedy saying he h
 </svg>
 <br>
 <pre>
-arc(abs_0052_1005,r__sent_0052_0007,scope).
-arc(abs_0052_1005,r__saying_0052_0013,restriction).
-arc(r__disclosed_0052_0004,r__Senator_0052_0001_r__Robertson_0052_0002,arg0).
-arc(r__disclosed_0052_0004,r__later_0052_0003,tmp2).
-arc(r__disclosed_0052_0004,r__had_0052_0006,arg1).
-arc(r__had_0052_0006,abs_0052_1005,catenative).
-arc(r__sent_0052_0007,r__he_0052_0005,arg0).
-arc(r__sent_0052_0007,r__letter_0052_0009,arg1).
-arc(r__letter_0052_0009,r__Mr_0052_0011_r__Kennedy_0052_0012,r__to_0052_0010).
-arc(r__saying_0052_0013,r__letter_0052_0009,arg0).
-arc(r__saying_0052_0013,r__had_0052_0015,arg1).
-arc(r__had_0052_0015,r__received_0052_0016,catenative).
-arc(r__received_0052_0016,r__he_0052_0014,arg0).
-arc(r__received_0052_0016,r__complaints_0052_0018,arg1).
-arc(r__complaints_0052_0018,r__several_0052_0017,attrib1).
-arc(r__complaints_0052_0018,r__loyalty_0052_0022,r__about_0052_0019).
-arc(r__loyalty_0052_0022,r__Weaver_0052_0020,genv).
+arc(abs_0052_1005,r_0052_0007__sent,scope).
+arc(abs_0052_1005,r_0052_0013__saying,restriction).
+arc(r_0052_0004__disclosed,r_0052_0001__Senator_Robertson,arg0).
+arc(r_0052_0004__disclosed,r_0052_0003__later,tmp2).
+arc(r_0052_0004__disclosed,r_0052_0006__had,arg1).
+arc(r_0052_0006__had,abs_0052_1005,catenative).
+arc(r_0052_0007__sent,r_0052_0005__he,arg0).
+arc(r_0052_0007__sent,r_0052_0009__letter,arg1).
+arc(r_0052_0009__letter,r_0052_0011__Mr_Kennedy,r_0052_0010__to).
+arc(r_0052_0013__saying,r_0052_0009__letter,arg0).
+arc(r_0052_0013__saying,r_0052_0015__had,arg1).
+arc(r_0052_0015__had,r_0052_0016__received,catenative).
+arc(r_0052_0016__received,r_0052_0014__he,arg0).
+arc(r_0052_0016__received,r_0052_0018__complaints,arg1).
+arc(r_0052_0018__complaints,r_0052_0017__several,attrib1).
+arc(r_0052_0018__complaints,r_0052_0022__loyalty,r_0052_0019__about).
+arc(r_0052_0022__loyalty,r_0052_0020__Weaver,genv).
 
 </pre>
 <br>
@@ -283,36 +283,36 @@ arc(r__loyalty_0052_0022,r__Weaver_0052_0020,genv).
 fof(id_52_A_lob_A01,axiom,
     ? [STATEX2,CATENATIVEX3,STATEX7,CATENATIVEX8,EVENTX17,EVENTX16,CONNX6,EVENTX14,EVENTX13,EVENTX12,EVENTX15,ENTITYX4,ENTITYX9,ENTITYX11,QUALITYX1,ATTRIBX10] :
       ( STATEX2 = EVENTX16
-      &amp; isA(EVENTX16,r__had_0052_0006)
+      &amp; isA(EVENTX16,r_0052_0006__had)
       &amp; catenative(EVENTX16) = CATENATIVEX3
       &amp; CATENATIVEX3 = CONNX6
       &amp; isA(CONNX6,abs_0052_1005)
       &amp; scope(CONNX6) = EVENTX15
-      &amp; isA(EVENTX15,r__sent_0052_0007)
-      &amp; arg0(EVENTX15) = r__he_0052_0005
+      &amp; isA(EVENTX15,r_0052_0007__sent)
+      &amp; arg0(EVENTX15) = r_0052_0005__he
       &amp; arg1(EVENTX15) = ENTITYX4
       &amp; restriction(CONNX6) = EVENTX14
-      &amp; isA(EVENTX14,r__saying_0052_0013)
+      &amp; isA(EVENTX14,r_0052_0013__saying)
       &amp; arg0(EVENTX14) = ENTITYX4
       &amp; arg1(EVENTX14) = STATEX7
       &amp; STATEX7 = EVENTX13
-      &amp; isA(EVENTX13,r__had_0052_0015)
+      &amp; isA(EVENTX13,r_0052_0015__had)
       &amp; catenative(EVENTX13) = CATENATIVEX8
       &amp; CATENATIVEX8 = EVENTX12
-      &amp; isA(EVENTX12,r__received_0052_0016)
-      &amp; arg0(EVENTX12) = r__he_0052_0014
+      &amp; isA(EVENTX12,r_0052_0016__received)
+      &amp; arg0(EVENTX12) = r_0052_0014__he
       &amp; arg1(EVENTX12) = ENTITYX9
-      &amp; isA(ENTITYX4,r__letter_0052_0009)
-      &amp; r__to_0052_0010(ENTITYX4) = r__Mr_0052_0011_r__Kennedy_0052_0012
-      &amp; isA(ENTITYX9,r__complaints_0052_0018)
+      &amp; isA(ENTITYX4,r_0052_0009__letter)
+      &amp; r_0052_0010__to(ENTITYX4) = r_0052_0011__Mr_Kennedy
+      &amp; isA(ENTITYX9,r_0052_0018__complaints)
       &amp; attrib1(ENTITYX9) = ATTRIBX10
-      &amp; r__about_0052_0019(ENTITYX9) = ENTITYX11
-      &amp; isA(ENTITYX11,r__loyalty_0052_0022)
-      &amp; genv(ENTITYX11) = r__Weaver_0052_0020
-      &amp; isA(QUALITYX1,r__later_0052_0003)
-      &amp; isA(ATTRIBX10,r__several_0052_0017)
-      &amp; isA(EVENTX17,r__disclosed_0052_0004)
-      &amp; arg0(EVENTX17) = r__Senator_0052_0001_r__Robertson_0052_0002
+      &amp; r_0052_0019__about(ENTITYX9) = ENTITYX11
+      &amp; isA(ENTITYX11,r_0052_0022__loyalty)
+      &amp; genv(ENTITYX11) = r_0052_0020__Weaver
+      &amp; isA(QUALITYX1,r_0052_0003__later)
+      &amp; isA(ATTRIBX10,r_0052_0017__several)
+      &amp; isA(EVENTX17,r_0052_0004__disclosed)
+      &amp; arg0(EVENTX17) = r_0052_0001__Senator_Robertson
       &amp; tmp2(EVENTX17) = QUALITYX1
       &amp; arg1(EVENTX17) = STATEX2 ) ).
 

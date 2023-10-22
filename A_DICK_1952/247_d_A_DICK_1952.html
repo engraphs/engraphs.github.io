@@ -37,8 +37,8 @@ Even as they watched the gun moved on its swivel base , whirring underneath .
 <!-- 0309_0001_0309_0002_cnt -->
 <g id="node1" class="node">
 <title>0309_0001_0309_0002_cnt</title>
-<ellipse fill="none" stroke="black" cx="125.75" cy="-366" rx="73.39" ry="18"/>
-<text text-anchor="middle" x="125.75" y="-362.3" font-family="fixed" font-size="14.00">Even_as_[cnt]</text>
+<ellipse fill="none" stroke="black" cx="125.75" cy="-366" rx="68.79" ry="18"/>
+<text text-anchor="middle" x="125.75" y="-362.3" font-family="fixed" font-size="14.00">Even_as[cnt]</text>
 </g>
 <!-- 0309_0004 -->
 <g id="node2" class="node">
@@ -129,7 +129,7 @@ Even as they watched the gun moved on its swivel base , whirring underneath .
 <title>0309_0007&#45;&gt;0309_0010_0309_0011</title>
 <path fill="none" stroke="black" d="M171.56,-173.8C172.1,-162.16 172.84,-146.55 173.46,-133.24"/>
 <polygon fill="black" stroke="black" points="176.96,-133.33 173.94,-123.18 169.97,-133 176.96,-133.33"/>
-<text text-anchor="middle" x="201.25" y="-144.8" font-family="fixed" font-size="14.00">on_[loc]</text>
+<text text-anchor="middle" x="197.75" y="-144.8" font-family="fixed" font-size="14.00">on[loc]</text>
 </g>
 <!-- 0309_0010_0309_0011&#45;&gt;0309_0006 -->
 <g id="edge6" class="edge">
@@ -162,39 +162,39 @@ Even as they watched the gun moved on its swivel base , whirring underneath .
 </svg>
 <br>
 <pre>
-arc(mnr_0309_1006,r__moved_0309_0007,scope).
-arc(mnr_0309_1006,r__whirring_0309_0013,restriction).
-arc(r__Even_0309_0001_r__as_0309_0002_cnt,mnr_0309_1006,scope).
-arc(r__Even_0309_0001_r__as_0309_0002_cnt,r__watched_0309_0004,restriction).
-arc(r__watched_0309_0004,r__they_0309_0003,arg0).
-arc(r__moved_0309_0007,r__gun_0309_0006,arg0).
-arc(r__moved_0309_0007,r__swivel_0309_0010_r__base_0309_0011,r__on_0309_0008_loc).
-arc(r__swivel_0309_0010_r__base_0309_0011,r__gun_0309_0006,genv).
-arc(r__whirring_0309_0013,r__gun_0309_0006,arg0).
-arc(r__whirring_0309_0013,r__underneath_0309_0014,loc2).
+arc(mnr_0309_1006,r_0309_0007__moved,scope).
+arc(mnr_0309_1006,r_0309_0013__whirring,restriction).
+arc(r_0309_0001__Even_as_cnt,mnr_0309_1006,scope).
+arc(r_0309_0001__Even_as_cnt,r_0309_0004__watched,restriction).
+arc(r_0309_0004__watched,r_0309_0003__they,arg0).
+arc(r_0309_0007__moved,r_0309_0006__gun,arg0).
+arc(r_0309_0007__moved,r_0309_0010__swivel_base,r_0309_0008__on_loc).
+arc(r_0309_0010__swivel_base,r_0309_0006__gun,genv).
+arc(r_0309_0013__whirring,r_0309_0006__gun,arg0).
+arc(r_0309_0013__whirring,r_0309_0014__underneath,loc2).
 
 </pre>
 <br>
 <pre>
 fof(id_309_A_DICK_1952,axiom,
     ? [GUNX5,CONNX1,CONNX7,EVENTX9,EVENTX10,EVENTX2,GUNX3,ENTITYX4,QUALITYX8] :
-      ( isA(GUNX3,r__gun_0309_0006)
-      &amp; isA(ENTITYX4,r__swivel_0309_0010_r__base_0309_0011)
+      ( isA(GUNX3,r_0309_0006__gun)
+      &amp; isA(ENTITYX4,r_0309_0010__swivel_base)
       &amp; genv(ENTITYX4) = GUNX5
       &amp; GUNX5 = GUNX3
-      &amp; isA(QUALITYX8,r__underneath_0309_0014)
-      &amp; isA(CONNX1,r__Even_0309_0001_r__as_0309_0002_cnt)
+      &amp; isA(QUALITYX8,r_0309_0014__underneath)
+      &amp; isA(CONNX1,r_0309_0001__Even_as_cnt)
       &amp; restriction(CONNX1) = EVENTX2
-      &amp; isA(EVENTX2,r__watched_0309_0004)
-      &amp; arg0(EVENTX2) = r__they_0309_0003
+      &amp; isA(EVENTX2,r_0309_0004__watched)
+      &amp; arg0(EVENTX2) = r_0309_0003__they
       &amp; scope(CONNX1) = CONNX7
       &amp; isA(CONNX7,mnr_0309_1006)
       &amp; scope(CONNX7) = EVENTX10
-      &amp; isA(EVENTX10,r__moved_0309_0007)
+      &amp; isA(EVENTX10,r_0309_0007__moved)
       &amp; arg0(EVENTX10) = GUNX3
-      &amp; r__on_0309_0008_loc(EVENTX10) = ENTITYX4
+      &amp; r_0309_0008__on_loc(EVENTX10) = ENTITYX4
       &amp; restriction(CONNX7) = EVENTX9
-      &amp; isA(EVENTX9,r__whirring_0309_0013)
+      &amp; isA(EVENTX9,r_0309_0013__whirring)
       &amp; arg0(EVENTX9) = GUNX3
       &amp; loc2(EVENTX9) = QUALITYX8 ) ).
 

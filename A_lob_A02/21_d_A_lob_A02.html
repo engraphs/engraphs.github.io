@@ -103,7 +103,7 @@ Some of the problems were reviewed yesterday at a meeting in Paris between M Cou
 <title>0021_0006&#45;&gt;0021_0010</title>
 <path fill="none" stroke="black" d="M222.3,-348.61C233.65,-335.91 249.55,-318.13 262.32,-303.86"/>
 <polygon fill="black" stroke="black" points="264.98,-306.13 269.04,-296.34 259.76,-301.46 264.98,-306.13"/>
-<text text-anchor="middle" x="276.15" y="-318.8" font-family="fixed" font-size="14.00">at_[loc]</text>
+<text text-anchor="middle" x="272.65" y="-318.8" font-family="fixed" font-size="14.00">at[loc]</text>
 </g>
 <!-- 0021_0023 -->
 <g id="node7" class="node">
@@ -114,9 +114,9 @@ Some of the problems were reviewed yesterday at a meeting in Paris between M Cou
 <!-- 0021_0006&#45;&gt;0021_0023 -->
 <g id="edge6" class="edge">
 <title>0021_0006&#45;&gt;0021_0023</title>
-<path fill="none" stroke="black" d="M244.39,-353.17C262.98,-346.86 285.76,-338.63 305.65,-330 328.84,-319.93 354.21,-306.77 373.19,-296.48"/>
-<polygon fill="black" stroke="black" points="375.12,-299.41 382.22,-291.54 371.76,-293.27 375.12,-299.41"/>
-<text text-anchor="middle" x="383.65" y="-318.8" font-family="fixed" font-size="14.00">between_[rst]</text>
+<path fill="none" stroke="black" d="M242.05,-352.52C259.19,-346.11 280.15,-337.99 298.65,-330 323.73,-319.17 351.61,-305.68 372.18,-295.45"/>
+<polygon fill="black" stroke="black" points="373.99,-298.46 381.37,-290.85 370.86,-292.2 373.99,-298.46"/>
+<text text-anchor="middle" x="375.15" y="-318.8" font-family="fixed" font-size="14.00">between[rst]</text>
 </g>
 <!-- 0021_0012 -->
 <g id="node8" class="node">
@@ -200,18 +200,18 @@ Some of the problems were reviewed yesterday at a meeting in Paris between M Cou
 </svg>
 <br>
 <pre>
-arc(r__Some_0021_0001,r__problems_0021_0004,r__of_0021_0002).
-arc(r__were_0021_0005,r__reviewed_0021_0006,catenative).
-arc(r__reviewed_0021_0006,r__Some_0021_0001,arg1).
-arc(r__reviewed_0021_0006,r__yesterday_0021_0007,tmp3).
-arc(r__reviewed_0021_0006,r__meeting_0021_0010,r__at_0021_0008_loc).
-arc(r__reviewed_0021_0006,r__and_0021_0023,r__between_0021_0013_rst).
-arc(r__meeting_0021_0010,r__Paris_0021_0012,r__in_0021_0011).
-arc(r__Couve_0021_0015_r__de_0021_0016_r__Murville_0021_0017,r__Minister_0021_0021,prn6).
-arc(r__Minister_0021_0021,r__French_0021_0019,attrib1).
-arc(r__Minister_0021_0021,r__foreign_0021_0020,attrib2).
-arc(r__and_0021_0023,r__Couve_0021_0015_r__de_0021_0016_r__Murville_0021_0017,conj1).
-arc(r__and_0021_0023,r__Mr_0021_0024_r__Heath_0021_0025,conj2).
+arc(r_0021_0001__Some,r_0021_0004__problems,r_0021_0002__of).
+arc(r_0021_0005__were,r_0021_0006__reviewed,catenative).
+arc(r_0021_0006__reviewed,r_0021_0001__Some,arg1).
+arc(r_0021_0006__reviewed,r_0021_0007__yesterday,tmp3).
+arc(r_0021_0006__reviewed,r_0021_0010__meeting,r_0021_0008__at_loc).
+arc(r_0021_0006__reviewed,r_0021_0023__and,r_0021_0013__between_rst).
+arc(r_0021_0010__meeting,r_0021_0012__Paris,r_0021_0011__in).
+arc(r_0021_0015__Couve_de_Murville,r_0021_0021__Minister,prn6).
+arc(r_0021_0021__Minister,r_0021_0019__French,attrib1).
+arc(r_0021_0021__Minister,r_0021_0020__foreign,attrib2).
+arc(r_0021_0023__and,r_0021_0015__Couve_de_Murville,conj1).
+arc(r_0021_0023__and,r_0021_0024__Mr_Heath,conj2).
 
 </pre>
 <br>
@@ -219,28 +219,28 @@ arc(r__and_0021_0023,r__Mr_0021_0024_r__Heath_0021_0025,conj2).
 fof(id_21_A_lob_A02,axiom,
     ? [CATENATIVEX2,EVENTX11,EVENTX10,ENTITYX5,ENTITYX6,ENTITYX7,ENTITYX1,QUALITYX4,ATTRIBX8,ATTRIBX9] :
       ( CATENATIVEX2 = EVENTX10
-      &amp; isA(EVENTX10,r__reviewed_0021_0006)
-      &amp; arg1(EVENTX10) = r__Some_0021_0001
+      &amp; isA(EVENTX10,r_0021_0006__reviewed)
+      &amp; arg1(EVENTX10) = r_0021_0001__Some
       &amp; tmp3(EVENTX10) = QUALITYX4
-      &amp; r__at_0021_0008_loc(EVENTX10) = ENTITYX5
-      &amp; r__between_0021_0013_rst(EVENTX10) = ENTITYX6
-      &amp; isA(ENTITYX1,r__problems_0021_0004)
-      &amp; isA(ENTITYX5,r__meeting_0021_0010)
-      &amp; r__in_0021_0011(ENTITYX5) = r__Paris_0021_0012
-      &amp; isA(ENTITYX6,r__and_0021_0023)
-      &amp; conj1(ENTITYX6) = r__Couve_0021_0015_r__de_0021_0016_r__Murville_0021_0017
-      &amp; conj2(ENTITYX6) = r__Mr_0021_0024_r__Heath_0021_0025
-      &amp; isA(ENTITYX7,r__Minister_0021_0021)
+      &amp; r_0021_0008__at_loc(EVENTX10) = ENTITYX5
+      &amp; r_0021_0013__between_rst(EVENTX10) = ENTITYX6
+      &amp; isA(ENTITYX1,r_0021_0004__problems)
+      &amp; isA(ENTITYX5,r_0021_0010__meeting)
+      &amp; r_0021_0011__in(ENTITYX5) = r_0021_0012__Paris
+      &amp; isA(ENTITYX6,r_0021_0023__and)
+      &amp; conj1(ENTITYX6) = r_0021_0015__Couve_de_Murville
+      &amp; conj2(ENTITYX6) = r_0021_0024__Mr_Heath
+      &amp; isA(ENTITYX7,r_0021_0021__Minister)
       &amp; attrib1(ENTITYX7) = ATTRIBX8
       &amp; attrib2(ENTITYX7) = ATTRIBX9
-      &amp; isA(r__Some_0021_0001,r__Some_0021_0001)
-      &amp; r__of_0021_0002(r__Some_0021_0001) = ENTITYX1
-      &amp; isA(r__Couve_0021_0015_r__de_0021_0016_r__Murville_0021_0017,r__Couve_0021_0015_r__de_0021_0016_r__Murville_0021_0017)
-      &amp; prn6(r__Couve_0021_0015_r__de_0021_0016_r__Murville_0021_0017) = ENTITYX7
-      &amp; isA(QUALITYX4,r__yesterday_0021_0007)
-      &amp; isA(ATTRIBX8,r__French_0021_0019)
-      &amp; isA(ATTRIBX9,r__foreign_0021_0020)
-      &amp; isA(EVENTX11,r__were_0021_0005)
+      &amp; isA(r_0021_0001__Some,r_0021_0001__Some)
+      &amp; r_0021_0002__of(r_0021_0001__Some) = ENTITYX1
+      &amp; isA(r_0021_0015__Couve_de_Murville,r_0021_0015__Couve_de_Murville)
+      &amp; prn6(r_0021_0015__Couve_de_Murville) = ENTITYX7
+      &amp; isA(QUALITYX4,r_0021_0007__yesterday)
+      &amp; isA(ATTRIBX8,r_0021_0019__French)
+      &amp; isA(ATTRIBX9,r_0021_0020__foreign)
+      &amp; isA(EVENTX11,r_0021_0005__were)
       &amp; catenative(EVENTX11) = CATENATIVEX2 ) ).
 
 

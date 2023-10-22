@@ -90,7 +90,7 @@ You recently spent two days at an annual international arts festival .
 <title>0003_0003&#45;&gt;0003_0010_0003_0011</title>
 <path fill="none" stroke="black" d="M203.65,-179.53C219.45,-172.71 239.88,-163.89 258,-156 281.65,-145.71 308.02,-134.14 329.44,-124.73"/>
 <polygon fill="black" stroke="black" points="330.85,-127.93 338.6,-120.71 328.04,-121.53 330.85,-127.93"/>
-<text text-anchor="middle" x="315.5" y="-144.8" font-family="fixed" font-size="14.00">at_[loc]</text>
+<text text-anchor="middle" x="312" y="-144.8" font-family="fixed" font-size="14.00">at[loc]</text>
 </g>
 <!-- 0003_0008 -->
 <g id="node6" class="node">
@@ -122,30 +122,30 @@ You recently spent two days at an annual international arts festival .
 </svg>
 <br>
 <pre>
-arc(r__spent_0003_0003,r__You_0003_0001,arg0).
-arc(r__spent_0003_0003,r__recently_0003_0002,tmp2).
-arc(r__spent_0003_0003,r__two_0003_0004_r__days_0003_0005,arg1).
-arc(r__spent_0003_0003,r__arts_0003_0010_r__festival_0003_0011,r__at_0003_0006_loc).
-arc(r__arts_0003_0010_r__festival_0003_0011,r__annual_0003_0008,attrib2).
-arc(r__arts_0003_0010_r__festival_0003_0011,r__international_0003_0009,attrib3).
+arc(r_0003_0003__spent,r_0003_0001__You,arg0).
+arc(r_0003_0003__spent,r_0003_0002__recently,tmp2).
+arc(r_0003_0003__spent,r_0003_0004__two_days,arg1).
+arc(r_0003_0003__spent,r_0003_0010__arts_festival,r_0003_0006__at_loc).
+arc(r_0003_0010__arts_festival,r_0003_0008__annual,attrib2).
+arc(r_0003_0010__arts_festival,r_0003_0009__international,attrib3).
 
 </pre>
 <br>
 <pre>
 fof(id_3_A_fce_0102_2000_12,axiom,
     ? [EVENTX6,ENTITYX2,ENTITYX3,QUALITYX1,ATTRIBX4,ATTRIBX5] :
-      ( isA(ENTITYX2,r__two_0003_0004_r__days_0003_0005)
-      &amp; isA(ENTITYX3,r__arts_0003_0010_r__festival_0003_0011)
+      ( isA(ENTITYX2,r_0003_0004__two_days)
+      &amp; isA(ENTITYX3,r_0003_0010__arts_festival)
       &amp; attrib2(ENTITYX3) = ATTRIBX4
       &amp; attrib3(ENTITYX3) = ATTRIBX5
-      &amp; isA(QUALITYX1,r__recently_0003_0002)
-      &amp; isA(ATTRIBX4,r__annual_0003_0008)
-      &amp; isA(ATTRIBX5,r__international_0003_0009)
-      &amp; isA(EVENTX6,r__spent_0003_0003)
-      &amp; arg0(EVENTX6) = r__You_0003_0001
+      &amp; isA(QUALITYX1,r_0003_0002__recently)
+      &amp; isA(ATTRIBX4,r_0003_0008__annual)
+      &amp; isA(ATTRIBX5,r_0003_0009__international)
+      &amp; isA(EVENTX6,r_0003_0003__spent)
+      &amp; arg0(EVENTX6) = r_0003_0001__You
       &amp; tmp2(EVENTX6) = QUALITYX1
       &amp; arg1(EVENTX6) = ENTITYX2
-      &amp; r__at_0003_0006_loc(EVENTX6) = ENTITYX3 ) ).
+      &amp; r_0003_0006__at_loc(EVENTX6) = ENTITYX3 ) ).
 
 
 </pre>

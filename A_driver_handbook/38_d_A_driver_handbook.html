@@ -103,7 +103,7 @@ For example , to : Turn right at the intersection , choose the right - hand lane
 <title>0048_0005&#45;&gt;0048_0009</title>
 <path fill="none" stroke="black" d="M146.5,-347.8C146.5,-336.16 146.5,-320.55 146.5,-307.24"/>
 <polygon fill="black" stroke="black" points="150,-307.18 146.5,-297.18 143,-307.18 150,-307.18"/>
-<text text-anchor="middle" x="172" y="-318.8" font-family="fixed" font-size="14.00">at_[loc]</text>
+<text text-anchor="middle" x="168.5" y="-318.8" font-family="fixed" font-size="14.00">at[loc]</text>
 </g>
 <!-- 0048_0011 -->
 <g id="node6" class="node">
@@ -214,7 +214,7 @@ For example , to : Turn right at the intersection , choose the right - hand lane
 <title>0048_0018&#45;&gt;0048_0024</title>
 <path fill="none" stroke="black" d="M368.22,-261.81C371.61,-255.96 375.35,-249.25 378.5,-243 382.34,-235.38 386.2,-226.94 389.59,-219.19"/>
 <polygon fill="black" stroke="black" points="392.86,-220.44 393.59,-209.87 386.43,-217.68 392.86,-220.44"/>
-<text text-anchor="middle" x="411.5" y="-231.8" font-family="fixed" font-size="14.00">in_[loc]</text>
+<text text-anchor="middle" x="408" y="-231.8" font-family="fixed" font-size="14.00">in[loc]</text>
 </g>
 <!-- 0048_0023 -->
 <g id="node15" class="node">
@@ -259,63 +259,63 @@ For example , to : Turn right at the intersection , choose the right - hand lane
 </svg>
 <br>
 <pre>
-arc(cnt_0048_1005,r__Turn_0048_0005,restriction).
-arc(cnt_0048_1005,r__and_0048_0017,scope).
-arc(imperative_0048_1002,r__For_example_0048_0001,scope).
-arc(r__For_example_0048_0001,cnt_0048_1005,scope).
-arc(r__Turn_0048_0005,r__right_0048_0006,dir4).
-arc(r__Turn_0048_0005,r__intersection_0048_0009,r__at_0048_0007_loc).
-arc(r__choose_0048_0011,r__lane_0048_0016,arg1).
-arc(r__choose_0048_0011,r__car_0048_0027,prn7).
-arc(r__hand_0048_0015,r__right_0048_0013,attrib1).
-arc(r__lane_0048_0016,r__hand_0048_0015,nlyr2).
-arc(r__and_0048_0017,r__choose_0048_0011,conj1).
-arc(r__and_0048_0017,r__exit_0048_0018,conj2).
-arc(r__exit_0048_0018,r__lane_0048_0024,r__in_0048_0019_loc).
-arc(r__exit_0048_0018,r__car_0048_0027,prn7).
-arc(r__hand_0048_0023,r__right_0048_0021,attrib1).
-arc(r__lane_0048_0024,r__hand_0048_0023,nlyr2).
-arc(r__car_0048_0027,r__blue_0048_0026,attrib1).
+arc(cnt_0048_1005,r_0048_0005__Turn,restriction).
+arc(cnt_0048_1005,r_0048_0017__and,scope).
+arc(imperative_0048_1002,r_0048_0001__For_example,scope).
+arc(r_0048_0001__For_example,cnt_0048_1005,scope).
+arc(r_0048_0005__Turn,r_0048_0006__right,dir4).
+arc(r_0048_0005__Turn,r_0048_0009__intersection,r_0048_0007__at_loc).
+arc(r_0048_0011__choose,r_0048_0016__lane,arg1).
+arc(r_0048_0011__choose,r_0048_0027__car,prn7).
+arc(r_0048_0015__hand,r_0048_0013__right,attrib1).
+arc(r_0048_0016__lane,r_0048_0015__hand,nlyr2).
+arc(r_0048_0017__and,r_0048_0011__choose,conj1).
+arc(r_0048_0017__and,r_0048_0018__exit,conj2).
+arc(r_0048_0018__exit,r_0048_0024__lane,r_0048_0019__in_loc).
+arc(r_0048_0018__exit,r_0048_0027__car,prn7).
+arc(r_0048_0023__hand,r_0048_0021__right,attrib1).
+arc(r_0048_0024__lane,r_0048_0023__hand,nlyr2).
+arc(r_0048_0027__car,r_0048_0026__blue,attrib1).
 
 </pre>
 <br>
 <pre>
 fof(id_48_A_driver_handbook,axiom,
     ? [OPERATORX2,OPERATORX4,CONNX6,CONJX20,EVENTX19,EVENTX15,EVENTX9,QUALITYX7,ENTITYX10,ENTITYX16,ENTITYX17,ENTITYX12,ENTITYX13,ENTITYX8,ATTRIBX18,ATTRIBX14,ATTRIBX11] :
-      ( isA(QUALITYX7,r__right_0048_0006)
-      &amp; isA(ENTITYX8,r__intersection_0048_0009)
-      &amp; isA(ENTITYX10,r__car_0048_0027)
+      ( isA(QUALITYX7,r_0048_0006__right)
+      &amp; isA(ENTITYX8,r_0048_0009__intersection)
+      &amp; isA(ENTITYX10,r_0048_0027__car)
       &amp; attrib1(ENTITYX10) = ATTRIBX11
-      &amp; isA(ENTITYX12,r__lane_0048_0016)
+      &amp; isA(ENTITYX12,r_0048_0016__lane)
       &amp; nlyr2(ENTITYX12) = ENTITYX13
-      &amp; isA(ENTITYX13,r__hand_0048_0015)
+      &amp; isA(ENTITYX13,r_0048_0015__hand)
       &amp; attrib1(ENTITYX13) = ATTRIBX14
-      &amp; isA(ENTITYX16,r__lane_0048_0024)
+      &amp; isA(ENTITYX16,r_0048_0024__lane)
       &amp; nlyr2(ENTITYX16) = ENTITYX17
-      &amp; isA(ENTITYX17,r__hand_0048_0023)
+      &amp; isA(ENTITYX17,r_0048_0023__hand)
       &amp; attrib1(ENTITYX17) = ATTRIBX18
-      &amp; isA(ATTRIBX11,r__blue_0048_0026)
-      &amp; isA(ATTRIBX14,r__right_0048_0013)
-      &amp; isA(ATTRIBX18,r__right_0048_0021)
+      &amp; isA(ATTRIBX11,r_0048_0026__blue)
+      &amp; isA(ATTRIBX14,r_0048_0013__right)
+      &amp; isA(ATTRIBX18,r_0048_0021__right)
       &amp; isA(OPERATORX2,imperative_0048_1002)
       &amp; scope(OPERATORX2) = OPERATORX4
-      &amp; isA(OPERATORX4,r__For_example_0048_0001)
+      &amp; isA(OPERATORX4,r_0048_0001__For_example)
       &amp; scope(OPERATORX4) = CONNX6
       &amp; isA(CONNX6,cnt_0048_1005)
       &amp; restriction(CONNX6) = EVENTX9
-      &amp; isA(EVENTX9,r__Turn_0048_0005)
+      &amp; isA(EVENTX9,r_0048_0005__Turn)
       &amp; dir4(EVENTX9) = QUALITYX7
-      &amp; r__at_0048_0007_loc(EVENTX9) = ENTITYX8
+      &amp; r_0048_0007__at_loc(EVENTX9) = ENTITYX8
       &amp; scope(CONNX6) = CONJX20
-      &amp; isA(CONJX20,r__and_0048_0017)
+      &amp; isA(CONJX20,r_0048_0017__and)
       &amp; conj1(CONJX20) = EVENTX15
-      &amp; isA(EVENTX15,r__choose_0048_0011)
+      &amp; isA(EVENTX15,r_0048_0011__choose)
       &amp; prn7(EVENTX15) = ENTITYX10
       &amp; arg1(EVENTX15) = ENTITYX12
       &amp; conj2(CONJX20) = EVENTX19
-      &amp; isA(EVENTX19,r__exit_0048_0018)
+      &amp; isA(EVENTX19,r_0048_0018__exit)
       &amp; prn7(EVENTX19) = ENTITYX10
-      &amp; r__in_0048_0019_loc(EVENTX19) = ENTITYX16 ) ).
+      &amp; r_0048_0019__in_loc(EVENTX19) = ENTITYX16 ) ).
 
 
 </pre>

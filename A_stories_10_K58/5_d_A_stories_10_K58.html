@@ -194,18 +194,18 @@ What I thought was a most humorous action by Mickey was when he discovered the s
 </svg>
 <br>
 <pre>
-arc(r__thought_0005_0003,r__I_0005_0002,arg0).
-arc(r__thought_0005_0003,r__was_0005_0004,arg1).
-arc(r__was_0005_0004,r__action_0005_0008,prd2).
-arc(r__was_0005_0004,z_0005_1008,arg0).
-arc(r__humorous_0005_0007,r__most_0005_0006,quality1).
-arc(r__action_0005_0008,r__humorous_0005_0007,attrib2).
-arc(r__action_0005_0008,r__Mickey_0005_0010,r__by_0005_0009).
-arc(r__was_0005_0011,z_0005_1008,arg0).
-arc(r__was_0005_0011,z_0005_1013,prd2).
-arc(r__discovered_0005_0014,r__Mickey_0005_0010,arg0).
-arc(r__discovered_0005_0014,r__staircase_0005_0016,arg1).
-arc(r__discovered_0005_0014,z_0005_1013,tmp1).
+arc(r_0005_0003__thought,r_0005_0002__I,arg0).
+arc(r_0005_0003__thought,r_0005_0004__was,arg1).
+arc(r_0005_0004__was,r_0005_0008__action,prd2).
+arc(r_0005_0004__was,z_0005_1008,arg0).
+arc(r_0005_0007__humorous,r_0005_0006__most,quality1).
+arc(r_0005_0008__action,r_0005_0007__humorous,attrib2).
+arc(r_0005_0008__action,r_0005_0010__Mickey,r_0005_0009__by).
+arc(r_0005_0011__was,z_0005_1008,arg0).
+arc(r_0005_0011__was,z_0005_1013,prd2).
+arc(r_0005_0014__discovered,r_0005_0010__Mickey,arg0).
+arc(r_0005_0014__discovered,r_0005_0016__staircase,arg1).
+arc(r_0005_0014__discovered,z_0005_1013,tmp1).
 
 </pre>
 <br>
@@ -213,27 +213,27 @@ arc(r__discovered_0005_0014,z_0005_1013,tmp1).
 fof(id_5_A_stories_10_K58,axiom,
     ? [STATEX2,MICKEYX10,EVENTX14,EVENTX12,EVENTX7,EVENTX6,ENTITYX1,ENTITYX9,ENTITYX11,ENTITYX3,ATTRIBX4,QUALITYX5] :
       ( STATEX2 = EVENTX6
-      &amp; isA(EVENTX6,r__was_0005_0004)
+      &amp; isA(EVENTX6,r_0005_0004__was)
       &amp; arg0(EVENTX6) = ENTITYX1
       &amp; prd2(EVENTX6) = ENTITYX3
-      &amp; isA(EVENTX7,r__thought_0005_0003)
-      &amp; arg0(EVENTX7) = r__I_0005_0002
+      &amp; isA(EVENTX7,r_0005_0003__thought)
+      &amp; arg0(EVENTX7) = r_0005_0002__I
       &amp; arg1(EVENTX7) = STATEX2
       &amp; isA(ENTITYX1,z_0005_1008)
-      &amp; isA(ENTITYX3,r__action_0005_0008)
+      &amp; isA(ENTITYX3,r_0005_0008__action)
       &amp; attrib2(ENTITYX3) = ATTRIBX4
-      &amp; r__by_0005_0009(ENTITYX3) = r__Mickey_0005_0010
-      &amp; isA(EVENTX12,r__discovered_0005_0014)
+      &amp; r_0005_0009__by(ENTITYX3) = r_0005_0010__Mickey
+      &amp; isA(EVENTX12,r_0005_0014__discovered)
       &amp; tmp1(EVENTX12) = ENTITYX9
       &amp; arg0(EVENTX12) = MICKEYX10
       &amp; arg1(EVENTX12) = ENTITYX11
       &amp; isA(ENTITYX9,z_0005_1013)
-      &amp; MICKEYX10 = r__Mickey_0005_0010
-      &amp; isA(ENTITYX11,r__staircase_0005_0016)
-      &amp; isA(ATTRIBX4,r__humorous_0005_0007)
+      &amp; MICKEYX10 = r_0005_0010__Mickey
+      &amp; isA(ENTITYX11,r_0005_0016__staircase)
+      &amp; isA(ATTRIBX4,r_0005_0007__humorous)
       &amp; quality1(ATTRIBX4) = QUALITYX5
-      &amp; isA(QUALITYX5,r__most_0005_0006)
-      &amp; isA(EVENTX14,r__was_0005_0011)
+      &amp; isA(QUALITYX5,r_0005_0006__most)
+      &amp; isA(EVENTX14,r_0005_0011__was)
       &amp; arg0(EVENTX14) = ENTITYX1
       &amp; prd2(EVENTX14) = ENTITYX9 ) ).
 

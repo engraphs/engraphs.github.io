@@ -91,7 +91,7 @@ This operation is best performed by two persons , one to draw the wine , the oth
 <title>0035_0005&#45;&gt;0035_0007_0035_0008</title>
 <path fill="none" stroke="black" d="M177.49,-349.21C195.49,-336.02 221.37,-317.06 241.49,-302.31"/>
 <polygon fill="black" stroke="black" points="243.73,-305.02 249.72,-296.28 239.59,-299.37 243.73,-305.02"/>
-<text text-anchor="middle" x="269.45" y="-318.8" font-family="fixed" font-size="14.00">[arg0]by_[lgs]</text>
+<text text-anchor="middle" x="266.45" y="-318.8" font-family="fixed" font-size="14.00">[arg0]by[lgs]</text>
 </g>
 <!-- z_0035_1014 -->
 <g id="node6" class="node">
@@ -201,17 +201,17 @@ This operation is best performed by two persons , one to draw the wine , the oth
 </svg>
 <br>
 <pre>
-arc(r__is_0035_0003,r__performed_0035_0005,catenative).
-arc(r__performed_0035_0005,r__operation_0035_0002,arg1).
-arc(r__performed_0035_0005,r__best_0035_0004,mnr1).
-arc(r__performed_0035_0005,r__two_0035_0007_r__persons_0035_0008,arg0_r__by_0035_0006_lgs).
-arc(r__two_0035_0007_r__persons_0035_0008,z_0035_1014,prn4).
-arc(r__draw_0035_0012,r__one_0035_0010,arg0).
-arc(r__draw_0035_0012,r__wine_0035_0014,arg1).
-arc(r__cork_0035_0019,r__bottles_0035_0021,arg1).
-arc(r__cork_0035_0019,z_0035_1013,arg0).
-arc(z_0035_1013,r__other_0035_0017,attrib2).
-arc(z_0035_1014,r__one_0035_0010,conj1).
+arc(r_0035_0003__is,r_0035_0005__performed,catenative).
+arc(r_0035_0005__performed,r_0035_0002__operation,arg1).
+arc(r_0035_0005__performed,r_0035_0004__best,mnr1).
+arc(r_0035_0005__performed,r_0035_0007__two_persons,arg0_by_lgs).
+arc(r_0035_0007__two_persons,z_0035_1014,prn4).
+arc(r_0035_0012__draw,r_0035_0010__one,arg0).
+arc(r_0035_0012__draw,r_0035_0014__wine,arg1).
+arc(r_0035_0019__cork,r_0035_0021__bottles,arg1).
+arc(r_0035_0019__cork,z_0035_1013,arg0).
+arc(z_0035_1013,r_0035_0017__other,attrib2).
+arc(z_0035_1014,r_0035_0010__one,conj1).
 arc(z_0035_1014,z_0035_1013,conj2).
 
 </pre>
@@ -220,30 +220,30 @@ arc(z_0035_1014,z_0035_1013,conj2).
 fof(id_35_A_BEETON_1861,axiom,
     ? [CATENATIVEX2,EVENTX16,EVENTX15,EVENTX12,EVENTX8,ENTITYX1,ENTITYX4,ENTITYX5,ENTITYX6,ENTITYX9,ENTITYX11,ENTITYX7,QUALITYX3,ATTRIBX10] :
       ( CATENATIVEX2 = EVENTX15
-      &amp; isA(EVENTX15,r__performed_0035_0005)
-      &amp; arg0_r__by_0035_0006_lgs(EVENTX15) = ENTITYX4
+      &amp; isA(EVENTX15,r_0035_0005__performed)
+      &amp; arg0_by_lgs(EVENTX15) = ENTITYX4
       &amp; arg1(EVENTX15) = ENTITYX1
       &amp; mnr1(EVENTX15) = QUALITYX3
-      &amp; isA(ENTITYX1,r__operation_0035_0002)
-      &amp; isA(ENTITYX4,r__two_0035_0007_r__persons_0035_0008)
+      &amp; isA(ENTITYX1,r_0035_0002__operation)
+      &amp; isA(ENTITYX4,r_0035_0007__two_persons)
       &amp; prn4(ENTITYX4) = ENTITYX5
       &amp; isA(ENTITYX5,z_0035_1014)
       &amp; conj1(ENTITYX5) = ENTITYX6
       &amp; conj2(ENTITYX5) = ENTITYX9
-      &amp; isA(EVENTX8,r__draw_0035_0012)
+      &amp; isA(EVENTX8,r_0035_0012__draw)
       &amp; arg0(EVENTX8) = ENTITYX6
       &amp; arg1(EVENTX8) = ENTITYX7
-      &amp; isA(ENTITYX6,r__one_0035_0010)
-      &amp; isA(ENTITYX7,r__wine_0035_0014)
-      &amp; isA(EVENTX12,r__cork_0035_0019)
+      &amp; isA(ENTITYX6,r_0035_0010__one)
+      &amp; isA(ENTITYX7,r_0035_0014__wine)
+      &amp; isA(EVENTX12,r_0035_0019__cork)
       &amp; arg0(EVENTX12) = ENTITYX9
       &amp; arg1(EVENTX12) = ENTITYX11
       &amp; isA(ENTITYX9,z_0035_1013)
       &amp; attrib2(ENTITYX9) = ATTRIBX10
-      &amp; isA(ENTITYX11,r__bottles_0035_0021)
-      &amp; isA(QUALITYX3,r__best_0035_0004)
-      &amp; isA(ATTRIBX10,r__other_0035_0017)
-      &amp; isA(EVENTX16,r__is_0035_0003)
+      &amp; isA(ENTITYX11,r_0035_0021__bottles)
+      &amp; isA(QUALITYX3,r_0035_0004__best)
+      &amp; isA(ATTRIBX10,r_0035_0017__other)
+      &amp; isA(EVENTX16,r_0035_0003__is)
       &amp; catenative(EVENTX16) = CATENATIVEX2 ) ).
 
 

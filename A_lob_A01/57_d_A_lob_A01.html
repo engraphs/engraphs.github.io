@@ -174,16 +174,16 @@ President Kennedy is ready to get tough over West Germany 's cash offer to help 
 </svg>
 <br>
 <pre>
-arc(r__is_0060_0003,r__President_0060_0001_r__Kennedy_0060_0002,arg0).
-arc(r__is_0060_0003,r__ready_0060_0004,prd2).
-arc(r__ready_0060_0004,r__get_0060_0006,emb2).
-arc(r__get_0060_0006,r__tough_0060_0007,prd).
-arc(r__tough_0060_0007,r__cash_0060_0012_r__offer_0060_0013,r__over_0060_0008).
-arc(r__cash_0060_0012_r__offer_0060_0013,r__West_0060_0009_r__Germany_0060_0010,genv).
-arc(r__cash_0060_0012_r__offer_0060_0013,r__help_0060_0015,emb4).
-arc(r__help_0060_0015,r__balance_0060_0018,arg1).
-arc(r__balance_0060_0018,r__America_0060_0016,genv).
-arc(r__balance_0060_0018,r__payments_0060_0020_r__position_0060_0021,r__of_0060_0019).
+arc(r_0060_0003__is,r_0060_0001__President_Kennedy,arg0).
+arc(r_0060_0003__is,r_0060_0004__ready,prd2).
+arc(r_0060_0004__ready,r_0060_0006__get,emb2).
+arc(r_0060_0006__get,r_0060_0007__tough,prd).
+arc(r_0060_0007__tough,r_0060_0012__cash_offer,r_0060_0008__over).
+arc(r_0060_0012__cash_offer,r_0060_0009__West_Germany,genv).
+arc(r_0060_0012__cash_offer,r_0060_0015__help,emb4).
+arc(r_0060_0015__help,r_0060_0018__balance,arg1).
+arc(r_0060_0018__balance,r_0060_0016__America,genv).
+arc(r_0060_0018__balance,r_0060_0020__payments_position,r_0060_0019__of).
 
 </pre>
 <br>
@@ -191,24 +191,24 @@ arc(r__balance_0060_0018,r__payments_0060_0020_r__position_0060_0021,r__of_0060_
 fof(id_60_A_lob_A01,axiom,
     ? [STATEX2,STATEX7,EVENTX14,EVENTX13,EVENTX12,ENTITYX6,ENTITYX10,ENTITYX11,ATTRIBX1,ATTRIBX5] :
       ( STATEX2 = EVENTX13
-      &amp; isA(EVENTX13,r__get_0060_0006)
+      &amp; isA(EVENTX13,r_0060_0006__get)
       &amp; prd(EVENTX13) = ATTRIBX5
       &amp; STATEX7 = EVENTX12
-      &amp; isA(EVENTX12,r__help_0060_0015)
+      &amp; isA(EVENTX12,r_0060_0015__help)
       &amp; arg1(EVENTX12) = ENTITYX10
-      &amp; isA(ENTITYX6,r__cash_0060_0012_r__offer_0060_0013)
-      &amp; genv(ENTITYX6) = r__West_0060_0009_r__Germany_0060_0010
+      &amp; isA(ENTITYX6,r_0060_0012__cash_offer)
+      &amp; genv(ENTITYX6) = r_0060_0009__West_Germany
       &amp; emb4(ENTITYX6) = STATEX7
-      &amp; isA(ENTITYX10,r__balance_0060_0018)
-      &amp; genv(ENTITYX10) = r__America_0060_0016
-      &amp; r__of_0060_0019(ENTITYX10) = ENTITYX11
-      &amp; isA(ENTITYX11,r__payments_0060_0020_r__position_0060_0021)
-      &amp; isA(ATTRIBX1,r__ready_0060_0004)
+      &amp; isA(ENTITYX10,r_0060_0018__balance)
+      &amp; genv(ENTITYX10) = r_0060_0016__America
+      &amp; r_0060_0019__of(ENTITYX10) = ENTITYX11
+      &amp; isA(ENTITYX11,r_0060_0020__payments_position)
+      &amp; isA(ATTRIBX1,r_0060_0004__ready)
       &amp; emb2(ATTRIBX1) = STATEX2
-      &amp; isA(ATTRIBX5,r__tough_0060_0007)
-      &amp; r__over_0060_0008(ATTRIBX5) = ENTITYX6
-      &amp; isA(EVENTX14,r__is_0060_0003)
-      &amp; arg0(EVENTX14) = r__President_0060_0001_r__Kennedy_0060_0002
+      &amp; isA(ATTRIBX5,r_0060_0007__tough)
+      &amp; r_0060_0008__over(ATTRIBX5) = ENTITYX6
+      &amp; isA(EVENTX14,r_0060_0003__is)
+      &amp; arg0(EVENTX14) = r_0060_0001__President_Kennedy
       &amp; prd2(EVENTX14) = ATTRIBX1 ) ).
 
 

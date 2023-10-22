@@ -96,22 +96,22 @@ High speed increases your stopping distance .
 </svg>
 <br>
 <pre>
-arc(r__speed_0018_0002,r__High_0018_0001,attrib1).
-arc(r__increases_0018_0003,r__speed_0018_0002,arg0).
-arc(r__increases_0018_0003,r__stopping_0018_0005_r__distance_0018_0006,arg1).
-arc(r__stopping_0018_0005_r__distance_0018_0006,r__your_0018_0004,genv).
+arc(r_0018_0002__speed,r_0018_0001__High,attrib1).
+arc(r_0018_0003__increases,r_0018_0002__speed,arg0).
+arc(r_0018_0003__increases,r_0018_0005__stopping_distance,arg1).
+arc(r_0018_0005__stopping_distance,r_0018_0004__your,genv).
 
 </pre>
 <br>
 <pre>
 fof(id_18_A_driver_handbook,axiom,
     ? [EVENTX4,ENTITYX1,ENTITYX3,ATTRIBX2] :
-      ( isA(ENTITYX1,r__speed_0018_0002)
+      ( isA(ENTITYX1,r_0018_0002__speed)
       &amp; attrib1(ENTITYX1) = ATTRIBX2
-      &amp; isA(ENTITYX3,r__stopping_0018_0005_r__distance_0018_0006)
-      &amp; genv(ENTITYX3) = r__your_0018_0004
-      &amp; isA(ATTRIBX2,r__High_0018_0001)
-      &amp; isA(EVENTX4,r__increases_0018_0003)
+      &amp; isA(ENTITYX3,r_0018_0005__stopping_distance)
+      &amp; genv(ENTITYX3) = r_0018_0004__your
+      &amp; isA(ATTRIBX2,r_0018_0001__High)
+      &amp; isA(EVENTX4,r_0018_0003__increases)
       &amp; arg0(EVENTX4) = ENTITYX1
       &amp; arg1(EVENTX4) = ENTITYX3 ) ).
 

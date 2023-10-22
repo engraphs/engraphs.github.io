@@ -82,8 +82,8 @@
 <!-- 0092_0008_cnt -->
 <g id="node5" class="node">
 <title>0092_0008_cnt</title>
-<ellipse fill="none" stroke="black" cx="216.9" cy="-192" rx="46.29" ry="18"/>
-<text text-anchor="middle" x="216.9" y="-188.3" font-family="fixed" font-size="14.00">as_[cnt]</text>
+<ellipse fill="none" stroke="black" cx="216.9" cy="-192" rx="42.49" ry="18"/>
+<text text-anchor="middle" x="216.9" y="-188.3" font-family="fixed" font-size="14.00">as[cnt]</text>
 </g>
 <!-- 0092_0008_cnt&#45;&gt;0092_0004 -->
 <g id="edge4" class="edge">
@@ -122,29 +122,29 @@
 </svg>
 <br>
 <pre>
-arc(r__is_0092_0004,r__Late_0092_0002,tmp2).
-arc(r__is_0092_0004,r__it_0092_0003,arg0).
-arc(r__is_0092_0004,r__master_0092_0006,voc).
-arc(r__as_0092_0008_cnt,r__is_0092_0004,scope).
-arc(r__as_0092_0008_cnt,r__say_0092_0010,restriction).
-arc(r__say_0092_0010,r__you_0092_0009,arg0).
+arc(r_0092_0004__is,r_0092_0002__Late,tmp2).
+arc(r_0092_0004__is,r_0092_0003__it,arg0).
+arc(r_0092_0004__is,r_0092_0006__master,voc).
+arc(r_0092_0008__as_cnt,r_0092_0004__is,scope).
+arc(r_0092_0008__as_cnt,r_0092_0010__say,restriction).
+arc(r_0092_0010__say,r_0092_0009__you,arg0).
 
 </pre>
 <br>
 <pre>
 fof(id_92_A_HARDY_1883,axiom,
     ? [CONNX3,EVENTX4,EVENTX5,QUALITYX1,ENTITYX2] :
-      ( isA(QUALITYX1,r__Late_0092_0002)
-      &amp; isA(ENTITYX2,r__master_0092_0006)
-      &amp; isA(CONNX3,r__as_0092_0008_cnt)
+      ( isA(QUALITYX1,r_0092_0002__Late)
+      &amp; isA(ENTITYX2,r_0092_0006__master)
+      &amp; isA(CONNX3,r_0092_0008__as_cnt)
       &amp; scope(CONNX3) = EVENTX5
-      &amp; isA(EVENTX5,r__is_0092_0004)
+      &amp; isA(EVENTX5,r_0092_0004__is)
       &amp; tmp2(EVENTX5) = QUALITYX1
-      &amp; arg0(EVENTX5) = r__it_0092_0003
+      &amp; arg0(EVENTX5) = r_0092_0003__it
       &amp; voc(EVENTX5) = ENTITYX2
       &amp; restriction(CONNX3) = EVENTX4
-      &amp; isA(EVENTX4,r__say_0092_0010)
-      &amp; arg0(EVENTX4) = r__you_0092_0009 ) ).
+      &amp; isA(EVENTX4,r_0092_0010__say)
+      &amp; arg0(EVENTX4) = r_0092_0009__you ) ).
 
 
 </pre>

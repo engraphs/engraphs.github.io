@@ -162,37 +162,37 @@ English programmes of study : key stage 4 National curriculum in England July 20
 </svg>
 <br>
 <pre>
-arc(r__programmes_0001_0002,r__English_0001_0001,attrib1).
-arc(r__programmes_0001_0002,r__study_0001_0004,r__of_0001_0003).
-arc(r__programmes_0001_0002,r__stage_0001_0007_r__4_0001_0008,prn5).
-arc(r__programmes_0001_0002,r__July_0001_0013_r__2014_0001_0014,prn6).
-arc(r__stage_0001_0007_r__4_0001_0008,r__key_0001_0006,attrib1).
-arc(r__stage_0001_0007_r__4_0001_0008,r__curriculum_0001_0010,prn4).
-arc(r__curriculum_0001_0010,r__National_0001_0009,attrib1).
-arc(r__curriculum_0001_0010,r__England_0001_0012,r__in_0001_0011).
-arc(z_0001_1011,r__programmes_0001_0002,z_0001_1002).
+arc(r_0001_0002__programmes,r_0001_0001__English,attrib1).
+arc(r_0001_0002__programmes,r_0001_0004__study,r_0001_0003__of).
+arc(r_0001_0002__programmes,r_0001_0007__stage_4,prn5).
+arc(r_0001_0002__programmes,r_0001_0013__July_2014,prn6).
+arc(r_0001_0007__stage_4,r_0001_0006__key,attrib1).
+arc(r_0001_0007__stage_4,r_0001_0010__curriculum,prn4).
+arc(r_0001_0010__curriculum,r_0001_0009__National,attrib1).
+arc(r_0001_0010__curriculum,r_0001_0012__England,r_0001_0011__in).
+arc(z_0001_1011,r_0001_0002__programmes,z_0001_1002).
 
 </pre>
 <br>
 <pre>
 fof(id_1_A_KS4_English,axiom,
     ? [EVENTX12,ENTITYX3,ENTITYX5,ENTITYX6,ENTITYX10,ENTITYX8,ATTRIBX4,ATTRIBX7,ATTRIBX9] :
-      ( isA(ENTITYX3,r__programmes_0001_0002)
+      ( isA(ENTITYX3,r_0001_0002__programmes)
       &amp; attrib1(ENTITYX3) = ATTRIBX4
-      &amp; r__of_0001_0003(ENTITYX3) = ENTITYX5
+      &amp; r_0001_0003__of(ENTITYX3) = ENTITYX5
       &amp; prn5(ENTITYX3) = ENTITYX6
       &amp; prn6(ENTITYX3) = ENTITYX10
-      &amp; isA(ENTITYX5,r__study_0001_0004)
-      &amp; isA(ENTITYX6,r__stage_0001_0007_r__4_0001_0008)
+      &amp; isA(ENTITYX5,r_0001_0004__study)
+      &amp; isA(ENTITYX6,r_0001_0007__stage_4)
       &amp; attrib1(ENTITYX6) = ATTRIBX7
       &amp; prn4(ENTITYX6) = ENTITYX8
-      &amp; isA(ENTITYX8,r__curriculum_0001_0010)
+      &amp; isA(ENTITYX8,r_0001_0010__curriculum)
       &amp; attrib1(ENTITYX8) = ATTRIBX9
-      &amp; r__in_0001_0011(ENTITYX8) = r__England_0001_0012
-      &amp; isA(ENTITYX10,r__July_0001_0013_r__2014_0001_0014)
-      &amp; isA(ATTRIBX4,r__English_0001_0001)
-      &amp; isA(ATTRIBX7,r__key_0001_0006)
-      &amp; isA(ATTRIBX9,r__National_0001_0009)
+      &amp; r_0001_0011__in(ENTITYX8) = r_0001_0012__England
+      &amp; isA(ENTITYX10,r_0001_0013__July_2014)
+      &amp; isA(ATTRIBX4,r_0001_0001__English)
+      &amp; isA(ATTRIBX7,r_0001_0006__key)
+      &amp; isA(ATTRIBX9,r_0001_0009__National)
       &amp; isA(EVENTX12,z_0001_1011)
       &amp; z_0001_1002(EVENTX12) = ENTITYX3 ) ).
 

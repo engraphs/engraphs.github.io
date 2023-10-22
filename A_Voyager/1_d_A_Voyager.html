@@ -96,21 +96,21 @@ Jimmy Carter , Voyager Spacecraft Statement by the President .
 </svg>
 <br>
 <pre>
-arc(r__Statement_0001_0006,r__Voyager_0001_0004_r__Spacecraft_0001_0005,nlyr1).
-arc(r__Statement_0001_0006,r__President_0001_0009,r__by_0001_0007).
-arc(r__President_0001_0009,r__Jimmy_0001_0001_r__Carter_0001_0002,prn3).
-arc(z_0001_1005,r__Statement_0001_0006,z_0001_1002).
+arc(r_0001_0006__Statement,r_0001_0004__Voyager_Spacecraft,nlyr1).
+arc(r_0001_0006__Statement,r_0001_0009__President,r_0001_0007__by).
+arc(r_0001_0009__President,r_0001_0001__Jimmy_Carter,prn3).
+arc(z_0001_1005,r_0001_0006__Statement,z_0001_1002).
 
 </pre>
 <br>
 <pre>
 fof(id_1_A_Voyager,axiom,
     ? [EVENTX6,ENTITYX3,ENTITYX4] :
-      ( isA(ENTITYX3,r__Statement_0001_0006)
-      &amp; nlyr1(ENTITYX3) = r__Voyager_0001_0004_r__Spacecraft_0001_0005
-      &amp; r__by_0001_0007(ENTITYX3) = ENTITYX4
-      &amp; isA(ENTITYX4,r__President_0001_0009)
-      &amp; prn3(ENTITYX4) = r__Jimmy_0001_0001_r__Carter_0001_0002
+      ( isA(ENTITYX3,r_0001_0006__Statement)
+      &amp; nlyr1(ENTITYX3) = r_0001_0004__Voyager_Spacecraft
+      &amp; r_0001_0007__by(ENTITYX3) = ENTITYX4
+      &amp; isA(ENTITYX4,r_0001_0009__President)
+      &amp; prn3(ENTITYX4) = r_0001_0001__Jimmy_Carter
       &amp; isA(EVENTX6,z_0001_1005)
       &amp; z_0001_1002(EVENTX6) = ENTITYX3 ) ).
 

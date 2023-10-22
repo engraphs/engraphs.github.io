@@ -195,7 +195,7 @@ The report also found that there is strong evidence that badger predation restri
 <title>0066_0022&#45;&gt;0066_0026</title>
 <path fill="none" stroke="black" d="M537.26,-179C559.07,-165.17 595.25,-142.21 621.23,-125.74"/>
 <polygon fill="black" stroke="black" points="623.38,-128.52 629.95,-120.2 619.63,-122.6 623.38,-128.52"/>
-<text text-anchor="middle" x="627.34" y="-144.8" font-family="fixed" font-size="14.00">as_[prd2]</text>
+<text text-anchor="middle" x="623.84" y="-144.8" font-family="fixed" font-size="14.00">as[prd2]</text>
 </g>
 <!-- 0066_0021 -->
 <g id="node13" class="node">
@@ -240,21 +240,21 @@ The report also found that there is strong evidence that badger predation restri
 </svg>
 <br>
 <pre>
-arc(r__also_0066_0003,r__found_0066_0004,scope).
-arc(r__found_0066_0004,r__report_0066_0002,arg0).
-arc(r__found_0066_0004,r__is_0066_0007,arg1).
-arc(r__is_0066_0007,r__evidence_0066_0009,arg0).
-arc(r__evidence_0066_0009,r__strong_0066_0008,attrib1).
-arc(r__evidence_0066_0009,r__and_0066_0016,emb3).
-arc(r__restricts_0066_0013,r__badger_0066_0011_r__predation_0066_0012,arg0).
-arc(r__restricts_0066_0013,r__hedgehog_0066_0014_r__populations_0066_0015,arg1).
-arc(r__and_0066_0016,r__restricts_0066_0013,conj1).
-arc(r__and_0066_0016,r__act_0066_0022,conj2).
-arc(r__amenity_0066_0018_r__areas_0066_0019,r__villages_0066_0021,r__in_0066_0020).
-arc(r__act_0066_0022,r__amenity_0066_0018_r__areas_0066_0019,arg0).
-arc(r__act_0066_0022,r__refuge_0066_0026,r__as_0066_0023_prd2).
-arc(r__refuge_0066_0026,r__spatial_0066_0025,attrib2).
-arc(r__refuge_0066_0026,r__hedgehogs_0066_0028,r__for_0066_0027).
+arc(r_0066_0003__also,r_0066_0004__found,scope).
+arc(r_0066_0004__found,r_0066_0002__report,arg0).
+arc(r_0066_0004__found,r_0066_0007__is,arg1).
+arc(r_0066_0007__is,r_0066_0009__evidence,arg0).
+arc(r_0066_0009__evidence,r_0066_0008__strong,attrib1).
+arc(r_0066_0009__evidence,r_0066_0016__and,emb3).
+arc(r_0066_0013__restricts,r_0066_0011__badger_predation,arg0).
+arc(r_0066_0013__restricts,r_0066_0014__hedgehog_populations,arg1).
+arc(r_0066_0016__and,r_0066_0013__restricts,conj1).
+arc(r_0066_0016__and,r_0066_0022__act,conj2).
+arc(r_0066_0018__amenity_areas,r_0066_0021__villages,r_0066_0020__in).
+arc(r_0066_0022__act,r_0066_0018__amenity_areas,arg0).
+arc(r_0066_0022__act,r_0066_0026__refuge,r_0066_0023__as_prd2).
+arc(r_0066_0026__refuge,r_0066_0025__spatial,attrib2).
+arc(r_0066_0026__refuge,r_0066_0028__hedgehogs,r_0066_0027__for).
 
 </pre>
 <br>
@@ -262,38 +262,38 @@ arc(r__refuge_0066_0026,r__hedgehogs_0066_0028,r__for_0066_0027).
 fof(id_66_A_Hedgehog,axiom,
     ? [STATEX3,STATEX6,OPERATORX2,EVENTX20,EVENTX19,CONJX18,EVENTX17,EVENTX11,ENTITYX1,ENTITYX4,ENTITYX12,ENTITYX14,ENTITYX16,ENTITYX13,ENTITYX9,ENTITYX10,ATTRIBX5,ATTRIBX15] :
       ( STATEX3 = EVENTX19
-      &amp; isA(EVENTX19,r__is_0066_0007)
+      &amp; isA(EVENTX19,r_0066_0007__is)
       &amp; arg0(EVENTX19) = ENTITYX4
       &amp; STATEX6 = CONJX18
-      &amp; isA(CONJX18,r__and_0066_0016)
+      &amp; isA(CONJX18,r_0066_0016__and)
       &amp; conj1(CONJX18) = EVENTX11
-      &amp; isA(EVENTX11,r__restricts_0066_0013)
+      &amp; isA(EVENTX11,r_0066_0013__restricts)
       &amp; arg0(EVENTX11) = ENTITYX9
       &amp; arg0(EVENTX11) = ENTITYX9
       &amp; arg1(EVENTX11) = ENTITYX10
       &amp; conj2(CONJX18) = EVENTX17
-      &amp; isA(EVENTX17,r__act_0066_0022)
+      &amp; isA(EVENTX17,r_0066_0022__act)
       &amp; arg0(EVENTX17) = ENTITYX12
       &amp; arg0(EVENTX17) = ENTITYX12
-      &amp; r__as_0066_0023_prd2(EVENTX17) = ENTITYX14
-      &amp; isA(ENTITYX1,r__report_0066_0002)
-      &amp; isA(ENTITYX4,r__evidence_0066_0009)
+      &amp; r_0066_0023__as_prd2(EVENTX17) = ENTITYX14
+      &amp; isA(ENTITYX1,r_0066_0002__report)
+      &amp; isA(ENTITYX4,r_0066_0009__evidence)
       &amp; attrib1(ENTITYX4) = ATTRIBX5
       &amp; emb3(ENTITYX4) = STATEX6
-      &amp; isA(ENTITYX9,r__badger_0066_0011_r__predation_0066_0012)
-      &amp; isA(ENTITYX10,r__hedgehog_0066_0014_r__populations_0066_0015)
-      &amp; isA(ENTITYX12,r__amenity_0066_0018_r__areas_0066_0019)
-      &amp; r__in_0066_0020(ENTITYX12) = ENTITYX13
-      &amp; isA(ENTITYX13,r__villages_0066_0021)
-      &amp; isA(ENTITYX14,r__refuge_0066_0026)
+      &amp; isA(ENTITYX9,r_0066_0011__badger_predation)
+      &amp; isA(ENTITYX10,r_0066_0014__hedgehog_populations)
+      &amp; isA(ENTITYX12,r_0066_0018__amenity_areas)
+      &amp; r_0066_0020__in(ENTITYX12) = ENTITYX13
+      &amp; isA(ENTITYX13,r_0066_0021__villages)
+      &amp; isA(ENTITYX14,r_0066_0026__refuge)
       &amp; attrib2(ENTITYX14) = ATTRIBX15
-      &amp; r__for_0066_0027(ENTITYX14) = ENTITYX16
-      &amp; isA(ENTITYX16,r__hedgehogs_0066_0028)
-      &amp; isA(ATTRIBX5,r__strong_0066_0008)
-      &amp; isA(ATTRIBX15,r__spatial_0066_0025)
-      &amp; isA(OPERATORX2,r__also_0066_0003)
+      &amp; r_0066_0027__for(ENTITYX14) = ENTITYX16
+      &amp; isA(ENTITYX16,r_0066_0028__hedgehogs)
+      &amp; isA(ATTRIBX5,r_0066_0008__strong)
+      &amp; isA(ATTRIBX15,r_0066_0025__spatial)
+      &amp; isA(OPERATORX2,r_0066_0003__also)
       &amp; scope(OPERATORX2) = EVENTX20
-      &amp; isA(EVENTX20,r__found_0066_0004)
+      &amp; isA(EVENTX20,r_0066_0004__found)
       &amp; arg0(EVENTX20) = ENTITYX1
       &amp; arg1(EVENTX20) = STATEX3 ) ).
 

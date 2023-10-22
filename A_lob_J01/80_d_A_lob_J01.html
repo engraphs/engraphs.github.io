@@ -90,7 +90,7 @@ Rare earth elements are co-precipitated with lanthanum as fluorides .
 <title>0080_0005&#45;&gt;0080_0007</title>
 <path fill="none" stroke="black" d="M238.59,-173.8C238.59,-162.16 238.59,-146.55 238.59,-133.24"/>
 <polygon fill="black" stroke="black" points="242.09,-133.18 238.59,-123.18 235.09,-133.18 242.09,-133.18"/>
-<text text-anchor="middle" x="276.59" y="-144.8" font-family="fixed" font-size="14.00">with_[com]</text>
+<text text-anchor="middle" x="273.59" y="-144.8" font-family="fixed" font-size="14.00">with[com]</text>
 </g>
 <!-- 0080_0009 -->
 <g id="node6" class="node">
@@ -101,19 +101,19 @@ Rare earth elements are co-precipitated with lanthanum as fluorides .
 <!-- 0080_0005&#45;&gt;0080_0009 -->
 <g id="edge5" class="edge">
 <title>0080_0005&#45;&gt;0080_0009</title>
-<path fill="none" stroke="black" d="M280.11,-176.49C293.01,-171.04 306.91,-164.15 318.59,-156 328.97,-148.76 338.93,-139.03 347.05,-130.07"/>
-<polygon fill="black" stroke="black" points="349.74,-132.32 353.69,-122.49 344.47,-127.71 349.74,-132.32"/>
-<text text-anchor="middle" x="365.09" y="-144.8" font-family="fixed" font-size="14.00">as_[prd]</text>
+<path fill="none" stroke="black" d="M275.93,-176.03C288.06,-170.47 301.29,-163.64 312.59,-156 323.84,-148.4 335.05,-138.49 344.32,-129.51"/>
+<polygon fill="black" stroke="black" points="347,-131.78 351.61,-122.25 342.06,-126.82 347,-131.78"/>
+<text text-anchor="middle" x="357.59" y="-144.8" font-family="fixed" font-size="14.00">as[prd]</text>
 </g>
 </g>
 </svg>
 <br>
 <pre>
-arc(r__earth_0080_0002_r__elements_0080_0003,r__Rare_0080_0001,attrib1).
-arc(r__are_0080_0004,r__co_precipitated_0080_0005,catenative).
-arc(r__co_precipitated_0080_0005,r__earth_0080_0002_r__elements_0080_0003,arg1).
-arc(r__co_precipitated_0080_0005,r__lanthanum_0080_0007,r__with_0080_0006_com).
-arc(r__co_precipitated_0080_0005,r__fluorides_0080_0009,r__as_0080_0008_prd).
+arc(r_0080_0002__earth_elements,r_0080_0001__Rare,attrib1).
+arc(r_0080_0004__are,r_0080_0005__co_precipitated,catenative).
+arc(r_0080_0005__co_precipitated,r_0080_0002__earth_elements,arg1).
+arc(r_0080_0005__co_precipitated,r_0080_0007__lanthanum,r_0080_0006__with_com).
+arc(r_0080_0005__co_precipitated,r_0080_0009__fluorides,r_0080_0008__as_prd).
 
 </pre>
 <br>
@@ -121,16 +121,16 @@ arc(r__co_precipitated_0080_0005,r__fluorides_0080_0009,r__as_0080_0008_prd).
 fof(id_80_A_lob_J01,axiom,
     ? [CATENATIVEX3,EVENTX8,EVENTX7,ENTITYX1,ENTITYX5,ENTITYX6,ATTRIBX2] :
       ( CATENATIVEX3 = EVENTX7
-      &amp; isA(EVENTX7,r__co_precipitated_0080_0005)
+      &amp; isA(EVENTX7,r_0080_0005__co_precipitated)
       &amp; arg1(EVENTX7) = ENTITYX1
-      &amp; r__with_0080_0006_com(EVENTX7) = ENTITYX5
-      &amp; r__as_0080_0008_prd(EVENTX7) = ENTITYX6
-      &amp; isA(ENTITYX1,r__earth_0080_0002_r__elements_0080_0003)
+      &amp; r_0080_0006__with_com(EVENTX7) = ENTITYX5
+      &amp; r_0080_0008__as_prd(EVENTX7) = ENTITYX6
+      &amp; isA(ENTITYX1,r_0080_0002__earth_elements)
       &amp; attrib1(ENTITYX1) = ATTRIBX2
-      &amp; isA(ENTITYX5,r__lanthanum_0080_0007)
-      &amp; isA(ENTITYX6,r__fluorides_0080_0009)
-      &amp; isA(ATTRIBX2,r__Rare_0080_0001)
-      &amp; isA(EVENTX8,r__are_0080_0004)
+      &amp; isA(ENTITYX5,r_0080_0007__lanthanum)
+      &amp; isA(ENTITYX6,r_0080_0009__fluorides)
+      &amp; isA(ATTRIBX2,r_0080_0001__Rare)
+      &amp; isA(EVENTX8,r_0080_0004__are)
       &amp; catenative(EVENTX8) = CATENATIVEX3 ) ).
 
 

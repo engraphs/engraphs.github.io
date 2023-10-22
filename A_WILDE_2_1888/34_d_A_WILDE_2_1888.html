@@ -135,13 +135,13 @@ But the little boy whom the Giant loved was never seen again .
 </svg>
 <br>
 <pre>
-arc(r__boy_0073_0004,r__little_0073_0003,attrib2).
-arc(r__loved_0073_0008,r__boy_0073_0004,arg1).
-arc(r__loved_0073_0008,r__Giant_0073_0007,arg0).
-arc(r__was_0073_0009,r__seen_0073_0011,catenative).
-arc(r__seen_0073_0011,r__boy_0073_0004,arg1).
-arc(r__seen_0073_0011,r__never_0073_0010,tmp2).
-arc(r__seen_0073_0011,r__again_0073_0012,tmp4).
+arc(r_0073_0004__boy,r_0073_0003__little,attrib2).
+arc(r_0073_0008__loved,r_0073_0004__boy,arg1).
+arc(r_0073_0008__loved,r_0073_0007__Giant,arg0).
+arc(r_0073_0009__was,r_0073_0011__seen,catenative).
+arc(r_0073_0011__seen,r_0073_0004__boy,arg1).
+arc(r_0073_0011__seen,r_0073_0010__never,tmp2).
+arc(r_0073_0011__seen,r_0073_0012__again,tmp4).
 
 </pre>
 <br>
@@ -149,20 +149,20 @@ arc(r__seen_0073_0011,r__again_0073_0012,tmp4).
 fof(id_73_A_WILDE_2_1888,axiom,
     ? [CATENATIVEX5,EVENTX10,EVENTX9,EVENTX4,LITTLE_BOYX1,GIANTX3,ATTRIBX2,QUALITYX7,QUALITYX8] :
       ( CATENATIVEX5 = EVENTX9
-      &amp; isA(EVENTX9,r__seen_0073_0011)
+      &amp; isA(EVENTX9,r_0073_0011__seen)
       &amp; arg1(EVENTX9) = LITTLE_BOYX1
       &amp; tmp2(EVENTX9) = QUALITYX7
       &amp; tmp4(EVENTX9) = QUALITYX8
-      &amp; isA(EVENTX4,r__loved_0073_0008)
+      &amp; isA(EVENTX4,r_0073_0008__loved)
       &amp; arg1(EVENTX4) = LITTLE_BOYX1
       &amp; arg0(EVENTX4) = GIANTX3
-      &amp; isA(LITTLE_BOYX1,r__boy_0073_0004)
+      &amp; isA(LITTLE_BOYX1,r_0073_0004__boy)
       &amp; attrib2(LITTLE_BOYX1) = ATTRIBX2
-      &amp; isA(GIANTX3,r__Giant_0073_0007)
-      &amp; isA(ATTRIBX2,r__little_0073_0003)
-      &amp; isA(QUALITYX7,r__never_0073_0010)
-      &amp; isA(QUALITYX8,r__again_0073_0012)
-      &amp; isA(EVENTX10,r__was_0073_0009)
+      &amp; isA(GIANTX3,r_0073_0007__Giant)
+      &amp; isA(ATTRIBX2,r_0073_0003__little)
+      &amp; isA(QUALITYX7,r_0073_0010__never)
+      &amp; isA(QUALITYX8,r_0073_0012__again)
+      &amp; isA(EVENTX10,r_0073_0009__was)
       &amp; catenative(EVENTX10) = CATENATIVEX5 ) ).
 
 

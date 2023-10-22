@@ -80,9 +80,9 @@ I picked three damp coins out of the pile .
 <!-- 0031_0002&#45;&gt;0031_0008 -->
 <g id="edge3" class="edge">
 <title>0031_0002&#45;&gt;0031_0008</title>
-<path fill="none" stroke="black" d="M99.21,-182.87C82.64,-177.53 63.53,-169.05 50,-156 43.38,-149.61 38.48,-140.95 34.95,-132.64"/>
-<polygon fill="black" stroke="black" points="38.2,-131.33 31.41,-123.19 31.64,-133.78 38.2,-131.33"/>
-<text text-anchor="middle" x="90" y="-144.8" font-family="fixed" font-size="14.00">out_of_[loc]</text>
+<path fill="none" stroke="black" d="M101.51,-181.22C86.71,-175.59 69.71,-167.34 57,-156 49.46,-149.27 43.23,-140.18 38.45,-131.6"/>
+<polygon fill="black" stroke="black" points="41.51,-129.91 33.82,-122.62 35.29,-133.11 41.51,-129.91"/>
+<text text-anchor="middle" x="93.5" y="-144.8" font-family="fixed" font-size="14.00">out_of[loc]</text>
 </g>
 <!-- 0031_0004 -->
 <g id="node5" class="node">
@@ -226,62 +226,62 @@ I picked three damp coins out of the pile .
 <title>0032_0012&#45;&gt;0032_0016</title>
 <path fill="none" stroke="black" d="M495.36,-183.47C513.15,-177.41 537.47,-167.94 557,-156 570.01,-148.04 583.01,-137.17 593.4,-127.6"/>
 <polygon fill="black" stroke="black" points="595.93,-130.02 600.79,-120.6 591.12,-124.94 595.93,-130.02"/>
-<text text-anchor="middle" x="601.5" y="-144.8" font-family="fixed" font-size="14.00">to_[clr]</text>
+<text text-anchor="middle" x="598" y="-144.8" font-family="fixed" font-size="14.00">to[clr]</text>
 </g>
 </g>
 </svg>
 <br>
 <pre>
-arc(r__picked_0031_0002,r__I_0031_0001,arg0).
-arc(r__picked_0031_0002,r__three_0031_0003_r__coins_0031_0005,arg1).
-arc(r__picked_0031_0002,r__pile_0031_0008,r__out_of_0031_0006_loc).
-arc(r__three_0031_0003_r__coins_0031_0005,r__damp_0031_0004,attrib2).
-arc(r__Then_0032_0002,r___apos_ll_0032_0004,scope).
-arc(r___apos_ll_0032_0004,r__and_0032_0011,scope).
-arc(r__get_0032_0005,r__I_0031_0001,arg0).
-arc(r__get_0032_0005,r__change_0032_0007,arg1).
-arc(r__change_0032_0007,r__shop_0032_0010,r__in_0032_0008).
-arc(r__and_0032_0011,r__get_0032_0005,conj1).
-arc(r__and_0032_0011,r__pay_0032_0012,conj2).
-arc(r__pay_0032_0012,r__I_0031_0001,arg0).
-arc(r__pay_0032_0012,r__three_0031_0003_r__coins_0031_0005,arg1).
-arc(r__pay_0032_0012,r__back_0032_0014,dir3).
-arc(r__pay_0032_0012,r__you_0032_0016,r__to_0032_0015_clr).
+arc(r_0031_0002__picked,r_0031_0001__I,arg0).
+arc(r_0031_0002__picked,r_0031_0003__three_coins,arg1).
+arc(r_0031_0002__picked,r_0031_0008__pile,r_0031_0006__out_of_loc).
+arc(r_0031_0003__three_coins,r_0031_0004__damp,attrib2).
+arc(r_0032_0002__Then,r_0032_0004___apos_ll,scope).
+arc(r_0032_0004___apos_ll,r_0032_0011__and,scope).
+arc(r_0032_0005__get,r_0031_0001__I,arg0).
+arc(r_0032_0005__get,r_0032_0007__change,arg1).
+arc(r_0032_0007__change,r_0032_0010__shop,r_0032_0008__in).
+arc(r_0032_0011__and,r_0032_0005__get,conj1).
+arc(r_0032_0011__and,r_0032_0012__pay,conj2).
+arc(r_0032_0012__pay,r_0031_0001__I,arg0).
+arc(r_0032_0012__pay,r_0031_0003__three_coins,arg1).
+arc(r_0032_0012__pay,r_0032_0014__back,dir3).
+arc(r_0032_0012__pay,r_0032_0016__you,r_0032_0015__to_clr).
 
 </pre>
 <br>
 <pre>
 fof(id_31_A_LooseChange__32_A_LooseChange,axiom,
     ? [SPEAKERX6,COINSX11,OPERATORX5,OPERATORX7,CONJX14,EVENTX13,EVENTX10,EVENTX4,ENTITYX8,ENTITYX9,COINSX1,ENTITYX3,ATTRIBX2,QUALITYX12] :
-      ( isA(COINSX1,r__three_0031_0003_r__coins_0031_0005)
+      ( isA(COINSX1,r_0031_0003__three_coins)
       &amp; attrib2(COINSX1) = ATTRIBX2
-      &amp; isA(ENTITYX3,r__pile_0031_0008)
-      &amp; SPEAKERX6 = r__I_0031_0001
-      &amp; isA(ENTITYX8,r__change_0032_0007)
-      &amp; r__in_0032_0008(ENTITYX8) = ENTITYX9
-      &amp; isA(ENTITYX9,r__shop_0032_0010)
+      &amp; isA(ENTITYX3,r_0031_0008__pile)
+      &amp; SPEAKERX6 = r_0031_0001__I
+      &amp; isA(ENTITYX8,r_0032_0007__change)
+      &amp; r_0032_0008__in(ENTITYX8) = ENTITYX9
+      &amp; isA(ENTITYX9,r_0032_0010__shop)
       &amp; COINSX11 = COINSX1
-      &amp; isA(ATTRIBX2,r__damp_0031_0004)
-      &amp; isA(QUALITYX12,r__back_0032_0014)
-      &amp; isA(EVENTX4,r__picked_0031_0002)
-      &amp; arg0(EVENTX4) = r__I_0031_0001
+      &amp; isA(ATTRIBX2,r_0031_0004__damp)
+      &amp; isA(QUALITYX12,r_0032_0014__back)
+      &amp; isA(EVENTX4,r_0031_0002__picked)
+      &amp; arg0(EVENTX4) = r_0031_0001__I
       &amp; arg1(EVENTX4) = COINSX1
-      &amp; r__out_of_0031_0006_loc(EVENTX4) = ENTITYX3
-      &amp; isA(OPERATORX5,r__Then_0032_0002)
+      &amp; r_0031_0006__out_of_loc(EVENTX4) = ENTITYX3
+      &amp; isA(OPERATORX5,r_0032_0002__Then)
       &amp; scope(OPERATORX5) = OPERATORX7
-      &amp; isA(OPERATORX7,r___apos_ll_0032_0004)
+      &amp; isA(OPERATORX7,r_0032_0004___apos_ll)
       &amp; scope(OPERATORX7) = CONJX14
-      &amp; isA(CONJX14,r__and_0032_0011)
+      &amp; isA(CONJX14,r_0032_0011__and)
       &amp; conj1(CONJX14) = EVENTX10
-      &amp; isA(EVENTX10,r__get_0032_0005)
+      &amp; isA(EVENTX10,r_0032_0005__get)
       &amp; arg0(EVENTX10) = SPEAKERX6
       &amp; arg1(EVENTX10) = ENTITYX8
       &amp; conj2(CONJX14) = EVENTX13
-      &amp; isA(EVENTX13,r__pay_0032_0012)
+      &amp; isA(EVENTX13,r_0032_0012__pay)
       &amp; arg0(EVENTX13) = SPEAKERX6
       &amp; arg1(EVENTX13) = COINSX11
       &amp; dir3(EVENTX13) = QUALITYX12
-      &amp; r__to_0032_0015_clr(EVENTX13) = r__you_0032_0016 ) ).
+      &amp; r_0032_0015__to_clr(EVENTX13) = r_0032_0016__you ) ).
 
 
 </pre>

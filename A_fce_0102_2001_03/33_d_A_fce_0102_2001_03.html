@@ -90,7 +90,7 @@ Your college magazine is looking for articles on the qualities of good stories .
 <title>0037_0005&#45;&gt;0037_0007</title>
 <path fill="none" stroke="black" d="M181.48,-349.01C193.02,-336.27 209.35,-318.24 222.43,-303.8"/>
 <polygon fill="black" stroke="black" points="225.19,-305.97 229.31,-296.21 220,-301.27 225.19,-305.97"/>
-<text text-anchor="middle" x="238.49" y="-318.8" font-family="fixed" font-size="14.00">for_[clr]</text>
+<text text-anchor="middle" x="234.99" y="-318.8" font-family="fixed" font-size="14.00">for[clr]</text>
 </g>
 <!-- 0037_0010 -->
 <g id="node6" class="node">
@@ -135,13 +135,13 @@ Your college magazine is looking for articles on the qualities of good stories .
 </svg>
 <br>
 <pre>
-arc(r__college_0037_0002_r__magazine_0037_0003,r__Your_0037_0001,genv).
-arc(r__is_0037_0004,r__looking_0037_0005,catenative).
-arc(r__looking_0037_0005,r__college_0037_0002_r__magazine_0037_0003,arg0).
-arc(r__looking_0037_0005,r__articles_0037_0007,r__for_0037_0006_clr).
-arc(r__articles_0037_0007,r__qualities_0037_0010,r__on_0037_0008).
-arc(r__qualities_0037_0010,r__stories_0037_0013,r__of_0037_0011).
-arc(r__stories_0037_0013,r__good_0037_0012,attrib1).
+arc(r_0037_0002__college_magazine,r_0037_0001__Your,genv).
+arc(r_0037_0004__is,r_0037_0005__looking,catenative).
+arc(r_0037_0005__looking,r_0037_0002__college_magazine,arg0).
+arc(r_0037_0005__looking,r_0037_0007__articles,r_0037_0006__for_clr).
+arc(r_0037_0007__articles,r_0037_0010__qualities,r_0037_0008__on).
+arc(r_0037_0010__qualities,r_0037_0013__stories,r_0037_0011__of).
+arc(r_0037_0013__stories,r_0037_0012__good,attrib1).
 
 </pre>
 <br>
@@ -149,19 +149,19 @@ arc(r__stories_0037_0013,r__good_0037_0012,attrib1).
 fof(id_37_A_fce_0102_2001_03,axiom,
     ? [CATENATIVEX2,EVENTX8,EVENTX7,ENTITYX1,ENTITYX3,ENTITYX4,ENTITYX5,ATTRIBX6] :
       ( CATENATIVEX2 = EVENTX7
-      &amp; isA(EVENTX7,r__looking_0037_0005)
+      &amp; isA(EVENTX7,r_0037_0005__looking)
       &amp; arg0(EVENTX7) = ENTITYX1
-      &amp; r__for_0037_0006_clr(EVENTX7) = ENTITYX3
-      &amp; isA(ENTITYX1,r__college_0037_0002_r__magazine_0037_0003)
-      &amp; genv(ENTITYX1) = r__Your_0037_0001
-      &amp; isA(ENTITYX3,r__articles_0037_0007)
-      &amp; r__on_0037_0008(ENTITYX3) = ENTITYX4
-      &amp; isA(ENTITYX4,r__qualities_0037_0010)
-      &amp; r__of_0037_0011(ENTITYX4) = ENTITYX5
-      &amp; isA(ENTITYX5,r__stories_0037_0013)
+      &amp; r_0037_0006__for_clr(EVENTX7) = ENTITYX3
+      &amp; isA(ENTITYX1,r_0037_0002__college_magazine)
+      &amp; genv(ENTITYX1) = r_0037_0001__Your
+      &amp; isA(ENTITYX3,r_0037_0007__articles)
+      &amp; r_0037_0008__on(ENTITYX3) = ENTITYX4
+      &amp; isA(ENTITYX4,r_0037_0010__qualities)
+      &amp; r_0037_0011__of(ENTITYX4) = ENTITYX5
+      &amp; isA(ENTITYX5,r_0037_0013__stories)
       &amp; attrib1(ENTITYX5) = ATTRIBX6
-      &amp; isA(ATTRIBX6,r__good_0037_0012)
-      &amp; isA(EVENTX8,r__is_0037_0004)
+      &amp; isA(ATTRIBX6,r_0037_0012__good)
+      &amp; isA(EVENTX8,r_0037_0004__is)
       &amp; catenative(EVENTX8) = CATENATIVEX2 ) ).
 
 

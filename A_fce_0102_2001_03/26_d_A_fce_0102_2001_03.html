@@ -135,13 +135,13 @@ You have had a class discussion on food and eating habits .
 </svg>
 <br>
 <pre>
-arc(r__have_0030_0002,r__had_0030_0003,catenative).
-arc(r__had_0030_0003,r__You_0030_0001,arg0).
-arc(r__had_0030_0003,r__class_0030_0005_r__discussion_0030_0006,arg1).
-arc(r__class_0030_0005_r__discussion_0030_0006,r__habits_0030_0011,r__on_0030_0007).
-arc(r__and_0030_0009,r__food_0030_0008,conj1).
-arc(r__and_0030_0009,r__eating_0030_0010,conj2).
-arc(r__habits_0030_0011,r__and_0030_0009,nlyr1).
+arc(r_0030_0002__have,r_0030_0003__had,catenative).
+arc(r_0030_0003__had,r_0030_0001__You,arg0).
+arc(r_0030_0003__had,r_0030_0005__class_discussion,arg1).
+arc(r_0030_0005__class_discussion,r_0030_0011__habits,r_0030_0007__on).
+arc(r_0030_0009__and,r_0030_0008__food,conj1).
+arc(r_0030_0009__and,r_0030_0010__eating,conj2).
+arc(r_0030_0011__habits,r_0030_0009__and,nlyr1).
 
 </pre>
 <br>
@@ -149,19 +149,19 @@ arc(r__habits_0030_0011,r__and_0030_0009,nlyr1).
 fof(id_30_A_fce_0102_2001_03,axiom,
     ? [CATENATIVEX1,EVENTX8,EVENTX7,ENTITYX2,ENTITYX3,ENTITYX4,ENTITYX5,ENTITYX6] :
       ( CATENATIVEX1 = EVENTX7
-      &amp; isA(EVENTX7,r__had_0030_0003)
-      &amp; arg0(EVENTX7) = r__You_0030_0001
+      &amp; isA(EVENTX7,r_0030_0003__had)
+      &amp; arg0(EVENTX7) = r_0030_0001__You
       &amp; arg1(EVENTX7) = ENTITYX2
-      &amp; isA(ENTITYX2,r__class_0030_0005_r__discussion_0030_0006)
-      &amp; r__on_0030_0007(ENTITYX2) = ENTITYX3
-      &amp; isA(ENTITYX3,r__habits_0030_0011)
+      &amp; isA(ENTITYX2,r_0030_0005__class_discussion)
+      &amp; r_0030_0007__on(ENTITYX2) = ENTITYX3
+      &amp; isA(ENTITYX3,r_0030_0011__habits)
       &amp; nlyr1(ENTITYX3) = ENTITYX4
-      &amp; isA(ENTITYX4,r__and_0030_0009)
+      &amp; isA(ENTITYX4,r_0030_0009__and)
       &amp; conj1(ENTITYX4) = ENTITYX5
       &amp; conj2(ENTITYX4) = ENTITYX6
-      &amp; isA(ENTITYX5,r__food_0030_0008)
-      &amp; isA(ENTITYX6,r__eating_0030_0010)
-      &amp; isA(EVENTX8,r__have_0030_0002)
+      &amp; isA(ENTITYX5,r_0030_0008__food)
+      &amp; isA(ENTITYX6,r_0030_0010__eating)
+      &amp; isA(EVENTX8,r_0030_0002__have)
       &amp; catenative(EVENTX8) = CATENATIVEX1 ) ).
 
 

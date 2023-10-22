@@ -43,8 +43,8 @@ Unfortunately , the computer skills course had to be cancelled , because the tea
 <!-- 0010_0012_cnt -->
 <g id="node2" class="node">
 <title>0010_0012_cnt</title>
-<ellipse fill="none" stroke="black" cx="171.69" cy="-366" rx="73.39" ry="18"/>
-<text text-anchor="middle" x="171.69" y="-362.3" font-family="fixed" font-size="14.00">because_[cnt]</text>
+<ellipse fill="none" stroke="black" cx="171.69" cy="-366" rx="69.59" ry="18"/>
+<text text-anchor="middle" x="171.69" y="-362.3" font-family="fixed" font-size="14.00">because[cnt]</text>
 </g>
 <!-- 0010_0001&#45;&gt;0010_0012_cnt -->
 <g id="edge1" class="edge">
@@ -148,14 +148,14 @@ Unfortunately , the computer skills course had to be cancelled , because the tea
 </svg>
 <br>
 <pre>
-arc(r__Unfortunately_0010_0001,r__because_0010_0012_cnt,scope).
-arc(r__had_0010_0007,r__be_0010_0009,catenative).
-arc(r__be_0010_0009,r__cancelled_0010_0010,catenative).
-arc(r__cancelled_0010_0010,r__computer_0010_0004_r__skills_0010_0005_r__course_0010_0006,arg1).
-arc(r__because_0010_0012_cnt,r__had_0010_0007,scope).
-arc(r__because_0010_0012_cnt,r__was_0010_0015,restriction).
-arc(r__was_0010_0015,r__teacher_0010_0014,arg0).
-arc(r__was_0010_0015,r__ill_0010_0016,prd2).
+arc(r_0010_0001__Unfortunately,r_0010_0012__because_cnt,scope).
+arc(r_0010_0007__had,r_0010_0009__be,catenative).
+arc(r_0010_0009__be,r_0010_0010__cancelled,catenative).
+arc(r_0010_0010__cancelled,r_0010_0004__computer_skills_course,arg1).
+arc(r_0010_0012__because_cnt,r_0010_0007__had,scope).
+arc(r_0010_0012__because_cnt,r_0010_0015__was,restriction).
+arc(r_0010_0015__was,r_0010_0014__teacher,arg0).
+arc(r_0010_0015__was,r_0010_0016__ill,prd2).
 
 </pre>
 <br>
@@ -163,22 +163,22 @@ arc(r__was_0010_0015,r__ill_0010_0016,prd2).
 fof(id_10_A_fce_0101_2001_06,axiom,
     ? [STATEX3,CATENATIVEX4,OPERATORX1,CONNX8,EVENTX11,EVENTX12,EVENTX7,EVENTX6,ENTITYX2,ENTITYX9,ATTRIBX10] :
       ( STATEX3 = EVENTX7
-      &amp; isA(EVENTX7,r__be_0010_0009)
+      &amp; isA(EVENTX7,r_0010_0009__be)
       &amp; catenative(EVENTX7) = CATENATIVEX4
       &amp; CATENATIVEX4 = EVENTX6
-      &amp; isA(EVENTX6,r__cancelled_0010_0010)
+      &amp; isA(EVENTX6,r_0010_0010__cancelled)
       &amp; arg1(EVENTX6) = ENTITYX2
-      &amp; isA(ENTITYX2,r__computer_0010_0004_r__skills_0010_0005_r__course_0010_0006)
-      &amp; isA(ENTITYX9,r__teacher_0010_0014)
-      &amp; isA(ATTRIBX10,r__ill_0010_0016)
-      &amp; isA(OPERATORX1,r__Unfortunately_0010_0001)
+      &amp; isA(ENTITYX2,r_0010_0004__computer_skills_course)
+      &amp; isA(ENTITYX9,r_0010_0014__teacher)
+      &amp; isA(ATTRIBX10,r_0010_0016__ill)
+      &amp; isA(OPERATORX1,r_0010_0001__Unfortunately)
       &amp; scope(OPERATORX1) = CONNX8
-      &amp; isA(CONNX8,r__because_0010_0012_cnt)
+      &amp; isA(CONNX8,r_0010_0012__because_cnt)
       &amp; scope(CONNX8) = EVENTX12
-      &amp; isA(EVENTX12,r__had_0010_0007)
+      &amp; isA(EVENTX12,r_0010_0007__had)
       &amp; catenative(EVENTX12) = STATEX3
       &amp; restriction(CONNX8) = EVENTX11
-      &amp; isA(EVENTX11,r__was_0010_0015)
+      &amp; isA(EVENTX11,r_0010_0015__was)
       &amp; arg0(EVENTX11) = ENTITYX9
       &amp; prd2(EVENTX11) = ATTRIBX10 ) ).
 

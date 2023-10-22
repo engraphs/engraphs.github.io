@@ -122,30 +122,30 @@ The gun was smashed , the great weapon destroyed .
 </svg>
 <br>
 <pre>
-arc(abs_0561_1003,r__was_0561_0003,scope).
-arc(abs_0561_1003,r__destroyed_0561_0009,restriction).
-arc(r__was_0561_0003,r__gun_0561_0002,arg0).
-arc(r__was_0561_0003,r__smashed_0561_0004,prd2).
-arc(r__weapon_0561_0008,r__great_0561_0007,attrib2).
-arc(r__destroyed_0561_0009,r__weapon_0561_0008,arg1).
+arc(abs_0561_1003,r_0561_0003__was,scope).
+arc(abs_0561_1003,r_0561_0009__destroyed,restriction).
+arc(r_0561_0003__was,r_0561_0002__gun,arg0).
+arc(r_0561_0003__was,r_0561_0004__smashed,prd2).
+arc(r_0561_0008__weapon,r_0561_0007__great,attrib2).
+arc(r_0561_0009__destroyed,r_0561_0008__weapon,arg1).
 
 </pre>
 <br>
 <pre>
 fof(id_561_A_DICK_1952,axiom,
     ? [CONNX4,EVENTX8,EVENTX9,ENTITYX1,ENTITYX5,ATTRIBX2,ATTRIBX6] :
-      ( isA(ENTITYX1,r__gun_0561_0002)
-      &amp; isA(ENTITYX5,r__weapon_0561_0008)
+      ( isA(ENTITYX1,r_0561_0002__gun)
+      &amp; isA(ENTITYX5,r_0561_0008__weapon)
       &amp; attrib2(ENTITYX5) = ATTRIBX6
-      &amp; isA(ATTRIBX2,r__smashed_0561_0004)
-      &amp; isA(ATTRIBX6,r__great_0561_0007)
+      &amp; isA(ATTRIBX2,r_0561_0004__smashed)
+      &amp; isA(ATTRIBX6,r_0561_0007__great)
       &amp; isA(CONNX4,abs_0561_1003)
       &amp; scope(CONNX4) = EVENTX9
-      &amp; isA(EVENTX9,r__was_0561_0003)
+      &amp; isA(EVENTX9,r_0561_0003__was)
       &amp; arg0(EVENTX9) = ENTITYX1
       &amp; prd2(EVENTX9) = ATTRIBX2
       &amp; restriction(CONNX4) = EVENTX8
-      &amp; isA(EVENTX8,r__destroyed_0561_0009)
+      &amp; isA(EVENTX8,r_0561_0009__destroyed)
       &amp; arg1(EVENTX8) = ENTITYX5 ) ).
 
 

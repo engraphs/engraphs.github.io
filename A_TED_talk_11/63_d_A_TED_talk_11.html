@@ -64,7 +64,7 @@ I lived in Stratford-on-Avon until about five years ago .
 <title>0091_0002&#45;&gt;0091_0004</title>
 <path fill="none" stroke="black" d="M163,-260.8C163,-249.16 163,-233.55 163,-220.24"/>
 <polygon fill="black" stroke="black" points="166.5,-220.18 163,-210.18 159.5,-220.18 166.5,-220.18"/>
-<text text-anchor="middle" x="188" y="-231.8" font-family="fixed" font-size="14.00">in_[loc]</text>
+<text text-anchor="middle" x="184.5" y="-231.8" font-family="fixed" font-size="14.00">in[loc]</text>
 </g>
 <!-- 0091_0009 -->
 <g id="node4" class="node">
@@ -77,7 +77,7 @@ I lived in Stratford-on-Avon until about five years ago .
 <title>0091_0002&#45;&gt;0091_0009</title>
 <path fill="none" stroke="black" d="M183.66,-265.09C207.05,-250.47 245.3,-226.56 271.28,-210.33"/>
 <polygon fill="black" stroke="black" points="273.29,-213.2 279.91,-204.93 269.58,-207.26 273.29,-213.2"/>
-<text text-anchor="middle" x="277" y="-231.8" font-family="fixed" font-size="14.00">until_[tmp]</text>
+<text text-anchor="middle" x="274" y="-231.8" font-family="fixed" font-size="14.00">until[tmp]</text>
 </g>
 <!-- 0091_0007_0091_0008 -->
 <g id="node6" class="node">
@@ -109,26 +109,26 @@ I lived in Stratford-on-Avon until about five years ago .
 </svg>
 <br>
 <pre>
-arc(r__lived_0091_0002,r__I_0091_0001,arg0).
-arc(r__lived_0091_0002,r__Stratford_on_Avon_0091_0004,r__in_0091_0003_loc).
-arc(r__lived_0091_0002,r__ago_0091_0009,r__until_0091_0005_tmp).
-arc(r__five_0091_0007_r__years_0091_0008,r__about_0091_0006,quality1).
-arc(r__ago_0091_0009,r__five_0091_0007_r__years_0091_0008,modifier1).
+arc(r_0091_0002__lived,r_0091_0001__I,arg0).
+arc(r_0091_0002__lived,r_0091_0004__Stratford_on_Avon,r_0091_0003__in_loc).
+arc(r_0091_0002__lived,r_0091_0009__ago,r_0091_0005__until_tmp).
+arc(r_0091_0007__five_years,r_0091_0006__about,quality1).
+arc(r_0091_0009__ago,r_0091_0007__five_years,modifier1).
 
 </pre>
 <br>
 <pre>
 fof(id_91_A_TED_talk_11,axiom,
     ? [EVENTX4,ENTITYX2,QUALITYX1,QUALITYX3] :
-      ( isA(ENTITYX2,r__five_0091_0007_r__years_0091_0008)
+      ( isA(ENTITYX2,r_0091_0007__five_years)
       &amp; quality1(ENTITYX2) = QUALITYX3
-      &amp; isA(QUALITYX1,r__ago_0091_0009)
+      &amp; isA(QUALITYX1,r_0091_0009__ago)
       &amp; modifier1(QUALITYX1) = ENTITYX2
-      &amp; isA(QUALITYX3,r__about_0091_0006)
-      &amp; isA(EVENTX4,r__lived_0091_0002)
-      &amp; arg0(EVENTX4) = r__I_0091_0001
-      &amp; r__in_0091_0003_loc(EVENTX4) = r__Stratford_on_Avon_0091_0004
-      &amp; r__until_0091_0005_tmp(EVENTX4) = QUALITYX1 ) ).
+      &amp; isA(QUALITYX3,r_0091_0006__about)
+      &amp; isA(EVENTX4,r_0091_0002__lived)
+      &amp; arg0(EVENTX4) = r_0091_0001__I
+      &amp; r_0091_0003__in_loc(EVENTX4) = r_0091_0004__Stratford_on_Avon
+      &amp; r_0091_0005__until_tmp(EVENTX4) = QUALITYX1 ) ).
 
 
 </pre>

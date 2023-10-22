@@ -174,16 +174,16 @@ Athens became the most powerful , heralding the start of the classical Greek per
 </svg>
 <br>
 <pre>
-arc(abs_0032_1005,r__became_0032_0002,scope).
-arc(abs_0032_1005,r__heralding_0032_0007,restriction).
-arc(r__became_0032_0002,r__Athens_0032_0001,arg0).
-arc(r__became_0032_0002,z_0032_1004,prd2).
-arc(r__powerful_0032_0005,r__most_0032_0004,quality1).
-arc(r__heralding_0032_0007,r__start_0032_0009,arg1).
-arc(r__start_0032_0009,r__period_0032_0014,r__of_0032_0010).
-arc(r__period_0032_0014,r__classical_0032_0012,attrib2).
-arc(r__period_0032_0014,r__Greek_0032_0013,attrib3).
-arc(z_0032_1004,r__powerful_0032_0005,attrib2).
+arc(abs_0032_1005,r_0032_0002__became,scope).
+arc(abs_0032_1005,r_0032_0007__heralding,restriction).
+arc(r_0032_0002__became,r_0032_0001__Athens,arg0).
+arc(r_0032_0002__became,z_0032_1004,prd2).
+arc(r_0032_0005__powerful,r_0032_0004__most,quality1).
+arc(r_0032_0007__heralding,r_0032_0009__start,arg1).
+arc(r_0032_0009__start,r_0032_0014__period,r_0032_0010__of).
+arc(r_0032_0014__period,r_0032_0012__classical,attrib2).
+arc(r_0032_0014__period,r_0032_0013__Greek,attrib3).
+arc(z_0032_1004,r_0032_0005__powerful,attrib2).
 
 </pre>
 <br>
@@ -192,23 +192,23 @@ fof(id_32_A_ANC_HistoryOfGreece,axiom,
     ? [CONNX6,EVENTX13,EVENTX14,ENTITYX1,ENTITYX9,ENTITYX10,ATTRIBX11,ATTRIBX12,ATTRIBX2,QUALITYX3] :
       ( isA(ENTITYX1,z_0032_1004)
       &amp; attrib2(ENTITYX1) = ATTRIBX2
-      &amp; isA(ENTITYX9,r__start_0032_0009)
-      &amp; r__of_0032_0010(ENTITYX9) = ENTITYX10
-      &amp; isA(ENTITYX10,r__period_0032_0014)
+      &amp; isA(ENTITYX9,r_0032_0009__start)
+      &amp; r_0032_0010__of(ENTITYX9) = ENTITYX10
+      &amp; isA(ENTITYX10,r_0032_0014__period)
       &amp; attrib2(ENTITYX10) = ATTRIBX11
       &amp; attrib3(ENTITYX10) = ATTRIBX12
-      &amp; isA(ATTRIBX2,r__powerful_0032_0005)
+      &amp; isA(ATTRIBX2,r_0032_0005__powerful)
       &amp; quality1(ATTRIBX2) = QUALITYX3
-      &amp; isA(ATTRIBX11,r__classical_0032_0012)
-      &amp; isA(ATTRIBX12,r__Greek_0032_0013)
-      &amp; isA(QUALITYX3,r__most_0032_0004)
+      &amp; isA(ATTRIBX11,r_0032_0012__classical)
+      &amp; isA(ATTRIBX12,r_0032_0013__Greek)
+      &amp; isA(QUALITYX3,r_0032_0004__most)
       &amp; isA(CONNX6,abs_0032_1005)
       &amp; scope(CONNX6) = EVENTX14
-      &amp; isA(EVENTX14,r__became_0032_0002)
-      &amp; arg0(EVENTX14) = r__Athens_0032_0001
+      &amp; isA(EVENTX14,r_0032_0002__became)
+      &amp; arg0(EVENTX14) = r_0032_0001__Athens
       &amp; prd2(EVENTX14) = ENTITYX1
       &amp; restriction(CONNX6) = EVENTX13
-      &amp; isA(EVENTX13,r__heralding_0032_0007)
+      &amp; isA(EVENTX13,r_0032_0007__heralding)
       &amp; arg1(EVENTX13) = ENTITYX9 ) ).
 
 

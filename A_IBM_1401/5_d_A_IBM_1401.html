@@ -135,32 +135,32 @@ This brochure explains modern IBM Programming Languages and their significance t
 </svg>
 <br>
 <pre>
-arc(r__explains_0009_0003,r__brochure_0009_0002,arg0).
-arc(r__explains_0009_0003,r__and_0009_0008,arg1).
-arc(r__IBM_0009_0005_r__Programming_0009_0006_r__Languages_0009_0007,r__modern_0009_0004,attrib1).
-arc(r__and_0009_0008,r__IBM_0009_0005_r__Programming_0009_0006_r__Languages_0009_0007,conj1).
-arc(r__and_0009_0008,r__significance_0009_0010,conj2).
-arc(r__significance_0009_0010,r__their_0009_0009,genv).
-arc(r__significance_0009_0010,r__management_0009_0012,r__to_0009_0011).
+arc(r_0009_0003__explains,r_0009_0002__brochure,arg0).
+arc(r_0009_0003__explains,r_0009_0008__and,arg1).
+arc(r_0009_0005__IBM_Programming_Languages,r_0009_0004__modern,attrib1).
+arc(r_0009_0008__and,r_0009_0005__IBM_Programming_Languages,conj1).
+arc(r_0009_0008__and,r_0009_0010__significance,conj2).
+arc(r_0009_0010__significance,r_0009_0009__their,genv).
+arc(r_0009_0010__significance,r_0009_0012__management,r_0009_0011__to).
 
 </pre>
 <br>
 <pre>
 fof(id_9_A_IBM_1401,axiom,
     ? [IBM_LANGUAGESX6,EVENTX8,ENTITYX1,ENTITYX2,IBM_LANGUAGESX3,ENTITYX5,ENTITYX7,ATTRIBX4] :
-      ( isA(ENTITYX1,r__brochure_0009_0002)
-      &amp; isA(ENTITYX2,r__and_0009_0008)
+      ( isA(ENTITYX1,r_0009_0002__brochure)
+      &amp; isA(ENTITYX2,r_0009_0008__and)
       &amp; conj1(ENTITYX2) = IBM_LANGUAGESX3
       &amp; conj2(ENTITYX2) = ENTITYX5
-      &amp; isA(IBM_LANGUAGESX3,r__IBM_0009_0005_r__Programming_0009_0006_r__Languages_0009_0007)
+      &amp; isA(IBM_LANGUAGESX3,r_0009_0005__IBM_Programming_Languages)
       &amp; attrib1(IBM_LANGUAGESX3) = ATTRIBX4
-      &amp; isA(ENTITYX5,r__significance_0009_0010)
+      &amp; isA(ENTITYX5,r_0009_0010__significance)
       &amp; genv(ENTITYX5) = IBM_LANGUAGESX6
-      &amp; r__to_0009_0011(ENTITYX5) = ENTITYX7
-      &amp; isA(IBM_LANGUAGESX6,r__their_0009_0009)
-      &amp; isA(ENTITYX7,r__management_0009_0012)
-      &amp; isA(ATTRIBX4,r__modern_0009_0004)
-      &amp; isA(EVENTX8,r__explains_0009_0003)
+      &amp; r_0009_0011__to(ENTITYX5) = ENTITYX7
+      &amp; isA(IBM_LANGUAGESX6,r_0009_0009__their)
+      &amp; isA(ENTITYX7,r_0009_0012__management)
+      &amp; isA(ATTRIBX4,r_0009_0004__modern)
+      &amp; isA(EVENTX8,r_0009_0003__explains)
       &amp; arg0(EVENTX8) = ENTITYX1
       &amp; arg1(EVENTX8) = ENTITYX2 ) ).
 

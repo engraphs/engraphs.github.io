@@ -64,7 +64,7 @@ The Captain lay on the floor by the smashed control board .
 <title>0080_0003&#45;&gt;0080_0006</title>
 <path fill="none" stroke="black" d="M140.5,-173.8C140.5,-162.16 140.5,-146.55 140.5,-133.24"/>
 <polygon fill="black" stroke="black" points="144,-133.18 140.5,-123.18 137,-133.18 144,-133.18"/>
-<text text-anchor="middle" x="181.5" y="-144.8" font-family="fixed" font-size="14.00">on_[clr][loc]</text>
+<text text-anchor="middle" x="178.5" y="-144.8" font-family="fixed" font-size="14.00">on[clr][loc]</text>
 </g>
 <!-- 0080_0010_0080_0011 -->
 <g id="node4" class="node">
@@ -75,9 +75,9 @@ The Captain lay on the floor by the smashed control board .
 <!-- 0080_0003&#45;&gt;0080_0010_0080_0011 -->
 <g id="edge3" class="edge">
 <title>0080_0003&#45;&gt;0080_0010_0080_0011</title>
-<path fill="none" stroke="black" d="M165.44,-184.96C183.75,-179.61 208.48,-170.37 226.5,-156 234.73,-149.43 241.85,-140.42 247.48,-131.85"/>
-<polygon fill="black" stroke="black" points="250.54,-133.56 252.79,-123.21 244.57,-129.9 250.54,-133.56"/>
-<text text-anchor="middle" x="280.5" y="-144.8" font-family="fixed" font-size="14.00">by_[clr][loc]</text>
+<path fill="none" stroke="black" d="M164.83,-183.72C181.56,-177.95 203.7,-168.72 220.5,-156 229.58,-149.12 237.91,-139.83 244.66,-131.12"/>
+<polygon fill="black" stroke="black" points="247.49,-133.18 250.61,-123.06 241.85,-129.03 247.49,-133.18"/>
+<text text-anchor="middle" x="273.5" y="-144.8" font-family="fixed" font-size="14.00">by[clr][loc]</text>
 </g>
 <!-- 0080_0009 -->
 <g id="node5" class="node">
@@ -96,25 +96,25 @@ The Captain lay on the floor by the smashed control board .
 </svg>
 <br>
 <pre>
-arc(r__lay_0080_0003,r__Captain_0080_0002,arg0).
-arc(r__lay_0080_0003,r__floor_0080_0006,r__on_0080_0004_clr_loc).
-arc(r__lay_0080_0003,r__control_0080_0010_r__board_0080_0011,r__by_0080_0007_clr_loc).
-arc(r__control_0080_0010_r__board_0080_0011,r__smashed_0080_0009,attrib2).
+arc(r_0080_0003__lay,r_0080_0002__Captain,arg0).
+arc(r_0080_0003__lay,r_0080_0006__floor,r_0080_0004__on_clr_loc).
+arc(r_0080_0003__lay,r_0080_0010__control_board,r_0080_0007__by_clr_loc).
+arc(r_0080_0010__control_board,r_0080_0009__smashed,attrib2).
 
 </pre>
 <br>
 <pre>
 fof(id_80_A_DICK_1952,axiom,
     ? [EVENTX5,ENTITYX1,ENTITYX2,ENTITYX3,ATTRIBX4] :
-      ( isA(ENTITYX1,r__Captain_0080_0002)
-      &amp; isA(ENTITYX2,r__floor_0080_0006)
-      &amp; isA(ENTITYX3,r__control_0080_0010_r__board_0080_0011)
+      ( isA(ENTITYX1,r_0080_0002__Captain)
+      &amp; isA(ENTITYX2,r_0080_0006__floor)
+      &amp; isA(ENTITYX3,r_0080_0010__control_board)
       &amp; attrib2(ENTITYX3) = ATTRIBX4
-      &amp; isA(ATTRIBX4,r__smashed_0080_0009)
-      &amp; isA(EVENTX5,r__lay_0080_0003)
+      &amp; isA(ATTRIBX4,r_0080_0009__smashed)
+      &amp; isA(EVENTX5,r_0080_0003__lay)
       &amp; arg0(EVENTX5) = ENTITYX1
-      &amp; r__on_0080_0004_clr_loc(EVENTX5) = ENTITYX2
-      &amp; r__by_0080_0007_clr_loc(EVENTX5) = ENTITYX3 ) ).
+      &amp; r_0080_0004__on_clr_loc(EVENTX5) = ENTITYX2
+      &amp; r_0080_0007__by_clr_loc(EVENTX5) = ENTITYX3 ) ).
 
 
 </pre>

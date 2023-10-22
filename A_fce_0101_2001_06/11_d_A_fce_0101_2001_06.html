@@ -114,9 +114,9 @@ It was also a pity that nobody registered for the local history course .
 <!-- 0011_0008&#45;&gt;0011_0012_0011_0013 -->
 <g id="edge4" class="edge">
 <title>0011_0008&#45;&gt;0011_0012_0011_0013</title>
-<path fill="none" stroke="black" d="M116.32,-175.81C108.81,-170.41 101.25,-163.72 95.95,-156 91.33,-149.28 88.23,-141.08 86.15,-133.27"/>
-<polygon fill="black" stroke="black" points="89.54,-132.4 83.96,-123.39 82.71,-133.91 89.54,-132.4"/>
-<text text-anchor="middle" x="123.45" y="-144.8" font-family="fixed" font-size="14.00">for_[clr]</text>
+<path fill="none" stroke="black" d="M120,-175.42C113.17,-169.91 106.13,-163.26 100.95,-156 96.02,-149.09 92.19,-140.74 89.3,-132.86"/>
+<polygon fill="black" stroke="black" points="92.59,-131.67 86.13,-123.27 85.94,-133.86 92.59,-131.67"/>
+<text text-anchor="middle" x="124.95" y="-144.8" font-family="fixed" font-size="14.00">for[clr]</text>
 </g>
 <!-- 0011_0008&#45;&gt;z_0011_1007 -->
 <g id="edge5" class="edge">
@@ -142,14 +142,14 @@ It was also a pity that nobody registered for the local history course .
 </svg>
 <br>
 <pre>
-arc(quantificational_r__nobody_0011_0007,r__registered_0011_0008,scope).
-arc(quantificational_r__nobody_0011_0007,z_0011_1007,restriction).
-arc(r__was_0011_0002,quantificational_r__nobody_0011_0007,arg0).
-arc(r__was_0011_0002,r__pity_0011_0005,prd2).
-arc(r__also_0011_0003,r__was_0011_0002,scope).
-arc(r__registered_0011_0008,r__history_0011_0012_r__course_0011_0013,r__for_0011_0009_clr).
-arc(r__registered_0011_0008,z_0011_1007,arg0).
-arc(r__history_0011_0012_r__course_0011_0013,r__local_0011_0011,attrib2).
+arc(r_0011_0002__was,r_0011_0005__pity,prd2).
+arc(r_0011_0002__was,r_0011_0007__quantificational__nobody,arg0).
+arc(r_0011_0003__also,r_0011_0002__was,scope).
+arc(r_0011_0007__quantificational__nobody,r_0011_0008__registered,scope).
+arc(r_0011_0007__quantificational__nobody,z_0011_1007,restriction).
+arc(r_0011_0008__registered,r_0011_0012__history_course,r_0011_0009__for_clr).
+arc(r_0011_0008__registered,z_0011_1007,arg0).
+arc(r_0011_0012__history_course,r_0011_0011__local,attrib2).
 
 </pre>
 <br>
@@ -157,20 +157,20 @@ arc(r__history_0011_0012_r__course_0011_0013,r__local_0011_0011,attrib2).
 fof(id_11_A_fce_0101_2001_06,axiom,
     ? [STATEX4,OPERATORX2,EVENTX11,QUANTX6,EVENTX10,ENTITYX3,ENTITYX5,ENTITYX8,ATTRIBX9] :
       ( STATEX4 = QUANTX6
-      &amp; isA(QUANTX6,quantificational_r__nobody_0011_0007)
+      &amp; isA(QUANTX6,r_0011_0007__quantificational__nobody)
       &amp; restriction(QUANTX6) = ENTITYX5
       &amp; isA(ENTITYX5,z_0011_1007)
       &amp; scope(QUANTX6) = EVENTX10
-      &amp; isA(EVENTX10,r__registered_0011_0008)
+      &amp; isA(EVENTX10,r_0011_0008__registered)
       &amp; arg0(EVENTX10) = ENTITYX5
-      &amp; r__for_0011_0009_clr(EVENTX10) = ENTITYX8
-      &amp; isA(ENTITYX3,r__pity_0011_0005)
-      &amp; isA(ENTITYX8,r__history_0011_0012_r__course_0011_0013)
+      &amp; r_0011_0009__for_clr(EVENTX10) = ENTITYX8
+      &amp; isA(ENTITYX3,r_0011_0005__pity)
+      &amp; isA(ENTITYX8,r_0011_0012__history_course)
       &amp; attrib2(ENTITYX8) = ATTRIBX9
-      &amp; isA(ATTRIBX9,r__local_0011_0011)
-      &amp; isA(OPERATORX2,r__also_0011_0003)
+      &amp; isA(ATTRIBX9,r_0011_0011__local)
+      &amp; isA(OPERATORX2,r_0011_0003__also)
       &amp; scope(OPERATORX2) = EVENTX11
-      &amp; isA(EVENTX11,r__was_0011_0002)
+      &amp; isA(EVENTX11,r_0011_0002__was)
       &amp; arg0(EVENTX11) = STATEX4
       &amp; prd2(EVENTX11) = ENTITYX3
       &amp; arg0(EVENTX11) = STATEX4 ) ).

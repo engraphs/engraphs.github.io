@@ -130,7 +130,7 @@ Another is the question of the hedgehog in the western isles , which relates to 
 <title>0158_0014&#45;&gt;0158_0017</title>
 <path fill="none" stroke="black" d="M237.58,-348.47C241.58,-342.7 245.99,-336.13 249.8,-330 254.7,-322.1 259.75,-313.31 264.2,-305.33"/>
 <polygon fill="black" stroke="black" points="267.34,-306.88 269.08,-296.43 261.2,-303.51 267.34,-306.88"/>
-<text text-anchor="middle" x="283.3" y="-318.8" font-family="fixed" font-size="14.00">to_[clr]</text>
+<text text-anchor="middle" x="279.8" y="-318.8" font-family="fixed" font-size="14.00">to[clr]</text>
 </g>
 <!-- 0158_0023 -->
 <g id="node9" class="node">
@@ -201,47 +201,47 @@ Another is the question of the hedgehog in the western isles , which relates to 
 </svg>
 <br>
 <pre>
-arc(r__is_0158_0002,r__Another_0158_0001,arg0).
-arc(r__is_0158_0002,r__question_0158_0004,prd2).
-arc(r__question_0158_0004,r__hedgehog_0158_0007,r__of_0158_0005).
-arc(r__hedgehog_0158_0007,r__isles_0158_0011,r__in_0158_0008).
-arc(r__isles_0158_0011,r__western_0158_0010,attrib2).
-arc(r__relates_0158_0014,r__question_0158_0004,arg0).
-arc(r__relates_0158_0014,r__issue_0158_0017,r__to_0158_0015_clr).
-arc(r__issue_0158_0017,r__predation_0158_0023,r__of_0158_0018).
-arc(r__predation_0158_0023,r__hedgehog_0158_0020,genv).
-arc(r__predation_0158_0023,r__potential_0158_0022,attrib2).
-arc(r__predation_0158_0023,r__eggs_0158_0026,r__on_0158_0024).
-arc(r__eggs_0158_0026,r__Arctic_0158_0029_r__tern_0158_0030,r__of_0158_0027).
+arc(r_0158_0002__is,r_0158_0001__Another,arg0).
+arc(r_0158_0002__is,r_0158_0004__question,prd2).
+arc(r_0158_0004__question,r_0158_0007__hedgehog,r_0158_0005__of).
+arc(r_0158_0007__hedgehog,r_0158_0011__isles,r_0158_0008__in).
+arc(r_0158_0011__isles,r_0158_0010__western,attrib2).
+arc(r_0158_0014__relates,r_0158_0004__question,arg0).
+arc(r_0158_0014__relates,r_0158_0017__issue,r_0158_0015__to_clr).
+arc(r_0158_0017__issue,r_0158_0023__predation,r_0158_0018__of).
+arc(r_0158_0023__predation,r_0158_0020__hedgehog,genv).
+arc(r_0158_0023__predation,r_0158_0022__potential,attrib2).
+arc(r_0158_0023__predation,r_0158_0026__eggs,r_0158_0024__on).
+arc(r_0158_0026__eggs,r_0158_0029__Arctic_tern,r_0158_0027__of).
 
 </pre>
 <br>
 <pre>
 fof(id_158_A_Hedgehog,axiom,
     ? [EVENTX12,EVENTX11,ENTITYX1,ENTITYX2,ENTITYX5,ENTITYX6,ENTITYX7,ENTITYX9,ENTITYX10,ENTITYX3,ATTRIBX8,ATTRIBX4] :
-      ( isA(EVENTX11,r__relates_0158_0014)
+      ( isA(EVENTX11,r_0158_0014__relates)
       &amp; arg0(EVENTX11) = ENTITYX1
-      &amp; r__to_0158_0015_clr(EVENTX11) = ENTITYX5
-      &amp; isA(ENTITYX1,r__question_0158_0004)
-      &amp; r__of_0158_0005(ENTITYX1) = ENTITYX2
-      &amp; isA(ENTITYX2,r__hedgehog_0158_0007)
-      &amp; r__in_0158_0008(ENTITYX2) = ENTITYX3
-      &amp; isA(ENTITYX3,r__isles_0158_0011)
+      &amp; r_0158_0015__to_clr(EVENTX11) = ENTITYX5
+      &amp; isA(ENTITYX1,r_0158_0004__question)
+      &amp; r_0158_0005__of(ENTITYX1) = ENTITYX2
+      &amp; isA(ENTITYX2,r_0158_0007__hedgehog)
+      &amp; r_0158_0008__in(ENTITYX2) = ENTITYX3
+      &amp; isA(ENTITYX3,r_0158_0011__isles)
       &amp; attrib2(ENTITYX3) = ATTRIBX4
-      &amp; isA(ENTITYX5,r__issue_0158_0017)
-      &amp; r__of_0158_0018(ENTITYX5) = ENTITYX6
-      &amp; isA(ENTITYX6,r__predation_0158_0023)
+      &amp; isA(ENTITYX5,r_0158_0017__issue)
+      &amp; r_0158_0018__of(ENTITYX5) = ENTITYX6
+      &amp; isA(ENTITYX6,r_0158_0023__predation)
       &amp; genv(ENTITYX6) = ENTITYX7
       &amp; attrib2(ENTITYX6) = ATTRIBX8
-      &amp; r__on_0158_0024(ENTITYX6) = ENTITYX9
-      &amp; isA(ENTITYX7,r__hedgehog_0158_0020)
-      &amp; isA(ENTITYX9,r__eggs_0158_0026)
-      &amp; r__of_0158_0027(ENTITYX9) = ENTITYX10
-      &amp; isA(ENTITYX10,r__Arctic_0158_0029_r__tern_0158_0030)
-      &amp; isA(ATTRIBX4,r__western_0158_0010)
-      &amp; isA(ATTRIBX8,r__potential_0158_0022)
-      &amp; isA(EVENTX12,r__is_0158_0002)
-      &amp; arg0(EVENTX12) = r__Another_0158_0001
+      &amp; r_0158_0024__on(ENTITYX6) = ENTITYX9
+      &amp; isA(ENTITYX7,r_0158_0020__hedgehog)
+      &amp; isA(ENTITYX9,r_0158_0026__eggs)
+      &amp; r_0158_0027__of(ENTITYX9) = ENTITYX10
+      &amp; isA(ENTITYX10,r_0158_0029__Arctic_tern)
+      &amp; isA(ATTRIBX4,r_0158_0010__western)
+      &amp; isA(ATTRIBX8,r_0158_0022__potential)
+      &amp; isA(EVENTX12,r_0158_0002__is)
+      &amp; arg0(EVENTX12) = r_0158_0001__Another
       &amp; prd2(EVENTX12) = ENTITYX1 ) ).
 
 

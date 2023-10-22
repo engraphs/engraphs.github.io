@@ -135,13 +135,13 @@
 </svg>
 <br>
 <pre>
-arc(imperative_0081_1002,r__remember_0081_0003,scope).
-arc(r__remember_0081_0003,r__was_0081_0006,arg1).
-arc(r__was_0081_0006,r__you_0081_0007,foc).
-arc(r__was_0081_0006,z_0081_1009,clf).
-arc(r__you_0081_0007,r__not_0081_0009_r__I_0081_0010,prn3).
-arc(r__started_0081_0013,r__conversation_0081_0015,arg1).
-arc(r__started_0081_0013,z_0081_1009,arg0).
+arc(imperative_0081_1002,r_0081_0003__remember,scope).
+arc(r_0081_0003__remember,r_0081_0006__was,arg1).
+arc(r_0081_0006__was,r_0081_0007__you,foc).
+arc(r_0081_0006__was,z_0081_1009,clf).
+arc(r_0081_0007__you,r_0081_0009__not_I,prn3).
+arc(r_0081_0013__started,r_0081_0015__conversation,arg1).
+arc(r_0081_0013__started,z_0081_1009,arg0).
 
 </pre>
 <br>
@@ -149,19 +149,19 @@ arc(r__started_0081_0013,z_0081_1009,arg0).
 fof(id_81_A_lob_N02,axiom,
     ? [STATEX4,OPERATORX2,EVENTX11,EVENTX10,EVENTX8,ENTITYX6,ENTITYX7] :
       ( STATEX4 = EVENTX10
-      &amp; isA(EVENTX10,r__was_0081_0006)
-      &amp; foc(EVENTX10) = r__you_0081_0007
+      &amp; isA(EVENTX10,r_0081_0006__was)
+      &amp; foc(EVENTX10) = r_0081_0007__you
       &amp; clf(EVENTX10) = ENTITYX6
-      &amp; isA(EVENTX8,r__started_0081_0013)
+      &amp; isA(EVENTX8,r_0081_0013__started)
       &amp; arg0(EVENTX8) = ENTITYX6
       &amp; arg1(EVENTX8) = ENTITYX7
       &amp; isA(ENTITYX6,z_0081_1009)
-      &amp; isA(ENTITYX7,r__conversation_0081_0015)
-      &amp; isA(r__you_0081_0007,r__you_0081_0007)
-      &amp; prn3(r__you_0081_0007) = r__not_0081_0009_r__I_0081_0010
+      &amp; isA(ENTITYX7,r_0081_0015__conversation)
+      &amp; isA(r_0081_0007__you,r_0081_0007__you)
+      &amp; prn3(r_0081_0007__you) = r_0081_0009__not_I
       &amp; isA(OPERATORX2,imperative_0081_1002)
       &amp; scope(OPERATORX2) = EVENTX11
-      &amp; isA(EVENTX11,r__remember_0081_0003)
+      &amp; isA(EVENTX11,r_0081_0003__remember)
       &amp; arg1(EVENTX11) = STATEX4 ) ).
 
 

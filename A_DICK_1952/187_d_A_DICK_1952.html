@@ -37,8 +37,8 @@
 <!-- 0241_0002_cnt_cnd -->
 <g id="node1" class="node">
 <title>0241_0002_cnt_cnd</title>
-<ellipse fill="none" stroke="black" cx="329.1" cy="-279" rx="65.79" ry="18"/>
-<text text-anchor="middle" x="329.1" y="-275.3" font-family="fixed" font-size="14.00">If_[cnt][cnd]</text>
+<ellipse fill="none" stroke="black" cx="329.1" cy="-279" rx="61.99" ry="18"/>
+<text text-anchor="middle" x="329.1" y="-275.3" font-family="fixed" font-size="14.00">If[cnt][cnd]</text>
 </g>
 <!-- 0241_0004 -->
 <g id="node2" class="node">
@@ -49,7 +49,7 @@
 <!-- 0241_0002_cnt_cnd&#45;&gt;0241_0004 -->
 <g id="edge1" class="edge">
 <title>0241_0002_cnt_cnd&#45;&gt;0241_0004</title>
-<path fill="none" stroke="black" d="M297.56,-263.13C289.84,-257.9 282.53,-251.22 278.1,-243 274.41,-236.17 273.18,-228.02 273.13,-220.29"/>
+<path fill="none" stroke="black" d="M297.83,-263.31C290.01,-258.05 282.58,-251.32 278.1,-243 274.41,-236.17 273.18,-228.02 273.13,-220.29"/>
 <polygon fill="black" stroke="black" points="276.63,-220.37 273.69,-210.19 269.64,-219.99 276.63,-220.37"/>
 <text text-anchor="middle" x="318.6" y="-231.8" font-family="fixed" font-size="14.00">[restriction]</text>
 </g>
@@ -134,9 +134,9 @@
 <!-- 0241_0006&#45;&gt;0241_0009 -->
 <g id="edge7" class="edge">
 <title>0241_0006&#45;&gt;0241_0009</title>
-<path fill="none" stroke="black" d="M143.85,-98.34C125.01,-93.15 99.46,-83.94 81.1,-69 72.95,-62.37 66.1,-53.2 60.79,-44.52"/>
-<polygon fill="black" stroke="black" points="63.8,-42.74 55.82,-35.77 57.72,-46.2 63.8,-42.74"/>
-<text text-anchor="middle" x="112.6" y="-57.8" font-family="fixed" font-size="14.00">by_[tmp]</text>
+<path fill="none" stroke="black" d="M144.78,-96.97C127.77,-91.26 105.14,-82.01 88.1,-69 78.99,-62.05 70.73,-52.59 64.12,-43.77"/>
+<polygon fill="black" stroke="black" points="66.96,-41.72 58.3,-35.61 61.26,-45.79 66.96,-41.72"/>
+<text text-anchor="middle" x="116.1" y="-57.8" font-family="fixed" font-size="14.00">by[tmp]</text>
 </g>
 <!-- 0241_0012&#45;&gt;0241_0003 -->
 <g id="edge9" class="edge">
@@ -162,16 +162,16 @@
 </svg>
 <br>
 <pre>
-arc(r__If_0241_0002_cnt_cnd,r__expect_0241_0004,restriction).
-arc(r__If_0241_0002_cnt_cnd,r__must_0241_0011,scope).
-arc(r__expect_0241_0004,r__we_0241_0003,arg0).
-arc(r__expect_0241_0004,r__get_0241_0006,arg1).
-arc(r__get_0241_0006,r__we_0241_0003,arg0).
-arc(r__get_0241_0006,r__there_0241_0007,clr_loc3).
-arc(r__get_0241_0006,r__nightfall_0241_0009,r__by_0241_0008_tmp).
-arc(r__must_0241_0011,r__go_0241_0012,scope).
-arc(r__go_0241_0012,r__we_0241_0003,arg0).
-arc(r__go_0241_0012,r__fast_0241_0013,clr_mnr6).
+arc(r_0241_0002__If_cnt_cnd,r_0241_0004__expect,restriction).
+arc(r_0241_0002__If_cnt_cnd,r_0241_0011__must,scope).
+arc(r_0241_0004__expect,r_0241_0003__we,arg0).
+arc(r_0241_0004__expect,r_0241_0006__get,arg1).
+arc(r_0241_0006__get,r_0241_0003__we,arg0).
+arc(r_0241_0006__get,r_0241_0007__there,clr_loc3).
+arc(r_0241_0006__get,r_0241_0009__nightfall,r_0241_0008__by_tmp).
+arc(r_0241_0011__must,r_0241_0012__go,scope).
+arc(r_0241_0012__go,r_0241_0003__we,arg0).
+arc(r_0241_0012__go,r_0241_0013__fast,clr_mnr6).
 
 </pre>
 <br>
@@ -179,23 +179,23 @@ arc(r__go_0241_0012,r__fast_0241_0013,clr_mnr6).
 fof(id_241_A_DICK_1952,axiom,
     ? [STATEX2,DORLE_AND_NASHA_AND_TANCEX7,CONNX1,OPERATORX9,EVENTX10,EVENTX6,EVENTX5,ENTITYX4,QUALITYX8,QUALITYX3] :
       ( STATEX2 = EVENTX5
-      &amp; isA(EVENTX5,r__get_0241_0006)
-      &amp; arg0(EVENTX5) = r__we_0241_0003
+      &amp; isA(EVENTX5,r_0241_0006__get)
+      &amp; arg0(EVENTX5) = r_0241_0003__we
       &amp; clr_loc3(EVENTX5) = QUALITYX3
-      &amp; r__by_0241_0008_tmp(EVENTX5) = ENTITYX4
-      &amp; isA(ENTITYX4,r__nightfall_0241_0009)
-      &amp; DORLE_AND_NASHA_AND_TANCEX7 = r__we_0241_0003
-      &amp; isA(QUALITYX3,r__there_0241_0007)
-      &amp; isA(QUALITYX8,r__fast_0241_0013)
-      &amp; isA(CONNX1,r__If_0241_0002_cnt_cnd)
+      &amp; r_0241_0008__by_tmp(EVENTX5) = ENTITYX4
+      &amp; isA(ENTITYX4,r_0241_0009__nightfall)
+      &amp; DORLE_AND_NASHA_AND_TANCEX7 = r_0241_0003__we
+      &amp; isA(QUALITYX3,r_0241_0007__there)
+      &amp; isA(QUALITYX8,r_0241_0013__fast)
+      &amp; isA(CONNX1,r_0241_0002__If_cnt_cnd)
       &amp; restriction(CONNX1) = EVENTX6
-      &amp; isA(EVENTX6,r__expect_0241_0004)
-      &amp; arg0(EVENTX6) = r__we_0241_0003
+      &amp; isA(EVENTX6,r_0241_0004__expect)
+      &amp; arg0(EVENTX6) = r_0241_0003__we
       &amp; arg1(EVENTX6) = STATEX2
       &amp; scope(CONNX1) = OPERATORX9
-      &amp; isA(OPERATORX9,r__must_0241_0011)
+      &amp; isA(OPERATORX9,r_0241_0011__must)
       &amp; scope(OPERATORX9) = EVENTX10
-      &amp; isA(EVENTX10,r__go_0241_0012)
+      &amp; isA(EVENTX10,r_0241_0012__go)
       &amp; arg0(EVENTX10) = DORLE_AND_NASHA_AND_TANCEX7
       &amp; clr_mnr6(EVENTX10) = QUALITYX8 ) ).
 

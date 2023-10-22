@@ -74,7 +74,7 @@ She nodded .
 <title>0118_0003_0118_0004&#45;&gt;0118_0007</title>
 <path fill="none" stroke="black" d="M81.25,-87.21C84.87,-81.53 88.77,-75.09 92,-69 96,-61.46 99.91,-53.04 103.29,-45.3"/>
 <polygon fill="black" stroke="black" points="106.57,-46.53 107.27,-35.96 100.13,-43.79 106.57,-46.53"/>
-<text text-anchor="middle" x="125" y="-57.8" font-family="fixed" font-size="14.00">in_[loc]</text>
+<text text-anchor="middle" x="121.5" y="-57.8" font-family="fixed" font-size="14.00">in[loc]</text>
 </g>
 <!-- 0118_0010 -->
 <g id="node4" class="node">
@@ -283,25 +283,25 @@ She nodded .
 </svg>
 <br>
 <pre>
-arc(cnt_0118_1014,r__spread_0119_0006,scope).
-arc(cnt_0118_1014,r__suggest_0119_0010,restriction).
-arc(utterance_0118_1003,r__sleep_0118_0003_r__out_0118_0004,part1).
-arc(r__sleep_0118_0003_r__out_0118_0004,r__We_0118_0002,arg0).
-arc(r__sleep_0118_0003_r__out_0118_0004,r__square_0118_0007,r__in_0118_0005_loc).
-arc(r__said_0118_0011,utterance_0118_1003,arg1).
-arc(r__said_0118_0011,r__she_0118_0010,arg0).
-arc(r__was_0119_0002,cnt_0118_1014,prn4).
-arc(r__was_0119_0002,r__It_0119_0001,arg0).
-arc(r__was_0119_0002,r__simple_0119_0004,prd2).
-arc(r__simple_0119_0004,r__so_0119_0003,quality1).
-arc(r__spread_0119_0006,r__she_0118_0010,arg0).
-arc(r__spread_0119_0006,r__hands_0119_0008,arg1).
-arc(r__hands_0119_0008,r__she_0118_0010,genv).
-arc(r__suggest_0119_0010,r__hands_0119_0008,arg0).
-arc(r__suggest_0119_0010,r__lie_0119_0012,arg1).
-arc(r__lie_0119_0012,r__bed_0119_0015,r__of_0119_0013).
-arc(r__bed_0119_0015,r__she_0118_0010,genv).
-arc(r__nodded_0120_0002,r__she_0118_0010,arg0).
+arc(cnt_0118_1014,r_0119_0006__spread,scope).
+arc(cnt_0118_1014,r_0119_0010__suggest,restriction).
+arc(r_0118_0003__sleep_out,r_0118_0002__We,arg0).
+arc(r_0118_0003__sleep_out,r_0118_0007__square,r_0118_0005__in_loc).
+arc(r_0118_0011__said,r_0118_0010__she,arg0).
+arc(r_0118_0011__said,utterance_0118_1003,arg1).
+arc(r_0119_0002__was,cnt_0118_1014,prn4).
+arc(r_0119_0002__was,r_0119_0001__It,arg0).
+arc(r_0119_0002__was,r_0119_0004__simple,prd2).
+arc(r_0119_0004__simple,r_0119_0003__so,quality1).
+arc(r_0119_0006__spread,r_0118_0010__she,arg0).
+arc(r_0119_0006__spread,r_0119_0008__hands,arg1).
+arc(r_0119_0008__hands,r_0118_0010__she,genv).
+arc(r_0119_0010__suggest,r_0119_0008__hands,arg0).
+arc(r_0119_0010__suggest,r_0119_0012__lie,arg1).
+arc(r_0119_0012__lie,r_0119_0015__bed,r_0119_0013__of).
+arc(r_0119_0015__bed,r_0118_0010__she,genv).
+arc(r_0120_0002__nodded,r_0118_0010__she,arg0).
+arc(utterance_0118_1003,r_0118_0003__sleep_out,part1).
 
 </pre>
 <br>
@@ -311,43 +311,43 @@ fof(id_118_A_LooseChange__119_A_LooseChange__120_A_LooseChange,axiom,
       ( STATEX1 = CONJX6
       &amp; isA(CONJX6,utterance_0118_1003)
       &amp; part1(CONJX6) = EVENTX5
-      &amp; isA(EVENTX5,r__sleep_0118_0003_r__out_0118_0004)
-      &amp; arg0(EVENTX5) = r__We_0118_0002
-      &amp; r__in_0118_0005_loc(EVENTX5) = ENTITYX4
+      &amp; isA(EVENTX5,r_0118_0003__sleep_out)
+      &amp; arg0(EVENTX5) = r_0118_0002__We
+      &amp; r_0118_0005__in_loc(EVENTX5) = ENTITYX4
       &amp; EVENTX10 = CONNX15
       &amp; isA(CONNX15,cnt_0118_1014)
       &amp; scope(CONNX15) = EVENTX20
-      &amp; isA(EVENTX20,r__spread_0119_0006)
+      &amp; isA(EVENTX20,r_0119_0006__spread)
       &amp; arg0(EVENTX20) = LAYLORX11
       &amp; arg1(EVENTX20) = ENTITYX12
       &amp; restriction(CONNX15) = EVENTX19
-      &amp; isA(EVENTX19,r__suggest_0119_0010)
+      &amp; isA(EVENTX19,r_0119_0010__suggest)
       &amp; arg0(EVENTX19) = ENTITYX12
       &amp; arg1(EVENTX19) = ENTITYX16
-      &amp; isA(ENTITYX4,r__square_0118_0007)
-      &amp; LAYLORX11 = r__she_0118_0010
-      &amp; isA(ENTITYX12,r__hands_0119_0008)
+      &amp; isA(ENTITYX4,r_0118_0007__square)
+      &amp; LAYLORX11 = r_0118_0010__she
+      &amp; isA(ENTITYX12,r_0119_0008__hands)
       &amp; genv(ENTITYX12) = LAYLORX13
       &amp; ( LAYLORX13 = LAYLORX11
-        | LAYLORX13 = r__she_0118_0010 )
-      &amp; isA(ENTITYX16,r__lie_0119_0012)
-      &amp; r__of_0119_0013(ENTITYX16) = ENTITYX17
-      &amp; isA(ENTITYX17,r__bed_0119_0015)
+        | LAYLORX13 = r_0118_0010__she )
+      &amp; isA(ENTITYX16,r_0119_0012__lie)
+      &amp; r_0119_0013__of(ENTITYX16) = ENTITYX17
+      &amp; isA(ENTITYX17,r_0119_0015__bed)
       &amp; genv(ENTITYX17) = LAYLORX18
       &amp; ( LAYLORX18 = LAYLORX11
-        | LAYLORX18 = r__she_0118_0010 )
-      &amp; LAYLORX22 = r__she_0118_0010
-      &amp; isA(ATTRIBX8,r__simple_0119_0004)
+        | LAYLORX18 = r_0118_0010__she )
+      &amp; LAYLORX22 = r_0118_0010__she
+      &amp; isA(ATTRIBX8,r_0119_0004__simple)
       &amp; quality1(ATTRIBX8) = QUALITYX9
-      &amp; isA(QUALITYX9,r__so_0119_0003)
-      &amp; isA(EVENTX7,r__said_0118_0011)
+      &amp; isA(QUALITYX9,r_0119_0003__so)
+      &amp; isA(EVENTX7,r_0118_0011__said)
       &amp; arg1(EVENTX7) = STATEX1
-      &amp; arg0(EVENTX7) = r__she_0118_0010
-      &amp; isA(EVENTX21,r__was_0119_0002)
-      &amp; arg0(EVENTX21) = r__It_0119_0001
+      &amp; arg0(EVENTX7) = r_0118_0010__she
+      &amp; isA(EVENTX21,r_0119_0002__was)
+      &amp; arg0(EVENTX21) = r_0119_0001__It
       &amp; prd2(EVENTX21) = ATTRIBX8
       &amp; prn4(EVENTX21) = EVENTX10
-      &amp; isA(EVENTX23,r__nodded_0120_0002)
+      &amp; isA(EVENTX23,r_0120_0002__nodded)
       &amp; arg0(EVENTX23) = LAYLORX22 ) ).
 
 

@@ -116,12 +116,12 @@ No motor or battery is mounted .
 </svg>
 <br>
 <pre>
-arc(quantificational_r__No_0047_0001,r__or_0047_0003,restriction).
-arc(quantificational_r__No_0047_0001,r__is_0047_0005,scope).
-arc(r__or_0047_0003,r__motor_0047_0002,conj1).
-arc(r__or_0047_0003,r__battery_0047_0004,conj2).
-arc(r__is_0047_0005,r__mounted_0047_0006,catenative).
-arc(r__mounted_0047_0006,r__or_0047_0003,arg1).
+arc(r_0047_0001__quantificational__No,r_0047_0003__or,restriction).
+arc(r_0047_0001__quantificational__No,r_0047_0005__is,scope).
+arc(r_0047_0003__or,r_0047_0002__motor,conj1).
+arc(r_0047_0003__or,r_0047_0004__battery,conj2).
+arc(r_0047_0005__is,r_0047_0006__mounted,catenative).
+arc(r_0047_0006__mounted,r_0047_0003__or,arg1).
 
 </pre>
 <br>
@@ -129,17 +129,17 @@ arc(r__mounted_0047_0006,r__or_0047_0003,arg1).
 fof(id_47_A_seiko_9R65,axiom,
     ? [CATENATIVEX5,QUANTX2,EVENTX8,EVENTX7,ENTITYX1,ENTITYX3,ENTITYX4] :
       ( CATENATIVEX5 = EVENTX7
-      &amp; isA(EVENTX7,r__mounted_0047_0006)
+      &amp; isA(EVENTX7,r_0047_0006__mounted)
       &amp; arg1(EVENTX7) = ENTITYX1
-      &amp; isA(ENTITYX3,r__motor_0047_0002)
-      &amp; isA(ENTITYX4,r__battery_0047_0004)
-      &amp; isA(QUANTX2,quantificational_r__No_0047_0001)
+      &amp; isA(ENTITYX3,r_0047_0002__motor)
+      &amp; isA(ENTITYX4,r_0047_0004__battery)
+      &amp; isA(QUANTX2,r_0047_0001__quantificational__No)
       &amp; restriction(QUANTX2) = ENTITYX1
-      &amp; isA(ENTITYX1,r__or_0047_0003)
+      &amp; isA(ENTITYX1,r_0047_0003__or)
       &amp; conj1(ENTITYX1) = ENTITYX3
       &amp; conj2(ENTITYX1) = ENTITYX4
       &amp; scope(QUANTX2) = EVENTX8
-      &amp; isA(EVENTX8,r__is_0047_0005)
+      &amp; isA(EVENTX8,r_0047_0005__is)
       &amp; catenative(EVENTX8) = CATENATIVEX5 ) ).
 
 

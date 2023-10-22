@@ -83,21 +83,21 @@ The screen of the air-to-air radar glowed .
 </svg>
 <br>
 <pre>
-arc(r__screen_0020_0002,r__radar_0020_0006,r__of_0020_0003).
-arc(r__radar_0020_0006,r__air_to_air_0020_0005,attrib2).
-arc(r__glowed_0020_0007,r__screen_0020_0002,arg0).
+arc(r_0020_0002__screen,r_0020_0006__radar,r_0020_0003__of).
+arc(r_0020_0006__radar,r_0020_0005__air_to_air,attrib2).
+arc(r_0020_0007__glowed,r_0020_0002__screen,arg0).
 
 </pre>
 <br>
 <pre>
 fof(id_20_A_lob_N01,axiom,
     ? [EVENTX4,ENTITYX1,ENTITYX2,ATTRIBX3] :
-      ( isA(ENTITYX1,r__screen_0020_0002)
-      &amp; r__of_0020_0003(ENTITYX1) = ENTITYX2
-      &amp; isA(ENTITYX2,r__radar_0020_0006)
+      ( isA(ENTITYX1,r_0020_0002__screen)
+      &amp; r_0020_0003__of(ENTITYX1) = ENTITYX2
+      &amp; isA(ENTITYX2,r_0020_0006__radar)
       &amp; attrib2(ENTITYX2) = ATTRIBX3
-      &amp; isA(ATTRIBX3,r__air_to_air_0020_0005)
-      &amp; isA(EVENTX4,r__glowed_0020_0007)
+      &amp; isA(ATTRIBX3,r_0020_0005__air_to_air)
+      &amp; isA(EVENTX4,r_0020_0007__glowed)
       &amp; arg0(EVENTX4) = ENTITYX1 ) ).
 
 

@@ -173,8 +173,8 @@ The principal advantages of this should be continuous monitoring of the sodium a
 <!-- 0003_0020_cnt_cnd -->
 <g id="node12" class="node">
 <title>0003_0020_cnt_cnd</title>
-<ellipse fill="none" stroke="black" cx="602.05" cy="-366" rx="65.79" ry="18"/>
-<text text-anchor="middle" x="602.05" y="-362.3" font-family="fixed" font-size="14.00">if_[cnt][cnd]</text>
+<ellipse fill="none" stroke="black" cx="602.05" cy="-366" rx="61.19" ry="18"/>
+<text text-anchor="middle" x="602.05" y="-362.3" font-family="fixed" font-size="14.00">if[cnt][cnd]</text>
 </g>
 <!-- 0003_0024 -->
 <g id="node13" class="node">
@@ -285,7 +285,7 @@ The principal advantages of this should be continuous monitoring of the sodium a
 <title>0003_0030&#45;&gt;0003_0033</title>
 <path fill="none" stroke="black" d="M523.05,-173.8C523.05,-162.16 523.05,-146.55 523.05,-133.24"/>
 <polygon fill="black" stroke="black" points="526.55,-133.18 523.05,-123.18 519.55,-133.18 526.55,-133.18"/>
-<text text-anchor="middle" x="561.05" y="-144.8" font-family="fixed" font-size="14.00">with_[mnr]</text>
+<text text-anchor="middle" x="557.55" y="-144.8" font-family="fixed" font-size="14.00">with[mnr]</text>
 </g>
 <!-- 0003_0032 -->
 <g id="node21" class="node">
@@ -317,72 +317,72 @@ The principal advantages of this should be continuous monitoring of the sodium a
 </svg>
 <br>
 <pre>
-arc(r__advantages_0003_0003,r__principal_0003_0002,attrib2).
-arc(r__advantages_0003_0003,r__this_0003_0005,r__of_0003_0004).
-arc(r__should_0003_0006,r__be_0003_0007,scope).
-arc(r__be_0003_0007,r__advantages_0003_0003,arg0).
-arc(r__be_0003_0007,r__and_0003_0013,prd2).
-arc(r__monitoring_0003_0009,r__continuous_0003_0008,attrib1).
-arc(r__monitoring_0003_0009,r__sodium_0003_0012,r__of_0003_0010).
-arc(r__and_0003_0013,r__monitoring_0003_0009,conj1).
-arc(r__and_0003_0013,r__accuracy_0003_0015,conj2).
-arc(r__accuracy_0003_0015,r__monitoring_0003_0017,r__of_0003_0016).
-arc(r__if_0003_0020_cnt_cnd,r__obeys_0003_0024,restriction).
-arc(r__if_0003_0020_cnt_cnd,r__should_0003_0029,scope).
-arc(r__system_0003_0023,r__sodium_oxygen_0003_0022,attrib2).
-arc(r__obeys_0003_0024,r__system_0003_0023,arg0).
-arc(r__obeys_0003_0024,r__law_0003_0027,arg1).
-arc(r__law_0003_0027,r__Henry_0003_0025,genv).
-arc(r__should_0003_0029,r__increase_0003_0030,scope).
-arc(r__increase_0003_0030,r__accuracy_0003_0015,arg0).
-arc(r__increase_0003_0030,r__concentration_0003_0033,r__with_0003_0031_mnr).
-arc(r__concentration_0003_0033,r__decreasing_0003_0032,attrib1).
-arc(r__concentration_0003_0033,r__impurity_0003_0036,r__of_0003_0034).
+arc(r_0003_0003__advantages,r_0003_0002__principal,attrib2).
+arc(r_0003_0003__advantages,r_0003_0005__this,r_0003_0004__of).
+arc(r_0003_0006__should,r_0003_0007__be,scope).
+arc(r_0003_0007__be,r_0003_0003__advantages,arg0).
+arc(r_0003_0007__be,r_0003_0013__and,prd2).
+arc(r_0003_0009__monitoring,r_0003_0008__continuous,attrib1).
+arc(r_0003_0009__monitoring,r_0003_0012__sodium,r_0003_0010__of).
+arc(r_0003_0013__and,r_0003_0009__monitoring,conj1).
+arc(r_0003_0013__and,r_0003_0015__accuracy,conj2).
+arc(r_0003_0015__accuracy,r_0003_0017__monitoring,r_0003_0016__of).
+arc(r_0003_0020__if_cnt_cnd,r_0003_0024__obeys,restriction).
+arc(r_0003_0020__if_cnt_cnd,r_0003_0029__should,scope).
+arc(r_0003_0023__system,r_0003_0022__sodium_oxygen,attrib2).
+arc(r_0003_0024__obeys,r_0003_0023__system,arg0).
+arc(r_0003_0024__obeys,r_0003_0027__law,arg1).
+arc(r_0003_0027__law,r_0003_0025__Henry,genv).
+arc(r_0003_0029__should,r_0003_0030__increase,scope).
+arc(r_0003_0030__increase,r_0003_0015__accuracy,arg0).
+arc(r_0003_0030__increase,r_0003_0033__concentration,r_0003_0031__with_mnr).
+arc(r_0003_0033__concentration,r_0003_0032__decreasing,attrib1).
+arc(r_0003_0033__concentration,r_0003_0036__impurity,r_0003_0034__of).
 
 </pre>
 <br>
 <pre>
 fof(id_3_A_lob_J01,axiom,
     ? [OPERATORX19,EVENTX20,CONNX9,OPERATORX17,EVENTX18,EVENTX13,ENTITYX1,ENTITYX3,ENTITYX4,ENTITYX7,ENTITYX8,ENTITYX14,ENTITYX16,ENTITYX10,ENTITYX12,ENTITYX6,ATTRIBX15,ATTRIBX11,ATTRIBX5,ATTRIBX2] :
-      ( isA(ENTITYX1,r__advantages_0003_0003)
+      ( isA(ENTITYX1,r_0003_0003__advantages)
       &amp; attrib2(ENTITYX1) = ATTRIBX2
-      &amp; r__of_0003_0004(ENTITYX1) = r__this_0003_0005
-      &amp; isA(ENTITYX3,r__and_0003_0013)
+      &amp; r_0003_0004__of(ENTITYX1) = r_0003_0005__this
+      &amp; isA(ENTITYX3,r_0003_0013__and)
       &amp; conj1(ENTITYX3) = ENTITYX4
       &amp; conj2(ENTITYX3) = ENTITYX7
-      &amp; isA(ENTITYX4,r__monitoring_0003_0009)
+      &amp; isA(ENTITYX4,r_0003_0009__monitoring)
       &amp; attrib1(ENTITYX4) = ATTRIBX5
-      &amp; r__of_0003_0010(ENTITYX4) = ENTITYX6
-      &amp; isA(ENTITYX6,r__sodium_0003_0012)
-      &amp; isA(CONNX9,r__if_0003_0020_cnt_cnd)
+      &amp; r_0003_0010__of(ENTITYX4) = ENTITYX6
+      &amp; isA(ENTITYX6,r_0003_0012__sodium)
+      &amp; isA(CONNX9,r_0003_0020__if_cnt_cnd)
       &amp; restriction(CONNX9) = EVENTX13
-      &amp; isA(EVENTX13,r__obeys_0003_0024)
+      &amp; isA(EVENTX13,r_0003_0024__obeys)
       &amp; arg0(EVENTX13) = ENTITYX10
       &amp; arg1(EVENTX13) = ENTITYX12
       &amp; scope(CONNX9) = OPERATORX17
-      &amp; isA(OPERATORX17,r__should_0003_0029)
+      &amp; isA(OPERATORX17,r_0003_0029__should)
       &amp; scope(OPERATORX17) = EVENTX18
-      &amp; isA(EVENTX18,r__increase_0003_0030)
+      &amp; isA(EVENTX18,r_0003_0030__increase)
       &amp; arg0(EVENTX18) = ENTITYX7
-      &amp; r__with_0003_0031_mnr(EVENTX18) = ENTITYX14
-      &amp; isA(ENTITYX7,r__accuracy_0003_0015)
-      &amp; r__of_0003_0016(ENTITYX7) = ENTITYX8
-      &amp; isA(ENTITYX8,r__monitoring_0003_0017)
-      &amp; isA(ENTITYX10,r__system_0003_0023)
+      &amp; r_0003_0031__with_mnr(EVENTX18) = ENTITYX14
+      &amp; isA(ENTITYX7,r_0003_0015__accuracy)
+      &amp; r_0003_0016__of(ENTITYX7) = ENTITYX8
+      &amp; isA(ENTITYX8,r_0003_0017__monitoring)
+      &amp; isA(ENTITYX10,r_0003_0023__system)
       &amp; attrib2(ENTITYX10) = ATTRIBX11
-      &amp; isA(ENTITYX12,r__law_0003_0027)
-      &amp; genv(ENTITYX12) = r__Henry_0003_0025
-      &amp; isA(ENTITYX14,r__concentration_0003_0033)
+      &amp; isA(ENTITYX12,r_0003_0027__law)
+      &amp; genv(ENTITYX12) = r_0003_0025__Henry
+      &amp; isA(ENTITYX14,r_0003_0033__concentration)
       &amp; attrib1(ENTITYX14) = ATTRIBX15
-      &amp; r__of_0003_0034(ENTITYX14) = ENTITYX16
-      &amp; isA(ENTITYX16,r__impurity_0003_0036)
-      &amp; isA(ATTRIBX2,r__principal_0003_0002)
-      &amp; isA(ATTRIBX5,r__continuous_0003_0008)
-      &amp; isA(ATTRIBX11,r__sodium_oxygen_0003_0022)
-      &amp; isA(ATTRIBX15,r__decreasing_0003_0032)
-      &amp; isA(OPERATORX19,r__should_0003_0006)
+      &amp; r_0003_0034__of(ENTITYX14) = ENTITYX16
+      &amp; isA(ENTITYX16,r_0003_0036__impurity)
+      &amp; isA(ATTRIBX2,r_0003_0002__principal)
+      &amp; isA(ATTRIBX5,r_0003_0008__continuous)
+      &amp; isA(ATTRIBX11,r_0003_0022__sodium_oxygen)
+      &amp; isA(ATTRIBX15,r_0003_0032__decreasing)
+      &amp; isA(OPERATORX19,r_0003_0006__should)
       &amp; scope(OPERATORX19) = EVENTX20
-      &amp; isA(EVENTX20,r__be_0003_0007)
+      &amp; isA(EVENTX20,r_0003_0007__be)
       &amp; arg0(EVENTX20) = ENTITYX1
       &amp; prd2(EVENTX20) = ENTITYX3 ) ).
 

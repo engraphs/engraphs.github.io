@@ -64,7 +64,7 @@ Nasha clicked on her hand lamp , shining the beam down the stairs .
 <title>0423_0002&#45;&gt;0423_0005_0423_0006</title>
 <path fill="none" stroke="black" d="M117.89,-173.8C117.89,-162.16 117.89,-146.55 117.89,-133.24"/>
 <polygon fill="black" stroke="black" points="121.39,-133.18 117.89,-123.18 114.39,-133.18 121.39,-133.18"/>
-<text text-anchor="middle" x="144.89" y="-144.8" font-family="fixed" font-size="14.00">on_[dir]</text>
+<text text-anchor="middle" x="141.39" y="-144.8" font-family="fixed" font-size="14.00">on[dir]</text>
 </g>
 <!-- 0423_0005_0423_0006&#45;&gt;0423_0001 -->
 <g id="edge3" class="edge">
@@ -110,7 +110,7 @@ Nasha clicked on her hand lamp , shining the beam down the stairs .
 <title>0423_0008&#45;&gt;0423_0013</title>
 <path fill="none" stroke="black" d="M295.84,-178.53C309.38,-172.43 325.33,-164.55 338.89,-156 352.06,-147.69 365.65,-137.01 376.73,-127.65"/>
 <polygon fill="black" stroke="black" points="379.02,-130.31 384.32,-121.13 374.45,-125 379.02,-130.31"/>
-<text text-anchor="middle" x="394.89" y="-144.8" font-family="fixed" font-size="14.00">down_[dir]</text>
+<text text-anchor="middle" x="391.39" y="-144.8" font-family="fixed" font-size="14.00">down[dir]</text>
 </g>
 <!-- mnr_0423_1003 -->
 <g id="node7" class="node">
@@ -136,35 +136,35 @@ Nasha clicked on her hand lamp , shining the beam down the stairs .
 </svg>
 <br>
 <pre>
-arc(mnr_0423_1003,r__clicked_0423_0002,scope).
-arc(mnr_0423_1003,r__shining_0423_0008,restriction).
-arc(r__clicked_0423_0002,r__Nasha_0423_0001,arg0).
-arc(r__clicked_0423_0002,r__hand_0423_0005_r__lamp_0423_0006,r__on_0423_0003_dir).
-arc(r__hand_0423_0005_r__lamp_0423_0006,r__Nasha_0423_0001,genv).
-arc(r__shining_0423_0008,r__Nasha_0423_0001,arg0).
-arc(r__shining_0423_0008,r__beam_0423_0010,arg1).
-arc(r__shining_0423_0008,r__stairs_0423_0013,r__down_0423_0011_dir).
+arc(mnr_0423_1003,r_0423_0002__clicked,scope).
+arc(mnr_0423_1003,r_0423_0008__shining,restriction).
+arc(r_0423_0002__clicked,r_0423_0001__Nasha,arg0).
+arc(r_0423_0002__clicked,r_0423_0005__hand_lamp,r_0423_0003__on_dir).
+arc(r_0423_0005__hand_lamp,r_0423_0001__Nasha,genv).
+arc(r_0423_0008__shining,r_0423_0001__Nasha,arg0).
+arc(r_0423_0008__shining,r_0423_0010__beam,arg1).
+arc(r_0423_0008__shining,r_0423_0013__stairs,r_0423_0011__down_dir).
 
 </pre>
 <br>
 <pre>
 fof(id_423_A_DICK_1952,axiom,
     ? [NASHAX2,CONNX4,EVENTX7,EVENTX8,ENTITYX1,ENTITYX5,ENTITYX6] :
-      ( isA(ENTITYX1,r__hand_0423_0005_r__lamp_0423_0006)
+      ( isA(ENTITYX1,r_0423_0005__hand_lamp)
       &amp; genv(ENTITYX1) = NASHAX2
-      &amp; NASHAX2 = r__Nasha_0423_0001
-      &amp; isA(ENTITYX5,r__beam_0423_0010)
-      &amp; isA(ENTITYX6,r__stairs_0423_0013)
+      &amp; NASHAX2 = r_0423_0001__Nasha
+      &amp; isA(ENTITYX5,r_0423_0010__beam)
+      &amp; isA(ENTITYX6,r_0423_0013__stairs)
       &amp; isA(CONNX4,mnr_0423_1003)
       &amp; scope(CONNX4) = EVENTX8
-      &amp; isA(EVENTX8,r__clicked_0423_0002)
-      &amp; arg0(EVENTX8) = r__Nasha_0423_0001
-      &amp; r__on_0423_0003_dir(EVENTX8) = ENTITYX1
+      &amp; isA(EVENTX8,r_0423_0002__clicked)
+      &amp; arg0(EVENTX8) = r_0423_0001__Nasha
+      &amp; r_0423_0003__on_dir(EVENTX8) = ENTITYX1
       &amp; restriction(CONNX4) = EVENTX7
-      &amp; isA(EVENTX7,r__shining_0423_0008)
-      &amp; arg0(EVENTX7) = r__Nasha_0423_0001
+      &amp; isA(EVENTX7,r_0423_0008__shining)
+      &amp; arg0(EVENTX7) = r_0423_0001__Nasha
       &amp; arg1(EVENTX7) = ENTITYX5
-      &amp; r__down_0423_0011_dir(EVENTX7) = ENTITYX6 ) ).
+      &amp; r_0423_0011__down_dir(EVENTX7) = ENTITYX6 ) ).
 
 
 </pre>

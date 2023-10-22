@@ -142,14 +142,14 @@ He want to know where we sleep tonight . &rsquo;
 </svg>
 <br>
 <pre>
-arc(question_0108_1004,r__sleep_0108_0007,scope).
-arc(r__want_0108_0002,r__He_0108_0001,arg0).
-arc(r__want_0108_0002,r__know_0108_0004,arg1).
-arc(r__know_0108_0004,question_0108_1004,arg1).
-arc(r__know_0108_0004,r__He_0108_0001,arg0).
-arc(r__sleep_0108_0007,r__where_0108_0005,loc1).
-arc(r__sleep_0108_0007,r__we_0108_0006,arg0).
-arc(r__sleep_0108_0007,r__tonight_0108_0008,tmp4).
+arc(question_0108_1004,r_0108_0007__sleep,scope).
+arc(r_0108_0002__want,r_0108_0001__He,arg0).
+arc(r_0108_0002__want,r_0108_0004__know,arg1).
+arc(r_0108_0004__know,question_0108_1004,arg1).
+arc(r_0108_0004__know,r_0108_0001__He,arg0).
+arc(r_0108_0007__sleep,r_0108_0005__where,loc1).
+arc(r_0108_0007__sleep,r_0108_0006__we,arg0).
+arc(r_0108_0007__sleep,r_0108_0008__tonight,tmp4).
 
 </pre>
 <br>
@@ -157,20 +157,20 @@ arc(r__sleep_0108_0007,r__tonight_0108_0008,tmp4).
 fof(id_108_A_LooseChange,axiom,
     ? [STATEX1,STATEX2,EVENTX9,EVENTX8,OPERATORX4,EVENTX7,QUALITYX5,QUALITYX6] :
       ( STATEX1 = EVENTX8
-      &amp; isA(EVENTX8,r__know_0108_0004)
-      &amp; arg0(EVENTX8) = r__He_0108_0001
+      &amp; isA(EVENTX8,r_0108_0004__know)
+      &amp; arg0(EVENTX8) = r_0108_0001__He
       &amp; arg1(EVENTX8) = STATEX2
       &amp; STATEX2 = OPERATORX4
       &amp; isA(OPERATORX4,question_0108_1004)
       &amp; scope(OPERATORX4) = EVENTX7
-      &amp; isA(EVENTX7,r__sleep_0108_0007)
+      &amp; isA(EVENTX7,r_0108_0007__sleep)
       &amp; loc1(EVENTX7) = QUALITYX5
-      &amp; arg0(EVENTX7) = r__we_0108_0006
+      &amp; arg0(EVENTX7) = r_0108_0006__we
       &amp; tmp4(EVENTX7) = QUALITYX6
-      &amp; isA(QUALITYX5,r__where_0108_0005)
-      &amp; isA(QUALITYX6,r__tonight_0108_0008)
-      &amp; isA(EVENTX9,r__want_0108_0002)
-      &amp; arg0(EVENTX9) = r__He_0108_0001
+      &amp; isA(QUALITYX5,r_0108_0005__where)
+      &amp; isA(QUALITYX6,r_0108_0008__tonight)
+      &amp; isA(EVENTX9,r_0108_0002__want)
+      &amp; arg0(EVENTX9) = r_0108_0001__He
       &amp; arg1(EVENTX9) = STATEX1 ) ).
 
 

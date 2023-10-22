@@ -84,20 +84,20 @@ What feature does the man suggest ?
 </svg>
 <br>
 <pre>
-arc(question_0012_1002,r__does_0012_0003_r__suggest_0012_0006,scope).
-arc(r__does_0012_0003_r__suggest_0012_0006,r__feature_0012_0002,arg1).
-arc(r__does_0012_0003_r__suggest_0012_0006,r__man_0012_0005,arg0).
+arc(question_0012_1002,r_0012_0003__does_suggest,scope).
+arc(r_0012_0003__does_suggest,r_0012_0002__feature,arg1).
+arc(r_0012_0003__does_suggest,r_0012_0005__man,arg0).
 
 </pre>
 <br>
 <pre>
 fof(id_12_A_toeic,axiom,
     ? [OPERATORX2,EVENTX5,ENTITYX3,ENTITYX4] :
-      ( isA(ENTITYX3,r__feature_0012_0002)
-      &amp; isA(ENTITYX4,r__man_0012_0005)
+      ( isA(ENTITYX3,r_0012_0002__feature)
+      &amp; isA(ENTITYX4,r_0012_0005__man)
       &amp; isA(OPERATORX2,question_0012_1002)
       &amp; scope(OPERATORX2) = EVENTX5
-      &amp; isA(EVENTX5,r__does_0012_0003_r__suggest_0012_0006)
+      &amp; isA(EVENTX5,r_0012_0003__does_suggest)
       &amp; arg1(EVENTX5) = ENTITYX3
       &amp; arg0(EVENTX5) = ENTITYX4 ) ).
 

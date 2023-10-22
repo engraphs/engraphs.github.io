@@ -103,7 +103,7 @@ Could n't she have gone to the police ?
 <title>0151_0005&#45;&gt;0151_0008</title>
 <path fill="none" stroke="black" d="M77.37,-87.41C80.53,-81.64 84.02,-75.08 87,-69 90.76,-61.34 94.59,-52.88 97.99,-45.14"/>
 <polygon fill="black" stroke="black" points="101.26,-46.39 102.01,-35.83 94.83,-43.62 101.26,-46.39"/>
-<text text-anchor="middle" x="119" y="-57.8" font-family="fixed" font-size="14.00">to_[dir]</text>
+<text text-anchor="middle" x="115.5" y="-57.8" font-family="fixed" font-size="14.00">to[dir]</text>
 </g>
 <!-- question_0151_1002 -->
 <g id="node7" class="node">
@@ -122,12 +122,12 @@ Could n't she have gone to the police ?
 </svg>
 <br>
 <pre>
-arc(question_0151_1002,r__Could_0151_0001,scope).
-arc(r__Could_0151_0001,r__n_apos_t_0151_0002,scope).
-arc(r__n_apos_t_0151_0002,r__have_0151_0004,scope).
-arc(r__have_0151_0004,r__gone_0151_0005,catenative).
-arc(r__gone_0151_0005,r__she_0151_0003,arg0).
-arc(r__gone_0151_0005,r__police_0151_0008,r__to_0151_0006_dir).
+arc(question_0151_1002,r_0151_0001__Could,scope).
+arc(r_0151_0001__Could,r_0151_0002__n_apos_t,scope).
+arc(r_0151_0002__n_apos_t,r_0151_0004__have,scope).
+arc(r_0151_0004__have,r_0151_0005__gone,catenative).
+arc(r_0151_0005__gone,r_0151_0003__she,arg0).
+arc(r_0151_0005__gone,r_0151_0008__police,r_0151_0006__to_dir).
 
 </pre>
 <br>
@@ -135,17 +135,17 @@ arc(r__gone_0151_0005,r__police_0151_0008,r__to_0151_0006_dir).
 fof(id_151_A_LooseChange,axiom,
     ? [CATENATIVEX5,OPERATORX2,OPERATORX3,OPERATORX4,EVENTX8,EVENTX7,ENTITYX6] :
       ( CATENATIVEX5 = EVENTX7
-      &amp; isA(EVENTX7,r__gone_0151_0005)
-      &amp; arg0(EVENTX7) = r__she_0151_0003
-      &amp; r__to_0151_0006_dir(EVENTX7) = ENTITYX6
-      &amp; isA(ENTITYX6,r__police_0151_0008)
+      &amp; isA(EVENTX7,r_0151_0005__gone)
+      &amp; arg0(EVENTX7) = r_0151_0003__she
+      &amp; r_0151_0006__to_dir(EVENTX7) = ENTITYX6
+      &amp; isA(ENTITYX6,r_0151_0008__police)
       &amp; isA(OPERATORX2,question_0151_1002)
       &amp; scope(OPERATORX2) = OPERATORX3
-      &amp; isA(OPERATORX3,r__Could_0151_0001)
+      &amp; isA(OPERATORX3,r_0151_0001__Could)
       &amp; scope(OPERATORX3) = OPERATORX4
-      &amp; isA(OPERATORX4,r__n_apos_t_0151_0002)
+      &amp; isA(OPERATORX4,r_0151_0002__n_apos_t)
       &amp; scope(OPERATORX4) = EVENTX8
-      &amp; isA(EVENTX8,r__have_0151_0004)
+      &amp; isA(EVENTX8,r_0151_0004__have)
       &amp; catenative(EVENTX8) = CATENATIVEX5 ) ).
 
 

@@ -77,7 +77,7 @@ They were flying at more than 975 miles an hour , or nearly Mach 1.3 to use the 
 <title>0034_0003&#45;&gt;0034_0012</title>
 <path fill="none" stroke="black" d="M77.24,-435.21C83.59,-422.94 92.3,-406.1 99.49,-392.22"/>
 <polygon fill="black" stroke="black" points="102.68,-393.67 104.17,-383.18 96.46,-390.45 102.68,-393.67"/>
-<text text-anchor="middle" x="123.54" y="-405.8" font-family="fixed" font-size="14.00">at_[mnr]</text>
+<text text-anchor="middle" x="120.04" y="-405.8" font-family="fixed" font-size="14.00">at[mnr]</text>
 </g>
 <!-- 0034_0010 -->
 <g id="node7" class="node">
@@ -187,17 +187,17 @@ They were flying at more than 975 miles an hour , or nearly Mach 1.3 to use the 
 </svg>
 <br>
 <pre>
-arc(r__were_0034_0002,r__flying_0034_0003,catenative).
-arc(r__flying_0034_0003,r__They_0034_0001,arg0).
-arc(r__flying_0034_0003,r__or_0034_0012,r__at_0034_0004_mnr).
-arc(r__more_0034_0005,r__975_0034_0007_r__miles_0034_0008,r__than_0034_0006).
-arc(r__hour_0034_0010,r__more_0034_0005,attrib1).
-arc(r__or_0034_0012,r__hour_0034_0010,conj1).
-arc(r__or_0034_0012,r__Mach_0034_0014_r__1.3_0034_0015,conj2).
-arc(r__Mach_0034_0014_r__1.3_0034_0015,r__nearly_0034_0013,quality1).
-arc(r__Mach_0034_0014_r__1.3_0034_0015,r__use_0034_0017,prn4).
-arc(r__use_0034_0017,r__jargon_0034_0020,arg1).
-arc(r__jargon_0034_0020,r__modern_0034_0019,attrib2).
+arc(r_0034_0002__were,r_0034_0003__flying,catenative).
+arc(r_0034_0003__flying,r_0034_0001__They,arg0).
+arc(r_0034_0003__flying,r_0034_0012__or,r_0034_0004__at_mnr).
+arc(r_0034_0005__more,r_0034_0007__975_miles,r_0034_0006__than).
+arc(r_0034_0010__hour,r_0034_0005__more,attrib1).
+arc(r_0034_0012__or,r_0034_0010__hour,conj1).
+arc(r_0034_0012__or,r_0034_0014__Mach_1.3,conj2).
+arc(r_0034_0014__Mach_1.3,r_0034_0013__nearly,quality1).
+arc(r_0034_0014__Mach_1.3,r_0034_0017__use,prn4).
+arc(r_0034_0017__use,r_0034_0020__jargon,arg1).
+arc(r_0034_0020__jargon,r_0034_0019__modern,attrib2).
 
 </pre>
 <br>
@@ -205,28 +205,28 @@ arc(r__jargon_0034_0020,r__modern_0034_0019,attrib2).
 fof(id_34_A_lob_N01,axiom,
     ? [CATENATIVEX1,EVENTX8,EVENTX15,EVENTX14,EVENTX13,ENTITYX2,ENTITYX3,ENTITYX6,ENTITYX11,ENTITYX5,ATTRIBX12,ATTRIBX4,QUALITYX7] :
       ( CATENATIVEX1 = EVENTX14
-      &amp; isA(EVENTX14,r__flying_0034_0003)
-      &amp; arg0(EVENTX14) = r__They_0034_0001
-      &amp; r__at_0034_0004_mnr(EVENTX14) = ENTITYX2
+      &amp; isA(EVENTX14,r_0034_0003__flying)
+      &amp; arg0(EVENTX14) = r_0034_0001__They
+      &amp; r_0034_0004__at_mnr(EVENTX14) = ENTITYX2
       &amp; EVENTX8 = EVENTX13
-      &amp; isA(EVENTX13,r__use_0034_0017)
+      &amp; isA(EVENTX13,r_0034_0017__use)
       &amp; arg1(EVENTX13) = ENTITYX11
-      &amp; isA(ENTITYX2,r__or_0034_0012)
+      &amp; isA(ENTITYX2,r_0034_0012__or)
       &amp; conj1(ENTITYX2) = ENTITYX3
       &amp; conj2(ENTITYX2) = ENTITYX6
-      &amp; isA(ENTITYX3,r__hour_0034_0010)
+      &amp; isA(ENTITYX3,r_0034_0010__hour)
       &amp; attrib1(ENTITYX3) = ATTRIBX4
-      &amp; isA(ENTITYX5,r__975_0034_0007_r__miles_0034_0008)
-      &amp; isA(ENTITYX6,r__Mach_0034_0014_r__1.3_0034_0015)
+      &amp; isA(ENTITYX5,r_0034_0007__975_miles)
+      &amp; isA(ENTITYX6,r_0034_0014__Mach_1.3)
       &amp; quality1(ENTITYX6) = QUALITYX7
       &amp; prn4(ENTITYX6) = EVENTX8
-      &amp; isA(ENTITYX11,r__jargon_0034_0020)
+      &amp; isA(ENTITYX11,r_0034_0020__jargon)
       &amp; attrib2(ENTITYX11) = ATTRIBX12
-      &amp; isA(ATTRIBX4,r__more_0034_0005)
-      &amp; r__than_0034_0006(ATTRIBX4) = ENTITYX5
-      &amp; isA(ATTRIBX12,r__modern_0034_0019)
-      &amp; isA(QUALITYX7,r__nearly_0034_0013)
-      &amp; isA(EVENTX15,r__were_0034_0002)
+      &amp; isA(ATTRIBX4,r_0034_0005__more)
+      &amp; r_0034_0006__than(ATTRIBX4) = ENTITYX5
+      &amp; isA(ATTRIBX12,r_0034_0019__modern)
+      &amp; isA(QUALITYX7,r_0034_0013__nearly)
+      &amp; isA(EVENTX15,r_0034_0002__were)
       &amp; catenative(EVENTX15) = CATENATIVEX1 ) ).
 
 

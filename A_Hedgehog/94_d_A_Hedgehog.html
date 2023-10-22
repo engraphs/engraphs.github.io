@@ -162,32 +162,32 @@
 </svg>
 <br>
 <pre>
-arc(r__Under_Secretary_0100_0004,r__Parliamentary_0100_0003,attrib2).
-arc(r__Under_Secretary_0100_0004,r__State_0100_0006,r__of_0100_0005).
-arc(r__Under_Secretary_0100_0004,r__and_0100_0011,r__for_0100_0007).
-arc(r__Under_Secretary_0100_0004,r__Rory_0100_0015_r__Stewart_0100_0016,prn7).
-arc(r__and_0100_0011,r__Environment_0100_0008,conj1).
-arc(r__and_0100_0011,r__Food_0100_0010,conj2).
-arc(r__and_0100_0011,r__Rural_0100_0012_r__Affairs_0100_0013,conj3).
-arc(z_0100_1009,r__19:27:00_0100_0001,z_0100_1003).
-arc(z_0100_1009,r__Under_Secretary_0100_0004,z_0100_1005).
+arc(r_0100_0004__Under_Secretary,r_0100_0003__Parliamentary,attrib2).
+arc(r_0100_0004__Under_Secretary,r_0100_0006__State,r_0100_0005__of).
+arc(r_0100_0004__Under_Secretary,r_0100_0011__and,r_0100_0007__for).
+arc(r_0100_0004__Under_Secretary,r_0100_0015__Rory_Stewart,prn7).
+arc(r_0100_0011__and,r_0100_0008__Environment,conj1).
+arc(r_0100_0011__and,r_0100_0010__Food,conj2).
+arc(r_0100_0011__and,r_0100_0012__Rural_Affairs,conj3).
+arc(z_0100_1009,r_0100_0001__19:27:00,z_0100_1003).
+arc(z_0100_1009,r_0100_0004__Under_Secretary,z_0100_1005).
 
 </pre>
 <br>
 <pre>
 fof(id_100_A_Hedgehog,axiom,
     ? [EVENTX10,ENTITYX4,ENTITYX6,ENTITYX8,ATTRIBX7] :
-      ( isA(ENTITYX4,r__19:27:00_0100_0001)
-      &amp; isA(ENTITYX6,r__Under_Secretary_0100_0004)
+      ( isA(ENTITYX4,r_0100_0001__19:27:00)
+      &amp; isA(ENTITYX6,r_0100_0004__Under_Secretary)
       &amp; attrib2(ENTITYX6) = ATTRIBX7
-      &amp; r__of_0100_0005(ENTITYX6) = r__State_0100_0006
-      &amp; r__for_0100_0007(ENTITYX6) = ENTITYX8
-      &amp; prn7(ENTITYX6) = r__Rory_0100_0015_r__Stewart_0100_0016
-      &amp; isA(ENTITYX8,r__and_0100_0011)
-      &amp; conj1(ENTITYX8) = r__Environment_0100_0008
-      &amp; conj2(ENTITYX8) = r__Food_0100_0010
-      &amp; conj3(ENTITYX8) = r__Rural_0100_0012_r__Affairs_0100_0013
-      &amp; isA(ATTRIBX7,r__Parliamentary_0100_0003)
+      &amp; r_0100_0005__of(ENTITYX6) = r_0100_0006__State
+      &amp; r_0100_0007__for(ENTITYX6) = ENTITYX8
+      &amp; prn7(ENTITYX6) = r_0100_0015__Rory_Stewart
+      &amp; isA(ENTITYX8,r_0100_0011__and)
+      &amp; conj1(ENTITYX8) = r_0100_0008__Environment
+      &amp; conj2(ENTITYX8) = r_0100_0010__Food
+      &amp; conj3(ENTITYX8) = r_0100_0012__Rural_Affairs
+      &amp; isA(ATTRIBX7,r_0100_0003__Parliamentary)
       &amp; isA(EVENTX10,z_0100_1009)
       &amp; z_0100_1003(EVENTX10) = ENTITYX4
       &amp; z_0100_1005(EVENTX10) = ENTITYX6 ) ).

@@ -83,9 +83,9 @@ It follows that the decision was unlawful .
 </svg>
 <br>
 <pre>
-arc(r__follows_0053_0002,r__was_0053_0006,arg0).
-arc(r__was_0053_0006,r__decision_0053_0005,arg0).
-arc(r__was_0053_0006,r__unlawful_0053_0007,prd2).
+arc(r_0053_0002__follows,r_0053_0006__was,arg0).
+arc(r_0053_0006__was,r_0053_0005__decision,arg0).
+arc(r_0053_0006__was,r_0053_0007__unlawful,prd2).
 
 </pre>
 <br>
@@ -93,12 +93,12 @@ arc(r__was_0053_0006,r__unlawful_0053_0007,prd2).
 fof(id_53_A_uksc_judgment,axiom,
     ? [STATEX2,EVENTX6,EVENTX5,ENTITYX3,ATTRIBX4] :
       ( STATEX2 = EVENTX5
-      &amp; isA(EVENTX5,r__was_0053_0006)
+      &amp; isA(EVENTX5,r_0053_0006__was)
       &amp; arg0(EVENTX5) = ENTITYX3
       &amp; prd2(EVENTX5) = ATTRIBX4
-      &amp; isA(ENTITYX3,r__decision_0053_0005)
-      &amp; isA(ATTRIBX4,r__unlawful_0053_0007)
-      &amp; isA(EVENTX6,r__follows_0053_0002)
+      &amp; isA(ENTITYX3,r_0053_0005__decision)
+      &amp; isA(ATTRIBX4,r_0053_0007__unlawful)
+      &amp; isA(EVENTX6,r_0053_0002__follows)
       &amp; arg0(EVENTX6) = STATEX2
       &amp; arg0(EVENTX6) = STATEX2 ) ).
 

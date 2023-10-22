@@ -29,11 +29,11 @@
 aerosolized dust or soil contact disease acquired through inhalation of aerosols contaminated with rodent urine :
 <br>
 <br>
-<svg width="545pt" height="305pt"
- viewBox="0.00 0.00 545.04 305.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="542pt" height="305pt"
+ viewBox="0.00 0.00 541.83 305.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 301)">
 <title>%3</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-301 541.04,-301 541.04,4 -4,4"/>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-301 537.83,-301 537.83,4 -4,4"/>
 <!-- 0070_0001 -->
 <g id="node1" class="node">
 <title>0070_0001</title>
@@ -103,7 +103,7 @@ aerosolized dust or soil contact disease acquired through inhalation of aerosols
 <title>0070_0007&#45;&gt;0070_0009</title>
 <path fill="none" stroke="black" d="M297.49,-260.8C300.5,-249.16 304.55,-233.55 307.99,-220.24"/>
 <polygon fill="black" stroke="black" points="311.48,-220.73 310.6,-210.18 304.7,-218.98 311.48,-220.73"/>
-<text text-anchor="middle" x="353.04" y="-231.8" font-family="fixed" font-size="14.00">through_[cnt]</text>
+<text text-anchor="middle" x="350.04" y="-231.8" font-family="fixed" font-size="14.00">through[cnt]</text>
 </g>
 <!-- 0070_0011 -->
 <g id="node7" class="node">
@@ -142,7 +142,7 @@ aerosolized dust or soil contact disease acquired through inhalation of aerosols
 <title>0070_0012&#45;&gt;0070_0015</title>
 <path fill="none" stroke="black" d="M461.04,-173.8C461.04,-162.16 461.04,-146.55 461.04,-133.24"/>
 <polygon fill="black" stroke="black" points="464.54,-133.18 461.04,-123.18 457.54,-133.18 464.54,-133.18"/>
-<text text-anchor="middle" x="499.04" y="-144.8" font-family="fixed" font-size="14.00">with_[mnr]</text>
+<text text-anchor="middle" x="495.54" y="-144.8" font-family="fixed" font-size="14.00">with[mnr]</text>
 </g>
 <!-- 0070_0014 -->
 <g id="node10" class="node">
@@ -174,41 +174,41 @@ aerosolized dust or soil contact disease acquired through inhalation of aerosols
 </svg>
 <br>
 <pre>
-arc(r__dust_0070_0002,r__aerosolized_0070_0001,attrib1).
-arc(r__or_0070_0003,r__dust_0070_0002,conj1).
-arc(r__or_0070_0003,r__soil_0070_0004_r__contact_0070_0005_r__disease_0070_0006,conj2).
-arc(r__acquired_0070_0007,r__or_0070_0003,arg1).
-arc(r__acquired_0070_0007,r__inhalation_0070_0009,r__through_0070_0008_cnt).
-arc(r__inhalation_0070_0009,r__aerosols_0070_0011,r__of_0070_0010).
-arc(r__contaminated_0070_0012,r__aerosols_0070_0011,arg1).
-arc(r__contaminated_0070_0012,r__urine_0070_0015,r__with_0070_0013_mnr).
-arc(r__urine_0070_0015,r__rodent_0070_0014,attrib1).
-arc(z_0070_1015,r__or_0070_0003,z_0070_1002).
+arc(r_0070_0002__dust,r_0070_0001__aerosolized,attrib1).
+arc(r_0070_0003__or,r_0070_0002__dust,conj1).
+arc(r_0070_0003__or,r_0070_0004__soil_contact_disease,conj2).
+arc(r_0070_0007__acquired,r_0070_0003__or,arg1).
+arc(r_0070_0007__acquired,r_0070_0009__inhalation,r_0070_0008__through_cnt).
+arc(r_0070_0009__inhalation,r_0070_0011__aerosols,r_0070_0010__of).
+arc(r_0070_0012__contaminated,r_0070_0011__aerosols,arg1).
+arc(r_0070_0012__contaminated,r_0070_0015__urine,r_0070_0013__with_mnr).
+arc(r_0070_0015__urine,r_0070_0014__rodent,attrib1).
+arc(z_0070_1015,r_0070_0003__or,z_0070_1002).
 
 </pre>
 <br>
 <pre>
 fof(id_70_A_FACTBOOK_1_2010,axiom,
     ? [EVENTX16,EVENTX11,EVENTX10,ENTITYX3,ENTITYX12,ENTITYX14,ENTITYX5,ENTITYX6,ENTITYX8,ATTRIBX13,ATTRIBX9] :
-      ( isA(EVENTX11,r__acquired_0070_0007)
+      ( isA(EVENTX11,r_0070_0007__acquired)
       &amp; arg1(EVENTX11) = ENTITYX3
-      &amp; r__through_0070_0008_cnt(EVENTX11) = ENTITYX5
-      &amp; isA(ENTITYX3,r__or_0070_0003)
+      &amp; r_0070_0008__through_cnt(EVENTX11) = ENTITYX5
+      &amp; isA(ENTITYX3,r_0070_0003__or)
       &amp; conj1(ENTITYX3) = ENTITYX12
       &amp; conj2(ENTITYX3) = ENTITYX14
-      &amp; isA(ENTITYX5,r__inhalation_0070_0009)
-      &amp; r__of_0070_0010(ENTITYX5) = ENTITYX6
-      &amp; isA(EVENTX10,r__contaminated_0070_0012)
+      &amp; isA(ENTITYX5,r_0070_0009__inhalation)
+      &amp; r_0070_0010__of(ENTITYX5) = ENTITYX6
+      &amp; isA(EVENTX10,r_0070_0012__contaminated)
       &amp; arg1(EVENTX10) = ENTITYX6
-      &amp; r__with_0070_0013_mnr(EVENTX10) = ENTITYX8
-      &amp; isA(ENTITYX6,r__aerosols_0070_0011)
-      &amp; isA(ENTITYX8,r__urine_0070_0015)
+      &amp; r_0070_0013__with_mnr(EVENTX10) = ENTITYX8
+      &amp; isA(ENTITYX6,r_0070_0011__aerosols)
+      &amp; isA(ENTITYX8,r_0070_0015__urine)
       &amp; attrib1(ENTITYX8) = ATTRIBX9
-      &amp; isA(ENTITYX12,r__dust_0070_0002)
+      &amp; isA(ENTITYX12,r_0070_0002__dust)
       &amp; attrib1(ENTITYX12) = ATTRIBX13
-      &amp; isA(ENTITYX14,r__soil_0070_0004_r__contact_0070_0005_r__disease_0070_0006)
-      &amp; isA(ATTRIBX9,r__rodent_0070_0014)
-      &amp; isA(ATTRIBX13,r__aerosolized_0070_0001)
+      &amp; isA(ENTITYX14,r_0070_0004__soil_contact_disease)
+      &amp; isA(ATTRIBX9,r_0070_0014__rodent)
+      &amp; isA(ATTRIBX13,r_0070_0001__aerosolized)
       &amp; isA(EVENTX16,z_0070_1015)
       &amp; z_0070_1002(EVENTX16) = ENTITYX3 ) ).
 

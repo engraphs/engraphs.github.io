@@ -120,8 +120,8 @@ The first stand alone machine , the A500 , which is very confusing because they 
 <!-- 0033_0013_cnt -->
 <g id="node9" class="node">
 <title>0033_0013_cnt</title>
-<ellipse fill="none" stroke="black" cx="717.99" cy="-366" rx="73.39" ry="18"/>
-<text text-anchor="middle" x="717.99" y="-362.3" font-family="fixed" font-size="14.00">because_[cnt]</text>
+<ellipse fill="none" stroke="black" cx="717.99" cy="-366" rx="69.59" ry="18"/>
+<text text-anchor="middle" x="717.99" y="-362.3" font-family="fixed" font-size="14.00">because[cnt]</text>
 </g>
 <!-- 0033_0013_cnt&#45;&gt;0033_0010 -->
 <g id="edge6" class="edge">
@@ -304,25 +304,25 @@ The first stand alone machine , the A500 , which is very confusing because they 
 </svg>
 <br>
 <pre>
-arc(r__stand_alone_0033_0003,r__first_0033_0002,modifier1).
-arc(r__machine_0033_0004,r__stand_alone_0033_0003,attrib2).
-arc(r__is_0033_0010,r__confusing_0033_0012,prd2).
-arc(r__is_0033_0010,z_0033_1014,arg0).
-arc(r__confusing_0033_0012,r__very_0033_0011,quality1).
-arc(r__because_0033_0013_cnt,r__is_0033_0010,scope).
-arc(r__because_0033_0013_cnt,r___apos_re_0033_0015,restriction).
-arc(r___apos_re_0033_0015,r__called_0033_0017,catenative).
-arc(r__called_0033_0017,r__they_0033_0014,arg1).
-arc(r__called_0033_0017,r__both_0033_0016,mnr2).
-arc(r__called_0033_0017,r__A500_0033_0018,prd).
-arc(r__but_0033_0020,r__was_0033_0024,conj2).
-arc(r__but_0033_0020,z_0033_1015,conj1).
-arc(r__one_0033_0023,r__other_0033_0022,attrib2).
-arc(r__was_0033_0024,r__one_0033_0023,arg0).
-arc(r__was_0033_0024,r__A500_0033_0026_r__processor_0033_0028,prd2).
-arc(r__A500_0033_0026_r__processor_0033_0028,r__second_0033_0027,attrib3).
-arc(z_0033_1015,r__machine_0033_0004,arg0).
-arc(z_0033_1015,r__A500_0033_0007,prd2).
+arc(r_0033_0003__stand_alone,r_0033_0002__first,modifier1).
+arc(r_0033_0004__machine,r_0033_0003__stand_alone,attrib2).
+arc(r_0033_0010__is,r_0033_0012__confusing,prd2).
+arc(r_0033_0010__is,z_0033_1014,arg0).
+arc(r_0033_0012__confusing,r_0033_0011__very,quality1).
+arc(r_0033_0013__because_cnt,r_0033_0010__is,scope).
+arc(r_0033_0013__because_cnt,r_0033_0015___apos_re,restriction).
+arc(r_0033_0015___apos_re,r_0033_0017__called,catenative).
+arc(r_0033_0017__called,r_0033_0014__they,arg1).
+arc(r_0033_0017__called,r_0033_0016__both,mnr2).
+arc(r_0033_0017__called,r_0033_0018__A500,prd).
+arc(r_0033_0020__but,r_0033_0024__was,conj2).
+arc(r_0033_0020__but,z_0033_1015,conj1).
+arc(r_0033_0023__one,r_0033_0022__other,attrib2).
+arc(r_0033_0024__was,r_0033_0023__one,arg0).
+arc(r_0033_0024__was,r_0033_0026__A500_processor,prd2).
+arc(r_0033_0026__A500_processor,r_0033_0027__second,attrib3).
+arc(z_0033_1015,r_0033_0004__machine,arg0).
+arc(z_0033_1015,r_0033_0007__A500,prd2).
 arc(z_0033_1015,z_0033_1014,car5).
 
 </pre>
@@ -331,43 +331,43 @@ arc(z_0033_1015,z_0033_1014,car5).
 fof(id_33_A_PaulFellows,axiom,
     ? [CATENATIVEX8,CONJX22,EVENTX21,EVENTX16,CONNX7,EVENTX12,EVENTX11,EVENTX13,ENTITYX17,ENTITYX19,ENTITYX1,ENTITYX4,ENTITYX3,ATTRIBX20,ATTRIBX18,ATTRIBX5,ATTRIBX2,QUALITYX10,QUALITYX6] :
       ( CATENATIVEX8 = EVENTX11
-      &amp; isA(EVENTX11,r__called_0033_0017)
-      &amp; arg1(EVENTX11) = r__they_0033_0014
+      &amp; isA(EVENTX11,r_0033_0017__called)
+      &amp; arg1(EVENTX11) = r_0033_0014__they
       &amp; mnr2(EVENTX11) = QUALITYX10
-      &amp; prd(EVENTX11) = r__A500_0033_0018
-      &amp; isA(ENTITYX1,r__machine_0033_0004)
+      &amp; prd(EVENTX11) = r_0033_0018__A500
+      &amp; isA(ENTITYX1,r_0033_0004__machine)
       &amp; attrib2(ENTITYX1) = ATTRIBX2
-      &amp; isA(ENTITYX3,r__first_0033_0002)
-      &amp; isA(CONNX7,r__because_0033_0013_cnt)
+      &amp; isA(ENTITYX3,r_0033_0002__first)
+      &amp; isA(CONNX7,r_0033_0013__because_cnt)
       &amp; scope(CONNX7) = EVENTX13
-      &amp; isA(EVENTX13,r__is_0033_0010)
+      &amp; isA(EVENTX13,r_0033_0010__is)
       &amp; arg0(EVENTX13) = ENTITYX4
       &amp; prd2(EVENTX13) = ATTRIBX5
       &amp; restriction(CONNX7) = EVENTX12
-      &amp; isA(EVENTX12,r___apos_re_0033_0015)
+      &amp; isA(EVENTX12,r_0033_0015___apos_re)
       &amp; catenative(EVENTX12) = CATENATIVEX8
       &amp; isA(ENTITYX4,z_0033_1014)
-      &amp; isA(ENTITYX17,r__one_0033_0023)
+      &amp; isA(ENTITYX17,r_0033_0023__one)
       &amp; attrib2(ENTITYX17) = ATTRIBX18
-      &amp; isA(ENTITYX19,r__A500_0033_0026_r__processor_0033_0028)
+      &amp; isA(ENTITYX19,r_0033_0026__A500_processor)
       &amp; attrib3(ENTITYX19) = ATTRIBX20
-      &amp; isA(ATTRIBX2,r__stand_alone_0033_0003)
+      &amp; isA(ATTRIBX2,r_0033_0003__stand_alone)
       &amp; modifier1(ATTRIBX2) = ENTITYX3
-      &amp; isA(ATTRIBX5,r__confusing_0033_0012)
+      &amp; isA(ATTRIBX5,r_0033_0012__confusing)
       &amp; quality1(ATTRIBX5) = QUALITYX6
-      &amp; isA(ATTRIBX18,r__other_0033_0022)
-      &amp; isA(ATTRIBX20,r__second_0033_0027)
-      &amp; isA(r__A500_0033_0007,r__A500_0033_0007)
-      &amp; isA(QUALITYX6,r__very_0033_0011)
-      &amp; isA(QUALITYX10,r__both_0033_0016)
-      &amp; isA(CONJX22,r__but_0033_0020)
+      &amp; isA(ATTRIBX18,r_0033_0022__other)
+      &amp; isA(ATTRIBX20,r_0033_0027__second)
+      &amp; isA(r_0033_0007__A500,r_0033_0007__A500)
+      &amp; isA(QUALITYX6,r_0033_0011__very)
+      &amp; isA(QUALITYX10,r_0033_0016__both)
+      &amp; isA(CONJX22,r_0033_0020__but)
       &amp; conj1(CONJX22) = EVENTX16
       &amp; isA(EVENTX16,z_0033_1015)
       &amp; arg0(EVENTX16) = ENTITYX1
-      &amp; prd2(EVENTX16) = r__A500_0033_0007
+      &amp; prd2(EVENTX16) = r_0033_0007__A500
       &amp; car5(EVENTX16) = ENTITYX4
       &amp; conj2(CONJX22) = EVENTX21
-      &amp; isA(EVENTX21,r__was_0033_0024)
+      &amp; isA(EVENTX21,r_0033_0024__was)
       &amp; arg0(EVENTX21) = ENTITYX17
       &amp; prd2(EVENTX21) = ENTITYX19 ) ).
 

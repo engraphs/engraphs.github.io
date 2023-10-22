@@ -129,13 +129,13 @@ You are helping to organise an international student conference in your college 
 </svg>
 <br>
 <pre>
-arc(r__are_0003_0002,r__helping_0003_0003,catenative).
-arc(r__helping_0003_0003,r__organise_0003_0005,catenative).
-arc(r__organise_0003_0005,r__You_0003_0001,arg0).
-arc(r__organise_0003_0005,r__student_0003_0008_r__conference_0003_0009,arg1).
-arc(r__student_0003_0008_r__conference_0003_0009,r__international_0003_0007,attrib2).
-arc(r__student_0003_0008_r__conference_0003_0009,r__college_0003_0012,r__in_0003_0010).
-arc(r__college_0003_0012,r__You_0003_0001,genv).
+arc(r_0003_0002__are,r_0003_0003__helping,catenative).
+arc(r_0003_0003__helping,r_0003_0005__organise,catenative).
+arc(r_0003_0005__organise,r_0003_0001__You,arg0).
+arc(r_0003_0005__organise,r_0003_0008__student_conference,arg1).
+arc(r_0003_0008__student_conference,r_0003_0007__international,attrib2).
+arc(r_0003_0008__student_conference,r_0003_0012__college,r_0003_0010__in).
+arc(r_0003_0012__college,r_0003_0001__You,genv).
 
 </pre>
 <br>
@@ -143,20 +143,20 @@ arc(r__college_0003_0012,r__You_0003_0001,genv).
 fof(id_3_A_fce_0100_2001_06,axiom,
     ? [CATENATIVEX1,STATEX2,HEARERX6,EVENTX9,EVENTX8,EVENTX7,ENTITYX3,ENTITYX5,ATTRIBX4] :
       ( CATENATIVEX1 = EVENTX8
-      &amp; isA(EVENTX8,r__helping_0003_0003)
+      &amp; isA(EVENTX8,r_0003_0003__helping)
       &amp; catenative(EVENTX8) = STATEX2
       &amp; STATEX2 = EVENTX7
-      &amp; isA(EVENTX7,r__organise_0003_0005)
-      &amp; arg0(EVENTX7) = r__You_0003_0001
+      &amp; isA(EVENTX7,r_0003_0005__organise)
+      &amp; arg0(EVENTX7) = r_0003_0001__You
       &amp; arg1(EVENTX7) = ENTITYX3
-      &amp; isA(ENTITYX3,r__student_0003_0008_r__conference_0003_0009)
+      &amp; isA(ENTITYX3,r_0003_0008__student_conference)
       &amp; attrib2(ENTITYX3) = ATTRIBX4
-      &amp; r__in_0003_0010(ENTITYX3) = ENTITYX5
-      &amp; isA(ENTITYX5,r__college_0003_0012)
+      &amp; r_0003_0010__in(ENTITYX3) = ENTITYX5
+      &amp; isA(ENTITYX5,r_0003_0012__college)
       &amp; genv(ENTITYX5) = HEARERX6
-      &amp; HEARERX6 = r__You_0003_0001
-      &amp; isA(ATTRIBX4,r__international_0003_0007)
-      &amp; isA(EVENTX9,r__are_0003_0002)
+      &amp; HEARERX6 = r_0003_0001__You
+      &amp; isA(ATTRIBX4,r_0003_0007__international)
+      &amp; isA(EVENTX9,r_0003_0002__are)
       &amp; catenative(EVENTX9) = CATENATIVEX1 ) ).
 
 

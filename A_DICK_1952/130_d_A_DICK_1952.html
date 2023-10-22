@@ -96,24 +96,24 @@ The shock did something to his heart .
 </svg>
 <br>
 <pre>
-arc(r__did_0172_0003,r__shock_0172_0002,arg0).
-arc(r__did_0172_0003,r__something_0172_0004,arg1).
-arc(r__something_0172_0004,r__heart_0172_0007,r__to_0172_0005).
-arc(r__heart_0172_0007,r__his_0172_0006,genv).
+arc(r_0172_0003__did,r_0172_0002__shock,arg0).
+arc(r_0172_0003__did,r_0172_0004__something,arg1).
+arc(r_0172_0004__something,r_0172_0007__heart,r_0172_0005__to).
+arc(r_0172_0007__heart,r_0172_0006__his,genv).
 
 </pre>
 <br>
 <pre>
 fof(id_172_A_DICK_1952,axiom,
     ? [EVENTX3,ENTITYX1,ENTITYX2] :
-      ( isA(ENTITYX1,r__shock_0172_0002)
-      &amp; isA(ENTITYX2,r__heart_0172_0007)
-      &amp; genv(ENTITYX2) = r__his_0172_0006
-      &amp; isA(r__something_0172_0004,r__something_0172_0004)
-      &amp; r__to_0172_0005(r__something_0172_0004) = ENTITYX2
-      &amp; isA(EVENTX3,r__did_0172_0003)
+      ( isA(ENTITYX1,r_0172_0002__shock)
+      &amp; isA(ENTITYX2,r_0172_0007__heart)
+      &amp; genv(ENTITYX2) = r_0172_0006__his
+      &amp; isA(r_0172_0004__something,r_0172_0004__something)
+      &amp; r_0172_0005__to(r_0172_0004__something) = ENTITYX2
+      &amp; isA(EVENTX3,r_0172_0003__did)
       &amp; arg0(EVENTX3) = ENTITYX1
-      &amp; arg1(EVENTX3) = r__something_0172_0004 ) ).
+      &amp; arg1(EVENTX3) = r_0172_0004__something ) ).
 
 
 </pre>

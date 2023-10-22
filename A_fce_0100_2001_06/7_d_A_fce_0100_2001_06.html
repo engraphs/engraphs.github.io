@@ -168,7 +168,7 @@ Could you give me some suggestions for what we could do in your area for about t
 <title>0014_0011&#45;&gt;0014_0014</title>
 <path fill="none" stroke="black" d="M176.79,-175.02C180.2,-169.06 184.08,-162.24 187.54,-156 192.02,-147.94 196.83,-139.11 201.13,-131.13"/>
 <polygon fill="black" stroke="black" points="204.24,-132.73 205.89,-122.27 198.07,-129.42 204.24,-132.73"/>
-<text text-anchor="middle" x="219.54" y="-144.8" font-family="fixed" font-size="14.00">in_[loc]</text>
+<text text-anchor="middle" x="216.04" y="-144.8" font-family="fixed" font-size="14.00">in[loc]</text>
 </g>
 <!-- 0014_0017_0014_0018 -->
 <g id="node12" class="node">
@@ -179,9 +179,9 @@ Could you give me some suggestions for what we could do in your area for about t
 <!-- 0014_0011&#45;&gt;0014_0017_0014_0018 -->
 <g id="edge10" class="edge">
 <title>0014_0011&#45;&gt;0014_0017_0014_0018</title>
-<path fill="none" stroke="black" d="M190.33,-182.27C206.81,-175.68 229.45,-166.09 248.54,-156 264.71,-147.46 281.94,-136.76 296.17,-127.45"/>
-<polygon fill="black" stroke="black" points="298.2,-130.3 304.61,-121.86 294.34,-124.46 298.2,-130.3"/>
-<text text-anchor="middle" x="305.04" y="-144.8" font-family="fixed" font-size="14.00">for_[tmp]</text>
+<path fill="none" stroke="black" d="M189.48,-181.22C204.33,-174.45 224.31,-165.06 241.54,-156 258.79,-146.93 277.55,-136.14 293.13,-126.91"/>
+<polygon fill="black" stroke="black" points="295.1,-129.8 301.9,-121.68 291.52,-123.79 295.1,-129.8"/>
+<text text-anchor="middle" x="296.54" y="-144.8" font-family="fixed" font-size="14.00">for[tmp]</text>
 </g>
 <!-- 0014_0014&#45;&gt;0014_0002 -->
 <g id="edge11" class="edge">
@@ -220,20 +220,20 @@ Could you give me some suggestions for what we could do in your area for about t
 </svg>
 <br>
 <pre>
-arc(question_0014_1002,r__Could_0014_0001,scope).
-arc(question_0014_1006,r__could_0014_0010,scope).
-arc(r__Could_0014_0001,r__give_0014_0003,scope).
-arc(r__give_0014_0003,r__you_0014_0002,arg0).
-arc(r__give_0014_0003,r__me_0014_0004,arg2).
-arc(r__give_0014_0003,r__suggestions_0014_0006,arg1).
-arc(r__suggestions_0014_0006,question_0014_1006,r__for_0014_0007).
-arc(r__could_0014_0010,r__do_0014_0011,scope).
-arc(r__do_0014_0011,r__what_0014_0008,arg1).
-arc(r__do_0014_0011,r__we_0014_0009,arg0).
-arc(r__do_0014_0011,r__area_0014_0014,r__in_0014_0012_loc).
-arc(r__do_0014_0011,r__three_0014_0017_r__hours_0014_0018,r__for_0014_0015_tmp).
-arc(r__area_0014_0014,r__you_0014_0002,genv).
-arc(r__three_0014_0017_r__hours_0014_0018,r__about_0014_0016,quality1).
+arc(question_0014_1002,r_0014_0001__Could,scope).
+arc(question_0014_1006,r_0014_0010__could,scope).
+arc(r_0014_0001__Could,r_0014_0003__give,scope).
+arc(r_0014_0003__give,r_0014_0002__you,arg0).
+arc(r_0014_0003__give,r_0014_0004__me,arg2).
+arc(r_0014_0003__give,r_0014_0006__suggestions,arg1).
+arc(r_0014_0006__suggestions,question_0014_1006,r_0014_0007__for).
+arc(r_0014_0010__could,r_0014_0011__do,scope).
+arc(r_0014_0011__do,r_0014_0008__what,arg1).
+arc(r_0014_0011__do,r_0014_0009__we,arg0).
+arc(r_0014_0011__do,r_0014_0014__area,r_0014_0012__in_loc).
+arc(r_0014_0011__do,r_0014_0017__three_hours,r_0014_0015__for_tmp).
+arc(r_0014_0014__area,r_0014_0002__you,genv).
+arc(r_0014_0017__three_hours,r_0014_0016__about,quality1).
 
 </pre>
 <br>
@@ -243,29 +243,29 @@ fof(id_14_A_fce_0100_2001_06,axiom,
       ( EVENTX4 = OPERATORX6
       &amp; isA(OPERATORX6,question_0014_1006)
       &amp; scope(OPERATORX6) = OPERATORX12
-      &amp; isA(OPERATORX12,r__could_0014_0010)
+      &amp; isA(OPERATORX12,r_0014_0010__could)
       &amp; scope(OPERATORX12) = EVENTX13
-      &amp; isA(EVENTX13,r__do_0014_0011)
+      &amp; isA(EVENTX13,r_0014_0011__do)
       &amp; arg1(EVENTX13) = ENTITYX7
-      &amp; arg0(EVENTX13) = r__we_0014_0009
-      &amp; r__in_0014_0012_loc(EVENTX13) = ENTITYX8
-      &amp; r__for_0014_0015_tmp(EVENTX13) = ENTITYX10
-      &amp; isA(ENTITYX3,r__suggestions_0014_0006)
-      &amp; r__for_0014_0007(ENTITYX3) = EVENTX4
-      &amp; isA(ENTITYX7,r__what_0014_0008)
-      &amp; isA(ENTITYX8,r__area_0014_0014)
+      &amp; arg0(EVENTX13) = r_0014_0009__we
+      &amp; r_0014_0012__in_loc(EVENTX13) = ENTITYX8
+      &amp; r_0014_0015__for_tmp(EVENTX13) = ENTITYX10
+      &amp; isA(ENTITYX3,r_0014_0006__suggestions)
+      &amp; r_0014_0007__for(ENTITYX3) = EVENTX4
+      &amp; isA(ENTITYX7,r_0014_0008__what)
+      &amp; isA(ENTITYX8,r_0014_0014__area)
       &amp; genv(ENTITYX8) = HEARERX9
-      &amp; HEARERX9 = r__you_0014_0002
-      &amp; isA(ENTITYX10,r__three_0014_0017_r__hours_0014_0018)
+      &amp; HEARERX9 = r_0014_0002__you
+      &amp; isA(ENTITYX10,r_0014_0017__three_hours)
       &amp; quality1(ENTITYX10) = QUALITYX11
-      &amp; isA(QUALITYX11,r__about_0014_0016)
+      &amp; isA(QUALITYX11,r_0014_0016__about)
       &amp; isA(OPERATORX2,question_0014_1002)
       &amp; scope(OPERATORX2) = OPERATORX14
-      &amp; isA(OPERATORX14,r__Could_0014_0001)
+      &amp; isA(OPERATORX14,r_0014_0001__Could)
       &amp; scope(OPERATORX14) = EVENTX15
-      &amp; isA(EVENTX15,r__give_0014_0003)
-      &amp; arg0(EVENTX15) = r__you_0014_0002
-      &amp; arg2(EVENTX15) = r__me_0014_0004
+      &amp; isA(EVENTX15,r_0014_0003__give)
+      &amp; arg0(EVENTX15) = r_0014_0002__you
+      &amp; arg2(EVENTX15) = r_0014_0004__me
       &amp; arg1(EVENTX15) = ENTITYX3 ) ).
 
 

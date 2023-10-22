@@ -149,38 +149,38 @@ The gun paused , then resumed its calm swivel , its slow circling .
 </svg>
 <br>
 <pre>
-arc(r__paused_0334_0003,r__gun_0334_0002,arg0).
-arc(r__resumed_0334_0006,r__gun_0334_0002,arg0).
-arc(r__resumed_0334_0006,r__then_0334_0005,tmp1).
-arc(r__resumed_0334_0006,r__swivel_0334_0009,arg1).
-arc(r__swivel_0334_0009,r__gun_0334_0002,genv).
-arc(r__swivel_0334_0009,r__calm_0334_0008,attrib2).
-arc(r__swivel_0334_0009,r__circling_0334_0013,prn5).
-arc(r__circling_0334_0013,r__gun_0334_0002,genv).
-arc(r__circling_0334_0013,r__slow_0334_0012,attrib2).
+arc(r_0334_0003__paused,r_0334_0002__gun,arg0).
+arc(r_0334_0006__resumed,r_0334_0002__gun,arg0).
+arc(r_0334_0006__resumed,r_0334_0005__then,tmp1).
+arc(r_0334_0006__resumed,r_0334_0009__swivel,arg1).
+arc(r_0334_0009__swivel,r_0334_0002__gun,genv).
+arc(r_0334_0009__swivel,r_0334_0008__calm,attrib2).
+arc(r_0334_0009__swivel,r_0334_0013__circling,prn5).
+arc(r_0334_0013__circling,r_0334_0002__gun,genv).
+arc(r_0334_0013__circling,r_0334_0012__slow,attrib2).
 
 </pre>
 <br>
 <pre>
 fof(id_334_A_DICK_1952,axiom,
     ? [GUNX5,GUNX8,EVENTX10,EVENTX2,GUNX1,ENTITYX4,ENTITYX7,QUALITYX3,ATTRIBX6,ATTRIBX9] :
-      ( isA(GUNX1,r__gun_0334_0002)
-      &amp; isA(ENTITYX4,r__swivel_0334_0009)
+      ( isA(GUNX1,r_0334_0002__gun)
+      &amp; isA(ENTITYX4,r_0334_0009__swivel)
       &amp; genv(ENTITYX4) = GUNX5
       &amp; attrib2(ENTITYX4) = ATTRIBX6
       &amp; prn5(ENTITYX4) = ENTITYX7
       &amp; GUNX5 = GUNX1
-      &amp; isA(ENTITYX7,r__circling_0334_0013)
+      &amp; isA(ENTITYX7,r_0334_0013__circling)
       &amp; genv(ENTITYX7) = GUNX8
       &amp; attrib2(ENTITYX7) = ATTRIBX9
       &amp; ( GUNX8 = GUNX5
         | GUNX8 = GUNX1 )
-      &amp; isA(QUALITYX3,r__then_0334_0005)
-      &amp; isA(ATTRIBX6,r__calm_0334_0008)
-      &amp; isA(ATTRIBX9,r__slow_0334_0012)
-      &amp; isA(EVENTX2,r__paused_0334_0003)
+      &amp; isA(QUALITYX3,r_0334_0005__then)
+      &amp; isA(ATTRIBX6,r_0334_0008__calm)
+      &amp; isA(ATTRIBX9,r_0334_0012__slow)
+      &amp; isA(EVENTX2,r_0334_0003__paused)
       &amp; arg0(EVENTX2) = GUNX1
-      &amp; isA(EVENTX10,r__resumed_0334_0006)
+      &amp; isA(EVENTX10,r_0334_0006__resumed)
       &amp; arg0(EVENTX10) = GUNX1
       &amp; tmp1(EVENTX10) = QUALITYX3
       &amp; arg1(EVENTX10) = ENTITYX4 ) ).

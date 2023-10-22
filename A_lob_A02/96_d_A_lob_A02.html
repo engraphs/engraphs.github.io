@@ -116,7 +116,7 @@ Instead , the kings will remain in London and wait to hear the conference 's pro
 <title>0102_0006&#45;&gt;0102_0008</title>
 <path fill="none" stroke="black" d="M101.4,-260.8C101.54,-249.16 101.72,-233.55 101.88,-220.24"/>
 <polygon fill="black" stroke="black" points="105.38,-220.22 102,-210.18 98.38,-220.13 105.38,-220.22"/>
-<text text-anchor="middle" x="127.2" y="-231.8" font-family="fixed" font-size="14.00">in_[loc]</text>
+<text text-anchor="middle" x="123.7" y="-231.8" font-family="fixed" font-size="14.00">in[loc]</text>
 </g>
 <!-- 0102_0010 -->
 <g id="node8" class="node">
@@ -188,44 +188,44 @@ Instead , the kings will remain in London and wait to hear the conference 's pro
 </svg>
 <br>
 <pre>
-arc(cnt_0102_1005,r__wait_0102_0010,scope).
-arc(cnt_0102_1005,r__hear_0102_0012,restriction).
-arc(r__Instead_0102_0001,r__will_0102_0005,scope).
-arc(r__will_0102_0005,r__and_0102_0009,scope).
-arc(r__remain_0102_0006,r__kings_0102_0004,arg0).
-arc(r__remain_0102_0006,r__London_0102_0008,r__in_0102_0007_loc).
-arc(r__and_0102_0009,cnt_0102_1005,conj2).
-arc(r__and_0102_0009,r__remain_0102_0006,conj1).
-arc(r__wait_0102_0010,r__kings_0102_0004,arg0).
-arc(r__hear_0102_0012,r__kings_0102_0004,arg0).
-arc(r__hear_0102_0012,r__proposals_0102_0016,arg1).
-arc(r__proposals_0102_0016,r__conference_0102_0014,genv).
+arc(cnt_0102_1005,r_0102_0010__wait,scope).
+arc(cnt_0102_1005,r_0102_0012__hear,restriction).
+arc(r_0102_0001__Instead,r_0102_0005__will,scope).
+arc(r_0102_0005__will,r_0102_0009__and,scope).
+arc(r_0102_0006__remain,r_0102_0004__kings,arg0).
+arc(r_0102_0006__remain,r_0102_0008__London,r_0102_0007__in_loc).
+arc(r_0102_0009__and,cnt_0102_1005,conj2).
+arc(r_0102_0009__and,r_0102_0006__remain,conj1).
+arc(r_0102_0010__wait,r_0102_0004__kings,arg0).
+arc(r_0102_0012__hear,r_0102_0004__kings,arg0).
+arc(r_0102_0012__hear,r_0102_0016__proposals,arg1).
+arc(r_0102_0016__proposals,r_0102_0014__conference,genv).
 
 </pre>
 <br>
 <pre>
 fof(id_102_A_lob_A02,axiom,
     ? [OPERATORX1,OPERATORX3,CONJX11,CONNX6,EVENTX9,EVENTX10,EVENTX4,ENTITYX2,ENTITYX7,ENTITYX8] :
-      ( isA(ENTITYX2,r__kings_0102_0004)
-      &amp; isA(ENTITYX7,r__proposals_0102_0016)
+      ( isA(ENTITYX2,r_0102_0004__kings)
+      &amp; isA(ENTITYX7,r_0102_0016__proposals)
       &amp; genv(ENTITYX7) = ENTITYX8
-      &amp; isA(ENTITYX8,r__conference_0102_0014)
-      &amp; isA(OPERATORX1,r__Instead_0102_0001)
+      &amp; isA(ENTITYX8,r_0102_0014__conference)
+      &amp; isA(OPERATORX1,r_0102_0001__Instead)
       &amp; scope(OPERATORX1) = OPERATORX3
-      &amp; isA(OPERATORX3,r__will_0102_0005)
+      &amp; isA(OPERATORX3,r_0102_0005__will)
       &amp; scope(OPERATORX3) = CONJX11
-      &amp; isA(CONJX11,r__and_0102_0009)
+      &amp; isA(CONJX11,r_0102_0009__and)
       &amp; conj1(CONJX11) = EVENTX4
-      &amp; isA(EVENTX4,r__remain_0102_0006)
+      &amp; isA(EVENTX4,r_0102_0006__remain)
       &amp; arg0(EVENTX4) = ENTITYX2
-      &amp; r__in_0102_0007_loc(EVENTX4) = r__London_0102_0008
+      &amp; r_0102_0007__in_loc(EVENTX4) = r_0102_0008__London
       &amp; conj2(CONJX11) = CONNX6
       &amp; isA(CONNX6,cnt_0102_1005)
       &amp; scope(CONNX6) = EVENTX10
-      &amp; isA(EVENTX10,r__wait_0102_0010)
+      &amp; isA(EVENTX10,r_0102_0010__wait)
       &amp; arg0(EVENTX10) = ENTITYX2
       &amp; restriction(CONNX6) = EVENTX9
-      &amp; isA(EVENTX9,r__hear_0102_0012)
+      &amp; isA(EVENTX9,r_0102_0012__hear)
       &amp; arg0(EVENTX9) = ENTITYX2
       &amp; arg1(EVENTX9) = ENTITYX7 ) ).
 

@@ -63,9 +63,9 @@ A business operator who falls under any of the following items shall be sentence
 <!-- 0317_0005&#45;&gt;z_0317_1006 -->
 <g id="edge2" class="edge">
 <title>0317_0005&#45;&gt;z_0317_1006</title>
-<path fill="none" stroke="black" d="M170.04,-353.7C157.93,-347.16 142.71,-338.55 129.69,-330 116.84,-321.55 103.19,-311.43 91.67,-302.51"/>
-<polygon fill="black" stroke="black" points="93.73,-299.68 83.69,-296.27 89.41,-305.19 93.73,-299.68"/>
-<text text-anchor="middle" x="169.19" y="-318.8" font-family="fixed" font-size="14.00">under_[loc]</text>
+<path fill="none" stroke="black" d="M171.99,-352.69C161.46,-346.05 148.31,-337.67 136.69,-330 122.95,-320.92 107.91,-310.67 95.07,-301.83"/>
+<polygon fill="black" stroke="black" points="96.79,-298.77 86.57,-295.96 92.81,-304.53 96.79,-298.77"/>
+<text text-anchor="middle" x="172.69" y="-318.8" font-family="fixed" font-size="14.00">under[loc]</text>
 </g>
 <!-- 0317_0011 -->
 <g id="node5" class="node">
@@ -143,7 +143,7 @@ A business operator who falls under any of the following items shall be sentence
 <title>0317_0014&#45;&gt;0317_0018</title>
 <path fill="none" stroke="black" d="M338.57,-348.21C345.86,-335.82 355.88,-318.78 364.09,-304.82"/>
 <polygon fill="black" stroke="black" points="367.12,-306.58 369.18,-296.18 361.09,-303.03 367.12,-306.58"/>
-<text text-anchor="middle" x="380.19" y="-318.8" font-family="fixed" font-size="14.00">to_[clr]</text>
+<text text-anchor="middle" x="376.69" y="-318.8" font-family="fixed" font-size="14.00">to[clr]</text>
 </g>
 <!-- 0317_0017 -->
 <g id="node10" class="node">
@@ -221,20 +221,20 @@ A business operator who falls under any of the following items shall be sentence
 </svg>
 <br>
 <pre>
-arc(quantificational_r__any_0317_0007,r__falls_0317_0005,scope).
-arc(quantificational_r__any_0317_0007,z_0317_1006,restriction).
-arc(r__falls_0317_0005,r__business_0317_0002_r__operator_0317_0003,arg0).
-arc(r__falls_0317_0005,z_0317_1006,r__under_0317_0006_loc).
-arc(r__items_0317_0011,r__following_0317_0010,attrib2).
-arc(r__shall_0317_0012,r__be_0317_0013,scope).
-arc(r__be_0317_0013,r__sentenced_0317_0014,catenative).
-arc(r__sentenced_0317_0014,r__business_0317_0002_r__operator_0317_0003,arg1).
-arc(r__sentenced_0317_0014,r__fine_0317_0018,r__to_0317_0015_clr).
-arc(r__fine_0317_0018,r__civil_0317_0017,attrib2).
-arc(r__fine_0317_0018,r__yen_0317_0024,r__of_0317_0019).
-arc(r__not_0317_0020_r__more_0317_0021,r__100,000_0317_0023,r__than_0317_0022).
-arc(r__yen_0317_0024,r__not_0317_0020_r__more_0317_0021,attrib1).
-arc(z_0317_1006,r__items_0317_0011,r__of_0317_0008).
+arc(r_0317_0005__falls,r_0317_0002__business_operator,arg0).
+arc(r_0317_0005__falls,z_0317_1006,r_0317_0006__under_loc).
+arc(r_0317_0007__quantificational__any,r_0317_0005__falls,scope).
+arc(r_0317_0007__quantificational__any,z_0317_1006,restriction).
+arc(r_0317_0011__items,r_0317_0010__following,attrib2).
+arc(r_0317_0012__shall,r_0317_0013__be,scope).
+arc(r_0317_0013__be,r_0317_0014__sentenced,catenative).
+arc(r_0317_0014__sentenced,r_0317_0002__business_operator,arg1).
+arc(r_0317_0014__sentenced,r_0317_0018__fine,r_0317_0015__to_clr).
+arc(r_0317_0018__fine,r_0317_0017__civil,attrib2).
+arc(r_0317_0018__fine,r_0317_0024__yen,r_0317_0019__of).
+arc(r_0317_0020__not_more,r_0317_0023__100,000,r_0317_0022__than).
+arc(r_0317_0024__yen,r_0317_0020__not_more,attrib1).
+arc(z_0317_1006,r_0317_0011__items,r_0317_0008__of).
 
 </pre>
 <br>
@@ -242,33 +242,33 @@ arc(z_0317_1006,r__items_0317_0011,r__of_0317_0008).
 fof(id_317_A_law_h15A119,axiom,
     ? [CATENATIVEX9,OPERATORX8,EVENTX17,EVENTX16,QUANTX3,EVENTX7,ENTITYX1,ENTITYX11,ENTITYX13,ENTITYX15,ENTITYX2,ENTITYX4,ATTRIBX12,ATTRIBX14,ATTRIBX5] :
       ( CATENATIVEX9 = EVENTX16
-      &amp; isA(EVENTX16,r__sentenced_0317_0014)
+      &amp; isA(EVENTX16,r_0317_0014__sentenced)
       &amp; arg1(EVENTX16) = ENTITYX1
-      &amp; r__to_0317_0015_clr(EVENTX16) = ENTITYX11
-      &amp; isA(QUANTX3,quantificational_r__any_0317_0007)
+      &amp; r_0317_0015__to_clr(EVENTX16) = ENTITYX11
+      &amp; isA(QUANTX3,r_0317_0007__quantificational__any)
       &amp; restriction(QUANTX3) = ENTITYX2
       &amp; isA(ENTITYX2,z_0317_1006)
-      &amp; r__of_0317_0008(ENTITYX2) = ENTITYX4
+      &amp; r_0317_0008__of(ENTITYX2) = ENTITYX4
       &amp; scope(QUANTX3) = EVENTX7
-      &amp; isA(EVENTX7,r__falls_0317_0005)
+      &amp; isA(EVENTX7,r_0317_0005__falls)
       &amp; arg0(EVENTX7) = ENTITYX1
-      &amp; r__under_0317_0006_loc(EVENTX7) = ENTITYX2
-      &amp; isA(ENTITYX1,r__business_0317_0002_r__operator_0317_0003)
-      &amp; isA(ENTITYX4,r__items_0317_0011)
+      &amp; r_0317_0006__under_loc(EVENTX7) = ENTITYX2
+      &amp; isA(ENTITYX1,r_0317_0002__business_operator)
+      &amp; isA(ENTITYX4,r_0317_0011__items)
       &amp; attrib2(ENTITYX4) = ATTRIBX5
-      &amp; isA(ENTITYX11,r__fine_0317_0018)
+      &amp; isA(ENTITYX11,r_0317_0018__fine)
       &amp; attrib2(ENTITYX11) = ATTRIBX12
-      &amp; r__of_0317_0019(ENTITYX11) = ENTITYX13
-      &amp; isA(ENTITYX13,r__yen_0317_0024)
+      &amp; r_0317_0019__of(ENTITYX11) = ENTITYX13
+      &amp; isA(ENTITYX13,r_0317_0024__yen)
       &amp; attrib1(ENTITYX13) = ATTRIBX14
-      &amp; isA(ENTITYX15,r__100,000_0317_0023)
-      &amp; isA(ATTRIBX5,r__following_0317_0010)
-      &amp; isA(ATTRIBX12,r__civil_0317_0017)
-      &amp; isA(ATTRIBX14,r__not_0317_0020_r__more_0317_0021)
-      &amp; r__than_0317_0022(ATTRIBX14) = ENTITYX15
-      &amp; isA(OPERATORX8,r__shall_0317_0012)
+      &amp; isA(ENTITYX15,r_0317_0023__100,000)
+      &amp; isA(ATTRIBX5,r_0317_0010__following)
+      &amp; isA(ATTRIBX12,r_0317_0017__civil)
+      &amp; isA(ATTRIBX14,r_0317_0020__not_more)
+      &amp; r_0317_0022__than(ATTRIBX14) = ENTITYX15
+      &amp; isA(OPERATORX8,r_0317_0012__shall)
       &amp; scope(OPERATORX8) = EVENTX17
-      &amp; isA(EVENTX17,r__be_0317_0013)
+      &amp; isA(EVENTX17,r_0317_0013__be)
       &amp; catenative(EVENTX17) = CATENATIVEX9 ) ).
 
 

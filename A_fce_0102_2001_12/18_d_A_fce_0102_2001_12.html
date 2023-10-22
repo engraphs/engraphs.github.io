@@ -103,7 +103,7 @@ The competition rules say that the story must begin with the following words : I
 <title>0019_0009&#45;&gt;0019_0013</title>
 <path fill="none" stroke="black" d="M244.79,-348.61C252.92,-336.26 264.22,-319.12 273.49,-305.05"/>
 <polygon fill="black" stroke="black" points="276.65,-306.61 279.23,-296.34 270.8,-302.76 276.65,-306.61"/>
-<text text-anchor="middle" x="297.99" y="-318.8" font-family="fixed" font-size="14.00">with_[clr]</text>
+<text text-anchor="middle" x="294.99" y="-318.8" font-family="fixed" font-size="14.00">with[clr]</text>
 </g>
 <!-- 0019_0012 -->
 <g id="node7" class="node">
@@ -213,19 +213,19 @@ The competition rules say that the story must begin with the following words : I
 </svg>
 <br>
 <pre>
-arc(r__say_0019_0004,r__competition_0019_0002_r__rules_0019_0003,arg0).
-arc(r__say_0019_0004,r__must_0019_0008,arg1).
-arc(r__must_0019_0008,r__begin_0019_0009,scope).
-arc(r__begin_0019_0009,r__story_0019_0007,arg0).
-arc(r__begin_0019_0009,r__words_0019_0013,r__with_0019_0010_clr).
-arc(r__words_0019_0013,r__following_0019_0012,attrib2).
-arc(r__words_0019_0013,r__was_0019_0016,prn5).
-arc(r__was_0019_0016,r__It_0019_0015,arg0).
-arc(r__was_0019_0016,r__three_0019_0017,prd2).
-arc(r__three_0019_0017,r__o_apos_clock_0019_0018,quality2).
-arc(r__three_0019_0017,r__morning_0019_0021,r__in_0019_0019).
-arc(r__rang_0019_0025,r__three_0019_0017,tmp1).
-arc(r__rang_0019_0025,r__phone_0019_0024,arg0).
+arc(r_0019_0004__say,r_0019_0002__competition_rules,arg0).
+arc(r_0019_0004__say,r_0019_0008__must,arg1).
+arc(r_0019_0008__must,r_0019_0009__begin,scope).
+arc(r_0019_0009__begin,r_0019_0007__story,arg0).
+arc(r_0019_0009__begin,r_0019_0013__words,r_0019_0010__with_clr).
+arc(r_0019_0013__words,r_0019_0012__following,attrib2).
+arc(r_0019_0013__words,r_0019_0016__was,prn5).
+arc(r_0019_0016__was,r_0019_0015__It,arg0).
+arc(r_0019_0016__was,r_0019_0017__three,prd2).
+arc(r_0019_0017__three,r_0019_0018__o_apos_clock,quality2).
+arc(r_0019_0017__three,r_0019_0021__morning,r_0019_0019__in).
+arc(r_0019_0025__rang,r_0019_0017__three,tmp1).
+arc(r_0019_0025__rang,r_0019_0024__phone,arg0).
 
 </pre>
 <br>
@@ -233,31 +233,31 @@ arc(r__rang_0019_0025,r__phone_0019_0024,arg0).
 fof(id_19_A_fce_0102_2001_12,axiom,
     ? [STATEX2,EVENTX6,EVENTX15,OPERATORX13,EVENTX14,EVENTX12,EVENTX11,ENTITYX1,ENTITYX3,ENTITYX4,ENTITYX7,ENTITYX9,ENTITYX10,ATTRIBX5,QUALITYX8] :
       ( STATEX2 = OPERATORX13
-      &amp; isA(OPERATORX13,r__must_0019_0008)
+      &amp; isA(OPERATORX13,r_0019_0008__must)
       &amp; scope(OPERATORX13) = EVENTX14
-      &amp; isA(EVENTX14,r__begin_0019_0009)
+      &amp; isA(EVENTX14,r_0019_0009__begin)
       &amp; arg0(EVENTX14) = ENTITYX3
-      &amp; r__with_0019_0010_clr(EVENTX14) = ENTITYX4
+      &amp; r_0019_0010__with_clr(EVENTX14) = ENTITYX4
       &amp; EVENTX6 = EVENTX12
-      &amp; isA(EVENTX12,r__was_0019_0016)
-      &amp; arg0(EVENTX12) = r__It_0019_0015
+      &amp; isA(EVENTX12,r_0019_0016__was)
+      &amp; arg0(EVENTX12) = r_0019_0015__It
       &amp; prd2(EVENTX12) = ENTITYX7
-      &amp; isA(ENTITYX1,r__competition_0019_0002_r__rules_0019_0003)
-      &amp; isA(ENTITYX3,r__story_0019_0007)
-      &amp; isA(ENTITYX4,r__words_0019_0013)
+      &amp; isA(ENTITYX1,r_0019_0002__competition_rules)
+      &amp; isA(ENTITYX3,r_0019_0007__story)
+      &amp; isA(ENTITYX4,r_0019_0013__words)
       &amp; attrib2(ENTITYX4) = ATTRIBX5
       &amp; prn5(ENTITYX4) = EVENTX6
-      &amp; isA(EVENTX11,r__rang_0019_0025)
+      &amp; isA(EVENTX11,r_0019_0025__rang)
       &amp; tmp1(EVENTX11) = ENTITYX7
       &amp; arg0(EVENTX11) = ENTITYX10
-      &amp; isA(ENTITYX7,r__three_0019_0017)
+      &amp; isA(ENTITYX7,r_0019_0017__three)
       &amp; quality2(ENTITYX7) = QUALITYX8
-      &amp; r__in_0019_0019(ENTITYX7) = ENTITYX9
-      &amp; isA(ENTITYX9,r__morning_0019_0021)
-      &amp; isA(ENTITYX10,r__phone_0019_0024)
-      &amp; isA(ATTRIBX5,r__following_0019_0012)
-      &amp; isA(QUALITYX8,r__o_apos_clock_0019_0018)
-      &amp; isA(EVENTX15,r__say_0019_0004)
+      &amp; r_0019_0019__in(ENTITYX7) = ENTITYX9
+      &amp; isA(ENTITYX9,r_0019_0021__morning)
+      &amp; isA(ENTITYX10,r_0019_0024__phone)
+      &amp; isA(ATTRIBX5,r_0019_0012__following)
+      &amp; isA(QUALITYX8,r_0019_0018__o_apos_clock)
+      &amp; isA(EVENTX15,r_0019_0004__say)
       &amp; arg0(EVENTX15) = ENTITYX1
       &amp; arg1(EVENTX15) = STATEX2 ) ).
 

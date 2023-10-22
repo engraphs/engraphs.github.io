@@ -174,16 +174,16 @@ And he indicated that his government would try to get Germany to pay more .
 </svg>
 <br>
 <pre>
-arc(r__indicated_0062_0003,r__he_0062_0002,arg0).
-arc(r__indicated_0062_0003,r__would_0062_0007,arg1).
-arc(r__government_0062_0006,r__his_0062_0005,genv).
-arc(r__would_0062_0007,r__try_0062_0008,scope).
-arc(r__try_0062_0008,r__get_0062_0010,catenative).
-arc(r__get_0062_0010,r__government_0062_0006,arg0).
-arc(r__get_0062_0010,r__Germany_0062_0011,arg1).
-arc(r__get_0062_0010,r__pay_0062_0013,prd).
-arc(r__pay_0062_0013,z_0062_1009,arg1).
-arc(z_0062_1009,r__more_0062_0014,quality1).
+arc(r_0062_0003__indicated,r_0062_0002__he,arg0).
+arc(r_0062_0003__indicated,r_0062_0007__would,arg1).
+arc(r_0062_0006__government,r_0062_0005__his,genv).
+arc(r_0062_0007__would,r_0062_0008__try,scope).
+arc(r_0062_0008__try,r_0062_0010__get,catenative).
+arc(r_0062_0010__get,r_0062_0006__government,arg0).
+arc(r_0062_0010__get,r_0062_0011__Germany,arg1).
+arc(r_0062_0010__get,r_0062_0013__pay,prd).
+arc(r_0062_0013__pay,z_0062_1009,arg1).
+arc(z_0062_1009,r_0062_0014__more,quality1).
 
 </pre>
 <br>
@@ -191,25 +191,25 @@ arc(z_0062_1009,r__more_0062_0014,quality1).
 fof(id_62_A_lob_A01,axiom,
     ? [STATEX1,STATEX3,STATEX4,EVENTX14,OPERATORX12,EVENTX13,EVENTX11,EVENTX10,ENTITYX2,ENTITYX7,QUALITYX8] :
       ( STATEX1 = OPERATORX12
-      &amp; isA(OPERATORX12,r__would_0062_0007)
+      &amp; isA(OPERATORX12,r_0062_0007__would)
       &amp; scope(OPERATORX12) = EVENTX13
-      &amp; isA(EVENTX13,r__try_0062_0008)
+      &amp; isA(EVENTX13,r_0062_0008__try)
       &amp; catenative(EVENTX13) = STATEX3
       &amp; STATEX3 = EVENTX11
-      &amp; isA(EVENTX11,r__get_0062_0010)
+      &amp; isA(EVENTX11,r_0062_0010__get)
       &amp; arg0(EVENTX11) = ENTITYX2
-      &amp; arg1(EVENTX11) = r__Germany_0062_0011
+      &amp; arg1(EVENTX11) = r_0062_0011__Germany
       &amp; prd(EVENTX11) = STATEX4
       &amp; STATEX4 = EVENTX10
-      &amp; isA(EVENTX10,r__pay_0062_0013)
+      &amp; isA(EVENTX10,r_0062_0013__pay)
       &amp; arg1(EVENTX10) = ENTITYX7
-      &amp; isA(ENTITYX2,r__government_0062_0006)
-      &amp; genv(ENTITYX2) = r__his_0062_0005
+      &amp; isA(ENTITYX2,r_0062_0006__government)
+      &amp; genv(ENTITYX2) = r_0062_0005__his
       &amp; isA(ENTITYX7,z_0062_1009)
       &amp; quality1(ENTITYX7) = QUALITYX8
-      &amp; isA(QUALITYX8,r__more_0062_0014)
-      &amp; isA(EVENTX14,r__indicated_0062_0003)
-      &amp; arg0(EVENTX14) = r__he_0062_0002
+      &amp; isA(QUALITYX8,r_0062_0014__more)
+      &amp; isA(EVENTX14,r_0062_0003__indicated)
+      &amp; arg0(EVENTX14) = r_0062_0002__he
       &amp; arg1(EVENTX14) = STATEX1 ) ).
 
 

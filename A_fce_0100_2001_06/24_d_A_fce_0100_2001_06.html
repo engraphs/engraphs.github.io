@@ -90,7 +90,7 @@ Your story must begin with the following words : Alice knew that it was going to
 <title>0031_0004&#45;&gt;0031_0008</title>
 <path fill="none" stroke="black" d="M90.19,-696.61C97.4,-684.34 107.41,-667.34 115.65,-653.32"/>
 <polygon fill="black" stroke="black" points="118.71,-655.02 120.77,-644.63 112.68,-651.47 118.71,-655.02"/>
-<text text-anchor="middle" x="140.55" y="-666.8" font-family="fixed" font-size="14.00">with_[clr]</text>
+<text text-anchor="middle" x="137.55" y="-666.8" font-family="fixed" font-size="14.00">with[clr]</text>
 </g>
 <!-- 0031_0007 -->
 <g id="node6" class="node">
@@ -194,7 +194,7 @@ Your story must begin with the following words : Alice knew that it was going to
 <title>0031_0017&#45;&gt;0031_0023</title>
 <path fill="none" stroke="black" d="M284.66,-261.21C289.77,-249.14 296.76,-232.64 302.58,-218.89"/>
 <polygon fill="black" stroke="black" points="305.89,-220.04 306.57,-209.47 299.45,-217.31 305.89,-220.04"/>
-<text text-anchor="middle" x="329.05" y="-231.8" font-family="fixed" font-size="14.00">for_[bnf]</text>
+<text text-anchor="middle" x="325.55" y="-231.8" font-family="fixed" font-size="14.00">for[bnf]</text>
 </g>
 <!-- 0031_0020 -->
 <g id="node15" class="node">
@@ -226,20 +226,20 @@ Your story must begin with the following words : Alice knew that it was going to
 </svg>
 <br>
 <pre>
-arc(r__story_0031_0002,r__Your_0031_0001,genv).
-arc(r__must_0031_0003,r__begin_0031_0004,scope).
-arc(r__begin_0031_0004,r__story_0031_0002,arg0).
-arc(r__begin_0031_0004,r__words_0031_0008,r__with_0031_0005_clr).
-arc(r__words_0031_0008,r__following_0031_0007,attrib2).
-arc(r__words_0031_0008,r__knew_0031_0011,prn5).
-arc(r__knew_0031_0011,r__Alice_0031_0010,arg0).
-arc(r__knew_0031_0011,r__was_0031_0014,arg1).
-arc(r__was_0031_0014,r__going_0031_0015,catenative).
-arc(r__going_0031_0015,r__be_0031_0017,catenative).
-arc(r__be_0031_0017,r__day_0031_0021,prd2).
-arc(r__be_0031_0017,r__her_0031_0023,r__for_0031_0022_bnf).
-arc(r__special_0031_0020,r__very_0031_0019,quality1).
-arc(r__day_0031_0021,r__special_0031_0020,attrib2).
+arc(r_0031_0002__story,r_0031_0001__Your,genv).
+arc(r_0031_0003__must,r_0031_0004__begin,scope).
+arc(r_0031_0004__begin,r_0031_0002__story,arg0).
+arc(r_0031_0004__begin,r_0031_0008__words,r_0031_0005__with_clr).
+arc(r_0031_0008__words,r_0031_0007__following,attrib2).
+arc(r_0031_0008__words,r_0031_0011__knew,prn5).
+arc(r_0031_0011__knew,r_0031_0010__Alice,arg0).
+arc(r_0031_0011__knew,r_0031_0014__was,arg1).
+arc(r_0031_0014__was,r_0031_0015__going,catenative).
+arc(r_0031_0015__going,r_0031_0017__be,catenative).
+arc(r_0031_0017__be,r_0031_0021__day,prd2).
+arc(r_0031_0017__be,r_0031_0023__her,r_0031_0022__for_bnf).
+arc(r_0031_0020__special,r_0031_0019__very,quality1).
+arc(r_0031_0021__day,r_0031_0020__special,attrib2).
 
 </pre>
 <br>
@@ -247,35 +247,35 @@ arc(r__day_0031_0021,r__special_0031_0020,attrib2).
 fof(id_31_A_fce_0100_2001_06,axiom,
     ? [EVENTX4,STATEX5,CATENATIVEX7,STATEX8,OPERATORX16,EVENTX17,EVENTX15,EVENTX14,EVENTX13,EVENTX12,ENTITYX1,ENTITYX2,ENTITYX9,ATTRIBX3,ATTRIBX10,QUALITYX11] :
       ( EVENTX4 = EVENTX15
-      &amp; isA(EVENTX15,r__knew_0031_0011)
-      &amp; arg0(EVENTX15) = r__Alice_0031_0010
+      &amp; isA(EVENTX15,r_0031_0011__knew)
+      &amp; arg0(EVENTX15) = r_0031_0010__Alice
       &amp; arg1(EVENTX15) = STATEX5
       &amp; STATEX5 = EVENTX14
-      &amp; isA(EVENTX14,r__was_0031_0014)
+      &amp; isA(EVENTX14,r_0031_0014__was)
       &amp; catenative(EVENTX14) = CATENATIVEX7
       &amp; CATENATIVEX7 = EVENTX13
-      &amp; isA(EVENTX13,r__going_0031_0015)
+      &amp; isA(EVENTX13,r_0031_0015__going)
       &amp; catenative(EVENTX13) = STATEX8
       &amp; STATEX8 = EVENTX12
-      &amp; isA(EVENTX12,r__be_0031_0017)
+      &amp; isA(EVENTX12,r_0031_0017__be)
       &amp; prd2(EVENTX12) = ENTITYX9
-      &amp; r__for_0031_0022_bnf(EVENTX12) = r__her_0031_0023
-      &amp; isA(ENTITYX1,r__story_0031_0002)
-      &amp; genv(ENTITYX1) = r__Your_0031_0001
-      &amp; isA(ENTITYX2,r__words_0031_0008)
+      &amp; r_0031_0022__for_bnf(EVENTX12) = r_0031_0023__her
+      &amp; isA(ENTITYX1,r_0031_0002__story)
+      &amp; genv(ENTITYX1) = r_0031_0001__Your
+      &amp; isA(ENTITYX2,r_0031_0008__words)
       &amp; attrib2(ENTITYX2) = ATTRIBX3
       &amp; prn5(ENTITYX2) = EVENTX4
-      &amp; isA(ENTITYX9,r__day_0031_0021)
+      &amp; isA(ENTITYX9,r_0031_0021__day)
       &amp; attrib2(ENTITYX9) = ATTRIBX10
-      &amp; isA(ATTRIBX3,r__following_0031_0007)
-      &amp; isA(ATTRIBX10,r__special_0031_0020)
+      &amp; isA(ATTRIBX3,r_0031_0007__following)
+      &amp; isA(ATTRIBX10,r_0031_0020__special)
       &amp; quality1(ATTRIBX10) = QUALITYX11
-      &amp; isA(QUALITYX11,r__very_0031_0019)
-      &amp; isA(OPERATORX16,r__must_0031_0003)
+      &amp; isA(QUALITYX11,r_0031_0019__very)
+      &amp; isA(OPERATORX16,r_0031_0003__must)
       &amp; scope(OPERATORX16) = EVENTX17
-      &amp; isA(EVENTX17,r__begin_0031_0004)
+      &amp; isA(EVENTX17,r_0031_0004__begin)
       &amp; arg0(EVENTX17) = ENTITYX1
-      &amp; r__with_0031_0005_clr(EVENTX17) = ENTITYX2 ) ).
+      &amp; r_0031_0005__with_clr(EVENTX17) = ENTITYX2 ) ).
 
 
 </pre>

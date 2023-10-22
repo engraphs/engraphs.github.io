@@ -155,15 +155,15 @@ Finally the warheads themselves were carried off and the firing pins removed .
 </svg>
 <br>
 <pre>
-arc(r__were_0560_0005,r__Finally_0560_0001,tmp1).
-arc(r__were_0560_0005,r__warheads_0560_0003,rfl).
-arc(r__were_0560_0005,r__carried_0560_0006,catenative).
-arc(r__carried_0560_0006,r__warheads_0560_0003,arg1).
-arc(r__carried_0560_0006,r__off_0560_0007,dir3).
-arc(r__and_0560_0008,r__were_0560_0005,conj1).
-arc(r__and_0560_0008,z_0560_1013,conj2).
-arc(r__removed_0560_0012,r__firing_0560_0010_r__pins_0560_0011,arg1).
-arc(z_0560_1013,r__removed_0560_0012,catenative).
+arc(r_0560_0005__were,r_0560_0001__Finally,tmp1).
+arc(r_0560_0005__were,r_0560_0003__warheads,rfl).
+arc(r_0560_0005__were,r_0560_0006__carried,catenative).
+arc(r_0560_0006__carried,r_0560_0003__warheads,arg1).
+arc(r_0560_0006__carried,r_0560_0007__off,dir3).
+arc(r_0560_0008__and,r_0560_0005__were,conj1).
+arc(r_0560_0008__and,z_0560_1013,conj2).
+arc(r_0560_0012__removed,r_0560_0010__firing_pins,arg1).
+arc(z_0560_1013,r_0560_0012__removed,catenative).
 
 </pre>
 <br>
@@ -171,20 +171,20 @@ arc(z_0560_1013,r__removed_0560_0012,catenative).
 fof(id_560_A_DICK_1952,axiom,
     ? [CATENATIVEX4,CATENATIVEX10,WARHEADSX3,CONJX15,EVENTX14,EVENTX12,EVENTX8,EVENTX7,QUALITYX1,QUALITYX6,ENTITYX9,WARHEADSX2] :
       ( CATENATIVEX4 = EVENTX7
-      &amp; isA(EVENTX7,r__carried_0560_0006)
+      &amp; isA(EVENTX7,r_0560_0006__carried)
       &amp; arg1(EVENTX7) = WARHEADSX2
       &amp; dir3(EVENTX7) = QUALITYX6
       &amp; CATENATIVEX10 = EVENTX12
-      &amp; isA(EVENTX12,r__removed_0560_0012)
+      &amp; isA(EVENTX12,r_0560_0012__removed)
       &amp; arg1(EVENTX12) = ENTITYX9
-      &amp; isA(QUALITYX1,r__Finally_0560_0001)
-      &amp; isA(QUALITYX6,r__off_0560_0007)
-      &amp; isA(WARHEADSX2,r__warheads_0560_0003)
+      &amp; isA(QUALITYX1,r_0560_0001__Finally)
+      &amp; isA(QUALITYX6,r_0560_0007__off)
+      &amp; isA(WARHEADSX2,r_0560_0003__warheads)
       &amp; WARHEADSX3 = WARHEADSX2
-      &amp; isA(ENTITYX9,r__firing_0560_0010_r__pins_0560_0011)
-      &amp; isA(CONJX15,r__and_0560_0008)
+      &amp; isA(ENTITYX9,r_0560_0010__firing_pins)
+      &amp; isA(CONJX15,r_0560_0008__and)
       &amp; conj1(CONJX15) = EVENTX8
-      &amp; isA(EVENTX8,r__were_0560_0005)
+      &amp; isA(EVENTX8,r_0560_0005__were)
       &amp; tmp1(EVENTX8) = QUALITYX1
       &amp; rfl(EVENTX8) = WARHEADSX3
       &amp; catenative(EVENTX8) = CATENATIVEX4

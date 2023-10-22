@@ -127,12 +127,12 @@ Presently it began to crumble .
 </svg>
 <br>
 <pre>
-arc(r__bottom_0441_0002,r__door_0441_0005,r__of_0441_0003).
-arc(r__glowed_0441_0006,r__bottom_0441_0002,arg0).
-arc(r__glowed_0441_0006,r__red_0441_0007,prd2).
-arc(r__began_0442_0003,r__Presently_0442_0001,tmp1).
-arc(r__began_0442_0003,r__crumble_0442_0005,catenative).
-arc(r__crumble_0442_0005,r__door_0441_0005,arg0).
+arc(r_0441_0002__bottom,r_0441_0005__door,r_0441_0003__of).
+arc(r_0441_0006__glowed,r_0441_0002__bottom,arg0).
+arc(r_0441_0006__glowed,r_0441_0007__red,prd2).
+arc(r_0442_0003__began,r_0442_0001__Presently,tmp1).
+arc(r_0442_0003__began,r_0442_0005__crumble,catenative).
+arc(r_0442_0005__crumble,r_0441_0005__door,arg0).
 
 </pre>
 <br>
@@ -140,18 +140,18 @@ arc(r__crumble_0442_0005,r__door_0441_0005,arg0).
 fof(id_441_A_DICK_1952__442_A_DICK_1952,axiom,
     ? [STATEX7,DOORX6,EVENTX9,EVENTX8,EVENTX4,ENTITYX1,DOORX2,ATTRIBX3,QUALITYX5] :
       ( STATEX7 = EVENTX8
-      &amp; isA(EVENTX8,r__crumble_0442_0005)
+      &amp; isA(EVENTX8,r_0442_0005__crumble)
       &amp; arg0(EVENTX8) = DOORX6
-      &amp; isA(ENTITYX1,r__bottom_0441_0002)
-      &amp; r__of_0441_0003(ENTITYX1) = DOORX2
-      &amp; isA(DOORX2,r__door_0441_0005)
+      &amp; isA(ENTITYX1,r_0441_0002__bottom)
+      &amp; r_0441_0003__of(ENTITYX1) = DOORX2
+      &amp; isA(DOORX2,r_0441_0005__door)
       &amp; DOORX6 = DOORX2
-      &amp; isA(ATTRIBX3,r__red_0441_0007)
-      &amp; isA(QUALITYX5,r__Presently_0442_0001)
-      &amp; isA(EVENTX4,r__glowed_0441_0006)
+      &amp; isA(ATTRIBX3,r_0441_0007__red)
+      &amp; isA(QUALITYX5,r_0442_0001__Presently)
+      &amp; isA(EVENTX4,r_0441_0006__glowed)
       &amp; arg0(EVENTX4) = ENTITYX1
       &amp; prd2(EVENTX4) = ATTRIBX3
-      &amp; isA(EVENTX9,r__began_0442_0003)
+      &amp; isA(EVENTX9,r_0442_0003__began)
       &amp; tmp1(EVENTX9) = QUALITYX5
       &amp; catenative(EVENTX9) = STATEX7 ) ).
 

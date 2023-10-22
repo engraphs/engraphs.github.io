@@ -181,17 +181,17 @@ Mr Macmillan has picked a strong &lsquo; brains trust &rsquo; team to negotiate 
 </svg>
 <br>
 <pre>
-arc(cnt_0004_1004,r__picked_0004_0004,scope).
-arc(cnt_0004_1004,r__negotiate_0004_0013,restriction).
-arc(r__has_0004_0003,cnt_0004_1004,catenative).
-arc(r__picked_0004_0004,r__Mr_0004_0001_r__Macmillan_0004_0002,arg0).
-arc(r__picked_0004_0004,r__brains_0004_0008_r__trust_0004_0009_r__team_0004_0011,arg1).
-arc(r__brains_0004_0008_r__trust_0004_0009_r__team_0004_0011,r__strong_0004_0006,attrib2).
-arc(r__negotiate_0004_0013,r__brains_0004_0008_r__trust_0004_0009_r__team_0004_0011,arg0).
-arc(r__negotiate_0004_0013,r__terms_0004_0014,arg1).
-arc(r__terms_0004_0014,r__joining_0004_0016,r__for_0004_0015).
-arc(r__joining_0004_0016,r__market_0004_0019,arg1).
-arc(r__market_0004_0019,r__common_0004_0018,attrib2).
+arc(cnt_0004_1004,r_0004_0004__picked,scope).
+arc(cnt_0004_1004,r_0004_0013__negotiate,restriction).
+arc(r_0004_0003__has,cnt_0004_1004,catenative).
+arc(r_0004_0004__picked,r_0004_0001__Mr_Macmillan,arg0).
+arc(r_0004_0004__picked,r_0004_0008__brains_trust_team,arg1).
+arc(r_0004_0008__brains_trust_team,r_0004_0006__strong,attrib2).
+arc(r_0004_0013__negotiate,r_0004_0008__brains_trust_team,arg0).
+arc(r_0004_0013__negotiate,r_0004_0014__terms,arg1).
+arc(r_0004_0014__terms,r_0004_0016__joining,r_0004_0015__for).
+arc(r_0004_0016__joining,r_0004_0019__market,arg1).
+arc(r_0004_0019__market,r_0004_0018__common,attrib2).
 
 </pre>
 <br>
@@ -201,25 +201,25 @@ fof(id_4_A_lob_A02,axiom,
       ( CATENATIVEX1 = CONNX5
       &amp; isA(CONNX5,cnt_0004_1004)
       &amp; scope(CONNX5) = EVENTX14
-      &amp; isA(EVENTX14,r__picked_0004_0004)
-      &amp; arg0(EVENTX14) = r__Mr_0004_0001_r__Macmillan_0004_0002
+      &amp; isA(EVENTX14,r_0004_0004__picked)
+      &amp; arg0(EVENTX14) = r_0004_0001__Mr_Macmillan
       &amp; arg1(EVENTX14) = ENTITYX2
       &amp; restriction(CONNX5) = EVENTX13
-      &amp; isA(EVENTX13,r__negotiate_0004_0013)
+      &amp; isA(EVENTX13,r_0004_0013__negotiate)
       &amp; arg0(EVENTX13) = ENTITYX2
       &amp; arg1(EVENTX13) = ENTITYX6
       &amp; EVENTX7 = EVENTX12
-      &amp; isA(EVENTX12,r__joining_0004_0016)
+      &amp; isA(EVENTX12,r_0004_0016__joining)
       &amp; arg1(EVENTX12) = ENTITYX10
-      &amp; isA(ENTITYX2,r__brains_0004_0008_r__trust_0004_0009_r__team_0004_0011)
+      &amp; isA(ENTITYX2,r_0004_0008__brains_trust_team)
       &amp; attrib2(ENTITYX2) = ATTRIBX3
-      &amp; isA(ENTITYX6,r__terms_0004_0014)
-      &amp; r__for_0004_0015(ENTITYX6) = EVENTX7
-      &amp; isA(ENTITYX10,r__market_0004_0019)
+      &amp; isA(ENTITYX6,r_0004_0014__terms)
+      &amp; r_0004_0015__for(ENTITYX6) = EVENTX7
+      &amp; isA(ENTITYX10,r_0004_0019__market)
       &amp; attrib2(ENTITYX10) = ATTRIBX11
-      &amp; isA(ATTRIBX3,r__strong_0004_0006)
-      &amp; isA(ATTRIBX11,r__common_0004_0018)
-      &amp; isA(EVENTX15,r__has_0004_0003)
+      &amp; isA(ATTRIBX3,r_0004_0006__strong)
+      &amp; isA(ATTRIBX11,r_0004_0018__common)
+      &amp; isA(EVENTX15,r_0004_0003__has)
       &amp; catenative(EVENTX15) = CATENATIVEX1 ) ).
 
 

@@ -214,19 +214,19 @@ The faster you go , the less time you have to avoid a hazard or collision .
 </svg>
 <br>
 <pre>
-arc(cnt_0019_1012,r__have_0019_0010,scope).
-arc(cnt_0019_1012,r__avoid_0019_0012,restriction).
-arc(r__go_0019_0004,r__you_0019_0003,arg0).
-arc(r__go_0019_0004,z_0019_1007,arg1).
-arc(r__time_0019_0008,r__less_0019_0007,attrib2).
-arc(r__have_0019_0010,r__you_0019_0003,arg0).
-arc(r__have_0019_0010,r__time_0019_0008,arg1).
-arc(r__avoid_0019_0012,r__you_0019_0003,arg0).
-arc(r__avoid_0019_0012,r__or_0019_0015,arg1).
-arc(r__or_0019_0015,r__hazard_0019_0014,conj1).
-arc(r__or_0019_0015,r__collision_0019_0016,conj2).
-arc(z_0019_1007,r__faster_0019_0002,attrib2).
-arc(z_0019_1019,r__time_0019_0008,z_0019_1008).
+arc(cnt_0019_1012,r_0019_0010__have,scope).
+arc(cnt_0019_1012,r_0019_0012__avoid,restriction).
+arc(r_0019_0004__go,r_0019_0003__you,arg0).
+arc(r_0019_0004__go,z_0019_1007,arg1).
+arc(r_0019_0008__time,r_0019_0007__less,attrib2).
+arc(r_0019_0010__have,r_0019_0003__you,arg0).
+arc(r_0019_0010__have,r_0019_0008__time,arg1).
+arc(r_0019_0012__avoid,r_0019_0003__you,arg0).
+arc(r_0019_0012__avoid,r_0019_0015__or,arg1).
+arc(r_0019_0015__or,r_0019_0014__hazard,conj1).
+arc(r_0019_0015__or,r_0019_0016__collision,conj2).
+arc(z_0019_1007,r_0019_0002__faster,attrib2).
+arc(z_0019_1019,r_0019_0008__time,z_0019_1008).
 arc(z_0019_1019,z_0019_1007,z_0019_1003).
 
 </pre>
@@ -234,30 +234,30 @@ arc(z_0019_1019,z_0019_1007,z_0019_1003).
 <pre>
 fof(id_19_A_driver_handbook,axiom,
     ? [HEARERX11,EVENTX20,CONNX13,EVENTX17,EVENTX18,EVENTX6,ENTITYX4,ENTITYX9,ENTITYX14,ENTITYX15,ENTITYX16,ATTRIBX10,ATTRIBX5] :
-      ( isA(EVENTX6,r__go_0019_0004)
+      ( isA(EVENTX6,r_0019_0004__go)
       &amp; arg1(EVENTX6) = ENTITYX4
-      &amp; arg0(EVENTX6) = r__you_0019_0003
+      &amp; arg0(EVENTX6) = r_0019_0003__you
       &amp; isA(ENTITYX4,z_0019_1007)
       &amp; attrib2(ENTITYX4) = ATTRIBX5
       &amp; isA(CONNX13,cnt_0019_1012)
       &amp; scope(CONNX13) = EVENTX18
-      &amp; isA(EVENTX18,r__have_0019_0010)
+      &amp; isA(EVENTX18,r_0019_0010__have)
       &amp; arg1(EVENTX18) = ENTITYX9
       &amp; arg0(EVENTX18) = HEARERX11
       &amp; restriction(CONNX13) = EVENTX17
-      &amp; isA(EVENTX17,r__avoid_0019_0012)
+      &amp; isA(EVENTX17,r_0019_0012__avoid)
       &amp; arg0(EVENTX17) = HEARERX11
       &amp; arg1(EVENTX17) = ENTITYX14
-      &amp; isA(ENTITYX9,r__time_0019_0008)
+      &amp; isA(ENTITYX9,r_0019_0008__time)
       &amp; attrib2(ENTITYX9) = ATTRIBX10
-      &amp; HEARERX11 = r__you_0019_0003
-      &amp; isA(ENTITYX14,r__or_0019_0015)
+      &amp; HEARERX11 = r_0019_0003__you
+      &amp; isA(ENTITYX14,r_0019_0015__or)
       &amp; conj1(ENTITYX14) = ENTITYX15
       &amp; conj2(ENTITYX14) = ENTITYX16
-      &amp; isA(ENTITYX15,r__hazard_0019_0014)
-      &amp; isA(ENTITYX16,r__collision_0019_0016)
-      &amp; isA(ATTRIBX5,r__faster_0019_0002)
-      &amp; isA(ATTRIBX10,r__less_0019_0007)
+      &amp; isA(ENTITYX15,r_0019_0014__hazard)
+      &amp; isA(ENTITYX16,r_0019_0016__collision)
+      &amp; isA(ATTRIBX5,r_0019_0002__faster)
+      &amp; isA(ATTRIBX10,r_0019_0007__less)
       &amp; isA(EVENTX20,z_0019_1019)
       &amp; z_0019_1003(EVENTX20) = ENTITYX4
       &amp; z_0019_1008(EVENTX20) = ENTITYX9 ) ).

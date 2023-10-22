@@ -77,7 +77,7 @@ London was again in turmoil ; but this time over a question of trade rivalry .
 <title>0052_0002&#45;&gt;0052_0005</title>
 <path fill="none" stroke="black" d="M195.97,-175.19C200.26,-169.26 205.07,-162.4 209.2,-156 214.2,-148.24 219.35,-139.6 223.9,-131.72"/>
 <polygon fill="black" stroke="black" points="227.01,-133.33 228.92,-122.9 220.93,-129.86 227.01,-133.33"/>
-<text text-anchor="middle" x="250.7" y="-144.8" font-family="fixed" font-size="14.00">in_[prd2]</text>
+<text text-anchor="middle" x="247.2" y="-144.8" font-family="fixed" font-size="14.00">in[prd2]</text>
 </g>
 <!-- 0052_0007 -->
 <g id="node5" class="node">
@@ -129,7 +129,7 @@ London was again in turmoil ; but this time over a question of trade rivalry .
 <title>z_0052_1007&#45;&gt;0052_0012</title>
 <path fill="none" stroke="black" d="M349.48,-174.81C356.71,-168.95 364.87,-162.25 372.2,-156 382.42,-147.28 393.5,-137.47 403.08,-128.87"/>
 <polygon fill="black" stroke="black" points="405.64,-131.27 410.72,-121.97 400.95,-126.07 405.64,-131.27"/>
-<text text-anchor="middle" x="422.7" y="-144.8" font-family="fixed" font-size="14.00">over_[rst]</text>
+<text text-anchor="middle" x="419.7" y="-144.8" font-family="fixed" font-size="14.00">over[rst]</text>
 </g>
 <!-- 0052_0014_0052_0015 -->
 <g id="node9" class="node">
@@ -148,36 +148,36 @@ London was again in turmoil ; but this time over a question of trade rivalry .
 </svg>
 <br>
 <pre>
-arc(r__was_0052_0002,r__London_0052_0001,arg0).
-arc(r__was_0052_0002,r__again_0052_0003,tmp3).
-arc(r__was_0052_0002,r__turmoil_0052_0005,r__in_0052_0004_prd2).
-arc(r__but_0052_0007,r__was_0052_0002,conj1).
-arc(r__but_0052_0007,z_0052_1007,conj2).
-arc(r__question_0052_0012,r__trade_0052_0014_r__rivalry_0052_0015,r__of_0052_0013).
-arc(z_0052_1007,r__time_0052_0009,tmp).
-arc(z_0052_1007,r__question_0052_0012,r__over_0052_0010_rst).
+arc(r_0052_0002__was,r_0052_0001__London,arg0).
+arc(r_0052_0002__was,r_0052_0003__again,tmp3).
+arc(r_0052_0002__was,r_0052_0005__turmoil,r_0052_0004__in_prd2).
+arc(r_0052_0007__but,r_0052_0002__was,conj1).
+arc(r_0052_0007__but,z_0052_1007,conj2).
+arc(r_0052_0012__question,r_0052_0014__trade_rivalry,r_0052_0013__of).
+arc(z_0052_1007,r_0052_0009__time,tmp).
+arc(z_0052_1007,r_0052_0012__question,r_0052_0010__over_rst).
 
 </pre>
 <br>
 <pre>
 fof(id_52_A_lob_G01,axiom,
     ? [CONJX9,EVENTX8,EVENTX3,ENTITYX4,ENTITYX5,ENTITYX6,ENTITYX2,QUALITYX1] :
-      ( isA(ENTITYX2,r__turmoil_0052_0005)
-      &amp; isA(ENTITYX4,r__time_0052_0009)
-      &amp; isA(ENTITYX5,r__question_0052_0012)
-      &amp; r__of_0052_0013(ENTITYX5) = ENTITYX6
-      &amp; isA(ENTITYX6,r__trade_0052_0014_r__rivalry_0052_0015)
-      &amp; isA(QUALITYX1,r__again_0052_0003)
-      &amp; isA(CONJX9,r__but_0052_0007)
+      ( isA(ENTITYX2,r_0052_0005__turmoil)
+      &amp; isA(ENTITYX4,r_0052_0009__time)
+      &amp; isA(ENTITYX5,r_0052_0012__question)
+      &amp; r_0052_0013__of(ENTITYX5) = ENTITYX6
+      &amp; isA(ENTITYX6,r_0052_0014__trade_rivalry)
+      &amp; isA(QUALITYX1,r_0052_0003__again)
+      &amp; isA(CONJX9,r_0052_0007__but)
       &amp; conj1(CONJX9) = EVENTX3
-      &amp; isA(EVENTX3,r__was_0052_0002)
-      &amp; arg0(EVENTX3) = r__London_0052_0001
+      &amp; isA(EVENTX3,r_0052_0002__was)
+      &amp; arg0(EVENTX3) = r_0052_0001__London
       &amp; tmp3(EVENTX3) = QUALITYX1
-      &amp; r__in_0052_0004_prd2(EVENTX3) = ENTITYX2
+      &amp; r_0052_0004__in_prd2(EVENTX3) = ENTITYX2
       &amp; conj2(CONJX9) = EVENTX8
       &amp; isA(EVENTX8,z_0052_1007)
       &amp; tmp(EVENTX8) = ENTITYX4
-      &amp; r__over_0052_0010_rst(EVENTX8) = ENTITYX5 ) ).
+      &amp; r_0052_0010__over_rst(EVENTX8) = ENTITYX5 ) ).
 
 
 </pre>

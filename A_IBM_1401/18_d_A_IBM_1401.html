@@ -116,7 +116,7 @@ Simplified programming routines allow programmers to write more instructions in 
 <title>0023_0007&#45;&gt;0023_0012</title>
 <path fill="none" stroke="black" d="M349.42,-180.93C366.36,-174.27 388.74,-165.1 408.09,-156 429.74,-145.81 453.53,-133.15 471.76,-123.11"/>
 <polygon fill="black" stroke="black" points="473.69,-126.04 480.74,-118.13 470.3,-119.92 473.69,-126.04"/>
-<text text-anchor="middle" x="466.09" y="-144.8" font-family="fixed" font-size="14.00">in_[tmp]</text>
+<text text-anchor="middle" x="463.09" y="-144.8" font-family="fixed" font-size="14.00">in[tmp]</text>
 </g>
 <!-- 0023_0008 -->
 <g id="node8" class="node">
@@ -148,14 +148,14 @@ Simplified programming routines allow programmers to write more instructions in 
 </svg>
 <br>
 <pre>
-arc(r__programming_0023_0002_r__routines_0023_0003,r__Simplified_0023_0001,attrib1).
-arc(r__allow_0023_0004,r__programming_0023_0002_r__routines_0023_0003,arg0).
-arc(r__allow_0023_0004,r__write_0023_0007,arg1).
-arc(r__write_0023_0007,r__programmers_0023_0005,arg0).
-arc(r__write_0023_0007,r__instructions_0023_0009,arg1).
-arc(r__write_0023_0007,r__time_0023_0012,r__in_0023_0010_tmp).
-arc(r__instructions_0023_0009,r__more_0023_0008,attrib1).
-arc(r__time_0023_0012,r__less_0023_0011,attrib1).
+arc(r_0023_0002__programming_routines,r_0023_0001__Simplified,attrib1).
+arc(r_0023_0004__allow,r_0023_0002__programming_routines,arg0).
+arc(r_0023_0004__allow,r_0023_0007__write,arg1).
+arc(r_0023_0007__write,r_0023_0005__programmers,arg0).
+arc(r_0023_0007__write,r_0023_0009__instructions,arg1).
+arc(r_0023_0007__write,r_0023_0012__time,r_0023_0010__in_tmp).
+arc(r_0023_0009__instructions,r_0023_0008__more,attrib1).
+arc(r_0023_0012__time,r_0023_0011__less,attrib1).
 
 </pre>
 <br>
@@ -163,21 +163,21 @@ arc(r__time_0023_0012,r__less_0023_0011,attrib1).
 fof(id_23_A_IBM_1401,axiom,
     ? [STATEX4,EVENTX10,EVENTX9,ENTITYX1,ENTITYX3,ENTITYX5,ENTITYX7,ATTRIBX8,ATTRIBX6,ATTRIBX2] :
       ( STATEX4 = EVENTX9
-      &amp; isA(EVENTX9,r__write_0023_0007)
+      &amp; isA(EVENTX9,r_0023_0007__write)
       &amp; arg0(EVENTX9) = ENTITYX3
       &amp; arg1(EVENTX9) = ENTITYX5
-      &amp; r__in_0023_0010_tmp(EVENTX9) = ENTITYX7
-      &amp; isA(ENTITYX1,r__programming_0023_0002_r__routines_0023_0003)
+      &amp; r_0023_0010__in_tmp(EVENTX9) = ENTITYX7
+      &amp; isA(ENTITYX1,r_0023_0002__programming_routines)
       &amp; attrib1(ENTITYX1) = ATTRIBX2
-      &amp; isA(ENTITYX3,r__programmers_0023_0005)
-      &amp; isA(ENTITYX5,r__instructions_0023_0009)
+      &amp; isA(ENTITYX3,r_0023_0005__programmers)
+      &amp; isA(ENTITYX5,r_0023_0009__instructions)
       &amp; attrib1(ENTITYX5) = ATTRIBX6
-      &amp; isA(ENTITYX7,r__time_0023_0012)
+      &amp; isA(ENTITYX7,r_0023_0012__time)
       &amp; attrib1(ENTITYX7) = ATTRIBX8
-      &amp; isA(ATTRIBX2,r__Simplified_0023_0001)
-      &amp; isA(ATTRIBX6,r__more_0023_0008)
-      &amp; isA(ATTRIBX8,r__less_0023_0011)
-      &amp; isA(EVENTX10,r__allow_0023_0004)
+      &amp; isA(ATTRIBX2,r_0023_0001__Simplified)
+      &amp; isA(ATTRIBX6,r_0023_0008__more)
+      &amp; isA(ATTRIBX8,r_0023_0011__less)
+      &amp; isA(EVENTX10,r_0023_0004__allow)
       &amp; arg0(EVENTX10) = ENTITYX1
       &amp; arg1(EVENTX10) = STATEX4 ) ).
 

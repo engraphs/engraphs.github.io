@@ -213,50 +213,50 @@ A negative voltage from the reference electrode would mean oxidizing conditions 
 </svg>
 <br>
 <pre>
-arc(r__voltage_0046_0003,r__negative_0046_0002,attrib2).
-arc(r__voltage_0046_0003,r__reference_0046_0006_r__electrode_0046_0007,r__from_0046_0004).
-arc(r__would_0046_0008,r__mean_0046_0009,scope).
-arc(r__mean_0046_0009,r__voltage_0046_0003,arg0).
-arc(r__mean_0046_0009,r__and_0046_0014,arg1).
-arc(r__conditions_0046_0011,r__oxidizing_0046_0010,attrib1).
-arc(r__conditions_0046_0011,r__niobium_0046_0013,r__for_0046_0012).
-arc(r__and_0046_0014,r__conditions_0046_0011,conj1).
-arc(r__and_0046_0014,z_0046_1013,conj2).
-arc(r__voltage_0046_0016,r__positive_0046_0015,attrib1).
-arc(r__conditions_0046_0019,r__non_oxidizing_0046_0018,attrib1).
-arc(z_0046_1013,r__voltage_0046_0016,conj1).
-arc(z_0046_1013,r__conditions_0046_0019,conj2).
+arc(r_0046_0003__voltage,r_0046_0002__negative,attrib2).
+arc(r_0046_0003__voltage,r_0046_0006__reference_electrode,r_0046_0004__from).
+arc(r_0046_0008__would,r_0046_0009__mean,scope).
+arc(r_0046_0009__mean,r_0046_0003__voltage,arg0).
+arc(r_0046_0009__mean,r_0046_0014__and,arg1).
+arc(r_0046_0011__conditions,r_0046_0010__oxidizing,attrib1).
+arc(r_0046_0011__conditions,r_0046_0013__niobium,r_0046_0012__for).
+arc(r_0046_0014__and,r_0046_0011__conditions,conj1).
+arc(r_0046_0014__and,z_0046_1013,conj2).
+arc(r_0046_0016__voltage,r_0046_0015__positive,attrib1).
+arc(r_0046_0019__conditions,r_0046_0018__non_oxidizing,attrib1).
+arc(z_0046_1013,r_0046_0016__voltage,conj1).
+arc(z_0046_1013,r_0046_0019__conditions,conj2).
 
 </pre>
 <br>
 <pre>
 fof(id_46_A_lob_J01,axiom,
     ? [OPERATORX14,EVENTX15,ENTITYX1,ENTITYX4,ENTITYX5,ENTITYX8,ENTITYX9,ENTITYX11,ENTITYX7,ENTITYX3,ATTRIBX12,ATTRIBX10,ATTRIBX6,ATTRIBX2] :
-      ( isA(ENTITYX1,r__voltage_0046_0003)
+      ( isA(ENTITYX1,r_0046_0003__voltage)
       &amp; attrib2(ENTITYX1) = ATTRIBX2
-      &amp; r__from_0046_0004(ENTITYX1) = ENTITYX3
-      &amp; isA(ENTITYX3,r__reference_0046_0006_r__electrode_0046_0007)
-      &amp; isA(ENTITYX4,r__and_0046_0014)
+      &amp; r_0046_0004__from(ENTITYX1) = ENTITYX3
+      &amp; isA(ENTITYX3,r_0046_0006__reference_electrode)
+      &amp; isA(ENTITYX4,r_0046_0014__and)
       &amp; conj1(ENTITYX4) = ENTITYX5
       &amp; conj2(ENTITYX4) = ENTITYX8
-      &amp; isA(ENTITYX5,r__conditions_0046_0011)
+      &amp; isA(ENTITYX5,r_0046_0011__conditions)
       &amp; attrib1(ENTITYX5) = ATTRIBX6
-      &amp; r__for_0046_0012(ENTITYX5) = ENTITYX7
-      &amp; isA(ENTITYX7,r__niobium_0046_0013)
+      &amp; r_0046_0012__for(ENTITYX5) = ENTITYX7
+      &amp; isA(ENTITYX7,r_0046_0013__niobium)
       &amp; isA(ENTITYX8,z_0046_1013)
       &amp; conj1(ENTITYX8) = ENTITYX9
       &amp; conj2(ENTITYX8) = ENTITYX11
-      &amp; isA(ENTITYX9,r__voltage_0046_0016)
+      &amp; isA(ENTITYX9,r_0046_0016__voltage)
       &amp; attrib1(ENTITYX9) = ATTRIBX10
-      &amp; isA(ENTITYX11,r__conditions_0046_0019)
+      &amp; isA(ENTITYX11,r_0046_0019__conditions)
       &amp; attrib1(ENTITYX11) = ATTRIBX12
-      &amp; isA(ATTRIBX2,r__negative_0046_0002)
-      &amp; isA(ATTRIBX6,r__oxidizing_0046_0010)
-      &amp; isA(ATTRIBX10,r__positive_0046_0015)
-      &amp; isA(ATTRIBX12,r__non_oxidizing_0046_0018)
-      &amp; isA(OPERATORX14,r__would_0046_0008)
+      &amp; isA(ATTRIBX2,r_0046_0002__negative)
+      &amp; isA(ATTRIBX6,r_0046_0010__oxidizing)
+      &amp; isA(ATTRIBX10,r_0046_0015__positive)
+      &amp; isA(ATTRIBX12,r_0046_0018__non_oxidizing)
+      &amp; isA(OPERATORX14,r_0046_0008__would)
       &amp; scope(OPERATORX14) = EVENTX15
-      &amp; isA(EVENTX15,r__mean_0046_0009)
+      &amp; isA(EVENTX15,r_0046_0009__mean)
       &amp; arg0(EVENTX15) = ENTITYX1
       &amp; arg1(EVENTX15) = ENTITYX4 ) ).
 

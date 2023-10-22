@@ -189,19 +189,19 @@ None of these classes , except the yeomen , paid or expected to pay direct taxes
 </svg>
 <br>
 <pre>
-arc(quantificational_r__None_0028_0001,r__or_0028_0012,scope).
-arc(quantificational_r__None_0028_0001,z_0028_1005,restriction).
-arc(r__paid_0028_0010,r__taxes_0028_0018,arg1).
-arc(r__paid_0028_0010,z_0028_1005,arg0).
-arc(r__or_0028_0012,r__paid_0028_0010,conj1).
-arc(r__or_0028_0012,r__expected_0028_0013,conj2).
-arc(r__expected_0028_0013,r__pay_0028_0015,arg1).
-arc(r__expected_0028_0013,z_0028_1005,arg0).
-arc(r__pay_0028_0015,r__taxes_0028_0018,arg1).
-arc(r__pay_0028_0015,z_0028_1005,arg0).
-arc(r__taxes_0028_0018,r__direct_0028_0017,attrib1).
-arc(z_0028_1005,r__classes_0028_0004,r__of_0028_0002).
-arc(z_0028_1005,r__yeomen_0028_0008,r__except_0028_0006).
+arc(r_0028_0001__quantificational__None,r_0028_0012__or,scope).
+arc(r_0028_0001__quantificational__None,z_0028_1005,restriction).
+arc(r_0028_0010__paid,r_0028_0018__taxes,arg1).
+arc(r_0028_0010__paid,z_0028_1005,arg0).
+arc(r_0028_0012__or,r_0028_0010__paid,conj1).
+arc(r_0028_0012__or,r_0028_0013__expected,conj2).
+arc(r_0028_0013__expected,r_0028_0015__pay,arg1).
+arc(r_0028_0013__expected,z_0028_1005,arg0).
+arc(r_0028_0015__pay,r_0028_0018__taxes,arg1).
+arc(r_0028_0015__pay,z_0028_1005,arg0).
+arc(r_0028_0018__taxes,r_0028_0017__direct,attrib1).
+arc(z_0028_1005,r_0028_0004__classes,r_0028_0002__of).
+arc(z_0028_1005,r_0028_0008__yeomen,r_0028_0006__except).
 
 </pre>
 <br>
@@ -209,29 +209,29 @@ arc(z_0028_1005,r__yeomen_0028_0008,r__except_0028_0006).
 fof(id_28_A_lob_G01,axiom,
     ? [STATEX10,DIRECT_TAXX8,DIRECT_TAXX11,QUANTX2,CONJX14,EVENTX13,EVENTX12,EVENTX9,ENTITYX1,DIRECT_TAXX6,ENTITYX3,ENTITYX4,ATTRIBX7] :
       ( STATEX10 = EVENTX12
-      &amp; isA(EVENTX12,r__pay_0028_0015)
+      &amp; isA(EVENTX12,r_0028_0015__pay)
       &amp; arg0(EVENTX12) = ENTITYX1
       &amp; arg1(EVENTX12) = DIRECT_TAXX11
-      &amp; isA(ENTITYX3,r__classes_0028_0004)
-      &amp; isA(ENTITYX4,r__yeomen_0028_0008)
-      &amp; isA(DIRECT_TAXX6,r__taxes_0028_0018)
+      &amp; isA(ENTITYX3,r_0028_0004__classes)
+      &amp; isA(ENTITYX4,r_0028_0008__yeomen)
+      &amp; isA(DIRECT_TAXX6,r_0028_0018__taxes)
       &amp; attrib1(DIRECT_TAXX6) = ATTRIBX7
       &amp; DIRECT_TAXX8 = DIRECT_TAXX6
       &amp; DIRECT_TAXX11 = DIRECT_TAXX6
-      &amp; isA(ATTRIBX7,r__direct_0028_0017)
-      &amp; isA(QUANTX2,quantificational_r__None_0028_0001)
+      &amp; isA(ATTRIBX7,r_0028_0017__direct)
+      &amp; isA(QUANTX2,r_0028_0001__quantificational__None)
       &amp; restriction(QUANTX2) = ENTITYX1
       &amp; isA(ENTITYX1,z_0028_1005)
-      &amp; r__of_0028_0002(ENTITYX1) = ENTITYX3
-      &amp; r__except_0028_0006(ENTITYX1) = ENTITYX4
+      &amp; r_0028_0002__of(ENTITYX1) = ENTITYX3
+      &amp; r_0028_0006__except(ENTITYX1) = ENTITYX4
       &amp; scope(QUANTX2) = CONJX14
-      &amp; isA(CONJX14,r__or_0028_0012)
+      &amp; isA(CONJX14,r_0028_0012__or)
       &amp; conj1(CONJX14) = EVENTX9
-      &amp; isA(EVENTX9,r__paid_0028_0010)
+      &amp; isA(EVENTX9,r_0028_0010__paid)
       &amp; arg0(EVENTX9) = ENTITYX1
       &amp; arg1(EVENTX9) = DIRECT_TAXX8
       &amp; conj2(CONJX14) = EVENTX13
-      &amp; isA(EVENTX13,r__expected_0028_0013)
+      &amp; isA(EVENTX13,r_0028_0013__expected)
       &amp; arg0(EVENTX13) = ENTITYX1
       &amp; arg1(EVENTX13) = STATEX10 ) ).
 

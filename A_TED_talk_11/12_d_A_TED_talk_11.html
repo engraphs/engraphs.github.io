@@ -37,8 +37,8 @@ If you 're at a dinner party , and you say you work in education --
 <!-- 0015_0001_cnt_cnd -->
 <g id="node1" class="node">
 <title>0015_0001_cnt_cnd</title>
-<ellipse fill="none" stroke="black" cx="231.39" cy="-366" rx="65.79" ry="18"/>
-<text text-anchor="middle" x="231.39" y="-362.3" font-family="fixed" font-size="14.00">If_[cnt][cnd]</text>
+<ellipse fill="none" stroke="black" cx="231.39" cy="-366" rx="61.99" ry="18"/>
+<text text-anchor="middle" x="231.39" y="-362.3" font-family="fixed" font-size="14.00">If[cnt][cnd]</text>
 </g>
 <!-- 0015_0009 -->
 <g id="node2" class="node">
@@ -49,7 +49,7 @@ If you 're at a dinner party , and you say you work in education --
 <!-- 0015_0001_cnt_cnd&#45;&gt;0015_0009 -->
 <g id="edge1" class="edge">
 <title>0015_0001_cnt_cnd&#45;&gt;0015_0009</title>
-<path fill="none" stroke="black" d="M199.85,-350.13C192.13,-344.9 184.82,-338.22 180.39,-330 176.7,-323.17 175.47,-315.02 175.42,-307.29"/>
+<path fill="none" stroke="black" d="M200.12,-350.31C192.3,-345.05 184.87,-338.32 180.39,-330 176.7,-323.17 175.47,-315.02 175.42,-307.29"/>
 <polygon fill="black" stroke="black" points="178.92,-307.37 175.98,-297.19 171.93,-306.99 178.92,-307.37"/>
 <text text-anchor="middle" x="220.89" y="-318.8" font-family="fixed" font-size="14.00">[restriction]</text>
 </g>
@@ -116,7 +116,7 @@ If you 're at a dinner party , and you say you work in education --
 <title>0015_0003&#45;&gt;0015_0006_0015_0007</title>
 <path fill="none" stroke="black" d="M127.39,-173.8C127.39,-162.16 127.39,-146.55 127.39,-133.24"/>
 <polygon fill="black" stroke="black" points="130.89,-133.18 127.39,-123.18 123.89,-133.18 130.89,-133.18"/>
-<text text-anchor="middle" x="152.89" y="-144.8" font-family="fixed" font-size="14.00">at_[loc]</text>
+<text text-anchor="middle" x="149.39" y="-144.8" font-family="fixed" font-size="14.00">at[loc]</text>
 </g>
 <!-- 0015_0011&#45;&gt;0015_0002 -->
 <g id="edge7" class="edge">
@@ -156,22 +156,22 @@ If you 're at a dinner party , and you say you work in education --
 <title>0015_0013&#45;&gt;0015_0015</title>
 <path fill="none" stroke="black" d="M325.8,-86.8C326.76,-75.16 328.05,-59.55 329.14,-46.24"/>
 <polygon fill="black" stroke="black" points="332.64,-46.43 329.97,-36.18 325.66,-45.85 332.64,-46.43"/>
-<text text-anchor="middle" x="352.39" y="-57.8" font-family="fixed" font-size="14.00">in_[loc]</text>
+<text text-anchor="middle" x="348.89" y="-57.8" font-family="fixed" font-size="14.00">in[loc]</text>
 </g>
 </g>
 </svg>
 <br>
 <pre>
-arc(r__If_0015_0001_cnt_cnd,r__and_0015_0009,restriction).
-arc(r__If_0015_0001_cnt_cnd,z_0015_1013,scope).
-arc(r___apos_re_0015_0003,r__you_0015_0002,arg0).
-arc(r___apos_re_0015_0003,r__dinner_0015_0006_r__party_0015_0007,r__at_0015_0004_loc).
-arc(r__and_0015_0009,r___apos_re_0015_0003,conj1).
-arc(r__and_0015_0009,r__say_0015_0011,conj2).
-arc(r__say_0015_0011,r__you_0015_0002,arg0).
-arc(r__say_0015_0011,r__work_0015_0013,arg1).
-arc(r__work_0015_0013,r__you_0015_0002,arg0).
-arc(r__work_0015_0013,r__education_0015_0015,r__in_0015_0014_loc).
+arc(r_0015_0001__If_cnt_cnd,r_0015_0009__and,restriction).
+arc(r_0015_0001__If_cnt_cnd,z_0015_1013,scope).
+arc(r_0015_0003___apos_re,r_0015_0002__you,arg0).
+arc(r_0015_0003___apos_re,r_0015_0006__dinner_party,r_0015_0004__at_loc).
+arc(r_0015_0009__and,r_0015_0003___apos_re,conj1).
+arc(r_0015_0009__and,r_0015_0011__say,conj2).
+arc(r_0015_0011__say,r_0015_0002__you,arg0).
+arc(r_0015_0011__say,r_0015_0013__work,arg1).
+arc(r_0015_0013__work,r_0015_0002__you,arg0).
+arc(r_0015_0013__work,r_0015_0015__education,r_0015_0014__in_loc).
 
 </pre>
 <br>
@@ -179,24 +179,24 @@ arc(r__work_0015_0013,r__education_0015_0015,r__in_0015_0014_loc).
 fof(id_15_A_TED_talk_11,axiom,
     ? [STATEX7,HEARERX6,HEARERX8,CONNX1,EVENTX14,CONJX12,EVENTX11,EVENTX10,EVENTX5,ENTITYX9,ENTITYX4] :
       ( STATEX7 = EVENTX10
-      &amp; isA(EVENTX10,r__work_0015_0013)
+      &amp; isA(EVENTX10,r_0015_0013__work)
       &amp; arg0(EVENTX10) = HEARERX8
-      &amp; r__in_0015_0014_loc(EVENTX10) = ENTITYX9
-      &amp; isA(ENTITYX4,r__dinner_0015_0006_r__party_0015_0007)
-      &amp; HEARERX6 = r__you_0015_0002
+      &amp; r_0015_0014__in_loc(EVENTX10) = ENTITYX9
+      &amp; isA(ENTITYX4,r_0015_0006__dinner_party)
+      &amp; HEARERX6 = r_0015_0002__you
       &amp; ( HEARERX8 = HEARERX6
-        | HEARERX8 = r__you_0015_0002 )
-      &amp; isA(ENTITYX9,r__education_0015_0015)
-      &amp; isA(CONNX1,r__If_0015_0001_cnt_cnd)
+        | HEARERX8 = r_0015_0002__you )
+      &amp; isA(ENTITYX9,r_0015_0015__education)
+      &amp; isA(CONNX1,r_0015_0001__If_cnt_cnd)
       &amp; restriction(CONNX1) = CONJX12
-      &amp; isA(CONJX12,r__and_0015_0009)
+      &amp; isA(CONJX12,r_0015_0009__and)
       &amp; conj1(CONJX12) = EVENTX5
-      &amp; isA(EVENTX5,r___apos_re_0015_0003)
-      &amp; arg0(EVENTX5) = r__you_0015_0002
-      &amp; arg0(EVENTX5) = r__you_0015_0002
-      &amp; r__at_0015_0004_loc(EVENTX5) = ENTITYX4
+      &amp; isA(EVENTX5,r_0015_0003___apos_re)
+      &amp; arg0(EVENTX5) = r_0015_0002__you
+      &amp; arg0(EVENTX5) = r_0015_0002__you
+      &amp; r_0015_0004__at_loc(EVENTX5) = ENTITYX4
       &amp; conj2(CONJX12) = EVENTX11
-      &amp; isA(EVENTX11,r__say_0015_0011)
+      &amp; isA(EVENTX11,r_0015_0011__say)
       &amp; arg0(EVENTX11) = HEARERX6
       &amp; arg0(EVENTX11) = HEARERX6
       &amp; arg1(EVENTX11) = STATEX7

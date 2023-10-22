@@ -104,13 +104,13 @@ Rennyo , the 8th head-priest of Hongan-ji Temple , stated in &ldquo; Ofumi &rdqu
 <title>0008_0010&#45;&gt;0008_0013</title>
 <path fill="none" stroke="black" d="M154.88,-261.21C162.12,-248.9 172.06,-232 180.24,-218.09"/>
 <polygon fill="black" stroke="black" points="183.26,-219.86 185.31,-209.47 177.23,-216.31 183.26,-219.86"/>
-<text text-anchor="middle" x="197" y="-231.8" font-family="fixed" font-size="14.00">in_[loc]</text>
+<text text-anchor="middle" x="193.5" y="-231.8" font-family="fixed" font-size="14.00">in[loc]</text>
 </g>
 <!-- 0008_0015_cnt -->
 <g id="node7" class="node">
 <title>0008_0015_cnt</title>
-<ellipse fill="none" stroke="black" cx="194" cy="-366" rx="46.29" ry="18"/>
-<text text-anchor="middle" x="194" y="-362.3" font-family="fixed" font-size="14.00">as_[cnt]</text>
+<ellipse fill="none" stroke="black" cx="194" cy="-366" rx="42.49" ry="18"/>
+<text text-anchor="middle" x="194" y="-362.3" font-family="fixed" font-size="14.00">as[cnt]</text>
 </g>
 <!-- 0008_0015_cnt&#45;&gt;0008_0010 -->
 <g id="edge6" class="edge">
@@ -128,7 +128,7 @@ Rennyo , the 8th head-priest of Hongan-ji Temple , stated in &ldquo; Ofumi &rdqu
 <!-- 0008_0015_cnt&#45;&gt;0008_0016 -->
 <g id="edge7" class="edge">
 <title>0008_0015_cnt&#45;&gt;0008_0016</title>
-<path fill="none" stroke="black" d="M208.61,-348.56C213.22,-342.91 218.13,-336.39 222,-330 226.42,-322.7 230.45,-314.35 233.82,-306.6"/>
+<path fill="none" stroke="black" d="M208.32,-348.91C213.02,-343.18 218.05,-336.52 222,-330 226.42,-322.7 230.45,-314.35 233.82,-306.6"/>
 <polygon fill="black" stroke="black" points="237.12,-307.79 237.72,-297.21 230.65,-305.11 237.12,-307.79"/>
 <text text-anchor="middle" x="269.5" y="-318.8" font-family="fixed" font-size="14.00">[restriction]</text>
 </g>
@@ -136,33 +136,33 @@ Rennyo , the 8th head-priest of Hongan-ji Temple , stated in &ldquo; Ofumi &rdqu
 </svg>
 <br>
 <pre>
-arc(r__Rennyo_0008_0001,r__head_priest_0008_0005,prn3).
-arc(r__head_priest_0008_0005,r__8th_0008_0004,attrib2).
-arc(r__head_priest_0008_0005,r__Hongan_ji_0008_0007_r__Temple_0008_0008,r__of_0008_0006).
-arc(r__stated_0008_0010,r__Rennyo_0008_0001,arg0).
-arc(r__stated_0008_0010,r__Ofumi_0008_0013,r__in_0008_0011_loc).
-arc(r__as_0008_0015_cnt,r__stated_0008_0010,scope).
-arc(r__as_0008_0015_cnt,r__follows_0008_0016,restriction).
+arc(r_0008_0001__Rennyo,r_0008_0005__head_priest,prn3).
+arc(r_0008_0005__head_priest,r_0008_0004__8th,attrib2).
+arc(r_0008_0005__head_priest,r_0008_0007__Hongan_ji_Temple,r_0008_0006__of).
+arc(r_0008_0010__stated,r_0008_0001__Rennyo,arg0).
+arc(r_0008_0010__stated,r_0008_0013__Ofumi,r_0008_0011__in_loc).
+arc(r_0008_0015__as_cnt,r_0008_0010__stated,scope).
+arc(r_0008_0015__as_cnt,r_0008_0016__follows,restriction).
 
 </pre>
 <br>
 <pre>
 fof(id_8_A_KYOTO_3,axiom,
     ? [CONNX3,EVENTX6,EVENTX7,ENTITYX1,ATTRIBX2] :
-      ( isA(ENTITYX1,r__head_priest_0008_0005)
+      ( isA(ENTITYX1,r_0008_0005__head_priest)
       &amp; attrib2(ENTITYX1) = ATTRIBX2
-      &amp; r__of_0008_0006(ENTITYX1) = r__Hongan_ji_0008_0007_r__Temple_0008_0008
-      &amp; isA(r__Rennyo_0008_0001,r__Rennyo_0008_0001)
-      &amp; prn3(r__Rennyo_0008_0001) = ENTITYX1
-      &amp; isA(r__Ofumi_0008_0013,r__Ofumi_0008_0013)
-      &amp; isA(ATTRIBX2,r__8th_0008_0004)
-      &amp; isA(CONNX3,r__as_0008_0015_cnt)
+      &amp; r_0008_0006__of(ENTITYX1) = r_0008_0007__Hongan_ji_Temple
+      &amp; isA(r_0008_0001__Rennyo,r_0008_0001__Rennyo)
+      &amp; prn3(r_0008_0001__Rennyo) = ENTITYX1
+      &amp; isA(r_0008_0013__Ofumi,r_0008_0013__Ofumi)
+      &amp; isA(ATTRIBX2,r_0008_0004__8th)
+      &amp; isA(CONNX3,r_0008_0015__as_cnt)
       &amp; scope(CONNX3) = EVENTX7
-      &amp; isA(EVENTX7,r__stated_0008_0010)
-      &amp; arg0(EVENTX7) = r__Rennyo_0008_0001
-      &amp; r__in_0008_0011_loc(EVENTX7) = r__Ofumi_0008_0013
+      &amp; isA(EVENTX7,r_0008_0010__stated)
+      &amp; arg0(EVENTX7) = r_0008_0001__Rennyo
+      &amp; r_0008_0011__in_loc(EVENTX7) = r_0008_0013__Ofumi
       &amp; restriction(CONNX3) = EVENTX6
-      &amp; isA(EVENTX6,r__follows_0008_0016) ) ).
+      &amp; isA(EVENTX6,r_0008_0016__follows) ) ).
 
 
 </pre>

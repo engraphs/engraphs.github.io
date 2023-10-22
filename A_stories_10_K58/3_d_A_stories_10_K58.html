@@ -49,8 +49,8 @@ Mickey was bought when he was only a puppy of three weeks .
 <!-- 0003_0004_tmp -->
 <g id="node3" class="node">
 <title>0003_0004_tmp</title>
-<ellipse fill="none" stroke="black" cx="89.6" cy="-387" rx="64.19" ry="18"/>
-<text text-anchor="middle" x="89.6" y="-383.3" font-family="fixed" font-size="14.00">when_[tmp]</text>
+<ellipse fill="none" stroke="black" cx="89.6" cy="-387" rx="59.59" ry="18"/>
+<text text-anchor="middle" x="89.6" y="-383.3" font-family="fixed" font-size="14.00">when[tmp]</text>
 </g>
 <!-- 0003_0002&#45;&gt;0003_0004_tmp -->
 <g id="edge1" class="edge">
@@ -68,7 +68,7 @@ Mickey was bought when he was only a puppy of three weeks .
 <!-- 0003_0004_tmp&#45;&gt;0003_0003 -->
 <g id="edge3" class="edge">
 <title>0003_0004_tmp&#45;&gt;0003_0003</title>
-<path fill="none" stroke="black" d="M65.69,-369.91C59.72,-364.63 54.03,-358.23 50.6,-351 39.18,-326.98 39.23,-296.21 41.35,-274.39"/>
+<path fill="none" stroke="black" d="M66.1,-370.26C59.98,-364.92 54.11,-358.39 50.6,-351 39.18,-326.98 39.23,-296.21 41.35,-274.39"/>
 <polygon fill="black" stroke="black" points="44.86,-274.51 42.55,-264.17 37.9,-273.7 44.86,-274.51"/>
 <text text-anchor="middle" x="76.6" y="-339.8" font-family="fixed" font-size="14.00">[scope]</text>
 </g>
@@ -142,14 +142,14 @@ Mickey was bought when he was only a puppy of three weeks .
 </svg>
 <br>
 <pre>
-arc(r__was_0003_0002,r__when_0003_0004_tmp,catenative).
-arc(r__bought_0003_0003,r__Mickey_0003_0001,arg1).
-arc(r__when_0003_0004_tmp,r__bought_0003_0003,scope).
-arc(r__when_0003_0004_tmp,r__only_0003_0007,restriction).
-arc(r__was_0003_0006,r__Mickey_0003_0001,arg0).
-arc(r__was_0003_0006,r__puppy_0003_0009,prd2).
-arc(r__only_0003_0007,r__was_0003_0006,scope).
-arc(r__puppy_0003_0009,r__three_0003_0011_r__weeks_0003_0012,r__of_0003_0010).
+arc(r_0003_0002__was,r_0003_0004__when_tmp,catenative).
+arc(r_0003_0003__bought,r_0003_0001__Mickey,arg1).
+arc(r_0003_0004__when_tmp,r_0003_0003__bought,scope).
+arc(r_0003_0004__when_tmp,r_0003_0007__only,restriction).
+arc(r_0003_0006__was,r_0003_0001__Mickey,arg0).
+arc(r_0003_0006__was,r_0003_0009__puppy,prd2).
+arc(r_0003_0007__only,r_0003_0006__was,scope).
+arc(r_0003_0009__puppy,r_0003_0011__three_weeks,r_0003_0010__of).
 
 </pre>
 <br>
@@ -157,21 +157,21 @@ arc(r__puppy_0003_0009,r__three_0003_0011_r__weeks_0003_0012,r__of_0003_0010).
 fof(id_3_A_stories_10_K58,axiom,
     ? [PURCHASEX1,MICKEYX4,EVENTX10,CONNX3,OPERATORX5,EVENTX8,PURCHASEX9,ENTITYX6,ENTITYX7] :
       ( PURCHASEX1 = CONNX3
-      &amp; isA(CONNX3,r__when_0003_0004_tmp)
+      &amp; isA(CONNX3,r_0003_0004__when_tmp)
       &amp; scope(CONNX3) = PURCHASEX9
-      &amp; isA(PURCHASEX9,r__bought_0003_0003)
-      &amp; arg1(PURCHASEX9) = r__Mickey_0003_0001
+      &amp; isA(PURCHASEX9,r_0003_0003__bought)
+      &amp; arg1(PURCHASEX9) = r_0003_0001__Mickey
       &amp; restriction(CONNX3) = OPERATORX5
-      &amp; isA(OPERATORX5,r__only_0003_0007)
+      &amp; isA(OPERATORX5,r_0003_0007__only)
       &amp; scope(OPERATORX5) = EVENTX8
-      &amp; isA(EVENTX8,r__was_0003_0006)
+      &amp; isA(EVENTX8,r_0003_0006__was)
       &amp; arg0(EVENTX8) = MICKEYX4
       &amp; prd2(EVENTX8) = ENTITYX6
-      &amp; MICKEYX4 = r__Mickey_0003_0001
-      &amp; isA(ENTITYX6,r__puppy_0003_0009)
-      &amp; r__of_0003_0010(ENTITYX6) = ENTITYX7
-      &amp; isA(ENTITYX7,r__three_0003_0011_r__weeks_0003_0012)
-      &amp; isA(EVENTX10,r__was_0003_0002)
+      &amp; MICKEYX4 = r_0003_0001__Mickey
+      &amp; isA(ENTITYX6,r_0003_0009__puppy)
+      &amp; r_0003_0010__of(ENTITYX6) = ENTITYX7
+      &amp; isA(ENTITYX7,r_0003_0011__three_weeks)
+      &amp; isA(EVENTX10,r_0003_0002__was)
       &amp; catenative(EVENTX10) = PURCHASEX1 ) ).
 
 

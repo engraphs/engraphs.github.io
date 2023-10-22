@@ -162,15 +162,15 @@
 </svg>
 <br>
 <pre>
-arc(r__ministers_0271_0006,r__competent_0271_0005,attrib2).
-arc(r__ministers_0271_0006,r__provisions_0271_0009,r__under_0271_0007).
-arc(r__provisions_0271_0009,r__section_0271_0012,r__of_0271_0010).
-arc(r__shall_0271_0013,r__be_0271_0014,scope).
-arc(r__be_0271_0014,r__ministers_0271_0006,arg0).
-arc(r__be_0271_0014,z_0271_1012,prd2).
-arc(r__specified_0271_0016,r__below_0271_0017,loc3).
-arc(r__specified_0271_0016,z_0271_1012,arg1).
-arc(z_0271_1010,r__specified_0271_0016,catenative).
+arc(r_0271_0006__ministers,r_0271_0005__competent,attrib2).
+arc(r_0271_0006__ministers,r_0271_0009__provisions,r_0271_0007__under).
+arc(r_0271_0009__provisions,r_0271_0012__section,r_0271_0010__of).
+arc(r_0271_0013__shall,r_0271_0014__be,scope).
+arc(r_0271_0014__be,r_0271_0006__ministers,arg0).
+arc(r_0271_0014__be,z_0271_1012,prd2).
+arc(r_0271_0016__specified,r_0271_0017__below,loc3).
+arc(r_0271_0016__specified,z_0271_1012,arg1).
+arc(z_0271_1010,r_0271_0016__specified,catenative).
 
 </pre>
 <br>
@@ -178,23 +178,23 @@ arc(z_0271_1010,r__specified_0271_0016,catenative).
 fof(id_271_A_law_h15A119,axiom,
     ? [CATENATIVEX6,OPERATORX13,EVENTX14,EVENTX11,EVENTX9,ENTITYX1,ENTITYX5,ENTITYX3,ENTITYX4,ATTRIBX2,QUALITYX8] :
       ( CATENATIVEX6 = EVENTX9
-      &amp; isA(EVENTX9,r__specified_0271_0016)
+      &amp; isA(EVENTX9,r_0271_0016__specified)
       &amp; arg1(EVENTX9) = ENTITYX5
       &amp; loc3(EVENTX9) = QUALITYX8
-      &amp; isA(ENTITYX1,r__ministers_0271_0006)
+      &amp; isA(ENTITYX1,r_0271_0006__ministers)
       &amp; attrib2(ENTITYX1) = ATTRIBX2
-      &amp; r__under_0271_0007(ENTITYX1) = ENTITYX3
-      &amp; isA(ENTITYX3,r__provisions_0271_0009)
-      &amp; r__of_0271_0010(ENTITYX3) = ENTITYX4
-      &amp; isA(ENTITYX4,r__section_0271_0012)
+      &amp; r_0271_0007__under(ENTITYX1) = ENTITYX3
+      &amp; isA(ENTITYX3,r_0271_0009__provisions)
+      &amp; r_0271_0010__of(ENTITYX3) = ENTITYX4
+      &amp; isA(ENTITYX4,r_0271_0012__section)
       &amp; isA(EVENTX11,z_0271_1010)
       &amp; catenative(EVENTX11) = CATENATIVEX6
       &amp; isA(ENTITYX5,z_0271_1012)
-      &amp; isA(ATTRIBX2,r__competent_0271_0005)
-      &amp; isA(QUALITYX8,r__below_0271_0017)
-      &amp; isA(OPERATORX13,r__shall_0271_0013)
+      &amp; isA(ATTRIBX2,r_0271_0005__competent)
+      &amp; isA(QUALITYX8,r_0271_0017__below)
+      &amp; isA(OPERATORX13,r_0271_0013__shall)
       &amp; scope(OPERATORX13) = EVENTX14
-      &amp; isA(EVENTX14,r__be_0271_0014)
+      &amp; isA(EVENTX14,r_0271_0014__be)
       &amp; arg0(EVENTX14) = ENTITYX1
       &amp; prd2(EVENTX14) = ENTITYX5 ) ).
 

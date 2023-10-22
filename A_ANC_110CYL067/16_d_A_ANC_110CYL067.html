@@ -135,13 +135,13 @@ Please help Goodwill and help people find jobs .
 </svg>
 <br>
 <pre>
-arc(imperative_0041_1002,r__and_0041_0004,scope).
-arc(r__help_0041_0002,r__Goodwill_0041_0003,arg1).
-arc(r__and_0041_0004,r__help_0041_0002,conj1).
-arc(r__and_0041_0004,r__help_0041_0005,conj2).
-arc(r__help_0041_0005,r__people_0041_0006,arg1).
-arc(r__help_0041_0005,r__find_0041_0007,prd).
-arc(r__find_0041_0007,r__jobs_0041_0008,arg1).
+arc(imperative_0041_1002,r_0041_0004__and,scope).
+arc(r_0041_0002__help,r_0041_0003__Goodwill,arg1).
+arc(r_0041_0004__and,r_0041_0002__help,conj1).
+arc(r_0041_0004__and,r_0041_0005__help,conj2).
+arc(r_0041_0005__help,r_0041_0006__people,arg1).
+arc(r_0041_0005__help,r_0041_0007__find,prd).
+arc(r_0041_0007__find,r_0041_0008__jobs,arg1).
 
 </pre>
 <br>
@@ -149,18 +149,18 @@ arc(r__find_0041_0007,r__jobs_0041_0008,arg1).
 fof(id_41_A_ANC_110CYL067,axiom,
     ? [STATEX6,OPERATORX2,CONJX12,EVENTX11,EVENTX10,EVENTX4,ENTITYX5,ENTITYX9] :
       ( STATEX6 = EVENTX10
-      &amp; isA(EVENTX10,r__find_0041_0007)
+      &amp; isA(EVENTX10,r_0041_0007__find)
       &amp; arg1(EVENTX10) = ENTITYX9
-      &amp; isA(ENTITYX5,r__people_0041_0006)
-      &amp; isA(ENTITYX9,r__jobs_0041_0008)
+      &amp; isA(ENTITYX5,r_0041_0006__people)
+      &amp; isA(ENTITYX9,r_0041_0008__jobs)
       &amp; isA(OPERATORX2,imperative_0041_1002)
       &amp; scope(OPERATORX2) = CONJX12
-      &amp; isA(CONJX12,r__and_0041_0004)
+      &amp; isA(CONJX12,r_0041_0004__and)
       &amp; conj1(CONJX12) = EVENTX4
-      &amp; isA(EVENTX4,r__help_0041_0002)
-      &amp; arg1(EVENTX4) = r__Goodwill_0041_0003
+      &amp; isA(EVENTX4,r_0041_0002__help)
+      &amp; arg1(EVENTX4) = r_0041_0003__Goodwill
       &amp; conj2(CONJX12) = EVENTX11
-      &amp; isA(EVENTX11,r__help_0041_0005)
+      &amp; isA(EVENTX11,r_0041_0005__help)
       &amp; arg1(EVENTX11) = ENTITYX5
       &amp; prd(EVENTX11) = STATEX6 ) ).
 

@@ -97,7 +97,7 @@ Take off your sunglasses and look at them .
 <title>0006_0006&#45;&gt;0006_0004</title>
 <path fill="none" stroke="black" d="M130.08,-174.61C123.41,-162.54 114.2,-145.88 106.52,-132"/>
 <polygon fill="black" stroke="black" points="109.4,-129.98 101.5,-122.92 103.28,-133.37 109.4,-129.98"/>
-<text text-anchor="middle" x="143.15" y="-144.8" font-family="fixed" font-size="14.00">at_[dir]</text>
+<text text-anchor="middle" x="139.65" y="-144.8" font-family="fixed" font-size="14.00">at[dir]</text>
 </g>
 <!-- imperative_0006_1002 -->
 <g id="node6" class="node">
@@ -116,30 +116,30 @@ Take off your sunglasses and look at them .
 </svg>
 <br>
 <pre>
-arc(imperative_0006_1002,r__and_0006_0005,scope).
-arc(r__Take_0006_0001_r__off_0006_0002,r__sunglasses_0006_0004,arg1).
-arc(r__sunglasses_0006_0004,r__your_0006_0003,genv).
-arc(r__and_0006_0005,r__Take_0006_0001_r__off_0006_0002,conj1).
-arc(r__and_0006_0005,r__look_0006_0006,conj2).
-arc(r__look_0006_0006,r__sunglasses_0006_0004,r__at_0006_0007_dir).
+arc(imperative_0006_1002,r_0006_0005__and,scope).
+arc(r_0006_0001__Take_off,r_0006_0004__sunglasses,arg1).
+arc(r_0006_0004__sunglasses,r_0006_0003__your,genv).
+arc(r_0006_0005__and,r_0006_0001__Take_off,conj1).
+arc(r_0006_0005__and,r_0006_0006__look,conj2).
+arc(r_0006_0006__look,r_0006_0004__sunglasses,r_0006_0007__at_dir).
 
 </pre>
 <br>
 <pre>
 fof(id_6_A_sunglasses_story,axiom,
     ? [SUNGLASSESX6,OPERATORX2,CONJX8,EVENTX7,EVENTX5,SUNGLASSESX4] :
-      ( isA(SUNGLASSESX4,r__sunglasses_0006_0004)
-      &amp; genv(SUNGLASSESX4) = r__your_0006_0003
+      ( isA(SUNGLASSESX4,r_0006_0004__sunglasses)
+      &amp; genv(SUNGLASSESX4) = r_0006_0003__your
       &amp; SUNGLASSESX6 = SUNGLASSESX4
       &amp; isA(OPERATORX2,imperative_0006_1002)
       &amp; scope(OPERATORX2) = CONJX8
-      &amp; isA(CONJX8,r__and_0006_0005)
+      &amp; isA(CONJX8,r_0006_0005__and)
       &amp; conj1(CONJX8) = EVENTX5
-      &amp; isA(EVENTX5,r__Take_0006_0001_r__off_0006_0002)
+      &amp; isA(EVENTX5,r_0006_0001__Take_off)
       &amp; arg1(EVENTX5) = SUNGLASSESX4
       &amp; conj2(CONJX8) = EVENTX7
-      &amp; isA(EVENTX7,r__look_0006_0006)
-      &amp; r__at_0006_0007_dir(EVENTX7) = SUNGLASSESX6 ) ).
+      &amp; isA(EVENTX7,r_0006_0006__look)
+      &amp; r_0006_0007__at_dir(EVENTX7) = SUNGLASSESX6 ) ).
 
 
 </pre>

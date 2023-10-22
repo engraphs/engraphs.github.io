@@ -37,8 +37,8 @@ Because you are , are n't you ?
 <!-- 0198_0001_cnt -->
 <g id="node1" class="node">
 <title>0198_0001_cnt</title>
-<ellipse fill="none" stroke="black" cx="78" cy="-474" rx="74.19" ry="18"/>
-<text text-anchor="middle" x="78" y="-470.3" font-family="fixed" font-size="14.00">Because_[cnt]</text>
+<ellipse fill="none" stroke="black" cx="78" cy="-474" rx="69.59" ry="18"/>
+<text text-anchor="middle" x="78" y="-470.3" font-family="fixed" font-size="14.00">Because[cnt]</text>
 </g>
 <!-- 0198_0003 -->
 <g id="node2" class="node">
@@ -49,7 +49,7 @@ Because you are , are n't you ?
 <!-- 0198_0001_cnt&#45;&gt;0198_0003 -->
 <g id="edge1" class="edge">
 <title>0198_0001_cnt&#45;&gt;0198_0003</title>
-<path fill="none" stroke="black" d="M43.07,-458.12C35.07,-452.97 27.57,-446.33 23,-438 9.94,-414.21 13.58,-382.53 18.82,-360.41"/>
+<path fill="none" stroke="black" d="M43.36,-458.3C35.25,-453.12 27.63,-446.43 23,-438 9.94,-414.21 13.58,-382.53 18.82,-360.41"/>
 <polygon fill="black" stroke="black" points="22.22,-361.25 21.37,-350.69 15.45,-359.48 22.22,-361.25"/>
 <text text-anchor="middle" x="63.5" y="-426.8" font-family="fixed" font-size="14.00">[restriction]</text>
 </g>
@@ -129,12 +129,12 @@ Because you are , are n't you ?
 </svg>
 <br>
 <pre>
-arc(question_0198_1005,r__n_apos_t_0198_0006,scope).
-arc(r__Because_0198_0001_cnt,r__are_0198_0003,restriction).
-arc(r__Because_0198_0001_cnt,z_0198_1009,scope).
-arc(r__are_0198_0003,r__you_0198_0002,arg0).
-arc(r__are_0198_0005,r__you_0198_0002,arg0).
-arc(r__n_apos_t_0198_0006,r__are_0198_0005,scope).
+arc(question_0198_1005,r_0198_0006__n_apos_t,scope).
+arc(r_0198_0001__Because_cnt,r_0198_0003__are,restriction).
+arc(r_0198_0001__Because_cnt,z_0198_1009,scope).
+arc(r_0198_0003__are,r_0198_0002__you,arg0).
+arc(r_0198_0005__are,r_0198_0002__you,arg0).
+arc(r_0198_0006__n_apos_t,r_0198_0005__are,scope).
 arc(z_0198_1009,question_0198_1005,prn3).
 
 </pre>
@@ -145,15 +145,15 @@ fof(id_198_A_TED_talk_11,axiom,
       ( EVENTX3 = OPERATORX5
       &amp; isA(OPERATORX5,question_0198_1005)
       &amp; scope(OPERATORX5) = OPERATORX7
-      &amp; isA(OPERATORX7,r__n_apos_t_0198_0006)
+      &amp; isA(OPERATORX7,r_0198_0006__n_apos_t)
       &amp; scope(OPERATORX7) = EVENTX8
-      &amp; isA(EVENTX8,r__are_0198_0005)
+      &amp; isA(EVENTX8,r_0198_0005__are)
       &amp; arg0(EVENTX8) = HEARERX6
-      &amp; HEARERX6 = r__you_0198_0002
-      &amp; isA(CONNX1,r__Because_0198_0001_cnt)
+      &amp; HEARERX6 = r_0198_0002__you
+      &amp; isA(CONNX1,r_0198_0001__Because_cnt)
       &amp; restriction(CONNX1) = EVENTX2
-      &amp; isA(EVENTX2,r__are_0198_0003)
-      &amp; arg0(EVENTX2) = r__you_0198_0002
+      &amp; isA(EVENTX2,r_0198_0003__are)
+      &amp; arg0(EVENTX2) = r_0198_0002__you
       &amp; scope(CONNX1) = EVENTX10
       &amp; isA(EVENTX10,z_0198_1009)
       &amp; prn3(EVENTX10) = EVENTX3 ) ).

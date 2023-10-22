@@ -103,11 +103,11 @@
 </svg>
 <br>
 <pre>
-arc(quantificational_r__Most_0032_0002,r__is_0032_0006,scope).
-arc(quantificational_r__Most_0032_0002,z_0032_1004,restriction).
-arc(r__is_0032_0006,r__poisoned_0032_0007,catenative).
-arc(r__poisoned_0032_0007,z_0032_1004,arg1).
-arc(z_0032_1004,r__atmosphere_0032_0005,r__of_0032_0003).
+arc(r_0032_0002__quantificational__Most,r_0032_0006__is,scope).
+arc(r_0032_0002__quantificational__Most,z_0032_1004,restriction).
+arc(r_0032_0006__is,r_0032_0007__poisoned,catenative).
+arc(r_0032_0007__poisoned,z_0032_1004,arg1).
+arc(z_0032_1004,r_0032_0005__atmosphere,r_0032_0003__of).
 
 </pre>
 <br>
@@ -115,15 +115,15 @@ arc(z_0032_1004,r__atmosphere_0032_0005,r__of_0032_0003).
 fof(id_32_A_DICK_1952,axiom,
     ? [CATENATIVEX5,QUANTX2,EVENTX8,EVENTX7,ENTITYX1,ENTITYX3] :
       ( CATENATIVEX5 = EVENTX7
-      &amp; isA(EVENTX7,r__poisoned_0032_0007)
+      &amp; isA(EVENTX7,r_0032_0007__poisoned)
       &amp; arg1(EVENTX7) = ENTITYX1
-      &amp; isA(ENTITYX3,r__atmosphere_0032_0005)
-      &amp; isA(QUANTX2,quantificational_r__Most_0032_0002)
+      &amp; isA(ENTITYX3,r_0032_0005__atmosphere)
+      &amp; isA(QUANTX2,r_0032_0002__quantificational__Most)
       &amp; restriction(QUANTX2) = ENTITYX1
       &amp; isA(ENTITYX1,z_0032_1004)
-      &amp; r__of_0032_0003(ENTITYX1) = ENTITYX3
+      &amp; r_0032_0003__of(ENTITYX1) = ENTITYX3
       &amp; scope(QUANTX2) = EVENTX8
-      &amp; isA(EVENTX8,r__is_0032_0006)
+      &amp; isA(EVENTX8,r_0032_0006__is)
       &amp; catenative(EVENTX8) = CATENATIVEX5 ) ).
 
 

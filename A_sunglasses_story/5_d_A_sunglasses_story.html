@@ -226,51 +226,51 @@ It is the values , attitudes , ideas that people in your country share which giv
 </svg>
 <br>
 <pre>
-arc(r__is_0007_0002,z_0007_1009,foc).
-arc(r__is_0007_0002,z_0007_1015,clf).
-arc(r__people_0007_0010,r__country_0007_0013,r__in_0007_0011).
-arc(r__country_0007_0013,r__your_0007_0012,genv).
-arc(r__share_0007_0014,r__people_0007_0010,arg0).
-arc(r__share_0007_0014,z_0007_1009,arg1).
-arc(r__gives_0007_0016,r__glasses_0007_0018,arg2).
-arc(r__gives_0007_0016,r__colour_0007_0021,arg1).
-arc(r__gives_0007_0016,z_0007_1015,arg0).
-arc(r__colour_0007_0021,r__their_0007_0019,genv).
-arc(r__colour_0007_0021,r__yellow_0007_0020,attrib2).
-arc(z_0007_1009,r__values_0007_0004,conj1).
-arc(z_0007_1009,r__attitudes_0007_0006,conj2).
-arc(z_0007_1009,r__ideas_0007_0008,conj3).
+arc(r_0007_0002__is,z_0007_1009,foc).
+arc(r_0007_0002__is,z_0007_1015,clf).
+arc(r_0007_0010__people,r_0007_0013__country,r_0007_0011__in).
+arc(r_0007_0013__country,r_0007_0012__your,genv).
+arc(r_0007_0014__share,r_0007_0010__people,arg0).
+arc(r_0007_0014__share,z_0007_1009,arg1).
+arc(r_0007_0016__gives,r_0007_0018__glasses,arg2).
+arc(r_0007_0016__gives,r_0007_0021__colour,arg1).
+arc(r_0007_0016__gives,z_0007_1015,arg0).
+arc(r_0007_0021__colour,r_0007_0019__their,genv).
+arc(r_0007_0021__colour,r_0007_0020__yellow,attrib2).
+arc(z_0007_1009,r_0007_0004__values,conj1).
+arc(z_0007_1009,r_0007_0006__attitudes,conj2).
+arc(z_0007_1009,r_0007_0008__ideas,conj3).
 
 </pre>
 <br>
 <pre>
 fof(id_7_A_sunglasses_story,axiom,
     ? [EVENTX16,EVENTX14,EVENTX5,ENTITYX2,ENTITYX10,ENTITYX11,ENTITYX12,ENTITYX6,ENTITYX7,ENTITYX8,ENTITYX3,ENTITYX4,ATTRIBX13] :
-      ( isA(EVENTX5,r__share_0007_0014)
+      ( isA(EVENTX5,r_0007_0014__share)
       &amp; arg1(EVENTX5) = ENTITYX2
       &amp; arg0(EVENTX5) = ENTITYX3
       &amp; isA(ENTITYX2,z_0007_1009)
       &amp; conj1(ENTITYX2) = ENTITYX6
       &amp; conj2(ENTITYX2) = ENTITYX7
       &amp; conj3(ENTITYX2) = ENTITYX8
-      &amp; isA(ENTITYX3,r__people_0007_0010)
-      &amp; r__in_0007_0011(ENTITYX3) = ENTITYX4
-      &amp; isA(ENTITYX4,r__country_0007_0013)
-      &amp; genv(ENTITYX4) = r__your_0007_0012
-      &amp; isA(ENTITYX6,r__values_0007_0004)
-      &amp; isA(ENTITYX7,r__attitudes_0007_0006)
-      &amp; isA(ENTITYX8,r__ideas_0007_0008)
-      &amp; isA(EVENTX14,r__gives_0007_0016)
+      &amp; isA(ENTITYX3,r_0007_0010__people)
+      &amp; r_0007_0011__in(ENTITYX3) = ENTITYX4
+      &amp; isA(ENTITYX4,r_0007_0013__country)
+      &amp; genv(ENTITYX4) = r_0007_0012__your
+      &amp; isA(ENTITYX6,r_0007_0004__values)
+      &amp; isA(ENTITYX7,r_0007_0006__attitudes)
+      &amp; isA(ENTITYX8,r_0007_0008__ideas)
+      &amp; isA(EVENTX14,r_0007_0016__gives)
       &amp; arg0(EVENTX14) = ENTITYX10
       &amp; arg2(EVENTX14) = ENTITYX11
       &amp; arg1(EVENTX14) = ENTITYX12
       &amp; isA(ENTITYX10,z_0007_1015)
-      &amp; isA(ENTITYX11,r__glasses_0007_0018)
-      &amp; isA(ENTITYX12,r__colour_0007_0021)
-      &amp; genv(ENTITYX12) = r__their_0007_0019
+      &amp; isA(ENTITYX11,r_0007_0018__glasses)
+      &amp; isA(ENTITYX12,r_0007_0021__colour)
+      &amp; genv(ENTITYX12) = r_0007_0019__their
       &amp; attrib2(ENTITYX12) = ATTRIBX13
-      &amp; isA(ATTRIBX13,r__yellow_0007_0020)
-      &amp; isA(EVENTX16,r__is_0007_0002)
+      &amp; isA(ATTRIBX13,r_0007_0020__yellow)
+      &amp; isA(EVENTX16,r_0007_0002__is)
       &amp; foc(EVENTX16) = ENTITYX2
       &amp; clf(EVENTX16) = ENTITYX10 ) ).
 

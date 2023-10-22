@@ -82,8 +82,8 @@ No notice was visible now for the shutters were up .
 <!-- 0067_0006_cnt -->
 <g id="node5" class="node">
 <title>0067_0006_cnt</title>
-<ellipse fill="none" stroke="black" cx="187.44" cy="-192" rx="48.99" ry="18"/>
-<text text-anchor="middle" x="187.44" y="-188.3" font-family="fixed" font-size="14.00">for_[cnt]</text>
+<ellipse fill="none" stroke="black" cx="187.44" cy="-192" rx="44.39" ry="18"/>
+<text text-anchor="middle" x="187.44" y="-188.3" font-family="fixed" font-size="14.00">for[cnt]</text>
 </g>
 <!-- 0067_0006_cnt&#45;&gt;0067_0003 -->
 <g id="edge4" class="edge">
@@ -101,8 +101,8 @@ No notice was visible now for the shutters were up .
 <!-- 0067_0006_cnt&#45;&gt;0067_0009_0067_0010 -->
 <g id="edge5" class="edge">
 <title>0067_0006_cnt&#45;&gt;0067_0009_0067_0010</title>
-<path fill="none" stroke="black" d="M210.78,-176.19C232.55,-162.38 265.22,-141.66 289.42,-126.31"/>
-<polygon fill="black" stroke="black" points="291.35,-129.23 297.92,-120.92 287.6,-123.32 291.35,-129.23"/>
+<path fill="none" stroke="black" d="M210.48,-176.39C232.2,-162.61 264.97,-141.82 289.27,-126.41"/>
+<polygon fill="black" stroke="black" points="291.24,-129.3 297.81,-120.99 287.49,-123.39 291.24,-129.3"/>
 <text text-anchor="middle" x="302.94" y="-144.8" font-family="fixed" font-size="14.00">[restriction]</text>
 </g>
 <!-- 0067_0008 -->
@@ -134,43 +134,43 @@ No notice was visible now for the shutters were up .
 <!-- quantificational_0067_0001&#45;&gt;0067_0006_cnt -->
 <g id="edge8" class="edge">
 <title>quantificational_0067_0001&#45;&gt;0067_0006_cnt</title>
-<path fill="none" stroke="black" d="M116.83,-261.21C130.14,-248.35 148.65,-230.47 163.38,-216.24"/>
-<polygon fill="black" stroke="black" points="165.93,-218.65 170.69,-209.18 161.06,-213.61 165.93,-218.65"/>
+<path fill="none" stroke="black" d="M116.83,-261.21C130.22,-248.27 148.88,-230.24 163.66,-215.97"/>
+<polygon fill="black" stroke="black" points="166.22,-218.36 170.98,-208.9 161.36,-213.33 166.22,-218.36"/>
 <text text-anchor="middle" x="174.44" y="-231.8" font-family="fixed" font-size="14.00">[scope]</text>
 </g>
 </g>
 </svg>
 <br>
 <pre>
-arc(quantificational_r__No_0067_0001,r__notice_0067_0002,restriction).
-arc(quantificational_r__No_0067_0001,r__for_0067_0006_cnt,scope).
-arc(r__was_0067_0003,r__notice_0067_0002,arg0).
-arc(r__was_0067_0003,r__visible_0067_0004,prd2).
-arc(r__was_0067_0003,r__now_0067_0005,tmp4).
-arc(r__for_0067_0006_cnt,r__was_0067_0003,scope).
-arc(r__for_0067_0006_cnt,r__were_0067_0009_r__up_0067_0010,restriction).
-arc(r__were_0067_0009_r__up_0067_0010,r__shutters_0067_0008,arg0).
+arc(r_0067_0001__quantificational__No,r_0067_0002__notice,restriction).
+arc(r_0067_0001__quantificational__No,r_0067_0006__for_cnt,scope).
+arc(r_0067_0003__was,r_0067_0002__notice,arg0).
+arc(r_0067_0003__was,r_0067_0004__visible,prd2).
+arc(r_0067_0003__was,r_0067_0005__now,tmp4).
+arc(r_0067_0006__for_cnt,r_0067_0003__was,scope).
+arc(r_0067_0006__for_cnt,r_0067_0009__were_up,restriction).
+arc(r_0067_0009__were_up,r_0067_0008__shutters,arg0).
 
 </pre>
 <br>
 <pre>
 fof(id_67_A_JOYCE_1914,axiom,
     ? [QUANTX2,CONNX5,EVENTX7,EVENTX8,ENTITYX1,ENTITYX6,ATTRIBX3,QUALITYX4] :
-      ( isA(ENTITYX6,r__shutters_0067_0008)
-      &amp; isA(ATTRIBX3,r__visible_0067_0004)
-      &amp; isA(QUALITYX4,r__now_0067_0005)
-      &amp; isA(QUANTX2,quantificational_r__No_0067_0001)
+      ( isA(ENTITYX6,r_0067_0008__shutters)
+      &amp; isA(ATTRIBX3,r_0067_0004__visible)
+      &amp; isA(QUALITYX4,r_0067_0005__now)
+      &amp; isA(QUANTX2,r_0067_0001__quantificational__No)
       &amp; restriction(QUANTX2) = ENTITYX1
-      &amp; isA(ENTITYX1,r__notice_0067_0002)
+      &amp; isA(ENTITYX1,r_0067_0002__notice)
       &amp; scope(QUANTX2) = CONNX5
-      &amp; isA(CONNX5,r__for_0067_0006_cnt)
+      &amp; isA(CONNX5,r_0067_0006__for_cnt)
       &amp; scope(CONNX5) = EVENTX8
-      &amp; isA(EVENTX8,r__was_0067_0003)
+      &amp; isA(EVENTX8,r_0067_0003__was)
       &amp; arg0(EVENTX8) = ENTITYX1
       &amp; prd2(EVENTX8) = ATTRIBX3
       &amp; tmp4(EVENTX8) = QUALITYX4
       &amp; restriction(CONNX5) = EVENTX7
-      &amp; isA(EVENTX7,r__were_0067_0009_r__up_0067_0010)
+      &amp; isA(EVENTX7,r_0067_0009__were_up)
       &amp; arg0(EVENTX7) = ENTITYX6 ) ).
 
 

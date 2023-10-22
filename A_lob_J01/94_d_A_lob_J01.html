@@ -64,7 +64,7 @@ Stand the beaker on a hot plate and keep the solution warm for 30 minutes to coa
 <title>0094_0001&#45;&gt;0094_0007</title>
 <path fill="none" stroke="black" d="M134.6,-173.8C134.6,-162.16 134.6,-146.55 134.6,-133.24"/>
 <polygon fill="black" stroke="black" points="138.1,-133.18 134.6,-123.18 131.1,-133.18 138.1,-133.18"/>
-<text text-anchor="middle" x="162.1" y="-144.8" font-family="fixed" font-size="14.00">on_[loc]</text>
+<text text-anchor="middle" x="158.6" y="-144.8" font-family="fixed" font-size="14.00">on[loc]</text>
 </g>
 <!-- 0094_0006 -->
 <g id="node4" class="node">
@@ -168,7 +168,7 @@ Stand the beaker on a hot plate and keep the solution warm for 30 minutes to coa
 <title>0094_0009&#45;&gt;0094_0014_0094_0015</title>
 <path fill="none" stroke="black" d="M423.95,-91.82C449.14,-78.09 490.5,-55.56 520.55,-39.19"/>
 <polygon fill="black" stroke="black" points="522.37,-42.18 529.48,-34.32 519.02,-36.03 522.37,-42.18"/>
-<text text-anchor="middle" x="522.1" y="-57.8" font-family="fixed" font-size="14.00">for_[tmp]</text>
+<text text-anchor="middle" x="518.6" y="-57.8" font-family="fixed" font-size="14.00">for[tmp]</text>
 </g>
 <!-- 0094_0017&#45;&gt;0094_0011 -->
 <g id="edge9" class="edge">
@@ -207,49 +207,49 @@ Stand the beaker on a hot plate and keep the solution warm for 30 minutes to coa
 </svg>
 <br>
 <pre>
-arc(cnt_0094_1011,r__keep_0094_0009,scope).
-arc(cnt_0094_1011,r__coagulate_0094_0017,restriction).
-arc(imperative_0094_1002,r__and_0094_0008,scope).
-arc(r__Stand_0094_0001,r__beaker_0094_0003,arg1).
-arc(r__Stand_0094_0001,r__plate_0094_0007,r__on_0094_0004_loc).
-arc(r__plate_0094_0007,r__hot_0094_0006,attrib2).
-arc(r__and_0094_0008,cnt_0094_1011,conj2).
-arc(r__and_0094_0008,r__Stand_0094_0001,conj1).
-arc(r__keep_0094_0009,r__solution_0094_0011,arg1).
-arc(r__keep_0094_0009,r__warm_0094_0012,prd).
-arc(r__keep_0094_0009,r__30_0094_0014_r__minutes_0094_0015,r__for_0094_0013_tmp).
-arc(r__coagulate_0094_0017,r__solution_0094_0011,arg0).
-arc(r__coagulate_0094_0017,r__precipitate_0094_0019,arg1).
+arc(cnt_0094_1011,r_0094_0009__keep,scope).
+arc(cnt_0094_1011,r_0094_0017__coagulate,restriction).
+arc(imperative_0094_1002,r_0094_0008__and,scope).
+arc(r_0094_0001__Stand,r_0094_0003__beaker,arg1).
+arc(r_0094_0001__Stand,r_0094_0007__plate,r_0094_0004__on_loc).
+arc(r_0094_0007__plate,r_0094_0006__hot,attrib2).
+arc(r_0094_0008__and,cnt_0094_1011,conj2).
+arc(r_0094_0008__and,r_0094_0001__Stand,conj1).
+arc(r_0094_0009__keep,r_0094_0011__solution,arg1).
+arc(r_0094_0009__keep,r_0094_0012__warm,prd).
+arc(r_0094_0009__keep,r_0094_0014__30_minutes,r_0094_0013__for_tmp).
+arc(r_0094_0017__coagulate,r_0094_0011__solution,arg0).
+arc(r_0094_0017__coagulate,r_0094_0019__precipitate,arg1).
 
 </pre>
 <br>
 <pre>
 fof(id_94_A_lob_J01,axiom,
     ? [OPERATORX2,CONJX16,CONNX12,EVENTX14,EVENTX15,EVENTX7,ENTITYX8,ENTITYX10,ENTITYX13,ENTITYX4,ENTITYX5,ATTRIBX9,ATTRIBX6] :
-      ( isA(ENTITYX4,r__beaker_0094_0003)
-      &amp; isA(ENTITYX5,r__plate_0094_0007)
+      ( isA(ENTITYX4,r_0094_0003__beaker)
+      &amp; isA(ENTITYX5,r_0094_0007__plate)
       &amp; attrib2(ENTITYX5) = ATTRIBX6
-      &amp; isA(ENTITYX8,r__solution_0094_0011)
-      &amp; isA(ENTITYX10,r__30_0094_0014_r__minutes_0094_0015)
-      &amp; isA(ENTITYX13,r__precipitate_0094_0019)
-      &amp; isA(ATTRIBX6,r__hot_0094_0006)
-      &amp; isA(ATTRIBX9,r__warm_0094_0012)
+      &amp; isA(ENTITYX8,r_0094_0011__solution)
+      &amp; isA(ENTITYX10,r_0094_0014__30_minutes)
+      &amp; isA(ENTITYX13,r_0094_0019__precipitate)
+      &amp; isA(ATTRIBX6,r_0094_0006__hot)
+      &amp; isA(ATTRIBX9,r_0094_0012__warm)
       &amp; isA(OPERATORX2,imperative_0094_1002)
       &amp; scope(OPERATORX2) = CONJX16
-      &amp; isA(CONJX16,r__and_0094_0008)
+      &amp; isA(CONJX16,r_0094_0008__and)
       &amp; conj1(CONJX16) = EVENTX7
-      &amp; isA(EVENTX7,r__Stand_0094_0001)
+      &amp; isA(EVENTX7,r_0094_0001__Stand)
       &amp; arg1(EVENTX7) = ENTITYX4
-      &amp; r__on_0094_0004_loc(EVENTX7) = ENTITYX5
+      &amp; r_0094_0004__on_loc(EVENTX7) = ENTITYX5
       &amp; conj2(CONJX16) = CONNX12
       &amp; isA(CONNX12,cnt_0094_1011)
       &amp; scope(CONNX12) = EVENTX15
-      &amp; isA(EVENTX15,r__keep_0094_0009)
+      &amp; isA(EVENTX15,r_0094_0009__keep)
       &amp; arg1(EVENTX15) = ENTITYX8
       &amp; prd(EVENTX15) = ATTRIBX9
-      &amp; r__for_0094_0013_tmp(EVENTX15) = ENTITYX10
+      &amp; r_0094_0013__for_tmp(EVENTX15) = ENTITYX10
       &amp; restriction(CONNX12) = EVENTX14
-      &amp; isA(EVENTX14,r__coagulate_0094_0017)
+      &amp; isA(EVENTX14,r_0094_0017__coagulate)
       &amp; arg0(EVENTX14) = ENTITYX8
       &amp; arg1(EVENTX14) = ENTITYX13 ) ).
 

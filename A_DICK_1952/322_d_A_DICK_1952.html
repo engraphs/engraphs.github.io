@@ -338,80 +338,80 @@
 </svg>
 <br>
 <pre>
-arc(cnt_0412_1016,quantificational_r__everyone_0412_0032,restriction).
-arc(cnt_0412_1016,r__guards_0412_0028,scope).
-arc(quantificational_r__all_0412_0008,r__races_0412_0009,restriction).
-arc(quantificational_r__all_0412_0008,r__have_0412_0010,scope).
-arc(quantificational_r__everyone_0412_0032,r__keeping_0412_0031,scope).
-arc(quantificational_r__everyone_0412_0032,z_0412_1020,restriction).
-arc(question_0412_1002,r__Do_0412_0002_r__remember_0412_0004,scope).
-arc(r__Do_0412_0002_r__remember_0412_0004,r__you_0412_0003,arg0).
-arc(r__Do_0412_0002_r__remember_0412_0004,r__legend_0412_0006,arg1).
-arc(r__legend_0412_0006,r__myth_0412_0012,prn4).
-arc(r__have_0412_0010,r__legend_0412_0006,arg1).
-arc(r__have_0412_0010,r__races_0412_0009,arg0).
-arc(r__myth_0412_0012,r__and_0412_0018,r__of_0412_0013).
-arc(r__treasure_0412_0016,r__buried_0412_0015,attrib2).
-arc(r__and_0412_0018,r__treasure_0412_0016,conj1).
-arc(r__and_0412_0018,r__dragon_0412_0020,conj2).
-arc(r__dragon_0412_0020,r__serpent_0412_0023,prn4).
-arc(r__watches_0412_0025,r__serpent_0412_0023,arg0).
-arc(r__watches_0412_0025,r__it_0412_0026,arg1).
-arc(r__guards_0412_0028,r__dragon_0412_0020,arg0).
-arc(r__guards_0412_0028,r__it_0412_0029,arg1).
-arc(r__keeping_0412_0031,r__dragon_0412_0020,arg0).
-arc(r__keeping_0412_0031,r__away_0412_0033,dir3).
-arc(r__keeping_0412_0031,z_0412_1020,arg1).
+arc(cnt_0412_1016,r_0412_0028__guards,scope).
+arc(cnt_0412_1016,r_0412_0032__quantificational__everyone,restriction).
+arc(question_0412_1002,r_0412_0002__Do_remember,scope).
+arc(r_0412_0002__Do_remember,r_0412_0003__you,arg0).
+arc(r_0412_0002__Do_remember,r_0412_0006__legend,arg1).
+arc(r_0412_0006__legend,r_0412_0012__myth,prn4).
+arc(r_0412_0008__quantificational__all,r_0412_0009__races,restriction).
+arc(r_0412_0008__quantificational__all,r_0412_0010__have,scope).
+arc(r_0412_0010__have,r_0412_0006__legend,arg1).
+arc(r_0412_0010__have,r_0412_0009__races,arg0).
+arc(r_0412_0012__myth,r_0412_0018__and,r_0412_0013__of).
+arc(r_0412_0016__treasure,r_0412_0015__buried,attrib2).
+arc(r_0412_0018__and,r_0412_0016__treasure,conj1).
+arc(r_0412_0018__and,r_0412_0020__dragon,conj2).
+arc(r_0412_0020__dragon,r_0412_0023__serpent,prn4).
+arc(r_0412_0025__watches,r_0412_0023__serpent,arg0).
+arc(r_0412_0025__watches,r_0412_0026__it,arg1).
+arc(r_0412_0028__guards,r_0412_0020__dragon,arg0).
+arc(r_0412_0028__guards,r_0412_0029__it,arg1).
+arc(r_0412_0031__keeping,r_0412_0020__dragon,arg0).
+arc(r_0412_0031__keeping,r_0412_0033__away,dir3).
+arc(r_0412_0031__keeping,z_0412_1020,arg1).
+arc(r_0412_0032__quantificational__everyone,r_0412_0031__keeping,scope).
+arc(r_0412_0032__quantificational__everyone,z_0412_1020,restriction).
 
 </pre>
 <br>
 <pre>
 fof(id_412_A_DICK_1952,axiom,
     ? [TREASUREX13,TREASUREX15,OPERATORX2,EVENTX24,CONNX17,QUANTX19,EVENTX22,EVENTX23,EVENTX14,QUANTX5,EVENTX6,ENTITYX3,ENTITYX7,ENTITYX8,TREASUREX9,ENTITYX11,ENTITYX12,ENTITYX18,ENTITYX4,ATTRIBX10,QUALITYX21] :
-      ( isA(QUANTX5,quantificational_r__all_0412_0008)
+      ( isA(QUANTX5,r_0412_0008__quantificational__all)
       &amp; restriction(QUANTX5) = ENTITYX4
-      &amp; isA(ENTITYX4,r__races_0412_0009)
+      &amp; isA(ENTITYX4,r_0412_0009__races)
       &amp; scope(QUANTX5) = EVENTX6
-      &amp; isA(EVENTX6,r__have_0412_0010)
+      &amp; isA(EVENTX6,r_0412_0010__have)
       &amp; arg1(EVENTX6) = ENTITYX3
       &amp; arg0(EVENTX6) = ENTITYX4
-      &amp; isA(ENTITYX3,r__legend_0412_0006)
+      &amp; isA(ENTITYX3,r_0412_0006__legend)
       &amp; prn4(ENTITYX3) = ENTITYX7
-      &amp; isA(ENTITYX7,r__myth_0412_0012)
-      &amp; r__of_0412_0013(ENTITYX7) = ENTITYX8
-      &amp; isA(ENTITYX8,r__and_0412_0018)
+      &amp; isA(ENTITYX7,r_0412_0012__myth)
+      &amp; r_0412_0013__of(ENTITYX7) = ENTITYX8
+      &amp; isA(ENTITYX8,r_0412_0018__and)
       &amp; conj1(ENTITYX8) = TREASUREX9
       &amp; conj2(ENTITYX8) = ENTITYX11
-      &amp; isA(TREASUREX9,r__treasure_0412_0016)
+      &amp; isA(TREASUREX9,r_0412_0016__treasure)
       &amp; attrib2(TREASUREX9) = ATTRIBX10
       &amp; isA(CONNX17,cnt_0412_1016)
       &amp; scope(CONNX17) = EVENTX23
-      &amp; isA(EVENTX23,r__guards_0412_0028)
+      &amp; isA(EVENTX23,r_0412_0028__guards)
       &amp; arg0(EVENTX23) = ENTITYX11
       &amp; arg1(EVENTX23) = TREASUREX15
       &amp; restriction(CONNX17) = QUANTX19
-      &amp; isA(QUANTX19,quantificational_r__everyone_0412_0032)
+      &amp; isA(QUANTX19,r_0412_0032__quantificational__everyone)
       &amp; restriction(QUANTX19) = ENTITYX18
       &amp; isA(ENTITYX18,z_0412_1020)
       &amp; scope(QUANTX19) = EVENTX22
-      &amp; isA(EVENTX22,r__keeping_0412_0031)
+      &amp; isA(EVENTX22,r_0412_0031__keeping)
       &amp; arg0(EVENTX22) = ENTITYX11
       &amp; arg1(EVENTX22) = ENTITYX18
       &amp; dir3(EVENTX22) = QUALITYX21
-      &amp; isA(ENTITYX11,r__dragon_0412_0020)
+      &amp; isA(ENTITYX11,r_0412_0020__dragon)
       &amp; prn4(ENTITYX11) = ENTITYX12
-      &amp; isA(EVENTX14,r__watches_0412_0025)
+      &amp; isA(EVENTX14,r_0412_0025__watches)
       &amp; arg0(EVENTX14) = ENTITYX12
       &amp; arg1(EVENTX14) = TREASUREX13
-      &amp; isA(ENTITYX12,r__serpent_0412_0023)
-      &amp; isA(TREASUREX13,r__it_0412_0026)
-      &amp; isA(TREASUREX15,r__it_0412_0029)
-      &amp; isA(ATTRIBX10,r__buried_0412_0015)
-      &amp; isA(QUALITYX21,r__away_0412_0033)
+      &amp; isA(ENTITYX12,r_0412_0023__serpent)
+      &amp; isA(TREASUREX13,r_0412_0026__it)
+      &amp; isA(TREASUREX15,r_0412_0029__it)
+      &amp; isA(ATTRIBX10,r_0412_0015__buried)
+      &amp; isA(QUALITYX21,r_0412_0033__away)
       &amp; isA(OPERATORX2,question_0412_1002)
       &amp; scope(OPERATORX2) = EVENTX24
-      &amp; isA(EVENTX24,r__Do_0412_0002_r__remember_0412_0004)
-      &amp; arg0(EVENTX24) = r__you_0412_0003
+      &amp; isA(EVENTX24,r_0412_0002__Do_remember)
+      &amp; arg0(EVENTX24) = r_0412_0003__you
       &amp; arg1(EVENTX24) = ENTITYX3 ) ).
 
 

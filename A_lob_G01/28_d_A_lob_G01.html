@@ -83,9 +83,9 @@ They had invented the poll-tax .
 </svg>
 <br>
 <pre>
-arc(r__had_0036_0002,r__invented_0036_0003,catenative).
-arc(r__invented_0036_0003,r__They_0036_0001,arg0).
-arc(r__invented_0036_0003,r__poll_tax_0036_0005,arg1).
+arc(r_0036_0002__had,r_0036_0003__invented,catenative).
+arc(r_0036_0003__invented,r_0036_0001__They,arg0).
+arc(r_0036_0003__invented,r_0036_0005__poll_tax,arg1).
 
 </pre>
 <br>
@@ -93,11 +93,11 @@ arc(r__invented_0036_0003,r__poll_tax_0036_0005,arg1).
 fof(id_36_A_lob_G01,axiom,
     ? [CATENATIVEX1,EVENTX4,EVENTX3,ENTITYX2] :
       ( CATENATIVEX1 = EVENTX3
-      &amp; isA(EVENTX3,r__invented_0036_0003)
-      &amp; arg0(EVENTX3) = r__They_0036_0001
+      &amp; isA(EVENTX3,r_0036_0003__invented)
+      &amp; arg0(EVENTX3) = r_0036_0001__They
       &amp; arg1(EVENTX3) = ENTITYX2
-      &amp; isA(ENTITYX2,r__poll_tax_0036_0005)
-      &amp; isA(EVENTX4,r__had_0036_0002)
+      &amp; isA(ENTITYX2,r_0036_0005__poll_tax)
+      &amp; isA(EVENTX4,r_0036_0002__had)
       &amp; catenative(EVENTX4) = CATENATIVEX1 ) ).
 
 

@@ -95,8 +95,8 @@ There 's the fan that you have to stop in order to reboot it .
 <!-- 0039_0010_cnt -->
 <g id="node6" class="node">
 <title>0039_0010_cnt</title>
-<ellipse fill="none" stroke="black" cx="167" cy="-279" rx="72.59" ry="18"/>
-<text text-anchor="middle" x="167" y="-275.3" font-family="fixed" font-size="14.00">in_order_[cnt]</text>
+<ellipse fill="none" stroke="black" cx="167" cy="-279" rx="68.49" ry="18"/>
+<text text-anchor="middle" x="167" y="-275.3" font-family="fixed" font-size="14.00">in_order[cnt]</text>
 </g>
 <!-- 0039_0010_cnt&#45;&gt;0039_0007 -->
 <g id="edge5" class="edge">
@@ -142,14 +142,14 @@ There 's the fan that you have to stop in order to reboot it .
 </svg>
 <br>
 <pre>
-arc(r___apos_s_0039_0002,r__fan_0039_0004,arg0).
-arc(r__have_0039_0007,r__stop_0039_0009,catenative).
-arc(r__stop_0039_0009,r__fan_0039_0004,arg1).
-arc(r__stop_0039_0009,r__you_0039_0006,arg0).
-arc(r__in_order_0039_0010_cnt,r__have_0039_0007,scope).
-arc(r__in_order_0039_0010_cnt,r__reboot_0039_0012,restriction).
-arc(r__reboot_0039_0012,r__you_0039_0006,arg0).
-arc(r__reboot_0039_0012,r__it_0039_0013,arg1).
+arc(r_0039_0002___apos_s,r_0039_0004__fan,arg0).
+arc(r_0039_0007__have,r_0039_0009__stop,catenative).
+arc(r_0039_0009__stop,r_0039_0004__fan,arg1).
+arc(r_0039_0009__stop,r_0039_0006__you,arg0).
+arc(r_0039_0010__in_order_cnt,r_0039_0007__have,scope).
+arc(r_0039_0010__in_order_cnt,r_0039_0012__reboot,restriction).
+arc(r_0039_0012__reboot,r_0039_0006__you,arg0).
+arc(r_0039_0012__reboot,r_0039_0013__it,arg1).
 
 </pre>
 <br>
@@ -157,19 +157,19 @@ arc(r__reboot_0039_0012,r__it_0039_0013,arg1).
 fof(id_39_A_PaulFellows,axiom,
     ? [STATEX2,EVENTX7,CONNX4,EVENTX5,EVENTX6,EVENTX3,ENTITYX1] :
       ( STATEX2 = EVENTX3
-      &amp; isA(EVENTX3,r__stop_0039_0009)
-      &amp; arg0(EVENTX3) = r__you_0039_0006
+      &amp; isA(EVENTX3,r_0039_0009__stop)
+      &amp; arg0(EVENTX3) = r_0039_0006__you
       &amp; arg1(EVENTX3) = ENTITYX1
-      &amp; isA(CONNX4,r__in_order_0039_0010_cnt)
+      &amp; isA(CONNX4,r_0039_0010__in_order_cnt)
       &amp; scope(CONNX4) = EVENTX6
-      &amp; isA(EVENTX6,r__have_0039_0007)
+      &amp; isA(EVENTX6,r_0039_0007__have)
       &amp; catenative(EVENTX6) = STATEX2
       &amp; restriction(CONNX4) = EVENTX5
-      &amp; isA(EVENTX5,r__reboot_0039_0012)
-      &amp; arg0(EVENTX5) = r__you_0039_0006
-      &amp; arg1(EVENTX5) = r__it_0039_0013
-      &amp; isA(ENTITYX1,r__fan_0039_0004)
-      &amp; isA(EVENTX7,r___apos_s_0039_0002)
+      &amp; isA(EVENTX5,r_0039_0012__reboot)
+      &amp; arg0(EVENTX5) = r_0039_0006__you
+      &amp; arg1(EVENTX5) = r_0039_0013__it
+      &amp; isA(ENTITYX1,r_0039_0004__fan)
+      &amp; isA(EVENTX7,r_0039_0002___apos_s)
       &amp; arg0(EVENTX7) = ENTITYX1 ) ).
 
 

@@ -176,17 +176,17 @@ Whichever of these articles is used , the process is always the same .
 </svg>
 <br>
 <pre>
-arc(r__is_0026_0005,r__used_0026_0006,catenative).
-arc(r__used_0026_0006,z_0026_1003,arg1).
-arc(r__used_0026_0006,z_0026_1008,arg1).
-arc(r__is_0026_0010,r__process_0026_0009,arg0).
-arc(r__is_0026_0010,r__always_0026_0011,tmp5).
-arc(r__is_0026_0010,z_0026_1003,abs).
-arc(r__is_0026_0010,z_0026_1008,abs).
-arc(r__is_0026_0010,z_0026_1013,prd2).
-arc(z_0026_1003,r__articles_0026_0004,r__of_0026_0002).
-arc(z_0026_1008,r__articles_0026_0004,r__of_0026_0002).
-arc(z_0026_1013,r__same_0026_0013,attrib2).
+arc(r_0026_0005__is,r_0026_0006__used,catenative).
+arc(r_0026_0006__used,z_0026_1003,arg1).
+arc(r_0026_0006__used,z_0026_1008,arg1).
+arc(r_0026_0010__is,r_0026_0009__process,arg0).
+arc(r_0026_0010__is,r_0026_0011__always,tmp5).
+arc(r_0026_0010__is,z_0026_1003,abs).
+arc(r_0026_0010__is,z_0026_1008,abs).
+arc(r_0026_0010__is,z_0026_1013,prd2).
+arc(z_0026_1003,r_0026_0004__articles,r_0026_0002__of).
+arc(z_0026_1008,r_0026_0004__articles,r_0026_0002__of).
+arc(z_0026_1013,r_0026_0013__same,attrib2).
 
 </pre>
 <br>
@@ -194,20 +194,20 @@ arc(z_0026_1013,r__same_0026_0013,attrib2).
 fof(id_26_A_BEETON_1861,axiom,
     ? [CATENATIVEX4,EVENTX14,EVENTX7,EVENTX6,ENTITYX1,ENTITYX9,ENTITYX11,ENTITYX2,QUALITYX10,ATTRIBX12] :
       ( CATENATIVEX4 = EVENTX6
-      &amp; isA(EVENTX6,r__used_0026_0006)
+      &amp; isA(EVENTX6,r_0026_0006__used)
       &amp; arg1(EVENTX6) = ENTITYX1
-      &amp; isA(EVENTX7,r__is_0026_0005)
+      &amp; isA(EVENTX7,r_0026_0005__is)
       &amp; catenative(EVENTX7) = CATENATIVEX4
       &amp; isA(ENTITYX1,z_0026_1008)
       &amp; isA(ENTITYX1,z_0026_1003)
-      &amp; r__of_0026_0002(ENTITYX1) = ENTITYX2
-      &amp; isA(ENTITYX2,r__articles_0026_0004)
-      &amp; isA(ENTITYX9,r__process_0026_0009)
+      &amp; r_0026_0002__of(ENTITYX1) = ENTITYX2
+      &amp; isA(ENTITYX2,r_0026_0004__articles)
+      &amp; isA(ENTITYX9,r_0026_0009__process)
       &amp; isA(ENTITYX11,z_0026_1013)
       &amp; attrib2(ENTITYX11) = ATTRIBX12
-      &amp; isA(QUALITYX10,r__always_0026_0011)
-      &amp; isA(ATTRIBX12,r__same_0026_0013)
-      &amp; isA(EVENTX14,r__is_0026_0010)
+      &amp; isA(QUALITYX10,r_0026_0011__always)
+      &amp; isA(ATTRIBX12,r_0026_0013__same)
+      &amp; isA(EVENTX14,r_0026_0010__is)
       &amp; abs(EVENTX14) = ENTITYX1
       &amp; arg0(EVENTX14) = ENTITYX9
       &amp; tmp5(EVENTX14) = QUALITYX10

@@ -83,9 +83,9 @@ Destroying a fuel tank ..... 150 points
 </svg>
 <br>
 <pre>
-arc(r__Destroying_0024_0001,r__fuel_0024_0003_r__tank_0024_0004,arg1).
-arc(z_0024_1007,r__Destroying_0024_0001,arg0).
-arc(z_0024_1007,r__150_0024_0006_r__points_0024_0007,prd2).
+arc(r_0024_0001__Destroying,r_0024_0003__fuel_tank,arg1).
+arc(z_0024_1007,r_0024_0001__Destroying,arg0).
+arc(z_0024_1007,r_0024_0006__150_points,prd2).
 
 </pre>
 <br>
@@ -93,10 +93,10 @@ arc(z_0024_1007,r__150_0024_0006_r__points_0024_0007,prd2).
 fof(id_24_A_THRUST,axiom,
     ? [STATEX1,EVENTX8,EVENTX5,ENTITYX6,ENTITYX4] :
       ( STATEX1 = EVENTX5
-      &amp; isA(EVENTX5,r__Destroying_0024_0001)
+      &amp; isA(EVENTX5,r_0024_0001__Destroying)
       &amp; arg1(EVENTX5) = ENTITYX4
-      &amp; isA(ENTITYX4,r__fuel_0024_0003_r__tank_0024_0004)
-      &amp; isA(ENTITYX6,r__150_0024_0006_r__points_0024_0007)
+      &amp; isA(ENTITYX4,r_0024_0003__fuel_tank)
+      &amp; isA(ENTITYX6,r_0024_0006__150_points)
       &amp; isA(EVENTX8,z_0024_1007)
       &amp; arg0(EVENTX8) = STATEX1
       &amp; prd2(EVENTX8) = ENTITYX6 ) ).

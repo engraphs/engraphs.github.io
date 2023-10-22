@@ -90,7 +90,7 @@ You have seen this notice in an international magazine .
 <title>0024_0003&#45;&gt;0024_0009</title>
 <path fill="none" stroke="black" d="M128.83,-177.13C137.45,-170.74 147.78,-163.03 157,-156 168.79,-147 181.7,-136.96 192.81,-128.25"/>
 <polygon fill="black" stroke="black" points="195.21,-130.81 200.92,-121.88 190.89,-125.31 195.21,-130.81"/>
-<text text-anchor="middle" x="202" y="-144.8" font-family="fixed" font-size="14.00">in_[loc]</text>
+<text text-anchor="middle" x="198.5" y="-144.8" font-family="fixed" font-size="14.00">in[loc]</text>
 </g>
 <!-- 0024_0008 -->
 <g id="node6" class="node">
@@ -109,11 +109,11 @@ You have seen this notice in an international magazine .
 </svg>
 <br>
 <pre>
-arc(r__have_0024_0002,r__seen_0024_0003,catenative).
-arc(r__seen_0024_0003,r__You_0024_0001,arg0).
-arc(r__seen_0024_0003,r__notice_0024_0005,arg1).
-arc(r__seen_0024_0003,r__magazine_0024_0009,r__in_0024_0006_loc).
-arc(r__magazine_0024_0009,r__international_0024_0008,attrib2).
+arc(r_0024_0002__have,r_0024_0003__seen,catenative).
+arc(r_0024_0003__seen,r_0024_0001__You,arg0).
+arc(r_0024_0003__seen,r_0024_0005__notice,arg1).
+arc(r_0024_0003__seen,r_0024_0009__magazine,r_0024_0006__in_loc).
+arc(r_0024_0009__magazine,r_0024_0008__international,attrib2).
 
 </pre>
 <br>
@@ -121,15 +121,15 @@ arc(r__magazine_0024_0009,r__international_0024_0008,attrib2).
 fof(id_24_A_fce_0100_2001_06,axiom,
     ? [CATENATIVEX1,EVENTX6,EVENTX5,ENTITYX2,ENTITYX3,ATTRIBX4] :
       ( CATENATIVEX1 = EVENTX5
-      &amp; isA(EVENTX5,r__seen_0024_0003)
-      &amp; arg0(EVENTX5) = r__You_0024_0001
+      &amp; isA(EVENTX5,r_0024_0003__seen)
+      &amp; arg0(EVENTX5) = r_0024_0001__You
       &amp; arg1(EVENTX5) = ENTITYX2
-      &amp; r__in_0024_0006_loc(EVENTX5) = ENTITYX3
-      &amp; isA(ENTITYX2,r__notice_0024_0005)
-      &amp; isA(ENTITYX3,r__magazine_0024_0009)
+      &amp; r_0024_0006__in_loc(EVENTX5) = ENTITYX3
+      &amp; isA(ENTITYX2,r_0024_0005__notice)
+      &amp; isA(ENTITYX3,r_0024_0009__magazine)
       &amp; attrib2(ENTITYX3) = ATTRIBX4
-      &amp; isA(ATTRIBX4,r__international_0024_0008)
-      &amp; isA(EVENTX6,r__have_0024_0002)
+      &amp; isA(ATTRIBX4,r_0024_0008__international)
+      &amp; isA(EVENTX6,r_0024_0002__have)
       &amp; catenative(EVENTX6) = CATENATIVEX1 ) ).
 
 

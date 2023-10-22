@@ -97,10 +97,10 @@ The hedgehog has undergone an extraordinary evolution .
 </svg>
 <br>
 <pre>
-arc(r__has_0110_0003,r__undergone_0110_0004,catenative).
-arc(r__undergone_0110_0004,r__hedgehog_0110_0002,arg0).
-arc(r__undergone_0110_0004,r__evolution_0110_0007,arg1).
-arc(r__evolution_0110_0007,r__extraordinary_0110_0006,attrib2).
+arc(r_0110_0003__has,r_0110_0004__undergone,catenative).
+arc(r_0110_0004__undergone,r_0110_0002__hedgehog,arg0).
+arc(r_0110_0004__undergone,r_0110_0007__evolution,arg1).
+arc(r_0110_0007__evolution,r_0110_0006__extraordinary,attrib2).
 
 </pre>
 <br>
@@ -108,14 +108,14 @@ arc(r__evolution_0110_0007,r__extraordinary_0110_0006,attrib2).
 fof(id_110_A_Hedgehog,axiom,
     ? [CATENATIVEX2,EVENTX6,EVENTX5,ENTITYX1,ENTITYX3,ATTRIBX4] :
       ( CATENATIVEX2 = EVENTX5
-      &amp; isA(EVENTX5,r__undergone_0110_0004)
+      &amp; isA(EVENTX5,r_0110_0004__undergone)
       &amp; arg0(EVENTX5) = ENTITYX1
       &amp; arg1(EVENTX5) = ENTITYX3
-      &amp; isA(ENTITYX1,r__hedgehog_0110_0002)
-      &amp; isA(ENTITYX3,r__evolution_0110_0007)
+      &amp; isA(ENTITYX1,r_0110_0002__hedgehog)
+      &amp; isA(ENTITYX3,r_0110_0007__evolution)
       &amp; attrib2(ENTITYX3) = ATTRIBX4
-      &amp; isA(ATTRIBX4,r__extraordinary_0110_0006)
-      &amp; isA(EVENTX6,r__has_0110_0003)
+      &amp; isA(ATTRIBX4,r_0110_0006__extraordinary)
+      &amp; isA(EVENTX6,r_0110_0003__has)
       &amp; catenative(EVENTX6) = CATENATIVEX2 ) ).
 
 

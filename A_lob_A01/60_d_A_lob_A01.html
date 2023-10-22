@@ -135,32 +135,32 @@ He did not mention personal talks with Dr Adenauer , the West German Chancellor 
 </svg>
 <br>
 <pre>
-arc(r__did_0063_0002_r__mention_0063_0004,r__He_0063_0001,arg0).
-arc(r__did_0063_0002_r__mention_0063_0004,r__talks_0063_0006,arg1).
-arc(r__not_0063_0003,r__did_0063_0002_r__mention_0063_0004,scope).
-arc(r__talks_0063_0006,r__personal_0063_0005,attrib1).
-arc(r__talks_0063_0006,r__Dr_0063_0008_r__Adenauer_0063_0009,r__with_0063_0007).
-arc(r__Dr_0063_0008_r__Adenauer_0063_0009,r__West_0063_0012_r__Chancellor_0063_0014,prn4).
-arc(r__West_0063_0012_r__Chancellor_0063_0014,r__German_0063_0013,attrib3).
+arc(r_0063_0002__did_mention,r_0063_0001__He,arg0).
+arc(r_0063_0002__did_mention,r_0063_0006__talks,arg1).
+arc(r_0063_0003__not,r_0063_0002__did_mention,scope).
+arc(r_0063_0006__talks,r_0063_0005__personal,attrib1).
+arc(r_0063_0006__talks,r_0063_0008__Dr_Adenauer,r_0063_0007__with).
+arc(r_0063_0008__Dr_Adenauer,r_0063_0012__West_Chancellor,prn4).
+arc(r_0063_0012__West_Chancellor,r_0063_0013__German,attrib3).
 
 </pre>
 <br>
 <pre>
 fof(id_63_A_lob_A01,axiom,
     ? [OPERATORX5,EVENTX6,ENTITYX1,ENTITYX3,ATTRIBX2,ATTRIBX4] :
-      ( isA(ENTITYX1,r__talks_0063_0006)
+      ( isA(ENTITYX1,r_0063_0006__talks)
       &amp; attrib1(ENTITYX1) = ATTRIBX2
-      &amp; r__with_0063_0007(ENTITYX1) = r__Dr_0063_0008_r__Adenauer_0063_0009
-      &amp; isA(ENTITYX3,r__West_0063_0012_r__Chancellor_0063_0014)
+      &amp; r_0063_0007__with(ENTITYX1) = r_0063_0008__Dr_Adenauer
+      &amp; isA(ENTITYX3,r_0063_0012__West_Chancellor)
       &amp; attrib3(ENTITYX3) = ATTRIBX4
-      &amp; isA(r__Dr_0063_0008_r__Adenauer_0063_0009,r__Dr_0063_0008_r__Adenauer_0063_0009)
-      &amp; prn4(r__Dr_0063_0008_r__Adenauer_0063_0009) = ENTITYX3
-      &amp; isA(ATTRIBX2,r__personal_0063_0005)
-      &amp; isA(ATTRIBX4,r__German_0063_0013)
-      &amp; isA(OPERATORX5,r__not_0063_0003)
+      &amp; isA(r_0063_0008__Dr_Adenauer,r_0063_0008__Dr_Adenauer)
+      &amp; prn4(r_0063_0008__Dr_Adenauer) = ENTITYX3
+      &amp; isA(ATTRIBX2,r_0063_0005__personal)
+      &amp; isA(ATTRIBX4,r_0063_0013__German)
+      &amp; isA(OPERATORX5,r_0063_0003__not)
       &amp; scope(OPERATORX5) = EVENTX6
-      &amp; isA(EVENTX6,r__did_0063_0002_r__mention_0063_0004)
-      &amp; arg0(EVENTX6) = r__He_0063_0001
+      &amp; isA(EVENTX6,r_0063_0002__did_mention)
+      &amp; arg0(EVENTX6) = r_0063_0001__He
       &amp; arg1(EVENTX6) = ENTITYX1 ) ).
 
 

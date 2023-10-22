@@ -174,39 +174,39 @@ The well - known principles in Wiszniewski v Central Manchester Health Authority
 </svg>
 <br>
 <pre>
-arc(r__known_0032_0004,r__well_0032_0002,mnr1).
-arc(r__known_0032_0004,r__principles_0032_0005,arg0).
-arc(r__principles_0032_0005,r__Wiszniewski_0032_0007,r__in_0032_0006).
-arc(r__Wiszniewski_0032_0007,r__Central_0032_0009_r__Manchester_0032_0010_r__Health_0032_0011_r__Authority_0032_0012,r__v_0032_0008).
-arc(r__Wiszniewski_0032_0007,r__1998_0032_0014,prn3).
-arc(r__Wiszniewski_0032_0007,r__PIQR_0032_0016_r__P324_0032_0017,prn4).
-arc(r__plainly_0032_0018,r__support_0032_0019,scope).
-arc(r__support_0032_0019,r__principles_0032_0005,arg0).
-arc(r__support_0032_0019,r__inference_0032_0022,arg1).
-arc(r__inference_0032_0022,r__such_0032_0020,attrib1).
+arc(r_0032_0004__known,r_0032_0002__well,mnr1).
+arc(r_0032_0004__known,r_0032_0005__principles,arg0).
+arc(r_0032_0005__principles,r_0032_0007__Wiszniewski,r_0032_0006__in).
+arc(r_0032_0007__Wiszniewski,r_0032_0009__Central_Manchester_Health_Authority,r_0032_0008__v).
+arc(r_0032_0007__Wiszniewski,r_0032_0014__1998,prn3).
+arc(r_0032_0007__Wiszniewski,r_0032_0016__PIQR_P324,prn4).
+arc(r_0032_0018__plainly,r_0032_0019__support,scope).
+arc(r_0032_0019__support,r_0032_0005__principles,arg0).
+arc(r_0032_0019__support,r_0032_0022__inference,arg1).
+arc(r_0032_0022__inference,r_0032_0020__such,attrib1).
 
 </pre>
 <br>
 <pre>
 fof(id_32_A_Major_case,axiom,
     ? [OPERATORX5,EVENTX8,EVENTX3,ENTITYX1,ENTITYX6,ENTITYX4,QUALITYX2,ATTRIBX7] :
-      ( isA(EVENTX3,r__known_0032_0004)
+      ( isA(EVENTX3,r_0032_0004__known)
       &amp; arg0(EVENTX3) = ENTITYX1
       &amp; mnr1(EVENTX3) = QUALITYX2
-      &amp; isA(ENTITYX1,r__principles_0032_0005)
-      &amp; r__in_0032_0006(ENTITYX1) = r__Wiszniewski_0032_0007
-      &amp; isA(ENTITYX4,r__1998_0032_0014)
-      &amp; isA(ENTITYX6,r__inference_0032_0022)
+      &amp; isA(ENTITYX1,r_0032_0005__principles)
+      &amp; r_0032_0006__in(ENTITYX1) = r_0032_0007__Wiszniewski
+      &amp; isA(ENTITYX4,r_0032_0014__1998)
+      &amp; isA(ENTITYX6,r_0032_0022__inference)
       &amp; attrib1(ENTITYX6) = ATTRIBX7
-      &amp; isA(QUALITYX2,r__well_0032_0002)
-      &amp; isA(r__Wiszniewski_0032_0007,r__Wiszniewski_0032_0007)
-      &amp; r__v_0032_0008(r__Wiszniewski_0032_0007) = r__Central_0032_0009_r__Manchester_0032_0010_r__Health_0032_0011_r__Authority_0032_0012
-      &amp; prn3(r__Wiszniewski_0032_0007) = ENTITYX4
-      &amp; prn4(r__Wiszniewski_0032_0007) = r__PIQR_0032_0016_r__P324_0032_0017
-      &amp; isA(ATTRIBX7,r__such_0032_0020)
-      &amp; isA(OPERATORX5,r__plainly_0032_0018)
+      &amp; isA(QUALITYX2,r_0032_0002__well)
+      &amp; isA(r_0032_0007__Wiszniewski,r_0032_0007__Wiszniewski)
+      &amp; r_0032_0008__v(r_0032_0007__Wiszniewski) = r_0032_0009__Central_Manchester_Health_Authority
+      &amp; prn3(r_0032_0007__Wiszniewski) = ENTITYX4
+      &amp; prn4(r_0032_0007__Wiszniewski) = r_0032_0016__PIQR_P324
+      &amp; isA(ATTRIBX7,r_0032_0020__such)
+      &amp; isA(OPERATORX5,r_0032_0018__plainly)
       &amp; scope(OPERATORX5) = EVENTX8
-      &amp; isA(EVENTX8,r__support_0032_0019)
+      &amp; isA(EVENTX8,r_0032_0019__support)
       &amp; arg0(EVENTX8) = ENTITYX1
       &amp; arg1(EVENTX8) = ENTITYX6 ) ).
 

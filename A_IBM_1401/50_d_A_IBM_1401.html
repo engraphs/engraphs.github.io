@@ -122,29 +122,29 @@ The Report Program Generator is an example of what IBM Programming Systems can a
 </svg>
 <br>
 <pre>
-arc(r__is_0071_0005,r__Report_0071_0002_r__Program_0071_0003_r__Generator_0071_0004,arg0).
-arc(r__is_0071_0005,r__example_0071_0007,prd2).
-arc(r__example_0071_0007,z_0071_1007,r__of_0071_0008).
-arc(r__can_0071_0013,r__accomplish_0071_0014,scope).
-arc(r__accomplish_0071_0014,r__IBM_0071_0010_r__Programming_0071_0011_r__Systems_0071_0012,arg0).
-arc(r__accomplish_0071_0014,z_0071_1007,arg1).
+arc(r_0071_0005__is,r_0071_0002__Report_Program_Generator,arg0).
+arc(r_0071_0005__is,r_0071_0007__example,prd2).
+arc(r_0071_0007__example,z_0071_1007,r_0071_0008__of).
+arc(r_0071_0013__can,r_0071_0014__accomplish,scope).
+arc(r_0071_0014__accomplish,r_0071_0010__IBM_Programming_Systems,arg0).
+arc(r_0071_0014__accomplish,z_0071_1007,arg1).
 
 </pre>
 <br>
 <pre>
 fof(id_71_A_IBM_1401,axiom,
     ? [EVENTX8,OPERATORX5,EVENTX6,REPORT_GENERATORX1,ENTITYX2,ENTITYX3,ENTITYX4] :
-      ( isA(REPORT_GENERATORX1,r__Report_0071_0002_r__Program_0071_0003_r__Generator_0071_0004)
-      &amp; isA(ENTITYX2,r__example_0071_0007)
-      &amp; r__of_0071_0008(ENTITYX2) = ENTITYX3
-      &amp; isA(OPERATORX5,r__can_0071_0013)
+      ( isA(REPORT_GENERATORX1,r_0071_0002__Report_Program_Generator)
+      &amp; isA(ENTITYX2,r_0071_0007__example)
+      &amp; r_0071_0008__of(ENTITYX2) = ENTITYX3
+      &amp; isA(OPERATORX5,r_0071_0013__can)
       &amp; scope(OPERATORX5) = EVENTX6
-      &amp; isA(EVENTX6,r__accomplish_0071_0014)
+      &amp; isA(EVENTX6,r_0071_0014__accomplish)
       &amp; arg1(EVENTX6) = ENTITYX3
       &amp; arg0(EVENTX6) = ENTITYX4
       &amp; isA(ENTITYX3,z_0071_1007)
-      &amp; isA(ENTITYX4,r__IBM_0071_0010_r__Programming_0071_0011_r__Systems_0071_0012)
-      &amp; isA(EVENTX8,r__is_0071_0005)
+      &amp; isA(ENTITYX4,r_0071_0010__IBM_Programming_Systems)
+      &amp; isA(EVENTX8,r_0071_0005__is)
       &amp; arg0(EVENTX8) = REPORT_GENERATORX1
       &amp; prd2(EVENTX8) = ENTITYX2 ) ).
 

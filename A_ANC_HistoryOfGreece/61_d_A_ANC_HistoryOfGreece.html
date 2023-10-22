@@ -77,21 +77,21 @@ The Aegean Islands played their part .
 </svg>
 <br>
 <pre>
-arc(r__played_0103_0004,r__Aegean_0103_0002_r__Islands_0103_0003,arg0).
-arc(r__played_0103_0004,r__part_0103_0006,arg1).
-arc(r__part_0103_0006,r__Aegean_0103_0002_r__Islands_0103_0003,genv).
+arc(r_0103_0004__played,r_0103_0002__Aegean_Islands,arg0).
+arc(r_0103_0004__played,r_0103_0006__part,arg1).
+arc(r_0103_0006__part,r_0103_0002__Aegean_Islands,genv).
 
 </pre>
 <br>
 <pre>
 fof(id_103_A_ANC_HistoryOfGreece,axiom,
     ? [ISLANDSX2,EVENTX3,ENTITYX1] :
-      ( isA(ENTITYX1,r__part_0103_0006)
+      ( isA(ENTITYX1,r_0103_0006__part)
       &amp; genv(ENTITYX1) = ISLANDSX2
-      &amp; ISLANDSX2 = r__Aegean_0103_0002_r__Islands_0103_0003
-      &amp; isA(r__Aegean_0103_0002_r__Islands_0103_0003,r__Aegean_0103_0002_r__Islands_0103_0003)
-      &amp; isA(EVENTX3,r__played_0103_0004)
-      &amp; arg0(EVENTX3) = r__Aegean_0103_0002_r__Islands_0103_0003
+      &amp; ISLANDSX2 = r_0103_0002__Aegean_Islands
+      &amp; isA(r_0103_0002__Aegean_Islands,r_0103_0002__Aegean_Islands)
+      &amp; isA(EVENTX3,r_0103_0004__played)
+      &amp; arg0(EVENTX3) = r_0103_0002__Aegean_Islands
       &amp; arg1(EVENTX3) = ENTITYX1 ) ).
 
 

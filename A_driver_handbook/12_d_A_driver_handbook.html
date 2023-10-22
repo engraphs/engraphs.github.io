@@ -96,23 +96,23 @@ Construction zones usually have reduced speed zones .
 </svg>
 <br>
 <pre>
-arc(r__usually_0016_0003,r__have_0016_0004,scope).
-arc(r__have_0016_0004,r__Construction_0016_0001_r__zones_0016_0002,arg0).
-arc(r__have_0016_0004,r__speed_0016_0006_r__zones_0016_0007,arg1).
-arc(r__speed_0016_0006_r__zones_0016_0007,r__reduced_0016_0005,attrib1).
+arc(r_0016_0003__usually,r_0016_0004__have,scope).
+arc(r_0016_0004__have,r_0016_0001__Construction_zones,arg0).
+arc(r_0016_0004__have,r_0016_0006__speed_zones,arg1).
+arc(r_0016_0006__speed_zones,r_0016_0005__reduced,attrib1).
 
 </pre>
 <br>
 <pre>
 fof(id_16_A_driver_handbook,axiom,
     ? [OPERATORX2,EVENTX5,ENTITYX1,ENTITYX3,ATTRIBX4] :
-      ( isA(ENTITYX1,r__Construction_0016_0001_r__zones_0016_0002)
-      &amp; isA(ENTITYX3,r__speed_0016_0006_r__zones_0016_0007)
+      ( isA(ENTITYX1,r_0016_0001__Construction_zones)
+      &amp; isA(ENTITYX3,r_0016_0006__speed_zones)
       &amp; attrib1(ENTITYX3) = ATTRIBX4
-      &amp; isA(ATTRIBX4,r__reduced_0016_0005)
-      &amp; isA(OPERATORX2,r__usually_0016_0003)
+      &amp; isA(ATTRIBX4,r_0016_0005__reduced)
+      &amp; isA(OPERATORX2,r_0016_0003__usually)
       &amp; scope(OPERATORX2) = EVENTX5
-      &amp; isA(EVENTX5,r__have_0016_0004)
+      &amp; isA(EVENTX5,r_0016_0004__have)
       &amp; arg0(EVENTX5) = ENTITYX1
       &amp; arg1(EVENTX5) = ENTITYX3 ) ).
 

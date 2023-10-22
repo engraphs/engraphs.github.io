@@ -122,29 +122,29 @@ Section 6 : Reduced Speeds : Around Children ( First Section )
 </svg>
 <br>
 <pre>
-arc(r__Section_0029_0001_r__6_0029_0002,r__Speeds_0029_0005,prn4).
-arc(r__Speeds_0029_0005,r__Reduced_0029_0004,attrib1).
-arc(r__Speeds_0029_0005,r__Children_0029_0008,r__Around_0029_0007).
-arc(r__Speeds_0029_0005,r__Section_0029_0011,prn6).
-arc(r__Section_0029_0011,r__First_0029_0010,attrib1).
-arc(z_0029_1009,r__Section_0029_0001_r__6_0029_0002,z_0029_1002).
+arc(r_0029_0001__Section_6,r_0029_0005__Speeds,prn4).
+arc(r_0029_0005__Speeds,r_0029_0004__Reduced,attrib1).
+arc(r_0029_0005__Speeds,r_0029_0008__Children,r_0029_0007__Around).
+arc(r_0029_0005__Speeds,r_0029_0011__Section,prn6).
+arc(r_0029_0011__Section,r_0029_0010__First,attrib1).
+arc(z_0029_1009,r_0029_0001__Section_6,z_0029_1002).
 
 </pre>
 <br>
 <pre>
 fof(id_29_A_driver_handbook,axiom,
     ? [EVENTX10,ENTITYX3,ENTITYX4,ENTITYX6,ENTITYX7,ATTRIBX5,ATTRIBX8] :
-      ( isA(ENTITYX3,r__Section_0029_0001_r__6_0029_0002)
+      ( isA(ENTITYX3,r_0029_0001__Section_6)
       &amp; prn4(ENTITYX3) = ENTITYX4
-      &amp; isA(ENTITYX4,r__Speeds_0029_0005)
+      &amp; isA(ENTITYX4,r_0029_0005__Speeds)
       &amp; attrib1(ENTITYX4) = ATTRIBX5
-      &amp; r__Around_0029_0007(ENTITYX4) = ENTITYX6
+      &amp; r_0029_0007__Around(ENTITYX4) = ENTITYX6
       &amp; prn6(ENTITYX4) = ENTITYX7
-      &amp; isA(ENTITYX6,r__Children_0029_0008)
-      &amp; isA(ENTITYX7,r__Section_0029_0011)
+      &amp; isA(ENTITYX6,r_0029_0008__Children)
+      &amp; isA(ENTITYX7,r_0029_0011__Section)
       &amp; attrib1(ENTITYX7) = ATTRIBX8
-      &amp; isA(ATTRIBX5,r__Reduced_0029_0004)
-      &amp; isA(ATTRIBX8,r__First_0029_0010)
+      &amp; isA(ATTRIBX5,r_0029_0004__Reduced)
+      &amp; isA(ATTRIBX8,r_0029_0010__First)
       &amp; isA(EVENTX10,z_0029_1009)
       &amp; z_0029_1002(EVENTX10) = ENTITYX3 ) ).
 

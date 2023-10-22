@@ -161,15 +161,15 @@
 </svg>
 <br>
 <pre>
-arc(cnt_0037_1001,r__be_0037_0006,restriction).
-arc(cnt_0037_1001,r__has_0037_0011,scope).
-arc(r__be_0037_0006,r__book_0037_0004,arg0).
-arc(r__be_0037_0006,r__successful_0037_0007,prd2).
-arc(r__has_0037_0011,r__show_0037_0013,catenative).
-arc(r__show_0037_0013,r__author_0037_0010,arg0).
-arc(r__show_0037_0013,r__importance_0037_0015,arg1).
-arc(r__importance_0037_0015,r__relationships_0037_0018,r__of_0037_0016).
-arc(r__relationships_0037_0018,r__characters_0037_0020,r__between_0037_0019).
+arc(cnt_0037_1001,r_0037_0006__be,restriction).
+arc(cnt_0037_1001,r_0037_0011__has,scope).
+arc(r_0037_0006__be,r_0037_0004__book,arg0).
+arc(r_0037_0006__be,r_0037_0007__successful,prd2).
+arc(r_0037_0011__has,r_0037_0013__show,catenative).
+arc(r_0037_0013__show,r_0037_0010__author,arg0).
+arc(r_0037_0013__show,r_0037_0015__importance,arg1).
+arc(r_0037_0015__importance,r_0037_0018__relationships,r_0037_0016__of).
+arc(r_0037_0018__relationships,r_0037_0020__characters,r_0037_0019__between).
 
 </pre>
 <br>
@@ -177,24 +177,24 @@ arc(r__relationships_0037_0018,r__characters_0037_0020,r__between_0037_0019).
 fof(id_37_A_fce_0102_2001_06,axiom,
     ? [STATEX7,CONNX2,EVENTX12,EVENTX11,EVENTX5,ENTITYX6,ENTITYX8,ENTITYX9,ENTITYX10,ENTITYX3,ATTRIBX4] :
       ( STATEX7 = EVENTX11
-      &amp; isA(EVENTX11,r__show_0037_0013)
+      &amp; isA(EVENTX11,r_0037_0013__show)
       &amp; arg0(EVENTX11) = ENTITYX6
       &amp; arg1(EVENTX11) = ENTITYX8
-      &amp; isA(ENTITYX3,r__book_0037_0004)
-      &amp; isA(ENTITYX6,r__author_0037_0010)
-      &amp; isA(ENTITYX8,r__importance_0037_0015)
-      &amp; r__of_0037_0016(ENTITYX8) = ENTITYX9
-      &amp; isA(ENTITYX9,r__relationships_0037_0018)
-      &amp; r__between_0037_0019(ENTITYX9) = ENTITYX10
-      &amp; isA(ENTITYX10,r__characters_0037_0020)
-      &amp; isA(ATTRIBX4,r__successful_0037_0007)
+      &amp; isA(ENTITYX3,r_0037_0004__book)
+      &amp; isA(ENTITYX6,r_0037_0010__author)
+      &amp; isA(ENTITYX8,r_0037_0015__importance)
+      &amp; r_0037_0016__of(ENTITYX8) = ENTITYX9
+      &amp; isA(ENTITYX9,r_0037_0018__relationships)
+      &amp; r_0037_0019__between(ENTITYX9) = ENTITYX10
+      &amp; isA(ENTITYX10,r_0037_0020__characters)
+      &amp; isA(ATTRIBX4,r_0037_0007__successful)
       &amp; isA(CONNX2,cnt_0037_1001)
       &amp; restriction(CONNX2) = EVENTX5
-      &amp; isA(EVENTX5,r__be_0037_0006)
+      &amp; isA(EVENTX5,r_0037_0006__be)
       &amp; arg0(EVENTX5) = ENTITYX3
       &amp; prd2(EVENTX5) = ATTRIBX4
       &amp; scope(CONNX2) = EVENTX12
-      &amp; isA(EVENTX12,r__has_0037_0011)
+      &amp; isA(EVENTX12,r_0037_0011__has)
       &amp; catenative(EVENTX12) = STATEX7 ) ).
 
 

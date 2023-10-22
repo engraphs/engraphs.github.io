@@ -127,16 +127,16 @@ And up to ten years ' imprisonment can be imposed on anyone convicted of sabotag
 <!-- 0040_0009&#45;&gt;0040_0006 -->
 <g id="edge5" class="edge">
 <title>0040_0009&#45;&gt;0040_0006</title>
-<path fill="none" stroke="black" d="M117.52,-264.1C108.55,-258.54 99.2,-251.44 92.44,-243 87.06,-236.27 83.08,-227.85 80.2,-219.85"/>
-<polygon fill="black" stroke="black" points="83.46,-218.57 77.11,-210.09 76.79,-220.68 83.46,-218.57"/>
-<text text-anchor="middle" x="113.94" y="-231.8" font-family="fixed" font-size="14.00">[arg1]</text>
+<path fill="none" stroke="black" d="M120.55,-263.34C112.46,-257.72 103.91,-250.77 97.44,-243 91.66,-236.05 86.9,-227.48 83.17,-219.41"/>
+<polygon fill="black" stroke="black" points="86.29,-217.79 79.16,-209.95 79.85,-220.53 86.29,-217.79"/>
+<text text-anchor="middle" x="118.94" y="-231.8" font-family="fixed" font-size="14.00">[arg1]</text>
 </g>
 <!-- 0040_0009&#45;&gt;z_0040_1011 -->
 <g id="edge6" class="edge">
 <title>0040_0009&#45;&gt;z_0040_1011</title>
-<path fill="none" stroke="black" d="M148.55,-261.01C151.23,-250.45 156.05,-237.18 164.44,-228 170.44,-221.44 177.93,-215.98 185.8,-211.47"/>
-<polygon fill="black" stroke="black" points="187.54,-214.51 194.78,-206.77 184.3,-208.3 187.54,-214.51"/>
-<text text-anchor="middle" x="190.44" y="-231.8" font-family="fixed" font-size="14.00">on_[clr]</text>
+<path fill="none" stroke="black" d="M150.88,-261.1C154.93,-250.57 161.36,-237.31 170.44,-228 176.18,-222.13 183.11,-217.02 190.3,-212.66"/>
+<polygon fill="black" stroke="black" points="192.45,-215.46 199.47,-207.53 189.03,-209.36 192.45,-215.46"/>
+<text text-anchor="middle" x="193.44" y="-231.8" font-family="fixed" font-size="14.00">on[clr]</text>
 </g>
 <!-- 0040_0012 -->
 <g id="node9" class="node">
@@ -162,22 +162,22 @@ And up to ten years ' imprisonment can be imposed on anyone convicted of sabotag
 <title>0040_0012&#45;&gt;0040_0014</title>
 <path fill="none" stroke="black" d="M383.44,-260.8C383.44,-249.16 383.44,-233.55 383.44,-220.24"/>
 <polygon fill="black" stroke="black" points="386.94,-220.18 383.44,-210.18 379.94,-220.18 386.94,-220.18"/>
-<text text-anchor="middle" x="407.94" y="-231.8" font-family="fixed" font-size="14.00">of_[clr]</text>
+<text text-anchor="middle" x="404.44" y="-231.8" font-family="fixed" font-size="14.00">of[clr]</text>
 </g>
 </g>
 </svg>
 <br>
 <pre>
-arc(quantificational_r__anyone_0040_0011,r__imposed_0040_0009,scope).
-arc(quantificational_r__anyone_0040_0011,z_0040_1011,restriction).
-arc(r__ten_0040_0003_r__years_0040_0004,r__up_to_0040_0002,quality1).
-arc(r__imprisonment_0040_0006,r__ten_0040_0003_r__years_0040_0004,genv).
-arc(r__can_0040_0007,r__be_0040_0008,scope).
-arc(r__be_0040_0008,quantificational_r__anyone_0040_0011,catenative).
-arc(r__imposed_0040_0009,r__imprisonment_0040_0006,arg1).
-arc(r__imposed_0040_0009,z_0040_1011,r__on_0040_0010_clr).
-arc(r__convicted_0040_0012,r__sabotage_0040_0014,r__of_0040_0013_clr).
-arc(r__convicted_0040_0012,z_0040_1011,arg0).
+arc(r_0040_0003__ten_years,r_0040_0002__up_to,quality1).
+arc(r_0040_0006__imprisonment,r_0040_0003__ten_years,genv).
+arc(r_0040_0007__can,r_0040_0008__be,scope).
+arc(r_0040_0008__be,r_0040_0011__quantificational__anyone,catenative).
+arc(r_0040_0009__imposed,r_0040_0006__imprisonment,arg1).
+arc(r_0040_0009__imposed,z_0040_1011,r_0040_0010__on_clr).
+arc(r_0040_0011__quantificational__anyone,r_0040_0009__imposed,scope).
+arc(r_0040_0011__quantificational__anyone,z_0040_1011,restriction).
+arc(r_0040_0012__convicted,r_0040_0014__sabotage,r_0040_0013__of_clr).
+arc(r_0040_0012__convicted,z_0040_1011,arg0).
 
 </pre>
 <br>
@@ -185,25 +185,25 @@ arc(r__convicted_0040_0012,z_0040_1011,arg0).
 fof(id_40_A_lob_A02,axiom,
     ? [CATENATIVEX5,OPERATORX4,EVENTX13,QUANTX8,EVENTX12,EVENTX10,ENTITYX1,ENTITYX7,ENTITYX9,ENTITYX2,QUALITYX3] :
       ( CATENATIVEX5 = QUANTX8
-      &amp; isA(QUANTX8,quantificational_r__anyone_0040_0011)
-      &amp; isA(EVENTX10,r__convicted_0040_0012)
+      &amp; isA(QUANTX8,r_0040_0011__quantificational__anyone)
+      &amp; isA(EVENTX10,r_0040_0012__convicted)
       &amp; arg0(EVENTX10) = ENTITYX7
-      &amp; r__of_0040_0013_clr(EVENTX10) = ENTITYX9
+      &amp; r_0040_0013__of_clr(EVENTX10) = ENTITYX9
       &amp; isA(ENTITYX7,z_0040_1011)
       &amp; restriction(QUANTX8) = ENTITYX7
       &amp; scope(QUANTX8) = EVENTX12
-      &amp; isA(EVENTX12,r__imposed_0040_0009)
+      &amp; isA(EVENTX12,r_0040_0009__imposed)
       &amp; arg1(EVENTX12) = ENTITYX1
-      &amp; r__on_0040_0010_clr(EVENTX12) = ENTITYX7
-      &amp; isA(ENTITYX1,r__imprisonment_0040_0006)
+      &amp; r_0040_0010__on_clr(EVENTX12) = ENTITYX7
+      &amp; isA(ENTITYX1,r_0040_0006__imprisonment)
       &amp; genv(ENTITYX1) = ENTITYX2
-      &amp; isA(ENTITYX2,r__ten_0040_0003_r__years_0040_0004)
+      &amp; isA(ENTITYX2,r_0040_0003__ten_years)
       &amp; quality1(ENTITYX2) = QUALITYX3
-      &amp; isA(ENTITYX9,r__sabotage_0040_0014)
-      &amp; isA(QUALITYX3,r__up_to_0040_0002)
-      &amp; isA(OPERATORX4,r__can_0040_0007)
+      &amp; isA(ENTITYX9,r_0040_0014__sabotage)
+      &amp; isA(QUALITYX3,r_0040_0002__up_to)
+      &amp; isA(OPERATORX4,r_0040_0007__can)
       &amp; scope(OPERATORX4) = EVENTX13
-      &amp; isA(EVENTX13,r__be_0040_0008)
+      &amp; isA(EVENTX13,r_0040_0008__be)
       &amp; catenative(EVENTX13) = CATENATIVEX5 ) ).
 
 

@@ -78,7 +78,7 @@ The sect was begun in 1361 by Genkou JAKUSHITSU .
 <title>0102_0004&#45;&gt;0102_0006</title>
 <path fill="none" stroke="black" d="M111.25,-86.8C111.25,-75.16 111.25,-59.55 111.25,-46.24"/>
 <polygon fill="black" stroke="black" points="114.75,-46.18 111.25,-36.18 107.75,-46.18 114.75,-46.18"/>
-<text text-anchor="middle" x="140.25" y="-57.8" font-family="fixed" font-size="14.00">in_[tmp]</text>
+<text text-anchor="middle" x="137.25" y="-57.8" font-family="fixed" font-size="14.00">in[tmp]</text>
 </g>
 <!-- 0102_0008_0102_0009 -->
 <g id="node5" class="node">
@@ -91,16 +91,16 @@ The sect was begun in 1361 by Genkou JAKUSHITSU .
 <title>0102_0004&#45;&gt;0102_0008_0102_0009</title>
 <path fill="none" stroke="black" d="M135.78,-90.72C160.68,-77.24 199.63,-56.15 228.86,-40.33"/>
 <polygon fill="black" stroke="black" points="230.85,-43.23 237.98,-35.39 227.52,-37.07 230.85,-43.23"/>
-<text text-anchor="middle" x="247.75" y="-57.8" font-family="fixed" font-size="14.00">[arg0]by_[lgs]</text>
+<text text-anchor="middle" x="244.75" y="-57.8" font-family="fixed" font-size="14.00">[arg0]by[lgs]</text>
 </g>
 </g>
 </svg>
 <br>
 <pre>
-arc(r__was_0102_0003,r__begun_0102_0004,catenative).
-arc(r__begun_0102_0004,r__sect_0102_0002,arg1).
-arc(r__begun_0102_0004,r__1361_0102_0006,r__in_0102_0005_tmp).
-arc(r__begun_0102_0004,r__Genkou_0102_0008_r__JAKUSHITSU_0102_0009,arg0_r__by_0102_0007_lgs).
+arc(r_0102_0003__was,r_0102_0004__begun,catenative).
+arc(r_0102_0004__begun,r_0102_0002__sect,arg1).
+arc(r_0102_0004__begun,r_0102_0006__1361,r_0102_0005__in_tmp).
+arc(r_0102_0004__begun,r_0102_0008__Genkou_JAKUSHITSU,arg0_by_lgs).
 
 </pre>
 <br>
@@ -108,13 +108,13 @@ arc(r__begun_0102_0004,r__Genkou_0102_0008_r__JAKUSHITSU_0102_0009,arg0_r__by_01
 fof(id_102_A_KYOTO_2,axiom,
     ? [CATENATIVEX2,EVENTX5,EVENTX4,ENTITYX1,ENTITYX3] :
       ( CATENATIVEX2 = EVENTX4
-      &amp; isA(EVENTX4,r__begun_0102_0004)
-      &amp; arg0_r__by_0102_0007_lgs(EVENTX4) = r__Genkou_0102_0008_r__JAKUSHITSU_0102_0009
+      &amp; isA(EVENTX4,r_0102_0004__begun)
+      &amp; arg0_by_lgs(EVENTX4) = r_0102_0008__Genkou_JAKUSHITSU
       &amp; arg1(EVENTX4) = ENTITYX1
-      &amp; r__in_0102_0005_tmp(EVENTX4) = ENTITYX3
-      &amp; isA(ENTITYX1,r__sect_0102_0002)
-      &amp; isA(ENTITYX3,r__1361_0102_0006)
-      &amp; isA(EVENTX5,r__was_0102_0003)
+      &amp; r_0102_0005__in_tmp(EVENTX4) = ENTITYX3
+      &amp; isA(ENTITYX1,r_0102_0002__sect)
+      &amp; isA(ENTITYX3,r_0102_0006__1361)
+      &amp; isA(EVENTX5,r_0102_0003__was)
       &amp; catenative(EVENTX5) = CATENATIVEX2 ) ).
 
 

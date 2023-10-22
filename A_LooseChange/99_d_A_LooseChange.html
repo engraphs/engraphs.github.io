@@ -122,29 +122,29 @@ Fried chicken or maybe poached fish in wine .
 </svg>
 <br>
 <pre>
-arc(r__or_0177_0003,r__Fried_0177_0001_r__chicken_0177_0002,conj1).
-arc(r__or_0177_0003,r__fish_0177_0006,conj2).
-arc(r__fish_0177_0006,r__maybe_0177_0004,quality1).
-arc(r__fish_0177_0006,r__poached_0177_0005,attrib2).
-arc(r__fish_0177_0006,r__wine_0177_0008,r__in_0177_0007).
-arc(z_0177_1009,r__or_0177_0003,z_0177_1002).
+arc(r_0177_0003__or,r_0177_0001__Fried_chicken,conj1).
+arc(r_0177_0003__or,r_0177_0006__fish,conj2).
+arc(r_0177_0006__fish,r_0177_0004__maybe,quality1).
+arc(r_0177_0006__fish,r_0177_0005__poached,attrib2).
+arc(r_0177_0006__fish,r_0177_0008__wine,r_0177_0007__in).
+arc(z_0177_1009,r_0177_0003__or,z_0177_1002).
 
 </pre>
 <br>
 <pre>
 fof(id_177_A_LooseChange,axiom,
     ? [EVENTX10,ENTITYX3,ENTITYX4,ENTITYX5,ENTITYX8,QUALITYX6,ATTRIBX7] :
-      ( isA(ENTITYX3,r__or_0177_0003)
+      ( isA(ENTITYX3,r_0177_0003__or)
       &amp; conj1(ENTITYX3) = ENTITYX4
       &amp; conj2(ENTITYX3) = ENTITYX5
-      &amp; isA(ENTITYX4,r__Fried_0177_0001_r__chicken_0177_0002)
-      &amp; isA(ENTITYX5,r__fish_0177_0006)
+      &amp; isA(ENTITYX4,r_0177_0001__Fried_chicken)
+      &amp; isA(ENTITYX5,r_0177_0006__fish)
       &amp; quality1(ENTITYX5) = QUALITYX6
       &amp; attrib2(ENTITYX5) = ATTRIBX7
-      &amp; r__in_0177_0007(ENTITYX5) = ENTITYX8
-      &amp; isA(ENTITYX8,r__wine_0177_0008)
-      &amp; isA(QUALITYX6,r__maybe_0177_0004)
-      &amp; isA(ATTRIBX7,r__poached_0177_0005)
+      &amp; r_0177_0007__in(ENTITYX5) = ENTITYX8
+      &amp; isA(ENTITYX8,r_0177_0008__wine)
+      &amp; isA(QUALITYX6,r_0177_0004__maybe)
+      &amp; isA(ATTRIBX7,r_0177_0005__poached)
       &amp; isA(EVENTX10,z_0177_1009)
       &amp; z_0177_1002(EVENTX10) = ENTITYX3 ) ).
 

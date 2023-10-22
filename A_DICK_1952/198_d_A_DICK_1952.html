@@ -142,14 +142,14 @@ A dead skeleton of a city , that 's all . &rdquo;
 </svg>
 <br>
 <pre>
-arc(quantificational_r__all_0253_0010,r___apos_s_0253_0009,scope).
-arc(quantificational_r__all_0253_0010,z_0253_1009,restriction).
-arc(r__skeleton_0253_0003,quantificational_r__all_0253_0010,prn6).
-arc(r__skeleton_0253_0003,r__dead_0253_0002,attrib2).
-arc(r__skeleton_0253_0003,r__city_0253_0006,r__of_0253_0004).
-arc(r___apos_s_0253_0009,r__that_0253_0008,arg0).
-arc(r___apos_s_0253_0009,z_0253_1009,prd2).
-arc(z_0253_1011,r__skeleton_0253_0003,z_0253_1002).
+arc(r_0253_0003__skeleton,r_0253_0002__dead,attrib2).
+arc(r_0253_0003__skeleton,r_0253_0006__city,r_0253_0004__of).
+arc(r_0253_0003__skeleton,r_0253_0010__quantificational__all,prn6).
+arc(r_0253_0009___apos_s,r_0253_0008__that,arg0).
+arc(r_0253_0009___apos_s,z_0253_1009,prd2).
+arc(r_0253_0010__quantificational__all,r_0253_0009___apos_s,scope).
+arc(r_0253_0010__quantificational__all,z_0253_1009,restriction).
+arc(z_0253_1011,r_0253_0003__skeleton,z_0253_1002).
 
 </pre>
 <br>
@@ -157,19 +157,19 @@ arc(z_0253_1011,r__skeleton_0253_0003,z_0253_1002).
 fof(id_253_A_DICK_1952,axiom,
     ? [EVENTX6,EVENTX12,QUANTX8,EVENTX10,ENTITYX3,ENTITYX5,ENTITYX7,ATTRIBX4] :
       ( EVENTX6 = QUANTX8
-      &amp; isA(QUANTX8,quantificational_r__all_0253_0010)
+      &amp; isA(QUANTX8,r_0253_0010__quantificational__all)
       &amp; restriction(QUANTX8) = ENTITYX7
       &amp; isA(ENTITYX7,z_0253_1009)
       &amp; scope(QUANTX8) = EVENTX10
-      &amp; isA(EVENTX10,r___apos_s_0253_0009)
-      &amp; arg0(EVENTX10) = r__that_0253_0008
+      &amp; isA(EVENTX10,r_0253_0009___apos_s)
+      &amp; arg0(EVENTX10) = r_0253_0008__that
       &amp; prd2(EVENTX10) = ENTITYX7
-      &amp; isA(ENTITYX3,r__skeleton_0253_0003)
+      &amp; isA(ENTITYX3,r_0253_0003__skeleton)
       &amp; attrib2(ENTITYX3) = ATTRIBX4
-      &amp; r__of_0253_0004(ENTITYX3) = ENTITYX5
+      &amp; r_0253_0004__of(ENTITYX3) = ENTITYX5
       &amp; prn6(ENTITYX3) = EVENTX6
-      &amp; isA(ENTITYX5,r__city_0253_0006)
-      &amp; isA(ATTRIBX4,r__dead_0253_0002)
+      &amp; isA(ENTITYX5,r_0253_0006__city)
+      &amp; isA(ATTRIBX4,r_0253_0002__dead)
       &amp; isA(EVENTX12,z_0253_1011)
       &amp; z_0253_1002(EVENTX12) = ENTITYX3 ) ).
 

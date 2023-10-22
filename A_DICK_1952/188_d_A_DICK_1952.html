@@ -77,7 +77,7 @@ They reached the outskirts of the city at about the middle of the afternoon .
 <title>0242_0002&#45;&gt;0242_0011</title>
 <path fill="none" stroke="black" d="M154.19,-175.8C162.42,-169.7 171.95,-162.57 180.5,-156 192.41,-146.84 205.43,-136.55 216.53,-127.7"/>
 <polygon fill="black" stroke="black" points="218.97,-130.23 224.59,-121.25 214.6,-124.76 218.97,-130.23"/>
-<text text-anchor="middle" x="230" y="-144.8" font-family="fixed" font-size="14.00">at_[tmp]</text>
+<text text-anchor="middle" x="226.5" y="-144.8" font-family="fixed" font-size="14.00">at[tmp]</text>
 </g>
 <!-- 0242_0007 -->
 <g id="node5" class="node">
@@ -122,30 +122,30 @@ They reached the outskirts of the city at about the middle of the afternoon .
 </svg>
 <br>
 <pre>
-arc(r__reached_0242_0002,r__They_0242_0001,arg0).
-arc(r__reached_0242_0002,r__outskirts_0242_0004,arg1).
-arc(r__reached_0242_0002,r__middle_0242_0011,r__at_0242_0008_tmp).
-arc(r__outskirts_0242_0004,r__city_0242_0007,r__of_0242_0005).
-arc(r__middle_0242_0011,r__about_0242_0009,quality1).
-arc(r__middle_0242_0011,r__afternoon_0242_0014,r__of_0242_0012).
+arc(r_0242_0002__reached,r_0242_0001__They,arg0).
+arc(r_0242_0002__reached,r_0242_0004__outskirts,arg1).
+arc(r_0242_0002__reached,r_0242_0011__middle,r_0242_0008__at_tmp).
+arc(r_0242_0004__outskirts,r_0242_0007__city,r_0242_0005__of).
+arc(r_0242_0011__middle,r_0242_0009__about,quality1).
+arc(r_0242_0011__middle,r_0242_0014__afternoon,r_0242_0012__of).
 
 </pre>
 <br>
 <pre>
 fof(id_242_A_DICK_1952,axiom,
     ? [EVENTX6,ENTITYX1,ENTITYX3,ENTITYX5,ENTITYX2,QUALITYX4] :
-      ( isA(ENTITYX1,r__outskirts_0242_0004)
-      &amp; r__of_0242_0005(ENTITYX1) = ENTITYX2
-      &amp; isA(ENTITYX2,r__city_0242_0007)
-      &amp; isA(ENTITYX3,r__middle_0242_0011)
+      ( isA(ENTITYX1,r_0242_0004__outskirts)
+      &amp; r_0242_0005__of(ENTITYX1) = ENTITYX2
+      &amp; isA(ENTITYX2,r_0242_0007__city)
+      &amp; isA(ENTITYX3,r_0242_0011__middle)
       &amp; quality1(ENTITYX3) = QUALITYX4
-      &amp; r__of_0242_0012(ENTITYX3) = ENTITYX5
-      &amp; isA(ENTITYX5,r__afternoon_0242_0014)
-      &amp; isA(QUALITYX4,r__about_0242_0009)
-      &amp; isA(EVENTX6,r__reached_0242_0002)
-      &amp; arg0(EVENTX6) = r__They_0242_0001
+      &amp; r_0242_0012__of(ENTITYX3) = ENTITYX5
+      &amp; isA(ENTITYX5,r_0242_0014__afternoon)
+      &amp; isA(QUALITYX4,r_0242_0009__about)
+      &amp; isA(EVENTX6,r_0242_0002__reached)
+      &amp; arg0(EVENTX6) = r_0242_0001__They
       &amp; arg1(EVENTX6) = ENTITYX1
-      &amp; r__at_0242_0008_tmp(EVENTX6) = ENTITYX3 ) ).
+      &amp; r_0242_0008__at_tmp(EVENTX6) = ENTITYX3 ) ).
 
 
 </pre>

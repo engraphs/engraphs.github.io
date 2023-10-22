@@ -188,18 +188,18 @@ He promised that nothing should be allowed to increase the danger of our meeting
 </svg>
 <br>
 <pre>
-arc(quantificational_r__nothing_0084_0004,r__should_0084_0005,scope).
-arc(quantificational_r__nothing_0084_0004,z_0084_1004,restriction).
-arc(r__promised_0084_0002,quantificational_r__nothing_0084_0004,arg1).
-arc(r__promised_0084_0002,r__He_0084_0001,arg0).
-arc(r__should_0084_0005,r__be_0084_0006,scope).
-arc(r__be_0084_0006,r__allowed_0084_0007,catenative).
-arc(r__allowed_0084_0007,r__increase_0084_0009,arg1).
-arc(r__allowed_0084_0007,z_0084_1004,arg2).
-arc(r__increase_0084_0009,r__danger_0084_0011,arg1).
-arc(r__increase_0084_0009,z_0084_1004,arg0).
-arc(r__danger_0084_0011,r__meeting_0084_0014,r__of_0084_0012).
-arc(r__meeting_0084_0014,r__our_0084_0013,genv).
+arc(r_0084_0002__promised,r_0084_0001__He,arg0).
+arc(r_0084_0002__promised,r_0084_0004__quantificational__nothing,arg1).
+arc(r_0084_0004__quantificational__nothing,r_0084_0005__should,scope).
+arc(r_0084_0004__quantificational__nothing,z_0084_1004,restriction).
+arc(r_0084_0005__should,r_0084_0006__be,scope).
+arc(r_0084_0006__be,r_0084_0007__allowed,catenative).
+arc(r_0084_0007__allowed,r_0084_0009__increase,arg1).
+arc(r_0084_0007__allowed,z_0084_1004,arg2).
+arc(r_0084_0009__increase,r_0084_0011__danger,arg1).
+arc(r_0084_0009__increase,z_0084_1004,arg0).
+arc(r_0084_0011__danger,r_0084_0014__meeting,r_0084_0012__of).
+arc(r_0084_0014__meeting,r_0084_0013__our,genv).
 
 </pre>
 <br>
@@ -207,28 +207,28 @@ arc(r__meeting_0084_0014,r__our_0084_0013,genv).
 fof(id_84_A_lob_N01,axiom,
     ? [STATEX1,CATENATIVEX6,STATEX8,EVENTX14,QUANTX3,OPERATORX5,EVENTX13,EVENTX12,EVENTX11,ENTITYX2,ENTITYX9,ENTITYX10] :
       ( STATEX1 = QUANTX3
-      &amp; isA(QUANTX3,quantificational_r__nothing_0084_0004)
+      &amp; isA(QUANTX3,r_0084_0004__quantificational__nothing)
       &amp; restriction(QUANTX3) = ENTITYX2
       &amp; isA(ENTITYX2,z_0084_1004)
       &amp; scope(QUANTX3) = OPERATORX5
-      &amp; isA(OPERATORX5,r__should_0084_0005)
+      &amp; isA(OPERATORX5,r_0084_0005__should)
       &amp; scope(OPERATORX5) = EVENTX13
-      &amp; isA(EVENTX13,r__be_0084_0006)
+      &amp; isA(EVENTX13,r_0084_0006__be)
       &amp; catenative(EVENTX13) = CATENATIVEX6
       &amp; CATENATIVEX6 = EVENTX12
-      &amp; isA(EVENTX12,r__allowed_0084_0007)
+      &amp; isA(EVENTX12,r_0084_0007__allowed)
       &amp; arg2(EVENTX12) = ENTITYX2
       &amp; arg1(EVENTX12) = STATEX8
       &amp; STATEX8 = EVENTX11
-      &amp; isA(EVENTX11,r__increase_0084_0009)
+      &amp; isA(EVENTX11,r_0084_0009__increase)
       &amp; arg0(EVENTX11) = ENTITYX2
       &amp; arg1(EVENTX11) = ENTITYX9
-      &amp; isA(ENTITYX9,r__danger_0084_0011)
-      &amp; r__of_0084_0012(ENTITYX9) = ENTITYX10
-      &amp; isA(ENTITYX10,r__meeting_0084_0014)
-      &amp; genv(ENTITYX10) = r__our_0084_0013
-      &amp; isA(EVENTX14,r__promised_0084_0002)
-      &amp; arg0(EVENTX14) = r__He_0084_0001
+      &amp; isA(ENTITYX9,r_0084_0011__danger)
+      &amp; r_0084_0012__of(ENTITYX9) = ENTITYX10
+      &amp; isA(ENTITYX10,r_0084_0014__meeting)
+      &amp; genv(ENTITYX10) = r_0084_0013__our
+      &amp; isA(EVENTX14,r_0084_0002__promised)
+      &amp; arg0(EVENTX14) = r_0084_0001__He
       &amp; arg1(EVENTX14) = STATEX1 ) ).
 
 

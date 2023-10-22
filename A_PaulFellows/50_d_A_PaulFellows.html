@@ -155,36 +155,36 @@ All the Amino set top boxes and all the AlertMe sensors are the great grandchild
 </svg>
 <br>
 <pre>
-arc(quantificational_r__all_0056_0017,r__grandchildren_0056_0015,scope).
-arc(quantificational_r__all_0056_0017,z_0056_1008,restriction).
-arc(r__and_0056_0007,r__Amino_0056_0003_r__set_0056_0004_r__top_0056_0005_r__boxes_0056_0006,conj1).
-arc(r__and_0056_0007,r__AlertMe_0056_0010_r__sensors_0056_0011,conj2).
-arc(r__are_0056_0012,r__and_0056_0007,arg0).
-arc(r__are_0056_0012,r__grandchildren_0056_0015,prd2).
-arc(r__grandchildren_0056_0015,r__great_0056_0014,attrib2).
-arc(r__grandchildren_0056_0015,z_0056_1008,r__of_0056_0016).
-arc(z_0056_1008,r__this_0056_0019,r__of_0056_0018).
+arc(r_0056_0007__and,r_0056_0003__Amino_set_top_boxes,conj1).
+arc(r_0056_0007__and,r_0056_0010__AlertMe_sensors,conj2).
+arc(r_0056_0012__are,r_0056_0007__and,arg0).
+arc(r_0056_0012__are,r_0056_0015__grandchildren,prd2).
+arc(r_0056_0015__grandchildren,r_0056_0014__great,attrib2).
+arc(r_0056_0015__grandchildren,z_0056_1008,r_0056_0016__of).
+arc(r_0056_0017__quantificational__all,r_0056_0015__grandchildren,scope).
+arc(r_0056_0017__quantificational__all,z_0056_1008,restriction).
+arc(z_0056_1008,r_0056_0019__this,r_0056_0018__of).
 
 </pre>
 <br>
 <pre>
 fof(id_56_A_PaulFellows,axiom,
     ? [EVENTX9,QUANTX7,ENTITYX1,ENTITYX4,ENTITYX6,ENTITYX2,ENTITYX3,ATTRIBX5] :
-      ( isA(ENTITYX1,r__and_0056_0007)
+      ( isA(ENTITYX1,r_0056_0007__and)
       &amp; conj1(ENTITYX1) = ENTITYX2
       &amp; conj2(ENTITYX1) = ENTITYX3
-      &amp; isA(ENTITYX2,r__Amino_0056_0003_r__set_0056_0004_r__top_0056_0005_r__boxes_0056_0006)
-      &amp; isA(ENTITYX3,r__AlertMe_0056_0010_r__sensors_0056_0011)
-      &amp; isA(QUANTX7,quantificational_r__all_0056_0017)
+      &amp; isA(ENTITYX2,r_0056_0003__Amino_set_top_boxes)
+      &amp; isA(ENTITYX3,r_0056_0010__AlertMe_sensors)
+      &amp; isA(QUANTX7,r_0056_0017__quantificational__all)
       &amp; restriction(QUANTX7) = ENTITYX6
       &amp; isA(ENTITYX6,z_0056_1008)
-      &amp; r__of_0056_0018(ENTITYX6) = r__this_0056_0019
+      &amp; r_0056_0018__of(ENTITYX6) = r_0056_0019__this
       &amp; scope(QUANTX7) = ENTITYX4
-      &amp; isA(ENTITYX4,r__grandchildren_0056_0015)
+      &amp; isA(ENTITYX4,r_0056_0015__grandchildren)
       &amp; attrib2(ENTITYX4) = ATTRIBX5
-      &amp; r__of_0056_0016(ENTITYX4) = ENTITYX6
-      &amp; isA(ATTRIBX5,r__great_0056_0014)
-      &amp; isA(EVENTX9,r__are_0056_0012)
+      &amp; r_0056_0016__of(ENTITYX4) = ENTITYX6
+      &amp; isA(ATTRIBX5,r_0056_0014__great)
+      &amp; isA(EVENTX9,r_0056_0012__are)
       &amp; arg0(EVENTX9) = ENTITYX1
       &amp; prd2(EVENTX9) = ENTITYX4 ) ).
 

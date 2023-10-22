@@ -103,26 +103,26 @@ No life could possibly exist .
 </svg>
 <br>
 <pre>
-arc(quantificational_r__No_0042_0001,r__life_0042_0002,restriction).
-arc(quantificational_r__No_0042_0001,r__possibly_0042_0004,scope).
-arc(r__could_0042_0003,r__exist_0042_0005,scope).
-arc(r__possibly_0042_0004,r__could_0042_0003,scope).
-arc(r__exist_0042_0005,r__life_0042_0002,arg0).
+arc(r_0042_0001__quantificational__No,r_0042_0002__life,restriction).
+arc(r_0042_0001__quantificational__No,r_0042_0004__possibly,scope).
+arc(r_0042_0003__could,r_0042_0005__exist,scope).
+arc(r_0042_0004__possibly,r_0042_0003__could,scope).
+arc(r_0042_0005__exist,r_0042_0002__life,arg0).
 
 </pre>
 <br>
 <pre>
 fof(id_42_A_DICK_1952,axiom,
     ? [QUANTX2,OPERATORX3,OPERATORX4,EVENTX5,ENTITYX1] :
-      ( isA(QUANTX2,quantificational_r__No_0042_0001)
+      ( isA(QUANTX2,r_0042_0001__quantificational__No)
       &amp; restriction(QUANTX2) = ENTITYX1
-      &amp; isA(ENTITYX1,r__life_0042_0002)
+      &amp; isA(ENTITYX1,r_0042_0002__life)
       &amp; scope(QUANTX2) = OPERATORX3
-      &amp; isA(OPERATORX3,r__possibly_0042_0004)
+      &amp; isA(OPERATORX3,r_0042_0004__possibly)
       &amp; scope(OPERATORX3) = OPERATORX4
-      &amp; isA(OPERATORX4,r__could_0042_0003)
+      &amp; isA(OPERATORX4,r_0042_0003__could)
       &amp; scope(OPERATORX4) = EVENTX5
-      &amp; isA(EVENTX5,r__exist_0042_0005)
+      &amp; isA(EVENTX5,r_0042_0005__exist)
       &amp; arg0(EVENTX5) = ENTITYX1 ) ).
 
 

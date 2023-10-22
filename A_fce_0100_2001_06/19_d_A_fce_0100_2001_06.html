@@ -116,12 +116,12 @@ Inventions have affected all our lives !
 </svg>
 <br>
 <pre>
-arc(quantificational_r__all_0026_0004,r__affected_0026_0003,scope).
-arc(quantificational_r__all_0026_0004,r__lives_0026_0006,restriction).
-arc(r__have_0026_0002,quantificational_r__all_0026_0004,catenative).
-arc(r__affected_0026_0003,r__Inventions_0026_0001,arg0).
-arc(r__affected_0026_0003,r__lives_0026_0006,arg1).
-arc(r__lives_0026_0006,r__our_0026_0005,genv).
+arc(r_0026_0002__have,r_0026_0004__quantificational__all,catenative).
+arc(r_0026_0003__affected,r_0026_0001__Inventions,arg0).
+arc(r_0026_0003__affected,r_0026_0006__lives,arg1).
+arc(r_0026_0004__quantificational__all,r_0026_0003__affected,scope).
+arc(r_0026_0004__quantificational__all,r_0026_0006__lives,restriction).
+arc(r_0026_0006__lives,r_0026_0005__our,genv).
 
 </pre>
 <br>
@@ -129,16 +129,16 @@ arc(r__lives_0026_0006,r__our_0026_0005,genv).
 fof(id_26_A_fce_0100_2001_06,axiom,
     ? [CATENATIVEX2,EVENTX6,QUANTX4,EVENTX5,ENTITYX1,ENTITYX3] :
       ( CATENATIVEX2 = QUANTX4
-      &amp; isA(QUANTX4,quantificational_r__all_0026_0004)
+      &amp; isA(QUANTX4,r_0026_0004__quantificational__all)
       &amp; restriction(QUANTX4) = ENTITYX3
-      &amp; isA(ENTITYX3,r__lives_0026_0006)
-      &amp; genv(ENTITYX3) = r__our_0026_0005
+      &amp; isA(ENTITYX3,r_0026_0006__lives)
+      &amp; genv(ENTITYX3) = r_0026_0005__our
       &amp; scope(QUANTX4) = EVENTX5
-      &amp; isA(EVENTX5,r__affected_0026_0003)
+      &amp; isA(EVENTX5,r_0026_0003__affected)
       &amp; arg0(EVENTX5) = ENTITYX1
       &amp; arg1(EVENTX5) = ENTITYX3
-      &amp; isA(ENTITYX1,r__Inventions_0026_0001)
-      &amp; isA(EVENTX6,r__have_0026_0002)
+      &amp; isA(ENTITYX1,r_0026_0001__Inventions)
+      &amp; isA(EVENTX6,r_0026_0002__have)
       &amp; catenative(EVENTX6) = CATENATIVEX2 ) ).
 
 

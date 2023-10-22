@@ -137,7 +137,7 @@ fatality rate is less than 20 % .
 <title>0027_0002&#45;&gt;0027_0005</title>
 <path fill="none" stroke="black" d="M467.65,-347.8C467.65,-336.16 467.65,-320.55 467.65,-307.24"/>
 <polygon fill="black" stroke="black" points="471.15,-307.18 467.65,-297.18 464.15,-307.18 471.15,-307.18"/>
-<text text-anchor="middle" x="502.15" y="-318.8" font-family="fixed" font-size="14.00">from_[dir]</text>
+<text text-anchor="middle" x="498.65" y="-318.8" font-family="fixed" font-size="14.00">from[dir]</text>
 </g>
 <!-- 0027_0009 -->
 <g id="node9" class="node">
@@ -148,9 +148,9 @@ fatality rate is less than 20 % .
 <!-- 0027_0002&#45;&gt;0027_0009 -->
 <g id="edge7" class="edge">
 <title>0027_0002&#45;&gt;0027_0009</title>
-<path fill="none" stroke="black" d="M498.13,-353.31C511.77,-347.36 527.67,-339.39 540.65,-330 551.2,-322.36 561.41,-312.24 569.69,-303.1"/>
-<polygon fill="black" stroke="black" points="572.46,-305.24 576.42,-295.41 567.2,-300.63 572.46,-305.24"/>
-<text text-anchor="middle" x="583.65" y="-318.8" font-family="fixed" font-size="14.00">to_[dir]</text>
+<path fill="none" stroke="black" d="M495.2,-352.33C507.39,-346.24 521.66,-338.43 533.65,-330 545.47,-321.68 557.48,-311.07 567.25,-301.76"/>
+<polygon fill="black" stroke="black" points="569.84,-304.13 574.56,-294.65 564.95,-299.12 569.84,-304.13"/>
+<text text-anchor="middle" x="573.15" y="-318.8" font-family="fixed" font-size="14.00">to[dir]</text>
 </g>
 <!-- 0027_0004 -->
 <g id="node10" class="node">
@@ -234,7 +234,7 @@ fatality rate is less than 20 % .
 <title>0028_0001&#45;&gt;0028_0007</title>
 <path fill="none" stroke="black" d="M1084.18,-260.8C1080.42,-248.97 1075.36,-233.03 1071.09,-219.58"/>
 <polygon fill="black" stroke="black" points="1074.37,-218.36 1068.01,-209.89 1067.7,-220.48 1074.37,-218.36"/>
-<text text-anchor="middle" x="1103.65" y="-231.8" font-family="fixed" font-size="14.00">in_[loc]</text>
+<text text-anchor="middle" x="1100.15" y="-231.8" font-family="fixed" font-size="14.00">in[loc]</text>
 </g>
 <!-- 0028_0005_0028_0006 -->
 <g id="node19" class="node">
@@ -409,32 +409,32 @@ fatality rate is less than 20 % .
 </svg>
 <br>
 <pre>
-arc(quantificational_r__most_0028_0012,r__cases_0028_0013,restriction).
-arc(quantificational_r__most_0028_0012,r__are_0028_0014,scope).
-arc(r__Yellow_0026_0001_r__fever_0026_0002,r__disease_0026_0008,prn4).
-arc(r__borne_0026_0006,r__mosquito_0026_0004,arg0_lgs).
-arc(r__borne_0026_0006,r__disease_0026_0008,arg1).
-arc(r__disease_0026_0008,r__viral_0026_0007,attrib2).
-arc(r__ranges_0027_0002,r__severity_0027_0001,arg0).
-arc(r__ranges_0027_0002,r__symptoms_0027_0005,r__from_0027_0003_dir).
-arc(r__ranges_0027_0002,r__and_0027_0009,r__to_0027_0006_dir).
-arc(r__symptoms_0027_0005,r__influenza_like_0027_0004,attrib1).
-arc(r__hepatitis_0027_0008,r__severe_0027_0007,attrib1).
-arc(r__and_0027_0009,r__hepatitis_0027_0008,conj1).
-arc(r__and_0027_0009,r__fever_0027_0011,conj2).
-arc(r__fever_0027_0011,r__hemorrhagic_0027_0010,attrib1).
-arc(r__occurs_0028_0001,r__and_0028_0007,r__in_0028_0003_loc).
-arc(r__only_0028_0002,r__occurs_0028_0001,scope).
-arc(r__South_0028_0005_r__America_0028_0006,r__tropical_0028_0004,attrib1).
-arc(r__and_0028_0007,r__South_0028_0005_r__America_0028_0006,conj1).
-arc(r__and_0028_0007,r__sub_Saharan_0028_0008_r__Africa_0028_0009,conj2).
-arc(r__are_0028_0014,r__and_0028_0007,loc1).
-arc(r__are_0028_0014,r__reported_0028_0015,catenative).
-arc(r__reported_0028_0015,r__cases_0028_0013,arg1).
-arc(r__is_0029_0003,r__fatality_0029_0001_r__rate_0029_0002,arg0).
-arc(r__is_0029_0003,r__less_0029_0004,prd2).
-arc(r__less_0029_0004,r__20_0029_0006_r____0029_0007,r__than_0029_0005).
-arc(z_0026_1009,r__Yellow_0026_0001_r__fever_0026_0002,z_0026_1004).
+arc(r_0026_0001__Yellow_fever,r_0026_0008__disease,prn4).
+arc(r_0026_0006__borne,r_0026_0004__mosquito,arg0_lgs).
+arc(r_0026_0006__borne,r_0026_0008__disease,arg1).
+arc(r_0026_0008__disease,r_0026_0007__viral,attrib2).
+arc(r_0027_0002__ranges,r_0027_0001__severity,arg0).
+arc(r_0027_0002__ranges,r_0027_0005__symptoms,r_0027_0003__from_dir).
+arc(r_0027_0002__ranges,r_0027_0009__and,r_0027_0006__to_dir).
+arc(r_0027_0005__symptoms,r_0027_0004__influenza_like,attrib1).
+arc(r_0027_0008__hepatitis,r_0027_0007__severe,attrib1).
+arc(r_0027_0009__and,r_0027_0008__hepatitis,conj1).
+arc(r_0027_0009__and,r_0027_0011__fever,conj2).
+arc(r_0027_0011__fever,r_0027_0010__hemorrhagic,attrib1).
+arc(r_0028_0001__occurs,r_0028_0007__and,r_0028_0003__in_loc).
+arc(r_0028_0002__only,r_0028_0001__occurs,scope).
+arc(r_0028_0005__South_America,r_0028_0004__tropical,attrib1).
+arc(r_0028_0007__and,r_0028_0005__South_America,conj1).
+arc(r_0028_0007__and,r_0028_0008__sub_Saharan_Africa,conj2).
+arc(r_0028_0012__quantificational__most,r_0028_0013__cases,restriction).
+arc(r_0028_0012__quantificational__most,r_0028_0014__are,scope).
+arc(r_0028_0014__are,r_0028_0007__and,loc1).
+arc(r_0028_0014__are,r_0028_0015__reported,catenative).
+arc(r_0028_0015__reported,r_0028_0013__cases,arg1).
+arc(r_0029_0003__is,r_0029_0001__fatality_rate,arg0).
+arc(r_0029_0003__is,r_0029_0004__less,prd2).
+arc(r_0029_0004__less,r_0029_0006__20__,r_0029_0005__than).
+arc(z_0026_1009,r_0026_0001__Yellow_fever,z_0026_1004).
 
 </pre>
 <br>
@@ -442,58 +442,58 @@ arc(z_0026_1009,r__Yellow_0026_0001_r__fever_0026_0002,z_0026_1004).
 fof(id_26_A_FACTBOOK_1_2010__27_A_FACTBOOK_1_2010__28_A_FACTBOOK_1_2010__29_A_FACTBOOK_1_2010,axiom,
     ? [CATENATIVEX26,EVENTX35,OPERATORX22,EVENTX31,QUANTX25,EVENTX29,EVENTX28,EVENTX19,EVENTX10,EVENTX7,ENTITYX32,ENTITYX34,ENTITYX23,ENTITYX24,ENTITYX11,ENTITYX12,ENTITYX14,ENTITYX15,ENTITYX17,ENTITYX5,ENTITYX6,ATTRIBX33,ATTRIBX30,ATTRIBX18,ATTRIBX16,ATTRIBX13,ATTRIBX8] :
       ( CATENATIVEX26 = EVENTX28
-      &amp; isA(EVENTX28,r__reported_0028_0015)
+      &amp; isA(EVENTX28,r_0028_0015__reported)
       &amp; arg1(EVENTX28) = ENTITYX24
-      &amp; isA(EVENTX7,r__borne_0026_0006)
+      &amp; isA(EVENTX7,r_0026_0006__borne)
       &amp; arg0_lgs(EVENTX7) = ENTITYX6
       &amp; arg1(EVENTX7) = ENTITYX5
-      &amp; isA(ENTITYX5,r__disease_0026_0008)
+      &amp; isA(ENTITYX5,r_0026_0008__disease)
       &amp; attrib2(ENTITYX5) = ATTRIBX8
-      &amp; isA(ENTITYX6,r__mosquito_0026_0004)
-      &amp; isA(ENTITYX11,r__severity_0027_0001)
-      &amp; isA(ENTITYX12,r__symptoms_0027_0005)
+      &amp; isA(ENTITYX6,r_0026_0004__mosquito)
+      &amp; isA(ENTITYX11,r_0027_0001__severity)
+      &amp; isA(ENTITYX12,r_0027_0005__symptoms)
       &amp; attrib1(ENTITYX12) = ATTRIBX13
-      &amp; isA(ENTITYX14,r__and_0027_0009)
+      &amp; isA(ENTITYX14,r_0027_0009__and)
       &amp; conj1(ENTITYX14) = ENTITYX15
       &amp; conj2(ENTITYX14) = ENTITYX17
-      &amp; isA(ENTITYX15,r__hepatitis_0027_0008)
+      &amp; isA(ENTITYX15,r_0027_0008__hepatitis)
       &amp; attrib1(ENTITYX15) = ATTRIBX16
-      &amp; isA(ENTITYX17,r__fever_0027_0011)
+      &amp; isA(ENTITYX17,r_0027_0011__fever)
       &amp; attrib1(ENTITYX17) = ATTRIBX18
-      &amp; isA(QUANTX25,quantificational_r__most_0028_0012)
+      &amp; isA(QUANTX25,r_0028_0012__quantificational__most)
       &amp; restriction(QUANTX25) = ENTITYX24
-      &amp; isA(ENTITYX24,r__cases_0028_0013)
+      &amp; isA(ENTITYX24,r_0028_0013__cases)
       &amp; scope(QUANTX25) = EVENTX29
-      &amp; isA(EVENTX29,r__are_0028_0014)
+      &amp; isA(EVENTX29,r_0028_0014__are)
       &amp; loc1(EVENTX29) = ENTITYX23
       &amp; catenative(EVENTX29) = CATENATIVEX26
-      &amp; isA(ENTITYX23,r__and_0028_0007)
-      &amp; conj1(ENTITYX23) = r__South_0028_0005_r__America_0028_0006
-      &amp; conj2(ENTITYX23) = r__sub_Saharan_0028_0008_r__Africa_0028_0009
-      &amp; isA(ENTITYX32,r__fatality_0029_0001_r__rate_0029_0002)
-      &amp; isA(ENTITYX34,r__20_0029_0006_r____0029_0007)
-      &amp; isA(r__Yellow_0026_0001_r__fever_0026_0002,r__Yellow_0026_0001_r__fever_0026_0002)
-      &amp; prn4(r__Yellow_0026_0001_r__fever_0026_0002) = ENTITYX5
-      &amp; isA(r__South_0028_0005_r__America_0028_0006,r__South_0028_0005_r__America_0028_0006)
-      &amp; attrib1(r__South_0028_0005_r__America_0028_0006) = ATTRIBX30
-      &amp; isA(ATTRIBX8,r__viral_0026_0007)
-      &amp; isA(ATTRIBX13,r__influenza_like_0027_0004)
-      &amp; isA(ATTRIBX16,r__severe_0027_0007)
-      &amp; isA(ATTRIBX18,r__hemorrhagic_0027_0010)
-      &amp; isA(ATTRIBX30,r__tropical_0028_0004)
-      &amp; isA(ATTRIBX33,r__less_0029_0004)
-      &amp; r__than_0029_0005(ATTRIBX33) = ENTITYX34
+      &amp; isA(ENTITYX23,r_0028_0007__and)
+      &amp; conj1(ENTITYX23) = r_0028_0005__South_America
+      &amp; conj2(ENTITYX23) = r_0028_0008__sub_Saharan_Africa
+      &amp; isA(ENTITYX32,r_0029_0001__fatality_rate)
+      &amp; isA(ENTITYX34,r_0029_0006__20__)
+      &amp; isA(r_0026_0001__Yellow_fever,r_0026_0001__Yellow_fever)
+      &amp; prn4(r_0026_0001__Yellow_fever) = ENTITYX5
+      &amp; isA(r_0028_0005__South_America,r_0028_0005__South_America)
+      &amp; attrib1(r_0028_0005__South_America) = ATTRIBX30
+      &amp; isA(ATTRIBX8,r_0026_0007__viral)
+      &amp; isA(ATTRIBX13,r_0027_0004__influenza_like)
+      &amp; isA(ATTRIBX16,r_0027_0007__severe)
+      &amp; isA(ATTRIBX18,r_0027_0010__hemorrhagic)
+      &amp; isA(ATTRIBX30,r_0028_0004__tropical)
+      &amp; isA(ATTRIBX33,r_0029_0004__less)
+      &amp; r_0029_0005__than(ATTRIBX33) = ENTITYX34
       &amp; isA(EVENTX10,z_0026_1009)
-      &amp; z_0026_1004(EVENTX10) = r__Yellow_0026_0001_r__fever_0026_0002
-      &amp; isA(EVENTX19,r__ranges_0027_0002)
+      &amp; z_0026_1004(EVENTX10) = r_0026_0001__Yellow_fever
+      &amp; isA(EVENTX19,r_0027_0002__ranges)
       &amp; arg0(EVENTX19) = ENTITYX11
-      &amp; r__from_0027_0003_dir(EVENTX19) = ENTITYX12
-      &amp; r__to_0027_0006_dir(EVENTX19) = ENTITYX14
-      &amp; isA(OPERATORX22,r__only_0028_0002)
+      &amp; r_0027_0003__from_dir(EVENTX19) = ENTITYX12
+      &amp; r_0027_0006__to_dir(EVENTX19) = ENTITYX14
+      &amp; isA(OPERATORX22,r_0028_0002__only)
       &amp; scope(OPERATORX22) = EVENTX31
-      &amp; isA(EVENTX31,r__occurs_0028_0001)
-      &amp; r__in_0028_0003_loc(EVENTX31) = ENTITYX23
-      &amp; isA(EVENTX35,r__is_0029_0003)
+      &amp; isA(EVENTX31,r_0028_0001__occurs)
+      &amp; r_0028_0003__in_loc(EVENTX31) = ENTITYX23
+      &amp; isA(EVENTX35,r_0029_0003__is)
       &amp; arg0(EVENTX35) = ENTITYX32
       &amp; prd2(EVENTX35) = ATTRIBX33 ) ).
 

@@ -37,8 +37,8 @@ If one such civilization intercepts Voyager and can understand these recorded co
 <!-- 0011_0001_cnt_cnd -->
 <g id="node1" class="node">
 <title>0011_0001_cnt_cnd</title>
-<ellipse fill="none" stroke="black" cx="219.43" cy="-453" rx="65.79" ry="18"/>
-<text text-anchor="middle" x="219.43" y="-449.3" font-family="fixed" font-size="14.00">If_[cnt][cnd]</text>
+<ellipse fill="none" stroke="black" cx="219.43" cy="-453" rx="61.99" ry="18"/>
+<text text-anchor="middle" x="219.43" y="-449.3" font-family="fixed" font-size="14.00">If[cnt][cnd]</text>
 </g>
 <!-- 0011_0007 -->
 <g id="node2" class="node">
@@ -49,7 +49,7 @@ If one such civilization intercepts Voyager and can understand these recorded co
 <!-- 0011_0001_cnt_cnd&#45;&gt;0011_0007 -->
 <g id="edge1" class="edge">
 <title>0011_0001_cnt_cnd&#45;&gt;0011_0007</title>
-<path fill="none" stroke="black" d="M187.89,-437.13C180.17,-431.9 172.86,-425.22 168.43,-417 164.74,-410.17 163.51,-402.02 163.46,-394.29"/>
+<path fill="none" stroke="black" d="M188.16,-437.31C180.34,-432.05 172.91,-425.32 168.43,-417 164.74,-410.17 163.51,-402.02 163.46,-394.29"/>
 <polygon fill="black" stroke="black" points="166.97,-394.37 164.02,-384.19 159.98,-393.99 166.97,-394.37"/>
 <text text-anchor="middle" x="208.93" y="-405.8" font-family="fixed" font-size="14.00">[restriction]</text>
 </g>
@@ -220,50 +220,50 @@ If one such civilization intercepts Voyager and can understand these recorded co
 </svg>
 <br>
 <pre>
-arc(r__If_0011_0001_cnt_cnd,r__and_0011_0007,restriction).
-arc(r__If_0011_0001_cnt_cnd,r__is_0011_0015,scope).
-arc(r__one_0011_0002_r__civilization_0011_0004,r__such_0011_0003,attrib2).
-arc(r__intercepts_0011_0005,r__one_0011_0002_r__civilization_0011_0004,arg0).
-arc(r__intercepts_0011_0005,r__Voyager_0011_0006,arg1).
-arc(r__and_0011_0007,r__intercepts_0011_0005,conj1).
-arc(r__and_0011_0007,r__can_0011_0008,conj2).
-arc(r__can_0011_0008,r__understand_0011_0009,scope).
-arc(r__understand_0011_0009,r__one_0011_0002_r__civilization_0011_0004,arg0).
-arc(r__understand_0011_0009,r__contents_0011_0012,arg1).
-arc(r__recorded_0011_0011,r__contents_0011_0012,arg1).
-arc(r__is_0011_0015,r__here_0011_0014,prd23).
-arc(r__is_0011_0015,r__message_0011_0017,arg0).
-arc(r__message_0011_0017,r__our_0011_0016,genv).
+arc(r_0011_0001__If_cnt_cnd,r_0011_0007__and,restriction).
+arc(r_0011_0001__If_cnt_cnd,r_0011_0015__is,scope).
+arc(r_0011_0002__one_civilization,r_0011_0003__such,attrib2).
+arc(r_0011_0005__intercepts,r_0011_0002__one_civilization,arg0).
+arc(r_0011_0005__intercepts,r_0011_0006__Voyager,arg1).
+arc(r_0011_0007__and,r_0011_0005__intercepts,conj1).
+arc(r_0011_0007__and,r_0011_0008__can,conj2).
+arc(r_0011_0008__can,r_0011_0009__understand,scope).
+arc(r_0011_0009__understand,r_0011_0002__one_civilization,arg0).
+arc(r_0011_0009__understand,r_0011_0012__contents,arg1).
+arc(r_0011_0011__recorded,r_0011_0012__contents,arg1).
+arc(r_0011_0015__is,r_0011_0014__here,prd23).
+arc(r_0011_0015__is,r_0011_0017__message,arg0).
+arc(r_0011_0017__message,r_0011_0016__our,genv).
 
 </pre>
 <br>
 <pre>
 fof(id_11_A_Voyager,axiom,
     ? [CONNX1,EVENTX13,CONJX10,OPERATORX8,EVENTX9,EVENTX7,EVENTX4,ENTITYX12,ENTITYX2,ENTITYX5,ATTRIBX3,QUALITYX11] :
-      ( isA(ENTITYX2,r__one_0011_0002_r__civilization_0011_0004)
+      ( isA(ENTITYX2,r_0011_0002__one_civilization)
       &amp; attrib2(ENTITYX2) = ATTRIBX3
-      &amp; isA(EVENTX7,r__recorded_0011_0011)
+      &amp; isA(EVENTX7,r_0011_0011__recorded)
       &amp; arg1(EVENTX7) = ENTITYX5
-      &amp; isA(ENTITYX5,r__contents_0011_0012)
-      &amp; isA(ENTITYX12,r__message_0011_0017)
-      &amp; genv(ENTITYX12) = r__our_0011_0016
-      &amp; isA(ATTRIBX3,r__such_0011_0003)
-      &amp; isA(QUALITYX11,r__here_0011_0014)
-      &amp; isA(CONNX1,r__If_0011_0001_cnt_cnd)
+      &amp; isA(ENTITYX5,r_0011_0012__contents)
+      &amp; isA(ENTITYX12,r_0011_0017__message)
+      &amp; genv(ENTITYX12) = r_0011_0016__our
+      &amp; isA(ATTRIBX3,r_0011_0003__such)
+      &amp; isA(QUALITYX11,r_0011_0014__here)
+      &amp; isA(CONNX1,r_0011_0001__If_cnt_cnd)
       &amp; restriction(CONNX1) = CONJX10
-      &amp; isA(CONJX10,r__and_0011_0007)
+      &amp; isA(CONJX10,r_0011_0007__and)
       &amp; conj1(CONJX10) = EVENTX4
-      &amp; isA(EVENTX4,r__intercepts_0011_0005)
+      &amp; isA(EVENTX4,r_0011_0005__intercepts)
       &amp; arg0(EVENTX4) = ENTITYX2
-      &amp; arg1(EVENTX4) = r__Voyager_0011_0006
+      &amp; arg1(EVENTX4) = r_0011_0006__Voyager
       &amp; conj2(CONJX10) = OPERATORX8
-      &amp; isA(OPERATORX8,r__can_0011_0008)
+      &amp; isA(OPERATORX8,r_0011_0008__can)
       &amp; scope(OPERATORX8) = EVENTX9
-      &amp; isA(EVENTX9,r__understand_0011_0009)
+      &amp; isA(EVENTX9,r_0011_0009__understand)
       &amp; arg0(EVENTX9) = ENTITYX2
       &amp; arg1(EVENTX9) = ENTITYX5
       &amp; scope(CONNX1) = EVENTX13
-      &amp; isA(EVENTX13,r__is_0011_0015)
+      &amp; isA(EVENTX13,r_0011_0015__is)
       &amp; prd23(EVENTX13) = QUALITYX11
       &amp; arg0(EVENTX13) = ENTITYX12 ) ).
 

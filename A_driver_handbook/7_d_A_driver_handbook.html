@@ -96,23 +96,23 @@ The maximum speed limit on most California highways is 65 mph .
 </svg>
 <br>
 <pre>
-arc(r__speed_0011_0003_r__limit_0011_0004,r__maximum_0011_0002,attrib2).
-arc(r__speed_0011_0003_r__limit_0011_0004,r__California_0011_0007_r__highways_0011_0008,r__on_0011_0005).
-arc(r__is_0011_0009,r__speed_0011_0003_r__limit_0011_0004,arg0).
-arc(r__is_0011_0009,r__65_0011_0010_r__mph_0011_0011,prd2).
+arc(r_0011_0003__speed_limit,r_0011_0002__maximum,attrib2).
+arc(r_0011_0003__speed_limit,r_0011_0007__California_highways,r_0011_0005__on).
+arc(r_0011_0009__is,r_0011_0003__speed_limit,arg0).
+arc(r_0011_0009__is,r_0011_0010__65_mph,prd2).
 
 </pre>
 <br>
 <pre>
 fof(id_11_A_driver_handbook,axiom,
     ? [EVENTX5,ENTITYX1,ENTITYX4,ENTITYX3,ATTRIBX2] :
-      ( isA(ENTITYX1,r__speed_0011_0003_r__limit_0011_0004)
+      ( isA(ENTITYX1,r_0011_0003__speed_limit)
       &amp; attrib2(ENTITYX1) = ATTRIBX2
-      &amp; r__on_0011_0005(ENTITYX1) = ENTITYX3
-      &amp; isA(ENTITYX3,r__California_0011_0007_r__highways_0011_0008)
-      &amp; isA(ENTITYX4,r__65_0011_0010_r__mph_0011_0011)
-      &amp; isA(ATTRIBX2,r__maximum_0011_0002)
-      &amp; isA(EVENTX5,r__is_0011_0009)
+      &amp; r_0011_0005__on(ENTITYX1) = ENTITYX3
+      &amp; isA(ENTITYX3,r_0011_0007__California_highways)
+      &amp; isA(ENTITYX4,r_0011_0010__65_mph)
+      &amp; isA(ATTRIBX2,r_0011_0002__maximum)
+      &amp; isA(EVENTX5,r_0011_0009__is)
       &amp; arg0(EVENTX5) = ENTITYX1
       &amp; prd2(EVENTX5) = ENTITYX4 ) ).
 

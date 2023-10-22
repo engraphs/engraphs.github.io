@@ -77,7 +77,7 @@ For roundabouts with multiple lanes , choose your entry or exit lane based on yo
 <title>0047_0007&#45;&gt;0047_0002</title>
 <path fill="none" stroke="black" d="M276.93,-260.8C278.84,-249.16 281.42,-233.55 283.61,-220.24"/>
 <polygon fill="black" stroke="black" points="287.09,-220.61 285.27,-210.18 280.19,-219.47 287.09,-220.61"/>
-<text text-anchor="middle" x="311.09" y="-231.8" font-family="fixed" font-size="14.00">For_[rst]</text>
+<text text-anchor="middle" x="308.09" y="-231.8" font-family="fixed" font-size="14.00">For[rst]</text>
 </g>
 <!-- 0047_0012 -->
 <g id="node5" class="node">
@@ -101,9 +101,9 @@ For roundabouts with multiple lanes , choose your entry or exit lane based on yo
 <!-- 0047_0007&#45;&gt;z_0047_1024 -->
 <g id="edge5" class="edge">
 <title>0047_0007&#45;&gt;z_0047_1024</title>
-<path fill="none" stroke="black" d="M300.87,-265.06C313.99,-258.61 329.97,-250.58 344.09,-243 361.54,-233.63 380.65,-222.72 396.51,-213.49"/>
-<polygon fill="black" stroke="black" points="398.56,-216.34 405.43,-208.27 395.03,-210.3 398.56,-216.34"/>
-<text text-anchor="middle" x="387.59" y="-231.8" font-family="fixed" font-size="14.00">[car]</text>
+<path fill="none" stroke="black" d="M299.32,-264.34C325.05,-250.41 365.25,-228.65 394.48,-212.82"/>
+<polygon fill="black" stroke="black" points="396.43,-215.75 403.55,-207.91 393.09,-209.59 396.43,-215.75"/>
+<text text-anchor="middle" x="378.59" y="-231.8" font-family="fixed" font-size="14.00">[car]</text>
 </g>
 <!-- 0047_0008 -->
 <g id="node7" class="node">
@@ -179,9 +179,9 @@ For roundabouts with multiple lanes , choose your entry or exit lane based on yo
 <!-- 0047_0013&#45;&gt;0047_0016 -->
 <g id="edge11" class="edge">
 <title>0047_0013&#45;&gt;0047_0016</title>
-<path fill="none" stroke="black" d="M130.86,-265.2C120.42,-259.24 108.56,-251.57 99.09,-243 91.18,-235.83 83.75,-226.83 77.61,-218.44"/>
-<polygon fill="black" stroke="black" points="80.31,-216.2 71.7,-210.03 74.58,-220.22 80.31,-216.2"/>
-<text text-anchor="middle" x="125.09" y="-231.8" font-family="fixed" font-size="14.00">on_[clr]</text>
+<path fill="none" stroke="black" d="M133.62,-264.31C124.4,-258.26 113.85,-250.76 105.09,-243 96.44,-235.33 87.83,-226.02 80.55,-217.52"/>
+<polygon fill="black" stroke="black" points="83.12,-215.13 74.02,-209.7 77.75,-219.62 83.12,-215.13"/>
+<text text-anchor="middle" x="128.09" y="-231.8" font-family="fixed" font-size="14.00">on[clr]</text>
 </g>
 <!-- 0047_0016&#45;&gt;0047_0008 -->
 <g id="edge12" class="edge">
@@ -214,7 +214,7 @@ For roundabouts with multiple lanes , choose your entry or exit lane based on yo
 <title>0047_0018&#45;&gt;0047_0021</title>
 <path fill="none" stroke="black" d="M514.38,-261.21C521.08,-249.1 530.24,-232.53 537.85,-218.76"/>
 <polygon fill="black" stroke="black" points="541.05,-220.2 542.83,-209.76 534.93,-216.82 541.05,-220.2"/>
-<text text-anchor="middle" x="557.09" y="-231.8" font-family="fixed" font-size="14.00">in_[loc]</text>
+<text text-anchor="middle" x="553.59" y="-231.8" font-family="fixed" font-size="14.00">in[loc]</text>
 </g>
 <!-- cnt_0047_1011 -->
 <g id="node15" class="node">
@@ -266,24 +266,24 @@ For roundabouts with multiple lanes , choose your entry or exit lane based on yo
 </svg>
 <br>
 <pre>
-arc(cnt_0047_1011,r__choose_0047_0007,scope).
-arc(cnt_0047_1011,r__based_0047_0013,restriction).
+arc(cnt_0047_1011,r_0047_0007__choose,scope).
+arc(cnt_0047_1011,r_0047_0013__based,restriction).
 arc(imperative_0047_1002,cnt_0047_1011,scope).
-arc(r__roundabouts_0047_0002,r__lanes_0047_0005,r__with_0047_0003).
-arc(r__lanes_0047_0005,r__multiple_0047_0004,attrib1).
-arc(r__choose_0047_0007,r__roundabouts_0047_0002,r__For_0047_0001_rst).
-arc(r__choose_0047_0007,r__lane_0047_0012,arg1).
-arc(r__choose_0047_0007,z_0047_1024,car6).
-arc(r__or_0047_0010,r__entry_0047_0009,conj1).
-arc(r__or_0047_0010,r__exit_0047_0011,conj2).
-arc(r__lane_0047_0012,r__your_0047_0008,genv).
-arc(r__lane_0047_0012,r__or_0047_0010,nlyr2).
-arc(r__based_0047_0013,r__lane_0047_0012,arg1).
-arc(r__based_0047_0013,r__destination_0047_0016,r__on_0047_0014_clr).
-arc(r__destination_0047_0016,r__your_0047_0008,genv).
-arc(r__shown_0047_0018,r__graphic_0047_0021,r__in_0047_0019_loc).
-arc(r__shown_0047_0018,z_0047_1024,arg1).
-arc(z_0047_1022,r__shown_0047_0018,catenative).
+arc(r_0047_0002__roundabouts,r_0047_0005__lanes,r_0047_0003__with).
+arc(r_0047_0005__lanes,r_0047_0004__multiple,attrib1).
+arc(r_0047_0007__choose,r_0047_0002__roundabouts,r_0047_0001__For_rst).
+arc(r_0047_0007__choose,r_0047_0012__lane,arg1).
+arc(r_0047_0007__choose,z_0047_1024,car6).
+arc(r_0047_0010__or,r_0047_0009__entry,conj1).
+arc(r_0047_0010__or,r_0047_0011__exit,conj2).
+arc(r_0047_0012__lane,r_0047_0008__your,genv).
+arc(r_0047_0012__lane,r_0047_0010__or,nlyr2).
+arc(r_0047_0013__based,r_0047_0012__lane,arg1).
+arc(r_0047_0013__based,r_0047_0016__destination,r_0047_0014__on_clr).
+arc(r_0047_0016__destination,r_0047_0008__your,genv).
+arc(r_0047_0018__shown,r_0047_0021__graphic,r_0047_0019__in_loc).
+arc(r_0047_0018__shown,z_0047_1024,arg1).
+arc(z_0047_1022,r_0047_0018__shown,catenative).
 
 </pre>
 <br>
@@ -291,41 +291,41 @@ arc(z_0047_1022,r__shown_0047_0018,catenative).
 fof(id_47_A_driver_handbook,axiom,
     ? [CATENATIVEX18,HEARERX15,OPERATORX2,CONNX12,EVENTX16,EVENTX25,EVENTX23,EVENTX21,ENTITYX4,ENTITYX7,ENTITYX14,ENTITYX17,ENTITYX20,ENTITYX8,ENTITYX9,ENTITYX10,ENTITYX5,ATTRIBX6] :
       ( CATENATIVEX18 = EVENTX21
-      &amp; isA(EVENTX21,r__shown_0047_0018)
+      &amp; isA(EVENTX21,r_0047_0018__shown)
       &amp; arg1(EVENTX21) = ENTITYX17
-      &amp; r__in_0047_0019_loc(EVENTX21) = ENTITYX20
-      &amp; isA(ENTITYX4,r__roundabouts_0047_0002)
-      &amp; r__with_0047_0003(ENTITYX4) = ENTITYX5
-      &amp; isA(ENTITYX5,r__lanes_0047_0005)
+      &amp; r_0047_0019__in_loc(EVENTX21) = ENTITYX20
+      &amp; isA(ENTITYX4,r_0047_0002__roundabouts)
+      &amp; r_0047_0003__with(ENTITYX4) = ENTITYX5
+      &amp; isA(ENTITYX5,r_0047_0005__lanes)
       &amp; attrib1(ENTITYX5) = ATTRIBX6
-      &amp; isA(ENTITYX7,r__lane_0047_0012)
-      &amp; genv(ENTITYX7) = r__your_0047_0008
+      &amp; isA(ENTITYX7,r_0047_0012__lane)
+      &amp; genv(ENTITYX7) = r_0047_0008__your
       &amp; nlyr2(ENTITYX7) = ENTITYX8
-      &amp; isA(ENTITYX8,r__or_0047_0010)
+      &amp; isA(ENTITYX8,r_0047_0010__or)
       &amp; conj1(ENTITYX8) = ENTITYX9
       &amp; conj2(ENTITYX8) = ENTITYX10
-      &amp; isA(ENTITYX9,r__entry_0047_0009)
-      &amp; isA(ENTITYX10,r__exit_0047_0011)
+      &amp; isA(ENTITYX9,r_0047_0009__entry)
+      &amp; isA(ENTITYX10,r_0047_0011__exit)
       &amp; isA(EVENTX23,z_0047_1022)
       &amp; catenative(EVENTX23) = CATENATIVEX18
       &amp; isA(ENTITYX17,z_0047_1024)
-      &amp; isA(ENTITYX20,r__graphic_0047_0021)
-      &amp; isA(ENTITYX14,r__destination_0047_0016)
+      &amp; isA(ENTITYX20,r_0047_0021__graphic)
+      &amp; isA(ENTITYX14,r_0047_0016__destination)
       &amp; genv(ENTITYX14) = HEARERX15
-      &amp; HEARERX15 = r__your_0047_0008
-      &amp; isA(ATTRIBX6,r__multiple_0047_0004)
+      &amp; HEARERX15 = r_0047_0008__your
+      &amp; isA(ATTRIBX6,r_0047_0004__multiple)
       &amp; isA(OPERATORX2,imperative_0047_1002)
       &amp; scope(OPERATORX2) = CONNX12
       &amp; isA(CONNX12,cnt_0047_1011)
       &amp; scope(CONNX12) = EVENTX25
-      &amp; isA(EVENTX25,r__choose_0047_0007)
-      &amp; r__For_0047_0001_rst(EVENTX25) = ENTITYX4
+      &amp; isA(EVENTX25,r_0047_0007__choose)
+      &amp; r_0047_0001__For_rst(EVENTX25) = ENTITYX4
       &amp; arg1(EVENTX25) = ENTITYX7
       &amp; car6(EVENTX25) = ENTITYX17
       &amp; restriction(CONNX12) = EVENTX16
-      &amp; isA(EVENTX16,r__based_0047_0013)
+      &amp; isA(EVENTX16,r_0047_0013__based)
       &amp; arg1(EVENTX16) = ENTITYX7
-      &amp; r__on_0047_0014_clr(EVENTX16) = ENTITYX14 ) ).
+      &amp; r_0047_0014__on_clr(EVENTX16) = ENTITYX14 ) ).
 
 
 </pre>

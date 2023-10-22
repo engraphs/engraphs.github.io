@@ -129,13 +129,13 @@ Death is the brother of Sleep , is he not ? &rdquo;
 </svg>
 <br>
 <pre>
-arc(question_0220_1004,r__not_0220_0010,scope).
-arc(r__is_0220_0002,question_0220_1004,prn5).
-arc(r__is_0220_0002,r__Death_0220_0001,arg0).
-arc(r__is_0220_0002,r__brother_0220_0004,prd2).
-arc(r__brother_0220_0004,r__Sleep_0220_0006,r__of_0220_0005).
-arc(r__is_0220_0008,r__Death_0220_0001,arg0).
-arc(r__not_0220_0010,r__is_0220_0008,scope).
+arc(question_0220_1004,r_0220_0010__not,scope).
+arc(r_0220_0002__is,question_0220_1004,prn5).
+arc(r_0220_0002__is,r_0220_0001__Death,arg0).
+arc(r_0220_0002__is,r_0220_0004__brother,prd2).
+arc(r_0220_0004__brother,r_0220_0006__Sleep,r_0220_0005__of).
+arc(r_0220_0008__is,r_0220_0001__Death,arg0).
+arc(r_0220_0010__not,r_0220_0008__is,scope).
 
 </pre>
 <br>
@@ -145,15 +145,15 @@ fof(id_220_A_WILDE_1_1888,axiom,
       ( EVENTX2 = OPERATORX4
       &amp; isA(OPERATORX4,question_0220_1004)
       &amp; scope(OPERATORX4) = OPERATORX6
-      &amp; isA(OPERATORX6,r__not_0220_0010)
+      &amp; isA(OPERATORX6,r_0220_0010__not)
       &amp; scope(OPERATORX6) = EVENTX7
-      &amp; isA(EVENTX7,r__is_0220_0008)
+      &amp; isA(EVENTX7,r_0220_0008__is)
       &amp; arg0(EVENTX7) = DEATHX5
-      &amp; isA(ENTITYX1,r__brother_0220_0004)
-      &amp; r__of_0220_0005(ENTITYX1) = r__Sleep_0220_0006
-      &amp; DEATHX5 = r__Death_0220_0001
-      &amp; isA(EVENTX8,r__is_0220_0002)
-      &amp; arg0(EVENTX8) = r__Death_0220_0001
+      &amp; isA(ENTITYX1,r_0220_0004__brother)
+      &amp; r_0220_0005__of(ENTITYX1) = r_0220_0006__Sleep
+      &amp; DEATHX5 = r_0220_0001__Death
+      &amp; isA(EVENTX8,r_0220_0002__is)
+      &amp; arg0(EVENTX8) = r_0220_0001__Death
       &amp; prd2(EVENTX8) = ENTITYX1
       &amp; prn5(EVENTX8) = EVENTX2 ) ).
 

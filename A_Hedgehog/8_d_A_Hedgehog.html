@@ -280,25 +280,25 @@ An article in The Guardian in July 2013 pointed out that hedgehogs are prickly i
 </svg>
 <br>
 <pre>
-arc(r__article_0008_0002,r__Guardian_0008_0005,r__in_0008_0003).
-arc(r__article_0008_0002,r__July_0008_0007_r__2013_0008_0008,r__in_0008_0006).
-arc(r__pointed_0008_0009_r__out_0008_0010,r__article_0008_0002,arg0).
-arc(r__pointed_0008_0009_r__out_0008_0010,r__and_0008_0028,arg1).
-arc(r__are_0008_0013,r__hedgehogs_0008_0012,arg0).
-arc(r__are_0008_0013,r__prickly_0008_0014,prd2).
-arc(r__prickly_0008_0014,r__character_0008_0016,r__in_0008_0015).
-arc(r__have_0008_0018,r__hedgehogs_0008_0012,arg0).
-arc(r__have_0008_0018,r__and_0008_0022,arg1).
-arc(r__appetite_0008_0021,r__voracious_0008_0020,attrib2).
-arc(r__and_0008_0022,r__appetite_0008_0021,conj1).
-arc(r__and_0008_0022,r__passion_0008_0024,conj2).
-arc(r__passion_0008_0024,r__gardens_0008_0026,r__for_0008_0025).
-arc(r__and_0008_0028,r__are_0008_0013,conj1).
-arc(r__and_0008_0028,r__have_0008_0018,conj2).
-arc(r__and_0008_0028,r__have_0008_0029,conj3).
-arc(r__have_0008_0029,r__hedgehogs_0008_0012,arg0).
-arc(r__have_0008_0029,r__sex_0008_0032_r__life_0008_0033,arg1).
-arc(r__sex_0008_0032_r__life_0008_0033,r__noisy_0008_0031,attrib2).
+arc(r_0008_0002__article,r_0008_0005__Guardian,r_0008_0003__in).
+arc(r_0008_0002__article,r_0008_0007__July_2013,r_0008_0006__in).
+arc(r_0008_0009__pointed_out,r_0008_0002__article,arg0).
+arc(r_0008_0009__pointed_out,r_0008_0028__and,arg1).
+arc(r_0008_0013__are,r_0008_0012__hedgehogs,arg0).
+arc(r_0008_0013__are,r_0008_0014__prickly,prd2).
+arc(r_0008_0014__prickly,r_0008_0016__character,r_0008_0015__in).
+arc(r_0008_0018__have,r_0008_0012__hedgehogs,arg0).
+arc(r_0008_0018__have,r_0008_0022__and,arg1).
+arc(r_0008_0021__appetite,r_0008_0020__voracious,attrib2).
+arc(r_0008_0022__and,r_0008_0021__appetite,conj1).
+arc(r_0008_0022__and,r_0008_0024__passion,conj2).
+arc(r_0008_0024__passion,r_0008_0026__gardens,r_0008_0025__for).
+arc(r_0008_0028__and,r_0008_0013__are,conj1).
+arc(r_0008_0028__and,r_0008_0018__have,conj2).
+arc(r_0008_0028__and,r_0008_0029__have,conj3).
+arc(r_0008_0029__have,r_0008_0012__hedgehogs,arg0).
+arc(r_0008_0029__have,r_0008_0032__sex_life,arg1).
+arc(r_0008_0032__sex_life,r_0008_0031__noisy,attrib2).
 
 </pre>
 <br>
@@ -306,41 +306,41 @@ arc(r__sex_0008_0032_r__life_0008_0033,r__noisy_0008_0031,attrib2).
 fof(id_8_A_Hedgehog,axiom,
     ? [STATEX3,EVENTX18,CONJX17,EVENTX16,EVENTX13,EVENTX7,ENTITYX1,ENTITYX4,ENTITYX14,ENTITYX8,ENTITYX9,ENTITYX11,ENTITYX12,ENTITYX6,ENTITYX2,ATTRIBX15,ATTRIBX10,ATTRIBX5] :
       ( STATEX3 = CONJX17
-      &amp; isA(CONJX17,r__and_0008_0028)
+      &amp; isA(CONJX17,r_0008_0028__and)
       &amp; conj1(CONJX17) = EVENTX7
-      &amp; isA(EVENTX7,r__are_0008_0013)
+      &amp; isA(EVENTX7,r_0008_0013__are)
       &amp; arg0(EVENTX7) = ENTITYX4
       &amp; prd2(EVENTX7) = ATTRIBX5
       &amp; conj2(CONJX17) = EVENTX13
-      &amp; isA(EVENTX13,r__have_0008_0018)
+      &amp; isA(EVENTX13,r_0008_0018__have)
       &amp; arg0(EVENTX13) = ENTITYX4
       &amp; arg1(EVENTX13) = ENTITYX8
       &amp; conj3(CONJX17) = EVENTX16
-      &amp; isA(EVENTX16,r__have_0008_0029)
+      &amp; isA(EVENTX16,r_0008_0029__have)
       &amp; arg0(EVENTX16) = ENTITYX4
       &amp; arg1(EVENTX16) = ENTITYX14
-      &amp; isA(ENTITYX1,r__article_0008_0002)
-      &amp; r__in_0008_0003(ENTITYX1) = r__Guardian_0008_0005
-      &amp; r__in_0008_0006(ENTITYX1) = ENTITYX2
-      &amp; isA(ENTITYX2,r__July_0008_0007_r__2013_0008_0008)
-      &amp; isA(ENTITYX4,r__hedgehogs_0008_0012)
-      &amp; isA(ENTITYX6,r__character_0008_0016)
-      &amp; isA(ENTITYX8,r__and_0008_0022)
+      &amp; isA(ENTITYX1,r_0008_0002__article)
+      &amp; r_0008_0003__in(ENTITYX1) = r_0008_0005__Guardian
+      &amp; r_0008_0006__in(ENTITYX1) = ENTITYX2
+      &amp; isA(ENTITYX2,r_0008_0007__July_2013)
+      &amp; isA(ENTITYX4,r_0008_0012__hedgehogs)
+      &amp; isA(ENTITYX6,r_0008_0016__character)
+      &amp; isA(ENTITYX8,r_0008_0022__and)
       &amp; conj1(ENTITYX8) = ENTITYX9
       &amp; conj2(ENTITYX8) = ENTITYX11
-      &amp; isA(ENTITYX9,r__appetite_0008_0021)
+      &amp; isA(ENTITYX9,r_0008_0021__appetite)
       &amp; attrib2(ENTITYX9) = ATTRIBX10
-      &amp; isA(ENTITYX11,r__passion_0008_0024)
-      &amp; r__for_0008_0025(ENTITYX11) = ENTITYX12
-      &amp; isA(ENTITYX12,r__gardens_0008_0026)
-      &amp; isA(ENTITYX14,r__sex_0008_0032_r__life_0008_0033)
+      &amp; isA(ENTITYX11,r_0008_0024__passion)
+      &amp; r_0008_0025__for(ENTITYX11) = ENTITYX12
+      &amp; isA(ENTITYX12,r_0008_0026__gardens)
+      &amp; isA(ENTITYX14,r_0008_0032__sex_life)
       &amp; attrib2(ENTITYX14) = ATTRIBX15
-      &amp; isA(r__Guardian_0008_0005,r__Guardian_0008_0005)
-      &amp; isA(ATTRIBX5,r__prickly_0008_0014)
-      &amp; r__in_0008_0015(ATTRIBX5) = ENTITYX6
-      &amp; isA(ATTRIBX10,r__voracious_0008_0020)
-      &amp; isA(ATTRIBX15,r__noisy_0008_0031)
-      &amp; isA(EVENTX18,r__pointed_0008_0009_r__out_0008_0010)
+      &amp; isA(r_0008_0005__Guardian,r_0008_0005__Guardian)
+      &amp; isA(ATTRIBX5,r_0008_0014__prickly)
+      &amp; r_0008_0015__in(ATTRIBX5) = ENTITYX6
+      &amp; isA(ATTRIBX10,r_0008_0020__voracious)
+      &amp; isA(ATTRIBX15,r_0008_0031__noisy)
+      &amp; isA(EVENTX18,r_0008_0009__pointed_out)
       &amp; arg0(EVENTX18) = ENTITYX1
       &amp; arg1(EVENTX18) = STATEX3 ) ).
 

@@ -194,18 +194,18 @@ Instead , it was suggested we air Google 's promotional video to show the &ldquo
 </svg>
 <br>
 <pre>
-arc(cnt_0037_1008,r__air_0037_0007,scope).
-arc(cnt_0037_1008,r__show_0037_0013,restriction).
-arc(r__Instead_0037_0001,r__was_0037_0004,scope).
-arc(r__was_0037_0004,r__suggested_0037_0005,catenative).
-arc(r__suggested_0037_0005,cnt_0037_1008,arg1).
-arc(r__air_0037_0007,r__we_0037_0006,arg0).
-arc(r__air_0037_0007,r__video_0037_0011,arg1).
-arc(r__video_0037_0011,r__Google_0037_0008,genv).
-arc(r__video_0037_0011,r__promotional_0037_0010,attrib2).
-arc(r__show_0037_0013,r__we_0037_0006,arg0).
-arc(r__show_0037_0013,r__context_0037_0017,arg1).
-arc(r__context_0037_0017,r__full_0037_0016,attrib3).
+arc(cnt_0037_1008,r_0037_0007__air,scope).
+arc(cnt_0037_1008,r_0037_0013__show,restriction).
+arc(r_0037_0001__Instead,r_0037_0004__was,scope).
+arc(r_0037_0004__was,r_0037_0005__suggested,catenative).
+arc(r_0037_0005__suggested,cnt_0037_1008,arg1).
+arc(r_0037_0007__air,r_0037_0006__we,arg0).
+arc(r_0037_0007__air,r_0037_0011__video,arg1).
+arc(r_0037_0011__video,r_0037_0008__Google,genv).
+arc(r_0037_0011__video,r_0037_0010__promotional,attrib2).
+arc(r_0037_0013__show,r_0037_0006__we,arg0).
+arc(r_0037_0013__show,r_0037_0017__context,arg1).
+arc(r_0037_0017__context,r_0037_0016__full,attrib3).
 
 </pre>
 <br>
@@ -213,28 +213,28 @@ arc(r__context_0037_0017,r__full_0037_0016,attrib3).
 fof(id_37_A_Duplex,axiom,
     ? [CATENATIVEX3,STATEX5,OPERATORX1,EVENTX15,EVENTX14,CONNX9,EVENTX12,EVENTX13,ENTITYX6,ENTITYX10,ATTRIBX11,ATTRIBX7] :
       ( CATENATIVEX3 = EVENTX14
-      &amp; isA(EVENTX14,r__suggested_0037_0005)
+      &amp; isA(EVENTX14,r_0037_0005__suggested)
       &amp; arg1(EVENTX14) = STATEX5
       &amp; STATEX5 = CONNX9
       &amp; isA(CONNX9,cnt_0037_1008)
       &amp; scope(CONNX9) = EVENTX13
-      &amp; isA(EVENTX13,r__air_0037_0007)
-      &amp; arg0(EVENTX13) = r__we_0037_0006
+      &amp; isA(EVENTX13,r_0037_0007__air)
+      &amp; arg0(EVENTX13) = r_0037_0006__we
       &amp; arg1(EVENTX13) = ENTITYX6
       &amp; restriction(CONNX9) = EVENTX12
-      &amp; isA(EVENTX12,r__show_0037_0013)
-      &amp; arg0(EVENTX12) = r__we_0037_0006
+      &amp; isA(EVENTX12,r_0037_0013__show)
+      &amp; arg0(EVENTX12) = r_0037_0006__we
       &amp; arg1(EVENTX12) = ENTITYX10
-      &amp; isA(ENTITYX6,r__video_0037_0011)
-      &amp; genv(ENTITYX6) = r__Google_0037_0008
+      &amp; isA(ENTITYX6,r_0037_0011__video)
+      &amp; genv(ENTITYX6) = r_0037_0008__Google
       &amp; attrib2(ENTITYX6) = ATTRIBX7
-      &amp; isA(ENTITYX10,r__context_0037_0017)
+      &amp; isA(ENTITYX10,r_0037_0017__context)
       &amp; attrib3(ENTITYX10) = ATTRIBX11
-      &amp; isA(ATTRIBX7,r__promotional_0037_0010)
-      &amp; isA(ATTRIBX11,r__full_0037_0016)
-      &amp; isA(OPERATORX1,r__Instead_0037_0001)
+      &amp; isA(ATTRIBX7,r_0037_0010__promotional)
+      &amp; isA(ATTRIBX11,r_0037_0016__full)
+      &amp; isA(OPERATORX1,r_0037_0001__Instead)
       &amp; scope(OPERATORX1) = EVENTX15
-      &amp; isA(EVENTX15,r__was_0037_0004)
+      &amp; isA(EVENTX15,r_0037_0004__was)
       &amp; catenative(EVENTX15) = CATENATIVEX3 ) ).
 
 

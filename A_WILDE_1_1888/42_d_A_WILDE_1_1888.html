@@ -168,16 +168,16 @@
 </svg>
 <br>
 <pre>
-arc(cnt_0164_1005,r__come_0164_0004,scope).
-arc(cnt_0164_1005,r__bid_0164_0006,restriction).
-arc(utterance_0164_1003,r__am_0164_0003,part1).
-arc(r__am_0164_0003,cnt_0164_1005,catenative).
-arc(r__come_0164_0004,r__I_0164_0002,arg0).
-arc(r__bid_0164_0006,r__I_0164_0002,arg0).
-arc(r__bid_0164_0006,r__you_0164_0007,arg2).
-arc(r__bid_0164_0006,r__good_bye_0164_0008,arg1).
-arc(r__cried_0164_0012,utterance_0164_1003,arg1).
-arc(r__cried_0164_0012,r__he_0164_0011,arg0).
+arc(cnt_0164_1005,r_0164_0004__come,scope).
+arc(cnt_0164_1005,r_0164_0006__bid,restriction).
+arc(r_0164_0003__am,cnt_0164_1005,catenative).
+arc(r_0164_0004__come,r_0164_0002__I,arg0).
+arc(r_0164_0006__bid,r_0164_0002__I,arg0).
+arc(r_0164_0006__bid,r_0164_0007__you,arg2).
+arc(r_0164_0006__bid,r_0164_0008__good_bye,arg1).
+arc(r_0164_0012__cried,r_0164_0011__he,arg0).
+arc(r_0164_0012__cried,utterance_0164_1003,arg1).
+arc(utterance_0164_1003,r_0164_0003__am,part1).
 
 </pre>
 <br>
@@ -187,22 +187,22 @@ fof(id_164_A_WILDE_1_1888,axiom,
       ( STATEX1 = CONJX11
       &amp; isA(CONJX11,utterance_0164_1003)
       &amp; part1(CONJX11) = EVENTX10
-      &amp; isA(EVENTX10,r__am_0164_0003)
+      &amp; isA(EVENTX10,r_0164_0003__am)
       &amp; catenative(EVENTX10) = CATENATIVEX4
       &amp; CATENATIVEX4 = CONNX6
       &amp; isA(CONNX6,cnt_0164_1005)
       &amp; scope(CONNX6) = EVENTX9
-      &amp; isA(EVENTX9,r__come_0164_0004)
-      &amp; arg0(EVENTX9) = r__I_0164_0002
+      &amp; isA(EVENTX9,r_0164_0004__come)
+      &amp; arg0(EVENTX9) = r_0164_0002__I
       &amp; restriction(CONNX6) = EVENTX8
-      &amp; isA(EVENTX8,r__bid_0164_0006)
-      &amp; arg0(EVENTX8) = r__I_0164_0002
-      &amp; arg2(EVENTX8) = r__you_0164_0007
+      &amp; isA(EVENTX8,r_0164_0006__bid)
+      &amp; arg0(EVENTX8) = r_0164_0002__I
+      &amp; arg2(EVENTX8) = r_0164_0007__you
       &amp; arg1(EVENTX8) = ENTITYX7
-      &amp; isA(ENTITYX7,r__good_bye_0164_0008)
-      &amp; isA(EVENTX12,r__cried_0164_0012)
+      &amp; isA(ENTITYX7,r_0164_0008__good_bye)
+      &amp; isA(EVENTX12,r_0164_0012__cried)
       &amp; arg1(EVENTX12) = STATEX1
-      &amp; arg0(EVENTX12) = r__he_0164_0011 ) ).
+      &amp; arg0(EVENTX12) = r_0164_0011__he ) ).
 
 
 </pre>

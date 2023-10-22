@@ -162,15 +162,15 @@
 </svg>
 <br>
 <pre>
-arc(quantificational_r__All_0492_0002,r__can_0492_0004,scope).
-arc(quantificational_r__All_0492_0002,z_0492_1005,restriction).
-arc(r__can_0492_0004,r__be_0492_0005,scope).
-arc(r__be_0492_0005,r__and_0492_0008,catenative).
-arc(r__loaded_0492_0006_r__up_0492_0007,z_0492_1005,arg0).
-arc(r__and_0492_0008,r__loaded_0492_0006_r__up_0492_0007,conj1).
-arc(r__and_0492_0008,r__taken_0492_0009,conj2).
-arc(r__taken_0492_0009,r__back_0492_0010,dir2).
-arc(r__taken_0492_0009,z_0492_1005,arg0).
+arc(r_0492_0002__quantificational__All,r_0492_0004__can,scope).
+arc(r_0492_0002__quantificational__All,z_0492_1005,restriction).
+arc(r_0492_0004__can,r_0492_0005__be,scope).
+arc(r_0492_0005__be,r_0492_0008__and,catenative).
+arc(r_0492_0006__loaded_up,z_0492_1005,arg0).
+arc(r_0492_0008__and,r_0492_0006__loaded_up,conj1).
+arc(r_0492_0008__and,r_0492_0009__taken,conj2).
+arc(r_0492_0009__taken,r_0492_0010__back,dir2).
+arc(r_0492_0009__taken,z_0492_1005,arg0).
 arc(z_0492_1005,z_0492_1004,nlyr2).
 
 </pre>
@@ -179,24 +179,24 @@ arc(z_0492_1005,z_0492_1004,nlyr2).
 fof(id_492_A_DICK_1952,axiom,
     ? [CATENATIVEX7,QUANTX2,OPERATORX6,EVENTX12,CONJX11,EVENTX10,EVENTX8,ENTITYX1,ENTITYX3,QUALITYX9] :
       ( CATENATIVEX7 = CONJX11
-      &amp; isA(CONJX11,r__and_0492_0008)
+      &amp; isA(CONJX11,r_0492_0008__and)
       &amp; conj1(CONJX11) = EVENTX8
-      &amp; isA(EVENTX8,r__loaded_0492_0006_r__up_0492_0007)
+      &amp; isA(EVENTX8,r_0492_0006__loaded_up)
       &amp; arg0(EVENTX8) = ENTITYX1
       &amp; conj2(CONJX11) = EVENTX10
-      &amp; isA(EVENTX10,r__taken_0492_0009)
+      &amp; isA(EVENTX10,r_0492_0009__taken)
       &amp; arg0(EVENTX10) = ENTITYX1
       &amp; dir2(EVENTX10) = QUALITYX9
       &amp; isA(ENTITYX3,z_0492_1004)
-      &amp; isA(QUALITYX9,r__back_0492_0010)
-      &amp; isA(QUANTX2,quantificational_r__All_0492_0002)
+      &amp; isA(QUALITYX9,r_0492_0010__back)
+      &amp; isA(QUANTX2,r_0492_0002__quantificational__All)
       &amp; restriction(QUANTX2) = ENTITYX1
       &amp; isA(ENTITYX1,z_0492_1005)
       &amp; nlyr2(ENTITYX1) = ENTITYX3
       &amp; scope(QUANTX2) = OPERATORX6
-      &amp; isA(OPERATORX6,r__can_0492_0004)
+      &amp; isA(OPERATORX6,r_0492_0004__can)
       &amp; scope(OPERATORX6) = EVENTX12
-      &amp; isA(EVENTX12,r__be_0492_0005)
+      &amp; isA(EVENTX12,r_0492_0005__be)
       &amp; catenative(EVENTX12) = CATENATIVEX7 ) ).
 
 

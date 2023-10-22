@@ -109,11 +109,11 @@
 </svg>
 <br>
 <pre>
-arc(utterance_0084_1003,r__To_be_sure_0084_0002,part1).
-arc(r__To_be_sure_0084_0002,z_0084_1008,scope).
-arc(r__said_0084_0007,utterance_0084_1003,arg1).
-arc(r__said_0084_0007,r__shepherd_0084_0009,arg0).
-arc(z_0084_1008,r__stranger_0084_0004,voc).
+arc(r_0084_0002__To_be_sure,z_0084_1008,scope).
+arc(r_0084_0007__said,r_0084_0009__shepherd,arg0).
+arc(r_0084_0007__said,utterance_0084_1003,arg1).
+arc(utterance_0084_1003,r_0084_0002__To_be_sure,part1).
+arc(z_0084_1008,r_0084_0004__stranger,voc).
 
 </pre>
 <br>
@@ -123,13 +123,13 @@ fof(id_84_A_HARDY_1883,axiom,
       ( STATEX1 = CONJX10
       &amp; isA(CONJX10,utterance_0084_1003)
       &amp; part1(CONJX10) = OPERATORX6
-      &amp; isA(OPERATORX6,r__To_be_sure_0084_0002)
+      &amp; isA(OPERATORX6,r_0084_0002__To_be_sure)
       &amp; scope(OPERATORX6) = EVENTX9
       &amp; isA(EVENTX9,z_0084_1008)
       &amp; voc(EVENTX9) = ENTITYX7
-      &amp; isA(ENTITYX7,r__stranger_0084_0004)
-      &amp; isA(ENTITYX11,r__shepherd_0084_0009)
-      &amp; isA(EVENTX12,r__said_0084_0007)
+      &amp; isA(ENTITYX7,r_0084_0004__stranger)
+      &amp; isA(ENTITYX11,r_0084_0009__shepherd)
+      &amp; isA(EVENTX12,r_0084_0007__said)
       &amp; arg1(EVENTX12) = STATEX1
       &amp; arg0(EVENTX12) = ENTITYX11 ) ).
 

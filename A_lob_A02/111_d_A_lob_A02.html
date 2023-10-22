@@ -194,7 +194,7 @@ Measures agreed so far include : 1 . a mass call-out of police , special constab
 <title>0117_0023&#45;&gt;0117_0026</title>
 <path fill="none" stroke="black" d="M356.92,-437.96C380.5,-424.04 416.86,-402.59 443.42,-386.91"/>
 <polygon fill="black" stroke="black" points="445.53,-389.72 452.36,-381.63 441.97,-383.7 445.53,-389.72"/>
-<text text-anchor="middle" x="449.14" y="-405.8" font-family="fixed" font-size="14.00">from_[loc]</text>
+<text text-anchor="middle" x="445.64" y="-405.8" font-family="fixed" font-size="14.00">from[loc]</text>
 </g>
 <!-- 0117_0015 -->
 <g id="node10" class="node">
@@ -304,26 +304,26 @@ Measures agreed so far include : 1 . a mass call-out of police , special constab
 </svg>
 <br>
 <pre>
-arc(r__agreed_0117_0002,r__Measures_0117_0001,arg0).
-arc(r__agreed_0117_0002,r__far_0117_0004,dir3).
-arc(r__far_0117_0004,r__so_0117_0003,quality1).
-arc(r__include_0117_0005,r__Measures_0117_0001,arg0).
-arc(r__include_0117_0005,r__mass_0117_0010_r__call_out_0117_0011,arg1).
-arc(r__mass_0117_0010_r__call_out_0117_0011,r__police_0117_0013,r__of_0117_0012).
-arc(r__police_0117_0013,r__and_0117_0017,prn3).
-arc(r__police_0117_0013,r__posted_0117_0023,r__with_0117_0020).
-arc(r__constables_0117_0016,r__special_0117_0015,attrib1).
-arc(r__and_0117_0017,r__constables_0117_0016,conj1).
-arc(r__and_0117_0017,r__reserves_0117_0018,conj2).
-arc(r__posted_0117_0023,r__750_0117_0021_r__policemen_0117_0022,arg0).
-arc(r__posted_0117_0023,r__districts_0117_0026,r__from_0117_0024_loc).
-arc(r__districts_0117_0026,r__outlying_0117_0025,attrib1).
-arc(r__districts_0117_0026,r__stations_0117_0028,r__to_0117_0027).
-arc(r__stations_0117_0028,r__area_0117_0031,r__in_0117_0029).
-arc(r__area_0117_0031,r__and_0117_0039,prn4).
-arc(r__and_0117_0039,r__West_0117_0033_r__End_0117_0034_r__Central_0117_0035,conj1).
-arc(r__and_0117_0039,r__Bow_street_0117_0037,conj2).
-arc(r__and_0117_0039,r__Cannon_row_0117_0040,conj3).
+arc(r_0117_0002__agreed,r_0117_0001__Measures,arg0).
+arc(r_0117_0002__agreed,r_0117_0004__far,dir3).
+arc(r_0117_0004__far,r_0117_0003__so,quality1).
+arc(r_0117_0005__include,r_0117_0001__Measures,arg0).
+arc(r_0117_0005__include,r_0117_0010__mass_call_out,arg1).
+arc(r_0117_0010__mass_call_out,r_0117_0013__police,r_0117_0012__of).
+arc(r_0117_0013__police,r_0117_0017__and,prn3).
+arc(r_0117_0013__police,r_0117_0023__posted,r_0117_0020__with).
+arc(r_0117_0016__constables,r_0117_0015__special,attrib1).
+arc(r_0117_0017__and,r_0117_0016__constables,conj1).
+arc(r_0117_0017__and,r_0117_0018__reserves,conj2).
+arc(r_0117_0023__posted,r_0117_0021__750_policemen,arg0).
+arc(r_0117_0023__posted,r_0117_0026__districts,r_0117_0024__from_loc).
+arc(r_0117_0026__districts,r_0117_0025__outlying,attrib1).
+arc(r_0117_0026__districts,r_0117_0028__stations,r_0117_0027__to).
+arc(r_0117_0028__stations,r_0117_0031__area,r_0117_0029__in).
+arc(r_0117_0031__area,r_0117_0039__and,prn4).
+arc(r_0117_0039__and,r_0117_0033__West_End_Central,conj1).
+arc(r_0117_0039__and,r_0117_0037__Bow_street,conj2).
+arc(r_0117_0039__and,r_0117_0040__Cannon_row,conj3).
 
 </pre>
 <br>
@@ -331,42 +331,42 @@ arc(r__and_0117_0039,r__Cannon_row_0117_0040,conj3).
 fof(id_117_A_lob_A02,axiom,
     ? [EVENTX8,EVENTX19,EVENTX16,EVENTX15,ENTITYX1,ENTITYX2,ENTITYX3,ENTITYX4,ENTITYX9,ENTITYX10,ENTITYX12,ENTITYX13,ENTITYX14,ENTITYX5,ENTITYX7,ATTRIBX11,ATTRIBX6,QUALITYX17,QUALITYX18] :
       ( EVENTX8 = EVENTX15
-      &amp; isA(EVENTX15,r__posted_0117_0023)
+      &amp; isA(EVENTX15,r_0117_0023__posted)
       &amp; arg0(EVENTX15) = ENTITYX9
-      &amp; r__from_0117_0024_loc(EVENTX15) = ENTITYX10
-      &amp; isA(EVENTX16,r__include_0117_0005)
+      &amp; r_0117_0024__from_loc(EVENTX15) = ENTITYX10
+      &amp; isA(EVENTX16,r_0117_0005__include)
       &amp; arg0(EVENTX16) = ENTITYX1
       &amp; arg1(EVENTX16) = ENTITYX2
-      &amp; isA(ENTITYX1,r__Measures_0117_0001)
-      &amp; isA(ENTITYX2,r__mass_0117_0010_r__call_out_0117_0011)
-      &amp; r__of_0117_0012(ENTITYX2) = ENTITYX3
-      &amp; isA(ENTITYX3,r__police_0117_0013)
+      &amp; isA(ENTITYX1,r_0117_0001__Measures)
+      &amp; isA(ENTITYX2,r_0117_0010__mass_call_out)
+      &amp; r_0117_0012__of(ENTITYX2) = ENTITYX3
+      &amp; isA(ENTITYX3,r_0117_0013__police)
       &amp; prn3(ENTITYX3) = ENTITYX4
-      &amp; r__with_0117_0020(ENTITYX3) = EVENTX8
-      &amp; isA(ENTITYX4,r__and_0117_0017)
+      &amp; r_0117_0020__with(ENTITYX3) = EVENTX8
+      &amp; isA(ENTITYX4,r_0117_0017__and)
       &amp; conj1(ENTITYX4) = ENTITYX5
       &amp; conj2(ENTITYX4) = ENTITYX7
-      &amp; isA(ENTITYX5,r__constables_0117_0016)
+      &amp; isA(ENTITYX5,r_0117_0016__constables)
       &amp; attrib1(ENTITYX5) = ATTRIBX6
-      &amp; isA(ENTITYX7,r__reserves_0117_0018)
-      &amp; isA(ENTITYX9,r__750_0117_0021_r__policemen_0117_0022)
-      &amp; isA(ENTITYX10,r__districts_0117_0026)
+      &amp; isA(ENTITYX7,r_0117_0018__reserves)
+      &amp; isA(ENTITYX9,r_0117_0021__750_policemen)
+      &amp; isA(ENTITYX10,r_0117_0026__districts)
       &amp; attrib1(ENTITYX10) = ATTRIBX11
-      &amp; r__to_0117_0027(ENTITYX10) = ENTITYX12
-      &amp; isA(ENTITYX12,r__stations_0117_0028)
-      &amp; r__in_0117_0029(ENTITYX12) = ENTITYX13
-      &amp; isA(ENTITYX13,r__area_0117_0031)
+      &amp; r_0117_0027__to(ENTITYX10) = ENTITYX12
+      &amp; isA(ENTITYX12,r_0117_0028__stations)
+      &amp; r_0117_0029__in(ENTITYX12) = ENTITYX13
+      &amp; isA(ENTITYX13,r_0117_0031__area)
       &amp; prn4(ENTITYX13) = ENTITYX14
-      &amp; isA(ENTITYX14,r__and_0117_0039)
-      &amp; conj1(ENTITYX14) = r__West_0117_0033_r__End_0117_0034_r__Central_0117_0035
-      &amp; conj2(ENTITYX14) = r__Bow_street_0117_0037
-      &amp; conj3(ENTITYX14) = r__Cannon_row_0117_0040
-      &amp; isA(ATTRIBX6,r__special_0117_0015)
-      &amp; isA(ATTRIBX11,r__outlying_0117_0025)
-      &amp; isA(QUALITYX17,r__far_0117_0004)
+      &amp; isA(ENTITYX14,r_0117_0039__and)
+      &amp; conj1(ENTITYX14) = r_0117_0033__West_End_Central
+      &amp; conj2(ENTITYX14) = r_0117_0037__Bow_street
+      &amp; conj3(ENTITYX14) = r_0117_0040__Cannon_row
+      &amp; isA(ATTRIBX6,r_0117_0015__special)
+      &amp; isA(ATTRIBX11,r_0117_0025__outlying)
+      &amp; isA(QUALITYX17,r_0117_0004__far)
       &amp; quality1(QUALITYX17) = QUALITYX18
-      &amp; isA(QUALITYX18,r__so_0117_0003)
-      &amp; isA(EVENTX19,r__agreed_0117_0002)
+      &amp; isA(QUALITYX18,r_0117_0003__so)
+      &amp; isA(EVENTX19,r_0117_0002__agreed)
       &amp; arg0(EVENTX19) = ENTITYX1
       &amp; dir3(EVENTX19) = QUALITYX17 ) ).
 

@@ -77,7 +77,7 @@
 <title>0233_0004&#45;&gt;0233_0011</title>
 <path fill="none" stroke="black" d="M174.63,-179.26C183.75,-173.1 194.36,-164.96 202.35,-156 208.85,-148.71 214.6,-139.73 219.23,-131.4"/>
 <polygon fill="black" stroke="black" points="222.41,-132.88 223.96,-122.41 216.21,-129.63 222.41,-132.88"/>
-<text text-anchor="middle" x="237.85" y="-144.8" font-family="fixed" font-size="14.00">at_[loc]</text>
+<text text-anchor="middle" x="234.35" y="-144.8" font-family="fixed" font-size="14.00">at[loc]</text>
 </g>
 <!-- 0233_0007 -->
 <g id="node6" class="node">
@@ -161,15 +161,15 @@
 </svg>
 <br>
 <pre>
-arc(utterance_0233_1003,r__actually_0233_0005,part1).
-arc(r__is_0233_0004,r__here_0233_0003,prd22).
-arc(r__is_0233_0004,r__bird_0233_0008,arg0).
-arc(r__is_0233_0004,r__feet_0233_0011,r__at_0233_0009_loc).
-arc(r__actually_0233_0005,r__is_0233_0004,scope).
-arc(r__bird_0233_0008,r__dead_0233_0007,attrib2).
-arc(r__feet_0233_0011,r__his_0233_0010,genv).
-arc(r__continued_0233_0014,utterance_0233_1003,arg1).
-arc(r__continued_0233_0014,r__Mayor_0233_0016,arg0).
+arc(r_0233_0004__is,r_0233_0003__here,prd22).
+arc(r_0233_0004__is,r_0233_0008__bird,arg0).
+arc(r_0233_0004__is,r_0233_0011__feet,r_0233_0009__at_loc).
+arc(r_0233_0005__actually,r_0233_0004__is,scope).
+arc(r_0233_0008__bird,r_0233_0007__dead,attrib2).
+arc(r_0233_0011__feet,r_0233_0010__his,genv).
+arc(r_0233_0014__continued,r_0233_0016__Mayor,arg0).
+arc(r_0233_0014__continued,utterance_0233_1003,arg1).
+arc(utterance_0233_1003,r_0233_0005__actually,part1).
 
 </pre>
 <br>
@@ -179,20 +179,20 @@ fof(id_233_A_WILDE_1_1888,axiom,
       ( STATEX1 = CONJX10
       &amp; isA(CONJX10,utterance_0233_1003)
       &amp; part1(CONJX10) = OPERATORX5
-      &amp; isA(OPERATORX5,r__actually_0233_0005)
+      &amp; isA(OPERATORX5,r_0233_0005__actually)
       &amp; scope(OPERATORX5) = EVENTX9
-      &amp; isA(EVENTX9,r__is_0233_0004)
+      &amp; isA(EVENTX9,r_0233_0004__is)
       &amp; prd22(EVENTX9) = QUALITYX4
       &amp; arg0(EVENTX9) = ENTITYX6
-      &amp; r__at_0233_0009_loc(EVENTX9) = ENTITYX8
-      &amp; isA(QUALITYX4,r__here_0233_0003)
-      &amp; isA(ENTITYX6,r__bird_0233_0008)
+      &amp; r_0233_0009__at_loc(EVENTX9) = ENTITYX8
+      &amp; isA(QUALITYX4,r_0233_0003__here)
+      &amp; isA(ENTITYX6,r_0233_0008__bird)
       &amp; attrib2(ENTITYX6) = ATTRIBX7
-      &amp; isA(ENTITYX8,r__feet_0233_0011)
-      &amp; genv(ENTITYX8) = r__his_0233_0010
-      &amp; isA(ENTITYX11,r__Mayor_0233_0016)
-      &amp; isA(ATTRIBX7,r__dead_0233_0007)
-      &amp; isA(EVENTX12,r__continued_0233_0014)
+      &amp; isA(ENTITYX8,r_0233_0011__feet)
+      &amp; genv(ENTITYX8) = r_0233_0010__his
+      &amp; isA(ENTITYX11,r_0233_0016__Mayor)
+      &amp; isA(ATTRIBX7,r_0233_0007__dead)
+      &amp; isA(EVENTX12,r_0233_0014__continued)
       &amp; arg1(EVENTX12) = STATEX1
       &amp; arg0(EVENTX12) = ENTITYX11 ) ).
 

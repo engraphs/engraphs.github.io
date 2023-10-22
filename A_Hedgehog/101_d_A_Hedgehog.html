@@ -149,35 +149,35 @@ The fox knows many things , but the hedgehog knows one big thing .
 </svg>
 <br>
 <pre>
-arc(r__knows_0107_0003,r__fox_0107_0002,arg0).
-arc(r__knows_0107_0003,r__things_0107_0005,arg1).
-arc(r__things_0107_0005,r__many_0107_0004,attrib1).
-arc(r__but_0107_0007,r__knows_0107_0003,conj1).
-arc(r__but_0107_0007,r__knows_0107_0010,conj2).
-arc(r__knows_0107_0010,r__hedgehog_0107_0009,arg0).
-arc(r__knows_0107_0010,r__one_0107_0011_r__thing_0107_0013,arg1).
-arc(r__one_0107_0011_r__thing_0107_0013,r__big_0107_0012,attrib2).
+arc(r_0107_0003__knows,r_0107_0002__fox,arg0).
+arc(r_0107_0003__knows,r_0107_0005__things,arg1).
+arc(r_0107_0005__things,r_0107_0004__many,attrib1).
+arc(r_0107_0007__but,r_0107_0003__knows,conj1).
+arc(r_0107_0007__but,r_0107_0010__knows,conj2).
+arc(r_0107_0010__knows,r_0107_0009__hedgehog,arg0).
+arc(r_0107_0010__knows,r_0107_0011__one_thing,arg1).
+arc(r_0107_0011__one_thing,r_0107_0012__big,attrib2).
 
 </pre>
 <br>
 <pre>
 fof(id_107_A_Hedgehog,axiom,
     ? [CONJX9,EVENTX8,EVENTX4,ENTITYX5,ENTITYX6,ENTITYX1,ENTITYX2,ATTRIBX7,ATTRIBX3] :
-      ( isA(ENTITYX1,r__fox_0107_0002)
-      &amp; isA(ENTITYX2,r__things_0107_0005)
+      ( isA(ENTITYX1,r_0107_0002__fox)
+      &amp; isA(ENTITYX2,r_0107_0005__things)
       &amp; attrib1(ENTITYX2) = ATTRIBX3
-      &amp; isA(ENTITYX5,r__hedgehog_0107_0009)
-      &amp; isA(ENTITYX6,r__one_0107_0011_r__thing_0107_0013)
+      &amp; isA(ENTITYX5,r_0107_0009__hedgehog)
+      &amp; isA(ENTITYX6,r_0107_0011__one_thing)
       &amp; attrib2(ENTITYX6) = ATTRIBX7
-      &amp; isA(ATTRIBX3,r__many_0107_0004)
-      &amp; isA(ATTRIBX7,r__big_0107_0012)
-      &amp; isA(CONJX9,r__but_0107_0007)
+      &amp; isA(ATTRIBX3,r_0107_0004__many)
+      &amp; isA(ATTRIBX7,r_0107_0012__big)
+      &amp; isA(CONJX9,r_0107_0007__but)
       &amp; conj1(CONJX9) = EVENTX4
-      &amp; isA(EVENTX4,r__knows_0107_0003)
+      &amp; isA(EVENTX4,r_0107_0003__knows)
       &amp; arg0(EVENTX4) = ENTITYX1
       &amp; arg1(EVENTX4) = ENTITYX2
       &amp; conj2(CONJX9) = EVENTX8
-      &amp; isA(EVENTX8,r__knows_0107_0010)
+      &amp; isA(EVENTX8,r_0107_0010__knows)
       &amp; arg0(EVENTX8) = ENTITYX5
       &amp; arg1(EVENTX8) = ENTITYX6 ) ).
 

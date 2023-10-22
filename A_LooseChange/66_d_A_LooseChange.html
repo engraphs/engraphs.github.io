@@ -103,7 +103,7 @@ The memory of the bitter cold still tingled at my fingertips as I said , &lsquo;
 <title>0122_0008&#45;&gt;0122_0011</title>
 <path fill="none" stroke="black" d="M193.28,-261.61C201.73,-249.23 213.48,-232.01 223.09,-217.92"/>
 <polygon fill="black" stroke="black" points="226,-219.86 228.75,-209.63 220.22,-215.92 226,-219.86"/>
-<text text-anchor="middle" x="239.6" y="-231.8" font-family="fixed" font-size="14.00">at_[clr]</text>
+<text text-anchor="middle" x="236.1" y="-231.8" font-family="fixed" font-size="14.00">at[clr]</text>
 </g>
 <!-- 0122_0010 -->
 <g id="node7" class="node">
@@ -121,8 +121,8 @@ The memory of the bitter cold still tingled at my fingertips as I said , &lsquo;
 <!-- 0122_0012_cnt -->
 <g id="node8" class="node">
 <title>0122_0012_cnt</title>
-<ellipse fill="none" stroke="black" cx="226.1" cy="-366" rx="46.29" ry="18"/>
-<text text-anchor="middle" x="226.1" y="-362.3" font-family="fixed" font-size="14.00">as_[cnt]</text>
+<ellipse fill="none" stroke="black" cx="226.1" cy="-366" rx="42.49" ry="18"/>
+<text text-anchor="middle" x="226.1" y="-362.3" font-family="fixed" font-size="14.00">as[cnt]</text>
 </g>
 <!-- 0122_0012_cnt&#45;&gt;0122_0008 -->
 <g id="edge7" class="edge">
@@ -140,8 +140,8 @@ The memory of the bitter cold still tingled at my fingertips as I said , &lsquo;
 <!-- 0122_0012_cnt&#45;&gt;0122_0014 -->
 <g id="edge8" class="edge">
 <title>0122_0012_cnt&#45;&gt;0122_0014</title>
-<path fill="none" stroke="black" d="M245.17,-349.41C262.05,-335.61 286.8,-315.38 305.23,-300.32"/>
-<polygon fill="black" stroke="black" points="307.68,-302.84 313.21,-293.8 303.25,-297.42 307.68,-302.84"/>
+<path fill="none" stroke="black" d="M244.69,-349.8C261.59,-335.99 286.64,-315.51 305.25,-300.3"/>
+<polygon fill="black" stroke="black" points="307.51,-302.98 313.04,-293.94 303.08,-297.56 307.51,-302.98"/>
 <text text-anchor="middle" x="324.6" y="-318.8" font-family="fixed" font-size="14.00">[restriction]</text>
 </g>
 <!-- 0122_0014&#45;&gt;0122_0010 -->
@@ -194,18 +194,18 @@ The memory of the bitter cold still tingled at my fingertips as I said , &lsquo;
 </svg>
 <br>
 <pre>
-arc(question_0122_1010,r__Why_0122_0017,scope).
-arc(r__memory_0122_0002,r__cold_0122_0006,r__of_0122_0003).
-arc(r__cold_0122_0006,r__bitter_0122_0005,attrib2).
-arc(r__tingled_0122_0008,r__memory_0122_0002,arg0).
-arc(r__tingled_0122_0008,r__still_0122_0007,tmp2).
-arc(r__tingled_0122_0008,r__fingertips_0122_0011,r__at_0122_0009_clr).
-arc(r__fingertips_0122_0011,r__my_0122_0010,genv).
-arc(r__as_0122_0012_cnt,r__tingled_0122_0008,scope).
-arc(r__as_0122_0012_cnt,r__said_0122_0014,restriction).
-arc(r__said_0122_0014,question_0122_1010,arg1).
-arc(r__said_0122_0014,r__my_0122_0010,arg0).
-arc(r__Why_0122_0017,z_0122_1012,scope).
+arc(question_0122_1010,r_0122_0017__Why,scope).
+arc(r_0122_0002__memory,r_0122_0006__cold,r_0122_0003__of).
+arc(r_0122_0006__cold,r_0122_0005__bitter,attrib2).
+arc(r_0122_0008__tingled,r_0122_0002__memory,arg0).
+arc(r_0122_0008__tingled,r_0122_0007__still,tmp2).
+arc(r_0122_0008__tingled,r_0122_0011__fingertips,r_0122_0009__at_clr).
+arc(r_0122_0011__fingertips,r_0122_0010__my,genv).
+arc(r_0122_0012__as_cnt,r_0122_0008__tingled,scope).
+arc(r_0122_0012__as_cnt,r_0122_0014__said,restriction).
+arc(r_0122_0014__said,question_0122_1010,arg1).
+arc(r_0122_0014__said,r_0122_0010__my,arg0).
+arc(r_0122_0017__Why,z_0122_1012,scope).
 
 </pre>
 <br>
@@ -215,26 +215,26 @@ fof(id_122_A_LooseChange,axiom,
       ( STATEX8 = OPERATORX10
       &amp; isA(OPERATORX10,question_0122_1010)
       &amp; scope(OPERATORX10) = OPERATORX11
-      &amp; isA(OPERATORX11,r__Why_0122_0017)
+      &amp; isA(OPERATORX11,r_0122_0017__Why)
       &amp; scope(OPERATORX11) = EVENTX13
       &amp; isA(EVENTX13,z_0122_1012)
-      &amp; isA(ENTITYX1,r__memory_0122_0002)
-      &amp; r__of_0122_0003(ENTITYX1) = ENTITYX2
-      &amp; isA(ENTITYX2,r__cold_0122_0006)
+      &amp; isA(ENTITYX1,r_0122_0002__memory)
+      &amp; r_0122_0003__of(ENTITYX1) = ENTITYX2
+      &amp; isA(ENTITYX2,r_0122_0006__cold)
       &amp; attrib2(ENTITYX2) = ATTRIBX3
-      &amp; isA(ENTITYX5,r__fingertips_0122_0011)
-      &amp; genv(ENTITYX5) = r__my_0122_0010
-      &amp; SPEAKERX7 = r__my_0122_0010
-      &amp; isA(ATTRIBX3,r__bitter_0122_0005)
-      &amp; isA(QUALITYX4,r__still_0122_0007)
-      &amp; isA(CONNX6,r__as_0122_0012_cnt)
+      &amp; isA(ENTITYX5,r_0122_0011__fingertips)
+      &amp; genv(ENTITYX5) = r_0122_0010__my
+      &amp; SPEAKERX7 = r_0122_0010__my
+      &amp; isA(ATTRIBX3,r_0122_0005__bitter)
+      &amp; isA(QUALITYX4,r_0122_0007__still)
+      &amp; isA(CONNX6,r_0122_0012__as_cnt)
       &amp; scope(CONNX6) = EVENTX15
-      &amp; isA(EVENTX15,r__tingled_0122_0008)
+      &amp; isA(EVENTX15,r_0122_0008__tingled)
       &amp; arg0(EVENTX15) = ENTITYX1
       &amp; tmp2(EVENTX15) = QUALITYX4
-      &amp; r__at_0122_0009_clr(EVENTX15) = ENTITYX5
+      &amp; r_0122_0009__at_clr(EVENTX15) = ENTITYX5
       &amp; restriction(CONNX6) = EVENTX14
-      &amp; isA(EVENTX14,r__said_0122_0014)
+      &amp; isA(EVENTX14,r_0122_0014__said)
       &amp; arg0(EVENTX14) = SPEAKERX7
       &amp; arg1(EVENTX14) = STATEX8 ) ).
 

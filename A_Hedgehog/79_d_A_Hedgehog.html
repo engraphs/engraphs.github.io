@@ -143,14 +143,14 @@ More than 36,500 hedgehog champions are campaigning to create hedgehog-friendly 
 </svg>
 <br>
 <pre>
-arc(r__More_0084_0001,r__36,500_0084_0003,r__than_0084_0002).
-arc(r__hedgehog_0084_0004_r__champions_0084_0005,r__More_0084_0001,attrib1).
-arc(r__are_0084_0006,r__campaigning_0084_0007,catenative).
-arc(r__campaigning_0084_0007,r__hedgehog_0084_0004_r__champions_0084_0005,arg0).
-arc(r__campaigning_0084_0007,r__create_0084_0009,arg1).
-arc(r__create_0084_0009,r__hedgehog_0084_0004_r__champions_0084_0005,arg0).
-arc(r__create_0084_0009,r__neighbourhoods_0084_0011,arg1).
-arc(r__neighbourhoods_0084_0011,r__hedgehog_friendly_0084_0010,attrib1).
+arc(r_0084_0001__More,r_0084_0003__36,500,r_0084_0002__than).
+arc(r_0084_0004__hedgehog_champions,r_0084_0001__More,attrib1).
+arc(r_0084_0006__are,r_0084_0007__campaigning,catenative).
+arc(r_0084_0007__campaigning,r_0084_0004__hedgehog_champions,arg0).
+arc(r_0084_0007__campaigning,r_0084_0009__create,arg1).
+arc(r_0084_0009__create,r_0084_0004__hedgehog_champions,arg0).
+arc(r_0084_0009__create,r_0084_0011__neighbourhoods,arg1).
+arc(r_0084_0011__neighbourhoods,r_0084_0010__hedgehog_friendly,attrib1).
 
 </pre>
 <br>
@@ -158,22 +158,22 @@ arc(r__neighbourhoods_0084_0011,r__hedgehog_friendly_0084_0010,attrib1).
 fof(id_84_A_Hedgehog,axiom,
     ? [CATENATIVEX4,STATEX5,EVENTX10,EVENTX9,EVENTX8,ENTITYX1,ENTITYX6,ENTITYX3,ATTRIBX7,ATTRIBX2] :
       ( CATENATIVEX4 = EVENTX9
-      &amp; isA(EVENTX9,r__campaigning_0084_0007)
+      &amp; isA(EVENTX9,r_0084_0007__campaigning)
       &amp; arg0(EVENTX9) = ENTITYX1
       &amp; arg1(EVENTX9) = STATEX5
       &amp; STATEX5 = EVENTX8
-      &amp; isA(EVENTX8,r__create_0084_0009)
+      &amp; isA(EVENTX8,r_0084_0009__create)
       &amp; arg0(EVENTX8) = ENTITYX1
       &amp; arg1(EVENTX8) = ENTITYX6
-      &amp; isA(ENTITYX1,r__hedgehog_0084_0004_r__champions_0084_0005)
+      &amp; isA(ENTITYX1,r_0084_0004__hedgehog_champions)
       &amp; attrib1(ENTITYX1) = ATTRIBX2
-      &amp; isA(ENTITYX3,r__36,500_0084_0003)
-      &amp; isA(ENTITYX6,r__neighbourhoods_0084_0011)
+      &amp; isA(ENTITYX3,r_0084_0003__36,500)
+      &amp; isA(ENTITYX6,r_0084_0011__neighbourhoods)
       &amp; attrib1(ENTITYX6) = ATTRIBX7
-      &amp; isA(ATTRIBX2,r__More_0084_0001)
-      &amp; r__than_0084_0002(ATTRIBX2) = ENTITYX3
-      &amp; isA(ATTRIBX7,r__hedgehog_friendly_0084_0010)
-      &amp; isA(EVENTX10,r__are_0084_0006)
+      &amp; isA(ATTRIBX2,r_0084_0001__More)
+      &amp; r_0084_0002__than(ATTRIBX2) = ENTITYX3
+      &amp; isA(ATTRIBX7,r_0084_0010__hedgehog_friendly)
+      &amp; isA(EVENTX10,r_0084_0006__are)
       &amp; catenative(EVENTX10) = CATENATIVEX4 ) ).
 
 

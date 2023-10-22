@@ -116,29 +116,29 @@ Africans drop rivalry to fight Sir Roy .
 </svg>
 <br>
 <pre>
-arc(cnt_0011_1003,r__drop_0011_0002,scope).
-arc(cnt_0011_1003,r__fight_0011_0005,restriction).
-arc(r__drop_0011_0002,r__Africans_0011_0001,arg0).
-arc(r__drop_0011_0002,r__rivalry_0011_0003,arg1).
-arc(r__fight_0011_0005,r__Africans_0011_0001,arg0).
-arc(r__fight_0011_0005,r__Sir_0011_0006_r__Roy_0011_0007,arg1).
+arc(cnt_0011_1003,r_0011_0002__drop,scope).
+arc(cnt_0011_1003,r_0011_0005__fight,restriction).
+arc(r_0011_0002__drop,r_0011_0001__Africans,arg0).
+arc(r_0011_0002__drop,r_0011_0003__rivalry,arg1).
+arc(r_0011_0005__fight,r_0011_0001__Africans,arg0).
+arc(r_0011_0005__fight,r_0011_0006__Sir_Roy,arg1).
 
 </pre>
 <br>
 <pre>
 fof(id_11_A_lob_A01,axiom,
     ? [CONNX4,EVENTX5,EVENTX6,ENTITYX1,ENTITYX2] :
-      ( isA(ENTITYX1,r__Africans_0011_0001)
-      &amp; isA(ENTITYX2,r__rivalry_0011_0003)
+      ( isA(ENTITYX1,r_0011_0001__Africans)
+      &amp; isA(ENTITYX2,r_0011_0003__rivalry)
       &amp; isA(CONNX4,cnt_0011_1003)
       &amp; scope(CONNX4) = EVENTX6
-      &amp; isA(EVENTX6,r__drop_0011_0002)
+      &amp; isA(EVENTX6,r_0011_0002__drop)
       &amp; arg0(EVENTX6) = ENTITYX1
       &amp; arg1(EVENTX6) = ENTITYX2
       &amp; restriction(CONNX4) = EVENTX5
-      &amp; isA(EVENTX5,r__fight_0011_0005)
+      &amp; isA(EVENTX5,r_0011_0005__fight)
       &amp; arg0(EVENTX5) = ENTITYX1
-      &amp; arg1(EVENTX5) = r__Sir_0011_0006_r__Roy_0011_0007 ) ).
+      &amp; arg1(EVENTX5) = r_0011_0006__Sir_Roy ) ).
 
 
 </pre>

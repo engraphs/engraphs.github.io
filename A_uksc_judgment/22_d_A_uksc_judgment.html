@@ -273,25 +273,25 @@ Sir John 's evidence is that he has never known a Government to need as much as 
 </svg>
 <br>
 <pre>
-arc(cnt_0036_1013,r__need_0036_0014,scope).
-arc(cnt_0036_1013,r__put_0036_0021,restriction).
-arc(r__evidence_0036_0004,r__Sir_0036_0001_r__John_0036_0002,genv).
-arc(r__is_0036_0005,r__evidence_0036_0004,arg0).
-arc(r__is_0036_0005,r__has_0036_0008,prd2).
-arc(r__has_0036_0008,r__known_0036_0010,catenative).
-arc(r__known_0036_0010,cnt_0036_1013,arg1).
-arc(r__known_0036_0010,r__Sir_0036_0001_r__John_0036_0002,arg0).
-arc(r__known_0036_0010,r__never_0036_0009,tmp1).
-arc(r__need_0036_0014,r__Government_0036_0012,arg0).
-arc(r__need_0036_0014,z_0036_1012,arg1).
-arc(r__much_0036_0016,r__as_0036_0015,quality1).
-arc(r__much_0036_0016,r__five_0036_0018_r__weeks_0036_0019,r__as_0036_0017).
-arc(r__put_0036_0021,r__together_0036_0022,prd3).
-arc(r__put_0036_0021,r__agenda_0036_0025,arg1).
-arc(r__put_0036_0021,z_0036_1012,arg0).
-arc(r__agenda_0036_0025,r__Government_0036_0012,genv).
-arc(r__agenda_0036_0025,r__legislative_0036_0024,attrib2).
-arc(z_0036_1012,r__much_0036_0016,attrib1).
+arc(cnt_0036_1013,r_0036_0014__need,scope).
+arc(cnt_0036_1013,r_0036_0021__put,restriction).
+arc(r_0036_0004__evidence,r_0036_0001__Sir_John,genv).
+arc(r_0036_0005__is,r_0036_0004__evidence,arg0).
+arc(r_0036_0005__is,r_0036_0008__has,prd2).
+arc(r_0036_0008__has,r_0036_0010__known,catenative).
+arc(r_0036_0010__known,cnt_0036_1013,arg1).
+arc(r_0036_0010__known,r_0036_0001__Sir_John,arg0).
+arc(r_0036_0010__known,r_0036_0009__never,tmp1).
+arc(r_0036_0014__need,r_0036_0012__Government,arg0).
+arc(r_0036_0014__need,z_0036_1012,arg1).
+arc(r_0036_0016__much,r_0036_0015__as,quality1).
+arc(r_0036_0016__much,r_0036_0018__five_weeks,r_0036_0017__as).
+arc(r_0036_0021__put,r_0036_0022__together,prd3).
+arc(r_0036_0021__put,r_0036_0025__agenda,arg1).
+arc(r_0036_0021__put,z_0036_1012,arg0).
+arc(r_0036_0025__agenda,r_0036_0012__Government,genv).
+arc(r_0036_0025__agenda,r_0036_0024__legislative,attrib2).
+arc(z_0036_1012,r_0036_0016__much,attrib1).
 
 </pre>
 <br>
@@ -299,43 +299,43 @@ arc(z_0036_1012,r__much_0036_0016,attrib1).
 fof(id_36_A_uksc_judgment,axiom,
     ? [STATEX2,CATENATIVEX4,STATEX7,MAJORX3,GOVX17,EVENTX23,EVENTX22,EVENTX21,CONNX14,EVENTX19,EVENTX20,ENTITYX1,GOVX6,ENTITYX8,ENTITYX16,ENTITYX11,QUALITYX5,QUALITYX15,QUALITYX10,ATTRIBX18,ATTRIBX9] :
       ( STATEX2 = EVENTX22
-      &amp; isA(EVENTX22,r__has_0036_0008)
+      &amp; isA(EVENTX22,r_0036_0008__has)
       &amp; catenative(EVENTX22) = CATENATIVEX4
       &amp; CATENATIVEX4 = EVENTX21
-      &amp; isA(EVENTX21,r__known_0036_0010)
+      &amp; isA(EVENTX21,r_0036_0010__known)
       &amp; arg0(EVENTX21) = MAJORX3
       &amp; tmp1(EVENTX21) = QUALITYX5
       &amp; arg1(EVENTX21) = STATEX7
       &amp; STATEX7 = CONNX14
       &amp; isA(CONNX14,cnt_0036_1013)
       &amp; scope(CONNX14) = EVENTX20
-      &amp; isA(EVENTX20,r__need_0036_0014)
+      &amp; isA(EVENTX20,r_0036_0014__need)
       &amp; arg0(EVENTX20) = GOVX6
       &amp; arg1(EVENTX20) = ENTITYX8
       &amp; restriction(CONNX14) = EVENTX19
-      &amp; isA(EVENTX19,r__put_0036_0021)
+      &amp; isA(EVENTX19,r_0036_0021__put)
       &amp; arg0(EVENTX19) = ENTITYX8
       &amp; prd3(EVENTX19) = QUALITYX15
       &amp; arg1(EVENTX19) = ENTITYX16
-      &amp; isA(ENTITYX1,r__evidence_0036_0004)
-      &amp; genv(ENTITYX1) = r__Sir_0036_0001_r__John_0036_0002
-      &amp; MAJORX3 = r__Sir_0036_0001_r__John_0036_0002
-      &amp; isA(GOVX6,r__Government_0036_0012)
+      &amp; isA(ENTITYX1,r_0036_0004__evidence)
+      &amp; genv(ENTITYX1) = r_0036_0001__Sir_John
+      &amp; MAJORX3 = r_0036_0001__Sir_John
+      &amp; isA(GOVX6,r_0036_0012__Government)
       &amp; isA(ENTITYX8,z_0036_1012)
       &amp; attrib1(ENTITYX8) = ATTRIBX9
-      &amp; isA(ENTITYX11,r__five_0036_0018_r__weeks_0036_0019)
-      &amp; isA(ENTITYX16,r__agenda_0036_0025)
+      &amp; isA(ENTITYX11,r_0036_0018__five_weeks)
+      &amp; isA(ENTITYX16,r_0036_0025__agenda)
       &amp; genv(ENTITYX16) = GOVX17
       &amp; attrib2(ENTITYX16) = ATTRIBX18
       &amp; GOVX17 = GOVX6
-      &amp; isA(QUALITYX5,r__never_0036_0009)
-      &amp; isA(QUALITYX10,r__as_0036_0015)
-      &amp; isA(QUALITYX15,r__together_0036_0022)
-      &amp; isA(ATTRIBX9,r__much_0036_0016)
+      &amp; isA(QUALITYX5,r_0036_0009__never)
+      &amp; isA(QUALITYX10,r_0036_0015__as)
+      &amp; isA(QUALITYX15,r_0036_0022__together)
+      &amp; isA(ATTRIBX9,r_0036_0016__much)
       &amp; quality1(ATTRIBX9) = QUALITYX10
-      &amp; r__as_0036_0017(ATTRIBX9) = ENTITYX11
-      &amp; isA(ATTRIBX18,r__legislative_0036_0024)
-      &amp; isA(EVENTX23,r__is_0036_0005)
+      &amp; r_0036_0017__as(ATTRIBX9) = ENTITYX11
+      &amp; isA(ATTRIBX18,r_0036_0024__legislative)
+      &amp; isA(EVENTX23,r_0036_0005__is)
       &amp; arg0(EVENTX23) = ENTITYX1
       &amp; prd2(EVENTX23) = STATEX2 ) ).
 

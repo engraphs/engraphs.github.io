@@ -104,7 +104,7 @@
 <title>0213_0014&#45;&gt;0213_0016</title>
 <path fill="none" stroke="black" d="M426.85,-348.21C435.19,-335.98 446.64,-319.21 456.09,-305.36"/>
 <polygon fill="black" stroke="black" points="459.21,-306.99 461.96,-296.76 453.43,-303.05 459.21,-306.99"/>
-<text text-anchor="middle" x="471.89" y="-318.8" font-family="fixed" font-size="14.00">to_[clr]</text>
+<text text-anchor="middle" x="468.39" y="-318.8" font-family="fixed" font-size="14.00">to[clr]</text>
 </g>
 <!-- 0213_0019 -->
 <g id="node7" class="node">
@@ -175,16 +175,16 @@
 </svg>
 <br>
 <pre>
-arc(r__provision_0213_0005,r__information_0213_0007,r__of_0213_0006).
-arc(r__provision_0213_0005,r__target_0213_0009_r__entities_0213_0010,r__for_0213_0008).
-arc(r__provision_0213_0005,r__matters_0213_0013,r__about_0213_0011).
-arc(r__contributing_0213_0014,r__matters_0213_0013,arg0).
-arc(r__contributing_0213_0014,r__ensuring_0213_0016,r__to_0213_0015_clr).
-arc(r__ensuring_0213_0016,r__handling_0213_0019,arg1).
-arc(r__handling_0213_0019,r__proper_0213_0018,attrib2).
-arc(r__handling_0213_0019,r__information_0213_0022,r__of_0213_0020).
-arc(r__information_0213_0022,r__personal_0213_0021,attrib1).
-arc(z_0213_1016,r__provision_0213_0005,z_0213_1002).
+arc(r_0213_0005__provision,r_0213_0007__information,r_0213_0006__of).
+arc(r_0213_0005__provision,r_0213_0009__target_entities,r_0213_0008__for).
+arc(r_0213_0005__provision,r_0213_0013__matters,r_0213_0011__about).
+arc(r_0213_0014__contributing,r_0213_0013__matters,arg0).
+arc(r_0213_0014__contributing,r_0213_0016__ensuring,r_0213_0015__to_clr).
+arc(r_0213_0016__ensuring,r_0213_0019__handling,arg1).
+arc(r_0213_0019__handling,r_0213_0018__proper,attrib2).
+arc(r_0213_0019__handling,r_0213_0022__information,r_0213_0020__of).
+arc(r_0213_0022__information,r_0213_0021__personal,attrib1).
+arc(z_0213_1016,r_0213_0005__provision,z_0213_1002).
 
 </pre>
 <br>
@@ -192,25 +192,25 @@ arc(z_0213_1016,r__provision_0213_0005,z_0213_1002).
 fof(id_213_A_law_h15A119,axiom,
     ? [EVENTX7,EVENTX17,EVENTX15,EVENTX14,ENTITYX3,ENTITYX4,ENTITYX5,ENTITYX6,ENTITYX10,ENTITYX12,ATTRIBX11,ATTRIBX13] :
       ( EVENTX7 = EVENTX14
-      &amp; isA(EVENTX14,r__ensuring_0213_0016)
+      &amp; isA(EVENTX14,r_0213_0016__ensuring)
       &amp; arg1(EVENTX14) = ENTITYX10
-      &amp; isA(ENTITYX3,r__provision_0213_0005)
-      &amp; r__of_0213_0006(ENTITYX3) = ENTITYX4
-      &amp; r__for_0213_0008(ENTITYX3) = ENTITYX5
-      &amp; r__about_0213_0011(ENTITYX3) = ENTITYX6
-      &amp; isA(ENTITYX4,r__information_0213_0007)
-      &amp; isA(ENTITYX5,r__target_0213_0009_r__entities_0213_0010)
-      &amp; isA(EVENTX15,r__contributing_0213_0014)
+      &amp; isA(ENTITYX3,r_0213_0005__provision)
+      &amp; r_0213_0006__of(ENTITYX3) = ENTITYX4
+      &amp; r_0213_0008__for(ENTITYX3) = ENTITYX5
+      &amp; r_0213_0011__about(ENTITYX3) = ENTITYX6
+      &amp; isA(ENTITYX4,r_0213_0007__information)
+      &amp; isA(ENTITYX5,r_0213_0009__target_entities)
+      &amp; isA(EVENTX15,r_0213_0014__contributing)
       &amp; arg0(EVENTX15) = ENTITYX6
-      &amp; r__to_0213_0015_clr(EVENTX15) = EVENTX7
-      &amp; isA(ENTITYX6,r__matters_0213_0013)
-      &amp; isA(ENTITYX10,r__handling_0213_0019)
+      &amp; r_0213_0015__to_clr(EVENTX15) = EVENTX7
+      &amp; isA(ENTITYX6,r_0213_0013__matters)
+      &amp; isA(ENTITYX10,r_0213_0019__handling)
       &amp; attrib2(ENTITYX10) = ATTRIBX11
-      &amp; r__of_0213_0020(ENTITYX10) = ENTITYX12
-      &amp; isA(ENTITYX12,r__information_0213_0022)
+      &amp; r_0213_0020__of(ENTITYX10) = ENTITYX12
+      &amp; isA(ENTITYX12,r_0213_0022__information)
       &amp; attrib1(ENTITYX12) = ATTRIBX13
-      &amp; isA(ATTRIBX11,r__proper_0213_0018)
-      &amp; isA(ATTRIBX13,r__personal_0213_0021)
+      &amp; isA(ATTRIBX11,r_0213_0018__proper)
+      &amp; isA(ATTRIBX13,r_0213_0021__personal)
       &amp; isA(EVENTX17,z_0213_1016)
       &amp; z_0213_1002(EVENTX17) = ENTITYX3 ) ).
 

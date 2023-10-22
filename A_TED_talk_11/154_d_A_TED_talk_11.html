@@ -129,7 +129,7 @@ There 's a raft of research , but I know it from my personal life .
 <title>0199_0010&#45;&gt;0199_0015</title>
 <path fill="none" stroke="black" d="M208.17,-178.83C218.49,-172.84 230.28,-164.97 239.4,-156 246.69,-148.82 253.26,-139.78 258.57,-131.36"/>
 <polygon fill="black" stroke="black" points="261.69,-132.96 263.83,-122.59 255.68,-129.37 261.69,-132.96"/>
-<text text-anchor="middle" x="284.9" y="-144.8" font-family="fixed" font-size="14.00">from_[dir]</text>
+<text text-anchor="middle" x="281.4" y="-144.8" font-family="fixed" font-size="14.00">from[dir]</text>
 </g>
 <!-- 0199_0015&#45;&gt;0199_0009 -->
 <g id="edge8" class="edge">
@@ -155,38 +155,38 @@ There 's a raft of research , but I know it from my personal life .
 </svg>
 <br>
 <pre>
-arc(r___apos_s_0199_0002,r__raft_0199_0004,arg0).
-arc(r__raft_0199_0004,r__research_0199_0006,r__of_0199_0005).
-arc(r__but_0199_0008,r___apos_s_0199_0002,conj1).
-arc(r__but_0199_0008,r__know_0199_0010,conj2).
-arc(r__know_0199_0010,r__I_0199_0009,arg0).
-arc(r__know_0199_0010,r__it_0199_0011,arg1).
-arc(r__know_0199_0010,r__life_0199_0015,r__from_0199_0012_dir).
-arc(r__life_0199_0015,r__I_0199_0009,genv).
-arc(r__life_0199_0015,r__personal_0199_0014,attrib2).
+arc(r_0199_0002___apos_s,r_0199_0004__raft,arg0).
+arc(r_0199_0004__raft,r_0199_0006__research,r_0199_0005__of).
+arc(r_0199_0008__but,r_0199_0002___apos_s,conj1).
+arc(r_0199_0008__but,r_0199_0010__know,conj2).
+arc(r_0199_0010__know,r_0199_0009__I,arg0).
+arc(r_0199_0010__know,r_0199_0011__it,arg1).
+arc(r_0199_0010__know,r_0199_0015__life,r_0199_0012__from_dir).
+arc(r_0199_0015__life,r_0199_0009__I,genv).
+arc(r_0199_0015__life,r_0199_0014__personal,attrib2).
 
 </pre>
 <br>
 <pre>
 fof(id_199_A_TED_talk_11,axiom,
     ? [SPEAKERX5,CONJX8,EVENTX7,EVENTX3,ENTITYX4,ENTITYX1,ENTITYX2,ATTRIBX6] :
-      ( isA(ENTITYX1,r__raft_0199_0004)
-      &amp; r__of_0199_0005(ENTITYX1) = ENTITYX2
-      &amp; isA(ENTITYX2,r__research_0199_0006)
-      &amp; isA(ENTITYX4,r__life_0199_0015)
+      ( isA(ENTITYX1,r_0199_0004__raft)
+      &amp; r_0199_0005__of(ENTITYX1) = ENTITYX2
+      &amp; isA(ENTITYX2,r_0199_0006__research)
+      &amp; isA(ENTITYX4,r_0199_0015__life)
       &amp; genv(ENTITYX4) = SPEAKERX5
       &amp; attrib2(ENTITYX4) = ATTRIBX6
-      &amp; SPEAKERX5 = r__I_0199_0009
-      &amp; isA(ATTRIBX6,r__personal_0199_0014)
-      &amp; isA(CONJX8,r__but_0199_0008)
+      &amp; SPEAKERX5 = r_0199_0009__I
+      &amp; isA(ATTRIBX6,r_0199_0014__personal)
+      &amp; isA(CONJX8,r_0199_0008__but)
       &amp; conj1(CONJX8) = EVENTX3
-      &amp; isA(EVENTX3,r___apos_s_0199_0002)
+      &amp; isA(EVENTX3,r_0199_0002___apos_s)
       &amp; arg0(EVENTX3) = ENTITYX1
       &amp; conj2(CONJX8) = EVENTX7
-      &amp; isA(EVENTX7,r__know_0199_0010)
-      &amp; arg0(EVENTX7) = r__I_0199_0009
-      &amp; arg1(EVENTX7) = r__it_0199_0011
-      &amp; r__from_0199_0012_dir(EVENTX7) = ENTITYX4 ) ).
+      &amp; isA(EVENTX7,r_0199_0010__know)
+      &amp; arg0(EVENTX7) = r_0199_0009__I
+      &amp; arg1(EVENTX7) = r_0199_0011__it
+      &amp; r_0199_0012__from_dir(EVENTX7) = ENTITYX4 ) ).
 
 
 </pre>

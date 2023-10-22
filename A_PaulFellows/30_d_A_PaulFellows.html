@@ -187,17 +187,17 @@ I thought it was quite smart , this design with this plastic moulding on the fro
 </svg>
 <br>
 <pre>
-arc(r__thought_0035_0002,r__I_0035_0001,arg0).
-arc(r__thought_0035_0002,r__was_0035_0004,arg1).
-arc(r__was_0035_0004,r__smart_0035_0006,prd2).
-arc(r__was_0035_0004,r__design_0035_0009,arg0).
-arc(r__smart_0035_0006,r__quite_0035_0005,quality1).
-arc(r__design_0035_0009,r__and_0035_0017,r__with_0035_0010).
-arc(r__plastic_0035_0012_r__moulding_0035_0013,r__front_0035_0016,r__on_0035_0014).
-arc(r__and_0035_0017,r__plastic_0035_0012_r__moulding_0035_0013,conj1).
-arc(r__and_0035_0017,r__keyboard_0035_0019,conj2).
-arc(r__plugged_0035_0021,r__keyboard_0035_0019,arg0).
-arc(r__plugged_0035_0021,z_0035_1011,dir3).
+arc(r_0035_0002__thought,r_0035_0001__I,arg0).
+arc(r_0035_0002__thought,r_0035_0004__was,arg1).
+arc(r_0035_0004__was,r_0035_0006__smart,prd2).
+arc(r_0035_0004__was,r_0035_0009__design,arg0).
+arc(r_0035_0006__smart,r_0035_0005__quite,quality1).
+arc(r_0035_0009__design,r_0035_0017__and,r_0035_0010__with).
+arc(r_0035_0012__plastic_moulding,r_0035_0016__front,r_0035_0014__on).
+arc(r_0035_0017__and,r_0035_0012__plastic_moulding,conj1).
+arc(r_0035_0017__and,r_0035_0019__keyboard,conj2).
+arc(r_0035_0021__plugged,r_0035_0019__keyboard,arg0).
+arc(r_0035_0021__plugged,z_0035_1011,dir3).
 
 </pre>
 <br>
@@ -205,28 +205,28 @@ arc(r__plugged_0035_0021,z_0035_1011,dir3).
 fof(id_35_A_PaulFellows,axiom,
     ? [STATEX1,EVENTX14,EVENTX13,EVENTX12,ENTITYX5,ENTITYX6,ENTITYX7,ENTITYX9,ENTITYX8,ATTRIBX3,QUALITYX10,QUALITYX4] :
       ( STATEX1 = EVENTX13
-      &amp; isA(EVENTX13,r__was_0035_0004)
+      &amp; isA(EVENTX13,r_0035_0004__was)
       &amp; arg0(EVENTX13) = ENTITYX5
       &amp; prd2(EVENTX13) = ATTRIBX3
       &amp; arg0(EVENTX13) = ENTITYX5
-      &amp; isA(ENTITYX5,r__design_0035_0009)
-      &amp; r__with_0035_0010(ENTITYX5) = ENTITYX6
-      &amp; isA(ENTITYX6,r__and_0035_0017)
+      &amp; isA(ENTITYX5,r_0035_0009__design)
+      &amp; r_0035_0010__with(ENTITYX5) = ENTITYX6
+      &amp; isA(ENTITYX6,r_0035_0017__and)
       &amp; conj1(ENTITYX6) = ENTITYX7
       &amp; conj2(ENTITYX6) = ENTITYX9
-      &amp; isA(ENTITYX7,r__plastic_0035_0012_r__moulding_0035_0013)
-      &amp; r__on_0035_0014(ENTITYX7) = ENTITYX8
-      &amp; isA(ENTITYX8,r__front_0035_0016)
-      &amp; isA(EVENTX12,r__plugged_0035_0021)
+      &amp; isA(ENTITYX7,r_0035_0012__plastic_moulding)
+      &amp; r_0035_0014__on(ENTITYX7) = ENTITYX8
+      &amp; isA(ENTITYX8,r_0035_0016__front)
+      &amp; isA(EVENTX12,r_0035_0021__plugged)
       &amp; arg0(EVENTX12) = ENTITYX9
       &amp; dir3(EVENTX12) = QUALITYX10
-      &amp; isA(ENTITYX9,r__keyboard_0035_0019)
-      &amp; isA(ATTRIBX3,r__smart_0035_0006)
+      &amp; isA(ENTITYX9,r_0035_0019__keyboard)
+      &amp; isA(ATTRIBX3,r_0035_0006__smart)
       &amp; quality1(ATTRIBX3) = QUALITYX4
-      &amp; isA(QUALITYX4,r__quite_0035_0005)
+      &amp; isA(QUALITYX4,r_0035_0005__quite)
       &amp; isA(QUALITYX10,z_0035_1011)
-      &amp; isA(EVENTX14,r__thought_0035_0002)
-      &amp; arg0(EVENTX14) = r__I_0035_0001
+      &amp; isA(EVENTX14,r_0035_0002__thought)
+      &amp; arg0(EVENTX14) = r_0035_0001__I
       &amp; arg1(EVENTX14) = STATEX1 ) ).
 
 

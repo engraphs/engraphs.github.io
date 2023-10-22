@@ -103,11 +103,11 @@ And the third thing about intelligence is , it 's distinct .
 </svg>
 <br>
 <pre>
-arc(r__third_0208_0003_r__thing_0208_0004,r__intelligence_0208_0006,r__about_0208_0005).
-arc(r__is_0208_0007,r__third_0208_0003_r__thing_0208_0004,arg0).
-arc(r__is_0208_0007,r___apos_s_0208_0010,prd2).
-arc(r___apos_s_0208_0010,r__intelligence_0208_0006,arg0).
-arc(r___apos_s_0208_0010,r__distinct_0208_0011,prd2).
+arc(r_0208_0003__third_thing,r_0208_0006__intelligence,r_0208_0005__about).
+arc(r_0208_0007__is,r_0208_0003__third_thing,arg0).
+arc(r_0208_0007__is,r_0208_0010___apos_s,prd2).
+arc(r_0208_0010___apos_s,r_0208_0006__intelligence,arg0).
+arc(r_0208_0010___apos_s,r_0208_0011__distinct,prd2).
 
 </pre>
 <br>
@@ -115,15 +115,15 @@ arc(r___apos_s_0208_0010,r__distinct_0208_0011,prd2).
 fof(id_208_A_TED_talk_11,axiom,
     ? [STATEX3,INTELLIGENCEX4,EVENTX7,EVENTX6,ENTITYX1,INTELLIGENCEX2,ATTRIBX5] :
       ( STATEX3 = EVENTX6
-      &amp; isA(EVENTX6,r___apos_s_0208_0010)
+      &amp; isA(EVENTX6,r_0208_0010___apos_s)
       &amp; arg0(EVENTX6) = INTELLIGENCEX4
       &amp; prd2(EVENTX6) = ATTRIBX5
-      &amp; isA(ENTITYX1,r__third_0208_0003_r__thing_0208_0004)
-      &amp; r__about_0208_0005(ENTITYX1) = INTELLIGENCEX2
-      &amp; isA(INTELLIGENCEX2,r__intelligence_0208_0006)
+      &amp; isA(ENTITYX1,r_0208_0003__third_thing)
+      &amp; r_0208_0005__about(ENTITYX1) = INTELLIGENCEX2
+      &amp; isA(INTELLIGENCEX2,r_0208_0006__intelligence)
       &amp; INTELLIGENCEX4 = INTELLIGENCEX2
-      &amp; isA(ATTRIBX5,r__distinct_0208_0011)
-      &amp; isA(EVENTX7,r__is_0208_0007)
+      &amp; isA(ATTRIBX5,r_0208_0011__distinct)
+      &amp; isA(EVENTX7,r_0208_0007__is)
       &amp; arg0(EVENTX7) = ENTITYX1
       &amp; prd2(EVENTX7) = STATEX3 ) ).
 

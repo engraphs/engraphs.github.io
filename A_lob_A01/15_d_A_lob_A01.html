@@ -148,14 +148,14 @@ Sir Roy 's united federal party is boycotting the London talks on the protectora
 </svg>
 <br>
 <pre>
-arc(r__party_0016_0006,r__Sir_0016_0001_r__Roy_0016_0002,genv).
-arc(r__party_0016_0006,r__united_0016_0004,attrib2).
-arc(r__party_0016_0006,r__federal_0016_0005,attrib3).
-arc(r__is_0016_0007,r__boycotting_0016_0008,catenative).
-arc(r__boycotting_0016_0008,r__party_0016_0006,arg0).
-arc(r__boycotting_0016_0008,r__London_0016_0010_r__talks_0016_0011,arg1).
-arc(r__London_0016_0010_r__talks_0016_0011,r__future_0016_0016,r__on_0016_0012).
-arc(r__future_0016_0016,r__protectorate_0016_0014,genv).
+arc(r_0016_0006__party,r_0016_0001__Sir_Roy,genv).
+arc(r_0016_0006__party,r_0016_0004__united,attrib2).
+arc(r_0016_0006__party,r_0016_0005__federal,attrib3).
+arc(r_0016_0007__is,r_0016_0008__boycotting,catenative).
+arc(r_0016_0008__boycotting,r_0016_0006__party,arg0).
+arc(r_0016_0008__boycotting,r_0016_0010__London_talks,arg1).
+arc(r_0016_0010__London_talks,r_0016_0016__future,r_0016_0012__on).
+arc(r_0016_0016__future,r_0016_0014__protectorate,genv).
 
 </pre>
 <br>
@@ -163,21 +163,21 @@ arc(r__future_0016_0016,r__protectorate_0016_0014,genv).
 fof(id_16_A_lob_A01,axiom,
     ? [CATENATIVEX4,EVENTX9,EVENTX8,ENTITYX1,ENTITYX5,ENTITYX6,ENTITYX7,ATTRIBX2,ATTRIBX3] :
       ( CATENATIVEX4 = EVENTX8
-      &amp; isA(EVENTX8,r__boycotting_0016_0008)
+      &amp; isA(EVENTX8,r_0016_0008__boycotting)
       &amp; arg0(EVENTX8) = ENTITYX1
       &amp; arg1(EVENTX8) = ENTITYX5
-      &amp; isA(ENTITYX1,r__party_0016_0006)
-      &amp; genv(ENTITYX1) = r__Sir_0016_0001_r__Roy_0016_0002
+      &amp; isA(ENTITYX1,r_0016_0006__party)
+      &amp; genv(ENTITYX1) = r_0016_0001__Sir_Roy
       &amp; attrib2(ENTITYX1) = ATTRIBX2
       &amp; attrib3(ENTITYX1) = ATTRIBX3
-      &amp; isA(ENTITYX5,r__London_0016_0010_r__talks_0016_0011)
-      &amp; r__on_0016_0012(ENTITYX5) = ENTITYX6
-      &amp; isA(ENTITYX6,r__future_0016_0016)
+      &amp; isA(ENTITYX5,r_0016_0010__London_talks)
+      &amp; r_0016_0012__on(ENTITYX5) = ENTITYX6
+      &amp; isA(ENTITYX6,r_0016_0016__future)
       &amp; genv(ENTITYX6) = ENTITYX7
-      &amp; isA(ENTITYX7,r__protectorate_0016_0014)
-      &amp; isA(ATTRIBX2,r__united_0016_0004)
-      &amp; isA(ATTRIBX3,r__federal_0016_0005)
-      &amp; isA(EVENTX9,r__is_0016_0007)
+      &amp; isA(ENTITYX7,r_0016_0014__protectorate)
+      &amp; isA(ATTRIBX2,r_0016_0004__united)
+      &amp; isA(ATTRIBX3,r_0016_0005__federal)
+      &amp; isA(EVENTX9,r_0016_0007__is)
       &amp; catenative(EVENTX9) = CATENATIVEX4 ) ).
 
 

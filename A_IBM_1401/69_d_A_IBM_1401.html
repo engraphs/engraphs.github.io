@@ -77,7 +77,7 @@
 <title>0092_0008&#45;&gt;0092_0011</title>
 <path fill="none" stroke="black" d="M168.89,-611C194.19,-597.13 231.99,-576.4 259.89,-561.1"/>
 <polygon fill="black" stroke="black" points="261.85,-564.01 268.94,-556.14 258.49,-557.88 261.85,-564.01"/>
-<text text-anchor="middle" x="277.04" y="-579.8" font-family="fixed" font-size="14.00">[arg0]by_[lgs]</text>
+<text text-anchor="middle" x="274.04" y="-579.8" font-family="fixed" font-size="14.00">[arg0]by[lgs]</text>
 </g>
 <!-- 0092_0013_0092_0014_0092_0015 -->
 <g id="node5" class="node">
@@ -200,18 +200,18 @@
 </svg>
 <br>
 <pre>
-arc(r__were_0092_0007,r__developed_0092_0008,catenative).
-arc(r__developed_0092_0008,r__COBOL_0092_0005_r__specifications_0092_0006,arg1).
-arc(r__developed_0092_0008,r__Conference_0092_0011,arg0_r__by_0092_0009_lgs).
-arc(r__Conference_0092_0011,r__Data_0092_0013_r__Systems_0092_0014_r__Languages_0092_0015,r__on_0092_0012).
-arc(r__Data_0092_0013_r__Systems_0092_0014_r__Languages_0092_0015,r__effort_0092_0020,prn5).
-arc(r__effort_0092_0020,r__voluntary_0092_0018,attrib2).
-arc(r__effort_0092_0020,r__cooperative_0092_0019,attrib3).
-arc(r__effort_0092_0020,r__and_0092_0024,r__of_0092_0021).
-arc(r__and_0092_0024,r__users_0092_0022,conj1).
-arc(r__and_0092_0024,r__manufacturers_0092_0025,conj2).
-arc(r__manufacturers_0092_0025,r__systems_0092_0029,r__of_0092_0026).
-arc(r__systems_0092_0029,r__data_0092_0027_r__processing_0092_0028,nlyr1).
+arc(r_0092_0007__were,r_0092_0008__developed,catenative).
+arc(r_0092_0008__developed,r_0092_0005__COBOL_specifications,arg1).
+arc(r_0092_0008__developed,r_0092_0011__Conference,arg0_by_lgs).
+arc(r_0092_0011__Conference,r_0092_0013__Data_Systems_Languages,r_0092_0012__on).
+arc(r_0092_0013__Data_Systems_Languages,r_0092_0020__effort,prn5).
+arc(r_0092_0020__effort,r_0092_0018__voluntary,attrib2).
+arc(r_0092_0020__effort,r_0092_0019__cooperative,attrib3).
+arc(r_0092_0020__effort,r_0092_0024__and,r_0092_0021__of).
+arc(r_0092_0024__and,r_0092_0022__users,conj1).
+arc(r_0092_0024__and,r_0092_0025__manufacturers,conj2).
+arc(r_0092_0025__manufacturers,r_0092_0029__systems,r_0092_0026__of).
+arc(r_0092_0029__systems,r_0092_0027__data_processing,nlyr1).
 
 </pre>
 <br>
@@ -219,30 +219,30 @@ arc(r__systems_0092_0029,r__data_0092_0027_r__processing_0092_0028,nlyr1).
 fof(id_92_A_IBM_1401,axiom,
     ? [CATENATIVEX2,EVENTX14,EVENTX13,ENTITYX1,ENTITYX3,ENTITYX4,ENTITYX5,ENTITYX8,ENTITYX9,ENTITYX10,ENTITYX11,ENTITYX12,ATTRIBX6,ATTRIBX7] :
       ( CATENATIVEX2 = EVENTX13
-      &amp; isA(EVENTX13,r__developed_0092_0008)
-      &amp; arg0_r__by_0092_0009_lgs(EVENTX13) = ENTITYX3
+      &amp; isA(EVENTX13,r_0092_0008__developed)
+      &amp; arg0_by_lgs(EVENTX13) = ENTITYX3
       &amp; arg1(EVENTX13) = ENTITYX1
-      &amp; isA(ENTITYX1,r__COBOL_0092_0005_r__specifications_0092_0006)
-      &amp; isA(ENTITYX3,r__Conference_0092_0011)
-      &amp; r__on_0092_0012(ENTITYX3) = ENTITYX4
-      &amp; isA(ENTITYX4,r__Data_0092_0013_r__Systems_0092_0014_r__Languages_0092_0015)
+      &amp; isA(ENTITYX1,r_0092_0005__COBOL_specifications)
+      &amp; isA(ENTITYX3,r_0092_0011__Conference)
+      &amp; r_0092_0012__on(ENTITYX3) = ENTITYX4
+      &amp; isA(ENTITYX4,r_0092_0013__Data_Systems_Languages)
       &amp; prn5(ENTITYX4) = ENTITYX5
-      &amp; isA(ENTITYX5,r__effort_0092_0020)
+      &amp; isA(ENTITYX5,r_0092_0020__effort)
       &amp; attrib2(ENTITYX5) = ATTRIBX6
       &amp; attrib3(ENTITYX5) = ATTRIBX7
-      &amp; r__of_0092_0021(ENTITYX5) = ENTITYX8
-      &amp; isA(ENTITYX8,r__and_0092_0024)
+      &amp; r_0092_0021__of(ENTITYX5) = ENTITYX8
+      &amp; isA(ENTITYX8,r_0092_0024__and)
       &amp; conj1(ENTITYX8) = ENTITYX9
       &amp; conj2(ENTITYX8) = ENTITYX10
-      &amp; isA(ENTITYX9,r__users_0092_0022)
-      &amp; isA(ENTITYX10,r__manufacturers_0092_0025)
-      &amp; r__of_0092_0026(ENTITYX10) = ENTITYX11
-      &amp; isA(ENTITYX11,r__systems_0092_0029)
+      &amp; isA(ENTITYX9,r_0092_0022__users)
+      &amp; isA(ENTITYX10,r_0092_0025__manufacturers)
+      &amp; r_0092_0026__of(ENTITYX10) = ENTITYX11
+      &amp; isA(ENTITYX11,r_0092_0029__systems)
       &amp; nlyr1(ENTITYX11) = ENTITYX12
-      &amp; isA(ENTITYX12,r__data_0092_0027_r__processing_0092_0028)
-      &amp; isA(ATTRIBX6,r__voluntary_0092_0018)
-      &amp; isA(ATTRIBX7,r__cooperative_0092_0019)
-      &amp; isA(EVENTX14,r__were_0092_0007)
+      &amp; isA(ENTITYX12,r_0092_0027__data_processing)
+      &amp; isA(ATTRIBX6,r_0092_0018__voluntary)
+      &amp; isA(ATTRIBX7,r_0092_0019__cooperative)
+      &amp; isA(EVENTX14,r_0092_0007__were)
       &amp; catenative(EVENTX14) = CATENATIVEX2 ) ).
 
 

@@ -129,31 +129,31 @@ The barrel lowered a trifle , then resumed its original position .
 </svg>
 <br>
 <pre>
-arc(r__lowered_0315_0003,r__barrel_0315_0002,arg0).
-arc(r__lowered_0315_0003,r__trifle_0315_0005,mnr).
-arc(r__resumed_0315_0008,r__barrel_0315_0002,arg0).
-arc(r__resumed_0315_0008,r__then_0315_0007,tmp1).
-arc(r__resumed_0315_0008,r__position_0315_0011,arg1).
-arc(r__position_0315_0011,r__barrel_0315_0002,genv).
-arc(r__position_0315_0011,r__original_0315_0010,attrib2).
+arc(r_0315_0003__lowered,r_0315_0002__barrel,arg0).
+arc(r_0315_0003__lowered,r_0315_0005__trifle,mnr).
+arc(r_0315_0008__resumed,r_0315_0002__barrel,arg0).
+arc(r_0315_0008__resumed,r_0315_0007__then,tmp1).
+arc(r_0315_0008__resumed,r_0315_0011__position,arg1).
+arc(r_0315_0011__position,r_0315_0002__barrel,genv).
+arc(r_0315_0011__position,r_0315_0010__original,attrib2).
 
 </pre>
 <br>
 <pre>
 fof(id_315_A_DICK_1952,axiom,
     ? [BARRELX6,EVENTX8,EVENTX3,BARRELX1,ENTITYX5,ENTITYX2,QUALITYX4,ATTRIBX7] :
-      ( isA(BARRELX1,r__barrel_0315_0002)
-      &amp; isA(ENTITYX2,r__trifle_0315_0005)
-      &amp; isA(ENTITYX5,r__position_0315_0011)
+      ( isA(BARRELX1,r_0315_0002__barrel)
+      &amp; isA(ENTITYX2,r_0315_0005__trifle)
+      &amp; isA(ENTITYX5,r_0315_0011__position)
       &amp; genv(ENTITYX5) = BARRELX6
       &amp; attrib2(ENTITYX5) = ATTRIBX7
       &amp; BARRELX6 = BARRELX1
-      &amp; isA(QUALITYX4,r__then_0315_0007)
-      &amp; isA(ATTRIBX7,r__original_0315_0010)
-      &amp; isA(EVENTX3,r__lowered_0315_0003)
+      &amp; isA(QUALITYX4,r_0315_0007__then)
+      &amp; isA(ATTRIBX7,r_0315_0010__original)
+      &amp; isA(EVENTX3,r_0315_0003__lowered)
       &amp; arg0(EVENTX3) = BARRELX1
       &amp; mnr(EVENTX3) = ENTITYX2
-      &amp; isA(EVENTX8,r__resumed_0315_0008)
+      &amp; isA(EVENTX8,r_0315_0008__resumed)
       &amp; arg0(EVENTX8) = BARRELX1
       &amp; tmp1(EVENTX8) = QUALITYX4
       &amp; arg1(EVENTX8) = ENTITYX5 ) ).

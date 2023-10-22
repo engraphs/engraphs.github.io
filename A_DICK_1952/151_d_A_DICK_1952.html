@@ -123,30 +123,30 @@ Nasha took the stick and turned it over .
 </svg>
 <br>
 <pre>
-arc(r__took_0199_0002,r__Nasha_0199_0001,arg0).
-arc(r__took_0199_0002,r__stick_0199_0004,arg1).
-arc(r__and_0199_0005,r__took_0199_0002,conj1).
-arc(r__and_0199_0005,r__turned_0199_0006,conj2).
-arc(r__turned_0199_0006,r__Nasha_0199_0001,arg0).
-arc(r__turned_0199_0006,r__stick_0199_0004,arg1).
-arc(r__turned_0199_0006,r__over_0199_0008,clr_dir3).
+arc(r_0199_0002__took,r_0199_0001__Nasha,arg0).
+arc(r_0199_0002__took,r_0199_0004__stick,arg1).
+arc(r_0199_0005__and,r_0199_0002__took,conj1).
+arc(r_0199_0005__and,r_0199_0006__turned,conj2).
+arc(r_0199_0006__turned,r_0199_0001__Nasha,arg0).
+arc(r_0199_0006__turned,r_0199_0004__stick,arg1).
+arc(r_0199_0006__turned,r_0199_0008__over,clr_dir3).
 
 </pre>
 <br>
 <pre>
 fof(id_199_A_DICK_1952,axiom,
     ? [STICKX3,CONJX6,EVENTX5,EVENTX2,STICKX1,QUALITYX4] :
-      ( isA(STICKX1,r__stick_0199_0004)
+      ( isA(STICKX1,r_0199_0004__stick)
       &amp; STICKX3 = STICKX1
-      &amp; isA(QUALITYX4,r__over_0199_0008)
-      &amp; isA(CONJX6,r__and_0199_0005)
+      &amp; isA(QUALITYX4,r_0199_0008__over)
+      &amp; isA(CONJX6,r_0199_0005__and)
       &amp; conj1(CONJX6) = EVENTX2
-      &amp; isA(EVENTX2,r__took_0199_0002)
-      &amp; arg0(EVENTX2) = r__Nasha_0199_0001
+      &amp; isA(EVENTX2,r_0199_0002__took)
+      &amp; arg0(EVENTX2) = r_0199_0001__Nasha
       &amp; arg1(EVENTX2) = STICKX1
       &amp; conj2(CONJX6) = EVENTX5
-      &amp; isA(EVENTX5,r__turned_0199_0006)
-      &amp; arg0(EVENTX5) = r__Nasha_0199_0001
+      &amp; isA(EVENTX5,r_0199_0006__turned)
+      &amp; arg0(EVENTX5) = r_0199_0001__Nasha
       &amp; arg1(EVENTX5) = STICKX3
       &amp; clr_dir3(EVENTX5) = QUALITYX4 ) ).
 

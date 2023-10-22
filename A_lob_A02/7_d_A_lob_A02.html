@@ -135,13 +135,13 @@ So the idea of a personal mission by the Prime Minister to Paris was dropped .
 </svg>
 <br>
 <pre>
-arc(r__So_0007_0001,r__was_0007_0014,scope).
-arc(r__idea_0007_0003,r__mission_0007_0007,r__of_0007_0004).
-arc(r__mission_0007_0007,r__personal_0007_0006,attrib2).
-arc(r__mission_0007_0007,r__Prime_0007_0010_r__Minister_0007_0011,r__by_0007_0008).
-arc(r__mission_0007_0007,r__Paris_0007_0013,r__to_0007_0012).
-arc(r__was_0007_0014,r__dropped_0007_0015,catenative).
-arc(r__dropped_0007_0015,r__idea_0007_0003,arg1).
+arc(r_0007_0001__So,r_0007_0014__was,scope).
+arc(r_0007_0003__idea,r_0007_0007__mission,r_0007_0004__of).
+arc(r_0007_0007__mission,r_0007_0006__personal,attrib2).
+arc(r_0007_0007__mission,r_0007_0010__Prime_Minister,r_0007_0008__by).
+arc(r_0007_0007__mission,r_0007_0013__Paris,r_0007_0012__to).
+arc(r_0007_0014__was,r_0007_0015__dropped,catenative).
+arc(r_0007_0015__dropped,r_0007_0003__idea,arg1).
 
 </pre>
 <br>
@@ -149,19 +149,19 @@ arc(r__dropped_0007_0015,r__idea_0007_0003,arg1).
 fof(id_7_A_lob_A02,axiom,
     ? [CATENATIVEX5,OPERATORX1,EVENTX8,EVENTX7,ENTITYX2,ENTITYX3,ATTRIBX4] :
       ( CATENATIVEX5 = EVENTX7
-      &amp; isA(EVENTX7,r__dropped_0007_0015)
+      &amp; isA(EVENTX7,r_0007_0015__dropped)
       &amp; arg1(EVENTX7) = ENTITYX2
-      &amp; isA(ENTITYX2,r__idea_0007_0003)
-      &amp; r__of_0007_0004(ENTITYX2) = ENTITYX3
-      &amp; isA(ENTITYX3,r__mission_0007_0007)
+      &amp; isA(ENTITYX2,r_0007_0003__idea)
+      &amp; r_0007_0004__of(ENTITYX2) = ENTITYX3
+      &amp; isA(ENTITYX3,r_0007_0007__mission)
       &amp; attrib2(ENTITYX3) = ATTRIBX4
-      &amp; r__by_0007_0008(ENTITYX3) = r__Prime_0007_0010_r__Minister_0007_0011
-      &amp; r__to_0007_0012(ENTITYX3) = r__Paris_0007_0013
-      &amp; isA(ATTRIBX4,r__personal_0007_0006)
-      &amp; isA(r__Prime_0007_0010_r__Minister_0007_0011,r__Prime_0007_0010_r__Minister_0007_0011)
-      &amp; isA(OPERATORX1,r__So_0007_0001)
+      &amp; r_0007_0008__by(ENTITYX3) = r_0007_0010__Prime_Minister
+      &amp; r_0007_0012__to(ENTITYX3) = r_0007_0013__Paris
+      &amp; isA(ATTRIBX4,r_0007_0006__personal)
+      &amp; isA(r_0007_0010__Prime_Minister,r_0007_0010__Prime_Minister)
+      &amp; isA(OPERATORX1,r_0007_0001__So)
       &amp; scope(OPERATORX1) = EVENTX8
-      &amp; isA(EVENTX8,r__was_0007_0014)
+      &amp; isA(EVENTX8,r_0007_0014__was)
       &amp; catenative(EVENTX8) = CATENATIVEX5 ) ).
 
 

@@ -123,29 +123,29 @@ English has a pre-eminent place in education and in society .
 </svg>
 <br>
 <pre>
-arc(r__has_0003_0002,r__English_0003_0001,arg0).
-arc(r__has_0003_0002,r__place_0003_0005,arg1).
-arc(r__place_0003_0005,r__pre_eminent_0003_0004,attrib2).
-arc(r__place_0003_0005,r__and_0003_0008,z_0003_1004).
-arc(r__and_0003_0008,r__education_0003_0007,r__in_0003_0006).
-arc(r__and_0003_0008,r__society_0003_0010,r__in_0003_0009).
+arc(r_0003_0002__has,r_0003_0001__English,arg0).
+arc(r_0003_0002__has,r_0003_0005__place,arg1).
+arc(r_0003_0005__place,r_0003_0004__pre_eminent,attrib2).
+arc(r_0003_0005__place,r_0003_0008__and,z_0003_1004).
+arc(r_0003_0008__and,r_0003_0007__education,r_0003_0006__in).
+arc(r_0003_0008__and,r_0003_0010__society,r_0003_0009__in).
 
 </pre>
 <br>
 <pre>
 fof(id_3_A_KS4_English,axiom,
     ? [EVENTX8,ENTITYX1,CONJX5,ENTITYX6,ENTITYX7,ATTRIBX3] :
-      ( isA(ENTITYX1,r__place_0003_0005)
+      ( isA(ENTITYX1,r_0003_0005__place)
       &amp; attrib2(ENTITYX1) = ATTRIBX3
       &amp; z_0003_1004(ENTITYX1) = CONJX5
-      &amp; isA(CONJX5,r__and_0003_0008)
-      &amp; r__in_0003_0006(CONJX5) = ENTITYX6
-      &amp; r__in_0003_0009(CONJX5) = ENTITYX7
-      &amp; isA(ENTITYX6,r__education_0003_0007)
-      &amp; isA(ENTITYX7,r__society_0003_0010)
-      &amp; isA(ATTRIBX3,r__pre_eminent_0003_0004)
-      &amp; isA(EVENTX8,r__has_0003_0002)
-      &amp; arg0(EVENTX8) = r__English_0003_0001
+      &amp; isA(CONJX5,r_0003_0008__and)
+      &amp; r_0003_0006__in(CONJX5) = ENTITYX6
+      &amp; r_0003_0009__in(CONJX5) = ENTITYX7
+      &amp; isA(ENTITYX6,r_0003_0007__education)
+      &amp; isA(ENTITYX7,r_0003_0010__society)
+      &amp; isA(ATTRIBX3,r_0003_0004__pre_eminent)
+      &amp; isA(EVENTX8,r_0003_0002__has)
+      &amp; arg0(EVENTX8) = r_0003_0001__English
       &amp; arg1(EVENTX8) = ENTITYX1 ) ).
 
 

@@ -96,23 +96,23 @@ The final one contained atomic warheads .
 </svg>
 <br>
 <pre>
-arc(r__one_0621_0003,r__final_0621_0002,attrib2).
-arc(r__contained_0621_0004,r__one_0621_0003,arg0).
-arc(r__contained_0621_0004,r__warheads_0621_0006,arg1).
-arc(r__warheads_0621_0006,r__atomic_0621_0005,attrib1).
+arc(r_0621_0003__one,r_0621_0002__final,attrib2).
+arc(r_0621_0004__contained,r_0621_0003__one,arg0).
+arc(r_0621_0004__contained,r_0621_0006__warheads,arg1).
+arc(r_0621_0006__warheads,r_0621_0005__atomic,attrib1).
 
 </pre>
 <br>
 <pre>
 fof(id_621_A_DICK_1952,axiom,
     ? [EVENTX5,ENTITYX1,ENTITYX3,ATTRIBX4,ATTRIBX2] :
-      ( isA(ENTITYX1,r__one_0621_0003)
+      ( isA(ENTITYX1,r_0621_0003__one)
       &amp; attrib2(ENTITYX1) = ATTRIBX2
-      &amp; isA(ENTITYX3,r__warheads_0621_0006)
+      &amp; isA(ENTITYX3,r_0621_0006__warheads)
       &amp; attrib1(ENTITYX3) = ATTRIBX4
-      &amp; isA(ATTRIBX2,r__final_0621_0002)
-      &amp; isA(ATTRIBX4,r__atomic_0621_0005)
-      &amp; isA(EVENTX5,r__contained_0621_0004)
+      &amp; isA(ATTRIBX2,r_0621_0002__final)
+      &amp; isA(ATTRIBX4,r_0621_0005__atomic)
+      &amp; isA(EVENTX5,r_0621_0004__contained)
       &amp; arg0(EVENTX5) = ENTITYX1
       &amp; arg1(EVENTX5) = ENTITYX3 ) ).
 

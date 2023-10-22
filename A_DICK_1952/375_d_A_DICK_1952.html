@@ -37,8 +37,8 @@ After everything else was gone . &rdquo;
 <!-- 0490_0001_tmp -->
 <g id="node1" class="node">
 <title>0490_0001_tmp</title>
-<ellipse fill="none" stroke="black" cx="248.84" cy="-366" rx="61.99" ry="18"/>
-<text text-anchor="middle" x="248.84" y="-362.3" font-family="fixed" font-size="14.00">After_[tmp]</text>
+<ellipse fill="none" stroke="black" cx="248.84" cy="-366" rx="57.39" ry="18"/>
+<text text-anchor="middle" x="248.84" y="-362.3" font-family="fixed" font-size="14.00">After[tmp]</text>
 </g>
 <!-- quantificational_0490_0002 -->
 <g id="node2" class="node">
@@ -49,8 +49,8 @@ After everything else was gone . &rdquo;
 <!-- 0490_0001_tmp&#45;&gt;quantificational_0490_0002 -->
 <g id="edge1" class="edge">
 <title>0490_0001_tmp&#45;&gt;quantificational_0490_0002</title>
-<path fill="none" stroke="black" d="M227.58,-349.01C210.32,-336.03 185.75,-317.54 166.37,-302.97"/>
-<polygon fill="black" stroke="black" points="168.25,-300 158.16,-296.79 164.04,-305.6 168.25,-300"/>
+<path fill="none" stroke="black" d="M227.85,-349.21C210.61,-336.25 185.96,-317.7 166.51,-303.08"/>
+<polygon fill="black" stroke="black" points="168.36,-300.08 158.26,-296.87 164.15,-305.68 168.36,-300.08"/>
 <text text-anchor="middle" x="240.34" y="-318.8" font-family="fixed" font-size="14.00">[restriction]</text>
 </g>
 <!-- z_0490_1008 -->
@@ -62,8 +62,8 @@ After everything else was gone . &rdquo;
 <!-- 0490_0001_tmp&#45;&gt;z_0490_1008 -->
 <g id="edge2" class="edge">
 <title>0490_0001_tmp&#45;&gt;z_0490_1008</title>
-<path fill="none" stroke="black" d="M269.9,-349.01C287.24,-335.86 312,-317.06 331.31,-302.41"/>
-<polygon fill="black" stroke="black" points="333.64,-305.04 339.49,-296.21 329.4,-299.46 333.64,-305.04"/>
+<path fill="none" stroke="black" d="M269.64,-349.21C286.95,-336.08 311.79,-317.23 331.18,-302.51"/>
+<polygon fill="black" stroke="black" points="333.53,-305.12 339.38,-296.28 329.3,-299.54 333.53,-305.12"/>
 <text text-anchor="middle" x="337.84" y="-318.8" font-family="fixed" font-size="14.00">[scope]</text>
 </g>
 <!-- 0490_0004 -->
@@ -129,29 +129,29 @@ After everything else was gone . &rdquo;
 </svg>
 <br>
 <pre>
-arc(quantificational_r__everything_0490_0002,r__was_0490_0004,scope).
-arc(quantificational_r__everything_0490_0002,z_0490_1005,restriction).
-arc(r__After_0490_0001_tmp,quantificational_r__everything_0490_0002,restriction).
-arc(r__After_0490_0001_tmp,z_0490_1008,scope).
-arc(r__was_0490_0004,r__gone_0490_0005,prd2).
-arc(r__was_0490_0004,z_0490_1005,arg0).
-arc(z_0490_1005,r__else_0490_0003,quality2).
+arc(r_0490_0001__After_tmp,r_0490_0002__quantificational__everything,restriction).
+arc(r_0490_0001__After_tmp,z_0490_1008,scope).
+arc(r_0490_0002__quantificational__everything,r_0490_0004__was,scope).
+arc(r_0490_0002__quantificational__everything,z_0490_1005,restriction).
+arc(r_0490_0004__was,r_0490_0005__gone,prd2).
+arc(r_0490_0004__was,z_0490_1005,arg0).
+arc(z_0490_1005,r_0490_0003__else,quality2).
 
 </pre>
 <br>
 <pre>
 fof(id_490_A_DICK_1952,axiom,
     ? [CONNX1,EVENTX9,QUANTX3,EVENTX7,ENTITYX2,QUALITYX4,ATTRIBX6] :
-      ( isA(QUALITYX4,r__else_0490_0003)
-      &amp; isA(ATTRIBX6,r__gone_0490_0005)
-      &amp; isA(CONNX1,r__After_0490_0001_tmp)
+      ( isA(QUALITYX4,r_0490_0003__else)
+      &amp; isA(ATTRIBX6,r_0490_0005__gone)
+      &amp; isA(CONNX1,r_0490_0001__After_tmp)
       &amp; restriction(CONNX1) = QUANTX3
-      &amp; isA(QUANTX3,quantificational_r__everything_0490_0002)
+      &amp; isA(QUANTX3,r_0490_0002__quantificational__everything)
       &amp; restriction(QUANTX3) = ENTITYX2
       &amp; isA(ENTITYX2,z_0490_1005)
       &amp; quality2(ENTITYX2) = QUALITYX4
       &amp; scope(QUANTX3) = EVENTX7
-      &amp; isA(EVENTX7,r__was_0490_0004)
+      &amp; isA(EVENTX7,r_0490_0004__was)
       &amp; arg0(EVENTX7) = ENTITYX2
       &amp; prd2(EVENTX7) = ATTRIBX6
       &amp; scope(CONNX1) = EVENTX9

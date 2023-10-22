@@ -96,23 +96,23 @@ Freedoom is a real-time first-person shooter ( FPS ) .
 </svg>
 <br>
 <pre>
-arc(r__is_0001_0002,r__Freedoom_0001_0001,arg0).
-arc(r__is_0001_0002,r__first_person_0001_0005_r__shooter_0001_0006,prd2).
-arc(r__first_person_0001_0005_r__shooter_0001_0006,r__real_time_0001_0004,attrib2).
-arc(r__first_person_0001_0005_r__shooter_0001_0006,r__FPS_0001_0008,prn6).
+arc(r_0001_0002__is,r_0001_0001__Freedoom,arg0).
+arc(r_0001_0002__is,r_0001_0005__first_person_shooter,prd2).
+arc(r_0001_0005__first_person_shooter,r_0001_0004__real_time,attrib2).
+arc(r_0001_0005__first_person_shooter,r_0001_0008__FPS,prn6).
 
 </pre>
 <br>
 <pre>
 fof(id_1_A_Freedoom,axiom,
     ? [EVENTX4,ENTITYX1,ENTITYX3,ATTRIBX2] :
-      ( isA(ENTITYX1,r__first_person_0001_0005_r__shooter_0001_0006)
+      ( isA(ENTITYX1,r_0001_0005__first_person_shooter)
       &amp; attrib2(ENTITYX1) = ATTRIBX2
       &amp; prn6(ENTITYX1) = ENTITYX3
-      &amp; isA(ENTITYX3,r__FPS_0001_0008)
-      &amp; isA(ATTRIBX2,r__real_time_0001_0004)
-      &amp; isA(EVENTX4,r__is_0001_0002)
-      &amp; arg0(EVENTX4) = r__Freedoom_0001_0001
+      &amp; isA(ENTITYX3,r_0001_0008__FPS)
+      &amp; isA(ATTRIBX2,r_0001_0004__real_time)
+      &amp; isA(EVENTX4,r_0001_0002__is)
+      &amp; arg0(EVENTX4) = r_0001_0001__Freedoom
       &amp; prd2(EVENTX4) = ENTITYX1 ) ).
 
 

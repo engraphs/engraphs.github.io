@@ -115,8 +115,8 @@ Drafting the speech itself does not take much time once the substance is clear .
 <!-- 0035_0010_cnt -->
 <g id="node7" class="node">
 <title>0035_0010_cnt</title>
-<ellipse fill="none" stroke="black" cx="190.9" cy="-366" rx="57.69" ry="18"/>
-<text text-anchor="middle" x="190.9" y="-362.3" font-family="fixed" font-size="14.00">once_[cnt]</text>
+<ellipse fill="none" stroke="black" cx="190.9" cy="-366" rx="53.09" ry="18"/>
+<text text-anchor="middle" x="190.9" y="-362.3" font-family="fixed" font-size="14.00">once[cnt]</text>
 </g>
 <!-- 0035_0010_cnt&#45;&gt;0035_0006 -->
 <g id="edge7" class="edge">
@@ -168,16 +168,16 @@ Drafting the speech itself does not take much time once the substance is clear .
 </svg>
 <br>
 <pre>
-arc(r__Drafting_0035_0001,r__speech_0035_0003,arg1).
-arc(r__speech_0035_0003,r__speech_0035_0003,rfl).
-arc(r__does_0035_0005_r__take_0035_0007,r__Drafting_0035_0001,arg0).
-arc(r__does_0035_0005_r__take_0035_0007,r__time_0035_0009,arg1).
-arc(r__not_0035_0006,r__does_0035_0005_r__take_0035_0007,scope).
-arc(r__time_0035_0009,r__much_0035_0008,attrib1).
-arc(r__once_0035_0010_cnt,r__not_0035_0006,scope).
-arc(r__once_0035_0010_cnt,r__is_0035_0013,restriction).
-arc(r__is_0035_0013,r__substance_0035_0012,arg0).
-arc(r__is_0035_0013,r__clear_0035_0014,prd2).
+arc(r_0035_0001__Drafting,r_0035_0003__speech,arg1).
+arc(r_0035_0003__speech,r_0035_0003__speech,rfl).
+arc(r_0035_0005__does_take,r_0035_0001__Drafting,arg0).
+arc(r_0035_0005__does_take,r_0035_0009__time,arg1).
+arc(r_0035_0006__not,r_0035_0005__does_take,scope).
+arc(r_0035_0009__time,r_0035_0008__much,attrib1).
+arc(r_0035_0010__once_cnt,r_0035_0006__not,scope).
+arc(r_0035_0010__once_cnt,r_0035_0013__is,restriction).
+arc(r_0035_0013__is,r_0035_0012__substance,arg0).
+arc(r_0035_0013__is,r_0035_0014__clear,prd2).
 
 </pre>
 <br>
@@ -185,25 +185,25 @@ arc(r__is_0035_0013,r__clear_0035_0014,prd2).
 fof(id_35_A_uksc_judgment,axiom,
     ? [STATEX1,SPEECHX5,CONNX9,EVENTX12,OPERATORX13,EVENTX14,EVENTX6,ENTITYX7,ENTITYX10,SPEECHX4,ATTRIBX11,ATTRIBX8] :
       ( STATEX1 = EVENTX6
-      &amp; isA(EVENTX6,r__Drafting_0035_0001)
+      &amp; isA(EVENTX6,r_0035_0001__Drafting)
       &amp; arg1(EVENTX6) = SPEECHX4
-      &amp; isA(SPEECHX4,r__speech_0035_0003)
+      &amp; isA(SPEECHX4,r_0035_0003__speech)
       &amp; rfl(SPEECHX4) = SPEECHX5
       &amp; SPEECHX5 = SPEECHX4
-      &amp; isA(ENTITYX7,r__time_0035_0009)
+      &amp; isA(ENTITYX7,r_0035_0009__time)
       &amp; attrib1(ENTITYX7) = ATTRIBX8
-      &amp; isA(ENTITYX10,r__substance_0035_0012)
-      &amp; isA(ATTRIBX8,r__much_0035_0008)
-      &amp; isA(ATTRIBX11,r__clear_0035_0014)
-      &amp; isA(CONNX9,r__once_0035_0010_cnt)
+      &amp; isA(ENTITYX10,r_0035_0012__substance)
+      &amp; isA(ATTRIBX8,r_0035_0008__much)
+      &amp; isA(ATTRIBX11,r_0035_0014__clear)
+      &amp; isA(CONNX9,r_0035_0010__once_cnt)
       &amp; scope(CONNX9) = OPERATORX13
-      &amp; isA(OPERATORX13,r__not_0035_0006)
+      &amp; isA(OPERATORX13,r_0035_0006__not)
       &amp; scope(OPERATORX13) = EVENTX14
-      &amp; isA(EVENTX14,r__does_0035_0005_r__take_0035_0007)
+      &amp; isA(EVENTX14,r_0035_0005__does_take)
       &amp; arg0(EVENTX14) = STATEX1
       &amp; arg1(EVENTX14) = ENTITYX7
       &amp; restriction(CONNX9) = EVENTX12
-      &amp; isA(EVENTX12,r__is_0035_0013)
+      &amp; isA(EVENTX12,r_0035_0013__is)
       &amp; arg0(EVENTX12) = ENTITYX10
       &amp; prd2(EVENTX12) = ATTRIBX11 ) ).
 

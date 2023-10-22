@@ -37,8 +37,8 @@ While you 're staying please use anything of mine you need .
 <!-- 0008_0001_tmp -->
 <g id="node1" class="node">
 <title>0008_0001_tmp</title>
-<ellipse fill="none" stroke="black" cx="141.2" cy="-366" rx="64.99" ry="18"/>
-<text text-anchor="middle" x="141.2" y="-362.3" font-family="fixed" font-size="14.00">While_[tmp]</text>
+<ellipse fill="none" stroke="black" cx="141.2" cy="-366" rx="60.39" ry="18"/>
+<text text-anchor="middle" x="141.2" y="-362.3" font-family="fixed" font-size="14.00">While[tmp]</text>
 </g>
 <!-- 0008_0003 -->
 <g id="node2" class="node">
@@ -49,8 +49,8 @@ While you 're staying please use anything of mine you need .
 <!-- 0008_0001_tmp&#45;&gt;0008_0003 -->
 <g id="edge1" class="edge">
 <title>0008_0001_tmp&#45;&gt;0008_0003</title>
-<path fill="none" stroke="black" d="M124.21,-348.21C110.7,-334.86 91.71,-316.09 77.07,-301.62"/>
-<polygon fill="black" stroke="black" points="79.43,-299.03 69.86,-294.49 74.51,-304.01 79.43,-299.03"/>
+<path fill="none" stroke="black" d="M124.61,-348.61C111.06,-335.22 91.8,-316.18 77,-301.55"/>
+<polygon fill="black" stroke="black" points="79.3,-298.9 69.72,-294.36 74.38,-303.88 79.3,-298.9"/>
 <text text-anchor="middle" x="144.7" y="-318.8" font-family="fixed" font-size="14.00">[restriction]</text>
 </g>
 <!-- quantificational_0008_0007 -->
@@ -62,7 +62,7 @@ While you 're staying please use anything of mine you need .
 <!-- 0008_0001_tmp&#45;&gt;quantificational_0008_0007 -->
 <g id="edge2" class="edge">
 <title>0008_0001_tmp&#45;&gt;quantificational_0008_0007</title>
-<path fill="none" stroke="black" d="M165.62,-349.09C173.5,-343.48 182.04,-336.84 189.2,-330 197.03,-322.51 204.7,-313.47 211.19,-305.15"/>
+<path fill="none" stroke="black" d="M165.13,-349.44C173.15,-343.75 181.89,-336.99 189.2,-330 197.03,-322.51 204.7,-313.47 211.19,-305.15"/>
 <polygon fill="black" stroke="black" points="214,-307.24 217.26,-297.16 208.42,-303.01 214,-307.24"/>
 <text text-anchor="middle" x="229.2" y="-318.8" font-family="fixed" font-size="14.00">[scope]</text>
 </g>
@@ -136,7 +136,7 @@ While you 're staying please use anything of mine you need .
 <title>z_0008_1012&#45;&gt;0008_0009</title>
 <path fill="none" stroke="black" d="M238.2,-86.8C238.2,-75.16 238.2,-59.55 238.2,-46.24"/>
 <polygon fill="black" stroke="black" points="241.7,-46.18 238.2,-36.18 234.7,-46.18 241.7,-46.18"/>
-<text text-anchor="middle" x="271.2" y="-57.8" font-family="fixed" font-size="14.00">of_[genv]</text>
+<text text-anchor="middle" x="267.7" y="-57.8" font-family="fixed" font-size="14.00">of[genv]</text>
 </g>
 <!-- 0008_0011 -->
 <g id="node9" class="node">
@@ -175,17 +175,17 @@ While you 're staying please use anything of mine you need .
 </svg>
 <br>
 <pre>
-arc(imperative_0008_1002,r__While_0008_0001_tmp,scope).
-arc(quantificational_r__anything_0008_0007,r__use_0008_0006,scope).
-arc(quantificational_r__anything_0008_0007,z_0008_1012,restriction).
-arc(r__While_0008_0001_tmp,quantificational_r__anything_0008_0007,scope).
-arc(r__While_0008_0001_tmp,r___apos_re_0008_0003,restriction).
-arc(r___apos_re_0008_0003,r__staying_0008_0004,catenative).
-arc(r__staying_0008_0004,r__you_0008_0002,arg0).
-arc(r__use_0008_0006,z_0008_1012,arg1).
-arc(r__need_0008_0011,r__you_0008_0002,arg0).
-arc(r__need_0008_0011,z_0008_1012,arg1).
-arc(z_0008_1012,r__mine_0008_0009,r__of_0008_0008_genv).
+arc(imperative_0008_1002,r_0008_0001__While_tmp,scope).
+arc(r_0008_0001__While_tmp,r_0008_0003___apos_re,restriction).
+arc(r_0008_0001__While_tmp,r_0008_0007__quantificational__anything,scope).
+arc(r_0008_0003___apos_re,r_0008_0004__staying,catenative).
+arc(r_0008_0004__staying,r_0008_0002__you,arg0).
+arc(r_0008_0006__use,z_0008_1012,arg1).
+arc(r_0008_0007__quantificational__anything,r_0008_0006__use,scope).
+arc(r_0008_0007__quantificational__anything,z_0008_1012,restriction).
+arc(r_0008_0011__need,r_0008_0002__you,arg0).
+arc(r_0008_0011__need,z_0008_1012,arg1).
+arc(z_0008_1012,r_0008_0009__mine,r_0008_0008__of_genv).
 
 </pre>
 <br>
@@ -193,25 +193,25 @@ arc(z_0008_1012,r__mine_0008_0009,r__of_0008_0008_genv).
 fof(id_8_A_fce_0102_2001_03,axiom,
     ? [CATENATIVEX5,HEARERX10,OPERATORX2,CONNX4,QUANTX9,EVENTX13,EVENTX11,EVENTX7,EVENTX6,ENTITYX8] :
       ( CATENATIVEX5 = EVENTX6
-      &amp; isA(EVENTX6,r__staying_0008_0004)
-      &amp; arg0(EVENTX6) = r__you_0008_0002
-      &amp; HEARERX10 = r__you_0008_0002
+      &amp; isA(EVENTX6,r_0008_0004__staying)
+      &amp; arg0(EVENTX6) = r_0008_0002__you
+      &amp; HEARERX10 = r_0008_0002__you
       &amp; isA(OPERATORX2,imperative_0008_1002)
       &amp; scope(OPERATORX2) = CONNX4
-      &amp; isA(CONNX4,r__While_0008_0001_tmp)
+      &amp; isA(CONNX4,r_0008_0001__While_tmp)
       &amp; restriction(CONNX4) = EVENTX7
-      &amp; isA(EVENTX7,r___apos_re_0008_0003)
+      &amp; isA(EVENTX7,r_0008_0003___apos_re)
       &amp; catenative(EVENTX7) = CATENATIVEX5
       &amp; scope(CONNX4) = QUANTX9
-      &amp; isA(QUANTX9,quantificational_r__anything_0008_0007)
-      &amp; isA(EVENTX11,r__need_0008_0011)
+      &amp; isA(QUANTX9,r_0008_0007__quantificational__anything)
+      &amp; isA(EVENTX11,r_0008_0011__need)
       &amp; arg1(EVENTX11) = ENTITYX8
       &amp; arg0(EVENTX11) = HEARERX10
       &amp; isA(ENTITYX8,z_0008_1012)
-      &amp; r__of_0008_0008_genv(ENTITYX8) = r__mine_0008_0009
+      &amp; r_0008_0008__of_genv(ENTITYX8) = r_0008_0009__mine
       &amp; restriction(QUANTX9) = ENTITYX8
       &amp; scope(QUANTX9) = EVENTX13
-      &amp; isA(EVENTX13,r__use_0008_0006)
+      &amp; isA(EVENTX13,r_0008_0006__use)
       &amp; arg1(EVENTX13) = ENTITYX8 ) ).
 
 

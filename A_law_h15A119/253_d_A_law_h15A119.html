@@ -286,7 +286,7 @@ A business operator that is not an authorized personal information protection or
 <title>0253_0032&#45;&gt;0253_0034</title>
 <path fill="none" stroke="black" d="M813.23,-260.8C813.23,-249.16 813.23,-233.55 813.23,-220.24"/>
 <polygon fill="black" stroke="black" points="816.73,-220.18 813.23,-210.18 809.73,-220.18 816.73,-220.18"/>
-<text text-anchor="middle" x="843.73" y="-231.8" font-family="fixed" font-size="14.00">for_[prd]</text>
+<text text-anchor="middle" x="840.23" y="-231.8" font-family="fixed" font-size="14.00">for[prd]</text>
 </g>
 <!-- quantificational_0253_0026 -->
 <g id="node21" class="node">
@@ -312,27 +312,27 @@ A business operator that is not an authorized personal information protection or
 </svg>
 <br>
 <pre>
-arc(quantificational_r__any_0253_0026,r__or_0253_0025,scope).
-arc(quantificational_r__any_0253_0026,r__name_0253_0028,restriction).
-arc(r__is_0253_0005,r__business_0253_0002_r__operator_0253_0003,arg0).
-arc(r__is_0253_0005,r__information_0253_0010_r__protection_0253_0011_r__organization_0253_0012,prd2).
-arc(r__not_0253_0006,r__is_0253_0005,scope).
-arc(r__information_0253_0010_r__protection_0253_0011_r__organization_0253_0012,r__authorized_0253_0008,attrib2).
-arc(r__information_0253_0010_r__protection_0253_0011_r__organization_0253_0012,r__personal_0253_0009,attrib3).
-arc(r__shall_0253_0013,r__not_0253_0014,scope).
-arc(r__not_0253_0014,r__use_0253_0015,scope).
-arc(r__use_0253_0015,r__business_0253_0002_r__operator_0253_0003,arg0).
-arc(r__use_0253_0015,r__or_0253_0025,arg1).
-arc(r__name_0253_0017,r__information_0253_0021_r__protection_0253_0022_r__organization_0253_0023,prn4).
-arc(r__information_0253_0021_r__protection_0253_0022_r__organization_0253_0023,r__authorized_0253_0019,attrib1).
-arc(r__information_0253_0021_r__protection_0253_0022_r__organization_0253_0023,r__personal_0253_0020,attrib2).
-arc(r__or_0253_0025,r__name_0253_0017,conj1).
-arc(r__or_0253_0025,r__name_0253_0028,conj2).
-arc(r__name_0253_0028,r__other_0253_0027,attrib2).
-arc(r__might_0253_0030,r__be_0253_0031,scope).
-arc(r__be_0253_0031,r__mistaken_0253_0032,catenative).
-arc(r__mistaken_0253_0032,r__name_0253_0028,arg1).
-arc(r__mistaken_0253_0032,r__it_0253_0034,r__for_0253_0033_prd).
+arc(r_0253_0005__is,r_0253_0002__business_operator,arg0).
+arc(r_0253_0005__is,r_0253_0010__information_protection_organization,prd2).
+arc(r_0253_0006__not,r_0253_0005__is,scope).
+arc(r_0253_0010__information_protection_organization,r_0253_0008__authorized,attrib2).
+arc(r_0253_0010__information_protection_organization,r_0253_0009__personal,attrib3).
+arc(r_0253_0013__shall,r_0253_0014__not,scope).
+arc(r_0253_0014__not,r_0253_0015__use,scope).
+arc(r_0253_0015__use,r_0253_0002__business_operator,arg0).
+arc(r_0253_0015__use,r_0253_0025__or,arg1).
+arc(r_0253_0017__name,r_0253_0021__information_protection_organization,prn4).
+arc(r_0253_0021__information_protection_organization,r_0253_0019__authorized,attrib1).
+arc(r_0253_0021__information_protection_organization,r_0253_0020__personal,attrib2).
+arc(r_0253_0025__or,r_0253_0017__name,conj1).
+arc(r_0253_0025__or,r_0253_0028__name,conj2).
+arc(r_0253_0026__quantificational__any,r_0253_0025__or,scope).
+arc(r_0253_0026__quantificational__any,r_0253_0028__name,restriction).
+arc(r_0253_0028__name,r_0253_0027__other,attrib2).
+arc(r_0253_0030__might,r_0253_0031__be,scope).
+arc(r_0253_0031__be,r_0253_0032__mistaken,catenative).
+arc(r_0253_0032__mistaken,r_0253_0028__name,arg1).
+arc(r_0253_0032__mistaken,r_0253_0034__it,r_0253_0033__for_prd).
 
 </pre>
 <br>
@@ -340,45 +340,45 @@ arc(r__mistaken_0253_0032,r__it_0253_0034,r__for_0253_0033_prd).
 fof(id_253_A_law_h15A119,axiom,
     ? [CATENATIVEX16,OPERATORX20,OPERATORX21,EVENTX22,QUANTX13,OPERATORX15,EVENTX19,EVENTX18,OPERATORX5,EVENTX6,ENTITYX1,ENTITYX7,ENTITYX8,ENTITYX12,ENTITYX9,ENTITYX2,ATTRIBX14,ATTRIBX10,ATTRIBX11,ATTRIBX3,ATTRIBX4] :
       ( CATENATIVEX16 = EVENTX18
-      &amp; isA(EVENTX18,r__mistaken_0253_0032)
+      &amp; isA(EVENTX18,r_0253_0032__mistaken)
       &amp; arg1(EVENTX18) = ENTITYX12
-      &amp; r__for_0253_0033_prd(EVENTX18) = r__it_0253_0034
-      &amp; isA(OPERATORX5,r__not_0253_0006)
+      &amp; r_0253_0033__for_prd(EVENTX18) = r_0253_0034__it
+      &amp; isA(OPERATORX5,r_0253_0006__not)
       &amp; scope(OPERATORX5) = EVENTX6
-      &amp; isA(EVENTX6,r__is_0253_0005)
+      &amp; isA(EVENTX6,r_0253_0005__is)
       &amp; arg0(EVENTX6) = ENTITYX1
       &amp; prd2(EVENTX6) = ENTITYX2
-      &amp; isA(ENTITYX1,r__business_0253_0002_r__operator_0253_0003)
-      &amp; isA(ENTITYX2,r__information_0253_0010_r__protection_0253_0011_r__organization_0253_0012)
+      &amp; isA(ENTITYX1,r_0253_0002__business_operator)
+      &amp; isA(ENTITYX2,r_0253_0010__information_protection_organization)
       &amp; attrib2(ENTITYX2) = ATTRIBX3
       &amp; attrib3(ENTITYX2) = ATTRIBX4
-      &amp; isA(QUANTX13,quantificational_r__any_0253_0026)
-      &amp; isA(OPERATORX15,r__might_0253_0030)
+      &amp; isA(QUANTX13,r_0253_0026__quantificational__any)
+      &amp; isA(OPERATORX15,r_0253_0030__might)
       &amp; scope(OPERATORX15) = EVENTX19
-      &amp; isA(EVENTX19,r__be_0253_0031)
+      &amp; isA(EVENTX19,r_0253_0031__be)
       &amp; catenative(EVENTX19) = CATENATIVEX16
-      &amp; isA(ENTITYX12,r__name_0253_0028)
+      &amp; isA(ENTITYX12,r_0253_0028__name)
       &amp; attrib2(ENTITYX12) = ATTRIBX14
       &amp; restriction(QUANTX13) = ENTITYX12
       &amp; scope(QUANTX13) = ENTITYX7
-      &amp; isA(ENTITYX7,r__or_0253_0025)
+      &amp; isA(ENTITYX7,r_0253_0025__or)
       &amp; conj1(ENTITYX7) = ENTITYX8
       &amp; conj2(ENTITYX7) = ENTITYX12
-      &amp; isA(ENTITYX8,r__name_0253_0017)
+      &amp; isA(ENTITYX8,r_0253_0017__name)
       &amp; prn4(ENTITYX8) = ENTITYX9
-      &amp; isA(ENTITYX9,r__information_0253_0021_r__protection_0253_0022_r__organization_0253_0023)
+      &amp; isA(ENTITYX9,r_0253_0021__information_protection_organization)
       &amp; attrib1(ENTITYX9) = ATTRIBX10
       &amp; attrib2(ENTITYX9) = ATTRIBX11
-      &amp; isA(ATTRIBX3,r__authorized_0253_0008)
-      &amp; isA(ATTRIBX4,r__personal_0253_0009)
-      &amp; isA(ATTRIBX10,r__authorized_0253_0019)
-      &amp; isA(ATTRIBX11,r__personal_0253_0020)
-      &amp; isA(ATTRIBX14,r__other_0253_0027)
-      &amp; isA(OPERATORX20,r__shall_0253_0013)
+      &amp; isA(ATTRIBX3,r_0253_0008__authorized)
+      &amp; isA(ATTRIBX4,r_0253_0009__personal)
+      &amp; isA(ATTRIBX10,r_0253_0019__authorized)
+      &amp; isA(ATTRIBX11,r_0253_0020__personal)
+      &amp; isA(ATTRIBX14,r_0253_0027__other)
+      &amp; isA(OPERATORX20,r_0253_0013__shall)
       &amp; scope(OPERATORX20) = OPERATORX21
-      &amp; isA(OPERATORX21,r__not_0253_0014)
+      &amp; isA(OPERATORX21,r_0253_0014__not)
       &amp; scope(OPERATORX21) = EVENTX22
-      &amp; isA(EVENTX22,r__use_0253_0015)
+      &amp; isA(EVENTX22,r_0253_0015__use)
       &amp; arg0(EVENTX22) = ENTITYX1
       &amp; arg1(EVENTX22) = ENTITYX7 ) ).
 

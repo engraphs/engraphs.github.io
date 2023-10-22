@@ -161,38 +161,38 @@ Section 5 : Reduced Speeds : Towing Vehicles , Buses , or Large Trucks
 </svg>
 <br>
 <pre>
-arc(r__Section_0026_0001_r__5_0026_0002,r__Speeds_0026_0005,prn4).
-arc(r__Speeds_0026_0005,r__Reduced_0026_0004,attrib1).
-arc(r__Speeds_0026_0005,r__or_0026_0012,prn4).
-arc(r__Vehicles_0026_0008,r__Towing_0026_0007,attrib1).
-arc(r__or_0026_0012,r__Vehicles_0026_0008,conj1).
-arc(r__or_0026_0012,r__Buses_0026_0010,conj2).
-arc(r__or_0026_0012,r__Trucks_0026_0014,conj3).
-arc(r__Trucks_0026_0014,r__Large_0026_0013,attrib1).
-arc(z_0026_1012,r__Section_0026_0001_r__5_0026_0002,z_0026_1002).
+arc(r_0026_0001__Section_5,r_0026_0005__Speeds,prn4).
+arc(r_0026_0005__Speeds,r_0026_0004__Reduced,attrib1).
+arc(r_0026_0005__Speeds,r_0026_0012__or,prn4).
+arc(r_0026_0008__Vehicles,r_0026_0007__Towing,attrib1).
+arc(r_0026_0012__or,r_0026_0008__Vehicles,conj1).
+arc(r_0026_0012__or,r_0026_0010__Buses,conj2).
+arc(r_0026_0012__or,r_0026_0014__Trucks,conj3).
+arc(r_0026_0014__Trucks,r_0026_0013__Large,attrib1).
+arc(z_0026_1012,r_0026_0001__Section_5,z_0026_1002).
 
 </pre>
 <br>
 <pre>
 fof(id_26_A_driver_handbook,axiom,
     ? [EVENTX13,ENTITYX3,ENTITYX4,ENTITYX6,ENTITYX7,ENTITYX9,ENTITYX10,ATTRIBX5,ATTRIBX11,ATTRIBX8] :
-      ( isA(ENTITYX3,r__Section_0026_0001_r__5_0026_0002)
+      ( isA(ENTITYX3,r_0026_0001__Section_5)
       &amp; prn4(ENTITYX3) = ENTITYX4
-      &amp; isA(ENTITYX4,r__Speeds_0026_0005)
+      &amp; isA(ENTITYX4,r_0026_0005__Speeds)
       &amp; attrib1(ENTITYX4) = ATTRIBX5
       &amp; prn4(ENTITYX4) = ENTITYX6
-      &amp; isA(ENTITYX6,r__or_0026_0012)
+      &amp; isA(ENTITYX6,r_0026_0012__or)
       &amp; conj1(ENTITYX6) = ENTITYX7
       &amp; conj2(ENTITYX6) = ENTITYX9
       &amp; conj3(ENTITYX6) = ENTITYX10
-      &amp; isA(ENTITYX7,r__Vehicles_0026_0008)
+      &amp; isA(ENTITYX7,r_0026_0008__Vehicles)
       &amp; attrib1(ENTITYX7) = ATTRIBX8
-      &amp; isA(ENTITYX9,r__Buses_0026_0010)
-      &amp; isA(ENTITYX10,r__Trucks_0026_0014)
+      &amp; isA(ENTITYX9,r_0026_0010__Buses)
+      &amp; isA(ENTITYX10,r_0026_0014__Trucks)
       &amp; attrib1(ENTITYX10) = ATTRIBX11
-      &amp; isA(ATTRIBX5,r__Reduced_0026_0004)
-      &amp; isA(ATTRIBX8,r__Towing_0026_0007)
-      &amp; isA(ATTRIBX11,r__Large_0026_0013)
+      &amp; isA(ATTRIBX5,r_0026_0004__Reduced)
+      &amp; isA(ATTRIBX8,r_0026_0007__Towing)
+      &amp; isA(ATTRIBX11,r_0026_0013__Large)
       &amp; isA(EVENTX13,z_0026_1012)
       &amp; z_0026_1002(EVENTX13) = ENTITYX3 ) ).
 

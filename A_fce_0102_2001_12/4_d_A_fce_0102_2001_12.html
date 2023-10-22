@@ -194,18 +194,18 @@ Read the extract from your friend 's letter and the advertisement for a boat tri
 </svg>
 <br>
 <pre>
-arc(imperative_0004_1002,r__Read_0004_0001,scope).
-arc(r__Read_0004_0001,r__and_0004_0009,arg1).
-arc(r__extract_0004_0003,r__letter_0004_0008,r__from_0004_0004).
-arc(r__friend_0004_0006,r__your_0004_0005,genv).
-arc(r__letter_0004_0008,r__friend_0004_0006,genv).
-arc(r__and_0004_0009,r__extract_0004_0003,conj1).
-arc(r__and_0004_0009,r__advertisement_0004_0011,conj2).
-arc(r__advertisement_0004_0011,r__boat_0004_0014_r__trip_0004_0015,r__for_0004_0012).
-arc(r__have_0004_0020,r__made_0004_0021,catenative).
-arc(r__made_0004_0021,r__your_0004_0005,arg0).
-arc(r__made_0004_0021,r__notes_0004_0023,arg1).
-arc(r__notes_0004_0023,r__boat_0004_0014_r__trip_0004_0015,r__on_0004_0017).
+arc(imperative_0004_1002,r_0004_0001__Read,scope).
+arc(r_0004_0001__Read,r_0004_0009__and,arg1).
+arc(r_0004_0003__extract,r_0004_0008__letter,r_0004_0004__from).
+arc(r_0004_0006__friend,r_0004_0005__your,genv).
+arc(r_0004_0008__letter,r_0004_0006__friend,genv).
+arc(r_0004_0009__and,r_0004_0003__extract,conj1).
+arc(r_0004_0009__and,r_0004_0011__advertisement,conj2).
+arc(r_0004_0011__advertisement,r_0004_0014__boat_trip,r_0004_0012__for).
+arc(r_0004_0020__have,r_0004_0021__made,catenative).
+arc(r_0004_0021__made,r_0004_0005__your,arg0).
+arc(r_0004_0021__made,r_0004_0023__notes,arg1).
+arc(r_0004_0023__notes,r_0004_0014__boat_trip,r_0004_0017__on).
 
 </pre>
 <br>
@@ -213,29 +213,29 @@ arc(r__notes_0004_0023,r__boat_0004_0014_r__trip_0004_0015,r__on_0004_0017).
 fof(id_4_A_fce_0102_2001_12,axiom,
     ? [CATENATIVEX11,HEARERX10,OPERATORX2,EVENTX15,EVENTX14,EVENTX13,ENTITYX4,ENTITYX5,ENTITYX8,ENTITYX9,ENTITYX12,ENTITYX6,ENTITYX7] :
       ( CATENATIVEX11 = EVENTX13
-      &amp; isA(EVENTX13,r__made_0004_0021)
+      &amp; isA(EVENTX13,r_0004_0021__made)
       &amp; arg0(EVENTX13) = HEARERX10
       &amp; arg1(EVENTX13) = ENTITYX12
-      &amp; isA(ENTITYX4,r__and_0004_0009)
+      &amp; isA(ENTITYX4,r_0004_0009__and)
       &amp; conj1(ENTITYX4) = ENTITYX5
       &amp; conj2(ENTITYX4) = ENTITYX8
-      &amp; isA(ENTITYX5,r__extract_0004_0003)
-      &amp; r__from_0004_0004(ENTITYX5) = ENTITYX6
-      &amp; isA(ENTITYX6,r__letter_0004_0008)
+      &amp; isA(ENTITYX5,r_0004_0003__extract)
+      &amp; r_0004_0004__from(ENTITYX5) = ENTITYX6
+      &amp; isA(ENTITYX6,r_0004_0008__letter)
       &amp; genv(ENTITYX6) = ENTITYX7
-      &amp; isA(ENTITYX7,r__friend_0004_0006)
-      &amp; genv(ENTITYX7) = r__your_0004_0005
-      &amp; isA(ENTITYX8,r__advertisement_0004_0011)
-      &amp; r__for_0004_0012(ENTITYX8) = ENTITYX9
-      &amp; isA(EVENTX14,r__have_0004_0020)
+      &amp; isA(ENTITYX7,r_0004_0006__friend)
+      &amp; genv(ENTITYX7) = r_0004_0005__your
+      &amp; isA(ENTITYX8,r_0004_0011__advertisement)
+      &amp; r_0004_0012__for(ENTITYX8) = ENTITYX9
+      &amp; isA(EVENTX14,r_0004_0020__have)
       &amp; catenative(EVENTX14) = CATENATIVEX11
-      &amp; isA(ENTITYX9,r__boat_0004_0014_r__trip_0004_0015)
-      &amp; HEARERX10 = r__your_0004_0005
-      &amp; isA(ENTITYX12,r__notes_0004_0023)
-      &amp; r__on_0004_0017(ENTITYX12) = ENTITYX9
+      &amp; isA(ENTITYX9,r_0004_0014__boat_trip)
+      &amp; HEARERX10 = r_0004_0005__your
+      &amp; isA(ENTITYX12,r_0004_0023__notes)
+      &amp; r_0004_0017__on(ENTITYX12) = ENTITYX9
       &amp; isA(OPERATORX2,imperative_0004_1002)
       &amp; scope(OPERATORX2) = EVENTX15
-      &amp; isA(EVENTX15,r__Read_0004_0001)
+      &amp; isA(EVENTX15,r_0004_0001__Read)
       &amp; arg1(EVENTX15) = ENTITYX4 ) ).
 
 

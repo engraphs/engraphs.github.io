@@ -115,8 +115,8 @@ We will not hesitate to go further if that is what the scientific and medical ad
 <!-- 0023_0008_cnt_cnd -->
 <g id="node7" class="node">
 <title>0023_0008_cnt_cnd</title>
-<ellipse fill="none" stroke="black" cx="374.7" cy="-540" rx="65.79" ry="18"/>
-<text text-anchor="middle" x="374.7" y="-536.3" font-family="fixed" font-size="14.00">if_[cnt][cnd]</text>
+<ellipse fill="none" stroke="black" cx="374.7" cy="-540" rx="61.19" ry="18"/>
+<text text-anchor="middle" x="374.7" y="-536.3" font-family="fixed" font-size="14.00">if[cnt][cnd]</text>
 </g>
 <!-- 0023_0008_cnt_cnd&#45;&gt;0023_0002 -->
 <g id="edge7" class="edge">
@@ -134,7 +134,7 @@ We will not hesitate to go further if that is what the scientific and medical ad
 <!-- 0023_0008_cnt_cnd&#45;&gt;0023_0010 -->
 <g id="edge8" class="edge">
 <title>0023_0008_cnt_cnd&#45;&gt;0023_0010</title>
-<path fill="none" stroke="black" d="M340.34,-524.48C332.12,-519.28 324.38,-512.53 319.7,-504 315.85,-497 315.15,-488.6 315.83,-480.69"/>
+<path fill="none" stroke="black" d="M340.92,-524.84C332.49,-519.6 324.49,-512.73 319.7,-504 315.85,-497 315.15,-488.6 315.83,-480.69"/>
 <polygon fill="black" stroke="black" points="319.3,-481.16 317.38,-470.75 312.39,-480.09 319.3,-481.16"/>
 <text text-anchor="middle" x="360.2" y="-492.8" font-family="fixed" font-size="14.00">[restriction]</text>
 </g>
@@ -280,26 +280,26 @@ We will not hesitate to go further if that is what the scientific and medical ad
 </svg>
 <br>
 <pre>
-arc(question_0023_1008,r__tells_0023_0017,scope).
-arc(r__will_0023_0002,r__not_0023_0003,scope).
-arc(r__not_0023_0003,r__hesitate_0023_0004,scope).
-arc(r__hesitate_0023_0004,r__We_0023_0001,arg0).
-arc(r__hesitate_0023_0004,r__go_0023_0006,clr).
-arc(r__go_0023_0006,r__We_0023_0001,arg0).
-arc(r__go_0023_0006,r__further_0023_0007,dir3).
-arc(r__if_0023_0008_cnt_cnd,r__will_0023_0002,scope).
-arc(r__if_0023_0008_cnt_cnd,r__is_0023_0010,restriction).
-arc(r__is_0023_0010,question_0023_1008,prd2).
-arc(r__is_0023_0010,r__go_0023_0006,arg0).
-arc(r__and_0023_0014,r__scientific_0023_0013,conj1).
-arc(r__and_0023_0014,r__medical_0023_0015,conj2).
-arc(r__advice_0023_0016,r__and_0023_0014,attrib2).
-arc(r__tells_0023_0017,r__We_0023_0001,arg2).
-arc(r__tells_0023_0017,r__advice_0023_0016,arg0).
-arc(r__tells_0023_0017,r__must_0023_0020,arg1).
-arc(r__must_0023_0020,r__do_0023_0021,scope).
-arc(r__do_0023_0021,r__We_0023_0001,arg0).
-arc(r__do_0023_0021,r__what_0023_0011,arg1).
+arc(question_0023_1008,r_0023_0017__tells,scope).
+arc(r_0023_0002__will,r_0023_0003__not,scope).
+arc(r_0023_0003__not,r_0023_0004__hesitate,scope).
+arc(r_0023_0004__hesitate,r_0023_0001__We,arg0).
+arc(r_0023_0004__hesitate,r_0023_0006__go,clr).
+arc(r_0023_0006__go,r_0023_0001__We,arg0).
+arc(r_0023_0006__go,r_0023_0007__further,dir3).
+arc(r_0023_0008__if_cnt_cnd,r_0023_0002__will,scope).
+arc(r_0023_0008__if_cnt_cnd,r_0023_0010__is,restriction).
+arc(r_0023_0010__is,question_0023_1008,prd2).
+arc(r_0023_0010__is,r_0023_0006__go,arg0).
+arc(r_0023_0014__and,r_0023_0013__scientific,conj1).
+arc(r_0023_0014__and,r_0023_0015__medical,conj2).
+arc(r_0023_0016__advice,r_0023_0014__and,attrib2).
+arc(r_0023_0017__tells,r_0023_0001__We,arg2).
+arc(r_0023_0017__tells,r_0023_0016__advice,arg0).
+arc(r_0023_0017__tells,r_0023_0020__must,arg1).
+arc(r_0023_0020__must,r_0023_0021__do,scope).
+arc(r_0023_0021__do,r_0023_0001__We,arg0).
+arc(r_0023_0021__do,r_0023_0011__what,arg1).
 
 </pre>
 <br>
@@ -307,46 +307,46 @@ arc(r__do_0023_0021,r__what_0023_0011,arg1).
 fof(id_23_A_Johnson_letter,axiom,
     ? [STATEX1,STATEX6,STATEX15,GO_FURTHERX5,SPEAKER_AND_HEARERX14,SPEAKER_AND_HEARERX16,CONNX4,EVENTX20,OPERATORX8,EVENTX19,OPERATORX17,EVENTX18,OPERATORX21,OPERATORX22,EVENTX23,GO_FURTHERX3,ENTITYX9,ENTITYX10,QUALITYX2,ATTRIBX11,ATTRIBX12,ATTRIBX13] :
       ( STATEX1 = GO_FURTHERX3
-      &amp; isA(GO_FURTHERX3,r__go_0023_0006)
-      &amp; arg0(GO_FURTHERX3) = r__We_0023_0001
+      &amp; isA(GO_FURTHERX3,r_0023_0006__go)
+      &amp; arg0(GO_FURTHERX3) = r_0023_0001__We
       &amp; dir3(GO_FURTHERX3) = QUALITYX2
       &amp; STATEX6 = OPERATORX8
       &amp; isA(OPERATORX8,question_0023_1008)
       &amp; scope(OPERATORX8) = EVENTX19
-      &amp; isA(EVENTX19,r__tells_0023_0017)
+      &amp; isA(EVENTX19,r_0023_0017__tells)
       &amp; arg0(EVENTX19) = ENTITYX10
       &amp; arg2(EVENTX19) = SPEAKER_AND_HEARERX14
       &amp; arg1(EVENTX19) = STATEX15
       &amp; STATEX15 = OPERATORX17
-      &amp; isA(OPERATORX17,r__must_0023_0020)
+      &amp; isA(OPERATORX17,r_0023_0020__must)
       &amp; scope(OPERATORX17) = EVENTX18
-      &amp; isA(EVENTX18,r__do_0023_0021)
+      &amp; isA(EVENTX18,r_0023_0021__do)
       &amp; arg1(EVENTX18) = ENTITYX9
       &amp; arg0(EVENTX18) = SPEAKER_AND_HEARERX16
       &amp; GO_FURTHERX5 = GO_FURTHERX3
-      &amp; isA(ENTITYX9,r__what_0023_0011)
-      &amp; isA(ENTITYX10,r__advice_0023_0016)
+      &amp; isA(ENTITYX9,r_0023_0011__what)
+      &amp; isA(ENTITYX10,r_0023_0016__advice)
       &amp; attrib2(ENTITYX10) = ATTRIBX11
-      &amp; SPEAKER_AND_HEARERX14 = r__We_0023_0001
+      &amp; SPEAKER_AND_HEARERX14 = r_0023_0001__We
       &amp; ( SPEAKER_AND_HEARERX16 = SPEAKER_AND_HEARERX14
-        | SPEAKER_AND_HEARERX16 = r__We_0023_0001 )
-      &amp; isA(QUALITYX2,r__further_0023_0007)
-      &amp; isA(ATTRIBX11,r__and_0023_0014)
+        | SPEAKER_AND_HEARERX16 = r_0023_0001__We )
+      &amp; isA(QUALITYX2,r_0023_0007__further)
+      &amp; isA(ATTRIBX11,r_0023_0014__and)
       &amp; conj1(ATTRIBX11) = ATTRIBX12
       &amp; conj2(ATTRIBX11) = ATTRIBX13
-      &amp; isA(ATTRIBX12,r__scientific_0023_0013)
-      &amp; isA(ATTRIBX13,r__medical_0023_0015)
-      &amp; isA(CONNX4,r__if_0023_0008_cnt_cnd)
+      &amp; isA(ATTRIBX12,r_0023_0013__scientific)
+      &amp; isA(ATTRIBX13,r_0023_0015__medical)
+      &amp; isA(CONNX4,r_0023_0008__if_cnt_cnd)
       &amp; scope(CONNX4) = OPERATORX21
-      &amp; isA(OPERATORX21,r__will_0023_0002)
+      &amp; isA(OPERATORX21,r_0023_0002__will)
       &amp; scope(OPERATORX21) = OPERATORX22
-      &amp; isA(OPERATORX22,r__not_0023_0003)
+      &amp; isA(OPERATORX22,r_0023_0003__not)
       &amp; scope(OPERATORX22) = EVENTX23
-      &amp; isA(EVENTX23,r__hesitate_0023_0004)
-      &amp; arg0(EVENTX23) = r__We_0023_0001
+      &amp; isA(EVENTX23,r_0023_0004__hesitate)
+      &amp; arg0(EVENTX23) = r_0023_0001__We
       &amp; clr(EVENTX23) = STATEX1
       &amp; restriction(CONNX4) = EVENTX20
-      &amp; isA(EVENTX20,r__is_0023_0010)
+      &amp; isA(EVENTX20,r_0023_0010__is)
       &amp; arg0(EVENTX20) = GO_FURTHERX5
       &amp; prd2(EVENTX20) = STATEX6 ) ).
 

@@ -64,7 +64,7 @@ Dorle stopped at the top of a ridge overlooking the city .
 <title>0244_0002&#45;&gt;0244_0005</title>
 <path fill="none" stroke="black" d="M76.54,-174.21C83.17,-161.94 92.29,-145.1 99.8,-131.22"/>
 <polygon fill="black" stroke="black" points="103.01,-132.64 104.69,-122.18 96.85,-129.31 103.01,-132.64"/>
-<text text-anchor="middle" x="118.95" y="-144.8" font-family="fixed" font-size="14.00">at_[loc]</text>
+<text text-anchor="middle" x="115.45" y="-144.8" font-family="fixed" font-size="14.00">at[loc]</text>
 </g>
 <!-- 0244_0008 -->
 <g id="node4" class="node">
@@ -109,27 +109,27 @@ Dorle stopped at the top of a ridge overlooking the city .
 </svg>
 <br>
 <pre>
-arc(r__stopped_0244_0002,r__Dorle_0244_0001,arg0).
-arc(r__stopped_0244_0002,r__top_0244_0005,r__at_0244_0003_loc).
-arc(r__top_0244_0005,r__ridge_0244_0008,r__of_0244_0006).
-arc(r__overlooking_0244_0009,r__ridge_0244_0008,arg0).
-arc(r__overlooking_0244_0009,r__city_0244_0011,arg1).
+arc(r_0244_0002__stopped,r_0244_0001__Dorle,arg0).
+arc(r_0244_0002__stopped,r_0244_0005__top,r_0244_0003__at_loc).
+arc(r_0244_0005__top,r_0244_0008__ridge,r_0244_0006__of).
+arc(r_0244_0009__overlooking,r_0244_0008__ridge,arg0).
+arc(r_0244_0009__overlooking,r_0244_0011__city,arg1).
 
 </pre>
 <br>
 <pre>
 fof(id_244_A_DICK_1952,axiom,
     ? [EVENTX5,EVENTX4,ENTITYX1,ENTITYX2,CITYX3] :
-      ( isA(ENTITYX1,r__top_0244_0005)
-      &amp; r__of_0244_0006(ENTITYX1) = ENTITYX2
-      &amp; isA(EVENTX4,r__overlooking_0244_0009)
+      ( isA(ENTITYX1,r_0244_0005__top)
+      &amp; r_0244_0006__of(ENTITYX1) = ENTITYX2
+      &amp; isA(EVENTX4,r_0244_0009__overlooking)
       &amp; arg0(EVENTX4) = ENTITYX2
       &amp; arg1(EVENTX4) = CITYX3
-      &amp; isA(ENTITYX2,r__ridge_0244_0008)
-      &amp; isA(CITYX3,r__city_0244_0011)
-      &amp; isA(EVENTX5,r__stopped_0244_0002)
-      &amp; arg0(EVENTX5) = r__Dorle_0244_0001
-      &amp; r__at_0244_0003_loc(EVENTX5) = ENTITYX1 ) ).
+      &amp; isA(ENTITYX2,r_0244_0008__ridge)
+      &amp; isA(CITYX3,r_0244_0011__city)
+      &amp; isA(EVENTX5,r_0244_0002__stopped)
+      &amp; arg0(EVENTX5) = r_0244_0001__Dorle
+      &amp; r_0244_0003__at_loc(EVENTX5) = ENTITYX1 ) ).
 
 
 </pre>

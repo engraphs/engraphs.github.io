@@ -83,9 +83,9 @@ Collecting a fuel tank ..... 300 points
 </svg>
 <br>
 <pre>
-arc(r__Collecting_0025_0001,r__fuel_0025_0003_r__tank_0025_0004,arg1).
-arc(z_0025_1007,r__Collecting_0025_0001,arg0).
-arc(z_0025_1007,r__300_0025_0006_r__points_0025_0007,prd2).
+arc(r_0025_0001__Collecting,r_0025_0003__fuel_tank,arg1).
+arc(z_0025_1007,r_0025_0001__Collecting,arg0).
+arc(z_0025_1007,r_0025_0006__300_points,prd2).
 
 </pre>
 <br>
@@ -93,10 +93,10 @@ arc(z_0025_1007,r__300_0025_0006_r__points_0025_0007,prd2).
 fof(id_25_A_THRUST,axiom,
     ? [STATEX1,EVENTX8,EVENTX5,ENTITYX6,ENTITYX4] :
       ( STATEX1 = EVENTX5
-      &amp; isA(EVENTX5,r__Collecting_0025_0001)
+      &amp; isA(EVENTX5,r_0025_0001__Collecting)
       &amp; arg1(EVENTX5) = ENTITYX4
-      &amp; isA(ENTITYX4,r__fuel_0025_0003_r__tank_0025_0004)
-      &amp; isA(ENTITYX6,r__300_0025_0006_r__points_0025_0007)
+      &amp; isA(ENTITYX4,r_0025_0003__fuel_tank)
+      &amp; isA(ENTITYX6,r_0025_0006__300_points)
       &amp; isA(EVENTX8,z_0025_1007)
       &amp; arg0(EVENTX8) = STATEX1
       &amp; prd2(EVENTX8) = ENTITYX6 ) ).

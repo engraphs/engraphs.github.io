@@ -122,12 +122,12 @@ Practice moving around and firing the weapon .
 </svg>
 <br>
 <pre>
-arc(imperative_0011_1002,r__Practice_0011_0001,scope).
-arc(r__Practice_0011_0001,r__and_0011_0004,arg1).
-arc(r__moving_0011_0002,r__around_0011_0003,dir2).
-arc(r__and_0011_0004,r__moving_0011_0002,conj1).
-arc(r__and_0011_0004,r__firing_0011_0005,conj2).
-arc(r__firing_0011_0005,r__weapon_0011_0007,arg1).
+arc(imperative_0011_1002,r_0011_0001__Practice,scope).
+arc(r_0011_0001__Practice,r_0011_0004__and,arg1).
+arc(r_0011_0002__moving,r_0011_0003__around,dir2).
+arc(r_0011_0004__and,r_0011_0002__moving,conj1).
+arc(r_0011_0004__and,r_0011_0005__firing,conj2).
+arc(r_0011_0005__firing,r_0011_0007__weapon,arg1).
 
 </pre>
 <br>
@@ -135,18 +135,18 @@ arc(r__firing_0011_0005,r__weapon_0011_0007,arg1).
 fof(id_11_A_Freedoom,axiom,
     ? [STATEX4,OPERATORX2,EVENTX10,CONJX9,EVENTX8,EVENTX6,QUALITYX5,ENTITYX7] :
       ( STATEX4 = CONJX9
-      &amp; isA(CONJX9,r__and_0011_0004)
+      &amp; isA(CONJX9,r_0011_0004__and)
       &amp; conj1(CONJX9) = EVENTX6
-      &amp; isA(EVENTX6,r__moving_0011_0002)
+      &amp; isA(EVENTX6,r_0011_0002__moving)
       &amp; dir2(EVENTX6) = QUALITYX5
       &amp; conj2(CONJX9) = EVENTX8
-      &amp; isA(EVENTX8,r__firing_0011_0005)
+      &amp; isA(EVENTX8,r_0011_0005__firing)
       &amp; arg1(EVENTX8) = ENTITYX7
-      &amp; isA(QUALITYX5,r__around_0011_0003)
-      &amp; isA(ENTITYX7,r__weapon_0011_0007)
+      &amp; isA(QUALITYX5,r_0011_0003__around)
+      &amp; isA(ENTITYX7,r_0011_0007__weapon)
       &amp; isA(OPERATORX2,imperative_0011_1002)
       &amp; scope(OPERATORX2) = EVENTX10
-      &amp; isA(EVENTX10,r__Practice_0011_0001)
+      &amp; isA(EVENTX10,r_0011_0001__Practice)
       &amp; arg1(EVENTX10) = STATEX4 ) ).
 
 

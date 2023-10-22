@@ -174,16 +174,16 @@
 </svg>
 <br>
 <pre>
-arc(imperative_0119_1002,r__Let_0119_0002,scope).
-arc(r__Let_0119_0002,r__us_0119_0003,arg1).
-arc(r__Let_0119_0002,r__have_0119_0004,prd).
-arc(r__have_0119_0004,r__inquiry_0119_0007,arg1).
-arc(r__inquiry_0119_0007,r__full_0119_0006,attrib2).
-arc(r__inquiry_0119_0007,r__and_0119_0013,r__into_0119_0008).
-arc(r__cost_0119_0010,r__drugs_0119_0012,r__of_0119_0011).
-arc(r__and_0119_0013,r__cost_0119_0010,conj1).
-arc(r__and_0119_0013,r__industry_0119_0016,conj2).
-arc(r__industry_0119_0016,r__pharmaceutical_0119_0015,attrib2).
+arc(imperative_0119_1002,r_0119_0002__Let,scope).
+arc(r_0119_0002__Let,r_0119_0003__us,arg1).
+arc(r_0119_0002__Let,r_0119_0004__have,prd).
+arc(r_0119_0004__have,r_0119_0007__inquiry,arg1).
+arc(r_0119_0007__inquiry,r_0119_0006__full,attrib2).
+arc(r_0119_0007__inquiry,r_0119_0013__and,r_0119_0008__into).
+arc(r_0119_0010__cost,r_0119_0012__drugs,r_0119_0011__of).
+arc(r_0119_0013__and,r_0119_0010__cost,conj1).
+arc(r_0119_0013__and,r_0119_0016__industry,conj2).
+arc(r_0119_0016__industry,r_0119_0015__pharmaceutical,attrib2).
 
 </pre>
 <br>
@@ -191,25 +191,25 @@ arc(r__industry_0119_0016,r__pharmaceutical_0119_0015,attrib2).
 fof(id_119_A_lob_A01,axiom,
     ? [STATEX4,OPERATORX2,EVENTX15,EVENTX14,ENTITYX7,ENTITYX9,ENTITYX10,ENTITYX12,ENTITYX11,ATTRIBX8,ATTRIBX13] :
       ( STATEX4 = EVENTX14
-      &amp; isA(EVENTX14,r__have_0119_0004)
+      &amp; isA(EVENTX14,r_0119_0004__have)
       &amp; arg1(EVENTX14) = ENTITYX7
-      &amp; isA(ENTITYX7,r__inquiry_0119_0007)
+      &amp; isA(ENTITYX7,r_0119_0007__inquiry)
       &amp; attrib2(ENTITYX7) = ATTRIBX8
-      &amp; r__into_0119_0008(ENTITYX7) = ENTITYX9
-      &amp; isA(ENTITYX9,r__and_0119_0013)
+      &amp; r_0119_0008__into(ENTITYX7) = ENTITYX9
+      &amp; isA(ENTITYX9,r_0119_0013__and)
       &amp; conj1(ENTITYX9) = ENTITYX10
       &amp; conj2(ENTITYX9) = ENTITYX12
-      &amp; isA(ENTITYX10,r__cost_0119_0010)
-      &amp; r__of_0119_0011(ENTITYX10) = ENTITYX11
-      &amp; isA(ENTITYX11,r__drugs_0119_0012)
-      &amp; isA(ENTITYX12,r__industry_0119_0016)
+      &amp; isA(ENTITYX10,r_0119_0010__cost)
+      &amp; r_0119_0011__of(ENTITYX10) = ENTITYX11
+      &amp; isA(ENTITYX11,r_0119_0012__drugs)
+      &amp; isA(ENTITYX12,r_0119_0016__industry)
       &amp; attrib2(ENTITYX12) = ATTRIBX13
-      &amp; isA(ATTRIBX8,r__full_0119_0006)
-      &amp; isA(ATTRIBX13,r__pharmaceutical_0119_0015)
+      &amp; isA(ATTRIBX8,r_0119_0006__full)
+      &amp; isA(ATTRIBX13,r_0119_0015__pharmaceutical)
       &amp; isA(OPERATORX2,imperative_0119_1002)
       &amp; scope(OPERATORX2) = EVENTX15
-      &amp; isA(EVENTX15,r__Let_0119_0002)
-      &amp; arg1(EVENTX15) = r__us_0119_0003
+      &amp; isA(EVENTX15,r_0119_0002__Let)
+      &amp; arg1(EVENTX15) = r_0119_0003__us
       &amp; prd(EVENTX15) = STATEX4 ) ).
 
 

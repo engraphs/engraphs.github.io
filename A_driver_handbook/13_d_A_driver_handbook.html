@@ -246,22 +246,22 @@ Driving faster than the posted speed limit or than is safe for current condition
 </svg>
 <br>
 <pre>
-arc(quantificational_r__any_0017_0017,r__conditions_0017_0014,scope).
-arc(quantificational_r__any_0017_0017,r__road_0017_0018,restriction).
-arc(r__Driving_0017_0001,r__faster_0017_0002,mnr2).
-arc(r__faster_0017_0002,r__or_0017_0008,z_0017_1007).
-arc(r__posted_0017_0005,r__speed_0017_0006_r__limit_0017_0007,arg1).
-arc(r__or_0017_0008,r__speed_0017_0006_r__limit_0017_0007,r__than_0017_0003).
-arc(r__or_0017_0008,z_0017_1019,r__than_0017_0009).
-arc(r__is_0017_0010,r__safe_0017_0011,prd2).
-arc(r__is_0017_0010,z_0017_1019,arg0).
-arc(r__safe_0017_0011,r__conditions_0017_0014,r__for_0017_0012).
-arc(r__conditions_0017_0014,r__current_0017_0013,attrib1).
-arc(r__conditions_0017_0014,r__road_0017_0018,r__on_0017_0016).
-arc(r__is_0017_0020,r__Driving_0017_0001,arg0).
-arc(r__is_0017_0020,r__and_0017_0022,prd2).
-arc(r__and_0017_0022,r__dangerous_0017_0021,conj1).
-arc(r__and_0017_0022,r__illegal_0017_0023,conj2).
+arc(r_0017_0001__Driving,r_0017_0002__faster,mnr2).
+arc(r_0017_0002__faster,r_0017_0008__or,z_0017_1007).
+arc(r_0017_0005__posted,r_0017_0006__speed_limit,arg1).
+arc(r_0017_0008__or,r_0017_0006__speed_limit,r_0017_0003__than).
+arc(r_0017_0008__or,z_0017_1019,r_0017_0009__than).
+arc(r_0017_0010__is,r_0017_0011__safe,prd2).
+arc(r_0017_0010__is,z_0017_1019,arg0).
+arc(r_0017_0011__safe,r_0017_0014__conditions,r_0017_0012__for).
+arc(r_0017_0014__conditions,r_0017_0013__current,attrib1).
+arc(r_0017_0014__conditions,r_0017_0018__road,r_0017_0016__on).
+arc(r_0017_0017__quantificational__any,r_0017_0014__conditions,scope).
+arc(r_0017_0017__quantificational__any,r_0017_0018__road,restriction).
+arc(r_0017_0020__is,r_0017_0001__Driving,arg0).
+arc(r_0017_0020__is,r_0017_0022__and,prd2).
+arc(r_0017_0022__and,r_0017_0021__dangerous,conj1).
+arc(r_0017_0022__and,r_0017_0023__illegal,conj2).
 
 </pre>
 <br>
@@ -269,36 +269,36 @@ arc(r__and_0017_0022,r__illegal_0017_0023,conj2).
 fof(id_17_A_driver_handbook,axiom,
     ? [STATEX1,EVENTX24,EVENTX20,EVENTX18,QUANTX17,EVENTX11,QUALITYX5,CONJX8,PSLX9,ENTITYX12,ENTITYX14,ENTITYX16,ATTRIBX21,ATTRIBX22,ATTRIBX23,ATTRIBX13,ATTRIBX15] :
       ( STATEX1 = EVENTX20
-      &amp; isA(EVENTX20,r__Driving_0017_0001)
+      &amp; isA(EVENTX20,r_0017_0001__Driving)
       &amp; mnr2(EVENTX20) = QUALITYX5
-      &amp; isA(QUALITYX5,r__faster_0017_0002)
+      &amp; isA(QUALITYX5,r_0017_0002__faster)
       &amp; z_0017_1007(QUALITYX5) = CONJX8
-      &amp; isA(CONJX8,r__or_0017_0008)
-      &amp; r__than_0017_0003(CONJX8) = PSLX9
-      &amp; r__than_0017_0009(CONJX8) = ENTITYX12
-      &amp; isA(EVENTX11,r__posted_0017_0005)
+      &amp; isA(CONJX8,r_0017_0008__or)
+      &amp; r_0017_0003__than(CONJX8) = PSLX9
+      &amp; r_0017_0009__than(CONJX8) = ENTITYX12
+      &amp; isA(EVENTX11,r_0017_0005__posted)
       &amp; arg1(EVENTX11) = PSLX9
-      &amp; isA(PSLX9,r__speed_0017_0006_r__limit_0017_0007)
-      &amp; isA(EVENTX18,r__is_0017_0010)
+      &amp; isA(PSLX9,r_0017_0006__speed_limit)
+      &amp; isA(EVENTX18,r_0017_0010__is)
       &amp; arg0(EVENTX18) = ENTITYX12
       &amp; prd2(EVENTX18) = ATTRIBX13
       &amp; isA(ENTITYX12,z_0017_1019)
-      &amp; isA(QUANTX17,quantificational_r__any_0017_0017)
+      &amp; isA(QUANTX17,r_0017_0017__quantificational__any)
       &amp; restriction(QUANTX17) = ENTITYX16
-      &amp; isA(ENTITYX16,r__road_0017_0018)
+      &amp; isA(ENTITYX16,r_0017_0018__road)
       &amp; scope(QUANTX17) = ENTITYX14
-      &amp; isA(ENTITYX14,r__conditions_0017_0014)
+      &amp; isA(ENTITYX14,r_0017_0014__conditions)
       &amp; attrib1(ENTITYX14) = ATTRIBX15
-      &amp; r__on_0017_0016(ENTITYX14) = ENTITYX16
-      &amp; isA(ATTRIBX13,r__safe_0017_0011)
-      &amp; r__for_0017_0012(ATTRIBX13) = ENTITYX14
-      &amp; isA(ATTRIBX15,r__current_0017_0013)
-      &amp; isA(ATTRIBX21,r__and_0017_0022)
+      &amp; r_0017_0016__on(ENTITYX14) = ENTITYX16
+      &amp; isA(ATTRIBX13,r_0017_0011__safe)
+      &amp; r_0017_0012__for(ATTRIBX13) = ENTITYX14
+      &amp; isA(ATTRIBX15,r_0017_0013__current)
+      &amp; isA(ATTRIBX21,r_0017_0022__and)
       &amp; conj1(ATTRIBX21) = ATTRIBX22
       &amp; conj2(ATTRIBX21) = ATTRIBX23
-      &amp; isA(ATTRIBX22,r__dangerous_0017_0021)
-      &amp; isA(ATTRIBX23,r__illegal_0017_0023)
-      &amp; isA(EVENTX24,r__is_0017_0020)
+      &amp; isA(ATTRIBX22,r_0017_0021__dangerous)
+      &amp; isA(ATTRIBX23,r_0017_0023__illegal)
+      &amp; isA(EVENTX24,r_0017_0020__is)
       &amp; arg0(EVENTX24) = STATEX1
       &amp; prd2(EVENTX24) = ATTRIBX21 ) ).
 

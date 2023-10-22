@@ -260,23 +260,23 @@ Does the Minister agree that the successful survival of our hedgehog population 
 </svg>
 <br>
 <pre>
-arc(question_0148_1002,r__Does_0148_0001_r__agree_0148_0004,scope).
-arc(question_0148_1011,r__is_0148_0024,scope).
-arc(r__Does_0148_0001_r__agree_0148_0004,r__Minister_0148_0003,arg0).
-arc(r__Does_0148_0001_r__agree_0148_0004,r__is_0148_0013,arg1).
-arc(r__survival_0148_0008,r__successful_0148_0007,attrib2).
-arc(r__survival_0148_0008,r__hedgehog_0148_0011_r__population_0148_0012,r__of_0148_0009).
-arc(r__hedgehog_0148_0011_r__population_0148_0012,r__our_0148_0010,genv).
-arc(r__is_0148_0013,r__survival_0148_0008,arg0).
-arc(r__is_0148_0013,r__reflection_0148_0016,arg1).
-arc(r__reflection_0148_0016,question_0148_1011,r__of_0148_0017).
-arc(r__reflection_0148_0016,r__direct_0148_0015,attrib2).
-arc(r__and_0148_0020,r__how_0148_0018,quality1).
-arc(r__and_0148_0020,r__healthy_0148_0019,conj1).
-arc(r__and_0148_0020,r__sustainable_0148_0021,conj2).
-arc(r__environment_0148_0023,r__our_0148_0010,genv).
-arc(r__is_0148_0024,r__and_0148_0020,prd2).
-arc(r__is_0148_0024,r__environment_0148_0023,arg0).
+arc(question_0148_1002,r_0148_0001__Does_agree,scope).
+arc(question_0148_1011,r_0148_0024__is,scope).
+arc(r_0148_0001__Does_agree,r_0148_0003__Minister,arg0).
+arc(r_0148_0001__Does_agree,r_0148_0013__is,arg1).
+arc(r_0148_0008__survival,r_0148_0007__successful,attrib2).
+arc(r_0148_0008__survival,r_0148_0011__hedgehog_population,r_0148_0009__of).
+arc(r_0148_0011__hedgehog_population,r_0148_0010__our,genv).
+arc(r_0148_0013__is,r_0148_0008__survival,arg0).
+arc(r_0148_0013__is,r_0148_0016__reflection,arg1).
+arc(r_0148_0016__reflection,question_0148_1011,r_0148_0017__of).
+arc(r_0148_0016__reflection,r_0148_0015__direct,attrib2).
+arc(r_0148_0020__and,r_0148_0018__how,quality1).
+arc(r_0148_0020__and,r_0148_0019__healthy,conj1).
+arc(r_0148_0020__and,r_0148_0021__sustainable,conj2).
+arc(r_0148_0023__environment,r_0148_0010__our,genv).
+arc(r_0148_0024__is,r_0148_0020__and,prd2).
+arc(r_0148_0024__is,r_0148_0023__environment,arg0).
 
 </pre>
 <br>
@@ -284,40 +284,40 @@ arc(r__is_0148_0024,r__environment_0148_0023,arg0).
 fof(id_148_A_Hedgehog,axiom,
     ? [STATEX3,EVENTX9,SPEAKER_AND_HEARERX17,OPERATORX2,EVENTX20,EVENTX19,OPERATORX11,EVENTX18,ENTITYX4,ENTITYX7,ENTITYX16,ENTITYX6,ATTRIBX8,ATTRIBX12,ATTRIBX14,ATTRIBX15,ATTRIBX5,QUALITYX13] :
       ( STATEX3 = EVENTX19
-      &amp; isA(EVENTX19,r__is_0148_0013)
+      &amp; isA(EVENTX19,r_0148_0013__is)
       &amp; arg0(EVENTX19) = ENTITYX4
       &amp; arg1(EVENTX19) = ENTITYX7
       &amp; EVENTX9 = OPERATORX11
       &amp; isA(OPERATORX11,question_0148_1011)
       &amp; scope(OPERATORX11) = EVENTX18
-      &amp; isA(EVENTX18,r__is_0148_0024)
+      &amp; isA(EVENTX18,r_0148_0024__is)
       &amp; prd2(EVENTX18) = ATTRIBX12
       &amp; arg0(EVENTX18) = ENTITYX16
-      &amp; isA(ENTITYX4,r__survival_0148_0008)
+      &amp; isA(ENTITYX4,r_0148_0008__survival)
       &amp; attrib2(ENTITYX4) = ATTRIBX5
-      &amp; r__of_0148_0009(ENTITYX4) = ENTITYX6
-      &amp; isA(ENTITYX6,r__hedgehog_0148_0011_r__population_0148_0012)
-      &amp; genv(ENTITYX6) = r__our_0148_0010
-      &amp; isA(ENTITYX7,r__reflection_0148_0016)
+      &amp; r_0148_0009__of(ENTITYX4) = ENTITYX6
+      &amp; isA(ENTITYX6,r_0148_0011__hedgehog_population)
+      &amp; genv(ENTITYX6) = r_0148_0010__our
+      &amp; isA(ENTITYX7,r_0148_0016__reflection)
       &amp; attrib2(ENTITYX7) = ATTRIBX8
-      &amp; r__of_0148_0017(ENTITYX7) = EVENTX9
-      &amp; isA(ENTITYX16,r__environment_0148_0023)
+      &amp; r_0148_0017__of(ENTITYX7) = EVENTX9
+      &amp; isA(ENTITYX16,r_0148_0023__environment)
       &amp; genv(ENTITYX16) = SPEAKER_AND_HEARERX17
-      &amp; SPEAKER_AND_HEARERX17 = r__our_0148_0010
-      &amp; isA(r__Minister_0148_0003,r__Minister_0148_0003)
-      &amp; isA(ATTRIBX5,r__successful_0148_0007)
-      &amp; isA(ATTRIBX8,r__direct_0148_0015)
-      &amp; isA(ATTRIBX12,r__and_0148_0020)
+      &amp; SPEAKER_AND_HEARERX17 = r_0148_0010__our
+      &amp; isA(r_0148_0003__Minister,r_0148_0003__Minister)
+      &amp; isA(ATTRIBX5,r_0148_0007__successful)
+      &amp; isA(ATTRIBX8,r_0148_0015__direct)
+      &amp; isA(ATTRIBX12,r_0148_0020__and)
       &amp; quality1(ATTRIBX12) = QUALITYX13
       &amp; conj1(ATTRIBX12) = ATTRIBX14
       &amp; conj2(ATTRIBX12) = ATTRIBX15
-      &amp; isA(ATTRIBX14,r__healthy_0148_0019)
-      &amp; isA(ATTRIBX15,r__sustainable_0148_0021)
-      &amp; isA(QUALITYX13,r__how_0148_0018)
+      &amp; isA(ATTRIBX14,r_0148_0019__healthy)
+      &amp; isA(ATTRIBX15,r_0148_0021__sustainable)
+      &amp; isA(QUALITYX13,r_0148_0018__how)
       &amp; isA(OPERATORX2,question_0148_1002)
       &amp; scope(OPERATORX2) = EVENTX20
-      &amp; isA(EVENTX20,r__Does_0148_0001_r__agree_0148_0004)
-      &amp; arg0(EVENTX20) = r__Minister_0148_0003
+      &amp; isA(EVENTX20,r_0148_0001__Does_agree)
+      &amp; arg0(EVENTX20) = r_0148_0003__Minister
       &amp; arg1(EVENTX20) = STATEX3 ) ).
 
 

@@ -108,8 +108,8 @@ One barrel explosion can trigger another , so it can sometimes set off a chain r
 <!-- 0037_0008_cnt -->
 <g id="node6" class="node">
 <title>0037_0008_cnt</title>
-<ellipse fill="none" stroke="black" cx="330.15" cy="-714" rx="46.29" ry="18"/>
-<text text-anchor="middle" x="330.15" y="-710.3" font-family="fixed" font-size="14.00">so_[cnt]</text>
+<ellipse fill="none" stroke="black" cx="330.15" cy="-714" rx="42.49" ry="18"/>
+<text text-anchor="middle" x="330.15" y="-710.3" font-family="fixed" font-size="14.00">so[cnt]</text>
 </g>
 <!-- 0037_0008_cnt&#45;&gt;0037_0004 -->
 <g id="edge5" class="edge">
@@ -127,7 +127,7 @@ One barrel explosion can trigger another , so it can sometimes set off a chain r
 <!-- 0037_0008_cnt&#45;&gt;0037_0010 -->
 <g id="edge6" class="edge">
 <title>0037_0008_cnt&#45;&gt;0037_0010</title>
-<path fill="none" stroke="black" d="M345.14,-696.77C350.15,-691.02 355.61,-684.4 360.15,-678 365.72,-670.15 371.18,-661.17 375.84,-653"/>
+<path fill="none" stroke="black" d="M344.83,-697.12C349.92,-691.3 355.51,-684.53 360.15,-678 365.72,-670.15 371.18,-661.17 375.84,-653"/>
 <polygon fill="black" stroke="black" points="378.92,-654.67 380.72,-644.22 372.8,-651.26 378.92,-654.67"/>
 <text text-anchor="middle" x="410.65" y="-666.8" font-family="fixed" font-size="14.00">[restriction]</text>
 </g>
@@ -285,25 +285,25 @@ One barrel explosion can trigger another , so it can sometimes set off a chain r
 </svg>
 <br>
 <pre>
-arc(imperative_0037_1015,r__be_0037_0025,scope).
-arc(r__can_0037_0004,r__trigger_0037_0005,scope).
-arc(r__trigger_0037_0005,imperative_0037_1015,prn8).
-arc(r__trigger_0037_0005,r__One_0037_0001_r__barrel_0037_0002_r__explosion_0037_0003,arg0).
-arc(r__trigger_0037_0005,r__another_0037_0006,arg1).
-arc(r__so_0037_0008_cnt,r__can_0037_0004,scope).
-arc(r__so_0037_0008_cnt,r__can_0037_0010,restriction).
-arc(r__can_0037_0010,r__set_0037_0012_r__off_0037_0013,scope).
-arc(r__set_0037_0012_r__off_0037_0013,r__One_0037_0001_r__barrel_0037_0002_r__explosion_0037_0003,arg0).
-arc(r__set_0037_0012_r__off_0037_0013,r__sometimes_0037_0011,tmp3).
-arc(r__set_0037_0012_r__off_0037_0013,r__chain_0037_0015_r__reaction_0037_0016,arg1).
-arc(r__takes_0037_0018_r__down_0037_0019,r__chain_0037_0015_r__reaction_0037_0016,arg0).
-arc(r__takes_0037_0018_r__down_0037_0019,r__crowd_0037_0022,arg1).
-arc(r__crowd_0037_0022,r__whole_0037_0021,attrib2).
-arc(r__be_0037_0025,r__careful_0037_0026,prd2).
-arc(r__careful_0037_0026,r__n_apos_t_0037_0029,emb2).
-arc(r__does_0037_0028_r__include_0037_0030,r__that_0037_0027,arg0).
-arc(r__does_0037_0028_r__include_0037_0030,r__you_0037_0031,arg1).
-arc(r__n_apos_t_0037_0029,r__does_0037_0028_r__include_0037_0030,scope).
+arc(imperative_0037_1015,r_0037_0025__be,scope).
+arc(r_0037_0004__can,r_0037_0005__trigger,scope).
+arc(r_0037_0005__trigger,imperative_0037_1015,prn8).
+arc(r_0037_0005__trigger,r_0037_0001__One_barrel_explosion,arg0).
+arc(r_0037_0005__trigger,r_0037_0006__another,arg1).
+arc(r_0037_0008__so_cnt,r_0037_0004__can,scope).
+arc(r_0037_0008__so_cnt,r_0037_0010__can,restriction).
+arc(r_0037_0010__can,r_0037_0012__set_off,scope).
+arc(r_0037_0012__set_off,r_0037_0001__One_barrel_explosion,arg0).
+arc(r_0037_0012__set_off,r_0037_0011__sometimes,tmp3).
+arc(r_0037_0012__set_off,r_0037_0015__chain_reaction,arg1).
+arc(r_0037_0018__takes_down,r_0037_0015__chain_reaction,arg0).
+arc(r_0037_0018__takes_down,r_0037_0022__crowd,arg1).
+arc(r_0037_0022__crowd,r_0037_0021__whole,attrib2).
+arc(r_0037_0025__be,r_0037_0026__careful,prd2).
+arc(r_0037_0026__careful,r_0037_0029__n_apos_t,emb2).
+arc(r_0037_0028__does_include,r_0037_0027__that,arg0).
+arc(r_0037_0028__does_include,r_0037_0031__you,arg1).
+arc(r_0037_0029__n_apos_t,r_0037_0028__does_include,scope).
 
 </pre>
 <br>
@@ -313,39 +313,39 @@ fof(id_37_A_Freedoom,axiom,
       ( EVENTX11 = OPERATORX15
       &amp; isA(OPERATORX15,imperative_0037_1015)
       &amp; scope(OPERATORX15) = EVENTX21
-      &amp; isA(EVENTX21,r__be_0037_0025)
+      &amp; isA(EVENTX21,r_0037_0025__be)
       &amp; prd2(EVENTX21) = ATTRIBX16
       &amp; STATEX17 = OPERATORX19
-      &amp; isA(OPERATORX19,r__n_apos_t_0037_0029)
+      &amp; isA(OPERATORX19,r_0037_0029__n_apos_t)
       &amp; scope(OPERATORX19) = EVENTX20
-      &amp; isA(EVENTX20,r__does_0037_0028_r__include_0037_0030)
+      &amp; isA(EVENTX20,r_0037_0028__does_include)
       &amp; arg0(EVENTX20) = CROWDX18
-      &amp; arg1(EVENTX20) = r__you_0037_0031
-      &amp; isA(EXPLODING_BARRELX1,r__One_0037_0001_r__barrel_0037_0002_r__explosion_0037_0003)
-      &amp; isA(CROWDX18,r__that_0037_0027)
+      &amp; arg1(EVENTX20) = r_0037_0031__you
+      &amp; isA(EXPLODING_BARRELX1,r_0037_0001__One_barrel_explosion)
+      &amp; isA(CROWDX18,r_0037_0027__that)
       &amp; EXPLODING_BARRELX3 = EXPLODING_BARRELX1
-      &amp; isA(EVENTX8,r__takes_0037_0018_r__down_0037_0019)
+      &amp; isA(EVENTX8,r_0037_0018__takes_down)
       &amp; arg0(EVENTX8) = ENTITYX5
       &amp; arg1(EVENTX8) = CROWDX6
-      &amp; isA(ENTITYX5,r__chain_0037_0015_r__reaction_0037_0016)
-      &amp; isA(CROWDX6,r__crowd_0037_0022)
+      &amp; isA(ENTITYX5,r_0037_0015__chain_reaction)
+      &amp; isA(CROWDX6,r_0037_0022__crowd)
       &amp; attrib2(CROWDX6) = ATTRIBX7
-      &amp; isA(QUALITYX4,r__sometimes_0037_0011)
-      &amp; isA(ATTRIBX16,r__careful_0037_0026)
+      &amp; isA(QUALITYX4,r_0037_0011__sometimes)
+      &amp; isA(ATTRIBX16,r_0037_0026__careful)
       &amp; emb2(ATTRIBX16) = STATEX17
-      &amp; isA(ATTRIBX7,r__whole_0037_0021)
-      &amp; isA(CONNX2,r__so_0037_0008_cnt)
+      &amp; isA(ATTRIBX7,r_0037_0021__whole)
+      &amp; isA(CONNX2,r_0037_0008__so_cnt)
       &amp; scope(CONNX2) = OPERATORX22
-      &amp; isA(OPERATORX22,r__can_0037_0004)
+      &amp; isA(OPERATORX22,r_0037_0004__can)
       &amp; scope(OPERATORX22) = EVENTX23
-      &amp; isA(EVENTX23,r__trigger_0037_0005)
+      &amp; isA(EVENTX23,r_0037_0005__trigger)
       &amp; arg0(EVENTX23) = EXPLODING_BARRELX1
-      &amp; arg1(EVENTX23) = r__another_0037_0006
+      &amp; arg1(EVENTX23) = r_0037_0006__another
       &amp; prn8(EVENTX23) = EVENTX11
       &amp; restriction(CONNX2) = OPERATORX9
-      &amp; isA(OPERATORX9,r__can_0037_0010)
+      &amp; isA(OPERATORX9,r_0037_0010__can)
       &amp; scope(OPERATORX9) = EVENTX10
-      &amp; isA(EVENTX10,r__set_0037_0012_r__off_0037_0013)
+      &amp; isA(EVENTX10,r_0037_0012__set_off)
       &amp; arg0(EVENTX10) = EXPLODING_BARRELX3
       &amp; tmp3(EVENTX10) = QUALITYX4
       &amp; arg1(EVENTX10) = ENTITYX5 ) ).

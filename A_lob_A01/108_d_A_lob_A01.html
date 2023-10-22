@@ -103,7 +103,7 @@ Then Mr Brown swung his attack directly to the unsmiling Mr Powell .
 <title>0116_0004&#45;&gt;0116_0011_0116_0012</title>
 <path fill="none" stroke="black" d="M284.1,-268.38C305.66,-261.83 334.34,-252.62 359.15,-243 383.23,-233.66 409.6,-221.73 430.48,-211.87"/>
 <polygon fill="black" stroke="black" points="432.13,-214.96 439.66,-207.51 429.12,-208.64 432.13,-214.96"/>
-<text text-anchor="middle" x="418.15" y="-231.8" font-family="fixed" font-size="14.00">to_[dir]</text>
+<text text-anchor="middle" x="414.65" y="-231.8" font-family="fixed" font-size="14.00">to[dir]</text>
 </g>
 <!-- 0116_0005 -->
 <g id="node7" class="node">
@@ -148,35 +148,35 @@ Then Mr Brown swung his attack directly to the unsmiling Mr Powell .
 </svg>
 <br>
 <pre>
-arc(r__swung_0116_0004,r__Then_0116_0001,tmp1).
-arc(r__swung_0116_0004,r__Mr_0116_0002_r__Brown_0116_0003,arg0).
-arc(r__swung_0116_0004,r__attack_0116_0006,arg1).
-arc(r__swung_0116_0004,r__directly_0116_0007,mnr5).
-arc(r__swung_0116_0004,r__Mr_0116_0011_r__Powell_0116_0012,r__to_0116_0008_dir).
-arc(r__attack_0116_0006,r__his_0116_0005,genv).
-arc(r__Mr_0116_0011_r__Powell_0116_0012,z_0116_1006,prn1).
-arc(z_0116_1006,r__unsmiling_0116_0010,attrib2).
+arc(r_0116_0004__swung,r_0116_0001__Then,tmp1).
+arc(r_0116_0004__swung,r_0116_0002__Mr_Brown,arg0).
+arc(r_0116_0004__swung,r_0116_0006__attack,arg1).
+arc(r_0116_0004__swung,r_0116_0007__directly,mnr5).
+arc(r_0116_0004__swung,r_0116_0011__Mr_Powell,r_0116_0008__to_dir).
+arc(r_0116_0006__attack,r_0116_0005__his,genv).
+arc(r_0116_0011__Mr_Powell,z_0116_1006,prn1).
+arc(z_0116_1006,r_0116_0010__unsmiling,attrib2).
 
 </pre>
 <br>
 <pre>
 fof(id_116_A_lob_A01,axiom,
     ? [EVENTX7,QUALITYX1,QUALITYX3,ENTITYX2,ENTITYX4,ATTRIBX5] :
-      ( isA(QUALITYX1,r__Then_0116_0001)
-      &amp; isA(QUALITYX3,r__directly_0116_0007)
-      &amp; isA(ENTITYX2,r__attack_0116_0006)
-      &amp; genv(ENTITYX2) = r__his_0116_0005
+      ( isA(QUALITYX1,r_0116_0001__Then)
+      &amp; isA(QUALITYX3,r_0116_0007__directly)
+      &amp; isA(ENTITYX2,r_0116_0006__attack)
+      &amp; genv(ENTITYX2) = r_0116_0005__his
       &amp; isA(ENTITYX4,z_0116_1006)
       &amp; attrib2(ENTITYX4) = ATTRIBX5
-      &amp; isA(r__Mr_0116_0011_r__Powell_0116_0012,r__Mr_0116_0011_r__Powell_0116_0012)
-      &amp; prn1(r__Mr_0116_0011_r__Powell_0116_0012) = ENTITYX4
-      &amp; isA(ATTRIBX5,r__unsmiling_0116_0010)
-      &amp; isA(EVENTX7,r__swung_0116_0004)
+      &amp; isA(r_0116_0011__Mr_Powell,r_0116_0011__Mr_Powell)
+      &amp; prn1(r_0116_0011__Mr_Powell) = ENTITYX4
+      &amp; isA(ATTRIBX5,r_0116_0010__unsmiling)
+      &amp; isA(EVENTX7,r_0116_0004__swung)
       &amp; tmp1(EVENTX7) = QUALITYX1
-      &amp; arg0(EVENTX7) = r__Mr_0116_0002_r__Brown_0116_0003
+      &amp; arg0(EVENTX7) = r_0116_0002__Mr_Brown
       &amp; arg1(EVENTX7) = ENTITYX2
       &amp; mnr5(EVENTX7) = QUALITYX3
-      &amp; r__to_0116_0008_dir(EVENTX7) = r__Mr_0116_0011_r__Powell_0116_0012 ) ).
+      &amp; r_0116_0008__to_dir(EVENTX7) = r_0116_0011__Mr_Powell ) ).
 
 
 </pre>

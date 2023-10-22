@@ -161,7 +161,7 @@ For relevant reactor conditions ( 500 &lt;deg&gt; C , C = 1-10 p.p.m ) the finit
 <title>0024_0026&#45;&gt;0024_0003_0024_0004</title>
 <path fill="none" stroke="black" d="M227.21,-350.19C216.01,-337.67 199.74,-319.47 186.57,-304.74"/>
 <polygon fill="black" stroke="black" points="188.89,-302.09 179.62,-296.97 183.68,-306.76 188.89,-302.09"/>
-<text text-anchor="middle" x="236.45" y="-318.8" font-family="fixed" font-size="14.00">For_[rst]</text>
+<text text-anchor="middle" x="233.45" y="-318.8" font-family="fixed" font-size="14.00">For[rst]</text>
 </g>
 <!-- 0024_0027 -->
 <g id="node12" class="node">
@@ -194,24 +194,24 @@ For relevant reactor conditions ( 500 &lt;deg&gt; C , C = 1-10 p.p.m ) the finit
 <title>0024_0027&#45;&gt;0024_0029_0024_0030</title>
 <path fill="none" stroke="black" d="M338.23,-263.05C346.07,-257.1 354.91,-250.01 362.45,-243 371.22,-234.84 380.18,-225.19 387.78,-216.55"/>
 <polygon fill="black" stroke="black" points="390.44,-218.83 394.33,-208.98 385.14,-214.25 390.44,-218.83"/>
-<text text-anchor="middle" x="402.45" y="-231.8" font-family="fixed" font-size="14.00">in_[loc]</text>
+<text text-anchor="middle" x="398.95" y="-231.8" font-family="fixed" font-size="14.00">in[loc]</text>
 </g>
 </g>
 </svg>
 <br>
 <pre>
-arc(r__reactor_0024_0003_r__conditions_0024_0004,r__relevant_0024_0002,attrib1).
-arc(r__reactor_0024_0003_r__conditions_0024_0004,r__500_0024_0006_r___deg__0024_0007,prn5).
-arc(r__500_0024_0006_r___deg__0024_0007,r__1_10_0024_0012_r__p.p.m_0024_0013,prn5).
-arc(r__change_0024_0017,r__finite_0024_0016,attrib2).
-arc(r__change_0024_0017,r__voltage_0024_0019_r__de_0024_0020,r__of_0024_0018).
-arc(r__accompanying_0024_0021,r__voltage_0024_0019_r__de_0024_0020,arg0).
-arc(r__accompanying_0024_0021,r__concentration_0024_0023_r__changes_0024_0024_r__dc_0024_0025,arg1).
-arc(r__concentration_0024_0023_r__changes_0024_0024_r__dc_0024_0025,r__finite_0024_0022,attrib1).
-arc(r__is_0024_0026,r__reactor_0024_0003_r__conditions_0024_0004,r__For_0024_0001_rst).
-arc(r__is_0024_0026,r__plotted_0024_0027,catenative).
-arc(r__plotted_0024_0027,r__change_0024_0017,arg1).
-arc(r__plotted_0024_0027,r__fig_0024_0029_r__3_0024_0030,r__in_0024_0028_loc).
+arc(r_0024_0003__reactor_conditions,r_0024_0002__relevant,attrib1).
+arc(r_0024_0003__reactor_conditions,r_0024_0006__500__deg_,prn5).
+arc(r_0024_0006__500__deg_,r_0024_0012__1_10_p.p.m,prn5).
+arc(r_0024_0017__change,r_0024_0016__finite,attrib2).
+arc(r_0024_0017__change,r_0024_0019__voltage_de,r_0024_0018__of).
+arc(r_0024_0021__accompanying,r_0024_0019__voltage_de,arg0).
+arc(r_0024_0021__accompanying,r_0024_0023__concentration_changes_dc,arg1).
+arc(r_0024_0023__concentration_changes_dc,r_0024_0022__finite,attrib1).
+arc(r_0024_0026__is,r_0024_0003__reactor_conditions,r_0024_0001__For_rst).
+arc(r_0024_0026__is,r_0024_0027__plotted,catenative).
+arc(r_0024_0027__plotted,r_0024_0017__change,arg1).
+arc(r_0024_0027__plotted,r_0024_0029__fig_3,r_0024_0028__in_loc).
 
 </pre>
 <br>
@@ -219,30 +219,30 @@ arc(r__plotted_0024_0027,r__fig_0024_0029_r__3_0024_0030,r__in_0024_0028_loc).
 fof(id_24_A_lob_J01,axiom,
     ? [CATENATIVEX11,EVENTX15,EVENTX14,EVENTX10,ENTITYX1,ENTITYX5,ENTITYX13,ENTITYX7,ENTITYX8,ENTITYX3,ENTITYX4,ATTRIBX6,ATTRIBX9,ATTRIBX2] :
       ( CATENATIVEX11 = EVENTX14
-      &amp; isA(EVENTX14,r__plotted_0024_0027)
+      &amp; isA(EVENTX14,r_0024_0027__plotted)
       &amp; arg1(EVENTX14) = ENTITYX5
-      &amp; r__in_0024_0028_loc(EVENTX14) = ENTITYX13
-      &amp; isA(ENTITYX1,r__reactor_0024_0003_r__conditions_0024_0004)
+      &amp; r_0024_0028__in_loc(EVENTX14) = ENTITYX13
+      &amp; isA(ENTITYX1,r_0024_0003__reactor_conditions)
       &amp; attrib1(ENTITYX1) = ATTRIBX2
       &amp; prn5(ENTITYX1) = ENTITYX3
-      &amp; isA(ENTITYX3,r__500_0024_0006_r___deg__0024_0007)
+      &amp; isA(ENTITYX3,r_0024_0006__500__deg_)
       &amp; prn5(ENTITYX3) = ENTITYX4
-      &amp; isA(ENTITYX4,r__1_10_0024_0012_r__p.p.m_0024_0013)
-      &amp; isA(ENTITYX5,r__change_0024_0017)
+      &amp; isA(ENTITYX4,r_0024_0012__1_10_p.p.m)
+      &amp; isA(ENTITYX5,r_0024_0017__change)
       &amp; attrib2(ENTITYX5) = ATTRIBX6
-      &amp; r__of_0024_0018(ENTITYX5) = ENTITYX7
-      &amp; isA(EVENTX10,r__accompanying_0024_0021)
+      &amp; r_0024_0018__of(ENTITYX5) = ENTITYX7
+      &amp; isA(EVENTX10,r_0024_0021__accompanying)
       &amp; arg0(EVENTX10) = ENTITYX7
       &amp; arg1(EVENTX10) = ENTITYX8
-      &amp; isA(ENTITYX7,r__voltage_0024_0019_r__de_0024_0020)
-      &amp; isA(ENTITYX8,r__concentration_0024_0023_r__changes_0024_0024_r__dc_0024_0025)
+      &amp; isA(ENTITYX7,r_0024_0019__voltage_de)
+      &amp; isA(ENTITYX8,r_0024_0023__concentration_changes_dc)
       &amp; attrib1(ENTITYX8) = ATTRIBX9
-      &amp; isA(ENTITYX13,r__fig_0024_0029_r__3_0024_0030)
-      &amp; isA(ATTRIBX2,r__relevant_0024_0002)
-      &amp; isA(ATTRIBX6,r__finite_0024_0016)
-      &amp; isA(ATTRIBX9,r__finite_0024_0022)
-      &amp; isA(EVENTX15,r__is_0024_0026)
-      &amp; r__For_0024_0001_rst(EVENTX15) = ENTITYX1
+      &amp; isA(ENTITYX13,r_0024_0029__fig_3)
+      &amp; isA(ATTRIBX2,r_0024_0002__relevant)
+      &amp; isA(ATTRIBX6,r_0024_0016__finite)
+      &amp; isA(ATTRIBX9,r_0024_0022__finite)
+      &amp; isA(EVENTX15,r_0024_0026__is)
+      &amp; r_0024_0001__For_rst(EVENTX15) = ENTITYX1
       &amp; catenative(EVENTX15) = CATENATIVEX11 ) ).
 
 

@@ -280,26 +280,26 @@ Now your English teacher has asked you to write a composition , giving your opin
 </svg>
 <br>
 <pre>
-arc(cnt_0020_1007,r__write_0020_0009,scope).
-arc(cnt_0020_1007,r__giving_0020_0013,restriction).
-arc(question_0020_1014,r__is_0020_0022,scope).
-arc(r__English_0020_0003_r__teacher_0020_0004,r__your_0020_0002,genv).
-arc(r__has_0020_0005,r__Now_0020_0001,tmp1).
-arc(r__has_0020_0005,r__asked_0020_0006,catenative).
-arc(r__asked_0020_0006,cnt_0020_1007,arg1).
-arc(r__asked_0020_0006,r__your_0020_0002,arg2).
-arc(r__asked_0020_0006,r__English_0020_0003_r__teacher_0020_0004,arg0).
-arc(r__write_0020_0009,r__your_0020_0002,arg0).
-arc(r__write_0020_0009,r__composition_0020_0011,arg1).
-arc(r__giving_0020_0013,r__your_0020_0002,arg0).
-arc(r__giving_0020_0013,r__opinions_0020_0015,arg1).
-arc(r__opinions_0020_0015,r__your_0020_0002,genv).
-arc(r__opinions_0020_0015,r__question_0020_0018,r__on_0020_0016).
-arc(r__question_0020_0018,question_0020_1014,prn4).
-arc(r__important_0020_0021,r__How_0020_0020,quality1).
-arc(r__is_0020_0022,r__important_0020_0021,prd2).
-arc(r__is_0020_0022,r__family_0020_0023_r__life_0020_0024,arg0).
-arc(r__is_0020_0022,r__today_0020_0025,tmp).
+arc(cnt_0020_1007,r_0020_0009__write,scope).
+arc(cnt_0020_1007,r_0020_0013__giving,restriction).
+arc(question_0020_1014,r_0020_0022__is,scope).
+arc(r_0020_0003__English_teacher,r_0020_0002__your,genv).
+arc(r_0020_0005__has,r_0020_0001__Now,tmp1).
+arc(r_0020_0005__has,r_0020_0006__asked,catenative).
+arc(r_0020_0006__asked,cnt_0020_1007,arg1).
+arc(r_0020_0006__asked,r_0020_0002__your,arg2).
+arc(r_0020_0006__asked,r_0020_0003__English_teacher,arg0).
+arc(r_0020_0009__write,r_0020_0002__your,arg0).
+arc(r_0020_0009__write,r_0020_0011__composition,arg1).
+arc(r_0020_0013__giving,r_0020_0002__your,arg0).
+arc(r_0020_0013__giving,r_0020_0015__opinions,arg1).
+arc(r_0020_0015__opinions,r_0020_0002__your,genv).
+arc(r_0020_0015__opinions,r_0020_0018__question,r_0020_0016__on).
+arc(r_0020_0018__question,question_0020_1014,prn4).
+arc(r_0020_0021__important,r_0020_0020__How,quality1).
+arc(r_0020_0022__is,r_0020_0021__important,prd2).
+arc(r_0020_0022__is,r_0020_0023__family_life,arg0).
+arc(r_0020_0022__is,r_0020_0025__today,tmp).
 
 </pre>
 <br>
@@ -307,45 +307,45 @@ arc(r__is_0020_0022,r__today_0020_0025,tmp).
 fof(id_20_A_fce_0101_2000_06,axiom,
     ? [CATENATIVEX3,STATEX5,EVENTX12,HEARERX4,HEARERX10,EVENTX23,EVENTX22,CONNX8,EVENTX20,OPERATORX14,EVENTX19,EVENTX21,QUALITYX1,QUALITYX16,ENTITYX2,ENTITYX6,ENTITYX9,ENTITYX11,ENTITYX17,ENTITYX18,ATTRIBX15] :
       ( CATENATIVEX3 = EVENTX22
-      &amp; isA(EVENTX22,r__asked_0020_0006)
+      &amp; isA(EVENTX22,r_0020_0006__asked)
       &amp; arg0(EVENTX22) = ENTITYX2
       &amp; arg2(EVENTX22) = HEARERX4
       &amp; arg1(EVENTX22) = STATEX5
       &amp; STATEX5 = CONNX8
       &amp; isA(CONNX8,cnt_0020_1007)
       &amp; scope(CONNX8) = EVENTX21
-      &amp; isA(EVENTX21,r__write_0020_0009)
+      &amp; isA(EVENTX21,r_0020_0009__write)
       &amp; arg0(EVENTX21) = HEARERX4
       &amp; arg1(EVENTX21) = ENTITYX6
       &amp; restriction(CONNX8) = EVENTX20
-      &amp; isA(EVENTX20,r__giving_0020_0013)
+      &amp; isA(EVENTX20,r_0020_0013__giving)
       &amp; arg0(EVENTX20) = HEARERX4
       &amp; arg1(EVENTX20) = ENTITYX9
       &amp; EVENTX12 = OPERATORX14
       &amp; isA(OPERATORX14,question_0020_1014)
       &amp; scope(OPERATORX14) = EVENTX19
-      &amp; isA(EVENTX19,r__is_0020_0022)
+      &amp; isA(EVENTX19,r_0020_0022__is)
       &amp; prd2(EVENTX19) = ATTRIBX15
       &amp; arg0(EVENTX19) = ENTITYX17
       &amp; tmp(EVENTX19) = ENTITYX18
-      &amp; isA(QUALITYX1,r__Now_0020_0001)
-      &amp; isA(QUALITYX16,r__How_0020_0020)
-      &amp; isA(ENTITYX2,r__English_0020_0003_r__teacher_0020_0004)
-      &amp; genv(ENTITYX2) = r__your_0020_0002
-      &amp; HEARERX4 = r__your_0020_0002
-      &amp; isA(ENTITYX6,r__composition_0020_0011)
-      &amp; isA(ENTITYX9,r__opinions_0020_0015)
+      &amp; isA(QUALITYX1,r_0020_0001__Now)
+      &amp; isA(QUALITYX16,r_0020_0020__How)
+      &amp; isA(ENTITYX2,r_0020_0003__English_teacher)
+      &amp; genv(ENTITYX2) = r_0020_0002__your
+      &amp; HEARERX4 = r_0020_0002__your
+      &amp; isA(ENTITYX6,r_0020_0011__composition)
+      &amp; isA(ENTITYX9,r_0020_0015__opinions)
       &amp; genv(ENTITYX9) = HEARERX10
-      &amp; r__on_0020_0016(ENTITYX9) = ENTITYX11
+      &amp; r_0020_0016__on(ENTITYX9) = ENTITYX11
       &amp; ( HEARERX10 = HEARERX4
-        | HEARERX10 = r__your_0020_0002 )
-      &amp; isA(ENTITYX11,r__question_0020_0018)
+        | HEARERX10 = r_0020_0002__your )
+      &amp; isA(ENTITYX11,r_0020_0018__question)
       &amp; prn4(ENTITYX11) = EVENTX12
-      &amp; isA(ENTITYX17,r__family_0020_0023_r__life_0020_0024)
-      &amp; isA(ENTITYX18,r__today_0020_0025)
-      &amp; isA(ATTRIBX15,r__important_0020_0021)
+      &amp; isA(ENTITYX17,r_0020_0023__family_life)
+      &amp; isA(ENTITYX18,r_0020_0025__today)
+      &amp; isA(ATTRIBX15,r_0020_0021__important)
       &amp; quality1(ATTRIBX15) = QUALITYX16
-      &amp; isA(EVENTX23,r__has_0020_0005)
+      &amp; isA(EVENTX23,r_0020_0005__has)
       &amp; tmp1(EVENTX23) = QUALITYX1
       &amp; catenative(EVENTX23) = CATENATIVEX3 ) ).
 

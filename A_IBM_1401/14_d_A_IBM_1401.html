@@ -77,7 +77,7 @@ What 1401 Programming Systems Mean To Management :
 <title>0019_0005&#45;&gt;0019_0007</title>
 <path fill="none" stroke="black" d="M257.19,-93.75C295.45,-79.61 364.97,-53.92 411.68,-36.65"/>
 <polygon fill="black" stroke="black" points="413.11,-39.85 421.28,-33.1 410.69,-33.29 413.11,-39.85"/>
-<text text-anchor="middle" x="383.95" y="-57.8" font-family="fixed" font-size="14.00">To_[rst]</text>
+<text text-anchor="middle" x="380.45" y="-57.8" font-family="fixed" font-size="14.00">To[rst]</text>
 </g>
 <!-- question_0019_1002 -->
 <g id="node5" class="node">
@@ -96,24 +96,24 @@ What 1401 Programming Systems Mean To Management :
 </svg>
 <br>
 <pre>
-arc(question_0019_1002,r__Mean_0019_0005,scope).
-arc(r__Mean_0019_0005,r__What_0019_0001,arg1).
-arc(r__Mean_0019_0005,r__1401_0019_0002_r__Programming_0019_0003_r__Systems_0019_0004,arg0).
-arc(r__Mean_0019_0005,r__Management_0019_0007,r__To_0019_0006_rst).
+arc(question_0019_1002,r_0019_0005__Mean,scope).
+arc(r_0019_0005__Mean,r_0019_0001__What,arg1).
+arc(r_0019_0005__Mean,r_0019_0002__1401_Programming_Systems,arg0).
+arc(r_0019_0005__Mean,r_0019_0007__Management,r_0019_0006__To_rst).
 
 </pre>
 <br>
 <pre>
 fof(id_19_A_IBM_1401,axiom,
     ? [OPERATORX2,EVENTX5,ENTITYX3,ENTITYX4] :
-      ( isA(ENTITYX3,r__What_0019_0001)
-      &amp; isA(ENTITYX4,r__1401_0019_0002_r__Programming_0019_0003_r__Systems_0019_0004)
+      ( isA(ENTITYX3,r_0019_0001__What)
+      &amp; isA(ENTITYX4,r_0019_0002__1401_Programming_Systems)
       &amp; isA(OPERATORX2,question_0019_1002)
       &amp; scope(OPERATORX2) = EVENTX5
-      &amp; isA(EVENTX5,r__Mean_0019_0005)
+      &amp; isA(EVENTX5,r_0019_0005__Mean)
       &amp; arg1(EVENTX5) = ENTITYX3
       &amp; arg0(EVENTX5) = ENTITYX4
-      &amp; r__To_0019_0006_rst(EVENTX5) = r__Management_0019_0007 ) ).
+      &amp; r_0019_0006__To_rst(EVENTX5) = r_0019_0007__Management ) ).
 
 
 </pre>

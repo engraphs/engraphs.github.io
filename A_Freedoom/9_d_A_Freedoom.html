@@ -194,47 +194,47 @@ You can also find new weapons and some rarer power-ups which give you special ab
 </svg>
 <br>
 <pre>
-arc(r__can_0015_0002,r__find_0015_0004,scope).
-arc(r__also_0015_0003,r__can_0015_0002,scope).
-arc(r__find_0015_0004,r__You_0015_0001,arg0).
-arc(r__find_0015_0004,r__and_0015_0007,arg1).
-arc(r__weapons_0015_0006,r__new_0015_0005,attrib1).
-arc(r__and_0015_0007,r__weapons_0015_0006,conj1).
-arc(r__and_0015_0007,r__power_ups_0015_0010,conj2).
-arc(r__power_ups_0015_0010,r__rarer_0015_0009,attrib2).
-arc(r__give_0015_0012,r__You_0015_0001,arg2).
-arc(r__give_0015_0012,r__power_ups_0015_0010,arg0).
-arc(r__give_0015_0012,r__abilities_0015_0015,arg1).
-arc(r__abilities_0015_0015,r__special_0015_0014,attrib1).
+arc(r_0015_0002__can,r_0015_0004__find,scope).
+arc(r_0015_0003__also,r_0015_0002__can,scope).
+arc(r_0015_0004__find,r_0015_0001__You,arg0).
+arc(r_0015_0004__find,r_0015_0007__and,arg1).
+arc(r_0015_0006__weapons,r_0015_0005__new,attrib1).
+arc(r_0015_0007__and,r_0015_0006__weapons,conj1).
+arc(r_0015_0007__and,r_0015_0010__power_ups,conj2).
+arc(r_0015_0010__power_ups,r_0015_0009__rarer,attrib2).
+arc(r_0015_0012__give,r_0015_0001__You,arg2).
+arc(r_0015_0012__give,r_0015_0010__power_ups,arg0).
+arc(r_0015_0012__give,r_0015_0015__abilities,arg1).
+arc(r_0015_0015__abilities,r_0015_0014__special,attrib1).
 
 </pre>
 <br>
 <pre>
 fof(id_15_A_Freedoom,axiom,
     ? [HEARERX7,OPERATORX1,OPERATORX11,EVENTX12,EVENTX10,ENTITYX2,ENTITYX3,ENTITYX5,ENTITYX8,ATTRIBX6,ATTRIBX9,ATTRIBX4] :
-      ( isA(ENTITYX2,r__and_0015_0007)
+      ( isA(ENTITYX2,r_0015_0007__and)
       &amp; conj1(ENTITYX2) = ENTITYX3
       &amp; conj2(ENTITYX2) = ENTITYX5
-      &amp; isA(ENTITYX3,r__weapons_0015_0006)
+      &amp; isA(ENTITYX3,r_0015_0006__weapons)
       &amp; attrib1(ENTITYX3) = ATTRIBX4
-      &amp; isA(EVENTX10,r__give_0015_0012)
+      &amp; isA(EVENTX10,r_0015_0012__give)
       &amp; arg0(EVENTX10) = ENTITYX5
       &amp; arg2(EVENTX10) = HEARERX7
       &amp; arg1(EVENTX10) = ENTITYX8
-      &amp; isA(ENTITYX5,r__power_ups_0015_0010)
+      &amp; isA(ENTITYX5,r_0015_0010__power_ups)
       &amp; attrib2(ENTITYX5) = ATTRIBX6
-      &amp; HEARERX7 = r__You_0015_0001
-      &amp; isA(ENTITYX8,r__abilities_0015_0015)
+      &amp; HEARERX7 = r_0015_0001__You
+      &amp; isA(ENTITYX8,r_0015_0015__abilities)
       &amp; attrib1(ENTITYX8) = ATTRIBX9
-      &amp; isA(ATTRIBX4,r__new_0015_0005)
-      &amp; isA(ATTRIBX6,r__rarer_0015_0009)
-      &amp; isA(ATTRIBX9,r__special_0015_0014)
-      &amp; isA(OPERATORX1,r__also_0015_0003)
+      &amp; isA(ATTRIBX4,r_0015_0005__new)
+      &amp; isA(ATTRIBX6,r_0015_0009__rarer)
+      &amp; isA(ATTRIBX9,r_0015_0014__special)
+      &amp; isA(OPERATORX1,r_0015_0003__also)
       &amp; scope(OPERATORX1) = OPERATORX11
-      &amp; isA(OPERATORX11,r__can_0015_0002)
+      &amp; isA(OPERATORX11,r_0015_0002__can)
       &amp; scope(OPERATORX11) = EVENTX12
-      &amp; isA(EVENTX12,r__find_0015_0004)
-      &amp; arg0(EVENTX12) = r__You_0015_0001
+      &amp; isA(EVENTX12,r_0015_0004__find)
+      &amp; arg0(EVENTX12) = r_0015_0001__You
       &amp; arg1(EVENTX12) = ENTITYX2 ) ).
 
 

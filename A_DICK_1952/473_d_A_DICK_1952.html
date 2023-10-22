@@ -29,11 +29,11 @@
 Automatic relays flew into action .
 <br>
 <br>
-<svg width="207pt" height="218pt"
- viewBox="0.00 0.00 206.54 218.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="200pt" height="218pt"
+ viewBox="0.00 0.00 199.54 218.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 214)">
 <title>%3</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-214 202.54,-214 202.54,4 -4,4"/>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-214 195.54,-214 195.54,4 -4,4"/>
 <!-- 0611_0001 -->
 <g id="node1" class="node">
 <title>0611_0001</title>
@@ -77,28 +77,28 @@ Automatic relays flew into action .
 <title>0611_0003&#45;&gt;0611_0005</title>
 <path fill="none" stroke="black" d="M118.26,-174.61C123.98,-162.46 131.88,-145.66 138.44,-131.73"/>
 <polygon fill="black" stroke="black" points="141.63,-133.17 142.72,-122.63 135.29,-130.19 141.63,-133.17"/>
-<text text-anchor="middle" x="165.54" y="-144.8" font-family="fixed" font-size="14.00">into_[cnt]</text>
+<text text-anchor="middle" x="162.04" y="-144.8" font-family="fixed" font-size="14.00">into[cnt]</text>
 </g>
 </g>
 </svg>
 <br>
 <pre>
-arc(r__relays_0611_0002,r__Automatic_0611_0001,attrib1).
-arc(r__flew_0611_0003,r__relays_0611_0002,arg0).
-arc(r__flew_0611_0003,r__action_0611_0005,r__into_0611_0004_cnt).
+arc(r_0611_0002__relays,r_0611_0001__Automatic,attrib1).
+arc(r_0611_0003__flew,r_0611_0002__relays,arg0).
+arc(r_0611_0003__flew,r_0611_0005__action,r_0611_0004__into_cnt).
 
 </pre>
 <br>
 <pre>
 fof(id_611_A_DICK_1952,axiom,
     ? [EVENTX4,ENTITYX1,ENTITYX3,ATTRIBX2] :
-      ( isA(ENTITYX1,r__relays_0611_0002)
+      ( isA(ENTITYX1,r_0611_0002__relays)
       &amp; attrib1(ENTITYX1) = ATTRIBX2
-      &amp; isA(ENTITYX3,r__action_0611_0005)
-      &amp; isA(ATTRIBX2,r__Automatic_0611_0001)
-      &amp; isA(EVENTX4,r__flew_0611_0003)
+      &amp; isA(ENTITYX3,r_0611_0005__action)
+      &amp; isA(ATTRIBX2,r_0611_0001__Automatic)
+      &amp; isA(EVENTX4,r_0611_0003__flew)
       &amp; arg0(EVENTX4) = ENTITYX1
-      &amp; r__into_0611_0004_cnt(EVENTX4) = ENTITYX3 ) ).
+      &amp; r_0611_0004__into_cnt(EVENTX4) = ENTITYX3 ) ).
 
 
 </pre>

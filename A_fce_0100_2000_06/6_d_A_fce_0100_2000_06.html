@@ -29,11 +29,11 @@
 All accommodation and travel costs are paid for , including transport to and from the airport .
 <br>
 <br>
-<svg width="428pt" height="479pt"
- viewBox="0.00 0.00 427.54 479.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="425pt" height="479pt"
+ viewBox="0.00 0.00 424.54 479.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 475)">
 <title>%3</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-475 423.54,-475 423.54,4 -4,4"/>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-475 420.54,-475 420.54,4 -4,4"/>
 <!-- 0008_0002 -->
 <g id="node1" class="node">
 <title>0008_0002</title>
@@ -109,7 +109,7 @@ All accommodation and travel costs are paid for , including transport to and fro
 <title>0008_0006&#45;&gt;0008_0011</title>
 <path fill="none" stroke="black" d="M249.35,-358.36C265.95,-352.92 287.43,-343.83 302.54,-330 309.69,-323.46 315.45,-314.66 319.84,-306.27"/>
 <polygon fill="black" stroke="black" points="323.07,-307.64 324.23,-297.11 316.75,-304.62 323.07,-307.64"/>
-<text text-anchor="middle" x="366.54" y="-318.8" font-family="fixed" font-size="14.00">including_[abs]</text>
+<text text-anchor="middle" x="363.54" y="-318.8" font-family="fixed" font-size="14.00">including[abs]</text>
 </g>
 <!-- 0008_0007_0008_0008&#45;&gt;0008_0005 -->
 <g id="edge6" class="edge">
@@ -155,15 +155,15 @@ All accommodation and travel costs are paid for , including transport to and fro
 </svg>
 <br>
 <pre>
-arc(quantificational_r__All_0008_0001,r__costs_0008_0005,restriction).
-arc(quantificational_r__All_0008_0001,r__are_0008_0006,scope).
-arc(r__and_0008_0003,r__accommodation_0008_0002,conj1).
-arc(r__and_0008_0003,r__travel_0008_0004,conj2).
-arc(r__costs_0008_0005,r__and_0008_0003,nlyr2).
-arc(r__are_0008_0006,r__paid_0008_0007_r__for_0008_0008,catenative).
-arc(r__are_0008_0006,r__transport_0008_0011,r__including_0008_0010_abs).
-arc(r__paid_0008_0007_r__for_0008_0008,r__costs_0008_0005,arg1).
-arc(r__transport_0008_0011,r__airport_0008_0014,r__to_and_from_0008_0012).
+arc(r_0008_0001__quantificational__All,r_0008_0005__costs,restriction).
+arc(r_0008_0001__quantificational__All,r_0008_0006__are,scope).
+arc(r_0008_0003__and,r_0008_0002__accommodation,conj1).
+arc(r_0008_0003__and,r_0008_0004__travel,conj2).
+arc(r_0008_0005__costs,r_0008_0003__and,nlyr2).
+arc(r_0008_0006__are,r_0008_0007__paid_for,catenative).
+arc(r_0008_0006__are,r_0008_0011__transport,r_0008_0010__including_abs).
+arc(r_0008_0007__paid_for,r_0008_0005__costs,arg1).
+arc(r_0008_0011__transport,r_0008_0014__airport,r_0008_0012__to_and_from).
 
 </pre>
 <br>
@@ -171,24 +171,24 @@ arc(r__transport_0008_0011,r__airport_0008_0014,r__to_and_from_0008_0012).
 fof(id_8_A_fce_0100_2000_06,axiom,
     ? [CATENATIVEX8,QUANTX2,EVENTX11,EVENTX10,ENTITYX1,ENTITYX6,ENTITYX7,ENTITYX3,ENTITYX4,ENTITYX5] :
       ( CATENATIVEX8 = EVENTX10
-      &amp; isA(EVENTX10,r__paid_0008_0007_r__for_0008_0008)
+      &amp; isA(EVENTX10,r_0008_0007__paid_for)
       &amp; arg1(EVENTX10) = ENTITYX1
-      &amp; isA(ENTITYX3,r__and_0008_0003)
+      &amp; isA(ENTITYX3,r_0008_0003__and)
       &amp; conj1(ENTITYX3) = ENTITYX4
       &amp; conj2(ENTITYX3) = ENTITYX5
-      &amp; isA(ENTITYX4,r__accommodation_0008_0002)
-      &amp; isA(ENTITYX5,r__travel_0008_0004)
-      &amp; isA(ENTITYX6,r__transport_0008_0011)
-      &amp; r__to_and_from_0008_0012(ENTITYX6) = ENTITYX7
-      &amp; isA(ENTITYX7,r__airport_0008_0014)
-      &amp; isA(QUANTX2,quantificational_r__All_0008_0001)
+      &amp; isA(ENTITYX4,r_0008_0002__accommodation)
+      &amp; isA(ENTITYX5,r_0008_0004__travel)
+      &amp; isA(ENTITYX6,r_0008_0011__transport)
+      &amp; r_0008_0012__to_and_from(ENTITYX6) = ENTITYX7
+      &amp; isA(ENTITYX7,r_0008_0014__airport)
+      &amp; isA(QUANTX2,r_0008_0001__quantificational__All)
       &amp; restriction(QUANTX2) = ENTITYX1
-      &amp; isA(ENTITYX1,r__costs_0008_0005)
+      &amp; isA(ENTITYX1,r_0008_0005__costs)
       &amp; nlyr2(ENTITYX1) = ENTITYX3
       &amp; scope(QUANTX2) = EVENTX11
-      &amp; isA(EVENTX11,r__are_0008_0006)
+      &amp; isA(EVENTX11,r_0008_0006__are)
       &amp; catenative(EVENTX11) = CATENATIVEX8
-      &amp; r__including_0008_0010_abs(EVENTX11) = ENTITYX6 ) ).
+      &amp; r_0008_0010__including_abs(EVENTX11) = ENTITYX6 ) ).
 
 
 </pre>

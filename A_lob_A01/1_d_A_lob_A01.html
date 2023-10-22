@@ -83,9 +83,9 @@
 </svg>
 <br>
 <pre>
-arc(imperative_0001_1002,r__Stop_0001_0002,scope).
-arc(r__Stop_0001_0002,r__electing_0001_0003,catenative).
-arc(r__electing_0001_0003,r__life_0001_0004_r__peers_0001_0005,arg1).
+arc(imperative_0001_1002,r_0001_0002__Stop,scope).
+arc(r_0001_0002__Stop,r_0001_0003__electing,catenative).
+arc(r_0001_0003__electing,r_0001_0004__life_peers,arg1).
 
 </pre>
 <br>
@@ -93,12 +93,12 @@ arc(r__electing_0001_0003,r__life_0001_0004_r__peers_0001_0005,arg1).
 fof(id_1_A_lob_A01,axiom,
     ? [CATENATIVEX4,OPERATORX2,EVENTX7,EVENTX6,ENTITYX5] :
       ( CATENATIVEX4 = EVENTX6
-      &amp; isA(EVENTX6,r__electing_0001_0003)
+      &amp; isA(EVENTX6,r_0001_0003__electing)
       &amp; arg1(EVENTX6) = ENTITYX5
-      &amp; isA(ENTITYX5,r__life_0001_0004_r__peers_0001_0005)
+      &amp; isA(ENTITYX5,r_0001_0004__life_peers)
       &amp; isA(OPERATORX2,imperative_0001_1002)
       &amp; scope(OPERATORX2) = EVENTX7
-      &amp; isA(EVENTX7,r__Stop_0001_0002)
+      &amp; isA(EVENTX7,r_0001_0002__Stop)
       &amp; catenative(EVENTX7) = CATENATIVEX4 ) ).
 
 

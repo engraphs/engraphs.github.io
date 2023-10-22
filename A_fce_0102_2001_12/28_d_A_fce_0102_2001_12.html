@@ -188,18 +188,18 @@ Did anything in the book or short story you have read disappoint you ?
 </svg>
 <br>
 <pre>
-arc(quantificational_r__anything_0029_0002,r__Did_0029_0001_r__disappoint_0029_0012,scope).
-arc(quantificational_r__anything_0029_0002,z_0029_1012,restriction).
-arc(question_0029_1002,quantificational_r__anything_0029_0002,scope).
-arc(r__Did_0029_0001_r__disappoint_0029_0012,r__you_0029_0009,arg1).
-arc(r__Did_0029_0001_r__disappoint_0029_0012,z_0029_1012,arg0).
-arc(r__or_0029_0006,r__book_0029_0005,conj1).
-arc(r__or_0029_0006,r__story_0029_0008,conj2).
-arc(r__story_0029_0008,r__short_0029_0007,attrib1).
-arc(r__have_0029_0010,r__read_0029_0011,catenative).
-arc(r__read_0029_0011,r__or_0029_0006,arg1).
-arc(r__read_0029_0011,r__you_0029_0009,arg0).
-arc(z_0029_1012,r__or_0029_0006,r__in_0029_0003).
+arc(question_0029_1002,r_0029_0002__quantificational__anything,scope).
+arc(r_0029_0001__Did_disappoint,r_0029_0009__you,arg1).
+arc(r_0029_0001__Did_disappoint,z_0029_1012,arg0).
+arc(r_0029_0002__quantificational__anything,r_0029_0001__Did_disappoint,scope).
+arc(r_0029_0002__quantificational__anything,z_0029_1012,restriction).
+arc(r_0029_0006__or,r_0029_0005__book,conj1).
+arc(r_0029_0006__or,r_0029_0008__story,conj2).
+arc(r_0029_0008__story,r_0029_0007__short,attrib1).
+arc(r_0029_0010__have,r_0029_0011__read,catenative).
+arc(r_0029_0011__read,r_0029_0006__or,arg1).
+arc(r_0029_0011__read,r_0029_0009__you,arg0).
+arc(z_0029_1012,r_0029_0006__or,r_0029_0003__in).
 
 </pre>
 <br>
@@ -207,27 +207,27 @@ arc(z_0029_1012,r__or_0029_0006,r__in_0029_0003).
 fof(id_29_A_fce_0102_2001_12,axiom,
     ? [CATENATIVEX6,HEARERX13,OPERATORX2,QUANTX4,EVENTX14,EVENTX8,EVENTX7,ENTITYX3,ENTITYX5,ENTITYX9,ENTITYX10,ATTRIBX11] :
       ( CATENATIVEX6 = EVENTX7
-      &amp; isA(EVENTX7,r__read_0029_0011)
-      &amp; arg0(EVENTX7) = r__you_0029_0009
+      &amp; isA(EVENTX7,r_0029_0011__read)
+      &amp; arg0(EVENTX7) = r_0029_0009__you
       &amp; arg1(EVENTX7) = ENTITYX5
-      &amp; isA(EVENTX8,r__have_0029_0010)
+      &amp; isA(EVENTX8,r_0029_0010__have)
       &amp; catenative(EVENTX8) = CATENATIVEX6
-      &amp; isA(ENTITYX5,r__or_0029_0006)
+      &amp; isA(ENTITYX5,r_0029_0006__or)
       &amp; conj1(ENTITYX5) = ENTITYX9
       &amp; conj2(ENTITYX5) = ENTITYX10
-      &amp; isA(ENTITYX9,r__book_0029_0005)
-      &amp; isA(ENTITYX10,r__story_0029_0008)
+      &amp; isA(ENTITYX9,r_0029_0005__book)
+      &amp; isA(ENTITYX10,r_0029_0008__story)
       &amp; attrib1(ENTITYX10) = ATTRIBX11
-      &amp; HEARERX13 = r__you_0029_0009
-      &amp; isA(ATTRIBX11,r__short_0029_0007)
+      &amp; HEARERX13 = r_0029_0009__you
+      &amp; isA(ATTRIBX11,r_0029_0007__short)
       &amp; isA(OPERATORX2,question_0029_1002)
       &amp; scope(OPERATORX2) = QUANTX4
-      &amp; isA(QUANTX4,quantificational_r__anything_0029_0002)
+      &amp; isA(QUANTX4,r_0029_0002__quantificational__anything)
       &amp; restriction(QUANTX4) = ENTITYX3
       &amp; isA(ENTITYX3,z_0029_1012)
-      &amp; r__in_0029_0003(ENTITYX3) = ENTITYX5
+      &amp; r_0029_0003__in(ENTITYX3) = ENTITYX5
       &amp; scope(QUANTX4) = EVENTX14
-      &amp; isA(EVENTX14,r__Did_0029_0001_r__disappoint_0029_0012)
+      &amp; isA(EVENTX14,r_0029_0001__Did_disappoint)
       &amp; arg0(EVENTX14) = ENTITYX3
       &amp; arg1(EVENTX14) = HEARERX13 ) ).
 

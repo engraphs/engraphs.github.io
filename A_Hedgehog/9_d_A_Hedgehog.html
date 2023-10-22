@@ -65,7 +65,7 @@ I leave it to you , Madam Deputy Speaker , to decide which of those traits I sha
 <title>0009_0002&#45;&gt;0009_0005</title>
 <path fill="none" stroke="black" d="M183,-434.8C183,-423.16 183,-407.55 183,-394.24"/>
 <polygon fill="black" stroke="black" points="186.5,-394.18 183,-384.18 179.5,-394.18 186.5,-394.18"/>
-<text text-anchor="middle" x="207.5" y="-405.8" font-family="fixed" font-size="14.00">to_[clr]</text>
+<text text-anchor="middle" x="204" y="-405.8" font-family="fixed" font-size="14.00">to[clr]</text>
 </g>
 <!-- 0009_0012 -->
 <g id="node4" class="node">
@@ -163,16 +163,16 @@ I leave it to you , Madam Deputy Speaker , to decide which of those traits I sha
 </svg>
 <br>
 <pre>
-arc(question_0009_1004,r__share_0009_0018,scope).
-arc(r__leave_0009_0002,r__I_0009_0001,arg0).
-arc(r__leave_0009_0002,r__you_0009_0005,r__to_0009_0004_clr).
-arc(r__leave_0009_0002,r__decide_0009_0012,arg1).
-arc(r__you_0009_0005,r__Madam_0009_0007_r__Deputy_0009_0008_r__Speaker_0009_0009,prn3).
-arc(r__decide_0009_0012,question_0009_1004,arg1).
-arc(r__decide_0009_0012,r__I_0009_0001,arg0).
-arc(r__which_0009_0013,r__traits_0009_0016,r__of_0009_0014).
-arc(r__share_0009_0018,r__I_0009_0001,arg0).
-arc(r__share_0009_0018,r__which_0009_0013,arg1).
+arc(question_0009_1004,r_0009_0018__share,scope).
+arc(r_0009_0002__leave,r_0009_0001__I,arg0).
+arc(r_0009_0002__leave,r_0009_0005__you,r_0009_0004__to_clr).
+arc(r_0009_0002__leave,r_0009_0012__decide,arg1).
+arc(r_0009_0005__you,r_0009_0007__Madam_Deputy_Speaker,prn3).
+arc(r_0009_0012__decide,question_0009_1004,arg1).
+arc(r_0009_0012__decide,r_0009_0001__I,arg0).
+arc(r_0009_0013__which,r_0009_0016__traits,r_0009_0014__of).
+arc(r_0009_0018__share,r_0009_0001__I,arg0).
+arc(r_0009_0018__share,r_0009_0013__which,arg1).
 
 </pre>
 <br>
@@ -180,25 +180,25 @@ arc(r__share_0009_0018,r__which_0009_0013,arg1).
 fof(id_9_A_Hedgehog,axiom,
     ? [STATEX1,STATEX2,SPEAKERX7,EVENTX10,EVENTX9,OPERATORX4,EVENTX8,ENTITYX5,ENTITYX6] :
       ( STATEX1 = EVENTX9
-      &amp; isA(EVENTX9,r__decide_0009_0012)
-      &amp; arg0(EVENTX9) = r__I_0009_0001
+      &amp; isA(EVENTX9,r_0009_0012__decide)
+      &amp; arg0(EVENTX9) = r_0009_0001__I
       &amp; arg1(EVENTX9) = STATEX2
       &amp; STATEX2 = OPERATORX4
       &amp; isA(OPERATORX4,question_0009_1004)
       &amp; scope(OPERATORX4) = EVENTX8
-      &amp; isA(EVENTX8,r__share_0009_0018)
+      &amp; isA(EVENTX8,r_0009_0018__share)
       &amp; arg1(EVENTX8) = ENTITYX5
       &amp; arg0(EVENTX8) = SPEAKERX7
-      &amp; isA(ENTITYX5,r__which_0009_0013)
-      &amp; r__of_0009_0014(ENTITYX5) = ENTITYX6
-      &amp; isA(ENTITYX6,r__traits_0009_0016)
-      &amp; SPEAKERX7 = r__I_0009_0001
-      &amp; isA(r__you_0009_0005,r__you_0009_0005)
-      &amp; prn3(r__you_0009_0005) = r__Madam_0009_0007_r__Deputy_0009_0008_r__Speaker_0009_0009
-      &amp; isA(EVENTX10,r__leave_0009_0002)
-      &amp; arg0(EVENTX10) = r__I_0009_0001
+      &amp; isA(ENTITYX5,r_0009_0013__which)
+      &amp; r_0009_0014__of(ENTITYX5) = ENTITYX6
+      &amp; isA(ENTITYX6,r_0009_0016__traits)
+      &amp; SPEAKERX7 = r_0009_0001__I
+      &amp; isA(r_0009_0005__you,r_0009_0005__you)
+      &amp; prn3(r_0009_0005__you) = r_0009_0007__Madam_Deputy_Speaker
+      &amp; isA(EVENTX10,r_0009_0002__leave)
+      &amp; arg0(EVENTX10) = r_0009_0001__I
       &amp; arg1(EVENTX10) = STATEX1
-      &amp; r__to_0009_0004_clr(EVENTX10) = r__you_0009_0005 ) ).
+      &amp; r_0009_0004__to_clr(EVENTX10) = r_0009_0005__you ) ).
 
 
 </pre>

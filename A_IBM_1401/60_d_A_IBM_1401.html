@@ -83,20 +83,20 @@ Executive schools for management personnel .
 </svg>
 <br>
 <pre>
-arc(r__schools_0082_0002,r__Executive_0082_0001,attrib1).
-arc(r__schools_0082_0002,r__management_0082_0004_r__personnel_0082_0005,r__for_0082_0003).
-arc(z_0082_1006,r__schools_0082_0002,z_0082_1002).
+arc(r_0082_0002__schools,r_0082_0001__Executive,attrib1).
+arc(r_0082_0002__schools,r_0082_0004__management_personnel,r_0082_0003__for).
+arc(z_0082_1006,r_0082_0002__schools,z_0082_1002).
 
 </pre>
 <br>
 <pre>
 fof(id_82_A_IBM_1401,axiom,
     ? [EVENTX7,ENTITYX3,ENTITYX5,ATTRIBX4] :
-      ( isA(ENTITYX3,r__schools_0082_0002)
+      ( isA(ENTITYX3,r_0082_0002__schools)
       &amp; attrib1(ENTITYX3) = ATTRIBX4
-      &amp; r__for_0082_0003(ENTITYX3) = ENTITYX5
-      &amp; isA(ENTITYX5,r__management_0082_0004_r__personnel_0082_0005)
-      &amp; isA(ATTRIBX4,r__Executive_0082_0001)
+      &amp; r_0082_0003__for(ENTITYX3) = ENTITYX5
+      &amp; isA(ENTITYX5,r_0082_0004__management_personnel)
+      &amp; isA(ATTRIBX4,r_0082_0001__Executive)
       &amp; isA(EVENTX7,z_0082_1006)
       &amp; z_0082_1002(EVENTX7) = ENTITYX3 ) ).
 

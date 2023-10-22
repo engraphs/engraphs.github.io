@@ -197,45 +197,45 @@ Accurate shooting from your spaceship will destroy the limpet guns .
 </svg>
 <br>
 <pre>
-arc(r__Limpet_0018_0002_r__Guns_0018_0003,r__Automatic_0018_0001,attrib1).
-arc(r__are_0019_0003,r__Limpet_0018_0002_r__Guns_0018_0003,arg0).
-arc(r__are_0019_0003,r__defence_0019_0007_r__system_0019_0008,prd2).
-arc(r__defence_0019_0007_r__system_0019_0008,r__planets_0019_0005,genv).
-arc(r__shooting_0020_0002,r__Accurate_0020_0001,attrib1).
-arc(r__shooting_0020_0002,r__spaceship_0020_0005,r__from_0020_0003).
-arc(r__spaceship_0020_0005,r__your_0020_0004,genv).
-arc(r__will_0020_0006,r__destroy_0020_0007,scope).
-arc(r__destroy_0020_0007,r__Limpet_0018_0002_r__Guns_0018_0003,arg1).
-arc(r__destroy_0020_0007,r__shooting_0020_0002,arg0).
-arc(z_0018_1007,r__Limpet_0018_0002_r__Guns_0018_0003,z_0018_1004).
+arc(r_0018_0002__Limpet_Guns,r_0018_0001__Automatic,attrib1).
+arc(r_0019_0003__are,r_0018_0002__Limpet_Guns,arg0).
+arc(r_0019_0003__are,r_0019_0007__defence_system,prd2).
+arc(r_0019_0007__defence_system,r_0019_0005__planets,genv).
+arc(r_0020_0002__shooting,r_0020_0001__Accurate,attrib1).
+arc(r_0020_0002__shooting,r_0020_0005__spaceship,r_0020_0003__from).
+arc(r_0020_0005__spaceship,r_0020_0004__your,genv).
+arc(r_0020_0006__will,r_0020_0007__destroy,scope).
+arc(r_0020_0007__destroy,r_0018_0002__Limpet_Guns,arg1).
+arc(r_0020_0007__destroy,r_0020_0002__shooting,arg0).
+arc(z_0018_1007,r_0018_0002__Limpet_Guns,z_0018_1004).
 
 </pre>
 <br>
 <pre>
 fof(id_18_A_THRUST__19_A_THRUST__20_A_THRUST,axiom,
     ? [LIMPETX9,LIMPETX16,OPERATORX17,EVENTX18,EVENTX12,EVENTX8,ENTITYX13,ENTITYX15,ENTITYX10,PLANETX11,LIMPETX5,ATTRIBX14,ATTRIBX6] :
-      ( isA(LIMPETX5,r__Limpet_0018_0002_r__Guns_0018_0003)
+      ( isA(LIMPETX5,r_0018_0002__Limpet_Guns)
       &amp; attrib1(LIMPETX5) = ATTRIBX6
       &amp; LIMPETX9 = LIMPETX5
-      &amp; isA(ENTITYX10,r__defence_0019_0007_r__system_0019_0008)
+      &amp; isA(ENTITYX10,r_0019_0007__defence_system)
       &amp; genv(ENTITYX10) = PLANETX11
-      &amp; isA(PLANETX11,r__planets_0019_0005)
-      &amp; isA(ENTITYX13,r__shooting_0020_0002)
+      &amp; isA(PLANETX11,r_0019_0005__planets)
+      &amp; isA(ENTITYX13,r_0020_0002__shooting)
       &amp; attrib1(ENTITYX13) = ATTRIBX14
-      &amp; r__from_0020_0003(ENTITYX13) = ENTITYX15
-      &amp; isA(ENTITYX15,r__spaceship_0020_0005)
-      &amp; genv(ENTITYX15) = r__your_0020_0004
+      &amp; r_0020_0003__from(ENTITYX13) = ENTITYX15
+      &amp; isA(ENTITYX15,r_0020_0005__spaceship)
+      &amp; genv(ENTITYX15) = r_0020_0004__your
       &amp; LIMPETX16 = LIMPETX5
-      &amp; isA(ATTRIBX6,r__Automatic_0018_0001)
-      &amp; isA(ATTRIBX14,r__Accurate_0020_0001)
+      &amp; isA(ATTRIBX6,r_0018_0001__Automatic)
+      &amp; isA(ATTRIBX14,r_0020_0001__Accurate)
       &amp; isA(EVENTX8,z_0018_1007)
       &amp; z_0018_1004(EVENTX8) = LIMPETX5
-      &amp; isA(EVENTX12,r__are_0019_0003)
+      &amp; isA(EVENTX12,r_0019_0003__are)
       &amp; arg0(EVENTX12) = LIMPETX9
       &amp; prd2(EVENTX12) = ENTITYX10
-      &amp; isA(OPERATORX17,r__will_0020_0006)
+      &amp; isA(OPERATORX17,r_0020_0006__will)
       &amp; scope(OPERATORX17) = EVENTX18
-      &amp; isA(EVENTX18,r__destroy_0020_0007)
+      &amp; isA(EVENTX18,r_0020_0007__destroy)
       &amp; arg0(EVENTX18) = ENTITYX13
       &amp; arg1(EVENTX18) = LIMPETX16 ) ).
 

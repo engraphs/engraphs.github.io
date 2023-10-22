@@ -109,24 +109,24 @@ Links with Alresford are never far away .
 </svg>
 <br>
 <pre>
-arc(r__Links_0101_0001,r__Alresford_0101_0003,r__with_0101_0002).
-arc(r__are_0101_0004,r__Links_0101_0001,arg0).
-arc(r__are_0101_0004,r__never_0101_0005,tmp3).
-arc(r__are_0101_0004,r__away_0101_0007,loc4).
-arc(r__away_0101_0007,r__far_0101_0006,quality1).
+arc(r_0101_0001__Links,r_0101_0003__Alresford,r_0101_0002__with).
+arc(r_0101_0004__are,r_0101_0001__Links,arg0).
+arc(r_0101_0004__are,r_0101_0005__never,tmp3).
+arc(r_0101_0004__are,r_0101_0007__away,loc4).
+arc(r_0101_0007__away,r_0101_0006__far,quality1).
 
 </pre>
 <br>
 <pre>
 fof(id_101_A_Alresford,axiom,
     ? [EVENTX5,ENTITYX1,QUALITYX2,QUALITYX3,QUALITYX4] :
-      ( isA(ENTITYX1,r__Links_0101_0001)
-      &amp; r__with_0101_0002(ENTITYX1) = r__Alresford_0101_0003
-      &amp; isA(QUALITYX2,r__never_0101_0005)
-      &amp; isA(QUALITYX3,r__away_0101_0007)
+      ( isA(ENTITYX1,r_0101_0001__Links)
+      &amp; r_0101_0002__with(ENTITYX1) = r_0101_0003__Alresford
+      &amp; isA(QUALITYX2,r_0101_0005__never)
+      &amp; isA(QUALITYX3,r_0101_0007__away)
       &amp; quality1(QUALITYX3) = QUALITYX4
-      &amp; isA(QUALITYX4,r__far_0101_0006)
-      &amp; isA(EVENTX5,r__are_0101_0004)
+      &amp; isA(QUALITYX4,r_0101_0006__far)
+      &amp; isA(EVENTX5,r_0101_0004__are)
       &amp; arg0(EVENTX5) = ENTITYX1
       &amp; tmp3(EVENTX5) = QUALITYX2
       &amp; loc4(EVENTX5) = QUALITYX3 ) ).

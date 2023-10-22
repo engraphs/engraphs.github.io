@@ -155,36 +155,36 @@ Ghana 's strong man is not here to face the storm .
 </svg>
 <br>
 <pre>
-arc(cnt_0030_1004,r__not_0030_0006,scope).
-arc(cnt_0030_1004,r__face_0030_0009,restriction).
-arc(r__man_0030_0004,r__Ghana_0030_0001,genv).
-arc(r__man_0030_0004,r__strong_0030_0003,attrib2).
-arc(r__is_0030_0005,r__man_0030_0004,arg0).
-arc(r__is_0030_0005,r__here_0030_0007,loc4).
-arc(r__not_0030_0006,r__is_0030_0005,scope).
-arc(r__face_0030_0009,r__man_0030_0004,arg0).
-arc(r__face_0030_0009,r__storm_0030_0011,arg1).
+arc(cnt_0030_1004,r_0030_0006__not,scope).
+arc(cnt_0030_1004,r_0030_0009__face,restriction).
+arc(r_0030_0004__man,r_0030_0001__Ghana,genv).
+arc(r_0030_0004__man,r_0030_0003__strong,attrib2).
+arc(r_0030_0005__is,r_0030_0004__man,arg0).
+arc(r_0030_0005__is,r_0030_0007__here,loc4).
+arc(r_0030_0006__not,r_0030_0005__is,scope).
+arc(r_0030_0009__face,r_0030_0004__man,arg0).
+arc(r_0030_0009__face,r_0030_0011__storm,arg1).
 
 </pre>
 <br>
 <pre>
 fof(id_30_A_lob_A02,axiom,
     ? [CONNX5,EVENTX7,OPERATORX8,EVENTX9,ENTITYX1,ENTITYX6,ATTRIBX2,QUALITYX3] :
-      ( isA(ENTITYX1,r__man_0030_0004)
-      &amp; genv(ENTITYX1) = r__Ghana_0030_0001
+      ( isA(ENTITYX1,r_0030_0004__man)
+      &amp; genv(ENTITYX1) = r_0030_0001__Ghana
       &amp; attrib2(ENTITYX1) = ATTRIBX2
-      &amp; isA(ENTITYX6,r__storm_0030_0011)
-      &amp; isA(ATTRIBX2,r__strong_0030_0003)
-      &amp; isA(QUALITYX3,r__here_0030_0007)
+      &amp; isA(ENTITYX6,r_0030_0011__storm)
+      &amp; isA(ATTRIBX2,r_0030_0003__strong)
+      &amp; isA(QUALITYX3,r_0030_0007__here)
       &amp; isA(CONNX5,cnt_0030_1004)
       &amp; scope(CONNX5) = OPERATORX8
-      &amp; isA(OPERATORX8,r__not_0030_0006)
+      &amp; isA(OPERATORX8,r_0030_0006__not)
       &amp; scope(OPERATORX8) = EVENTX9
-      &amp; isA(EVENTX9,r__is_0030_0005)
+      &amp; isA(EVENTX9,r_0030_0005__is)
       &amp; arg0(EVENTX9) = ENTITYX1
       &amp; loc4(EVENTX9) = QUALITYX3
       &amp; restriction(CONNX5) = EVENTX7
-      &amp; isA(EVENTX7,r__face_0030_0009)
+      &amp; isA(EVENTX7,r_0030_0009__face)
       &amp; arg0(EVENTX7) = ENTITYX1
       &amp; arg1(EVENTX7) = ENTITYX6 ) ).
 

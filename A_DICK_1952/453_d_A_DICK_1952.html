@@ -161,38 +161,38 @@ Did you see the one of the great winged creature , without a head or arms ?
 </svg>
 <br>
 <pre>
-arc(question_0587_1002,r__Did_0587_0001_r__see_0587_0003,scope).
-arc(r__Did_0587_0001_r__see_0587_0003,r__you_0587_0002,arg0).
-arc(r__Did_0587_0001_r__see_0587_0003,r__one_0587_0005,arg1).
-arc(r__one_0587_0005,r__creature_0587_0010,r__of_0587_0006).
-arc(r__one_0587_0005,r__or_0587_0015,r__without_0587_0012).
-arc(r__creature_0587_0010,r__great_0587_0008,attrib2).
-arc(r__creature_0587_0010,r__winged_0587_0009,attrib3).
-arc(r__or_0587_0015,r__head_0587_0014,conj1).
-arc(r__or_0587_0015,r__arms_0587_0016,conj2).
+arc(question_0587_1002,r_0587_0001__Did_see,scope).
+arc(r_0587_0001__Did_see,r_0587_0002__you,arg0).
+arc(r_0587_0001__Did_see,r_0587_0005__one,arg1).
+arc(r_0587_0005__one,r_0587_0010__creature,r_0587_0006__of).
+arc(r_0587_0005__one,r_0587_0015__or,r_0587_0012__without).
+arc(r_0587_0010__creature,r_0587_0008__great,attrib2).
+arc(r_0587_0010__creature,r_0587_0009__winged,attrib3).
+arc(r_0587_0015__or,r_0587_0014__head,conj1).
+arc(r_0587_0015__or,r_0587_0016__arms,conj2).
 
 </pre>
 <br>
 <pre>
 fof(id_587_A_DICK_1952,axiom,
     ? [OPERATORX2,EVENTX10,CREATUREX3,ENTITYX4,ENTITYX7,ENTITYX8,ENTITYX9,ATTRIBX5,ATTRIBX6] :
-      ( isA(CREATUREX3,r__one_0587_0005)
-      &amp; r__of_0587_0006(CREATUREX3) = ENTITYX4
-      &amp; r__without_0587_0012(CREATUREX3) = ENTITYX7
-      &amp; isA(ENTITYX4,r__creature_0587_0010)
+      ( isA(CREATUREX3,r_0587_0005__one)
+      &amp; r_0587_0006__of(CREATUREX3) = ENTITYX4
+      &amp; r_0587_0012__without(CREATUREX3) = ENTITYX7
+      &amp; isA(ENTITYX4,r_0587_0010__creature)
       &amp; attrib2(ENTITYX4) = ATTRIBX5
       &amp; attrib3(ENTITYX4) = ATTRIBX6
-      &amp; isA(ENTITYX7,r__or_0587_0015)
+      &amp; isA(ENTITYX7,r_0587_0015__or)
       &amp; conj1(ENTITYX7) = ENTITYX8
       &amp; conj2(ENTITYX7) = ENTITYX9
-      &amp; isA(ENTITYX8,r__head_0587_0014)
-      &amp; isA(ENTITYX9,r__arms_0587_0016)
-      &amp; isA(ATTRIBX5,r__great_0587_0008)
-      &amp; isA(ATTRIBX6,r__winged_0587_0009)
+      &amp; isA(ENTITYX8,r_0587_0014__head)
+      &amp; isA(ENTITYX9,r_0587_0016__arms)
+      &amp; isA(ATTRIBX5,r_0587_0008__great)
+      &amp; isA(ATTRIBX6,r_0587_0009__winged)
       &amp; isA(OPERATORX2,question_0587_1002)
       &amp; scope(OPERATORX2) = EVENTX10
-      &amp; isA(EVENTX10,r__Did_0587_0001_r__see_0587_0003)
-      &amp; arg0(EVENTX10) = r__you_0587_0002
+      &amp; isA(EVENTX10,r_0587_0001__Did_see)
+      &amp; arg0(EVENTX10) = r_0587_0002__you
       &amp; arg1(EVENTX10) = CREATUREX3 ) ).
 
 

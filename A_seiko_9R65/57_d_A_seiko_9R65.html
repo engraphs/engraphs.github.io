@@ -116,12 +116,12 @@ An overhaul is recommended every three to four years .
 </svg>
 <br>
 <pre>
-arc(quantificational_r__every_0074_0005,r__recommended_0074_0004,scope).
-arc(quantificational_r__every_0074_0005,r__three_0074_0006_r__years_0074_0009,restriction).
-arc(r__is_0074_0003,quantificational_r__every_0074_0005,catenative).
-arc(r__recommended_0074_0004,r__overhaul_0074_0002,arg1).
-arc(r__recommended_0074_0004,r__three_0074_0006_r__years_0074_0009,tmp).
-arc(r__three_0074_0006_r__years_0074_0009,r__four_0074_0008,r__to_0074_0007).
+arc(r_0074_0003__is,r_0074_0005__quantificational__every,catenative).
+arc(r_0074_0004__recommended,r_0074_0002__overhaul,arg1).
+arc(r_0074_0004__recommended,r_0074_0006__three_years,tmp).
+arc(r_0074_0005__quantificational__every,r_0074_0004__recommended,scope).
+arc(r_0074_0005__quantificational__every,r_0074_0006__three_years,restriction).
+arc(r_0074_0006__three_years,r_0074_0008__four,r_0074_0007__to).
 
 </pre>
 <br>
@@ -129,17 +129,17 @@ arc(r__three_0074_0006_r__years_0074_0009,r__four_0074_0008,r__to_0074_0007).
 fof(id_74_A_seiko_9R65,axiom,
     ? [CATENATIVEX2,EVENTX8,QUANTX5,EVENTX7,ENTITYX1,ENTITYX4,ENTITYX6] :
       ( CATENATIVEX2 = QUANTX5
-      &amp; isA(QUANTX5,quantificational_r__every_0074_0005)
+      &amp; isA(QUANTX5,r_0074_0005__quantificational__every)
       &amp; restriction(QUANTX5) = ENTITYX4
-      &amp; isA(ENTITYX4,r__three_0074_0006_r__years_0074_0009)
-      &amp; r__to_0074_0007(ENTITYX4) = ENTITYX6
+      &amp; isA(ENTITYX4,r_0074_0006__three_years)
+      &amp; r_0074_0007__to(ENTITYX4) = ENTITYX6
       &amp; scope(QUANTX5) = EVENTX7
-      &amp; isA(EVENTX7,r__recommended_0074_0004)
+      &amp; isA(EVENTX7,r_0074_0004__recommended)
       &amp; arg1(EVENTX7) = ENTITYX1
       &amp; tmp(EVENTX7) = ENTITYX4
-      &amp; isA(ENTITYX1,r__overhaul_0074_0002)
-      &amp; isA(ENTITYX6,r__four_0074_0008)
-      &amp; isA(EVENTX8,r__is_0074_0003)
+      &amp; isA(ENTITYX1,r_0074_0002__overhaul)
+      &amp; isA(ENTITYX6,r_0074_0008__four)
+      &amp; isA(EVENTX8,r_0074_0003__is)
       &amp; catenative(EVENTX8) = CATENATIVEX2 ) ).
 
 

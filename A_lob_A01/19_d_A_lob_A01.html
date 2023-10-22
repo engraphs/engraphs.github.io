@@ -90,10 +90,10 @@ All revealed .
 </svg>
 <br>
 <pre>
-arc(quantificational_r__All_0020_0001,z_0020_1003,restriction).
-arc(quantificational_r__All_0020_0001,z_0020_1006,scope).
-arc(r__revealed_0020_0002,z_0020_1003,arg0).
-arc(z_0020_1006,r__revealed_0020_0002,catenative).
+arc(r_0020_0001__quantificational__All,z_0020_1003,restriction).
+arc(r_0020_0001__quantificational__All,z_0020_1006,scope).
+arc(r_0020_0002__revealed,z_0020_1003,arg0).
+arc(z_0020_1006,r_0020_0002__revealed,catenative).
 
 </pre>
 <br>
@@ -101,9 +101,9 @@ arc(z_0020_1006,r__revealed_0020_0002,catenative).
 fof(id_20_A_lob_A01,axiom,
     ? [CATENATIVEX4,QUANTX2,EVENTX7,EVENTX5,ENTITYX1] :
       ( CATENATIVEX4 = EVENTX5
-      &amp; isA(EVENTX5,r__revealed_0020_0002)
+      &amp; isA(EVENTX5,r_0020_0002__revealed)
       &amp; arg0(EVENTX5) = ENTITYX1
-      &amp; isA(QUANTX2,quantificational_r__All_0020_0001)
+      &amp; isA(QUANTX2,r_0020_0001__quantificational__All)
       &amp; restriction(QUANTX2) = ENTITYX1
       &amp; isA(ENTITYX1,z_0020_1003)
       &amp; scope(QUANTX2) = EVENTX7

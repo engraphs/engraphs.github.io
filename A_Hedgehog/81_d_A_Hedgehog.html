@@ -202,19 +202,19 @@ I am sure , Madam Deputy Speaker , that you will want to know what you can do .
 </svg>
 <br>
 <pre>
-arc(question_0086_1006,r__can_0086_0017,scope).
-arc(r__am_0086_0002,r__I_0086_0001,arg0).
-arc(r__am_0086_0002,r__sure_0086_0003,prd2).
-arc(r__sure_0086_0003,r__Madam_0086_0005_r__Deputy_0086_0006_r__Speaker_0086_0007,prn3).
-arc(r__sure_0086_0003,r__will_0086_0011,emb5).
-arc(r__will_0086_0011,r__want_0086_0012,scope).
-arc(r__want_0086_0012,r__you_0086_0010,arg0).
-arc(r__want_0086_0012,r__know_0086_0014,arg1).
-arc(r__know_0086_0014,question_0086_1006,arg1).
-arc(r__know_0086_0014,r__you_0086_0010,arg0).
-arc(r__can_0086_0017,r__do_0086_0018,scope).
-arc(r__do_0086_0018,r__you_0086_0010,arg0).
-arc(r__do_0086_0018,r__what_0086_0015,arg1).
+arc(question_0086_1006,r_0086_0017__can,scope).
+arc(r_0086_0002__am,r_0086_0001__I,arg0).
+arc(r_0086_0002__am,r_0086_0003__sure,prd2).
+arc(r_0086_0003__sure,r_0086_0005__Madam_Deputy_Speaker,prn3).
+arc(r_0086_0003__sure,r_0086_0011__will,emb5).
+arc(r_0086_0011__will,r_0086_0012__want,scope).
+arc(r_0086_0012__want,r_0086_0010__you,arg0).
+arc(r_0086_0012__want,r_0086_0014__know,arg1).
+arc(r_0086_0014__know,question_0086_1006,arg1).
+arc(r_0086_0014__know,r_0086_0010__you,arg0).
+arc(r_0086_0017__can,r_0086_0018__do,scope).
+arc(r_0086_0018__do,r_0086_0010__you,arg0).
+arc(r_0086_0018__do,r_0086_0015__what,arg1).
 
 </pre>
 <br>
@@ -222,30 +222,30 @@ arc(r__do_0086_0018,r__what_0086_0015,arg1).
 fof(id_86_A_Hedgehog,axiom,
     ? [STATEX2,STATEX3,STATEX4,HEARERX8,EVENTX14,OPERATORX12,EVENTX13,EVENTX11,OPERATORX6,OPERATORX9,EVENTX10,ENTITYX7,ATTRIBX1] :
       ( STATEX2 = OPERATORX12
-      &amp; isA(OPERATORX12,r__will_0086_0011)
+      &amp; isA(OPERATORX12,r_0086_0011__will)
       &amp; scope(OPERATORX12) = EVENTX13
-      &amp; isA(EVENTX13,r__want_0086_0012)
-      &amp; arg0(EVENTX13) = r__you_0086_0010
+      &amp; isA(EVENTX13,r_0086_0012__want)
+      &amp; arg0(EVENTX13) = r_0086_0010__you
       &amp; arg1(EVENTX13) = STATEX3
       &amp; STATEX3 = EVENTX11
-      &amp; isA(EVENTX11,r__know_0086_0014)
-      &amp; arg0(EVENTX11) = r__you_0086_0010
+      &amp; isA(EVENTX11,r_0086_0014__know)
+      &amp; arg0(EVENTX11) = r_0086_0010__you
       &amp; arg1(EVENTX11) = STATEX4
       &amp; STATEX4 = OPERATORX6
       &amp; isA(OPERATORX6,question_0086_1006)
       &amp; scope(OPERATORX6) = OPERATORX9
-      &amp; isA(OPERATORX9,r__can_0086_0017)
+      &amp; isA(OPERATORX9,r_0086_0017__can)
       &amp; scope(OPERATORX9) = EVENTX10
-      &amp; isA(EVENTX10,r__do_0086_0018)
+      &amp; isA(EVENTX10,r_0086_0018__do)
       &amp; arg1(EVENTX10) = ENTITYX7
       &amp; arg0(EVENTX10) = HEARERX8
-      &amp; isA(ENTITYX7,r__what_0086_0015)
-      &amp; HEARERX8 = r__you_0086_0010
-      &amp; isA(ATTRIBX1,r__sure_0086_0003)
-      &amp; prn3(ATTRIBX1) = r__Madam_0086_0005_r__Deputy_0086_0006_r__Speaker_0086_0007
+      &amp; isA(ENTITYX7,r_0086_0015__what)
+      &amp; HEARERX8 = r_0086_0010__you
+      &amp; isA(ATTRIBX1,r_0086_0003__sure)
+      &amp; prn3(ATTRIBX1) = r_0086_0005__Madam_Deputy_Speaker
       &amp; emb5(ATTRIBX1) = STATEX2
-      &amp; isA(EVENTX14,r__am_0086_0002)
-      &amp; arg0(EVENTX14) = r__I_0086_0001
+      &amp; isA(EVENTX14,r_0086_0002__am)
+      &amp; arg0(EVENTX14) = r_0086_0001__I
       &amp; prd2(EVENTX14) = ATTRIBX1 ) ).
 
 

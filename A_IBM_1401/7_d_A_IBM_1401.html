@@ -83,20 +83,20 @@ What Is A 1401 Program ?
 </svg>
 <br>
 <pre>
-arc(question_0012_1002,r__Is_0012_0002,scope).
-arc(r__Is_0012_0002,r__What_0012_0001,prd2).
-arc(r__Is_0012_0002,r__1401_0012_0004_r__Program_0012_0005,arg0).
+arc(question_0012_1002,r_0012_0002__Is,scope).
+arc(r_0012_0002__Is,r_0012_0001__What,prd2).
+arc(r_0012_0002__Is,r_0012_0004__1401_Program,arg0).
 
 </pre>
 <br>
 <pre>
 fof(id_12_A_IBM_1401,axiom,
     ? [OPERATORX2,EVENTX5,ENTITYX3,ENTITYX4] :
-      ( isA(ENTITYX3,r__What_0012_0001)
-      &amp; isA(ENTITYX4,r__1401_0012_0004_r__Program_0012_0005)
+      ( isA(ENTITYX3,r_0012_0001__What)
+      &amp; isA(ENTITYX4,r_0012_0004__1401_Program)
       &amp; isA(OPERATORX2,question_0012_1002)
       &amp; scope(OPERATORX2) = EVENTX5
-      &amp; isA(EVENTX5,r__Is_0012_0002)
+      &amp; isA(EVENTX5,r_0012_0002__Is)
       &amp; prd2(EVENTX5) = ENTITYX3
       &amp; arg0(EVENTX5) = ENTITYX4 ) ).
 

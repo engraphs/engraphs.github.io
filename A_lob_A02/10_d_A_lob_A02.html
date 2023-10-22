@@ -70,7 +70,7 @@ At the same time the Prime Minister has offered commonwealth governments every f
 <title>0010_0008&#45;&gt;0010_0004</title>
 <path fill="none" stroke="black" d="M203.41,-611.19C191.06,-598.07 172.83,-578.71 158.65,-563.64"/>
 <polygon fill="black" stroke="black" points="161.06,-561.09 151.66,-556.21 155.96,-565.89 161.06,-561.09"/>
-<text text-anchor="middle" x="212.34" y="-579.8" font-family="fixed" font-size="14.00">At_[tmp]</text>
+<text text-anchor="middle" x="208.84" y="-579.8" font-family="fixed" font-size="14.00">At[tmp]</text>
 </g>
 <!-- quantificational_0010_0012 -->
 <g id="node5" class="node">
@@ -207,19 +207,19 @@ At the same time the Prime Minister has offered commonwealth governments every f
 </svg>
 <br>
 <pre>
-arc(quantificational_r__every_0010_0012,r__offered_0010_0009,scope).
-arc(quantificational_r__every_0010_0012,r__facility_0010_0013,restriction).
-arc(r__time_0010_0004,r__same_0010_0003,attrib2).
-arc(r__has_0010_0008,quantificational_r__every_0010_0012,catenative).
-arc(r__has_0010_0008,r__time_0010_0004,r__At_0010_0001_tmp).
-arc(r__offered_0010_0009,r__Prime_0010_0006_r__Minister_0010_0007,arg0).
-arc(r__offered_0010_0009,r__governments_0010_0011,arg2).
-arc(r__offered_0010_0009,r__facility_0010_0013,arg1).
-arc(r__governments_0010_0011,r__commonwealth_0010_0010,attrib1).
-arc(r__facility_0010_0013,r__possible_0010_0014,attrib3).
-arc(r__possible_0010_0014,r__safeguard_0010_0016,emb2).
-arc(r__safeguard_0010_0016,r__interests_0010_0018,arg1).
-arc(r__interests_0010_0018,r__their_0010_0017,genv).
+arc(r_0010_0004__time,r_0010_0003__same,attrib2).
+arc(r_0010_0008__has,r_0010_0004__time,r_0010_0001__At_tmp).
+arc(r_0010_0008__has,r_0010_0012__quantificational__every,catenative).
+arc(r_0010_0009__offered,r_0010_0006__Prime_Minister,arg0).
+arc(r_0010_0009__offered,r_0010_0011__governments,arg2).
+arc(r_0010_0009__offered,r_0010_0013__facility,arg1).
+arc(r_0010_0011__governments,r_0010_0010__commonwealth,attrib1).
+arc(r_0010_0012__quantificational__every,r_0010_0009__offered,scope).
+arc(r_0010_0012__quantificational__every,r_0010_0013__facility,restriction).
+arc(r_0010_0013__facility,r_0010_0014__possible,attrib3).
+arc(r_0010_0014__possible,r_0010_0016__safeguard,emb2).
+arc(r_0010_0016__safeguard,r_0010_0018__interests,arg1).
+arc(r_0010_0018__interests,r_0010_0017__their,genv).
 
 </pre>
 <br>
@@ -227,31 +227,31 @@ arc(r__interests_0010_0018,r__their_0010_0017,genv).
 fof(id_10_A_lob_A02,axiom,
     ? [CATENATIVEX3,STATEX9,EVENTX15,QUANTX7,EVENTX14,EVENTX13,ENTITYX1,ENTITYX4,ENTITYX6,ENTITYX12,ATTRIBX8,ATTRIBX5,ATTRIBX2] :
       ( CATENATIVEX3 = QUANTX7
-      &amp; isA(QUANTX7,quantificational_r__every_0010_0012)
+      &amp; isA(QUANTX7,r_0010_0012__quantificational__every)
       &amp; restriction(QUANTX7) = ENTITYX6
-      &amp; isA(ENTITYX6,r__facility_0010_0013)
+      &amp; isA(ENTITYX6,r_0010_0013__facility)
       &amp; attrib3(ENTITYX6) = ATTRIBX8
       &amp; scope(QUANTX7) = EVENTX14
-      &amp; isA(EVENTX14,r__offered_0010_0009)
-      &amp; arg0(EVENTX14) = r__Prime_0010_0006_r__Minister_0010_0007
+      &amp; isA(EVENTX14,r_0010_0009__offered)
+      &amp; arg0(EVENTX14) = r_0010_0006__Prime_Minister
       &amp; arg2(EVENTX14) = ENTITYX4
       &amp; arg1(EVENTX14) = ENTITYX6
       &amp; STATEX9 = EVENTX13
-      &amp; isA(EVENTX13,r__safeguard_0010_0016)
+      &amp; isA(EVENTX13,r_0010_0016__safeguard)
       &amp; arg1(EVENTX13) = ENTITYX12
-      &amp; isA(ENTITYX1,r__time_0010_0004)
+      &amp; isA(ENTITYX1,r_0010_0004__time)
       &amp; attrib2(ENTITYX1) = ATTRIBX2
-      &amp; isA(ENTITYX4,r__governments_0010_0011)
+      &amp; isA(ENTITYX4,r_0010_0011__governments)
       &amp; attrib1(ENTITYX4) = ATTRIBX5
-      &amp; isA(ENTITYX12,r__interests_0010_0018)
-      &amp; genv(ENTITYX12) = r__their_0010_0017
-      &amp; isA(ATTRIBX2,r__same_0010_0003)
-      &amp; isA(ATTRIBX5,r__commonwealth_0010_0010)
-      &amp; isA(ATTRIBX8,r__possible_0010_0014)
+      &amp; isA(ENTITYX12,r_0010_0018__interests)
+      &amp; genv(ENTITYX12) = r_0010_0017__their
+      &amp; isA(ATTRIBX2,r_0010_0003__same)
+      &amp; isA(ATTRIBX5,r_0010_0010__commonwealth)
+      &amp; isA(ATTRIBX8,r_0010_0014__possible)
       &amp; emb2(ATTRIBX8) = STATEX9
-      &amp; isA(r__Prime_0010_0006_r__Minister_0010_0007,r__Prime_0010_0006_r__Minister_0010_0007)
-      &amp; isA(EVENTX15,r__has_0010_0008)
-      &amp; r__At_0010_0001_tmp(EVENTX15) = ENTITYX1
+      &amp; isA(r_0010_0006__Prime_Minister,r_0010_0006__Prime_Minister)
+      &amp; isA(EVENTX15,r_0010_0008__has)
+      &amp; r_0010_0001__At_tmp(EVENTX15) = ENTITYX1
       &amp; catenative(EVENTX15) = CATENATIVEX3 ) ).
 
 

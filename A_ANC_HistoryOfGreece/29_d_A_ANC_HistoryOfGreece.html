@@ -77,7 +77,7 @@ The island communities were undecided about which side to back for a time .
 <title>0044_0004&#45;&gt;0044_0013</title>
 <path fill="none" stroke="black" d="M340.58,-261.79C344.63,-255.93 349.16,-249.23 353.09,-243 358.1,-235.07 363.31,-226.27 367.92,-218.29"/>
 <polygon fill="black" stroke="black" points="371.08,-219.82 372.99,-209.4 365,-216.35 371.08,-219.82"/>
-<text text-anchor="middle" x="394.59" y="-231.8" font-family="fixed" font-size="14.00">for_[tmp]</text>
+<text text-anchor="middle" x="391.09" y="-231.8" font-family="fixed" font-size="14.00">for[tmp]</text>
 </g>
 <!-- question_0044_1007 -->
 <g id="node5" class="node">
@@ -88,9 +88,9 @@ The island communities were undecided about which side to back for a time .
 <!-- 0044_0004&#45;&gt;question_0044_1007 -->
 <g id="edge4" class="edge">
 <title>0044_0004&#45;&gt;question_0044_1007</title>
-<path fill="none" stroke="black" d="M358.56,-271.23C379.68,-265.6 408.31,-256.34 431.09,-243 443.16,-235.93 454.95,-226 464.58,-216.86"/>
-<polygon fill="black" stroke="black" points="467.12,-219.26 471.8,-209.76 462.21,-214.27 467.12,-219.26"/>
-<text text-anchor="middle" x="489.09" y="-231.8" font-family="fixed" font-size="14.00">about_[rst]</text>
+<path fill="none" stroke="black" d="M357.56,-270.12C376.99,-264.12 402.94,-254.88 424.09,-243 437.51,-235.46 451.06,-225.14 462.13,-215.84"/>
+<polygon fill="black" stroke="black" points="464.43,-218.47 469.72,-209.29 459.86,-213.17 464.43,-218.47"/>
+<text text-anchor="middle" x="481.09" y="-231.8" font-family="fixed" font-size="14.00">about[rst]</text>
 </g>
 <!-- 0044_0010 -->
 <g id="node7" class="node">
@@ -122,12 +122,12 @@ The island communities were undecided about which side to back for a time .
 </svg>
 <br>
 <pre>
-arc(question_0044_1007,r__back_0044_0010,scope).
-arc(r__were_0044_0004,question_0044_1007,r__about_0044_0006_rst).
-arc(r__were_0044_0004,r__island_0044_0002_r__communities_0044_0003,arg0).
-arc(r__were_0044_0004,r__undecided_0044_0005,prd2).
-arc(r__were_0044_0004,r__time_0044_0013,r__for_0044_0011_tmp).
-arc(r__back_0044_0010,r__side_0044_0008,arg1).
+arc(question_0044_1007,r_0044_0010__back,scope).
+arc(r_0044_0004__were,question_0044_1007,r_0044_0006__about_rst).
+arc(r_0044_0004__were,r_0044_0002__island_communities,arg0).
+arc(r_0044_0004__were,r_0044_0005__undecided,prd2).
+arc(r_0044_0004__were,r_0044_0013__time,r_0044_0011__for_tmp).
+arc(r_0044_0010__back,r_0044_0008__side,arg1).
 
 </pre>
 <br>
@@ -137,17 +137,17 @@ fof(id_44_A_ANC_HistoryOfGreece,axiom,
       ( EVENTX3 = OPERATORX7
       &amp; isA(OPERATORX7,question_0044_1007)
       &amp; scope(OPERATORX7) = EVENTX9
-      &amp; isA(EVENTX9,r__back_0044_0010)
+      &amp; isA(EVENTX9,r_0044_0010__back)
       &amp; arg1(EVENTX9) = ENTITYX8
-      &amp; isA(ENTITYX1,r__island_0044_0002_r__communities_0044_0003)
-      &amp; isA(ENTITYX8,r__side_0044_0008)
-      &amp; isA(ENTITYX10,r__time_0044_0013)
-      &amp; isA(ATTRIBX2,r__undecided_0044_0005)
-      &amp; isA(EVENTX11,r__were_0044_0004)
+      &amp; isA(ENTITYX1,r_0044_0002__island_communities)
+      &amp; isA(ENTITYX8,r_0044_0008__side)
+      &amp; isA(ENTITYX10,r_0044_0013__time)
+      &amp; isA(ATTRIBX2,r_0044_0005__undecided)
+      &amp; isA(EVENTX11,r_0044_0004__were)
       &amp; arg0(EVENTX11) = ENTITYX1
       &amp; prd2(EVENTX11) = ATTRIBX2
-      &amp; r__about_0044_0006_rst(EVENTX11) = EVENTX3
-      &amp; r__for_0044_0011_tmp(EVENTX11) = ENTITYX10 ) ).
+      &amp; r_0044_0006__about_rst(EVENTX11) = EVENTX3
+      &amp; r_0044_0011__for_tmp(EVENTX11) = ENTITYX10 ) ).
 
 
 </pre>

@@ -110,28 +110,28 @@ The ship turned , changing its course .
 </svg>
 <br>
 <pre>
-arc(abs_0060_1002,r__turned_0060_0003,scope).
-arc(abs_0060_1002,r__changing_0060_0005,restriction).
-arc(r__turned_0060_0003,r__ship_0060_0002,arg0).
-arc(r__changing_0060_0005,r__ship_0060_0002,arg0).
-arc(r__changing_0060_0005,r__course_0060_0007,arg1).
-arc(r__course_0060_0007,r__ship_0060_0002,genv).
+arc(abs_0060_1002,r_0060_0003__turned,scope).
+arc(abs_0060_1002,r_0060_0005__changing,restriction).
+arc(r_0060_0003__turned,r_0060_0002__ship,arg0).
+arc(r_0060_0005__changing,r_0060_0002__ship,arg0).
+arc(r_0060_0005__changing,r_0060_0007__course,arg1).
+arc(r_0060_0007__course,r_0060_0002__ship,genv).
 
 </pre>
 <br>
 <pre>
 fof(id_60_A_DICK_1952,axiom,
     ? [SHIPX5,CONNX3,EVENTX6,EVENTX7,SHIPX1,ENTITYX4] :
-      ( isA(SHIPX1,r__ship_0060_0002)
-      &amp; isA(ENTITYX4,r__course_0060_0007)
+      ( isA(SHIPX1,r_0060_0002__ship)
+      &amp; isA(ENTITYX4,r_0060_0007__course)
       &amp; genv(ENTITYX4) = SHIPX5
       &amp; SHIPX5 = SHIPX1
       &amp; isA(CONNX3,abs_0060_1002)
       &amp; scope(CONNX3) = EVENTX7
-      &amp; isA(EVENTX7,r__turned_0060_0003)
+      &amp; isA(EVENTX7,r_0060_0003__turned)
       &amp; arg0(EVENTX7) = SHIPX1
       &amp; restriction(CONNX3) = EVENTX6
-      &amp; isA(EVENTX6,r__changing_0060_0005)
+      &amp; isA(EVENTX6,r_0060_0005__changing)
       &amp; arg0(EVENTX6) = SHIPX1
       &amp; arg1(EVENTX6) = ENTITYX4 ) ).
 

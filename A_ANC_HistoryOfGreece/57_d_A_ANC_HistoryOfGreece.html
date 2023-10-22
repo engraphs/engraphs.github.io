@@ -129,7 +129,7 @@ However , a movement was growing on the Greek peninsula against Ottoman rule and
 <title>0099_0006&#45;&gt;0099_0010</title>
 <path fill="none" stroke="black" d="M187.87,-348.61C197.49,-336.23 210.85,-319.01 221.79,-304.92"/>
 <polygon fill="black" stroke="black" points="224.86,-306.67 228.23,-296.63 219.33,-302.38 224.86,-306.67"/>
-<text text-anchor="middle" x="239.64" y="-318.8" font-family="fixed" font-size="14.00">on_[loc]</text>
+<text text-anchor="middle" x="236.14" y="-318.8" font-family="fixed" font-size="14.00">on[loc]</text>
 </g>
 <!-- 0099_0009 -->
 <g id="node7" class="node">
@@ -174,16 +174,16 @@ However , a movement was growing on the Greek peninsula against Ottoman rule and
 </svg>
 <br>
 <pre>
-arc(r__However_0099_0001,r__was_0099_0005,scope).
-arc(r__movement_0099_0004,r__and_0099_0014,z_0099_1004).
-arc(r__was_0099_0005,r__growing_0099_0006,catenative).
-arc(r__growing_0099_0006,r__movement_0099_0004,arg0).
-arc(r__growing_0099_0006,r__peninsula_0099_0010,r__on_0099_0007_loc).
-arc(r__peninsula_0099_0010,r__Greek_0099_0009,attrib2).
-arc(r__and_0099_0014,r__Ottoman_0099_0012_r__rule_0099_0013,r__against_0099_0011).
-arc(r__and_0099_0014,r__state_0099_0019,r__for_0099_0015).
-arc(r__state_0099_0019,r__independent_0099_0017,attrib2).
-arc(r__state_0099_0019,r__Greek_0099_0018,attrib3).
+arc(r_0099_0001__However,r_0099_0005__was,scope).
+arc(r_0099_0004__movement,r_0099_0014__and,z_0099_1004).
+arc(r_0099_0005__was,r_0099_0006__growing,catenative).
+arc(r_0099_0006__growing,r_0099_0004__movement,arg0).
+arc(r_0099_0006__growing,r_0099_0010__peninsula,r_0099_0007__on_loc).
+arc(r_0099_0010__peninsula,r_0099_0009__Greek,attrib2).
+arc(r_0099_0014__and,r_0099_0012__Ottoman_rule,r_0099_0011__against).
+arc(r_0099_0014__and,r_0099_0019__state,r_0099_0015__for).
+arc(r_0099_0019__state,r_0099_0017__independent,attrib2).
+arc(r_0099_0019__state,r_0099_0018__Greek,attrib3).
 
 </pre>
 <br>
@@ -191,26 +191,26 @@ arc(r__state_0099_0019,r__Greek_0099_0018,attrib3).
 fof(id_99_A_ANC_HistoryOfGreece,axiom,
     ? [CATENATIVEX10,OPERATORX1,EVENTX14,EVENTX13,ENTITYX2,ENTITYX11,CONJX5,ENTITYX6,ENTITYX7,ATTRIBX12,ATTRIBX8,ATTRIBX9] :
       ( CATENATIVEX10 = EVENTX13
-      &amp; isA(EVENTX13,r__growing_0099_0006)
+      &amp; isA(EVENTX13,r_0099_0006__growing)
       &amp; arg0(EVENTX13) = ENTITYX2
-      &amp; r__on_0099_0007_loc(EVENTX13) = ENTITYX11
-      &amp; isA(ENTITYX2,r__movement_0099_0004)
+      &amp; r_0099_0007__on_loc(EVENTX13) = ENTITYX11
+      &amp; isA(ENTITYX2,r_0099_0004__movement)
       &amp; z_0099_1004(ENTITYX2) = CONJX5
-      &amp; isA(CONJX5,r__and_0099_0014)
-      &amp; r__against_0099_0011(CONJX5) = ENTITYX6
-      &amp; r__for_0099_0015(CONJX5) = ENTITYX7
-      &amp; isA(ENTITYX6,r__Ottoman_0099_0012_r__rule_0099_0013)
-      &amp; isA(ENTITYX7,r__state_0099_0019)
+      &amp; isA(CONJX5,r_0099_0014__and)
+      &amp; r_0099_0011__against(CONJX5) = ENTITYX6
+      &amp; r_0099_0015__for(CONJX5) = ENTITYX7
+      &amp; isA(ENTITYX6,r_0099_0012__Ottoman_rule)
+      &amp; isA(ENTITYX7,r_0099_0019__state)
       &amp; attrib2(ENTITYX7) = ATTRIBX8
       &amp; attrib3(ENTITYX7) = ATTRIBX9
-      &amp; isA(ENTITYX11,r__peninsula_0099_0010)
+      &amp; isA(ENTITYX11,r_0099_0010__peninsula)
       &amp; attrib2(ENTITYX11) = ATTRIBX12
-      &amp; isA(ATTRIBX8,r__independent_0099_0017)
-      &amp; isA(ATTRIBX9,r__Greek_0099_0018)
-      &amp; isA(ATTRIBX12,r__Greek_0099_0009)
-      &amp; isA(OPERATORX1,r__However_0099_0001)
+      &amp; isA(ATTRIBX8,r_0099_0017__independent)
+      &amp; isA(ATTRIBX9,r_0099_0018__Greek)
+      &amp; isA(ATTRIBX12,r_0099_0009__Greek)
+      &amp; isA(OPERATORX1,r_0099_0001__However)
       &amp; scope(OPERATORX1) = EVENTX14
-      &amp; isA(EVENTX14,r__was_0099_0005)
+      &amp; isA(EVENTX14,r_0099_0005__was)
       &amp; catenative(EVENTX14) = CATENATIVEX10 ) ).
 
 

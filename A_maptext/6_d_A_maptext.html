@@ -64,7 +64,7 @@ Follow the ridge for about two miles .
 <title>0012_0001&#45;&gt;0012_0006_0012_0007</title>
 <path fill="none" stroke="black" d="M82.21,-175.06C87.66,-169.12 93.88,-162.28 99.45,-156 106.74,-147.78 114.61,-138.69 121.6,-130.54"/>
 <polygon fill="black" stroke="black" points="124.4,-132.65 128.24,-122.78 119.08,-128.1 124.4,-132.65"/>
-<text text-anchor="middle" x="139.45" y="-144.8" font-family="fixed" font-size="14.00">for_[dir]</text>
+<text text-anchor="middle" x="135.95" y="-144.8" font-family="fixed" font-size="14.00">for[dir]</text>
 </g>
 <!-- 0012_0005 -->
 <g id="node4" class="node">
@@ -96,25 +96,25 @@ Follow the ridge for about two miles .
 </svg>
 <br>
 <pre>
-arc(imperative_0012_1002,r__Follow_0012_0001,scope).
-arc(r__Follow_0012_0001,r__ridge_0012_0003,arg1).
-arc(r__Follow_0012_0001,r__two_0012_0006_r__miles_0012_0007,r__for_0012_0004_dir).
-arc(r__two_0012_0006_r__miles_0012_0007,r__about_0012_0005,quality1).
+arc(imperative_0012_1002,r_0012_0001__Follow,scope).
+arc(r_0012_0001__Follow,r_0012_0003__ridge,arg1).
+arc(r_0012_0001__Follow,r_0012_0006__two_miles,r_0012_0004__for_dir).
+arc(r_0012_0006__two_miles,r_0012_0005__about,quality1).
 
 </pre>
 <br>
 <pre>
 fof(id_12_A_maptext,axiom,
     ? [OPERATORX2,EVENTX7,ENTITYX4,ENTITYX5,QUALITYX6] :
-      ( isA(ENTITYX4,r__ridge_0012_0003)
-      &amp; isA(ENTITYX5,r__two_0012_0006_r__miles_0012_0007)
+      ( isA(ENTITYX4,r_0012_0003__ridge)
+      &amp; isA(ENTITYX5,r_0012_0006__two_miles)
       &amp; quality1(ENTITYX5) = QUALITYX6
-      &amp; isA(QUALITYX6,r__about_0012_0005)
+      &amp; isA(QUALITYX6,r_0012_0005__about)
       &amp; isA(OPERATORX2,imperative_0012_1002)
       &amp; scope(OPERATORX2) = EVENTX7
-      &amp; isA(EVENTX7,r__Follow_0012_0001)
+      &amp; isA(EVENTX7,r_0012_0001__Follow)
       &amp; arg1(EVENTX7) = ENTITYX4
-      &amp; r__for_0012_0004_dir(EVENTX7) = ENTITYX5 ) ).
+      &amp; r_0012_0004__for_dir(EVENTX7) = ENTITYX5 ) ).
 
 
 </pre>

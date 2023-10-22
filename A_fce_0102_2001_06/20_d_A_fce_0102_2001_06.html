@@ -243,21 +243,21 @@ What made it so memorable ?
 </svg>
 <br>
 <pre>
-arc(question_0022_1002,r__Have_0022_0001,scope).
-arc(question_0022_1010,r__did_0023_0002_r__celebrate_0023_0004,scope).
-arc(question_0022_1016,r__made_0024_0002,scope).
-arc(r__Have_0022_0001,r__ever_0022_0003,catenative).
-arc(r__ever_0022_0003,r__had_0022_0004,scope).
-arc(r__had_0022_0004,r__you_0022_0002,arg0).
-arc(r__had_0022_0004,r__birthday_0022_0007,arg1).
-arc(r__birthday_0022_0007,r__unforgettable_0022_0006,attrib2).
-arc(r__did_0023_0002_r__celebrate_0023_0004,r__you_0022_0002,arg0).
-arc(r__did_0023_0002_r__celebrate_0023_0004,r__birthday_0022_0007,arg1).
-arc(r__did_0023_0002_r__celebrate_0023_0004,r__How_0023_0001,mnr1).
-arc(r__made_0024_0002,r__birthday_0022_0007,arg1).
-arc(r__made_0024_0002,r__What_0024_0001,arg0).
-arc(r__made_0024_0002,r__memorable_0024_0005,prd).
-arc(r__memorable_0024_0005,r__so_0024_0004,quality1).
+arc(question_0022_1002,r_0022_0001__Have,scope).
+arc(question_0022_1010,r_0023_0002__did_celebrate,scope).
+arc(question_0022_1016,r_0024_0002__made,scope).
+arc(r_0022_0001__Have,r_0022_0003__ever,catenative).
+arc(r_0022_0003__ever,r_0022_0004__had,scope).
+arc(r_0022_0004__had,r_0022_0002__you,arg0).
+arc(r_0022_0004__had,r_0022_0007__birthday,arg1).
+arc(r_0022_0007__birthday,r_0022_0006__unforgettable,attrib2).
+arc(r_0023_0002__did_celebrate,r_0022_0002__you,arg0).
+arc(r_0023_0002__did_celebrate,r_0022_0007__birthday,arg1).
+arc(r_0023_0002__did_celebrate,r_0023_0001__How,mnr1).
+arc(r_0024_0002__made,r_0022_0007__birthday,arg1).
+arc(r_0024_0002__made,r_0024_0001__What,arg0).
+arc(r_0024_0002__made,r_0024_0005__memorable,prd).
+arc(r_0024_0005__memorable,r_0024_0004__so,quality1).
 
 </pre>
 <br>
@@ -265,35 +265,35 @@ arc(r__memorable_0024_0005,r__so_0024_0004,quality1).
 fof(id_22_A_fce_0102_2001_06__23_A_fce_0102_2001_06__24_A_fce_0102_2001_06,axiom,
     ? [CATENATIVEX3,HEARERX12,BIRTHDAYX13,BIRTHDAYX18,OPERATORX16,EVENTX21,OPERATORX10,EVENTX14,OPERATORX2,EVENTX8,OPERATORX4,EVENTX7,ENTITYX17,BIRTHDAYX5,ATTRIBX19,ATTRIBX6,QUALITYX20,QUALITYX11] :
       ( CATENATIVEX3 = OPERATORX4
-      &amp; isA(OPERATORX4,r__ever_0022_0003)
+      &amp; isA(OPERATORX4,r_0022_0003__ever)
       &amp; scope(OPERATORX4) = EVENTX7
-      &amp; isA(EVENTX7,r__had_0022_0004)
-      &amp; arg0(EVENTX7) = r__you_0022_0002
+      &amp; isA(EVENTX7,r_0022_0004__had)
+      &amp; arg0(EVENTX7) = r_0022_0002__you
       &amp; arg1(EVENTX7) = BIRTHDAYX5
-      &amp; isA(BIRTHDAYX5,r__birthday_0022_0007)
+      &amp; isA(BIRTHDAYX5,r_0022_0007__birthday)
       &amp; attrib2(BIRTHDAYX5) = ATTRIBX6
-      &amp; HEARERX12 = r__you_0022_0002
+      &amp; HEARERX12 = r_0022_0002__you
       &amp; BIRTHDAYX13 = BIRTHDAYX5
-      &amp; isA(ENTITYX17,r__What_0024_0001)
+      &amp; isA(ENTITYX17,r_0024_0001__What)
       &amp; BIRTHDAYX18 = BIRTHDAYX5
-      &amp; isA(ATTRIBX6,r__unforgettable_0022_0006)
-      &amp; isA(ATTRIBX19,r__memorable_0024_0005)
+      &amp; isA(ATTRIBX6,r_0022_0006__unforgettable)
+      &amp; isA(ATTRIBX19,r_0024_0005__memorable)
       &amp; quality1(ATTRIBX19) = QUALITYX20
-      &amp; isA(QUALITYX11,r__How_0023_0001)
-      &amp; isA(QUALITYX20,r__so_0024_0004)
+      &amp; isA(QUALITYX11,r_0023_0001__How)
+      &amp; isA(QUALITYX20,r_0024_0004__so)
       &amp; isA(OPERATORX2,question_0022_1002)
       &amp; scope(OPERATORX2) = EVENTX8
-      &amp; isA(EVENTX8,r__Have_0022_0001)
+      &amp; isA(EVENTX8,r_0022_0001__Have)
       &amp; catenative(EVENTX8) = CATENATIVEX3
       &amp; isA(OPERATORX10,question_0022_1010)
       &amp; scope(OPERATORX10) = EVENTX14
-      &amp; isA(EVENTX14,r__did_0023_0002_r__celebrate_0023_0004)
+      &amp; isA(EVENTX14,r_0023_0002__did_celebrate)
       &amp; mnr1(EVENTX14) = QUALITYX11
       &amp; arg0(EVENTX14) = HEARERX12
       &amp; arg1(EVENTX14) = BIRTHDAYX13
       &amp; isA(OPERATORX16,question_0022_1016)
       &amp; scope(OPERATORX16) = EVENTX21
-      &amp; isA(EVENTX21,r__made_0024_0002)
+      &amp; isA(EVENTX21,r_0024_0002__made)
       &amp; arg0(EVENTX21) = ENTITYX17
       &amp; arg1(EVENTX21) = BIRTHDAYX18
       &amp; prd(EVENTX21) = ATTRIBX19 ) ).

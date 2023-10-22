@@ -122,30 +122,30 @@ Men trained to fight , to lead armies , a regular profession .
 </svg>
 <br>
 <pre>
-arc(r__trained_0367_0002,r__Men_0367_0001,arg0).
-arc(r__trained_0367_0002,r__profession_0367_0012,prn5).
-arc(r__fight_0367_0004,r__Men_0367_0001,arg0).
-arc(r__lead_0367_0007,r__Men_0367_0001,arg0).
-arc(r__lead_0367_0007,r__armies_0367_0008,arg1).
-arc(r__profession_0367_0012,r__regular_0367_0011,attrib2).
+arc(r_0367_0002__trained,r_0367_0001__Men,arg0).
+arc(r_0367_0002__trained,r_0367_0012__profession,prn5).
+arc(r_0367_0004__fight,r_0367_0001__Men,arg0).
+arc(r_0367_0007__lead,r_0367_0001__Men,arg0).
+arc(r_0367_0007__lead,r_0367_0008__armies,arg1).
+arc(r_0367_0012__profession,r_0367_0011__regular,attrib2).
 
 </pre>
 <br>
 <pre>
 fof(id_367_A_DICK_1952,axiom,
     ? [STATEX2,EVENTX8,EVENTX5,EVENTX3,ENTITYX1,ENTITYX6,ENTITYX4,ATTRIBX7] :
-      ( isA(EVENTX3,r__fight_0367_0004)
+      ( isA(EVENTX3,r_0367_0004__fight)
       &amp; arg0(EVENTX3) = ENTITYX1
-      &amp; isA(EVENTX5,r__lead_0367_0007)
+      &amp; isA(EVENTX5,r_0367_0007__lead)
       &amp; arg0(EVENTX5) = ENTITYX1
       &amp; arg1(EVENTX5) = ENTITYX4
       &amp; isA(EVENTX5,STATEX2)
-      &amp; isA(ENTITYX1,r__Men_0367_0001)
-      &amp; isA(ENTITYX4,r__armies_0367_0008)
-      &amp; isA(ENTITYX6,r__profession_0367_0012)
+      &amp; isA(ENTITYX1,r_0367_0001__Men)
+      &amp; isA(ENTITYX4,r_0367_0008__armies)
+      &amp; isA(ENTITYX6,r_0367_0012__profession)
       &amp; attrib2(ENTITYX6) = ATTRIBX7
-      &amp; isA(ATTRIBX7,r__regular_0367_0011)
-      &amp; isA(EVENTX8,r__trained_0367_0002)
+      &amp; isA(ATTRIBX7,r_0367_0011__regular)
+      &amp; isA(EVENTX8,r_0367_0002__trained)
       &amp; arg0(EVENTX8) = ENTITYX1
       &amp; arg1(EVENTX8) = STATEX2
       &amp; prn5(EVENTX8) = ENTITYX6 ) ).

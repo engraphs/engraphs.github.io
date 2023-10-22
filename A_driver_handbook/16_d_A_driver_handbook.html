@@ -226,54 +226,54 @@ The force of a 60 mph crash is not just twice as great as a 30 mph crash , it 's
 </svg>
 <br>
 <pre>
-arc(r__force_0020_0002,r__crash_0020_0007,r__of_0020_0003).
-arc(r__crash_0020_0007,r__60_0020_0005_r__mph_0020_0006,nlyr2).
-arc(r__is_0020_0008,r__force_0020_0002,arg0).
-arc(r__is_0020_0008,r__great_0020_0013,prd2).
-arc(r__not_0020_0009,r__is_0020_0008,scope).
-arc(r__just_0020_0010,r__not_0020_0009,scope).
-arc(r__as_0020_0012,r__twice_0020_0011,quality1).
-arc(r__great_0020_0013,r__as_0020_0012,quality1).
-arc(r__great_0020_0013,r__crash_0020_0018,r__as_0020_0014).
-arc(r__crash_0020_0018,r__30_0020_0016_r__mph_0020_0017,nlyr2).
-arc(r___apos_s_0020_0021,r__force_0020_0002,arg0).
-arc(r___apos_s_0020_0021,r__great_0020_0025,prd2).
-arc(r__as_0020_0024,r__four_0020_0022_r__times_0020_0023,modifier1).
-arc(r__great_0020_0025,r__as_0020_0024,quality1).
+arc(r_0020_0002__force,r_0020_0007__crash,r_0020_0003__of).
+arc(r_0020_0007__crash,r_0020_0005__60_mph,nlyr2).
+arc(r_0020_0008__is,r_0020_0002__force,arg0).
+arc(r_0020_0008__is,r_0020_0013__great,prd2).
+arc(r_0020_0009__not,r_0020_0008__is,scope).
+arc(r_0020_0010__just,r_0020_0009__not,scope).
+arc(r_0020_0012__as,r_0020_0011__twice,quality1).
+arc(r_0020_0013__great,r_0020_0012__as,quality1).
+arc(r_0020_0013__great,r_0020_0018__crash,r_0020_0014__as).
+arc(r_0020_0018__crash,r_0020_0016__30_mph,nlyr2).
+arc(r_0020_0021___apos_s,r_0020_0002__force,arg0).
+arc(r_0020_0021___apos_s,r_0020_0025__great,prd2).
+arc(r_0020_0024__as,r_0020_0022__four_times,modifier1).
+arc(r_0020_0025__great,r_0020_0024__as,quality1).
 
 </pre>
 <br>
 <pre>
 fof(id_20_A_driver_handbook,axiom,
     ? [FORCEX12,EVENTX16,OPERATORX4,OPERATORX10,EVENTX11,ENTITYX15,FORCEX1,ENTITYX8,ENTITYX9,ENTITYX2,ENTITYX3,ATTRIBX13,ATTRIBX5,QUALITYX14,QUALITYX6,QUALITYX7] :
-      ( isA(FORCEX1,r__force_0020_0002)
-      &amp; r__of_0020_0003(FORCEX1) = ENTITYX2
-      &amp; isA(ENTITYX2,r__crash_0020_0007)
+      ( isA(FORCEX1,r_0020_0002__force)
+      &amp; r_0020_0003__of(FORCEX1) = ENTITYX2
+      &amp; isA(ENTITYX2,r_0020_0007__crash)
       &amp; nlyr2(ENTITYX2) = ENTITYX3
-      &amp; isA(ENTITYX3,r__60_0020_0005_r__mph_0020_0006)
-      &amp; isA(ENTITYX8,r__crash_0020_0018)
+      &amp; isA(ENTITYX3,r_0020_0005__60_mph)
+      &amp; isA(ENTITYX8,r_0020_0018__crash)
       &amp; nlyr2(ENTITYX8) = ENTITYX9
-      &amp; isA(ENTITYX9,r__30_0020_0016_r__mph_0020_0017)
+      &amp; isA(ENTITYX9,r_0020_0016__30_mph)
       &amp; FORCEX12 = FORCEX1
-      &amp; isA(ENTITYX15,r__four_0020_0022_r__times_0020_0023)
-      &amp; isA(ATTRIBX5,r__great_0020_0013)
+      &amp; isA(ENTITYX15,r_0020_0022__four_times)
+      &amp; isA(ATTRIBX5,r_0020_0013__great)
       &amp; quality1(ATTRIBX5) = QUALITYX6
-      &amp; r__as_0020_0014(ATTRIBX5) = ENTITYX8
-      &amp; isA(ATTRIBX13,r__great_0020_0025)
+      &amp; r_0020_0014__as(ATTRIBX5) = ENTITYX8
+      &amp; isA(ATTRIBX13,r_0020_0025__great)
       &amp; quality1(ATTRIBX13) = QUALITYX14
-      &amp; isA(QUALITYX6,r__as_0020_0012)
+      &amp; isA(QUALITYX6,r_0020_0012__as)
       &amp; quality1(QUALITYX6) = QUALITYX7
-      &amp; isA(QUALITYX7,r__twice_0020_0011)
-      &amp; isA(QUALITYX14,r__as_0020_0024)
+      &amp; isA(QUALITYX7,r_0020_0011__twice)
+      &amp; isA(QUALITYX14,r_0020_0024__as)
       &amp; modifier1(QUALITYX14) = ENTITYX15
-      &amp; isA(OPERATORX4,r__just_0020_0010)
+      &amp; isA(OPERATORX4,r_0020_0010__just)
       &amp; scope(OPERATORX4) = OPERATORX10
-      &amp; isA(OPERATORX10,r__not_0020_0009)
+      &amp; isA(OPERATORX10,r_0020_0009__not)
       &amp; scope(OPERATORX10) = EVENTX11
-      &amp; isA(EVENTX11,r__is_0020_0008)
+      &amp; isA(EVENTX11,r_0020_0008__is)
       &amp; arg0(EVENTX11) = FORCEX1
       &amp; prd2(EVENTX11) = ATTRIBX5
-      &amp; isA(EVENTX16,r___apos_s_0020_0021)
+      &amp; isA(EVENTX16,r_0020_0021___apos_s)
       &amp; arg0(EVENTX16) = FORCEX12
       &amp; prd2(EVENTX16) = ATTRIBX13 ) ).
 

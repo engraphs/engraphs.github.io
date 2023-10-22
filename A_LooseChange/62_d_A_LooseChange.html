@@ -163,41 +163,41 @@ I found a tissue and used it to wipe my sweating palms .
 </svg>
 <br>
 <pre>
-arc(cnt_0116_1004,r__used_0116_0006,scope).
-arc(cnt_0116_1004,r__wipe_0116_0009,restriction).
-arc(r__found_0116_0002,r__I_0116_0001,arg0).
-arc(r__found_0116_0002,r__tissue_0116_0004,arg1).
-arc(r__and_0116_0005,cnt_0116_1004,conj2).
-arc(r__and_0116_0005,r__found_0116_0002,conj1).
-arc(r__used_0116_0006,r__I_0116_0001,arg0).
-arc(r__used_0116_0006,r__tissue_0116_0004,arg1).
-arc(r__wipe_0116_0009,r__tissue_0116_0004,arg0).
-arc(r__wipe_0116_0009,r__sweating_0116_0011_r__palms_0116_0012,arg1).
-arc(r__sweating_0116_0011_r__palms_0116_0012,r__I_0116_0001,genv).
+arc(cnt_0116_1004,r_0116_0006__used,scope).
+arc(cnt_0116_1004,r_0116_0009__wipe,restriction).
+arc(r_0116_0002__found,r_0116_0001__I,arg0).
+arc(r_0116_0002__found,r_0116_0004__tissue,arg1).
+arc(r_0116_0005__and,cnt_0116_1004,conj2).
+arc(r_0116_0005__and,r_0116_0002__found,conj1).
+arc(r_0116_0006__used,r_0116_0001__I,arg0).
+arc(r_0116_0006__used,r_0116_0004__tissue,arg1).
+arc(r_0116_0009__wipe,r_0116_0004__tissue,arg0).
+arc(r_0116_0009__wipe,r_0116_0011__sweating_palms,arg1).
+arc(r_0116_0011__sweating_palms,r_0116_0001__I,genv).
 
 </pre>
 <br>
 <pre>
 fof(id_116_A_LooseChange,axiom,
     ? [TISSUEX3,SPEAKERX7,CONJX10,CONNX5,EVENTX8,EVENTX9,EVENTX2,ENTITYX6,TISSUEX1] :
-      ( isA(TISSUEX1,r__tissue_0116_0004)
+      ( isA(TISSUEX1,r_0116_0004__tissue)
       &amp; TISSUEX3 = TISSUEX1
-      &amp; isA(ENTITYX6,r__sweating_0116_0011_r__palms_0116_0012)
+      &amp; isA(ENTITYX6,r_0116_0011__sweating_palms)
       &amp; genv(ENTITYX6) = SPEAKERX7
-      &amp; SPEAKERX7 = r__I_0116_0001
-      &amp; isA(CONJX10,r__and_0116_0005)
+      &amp; SPEAKERX7 = r_0116_0001__I
+      &amp; isA(CONJX10,r_0116_0005__and)
       &amp; conj1(CONJX10) = EVENTX2
-      &amp; isA(EVENTX2,r__found_0116_0002)
-      &amp; arg0(EVENTX2) = r__I_0116_0001
+      &amp; isA(EVENTX2,r_0116_0002__found)
+      &amp; arg0(EVENTX2) = r_0116_0001__I
       &amp; arg1(EVENTX2) = TISSUEX1
       &amp; conj2(CONJX10) = CONNX5
       &amp; isA(CONNX5,cnt_0116_1004)
       &amp; scope(CONNX5) = EVENTX9
-      &amp; isA(EVENTX9,r__used_0116_0006)
-      &amp; arg0(EVENTX9) = r__I_0116_0001
+      &amp; isA(EVENTX9,r_0116_0006__used)
+      &amp; arg0(EVENTX9) = r_0116_0001__I
       &amp; arg1(EVENTX9) = TISSUEX3
       &amp; restriction(CONNX5) = EVENTX8
-      &amp; isA(EVENTX8,r__wipe_0116_0009)
+      &amp; isA(EVENTX8,r_0116_0009__wipe)
       &amp; arg0(EVENTX8) = TISSUEX3
       &amp; arg1(EVENTX8) = ENTITYX6 ) ).
 

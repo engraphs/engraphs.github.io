@@ -96,23 +96,23 @@ Mechanical watches are susceptible to impacts .
 </svg>
 <br>
 <pre>
-arc(r__watches_0066_0002,r__Mechanical_0066_0001,attrib1).
-arc(r__are_0066_0003,r__watches_0066_0002,arg0).
-arc(r__are_0066_0003,r__susceptible_0066_0004,prd2).
-arc(r__susceptible_0066_0004,r__impacts_0066_0006,r__to_0066_0005).
+arc(r_0066_0002__watches,r_0066_0001__Mechanical,attrib1).
+arc(r_0066_0003__are,r_0066_0002__watches,arg0).
+arc(r_0066_0003__are,r_0066_0004__susceptible,prd2).
+arc(r_0066_0004__susceptible,r_0066_0006__impacts,r_0066_0005__to).
 
 </pre>
 <br>
 <pre>
 fof(id_66_A_seiko_9R65,axiom,
     ? [EVENTX5,ENTITYX1,ENTITYX4,ATTRIBX3,ATTRIBX2] :
-      ( isA(ENTITYX1,r__watches_0066_0002)
+      ( isA(ENTITYX1,r_0066_0002__watches)
       &amp; attrib1(ENTITYX1) = ATTRIBX2
-      &amp; isA(ENTITYX4,r__impacts_0066_0006)
-      &amp; isA(ATTRIBX2,r__Mechanical_0066_0001)
-      &amp; isA(ATTRIBX3,r__susceptible_0066_0004)
-      &amp; r__to_0066_0005(ATTRIBX3) = ENTITYX4
-      &amp; isA(EVENTX5,r__are_0066_0003)
+      &amp; isA(ENTITYX4,r_0066_0006__impacts)
+      &amp; isA(ATTRIBX2,r_0066_0001__Mechanical)
+      &amp; isA(ATTRIBX3,r_0066_0004__susceptible)
+      &amp; r_0066_0005__to(ATTRIBX3) = ENTITYX4
+      &amp; isA(EVENTX5,r_0066_0003__are)
       &amp; arg0(EVENTX5) = ENTITYX1
       &amp; prd2(EVENTX5) = ATTRIBX3 ) ).
 

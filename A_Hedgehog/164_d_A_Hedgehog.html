@@ -104,25 +104,25 @@ Question put and agreed to .
 </svg>
 <br>
 <pre>
-arc(r__put_0188_0002,r__Question_0188_0001,arg1).
-arc(r__and_0188_0003,r__put_0188_0002,conj1).
-arc(r__and_0188_0003,r__agreed_0188_0004_r__to_0188_0005,conj2).
-arc(r__agreed_0188_0004_r__to_0188_0005,r__Question_0188_0001,arg1).
-arc(z_0188_1008,r__Question_0188_0001,z_0188_1002).
+arc(r_0188_0002__put,r_0188_0001__Question,arg1).
+arc(r_0188_0003__and,r_0188_0002__put,conj1).
+arc(r_0188_0003__and,r_0188_0004__agreed_to,conj2).
+arc(r_0188_0004__agreed_to,r_0188_0001__Question,arg1).
+arc(z_0188_1008,r_0188_0001__Question,z_0188_1002).
 
 </pre>
 <br>
 <pre>
 fof(id_188_A_Hedgehog,axiom,
     ? [EVENTX9,CONJX7,EVENTX6,EVENTX5,ENTITYX3] :
-      ( isA(CONJX7,r__and_0188_0003)
+      ( isA(CONJX7,r_0188_0003__and)
       &amp; conj1(CONJX7) = EVENTX5
-      &amp; isA(EVENTX5,r__put_0188_0002)
+      &amp; isA(EVENTX5,r_0188_0002__put)
       &amp; arg1(EVENTX5) = ENTITYX3
       &amp; conj2(CONJX7) = EVENTX6
-      &amp; isA(EVENTX6,r__agreed_0188_0004_r__to_0188_0005)
+      &amp; isA(EVENTX6,r_0188_0004__agreed_to)
       &amp; arg1(EVENTX6) = ENTITYX3
-      &amp; isA(ENTITYX3,r__Question_0188_0001)
+      &amp; isA(ENTITYX3,r_0188_0001__Question)
       &amp; isA(EVENTX9,z_0188_1008)
       &amp; z_0188_1002(EVENTX9) = ENTITYX3 ) ).
 

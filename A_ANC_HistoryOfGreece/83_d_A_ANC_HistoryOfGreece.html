@@ -90,7 +90,7 @@ Airfields have been constructed on a number of the islands , and road systems ha
 <title>0136_0004&#45;&gt;0136_0007</title>
 <path fill="none" stroke="black" d="M160.1,-173.8C160.1,-162.16 160.1,-146.55 160.1,-133.24"/>
 <polygon fill="black" stroke="black" points="163.6,-133.18 160.1,-123.18 156.6,-133.18 163.6,-133.18"/>
-<text text-anchor="middle" x="187.6" y="-144.8" font-family="fixed" font-size="14.00">on_[loc]</text>
+<text text-anchor="middle" x="184.1" y="-144.8" font-family="fixed" font-size="14.00">on[loc]</text>
 </g>
 <!-- 0136_0010 -->
 <g id="node6" class="node">
@@ -201,25 +201,25 @@ Airfields have been constructed on a number of the islands , and road systems ha
 <title>0136_0019&#45;&gt;0136_0013_0136_0014</title>
 <path fill="none" stroke="black" d="M394.45,-87.21C385.16,-74.87 372.38,-57.89 361.89,-43.97"/>
 <polygon fill="black" stroke="black" points="364.52,-41.64 355.71,-35.76 358.93,-45.85 364.52,-41.64"/>
-<text text-anchor="middle" x="399.6" y="-57.8" font-family="fixed" font-size="14.00">[arg1]</text>
+<text text-anchor="middle" x="400.6" y="-57.8" font-family="fixed" font-size="14.00">[arg1]</text>
 </g>
 </g>
 </svg>
 <br>
 <pre>
-arc(r__have_0136_0002,r__been_0136_0003,catenative).
-arc(r__been_0136_0003,r__constructed_0136_0004,catenative).
-arc(r__constructed_0136_0004,r__Airfields_0136_0001,arg1).
-arc(r__constructed_0136_0004,r__number_0136_0007,r__on_0136_0005_loc).
-arc(r__number_0136_0007,r__islands_0136_0010,r__of_0136_0008).
-arc(r__and_0136_0012,r__have_0136_0002,conj1).
-arc(r__and_0136_0012,r__have_0136_0015,conj2).
-arc(r__have_0136_0015,r__been_0136_0016,catenative).
-arc(r__been_0136_0016,r__and_0136_0018,catenative).
-arc(r__expanded_0136_0017,r__road_0136_0013_r__systems_0136_0014,arg1).
-arc(r__and_0136_0018,r__expanded_0136_0017,conj1).
-arc(r__and_0136_0018,r__improved_0136_0019,conj2).
-arc(r__improved_0136_0019,r__road_0136_0013_r__systems_0136_0014,arg1).
+arc(r_0136_0002__have,r_0136_0003__been,catenative).
+arc(r_0136_0003__been,r_0136_0004__constructed,catenative).
+arc(r_0136_0004__constructed,r_0136_0001__Airfields,arg1).
+arc(r_0136_0004__constructed,r_0136_0007__number,r_0136_0005__on_loc).
+arc(r_0136_0007__number,r_0136_0010__islands,r_0136_0008__of).
+arc(r_0136_0012__and,r_0136_0002__have,conj1).
+arc(r_0136_0012__and,r_0136_0015__have,conj2).
+arc(r_0136_0015__have,r_0136_0016__been,catenative).
+arc(r_0136_0016__been,r_0136_0018__and,catenative).
+arc(r_0136_0017__expanded,r_0136_0013__road_systems,arg1).
+arc(r_0136_0018__and,r_0136_0017__expanded,conj1).
+arc(r_0136_0018__and,r_0136_0019__improved,conj2).
+arc(r_0136_0019__improved,r_0136_0013__road_systems,arg1).
 
 </pre>
 <br>
@@ -227,34 +227,34 @@ arc(r__improved_0136_0019,r__road_0136_0013_r__systems_0136_0014,arg1).
 fof(id_136_A_ANC_HistoryOfGreece,axiom,
     ? [CATENATIVEX2,CATENATIVEX3,CATENATIVEX11,CATENATIVEX12,CONJX19,EVENTX18,EVENTX17,CONJX16,EVENTX15,EVENTX14,EVENTX9,EVENTX8,EVENTX7,ENTITYX10,ENTITYX1,ENTITYX5,ENTITYX6] :
       ( CATENATIVEX2 = EVENTX8
-      &amp; isA(EVENTX8,r__been_0136_0003)
+      &amp; isA(EVENTX8,r_0136_0003__been)
       &amp; catenative(EVENTX8) = CATENATIVEX3
       &amp; CATENATIVEX3 = EVENTX7
-      &amp; isA(EVENTX7,r__constructed_0136_0004)
+      &amp; isA(EVENTX7,r_0136_0004__constructed)
       &amp; arg1(EVENTX7) = ENTITYX1
-      &amp; r__on_0136_0005_loc(EVENTX7) = ENTITYX5
+      &amp; r_0136_0005__on_loc(EVENTX7) = ENTITYX5
       &amp; CATENATIVEX11 = EVENTX17
-      &amp; isA(EVENTX17,r__been_0136_0016)
+      &amp; isA(EVENTX17,r_0136_0016__been)
       &amp; catenative(EVENTX17) = CATENATIVEX12
       &amp; CATENATIVEX12 = CONJX16
-      &amp; isA(CONJX16,r__and_0136_0018)
+      &amp; isA(CONJX16,r_0136_0018__and)
       &amp; conj1(CONJX16) = EVENTX14
-      &amp; isA(EVENTX14,r__expanded_0136_0017)
+      &amp; isA(EVENTX14,r_0136_0017__expanded)
       &amp; arg1(EVENTX14) = ENTITYX10
       &amp; conj2(CONJX16) = EVENTX15
-      &amp; isA(EVENTX15,r__improved_0136_0019)
+      &amp; isA(EVENTX15,r_0136_0019__improved)
       &amp; arg1(EVENTX15) = ENTITYX10
-      &amp; isA(ENTITYX1,r__Airfields_0136_0001)
-      &amp; isA(ENTITYX5,r__number_0136_0007)
-      &amp; r__of_0136_0008(ENTITYX5) = ENTITYX6
-      &amp; isA(ENTITYX6,r__islands_0136_0010)
-      &amp; isA(ENTITYX10,r__road_0136_0013_r__systems_0136_0014)
-      &amp; isA(CONJX19,r__and_0136_0012)
+      &amp; isA(ENTITYX1,r_0136_0001__Airfields)
+      &amp; isA(ENTITYX5,r_0136_0007__number)
+      &amp; r_0136_0008__of(ENTITYX5) = ENTITYX6
+      &amp; isA(ENTITYX6,r_0136_0010__islands)
+      &amp; isA(ENTITYX10,r_0136_0013__road_systems)
+      &amp; isA(CONJX19,r_0136_0012__and)
       &amp; conj1(CONJX19) = EVENTX9
-      &amp; isA(EVENTX9,r__have_0136_0002)
+      &amp; isA(EVENTX9,r_0136_0002__have)
       &amp; catenative(EVENTX9) = CATENATIVEX2
       &amp; conj2(CONJX19) = EVENTX18
-      &amp; isA(EVENTX18,r__have_0136_0015)
+      &amp; isA(EVENTX18,r_0136_0015__have)
       &amp; catenative(EVENTX18) = CATENATIVEX11 ) ).
 
 

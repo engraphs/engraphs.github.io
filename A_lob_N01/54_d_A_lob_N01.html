@@ -129,30 +129,30 @@ He cut the engines and flung open the canopy .
 </svg>
 <br>
 <pre>
-arc(r__cut_0111_0002,r__He_0111_0001,arg0).
-arc(r__cut_0111_0002,r__engines_0111_0004,arg1).
-arc(r__and_0111_0005,r__cut_0111_0002,conj1).
-arc(r__and_0111_0005,r__flung_0111_0006,conj2).
-arc(r__flung_0111_0006,r__He_0111_0001,arg0).
-arc(r__flung_0111_0006,r__open_0111_0007,prd).
-arc(r__flung_0111_0006,r__canopy_0111_0009,arg1).
+arc(r_0111_0002__cut,r_0111_0001__He,arg0).
+arc(r_0111_0002__cut,r_0111_0004__engines,arg1).
+arc(r_0111_0005__and,r_0111_0002__cut,conj1).
+arc(r_0111_0005__and,r_0111_0006__flung,conj2).
+arc(r_0111_0006__flung,r_0111_0001__He,arg0).
+arc(r_0111_0006__flung,r_0111_0007__open,prd).
+arc(r_0111_0006__flung,r_0111_0009__canopy,arg1).
 
 </pre>
 <br>
 <pre>
 fof(id_111_A_lob_N01,axiom,
     ? [CONJX6,EVENTX5,EVENTX2,ENTITYX4,ENTITYX1,ATTRIBX3] :
-      ( isA(ENTITYX1,r__engines_0111_0004)
-      &amp; isA(ENTITYX4,r__canopy_0111_0009)
-      &amp; isA(ATTRIBX3,r__open_0111_0007)
-      &amp; isA(CONJX6,r__and_0111_0005)
+      ( isA(ENTITYX1,r_0111_0004__engines)
+      &amp; isA(ENTITYX4,r_0111_0009__canopy)
+      &amp; isA(ATTRIBX3,r_0111_0007__open)
+      &amp; isA(CONJX6,r_0111_0005__and)
       &amp; conj1(CONJX6) = EVENTX2
-      &amp; isA(EVENTX2,r__cut_0111_0002)
-      &amp; arg0(EVENTX2) = r__He_0111_0001
+      &amp; isA(EVENTX2,r_0111_0002__cut)
+      &amp; arg0(EVENTX2) = r_0111_0001__He
       &amp; arg1(EVENTX2) = ENTITYX1
       &amp; conj2(CONJX6) = EVENTX5
-      &amp; isA(EVENTX5,r__flung_0111_0006)
-      &amp; arg0(EVENTX5) = r__He_0111_0001
+      &amp; isA(EVENTX5,r_0111_0006__flung)
+      &amp; arg0(EVENTX5) = r_0111_0001__He
       &amp; prd(EVENTX5) = ATTRIBX3
       &amp; arg1(EVENTX5) = ENTITYX4 ) ).
 

@@ -122,12 +122,12 @@
 </svg>
 <br>
 <pre>
-arc(utterance_0127_1003,r__survived_0127_0008,part1).
-arc(r__fired_0127_0005,r__gun_0127_0003,arg0).
-arc(r__fired_0127_0005,r__projectiles_0127_0007,arg1).
-arc(r__survived_0127_0008,r__gun_0127_0003,arg0).
-arc(r__said_0127_0012,utterance_0127_1003,arg1).
-arc(r__said_0127_0012,r__Nasha_0127_0011,arg0).
+arc(r_0127_0005__fired,r_0127_0003__gun,arg0).
+arc(r_0127_0005__fired,r_0127_0007__projectiles,arg1).
+arc(r_0127_0008__survived,r_0127_0003__gun,arg0).
+arc(r_0127_0012__said,r_0127_0011__Nasha,arg0).
+arc(r_0127_0012__said,utterance_0127_1003,arg1).
+arc(utterance_0127_1003,r_0127_0008__survived,part1).
 
 </pre>
 <br>
@@ -137,16 +137,16 @@ fof(id_127_A_DICK_1952,axiom,
       ( STATEX1 = CONJX8
       &amp; isA(CONJX8,utterance_0127_1003)
       &amp; part1(CONJX8) = EVENTX7
-      &amp; isA(EVENTX7,r__survived_0127_0008)
+      &amp; isA(EVENTX7,r_0127_0008__survived)
       &amp; arg0(EVENTX7) = ENTITYX4
-      &amp; isA(EVENTX6,r__fired_0127_0005)
+      &amp; isA(EVENTX6,r_0127_0005__fired)
       &amp; arg0(EVENTX6) = ENTITYX4
       &amp; arg1(EVENTX6) = ENTITYX5
-      &amp; isA(ENTITYX4,r__gun_0127_0003)
-      &amp; isA(ENTITYX5,r__projectiles_0127_0007)
-      &amp; isA(EVENTX9,r__said_0127_0012)
+      &amp; isA(ENTITYX4,r_0127_0003__gun)
+      &amp; isA(ENTITYX5,r_0127_0007__projectiles)
+      &amp; isA(EVENTX9,r_0127_0012__said)
       &amp; arg1(EVENTX9) = STATEX1
-      &amp; arg0(EVENTX9) = r__Nasha_0127_0011 ) ).
+      &amp; arg0(EVENTX9) = r_0127_0011__Nasha ) ).
 
 
 </pre>

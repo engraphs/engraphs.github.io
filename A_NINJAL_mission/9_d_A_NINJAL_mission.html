@@ -174,40 +174,40 @@ The abundance of research-related content now available online via our website i
 </svg>
 <br>
 <pre>
-arc(r__abundance_0010_0002,r__content_0010_0005,r__of_0010_0003).
-arc(r__content_0010_0005,r__research_related_0010_0004,attrib1).
-arc(r__content_0010_0005,r__now_0010_0006,tmp3).
-arc(r__now_0010_0006,r__online_0010_0008,modifier2).
-arc(r__online_0010_0008,r__available_0010_0007,attrib1).
-arc(r__online_0010_0008,r__website_0010_0011,r__via_0010_0009).
-arc(r__website_0010_0011,r__our_0010_0010,genv).
-arc(r__is_0010_0012,r__abundance_0010_0002,arg0).
-arc(r__is_0010_0012,r__noteworthy_0010_0014,prd2).
-arc(r__noteworthy_0010_0014,r__particular_0010_0013,quality1).
+arc(r_0010_0002__abundance,r_0010_0005__content,r_0010_0003__of).
+arc(r_0010_0005__content,r_0010_0004__research_related,attrib1).
+arc(r_0010_0005__content,r_0010_0006__now,tmp3).
+arc(r_0010_0006__now,r_0010_0008__online,modifier2).
+arc(r_0010_0008__online,r_0010_0007__available,attrib1).
+arc(r_0010_0008__online,r_0010_0011__website,r_0010_0009__via).
+arc(r_0010_0011__website,r_0010_0010__our,genv).
+arc(r_0010_0012__is,r_0010_0002__abundance,arg0).
+arc(r_0010_0012__is,r_0010_0014__noteworthy,prd2).
+arc(r_0010_0014__noteworthy,r_0010_0013__particular,quality1).
 
 </pre>
 <br>
 <pre>
 fof(id_10_A_NINJAL_mission,axiom,
     ? [EVENTX10,ENTITYX1,ENTITYX2,ENTITYX5,ENTITYX7,ATTRIBX8,ATTRIBX3,ATTRIBX6,QUALITYX9,QUALITYX4] :
-      ( isA(ENTITYX1,r__abundance_0010_0002)
-      &amp; r__of_0010_0003(ENTITYX1) = ENTITYX2
-      &amp; isA(ENTITYX2,r__content_0010_0005)
+      ( isA(ENTITYX1,r_0010_0002__abundance)
+      &amp; r_0010_0003__of(ENTITYX1) = ENTITYX2
+      &amp; isA(ENTITYX2,r_0010_0005__content)
       &amp; attrib1(ENTITYX2) = ATTRIBX3
       &amp; tmp3(ENTITYX2) = QUALITYX4
-      &amp; isA(ENTITYX5,r__online_0010_0008)
+      &amp; isA(ENTITYX5,r_0010_0008__online)
       &amp; attrib1(ENTITYX5) = ATTRIBX6
-      &amp; r__via_0010_0009(ENTITYX5) = ENTITYX7
-      &amp; isA(ENTITYX7,r__website_0010_0011)
-      &amp; genv(ENTITYX7) = r__our_0010_0010
-      &amp; isA(ATTRIBX3,r__research_related_0010_0004)
-      &amp; isA(ATTRIBX6,r__available_0010_0007)
-      &amp; isA(ATTRIBX8,r__noteworthy_0010_0014)
+      &amp; r_0010_0009__via(ENTITYX5) = ENTITYX7
+      &amp; isA(ENTITYX7,r_0010_0011__website)
+      &amp; genv(ENTITYX7) = r_0010_0010__our
+      &amp; isA(ATTRIBX3,r_0010_0004__research_related)
+      &amp; isA(ATTRIBX6,r_0010_0007__available)
+      &amp; isA(ATTRIBX8,r_0010_0014__noteworthy)
       &amp; quality1(ATTRIBX8) = QUALITYX9
-      &amp; isA(QUALITYX4,r__now_0010_0006)
+      &amp; isA(QUALITYX4,r_0010_0006__now)
       &amp; modifier2(QUALITYX4) = ENTITYX5
-      &amp; isA(QUALITYX9,r__particular_0010_0013)
-      &amp; isA(EVENTX10,r__is_0010_0012)
+      &amp; isA(QUALITYX9,r_0010_0013__particular)
+      &amp; isA(EVENTX10,r_0010_0012__is)
       &amp; arg0(EVENTX10) = ENTITYX1
       &amp; prd2(EVENTX10) = ATTRIBX8 ) ).
 

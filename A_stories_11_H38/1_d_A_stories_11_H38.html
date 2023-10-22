@@ -56,13 +56,13 @@ It happened when we were in Switzerland .
 <!-- 0001_0003_tmp -->
 <g id="node3" class="node">
 <title>0001_0003_tmp</title>
-<ellipse fill="none" stroke="black" cx="107.9" cy="-192" rx="64.19" ry="18"/>
-<text text-anchor="middle" x="107.9" y="-188.3" font-family="fixed" font-size="14.00">when_[tmp]</text>
+<ellipse fill="none" stroke="black" cx="107.9" cy="-192" rx="59.59" ry="18"/>
+<text text-anchor="middle" x="107.9" y="-188.3" font-family="fixed" font-size="14.00">when[tmp]</text>
 </g>
 <!-- 0001_0003_tmp&#45;&gt;0001_0002 -->
 <g id="edge2" class="edge">
 <title>0001_0003_tmp&#45;&gt;0001_0002</title>
-<path fill="none" stroke="black" d="M93.12,-174.13C88.6,-168.56 83.79,-162.19 79.9,-156 75.23,-148.58 70.85,-140.12 67.14,-132.29"/>
+<path fill="none" stroke="black" d="M93.41,-174.49C88.8,-168.83 83.87,-162.32 79.9,-156 75.23,-148.58 70.85,-140.12 67.14,-132.29"/>
 <polygon fill="black" stroke="black" points="70.32,-130.82 62.98,-123.17 63.95,-133.72 70.32,-130.82"/>
 <text text-anchor="middle" x="105.9" y="-144.8" font-family="fixed" font-size="14.00">[scope]</text>
 </g>
@@ -103,31 +103,31 @@ It happened when we were in Switzerland .
 <title>0001_0005&#45;&gt;0001_0007</title>
 <path fill="none" stroke="black" d="M178.79,-89.53C185.98,-83.29 194.42,-75.86 201.9,-69 211.17,-60.49 221.19,-50.95 229.92,-42.5"/>
 <polygon fill="black" stroke="black" points="232.49,-44.89 237.22,-35.42 227.61,-39.87 232.49,-44.89"/>
-<text text-anchor="middle" x="248.4" y="-57.8" font-family="fixed" font-size="14.00">in_[prd2]</text>
+<text text-anchor="middle" x="244.9" y="-57.8" font-family="fixed" font-size="14.00">in[prd2]</text>
 </g>
 </g>
 </svg>
 <br>
 <pre>
-arc(r__happened_0001_0002,r__It_0001_0001,arg0).
-arc(r__when_0001_0003_tmp,r__happened_0001_0002,scope).
-arc(r__when_0001_0003_tmp,r__were_0001_0005,restriction).
-arc(r__were_0001_0005,r__we_0001_0004,arg0).
-arc(r__were_0001_0005,r__Switzerland_0001_0007,r__in_0001_0006_prd2).
+arc(r_0001_0002__happened,r_0001_0001__It,arg0).
+arc(r_0001_0003__when_tmp,r_0001_0002__happened,scope).
+arc(r_0001_0003__when_tmp,r_0001_0005__were,restriction).
+arc(r_0001_0005__were,r_0001_0004__we,arg0).
+arc(r_0001_0005__were,r_0001_0007__Switzerland,r_0001_0006__in_prd2).
 
 </pre>
 <br>
 <pre>
 fof(id_1_A_stories_11_H38,axiom,
     ? [CONNX1,EVENTX2,EVENTX3] :
-      ( isA(CONNX1,r__when_0001_0003_tmp)
+      ( isA(CONNX1,r_0001_0003__when_tmp)
       &amp; scope(CONNX1) = EVENTX3
-      &amp; isA(EVENTX3,r__happened_0001_0002)
-      &amp; arg0(EVENTX3) = r__It_0001_0001
+      &amp; isA(EVENTX3,r_0001_0002__happened)
+      &amp; arg0(EVENTX3) = r_0001_0001__It
       &amp; restriction(CONNX1) = EVENTX2
-      &amp; isA(EVENTX2,r__were_0001_0005)
-      &amp; arg0(EVENTX2) = r__we_0001_0004
-      &amp; r__in_0001_0006_prd2(EVENTX2) = r__Switzerland_0001_0007 ) ).
+      &amp; isA(EVENTX2,r_0001_0005__were)
+      &amp; arg0(EVENTX2) = r_0001_0004__we
+      &amp; r_0001_0006__in_prd2(EVENTX2) = r_0001_0007__Switzerland ) ).
 
 
 </pre>

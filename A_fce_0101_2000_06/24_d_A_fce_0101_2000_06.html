@@ -234,22 +234,22 @@ Your English teacher has asked you to help prepare a poster about the book or on
 </svg>
 <br>
 <pre>
-arc(r__English_0025_0002_r__teacher_0025_0003,r__Your_0025_0001,genv).
-arc(r__has_0025_0004,r__asked_0025_0005,catenative).
-arc(r__asked_0025_0005,r__Your_0025_0001,arg2).
-arc(r__asked_0025_0005,r__English_0025_0002_r__teacher_0025_0003,arg0).
-arc(r__asked_0025_0005,r__help_0025_0008,arg1).
-arc(r__help_0025_0008,r__prepare_0025_0009,catenative).
-arc(r__prepare_0025_0009,r__Your_0025_0001,arg0).
-arc(r__prepare_0025_0009,r__poster_0025_0011,arg1).
-arc(r__poster_0025_0011,r__or_0025_0015,r__about_0025_0012).
-arc(r__or_0025_0015,r__book_0025_0014,conj1).
-arc(r__or_0025_0015,r__one_0025_0016,conj2).
-arc(r__one_0025_0016,r__stories_0025_0020,r__of_0025_0017).
-arc(r__stories_0025_0020,r__short_0025_0019,attrib2).
-arc(r__have_0025_0022,r__read_0025_0023,catenative).
-arc(r__read_0025_0023,r__Your_0025_0001,arg0).
-arc(r__read_0025_0023,r__or_0025_0015,arg1).
+arc(r_0025_0002__English_teacher,r_0025_0001__Your,genv).
+arc(r_0025_0004__has,r_0025_0005__asked,catenative).
+arc(r_0025_0005__asked,r_0025_0001__Your,arg2).
+arc(r_0025_0005__asked,r_0025_0002__English_teacher,arg0).
+arc(r_0025_0005__asked,r_0025_0008__help,arg1).
+arc(r_0025_0008__help,r_0025_0009__prepare,catenative).
+arc(r_0025_0009__prepare,r_0025_0001__Your,arg0).
+arc(r_0025_0009__prepare,r_0025_0011__poster,arg1).
+arc(r_0025_0011__poster,r_0025_0015__or,r_0025_0012__about).
+arc(r_0025_0015__or,r_0025_0014__book,conj1).
+arc(r_0025_0015__or,r_0025_0016__one,conj2).
+arc(r_0025_0016__one,r_0025_0020__stories,r_0025_0017__of).
+arc(r_0025_0020__stories,r_0025_0019__short,attrib2).
+arc(r_0025_0022__have,r_0025_0023__read,catenative).
+arc(r_0025_0023__read,r_0025_0001__Your,arg0).
+arc(r_0025_0023__read,r_0025_0015__or,arg1).
 
 </pre>
 <br>
@@ -257,40 +257,40 @@ arc(r__read_0025_0023,r__or_0025_0015,arg1).
 fof(id_25_A_fce_0101_2000_06,axiom,
     ? [CATENATIVEX2,STATEX4,STATEX5,CATENATIVEX9,HEARERX3,HEARERX8,EVENTX19,EVENTX18,EVENTX17,EVENTX16,EVENTX11,EVENTX10,ENTITYX1,ENTITYX6,ENTITYX7,ENTITYX12,ENTITYX13,ENTITYX14,ATTRIBX15] :
       ( CATENATIVEX2 = EVENTX18
-      &amp; isA(EVENTX18,r__asked_0025_0005)
+      &amp; isA(EVENTX18,r_0025_0005__asked)
       &amp; arg0(EVENTX18) = ENTITYX1
       &amp; arg2(EVENTX18) = HEARERX3
       &amp; arg1(EVENTX18) = STATEX4
       &amp; STATEX4 = EVENTX17
-      &amp; isA(EVENTX17,r__help_0025_0008)
+      &amp; isA(EVENTX17,r_0025_0008__help)
       &amp; catenative(EVENTX17) = STATEX5
       &amp; STATEX5 = EVENTX16
-      &amp; isA(EVENTX16,r__prepare_0025_0009)
+      &amp; isA(EVENTX16,r_0025_0009__prepare)
       &amp; arg0(EVENTX16) = HEARERX3
       &amp; arg1(EVENTX16) = ENTITYX6
       &amp; CATENATIVEX9 = EVENTX10
-      &amp; isA(EVENTX10,r__read_0025_0023)
+      &amp; isA(EVENTX10,r_0025_0023__read)
       &amp; arg0(EVENTX10) = HEARERX8
       &amp; arg1(EVENTX10) = ENTITYX7
-      &amp; isA(ENTITYX1,r__English_0025_0002_r__teacher_0025_0003)
-      &amp; genv(ENTITYX1) = r__Your_0025_0001
-      &amp; HEARERX3 = r__Your_0025_0001
-      &amp; isA(ENTITYX6,r__poster_0025_0011)
-      &amp; r__about_0025_0012(ENTITYX6) = ENTITYX7
-      &amp; isA(EVENTX11,r__have_0025_0022)
+      &amp; isA(ENTITYX1,r_0025_0002__English_teacher)
+      &amp; genv(ENTITYX1) = r_0025_0001__Your
+      &amp; HEARERX3 = r_0025_0001__Your
+      &amp; isA(ENTITYX6,r_0025_0011__poster)
+      &amp; r_0025_0012__about(ENTITYX6) = ENTITYX7
+      &amp; isA(EVENTX11,r_0025_0022__have)
       &amp; catenative(EVENTX11) = CATENATIVEX9
-      &amp; isA(ENTITYX7,r__or_0025_0015)
+      &amp; isA(ENTITYX7,r_0025_0015__or)
       &amp; conj1(ENTITYX7) = ENTITYX12
       &amp; conj2(ENTITYX7) = ENTITYX13
       &amp; ( HEARERX8 = HEARERX3
-        | HEARERX8 = r__Your_0025_0001 )
-      &amp; isA(ENTITYX12,r__book_0025_0014)
-      &amp; isA(ENTITYX13,r__one_0025_0016)
-      &amp; r__of_0025_0017(ENTITYX13) = ENTITYX14
-      &amp; isA(ENTITYX14,r__stories_0025_0020)
+        | HEARERX8 = r_0025_0001__Your )
+      &amp; isA(ENTITYX12,r_0025_0014__book)
+      &amp; isA(ENTITYX13,r_0025_0016__one)
+      &amp; r_0025_0017__of(ENTITYX13) = ENTITYX14
+      &amp; isA(ENTITYX14,r_0025_0020__stories)
       &amp; attrib2(ENTITYX14) = ATTRIBX15
-      &amp; isA(ATTRIBX15,r__short_0025_0019)
-      &amp; isA(EVENTX19,r__has_0025_0004)
+      &amp; isA(ATTRIBX15,r_0025_0019__short)
+      &amp; isA(EVENTX19,r_0025_0004__has)
       &amp; catenative(EVENTX19) = CATENATIVEX2 ) ).
 
 

@@ -123,13 +123,13 @@ We need to radically rethink our view of intelligence .
 </svg>
 <br>
 <pre>
-arc(r__need_0185_0002,r__We_0185_0001,arg0).
-arc(r__need_0185_0002,r__rethink_0185_0005,arg1).
-arc(r__rethink_0185_0005,r__We_0185_0001,arg0).
-arc(r__rethink_0185_0005,r__radically_0185_0004,mnr2).
-arc(r__rethink_0185_0005,r__view_0185_0007,arg1).
-arc(r__view_0185_0007,r__We_0185_0001,genv).
-arc(r__view_0185_0007,r__intelligence_0185_0009,r__of_0185_0008).
+arc(r_0185_0002__need,r_0185_0001__We,arg0).
+arc(r_0185_0002__need,r_0185_0005__rethink,arg1).
+arc(r_0185_0005__rethink,r_0185_0001__We,arg0).
+arc(r_0185_0005__rethink,r_0185_0004__radically,mnr2).
+arc(r_0185_0005__rethink,r_0185_0007__view,arg1).
+arc(r_0185_0007__view,r_0185_0001__We,genv).
+arc(r_0185_0007__view,r_0185_0009__intelligence,r_0185_0008__of).
 
 </pre>
 <br>
@@ -137,18 +137,18 @@ arc(r__view_0185_0007,r__intelligence_0185_0009,r__of_0185_0008).
 fof(id_185_A_TED_talk_11,axiom,
     ? [STATEX1,SPEAKER_AND_HEARERX4,EVENTX7,EVENTX6,ENTITYX3,ENTITYX5,QUALITYX2] :
       ( STATEX1 = EVENTX6
-      &amp; isA(EVENTX6,r__rethink_0185_0005)
-      &amp; arg0(EVENTX6) = r__We_0185_0001
+      &amp; isA(EVENTX6,r_0185_0005__rethink)
+      &amp; arg0(EVENTX6) = r_0185_0001__We
       &amp; mnr2(EVENTX6) = QUALITYX2
       &amp; arg1(EVENTX6) = ENTITYX3
-      &amp; isA(ENTITYX3,r__view_0185_0007)
+      &amp; isA(ENTITYX3,r_0185_0007__view)
       &amp; genv(ENTITYX3) = SPEAKER_AND_HEARERX4
-      &amp; r__of_0185_0008(ENTITYX3) = ENTITYX5
-      &amp; SPEAKER_AND_HEARERX4 = r__We_0185_0001
-      &amp; isA(ENTITYX5,r__intelligence_0185_0009)
-      &amp; isA(QUALITYX2,r__radically_0185_0004)
-      &amp; isA(EVENTX7,r__need_0185_0002)
-      &amp; arg0(EVENTX7) = r__We_0185_0001
+      &amp; r_0185_0008__of(ENTITYX3) = ENTITYX5
+      &amp; SPEAKER_AND_HEARERX4 = r_0185_0001__We
+      &amp; isA(ENTITYX5,r_0185_0009__intelligence)
+      &amp; isA(QUALITYX2,r_0185_0004__radically)
+      &amp; isA(EVENTX7,r_0185_0002__need)
+      &amp; arg0(EVENTX7) = r_0185_0001__We
       &amp; arg1(EVENTX7) = STATEX1 ) ).
 
 

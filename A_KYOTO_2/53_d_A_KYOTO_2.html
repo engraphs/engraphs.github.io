@@ -104,7 +104,7 @@ The sect began when Eisai came back from Southern Song China in 1202 .
 <title>0060_0006_0060_0007&#45;&gt;0060_0009_0060_0010_0060_0011</title>
 <path fill="none" stroke="black" d="M364.05,-87.21C375.81,-74.72 392.03,-57.48 405.23,-43.46"/>
 <polygon fill="black" stroke="black" points="407.9,-45.73 412.2,-36.05 402.8,-40.93 407.9,-45.73"/>
-<text text-anchor="middle" x="427.75" y="-57.8" font-family="fixed" font-size="14.00">from_[dir]</text>
+<text text-anchor="middle" x="424.25" y="-57.8" font-family="fixed" font-size="14.00">from[dir]</text>
 </g>
 <!-- 0060_0013 -->
 <g id="node7" class="node">
@@ -115,35 +115,35 @@ The sect began when Eisai came back from Southern Song China in 1202 .
 <!-- 0060_0006_0060_0007&#45;&gt;0060_0013 -->
 <g id="edge5" class="edge">
 <title>0060_0006_0060_0007&#45;&gt;0060_0013</title>
-<path fill="none" stroke="black" d="M391.44,-92.25C413.91,-85.87 441.74,-77.56 466.25,-69 496.62,-58.4 530.45,-44.62 555.1,-34.21"/>
-<polygon fill="black" stroke="black" points="556.56,-37.39 564.39,-30.26 553.82,-30.95 556.56,-37.39"/>
-<text text-anchor="middle" x="532.25" y="-57.8" font-family="fixed" font-size="14.00">in_[tmp]</text>
+<path fill="none" stroke="black" d="M389.55,-91.59C410.52,-85.14 436.34,-76.95 459.25,-69 498.32,-55.44 507.63,-50.79 546.25,-36 548.74,-35.04 551.32,-34.06 553.91,-33.06"/>
+<polygon fill="black" stroke="black" points="555.19,-36.32 563.27,-29.46 552.68,-29.78 555.19,-36.32"/>
+<text text-anchor="middle" x="526.25" y="-57.8" font-family="fixed" font-size="14.00">in[tmp]</text>
 </g>
 </g>
 </svg>
 <br>
 <pre>
-arc(r__began_0060_0003,r__sect_0060_0002,arg0).
-arc(r__began_0060_0003,z_0060_1005,tmp).
-arc(r__came_0060_0006_r__back_0060_0007,r__Eisai_0060_0005,arg0).
-arc(r__came_0060_0006_r__back_0060_0007,r__Southern_0060_0009_r__Song_0060_0010_r__China_0060_0011,r__from_0060_0008_dir).
-arc(r__came_0060_0006_r__back_0060_0007,r__1202_0060_0013,r__in_0060_0012_tmp).
-arc(r__came_0060_0006_r__back_0060_0007,z_0060_1005,tmp1).
+arc(r_0060_0003__began,r_0060_0002__sect,arg0).
+arc(r_0060_0003__began,z_0060_1005,tmp).
+arc(r_0060_0006__came_back,r_0060_0005__Eisai,arg0).
+arc(r_0060_0006__came_back,r_0060_0009__Southern_Song_China,r_0060_0008__from_dir).
+arc(r_0060_0006__came_back,r_0060_0013__1202,r_0060_0012__in_tmp).
+arc(r_0060_0006__came_back,z_0060_1005,tmp1).
 
 </pre>
 <br>
 <pre>
 fof(id_60_A_KYOTO_2,axiom,
     ? [EVENTX6,EVENTX4,ENTITYX1,ENTITYX2,ENTITYX3] :
-      ( isA(ENTITYX1,r__sect_0060_0002)
-      &amp; isA(EVENTX4,r__came_0060_0006_r__back_0060_0007)
+      ( isA(ENTITYX1,r_0060_0002__sect)
+      &amp; isA(EVENTX4,r_0060_0006__came_back)
       &amp; tmp1(EVENTX4) = ENTITYX2
-      &amp; arg0(EVENTX4) = r__Eisai_0060_0005
-      &amp; r__from_0060_0008_dir(EVENTX4) = r__Southern_0060_0009_r__Song_0060_0010_r__China_0060_0011
-      &amp; r__in_0060_0012_tmp(EVENTX4) = ENTITYX3
+      &amp; arg0(EVENTX4) = r_0060_0005__Eisai
+      &amp; r_0060_0008__from_dir(EVENTX4) = r_0060_0009__Southern_Song_China
+      &amp; r_0060_0012__in_tmp(EVENTX4) = ENTITYX3
       &amp; isA(ENTITYX2,z_0060_1005)
-      &amp; isA(ENTITYX3,r__1202_0060_0013)
-      &amp; isA(EVENTX6,r__began_0060_0003)
+      &amp; isA(ENTITYX3,r_0060_0013__1202)
+      &amp; isA(EVENTX6,r_0060_0003__began)
       &amp; arg0(EVENTX6) = ENTITYX1
       &amp; tmp(EVENTX6) = ENTITYX2 ) ).
 

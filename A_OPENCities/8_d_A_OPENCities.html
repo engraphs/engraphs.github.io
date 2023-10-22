@@ -195,19 +195,19 @@ Nowadays you can go shopping and find stuff from all over the world .
 </svg>
 <br>
 <pre>
-arc(quantificational_r__all_0012_0010,r__stuff_0012_0008,scope).
-arc(quantificational_r__all_0012_0010,z_0012_1010,restriction).
-arc(r__can_0012_0003,r__and_0012_0006,scope).
-arc(r__go_0012_0004,r__Nowadays_0012_0001,tmp1).
-arc(r__go_0012_0004,r__shopping_0012_0005,catenative).
-arc(r__shopping_0012_0005,r__you_0012_0002,arg0).
-arc(r__and_0012_0006,r__go_0012_0004,conj1).
-arc(r__and_0012_0006,r__find_0012_0007,conj2).
-arc(r__find_0012_0007,r__Nowadays_0012_0001,tmp1).
-arc(r__find_0012_0007,r__you_0012_0002,arg0).
-arc(r__find_0012_0007,r__stuff_0012_0008,arg1).
-arc(r__stuff_0012_0008,z_0012_1010,r__from_0012_0009).
-arc(z_0012_1010,r__world_0012_0013,r__over_0012_0011).
+arc(r_0012_0003__can,r_0012_0006__and,scope).
+arc(r_0012_0004__go,r_0012_0001__Nowadays,tmp1).
+arc(r_0012_0004__go,r_0012_0005__shopping,catenative).
+arc(r_0012_0005__shopping,r_0012_0002__you,arg0).
+arc(r_0012_0006__and,r_0012_0004__go,conj1).
+arc(r_0012_0006__and,r_0012_0007__find,conj2).
+arc(r_0012_0007__find,r_0012_0001__Nowadays,tmp1).
+arc(r_0012_0007__find,r_0012_0002__you,arg0).
+arc(r_0012_0007__find,r_0012_0008__stuff,arg1).
+arc(r_0012_0008__stuff,z_0012_1010,r_0012_0009__from).
+arc(r_0012_0010__quantificational__all,r_0012_0008__stuff,scope).
+arc(r_0012_0010__quantificational__all,z_0012_1010,restriction).
+arc(z_0012_1010,r_0012_0013__world,r_0012_0011__over).
 
 </pre>
 <br>
@@ -215,28 +215,28 @@ arc(z_0012_1010,r__world_0012_0013,r__over_0012_0011).
 fof(id_12_A_OPENCities,axiom,
     ? [CATENATIVEX3,OPERATORX2,CONJX12,EVENTX11,QUANTX8,EVENTX5,EVENTX4,QUALITYX1,ENTITYX6,ENTITYX7,ENTITYX9] :
       ( CATENATIVEX3 = EVENTX4
-      &amp; isA(EVENTX4,r__shopping_0012_0005)
-      &amp; arg0(EVENTX4) = r__you_0012_0002
-      &amp; isA(QUALITYX1,r__Nowadays_0012_0001)
-      &amp; isA(QUANTX8,quantificational_r__all_0012_0010)
+      &amp; isA(EVENTX4,r_0012_0005__shopping)
+      &amp; arg0(EVENTX4) = r_0012_0002__you
+      &amp; isA(QUALITYX1,r_0012_0001__Nowadays)
+      &amp; isA(QUANTX8,r_0012_0010__quantificational__all)
       &amp; restriction(QUANTX8) = ENTITYX7
       &amp; isA(ENTITYX7,z_0012_1010)
-      &amp; r__over_0012_0011(ENTITYX7) = ENTITYX9
+      &amp; r_0012_0011__over(ENTITYX7) = ENTITYX9
       &amp; scope(QUANTX8) = ENTITYX6
-      &amp; isA(ENTITYX6,r__stuff_0012_0008)
-      &amp; r__from_0012_0009(ENTITYX6) = ENTITYX7
-      &amp; isA(ENTITYX9,r__world_0012_0013)
-      &amp; isA(OPERATORX2,r__can_0012_0003)
+      &amp; isA(ENTITYX6,r_0012_0008__stuff)
+      &amp; r_0012_0009__from(ENTITYX6) = ENTITYX7
+      &amp; isA(ENTITYX9,r_0012_0013__world)
+      &amp; isA(OPERATORX2,r_0012_0003__can)
       &amp; scope(OPERATORX2) = CONJX12
-      &amp; isA(CONJX12,r__and_0012_0006)
+      &amp; isA(CONJX12,r_0012_0006__and)
       &amp; conj1(CONJX12) = EVENTX5
-      &amp; isA(EVENTX5,r__go_0012_0004)
+      &amp; isA(EVENTX5,r_0012_0004__go)
       &amp; tmp1(EVENTX5) = QUALITYX1
       &amp; catenative(EVENTX5) = CATENATIVEX3
       &amp; conj2(CONJX12) = EVENTX11
-      &amp; isA(EVENTX11,r__find_0012_0007)
+      &amp; isA(EVENTX11,r_0012_0007__find)
       &amp; tmp1(EVENTX11) = QUALITYX1
-      &amp; arg0(EVENTX11) = r__you_0012_0002
+      &amp; arg0(EVENTX11) = r_0012_0002__you
       &amp; arg1(EVENTX11) = ENTITYX6 ) ).
 
 

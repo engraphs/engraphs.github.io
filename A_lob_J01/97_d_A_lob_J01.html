@@ -83,9 +83,9 @@ Use a glass rod for stirring .
 </svg>
 <br>
 <pre>
-arc(imperative_0097_1002,r__Use_0097_0001,scope).
-arc(r__Use_0097_0001,r__glass_0097_0003_r__rod_0097_0004,arg1).
-arc(r__glass_0097_0003_r__rod_0097_0004,r__stirring_0097_0006,r__for_0097_0005).
+arc(imperative_0097_1002,r_0097_0001__Use,scope).
+arc(r_0097_0001__Use,r_0097_0003__glass_rod,arg1).
+arc(r_0097_0003__glass_rod,r_0097_0006__stirring,r_0097_0005__for).
 
 </pre>
 <br>
@@ -93,12 +93,12 @@ arc(r__glass_0097_0003_r__rod_0097_0004,r__stirring_0097_0006,r__for_0097_0005).
 fof(id_97_A_lob_J01,axiom,
     ? [EVENTX5,OPERATORX2,EVENTX9,EVENTX8,ENTITYX4] :
       ( EVENTX5 = EVENTX8
-      &amp; isA(EVENTX8,r__stirring_0097_0006)
-      &amp; isA(ENTITYX4,r__glass_0097_0003_r__rod_0097_0004)
-      &amp; r__for_0097_0005(ENTITYX4) = EVENTX5
+      &amp; isA(EVENTX8,r_0097_0006__stirring)
+      &amp; isA(ENTITYX4,r_0097_0003__glass_rod)
+      &amp; r_0097_0005__for(ENTITYX4) = EVENTX5
       &amp; isA(OPERATORX2,imperative_0097_1002)
       &amp; scope(OPERATORX2) = EVENTX9
-      &amp; isA(EVENTX9,r__Use_0097_0001)
+      &amp; isA(EVENTX9,r_0097_0001__Use)
       &amp; arg1(EVENTX9) = ENTITYX4 ) ).
 
 

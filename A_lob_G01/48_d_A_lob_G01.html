@@ -175,7 +175,7 @@ The chronicler Walsingham remarks that the Genoese 's chief crime was that he pr
 <title>0056_0016&#45;&gt;0056_0021_0056_0022</title>
 <path fill="none" stroke="black" d="M397.01,-179.15C406.85,-172.83 418.65,-164.6 428.25,-156 437.16,-148.01 445.97,-138.2 453.27,-129.4"/>
 <polygon fill="black" stroke="black" points="456.2,-131.33 459.76,-121.35 450.75,-126.94 456.2,-131.33"/>
-<text text-anchor="middle" x="473.25" y="-144.8" font-family="fixed" font-size="14.00">at_[mnr]</text>
+<text text-anchor="middle" x="469.75" y="-144.8" font-family="fixed" font-size="14.00">at[mnr]</text>
 </g>
 <!-- 0056_0020 -->
 <g id="node12" class="node">
@@ -207,19 +207,19 @@ The chronicler Walsingham remarks that the Genoese 's chief crime was that he pr
 </svg>
 <br>
 <pre>
-arc(r__Walsingham_0056_0003,r__chronicler_0056_0002,prn1).
-arc(r__remarks_0056_0004,r__Walsingham_0056_0003,arg0).
-arc(r__remarks_0056_0004,r__was_0056_0011,arg1).
-arc(r__chief_0056_0009_r__crime_0056_0010,r__Genoese_0056_0007,genv).
-arc(r__was_0056_0011,r__chief_0056_0009_r__crime_0056_0010,arg0).
-arc(r__was_0056_0011,r__proposed_0056_0014,prd2).
-arc(r__proposed_0056_0014,r__he_0056_0013,arg0).
-arc(r__proposed_0056_0014,r__sell_0056_0016,arg1).
-arc(r__sell_0056_0016,r__he_0056_0013,arg0).
-arc(r__sell_0056_0016,r__pepper_0056_0017,arg1).
-arc(r__sell_0056_0016,r__4_0056_0021_r__d_0056_0022,r__at_0056_0018_mnr).
-arc(r__4_0056_0021_r__d_0056_0022,r__mere_0056_0020,attrib2).
-arc(r__4_0056_0021_r__d_0056_0022,r__pound_0056_0024,mnr).
+arc(r_0056_0003__Walsingham,r_0056_0002__chronicler,prn1).
+arc(r_0056_0004__remarks,r_0056_0003__Walsingham,arg0).
+arc(r_0056_0004__remarks,r_0056_0011__was,arg1).
+arc(r_0056_0009__chief_crime,r_0056_0007__Genoese,genv).
+arc(r_0056_0011__was,r_0056_0009__chief_crime,arg0).
+arc(r_0056_0011__was,r_0056_0014__proposed,prd2).
+arc(r_0056_0014__proposed,r_0056_0013__he,arg0).
+arc(r_0056_0014__proposed,r_0056_0016__sell,arg1).
+arc(r_0056_0016__sell,r_0056_0013__he,arg0).
+arc(r_0056_0016__sell,r_0056_0017__pepper,arg1).
+arc(r_0056_0016__sell,r_0056_0021__4_d,r_0056_0018__at_mnr).
+arc(r_0056_0021__4_d,r_0056_0020__mere,attrib2).
+arc(r_0056_0021__4_d,r_0056_0024__pound,mnr).
 
 </pre>
 <br>
@@ -227,32 +227,32 @@ arc(r__4_0056_0021_r__d_0056_0022,r__pound_0056_0024,mnr).
 fof(id_56_A_lob_G01,axiom,
     ? [STATEX2,STATEX4,STATEX5,EVENTX13,EVENTX12,EVENTX11,EVENTX10,ENTITYX3,ENTITYX6,ENTITYX7,ENTITYX9,ENTITYX1,ATTRIBX8] :
       ( STATEX2 = EVENTX12
-      &amp; isA(EVENTX12,r__was_0056_0011)
+      &amp; isA(EVENTX12,r_0056_0011__was)
       &amp; arg0(EVENTX12) = ENTITYX3
       &amp; prd2(EVENTX12) = STATEX4
       &amp; STATEX4 = EVENTX11
-      &amp; isA(EVENTX11,r__proposed_0056_0014)
-      &amp; arg0(EVENTX11) = r__he_0056_0013
+      &amp; isA(EVENTX11,r_0056_0014__proposed)
+      &amp; arg0(EVENTX11) = r_0056_0013__he
       &amp; arg1(EVENTX11) = STATEX5
       &amp; STATEX5 = EVENTX10
-      &amp; isA(EVENTX10,r__sell_0056_0016)
-      &amp; arg0(EVENTX10) = r__he_0056_0013
+      &amp; isA(EVENTX10,r_0056_0016__sell)
+      &amp; arg0(EVENTX10) = r_0056_0013__he
       &amp; arg1(EVENTX10) = ENTITYX6
-      &amp; r__at_0056_0018_mnr(EVENTX10) = ENTITYX7
-      &amp; isA(ENTITYX1,r__chronicler_0056_0002)
-      &amp; isA(ENTITYX3,r__chief_0056_0009_r__crime_0056_0010)
-      &amp; genv(ENTITYX3) = r__Genoese_0056_0007
-      &amp; isA(ENTITYX6,r__pepper_0056_0017)
-      &amp; isA(ENTITYX7,r__4_0056_0021_r__d_0056_0022)
+      &amp; r_0056_0018__at_mnr(EVENTX10) = ENTITYX7
+      &amp; isA(ENTITYX1,r_0056_0002__chronicler)
+      &amp; isA(ENTITYX3,r_0056_0009__chief_crime)
+      &amp; genv(ENTITYX3) = r_0056_0007__Genoese
+      &amp; isA(ENTITYX6,r_0056_0017__pepper)
+      &amp; isA(ENTITYX7,r_0056_0021__4_d)
       &amp; attrib2(ENTITYX7) = ATTRIBX8
       &amp; mnr(ENTITYX7) = ENTITYX9
-      &amp; isA(ENTITYX9,r__pound_0056_0024)
-      &amp; isA(r__Walsingham_0056_0003,r__Walsingham_0056_0003)
-      &amp; prn1(r__Walsingham_0056_0003) = ENTITYX1
-      &amp; isA(r__Genoese_0056_0007,r__Genoese_0056_0007)
-      &amp; isA(ATTRIBX8,r__mere_0056_0020)
-      &amp; isA(EVENTX13,r__remarks_0056_0004)
-      &amp; arg0(EVENTX13) = r__Walsingham_0056_0003
+      &amp; isA(ENTITYX9,r_0056_0024__pound)
+      &amp; isA(r_0056_0003__Walsingham,r_0056_0003__Walsingham)
+      &amp; prn1(r_0056_0003__Walsingham) = ENTITYX1
+      &amp; isA(r_0056_0007__Genoese,r_0056_0007__Genoese)
+      &amp; isA(ATTRIBX8,r_0056_0020__mere)
+      &amp; isA(EVENTX13,r_0056_0004__remarks)
+      &amp; arg0(EVENTX13) = r_0056_0003__Walsingham
       &amp; arg1(EVENTX13) = STATEX2 ) ).
 
 

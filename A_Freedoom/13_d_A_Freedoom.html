@@ -122,12 +122,12 @@ Firstly , put some time into setting up your controls .
 </svg>
 <br>
 <pre>
-arc(imperative_0021_1002,r__put_0021_0003,scope).
-arc(r__put_0021_0003,r__Firstly_0021_0001,tmp1).
-arc(r__put_0021_0003,r__time_0021_0005,arg1).
-arc(r__time_0021_0005,r__setting_0021_0007_r__up_0021_0008,r__into_0021_0006).
-arc(r__setting_0021_0007_r__up_0021_0008,r__controls_0021_0010,arg1).
-arc(r__controls_0021_0010,r__your_0021_0009,genv).
+arc(imperative_0021_1002,r_0021_0003__put,scope).
+arc(r_0021_0003__put,r_0021_0001__Firstly,tmp1).
+arc(r_0021_0003__put,r_0021_0005__time,arg1).
+arc(r_0021_0005__time,r_0021_0007__setting_up,r_0021_0006__into).
+arc(r_0021_0007__setting_up,r_0021_0010__controls,arg1).
+arc(r_0021_0010__controls,r_0021_0009__your,genv).
 
 </pre>
 <br>
@@ -135,16 +135,16 @@ arc(r__controls_0021_0010,r__your_0021_0009,genv).
 fof(id_21_A_Freedoom,axiom,
     ? [EVENTX6,OPERATORX2,EVENTX11,EVENTX10,QUALITYX4,ENTITYX5,ENTITYX9] :
       ( EVENTX6 = EVENTX10
-      &amp; isA(EVENTX10,r__setting_0021_0007_r__up_0021_0008)
+      &amp; isA(EVENTX10,r_0021_0007__setting_up)
       &amp; arg1(EVENTX10) = ENTITYX9
-      &amp; isA(QUALITYX4,r__Firstly_0021_0001)
-      &amp; isA(ENTITYX5,r__time_0021_0005)
-      &amp; r__into_0021_0006(ENTITYX5) = EVENTX6
-      &amp; isA(ENTITYX9,r__controls_0021_0010)
-      &amp; genv(ENTITYX9) = r__your_0021_0009
+      &amp; isA(QUALITYX4,r_0021_0001__Firstly)
+      &amp; isA(ENTITYX5,r_0021_0005__time)
+      &amp; r_0021_0006__into(ENTITYX5) = EVENTX6
+      &amp; isA(ENTITYX9,r_0021_0010__controls)
+      &amp; genv(ENTITYX9) = r_0021_0009__your
       &amp; isA(OPERATORX2,imperative_0021_1002)
       &amp; scope(OPERATORX2) = EVENTX11
-      &amp; isA(EVENTX11,r__put_0021_0003)
+      &amp; isA(EVENTX11,r_0021_0003__put)
       &amp; tmp1(EVENTX11) = QUALITYX4
       &amp; arg1(EVENTX11) = ENTITYX5 ) ).
 

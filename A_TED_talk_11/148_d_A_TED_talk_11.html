@@ -90,16 +90,16 @@ The brain is n't divided into compartments .
 <title>0193_0005&#45;&gt;0193_0007</title>
 <path fill="none" stroke="black" d="M110.98,-87.61C120.39,-75.31 133.44,-58.23 144.18,-44.2"/>
 <polygon fill="black" stroke="black" points="147.21,-45.99 150.51,-35.92 141.65,-41.74 147.21,-45.99"/>
-<text text-anchor="middle" x="166.45" y="-57.8" font-family="fixed" font-size="14.00">into_[loc]</text>
+<text text-anchor="middle" x="162.95" y="-57.8" font-family="fixed" font-size="14.00">into[loc]</text>
 </g>
 </g>
 </svg>
 <br>
 <pre>
-arc(r__is_0193_0003,r__n_apos_t_0193_0004,catenative).
-arc(r__n_apos_t_0193_0004,r__divided_0193_0005,scope).
-arc(r__divided_0193_0005,r__brain_0193_0002,arg1).
-arc(r__divided_0193_0005,r__compartments_0193_0007,r__into_0193_0006_loc).
+arc(r_0193_0003__is,r_0193_0004__n_apos_t,catenative).
+arc(r_0193_0004__n_apos_t,r_0193_0005__divided,scope).
+arc(r_0193_0005__divided,r_0193_0002__brain,arg1).
+arc(r_0193_0005__divided,r_0193_0007__compartments,r_0193_0006__into_loc).
 
 </pre>
 <br>
@@ -107,14 +107,14 @@ arc(r__divided_0193_0005,r__compartments_0193_0007,r__into_0193_0006_loc).
 fof(id_193_A_TED_talk_11,axiom,
     ? [CATENATIVEX2,EVENTX7,OPERATORX5,EVENTX6,ENTITYX1,ENTITYX4] :
       ( CATENATIVEX2 = OPERATORX5
-      &amp; isA(OPERATORX5,r__n_apos_t_0193_0004)
+      &amp; isA(OPERATORX5,r_0193_0004__n_apos_t)
       &amp; scope(OPERATORX5) = EVENTX6
-      &amp; isA(EVENTX6,r__divided_0193_0005)
+      &amp; isA(EVENTX6,r_0193_0005__divided)
       &amp; arg1(EVENTX6) = ENTITYX1
-      &amp; r__into_0193_0006_loc(EVENTX6) = ENTITYX4
-      &amp; isA(ENTITYX1,r__brain_0193_0002)
-      &amp; isA(ENTITYX4,r__compartments_0193_0007)
-      &amp; isA(EVENTX7,r__is_0193_0003)
+      &amp; r_0193_0006__into_loc(EVENTX6) = ENTITYX4
+      &amp; isA(ENTITYX1,r_0193_0002__brain)
+      &amp; isA(ENTITYX4,r_0193_0007__compartments)
+      &amp; isA(EVENTX7,r_0193_0003__is)
       &amp; catenative(EVENTX7) = CATENATIVEX2 ) ).
 
 

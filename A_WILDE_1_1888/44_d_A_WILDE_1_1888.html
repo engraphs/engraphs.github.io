@@ -109,11 +109,11 @@
 </svg>
 <br>
 <pre>
-arc(utterance_0166_1003,r__is_0166_0003,part1).
-arc(r__is_0166_0003,r__It_0166_0002,arg0).
-arc(r__is_0166_0003,r__winter_0166_0004,prd2).
-arc(r__answered_0166_0007,utterance_0166_1003,arg1).
-arc(r__answered_0166_0007,r__Swallow_0166_0009,arg0).
+arc(r_0166_0003__is,r_0166_0002__It,arg0).
+arc(r_0166_0003__is,r_0166_0004__winter,prd2).
+arc(r_0166_0007__answered,r_0166_0009__Swallow,arg0).
+arc(r_0166_0007__answered,utterance_0166_1003,arg1).
+arc(utterance_0166_1003,r_0166_0003__is,part1).
 
 </pre>
 <br>
@@ -123,12 +123,12 @@ fof(id_166_A_WILDE_1_1888,axiom,
       ( STATEX1 = CONJX6
       &amp; isA(CONJX6,utterance_0166_1003)
       &amp; part1(CONJX6) = EVENTX5
-      &amp; isA(EVENTX5,r__is_0166_0003)
-      &amp; arg0(EVENTX5) = r__It_0166_0002
+      &amp; isA(EVENTX5,r_0166_0003__is)
+      &amp; arg0(EVENTX5) = r_0166_0002__It
       &amp; prd2(EVENTX5) = ENTITYX4
-      &amp; isA(ENTITYX4,r__winter_0166_0004)
-      &amp; isA(ENTITYX7,r__Swallow_0166_0009)
-      &amp; isA(EVENTX8,r__answered_0166_0007)
+      &amp; isA(ENTITYX4,r_0166_0004__winter)
+      &amp; isA(ENTITYX7,r_0166_0009__Swallow)
+      &amp; isA(EVENTX8,r_0166_0007__answered)
       &amp; arg1(EVENTX8) = STATEX1
       &amp; arg0(EVENTX8) = ENTITYX7 ) ).
 

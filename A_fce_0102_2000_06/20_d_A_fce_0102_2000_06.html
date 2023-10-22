@@ -96,22 +96,22 @@ You could win a shopping trip to New York !
 </svg>
 <br>
 <pre>
-arc(r__could_0020_0002,r__win_0020_0003,scope).
-arc(r__win_0020_0003,r__You_0020_0001,arg0).
-arc(r__win_0020_0003,r__shopping_0020_0005_r__trip_0020_0006,arg1).
-arc(r__shopping_0020_0005_r__trip_0020_0006,r__New_0020_0008_r__York_0020_0009,r__to_0020_0007).
+arc(r_0020_0002__could,r_0020_0003__win,scope).
+arc(r_0020_0003__win,r_0020_0001__You,arg0).
+arc(r_0020_0003__win,r_0020_0005__shopping_trip,arg1).
+arc(r_0020_0005__shopping_trip,r_0020_0008__New_York,r_0020_0007__to).
 
 </pre>
 <br>
 <pre>
 fof(id_20_A_fce_0102_2000_06,axiom,
     ? [OPERATORX2,EVENTX3,ENTITYX1] :
-      ( isA(ENTITYX1,r__shopping_0020_0005_r__trip_0020_0006)
-      &amp; r__to_0020_0007(ENTITYX1) = r__New_0020_0008_r__York_0020_0009
-      &amp; isA(OPERATORX2,r__could_0020_0002)
+      ( isA(ENTITYX1,r_0020_0005__shopping_trip)
+      &amp; r_0020_0007__to(ENTITYX1) = r_0020_0008__New_York
+      &amp; isA(OPERATORX2,r_0020_0002__could)
       &amp; scope(OPERATORX2) = EVENTX3
-      &amp; isA(EVENTX3,r__win_0020_0003)
-      &amp; arg0(EVENTX3) = r__You_0020_0001
+      &amp; isA(EVENTX3,r_0020_0003__win)
+      &amp; arg0(EVENTX3) = r_0020_0001__You
       &amp; arg1(EVENTX3) = ENTITYX1 ) ).
 
 

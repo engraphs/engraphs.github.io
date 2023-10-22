@@ -134,8 +134,8 @@ The practical application of the above idea will involve considerable experiment
 <!-- 0049_0012_tmp -->
 <g id="node9" class="node">
 <title>0049_0012_tmp</title>
-<ellipse fill="none" stroke="black" cx="249.14" cy="-540" rx="68.79" ry="18"/>
-<text text-anchor="middle" x="249.14" y="-536.3" font-family="fixed" font-size="14.00">before_[tmp]</text>
+<ellipse fill="none" stroke="black" cx="249.14" cy="-540" rx="64.19" ry="18"/>
+<text text-anchor="middle" x="249.14" y="-536.3" font-family="fixed" font-size="14.00">before[tmp]</text>
 </g>
 <!-- 0049_0012_tmp&#45;&gt;0049_0008 -->
 <g id="edge8" class="edge">
@@ -194,18 +194,18 @@ The practical application of the above idea will involve considerable experiment
 </svg>
 <br>
 <pre>
-arc(r__application_0049_0003,r__practical_0049_0002,attrib2).
-arc(r__application_0049_0003,r__idea_0049_0007,r__of_0049_0004).
-arc(r__idea_0049_0007,r__above_0049_0006,quality2).
-arc(r__will_0049_0008,r__involve_0049_0009,scope).
-arc(r__involve_0049_0009,r__application_0049_0003,arg0).
-arc(r__involve_0049_0009,r__experimentation_0049_0011,arg1).
-arc(r__experimentation_0049_0011,r__considerable_0049_0010,attrib1).
-arc(r__before_0049_0012_tmp,r__will_0049_0008,scope).
-arc(r__before_0049_0012_tmp,r__can_0049_0014,restriction).
-arc(r__can_0049_0014,r__be_0049_0015,scope).
-arc(r__be_0049_0015,r__realised_0049_0016,catenative).
-arc(r__realised_0049_0016,r__application_0049_0003,arg1).
+arc(r_0049_0003__application,r_0049_0002__practical,attrib2).
+arc(r_0049_0003__application,r_0049_0007__idea,r_0049_0004__of).
+arc(r_0049_0007__idea,r_0049_0006__above,quality2).
+arc(r_0049_0008__will,r_0049_0009__involve,scope).
+arc(r_0049_0009__involve,r_0049_0003__application,arg0).
+arc(r_0049_0009__involve,r_0049_0011__experimentation,arg1).
+arc(r_0049_0011__experimentation,r_0049_0010__considerable,attrib1).
+arc(r_0049_0012__before_tmp,r_0049_0008__will,scope).
+arc(r_0049_0012__before_tmp,r_0049_0014__can,restriction).
+arc(r_0049_0014__can,r_0049_0015__be,scope).
+arc(r_0049_0015__be,r_0049_0016__realised,catenative).
+arc(r_0049_0016__realised,r_0049_0003__application,arg1).
 
 </pre>
 <br>
@@ -213,30 +213,30 @@ arc(r__realised_0049_0016,r__application_0049_0003,arg1).
 fof(id_49_A_lob_J01,axiom,
     ? [CATENATIVEX10,APPLICATIONX8,CONNX7,OPERATORX9,EVENTX13,EVENTX12,OPERATORX14,EVENTX15,APPLICATIONX1,ENTITYX5,ENTITYX3,ATTRIBX6,ATTRIBX2,QUALITYX4] :
       ( CATENATIVEX10 = EVENTX12
-      &amp; isA(EVENTX12,r__realised_0049_0016)
+      &amp; isA(EVENTX12,r_0049_0016__realised)
       &amp; arg1(EVENTX12) = APPLICATIONX8
-      &amp; isA(APPLICATIONX1,r__application_0049_0003)
+      &amp; isA(APPLICATIONX1,r_0049_0003__application)
       &amp; attrib2(APPLICATIONX1) = ATTRIBX2
-      &amp; r__of_0049_0004(APPLICATIONX1) = ENTITYX3
-      &amp; isA(ENTITYX3,r__idea_0049_0007)
+      &amp; r_0049_0004__of(APPLICATIONX1) = ENTITYX3
+      &amp; isA(ENTITYX3,r_0049_0007__idea)
       &amp; quality2(ENTITYX3) = QUALITYX4
-      &amp; isA(ENTITYX5,r__experimentation_0049_0011)
+      &amp; isA(ENTITYX5,r_0049_0011__experimentation)
       &amp; attrib1(ENTITYX5) = ATTRIBX6
       &amp; APPLICATIONX8 = APPLICATIONX1
-      &amp; isA(ATTRIBX2,r__practical_0049_0002)
-      &amp; isA(ATTRIBX6,r__considerable_0049_0010)
-      &amp; isA(QUALITYX4,r__above_0049_0006)
-      &amp; isA(CONNX7,r__before_0049_0012_tmp)
+      &amp; isA(ATTRIBX2,r_0049_0002__practical)
+      &amp; isA(ATTRIBX6,r_0049_0010__considerable)
+      &amp; isA(QUALITYX4,r_0049_0006__above)
+      &amp; isA(CONNX7,r_0049_0012__before_tmp)
       &amp; scope(CONNX7) = OPERATORX14
-      &amp; isA(OPERATORX14,r__will_0049_0008)
+      &amp; isA(OPERATORX14,r_0049_0008__will)
       &amp; scope(OPERATORX14) = EVENTX15
-      &amp; isA(EVENTX15,r__involve_0049_0009)
+      &amp; isA(EVENTX15,r_0049_0009__involve)
       &amp; arg0(EVENTX15) = APPLICATIONX1
       &amp; arg1(EVENTX15) = ENTITYX5
       &amp; restriction(CONNX7) = OPERATORX9
-      &amp; isA(OPERATORX9,r__can_0049_0014)
+      &amp; isA(OPERATORX9,r_0049_0014__can)
       &amp; scope(OPERATORX9) = EVENTX13
-      &amp; isA(EVENTX13,r__be_0049_0015)
+      &amp; isA(EVENTX13,r_0049_0015__be)
       &amp; catenative(EVENTX13) = CATENATIVEX10 ) ).
 
 

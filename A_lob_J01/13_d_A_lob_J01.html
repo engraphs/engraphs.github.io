@@ -175,23 +175,23 @@ The solubility of oxygen as Na&lt;bsub&gt;2&lt;ast&gt;&lt;bsub&gt;0 in sodium ha
 <title>0013_0014&#45;&gt;0013_0017</title>
 <path fill="none" stroke="black" d="M317.32,-350.77C335.62,-337.48 363.21,-317.44 384.36,-302.07"/>
 <polygon fill="black" stroke="black" points="386.66,-304.72 392.7,-296.01 382.55,-299.06 386.66,-304.72"/>
-<text text-anchor="middle" x="411.24" y="-318.8" font-family="fixed" font-size="14.00">[arg0]by_[lgs]</text>
+<text text-anchor="middle" x="408.24" y="-318.8" font-family="fixed" font-size="14.00">[arg0]by[lgs]</text>
 </g>
 </g>
 </svg>
 <br>
 <pre>
-arc(r__solubility_0013_0002,r__oxygen_0013_0004,r__of_0013_0003).
-arc(r__oxygen_0013_0004,r__Na_bsub_2_ast__bsub_0_0013_0006,r__as_0013_0005).
-arc(r__oxygen_0013_0004,r__sodium_0013_0008,r__in_0013_0007).
-arc(r__has_0013_0009,r__been_0013_0010,catenative).
-arc(r__been_0013_0010,r__determined_0013_0011,catenative).
-arc(r__determined_0013_0011,r__solubility_0013_0002,arg1).
-arc(r__and_0013_0012,r__has_0013_0009,conj1).
-arc(r__and_0013_0012,r__is_0013_0013,conj2).
-arc(r__is_0013_0013,r__given_0013_0014,catenative).
-arc(r__given_0013_0014,r__solubility_0013_0002,arg1).
-arc(r__given_0013_0014,r__relationship_0013_0017,arg0_r__by_0013_0015_lgs).
+arc(r_0013_0002__solubility,r_0013_0004__oxygen,r_0013_0003__of).
+arc(r_0013_0004__oxygen,r_0013_0006__Na_bsub_2_ast__bsub_0,r_0013_0005__as).
+arc(r_0013_0004__oxygen,r_0013_0008__sodium,r_0013_0007__in).
+arc(r_0013_0009__has,r_0013_0010__been,catenative).
+arc(r_0013_0010__been,r_0013_0011__determined,catenative).
+arc(r_0013_0011__determined,r_0013_0002__solubility,arg1).
+arc(r_0013_0012__and,r_0013_0009__has,conj1).
+arc(r_0013_0012__and,r_0013_0013__is,conj2).
+arc(r_0013_0013__is,r_0013_0014__given,catenative).
+arc(r_0013_0014__given,r_0013_0002__solubility,arg1).
+arc(r_0013_0014__given,r_0013_0017__relationship,arg0_by_lgs).
 
 </pre>
 <br>
@@ -199,28 +199,28 @@ arc(r__given_0013_0014,r__relationship_0013_0017,arg0_r__by_0013_0015_lgs).
 fof(id_13_A_lob_J01,axiom,
     ? [CATENATIVEX4,CATENATIVEX5,CATENATIVEX10,CONJX14,EVENTX13,EVENTX12,EVENTX9,EVENTX8,EVENTX7,ENTITYX1,ENTITYX11,ENTITYX2,ENTITYX3] :
       ( CATENATIVEX4 = EVENTX8
-      &amp; isA(EVENTX8,r__been_0013_0010)
+      &amp; isA(EVENTX8,r_0013_0010__been)
       &amp; catenative(EVENTX8) = CATENATIVEX5
       &amp; CATENATIVEX5 = EVENTX7
-      &amp; isA(EVENTX7,r__determined_0013_0011)
+      &amp; isA(EVENTX7,r_0013_0011__determined)
       &amp; arg1(EVENTX7) = ENTITYX1
       &amp; CATENATIVEX10 = EVENTX12
-      &amp; isA(EVENTX12,r__given_0013_0014)
-      &amp; arg0_r__by_0013_0015_lgs(EVENTX12) = ENTITYX11
+      &amp; isA(EVENTX12,r_0013_0014__given)
+      &amp; arg0_by_lgs(EVENTX12) = ENTITYX11
       &amp; arg1(EVENTX12) = ENTITYX1
-      &amp; isA(ENTITYX1,r__solubility_0013_0002)
-      &amp; r__of_0013_0003(ENTITYX1) = ENTITYX2
-      &amp; isA(ENTITYX2,r__oxygen_0013_0004)
-      &amp; r__as_0013_0005(ENTITYX2) = r__Na_bsub_2_ast__bsub_0_0013_0006
-      &amp; r__in_0013_0007(ENTITYX2) = ENTITYX3
-      &amp; isA(ENTITYX3,r__sodium_0013_0008)
-      &amp; isA(ENTITYX11,r__relationship_0013_0017)
-      &amp; isA(CONJX14,r__and_0013_0012)
+      &amp; isA(ENTITYX1,r_0013_0002__solubility)
+      &amp; r_0013_0003__of(ENTITYX1) = ENTITYX2
+      &amp; isA(ENTITYX2,r_0013_0004__oxygen)
+      &amp; r_0013_0005__as(ENTITYX2) = r_0013_0006__Na_bsub_2_ast__bsub_0
+      &amp; r_0013_0007__in(ENTITYX2) = ENTITYX3
+      &amp; isA(ENTITYX3,r_0013_0008__sodium)
+      &amp; isA(ENTITYX11,r_0013_0017__relationship)
+      &amp; isA(CONJX14,r_0013_0012__and)
       &amp; conj1(CONJX14) = EVENTX9
-      &amp; isA(EVENTX9,r__has_0013_0009)
+      &amp; isA(EVENTX9,r_0013_0009__has)
       &amp; catenative(EVENTX9) = CATENATIVEX4
       &amp; conj2(CONJX14) = EVENTX13
-      &amp; isA(EVENTX13,r__is_0013_0013)
+      &amp; isA(EVENTX13,r_0013_0013__is)
       &amp; catenative(EVENTX13) = CATENATIVEX10 ) ).
 
 

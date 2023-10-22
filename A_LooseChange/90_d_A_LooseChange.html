@@ -77,15 +77,15 @@ She was convinced of it .
 <title>0162_0003&#45;&gt;0162_0005</title>
 <path fill="none" stroke="black" d="M71.44,-86.8C76.67,-74.78 83.75,-58.51 89.67,-44.92"/>
 <polygon fill="black" stroke="black" points="92.94,-46.16 93.72,-35.6 86.52,-43.37 92.94,-46.16"/>
-<text text-anchor="middle" x="109.95" y="-57.8" font-family="fixed" font-size="14.00">of_[rst]</text>
+<text text-anchor="middle" x="106.45" y="-57.8" font-family="fixed" font-size="14.00">of[rst]</text>
 </g>
 </g>
 </svg>
 <br>
 <pre>
-arc(r__was_0162_0002,r__convinced_0162_0003,catenative).
-arc(r__convinced_0162_0003,r__She_0162_0001,arg1).
-arc(r__convinced_0162_0003,r__it_0162_0005,r__of_0162_0004_rst).
+arc(r_0162_0002__was,r_0162_0003__convinced,catenative).
+arc(r_0162_0003__convinced,r_0162_0001__She,arg1).
+arc(r_0162_0003__convinced,r_0162_0005__it,r_0162_0004__of_rst).
 
 </pre>
 <br>
@@ -93,10 +93,10 @@ arc(r__convinced_0162_0003,r__it_0162_0005,r__of_0162_0004_rst).
 fof(id_162_A_LooseChange,axiom,
     ? [CATENATIVEX1,EVENTX4,EVENTX3] :
       ( CATENATIVEX1 = EVENTX3
-      &amp; isA(EVENTX3,r__convinced_0162_0003)
-      &amp; arg1(EVENTX3) = r__She_0162_0001
-      &amp; r__of_0162_0004_rst(EVENTX3) = r__it_0162_0005
-      &amp; isA(EVENTX4,r__was_0162_0002)
+      &amp; isA(EVENTX3,r_0162_0003__convinced)
+      &amp; arg1(EVENTX3) = r_0162_0001__She
+      &amp; r_0162_0004__of_rst(EVENTX3) = r_0162_0005__it
+      &amp; isA(EVENTX4,r_0162_0002__was)
       &amp; catenative(EVENTX4) = CATENATIVEX1 ) ).
 
 

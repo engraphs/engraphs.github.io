@@ -148,14 +148,14 @@ Private investment has even made an increasingly modern ferry fleet possible .
 </svg>
 <br>
 <pre>
-arc(r__investment_0137_0002,r__Private_0137_0001,attrib1).
-arc(r__has_0137_0003,r__even_0137_0004,catenative).
-arc(r__even_0137_0004,r__made_0137_0005,scope).
-arc(r__made_0137_0005,r__investment_0137_0002,arg0).
-arc(r__made_0137_0005,r__ferry_0137_0009_r__fleet_0137_0010,arg1).
-arc(r__made_0137_0005,r__possible_0137_0011,prd).
-arc(r__modern_0137_0008,r__increasingly_0137_0007,quality1).
-arc(r__ferry_0137_0009_r__fleet_0137_0010,r__modern_0137_0008,attrib2).
+arc(r_0137_0002__investment,r_0137_0001__Private,attrib1).
+arc(r_0137_0003__has,r_0137_0004__even,catenative).
+arc(r_0137_0004__even,r_0137_0005__made,scope).
+arc(r_0137_0005__made,r_0137_0002__investment,arg0).
+arc(r_0137_0005__made,r_0137_0009__ferry_fleet,arg1).
+arc(r_0137_0005__made,r_0137_0011__possible,prd).
+arc(r_0137_0008__modern,r_0137_0007__increasingly,quality1).
+arc(r_0137_0009__ferry_fleet,r_0137_0008__modern,attrib2).
 
 </pre>
 <br>
@@ -163,22 +163,22 @@ arc(r__ferry_0137_0009_r__fleet_0137_0010,r__modern_0137_0008,attrib2).
 fof(id_137_A_ANC_HistoryOfGreece,axiom,
     ? [CATENATIVEX3,EVENTX10,OPERATORX4,EVENTX9,ENTITYX1,ENTITYX5,ATTRIBX8,ATTRIBX6,ATTRIBX2,QUALITYX7] :
       ( CATENATIVEX3 = OPERATORX4
-      &amp; isA(OPERATORX4,r__even_0137_0004)
+      &amp; isA(OPERATORX4,r_0137_0004__even)
       &amp; scope(OPERATORX4) = EVENTX9
-      &amp; isA(EVENTX9,r__made_0137_0005)
+      &amp; isA(EVENTX9,r_0137_0005__made)
       &amp; arg0(EVENTX9) = ENTITYX1
       &amp; arg1(EVENTX9) = ENTITYX5
       &amp; prd(EVENTX9) = ATTRIBX8
-      &amp; isA(ENTITYX1,r__investment_0137_0002)
+      &amp; isA(ENTITYX1,r_0137_0002__investment)
       &amp; attrib1(ENTITYX1) = ATTRIBX2
-      &amp; isA(ENTITYX5,r__ferry_0137_0009_r__fleet_0137_0010)
+      &amp; isA(ENTITYX5,r_0137_0009__ferry_fleet)
       &amp; attrib2(ENTITYX5) = ATTRIBX6
-      &amp; isA(ATTRIBX2,r__Private_0137_0001)
-      &amp; isA(ATTRIBX6,r__modern_0137_0008)
+      &amp; isA(ATTRIBX2,r_0137_0001__Private)
+      &amp; isA(ATTRIBX6,r_0137_0008__modern)
       &amp; quality1(ATTRIBX6) = QUALITYX7
-      &amp; isA(ATTRIBX8,r__possible_0137_0011)
-      &amp; isA(QUALITYX7,r__increasingly_0137_0007)
-      &amp; isA(EVENTX10,r__has_0137_0003)
+      &amp; isA(ATTRIBX8,r_0137_0011__possible)
+      &amp; isA(QUALITYX7,r_0137_0007__increasingly)
+      &amp; isA(EVENTX10,r_0137_0003__has)
       &amp; catenative(EVENTX10) = CATENATIVEX3 ) ).
 
 

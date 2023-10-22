@@ -227,21 +227,21 @@ Consultation with a travel medicine physician is needed to evaluate individual r
 </svg>
 <br>
 <pre>
-arc(cnt_0007_1003,r__is_0007_0007,scope).
-arc(cnt_0007_1003,r__and_0007_0013,restriction).
-arc(r__Consultation_0007_0001,r__travel_0007_0004_r__medicine_0007_0005_r__physician_0007_0006,r__with_0007_0002).
-arc(r__is_0007_0007,r__needed_0007_0008,catenative).
-arc(r__needed_0007_0008,r__Consultation_0007_0001,arg1).
-arc(r__evaluate_0007_0010,r__Consultation_0007_0001,arg0).
-arc(r__evaluate_0007_0010,r__risk_0007_0012,arg1).
-arc(r__risk_0007_0012,r__individual_0007_0011,attrib1).
-arc(r__and_0007_0013,r__evaluate_0007_0010,conj1).
-arc(r__and_0007_0013,r__recommend_0007_0014,conj2).
-arc(r__recommend_0007_0014,r__Consultation_0007_0001,arg0).
-arc(r__recommend_0007_0014,r__measures_0007_0017,arg1).
-arc(r__measures_0007_0017,r__appropriate_0007_0015,attrib1).
-arc(r__measures_0007_0017,r__preventive_0007_0016,attrib2).
-arc(r__measures_0007_0017,r__vaccines_0007_0019,r__such_as_0007_0018).
+arc(cnt_0007_1003,r_0007_0007__is,scope).
+arc(cnt_0007_1003,r_0007_0013__and,restriction).
+arc(r_0007_0001__Consultation,r_0007_0004__travel_medicine_physician,r_0007_0002__with).
+arc(r_0007_0007__is,r_0007_0008__needed,catenative).
+arc(r_0007_0008__needed,r_0007_0001__Consultation,arg1).
+arc(r_0007_0010__evaluate,r_0007_0001__Consultation,arg0).
+arc(r_0007_0010__evaluate,r_0007_0012__risk,arg1).
+arc(r_0007_0012__risk,r_0007_0011__individual,attrib1).
+arc(r_0007_0013__and,r_0007_0010__evaluate,conj1).
+arc(r_0007_0013__and,r_0007_0014__recommend,conj2).
+arc(r_0007_0014__recommend,r_0007_0001__Consultation,arg0).
+arc(r_0007_0014__recommend,r_0007_0017__measures,arg1).
+arc(r_0007_0017__measures,r_0007_0015__appropriate,attrib1).
+arc(r_0007_0017__measures,r_0007_0016__preventive,attrib2).
+arc(r_0007_0017__measures,r_0007_0019__vaccines,r_0007_0018__such_as).
 
 </pre>
 <br>
@@ -249,33 +249,33 @@ arc(r__measures_0007_0017,r__vaccines_0007_0019,r__such_as_0007_0018).
 fof(id_7_A_FACTBOOK_1_2010,axiom,
     ? [CATENATIVEX14,CONNX4,CONJX13,EVENTX12,EVENTX7,EVENTX17,EVENTX16,ENTITYX1,ENTITYX8,ENTITYX11,ENTITYX5,ENTITYX2,ATTRIBX9,ATTRIBX10,ATTRIBX6] :
       ( CATENATIVEX14 = EVENTX16
-      &amp; isA(EVENTX16,r__needed_0007_0008)
+      &amp; isA(EVENTX16,r_0007_0008__needed)
       &amp; arg1(EVENTX16) = ENTITYX1
-      &amp; isA(ENTITYX1,r__Consultation_0007_0001)
-      &amp; r__with_0007_0002(ENTITYX1) = ENTITYX2
-      &amp; isA(ENTITYX2,r__travel_0007_0004_r__medicine_0007_0005_r__physician_0007_0006)
-      &amp; isA(ENTITYX5,r__risk_0007_0012)
+      &amp; isA(ENTITYX1,r_0007_0001__Consultation)
+      &amp; r_0007_0002__with(ENTITYX1) = ENTITYX2
+      &amp; isA(ENTITYX2,r_0007_0004__travel_medicine_physician)
+      &amp; isA(ENTITYX5,r_0007_0012__risk)
       &amp; attrib1(ENTITYX5) = ATTRIBX6
-      &amp; isA(ENTITYX8,r__measures_0007_0017)
+      &amp; isA(ENTITYX8,r_0007_0017__measures)
       &amp; attrib1(ENTITYX8) = ATTRIBX9
       &amp; attrib2(ENTITYX8) = ATTRIBX10
-      &amp; r__such_as_0007_0018(ENTITYX8) = ENTITYX11
-      &amp; isA(ENTITYX11,r__vaccines_0007_0019)
-      &amp; isA(ATTRIBX6,r__individual_0007_0011)
-      &amp; isA(ATTRIBX9,r__appropriate_0007_0015)
-      &amp; isA(ATTRIBX10,r__preventive_0007_0016)
+      &amp; r_0007_0018__such_as(ENTITYX8) = ENTITYX11
+      &amp; isA(ENTITYX11,r_0007_0019__vaccines)
+      &amp; isA(ATTRIBX6,r_0007_0011__individual)
+      &amp; isA(ATTRIBX9,r_0007_0015__appropriate)
+      &amp; isA(ATTRIBX10,r_0007_0016__preventive)
       &amp; isA(CONNX4,cnt_0007_1003)
       &amp; scope(CONNX4) = EVENTX17
-      &amp; isA(EVENTX17,r__is_0007_0007)
+      &amp; isA(EVENTX17,r_0007_0007__is)
       &amp; catenative(EVENTX17) = CATENATIVEX14
       &amp; restriction(CONNX4) = CONJX13
-      &amp; isA(CONJX13,r__and_0007_0013)
+      &amp; isA(CONJX13,r_0007_0013__and)
       &amp; conj1(CONJX13) = EVENTX7
-      &amp; isA(EVENTX7,r__evaluate_0007_0010)
+      &amp; isA(EVENTX7,r_0007_0010__evaluate)
       &amp; arg0(EVENTX7) = ENTITYX1
       &amp; arg1(EVENTX7) = ENTITYX5
       &amp; conj2(CONJX13) = EVENTX12
-      &amp; isA(EVENTX12,r__recommend_0007_0014)
+      &amp; isA(EVENTX12,r_0007_0014__recommend)
       &amp; arg0(EVENTX12) = ENTITYX1
       &amp; arg1(EVENTX12) = ENTITYX8 ) ).
 

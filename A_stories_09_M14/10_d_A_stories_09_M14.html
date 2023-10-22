@@ -193,49 +193,49 @@ It is a life-saver .
 </svg>
 <br>
 <pre>
-arc(quantificational_r__everybody_0011_0006,r__should_0011_0007,scope).
-arc(quantificational_r__everybody_0011_0006,z_0011_1009,restriction).
-arc(r__is_0011_0002,r__Swimming_0011_0001,arg0).
-arc(r__is_0011_0002,r__fun_0011_0004,prd2).
-arc(r__fun_0011_0004,r__great_0011_0003,attrib1).
-arc(r__and_0011_0005,quantificational_r__everybody_0011_0006,conj2).
-arc(r__and_0011_0005,r__is_0011_0002,conj1).
-arc(r__should_0011_0007,r__try_0011_0008,scope).
-arc(r__try_0011_0008,r__Swimming_0011_0001,arg1).
-arc(r__try_0011_0008,z_0011_1009,arg0).
-arc(r__is_0012_0002,r__Swimming_0011_0001,arg0).
-arc(r__is_0012_0002,r__life_saver_0012_0004,prd2).
+arc(r_0011_0002__is,r_0011_0001__Swimming,arg0).
+arc(r_0011_0002__is,r_0011_0004__fun,prd2).
+arc(r_0011_0004__fun,r_0011_0003__great,attrib1).
+arc(r_0011_0005__and,r_0011_0002__is,conj1).
+arc(r_0011_0005__and,r_0011_0006__quantificational__everybody,conj2).
+arc(r_0011_0006__quantificational__everybody,r_0011_0007__should,scope).
+arc(r_0011_0006__quantificational__everybody,z_0011_1009,restriction).
+arc(r_0011_0007__should,r_0011_0008__try,scope).
+arc(r_0011_0008__try,r_0011_0001__Swimming,arg1).
+arc(r_0011_0008__try,z_0011_1009,arg0).
+arc(r_0012_0002__is,r_0011_0001__Swimming,arg0).
+arc(r_0012_0002__is,r_0012_0004__life_saver,prd2).
 
 </pre>
 <br>
 <pre>
 fof(id_11_A_stories_09_M14__12_A_stories_09_M14,axiom,
     ? [SWIMMINGX10,SWIMMINGX14,EVENTX16,CONJX13,QUANTX8,OPERATORX11,EVENTX12,EVENTX6,ENTITYX15,ENTITYX7,SWIMMINGX3,ENTITYX4,ATTRIBX5] :
-      ( isA(SWIMMINGX3,r__Swimming_0011_0001)
-      &amp; isA(ENTITYX4,r__fun_0011_0004)
+      ( isA(SWIMMINGX3,r_0011_0001__Swimming)
+      &amp; isA(ENTITYX4,r_0011_0004__fun)
       &amp; attrib1(ENTITYX4) = ATTRIBX5
       &amp; SWIMMINGX10 = SWIMMINGX3
       &amp; SWIMMINGX14 = SWIMMINGX3
-      &amp; isA(ENTITYX15,r__life_saver_0012_0004)
-      &amp; isA(ATTRIBX5,r__great_0011_0003)
-      &amp; isA(CONJX13,r__and_0011_0005)
+      &amp; isA(ENTITYX15,r_0012_0004__life_saver)
+      &amp; isA(ATTRIBX5,r_0011_0003__great)
+      &amp; isA(CONJX13,r_0011_0005__and)
       &amp; conj1(CONJX13) = EVENTX6
-      &amp; isA(EVENTX6,r__is_0011_0002)
+      &amp; isA(EVENTX6,r_0011_0002__is)
       &amp; arg0(EVENTX6) = SWIMMINGX3
       &amp; arg0(EVENTX6) = SWIMMINGX3
       &amp; prd2(EVENTX6) = ENTITYX4
       &amp; conj2(CONJX13) = QUANTX8
-      &amp; isA(QUANTX8,quantificational_r__everybody_0011_0006)
+      &amp; isA(QUANTX8,r_0011_0006__quantificational__everybody)
       &amp; restriction(QUANTX8) = ENTITYX7
       &amp; isA(ENTITYX7,z_0011_1009)
       &amp; scope(QUANTX8) = OPERATORX11
-      &amp; isA(OPERATORX11,r__should_0011_0007)
+      &amp; isA(OPERATORX11,r_0011_0007__should)
       &amp; scope(OPERATORX11) = EVENTX12
-      &amp; isA(EVENTX12,r__try_0011_0008)
+      &amp; isA(EVENTX12,r_0011_0008__try)
       &amp; arg0(EVENTX12) = ENTITYX7
       &amp; arg0(EVENTX12) = ENTITYX7
       &amp; arg1(EVENTX12) = SWIMMINGX10
-      &amp; isA(EVENTX16,r__is_0012_0002)
+      &amp; isA(EVENTX16,r_0012_0002__is)
       &amp; arg0(EVENTX16) = SWIMMINGX14
       &amp; prd2(EVENTX16) = ENTITYX15 ) ).
 

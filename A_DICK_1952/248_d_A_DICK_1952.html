@@ -77,7 +77,7 @@ A slim vane turned with the wind , a network of rods atop a high pole .
 <title>0310_0004&#45;&gt;0310_0007</title>
 <path fill="none" stroke="black" d="M115.5,-347.8C115.5,-336.16 115.5,-320.55 115.5,-307.24"/>
 <polygon fill="black" stroke="black" points="119,-307.18 115.5,-297.18 112,-307.18 119,-307.18"/>
-<text text-anchor="middle" x="148.5" y="-318.8" font-family="fixed" font-size="14.00">with_[dir]</text>
+<text text-anchor="middle" x="145" y="-318.8" font-family="fixed" font-size="14.00">with[dir]</text>
 </g>
 <!-- 0310_0010 -->
 <g id="node5" class="node">
@@ -88,9 +88,9 @@ A slim vane turned with the wind , a network of rods atop a high pole .
 <!-- 0310_0004&#45;&gt;0310_0010 -->
 <g id="edge4" class="edge">
 <title>0310_0004&#45;&gt;0310_0010</title>
-<path fill="none" stroke="black" d="M146.57,-354.21C159.71,-348.52 174.49,-340.51 185.5,-330 192.5,-323.31 198.23,-314.48 202.64,-306.1"/>
-<polygon fill="black" stroke="black" points="205.85,-307.5 207.05,-296.97 199.55,-304.45 205.85,-307.5"/>
-<text text-anchor="middle" x="215.5" y="-318.8" font-family="fixed" font-size="14.00">[abs]</text>
+<path fill="none" stroke="black" d="M143.62,-352.82C155.2,-346.97 168.27,-339.22 178.5,-330 186.32,-322.94 193.35,-313.82 199.02,-305.31"/>
+<polygon fill="black" stroke="black" points="202.04,-307.09 204.41,-296.77 196.12,-303.36 202.04,-307.09"/>
+<text text-anchor="middle" x="210.5" y="-318.8" font-family="fixed" font-size="14.00">[abs]</text>
 </g>
 <!-- 0310_0012 -->
 <g id="node6" class="node">
@@ -135,33 +135,33 @@ A slim vane turned with the wind , a network of rods atop a high pole .
 </svg>
 <br>
 <pre>
-arc(r__vane_0310_0003,r__slim_0310_0002,attrib2).
-arc(r__turned_0310_0004,r__vane_0310_0003,arg0).
-arc(r__turned_0310_0004,r__wind_0310_0007,r__with_0310_0005_dir).
-arc(r__turned_0310_0004,r__network_0310_0010,abs).
-arc(r__network_0310_0010,r__rods_0310_0012,r__of_0310_0011).
-arc(r__rods_0310_0012,r__pole_0310_0016,r__atop_0310_0013).
-arc(r__pole_0310_0016,r__high_0310_0015,attrib2).
+arc(r_0310_0003__vane,r_0310_0002__slim,attrib2).
+arc(r_0310_0004__turned,r_0310_0003__vane,arg0).
+arc(r_0310_0004__turned,r_0310_0007__wind,r_0310_0005__with_dir).
+arc(r_0310_0004__turned,r_0310_0010__network,abs).
+arc(r_0310_0010__network,r_0310_0012__rods,r_0310_0011__of).
+arc(r_0310_0012__rods,r_0310_0016__pole,r_0310_0013__atop).
+arc(r_0310_0016__pole,r_0310_0015__high,attrib2).
 
 </pre>
 <br>
 <pre>
 fof(id_310_A_DICK_1952,axiom,
     ? [EVENTX8,ENTITYX1,ENTITYX3,ENTITYX4,ENTITYX5,ENTITYX6,ATTRIBX7,ATTRIBX2] :
-      ( isA(ENTITYX1,r__vane_0310_0003)
+      ( isA(ENTITYX1,r_0310_0003__vane)
       &amp; attrib2(ENTITYX1) = ATTRIBX2
-      &amp; isA(ENTITYX3,r__wind_0310_0007)
-      &amp; isA(ENTITYX4,r__network_0310_0010)
-      &amp; r__of_0310_0011(ENTITYX4) = ENTITYX5
-      &amp; isA(ENTITYX5,r__rods_0310_0012)
-      &amp; r__atop_0310_0013(ENTITYX5) = ENTITYX6
-      &amp; isA(ENTITYX6,r__pole_0310_0016)
+      &amp; isA(ENTITYX3,r_0310_0007__wind)
+      &amp; isA(ENTITYX4,r_0310_0010__network)
+      &amp; r_0310_0011__of(ENTITYX4) = ENTITYX5
+      &amp; isA(ENTITYX5,r_0310_0012__rods)
+      &amp; r_0310_0013__atop(ENTITYX5) = ENTITYX6
+      &amp; isA(ENTITYX6,r_0310_0016__pole)
       &amp; attrib2(ENTITYX6) = ATTRIBX7
-      &amp; isA(ATTRIBX2,r__slim_0310_0002)
-      &amp; isA(ATTRIBX7,r__high_0310_0015)
-      &amp; isA(EVENTX8,r__turned_0310_0004)
+      &amp; isA(ATTRIBX2,r_0310_0002__slim)
+      &amp; isA(ATTRIBX7,r_0310_0015__high)
+      &amp; isA(EVENTX8,r_0310_0004__turned)
       &amp; arg0(EVENTX8) = ENTITYX1
-      &amp; r__with_0310_0005_dir(EVENTX8) = ENTITYX3
+      &amp; r_0310_0005__with_dir(EVENTX8) = ENTITYX3
       &amp; abs(EVENTX8) = ENTITYX4 ) ).
 
 

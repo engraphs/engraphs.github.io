@@ -122,12 +122,12 @@
 </svg>
 <br>
 <pre>
-arc(question_0157_1002,r__know_0157_0003,scope).
-arc(question_0157_1005,r__is_0157_0005,scope).
-arc(r__know_0157_0003,question_0157_1005,arg1).
-arc(r__know_0157_0003,r__You_0157_0002,arg0).
-arc(r__is_0157_0005,r__where_0157_0004,loc1).
-arc(r__is_0157_0005,r__Tower_0157_0006_r__Bridge_0157_0007,arg0).
+arc(question_0157_1002,r_0157_0003__know,scope).
+arc(question_0157_1005,r_0157_0005__is,scope).
+arc(r_0157_0003__know,question_0157_1005,arg1).
+arc(r_0157_0003__know,r_0157_0002__You,arg0).
+arc(r_0157_0005__is,r_0157_0004__where,loc1).
+arc(r_0157_0005__is,r_0157_0006__Tower_Bridge,arg0).
 
 </pre>
 <br>
@@ -137,14 +137,14 @@ fof(id_157_A_LooseChange,axiom,
       ( STATEX3 = OPERATORX5
       &amp; isA(OPERATORX5,question_0157_1005)
       &amp; scope(OPERATORX5) = EVENTX7
-      &amp; isA(EVENTX7,r__is_0157_0005)
+      &amp; isA(EVENTX7,r_0157_0005__is)
       &amp; loc1(EVENTX7) = QUALITYX6
-      &amp; arg0(EVENTX7) = r__Tower_0157_0006_r__Bridge_0157_0007
-      &amp; isA(QUALITYX6,r__where_0157_0004)
+      &amp; arg0(EVENTX7) = r_0157_0006__Tower_Bridge
+      &amp; isA(QUALITYX6,r_0157_0004__where)
       &amp; isA(OPERATORX2,question_0157_1002)
       &amp; scope(OPERATORX2) = EVENTX8
-      &amp; isA(EVENTX8,r__know_0157_0003)
-      &amp; arg0(EVENTX8) = r__You_0157_0002
+      &amp; isA(EVENTX8,r_0157_0003__know)
+      &amp; arg0(EVENTX8) = r_0157_0002__You
       &amp; arg1(EVENTX8) = STATEX3 ) ).
 
 

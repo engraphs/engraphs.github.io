@@ -77,28 +77,28 @@ Over there , at the edge .
 <title>z_0050_1004&#45;&gt;0050_0006</title>
 <path fill="none" stroke="black" d="M86.15,-173.8C92.29,-161.66 100.62,-145.19 107.54,-131.52"/>
 <polygon fill="black" stroke="black" points="110.66,-133.1 112.05,-122.6 104.41,-129.94 110.66,-133.1"/>
-<text text-anchor="middle" x="126.95" y="-144.8" font-family="fixed" font-size="14.00">at_[loc]</text>
+<text text-anchor="middle" x="123.45" y="-144.8" font-family="fixed" font-size="14.00">at[loc]</text>
 </g>
 </g>
 </svg>
 <br>
 <pre>
-arc(r__there_0050_0002,r__Over_0050_0001,quality1).
-arc(z_0050_1004,r__there_0050_0002,dir1).
-arc(z_0050_1004,r__edge_0050_0006,r__at_0050_0004_loc).
+arc(r_0050_0002__there,r_0050_0001__Over,quality1).
+arc(z_0050_1004,r_0050_0002__there,dir1).
+arc(z_0050_1004,r_0050_0006__edge,r_0050_0004__at_loc).
 
 </pre>
 <br>
 <pre>
 fof(id_50_A_DICK_1952,axiom,
     ? [EVENTX5,QUALITYX1,QUALITYX2,ENTITYX3] :
-      ( isA(QUALITYX1,r__there_0050_0002)
+      ( isA(QUALITYX1,r_0050_0002__there)
       &amp; quality1(QUALITYX1) = QUALITYX2
-      &amp; isA(QUALITYX2,r__Over_0050_0001)
-      &amp; isA(ENTITYX3,r__edge_0050_0006)
+      &amp; isA(QUALITYX2,r_0050_0001__Over)
+      &amp; isA(ENTITYX3,r_0050_0006__edge)
       &amp; isA(EVENTX5,z_0050_1004)
       &amp; dir1(EVENTX5) = QUALITYX1
-      &amp; r__at_0050_0004_loc(EVENTX5) = ENTITYX3 ) ).
+      &amp; r_0050_0004__at_loc(EVENTX5) = ENTITYX3 ) ).
 
 
 </pre>

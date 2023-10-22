@@ -155,37 +155,37 @@ The conference will meet to discuss the function of a proposed House of Chiefs .
 </svg>
 <br>
 <pre>
-arc(cnt_0026_1002,r__will_0026_0003,scope).
-arc(cnt_0026_1002,r__discuss_0026_0006,restriction).
-arc(r__will_0026_0003,r__meet_0026_0004,scope).
-arc(r__meet_0026_0004,r__conference_0026_0002,arg0).
-arc(r__discuss_0026_0006,r__conference_0026_0002,arg0).
-arc(r__discuss_0026_0006,r__function_0026_0008,arg1).
-arc(r__function_0026_0008,r__House_0026_0012,r__of_0026_0009).
-arc(r__House_0026_0012,r__proposed_0026_0011,attrib2).
-arc(r__House_0026_0012,r__Chiefs_0026_0014,r__of_0026_0013).
+arc(cnt_0026_1002,r_0026_0003__will,scope).
+arc(cnt_0026_1002,r_0026_0006__discuss,restriction).
+arc(r_0026_0003__will,r_0026_0004__meet,scope).
+arc(r_0026_0004__meet,r_0026_0002__conference,arg0).
+arc(r_0026_0006__discuss,r_0026_0002__conference,arg0).
+arc(r_0026_0006__discuss,r_0026_0008__function,arg1).
+arc(r_0026_0008__function,r_0026_0012__House,r_0026_0009__of).
+arc(r_0026_0012__House,r_0026_0011__proposed,attrib2).
+arc(r_0026_0012__House,r_0026_0014__Chiefs,r_0026_0013__of).
 
 </pre>
 <br>
 <pre>
 fof(id_26_A_lob_A01,axiom,
     ? [CONNX3,EVENTX8,OPERATORX9,EVENTX10,ENTITYX1,ENTITYX4,ENTITYX5,ENTITYX7,ATTRIBX6] :
-      ( isA(ENTITYX1,r__conference_0026_0002)
-      &amp; isA(ENTITYX4,r__function_0026_0008)
-      &amp; r__of_0026_0009(ENTITYX4) = ENTITYX5
-      &amp; isA(ENTITYX5,r__House_0026_0012)
+      ( isA(ENTITYX1,r_0026_0002__conference)
+      &amp; isA(ENTITYX4,r_0026_0008__function)
+      &amp; r_0026_0009__of(ENTITYX4) = ENTITYX5
+      &amp; isA(ENTITYX5,r_0026_0012__House)
       &amp; attrib2(ENTITYX5) = ATTRIBX6
-      &amp; r__of_0026_0013(ENTITYX5) = ENTITYX7
-      &amp; isA(ENTITYX7,r__Chiefs_0026_0014)
-      &amp; isA(ATTRIBX6,r__proposed_0026_0011)
+      &amp; r_0026_0013__of(ENTITYX5) = ENTITYX7
+      &amp; isA(ENTITYX7,r_0026_0014__Chiefs)
+      &amp; isA(ATTRIBX6,r_0026_0011__proposed)
       &amp; isA(CONNX3,cnt_0026_1002)
       &amp; scope(CONNX3) = OPERATORX9
-      &amp; isA(OPERATORX9,r__will_0026_0003)
+      &amp; isA(OPERATORX9,r_0026_0003__will)
       &amp; scope(OPERATORX9) = EVENTX10
-      &amp; isA(EVENTX10,r__meet_0026_0004)
+      &amp; isA(EVENTX10,r_0026_0004__meet)
       &amp; arg0(EVENTX10) = ENTITYX1
       &amp; restriction(CONNX3) = EVENTX8
-      &amp; isA(EVENTX8,r__discuss_0026_0006)
+      &amp; isA(EVENTX8,r_0026_0006__discuss)
       &amp; arg0(EVENTX8) = ENTITYX1
       &amp; arg1(EVENTX8) = ENTITYX4 ) ).
 

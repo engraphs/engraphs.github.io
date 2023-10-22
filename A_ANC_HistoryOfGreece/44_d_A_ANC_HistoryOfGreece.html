@@ -178,9 +178,9 @@ In an attempt to counter a threat from the Saracen Muslims , a new potent religi
 <!-- 0072_0026&#45;&gt;0072_0003 -->
 <g id="edge10" class="edge">
 <title>0072_0026&#45;&gt;0072_0003</title>
-<path fill="none" stroke="black" d="M320.24,-528.9C300.67,-522.9 276.56,-514.41 256.25,-504 240.84,-496.1 224.97,-485.23 212.15,-475.64"/>
-<polygon fill="black" stroke="black" points="214.27,-472.86 204.2,-469.57 210.02,-478.42 214.27,-472.86"/>
-<text text-anchor="middle" x="282.75" y="-492.8" font-family="fixed" font-size="14.00">In_[cnt]</text>
+<path fill="none" stroke="black" d="M322.57,-528.07C304.49,-521.89 282.25,-513.49 263.25,-504 246.45,-495.61 228.74,-484.47 214.46,-474.84"/>
+<polygon fill="black" stroke="black" points="216.27,-471.83 206.04,-469.07 212.31,-477.61 216.27,-471.83"/>
+<text text-anchor="middle" x="286.25" y="-492.8" font-family="fixed" font-size="14.00">In[cnt]</text>
 </g>
 <!-- 0072_0026&#45;&gt;0072_0024 -->
 <g id="edge11" class="edge">
@@ -226,20 +226,20 @@ In an attempt to counter a threat from the Saracen Muslims , a new potent religi
 </svg>
 <br>
 <pre>
-arc(r__attempt_0072_0003,r__counter_0072_0005,emb3).
-arc(r__counter_0072_0005,r__threat_0072_0007,arg1).
-arc(r__threat_0072_0007,r__Saracen_0072_0010_r__Muslims_0072_0011,r__from_0072_0008).
-arc(r__Saracen_0072_0010_r__Muslims_0072_0011,r__force_0072_0017,prn5).
-arc(r__force_0072_0017,r__new_0072_0014,attrib2).
-arc(r__force_0072_0017,r__potent_0072_0015,attrib3).
-arc(r__force_0072_0017,r__religious_0072_0016,attrib4).
-arc(r__force_0072_0017,r__East_0072_0020,r__from_0072_0018).
-arc(r__army_0072_0024,r__Byzantine_0072_0023,attrib2).
-arc(r__enlisted_0072_0026,r__attempt_0072_0003,r__In_0072_0001_cnt).
-arc(r__enlisted_0072_0026,r__army_0072_0024,arg0).
-arc(r__enlisted_0072_0026,r__forcefully_0072_0025,mnr4).
-arc(r__enlisted_0072_0026,r__men_0072_0028,arg1).
-arc(r__men_0072_0028,r__islands_0072_0031,r__of_0072_0029).
+arc(r_0072_0003__attempt,r_0072_0005__counter,emb3).
+arc(r_0072_0005__counter,r_0072_0007__threat,arg1).
+arc(r_0072_0007__threat,r_0072_0010__Saracen_Muslims,r_0072_0008__from).
+arc(r_0072_0010__Saracen_Muslims,r_0072_0017__force,prn5).
+arc(r_0072_0017__force,r_0072_0014__new,attrib2).
+arc(r_0072_0017__force,r_0072_0015__potent,attrib3).
+arc(r_0072_0017__force,r_0072_0016__religious,attrib4).
+arc(r_0072_0017__force,r_0072_0020__East,r_0072_0018__from).
+arc(r_0072_0024__army,r_0072_0023__Byzantine,attrib2).
+arc(r_0072_0026__enlisted,r_0072_0003__attempt,r_0072_0001__In_cnt).
+arc(r_0072_0026__enlisted,r_0072_0024__army,arg0).
+arc(r_0072_0026__enlisted,r_0072_0025__forcefully,mnr4).
+arc(r_0072_0026__enlisted,r_0072_0028__men,arg1).
+arc(r_0072_0028__men,r_0072_0031__islands,r_0072_0029__of).
 
 </pre>
 <br>
@@ -247,32 +247,32 @@ arc(r__men_0072_0028,r__islands_0072_0031,r__of_0072_0029).
 fof(id_72_A_ANC_HistoryOfGreece,axiom,
     ? [STATEX2,EVENTX16,EVENTX10,ENTITYX1,ENTITYX11,ENTITYX14,ENTITYX15,ENTITYX5,ENTITYX6,ATTRIBX12,ATTRIBX7,ATTRIBX8,ATTRIBX9,QUALITYX13] :
       ( STATEX2 = EVENTX10
-      &amp; isA(EVENTX10,r__counter_0072_0005)
+      &amp; isA(EVENTX10,r_0072_0005__counter)
       &amp; arg1(EVENTX10) = ENTITYX5
-      &amp; isA(ENTITYX1,r__attempt_0072_0003)
+      &amp; isA(ENTITYX1,r_0072_0003__attempt)
       &amp; emb3(ENTITYX1) = STATEX2
-      &amp; isA(ENTITYX5,r__threat_0072_0007)
-      &amp; r__from_0072_0008(ENTITYX5) = r__Saracen_0072_0010_r__Muslims_0072_0011
-      &amp; isA(ENTITYX6,r__force_0072_0017)
+      &amp; isA(ENTITYX5,r_0072_0007__threat)
+      &amp; r_0072_0008__from(ENTITYX5) = r_0072_0010__Saracen_Muslims
+      &amp; isA(ENTITYX6,r_0072_0017__force)
       &amp; attrib2(ENTITYX6) = ATTRIBX7
       &amp; attrib3(ENTITYX6) = ATTRIBX8
       &amp; attrib4(ENTITYX6) = ATTRIBX9
-      &amp; r__from_0072_0018(ENTITYX6) = r__East_0072_0020
-      &amp; isA(ENTITYX11,r__army_0072_0024)
+      &amp; r_0072_0018__from(ENTITYX6) = r_0072_0020__East
+      &amp; isA(ENTITYX11,r_0072_0024__army)
       &amp; attrib2(ENTITYX11) = ATTRIBX12
-      &amp; isA(ENTITYX14,r__men_0072_0028)
-      &amp; r__of_0072_0029(ENTITYX14) = ENTITYX15
-      &amp; isA(ENTITYX15,r__islands_0072_0031)
-      &amp; isA(r__Saracen_0072_0010_r__Muslims_0072_0011,r__Saracen_0072_0010_r__Muslims_0072_0011)
-      &amp; prn5(r__Saracen_0072_0010_r__Muslims_0072_0011) = ENTITYX6
-      &amp; isA(r__East_0072_0020,r__East_0072_0020)
-      &amp; isA(ATTRIBX7,r__new_0072_0014)
-      &amp; isA(ATTRIBX8,r__potent_0072_0015)
-      &amp; isA(ATTRIBX9,r__religious_0072_0016)
-      &amp; isA(ATTRIBX12,r__Byzantine_0072_0023)
-      &amp; isA(QUALITYX13,r__forcefully_0072_0025)
-      &amp; isA(EVENTX16,r__enlisted_0072_0026)
-      &amp; r__In_0072_0001_cnt(EVENTX16) = ENTITYX1
+      &amp; isA(ENTITYX14,r_0072_0028__men)
+      &amp; r_0072_0029__of(ENTITYX14) = ENTITYX15
+      &amp; isA(ENTITYX15,r_0072_0031__islands)
+      &amp; isA(r_0072_0010__Saracen_Muslims,r_0072_0010__Saracen_Muslims)
+      &amp; prn5(r_0072_0010__Saracen_Muslims) = ENTITYX6
+      &amp; isA(r_0072_0020__East,r_0072_0020__East)
+      &amp; isA(ATTRIBX7,r_0072_0014__new)
+      &amp; isA(ATTRIBX8,r_0072_0015__potent)
+      &amp; isA(ATTRIBX9,r_0072_0016__religious)
+      &amp; isA(ATTRIBX12,r_0072_0023__Byzantine)
+      &amp; isA(QUALITYX13,r_0072_0025__forcefully)
+      &amp; isA(EVENTX16,r_0072_0026__enlisted)
+      &amp; r_0072_0001__In_cnt(EVENTX16) = ENTITYX1
       &amp; arg0(EVENTX16) = ENTITYX11
       &amp; mnr4(EVENTX16) = QUALITYX13
       &amp; arg1(EVENTX16) = ENTITYX14 ) ).

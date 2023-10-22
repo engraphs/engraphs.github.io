@@ -110,26 +110,26 @@ Section 1 Duties of Entities Handling Personal Information
 </svg>
 <br>
 <pre>
-arc(r__Duties_0076_0003,r__Entities_0076_0005,r__of_0076_0004).
-arc(r__Handling_0076_0006,r__Entities_0076_0005,arg0).
-arc(r__Handling_0076_0006,r__Information_0076_0008,arg1).
-arc(r__Information_0076_0008,r__Personal_0076_0007,attrib1).
-arc(z_0076_1008,r__Duties_0076_0003,z_0076_1002).
+arc(r_0076_0003__Duties,r_0076_0005__Entities,r_0076_0004__of).
+arc(r_0076_0006__Handling,r_0076_0005__Entities,arg0).
+arc(r_0076_0006__Handling,r_0076_0008__Information,arg1).
+arc(r_0076_0008__Information,r_0076_0007__Personal,attrib1).
+arc(z_0076_1008,r_0076_0003__Duties,z_0076_1002).
 
 </pre>
 <br>
 <pre>
 fof(id_76_A_law_h15A119,axiom,
     ? [EVENTX9,EVENTX7,ENTITYX3,ENTITYX4,ENTITYX5,ATTRIBX6] :
-      ( isA(ENTITYX3,r__Duties_0076_0003)
-      &amp; r__of_0076_0004(ENTITYX3) = ENTITYX4
-      &amp; isA(EVENTX7,r__Handling_0076_0006)
+      ( isA(ENTITYX3,r_0076_0003__Duties)
+      &amp; r_0076_0004__of(ENTITYX3) = ENTITYX4
+      &amp; isA(EVENTX7,r_0076_0006__Handling)
       &amp; arg0(EVENTX7) = ENTITYX4
       &amp; arg1(EVENTX7) = ENTITYX5
-      &amp; isA(ENTITYX4,r__Entities_0076_0005)
-      &amp; isA(ENTITYX5,r__Information_0076_0008)
+      &amp; isA(ENTITYX4,r_0076_0005__Entities)
+      &amp; isA(ENTITYX5,r_0076_0008__Information)
       &amp; attrib1(ENTITYX5) = ATTRIBX6
-      &amp; isA(ATTRIBX6,r__Personal_0076_0007)
+      &amp; isA(ATTRIBX6,r_0076_0007__Personal)
       &amp; isA(EVENTX9,z_0076_1008)
       &amp; z_0076_1002(EVENTX9) = ENTITYX3 ) ).
 

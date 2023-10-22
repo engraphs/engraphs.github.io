@@ -136,7 +136,7 @@ George , a part - time fireman , wore a bleeper to call him out to a fire .
 <title>0041_0013_0041_0015&#45;&gt;0041_0018</title>
 <path fill="none" stroke="black" d="M229.5,-350.05C237.43,-344.21 246.21,-337.19 253.5,-330 261.48,-322.11 269.3,-312.57 275.81,-303.94"/>
 <polygon fill="black" stroke="black" points="278.75,-305.86 281.84,-295.72 273.1,-301.71 278.75,-305.86"/>
-<text text-anchor="middle" x="290.5" y="-318.8" font-family="fixed" font-size="14.00">to_[dir]</text>
+<text text-anchor="middle" x="287" y="-318.8" font-family="fixed" font-size="14.00">to[dir]</text>
 </g>
 <!-- cnt_0041_1005 -->
 <g id="node9" class="node">
@@ -162,42 +162,42 @@ George , a part - time fireman , wore a bleeper to call him out to a fire .
 </svg>
 <br>
 <pre>
-arc(cnt_0041_1005,r__wore_0041_0009,scope).
-arc(cnt_0041_1005,r__call_0041_0013_r__out_0041_0015,restriction).
-arc(r__George_0041_0001,r__fireman_0041_0007,prn3).
-arc(r__time_0041_0006,r__part_0041_0004,attrib1).
-arc(r__fireman_0041_0007,r__time_0041_0006,nlyr2).
-arc(r__wore_0041_0009,r__George_0041_0001,arg0).
-arc(r__wore_0041_0009,r__bleeper_0041_0011,arg1).
-arc(r__call_0041_0013_r__out_0041_0015,r__George_0041_0001,arg1).
-arc(r__call_0041_0013_r__out_0041_0015,r__bleeper_0041_0011,arg0).
-arc(r__call_0041_0013_r__out_0041_0015,r__fire_0041_0018,r__to_0041_0016_dir).
+arc(cnt_0041_1005,r_0041_0009__wore,scope).
+arc(cnt_0041_1005,r_0041_0013__call_out,restriction).
+arc(r_0041_0001__George,r_0041_0007__fireman,prn3).
+arc(r_0041_0006__time,r_0041_0004__part,attrib1).
+arc(r_0041_0007__fireman,r_0041_0006__time,nlyr2).
+arc(r_0041_0009__wore,r_0041_0001__George,arg0).
+arc(r_0041_0009__wore,r_0041_0011__bleeper,arg1).
+arc(r_0041_0013__call_out,r_0041_0001__George,arg1).
+arc(r_0041_0013__call_out,r_0041_0011__bleeper,arg0).
+arc(r_0041_0013__call_out,r_0041_0018__fire,r_0041_0016__to_dir).
 
 </pre>
 <br>
 <pre>
 fof(id_41_A_Alresford,axiom,
     ? [GEORGEX7,CONNX6,EVENTX9,EVENTX10,ENTITYX4,ENTITYX8,ENTITYX1,ENTITYX2,ATTRIBX3] :
-      ( isA(ENTITYX1,r__fireman_0041_0007)
+      ( isA(ENTITYX1,r_0041_0007__fireman)
       &amp; nlyr2(ENTITYX1) = ENTITYX2
-      &amp; isA(ENTITYX2,r__time_0041_0006)
+      &amp; isA(ENTITYX2,r_0041_0006__time)
       &amp; attrib1(ENTITYX2) = ATTRIBX3
-      &amp; isA(ENTITYX4,r__bleeper_0041_0011)
-      &amp; GEORGEX7 = r__George_0041_0001
-      &amp; isA(ENTITYX8,r__fire_0041_0018)
-      &amp; isA(r__George_0041_0001,r__George_0041_0001)
-      &amp; prn3(r__George_0041_0001) = ENTITYX1
-      &amp; isA(ATTRIBX3,r__part_0041_0004)
+      &amp; isA(ENTITYX4,r_0041_0011__bleeper)
+      &amp; GEORGEX7 = r_0041_0001__George
+      &amp; isA(ENTITYX8,r_0041_0018__fire)
+      &amp; isA(r_0041_0001__George,r_0041_0001__George)
+      &amp; prn3(r_0041_0001__George) = ENTITYX1
+      &amp; isA(ATTRIBX3,r_0041_0004__part)
       &amp; isA(CONNX6,cnt_0041_1005)
       &amp; scope(CONNX6) = EVENTX10
-      &amp; isA(EVENTX10,r__wore_0041_0009)
-      &amp; arg0(EVENTX10) = r__George_0041_0001
+      &amp; isA(EVENTX10,r_0041_0009__wore)
+      &amp; arg0(EVENTX10) = r_0041_0001__George
       &amp; arg1(EVENTX10) = ENTITYX4
       &amp; restriction(CONNX6) = EVENTX9
-      &amp; isA(EVENTX9,r__call_0041_0013_r__out_0041_0015)
+      &amp; isA(EVENTX9,r_0041_0013__call_out)
       &amp; arg0(EVENTX9) = ENTITYX4
       &amp; arg1(EVENTX9) = GEORGEX7
-      &amp; r__to_0041_0016_dir(EVENTX9) = ENTITYX8 ) ).
+      &amp; r_0041_0016__to_dir(EVENTX9) = ENTITYX8 ) ).
 
 
 </pre>

@@ -187,17 +187,17 @@ The thorniest problem for next week 's conference is to settle the relationships
 </svg>
 <br>
 <pre>
-arc(r__problem_0100_0003,r__thorniest_0100_0002,attrib2).
-arc(r__problem_0100_0003,r__conference_0100_0008,r__for_0100_0004).
-arc(r__week_0100_0006,r__next_0100_0005,attrib1).
-arc(r__conference_0100_0008,r__week_0100_0006,genv).
-arc(r__is_0100_0009,r__problem_0100_0003,arg0).
-arc(r__is_0100_0009,r__settle_0100_0011,prd2).
-arc(r__settle_0100_0011,r__relationships_0100_0013,arg1).
-arc(r__relationships_0100_0013,r__and_0100_0016,r__between_0100_0014).
-arc(r__and_0100_0016,r__them_0100_0015,conj1).
-arc(r__and_0100_0016,r__rest_0100_0018,conj2).
-arc(r__rest_0100_0018,r__country_0100_0021,r__of_0100_0019).
+arc(r_0100_0003__problem,r_0100_0002__thorniest,attrib2).
+arc(r_0100_0003__problem,r_0100_0008__conference,r_0100_0004__for).
+arc(r_0100_0006__week,r_0100_0005__next,attrib1).
+arc(r_0100_0008__conference,r_0100_0006__week,genv).
+arc(r_0100_0009__is,r_0100_0003__problem,arg0).
+arc(r_0100_0009__is,r_0100_0011__settle,prd2).
+arc(r_0100_0011__settle,r_0100_0013__relationships,arg1).
+arc(r_0100_0013__relationships,r_0100_0016__and,r_0100_0014__between).
+arc(r_0100_0016__and,r_0100_0015__them,conj1).
+arc(r_0100_0016__and,r_0100_0018__rest,conj2).
+arc(r_0100_0018__rest,r_0100_0021__country,r_0100_0019__of).
 
 </pre>
 <br>
@@ -205,26 +205,26 @@ arc(r__rest_0100_0018,r__country_0100_0021,r__of_0100_0019).
 fof(id_100_A_lob_A02,axiom,
     ? [STATEX6,EVENTX14,EVENTX13,ENTITYX1,ENTITYX9,ENTITYX10,ENTITYX11,ENTITYX12,ENTITYX3,ENTITYX4,ATTRIBX2,ATTRIBX5] :
       ( STATEX6 = EVENTX13
-      &amp; isA(EVENTX13,r__settle_0100_0011)
+      &amp; isA(EVENTX13,r_0100_0011__settle)
       &amp; arg1(EVENTX13) = ENTITYX9
-      &amp; isA(ENTITYX1,r__problem_0100_0003)
+      &amp; isA(ENTITYX1,r_0100_0003__problem)
       &amp; attrib2(ENTITYX1) = ATTRIBX2
-      &amp; r__for_0100_0004(ENTITYX1) = ENTITYX3
-      &amp; isA(ENTITYX3,r__conference_0100_0008)
+      &amp; r_0100_0004__for(ENTITYX1) = ENTITYX3
+      &amp; isA(ENTITYX3,r_0100_0008__conference)
       &amp; genv(ENTITYX3) = ENTITYX4
-      &amp; isA(ENTITYX4,r__week_0100_0006)
+      &amp; isA(ENTITYX4,r_0100_0006__week)
       &amp; attrib1(ENTITYX4) = ATTRIBX5
-      &amp; isA(ENTITYX9,r__relationships_0100_0013)
-      &amp; r__between_0100_0014(ENTITYX9) = ENTITYX10
-      &amp; isA(ENTITYX10,r__and_0100_0016)
-      &amp; conj1(ENTITYX10) = r__them_0100_0015
+      &amp; isA(ENTITYX9,r_0100_0013__relationships)
+      &amp; r_0100_0014__between(ENTITYX9) = ENTITYX10
+      &amp; isA(ENTITYX10,r_0100_0016__and)
+      &amp; conj1(ENTITYX10) = r_0100_0015__them
       &amp; conj2(ENTITYX10) = ENTITYX11
-      &amp; isA(ENTITYX11,r__rest_0100_0018)
-      &amp; r__of_0100_0019(ENTITYX11) = ENTITYX12
-      &amp; isA(ENTITYX12,r__country_0100_0021)
-      &amp; isA(ATTRIBX2,r__thorniest_0100_0002)
-      &amp; isA(ATTRIBX5,r__next_0100_0005)
-      &amp; isA(EVENTX14,r__is_0100_0009)
+      &amp; isA(ENTITYX11,r_0100_0018__rest)
+      &amp; r_0100_0019__of(ENTITYX11) = ENTITYX12
+      &amp; isA(ENTITYX12,r_0100_0021__country)
+      &amp; isA(ATTRIBX2,r_0100_0002__thorniest)
+      &amp; isA(ATTRIBX5,r_0100_0005__next)
+      &amp; isA(EVENTX14,r_0100_0009__is)
       &amp; arg0(EVENTX14) = ENTITYX1
       &amp; prd2(EVENTX14) = STATEX6 ) ).
 

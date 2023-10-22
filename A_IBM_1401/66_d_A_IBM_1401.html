@@ -103,7 +103,7 @@ Experienced , highly trained individuals work with customers in applying IBM met
 <title>0088_0006&#45;&gt;0088_0008</title>
 <path fill="none" stroke="black" d="M177.99,-261.01C180.71,-217.1 187.96,-99.6 191.27,-46.15"/>
 <polygon fill="black" stroke="black" points="194.77,-46.25 191.89,-36.06 187.78,-45.82 194.77,-46.25"/>
-<text text-anchor="middle" x="223.94" y="-144.8" font-family="fixed" font-size="14.00">with_[com]</text>
+<text text-anchor="middle" x="220.94" y="-144.8" font-family="fixed" font-size="14.00">with[com]</text>
 </g>
 <!-- 0088_0010 -->
 <g id="node7" class="node">
@@ -116,7 +116,7 @@ Experienced , highly trained individuals work with customers in applying IBM met
 <title>0088_0006&#45;&gt;0088_0010</title>
 <path fill="none" stroke="black" d="M193.74,-263.58C209.05,-250.44 231.91,-230.81 249.64,-215.58"/>
 <polygon fill="black" stroke="black" points="252.07,-218.11 257.38,-208.94 247.51,-212.8 252.07,-218.11"/>
-<text text-anchor="middle" x="256.94" y="-231.8" font-family="fixed" font-size="14.00">in_[clr]</text>
+<text text-anchor="middle" x="253.44" y="-231.8" font-family="fixed" font-size="14.00">in[clr]</text>
 </g>
 <!-- 0088_0011_0088_0012 -->
 <g id="node8" class="node">
@@ -142,7 +142,7 @@ Experienced , highly trained individuals work with customers in applying IBM met
 <title>0088_0010&#45;&gt;0088_0015</title>
 <path fill="none" stroke="black" d="M302.72,-176.77C328.73,-162.96 368.48,-141.84 397.79,-126.27"/>
 <polygon fill="black" stroke="black" points="399.72,-129.21 406.91,-121.43 396.44,-123.03 399.72,-129.21"/>
-<text text-anchor="middle" x="389.44" y="-144.8" font-family="fixed" font-size="14.00">to_[clr]</text>
+<text text-anchor="middle" x="385.94" y="-144.8" font-family="fixed" font-size="14.00">to[clr]</text>
 </g>
 <!-- 0088_0015&#45;&gt;0088_0008 -->
 <g id="edge9" class="edge">
@@ -155,15 +155,15 @@ Experienced , highly trained individuals work with customers in applying IBM met
 </svg>
 <br>
 <pre>
-arc(r__highly_0088_0003,r__trained_0088_0004,scope).
-arc(r__trained_0088_0004,r__individuals_0088_0005,arg1).
-arc(r__individuals_0088_0005,r__Experienced_0088_0001,attrib1).
-arc(r__work_0088_0006,r__individuals_0088_0005,arg0).
-arc(r__work_0088_0006,r__customers_0088_0008,r__with_0088_0007_com).
-arc(r__work_0088_0006,r__applying_0088_0010,r__in_0088_0009_clr).
-arc(r__applying_0088_0010,r__IBM_0088_0011_r__methods_0088_0012,arg1).
-arc(r__applying_0088_0010,r__requirements_0088_0015,r__to_0088_0013_clr).
-arc(r__requirements_0088_0015,r__customers_0088_0008,genv).
+arc(r_0088_0003__highly,r_0088_0004__trained,scope).
+arc(r_0088_0004__trained,r_0088_0005__individuals,arg1).
+arc(r_0088_0005__individuals,r_0088_0001__Experienced,attrib1).
+arc(r_0088_0006__work,r_0088_0005__individuals,arg0).
+arc(r_0088_0006__work,r_0088_0008__customers,r_0088_0007__with_com).
+arc(r_0088_0006__work,r_0088_0010__applying,r_0088_0009__in_clr).
+arc(r_0088_0010__applying,r_0088_0011__IBM_methods,arg1).
+arc(r_0088_0010__applying,r_0088_0015__requirements,r_0088_0013__to_clr).
+arc(r_0088_0015__requirements,r_0088_0008__customers,genv).
 
 </pre>
 <br>
@@ -171,25 +171,25 @@ arc(r__requirements_0088_0015,r__customers_0088_0008,genv).
 fof(id_88_A_IBM_1401,axiom,
     ? [EVENTX7,CUSTOMERSX12,EVENTX14,EVENTX13,OPERATORX4,EVENTX5,ENTITYX1,CUSTOMERSX6,METHODSX10,ENTITYX11,ATTRIBX2] :
       ( EVENTX7 = EVENTX13
-      &amp; isA(EVENTX13,r__applying_0088_0010)
+      &amp; isA(EVENTX13,r_0088_0010__applying)
       &amp; arg1(EVENTX13) = METHODSX10
-      &amp; r__to_0088_0013_clr(EVENTX13) = ENTITYX11
-      &amp; isA(OPERATORX4,r__highly_0088_0003)
+      &amp; r_0088_0013__to_clr(EVENTX13) = ENTITYX11
+      &amp; isA(OPERATORX4,r_0088_0003__highly)
       &amp; scope(OPERATORX4) = EVENTX5
-      &amp; isA(EVENTX5,r__trained_0088_0004)
+      &amp; isA(EVENTX5,r_0088_0004__trained)
       &amp; arg1(EVENTX5) = ENTITYX1
-      &amp; isA(ENTITYX1,r__individuals_0088_0005)
+      &amp; isA(ENTITYX1,r_0088_0005__individuals)
       &amp; attrib1(ENTITYX1) = ATTRIBX2
-      &amp; isA(CUSTOMERSX6,r__customers_0088_0008)
-      &amp; isA(METHODSX10,r__IBM_0088_0011_r__methods_0088_0012)
-      &amp; isA(ENTITYX11,r__requirements_0088_0015)
+      &amp; isA(CUSTOMERSX6,r_0088_0008__customers)
+      &amp; isA(METHODSX10,r_0088_0011__IBM_methods)
+      &amp; isA(ENTITYX11,r_0088_0015__requirements)
       &amp; genv(ENTITYX11) = CUSTOMERSX12
       &amp; CUSTOMERSX12 = CUSTOMERSX6
-      &amp; isA(ATTRIBX2,r__Experienced_0088_0001)
-      &amp; isA(EVENTX14,r__work_0088_0006)
+      &amp; isA(ATTRIBX2,r_0088_0001__Experienced)
+      &amp; isA(EVENTX14,r_0088_0006__work)
       &amp; arg0(EVENTX14) = ENTITYX1
-      &amp; r__with_0088_0007_com(EVENTX14) = CUSTOMERSX6
-      &amp; r__in_0088_0009_clr(EVENTX14) = EVENTX7 ) ).
+      &amp; r_0088_0007__with_com(EVENTX14) = CUSTOMERSX6
+      &amp; r_0088_0009__in_clr(EVENTX14) = EVENTX7 ) ).
 
 
 </pre>

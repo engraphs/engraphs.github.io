@@ -103,7 +103,7 @@ The risk to an individual traveler varies considerably by the specific location 
 <title>0006_0007&#45;&gt;0006_0029</title>
 <path fill="none" stroke="black" d="M308.09,-264.34C332.29,-249.65 370.83,-226.25 397.13,-210.28"/>
 <polygon fill="black" stroke="black" points="399.14,-213.16 405.87,-204.97 395.51,-207.17 399.14,-213.16"/>
-<text text-anchor="middle" x="396.6" y="-231.8" font-family="fixed" font-size="14.00">by_[mnr]</text>
+<text text-anchor="middle" x="393.1" y="-231.8" font-family="fixed" font-size="14.00">by[mnr]</text>
 </g>
 <!-- 0006_0012 -->
 <g id="node8" class="node">
@@ -252,61 +252,61 @@ The risk to an individual traveler varies considerably by the specific location 
 </svg>
 <br>
 <pre>
-arc(r__risk_0006_0002,r__traveler_0006_0006,r__to_0006_0003).
-arc(r__traveler_0006_0006,r__individual_0006_0005,attrib2).
-arc(r__varies_0006_0007,r__risk_0006_0002,arg0).
-arc(r__varies_0006_0007,r__considerably_0006_0008,mnr3).
-arc(r__varies_0006_0007,r__and_0006_0029,r__by_0006_0009_mnr).
-arc(r__location_0006_0012,r__specific_0006_0011,attrib2).
-arc(r__type_0006_0017,r__activities_0006_0019,r__of_0006_0018).
-arc(r__type_0006_0021,r__accommodations_0006_0023,r__of_0006_0022).
-arc(r__time_0006_0025,r__year_0006_0027,r__of_0006_0026).
-arc(r__and_0006_0029,r__location_0006_0012,conj1).
-arc(r__and_0006_0029,r__visit_0006_0014_r__duration_0006_0015,conj2).
-arc(r__and_0006_0029,r__type_0006_0017,conj3).
-arc(r__and_0006_0029,r__type_0006_0021,conj4).
-arc(r__and_0006_0029,r__time_0006_0025,conj5).
-arc(r__and_0006_0029,r__factors_0006_0031,conj6).
-arc(r__factors_0006_0031,r__other_0006_0030,attrib1).
+arc(r_0006_0002__risk,r_0006_0006__traveler,r_0006_0003__to).
+arc(r_0006_0006__traveler,r_0006_0005__individual,attrib2).
+arc(r_0006_0007__varies,r_0006_0002__risk,arg0).
+arc(r_0006_0007__varies,r_0006_0008__considerably,mnr3).
+arc(r_0006_0007__varies,r_0006_0029__and,r_0006_0009__by_mnr).
+arc(r_0006_0012__location,r_0006_0011__specific,attrib2).
+arc(r_0006_0017__type,r_0006_0019__activities,r_0006_0018__of).
+arc(r_0006_0021__type,r_0006_0023__accommodations,r_0006_0022__of).
+arc(r_0006_0025__time,r_0006_0027__year,r_0006_0026__of).
+arc(r_0006_0029__and,r_0006_0012__location,conj1).
+arc(r_0006_0029__and,r_0006_0014__visit_duration,conj2).
+arc(r_0006_0029__and,r_0006_0017__type,conj3).
+arc(r_0006_0029__and,r_0006_0021__type,conj4).
+arc(r_0006_0029__and,r_0006_0025__time,conj5).
+arc(r_0006_0029__and,r_0006_0031__factors,conj6).
+arc(r_0006_0031__factors,r_0006_0030__other,attrib1).
 
 </pre>
 <br>
 <pre>
 fof(id_6_A_FACTBOOK_1_2010,axiom,
     ? [EVENTX17,ENTITYX1,ENTITYX5,ENTITYX6,ENTITYX8,ENTITYX9,ENTITYX11,ENTITYX13,ENTITYX15,ENTITYX14,ENTITYX12,ENTITYX10,ENTITYX2,ATTRIBX16,ATTRIBX7,ATTRIBX3,QUALITYX4] :
-      ( isA(ENTITYX1,r__risk_0006_0002)
-      &amp; r__to_0006_0003(ENTITYX1) = ENTITYX2
-      &amp; isA(ENTITYX2,r__traveler_0006_0006)
+      ( isA(ENTITYX1,r_0006_0002__risk)
+      &amp; r_0006_0003__to(ENTITYX1) = ENTITYX2
+      &amp; isA(ENTITYX2,r_0006_0006__traveler)
       &amp; attrib2(ENTITYX2) = ATTRIBX3
-      &amp; isA(ENTITYX5,r__and_0006_0029)
+      &amp; isA(ENTITYX5,r_0006_0029__and)
       &amp; conj1(ENTITYX5) = ENTITYX6
       &amp; conj2(ENTITYX5) = ENTITYX8
       &amp; conj3(ENTITYX5) = ENTITYX9
       &amp; conj4(ENTITYX5) = ENTITYX11
       &amp; conj5(ENTITYX5) = ENTITYX13
       &amp; conj6(ENTITYX5) = ENTITYX15
-      &amp; isA(ENTITYX6,r__location_0006_0012)
+      &amp; isA(ENTITYX6,r_0006_0012__location)
       &amp; attrib2(ENTITYX6) = ATTRIBX7
-      &amp; isA(ENTITYX8,r__visit_0006_0014_r__duration_0006_0015)
-      &amp; isA(ENTITYX9,r__type_0006_0017)
-      &amp; r__of_0006_0018(ENTITYX9) = ENTITYX10
-      &amp; isA(ENTITYX10,r__activities_0006_0019)
-      &amp; isA(ENTITYX11,r__type_0006_0021)
-      &amp; r__of_0006_0022(ENTITYX11) = ENTITYX12
-      &amp; isA(ENTITYX12,r__accommodations_0006_0023)
-      &amp; isA(ENTITYX13,r__time_0006_0025)
-      &amp; r__of_0006_0026(ENTITYX13) = ENTITYX14
-      &amp; isA(ENTITYX14,r__year_0006_0027)
-      &amp; isA(ENTITYX15,r__factors_0006_0031)
+      &amp; isA(ENTITYX8,r_0006_0014__visit_duration)
+      &amp; isA(ENTITYX9,r_0006_0017__type)
+      &amp; r_0006_0018__of(ENTITYX9) = ENTITYX10
+      &amp; isA(ENTITYX10,r_0006_0019__activities)
+      &amp; isA(ENTITYX11,r_0006_0021__type)
+      &amp; r_0006_0022__of(ENTITYX11) = ENTITYX12
+      &amp; isA(ENTITYX12,r_0006_0023__accommodations)
+      &amp; isA(ENTITYX13,r_0006_0025__time)
+      &amp; r_0006_0026__of(ENTITYX13) = ENTITYX14
+      &amp; isA(ENTITYX14,r_0006_0027__year)
+      &amp; isA(ENTITYX15,r_0006_0031__factors)
       &amp; attrib1(ENTITYX15) = ATTRIBX16
-      &amp; isA(ATTRIBX3,r__individual_0006_0005)
-      &amp; isA(ATTRIBX7,r__specific_0006_0011)
-      &amp; isA(ATTRIBX16,r__other_0006_0030)
-      &amp; isA(QUALITYX4,r__considerably_0006_0008)
-      &amp; isA(EVENTX17,r__varies_0006_0007)
+      &amp; isA(ATTRIBX3,r_0006_0005__individual)
+      &amp; isA(ATTRIBX7,r_0006_0011__specific)
+      &amp; isA(ATTRIBX16,r_0006_0030__other)
+      &amp; isA(QUALITYX4,r_0006_0008__considerably)
+      &amp; isA(EVENTX17,r_0006_0007__varies)
       &amp; arg0(EVENTX17) = ENTITYX1
       &amp; mnr3(EVENTX17) = QUALITYX4
-      &amp; r__by_0006_0009_mnr(EVENTX17) = ENTITYX5 ) ).
+      &amp; r_0006_0009__by_mnr(EVENTX17) = ENTITYX5 ) ).
 
 
 </pre>

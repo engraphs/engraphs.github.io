@@ -64,25 +64,25 @@ The rock fell to the ground .
 <title>0333_0003&#45;&gt;0333_0006</title>
 <path fill="none" stroke="black" d="M86.54,-88.37C90.69,-82.46 95.24,-75.57 98.9,-69 103.05,-61.54 107,-53.15 110.38,-45.4"/>
 <polygon fill="black" stroke="black" points="113.66,-46.62 114.32,-36.04 107.21,-43.9 113.66,-46.62"/>
-<text text-anchor="middle" x="130.9" y="-57.8" font-family="fixed" font-size="14.00">to_[dir]</text>
+<text text-anchor="middle" x="127.4" y="-57.8" font-family="fixed" font-size="14.00">to[dir]</text>
 </g>
 </g>
 </svg>
 <br>
 <pre>
-arc(r__fell_0333_0003,r__rock_0333_0002,arg0).
-arc(r__fell_0333_0003,r__ground_0333_0006,r__to_0333_0004_dir).
+arc(r_0333_0003__fell,r_0333_0002__rock,arg0).
+arc(r_0333_0003__fell,r_0333_0006__ground,r_0333_0004__to_dir).
 
 </pre>
 <br>
 <pre>
 fof(id_333_A_DICK_1952,axiom,
     ? [EVENTX3,ENTITYX1,ENTITYX2] :
-      ( isA(ENTITYX1,r__rock_0333_0002)
-      &amp; isA(ENTITYX2,r__ground_0333_0006)
-      &amp; isA(EVENTX3,r__fell_0333_0003)
+      ( isA(ENTITYX1,r_0333_0002__rock)
+      &amp; isA(ENTITYX2,r_0333_0006__ground)
+      &amp; isA(EVENTX3,r_0333_0003__fell)
       &amp; arg0(EVENTX3) = ENTITYX1
-      &amp; r__to_0333_0004_dir(EVENTX3) = ENTITYX2 ) ).
+      &amp; r_0333_0004__to_dir(EVENTX3) = ENTITYX2 ) ).
 
 
 </pre>

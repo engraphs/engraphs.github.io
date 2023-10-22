@@ -116,7 +116,7 @@ Use the enclosed card and give a generous gift to Goodwill today !
 <title>0042_0006&#45;&gt;0042_0011</title>
 <path fill="none" stroke="black" d="M242.73,-173.8C244.78,-162.16 247.54,-146.55 249.89,-133.24"/>
 <polygon fill="black" stroke="black" points="253.37,-133.63 251.66,-123.18 246.48,-132.41 253.37,-133.63"/>
-<text text-anchor="middle" x="280.2" y="-144.8" font-family="fixed" font-size="14.00">to_[arg2]</text>
+<text text-anchor="middle" x="276.7" y="-144.8" font-family="fixed" font-size="14.00">to[arg2]</text>
 </g>
 <!-- 0042_0012 -->
 <g id="node8" class="node">
@@ -127,9 +127,9 @@ Use the enclosed card and give a generous gift to Goodwill today !
 <!-- 0042_0006&#45;&gt;0042_0012 -->
 <g id="edge7" class="edge">
 <title>0042_0006&#45;&gt;0042_0012</title>
-<path fill="none" stroke="black" d="M265.19,-182.51C280.72,-176.57 300.45,-167.63 315.7,-156 324.98,-148.91 333.6,-139.43 340.58,-130.62"/>
-<polygon fill="black" stroke="black" points="343.49,-132.58 346.74,-122.49 337.91,-128.35 343.49,-132.58"/>
-<text text-anchor="middle" x="351.2" y="-144.8" font-family="fixed" font-size="14.00">[tmp]</text>
+<path fill="none" stroke="black" d="M263.79,-181.12C277.58,-174.91 294.83,-166.16 308.7,-156 319.01,-148.44 329.12,-138.65 337.45,-129.74"/>
+<polygon fill="black" stroke="black" points="340.15,-131.98 344.28,-122.22 334.97,-127.27 340.15,-131.98"/>
+<text text-anchor="middle" x="346.2" y="-144.8" font-family="fixed" font-size="14.00">[tmp]</text>
 </g>
 <!-- 0042_0008 -->
 <g id="node9" class="node">
@@ -161,38 +161,38 @@ Use the enclosed card and give a generous gift to Goodwill today !
 </svg>
 <br>
 <pre>
-arc(imperative_0042_1002,r__and_0042_0005,scope).
-arc(r__Use_0042_0001,r__card_0042_0004,arg1).
-arc(r__card_0042_0004,r__enclosed_0042_0003,attrib2).
-arc(r__and_0042_0005,r__Use_0042_0001,conj1).
-arc(r__and_0042_0005,r__give_0042_0006,conj2).
-arc(r__give_0042_0006,r__gift_0042_0009,arg1).
-arc(r__give_0042_0006,r__Goodwill_0042_0011,r__to_0042_0010_arg2).
-arc(r__give_0042_0006,r__today_0042_0012,tmp4).
-arc(r__gift_0042_0009,r__generous_0042_0008,attrib2).
+arc(imperative_0042_1002,r_0042_0005__and,scope).
+arc(r_0042_0001__Use,r_0042_0004__card,arg1).
+arc(r_0042_0004__card,r_0042_0003__enclosed,attrib2).
+arc(r_0042_0005__and,r_0042_0001__Use,conj1).
+arc(r_0042_0005__and,r_0042_0006__give,conj2).
+arc(r_0042_0006__give,r_0042_0009__gift,arg1).
+arc(r_0042_0006__give,r_0042_0011__Goodwill,r_0042_0010__to_arg2).
+arc(r_0042_0006__give,r_0042_0012__today,tmp4).
+arc(r_0042_0009__gift,r_0042_0008__generous,attrib2).
 
 </pre>
 <br>
 <pre>
 fof(id_42_A_ANC_110CYL067,axiom,
     ? [OPERATORX2,CONJX11,EVENTX10,EVENTX6,ENTITYX7,ENTITYX4,ATTRIBX8,ATTRIBX5,QUALITYX9] :
-      ( isA(ENTITYX4,r__card_0042_0004)
+      ( isA(ENTITYX4,r_0042_0004__card)
       &amp; attrib2(ENTITYX4) = ATTRIBX5
-      &amp; isA(ENTITYX7,r__gift_0042_0009)
+      &amp; isA(ENTITYX7,r_0042_0009__gift)
       &amp; attrib2(ENTITYX7) = ATTRIBX8
-      &amp; isA(ATTRIBX5,r__enclosed_0042_0003)
-      &amp; isA(ATTRIBX8,r__generous_0042_0008)
-      &amp; isA(QUALITYX9,r__today_0042_0012)
+      &amp; isA(ATTRIBX5,r_0042_0003__enclosed)
+      &amp; isA(ATTRIBX8,r_0042_0008__generous)
+      &amp; isA(QUALITYX9,r_0042_0012__today)
       &amp; isA(OPERATORX2,imperative_0042_1002)
       &amp; scope(OPERATORX2) = CONJX11
-      &amp; isA(CONJX11,r__and_0042_0005)
+      &amp; isA(CONJX11,r_0042_0005__and)
       &amp; conj1(CONJX11) = EVENTX6
-      &amp; isA(EVENTX6,r__Use_0042_0001)
+      &amp; isA(EVENTX6,r_0042_0001__Use)
       &amp; arg1(EVENTX6) = ENTITYX4
       &amp; conj2(CONJX11) = EVENTX10
-      &amp; isA(EVENTX10,r__give_0042_0006)
+      &amp; isA(EVENTX10,r_0042_0006__give)
       &amp; arg1(EVENTX10) = ENTITYX7
-      &amp; r__to_0042_0010_arg2(EVENTX10) = r__Goodwill_0042_0011
+      &amp; r_0042_0010__to_arg2(EVENTX10) = r_0042_0011__Goodwill
       &amp; tmp4(EVENTX10) = QUALITYX9 ) ).
 
 

@@ -96,10 +96,10 @@ The funniest job was cleaning a dog .
 </svg>
 <br>
 <pre>
-arc(r__job_0002_0003,r__funniest_0002_0002,attrib2).
-arc(r__was_0002_0004,r__job_0002_0003,arg0).
-arc(r__was_0002_0004,r__cleaning_0002_0005,prd2).
-arc(r__cleaning_0002_0005,r__dog_0002_0007,arg1).
+arc(r_0002_0003__job,r_0002_0002__funniest,attrib2).
+arc(r_0002_0004__was,r_0002_0003__job,arg0).
+arc(r_0002_0004__was,r_0002_0005__cleaning,prd2).
+arc(r_0002_0005__cleaning,r_0002_0007__dog,arg1).
 
 </pre>
 <br>
@@ -107,13 +107,13 @@ arc(r__cleaning_0002_0005,r__dog_0002_0007,arg1).
 fof(id_2_A_stories_09_M12,axiom,
     ? [STATEX3,EVENTX8,EVENTX7,ENTITYX1,ENTITYX6,ATTRIBX2] :
       ( STATEX3 = EVENTX7
-      &amp; isA(EVENTX7,r__cleaning_0002_0005)
+      &amp; isA(EVENTX7,r_0002_0005__cleaning)
       &amp; arg1(EVENTX7) = ENTITYX6
-      &amp; isA(ENTITYX1,r__job_0002_0003)
+      &amp; isA(ENTITYX1,r_0002_0003__job)
       &amp; attrib2(ENTITYX1) = ATTRIBX2
-      &amp; isA(ENTITYX6,r__dog_0002_0007)
-      &amp; isA(ATTRIBX2,r__funniest_0002_0002)
-      &amp; isA(EVENTX8,r__was_0002_0004)
+      &amp; isA(ENTITYX6,r_0002_0007__dog)
+      &amp; isA(ATTRIBX2,r_0002_0002__funniest)
+      &amp; isA(EVENTX8,r_0002_0004__was)
       &amp; arg0(EVENTX8) = ENTITYX1
       &amp; prd2(EVENTX8) = STATEX3 ) ).
 

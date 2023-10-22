@@ -108,13 +108,13 @@ A program is a series of instructions that direct the 1401 as it solves an appli
 <!-- 0013_0012_tmp -->
 <g id="node7" class="node">
 <title>0013_0012_tmp</title>
-<ellipse fill="none" stroke="black" cx="298.4" cy="-192" rx="50.09" ry="18"/>
-<text text-anchor="middle" x="298.4" y="-188.3" font-family="fixed" font-size="14.00">as_[tmp]</text>
+<ellipse fill="none" stroke="black" cx="298.4" cy="-192" rx="46.29" ry="18"/>
+<text text-anchor="middle" x="298.4" y="-188.3" font-family="fixed" font-size="14.00">as[tmp]</text>
 </g>
 <!-- 0013_0012_tmp&#45;&gt;0013_0009 -->
 <g id="edge6" class="edge">
 <title>0013_0012_tmp&#45;&gt;0013_0009</title>
-<path fill="none" stroke="black" d="M280.68,-174.82C275.46,-169.28 270.15,-162.77 266.4,-156 262.44,-148.88 259.53,-140.55 257.43,-132.76"/>
+<path fill="none" stroke="black" d="M281.02,-175.17C275.69,-169.56 270.23,-162.91 266.4,-156 262.44,-148.88 259.53,-140.55 257.43,-132.76"/>
 <polygon fill="black" stroke="black" points="260.82,-131.89 255.1,-122.97 254.01,-133.51 260.82,-131.89"/>
 <text text-anchor="middle" x="292.4" y="-144.8" font-family="fixed" font-size="14.00">[scope]</text>
 </g>
@@ -155,38 +155,38 @@ A program is a series of instructions that direct the 1401 as it solves an appli
 </svg>
 <br>
 <pre>
-arc(r__is_0013_0003,r__program_0013_0002,arg0).
-arc(r__is_0013_0003,r__series_0013_0005,prd2).
-arc(r__series_0013_0005,r__instructions_0013_0007,r__of_0013_0006).
-arc(r__direct_0013_0009,r__instructions_0013_0007,arg0).
-arc(r__direct_0013_0009,r__1401_0013_0011,arg1).
-arc(r__as_0013_0012_tmp,r__direct_0013_0009,scope).
-arc(r__as_0013_0012_tmp,r__solves_0013_0014,restriction).
-arc(r__solves_0013_0014,r__1401_0013_0011,arg0).
-arc(r__solves_0013_0014,r__application_0013_0016,arg1).
+arc(r_0013_0003__is,r_0013_0002__program,arg0).
+arc(r_0013_0003__is,r_0013_0005__series,prd2).
+arc(r_0013_0005__series,r_0013_0007__instructions,r_0013_0006__of).
+arc(r_0013_0009__direct,r_0013_0007__instructions,arg0).
+arc(r_0013_0009__direct,r_0013_0011__1401,arg1).
+arc(r_0013_0012__as_tmp,r_0013_0009__direct,scope).
+arc(r_0013_0012__as_tmp,r_0013_0014__solves,restriction).
+arc(r_0013_0014__solves,r_0013_0011__1401,arg0).
+arc(r_0013_0014__solves,r_0013_0016__application,arg1).
 
 </pre>
 <br>
 <pre>
 fof(id_13_A_IBM_1401,axiom,
     ? [T1401X6,EVENTX10,CONNX5,EVENTX8,EVENTX9,ENTITYX1,ENTITYX2,ENTITYX3,T1401X4,ENTITYX7] :
-      ( isA(ENTITYX1,r__program_0013_0002)
-      &amp; isA(ENTITYX2,r__series_0013_0005)
-      &amp; r__of_0013_0006(ENTITYX2) = ENTITYX3
-      &amp; isA(CONNX5,r__as_0013_0012_tmp)
+      ( isA(ENTITYX1,r_0013_0002__program)
+      &amp; isA(ENTITYX2,r_0013_0005__series)
+      &amp; r_0013_0006__of(ENTITYX2) = ENTITYX3
+      &amp; isA(CONNX5,r_0013_0012__as_tmp)
       &amp; scope(CONNX5) = EVENTX9
-      &amp; isA(EVENTX9,r__direct_0013_0009)
+      &amp; isA(EVENTX9,r_0013_0009__direct)
       &amp; arg0(EVENTX9) = ENTITYX3
       &amp; arg1(EVENTX9) = T1401X4
       &amp; restriction(CONNX5) = EVENTX8
-      &amp; isA(EVENTX8,r__solves_0013_0014)
+      &amp; isA(EVENTX8,r_0013_0014__solves)
       &amp; arg0(EVENTX8) = T1401X6
       &amp; arg1(EVENTX8) = ENTITYX7
-      &amp; isA(ENTITYX3,r__instructions_0013_0007)
-      &amp; isA(T1401X4,r__1401_0013_0011)
+      &amp; isA(ENTITYX3,r_0013_0007__instructions)
+      &amp; isA(T1401X4,r_0013_0011__1401)
       &amp; T1401X6 = T1401X4
-      &amp; isA(ENTITYX7,r__application_0013_0016)
-      &amp; isA(EVENTX10,r__is_0013_0003)
+      &amp; isA(ENTITYX7,r_0013_0016__application)
+      &amp; isA(EVENTX10,r_0013_0003__is)
       &amp; arg0(EVENTX10) = ENTITYX1
       &amp; prd2(EVENTX10) = ENTITYX2 ) ).
 

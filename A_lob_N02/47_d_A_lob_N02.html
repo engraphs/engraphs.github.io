@@ -103,7 +103,7 @@
 <title>0087_0007&#45;&gt;0087_0009</title>
 <path fill="none" stroke="black" d="M128.45,-173.8C128.45,-162.16 128.45,-146.55 128.45,-133.24"/>
 <polygon fill="black" stroke="black" points="131.95,-133.18 128.45,-123.18 124.95,-133.18 131.95,-133.18"/>
-<text text-anchor="middle" x="153.95" y="-144.8" font-family="fixed" font-size="14.00">to_[loc]</text>
+<text text-anchor="middle" x="150.45" y="-144.8" font-family="fixed" font-size="14.00">to[loc]</text>
 </g>
 <!-- 0087_0014 -->
 <g id="node7" class="node">
@@ -114,9 +114,9 @@
 <!-- 0087_0007&#45;&gt;0087_0014 -->
 <g id="edge6" class="edge">
 <title>0087_0007&#45;&gt;0087_0014</title>
-<path fill="none" stroke="black" d="M150.58,-177.87C160.8,-171.57 172.97,-163.72 183.45,-156 194.79,-147.64 206.75,-137.74 216.91,-128.95"/>
-<polygon fill="black" stroke="black" points="219.41,-131.42 224.63,-122.2 214.8,-126.15 219.41,-131.42"/>
-<text text-anchor="middle" x="247.95" y="-144.8" font-family="fixed" font-size="14.00">through_[dir]</text>
+<path fill="none" stroke="black" d="M148.12,-176.78C156.83,-170.45 167.18,-162.89 176.45,-156 188.7,-146.89 202.15,-136.73 213.69,-127.97"/>
+<polygon fill="black" stroke="black" points="215.87,-130.7 221.71,-121.86 211.63,-125.13 215.87,-130.7"/>
+<text text-anchor="middle" x="237.95" y="-144.8" font-family="fixed" font-size="14.00">through[dir]</text>
 </g>
 <!-- 0087_0011_0087_0012 -->
 <g id="node8" class="node">
@@ -148,14 +148,14 @@
 </svg>
 <br>
 <pre>
-arc(question_0087_1002,r__possibly_0087_0005,scope).
-arc(r__could_0087_0004,r__have_0087_0006,scope).
-arc(r__possibly_0087_0005,r__could_0087_0004,scope).
-arc(r__have_0087_0006,r__come_0087_0007,catenative).
-arc(r__come_0087_0007,r__harm_0087_0003,arg0).
-arc(r__come_0087_0007,r__Forrest_0087_0009,r__to_0087_0008_loc).
-arc(r__come_0087_0007,r__nonsense_0087_0014,r__through_0087_0010_dir).
-arc(r__nonsense_0087_0014,r__Sir_0087_0011_r__John_0087_0012,genv).
+arc(question_0087_1002,r_0087_0005__possibly,scope).
+arc(r_0087_0004__could,r_0087_0006__have,scope).
+arc(r_0087_0005__possibly,r_0087_0004__could,scope).
+arc(r_0087_0006__have,r_0087_0007__come,catenative).
+arc(r_0087_0007__come,r_0087_0003__harm,arg0).
+arc(r_0087_0007__come,r_0087_0009__Forrest,r_0087_0008__to_loc).
+arc(r_0087_0007__come,r_0087_0014__nonsense,r_0087_0010__through_dir).
+arc(r_0087_0014__nonsense,r_0087_0011__Sir_John,genv).
 
 </pre>
 <br>
@@ -163,20 +163,20 @@ arc(r__nonsense_0087_0014,r__Sir_0087_0011_r__John_0087_0012,genv).
 fof(id_87_A_lob_N02,axiom,
     ? [CATENATIVEX6,OPERATORX2,OPERATORX4,OPERATORX5,EVENTX9,EVENTX8,ENTITYX3,ENTITYX7] :
       ( CATENATIVEX6 = EVENTX8
-      &amp; isA(EVENTX8,r__come_0087_0007)
+      &amp; isA(EVENTX8,r_0087_0007__come)
       &amp; arg0(EVENTX8) = ENTITYX3
-      &amp; r__to_0087_0008_loc(EVENTX8) = r__Forrest_0087_0009
-      &amp; r__through_0087_0010_dir(EVENTX8) = ENTITYX7
-      &amp; isA(ENTITYX3,r__harm_0087_0003)
-      &amp; isA(ENTITYX7,r__nonsense_0087_0014)
-      &amp; genv(ENTITYX7) = r__Sir_0087_0011_r__John_0087_0012
+      &amp; r_0087_0008__to_loc(EVENTX8) = r_0087_0009__Forrest
+      &amp; r_0087_0010__through_dir(EVENTX8) = ENTITYX7
+      &amp; isA(ENTITYX3,r_0087_0003__harm)
+      &amp; isA(ENTITYX7,r_0087_0014__nonsense)
+      &amp; genv(ENTITYX7) = r_0087_0011__Sir_John
       &amp; isA(OPERATORX2,question_0087_1002)
       &amp; scope(OPERATORX2) = OPERATORX4
-      &amp; isA(OPERATORX4,r__possibly_0087_0005)
+      &amp; isA(OPERATORX4,r_0087_0005__possibly)
       &amp; scope(OPERATORX4) = OPERATORX5
-      &amp; isA(OPERATORX5,r__could_0087_0004)
+      &amp; isA(OPERATORX5,r_0087_0004__could)
       &amp; scope(OPERATORX5) = EVENTX9
-      &amp; isA(EVENTX9,r__have_0087_0006)
+      &amp; isA(EVENTX9,r_0087_0006__have)
       &amp; catenative(EVENTX9) = CATENATIVEX6 ) ).
 
 

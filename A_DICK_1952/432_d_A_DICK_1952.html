@@ -64,7 +64,7 @@ The line marched across the gray slag , the eternal expanse of fused metal .
 <title>0555_0003&#45;&gt;0555_0007</title>
 <path fill="none" stroke="black" d="M68.1,-348.21C73.98,-336.02 82.04,-319.32 88.7,-305.49"/>
 <polygon fill="black" stroke="black" points="91.86,-307 93.06,-296.47 85.56,-303.96 91.86,-307"/>
-<text text-anchor="middle" x="123.5" y="-318.8" font-family="fixed" font-size="14.00">across_[dir]</text>
+<text text-anchor="middle" x="120" y="-318.8" font-family="fixed" font-size="14.00">across[dir]</text>
 </g>
 <!-- 0555_0006 -->
 <g id="node4" class="node">
@@ -135,34 +135,34 @@ The line marched across the gray slag , the eternal expanse of fused metal .
 </svg>
 <br>
 <pre>
-arc(r__marched_0555_0003,r__line_0555_0002,arg0).
-arc(r__marched_0555_0003,r__slag_0555_0007,r__across_0555_0004_dir).
-arc(r__slag_0555_0007,r__gray_0555_0006,attrib2).
-arc(r__slag_0555_0007,r__expanse_0555_0011,prn5).
-arc(r__expanse_0555_0011,r__eternal_0555_0010,attrib2).
-arc(r__expanse_0555_0011,r__metal_0555_0014,r__of_0555_0012).
-arc(r__metal_0555_0014,r__fused_0555_0013,attrib1).
+arc(r_0555_0003__marched,r_0555_0002__line,arg0).
+arc(r_0555_0003__marched,r_0555_0007__slag,r_0555_0004__across_dir).
+arc(r_0555_0007__slag,r_0555_0006__gray,attrib2).
+arc(r_0555_0007__slag,r_0555_0011__expanse,prn5).
+arc(r_0555_0011__expanse,r_0555_0010__eternal,attrib2).
+arc(r_0555_0011__expanse,r_0555_0014__metal,r_0555_0012__of).
+arc(r_0555_0014__metal,r_0555_0013__fused,attrib1).
 
 </pre>
 <br>
 <pre>
 fof(id_555_A_DICK_1952,axiom,
     ? [EVENTX8,ENTITYX1,ENTITYX2,ENTITYX4,ENTITYX6,ATTRIBX3,ATTRIBX5,ATTRIBX7] :
-      ( isA(ENTITYX1,r__line_0555_0002)
-      &amp; isA(ENTITYX2,r__slag_0555_0007)
+      ( isA(ENTITYX1,r_0555_0002__line)
+      &amp; isA(ENTITYX2,r_0555_0007__slag)
       &amp; attrib2(ENTITYX2) = ATTRIBX3
       &amp; prn5(ENTITYX2) = ENTITYX4
-      &amp; isA(ENTITYX4,r__expanse_0555_0011)
+      &amp; isA(ENTITYX4,r_0555_0011__expanse)
       &amp; attrib2(ENTITYX4) = ATTRIBX5
-      &amp; r__of_0555_0012(ENTITYX4) = ENTITYX6
-      &amp; isA(ENTITYX6,r__metal_0555_0014)
+      &amp; r_0555_0012__of(ENTITYX4) = ENTITYX6
+      &amp; isA(ENTITYX6,r_0555_0014__metal)
       &amp; attrib1(ENTITYX6) = ATTRIBX7
-      &amp; isA(ATTRIBX3,r__gray_0555_0006)
-      &amp; isA(ATTRIBX5,r__eternal_0555_0010)
-      &amp; isA(ATTRIBX7,r__fused_0555_0013)
-      &amp; isA(EVENTX8,r__marched_0555_0003)
+      &amp; isA(ATTRIBX3,r_0555_0006__gray)
+      &amp; isA(ATTRIBX5,r_0555_0010__eternal)
+      &amp; isA(ATTRIBX7,r_0555_0013__fused)
+      &amp; isA(EVENTX8,r_0555_0003__marched)
       &amp; arg0(EVENTX8) = ENTITYX1
-      &amp; r__across_0555_0004_dir(EVENTX8) = ENTITYX2 ) ).
+      &amp; r_0555_0004__across_dir(EVENTX8) = ENTITYX2 ) ).
 
 
 </pre>

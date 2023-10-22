@@ -135,32 +135,32 @@ Going back to the 1970s , QED had other offspring .
 </svg>
 <br>
 <pre>
-arc(tmp_0055_1001,r__Going_0055_0001,restriction).
-arc(tmp_0055_1001,r__had_0055_0008,scope).
-arc(r__Going_0055_0001,r__back_0055_0002,clr_dir2).
-arc(r__back_0055_0002,r__1970s_0055_0005,r__to_0055_0003).
-arc(r__had_0055_0008,r__QED_0055_0007,arg0).
-arc(r__had_0055_0008,r__offspring_0055_0010,arg1).
-arc(r__offspring_0055_0010,r__other_0055_0009,attrib1).
+arc(r_0055_0001__Going,r_0055_0002__back,clr_dir2).
+arc(r_0055_0002__back,r_0055_0005__1970s,r_0055_0003__to).
+arc(r_0055_0008__had,r_0055_0007__QED,arg0).
+arc(r_0055_0008__had,r_0055_0010__offspring,arg1).
+arc(r_0055_0010__offspring,r_0055_0009__other,attrib1).
+arc(tmp_0055_1001,r_0055_0001__Going,restriction).
+arc(tmp_0055_1001,r_0055_0008__had,scope).
 
 </pre>
 <br>
 <pre>
 fof(id_55_A_history_of_qed,axiom,
     ? [CONNX2,EVENTX10,EVENTX7,QUALITYX5,ENTITYX8,ENTITYX6,ATTRIBX9] :
-      ( isA(QUALITYX5,r__back_0055_0002)
-      &amp; r__to_0055_0003(QUALITYX5) = ENTITYX6
-      &amp; isA(ENTITYX6,r__1970s_0055_0005)
-      &amp; isA(ENTITYX8,r__offspring_0055_0010)
+      ( isA(QUALITYX5,r_0055_0002__back)
+      &amp; r_0055_0003__to(QUALITYX5) = ENTITYX6
+      &amp; isA(ENTITYX6,r_0055_0005__1970s)
+      &amp; isA(ENTITYX8,r_0055_0010__offspring)
       &amp; attrib1(ENTITYX8) = ATTRIBX9
-      &amp; isA(ATTRIBX9,r__other_0055_0009)
+      &amp; isA(ATTRIBX9,r_0055_0009__other)
       &amp; isA(CONNX2,tmp_0055_1001)
       &amp; restriction(CONNX2) = EVENTX7
-      &amp; isA(EVENTX7,r__Going_0055_0001)
+      &amp; isA(EVENTX7,r_0055_0001__Going)
       &amp; clr_dir2(EVENTX7) = QUALITYX5
       &amp; scope(CONNX2) = EVENTX10
-      &amp; isA(EVENTX10,r__had_0055_0008)
-      &amp; arg0(EVENTX10) = r__QED_0055_0007
+      &amp; isA(EVENTX10,r_0055_0008__had)
+      &amp; arg0(EVENTX10) = r_0055_0007__QED
       &amp; arg1(EVENTX10) = ENTITYX8 ) ).
 
 

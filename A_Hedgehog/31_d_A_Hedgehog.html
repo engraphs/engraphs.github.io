@@ -215,20 +215,20 @@ I understand that badgers are a natural predator of hedgehogs and that consequen
 </svg>
 <br>
 <pre>
-arc(r__understand_0032_0002,r__I_0032_0001,arg0).
-arc(r__understand_0032_0002,r__and_0032_0011,arg1).
-arc(r__are_0032_0005,r__badgers_0032_0004,arg0).
-arc(r__are_0032_0005,r__predator_0032_0008,arg1).
-arc(r__predator_0032_0008,r__natural_0032_0007,attrib2).
-arc(r__predator_0032_0008,r__hedgehogs_0032_0010,r__of_0032_0009).
-arc(r__and_0032_0011,r__are_0032_0005,conj1).
-arc(r__and_0032_0011,r__consequently_0032_0013,conj2).
-arc(r__consequently_0032_0013,r__avoid_0032_0015,scope).
-arc(r__avoid_0032_0015,r__hedgehogs_0032_0010,arg0).
-arc(r__avoid_0032_0015,r__sites_0032_0016,arg1).
-arc(r__are_0032_0019,r__badgers_0032_0004,arg0).
-arc(r__are_0032_0019,r__sites_0032_0016,loc1).
-arc(r__are_0032_0019,r__present_0032_0020,prd2).
+arc(r_0032_0002__understand,r_0032_0001__I,arg0).
+arc(r_0032_0002__understand,r_0032_0011__and,arg1).
+arc(r_0032_0005__are,r_0032_0004__badgers,arg0).
+arc(r_0032_0005__are,r_0032_0008__predator,arg1).
+arc(r_0032_0008__predator,r_0032_0007__natural,attrib2).
+arc(r_0032_0008__predator,r_0032_0010__hedgehogs,r_0032_0009__of).
+arc(r_0032_0011__and,r_0032_0005__are,conj1).
+arc(r_0032_0011__and,r_0032_0013__consequently,conj2).
+arc(r_0032_0013__consequently,r_0032_0015__avoid,scope).
+arc(r_0032_0015__avoid,r_0032_0010__hedgehogs,arg0).
+arc(r_0032_0015__avoid,r_0032_0016__sites,arg1).
+arc(r_0032_0019__are,r_0032_0004__badgers,arg0).
+arc(r_0032_0019__are,r_0032_0016__sites,loc1).
+arc(r_0032_0019__are,r_0032_0020__present,prd2).
 
 </pre>
 <br>
@@ -236,35 +236,35 @@ arc(r__are_0032_0019,r__present_0032_0020,prd2).
 fof(id_32_A_Hedgehog,axiom,
     ? [STATEX1,HEDGEHOGSX10,BADGERSX12,EVENTX17,CONJX16,OPERATORX9,EVENTX15,EVENTX14,EVENTX8,ENTITYX11,BADGERSX4,ENTITYX5,HEDGEHOGSX7,ATTRIBX13,ATTRIBX6] :
       ( STATEX1 = CONJX16
-      &amp; isA(CONJX16,r__and_0032_0011)
+      &amp; isA(CONJX16,r_0032_0011__and)
       &amp; conj1(CONJX16) = EVENTX8
-      &amp; isA(EVENTX8,r__are_0032_0005)
+      &amp; isA(EVENTX8,r_0032_0005__are)
       &amp; arg0(EVENTX8) = BADGERSX4
       &amp; arg0(EVENTX8) = BADGERSX4
       &amp; arg1(EVENTX8) = ENTITYX5
       &amp; conj2(CONJX16) = OPERATORX9
-      &amp; isA(OPERATORX9,r__consequently_0032_0013)
+      &amp; isA(OPERATORX9,r_0032_0013__consequently)
       &amp; scope(OPERATORX9) = EVENTX15
-      &amp; isA(EVENTX15,r__avoid_0032_0015)
+      &amp; isA(EVENTX15,r_0032_0015__avoid)
       &amp; arg0(EVENTX15) = HEDGEHOGSX10
       &amp; arg0(EVENTX15) = HEDGEHOGSX10
       &amp; arg1(EVENTX15) = ENTITYX11
-      &amp; isA(BADGERSX4,r__badgers_0032_0004)
-      &amp; isA(ENTITYX5,r__predator_0032_0008)
+      &amp; isA(BADGERSX4,r_0032_0004__badgers)
+      &amp; isA(ENTITYX5,r_0032_0008__predator)
       &amp; attrib2(ENTITYX5) = ATTRIBX6
-      &amp; r__of_0032_0009(ENTITYX5) = HEDGEHOGSX7
-      &amp; isA(HEDGEHOGSX7,r__hedgehogs_0032_0010)
+      &amp; r_0032_0009__of(ENTITYX5) = HEDGEHOGSX7
+      &amp; isA(HEDGEHOGSX7,r_0032_0010__hedgehogs)
       &amp; HEDGEHOGSX10 = HEDGEHOGSX7
-      &amp; isA(EVENTX14,r__are_0032_0019)
+      &amp; isA(EVENTX14,r_0032_0019__are)
       &amp; loc1(EVENTX14) = ENTITYX11
       &amp; arg0(EVENTX14) = BADGERSX12
       &amp; prd2(EVENTX14) = ATTRIBX13
-      &amp; isA(ENTITYX11,r__sites_0032_0016)
+      &amp; isA(ENTITYX11,r_0032_0016__sites)
       &amp; BADGERSX12 = BADGERSX4
-      &amp; isA(ATTRIBX6,r__natural_0032_0007)
-      &amp; isA(ATTRIBX13,r__present_0032_0020)
-      &amp; isA(EVENTX17,r__understand_0032_0002)
-      &amp; arg0(EVENTX17) = r__I_0032_0001
+      &amp; isA(ATTRIBX6,r_0032_0007__natural)
+      &amp; isA(ATTRIBX13,r_0032_0020__present)
+      &amp; isA(EVENTX17,r_0032_0002__understand)
+      &amp; arg0(EVENTX17) = r_0032_0001__I
       &amp; arg1(EVENTX17) = STATEX1 ) ).
 
 

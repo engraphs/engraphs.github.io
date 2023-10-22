@@ -122,11 +122,11 @@ You may drive 70 mph where posted .
 </svg>
 <br>
 <pre>
-arc(r__may_0012_0002,r__drive_0012_0003,scope).
-arc(r__drive_0012_0003,r__You_0012_0001,arg0).
-arc(r__drive_0012_0003,r__70_0012_0004_r__mph_0012_0005,arg1).
-arc(r__drive_0012_0003,z_0012_1010,loc).
-arc(z_0012_1008,r__posted_0012_0007,catenative).
+arc(r_0012_0002__may,r_0012_0003__drive,scope).
+arc(r_0012_0003__drive,r_0012_0001__You,arg0).
+arc(r_0012_0003__drive,r_0012_0004__70_mph,arg1).
+arc(r_0012_0003__drive,z_0012_1010,loc).
+arc(z_0012_1008,r_0012_0007__posted,catenative).
 arc(z_0012_1008,z_0012_1010,loc1).
 
 </pre>
@@ -135,16 +135,16 @@ arc(z_0012_1008,z_0012_1010,loc1).
 fof(id_12_A_driver_handbook,axiom,
     ? [CATENATIVEX5,OPERATORX11,EVENTX12,EVENTX9,EVENTX7,ENTITYX1,ENTITYX2] :
       ( CATENATIVEX5 = EVENTX7
-      &amp; isA(EVENTX7,r__posted_0012_0007)
-      &amp; isA(ENTITYX1,r__70_0012_0004_r__mph_0012_0005)
+      &amp; isA(EVENTX7,r_0012_0007__posted)
+      &amp; isA(ENTITYX1,r_0012_0004__70_mph)
       &amp; isA(EVENTX9,z_0012_1008)
       &amp; loc1(EVENTX9) = ENTITYX2
       &amp; catenative(EVENTX9) = CATENATIVEX5
       &amp; isA(ENTITYX2,z_0012_1010)
-      &amp; isA(OPERATORX11,r__may_0012_0002)
+      &amp; isA(OPERATORX11,r_0012_0002__may)
       &amp; scope(OPERATORX11) = EVENTX12
-      &amp; isA(EVENTX12,r__drive_0012_0003)
-      &amp; arg0(EVENTX12) = r__You_0012_0001
+      &amp; isA(EVENTX12,r_0012_0003__drive)
+      &amp; arg0(EVENTX12) = r_0012_0001__You
       &amp; arg1(EVENTX12) = ENTITYX1
       &amp; loc(EVENTX12) = ENTITYX2 ) ).
 

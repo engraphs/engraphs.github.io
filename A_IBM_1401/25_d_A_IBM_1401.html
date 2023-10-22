@@ -83,9 +83,9 @@ EASIER TO UNDERSTAND PROGRAMS
 </svg>
 <br>
 <pre>
-arc(r__EASIER_0030_0001,r__UNDERSTAND_0030_0003,emb2).
-arc(r__UNDERSTAND_0030_0003,r__PROGRAMS_0030_0004,arg1).
-arc(z_0030_1007,r__EASIER_0030_0001,attrib1).
+arc(r_0030_0001__EASIER,r_0030_0003__UNDERSTAND,emb2).
+arc(r_0030_0003__UNDERSTAND,r_0030_0004__PROGRAMS,arg1).
+arc(z_0030_1007,r_0030_0001__EASIER,attrib1).
 
 </pre>
 <br>
@@ -93,11 +93,11 @@ arc(z_0030_1007,r__EASIER_0030_0001,attrib1).
 fof(id_30_A_IBM_1401,axiom,
     ? [STATEX2,EVENTX8,EVENTX6,ATTRIBX1,ENTITYX5] :
       ( STATEX2 = EVENTX6
-      &amp; isA(EVENTX6,r__UNDERSTAND_0030_0003)
+      &amp; isA(EVENTX6,r_0030_0003__UNDERSTAND)
       &amp; arg1(EVENTX6) = ENTITYX5
-      &amp; isA(ATTRIBX1,r__EASIER_0030_0001)
+      &amp; isA(ATTRIBX1,r_0030_0001__EASIER)
       &amp; emb2(ATTRIBX1) = STATEX2
-      &amp; isA(ENTITYX5,r__PROGRAMS_0030_0004)
+      &amp; isA(ENTITYX5,r_0030_0004__PROGRAMS)
       &amp; isA(EVENTX8,z_0030_1007)
       &amp; attrib1(EVENTX8) = ATTRIBX1 ) ).
 

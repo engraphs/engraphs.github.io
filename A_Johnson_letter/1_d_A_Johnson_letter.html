@@ -121,7 +121,7 @@ Read it in full here .
 <title>0001_0008&#45;&gt;0001_0010_0001_0011_0001_0012</title>
 <path fill="none" stroke="black" d="M257.69,-173.8C257.69,-162.16 257.69,-146.55 257.69,-133.24"/>
 <polygon fill="black" stroke="black" points="261.19,-133.18 257.69,-123.18 254.19,-133.18 261.19,-133.18"/>
-<text text-anchor="middle" x="289.19" y="-144.8" font-family="fixed" font-size="14.00">to_[arg2]</text>
+<text text-anchor="middle" x="285.69" y="-144.8" font-family="fixed" font-size="14.00">to[arg2]</text>
 </g>
 <!-- 0001_0014_0001_0015 -->
 <g id="node8" class="node">
@@ -192,17 +192,17 @@ Read it in full here .
 </svg>
 <br>
 <pre>
-arc(imperative_0001_1014,r__Read_0002_0001,scope).
-arc(r__letter_0001_0005,r__Prime_0001_0002_r__Minister_0001_0003,genv).
-arc(r__will_0001_0006,r__be_0001_0007,scope).
-arc(r__be_0001_0007,r__sent_0001_0008,catenative).
-arc(r__be_0001_0007,r__said_0001_0016,prn6).
-arc(r__sent_0001_0008,r__letter_0001_0005,arg1).
-arc(r__sent_0001_0008,r__30_0001_0010_r__million_0001_0011_r__households_0001_0012,r__to_0001_0009_arg2).
-arc(r__said_0001_0016,r__Number_0001_0014_r__10_0001_0015,arg0).
-arc(r__Read_0002_0001,r__letter_0001_0005,arg1).
-arc(r__Read_0002_0001,r__in_full_0002_0003,mnr3).
-arc(r__Read_0002_0001,r__here_0002_0004,loc4).
+arc(imperative_0001_1014,r_0002_0001__Read,scope).
+arc(r_0001_0005__letter,r_0001_0002__Prime_Minister,genv).
+arc(r_0001_0006__will,r_0001_0007__be,scope).
+arc(r_0001_0007__be,r_0001_0008__sent,catenative).
+arc(r_0001_0007__be,r_0001_0016__said,prn6).
+arc(r_0001_0008__sent,r_0001_0005__letter,arg1).
+arc(r_0001_0008__sent,r_0001_0010__30_million_households,r_0001_0009__to_arg2).
+arc(r_0001_0016__said,r_0001_0014__Number_10,arg0).
+arc(r_0002_0001__Read,r_0001_0005__letter,arg1).
+arc(r_0002_0001__Read,r_0002_0003__in_full,mnr3).
+arc(r_0002_0001__Read,r_0002_0004__here,loc4).
 
 </pre>
 <br>
@@ -210,28 +210,28 @@ arc(r__Read_0002_0001,r__here_0002_0004,loc4).
 fof(id_1_A_Johnson_letter__2_A_Johnson_letter,axiom,
     ? [EVENTX2,CATENATIVEX6,LETTERX15,OPERATORX14,EVENTX18,OPERATORX5,EVENTX10,EVENTX9,EVENTX4,LETTERX1,ENTITYX8,ENTITYX3,QUALITYX16,QUALITYX17] :
       ( EVENTX2 = EVENTX4
-      &amp; isA(EVENTX4,r__said_0001_0016)
+      &amp; isA(EVENTX4,r_0001_0016__said)
       &amp; arg0(EVENTX4) = ENTITYX3
       &amp; CATENATIVEX6 = EVENTX9
-      &amp; isA(EVENTX9,r__sent_0001_0008)
+      &amp; isA(EVENTX9,r_0001_0008__sent)
       &amp; arg1(EVENTX9) = LETTERX1
-      &amp; r__to_0001_0009_arg2(EVENTX9) = ENTITYX8
-      &amp; isA(LETTERX1,r__letter_0001_0005)
-      &amp; genv(LETTERX1) = r__Prime_0001_0002_r__Minister_0001_0003
-      &amp; isA(ENTITYX3,r__Number_0001_0014_r__10_0001_0015)
-      &amp; isA(ENTITYX8,r__30_0001_0010_r__million_0001_0011_r__households_0001_0012)
+      &amp; r_0001_0009__to_arg2(EVENTX9) = ENTITYX8
+      &amp; isA(LETTERX1,r_0001_0005__letter)
+      &amp; genv(LETTERX1) = r_0001_0002__Prime_Minister
+      &amp; isA(ENTITYX3,r_0001_0014__Number_10)
+      &amp; isA(ENTITYX8,r_0001_0010__30_million_households)
       &amp; LETTERX15 = LETTERX1
-      &amp; isA(r__Prime_0001_0002_r__Minister_0001_0003,r__Prime_0001_0002_r__Minister_0001_0003)
-      &amp; isA(QUALITYX16,r__in_full_0002_0003)
-      &amp; isA(QUALITYX17,r__here_0002_0004)
-      &amp; isA(OPERATORX5,r__will_0001_0006)
+      &amp; isA(r_0001_0002__Prime_Minister,r_0001_0002__Prime_Minister)
+      &amp; isA(QUALITYX16,r_0002_0003__in_full)
+      &amp; isA(QUALITYX17,r_0002_0004__here)
+      &amp; isA(OPERATORX5,r_0001_0006__will)
       &amp; scope(OPERATORX5) = EVENTX10
-      &amp; isA(EVENTX10,r__be_0001_0007)
+      &amp; isA(EVENTX10,r_0001_0007__be)
       &amp; catenative(EVENTX10) = CATENATIVEX6
       &amp; prn6(EVENTX10) = EVENTX2
       &amp; isA(OPERATORX14,imperative_0001_1014)
       &amp; scope(OPERATORX14) = EVENTX18
-      &amp; isA(EVENTX18,r__Read_0002_0001)
+      &amp; isA(EVENTX18,r_0002_0001__Read)
       &amp; arg1(EVENTX18) = LETTERX15
       &amp; mnr3(EVENTX18) = QUALITYX16
       &amp; loc4(EVENTX18) = QUALITYX17 ) ).

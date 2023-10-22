@@ -129,19 +129,19 @@ This is part of a letter you have received from a penfriend .
 <title>0025_0009&#45;&gt;0025_0012</title>
 <path fill="none" stroke="black" d="M229.71,-88.83C237.87,-82.85 247.14,-75.8 255.25,-69 265.14,-60.7 275.57,-51.07 284.54,-42.48"/>
 <polygon fill="black" stroke="black" points="287.24,-44.74 291.99,-35.27 282.37,-39.71 287.24,-44.74"/>
-<text text-anchor="middle" x="305.75" y="-57.8" font-family="fixed" font-size="14.00">from_[dir]</text>
+<text text-anchor="middle" x="302.25" y="-57.8" font-family="fixed" font-size="14.00">from[dir]</text>
 </g>
 </g>
 </svg>
 <br>
 <pre>
-arc(r__is_0025_0002,r__This_0025_0001,arg0).
-arc(r__is_0025_0002,r__part_0025_0003,prd2).
-arc(r__part_0025_0003,r__letter_0025_0006,r__of_0025_0004).
-arc(r__have_0025_0008,r__received_0025_0009,catenative).
-arc(r__received_0025_0009,r__letter_0025_0006,arg1).
-arc(r__received_0025_0009,r__you_0025_0007,arg0).
-arc(r__received_0025_0009,r__penfriend_0025_0012,r__from_0025_0010_dir).
+arc(r_0025_0002__is,r_0025_0001__This,arg0).
+arc(r_0025_0002__is,r_0025_0003__part,prd2).
+arc(r_0025_0003__part,r_0025_0006__letter,r_0025_0004__of).
+arc(r_0025_0008__have,r_0025_0009__received,catenative).
+arc(r_0025_0009__received,r_0025_0006__letter,arg1).
+arc(r_0025_0009__received,r_0025_0007__you,arg0).
+arc(r_0025_0009__received,r_0025_0012__penfriend,r_0025_0010__from_dir).
 
 </pre>
 <br>
@@ -149,18 +149,18 @@ arc(r__received_0025_0009,r__penfriend_0025_0012,r__from_0025_0010_dir).
 fof(id_25_A_fce_0101_2001_06,axiom,
     ? [CATENATIVEX3,EVENTX7,EVENTX6,EVENTX5,ENTITYX1,ENTITYX2,ENTITYX4] :
       ( CATENATIVEX3 = EVENTX5
-      &amp; isA(EVENTX5,r__received_0025_0009)
-      &amp; arg0(EVENTX5) = r__you_0025_0007
+      &amp; isA(EVENTX5,r_0025_0009__received)
+      &amp; arg0(EVENTX5) = r_0025_0007__you
       &amp; arg1(EVENTX5) = ENTITYX2
-      &amp; r__from_0025_0010_dir(EVENTX5) = ENTITYX4
-      &amp; isA(ENTITYX1,r__part_0025_0003)
-      &amp; r__of_0025_0004(ENTITYX1) = ENTITYX2
-      &amp; isA(EVENTX6,r__have_0025_0008)
+      &amp; r_0025_0010__from_dir(EVENTX5) = ENTITYX4
+      &amp; isA(ENTITYX1,r_0025_0003__part)
+      &amp; r_0025_0004__of(ENTITYX1) = ENTITYX2
+      &amp; isA(EVENTX6,r_0025_0008__have)
       &amp; catenative(EVENTX6) = CATENATIVEX3
-      &amp; isA(ENTITYX2,r__letter_0025_0006)
-      &amp; isA(ENTITYX4,r__penfriend_0025_0012)
-      &amp; isA(EVENTX7,r__is_0025_0002)
-      &amp; arg0(EVENTX7) = r__This_0025_0001
+      &amp; isA(ENTITYX2,r_0025_0006__letter)
+      &amp; isA(ENTITYX4,r_0025_0012__penfriend)
+      &amp; isA(EVENTX7,r_0025_0002__is)
+      &amp; arg0(EVENTX7) = r_0025_0001__This
       &amp; prd2(EVENTX7) = ENTITYX1 ) ).
 
 

@@ -240,21 +240,21 @@ He bent down to look , squinting .
 <br>
 <pre>
 arc(abs_0012_1020,cnt_0012_1024,scope).
-arc(abs_0012_1020,r__squinting_0013_0007,restriction).
-arc(cnt_0012_1024,r__bent_0013_0002,scope).
-arc(cnt_0012_1024,r__look_0013_0005,restriction).
-arc(imperative_0012_1007,r__Let_0012_0002,scope).
+arc(abs_0012_1020,r_0013_0007__squinting,restriction).
+arc(cnt_0012_1024,r_0013_0002__bent,scope).
+arc(cnt_0012_1024,r_0013_0005__look,restriction).
+arc(imperative_0012_1007,r_0012_0002__Let,scope).
+arc(r_0012_0002__Let,r_0012_0003__me,arg1).
+arc(r_0012_0002__Let,r_0012_0004__look,prd).
+arc(r_0012_0007__Tance,r_0012_0003__me,z_0012_1015).
+arc(r_0012_0007__Tance,r_0012_0009__archeologist,prn3).
+arc(r_0012_0010__said,r_0012_0007__Tance,arg0).
+arc(r_0012_0010__said,utterance_0012_1003,arg1).
+arc(r_0013_0002__bent,r_0012_0003__me,arg0).
+arc(r_0013_0002__bent,r_0013_0003__down,dir2).
+arc(r_0013_0005__look,r_0012_0003__me,arg0).
+arc(r_0013_0007__squinting,r_0012_0003__me,arg0).
 arc(utterance_0012_1003,imperative_0012_1007,part1).
-arc(r__Let_0012_0002,r__me_0012_0003,arg1).
-arc(r__Let_0012_0002,r__look_0012_0004,prd).
-arc(r__Tance_0012_0007,r__me_0012_0003,z_0012_1015).
-arc(r__Tance_0012_0007,r__archeologist_0012_0009,prn3).
-arc(r__said_0012_0010,utterance_0012_1003,arg1).
-arc(r__said_0012_0010,r__Tance_0012_0007,arg0).
-arc(r__bent_0013_0002,r__me_0012_0003,arg0).
-arc(r__bent_0013_0002,r__down_0013_0003,dir2).
-arc(r__look_0013_0005,r__me_0012_0003,arg0).
-arc(r__squinting_0013_0007,r__me_0012_0003,arg0).
 
 </pre>
 <br>
@@ -266,33 +266,33 @@ fof(id_12_A_DICK_1952__13_A_DICK_1952,axiom,
       &amp; part1(CONJX13) = OPERATORX7
       &amp; isA(OPERATORX7,imperative_0012_1007)
       &amp; scope(OPERATORX7) = EVENTX12
-      &amp; isA(EVENTX12,r__Let_0012_0002)
-      &amp; arg1(EVENTX12) = r__me_0012_0003
+      &amp; isA(EVENTX12,r_0012_0002__Let)
+      &amp; arg1(EVENTX12) = r_0012_0003__me
       &amp; prd(EVENTX12) = STATEX8
       &amp; STATEX8 = EVENTX11
-      &amp; isA(EVENTX11,r__look_0012_0004)
-      &amp; TANCEX16 = r__me_0012_0003
-      &amp; isA(ENTITYX17,r__archeologist_0012_0009)
-      &amp; TANCEX19 = r__me_0012_0003
-      &amp; isA(r__Tance_0012_0007,r__Tance_0012_0007)
-      &amp; z_0012_1015(r__Tance_0012_0007) = TANCEX16
-      &amp; prn3(r__Tance_0012_0007) = ENTITYX17
-      &amp; isA(QUALITYX23,r__down_0013_0003)
-      &amp; isA(EVENTX18,r__said_0012_0010)
+      &amp; isA(EVENTX11,r_0012_0004__look)
+      &amp; TANCEX16 = r_0012_0003__me
+      &amp; isA(ENTITYX17,r_0012_0009__archeologist)
+      &amp; TANCEX19 = r_0012_0003__me
+      &amp; isA(r_0012_0007__Tance,r_0012_0007__Tance)
+      &amp; z_0012_1015(r_0012_0007__Tance) = TANCEX16
+      &amp; prn3(r_0012_0007__Tance) = ENTITYX17
+      &amp; isA(QUALITYX23,r_0013_0003__down)
+      &amp; isA(EVENTX18,r_0012_0010__said)
       &amp; arg1(EVENTX18) = STATEX1
-      &amp; arg0(EVENTX18) = r__Tance_0012_0007
+      &amp; arg0(EVENTX18) = r_0012_0007__Tance
       &amp; isA(CONNX21,abs_0012_1020)
       &amp; scope(CONNX21) = CONNX25
       &amp; isA(CONNX25,cnt_0012_1024)
       &amp; scope(CONNX25) = EVENTX27
-      &amp; isA(EVENTX27,r__bent_0013_0002)
+      &amp; isA(EVENTX27,r_0013_0002__bent)
       &amp; arg0(EVENTX27) = TANCEX19
       &amp; dir2(EVENTX27) = QUALITYX23
       &amp; restriction(CONNX25) = EVENTX26
-      &amp; isA(EVENTX26,r__look_0013_0005)
+      &amp; isA(EVENTX26,r_0013_0005__look)
       &amp; arg0(EVENTX26) = TANCEX19
       &amp; restriction(CONNX21) = EVENTX22
-      &amp; isA(EVENTX22,r__squinting_0013_0007)
+      &amp; isA(EVENTX22,r_0013_0007__squinting)
       &amp; arg0(EVENTX22) = TANCEX19 ) ).
 
 

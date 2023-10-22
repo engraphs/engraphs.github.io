@@ -161,35 +161,35 @@ And a long way off , a hundred miles from the city , another warning light flash
 </svg>
 <br>
 <pre>
-arc(r__way_0610_0004,r__long_0610_0003,attrib2).
-arc(r__off_0610_0005,r__way_0610_0004,modifier1).
-arc(r__hundred_0610_0008_r__miles_0610_0009,r__city_0610_0012,r__from_0610_0010).
-arc(r__flashed_0610_0017,r__off_0610_0005,loc2).
-arc(r__flashed_0610_0017,r__hundred_0610_0008_r__miles_0610_0009,loc).
-arc(r__flashed_0610_0017,r__warning_0610_0015_r__light_0610_0016,arg0).
-arc(r__flashed_0610_0017,r__on_0610_0018,clr_dir8).
-arc(r__flashed_0610_0017,r__underground_0610_0021,loc10).
-arc(r__underground_0610_0021,r__far_0610_0020,quality1).
+arc(r_0610_0004__way,r_0610_0003__long,attrib2).
+arc(r_0610_0005__off,r_0610_0004__way,modifier1).
+arc(r_0610_0008__hundred_miles,r_0610_0012__city,r_0610_0010__from).
+arc(r_0610_0017__flashed,r_0610_0005__off,loc2).
+arc(r_0610_0017__flashed,r_0610_0008__hundred_miles,loc).
+arc(r_0610_0017__flashed,r_0610_0015__warning_light,arg0).
+arc(r_0610_0017__flashed,r_0610_0018__on,clr_dir8).
+arc(r_0610_0017__flashed,r_0610_0021__underground,loc10).
+arc(r_0610_0021__underground,r_0610_0020__far,quality1).
 
 </pre>
 <br>
 <pre>
 fof(id_610_A_DICK_1952,axiom,
     ? [EVENTX10,QUALITYX1,QUALITYX7,QUALITYX8,QUALITYX9,ENTITYX4,ENTITYX6,ENTITYX5,ENTITYX2,ATTRIBX3] :
-      ( isA(QUALITYX1,r__off_0610_0005)
+      ( isA(QUALITYX1,r_0610_0005__off)
       &amp; modifier1(QUALITYX1) = ENTITYX2
-      &amp; isA(QUALITYX7,r__on_0610_0018)
-      &amp; isA(QUALITYX8,r__underground_0610_0021)
+      &amp; isA(QUALITYX7,r_0610_0018__on)
+      &amp; isA(QUALITYX8,r_0610_0021__underground)
       &amp; quality1(QUALITYX8) = QUALITYX9
-      &amp; isA(QUALITYX9,r__far_0610_0020)
-      &amp; isA(ENTITYX2,r__way_0610_0004)
+      &amp; isA(QUALITYX9,r_0610_0020__far)
+      &amp; isA(ENTITYX2,r_0610_0004__way)
       &amp; attrib2(ENTITYX2) = ATTRIBX3
-      &amp; isA(ENTITYX4,r__hundred_0610_0008_r__miles_0610_0009)
-      &amp; r__from_0610_0010(ENTITYX4) = ENTITYX5
-      &amp; isA(ENTITYX5,r__city_0610_0012)
-      &amp; isA(ENTITYX6,r__warning_0610_0015_r__light_0610_0016)
-      &amp; isA(ATTRIBX3,r__long_0610_0003)
-      &amp; isA(EVENTX10,r__flashed_0610_0017)
+      &amp; isA(ENTITYX4,r_0610_0008__hundred_miles)
+      &amp; r_0610_0010__from(ENTITYX4) = ENTITYX5
+      &amp; isA(ENTITYX5,r_0610_0012__city)
+      &amp; isA(ENTITYX6,r_0610_0015__warning_light)
+      &amp; isA(ATTRIBX3,r_0610_0003__long)
+      &amp; isA(EVENTX10,r_0610_0017__flashed)
       &amp; loc2(EVENTX10) = QUALITYX1
       &amp; loc(EVENTX10) = ENTITYX4
       &amp; arg0(EVENTX10) = ENTITYX6

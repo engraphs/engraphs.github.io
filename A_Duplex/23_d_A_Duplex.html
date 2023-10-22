@@ -103,7 +103,7 @@ This kind of technology is often deeply divisive , for several reasons .
 <title>0040_0005&#45;&gt;0040_0012</title>
 <path fill="none" stroke="black" d="M204.16,-181.84C220.34,-175.13 242.49,-165.56 261.44,-156 279.78,-146.76 299.67,-135.42 315.8,-125.89"/>
 <polygon fill="black" stroke="black" points="318.03,-128.64 324.83,-120.51 314.45,-122.62 318.03,-128.64"/>
-<text text-anchor="middle" x="317.94" y="-144.8" font-family="fixed" font-size="14.00">for_[cnt]</text>
+<text text-anchor="middle" x="314.44" y="-144.8" font-family="fixed" font-size="14.00">for[cnt]</text>
 </g>
 <!-- 0040_0007 -->
 <g id="node7" class="node">
@@ -135,34 +135,34 @@ This kind of technology is often deeply divisive , for several reasons .
 </svg>
 <br>
 <pre>
-arc(r__kind_0040_0002,r__technology_0040_0004,r__of_0040_0003).
-arc(r__is_0040_0005,r__kind_0040_0002,arg0).
-arc(r__is_0040_0005,r__often_0040_0006,tmp3).
-arc(r__is_0040_0005,r__divisive_0040_0008,prd2).
-arc(r__is_0040_0005,r__reasons_0040_0012,r__for_0040_0010_cnt).
-arc(r__divisive_0040_0008,r__deeply_0040_0007,quality1).
-arc(r__reasons_0040_0012,r__several_0040_0011,attrib1).
+arc(r_0040_0002__kind,r_0040_0004__technology,r_0040_0003__of).
+arc(r_0040_0005__is,r_0040_0002__kind,arg0).
+arc(r_0040_0005__is,r_0040_0006__often,tmp3).
+arc(r_0040_0005__is,r_0040_0008__divisive,prd2).
+arc(r_0040_0005__is,r_0040_0012__reasons,r_0040_0010__for_cnt).
+arc(r_0040_0008__divisive,r_0040_0007__deeply,quality1).
+arc(r_0040_0012__reasons,r_0040_0011__several,attrib1).
 
 </pre>
 <br>
 <pre>
 fof(id_40_A_Duplex,axiom,
     ? [EVENTX8,ENTITYX1,ENTITYX6,ENTITYX2,QUALITYX3,QUALITYX5,ATTRIBX4,ATTRIBX7] :
-      ( isA(ENTITYX1,r__kind_0040_0002)
-      &amp; r__of_0040_0003(ENTITYX1) = ENTITYX2
-      &amp; isA(ENTITYX2,r__technology_0040_0004)
-      &amp; isA(ENTITYX6,r__reasons_0040_0012)
+      ( isA(ENTITYX1,r_0040_0002__kind)
+      &amp; r_0040_0003__of(ENTITYX1) = ENTITYX2
+      &amp; isA(ENTITYX2,r_0040_0004__technology)
+      &amp; isA(ENTITYX6,r_0040_0012__reasons)
       &amp; attrib1(ENTITYX6) = ATTRIBX7
-      &amp; isA(QUALITYX3,r__often_0040_0006)
-      &amp; isA(QUALITYX5,r__deeply_0040_0007)
-      &amp; isA(ATTRIBX4,r__divisive_0040_0008)
+      &amp; isA(QUALITYX3,r_0040_0006__often)
+      &amp; isA(QUALITYX5,r_0040_0007__deeply)
+      &amp; isA(ATTRIBX4,r_0040_0008__divisive)
       &amp; quality1(ATTRIBX4) = QUALITYX5
-      &amp; isA(ATTRIBX7,r__several_0040_0011)
-      &amp; isA(EVENTX8,r__is_0040_0005)
+      &amp; isA(ATTRIBX7,r_0040_0011__several)
+      &amp; isA(EVENTX8,r_0040_0005__is)
       &amp; arg0(EVENTX8) = ENTITYX1
       &amp; tmp3(EVENTX8) = QUALITYX3
       &amp; prd2(EVENTX8) = ATTRIBX4
-      &amp; r__for_0040_0010_cnt(EVENTX8) = ENTITYX6 ) ).
+      &amp; r_0040_0010__for_cnt(EVENTX8) = ENTITYX6 ) ).
 
 
 </pre>

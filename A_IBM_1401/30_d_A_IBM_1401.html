@@ -244,21 +244,21 @@ These systems permit programs to be written using meaningful names ( symbols ) r
 </svg>
 <br>
 <pre>
-arc(mnr_0036_1016,r__written_0037_0007,scope).
-arc(mnr_0036_1016,r__using_0037_0008,restriction).
-arc(r__Programming_0036_0002_r__Systems_0036_0003,r__Symbolic_0036_0001,attrib1).
-arc(r__permit_0037_0003,r__Programming_0036_0002_r__Systems_0036_0003,arg0).
-arc(r__permit_0037_0003,r__programs_0037_0004,arg1).
-arc(r__permit_0037_0003,r__be_0037_0006,prd).
-arc(r__be_0037_0006,mnr_0036_1016,catenative).
-arc(r__using_0037_0008,r__names_0037_0010,arg1).
-arc(r__using_0037_0008,r__rather_0037_0014,mod3).
-arc(r__names_0037_0010,r__meaningful_0037_0009,attrib1).
-arc(r__names_0037_0010,r__symbols_0037_0012,prn4).
-arc(r__rather_0037_0014,z_0036_1027,r__than_0037_0015).
-arc(r__machine_0037_0017_r__language_0037_0018,r__actual_0037_0016,attrib1).
-arc(z_0036_1007,r__Programming_0036_0002_r__Systems_0036_0003,z_0036_1004).
-arc(z_0036_1027,r__machine_0037_0017_r__language_0037_0018,arg1).
+arc(mnr_0036_1016,r_0037_0007__written,scope).
+arc(mnr_0036_1016,r_0037_0008__using,restriction).
+arc(r_0036_0002__Programming_Systems,r_0036_0001__Symbolic,attrib1).
+arc(r_0037_0003__permit,r_0036_0002__Programming_Systems,arg0).
+arc(r_0037_0003__permit,r_0037_0004__programs,arg1).
+arc(r_0037_0003__permit,r_0037_0006__be,prd).
+arc(r_0037_0006__be,mnr_0036_1016,catenative).
+arc(r_0037_0008__using,r_0037_0010__names,arg1).
+arc(r_0037_0008__using,r_0037_0014__rather,mod3).
+arc(r_0037_0010__names,r_0037_0009__meaningful,attrib1).
+arc(r_0037_0010__names,r_0037_0012__symbols,prn4).
+arc(r_0037_0014__rather,z_0036_1027,r_0037_0015__than).
+arc(r_0037_0017__machine_language,r_0037_0016__actual,attrib1).
+arc(z_0036_1007,r_0036_0002__Programming_Systems,z_0036_1004).
+arc(z_0036_1027,r_0037_0017__machine_language,arg1).
 
 </pre>
 <br>
@@ -266,37 +266,37 @@ arc(z_0036_1027,r__machine_0037_0017_r__language_0037_0018,arg1).
 fof(id_36_A_IBM_1401__37_A_IBM_1401,axiom,
     ? [STATEX11,CATENATIVEX14,EVENTX22,SYMBOLIC_SYSTEMSX9,EVENTX32,EVENTX31,CONNX17,EVENTX29,EVENTX28,EVENTX30,EVENTX8,ENTITYX10,ENTITYX18,ENTITYX25,ENTITYX20,SYMBOLIC_SYSTEMSX5,ATTRIBX26,ATTRIBX19,ATTRIBX6,QUALITYX21] :
       ( STATEX11 = EVENTX31
-      &amp; isA(EVENTX31,r__be_0037_0006)
+      &amp; isA(EVENTX31,r_0037_0006__be)
       &amp; catenative(EVENTX31) = CATENATIVEX14
       &amp; CATENATIVEX14 = CONNX17
       &amp; isA(CONNX17,mnr_0036_1016)
       &amp; scope(CONNX17) = EVENTX30
-      &amp; isA(EVENTX30,r__written_0037_0007)
+      &amp; isA(EVENTX30,r_0037_0007__written)
       &amp; restriction(CONNX17) = EVENTX29
-      &amp; isA(EVENTX29,r__using_0037_0008)
+      &amp; isA(EVENTX29,r_0037_0008__using)
       &amp; arg1(EVENTX29) = ENTITYX18
       &amp; mod3(EVENTX29) = QUALITYX21
       &amp; EVENTX22 = EVENTX28
       &amp; isA(EVENTX28,z_0036_1027)
       &amp; arg1(EVENTX28) = ENTITYX25
-      &amp; isA(SYMBOLIC_SYSTEMSX5,r__Programming_0036_0002_r__Systems_0036_0003)
+      &amp; isA(SYMBOLIC_SYSTEMSX5,r_0036_0002__Programming_Systems)
       &amp; attrib1(SYMBOLIC_SYSTEMSX5) = ATTRIBX6
       &amp; SYMBOLIC_SYSTEMSX9 = SYMBOLIC_SYSTEMSX5
-      &amp; isA(ENTITYX10,r__programs_0037_0004)
-      &amp; isA(ENTITYX18,r__names_0037_0010)
+      &amp; isA(ENTITYX10,r_0037_0004__programs)
+      &amp; isA(ENTITYX18,r_0037_0010__names)
       &amp; attrib1(ENTITYX18) = ATTRIBX19
       &amp; prn4(ENTITYX18) = ENTITYX20
-      &amp; isA(ENTITYX20,r__symbols_0037_0012)
-      &amp; isA(ENTITYX25,r__machine_0037_0017_r__language_0037_0018)
+      &amp; isA(ENTITYX20,r_0037_0012__symbols)
+      &amp; isA(ENTITYX25,r_0037_0017__machine_language)
       &amp; attrib1(ENTITYX25) = ATTRIBX26
-      &amp; isA(ATTRIBX6,r__Symbolic_0036_0001)
-      &amp; isA(ATTRIBX19,r__meaningful_0037_0009)
-      &amp; isA(ATTRIBX26,r__actual_0037_0016)
-      &amp; isA(QUALITYX21,r__rather_0037_0014)
-      &amp; r__than_0037_0015(QUALITYX21) = EVENTX22
+      &amp; isA(ATTRIBX6,r_0036_0001__Symbolic)
+      &amp; isA(ATTRIBX19,r_0037_0009__meaningful)
+      &amp; isA(ATTRIBX26,r_0037_0016__actual)
+      &amp; isA(QUALITYX21,r_0037_0014__rather)
+      &amp; r_0037_0015__than(QUALITYX21) = EVENTX22
       &amp; isA(EVENTX8,z_0036_1007)
       &amp; z_0036_1004(EVENTX8) = SYMBOLIC_SYSTEMSX5
-      &amp; isA(EVENTX32,r__permit_0037_0003)
+      &amp; isA(EVENTX32,r_0037_0003__permit)
       &amp; arg0(EVENTX32) = SYMBOLIC_SYSTEMSX9
       &amp; arg1(EVENTX32) = ENTITYX10
       &amp; prd(EVENTX32) = STATEX11 ) ).

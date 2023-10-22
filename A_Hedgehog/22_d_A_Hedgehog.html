@@ -136,13 +136,13 @@ I would be willing to do the job on behalf of the hedgehog .
 </svg>
 <br>
 <pre>
-arc(r__would_0023_0002,r__be_0023_0003,scope).
-arc(r__be_0023_0003,r__I_0023_0001,arg0).
-arc(r__be_0023_0003,r__willing_0023_0004,prd2).
-arc(r__willing_0023_0004,r__do_0023_0006,emb2).
-arc(r__do_0023_0006,r__job_0023_0008,arg1).
-arc(r__job_0023_0008,r__behalf_0023_0010,r__on_0023_0009).
-arc(r__behalf_0023_0010,r__hedgehog_0023_0013,r__of_0023_0011).
+arc(r_0023_0002__would,r_0023_0003__be,scope).
+arc(r_0023_0003__be,r_0023_0001__I,arg0).
+arc(r_0023_0003__be,r_0023_0004__willing,prd2).
+arc(r_0023_0004__willing,r_0023_0006__do,emb2).
+arc(r_0023_0006__do,r_0023_0008__job,arg1).
+arc(r_0023_0008__job,r_0023_0010__behalf,r_0023_0009__on).
+arc(r_0023_0010__behalf,r_0023_0013__hedgehog,r_0023_0011__of).
 
 </pre>
 <br>
@@ -150,19 +150,19 @@ arc(r__behalf_0023_0010,r__hedgehog_0023_0013,r__of_0023_0011).
 fof(id_23_A_Hedgehog,axiom,
     ? [STATEX2,OPERATORX9,EVENTX10,EVENTX8,ENTITYX5,ENTITYX6,ENTITYX7,ATTRIBX1] :
       ( STATEX2 = EVENTX8
-      &amp; isA(EVENTX8,r__do_0023_0006)
+      &amp; isA(EVENTX8,r_0023_0006__do)
       &amp; arg1(EVENTX8) = ENTITYX5
-      &amp; isA(ENTITYX5,r__job_0023_0008)
-      &amp; r__on_0023_0009(ENTITYX5) = ENTITYX6
-      &amp; isA(ENTITYX6,r__behalf_0023_0010)
-      &amp; r__of_0023_0011(ENTITYX6) = ENTITYX7
-      &amp; isA(ENTITYX7,r__hedgehog_0023_0013)
-      &amp; isA(ATTRIBX1,r__willing_0023_0004)
+      &amp; isA(ENTITYX5,r_0023_0008__job)
+      &amp; r_0023_0009__on(ENTITYX5) = ENTITYX6
+      &amp; isA(ENTITYX6,r_0023_0010__behalf)
+      &amp; r_0023_0011__of(ENTITYX6) = ENTITYX7
+      &amp; isA(ENTITYX7,r_0023_0013__hedgehog)
+      &amp; isA(ATTRIBX1,r_0023_0004__willing)
       &amp; emb2(ATTRIBX1) = STATEX2
-      &amp; isA(OPERATORX9,r__would_0023_0002)
+      &amp; isA(OPERATORX9,r_0023_0002__would)
       &amp; scope(OPERATORX9) = EVENTX10
-      &amp; isA(EVENTX10,r__be_0023_0003)
-      &amp; arg0(EVENTX10) = r__I_0023_0001
+      &amp; isA(EVENTX10,r_0023_0003__be)
+      &amp; arg0(EVENTX10) = r_0023_0001__I
       &amp; prd2(EVENTX10) = ATTRIBX1 ) ).
 
 

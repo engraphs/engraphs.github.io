@@ -84,20 +84,20 @@ What color item does the woman buy ?
 </svg>
 <br>
 <pre>
-arc(question_0013_1002,r__does_0013_0004_r__buy_0013_0007,scope).
-arc(r__does_0013_0004_r__buy_0013_0007,r__color_0013_0002_r__item_0013_0003,arg1).
-arc(r__does_0013_0004_r__buy_0013_0007,r__woman_0013_0006,arg0).
+arc(question_0013_1002,r_0013_0004__does_buy,scope).
+arc(r_0013_0004__does_buy,r_0013_0002__color_item,arg1).
+arc(r_0013_0004__does_buy,r_0013_0006__woman,arg0).
 
 </pre>
 <br>
 <pre>
 fof(id_13_A_toeic,axiom,
     ? [OPERATORX2,EVENTX5,ENTITYX3,ENTITYX4] :
-      ( isA(ENTITYX3,r__color_0013_0002_r__item_0013_0003)
-      &amp; isA(ENTITYX4,r__woman_0013_0006)
+      ( isA(ENTITYX3,r_0013_0002__color_item)
+      &amp; isA(ENTITYX4,r_0013_0006__woman)
       &amp; isA(OPERATORX2,question_0013_1002)
       &amp; scope(OPERATORX2) = EVENTX5
-      &amp; isA(EVENTX5,r__does_0013_0004_r__buy_0013_0007)
+      &amp; isA(EVENTX5,r_0013_0004__does_buy)
       &amp; arg1(EVENTX5) = ENTITYX3
       &amp; arg0(EVENTX5) = ENTITYX4 ) ).
 

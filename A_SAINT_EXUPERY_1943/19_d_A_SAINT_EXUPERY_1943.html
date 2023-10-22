@@ -237,56 +237,56 @@ Draw me a sheep . &rdquo;
 </svg>
 <br>
 <pre>
-arc(imperative_0073_1019,r__Draw_0075_0001,scope).
-arc(quantificational_r__everything_0073_0005,r__is_0073_0006,scope).
-arc(quantificational_r__everything_0073_0005,z_0073_1006,restriction).
-arc(r__live_0073_0003,r__I_0073_0002,arg0).
-arc(r__live_0073_0003,z_0073_1003,loc1).
-arc(r__is_0073_0006,r__small_0073_0008,prd2).
-arc(r__is_0073_0006,z_0073_1003,loc).
-arc(r__is_0073_0006,z_0073_1006,arg0).
-arc(r__small_0073_0008,r__very_0073_0007,quality1).
-arc(r__need_0074_0003,r__I_0073_0002,arg0).
-arc(r__need_0074_0003,z_0073_1013,arg1).
-arc(r__is_0074_0004,r__sheep_0074_0006,arg1).
-arc(r__is_0074_0004,z_0073_1013,arg0).
-arc(r__Draw_0075_0001,r__I_0073_0002,arg2).
-arc(r__Draw_0075_0001,r__sheep_0074_0006,arg1).
+arc(imperative_0073_1019,r_0075_0001__Draw,scope).
+arc(r_0073_0003__live,r_0073_0002__I,arg0).
+arc(r_0073_0003__live,z_0073_1003,loc1).
+arc(r_0073_0005__quantificational__everything,r_0073_0006__is,scope).
+arc(r_0073_0005__quantificational__everything,z_0073_1006,restriction).
+arc(r_0073_0006__is,r_0073_0008__small,prd2).
+arc(r_0073_0006__is,z_0073_1003,loc).
+arc(r_0073_0006__is,z_0073_1006,arg0).
+arc(r_0073_0008__small,r_0073_0007__very,quality1).
+arc(r_0074_0003__need,r_0073_0002__I,arg0).
+arc(r_0074_0003__need,z_0073_1013,arg1).
+arc(r_0074_0004__is,r_0074_0006__sheep,arg1).
+arc(r_0074_0004__is,z_0073_1013,arg0).
+arc(r_0075_0001__Draw,r_0073_0002__I,arg2).
+arc(r_0075_0001__Draw,r_0074_0006__sheep,arg1).
 
 </pre>
 <br>
 <pre>
 fof(id_73_A_SAINT_EXUPERY_1943__74_A_SAINT_EXUPERY_1943__75_A_SAINT_EXUPERY_1943,axiom,
     ? [PRINCEX11,PRINCEX20,SHEEPX21,OPERATORX19,EVENTX22,EVENTX15,EVENTX12,QUANTX5,EVENTX9,EVENTX2,ENTITYX10,SHEEPX14,ENTITYX1,ENTITYX4,QUALITYX8,ATTRIBX7] :
-      ( isA(EVENTX2,r__live_0073_0003)
+      ( isA(EVENTX2,r_0073_0003__live)
       &amp; loc1(EVENTX2) = ENTITYX1
-      &amp; arg0(EVENTX2) = r__I_0073_0002
+      &amp; arg0(EVENTX2) = r_0073_0002__I
       &amp; isA(ENTITYX1,z_0073_1003)
-      &amp; isA(EVENTX12,r__need_0074_0003)
+      &amp; isA(EVENTX12,r_0074_0003__need)
       &amp; arg1(EVENTX12) = ENTITYX10
       &amp; arg0(EVENTX12) = PRINCEX11
       &amp; isA(ENTITYX10,z_0073_1013)
-      &amp; PRINCEX11 = r__I_0073_0002
-      &amp; isA(SHEEPX14,r__sheep_0074_0006)
-      &amp; PRINCEX20 = r__I_0073_0002
+      &amp; PRINCEX11 = r_0073_0002__I
+      &amp; isA(SHEEPX14,r_0074_0006__sheep)
+      &amp; PRINCEX20 = r_0073_0002__I
       &amp; SHEEPX21 = SHEEPX14
-      &amp; isA(QUALITYX8,r__very_0073_0007)
-      &amp; isA(ATTRIBX7,r__small_0073_0008)
+      &amp; isA(QUALITYX8,r_0073_0007__very)
+      &amp; isA(ATTRIBX7,r_0073_0008__small)
       &amp; quality1(ATTRIBX7) = QUALITYX8
-      &amp; isA(QUANTX5,quantificational_r__everything_0073_0005)
+      &amp; isA(QUANTX5,r_0073_0005__quantificational__everything)
       &amp; restriction(QUANTX5) = ENTITYX4
       &amp; isA(ENTITYX4,z_0073_1006)
       &amp; scope(QUANTX5) = EVENTX9
-      &amp; isA(EVENTX9,r__is_0073_0006)
+      &amp; isA(EVENTX9,r_0073_0006__is)
       &amp; loc(EVENTX9) = ENTITYX1
       &amp; arg0(EVENTX9) = ENTITYX4
       &amp; prd2(EVENTX9) = ATTRIBX7
-      &amp; isA(EVENTX15,r__is_0074_0004)
+      &amp; isA(EVENTX15,r_0074_0004__is)
       &amp; arg0(EVENTX15) = ENTITYX10
       &amp; arg1(EVENTX15) = SHEEPX14
       &amp; isA(OPERATORX19,imperative_0073_1019)
       &amp; scope(OPERATORX19) = EVENTX22
-      &amp; isA(EVENTX22,r__Draw_0075_0001)
+      &amp; isA(EVENTX22,r_0075_0001__Draw)
       &amp; arg2(EVENTX22) = PRINCEX20
       &amp; arg1(EVENTX22) = SHEEPX21 ) ).
 

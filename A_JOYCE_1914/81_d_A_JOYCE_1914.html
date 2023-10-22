@@ -69,8 +69,8 @@ She stopped suddenly as if to listen .
 <!-- 0182_0004_mnr -->
 <g id="node4" class="node">
 <title>0182_0004_mnr</title>
-<ellipse fill="none" stroke="black" cx="129" cy="-192" rx="61.19" ry="18"/>
-<text text-anchor="middle" x="129" y="-188.3" font-family="fixed" font-size="14.00">as_if_[mnr]</text>
+<ellipse fill="none" stroke="black" cx="129" cy="-192" rx="56.59" ry="18"/>
+<text text-anchor="middle" x="129" y="-188.3" font-family="fixed" font-size="14.00">as_if[mnr]</text>
 </g>
 <!-- 0182_0004_mnr&#45;&gt;0182_0002 -->
 <g id="edge3" class="edge">
@@ -103,26 +103,26 @@ She stopped suddenly as if to listen .
 </svg>
 <br>
 <pre>
-arc(r__stopped_0182_0002,r__She_0182_0001,arg0).
-arc(r__stopped_0182_0002,r__suddenly_0182_0003,tmp3).
-arc(r__as_if_0182_0004_mnr,r__stopped_0182_0002,scope).
-arc(r__as_if_0182_0004_mnr,r__listen_0182_0006,restriction).
-arc(r__listen_0182_0006,r__She_0182_0001,arg0).
+arc(r_0182_0002__stopped,r_0182_0001__She,arg0).
+arc(r_0182_0002__stopped,r_0182_0003__suddenly,tmp3).
+arc(r_0182_0004__as_if_mnr,r_0182_0002__stopped,scope).
+arc(r_0182_0004__as_if_mnr,r_0182_0006__listen,restriction).
+arc(r_0182_0006__listen,r_0182_0001__She,arg0).
 
 </pre>
 <br>
 <pre>
 fof(id_182_A_JOYCE_1914,axiom,
     ? [CONNX2,EVENTX3,EVENTX4,QUALITYX1] :
-      ( isA(QUALITYX1,r__suddenly_0182_0003)
-      &amp; isA(CONNX2,r__as_if_0182_0004_mnr)
+      ( isA(QUALITYX1,r_0182_0003__suddenly)
+      &amp; isA(CONNX2,r_0182_0004__as_if_mnr)
       &amp; scope(CONNX2) = EVENTX4
-      &amp; isA(EVENTX4,r__stopped_0182_0002)
-      &amp; arg0(EVENTX4) = r__She_0182_0001
+      &amp; isA(EVENTX4,r_0182_0002__stopped)
+      &amp; arg0(EVENTX4) = r_0182_0001__She
       &amp; tmp3(EVENTX4) = QUALITYX1
       &amp; restriction(CONNX2) = EVENTX3
-      &amp; isA(EVENTX3,r__listen_0182_0006)
-      &amp; arg0(EVENTX3) = r__She_0182_0001 ) ).
+      &amp; isA(EVENTX3,r_0182_0006__listen)
+      &amp; arg0(EVENTX3) = r_0182_0001__She ) ).
 
 
 </pre>

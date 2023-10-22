@@ -116,12 +116,12 @@ The Divisional Court did not consider it necessary to decide it .
 </svg>
 <br>
 <pre>
-arc(r__did_0007_0004_r__consider_0007_0006,r__Divisional_0007_0002_r__Court_0007_0003,arg0).
-arc(r__did_0007_0004_r__consider_0007_0006,r__necessary_0007_0008,prd).
-arc(r__did_0007_0004_r__consider_0007_0006,r__decide_0007_0010,arg1).
-arc(r__not_0007_0005,r__did_0007_0004_r__consider_0007_0006,scope).
-arc(r__decide_0007_0010,r__Divisional_0007_0002_r__Court_0007_0003,arg0).
-arc(r__decide_0007_0010,r__it_0007_0011,arg1).
+arc(r_0007_0004__did_consider,r_0007_0002__Divisional_Court,arg0).
+arc(r_0007_0004__did_consider,r_0007_0008__necessary,prd).
+arc(r_0007_0004__did_consider,r_0007_0010__decide,arg1).
+arc(r_0007_0005__not,r_0007_0004__did_consider,scope).
+arc(r_0007_0010__decide,r_0007_0002__Divisional_Court,arg0).
+arc(r_0007_0010__decide,r_0007_0011__it,arg1).
 
 </pre>
 <br>
@@ -129,15 +129,15 @@ arc(r__decide_0007_0010,r__it_0007_0011,arg1).
 fof(id_7_A_Major_case,axiom,
     ? [STATEX1,OPERATORX4,EVENTX5,EVENTX2,ATTRIBX3] :
       ( STATEX1 = EVENTX2
-      &amp; isA(EVENTX2,r__decide_0007_0010)
-      &amp; arg0(EVENTX2) = r__Divisional_0007_0002_r__Court_0007_0003
-      &amp; arg1(EVENTX2) = r__it_0007_0011
-      &amp; isA(r__Divisional_0007_0002_r__Court_0007_0003,r__Divisional_0007_0002_r__Court_0007_0003)
-      &amp; isA(ATTRIBX3,r__necessary_0007_0008)
-      &amp; isA(OPERATORX4,r__not_0007_0005)
+      &amp; isA(EVENTX2,r_0007_0010__decide)
+      &amp; arg0(EVENTX2) = r_0007_0002__Divisional_Court
+      &amp; arg1(EVENTX2) = r_0007_0011__it
+      &amp; isA(r_0007_0002__Divisional_Court,r_0007_0002__Divisional_Court)
+      &amp; isA(ATTRIBX3,r_0007_0008__necessary)
+      &amp; isA(OPERATORX4,r_0007_0005__not)
       &amp; scope(OPERATORX4) = EVENTX5
-      &amp; isA(EVENTX5,r__did_0007_0004_r__consider_0007_0006)
-      &amp; arg0(EVENTX5) = r__Divisional_0007_0002_r__Court_0007_0003
+      &amp; isA(EVENTX5,r_0007_0004__did_consider)
+      &amp; arg0(EVENTX5) = r_0007_0002__Divisional_Court
       &amp; arg1(EVENTX5) = STATEX1
       &amp; prd(EVENTX5) = ATTRIBX3 ) ).
 

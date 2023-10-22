@@ -97,10 +97,10 @@ Kinkaku-ji Temple and Ginkaku-ji Temple are affiliated .
 </svg>
 <br>
 <pre>
-arc(r__and_0115_0003,r__Kinkaku_ji_0115_0001_r__Temple_0115_0002,conj1).
-arc(r__and_0115_0003,r__Ginkaku_ji_0115_0004_r__Temple_0115_0005,conj2).
-arc(r__are_0115_0006,r__affiliated_0115_0007,catenative).
-arc(r__affiliated_0115_0007,r__and_0115_0003,arg1).
+arc(r_0115_0003__and,r_0115_0001__Kinkaku_ji_Temple,conj1).
+arc(r_0115_0003__and,r_0115_0004__Ginkaku_ji_Temple,conj2).
+arc(r_0115_0006__are,r_0115_0007__affiliated,catenative).
+arc(r_0115_0007__affiliated,r_0115_0003__and,arg1).
 
 </pre>
 <br>
@@ -108,12 +108,12 @@ arc(r__affiliated_0115_0007,r__and_0115_0003,arg1).
 fof(id_115_A_KYOTO_2,axiom,
     ? [CATENATIVEX2,EVENTX5,EVENTX4,ENTITYX1] :
       ( CATENATIVEX2 = EVENTX4
-      &amp; isA(EVENTX4,r__affiliated_0115_0007)
+      &amp; isA(EVENTX4,r_0115_0007__affiliated)
       &amp; arg1(EVENTX4) = ENTITYX1
-      &amp; isA(ENTITYX1,r__and_0115_0003)
-      &amp; conj1(ENTITYX1) = r__Kinkaku_ji_0115_0001_r__Temple_0115_0002
-      &amp; conj2(ENTITYX1) = r__Ginkaku_ji_0115_0004_r__Temple_0115_0005
-      &amp; isA(EVENTX5,r__are_0115_0006)
+      &amp; isA(ENTITYX1,r_0115_0003__and)
+      &amp; conj1(ENTITYX1) = r_0115_0001__Kinkaku_ji_Temple
+      &amp; conj2(ENTITYX1) = r_0115_0004__Ginkaku_ji_Temple
+      &amp; isA(EVENTX5,r_0115_0006__are)
       &amp; catenative(EVENTX5) = CATENATIVEX2 ) ).
 
 

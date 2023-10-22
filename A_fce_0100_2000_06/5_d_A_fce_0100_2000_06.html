@@ -161,15 +161,15 @@ You have won first prize in our competition -- two weeks at Camp California in t
 </svg>
 <br>
 <pre>
-arc(r__have_0007_0002,r__won_0007_0003,catenative).
-arc(r__won_0007_0003,r__You_0007_0001,arg0).
-arc(r__won_0007_0003,r__prize_0007_0005,arg1).
-arc(r__prize_0007_0005,r__first_0007_0004,attrib1).
-arc(r__prize_0007_0005,r__competition_0007_0008,r__in_0007_0006).
-arc(r__prize_0007_0005,r__two_0007_0010_r__weeks_0007_0011,prn5).
-arc(r__competition_0007_0008,r__our_0007_0007,genv).
-arc(r__two_0007_0010_r__weeks_0007_0011,r__Camp_0007_0013_r__California_0007_0014,r__at_0007_0012).
-arc(r__Camp_0007_0013_r__California_0007_0014,r__U.S.A_0007_0017,r__in_0007_0015).
+arc(r_0007_0002__have,r_0007_0003__won,catenative).
+arc(r_0007_0003__won,r_0007_0001__You,arg0).
+arc(r_0007_0003__won,r_0007_0005__prize,arg1).
+arc(r_0007_0005__prize,r_0007_0004__first,attrib1).
+arc(r_0007_0005__prize,r_0007_0008__competition,r_0007_0006__in).
+arc(r_0007_0005__prize,r_0007_0010__two_weeks,prn5).
+arc(r_0007_0008__competition,r_0007_0007__our,genv).
+arc(r_0007_0010__two_weeks,r_0007_0013__Camp_California,r_0007_0012__at).
+arc(r_0007_0013__Camp_California,r_0007_0017__U.S.A,r_0007_0015__in).
 
 </pre>
 <br>
@@ -177,22 +177,22 @@ arc(r__Camp_0007_0013_r__California_0007_0014,r__U.S.A_0007_0017,r__in_0007_0015
 fof(id_7_A_fce_0100_2000_06,axiom,
     ? [CATENATIVEX1,EVENTX7,EVENTX6,ENTITYX2,ENTITYX4,ENTITYX5,ATTRIBX3] :
       ( CATENATIVEX1 = EVENTX6
-      &amp; isA(EVENTX6,r__won_0007_0003)
-      &amp; arg0(EVENTX6) = r__You_0007_0001
+      &amp; isA(EVENTX6,r_0007_0003__won)
+      &amp; arg0(EVENTX6) = r_0007_0001__You
       &amp; arg1(EVENTX6) = ENTITYX2
-      &amp; isA(ENTITYX2,r__prize_0007_0005)
+      &amp; isA(ENTITYX2,r_0007_0005__prize)
       &amp; attrib1(ENTITYX2) = ATTRIBX3
-      &amp; r__in_0007_0006(ENTITYX2) = ENTITYX4
+      &amp; r_0007_0006__in(ENTITYX2) = ENTITYX4
       &amp; prn5(ENTITYX2) = ENTITYX5
-      &amp; isA(ENTITYX4,r__competition_0007_0008)
-      &amp; genv(ENTITYX4) = r__our_0007_0007
-      &amp; isA(ENTITYX5,r__two_0007_0010_r__weeks_0007_0011)
-      &amp; r__at_0007_0012(ENTITYX5) = r__Camp_0007_0013_r__California_0007_0014
-      &amp; isA(r__Camp_0007_0013_r__California_0007_0014,r__Camp_0007_0013_r__California_0007_0014)
-      &amp; r__in_0007_0015(r__Camp_0007_0013_r__California_0007_0014) = r__U.S.A_0007_0017
-      &amp; isA(r__U.S.A_0007_0017,r__U.S.A_0007_0017)
-      &amp; isA(ATTRIBX3,r__first_0007_0004)
-      &amp; isA(EVENTX7,r__have_0007_0002)
+      &amp; isA(ENTITYX4,r_0007_0008__competition)
+      &amp; genv(ENTITYX4) = r_0007_0007__our
+      &amp; isA(ENTITYX5,r_0007_0010__two_weeks)
+      &amp; r_0007_0012__at(ENTITYX5) = r_0007_0013__Camp_California
+      &amp; isA(r_0007_0013__Camp_California,r_0007_0013__Camp_California)
+      &amp; r_0007_0015__in(r_0007_0013__Camp_California) = r_0007_0017__U.S.A
+      &amp; isA(r_0007_0017__U.S.A,r_0007_0017__U.S.A)
+      &amp; isA(ATTRIBX3,r_0007_0004__first)
+      &amp; isA(EVENTX7,r_0007_0002__have)
       &amp; catenative(EVENTX7) = CATENATIVEX1 ) ).
 
 

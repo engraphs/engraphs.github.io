@@ -90,16 +90,16 @@ The whole world is engulfed in a revolution .
 <title>0170_0005&#45;&gt;0170_0008</title>
 <path fill="none" stroke="black" d="M103.08,-174.29C106.89,-168.51 111.17,-161.98 115.05,-156 120.26,-147.96 125.91,-139.16 130.99,-131.22"/>
 <polygon fill="black" stroke="black" points="134,-133.01 136.43,-122.7 128.1,-129.24 134,-133.01"/>
-<text text-anchor="middle" x="149.05" y="-144.8" font-family="fixed" font-size="14.00">in_[loc]</text>
+<text text-anchor="middle" x="145.55" y="-144.8" font-family="fixed" font-size="14.00">in[loc]</text>
 </g>
 </g>
 </svg>
 <br>
 <pre>
-arc(r__world_0170_0003,r__whole_0170_0002,attrib2).
-arc(r__is_0170_0004,r__engulfed_0170_0005,catenative).
-arc(r__engulfed_0170_0005,r__world_0170_0003,arg1).
-arc(r__engulfed_0170_0005,r__revolution_0170_0008,r__in_0170_0006_loc).
+arc(r_0170_0003__world,r_0170_0002__whole,attrib2).
+arc(r_0170_0004__is,r_0170_0005__engulfed,catenative).
+arc(r_0170_0005__engulfed,r_0170_0003__world,arg1).
+arc(r_0170_0005__engulfed,r_0170_0008__revolution,r_0170_0006__in_loc).
 
 </pre>
 <br>
@@ -107,14 +107,14 @@ arc(r__engulfed_0170_0005,r__revolution_0170_0008,r__in_0170_0006_loc).
 fof(id_170_A_TED_talk_11,axiom,
     ? [CATENATIVEX3,EVENTX7,EVENTX6,ENTITYX1,ENTITYX5,ATTRIBX2] :
       ( CATENATIVEX3 = EVENTX6
-      &amp; isA(EVENTX6,r__engulfed_0170_0005)
+      &amp; isA(EVENTX6,r_0170_0005__engulfed)
       &amp; arg1(EVENTX6) = ENTITYX1
-      &amp; r__in_0170_0006_loc(EVENTX6) = ENTITYX5
-      &amp; isA(ENTITYX1,r__world_0170_0003)
+      &amp; r_0170_0006__in_loc(EVENTX6) = ENTITYX5
+      &amp; isA(ENTITYX1,r_0170_0003__world)
       &amp; attrib2(ENTITYX1) = ATTRIBX2
-      &amp; isA(ENTITYX5,r__revolution_0170_0008)
-      &amp; isA(ATTRIBX2,r__whole_0170_0002)
-      &amp; isA(EVENTX7,r__is_0170_0004)
+      &amp; isA(ENTITYX5,r_0170_0008__revolution)
+      &amp; isA(ATTRIBX2,r_0170_0002__whole)
+      &amp; isA(EVENTX7,r_0170_0004__is)
       &amp; catenative(EVENTX7) = CATENATIVEX3 ) ).
 
 

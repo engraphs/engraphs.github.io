@@ -125,8 +125,8 @@ It 'll go on until it wears out . &rdquo;
 <!-- 0361_0005_tmp -->
 <g id="node9" class="node">
 <title>0361_0005_tmp</title>
-<ellipse fill="none" stroke="black" cx="325.4" cy="-279" rx="59.59" ry="18"/>
-<text text-anchor="middle" x="325.4" y="-275.3" font-family="fixed" font-size="14.00">until_[tmp]</text>
+<ellipse fill="none" stroke="black" cx="325.4" cy="-279" rx="55.79" ry="18"/>
+<text text-anchor="middle" x="325.4" y="-275.3" font-family="fixed" font-size="14.00">until[tmp]</text>
 </g>
 <!-- 0361_0005_tmp&#45;&gt;0361_0002 -->
 <g id="edge6" class="edge">
@@ -185,16 +185,16 @@ It 'll go on until it wears out . &rdquo;
 </svg>
 <br>
 <pre>
-arc(r__alert_0360_0006,r__still_0360_0005,quality1).
-arc(r__alert_0360_0006,r__ready_0360_0008,prn4).
-arc(r__ready_0360_0008,r__kill_0360_0010,emb2).
-arc(r___apos_ll_0361_0002,r__go_0361_0003_r__on_0361_0004,scope).
-arc(r__go_0361_0003_r__on_0361_0004,r__It_0361_0001,arg0).
-arc(r__until_0361_0005_tmp,r___apos_ll_0361_0002,scope).
-arc(r__until_0361_0005_tmp,r__wears_0361_0007_r__out_0361_0008,restriction).
-arc(r__wears_0361_0007_r__out_0361_0008,r__it_0361_0006,arg0).
-arc(z_0360_1009,r__one_0360_0002_r__gun_0360_0003,arg0).
-arc(z_0360_1009,r__alert_0360_0006,prd2).
+arc(r_0360_0006__alert,r_0360_0005__still,quality1).
+arc(r_0360_0006__alert,r_0360_0008__ready,prn4).
+arc(r_0360_0008__ready,r_0360_0010__kill,emb2).
+arc(r_0361_0002___apos_ll,r_0361_0003__go_on,scope).
+arc(r_0361_0003__go_on,r_0361_0001__It,arg0).
+arc(r_0361_0005__until_tmp,r_0361_0002___apos_ll,scope).
+arc(r_0361_0005__until_tmp,r_0361_0007__wears_out,restriction).
+arc(r_0361_0007__wears_out,r_0361_0006__it,arg0).
+arc(z_0360_1009,r_0360_0002__one_gun,arg0).
+arc(z_0360_1009,r_0360_0006__alert,prd2).
 
 </pre>
 <br>
@@ -202,26 +202,26 @@ arc(z_0360_1009,r__alert_0360_0006,prd2).
 fof(id_360_A_DICK_1952__361_A_DICK_1952,axiom,
     ? [STATEX5,CONNX11,EVENTX12,OPERATORX13,EVENTX14,EVENTX10,EVENTX8,ENTITYX1,ATTRIBX2,ATTRIBX4,QUALITYX3] :
       ( STATEX5 = EVENTX8
-      &amp; isA(EVENTX8,r__kill_0360_0010)
-      &amp; isA(ENTITYX1,r__one_0360_0002_r__gun_0360_0003)
-      &amp; isA(ATTRIBX2,r__alert_0360_0006)
+      &amp; isA(EVENTX8,r_0360_0010__kill)
+      &amp; isA(ENTITYX1,r_0360_0002__one_gun)
+      &amp; isA(ATTRIBX2,r_0360_0006__alert)
       &amp; quality1(ATTRIBX2) = QUALITYX3
       &amp; prn4(ATTRIBX2) = ATTRIBX4
-      &amp; isA(ATTRIBX4,r__ready_0360_0008)
+      &amp; isA(ATTRIBX4,r_0360_0008__ready)
       &amp; emb2(ATTRIBX4) = STATEX5
-      &amp; isA(QUALITYX3,r__still_0360_0005)
+      &amp; isA(QUALITYX3,r_0360_0005__still)
       &amp; isA(EVENTX10,z_0360_1009)
       &amp; arg0(EVENTX10) = ENTITYX1
       &amp; prd2(EVENTX10) = ATTRIBX2
-      &amp; isA(CONNX11,r__until_0361_0005_tmp)
+      &amp; isA(CONNX11,r_0361_0005__until_tmp)
       &amp; scope(CONNX11) = OPERATORX13
-      &amp; isA(OPERATORX13,r___apos_ll_0361_0002)
+      &amp; isA(OPERATORX13,r_0361_0002___apos_ll)
       &amp; scope(OPERATORX13) = EVENTX14
-      &amp; isA(EVENTX14,r__go_0361_0003_r__on_0361_0004)
-      &amp; arg0(EVENTX14) = r__It_0361_0001
+      &amp; isA(EVENTX14,r_0361_0003__go_on)
+      &amp; arg0(EVENTX14) = r_0361_0001__It
       &amp; restriction(CONNX11) = EVENTX12
-      &amp; isA(EVENTX12,r__wears_0361_0007_r__out_0361_0008)
-      &amp; arg0(EVENTX12) = r__it_0361_0006 ) ).
+      &amp; isA(EVENTX12,r_0361_0007__wears_out)
+      &amp; arg0(EVENTX12) = r_0361_0006__it ) ).
 
 
 </pre>

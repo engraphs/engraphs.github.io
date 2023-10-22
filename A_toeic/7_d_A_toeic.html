@@ -63,9 +63,9 @@ What is the woman shopping for ?
 <!-- 0011_0005&#45;&gt;0011_0001 -->
 <g id="edge2" class="edge">
 <title>0011_0005&#45;&gt;0011_0001</title>
-<path fill="none" stroke="black" d="M67.09,-87.74C62.29,-82.1 57.26,-75.55 53.45,-69 49.17,-61.67 45.53,-53.19 42.61,-45.33"/>
-<polygon fill="black" stroke="black" points="45.9,-44.13 39.31,-35.83 39.29,-46.43 45.9,-44.13"/>
-<text text-anchor="middle" x="80.95" y="-57.8" font-family="fixed" font-size="14.00">for_[clr]</text>
+<path fill="none" stroke="black" d="M71.42,-87.08C67.82,-81.39 63.87,-74.98 60.45,-69 56.02,-61.27 51.46,-52.72 47.41,-44.91"/>
+<polygon fill="black" stroke="black" points="50.45,-43.16 42.78,-35.85 44.21,-46.35 50.45,-43.16"/>
+<text text-anchor="middle" x="84.45" y="-57.8" font-family="fixed" font-size="14.00">for[clr]</text>
 </g>
 <!-- 0011_0004 -->
 <g id="node4" class="node">
@@ -97,10 +97,10 @@ What is the woman shopping for ?
 </svg>
 <br>
 <pre>
-arc(question_0011_1002,r__is_0011_0002,scope).
-arc(r__is_0011_0002,r__shopping_0011_0005,catenative).
-arc(r__shopping_0011_0005,r__What_0011_0001,r__for_0011_0006_clr).
-arc(r__shopping_0011_0005,r__woman_0011_0004,arg0).
+arc(question_0011_1002,r_0011_0002__is,scope).
+arc(r_0011_0002__is,r_0011_0005__shopping,catenative).
+arc(r_0011_0005__shopping,r_0011_0001__What,r_0011_0006__for_clr).
+arc(r_0011_0005__shopping,r_0011_0004__woman,arg0).
 
 </pre>
 <br>
@@ -108,14 +108,14 @@ arc(r__shopping_0011_0005,r__woman_0011_0004,arg0).
 fof(id_11_A_toeic,axiom,
     ? [CATENATIVEX5,OPERATORX2,EVENTX7,EVENTX6,ENTITYX3,ENTITYX4] :
       ( CATENATIVEX5 = EVENTX6
-      &amp; isA(EVENTX6,r__shopping_0011_0005)
+      &amp; isA(EVENTX6,r_0011_0005__shopping)
       &amp; arg0(EVENTX6) = ENTITYX4
-      &amp; r__for_0011_0006_clr(EVENTX6) = ENTITYX3
-      &amp; isA(ENTITYX3,r__What_0011_0001)
-      &amp; isA(ENTITYX4,r__woman_0011_0004)
+      &amp; r_0011_0006__for_clr(EVENTX6) = ENTITYX3
+      &amp; isA(ENTITYX3,r_0011_0001__What)
+      &amp; isA(ENTITYX4,r_0011_0004__woman)
       &amp; isA(OPERATORX2,question_0011_1002)
       &amp; scope(OPERATORX2) = EVENTX7
-      &amp; isA(EVENTX7,r__is_0011_0002)
+      &amp; isA(EVENTX7,r_0011_0002__is)
       &amp; catenative(EVENTX7) = CATENATIVEX5 ) ).
 
 

@@ -233,21 +233,21 @@ His failure or refusal to do so is conspicuous , and there has been no proper ex
 </svg>
 <br>
 <pre>
-arc(quantificational_r__no_0036_0015,r__been_0036_0014,scope).
-arc(quantificational_r__no_0036_0015,r__explanation_0036_0017,restriction).
-arc(r__or_0036_0003,r__His_0036_0001,genv).
-arc(r__or_0036_0003,r__failure_0036_0002,conj1).
-arc(r__or_0036_0003,r__refusal_0036_0004,conj2).
-arc(r__or_0036_0003,r__so_0036_0007,emb3).
-arc(r__so_0036_0007,r__do_0036_0006,scope).
-arc(r__is_0036_0008,r__or_0036_0003,arg0).
-arc(r__is_0036_0008,r__conspicuous_0036_0009,prd2).
-arc(r__and_0036_0011,r__is_0036_0008,conj1).
-arc(r__and_0036_0011,r__has_0036_0013,conj2).
-arc(r__has_0036_0013,quantificational_r__no_0036_0015,catenative).
-arc(r__been_0036_0014,r__explanation_0036_0017,arg0).
-arc(r__explanation_0036_0017,r__proper_0036_0016,attrib2).
-arc(r__explanation_0036_0017,r__it_0036_0019,r__for_0036_0018).
+arc(r_0036_0003__or,r_0036_0001__His,genv).
+arc(r_0036_0003__or,r_0036_0002__failure,conj1).
+arc(r_0036_0003__or,r_0036_0004__refusal,conj2).
+arc(r_0036_0003__or,r_0036_0007__so,emb3).
+arc(r_0036_0007__so,r_0036_0006__do,scope).
+arc(r_0036_0008__is,r_0036_0003__or,arg0).
+arc(r_0036_0008__is,r_0036_0009__conspicuous,prd2).
+arc(r_0036_0011__and,r_0036_0008__is,conj1).
+arc(r_0036_0011__and,r_0036_0013__has,conj2).
+arc(r_0036_0013__has,r_0036_0015__quantificational__no,catenative).
+arc(r_0036_0014__been,r_0036_0017__explanation,arg0).
+arc(r_0036_0015__quantificational__no,r_0036_0014__been,scope).
+arc(r_0036_0015__quantificational__no,r_0036_0017__explanation,restriction).
+arc(r_0036_0017__explanation,r_0036_0016__proper,attrib2).
+arc(r_0036_0017__explanation,r_0036_0019__it,r_0036_0018__for).
 
 </pre>
 <br>
@@ -255,34 +255,34 @@ arc(r__explanation_0036_0017,r__it_0036_0019,r__for_0036_0018).
 fof(id_36_A_Major_case,axiom,
     ? [STATEX2,CATENATIVEX11,CONJX17,EVENTX16,QUANTX13,EVENTX15,EVENTX10,OPERATORX5,EVENTX6,ENTITYX12,ENTITYX1,ENTITYX7,ENTITYX8,ATTRIBX14,ATTRIBX9] :
       ( STATEX2 = OPERATORX5
-      &amp; isA(OPERATORX5,r__so_0036_0007)
+      &amp; isA(OPERATORX5,r_0036_0007__so)
       &amp; scope(OPERATORX5) = EVENTX6
-      &amp; isA(EVENTX6,r__do_0036_0006)
+      &amp; isA(EVENTX6,r_0036_0006__do)
       &amp; CATENATIVEX11 = QUANTX13
-      &amp; isA(QUANTX13,quantificational_r__no_0036_0015)
+      &amp; isA(QUANTX13,r_0036_0015__quantificational__no)
       &amp; restriction(QUANTX13) = ENTITYX12
-      &amp; isA(ENTITYX12,r__explanation_0036_0017)
+      &amp; isA(ENTITYX12,r_0036_0017__explanation)
       &amp; attrib2(ENTITYX12) = ATTRIBX14
-      &amp; r__for_0036_0018(ENTITYX12) = r__it_0036_0019
+      &amp; r_0036_0018__for(ENTITYX12) = r_0036_0019__it
       &amp; scope(QUANTX13) = EVENTX15
-      &amp; isA(EVENTX15,r__been_0036_0014)
+      &amp; isA(EVENTX15,r_0036_0014__been)
       &amp; arg0(EVENTX15) = ENTITYX12
-      &amp; isA(ENTITYX1,r__or_0036_0003)
-      &amp; genv(ENTITYX1) = r__His_0036_0001
+      &amp; isA(ENTITYX1,r_0036_0003__or)
+      &amp; genv(ENTITYX1) = r_0036_0001__His
       &amp; emb3(ENTITYX1) = STATEX2
       &amp; conj1(ENTITYX1) = ENTITYX7
       &amp; conj2(ENTITYX1) = ENTITYX8
-      &amp; isA(ENTITYX7,r__failure_0036_0002)
-      &amp; isA(ENTITYX8,r__refusal_0036_0004)
-      &amp; isA(ATTRIBX9,r__conspicuous_0036_0009)
-      &amp; isA(ATTRIBX14,r__proper_0036_0016)
-      &amp; isA(CONJX17,r__and_0036_0011)
+      &amp; isA(ENTITYX7,r_0036_0002__failure)
+      &amp; isA(ENTITYX8,r_0036_0004__refusal)
+      &amp; isA(ATTRIBX9,r_0036_0009__conspicuous)
+      &amp; isA(ATTRIBX14,r_0036_0016__proper)
+      &amp; isA(CONJX17,r_0036_0011__and)
       &amp; conj1(CONJX17) = EVENTX10
-      &amp; isA(EVENTX10,r__is_0036_0008)
+      &amp; isA(EVENTX10,r_0036_0008__is)
       &amp; arg0(EVENTX10) = ENTITYX1
       &amp; prd2(EVENTX10) = ATTRIBX9
       &amp; conj2(CONJX17) = EVENTX16
-      &amp; isA(EVENTX16,r__has_0036_0013)
+      &amp; isA(EVENTX16,r_0036_0013__has)
       &amp; catenative(EVENTX16) = CATENATIVEX11 ) ).
 
 

@@ -63,9 +63,9 @@ By intellectual understanding , it is impossible to clap with one hand and make 
 <!-- 0057_0006&#45;&gt;0057_0003 -->
 <g id="edge2" class="edge">
 <title>0057_0006&#45;&gt;0057_0003</title>
-<path fill="none" stroke="black" d="M209.66,-267.9C195.48,-261.14 176.62,-251.9 160.34,-243 144.08,-234.12 126.45,-223.62 111.64,-214.55"/>
-<polygon fill="black" stroke="black" points="113.16,-211.38 102.82,-209.11 109.49,-217.33 113.16,-211.38"/>
-<text text-anchor="middle" x="193.84" y="-231.8" font-family="fixed" font-size="14.00">By_[mod]</text>
+<path fill="none" stroke="black" d="M211.15,-267C198.54,-260.12 181.98,-251.07 167.34,-243 150.07,-233.48 130.97,-222.88 114.82,-213.89"/>
+<polygon fill="black" stroke="black" points="116.13,-210.62 105.69,-208.81 112.73,-216.73 116.13,-210.62"/>
+<text text-anchor="middle" x="197.34" y="-231.8" font-family="fixed" font-size="14.00">By[mod]</text>
 </g>
 <!-- 0057_0007 -->
 <g id="node4" class="node">
@@ -130,7 +130,7 @@ By intellectual understanding , it is impossible to clap with one hand and make 
 <title>0057_0009&#45;&gt;0057_0011_0057_0012</title>
 <path fill="none" stroke="black" d="M286.93,-86.8C285.97,-75.16 284.68,-59.55 283.59,-46.24"/>
 <polygon fill="black" stroke="black" points="287.07,-45.85 282.76,-36.18 280.09,-46.43 287.07,-45.85"/>
-<text text-anchor="middle" x="323.34" y="-57.8" font-family="fixed" font-size="14.00">with_[com]</text>
+<text text-anchor="middle" x="320.34" y="-57.8" font-family="fixed" font-size="14.00">with[com]</text>
 </g>
 <!-- 0057_0016 -->
 <g id="node9" class="node">
@@ -149,14 +149,14 @@ By intellectual understanding , it is impossible to clap with one hand and make 
 </svg>
 <br>
 <pre>
-arc(r__understanding_0057_0003,r__intellectual_0057_0002,attrib1).
-arc(r__is_0057_0006,r__understanding_0057_0003,r__By_0057_0001_mod).
-arc(r__is_0057_0006,r__impossible_0057_0007,prd2).
-arc(r__is_0057_0006,r__and_0057_0013,arg0).
-arc(r__clap_0057_0009,r__one_0057_0011_r__hand_0057_0012,r__with_0057_0010_com).
-arc(r__and_0057_0013,r__clap_0057_0009,conj1).
-arc(r__and_0057_0013,r__make_0057_0014,conj2).
-arc(r__make_0057_0014,r__sound_0057_0016,arg1).
+arc(r_0057_0003__understanding,r_0057_0002__intellectual,attrib1).
+arc(r_0057_0006__is,r_0057_0003__understanding,r_0057_0001__By_mod).
+arc(r_0057_0006__is,r_0057_0007__impossible,prd2).
+arc(r_0057_0006__is,r_0057_0013__and,arg0).
+arc(r_0057_0009__clap,r_0057_0011__one_hand,r_0057_0010__with_com).
+arc(r_0057_0013__and,r_0057_0009__clap,conj1).
+arc(r_0057_0013__and,r_0057_0014__make,conj2).
+arc(r_0057_0014__make,r_0057_0016__sound,arg1).
 
 </pre>
 <br>
@@ -164,21 +164,21 @@ arc(r__make_0057_0014,r__sound_0057_0016,arg1).
 fof(id_57_A_KYOTO_2,axiom,
     ? [STATEX5,EVENTX11,CONJX10,EVENTX9,EVENTX7,ENTITYX1,ENTITYX8,ENTITYX6,ATTRIBX4,ATTRIBX2] :
       ( STATEX5 = CONJX10
-      &amp; isA(CONJX10,r__and_0057_0013)
+      &amp; isA(CONJX10,r_0057_0013__and)
       &amp; conj1(CONJX10) = EVENTX7
-      &amp; isA(EVENTX7,r__clap_0057_0009)
-      &amp; r__with_0057_0010_com(EVENTX7) = ENTITYX6
+      &amp; isA(EVENTX7,r_0057_0009__clap)
+      &amp; r_0057_0010__with_com(EVENTX7) = ENTITYX6
       &amp; conj2(CONJX10) = EVENTX9
-      &amp; isA(EVENTX9,r__make_0057_0014)
+      &amp; isA(EVENTX9,r_0057_0014__make)
       &amp; arg1(EVENTX9) = ENTITYX8
-      &amp; isA(ENTITYX1,r__understanding_0057_0003)
+      &amp; isA(ENTITYX1,r_0057_0003__understanding)
       &amp; attrib1(ENTITYX1) = ATTRIBX2
-      &amp; isA(ENTITYX6,r__one_0057_0011_r__hand_0057_0012)
-      &amp; isA(ENTITYX8,r__sound_0057_0016)
-      &amp; isA(ATTRIBX2,r__intellectual_0057_0002)
-      &amp; isA(ATTRIBX4,r__impossible_0057_0007)
-      &amp; isA(EVENTX11,r__is_0057_0006)
-      &amp; r__By_0057_0001_mod(EVENTX11) = ENTITYX1
+      &amp; isA(ENTITYX6,r_0057_0011__one_hand)
+      &amp; isA(ENTITYX8,r_0057_0016__sound)
+      &amp; isA(ATTRIBX2,r_0057_0002__intellectual)
+      &amp; isA(ATTRIBX4,r_0057_0007__impossible)
+      &amp; isA(EVENTX11,r_0057_0006__is)
+      &amp; r_0057_0001__By_mod(EVENTX11) = ENTITYX1
       &amp; arg0(EVENTX11) = STATEX5
       &amp; prd2(EVENTX11) = ATTRIBX4
       &amp; arg0(EVENTX11) = STATEX5 ) ).

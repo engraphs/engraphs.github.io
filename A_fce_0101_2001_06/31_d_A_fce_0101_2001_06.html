@@ -64,7 +64,7 @@ Write a letter to your penfriend , giving your opinion and explaining your reaso
 <title>0031_0001&#45;&gt;0031_0006</title>
 <path fill="none" stroke="black" d="M100.2,-281.96C99.86,-258.4 99.25,-215.64 98.84,-187.53"/>
 <polygon fill="black" stroke="black" points="102.34,-187.13 98.69,-177.18 95.34,-187.23 102.34,-187.13"/>
-<text text-anchor="middle" x="131.95" y="-252.8" font-family="fixed" font-size="14.00">to_[arg2]</text>
+<text text-anchor="middle" x="128.45" y="-252.8" font-family="fixed" font-size="14.00">to[arg2]</text>
 </g>
 <!-- 0031_0005 -->
 <g id="node4" class="node">
@@ -188,47 +188,47 @@ Write a letter to your penfriend , giving your opinion and explaining your reaso
 </svg>
 <br>
 <pre>
-arc(cnt_0031_1006,r__Write_0031_0001,scope).
-arc(cnt_0031_1006,r__and_0031_0011,restriction).
+arc(cnt_0031_1006,r_0031_0001__Write,scope).
+arc(cnt_0031_1006,r_0031_0011__and,restriction).
 arc(imperative_0031_1002,cnt_0031_1006,scope).
-arc(r__Write_0031_0001,r__letter_0031_0003,arg1).
-arc(r__Write_0031_0001,r__penfriend_0031_0006,r__to_0031_0004_arg2).
-arc(r__penfriend_0031_0006,r__your_0031_0005,genv).
-arc(r__giving_0031_0008,r__opinion_0031_0010,arg1).
-arc(r__opinion_0031_0010,r__your_0031_0005,genv).
-arc(r__and_0031_0011,r__giving_0031_0008,conj1).
-arc(r__and_0031_0011,r__explaining_0031_0012,conj2).
-arc(r__explaining_0031_0012,r__reasons_0031_0014,arg1).
-arc(r__reasons_0031_0014,r__your_0031_0005,genv).
+arc(r_0031_0001__Write,r_0031_0003__letter,arg1).
+arc(r_0031_0001__Write,r_0031_0006__penfriend,r_0031_0004__to_arg2).
+arc(r_0031_0006__penfriend,r_0031_0005__your,genv).
+arc(r_0031_0008__giving,r_0031_0010__opinion,arg1).
+arc(r_0031_0010__opinion,r_0031_0005__your,genv).
+arc(r_0031_0011__and,r_0031_0008__giving,conj1).
+arc(r_0031_0011__and,r_0031_0012__explaining,conj2).
+arc(r_0031_0012__explaining,r_0031_0014__reasons,arg1).
+arc(r_0031_0014__reasons,r_0031_0005__your,genv).
 
 </pre>
 <br>
 <pre>
 fof(id_31_A_fce_0101_2001_06,axiom,
     ? [HEARERX9,HEARERX12,OPERATORX2,CONNX7,CONJX14,EVENTX13,EVENTX10,EVENTX15,ENTITYX4,ENTITYX5,ENTITYX11,ENTITYX8] :
-      ( isA(ENTITYX4,r__letter_0031_0003)
-      &amp; isA(ENTITYX5,r__penfriend_0031_0006)
-      &amp; genv(ENTITYX5) = r__your_0031_0005
-      &amp; isA(ENTITYX8,r__opinion_0031_0010)
+      ( isA(ENTITYX4,r_0031_0003__letter)
+      &amp; isA(ENTITYX5,r_0031_0006__penfriend)
+      &amp; genv(ENTITYX5) = r_0031_0005__your
+      &amp; isA(ENTITYX8,r_0031_0010__opinion)
       &amp; genv(ENTITYX8) = HEARERX9
-      &amp; HEARERX9 = r__your_0031_0005
-      &amp; isA(ENTITYX11,r__reasons_0031_0014)
+      &amp; HEARERX9 = r_0031_0005__your
+      &amp; isA(ENTITYX11,r_0031_0014__reasons)
       &amp; genv(ENTITYX11) = HEARERX12
-      &amp; HEARERX12 = r__your_0031_0005
+      &amp; HEARERX12 = r_0031_0005__your
       &amp; isA(OPERATORX2,imperative_0031_1002)
       &amp; scope(OPERATORX2) = CONNX7
       &amp; isA(CONNX7,cnt_0031_1006)
       &amp; scope(CONNX7) = EVENTX15
-      &amp; isA(EVENTX15,r__Write_0031_0001)
+      &amp; isA(EVENTX15,r_0031_0001__Write)
       &amp; arg1(EVENTX15) = ENTITYX4
-      &amp; r__to_0031_0004_arg2(EVENTX15) = ENTITYX5
+      &amp; r_0031_0004__to_arg2(EVENTX15) = ENTITYX5
       &amp; restriction(CONNX7) = CONJX14
-      &amp; isA(CONJX14,r__and_0031_0011)
+      &amp; isA(CONJX14,r_0031_0011__and)
       &amp; conj1(CONJX14) = EVENTX10
-      &amp; isA(EVENTX10,r__giving_0031_0008)
+      &amp; isA(EVENTX10,r_0031_0008__giving)
       &amp; arg1(EVENTX10) = ENTITYX8
       &amp; conj2(CONJX14) = EVENTX13
-      &amp; isA(EVENTX13,r__explaining_0031_0012)
+      &amp; isA(EVENTX13,r_0031_0012__explaining)
       &amp; arg1(EVENTX13) = ENTITYX11 ) ).
 
 

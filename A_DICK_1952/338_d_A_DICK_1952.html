@@ -44,11 +44,11 @@ There was an inscription on the door
 but he could not read it .
 <br>
 <br>
-<svg width="635pt" height="305pt"
- viewBox="0.00 0.00 634.55 305.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="629pt" height="305pt"
+ viewBox="0.00 0.00 628.55 305.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 301)">
 <title>%3</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-301 630.55,-301 630.55,4 -4,4"/>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-301 624.55,-301 624.55,4 -4,4"/>
 <!-- 0432_0001 -->
 <g id="node1" class="node">
 <title>0432_0001</title>
@@ -150,7 +150,7 @@ but he could not read it .
 <title>0434_0002&#45;&gt;0434_0007</title>
 <path fill="none" stroke="black" d="M519.72,-89.56C525.48,-83.57 531.78,-76.31 536.55,-69 541.28,-61.74 545.44,-53.29 548.83,-45.42"/>
 <polygon fill="black" stroke="black" points="552.17,-46.49 552.7,-35.91 545.69,-43.85 552.17,-46.49"/>
-<text text-anchor="middle" x="585.55" y="-57.8" font-family="fixed" font-size="14.00">on_[clr][loc]</text>
+<text text-anchor="middle" x="582.55" y="-57.8" font-family="fixed" font-size="14.00">on[clr][loc]</text>
 </g>
 <!-- 0435_0003 -->
 <g id="node10" class="node">
@@ -202,49 +202,49 @@ but he could not read it .
 </svg>
 <br>
 <pre>
-arc(r__examined_0432_0002,r__Dorle_0432_0001,arg0).
-arc(r__examined_0432_0002,r__door_0432_0004,arg1).
-arc(r__bolted_0433_0003,r__door_0432_0004,arg1).
-arc(r__bolted_0433_0003,r__shut_0433_0004,prd2).
-arc(r__locked_0433_0006,r__door_0432_0004,arg1).
-arc(r__was_0434_0002,r__inscription_0434_0004,arg0).
-arc(r__was_0434_0002,r__door_0434_0007,r__on_0434_0005_clr_loc).
-arc(r__could_0435_0003,r__not_0435_0004,scope).
-arc(r__not_0435_0004,r__read_0435_0005,scope).
-arc(r__read_0435_0005,r__Dorle_0432_0001,arg0).
-arc(r__read_0435_0005,r__inscription_0434_0004,arg1).
+arc(r_0432_0002__examined,r_0432_0001__Dorle,arg0).
+arc(r_0432_0002__examined,r_0432_0004__door,arg1).
+arc(r_0433_0003__bolted,r_0432_0004__door,arg1).
+arc(r_0433_0003__bolted,r_0433_0004__shut,prd2).
+arc(r_0433_0006__locked,r_0432_0004__door,arg1).
+arc(r_0434_0002__was,r_0434_0004__inscription,arg0).
+arc(r_0434_0002__was,r_0434_0007__door,r_0434_0005__on_clr_loc).
+arc(r_0435_0003__could,r_0435_0004__not,scope).
+arc(r_0435_0004__not,r_0435_0005__read,scope).
+arc(r_0435_0005__read,r_0432_0001__Dorle,arg0).
+arc(r_0435_0005__read,r_0434_0004__inscription,arg1).
 
 </pre>
 <br>
 <pre>
 fof(id_432_A_DICK_1952__433_A_DICK_1952__434_A_DICK_1952__435_A_DICK_1952,axiom,
     ? [CATENATIVEX4,DOORX3,DORLEX13,INSCRIPTIONX14,OPERATORX15,OPERATORX16,EVENTX17,EVENTX12,EVENTX9,EVENTX8,EVENTX7,EVENTX2,INSCRIPTIONX10,ENTITYX11,DOORX1,ATTRIBX6] :
-      ( isA(EVENTX7,r__bolted_0433_0003)
+      ( isA(EVENTX7,r_0433_0003__bolted)
       &amp; arg1(EVENTX7) = DOORX3
       &amp; prd2(EVENTX7) = ATTRIBX6
-      &amp; isA(EVENTX8,r__locked_0433_0006)
+      &amp; isA(EVENTX8,r_0433_0006__locked)
       &amp; arg1(EVENTX8) = DOORX3
       &amp; isA(EVENTX8,CATENATIVEX4)
-      &amp; isA(DOORX1,r__door_0432_0004)
+      &amp; isA(DOORX1,r_0432_0004__door)
       &amp; DOORX3 = DOORX1
-      &amp; isA(INSCRIPTIONX10,r__inscription_0434_0004)
-      &amp; isA(ENTITYX11,r__door_0434_0007)
-      &amp; DORLEX13 = r__Dorle_0432_0001
+      &amp; isA(INSCRIPTIONX10,r_0434_0004__inscription)
+      &amp; isA(ENTITYX11,r_0434_0007__door)
+      &amp; DORLEX13 = r_0432_0001__Dorle
       &amp; INSCRIPTIONX14 = INSCRIPTIONX10
-      &amp; isA(ATTRIBX6,r__shut_0433_0004)
-      &amp; isA(EVENTX2,r__examined_0432_0002)
-      &amp; arg0(EVENTX2) = r__Dorle_0432_0001
+      &amp; isA(ATTRIBX6,r_0433_0004__shut)
+      &amp; isA(EVENTX2,r_0432_0002__examined)
+      &amp; arg0(EVENTX2) = r_0432_0001__Dorle
       &amp; arg1(EVENTX2) = DOORX1
-      &amp; isA(EVENTX9,r__was_0433_0002)
+      &amp; isA(EVENTX9,r_0433_0002__was)
       &amp; catenative(EVENTX9) = CATENATIVEX4
-      &amp; isA(EVENTX12,r__was_0434_0002)
+      &amp; isA(EVENTX12,r_0434_0002__was)
       &amp; arg0(EVENTX12) = INSCRIPTIONX10
-      &amp; r__on_0434_0005_clr_loc(EVENTX12) = ENTITYX11
-      &amp; isA(OPERATORX15,r__could_0435_0003)
+      &amp; r_0434_0005__on_clr_loc(EVENTX12) = ENTITYX11
+      &amp; isA(OPERATORX15,r_0435_0003__could)
       &amp; scope(OPERATORX15) = OPERATORX16
-      &amp; isA(OPERATORX16,r__not_0435_0004)
+      &amp; isA(OPERATORX16,r_0435_0004__not)
       &amp; scope(OPERATORX16) = EVENTX17
-      &amp; isA(EVENTX17,r__read_0435_0005)
+      &amp; isA(EVENTX17,r_0435_0005__read)
       &amp; arg0(EVENTX17) = DORLEX13
       &amp; arg1(EVENTX17) = INSCRIPTIONX14 ) ).
 

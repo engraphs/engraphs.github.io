@@ -175,43 +175,43 @@ Turn left , choose the left lane , and exit ( yellow car . )
 </svg>
 <br>
 <pre>
-arc(imperative_0050_1002,r__and_0050_0009,scope).
-arc(r__Turn_0050_0001,r__left_0050_0002,dir2).
-arc(r__Turn_0050_0001,r__car_0050_0013,prn3).
-arc(r__choose_0050_0004,r__lane_0050_0007,arg1).
-arc(r__choose_0050_0004,r__car_0050_0013,prn3).
-arc(r__lane_0050_0007,r__left_0050_0006,attrib2).
-arc(r__and_0050_0009,r__Turn_0050_0001,conj1).
-arc(r__and_0050_0009,r__choose_0050_0004,conj2).
-arc(r__and_0050_0009,r__exit_0050_0010,conj3).
-arc(r__exit_0050_0010,r__car_0050_0013,prn3).
-arc(r__car_0050_0013,r__yellow_0050_0012,attrib1).
+arc(imperative_0050_1002,r_0050_0009__and,scope).
+arc(r_0050_0001__Turn,r_0050_0002__left,dir2).
+arc(r_0050_0001__Turn,r_0050_0013__car,prn3).
+arc(r_0050_0004__choose,r_0050_0007__lane,arg1).
+arc(r_0050_0004__choose,r_0050_0013__car,prn3).
+arc(r_0050_0007__lane,r_0050_0006__left,attrib2).
+arc(r_0050_0009__and,r_0050_0001__Turn,conj1).
+arc(r_0050_0009__and,r_0050_0004__choose,conj2).
+arc(r_0050_0009__and,r_0050_0010__exit,conj3).
+arc(r_0050_0010__exit,r_0050_0013__car,prn3).
+arc(r_0050_0013__car,r_0050_0012__yellow,attrib1).
 
 </pre>
 <br>
 <pre>
 fof(id_50_A_driver_handbook,axiom,
     ? [OPERATORX2,CONJX12,EVENTX11,EVENTX10,EVENTX7,QUALITYX6,ENTITYX4,ENTITYX8,ATTRIBX9,ATTRIBX5] :
-      ( isA(QUALITYX6,r__left_0050_0002)
-      &amp; isA(ENTITYX4,r__car_0050_0013)
+      ( isA(QUALITYX6,r_0050_0002__left)
+      &amp; isA(ENTITYX4,r_0050_0013__car)
       &amp; attrib1(ENTITYX4) = ATTRIBX5
-      &amp; isA(ENTITYX8,r__lane_0050_0007)
+      &amp; isA(ENTITYX8,r_0050_0007__lane)
       &amp; attrib2(ENTITYX8) = ATTRIBX9
-      &amp; isA(ATTRIBX5,r__yellow_0050_0012)
-      &amp; isA(ATTRIBX9,r__left_0050_0006)
+      &amp; isA(ATTRIBX5,r_0050_0012__yellow)
+      &amp; isA(ATTRIBX9,r_0050_0006__left)
       &amp; isA(OPERATORX2,imperative_0050_1002)
       &amp; scope(OPERATORX2) = CONJX12
-      &amp; isA(CONJX12,r__and_0050_0009)
+      &amp; isA(CONJX12,r_0050_0009__and)
       &amp; conj1(CONJX12) = EVENTX7
-      &amp; isA(EVENTX7,r__Turn_0050_0001)
+      &amp; isA(EVENTX7,r_0050_0001__Turn)
       &amp; prn3(EVENTX7) = ENTITYX4
       &amp; dir2(EVENTX7) = QUALITYX6
       &amp; conj2(CONJX12) = EVENTX10
-      &amp; isA(EVENTX10,r__choose_0050_0004)
+      &amp; isA(EVENTX10,r_0050_0004__choose)
       &amp; prn3(EVENTX10) = ENTITYX4
       &amp; arg1(EVENTX10) = ENTITYX8
       &amp; conj3(CONJX12) = EVENTX11
-      &amp; isA(EVENTX11,r__exit_0050_0010)
+      &amp; isA(EVENTX11,r_0050_0010__exit)
       &amp; prn3(EVENTX11) = ENTITYX4 ) ).
 
 

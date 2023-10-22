@@ -103,17 +103,17 @@ The best article will be published in the magazine .
 <title>0028_0006&#45;&gt;0028_0009</title>
 <path fill="none" stroke="black" d="M105.21,-174.21C113.12,-161.98 123.97,-145.21 132.94,-131.36"/>
 <polygon fill="black" stroke="black" points="136.01,-133.06 138.5,-122.76 130.13,-129.25 136.01,-133.06"/>
-<text text-anchor="middle" x="150.35" y="-144.8" font-family="fixed" font-size="14.00">in_[loc]</text>
+<text text-anchor="middle" x="146.85" y="-144.8" font-family="fixed" font-size="14.00">in[loc]</text>
 </g>
 </g>
 </svg>
 <br>
 <pre>
-arc(r__article_0028_0003,r__best_0028_0002,attrib2).
-arc(r__will_0028_0004,r__be_0028_0005,scope).
-arc(r__be_0028_0005,r__published_0028_0006,catenative).
-arc(r__published_0028_0006,r__article_0028_0003,arg1).
-arc(r__published_0028_0006,r__magazine_0028_0009,r__in_0028_0007_loc).
+arc(r_0028_0003__article,r_0028_0002__best,attrib2).
+arc(r_0028_0004__will,r_0028_0005__be,scope).
+arc(r_0028_0005__be,r_0028_0006__published,catenative).
+arc(r_0028_0006__published,r_0028_0003__article,arg1).
+arc(r_0028_0006__published,r_0028_0009__magazine,r_0028_0007__in_loc).
 
 </pre>
 <br>
@@ -121,16 +121,16 @@ arc(r__published_0028_0006,r__magazine_0028_0009,r__in_0028_0007_loc).
 fof(id_28_A_fce_0100_2001_06,axiom,
     ? [CATENATIVEX4,OPERATORX3,EVENTX8,EVENTX7,ENTITYX1,ENTITYX6,ATTRIBX2] :
       ( CATENATIVEX4 = EVENTX7
-      &amp; isA(EVENTX7,r__published_0028_0006)
+      &amp; isA(EVENTX7,r_0028_0006__published)
       &amp; arg1(EVENTX7) = ENTITYX1
-      &amp; r__in_0028_0007_loc(EVENTX7) = ENTITYX6
-      &amp; isA(ENTITYX1,r__article_0028_0003)
+      &amp; r_0028_0007__in_loc(EVENTX7) = ENTITYX6
+      &amp; isA(ENTITYX1,r_0028_0003__article)
       &amp; attrib2(ENTITYX1) = ATTRIBX2
-      &amp; isA(ENTITYX6,r__magazine_0028_0009)
-      &amp; isA(ATTRIBX2,r__best_0028_0002)
-      &amp; isA(OPERATORX3,r__will_0028_0004)
+      &amp; isA(ENTITYX6,r_0028_0009__magazine)
+      &amp; isA(ATTRIBX2,r_0028_0002__best)
+      &amp; isA(OPERATORX3,r_0028_0004__will)
       &amp; scope(OPERATORX3) = EVENTX8
-      &amp; isA(EVENTX8,r__be_0028_0005)
+      &amp; isA(EVENTX8,r_0028_0005__be)
       &amp; catenative(EVENTX8) = CATENATIVEX4 ) ).
 
 

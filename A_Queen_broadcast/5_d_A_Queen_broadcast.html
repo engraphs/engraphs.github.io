@@ -215,21 +215,21 @@ The pride in who we are is not a part of our past , it defines our present and o
 </svg>
 <br>
 <pre>
-arc(r__pride_0009_0002,z_0009_1004,r__in_0009_0003).
-arc(r__are_0009_0006,r__we_0009_0005,arg0).
-arc(r__are_0009_0006,z_0009_1004,arg1).
-arc(r__is_0009_0007,r__pride_0009_0002,arg0).
-arc(r__is_0009_0007,r__part_0009_0010,prd2).
-arc(r__is_0009_0007,r__defines_0009_0016,prn6).
-arc(r__not_0009_0008,r__is_0009_0007,scope).
-arc(r__part_0009_0010,r__past_0009_0013,r__of_0009_0011).
-arc(r__past_0009_0013,r__we_0009_0005,genv).
-arc(r__defines_0009_0016,r__pride_0009_0002,arg0).
-arc(r__defines_0009_0016,r__and_0009_0019,arg1).
-arc(r__present_0009_0018,r__we_0009_0005,genv).
-arc(r__and_0009_0019,r__present_0009_0018,conj1).
-arc(r__and_0009_0019,r__future_0009_0021,conj2).
-arc(r__future_0009_0021,r__we_0009_0005,genv).
+arc(r_0009_0002__pride,z_0009_1004,r_0009_0003__in).
+arc(r_0009_0006__are,r_0009_0005__we,arg0).
+arc(r_0009_0006__are,z_0009_1004,arg1).
+arc(r_0009_0007__is,r_0009_0002__pride,arg0).
+arc(r_0009_0007__is,r_0009_0010__part,prd2).
+arc(r_0009_0007__is,r_0009_0016__defines,prn6).
+arc(r_0009_0008__not,r_0009_0007__is,scope).
+arc(r_0009_0010__part,r_0009_0013__past,r_0009_0011__of).
+arc(r_0009_0013__past,r_0009_0005__we,genv).
+arc(r_0009_0016__defines,r_0009_0002__pride,arg0).
+arc(r_0009_0016__defines,r_0009_0019__and,arg1).
+arc(r_0009_0018__present,r_0009_0005__we,genv).
+arc(r_0009_0019__and,r_0009_0018__present,conj1).
+arc(r_0009_0019__and,r_0009_0021__future,conj2).
+arc(r_0009_0021__future,r_0009_0005__we,genv).
 
 </pre>
 <br>
@@ -237,33 +237,33 @@ arc(r__future_0009_0021,r__we_0009_0005,genv).
 fof(id_9_A_Queen_broadcast,axiom,
     ? [EVENTX8,SPEAKER_AND_HEARERX7,PRIDEX9,SPEAKER_AND_HEARERX12,SPEAKER_AND_HEARERX14,OPERATORX16,EVENTX17,EVENTX15,EVENTX3,PRIDEX1,ENTITYX5,ENTITYX10,ENTITYX11,ENTITYX13,ENTITYX6,ENTITYX2] :
       ( EVENTX8 = EVENTX15
-      &amp; isA(EVENTX15,r__defines_0009_0016)
+      &amp; isA(EVENTX15,r_0009_0016__defines)
       &amp; arg0(EVENTX15) = PRIDEX9
       &amp; arg1(EVENTX15) = ENTITYX10
-      &amp; isA(PRIDEX1,r__pride_0009_0002)
-      &amp; r__in_0009_0003(PRIDEX1) = ENTITYX2
-      &amp; isA(EVENTX3,r__are_0009_0006)
+      &amp; isA(PRIDEX1,r_0009_0002__pride)
+      &amp; r_0009_0003__in(PRIDEX1) = ENTITYX2
+      &amp; isA(EVENTX3,r_0009_0006__are)
       &amp; arg1(EVENTX3) = ENTITYX2
-      &amp; arg0(EVENTX3) = r__we_0009_0005
+      &amp; arg0(EVENTX3) = r_0009_0005__we
       &amp; isA(ENTITYX2,z_0009_1004)
-      &amp; isA(ENTITYX5,r__part_0009_0010)
-      &amp; r__of_0009_0011(ENTITYX5) = ENTITYX6
-      &amp; isA(ENTITYX6,r__past_0009_0013)
+      &amp; isA(ENTITYX5,r_0009_0010__part)
+      &amp; r_0009_0011__of(ENTITYX5) = ENTITYX6
+      &amp; isA(ENTITYX6,r_0009_0013__past)
       &amp; genv(ENTITYX6) = SPEAKER_AND_HEARERX7
-      &amp; SPEAKER_AND_HEARERX7 = r__we_0009_0005
+      &amp; SPEAKER_AND_HEARERX7 = r_0009_0005__we
       &amp; PRIDEX9 = PRIDEX1
-      &amp; isA(ENTITYX10,r__and_0009_0019)
+      &amp; isA(ENTITYX10,r_0009_0019__and)
       &amp; conj1(ENTITYX10) = ENTITYX11
       &amp; conj2(ENTITYX10) = ENTITYX13
-      &amp; isA(ENTITYX11,r__present_0009_0018)
+      &amp; isA(ENTITYX11,r_0009_0018__present)
       &amp; genv(ENTITYX11) = SPEAKER_AND_HEARERX12
-      &amp; SPEAKER_AND_HEARERX12 = r__we_0009_0005
-      &amp; isA(ENTITYX13,r__future_0009_0021)
+      &amp; SPEAKER_AND_HEARERX12 = r_0009_0005__we
+      &amp; isA(ENTITYX13,r_0009_0021__future)
       &amp; genv(ENTITYX13) = SPEAKER_AND_HEARERX14
-      &amp; SPEAKER_AND_HEARERX14 = r__we_0009_0005
-      &amp; isA(OPERATORX16,r__not_0009_0008)
+      &amp; SPEAKER_AND_HEARERX14 = r_0009_0005__we
+      &amp; isA(OPERATORX16,r_0009_0008__not)
       &amp; scope(OPERATORX16) = EVENTX17
-      &amp; isA(EVENTX17,r__is_0009_0007)
+      &amp; isA(EVENTX17,r_0009_0007__is)
       &amp; arg0(EVENTX17) = PRIDEX1
       &amp; prd2(EVENTX17) = ENTITYX5
       &amp; prn6(EVENTX17) = EVENTX8 ) ).

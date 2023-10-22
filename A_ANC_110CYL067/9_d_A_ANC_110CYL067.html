@@ -37,8 +37,8 @@ Because teaching a man to fish will keep him fed for his entire life .
 <!-- 0025_0001_cnt -->
 <g id="node1" class="node">
 <title>0025_0001_cnt</title>
-<ellipse fill="none" stroke="black" cx="218.99" cy="-453" rx="74.19" ry="18"/>
-<text text-anchor="middle" x="218.99" y="-449.3" font-family="fixed" font-size="14.00">Because_[cnt]</text>
+<ellipse fill="none" stroke="black" cx="218.99" cy="-453" rx="69.59" ry="18"/>
+<text text-anchor="middle" x="218.99" y="-449.3" font-family="fixed" font-size="14.00">Because[cnt]</text>
 </g>
 <!-- 0025_0007 -->
 <g id="node2" class="node">
@@ -49,7 +49,7 @@ Because teaching a man to fish will keep him fed for his entire life .
 <!-- 0025_0001_cnt&#45;&gt;0025_0007 -->
 <g id="edge1" class="edge">
 <title>0025_0001_cnt&#45;&gt;0025_0007</title>
-<path fill="none" stroke="black" d="M186.93,-436.77C179.41,-431.59 172.33,-425.03 167.99,-417 164.31,-410.17 163.08,-402.02 163.03,-394.29"/>
+<path fill="none" stroke="black" d="M187.19,-436.95C179.57,-431.75 172.38,-425.13 167.99,-417 164.31,-410.17 163.08,-402.02 163.03,-394.29"/>
 <polygon fill="black" stroke="black" points="166.53,-394.37 163.59,-384.19 159.54,-393.99 166.53,-394.37"/>
 <text text-anchor="middle" x="208.49" y="-405.8" font-family="fixed" font-size="14.00">[restriction]</text>
 </g>
@@ -156,7 +156,7 @@ Because teaching a man to fish will keep him fed for his entire life .
 <title>0025_0008&#45;&gt;0025_0014</title>
 <path fill="none" stroke="black" d="M188.9,-265.55C199.08,-259.33 211.09,-251.36 220.99,-243 230.52,-234.96 240.02,-225.04 247.89,-216.16"/>
 <polygon fill="black" stroke="black" points="250.72,-218.24 254.61,-208.38 245.42,-213.66 250.72,-218.24"/>
-<text text-anchor="middle" x="268.49" y="-231.8" font-family="fixed" font-size="14.00">for_[tmp]</text>
+<text text-anchor="middle" x="264.99" y="-231.8" font-family="fixed" font-size="14.00">for[tmp]</text>
 </g>
 <!-- 0025_0014&#45;&gt;0025_0004 -->
 <g id="edge11" class="edge">
@@ -182,18 +182,18 @@ Because teaching a man to fish will keep him fed for his entire life .
 </svg>
 <br>
 <pre>
-arc(r__Because_0025_0001_cnt,r__will_0025_0007,restriction).
-arc(r__Because_0025_0001_cnt,z_0025_1016,scope).
-arc(r__teaching_0025_0002,r__man_0025_0004,arg2).
-arc(r__teaching_0025_0002,r__fish_0025_0006,arg1).
-arc(r__fish_0025_0006,r__man_0025_0004,arg0).
-arc(r__will_0025_0007,r__keep_0025_0008,scope).
-arc(r__keep_0025_0008,r__teaching_0025_0002,arg0).
-arc(r__keep_0025_0008,r__man_0025_0004,arg1).
-arc(r__keep_0025_0008,r__fed_0025_0010,prd).
-arc(r__keep_0025_0008,r__life_0025_0014,r__for_0025_0011_tmp).
-arc(r__life_0025_0014,r__man_0025_0004,genv).
-arc(r__life_0025_0014,r__entire_0025_0013,attrib2).
+arc(r_0025_0001__Because_cnt,r_0025_0007__will,restriction).
+arc(r_0025_0001__Because_cnt,z_0025_1016,scope).
+arc(r_0025_0002__teaching,r_0025_0004__man,arg2).
+arc(r_0025_0002__teaching,r_0025_0006__fish,arg1).
+arc(r_0025_0006__fish,r_0025_0004__man,arg0).
+arc(r_0025_0007__will,r_0025_0008__keep,scope).
+arc(r_0025_0008__keep,r_0025_0002__teaching,arg0).
+arc(r_0025_0008__keep,r_0025_0004__man,arg1).
+arc(r_0025_0008__keep,r_0025_0010__fed,prd).
+arc(r_0025_0008__keep,r_0025_0014__life,r_0025_0011__for_tmp).
+arc(r_0025_0014__life,r_0025_0004__man,genv).
+arc(r_0025_0014__life,r_0025_0013__entire,attrib2).
 
 </pre>
 <br>
@@ -201,30 +201,30 @@ arc(r__life_0025_0014,r__entire_0025_0013,attrib2).
 fof(id_25_A_ANC_110CYL067,axiom,
     ? [STATEX2,STATEX6,PERSONX9,PERSONX12,CONNX1,EVENTX17,OPERATORX14,EVENTX15,EVENTX8,EVENTX7,ENTITYX11,PERSONX5,ATTRIBX10,ATTRIBX13] :
       ( STATEX2 = EVENTX8
-      &amp; isA(EVENTX8,r__teaching_0025_0002)
+      &amp; isA(EVENTX8,r_0025_0002__teaching)
       &amp; arg2(EVENTX8) = PERSONX5
       &amp; arg1(EVENTX8) = STATEX6
       &amp; STATEX6 = EVENTX7
-      &amp; isA(EVENTX7,r__fish_0025_0006)
+      &amp; isA(EVENTX7,r_0025_0006__fish)
       &amp; arg0(EVENTX7) = PERSONX5
-      &amp; isA(PERSONX5,r__man_0025_0004)
+      &amp; isA(PERSONX5,r_0025_0004__man)
       &amp; PERSONX9 = PERSONX5
-      &amp; isA(ENTITYX11,r__life_0025_0014)
+      &amp; isA(ENTITYX11,r_0025_0014__life)
       &amp; genv(ENTITYX11) = PERSONX12
       &amp; attrib2(ENTITYX11) = ATTRIBX13
       &amp; ( PERSONX12 = PERSONX9
         | PERSONX12 = PERSONX5 )
-      &amp; isA(ATTRIBX10,r__fed_0025_0010)
-      &amp; isA(ATTRIBX13,r__entire_0025_0013)
-      &amp; isA(CONNX1,r__Because_0025_0001_cnt)
+      &amp; isA(ATTRIBX10,r_0025_0010__fed)
+      &amp; isA(ATTRIBX13,r_0025_0013__entire)
+      &amp; isA(CONNX1,r_0025_0001__Because_cnt)
       &amp; restriction(CONNX1) = OPERATORX14
-      &amp; isA(OPERATORX14,r__will_0025_0007)
+      &amp; isA(OPERATORX14,r_0025_0007__will)
       &amp; scope(OPERATORX14) = EVENTX15
-      &amp; isA(EVENTX15,r__keep_0025_0008)
+      &amp; isA(EVENTX15,r_0025_0008__keep)
       &amp; arg0(EVENTX15) = STATEX2
       &amp; arg1(EVENTX15) = PERSONX9
       &amp; prd(EVENTX15) = ATTRIBX10
-      &amp; r__for_0025_0011_tmp(EVENTX15) = ENTITYX11
+      &amp; r_0025_0011__for_tmp(EVENTX15) = ENTITYX11
       &amp; scope(CONNX1) = EVENTX17
       &amp; isA(EVENTX17,z_0025_1016) ) ).
 

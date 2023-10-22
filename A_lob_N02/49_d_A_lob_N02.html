@@ -103,7 +103,7 @@
 <title>0089_0011_0089_0012&#45;&gt;0089_0003</title>
 <path fill="none" stroke="black" d="M343.01,-173.9C340.27,-164.03 336.27,-151.53 331.24,-141 329.57,-137.51 327.61,-133.97 325.54,-130.54"/>
 <polygon fill="black" stroke="black" points="328.31,-128.37 319.96,-121.84 322.42,-132.15 328.31,-128.37"/>
-<text text-anchor="middle" x="361.74" y="-144.8" font-family="fixed" font-size="14.00">to_[clr]</text>
+<text text-anchor="middle" x="358.24" y="-144.8" font-family="fixed" font-size="14.00">to[clr]</text>
 </g>
 <!-- 0089_0011_0089_0012&#45;&gt;z_0089_1008 -->
 <g id="edge6" class="edge">
@@ -136,14 +136,14 @@
 </svg>
 <br>
 <pre>
-arc(quantificational_r__anyone_0089_0007,r__respects_0089_0006,scope).
-arc(quantificational_r__anyone_0089_0007,z_0089_1008,restriction).
-arc(r__bully_0089_0003,r__that_0089_0005,r__like_0089_0004).
-arc(r__respects_0089_0006,r__bully_0089_0003,arg0).
-arc(r__respects_0089_0006,z_0089_1008,arg1).
-arc(r__dares_0089_0009,r__stand_0089_0011_r__up_0089_0012,catenative).
-arc(r__stand_0089_0011_r__up_0089_0012,r__bully_0089_0003,r__to_0089_0013_clr).
-arc(r__stand_0089_0011_r__up_0089_0012,z_0089_1008,arg0).
+arc(r_0089_0003__bully,r_0089_0005__that,r_0089_0004__like).
+arc(r_0089_0006__respects,r_0089_0003__bully,arg0).
+arc(r_0089_0006__respects,z_0089_1008,arg1).
+arc(r_0089_0007__quantificational__anyone,r_0089_0006__respects,scope).
+arc(r_0089_0007__quantificational__anyone,z_0089_1008,restriction).
+arc(r_0089_0009__dares,r_0089_0011__stand_up,catenative).
+arc(r_0089_0011__stand_up,r_0089_0003__bully,r_0089_0013__to_clr).
+arc(r_0089_0011__stand_up,z_0089_1008,arg0).
 
 </pre>
 <br>
@@ -151,19 +151,19 @@ arc(r__stand_0089_0011_r__up_0089_0012,z_0089_1008,arg0).
 fof(id_89_A_lob_N02,axiom,
     ? [STATEX4,BULLYX5,QUANTX3,EVENTX9,EVENTX7,EVENTX6,BULLYX1,ENTITYX2] :
       ( STATEX4 = EVENTX6
-      &amp; isA(EVENTX6,r__stand_0089_0011_r__up_0089_0012)
+      &amp; isA(EVENTX6,r_0089_0011__stand_up)
       &amp; arg0(EVENTX6) = ENTITYX2
-      &amp; r__to_0089_0013_clr(EVENTX6) = BULLYX5
-      &amp; isA(BULLYX1,r__bully_0089_0003)
-      &amp; r__like_0089_0004(BULLYX1) = r__that_0089_0005
+      &amp; r_0089_0013__to_clr(EVENTX6) = BULLYX5
+      &amp; isA(BULLYX1,r_0089_0003__bully)
+      &amp; r_0089_0004__like(BULLYX1) = r_0089_0005__that
       &amp; BULLYX5 = BULLYX1
-      &amp; isA(QUANTX3,quantificational_r__anyone_0089_0007)
-      &amp; isA(EVENTX7,r__dares_0089_0009)
+      &amp; isA(QUANTX3,r_0089_0007__quantificational__anyone)
+      &amp; isA(EVENTX7,r_0089_0009__dares)
       &amp; catenative(EVENTX7) = STATEX4
       &amp; isA(ENTITYX2,z_0089_1008)
       &amp; restriction(QUANTX3) = ENTITYX2
       &amp; scope(QUANTX3) = EVENTX9
-      &amp; isA(EVENTX9,r__respects_0089_0006)
+      &amp; isA(EVENTX9,r_0089_0006__respects)
       &amp; arg0(EVENTX9) = BULLYX1
       &amp; arg1(EVENTX9) = ENTITYX2 ) ).
 

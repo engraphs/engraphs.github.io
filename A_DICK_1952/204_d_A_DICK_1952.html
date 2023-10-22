@@ -49,22 +49,22 @@ They walked in silence , listening to the echo of their footsteps .
 <!-- 0260_0002&#45;&gt;0260_0001 -->
 <g id="edge1" class="edge">
 <title>0260_0002&#45;&gt;0260_0001</title>
-<path fill="none" stroke="black" d="M31.5,-261.59C19.37,-240.93 2.63,-204.44 13.25,-174 32.66,-118.32 81.34,-67.62 111.31,-40.25"/>
-<polygon fill="black" stroke="black" points="113.75,-42.77 118.86,-33.49 109.08,-37.55 113.75,-42.77"/>
-<text text-anchor="middle" x="49.75" y="-144.8" font-family="fixed" font-size="14.00">[arg0]</text>
+<path fill="none" stroke="black" d="M31.86,-261.19C20.4,-240.43 4.87,-204.16 15.25,-174 34.31,-118.59 82.22,-67.79 111.71,-40.34"/>
+<polygon fill="black" stroke="black" points="114.12,-42.88 119.14,-33.55 109.4,-37.71 114.12,-42.88"/>
+<text text-anchor="middle" x="51.75" y="-144.8" font-family="fixed" font-size="14.00">[arg0]</text>
 </g>
 <!-- 0260_0004 -->
 <g id="node3" class="node">
 <title>0260_0004</title>
-<ellipse fill="none" stroke="black" cx="64.25" cy="-192" rx="42.49" ry="18"/>
-<text text-anchor="middle" x="64.25" y="-188.3" font-family="fixed" font-size="14.00">silence</text>
+<ellipse fill="none" stroke="black" cx="66.25" cy="-192" rx="42.49" ry="18"/>
+<text text-anchor="middle" x="66.25" y="-188.3" font-family="fixed" font-size="14.00">silence</text>
 </g>
 <!-- 0260_0002&#45;&gt;0260_0004 -->
 <g id="edge2" class="edge">
 <title>0260_0002&#45;&gt;0260_0004</title>
-<path fill="none" stroke="black" d="M46.7,-260.8C49.71,-249.16 53.75,-233.55 57.2,-220.24"/>
-<polygon fill="black" stroke="black" points="60.68,-220.73 59.8,-210.18 53.91,-218.98 60.68,-220.73"/>
-<text text-anchor="middle" x="84.75" y="-231.8" font-family="fixed" font-size="14.00">in_[mnr]</text>
+<path fill="none" stroke="black" d="M47.1,-260.8C50.44,-248.97 54.94,-233.03 58.74,-219.58"/>
+<polygon fill="black" stroke="black" points="62.13,-220.46 61.48,-209.89 55.39,-218.56 62.13,-220.46"/>
+<text text-anchor="middle" x="82.25" y="-231.8" font-family="fixed" font-size="14.00">in[mnr]</text>
 </g>
 <!-- 0260_0006 -->
 <g id="node4" class="node">
@@ -90,7 +90,7 @@ They walked in silence , listening to the echo of their footsteps .
 <title>0260_0006&#45;&gt;0260_0009</title>
 <path fill="none" stroke="black" d="M162.12,-261.21C169.36,-248.9 179.31,-232 187.49,-218.09"/>
 <polygon fill="black" stroke="black" points="190.51,-219.86 192.56,-209.47 184.47,-216.31 190.51,-219.86"/>
-<text text-anchor="middle" x="204.75" y="-231.8" font-family="fixed" font-size="14.00">to_[clr]</text>
+<text text-anchor="middle" x="201.25" y="-231.8" font-family="fixed" font-size="14.00">to[clr]</text>
 </g>
 <!-- 0260_0012 -->
 <g id="node6" class="node">
@@ -136,35 +136,35 @@ They walked in silence , listening to the echo of their footsteps .
 </svg>
 <br>
 <pre>
-arc(mnr_0260_1002,r__walked_0260_0002,scope).
-arc(mnr_0260_1002,r__listening_0260_0006,restriction).
-arc(r__walked_0260_0002,r__They_0260_0001,arg0).
-arc(r__walked_0260_0002,r__silence_0260_0004,r__in_0260_0003_mnr).
-arc(r__listening_0260_0006,r__They_0260_0001,arg0).
-arc(r__listening_0260_0006,r__echo_0260_0009,r__to_0260_0007_clr).
-arc(r__echo_0260_0009,r__footsteps_0260_0012,r__of_0260_0010).
-arc(r__footsteps_0260_0012,r__They_0260_0001,genv).
+arc(mnr_0260_1002,r_0260_0002__walked,scope).
+arc(mnr_0260_1002,r_0260_0006__listening,restriction).
+arc(r_0260_0002__walked,r_0260_0001__They,arg0).
+arc(r_0260_0002__walked,r_0260_0004__silence,r_0260_0003__in_mnr).
+arc(r_0260_0006__listening,r_0260_0001__They,arg0).
+arc(r_0260_0006__listening,r_0260_0009__echo,r_0260_0007__to_clr).
+arc(r_0260_0009__echo,r_0260_0012__footsteps,r_0260_0010__of).
+arc(r_0260_0012__footsteps,r_0260_0001__They,genv).
 
 </pre>
 <br>
 <pre>
 fof(id_260_A_DICK_1952,axiom,
     ? [DORLE_AND_NASHA_AND_TANCEX6,CONNX3,EVENTX7,EVENTX8,ENTITYX1,ENTITYX4,ENTITYX5] :
-      ( isA(ENTITYX1,r__silence_0260_0004)
-      &amp; isA(ENTITYX4,r__echo_0260_0009)
-      &amp; r__of_0260_0010(ENTITYX4) = ENTITYX5
-      &amp; isA(ENTITYX5,r__footsteps_0260_0012)
+      ( isA(ENTITYX1,r_0260_0004__silence)
+      &amp; isA(ENTITYX4,r_0260_0009__echo)
+      &amp; r_0260_0010__of(ENTITYX4) = ENTITYX5
+      &amp; isA(ENTITYX5,r_0260_0012__footsteps)
       &amp; genv(ENTITYX5) = DORLE_AND_NASHA_AND_TANCEX6
-      &amp; DORLE_AND_NASHA_AND_TANCEX6 = r__They_0260_0001
+      &amp; DORLE_AND_NASHA_AND_TANCEX6 = r_0260_0001__They
       &amp; isA(CONNX3,mnr_0260_1002)
       &amp; scope(CONNX3) = EVENTX8
-      &amp; isA(EVENTX8,r__walked_0260_0002)
-      &amp; arg0(EVENTX8) = r__They_0260_0001
-      &amp; r__in_0260_0003_mnr(EVENTX8) = ENTITYX1
+      &amp; isA(EVENTX8,r_0260_0002__walked)
+      &amp; arg0(EVENTX8) = r_0260_0001__They
+      &amp; r_0260_0003__in_mnr(EVENTX8) = ENTITYX1
       &amp; restriction(CONNX3) = EVENTX7
-      &amp; isA(EVENTX7,r__listening_0260_0006)
-      &amp; arg0(EVENTX7) = r__They_0260_0001
-      &amp; r__to_0260_0007_clr(EVENTX7) = ENTITYX4 ) ).
+      &amp; isA(EVENTX7,r_0260_0006__listening)
+      &amp; arg0(EVENTX7) = r_0260_0001__They
+      &amp; r_0260_0007__to_clr(EVENTX7) = ENTITYX4 ) ).
 
 
 </pre>

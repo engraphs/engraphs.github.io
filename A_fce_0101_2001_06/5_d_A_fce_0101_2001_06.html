@@ -135,13 +135,13 @@ Read the article below , on which you have made some notes .
 </svg>
 <br>
 <pre>
-arc(imperative_0005_1002,r__Read_0005_0001,scope).
-arc(r__Read_0005_0001,r__article_0005_0003,arg1).
-arc(r__article_0005_0003,r__below_0005_0004,quality3).
-arc(r__have_0005_0009,r__made_0005_0010,catenative).
-arc(r__made_0005_0010,r__you_0005_0008,arg0).
-arc(r__made_0005_0010,r__notes_0005_0012,arg1).
-arc(r__notes_0005_0012,r__article_0005_0003,r__on_0005_0006).
+arc(imperative_0005_1002,r_0005_0001__Read,scope).
+arc(r_0005_0001__Read,r_0005_0003__article,arg1).
+arc(r_0005_0003__article,r_0005_0004__below,quality3).
+arc(r_0005_0009__have,r_0005_0010__made,catenative).
+arc(r_0005_0010__made,r_0005_0008__you,arg0).
+arc(r_0005_0010__made,r_0005_0012__notes,arg1).
+arc(r_0005_0012__notes,r_0005_0003__article,r_0005_0006__on).
 
 </pre>
 <br>
@@ -149,19 +149,19 @@ arc(r__notes_0005_0012,r__article_0005_0003,r__on_0005_0006).
 fof(id_5_A_fce_0101_2001_06,axiom,
     ? [CATENATIVEX6,OPERATORX2,EVENTX10,EVENTX9,EVENTX8,ENTITYX4,ENTITYX7,QUALITYX5] :
       ( CATENATIVEX6 = EVENTX8
-      &amp; isA(EVENTX8,r__made_0005_0010)
-      &amp; arg0(EVENTX8) = r__you_0005_0008
+      &amp; isA(EVENTX8,r_0005_0010__made)
+      &amp; arg0(EVENTX8) = r_0005_0008__you
       &amp; arg1(EVENTX8) = ENTITYX7
-      &amp; isA(EVENTX9,r__have_0005_0009)
+      &amp; isA(EVENTX9,r_0005_0009__have)
       &amp; catenative(EVENTX9) = CATENATIVEX6
-      &amp; isA(ENTITYX4,r__article_0005_0003)
+      &amp; isA(ENTITYX4,r_0005_0003__article)
       &amp; quality3(ENTITYX4) = QUALITYX5
-      &amp; isA(ENTITYX7,r__notes_0005_0012)
-      &amp; r__on_0005_0006(ENTITYX7) = ENTITYX4
-      &amp; isA(QUALITYX5,r__below_0005_0004)
+      &amp; isA(ENTITYX7,r_0005_0012__notes)
+      &amp; r_0005_0006__on(ENTITYX7) = ENTITYX4
+      &amp; isA(QUALITYX5,r_0005_0004__below)
       &amp; isA(OPERATORX2,imperative_0005_1002)
       &amp; scope(OPERATORX2) = EVENTX10
-      &amp; isA(EVENTX10,r__Read_0005_0001)
+      &amp; isA(EVENTX10,r_0005_0001__Read)
       &amp; arg1(EVENTX10) = ENTITYX4 ) ).
 
 

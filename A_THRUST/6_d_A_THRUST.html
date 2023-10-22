@@ -70,17 +70,17 @@ The Planet 's Reactor :
 </svg>
 <br>
 <pre>
-arc(r__Reactor_0010_0004,r__Planet_0010_0002,genv).
-arc(z_0010_1005,r__Reactor_0010_0004,z_0010_1002).
+arc(r_0010_0004__Reactor,r_0010_0002__Planet,genv).
+arc(z_0010_1005,r_0010_0004__Reactor,z_0010_1002).
 
 </pre>
 <br>
 <pre>
 fof(id_10_A_THRUST,axiom,
     ? [EVENTX6,ENTITYX3,ENTITYX4] :
-      ( isA(ENTITYX3,r__Reactor_0010_0004)
+      ( isA(ENTITYX3,r_0010_0004__Reactor)
       &amp; genv(ENTITYX3) = ENTITYX4
-      &amp; isA(ENTITYX4,r__Planet_0010_0002)
+      &amp; isA(ENTITYX4,r_0010_0002__Planet)
       &amp; isA(EVENTX6,z_0010_1005)
       &amp; z_0010_1002(EVENTX6) = ENTITYX3 ) ).
 

@@ -148,14 +148,14 @@
 </svg>
 <br>
 <pre>
-arc(utterance_0160_1003,r__have_0160_0004,part1).
-arc(r__have_0160_0004,r__Lord_0160_0003,arg0).
-arc(r__have_0160_0004,r__mercy_0160_0005,arg1).
-arc(r__mercy_0160_0005,r__soul_0160_0008,r__on_0160_0006).
-arc(r__soul_0160_0008,r__his_0160_0007,genv).
-arc(r__said_0160_0011,utterance_0160_1003,arg1).
-arc(r__said_0160_0011,r__aunt_0160_0013,arg0).
-arc(r__aunt_0160_0013,r__my_0160_0012,genv).
+arc(r_0160_0004__have,r_0160_0003__Lord,arg0).
+arc(r_0160_0004__have,r_0160_0005__mercy,arg1).
+arc(r_0160_0005__mercy,r_0160_0008__soul,r_0160_0006__on).
+arc(r_0160_0008__soul,r_0160_0007__his,genv).
+arc(r_0160_0011__said,r_0160_0013__aunt,arg0).
+arc(r_0160_0011__said,utterance_0160_1003,arg1).
+arc(r_0160_0013__aunt,r_0160_0012__my,genv).
+arc(utterance_0160_1003,r_0160_0004__have,part1).
 
 </pre>
 <br>
@@ -165,17 +165,17 @@ fof(id_160_A_JOYCE_1914,axiom,
       ( STATEX1 = CONJX7
       &amp; isA(CONJX7,utterance_0160_1003)
       &amp; part1(CONJX7) = EVENTX6
-      &amp; isA(EVENTX6,r__have_0160_0004)
-      &amp; arg0(EVENTX6) = r__Lord_0160_0003
+      &amp; isA(EVENTX6,r_0160_0004__have)
+      &amp; arg0(EVENTX6) = r_0160_0003__Lord
       &amp; arg1(EVENTX6) = ENTITYX4
-      &amp; isA(ENTITYX4,r__mercy_0160_0005)
-      &amp; r__on_0160_0006(ENTITYX4) = ENTITYX5
-      &amp; isA(ENTITYX5,r__soul_0160_0008)
-      &amp; genv(ENTITYX5) = r__his_0160_0007
-      &amp; isA(AUNTX8,r__aunt_0160_0013)
-      &amp; genv(AUNTX8) = r__my_0160_0012
-      &amp; isA(r__Lord_0160_0003,r__Lord_0160_0003)
-      &amp; isA(EVENTX9,r__said_0160_0011)
+      &amp; isA(ENTITYX4,r_0160_0005__mercy)
+      &amp; r_0160_0006__on(ENTITYX4) = ENTITYX5
+      &amp; isA(ENTITYX5,r_0160_0008__soul)
+      &amp; genv(ENTITYX5) = r_0160_0007__his
+      &amp; isA(AUNTX8,r_0160_0013__aunt)
+      &amp; genv(AUNTX8) = r_0160_0012__my
+      &amp; isA(r_0160_0003__Lord,r_0160_0003__Lord)
+      &amp; isA(EVENTX9,r_0160_0011__said)
       &amp; arg1(EVENTX9) = STATEX1
       &amp; arg0(EVENTX9) = AUNTX8 ) ).
 

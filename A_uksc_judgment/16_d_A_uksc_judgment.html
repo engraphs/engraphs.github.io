@@ -96,22 +96,22 @@
 </svg>
 <br>
 <pre>
-arc(r__evidence_0030_0004,r__unchallenged_0030_0003,attrib2).
-arc(r__evidence_0030_0004,r__Sir_0030_0006_r__John_0030_0007_r__Major_0030_0008,r__of_0030_0005).
-arc(r__is_0030_0009,r__evidence_0030_0004,arg0).
-arc(r__is_0030_0009,r__clear_0030_0010,prd2).
+arc(r_0030_0004__evidence,r_0030_0003__unchallenged,attrib2).
+arc(r_0030_0004__evidence,r_0030_0006__Sir_John_Major,r_0030_0005__of).
+arc(r_0030_0009__is,r_0030_0004__evidence,arg0).
+arc(r_0030_0009__is,r_0030_0010__clear,prd2).
 
 </pre>
 <br>
 <pre>
 fof(id_30_A_uksc_judgment,axiom,
     ? [EVENTX4,ENTITYX1,ATTRIBX3,ATTRIBX2] :
-      ( isA(ENTITYX1,r__evidence_0030_0004)
+      ( isA(ENTITYX1,r_0030_0004__evidence)
       &amp; attrib2(ENTITYX1) = ATTRIBX2
-      &amp; r__of_0030_0005(ENTITYX1) = r__Sir_0030_0006_r__John_0030_0007_r__Major_0030_0008
-      &amp; isA(ATTRIBX2,r__unchallenged_0030_0003)
-      &amp; isA(ATTRIBX3,r__clear_0030_0010)
-      &amp; isA(EVENTX4,r__is_0030_0009)
+      &amp; r_0030_0005__of(ENTITYX1) = r_0030_0006__Sir_John_Major
+      &amp; isA(ATTRIBX2,r_0030_0003__unchallenged)
+      &amp; isA(ATTRIBX3,r_0030_0010__clear)
+      &amp; isA(EVENTX4,r_0030_0009__is)
       &amp; arg0(EVENTX4) = ENTITYX1
       &amp; prd2(EVENTX4) = ATTRIBX3 ) ).
 

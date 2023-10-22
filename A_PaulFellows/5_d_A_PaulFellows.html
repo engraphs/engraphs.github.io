@@ -227,21 +227,21 @@ It was the Acornsoft languages group , myself , I was the team leader , I was th
 </svg>
 <br>
 <pre>
-arc(utterance_0005_1010,r__can_0005_0025,part1).
-arc(r__was_0005_0002,r__It_0005_0001,arg0).
-arc(r__was_0005_0002,r__Acornsoft_0005_0004_r__languages_0005_0005_r__group_0005_0006,prd2).
-arc(r__Acornsoft_0005_0004_r__languages_0005_0005_r__group_0005_0006,r__myself_0005_0008,prn6).
-arc(r__myself_0005_0008,r__was_0005_0011,prn3).
-arc(r__was_0005_0011,r__myself_0005_0008,arg0).
-arc(r__was_0005_0011,r__team_0005_0013_r__leader_0005_0014,prd2).
-arc(r__was_0005_0011,r__was_0005_0017,prn5).
-arc(r__was_0005_0017,r__myself_0005_0008,arg0).
-arc(r__was_0005_0017,r__fool_0005_0019,prd2).
-arc(r__said_0005_0021,utterance_0005_1010,arg1).
-arc(r__said_0005_0021,r__fool_0005_0019,arg0).
-arc(r__can_0005_0025,r__do_0005_0026,scope).
-arc(r__do_0005_0026,r__we_0005_0024,arg0).
-arc(r__do_0005_0026,r__it_0005_0027,arg1).
+arc(r_0005_0002__was,r_0005_0001__It,arg0).
+arc(r_0005_0002__was,r_0005_0004__Acornsoft_languages_group,prd2).
+arc(r_0005_0004__Acornsoft_languages_group,r_0005_0008__myself,prn6).
+arc(r_0005_0008__myself,r_0005_0011__was,prn3).
+arc(r_0005_0011__was,r_0005_0008__myself,arg0).
+arc(r_0005_0011__was,r_0005_0013__team_leader,prd2).
+arc(r_0005_0011__was,r_0005_0017__was,prn5).
+arc(r_0005_0017__was,r_0005_0008__myself,arg0).
+arc(r_0005_0017__was,r_0005_0019__fool,prd2).
+arc(r_0005_0021__said,r_0005_0019__fool,arg0).
+arc(r_0005_0021__said,utterance_0005_1010,arg1).
+arc(r_0005_0025__can,r_0005_0026__do,scope).
+arc(r_0005_0026__do,r_0005_0024__we,arg0).
+arc(r_0005_0026__do,r_0005_0027__it,arg1).
+arc(utterance_0005_1010,r_0005_0025__can,part1).
 
 </pre>
 <br>
@@ -249,36 +249,36 @@ arc(r__do_0005_0026,r__it_0005_0027,arg1).
 fof(id_5_A_PaulFellows,axiom,
     ? [EVENTX2,EVENTX5,STATEX8,SPEAKERX3,SPEAKERX6,EVENTX17,EVENTX16,EVENTX15,EVENTX14,CONJX13,OPERATORX11,EVENTX12,ENTITYX1,ENTITYX4,ENTITYX7] :
       ( EVENTX2 = EVENTX16
-      &amp; isA(EVENTX16,r__was_0005_0011)
+      &amp; isA(EVENTX16,r_0005_0011__was)
       &amp; arg0(EVENTX16) = SPEAKERX3
       &amp; prd2(EVENTX16) = ENTITYX4
       &amp; prn5(EVENTX16) = EVENTX5
       &amp; EVENTX5 = EVENTX15
-      &amp; isA(EVENTX15,r__was_0005_0017)
+      &amp; isA(EVENTX15,r_0005_0017__was)
       &amp; arg0(EVENTX15) = SPEAKERX6
       &amp; prd2(EVENTX15) = ENTITYX7
       &amp; STATEX8 = CONJX13
       &amp; isA(CONJX13,utterance_0005_1010)
       &amp; part1(CONJX13) = OPERATORX11
-      &amp; isA(OPERATORX11,r__can_0005_0025)
+      &amp; isA(OPERATORX11,r_0005_0025__can)
       &amp; scope(OPERATORX11) = EVENTX12
-      &amp; isA(EVENTX12,r__do_0005_0026)
-      &amp; arg0(EVENTX12) = r__we_0005_0024
-      &amp; arg1(EVENTX12) = r__it_0005_0027
-      &amp; isA(ENTITYX1,r__Acornsoft_0005_0004_r__languages_0005_0005_r__group_0005_0006)
-      &amp; prn6(ENTITYX1) = r__myself_0005_0008
-      &amp; SPEAKERX3 = r__myself_0005_0008
-      &amp; isA(ENTITYX4,r__team_0005_0013_r__leader_0005_0014)
+      &amp; isA(EVENTX12,r_0005_0026__do)
+      &amp; arg0(EVENTX12) = r_0005_0024__we
+      &amp; arg1(EVENTX12) = r_0005_0027__it
+      &amp; isA(ENTITYX1,r_0005_0004__Acornsoft_languages_group)
+      &amp; prn6(ENTITYX1) = r_0005_0008__myself
+      &amp; SPEAKERX3 = r_0005_0008__myself
+      &amp; isA(ENTITYX4,r_0005_0013__team_leader)
       &amp; ( SPEAKERX6 = SPEAKERX3
-        | SPEAKERX6 = r__myself_0005_0008 )
-      &amp; isA(EVENTX14,r__said_0005_0021)
+        | SPEAKERX6 = r_0005_0008__myself )
+      &amp; isA(EVENTX14,r_0005_0021__said)
       &amp; arg0(EVENTX14) = ENTITYX7
       &amp; arg1(EVENTX14) = STATEX8
-      &amp; isA(ENTITYX7,r__fool_0005_0019)
-      &amp; isA(r__myself_0005_0008,r__myself_0005_0008)
-      &amp; prn3(r__myself_0005_0008) = EVENTX2
-      &amp; isA(EVENTX17,r__was_0005_0002)
-      &amp; arg0(EVENTX17) = r__It_0005_0001
+      &amp; isA(ENTITYX7,r_0005_0019__fool)
+      &amp; isA(r_0005_0008__myself,r_0005_0008__myself)
+      &amp; prn3(r_0005_0008__myself) = EVENTX2
+      &amp; isA(EVENTX17,r_0005_0002__was)
+      &amp; arg0(EVENTX17) = r_0005_0001__It
       &amp; prd2(EVENTX17) = ENTITYX1 ) ).
 
 

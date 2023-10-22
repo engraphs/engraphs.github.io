@@ -136,14 +136,14 @@
 </svg>
 <br>
 <pre>
-arc(utterance_0031_1003,r__think_0031_0003,part1).
-arc(r__think_0031_0003,r__I_0031_0002,arg0).
-arc(r__think_0031_0003,r__can_0031_0005,arg1).
-arc(r__can_0031_0005,r__guess_0031_0006,scope).
-arc(r__guess_0031_0006,r__I_0031_0002,arg0).
-arc(r__Captain_0031_0010,r__I_0031_0002,z_0031_1012).
-arc(r__answered_0031_0011,utterance_0031_1003,arg1).
-arc(r__answered_0031_0011,r__Captain_0031_0010,arg0).
+arc(r_0031_0003__think,r_0031_0002__I,arg0).
+arc(r_0031_0003__think,r_0031_0005__can,arg1).
+arc(r_0031_0005__can,r_0031_0006__guess,scope).
+arc(r_0031_0006__guess,r_0031_0002__I,arg0).
+arc(r_0031_0010__Captain,r_0031_0002__I,z_0031_1012).
+arc(r_0031_0011__answered,r_0031_0010__Captain,arg0).
+arc(r_0031_0011__answered,utterance_0031_1003,arg1).
+arc(utterance_0031_1003,r_0031_0003__think,part1).
 
 </pre>
 <br>
@@ -153,19 +153,19 @@ fof(id_31_A_DICK_1952,axiom,
       ( STATEX1 = CONJX9
       &amp; isA(CONJX9,utterance_0031_1003)
       &amp; part1(CONJX9) = EVENTX8
-      &amp; isA(EVENTX8,r__think_0031_0003)
-      &amp; arg0(EVENTX8) = r__I_0031_0002
+      &amp; isA(EVENTX8,r_0031_0003__think)
+      &amp; arg0(EVENTX8) = r_0031_0002__I
       &amp; arg1(EVENTX8) = STATEX4
       &amp; STATEX4 = OPERATORX6
-      &amp; isA(OPERATORX6,r__can_0031_0005)
+      &amp; isA(OPERATORX6,r_0031_0005__can)
       &amp; scope(OPERATORX6) = EVENTX7
-      &amp; isA(EVENTX7,r__guess_0031_0006)
+      &amp; isA(EVENTX7,r_0031_0006__guess)
       &amp; arg0(EVENTX7) = CAPTAINX5
-      &amp; CAPTAINX5 = r__I_0031_0002
-      &amp; isA(ENTITYX10,r__Captain_0031_0010)
+      &amp; CAPTAINX5 = r_0031_0002__I
+      &amp; isA(ENTITYX10,r_0031_0010__Captain)
       &amp; z_0031_1012(ENTITYX10) = CAPTAINX13
-      &amp; CAPTAINX13 = r__I_0031_0002
-      &amp; isA(EVENTX14,r__answered_0031_0011)
+      &amp; CAPTAINX13 = r_0031_0002__I
+      &amp; isA(EVENTX14,r_0031_0011__answered)
       &amp; arg1(EVENTX14) = STATEX1
       &amp; arg0(EVENTX14) = ENTITYX10 ) ).
 

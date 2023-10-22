@@ -37,8 +37,8 @@ Provided the temperatures at C and E are the same , thermoelectric contributions
 <!-- 0057_0001_cnt -->
 <g id="node1" class="node">
 <title>0057_0001_cnt</title>
-<ellipse fill="none" stroke="black" cx="275.49" cy="-366" rx="75.29" ry="18"/>
-<text text-anchor="middle" x="275.49" y="-362.3" font-family="fixed" font-size="14.00">Provided_[cnt]</text>
+<ellipse fill="none" stroke="black" cx="275.49" cy="-366" rx="70.69" ry="18"/>
+<text text-anchor="middle" x="275.49" y="-362.3" font-family="fixed" font-size="14.00">Provided[cnt]</text>
 </g>
 <!-- 0057_0008 -->
 <g id="node2" class="node">
@@ -49,7 +49,7 @@ Provided the temperatures at C and E are the same , thermoelectric contributions
 <!-- 0057_0001_cnt&#45;&gt;0057_0008 -->
 <g id="edge1" class="edge">
 <title>0057_0001_cnt&#45;&gt;0057_0008</title>
-<path fill="none" stroke="black" d="M242.25,-349.63C234.53,-344.49 227.2,-337.98 222.49,-330 218.54,-323.3 216.85,-315.18 216.34,-307.46"/>
+<path fill="none" stroke="black" d="M242.8,-350C234.88,-344.79 227.32,-338.17 222.49,-330 218.54,-323.3 216.85,-315.18 216.34,-307.46"/>
 <polygon fill="black" stroke="black" points="219.84,-307.3 216.26,-297.33 212.84,-307.36 219.84,-307.3"/>
 <text text-anchor="middle" x="262.99" y="-318.8" font-family="fixed" font-size="14.00">[restriction]</text>
 </g>
@@ -213,50 +213,50 @@ Provided the temperatures at C and E are the same , thermoelectric contributions
 </svg>
 <br>
 <pre>
-arc(r__Provided_0057_0001_cnt,r__are_0057_0008,restriction).
-arc(r__Provided_0057_0001_cnt,r__should_0057_0017,scope).
-arc(r__temperatures_0057_0003,r__and_0057_0006,r__at_0057_0004).
-arc(r__and_0057_0006,r__C_0057_0005,conj1).
-arc(r__and_0057_0006,r__E_0057_0007,conj2).
-arc(r__are_0057_0008,r__temperatures_0057_0003,arg0).
-arc(r__are_0057_0008,z_0057_1008,prd2).
-arc(r__contributions_0057_0013,r__thermoelectric_0057_0012,attrib1).
-arc(r__contributions_0057_0013,r__voltage_0057_0016,r__to_0057_0014).
-arc(r__should_0057_0017,r__be_0057_0018,scope).
-arc(r__be_0057_0018,r__contributions_0057_0013,arg0).
-arc(r__be_0057_0018,r__zero_0057_0019,prd2).
-arc(z_0057_1008,r__same_0057_0010,attrib2).
+arc(r_0057_0001__Provided_cnt,r_0057_0008__are,restriction).
+arc(r_0057_0001__Provided_cnt,r_0057_0017__should,scope).
+arc(r_0057_0003__temperatures,r_0057_0006__and,r_0057_0004__at).
+arc(r_0057_0006__and,r_0057_0005__C,conj1).
+arc(r_0057_0006__and,r_0057_0007__E,conj2).
+arc(r_0057_0008__are,r_0057_0003__temperatures,arg0).
+arc(r_0057_0008__are,z_0057_1008,prd2).
+arc(r_0057_0013__contributions,r_0057_0012__thermoelectric,attrib1).
+arc(r_0057_0013__contributions,r_0057_0016__voltage,r_0057_0014__to).
+arc(r_0057_0017__should,r_0057_0018__be,scope).
+arc(r_0057_0018__be,r_0057_0013__contributions,arg0).
+arc(r_0057_0018__be,r_0057_0019__zero,prd2).
+arc(z_0057_1008,r_0057_0010__same,attrib2).
 
 </pre>
 <br>
 <pre>
 fof(id_57_A_lob_J01,axiom,
     ? [CONNX1,OPERATORX14,EVENTX15,EVENTX9,ENTITYX10,ENTITYX13,ENTITYX12,ENTITYX2,ENTITYX6,ENTITYX3,ENTITYX4,ENTITYX5,ATTRIBX11,ATTRIBX7] :
-      ( isA(ENTITYX2,r__temperatures_0057_0003)
-      &amp; r__at_0057_0004(ENTITYX2) = ENTITYX3
-      &amp; isA(ENTITYX3,r__and_0057_0006)
+      ( isA(ENTITYX2,r_0057_0003__temperatures)
+      &amp; r_0057_0004__at(ENTITYX2) = ENTITYX3
+      &amp; isA(ENTITYX3,r_0057_0006__and)
       &amp; conj1(ENTITYX3) = ENTITYX4
       &amp; conj2(ENTITYX3) = ENTITYX5
-      &amp; isA(ENTITYX4,r__C_0057_0005)
-      &amp; isA(ENTITYX5,r__E_0057_0007)
+      &amp; isA(ENTITYX4,r_0057_0005__C)
+      &amp; isA(ENTITYX5,r_0057_0007__E)
       &amp; isA(ENTITYX6,z_0057_1008)
       &amp; attrib2(ENTITYX6) = ATTRIBX7
-      &amp; isA(ENTITYX10,r__contributions_0057_0013)
+      &amp; isA(ENTITYX10,r_0057_0013__contributions)
       &amp; attrib1(ENTITYX10) = ATTRIBX11
-      &amp; r__to_0057_0014(ENTITYX10) = ENTITYX12
-      &amp; isA(ENTITYX12,r__voltage_0057_0016)
-      &amp; isA(ENTITYX13,r__zero_0057_0019)
-      &amp; isA(ATTRIBX7,r__same_0057_0010)
-      &amp; isA(ATTRIBX11,r__thermoelectric_0057_0012)
-      &amp; isA(CONNX1,r__Provided_0057_0001_cnt)
+      &amp; r_0057_0014__to(ENTITYX10) = ENTITYX12
+      &amp; isA(ENTITYX12,r_0057_0016__voltage)
+      &amp; isA(ENTITYX13,r_0057_0019__zero)
+      &amp; isA(ATTRIBX7,r_0057_0010__same)
+      &amp; isA(ATTRIBX11,r_0057_0012__thermoelectric)
+      &amp; isA(CONNX1,r_0057_0001__Provided_cnt)
       &amp; restriction(CONNX1) = EVENTX9
-      &amp; isA(EVENTX9,r__are_0057_0008)
+      &amp; isA(EVENTX9,r_0057_0008__are)
       &amp; arg0(EVENTX9) = ENTITYX2
       &amp; prd2(EVENTX9) = ENTITYX6
       &amp; scope(CONNX1) = OPERATORX14
-      &amp; isA(OPERATORX14,r__should_0057_0017)
+      &amp; isA(OPERATORX14,r_0057_0017__should)
       &amp; scope(OPERATORX14) = EVENTX15
-      &amp; isA(EVENTX15,r__be_0057_0018)
+      &amp; isA(EVENTX15,r_0057_0018__be)
       &amp; arg0(EVENTX15) = ENTITYX10
       &amp; prd2(EVENTX15) = ENTITYX13 ) ).
 

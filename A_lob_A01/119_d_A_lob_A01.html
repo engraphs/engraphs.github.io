@@ -82,8 +82,8 @@
 <!-- 0127_0006_abs -->
 <g id="node5" class="node">
 <title>0127_0006_abs</title>
-<ellipse fill="none" stroke="black" cx="121.05" cy="-366" rx="71.49" ry="18"/>
-<text text-anchor="middle" x="121.05" y="-362.3" font-family="fixed" font-size="14.00">without_[abs]</text>
+<ellipse fill="none" stroke="black" cx="121.05" cy="-366" rx="67.69" ry="18"/>
+<text text-anchor="middle" x="121.05" y="-362.3" font-family="fixed" font-size="14.00">without[abs]</text>
 </g>
 <!-- 0127_0006_abs&#45;&gt;0127_0003 -->
 <g id="edge4" class="edge">
@@ -194,24 +194,24 @@
 <title>0127_0015&#45;&gt;0127_0017</title>
 <path fill="none" stroke="black" d="M334.25,-90.34C355.41,-76.72 388.2,-55.6 412.63,-39.88"/>
 <polygon fill="black" stroke="black" points="414.7,-42.7 421.21,-34.35 410.91,-36.82 414.7,-42.7"/>
-<text text-anchor="middle" x="411.05" y="-57.8" font-family="fixed" font-size="14.00">in_[loc]</text>
+<text text-anchor="middle" x="407.55" y="-57.8" font-family="fixed" font-size="14.00">in[loc]</text>
 </g>
 </g>
 </svg>
 <br>
 <pre>
-arc(r__can_0127_0003,r__not_0127_0004,scope).
-arc(r__not_0127_0004,r__continue_0127_0005,scope).
-arc(r__continue_0127_0005,r__That_0127_0002,arg0).
-arc(r__without_0127_0006_abs,r__can_0127_0003,scope).
-arc(r__without_0127_0006_abs,r__or_0127_0011,restriction).
-arc(r__being_0127_0009,r__limited_0127_0010,catenative).
-arc(r__limited_0127_0010,r__development_0127_0008,arg1).
-arc(r__or_0127_0011,r__being_0127_0009,conj1).
-arc(r__or_0127_0011,r__being_0127_0014,conj2).
-arc(r__being_0127_0014,r__made_0127_0015,catenative).
-arc(r__made_0127_0015,r__adjustment_0127_0013,arg1).
-arc(r__made_0127_0015,r__financing_0127_0017,r__in_0127_0016_loc).
+arc(r_0127_0003__can,r_0127_0004__not,scope).
+arc(r_0127_0004__not,r_0127_0005__continue,scope).
+arc(r_0127_0005__continue,r_0127_0002__That,arg0).
+arc(r_0127_0006__without_abs,r_0127_0003__can,scope).
+arc(r_0127_0006__without_abs,r_0127_0011__or,restriction).
+arc(r_0127_0009__being,r_0127_0010__limited,catenative).
+arc(r_0127_0010__limited,r_0127_0008__development,arg1).
+arc(r_0127_0011__or,r_0127_0009__being,conj1).
+arc(r_0127_0011__or,r_0127_0014__being,conj2).
+arc(r_0127_0014__being,r_0127_0015__made,catenative).
+arc(r_0127_0015__made,r_0127_0013__adjustment,arg1).
+arc(r_0127_0015__made,r_0127_0017__financing,r_0127_0016__in_loc).
 
 </pre>
 <br>
@@ -219,30 +219,30 @@ arc(r__made_0127_0015,r__financing_0127_0017,r__in_0127_0016_loc).
 fof(id_127_A_lob_A01,axiom,
     ? [CATENATIVEX5,CATENATIVEX10,CONNX1,CONJX15,EVENTX14,EVENTX13,EVENTX8,EVENTX7,OPERATORX16,OPERATORX17,EVENTX18,ENTITYX9,ENTITYX12,ENTITYX4] :
       ( CATENATIVEX5 = EVENTX7
-      &amp; isA(EVENTX7,r__limited_0127_0010)
+      &amp; isA(EVENTX7,r_0127_0010__limited)
       &amp; arg1(EVENTX7) = ENTITYX4
       &amp; CATENATIVEX10 = EVENTX13
-      &amp; isA(EVENTX13,r__made_0127_0015)
+      &amp; isA(EVENTX13,r_0127_0015__made)
       &amp; arg1(EVENTX13) = ENTITYX9
-      &amp; r__in_0127_0016_loc(EVENTX13) = ENTITYX12
-      &amp; isA(ENTITYX4,r__development_0127_0008)
-      &amp; isA(ENTITYX9,r__adjustment_0127_0013)
-      &amp; isA(ENTITYX12,r__financing_0127_0017)
-      &amp; isA(CONNX1,r__without_0127_0006_abs)
+      &amp; r_0127_0016__in_loc(EVENTX13) = ENTITYX12
+      &amp; isA(ENTITYX4,r_0127_0008__development)
+      &amp; isA(ENTITYX9,r_0127_0013__adjustment)
+      &amp; isA(ENTITYX12,r_0127_0017__financing)
+      &amp; isA(CONNX1,r_0127_0006__without_abs)
       &amp; scope(CONNX1) = OPERATORX16
-      &amp; isA(OPERATORX16,r__can_0127_0003)
+      &amp; isA(OPERATORX16,r_0127_0003__can)
       &amp; scope(OPERATORX16) = OPERATORX17
-      &amp; isA(OPERATORX17,r__not_0127_0004)
+      &amp; isA(OPERATORX17,r_0127_0004__not)
       &amp; scope(OPERATORX17) = EVENTX18
-      &amp; isA(EVENTX18,r__continue_0127_0005)
-      &amp; arg0(EVENTX18) = r__That_0127_0002
+      &amp; isA(EVENTX18,r_0127_0005__continue)
+      &amp; arg0(EVENTX18) = r_0127_0002__That
       &amp; restriction(CONNX1) = CONJX15
-      &amp; isA(CONJX15,r__or_0127_0011)
+      &amp; isA(CONJX15,r_0127_0011__or)
       &amp; conj1(CONJX15) = EVENTX8
-      &amp; isA(EVENTX8,r__being_0127_0009)
+      &amp; isA(EVENTX8,r_0127_0009__being)
       &amp; catenative(EVENTX8) = CATENATIVEX5
       &amp; conj2(CONJX15) = EVENTX14
-      &amp; isA(EVENTX14,r__being_0127_0014)
+      &amp; isA(EVENTX14,r_0127_0014__being)
       &amp; catenative(EVENTX14) = CATENATIVEX10 ) ).
 
 

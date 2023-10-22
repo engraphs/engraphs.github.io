@@ -129,13 +129,13 @@ Very soon you find you are moving along .
 </svg>
 <br>
 <pre>
-arc(r__soon_0010_0002,r__Very_0010_0001,quality1).
-arc(r__find_0010_0004,r__soon_0010_0002,tmp1).
-arc(r__find_0010_0004,r__you_0010_0003,arg0).
-arc(r__find_0010_0004,r__are_0010_0006,arg1).
-arc(r__are_0010_0006,r__moving_0010_0007,catenative).
-arc(r__moving_0010_0007,r__you_0010_0003,arg0).
-arc(r__moving_0010_0007,r__along_0010_0008,clr_dir2).
+arc(r_0010_0002__soon,r_0010_0001__Very,quality1).
+arc(r_0010_0004__find,r_0010_0002__soon,tmp1).
+arc(r_0010_0004__find,r_0010_0003__you,arg0).
+arc(r_0010_0004__find,r_0010_0006__are,arg1).
+arc(r_0010_0006__are,r_0010_0007__moving,catenative).
+arc(r_0010_0007__moving,r_0010_0003__you,arg0).
+arc(r_0010_0007__moving,r_0010_0008__along,clr_dir2).
 
 </pre>
 <br>
@@ -143,20 +143,20 @@ arc(r__moving_0010_0007,r__along_0010_0008,clr_dir2).
 fof(id_10_A_stories_09_M14,axiom,
     ? [STATEX3,CATENATIVEX5,HEARERX4,EVENTX9,EVENTX8,EVENTX7,QUALITYX1,QUALITYX6,QUALITYX2] :
       ( STATEX3 = EVENTX8
-      &amp; isA(EVENTX8,r__are_0010_0006)
+      &amp; isA(EVENTX8,r_0010_0006__are)
       &amp; catenative(EVENTX8) = CATENATIVEX5
       &amp; CATENATIVEX5 = EVENTX7
-      &amp; isA(EVENTX7,r__moving_0010_0007)
+      &amp; isA(EVENTX7,r_0010_0007__moving)
       &amp; arg0(EVENTX7) = HEARERX4
       &amp; clr_dir2(EVENTX7) = QUALITYX6
-      &amp; isA(QUALITYX1,r__soon_0010_0002)
+      &amp; isA(QUALITYX1,r_0010_0002__soon)
       &amp; quality1(QUALITYX1) = QUALITYX2
-      &amp; isA(QUALITYX2,r__Very_0010_0001)
-      &amp; isA(QUALITYX6,r__along_0010_0008)
-      &amp; HEARERX4 = r__you_0010_0003
-      &amp; isA(EVENTX9,r__find_0010_0004)
+      &amp; isA(QUALITYX2,r_0010_0001__Very)
+      &amp; isA(QUALITYX6,r_0010_0008__along)
+      &amp; HEARERX4 = r_0010_0003__you
+      &amp; isA(EVENTX9,r_0010_0004__find)
       &amp; tmp1(EVENTX9) = QUALITYX1
-      &amp; arg0(EVENTX9) = r__you_0010_0003
+      &amp; arg0(EVENTX9) = r_0010_0003__you
       &amp; arg1(EVENTX9) = STATEX3 ) ).
 
 

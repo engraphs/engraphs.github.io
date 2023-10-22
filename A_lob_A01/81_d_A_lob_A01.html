@@ -161,15 +161,15 @@ That 's a tory doctor 's reaction to the new health charges , says George Brown 
 </svg>
 <br>
 <pre>
-arc(utterance_0085_1003,r___apos_s_0085_0002,part1).
-arc(r___apos_s_0085_0002,r__That_0085_0001,arg0).
-arc(r___apos_s_0085_0002,r__reaction_0085_0007,prd2).
-arc(r__doctor_0085_0005,r__tory_0085_0004,attrib1).
-arc(r__reaction_0085_0007,r__doctor_0085_0005,genv).
-arc(r__reaction_0085_0007,r__health_0085_0011_r__charges_0085_0012,r__to_0085_0008).
-arc(r__health_0085_0011_r__charges_0085_0012,r__new_0085_0010,attrib2).
-arc(r__says_0085_0014,utterance_0085_1003,arg1).
-arc(r__says_0085_0014,r__George_0085_0015_r__Brown_0085_0016,arg0).
+arc(r_0085_0002___apos_s,r_0085_0001__That,arg0).
+arc(r_0085_0002___apos_s,r_0085_0007__reaction,prd2).
+arc(r_0085_0005__doctor,r_0085_0004__tory,attrib1).
+arc(r_0085_0007__reaction,r_0085_0005__doctor,genv).
+arc(r_0085_0007__reaction,r_0085_0011__health_charges,r_0085_0008__to).
+arc(r_0085_0011__health_charges,r_0085_0010__new,attrib2).
+arc(r_0085_0014__says,r_0085_0015__George_Brown,arg0).
+arc(r_0085_0014__says,utterance_0085_1003,arg1).
+arc(utterance_0085_1003,r_0085_0002___apos_s,part1).
 
 </pre>
 <br>
@@ -179,21 +179,21 @@ fof(id_85_A_lob_A01,axiom,
       ( STATEX1 = CONJX10
       &amp; isA(CONJX10,utterance_0085_1003)
       &amp; part1(CONJX10) = EVENTX9
-      &amp; isA(EVENTX9,r___apos_s_0085_0002)
-      &amp; arg0(EVENTX9) = r__That_0085_0001
+      &amp; isA(EVENTX9,r_0085_0002___apos_s)
+      &amp; arg0(EVENTX9) = r_0085_0001__That
       &amp; prd2(EVENTX9) = ENTITYX4
-      &amp; isA(ENTITYX4,r__reaction_0085_0007)
+      &amp; isA(ENTITYX4,r_0085_0007__reaction)
       &amp; genv(ENTITYX4) = ENTITYX5
-      &amp; r__to_0085_0008(ENTITYX4) = ENTITYX7
-      &amp; isA(ENTITYX5,r__doctor_0085_0005)
+      &amp; r_0085_0008__to(ENTITYX4) = ENTITYX7
+      &amp; isA(ENTITYX5,r_0085_0005__doctor)
       &amp; attrib1(ENTITYX5) = ATTRIBX6
-      &amp; isA(ENTITYX7,r__health_0085_0011_r__charges_0085_0012)
+      &amp; isA(ENTITYX7,r_0085_0011__health_charges)
       &amp; attrib2(ENTITYX7) = ATTRIBX8
-      &amp; isA(ATTRIBX6,r__tory_0085_0004)
-      &amp; isA(ATTRIBX8,r__new_0085_0010)
-      &amp; isA(EVENTX11,r__says_0085_0014)
+      &amp; isA(ATTRIBX6,r_0085_0004__tory)
+      &amp; isA(ATTRIBX8,r_0085_0010__new)
+      &amp; isA(EVENTX11,r_0085_0014__says)
       &amp; arg1(EVENTX11) = STATEX1
-      &amp; arg0(EVENTX11) = r__George_0085_0015_r__Brown_0085_0016 ) ).
+      &amp; arg0(EVENTX11) = r_0085_0015__George_Brown ) ).
 
 
 </pre>

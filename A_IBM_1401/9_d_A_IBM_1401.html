@@ -96,23 +96,23 @@ What Is A Stored Program Machine ?
 </svg>
 <br>
 <pre>
-arc(question_0014_1002,r__Is_0014_0002,scope).
-arc(r__Is_0014_0002,r__What_0014_0001,prd2).
-arc(r__Is_0014_0002,r__Program_0014_0005_r__Machine_0014_0006,arg0).
-arc(r__Program_0014_0005_r__Machine_0014_0006,r__Stored_0014_0004,attrib2).
+arc(question_0014_1002,r_0014_0002__Is,scope).
+arc(r_0014_0002__Is,r_0014_0001__What,prd2).
+arc(r_0014_0002__Is,r_0014_0005__Program_Machine,arg0).
+arc(r_0014_0005__Program_Machine,r_0014_0004__Stored,attrib2).
 
 </pre>
 <br>
 <pre>
 fof(id_14_A_IBM_1401,axiom,
     ? [OPERATORX2,EVENTX6,ENTITYX3,ENTITYX4,ATTRIBX5] :
-      ( isA(ENTITYX3,r__What_0014_0001)
-      &amp; isA(ENTITYX4,r__Program_0014_0005_r__Machine_0014_0006)
+      ( isA(ENTITYX3,r_0014_0001__What)
+      &amp; isA(ENTITYX4,r_0014_0005__Program_Machine)
       &amp; attrib2(ENTITYX4) = ATTRIBX5
-      &amp; isA(ATTRIBX5,r__Stored_0014_0004)
+      &amp; isA(ATTRIBX5,r_0014_0004__Stored)
       &amp; isA(OPERATORX2,question_0014_1002)
       &amp; scope(OPERATORX2) = EVENTX6
-      &amp; isA(EVENTX6,r__Is_0014_0002)
+      &amp; isA(EVENTX6,r_0014_0002__Is)
       &amp; prd2(EVENTX6) = ENTITYX3
       &amp; arg0(EVENTX6) = ENTITYX4 ) ).
 

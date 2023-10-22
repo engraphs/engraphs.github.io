@@ -122,28 +122,28 @@ Somebody detected us , made a decision , aimed a gun . &rdquo;
 </svg>
 <br>
 <pre>
-arc(r__detected_0115_0002,r__Somebody_0115_0001,arg0).
-arc(r__detected_0115_0002,r__us_0115_0003,arg1).
-arc(r__made_0115_0005,r__Somebody_0115_0001,arg0).
-arc(r__made_0115_0005,r__decision_0115_0007,arg1).
-arc(r__aimed_0115_0009,r__Somebody_0115_0001,arg0).
-arc(r__aimed_0115_0009,r__gun_0115_0011,arg1).
+arc(r_0115_0002__detected,r_0115_0001__Somebody,arg0).
+arc(r_0115_0002__detected,r_0115_0003__us,arg1).
+arc(r_0115_0005__made,r_0115_0001__Somebody,arg0).
+arc(r_0115_0005__made,r_0115_0007__decision,arg1).
+arc(r_0115_0009__aimed,r_0115_0001__Somebody,arg0).
+arc(r_0115_0009__aimed,r_0115_0011__gun,arg1).
 
 </pre>
 <br>
 <pre>
 fof(id_115_A_DICK_1952,axiom,
     ? [EVENTX5,EVENTX3,EVENTX1,ENTITYX4,ENTITYX2] :
-      ( isA(ENTITYX2,r__decision_0115_0007)
-      &amp; isA(ENTITYX4,r__gun_0115_0011)
-      &amp; isA(EVENTX1,r__detected_0115_0002)
-      &amp; arg0(EVENTX1) = r__Somebody_0115_0001
-      &amp; arg1(EVENTX1) = r__us_0115_0003
-      &amp; isA(EVENTX3,r__made_0115_0005)
-      &amp; arg0(EVENTX3) = r__Somebody_0115_0001
+      ( isA(ENTITYX2,r_0115_0007__decision)
+      &amp; isA(ENTITYX4,r_0115_0011__gun)
+      &amp; isA(EVENTX1,r_0115_0002__detected)
+      &amp; arg0(EVENTX1) = r_0115_0001__Somebody
+      &amp; arg1(EVENTX1) = r_0115_0003__us
+      &amp; isA(EVENTX3,r_0115_0005__made)
+      &amp; arg0(EVENTX3) = r_0115_0001__Somebody
       &amp; arg1(EVENTX3) = ENTITYX2
-      &amp; isA(EVENTX5,r__aimed_0115_0009)
-      &amp; arg0(EVENTX5) = r__Somebody_0115_0001
+      &amp; isA(EVENTX5,r_0115_0009__aimed)
+      &amp; arg0(EVENTX5) = r_0115_0001__Somebody
       &amp; arg1(EVENTX5) = ENTITYX4 ) ).
 
 

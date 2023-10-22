@@ -108,8 +108,8 @@
 <!-- 0140_0012_cnt -->
 <g id="node7" class="node">
 <title>0140_0012_cnt</title>
-<ellipse fill="none" stroke="black" cx="252.01" cy="-366" rx="76.09" ry="18"/>
-<text text-anchor="middle" x="252.01" y="-362.3" font-family="fixed" font-size="14.00">although_[cnt]</text>
+<ellipse fill="none" stroke="black" cx="252.01" cy="-366" rx="71.49" ry="18"/>
+<text text-anchor="middle" x="252.01" y="-362.3" font-family="fixed" font-size="14.00">although[cnt]</text>
 </g>
 <!-- 0140_0012_cnt&#45;&gt;0140_0003 -->
 <g id="edge6" class="edge">
@@ -181,17 +181,17 @@
 </svg>
 <br>
 <pre>
-arc(r__have_0140_0003,r__I_0140_0002,arg0).
-arc(r__have_0140_0003,r__picture_0140_0004,arg1).
-arc(r__picture_0140_0004,r__Tower_0140_0006_r__Bridge_0140_0007,r__of_0140_0005).
-arc(r__picture_0140_0004,r__home_0140_0009,r__at_0140_0008).
-arc(r__picture_0140_0004,r__wall_0140_0011,r__on_0140_0010).
-arc(r__although_0140_0012_cnt,r__have_0140_0003,scope).
-arc(r__although_0140_0012_cnt,r__have_0140_0014,restriction).
-arc(r__have_0140_0014,r__not_0140_0015,catenative).
-arc(r__not_0140_0015,r__seen_0140_0016,scope).
-arc(r__seen_0140_0016,r__I_0140_0002,arg0).
-arc(r__seen_0140_0016,r__yet_0140_0017,tmp3).
+arc(r_0140_0003__have,r_0140_0002__I,arg0).
+arc(r_0140_0003__have,r_0140_0004__picture,arg1).
+arc(r_0140_0004__picture,r_0140_0006__Tower_Bridge,r_0140_0005__of).
+arc(r_0140_0004__picture,r_0140_0009__home,r_0140_0008__at).
+arc(r_0140_0004__picture,r_0140_0011__wall,r_0140_0010__on).
+arc(r_0140_0012__although_cnt,r_0140_0003__have,scope).
+arc(r_0140_0012__although_cnt,r_0140_0014__have,restriction).
+arc(r_0140_0014__have,r_0140_0015__not,catenative).
+arc(r_0140_0015__not,r_0140_0016__seen,scope).
+arc(r_0140_0016__seen,r_0140_0002__I,arg0).
+arc(r_0140_0016__seen,r_0140_0017__yet,tmp3).
 
 </pre>
 <br>
@@ -199,26 +199,26 @@ arc(r__seen_0140_0016,r__yet_0140_0017,tmp3).
 fof(id_140_A_LooseChange,axiom,
     ? [CATENATIVEX6,SPEAKERX5,CONNX4,EVENTX10,OPERATORX8,EVENTX9,EVENTX11,ENTITYX1,ENTITYX2,ENTITYX3,QUALITYX7] :
       ( CATENATIVEX6 = OPERATORX8
-      &amp; isA(OPERATORX8,r__not_0140_0015)
+      &amp; isA(OPERATORX8,r_0140_0015__not)
       &amp; scope(OPERATORX8) = EVENTX9
-      &amp; isA(EVENTX9,r__seen_0140_0016)
+      &amp; isA(EVENTX9,r_0140_0016__seen)
       &amp; arg0(EVENTX9) = SPEAKERX5
       &amp; tmp3(EVENTX9) = QUALITYX7
-      &amp; isA(ENTITYX1,r__picture_0140_0004)
-      &amp; r__of_0140_0005(ENTITYX1) = r__Tower_0140_0006_r__Bridge_0140_0007
-      &amp; r__at_0140_0008(ENTITYX1) = ENTITYX2
-      &amp; r__on_0140_0010(ENTITYX1) = ENTITYX3
-      &amp; isA(ENTITYX2,r__home_0140_0009)
-      &amp; isA(ENTITYX3,r__wall_0140_0011)
-      &amp; SPEAKERX5 = r__I_0140_0002
-      &amp; isA(QUALITYX7,r__yet_0140_0017)
-      &amp; isA(CONNX4,r__although_0140_0012_cnt)
+      &amp; isA(ENTITYX1,r_0140_0004__picture)
+      &amp; r_0140_0005__of(ENTITYX1) = r_0140_0006__Tower_Bridge
+      &amp; r_0140_0008__at(ENTITYX1) = ENTITYX2
+      &amp; r_0140_0010__on(ENTITYX1) = ENTITYX3
+      &amp; isA(ENTITYX2,r_0140_0009__home)
+      &amp; isA(ENTITYX3,r_0140_0011__wall)
+      &amp; SPEAKERX5 = r_0140_0002__I
+      &amp; isA(QUALITYX7,r_0140_0017__yet)
+      &amp; isA(CONNX4,r_0140_0012__although_cnt)
       &amp; scope(CONNX4) = EVENTX11
-      &amp; isA(EVENTX11,r__have_0140_0003)
-      &amp; arg0(EVENTX11) = r__I_0140_0002
+      &amp; isA(EVENTX11,r_0140_0003__have)
+      &amp; arg0(EVENTX11) = r_0140_0002__I
       &amp; arg1(EVENTX11) = ENTITYX1
       &amp; restriction(CONNX4) = EVENTX10
-      &amp; isA(EVENTX10,r__have_0140_0014)
+      &amp; isA(EVENTX10,r_0140_0014__have)
       &amp; catenative(EVENTX10) = CATENATIVEX6 ) ).
 
 

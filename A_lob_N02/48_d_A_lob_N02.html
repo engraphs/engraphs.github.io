@@ -103,7 +103,7 @@ Piers could hardly have spoken with more contempt .
 <title>0088_0005&#45;&gt;0088_0008</title>
 <path fill="none" stroke="black" d="M79.61,-174.68C84.65,-168.81 90.36,-162.13 95.5,-156 102.42,-147.74 109.92,-138.65 116.58,-130.5"/>
 <polygon fill="black" stroke="black" points="119.31,-132.7 122.92,-122.74 113.88,-128.27 119.31,-132.7"/>
-<text text-anchor="middle" x="145.5" y="-144.8" font-family="fixed" font-size="14.00">with_[mnr]</text>
+<text text-anchor="middle" x="142" y="-144.8" font-family="fixed" font-size="14.00">with[mnr]</text>
 </g>
 <!-- 0088_0007 -->
 <g id="node7" class="node">
@@ -122,12 +122,12 @@ Piers could hardly have spoken with more contempt .
 </svg>
 <br>
 <pre>
-arc(r__could_0088_0002,r__have_0088_0004,scope).
-arc(r__hardly_0088_0003,r__could_0088_0002,scope).
-arc(r__have_0088_0004,r__spoken_0088_0005,catenative).
-arc(r__spoken_0088_0005,r__Piers_0088_0001,arg0).
-arc(r__spoken_0088_0005,r__contempt_0088_0008,r__with_0088_0006_mnr).
-arc(r__contempt_0088_0008,r__more_0088_0007,attrib1).
+arc(r_0088_0002__could,r_0088_0004__have,scope).
+arc(r_0088_0003__hardly,r_0088_0002__could,scope).
+arc(r_0088_0004__have,r_0088_0005__spoken,catenative).
+arc(r_0088_0005__spoken,r_0088_0001__Piers,arg0).
+arc(r_0088_0005__spoken,r_0088_0008__contempt,r_0088_0006__with_mnr).
+arc(r_0088_0008__contempt,r_0088_0007__more,attrib1).
 
 </pre>
 <br>
@@ -135,17 +135,17 @@ arc(r__contempt_0088_0008,r__more_0088_0007,attrib1).
 fof(id_88_A_lob_N02,axiom,
     ? [CATENATIVEX3,OPERATORX1,OPERATORX2,EVENTX7,EVENTX6,ENTITYX4,ATTRIBX5] :
       ( CATENATIVEX3 = EVENTX6
-      &amp; isA(EVENTX6,r__spoken_0088_0005)
-      &amp; arg0(EVENTX6) = r__Piers_0088_0001
-      &amp; r__with_0088_0006_mnr(EVENTX6) = ENTITYX4
-      &amp; isA(ENTITYX4,r__contempt_0088_0008)
+      &amp; isA(EVENTX6,r_0088_0005__spoken)
+      &amp; arg0(EVENTX6) = r_0088_0001__Piers
+      &amp; r_0088_0006__with_mnr(EVENTX6) = ENTITYX4
+      &amp; isA(ENTITYX4,r_0088_0008__contempt)
       &amp; attrib1(ENTITYX4) = ATTRIBX5
-      &amp; isA(ATTRIBX5,r__more_0088_0007)
-      &amp; isA(OPERATORX1,r__hardly_0088_0003)
+      &amp; isA(ATTRIBX5,r_0088_0007__more)
+      &amp; isA(OPERATORX1,r_0088_0003__hardly)
       &amp; scope(OPERATORX1) = OPERATORX2
-      &amp; isA(OPERATORX2,r__could_0088_0002)
+      &amp; isA(OPERATORX2,r_0088_0002__could)
       &amp; scope(OPERATORX2) = EVENTX7
-      &amp; isA(EVENTX7,r__have_0088_0004)
+      &amp; isA(EVENTX7,r_0088_0004__have)
       &amp; catenative(EVENTX7) = CATENATIVEX3 ) ).
 
 

@@ -91,7 +91,7 @@ No similar increases were detected in rural sites .
 <title>0065_0005&#45;&gt;0065_0008</title>
 <path fill="none" stroke="black" d="M186.44,-173.8C186.44,-162.16 186.44,-146.55 186.44,-133.24"/>
 <polygon fill="black" stroke="black" points="189.94,-133.18 186.44,-123.18 182.94,-133.18 189.94,-133.18"/>
-<text text-anchor="middle" x="211.44" y="-144.8" font-family="fixed" font-size="14.00">in_[loc]</text>
+<text text-anchor="middle" x="207.94" y="-144.8" font-family="fixed" font-size="14.00">in[loc]</text>
 </g>
 <!-- 0065_0007 -->
 <g id="node6" class="node">
@@ -130,13 +130,13 @@ No similar increases were detected in rural sites .
 </svg>
 <br>
 <pre>
-arc(quantificational_r__No_0065_0001,r__increases_0065_0003,restriction).
-arc(quantificational_r__No_0065_0001,r__were_0065_0004,scope).
-arc(r__increases_0065_0003,r__similar_0065_0002,attrib2).
-arc(r__were_0065_0004,r__detected_0065_0005,catenative).
-arc(r__detected_0065_0005,r__increases_0065_0003,arg1).
-arc(r__detected_0065_0005,r__sites_0065_0008,r__in_0065_0006_loc).
-arc(r__sites_0065_0008,r__rural_0065_0007,attrib1).
+arc(r_0065_0001__quantificational__No,r_0065_0003__increases,restriction).
+arc(r_0065_0001__quantificational__No,r_0065_0004__were,scope).
+arc(r_0065_0003__increases,r_0065_0002__similar,attrib2).
+arc(r_0065_0004__were,r_0065_0005__detected,catenative).
+arc(r_0065_0005__detected,r_0065_0003__increases,arg1).
+arc(r_0065_0005__detected,r_0065_0008__sites,r_0065_0006__in_loc).
+arc(r_0065_0008__sites,r_0065_0007__rural,attrib1).
 
 </pre>
 <br>
@@ -144,19 +144,19 @@ arc(r__sites_0065_0008,r__rural_0065_0007,attrib1).
 fof(id_65_A_Hedgehog,axiom,
     ? [CATENATIVEX4,QUANTX2,EVENTX9,EVENTX8,ENTITYX1,ENTITYX6,ATTRIBX7,ATTRIBX3] :
       ( CATENATIVEX4 = EVENTX8
-      &amp; isA(EVENTX8,r__detected_0065_0005)
+      &amp; isA(EVENTX8,r_0065_0005__detected)
       &amp; arg1(EVENTX8) = ENTITYX1
-      &amp; r__in_0065_0006_loc(EVENTX8) = ENTITYX6
-      &amp; isA(ENTITYX6,r__sites_0065_0008)
+      &amp; r_0065_0006__in_loc(EVENTX8) = ENTITYX6
+      &amp; isA(ENTITYX6,r_0065_0008__sites)
       &amp; attrib1(ENTITYX6) = ATTRIBX7
-      &amp; isA(ATTRIBX3,r__similar_0065_0002)
-      &amp; isA(ATTRIBX7,r__rural_0065_0007)
-      &amp; isA(QUANTX2,quantificational_r__No_0065_0001)
+      &amp; isA(ATTRIBX3,r_0065_0002__similar)
+      &amp; isA(ATTRIBX7,r_0065_0007__rural)
+      &amp; isA(QUANTX2,r_0065_0001__quantificational__No)
       &amp; restriction(QUANTX2) = ENTITYX1
-      &amp; isA(ENTITYX1,r__increases_0065_0003)
+      &amp; isA(ENTITYX1,r_0065_0003__increases)
       &amp; attrib2(ENTITYX1) = ATTRIBX3
       &amp; scope(QUANTX2) = EVENTX9
-      &amp; isA(EVENTX9,r__were_0065_0004)
+      &amp; isA(EVENTX9,r_0065_0004__were)
       &amp; catenative(EVENTX9) = CATENATIVEX4 ) ).
 
 

@@ -77,7 +77,7 @@
 <title>0162_0004&#45;&gt;0162_0006</title>
 <path fill="none" stroke="black" d="M182.17,-87.41C185.33,-81.64 188.81,-75.08 191.8,-69 195.55,-61.34 199.39,-52.88 202.78,-45.14"/>
 <polygon fill="black" stroke="black" points="206.05,-46.39 206.8,-35.83 199.63,-43.62 206.05,-46.39"/>
-<text text-anchor="middle" x="223.8" y="-57.8" font-family="fixed" font-size="14.00">to_[dir]</text>
+<text text-anchor="middle" x="220.3" y="-57.8" font-family="fixed" font-size="14.00">to[dir]</text>
 </g>
 <!-- 0162_0009 -->
 <g id="node5" class="node">
@@ -122,12 +122,12 @@
 </svg>
 <br>
 <pre>
-arc(utterance_0162_1003,r__am_0162_0003,part1).
-arc(r__am_0162_0003,r__going_0162_0004,catenative).
-arc(r__going_0162_0004,r__I_0162_0002,arg0).
-arc(r__going_0162_0004,r__Egypt_0162_0006,r__to_0162_0005_dir).
-arc(r__cried_0162_0009,utterance_0162_1003,arg1).
-arc(r__cried_0162_0009,r__Swallow_0162_0011,arg0).
+arc(r_0162_0003__am,r_0162_0004__going,catenative).
+arc(r_0162_0004__going,r_0162_0002__I,arg0).
+arc(r_0162_0004__going,r_0162_0006__Egypt,r_0162_0005__to_dir).
+arc(r_0162_0009__cried,r_0162_0011__Swallow,arg0).
+arc(r_0162_0009__cried,utterance_0162_1003,arg1).
+arc(utterance_0162_1003,r_0162_0003__am,part1).
 
 </pre>
 <br>
@@ -137,14 +137,14 @@ fof(id_162_A_WILDE_1_1888,axiom,
       ( STATEX1 = CONJX7
       &amp; isA(CONJX7,utterance_0162_1003)
       &amp; part1(CONJX7) = EVENTX6
-      &amp; isA(EVENTX6,r__am_0162_0003)
+      &amp; isA(EVENTX6,r_0162_0003__am)
       &amp; catenative(EVENTX6) = CATENATIVEX4
       &amp; CATENATIVEX4 = EVENTX5
-      &amp; isA(EVENTX5,r__going_0162_0004)
-      &amp; arg0(EVENTX5) = r__I_0162_0002
-      &amp; r__to_0162_0005_dir(EVENTX5) = r__Egypt_0162_0006
-      &amp; isA(ENTITYX8,r__Swallow_0162_0011)
-      &amp; isA(EVENTX9,r__cried_0162_0009)
+      &amp; isA(EVENTX5,r_0162_0004__going)
+      &amp; arg0(EVENTX5) = r_0162_0002__I
+      &amp; r_0162_0005__to_dir(EVENTX5) = r_0162_0006__Egypt
+      &amp; isA(ENTITYX8,r_0162_0011__Swallow)
+      &amp; isA(EVENTX9,r_0162_0009__cried)
       &amp; arg1(EVENTX9) = STATEX1
       &amp; arg0(EVENTX9) = ENTITYX8 ) ).
 

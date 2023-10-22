@@ -121,8 +121,8 @@ We drafted in a couple of other guys from Acorn as the team grew .
 <!-- 0019_0011_tmp -->
 <g id="node8" class="node">
 <title>0019_0011_tmp</title>
-<ellipse fill="none" stroke="black" cx="179" cy="-366" rx="50.09" ry="18"/>
-<text text-anchor="middle" x="179" y="-362.3" font-family="fixed" font-size="14.00">as_[tmp]</text>
+<ellipse fill="none" stroke="black" cx="179" cy="-366" rx="46.29" ry="18"/>
+<text text-anchor="middle" x="179" y="-362.3" font-family="fixed" font-size="14.00">as[tmp]</text>
 </g>
 <!-- 0019_0011_tmp&#45;&gt;0019_0002 -->
 <g id="edge7" class="edge">
@@ -161,37 +161,37 @@ We drafted in a couple of other guys from Acorn as the team grew .
 </svg>
 <br>
 <pre>
-arc(r__drafted_0019_0002,r__We_0019_0001,arg0).
-arc(r__drafted_0019_0002,r__in_0019_0003,dir3).
-arc(r__drafted_0019_0002,r__couple_0019_0005,arg1).
-arc(r__couple_0019_0005,r__guys_0019_0008,r__of_0019_0006).
-arc(r__guys_0019_0008,r__other_0019_0007,attrib1).
-arc(r__guys_0019_0008,r__Acorn_0019_0010,r__from_0019_0009).
-arc(r__as_0019_0011_tmp,r__drafted_0019_0002,scope).
-arc(r__as_0019_0011_tmp,r__grew_0019_0014,restriction).
-arc(r__grew_0019_0014,r__team_0019_0013,arg0).
+arc(r_0019_0002__drafted,r_0019_0001__We,arg0).
+arc(r_0019_0002__drafted,r_0019_0003__in,dir3).
+arc(r_0019_0002__drafted,r_0019_0005__couple,arg1).
+arc(r_0019_0005__couple,r_0019_0008__guys,r_0019_0006__of).
+arc(r_0019_0008__guys,r_0019_0007__other,attrib1).
+arc(r_0019_0008__guys,r_0019_0010__Acorn,r_0019_0009__from).
+arc(r_0019_0011__as_tmp,r_0019_0002__drafted,scope).
+arc(r_0019_0011__as_tmp,r_0019_0014__grew,restriction).
+arc(r_0019_0014__grew,r_0019_0013__team,arg0).
 
 </pre>
 <br>
 <pre>
 fof(id_19_A_PaulFellows,axiom,
     ? [CONNX5,EVENTX7,EVENTX8,ENTITYX2,ENTITYX6,ENTITYX3,QUALITYX1,ATTRIBX4] :
-      ( isA(ENTITYX2,r__couple_0019_0005)
-      &amp; r__of_0019_0006(ENTITYX2) = ENTITYX3
-      &amp; isA(ENTITYX3,r__guys_0019_0008)
+      ( isA(ENTITYX2,r_0019_0005__couple)
+      &amp; r_0019_0006__of(ENTITYX2) = ENTITYX3
+      &amp; isA(ENTITYX3,r_0019_0008__guys)
       &amp; attrib1(ENTITYX3) = ATTRIBX4
-      &amp; r__from_0019_0009(ENTITYX3) = r__Acorn_0019_0010
-      &amp; isA(ENTITYX6,r__team_0019_0013)
-      &amp; isA(QUALITYX1,r__in_0019_0003)
-      &amp; isA(ATTRIBX4,r__other_0019_0007)
-      &amp; isA(CONNX5,r__as_0019_0011_tmp)
+      &amp; r_0019_0009__from(ENTITYX3) = r_0019_0010__Acorn
+      &amp; isA(ENTITYX6,r_0019_0013__team)
+      &amp; isA(QUALITYX1,r_0019_0003__in)
+      &amp; isA(ATTRIBX4,r_0019_0007__other)
+      &amp; isA(CONNX5,r_0019_0011__as_tmp)
       &amp; scope(CONNX5) = EVENTX8
-      &amp; isA(EVENTX8,r__drafted_0019_0002)
-      &amp; arg0(EVENTX8) = r__We_0019_0001
+      &amp; isA(EVENTX8,r_0019_0002__drafted)
+      &amp; arg0(EVENTX8) = r_0019_0001__We
       &amp; dir3(EVENTX8) = QUALITYX1
       &amp; arg1(EVENTX8) = ENTITYX2
       &amp; restriction(CONNX5) = EVENTX7
-      &amp; isA(EVENTX7,r__grew_0019_0014)
+      &amp; isA(EVENTX7,r_0019_0014__grew)
       &amp; arg0(EVENTX7) = ENTITYX6 ) ).
 
 

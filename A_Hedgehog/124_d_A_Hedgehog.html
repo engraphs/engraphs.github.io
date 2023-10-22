@@ -44,15 +44,15 @@ The things that prey on the hedgehog are sometimes things that we treasure .
 <!-- 0145_0004 -->
 <g id="node2" class="node">
 <title>0145_0004</title>
-<ellipse fill="none" stroke="black" cx="96.9" cy="-105" rx="30.59" ry="18"/>
-<text text-anchor="middle" x="96.9" y="-101.3" font-family="fixed" font-size="14.00">prey</text>
+<ellipse fill="none" stroke="black" cx="94.9" cy="-105" rx="30.59" ry="18"/>
+<text text-anchor="middle" x="94.9" y="-101.3" font-family="fixed" font-size="14.00">prey</text>
 </g>
 <!-- 0145_0004&#45;&gt;0145_0002 -->
 <g id="edge1" class="edge">
 <title>0145_0004&#45;&gt;0145_0002</title>
-<path fill="none" stroke="black" d="M110.1,-88.41C120.93,-75.63 136.42,-57.34 148.79,-42.74"/>
-<polygon fill="black" stroke="black" points="151.49,-44.96 155.28,-35.07 146.15,-40.44 151.49,-44.96"/>
-<text text-anchor="middle" x="159.4" y="-57.8" font-family="fixed" font-size="14.00">[arg0]</text>
+<path fill="none" stroke="black" d="M108.47,-88.41C119.59,-75.63 135.52,-57.34 148.23,-42.74"/>
+<polygon fill="black" stroke="black" points="150.98,-44.91 154.91,-35.07 145.7,-40.31 150.98,-44.91"/>
+<text text-anchor="middle" x="158.4" y="-57.8" font-family="fixed" font-size="14.00">[arg0]</text>
 </g>
 <!-- 0145_0007 -->
 <g id="node3" class="node">
@@ -63,9 +63,9 @@ The things that prey on the hedgehog are sometimes things that we treasure .
 <!-- 0145_0004&#45;&gt;0145_0007 -->
 <g id="edge2" class="edge">
 <title>0145_0004&#45;&gt;0145_0007</title>
-<path fill="none" stroke="black" d="M79.26,-90.01C73.1,-84.17 66.77,-76.91 62.9,-69 59.54,-62.15 57.66,-54.18 56.64,-46.65"/>
-<polygon fill="black" stroke="black" points="60.1,-46.08 55.7,-36.44 53.13,-46.72 60.1,-46.08"/>
-<text text-anchor="middle" x="88.9" y="-57.8" font-family="fixed" font-size="14.00">on_[clr]</text>
+<path fill="none" stroke="black" d="M79.19,-89.25C73.87,-83.43 68.4,-76.37 64.9,-69 61.57,-61.99 59.46,-53.89 58.13,-46.28"/>
+<polygon fill="black" stroke="black" points="61.6,-45.78 56.76,-36.35 54.66,-46.74 61.6,-45.78"/>
+<text text-anchor="middle" x="87.9" y="-57.8" font-family="fixed" font-size="14.00">on[clr]</text>
 </g>
 <!-- 0145_0008 -->
 <g id="node4" class="node">
@@ -136,30 +136,30 @@ The things that prey on the hedgehog are sometimes things that we treasure .
 </svg>
 <br>
 <pre>
-arc(r__prey_0145_0004,r__things_0145_0002,arg0).
-arc(r__prey_0145_0004,r__hedgehog_0145_0007,r__on_0145_0005_clr).
-arc(r__are_0145_0008,r__things_0145_0002,arg0).
-arc(r__are_0145_0008,r__sometimes_0145_0009,tmp3).
-arc(r__are_0145_0008,r__things_0145_0010,prd2).
-arc(r__treasure_0145_0013,r__things_0145_0010,arg1).
-arc(r__treasure_0145_0013,r__we_0145_0012,arg0).
+arc(r_0145_0004__prey,r_0145_0002__things,arg0).
+arc(r_0145_0004__prey,r_0145_0007__hedgehog,r_0145_0005__on_clr).
+arc(r_0145_0008__are,r_0145_0002__things,arg0).
+arc(r_0145_0008__are,r_0145_0009__sometimes,tmp3).
+arc(r_0145_0008__are,r_0145_0010__things,prd2).
+arc(r_0145_0013__treasure,r_0145_0010__things,arg1).
+arc(r_0145_0013__treasure,r_0145_0012__we,arg0).
 
 </pre>
 <br>
 <pre>
 fof(id_145_A_Hedgehog,axiom,
     ? [EVENTX7,EVENTX6,EVENTX3,ENTITYX1,ENTITYX5,ENTITYX2,QUALITYX4] :
-      ( isA(EVENTX3,r__prey_0145_0004)
+      ( isA(EVENTX3,r_0145_0004__prey)
       &amp; arg0(EVENTX3) = ENTITYX1
-      &amp; r__on_0145_0005_clr(EVENTX3) = ENTITYX2
-      &amp; isA(ENTITYX1,r__things_0145_0002)
-      &amp; isA(ENTITYX2,r__hedgehog_0145_0007)
-      &amp; isA(EVENTX6,r__treasure_0145_0013)
+      &amp; r_0145_0005__on_clr(EVENTX3) = ENTITYX2
+      &amp; isA(ENTITYX1,r_0145_0002__things)
+      &amp; isA(ENTITYX2,r_0145_0007__hedgehog)
+      &amp; isA(EVENTX6,r_0145_0013__treasure)
       &amp; arg1(EVENTX6) = ENTITYX5
-      &amp; arg0(EVENTX6) = r__we_0145_0012
-      &amp; isA(ENTITYX5,r__things_0145_0010)
-      &amp; isA(QUALITYX4,r__sometimes_0145_0009)
-      &amp; isA(EVENTX7,r__are_0145_0008)
+      &amp; arg0(EVENTX6) = r_0145_0012__we
+      &amp; isA(ENTITYX5,r_0145_0010__things)
+      &amp; isA(QUALITYX4,r_0145_0009__sometimes)
+      &amp; isA(EVENTX7,r_0145_0008__are)
       &amp; arg0(EVENTX7) = ENTITYX1
       &amp; tmp3(EVENTX7) = QUALITYX4
       &amp; prd2(EVENTX7) = ENTITYX5 ) ).

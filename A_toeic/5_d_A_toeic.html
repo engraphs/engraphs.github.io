@@ -65,7 +65,7 @@ Almost like an eggplant , but deeper purple .
 <title>z_0009_1003&#45;&gt;0009_0004</title>
 <path fill="none" stroke="black" d="M52,-86.8C52,-75.16 52,-59.55 52,-46.24"/>
 <polygon fill="black" stroke="black" points="55.5,-46.18 52,-36.18 48.5,-46.18 55.5,-46.18"/>
-<text text-anchor="middle" x="88.5" y="-57.8" font-family="fixed" font-size="14.00">like_[prd2]</text>
+<text text-anchor="middle" x="85.5" y="-57.8" font-family="fixed" font-size="14.00">like[prd2]</text>
 </g>
 <!-- 0009_0006 -->
 <g id="node4" class="node">
@@ -123,28 +123,28 @@ Almost like an eggplant , but deeper purple .
 </svg>
 <br>
 <pre>
-arc(r__Almost_0009_0001,z_0009_1003,scope).
-arc(r__but_0009_0006,r__Almost_0009_0001,conj1).
-arc(r__but_0009_0006,z_0009_1007,conj2).
-arc(r__purple_0009_0008,r__deeper_0009_0007,attrib1).
-arc(z_0009_1003,r__eggplant_0009_0004,r__like_0009_0002_prd2).
-arc(z_0009_1007,r__purple_0009_0008,prd2).
+arc(r_0009_0001__Almost,z_0009_1003,scope).
+arc(r_0009_0006__but,r_0009_0001__Almost,conj1).
+arc(r_0009_0006__but,z_0009_1007,conj2).
+arc(r_0009_0008__purple,r_0009_0007__deeper,attrib1).
+arc(z_0009_1003,r_0009_0004__eggplant,r_0009_0002__like_prd2).
+arc(z_0009_1007,r_0009_0008__purple,prd2).
 
 </pre>
 <br>
 <pre>
 fof(id_9_A_toeic,axiom,
     ? [CONJX9,EVENTX8,OPERATORX1,EVENTX4,ENTITYX5,ENTITYX2,ATTRIBX6] :
-      ( isA(ENTITYX2,r__eggplant_0009_0004)
-      &amp; isA(ENTITYX5,r__purple_0009_0008)
+      ( isA(ENTITYX2,r_0009_0004__eggplant)
+      &amp; isA(ENTITYX5,r_0009_0008__purple)
       &amp; attrib1(ENTITYX5) = ATTRIBX6
-      &amp; isA(ATTRIBX6,r__deeper_0009_0007)
-      &amp; isA(CONJX9,r__but_0009_0006)
+      &amp; isA(ATTRIBX6,r_0009_0007__deeper)
+      &amp; isA(CONJX9,r_0009_0006__but)
       &amp; conj1(CONJX9) = OPERATORX1
-      &amp; isA(OPERATORX1,r__Almost_0009_0001)
+      &amp; isA(OPERATORX1,r_0009_0001__Almost)
       &amp; scope(OPERATORX1) = EVENTX4
       &amp; isA(EVENTX4,z_0009_1003)
-      &amp; r__like_0009_0002_prd2(EVENTX4) = ENTITYX2
+      &amp; r_0009_0002__like_prd2(EVENTX4) = ENTITYX2
       &amp; conj2(CONJX9) = EVENTX8
       &amp; isA(EVENTX8,z_0009_1007)
       &amp; prd2(EVENTX8) = ENTITYX5 ) ).

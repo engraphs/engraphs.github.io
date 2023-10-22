@@ -103,7 +103,7 @@
 <title>0171_0006&#45;&gt;0171_0009</title>
 <path fill="none" stroke="black" d="M167.74,-179.38C178.82,-172.66 192.95,-163.99 205.35,-156 219.99,-146.56 236.04,-135.77 249.44,-126.64"/>
 <polygon fill="black" stroke="black" points="251.54,-129.44 257.82,-120.91 247.59,-123.67 251.54,-129.44"/>
-<text text-anchor="middle" x="252.35" y="-144.8" font-family="fixed" font-size="14.00">in_[loc]</text>
+<text text-anchor="middle" x="248.85" y="-144.8" font-family="fixed" font-size="14.00">in[loc]</text>
 </g>
 <!-- 0171_0012 -->
 <g id="node7" class="node">
@@ -148,14 +148,14 @@
 </svg>
 <br>
 <pre>
-arc(utterance_0171_1003,r__am_0171_0006,part1).
-arc(r__day_0171_0003,r__Friday_0171_0004,prn3).
-arc(r__am_0171_0006,r__day_0171_0003,tmp).
-arc(r__am_0171_0006,r__I_0171_0005,arg0).
-arc(r__am_0171_0006,r__here_0171_0007,loc4).
-arc(r__am_0171_0006,r__London_0171_0009,r__in_0171_0008_loc).
-arc(r__said_0171_0013,utterance_0171_1003,arg1).
-arc(r__said_0171_0013,r__she_0171_0012,arg0).
+arc(r_0171_0003__day,r_0171_0004__Friday,prn3).
+arc(r_0171_0006__am,r_0171_0003__day,tmp).
+arc(r_0171_0006__am,r_0171_0005__I,arg0).
+arc(r_0171_0006__am,r_0171_0007__here,loc4).
+arc(r_0171_0006__am,r_0171_0009__London,r_0171_0008__in_loc).
+arc(r_0171_0013__said,r_0171_0012__she,arg0).
+arc(r_0171_0013__said,utterance_0171_1003,arg1).
+arc(utterance_0171_1003,r_0171_0006__am,part1).
 
 </pre>
 <br>
@@ -165,17 +165,17 @@ fof(id_171_A_LooseChange,axiom,
       ( STATEX1 = CONJX7
       &amp; isA(CONJX7,utterance_0171_1003)
       &amp; part1(CONJX7) = EVENTX6
-      &amp; isA(EVENTX6,r__am_0171_0006)
+      &amp; isA(EVENTX6,r_0171_0006__am)
       &amp; tmp(EVENTX6) = ENTITYX4
-      &amp; arg0(EVENTX6) = r__I_0171_0005
+      &amp; arg0(EVENTX6) = r_0171_0005__I
       &amp; loc4(EVENTX6) = QUALITYX5
-      &amp; r__in_0171_0008_loc(EVENTX6) = r__London_0171_0009
-      &amp; isA(ENTITYX4,r__day_0171_0003)
-      &amp; prn3(ENTITYX4) = r__Friday_0171_0004
-      &amp; isA(QUALITYX5,r__here_0171_0007)
-      &amp; isA(EVENTX8,r__said_0171_0013)
+      &amp; r_0171_0008__in_loc(EVENTX6) = r_0171_0009__London
+      &amp; isA(ENTITYX4,r_0171_0003__day)
+      &amp; prn3(ENTITYX4) = r_0171_0004__Friday
+      &amp; isA(QUALITYX5,r_0171_0007__here)
+      &amp; isA(EVENTX8,r_0171_0013__said)
       &amp; arg1(EVENTX8) = STATEX1
-      &amp; arg0(EVENTX8) = r__she_0171_0012 ) ).
+      &amp; arg0(EVENTX8) = r_0171_0012__she ) ).
 
 
 </pre>

@@ -83,20 +83,20 @@ Schools and Seminars
 </svg>
 <br>
 <pre>
-arc(r__and_0081_0002,r__Schools_0081_0001,conj1).
-arc(r__and_0081_0002,r__Seminars_0081_0003,conj2).
-arc(z_0081_1006,r__and_0081_0002,z_0081_1002).
+arc(r_0081_0002__and,r_0081_0001__Schools,conj1).
+arc(r_0081_0002__and,r_0081_0003__Seminars,conj2).
+arc(z_0081_1006,r_0081_0002__and,z_0081_1002).
 
 </pre>
 <br>
 <pre>
 fof(id_81_A_IBM_1401,axiom,
     ? [EVENTX7,ENTITYX3,ENTITYX4,ENTITYX5] :
-      ( isA(ENTITYX3,r__and_0081_0002)
+      ( isA(ENTITYX3,r_0081_0002__and)
       &amp; conj1(ENTITYX3) = ENTITYX4
       &amp; conj2(ENTITYX3) = ENTITYX5
-      &amp; isA(ENTITYX4,r__Schools_0081_0001)
-      &amp; isA(ENTITYX5,r__Seminars_0081_0003)
+      &amp; isA(ENTITYX4,r_0081_0001__Schools)
+      &amp; isA(ENTITYX5,r_0081_0003__Seminars)
       &amp; isA(EVENTX7,z_0081_1006)
       &amp; z_0081_1002(EVENTX7) = ENTITYX3 ) ).
 

@@ -64,7 +64,7 @@ Write a report for your teacher suggesting what should be shown on the poster an
 <title>0026_0001&#45;&gt;0026_0006</title>
 <path fill="none" stroke="black" d="M139.35,-695.8C139.35,-684.16 139.35,-668.55 139.35,-655.24"/>
 <polygon fill="black" stroke="black" points="142.85,-655.18 139.35,-645.18 135.85,-655.18 142.85,-655.18"/>
-<text text-anchor="middle" x="173.85" y="-666.8" font-family="fixed" font-size="14.00">for_[arg2]</text>
+<text text-anchor="middle" x="170.35" y="-666.8" font-family="fixed" font-size="14.00">for[arg2]</text>
 </g>
 <!-- 0026_0005 -->
 <g id="node4" class="node">
@@ -161,7 +161,7 @@ Write a report for your teacher suggesting what should be shown on the poster an
 <title>0026_0011&#45;&gt;0026_0014</title>
 <path fill="none" stroke="black" d="M261.75,-260.8C262.03,-249.16 262.39,-233.55 262.71,-220.24"/>
 <polygon fill="black" stroke="black" points="266.21,-220.26 262.94,-210.18 259.21,-220.09 266.21,-220.26"/>
-<text text-anchor="middle" x="290.85" y="-231.8" font-family="fixed" font-size="14.00">on_[loc]</text>
+<text text-anchor="middle" x="287.35" y="-231.8" font-family="fixed" font-size="14.00">on[loc]</text>
 </g>
 <!-- 0026_0015 -->
 <g id="node12" class="node">
@@ -350,30 +350,30 @@ Write a report for your teacher suggesting what should be shown on the poster an
 </svg>
 <br>
 <pre>
-arc(cnt_0026_1006,r__Write_0026_0001,scope).
-arc(cnt_0026_1006,r__and_0026_0015,restriction).
+arc(cnt_0026_1006,r_0026_0001__Write,scope).
+arc(cnt_0026_1006,r_0026_0015__and,restriction).
 arc(imperative_0026_1002,cnt_0026_1006,scope).
-arc(question_0026_1010,r__should_0026_0009,scope).
-arc(question_0026_1021,r__could_0026_0021,scope).
-arc(r__Write_0026_0001,r__report_0026_0003,arg1).
-arc(r__Write_0026_0001,r__teacher_0026_0006,r__for_0026_0004_arg2).
-arc(r__teacher_0026_0006,r__your_0026_0005,genv).
-arc(r__suggesting_0026_0007,question_0026_1010,arg1).
-arc(r__should_0026_0009,r__be_0026_0010,scope).
-arc(r__be_0026_0010,r__shown_0026_0011,catenative).
-arc(r__shown_0026_0011,r__what_0026_0008,arg1).
-arc(r__shown_0026_0011,r__poster_0026_0014,r__on_0026_0012_loc).
-arc(r__and_0026_0015,r__suggesting_0026_0007,conj1).
-arc(r__and_0026_0015,r__saying_0026_0016,conj2).
-arc(r__saying_0026_0016,question_0026_1021,arg1).
-arc(r__information_0026_0018,r__encourage_0026_0025,emb3).
-arc(r__could_0026_0021,r__contain_0026_0022,scope).
-arc(r__contain_0026_0022,r__information_0026_0018,arg1).
-arc(r__contain_0026_0022,r__poster_0026_0020,arg0).
-arc(r__encourage_0026_0025,r__students_0026_0026,arg2).
-arc(r__encourage_0026_0025,r__read_0026_0028,arg1).
-arc(r__read_0026_0028,r__students_0026_0026,arg0).
-arc(r__read_0026_0028,r__book_0026_0030,arg1).
+arc(question_0026_1010,r_0026_0009__should,scope).
+arc(question_0026_1021,r_0026_0021__could,scope).
+arc(r_0026_0001__Write,r_0026_0003__report,arg1).
+arc(r_0026_0001__Write,r_0026_0006__teacher,r_0026_0004__for_arg2).
+arc(r_0026_0006__teacher,r_0026_0005__your,genv).
+arc(r_0026_0007__suggesting,question_0026_1010,arg1).
+arc(r_0026_0009__should,r_0026_0010__be,scope).
+arc(r_0026_0010__be,r_0026_0011__shown,catenative).
+arc(r_0026_0011__shown,r_0026_0008__what,arg1).
+arc(r_0026_0011__shown,r_0026_0014__poster,r_0026_0012__on_loc).
+arc(r_0026_0015__and,r_0026_0007__suggesting,conj1).
+arc(r_0026_0015__and,r_0026_0016__saying,conj2).
+arc(r_0026_0016__saying,question_0026_1021,arg1).
+arc(r_0026_0018__information,r_0026_0025__encourage,emb3).
+arc(r_0026_0021__could,r_0026_0022__contain,scope).
+arc(r_0026_0022__contain,r_0026_0018__information,arg1).
+arc(r_0026_0022__contain,r_0026_0020__poster,arg0).
+arc(r_0026_0025__encourage,r_0026_0026__students,arg2).
+arc(r_0026_0025__encourage,r_0026_0028__read,arg1).
+arc(r_0026_0028__read,r_0026_0026__students,arg0).
+arc(r_0026_0028__read,r_0026_0030__book,arg1).
 
 </pre>
 <br>
@@ -383,54 +383,54 @@ fof(id_26_A_fce_0101_2000_06,axiom,
       ( STATEX8 = OPERATORX10
       &amp; isA(OPERATORX10,question_0026_1010)
       &amp; scope(OPERATORX10) = OPERATORX12
-      &amp; isA(OPERATORX12,r__should_0026_0009)
+      &amp; isA(OPERATORX12,r_0026_0009__should)
       &amp; scope(OPERATORX12) = EVENTX17
-      &amp; isA(EVENTX17,r__be_0026_0010)
+      &amp; isA(EVENTX17,r_0026_0010__be)
       &amp; catenative(EVENTX17) = CATENATIVEX13
       &amp; CATENATIVEX13 = EVENTX16
-      &amp; isA(EVENTX16,r__shown_0026_0011)
+      &amp; isA(EVENTX16,r_0026_0011__shown)
       &amp; arg1(EVENTX16) = ENTITYX11
-      &amp; r__on_0026_0012_loc(EVENTX16) = ENTITYX15
+      &amp; r_0026_0012__on_loc(EVENTX16) = ENTITYX15
       &amp; STATEX19 = OPERATORX21
       &amp; isA(OPERATORX21,question_0026_1021)
       &amp; scope(OPERATORX21) = OPERATORX32
-      &amp; isA(OPERATORX32,r__could_0026_0021)
+      &amp; isA(OPERATORX32,r_0026_0021__could)
       &amp; scope(OPERATORX32) = EVENTX33
-      &amp; isA(EVENTX33,r__contain_0026_0022)
+      &amp; isA(EVENTX33,r_0026_0022__contain)
       &amp; arg1(EVENTX33) = ENTITYX22
       &amp; arg0(EVENTX33) = ENTITYX31
       &amp; STATEX23 = EVENTX30
-      &amp; isA(EVENTX30,r__encourage_0026_0025)
+      &amp; isA(EVENTX30,r_0026_0025__encourage)
       &amp; arg2(EVENTX30) = ENTITYX26
       &amp; arg1(EVENTX30) = STATEX27
       &amp; STATEX27 = EVENTX29
-      &amp; isA(EVENTX29,r__read_0026_0028)
+      &amp; isA(EVENTX29,r_0026_0028__read)
       &amp; arg0(EVENTX29) = ENTITYX26
       &amp; arg1(EVENTX29) = ENTITYX28
-      &amp; isA(ENTITYX4,r__report_0026_0003)
-      &amp; isA(ENTITYX5,r__teacher_0026_0006)
-      &amp; genv(ENTITYX5) = r__your_0026_0005
-      &amp; isA(ENTITYX11,r__what_0026_0008)
-      &amp; isA(ENTITYX15,r__poster_0026_0014)
-      &amp; isA(ENTITYX22,r__information_0026_0018)
+      &amp; isA(ENTITYX4,r_0026_0003__report)
+      &amp; isA(ENTITYX5,r_0026_0006__teacher)
+      &amp; genv(ENTITYX5) = r_0026_0005__your
+      &amp; isA(ENTITYX11,r_0026_0008__what)
+      &amp; isA(ENTITYX15,r_0026_0014__poster)
+      &amp; isA(ENTITYX22,r_0026_0018__information)
       &amp; emb3(ENTITYX22) = STATEX23
-      &amp; isA(ENTITYX26,r__students_0026_0026)
-      &amp; isA(ENTITYX28,r__book_0026_0030)
-      &amp; isA(ENTITYX31,r__poster_0026_0020)
+      &amp; isA(ENTITYX26,r_0026_0026__students)
+      &amp; isA(ENTITYX28,r_0026_0030__book)
+      &amp; isA(ENTITYX31,r_0026_0020__poster)
       &amp; isA(OPERATORX2,imperative_0026_1002)
       &amp; scope(OPERATORX2) = CONNX7
       &amp; isA(CONNX7,cnt_0026_1006)
       &amp; scope(CONNX7) = EVENTX36
-      &amp; isA(EVENTX36,r__Write_0026_0001)
+      &amp; isA(EVENTX36,r_0026_0001__Write)
       &amp; arg1(EVENTX36) = ENTITYX4
-      &amp; r__for_0026_0004_arg2(EVENTX36) = ENTITYX5
+      &amp; r_0026_0004__for_arg2(EVENTX36) = ENTITYX5
       &amp; restriction(CONNX7) = CONJX35
-      &amp; isA(CONJX35,r__and_0026_0015)
+      &amp; isA(CONJX35,r_0026_0015__and)
       &amp; conj1(CONJX35) = EVENTX18
-      &amp; isA(EVENTX18,r__suggesting_0026_0007)
+      &amp; isA(EVENTX18,r_0026_0007__suggesting)
       &amp; arg1(EVENTX18) = STATEX8
       &amp; conj2(CONJX35) = EVENTX34
-      &amp; isA(EVENTX34,r__saying_0026_0016)
+      &amp; isA(EVENTX34,r_0026_0016__saying)
       &amp; arg1(EVENTX34) = STATEX19 ) ).
 
 

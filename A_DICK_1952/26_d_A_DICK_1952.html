@@ -168,14 +168,14 @@ Atmosphere poisoned , water vaporized , all the land fused . &rdquo;
 </svg>
 <br>
 <pre>
-arc(quantificational_r__all_0043_0007,z_0043_1015,restriction).
-arc(quantificational_r__all_0043_0007,z_0043_1016,scope).
-arc(r__poisoned_0043_0002,r__Atmosphere_0043_0001,arg1).
-arc(r__vaporized_0043_0005,r__water_0043_0004,arg1).
-arc(r__fused_0043_0010,z_0043_1015,arg1).
-arc(z_0043_1015,r__land_0043_0009,nlyr2).
-arc(z_0043_1016,r__Atmosphere_0043_0001,conj1).
-arc(z_0043_1016,r__water_0043_0004,conj2).
+arc(r_0043_0002__poisoned,r_0043_0001__Atmosphere,arg1).
+arc(r_0043_0005__vaporized,r_0043_0004__water,arg1).
+arc(r_0043_0007__quantificational__all,z_0043_1015,restriction).
+arc(r_0043_0007__quantificational__all,z_0043_1016,scope).
+arc(r_0043_0010__fused,z_0043_1015,arg1).
+arc(z_0043_1015,r_0043_0009__land,nlyr2).
+arc(z_0043_1016,r_0043_0001__Atmosphere,conj1).
+arc(z_0043_1016,r_0043_0004__water,conj2).
 arc(z_0043_1016,z_0043_1015,conj3).
 arc(z_0043_1017,z_0043_1016,z_0043_1002).
 
@@ -184,8 +184,8 @@ arc(z_0043_1017,z_0043_1016,z_0043_1002).
 <pre>
 fof(id_43_A_DICK_1952,axiom,
     ? [EVENTX18,QUANTX11,EVENTX14,EVENTX9,EVENTX6,ENTITYX3,ENTITYX4,ENTITYX7,ENTITYX10,ENTITYX12] :
-      ( isA(QUANTX11,quantificational_r__all_0043_0007)
-      &amp; isA(EVENTX14,r__fused_0043_0010)
+      ( isA(QUANTX11,r_0043_0007__quantificational__all)
+      &amp; isA(EVENTX14,r_0043_0010__fused)
       &amp; arg1(EVENTX14) = ENTITYX10
       &amp; isA(ENTITYX10,z_0043_1015)
       &amp; nlyr2(ENTITYX10) = ENTITYX12
@@ -195,13 +195,13 @@ fof(id_43_A_DICK_1952,axiom,
       &amp; conj1(ENTITYX3) = ENTITYX4
       &amp; conj2(ENTITYX3) = ENTITYX7
       &amp; conj3(ENTITYX3) = ENTITYX10
-      &amp; isA(EVENTX6,r__poisoned_0043_0002)
+      &amp; isA(EVENTX6,r_0043_0002__poisoned)
       &amp; arg1(EVENTX6) = ENTITYX4
-      &amp; isA(ENTITYX4,r__Atmosphere_0043_0001)
-      &amp; isA(EVENTX9,r__vaporized_0043_0005)
+      &amp; isA(ENTITYX4,r_0043_0001__Atmosphere)
+      &amp; isA(EVENTX9,r_0043_0005__vaporized)
       &amp; arg1(EVENTX9) = ENTITYX7
-      &amp; isA(ENTITYX7,r__water_0043_0004)
-      &amp; isA(ENTITYX12,r__land_0043_0009)
+      &amp; isA(ENTITYX7,r_0043_0004__water)
+      &amp; isA(ENTITYX12,r_0043_0009__land)
       &amp; isA(EVENTX18,z_0043_1017)
       &amp; z_0043_1002(EVENTX18) = ENTITYX3 ) ).
 

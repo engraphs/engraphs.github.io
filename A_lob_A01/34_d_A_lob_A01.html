@@ -77,7 +77,7 @@ But the final decision remained with the British government .
 <title>0037_0005&#45;&gt;0037_0009</title>
 <path fill="none" stroke="black" d="M127.14,-174.21C136.72,-161.87 149.9,-144.89 160.71,-130.97"/>
 <polygon fill="black" stroke="black" points="163.71,-132.8 167.08,-122.76 158.19,-128.51 163.71,-132.8"/>
-<text text-anchor="middle" x="184.6" y="-144.8" font-family="fixed" font-size="14.00">with_[loc]</text>
+<text text-anchor="middle" x="181.1" y="-144.8" font-family="fixed" font-size="14.00">with[loc]</text>
 </g>
 <!-- 0037_0008 -->
 <g id="node5" class="node">
@@ -96,25 +96,25 @@ But the final decision remained with the British government .
 </svg>
 <br>
 <pre>
-arc(r__decision_0037_0004,r__final_0037_0003,attrib2).
-arc(r__remained_0037_0005,r__decision_0037_0004,arg0).
-arc(r__remained_0037_0005,r__government_0037_0009,r__with_0037_0006_loc).
-arc(r__government_0037_0009,r__British_0037_0008,attrib2).
+arc(r_0037_0004__decision,r_0037_0003__final,attrib2).
+arc(r_0037_0005__remained,r_0037_0004__decision,arg0).
+arc(r_0037_0005__remained,r_0037_0009__government,r_0037_0006__with_loc).
+arc(r_0037_0009__government,r_0037_0008__British,attrib2).
 
 </pre>
 <br>
 <pre>
 fof(id_37_A_lob_A01,axiom,
     ? [EVENTX5,ENTITYX1,ENTITYX3,ATTRIBX4,ATTRIBX2] :
-      ( isA(ENTITYX1,r__decision_0037_0004)
+      ( isA(ENTITYX1,r_0037_0004__decision)
       &amp; attrib2(ENTITYX1) = ATTRIBX2
-      &amp; isA(ENTITYX3,r__government_0037_0009)
+      &amp; isA(ENTITYX3,r_0037_0009__government)
       &amp; attrib2(ENTITYX3) = ATTRIBX4
-      &amp; isA(ATTRIBX2,r__final_0037_0003)
-      &amp; isA(ATTRIBX4,r__British_0037_0008)
-      &amp; isA(EVENTX5,r__remained_0037_0005)
+      &amp; isA(ATTRIBX2,r_0037_0003__final)
+      &amp; isA(ATTRIBX4,r_0037_0008__British)
+      &amp; isA(EVENTX5,r_0037_0005__remained)
       &amp; arg0(EVENTX5) = ENTITYX1
-      &amp; r__with_0037_0006_loc(EVENTX5) = ENTITYX3 ) ).
+      &amp; r_0037_0006__with_loc(EVENTX5) = ENTITYX3 ) ).
 
 
 </pre>

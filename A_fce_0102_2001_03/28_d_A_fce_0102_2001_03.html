@@ -187,17 +187,17 @@ Young people are eating a less healthy diet nowadays than their grandparents did
 </svg>
 <br>
 <pre>
-arc(r__people_0032_0002,r__Young_0032_0001,attrib1).
-arc(r__are_0032_0003,r__eating_0032_0004,catenative).
-arc(r__eating_0032_0004,r__people_0032_0002,arg0).
-arc(r__eating_0032_0004,r__diet_0032_0008,arg1).
-arc(r__eating_0032_0004,r__nowadays_0032_0009,tmp3).
-arc(r__less_0032_0006,z_0032_1010,r__than_0032_0010).
-arc(r__healthy_0032_0007,r__less_0032_0006,quality1).
-arc(r__diet_0032_0008,r__healthy_0032_0007,attrib2).
-arc(r__grandparents_0032_0012,r__their_0032_0011,genv).
-arc(r__did_0032_0013,r__grandparents_0032_0012,arg0).
-arc(r__did_0032_0013,z_0032_1010,arg1).
+arc(r_0032_0002__people,r_0032_0001__Young,attrib1).
+arc(r_0032_0003__are,r_0032_0004__eating,catenative).
+arc(r_0032_0004__eating,r_0032_0002__people,arg0).
+arc(r_0032_0004__eating,r_0032_0008__diet,arg1).
+arc(r_0032_0004__eating,r_0032_0009__nowadays,tmp3).
+arc(r_0032_0006__less,z_0032_1010,r_0032_0010__than).
+arc(r_0032_0007__healthy,r_0032_0006__less,quality1).
+arc(r_0032_0008__diet,r_0032_0007__healthy,attrib2).
+arc(r_0032_0012__grandparents,r_0032_0011__their,genv).
+arc(r_0032_0013__did,r_0032_0012__grandparents,arg0).
+arc(r_0032_0013__did,z_0032_1010,arg1).
 
 </pre>
 <br>
@@ -205,27 +205,27 @@ arc(r__did_0032_0013,z_0032_1010,arg1).
 fof(id_32_A_fce_0102_2001_03,axiom,
     ? [CATENATIVEX3,EVENTX13,EVENTX12,EVENTX9,ENTITYX1,ENTITYX4,ENTITYX7,ENTITYX8,ATTRIBX5,ATTRIBX2,QUALITYX11,QUALITYX6] :
       ( CATENATIVEX3 = EVENTX12
-      &amp; isA(EVENTX12,r__eating_0032_0004)
+      &amp; isA(EVENTX12,r_0032_0004__eating)
       &amp; arg0(EVENTX12) = ENTITYX1
       &amp; arg1(EVENTX12) = ENTITYX4
       &amp; tmp3(EVENTX12) = QUALITYX11
-      &amp; isA(ENTITYX1,r__people_0032_0002)
+      &amp; isA(ENTITYX1,r_0032_0002__people)
       &amp; attrib1(ENTITYX1) = ATTRIBX2
-      &amp; isA(ENTITYX4,r__diet_0032_0008)
+      &amp; isA(ENTITYX4,r_0032_0008__diet)
       &amp; attrib2(ENTITYX4) = ATTRIBX5
-      &amp; isA(EVENTX9,r__did_0032_0013)
+      &amp; isA(EVENTX9,r_0032_0013__did)
       &amp; arg1(EVENTX9) = ENTITYX7
       &amp; arg0(EVENTX9) = ENTITYX8
       &amp; isA(ENTITYX7,z_0032_1010)
-      &amp; isA(ENTITYX8,r__grandparents_0032_0012)
-      &amp; genv(ENTITYX8) = r__their_0032_0011
-      &amp; isA(ATTRIBX2,r__Young_0032_0001)
-      &amp; isA(ATTRIBX5,r__healthy_0032_0007)
+      &amp; isA(ENTITYX8,r_0032_0012__grandparents)
+      &amp; genv(ENTITYX8) = r_0032_0011__their
+      &amp; isA(ATTRIBX2,r_0032_0001__Young)
+      &amp; isA(ATTRIBX5,r_0032_0007__healthy)
       &amp; quality1(ATTRIBX5) = QUALITYX6
-      &amp; isA(QUALITYX6,r__less_0032_0006)
-      &amp; r__than_0032_0010(QUALITYX6) = ENTITYX7
-      &amp; isA(QUALITYX11,r__nowadays_0032_0009)
-      &amp; isA(EVENTX13,r__are_0032_0003)
+      &amp; isA(QUALITYX6,r_0032_0006__less)
+      &amp; r_0032_0010__than(QUALITYX6) = ENTITYX7
+      &amp; isA(QUALITYX11,r_0032_0009__nowadays)
+      &amp; isA(EVENTX13,r_0032_0003__are)
       &amp; catenative(EVENTX13) = CATENATIVEX3 ) ).
 
 

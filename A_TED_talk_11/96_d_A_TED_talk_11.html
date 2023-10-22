@@ -109,11 +109,11 @@ I think this is rather important .
 </svg>
 <br>
 <pre>
-arc(r__think_0132_0002,r__I_0132_0001,arg0).
-arc(r__think_0132_0002,r__is_0132_0004,arg1).
-arc(r__is_0132_0004,r__this_0132_0003,arg0).
-arc(r__is_0132_0004,r__important_0132_0006,prd2).
-arc(r__important_0132_0006,r__rather_0132_0005,quality1).
+arc(r_0132_0002__think,r_0132_0001__I,arg0).
+arc(r_0132_0002__think,r_0132_0004__is,arg1).
+arc(r_0132_0004__is,r_0132_0003__this,arg0).
+arc(r_0132_0004__is,r_0132_0006__important,prd2).
+arc(r_0132_0006__important,r_0132_0005__rather,quality1).
 
 </pre>
 <br>
@@ -121,14 +121,14 @@ arc(r__important_0132_0006,r__rather_0132_0005,quality1).
 fof(id_132_A_TED_talk_11,axiom,
     ? [STATEX1,EVENTX5,EVENTX4,ATTRIBX2,QUALITYX3] :
       ( STATEX1 = EVENTX4
-      &amp; isA(EVENTX4,r__is_0132_0004)
-      &amp; arg0(EVENTX4) = r__this_0132_0003
+      &amp; isA(EVENTX4,r_0132_0004__is)
+      &amp; arg0(EVENTX4) = r_0132_0003__this
       &amp; prd2(EVENTX4) = ATTRIBX2
-      &amp; isA(ATTRIBX2,r__important_0132_0006)
+      &amp; isA(ATTRIBX2,r_0132_0006__important)
       &amp; quality1(ATTRIBX2) = QUALITYX3
-      &amp; isA(QUALITYX3,r__rather_0132_0005)
-      &amp; isA(EVENTX5,r__think_0132_0002)
-      &amp; arg0(EVENTX5) = r__I_0132_0001
+      &amp; isA(QUALITYX3,r_0132_0005__rather)
+      &amp; isA(EVENTX5,r_0132_0002__think)
+      &amp; arg0(EVENTX5) = r_0132_0001__I
       &amp; arg1(EVENTX5) = STATEX1 ) ).
 
 

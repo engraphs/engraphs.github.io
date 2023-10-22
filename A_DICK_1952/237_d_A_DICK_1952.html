@@ -64,7 +64,7 @@ Dorle reached for his hand weapon .
 <title>0297_0002&#45;&gt;0297_0005_0297_0006</title>
 <path fill="none" stroke="black" d="M67.89,-175.8C86.3,-162.54 113.25,-143.13 134.06,-128.14"/>
 <polygon fill="black" stroke="black" points="136.21,-130.91 142.28,-122.22 132.12,-125.23 136.21,-130.91"/>
-<text text-anchor="middle" x="140.3" y="-144.8" font-family="fixed" font-size="14.00">for_[clr]</text>
+<text text-anchor="middle" x="136.8" y="-144.8" font-family="fixed" font-size="14.00">for[clr]</text>
 </g>
 <!-- 0297_0005_0297_0006&#45;&gt;0297_0001 -->
 <g id="edge3" class="edge">
@@ -77,21 +77,21 @@ Dorle reached for his hand weapon .
 </svg>
 <br>
 <pre>
-arc(r__reached_0297_0002,r__Dorle_0297_0001,arg0).
-arc(r__reached_0297_0002,r__hand_0297_0005_r__weapon_0297_0006,r__for_0297_0003_clr).
-arc(r__hand_0297_0005_r__weapon_0297_0006,r__Dorle_0297_0001,genv).
+arc(r_0297_0002__reached,r_0297_0001__Dorle,arg0).
+arc(r_0297_0002__reached,r_0297_0005__hand_weapon,r_0297_0003__for_clr).
+arc(r_0297_0005__hand_weapon,r_0297_0001__Dorle,genv).
 
 </pre>
 <br>
 <pre>
 fof(id_297_A_DICK_1952,axiom,
     ? [DORLEX2,EVENTX3,ENTITYX1] :
-      ( isA(ENTITYX1,r__hand_0297_0005_r__weapon_0297_0006)
+      ( isA(ENTITYX1,r_0297_0005__hand_weapon)
       &amp; genv(ENTITYX1) = DORLEX2
-      &amp; DORLEX2 = r__Dorle_0297_0001
-      &amp; isA(EVENTX3,r__reached_0297_0002)
-      &amp; arg0(EVENTX3) = r__Dorle_0297_0001
-      &amp; r__for_0297_0003_clr(EVENTX3) = ENTITYX1 ) ).
+      &amp; DORLEX2 = r_0297_0001__Dorle
+      &amp; isA(EVENTX3,r_0297_0002__reached)
+      &amp; arg0(EVENTX3) = r_0297_0001__Dorle
+      &amp; r_0297_0003__for_clr(EVENTX3) = ENTITYX1 ) ).
 
 
 </pre>

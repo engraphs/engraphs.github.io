@@ -187,17 +187,17 @@ We got Nick Reeves who did the disk filing system stuff and Brian Cockburn , tha
 </svg>
 <br>
 <pre>
-arc(r__got_0020_0002,r__We_0020_0001,arg0).
-arc(r__got_0020_0002,r__and_0020_0012,arg1).
-arc(r__got_0020_0002,r__was_0020_0017,prn5).
-arc(r__did_0020_0006,r__Nick_0020_0003_r__Reeves_0020_0004,arg0).
-arc(r__did_0020_0006,r__disk_0020_0008_r__filing_0020_0009_r__system_0020_0010_r__stuff_0020_0011,arg1).
-arc(r__and_0020_0012,r__Nick_0020_0003_r__Reeves_0020_0004,conj1).
-arc(r__and_0020_0012,r__Brian_0020_0013_r__Cockburn_0020_0014,conj2).
-arc(r__was_0020_0017,r__that_0020_0016,arg0).
-arc(r__was_0020_0017,r__team_0020_0019,prd2).
-arc(r__team_0020_0019,r__guys_0020_0023,prn4).
-arc(r__guys_0020_0023,r__just_0020_0021,quality1).
+arc(r_0020_0002__got,r_0020_0001__We,arg0).
+arc(r_0020_0002__got,r_0020_0012__and,arg1).
+arc(r_0020_0002__got,r_0020_0017__was,prn5).
+arc(r_0020_0006__did,r_0020_0003__Nick_Reeves,arg0).
+arc(r_0020_0006__did,r_0020_0008__disk_filing_system_stuff,arg1).
+arc(r_0020_0012__and,r_0020_0003__Nick_Reeves,conj1).
+arc(r_0020_0012__and,r_0020_0013__Brian_Cockburn,conj2).
+arc(r_0020_0017__was,r_0020_0016__that,arg0).
+arc(r_0020_0017__was,r_0020_0019__team,prd2).
+arc(r_0020_0019__team,r_0020_0023__guys,prn4).
+arc(r_0020_0023__guys,r_0020_0021__just,quality1).
 
 </pre>
 <br>
@@ -205,24 +205,24 @@ arc(r__guys_0020_0023,r__just_0020_0021,quality1).
 fof(id_20_A_PaulFellows,axiom,
     ? [EVENTX4,EVENTX9,EVENTX8,EVENTX3,ENTITYX1,ENTITYX5,ENTITYX6,ENTITYX2,QUALITYX7] :
       ( EVENTX4 = EVENTX8
-      &amp; isA(EVENTX8,r__was_0020_0017)
-      &amp; arg0(EVENTX8) = r__that_0020_0016
+      &amp; isA(EVENTX8,r_0020_0017__was)
+      &amp; arg0(EVENTX8) = r_0020_0016__that
       &amp; prd2(EVENTX8) = ENTITYX5
-      &amp; isA(ENTITYX1,r__and_0020_0012)
-      &amp; conj1(ENTITYX1) = r__Nick_0020_0003_r__Reeves_0020_0004
-      &amp; conj2(ENTITYX1) = r__Brian_0020_0013_r__Cockburn_0020_0014
-      &amp; isA(ENTITYX2,r__disk_0020_0008_r__filing_0020_0009_r__system_0020_0010_r__stuff_0020_0011)
-      &amp; isA(ENTITYX5,r__team_0020_0019)
+      &amp; isA(ENTITYX1,r_0020_0012__and)
+      &amp; conj1(ENTITYX1) = r_0020_0003__Nick_Reeves
+      &amp; conj2(ENTITYX1) = r_0020_0013__Brian_Cockburn
+      &amp; isA(ENTITYX2,r_0020_0008__disk_filing_system_stuff)
+      &amp; isA(ENTITYX5,r_0020_0019__team)
       &amp; prn4(ENTITYX5) = ENTITYX6
-      &amp; isA(ENTITYX6,r__guys_0020_0023)
+      &amp; isA(ENTITYX6,r_0020_0023__guys)
       &amp; quality1(ENTITYX6) = QUALITYX7
-      &amp; isA(EVENTX3,r__did_0020_0006)
-      &amp; arg0(EVENTX3) = r__Nick_0020_0003_r__Reeves_0020_0004
+      &amp; isA(EVENTX3,r_0020_0006__did)
+      &amp; arg0(EVENTX3) = r_0020_0003__Nick_Reeves
       &amp; arg1(EVENTX3) = ENTITYX2
-      &amp; isA(r__Nick_0020_0003_r__Reeves_0020_0004,r__Nick_0020_0003_r__Reeves_0020_0004)
-      &amp; isA(QUALITYX7,r__just_0020_0021)
-      &amp; isA(EVENTX9,r__got_0020_0002)
-      &amp; arg0(EVENTX9) = r__We_0020_0001
+      &amp; isA(r_0020_0003__Nick_Reeves,r_0020_0003__Nick_Reeves)
+      &amp; isA(QUALITYX7,r_0020_0021__just)
+      &amp; isA(EVENTX9,r_0020_0002__got)
+      &amp; arg0(EVENTX9) = r_0020_0001__We
       &amp; arg1(EVENTX9) = ENTITYX1
       &amp; prn5(EVENTX9) = EVENTX4 ) ).
 

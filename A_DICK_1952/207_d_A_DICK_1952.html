@@ -103,11 +103,11 @@ This city did n't die &mdash; it was murdered . &rdquo;
 </svg>
 <br>
 <pre>
-arc(r__did_0264_0003_r__die_0264_0005,r__city_0264_0002,arg0).
-arc(r__did_0264_0003_r__die_0264_0005,r__was_0264_0008,prn6).
-arc(r__n_apos_t_0264_0004,r__did_0264_0003_r__die_0264_0005,scope).
-arc(r__was_0264_0008,r__murdered_0264_0009,catenative).
-arc(r__murdered_0264_0009,r__city_0264_0002,arg1).
+arc(r_0264_0003__did_die,r_0264_0002__city,arg0).
+arc(r_0264_0003__did_die,r_0264_0008__was,prn6).
+arc(r_0264_0004__n_apos_t,r_0264_0003__did_die,scope).
+arc(r_0264_0008__was,r_0264_0009__murdered,catenative).
+arc(r_0264_0009__murdered,r_0264_0002__city,arg1).
 
 </pre>
 <br>
@@ -115,16 +115,16 @@ arc(r__murdered_0264_0009,r__city_0264_0002,arg1).
 fof(id_264_A_DICK_1952,axiom,
     ? [EVENTX2,CATENATIVEX4,CITYX3,OPERATORX8,EVENTX9,EVENTX7,EVENTX6,CITYX1] :
       ( EVENTX2 = EVENTX7
-      &amp; isA(EVENTX7,r__was_0264_0008)
+      &amp; isA(EVENTX7,r_0264_0008__was)
       &amp; catenative(EVENTX7) = CATENATIVEX4
       &amp; CATENATIVEX4 = EVENTX6
-      &amp; isA(EVENTX6,r__murdered_0264_0009)
+      &amp; isA(EVENTX6,r_0264_0009__murdered)
       &amp; arg1(EVENTX6) = CITYX3
-      &amp; isA(CITYX1,r__city_0264_0002)
+      &amp; isA(CITYX1,r_0264_0002__city)
       &amp; CITYX3 = CITYX1
-      &amp; isA(OPERATORX8,r__n_apos_t_0264_0004)
+      &amp; isA(OPERATORX8,r_0264_0004__n_apos_t)
       &amp; scope(OPERATORX8) = EVENTX9
-      &amp; isA(EVENTX9,r__did_0264_0003_r__die_0264_0005)
+      &amp; isA(EVENTX9,r_0264_0003__did_die)
       &amp; arg0(EVENTX9) = CITYX1
       &amp; prn6(EVENTX9) = EVENTX2 ) ).
 

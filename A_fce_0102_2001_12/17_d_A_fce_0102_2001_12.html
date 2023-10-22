@@ -142,14 +142,14 @@ You have decided to enter a short story competition in an international magazine
 </svg>
 <br>
 <pre>
-arc(r__have_0018_0002,r__decided_0018_0003,catenative).
-arc(r__decided_0018_0003,r__You_0018_0001,arg0).
-arc(r__decided_0018_0003,r__enter_0018_0005,arg1).
-arc(r__enter_0018_0005,r__You_0018_0001,arg0).
-arc(r__enter_0018_0005,r__story_0018_0008_r__competition_0018_0009,arg1).
-arc(r__story_0018_0008_r__competition_0018_0009,r__short_0018_0007,attrib2).
-arc(r__story_0018_0008_r__competition_0018_0009,r__magazine_0018_0013,r__in_0018_0010).
-arc(r__magazine_0018_0013,r__international_0018_0012,attrib2).
+arc(r_0018_0002__have,r_0018_0003__decided,catenative).
+arc(r_0018_0003__decided,r_0018_0001__You,arg0).
+arc(r_0018_0003__decided,r_0018_0005__enter,arg1).
+arc(r_0018_0005__enter,r_0018_0001__You,arg0).
+arc(r_0018_0005__enter,r_0018_0008__story_competition,arg1).
+arc(r_0018_0008__story_competition,r_0018_0007__short,attrib2).
+arc(r_0018_0008__story_competition,r_0018_0013__magazine,r_0018_0010__in).
+arc(r_0018_0013__magazine,r_0018_0012__international,attrib2).
 
 </pre>
 <br>
@@ -157,21 +157,21 @@ arc(r__magazine_0018_0013,r__international_0018_0012,attrib2).
 fof(id_18_A_fce_0102_2001_12,axiom,
     ? [CATENATIVEX1,STATEX2,EVENTX9,EVENTX8,EVENTX7,ENTITYX3,ENTITYX5,ATTRIBX4,ATTRIBX6] :
       ( CATENATIVEX1 = EVENTX8
-      &amp; isA(EVENTX8,r__decided_0018_0003)
-      &amp; arg0(EVENTX8) = r__You_0018_0001
+      &amp; isA(EVENTX8,r_0018_0003__decided)
+      &amp; arg0(EVENTX8) = r_0018_0001__You
       &amp; arg1(EVENTX8) = STATEX2
       &amp; STATEX2 = EVENTX7
-      &amp; isA(EVENTX7,r__enter_0018_0005)
-      &amp; arg0(EVENTX7) = r__You_0018_0001
+      &amp; isA(EVENTX7,r_0018_0005__enter)
+      &amp; arg0(EVENTX7) = r_0018_0001__You
       &amp; arg1(EVENTX7) = ENTITYX3
-      &amp; isA(ENTITYX3,r__story_0018_0008_r__competition_0018_0009)
+      &amp; isA(ENTITYX3,r_0018_0008__story_competition)
       &amp; attrib2(ENTITYX3) = ATTRIBX4
-      &amp; r__in_0018_0010(ENTITYX3) = ENTITYX5
-      &amp; isA(ENTITYX5,r__magazine_0018_0013)
+      &amp; r_0018_0010__in(ENTITYX3) = ENTITYX5
+      &amp; isA(ENTITYX5,r_0018_0013__magazine)
       &amp; attrib2(ENTITYX5) = ATTRIBX6
-      &amp; isA(ATTRIBX4,r__short_0018_0007)
-      &amp; isA(ATTRIBX6,r__international_0018_0012)
-      &amp; isA(EVENTX9,r__have_0018_0002)
+      &amp; isA(ATTRIBX4,r_0018_0007__short)
+      &amp; isA(ATTRIBX6,r_0018_0012__international)
+      &amp; isA(EVENTX9,r_0018_0002__have)
       &amp; catenative(EVENTX9) = CATENATIVEX1 ) ).
 
 

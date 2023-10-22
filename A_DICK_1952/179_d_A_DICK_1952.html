@@ -142,14 +142,14 @@ We have no armaments at all ; you know that . &rdquo;
 </svg>
 <br>
 <pre>
-arc(quantificational_r__no_0232_0003,r__armaments_0232_0004,restriction).
-arc(quantificational_r__no_0232_0003,r__at_all_0232_0005,scope).
-arc(r__have_0232_0002,r__We_0232_0001,arg0).
-arc(r__have_0232_0002,r__armaments_0232_0004,arg1).
-arc(r__have_0232_0002,r__know_0232_0008,prn6).
-arc(r__at_all_0232_0005,r__have_0232_0002,scope).
-arc(r__know_0232_0008,r__you_0232_0007,arg0).
-arc(r__know_0232_0008,r__that_0232_0009,arg1).
+arc(r_0232_0002__have,r_0232_0001__We,arg0).
+arc(r_0232_0002__have,r_0232_0004__armaments,arg1).
+arc(r_0232_0002__have,r_0232_0008__know,prn6).
+arc(r_0232_0003__quantificational__no,r_0232_0004__armaments,restriction).
+arc(r_0232_0003__quantificational__no,r_0232_0005__at_all,scope).
+arc(r_0232_0005__at_all,r_0232_0002__have,scope).
+arc(r_0232_0008__know,r_0232_0007__you,arg0).
+arc(r_0232_0008__know,r_0232_0009__that,arg1).
 
 </pre>
 <br>
@@ -157,17 +157,17 @@ arc(r__know_0232_0008,r__that_0232_0009,arg1).
 fof(id_232_A_DICK_1952,axiom,
     ? [EVENTX4,QUANTX2,OPERATORX3,EVENTX6,EVENTX5,ENTITYX1] :
       ( EVENTX4 = EVENTX5
-      &amp; isA(EVENTX5,r__know_0232_0008)
-      &amp; arg0(EVENTX5) = r__you_0232_0007
-      &amp; arg1(EVENTX5) = r__that_0232_0009
-      &amp; isA(QUANTX2,quantificational_r__no_0232_0003)
+      &amp; isA(EVENTX5,r_0232_0008__know)
+      &amp; arg0(EVENTX5) = r_0232_0007__you
+      &amp; arg1(EVENTX5) = r_0232_0009__that
+      &amp; isA(QUANTX2,r_0232_0003__quantificational__no)
       &amp; restriction(QUANTX2) = ENTITYX1
-      &amp; isA(ENTITYX1,r__armaments_0232_0004)
+      &amp; isA(ENTITYX1,r_0232_0004__armaments)
       &amp; scope(QUANTX2) = OPERATORX3
-      &amp; isA(OPERATORX3,r__at_all_0232_0005)
+      &amp; isA(OPERATORX3,r_0232_0005__at_all)
       &amp; scope(OPERATORX3) = EVENTX6
-      &amp; isA(EVENTX6,r__have_0232_0002)
-      &amp; arg0(EVENTX6) = r__We_0232_0001
+      &amp; isA(EVENTX6,r_0232_0002__have)
+      &amp; arg0(EVENTX6) = r_0232_0001__We
       &amp; arg1(EVENTX6) = ENTITYX1
       &amp; prn6(EVENTX6) = EVENTX4 ) ).
 

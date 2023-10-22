@@ -149,15 +149,15 @@ John knelt down to make it easier to clean the bulldog .
 </svg>
 <br>
 <pre>
-arc(cnt_0008_1002,r__knelt_0008_0002,scope).
-arc(cnt_0008_1002,r__make_0008_0005,restriction).
-arc(r__knelt_0008_0002,r__John_0008_0001,arg0).
-arc(r__knelt_0008_0002,r__down_0008_0003,clr_dir3).
-arc(r__make_0008_0005,r__John_0008_0001,arg0).
-arc(r__make_0008_0005,r__easier_0008_0007,prd).
-arc(r__make_0008_0005,r__clean_0008_0009,arg1).
-arc(r__clean_0008_0009,r__John_0008_0001,arg0).
-arc(r__clean_0008_0009,r__bulldog_0008_0011,arg1).
+arc(cnt_0008_1002,r_0008_0002__knelt,scope).
+arc(cnt_0008_1002,r_0008_0005__make,restriction).
+arc(r_0008_0002__knelt,r_0008_0001__John,arg0).
+arc(r_0008_0002__knelt,r_0008_0003__down,clr_dir3).
+arc(r_0008_0005__make,r_0008_0001__John,arg0).
+arc(r_0008_0005__make,r_0008_0007__easier,prd).
+arc(r_0008_0005__make,r_0008_0009__clean,arg1).
+arc(r_0008_0009__clean,r_0008_0001__John,arg0).
+arc(r_0008_0009__clean,r_0008_0011__bulldog,arg1).
 
 </pre>
 <br>
@@ -165,20 +165,20 @@ arc(r__clean_0008_0009,r__bulldog_0008_0011,arg1).
 fof(id_8_A_stories_09_M12,axiom,
     ? [STATEX4,CONNX3,EVENTX8,EVENTX6,EVENTX9,BULLDOGX5,QUALITYX1,ATTRIBX7] :
       ( STATEX4 = EVENTX6
-      &amp; isA(EVENTX6,r__clean_0008_0009)
-      &amp; arg0(EVENTX6) = r__John_0008_0001
+      &amp; isA(EVENTX6,r_0008_0009__clean)
+      &amp; arg0(EVENTX6) = r_0008_0001__John
       &amp; arg1(EVENTX6) = BULLDOGX5
-      &amp; isA(BULLDOGX5,r__bulldog_0008_0011)
-      &amp; isA(QUALITYX1,r__down_0008_0003)
-      &amp; isA(ATTRIBX7,r__easier_0008_0007)
+      &amp; isA(BULLDOGX5,r_0008_0011__bulldog)
+      &amp; isA(QUALITYX1,r_0008_0003__down)
+      &amp; isA(ATTRIBX7,r_0008_0007__easier)
       &amp; isA(CONNX3,cnt_0008_1002)
       &amp; scope(CONNX3) = EVENTX9
-      &amp; isA(EVENTX9,r__knelt_0008_0002)
-      &amp; arg0(EVENTX9) = r__John_0008_0001
+      &amp; isA(EVENTX9,r_0008_0002__knelt)
+      &amp; arg0(EVENTX9) = r_0008_0001__John
       &amp; clr_dir3(EVENTX9) = QUALITYX1
       &amp; restriction(CONNX3) = EVENTX8
-      &amp; isA(EVENTX8,r__make_0008_0005)
-      &amp; arg0(EVENTX8) = r__John_0008_0001
+      &amp; isA(EVENTX8,r_0008_0005__make)
+      &amp; arg0(EVENTX8) = r_0008_0001__John
       &amp; arg1(EVENTX8) = STATEX4
       &amp; prd(EVENTX8) = ATTRIBX7 ) ).
 

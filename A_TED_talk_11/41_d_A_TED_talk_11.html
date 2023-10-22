@@ -122,12 +122,12 @@ We had the place crammed full of agents in T-shirts :
 </svg>
 <br>
 <pre>
-arc(r__had_0063_0002,r__We_0063_0001,arg0).
-arc(r__had_0063_0002,r__place_0063_0004,arg1).
-arc(r__had_0063_0002,r__crammed_0063_0005,prd).
-arc(r__crammed_0063_0005,r__full_0063_0006,mnr3).
-arc(r__full_0063_0006,r__agents_0063_0008,r__of_0063_0007).
-arc(r__agents_0063_0008,r__T_shirts_0063_0010,r__in_0063_0009).
+arc(r_0063_0002__had,r_0063_0001__We,arg0).
+arc(r_0063_0002__had,r_0063_0004__place,arg1).
+arc(r_0063_0002__had,r_0063_0005__crammed,prd).
+arc(r_0063_0005__crammed,r_0063_0006__full,mnr3).
+arc(r_0063_0006__full,r_0063_0008__agents,r_0063_0007__of).
+arc(r_0063_0008__agents,r_0063_0010__T_shirts,r_0063_0009__in).
 
 </pre>
 <br>
@@ -135,16 +135,16 @@ arc(r__agents_0063_0008,r__T_shirts_0063_0010,r__in_0063_0009).
 fof(id_63_A_TED_talk_11,axiom,
     ? [STATEX2,EVENTX10,EVENTX9,ENTITYX1,ENTITYX7,ENTITYX8,QUALITYX6] :
       ( STATEX2 = EVENTX9
-      &amp; isA(EVENTX9,r__crammed_0063_0005)
+      &amp; isA(EVENTX9,r_0063_0005__crammed)
       &amp; mnr3(EVENTX9) = QUALITYX6
-      &amp; isA(ENTITYX1,r__place_0063_0004)
-      &amp; isA(ENTITYX7,r__agents_0063_0008)
-      &amp; r__in_0063_0009(ENTITYX7) = ENTITYX8
-      &amp; isA(ENTITYX8,r__T_shirts_0063_0010)
-      &amp; isA(QUALITYX6,r__full_0063_0006)
-      &amp; r__of_0063_0007(QUALITYX6) = ENTITYX7
-      &amp; isA(EVENTX10,r__had_0063_0002)
-      &amp; arg0(EVENTX10) = r__We_0063_0001
+      &amp; isA(ENTITYX1,r_0063_0004__place)
+      &amp; isA(ENTITYX7,r_0063_0008__agents)
+      &amp; r_0063_0009__in(ENTITYX7) = ENTITYX8
+      &amp; isA(ENTITYX8,r_0063_0010__T_shirts)
+      &amp; isA(QUALITYX6,r_0063_0006__full)
+      &amp; r_0063_0007__of(QUALITYX6) = ENTITYX7
+      &amp; isA(EVENTX10,r_0063_0002__had)
+      &amp; arg0(EVENTX10) = r_0063_0001__We
       &amp; arg1(EVENTX10) = ENTITYX1
       &amp; prd(EVENTX10) = STATEX2 ) ).
 

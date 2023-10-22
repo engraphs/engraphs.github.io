@@ -123,13 +123,13 @@ He hopes to be allowed to do some writing . &rsquo;
 </svg>
 <br>
 <pre>
-arc(r__hopes_0068_0002,r__He_0068_0001,arg0).
-arc(r__hopes_0068_0002,r__be_0068_0004,arg1).
-arc(r__be_0068_0004,r__allowed_0068_0005,catenative).
-arc(r__allowed_0068_0005,r__He_0068_0001,arg2).
-arc(r__allowed_0068_0005,r__do_0068_0007,arg1).
-arc(r__do_0068_0007,r__He_0068_0001,arg0).
-arc(r__do_0068_0007,r__writing_0068_0009,arg1).
+arc(r_0068_0002__hopes,r_0068_0001__He,arg0).
+arc(r_0068_0002__hopes,r_0068_0004__be,arg1).
+arc(r_0068_0004__be,r_0068_0005__allowed,catenative).
+arc(r_0068_0005__allowed,r_0068_0001__He,arg2).
+arc(r_0068_0005__allowed,r_0068_0007__do,arg1).
+arc(r_0068_0007__do,r_0068_0001__He,arg0).
+arc(r_0068_0007__do,r_0068_0009__writing,arg1).
 
 </pre>
 <br>
@@ -137,19 +137,19 @@ arc(r__do_0068_0007,r__writing_0068_0009,arg1).
 fof(id_68_A_lob_A02,axiom,
     ? [STATEX1,CATENATIVEX2,STATEX4,EVENTX9,EVENTX8,EVENTX7,EVENTX6,ENTITYX5] :
       ( STATEX1 = EVENTX8
-      &amp; isA(EVENTX8,r__be_0068_0004)
+      &amp; isA(EVENTX8,r_0068_0004__be)
       &amp; catenative(EVENTX8) = CATENATIVEX2
       &amp; CATENATIVEX2 = EVENTX7
-      &amp; isA(EVENTX7,r__allowed_0068_0005)
-      &amp; arg2(EVENTX7) = r__He_0068_0001
+      &amp; isA(EVENTX7,r_0068_0005__allowed)
+      &amp; arg2(EVENTX7) = r_0068_0001__He
       &amp; arg1(EVENTX7) = STATEX4
       &amp; STATEX4 = EVENTX6
-      &amp; isA(EVENTX6,r__do_0068_0007)
-      &amp; arg0(EVENTX6) = r__He_0068_0001
+      &amp; isA(EVENTX6,r_0068_0007__do)
+      &amp; arg0(EVENTX6) = r_0068_0001__He
       &amp; arg1(EVENTX6) = ENTITYX5
-      &amp; isA(ENTITYX5,r__writing_0068_0009)
-      &amp; isA(EVENTX9,r__hopes_0068_0002)
-      &amp; arg0(EVENTX9) = r__He_0068_0001
+      &amp; isA(ENTITYX5,r_0068_0009__writing)
+      &amp; isA(EVENTX9,r_0068_0002__hopes)
+      &amp; arg0(EVENTX9) = r_0068_0001__He
       &amp; arg1(EVENTX9) = STATEX1 ) ).
 
 

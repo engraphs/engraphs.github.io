@@ -115,15 +115,15 @@ My dog developed tumours and died in the autumn , despite excellent veterinary c
 <!-- 0088_0009 -->
 <g id="node7" class="node">
 <title>0088_0009</title>
-<ellipse fill="none" stroke="black" cx="366.75" cy="-105" rx="46.29" ry="18"/>
-<text text-anchor="middle" x="366.75" y="-101.3" font-family="fixed" font-size="14.00">autumn</text>
+<ellipse fill="none" stroke="black" cx="360.75" cy="-105" rx="46.29" ry="18"/>
+<text text-anchor="middle" x="360.75" y="-101.3" font-family="fixed" font-size="14.00">autumn</text>
 </g>
 <!-- 0088_0006&#45;&gt;0088_0009 -->
 <g id="edge7" class="edge">
 <title>0088_0006&#45;&gt;0088_0009</title>
-<path fill="none" stroke="black" d="M263.74,-187.89C287.61,-184.01 320.57,-175.33 342.75,-156 349.84,-149.82 355.02,-141.06 358.7,-132.61"/>
-<polygon fill="black" stroke="black" points="362.08,-133.58 362.38,-122.99 355.54,-131.08 362.08,-133.58"/>
-<text text-anchor="middle" x="382.75" y="-144.8" font-family="fixed" font-size="14.00">in_[tmp]</text>
+<path fill="none" stroke="black" d="M263.49,-187.21C285.93,-182.98 316.26,-174.17 336.75,-156 343.79,-149.76 348.95,-140.99 352.64,-132.54"/>
+<polygon fill="black" stroke="black" points="356.02,-133.52 356.33,-122.93 349.48,-131.02 356.02,-133.52"/>
+<text text-anchor="middle" x="373.75" y="-144.8" font-family="fixed" font-size="14.00">in[tmp]</text>
 </g>
 <!-- 0088_0014 -->
 <g id="node8" class="node">
@@ -136,7 +136,7 @@ My dog developed tumours and died in the autumn , despite excellent veterinary c
 <title>0088_0006&#45;&gt;0088_0014</title>
 <path fill="none" stroke="black" d="M236.38,-173.8C238.16,-162.16 240.54,-146.55 242.58,-133.24"/>
 <polygon fill="black" stroke="black" points="246.07,-133.59 244.12,-123.18 239.15,-132.53 246.07,-133.59"/>
-<text text-anchor="middle" x="290.25" y="-144.8" font-family="fixed" font-size="14.00">despite_[mnr]</text>
+<text text-anchor="middle" x="287.25" y="-144.8" font-family="fixed" font-size="14.00">despite[mnr]</text>
 </g>
 <!-- 0088_0012 -->
 <g id="node9" class="node">
@@ -168,41 +168,41 @@ My dog developed tumours and died in the autumn , despite excellent veterinary c
 </svg>
 <br>
 <pre>
-arc(r__dog_0088_0002,r__My_0088_0001,genv).
-arc(r__developed_0088_0003,r__dog_0088_0002,arg0).
-arc(r__developed_0088_0003,r__tumours_0088_0004,arg1).
-arc(r__and_0088_0005,r__developed_0088_0003,conj1).
-arc(r__and_0088_0005,r__died_0088_0006,conj2).
-arc(r__died_0088_0006,r__dog_0088_0002,arg0).
-arc(r__died_0088_0006,r__autumn_0088_0009,r__in_0088_0007_tmp).
-arc(r__died_0088_0006,r__care_0088_0014,r__despite_0088_0011_mnr).
-arc(r__care_0088_0014,r__excellent_0088_0012,attrib1).
-arc(r__care_0088_0014,r__veterinary_0088_0013,attrib2).
+arc(r_0088_0002__dog,r_0088_0001__My,genv).
+arc(r_0088_0003__developed,r_0088_0002__dog,arg0).
+arc(r_0088_0003__developed,r_0088_0004__tumours,arg1).
+arc(r_0088_0005__and,r_0088_0003__developed,conj1).
+arc(r_0088_0005__and,r_0088_0006__died,conj2).
+arc(r_0088_0006__died,r_0088_0002__dog,arg0).
+arc(r_0088_0006__died,r_0088_0009__autumn,r_0088_0007__in_tmp).
+arc(r_0088_0006__died,r_0088_0014__care,r_0088_0011__despite_mnr).
+arc(r_0088_0014__care,r_0088_0012__excellent,attrib1).
+arc(r_0088_0014__care,r_0088_0013__veterinary,attrib2).
 
 </pre>
 <br>
 <pre>
 fof(id_88_A_Alresford,axiom,
     ? [CONJX9,EVENTX8,EVENTX3,ENTITYX1,ENTITYX4,ENTITYX5,ENTITYX2,ATTRIBX6,ATTRIBX7] :
-      ( isA(ENTITYX1,r__dog_0088_0002)
-      &amp; genv(ENTITYX1) = r__My_0088_0001
-      &amp; isA(ENTITYX2,r__tumours_0088_0004)
-      &amp; isA(ENTITYX4,r__autumn_0088_0009)
-      &amp; isA(ENTITYX5,r__care_0088_0014)
+      ( isA(ENTITYX1,r_0088_0002__dog)
+      &amp; genv(ENTITYX1) = r_0088_0001__My
+      &amp; isA(ENTITYX2,r_0088_0004__tumours)
+      &amp; isA(ENTITYX4,r_0088_0009__autumn)
+      &amp; isA(ENTITYX5,r_0088_0014__care)
       &amp; attrib1(ENTITYX5) = ATTRIBX6
       &amp; attrib2(ENTITYX5) = ATTRIBX7
-      &amp; isA(ATTRIBX6,r__excellent_0088_0012)
-      &amp; isA(ATTRIBX7,r__veterinary_0088_0013)
-      &amp; isA(CONJX9,r__and_0088_0005)
+      &amp; isA(ATTRIBX6,r_0088_0012__excellent)
+      &amp; isA(ATTRIBX7,r_0088_0013__veterinary)
+      &amp; isA(CONJX9,r_0088_0005__and)
       &amp; conj1(CONJX9) = EVENTX3
-      &amp; isA(EVENTX3,r__developed_0088_0003)
+      &amp; isA(EVENTX3,r_0088_0003__developed)
       &amp; arg0(EVENTX3) = ENTITYX1
       &amp; arg1(EVENTX3) = ENTITYX2
       &amp; conj2(CONJX9) = EVENTX8
-      &amp; isA(EVENTX8,r__died_0088_0006)
+      &amp; isA(EVENTX8,r_0088_0006__died)
       &amp; arg0(EVENTX8) = ENTITYX1
-      &amp; r__in_0088_0007_tmp(EVENTX8) = ENTITYX4
-      &amp; r__despite_0088_0011_mnr(EVENTX8) = ENTITYX5 ) ).
+      &amp; r_0088_0007__in_tmp(EVENTX8) = ENTITYX4
+      &amp; r_0088_0011__despite_mnr(EVENTX8) = ENTITYX5 ) ).
 
 
 </pre>

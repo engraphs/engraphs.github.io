@@ -129,13 +129,13 @@ the living always think that gold can make them happy . &rdquo;
 </svg>
 <br>
 <pre>
-arc(r__think_0204_0004,r__living_0204_0002,arg0).
-arc(r__think_0204_0004,r__always_0204_0003,tmp2).
-arc(r__think_0204_0004,r__can_0204_0007,arg1).
-arc(r__can_0204_0007,r__make_0204_0008,scope).
-arc(r__make_0204_0008,r__living_0204_0002,arg1).
-arc(r__make_0204_0008,r__gold_0204_0006,arg0).
-arc(r__make_0204_0008,r__happy_0204_0010,prd).
+arc(r_0204_0004__think,r_0204_0002__living,arg0).
+arc(r_0204_0004__think,r_0204_0003__always,tmp2).
+arc(r_0204_0004__think,r_0204_0007__can,arg1).
+arc(r_0204_0007__can,r_0204_0008__make,scope).
+arc(r_0204_0008__make,r_0204_0002__living,arg1).
+arc(r_0204_0008__make,r_0204_0006__gold,arg0).
+arc(r_0204_0008__make,r_0204_0010__happy,prd).
 
 </pre>
 <br>
@@ -143,18 +143,18 @@ arc(r__make_0204_0008,r__happy_0204_0010,prd).
 fof(id_204_A_WILDE_1_1888,axiom,
     ? [STATEX3,LIVINGX5,EVENTX9,OPERATORX7,EVENTX8,LIVINGX1,ENTITYX4,QUALITYX2,ATTRIBX6] :
       ( STATEX3 = OPERATORX7
-      &amp; isA(OPERATORX7,r__can_0204_0007)
+      &amp; isA(OPERATORX7,r_0204_0007__can)
       &amp; scope(OPERATORX7) = EVENTX8
-      &amp; isA(EVENTX8,r__make_0204_0008)
+      &amp; isA(EVENTX8,r_0204_0008__make)
       &amp; arg0(EVENTX8) = ENTITYX4
       &amp; arg1(EVENTX8) = LIVINGX5
       &amp; prd(EVENTX8) = ATTRIBX6
-      &amp; isA(LIVINGX1,r__living_0204_0002)
-      &amp; isA(ENTITYX4,r__gold_0204_0006)
+      &amp; isA(LIVINGX1,r_0204_0002__living)
+      &amp; isA(ENTITYX4,r_0204_0006__gold)
       &amp; LIVINGX5 = LIVINGX1
-      &amp; isA(QUALITYX2,r__always_0204_0003)
-      &amp; isA(ATTRIBX6,r__happy_0204_0010)
-      &amp; isA(EVENTX9,r__think_0204_0004)
+      &amp; isA(QUALITYX2,r_0204_0003__always)
+      &amp; isA(ATTRIBX6,r_0204_0010__happy)
+      &amp; isA(EVENTX9,r_0204_0004__think)
       &amp; arg0(EVENTX9) = LIVINGX1
       &amp; tmp2(EVENTX9) = QUALITYX2
       &amp; arg1(EVENTX9) = STATEX3 ) ).

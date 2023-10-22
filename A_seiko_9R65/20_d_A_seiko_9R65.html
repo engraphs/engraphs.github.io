@@ -155,7 +155,7 @@ The Spring Drive is Seiko 's proprietary mechanism which is made available only 
 <title>0026_0011&#45;&gt;0026_0018</title>
 <path fill="none" stroke="black" d="M372.58,-438.34C393.96,-424.88 426.94,-404.12 451.82,-388.46"/>
 <polygon fill="black" stroke="black" points="453.98,-391.23 460.58,-382.94 450.25,-385.31 453.98,-391.23"/>
-<text text-anchor="middle" x="474.39" y="-405.8" font-family="fixed" font-size="14.00">[arg0]by_[lgs]</text>
+<text text-anchor="middle" x="471.39" y="-405.8" font-family="fixed" font-size="14.00">[arg0]by[lgs]</text>
 </g>
 <!-- 0026_0018&#45;&gt;0026_0005 -->
 <g id="edge10" class="edge">
@@ -246,22 +246,22 @@ The Spring Drive is Seiko 's proprietary mechanism which is made available only 
 </svg>
 <br>
 <pre>
-arc(r__is_0026_0004,r__Spring_0026_0002_r__Drive_0026_0003,arg0).
-arc(r__is_0026_0004,r__mechanism_0026_0008,prd2).
-arc(r__mechanism_0026_0008,r__Seiko_0026_0005,genv).
-arc(r__mechanism_0026_0008,r__proprietary_0026_0007,attrib2).
-arc(r__is_0026_0010,r__only_0026_0013,catenative).
-arc(r__made_0026_0011,r__mechanism_0026_0008,arg1).
-arc(r__made_0026_0011,r__available_0026_0012,prd).
-arc(r__made_0026_0011,r__combination_0026_0018,arg0_r__by_0026_0014_lgs).
-arc(r__only_0026_0013,r__made_0026_0011,scope).
-arc(r__combination_0026_0018,r__Seiko_0026_0005,genv).
-arc(r__combination_0026_0018,r__unique_0026_0017,attrib2).
-arc(r__combination_0026_0018,r__skills_0026_0020,r__of_0026_0019).
-arc(r__skills_0026_0020,r__micro_engineering_0026_0026,r__in_0026_0021).
-arc(r__both_0026_0022_r__and_0026_0024,r__mechanical_0026_0023,conj1).
-arc(r__both_0026_0022_r__and_0026_0024,r__electronic_0026_0025,conj2).
-arc(r__micro_engineering_0026_0026,r__both_0026_0022_r__and_0026_0024,attrib1).
+arc(r_0026_0004__is,r_0026_0002__Spring_Drive,arg0).
+arc(r_0026_0004__is,r_0026_0008__mechanism,prd2).
+arc(r_0026_0008__mechanism,r_0026_0005__Seiko,genv).
+arc(r_0026_0008__mechanism,r_0026_0007__proprietary,attrib2).
+arc(r_0026_0010__is,r_0026_0013__only,catenative).
+arc(r_0026_0011__made,r_0026_0008__mechanism,arg1).
+arc(r_0026_0011__made,r_0026_0012__available,prd).
+arc(r_0026_0011__made,r_0026_0018__combination,arg0_by_lgs).
+arc(r_0026_0013__only,r_0026_0011__made,scope).
+arc(r_0026_0018__combination,r_0026_0005__Seiko,genv).
+arc(r_0026_0018__combination,r_0026_0017__unique,attrib2).
+arc(r_0026_0018__combination,r_0026_0020__skills,r_0026_0019__of).
+arc(r_0026_0020__skills,r_0026_0026__micro_engineering,r_0026_0021__in).
+arc(r_0026_0022__both_and,r_0026_0023__mechanical,conj1).
+arc(r_0026_0022__both_and,r_0026_0025__electronic,conj2).
+arc(r_0026_0026__micro_engineering,r_0026_0022__both_and,attrib1).
 
 </pre>
 <br>
@@ -269,37 +269,37 @@ arc(r__micro_engineering_0026_0026,r__both_0026_0022_r__and_0026_0024,attrib1).
 fof(id_26_A_seiko_9R65,axiom,
     ? [CATENATIVEX3,ORGANIZATIONX7,EVENTX16,EVENTX15,OPERATORX5,EVENTX14,ENTITYX1,ENTITYX6,ENTITYX9,ENTITYX10,ATTRIBX2,ATTRIBX4,ATTRIBX8,ATTRIBX11,ATTRIBX12,ATTRIBX13] :
       ( CATENATIVEX3 = OPERATORX5
-      &amp; isA(OPERATORX5,r__only_0026_0013)
+      &amp; isA(OPERATORX5,r_0026_0013__only)
       &amp; scope(OPERATORX5) = EVENTX14
-      &amp; isA(EVENTX14,r__made_0026_0011)
-      &amp; arg0_r__by_0026_0014_lgs(EVENTX14) = ENTITYX6
+      &amp; isA(EVENTX14,r_0026_0011__made)
+      &amp; arg0_by_lgs(EVENTX14) = ENTITYX6
       &amp; arg1(EVENTX14) = ENTITYX1
       &amp; prd(EVENTX14) = ATTRIBX4
-      &amp; isA(EVENTX15,r__is_0026_0010)
+      &amp; isA(EVENTX15,r_0026_0010__is)
       &amp; catenative(EVENTX15) = CATENATIVEX3
-      &amp; isA(ENTITYX1,r__mechanism_0026_0008)
-      &amp; genv(ENTITYX1) = r__Seiko_0026_0005
+      &amp; isA(ENTITYX1,r_0026_0008__mechanism)
+      &amp; genv(ENTITYX1) = r_0026_0005__Seiko
       &amp; attrib2(ENTITYX1) = ATTRIBX2
-      &amp; isA(ENTITYX6,r__combination_0026_0018)
+      &amp; isA(ENTITYX6,r_0026_0018__combination)
       &amp; genv(ENTITYX6) = ORGANIZATIONX7
       &amp; attrib2(ENTITYX6) = ATTRIBX8
-      &amp; r__of_0026_0019(ENTITYX6) = ENTITYX9
-      &amp; ORGANIZATIONX7 = r__Seiko_0026_0005
-      &amp; isA(ENTITYX9,r__skills_0026_0020)
-      &amp; r__in_0026_0021(ENTITYX9) = ENTITYX10
-      &amp; isA(ENTITYX10,r__micro_engineering_0026_0026)
+      &amp; r_0026_0019__of(ENTITYX6) = ENTITYX9
+      &amp; ORGANIZATIONX7 = r_0026_0005__Seiko
+      &amp; isA(ENTITYX9,r_0026_0020__skills)
+      &amp; r_0026_0021__in(ENTITYX9) = ENTITYX10
+      &amp; isA(ENTITYX10,r_0026_0026__micro_engineering)
       &amp; attrib1(ENTITYX10) = ATTRIBX11
-      &amp; isA(r__Spring_0026_0002_r__Drive_0026_0003,r__Spring_0026_0002_r__Drive_0026_0003)
-      &amp; isA(ATTRIBX2,r__proprietary_0026_0007)
-      &amp; isA(ATTRIBX4,r__available_0026_0012)
-      &amp; isA(ATTRIBX8,r__unique_0026_0017)
-      &amp; isA(ATTRIBX11,r__both_0026_0022_r__and_0026_0024)
+      &amp; isA(r_0026_0002__Spring_Drive,r_0026_0002__Spring_Drive)
+      &amp; isA(ATTRIBX2,r_0026_0007__proprietary)
+      &amp; isA(ATTRIBX4,r_0026_0012__available)
+      &amp; isA(ATTRIBX8,r_0026_0017__unique)
+      &amp; isA(ATTRIBX11,r_0026_0022__both_and)
       &amp; conj1(ATTRIBX11) = ATTRIBX12
       &amp; conj2(ATTRIBX11) = ATTRIBX13
-      &amp; isA(ATTRIBX12,r__mechanical_0026_0023)
-      &amp; isA(ATTRIBX13,r__electronic_0026_0025)
-      &amp; isA(EVENTX16,r__is_0026_0004)
-      &amp; arg0(EVENTX16) = r__Spring_0026_0002_r__Drive_0026_0003
+      &amp; isA(ATTRIBX12,r_0026_0023__mechanical)
+      &amp; isA(ATTRIBX13,r_0026_0025__electronic)
+      &amp; isA(EVENTX16,r_0026_0004__is)
+      &amp; arg0(EVENTX16) = r_0026_0002__Spring_Drive
       &amp; prd2(EVENTX16) = ENTITYX1 ) ).
 
 

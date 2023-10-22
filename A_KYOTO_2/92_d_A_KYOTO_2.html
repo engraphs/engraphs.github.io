@@ -84,22 +84,22 @@ Head temple is Tenryu-ji in Arashiyama , Kyoto .
 </svg>
 <br>
 <pre>
-arc(r__is_0100_0003,r__Head_0100_0001_r__temple_0100_0002,arg0).
-arc(r__is_0100_0003,r__Tenryu_ji_0100_0004,prd2).
-arc(r__Tenryu_ji_0100_0004,r__Arashiyama_0100_0006_r__Kyoto_0100_0008,r__in_0100_0005).
+arc(r_0100_0003__is,r_0100_0001__Head_temple,arg0).
+arc(r_0100_0003__is,r_0100_0004__Tenryu_ji,prd2).
+arc(r_0100_0004__Tenryu_ji,r_0100_0006__Arashiyama_Kyoto,r_0100_0005__in).
 
 </pre>
 <br>
 <pre>
 fof(id_100_A_KYOTO_2,axiom,
     ? [EVENTX2,ENTITYX1] :
-      ( isA(ENTITYX1,r__Head_0100_0001_r__temple_0100_0002)
-      &amp; isA(r__Tenryu_ji_0100_0004,r__Tenryu_ji_0100_0004)
-      &amp; r__in_0100_0005(r__Tenryu_ji_0100_0004) = r__Arashiyama_0100_0006_r__Kyoto_0100_0008
-      &amp; isA(r__Arashiyama_0100_0006_r__Kyoto_0100_0008,r__Arashiyama_0100_0006_r__Kyoto_0100_0008)
-      &amp; isA(EVENTX2,r__is_0100_0003)
+      ( isA(ENTITYX1,r_0100_0001__Head_temple)
+      &amp; isA(r_0100_0004__Tenryu_ji,r_0100_0004__Tenryu_ji)
+      &amp; r_0100_0005__in(r_0100_0004__Tenryu_ji) = r_0100_0006__Arashiyama_Kyoto
+      &amp; isA(r_0100_0006__Arashiyama_Kyoto,r_0100_0006__Arashiyama_Kyoto)
+      &amp; isA(EVENTX2,r_0100_0003__is)
       &amp; arg0(EVENTX2) = ENTITYX1
-      &amp; prd2(EVENTX2) = r__Tenryu_ji_0100_0004 ) ).
+      &amp; prd2(EVENTX2) = r_0100_0004__Tenryu_ji ) ).
 
 
 </pre>

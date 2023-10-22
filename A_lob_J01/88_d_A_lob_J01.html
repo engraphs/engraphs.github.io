@@ -95,8 +95,8 @@ All reagents are analytical reagent quality where available .
 <!-- 0088_0007_loc -->
 <g id="node6" class="node">
 <title>0088_0007_loc</title>
-<ellipse fill="none" stroke="black" cx="187.79" cy="-279" rx="61.99" ry="18"/>
-<text text-anchor="middle" x="187.79" y="-275.3" font-family="fixed" font-size="14.00">where_[loc]</text>
+<ellipse fill="none" stroke="black" cx="187.79" cy="-279" rx="57.69" ry="18"/>
+<text text-anchor="middle" x="187.79" y="-275.3" font-family="fixed" font-size="14.00">where[loc]</text>
 </g>
 <!-- 0088_0007_loc&#45;&gt;0088_0003 -->
 <g id="edge5" class="edge">
@@ -114,7 +114,7 @@ All reagents are analytical reagent quality where available .
 <!-- 0088_0007_loc&#45;&gt;z_0088_1010 -->
 <g id="edge6" class="edge">
 <title>0088_0007_loc&#45;&gt;z_0088_1010</title>
-<path fill="none" stroke="black" d="M214.76,-262.7C224.23,-256.93 234.75,-250.05 243.79,-243 253.88,-235.14 264.19,-225.59 272.94,-216.96"/>
+<path fill="none" stroke="black" d="M214.48,-262.88C224.02,-257.07 234.66,-250.12 243.79,-243 253.88,-235.14 264.19,-225.59 272.94,-216.96"/>
 <polygon fill="black" stroke="black" points="275.62,-219.23 280.19,-209.67 270.65,-214.3 275.62,-219.23"/>
 <text text-anchor="middle" x="300.29" y="-231.8" font-family="fixed" font-size="14.00">[restriction]</text>
 </g>
@@ -155,34 +155,34 @@ All reagents are analytical reagent quality where available .
 </svg>
 <br>
 <pre>
-arc(quantificational_r__All_0088_0001,r__reagents_0088_0002,restriction).
-arc(quantificational_r__All_0088_0001,r__where_0088_0007_loc,scope).
-arc(r__are_0088_0003,r__reagents_0088_0002,arg0).
-arc(r__are_0088_0003,r__quality_0088_0006,prd2).
-arc(r__quality_0088_0006,r__analytical_0088_0004,attrib1).
-arc(r__quality_0088_0006,r__reagent_0088_0005,attrib2).
-arc(r__where_0088_0007_loc,r__are_0088_0003,scope).
-arc(r__where_0088_0007_loc,z_0088_1010,restriction).
-arc(z_0088_1010,r__available_0088_0008,prd).
+arc(r_0088_0001__quantificational__All,r_0088_0002__reagents,restriction).
+arc(r_0088_0001__quantificational__All,r_0088_0007__where_loc,scope).
+arc(r_0088_0003__are,r_0088_0002__reagents,arg0).
+arc(r_0088_0003__are,r_0088_0006__quality,prd2).
+arc(r_0088_0006__quality,r_0088_0004__analytical,attrib1).
+arc(r_0088_0006__quality,r_0088_0005__reagent,attrib2).
+arc(r_0088_0007__where_loc,r_0088_0003__are,scope).
+arc(r_0088_0007__where_loc,z_0088_1010,restriction).
+arc(z_0088_1010,r_0088_0008__available,prd).
 
 </pre>
 <br>
 <pre>
 fof(id_88_A_lob_J01,axiom,
     ? [QUANTX2,CONNX6,EVENTX11,EVENTX12,ENTITYX1,ENTITYX3,ATTRIBX9,ATTRIBX4,ATTRIBX5] :
-      ( isA(ENTITYX3,r__quality_0088_0006)
+      ( isA(ENTITYX3,r_0088_0006__quality)
       &amp; attrib1(ENTITYX3) = ATTRIBX4
       &amp; attrib2(ENTITYX3) = ATTRIBX5
-      &amp; isA(ATTRIBX4,r__analytical_0088_0004)
-      &amp; isA(ATTRIBX5,r__reagent_0088_0005)
-      &amp; isA(ATTRIBX9,r__available_0088_0008)
-      &amp; isA(QUANTX2,quantificational_r__All_0088_0001)
+      &amp; isA(ATTRIBX4,r_0088_0004__analytical)
+      &amp; isA(ATTRIBX5,r_0088_0005__reagent)
+      &amp; isA(ATTRIBX9,r_0088_0008__available)
+      &amp; isA(QUANTX2,r_0088_0001__quantificational__All)
       &amp; restriction(QUANTX2) = ENTITYX1
-      &amp; isA(ENTITYX1,r__reagents_0088_0002)
+      &amp; isA(ENTITYX1,r_0088_0002__reagents)
       &amp; scope(QUANTX2) = CONNX6
-      &amp; isA(CONNX6,r__where_0088_0007_loc)
+      &amp; isA(CONNX6,r_0088_0007__where_loc)
       &amp; scope(CONNX6) = EVENTX12
-      &amp; isA(EVENTX12,r__are_0088_0003)
+      &amp; isA(EVENTX12,r_0088_0003__are)
       &amp; arg0(EVENTX12) = ENTITYX1
       &amp; prd2(EVENTX12) = ENTITYX3
       &amp; restriction(CONNX6) = EVENTX11

@@ -116,29 +116,29 @@ Do not write any postal addresses .
 </svg>
 <br>
 <pre>
-arc(imperative_0008_1002,quantificational_r__any_0008_0004,scope).
-arc(quantificational_r__any_0008_0004,r__not_0008_0002,scope).
-arc(quantificational_r__any_0008_0004,r__addresses_0008_0006,restriction).
-arc(r__Do_0008_0001_r__write_0008_0003,r__addresses_0008_0006,arg1).
-arc(r__not_0008_0002,r__Do_0008_0001_r__write_0008_0003,scope).
-arc(r__addresses_0008_0006,r__postal_0008_0005,attrib2).
+arc(imperative_0008_1002,r_0008_0004__quantificational__any,scope).
+arc(r_0008_0001__Do_write,r_0008_0006__addresses,arg1).
+arc(r_0008_0002__not,r_0008_0001__Do_write,scope).
+arc(r_0008_0004__quantificational__any,r_0008_0002__not,scope).
+arc(r_0008_0004__quantificational__any,r_0008_0006__addresses,restriction).
+arc(r_0008_0006__addresses,r_0008_0005__postal,attrib2).
 
 </pre>
 <br>
 <pre>
 fof(id_8_A_fce_0102_2000_06,axiom,
     ? [OPERATORX2,QUANTX5,OPERATORX7,EVENTX8,ENTITYX4,ATTRIBX6] :
-      ( isA(ATTRIBX6,r__postal_0008_0005)
+      ( isA(ATTRIBX6,r_0008_0005__postal)
       &amp; isA(OPERATORX2,imperative_0008_1002)
       &amp; scope(OPERATORX2) = QUANTX5
-      &amp; isA(QUANTX5,quantificational_r__any_0008_0004)
+      &amp; isA(QUANTX5,r_0008_0004__quantificational__any)
       &amp; restriction(QUANTX5) = ENTITYX4
-      &amp; isA(ENTITYX4,r__addresses_0008_0006)
+      &amp; isA(ENTITYX4,r_0008_0006__addresses)
       &amp; attrib2(ENTITYX4) = ATTRIBX6
       &amp; scope(QUANTX5) = OPERATORX7
-      &amp; isA(OPERATORX7,r__not_0008_0002)
+      &amp; isA(OPERATORX7,r_0008_0002__not)
       &amp; scope(OPERATORX7) = EVENTX8
-      &amp; isA(EVENTX8,r__Do_0008_0001_r__write_0008_0003)
+      &amp; isA(EVENTX8,r_0008_0001__Do_write)
       &amp; arg1(EVENTX8) = ENTITYX4 ) ).
 
 

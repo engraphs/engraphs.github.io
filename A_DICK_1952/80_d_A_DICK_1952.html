@@ -122,12 +122,12 @@
 </svg>
 <br>
 <pre>
-arc(question_0104_1002,r__do_0104_0003_r__suppose_0104_0005,scope).
-arc(r__do_0104_0003_r__suppose_0104_0005,r__you_0104_0004,arg0).
-arc(r__do_0104_0003_r__suppose_0104_0005,r__would_0104_0009,arg1).
-arc(r__would_0104_0009,r__find_0104_0010,scope).
-arc(r__find_0104_0010,r__What_0104_0002,arg1).
-arc(r__find_0104_0010,r__exploring_0104_0007_r__party_0104_0008,arg0).
+arc(question_0104_1002,r_0104_0003__do_suppose,scope).
+arc(r_0104_0003__do_suppose,r_0104_0004__you,arg0).
+arc(r_0104_0003__do_suppose,r_0104_0009__would,arg1).
+arc(r_0104_0009__would,r_0104_0010__find,scope).
+arc(r_0104_0010__find,r_0104_0002__What,arg1).
+arc(r_0104_0010__find,r_0104_0007__exploring_party,arg0).
 
 </pre>
 <br>
@@ -135,17 +135,17 @@ arc(r__find_0104_0010,r__exploring_0104_0007_r__party_0104_0008,arg0).
 fof(id_104_A_DICK_1952,axiom,
     ? [STATEX4,OPERATORX2,EVENTX8,OPERATORX6,EVENTX7,ENTITYX3,ENTITYX5] :
       ( STATEX4 = OPERATORX6
-      &amp; isA(OPERATORX6,r__would_0104_0009)
+      &amp; isA(OPERATORX6,r_0104_0009__would)
       &amp; scope(OPERATORX6) = EVENTX7
-      &amp; isA(EVENTX7,r__find_0104_0010)
+      &amp; isA(EVENTX7,r_0104_0010__find)
       &amp; arg1(EVENTX7) = ENTITYX3
       &amp; arg0(EVENTX7) = ENTITYX5
-      &amp; isA(ENTITYX3,r__What_0104_0002)
-      &amp; isA(ENTITYX5,r__exploring_0104_0007_r__party_0104_0008)
+      &amp; isA(ENTITYX3,r_0104_0002__What)
+      &amp; isA(ENTITYX5,r_0104_0007__exploring_party)
       &amp; isA(OPERATORX2,question_0104_1002)
       &amp; scope(OPERATORX2) = EVENTX8
-      &amp; isA(EVENTX8,r__do_0104_0003_r__suppose_0104_0005)
-      &amp; arg0(EVENTX8) = r__you_0104_0004
+      &amp; isA(EVENTX8,r_0104_0003__do_suppose)
+      &amp; arg0(EVENTX8) = r_0104_0004__you
       &amp; arg1(EVENTX8) = STATEX4 ) ).
 
 

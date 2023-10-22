@@ -103,17 +103,17 @@ A Scottish knight &mdash; Sir John Mercer &mdash; was imprisoned in England .
 <title>0001_0010&#45;&gt;0001_0012</title>
 <path fill="none" stroke="black" d="M184.78,-174.08C188.7,-168.4 193.02,-161.98 196.8,-156 201.73,-148.19 206.86,-139.54 211.41,-131.66"/>
 <polygon fill="black" stroke="black" points="214.52,-133.27 216.44,-122.85 208.44,-129.8 214.52,-133.27"/>
-<text text-anchor="middle" x="231.8" y="-144.8" font-family="fixed" font-size="14.00">in_[loc]</text>
+<text text-anchor="middle" x="228.3" y="-144.8" font-family="fixed" font-size="14.00">in[loc]</text>
 </g>
 </g>
 </svg>
 <br>
 <pre>
-arc(r__knight_0001_0003,r__Scottish_0001_0002,attrib2).
-arc(r__knight_0001_0003,r__Sir_0001_0005_r__John_0001_0006_r__Mercer_0001_0007,prn5).
-arc(r__was_0001_0009,r__imprisoned_0001_0010,catenative).
-arc(r__imprisoned_0001_0010,r__knight_0001_0003,arg1).
-arc(r__imprisoned_0001_0010,r__England_0001_0012,r__in_0001_0011_loc).
+arc(r_0001_0003__knight,r_0001_0002__Scottish,attrib2).
+arc(r_0001_0003__knight,r_0001_0005__Sir_John_Mercer,prn5).
+arc(r_0001_0009__was,r_0001_0010__imprisoned,catenative).
+arc(r_0001_0010__imprisoned,r_0001_0003__knight,arg1).
+arc(r_0001_0010__imprisoned,r_0001_0012__England,r_0001_0011__in_loc).
 
 </pre>
 <br>
@@ -121,14 +121,14 @@ arc(r__imprisoned_0001_0010,r__England_0001_0012,r__in_0001_0011_loc).
 fof(id_1_A_lob_G01,axiom,
     ? [CATENATIVEX3,EVENTX6,EVENTX5,ENTITYX1,ATTRIBX2] :
       ( CATENATIVEX3 = EVENTX5
-      &amp; isA(EVENTX5,r__imprisoned_0001_0010)
+      &amp; isA(EVENTX5,r_0001_0010__imprisoned)
       &amp; arg1(EVENTX5) = ENTITYX1
-      &amp; r__in_0001_0011_loc(EVENTX5) = r__England_0001_0012
-      &amp; isA(ENTITYX1,r__knight_0001_0003)
+      &amp; r_0001_0011__in_loc(EVENTX5) = r_0001_0012__England
+      &amp; isA(ENTITYX1,r_0001_0003__knight)
       &amp; attrib2(ENTITYX1) = ATTRIBX2
-      &amp; prn5(ENTITYX1) = r__Sir_0001_0005_r__John_0001_0006_r__Mercer_0001_0007
-      &amp; isA(ATTRIBX2,r__Scottish_0001_0002)
-      &amp; isA(EVENTX6,r__was_0001_0009)
+      &amp; prn5(ENTITYX1) = r_0001_0005__Sir_John_Mercer
+      &amp; isA(ATTRIBX2,r_0001_0002__Scottish)
+      &amp; isA(EVENTX6,r_0001_0009__was)
       &amp; catenative(EVENTX6) = CATENATIVEX3 ) ).
 
 

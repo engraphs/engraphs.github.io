@@ -104,13 +104,13 @@ It is important that we should look after the environment , because the knock-on
 <title>0149_0007&#45;&gt;0149_0010</title>
 <path fill="none" stroke="black" d="M120.25,-347.8C120.25,-336.16 120.25,-320.55 120.25,-307.24"/>
 <polygon fill="black" stroke="black" points="123.75,-307.18 120.25,-297.18 116.75,-307.18 123.75,-307.18"/>
-<text text-anchor="middle" x="153.75" y="-318.8" font-family="fixed" font-size="14.00">after_[clr]</text>
+<text text-anchor="middle" x="150.75" y="-318.8" font-family="fixed" font-size="14.00">after[clr]</text>
 </g>
 <!-- 0149_0012_cnt -->
 <g id="node7" class="node">
 <title>0149_0012_cnt</title>
-<ellipse fill="none" stroke="black" cx="211.25" cy="-627" rx="73.39" ry="18"/>
-<text text-anchor="middle" x="211.25" y="-623.3" font-family="fixed" font-size="14.00">because_[cnt]</text>
+<ellipse fill="none" stroke="black" cx="211.25" cy="-627" rx="69.59" ry="18"/>
+<text text-anchor="middle" x="211.25" y="-623.3" font-family="fixed" font-size="14.00">because[cnt]</text>
 </g>
 <!-- 0149_0012_cnt&#45;&gt;0149_0002 -->
 <g id="edge6" class="edge">
@@ -128,8 +128,8 @@ It is important that we should look after the environment , because the knock-on
 <!-- 0149_0012_cnt&#45;&gt;0149_0018 -->
 <g id="edge7" class="edge">
 <title>0149_0012_cnt&#45;&gt;0149_0018</title>
-<path fill="none" stroke="black" d="M222.38,-608.8C230.46,-596.3 241.51,-579.22 250.5,-565.33"/>
-<polygon fill="black" stroke="black" points="253.56,-567.04 256.06,-556.74 247.69,-563.24 253.56,-567.04"/>
+<path fill="none" stroke="black" d="M222.11,-609.21C230.18,-596.74 241.3,-579.56 250.36,-565.56"/>
+<polygon fill="black" stroke="black" points="253.47,-567.19 255.96,-556.9 247.59,-563.39 253.47,-567.19"/>
 <text text-anchor="middle" x="281.75" y="-579.8" font-family="fixed" font-size="14.00">[restriction]</text>
 </g>
 <!-- 0149_0019 -->
@@ -247,22 +247,22 @@ It is important that we should look after the environment , because the knock-on
 </svg>
 <br>
 <pre>
-arc(r__is_0149_0002,r__important_0149_0003,prd2).
-arc(r__is_0149_0002,r__should_0149_0006,arg0).
-arc(r__should_0149_0006,r__look_0149_0007,scope).
-arc(r__look_0149_0007,r__we_0149_0005,arg0).
-arc(r__look_0149_0007,r__environment_0149_0010,r__after_0149_0008_clr).
-arc(r__because_0149_0012_cnt,r__is_0149_0002,scope).
-arc(r__because_0149_0012_cnt,r__will_0149_0018,restriction).
-arc(r__effect_0149_0015,r__knock_on_0149_0014,attrib2).
-arc(r__effect_0149_0015,r__that_0149_0017,r__of_0149_0016).
-arc(r__will_0149_0018,r__be_0149_0019,scope).
-arc(r__be_0149_0019,r__effect_0149_0015,arg0).
-arc(r__be_0149_0019,r__will_0149_0024,prd2).
-arc(r__hedgehog_0149_0022_r__population_0149_0023,r__we_0149_0005,genv).
-arc(r__will_0149_0024,r__be_0149_0025,scope).
-arc(r__be_0149_0025,r__looked_0149_0026_r__after_0149_0027,catenative).
-arc(r__looked_0149_0026_r__after_0149_0027,r__hedgehog_0149_0022_r__population_0149_0023,arg1).
+arc(r_0149_0002__is,r_0149_0003__important,prd2).
+arc(r_0149_0002__is,r_0149_0006__should,arg0).
+arc(r_0149_0006__should,r_0149_0007__look,scope).
+arc(r_0149_0007__look,r_0149_0005__we,arg0).
+arc(r_0149_0007__look,r_0149_0010__environment,r_0149_0008__after_clr).
+arc(r_0149_0012__because_cnt,r_0149_0002__is,scope).
+arc(r_0149_0012__because_cnt,r_0149_0018__will,restriction).
+arc(r_0149_0015__effect,r_0149_0014__knock_on,attrib2).
+arc(r_0149_0015__effect,r_0149_0017__that,r_0149_0016__of).
+arc(r_0149_0018__will,r_0149_0019__be,scope).
+arc(r_0149_0019__be,r_0149_0015__effect,arg0).
+arc(r_0149_0019__be,r_0149_0024__will,prd2).
+arc(r_0149_0022__hedgehog_population,r_0149_0005__we,genv).
+arc(r_0149_0024__will,r_0149_0025__be,scope).
+arc(r_0149_0025__be,r_0149_0026__looked_after,catenative).
+arc(r_0149_0026__looked_after,r_0149_0022__hedgehog_population,arg1).
 
 </pre>
 <br>
@@ -270,38 +270,38 @@ arc(r__looked_0149_0026_r__after_0149_0027,r__hedgehog_0149_0022_r__population_0
 fof(id_149_A_Hedgehog,axiom,
     ? [STATEX3,STATEX10,CATENATIVEX14,SPEAKER_AND_HEARERX12,CONNX7,OPERATORX18,EVENTX19,OPERATORX13,EVENTX17,EVENTX16,EVENTX20,OPERATORX5,EVENTX6,ENTITYX8,ENTITYX11,ENTITYX4,ATTRIBX2,ATTRIBX9] :
       ( STATEX3 = OPERATORX5
-      &amp; isA(OPERATORX5,r__should_0149_0006)
+      &amp; isA(OPERATORX5,r_0149_0006__should)
       &amp; scope(OPERATORX5) = EVENTX6
-      &amp; isA(EVENTX6,r__look_0149_0007)
-      &amp; arg0(EVENTX6) = r__we_0149_0005
-      &amp; r__after_0149_0008_clr(EVENTX6) = ENTITYX4
+      &amp; isA(EVENTX6,r_0149_0007__look)
+      &amp; arg0(EVENTX6) = r_0149_0005__we
+      &amp; r_0149_0008__after_clr(EVENTX6) = ENTITYX4
       &amp; STATEX10 = OPERATORX13
-      &amp; isA(OPERATORX13,r__will_0149_0024)
+      &amp; isA(OPERATORX13,r_0149_0024__will)
       &amp; scope(OPERATORX13) = EVENTX17
-      &amp; isA(EVENTX17,r__be_0149_0025)
+      &amp; isA(EVENTX17,r_0149_0025__be)
       &amp; catenative(EVENTX17) = CATENATIVEX14
       &amp; CATENATIVEX14 = EVENTX16
-      &amp; isA(EVENTX16,r__looked_0149_0026_r__after_0149_0027)
+      &amp; isA(EVENTX16,r_0149_0026__looked_after)
       &amp; arg1(EVENTX16) = ENTITYX11
-      &amp; isA(ENTITYX4,r__environment_0149_0010)
-      &amp; isA(ENTITYX8,r__effect_0149_0015)
+      &amp; isA(ENTITYX4,r_0149_0010__environment)
+      &amp; isA(ENTITYX8,r_0149_0015__effect)
       &amp; attrib2(ENTITYX8) = ATTRIBX9
-      &amp; r__of_0149_0016(ENTITYX8) = r__that_0149_0017
-      &amp; isA(ENTITYX11,r__hedgehog_0149_0022_r__population_0149_0023)
+      &amp; r_0149_0016__of(ENTITYX8) = r_0149_0017__that
+      &amp; isA(ENTITYX11,r_0149_0022__hedgehog_population)
       &amp; genv(ENTITYX11) = SPEAKER_AND_HEARERX12
-      &amp; SPEAKER_AND_HEARERX12 = r__we_0149_0005
-      &amp; isA(ATTRIBX2,r__important_0149_0003)
-      &amp; isA(ATTRIBX9,r__knock_on_0149_0014)
-      &amp; isA(CONNX7,r__because_0149_0012_cnt)
+      &amp; SPEAKER_AND_HEARERX12 = r_0149_0005__we
+      &amp; isA(ATTRIBX2,r_0149_0003__important)
+      &amp; isA(ATTRIBX9,r_0149_0014__knock_on)
+      &amp; isA(CONNX7,r_0149_0012__because_cnt)
       &amp; scope(CONNX7) = EVENTX20
-      &amp; isA(EVENTX20,r__is_0149_0002)
+      &amp; isA(EVENTX20,r_0149_0002__is)
       &amp; arg0(EVENTX20) = STATEX3
       &amp; prd2(EVENTX20) = ATTRIBX2
       &amp; arg0(EVENTX20) = STATEX3
       &amp; restriction(CONNX7) = OPERATORX18
-      &amp; isA(OPERATORX18,r__will_0149_0018)
+      &amp; isA(OPERATORX18,r_0149_0018__will)
       &amp; scope(OPERATORX18) = EVENTX19
-      &amp; isA(EVENTX19,r__be_0149_0019)
+      &amp; isA(EVENTX19,r_0149_0019__be)
       &amp; arg0(EVENTX19) = ENTITYX8
       &amp; prd2(EVENTX19) = STATEX10 ) ).
 

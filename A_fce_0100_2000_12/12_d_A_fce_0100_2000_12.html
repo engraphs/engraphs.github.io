@@ -109,26 +109,26 @@ The writer of the best article will win a prize .
 </svg>
 <br>
 <pre>
-arc(r__writer_0021_0002,r__article_0021_0006,r__of_0021_0003).
-arc(r__article_0021_0006,r__best_0021_0005,attrib2).
-arc(r__will_0021_0007,r__win_0021_0008,scope).
-arc(r__win_0021_0008,r__writer_0021_0002,arg0).
-arc(r__win_0021_0008,r__prize_0021_0010,arg1).
+arc(r_0021_0002__writer,r_0021_0006__article,r_0021_0003__of).
+arc(r_0021_0006__article,r_0021_0005__best,attrib2).
+arc(r_0021_0007__will,r_0021_0008__win,scope).
+arc(r_0021_0008__win,r_0021_0002__writer,arg0).
+arc(r_0021_0008__win,r_0021_0010__prize,arg1).
 
 </pre>
 <br>
 <pre>
 fof(id_21_A_fce_0100_2000_12,axiom,
     ? [OPERATORX5,EVENTX6,ENTITYX1,ENTITYX4,ENTITYX2,ATTRIBX3] :
-      ( isA(ENTITYX1,r__writer_0021_0002)
-      &amp; r__of_0021_0003(ENTITYX1) = ENTITYX2
-      &amp; isA(ENTITYX2,r__article_0021_0006)
+      ( isA(ENTITYX1,r_0021_0002__writer)
+      &amp; r_0021_0003__of(ENTITYX1) = ENTITYX2
+      &amp; isA(ENTITYX2,r_0021_0006__article)
       &amp; attrib2(ENTITYX2) = ATTRIBX3
-      &amp; isA(ENTITYX4,r__prize_0021_0010)
-      &amp; isA(ATTRIBX3,r__best_0021_0005)
-      &amp; isA(OPERATORX5,r__will_0021_0007)
+      &amp; isA(ENTITYX4,r_0021_0010__prize)
+      &amp; isA(ATTRIBX3,r_0021_0005__best)
+      &amp; isA(OPERATORX5,r_0021_0007__will)
       &amp; scope(OPERATORX5) = EVENTX6
-      &amp; isA(EVENTX6,r__win_0021_0008)
+      &amp; isA(EVENTX6,r_0021_0008__win)
       &amp; arg0(EVENTX6) = ENTITYX1
       &amp; arg1(EVENTX6) = ENTITYX4 ) ).
 

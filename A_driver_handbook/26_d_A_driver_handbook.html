@@ -122,29 +122,29 @@ Some school zones may have speed limits as low as 15 mph .
 </svg>
 <br>
 <pre>
-arc(r__may_0032_0004,r__have_0032_0005,scope).
-arc(r__have_0032_0005,r__school_0032_0002_r__zones_0032_0003,arg0).
-arc(r__have_0032_0005,r__speed_0032_0006_r__limits_0032_0007,arg1).
-arc(r__speed_0032_0006_r__limits_0032_0007,r__low_0032_0009,attrib3).
-arc(r__low_0032_0009,r__as_0032_0008,quality1).
-arc(r__low_0032_0009,r__15_0032_0011_r__mph_0032_0012,r__as_0032_0010).
+arc(r_0032_0004__may,r_0032_0005__have,scope).
+arc(r_0032_0005__have,r_0032_0002__school_zones,arg0).
+arc(r_0032_0005__have,r_0032_0006__speed_limits,arg1).
+arc(r_0032_0006__speed_limits,r_0032_0009__low,attrib3).
+arc(r_0032_0009__low,r_0032_0008__as,quality1).
+arc(r_0032_0009__low,r_0032_0011__15_mph,r_0032_0010__as).
 
 </pre>
 <br>
 <pre>
 fof(id_32_A_driver_handbook,axiom,
     ? [OPERATORX6,EVENTX7,ENTITYX1,ENTITYX2,ENTITYX5,ATTRIBX3,QUALITYX4] :
-      ( isA(ENTITYX1,r__school_0032_0002_r__zones_0032_0003)
-      &amp; isA(ENTITYX2,r__speed_0032_0006_r__limits_0032_0007)
+      ( isA(ENTITYX1,r_0032_0002__school_zones)
+      &amp; isA(ENTITYX2,r_0032_0006__speed_limits)
       &amp; attrib3(ENTITYX2) = ATTRIBX3
-      &amp; isA(ENTITYX5,r__15_0032_0011_r__mph_0032_0012)
-      &amp; isA(ATTRIBX3,r__low_0032_0009)
+      &amp; isA(ENTITYX5,r_0032_0011__15_mph)
+      &amp; isA(ATTRIBX3,r_0032_0009__low)
       &amp; quality1(ATTRIBX3) = QUALITYX4
-      &amp; r__as_0032_0010(ATTRIBX3) = ENTITYX5
-      &amp; isA(QUALITYX4,r__as_0032_0008)
-      &amp; isA(OPERATORX6,r__may_0032_0004)
+      &amp; r_0032_0010__as(ATTRIBX3) = ENTITYX5
+      &amp; isA(QUALITYX4,r_0032_0008__as)
+      &amp; isA(OPERATORX6,r_0032_0004__may)
       &amp; scope(OPERATORX6) = EVENTX7
-      &amp; isA(EVENTX7,r__have_0032_0005)
+      &amp; isA(EVENTX7,r_0032_0005__have)
       &amp; arg0(EVENTX7) = ENTITYX1
       &amp; arg1(EVENTX7) = ENTITYX2 ) ).
 

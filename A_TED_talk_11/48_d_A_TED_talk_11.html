@@ -152,8 +152,8 @@ If they do n't know , they 'll have a go .
 <!-- 0075_0001_cnt_cnd -->
 <g id="node10" class="node">
 <title>0075_0001_cnt_cnd</title>
-<ellipse fill="none" stroke="black" cx="566" cy="-279" rx="65.79" ry="18"/>
-<text text-anchor="middle" x="566" y="-275.3" font-family="fixed" font-size="14.00">If_[cnt][cnd]</text>
+<ellipse fill="none" stroke="black" cx="566" cy="-279" rx="61.99" ry="18"/>
+<text text-anchor="middle" x="566" y="-275.3" font-family="fixed" font-size="14.00">If[cnt][cnd]</text>
 </g>
 <!-- 0075_0004 -->
 <g id="node11" class="node">
@@ -164,7 +164,7 @@ If they do n't know , they 'll have a go .
 <!-- 0075_0001_cnt_cnd&#45;&gt;0075_0004 -->
 <g id="edge9" class="edge">
 <title>0075_0001_cnt_cnd&#45;&gt;0075_0004</title>
-<path fill="none" stroke="black" d="M534.46,-263.13C526.74,-257.9 519.43,-251.22 515,-243 511.31,-236.17 510.08,-228.02 510.03,-220.29"/>
+<path fill="none" stroke="black" d="M534.73,-263.31C526.91,-258.05 519.48,-251.32 515,-243 511.31,-236.17 510.08,-228.02 510.03,-220.29"/>
 <polygon fill="black" stroke="black" points="513.53,-220.37 510.59,-210.19 506.55,-219.99 513.53,-220.37"/>
 <text text-anchor="middle" x="555.5" y="-231.8" font-family="fixed" font-size="14.00">[restriction]</text>
 </g>
@@ -238,21 +238,21 @@ If they do n't know , they 'll have a go .
 </svg>
 <br>
 <pre>
-arc(r__have_0074_0004,r__things_0074_0003,arg0).
-arc(r__have_0074_0004,r__in_common_0074_0005,mnr4).
-arc(r__have_0074_0004,z_0074_1005,arg1).
-arc(r__is_0074_0006,r__will_0074_0009,prd2).
-arc(r__is_0074_0006,z_0074_1005,arg0).
-arc(r__will_0074_0009,r__take_0074_0010,scope).
-arc(r__take_0074_0010,r__kids_0074_0008,arg0).
-arc(r__take_0074_0010,r__chance_0074_0012,arg1).
-arc(r__If_0075_0001_cnt_cnd,r__n_apos_t_0075_0004,restriction).
-arc(r__If_0075_0001_cnt_cnd,r___apos_ll_0075_0008,scope).
-arc(r__do_0075_0003_r__know_0075_0005,r__kids_0074_0008,arg0).
-arc(r__n_apos_t_0075_0004,r__do_0075_0003_r__know_0075_0005,scope).
-arc(r___apos_ll_0075_0008,r__have_0075_0009,scope).
-arc(r__have_0075_0009,r__kids_0074_0008,arg0).
-arc(r__have_0075_0009,r__go_0075_0011,arg1).
+arc(r_0074_0004__have,r_0074_0003__things,arg0).
+arc(r_0074_0004__have,r_0074_0005__in_common,mnr4).
+arc(r_0074_0004__have,z_0074_1005,arg1).
+arc(r_0074_0006__is,r_0074_0009__will,prd2).
+arc(r_0074_0006__is,z_0074_1005,arg0).
+arc(r_0074_0009__will,r_0074_0010__take,scope).
+arc(r_0074_0010__take,r_0074_0008__kids,arg0).
+arc(r_0074_0010__take,r_0074_0012__chance,arg1).
+arc(r_0075_0001__If_cnt_cnd,r_0075_0004__n_apos_t,restriction).
+arc(r_0075_0001__If_cnt_cnd,r_0075_0008___apos_ll,scope).
+arc(r_0075_0003__do_know,r_0074_0008__kids,arg0).
+arc(r_0075_0004__n_apos_t,r_0075_0003__do_know,scope).
+arc(r_0075_0008___apos_ll,r_0075_0009__have,scope).
+arc(r_0075_0009__have,r_0074_0008__kids,arg0).
+arc(r_0075_0009__have,r_0075_0011__go,arg1).
 
 </pre>
 <br>
@@ -260,36 +260,36 @@ arc(r__have_0075_0009,r__go_0075_0011,arg1).
 fof(id_74_A_TED_talk_11__75_A_TED_talk_11,axiom,
     ? [STATEX6,KIDSX13,KIDSX16,CONNX12,OPERATORX18,EVENTX19,OPERATORX14,EVENTX15,EVENTX11,OPERATORX9,EVENTX10,EVENTX4,ENTITYX17,ENTITYX1,KIDSX7,ENTITYX8,ENTITYX2,QUALITYX3] :
       ( STATEX6 = OPERATORX9
-      &amp; isA(OPERATORX9,r__will_0074_0009)
+      &amp; isA(OPERATORX9,r_0074_0009__will)
       &amp; scope(OPERATORX9) = EVENTX10
-      &amp; isA(EVENTX10,r__take_0074_0010)
+      &amp; isA(EVENTX10,r_0074_0010__take)
       &amp; arg0(EVENTX10) = KIDSX7
       &amp; arg1(EVENTX10) = ENTITYX8
-      &amp; isA(EVENTX4,r__have_0074_0004)
+      &amp; isA(EVENTX4,r_0074_0004__have)
       &amp; arg1(EVENTX4) = ENTITYX1
       &amp; arg0(EVENTX4) = ENTITYX2
       &amp; mnr4(EVENTX4) = QUALITYX3
       &amp; isA(ENTITYX1,z_0074_1005)
-      &amp; isA(ENTITYX2,r__things_0074_0003)
-      &amp; isA(KIDSX7,r__kids_0074_0008)
-      &amp; isA(ENTITYX8,r__chance_0074_0012)
+      &amp; isA(ENTITYX2,r_0074_0003__things)
+      &amp; isA(KIDSX7,r_0074_0008__kids)
+      &amp; isA(ENTITYX8,r_0074_0012__chance)
       &amp; KIDSX13 = KIDSX7
       &amp; KIDSX16 = KIDSX7
-      &amp; isA(ENTITYX17,r__go_0075_0011)
-      &amp; isA(QUALITYX3,r__in_common_0074_0005)
-      &amp; isA(EVENTX11,r__is_0074_0006)
+      &amp; isA(ENTITYX17,r_0075_0011__go)
+      &amp; isA(QUALITYX3,r_0074_0005__in_common)
+      &amp; isA(EVENTX11,r_0074_0006__is)
       &amp; arg0(EVENTX11) = ENTITYX1
       &amp; prd2(EVENTX11) = STATEX6
-      &amp; isA(CONNX12,r__If_0075_0001_cnt_cnd)
+      &amp; isA(CONNX12,r_0075_0001__If_cnt_cnd)
       &amp; restriction(CONNX12) = OPERATORX14
-      &amp; isA(OPERATORX14,r__n_apos_t_0075_0004)
+      &amp; isA(OPERATORX14,r_0075_0004__n_apos_t)
       &amp; scope(OPERATORX14) = EVENTX15
-      &amp; isA(EVENTX15,r__do_0075_0003_r__know_0075_0005)
+      &amp; isA(EVENTX15,r_0075_0003__do_know)
       &amp; arg0(EVENTX15) = KIDSX13
       &amp; scope(CONNX12) = OPERATORX18
-      &amp; isA(OPERATORX18,r___apos_ll_0075_0008)
+      &amp; isA(OPERATORX18,r_0075_0008___apos_ll)
       &amp; scope(OPERATORX18) = EVENTX19
-      &amp; isA(EVENTX19,r__have_0075_0009)
+      &amp; isA(EVENTX19,r_0075_0009__have)
       &amp; arg0(EVENTX19) = KIDSX16
       &amp; arg1(EVENTX19) = ENTITYX17 ) ).
 

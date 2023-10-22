@@ -77,7 +77,7 @@ And then we focus on their heads .
 <title>0138_0004&#45;&gt;0138_0007</title>
 <path fill="none" stroke="black" d="M73.09,-174.21C79.64,-162.1 88.61,-145.53 96.06,-131.76"/>
 <polygon fill="black" stroke="black" points="99.25,-133.22 100.93,-122.76 93.09,-129.89 99.25,-133.22"/>
-<text text-anchor="middle" x="115" y="-144.8" font-family="fixed" font-size="14.00">on_[clr]</text>
+<text text-anchor="middle" x="112" y="-144.8" font-family="fixed" font-size="14.00">on[clr]</text>
 </g>
 <!-- 0138_0006 -->
 <g id="node5" class="node">
@@ -96,23 +96,23 @@ And then we focus on their heads .
 </svg>
 <br>
 <pre>
-arc(r__then_0138_0002,r__focus_0138_0004,scope).
-arc(r__focus_0138_0004,r__we_0138_0003,arg0).
-arc(r__focus_0138_0004,r__heads_0138_0007,r__on_0138_0005_clr).
-arc(r__heads_0138_0007,r__their_0138_0006,genv).
+arc(r_0138_0002__then,r_0138_0004__focus,scope).
+arc(r_0138_0004__focus,r_0138_0003__we,arg0).
+arc(r_0138_0004__focus,r_0138_0007__heads,r_0138_0005__on_clr).
+arc(r_0138_0007__heads,r_0138_0006__their,genv).
 
 </pre>
 <br>
 <pre>
 fof(id_138_A_TED_talk_11,axiom,
     ? [OPERATORX1,EVENTX3,ENTITYX2] :
-      ( isA(ENTITYX2,r__heads_0138_0007)
-      &amp; genv(ENTITYX2) = r__their_0138_0006
-      &amp; isA(OPERATORX1,r__then_0138_0002)
+      ( isA(ENTITYX2,r_0138_0007__heads)
+      &amp; genv(ENTITYX2) = r_0138_0006__their
+      &amp; isA(OPERATORX1,r_0138_0002__then)
       &amp; scope(OPERATORX1) = EVENTX3
-      &amp; isA(EVENTX3,r__focus_0138_0004)
-      &amp; arg0(EVENTX3) = r__we_0138_0003
-      &amp; r__on_0138_0005_clr(EVENTX3) = ENTITYX2 ) ).
+      &amp; isA(EVENTX3,r_0138_0004__focus)
+      &amp; arg0(EVENTX3) = r_0138_0003__we
+      &amp; r_0138_0005__on_clr(EVENTX3) = ENTITYX2 ) ).
 
 
 </pre>

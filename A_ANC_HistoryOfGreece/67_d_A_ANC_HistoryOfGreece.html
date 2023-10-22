@@ -161,15 +161,15 @@ A series of disastrous decisions at the beginning of the 20th century began to s
 </svg>
 <br>
 <pre>
-arc(r__series_0110_0002,r__decisions_0110_0005,r__of_0110_0003).
-arc(r__decisions_0110_0005,r__disastrous_0110_0004,attrib1).
-arc(r__decisions_0110_0005,r__beginning_0110_0008,r__at_0110_0006).
-arc(r__beginning_0110_0008,r__century_0110_0012,r__of_0110_0009).
-arc(r__century_0110_0012,r__20th_0110_0011,attrib2).
-arc(r__began_0110_0013,r__sound_0110_0015,catenative).
-arc(r__sound_0110_0015,r__series_0110_0002,arg0).
-arc(r__sound_0110_0015,r__death_0110_0017_r__knell_0110_0018,arg1).
-arc(r__death_0110_0017_r__knell_0110_0018,r__Ottoman_0110_0021_r__Empire_0110_0022,r__for_0110_0019).
+arc(r_0110_0002__series,r_0110_0005__decisions,r_0110_0003__of).
+arc(r_0110_0005__decisions,r_0110_0004__disastrous,attrib1).
+arc(r_0110_0005__decisions,r_0110_0008__beginning,r_0110_0006__at).
+arc(r_0110_0008__beginning,r_0110_0012__century,r_0110_0009__of).
+arc(r_0110_0012__century,r_0110_0011__20th,attrib2).
+arc(r_0110_0013__began,r_0110_0015__sound,catenative).
+arc(r_0110_0015__sound,r_0110_0002__series,arg0).
+arc(r_0110_0015__sound,r_0110_0017__death_knell,arg1).
+arc(r_0110_0017__death_knell,r_0110_0021__Ottoman_Empire,r_0110_0019__for).
 
 </pre>
 <br>
@@ -177,24 +177,24 @@ arc(r__death_0110_0017_r__knell_0110_0018,r__Ottoman_0110_0021_r__Empire_0110_00
 fof(id_110_A_ANC_HistoryOfGreece,axiom,
     ? [STATEX7,EVENTX10,EVENTX9,ENTITYX1,ENTITYX8,ENTITYX2,ENTITYX4,ENTITYX5,ATTRIBX3,ATTRIBX6] :
       ( STATEX7 = EVENTX9
-      &amp; isA(EVENTX9,r__sound_0110_0015)
+      &amp; isA(EVENTX9,r_0110_0015__sound)
       &amp; arg0(EVENTX9) = ENTITYX1
       &amp; arg1(EVENTX9) = ENTITYX8
-      &amp; isA(ENTITYX1,r__series_0110_0002)
-      &amp; r__of_0110_0003(ENTITYX1) = ENTITYX2
-      &amp; isA(ENTITYX2,r__decisions_0110_0005)
+      &amp; isA(ENTITYX1,r_0110_0002__series)
+      &amp; r_0110_0003__of(ENTITYX1) = ENTITYX2
+      &amp; isA(ENTITYX2,r_0110_0005__decisions)
       &amp; attrib1(ENTITYX2) = ATTRIBX3
-      &amp; r__at_0110_0006(ENTITYX2) = ENTITYX4
-      &amp; isA(ENTITYX4,r__beginning_0110_0008)
-      &amp; r__of_0110_0009(ENTITYX4) = ENTITYX5
-      &amp; isA(ENTITYX5,r__century_0110_0012)
+      &amp; r_0110_0006__at(ENTITYX2) = ENTITYX4
+      &amp; isA(ENTITYX4,r_0110_0008__beginning)
+      &amp; r_0110_0009__of(ENTITYX4) = ENTITYX5
+      &amp; isA(ENTITYX5,r_0110_0012__century)
       &amp; attrib2(ENTITYX5) = ATTRIBX6
-      &amp; isA(ENTITYX8,r__death_0110_0017_r__knell_0110_0018)
-      &amp; r__for_0110_0019(ENTITYX8) = r__Ottoman_0110_0021_r__Empire_0110_0022
-      &amp; isA(ATTRIBX3,r__disastrous_0110_0004)
-      &amp; isA(ATTRIBX6,r__20th_0110_0011)
-      &amp; isA(r__Ottoman_0110_0021_r__Empire_0110_0022,r__Ottoman_0110_0021_r__Empire_0110_0022)
-      &amp; isA(EVENTX10,r__began_0110_0013)
+      &amp; isA(ENTITYX8,r_0110_0017__death_knell)
+      &amp; r_0110_0019__for(ENTITYX8) = r_0110_0021__Ottoman_Empire
+      &amp; isA(ATTRIBX3,r_0110_0004__disastrous)
+      &amp; isA(ATTRIBX6,r_0110_0011__20th)
+      &amp; isA(r_0110_0021__Ottoman_Empire,r_0110_0021__Ottoman_Empire)
+      &amp; isA(EVENTX10,r_0110_0013__began)
       &amp; catenative(EVENTX10) = STATEX7 ) ).
 
 

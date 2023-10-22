@@ -123,19 +123,19 @@ Phones were being tapped and going out of action ;
 <title>0054_0006&#45;&gt;0054_0008</title>
 <path fill="none" stroke="black" d="M148.1,-175.8C163.72,-162.39 186.68,-142.67 204.22,-127.62"/>
 <polygon fill="black" stroke="black" points="206.54,-130.23 211.85,-121.06 201.98,-124.92 206.54,-130.23"/>
-<text text-anchor="middle" x="225.4" y="-144.8" font-family="fixed" font-size="14.00">out_of_[clr]</text>
+<text text-anchor="middle" x="221.9" y="-144.8" font-family="fixed" font-size="14.00">out_of[clr]</text>
 </g>
 </g>
 </svg>
 <br>
 <pre>
-arc(r__were_0054_0002,r__and_0054_0005,catenative).
-arc(r__being_0054_0003,r__tapped_0054_0004,catenative).
-arc(r__tapped_0054_0004,r__Phones_0054_0001,arg1).
-arc(r__and_0054_0005,r__being_0054_0003,conj1).
-arc(r__and_0054_0005,r__going_0054_0006,conj2).
-arc(r__going_0054_0006,r__Phones_0054_0001,arg0).
-arc(r__going_0054_0006,r__action_0054_0008,r__out_of_0054_0007_clr).
+arc(r_0054_0002__were,r_0054_0005__and,catenative).
+arc(r_0054_0003__being,r_0054_0004__tapped,catenative).
+arc(r_0054_0004__tapped,r_0054_0001__Phones,arg1).
+arc(r_0054_0005__and,r_0054_0003__being,conj1).
+arc(r_0054_0005__and,r_0054_0006__going,conj2).
+arc(r_0054_0006__going,r_0054_0001__Phones,arg0).
+arc(r_0054_0006__going,r_0054_0008__action,r_0054_0007__out_of_clr).
 
 </pre>
 <br>
@@ -143,20 +143,20 @@ arc(r__going_0054_0006,r__action_0054_0008,r__out_of_0054_0007_clr).
 fof(id_54_A_lob_A02,axiom,
     ? [CATENATIVEX2,CATENATIVEX3,EVENTX10,CONJX9,EVENTX8,EVENTX6,EVENTX5,ENTITYX1,ENTITYX7] :
       ( CATENATIVEX2 = CONJX9
-      &amp; isA(CONJX9,r__and_0054_0005)
+      &amp; isA(CONJX9,r_0054_0005__and)
       &amp; conj1(CONJX9) = EVENTX6
-      &amp; isA(EVENTX6,r__being_0054_0003)
+      &amp; isA(EVENTX6,r_0054_0003__being)
       &amp; catenative(EVENTX6) = CATENATIVEX3
       &amp; conj2(CONJX9) = EVENTX8
-      &amp; isA(EVENTX8,r__going_0054_0006)
+      &amp; isA(EVENTX8,r_0054_0006__going)
       &amp; arg0(EVENTX8) = ENTITYX1
-      &amp; r__out_of_0054_0007_clr(EVENTX8) = ENTITYX7
+      &amp; r_0054_0007__out_of_clr(EVENTX8) = ENTITYX7
       &amp; CATENATIVEX3 = EVENTX5
-      &amp; isA(EVENTX5,r__tapped_0054_0004)
+      &amp; isA(EVENTX5,r_0054_0004__tapped)
       &amp; arg1(EVENTX5) = ENTITYX1
-      &amp; isA(ENTITYX1,r__Phones_0054_0001)
-      &amp; isA(ENTITYX7,r__action_0054_0008)
-      &amp; isA(EVENTX10,r__were_0054_0002)
+      &amp; isA(ENTITYX1,r_0054_0001__Phones)
+      &amp; isA(ENTITYX7,r_0054_0008__action)
+      &amp; isA(EVENTX10,r_0054_0002__were)
       &amp; catenative(EVENTX10) = CATENATIVEX2 ) ).
 
 

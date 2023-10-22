@@ -103,7 +103,7 @@ No one spoke : we all gazed at the empty fireplace .
 <title>0117_0007&#45;&gt;0117_0011</title>
 <path fill="none" stroke="black" d="M239.11,-176.13C246.85,-170.07 255.72,-162.89 263.44,-156 272.79,-147.65 282.64,-138.01 291.09,-129.44"/>
 <polygon fill="black" stroke="black" points="293.64,-131.84 298.12,-122.23 288.63,-126.95 293.64,-131.84"/>
-<text text-anchor="middle" x="303.44" y="-144.8" font-family="fixed" font-size="14.00">at_[dir]</text>
+<text text-anchor="middle" x="299.94" y="-144.8" font-family="fixed" font-size="14.00">at[dir]</text>
 </g>
 <!-- 0117_0010 -->
 <g id="node7" class="node">
@@ -142,14 +142,14 @@ No one spoke : we all gazed at the empty fireplace .
 </svg>
 <br>
 <pre>
-arc(quantificational_r__No_0117_0001,r__one_0117_0002,restriction).
-arc(quantificational_r__No_0117_0001,r__spoke_0117_0003,scope).
-arc(r__spoke_0117_0003,r__one_0117_0002,arg0).
-arc(r__spoke_0117_0003,r__gazed_0117_0007,prn4).
-arc(r__gazed_0117_0007,r__we_0117_0005,arg0).
-arc(r__gazed_0117_0007,r__all_0117_0006,mnr2).
-arc(r__gazed_0117_0007,r__fireplace_0117_0011,r__at_0117_0008_dir).
-arc(r__fireplace_0117_0011,r__empty_0117_0010,attrib2).
+arc(r_0117_0001__quantificational__No,r_0117_0002__one,restriction).
+arc(r_0117_0001__quantificational__No,r_0117_0003__spoke,scope).
+arc(r_0117_0003__spoke,r_0117_0002__one,arg0).
+arc(r_0117_0003__spoke,r_0117_0007__gazed,prn4).
+arc(r_0117_0007__gazed,r_0117_0005__we,arg0).
+arc(r_0117_0007__gazed,r_0117_0006__all,mnr2).
+arc(r_0117_0007__gazed,r_0117_0011__fireplace,r_0117_0008__at_dir).
+arc(r_0117_0011__fireplace,r_0117_0010__empty,attrib2).
 
 </pre>
 <br>
@@ -157,19 +157,19 @@ arc(r__fireplace_0117_0011,r__empty_0117_0010,attrib2).
 fof(id_117_A_JOYCE_1914,axiom,
     ? [EVENTX3,QUANTX2,EVENTX8,EVENTX7,PERSONSX1,ENTITYX5,QUALITYX4,ATTRIBX6] :
       ( EVENTX3 = EVENTX7
-      &amp; isA(EVENTX7,r__gazed_0117_0007)
-      &amp; arg0(EVENTX7) = r__we_0117_0005
+      &amp; isA(EVENTX7,r_0117_0007__gazed)
+      &amp; arg0(EVENTX7) = r_0117_0005__we
       &amp; mnr2(EVENTX7) = QUALITYX4
-      &amp; r__at_0117_0008_dir(EVENTX7) = ENTITYX5
-      &amp; isA(ENTITYX5,r__fireplace_0117_0011)
+      &amp; r_0117_0008__at_dir(EVENTX7) = ENTITYX5
+      &amp; isA(ENTITYX5,r_0117_0011__fireplace)
       &amp; attrib2(ENTITYX5) = ATTRIBX6
-      &amp; isA(QUALITYX4,r__all_0117_0006)
-      &amp; isA(ATTRIBX6,r__empty_0117_0010)
-      &amp; isA(QUANTX2,quantificational_r__No_0117_0001)
+      &amp; isA(QUALITYX4,r_0117_0006__all)
+      &amp; isA(ATTRIBX6,r_0117_0010__empty)
+      &amp; isA(QUANTX2,r_0117_0001__quantificational__No)
       &amp; restriction(QUANTX2) = PERSONSX1
-      &amp; isA(PERSONSX1,r__one_0117_0002)
+      &amp; isA(PERSONSX1,r_0117_0002__one)
       &amp; scope(QUANTX2) = EVENTX8
-      &amp; isA(EVENTX8,r__spoke_0117_0003)
+      &amp; isA(EVENTX8,r_0117_0003__spoke)
       &amp; arg0(EVENTX8) = PERSONSX1
       &amp; prn4(EVENTX8) = EVENTX3 ) ).
 

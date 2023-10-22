@@ -116,18 +116,18 @@ NINJAL 's role is to promote humanities research focused on language .
 <title>0006_0009&#45;&gt;0006_0011</title>
 <path fill="none" stroke="black" d="M340.43,-87.21C347.27,-75.1 356.62,-58.53 364.4,-44.76"/>
 <polygon fill="black" stroke="black" points="367.61,-46.19 369.48,-35.76 361.52,-42.74 367.61,-46.19"/>
-<text text-anchor="middle" x="383.95" y="-57.8" font-family="fixed" font-size="14.00">on_[clr]</text>
+<text text-anchor="middle" x="380.95" y="-57.8" font-family="fixed" font-size="14.00">on[clr]</text>
 </g>
 </g>
 </svg>
 <br>
 <pre>
-arc(r__role_0006_0003,r__NINJAL_0006_0001,genv).
-arc(r__is_0006_0004,r__role_0006_0003,arg0).
-arc(r__is_0006_0004,r__promote_0006_0006,prd2).
-arc(r__promote_0006_0006,r__humanities_0006_0007_r__research_0006_0008,arg1).
-arc(r__focused_0006_0009,r__humanities_0006_0007_r__research_0006_0008,arg1).
-arc(r__focused_0006_0009,r__language_0006_0011,r__on_0006_0010_clr).
+arc(r_0006_0003__role,r_0006_0001__NINJAL,genv).
+arc(r_0006_0004__is,r_0006_0003__role,arg0).
+arc(r_0006_0004__is,r_0006_0006__promote,prd2).
+arc(r_0006_0006__promote,r_0006_0007__humanities_research,arg1).
+arc(r_0006_0009__focused,r_0006_0007__humanities_research,arg1).
+arc(r_0006_0009__focused,r_0006_0011__language,r_0006_0010__on_clr).
 
 </pre>
 <br>
@@ -135,16 +135,16 @@ arc(r__focused_0006_0009,r__language_0006_0011,r__on_0006_0010_clr).
 fof(id_6_A_NINJAL_mission,axiom,
     ? [STATEX2,EVENTX10,EVENTX9,EVENTX8,ENTITYX1,ENTITYX5,ENTITYX7] :
       ( STATEX2 = EVENTX9
-      &amp; isA(EVENTX9,r__promote_0006_0006)
+      &amp; isA(EVENTX9,r_0006_0006__promote)
       &amp; arg1(EVENTX9) = ENTITYX5
-      &amp; isA(ENTITYX1,r__role_0006_0003)
-      &amp; genv(ENTITYX1) = r__NINJAL_0006_0001
-      &amp; isA(EVENTX8,r__focused_0006_0009)
+      &amp; isA(ENTITYX1,r_0006_0003__role)
+      &amp; genv(ENTITYX1) = r_0006_0001__NINJAL
+      &amp; isA(EVENTX8,r_0006_0009__focused)
       &amp; arg1(EVENTX8) = ENTITYX5
-      &amp; r__on_0006_0010_clr(EVENTX8) = ENTITYX7
-      &amp; isA(ENTITYX5,r__humanities_0006_0007_r__research_0006_0008)
-      &amp; isA(ENTITYX7,r__language_0006_0011)
-      &amp; isA(EVENTX10,r__is_0006_0004)
+      &amp; r_0006_0010__on_clr(EVENTX8) = ENTITYX7
+      &amp; isA(ENTITYX5,r_0006_0007__humanities_research)
+      &amp; isA(ENTITYX7,r_0006_0011__language)
+      &amp; isA(EVENTX10,r_0006_0004__is)
       &amp; arg0(EVENTX10) = ENTITYX1
       &amp; prd2(EVENTX10) = STATEX2 ) ).
 

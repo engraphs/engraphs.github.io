@@ -103,7 +103,7 @@ A rise of oxygen concentration from 1-2 p.p.m is accompanied by a voltage drop o
 <title>0026_0010&#45;&gt;0026_0013_0026_0014</title>
 <path fill="none" stroke="black" d="M420.69,-260.8C420.83,-249.16 421.01,-233.55 421.17,-220.24"/>
 <polygon fill="black" stroke="black" points="424.67,-220.22 421.29,-210.18 417.67,-220.13 424.67,-220.22"/>
-<text text-anchor="middle" x="468.99" y="-231.8" font-family="fixed" font-size="14.00">[arg0]by_[lgs]</text>
+<text text-anchor="middle" x="465.99" y="-231.8" font-family="fixed" font-size="14.00">[arg0]by[lgs]</text>
 </g>
 <!-- 0026_0016_0026_0017 -->
 <g id="node7" class="node">
@@ -121,13 +121,13 @@ A rise of oxygen concentration from 1-2 p.p.m is accompanied by a voltage drop o
 <!-- 0026_0018_cnt -->
 <g id="node8" class="node">
 <title>0026_0018_cnt</title>
-<ellipse fill="none" stroke="black" cx="487.49" cy="-453" rx="59.59" ry="18"/>
-<text text-anchor="middle" x="487.49" y="-449.3" font-family="fixed" font-size="14.00">while_[cnt]</text>
+<ellipse fill="none" stroke="black" cx="487.49" cy="-453" rx="55.49" ry="18"/>
+<text text-anchor="middle" x="487.49" y="-449.3" font-family="fixed" font-size="14.00">while[cnt]</text>
 </g>
 <!-- 0026_0018_cnt&#45;&gt;0026_0009 -->
 <g id="edge7" class="edge">
 <title>0026_0018_cnt&#45;&gt;0026_0009</title>
-<path fill="none" stroke="black" d="M470.37,-435.42C465.57,-429.96 460.78,-423.59 457.49,-417 454,-410 451.61,-401.9 449.97,-394.29"/>
+<path fill="none" stroke="black" d="M470.69,-435.78C465.78,-430.24 460.85,-423.73 457.49,-417 454,-410 451.61,-401.9 449.97,-394.29"/>
 <polygon fill="black" stroke="black" points="453.4,-393.58 448.18,-384.36 446.51,-394.83 453.4,-393.58"/>
 <text text-anchor="middle" x="483.49" y="-405.8" font-family="fixed" font-size="14.00">[scope]</text>
 </g>
@@ -226,20 +226,20 @@ A rise of oxygen concentration from 1-2 p.p.m is accompanied by a voltage drop o
 </svg>
 <br>
 <pre>
-arc(r__rise_0026_0002,r__oxygen_0026_0004_r__concentration_0026_0005,r__of_0026_0003).
-arc(r__rise_0026_0002,r__1_2_0026_0007_r__p.p.m_0026_0008,r__from_0026_0006).
-arc(r__is_0026_0009,r__accompanied_0026_0010,catenative).
-arc(r__accompanied_0026_0010,r__rise_0026_0002,arg1).
-arc(r__accompanied_0026_0010,r__voltage_0026_0013_r__drop_0026_0014,arg0_r__by_0026_0011_lgs).
-arc(r__voltage_0026_0013_r__drop_0026_0014,r__1723_0026_0016_r__mv_0026_0017,r__of_0026_0015).
-arc(r__while_0026_0018_cnt,r__is_0026_0009,scope).
-arc(r__while_0026_0018_cnt,r__would_0026_0025,restriction).
-arc(r__rise_0026_0021,r__9_10_0026_0023_r__p.p.m_0026_0024,r__from_0026_0022).
-arc(r__would_0026_0025,r__produce_0026_0026,scope).
-arc(r__produce_0026_0026,r__rise_0026_0021,arg0).
-arc(r__produce_0026_0026,r__change_0026_0028,arg1).
-arc(r__change_0026_0028,r__173_0026_0031_r__mv_0026_0032,r__of_0026_0029).
-arc(r__173_0026_0031_r__mv_0026_0032,r__only_0026_0030,quality1).
+arc(r_0026_0002__rise,r_0026_0004__oxygen_concentration,r_0026_0003__of).
+arc(r_0026_0002__rise,r_0026_0007__1_2_p.p.m,r_0026_0006__from).
+arc(r_0026_0009__is,r_0026_0010__accompanied,catenative).
+arc(r_0026_0010__accompanied,r_0026_0002__rise,arg1).
+arc(r_0026_0010__accompanied,r_0026_0013__voltage_drop,arg0_by_lgs).
+arc(r_0026_0013__voltage_drop,r_0026_0016__1723_mv,r_0026_0015__of).
+arc(r_0026_0018__while_cnt,r_0026_0009__is,scope).
+arc(r_0026_0018__while_cnt,r_0026_0025__would,restriction).
+arc(r_0026_0021__rise,r_0026_0023__9_10_p.p.m,r_0026_0022__from).
+arc(r_0026_0025__would,r_0026_0026__produce,scope).
+arc(r_0026_0026__produce,r_0026_0021__rise,arg0).
+arc(r_0026_0026__produce,r_0026_0028__change,arg1).
+arc(r_0026_0028__change,r_0026_0031__173_mv,r_0026_0029__of).
+arc(r_0026_0031__173_mv,r_0026_0030__only,quality1).
 
 </pre>
 <br>
@@ -247,33 +247,33 @@ arc(r__173_0026_0031_r__mv_0026_0032,r__only_0026_0030,quality1).
 fof(id_26_A_lob_J01,axiom,
     ? [CATENATIVEX12,CONNX4,OPERATORX10,EVENTX11,EVENTX16,EVENTX15,ENTITYX1,ENTITYX5,ENTITYX7,ENTITYX8,ENTITYX6,ENTITYX13,ENTITYX14,ENTITYX2,ENTITYX3,QUALITYX9] :
       ( CATENATIVEX12 = EVENTX15
-      &amp; isA(EVENTX15,r__accompanied_0026_0010)
-      &amp; arg0_r__by_0026_0011_lgs(EVENTX15) = ENTITYX13
+      &amp; isA(EVENTX15,r_0026_0010__accompanied)
+      &amp; arg0_by_lgs(EVENTX15) = ENTITYX13
       &amp; arg1(EVENTX15) = ENTITYX1
-      &amp; isA(ENTITYX1,r__rise_0026_0002)
-      &amp; r__of_0026_0003(ENTITYX1) = ENTITYX2
-      &amp; r__from_0026_0006(ENTITYX1) = ENTITYX3
-      &amp; isA(ENTITYX2,r__oxygen_0026_0004_r__concentration_0026_0005)
-      &amp; isA(ENTITYX3,r__1_2_0026_0007_r__p.p.m_0026_0008)
-      &amp; isA(ENTITYX13,r__voltage_0026_0013_r__drop_0026_0014)
-      &amp; r__of_0026_0015(ENTITYX13) = ENTITYX14
-      &amp; isA(ENTITYX14,r__1723_0026_0016_r__mv_0026_0017)
-      &amp; isA(ENTITYX5,r__rise_0026_0021)
-      &amp; r__from_0026_0022(ENTITYX5) = ENTITYX6
-      &amp; isA(ENTITYX6,r__9_10_0026_0023_r__p.p.m_0026_0024)
-      &amp; isA(ENTITYX7,r__change_0026_0028)
-      &amp; r__of_0026_0029(ENTITYX7) = ENTITYX8
-      &amp; isA(ENTITYX8,r__173_0026_0031_r__mv_0026_0032)
+      &amp; isA(ENTITYX1,r_0026_0002__rise)
+      &amp; r_0026_0003__of(ENTITYX1) = ENTITYX2
+      &amp; r_0026_0006__from(ENTITYX1) = ENTITYX3
+      &amp; isA(ENTITYX2,r_0026_0004__oxygen_concentration)
+      &amp; isA(ENTITYX3,r_0026_0007__1_2_p.p.m)
+      &amp; isA(ENTITYX13,r_0026_0013__voltage_drop)
+      &amp; r_0026_0015__of(ENTITYX13) = ENTITYX14
+      &amp; isA(ENTITYX14,r_0026_0016__1723_mv)
+      &amp; isA(ENTITYX5,r_0026_0021__rise)
+      &amp; r_0026_0022__from(ENTITYX5) = ENTITYX6
+      &amp; isA(ENTITYX6,r_0026_0023__9_10_p.p.m)
+      &amp; isA(ENTITYX7,r_0026_0028__change)
+      &amp; r_0026_0029__of(ENTITYX7) = ENTITYX8
+      &amp; isA(ENTITYX8,r_0026_0031__173_mv)
       &amp; quality1(ENTITYX8) = QUALITYX9
-      &amp; isA(QUALITYX9,r__only_0026_0030)
-      &amp; isA(CONNX4,r__while_0026_0018_cnt)
+      &amp; isA(QUALITYX9,r_0026_0030__only)
+      &amp; isA(CONNX4,r_0026_0018__while_cnt)
       &amp; scope(CONNX4) = EVENTX16
-      &amp; isA(EVENTX16,r__is_0026_0009)
+      &amp; isA(EVENTX16,r_0026_0009__is)
       &amp; catenative(EVENTX16) = CATENATIVEX12
       &amp; restriction(CONNX4) = OPERATORX10
-      &amp; isA(OPERATORX10,r__would_0026_0025)
+      &amp; isA(OPERATORX10,r_0026_0025__would)
       &amp; scope(OPERATORX10) = EVENTX11
-      &amp; isA(EVENTX11,r__produce_0026_0026)
+      &amp; isA(EVENTX11,r_0026_0026__produce)
       &amp; arg0(EVENTX11) = ENTITYX5
       &amp; arg1(EVENTX11) = ENTITYX7 ) ).
 

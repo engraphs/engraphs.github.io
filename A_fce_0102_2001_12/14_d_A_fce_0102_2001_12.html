@@ -90,7 +90,7 @@ An English language club is starting in your area .
 <title>0015_0006&#45;&gt;0015_0009</title>
 <path fill="none" stroke="black" d="M150.19,-174.61C159.55,-161.99 172.62,-144.34 183.17,-130.11"/>
 <polygon fill="black" stroke="black" points="186.22,-131.88 189.36,-121.76 180.59,-127.71 186.22,-131.88"/>
-<text text-anchor="middle" x="199.04" y="-144.8" font-family="fixed" font-size="14.00">in_[loc]</text>
+<text text-anchor="middle" x="195.54" y="-144.8" font-family="fixed" font-size="14.00">in[loc]</text>
 </g>
 <!-- 0015_0008 -->
 <g id="node6" class="node">
@@ -109,11 +109,11 @@ An English language club is starting in your area .
 </svg>
 <br>
 <pre>
-arc(r__language_0015_0003_r__club_0015_0004,r__English_0015_0002,attrib2).
-arc(r__is_0015_0005,r__starting_0015_0006,catenative).
-arc(r__starting_0015_0006,r__language_0015_0003_r__club_0015_0004,arg0).
-arc(r__starting_0015_0006,r__area_0015_0009,r__in_0015_0007_loc).
-arc(r__area_0015_0009,r__your_0015_0008,genv).
+arc(r_0015_0003__language_club,r_0015_0002__English,attrib2).
+arc(r_0015_0005__is,r_0015_0006__starting,catenative).
+arc(r_0015_0006__starting,r_0015_0003__language_club,arg0).
+arc(r_0015_0006__starting,r_0015_0009__area,r_0015_0007__in_loc).
+arc(r_0015_0009__area,r_0015_0008__your,genv).
 
 </pre>
 <br>
@@ -121,15 +121,15 @@ arc(r__area_0015_0009,r__your_0015_0008,genv).
 fof(id_15_A_fce_0102_2001_12,axiom,
     ? [CATENATIVEX3,EVENTX6,EVENTX5,ENTITYX1,ENTITYX4,ATTRIBX2] :
       ( CATENATIVEX3 = EVENTX5
-      &amp; isA(EVENTX5,r__starting_0015_0006)
+      &amp; isA(EVENTX5,r_0015_0006__starting)
       &amp; arg0(EVENTX5) = ENTITYX1
-      &amp; r__in_0015_0007_loc(EVENTX5) = ENTITYX4
-      &amp; isA(ENTITYX1,r__language_0015_0003_r__club_0015_0004)
+      &amp; r_0015_0007__in_loc(EVENTX5) = ENTITYX4
+      &amp; isA(ENTITYX1,r_0015_0003__language_club)
       &amp; attrib2(ENTITYX1) = ATTRIBX2
-      &amp; isA(ENTITYX4,r__area_0015_0009)
-      &amp; genv(ENTITYX4) = r__your_0015_0008
-      &amp; isA(ATTRIBX2,r__English_0015_0002)
-      &amp; isA(EVENTX6,r__is_0015_0005)
+      &amp; isA(ENTITYX4,r_0015_0009__area)
+      &amp; genv(ENTITYX4) = r_0015_0008__your
+      &amp; isA(ATTRIBX2,r_0015_0002__English)
+      &amp; isA(EVENTX6,r_0015_0005__is)
       &amp; catenative(EVENTX6) = CATENATIVEX3 ) ).
 
 

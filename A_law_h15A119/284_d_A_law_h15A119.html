@@ -116,7 +116,7 @@
 <title>0284_0012&#45;&gt;0284_0015</title>
 <path fill="none" stroke="black" d="M447.13,-173.8C452.05,-161.85 458.69,-145.72 464.26,-132.18"/>
 <polygon fill="black" stroke="black" points="467.52,-133.46 468.09,-122.89 461.05,-130.8 467.52,-133.46"/>
-<text text-anchor="middle" x="486.04" y="-144.8" font-family="fixed" font-size="14.00">in_[cnt]</text>
+<text text-anchor="middle" x="483.04" y="-144.8" font-family="fixed" font-size="14.00">in[cnt]</text>
 </g>
 <!-- 0284_0014 -->
 <g id="node9" class="node">
@@ -195,7 +195,7 @@
 <title>0284_0019&#45;&gt;0284_0021</title>
 <path fill="none" stroke="black" d="M645.34,-173.8C651.14,-161.78 658.99,-145.51 665.54,-131.92"/>
 <polygon fill="black" stroke="black" points="668.85,-133.12 670.04,-122.6 662.54,-130.08 668.85,-133.12"/>
-<text text-anchor="middle" x="684.54" y="-144.8" font-family="fixed" font-size="14.00">to_[clr]</text>
+<text text-anchor="middle" x="681.04" y="-144.8" font-family="fixed" font-size="14.00">to[clr]</text>
 </g>
 <!-- z_0284_1016 -->
 <g id="node14" class="node">
@@ -214,49 +214,49 @@
 </svg>
 <br>
 <pre>
-arc(r__or_0284_0010,r__other_0284_0008,attrib1).
-arc(r__or_0284_0010,r__institutions_0284_0009,conj1).
-arc(r__or_0284_0010,r__organizations_0284_0011,conj2).
-arc(r__engaged_0284_0012,r__or_0284_0010,arg1).
-arc(r__engaged_0284_0012,r__studies_0284_0015,r__in_0284_0013_cnt).
-arc(r__studies_0284_0015,r__academic_0284_0014,attrib1).
-arc(r__or_0284_0017,r__Colleges_0284_0004,conj1).
-arc(r__or_0284_0017,r__universities_0284_0006,conj2).
-arc(r__or_0284_0017,r__or_0284_0010,conj3).
-arc(r__or_0284_0017,r__entities_0284_0018,conj4).
-arc(r__belonging_0284_0019,r__entities_0284_0018,arg0).
-arc(r__belonging_0284_0019,r__them_0284_0021,r__to_0284_0020_clr).
-arc(z_0284_1016,r__or_0284_0017,z_0284_1002).
+arc(r_0284_0010__or,r_0284_0008__other,attrib1).
+arc(r_0284_0010__or,r_0284_0009__institutions,conj1).
+arc(r_0284_0010__or,r_0284_0011__organizations,conj2).
+arc(r_0284_0012__engaged,r_0284_0010__or,arg1).
+arc(r_0284_0012__engaged,r_0284_0015__studies,r_0284_0013__in_cnt).
+arc(r_0284_0015__studies,r_0284_0014__academic,attrib1).
+arc(r_0284_0017__or,r_0284_0004__Colleges,conj1).
+arc(r_0284_0017__or,r_0284_0006__universities,conj2).
+arc(r_0284_0017__or,r_0284_0010__or,conj3).
+arc(r_0284_0017__or,r_0284_0018__entities,conj4).
+arc(r_0284_0019__belonging,r_0284_0018__entities,arg0).
+arc(r_0284_0019__belonging,r_0284_0021__them,r_0284_0020__to_clr).
+arc(z_0284_1016,r_0284_0017__or,z_0284_1002).
 
 </pre>
 <br>
 <pre>
 fof(id_284_A_law_h15A119,axiom,
     ? [EVENTX17,EVENTX15,EVENTX11,ENTITYX3,ENTITYX4,ENTITYX5,ENTITYX6,ENTITYX14,ENTITYX12,ENTITYX13,ENTITYX9,ATTRIBX7,ATTRIBX10] :
-      ( isA(ENTITYX3,r__or_0284_0017)
+      ( isA(ENTITYX3,r_0284_0017__or)
       &amp; conj1(ENTITYX3) = ENTITYX4
       &amp; conj2(ENTITYX3) = ENTITYX5
       &amp; conj3(ENTITYX3) = ENTITYX6
       &amp; conj4(ENTITYX3) = ENTITYX14
-      &amp; isA(ENTITYX4,r__Colleges_0284_0004)
-      &amp; isA(ENTITYX5,r__universities_0284_0006)
-      &amp; isA(EVENTX11,r__engaged_0284_0012)
+      &amp; isA(ENTITYX4,r_0284_0004__Colleges)
+      &amp; isA(ENTITYX5,r_0284_0006__universities)
+      &amp; isA(EVENTX11,r_0284_0012__engaged)
       &amp; arg1(EVENTX11) = ENTITYX6
-      &amp; r__in_0284_0013_cnt(EVENTX11) = ENTITYX9
-      &amp; isA(ENTITYX6,r__or_0284_0010)
+      &amp; r_0284_0013__in_cnt(EVENTX11) = ENTITYX9
+      &amp; isA(ENTITYX6,r_0284_0010__or)
       &amp; attrib1(ENTITYX6) = ATTRIBX7
       &amp; conj1(ENTITYX6) = ENTITYX12
       &amp; conj2(ENTITYX6) = ENTITYX13
-      &amp; isA(ENTITYX9,r__studies_0284_0015)
+      &amp; isA(ENTITYX9,r_0284_0015__studies)
       &amp; attrib1(ENTITYX9) = ATTRIBX10
-      &amp; isA(ENTITYX12,r__institutions_0284_0009)
-      &amp; isA(ENTITYX13,r__organizations_0284_0011)
-      &amp; isA(EVENTX15,r__belonging_0284_0019)
+      &amp; isA(ENTITYX12,r_0284_0009__institutions)
+      &amp; isA(ENTITYX13,r_0284_0011__organizations)
+      &amp; isA(EVENTX15,r_0284_0019__belonging)
       &amp; arg0(EVENTX15) = ENTITYX14
-      &amp; r__to_0284_0020_clr(EVENTX15) = r__them_0284_0021
-      &amp; isA(ENTITYX14,r__entities_0284_0018)
-      &amp; isA(ATTRIBX7,r__other_0284_0008)
-      &amp; isA(ATTRIBX10,r__academic_0284_0014)
+      &amp; r_0284_0020__to_clr(EVENTX15) = r_0284_0021__them
+      &amp; isA(ENTITYX14,r_0284_0018__entities)
+      &amp; isA(ATTRIBX7,r_0284_0008__other)
+      &amp; isA(ATTRIBX10,r_0284_0014__academic)
       &amp; isA(EVENTX17,z_0284_1016)
       &amp; z_0284_1002(EVENTX17) = ENTITYX3 ) ).
 

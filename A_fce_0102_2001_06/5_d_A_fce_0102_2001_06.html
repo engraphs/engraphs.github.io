@@ -142,14 +142,14 @@ Read the message from your teacher , on which you have made some notes .
 </svg>
 <br>
 <pre>
-arc(imperative_0005_1002,r__Read_0005_0001,scope).
-arc(r__Read_0005_0001,r__message_0005_0003,arg1).
-arc(r__message_0005_0003,r__teacher_0005_0006,r__from_0005_0004).
-arc(r__teacher_0005_0006,r__your_0005_0005,genv).
-arc(r__have_0005_0011,r__made_0005_0012,catenative).
-arc(r__made_0005_0012,r__your_0005_0005,arg0).
-arc(r__made_0005_0012,r__notes_0005_0014,arg1).
-arc(r__notes_0005_0014,r__message_0005_0003,r__on_0005_0008).
+arc(imperative_0005_1002,r_0005_0001__Read,scope).
+arc(r_0005_0001__Read,r_0005_0003__message,arg1).
+arc(r_0005_0003__message,r_0005_0006__teacher,r_0005_0004__from).
+arc(r_0005_0006__teacher,r_0005_0005__your,genv).
+arc(r_0005_0011__have,r_0005_0012__made,catenative).
+arc(r_0005_0012__made,r_0005_0005__your,arg0).
+arc(r_0005_0012__made,r_0005_0014__notes,arg1).
+arc(r_0005_0014__notes,r_0005_0003__message,r_0005_0008__on).
 
 </pre>
 <br>
@@ -157,21 +157,21 @@ arc(r__notes_0005_0014,r__message_0005_0003,r__on_0005_0008).
 fof(id_5_A_fce_0102_2001_06,axiom,
     ? [CATENATIVEX7,HEARERX6,OPERATORX2,EVENTX11,EVENTX10,EVENTX9,ENTITYX4,ENTITYX5,ENTITYX8] :
       ( CATENATIVEX7 = EVENTX9
-      &amp; isA(EVENTX9,r__made_0005_0012)
+      &amp; isA(EVENTX9,r_0005_0012__made)
       &amp; arg0(EVENTX9) = HEARERX6
       &amp; arg1(EVENTX9) = ENTITYX8
-      &amp; isA(EVENTX10,r__have_0005_0011)
+      &amp; isA(EVENTX10,r_0005_0011__have)
       &amp; catenative(EVENTX10) = CATENATIVEX7
-      &amp; isA(ENTITYX4,r__message_0005_0003)
-      &amp; r__from_0005_0004(ENTITYX4) = ENTITYX5
-      &amp; isA(ENTITYX5,r__teacher_0005_0006)
-      &amp; genv(ENTITYX5) = r__your_0005_0005
-      &amp; HEARERX6 = r__your_0005_0005
-      &amp; isA(ENTITYX8,r__notes_0005_0014)
-      &amp; r__on_0005_0008(ENTITYX8) = ENTITYX4
+      &amp; isA(ENTITYX4,r_0005_0003__message)
+      &amp; r_0005_0004__from(ENTITYX4) = ENTITYX5
+      &amp; isA(ENTITYX5,r_0005_0006__teacher)
+      &amp; genv(ENTITYX5) = r_0005_0005__your
+      &amp; HEARERX6 = r_0005_0005__your
+      &amp; isA(ENTITYX8,r_0005_0014__notes)
+      &amp; r_0005_0008__on(ENTITYX8) = ENTITYX4
       &amp; isA(OPERATORX2,imperative_0005_1002)
       &amp; scope(OPERATORX2) = EVENTX11
-      &amp; isA(EVENTX11,r__Read_0005_0001)
+      &amp; isA(EVENTX11,r_0005_0001__Read)
       &amp; arg1(EVENTX11) = ENTITYX4 ) ).
 
 

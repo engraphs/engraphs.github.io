@@ -43,8 +43,8 @@ The latter as might be expected vary considerably .
 <!-- 0025_0003_mod -->
 <g id="node2" class="node">
 <title>0025_0003_mod</title>
-<ellipse fill="none" stroke="black" cx="111" cy="-279" rx="51.99" ry="18"/>
-<text text-anchor="middle" x="111" y="-275.3" font-family="fixed" font-size="14.00">as_[mod]</text>
+<ellipse fill="none" stroke="black" cx="111" cy="-279" rx="48.19" ry="18"/>
+<text text-anchor="middle" x="111" y="-275.3" font-family="fixed" font-size="14.00">as[mod]</text>
 </g>
 <!-- 0025_0004 -->
 <g id="node3" class="node">
@@ -55,7 +55,7 @@ The latter as might be expected vary considerably .
 <!-- 0025_0003_mod&#45;&gt;0025_0004 -->
 <g id="edge1" class="edge">
 <title>0025_0003_mod&#45;&gt;0025_0004</title>
-<path fill="none" stroke="black" d="M81.95,-263.9C73.83,-258.51 65.89,-251.55 61,-243 57.13,-236.25 55.47,-228.11 54.96,-220.39"/>
+<path fill="none" stroke="black" d="M82.74,-264.42C74.34,-258.96 66.05,-251.83 61,-243 57.13,-236.25 55.47,-228.11 54.96,-220.39"/>
 <polygon fill="black" stroke="black" points="58.46,-220.24 54.86,-210.27 51.46,-220.31 58.46,-220.24"/>
 <text text-anchor="middle" x="101.5" y="-231.8" font-family="fixed" font-size="14.00">[restriction]</text>
 </g>
@@ -135,13 +135,13 @@ The latter as might be expected vary considerably .
 </svg>
 <br>
 <pre>
-arc(r__as_0025_0003_mod,r__might_0025_0004,restriction).
-arc(r__as_0025_0003_mod,r__vary_0025_0007,scope).
-arc(r__might_0025_0004,r__be_0025_0005,scope).
-arc(r__be_0025_0005,r__expected_0025_0006,catenative).
-arc(r__vary_0025_0007,r__considerably_0025_0008,mnr4).
-arc(r__vary_0025_0007,z_0025_1003,arg0).
-arc(z_0025_1003,r__latter_0025_0002,attrib2).
+arc(r_0025_0003__as_mod,r_0025_0004__might,restriction).
+arc(r_0025_0003__as_mod,r_0025_0007__vary,scope).
+arc(r_0025_0004__might,r_0025_0005__be,scope).
+arc(r_0025_0005__be,r_0025_0006__expected,catenative).
+arc(r_0025_0007__vary,r_0025_0008__considerably,mnr4).
+arc(r_0025_0007__vary,z_0025_1003,arg0).
+arc(z_0025_1003,r_0025_0002__latter,attrib2).
 
 </pre>
 <br>
@@ -149,19 +149,19 @@ arc(z_0025_1003,r__latter_0025_0002,attrib2).
 fof(id_25_A_lob_J01,axiom,
     ? [CATENATIVEX8,CONNX4,EVENTX13,OPERATORX7,EVENTX11,EVENTX10,ENTITYX1,ATTRIBX2,QUALITYX12] :
       ( CATENATIVEX8 = EVENTX10
-      &amp; isA(EVENTX10,r__expected_0025_0006)
+      &amp; isA(EVENTX10,r_0025_0006__expected)
       &amp; isA(ENTITYX1,z_0025_1003)
       &amp; attrib2(ENTITYX1) = ATTRIBX2
-      &amp; isA(ATTRIBX2,r__latter_0025_0002)
-      &amp; isA(QUALITYX12,r__considerably_0025_0008)
-      &amp; isA(CONNX4,r__as_0025_0003_mod)
+      &amp; isA(ATTRIBX2,r_0025_0002__latter)
+      &amp; isA(QUALITYX12,r_0025_0008__considerably)
+      &amp; isA(CONNX4,r_0025_0003__as_mod)
       &amp; restriction(CONNX4) = OPERATORX7
-      &amp; isA(OPERATORX7,r__might_0025_0004)
+      &amp; isA(OPERATORX7,r_0025_0004__might)
       &amp; scope(OPERATORX7) = EVENTX11
-      &amp; isA(EVENTX11,r__be_0025_0005)
+      &amp; isA(EVENTX11,r_0025_0005__be)
       &amp; catenative(EVENTX11) = CATENATIVEX8
       &amp; scope(CONNX4) = EVENTX13
-      &amp; isA(EVENTX13,r__vary_0025_0007)
+      &amp; isA(EVENTX13,r_0025_0007__vary)
       &amp; arg0(EVENTX13) = ENTITYX1
       &amp; mnr4(EVENTX13) = QUALITYX12 ) ).
 

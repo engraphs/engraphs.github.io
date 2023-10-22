@@ -116,12 +116,12 @@ What do you mean , it fires itself ? &rdquo;
 </svg>
 <br>
 <pre>
-arc(question_0326_1002,r__do_0326_0002_r__mean_0326_0004,scope).
-arc(r__do_0326_0002_r__mean_0326_0004,r__What_0326_0001,arg1).
-arc(r__do_0326_0002_r__mean_0326_0004,r__you_0326_0003,arg0).
-arc(r__do_0326_0002_r__mean_0326_0004,r__fires_0326_0007,prn6).
-arc(r__fires_0326_0007,r__it_0326_0006,arg0).
-arc(r__fires_0326_0007,r__it_0326_0006,rfl).
+arc(question_0326_1002,r_0326_0002__do_mean,scope).
+arc(r_0326_0002__do_mean,r_0326_0001__What,arg1).
+arc(r_0326_0002__do_mean,r_0326_0003__you,arg0).
+arc(r_0326_0002__do_mean,r_0326_0007__fires,prn6).
+arc(r_0326_0007__fires,r_0326_0006__it,arg0).
+arc(r_0326_0007__fires,r_0326_0006__it,rfl).
 
 </pre>
 <br>
@@ -129,16 +129,16 @@ arc(r__fires_0326_0007,r__it_0326_0006,rfl).
 fof(id_326_A_DICK_1952,axiom,
     ? [EVENTX4,GUNX5,OPERATORX2,EVENTX7,EVENTX6,ENTITYX3] :
       ( EVENTX4 = EVENTX6
-      &amp; isA(EVENTX6,r__fires_0326_0007)
-      &amp; arg0(EVENTX6) = r__it_0326_0006
+      &amp; isA(EVENTX6,r_0326_0007__fires)
+      &amp; arg0(EVENTX6) = r_0326_0006__it
       &amp; rfl(EVENTX6) = GUNX5
-      &amp; isA(ENTITYX3,r__What_0326_0001)
-      &amp; GUNX5 = r__it_0326_0006
+      &amp; isA(ENTITYX3,r_0326_0001__What)
+      &amp; GUNX5 = r_0326_0006__it
       &amp; isA(OPERATORX2,question_0326_1002)
       &amp; scope(OPERATORX2) = EVENTX7
-      &amp; isA(EVENTX7,r__do_0326_0002_r__mean_0326_0004)
+      &amp; isA(EVENTX7,r_0326_0002__do_mean)
       &amp; arg1(EVENTX7) = ENTITYX3
-      &amp; arg0(EVENTX7) = r__you_0326_0003
+      &amp; arg0(EVENTX7) = r_0326_0003__you
       &amp; prn6(EVENTX7) = EVENTX4 ) ).
 
 

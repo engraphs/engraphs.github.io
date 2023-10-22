@@ -97,23 +97,23 @@ The hedgehog raises some important environmental questions .
 </svg>
 <br>
 <pre>
-arc(r__raises_0156_0003,r__hedgehog_0156_0002,arg0).
-arc(r__raises_0156_0003,r__questions_0156_0007,arg1).
-arc(r__questions_0156_0007,r__important_0156_0005,attrib2).
-arc(r__questions_0156_0007,r__environmental_0156_0006,attrib3).
+arc(r_0156_0003__raises,r_0156_0002__hedgehog,arg0).
+arc(r_0156_0003__raises,r_0156_0007__questions,arg1).
+arc(r_0156_0007__questions,r_0156_0005__important,attrib2).
+arc(r_0156_0007__questions,r_0156_0006__environmental,attrib3).
 
 </pre>
 <br>
 <pre>
 fof(id_156_A_Hedgehog,axiom,
     ? [EVENTX5,ENTITYX1,ENTITYX2,ATTRIBX3,ATTRIBX4] :
-      ( isA(ENTITYX1,r__hedgehog_0156_0002)
-      &amp; isA(ENTITYX2,r__questions_0156_0007)
+      ( isA(ENTITYX1,r_0156_0002__hedgehog)
+      &amp; isA(ENTITYX2,r_0156_0007__questions)
       &amp; attrib2(ENTITYX2) = ATTRIBX3
       &amp; attrib3(ENTITYX2) = ATTRIBX4
-      &amp; isA(ATTRIBX3,r__important_0156_0005)
-      &amp; isA(ATTRIBX4,r__environmental_0156_0006)
-      &amp; isA(EVENTX5,r__raises_0156_0003)
+      &amp; isA(ATTRIBX3,r_0156_0005__important)
+      &amp; isA(ATTRIBX4,r_0156_0006__environmental)
+      &amp; isA(EVENTX5,r_0156_0003__raises)
       &amp; arg0(EVENTX5) = ENTITYX1
       &amp; arg1(EVENTX5) = ENTITYX2 ) ).
 

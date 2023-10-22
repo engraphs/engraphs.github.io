@@ -135,13 +135,13 @@ However , the basic technique of simulating an NDFA was still used .
 </svg>
 <br>
 <pre>
-arc(r__However_0017_0001,r__was_0017_0010,scope).
-arc(r__technique_0017_0005,r__basic_0017_0004,attrib2).
-arc(r__technique_0017_0005,r__simulating_0017_0007,r__of_0017_0006).
-arc(r__simulating_0017_0007,r__NDFA_0017_0009,arg1).
-arc(r__was_0017_0010,r__used_0017_0012,catenative).
-arc(r__used_0017_0012,r__technique_0017_0005,arg1).
-arc(r__used_0017_0012,r__still_0017_0011,tmp2).
+arc(r_0017_0001__However,r_0017_0010__was,scope).
+arc(r_0017_0005__technique,r_0017_0004__basic,attrib2).
+arc(r_0017_0005__technique,r_0017_0007__simulating,r_0017_0006__of).
+arc(r_0017_0007__simulating,r_0017_0009__NDFA,arg1).
+arc(r_0017_0010__was,r_0017_0012__used,catenative).
+arc(r_0017_0012__used,r_0017_0005__technique,arg1).
+arc(r_0017_0012__used,r_0017_0011__still,tmp2).
 
 </pre>
 <br>
@@ -149,21 +149,21 @@ arc(r__used_0017_0012,r__still_0017_0011,tmp2).
 fof(id_17_A_history_of_qed,axiom,
     ? [EVENTX4,CATENATIVEX8,OPERATORX1,EVENTX12,EVENTX11,EVENTX7,ENTITYX2,ATTRIBX3,QUALITYX10] :
       ( EVENTX4 = EVENTX7
-      &amp; isA(EVENTX7,r__simulating_0017_0007)
-      &amp; arg1(EVENTX7) = r__NDFA_0017_0009
+      &amp; isA(EVENTX7,r_0017_0007__simulating)
+      &amp; arg1(EVENTX7) = r_0017_0009__NDFA
       &amp; CATENATIVEX8 = EVENTX11
-      &amp; isA(EVENTX11,r__used_0017_0012)
+      &amp; isA(EVENTX11,r_0017_0012__used)
       &amp; arg1(EVENTX11) = ENTITYX2
       &amp; tmp2(EVENTX11) = QUALITYX10
-      &amp; isA(ENTITYX2,r__technique_0017_0005)
+      &amp; isA(ENTITYX2,r_0017_0005__technique)
       &amp; attrib2(ENTITYX2) = ATTRIBX3
-      &amp; r__of_0017_0006(ENTITYX2) = EVENTX4
-      &amp; isA(ATTRIBX3,r__basic_0017_0004)
-      &amp; isA(r__NDFA_0017_0009,r__NDFA_0017_0009)
-      &amp; isA(QUALITYX10,r__still_0017_0011)
-      &amp; isA(OPERATORX1,r__However_0017_0001)
+      &amp; r_0017_0006__of(ENTITYX2) = EVENTX4
+      &amp; isA(ATTRIBX3,r_0017_0004__basic)
+      &amp; isA(r_0017_0009__NDFA,r_0017_0009__NDFA)
+      &amp; isA(QUALITYX10,r_0017_0011__still)
+      &amp; isA(OPERATORX1,r_0017_0001__However)
       &amp; scope(OPERATORX1) = EVENTX12
-      &amp; isA(EVENTX12,r__was_0017_0010)
+      &amp; isA(EVENTX12,r_0017_0010__was)
       &amp; catenative(EVENTX12) = CATENATIVEX8 ) ).
 
 

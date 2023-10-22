@@ -103,17 +103,17 @@ I mean , he was seven at some point .
 <title>0102_0005&#45;&gt;0102_0009</title>
 <path fill="none" stroke="black" d="M129.09,-91.31C137.96,-85.04 148.41,-77.1 157,-69 165.38,-61.1 173.71,-51.6 180.73,-43.01"/>
 <polygon fill="black" stroke="black" points="183.51,-45.14 187.01,-35.14 178.03,-40.78 183.51,-45.14"/>
-<text text-anchor="middle" x="199.5" y="-57.8" font-family="fixed" font-size="14.00">at_[tmp]</text>
+<text text-anchor="middle" x="196" y="-57.8" font-family="fixed" font-size="14.00">at[tmp]</text>
 </g>
 </g>
 </svg>
 <br>
 <pre>
-arc(r__mean_0102_0002,r__I_0102_0001,arg0).
-arc(r__mean_0102_0002,r__was_0102_0005,arg1).
-arc(r__was_0102_0005,r__he_0102_0004,arg0).
-arc(r__was_0102_0005,r__seven_0102_0006,prd2).
-arc(r__was_0102_0005,r__point_0102_0009,r__at_0102_0007_tmp).
+arc(r_0102_0002__mean,r_0102_0001__I,arg0).
+arc(r_0102_0002__mean,r_0102_0005__was,arg1).
+arc(r_0102_0005__was,r_0102_0004__he,arg0).
+arc(r_0102_0005__was,r_0102_0006__seven,prd2).
+arc(r_0102_0005__was,r_0102_0009__point,r_0102_0007__at_tmp).
 
 </pre>
 <br>
@@ -121,14 +121,14 @@ arc(r__was_0102_0005,r__point_0102_0009,r__at_0102_0007_tmp).
 fof(id_102_A_TED_talk_11,axiom,
     ? [STATEX1,EVENTX5,EVENTX4,ENTITYX2,ENTITYX3] :
       ( STATEX1 = EVENTX4
-      &amp; isA(EVENTX4,r__was_0102_0005)
-      &amp; arg0(EVENTX4) = r__he_0102_0004
+      &amp; isA(EVENTX4,r_0102_0005__was)
+      &amp; arg0(EVENTX4) = r_0102_0004__he
       &amp; prd2(EVENTX4) = ENTITYX2
-      &amp; r__at_0102_0007_tmp(EVENTX4) = ENTITYX3
-      &amp; isA(ENTITYX2,r__seven_0102_0006)
-      &amp; isA(ENTITYX3,r__point_0102_0009)
-      &amp; isA(EVENTX5,r__mean_0102_0002)
-      &amp; arg0(EVENTX5) = r__I_0102_0001
+      &amp; r_0102_0007__at_tmp(EVENTX4) = ENTITYX3
+      &amp; isA(ENTITYX2,r_0102_0006__seven)
+      &amp; isA(ENTITYX3,r_0102_0009__point)
+      &amp; isA(EVENTX5,r_0102_0002__mean)
+      &amp; arg0(EVENTX5) = r_0102_0001__I
       &amp; arg1(EVENTX5) = STATEX1 ) ).
 
 

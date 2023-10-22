@@ -103,25 +103,25 @@ The gun is no menace at all . &rdquo;
 </svg>
 <br>
 <pre>
-arc(quantificational_r__no_0522_0004,r__menace_0522_0005,restriction).
-arc(quantificational_r__no_0522_0004,r__at_all_0522_0006,scope).
-arc(r__is_0522_0003,r__gun_0522_0002,arg0).
-arc(r__is_0522_0003,r__menace_0522_0005,prd2).
-arc(r__at_all_0522_0006,r__is_0522_0003,scope).
+arc(r_0522_0003__is,r_0522_0002__gun,arg0).
+arc(r_0522_0003__is,r_0522_0005__menace,prd2).
+arc(r_0522_0004__quantificational__no,r_0522_0005__menace,restriction).
+arc(r_0522_0004__quantificational__no,r_0522_0006__at_all,scope).
+arc(r_0522_0006__at_all,r_0522_0003__is,scope).
 
 </pre>
 <br>
 <pre>
 fof(id_522_A_DICK_1952,axiom,
     ? [QUANTX3,OPERATORX4,EVENTX5,ENTITYX1,ENTITYX2] :
-      ( isA(ENTITYX1,r__gun_0522_0002)
-      &amp; isA(QUANTX3,quantificational_r__no_0522_0004)
+      ( isA(ENTITYX1,r_0522_0002__gun)
+      &amp; isA(QUANTX3,r_0522_0004__quantificational__no)
       &amp; restriction(QUANTX3) = ENTITYX2
-      &amp; isA(ENTITYX2,r__menace_0522_0005)
+      &amp; isA(ENTITYX2,r_0522_0005__menace)
       &amp; scope(QUANTX3) = OPERATORX4
-      &amp; isA(OPERATORX4,r__at_all_0522_0006)
+      &amp; isA(OPERATORX4,r_0522_0006__at_all)
       &amp; scope(OPERATORX4) = EVENTX5
-      &amp; isA(EVENTX5,r__is_0522_0003)
+      &amp; isA(EVENTX5,r_0522_0003__is)
       &amp; arg0(EVENTX5) = ENTITYX1
       &amp; prd2(EVENTX5) = ENTITYX2 ) ).
 

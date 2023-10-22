@@ -109,11 +109,11 @@ And the third boy said , &ldquo; Frank sent this . &rdquo;
 </svg>
 <br>
 <pre>
-arc(utterance_0073_1004,r__sent_0073_0009,part1).
-arc(r__said_0073_0005,utterance_0073_1004,arg1).
-arc(r__said_0073_0005,r__third_0073_0003_r__boy_0073_0004,arg0).
-arc(r__sent_0073_0009,r__Frank_0073_0008,arg0).
-arc(r__sent_0073_0009,r__this_0073_0010,arg1).
+arc(r_0073_0005__said,r_0073_0003__third_boy,arg0).
+arc(r_0073_0005__said,utterance_0073_1004,arg1).
+arc(r_0073_0009__sent,r_0073_0008__Frank,arg0).
+arc(r_0073_0009__sent,r_0073_0010__this,arg1).
+arc(utterance_0073_1004,r_0073_0009__sent,part1).
 
 </pre>
 <br>
@@ -123,11 +123,11 @@ fof(id_73_A_TED_talk_11,axiom,
       ( STATEX2 = CONJX6
       &amp; isA(CONJX6,utterance_0073_1004)
       &amp; part1(CONJX6) = EVENTX5
-      &amp; isA(EVENTX5,r__sent_0073_0009)
-      &amp; arg0(EVENTX5) = r__Frank_0073_0008
-      &amp; arg1(EVENTX5) = r__this_0073_0010
-      &amp; isA(KING2X1,r__third_0073_0003_r__boy_0073_0004)
-      &amp; isA(EVENTX7,r__said_0073_0005)
+      &amp; isA(EVENTX5,r_0073_0009__sent)
+      &amp; arg0(EVENTX5) = r_0073_0008__Frank
+      &amp; arg1(EVENTX5) = r_0073_0010__this
+      &amp; isA(KING2X1,r_0073_0003__third_boy)
+      &amp; isA(EVENTX7,r_0073_0005__said)
       &amp; arg0(EVENTX7) = KING2X1
       &amp; arg1(EVENTX7) = STATEX2 ) ).
 

@@ -64,7 +64,7 @@
 <title>0601_0003&#45;&gt;0601_0005</title>
 <path fill="none" stroke="black" d="M123,-260.8C123,-249.16 123,-233.55 123,-220.24"/>
 <polygon fill="black" stroke="black" points="126.5,-220.18 123,-210.18 119.5,-220.18 126.5,-220.18"/>
-<text text-anchor="middle" x="161" y="-231.8" font-family="fixed" font-size="14.00">with_[com]</text>
+<text text-anchor="middle" x="158" y="-231.8" font-family="fixed" font-size="14.00">with[com]</text>
 </g>
 <!-- z_0601_1004 -->
 <g id="node4" class="node">
@@ -75,9 +75,9 @@
 <!-- 0601_0003&#45;&gt;z_0601_1004 -->
 <g id="edge3" class="edge">
 <title>0601_0003&#45;&gt;z_0601_1004</title>
-<path fill="none" stroke="black" d="M156.33,-267.96C171.61,-262.27 189.32,-254.05 203,-243 211.27,-236.31 218.55,-227.28 224.36,-218.72"/>
-<polygon fill="black" stroke="black" points="227.43,-220.42 229.86,-210.11 221.53,-216.65 227.43,-220.42"/>
-<text text-anchor="middle" x="237" y="-231.8" font-family="fixed" font-size="14.00">[mnr]</text>
+<path fill="none" stroke="black" d="M154.2,-266.77C168.09,-260.92 184.17,-252.89 197,-243 206.11,-235.97 214.6,-226.65 221.53,-217.96"/>
+<polygon fill="black" stroke="black" points="224.38,-220 227.67,-209.92 218.82,-215.75 224.38,-220"/>
+<text text-anchor="middle" x="232" y="-231.8" font-family="fixed" font-size="14.00">[mnr]</text>
 </g>
 <!-- 0601_0007 -->
 <g id="node6" class="node">
@@ -109,11 +109,11 @@
 </svg>
 <br>
 <pre>
-arc(r__argues_0601_0003,r__Fomar_0601_0002,arg0).
-arc(r__argues_0601_0003,r__me_0601_0005,r__with_0601_0004_com).
-arc(r__argues_0601_0003,z_0601_1004,mnr).
-arc(r__much_0601_0007,r__too_0601_0006,quality1).
-arc(z_0601_1004,r__much_0601_0007,attrib1).
+arc(r_0601_0003__argues,r_0601_0002__Fomar,arg0).
+arc(r_0601_0003__argues,r_0601_0005__me,r_0601_0004__with_com).
+arc(r_0601_0003__argues,z_0601_1004,mnr).
+arc(r_0601_0007__much,r_0601_0006__too,quality1).
+arc(z_0601_1004,r_0601_0007__much,attrib1).
 
 </pre>
 <br>
@@ -122,12 +122,12 @@ fof(id_601_A_DICK_1952,axiom,
     ? [EVENTX5,ENTITYX1,ATTRIBX2,QUALITYX3] :
       ( isA(ENTITYX1,z_0601_1004)
       &amp; attrib1(ENTITYX1) = ATTRIBX2
-      &amp; isA(ATTRIBX2,r__much_0601_0007)
+      &amp; isA(ATTRIBX2,r_0601_0007__much)
       &amp; quality1(ATTRIBX2) = QUALITYX3
-      &amp; isA(QUALITYX3,r__too_0601_0006)
-      &amp; isA(EVENTX5,r__argues_0601_0003)
-      &amp; arg0(EVENTX5) = r__Fomar_0601_0002
-      &amp; r__with_0601_0004_com(EVENTX5) = r__me_0601_0005
+      &amp; isA(QUALITYX3,r_0601_0006__too)
+      &amp; isA(EVENTX5,r_0601_0003__argues)
+      &amp; arg0(EVENTX5) = r_0601_0002__Fomar
+      &amp; r_0601_0004__with_com(EVENTX5) = r_0601_0005__me
       &amp; mnr(EVENTX5) = ENTITYX1 ) ).
 
 

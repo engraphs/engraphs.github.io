@@ -116,12 +116,12 @@ Very soon you find you are swimming .
 </svg>
 <br>
 <pre>
-arc(r__soon_0006_0002,r__Very_0006_0001,quality1).
-arc(r__find_0006_0004,r__soon_0006_0002,tmp1).
-arc(r__find_0006_0004,r__you_0006_0003,arg0).
-arc(r__find_0006_0004,r__are_0006_0006,arg1).
-arc(r__are_0006_0006,r__swimming_0006_0007,catenative).
-arc(r__swimming_0006_0007,r__you_0006_0003,arg0).
+arc(r_0006_0002__soon,r_0006_0001__Very,quality1).
+arc(r_0006_0004__find,r_0006_0002__soon,tmp1).
+arc(r_0006_0004__find,r_0006_0003__you,arg0).
+arc(r_0006_0004__find,r_0006_0006__are,arg1).
+arc(r_0006_0006__are,r_0006_0007__swimming,catenative).
+arc(r_0006_0007__swimming,r_0006_0003__you,arg0).
 
 </pre>
 <br>
@@ -129,18 +129,18 @@ arc(r__swimming_0006_0007,r__you_0006_0003,arg0).
 fof(id_6_A_stories_09_M14,axiom,
     ? [STATEX3,CATENATIVEX5,HEARERX4,EVENTX8,EVENTX7,EVENTX6,QUALITYX1,QUALITYX2] :
       ( STATEX3 = EVENTX7
-      &amp; isA(EVENTX7,r__are_0006_0006)
+      &amp; isA(EVENTX7,r_0006_0006__are)
       &amp; catenative(EVENTX7) = CATENATIVEX5
       &amp; CATENATIVEX5 = EVENTX6
-      &amp; isA(EVENTX6,r__swimming_0006_0007)
+      &amp; isA(EVENTX6,r_0006_0007__swimming)
       &amp; arg0(EVENTX6) = HEARERX4
-      &amp; isA(QUALITYX1,r__soon_0006_0002)
+      &amp; isA(QUALITYX1,r_0006_0002__soon)
       &amp; quality1(QUALITYX1) = QUALITYX2
-      &amp; isA(QUALITYX2,r__Very_0006_0001)
-      &amp; HEARERX4 = r__you_0006_0003
-      &amp; isA(EVENTX8,r__find_0006_0004)
+      &amp; isA(QUALITYX2,r_0006_0001__Very)
+      &amp; HEARERX4 = r_0006_0003__you
+      &amp; isA(EVENTX8,r_0006_0004__find)
       &amp; tmp1(EVENTX8) = QUALITYX1
-      &amp; arg0(EVENTX8) = r__you_0006_0003
+      &amp; arg0(EVENTX8) = r_0006_0003__you
       &amp; arg1(EVENTX8) = STATEX3 ) ).
 
 

@@ -155,15 +155,15 @@ My excuse was that I had lessons to prepare , and homework to mark .
 </svg>
 <br>
 <pre>
-arc(r__excuse_0036_0002,r__My_0036_0001,genv).
-arc(r__was_0036_0003,r__excuse_0036_0002,arg0).
-arc(r__was_0036_0003,r__had_0036_0006,prd2).
-arc(r__had_0036_0006,r__My_0036_0001,arg0).
-arc(r__had_0036_0006,r__and_0036_0011,arg1).
-arc(r__prepare_0036_0009,r__lessons_0036_0007,arg1).
-arc(r__and_0036_0011,r__lessons_0036_0007,conj1).
-arc(r__and_0036_0011,r__homework_0036_0012,conj2).
-arc(r__mark_0036_0014,r__homework_0036_0012,arg1).
+arc(r_0036_0002__excuse,r_0036_0001__My,genv).
+arc(r_0036_0003__was,r_0036_0002__excuse,arg0).
+arc(r_0036_0003__was,r_0036_0006__had,prd2).
+arc(r_0036_0006__had,r_0036_0001__My,arg0).
+arc(r_0036_0006__had,r_0036_0011__and,arg1).
+arc(r_0036_0009__prepare,r_0036_0007__lessons,arg1).
+arc(r_0036_0011__and,r_0036_0007__lessons,conj1).
+arc(r_0036_0011__and,r_0036_0012__homework,conj2).
+arc(r_0036_0014__mark,r_0036_0012__homework,arg1).
 
 </pre>
 <br>
@@ -171,22 +171,22 @@ arc(r__mark_0036_0014,r__homework_0036_0012,arg1).
 fof(id_36_A_Alresford,axiom,
     ? [STATEX2,SPEAKERX3,EVENTX14,EVENTX13,EVENTX12,EVENTX8,ENTITYX1,ENTITYX4,ENTITYX5,ENTITYX9] :
       ( STATEX2 = EVENTX13
-      &amp; isA(EVENTX13,r__had_0036_0006)
+      &amp; isA(EVENTX13,r_0036_0006__had)
       &amp; arg0(EVENTX13) = SPEAKERX3
       &amp; arg1(EVENTX13) = ENTITYX4
-      &amp; isA(ENTITYX1,r__excuse_0036_0002)
-      &amp; genv(ENTITYX1) = r__My_0036_0001
-      &amp; SPEAKERX3 = r__My_0036_0001
-      &amp; isA(ENTITYX4,r__and_0036_0011)
+      &amp; isA(ENTITYX1,r_0036_0002__excuse)
+      &amp; genv(ENTITYX1) = r_0036_0001__My
+      &amp; SPEAKERX3 = r_0036_0001__My
+      &amp; isA(ENTITYX4,r_0036_0011__and)
       &amp; conj1(ENTITYX4) = ENTITYX5
       &amp; conj2(ENTITYX4) = ENTITYX9
-      &amp; isA(EVENTX8,r__prepare_0036_0009)
+      &amp; isA(EVENTX8,r_0036_0009__prepare)
       &amp; arg1(EVENTX8) = ENTITYX5
-      &amp; isA(ENTITYX5,r__lessons_0036_0007)
-      &amp; isA(EVENTX12,r__mark_0036_0014)
+      &amp; isA(ENTITYX5,r_0036_0007__lessons)
+      &amp; isA(EVENTX12,r_0036_0014__mark)
       &amp; arg1(EVENTX12) = ENTITYX9
-      &amp; isA(ENTITYX9,r__homework_0036_0012)
-      &amp; isA(EVENTX14,r__was_0036_0003)
+      &amp; isA(ENTITYX9,r_0036_0012__homework)
+      &amp; isA(EVENTX14,r_0036_0003__was)
       &amp; arg0(EVENTX14) = ENTITYX1
       &amp; prd2(EVENTX14) = STATEX2 ) ).
 

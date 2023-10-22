@@ -122,28 +122,28 @@ The health of children today owed much to the welfare food scheme .
 </svg>
 <br>
 <pre>
-arc(r__health_0120_0002,r__children_0120_0004,r__of_0120_0003).
-arc(r__owed_0120_0006,r__health_0120_0002,arg0).
-arc(r__owed_0120_0006,r__today_0120_0005,tmp2).
-arc(r__owed_0120_0006,z_0120_1007,arg1).
-arc(z_0120_1007,r__much_0120_0007,attrib1).
-arc(z_0120_1007,r__welfare_0120_0010_r__food_0120_0011_r__scheme_0120_0012,r__to_0120_0008).
+arc(r_0120_0002__health,r_0120_0004__children,r_0120_0003__of).
+arc(r_0120_0006__owed,r_0120_0002__health,arg0).
+arc(r_0120_0006__owed,r_0120_0005__today,tmp2).
+arc(r_0120_0006__owed,z_0120_1007,arg1).
+arc(z_0120_1007,r_0120_0007__much,attrib1).
+arc(z_0120_1007,r_0120_0010__welfare_food_scheme,r_0120_0008__to).
 
 </pre>
 <br>
 <pre>
 fof(id_120_A_lob_A01,axiom,
     ? [EVENTX8,ENTITYX1,ENTITYX4,ENTITYX6,ENTITYX2,QUALITYX3,ATTRIBX5] :
-      ( isA(ENTITYX1,r__health_0120_0002)
-      &amp; r__of_0120_0003(ENTITYX1) = ENTITYX2
-      &amp; isA(ENTITYX2,r__children_0120_0004)
+      ( isA(ENTITYX1,r_0120_0002__health)
+      &amp; r_0120_0003__of(ENTITYX1) = ENTITYX2
+      &amp; isA(ENTITYX2,r_0120_0004__children)
       &amp; isA(ENTITYX4,z_0120_1007)
       &amp; attrib1(ENTITYX4) = ATTRIBX5
-      &amp; r__to_0120_0008(ENTITYX4) = ENTITYX6
-      &amp; isA(ENTITYX6,r__welfare_0120_0010_r__food_0120_0011_r__scheme_0120_0012)
-      &amp; isA(QUALITYX3,r__today_0120_0005)
-      &amp; isA(ATTRIBX5,r__much_0120_0007)
-      &amp; isA(EVENTX8,r__owed_0120_0006)
+      &amp; r_0120_0008__to(ENTITYX4) = ENTITYX6
+      &amp; isA(ENTITYX6,r_0120_0010__welfare_food_scheme)
+      &amp; isA(QUALITYX3,r_0120_0005__today)
+      &amp; isA(ATTRIBX5,r_0120_0007__much)
+      &amp; isA(EVENTX8,r_0120_0006__owed)
       &amp; arg0(EVENTX8) = ENTITYX1
       &amp; tmp2(EVENTX8) = QUALITYX3
       &amp; arg1(EVENTX8) = ENTITYX4 ) ).

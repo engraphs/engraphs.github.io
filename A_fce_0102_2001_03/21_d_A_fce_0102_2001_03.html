@@ -90,10 +90,10 @@ No sailing experience is needed .
 </svg>
 <br>
 <pre>
-arc(quantificational_r__No_0025_0001,r__sailing_0025_0002_r__experience_0025_0003,restriction).
-arc(quantificational_r__No_0025_0001,r__is_0025_0004,scope).
-arc(r__is_0025_0004,r__needed_0025_0005,catenative).
-arc(r__needed_0025_0005,r__sailing_0025_0002_r__experience_0025_0003,arg1).
+arc(r_0025_0001__quantificational__No,r_0025_0002__sailing_experience,restriction).
+arc(r_0025_0001__quantificational__No,r_0025_0004__is,scope).
+arc(r_0025_0004__is,r_0025_0005__needed,catenative).
+arc(r_0025_0005__needed,r_0025_0002__sailing_experience,arg1).
 
 </pre>
 <br>
@@ -101,13 +101,13 @@ arc(r__needed_0025_0005,r__sailing_0025_0002_r__experience_0025_0003,arg1).
 fof(id_25_A_fce_0102_2001_03,axiom,
     ? [CATENATIVEX3,QUANTX2,EVENTX6,EVENTX5,ENTITYX1] :
       ( CATENATIVEX3 = EVENTX5
-      &amp; isA(EVENTX5,r__needed_0025_0005)
+      &amp; isA(EVENTX5,r_0025_0005__needed)
       &amp; arg1(EVENTX5) = ENTITYX1
-      &amp; isA(QUANTX2,quantificational_r__No_0025_0001)
+      &amp; isA(QUANTX2,r_0025_0001__quantificational__No)
       &amp; restriction(QUANTX2) = ENTITYX1
-      &amp; isA(ENTITYX1,r__sailing_0025_0002_r__experience_0025_0003)
+      &amp; isA(ENTITYX1,r_0025_0002__sailing_experience)
       &amp; scope(QUANTX2) = EVENTX6
-      &amp; isA(EVENTX6,r__is_0025_0004)
+      &amp; isA(EVENTX6,r_0025_0004__is)
       &amp; catenative(EVENTX6) = CATENATIVEX3 ) ).
 
 

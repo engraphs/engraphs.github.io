@@ -122,27 +122,27 @@ My oldest pet is a mongrel dog called Mickey .
 </svg>
 <br>
 <pre>
-arc(r__pet_0001_0003,r__My_0001_0001,genv).
-arc(r__pet_0001_0003,r__oldest_0001_0002,attrib2).
-arc(r__is_0001_0004,r__pet_0001_0003,arg0).
-arc(r__is_0001_0004,r__mongrel_0001_0006_r__dog_0001_0007,prd2).
-arc(r__called_0001_0008,r__mongrel_0001_0006_r__dog_0001_0007,arg1).
-arc(r__called_0001_0008,r__Mickey_0001_0009,prd).
+arc(r_0001_0003__pet,r_0001_0001__My,genv).
+arc(r_0001_0003__pet,r_0001_0002__oldest,attrib2).
+arc(r_0001_0004__is,r_0001_0003__pet,arg0).
+arc(r_0001_0004__is,r_0001_0006__mongrel_dog,prd2).
+arc(r_0001_0008__called,r_0001_0006__mongrel_dog,arg1).
+arc(r_0001_0008__called,r_0001_0009__Mickey,prd).
 
 </pre>
 <br>
 <pre>
 fof(id_1_A_stories_10_K58,axiom,
     ? [EVENTX6,EVENTX5,MICKEYX1,ENTITYX3,ATTRIBX2] :
-      ( isA(MICKEYX1,r__pet_0001_0003)
-      &amp; genv(MICKEYX1) = r__My_0001_0001
+      ( isA(MICKEYX1,r_0001_0003__pet)
+      &amp; genv(MICKEYX1) = r_0001_0001__My
       &amp; attrib2(MICKEYX1) = ATTRIBX2
-      &amp; isA(EVENTX5,r__called_0001_0008)
+      &amp; isA(EVENTX5,r_0001_0008__called)
       &amp; arg1(EVENTX5) = ENTITYX3
-      &amp; prd(EVENTX5) = r__Mickey_0001_0009
-      &amp; isA(ENTITYX3,r__mongrel_0001_0006_r__dog_0001_0007)
-      &amp; isA(ATTRIBX2,r__oldest_0001_0002)
-      &amp; isA(EVENTX6,r__is_0001_0004)
+      &amp; prd(EVENTX5) = r_0001_0009__Mickey
+      &amp; isA(ENTITYX3,r_0001_0006__mongrel_dog)
+      &amp; isA(ATTRIBX2,r_0001_0002__oldest)
+      &amp; isA(EVENTX6,r_0001_0004__is)
       &amp; arg0(EVENTX6) = MICKEYX1
       &amp; prd2(EVENTX6) = ENTITYX3 ) ).
 

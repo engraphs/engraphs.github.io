@@ -126,8 +126,8 @@ It was mounted so that it could make a full circle .
 <!-- 0314_0004_cnt -->
 <g id="node8" class="node">
 <title>0314_0004_cnt</title>
-<ellipse fill="none" stroke="black" cx="383.75" cy="-366" rx="68.79" ry="18"/>
-<text text-anchor="middle" x="383.75" y="-362.3" font-family="fixed" font-size="14.00">so_that_[cnt]</text>
+<ellipse fill="none" stroke="black" cx="383.75" cy="-366" rx="64.19" ry="18"/>
+<text text-anchor="middle" x="383.75" y="-362.3" font-family="fixed" font-size="14.00">so_that[cnt]</text>
 </g>
 <!-- 0314_0004_cnt&#45;&gt;0314_0002 -->
 <g id="edge7" class="edge">
@@ -199,18 +199,18 @@ It was mounted so that it could make a full circle .
 </svg>
 <br>
 <pre>
-arc(r__moved_0313_0003,r__gun_0313_0002,arg0).
-arc(r__moved_0313_0003,r__again_0313_0004,tmp3).
-arc(r__moved_0313_0003,r__time_0313_0007,tmp).
-arc(r__moved_0313_0003,r__clockwise_0313_0008,dir6).
-arc(r__was_0314_0002,r__mounted_0314_0003,catenative).
-arc(r__mounted_0314_0003,r__gun_0313_0002,arg1).
-arc(r__so_that_0314_0004_cnt,r__was_0314_0002,scope).
-arc(r__so_that_0314_0004_cnt,r__could_0314_0006,restriction).
-arc(r__could_0314_0006,r__make_0314_0007,scope).
-arc(r__make_0314_0007,r__gun_0313_0002,arg0).
-arc(r__make_0314_0007,r__circle_0314_0010,arg1).
-arc(r__circle_0314_0010,r__full_0314_0009,attrib2).
+arc(r_0313_0003__moved,r_0313_0002__gun,arg0).
+arc(r_0313_0003__moved,r_0313_0004__again,tmp3).
+arc(r_0313_0003__moved,r_0313_0007__time,tmp).
+arc(r_0313_0003__moved,r_0313_0008__clockwise,dir6).
+arc(r_0314_0002__was,r_0314_0003__mounted,catenative).
+arc(r_0314_0003__mounted,r_0313_0002__gun,arg1).
+arc(r_0314_0004__so_that_cnt,r_0314_0002__was,scope).
+arc(r_0314_0004__so_that_cnt,r_0314_0006__could,restriction).
+arc(r_0314_0006__could,r_0314_0007__make,scope).
+arc(r_0314_0007__make,r_0313_0002__gun,arg0).
+arc(r_0314_0007__make,r_0314_0010__circle,arg1).
+arc(r_0314_0010__circle,r_0314_0009__full,attrib2).
 
 </pre>
 <br>
@@ -218,31 +218,31 @@ arc(r__circle_0314_0010,r__full_0314_0009,attrib2).
 fof(id_313_A_DICK_1952__314_A_DICK_1952,axiom,
     ? [CATENATIVEX13,GUNX6,GUNX8,CONNX7,OPERATORX11,EVENTX12,EVENTX16,EVENTX15,EVENTX5,ENTITYX9,GUNX1,ENTITYX3,QUALITYX2,QUALITYX4,ATTRIBX10] :
       ( CATENATIVEX13 = EVENTX15
-      &amp; isA(EVENTX15,r__mounted_0314_0003)
+      &amp; isA(EVENTX15,r_0314_0003__mounted)
       &amp; arg1(EVENTX15) = GUNX6
-      &amp; isA(GUNX1,r__gun_0313_0002)
-      &amp; isA(ENTITYX3,r__time_0313_0007)
+      &amp; isA(GUNX1,r_0313_0002__gun)
+      &amp; isA(ENTITYX3,r_0313_0007__time)
       &amp; GUNX6 = GUNX1
       &amp; ( GUNX8 = GUNX6
         | GUNX8 = GUNX1 )
-      &amp; isA(ENTITYX9,r__circle_0314_0010)
+      &amp; isA(ENTITYX9,r_0314_0010__circle)
       &amp; attrib2(ENTITYX9) = ATTRIBX10
-      &amp; isA(QUALITYX2,r__again_0313_0004)
-      &amp; isA(QUALITYX4,r__clockwise_0313_0008)
-      &amp; isA(ATTRIBX10,r__full_0314_0009)
-      &amp; isA(EVENTX5,r__moved_0313_0003)
+      &amp; isA(QUALITYX2,r_0313_0004__again)
+      &amp; isA(QUALITYX4,r_0313_0008__clockwise)
+      &amp; isA(ATTRIBX10,r_0314_0009__full)
+      &amp; isA(EVENTX5,r_0313_0003__moved)
       &amp; arg0(EVENTX5) = GUNX1
       &amp; tmp3(EVENTX5) = QUALITYX2
       &amp; tmp(EVENTX5) = ENTITYX3
       &amp; dir6(EVENTX5) = QUALITYX4
-      &amp; isA(CONNX7,r__so_that_0314_0004_cnt)
+      &amp; isA(CONNX7,r_0314_0004__so_that_cnt)
       &amp; scope(CONNX7) = EVENTX16
-      &amp; isA(EVENTX16,r__was_0314_0002)
+      &amp; isA(EVENTX16,r_0314_0002__was)
       &amp; catenative(EVENTX16) = CATENATIVEX13
       &amp; restriction(CONNX7) = OPERATORX11
-      &amp; isA(OPERATORX11,r__could_0314_0006)
+      &amp; isA(OPERATORX11,r_0314_0006__could)
       &amp; scope(OPERATORX11) = EVENTX12
-      &amp; isA(EVENTX12,r__make_0314_0007)
+      &amp; isA(EVENTX12,r_0314_0007__make)
       &amp; arg0(EVENTX12) = GUNX8
       &amp; arg1(EVENTX12) = ENTITYX9 ) ).
 

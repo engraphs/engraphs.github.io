@@ -123,7 +123,7 @@ Government business managers meet to select the Bills to be included , usually a
 <title>0034_0011&#45;&gt;0034_0015</title>
 <path fill="none" stroke="black" d="M344.61,-174.65C349.65,-168.78 355.36,-162.1 360.54,-156 367.58,-147.7 375.24,-138.6 382.08,-130.46"/>
 <polygon fill="black" stroke="black" points="384.83,-132.61 388.58,-122.7 379.47,-128.12 384.83,-132.61"/>
-<text text-anchor="middle" x="440.04" y="-144.8" font-family="fixed" font-size="14.00">usually_after_[mnr]</text>
+<text text-anchor="middle" x="436.54" y="-144.8" font-family="fixed" font-size="14.00">usually_after[mnr]</text>
 </g>
 <!-- 0034_0018_0034_0019 -->
 <g id="node8" class="node">
@@ -227,21 +227,21 @@ Government business managers meet to select the Bills to be included , usually a
 </svg>
 <br>
 <pre>
-arc(r__meet_0034_0004,r__Government_0034_0001_r__business_0034_0002_r__managers_0034_0003,arg0).
-arc(r__meet_0034_0004,r__select_0034_0006,arg1).
-arc(r__select_0034_0006,r__Government_0034_0001_r__business_0034_0002_r__managers_0034_0003,arg0).
-arc(r__select_0034_0006,r__be_0034_0010,arg1).
-arc(r__be_0034_0010,r__included_0034_0011,catenative).
-arc(r__included_0034_0011,r__Bills_0034_0008,arg1).
-arc(r__included_0034_0011,r__discussion_0034_0015,r__usually_0034_0013_r__after_0034_0014_mnr).
-arc(r__discussion_0034_0015,r__Prime_0034_0018_r__Minister_0034_0019,r__with_0034_0016).
-arc(r__and_0034_0021,r__meet_0034_0004,conj1).
-arc(r__and_0034_0021,r__is_0034_0023,conj2).
-arc(r__is_0034_0023,r__asked_0034_0024,catenative).
-arc(r__asked_0034_0024,r__Cabinet_0034_0022,arg2).
-arc(r__asked_0034_0024,r__endorse_0034_0026,arg1).
-arc(r__endorse_0034_0026,r__Cabinet_0034_0022,arg0).
-arc(r__endorse_0034_0026,r__decisions_0034_0028,arg1).
+arc(r_0034_0004__meet,r_0034_0001__Government_business_managers,arg0).
+arc(r_0034_0004__meet,r_0034_0006__select,arg1).
+arc(r_0034_0006__select,r_0034_0001__Government_business_managers,arg0).
+arc(r_0034_0006__select,r_0034_0010__be,arg1).
+arc(r_0034_0010__be,r_0034_0011__included,catenative).
+arc(r_0034_0011__included,r_0034_0008__Bills,arg1).
+arc(r_0034_0011__included,r_0034_0015__discussion,r_0034_0013__usually_after_mnr).
+arc(r_0034_0015__discussion,r_0034_0018__Prime_Minister,r_0034_0016__with).
+arc(r_0034_0021__and,r_0034_0004__meet,conj1).
+arc(r_0034_0021__and,r_0034_0023__is,conj2).
+arc(r_0034_0023__is,r_0034_0024__asked,catenative).
+arc(r_0034_0024__asked,r_0034_0022__Cabinet,arg2).
+arc(r_0034_0024__asked,r_0034_0026__endorse,arg1).
+arc(r_0034_0026__endorse,r_0034_0022__Cabinet,arg0).
+arc(r_0034_0026__endorse,r_0034_0028__decisions,arg1).
 
 </pre>
 <br>
@@ -249,37 +249,37 @@ arc(r__endorse_0034_0026,r__decisions_0034_0028,arg1).
 fof(id_34_A_uksc_judgment,axiom,
     ? [STATEX2,STATEX4,CATENATIVEX5,CATENATIVEX12,STATEX14,CONJX19,EVENTX18,EVENTX17,EVENTX16,EVENTX11,EVENTX10,EVENTX9,EVENTX8,ENTITYX15,ENTITYX1,ENTITYX3,ENTITYX7] :
       ( STATEX2 = EVENTX10
-      &amp; isA(EVENTX10,r__select_0034_0006)
+      &amp; isA(EVENTX10,r_0034_0006__select)
       &amp; arg0(EVENTX10) = ENTITYX1
       &amp; arg1(EVENTX10) = STATEX4
       &amp; STATEX4 = EVENTX9
-      &amp; isA(EVENTX9,r__be_0034_0010)
+      &amp; isA(EVENTX9,r_0034_0010__be)
       &amp; catenative(EVENTX9) = CATENATIVEX5
       &amp; CATENATIVEX5 = EVENTX8
-      &amp; isA(EVENTX8,r__included_0034_0011)
+      &amp; isA(EVENTX8,r_0034_0011__included)
       &amp; arg1(EVENTX8) = ENTITYX3
-      &amp; r__usually_0034_0013_r__after_0034_0014_mnr(EVENTX8) = ENTITYX7
+      &amp; r_0034_0013__usually_after_mnr(EVENTX8) = ENTITYX7
       &amp; CATENATIVEX12 = EVENTX17
-      &amp; isA(EVENTX17,r__asked_0034_0024)
-      &amp; arg2(EVENTX17) = r__Cabinet_0034_0022
+      &amp; isA(EVENTX17,r_0034_0024__asked)
+      &amp; arg2(EVENTX17) = r_0034_0022__Cabinet
       &amp; arg1(EVENTX17) = STATEX14
       &amp; STATEX14 = EVENTX16
-      &amp; isA(EVENTX16,r__endorse_0034_0026)
-      &amp; arg0(EVENTX16) = r__Cabinet_0034_0022
+      &amp; isA(EVENTX16,r_0034_0026__endorse)
+      &amp; arg0(EVENTX16) = r_0034_0022__Cabinet
       &amp; arg1(EVENTX16) = ENTITYX15
-      &amp; isA(ENTITYX1,r__Government_0034_0001_r__business_0034_0002_r__managers_0034_0003)
-      &amp; isA(ENTITYX3,r__Bills_0034_0008)
-      &amp; isA(ENTITYX7,r__discussion_0034_0015)
-      &amp; r__with_0034_0016(ENTITYX7) = r__Prime_0034_0018_r__Minister_0034_0019
-      &amp; isA(ENTITYX15,r__decisions_0034_0028)
-      &amp; isA(r__Prime_0034_0018_r__Minister_0034_0019,r__Prime_0034_0018_r__Minister_0034_0019)
-      &amp; isA(CONJX19,r__and_0034_0021)
+      &amp; isA(ENTITYX1,r_0034_0001__Government_business_managers)
+      &amp; isA(ENTITYX3,r_0034_0008__Bills)
+      &amp; isA(ENTITYX7,r_0034_0015__discussion)
+      &amp; r_0034_0016__with(ENTITYX7) = r_0034_0018__Prime_Minister
+      &amp; isA(ENTITYX15,r_0034_0028__decisions)
+      &amp; isA(r_0034_0018__Prime_Minister,r_0034_0018__Prime_Minister)
+      &amp; isA(CONJX19,r_0034_0021__and)
       &amp; conj1(CONJX19) = EVENTX11
-      &amp; isA(EVENTX11,r__meet_0034_0004)
+      &amp; isA(EVENTX11,r_0034_0004__meet)
       &amp; arg0(EVENTX11) = ENTITYX1
       &amp; arg1(EVENTX11) = STATEX2
       &amp; conj2(CONJX19) = EVENTX18
-      &amp; isA(EVENTX18,r__is_0034_0023)
+      &amp; isA(EVENTX18,r_0034_0023__is)
       &amp; catenative(EVENTX18) = CATENATIVEX12 ) ).
 
 

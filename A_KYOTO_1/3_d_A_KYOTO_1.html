@@ -123,25 +123,25 @@ His disciples include Shugetsu , Soen , and Toshun .
 </svg>
 <br>
 <pre>
-arc(r__disciples_0013_0002,r__His_0013_0001,genv).
-arc(r__include_0013_0003,r__disciples_0013_0002,arg0).
-arc(r__include_0013_0003,r__and_0013_0008,arg1).
-arc(r__and_0013_0008,r__Shugetsu_0013_0004,conj1).
-arc(r__and_0013_0008,r__Soen_0013_0006,conj2).
-arc(r__and_0013_0008,r__Toshun_0013_0009,conj3).
+arc(r_0013_0002__disciples,r_0013_0001__His,genv).
+arc(r_0013_0003__include,r_0013_0002__disciples,arg0).
+arc(r_0013_0003__include,r_0013_0008__and,arg1).
+arc(r_0013_0008__and,r_0013_0004__Shugetsu,conj1).
+arc(r_0013_0008__and,r_0013_0006__Soen,conj2).
+arc(r_0013_0008__and,r_0013_0009__Toshun,conj3).
 
 </pre>
 <br>
 <pre>
 fof(id_13_A_KYOTO_1,axiom,
     ? [EVENTX3,ENTITYX1,ENTITYX2] :
-      ( isA(ENTITYX1,r__disciples_0013_0002)
-      &amp; genv(ENTITYX1) = r__His_0013_0001
-      &amp; isA(ENTITYX2,r__and_0013_0008)
-      &amp; conj1(ENTITYX2) = r__Shugetsu_0013_0004
-      &amp; conj2(ENTITYX2) = r__Soen_0013_0006
-      &amp; conj3(ENTITYX2) = r__Toshun_0013_0009
-      &amp; isA(EVENTX3,r__include_0013_0003)
+      ( isA(ENTITYX1,r_0013_0002__disciples)
+      &amp; genv(ENTITYX1) = r_0013_0001__His
+      &amp; isA(ENTITYX2,r_0013_0008__and)
+      &amp; conj1(ENTITYX2) = r_0013_0004__Shugetsu
+      &amp; conj2(ENTITYX2) = r_0013_0006__Soen
+      &amp; conj3(ENTITYX2) = r_0013_0009__Toshun
+      &amp; isA(EVENTX3,r_0013_0003__include)
       &amp; arg0(EVENTX3) = ENTITYX1
       &amp; arg1(EVENTX3) = ENTITYX2 ) ).
 

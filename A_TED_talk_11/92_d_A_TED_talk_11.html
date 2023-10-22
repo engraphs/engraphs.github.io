@@ -187,17 +187,17 @@ Art and music are normally given a higher status in schools than drama and dance
 </svg>
 <br>
 <pre>
-arc(r__and_0128_0002,r__Art_0128_0001,conj1).
-arc(r__and_0128_0002,r__music_0128_0003,conj2).
-arc(r__are_0128_0004,r__normally_0128_0005,catenative).
-arc(r__normally_0128_0005,r__given_0128_0006,scope).
-arc(r__given_0128_0006,r__and_0128_0002,arg2).
-arc(r__given_0128_0006,r__status_0128_0009,arg1).
-arc(r__status_0128_0009,r__higher_0128_0008,attrib2).
-arc(r__status_0128_0009,r__schools_0128_0011,r__in_0128_0010).
-arc(r__status_0128_0009,r__and_0128_0014,r__than_0128_0012).
-arc(r__and_0128_0014,r__drama_0128_0013,conj1).
-arc(r__and_0128_0014,r__dance_0128_0015,conj2).
+arc(r_0128_0002__and,r_0128_0001__Art,conj1).
+arc(r_0128_0002__and,r_0128_0003__music,conj2).
+arc(r_0128_0004__are,r_0128_0005__normally,catenative).
+arc(r_0128_0005__normally,r_0128_0006__given,scope).
+arc(r_0128_0006__given,r_0128_0002__and,arg2).
+arc(r_0128_0006__given,r_0128_0009__status,arg1).
+arc(r_0128_0009__status,r_0128_0008__higher,attrib2).
+arc(r_0128_0009__status,r_0128_0011__schools,r_0128_0010__in).
+arc(r_0128_0009__status,r_0128_0014__and,r_0128_0012__than).
+arc(r_0128_0014__and,r_0128_0013__drama,conj1).
+arc(r_0128_0014__and,r_0128_0015__dance,conj2).
 
 </pre>
 <br>
@@ -205,27 +205,27 @@ arc(r__and_0128_0014,r__dance_0128_0015,conj2).
 fof(id_128_A_TED_talk_11,axiom,
     ? [CATENATIVEX3,EVENTX13,OPERATORX5,EVENTX12,ENTITYX1,ENTITYX6,ENTITYX8,ENTITYX9,ENTITYX10,ENTITYX11,ENTITYX2,ATTRIBX7] :
       ( CATENATIVEX3 = OPERATORX5
-      &amp; isA(OPERATORX5,r__normally_0128_0005)
+      &amp; isA(OPERATORX5,r_0128_0005__normally)
       &amp; scope(OPERATORX5) = EVENTX12
-      &amp; isA(EVENTX12,r__given_0128_0006)
+      &amp; isA(EVENTX12,r_0128_0006__given)
       &amp; arg2(EVENTX12) = ENTITYX1
       &amp; arg1(EVENTX12) = ENTITYX6
-      &amp; isA(ENTITYX1,r__and_0128_0002)
-      &amp; conj1(ENTITYX1) = r__Art_0128_0001
+      &amp; isA(ENTITYX1,r_0128_0002__and)
+      &amp; conj1(ENTITYX1) = r_0128_0001__Art
       &amp; conj2(ENTITYX1) = ENTITYX2
-      &amp; isA(ENTITYX2,r__music_0128_0003)
-      &amp; isA(ENTITYX6,r__status_0128_0009)
+      &amp; isA(ENTITYX2,r_0128_0003__music)
+      &amp; isA(ENTITYX6,r_0128_0009__status)
       &amp; attrib2(ENTITYX6) = ATTRIBX7
-      &amp; r__in_0128_0010(ENTITYX6) = ENTITYX8
-      &amp; r__than_0128_0012(ENTITYX6) = ENTITYX9
-      &amp; isA(ENTITYX8,r__schools_0128_0011)
-      &amp; isA(ENTITYX9,r__and_0128_0014)
+      &amp; r_0128_0010__in(ENTITYX6) = ENTITYX8
+      &amp; r_0128_0012__than(ENTITYX6) = ENTITYX9
+      &amp; isA(ENTITYX8,r_0128_0011__schools)
+      &amp; isA(ENTITYX9,r_0128_0014__and)
       &amp; conj1(ENTITYX9) = ENTITYX10
       &amp; conj2(ENTITYX9) = ENTITYX11
-      &amp; isA(ENTITYX10,r__drama_0128_0013)
-      &amp; isA(ENTITYX11,r__dance_0128_0015)
-      &amp; isA(ATTRIBX7,r__higher_0128_0008)
-      &amp; isA(EVENTX13,r__are_0128_0004)
+      &amp; isA(ENTITYX10,r_0128_0013__drama)
+      &amp; isA(ENTITYX11,r_0128_0015__dance)
+      &amp; isA(ATTRIBX7,r_0128_0008__higher)
+      &amp; isA(EVENTX13,r_0128_0004__are)
       &amp; catenative(EVENTX13) = CATENATIVEX3 ) ).
 
 

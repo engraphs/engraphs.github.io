@@ -286,72 +286,72 @@ Mickey 's body is black but he has a white stomach , white feet , a white streak
 </svg>
 <br>
 <pre>
-arc(r__body_0002_0003,r__Mickey_0002_0001,genv).
-arc(r__is_0002_0004,r__body_0002_0003,arg0).
-arc(r__is_0002_0004,r__black_0002_0005,prd2).
-arc(r__but_0002_0006,r__is_0002_0004,conj1).
-arc(r__but_0002_0006,r__has_0002_0008,conj2).
-arc(r__has_0002_0008,r__Mickey_0002_0001,arg0).
-arc(r__has_0002_0008,r__and_0002_0023,arg1).
-arc(r__stomach_0002_0011,r__white_0002_0010,attrib2).
-arc(r__feet_0002_0014,r__white_0002_0013,attrib1).
-arc(r__streak_0002_0018,r__white_0002_0017,attrib2).
-arc(r__streak_0002_0018,r__nose_0002_0021,r__down_0002_0019).
-arc(r__nose_0002_0021,r__Mickey_0002_0001,genv).
-arc(r__and_0002_0023,r__stomach_0002_0011,conj1).
-arc(r__and_0002_0023,r__feet_0002_0014,conj2).
-arc(r__and_0002_0023,r__streak_0002_0018,conj3).
-arc(r__and_0002_0023,r__fluffet_0002_0026,conj4).
-arc(r__fluffet_0002_0026,r__white_0002_0025,attrib2).
-arc(r__fluffet_0002_0026,r__end_0002_0029,r__on_0002_0027).
-arc(r__end_0002_0029,r__tail_0002_0032,r__of_0002_0030).
-arc(r__tail_0002_0032,r__Mickey_0002_0001,genv).
+arc(r_0002_0003__body,r_0002_0001__Mickey,genv).
+arc(r_0002_0004__is,r_0002_0003__body,arg0).
+arc(r_0002_0004__is,r_0002_0005__black,prd2).
+arc(r_0002_0006__but,r_0002_0004__is,conj1).
+arc(r_0002_0006__but,r_0002_0008__has,conj2).
+arc(r_0002_0008__has,r_0002_0001__Mickey,arg0).
+arc(r_0002_0008__has,r_0002_0023__and,arg1).
+arc(r_0002_0011__stomach,r_0002_0010__white,attrib2).
+arc(r_0002_0014__feet,r_0002_0013__white,attrib1).
+arc(r_0002_0018__streak,r_0002_0017__white,attrib2).
+arc(r_0002_0018__streak,r_0002_0021__nose,r_0002_0019__down).
+arc(r_0002_0021__nose,r_0002_0001__Mickey,genv).
+arc(r_0002_0023__and,r_0002_0011__stomach,conj1).
+arc(r_0002_0023__and,r_0002_0014__feet,conj2).
+arc(r_0002_0023__and,r_0002_0018__streak,conj3).
+arc(r_0002_0023__and,r_0002_0026__fluffet,conj4).
+arc(r_0002_0026__fluffet,r_0002_0025__white,attrib2).
+arc(r_0002_0026__fluffet,r_0002_0029__end,r_0002_0027__on).
+arc(r_0002_0029__end,r_0002_0032__tail,r_0002_0030__of).
+arc(r_0002_0032__tail,r_0002_0001__Mickey,genv).
 
 </pre>
 <br>
 <pre>
 fof(id_2_A_stories_10_K58,axiom,
     ? [MICKEYX4,MICKEYX13,MICKEYX18,CONJX20,EVENTX19,EVENTX3,ENTITYX5,ENTITYX6,ENTITYX8,ENTITYX10,ENTITYX14,ENTITYX16,ENTITYX17,ENTITYX12,ENTITYX1,ATTRIBX15,ATTRIBX11,ATTRIBX9,ATTRIBX7,ATTRIBX2] :
-      ( isA(ENTITYX1,r__body_0002_0003)
-      &amp; genv(ENTITYX1) = r__Mickey_0002_0001
-      &amp; MICKEYX4 = r__Mickey_0002_0001
-      &amp; isA(ENTITYX5,r__and_0002_0023)
+      ( isA(ENTITYX1,r_0002_0003__body)
+      &amp; genv(ENTITYX1) = r_0002_0001__Mickey
+      &amp; MICKEYX4 = r_0002_0001__Mickey
+      &amp; isA(ENTITYX5,r_0002_0023__and)
       &amp; conj1(ENTITYX5) = ENTITYX6
       &amp; conj2(ENTITYX5) = ENTITYX8
       &amp; conj3(ENTITYX5) = ENTITYX10
       &amp; conj4(ENTITYX5) = ENTITYX14
-      &amp; isA(ENTITYX6,r__stomach_0002_0011)
+      &amp; isA(ENTITYX6,r_0002_0011__stomach)
       &amp; attrib2(ENTITYX6) = ATTRIBX7
-      &amp; isA(ENTITYX8,r__feet_0002_0014)
+      &amp; isA(ENTITYX8,r_0002_0014__feet)
       &amp; attrib1(ENTITYX8) = ATTRIBX9
-      &amp; isA(ENTITYX10,r__streak_0002_0018)
+      &amp; isA(ENTITYX10,r_0002_0018__streak)
       &amp; attrib2(ENTITYX10) = ATTRIBX11
-      &amp; r__down_0002_0019(ENTITYX10) = ENTITYX12
-      &amp; isA(ENTITYX12,r__nose_0002_0021)
+      &amp; r_0002_0019__down(ENTITYX10) = ENTITYX12
+      &amp; isA(ENTITYX12,r_0002_0021__nose)
       &amp; genv(ENTITYX12) = MICKEYX13
       &amp; ( MICKEYX13 = MICKEYX4
-        | MICKEYX13 = r__Mickey_0002_0001 )
-      &amp; isA(ENTITYX14,r__fluffet_0002_0026)
+        | MICKEYX13 = r_0002_0001__Mickey )
+      &amp; isA(ENTITYX14,r_0002_0026__fluffet)
       &amp; attrib2(ENTITYX14) = ATTRIBX15
-      &amp; r__on_0002_0027(ENTITYX14) = ENTITYX16
-      &amp; isA(ENTITYX16,r__end_0002_0029)
-      &amp; r__of_0002_0030(ENTITYX16) = ENTITYX17
-      &amp; isA(ENTITYX17,r__tail_0002_0032)
+      &amp; r_0002_0027__on(ENTITYX14) = ENTITYX16
+      &amp; isA(ENTITYX16,r_0002_0029__end)
+      &amp; r_0002_0030__of(ENTITYX16) = ENTITYX17
+      &amp; isA(ENTITYX17,r_0002_0032__tail)
       &amp; genv(ENTITYX17) = MICKEYX18
       &amp; ( MICKEYX18 = MICKEYX4
-        | MICKEYX18 = r__Mickey_0002_0001 )
-      &amp; isA(ATTRIBX2,r__black_0002_0005)
-      &amp; isA(ATTRIBX7,r__white_0002_0010)
-      &amp; isA(ATTRIBX9,r__white_0002_0013)
-      &amp; isA(ATTRIBX11,r__white_0002_0017)
-      &amp; isA(ATTRIBX15,r__white_0002_0025)
-      &amp; isA(CONJX20,r__but_0002_0006)
+        | MICKEYX18 = r_0002_0001__Mickey )
+      &amp; isA(ATTRIBX2,r_0002_0005__black)
+      &amp; isA(ATTRIBX7,r_0002_0010__white)
+      &amp; isA(ATTRIBX9,r_0002_0013__white)
+      &amp; isA(ATTRIBX11,r_0002_0017__white)
+      &amp; isA(ATTRIBX15,r_0002_0025__white)
+      &amp; isA(CONJX20,r_0002_0006__but)
       &amp; conj1(CONJX20) = EVENTX3
-      &amp; isA(EVENTX3,r__is_0002_0004)
+      &amp; isA(EVENTX3,r_0002_0004__is)
       &amp; arg0(EVENTX3) = ENTITYX1
       &amp; prd2(EVENTX3) = ATTRIBX2
       &amp; conj2(CONJX20) = EVENTX19
-      &amp; isA(EVENTX19,r__has_0002_0008)
+      &amp; isA(EVENTX19,r_0002_0008__has)
       &amp; arg0(EVENTX19) = MICKEYX4
       &amp; arg1(EVENTX19) = ENTITYX5 ) ).
 

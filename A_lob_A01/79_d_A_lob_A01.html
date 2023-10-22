@@ -161,15 +161,15 @@ President Kennedy did his best to avoid giving pressmen a direct answer .
 </svg>
 <br>
 <pre>
-arc(r__did_0083_0003,r__President_0083_0001_r__Kennedy_0083_0002,arg0).
-arc(r__did_0083_0003,z_0083_1012,arg1).
-arc(r__avoid_0083_0007,r__giving_0083_0008,arg1).
-arc(r__giving_0083_0008,r__pressmen_0083_0009,arg2).
-arc(r__giving_0083_0008,r__answer_0083_0012,arg1).
-arc(r__answer_0083_0012,r__direct_0083_0011,attrib2).
-arc(z_0083_1012,r__his_0083_0004,genv).
-arc(z_0083_1012,r__best_0083_0005,attrib2).
-arc(z_0083_1012,r__avoid_0083_0007,emb3).
+arc(r_0083_0003__did,r_0083_0001__President_Kennedy,arg0).
+arc(r_0083_0003__did,z_0083_1012,arg1).
+arc(r_0083_0007__avoid,r_0083_0008__giving,arg1).
+arc(r_0083_0008__giving,r_0083_0009__pressmen,arg2).
+arc(r_0083_0008__giving,r_0083_0012__answer,arg1).
+arc(r_0083_0012__answer,r_0083_0011__direct,attrib2).
+arc(z_0083_1012,r_0083_0004__his,genv).
+arc(z_0083_1012,r_0083_0005__best,attrib2).
+arc(z_0083_1012,r_0083_0007__avoid,emb3).
 
 </pre>
 <br>
@@ -177,23 +177,23 @@ arc(z_0083_1012,r__avoid_0083_0007,emb3).
 fof(id_83_A_lob_A01,axiom,
     ? [STATEX3,STATEX6,EVENTX13,EVENTX11,EVENTX10,ENTITYX1,ENTITYX7,ENTITYX8,ATTRIBX2,ATTRIBX9] :
       ( STATEX3 = EVENTX11
-      &amp; isA(EVENTX11,r__avoid_0083_0007)
+      &amp; isA(EVENTX11,r_0083_0007__avoid)
       &amp; arg1(EVENTX11) = STATEX6
       &amp; STATEX6 = EVENTX10
-      &amp; isA(EVENTX10,r__giving_0083_0008)
+      &amp; isA(EVENTX10,r_0083_0008__giving)
       &amp; arg2(EVENTX10) = ENTITYX7
       &amp; arg1(EVENTX10) = ENTITYX8
       &amp; isA(ENTITYX1,z_0083_1012)
-      &amp; genv(ENTITYX1) = r__his_0083_0004
+      &amp; genv(ENTITYX1) = r_0083_0004__his
       &amp; attrib2(ENTITYX1) = ATTRIBX2
       &amp; emb3(ENTITYX1) = STATEX3
-      &amp; isA(ENTITYX7,r__pressmen_0083_0009)
-      &amp; isA(ENTITYX8,r__answer_0083_0012)
+      &amp; isA(ENTITYX7,r_0083_0009__pressmen)
+      &amp; isA(ENTITYX8,r_0083_0012__answer)
       &amp; attrib2(ENTITYX8) = ATTRIBX9
-      &amp; isA(ATTRIBX2,r__best_0083_0005)
-      &amp; isA(ATTRIBX9,r__direct_0083_0011)
-      &amp; isA(EVENTX13,r__did_0083_0003)
-      &amp; arg0(EVENTX13) = r__President_0083_0001_r__Kennedy_0083_0002
+      &amp; isA(ATTRIBX2,r_0083_0005__best)
+      &amp; isA(ATTRIBX9,r_0083_0011__direct)
+      &amp; isA(EVENTX13,r_0083_0003__did)
+      &amp; arg0(EVENTX13) = r_0083_0001__President_Kennedy
       &amp; arg1(EVENTX13) = ENTITYX1 ) ).
 
 

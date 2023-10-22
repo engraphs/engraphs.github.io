@@ -94,9 +94,9 @@ In the dark of my room I imagined that I saw again the heavy grey face of the pa
 <!-- 0055_0008&#45;&gt;z_0055_1004 -->
 <g id="edge4" class="edge">
 <title>0055_0008&#45;&gt;z_0055_1004</title>
-<path fill="none" stroke="black" d="M142.13,-352.09C131.15,-346.61 119.64,-339.3 111.2,-330 105.26,-323.46 100.85,-314.99 97.65,-306.9"/>
-<polygon fill="black" stroke="black" points="100.92,-305.64 94.32,-297.35 94.31,-307.95 100.92,-305.64"/>
-<text text-anchor="middle" x="136.7" y="-318.8" font-family="fixed" font-size="14.00">In_[loc]</text>
+<path fill="none" stroke="black" d="M146.65,-351.09C136.8,-345.5 126.3,-338.37 118.2,-330 111.56,-323.14 105.97,-314.41 101.57,-306.16"/>
+<polygon fill="black" stroke="black" points="104.69,-304.59 97.11,-297.19 98.42,-307.7 104.69,-304.59"/>
+<text text-anchor="middle" x="140.2" y="-318.8" font-family="fixed" font-size="14.00">In[loc]</text>
 </g>
 <!-- 0055_0011&#45;&gt;0055_0005 -->
 <g id="edge5" class="edge">
@@ -201,19 +201,19 @@ In the dark of my room I imagined that I saw again the heavy grey face of the pa
 </svg>
 <br>
 <pre>
-arc(r__room_0055_0006,r__my_0055_0005,genv).
-arc(r__imagined_0055_0008,r__my_0055_0005,arg0).
-arc(r__imagined_0055_0008,r__saw_0055_0011,arg1).
-arc(r__imagined_0055_0008,z_0055_1004,r__In_0055_0001_loc).
-arc(r__saw_0055_0011,r__my_0055_0005,arg0).
-arc(r__saw_0055_0011,r__again_0055_0012,tmp4).
-arc(r__saw_0055_0011,r__face_0055_0016,arg1).
-arc(r__face_0055_0016,r__heavy_0055_0014,attrib2).
-arc(r__face_0055_0016,r__grey_0055_0015,attrib3).
-arc(r__face_0055_0016,z_0055_1014,r__of_0055_0017).
-arc(z_0055_1004,r__dark_0055_0003,attrib2).
-arc(z_0055_1004,r__room_0055_0006,r__of_0055_0004).
-arc(z_0055_1014,r__paralytic_0055_0019,attrib2).
+arc(r_0055_0006__room,r_0055_0005__my,genv).
+arc(r_0055_0008__imagined,r_0055_0005__my,arg0).
+arc(r_0055_0008__imagined,r_0055_0011__saw,arg1).
+arc(r_0055_0008__imagined,z_0055_1004,r_0055_0001__In_loc).
+arc(r_0055_0011__saw,r_0055_0005__my,arg0).
+arc(r_0055_0011__saw,r_0055_0012__again,tmp4).
+arc(r_0055_0011__saw,r_0055_0016__face,arg1).
+arc(r_0055_0016__face,r_0055_0014__heavy,attrib2).
+arc(r_0055_0016__face,r_0055_0015__grey,attrib3).
+arc(r_0055_0016__face,z_0055_1014,r_0055_0017__of).
+arc(z_0055_1004,r_0055_0003__dark,attrib2).
+arc(z_0055_1004,r_0055_0006__room,r_0055_0004__of).
+arc(z_0055_1014,r_0055_0019__paralytic,attrib2).
 
 </pre>
 <br>
@@ -221,31 +221,31 @@ arc(z_0055_1014,r__paralytic_0055_0019,attrib2).
 fof(id_55_A_JOYCE_1914,axiom,
     ? [STATEX6,SPEAKERX5,SPEAKERX7,EVENTX16,EVENTX15,ENTITYX1,ENTITYX9,ENTITYX12,ENTITYX3,ATTRIBX10,ATTRIBX11,ATTRIBX13,ATTRIBX2,QUALITYX8] :
       ( STATEX6 = EVENTX15
-      &amp; isA(EVENTX15,r__saw_0055_0011)
+      &amp; isA(EVENTX15,r_0055_0011__saw)
       &amp; arg0(EVENTX15) = SPEAKERX7
       &amp; tmp4(EVENTX15) = QUALITYX8
       &amp; arg1(EVENTX15) = ENTITYX9
       &amp; isA(ENTITYX1,z_0055_1004)
       &amp; attrib2(ENTITYX1) = ATTRIBX2
-      &amp; r__of_0055_0004(ENTITYX1) = ENTITYX3
-      &amp; isA(ENTITYX3,r__room_0055_0006)
-      &amp; genv(ENTITYX3) = r__my_0055_0005
-      &amp; SPEAKERX5 = r__my_0055_0005
+      &amp; r_0055_0004__of(ENTITYX1) = ENTITYX3
+      &amp; isA(ENTITYX3,r_0055_0006__room)
+      &amp; genv(ENTITYX3) = r_0055_0005__my
+      &amp; SPEAKERX5 = r_0055_0005__my
       &amp; ( SPEAKERX7 = SPEAKERX5
-        | SPEAKERX7 = r__my_0055_0005 )
-      &amp; isA(ENTITYX9,r__face_0055_0016)
+        | SPEAKERX7 = r_0055_0005__my )
+      &amp; isA(ENTITYX9,r_0055_0016__face)
       &amp; attrib2(ENTITYX9) = ATTRIBX10
       &amp; attrib3(ENTITYX9) = ATTRIBX11
-      &amp; r__of_0055_0017(ENTITYX9) = ENTITYX12
+      &amp; r_0055_0017__of(ENTITYX9) = ENTITYX12
       &amp; isA(ENTITYX12,z_0055_1014)
       &amp; attrib2(ENTITYX12) = ATTRIBX13
-      &amp; isA(ATTRIBX2,r__dark_0055_0003)
-      &amp; isA(ATTRIBX10,r__heavy_0055_0014)
-      &amp; isA(ATTRIBX11,r__grey_0055_0015)
-      &amp; isA(ATTRIBX13,r__paralytic_0055_0019)
-      &amp; isA(QUALITYX8,r__again_0055_0012)
-      &amp; isA(EVENTX16,r__imagined_0055_0008)
-      &amp; r__In_0055_0001_loc(EVENTX16) = ENTITYX1
+      &amp; isA(ATTRIBX2,r_0055_0003__dark)
+      &amp; isA(ATTRIBX10,r_0055_0014__heavy)
+      &amp; isA(ATTRIBX11,r_0055_0015__grey)
+      &amp; isA(ATTRIBX13,r_0055_0019__paralytic)
+      &amp; isA(QUALITYX8,r_0055_0012__again)
+      &amp; isA(EVENTX16,r_0055_0008__imagined)
+      &amp; r_0055_0001__In_loc(EVENTX16) = ENTITYX1
       &amp; arg0(EVENTX16) = SPEAKERX5
       &amp; arg1(EVENTX16) = STATEX6 ) ).
 

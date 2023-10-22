@@ -29,11 +29,11 @@
 The students in my class are really interested in going on a day trip .
 <br>
 <br>
-<svg width="306pt" height="305pt"
- viewBox="0.00 0.00 306.05 305.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="299pt" height="305pt"
+ viewBox="0.00 0.00 299.49 305.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 301)">
 <title>%3</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-301 302.05,-301 302.05,4 -4,4"/>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-301 295.49,-301 295.49,4 -4,4"/>
 <!-- 0006_0002 -->
 <g id="node1" class="node">
 <title>0006_0002</title>
@@ -129,19 +129,19 @@ The students in my class are really interested in going on a day trip .
 <title>0006_0010&#45;&gt;0006_0013_0006_0014</title>
 <path fill="none" stroke="black" d="M244.05,-86.8C244.05,-75.16 244.05,-59.55 244.05,-46.24"/>
 <polygon fill="black" stroke="black" points="247.55,-46.18 244.05,-36.18 240.55,-46.18 247.55,-46.18"/>
-<text text-anchor="middle" x="271.05" y="-57.8" font-family="fixed" font-size="14.00">on_[dir]</text>
+<text text-anchor="middle" x="267.55" y="-57.8" font-family="fixed" font-size="14.00">on[dir]</text>
 </g>
 </g>
 </svg>
 <br>
 <pre>
-arc(r__students_0006_0002,r__class_0006_0005,r__in_0006_0003).
-arc(r__class_0006_0005,r__my_0006_0004,genv).
-arc(r__are_0006_0006,r__students_0006_0002,arg0).
-arc(r__are_0006_0006,r__interested_0006_0008,prd2).
-arc(r__interested_0006_0008,r__really_0006_0007,quality1).
-arc(r__interested_0006_0008,r__going_0006_0010,r__in_0006_0009).
-arc(r__going_0006_0010,r__day_0006_0013_r__trip_0006_0014,r__on_0006_0011_dir).
+arc(r_0006_0002__students,r_0006_0005__class,r_0006_0003__in).
+arc(r_0006_0005__class,r_0006_0004__my,genv).
+arc(r_0006_0006__are,r_0006_0002__students,arg0).
+arc(r_0006_0006__are,r_0006_0008__interested,prd2).
+arc(r_0006_0008__interested,r_0006_0007__really,quality1).
+arc(r_0006_0008__interested,r_0006_0010__going,r_0006_0009__in).
+arc(r_0006_0010__going,r_0006_0013__day_trip,r_0006_0011__on_dir).
 
 </pre>
 <br>
@@ -149,18 +149,18 @@ arc(r__going_0006_0010,r__day_0006_0013_r__trip_0006_0014,r__on_0006_0011_dir).
 fof(id_6_A_fce_0102_2001_12,axiom,
     ? [EVENTX5,EVENTX10,EVENTX9,ENTITYX1,ENTITYX8,ENTITYX2,ATTRIBX3,QUALITYX4] :
       ( EVENTX5 = EVENTX9
-      &amp; isA(EVENTX9,r__going_0006_0010)
-      &amp; r__on_0006_0011_dir(EVENTX9) = ENTITYX8
-      &amp; isA(ENTITYX1,r__students_0006_0002)
-      &amp; r__in_0006_0003(ENTITYX1) = ENTITYX2
-      &amp; isA(ENTITYX2,r__class_0006_0005)
-      &amp; genv(ENTITYX2) = r__my_0006_0004
-      &amp; isA(ENTITYX8,r__day_0006_0013_r__trip_0006_0014)
-      &amp; isA(ATTRIBX3,r__interested_0006_0008)
+      &amp; isA(EVENTX9,r_0006_0010__going)
+      &amp; r_0006_0011__on_dir(EVENTX9) = ENTITYX8
+      &amp; isA(ENTITYX1,r_0006_0002__students)
+      &amp; r_0006_0003__in(ENTITYX1) = ENTITYX2
+      &amp; isA(ENTITYX2,r_0006_0005__class)
+      &amp; genv(ENTITYX2) = r_0006_0004__my
+      &amp; isA(ENTITYX8,r_0006_0013__day_trip)
+      &amp; isA(ATTRIBX3,r_0006_0008__interested)
       &amp; quality1(ATTRIBX3) = QUALITYX4
-      &amp; r__in_0006_0009(ATTRIBX3) = EVENTX5
-      &amp; isA(QUALITYX4,r__really_0006_0007)
-      &amp; isA(EVENTX10,r__are_0006_0006)
+      &amp; r_0006_0009__in(ATTRIBX3) = EVENTX5
+      &amp; isA(QUALITYX4,r_0006_0007__really)
+      &amp; isA(EVENTX10,r_0006_0006__are)
       &amp; arg0(EVENTX10) = ENTITYX1
       &amp; prd2(EVENTX10) = ATTRIBX3 ) ).
 

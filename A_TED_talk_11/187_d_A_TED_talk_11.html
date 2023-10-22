@@ -122,28 +122,28 @@ What TED celebrates is the gift of the human imagination .
 </svg>
 <br>
 <pre>
-arc(r__celebrates_0256_0003,r__TED_0256_0002,arg0).
-arc(r__celebrates_0256_0003,z_0256_1003,arg1).
-arc(r__is_0256_0004,r__gift_0256_0006,prd2).
-arc(r__is_0256_0004,z_0256_1003,arg0).
-arc(r__gift_0256_0006,r__imagination_0256_0010,r__of_0256_0007).
-arc(r__imagination_0256_0010,r__human_0256_0009,attrib2).
+arc(r_0256_0003__celebrates,r_0256_0002__TED,arg0).
+arc(r_0256_0003__celebrates,z_0256_1003,arg1).
+arc(r_0256_0004__is,r_0256_0006__gift,prd2).
+arc(r_0256_0004__is,z_0256_1003,arg0).
+arc(r_0256_0006__gift,r_0256_0010__imagination,r_0256_0007__of).
+arc(r_0256_0010__imagination,r_0256_0009__human,attrib2).
 
 </pre>
 <br>
 <pre>
 fof(id_256_A_TED_talk_11,axiom,
     ? [EVENTX7,EVENTX2,ENTITYX1,ENTITYX4,ENTITYX5,ATTRIBX6] :
-      ( isA(EVENTX2,r__celebrates_0256_0003)
+      ( isA(EVENTX2,r_0256_0003__celebrates)
       &amp; arg1(EVENTX2) = ENTITYX1
-      &amp; arg0(EVENTX2) = r__TED_0256_0002
+      &amp; arg0(EVENTX2) = r_0256_0002__TED
       &amp; isA(ENTITYX1,z_0256_1003)
-      &amp; isA(ENTITYX4,r__gift_0256_0006)
-      &amp; r__of_0256_0007(ENTITYX4) = ENTITYX5
-      &amp; isA(ENTITYX5,r__imagination_0256_0010)
+      &amp; isA(ENTITYX4,r_0256_0006__gift)
+      &amp; r_0256_0007__of(ENTITYX4) = ENTITYX5
+      &amp; isA(ENTITYX5,r_0256_0010__imagination)
       &amp; attrib2(ENTITYX5) = ATTRIBX6
-      &amp; isA(ATTRIBX6,r__human_0256_0009)
-      &amp; isA(EVENTX7,r__is_0256_0004)
+      &amp; isA(ATTRIBX6,r_0256_0009__human)
+      &amp; isA(EVENTX7,r_0256_0004__is)
       &amp; arg0(EVENTX7) = ENTITYX1
       &amp; prd2(EVENTX7) = ENTITYX4 ) ).
 

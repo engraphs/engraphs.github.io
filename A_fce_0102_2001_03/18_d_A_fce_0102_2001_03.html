@@ -90,7 +90,7 @@ You have seen this advertisement in The Traveller magazine and have decided to a
 <title>0022_0003&#45;&gt;0022_0008_0022_0009</title>
 <path fill="none" stroke="black" d="M252.1,-176.19C266.6,-163.36 287.84,-144.56 304.68,-129.64"/>
 <polygon fill="black" stroke="black" points="307.38,-131.92 312.55,-122.67 302.74,-126.68 307.38,-131.92"/>
-<text text-anchor="middle" x="314.38" y="-144.8" font-family="fixed" font-size="14.00">in_[loc]</text>
+<text text-anchor="middle" x="310.88" y="-144.8" font-family="fixed" font-size="14.00">in[loc]</text>
 </g>
 <!-- 0022_0010 -->
 <g id="node6" class="node">
@@ -162,16 +162,16 @@ You have seen this advertisement in The Traveller magazine and have decided to a
 </svg>
 <br>
 <pre>
-arc(r__have_0022_0002,r__seen_0022_0003,catenative).
-arc(r__seen_0022_0003,r__You_0022_0001,arg0).
-arc(r__seen_0022_0003,r__advertisement_0022_0005,arg1).
-arc(r__seen_0022_0003,r__Traveller_0022_0008_r__magazine_0022_0009,r__in_0022_0006_loc).
-arc(r__and_0022_0010,r__have_0022_0002,conj1).
-arc(r__and_0022_0010,r__have_0022_0011,conj2).
-arc(r__have_0022_0011,r__decided_0022_0012,catenative).
-arc(r__decided_0022_0012,r__You_0022_0001,arg0).
-arc(r__decided_0022_0012,r__apply_0022_0014,arg1).
-arc(r__apply_0022_0014,r__You_0022_0001,arg0).
+arc(r_0022_0002__have,r_0022_0003__seen,catenative).
+arc(r_0022_0003__seen,r_0022_0001__You,arg0).
+arc(r_0022_0003__seen,r_0022_0005__advertisement,arg1).
+arc(r_0022_0003__seen,r_0022_0008__Traveller_magazine,r_0022_0006__in_loc).
+arc(r_0022_0010__and,r_0022_0002__have,conj1).
+arc(r_0022_0010__and,r_0022_0011__have,conj2).
+arc(r_0022_0011__have,r_0022_0012__decided,catenative).
+arc(r_0022_0012__decided,r_0022_0001__You,arg0).
+arc(r_0022_0012__decided,r_0022_0014__apply,arg1).
+arc(r_0022_0014__apply,r_0022_0001__You,arg0).
 
 </pre>
 <br>
@@ -179,25 +179,25 @@ arc(r__apply_0022_0014,r__You_0022_0001,arg0).
 fof(id_22_A_fce_0102_2001_03,axiom,
     ? [CATENATIVEX1,CATENATIVEX6,STATEX7,CONJX11,EVENTX10,EVENTX9,EVENTX8,EVENTX5,EVENTX4,ENTITYX2,ENTITYX3] :
       ( CATENATIVEX1 = EVENTX4
-      &amp; isA(EVENTX4,r__seen_0022_0003)
-      &amp; arg0(EVENTX4) = r__You_0022_0001
+      &amp; isA(EVENTX4,r_0022_0003__seen)
+      &amp; arg0(EVENTX4) = r_0022_0001__You
       &amp; arg1(EVENTX4) = ENTITYX2
-      &amp; r__in_0022_0006_loc(EVENTX4) = ENTITYX3
+      &amp; r_0022_0006__in_loc(EVENTX4) = ENTITYX3
       &amp; CATENATIVEX6 = EVENTX9
-      &amp; isA(EVENTX9,r__decided_0022_0012)
-      &amp; arg0(EVENTX9) = r__You_0022_0001
+      &amp; isA(EVENTX9,r_0022_0012__decided)
+      &amp; arg0(EVENTX9) = r_0022_0001__You
       &amp; arg1(EVENTX9) = STATEX7
       &amp; STATEX7 = EVENTX8
-      &amp; isA(EVENTX8,r__apply_0022_0014)
-      &amp; arg0(EVENTX8) = r__You_0022_0001
-      &amp; isA(ENTITYX2,r__advertisement_0022_0005)
-      &amp; isA(ENTITYX3,r__Traveller_0022_0008_r__magazine_0022_0009)
-      &amp; isA(CONJX11,r__and_0022_0010)
+      &amp; isA(EVENTX8,r_0022_0014__apply)
+      &amp; arg0(EVENTX8) = r_0022_0001__You
+      &amp; isA(ENTITYX2,r_0022_0005__advertisement)
+      &amp; isA(ENTITYX3,r_0022_0008__Traveller_magazine)
+      &amp; isA(CONJX11,r_0022_0010__and)
       &amp; conj1(CONJX11) = EVENTX5
-      &amp; isA(EVENTX5,r__have_0022_0002)
+      &amp; isA(EVENTX5,r_0022_0002__have)
       &amp; catenative(EVENTX5) = CATENATIVEX1
       &amp; conj2(CONJX11) = EVENTX10
-      &amp; isA(EVENTX10,r__have_0022_0011)
+      &amp; isA(EVENTX10,r_0022_0011__have)
       &amp; catenative(EVENTX10) = CATENATIVEX6 ) ).
 
 

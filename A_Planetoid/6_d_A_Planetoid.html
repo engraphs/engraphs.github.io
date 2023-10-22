@@ -134,8 +134,8 @@ Cruisers are also dangerous , but do n't have to be destroyed before you move on
 <!-- 0010_0013_tmp -->
 <g id="node9" class="node">
 <title>0010_0013_tmp</title>
-<ellipse fill="none" stroke="black" cx="202.1" cy="-279" rx="68.79" ry="18"/>
-<text text-anchor="middle" x="202.1" y="-275.3" font-family="fixed" font-size="14.00">before_[tmp]</text>
+<ellipse fill="none" stroke="black" cx="202.1" cy="-279" rx="64.19" ry="18"/>
+<text text-anchor="middle" x="202.1" y="-275.3" font-family="fixed" font-size="14.00">before[tmp]</text>
 </g>
 <!-- 0010_0011&#45;&gt;0010_0013_tmp -->
 <g id="edge8" class="edge">
@@ -201,7 +201,7 @@ Cruisers are also dangerous , but do n't have to be destroyed before you move on
 <title>0010_0015_0010_0016&#45;&gt;0010_0020</title>
 <path fill="none" stroke="black" d="M226.14,-173.8C228.9,-162.09 232.6,-146.34 235.75,-132.97"/>
 <polygon fill="black" stroke="black" points="239.24,-133.42 238.12,-122.89 232.43,-131.82 239.24,-133.42"/>
-<text text-anchor="middle" x="258.1" y="-144.8" font-family="fixed" font-size="14.00">to_[dir]</text>
+<text text-anchor="middle" x="254.6" y="-144.8" font-family="fixed" font-size="14.00">to[dir]</text>
 </g>
 <!-- 0010_0019 -->
 <g id="node14" class="node">
@@ -220,20 +220,20 @@ Cruisers are also dangerous , but do n't have to be destroyed before you move on
 </svg>
 <br>
 <pre>
-arc(r__are_0010_0002,r__Cruisers_0010_0001,arg0).
-arc(r__are_0010_0002,r__dangerous_0010_0004,prd2).
-arc(r__also_0010_0003,r__are_0010_0002,scope).
-arc(r__but_0010_0006,r__also_0010_0003,conj1).
-arc(r__but_0010_0006,r__n_apos_t_0010_0008,conj2).
-arc(r__do_0010_0007_r__have_0010_0009,r__be_0010_0011,catenative).
-arc(r__n_apos_t_0010_0008,r__do_0010_0007_r__have_0010_0009,scope).
-arc(r__be_0010_0011,r__before_0010_0013_tmp,catenative).
-arc(r__destroyed_0010_0012,r__Cruisers_0010_0001,arg1).
-arc(r__before_0010_0013_tmp,r__destroyed_0010_0012,scope).
-arc(r__before_0010_0013_tmp,r__move_0010_0015_r__on_0010_0016,restriction).
-arc(r__move_0010_0015_r__on_0010_0016,r__you_0010_0014,arg0).
-arc(r__move_0010_0015_r__on_0010_0016,r__wave_0010_0020,r__to_0010_0017_dir).
-arc(r__wave_0010_0020,r__next_0010_0019,attrib2).
+arc(r_0010_0002__are,r_0010_0001__Cruisers,arg0).
+arc(r_0010_0002__are,r_0010_0004__dangerous,prd2).
+arc(r_0010_0003__also,r_0010_0002__are,scope).
+arc(r_0010_0006__but,r_0010_0003__also,conj1).
+arc(r_0010_0006__but,r_0010_0008__n_apos_t,conj2).
+arc(r_0010_0007__do_have,r_0010_0011__be,catenative).
+arc(r_0010_0008__n_apos_t,r_0010_0007__do_have,scope).
+arc(r_0010_0011__be,r_0010_0013__before_tmp,catenative).
+arc(r_0010_0012__destroyed,r_0010_0001__Cruisers,arg1).
+arc(r_0010_0013__before_tmp,r_0010_0012__destroyed,scope).
+arc(r_0010_0013__before_tmp,r_0010_0015__move_on,restriction).
+arc(r_0010_0015__move_on,r_0010_0014__you,arg0).
+arc(r_0010_0015__move_on,r_0010_0020__wave,r_0010_0017__to_dir).
+arc(r_0010_0020__wave,r_0010_0019__next,attrib2).
 
 </pre>
 <br>
@@ -241,33 +241,33 @@ arc(r__wave_0010_0020,r__next_0010_0019,attrib2).
 fof(id_10_A_Planetoid,axiom,
     ? [STATEX5,CATENATIVEX6,CONJX16,OPERATORX14,EVENTX15,EVENTX13,CONNX8,EVENTX11,EVENTX12,OPERATORX2,EVENTX4,ENTITYX1,ENTITYX9,ATTRIBX10,ATTRIBX3] :
       ( STATEX5 = EVENTX13
-      &amp; isA(EVENTX13,r__be_0010_0011)
+      &amp; isA(EVENTX13,r_0010_0011__be)
       &amp; catenative(EVENTX13) = CATENATIVEX6
       &amp; CATENATIVEX6 = CONNX8
-      &amp; isA(CONNX8,r__before_0010_0013_tmp)
+      &amp; isA(CONNX8,r_0010_0013__before_tmp)
       &amp; scope(CONNX8) = EVENTX12
-      &amp; isA(EVENTX12,r__destroyed_0010_0012)
+      &amp; isA(EVENTX12,r_0010_0012__destroyed)
       &amp; arg1(EVENTX12) = ENTITYX1
       &amp; restriction(CONNX8) = EVENTX11
-      &amp; isA(EVENTX11,r__move_0010_0015_r__on_0010_0016)
-      &amp; arg0(EVENTX11) = r__you_0010_0014
-      &amp; r__to_0010_0017_dir(EVENTX11) = ENTITYX9
-      &amp; isA(ENTITYX1,r__Cruisers_0010_0001)
-      &amp; isA(ENTITYX9,r__wave_0010_0020)
+      &amp; isA(EVENTX11,r_0010_0015__move_on)
+      &amp; arg0(EVENTX11) = r_0010_0014__you
+      &amp; r_0010_0017__to_dir(EVENTX11) = ENTITYX9
+      &amp; isA(ENTITYX1,r_0010_0001__Cruisers)
+      &amp; isA(ENTITYX9,r_0010_0020__wave)
       &amp; attrib2(ENTITYX9) = ATTRIBX10
-      &amp; isA(ATTRIBX3,r__dangerous_0010_0004)
-      &amp; isA(ATTRIBX10,r__next_0010_0019)
-      &amp; isA(CONJX16,r__but_0010_0006)
+      &amp; isA(ATTRIBX3,r_0010_0004__dangerous)
+      &amp; isA(ATTRIBX10,r_0010_0019__next)
+      &amp; isA(CONJX16,r_0010_0006__but)
       &amp; conj1(CONJX16) = OPERATORX2
-      &amp; isA(OPERATORX2,r__also_0010_0003)
+      &amp; isA(OPERATORX2,r_0010_0003__also)
       &amp; scope(OPERATORX2) = EVENTX4
-      &amp; isA(EVENTX4,r__are_0010_0002)
+      &amp; isA(EVENTX4,r_0010_0002__are)
       &amp; arg0(EVENTX4) = ENTITYX1
       &amp; prd2(EVENTX4) = ATTRIBX3
       &amp; conj2(CONJX16) = OPERATORX14
-      &amp; isA(OPERATORX14,r__n_apos_t_0010_0008)
+      &amp; isA(OPERATORX14,r_0010_0008__n_apos_t)
       &amp; scope(OPERATORX14) = EVENTX15
-      &amp; isA(EVENTX15,r__do_0010_0007_r__have_0010_0009)
+      &amp; isA(EVENTX15,r_0010_0007__do_have)
       &amp; catenative(EVENTX15) = STATEX5 ) ).
 
 

@@ -169,38 +169,38 @@
 </svg>
 <br>
 <pre>
-arc(quantificational_r__Each_0238_0004,r__information_0238_0007_r__protection_0238_0008_r__organization_0238_0009,restriction).
-arc(quantificational_r__Each_0238_0004,r__shall_0238_0010,scope).
-arc(r__information_0238_0007_r__protection_0238_0008_r__organization_0238_0009,r__authorized_0238_0005,attrib2).
-arc(r__information_0238_0007_r__protection_0238_0008_r__organization_0238_0009,r__personal_0238_0006,attrib3).
-arc(r__shall_0238_0010,r__announce_0238_0012,scope).
-arc(r__announce_0238_0012,r__information_0238_0007_r__protection_0238_0008_r__organization_0238_0009,arg0).
-arc(r__announce_0238_0012,r__publicly_0238_0011,mnr4).
-arc(r__announce_0238_0012,r__names_0238_0014,arg1).
-arc(r__names_0238_0014,r__target_0238_0017_r__entities_0238_0018,r__of_0238_0015).
-arc(r__target_0238_0017_r__entities_0238_0018,r__its_0238_0016,genv).
+arc(r_0238_0004__quantificational__Each,r_0238_0007__information_protection_organization,restriction).
+arc(r_0238_0004__quantificational__Each,r_0238_0010__shall,scope).
+arc(r_0238_0007__information_protection_organization,r_0238_0005__authorized,attrib2).
+arc(r_0238_0007__information_protection_organization,r_0238_0006__personal,attrib3).
+arc(r_0238_0010__shall,r_0238_0012__announce,scope).
+arc(r_0238_0012__announce,r_0238_0007__information_protection_organization,arg0).
+arc(r_0238_0012__announce,r_0238_0011__publicly,mnr4).
+arc(r_0238_0012__announce,r_0238_0014__names,arg1).
+arc(r_0238_0014__names,r_0238_0017__target_entities,r_0238_0015__of).
+arc(r_0238_0017__target_entities,r_0238_0016__its,genv).
 
 </pre>
 <br>
 <pre>
 fof(id_238_A_law_h15A119,axiom,
     ? [QUANTX2,OPERATORX8,EVENTX9,ENTITYX1,ENTITYX6,ENTITYX7,ATTRIBX3,ATTRIBX4,QUALITYX5] :
-      ( isA(ENTITYX6,r__names_0238_0014)
-      &amp; r__of_0238_0015(ENTITYX6) = ENTITYX7
-      &amp; isA(ENTITYX7,r__target_0238_0017_r__entities_0238_0018)
-      &amp; genv(ENTITYX7) = r__its_0238_0016
-      &amp; isA(ATTRIBX3,r__authorized_0238_0005)
-      &amp; isA(ATTRIBX4,r__personal_0238_0006)
-      &amp; isA(QUALITYX5,r__publicly_0238_0011)
-      &amp; isA(QUANTX2,quantificational_r__Each_0238_0004)
+      ( isA(ENTITYX6,r_0238_0014__names)
+      &amp; r_0238_0015__of(ENTITYX6) = ENTITYX7
+      &amp; isA(ENTITYX7,r_0238_0017__target_entities)
+      &amp; genv(ENTITYX7) = r_0238_0016__its
+      &amp; isA(ATTRIBX3,r_0238_0005__authorized)
+      &amp; isA(ATTRIBX4,r_0238_0006__personal)
+      &amp; isA(QUALITYX5,r_0238_0011__publicly)
+      &amp; isA(QUANTX2,r_0238_0004__quantificational__Each)
       &amp; restriction(QUANTX2) = ENTITYX1
-      &amp; isA(ENTITYX1,r__information_0238_0007_r__protection_0238_0008_r__organization_0238_0009)
+      &amp; isA(ENTITYX1,r_0238_0007__information_protection_organization)
       &amp; attrib2(ENTITYX1) = ATTRIBX3
       &amp; attrib3(ENTITYX1) = ATTRIBX4
       &amp; scope(QUANTX2) = OPERATORX8
-      &amp; isA(OPERATORX8,r__shall_0238_0010)
+      &amp; isA(OPERATORX8,r_0238_0010__shall)
       &amp; scope(OPERATORX8) = EVENTX9
-      &amp; isA(EVENTX9,r__announce_0238_0012)
+      &amp; isA(EVENTX9,r_0238_0012__announce)
       &amp; arg0(EVENTX9) = ENTITYX1
       &amp; mnr4(EVENTX9) = QUALITYX5
       &amp; arg1(EVENTX9) = ENTITYX6 ) ).

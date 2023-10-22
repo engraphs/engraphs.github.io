@@ -75,44 +75,44 @@ Of the doubled prescription charge his argument was :
 <!-- 0130_0008 -->
 <g id="node5" class="node">
 <title>0130_0008</title>
-<ellipse fill="none" stroke="black" cx="185.44" cy="-192" rx="28.7" ry="18"/>
-<text text-anchor="middle" x="185.44" y="-188.3" font-family="fixed" font-size="14.00">was</text>
+<ellipse fill="none" stroke="black" cx="184.44" cy="-192" rx="28.7" ry="18"/>
+<text text-anchor="middle" x="184.44" y="-188.3" font-family="fixed" font-size="14.00">was</text>
 </g>
 <!-- 0130_0008&#45;&gt;0130_0004_0130_0005 -->
 <g id="edge3" class="edge">
 <title>0130_0008&#45;&gt;0130_0004_0130_0005</title>
-<path fill="none" stroke="black" d="M170.46,-176.19C157.68,-163.56 139.03,-145.13 124.06,-130.33"/>
-<polygon fill="black" stroke="black" points="126.18,-127.51 116.61,-122.97 121.26,-132.49 126.18,-127.51"/>
-<text text-anchor="middle" x="174.94" y="-144.8" font-family="fixed" font-size="14.00">Of_[rst]</text>
+<path fill="none" stroke="black" d="M169.64,-176.19C157,-163.56 138.57,-145.13 123.77,-130.33"/>
+<polygon fill="black" stroke="black" points="125.96,-127.57 116.41,-122.97 121.01,-132.52 125.96,-127.57"/>
+<text text-anchor="middle" x="170.44" y="-144.8" font-family="fixed" font-size="14.00">Of[rst]</text>
 </g>
 <!-- 0130_0008&#45;&gt;0130_0007 -->
 <g id="edge4" class="edge">
 <title>0130_0008&#45;&gt;0130_0007</title>
-<path fill="none" stroke="black" d="M200.42,-176.19C213.37,-163.39 232.33,-144.66 247.4,-129.76"/>
-<polygon fill="black" stroke="black" points="250.22,-131.9 254.87,-122.38 245.3,-126.92 250.22,-131.9"/>
-<text text-anchor="middle" x="254.94" y="-144.8" font-family="fixed" font-size="14.00">[arg0]</text>
+<path fill="none" stroke="black" d="M199.2,-176.58C212.45,-163.64 232.13,-144.4 247.61,-129.28"/>
+<polygon fill="black" stroke="black" points="250.12,-131.73 254.83,-122.23 245.23,-126.72 250.12,-131.73"/>
+<text text-anchor="middle" x="253.94" y="-144.8" font-family="fixed" font-size="14.00">[arg0]</text>
 </g>
 </g>
 </svg>
 <br>
 <pre>
-arc(r__prescription_0130_0004_r__charge_0130_0005,r__doubled_0130_0003,attrib2).
-arc(r__argument_0130_0007,r__his_0130_0006,genv).
-arc(r__was_0130_0008,r__prescription_0130_0004_r__charge_0130_0005,r__Of_0130_0001_rst).
-arc(r__was_0130_0008,r__argument_0130_0007,arg0).
+arc(r_0130_0004__prescription_charge,r_0130_0003__doubled,attrib2).
+arc(r_0130_0007__argument,r_0130_0006__his,genv).
+arc(r_0130_0008__was,r_0130_0004__prescription_charge,r_0130_0001__Of_rst).
+arc(r_0130_0008__was,r_0130_0007__argument,arg0).
 
 </pre>
 <br>
 <pre>
 fof(id_130_A_lob_A01,axiom,
     ? [EVENTX4,ENTITYX1,ENTITYX3,ATTRIBX2] :
-      ( isA(ENTITYX1,r__prescription_0130_0004_r__charge_0130_0005)
+      ( isA(ENTITYX1,r_0130_0004__prescription_charge)
       &amp; attrib2(ENTITYX1) = ATTRIBX2
-      &amp; isA(ENTITYX3,r__argument_0130_0007)
-      &amp; genv(ENTITYX3) = r__his_0130_0006
-      &amp; isA(ATTRIBX2,r__doubled_0130_0003)
-      &amp; isA(EVENTX4,r__was_0130_0008)
-      &amp; r__Of_0130_0001_rst(EVENTX4) = ENTITYX1
+      &amp; isA(ENTITYX3,r_0130_0007__argument)
+      &amp; genv(ENTITYX3) = r_0130_0006__his
+      &amp; isA(ATTRIBX2,r_0130_0003__doubled)
+      &amp; isA(EVENTX4,r_0130_0008__was)
+      &amp; r_0130_0001__Of_rst(EVENTX4) = ENTITYX1
       &amp; arg0(EVENTX4) = ENTITYX3 ) ).
 
 

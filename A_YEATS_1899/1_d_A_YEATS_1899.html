@@ -64,7 +64,7 @@ He Wishes for the Cloths of Heaven
 <title>0001_0002&#45;&gt;0001_0005</title>
 <path fill="none" stroke="black" d="M70.08,-174.21C77.46,-161.9 87.6,-145 95.94,-131.09"/>
 <polygon fill="black" stroke="black" points="98.97,-132.84 101.12,-122.47 92.97,-129.24 98.97,-132.84"/>
-<text text-anchor="middle" x="116.5" y="-144.8" font-family="fixed" font-size="14.00">for_[clr]</text>
+<text text-anchor="middle" x="113" y="-144.8" font-family="fixed" font-size="14.00">for[clr]</text>
 </g>
 <!-- 0001_0007 -->
 <g id="node4" class="node">
@@ -83,21 +83,21 @@ He Wishes for the Cloths of Heaven
 </svg>
 <br>
 <pre>
-arc(r__Wishes_0001_0002,r__He_0001_0001,arg0).
-arc(r__Wishes_0001_0002,r__Cloths_0001_0005,r__for_0001_0003_clr).
-arc(r__Cloths_0001_0005,r__Heaven_0001_0007,r__of_0001_0006).
+arc(r_0001_0002__Wishes,r_0001_0001__He,arg0).
+arc(r_0001_0002__Wishes,r_0001_0005__Cloths,r_0001_0003__for_clr).
+arc(r_0001_0005__Cloths,r_0001_0007__Heaven,r_0001_0006__of).
 
 </pre>
 <br>
 <pre>
 fof(id_1_A_YEATS_1899,axiom,
     ? [EVENTX3,ENTITYX1,ENTITYX2] :
-      ( isA(ENTITYX1,r__Cloths_0001_0005)
-      &amp; r__of_0001_0006(ENTITYX1) = ENTITYX2
-      &amp; isA(ENTITYX2,r__Heaven_0001_0007)
-      &amp; isA(EVENTX3,r__Wishes_0001_0002)
-      &amp; arg0(EVENTX3) = r__He_0001_0001
-      &amp; r__for_0001_0003_clr(EVENTX3) = ENTITYX1 ) ).
+      ( isA(ENTITYX1,r_0001_0005__Cloths)
+      &amp; r_0001_0006__of(ENTITYX1) = ENTITYX2
+      &amp; isA(ENTITYX2,r_0001_0007__Heaven)
+      &amp; isA(EVENTX3,r_0001_0002__Wishes)
+      &amp; arg0(EVENTX3) = r_0001_0001__He
+      &amp; r_0001_0003__for_clr(EVENTX3) = ENTITYX1 ) ).
 
 
 </pre>

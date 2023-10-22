@@ -88,8 +88,8 @@
 <!-- 0161_0008_cnt -->
 <g id="node5" class="node">
 <title>0161_0008_cnt</title>
-<ellipse fill="none" stroke="black" cx="179.55" cy="-366" rx="46.29" ry="18"/>
-<text text-anchor="middle" x="179.55" y="-362.3" font-family="fixed" font-size="14.00">as_[cnt]</text>
+<ellipse fill="none" stroke="black" cx="179.55" cy="-366" rx="42.49" ry="18"/>
+<text text-anchor="middle" x="179.55" y="-362.3" font-family="fixed" font-size="14.00">as[cnt]</text>
 </g>
 <!-- 0161_0008_cnt&#45;&gt;0161_0007 -->
 <g id="edge3" class="edge">
@@ -155,15 +155,15 @@
 </svg>
 <br>
 <pre>
-arc(imperative_0161_1007,r__Heave_0161_0002,scope).
-arc(quantificational_r__each_0161_0009,r__chest_0161_0010,restriction).
-arc(quantificational_r__each_0161_0009,r__came_0161_0011_r__up_0161_0012,scope).
+arc(imperative_0161_1007,r_0161_0002__Heave,scope).
+arc(r_0161_0007__shouted,r_0161_0006__they,arg0).
+arc(r_0161_0007__shouted,utterance_0161_1003,arg1).
+arc(r_0161_0008__as_cnt,r_0161_0007__shouted,scope).
+arc(r_0161_0008__as_cnt,r_0161_0009__quantificational__each,restriction).
+arc(r_0161_0009__quantificational__each,r_0161_0010__chest,restriction).
+arc(r_0161_0009__quantificational__each,r_0161_0011__came_up,scope).
+arc(r_0161_0011__came_up,r_0161_0010__chest,arg0).
 arc(utterance_0161_1003,imperative_0161_1007,part1).
-arc(r__shouted_0161_0007,utterance_0161_1003,arg1).
-arc(r__shouted_0161_0007,r__they_0161_0006,arg0).
-arc(r__as_0161_0008_cnt,quantificational_r__each_0161_0009,restriction).
-arc(r__as_0161_0008_cnt,r__shouted_0161_0007,scope).
-arc(r__came_0161_0011_r__up_0161_0012,r__chest_0161_0010,arg0).
 
 </pre>
 <br>
@@ -175,18 +175,18 @@ fof(id_161_A_WILDE_1_1888,axiom,
       &amp; part1(CONJX9) = OPERATORX7
       &amp; isA(OPERATORX7,imperative_0161_1007)
       &amp; scope(OPERATORX7) = EVENTX8
-      &amp; isA(EVENTX8,r__Heave_0161_0002)
-      &amp; isA(CONNX10,r__as_0161_0008_cnt)
+      &amp; isA(EVENTX8,r_0161_0002__Heave)
+      &amp; isA(CONNX10,r_0161_0008__as_cnt)
       &amp; scope(CONNX10) = EVENTX14
-      &amp; isA(EVENTX14,r__shouted_0161_0007)
+      &amp; isA(EVENTX14,r_0161_0007__shouted)
       &amp; arg1(EVENTX14) = STATEX1
-      &amp; arg0(EVENTX14) = r__they_0161_0006
+      &amp; arg0(EVENTX14) = r_0161_0006__they
       &amp; restriction(CONNX10) = QUANTX12
-      &amp; isA(QUANTX12,quantificational_r__each_0161_0009)
+      &amp; isA(QUANTX12,r_0161_0009__quantificational__each)
       &amp; restriction(QUANTX12) = ENTITYX11
-      &amp; isA(ENTITYX11,r__chest_0161_0010)
+      &amp; isA(ENTITYX11,r_0161_0010__chest)
       &amp; scope(QUANTX12) = EVENTX13
-      &amp; isA(EVENTX13,r__came_0161_0011_r__up_0161_0012)
+      &amp; isA(EVENTX13,r_0161_0011__came_up)
       &amp; arg0(EVENTX13) = ENTITYX11 ) ).
 
 

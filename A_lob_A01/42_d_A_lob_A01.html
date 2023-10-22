@@ -122,27 +122,27 @@ President Kennedy today defended the appointment of a negro as his housing Minis
 </svg>
 <br>
 <pre>
-arc(r__defended_0045_0004,r__President_0045_0001_r__Kennedy_0045_0002,arg0).
-arc(r__defended_0045_0004,r__today_0045_0003,tmp2).
-arc(r__defended_0045_0004,r__appointment_0045_0006,arg1).
-arc(r__appointment_0045_0006,r__negro_0045_0009,r__of_0045_0007).
-arc(r__appointment_0045_0006,r__housing_0045_0012_r__Minister_0045_0013,r__as_0045_0010).
-arc(r__housing_0045_0012_r__Minister_0045_0013,r__his_0045_0011,genv).
+arc(r_0045_0004__defended,r_0045_0001__President_Kennedy,arg0).
+arc(r_0045_0004__defended,r_0045_0003__today,tmp2).
+arc(r_0045_0004__defended,r_0045_0006__appointment,arg1).
+arc(r_0045_0006__appointment,r_0045_0009__negro,r_0045_0007__of).
+arc(r_0045_0006__appointment,r_0045_0012__housing_Minister,r_0045_0010__as).
+arc(r_0045_0012__housing_Minister,r_0045_0011__his,genv).
 
 </pre>
 <br>
 <pre>
 fof(id_45_A_lob_A01,axiom,
     ? [EVENTX5,ENTITYX2,ENTITYX3,ENTITYX4,QUALITYX1] :
-      ( isA(ENTITYX2,r__appointment_0045_0006)
-      &amp; r__of_0045_0007(ENTITYX2) = ENTITYX3
-      &amp; r__as_0045_0010(ENTITYX2) = ENTITYX4
-      &amp; isA(ENTITYX3,r__negro_0045_0009)
-      &amp; isA(ENTITYX4,r__housing_0045_0012_r__Minister_0045_0013)
-      &amp; genv(ENTITYX4) = r__his_0045_0011
-      &amp; isA(QUALITYX1,r__today_0045_0003)
-      &amp; isA(EVENTX5,r__defended_0045_0004)
-      &amp; arg0(EVENTX5) = r__President_0045_0001_r__Kennedy_0045_0002
+      ( isA(ENTITYX2,r_0045_0006__appointment)
+      &amp; r_0045_0007__of(ENTITYX2) = ENTITYX3
+      &amp; r_0045_0010__as(ENTITYX2) = ENTITYX4
+      &amp; isA(ENTITYX3,r_0045_0009__negro)
+      &amp; isA(ENTITYX4,r_0045_0012__housing_Minister)
+      &amp; genv(ENTITYX4) = r_0045_0011__his
+      &amp; isA(QUALITYX1,r_0045_0003__today)
+      &amp; isA(EVENTX5,r_0045_0004__defended)
+      &amp; arg0(EVENTX5) = r_0045_0001__President_Kennedy
       &amp; tmp2(EVENTX5) = QUALITYX1
       &amp; arg1(EVENTX5) = ENTITYX2 ) ).
 

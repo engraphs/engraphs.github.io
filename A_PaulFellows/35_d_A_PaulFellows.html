@@ -174,16 +174,16 @@ Then the real machines came along , the Archimedes , they changed one important 
 </svg>
 <br>
 <pre>
-arc(r__Then_0040_0001,r__came_0040_0005,scope).
-arc(r__machines_0040_0004,r__real_0040_0003,attrib2).
-arc(r__machines_0040_0004,r__Archimedes_0040_0009,prn4).
-arc(r__came_0040_0005,r__machines_0040_0004,arg0).
-arc(r__came_0040_0005,r__along_0040_0006,dir4).
-arc(r__came_0040_0005,r__changed_0040_0012,prn7).
-arc(r__changed_0040_0012,r__they_0040_0011,arg0).
-arc(r__changed_0040_0012,r__one_0040_0013_r__thing_0040_0015,arg1).
-arc(r__one_0040_0013_r__thing_0040_0015,r__important_0040_0014,attrib2).
-arc(r__one_0040_0013_r__thing_0040_0015,r__keyboard_0040_0018,prn5).
+arc(r_0040_0001__Then,r_0040_0005__came,scope).
+arc(r_0040_0004__machines,r_0040_0003__real,attrib2).
+arc(r_0040_0004__machines,r_0040_0009__Archimedes,prn4).
+arc(r_0040_0005__came,r_0040_0004__machines,arg0).
+arc(r_0040_0005__came,r_0040_0006__along,dir4).
+arc(r_0040_0005__came,r_0040_0012__changed,prn7).
+arc(r_0040_0012__changed,r_0040_0011__they,arg0).
+arc(r_0040_0012__changed,r_0040_0013__one_thing,arg1).
+arc(r_0040_0013__one_thing,r_0040_0014__important,attrib2).
+arc(r_0040_0013__one_thing,r_0040_0018__keyboard,prn5).
 
 </pre>
 <br>
@@ -191,23 +191,23 @@ arc(r__one_0040_0013_r__thing_0040_0015,r__keyboard_0040_0018,prn5).
 fof(id_40_A_PaulFellows,axiom,
     ? [EVENTX5,OPERATORX1,EVENTX10,EVENTX9,ENTITYX2,ENTITYX6,ENTITYX8,ATTRIBX7,ATTRIBX3,QUALITYX4] :
       ( EVENTX5 = EVENTX9
-      &amp; isA(EVENTX9,r__changed_0040_0012)
-      &amp; arg0(EVENTX9) = r__they_0040_0011
+      &amp; isA(EVENTX9,r_0040_0012__changed)
+      &amp; arg0(EVENTX9) = r_0040_0011__they
       &amp; arg1(EVENTX9) = ENTITYX6
-      &amp; isA(ENTITYX2,r__machines_0040_0004)
+      &amp; isA(ENTITYX2,r_0040_0004__machines)
       &amp; attrib2(ENTITYX2) = ATTRIBX3
-      &amp; prn4(ENTITYX2) = r__Archimedes_0040_0009
-      &amp; isA(ENTITYX6,r__one_0040_0013_r__thing_0040_0015)
+      &amp; prn4(ENTITYX2) = r_0040_0009__Archimedes
+      &amp; isA(ENTITYX6,r_0040_0013__one_thing)
       &amp; attrib2(ENTITYX6) = ATTRIBX7
       &amp; prn5(ENTITYX6) = ENTITYX8
-      &amp; isA(ENTITYX8,r__keyboard_0040_0018)
-      &amp; isA(ATTRIBX3,r__real_0040_0003)
-      &amp; isA(ATTRIBX7,r__important_0040_0014)
-      &amp; isA(r__Archimedes_0040_0009,r__Archimedes_0040_0009)
-      &amp; isA(QUALITYX4,r__along_0040_0006)
-      &amp; isA(OPERATORX1,r__Then_0040_0001)
+      &amp; isA(ENTITYX8,r_0040_0018__keyboard)
+      &amp; isA(ATTRIBX3,r_0040_0003__real)
+      &amp; isA(ATTRIBX7,r_0040_0014__important)
+      &amp; isA(r_0040_0009__Archimedes,r_0040_0009__Archimedes)
+      &amp; isA(QUALITYX4,r_0040_0006__along)
+      &amp; isA(OPERATORX1,r_0040_0001__Then)
       &amp; scope(OPERATORX1) = EVENTX10
-      &amp; isA(EVENTX10,r__came_0040_0005)
+      &amp; isA(EVENTX10,r_0040_0005__came)
       &amp; arg0(EVENTX10) = ENTITYX2
       &amp; dir4(EVENTX10) = QUALITYX4
       &amp; prn7(EVENTX10) = EVENTX5 ) ).

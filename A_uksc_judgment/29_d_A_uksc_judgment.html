@@ -109,27 +109,27 @@ There is also consultation with the Scottish Parliament and the Welsh Assembly .
 </svg>
 <br>
 <pre>
-arc(r__is_0046_0002,r__consultation_0046_0004,arg0).
-arc(r__also_0046_0003,r__is_0046_0002,scope).
-arc(r__consultation_0046_0004,r__and_0046_0009,r__with_0046_0005).
-arc(r__and_0046_0009,r__Scottish_0046_0007_r__Parliament_0046_0008,conj1).
-arc(r__and_0046_0009,r__Welsh_0046_0011_r__Assembly_0046_0012,conj2).
+arc(r_0046_0002__is,r_0046_0004__consultation,arg0).
+arc(r_0046_0003__also,r_0046_0002__is,scope).
+arc(r_0046_0004__consultation,r_0046_0009__and,r_0046_0005__with).
+arc(r_0046_0009__and,r_0046_0007__Scottish_Parliament,conj1).
+arc(r_0046_0009__and,r_0046_0011__Welsh_Assembly,conj2).
 
 </pre>
 <br>
 <pre>
 fof(id_46_A_uksc_judgment,axiom,
     ? [OPERATORX1,EVENTX4,ENTITYX2,ENTITYX3] :
-      ( isA(ENTITYX2,r__consultation_0046_0004)
-      &amp; r__with_0046_0005(ENTITYX2) = ENTITYX3
-      &amp; isA(ENTITYX3,r__and_0046_0009)
-      &amp; conj1(ENTITYX3) = r__Scottish_0046_0007_r__Parliament_0046_0008
-      &amp; conj2(ENTITYX3) = r__Welsh_0046_0011_r__Assembly_0046_0012
-      &amp; isA(r__Scottish_0046_0007_r__Parliament_0046_0008,r__Scottish_0046_0007_r__Parliament_0046_0008)
-      &amp; isA(r__Welsh_0046_0011_r__Assembly_0046_0012,r__Welsh_0046_0011_r__Assembly_0046_0012)
-      &amp; isA(OPERATORX1,r__also_0046_0003)
+      ( isA(ENTITYX2,r_0046_0004__consultation)
+      &amp; r_0046_0005__with(ENTITYX2) = ENTITYX3
+      &amp; isA(ENTITYX3,r_0046_0009__and)
+      &amp; conj1(ENTITYX3) = r_0046_0007__Scottish_Parliament
+      &amp; conj2(ENTITYX3) = r_0046_0011__Welsh_Assembly
+      &amp; isA(r_0046_0007__Scottish_Parliament,r_0046_0007__Scottish_Parliament)
+      &amp; isA(r_0046_0011__Welsh_Assembly,r_0046_0011__Welsh_Assembly)
+      &amp; isA(OPERATORX1,r_0046_0003__also)
       &amp; scope(OPERATORX1) = EVENTX4
-      &amp; isA(EVENTX4,r__is_0046_0002)
+      &amp; isA(EVENTX4,r_0046_0002__is)
       &amp; arg0(EVENTX4) = ENTITYX2 ) ).
 
 

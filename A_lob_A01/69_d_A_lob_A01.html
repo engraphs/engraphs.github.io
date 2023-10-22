@@ -109,25 +109,25 @@ These support costs are a big drain on America 's dollar reserves .
 </svg>
 <br>
 <pre>
-arc(r__are_0072_0004,r__support_0072_0002_r__costs_0072_0003,arg0).
-arc(r__are_0072_0004,r__drain_0072_0007,prd2).
-arc(r__drain_0072_0007,r__big_0072_0006,attrib2).
-arc(r__drain_0072_0007,r__dollar_0072_0011_r__reserves_0072_0012,r__on_0072_0008).
-arc(r__dollar_0072_0011_r__reserves_0072_0012,r__America_0072_0009,genv).
+arc(r_0072_0004__are,r_0072_0002__support_costs,arg0).
+arc(r_0072_0004__are,r_0072_0007__drain,prd2).
+arc(r_0072_0007__drain,r_0072_0006__big,attrib2).
+arc(r_0072_0007__drain,r_0072_0011__dollar_reserves,r_0072_0008__on).
+arc(r_0072_0011__dollar_reserves,r_0072_0009__America,genv).
 
 </pre>
 <br>
 <pre>
 fof(id_72_A_lob_A01,axiom,
     ? [EVENTX5,ENTITYX1,ENTITYX2,ENTITYX4,ATTRIBX3] :
-      ( isA(ENTITYX1,r__support_0072_0002_r__costs_0072_0003)
-      &amp; isA(ENTITYX2,r__drain_0072_0007)
+      ( isA(ENTITYX1,r_0072_0002__support_costs)
+      &amp; isA(ENTITYX2,r_0072_0007__drain)
       &amp; attrib2(ENTITYX2) = ATTRIBX3
-      &amp; r__on_0072_0008(ENTITYX2) = ENTITYX4
-      &amp; isA(ENTITYX4,r__dollar_0072_0011_r__reserves_0072_0012)
-      &amp; genv(ENTITYX4) = r__America_0072_0009
-      &amp; isA(ATTRIBX3,r__big_0072_0006)
-      &amp; isA(EVENTX5,r__are_0072_0004)
+      &amp; r_0072_0008__on(ENTITYX2) = ENTITYX4
+      &amp; isA(ENTITYX4,r_0072_0011__dollar_reserves)
+      &amp; genv(ENTITYX4) = r_0072_0009__America
+      &amp; isA(ATTRIBX3,r_0072_0006__big)
+      &amp; isA(EVENTX5,r_0072_0004__are)
       &amp; arg0(EVENTX5) = ENTITYX1
       &amp; prd2(EVENTX5) = ENTITYX2 ) ).
 

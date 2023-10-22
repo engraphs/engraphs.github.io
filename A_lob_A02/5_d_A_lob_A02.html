@@ -168,16 +168,16 @@ And he has abandoned plans to visit President de Gaulle this month to smooth the
 </svg>
 <br>
 <pre>
-arc(cnt_0005_1008,r__abandoned_0005_0004,scope).
-arc(cnt_0005_1008,r__smooth_0005_0014,restriction).
-arc(r__has_0005_0003,cnt_0005_1008,catenative).
-arc(r__abandoned_0005_0004,r__he_0005_0002,arg0).
-arc(r__abandoned_0005_0004,r__plans_0005_0005,arg1).
-arc(r__abandoned_0005_0004,r__month_0005_0012,tmp).
-arc(r__plans_0005_0005,r__visit_0005_0007,emb2).
-arc(r__visit_0005_0007,r__President_0005_0008_r__de_0005_0009_r__Gaulle_0005_0010,arg1).
-arc(r__smooth_0005_0014,r__plans_0005_0005,arg0).
-arc(r__smooth_0005_0014,r__way_0005_0016,arg1).
+arc(cnt_0005_1008,r_0005_0004__abandoned,scope).
+arc(cnt_0005_1008,r_0005_0014__smooth,restriction).
+arc(r_0005_0003__has,cnt_0005_1008,catenative).
+arc(r_0005_0004__abandoned,r_0005_0002__he,arg0).
+arc(r_0005_0004__abandoned,r_0005_0005__plans,arg1).
+arc(r_0005_0004__abandoned,r_0005_0012__month,tmp).
+arc(r_0005_0005__plans,r_0005_0007__visit,emb2).
+arc(r_0005_0007__visit,r_0005_0008__President_de_Gaulle,arg1).
+arc(r_0005_0014__smooth,r_0005_0005__plans,arg0).
+arc(r_0005_0014__smooth,r_0005_0016__way,arg1).
 
 </pre>
 <br>
@@ -187,22 +187,22 @@ fof(id_5_A_lob_A02,axiom,
       ( CATENATIVEX1 = CONNX9
       &amp; isA(CONNX9,cnt_0005_1008)
       &amp; scope(CONNX9) = EVENTX12
-      &amp; isA(EVENTX12,r__abandoned_0005_0004)
-      &amp; arg0(EVENTX12) = r__he_0005_0002
+      &amp; isA(EVENTX12,r_0005_0004__abandoned)
+      &amp; arg0(EVENTX12) = r_0005_0002__he
       &amp; arg1(EVENTX12) = ENTITYX2
       &amp; tmp(EVENTX12) = ENTITYX7
       &amp; restriction(CONNX9) = EVENTX11
-      &amp; isA(EVENTX11,r__smooth_0005_0014)
+      &amp; isA(EVENTX11,r_0005_0014__smooth)
       &amp; arg0(EVENTX11) = ENTITYX2
       &amp; arg1(EVENTX11) = ENTITYX10
       &amp; STATEX3 = EVENTX6
-      &amp; isA(EVENTX6,r__visit_0005_0007)
-      &amp; arg1(EVENTX6) = r__President_0005_0008_r__de_0005_0009_r__Gaulle_0005_0010
-      &amp; isA(ENTITYX2,r__plans_0005_0005)
+      &amp; isA(EVENTX6,r_0005_0007__visit)
+      &amp; arg1(EVENTX6) = r_0005_0008__President_de_Gaulle
+      &amp; isA(ENTITYX2,r_0005_0005__plans)
       &amp; emb2(ENTITYX2) = STATEX3
-      &amp; isA(ENTITYX7,r__month_0005_0012)
-      &amp; isA(ENTITYX10,r__way_0005_0016)
-      &amp; isA(EVENTX13,r__has_0005_0003)
+      &amp; isA(ENTITYX7,r_0005_0012__month)
+      &amp; isA(ENTITYX10,r_0005_0016__way)
+      &amp; isA(EVENTX13,r_0005_0003__has)
       &amp; catenative(EVENTX13) = CATENATIVEX1 ) ).
 
 

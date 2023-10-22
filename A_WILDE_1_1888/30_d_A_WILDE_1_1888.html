@@ -29,11 +29,11 @@
 It was easy enough to get in , as there was a hole in the roof .
 <br>
 <br>
-<svg width="334pt" height="305pt"
- viewBox="0.00 0.00 333.85 305.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="331pt" height="305pt"
+ viewBox="0.00 0.00 331.44 305.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 301)">
 <title>%3</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-301 329.85,-301 329.85,4 -4,4"/>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-301 327.44,-301 327.44,4 -4,4"/>
 <!-- 0152_0002 -->
 <g id="node1" class="node">
 <title>0152_0002</title>
@@ -82,8 +82,8 @@ It was easy enough to get in , as there was a hole in the roof .
 <!-- 0152_0009_cnt -->
 <g id="node5" class="node">
 <title>0152_0009_cnt</title>
-<ellipse fill="none" stroke="black" cx="172.85" cy="-279" rx="46.29" ry="18"/>
-<text text-anchor="middle" x="172.85" y="-275.3" font-family="fixed" font-size="14.00">as_[cnt]</text>
+<ellipse fill="none" stroke="black" cx="172.85" cy="-279" rx="42.49" ry="18"/>
+<text text-anchor="middle" x="172.85" y="-275.3" font-family="fixed" font-size="14.00">as[cnt]</text>
 </g>
 <!-- 0152_0009_cnt&#45;&gt;0152_0002 -->
 <g id="edge4" class="edge">
@@ -129,19 +129,19 @@ It was easy enough to get in , as there was a hole in the roof .
 <title>0152_0011&#45;&gt;0152_0016</title>
 <path fill="none" stroke="black" d="M238.59,-178.95C247.61,-172.82 257.99,-164.81 265.85,-156 272.35,-148.71 278.1,-139.73 282.73,-131.4"/>
 <polygon fill="black" stroke="black" points="285.91,-132.88 287.46,-122.41 279.71,-129.63 285.91,-132.88"/>
-<text text-anchor="middle" x="300.85" y="-144.8" font-family="fixed" font-size="14.00">in_[loc]</text>
+<text text-anchor="middle" x="297.35" y="-144.8" font-family="fixed" font-size="14.00">in[loc]</text>
 </g>
 </g>
 </svg>
 <br>
 <pre>
-arc(r__was_0152_0002,r__easy_0152_0003,prd2).
-arc(r__was_0152_0002,r__get_0152_0006_r__in_0152_0007,arg0).
-arc(r__easy_0152_0003,r__enough_0152_0004,quality2).
-arc(r__as_0152_0009_cnt,r__was_0152_0002,scope).
-arc(r__as_0152_0009_cnt,r__was_0152_0011,restriction).
-arc(r__was_0152_0011,r__hole_0152_0013,arg0).
-arc(r__was_0152_0011,r__roof_0152_0016,r__in_0152_0014_loc).
+arc(r_0152_0002__was,r_0152_0003__easy,prd2).
+arc(r_0152_0002__was,r_0152_0006__get_in,arg0).
+arc(r_0152_0003__easy,r_0152_0004__enough,quality2).
+arc(r_0152_0009__as_cnt,r_0152_0002__was,scope).
+arc(r_0152_0009__as_cnt,r_0152_0011__was,restriction).
+arc(r_0152_0011__was,r_0152_0013__hole,arg0).
+arc(r_0152_0011__was,r_0152_0016__roof,r_0152_0014__in_loc).
 
 </pre>
 <br>
@@ -149,22 +149,22 @@ arc(r__was_0152_0011,r__roof_0152_0016,r__in_0152_0014_loc).
 fof(id_152_A_WILDE_1_1888,axiom,
     ? [STATEX4,CONNX6,EVENTX9,EVENTX10,EVENTX5,ENTITYX7,ENTITYX8,ATTRIBX2,QUALITYX3] :
       ( STATEX4 = EVENTX5
-      &amp; isA(EVENTX5,r__get_0152_0006_r__in_0152_0007)
-      &amp; isA(ENTITYX7,r__hole_0152_0013)
-      &amp; isA(ENTITYX8,r__roof_0152_0016)
-      &amp; isA(ATTRIBX2,r__easy_0152_0003)
+      &amp; isA(EVENTX5,r_0152_0006__get_in)
+      &amp; isA(ENTITYX7,r_0152_0013__hole)
+      &amp; isA(ENTITYX8,r_0152_0016__roof)
+      &amp; isA(ATTRIBX2,r_0152_0003__easy)
       &amp; quality2(ATTRIBX2) = QUALITYX3
-      &amp; isA(QUALITYX3,r__enough_0152_0004)
-      &amp; isA(CONNX6,r__as_0152_0009_cnt)
+      &amp; isA(QUALITYX3,r_0152_0004__enough)
+      &amp; isA(CONNX6,r_0152_0009__as_cnt)
       &amp; scope(CONNX6) = EVENTX10
-      &amp; isA(EVENTX10,r__was_0152_0002)
+      &amp; isA(EVENTX10,r_0152_0002__was)
       &amp; arg0(EVENTX10) = STATEX4
       &amp; prd2(EVENTX10) = ATTRIBX2
       &amp; arg0(EVENTX10) = STATEX4
       &amp; restriction(CONNX6) = EVENTX9
-      &amp; isA(EVENTX9,r__was_0152_0011)
+      &amp; isA(EVENTX9,r_0152_0011__was)
       &amp; arg0(EVENTX9) = ENTITYX7
-      &amp; r__in_0152_0014_loc(EVENTX9) = ENTITYX8 ) ).
+      &amp; r_0152_0014__in_loc(EVENTX9) = ENTITYX8 ) ).
 
 
 </pre>

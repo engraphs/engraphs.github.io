@@ -129,7 +129,7 @@ It was Mr Butler who authorised action which ended yesterday in 32 members of th
 <title>0110_0009&#45;&gt;0110_0012_0110_0013</title>
 <path fill="none" stroke="black" d="M459.92,-351.34C482.66,-337.83 517.8,-316.94 544.19,-301.25"/>
 <polygon fill="black" stroke="black" points="546.32,-304.06 553.13,-295.94 542.74,-298.04 546.32,-304.06"/>
-<text text-anchor="middle" x="543.95" y="-318.8" font-family="fixed" font-size="14.00">in_[cnt]</text>
+<text text-anchor="middle" x="540.95" y="-318.8" font-family="fixed" font-size="14.00">in[cnt]</text>
 </g>
 <!-- 0110_0016 -->
 <g id="node9" class="node">
@@ -226,20 +226,20 @@ It was Mr Butler who authorised action which ended yesterday in 32 members of th
 </svg>
 <br>
 <pre>
-arc(r__was_0110_0002,r__Mr_0110_0003_r__Butler_0110_0004,foc).
-arc(r__was_0110_0002,z_0110_1018,clf).
-arc(r__authorised_0110_0006,r__action_0110_0007,arg1).
-arc(r__authorised_0110_0006,z_0110_1018,arg0).
-arc(r__ended_0110_0009,r__action_0110_0007,arg0).
-arc(r__ended_0110_0009,r__yesterday_0110_0010,tmp3).
-arc(r__ended_0110_0009,r__32_0110_0012_r__members_0110_0013,r__in_0110_0011_cnt).
-arc(r__32_0110_0012_r__members_0110_0013,r__committee_0110_0016,r__of_0110_0014).
-arc(r__committee_0110_0016,r__100_0110_0018,r__of_0110_0017).
-arc(r__being_0110_0019,r__32_0110_0012_r__members_0110_0013,arg0).
-arc(r__being_0110_0019,r__imprisoned_0110_0020,prd2).
-arc(r__imprisoned_0110_0020,r__inciting_0110_0022,r__for_0110_0021).
-arc(r__inciting_0110_0022,r__breach_0110_0024,arg1).
-arc(r__breach_0110_0024,r__peace_0110_0027,r__of_0110_0025).
+arc(r_0110_0002__was,r_0110_0003__Mr_Butler,foc).
+arc(r_0110_0002__was,z_0110_1018,clf).
+arc(r_0110_0006__authorised,r_0110_0007__action,arg1).
+arc(r_0110_0006__authorised,z_0110_1018,arg0).
+arc(r_0110_0009__ended,r_0110_0007__action,arg0).
+arc(r_0110_0009__ended,r_0110_0010__yesterday,tmp3).
+arc(r_0110_0009__ended,r_0110_0012__32_members,r_0110_0011__in_cnt).
+arc(r_0110_0012__32_members,r_0110_0016__committee,r_0110_0014__of).
+arc(r_0110_0016__committee,r_0110_0018__100,r_0110_0017__of).
+arc(r_0110_0019__being,r_0110_0012__32_members,arg0).
+arc(r_0110_0019__being,r_0110_0020__imprisoned,prd2).
+arc(r_0110_0020__imprisoned,r_0110_0022__inciting,r_0110_0021__for).
+arc(r_0110_0022__inciting,r_0110_0024__breach,arg1).
+arc(r_0110_0024__breach,r_0110_0027__peace,r_0110_0025__of).
 
 </pre>
 <br>
@@ -247,33 +247,33 @@ arc(r__breach_0110_0024,r__peace_0110_0027,r__of_0110_0025).
 fof(id_110_A_lob_A02,axiom,
     ? [EVENTX9,EVENTX19,EVENTX17,EVENTX16,EVENTX15,EVENTX14,ENTITYX2,ENTITYX3,ENTITYX5,ENTITYX6,ENTITYX12,ENTITYX13,ENTITYX7,QUALITYX4,ATTRIBX8] :
       ( EVENTX9 = EVENTX14
-      &amp; isA(EVENTX14,r__inciting_0110_0022)
+      &amp; isA(EVENTX14,r_0110_0022__inciting)
       &amp; arg1(EVENTX14) = ENTITYX12
-      &amp; isA(EVENTX17,r__authorised_0110_0006)
+      &amp; isA(EVENTX17,r_0110_0006__authorised)
       &amp; arg0(EVENTX17) = ENTITYX2
       &amp; arg1(EVENTX17) = ENTITYX3
       &amp; isA(ENTITYX2,z_0110_1018)
-      &amp; isA(EVENTX16,r__ended_0110_0009)
+      &amp; isA(EVENTX16,r_0110_0009__ended)
       &amp; arg0(EVENTX16) = ENTITYX3
       &amp; tmp3(EVENTX16) = QUALITYX4
-      &amp; r__in_0110_0011_cnt(EVENTX16) = ENTITYX5
-      &amp; isA(ENTITYX3,r__action_0110_0007)
-      &amp; isA(EVENTX15,r__being_0110_0019)
+      &amp; r_0110_0011__in_cnt(EVENTX16) = ENTITYX5
+      &amp; isA(ENTITYX3,r_0110_0007__action)
+      &amp; isA(EVENTX15,r_0110_0019__being)
       &amp; arg0(EVENTX15) = ENTITYX5
       &amp; prd2(EVENTX15) = ATTRIBX8
-      &amp; isA(ENTITYX5,r__32_0110_0012_r__members_0110_0013)
-      &amp; r__of_0110_0014(ENTITYX5) = ENTITYX6
-      &amp; isA(ENTITYX6,r__committee_0110_0016)
-      &amp; r__of_0110_0017(ENTITYX6) = ENTITYX7
-      &amp; isA(ENTITYX7,r__100_0110_0018)
-      &amp; isA(ENTITYX12,r__breach_0110_0024)
-      &amp; r__of_0110_0025(ENTITYX12) = ENTITYX13
-      &amp; isA(ENTITYX13,r__peace_0110_0027)
-      &amp; isA(QUALITYX4,r__yesterday_0110_0010)
-      &amp; isA(ATTRIBX8,r__imprisoned_0110_0020)
-      &amp; r__for_0110_0021(ATTRIBX8) = EVENTX9
-      &amp; isA(EVENTX19,r__was_0110_0002)
-      &amp; foc(EVENTX19) = r__Mr_0110_0003_r__Butler_0110_0004
+      &amp; isA(ENTITYX5,r_0110_0012__32_members)
+      &amp; r_0110_0014__of(ENTITYX5) = ENTITYX6
+      &amp; isA(ENTITYX6,r_0110_0016__committee)
+      &amp; r_0110_0017__of(ENTITYX6) = ENTITYX7
+      &amp; isA(ENTITYX7,r_0110_0018__100)
+      &amp; isA(ENTITYX12,r_0110_0024__breach)
+      &amp; r_0110_0025__of(ENTITYX12) = ENTITYX13
+      &amp; isA(ENTITYX13,r_0110_0027__peace)
+      &amp; isA(QUALITYX4,r_0110_0010__yesterday)
+      &amp; isA(ATTRIBX8,r_0110_0020__imprisoned)
+      &amp; r_0110_0021__for(ATTRIBX8) = EVENTX9
+      &amp; isA(EVENTX19,r_0110_0002__was)
+      &amp; foc(EVENTX19) = r_0110_0003__Mr_Butler
       &amp; clf(EVENTX19) = ENTITYX2 ) ).
 
 

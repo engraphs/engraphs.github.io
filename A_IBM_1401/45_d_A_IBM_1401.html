@@ -77,7 +77,7 @@ Routines are supplied for simplifying organization of records for storage in the
 <title>0061_0003&#45;&gt;0061_0005</title>
 <path fill="none" stroke="black" d="M100.91,-523.01C115.42,-510.04 136.06,-491.57 152.34,-477"/>
 <polygon fill="black" stroke="black" points="154.82,-479.48 159.93,-470.21 150.15,-474.26 154.82,-479.48"/>
-<text text-anchor="middle" x="166.55" y="-492.8" font-family="fixed" font-size="14.00">for_[cnt]</text>
+<text text-anchor="middle" x="163.05" y="-492.8" font-family="fixed" font-size="14.00">for[cnt]</text>
 </g>
 <!-- 0061_0006 -->
 <g id="node5" class="node">
@@ -148,14 +148,14 @@ Routines are supplied for simplifying organization of records for storage in the
 </svg>
 <br>
 <pre>
-arc(r__are_0061_0002,r__supplied_0061_0003,catenative).
-arc(r__supplied_0061_0003,r__Routines_0061_0001,arg1).
-arc(r__supplied_0061_0003,r__simplifying_0061_0005,r__for_0061_0004_cnt).
-arc(r__simplifying_0061_0005,r__organization_0061_0006,arg1).
-arc(r__organization_0061_0006,r__records_0061_0008,r__of_0061_0007).
-arc(r__records_0061_0008,r__storage_0061_0010,r__for_0061_0009).
-arc(r__storage_0061_0010,r__1401_0061_0013_r__Access_0061_0015_r__File_0061_0016,r__in_0061_0011).
-arc(r__1401_0061_0013_r__Access_0061_0015_r__File_0061_0016,r__Random_0061_0014,attrib3).
+arc(r_0061_0002__are,r_0061_0003__supplied,catenative).
+arc(r_0061_0003__supplied,r_0061_0001__Routines,arg1).
+arc(r_0061_0003__supplied,r_0061_0005__simplifying,r_0061_0004__for_cnt).
+arc(r_0061_0005__simplifying,r_0061_0006__organization,arg1).
+arc(r_0061_0006__organization,r_0061_0008__records,r_0061_0007__of).
+arc(r_0061_0008__records,r_0061_0010__storage,r_0061_0009__for).
+arc(r_0061_0010__storage,r_0061_0013__1401_Access_File,r_0061_0011__in).
+arc(r_0061_0013__1401_Access_File,r_0061_0014__Random,attrib3).
 
 </pre>
 <br>
@@ -163,23 +163,23 @@ arc(r__1401_0061_0013_r__Access_0061_0015_r__File_0061_0016,r__Random_0061_0014,
 fof(id_61_A_IBM_1401,axiom,
     ? [CATENATIVEX2,EVENTX4,EVENTX14,EVENTX13,EVENTX12,ENTITYX1,ENTITYX7,ENTITYX8,ENTITYX9,ENTITYX10,ATTRIBX11] :
       ( CATENATIVEX2 = EVENTX13
-      &amp; isA(EVENTX13,r__supplied_0061_0003)
+      &amp; isA(EVENTX13,r_0061_0003__supplied)
       &amp; arg1(EVENTX13) = ENTITYX1
-      &amp; r__for_0061_0004_cnt(EVENTX13) = EVENTX4
+      &amp; r_0061_0004__for_cnt(EVENTX13) = EVENTX4
       &amp; EVENTX4 = EVENTX12
-      &amp; isA(EVENTX12,r__simplifying_0061_0005)
+      &amp; isA(EVENTX12,r_0061_0005__simplifying)
       &amp; arg1(EVENTX12) = ENTITYX7
-      &amp; isA(ENTITYX1,r__Routines_0061_0001)
-      &amp; isA(ENTITYX7,r__organization_0061_0006)
-      &amp; r__of_0061_0007(ENTITYX7) = ENTITYX8
-      &amp; isA(ENTITYX8,r__records_0061_0008)
-      &amp; r__for_0061_0009(ENTITYX8) = ENTITYX9
-      &amp; isA(ENTITYX9,r__storage_0061_0010)
-      &amp; r__in_0061_0011(ENTITYX9) = ENTITYX10
-      &amp; isA(ENTITYX10,r__1401_0061_0013_r__Access_0061_0015_r__File_0061_0016)
+      &amp; isA(ENTITYX1,r_0061_0001__Routines)
+      &amp; isA(ENTITYX7,r_0061_0006__organization)
+      &amp; r_0061_0007__of(ENTITYX7) = ENTITYX8
+      &amp; isA(ENTITYX8,r_0061_0008__records)
+      &amp; r_0061_0009__for(ENTITYX8) = ENTITYX9
+      &amp; isA(ENTITYX9,r_0061_0010__storage)
+      &amp; r_0061_0011__in(ENTITYX9) = ENTITYX10
+      &amp; isA(ENTITYX10,r_0061_0013__1401_Access_File)
       &amp; attrib3(ENTITYX10) = ATTRIBX11
-      &amp; isA(ATTRIBX11,r__Random_0061_0014)
-      &amp; isA(EVENTX14,r__are_0061_0002)
+      &amp; isA(ATTRIBX11,r_0061_0014__Random)
+      &amp; isA(EVENTX14,r_0061_0002__are)
       &amp; catenative(EVENTX14) = CATENATIVEX2 ) ).
 
 

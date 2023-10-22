@@ -304,26 +304,26 @@ The Balanced Corpus of Contemporary Written Japanese is a representative example
 </svg>
 <br>
 <pre>
-arc(r__Balanced_0021_0002,r__Corpus_0021_0003,arg1).
-arc(r__Corpus_0021_0003,r__Japanese_0021_0007,r__of_0021_0004).
-arc(r__Japanese_0021_0007,r__Contemporary_0021_0005,attrib1).
-arc(r__Japanese_0021_0007,r__Written_0021_0006,attrib2).
-arc(r__is_0021_0008,r__Corpus_0021_0003,arg0).
-arc(r__is_0021_0008,r__example_0021_0011,prd2).
-arc(r__example_0021_0011,r__representative_0021_0010,attrib2).
-arc(r__but_0021_0013,r__is_0021_0008,conj1).
-arc(r__but_0021_0013,r__have_0021_0025,conj2).
-arc(r__corpora_0021_0014,r__and_0021_0020,z_0021_1012).
-arc(r__period_0021_0017_r__works_0021_0019,r__Heian_0021_0016,attrib1).
-arc(r__period_0021_0017_r__works_0021_0019,r__literary_0021_0018,attrib3).
-arc(r__and_0021_0020,r__period_0021_0017_r__works_0021_0019,r__of_0021_0015).
-arc(r__and_0021_0020,r__texts_0021_0024,r__of_0021_0021).
-arc(r__texts_0021_0024,r__early_0021_0022,attrib1).
-arc(r__texts_0021_0024,r__modern_0021_0023,attrib2).
-arc(r__have_0021_0025,r__also_0021_0026,catenative).
-arc(r__also_0021_0026,r__been_0021_0027,scope).
-arc(r__been_0021_0027,r__built_0021_0028,catenative).
-arc(r__built_0021_0028,r__corpora_0021_0014,arg1).
+arc(r_0021_0002__Balanced,r_0021_0003__Corpus,arg1).
+arc(r_0021_0003__Corpus,r_0021_0007__Japanese,r_0021_0004__of).
+arc(r_0021_0007__Japanese,r_0021_0005__Contemporary,attrib1).
+arc(r_0021_0007__Japanese,r_0021_0006__Written,attrib2).
+arc(r_0021_0008__is,r_0021_0003__Corpus,arg0).
+arc(r_0021_0008__is,r_0021_0011__example,prd2).
+arc(r_0021_0011__example,r_0021_0010__representative,attrib2).
+arc(r_0021_0013__but,r_0021_0008__is,conj1).
+arc(r_0021_0013__but,r_0021_0025__have,conj2).
+arc(r_0021_0014__corpora,r_0021_0020__and,z_0021_1012).
+arc(r_0021_0017__period_works,r_0021_0016__Heian,attrib1).
+arc(r_0021_0017__period_works,r_0021_0018__literary,attrib3).
+arc(r_0021_0020__and,r_0021_0017__period_works,r_0021_0015__of).
+arc(r_0021_0020__and,r_0021_0024__texts,r_0021_0021__of).
+arc(r_0021_0024__texts,r_0021_0022__early,attrib1).
+arc(r_0021_0024__texts,r_0021_0023__modern,attrib2).
+arc(r_0021_0025__have,r_0021_0026__also,catenative).
+arc(r_0021_0026__also,r_0021_0027__been,scope).
+arc(r_0021_0027__been,r_0021_0028__built,catenative).
+arc(r_0021_0028__built,r_0021_0014__corpora,arg1).
 
 </pre>
 <br>
@@ -331,47 +331,47 @@ arc(r__built_0021_0028,r__corpora_0021_0014,arg1).
 fof(id_21_A_NINJAL_mission,axiom,
     ? [CATENATIVEX20,CATENATIVEX22,CONJX27,EVENTX26,OPERATORX21,EVENTX25,EVENTX24,EVENTX9,EVENTX3,ENTITYX10,CONJX13,ENTITYX14,ENTITYX17,ENTITYX1,ENTITYX7,ENTITYX4,ATTRIBX18,ATTRIBX19,ATTRIBX15,ATTRIBX16,ATTRIBX8,ATTRIBX5,ATTRIBX6] :
       ( CATENATIVEX20 = OPERATORX21
-      &amp; isA(OPERATORX21,r__also_0021_0026)
+      &amp; isA(OPERATORX21,r_0021_0026__also)
       &amp; scope(OPERATORX21) = EVENTX25
-      &amp; isA(EVENTX25,r__been_0021_0027)
+      &amp; isA(EVENTX25,r_0021_0027__been)
       &amp; catenative(EVENTX25) = CATENATIVEX22
       &amp; CATENATIVEX22 = EVENTX24
-      &amp; isA(EVENTX24,r__built_0021_0028)
+      &amp; isA(EVENTX24,r_0021_0028__built)
       &amp; arg1(EVENTX24) = ENTITYX10
-      &amp; isA(EVENTX3,r__Balanced_0021_0002)
+      &amp; isA(EVENTX3,r_0021_0002__Balanced)
       &amp; arg1(EVENTX3) = ENTITYX1
-      &amp; isA(ENTITYX1,r__Corpus_0021_0003)
-      &amp; r__of_0021_0004(ENTITYX1) = ENTITYX4
-      &amp; isA(ENTITYX4,r__Japanese_0021_0007)
+      &amp; isA(ENTITYX1,r_0021_0003__Corpus)
+      &amp; r_0021_0004__of(ENTITYX1) = ENTITYX4
+      &amp; isA(ENTITYX4,r_0021_0007__Japanese)
       &amp; attrib1(ENTITYX4) = ATTRIBX5
       &amp; attrib2(ENTITYX4) = ATTRIBX6
-      &amp; isA(ENTITYX7,r__example_0021_0011)
+      &amp; isA(ENTITYX7,r_0021_0011__example)
       &amp; attrib2(ENTITYX7) = ATTRIBX8
-      &amp; isA(ENTITYX10,r__corpora_0021_0014)
+      &amp; isA(ENTITYX10,r_0021_0014__corpora)
       &amp; z_0021_1012(ENTITYX10) = CONJX13
-      &amp; isA(CONJX13,r__and_0021_0020)
-      &amp; r__of_0021_0015(CONJX13) = ENTITYX14
-      &amp; r__of_0021_0021(CONJX13) = ENTITYX17
-      &amp; isA(ENTITYX14,r__period_0021_0017_r__works_0021_0019)
+      &amp; isA(CONJX13,r_0021_0020__and)
+      &amp; r_0021_0015__of(CONJX13) = ENTITYX14
+      &amp; r_0021_0021__of(CONJX13) = ENTITYX17
+      &amp; isA(ENTITYX14,r_0021_0017__period_works)
       &amp; attrib1(ENTITYX14) = ATTRIBX15
       &amp; attrib3(ENTITYX14) = ATTRIBX16
-      &amp; isA(ENTITYX17,r__texts_0021_0024)
+      &amp; isA(ENTITYX17,r_0021_0024__texts)
       &amp; attrib1(ENTITYX17) = ATTRIBX18
       &amp; attrib2(ENTITYX17) = ATTRIBX19
-      &amp; isA(ATTRIBX5,r__Contemporary_0021_0005)
-      &amp; isA(ATTRIBX6,r__Written_0021_0006)
-      &amp; isA(ATTRIBX8,r__representative_0021_0010)
-      &amp; isA(ATTRIBX15,r__Heian_0021_0016)
-      &amp; isA(ATTRIBX16,r__literary_0021_0018)
-      &amp; isA(ATTRIBX18,r__early_0021_0022)
-      &amp; isA(ATTRIBX19,r__modern_0021_0023)
-      &amp; isA(CONJX27,r__but_0021_0013)
+      &amp; isA(ATTRIBX5,r_0021_0005__Contemporary)
+      &amp; isA(ATTRIBX6,r_0021_0006__Written)
+      &amp; isA(ATTRIBX8,r_0021_0010__representative)
+      &amp; isA(ATTRIBX15,r_0021_0016__Heian)
+      &amp; isA(ATTRIBX16,r_0021_0018__literary)
+      &amp; isA(ATTRIBX18,r_0021_0022__early)
+      &amp; isA(ATTRIBX19,r_0021_0023__modern)
+      &amp; isA(CONJX27,r_0021_0013__but)
       &amp; conj1(CONJX27) = EVENTX9
-      &amp; isA(EVENTX9,r__is_0021_0008)
+      &amp; isA(EVENTX9,r_0021_0008__is)
       &amp; arg0(EVENTX9) = ENTITYX1
       &amp; prd2(EVENTX9) = ENTITYX7
       &amp; conj2(CONJX27) = EVENTX26
-      &amp; isA(EVENTX26,r__have_0021_0025)
+      &amp; isA(EVENTX26,r_0021_0025__have)
       &amp; catenative(EVENTX26) = CATENATIVEX20 ) ).
 
 

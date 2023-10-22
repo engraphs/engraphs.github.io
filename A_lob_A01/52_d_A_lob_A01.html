@@ -116,7 +116,7 @@ He believed he would perform &lsquo; outstanding service &rsquo; in his post .
 <title>0055_0005&#45;&gt;0055_0012</title>
 <path fill="none" stroke="black" d="M136.6,-176C144.78,-170.04 154.03,-162.96 162,-156 171.63,-147.59 181.62,-137.65 190.05,-128.86"/>
 <polygon fill="black" stroke="black" points="192.68,-131.17 197,-121.49 187.59,-126.36 192.68,-131.17"/>
-<text text-anchor="middle" x="203" y="-144.8" font-family="fixed" font-size="14.00">in_[loc]</text>
+<text text-anchor="middle" x="199.5" y="-144.8" font-family="fixed" font-size="14.00">in[loc]</text>
 </g>
 <!-- 0055_0007 -->
 <g id="node8" class="node">
@@ -148,14 +148,14 @@ He believed he would perform &lsquo; outstanding service &rsquo; in his post .
 </svg>
 <br>
 <pre>
-arc(r__believed_0055_0002,r__He_0055_0001,arg0).
-arc(r__believed_0055_0002,r__would_0055_0004,arg1).
-arc(r__would_0055_0004,r__perform_0055_0005,scope).
-arc(r__perform_0055_0005,r__he_0055_0003,arg0).
-arc(r__perform_0055_0005,r__service_0055_0008,arg1).
-arc(r__perform_0055_0005,r__post_0055_0012,r__in_0055_0010_loc).
-arc(r__service_0055_0008,r__outstanding_0055_0007,attrib2).
-arc(r__post_0055_0012,r__his_0055_0011,genv).
+arc(r_0055_0002__believed,r_0055_0001__He,arg0).
+arc(r_0055_0002__believed,r_0055_0004__would,arg1).
+arc(r_0055_0004__would,r_0055_0005__perform,scope).
+arc(r_0055_0005__perform,r_0055_0003__he,arg0).
+arc(r_0055_0005__perform,r_0055_0008__service,arg1).
+arc(r_0055_0005__perform,r_0055_0012__post,r_0055_0010__in_loc).
+arc(r_0055_0008__service,r_0055_0007__outstanding,attrib2).
+arc(r_0055_0012__post,r_0055_0011__his,genv).
 
 </pre>
 <br>
@@ -163,19 +163,19 @@ arc(r__post_0055_0012,r__his_0055_0011,genv).
 fof(id_55_A_lob_A01,axiom,
     ? [STATEX1,EVENTX7,OPERATORX5,EVENTX6,ENTITYX2,ENTITYX4,ATTRIBX3] :
       ( STATEX1 = OPERATORX5
-      &amp; isA(OPERATORX5,r__would_0055_0004)
+      &amp; isA(OPERATORX5,r_0055_0004__would)
       &amp; scope(OPERATORX5) = EVENTX6
-      &amp; isA(EVENTX6,r__perform_0055_0005)
-      &amp; arg0(EVENTX6) = r__he_0055_0003
+      &amp; isA(EVENTX6,r_0055_0005__perform)
+      &amp; arg0(EVENTX6) = r_0055_0003__he
       &amp; arg1(EVENTX6) = ENTITYX2
-      &amp; r__in_0055_0010_loc(EVENTX6) = ENTITYX4
-      &amp; isA(ENTITYX2,r__service_0055_0008)
+      &amp; r_0055_0010__in_loc(EVENTX6) = ENTITYX4
+      &amp; isA(ENTITYX2,r_0055_0008__service)
       &amp; attrib2(ENTITYX2) = ATTRIBX3
-      &amp; isA(ENTITYX4,r__post_0055_0012)
-      &amp; genv(ENTITYX4) = r__his_0055_0011
-      &amp; isA(ATTRIBX3,r__outstanding_0055_0007)
-      &amp; isA(EVENTX7,r__believed_0055_0002)
-      &amp; arg0(EVENTX7) = r__He_0055_0001
+      &amp; isA(ENTITYX4,r_0055_0012__post)
+      &amp; genv(ENTITYX4) = r_0055_0011__his
+      &amp; isA(ATTRIBX3,r_0055_0007__outstanding)
+      &amp; isA(EVENTX7,r_0055_0002__believed)
+      &amp; arg0(EVENTX7) = r_0055_0001__He
       &amp; arg1(EVENTX7) = STATEX1 ) ).
 
 

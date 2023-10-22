@@ -163,16 +163,16 @@ Enlightenment in Zen means that all living things realize the inherent buddha na
 </svg>
 <br>
 <pre>
-arc(quantificational_r__all_0031_0006,r__living_0031_0007_r__things_0031_0008,restriction).
-arc(quantificational_r__all_0031_0006,r__realize_0031_0009,scope).
-arc(r__Enlightenment_0031_0001,r__Zen_0031_0003,r__in_0031_0002).
-arc(r__means_0031_0004,quantificational_r__all_0031_0006,arg1).
-arc(r__means_0031_0004,r__Enlightenment_0031_0001,arg0).
-arc(r__realize_0031_0009,r__living_0031_0007_r__things_0031_0008,arg0).
-arc(r__realize_0031_0009,r__buddha_0031_0012_r__nature_0031_0013,arg1).
-arc(r__buddha_0031_0012_r__nature_0031_0013,r__inherent_0031_0011,attrib2).
-arc(r__possess_0031_0015,r__living_0031_0007_r__things_0031_0008,arg0).
-arc(r__possess_0031_0015,r__buddha_0031_0012_r__nature_0031_0013,arg1).
+arc(r_0031_0001__Enlightenment,r_0031_0003__Zen,r_0031_0002__in).
+arc(r_0031_0004__means,r_0031_0001__Enlightenment,arg0).
+arc(r_0031_0004__means,r_0031_0006__quantificational__all,arg1).
+arc(r_0031_0006__quantificational__all,r_0031_0007__living_things,restriction).
+arc(r_0031_0006__quantificational__all,r_0031_0009__realize,scope).
+arc(r_0031_0009__realize,r_0031_0007__living_things,arg0).
+arc(r_0031_0009__realize,r_0031_0012__buddha_nature,arg1).
+arc(r_0031_0012__buddha_nature,r_0031_0011__inherent,attrib2).
+arc(r_0031_0015__possess,r_0031_0007__living_things,arg0).
+arc(r_0031_0015__possess,r_0031_0012__buddha_nature,arg1).
 
 </pre>
 <br>
@@ -180,23 +180,23 @@ arc(r__possess_0031_0015,r__buddha_0031_0012_r__nature_0031_0013,arg1).
 fof(id_31_A_KYOTO_2,axiom,
     ? [STATEX2,THINGSX7,EVENTX10,QUANTX4,EVENTX9,EVENTX8,ENTITYX1,THINGSX3,ENTITYX5,ATTRIBX6] :
       ( STATEX2 = QUANTX4
-      &amp; isA(QUANTX4,quantificational_r__all_0031_0006)
+      &amp; isA(QUANTX4,r_0031_0006__quantificational__all)
       &amp; restriction(QUANTX4) = THINGSX3
-      &amp; isA(THINGSX3,r__living_0031_0007_r__things_0031_0008)
+      &amp; isA(THINGSX3,r_0031_0007__living_things)
       &amp; scope(QUANTX4) = EVENTX9
-      &amp; isA(EVENTX9,r__realize_0031_0009)
+      &amp; isA(EVENTX9,r_0031_0009__realize)
       &amp; arg0(EVENTX9) = THINGSX3
       &amp; arg1(EVENTX9) = ENTITYX5
-      &amp; isA(ENTITYX1,r__Enlightenment_0031_0001)
-      &amp; r__in_0031_0002(ENTITYX1) = r__Zen_0031_0003
-      &amp; isA(EVENTX8,r__possess_0031_0015)
+      &amp; isA(ENTITYX1,r_0031_0001__Enlightenment)
+      &amp; r_0031_0002__in(ENTITYX1) = r_0031_0003__Zen
+      &amp; isA(EVENTX8,r_0031_0015__possess)
       &amp; arg1(EVENTX8) = ENTITYX5
       &amp; arg0(EVENTX8) = THINGSX7
-      &amp; isA(ENTITYX5,r__buddha_0031_0012_r__nature_0031_0013)
+      &amp; isA(ENTITYX5,r_0031_0012__buddha_nature)
       &amp; attrib2(ENTITYX5) = ATTRIBX6
       &amp; THINGSX7 = THINGSX3
-      &amp; isA(ATTRIBX6,r__inherent_0031_0011)
-      &amp; isA(EVENTX10,r__means_0031_0004)
+      &amp; isA(ATTRIBX6,r_0031_0011__inherent)
+      &amp; isA(EVENTX10,r_0031_0004__means)
       &amp; arg0(EVENTX10) = ENTITYX1
       &amp; arg1(EVENTX10) = STATEX2 ) ).
 

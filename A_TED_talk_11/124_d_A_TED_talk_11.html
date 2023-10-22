@@ -109,11 +109,11 @@ Benign advice -- now , profoundly mistaken .
 </svg>
 <br>
 <pre>
-arc(r__advice_0169_0002,r__Benign_0169_0001,attrib1).
-arc(r__mistaken_0169_0007,r__advice_0169_0002,arg0).
-arc(r__mistaken_0169_0007,r__profoundly_0169_0006,mnr1).
-arc(z_0169_1007,r__now_0169_0004,tmp3).
-arc(z_0169_1007,r__mistaken_0169_0007,catenative).
+arc(r_0169_0002__advice,r_0169_0001__Benign,attrib1).
+arc(r_0169_0007__mistaken,r_0169_0002__advice,arg0).
+arc(r_0169_0007__mistaken,r_0169_0006__profoundly,mnr1).
+arc(z_0169_1007,r_0169_0004__now,tmp3).
+arc(z_0169_1007,r_0169_0007__mistaken,catenative).
 
 </pre>
 <br>
@@ -121,14 +121,14 @@ arc(z_0169_1007,r__mistaken_0169_0007,catenative).
 fof(id_169_A_TED_talk_11,axiom,
     ? [CATENATIVEX4,EVENTX8,EVENTX6,ENTITYX1,ATTRIBX2,QUALITYX3,QUALITYX5] :
       ( CATENATIVEX4 = EVENTX6
-      &amp; isA(EVENTX6,r__mistaken_0169_0007)
+      &amp; isA(EVENTX6,r_0169_0007__mistaken)
       &amp; arg0(EVENTX6) = ENTITYX1
       &amp; mnr1(EVENTX6) = QUALITYX5
-      &amp; isA(ENTITYX1,r__advice_0169_0002)
+      &amp; isA(ENTITYX1,r_0169_0002__advice)
       &amp; attrib1(ENTITYX1) = ATTRIBX2
-      &amp; isA(ATTRIBX2,r__Benign_0169_0001)
-      &amp; isA(QUALITYX3,r__now_0169_0004)
-      &amp; isA(QUALITYX5,r__profoundly_0169_0006)
+      &amp; isA(ATTRIBX2,r_0169_0001__Benign)
+      &amp; isA(QUALITYX3,r_0169_0004__now)
+      &amp; isA(QUALITYX5,r_0169_0006__profoundly)
       &amp; isA(EVENTX8,z_0169_1007)
       &amp; tmp3(EVENTX8) = QUALITYX3
       &amp; catenative(EVENTX8) = CATENATIVEX4 ) ).

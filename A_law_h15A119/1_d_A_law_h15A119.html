@@ -97,23 +97,23 @@ Act on the Protection of Personal Information
 </svg>
 <br>
 <pre>
-arc(r__Act_0001_0001,r__Protection_0001_0004,r__on_0001_0002).
-arc(r__Protection_0001_0004,r__Information_0001_0007,r__of_0001_0005).
-arc(r__Information_0001_0007,r__Personal_0001_0006,attrib1).
-arc(z_0001_1007,r__Act_0001_0001,z_0001_1002).
+arc(r_0001_0001__Act,r_0001_0004__Protection,r_0001_0002__on).
+arc(r_0001_0004__Protection,r_0001_0007__Information,r_0001_0005__of).
+arc(r_0001_0007__Information,r_0001_0006__Personal,attrib1).
+arc(z_0001_1007,r_0001_0001__Act,z_0001_1002).
 
 </pre>
 <br>
 <pre>
 fof(id_1_A_law_h15A119,axiom,
     ? [EVENTX8,ENTITYX3,ENTITYX4,ENTITYX5,ATTRIBX6] :
-      ( isA(ENTITYX3,r__Act_0001_0001)
-      &amp; r__on_0001_0002(ENTITYX3) = ENTITYX4
-      &amp; isA(ENTITYX4,r__Protection_0001_0004)
-      &amp; r__of_0001_0005(ENTITYX4) = ENTITYX5
-      &amp; isA(ENTITYX5,r__Information_0001_0007)
+      ( isA(ENTITYX3,r_0001_0001__Act)
+      &amp; r_0001_0002__on(ENTITYX3) = ENTITYX4
+      &amp; isA(ENTITYX4,r_0001_0004__Protection)
+      &amp; r_0001_0005__of(ENTITYX4) = ENTITYX5
+      &amp; isA(ENTITYX5,r_0001_0007__Information)
       &amp; attrib1(ENTITYX5) = ATTRIBX6
-      &amp; isA(ATTRIBX6,r__Personal_0001_0006)
+      &amp; isA(ATTRIBX6,r_0001_0006__Personal)
       &amp; isA(EVENTX8,z_0001_1007)
       &amp; z_0001_1002(EVENTX8) = ENTITYX3 ) ).
 

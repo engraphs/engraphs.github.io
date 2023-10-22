@@ -110,7 +110,7 @@ Whitestone College is planning to run another activities weekend at the same tim
 <title>0014_0006&#45;&gt;0014_0013</title>
 <path fill="none" stroke="black" d="M330.37,-179.36C354.67,-164.92 396.32,-140.16 424.44,-123.45"/>
 <polygon fill="black" stroke="black" points="426.25,-126.44 433.06,-118.33 422.67,-120.43 426.25,-126.44"/>
-<text text-anchor="middle" x="421.29" y="-144.8" font-family="fixed" font-size="14.00">at_[tmp]</text>
+<text text-anchor="middle" x="417.79" y="-144.8" font-family="fixed" font-size="14.00">at[tmp]</text>
 </g>
 <!-- 0014_0015 -->
 <g id="node7" class="node">
@@ -121,9 +121,9 @@ Whitestone College is planning to run another activities weekend at the same tim
 <!-- 0014_0006&#45;&gt;0014_0015 -->
 <g id="edge7" class="edge">
 <title>0014_0006&#45;&gt;0014_0015</title>
-<path fill="none" stroke="black" d="M337.08,-187.21C366.57,-182.37 415.43,-172.57 454.79,-156 473.72,-148.03 493.3,-135.87 508.35,-125.54"/>
-<polygon fill="black" stroke="black" points="510.47,-128.33 516.65,-119.71 506.45,-122.6 510.47,-128.33"/>
-<text text-anchor="middle" x="502.29" y="-144.8" font-family="fixed" font-size="14.00">[tmp]</text>
+<path fill="none" stroke="black" d="M336.7,-186.56C364.76,-181.25 410.49,-171.15 447.79,-156 468.49,-147.59 490.29,-135.06 506.88,-124.64"/>
+<polygon fill="black" stroke="black" points="508.99,-127.45 515.53,-119.12 505.22,-121.55 508.99,-127.45"/>
+<text text-anchor="middle" x="497.29" y="-144.8" font-family="fixed" font-size="14.00">[tmp]</text>
 </g>
 <!-- 0014_0012 -->
 <g id="node8" class="node">
@@ -155,15 +155,15 @@ Whitestone College is planning to run another activities weekend at the same tim
 </svg>
 <br>
 <pre>
-arc(r__is_0014_0003,r__planning_0014_0004,catenative).
-arc(r__planning_0014_0004,r__Whitestone_0014_0001_r__College_0014_0002,arg0).
-arc(r__planning_0014_0004,r__run_0014_0006,arg1).
-arc(r__run_0014_0006,r__Whitestone_0014_0001_r__College_0014_0002,arg0).
-arc(r__run_0014_0006,r__activities_0014_0008_r__weekend_0014_0009,arg1).
-arc(r__run_0014_0006,r__time_0014_0013,r__at_0014_0010_tmp).
-arc(r__run_0014_0006,r__year_0014_0015,tmp).
-arc(r__time_0014_0013,r__same_0014_0012,attrib2).
-arc(r__year_0014_0015,r__next_0014_0014,attrib1).
+arc(r_0014_0003__is,r_0014_0004__planning,catenative).
+arc(r_0014_0004__planning,r_0014_0001__Whitestone_College,arg0).
+arc(r_0014_0004__planning,r_0014_0006__run,arg1).
+arc(r_0014_0006__run,r_0014_0001__Whitestone_College,arg0).
+arc(r_0014_0006__run,r_0014_0008__activities_weekend,arg1).
+arc(r_0014_0006__run,r_0014_0013__time,r_0014_0010__at_tmp).
+arc(r_0014_0006__run,r_0014_0015__year,tmp).
+arc(r_0014_0013__time,r_0014_0012__same,attrib2).
+arc(r_0014_0015__year,r_0014_0014__next,attrib1).
 
 </pre>
 <br>
@@ -171,23 +171,23 @@ arc(r__year_0014_0015,r__next_0014_0014,attrib1).
 fof(id_14_A_fce_0101_2001_06,axiom,
     ? [CATENATIVEX1,STATEX2,EVENTX10,EVENTX9,EVENTX8,ENTITYX3,ENTITYX4,ENTITYX6,ATTRIBX7,ATTRIBX5] :
       ( CATENATIVEX1 = EVENTX9
-      &amp; isA(EVENTX9,r__planning_0014_0004)
-      &amp; arg0(EVENTX9) = r__Whitestone_0014_0001_r__College_0014_0002
+      &amp; isA(EVENTX9,r_0014_0004__planning)
+      &amp; arg0(EVENTX9) = r_0014_0001__Whitestone_College
       &amp; arg1(EVENTX9) = STATEX2
       &amp; STATEX2 = EVENTX8
-      &amp; isA(EVENTX8,r__run_0014_0006)
-      &amp; arg0(EVENTX8) = r__Whitestone_0014_0001_r__College_0014_0002
+      &amp; isA(EVENTX8,r_0014_0006__run)
+      &amp; arg0(EVENTX8) = r_0014_0001__Whitestone_College
       &amp; arg1(EVENTX8) = ENTITYX3
-      &amp; r__at_0014_0010_tmp(EVENTX8) = ENTITYX4
+      &amp; r_0014_0010__at_tmp(EVENTX8) = ENTITYX4
       &amp; tmp(EVENTX8) = ENTITYX6
-      &amp; isA(ENTITYX3,r__activities_0014_0008_r__weekend_0014_0009)
-      &amp; isA(ENTITYX4,r__time_0014_0013)
+      &amp; isA(ENTITYX3,r_0014_0008__activities_weekend)
+      &amp; isA(ENTITYX4,r_0014_0013__time)
       &amp; attrib2(ENTITYX4) = ATTRIBX5
-      &amp; isA(ENTITYX6,r__year_0014_0015)
+      &amp; isA(ENTITYX6,r_0014_0015__year)
       &amp; attrib1(ENTITYX6) = ATTRIBX7
-      &amp; isA(ATTRIBX5,r__same_0014_0012)
-      &amp; isA(ATTRIBX7,r__next_0014_0014)
-      &amp; isA(EVENTX10,r__is_0014_0003)
+      &amp; isA(ATTRIBX5,r_0014_0012__same)
+      &amp; isA(ATTRIBX7,r_0014_0014__next)
+      &amp; isA(EVENTX10,r_0014_0003__is)
       &amp; catenative(EVENTX10) = CATENATIVEX1 ) ).
 
 

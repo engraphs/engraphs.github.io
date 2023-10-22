@@ -174,40 +174,40 @@ Mr. McGregor hung up the little jacket and the shoes for a scare-crow to frighte
 </svg>
 <br>
 <pre>
-arc(cnt_0047_1006,r__hung_0047_0003,scope).
-arc(cnt_0047_1006,r__frighten_0047_0015,restriction).
-arc(r__hung_0047_0003,r__Mr._0047_0001_r__McGregor_0047_0002,arg0).
-arc(r__hung_0047_0003,r__up_0047_0004,clr_dir3).
-arc(r__hung_0047_0003,r__and_0047_0008,arg1).
-arc(r__jacket_0047_0007,r__little_0047_0006,attrib2).
-arc(r__and_0047_0008,r__jacket_0047_0007,conj1).
-arc(r__and_0047_0008,r__shoes_0047_0010,conj2).
-arc(r__frighten_0047_0015,r__scare_crow_0047_0013,arg0).
-arc(r__frighten_0047_0015,r__blackbirds_0047_0017,arg1).
+arc(cnt_0047_1006,r_0047_0003__hung,scope).
+arc(cnt_0047_1006,r_0047_0015__frighten,restriction).
+arc(r_0047_0003__hung,r_0047_0001__Mr._McGregor,arg0).
+arc(r_0047_0003__hung,r_0047_0004__up,clr_dir3).
+arc(r_0047_0003__hung,r_0047_0008__and,arg1).
+arc(r_0047_0007__jacket,r_0047_0006__little,attrib2).
+arc(r_0047_0008__and,r_0047_0007__jacket,conj1).
+arc(r_0047_0008__and,r_0047_0010__shoes,conj2).
+arc(r_0047_0015__frighten,r_0047_0013__scare_crow,arg0).
+arc(r_0047_0015__frighten,r_0047_0017__blackbirds,arg1).
 
 </pre>
 <br>
 <pre>
 fof(id_47_A_POTTER_1902,axiom,
     ? [CONNX7,EVENTX10,EVENTX11,ENTITYX2,ENTITYX8,ENTITYX9,JACKETX3,SHOESX5,QUALITYX1,ATTRIBX4] :
-      ( isA(ENTITYX2,r__and_0047_0008)
+      ( isA(ENTITYX2,r_0047_0008__and)
       &amp; conj1(ENTITYX2) = JACKETX3
       &amp; conj2(ENTITYX2) = SHOESX5
-      &amp; isA(JACKETX3,r__jacket_0047_0007)
+      &amp; isA(JACKETX3,r_0047_0007__jacket)
       &amp; attrib2(JACKETX3) = ATTRIBX4
-      &amp; isA(SHOESX5,r__shoes_0047_0010)
-      &amp; isA(ENTITYX8,r__scare_crow_0047_0013)
-      &amp; isA(ENTITYX9,r__blackbirds_0047_0017)
-      &amp; isA(QUALITYX1,r__up_0047_0004)
-      &amp; isA(ATTRIBX4,r__little_0047_0006)
+      &amp; isA(SHOESX5,r_0047_0010__shoes)
+      &amp; isA(ENTITYX8,r_0047_0013__scare_crow)
+      &amp; isA(ENTITYX9,r_0047_0017__blackbirds)
+      &amp; isA(QUALITYX1,r_0047_0004__up)
+      &amp; isA(ATTRIBX4,r_0047_0006__little)
       &amp; isA(CONNX7,cnt_0047_1006)
       &amp; scope(CONNX7) = EVENTX11
-      &amp; isA(EVENTX11,r__hung_0047_0003)
-      &amp; arg0(EVENTX11) = r__Mr._0047_0001_r__McGregor_0047_0002
+      &amp; isA(EVENTX11,r_0047_0003__hung)
+      &amp; arg0(EVENTX11) = r_0047_0001__Mr._McGregor
       &amp; clr_dir3(EVENTX11) = QUALITYX1
       &amp; arg1(EVENTX11) = ENTITYX2
       &amp; restriction(CONNX7) = EVENTX10
-      &amp; isA(EVENTX10,r__frighten_0047_0015)
+      &amp; isA(EVENTX10,r_0047_0015__frighten)
       &amp; arg0(EVENTX10) = ENTITYX8
       &amp; arg1(EVENTX10) = ENTITYX9 ) ).
 

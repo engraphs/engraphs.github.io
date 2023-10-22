@@ -37,8 +37,8 @@ And as soon as we take off again &mdash; &rdquo;
 <!-- 0526_0002_tmp -->
 <g id="node1" class="node">
 <title>0526_0002_tmp</title>
-<ellipse fill="none" stroke="black" cx="131" cy="-192" rx="90.98" ry="18"/>
-<text text-anchor="middle" x="131" y="-188.3" font-family="fixed" font-size="14.00">as_soon_as_[tmp]</text>
+<ellipse fill="none" stroke="black" cx="131" cy="-192" rx="86.38" ry="18"/>
+<text text-anchor="middle" x="131" y="-188.3" font-family="fixed" font-size="14.00">as_soon_as[tmp]</text>
 </g>
 <!-- 0526_0004_0526_0005 -->
 <g id="node2" class="node">
@@ -49,7 +49,7 @@ And as soon as we take off again &mdash; &rdquo;
 <!-- 0526_0002_tmp&#45;&gt;0526_0004_0526_0005 -->
 <g id="edge1" class="edge">
 <title>0526_0002_tmp&#45;&gt;0526_0004_0526_0005</title>
-<path fill="none" stroke="black" d="M109.33,-174.15C103.26,-168.77 96.97,-162.51 92,-156 86.56,-148.87 81.79,-140.37 77.92,-132.42"/>
+<path fill="none" stroke="black" d="M109.74,-174.51C103.54,-169.05 97.08,-162.66 92,-156 86.56,-148.87 81.79,-140.37 77.92,-132.42"/>
 <polygon fill="black" stroke="black" points="81,-130.75 73.65,-123.12 74.64,-133.67 81,-130.75"/>
 <text text-anchor="middle" x="132.5" y="-144.8" font-family="fixed" font-size="14.00">[restriction]</text>
 </g>
@@ -96,21 +96,21 @@ And as soon as we take off again &mdash; &rdquo;
 </svg>
 <br>
 <pre>
-arc(r__as_soon_as_0526_0002_tmp,r__take_0526_0004_r__off_0526_0005,restriction).
-arc(r__as_soon_as_0526_0002_tmp,z_0526_1004,scope).
-arc(r__take_0526_0004_r__off_0526_0005,r__we_0526_0003,arg0).
-arc(r__take_0526_0004_r__off_0526_0005,r__again_0526_0006,tmp4).
+arc(r_0526_0002__as_soon_as_tmp,r_0526_0004__take_off,restriction).
+arc(r_0526_0002__as_soon_as_tmp,z_0526_1004,scope).
+arc(r_0526_0004__take_off,r_0526_0003__we,arg0).
+arc(r_0526_0004__take_off,r_0526_0006__again,tmp4).
 
 </pre>
 <br>
 <pre>
 fof(id_526_A_DICK_1952,axiom,
     ? [CONNX1,EVENTX5,EVENTX3,QUALITYX2] :
-      ( isA(QUALITYX2,r__again_0526_0006)
-      &amp; isA(CONNX1,r__as_soon_as_0526_0002_tmp)
+      ( isA(QUALITYX2,r_0526_0006__again)
+      &amp; isA(CONNX1,r_0526_0002__as_soon_as_tmp)
       &amp; restriction(CONNX1) = EVENTX3
-      &amp; isA(EVENTX3,r__take_0526_0004_r__off_0526_0005)
-      &amp; arg0(EVENTX3) = r__we_0526_0003
+      &amp; isA(EVENTX3,r_0526_0004__take_off)
+      &amp; arg0(EVENTX3) = r_0526_0003__we
       &amp; tmp4(EVENTX3) = QUALITYX2
       &amp; scope(CONNX1) = EVENTX5
       &amp; isA(EVENTX5,z_0526_1004) ) ).

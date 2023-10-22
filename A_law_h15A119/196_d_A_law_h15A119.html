@@ -110,26 +110,26 @@
 </svg>
 <br>
 <pre>
-arc(r__Restrictions_0196_0002,r__Exercise_0196_0005,r__of_0196_0003).
-arc(r__Exercise_0196_0005,r__Authority_0196_0007,r__of_0196_0006).
-arc(r__Exercise_0196_0005,r__Minister_0196_0011,r__by_0196_0008).
-arc(r__Minister_0196_0011,r__Competent_0196_0010,attrib2).
-arc(z_0196_1008,r__Restrictions_0196_0002,z_0196_1002).
+arc(r_0196_0002__Restrictions,r_0196_0005__Exercise,r_0196_0003__of).
+arc(r_0196_0005__Exercise,r_0196_0007__Authority,r_0196_0006__of).
+arc(r_0196_0005__Exercise,r_0196_0011__Minister,r_0196_0008__by).
+arc(r_0196_0011__Minister,r_0196_0010__Competent,attrib2).
+arc(z_0196_1008,r_0196_0002__Restrictions,z_0196_1002).
 
 </pre>
 <br>
 <pre>
 fof(id_196_A_law_h15A119,axiom,
     ? [EVENTX9,ENTITYX3,ENTITYX4,ENTITYX5,ENTITYX6,ATTRIBX7] :
-      ( isA(ENTITYX3,r__Restrictions_0196_0002)
-      &amp; r__of_0196_0003(ENTITYX3) = ENTITYX4
-      &amp; isA(ENTITYX4,r__Exercise_0196_0005)
-      &amp; r__of_0196_0006(ENTITYX4) = ENTITYX5
-      &amp; r__by_0196_0008(ENTITYX4) = ENTITYX6
-      &amp; isA(ENTITYX5,r__Authority_0196_0007)
-      &amp; isA(ENTITYX6,r__Minister_0196_0011)
+      ( isA(ENTITYX3,r_0196_0002__Restrictions)
+      &amp; r_0196_0003__of(ENTITYX3) = ENTITYX4
+      &amp; isA(ENTITYX4,r_0196_0005__Exercise)
+      &amp; r_0196_0006__of(ENTITYX4) = ENTITYX5
+      &amp; r_0196_0008__by(ENTITYX4) = ENTITYX6
+      &amp; isA(ENTITYX5,r_0196_0007__Authority)
+      &amp; isA(ENTITYX6,r_0196_0011__Minister)
       &amp; attrib2(ENTITYX6) = ATTRIBX7
-      &amp; isA(ATTRIBX7,r__Competent_0196_0010)
+      &amp; isA(ATTRIBX7,r_0196_0010__Competent)
       &amp; isA(EVENTX9,z_0196_1008)
       &amp; z_0196_1002(EVENTX9) = ENTITYX3 ) ).
 

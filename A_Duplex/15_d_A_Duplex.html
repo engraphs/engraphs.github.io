@@ -95,8 +95,8 @@ The AI will need to get better if it 's to be something rolled out to Google use
 <!-- 0028_0008_cnt_cnd -->
 <g id="node6" class="node">
 <title>0028_0008_cnt_cnd</title>
-<ellipse fill="none" stroke="black" cx="112.35" cy="-540" rx="65.79" ry="18"/>
-<text text-anchor="middle" x="112.35" y="-536.3" font-family="fixed" font-size="14.00">if_[cnt][cnd]</text>
+<ellipse fill="none" stroke="black" cx="112.35" cy="-540" rx="61.19" ry="18"/>
+<text text-anchor="middle" x="112.35" y="-536.3" font-family="fixed" font-size="14.00">if[cnt][cnd]</text>
 </g>
 <!-- 0028_0008_cnt_cnd&#45;&gt;0028_0003 -->
 <g id="edge5" class="edge">
@@ -175,7 +175,7 @@ The AI will need to get better if it 's to be something rolled out to Google use
 <title>0028_0014_0028_0015&#45;&gt;0028_0017_0028_0018</title>
 <path fill="none" stroke="black" d="M373.18,-348.21C383.43,-335.75 397.58,-318.57 409.11,-304.57"/>
 <polygon fill="black" stroke="black" points="411.89,-306.7 415.55,-296.76 406.49,-302.25 411.89,-306.7"/>
-<text text-anchor="middle" x="423.85" y="-318.8" font-family="fixed" font-size="14.00">to_[clr]</text>
+<text text-anchor="middle" x="420.35" y="-318.8" font-family="fixed" font-size="14.00">to[clr]</text>
 </g>
 <!-- 0028_0022 -->
 <g id="node12" class="node">
@@ -246,22 +246,22 @@ The AI will need to get better if it 's to be something rolled out to Google use
 </svg>
 <br>
 <pre>
-arc(r__will_0028_0003,r__need_0028_0004,scope).
-arc(r__need_0028_0004,r__get_0028_0006,catenative).
-arc(r__get_0028_0006,r__AI_0028_0002,arg0).
-arc(r__get_0028_0006,r__better_0028_0007,prd2).
-arc(r__if_0028_0008_cnt_cnd,r__will_0028_0003,scope).
-arc(r__if_0028_0008_cnt_cnd,r___apos_s_0028_0010,restriction).
-arc(r___apos_s_0028_0010,r__be_0028_0012,catenative).
-arc(r__be_0028_0012,r__AI_0028_0002,arg0).
-arc(r__be_0028_0012,r__something_0028_0013,prd2).
-arc(r__rolled_0028_0014_r__out_0028_0015,r__something_0028_0013,arg0).
-arc(r__rolled_0028_0014_r__out_0028_0015,r__Google_0028_0017_r__users_0028_0018,r__to_0028_0016_clr).
-arc(r__Google_0028_0017_r__users_0028_0018,r__and_0028_0022,r__across_0028_0019).
-arc(r__and_0028_0022,r__US_0028_0021,conj1).
-arc(r__and_0028_0022,z_0028_1012,conj2).
-arc(z_0028_1012,r__eventually_0028_0023,tmp1).
-arc(z_0028_1012,r__beyond_0028_0024,quality2).
+arc(r_0028_0003__will,r_0028_0004__need,scope).
+arc(r_0028_0004__need,r_0028_0006__get,catenative).
+arc(r_0028_0006__get,r_0028_0002__AI,arg0).
+arc(r_0028_0006__get,r_0028_0007__better,prd2).
+arc(r_0028_0008__if_cnt_cnd,r_0028_0003__will,scope).
+arc(r_0028_0008__if_cnt_cnd,r_0028_0010___apos_s,restriction).
+arc(r_0028_0010___apos_s,r_0028_0012__be,catenative).
+arc(r_0028_0012__be,r_0028_0002__AI,arg0).
+arc(r_0028_0012__be,r_0028_0013__something,prd2).
+arc(r_0028_0014__rolled_out,r_0028_0013__something,arg0).
+arc(r_0028_0014__rolled_out,r_0028_0017__Google_users,r_0028_0016__to_clr).
+arc(r_0028_0017__Google_users,r_0028_0022__and,r_0028_0019__across).
+arc(r_0028_0022__and,r_0028_0021__US,conj1).
+arc(r_0028_0022__and,z_0028_1012,conj2).
+arc(z_0028_1012,r_0028_0023__eventually,tmp1).
+arc(z_0028_1012,r_0028_0024__beyond,quality2).
 
 </pre>
 <br>
@@ -269,39 +269,39 @@ arc(z_0028_1012,r__beyond_0028_0024,quality2).
 fof(id_28_A_Duplex,axiom,
     ? [STATEX1,STATEX6,AIX5,CONNX4,EVENTX15,EVENTX14,EVENTX13,OPERATORX16,EVENTX17,EVENTX3,ENTITYX7,ENTITYX8,ENTITYX9,ATTRIBX2,QUALITYX10,QUALITYX11] :
       ( STATEX1 = EVENTX3
-      &amp; isA(EVENTX3,r__get_0028_0006)
-      &amp; arg0(EVENTX3) = r__AI_0028_0002
+      &amp; isA(EVENTX3,r_0028_0006__get)
+      &amp; arg0(EVENTX3) = r_0028_0002__AI
       &amp; prd2(EVENTX3) = ATTRIBX2
       &amp; STATEX6 = EVENTX14
-      &amp; isA(EVENTX14,r__be_0028_0012)
+      &amp; isA(EVENTX14,r_0028_0012__be)
       &amp; arg0(EVENTX14) = AIX5
-      &amp; prd2(EVENTX14) = r__something_0028_0013
-      &amp; AIX5 = r__AI_0028_0002
-      &amp; isA(ENTITYX7,r__Google_0028_0017_r__users_0028_0018)
-      &amp; r__across_0028_0019(ENTITYX7) = ENTITYX8
-      &amp; isA(ENTITYX8,r__and_0028_0022)
-      &amp; conj1(ENTITYX8) = r__US_0028_0021
+      &amp; prd2(EVENTX14) = r_0028_0013__something
+      &amp; AIX5 = r_0028_0002__AI
+      &amp; isA(ENTITYX7,r_0028_0017__Google_users)
+      &amp; r_0028_0019__across(ENTITYX7) = ENTITYX8
+      &amp; isA(ENTITYX8,r_0028_0022__and)
+      &amp; conj1(ENTITYX8) = r_0028_0021__US
       &amp; conj2(ENTITYX8) = ENTITYX9
       &amp; isA(ENTITYX9,z_0028_1012)
       &amp; tmp1(ENTITYX9) = QUALITYX10
       &amp; quality2(ENTITYX9) = QUALITYX11
-      &amp; isA(r__AI_0028_0002,r__AI_0028_0002)
-      &amp; isA(EVENTX13,r__rolled_0028_0014_r__out_0028_0015)
-      &amp; arg0(EVENTX13) = r__something_0028_0013
-      &amp; r__to_0028_0016_clr(EVENTX13) = ENTITYX7
-      &amp; isA(r__something_0028_0013,r__something_0028_0013)
-      &amp; isA(r__US_0028_0021,r__US_0028_0021)
-      &amp; isA(ATTRIBX2,r__better_0028_0007)
-      &amp; isA(QUALITYX10,r__eventually_0028_0023)
-      &amp; isA(QUALITYX11,r__beyond_0028_0024)
-      &amp; isA(CONNX4,r__if_0028_0008_cnt_cnd)
+      &amp; isA(r_0028_0002__AI,r_0028_0002__AI)
+      &amp; isA(EVENTX13,r_0028_0014__rolled_out)
+      &amp; arg0(EVENTX13) = r_0028_0013__something
+      &amp; r_0028_0016__to_clr(EVENTX13) = ENTITYX7
+      &amp; isA(r_0028_0013__something,r_0028_0013__something)
+      &amp; isA(r_0028_0021__US,r_0028_0021__US)
+      &amp; isA(ATTRIBX2,r_0028_0007__better)
+      &amp; isA(QUALITYX10,r_0028_0023__eventually)
+      &amp; isA(QUALITYX11,r_0028_0024__beyond)
+      &amp; isA(CONNX4,r_0028_0008__if_cnt_cnd)
       &amp; scope(CONNX4) = OPERATORX16
-      &amp; isA(OPERATORX16,r__will_0028_0003)
+      &amp; isA(OPERATORX16,r_0028_0003__will)
       &amp; scope(OPERATORX16) = EVENTX17
-      &amp; isA(EVENTX17,r__need_0028_0004)
+      &amp; isA(EVENTX17,r_0028_0004__need)
       &amp; catenative(EVENTX17) = STATEX1
       &amp; restriction(CONNX4) = EVENTX15
-      &amp; isA(EVENTX15,r___apos_s_0028_0010)
+      &amp; isA(EVENTX15,r_0028_0010___apos_s)
       &amp; catenative(EVENTX15) = STATEX6 ) ).
 
 

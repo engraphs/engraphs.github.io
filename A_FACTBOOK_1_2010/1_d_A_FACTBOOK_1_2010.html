@@ -83,20 +83,20 @@ Major infectious diseases
 </svg>
 <br>
 <pre>
-arc(r__diseases_0001_0003,r__Major_0001_0001,attrib1).
-arc(r__diseases_0001_0003,r__infectious_0001_0002,attrib2).
-arc(z_0001_1006,r__diseases_0001_0003,z_0001_1002).
+arc(r_0001_0003__diseases,r_0001_0001__Major,attrib1).
+arc(r_0001_0003__diseases,r_0001_0002__infectious,attrib2).
+arc(z_0001_1006,r_0001_0003__diseases,z_0001_1002).
 
 </pre>
 <br>
 <pre>
 fof(id_1_A_FACTBOOK_1_2010,axiom,
     ? [EVENTX7,ENTITYX3,ATTRIBX4,ATTRIBX5] :
-      ( isA(ENTITYX3,r__diseases_0001_0003)
+      ( isA(ENTITYX3,r_0001_0003__diseases)
       &amp; attrib1(ENTITYX3) = ATTRIBX4
       &amp; attrib2(ENTITYX3) = ATTRIBX5
-      &amp; isA(ATTRIBX4,r__Major_0001_0001)
-      &amp; isA(ATTRIBX5,r__infectious_0001_0002)
+      &amp; isA(ATTRIBX4,r_0001_0001__Major)
+      &amp; isA(ATTRIBX5,r_0001_0002__infectious)
       &amp; isA(EVENTX7,z_0001_1006)
       &amp; z_0001_1002(EVENTX7) = ENTITYX3 ) ).
 

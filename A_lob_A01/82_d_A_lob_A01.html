@@ -116,7 +116,7 @@
 <title>0086_0007_0086_0009_0086_0011&#45;&gt;0086_0014</title>
 <path fill="none" stroke="black" d="M221.54,-173.8C227.05,-161.78 234.52,-145.51 240.75,-131.92"/>
 <polygon fill="black" stroke="black" points="244.04,-133.15 245.03,-122.6 237.68,-130.23 244.04,-133.15"/>
-<text text-anchor="middle" x="261.14" y="-144.8" font-family="fixed" font-size="14.00">of_[loc]</text>
+<text text-anchor="middle" x="257.64" y="-144.8" font-family="fixed" font-size="14.00">of[loc]</text>
 </g>
 <!-- 0086_0013 -->
 <g id="node8" class="node">
@@ -161,39 +161,39 @@
 </svg>
 <br>
 <pre>
-arc(imperative_0086_1002,r__and_0086_0006,scope).
-arc(r__Probe_0086_0002,r__drug_0086_0004_r__profits_0086_0005,arg1).
-arc(r__and_0086_0006,r__Probe_0086_0002,conj1).
-arc(r__and_0086_0006,r__n_apos_t_0086_0008,conj2).
-arc(r__do_0086_0007_r__take_0086_0009_r__out_0086_0011,r__it_0086_0010,arg1).
-arc(r__do_0086_0007_r__take_0086_0009_r__out_0086_0011,r__and_0086_0014,r__of_0086_0012_loc).
-arc(r__n_apos_t_0086_0008,r__do_0086_0007_r__take_0086_0009_r__out_0086_0011,scope).
-arc(r__and_0086_0014,r__mothers_0086_0013,conj1).
-arc(r__and_0086_0014,r__children_0086_0015,conj2).
+arc(imperative_0086_1002,r_0086_0006__and,scope).
+arc(r_0086_0002__Probe,r_0086_0004__drug_profits,arg1).
+arc(r_0086_0006__and,r_0086_0002__Probe,conj1).
+arc(r_0086_0006__and,r_0086_0008__n_apos_t,conj2).
+arc(r_0086_0007__do_take_out,r_0086_0010__it,arg1).
+arc(r_0086_0007__do_take_out,r_0086_0014__and,r_0086_0012__of_loc).
+arc(r_0086_0008__n_apos_t,r_0086_0007__do_take_out,scope).
+arc(r_0086_0014__and,r_0086_0013__mothers,conj1).
+arc(r_0086_0014__and,r_0086_0015__children,conj2).
 
 </pre>
 <br>
 <pre>
 fof(id_86_A_lob_A01,axiom,
     ? [OPERATORX2,CONJX11,OPERATORX9,EVENTX10,EVENTX5,ENTITYX6,ENTITYX7,ENTITYX8,ENTITYX4] :
-      ( isA(ENTITYX4,r__drug_0086_0004_r__profits_0086_0005)
-      &amp; isA(ENTITYX6,r__and_0086_0014)
+      ( isA(ENTITYX4,r_0086_0004__drug_profits)
+      &amp; isA(ENTITYX6,r_0086_0014__and)
       &amp; conj1(ENTITYX6) = ENTITYX7
       &amp; conj2(ENTITYX6) = ENTITYX8
-      &amp; isA(ENTITYX7,r__mothers_0086_0013)
-      &amp; isA(ENTITYX8,r__children_0086_0015)
+      &amp; isA(ENTITYX7,r_0086_0013__mothers)
+      &amp; isA(ENTITYX8,r_0086_0015__children)
       &amp; isA(OPERATORX2,imperative_0086_1002)
       &amp; scope(OPERATORX2) = CONJX11
-      &amp; isA(CONJX11,r__and_0086_0006)
+      &amp; isA(CONJX11,r_0086_0006__and)
       &amp; conj1(CONJX11) = EVENTX5
-      &amp; isA(EVENTX5,r__Probe_0086_0002)
+      &amp; isA(EVENTX5,r_0086_0002__Probe)
       &amp; arg1(EVENTX5) = ENTITYX4
       &amp; conj2(CONJX11) = OPERATORX9
-      &amp; isA(OPERATORX9,r__n_apos_t_0086_0008)
+      &amp; isA(OPERATORX9,r_0086_0008__n_apos_t)
       &amp; scope(OPERATORX9) = EVENTX10
-      &amp; isA(EVENTX10,r__do_0086_0007_r__take_0086_0009_r__out_0086_0011)
-      &amp; arg1(EVENTX10) = r__it_0086_0010
-      &amp; r__of_0086_0012_loc(EVENTX10) = ENTITYX6 ) ).
+      &amp; isA(EVENTX10,r_0086_0007__do_take_out)
+      &amp; arg1(EVENTX10) = r_0086_0010__it
+      &amp; r_0086_0012__of_loc(EVENTX10) = ENTITYX6 ) ).
 
 
 </pre>

@@ -135,31 +135,31 @@ It was this act of benevolence that kept my grandmother alive .
 </svg>
 <br>
 <pre>
-arc(r__was_0161_0002,r__act_0161_0004,foc).
-arc(r__was_0161_0002,z_0161_1008,clf).
-arc(r__act_0161_0004,r__benevolence_0161_0006,r__of_0161_0005).
-arc(r__kept_0161_0008,r__grandmother_0161_0010,arg1).
-arc(r__kept_0161_0008,r__alive_0161_0011,prd2).
-arc(r__kept_0161_0008,z_0161_1008,arg0).
-arc(r__grandmother_0161_0010,r__my_0161_0009,genv).
+arc(r_0161_0002__was,r_0161_0004__act,foc).
+arc(r_0161_0002__was,z_0161_1008,clf).
+arc(r_0161_0004__act,r_0161_0006__benevolence,r_0161_0005__of).
+arc(r_0161_0008__kept,r_0161_0010__grandmother,arg1).
+arc(r_0161_0008__kept,r_0161_0011__alive,prd2).
+arc(r_0161_0008__kept,z_0161_1008,arg0).
+arc(r_0161_0010__grandmother,r_0161_0009__my,genv).
 
 </pre>
 <br>
 <pre>
 fof(id_161_A_LooseChange,axiom,
     ? [EVENTX9,EVENTX7,ENTITYX2,ENTITYX4,GRANDMAX5,ENTITYX3,ATTRIBX6] :
-      ( isA(ENTITYX2,r__act_0161_0004)
-      &amp; r__of_0161_0005(ENTITYX2) = ENTITYX3
-      &amp; isA(ENTITYX3,r__benevolence_0161_0006)
-      &amp; isA(EVENTX7,r__kept_0161_0008)
+      ( isA(ENTITYX2,r_0161_0004__act)
+      &amp; r_0161_0005__of(ENTITYX2) = ENTITYX3
+      &amp; isA(ENTITYX3,r_0161_0006__benevolence)
+      &amp; isA(EVENTX7,r_0161_0008__kept)
       &amp; arg0(EVENTX7) = ENTITYX4
       &amp; arg1(EVENTX7) = GRANDMAX5
       &amp; prd2(EVENTX7) = ATTRIBX6
       &amp; isA(ENTITYX4,z_0161_1008)
-      &amp; isA(GRANDMAX5,r__grandmother_0161_0010)
-      &amp; genv(GRANDMAX5) = r__my_0161_0009
-      &amp; isA(ATTRIBX6,r__alive_0161_0011)
-      &amp; isA(EVENTX9,r__was_0161_0002)
+      &amp; isA(GRANDMAX5,r_0161_0010__grandmother)
+      &amp; genv(GRANDMAX5) = r_0161_0009__my
+      &amp; isA(ATTRIBX6,r_0161_0011__alive)
+      &amp; isA(EVENTX9,r_0161_0002__was)
       &amp; foc(EVENTX9) = ENTITYX2
       &amp; clf(EVENTX9) = ENTITYX4 ) ).
 

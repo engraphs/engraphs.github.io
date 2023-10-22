@@ -244,21 +244,21 @@ This law means you may never drive faster than is safe for current conditions .
 </svg>
 <br>
 <pre>
-arc(r__has_0005_0002,r__California_0005_0001,arg0).
-arc(r__has_0005_0002,r__Law_0005_0007,arg1).
-arc(r__Speed_0005_0006,r__Basic_0005_0005,attrib1).
-arc(r__Law_0005_0007,r__Speed_0005_0006,nlyr3).
-arc(r__means_0006_0003,r__Law_0005_0007,arg0).
-arc(r__means_0006_0003,r__may_0006_0005,arg1).
-arc(r__may_0006_0005,r__drive_0006_0007,scope).
-arc(r__drive_0006_0007,r__you_0006_0004,arg0).
-arc(r__drive_0006_0007,r__never_0006_0006,tmp3).
-arc(r__drive_0006_0007,r__faster_0006_0008,mnr5).
-arc(r__faster_0006_0008,z_0005_1014,r__than_0006_0009).
-arc(r__is_0006_0010,r__safe_0006_0011,prd2).
-arc(r__is_0006_0010,z_0005_1014,arg0).
-arc(r__safe_0006_0011,r__conditions_0006_0014,r__for_0006_0012).
-arc(r__conditions_0006_0014,r__current_0006_0013,attrib1).
+arc(r_0005_0002__has,r_0005_0001__California,arg0).
+arc(r_0005_0002__has,r_0005_0007__Law,arg1).
+arc(r_0005_0006__Speed,r_0005_0005__Basic,attrib1).
+arc(r_0005_0007__Law,r_0005_0006__Speed,nlyr3).
+arc(r_0006_0003__means,r_0005_0007__Law,arg0).
+arc(r_0006_0003__means,r_0006_0005__may,arg1).
+arc(r_0006_0005__may,r_0006_0007__drive,scope).
+arc(r_0006_0007__drive,r_0006_0004__you,arg0).
+arc(r_0006_0007__drive,r_0006_0006__never,tmp3).
+arc(r_0006_0007__drive,r_0006_0008__faster,mnr5).
+arc(r_0006_0008__faster,z_0005_1014,r_0006_0009__than).
+arc(r_0006_0010__is,r_0006_0011__safe,prd2).
+arc(r_0006_0010__is,z_0005_1014,arg0).
+arc(r_0006_0011__safe,r_0006_0014__conditions,r_0006_0012__for).
+arc(r_0006_0014__conditions,r_0006_0013__current,attrib1).
 
 </pre>
 <br>
@@ -266,34 +266,34 @@ arc(r__conditions_0006_0014,r__current_0006_0013,attrib1).
 fof(id_5_A_driver_handbook__6_A_driver_handbook,axiom,
     ? [STATEX6,BSLX5,EVENTX17,OPERATORX15,EVENTX16,EVENTX13,EVENTX4,ENTITYX9,ENTITYX11,BSLX1,ENTITYX2,ATTRIBX10,ATTRIBX12,ATTRIBX3,QUALITYX7,QUALITYX8] :
       ( STATEX6 = OPERATORX15
-      &amp; isA(OPERATORX15,r__may_0006_0005)
+      &amp; isA(OPERATORX15,r_0006_0005__may)
       &amp; scope(OPERATORX15) = EVENTX16
-      &amp; isA(EVENTX16,r__drive_0006_0007)
-      &amp; arg0(EVENTX16) = r__you_0006_0004
+      &amp; isA(EVENTX16,r_0006_0007__drive)
+      &amp; arg0(EVENTX16) = r_0006_0004__you
       &amp; tmp3(EVENTX16) = QUALITYX7
       &amp; mnr5(EVENTX16) = QUALITYX8
-      &amp; isA(BSLX1,r__Law_0005_0007)
+      &amp; isA(BSLX1,r_0005_0007__Law)
       &amp; nlyr3(BSLX1) = ENTITYX2
-      &amp; isA(ENTITYX2,r__Speed_0005_0006)
+      &amp; isA(ENTITYX2,r_0005_0006__Speed)
       &amp; attrib1(ENTITYX2) = ATTRIBX3
       &amp; BSLX5 = BSLX1
-      &amp; isA(EVENTX13,r__is_0006_0010)
+      &amp; isA(EVENTX13,r_0006_0010__is)
       &amp; arg0(EVENTX13) = ENTITYX9
       &amp; prd2(EVENTX13) = ATTRIBX10
       &amp; isA(ENTITYX9,z_0005_1014)
-      &amp; isA(ENTITYX11,r__conditions_0006_0014)
+      &amp; isA(ENTITYX11,r_0006_0014__conditions)
       &amp; attrib1(ENTITYX11) = ATTRIBX12
-      &amp; isA(ATTRIBX3,r__Basic_0005_0005)
-      &amp; isA(ATTRIBX10,r__safe_0006_0011)
-      &amp; r__for_0006_0012(ATTRIBX10) = ENTITYX11
-      &amp; isA(ATTRIBX12,r__current_0006_0013)
-      &amp; isA(QUALITYX7,r__never_0006_0006)
-      &amp; isA(QUALITYX8,r__faster_0006_0008)
-      &amp; r__than_0006_0009(QUALITYX8) = ENTITYX9
-      &amp; isA(EVENTX4,r__has_0005_0002)
-      &amp; arg0(EVENTX4) = r__California_0005_0001
+      &amp; isA(ATTRIBX3,r_0005_0005__Basic)
+      &amp; isA(ATTRIBX10,r_0006_0011__safe)
+      &amp; r_0006_0012__for(ATTRIBX10) = ENTITYX11
+      &amp; isA(ATTRIBX12,r_0006_0013__current)
+      &amp; isA(QUALITYX7,r_0006_0006__never)
+      &amp; isA(QUALITYX8,r_0006_0008__faster)
+      &amp; r_0006_0009__than(QUALITYX8) = ENTITYX9
+      &amp; isA(EVENTX4,r_0005_0002__has)
+      &amp; arg0(EVENTX4) = r_0005_0001__California
       &amp; arg1(EVENTX4) = BSLX1
-      &amp; isA(EVENTX17,r__means_0006_0003)
+      &amp; isA(EVENTX17,r_0006_0003__means)
       &amp; arg0(EVENTX17) = BSLX5
       &amp; arg1(EVENTX17) = STATEX6 ) ).
 

@@ -83,9 +83,9 @@ Learn to master crowd control .
 </svg>
 <br>
 <pre>
-arc(imperative_0043_1002,r__Learn_0043_0001,scope).
-arc(r__Learn_0043_0001,r__master_0043_0003,arg1).
-arc(r__master_0043_0003,r__crowd_0043_0004_r__control_0043_0005,arg1).
+arc(imperative_0043_1002,r_0043_0001__Learn,scope).
+arc(r_0043_0001__Learn,r_0043_0003__master,arg1).
+arc(r_0043_0003__master,r_0043_0004__crowd_control,arg1).
 
 </pre>
 <br>
@@ -93,12 +93,12 @@ arc(r__master_0043_0003,r__crowd_0043_0004_r__control_0043_0005,arg1).
 fof(id_43_A_Freedoom,axiom,
     ? [STATEX4,OPERATORX2,EVENTX7,EVENTX6,ENTITYX5] :
       ( STATEX4 = EVENTX6
-      &amp; isA(EVENTX6,r__master_0043_0003)
+      &amp; isA(EVENTX6,r_0043_0003__master)
       &amp; arg1(EVENTX6) = ENTITYX5
-      &amp; isA(ENTITYX5,r__crowd_0043_0004_r__control_0043_0005)
+      &amp; isA(ENTITYX5,r_0043_0004__crowd_control)
       &amp; isA(OPERATORX2,imperative_0043_1002)
       &amp; scope(OPERATORX2) = EVENTX7
-      &amp; isA(EVENTX7,r__Learn_0043_0001)
+      &amp; isA(EVENTX7,r_0043_0001__Learn)
       &amp; arg1(EVENTX7) = STATEX4 ) ).
 
 

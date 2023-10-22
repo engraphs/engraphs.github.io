@@ -122,30 +122,30 @@ There were two dogs , a small dog and a big bulldog .
 </svg>
 <br>
 <pre>
-arc(r__were_0004_0002,r__two_0004_0003_r__dogs_0004_0004,arg0).
-arc(r__two_0004_0003_r__dogs_0004_0004,r__and_0004_0009,prn4).
-arc(r__dog_0004_0008,r__small_0004_0007,attrib2).
-arc(r__and_0004_0009,r__dog_0004_0008,conj1).
-arc(r__and_0004_0009,r__bulldog_0004_0012,conj2).
-arc(r__bulldog_0004_0012,r__big_0004_0011,attrib2).
+arc(r_0004_0002__were,r_0004_0003__two_dogs,arg0).
+arc(r_0004_0003__two_dogs,r_0004_0009__and,prn4).
+arc(r_0004_0008__dog,r_0004_0007__small,attrib2).
+arc(r_0004_0009__and,r_0004_0008__dog,conj1).
+arc(r_0004_0009__and,r_0004_0012__bulldog,conj2).
+arc(r_0004_0012__bulldog,r_0004_0011__big,attrib2).
 
 </pre>
 <br>
 <pre>
 fof(id_4_A_stories_09_M12,axiom,
     ? [EVENTX7,ENTITYX1,ENTITYX2,ENTITYX3,BULLDOGX5,ATTRIBX6,ATTRIBX4] :
-      ( isA(ENTITYX1,r__two_0004_0003_r__dogs_0004_0004)
+      ( isA(ENTITYX1,r_0004_0003__two_dogs)
       &amp; prn4(ENTITYX1) = ENTITYX2
-      &amp; isA(ENTITYX2,r__and_0004_0009)
+      &amp; isA(ENTITYX2,r_0004_0009__and)
       &amp; conj1(ENTITYX2) = ENTITYX3
       &amp; conj2(ENTITYX2) = BULLDOGX5
-      &amp; isA(ENTITYX3,r__dog_0004_0008)
+      &amp; isA(ENTITYX3,r_0004_0008__dog)
       &amp; attrib2(ENTITYX3) = ATTRIBX4
-      &amp; isA(BULLDOGX5,r__bulldog_0004_0012)
+      &amp; isA(BULLDOGX5,r_0004_0012__bulldog)
       &amp; attrib2(BULLDOGX5) = ATTRIBX6
-      &amp; isA(ATTRIBX4,r__small_0004_0007)
-      &amp; isA(ATTRIBX6,r__big_0004_0011)
-      &amp; isA(EVENTX7,r__were_0004_0002)
+      &amp; isA(ATTRIBX4,r_0004_0007__small)
+      &amp; isA(ATTRIBX6,r_0004_0011__big)
+      &amp; isA(EVENTX7,r_0004_0002__were)
       &amp; arg0(EVENTX7) = ENTITYX1 ) ).
 
 

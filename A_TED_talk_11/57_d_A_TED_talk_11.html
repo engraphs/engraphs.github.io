@@ -116,7 +116,7 @@ And the result is that we are educating people out of their creative capacities 
 <title>0085_0008&#45;&gt;0085_0013</title>
 <path fill="none" stroke="black" d="M139.13,-175.21C157.52,-161.85 184.06,-142.57 204.46,-127.75"/>
 <polygon fill="black" stroke="black" points="206.75,-130.41 212.78,-121.7 202.63,-124.75 206.75,-130.41"/>
-<text text-anchor="middle" x="225.4" y="-144.8" font-family="fixed" font-size="14.00">out_of_[prd]</text>
+<text text-anchor="middle" x="221.9" y="-144.8" font-family="fixed" font-size="14.00">out_of[prd]</text>
 </g>
 <!-- 0085_0013&#45;&gt;0085_0009 -->
 <g id="edge7" class="edge">
@@ -142,14 +142,14 @@ And the result is that we are educating people out of their creative capacities 
 </svg>
 <br>
 <pre>
-arc(r__is_0085_0004,r__result_0085_0003,arg0).
-arc(r__is_0085_0004,r__are_0085_0007,prd2).
-arc(r__are_0085_0007,r__educating_0085_0008,catenative).
-arc(r__educating_0085_0008,r__we_0085_0006,arg0).
-arc(r__educating_0085_0008,r__people_0085_0009,arg1).
-arc(r__educating_0085_0008,r__capacities_0085_0013,r__out_of_0085_0010_prd).
-arc(r__capacities_0085_0013,r__people_0085_0009,genv).
-arc(r__capacities_0085_0013,r__creative_0085_0012,attrib2).
+arc(r_0085_0004__is,r_0085_0003__result,arg0).
+arc(r_0085_0004__is,r_0085_0007__are,prd2).
+arc(r_0085_0007__are,r_0085_0008__educating,catenative).
+arc(r_0085_0008__educating,r_0085_0006__we,arg0).
+arc(r_0085_0008__educating,r_0085_0009__people,arg1).
+arc(r_0085_0008__educating,r_0085_0013__capacities,r_0085_0010__out_of_prd).
+arc(r_0085_0013__capacities,r_0085_0009__people,genv).
+arc(r_0085_0013__capacities,r_0085_0012__creative,attrib2).
 
 </pre>
 <br>
@@ -157,21 +157,21 @@ arc(r__capacities_0085_0013,r__creative_0085_0012,attrib2).
 fof(id_85_A_TED_talk_11,axiom,
     ? [STATEX2,CATENATIVEX3,PEOPLEX6,EVENTX10,EVENTX9,EVENTX8,ENTITYX1,PEOPLEX4,ENTITYX5,ATTRIBX7] :
       ( STATEX2 = EVENTX9
-      &amp; isA(EVENTX9,r__are_0085_0007)
+      &amp; isA(EVENTX9,r_0085_0007__are)
       &amp; catenative(EVENTX9) = CATENATIVEX3
       &amp; CATENATIVEX3 = EVENTX8
-      &amp; isA(EVENTX8,r__educating_0085_0008)
-      &amp; arg0(EVENTX8) = r__we_0085_0006
+      &amp; isA(EVENTX8,r_0085_0008__educating)
+      &amp; arg0(EVENTX8) = r_0085_0006__we
       &amp; arg1(EVENTX8) = PEOPLEX4
-      &amp; r__out_of_0085_0010_prd(EVENTX8) = ENTITYX5
-      &amp; isA(ENTITYX1,r__result_0085_0003)
-      &amp; isA(PEOPLEX4,r__people_0085_0009)
-      &amp; isA(ENTITYX5,r__capacities_0085_0013)
+      &amp; r_0085_0010__out_of_prd(EVENTX8) = ENTITYX5
+      &amp; isA(ENTITYX1,r_0085_0003__result)
+      &amp; isA(PEOPLEX4,r_0085_0009__people)
+      &amp; isA(ENTITYX5,r_0085_0013__capacities)
       &amp; genv(ENTITYX5) = PEOPLEX6
       &amp; attrib2(ENTITYX5) = ATTRIBX7
       &amp; PEOPLEX6 = PEOPLEX4
-      &amp; isA(ATTRIBX7,r__creative_0085_0012)
-      &amp; isA(EVENTX10,r__is_0085_0004)
+      &amp; isA(ATTRIBX7,r_0085_0012__creative)
+      &amp; isA(EVENTX10,r_0085_0004__is)
       &amp; arg0(EVENTX10) = ENTITYX1
       &amp; prd2(EVENTX10) = STATEX2 ) ).
 

@@ -180,8 +180,8 @@ We must slow the spread of the disease , and reduce the number of people needing
 <!-- 0010_0019_cnt -->
 <g id="node12" class="node">
 <title>0010_0019_cnt</title>
-<ellipse fill="none" stroke="black" cx="255.85" cy="-453" rx="72.59" ry="18"/>
-<text text-anchor="middle" x="255.85" y="-449.3" font-family="fixed" font-size="14.00">in_order_[cnt]</text>
+<ellipse fill="none" stroke="black" cx="255.85" cy="-453" rx="68.49" ry="18"/>
+<text text-anchor="middle" x="255.85" y="-449.3" font-family="fixed" font-size="14.00">in_order[cnt]</text>
 </g>
 <!-- 0010_0019_cnt&#45;&gt;0010_0002 -->
 <g id="edge12" class="edge">
@@ -266,63 +266,63 @@ We must slow the spread of the disease , and reduce the number of people needing
 </svg>
 <br>
 <pre>
-arc(r__must_0010_0002,r__and_0010_0010,scope).
-arc(r__slow_0010_0003,r__We_0010_0001,arg0).
-arc(r__slow_0010_0003,r__spread_0010_0005,arg1).
-arc(r__spread_0010_0005,r__disease_0010_0008,r__of_0010_0006).
-arc(r__and_0010_0010,r__slow_0010_0003,conj1).
-arc(r__and_0010_0010,r__reduce_0010_0011,conj2).
-arc(r__reduce_0010_0011,r__We_0010_0001,arg0).
-arc(r__reduce_0010_0011,r__number_0010_0013,arg1).
-arc(r__number_0010_0013,r__people_0010_0015,r__of_0010_0014).
-arc(r__needing_0010_0016,r__people_0010_0015,arg0).
-arc(r__needing_0010_0016,r__hospital_0010_0017_r__treatment_0010_0018,arg1).
-arc(r__in_order_0010_0019_cnt,r__must_0010_0002,scope).
-arc(r__in_order_0010_0019_cnt,r__save_0010_0021,restriction).
-arc(r__save_0010_0021,r__We_0010_0001,arg0).
-arc(r__save_0010_0021,r__lives_0010_0024,arg1).
-arc(r__many_0010_0023,r__as_0010_0022,quality1).
-arc(r__many_0010_0023,r__possible_0010_0026,r__as_0010_0025).
-arc(r__lives_0010_0024,r__many_0010_0023,attrib1).
+arc(r_0010_0002__must,r_0010_0010__and,scope).
+arc(r_0010_0003__slow,r_0010_0001__We,arg0).
+arc(r_0010_0003__slow,r_0010_0005__spread,arg1).
+arc(r_0010_0005__spread,r_0010_0008__disease,r_0010_0006__of).
+arc(r_0010_0010__and,r_0010_0003__slow,conj1).
+arc(r_0010_0010__and,r_0010_0011__reduce,conj2).
+arc(r_0010_0011__reduce,r_0010_0001__We,arg0).
+arc(r_0010_0011__reduce,r_0010_0013__number,arg1).
+arc(r_0010_0013__number,r_0010_0015__people,r_0010_0014__of).
+arc(r_0010_0016__needing,r_0010_0015__people,arg0).
+arc(r_0010_0016__needing,r_0010_0017__hospital_treatment,arg1).
+arc(r_0010_0019__in_order_cnt,r_0010_0002__must,scope).
+arc(r_0010_0019__in_order_cnt,r_0010_0021__save,restriction).
+arc(r_0010_0021__save,r_0010_0001__We,arg0).
+arc(r_0010_0021__save,r_0010_0024__lives,arg1).
+arc(r_0010_0023__many,r_0010_0022__as,quality1).
+arc(r_0010_0023__many,r_0010_0026__possible,r_0010_0025__as).
+arc(r_0010_0024__lives,r_0010_0023__many,attrib1).
 
 </pre>
 <br>
 <pre>
 fof(id_10_A_Johnson_letter,axiom,
     ? [CONNX1,EVENTX6,OPERATORX7,CONJX16,EVENTX15,EVENTX14,EVENTX10,ENTITYX2,ENTITYX11,ENTITYX12,ENTITYX13,ENTITYX8,ENTITYX9,ATTRIBX3,ATTRIBX5,QUALITYX4] :
-      ( isA(ENTITYX8,r__spread_0010_0005)
-      &amp; r__of_0010_0006(ENTITYX8) = ENTITYX9
-      &amp; isA(ENTITYX9,r__disease_0010_0008)
-      &amp; isA(ENTITYX11,r__number_0010_0013)
-      &amp; r__of_0010_0014(ENTITYX11) = ENTITYX12
-      &amp; isA(EVENTX14,r__needing_0010_0016)
+      ( isA(ENTITYX8,r_0010_0005__spread)
+      &amp; r_0010_0006__of(ENTITYX8) = ENTITYX9
+      &amp; isA(ENTITYX9,r_0010_0008__disease)
+      &amp; isA(ENTITYX11,r_0010_0013__number)
+      &amp; r_0010_0014__of(ENTITYX11) = ENTITYX12
+      &amp; isA(EVENTX14,r_0010_0016__needing)
       &amp; arg0(EVENTX14) = ENTITYX12
       &amp; arg1(EVENTX14) = ENTITYX13
-      &amp; isA(ENTITYX12,r__people_0010_0015)
-      &amp; isA(ENTITYX13,r__hospital_0010_0017_r__treatment_0010_0018)
-      &amp; isA(ENTITYX2,r__lives_0010_0024)
+      &amp; isA(ENTITYX12,r_0010_0015__people)
+      &amp; isA(ENTITYX13,r_0010_0017__hospital_treatment)
+      &amp; isA(ENTITYX2,r_0010_0024__lives)
       &amp; attrib1(ENTITYX2) = ATTRIBX3
-      &amp; isA(ATTRIBX3,r__many_0010_0023)
+      &amp; isA(ATTRIBX3,r_0010_0023__many)
       &amp; quality1(ATTRIBX3) = QUALITYX4
-      &amp; r__as_0010_0025(ATTRIBX3) = ATTRIBX5
-      &amp; isA(ATTRIBX5,r__possible_0010_0026)
-      &amp; isA(QUALITYX4,r__as_0010_0022)
-      &amp; isA(CONNX1,r__in_order_0010_0019_cnt)
+      &amp; r_0010_0025__as(ATTRIBX3) = ATTRIBX5
+      &amp; isA(ATTRIBX5,r_0010_0026__possible)
+      &amp; isA(QUALITYX4,r_0010_0022__as)
+      &amp; isA(CONNX1,r_0010_0019__in_order_cnt)
       &amp; scope(CONNX1) = OPERATORX7
-      &amp; isA(OPERATORX7,r__must_0010_0002)
+      &amp; isA(OPERATORX7,r_0010_0002__must)
       &amp; scope(OPERATORX7) = CONJX16
-      &amp; isA(CONJX16,r__and_0010_0010)
+      &amp; isA(CONJX16,r_0010_0010__and)
       &amp; conj1(CONJX16) = EVENTX10
-      &amp; isA(EVENTX10,r__slow_0010_0003)
-      &amp; arg0(EVENTX10) = r__We_0010_0001
+      &amp; isA(EVENTX10,r_0010_0003__slow)
+      &amp; arg0(EVENTX10) = r_0010_0001__We
       &amp; arg1(EVENTX10) = ENTITYX8
       &amp; conj2(CONJX16) = EVENTX15
-      &amp; isA(EVENTX15,r__reduce_0010_0011)
-      &amp; arg0(EVENTX15) = r__We_0010_0001
+      &amp; isA(EVENTX15,r_0010_0011__reduce)
+      &amp; arg0(EVENTX15) = r_0010_0001__We
       &amp; arg1(EVENTX15) = ENTITYX11
       &amp; restriction(CONNX1) = EVENTX6
-      &amp; isA(EVENTX6,r__save_0010_0021)
-      &amp; arg0(EVENTX6) = r__We_0010_0001
+      &amp; isA(EVENTX6,r_0010_0021__save)
+      &amp; arg0(EVENTX6) = r_0010_0001__We
       &amp; arg1(EVENTX6) = ENTITYX2 ) ).
 
 

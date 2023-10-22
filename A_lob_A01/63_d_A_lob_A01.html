@@ -148,33 +148,33 @@ A big slice of Germany 's &lsquo; aid &rsquo; is the early payment of a &lt;poun
 </svg>
 <br>
 <pre>
-arc(r__slice_0066_0003,r__big_0066_0002,attrib2).
-arc(r__slice_0066_0003,r__aid_0066_0008,r__of_0066_0004).
-arc(r__aid_0066_0008,r__Germany_0066_0005,genv).
-arc(r__is_0066_0010,r__slice_0066_0003,arg0).
-arc(r__is_0066_0010,r__payment_0066_0013,prd2).
-arc(r__payment_0066_0013,r__early_0066_0012,attrib2).
-arc(r__payment_0066_0013,r___pound__0066_0016_r__210_0066_0017_r__million_0066_0018_r__debt_0066_0019,r__of_0066_0014).
-arc(r___pound__0066_0016_r__210_0066_0017_r__million_0066_0018_r__debt_0066_0019,r__America_0066_0021,r__to_0066_0020).
+arc(r_0066_0003__slice,r_0066_0002__big,attrib2).
+arc(r_0066_0003__slice,r_0066_0008__aid,r_0066_0004__of).
+arc(r_0066_0008__aid,r_0066_0005__Germany,genv).
+arc(r_0066_0010__is,r_0066_0003__slice,arg0).
+arc(r_0066_0010__is,r_0066_0013__payment,prd2).
+arc(r_0066_0013__payment,r_0066_0012__early,attrib2).
+arc(r_0066_0013__payment,r_0066_0016___pound__210_million_debt,r_0066_0014__of).
+arc(r_0066_0016___pound__210_million_debt,r_0066_0021__America,r_0066_0020__to).
 
 </pre>
 <br>
 <pre>
 fof(id_66_A_lob_A01,axiom,
     ? [EVENTX7,ENTITYX1,ENTITYX4,ENTITYX6,ENTITYX3,ATTRIBX5,ATTRIBX2] :
-      ( isA(ENTITYX1,r__slice_0066_0003)
+      ( isA(ENTITYX1,r_0066_0003__slice)
       &amp; attrib2(ENTITYX1) = ATTRIBX2
-      &amp; r__of_0066_0004(ENTITYX1) = ENTITYX3
-      &amp; isA(ENTITYX3,r__aid_0066_0008)
-      &amp; genv(ENTITYX3) = r__Germany_0066_0005
-      &amp; isA(ENTITYX4,r__payment_0066_0013)
+      &amp; r_0066_0004__of(ENTITYX1) = ENTITYX3
+      &amp; isA(ENTITYX3,r_0066_0008__aid)
+      &amp; genv(ENTITYX3) = r_0066_0005__Germany
+      &amp; isA(ENTITYX4,r_0066_0013__payment)
       &amp; attrib2(ENTITYX4) = ATTRIBX5
-      &amp; r__of_0066_0014(ENTITYX4) = ENTITYX6
-      &amp; isA(ENTITYX6,r___pound__0066_0016_r__210_0066_0017_r__million_0066_0018_r__debt_0066_0019)
-      &amp; r__to_0066_0020(ENTITYX6) = r__America_0066_0021
-      &amp; isA(ATTRIBX2,r__big_0066_0002)
-      &amp; isA(ATTRIBX5,r__early_0066_0012)
-      &amp; isA(EVENTX7,r__is_0066_0010)
+      &amp; r_0066_0014__of(ENTITYX4) = ENTITYX6
+      &amp; isA(ENTITYX6,r_0066_0016___pound__210_million_debt)
+      &amp; r_0066_0020__to(ENTITYX6) = r_0066_0021__America
+      &amp; isA(ATTRIBX2,r_0066_0002__big)
+      &amp; isA(ATTRIBX5,r_0066_0012__early)
+      &amp; isA(EVENTX7,r_0066_0010__is)
       &amp; arg0(EVENTX7) = ENTITYX1
       &amp; prd2(EVENTX7) = ENTITYX4 ) ).
 

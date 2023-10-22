@@ -116,12 +116,12 @@ Whitestone College has just held its first activities weekend .
 </svg>
 <br>
 <pre>
-arc(r__has_0008_0003,r__held_0008_0005,catenative).
-arc(r__held_0008_0005,r__Whitestone_0008_0001_r__College_0008_0002,arg0).
-arc(r__held_0008_0005,r__just_0008_0004,tmp1).
-arc(r__held_0008_0005,r__activities_0008_0008_r__weekend_0008_0009,arg1).
-arc(r__activities_0008_0008_r__weekend_0008_0009,r__Whitestone_0008_0001_r__College_0008_0002,genv).
-arc(r__activities_0008_0008_r__weekend_0008_0009,r__first_0008_0007,attrib2).
+arc(r_0008_0003__has,r_0008_0005__held,catenative).
+arc(r_0008_0005__held,r_0008_0001__Whitestone_College,arg0).
+arc(r_0008_0005__held,r_0008_0004__just,tmp1).
+arc(r_0008_0005__held,r_0008_0008__activities_weekend,arg1).
+arc(r_0008_0008__activities_weekend,r_0008_0001__Whitestone_College,genv).
+arc(r_0008_0008__activities_weekend,r_0008_0007__first,attrib2).
 
 </pre>
 <br>
@@ -129,17 +129,17 @@ arc(r__activities_0008_0008_r__weekend_0008_0009,r__first_0008_0007,attrib2).
 fof(id_8_A_fce_0101_2001_06,axiom,
     ? [CATENATIVEX1,WHITESTONEX4,EVENTX7,EVENTX6,ENTITYX3,QUALITYX2,ATTRIBX5] :
       ( CATENATIVEX1 = EVENTX6
-      &amp; isA(EVENTX6,r__held_0008_0005)
-      &amp; arg0(EVENTX6) = r__Whitestone_0008_0001_r__College_0008_0002
+      &amp; isA(EVENTX6,r_0008_0005__held)
+      &amp; arg0(EVENTX6) = r_0008_0001__Whitestone_College
       &amp; tmp1(EVENTX6) = QUALITYX2
       &amp; arg1(EVENTX6) = ENTITYX3
-      &amp; isA(ENTITYX3,r__activities_0008_0008_r__weekend_0008_0009)
+      &amp; isA(ENTITYX3,r_0008_0008__activities_weekend)
       &amp; genv(ENTITYX3) = WHITESTONEX4
       &amp; attrib2(ENTITYX3) = ATTRIBX5
-      &amp; WHITESTONEX4 = r__Whitestone_0008_0001_r__College_0008_0002
-      &amp; isA(QUALITYX2,r__just_0008_0004)
-      &amp; isA(ATTRIBX5,r__first_0008_0007)
-      &amp; isA(EVENTX7,r__has_0008_0003)
+      &amp; WHITESTONEX4 = r_0008_0001__Whitestone_College
+      &amp; isA(QUALITYX2,r_0008_0004__just)
+      &amp; isA(ATTRIBX5,r_0008_0007__first)
+      &amp; isA(EVENTX7,r_0008_0003__has)
       &amp; catenative(EVENTX7) = CATENATIVEX1 ) ).
 
 

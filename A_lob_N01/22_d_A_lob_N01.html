@@ -188,18 +188,18 @@ The directional angle of the scanner could be adjusted to cover any particular a
 </svg>
 <br>
 <pre>
-arc(quantificational_r__any_0029_0012,r__cover_0029_0011,scope).
-arc(quantificational_r__any_0029_0012,r__area_0029_0014,restriction).
-arc(r__angle_0029_0003,r__directional_0029_0002,attrib2).
-arc(r__angle_0029_0003,r__scanner_0029_0006,r__of_0029_0004).
-arc(r__could_0029_0007,r__be_0029_0008,scope).
-arc(r__be_0029_0008,r__angle_0029_0003,arg0).
-arc(r__be_0029_0008,r__adjusted_0029_0009,prd2).
-arc(r__adjusted_0029_0009,quantificational_r__any_0029_0012,emb2).
-arc(r__cover_0029_0011,r__area_0029_0014,arg1).
-arc(r__area_0029_0014,r__particular_0029_0013,attrib2).
-arc(r__area_0029_0014,r__range_0029_0017,r__within_0029_0015).
-arc(r__range_0029_0017,r__scanner_0029_0006,genv).
+arc(r_0029_0003__angle,r_0029_0002__directional,attrib2).
+arc(r_0029_0003__angle,r_0029_0006__scanner,r_0029_0004__of).
+arc(r_0029_0007__could,r_0029_0008__be,scope).
+arc(r_0029_0008__be,r_0029_0003__angle,arg0).
+arc(r_0029_0008__be,r_0029_0009__adjusted,prd2).
+arc(r_0029_0009__adjusted,r_0029_0012__quantificational__any,emb2).
+arc(r_0029_0011__cover,r_0029_0014__area,arg1).
+arc(r_0029_0012__quantificational__any,r_0029_0011__cover,scope).
+arc(r_0029_0012__quantificational__any,r_0029_0014__area,restriction).
+arc(r_0029_0014__area,r_0029_0013__particular,attrib2).
+arc(r_0029_0014__area,r_0029_0017__range,r_0029_0015__within).
+arc(r_0029_0017__range,r_0029_0006__scanner,genv).
 
 </pre>
 <br>
@@ -207,28 +207,28 @@ arc(r__range_0029_0017,r__scanner_0029_0006,genv).
 fof(id_29_A_lob_N01,axiom,
     ? [STATEX5,SCANNERX12,OPERATORX14,EVENTX15,QUANTX9,EVENTX13,ENTITYX1,ENTITYX8,ENTITYX11,SCANNERX3,ATTRIBX4,ATTRIBX10,ATTRIBX2] :
       ( STATEX5 = QUANTX9
-      &amp; isA(QUANTX9,quantificational_r__any_0029_0012)
+      &amp; isA(QUANTX9,r_0029_0012__quantificational__any)
       &amp; restriction(QUANTX9) = ENTITYX8
-      &amp; isA(ENTITYX8,r__area_0029_0014)
+      &amp; isA(ENTITYX8,r_0029_0014__area)
       &amp; attrib2(ENTITYX8) = ATTRIBX10
-      &amp; r__within_0029_0015(ENTITYX8) = ENTITYX11
+      &amp; r_0029_0015__within(ENTITYX8) = ENTITYX11
       &amp; scope(QUANTX9) = EVENTX13
-      &amp; isA(EVENTX13,r__cover_0029_0011)
+      &amp; isA(EVENTX13,r_0029_0011__cover)
       &amp; arg1(EVENTX13) = ENTITYX8
-      &amp; isA(ENTITYX1,r__angle_0029_0003)
+      &amp; isA(ENTITYX1,r_0029_0003__angle)
       &amp; attrib2(ENTITYX1) = ATTRIBX2
-      &amp; r__of_0029_0004(ENTITYX1) = SCANNERX3
-      &amp; isA(SCANNERX3,r__scanner_0029_0006)
-      &amp; isA(ENTITYX11,r__range_0029_0017)
+      &amp; r_0029_0004__of(ENTITYX1) = SCANNERX3
+      &amp; isA(SCANNERX3,r_0029_0006__scanner)
+      &amp; isA(ENTITYX11,r_0029_0017__range)
       &amp; genv(ENTITYX11) = SCANNERX12
       &amp; SCANNERX12 = SCANNERX3
-      &amp; isA(ATTRIBX2,r__directional_0029_0002)
-      &amp; isA(ATTRIBX4,r__adjusted_0029_0009)
+      &amp; isA(ATTRIBX2,r_0029_0002__directional)
+      &amp; isA(ATTRIBX4,r_0029_0009__adjusted)
       &amp; emb2(ATTRIBX4) = STATEX5
-      &amp; isA(ATTRIBX10,r__particular_0029_0013)
-      &amp; isA(OPERATORX14,r__could_0029_0007)
+      &amp; isA(ATTRIBX10,r_0029_0013__particular)
+      &amp; isA(OPERATORX14,r_0029_0007__could)
       &amp; scope(OPERATORX14) = EVENTX15
-      &amp; isA(EVENTX15,r__be_0029_0008)
+      &amp; isA(EVENTX15,r_0029_0008__be)
       &amp; arg0(EVENTX15) = ENTITYX1
       &amp; prd2(EVENTX15) = ATTRIBX4 ) ).
 

@@ -103,7 +103,7 @@ The lights were scattered about the room , two of them standing on the chimney-p
 <title>0026_0004&#45;&gt;0026_0007</title>
 <path fill="none" stroke="black" d="M115.77,-173.8C117.14,-162.16 118.98,-146.55 120.54,-133.24"/>
 <polygon fill="black" stroke="black" points="124.03,-133.52 121.73,-123.18 117.08,-132.7 124.03,-133.52"/>
-<text text-anchor="middle" x="157.75" y="-144.8" font-family="fixed" font-size="14.00">about_[dir]</text>
+<text text-anchor="middle" x="154.75" y="-144.8" font-family="fixed" font-size="14.00">about[dir]</text>
 </g>
 <!-- 0026_0009 -->
 <g id="node6" class="node">
@@ -142,20 +142,20 @@ The lights were scattered about the room , two of them standing on the chimney-p
 <title>0026_0012&#45;&gt;0026_0015</title>
 <path fill="none" stroke="black" d="M255.11,-175.41C272.23,-162.3 296.92,-143.39 316.21,-128.62"/>
 <polygon fill="black" stroke="black" points="318.57,-131.22 324.38,-122.36 314.31,-125.66 318.57,-131.22"/>
-<text text-anchor="middle" x="325.25" y="-144.8" font-family="fixed" font-size="14.00">on_[loc]</text>
+<text text-anchor="middle" x="321.75" y="-144.8" font-family="fixed" font-size="14.00">on[loc]</text>
 </g>
 </g>
 </svg>
 <br>
 <pre>
-arc(abs_0026_1005,r__scattered_0026_0004,scope).
-arc(abs_0026_1005,r__standing_0026_0012,restriction).
-arc(r__were_0026_0003,abs_0026_1005,catenative).
-arc(r__scattered_0026_0004,r__lights_0026_0002,arg1).
-arc(r__scattered_0026_0004,r__room_0026_0007,r__about_0026_0005_dir).
-arc(r__two_0026_0009,r__them_0026_0011,r__of_0026_0010).
-arc(r__standing_0026_0012,r__two_0026_0009,arg0).
-arc(r__standing_0026_0012,r__chimney_piece_0026_0015,r__on_0026_0013_loc).
+arc(abs_0026_1005,r_0026_0004__scattered,scope).
+arc(abs_0026_1005,r_0026_0012__standing,restriction).
+arc(r_0026_0003__were,abs_0026_1005,catenative).
+arc(r_0026_0004__scattered,r_0026_0002__lights,arg1).
+arc(r_0026_0004__scattered,r_0026_0007__room,r_0026_0005__about_dir).
+arc(r_0026_0009__two,r_0026_0011__them,r_0026_0010__of).
+arc(r_0026_0012__standing,r_0026_0009__two,arg0).
+arc(r_0026_0012__standing,r_0026_0015__chimney_piece,r_0026_0013__on_loc).
 
 </pre>
 <br>
@@ -165,19 +165,19 @@ fof(id_26_A_HARDY_1883,axiom,
       ( CATENATIVEX2 = CONNX6
       &amp; isA(CONNX6,abs_0026_1005)
       &amp; scope(CONNX6) = EVENTX10
-      &amp; isA(EVENTX10,r__scattered_0026_0004)
+      &amp; isA(EVENTX10,r_0026_0004__scattered)
       &amp; arg1(EVENTX10) = ENTITYX1
-      &amp; r__about_0026_0005_dir(EVENTX10) = ENTITYX4
+      &amp; r_0026_0005__about_dir(EVENTX10) = ENTITYX4
       &amp; restriction(CONNX6) = EVENTX9
-      &amp; isA(EVENTX9,r__standing_0026_0012)
+      &amp; isA(EVENTX9,r_0026_0012__standing)
       &amp; arg0(EVENTX9) = ENTITYX7
-      &amp; r__on_0026_0013_loc(EVENTX9) = ENTITYX8
-      &amp; isA(ENTITYX1,r__lights_0026_0002)
-      &amp; isA(ENTITYX4,r__room_0026_0007)
-      &amp; isA(ENTITYX7,r__two_0026_0009)
-      &amp; r__of_0026_0010(ENTITYX7) = r__them_0026_0011
-      &amp; isA(ENTITYX8,r__chimney_piece_0026_0015)
-      &amp; isA(EVENTX11,r__were_0026_0003)
+      &amp; r_0026_0013__on_loc(EVENTX9) = ENTITYX8
+      &amp; isA(ENTITYX1,r_0026_0002__lights)
+      &amp; isA(ENTITYX4,r_0026_0007__room)
+      &amp; isA(ENTITYX7,r_0026_0009__two)
+      &amp; r_0026_0010__of(ENTITYX7) = r_0026_0011__them
+      &amp; isA(ENTITYX8,r_0026_0015__chimney_piece)
+      &amp; isA(EVENTX11,r_0026_0003__were)
       &amp; catenative(EVENTX11) = CATENATIVEX2 ) ).
 
 

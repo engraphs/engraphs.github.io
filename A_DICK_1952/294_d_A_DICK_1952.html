@@ -109,27 +109,27 @@ Instantly the gun shifted , the barrel retracting .
 </svg>
 <br>
 <pre>
-arc(abs_0374_1003,r__shifted_0374_0004,scope).
-arc(abs_0374_1003,r__retracting_0374_0008,restriction).
-arc(r__shifted_0374_0004,r__Instantly_0374_0001,tmp1).
-arc(r__shifted_0374_0004,r__gun_0374_0003,arg0).
-arc(r__retracting_0374_0008,r__barrel_0374_0007,arg0).
+arc(abs_0374_1003,r_0374_0004__shifted,scope).
+arc(abs_0374_1003,r_0374_0008__retracting,restriction).
+arc(r_0374_0004__shifted,r_0374_0001__Instantly,tmp1).
+arc(r_0374_0004__shifted,r_0374_0003__gun,arg0).
+arc(r_0374_0008__retracting,r_0374_0007__barrel,arg0).
 
 </pre>
 <br>
 <pre>
 fof(id_374_A_DICK_1952,axiom,
     ? [CONNX4,EVENTX6,EVENTX7,QUALITYX1,GUNX2,ENTITYX5] :
-      ( isA(QUALITYX1,r__Instantly_0374_0001)
-      &amp; isA(GUNX2,r__gun_0374_0003)
-      &amp; isA(ENTITYX5,r__barrel_0374_0007)
+      ( isA(QUALITYX1,r_0374_0001__Instantly)
+      &amp; isA(GUNX2,r_0374_0003__gun)
+      &amp; isA(ENTITYX5,r_0374_0007__barrel)
       &amp; isA(CONNX4,abs_0374_1003)
       &amp; scope(CONNX4) = EVENTX7
-      &amp; isA(EVENTX7,r__shifted_0374_0004)
+      &amp; isA(EVENTX7,r_0374_0004__shifted)
       &amp; tmp1(EVENTX7) = QUALITYX1
       &amp; arg0(EVENTX7) = GUNX2
       &amp; restriction(CONNX4) = EVENTX6
-      &amp; isA(EVENTX6,r__retracting_0374_0008)
+      &amp; isA(EVENTX6,r_0374_0008__retracting)
       &amp; arg0(EVENTX6) = ENTITYX5 ) ).
 
 

@@ -77,7 +77,7 @@ All speed limits are based on ideal driving conditions .
 <title>0015_0005&#45;&gt;0015_0008_0015_0009</title>
 <path fill="none" stroke="black" d="M200.71,-175.01C211.66,-162.43 227.1,-144.7 239.59,-130.35"/>
 <polygon fill="black" stroke="black" points="242.25,-132.63 246.18,-122.79 236.97,-128.03 242.25,-132.63"/>
-<text text-anchor="middle" x="253.79" y="-144.8" font-family="fixed" font-size="14.00">on_[clr]</text>
+<text text-anchor="middle" x="250.79" y="-144.8" font-family="fixed" font-size="14.00">on[clr]</text>
 </g>
 <!-- 0015_0007 -->
 <g id="node5" class="node">
@@ -116,12 +116,12 @@ All speed limits are based on ideal driving conditions .
 </svg>
 <br>
 <pre>
-arc(quantificational_r__All_0015_0001,r__speed_0015_0002_r__limits_0015_0003,restriction).
-arc(quantificational_r__All_0015_0001,r__are_0015_0004,scope).
-arc(r__are_0015_0004,r__based_0015_0005,catenative).
-arc(r__based_0015_0005,r__speed_0015_0002_r__limits_0015_0003,arg1).
-arc(r__based_0015_0005,r__driving_0015_0008_r__conditions_0015_0009,r__on_0015_0006_clr).
-arc(r__driving_0015_0008_r__conditions_0015_0009,r__ideal_0015_0007,attrib1).
+arc(r_0015_0001__quantificational__All,r_0015_0002__speed_limits,restriction).
+arc(r_0015_0001__quantificational__All,r_0015_0004__are,scope).
+arc(r_0015_0004__are,r_0015_0005__based,catenative).
+arc(r_0015_0005__based,r_0015_0002__speed_limits,arg1).
+arc(r_0015_0005__based,r_0015_0008__driving_conditions,r_0015_0006__on_clr).
+arc(r_0015_0008__driving_conditions,r_0015_0007__ideal,attrib1).
 
 </pre>
 <br>
@@ -129,17 +129,17 @@ arc(r__driving_0015_0008_r__conditions_0015_0009,r__ideal_0015_0007,attrib1).
 fof(id_15_A_driver_handbook,axiom,
     ? [CATENATIVEX3,QUANTX2,EVENTX8,EVENTX7,ENTITYX1,ENTITYX5,ATTRIBX6] :
       ( CATENATIVEX3 = EVENTX7
-      &amp; isA(EVENTX7,r__based_0015_0005)
+      &amp; isA(EVENTX7,r_0015_0005__based)
       &amp; arg1(EVENTX7) = ENTITYX1
-      &amp; r__on_0015_0006_clr(EVENTX7) = ENTITYX5
-      &amp; isA(ENTITYX5,r__driving_0015_0008_r__conditions_0015_0009)
+      &amp; r_0015_0006__on_clr(EVENTX7) = ENTITYX5
+      &amp; isA(ENTITYX5,r_0015_0008__driving_conditions)
       &amp; attrib1(ENTITYX5) = ATTRIBX6
-      &amp; isA(ATTRIBX6,r__ideal_0015_0007)
-      &amp; isA(QUANTX2,quantificational_r__All_0015_0001)
+      &amp; isA(ATTRIBX6,r_0015_0007__ideal)
+      &amp; isA(QUANTX2,r_0015_0001__quantificational__All)
       &amp; restriction(QUANTX2) = ENTITYX1
-      &amp; isA(ENTITYX1,r__speed_0015_0002_r__limits_0015_0003)
+      &amp; isA(ENTITYX1,r_0015_0002__speed_limits)
       &amp; scope(QUANTX2) = EVENTX8
-      &amp; isA(EVENTX8,r__are_0015_0004)
+      &amp; isA(EVENTX8,r_0015_0004__are)
       &amp; catenative(EVENTX8) = CATENATIVEX3 ) ).
 
 

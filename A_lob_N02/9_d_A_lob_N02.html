@@ -116,7 +116,7 @@ Meanwhile Hubert would have betaken himself and his well-earned gratuity to his 
 <title>0026_0005&#45;&gt;0026_0014</title>
 <path fill="none" stroke="black" d="M216.69,-262.61C234.99,-248.96 261.88,-228.91 282.1,-213.83"/>
 <polygon fill="black" stroke="black" points="284.39,-216.49 290.32,-207.71 280.21,-210.88 284.39,-216.49"/>
-<text text-anchor="middle" x="284.54" y="-231.8" font-family="fixed" font-size="14.00">to_[clr]</text>
+<text text-anchor="middle" x="281.04" y="-231.8" font-family="fixed" font-size="14.00">to[clr]</text>
 </g>
 <!-- 0026_0007&#45;&gt;0026_0002 -->
 <g id="edge7" class="edge">
@@ -208,20 +208,20 @@ Meanwhile Hubert would have betaken himself and his well-earned gratuity to his 
 </svg>
 <br>
 <pre>
-arc(r__Meanwhile_0026_0001,r__would_0026_0003,scope).
-arc(r__would_0026_0003,r__have_0026_0004,scope).
-arc(r__have_0026_0004,r__betaken_0026_0005,catenative).
-arc(r__betaken_0026_0005,r__Hubert_0026_0002,arg0).
-arc(r__betaken_0026_0005,r__and_0026_0007,arg1).
-arc(r__betaken_0026_0005,r__village_0026_0014,r__to_0026_0011_clr).
-arc(r__and_0026_0007,r__Hubert_0026_0002,conj1).
-arc(r__and_0026_0007,r__gratuity_0026_0010,conj2).
-arc(r__gratuity_0026_0010,r__Hubert_0026_0002,genv).
-arc(r__gratuity_0026_0010,r__well_earned_0026_0009,attrib2).
-arc(r__village_0026_0014,r__Hubert_0026_0002,genv).
-arc(r__village_0026_0014,r__native_0026_0013,attrib2).
-arc(r__village_0026_0014,r__north_0026_0017,r__at_0026_0015).
-arc(r__north_0026_0017,r__island_0026_0020,r__of_0026_0018).
+arc(r_0026_0001__Meanwhile,r_0026_0003__would,scope).
+arc(r_0026_0003__would,r_0026_0004__have,scope).
+arc(r_0026_0004__have,r_0026_0005__betaken,catenative).
+arc(r_0026_0005__betaken,r_0026_0002__Hubert,arg0).
+arc(r_0026_0005__betaken,r_0026_0007__and,arg1).
+arc(r_0026_0005__betaken,r_0026_0014__village,r_0026_0011__to_clr).
+arc(r_0026_0007__and,r_0026_0002__Hubert,conj1).
+arc(r_0026_0007__and,r_0026_0010__gratuity,conj2).
+arc(r_0026_0010__gratuity,r_0026_0002__Hubert,genv).
+arc(r_0026_0010__gratuity,r_0026_0009__well_earned,attrib2).
+arc(r_0026_0014__village,r_0026_0002__Hubert,genv).
+arc(r_0026_0014__village,r_0026_0013__native,attrib2).
+arc(r_0026_0014__village,r_0026_0017__north,r_0026_0015__at).
+arc(r_0026_0017__north,r_0026_0020__island,r_0026_0018__of).
 
 </pre>
 <br>
@@ -229,33 +229,33 @@ arc(r__north_0026_0017,r__island_0026_0020,r__of_0026_0018).
 fof(id_26_A_lob_N02,axiom,
     ? [CATENATIVEX3,HUBERTX5,HUBERTX7,HUBERTX10,OPERATORX1,OPERATORX2,EVENTX15,EVENTX14,ENTITYX4,ENTITYX9,ENTITYX12,ENTITYX13,ENTITYX6,ATTRIBX11,ATTRIBX8] :
       ( CATENATIVEX3 = EVENTX14
-      &amp; isA(EVENTX14,r__betaken_0026_0005)
-      &amp; arg0(EVENTX14) = r__Hubert_0026_0002
+      &amp; isA(EVENTX14,r_0026_0005__betaken)
+      &amp; arg0(EVENTX14) = r_0026_0002__Hubert
       &amp; arg1(EVENTX14) = ENTITYX4
-      &amp; r__to_0026_0011_clr(EVENTX14) = ENTITYX9
-      &amp; isA(ENTITYX4,r__and_0026_0007)
+      &amp; r_0026_0011__to_clr(EVENTX14) = ENTITYX9
+      &amp; isA(ENTITYX4,r_0026_0007__and)
       &amp; conj1(ENTITYX4) = HUBERTX5
       &amp; conj2(ENTITYX4) = ENTITYX6
-      &amp; HUBERTX5 = r__Hubert_0026_0002
-      &amp; isA(ENTITYX6,r__gratuity_0026_0010)
+      &amp; HUBERTX5 = r_0026_0002__Hubert
+      &amp; isA(ENTITYX6,r_0026_0010__gratuity)
       &amp; genv(ENTITYX6) = HUBERTX7
       &amp; attrib2(ENTITYX6) = ATTRIBX8
-      &amp; HUBERTX7 = r__Hubert_0026_0002
-      &amp; isA(ENTITYX9,r__village_0026_0014)
+      &amp; HUBERTX7 = r_0026_0002__Hubert
+      &amp; isA(ENTITYX9,r_0026_0014__village)
       &amp; genv(ENTITYX9) = HUBERTX10
       &amp; attrib2(ENTITYX9) = ATTRIBX11
-      &amp; r__at_0026_0015(ENTITYX9) = ENTITYX12
-      &amp; HUBERTX10 = r__Hubert_0026_0002
-      &amp; isA(ENTITYX12,r__north_0026_0017)
-      &amp; r__of_0026_0018(ENTITYX12) = ENTITYX13
-      &amp; isA(ENTITYX13,r__island_0026_0020)
-      &amp; isA(ATTRIBX8,r__well_earned_0026_0009)
-      &amp; isA(ATTRIBX11,r__native_0026_0013)
-      &amp; isA(OPERATORX1,r__Meanwhile_0026_0001)
+      &amp; r_0026_0015__at(ENTITYX9) = ENTITYX12
+      &amp; HUBERTX10 = r_0026_0002__Hubert
+      &amp; isA(ENTITYX12,r_0026_0017__north)
+      &amp; r_0026_0018__of(ENTITYX12) = ENTITYX13
+      &amp; isA(ENTITYX13,r_0026_0020__island)
+      &amp; isA(ATTRIBX8,r_0026_0009__well_earned)
+      &amp; isA(ATTRIBX11,r_0026_0013__native)
+      &amp; isA(OPERATORX1,r_0026_0001__Meanwhile)
       &amp; scope(OPERATORX1) = OPERATORX2
-      &amp; isA(OPERATORX2,r__would_0026_0003)
+      &amp; isA(OPERATORX2,r_0026_0003__would)
       &amp; scope(OPERATORX2) = EVENTX15
-      &amp; isA(EVENTX15,r__have_0026_0004)
+      &amp; isA(EVENTX15,r_0026_0004__have)
       &amp; catenative(EVENTX15) = CATENATIVEX3 ) ).
 
 
