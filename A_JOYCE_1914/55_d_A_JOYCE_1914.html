@@ -29,30 +29,69 @@
 &ldquo; And everything ... ? &rdquo;
 <br>
 <br>
-<svg width="135pt" height="44pt"
- viewBox="0.00 0.00 135.39 44.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 40)">
+<svg width="355pt" height="218pt"
+ viewBox="0.00 0.00 354.53 218.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 214)">
 <title>%3</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-40 131.39,-40 131.39,4 -4,4"/>
-<!-- z_0124_1004 -->
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-214 350.53,-214 350.53,4 -4,4"/>
+<!-- quantificational_0124_0003 -->
 <g id="node1" class="node">
-<title>z_0124_1004</title>
-<ellipse fill="none" stroke="black" cx="63.69" cy="-18" rx="63.89" ry="18"/>
-<text text-anchor="middle" x="63.69" y="-14.3" font-family="fixed" font-size="14.00">#124_1004</text>
+<title>quantificational_0124_0003</title>
+<ellipse fill="none" stroke="black" cx="135.84" cy="-192" rx="135.68" ry="18"/>
+<text text-anchor="middle" x="135.84" y="-188.3" font-family="fixed" font-size="14.00">[quantificational]everything</text>
+</g>
+<!-- z_0124_1005 -->
+<g id="node2" class="node">
+<title>z_0124_1005</title>
+<ellipse fill="none" stroke="black" cx="135.84" cy="-18" rx="63.89" ry="18"/>
+<text text-anchor="middle" x="135.84" y="-14.3" font-family="fixed" font-size="14.00">#124_1005</text>
+</g>
+<!-- quantificational_0124_0003&#45;&gt;z_0124_1005 -->
+<g id="edge1" class="edge">
+<title>quantificational_0124_0003&#45;&gt;z_0124_1005</title>
+<path fill="none" stroke="black" d="M133.6,-173.99C131.91,-160.26 129.73,-140.42 128.84,-123 128.02,-107.02 128.02,-102.98 128.84,-87 129.53,-73.52 130.99,-58.61 132.39,-46.18"/>
+<polygon fill="black" stroke="black" points="135.9,-46.35 133.6,-36.01 128.95,-45.53 135.9,-46.35"/>
+<text text-anchor="middle" x="169.34" y="-101.3" font-family="fixed" font-size="14.00">[restriction]</text>
+</g>
+<!-- z_0124_1006 -->
+<g id="node3" class="node">
+<title>z_0124_1006</title>
+<ellipse fill="none" stroke="black" cx="282.84" cy="-105" rx="63.89" ry="18"/>
+<text text-anchor="middle" x="282.84" y="-101.3" font-family="fixed" font-size="14.00">#124_1006</text>
+</g>
+<!-- quantificational_0124_0003&#45;&gt;z_0124_1006 -->
+<g id="edge2" class="edge">
+<title>quantificational_0124_0003&#45;&gt;z_0124_1006</title>
+<path fill="none" stroke="black" d="M164.88,-174.21C188.43,-160.59 221.73,-141.33 246.95,-126.75"/>
+<polygon fill="black" stroke="black" points="248.93,-129.65 255.84,-121.61 245.43,-123.59 248.93,-129.65"/>
+<text text-anchor="middle" x="243.84" y="-144.8" font-family="fixed" font-size="14.00">[scope]</text>
+</g>
+<!-- z_0124_1006&#45;&gt;z_0124_1005 -->
+<g id="edge3" class="edge">
+<title>z_0124_1006&#45;&gt;z_0124_1005</title>
+<path fill="none" stroke="black" d="M256.22,-88.61C232.53,-74.91 197.71,-54.77 171.6,-39.68"/>
+<polygon fill="black" stroke="black" points="173.17,-36.54 162.76,-34.57 169.66,-42.6 173.17,-36.54"/>
+<text text-anchor="middle" x="258.84" y="-57.8" font-family="fixed" font-size="14.00">#124_1002</text>
 </g>
 </g>
 </svg>
 <br>
 <pre>
-arc(z_0124_1004,x_0000_0000,x_0000_0000).
+arc(quantificational_r__everything_0124_0003,z_0124_1005,restriction).
+arc(quantificational_r__everything_0124_0003,z_0124_1006,scope).
+arc(z_0124_1006,z_0124_1005,z_0124_1002).
 
 </pre>
 <br>
 <pre>
 fof(id_124_A_JOYCE_1914,axiom,
-    ? [EVENTX5,ENTITYX3] :
-      ( isA(EVENTX5,z_0124_1004)
-      &amp; z_0124_1002(EVENTX5) = ENTITYX3 ) ).
+    ? [QUANTX4,EVENTX7,ENTITYX3] :
+      ( isA(QUANTX4,quantificational_r__everything_0124_0003)
+      &amp; restriction(QUANTX4) = ENTITYX3
+      &amp; isA(ENTITYX3,z_0124_1005)
+      &amp; scope(QUANTX4) = EVENTX7
+      &amp; isA(EVENTX7,z_0124_1006)
+      &amp; z_0124_1002(EVENTX7) = ENTITYX3 ) ).
 
 
 </pre>
