@@ -109,21 +109,21 @@ Instantly the gun shifted , the barrel retracting .
 </svg>
 <br>
 <pre>
-arc(abs_0374_1003,r_0374_0004__shifted,scope).
-arc(abs_0374_1003,r_0374_0008__retracting,restriction).
 arc(r_0374_0004__shifted,r_0374_0001__Instantly,tmp1).
 arc(r_0374_0004__shifted,r_0374_0003__gun,arg0).
 arc(r_0374_0008__retracting,r_0374_0007__barrel,arg0).
+arc(r_0374_1003__abs,r_0374_0004__shifted,scope).
+arc(r_0374_1003__abs,r_0374_0008__retracting,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_374_A_DICK_1952,axiom,
+fof(id__374_A_DICK_1952,axiom,
     ? [CONNX4,EVENTX6,EVENTX7,QUALITYX1,GUNX2,ENTITYX5] :
       ( isA(QUALITYX1,r_0374_0001__Instantly)
       &amp; isA(GUNX2,r_0374_0003__gun)
       &amp; isA(ENTITYX5,r_0374_0007__barrel)
-      &amp; isA(CONNX4,abs_0374_1003)
+      &amp; isA(CONNX4,r_0374_1003__abs)
       &amp; scope(CONNX4) = EVENTX7
       &amp; isA(EVENTX7,r_0374_0004__shifted)
       &amp; tmp1(EVENTX7) = QUALITYX1

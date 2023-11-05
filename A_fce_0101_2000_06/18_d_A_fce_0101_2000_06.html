@@ -98,21 +98,21 @@ You have had a class discussion on family life .
 <pre>
 arc(r_0019_0002__have,r_0019_0003__had,catenative).
 arc(r_0019_0003__had,r_0019_0001__You,arg0).
-arc(r_0019_0003__had,r_0019_0005__class_discussion,arg1).
-arc(r_0019_0005__class_discussion,r_0019_0008__family_life,r_0019_0007__on).
+arc(r_0019_0003__had,r_0019_0005__class__r_0019_0006__discussion,arg1).
+arc(r_0019_0005__class__r_0019_0006__discussion,r_0019_0008__family_r_0019_0009__life,r_0019_0007__on).
 
 </pre>
 <br>
 <pre>
-fof(id_19_A_fce_0101_2000_06,axiom,
+fof(id__19_A_fce_0101_2000_06,axiom,
     ? [CATENATIVEX1,EVENTX5,EVENTX4,ENTITYX2,ENTITYX3] :
       ( CATENATIVEX1 = EVENTX4
       &amp; isA(EVENTX4,r_0019_0003__had)
       &amp; arg0(EVENTX4) = r_0019_0001__You
       &amp; arg1(EVENTX4) = ENTITYX2
-      &amp; isA(ENTITYX2,r_0019_0005__class_discussion)
+      &amp; isA(ENTITYX2,r_0019_0005__class__r_0019_0006__discussion)
       &amp; r_0019_0007__on(ENTITYX2) = ENTITYX3
-      &amp; isA(ENTITYX3,r_0019_0008__family_life)
+      &amp; isA(ENTITYX3,r_0019_0008__family__r_0019_0009__life)
       &amp; isA(EVENTX5,r_0019_0002__have)
       &amp; catenative(EVENTX5) = CATENATIVEX1 ) ).
 

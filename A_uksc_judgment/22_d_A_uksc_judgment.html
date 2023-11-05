@@ -273,30 +273,30 @@ Sir John 's evidence is that he has never known a Government to need as much as 
 </svg>
 <br>
 <pre>
-arc(cnt_0036_1013,r_0036_0014__need,scope).
-arc(cnt_0036_1013,r_0036_0021__put,restriction).
-arc(r_0036_0004__evidence,r_0036_0001__Sir_John,genv).
+arc(r_0036_0004__evidence,r_0036_0001__Sir__r_0036_0002__John,genv).
 arc(r_0036_0005__is,r_0036_0004__evidence,arg0).
 arc(r_0036_0005__is,r_0036_0008__has,prd2).
 arc(r_0036_0008__has,r_0036_0010__known,catenative).
-arc(r_0036_0010__known,cnt_0036_1013,arg1).
-arc(r_0036_0010__known,r_0036_0001__Sir_John,arg0).
+arc(r_0036_0010__known,r_0036_0001__Sir__r_0036_0002__John,arg0).
 arc(r_0036_0010__known,r_0036_0009__never,tmp1).
+arc(r_0036_0010__known,r_0036_1013__cnt,arg1).
 arc(r_0036_0014__need,r_0036_0012__Government,arg0).
 arc(r_0036_0014__need,z_0036_1012,arg1).
 arc(r_0036_0016__much,r_0036_0015__as,quality1).
-arc(r_0036_0016__much,r_0036_0018__five_weeks,r_0036_0017__as).
+arc(r_0036_0016__much,r_0036_0018__five__r_0036_0019__weeks,r_0036_0017__as).
 arc(r_0036_0021__put,r_0036_0022__together,prd3).
 arc(r_0036_0021__put,r_0036_0025__agenda,arg1).
 arc(r_0036_0021__put,z_0036_1012,arg0).
 arc(r_0036_0025__agenda,r_0036_0012__Government,genv).
 arc(r_0036_0025__agenda,r_0036_0024__legislative,attrib2).
+arc(r_0036_1013__cnt,r_0036_0014__need,scope).
+arc(r_0036_1013__cnt,r_0036_0021__put,restriction).
 arc(z_0036_1012,r_0036_0016__much,attrib1).
 
 </pre>
 <br>
 <pre>
-fof(id_36_A_uksc_judgment,axiom,
+fof(id__36_A_uksc_judgment,axiom,
     ? [STATEX2,CATENATIVEX4,STATEX7,MAJORX3,GOVX17,EVENTX23,EVENTX22,EVENTX21,CONNX14,EVENTX19,EVENTX20,ENTITYX1,GOVX6,ENTITYX8,ENTITYX16,ENTITYX11,QUALITYX5,QUALITYX15,QUALITYX10,ATTRIBX18,ATTRIBX9] :
       ( STATEX2 = EVENTX22
       &amp; isA(EVENTX22,r_0036_0008__has)
@@ -307,7 +307,7 @@ fof(id_36_A_uksc_judgment,axiom,
       &amp; tmp1(EVENTX21) = QUALITYX5
       &amp; arg1(EVENTX21) = STATEX7
       &amp; STATEX7 = CONNX14
-      &amp; isA(CONNX14,cnt_0036_1013)
+      &amp; isA(CONNX14,r_0036_1013__cnt)
       &amp; scope(CONNX14) = EVENTX20
       &amp; isA(EVENTX20,r_0036_0014__need)
       &amp; arg0(EVENTX20) = GOVX6
@@ -318,12 +318,12 @@ fof(id_36_A_uksc_judgment,axiom,
       &amp; prd3(EVENTX19) = QUALITYX15
       &amp; arg1(EVENTX19) = ENTITYX16
       &amp; isA(ENTITYX1,r_0036_0004__evidence)
-      &amp; genv(ENTITYX1) = r_0036_0001__Sir_John
-      &amp; MAJORX3 = r_0036_0001__Sir_John
+      &amp; genv(ENTITYX1) = r_0036_0001__Sir__r_0036_0002__John
+      &amp; MAJORX3 = r_0036_0001__Sir__r_0036_0002__John
       &amp; isA(GOVX6,r_0036_0012__Government)
       &amp; isA(ENTITYX8,z_0036_1012)
       &amp; attrib1(ENTITYX8) = ATTRIBX9
-      &amp; isA(ENTITYX11,r_0036_0018__five_weeks)
+      &amp; isA(ENTITYX11,r_0036_0018__five__r_0036_0019__weeks)
       &amp; isA(ENTITYX16,r_0036_0025__agenda)
       &amp; genv(ENTITYX16) = GOVX17
       &amp; attrib2(ENTITYX16) = ATTRIBX18

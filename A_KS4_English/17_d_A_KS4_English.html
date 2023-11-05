@@ -353,11 +353,10 @@ Teachers should show pupils how to understand the relationships between words , 
 </svg>
 <br>
 <pre>
-arc(question_0024_1005,r_0024_0020__and,scope).
 arc(r_0024_0002__should,r_0024_0003__show,scope).
-arc(r_0024_0003__show,question_0024_1005,arg1).
 arc(r_0024_0003__show,r_0024_0001__Teachers,arg0).
 arc(r_0024_0003__show,r_0024_0004__pupils,arg2).
+arc(r_0024_0003__show,r_0024_1005__question,arg1).
 arc(r_0024_0007__understand,r_0024_0004__pupils,arg0).
 arc(r_0024_0007__understand,r_0024_0005__how,mnr1).
 arc(r_0024_0007__understand,r_0024_0009__relationships,arg1).
@@ -379,14 +378,15 @@ arc(r_0024_0029__and,r_0024_0030__ability,conj2).
 arc(r_0024_0030__ability,r_0024_0032__use,emb2).
 arc(r_0024_0032__use,r_0024_0036__language,arg1).
 arc(r_0024_0036__language,r_0024_0035__figurative,attrib1).
+arc(r_0024_1005__question,r_0024_0020__and,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_24_A_KS4_English,axiom,
+fof(id__24_A_KS4_English,axiom,
     ? [STATEX3,STATEX22,PUPILSX16,FIG_LANGX20,FIG_LANGX25,OPERATORX29,EVENTX30,OPERATORX5,CONJX28,EVENTX27,EVENTX26,EVENTX13,EVENTX9,ENTITYX1,PUPILSX2,ENTITYX15,FIG_LANGX17,ENTITYX19,ENTITYX21,ENTITYX11,ENTITYX12,ENTITYX7,ENTITYX8,QUALITYX14,QUALITYX10,QUALITYX6,ATTRIBX18] :
       ( STATEX3 = OPERATORX5
-      &amp; isA(OPERATORX5,question_0024_1005)
+      &amp; isA(OPERATORX5,r_0024_1005__question)
       &amp; scope(OPERATORX5) = CONJX28
       &amp; isA(CONJX28,r_0024_0020__and)
       &amp; conj1(CONJX28) = EVENTX9

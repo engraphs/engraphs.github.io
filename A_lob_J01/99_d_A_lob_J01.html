@@ -194,41 +194,41 @@ Dissolve each portion of the precipitate in 25 ml of 30 % ammonium fluoride and 
 </svg>
 <br>
 <pre>
-arc(imperative_0099_1002,r_0099_0002__quantificational__each,scope).
 arc(r_0099_0001__Dissolve,r_0099_0003__portion,arg1).
 arc(r_0099_0001__Dissolve,r_0099_0015__and,r_0099_0007__in_mnr).
-arc(r_0099_0002__quantificational__each,r_0099_0001__Dissolve,scope).
-arc(r_0099_0002__quantificational__each,r_0099_0003__portion,restriction).
+arc(r_0099_0002__quantificational__r_0099_0002__each,r_0099_0001__Dissolve,scope).
+arc(r_0099_0002__quantificational__r_0099_0002__each,r_0099_0003__portion,restriction).
 arc(r_0099_0003__portion,r_0099_0006__precipitate,r_0099_0004__of).
-arc(r_0099_0008__25_ml,r_0099_0011__30___fluoride,r_0099_0010__of).
-arc(r_0099_0011__30___fluoride,r_0099_0013__ammonium,attrib3).
-arc(r_0099_0015__and,r_0099_0008__25_ml,conj1).
-arc(r_0099_0015__and,r_0099_0016__15_ml,conj2).
-arc(r_0099_0016__15_ml,r_0099_0019__16_acid,r_0099_0018__of).
-arc(r_0099_0019__16_acid,r_0099_0021__nitric,attrib3).
+arc(r_0099_0008__25__r_0099_0009__ml,r_0099_0011__30_r_0099_0012____r_0099_0014__fluoride,r_0099_0010__of).
+arc(r_0099_0011__30__r_0099_0012____r_0099_0014__fluoride,r_0099_0013__ammonium,attrib3).
+arc(r_0099_0015__and,r_0099_0008__25__r_0099_0009__ml,conj1).
+arc(r_0099_0015__and,r_0099_0016__15__r_0099_0017__ml,conj2).
+arc(r_0099_0016__15__r_0099_0017__ml,r_0099_0019__16_r_0099_0022__acid,r_0099_0018__of).
+arc(r_0099_0019__16__r_0099_0022__acid,r_0099_0021__nitric,attrib3).
+arc(r_0099_1002__imperative,r_0099_0002__quantificational__r_0099_0002__each,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_99_A_lob_J01,axiom,
+fof(id__99_A_lob_J01,axiom,
     ? [OPERATORX2,QUANTX5,EVENTX14,ENTITYX4,ENTITYX7,ENTITYX8,ENTITYX11,ENTITYX12,ENTITYX9,ENTITYX6,ATTRIBX13,ATTRIBX10] :
       ( isA(ENTITYX6,r_0099_0006__precipitate)
       &amp; isA(ENTITYX7,r_0099_0015__and)
       &amp; conj1(ENTITYX7) = ENTITYX8
       &amp; conj2(ENTITYX7) = ENTITYX11
-      &amp; isA(ENTITYX8,r_0099_0008__25_ml)
+      &amp; isA(ENTITYX8,r_0099_0008__25__r_0099_0009__ml)
       &amp; r_0099_0010__of(ENTITYX8) = ENTITYX9
-      &amp; isA(ENTITYX9,r_0099_0011__30___fluoride)
+      &amp; isA(ENTITYX9,r_0099_0011__30__r_0099_0012____r_0099_0014__fluoride)
       &amp; attrib3(ENTITYX9) = ATTRIBX10
-      &amp; isA(ENTITYX11,r_0099_0016__15_ml)
+      &amp; isA(ENTITYX11,r_0099_0016__15__r_0099_0017__ml)
       &amp; r_0099_0018__of(ENTITYX11) = ENTITYX12
-      &amp; isA(ENTITYX12,r_0099_0019__16_acid)
+      &amp; isA(ENTITYX12,r_0099_0019__16__r_0099_0022__acid)
       &amp; attrib3(ENTITYX12) = ATTRIBX13
       &amp; isA(ATTRIBX10,r_0099_0013__ammonium)
       &amp; isA(ATTRIBX13,r_0099_0021__nitric)
-      &amp; isA(OPERATORX2,imperative_0099_1002)
+      &amp; isA(OPERATORX2,r_0099_1002__imperative)
       &amp; scope(OPERATORX2) = QUANTX5
-      &amp; isA(QUANTX5,r_0099_0002__quantificational__each)
+      &amp; isA(QUANTX5,r_0099_0002__quantificational__r_0099_0002__each)
       &amp; restriction(QUANTX5) = ENTITYX4
       &amp; isA(ENTITYX4,r_0099_0003__portion)
       &amp; r_0099_0004__of(ENTITYX4) = ENTITYX6

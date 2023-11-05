@@ -400,14 +400,12 @@ Then they melted the statue in a furnace , and the Mayor held a meeting of the C
 </svg>
 <br>
 <pre>
-arc(cnt_0238_1010,r_0238_0013__held,scope).
-arc(cnt_0238_1010,r_0238_0020__decide,restriction).
 arc(r_0238_0003__melted,r_0238_0001__Then,tmp1).
 arc(r_0238_0003__melted,r_0238_0002__they,arg0).
 arc(r_0238_0003__melted,r_0238_0005__statue,arg1).
 arc(r_0238_0003__melted,r_0238_0008__furnace,r_0238_0006__in_loc).
-arc(r_0238_0010__and,cnt_0238_1010,conj2).
 arc(r_0238_0010__and,r_0238_0003__melted,conj1).
+arc(r_0238_0010__and,r_0238_1010__cnt,conj2).
 arc(r_0238_0013__held,r_0238_0012__Mayor,arg0).
 arc(r_0238_0013__held,r_0238_0015__meeting,arg1).
 arc(r_0238_0015__meeting,r_0238_0018__Corporation,r_0238_0016__of).
@@ -417,22 +415,24 @@ arc(r_0238_0022__was,r_0238_0024__be,catenative).
 arc(r_0238_0024__be,r_0238_0025__done,catenative).
 arc(r_0238_0025__done,r_0238_0028__metal,r_0238_0026__with_rst).
 arc(r_0238_0025__done,z_0238_1020,arg1).
+arc(r_0238_1010__cnt,r_0238_0013__held,scope).
+arc(r_0238_1010__cnt,r_0238_0020__decide,restriction).
+arc(r_0238_1026__utterance,r_0239_0008__of_course,part1).
 arc(r_0239_0003__must,r_0239_0004__have,scope).
 arc(r_0239_0004__have,r_0238_0002__they,arg0).
 arc(r_0239_0004__have,r_0239_0006__statue,arg1).
 arc(r_0239_0008__of_course,r_0239_0003__must,scope).
 arc(r_0239_0012__said,r_0238_0012__Mayor,arg0).
-arc(r_0239_0012__said,utterance_0238_1026,arg1).
+arc(r_0239_0012__said,r_0238_1026__utterance,arg1).
 arc(r_0240_0004__shall,r_0240_0005__be,scope).
 arc(r_0240_0005__be,r_0239_0006__statue,arg0).
 arc(r_0240_0005__be,r_0240_0007__statue,prd2).
 arc(r_0240_0007__statue,r_0238_0012__Mayor,r_0240_0008__of).
-arc(utterance_0238_1026,r_0239_0008__of_course,part1).
 
 </pre>
 <br>
 <pre>
-fof(id_238_A_WILDE_1_1888__239_A_WILDE_1_1888__240_A_WILDE_1_1888,axiom,
+fof(id__238_A_WILDE_1_1888__239_A_WILDE_1_1888__240_A_WILDE_1_1888,axiom,
     ? [STATEX13,CATENATIVEX14,STATEX24,MAYOR_AND_COUNCILLORSX27,MAYORX33,SECOND_STATUEX35,MAYORX37,OPERATORX38,EVENTX39,EVENTX34,CONJX32,OPERATORX29,OPERATORX30,EVENTX31,CONJX23,CONNX11,EVENTX21,EVENTX19,EVENTX18,EVENTX17,EVENTX22,EVENTX6,QUALITYX3,ENTITYX36,SECOND_STATUEX28,MAYORX7,ENTITYX8,ENTITYX12,ENTITYX16,ENTITYX9,ENTITYX4,ENTITYX5] :
       ( STATEX13 = EVENTX18
       &amp; isA(EVENTX18,r_0238_0024__be)
@@ -442,7 +442,7 @@ fof(id_238_A_WILDE_1_1888__239_A_WILDE_1_1888__240_A_WILDE_1_1888,axiom,
       &amp; arg1(EVENTX17) = ENTITYX12
       &amp; r_0238_0026__with_rst(EVENTX17) = ENTITYX16
       &amp; STATEX24 = CONJX32
-      &amp; isA(CONJX32,utterance_0238_1026)
+      &amp; isA(CONJX32,r_0238_1026__utterance)
       &amp; part1(CONJX32) = OPERATORX29
       &amp; isA(OPERATORX29,r_0239_0008__of_course)
       &amp; scope(OPERATORX29) = OPERATORX30
@@ -478,7 +478,7 @@ fof(id_238_A_WILDE_1_1888__239_A_WILDE_1_1888__240_A_WILDE_1_1888,axiom,
       &amp; arg1(EVENTX6) = ENTITYX4
       &amp; r_0238_0006__in_loc(EVENTX6) = ENTITYX5
       &amp; conj2(CONJX23) = CONNX11
-      &amp; isA(CONNX11,cnt_0238_1010)
+      &amp; isA(CONNX11,r_0238_1010__cnt)
       &amp; scope(CONNX11) = EVENTX22
       &amp; isA(EVENTX22,r_0238_0013__held)
       &amp; arg0(EVENTX22) = MAYORX7

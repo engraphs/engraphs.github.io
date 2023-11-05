@@ -285,14 +285,12 @@ The strike was resolved , but freelance writers for Yorkshire Television would b
 </svg>
 <br>
 <pre>
-arc(cnt_0090_1014,r_0090_0012__would,scope).
-arc(cnt_0090_1014,r_0090_0021__not,restriction).
 arc(r_0090_0003__was,r_0090_0004__resolved,catenative).
 arc(r_0090_0004__resolved,r_0090_0002__strike,arg1).
-arc(r_0090_0006__but,cnt_0090_1014,conj2).
 arc(r_0090_0006__but,r_0090_0003__was,conj1).
+arc(r_0090_0006__but,r_0090_1014__cnt,conj2).
 arc(r_0090_0008__writers,r_0090_0007__freelance,attrib1).
-arc(r_0090_0008__writers,r_0090_0010__Yorkshire_Television,r_0090_0009__for).
+arc(r_0090_0008__writers,r_0090_0010__Yorkshire__r_0090_0011__Television,r_0090_0009__for).
 arc(r_0090_0012__would,r_0090_0013__be,scope).
 arc(r_0090_0013__be,r_0090_0008__writers,arg0).
 arc(r_0090_0013__be,r_0090_0014__wise,prd2).
@@ -304,11 +302,13 @@ arc(r_0090_0024__commute,r_0090_0008__writers,arg0).
 arc(r_0090_0024__commute,r_0090_0027__and,r_0090_0025__between_clr).
 arc(r_0090_0027__and,r_0090_0026__Winchester,conj1).
 arc(r_0090_0027__and,r_0090_0028__Leeds,conj2).
+arc(r_0090_1014__cnt,r_0090_0012__would,scope).
+arc(r_0090_1014__cnt,r_0090_0021__not,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_90_A_Alresford,axiom,
+fof(id__90_A_Alresford,axiom,
     ? [CATENATIVEX2,STATEX9,STATEX16,CONJX23,CONNX15,OPERATORX19,EVENTX20,EVENTX18,OPERATORX21,EVENTX22,EVENTX13,EVENTX5,EVENTX4,ENTITYX6,ENTITYX17,ENTITYX12,ENTITYX1,ATTRIBX8,ATTRIBX7] :
       ( CATENATIVEX2 = EVENTX4
       &amp; isA(EVENTX4,r_0090_0004__resolved)
@@ -323,7 +323,7 @@ fof(id_90_A_Alresford,axiom,
       &amp; isA(ENTITYX1,r_0090_0002__strike)
       &amp; isA(ENTITYX6,r_0090_0008__writers)
       &amp; attrib1(ENTITYX6) = ATTRIBX7
-      &amp; r_0090_0009__for(ENTITYX6) = r_0090_0010__Yorkshire_Television
+      &amp; r_0090_0009__for(ENTITYX6) = r_0090_0010__Yorkshire__r_0090_0011__Television
       &amp; isA(ENTITYX12,r_0090_0019__spot)
       &amp; isA(ENTITYX17,r_0090_0027__and)
       &amp; conj1(ENTITYX17) = r_0090_0026__Winchester
@@ -336,7 +336,7 @@ fof(id_90_A_Alresford,axiom,
       &amp; isA(EVENTX5,r_0090_0003__was)
       &amp; catenative(EVENTX5) = CATENATIVEX2
       &amp; conj2(CONJX23) = CONNX15
-      &amp; isA(CONNX15,cnt_0090_1014)
+      &amp; isA(CONNX15,r_0090_1014__cnt)
       &amp; scope(CONNX15) = OPERATORX21
       &amp; isA(OPERATORX21,r_0090_0012__would)
       &amp; scope(OPERATORX21) = EVENTX22

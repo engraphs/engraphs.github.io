@@ -436,46 +436,46 @@ They also provide for some 1401 processing while the transfer of data is taking 
 </svg>
 <br>
 <pre>
-arc(r_0051_0002__are,r_0050_0001__Tape_Utilities,arg0).
+arc(r_0051_0002__are,r_0050_0001__Tape__r_0050_0002__Utilities,arg0).
 arc(r_0051_0002__are,r_0051_0004__instructions,prd2).
 arc(r_0051_0004__instructions,r_0051_0003__generalized,attrib1).
 arc(r_0051_0004__instructions,r_0051_0007__useful,attrib4).
 arc(r_0051_0007__useful,r_0051_0006__particularly,quality1).
-arc(r_0051_0007__useful,r_0051_0009__1401_customers,r_0051_0008__to).
+arc(r_0051_0007__useful,r_0051_0009__1401__r_0051_0010__customers,r_0051_0008__to).
 arc(r_0051_0012__also,r_0051_0013__use,scope).
-arc(r_0051_0013__use,r_0051_0009__1401_customers,arg0).
+arc(r_0051_0013__use,r_0051_0009__1401__r_0051_0010__customers,arg0).
 arc(r_0051_0013__use,r_0051_0017__systems,arg1).
 arc(r_0051_0017__systems,r_0051_0014__larger,attrib1).
-arc(r_0051_0017__systems,r_0051_0015__data_processing,nlyr2).
-arc(r_0052_0002__facilitate,r_0050_0001__Tape_Utilities,arg0).
+arc(r_0051_0017__systems,r_0051_0015__data__r_0051_0016__processing,nlyr2).
+arc(r_0052_0002__facilitate,r_0050_0001__Tape__r_0050_0002__Utilities,arg0).
 arc(r_0052_0002__facilitate,r_0052_0004__transfer,arg1).
 arc(r_0052_0004__transfer,r_0052_0006__data,r_0052_0005__of).
 arc(r_0052_0006__data,r_0052_0014__and,r_0052_0007__between).
 arc(r_0052_0012__tapes,r_0052_0011__magnetic,attrib1).
-arc(r_0052_0014__and,r_0052_0008__IBM_cards,conj1).
+arc(r_0052_0014__and,r_0052_0008__IBM__r_0052_0009__cards,conj1).
 arc(r_0052_0014__and,r_0052_0012__tapes,conj2).
 arc(r_0052_0014__and,r_0052_0015__printers,conj3).
 arc(r_0053_0002__also,r_0053_0008__while_tmp,scope).
-arc(r_0053_0003__provide,r_0050_0001__Tape_Utilities,arg0).
-arc(r_0053_0003__provide,r_0053_0006__1401_processing,r_0053_0004__for_clr).
+arc(r_0053_0003__provide,r_0050_0001__Tape__r_0050_0002__Utilities,arg0).
+arc(r_0053_0003__provide,r_0053_0006__1401__r_0053_0007__processing,r_0053_0004__for_clr).
 arc(r_0053_0008__while_tmp,r_0053_0003__provide,scope).
 arc(r_0053_0008__while_tmp,r_0053_0013__is,restriction).
 arc(r_0053_0010__transfer,r_0053_0012__data,r_0053_0011__of).
 arc(r_0053_0013__is,r_0053_0014__taking,catenative).
 arc(r_0053_0014__taking,r_0053_0010__transfer,arg0).
 arc(r_0053_0014__taking,r_0053_0015__place,arg1).
-arc(z_0050_1006,r_0050_0001__Tape_Utilities,z_0050_1004).
+arc(z_0050_1006,r_0050_0001__Tape__r_0050_0002__Utilities,z_0050_1004).
 
 </pre>
 <br>
 <pre>
-fof(id_50_A_IBM_1401__51_A_IBM_1401__52_A_IBM_1401__53_A_IBM_1401,axiom,
+fof(id__50_A_IBM_1401__51_A_IBM_1401__52_A_IBM_1401__53_A_IBM_1401,axiom,
     ? [CATENATIVEX35,TAPE_UTILITIESX8,TAPE_UTILITIESX20,TAPE_UTILITIESX29,OPERATORX30,CONNX32,EVENTX38,EVENTX37,EVENTX39,EVENTX28,EVENTX19,OPERATORX14,EVENTX18,EVENTX7,ENTITYX31,ENTITYX33,ENTITYX36,ENTITYX34,ENTITYX21,ENTITYX22,ENTITYX23,ENTITYX24,ENTITYX25,ENTITYX27,ENTITYX9,ENTITYX13,ENTITYX15,ENTITYX17,TAPE_UTILITIESX5,ATTRIBX26,ATTRIBX10,ATTRIBX11,ATTRIBX16,QUALITYX12] :
       ( CATENATIVEX35 = EVENTX37
       &amp; isA(EVENTX37,r_0053_0014__taking)
       &amp; arg0(EVENTX37) = ENTITYX33
       &amp; arg1(EVENTX37) = ENTITYX36
-      &amp; isA(TAPE_UTILITIESX5,r_0050_0001__Tape_Utilities)
+      &amp; isA(TAPE_UTILITIESX5,r_0050_0001__Tape__r_0050_0002__Utilities)
       &amp; TAPE_UTILITIESX8 = TAPE_UTILITIESX5
       &amp; isA(ENTITYX9,r_0051_0004__instructions)
       &amp; attrib1(ENTITYX9) = ATTRIBX10
@@ -485,11 +485,11 @@ fof(id_50_A_IBM_1401__51_A_IBM_1401__52_A_IBM_1401__53_A_IBM_1401,axiom,
       &amp; isA(EVENTX18,r_0051_0013__use)
       &amp; arg0(EVENTX18) = ENTITYX13
       &amp; arg1(EVENTX18) = ENTITYX15
-      &amp; isA(ENTITYX13,r_0051_0009__1401_customers)
+      &amp; isA(ENTITYX13,r_0051_0009__1401__r_0051_0010__customers)
       &amp; isA(ENTITYX15,r_0051_0017__systems)
       &amp; attrib1(ENTITYX15) = ATTRIBX16
       &amp; nlyr2(ENTITYX15) = ENTITYX17
-      &amp; isA(ENTITYX17,r_0051_0015__data_processing)
+      &amp; isA(ENTITYX17,r_0051_0015__data__r_0051_0016__processing)
       &amp; TAPE_UTILITIESX20 = TAPE_UTILITIESX5
       &amp; isA(ENTITYX21,r_0052_0004__transfer)
       &amp; r_0052_0005__of(ENTITYX21) = ENTITYX22
@@ -499,12 +499,12 @@ fof(id_50_A_IBM_1401__51_A_IBM_1401__52_A_IBM_1401__53_A_IBM_1401,axiom,
       &amp; conj1(ENTITYX23) = ENTITYX24
       &amp; conj2(ENTITYX23) = ENTITYX25
       &amp; conj3(ENTITYX23) = ENTITYX27
-      &amp; isA(ENTITYX24,r_0052_0008__IBM_cards)
+      &amp; isA(ENTITYX24,r_0052_0008__IBM__r_0052_0009__cards)
       &amp; isA(ENTITYX25,r_0052_0012__tapes)
       &amp; attrib1(ENTITYX25) = ATTRIBX26
       &amp; isA(ENTITYX27,r_0052_0015__printers)
       &amp; TAPE_UTILITIESX29 = TAPE_UTILITIESX5
-      &amp; isA(ENTITYX31,r_0053_0006__1401_processing)
+      &amp; isA(ENTITYX31,r_0053_0006__1401__r_0053_0007__processing)
       &amp; isA(ENTITYX33,r_0053_0010__transfer)
       &amp; r_0053_0011__of(ENTITYX33) = ENTITYX34
       &amp; isA(ENTITYX34,r_0053_0012__data)

@@ -490,12 +490,10 @@ Having annihilated the raider , you can intercept the plummetting life - form an
 </svg>
 <br>
 <pre>
-arc(abs_0006_1022,r_0007_0001__Having,restriction).
-arc(abs_0006_1022,r_0007_0007__can,scope).
 arc(r_0006_0001__As_cnt,r_0006_0004__ascends,restriction).
 arc(r_0006_0001__As_cnt,r_0006_0012__can,scope).
 arc(r_0006_0004__ascends,r_0006_0003__raider,arg0).
-arc(r_0006_0004__ascends,r_0006_0007__life_form,r_0006_0005__with_com).
+arc(r_0006_0004__ascends,r_0006_0007__life__r_0006_0009__form,r_0006_0005__with_com).
 arc(r_0006_0004__ascends,r_0007_0013__form,r_0006_0005__with_com).
 arc(r_0006_0012__can,r_0006_0013__destroy,scope).
 arc(r_0006_0013__destroy,r_0006_0003__raider,arg1).
@@ -507,20 +505,22 @@ arc(r_0006_0019__or,r_0006_0024__bombs,r_0006_0020__with_mnr).
 arc(r_0006_0024__bombs,r_0006_0023__smart,attrib3).
 arc(r_0006_0027__disintegrate,r_0006_0024__bombs,arg0).
 arc(r_0006_0027__disintegrate,z_0006_1017,arg1).
-arc(r_0006_0028__quantificational__everything,r_0006_0027__disintegrate,scope).
-arc(r_0006_0028__quantificational__everything,z_0006_1017,restriction).
+arc(r_0006_0028__quantificational__r_0006_0028__everything,r_0006_0027__disintegrate,scope).
+arc(r_0006_0028__quantificational__r_0006_0028__everything,z_0006_1017,restriction).
+arc(r_0006_1022__abs,r_0007_0001__Having,restriction).
+arc(r_0006_1022__abs,r_0007_0007__can,scope).
 arc(r_0007_0001__Having,r_0007_0002__annihilated,catenative).
 arc(r_0007_0002__annihilated,r_0006_0003__raider,arg1).
 arc(r_0007_0002__annihilated,r_0006_0011__you,arg0).
 arc(r_0007_0007__can,r_0007_0014__and,scope).
-arc(r_0007_0008__intercept,r_0006_0007__life_form,arg1).
+arc(r_0007_0008__intercept,r_0006_0007__life__r_0006_0009__form,arg1).
 arc(r_0007_0008__intercept,r_0006_0011__you,arg0).
 arc(r_0007_0008__intercept,r_0007_0013__form,arg1).
-arc(r_0007_0010__plummetting,r_0006_0007__life_form,arg0).
+arc(r_0007_0010__plummetting,r_0006_0007__life__r_0006_0009__form,arg0).
 arc(r_0007_0010__plummetting,r_0007_0013__form,arg0).
 arc(r_0007_0014__and,r_0007_0008__intercept,conj1).
 arc(r_0007_0014__and,r_0007_0015__set,conj2).
-arc(r_0007_0015__set,r_0006_0007__life_form,arg1).
+arc(r_0007_0015__set,r_0006_0007__life__r_0006_0009__form,arg1).
 arc(r_0007_0015__set,r_0006_0011__you,arg0).
 arc(r_0007_0015__set,r_0007_0013__form,arg1).
 arc(r_0007_0015__set,r_0007_0017__safely,mnr3).
@@ -533,14 +533,14 @@ arc(z_0006_1017,r_0006_0031__sight,r_0006_0030__within).
 </pre>
 <br>
 <pre>
-fof(id_6_A_Planetoid__7_A_Planetoid,axiom,
+fof(id__6_A_Planetoid__7_A_Planetoid,axiom,
     ? [CATENATIVEX24,RAIDERX6,HEARERX10,HEARERX21,RAIDERX25,LIFE_FORM1X29,LIFE_FORM1X32,CONNX23,OPERATORX28,CONJX38,EVENTX37,EVENTX31,EVENTX30,EVENTX27,EVENTX26,CONNX2,OPERATORX19,EVENTX20,QUANTX14,EVENTX18,EVENTX5,ENTITYX36,CONJX8,ENTITYX9,ENTITYX11,ENTITYX13,ENTITYX16,RAIDERX3,LIFE_FORM1X4,ATTRIBX12,ATTRIBX15,QUALITYX33,QUALITYX34,QUALITYX35] :
       ( CATENATIVEX24 = EVENTX26
       &amp; isA(EVENTX26,r_0007_0002__annihilated)
       &amp; arg0(EVENTX26) = HEARERX21
       &amp; arg1(EVENTX26) = RAIDERX25
       &amp; isA(RAIDERX3,r_0006_0003__raider)
-      &amp; isA(LIFE_FORM1X4,r_0006_0007__life_form)
+      &amp; isA(LIFE_FORM1X4,r_0006_0007__life__r_0006_0009__form)
       &amp; RAIDERX6 = RAIDERX3
       &amp; isA(CONJX8,r_0006_0019__or)
       &amp; r_0006_0015__with_mnr(CONJX8) = ENTITYX9
@@ -548,7 +548,7 @@ fof(id_6_A_Planetoid__7_A_Planetoid,axiom,
       &amp; isA(ENTITYX9,r_0006_0017__lasers)
       &amp; genv(ENTITYX9) = HEARERX10
       &amp; HEARERX10 = r_0006_0011__you
-      &amp; isA(QUANTX14,r_0006_0028__quantificational__everything)
+      &amp; isA(QUANTX14,r_0006_0028__quantificational__r_0006_0028__everything)
       &amp; restriction(QUANTX14) = ENTITYX13
       &amp; isA(ENTITYX13,z_0006_1017)
       &amp; attrib2(ENTITYX13) = ATTRIBX15
@@ -587,7 +587,7 @@ fof(id_6_A_Planetoid__7_A_Planetoid,axiom,
       &amp; arg0(EVENTX20) = r_0006_0011__you
       &amp; arg1(EVENTX20) = RAIDERX6
       &amp; z_0006_1007(EVENTX20) = CONJX8
-      &amp; isA(CONNX23,abs_0006_1022)
+      &amp; isA(CONNX23,r_0006_1022__abs)
       &amp; restriction(CONNX23) = EVENTX27
       &amp; isA(EVENTX27,r_0007_0001__Having)
       &amp; catenative(EVENTX27) = CATENATIVEX24

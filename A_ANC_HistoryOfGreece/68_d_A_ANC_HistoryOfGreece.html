@@ -557,8 +557,6 @@ Following this debacle , the Ottomans then allied themselves to Germany in the W
 </svg>
 <br>
 <pre>
-arc(cnt_0111_1032,r_0113_0008__allied,scope).
-arc(cnt_0111_1032,r_0113_0018__losing,restriction).
 arc(r_0111_0003__lost,r_0111_0002__Turks,arg0).
 arc(r_0111_0003__lost,r_0111_0006__war,arg1).
 arc(r_0111_0006__war,r_0111_0005__short,attrib2).
@@ -571,6 +569,8 @@ arc(r_0111_0012__forced,r_0111_0014__relinquish,prd).
 arc(r_0111_0014__relinquish,r_0111_0017__islands,arg1).
 arc(r_0111_0014__relinquish,r_0111_0020__Italians,r_0111_0018__to_clr_dir).
 arc(r_0111_0017__islands,r_0111_0016__Dodecanese,attrib2).
+arc(r_0111_1032__cnt,r_0113_0008__allied,scope).
+arc(r_0111_1032__cnt,r_0113_0018__losing,restriction).
 arc(r_0112_0002__took,r_0112_0001__Greece,arg0).
 arc(r_0112_0002__took,r_0112_0004__opportunity,arg1).
 arc(r_0112_0004__opportunity,r_0111_0003__lost,z_0111_1017).
@@ -584,14 +584,14 @@ arc(r_0112_0015__and,r_0112_0006__absorb,conj1).
 arc(r_0112_0015__and,r_0112_0017__add,conj2).
 arc(r_0112_0017__add,r_0112_0004__opportunity,arg0).
 arc(r_0112_0017__add,r_0112_0018__Macedonia,arg1).
-arc(r_0112_0017__add,r_0112_0021__mainland_territories,r_0112_0019__to_clr_dir).
-arc(r_0112_0021__mainland_territories,r_0112_0001__Greece,genv).
+arc(r_0112_0017__add,r_0112_0021__mainland__r_0112_0022__territories,r_0112_0019__to_clr_dir).
+arc(r_0112_0021__mainland__r_0112_0022__territories,r_0112_0001__Greece,genv).
 arc(r_0113_0008__allied,r_0111_0003__lost,r_0113_0001__Following_tmp).
 arc(r_0113_0008__allied,r_0113_0006__Ottomans,arg0).
 arc(r_0113_0008__allied,r_0113_0006__Ottomans,arg1).
 arc(r_0113_0008__allied,r_0113_0007__then,tmp4).
 arc(r_0113_0008__allied,r_0113_0011__Germany,r_0113_0010__to_clr_com).
-arc(r_0113_0008__allied,r_0113_0014__World_War_I,r_0113_0012__in_tmp).
+arc(r_0113_0008__allied,r_0113_0014__World__r_0113_0015__War_r_0113_0016__I,r_0113_0012__in_tmp).
 arc(r_0113_0018__losing,r_0113_0006__Ottomans,arg0).
 arc(r_0113_0018__losing,r_0113_0020__territory,arg1).
 arc(r_0113_0018__losing,r_0113_0023__defeat,r_0113_0021__with_mnr).
@@ -602,7 +602,7 @@ arc(r_0113_0023__defeat,r_0113_0029__war,r_0113_0027__in).
 </pre>
 <br>
 <pre>
-fof(id_111_A_ANC_HistoryOfGreece__112_A_ANC_HistoryOfGreece__113_A_ANC_HistoryOfGreece,axiom,
+fof(id__111_A_ANC_HistoryOfGreece__112_A_ANC_HistoryOfGreece__113_A_ANC_HistoryOfGreece,axiom,
     ? [CATENATIVEX4,STATEX6,DEBACLEX18,GREECEX25,DEBACLEX29,OTTOMANSX31,CONNX33,EVENTX38,EVENTX39,EVENTX28,CONJX27,EVENTX26,EVENTX23,CONJX14,EVENTX13,EVENTX12,EVENTX11,DEBACLEX3,ENTITYX34,ENTITYX36,ENTITYX37,ENTITYX15,ENTITYX24,ENTITYX19,ENTITYX9,ENTITYX1,ATTRIBX35,ATTRIBX20,ATTRIBX21,ATTRIBX22,ATTRIBX10,ATTRIBX2,QUALITYX30] :
       ( CATENATIVEX4 = EVENTX12
       &amp; isA(EVENTX12,r_0111_0012__forced)
@@ -632,7 +632,7 @@ fof(id_111_A_ANC_HistoryOfGreece__112_A_ANC_HistoryOfGreece__113_A_ANC_HistoryOf
       &amp; DEBACLEX18 = DEBACLEX3
       &amp; isA(ENTITYX19,r_0112_0008__islands)
       &amp; r_0112_0009__of(ENTITYX19) = r_0112_0014__Aegean
-      &amp; isA(ENTITYX24,r_0112_0021__mainland_territories)
+      &amp; isA(ENTITYX24,r_0112_0021__mainland__r_0112_0022__territories)
       &amp; genv(ENTITYX24) = GREECEX25
       &amp; GREECEX25 = r_0112_0001__Greece
       &amp; DEBACLEX29 = DEBACLEX3
@@ -648,7 +648,7 @@ fof(id_111_A_ANC_HistoryOfGreece__112_A_ANC_HistoryOfGreece__113_A_ANC_HistoryOf
       &amp; isA(r_0112_0014__Aegean,r_0112_0014__Aegean)
       &amp; attrib2(r_0112_0014__Aegean) = ATTRIBX20
       &amp; isA(r_0113_0006__Ottomans,r_0113_0006__Ottomans)
-      &amp; isA(r_0113_0014__World_War_I,r_0113_0014__World_War_I)
+      &amp; isA(r_0113_0014__World__r_0113_0015__War_r_0113_0016__I,r_0113_0014__World_r_0113_0015__War_r_0113_0016__I)
       &amp; isA(r_0113_0026__Germans,r_0113_0026__Germans)
       &amp; isA(ATTRIBX2,r_0111_0005__short)
       &amp; isA(ATTRIBX10,r_0111_0016__Dodecanese)
@@ -670,7 +670,7 @@ fof(id_111_A_ANC_HistoryOfGreece__112_A_ANC_HistoryOfGreece__113_A_ANC_HistoryOf
       &amp; isA(EVENTX28,r_0112_0002__took)
       &amp; arg0(EVENTX28) = r_0112_0001__Greece
       &amp; arg1(EVENTX28) = ENTITYX15
-      &amp; isA(CONNX33,cnt_0111_1032)
+      &amp; isA(CONNX33,r_0111_1032__cnt)
       &amp; scope(CONNX33) = EVENTX39
       &amp; isA(EVENTX39,r_0113_0008__allied)
       &amp; r_0113_0001__Following_tmp(EVENTX39) = DEBACLEX29
@@ -678,7 +678,7 @@ fof(id_111_A_ANC_HistoryOfGreece__112_A_ANC_HistoryOfGreece__113_A_ANC_HistoryOf
       &amp; tmp4(EVENTX39) = QUALITYX30
       &amp; arg1(EVENTX39) = OTTOMANSX31
       &amp; r_0113_0010__to_clr_com(EVENTX39) = r_0113_0011__Germany
-      &amp; r_0113_0012__in_tmp(EVENTX39) = r_0113_0014__World_War_I
+      &amp; r_0113_0012__in_tmp(EVENTX39) = r_0113_0014__World__r_0113_0015__War_r_0113_0016__I
       &amp; restriction(CONNX33) = EVENTX38
       &amp; isA(EVENTX38,r_0113_0018__losing)
       &amp; arg0(EVENTX38) = r_0113_0006__Ottomans

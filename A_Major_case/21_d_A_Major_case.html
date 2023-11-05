@@ -241,9 +241,9 @@ arc(r_0034_0012__is,r_0034_0003__scope,arg0).
 arc(r_0034_0012__is,r_0034_0015__greater,prd2).
 arc(r_0034_0012__is,r_0034_0017__view,r_0034_0016__in_rst).
 arc(r_0034_0013__if_cnt_cnd,r_0034_0012__is,scope).
-arc(r_0034_0013__if_cnt_cnd,r_0034_0014__quantificational__anything,restriction).
-arc(r_0034_0014__quantificational__anything,z_0034_1011,restriction).
-arc(r_0034_0014__quantificational__anything,z_0034_1012,scope).
+arc(r_0034_0013__if_cnt_cnd,r_0034_0014__quantificational__r_0034_0014__anything,restriction).
+arc(r_0034_0014__quantificational__r_0034_0014__anything,z_0034_1011,restriction).
+arc(r_0034_0014__quantificational__r_0034_0014__anything,z_0034_1012,scope).
 arc(r_0034_0017__view,r_0034_0020__requirements,r_0034_0018__of).
 arc(r_0034_0020__requirements,r_0034_0023__duty,r_0034_0021__of).
 arc(r_0034_0023__duty,r_0034_0025__candour,r_0034_0024__of).
@@ -252,7 +252,7 @@ arc(z_0034_1012,z_0034_1011,prd2).
 </pre>
 <br>
 <pre>
-fof(id_34_A_Major_case,axiom,
+fof(id__34_A_Major_case,axiom,
     ? [CONNX6,QUANTX10,EVENTX13,EVENTX19,ENTITYX1,ENTITYX9,ENTITYX15,ENTITYX16,ENTITYX17,ENTITYX18,ENTITYX2,ENTITYX4,ATTRIBX14,ATTRIBX3,ATTRIBX5] :
       ( isA(ENTITYX1,r_0034_0003__scope)
       &amp; r_0034_0004__for(ENTITYX1) = ENTITYX2
@@ -278,7 +278,7 @@ fof(id_34_A_Major_case,axiom,
       &amp; prd2(EVENTX19) = ATTRIBX14
       &amp; r_0034_0016__in_rst(EVENTX19) = ENTITYX15
       &amp; restriction(CONNX6) = QUANTX10
-      &amp; isA(QUANTX10,r_0034_0014__quantificational__anything)
+      &amp; isA(QUANTX10,r_0034_0014__quantificational__r_0034_0014__anything)
       &amp; restriction(QUANTX10) = ENTITYX9
       &amp; isA(ENTITYX9,z_0034_1011)
       &amp; scope(QUANTX10) = EVENTX13

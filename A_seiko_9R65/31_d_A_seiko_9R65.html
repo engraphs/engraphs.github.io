@@ -43,15 +43,15 @@ Here is the step-by-step description of the Spring Drive in an easy-to-understan
 <!-- 0041_0002 -->
 <g id="node2" class="node">
 <title>0041_0002</title>
-<ellipse fill="none" stroke="black" cx="147.59" cy="-279" rx="27" ry="18"/>
-<text text-anchor="middle" x="147.59" y="-275.3" font-family="fixed" font-size="14.00">is</text>
+<ellipse fill="none" stroke="black" cx="159.59" cy="-279" rx="27" ry="18"/>
+<text text-anchor="middle" x="159.59" y="-275.3" font-family="fixed" font-size="14.00">is</text>
 </g>
 <!-- 0041_0002&#45;&gt;0041_0001 -->
 <g id="edge1" class="edge">
 <title>0041_0002&#45;&gt;0041_0001</title>
-<path fill="none" stroke="black" d="M138.79,-261.8C135.73,-255.95 132.37,-249.24 129.59,-243 126.23,-235.45 122.91,-227.11 120.01,-219.43"/>
-<polygon fill="black" stroke="black" points="123.22,-218.02 116.47,-209.86 116.65,-220.45 123.22,-218.02"/>
-<text text-anchor="middle" x="155.59" y="-231.8" font-family="fixed" font-size="14.00">[prd21]</text>
+<path fill="none" stroke="black" d="M140.02,-266.37C131.76,-260.43 122.85,-252.46 117.59,-243 113.79,-236.15 111.78,-227.99 110.79,-220.27"/>
+<polygon fill="black" stroke="black" points="114.27,-219.87 109.99,-210.18 107.29,-220.42 114.27,-219.87"/>
+<text text-anchor="middle" x="155.59" y="-231.8" font-family="fixed" font-size="14.00">[prd2][tpc]</text>
 </g>
 <!-- 0041_0005 -->
 <g id="node3" class="node">
@@ -62,9 +62,9 @@ Here is the step-by-step description of the Spring Drive in an easy-to-understan
 <!-- 0041_0002&#45;&gt;0041_0005 -->
 <g id="edge2" class="edge">
 <title>0041_0002&#45;&gt;0041_0005</title>
-<path fill="none" stroke="black" d="M162.14,-263.65C168.29,-257.43 175.43,-249.99 181.59,-243 188.58,-235.08 195.89,-226.15 202.32,-218.06"/>
-<polygon fill="black" stroke="black" points="205.23,-220.02 208.65,-210 199.72,-215.7 205.23,-220.02"/>
-<text text-anchor="middle" x="215.09" y="-231.8" font-family="fixed" font-size="14.00">[arg0]</text>
+<path fill="none" stroke="black" d="M175.06,-263.79C181.22,-257.71 188.13,-250.33 193.59,-243 199.15,-235.55 204.38,-226.87 208.78,-218.86"/>
+<polygon fill="black" stroke="black" points="211.95,-220.35 213.54,-209.88 205.77,-217.08 211.95,-220.35"/>
+<text text-anchor="middle" x="224.09" y="-231.8" font-family="fixed" font-size="14.00">[arg0]</text>
 </g>
 <!-- 0041_0004 -->
 <g id="node4" class="node">
@@ -122,30 +122,30 @@ Here is the step-by-step description of the Spring Drive in an easy-to-understan
 </svg>
 <br>
 <pre>
-arc(r_0041_0002__is,r_0041_0001__Here,prd21).
+arc(r_0041_0002__is,r_0041_0001__Here,prd2_tpc1).
 arc(r_0041_0002__is,r_0041_0005__description,arg0).
 arc(r_0041_0005__description,r_0041_0004__step_by_step,attrib2).
-arc(r_0041_0005__description,r_0041_0008__Spring_Drive,r_0041_0006__of).
+arc(r_0041_0005__description,r_0041_0008__Spring__r_0041_0009__Drive,r_0041_0006__of).
 arc(r_0041_0005__description,r_0041_0013__manner,r_0041_0010__in).
 arc(r_0041_0013__manner,r_0041_0012__easy_to_understand,attrib2).
 
 </pre>
 <br>
 <pre>
-fof(id_41_A_seiko_9R65,axiom,
+fof(id__41_A_seiko_9R65,axiom,
     ? [EVENTX6,QUALITYX1,ENTITYX2,ENTITYX4,ATTRIBX3,ATTRIBX5] :
       ( isA(QUALITYX1,r_0041_0001__Here)
       &amp; isA(ENTITYX2,r_0041_0005__description)
       &amp; attrib2(ENTITYX2) = ATTRIBX3
-      &amp; r_0041_0006__of(ENTITYX2) = r_0041_0008__Spring_Drive
+      &amp; r_0041_0006__of(ENTITYX2) = r_0041_0008__Spring__r_0041_0009__Drive
       &amp; r_0041_0010__in(ENTITYX2) = ENTITYX4
       &amp; isA(ENTITYX4,r_0041_0013__manner)
       &amp; attrib2(ENTITYX4) = ATTRIBX5
       &amp; isA(ATTRIBX3,r_0041_0004__step_by_step)
       &amp; isA(ATTRIBX5,r_0041_0012__easy_to_understand)
-      &amp; isA(r_0041_0008__Spring_Drive,r_0041_0008__Spring_Drive)
+      &amp; isA(r_0041_0008__Spring__r_0041_0009__Drive,r_0041_0008__Spring_r_0041_0009__Drive)
       &amp; isA(EVENTX6,r_0041_0002__is)
-      &amp; prd21(EVENTX6) = QUALITYX1
+      &amp; prd2_tpc1(EVENTX6) = QUALITYX1
       &amp; arg0(EVENTX6) = ENTITYX2 ) ).
 
 
@@ -153,11 +153,11 @@ fof(id_41_A_seiko_9R65,axiom,
 <br>
 <svg xmlns:svg="http://www.w3.org/2000/svg" xmlns:exslt="http://exslt.org/common" width="1680" height="427" viewBox="-16.80 -2.135 2100.00 533.75">
 <text x="840.72" y="51" text-anchor="middle">IP-MAT</text>
-<text x="61.08" y="112" text-anchor="middle">ADVP-PRD2</text>
+<text x="61.56" y="112" text-anchor="middle">ADVP-PRD2-TPC</text>
 <text x="60.48" y="173" text-anchor="middle">ADV</text>
 <text x="60.48" y="234" text-anchor="middle">Here</text>
 <line x1="60.48" y1="183" x2="60.48" y2="214" style="stroke:#000000;stroke-width:2;"/>
-<line x1="61.08" y1="122" x2="60" y2="153" style="stroke:#000000;stroke-width:2;"/>
+<line x1="61.56" y1="122" x2="60" y2="153" style="stroke:#000000;stroke-width:2;"/>
 <line x1="840.72" y1="61" x2="60" y2="92" style="stroke:#000000;stroke-width:2;"/>
 <text x="180.36" y="112" text-anchor="middle">BEP</text>
 <text x="180.36" y="173" text-anchor="middle">is</text>
@@ -228,7 +228,7 @@ fof(id_41_A_seiko_9R65,axiom,
 </svg>
 <br>
 <pre>
-( (IP-MAT (ADVP-PRD2 (ADV Here;{here}))
+( (IP-MAT (ADVP-PRD2-TPC (ADV Here;{here}))
           (BEP is;{be})
           (NP-SBJ (D the;{the})
                   (ADJP (ADJ step-by-step;{step_by_step}))

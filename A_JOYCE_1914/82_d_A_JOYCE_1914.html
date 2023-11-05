@@ -715,9 +715,9 @@ arc(r_0183_0005__but,r_0183_0002__too,conj1).
 arc(r_0183_0005__but,r_0183_0014__and,conj2).
 arc(r_0183_0007__was,r_0183_0009__sound,arg0).
 arc(r_0183_0007__was,r_0183_0012__house,r_0183_0010__in_loc).
-arc(r_0183_0008__quantificational__no,r_0183_0007__was,scope).
-arc(r_0183_0008__quantificational__no,r_0183_0009__sound,restriction).
-arc(r_0183_0014__and,r_0183_0008__quantificational__no,conj1).
+arc(r_0183_0008__quantificational__r_0183_0008__no,r_0183_0007__was,scope).
+arc(r_0183_0008__quantificational__r_0183_0008__no,r_0183_0009__sound,restriction).
+arc(r_0183_0014__and,r_0183_0008__quantificational__r_0183_0008__no,conj1).
 arc(r_0183_0014__and,r_0183_0016__knew,conj2).
 arc(r_0183_0016__knew,r_0183_0001__I,arg0).
 arc(r_0183_0016__knew,r_0183_0021__was,arg1).
@@ -740,8 +740,10 @@ arc(r_0183_0034__and,r_0183_0037__death,r_0183_0036__in).
 arc(r_0183_0041__chalice,r_0183_0040__idle,attrib2).
 arc(r_0183_0041__chalice,r_0183_0044__breast,r_0183_0042__on).
 arc(r_0183_0044__breast,r_0183_0020__priest,genv).
+arc(r_0183_1037__utterance,r_0184_0012__So,part2).
+arc(r_0183_1037__utterance,z_0183_1044,part1).
+arc(r_0184_0002__resumed,r_0183_1037__utterance,arg1).
 arc(r_0184_0002__resumed,r_0184_0001__Eliza,arg0).
-arc(r_0184_0002__resumed,utterance_0183_1037,arg1).
 arc(r_0184_0006__and,r_0184_0005__Wide_awake,conj1).
 arc(r_0184_0006__and,r_0184_0007__laughing_like,conj2).
 arc(r_0184_0007__laughing_like,r_0183_0020__priest,r_0184_0008__to).
@@ -760,14 +762,12 @@ arc(r_0184_0028__was,r_0184_0030__gone,catenative).
 arc(r_0184_0030__gone,r_0184_0029__something,arg0).
 arc(r_0184_0030__gone,r_0184_0031__wrong,prd2).
 arc(r_0184_0031__wrong,r_0183_0020__priest,r_0184_0032__with).
-arc(utterance_0183_1037,r_0184_0012__So,part2).
-arc(utterance_0183_1037,z_0183_1044,part1).
 arc(z_0183_1044,r_0184_0006__and,attrib1).
 
 </pre>
 <br>
 <pre>
-fof(id_183_A_JOYCE_1914__184_A_JOYCE_1914,axiom,
+fof(id__183_A_JOYCE_1914__184_A_JOYCE_1914,axiom,
     ? [STATEX10,CATENATIVEX13,CATENATIVEX18,STATEX35,STATEX52,STATEX55,CATENATIVEX56,SPEAKERX9,PRIESTX16,PRIESTX19,PRIESTX27,PRIESTX43,PERSONSX51,PRIESTX58,EVENTX64,CONJX63,OPERATORX46,OPERATORX48,CONNX49,EVENTX62,EVENTX61,EVENTX60,EVENTX59,EVENTX50,EVENTX45,CONJX34,CONJX33,EVENTX32,EVENTX31,CONNX17,EVENTX29,EVENTX28,EVENTX30,QUANTX6,EVENTX8,OPERATORX3,EVENTX4,PRIESTX11,ENTITYX15,ENTITYX24,ENTITYX26,ENTITYX21,ENTITYX5,ENTITYX7,ATTRIBX57,ATTRIBX40,ATTRIBX41,ATTRIBX42,ATTRIBX20,ATTRIBX25,ATTRIBX22,ATTRIBX23,ATTRIBX12,QUALITYX47,QUALITYX14] :
       ( STATEX10 = EVENTX31
       &amp; isA(EVENTX31,r_0183_0021__was)
@@ -789,7 +789,7 @@ fof(id_183_A_JOYCE_1914__184_A_JOYCE_1914,axiom,
       &amp; prd(EVENTX28) = ATTRIBX20
       &amp; abs(EVENTX28) = ENTITYX24
       &amp; STATEX35 = CONJX63
-      &amp; isA(CONJX63,utterance_0183_1037)
+      &amp; isA(CONJX63,r_0183_1037__utterance)
       &amp; part1(CONJX63) = EVENTX45
       &amp; isA(EVENTX45,z_0183_1044)
       &amp; attrib1(EVENTX45) = ATTRIBX40
@@ -866,7 +866,7 @@ fof(id_183_A_JOYCE_1914__184_A_JOYCE_1914,axiom,
       &amp; conj2(CONJX34) = CONJX33
       &amp; isA(CONJX33,r_0183_0014__and)
       &amp; conj1(CONJX33) = QUANTX6
-      &amp; isA(QUANTX6,r_0183_0008__quantificational__no)
+      &amp; isA(QUANTX6,r_0183_0008__quantificational__r_0183_0008__no)
       &amp; restriction(QUANTX6) = ENTITYX5
       &amp; isA(ENTITYX5,r_0183_0009__sound)
       &amp; scope(QUANTX6) = EVENTX8

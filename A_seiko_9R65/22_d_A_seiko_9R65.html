@@ -156,20 +156,20 @@ That is the essence of the Spring Drive .
 arc(r_0029_0002__power,r_0029_0005__mainspring,r_0029_0003__of).
 arc(r_0029_0006__is,r_0029_0007__regulated,catenative).
 arc(r_0029_0007__regulated,r_0029_0002__power,arg1).
-arc(r_0029_0007__regulated,r_0029_0010__control,arg0_by_lgs).
+arc(r_0029_0007__regulated,r_0029_0010__control,arg0__r_0029_0008__by_lgs).
 arc(r_0029_0010__control,r_0029_0009__electronic,attrib1).
 arc(r_0030_0002__is,r_0029_0007__regulated,arg0).
 arc(r_0030_0002__is,r_0030_0004__essence,prd2).
-arc(r_0030_0004__essence,r_0030_0007__Spring_Drive,r_0030_0005__of).
+arc(r_0030_0004__essence,r_0030_0007__Spring__r_0030_0008__Drive,r_0030_0005__of).
 
 </pre>
 <br>
 <pre>
-fof(id_29_A_seiko_9R65__30_A_seiko_9R65,axiom,
+fof(id__29_A_seiko_9R65__30_A_seiko_9R65,axiom,
     ? [REGULATIONX3,REGULATIONX8,EVENTX10,EVENTX7,REGULATIONX6,ENTITYX9,ENTITYX1,ENTITYX4,ENTITYX2,ATTRIBX5] :
       ( REGULATIONX3 = REGULATIONX6
       &amp; isA(REGULATIONX6,r_0029_0007__regulated)
-      &amp; arg0_by_lgs(REGULATIONX6) = ENTITYX4
+      &amp; arg0__r_0029_0008__by_lgs(REGULATIONX6) = ENTITYX4
       &amp; arg1(REGULATIONX6) = ENTITYX1
       &amp; isA(ENTITYX1,r_0029_0002__power)
       &amp; r_0029_0003__of(ENTITYX1) = ENTITYX2
@@ -178,9 +178,9 @@ fof(id_29_A_seiko_9R65__30_A_seiko_9R65,axiom,
       &amp; attrib1(ENTITYX4) = ATTRIBX5
       &amp; REGULATIONX8 = REGULATIONX6
       &amp; isA(ENTITYX9,r_0030_0004__essence)
-      &amp; r_0030_0005__of(ENTITYX9) = r_0030_0007__Spring_Drive
+      &amp; r_0030_0005__of(ENTITYX9) = r_0030_0007__Spring__r_0030_0008__Drive
       &amp; isA(ATTRIBX5,r_0029_0009__electronic)
-      &amp; isA(r_0030_0007__Spring_Drive,r_0030_0007__Spring_Drive)
+      &amp; isA(r_0030_0007__Spring__r_0030_0008__Drive,r_0030_0007__Spring_r_0030_0008__Drive)
       &amp; isA(EVENTX7,r_0029_0006__is)
       &amp; catenative(EVENTX7) = REGULATIONX3
       &amp; isA(EVENTX10,r_0030_0002__is)

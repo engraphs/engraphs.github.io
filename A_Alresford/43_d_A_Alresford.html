@@ -221,26 +221,26 @@ On several occasions , floodwater poured down the Dean seeking the river , and f
 </svg>
 <br>
 <pre>
-arc(cnt_0049_1004,r_0049_0006__poured,scope).
-arc(cnt_0049_1004,r_0049_0010__seeking,restriction).
 arc(r_0049_0003__occasions,r_0049_0002__several,attrib1).
 arc(r_0049_0006__poured,r_0049_0003__occasions,r_0049_0001__On_tmp).
 arc(r_0049_0006__poured,r_0049_0005__floodwater,arg0).
 arc(r_0049_0006__poured,r_0049_0009__Dean,r_0049_0007__down_clr_dir).
 arc(r_0049_0010__seeking,r_0049_0005__floodwater,arg0).
 arc(r_0049_0010__seeking,r_0049_0012__river,arg1).
-arc(r_0049_0014__and,cnt_0049_1004,conj1).
 arc(r_0049_0014__and,r_0049_0015__found,conj2).
+arc(r_0049_0014__and,r_0049_1004__cnt,conj1).
 arc(r_0049_0015__found,r_0049_0003__occasions,r_0049_0001__On_tmp).
 arc(r_0049_0015__found,r_0049_0005__floodwater,arg0).
 arc(r_0049_0015__found,r_0049_0017__cellars,arg1).
 arc(r_0049_0017__cellars,r_0049_0020__terrace,r_0049_0018__of).
 arc(r_0049_0020__terrace,r_0049_0019__our,genv).
+arc(r_0049_1004__cnt,r_0049_0006__poured,scope).
+arc(r_0049_1004__cnt,r_0049_0010__seeking,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_49_A_Alresford,axiom,
+fof(id__49_A_Alresford,axiom,
     ? [CONJX12,EVENTX11,CONNX5,EVENTX7,EVENTX8,ENTITYX1,ENTITYX3,ENTITYX9,ENTITYX10,ENTITYX6,ATTRIBX2] :
       ( isA(ENTITYX1,r_0049_0003__occasions)
       &amp; attrib1(ENTITYX1) = ATTRIBX2
@@ -254,7 +254,7 @@ fof(id_49_A_Alresford,axiom,
       &amp; isA(r_0049_0009__Dean,r_0049_0009__Dean)
       &amp; isA(CONJX12,r_0049_0014__and)
       &amp; conj1(CONJX12) = CONNX5
-      &amp; isA(CONNX5,cnt_0049_1004)
+      &amp; isA(CONNX5,r_0049_1004__cnt)
       &amp; scope(CONNX5) = EVENTX8
       &amp; isA(EVENTX8,r_0049_0006__poured)
       &amp; r_0049_0001__On_tmp(EVENTX8) = ENTITYX1

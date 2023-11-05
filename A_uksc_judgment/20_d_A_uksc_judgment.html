@@ -227,14 +227,14 @@ Government business managers meet to select the Bills to be included , usually a
 </svg>
 <br>
 <pre>
-arc(r_0034_0004__meet,r_0034_0001__Government_business_managers,arg0).
+arc(r_0034_0004__meet,r_0034_0001__Government__r_0034_0002__business_r_0034_0003__managers,arg0).
 arc(r_0034_0004__meet,r_0034_0006__select,arg1).
-arc(r_0034_0006__select,r_0034_0001__Government_business_managers,arg0).
+arc(r_0034_0006__select,r_0034_0001__Government__r_0034_0002__business_r_0034_0003__managers,arg0).
 arc(r_0034_0006__select,r_0034_0010__be,arg1).
 arc(r_0034_0010__be,r_0034_0011__included,catenative).
 arc(r_0034_0011__included,r_0034_0008__Bills,arg1).
-arc(r_0034_0011__included,r_0034_0015__discussion,r_0034_0013__usually_after_mnr).
-arc(r_0034_0015__discussion,r_0034_0018__Prime_Minister,r_0034_0016__with).
+arc(r_0034_0011__included,r_0034_0015__discussion,r_0034_0013__usually__r_0034_0014__after_mnr).
+arc(r_0034_0015__discussion,r_0034_0018__Prime__r_0034_0019__Minister,r_0034_0016__with).
 arc(r_0034_0021__and,r_0034_0004__meet,conj1).
 arc(r_0034_0021__and,r_0034_0023__is,conj2).
 arc(r_0034_0023__is,r_0034_0024__asked,catenative).
@@ -246,7 +246,7 @@ arc(r_0034_0026__endorse,r_0034_0028__decisions,arg1).
 </pre>
 <br>
 <pre>
-fof(id_34_A_uksc_judgment,axiom,
+fof(id__34_A_uksc_judgment,axiom,
     ? [STATEX2,STATEX4,CATENATIVEX5,CATENATIVEX12,STATEX14,CONJX19,EVENTX18,EVENTX17,EVENTX16,EVENTX11,EVENTX10,EVENTX9,EVENTX8,ENTITYX15,ENTITYX1,ENTITYX3,ENTITYX7] :
       ( STATEX2 = EVENTX10
       &amp; isA(EVENTX10,r_0034_0006__select)
@@ -258,7 +258,7 @@ fof(id_34_A_uksc_judgment,axiom,
       &amp; CATENATIVEX5 = EVENTX8
       &amp; isA(EVENTX8,r_0034_0011__included)
       &amp; arg1(EVENTX8) = ENTITYX3
-      &amp; r_0034_0013__usually_after_mnr(EVENTX8) = ENTITYX7
+      &amp; r_0034_0013__usually__r_0034_0014__after_mnr(EVENTX8) = ENTITYX7
       &amp; CATENATIVEX12 = EVENTX17
       &amp; isA(EVENTX17,r_0034_0024__asked)
       &amp; arg2(EVENTX17) = r_0034_0022__Cabinet
@@ -267,12 +267,12 @@ fof(id_34_A_uksc_judgment,axiom,
       &amp; isA(EVENTX16,r_0034_0026__endorse)
       &amp; arg0(EVENTX16) = r_0034_0022__Cabinet
       &amp; arg1(EVENTX16) = ENTITYX15
-      &amp; isA(ENTITYX1,r_0034_0001__Government_business_managers)
+      &amp; isA(ENTITYX1,r_0034_0001__Government__r_0034_0002__business_r_0034_0003__managers)
       &amp; isA(ENTITYX3,r_0034_0008__Bills)
       &amp; isA(ENTITYX7,r_0034_0015__discussion)
-      &amp; r_0034_0016__with(ENTITYX7) = r_0034_0018__Prime_Minister
+      &amp; r_0034_0016__with(ENTITYX7) = r_0034_0018__Prime__r_0034_0019__Minister
       &amp; isA(ENTITYX15,r_0034_0028__decisions)
-      &amp; isA(r_0034_0018__Prime_Minister,r_0034_0018__Prime_Minister)
+      &amp; isA(r_0034_0018__Prime__r_0034_0019__Minister,r_0034_0018__Prime_r_0034_0019__Minister)
       &amp; isA(CONJX19,r_0034_0021__and)
       &amp; conj1(CONJX19) = EVENTX11
       &amp; isA(EVENTX11,r_0034_0004__meet)

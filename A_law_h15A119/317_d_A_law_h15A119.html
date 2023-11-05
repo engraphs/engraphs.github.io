@@ -221,31 +221,31 @@ A business operator who falls under any of the following items shall be sentence
 </svg>
 <br>
 <pre>
-arc(r_0317_0005__falls,r_0317_0002__business_operator,arg0).
+arc(r_0317_0005__falls,r_0317_0002__business__r_0317_0003__operator,arg0).
 arc(r_0317_0005__falls,z_0317_1006,r_0317_0006__under_loc).
-arc(r_0317_0007__quantificational__any,r_0317_0005__falls,scope).
-arc(r_0317_0007__quantificational__any,z_0317_1006,restriction).
+arc(r_0317_0007__quantificational__r_0317_0007__any,r_0317_0005__falls,scope).
+arc(r_0317_0007__quantificational__r_0317_0007__any,z_0317_1006,restriction).
 arc(r_0317_0011__items,r_0317_0010__following,attrib2).
 arc(r_0317_0012__shall,r_0317_0013__be,scope).
 arc(r_0317_0013__be,r_0317_0014__sentenced,catenative).
-arc(r_0317_0014__sentenced,r_0317_0002__business_operator,arg1).
+arc(r_0317_0014__sentenced,r_0317_0002__business__r_0317_0003__operator,arg1).
 arc(r_0317_0014__sentenced,r_0317_0018__fine,r_0317_0015__to_clr).
 arc(r_0317_0018__fine,r_0317_0017__civil,attrib2).
 arc(r_0317_0018__fine,r_0317_0024__yen,r_0317_0019__of).
-arc(r_0317_0020__not_more,r_0317_0023__100,000,r_0317_0022__than).
-arc(r_0317_0024__yen,r_0317_0020__not_more,attrib1).
+arc(r_0317_0020__not__r_0317_0021__more,r_0317_0023__100,000,r_0317_0022__than).
+arc(r_0317_0024__yen,r_0317_0020__not__r_0317_0021__more,attrib1).
 arc(z_0317_1006,r_0317_0011__items,r_0317_0008__of).
 
 </pre>
 <br>
 <pre>
-fof(id_317_A_law_h15A119,axiom,
+fof(id__317_A_law_h15A119,axiom,
     ? [CATENATIVEX9,OPERATORX8,EVENTX17,EVENTX16,QUANTX3,EVENTX7,ENTITYX1,ENTITYX11,ENTITYX13,ENTITYX15,ENTITYX2,ENTITYX4,ATTRIBX12,ATTRIBX14,ATTRIBX5] :
       ( CATENATIVEX9 = EVENTX16
       &amp; isA(EVENTX16,r_0317_0014__sentenced)
       &amp; arg1(EVENTX16) = ENTITYX1
       &amp; r_0317_0015__to_clr(EVENTX16) = ENTITYX11
-      &amp; isA(QUANTX3,r_0317_0007__quantificational__any)
+      &amp; isA(QUANTX3,r_0317_0007__quantificational__r_0317_0007__any)
       &amp; restriction(QUANTX3) = ENTITYX2
       &amp; isA(ENTITYX2,z_0317_1006)
       &amp; r_0317_0008__of(ENTITYX2) = ENTITYX4
@@ -253,7 +253,7 @@ fof(id_317_A_law_h15A119,axiom,
       &amp; isA(EVENTX7,r_0317_0005__falls)
       &amp; arg0(EVENTX7) = ENTITYX1
       &amp; r_0317_0006__under_loc(EVENTX7) = ENTITYX2
-      &amp; isA(ENTITYX1,r_0317_0002__business_operator)
+      &amp; isA(ENTITYX1,r_0317_0002__business__r_0317_0003__operator)
       &amp; isA(ENTITYX4,r_0317_0011__items)
       &amp; attrib2(ENTITYX4) = ATTRIBX5
       &amp; isA(ENTITYX11,r_0317_0018__fine)
@@ -264,7 +264,7 @@ fof(id_317_A_law_h15A119,axiom,
       &amp; isA(ENTITYX15,r_0317_0023__100,000)
       &amp; isA(ATTRIBX5,r_0317_0010__following)
       &amp; isA(ATTRIBX12,r_0317_0017__civil)
-      &amp; isA(ATTRIBX14,r_0317_0020__not_more)
+      &amp; isA(ATTRIBX14,r_0317_0020__not__r_0317_0021__more)
       &amp; r_0317_0022__than(ATTRIBX14) = ENTITYX15
       &amp; isA(OPERATORX8,r_0317_0012__shall)
       &amp; scope(OPERATORX8) = EVENTX17

@@ -286,18 +286,17 @@ They are required to show why they should not be bound over for disturbing the p
 </svg>
 <br>
 <pre>
-arc(question_0062_1006,r_0062_0006__why,scope).
 arc(r_0062_0002__are,r_0062_0003__required,catenative).
 arc(r_0062_0003__required,r_0062_0001__They,arg2).
 arc(r_0062_0003__required,r_0062_0005__show,arg1).
-arc(r_0062_0005__show,question_0062_1006,arg1).
 arc(r_0062_0005__show,r_0062_0001__They,arg0).
+arc(r_0062_0005__show,r_0062_1006__question,arg1).
 arc(r_0062_0006__why,r_0062_0008__should,scope).
 arc(r_0062_0008__should,r_0062_0009__not,scope).
 arc(r_0062_0009__not,r_0062_0010__be,scope).
 arc(r_0062_0010__be,r_0062_0013__for_cnt,catenative).
-arc(r_0062_0011__bound_over,r_0062_0007__they,arg1).
-arc(r_0062_0013__for_cnt,r_0062_0011__bound_over,scope).
+arc(r_0062_0011__bound__r_0062_0012__over,r_0062_0007__they,arg1).
+arc(r_0062_0013__for_cnt,r_0062_0011__bound__r_0062_0012__over,scope).
 arc(r_0062_0013__for_cnt,r_0062_0017__and,restriction).
 arc(r_0062_0014__disturbing,r_0062_0007__they,arg0).
 arc(r_0062_0014__disturbing,r_0062_0016__peace,arg1).
@@ -306,11 +305,12 @@ arc(r_0062_0017__and,r_0062_0019__inciting,conj2).
 arc(r_0062_0019__inciting,r_0062_0007__they,arg0).
 arc(r_0062_0019__inciting,r_0062_0021__breach,arg1).
 arc(r_0062_0021__breach,r_0062_0024__peace,r_0062_0022__of).
+arc(r_0062_1006__question,r_0062_0006__why,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_62_A_lob_A02,axiom,
+fof(id__62_A_lob_A02,axiom,
     ? [CATENATIVEX1,STATEX3,STATEX4,CATENATIVEX10,EVENTX23,EVENTX22,EVENTX21,OPERATORX6,OPERATORX7,OPERATORX8,OPERATORX9,EVENTX20,CONNX12,CONJX18,EVENTX17,EVENTX14,EVENTX19,ENTITYX15,ENTITYX16,ENTITYX13] :
       ( CATENATIVEX1 = EVENTX22
       &amp; isA(EVENTX22,r_0062_0003__required)
@@ -321,7 +321,7 @@ fof(id_62_A_lob_A02,axiom,
       &amp; arg0(EVENTX21) = r_0062_0001__They
       &amp; arg1(EVENTX21) = STATEX4
       &amp; STATEX4 = OPERATORX6
-      &amp; isA(OPERATORX6,question_0062_1006)
+      &amp; isA(OPERATORX6,r_0062_1006__question)
       &amp; scope(OPERATORX6) = OPERATORX7
       &amp; isA(OPERATORX7,r_0062_0006__why)
       &amp; scope(OPERATORX7) = OPERATORX8
@@ -334,7 +334,7 @@ fof(id_62_A_lob_A02,axiom,
       &amp; CATENATIVEX10 = CONNX12
       &amp; isA(CONNX12,r_0062_0013__for_cnt)
       &amp; scope(CONNX12) = EVENTX19
-      &amp; isA(EVENTX19,r_0062_0011__bound_over)
+      &amp; isA(EVENTX19,r_0062_0011__bound__r_0062_0012__over)
       &amp; arg1(EVENTX19) = r_0062_0007__they
       &amp; restriction(CONNX12) = CONJX18
       &amp; isA(CONJX18,r_0062_0017__and)

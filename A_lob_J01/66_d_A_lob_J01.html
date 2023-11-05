@@ -345,7 +345,7 @@ The principal difficulty encountered by the author , in determining partial mola
 <pre>
 arc(r_0066_0003__difficulty,r_0066_0002__principal,attrib2).
 arc(r_0066_0004__encountered,r_0066_0003__difficulty,arg1).
-arc(r_0066_0004__encountered,r_0066_0007__author,arg0_by_lgs).
+arc(r_0066_0004__encountered,r_0066_0007__author,arg0__r_0066_0005__by_lgs).
 arc(r_0066_0010__determining,r_0066_0014__energies,arg1).
 arc(r_0066_0010__determining,r_0066_0018__cells,r_0066_0015__by_mnr).
 arc(r_0066_0014__energies,r_0066_0011__partial,attrib1).
@@ -361,23 +361,23 @@ arc(r_0066_0027__etc,r_0066_0024__UO_bsub_2_ast__bsub_,conj1).
 arc(r_0066_0027__etc,r_0066_0026__MnO,conj2).
 arc(r_0066_0028__was,r_0066_0003__difficulty,arg0).
 arc(r_0066_0028__was,r_0066_0010__determining,r_0066_0009__in_cnt).
-arc(r_0066_0028__was,r_0066_0029__vapour_phase_transfer,prd2).
-arc(r_0066_0029__vapour_phase_transfer,r_0066_0033__oxygen,r_0066_0032__of).
-arc(r_0066_0029__vapour_phase_transfer,r_0066_0036__impurities,r_0066_0034__by).
+arc(r_0066_0028__was,r_0066_0029__vapour__r_0066_0030__phase_r_0066_0031__transfer,prd2).
+arc(r_0066_0029__vapour__r_0066_0030__phase_r_0066_0031__transfer,r_0066_0033__oxygen,r_0066_0032__of).
+arc(r_0066_0029__vapour__r_0066_0030__phase_r_0066_0031__transfer,r_0066_0036__impurities,r_0066_0034__by).
 arc(r_0066_0036__impurities,r_0066_0035__carbonaceous,attrib1).
-arc(r_0066_0036__impurities,r_0066_0039__blanket_gas,r_0066_0037__in).
+arc(r_0066_0036__impurities,r_0066_0039__blanket__r_0066_0040__gas,r_0066_0037__in).
 
 </pre>
 <br>
 <pre>
-fof(id_66_A_lob_J01,axiom,
+fof(id__66_A_lob_J01,axiom,
     ? [EVENTX5,EVENTX25,EVENTX19,EVENTX4,ENTITYX1,ENTITYX20,ENTITYX21,ENTITYX22,ENTITYX24,ENTITYX8,ENTITYX12,ENTITYX15,ENTITYX18,ENTITYX3,ATTRIBX23,ATTRIBX13,ATTRIBX14,ATTRIBX16,ATTRIBX9,ATTRIBX10,ATTRIBX11,ATTRIBX2,QUALITYX17] :
       ( EVENTX5 = EVENTX19
       &amp; isA(EVENTX19,r_0066_0010__determining)
       &amp; arg1(EVENTX19) = ENTITYX8
       &amp; r_0066_0015__by_mnr(EVENTX19) = ENTITYX12
       &amp; isA(EVENTX4,r_0066_0004__encountered)
-      &amp; arg0_by_lgs(EVENTX4) = ENTITYX3
+      &amp; arg0__r_0066_0005__by_lgs(EVENTX4) = ENTITYX3
       &amp; arg1(EVENTX4) = ENTITYX1
       &amp; isA(ENTITYX1,r_0066_0003__difficulty)
       &amp; attrib2(ENTITYX1) = ATTRIBX2
@@ -396,14 +396,14 @@ fof(id_66_A_lob_J01,axiom,
       &amp; isA(ENTITYX18,r_0066_0027__etc)
       &amp; conj1(ENTITYX18) = r_0066_0024__UO_bsub_2_ast__bsub_
       &amp; conj2(ENTITYX18) = r_0066_0026__MnO
-      &amp; isA(ENTITYX20,r_0066_0029__vapour_phase_transfer)
+      &amp; isA(ENTITYX20,r_0066_0029__vapour__r_0066_0030__phase_r_0066_0031__transfer)
       &amp; r_0066_0032__of(ENTITYX20) = ENTITYX21
       &amp; r_0066_0034__by(ENTITYX20) = ENTITYX22
       &amp; isA(ENTITYX21,r_0066_0033__oxygen)
       &amp; isA(ENTITYX22,r_0066_0036__impurities)
       &amp; attrib1(ENTITYX22) = ATTRIBX23
       &amp; r_0066_0037__in(ENTITYX22) = ENTITYX24
-      &amp; isA(ENTITYX24,r_0066_0039__blanket_gas)
+      &amp; isA(ENTITYX24,r_0066_0039__blanket__r_0066_0040__gas)
       &amp; isA(ATTRIBX2,r_0066_0002__principal)
       &amp; isA(ATTRIBX9,r_0066_0011__partial)
       &amp; isA(ATTRIBX10,r_0066_0012__molal)

@@ -279,30 +279,30 @@ But that was totally to ignore whatever else Parliament might have wanted to do 
 </svg>
 <br>
 <pre>
-arc(question_0040_1007,r_0040_0010__might,scope).
 arc(r_0040_0003__was,r_0040_0002__that,arg0).
 arc(r_0040_0003__was,r_0040_0004__totally,prd2).
 arc(r_0040_0004__totally,r_0040_0006__ignore,scope).
-arc(r_0040_0006__ignore,question_0040_1007,arg1).
+arc(r_0040_0006__ignore,r_0040_1007__question,arg1).
 arc(r_0040_0010__might,r_0040_0011__have,scope).
 arc(r_0040_0011__have,r_0040_0012__wanted,catenative).
 arc(r_0040_0012__wanted,r_0040_0009__Parliament,arg0).
 arc(r_0040_0012__wanted,r_0040_0014__do,arg1).
 arc(r_0040_0014__do,r_0040_0009__Parliament,arg0).
-arc(r_0040_0014__do,r_0040_0017__four_weeks,r_0040_0015__during_tmp).
+arc(r_0040_0014__do,r_0040_0017__four__r_0040_0018__weeks,r_0040_0015__during_tmp).
 arc(r_0040_0014__do,z_0040_1010,arg1).
 arc(r_0040_0020__might,r_0040_0022__have,scope).
 arc(r_0040_0021__normally,r_0040_0020__might,scope).
 arc(r_0040_0022__have,r_0040_0023__had,catenative).
 arc(r_0040_0023__had,r_0040_0009__Parliament,arg0).
-arc(r_0040_0023__had,r_0040_0017__four_weeks,arg1).
+arc(r_0040_0023__had,r_0040_0017__four__r_0040_0018__weeks,arg1).
 arc(r_0040_0023__had,r_0040_0026__prorogation,r_0040_0024__before_tmp).
+arc(r_0040_1007__question,r_0040_0010__might,scope).
 arc(z_0040_1010,r_0040_0008__else,quality2).
 
 </pre>
 <br>
 <pre>
-fof(id_40_A_uksc_judgment,axiom,
+fof(id__40_A_uksc_judgment,axiom,
     ? [STATEX1,STATEX5,CATENATIVEX12,STATEX13,CATENATIVEX18,PARLIAMENTX15,EVENTX26,OPERATORX4,EVENTX25,OPERATORX7,OPERATORX11,EVENTX24,EVENTX23,EVENTX22,OPERATORX16,OPERATORX17,EVENTX21,EVENTX20,ENTITYX8,ENTITYX14,ENTITYX19,QUALITYX9] :
       ( STATEX1 = OPERATORX4
       &amp; isA(OPERATORX4,r_0040_0004__totally)
@@ -310,7 +310,7 @@ fof(id_40_A_uksc_judgment,axiom,
       &amp; isA(EVENTX25,r_0040_0006__ignore)
       &amp; arg1(EVENTX25) = STATEX5
       &amp; STATEX5 = OPERATORX7
-      &amp; isA(OPERATORX7,question_0040_1007)
+      &amp; isA(OPERATORX7,r_0040_1007__question)
       &amp; scope(OPERATORX7) = OPERATORX11
       &amp; isA(OPERATORX11,r_0040_0010__might)
       &amp; scope(OPERATORX11) = EVENTX24
@@ -338,7 +338,7 @@ fof(id_40_A_uksc_judgment,axiom,
       &amp; scope(OPERATORX17) = EVENTX21
       &amp; isA(EVENTX21,r_0040_0022__have)
       &amp; catenative(EVENTX21) = CATENATIVEX18
-      &amp; isA(ENTITYX14,r_0040_0017__four_weeks)
+      &amp; isA(ENTITYX14,r_0040_0017__four__r_0040_0018__weeks)
       &amp; PARLIAMENTX15 = r_0040_0009__Parliament
       &amp; isA(ENTITYX19,r_0040_0026__prorogation)
       &amp; isA(QUALITYX9,r_0040_0008__else)

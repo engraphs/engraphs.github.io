@@ -243,18 +243,18 @@ Suddenly she gasped .
 </svg>
 <br>
 <pre>
-arc(abs_0517_1003,r_0517_0002__was,scope).
-arc(abs_0517_1003,z_0517_1009,restriction).
 arc(r_0517_0002__was,r_0517_0001__Nasha,arg0).
 arc(r_0517_0002__was,r_0517_0003__deep,prd2).
 arc(r_0517_0003__deep,r_0517_0005__thought,r_0517_0004__in).
 arc(r_0517_0008__mind,r_0517_0001__Nasha,genv).
 arc(r_0517_0010__away,r_0517_0009__far,quality1).
+arc(r_0517_1003__abs,r_0517_0002__was,scope).
+arc(r_0517_1003__abs,z_0517_1009,restriction).
+arc(r_0517_1017__utterance,z_0517_1020,part1).
 arc(r_0518_0003__gasped,r_0517_0001__Nasha,arg0).
 arc(r_0518_0003__gasped,r_0518_0001__Suddenly,tmp1).
 arc(r_0519_0006__said,r_0517_0001__Nasha,arg0).
-arc(r_0519_0006__said,utterance_0517_1017,arg1).
-arc(utterance_0517_1017,z_0517_1020,part1).
+arc(r_0519_0006__said,r_0517_1017__utterance,arg1).
 arc(z_0517_1009,r_0517_0008__mind,arg0).
 arc(z_0517_1009,r_0517_0010__away,dir2).
 arc(z_0517_1020,r_0519_0002__Dorle,voc).
@@ -262,10 +262,10 @@ arc(z_0517_1020,r_0519_0002__Dorle,voc).
 </pre>
 <br>
 <pre>
-fof(id_517_A_DICK_1952__518_A_DICK_1952__519_A_DICK_1952,axiom,
+fof(id__517_A_DICK_1952__518_A_DICK_1952__519_A_DICK_1952,axiom,
     ? [STATEX15,NASHAX6,NASHAX13,NASHAX23,EVENTX24,CONJX22,EVENTX21,EVENTX14,CONNX4,EVENTX10,EVENTX11,ENTITYX5,ENTITYX2,ATTRIBX1,QUALITYX12,QUALITYX7,QUALITYX8] :
       ( STATEX15 = CONJX22
-      &amp; isA(CONJX22,utterance_0517_1017)
+      &amp; isA(CONJX22,r_0517_1017__utterance)
       &amp; part1(CONJX22) = EVENTX21
       &amp; isA(EVENTX21,z_0517_1020)
       &amp; voc(EVENTX21) = r_0519_0002__Dorle
@@ -281,7 +281,7 @@ fof(id_517_A_DICK_1952__518_A_DICK_1952__519_A_DICK_1952,axiom,
       &amp; quality1(QUALITYX7) = QUALITYX8
       &amp; isA(QUALITYX8,r_0517_0009__far)
       &amp; isA(QUALITYX12,r_0518_0001__Suddenly)
-      &amp; isA(CONNX4,abs_0517_1003)
+      &amp; isA(CONNX4,r_0517_1003__abs)
       &amp; scope(CONNX4) = EVENTX11
       &amp; isA(EVENTX11,r_0517_0002__was)
       &amp; arg0(EVENTX11) = r_0517_0001__Nasha

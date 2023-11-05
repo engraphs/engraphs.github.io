@@ -603,12 +603,11 @@ It gets up-to-date information - without any legwork or expense on its part - an
 </svg>
 <br>
 <pre>
-arc(question_0053_1045,r_0055_0026__are,scope).
 arc(r_0053_0001__Once_tmp,r_0053_0003__prompts,restriction).
 arc(r_0053_0001__Once_tmp,r_0053_0019__will,scope).
 arc(r_0053_0003__prompts,r_0053_0002__someone,arg0).
-arc(r_0053_0003__prompts,r_0053_0005__Duplex_call,arg1).
-arc(r_0053_0008__find_out,r_0053_0005__Duplex_call,arg0).
+arc(r_0053_0003__prompts,r_0053_0005__Duplex__r_0053_0006__call,arg1).
+arc(r_0053_0008__find__r_0053_0009__out,r_0053_0005__Duplex_r_0053_0006__call,arg0).
 arc(r_0053_0015__receives,r_0053_0012__answer,arg1).
 arc(r_0053_0015__receives,r_0053_0014__system,arg0).
 arc(r_0053_0015__receives,z_0053_1009,r_0053_0016__from_dir).
@@ -622,8 +621,9 @@ arc(r_0053_0022__placed,z_0053_1011,arg1).
 arc(r_0053_0026__database,r_0053_0024__Google,genv).
 arc(r_0053_0026__database,r_0053_0028__viewable,prn4).
 arc(r_0053_0028__viewable,z_0053_1020,r_0053_0029__to).
-arc(r_0053_0030__quantificational__all,r_0053_0028__viewable,scope).
-arc(r_0053_0030__quantificational__all,z_0053_1020,restriction).
+arc(r_0053_0030__quantificational__r_0053_0030__all,r_0053_0028__viewable,scope).
+arc(r_0053_0030__quantificational__r_0053_0030__all,z_0053_1020,restriction).
+arc(r_0053_1045__question,r_0055_0026__are,scope).
 arc(r_0054_0002__sees,r_0053_0022__placed,arg1).
 arc(r_0054_0002__sees,r_0053_0024__Google,arg0).
 arc(r_0054_0002__sees,r_0054_0006__win_win,r_0054_0004__as_prd).
@@ -631,13 +631,13 @@ arc(r_0055_0002__gets,r_0053_0024__Google,arg0).
 arc(r_0055_0002__gets,r_0055_0004__information,arg1).
 arc(r_0055_0002__gets,r_0055_0009__or,r_0055_0006__without_cnt).
 arc(r_0055_0004__information,r_0055_0003__up_to_date,attrib1).
-arc(r_0055_0007__quantificational__any,r_0055_0002__gets,scope).
-arc(r_0055_0007__quantificational__any,r_0055_0009__or,restriction).
+arc(r_0055_0007__quantificational__r_0055_0007__any,r_0055_0002__gets,scope).
+arc(r_0055_0007__quantificational__r_0055_0007__any,r_0055_0009__or,restriction).
 arc(r_0055_0009__or,r_0055_0008__legwork,conj1).
 arc(r_0055_0009__or,r_0055_0010__expense,conj2).
 arc(r_0055_0009__or,r_0055_0013__part,r_0055_0011__on).
 arc(r_0055_0013__part,r_0053_0024__Google,genv).
-arc(r_0055_0015__and,r_0055_0007__quantificational__any,conj1).
+arc(r_0055_0015__and,r_0055_0007__quantificational__r_0055_0007__any,conj1).
 arc(r_0055_0015__and,r_0055_0022__only,conj2).
 arc(r_0055_0022__only,r_0055_0023__takes,scope).
 arc(r_0055_0023__takes,r_0055_0017__restaurant,arg0).
@@ -646,28 +646,28 @@ arc(r_0055_0023__takes,r_0055_0032__call,arg1).
 arc(r_0055_0026__are,r_0055_0017__restaurant,arg0).
 arc(r_0055_0026__are,r_0055_0028__open,prd2).
 arc(r_0055_0026__are,r_0055_0029__tomorrow,tmp4).
-arc(r_0055_0032__call,question_0053_1045,prn3).
+arc(r_0055_0032__call,r_0053_1045__question,prn3).
 arc(z_0053_1009,r_0053_0018__human,attrib2).
 
 </pre>
 <br>
 <pre>
-fof(id_53_A_Duplex__54_A_Duplex__55_A_Duplex,axiom,
+fof(id__53_A_Duplex__54_A_Duplex__55_A_Duplex,axiom,
     ? [PLACEMENTX14,EVENTX43,GOOGLEX23,PLACEMENTX24,GOOGLEX29,GOOGLEX35,RESTAURANTX46,CONJX51,OPERATORX41,EVENTX50,OPERATORX45,EVENTX49,QUANTX33,EVENTX38,EVENTX26,CONNX1,OPERATORX13,EVENTX22,PLACEMENTX21,QUANTX19,EVENTX10,EVENTX4,EVENTX3,RESTAURANTX39,ENTITYX40,ENTITYX42,ENTITYX30,ENTITYX32,ENTITYX34,ENTITYX36,ENTITYX37,ENTITYX25,ENTITYX5,ENTITYX16,ENTITYX17,ENTITYX18,ROBOT_CALLERX6,ENTITYX7,ENTITYX2,ATTRIBX47,ATTRIBX31,ATTRIBX8,QUALITYX48,QUALITYX12] :
       ( PLACEMENTX14 = PLACEMENTX21
       &amp; isA(PLACEMENTX21,r_0053_0022__placed)
       &amp; arg1(PLACEMENTX21) = ENTITYX5
       &amp; r_0053_0023__into_loc(PLACEMENTX21) = ENTITYX16
       &amp; EVENTX43 = OPERATORX45
-      &amp; isA(OPERATORX45,question_0053_1045)
+      &amp; isA(OPERATORX45,r_0053_1045__question)
       &amp; scope(OPERATORX45) = EVENTX49
       &amp; isA(EVENTX49,r_0055_0026__are)
       &amp; arg0(EVENTX49) = RESTAURANTX46
       &amp; prd2(EVENTX49) = ATTRIBX47
       &amp; tmp4(EVENTX49) = QUALITYX48
-      &amp; isA(EVENTX3,r_0053_0008__find_out)
+      &amp; isA(EVENTX3,r_0053_0008__find__r_0053_0009__out)
       &amp; arg0(EVENTX3) = ENTITYX2
-      &amp; isA(ENTITYX2,r_0053_0005__Duplex_call)
+      &amp; isA(ENTITYX2,r_0053_0005__Duplex__r_0053_0006__call)
       &amp; isA(EVENTX10,r_0053_0015__receives)
       &amp; arg1(EVENTX10) = ENTITYX5
       &amp; arg0(EVENTX10) = ROBOT_CALLERX6
@@ -680,7 +680,7 @@ fof(id_53_A_Duplex__54_A_Duplex__55_A_Duplex,axiom,
       &amp; isA(ENTITYX16,r_0053_0026__database)
       &amp; genv(ENTITYX16) = r_0053_0024__Google
       &amp; prn4(ENTITYX16) = ENTITYX17
-      &amp; isA(QUANTX19,r_0053_0030__quantificational__all)
+      &amp; isA(QUANTX19,r_0053_0030__quantificational__r_0053_0030__all)
       &amp; restriction(QUANTX19) = ENTITYX18
       &amp; isA(ENTITYX18,z_0053_1020)
       &amp; scope(QUANTX19) = ENTITYX17
@@ -725,7 +725,7 @@ fof(id_53_A_Duplex__54_A_Duplex__55_A_Duplex,axiom,
       &amp; r_0054_0004__as_prd(EVENTX26) = ENTITYX25
       &amp; isA(CONJX51,r_0055_0015__and)
       &amp; conj1(CONJX51) = QUANTX33
-      &amp; isA(QUANTX33,r_0055_0007__quantificational__any)
+      &amp; isA(QUANTX33,r_0055_0007__quantificational__r_0055_0007__any)
       &amp; restriction(QUANTX33) = ENTITYX32
       &amp; isA(ENTITYX32,r_0055_0009__or)
       &amp; r_0055_0011__on(ENTITYX32) = ENTITYX34

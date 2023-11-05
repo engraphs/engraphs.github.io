@@ -132,15 +132,15 @@ You are helping to organise an international student conference in your college 
 arc(r_0003_0002__are,r_0003_0003__helping,catenative).
 arc(r_0003_0003__helping,r_0003_0005__organise,catenative).
 arc(r_0003_0005__organise,r_0003_0001__You,arg0).
-arc(r_0003_0005__organise,r_0003_0008__student_conference,arg1).
-arc(r_0003_0008__student_conference,r_0003_0007__international,attrib2).
-arc(r_0003_0008__student_conference,r_0003_0012__college,r_0003_0010__in).
+arc(r_0003_0005__organise,r_0003_0008__student__r_0003_0009__conference,arg1).
+arc(r_0003_0008__student__r_0003_0009__conference,r_0003_0007__international,attrib2).
+arc(r_0003_0008__student__r_0003_0009__conference,r_0003_0012__college,r_0003_0010__in).
 arc(r_0003_0012__college,r_0003_0001__You,genv).
 
 </pre>
 <br>
 <pre>
-fof(id_3_A_fce_0100_2001_06,axiom,
+fof(id__3_A_fce_0100_2001_06,axiom,
     ? [CATENATIVEX1,STATEX2,HEARERX6,EVENTX9,EVENTX8,EVENTX7,ENTITYX3,ENTITYX5,ATTRIBX4] :
       ( CATENATIVEX1 = EVENTX8
       &amp; isA(EVENTX8,r_0003_0003__helping)
@@ -149,7 +149,7 @@ fof(id_3_A_fce_0100_2001_06,axiom,
       &amp; isA(EVENTX7,r_0003_0005__organise)
       &amp; arg0(EVENTX7) = r_0003_0001__You
       &amp; arg1(EVENTX7) = ENTITYX3
-      &amp; isA(ENTITYX3,r_0003_0008__student_conference)
+      &amp; isA(ENTITYX3,r_0003_0008__student__r_0003_0009__conference)
       &amp; attrib2(ENTITYX3) = ATTRIBX4
       &amp; r_0003_0010__in(ENTITYX3) = ENTITYX5
       &amp; isA(ENTITYX5,r_0003_0012__college)

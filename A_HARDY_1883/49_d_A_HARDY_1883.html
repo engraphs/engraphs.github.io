@@ -966,8 +966,8 @@ arc(r_0055_0035__nor,r_0055_0034__coat,conj1).
 arc(r_0055_0035__nor,r_0055_0038__garment,conj2).
 arc(r_0055_0038__garment,r_0055_0037__dark,attrib2).
 arc(r_0055_0038__garment,r_0055_0041__sort,r_0055_0039__of).
-arc(r_0055_0040__quantificational__any,r_0055_0038__garment,scope).
-arc(r_0055_0040__quantificational__any,r_0055_0041__sort,restriction).
+arc(r_0055_0040__quantificational__r_0055_0040__any,r_0055_0038__garment,scope).
+arc(r_0055_0040__quantificational__r_0055_0040__any,r_0055_0041__sort,restriction).
 arc(r_0055_0044__wore,r_0055_0005__his,arg0).
 arc(r_0055_0044__wore,z_0055_1026,arg1).
 arc(r_0055_0047__was,r_0055_0027__fact,r_0055_0025__despite_cnt).
@@ -1004,10 +1004,10 @@ arc(r_0057_0007__arrived,r_0055_0005__his,arg0).
 arc(r_0057_0007__arrived,r_0057_0003__time,tmp).
 arc(r_0057_0007__arrived,r_0057_0012__premises,r_0057_0008__abreast_of_loc).
 arc(r_0057_0012__premises,r_0057_0010__shepherd,genv).
-arc(r_0057_0015__came_down,r_0057_0003__time,r_0057_0001__By_tmp).
-arc(r_0057_0015__came_down,r_0057_0014__rain,arg0).
-arc(r_0057_0015__came_down,r_0057_0027__violence,r_0057_0023__with_mnr).
-arc(r_0057_0018__or,r_0057_0015__came_down,conj1).
+arc(r_0057_0015__came__r_0057_0016__down,r_0057_0003__time,r_0057_0001__By_tmp).
+arc(r_0057_0015__came__r_0057_0016__down,r_0057_0014__rain,arg0).
+arc(r_0057_0015__came__r_0057_0016__down,r_0057_0027__violence,r_0057_0023__with_mnr).
+arc(r_0057_0018__or,r_0057_0015__came__r_0057_0016__down,conj1).
 arc(r_0057_0018__or,r_0057_0019__rather,conj2).
 arc(r_0057_0019__rather,r_0057_0020__came,scope).
 arc(r_0057_0020__came,r_0057_0003__time,r_0057_0001__By_tmp).
@@ -1022,7 +1022,7 @@ arc(z_0055_1051,r_0056_0010__hobnailed,catenative).
 </pre>
 <br>
 <pre>
-fof(id_55_A_HARDY_1883__56_A_HARDY_1883__57_A_HARDY_1883,axiom,
+fof(id__55_A_HARDY_1883__56_A_HARDY_1883__57_A_HARDY_1883,axiom,
     ? [STATEX14,STATEX30,CATENATIVEX48,CATENATIVEX68,TREADX6,PERSONX10,PEDESTRIANX24,PEDESTRIANX29,PEDESTRIANX31,PEDESTRIANX43,PEDESTRIANX47,PEDESTRIANX55,PEDESTRIANX56,PEDESTRIANX67,CONJX82,OPERATORX79,EVENTX81,EVENTX78,EVENTX72,EVENTX71,CONJX65,OPERATORX63,EVENTX64,CONJX53,EVENTX52,EVENTX50,EVENTX45,CONJX39,EVENTX38,EVENTX37,EVENTX36,OPERATORX27,EVENTX28,EVENTX25,QUANTX22,EVENTX12,EVENTX11,ENTITYX66,ENTITYX73,ENTITYX74,ENTITYX69,SHEPHERDX70,ENTITYX54,ENTITYX57,ENTITYX59,ENTITYX46,ENTITYX42,ENTITYX44,ENTITYX13,ENTITYX33,ENTITYX35,ENTITYX16,ENTITYX23,ENTITYX17,ENTITYX19,ENTITYX21,ENTITYX3,ENTITYX5,PERSONX7,ENTITYX9,TREADX4,QUALITYX80,QUALITYX76,QUALITYX32,QUALITYX8,ATTRIBX75,ATTRIBX77,ATTRIBX58,ATTRIBX60,ATTRIBX61,ATTRIBX62,ATTRIBX34,ATTRIBX20,ATTRIBX18] :
       ( STATEX14 = OPERATORX27
       &amp; isA(OPERATORX27,r_0055_0031__not)
@@ -1064,7 +1064,7 @@ fof(id_55_A_HARDY_1883__56_A_HARDY_1883__57_A_HARDY_1883,axiom,
       &amp; conj2(ENTITYX16) = ENTITYX19
       &amp; isA(ENTITYX17,r_0055_0034__coat)
       &amp; attrib2(ENTITYX17) = ATTRIBX18
-      &amp; isA(QUANTX22,r_0055_0040__quantificational__any)
+      &amp; isA(QUANTX22,r_0055_0040__quantificational__r_0055_0040__any)
       &amp; restriction(QUANTX22) = ENTITYX21
       &amp; isA(ENTITYX21,r_0055_0041__sort)
       &amp; scope(QUANTX22) = ENTITYX19
@@ -1167,7 +1167,7 @@ fof(id_55_A_HARDY_1883__56_A_HARDY_1883__57_A_HARDY_1883,axiom,
       &amp; arg1(EVENTX64) = ENTITYX57
       &amp; isA(CONJX82,r_0057_0018__or)
       &amp; conj1(CONJX82) = EVENTX78
-      &amp; isA(EVENTX78,r_0057_0015__came_down)
+      &amp; isA(EVENTX78,r_0057_0015__came__r_0057_0016__down)
       &amp; r_0057_0001__By_tmp(EVENTX78) = ENTITYX66
       &amp; arg0(EVENTX78) = ENTITYX73
       &amp; r_0057_0023__with_mnr(EVENTX78) = ENTITYX74

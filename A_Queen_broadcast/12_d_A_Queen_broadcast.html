@@ -953,8 +953,6 @@ We should take comfort that while we may have more still to endure , better days
 </svg>
 <br>
 <pre>
-arc(cnt_0016_1029,r_0018_0004__join,scope).
-arc(cnt_0016_1029,r_0018_0016__using,restriction).
 arc(r_0016_0008__know,r_0016_0002__now,tmp2).
 arc(r_0016_0008__know,r_0016_0005__then,r_0016_0004__as_mnr).
 arc(r_0016_0008__know,r_0016_0007__we,arg0).
@@ -964,6 +962,8 @@ arc(r_0016_0014__is,r_0016_0013__it,arg0).
 arc(r_0016_0014__is,r_0016_0017__thing,prd2).
 arc(r_0016_0017__thing,r_0016_0016__right,attrib2).
 arc(r_0016_0019__do,r_0016_0017__thing,arg1).
+arc(r_0016_1029__cnt,r_0018_0004__join,scope).
+arc(r_0016_1029__cnt,r_0018_0016__using,restriction).
 arc(r_0017_0001__While_cnt,r_0017_0003__have,restriction).
 arc(r_0017_0001__While_cnt,r_0017_0010__is,scope).
 arc(r_0017_0003__have,r_0017_0004__faced,catenative).
@@ -976,8 +976,8 @@ arc(r_0018_0004__join,r_0016_0007__we,arg0).
 arc(r_0018_0004__join,r_0018_0002__time,tmp).
 arc(r_0018_0004__join,r_0018_0007__nations,r_0018_0005__with_com).
 arc(r_0018_0004__join,r_0018_0014__endeavour,r_0018_0011__in_clr).
-arc(r_0018_0006__quantificational__all,cnt_0016_1029,scope).
-arc(r_0018_0006__quantificational__all,r_0018_0007__nations,restriction).
+arc(r_0018_0006__quantificational__r_0018_0006__all,r_0016_1029__cnt,scope).
+arc(r_0018_0006__quantificational__r_0018_0006__all,r_0018_0007__nations,restriction).
 arc(r_0018_0007__nations,r_0018_0010__globe,r_0018_0008__across).
 arc(r_0018_0014__endeavour,r_0018_0013__common,attrib2).
 arc(r_0018_0016__using,r_0016_0007__we,arg0).
@@ -992,12 +992,12 @@ arc(r_0018_0025__compassion,r_0018_0027__heal,emb4).
 arc(r_0019_0002__will,r_0019_0003__succeed,scope).
 arc(r_0019_0003__succeed,r_0016_0007__we,arg0).
 arc(r_0019_0005__and,r_0019_0002__will,conj1).
-arc(r_0019_0005__and,r_0019_0011__quantificational__every,conj2).
+arc(r_0019_0005__and,r_0019_0011__quantificational__r_0019_0011__every,conj2).
 arc(r_0019_0008__will,r_0019_0009__belong,scope).
 arc(r_0019_0009__belong,r_0019_0003__succeed,arg0).
 arc(r_0019_0009__belong,r_0019_0012__one,r_0019_0010__to_clr).
-arc(r_0019_0011__quantificational__every,r_0019_0008__will,scope).
-arc(r_0019_0011__quantificational__every,r_0019_0012__one,restriction).
+arc(r_0019_0011__quantificational__r_0019_0011__every,r_0019_0008__will,scope).
+arc(r_0019_0011__quantificational__r_0019_0011__every,r_0019_0012__one,restriction).
 arc(r_0019_0012__one,r_0016_0007__we,r_0019_0013__of).
 arc(r_0020_0002__should,r_0020_0003__take,scope).
 arc(r_0020_0003__take,r_0016_0007__we,arg0).
@@ -1030,7 +1030,7 @@ arc(r_0020_0037__meet,r_0020_0038__again,tmp4).
 </pre>
 <br>
 <pre>
-fof(id_16_A_Queen_broadcast__17_A_Queen_broadcast__18_A_Queen_broadcast__19_A_Queen_broadcast__20_A_Queen_broadcast,axiom,
+fof(id__16_A_Queen_broadcast__17_A_Queen_broadcast__18_A_Queen_broadcast__19_A_Queen_broadcast__20_A_Queen_broadcast,axiom,
     ? [STATEX4,CATENATIVEX14,STATEX38,STATEX58,STATEX61,EVENTX68,SPEAKER_AND_HEARERX13,SPEAKER_AND_HEARERX23,SPEAKER_AND_HEARERX36,SPEAKER_AND_HEARERX46,COME_THROUGHX49,SPEAKER_AND_HEARERX52,SPEAKER_AND_HEARERX56,SPEAKER_AND_HEARERX60,SPEAKER_AND_HEARERX71,SPEAKER_AND_HEARERX73,SPEAKER_AND_HEARERX77,SPEAKER_AND_HEARERX79,SPEAKER_AND_HEARERX83,OPERATORX89,EVENTX90,CONNX59,OPERATORX87,EVENTX88,OPERATORX85,EVENTX86,OPERATORX81,EVENTX82,OPERATORX75,EVENTX76,OPERATORX64,EVENTX65,OPERATORX62,EVENTX63,CONJX55,QUANTX51,OPERATORX53,EVENTX54,OPERATORX47,COME_THROUGHX48,QUANTX25,CONNX30,EVENTX42,EVENTX41,EVENTX43,CONNX12,EVENTX21,EVENTX18,EVENTX17,OPERATORX3,EVENTX11,EVENTX10,EVENTX9,QUALITYX84,QUALITYX80,QUALITYX74,QUALITYX16,QUALITYX1,QUALITYX2,ENTITYX57,ENTITYX66,ENTITYX78,ENTITYX72,ENTITYX50,ENTITYX22,ENTITYX24,ENTITYX27,ENTITYX31,ENTITYX32,ENTITYX35,ENTITYX34,ENTITYX26,ENTITYX19,ENTITYX15,ENTITYX5,ATTRIBX67,ATTRIBX37,ATTRIBX33,ATTRIBX28,ATTRIBX20,ATTRIBX6] :
       ( STATEX4 = EVENTX10
       &amp; isA(EVENTX10,r_0016_0014__is)
@@ -1161,12 +1161,12 @@ fof(id_16_A_Queen_broadcast__17_A_Queen_broadcast__18_A_Queen_broadcast__19_A_Qu
       &amp; isA(EVENTX21,r_0017_0010__is)
       &amp; arg0(EVENTX21) = ENTITYX19
       &amp; prd2(EVENTX21) = ATTRIBX20
-      &amp; isA(QUANTX25,r_0018_0006__quantificational__all)
+      &amp; isA(QUANTX25,r_0018_0006__quantificational__r_0018_0006__all)
       &amp; restriction(QUANTX25) = ENTITYX24
       &amp; isA(ENTITYX24,r_0018_0007__nations)
       &amp; r_0018_0008__across(ENTITYX24) = ENTITYX26
       &amp; scope(QUANTX25) = CONNX30
-      &amp; isA(CONNX30,cnt_0016_1029)
+      &amp; isA(CONNX30,r_0016_1029__cnt)
       &amp; scope(CONNX30) = EVENTX43
       &amp; isA(EVENTX43,r_0018_0004__join)
       &amp; tmp(EVENTX43) = ENTITYX22
@@ -1185,7 +1185,7 @@ fof(id_16_A_Queen_broadcast__17_A_Queen_broadcast__18_A_Queen_broadcast__19_A_Qu
       &amp; arg0(COME_THROUGHX48) = SPEAKER_AND_HEARERX46
       &amp; arg0(COME_THROUGHX48) = SPEAKER_AND_HEARERX46
       &amp; conj2(CONJX55) = QUANTX51
-      &amp; isA(QUANTX51,r_0019_0011__quantificational__every)
+      &amp; isA(QUANTX51,r_0019_0011__quantificational__r_0019_0011__every)
       &amp; restriction(QUANTX51) = ENTITYX50
       &amp; isA(ENTITYX50,r_0019_0012__one)
       &amp; r_0019_0013__of(ENTITYX50) = SPEAKER_AND_HEARERX52

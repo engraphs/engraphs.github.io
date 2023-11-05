@@ -313,10 +313,10 @@ Then she put it back again in her pocket and gazed into the empty grate for some
 </svg>
 <br>
 <pre>
-arc(r_0161_0002__took_out,r_0161_0001__Eliza,arg0).
-arc(r_0161_0002__took_out,r_0161_0005__handkerchief,arg1).
+arc(r_0161_0002__took__r_0161_0003__out,r_0161_0001__Eliza,arg0).
+arc(r_0161_0002__took__r_0161_0003__out,r_0161_0005__handkerchief,arg1).
 arc(r_0161_0005__handkerchief,r_0161_0001__Eliza,genv).
-arc(r_0161_0006__and,r_0161_0002__took_out,conj1).
+arc(r_0161_0006__and,r_0161_0002__took__r_0161_0003__out,conj1).
 arc(r_0161_0006__and,r_0161_0007__wiped,conj2).
 arc(r_0161_0007__wiped,r_0161_0001__Eliza,arg0).
 arc(r_0161_0007__wiped,r_0161_0005__handkerchief,r_0161_0010__with_mnr).
@@ -341,7 +341,7 @@ arc(r_0162_0015__grate,r_0162_0014__empty,attrib2).
 </pre>
 <br>
 <pre>
-fof(id_161_A_JOYCE_1914__162_A_JOYCE_1914,axiom,
+fof(id__161_A_JOYCE_1914__162_A_JOYCE_1914,axiom,
     ? [EVENTX20,ELIZAX2,ELIZAX5,HANDKERCHIEFX6,ELIZAX10,HANDKERCHIEFX11,ELIZAX15,CONJX25,EVENTX24,EVENTX23,EVENTX16,CONJX8,EVENTX7,EVENTX3,ENTITYX17,ENTITYX19,ENTITYX14,ENTITYX4,HANDKERCHIEFX1,QUALITYX9,QUALITYX12,QUALITYX13,ATTRIBX18] :
       ( EVENTX20 = EVENTX23
       &amp; isA(EVENTX23,r_0162_0020__speaking)
@@ -368,7 +368,7 @@ fof(id_161_A_JOYCE_1914__162_A_JOYCE_1914,axiom,
       &amp; isA(ATTRIBX18,r_0162_0014__empty)
       &amp; isA(CONJX8,r_0161_0006__and)
       &amp; conj1(CONJX8) = EVENTX3
-      &amp; isA(EVENTX3,r_0161_0002__took_out)
+      &amp; isA(EVENTX3,r_0161_0002__took__r_0161_0003__out)
       &amp; arg0(EVENTX3) = r_0161_0001__Eliza
       &amp; arg1(EVENTX3) = HANDKERCHIEFX1
       &amp; conj2(CONJX8) = EVENTX7

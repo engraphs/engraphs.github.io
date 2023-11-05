@@ -201,8 +201,6 @@ The ship shuddered , falling suddenly down , then righting itself as automatic c
 </svg>
 <br>
 <pre>
-arc(cnt_0079_1002,r_0079_0003__shuddered,scope).
-arc(cnt_0079_1002,r_0079_0009__then,restriction).
 arc(r_0079_0003__shuddered,r_0079_0002__ship,arg0).
 arc(r_0079_0005__falling,r_0079_0002__ship,arg0).
 arc(r_0079_0005__falling,r_0079_0006__suddenly,tmp2).
@@ -211,14 +209,16 @@ arc(r_0079_0009__then,r_0079_0012__as_cnt,scope).
 arc(r_0079_0010__righting,r_0079_0002__ship,arg0).
 arc(r_0079_0010__righting,r_0079_0002__ship,arg1).
 arc(r_0079_0012__as_cnt,r_0079_0010__righting,scope).
-arc(r_0079_0012__as_cnt,r_0079_0015__took_over,restriction).
+arc(r_0079_0012__as_cnt,r_0079_0015__took__r_0079_0016__over,restriction).
 arc(r_0079_0014__controls,r_0079_0013__automatic,attrib1).
-arc(r_0079_0015__took_over,r_0079_0014__controls,arg0).
+arc(r_0079_0015__took__r_0079_0016__over,r_0079_0014__controls,arg0).
+arc(r_0079_1002__cnt,r_0079_0003__shuddered,scope).
+arc(r_0079_1002__cnt,r_0079_0009__then,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_79_A_DICK_1952,axiom,
+fof(id__79_A_DICK_1952,axiom,
     ? [SHIPX8,CONNX3,OPERATORX7,CONNX9,EVENTX12,EVENTX13,EVENTX6,EVENTX14,SHIPX1,ENTITYX10,QUALITYX4,QUALITYX5,ATTRIBX11] :
       ( isA(SHIPX1,r_0079_0002__ship)
       &amp; SHIPX8 = SHIPX1
@@ -227,7 +227,7 @@ fof(id_79_A_DICK_1952,axiom,
       &amp; isA(QUALITYX4,r_0079_0006__suddenly)
       &amp; isA(QUALITYX5,r_0079_0007__down)
       &amp; isA(ATTRIBX11,r_0079_0013__automatic)
-      &amp; isA(CONNX3,cnt_0079_1002)
+      &amp; isA(CONNX3,r_0079_1002__cnt)
       &amp; scope(CONNX3) = EVENTX14
       &amp; isA(EVENTX14,r_0079_0003__shuddered)
       &amp; arg0(EVENTX14) = SHIPX1
@@ -243,7 +243,7 @@ fof(id_79_A_DICK_1952,axiom,
       &amp; arg0(EVENTX13) = SHIPX1
       &amp; arg1(EVENTX13) = SHIPX8
       &amp; restriction(CONNX9) = EVENTX12
-      &amp; isA(EVENTX12,r_0079_0015__took_over)
+      &amp; isA(EVENTX12,r_0079_0015__took__r_0079_0016__over)
       &amp; arg0(EVENTX12) = ENTITYX10
       &amp; restriction(CONNX3) = OPERATORX7 ) ).
 

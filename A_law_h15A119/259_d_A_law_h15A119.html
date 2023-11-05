@@ -427,28 +427,28 @@ The competent minister may order an authorized personal information protection o
 arc(r_0259_0003__minister,r_0259_0002__competent,attrib2).
 arc(r_0259_0004__may,r_0259_0005__order,scope).
 arc(r_0259_0005__order,r_0259_0003__minister,arg0).
-arc(r_0259_0005__order,r_0259_0009__information_protection_organization,arg2).
+arc(r_0259_0005__order,r_0259_0009__information__r_0259_0010__protection_r_0259_0011__organization,arg2).
 arc(r_0259_0005__order,r_0259_0030__or,arg1).
-arc(r_0259_0009__information_protection_organization,r_0259_0007__authorized,attrib2).
-arc(r_0259_0009__information_protection_organization,r_0259_0008__personal,attrib3).
-arc(r_0259_0013__improve,r_0259_0009__information_protection_organization,arg0).
+arc(r_0259_0009__information__r_0259_0010__protection_r_0259_0011__organization,r_0259_0007__authorized,attrib2).
+arc(r_0259_0009__information__r_0259_0010__protection_r_0259_0011__organization,r_0259_0008__personal,attrib3).
+arc(r_0259_0013__improve,r_0259_0009__information__r_0259_0010__protection_r_0259_0011__organization,arg0).
 arc(r_0259_0013__improve,r_0259_0015__method,arg1).
 arc(r_0259_0015__method,r_0259_0017__conducting,r_0259_0016__of).
 arc(r_0259_0017__conducting,r_0259_0020__businesses,arg1).
 arc(r_0259_0019__authorized,r_0259_0020__businesses,arg1).
 arc(r_0259_0020__businesses,r_0259_0018__its,genv).
-arc(r_0259_0023__amend,r_0259_0009__information_protection_organization,arg0).
-arc(r_0259_0023__amend,r_0259_0026__information_protection_guidelines,arg1).
-arc(r_0259_0026__information_protection_guidelines,r_0259_0024__its,genv).
-arc(r_0259_0026__information_protection_guidelines,r_0259_0025__personal,attrib2).
+arc(r_0259_0023__amend,r_0259_0009__information__r_0259_0010__protection_r_0259_0011__organization,arg0).
+arc(r_0259_0023__amend,r_0259_0026__information__r_0259_0027__protection_r_0259_0028__guidelines,arg1).
+arc(r_0259_0026__information__r_0259_0027__protection_r_0259_0028__guidelines,r_0259_0024__its,genv).
+arc(r_0259_0026__information__r_0259_0027__protection_r_0259_0028__guidelines,r_0259_0025__personal,attrib2).
 arc(r_0259_0030__or,r_0259_0013__improve,conj1).
 arc(r_0259_0030__or,r_0259_0023__amend,conj2).
-arc(r_0259_0030__or,r_0259_0033__quantificational__any,conj3).
-arc(r_0259_0032__take,r_0259_0009__information_protection_organization,arg0).
+arc(r_0259_0030__or,r_0259_0033__quantificational__r_0259_0033__any,conj3).
+arc(r_0259_0032__take,r_0259_0009__information__r_0259_0010__protection_r_0259_0011__organization,arg0).
 arc(r_0259_0032__take,r_0259_0036__measures,arg1).
 arc(r_0259_0032__take,r_0259_0039__extent,r_0259_0037__to_mnr).
-arc(r_0259_0033__quantificational__any,r_0259_0032__take,scope).
-arc(r_0259_0033__quantificational__any,r_0259_0036__measures,restriction).
+arc(r_0259_0033__quantificational__r_0259_0033__any,r_0259_0032__take,scope).
+arc(r_0259_0033__quantificational__r_0259_0033__any,r_0259_0036__measures,restriction).
 arc(r_0259_0036__measures,r_0259_0034__other,attrib2).
 arc(r_0259_0036__measures,r_0259_0035__necessary,attrib3).
 arc(r_0259_0039__extent,r_0259_0040__necessary,attrib3).
@@ -459,7 +459,7 @@ arc(r_0259_0045__provisions,r_0259_0048__section,r_0259_0046__of).
 </pre>
 <br>
 <pre>
-fof(id_259_A_law_h15A119,axiom,
+fof(id__259_A_law_h15A119,axiom,
     ? [STATEX6,EVENTX8,OPERATORX30,EVENTX31,CONJX29,QUANTX20,EVENTX28,EVENTX18,EVENTX15,EVENTX14,EVENTX13,ENTITYX1,ENTITYX3,ENTITYX19,ENTITYX23,ENTITYX25,ENTITYX26,ENTITYX27,ENTITYX16,ENTITYX7,ENTITYX11,ATTRIBX24,ATTRIBX21,ATTRIBX22,ATTRIBX17,ATTRIBX4,ATTRIBX5,ATTRIBX2] :
       ( STATEX6 = CONJX29
       &amp; isA(CONJX29,r_0259_0030__or)
@@ -472,7 +472,7 @@ fof(id_259_A_law_h15A119,axiom,
       &amp; arg0(EVENTX18) = ENTITYX3
       &amp; arg1(EVENTX18) = ENTITYX16
       &amp; conj3(CONJX29) = QUANTX20
-      &amp; isA(QUANTX20,r_0259_0033__quantificational__any)
+      &amp; isA(QUANTX20,r_0259_0033__quantificational__r_0259_0033__any)
       &amp; restriction(QUANTX20) = ENTITYX19
       &amp; isA(ENTITYX19,r_0259_0036__measures)
       &amp; attrib2(ENTITYX19) = ATTRIBX21
@@ -487,7 +487,7 @@ fof(id_259_A_law_h15A119,axiom,
       &amp; arg1(EVENTX14) = ENTITYX11
       &amp; isA(ENTITYX1,r_0259_0003__minister)
       &amp; attrib2(ENTITYX1) = ATTRIBX2
-      &amp; isA(ENTITYX3,r_0259_0009__information_protection_organization)
+      &amp; isA(ENTITYX3,r_0259_0009__information__r_0259_0010__protection_r_0259_0011__organization)
       &amp; attrib2(ENTITYX3) = ATTRIBX4
       &amp; attrib3(ENTITYX3) = ATTRIBX5
       &amp; isA(ENTITYX7,r_0259_0015__method)
@@ -496,7 +496,7 @@ fof(id_259_A_law_h15A119,axiom,
       &amp; arg1(EVENTX13) = ENTITYX11
       &amp; isA(ENTITYX11,r_0259_0020__businesses)
       &amp; genv(ENTITYX11) = r_0259_0018__its
-      &amp; isA(ENTITYX16,r_0259_0026__information_protection_guidelines)
+      &amp; isA(ENTITYX16,r_0259_0026__information__r_0259_0027__protection_r_0259_0028__guidelines)
       &amp; genv(ENTITYX16) = r_0259_0024__its
       &amp; attrib2(ENTITYX16) = ATTRIBX17
       &amp; isA(ENTITYX23,r_0259_0039__extent)

@@ -337,8 +337,6 @@ To get over this difficulty Alcock has suggested that instead of measuring direc
 </svg>
 <br>
 <pre>
-arc(abs_0002_1001,r_0002_0002__get,restriction).
-arc(abs_0002_1001,r_0002_0007__has,scope).
 arc(r_0002_0002__get,r_0002_0005__difficulty,r_0002_0003__over_clr).
 arc(r_0002_0002__get,r_0002_0006__Alcock,arg0).
 arc(r_0002_0007__has,r_0002_0008__suggested,catenative).
@@ -356,15 +354,17 @@ arc(r_0002_0025__should,r_0002_0026__be,scope).
 arc(r_0002_0026__be,r_0002_0010__instead,mod2).
 arc(r_0002_0026__be,r_0002_0027__measured,catenative).
 arc(r_0002_0027__measured,r_0002_0024__potential,arg1).
-arc(r_0002_0027__measured,r_0002_0031__galvanic_cell,arg0_by_lgs).
-arc(r_0002_0031__galvanic_cell,r_0002_0030__suitable,attrib2).
-arc(r_0002_0033__incorporated,r_0002_0031__galvanic_cell,arg0).
+arc(r_0002_0027__measured,r_0002_0031__galvanic__r_0002_0032__cell,arg0_r_0002_0028__by_lgs).
+arc(r_0002_0031__galvanic__r_0002_0032__cell,r_0002_0030__suitable,attrib2).
+arc(r_0002_0033__incorporated,r_0002_0031__galvanic__r_0002_0032__cell,arg0).
 arc(r_0002_0033__incorporated,r_0002_0036__circuit,r_0002_0034__in_loc).
+arc(r_0002_1001__abs,r_0002_0002__get,restriction).
+arc(r_0002_1001__abs,r_0002_0007__has,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_2_A_lob_J01,axiom,
+fof(id__2_A_lob_J01,axiom,
     ? [CATENATIVEX5,STATEX6,EVENTX8,CATENATIVEX20,CONNX2,EVENTX28,EVENTX27,OPERATORX19,EVENTX26,EVENTX25,EVENTX24,EVENTX16,EVENTX15,EVENTX4,ENTITYX17,ENTITYX21,ENTITYX23,ENTITYX12,ENTITYX13,ENTITYX14,ENTITYX3,QUALITYX7,QUALITYX11,ATTRIBX22,ATTRIBX18] :
       ( CATENATIVEX5 = EVENTX27
       &amp; isA(EVENTX27,r_0002_0008__suggested)
@@ -382,7 +382,7 @@ fof(id_2_A_lob_J01,axiom,
       &amp; arg1(EVENTX16) = ENTITYX12
       &amp; CATENATIVEX20 = EVENTX25
       &amp; isA(EVENTX25,r_0002_0027__measured)
-      &amp; arg0_by_lgs(EVENTX25) = ENTITYX21
+      &amp; arg0__r_0002_0028__by_lgs(EVENTX25) = ENTITYX21
       &amp; arg1(EVENTX25) = ENTITYX17
       &amp; isA(ENTITYX3,r_0002_0005__difficulty)
       &amp; isA(ENTITYX12,r_0002_0015__concentration)
@@ -398,7 +398,7 @@ fof(id_2_A_lob_J01,axiom,
       &amp; isA(EVENTX24,r_0002_0033__incorporated)
       &amp; arg0(EVENTX24) = ENTITYX21
       &amp; r_0002_0034__in_loc(EVENTX24) = ENTITYX23
-      &amp; isA(ENTITYX21,r_0002_0031__galvanic_cell)
+      &amp; isA(ENTITYX21,r_0002_0031__galvanic__r_0002_0032__cell)
       &amp; attrib2(ENTITYX21) = ATTRIBX22
       &amp; isA(ENTITYX23,r_0002_0036__circuit)
       &amp; isA(QUALITYX7,r_0002_0010__instead)
@@ -406,7 +406,7 @@ fof(id_2_A_lob_J01,axiom,
       &amp; isA(QUALITYX11,r_0002_0013__directly)
       &amp; isA(ATTRIBX18,r_0002_0023__thermodynamic)
       &amp; isA(ATTRIBX22,r_0002_0030__suitable)
-      &amp; isA(CONNX2,abs_0002_1001)
+      &amp; isA(CONNX2,r_0002_1001__abs)
       &amp; restriction(CONNX2) = EVENTX4
       &amp; isA(EVENTX4,r_0002_0002__get)
       &amp; arg0(EVENTX4) = r_0002_0006__Alcock

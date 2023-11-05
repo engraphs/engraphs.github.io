@@ -223,12 +223,12 @@ Unless otherwise posted , the maximum speed limit is 55 mph on two - lane undivi
 arc(r_0013_0001__Unless_cnt,r_0013_0002__otherwise,restriction).
 arc(r_0013_0001__Unless_cnt,r_0013_0009__is,scope).
 arc(r_0013_0002__otherwise,r_0013_0003__posted,scope).
-arc(r_0013_0003__posted,r_0013_0007__speed_limit,arg1).
-arc(r_0013_0007__speed_limit,r_0013_0006__maximum,attrib2).
-arc(r_0013_0009__is,r_0013_0007__speed_limit,arg0).
-arc(r_0013_0009__is,r_0013_0010__55_mph,prd2).
+arc(r_0013_0003__posted,r_0013_0007__speed__r_0013_0008__limit,arg1).
+arc(r_0013_0007__speed__r_0013_0008__limit,r_0013_0006__maximum,attrib2).
+arc(r_0013_0009__is,r_0013_0007__speed__r_0013_0008__limit,arg0).
+arc(r_0013_0009__is,r_0013_0010__55__r_0013_0011__mph,prd2).
 arc(r_0013_0009__is,r_0013_0018__and,z_0013_1005).
-arc(r_0013_0017__highways,r_0013_0013__two_lane,nlyr1).
+arc(r_0013_0017__highways,r_0013_0013__two__r_0013_0015__lane,nlyr1).
 arc(r_0013_0017__highways,r_0013_0016__undivided,attrib2).
 arc(r_0013_0018__and,r_0013_0017__highways,r_0013_0012__on_loc).
 arc(r_0013_0018__and,r_0013_0020__vehicles,r_0013_0019__for_rst).
@@ -238,18 +238,18 @@ arc(r_0013_0021__towing,r_0013_0022__trailers,arg1).
 </pre>
 <br>
 <pre>
-fof(id_13_A_driver_handbook,axiom,
+fof(id__13_A_driver_handbook,axiom,
     ? [CONNX13,EVENTX17,OPERATORX15,EVENTX16,EVENTX12,ENTITYX2,ENTITYX4,CONJX6,ENTITYX7,ENTITYX10,ENTITYX11,ENTITYX8,ATTRIBX9,ATTRIBX3] :
-      ( isA(ENTITYX2,r_0013_0007__speed_limit)
+      ( isA(ENTITYX2,r_0013_0007__speed__r_0013_0008__limit)
       &amp; attrib2(ENTITYX2) = ATTRIBX3
-      &amp; isA(ENTITYX4,r_0013_0010__55_mph)
+      &amp; isA(ENTITYX4,r_0013_0010__55__r_0013_0011__mph)
       &amp; isA(CONJX6,r_0013_0018__and)
       &amp; r_0013_0012__on_loc(CONJX6) = ENTITYX7
       &amp; r_0013_0019__for_rst(CONJX6) = ENTITYX10
       &amp; isA(ENTITYX7,r_0013_0017__highways)
       &amp; nlyr1(ENTITYX7) = ENTITYX8
       &amp; attrib2(ENTITYX7) = ATTRIBX9
-      &amp; isA(ENTITYX8,r_0013_0013__two_lane)
+      &amp; isA(ENTITYX8,r_0013_0013__two__r_0013_0015__lane)
       &amp; isA(EVENTX12,r_0013_0021__towing)
       &amp; arg0(EVENTX12) = ENTITYX10
       &amp; arg1(EVENTX12) = ENTITYX11

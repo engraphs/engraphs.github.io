@@ -313,12 +313,10 @@ Perhaps the BBC might like to run a competition similar to one to find the great
 </svg>
 <br>
 <pre>
-arc(cnt_0022_1006,r_0022_0007__run,scope).
-arc(cnt_0022_1006,r_0022_0014__find,restriction).
 arc(r_0022_0001__Perhaps,r_0022_0004__might,scope).
 arc(r_0022_0004__might,r_0022_0005__like,scope).
-arc(r_0022_0005__like,cnt_0022_1006,arg1).
 arc(r_0022_0005__like,r_0022_0003__BBC,arg0).
+arc(r_0022_0005__like,r_0022_1006__cnt,arg1).
 arc(r_0022_0007__run,r_0022_0003__BBC,arg0).
 arc(r_0022_0007__run,r_0022_0009__competition,arg1).
 arc(r_0022_0009__competition,r_0022_0010__similar,attrib3).
@@ -335,14 +333,16 @@ arc(r_0022_0026__case,r_0022_0030__animal,r_0022_0027__for).
 arc(r_0022_0030__animal,r_0022_0023__people,genv).
 arc(r_0022_0030__animal,r_0022_0029__preferred,attrib2).
 arc(r_0022_0033__series,r_0022_0035__weeks,r_0022_0034__of).
+arc(r_0022_1006__cnt,r_0022_0007__run,scope).
+arc(r_0022_1006__cnt,r_0022_0014__find,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_22_A_Hedgehog,axiom,
+fof(id__22_A_Hedgehog,axiom,
     ? [STATEX2,PEOPLEX14,OPERATORX1,OPERATORX21,EVENTX22,CONNX7,EVENTX19,EVENTX18,EVENTX20,ENTITYX3,ENTITYX8,ENTITYX10,PEOPLEX11,ENTITYX12,ENTITYX16,ENTITYX17,ENTITYX13,ENTITYX5,ATTRIBX15,ATTRIBX9,ATTRIBX4] :
       ( STATEX2 = CONNX7
-      &amp; isA(CONNX7,cnt_0022_1006)
+      &amp; isA(CONNX7,r_0022_1006__cnt)
       &amp; scope(CONNX7) = EVENTX20
       &amp; isA(EVENTX20,r_0022_0007__run)
       &amp; arg0(EVENTX20) = r_0022_0003__BBC

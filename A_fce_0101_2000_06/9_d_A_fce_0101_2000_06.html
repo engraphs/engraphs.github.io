@@ -109,25 +109,25 @@ Write an answer to one of the questions 2 - 5 in this part .
 </svg>
 <br>
 <pre>
-arc(imperative_0010_1002,r_0010_0001__Write,scope).
 arc(r_0010_0001__Write,r_0010_0003__answer,arg1).
 arc(r_0010_0003__answer,r_0010_0005__one,r_0010_0004__to).
-arc(r_0010_0005__one,r_0010_0008__questions_2_5,r_0010_0006__of).
-arc(r_0010_0008__questions_2_5,r_0010_0014__part,r_0010_0012__in).
+arc(r_0010_0005__one,r_0010_0008__questions__r_0010_0009__2_r_0010_0011__5,r_0010_0006__of).
+arc(r_0010_0008__questions__r_0010_0009__2_r_0010_0011__5,r_0010_0014__part,r_0010_0012__in).
+arc(r_0010_1002__imperative,r_0010_0001__Write,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_10_A_fce_0101_2000_06,axiom,
+fof(id__10_A_fce_0101_2000_06,axiom,
     ? [OPERATORX2,EVENTX8,ENTITYX4,ENTITYX5,ENTITYX6,ENTITYX7] :
       ( isA(ENTITYX4,r_0010_0003__answer)
       &amp; r_0010_0004__to(ENTITYX4) = ENTITYX5
       &amp; isA(ENTITYX5,r_0010_0005__one)
       &amp; r_0010_0006__of(ENTITYX5) = ENTITYX6
-      &amp; isA(ENTITYX6,r_0010_0008__questions_2_5)
+      &amp; isA(ENTITYX6,r_0010_0008__questions__r_0010_0009__2_r_0010_0011__5)
       &amp; r_0010_0012__in(ENTITYX6) = ENTITYX7
       &amp; isA(ENTITYX7,r_0010_0014__part)
-      &amp; isA(OPERATORX2,imperative_0010_1002)
+      &amp; isA(OPERATORX2,r_0010_1002__imperative)
       &amp; scope(OPERATORX2) = EVENTX8
       &amp; isA(EVENTX8,r_0010_0001__Write)
       &amp; arg1(EVENTX8) = ENTITYX4 ) ).

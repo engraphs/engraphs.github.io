@@ -289,32 +289,32 @@ It allows generation of multiple machine instructions from one source statement 
 <br>
 <pre>
 arc(r_0039_0002__is,r_0038_0001__Autocoder,arg0).
-arc(r_0039_0002__is,r_0039_0006__programming_system,prd2).
-arc(r_0039_0006__programming_system,r_0039_0004__advanced,attrib2).
-arc(r_0039_0006__programming_system,r_0039_0005__symbolic,attrib3).
+arc(r_0039_0002__is,r_0039_0006__programming__r_0039_0007__system,prd2).
+arc(r_0039_0006__programming__r_0039_0007__system,r_0039_0004__advanced,attrib2).
+arc(r_0039_0006__programming__r_0039_0007__system,r_0039_0005__symbolic,attrib3).
 arc(r_0040_0002__allows,r_0038_0001__Autocoder,arg0).
 arc(r_0040_0002__allows,r_0040_0018__and,arg1).
-arc(r_0040_0003__generation,r_0040_0006__machine_instructions,r_0040_0004__of).
-arc(r_0040_0006__machine_instructions,r_0040_0005__multiple,attrib1).
-arc(r_0040_0006__machine_instructions,r_0040_0009__one_source_statement,r_0040_0008__from).
+arc(r_0040_0003__generation,r_0040_0006__machine__r_0040_0007__instructions,r_0040_0004__of).
+arc(r_0040_0006__machine__r_0040_0007__instructions,r_0040_0005__multiple,attrib1).
+arc(r_0040_0006__machine__r_0040_0007__instructions,r_0040_0009__one_r_0040_0010__source_r_0040_0011__statement,r_0040_0008__from).
 arc(r_0040_0015__form,r_0040_0013__free,attrib1).
 arc(r_0040_0016__coding,r_0040_0015__form,nlyr1).
 arc(r_0040_0018__and,r_0040_0003__generation,conj1).
 arc(r_0040_0018__and,r_0040_0016__coding,conj2).
-arc(r_0040_0018__and,r_0040_0021__assembly_process,conj3).
-arc(r_0040_0021__assembly_process,r_0040_0020__automatic,attrib2).
-arc(r_0040_0021__assembly_process,r_0040_0025__tape,r_0040_0023__through).
+arc(r_0040_0018__and,r_0040_0021__assembly__r_0040_0022__process,conj3).
+arc(r_0040_0021__assembly__r_0040_0022__process,r_0040_0020__automatic,attrib2).
+arc(r_0040_0021__assembly__r_0040_0022__process,r_0040_0025__tape,r_0040_0023__through).
 arc(r_0040_0025__tape,r_0040_0024__magnetic,attrib1).
 arc(z_0038_1006,r_0038_0001__Autocoder,z_0038_1004).
 
 </pre>
 <br>
 <pre>
-fof(id_38_A_IBM_1401__39_A_IBM_1401__40_A_IBM_1401,axiom,
+fof(id__38_A_IBM_1401__39_A_IBM_1401__40_A_IBM_1401,axiom,
     ? [AUTOCODERX8,AUTOCODERX13,EVENTX26,EVENTX12,EVENTX7,ENTITYX14,ENTITYX15,ENTITYX19,ENTITYX22,ENTITYX24,ENTITYX20,ENTITYX16,ENTITYX18,ENTITYX9,AUTOCODERX5,ATTRIBX23,ATTRIBX25,ATTRIBX21,ATTRIBX17,ATTRIBX10,ATTRIBX11] :
       ( isA(AUTOCODERX5,r_0038_0001__Autocoder)
       &amp; AUTOCODERX8 = AUTOCODERX5
-      &amp; isA(ENTITYX9,r_0039_0006__programming_system)
+      &amp; isA(ENTITYX9,r_0039_0006__programming__r_0039_0007__system)
       &amp; attrib2(ENTITYX9) = ATTRIBX10
       &amp; attrib3(ENTITYX9) = ATTRIBX11
       &amp; AUTOCODERX13 = AUTOCODERX5
@@ -324,15 +324,15 @@ fof(id_38_A_IBM_1401__39_A_IBM_1401__40_A_IBM_1401,axiom,
       &amp; conj3(ENTITYX14) = ENTITYX22
       &amp; isA(ENTITYX15,r_0040_0003__generation)
       &amp; r_0040_0004__of(ENTITYX15) = ENTITYX16
-      &amp; isA(ENTITYX16,r_0040_0006__machine_instructions)
+      &amp; isA(ENTITYX16,r_0040_0006__machine__r_0040_0007__instructions)
       &amp; attrib1(ENTITYX16) = ATTRIBX17
       &amp; r_0040_0008__from(ENTITYX16) = ENTITYX18
-      &amp; isA(ENTITYX18,r_0040_0009__one_source_statement)
+      &amp; isA(ENTITYX18,r_0040_0009__one__r_0040_0010__source_r_0040_0011__statement)
       &amp; isA(ENTITYX19,r_0040_0016__coding)
       &amp; nlyr1(ENTITYX19) = ENTITYX20
       &amp; isA(ENTITYX20,r_0040_0015__form)
       &amp; attrib1(ENTITYX20) = ATTRIBX21
-      &amp; isA(ENTITYX22,r_0040_0021__assembly_process)
+      &amp; isA(ENTITYX22,r_0040_0021__assembly__r_0040_0022__process)
       &amp; attrib2(ENTITYX22) = ATTRIBX23
       &amp; r_0040_0023__through(ENTITYX22) = ENTITYX24
       &amp; isA(ENTITYX24,r_0040_0025__tape)

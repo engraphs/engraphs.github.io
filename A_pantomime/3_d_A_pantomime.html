@@ -168,8 +168,8 @@ Each year will be attending on separate nights in the week starting Monday 21st 
 </svg>
 <br>
 <pre>
-arc(r_0004_0001__quantificational__Each,r_0004_0002__year,restriction).
-arc(r_0004_0001__quantificational__Each,r_0004_0003__will,scope).
+arc(r_0004_0001__quantificational__r_0004_0001__Each,r_0004_0002__year,restriction).
+arc(r_0004_0001__quantificational__r_0004_0001__Each,r_0004_0003__will,scope).
 arc(r_0004_0003__will,r_0004_0004__be,scope).
 arc(r_0004_0004__be,r_0004_0005__attending,catenative).
 arc(r_0004_0005__attending,r_0004_0002__year,arg0).
@@ -177,12 +177,12 @@ arc(r_0004_0005__attending,r_0004_0008__nights,r_0004_0006__on_tmp).
 arc(r_0004_0008__nights,r_0004_0007__separate,attrib1).
 arc(r_0004_0008__nights,r_0004_0011__week,r_0004_0009__in).
 arc(r_0004_0012__starting,r_0004_0011__week,arg0).
-arc(r_0004_0012__starting,r_0004_0013__Monday_21st,tmp).
+arc(r_0004_0012__starting,r_0004_0013__Monday__r_0004_0014__21st,tmp).
 
 </pre>
 <br>
 <pre>
-fof(id_4_A_pantomime,axiom,
+fof(id__4_A_pantomime,axiom,
     ? [CATENATIVEX4,QUANTX2,OPERATORX3,EVENTX11,EVENTX10,EVENTX9,ENTITYX1,ENTITYX5,ENTITYX7,ENTITYX8,ATTRIBX6] :
       ( CATENATIVEX4 = EVENTX10
       &amp; isA(EVENTX10,r_0004_0005__attending)
@@ -195,9 +195,9 @@ fof(id_4_A_pantomime,axiom,
       &amp; arg0(EVENTX9) = ENTITYX7
       &amp; tmp(EVENTX9) = ENTITYX8
       &amp; isA(ENTITYX7,r_0004_0011__week)
-      &amp; isA(ENTITYX8,r_0004_0013__Monday_21st)
+      &amp; isA(ENTITYX8,r_0004_0013__Monday__r_0004_0014__21st)
       &amp; isA(ATTRIBX6,r_0004_0007__separate)
-      &amp; isA(QUANTX2,r_0004_0001__quantificational__Each)
+      &amp; isA(QUANTX2,r_0004_0001__quantificational__r_0004_0001__Each)
       &amp; restriction(QUANTX2) = ENTITYX1
       &amp; isA(ENTITYX1,r_0004_0002__year)
       &amp; scope(QUANTX2) = OPERATORX3

@@ -220,25 +220,25 @@ Down below , in the center of the ruined city , a single half-broken detector va
 </svg>
 <br>
 <pre>
-arc(mnr_0607_1010,r_0607_0017__moved,scope).
-arc(mnr_0607_1010,r_0607_0020__catching,restriction).
 arc(r_0607_0002__below,r_0607_0001__Down,quality1).
 arc(r_0607_0006__center,r_0607_0010__city,r_0607_0007__of).
 arc(r_0607_0010__city,r_0607_0009__ruined,attrib2).
-arc(r_0607_0015__detector_vane,r_0607_0013__single,attrib2).
-arc(r_0607_0015__detector_vane,r_0607_0014__half_broken,attrib3).
+arc(r_0607_0015__detector__r_0607_0016__vane,r_0607_0013__single,attrib2).
+arc(r_0607_0015__detector__r_0607_0016__vane,r_0607_0014__half_broken,attrib3).
 arc(r_0607_0017__moved,r_0607_0002__below,loc1).
 arc(r_0607_0017__moved,r_0607_0006__center,r_0607_0004__in_loc).
-arc(r_0607_0017__moved,r_0607_0015__detector_vane,arg0).
+arc(r_0607_0017__moved,r_0607_0015__detector__r_0607_0016__vane,arg0).
 arc(r_0607_0017__moved,r_0607_0018__slightly,mnr7).
-arc(r_0607_0020__catching,r_0607_0015__detector_vane,arg0).
+arc(r_0607_0020__catching,r_0607_0015__detector__r_0607_0016__vane,arg0).
 arc(r_0607_0020__catching,r_0607_0022__roar,arg1).
 arc(r_0607_0022__roar,r_0607_0025__ship,r_0607_0023__of).
+arc(r_0607_1010__mnr,r_0607_0017__moved,scope).
+arc(r_0607_1010__mnr,r_0607_0020__catching,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_607_A_DICK_1952,axiom,
+fof(id__607_A_DICK_1952,axiom,
     ? [CONNX11,EVENTX14,EVENTX15,QUALITYX1,QUALITYX9,QUALITYX2,ENTITYX3,ENTITYX6,ENTITYX12,ENTITYX13,ENTITYX4,ATTRIBX7,ATTRIBX8,ATTRIBX5] :
       ( isA(QUALITYX1,r_0607_0002__below)
       &amp; quality1(QUALITYX1) = QUALITYX2
@@ -248,7 +248,7 @@ fof(id_607_A_DICK_1952,axiom,
       &amp; r_0607_0007__of(ENTITYX3) = ENTITYX4
       &amp; isA(ENTITYX4,r_0607_0010__city)
       &amp; attrib2(ENTITYX4) = ATTRIBX5
-      &amp; isA(ENTITYX6,r_0607_0015__detector_vane)
+      &amp; isA(ENTITYX6,r_0607_0015__detector__r_0607_0016__vane)
       &amp; attrib2(ENTITYX6) = ATTRIBX7
       &amp; attrib3(ENTITYX6) = ATTRIBX8
       &amp; isA(ENTITYX12,r_0607_0022__roar)
@@ -257,7 +257,7 @@ fof(id_607_A_DICK_1952,axiom,
       &amp; isA(ATTRIBX5,r_0607_0009__ruined)
       &amp; isA(ATTRIBX7,r_0607_0013__single)
       &amp; isA(ATTRIBX8,r_0607_0014__half_broken)
-      &amp; isA(CONNX11,mnr_0607_1010)
+      &amp; isA(CONNX11,r_0607_1010__mnr)
       &amp; scope(CONNX11) = EVENTX15
       &amp; isA(EVENTX15,r_0607_0017__moved)
       &amp; loc1(EVENTX15) = QUALITYX1

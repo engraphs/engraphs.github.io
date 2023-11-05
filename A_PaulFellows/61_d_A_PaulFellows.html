@@ -330,21 +330,21 @@ arc(r_0073_0013__and,r_0073_0008__started,conj1).
 arc(r_0073_0013__and,r_0073_0014__started,conj2).
 arc(r_0073_0014__started,r_0073_0015__swapping,catenative).
 arc(r_0073_0015__swapping,r_0073_0007__system,arg0).
-arc(r_0073_0015__swapping,r_0073_0019__4MB_machine,r_0073_0017__on_loc).
+arc(r_0073_0015__swapping,r_0073_0019__4MB__r_0073_0020__machine,r_0073_0017__on_loc).
 arc(r_0073_0021__and,r_0073_0013__and,conj1).
 arc(r_0073_0021__and,r_0073_0027__started,conj2).
 arc(r_0073_0023__hands,r_0073_0026__clock,r_0073_0024__on).
-arc(r_0073_0027__started,r_0073_0030__quantificational__every,catenative).
+arc(r_0073_0027__started,r_0073_0030__quantificational__r_0073_0030__every,catenative).
 arc(r_0073_0028__ticking,r_0073_0023__hands,arg0).
 arc(r_0073_0028__ticking,r_0073_0029__once,mnr2).
-arc(r_0073_0028__ticking,r_0073_0031__16_seconds,tmp).
-arc(r_0073_0030__quantificational__every,r_0073_0028__ticking,scope).
-arc(r_0073_0030__quantificational__every,r_0073_0031__16_seconds,restriction).
+arc(r_0073_0028__ticking,r_0073_0031__16__r_0073_0032__seconds,tmp).
+arc(r_0073_0030__quantificational__r_0073_0030__every,r_0073_0028__ticking,scope).
+arc(r_0073_0030__quantificational__r_0073_0030__every,r_0073_0031__16__r_0073_0032__seconds,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_73_A_PaulFellows,axiom,
+fof(id__73_A_PaulFellows,axiom,
     ? [STATEX6,CATENATIVEX11,CATENATIVEX18,CONNX1,CONJX24,EVENTX23,QUANTX21,EVENTX22,CONJX15,EVENTX14,EVENTX13,EVENTX10,EVENTX9,EVENTX4,ENTITYX16,ENTITYX20,ENTITYX17,ENTITYX5,ENTITYX12,ENTITYX7,ENTITYX2,ATTRIBX8,ATTRIBX3,QUALITYX19] :
       ( STATEX6 = EVENTX9
       &amp; isA(EVENTX9,r_0073_0010__engage)
@@ -355,9 +355,9 @@ fof(id_73_A_PaulFellows,axiom,
       &amp; arg0(EVENTX13) = ENTITYX5
       &amp; r_0073_0017__on_loc(EVENTX13) = ENTITYX12
       &amp; CATENATIVEX18 = QUANTX21
-      &amp; isA(QUANTX21,r_0073_0030__quantificational__every)
+      &amp; isA(QUANTX21,r_0073_0030__quantificational__r_0073_0030__every)
       &amp; restriction(QUANTX21) = ENTITYX20
-      &amp; isA(ENTITYX20,r_0073_0031__16_seconds)
+      &amp; isA(ENTITYX20,r_0073_0031__16__r_0073_0032__seconds)
       &amp; scope(QUANTX21) = EVENTX22
       &amp; isA(EVENTX22,r_0073_0028__ticking)
       &amp; arg0(EVENTX22) = ENTITYX16
@@ -368,7 +368,7 @@ fof(id_73_A_PaulFellows,axiom,
       &amp; isA(ENTITYX5,r_0073_0007__system)
       &amp; isA(ENTITYX7,r_0073_0012__memory)
       &amp; attrib1(ENTITYX7) = ATTRIBX8
-      &amp; isA(ENTITYX12,r_0073_0019__4MB_machine)
+      &amp; isA(ENTITYX12,r_0073_0019__4MB__r_0073_0020__machine)
       &amp; isA(ENTITYX16,r_0073_0023__hands)
       &amp; r_0073_0024__on(ENTITYX16) = ENTITYX17
       &amp; isA(ENTITYX17,r_0073_0026__clock)

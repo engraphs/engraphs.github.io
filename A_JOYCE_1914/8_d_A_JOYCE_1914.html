@@ -564,10 +564,8 @@ When we knew him first he used to be rather interesting , talking of faints and 
 </svg>
 <br>
 <pre>
-arc(cnt_0015_1011,r_0015_0007__used,scope).
-arc(cnt_0015_1011,r_0015_0013__talking,restriction).
-arc(r_0015_0001__When_tmp,cnt_0015_1011,scope).
 arc(r_0015_0001__When_tmp,r_0015_0003__knew,restriction).
+arc(r_0015_0001__When_tmp,r_0015_1011__cnt,scope).
 arc(r_0015_0003__knew,r_0015_0002__we,arg0).
 arc(r_0015_0003__knew,r_0015_0004__him,arg1).
 arc(r_0015_0003__knew,r_0015_0005__first,tmp4).
@@ -590,19 +588,21 @@ arc(r_0015_0026__and,r_0015_0029__stories,conj2).
 arc(r_0015_0029__stories,r_0015_0004__him,genv).
 arc(r_0015_0029__stories,r_0015_0028__endless,attrib2).
 arc(r_0015_0029__stories,r_0015_0032__distillery,r_0015_0030__about).
+arc(r_0015_1011__cnt,r_0015_0007__used,scope).
+arc(r_0015_1011__cnt,r_0015_0013__talking,restriction).
+arc(r_0015_1032__utterance,r_0016_0003__have,part1).
 arc(r_0016_0003__have,r_0015_0004__him,arg0).
 arc(r_0016_0003__have,r_0016_0006__theory,arg1).
 arc(r_0016_0006__theory,r_0016_0008__it,r_0016_0007__about).
 arc(r_0016_0006__theory,z_0015_1038,genv).
 arc(r_0016_0012__said,r_0015_0004__him,arg0).
-arc(r_0016_0012__said,utterance_0015_1032,arg1).
+arc(r_0016_0012__said,r_0015_1032__utterance,arg1).
 arc(r_0017_0003__think,r_0015_0004__him,arg0).
 arc(r_0017_0003__think,r_0017_0005__was,arg1).
 arc(r_0017_0005__was,r_0017_0004__it,arg0).
 arc(r_0017_0005__was,r_0017_0006__one,prd2).
 arc(r_0017_0006__one,r_0017_0011__cases,r_0017_0007__of).
 arc(r_0017_0011__cases,r_0017_0010__peculiar,attrib3).
-arc(utterance_0015_1032,r_0016_0003__have,part1).
 arc(z_0015_1018,r_0015_0009__be,catenative).
 arc(z_0015_1038,r_0015_0020__I,genv).
 arc(z_0015_1038,r_0016_0005__own,attrib2).
@@ -610,14 +610,14 @@ arc(z_0015_1038,r_0016_0005__own,attrib2).
 </pre>
 <br>
 <pre>
-fof(id_15_A_JOYCE_1914__16_A_JOYCE_1914__17_A_JOYCE_1914,axiom,
+fof(id__15_A_JOYCE_1914__16_A_JOYCE_1914__17_A_JOYCE_1914,axiom,
     ? [STATEX7,STATEX30,STATEX44,COTTERX6,COTTERX23,COTTERX25,COTTERX33,SPEAKERX36,COTTERX41,COTTERX43,EVENTX49,EVENTX48,EVENTX42,CONJX40,EVENTX39,CONJX29,EVENTX28,CONNX3,CONNX12,OPERATORX17,EVENTX19,EVENTX16,EVENTX10,EVENTX5,ENTITYX45,ENTITYX46,ENTITYX34,ENTITYX35,ENTITYX22,ENTITYX24,ENTITYX27,ENTITYX13,ENTITYX14,ENTITYX15,QUALITYX20,QUALITYX9,QUALITYX4,ATTRIBX47,ATTRIBX37,ATTRIBX21,ATTRIBX26,ATTRIBX8] :
       ( STATEX7 = EVENTX10
       &amp; isA(EVENTX10,r_0015_0009__be)
       &amp; arg0(EVENTX10) = COTTERX6
       &amp; prd2(EVENTX10) = ATTRIBX8
       &amp; STATEX30 = CONJX40
-      &amp; isA(CONJX40,utterance_0015_1032)
+      &amp; isA(CONJX40,r_0015_1032__utterance)
       &amp; part1(CONJX40) = EVENTX39
       &amp; isA(EVENTX39,r_0016_0003__have)
       &amp; arg0(EVENTX39) = COTTERX33
@@ -675,7 +675,7 @@ fof(id_15_A_JOYCE_1914__16_A_JOYCE_1914__17_A_JOYCE_1914,axiom,
       &amp; arg1(EVENTX5) = r_0015_0004__him
       &amp; tmp4(EVENTX5) = QUALITYX4
       &amp; scope(CONNX3) = CONNX12
-      &amp; isA(CONNX12,cnt_0015_1011)
+      &amp; isA(CONNX12,r_0015_1011__cnt)
       &amp; restriction(CONNX12) = EVENTX16
       &amp; isA(EVENTX16,r_0015_0013__talking)
       &amp; arg0(EVENTX16) = COTTERX6

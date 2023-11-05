@@ -189,9 +189,9 @@ Even the snow-capped summit of Mont Blanc , seven miles below , was not recognis
 <pre>
 arc(r_0019_0001__Even,r_0019_0014__not,scope).
 arc(r_0019_0004__summit,r_0019_0003__snow_capped,attrib2).
-arc(r_0019_0004__summit,r_0019_0006__Mont_Blanc,r_0019_0005__of).
-arc(r_0019_0006__Mont_Blanc,r_0019_0011__below,quality4).
-arc(r_0019_0011__below,r_0019_0009__seven_miles,modifier1).
+arc(r_0019_0004__summit,r_0019_0006__Mont__r_0019_0007__Blanc,r_0019_0005__of).
+arc(r_0019_0006__Mont__r_0019_0007__Blanc,r_0019_0011__below,quality4).
+arc(r_0019_0011__below,r_0019_0009__seven__r_0019_0010__miles,modifier1).
 arc(r_0019_0013__was,r_0019_0004__summit,arg0).
 arc(r_0019_0013__was,r_0019_0015__recognisable,prd2).
 arc(r_0019_0014__not,r_0019_0013__was,scope).
@@ -202,12 +202,12 @@ arc(r_0019_0021__peaks,r_0019_0020__lower,attrib1).
 </pre>
 <br>
 <pre>
-fof(id_19_A_lob_N01,axiom,
+fof(id__19_A_lob_N01,axiom,
     ? [OPERATORX1,OPERATORX10,EVENTX11,ENTITYX2,ENTITYX7,ENTITYX8,ENTITYX5,ATTRIBX6,ATTRIBX9,ATTRIBX3,QUALITYX4] :
       ( isA(ENTITYX2,r_0019_0004__summit)
       &amp; attrib2(ENTITYX2) = ATTRIBX3
-      &amp; r_0019_0005__of(ENTITYX2) = r_0019_0006__Mont_Blanc
-      &amp; isA(ENTITYX5,r_0019_0009__seven_miles)
+      &amp; r_0019_0005__of(ENTITYX2) = r_0019_0006__Mont__r_0019_0007__Blanc
+      &amp; isA(ENTITYX5,r_0019_0009__seven__r_0019_0010__miles)
       &amp; isA(ENTITYX7,r_0019_0018__host)
       &amp; r_0019_0019__of(ENTITYX7) = ENTITYX8
       &amp; isA(ENTITYX8,r_0019_0021__peaks)
@@ -216,8 +216,8 @@ fof(id_19_A_lob_N01,axiom,
       &amp; isA(ATTRIBX6,r_0019_0015__recognisable)
       &amp; r_0019_0016__among(ATTRIBX6) = ENTITYX7
       &amp; isA(ATTRIBX9,r_0019_0020__lower)
-      &amp; isA(r_0019_0006__Mont_Blanc,r_0019_0006__Mont_Blanc)
-      &amp; quality4(r_0019_0006__Mont_Blanc) = QUALITYX4
+      &amp; isA(r_0019_0006__Mont__r_0019_0007__Blanc,r_0019_0006__Mont_r_0019_0007__Blanc)
+      &amp; quality4(r_0019_0006__Mont__r_0019_0007__Blanc) = QUALITYX4
       &amp; isA(QUALITYX4,r_0019_0011__below)
       &amp; modifier1(QUALITYX4) = ENTITYX5
       &amp; isA(OPERATORX1,r_0019_0001__Even)

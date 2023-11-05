@@ -409,8 +409,6 @@ There 's an awful lot of components on there by today 's standards , I think it 
 </svg>
 <br>
 <pre>
-arc(cnt_0050_1022,r_0050_0038__use,scope).
-arc(cnt_0050_1022,r_0050_0040__design,restriction).
 arc(r_0050_0002___apos_s,r_0050_0005__lot,arg0).
 arc(r_0050_0002___apos_s,r_0050_0009__there,r_0050_0008__on_loc).
 arc(r_0050_0002___apos_s,r_0050_0013__standards,r_0050_0010__by_rst).
@@ -422,27 +420,29 @@ arc(r_0050_0016__think,r_0050_0015__I,arg0).
 arc(r_0050_0016__think,r_0050_0022__because_cnt,arg1).
 arc(r_0050_0016__think,r_0050_0043__could,prn5).
 arc(r_0050_0018__broke,r_0050_0017__it,arg0).
-arc(r_0050_0018__broke,r_0050_0020__CAD_program,arg1).
+arc(r_0050_0018__broke,r_0050_0020__CAD__r_0050_0021__program,arg1).
 arc(r_0050_0022__because_cnt,r_0050_0018__broke,scope).
 arc(r_0050_0022__because_cnt,r_0050_0024__were,restriction).
 arc(r_0050_0024__were,z_0050_1014,arg0).
 arc(r_0050_0025__more,r_0050_0027__512,r_0050_0026__than).
 arc(r_0050_0035__were,r_0050_0036__trying,catenative).
-arc(r_0050_0036__trying,cnt_0050_1022,catenative).
-arc(r_0050_0038__use,r_0050_0030__CAD_program,arg1).
+arc(r_0050_0036__trying,r_0050_1022__cnt,catenative).
+arc(r_0050_0038__use,r_0050_0030__CAD__r_0050_0031__program,arg1).
 arc(r_0050_0038__use,r_0050_0034__guys,arg0).
 arc(r_0050_0040__design,r_0050_0034__guys,arg0).
 arc(r_0050_0040__design,r_0050_0042__hardware,arg1).
 arc(r_0050_0043__could,r_0050_0044__n_apos_t,scope).
 arc(r_0050_0044__n_apos_t,r_0050_0045__handle,scope).
-arc(r_0050_0045__handle,r_0050_0030__CAD_program,arg0).
+arc(r_0050_0045__handle,r_0050_0030__CAD__r_0050_0031__program,arg0).
 arc(r_0050_0045__handle,r_0050_0042__hardware,arg1).
+arc(r_0050_1022__cnt,r_0050_0038__use,scope).
+arc(r_0050_1022__cnt,r_0050_0040__design,restriction).
 arc(z_0050_1014,r_0050_0025__more,attrib1).
 
 </pre>
 <br>
 <pre>
-fof(id_50_A_PaulFellows,axiom,
+fof(id__50_A_PaulFellows,axiom,
     ? [EVENTX7,STATEX8,EVENTX17,CATENATIVEX20,STATEX21,HARDWAREX29,EVENTX34,EVENTX33,OPERATORX30,OPERATORX31,EVENTX32,EVENTX28,EVENTX27,CONNX23,EVENTX25,EVENTX26,CONNX10,EVENTX15,EVENTX16,ENTITYX1,ENTITYX5,ENTITYX18,ENTITYX19,HARDWAREX24,ENTITYX9,ENTITYX11,ENTITYX13,ENTITYX6,ENTITYX3,ATTRIBX12,ATTRIBX2,QUALITYX4] :
       ( EVENTX7 = EVENTX33
       &amp; isA(EVENTX33,r_0050_0016__think)
@@ -470,7 +470,7 @@ fof(id_50_A_PaulFellows,axiom,
       &amp; isA(EVENTX27,r_0050_0036__trying)
       &amp; catenative(EVENTX27) = STATEX21
       &amp; STATEX21 = CONNX23
-      &amp; isA(CONNX23,cnt_0050_1022)
+      &amp; isA(CONNX23,r_0050_1022__cnt)
       &amp; scope(CONNX23) = EVENTX26
       &amp; isA(EVENTX26,r_0050_0038__use)
       &amp; arg0(EVENTX26) = ENTITYX19
@@ -486,13 +486,13 @@ fof(id_50_A_PaulFellows,axiom,
       &amp; isA(ENTITYX5,r_0050_0013__standards)
       &amp; genv(ENTITYX5) = ENTITYX6
       &amp; isA(ENTITYX6,r_0050_0011__today)
-      &amp; isA(ENTITYX9,r_0050_0020__CAD_program)
+      &amp; isA(ENTITYX9,r_0050_0020__CAD__r_0050_0021__program)
       &amp; isA(ENTITYX11,z_0050_1014)
       &amp; attrib1(ENTITYX11) = ATTRIBX12
       &amp; isA(ENTITYX13,r_0050_0027__512)
       &amp; isA(EVENTX28,r_0050_0035__were)
       &amp; catenative(EVENTX28) = CATENATIVEX20
-      &amp; isA(ENTITYX18,r_0050_0030__CAD_program)
+      &amp; isA(ENTITYX18,r_0050_0030__CAD__r_0050_0031__program)
       &amp; isA(ENTITYX19,r_0050_0034__guys)
       &amp; isA(HARDWAREX24,r_0050_0042__hardware)
       &amp; HARDWAREX29 = HARDWAREX24

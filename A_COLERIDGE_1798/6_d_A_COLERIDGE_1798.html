@@ -632,23 +632,19 @@ And all who heard should see them there , And all should cry , Beware ! Beware !
 </svg>
 <br>
 <pre>
-arc(imperative_0011_1018,r_0011_0015__Beware,scope).
-arc(imperative_0011_1023,r_0011_0017__Beware,scope).
-arc(imperative_0011_1041,r_0011_0027__Weave,scope).
-arc(imperative_0011_1049,r_0011_0041__For_cnt,scope).
-arc(r_0011_0002__quantificational__all,r_0011_0005__should,scope).
-arc(r_0011_0002__quantificational__all,z_0011_1004,restriction).
+arc(r_0011_0002__quantificational__r_0011_0002__all,r_0011_0005__should,scope).
+arc(r_0011_0002__quantificational__r_0011_0002__all,z_0011_1004,restriction).
 arc(r_0011_0004__heard,z_0011_1004,arg0).
 arc(r_0011_0005__should,r_0011_0006__see,scope).
 arc(r_0011_0006__see,r_0011_0007__them,arg1).
 arc(r_0011_0006__see,r_0011_0008__there,loc6).
 arc(r_0011_0006__see,z_0011_1004,arg0).
-arc(r_0011_0010__And,r_0011_0002__quantificational__all,conj1).
-arc(r_0011_0010__And,r_0011_0011__quantificational__all,conj2).
-arc(r_0011_0011__quantificational__all,r_0011_0012__should,scope).
-arc(r_0011_0011__quantificational__all,z_0011_1011,restriction).
+arc(r_0011_0010__And,r_0011_0002__quantificational__r_0011_0002__all,conj1).
+arc(r_0011_0010__And,r_0011_0011__quantificational__r_0011_0011__all,conj2).
+arc(r_0011_0011__quantificational__r_0011_0011__all,r_0011_0012__should,scope).
+arc(r_0011_0011__quantificational__r_0011_0011__all,z_0011_1011,restriction).
 arc(r_0011_0012__should,r_0011_0013__cry,scope).
-arc(r_0011_0013__cry,utterance_0011_1014,arg1).
+arc(r_0011_0013__cry,r_0011_1014__utterance,arg1).
 arc(r_0011_0013__cry,z_0011_1011,arg0).
 arc(r_0011_0021__eyes,r_0011_0019__His,genv).
 arc(r_0011_0021__eyes,r_0011_0020__flashing,attrib2).
@@ -671,11 +667,15 @@ arc(r_0011_0048__And,z_0011_1062,conj2).
 arc(r_0011_0049__drunk,r_0011_0019__His,arg0).
 arc(r_0011_0049__drunk,r_0011_0051__milk,arg1).
 arc(r_0011_0051__milk,r_0011_0053__Paradise,r_0011_0052__of).
-arc(utterance_0011_1014,imperative_0011_1018,part1).
-arc(utterance_0011_1014,imperative_0011_1023,part2).
-arc(utterance_0011_1014,imperative_0011_1041,part4).
-arc(utterance_0011_1014,imperative_0011_1049,part5).
-arc(utterance_0011_1014,z_0011_1036,part3).
+arc(r_0011_1014__utterance,r_0011_1018__imperative,part1).
+arc(r_0011_1014__utterance,r_0011_1023__imperative,part2).
+arc(r_0011_1014__utterance,r_0011_1041__imperative,part4).
+arc(r_0011_1014__utterance,r_0011_1049__imperative,part5).
+arc(r_0011_1014__utterance,z_0011_1036,part3).
+arc(r_0011_1018__imperative,r_0011_0015__Beware,scope).
+arc(r_0011_1023__imperative,r_0011_0017__Beware,scope).
+arc(r_0011_1041__imperative,r_0011_0027__Weave,scope).
+arc(r_0011_1049__imperative,r_0011_0041__For_cnt,scope).
 arc(z_0011_1035,r_0011_0021__eyes,conj1).
 arc(z_0011_1035,r_0011_0025__hair,conj2).
 arc(z_0011_1036,z_0011_1035,z_0011_1028).
@@ -684,29 +684,29 @@ arc(z_0011_1062,r_0011_0049__drunk,catenative).
 </pre>
 <br>
 <pre>
-fof(id_11_A_COLERIDGE_1798,axiom,
+fof(id__11_A_COLERIDGE_1798,axiom,
     ? [STATEX12,CATENATIVEX55,CATENATIVEX59,PERSONX33,PERSONX43,PERSONX54,CONJX69,QUANTX10,OPERATORX67,EVENTX68,CONJX66,OPERATORX49,CONNX53,CONJX64,EVENTX63,EVENTX61,EVENTX58,EVENTX57,EVENTX65,OPERATORX41,EVENTX45,EVENTX37,OPERATORX23,EVENTX24,OPERATORX18,EVENTX19,QUANTX2,OPERATORX6,EVENTX7,EVENTX3,ENTITYX9,ENTITYX50,ENTITYX51,ENTITYX60,ENTITYX56,ENTITYX42,ENTITYX44,ENTITYX29,ENTITYX30,ENTITYX32,ENTITYX1,QUALITYX5,ATTRIBX52,ATTRIBX34,ATTRIBX31] :
       ( STATEX12 = CONJX66
-      &amp; isA(CONJX66,utterance_0011_1014)
+      &amp; isA(CONJX66,r_0011_1014__utterance)
       &amp; part1(CONJX66) = OPERATORX18
-      &amp; isA(OPERATORX18,imperative_0011_1018)
+      &amp; isA(OPERATORX18,r_0011_1018__imperative)
       &amp; scope(OPERATORX18) = EVENTX19
       &amp; isA(EVENTX19,r_0011_0015__Beware)
       &amp; part2(CONJX66) = OPERATORX23
-      &amp; isA(OPERATORX23,imperative_0011_1023)
+      &amp; isA(OPERATORX23,r_0011_1023__imperative)
       &amp; scope(OPERATORX23) = EVENTX24
       &amp; isA(EVENTX24,r_0011_0017__Beware)
       &amp; part3(CONJX66) = EVENTX37
       &amp; isA(EVENTX37,z_0011_1036)
       &amp; z_0011_1028(EVENTX37) = ENTITYX29
       &amp; part4(CONJX66) = OPERATORX41
-      &amp; isA(OPERATORX41,imperative_0011_1041)
+      &amp; isA(OPERATORX41,r_0011_1041__imperative)
       &amp; scope(OPERATORX41) = EVENTX45
       &amp; isA(EVENTX45,r_0011_0027__Weave)
       &amp; arg1(EVENTX45) = ENTITYX42
       &amp; mnr(EVENTX45) = ENTITYX44
       &amp; part5(CONJX66) = OPERATORX49
-      &amp; isA(OPERATORX49,imperative_0011_1049)
+      &amp; isA(OPERATORX49,r_0011_1049__imperative)
       &amp; scope(OPERATORX49) = CONNX53
       &amp; isA(CONNX53,r_0011_0041__For_cnt)
       &amp; scope(CONNX53) = EVENTX65
@@ -757,7 +757,7 @@ fof(id_11_A_COLERIDGE_1798,axiom,
       &amp; isA(ATTRIBX52,r_0011_0039__holy)
       &amp; isA(CONJX69,r_0011_0010__And)
       &amp; conj1(CONJX69) = QUANTX2
-      &amp; isA(QUANTX2,r_0011_0002__quantificational__all)
+      &amp; isA(QUANTX2,r_0011_0002__quantificational__r_0011_0002__all)
       &amp; isA(EVENTX3,r_0011_0004__heard)
       &amp; arg0(EVENTX3) = ENTITYX1
       &amp; isA(ENTITYX1,z_0011_1004)
@@ -770,7 +770,7 @@ fof(id_11_A_COLERIDGE_1798,axiom,
       &amp; arg1(EVENTX7) = r_0011_0007__them
       &amp; loc6(EVENTX7) = QUALITYX5
       &amp; conj2(CONJX69) = QUANTX10
-      &amp; isA(QUANTX10,r_0011_0011__quantificational__all)
+      &amp; isA(QUANTX10,r_0011_0011__quantificational__r_0011_0011__all)
       &amp; restriction(QUANTX10) = ENTITYX9
       &amp; isA(ENTITYX9,z_0011_1011)
       &amp; scope(QUANTX10) = OPERATORX67

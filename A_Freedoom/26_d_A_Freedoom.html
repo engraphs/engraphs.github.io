@@ -544,7 +544,6 @@ Do it right and they 'll spend more time fighting each other than fighting you ,
 </svg>
 <br>
 <pre>
-arc(imperative_0039_1025,r_0040_0004__and,scope).
 arc(r_0039_0001__If_cnt_cnd,r_0039_0002__faced,restriction).
 arc(r_0039_0001__If_cnt_cnd,r_0039_0012__can,scope).
 arc(r_0039_0002__faced,r_0039_0005__crowd,r_0039_0003__with_clr).
@@ -562,6 +561,7 @@ arc(r_0039_0022__those,r_0039_0025__back,r_0039_0023__at).
 arc(r_0039_0026__shoot,r_0039_0022__those,arg0).
 arc(r_0039_0026__shoot,r_0039_0027__those,arg1).
 arc(r_0039_0027__those,r_0039_0030__front,r_0039_0028__at).
+arc(r_0039_1025__imperative,r_0040_0004__and,scope).
 arc(r_0040_0001__Do,r_0039_0015__stand,arg1).
 arc(r_0040_0001__Do,r_0040_0003__right,prd).
 arc(r_0040_0004__and,r_0040_0001__Do,conj1).
@@ -573,8 +573,8 @@ arc(r_0040_0008__more,r_0040_0014__fighting,r_0040_0013__than).
 arc(r_0040_0009__time,r_0040_0008__more,attrib1).
 arc(r_0040_0010__fighting,r_0040_0009__time,arg0).
 arc(r_0040_0010__fighting,z_0039_1039,arg1).
-arc(r_0040_0011__quantificational__each,r_0040_0010__fighting,scope).
-arc(r_0040_0011__quantificational__each,z_0039_1039,restriction).
+arc(r_0040_0011__quantificational__r_0040_0011__each,r_0040_0010__fighting,scope).
+arc(r_0040_0011__quantificational__r_0040_0011__each,z_0039_1039,restriction).
 arc(r_0040_0014__fighting,r_0040_0015__you,arg1).
 arc(r_0040_0017__and,r_0040_0006___apos_ll,conj1).
 arc(r_0040_0017__and,r_0040_0020__will,conj2).
@@ -587,7 +587,7 @@ arc(z_0039_1039,r_0040_0012__other,attrib2).
 </pre>
 <br>
 <pre>
-fof(id_39_A_Freedoom__40_A_Freedoom,axiom,
+fof(id__39_A_Freedoom__40_A_Freedoom,axiom,
     ? [STATEX9,EVENTX32,CATENATIVEX45,STANDX26,CROWDX29,OPERATORX25,CONJX51,CONJX50,OPERATORX44,EVENTX49,OPERATORX47,EVENTX48,OPERATORX41,EVENTX42,QUANTX37,EVENTX40,EVENTX35,EVENTX28,CONNX1,OPERATORX20,EVENTX21,CONNX15,EVENTX18,STANDX19,EVENTX6,ENTITYX43,ENTITYX30,ENTITYX36,ENTITYX7,ENTITYX12,ENTITYX17,ENTITYX16,CROWDX4,ENTITYX5,ATTRIBX31,ATTRIBX38,ATTRIBX27,ATTRIBX14,ATTRIBX8,QUALITYX13] :
       ( STATEX9 = CONNX15
       &amp; isA(CONNX15,r_0039_0021__so_that_cnt)
@@ -618,7 +618,7 @@ fof(id_39_A_Freedoom__40_A_Freedoom,axiom,
       &amp; isA(ENTITYX17,r_0039_0030__front)
       &amp; STANDX26 = STANDX19
       &amp; CROWDX29 = CROWDX4
-      &amp; isA(QUANTX37,r_0040_0011__quantificational__each)
+      &amp; isA(QUANTX37,r_0040_0011__quantificational__r_0040_0011__each)
       &amp; restriction(QUANTX37) = ENTITYX36
       &amp; isA(ENTITYX36,z_0039_1039)
       &amp; attrib2(ENTITYX36) = ATTRIBX38
@@ -650,7 +650,7 @@ fof(id_39_A_Freedoom__40_A_Freedoom,axiom,
       &amp; isA(EVENTX21,r_0039_0013__be)
       &amp; arg0(EVENTX21) = ENTITYX7
       &amp; prd2(EVENTX21) = STATEX9
-      &amp; isA(OPERATORX25,imperative_0039_1025)
+      &amp; isA(OPERATORX25,r_0039_1025__imperative)
       &amp; scope(OPERATORX25) = CONJX51
       &amp; isA(CONJX51,r_0040_0004__and)
       &amp; conj1(CONJX51) = EVENTX28

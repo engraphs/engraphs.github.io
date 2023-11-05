@@ -352,14 +352,14 @@ arc(r_0049_0005__surprised,r_0049_0007__learn,arg1).
 arc(r_0049_0007__learn,r_0049_0001__I,arg0).
 arc(r_0049_0007__learn,r_0049_0010__should,arg1).
 arc(r_0049_0010__should,r_0049_0011__not,scope).
-arc(r_0049_0011__not,r_0049_0012__leave_out,scope).
-arc(r_0049_0012__leave_out,r_0049_0009__we,arg0).
-arc(r_0049_0012__leave_out,r_0049_0014__and,arg1).
-arc(r_0049_0012__leave_out,r_0049_0018__hedgehogs,r_0049_0017__for_bnf).
+arc(r_0049_0011__not,r_0049_0012__leave__r_0049_0016__out,scope).
+arc(r_0049_0012__leave__r_0049_0016__out,r_0049_0009__we,arg0).
+arc(r_0049_0012__leave__r_0049_0016__out,r_0049_0014__and,arg1).
+arc(r_0049_0012__leave__r_0049_0016__out,r_0049_0018__hedgehogs,r_0049_0017__for_bnf).
 arc(r_0049_0014__and,r_0049_0013__milk,conj1).
 arc(r_0049_0014__and,r_0049_0015__bread,conj2).
 arc(r_0050_0001__Additionally,r_0050_0005__are,scope).
-arc(r_0050_0005__are,r_0050_0003__slug_pellets,arg0).
+arc(r_0050_0005__are,r_0050_0003__slug__r_0050_0004__pellets,arg0).
 arc(r_0050_0005__are,r_0050_0008__danger,prd2).
 arc(r_0050_0008__danger,r_0050_0007__great,attrib2).
 arc(r_0050_0010__can,r_0050_0011__be,scope).
@@ -371,7 +371,7 @@ arc(r_0050_0013__harmful,r_0050_0012__fatally,quality1).
 </pre>
 <br>
 <pre>
-fof(id_49_A_Hedgehog,axiom,
+fof(id__49_A_Hedgehog,axiom,
     ? [CATENATIVEX1,STATEX5,STATEX6,HEDGEHOGSX23,OPERATORX17,EVENTX26,OPERATORX24,EVENTX25,EVENTX16,OPERATORX3,OPERATORX4,EVENTX15,EVENTX14,OPERATORX11,OPERATORX12,EVENTX13,ENTITYX18,ENTITYX19,ENTITYX7,HEDGEHOGSX10,ENTITYX8,ENTITYX9,ATTRIBX20,ATTRIBX21,QUALITYX22] :
       ( CATENATIVEX1 = OPERATORX3
       &amp; isA(OPERATORX3,r_0049_0003__also)
@@ -390,7 +390,7 @@ fof(id_49_A_Hedgehog,axiom,
       &amp; scope(OPERATORX11) = OPERATORX12
       &amp; isA(OPERATORX12,r_0049_0011__not)
       &amp; scope(OPERATORX12) = EVENTX13
-      &amp; isA(EVENTX13,r_0049_0012__leave_out)
+      &amp; isA(EVENTX13,r_0049_0012__leave__r_0049_0016__out)
       &amp; arg0(EVENTX13) = r_0049_0009__we
       &amp; arg1(EVENTX13) = ENTITYX7
       &amp; r_0049_0017__for_bnf(EVENTX13) = HEDGEHOGSX10
@@ -400,7 +400,7 @@ fof(id_49_A_Hedgehog,axiom,
       &amp; isA(ENTITYX8,r_0049_0013__milk)
       &amp; isA(ENTITYX9,r_0049_0015__bread)
       &amp; isA(HEDGEHOGSX10,r_0049_0018__hedgehogs)
-      &amp; isA(ENTITYX18,r_0050_0003__slug_pellets)
+      &amp; isA(ENTITYX18,r_0050_0003__slug__r_0050_0004__pellets)
       &amp; isA(OPERATORX24,r_0050_0010__can)
       &amp; scope(OPERATORX24) = EVENTX25
       &amp; isA(EVENTX25,r_0050_0011__be)

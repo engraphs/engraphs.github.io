@@ -265,13 +265,13 @@ There 's a programmable infra-red sensor and some magnetics ones and key-fob and
 </svg>
 <br>
 <pre>
-arc(r_0054_0002___apos_s,r_0054_0007__and_and,arg0).
+arc(r_0054_0002___apos_s,r_0054_0007__and__r_0054_0013__and,arg0).
 arc(r_0054_0006__sensor,r_0054_0004__programmable,attrib2).
 arc(r_0054_0006__sensor,r_0054_0005__infra_red,attrib3).
-arc(r_0054_0007__and_and,r_0054_0006__sensor,conj1).
-arc(r_0054_0007__and_and,r_0054_0011__and,conj2).
-arc(r_0054_0007__and_and,z_0054_1011,conj3).
-arc(r_0054_0011__and,r_0054_0009__magnetics_ones,conj1).
+arc(r_0054_0007__and__r_0054_0013__and,r_0054_0006__sensor,conj1).
+arc(r_0054_0007__and__r_0054_0013__and,r_0054_0011__and,conj2).
+arc(r_0054_0007__and__r_0054_0013__and,z_0054_1011,conj3).
+arc(r_0054_0011__and,r_0054_0009__magnetics__r_0054_0010__ones,conj1).
 arc(r_0054_0011__and,r_0054_0012__key_fob,conj2).
 arc(r_0054_0015__forth,r_0054_0014__so,quality1).
 arc(r_0054_0016__and,r_0054_0002___apos_s,conj1).
@@ -286,9 +286,9 @@ arc(z_0054_1011,r_0054_0015__forth,quality1).
 </pre>
 <br>
 <pre>
-fof(id_54_A_PaulFellows,axiom,
+fof(id__54_A_PaulFellows,axiom,
     ? [CONJX17,OPERATORX15,EVENTX16,EVENTX12,ENTITYX1,ENTITYX2,ENTITYX5,ENTITYX8,ENTITYX6,ENTITYX7,ATTRIBX3,ATTRIBX4,QUALITYX13,QUALITYX14,QUALITYX9,QUALITYX10] :
-      ( isA(ENTITYX1,r_0054_0007__and_and)
+      ( isA(ENTITYX1,r_0054_0007__and__r_0054_0013__and)
       &amp; conj1(ENTITYX1) = ENTITYX2
       &amp; conj2(ENTITYX1) = ENTITYX5
       &amp; conj3(ENTITYX1) = ENTITYX8
@@ -298,7 +298,7 @@ fof(id_54_A_PaulFellows,axiom,
       &amp; isA(ENTITYX5,r_0054_0011__and)
       &amp; conj1(ENTITYX5) = ENTITYX6
       &amp; conj2(ENTITYX5) = ENTITYX7
-      &amp; isA(ENTITYX6,r_0054_0009__magnetics_ones)
+      &amp; isA(ENTITYX6,r_0054_0009__magnetics__r_0054_0010__ones)
       &amp; isA(ENTITYX7,r_0054_0012__key_fob)
       &amp; isA(ENTITYX8,z_0054_1011)
       &amp; quality1(ENTITYX8) = QUALITYX9

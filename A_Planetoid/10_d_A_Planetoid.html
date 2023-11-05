@@ -240,42 +240,42 @@ Score 500 for each life - form caught in flight and 500 for each one safely retu
 </svg>
 <br>
 <pre>
-arc(imperative_0015_1002,r_0015_0001__Score,scope).
 arc(r_0015_0001__Score,r_0015_0011__and,arg1).
-arc(r_0015_0002__500,r_0015_0005__life_form,r_0015_0003__for).
-arc(r_0015_0004__quantificational__each,r_0015_0002__500,scope).
-arc(r_0015_0004__quantificational__each,r_0015_0005__life_form,restriction).
-arc(r_0015_0008__caught,r_0015_0005__life_form,arg1).
+arc(r_0015_0002__500,r_0015_0005__life__r_0015_0007__form,r_0015_0003__for).
+arc(r_0015_0004__quantificational__r_0015_0004__each,r_0015_0002__500,scope).
+arc(r_0015_0004__quantificational__r_0015_0004__each,r_0015_0005__life__r_0015_0007__form,restriction).
+arc(r_0015_0008__caught,r_0015_0005__life__r_0015_0007__form,arg1).
 arc(r_0015_0008__caught,r_0015_0010__flight,r_0015_0009__in_mnr).
 arc(r_0015_0011__and,r_0015_0002__500,conj1).
 arc(r_0015_0011__and,r_0015_0012__500,conj2).
 arc(r_0015_0012__500,r_0015_0015__one,r_0015_0013__for).
-arc(r_0015_0014__quantificational__each,r_0015_0012__500,scope).
-arc(r_0015_0014__quantificational__each,r_0015_0015__one,restriction).
+arc(r_0015_0014__quantificational__r_0015_0014__each,r_0015_0012__500,scope).
+arc(r_0015_0014__quantificational__r_0015_0014__each,r_0015_0015__one,restriction).
 arc(r_0015_0017__returned,r_0015_0015__one,arg1).
 arc(r_0015_0017__returned,r_0015_0016__safely,mnr2).
 arc(r_0015_0017__returned,r_0015_0021__surface,r_0015_0018__to_dir).
 arc(r_0015_0021__surface,r_0015_0020__planetoid,attrib2).
+arc(r_0015_1002__imperative,r_0015_0001__Score,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_15_A_Planetoid,axiom,
+fof(id__15_A_Planetoid,axiom,
     ? [OPERATORX2,EVENTX19,QUANTX13,EVENTX18,QUANTX7,EVENTX10,ENTITYX4,ENTITYX5,ENTITYX11,ENTITYX12,ENTITYX16,ENTITYX6,ENTITYX9,QUALITYX15,ATTRIBX17] :
       ( isA(ENTITYX4,r_0015_0011__and)
       &amp; conj1(ENTITYX4) = ENTITYX5
       &amp; conj2(ENTITYX4) = ENTITYX11
-      &amp; isA(QUANTX7,r_0015_0004__quantificational__each)
+      &amp; isA(QUANTX7,r_0015_0004__quantificational__r_0015_0004__each)
       &amp; isA(EVENTX10,r_0015_0008__caught)
       &amp; arg1(EVENTX10) = ENTITYX6
       &amp; r_0015_0009__in_mnr(EVENTX10) = ENTITYX9
-      &amp; isA(ENTITYX6,r_0015_0005__life_form)
+      &amp; isA(ENTITYX6,r_0015_0005__life__r_0015_0007__form)
       &amp; restriction(QUANTX7) = ENTITYX6
       &amp; scope(QUANTX7) = ENTITYX5
       &amp; isA(ENTITYX5,r_0015_0002__500)
       &amp; r_0015_0003__for(ENTITYX5) = ENTITYX6
       &amp; isA(ENTITYX9,r_0015_0010__flight)
-      &amp; isA(QUANTX13,r_0015_0014__quantificational__each)
+      &amp; isA(QUANTX13,r_0015_0014__quantificational__r_0015_0014__each)
       &amp; isA(EVENTX18,r_0015_0017__returned)
       &amp; arg1(EVENTX18) = ENTITYX12
       &amp; mnr2(EVENTX18) = QUALITYX15
@@ -289,7 +289,7 @@ fof(id_15_A_Planetoid,axiom,
       &amp; attrib2(ENTITYX16) = ATTRIBX17
       &amp; isA(QUALITYX15,r_0015_0016__safely)
       &amp; isA(ATTRIBX17,r_0015_0020__planetoid)
-      &amp; isA(OPERATORX2,imperative_0015_1002)
+      &amp; isA(OPERATORX2,r_0015_1002__imperative)
       &amp; scope(OPERATORX2) = EVENTX19
       &amp; isA(EVENTX19,r_0015_0001__Score)
       &amp; arg1(EVENTX19) = ENTITYX4 ) ).

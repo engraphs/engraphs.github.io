@@ -109,26 +109,26 @@ The Prime Minister 's reaction was to describe the September sitting as a &ldquo
 </svg>
 <br>
 <pre>
-arc(r_0049_0005__reaction,r_0049_0002__Prime_Minister,genv).
+arc(r_0049_0005__reaction,r_0049_0002__Prime__r_0049_0003__Minister,genv).
 arc(r_0049_0006__was,r_0049_0005__reaction,arg0).
 arc(r_0049_0006__was,r_0049_0008__describe,prd2).
-arc(r_0049_0008__describe,r_0049_0010__September_sitting,arg1).
+arc(r_0049_0008__describe,r_0049_0010__September__r_0049_0011__sitting,arg1).
 arc(r_0049_0008__describe,r_0049_0015__rigmarole,r_0049_0012__as_prd).
 
 </pre>
 <br>
 <pre>
-fof(id_49_A_uksc_judgment,axiom,
+fof(id__49_A_uksc_judgment,axiom,
     ? [STATEX2,EVENTX8,EVENTX7,ENTITYX1,ENTITYX5,ENTITYX6] :
       ( STATEX2 = EVENTX7
       &amp; isA(EVENTX7,r_0049_0008__describe)
       &amp; arg1(EVENTX7) = ENTITYX5
       &amp; r_0049_0012__as_prd(EVENTX7) = ENTITYX6
       &amp; isA(ENTITYX1,r_0049_0005__reaction)
-      &amp; genv(ENTITYX1) = r_0049_0002__Prime_Minister
-      &amp; isA(ENTITYX5,r_0049_0010__September_sitting)
+      &amp; genv(ENTITYX1) = r_0049_0002__Prime__r_0049_0003__Minister
+      &amp; isA(ENTITYX5,r_0049_0010__September__r_0049_0011__sitting)
       &amp; isA(ENTITYX6,r_0049_0015__rigmarole)
-      &amp; isA(r_0049_0002__Prime_Minister,r_0049_0002__Prime_Minister)
+      &amp; isA(r_0049_0002__Prime__r_0049_0003__Minister,r_0049_0002__Prime_r_0049_0003__Minister)
       &amp; isA(EVENTX8,r_0049_0006__was)
       &amp; arg0(EVENTX8) = ENTITYX1
       &amp; prd2(EVENTX8) = STATEX2 ) ).

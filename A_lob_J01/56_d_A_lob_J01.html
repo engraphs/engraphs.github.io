@@ -202,25 +202,25 @@ The -ve electrode which is the coolant stream , is joined to the voltmeter by an
 <pre>
 arc(r_0056_0003__electrode,r_0056_0002___ve,attrib2).
 arc(r_0056_0005__is,r_0056_0003__electrode,arg0).
-arc(r_0056_0005__is,r_0056_0007__coolant_stream,prd2).
+arc(r_0056_0005__is,r_0056_0007__coolant__r_0056_0008__stream,prd2).
 arc(r_0056_0010__is,r_0056_0011__joined,catenative).
 arc(r_0056_0011__joined,r_0056_0003__electrode,arg1).
 arc(r_0056_0011__joined,r_0056_0014__voltmeter,r_0056_0012__to_clr).
-arc(r_0056_0011__joined,r_0056_0018__nickel_conductor,arg0_by_lgs).
-arc(r_0056_0018__nickel_conductor,r_0056_0017__earthed,attrib2).
-arc(r_0056_0020__attached,r_0056_0018__nickel_conductor,arg0).
+arc(r_0056_0011__joined,r_0056_0018__nickel__r_0056_0019__conductor,arg0_r_0056_0015__by_lgs).
+arc(r_0056_0018__nickel__r_0056_0019__conductor,r_0056_0017__earthed,attrib2).
+arc(r_0056_0020__attached,r_0056_0018__nickel__r_0056_0019__conductor,arg0).
 arc(r_0056_0020__attached,r_0056_0023__bottom,r_0056_0021__to_clr).
-arc(r_0056_0023__bottom,r_0056_0026__well_E,r_0056_0024__of).
-arc(r_0056_0026__well_E,r_0056_0030__coolant_stream,r_0056_0028__in).
+arc(r_0056_0023__bottom,r_0056_0026__well__r_0056_0027__E,r_0056_0024__of).
+arc(r_0056_0026__well__r_0056_0027__E,r_0056_0030__coolant_r_0056_0031__stream,r_0056_0028__in).
 
 </pre>
 <br>
 <pre>
-fof(id_56_A_lob_J01,axiom,
+fof(id__56_A_lob_J01,axiom,
     ? [CATENATIVEX5,EVENTX14,EVENTX13,EVENTX12,EVENTX4,ENTITYX1,ENTITYX6,ENTITYX7,ENTITYX9,ENTITYX10,ENTITYX11,ENTITYX3,ATTRIBX8,ATTRIBX2] :
       ( CATENATIVEX5 = EVENTX13
       &amp; isA(EVENTX13,r_0056_0011__joined)
-      &amp; arg0_by_lgs(EVENTX13) = ENTITYX7
+      &amp; arg0__r_0056_0015__by_lgs(EVENTX13) = ENTITYX7
       &amp; arg1(EVENTX13) = ENTITYX1
       &amp; r_0056_0012__to_clr(EVENTX13) = ENTITYX6
       &amp; isA(EVENTX4,r_0056_0005__is)
@@ -228,18 +228,18 @@ fof(id_56_A_lob_J01,axiom,
       &amp; prd2(EVENTX4) = ENTITYX3
       &amp; isA(ENTITYX1,r_0056_0003__electrode)
       &amp; attrib2(ENTITYX1) = ATTRIBX2
-      &amp; isA(ENTITYX3,r_0056_0007__coolant_stream)
+      &amp; isA(ENTITYX3,r_0056_0007__coolant__r_0056_0008__stream)
       &amp; isA(ENTITYX6,r_0056_0014__voltmeter)
       &amp; isA(EVENTX12,r_0056_0020__attached)
       &amp; arg0(EVENTX12) = ENTITYX7
       &amp; r_0056_0021__to_clr(EVENTX12) = ENTITYX9
-      &amp; isA(ENTITYX7,r_0056_0018__nickel_conductor)
+      &amp; isA(ENTITYX7,r_0056_0018__nickel__r_0056_0019__conductor)
       &amp; attrib2(ENTITYX7) = ATTRIBX8
       &amp; isA(ENTITYX9,r_0056_0023__bottom)
       &amp; r_0056_0024__of(ENTITYX9) = ENTITYX10
-      &amp; isA(ENTITYX10,r_0056_0026__well_E)
+      &amp; isA(ENTITYX10,r_0056_0026__well__r_0056_0027__E)
       &amp; r_0056_0028__in(ENTITYX10) = ENTITYX11
-      &amp; isA(ENTITYX11,r_0056_0030__coolant_stream)
+      &amp; isA(ENTITYX11,r_0056_0030__coolant__r_0056_0031__stream)
       &amp; isA(ATTRIBX2,r_0056_0002___ve)
       &amp; isA(ATTRIBX8,r_0056_0017__earthed)
       &amp; isA(EVENTX14,r_0056_0010__is)

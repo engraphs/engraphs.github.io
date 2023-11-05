@@ -387,12 +387,12 @@ arc(r_0023_0021__duty,r_0023_0002__butler,genv).
 arc(r_0023_0023__keep,r_0023_0012__contents,arg1).
 arc(r_0023_0023__keep,r_0023_0028__condition,r_0023_0025__in_mnr).
 arc(r_0023_0028__condition,r_0023_0027__proper,attrib2).
-arc(r_0023_0031__fine_down,r_0023_0033__wine,arg1).
+arc(r_0023_0031__fine__r_0023_0032__down,r_0023_0033__wine,arg1).
 arc(r_0023_0033__wine,r_0023_0035__wood,r_0023_0034__in).
-arc(r_0023_0037__bottle_off,r_0023_0033__wine,arg1).
+arc(r_0023_0037__bottle__r_0023_0039__off,r_0023_0033__wine,arg1).
 arc(r_0023_0041__and,r_0023_0023__keep,conj1).
-arc(r_0023_0041__and,r_0023_0031__fine_down,conj2).
-arc(r_0023_0041__and,r_0023_0037__bottle_off,conj3).
+arc(r_0023_0041__and,r_0023_0031__fine__r_0023_0032__down,conj2).
+arc(r_0023_0041__and,r_0023_0037__bottle__r_0023_0039__off,conj3).
 arc(r_0023_0041__and,r_0023_0042__store,conj4).
 arc(r_0023_0042__store,r_0023_0033__wine,arg1).
 arc(r_0023_0042__store,r_0023_0044__away,dir3).
@@ -403,7 +403,7 @@ arc(r_0023_0047__suited,r_0023_0050__sorts,r_0023_0048__to_clr).
 </pre>
 <br>
 <pre>
-fof(id_23_A_BEETON_1861,axiom,
+fof(id__23_A_BEETON_1861,axiom,
     ? [EVENTX2,CATENATIVEX3,STATEX13,BUTLERX12,CELLAR_CONTENTSX14,WINEX21,WINEX23,CONJX31,EVENTX30,CONJX29,EVENTX28,EVENTX27,EVENTX22,EVENTX20,EVENTX17,EVENTX9,EVENTX5,EVENTX4,ENTITYX11,ENTITYX25,ENTITYX26,WINEX18,ENTITYX19,ENTITYX15,BUTLERX1,ENTITYX6,CELLAR_CONTENTSX7,ENTITYX8,ATTRIBX16,QUALITYX24] :
       ( EVENTX2 = EVENTX5
       &amp; isA(EVENTX5,r_0023_0005__have)
@@ -418,10 +418,10 @@ fof(id_23_A_BEETON_1861,axiom,
       &amp; arg1(EVENTX17) = CELLAR_CONTENTSX14
       &amp; r_0023_0025__in_mnr(EVENTX17) = ENTITYX15
       &amp; conj2(CONJX29) = EVENTX20
-      &amp; isA(EVENTX20,r_0023_0031__fine_down)
+      &amp; isA(EVENTX20,r_0023_0031__fine__r_0023_0032__down)
       &amp; arg1(EVENTX20) = WINEX18
       &amp; conj3(CONJX29) = EVENTX22
-      &amp; isA(EVENTX22,r_0023_0037__bottle_off)
+      &amp; isA(EVENTX22,r_0023_0037__bottle__r_0023_0039__off)
       &amp; arg1(EVENTX22) = WINEX21
       &amp; conj4(CONJX29) = EVENTX28
       &amp; isA(EVENTX28,r_0023_0042__store)

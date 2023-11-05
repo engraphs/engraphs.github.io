@@ -362,46 +362,46 @@ These will include programs written by customers and programs written by IBM .
 </svg>
 <br>
 <pre>
-arc(cnt_0079_1006,r_0079_0008__established,scope).
-arc(cnt_0079_1006,r_0079_0011__quantificational__all,restriction).
-arc(r_0079_0002__library,r_0079_0004__1401_programs,r_0079_0003__of).
+arc(r_0079_0002__library,r_0079_0004__1401__r_0079_0005__programs,r_0079_0003__of).
 arc(r_0079_0006__will,r_0079_0007__be,scope).
-arc(r_0079_0007__be,cnt_0079_1006,catenative).
+arc(r_0079_0007__be,r_0079_1006__cnt,catenative).
 arc(r_0079_0008__established,r_0079_0002__library,arg1).
 arc(r_0079_0010__aid,r_0079_0002__library,arg0).
-arc(r_0079_0010__aid,r_0079_0012__1401_customers,arg1).
+arc(r_0079_0010__aid,r_0079_0012__1401__r_0079_0013__customers,arg1).
 arc(r_0079_0010__aid,r_0079_0015__solving,r_0079_0014__in_clr).
-arc(r_0079_0011__quantificational__all,r_0079_0010__aid,scope).
-arc(r_0079_0011__quantificational__all,r_0079_0012__1401_customers,restriction).
+arc(r_0079_0011__quantificational__r_0079_0011__all,r_0079_0010__aid,scope).
+arc(r_0079_0011__quantificational__r_0079_0011__all,r_0079_0012__1401__r_0079_0013__customers,restriction).
 arc(r_0079_0015__solving,r_0079_0017__applications,arg1).
 arc(r_0079_0017__applications,r_0079_0016__specific,attrib1).
 arc(r_0079_0017__applications,r_0079_0020__as_well_as,prn4).
 arc(r_0079_0020__as_well_as,r_0079_0019__scientific,conj1).
 arc(r_0079_0020__as_well_as,r_0079_0021__commercial,conj2).
+arc(r_0079_1006__cnt,r_0079_0008__established,scope).
+arc(r_0079_1006__cnt,r_0079_0011__quantificational__r_0079_0011__all,restriction).
 arc(r_0080_0002__will,r_0080_0003__include,scope).
-arc(r_0080_0003__include,r_0079_0004__1401_programs,arg0).
+arc(r_0080_0003__include,r_0079_0004__1401__r_0079_0005__programs,arg0).
 arc(r_0080_0003__include,r_0080_0008__and,arg1).
 arc(r_0080_0005__written,r_0080_0004__programs,arg1).
-arc(r_0080_0005__written,r_0080_0007__customers,arg0_by_lgs).
+arc(r_0080_0005__written,r_0080_0007__customers,arg0__r_0080_0006__by_lgs).
 arc(r_0080_0008__and,r_0080_0004__programs,conj1).
 arc(r_0080_0008__and,r_0080_0009__programs,conj2).
 arc(r_0080_0010__written,r_0080_0009__programs,arg1).
-arc(r_0080_0010__written,r_0080_0012__IBM,arg0_by_lgs).
+arc(r_0080_0010__written,r_0080_0012__IBM,arg0__r_0080_0011__by_lgs).
 
 </pre>
 <br>
 <pre>
-fof(id_79_A_IBM_1401__80_A_IBM_1401,axiom,
+fof(id__79_A_IBM_1401__80_A_IBM_1401,axiom,
     ? [CATENATIVEX4,EVENTX10,LIBRARY_PROGRAMSX22,OPERATORX29,EVENTX30,EVENTX28,EVENTX26,OPERATORX3,EVENTX21,CONNX7,QUANTX9,EVENTX19,EVENTX18,EVENTX20,ENTITYX23,ENTITYX24,ENTITYX27,ENTITYX25,ENTITYX1,ENTITYX8,ENTITYX13,LIBRARY_PROGRAMSX2,ATTRIBX14,ATTRIBX15,ATTRIBX16,ATTRIBX17] :
       ( CATENATIVEX4 = CONNX7
-      &amp; isA(CONNX7,cnt_0079_1006)
+      &amp; isA(CONNX7,r_0079_1006__cnt)
       &amp; scope(CONNX7) = EVENTX20
       &amp; isA(EVENTX20,r_0079_0008__established)
       &amp; arg1(EVENTX20) = ENTITYX1
       &amp; restriction(CONNX7) = QUANTX9
-      &amp; isA(QUANTX9,r_0079_0011__quantificational__all)
+      &amp; isA(QUANTX9,r_0079_0011__quantificational__r_0079_0011__all)
       &amp; restriction(QUANTX9) = ENTITYX8
-      &amp; isA(ENTITYX8,r_0079_0012__1401_customers)
+      &amp; isA(ENTITYX8,r_0079_0012__1401__r_0079_0013__customers)
       &amp; scope(QUANTX9) = EVENTX19
       &amp; isA(EVENTX19,r_0079_0010__aid)
       &amp; arg0(EVENTX19) = ENTITYX1
@@ -412,7 +412,7 @@ fof(id_79_A_IBM_1401__80_A_IBM_1401,axiom,
       &amp; arg1(EVENTX18) = ENTITYX13
       &amp; isA(ENTITYX1,r_0079_0002__library)
       &amp; r_0079_0003__of(ENTITYX1) = LIBRARY_PROGRAMSX2
-      &amp; isA(LIBRARY_PROGRAMSX2,r_0079_0004__1401_programs)
+      &amp; isA(LIBRARY_PROGRAMSX2,r_0079_0004__1401__r_0079_0005__programs)
       &amp; isA(ENTITYX13,r_0079_0017__applications)
       &amp; attrib1(ENTITYX13) = ATTRIBX14
       &amp; prn4(ENTITYX13) = ATTRIBX15
@@ -421,12 +421,12 @@ fof(id_79_A_IBM_1401__80_A_IBM_1401,axiom,
       &amp; conj1(ENTITYX23) = ENTITYX24
       &amp; conj2(ENTITYX23) = ENTITYX27
       &amp; isA(EVENTX26,r_0080_0005__written)
-      &amp; arg0_by_lgs(EVENTX26) = ENTITYX25
+      &amp; arg0__r_0080_0006__by_lgs(EVENTX26) = ENTITYX25
       &amp; arg1(EVENTX26) = ENTITYX24
       &amp; isA(ENTITYX24,r_0080_0004__programs)
       &amp; isA(ENTITYX25,r_0080_0007__customers)
       &amp; isA(EVENTX28,r_0080_0010__written)
-      &amp; arg0_by_lgs(EVENTX28) = r_0080_0012__IBM
+      &amp; arg0__r_0080_0011__by_lgs(EVENTX28) = r_0080_0012__IBM
       &amp; arg1(EVENTX28) = ENTITYX27
       &amp; isA(ENTITYX27,r_0080_0009__programs)
       &amp; isA(ATTRIBX14,r_0079_0016__specific)

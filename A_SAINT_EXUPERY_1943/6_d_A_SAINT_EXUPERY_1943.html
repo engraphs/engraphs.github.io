@@ -142,30 +142,30 @@ Why should any one be frightened by a hat ? &rdquo;
 </svg>
 <br>
 <pre>
-arc(question_0012_1002,r_0012_0001__Why,scope).
-arc(r_0012_0001__Why,r_0012_0003__quantificational__any,scope).
+arc(r_0012_0001__Why,r_0012_0003__quantificational__r_0012_0003__any,scope).
 arc(r_0012_0002__should,r_0012_0005__be,scope).
-arc(r_0012_0003__quantificational__any,r_0012_0002__should,scope).
-arc(r_0012_0003__quantificational__any,r_0012_0004__one,restriction).
+arc(r_0012_0003__quantificational__r_0012_0003__any,r_0012_0002__should,scope).
+arc(r_0012_0003__quantificational__r_0012_0003__any,r_0012_0004__one,restriction).
 arc(r_0012_0005__be,r_0012_0006__frightened,catenative).
 arc(r_0012_0006__frightened,r_0012_0004__one,arg1).
-arc(r_0012_0006__frightened,r_0012_0009__hat,arg0_by_lgs).
+arc(r_0012_0006__frightened,r_0012_0009__hat,arg0__r_0012_0007__by_lgs).
+arc(r_0012_1002__question,r_0012_0001__Why,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_12_A_SAINT_EXUPERY_1943,axiom,
+fof(id__12_A_SAINT_EXUPERY_1943,axiom,
     ? [CATENATIVEX7,OPERATORX2,OPERATORX3,QUANTX5,OPERATORX6,EVENTX10,EVENTX9,ENTITYX4,ENTITYX8] :
       ( CATENATIVEX7 = EVENTX9
       &amp; isA(EVENTX9,r_0012_0006__frightened)
-      &amp; arg0_by_lgs(EVENTX9) = ENTITYX8
+      &amp; arg0__r_0012_0007__by_lgs(EVENTX9) = ENTITYX8
       &amp; arg1(EVENTX9) = ENTITYX4
       &amp; isA(ENTITYX8,r_0012_0009__hat)
-      &amp; isA(OPERATORX2,question_0012_1002)
+      &amp; isA(OPERATORX2,r_0012_1002__question)
       &amp; scope(OPERATORX2) = OPERATORX3
       &amp; isA(OPERATORX3,r_0012_0001__Why)
       &amp; scope(OPERATORX3) = QUANTX5
-      &amp; isA(QUANTX5,r_0012_0003__quantificational__any)
+      &amp; isA(QUANTX5,r_0012_0003__quantificational__r_0012_0003__any)
       &amp; restriction(QUANTX5) = ENTITYX4
       &amp; isA(ENTITYX4,r_0012_0004__one)
       &amp; scope(QUANTX5) = OPERATORX6

@@ -150,23 +150,23 @@ From the start , we have sought to put in the right measures at the right time .
 <pre>
 arc(r_0022_0006__have,r_0022_0003__start,r_0022_0001__From_tmp).
 arc(r_0022_0006__have,r_0022_0007__sought,catenative).
-arc(r_0022_0007__sought,r_0022_0009__put_in,catenative).
-arc(r_0022_0009__put_in,r_0022_0005__we,arg0).
-arc(r_0022_0009__put_in,r_0022_0013__measures,arg1).
-arc(r_0022_0009__put_in,r_0022_0017__time,r_0022_0014__at_tmp).
+arc(r_0022_0007__sought,r_0022_0009__put__r_0022_0010__in,catenative).
+arc(r_0022_0009__put__r_0022_0010__in,r_0022_0005__we,arg0).
+arc(r_0022_0009__put__r_0022_0010__in,r_0022_0013__measures,arg1).
+arc(r_0022_0009__put__r_0022_0010__in,r_0022_0017__time,r_0022_0014__at_tmp).
 arc(r_0022_0013__measures,r_0022_0012__right,attrib2).
 arc(r_0022_0017__time,r_0022_0016__right,attrib2).
 
 </pre>
 <br>
 <pre>
-fof(id_22_A_Johnson_letter,axiom,
+fof(id__22_A_Johnson_letter,axiom,
     ? [CATENATIVEX2,STATEX3,EVENTX10,EVENTX9,EVENTX8,ENTITYX1,ENTITYX4,ENTITYX6,ATTRIBX7,ATTRIBX5] :
       ( CATENATIVEX2 = EVENTX9
       &amp; isA(EVENTX9,r_0022_0007__sought)
       &amp; catenative(EVENTX9) = STATEX3
       &amp; STATEX3 = EVENTX8
-      &amp; isA(EVENTX8,r_0022_0009__put_in)
+      &amp; isA(EVENTX8,r_0022_0009__put__r_0022_0010__in)
       &amp; arg0(EVENTX8) = r_0022_0005__we
       &amp; arg1(EVENTX8) = ENTITYX4
       &amp; r_0022_0014__at_tmp(EVENTX8) = ENTITYX6

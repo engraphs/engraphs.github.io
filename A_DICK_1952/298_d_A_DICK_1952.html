@@ -122,9 +122,9 @@ Then the sounds died out and the gun became silent .
 </svg>
 <br>
 <pre>
-arc(r_0379_0004__died_out,r_0379_0001__Then,tmp1).
-arc(r_0379_0004__died_out,r_0379_0003__sounds,arg0).
-arc(r_0379_0006__and,r_0379_0004__died_out,conj1).
+arc(r_0379_0004__died__r_0379_0005__out,r_0379_0001__Then,tmp1).
+arc(r_0379_0004__died__r_0379_0005__out,r_0379_0003__sounds,arg0).
+arc(r_0379_0006__and,r_0379_0004__died__r_0379_0005__out,conj1).
 arc(r_0379_0006__and,r_0379_0009__became,conj2).
 arc(r_0379_0009__became,r_0379_0008__gun,arg0).
 arc(r_0379_0009__became,r_0379_0010__silent,prd2).
@@ -132,7 +132,7 @@ arc(r_0379_0009__became,r_0379_0010__silent,prd2).
 </pre>
 <br>
 <pre>
-fof(id_379_A_DICK_1952,axiom,
+fof(id__379_A_DICK_1952,axiom,
     ? [CONJX7,EVENTX6,EVENTX3,QUALITYX1,ENTITYX4,ENTITYX2,ATTRIBX5] :
       ( isA(QUALITYX1,r_0379_0001__Then)
       &amp; isA(ENTITYX2,r_0379_0003__sounds)
@@ -140,7 +140,7 @@ fof(id_379_A_DICK_1952,axiom,
       &amp; isA(ATTRIBX5,r_0379_0010__silent)
       &amp; isA(CONJX7,r_0379_0006__and)
       &amp; conj1(CONJX7) = EVENTX3
-      &amp; isA(EVENTX3,r_0379_0004__died_out)
+      &amp; isA(EVENTX3,r_0379_0004__died__r_0379_0005__out)
       &amp; tmp1(EVENTX3) = QUALITYX1
       &amp; arg0(EVENTX3) = ENTITYX2
       &amp; conj2(CONJX7) = EVENTX6

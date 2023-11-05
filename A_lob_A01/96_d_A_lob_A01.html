@@ -275,17 +275,17 @@ I am horrified and amazed by my party 's proposal to prostitute the whole princi
 <pre>
 arc(r_0101_0002__am,r_0101_0004__and,catenative).
 arc(r_0101_0003__horrified,r_0101_0001__I,arg1).
-arc(r_0101_0003__horrified,r_0101_0010__proposal,arg0_by_lgs).
+arc(r_0101_0003__horrified,r_0101_0010__proposal,arg0__r_0101_0006__by_lgs).
 arc(r_0101_0004__and,r_0101_0003__horrified,conj1).
 arc(r_0101_0004__and,r_0101_0005__amazed,conj2).
 arc(r_0101_0005__amazed,r_0101_0001__I,arg1).
-arc(r_0101_0005__amazed,r_0101_0010__proposal,arg0_by_lgs).
+arc(r_0101_0005__amazed,r_0101_0010__proposal,arg0__r_0101_0006__by_lgs).
 arc(r_0101_0008__party,r_0101_0001__I,genv).
 arc(r_0101_0010__proposal,r_0101_0008__party,genv).
 arc(r_0101_0010__proposal,r_0101_0020__and,emb3).
 arc(r_0101_0012__prostitute,r_0101_0015__principle,arg1).
 arc(r_0101_0015__principle,r_0101_0014__whole,attrib2).
-arc(r_0101_0015__principle,r_0101_0018__state_service,r_0101_0016__of).
+arc(r_0101_0015__principle,r_0101_0018__state__r_0101_0019__service,r_0101_0016__of).
 arc(r_0101_0020__and,r_0101_0012__prostitute,conj1).
 arc(r_0101_0020__and,r_0101_0022__render,conj2).
 arc(r_0101_0022__render,r_0101_0024__service,arg1).
@@ -296,17 +296,17 @@ arc(r_0101_0029__people,r_0101_0028__poor,attrib1).
 </pre>
 <br>
 <pre>
-fof(id_101_A_lob_A01,axiom,
+fof(id__101_A_lob_A01,axiom,
     ? [CATENATIVEX1,STATEX5,SPEAKERX4,EVENTX21,CONJX20,EVENTX19,EVENTX18,CONJX17,EVENTX16,EVENTX11,ENTITYX2,ENTITYX3,ENTITYX12,ENTITYX13,ENTITYX14,ENTITYX8,ENTITYX10,ATTRIBX15,ATTRIBX9] :
       ( CATENATIVEX1 = CONJX20
       &amp; isA(CONJX20,r_0101_0004__and)
       &amp; conj1(CONJX20) = EVENTX18
       &amp; isA(EVENTX18,r_0101_0003__horrified)
-      &amp; arg0_by_lgs(EVENTX18) = ENTITYX2
+      &amp; arg0__r_0101_0006__by_lgs(EVENTX18) = ENTITYX2
       &amp; arg1(EVENTX18) = r_0101_0001__I
       &amp; conj2(CONJX20) = EVENTX19
       &amp; isA(EVENTX19,r_0101_0005__amazed)
-      &amp; arg0_by_lgs(EVENTX19) = ENTITYX2
+      &amp; arg0__r_0101_0006__by_lgs(EVENTX19) = ENTITYX2
       &amp; arg1(EVENTX19) = r_0101_0001__I
       &amp; STATEX5 = CONJX17
       &amp; isA(CONJX17,r_0101_0020__and)
@@ -326,7 +326,7 @@ fof(id_101_A_lob_A01,axiom,
       &amp; isA(ENTITYX8,r_0101_0015__principle)
       &amp; attrib2(ENTITYX8) = ATTRIBX9
       &amp; r_0101_0016__of(ENTITYX8) = ENTITYX10
-      &amp; isA(ENTITYX10,r_0101_0018__state_service)
+      &amp; isA(ENTITYX10,r_0101_0018__state__r_0101_0019__service)
       &amp; isA(ENTITYX12,r_0101_0024__service)
       &amp; isA(ENTITYX13,r_0101_0026__hardship)
       &amp; r_0101_0027__to(ENTITYX13) = ENTITYX14

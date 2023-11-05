@@ -136,26 +136,26 @@ Nasha clicked on her hand lamp , shining the beam down the stairs .
 </svg>
 <br>
 <pre>
-arc(mnr_0423_1003,r_0423_0002__clicked,scope).
-arc(mnr_0423_1003,r_0423_0008__shining,restriction).
 arc(r_0423_0002__clicked,r_0423_0001__Nasha,arg0).
-arc(r_0423_0002__clicked,r_0423_0005__hand_lamp,r_0423_0003__on_dir).
-arc(r_0423_0005__hand_lamp,r_0423_0001__Nasha,genv).
+arc(r_0423_0002__clicked,r_0423_0005__hand__r_0423_0006__lamp,r_0423_0003__on_dir).
+arc(r_0423_0005__hand__r_0423_0006__lamp,r_0423_0001__Nasha,genv).
 arc(r_0423_0008__shining,r_0423_0001__Nasha,arg0).
 arc(r_0423_0008__shining,r_0423_0010__beam,arg1).
 arc(r_0423_0008__shining,r_0423_0013__stairs,r_0423_0011__down_dir).
+arc(r_0423_1003__mnr,r_0423_0002__clicked,scope).
+arc(r_0423_1003__mnr,r_0423_0008__shining,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_423_A_DICK_1952,axiom,
+fof(id__423_A_DICK_1952,axiom,
     ? [NASHAX2,CONNX4,EVENTX7,EVENTX8,ENTITYX1,ENTITYX5,ENTITYX6] :
-      ( isA(ENTITYX1,r_0423_0005__hand_lamp)
+      ( isA(ENTITYX1,r_0423_0005__hand__r_0423_0006__lamp)
       &amp; genv(ENTITYX1) = NASHAX2
       &amp; NASHAX2 = r_0423_0001__Nasha
       &amp; isA(ENTITYX5,r_0423_0010__beam)
       &amp; isA(ENTITYX6,r_0423_0013__stairs)
-      &amp; isA(CONNX4,mnr_0423_1003)
+      &amp; isA(CONNX4,r_0423_1003__mnr)
       &amp; scope(CONNX4) = EVENTX8
       &amp; isA(EVENTX8,r_0423_0002__clicked)
       &amp; arg0(EVENTX8) = r_0423_0001__Nasha

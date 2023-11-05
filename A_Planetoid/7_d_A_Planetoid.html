@@ -272,14 +272,13 @@ When megacytes are destroyed , they release a cloud of spores - use the smart bo
 </svg>
 <br>
 <pre>
-arc(imperative_0011_1014,r_0011_0019__as_cnt,scope).
 arc(r_0011_0001__When_tmp,r_0011_0003__are,restriction).
 arc(r_0011_0001__When_tmp,r_0011_0007__release,scope).
 arc(r_0011_0003__are,r_0011_0004__destroyed,catenative).
 arc(r_0011_0004__destroyed,r_0011_0002__megacytes,arg1).
-arc(r_0011_0007__release,imperative_0011_1014,prn7).
 arc(r_0011_0007__release,r_0011_0002__megacytes,arg0).
 arc(r_0011_0007__release,r_0011_0009__cloud,arg1).
+arc(r_0011_0007__release,r_0011_1014__imperative,prn7).
 arc(r_0011_0009__cloud,r_0011_0011__spores,r_0011_0010__of).
 arc(r_0011_0013__use,r_0011_0016__bombs,arg1).
 arc(r_0011_0013__use,r_0011_0017__wisely,mnr3).
@@ -290,17 +289,18 @@ arc(r_0011_0022__have,r_0011_0020__you,arg0).
 arc(r_0011_0022__have,r_0011_0021__only,quality2).
 arc(r_0011_0022__have,r_0011_0023__three,arg1).
 arc(r_0011_0022__have,r_0011_0024__to_begin_with,tmp5).
+arc(r_0011_1014__imperative,r_0011_0019__as_cnt,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_11_A_Planetoid,axiom,
+fof(id__11_A_Planetoid,axiom,
     ? [CATENATIVEX3,EVENTX10,MEGACYTESX7,CONNX1,EVENTX24,OPERATORX14,CONNX18,EVENTX22,EVENTX23,EVENTX6,EVENTX5,ENTITYX8,ENTITYX15,ENTITYX20,ENTITYX9,MEGACYTESX2,ATTRIBX16,QUALITYX17,QUALITYX19,QUALITYX21] :
       ( CATENATIVEX3 = EVENTX5
       &amp; isA(EVENTX5,r_0011_0004__destroyed)
       &amp; arg1(EVENTX5) = MEGACYTESX2
       &amp; EVENTX10 = OPERATORX14
-      &amp; isA(OPERATORX14,imperative_0011_1014)
+      &amp; isA(OPERATORX14,r_0011_1014__imperative)
       &amp; scope(OPERATORX14) = CONNX18
       &amp; isA(CONNX18,r_0011_0019__as_cnt)
       &amp; scope(CONNX18) = EVENTX23

@@ -168,29 +168,29 @@
 </svg>
 <br>
 <pre>
-arc(cnt_0164_1005,r_0164_0004__come,scope).
-arc(cnt_0164_1005,r_0164_0006__bid,restriction).
-arc(r_0164_0003__am,cnt_0164_1005,catenative).
+arc(r_0164_0003__am,r_0164_1005__cnt,catenative).
 arc(r_0164_0004__come,r_0164_0002__I,arg0).
 arc(r_0164_0006__bid,r_0164_0002__I,arg0).
 arc(r_0164_0006__bid,r_0164_0007__you,arg2).
 arc(r_0164_0006__bid,r_0164_0008__good_bye,arg1).
 arc(r_0164_0012__cried,r_0164_0011__he,arg0).
-arc(r_0164_0012__cried,utterance_0164_1003,arg1).
-arc(utterance_0164_1003,r_0164_0003__am,part1).
+arc(r_0164_0012__cried,r_0164_1003__utterance,arg1).
+arc(r_0164_1003__utterance,r_0164_0003__am,part1).
+arc(r_0164_1005__cnt,r_0164_0004__come,scope).
+arc(r_0164_1005__cnt,r_0164_0006__bid,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_164_A_WILDE_1_1888,axiom,
+fof(id__164_A_WILDE_1_1888,axiom,
     ? [STATEX1,CATENATIVEX4,EVENTX12,CONJX11,EVENTX10,CONNX6,EVENTX8,EVENTX9,ENTITYX7] :
       ( STATEX1 = CONJX11
-      &amp; isA(CONJX11,utterance_0164_1003)
+      &amp; isA(CONJX11,r_0164_1003__utterance)
       &amp; part1(CONJX11) = EVENTX10
       &amp; isA(EVENTX10,r_0164_0003__am)
       &amp; catenative(EVENTX10) = CATENATIVEX4
       &amp; CATENATIVEX4 = CONNX6
-      &amp; isA(CONNX6,cnt_0164_1005)
+      &amp; isA(CONNX6,r_0164_1005__cnt)
       &amp; scope(CONNX6) = EVENTX9
       &amp; isA(EVENTX9,r_0164_0004__come)
       &amp; arg0(EVENTX9) = r_0164_0002__I

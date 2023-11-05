@@ -246,34 +246,34 @@ On the panel for an Any Questions ? evening at Perins once , I was asked how new
 </svg>
 <br>
 <pre>
-arc(question_0030_1010,r_0030_0021__got,scope).
 arc(r_0030_0003__panel,r_0030_0009__evening,r_0030_0004__for).
-arc(r_0030_0006__quantificational__Any,r_0030_0007__Questions,restriction).
-arc(r_0030_0006__quantificational__Any,r_0030_0009__evening,scope).
+arc(r_0030_0006__quantificational__r_0030_0006__Any,r_0030_0007__Questions,restriction).
+arc(r_0030_0006__quantificational__r_0030_0006__Any,r_0030_0009__evening,scope).
 arc(r_0030_0009__evening,r_0030_0007__Questions,nlyr2).
 arc(r_0030_0009__evening,r_0030_0011__Perins,r_0030_0010__at).
 arc(r_0030_0015__was,r_0030_0003__panel,r_0030_0001__On_loc).
 arc(r_0030_0015__was,r_0030_0012__once,tmp2).
 arc(r_0030_0015__was,r_0030_0016__asked,catenative).
-arc(r_0030_0016__asked,question_0030_1010,arg1).
 arc(r_0030_0016__asked,r_0030_0014__I,arg2).
+arc(r_0030_0016__asked,r_0030_1010__question,arg1).
 arc(r_0030_0018__newcomers,r_0030_0020__Alresford,r_0030_0019__to).
 arc(r_0030_0021__got,r_0030_0017__how,mnr1).
 arc(r_0030_0021__got,r_0030_0023__know,catenative).
 arc(r_0030_0023__know,r_0030_0018__newcomers,arg0).
 arc(r_0030_0023__know,r_0030_0024__people,arg1).
+arc(r_0030_1010__question,r_0030_0021__got,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_30_A_Alresford,axiom,
+fof(id__30_A_Alresford,axiom,
     ? [CATENATIVEX6,STATEX8,STATEX13,EVENTX18,EVENTX17,OPERATORX10,EVENTX16,EVENTX15,QUANTX4,ENTITYX1,ENTITYX12,ENTITYX14,ENTITYX2,ENTITYX3,QUALITYX5,QUALITYX11] :
       ( CATENATIVEX6 = EVENTX17
       &amp; isA(EVENTX17,r_0030_0016__asked)
       &amp; arg2(EVENTX17) = r_0030_0014__I
       &amp; arg1(EVENTX17) = STATEX8
       &amp; STATEX8 = OPERATORX10
-      &amp; isA(OPERATORX10,question_0030_1010)
+      &amp; isA(OPERATORX10,r_0030_1010__question)
       &amp; scope(OPERATORX10) = EVENTX16
       &amp; isA(EVENTX16,r_0030_0021__got)
       &amp; mnr1(EVENTX16) = QUALITYX11
@@ -284,7 +284,7 @@ fof(id_30_A_Alresford,axiom,
       &amp; arg1(EVENTX15) = ENTITYX14
       &amp; isA(ENTITYX1,r_0030_0003__panel)
       &amp; r_0030_0004__for(ENTITYX1) = ENTITYX2
-      &amp; isA(QUANTX4,r_0030_0006__quantificational__Any)
+      &amp; isA(QUANTX4,r_0030_0006__quantificational__r_0030_0006__Any)
       &amp; restriction(QUANTX4) = ENTITYX3
       &amp; isA(ENTITYX3,r_0030_0007__Questions)
       &amp; scope(QUANTX4) = ENTITYX2

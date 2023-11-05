@@ -299,33 +299,33 @@ Even though electronic espionage may cost U.S. firms billions of dollars a year 
 <br>
 <pre>
 arc(r_0011_0001__Even_though_cnt,r_0011_0004__may,restriction).
-arc(r_0011_0001__Even_though_cnt,r_0011_0014__quantificational__most,scope).
+arc(r_0011_0001__Even_though_cnt,r_0011_0014__quantificational__r_0011_0014__most,scope).
 arc(r_0011_0003__espionage,r_0011_0002__electronic,attrib1).
 arc(r_0011_0004__may,r_0011_0005__cost,scope).
 arc(r_0011_0005__cost,r_0011_0003__espionage,arg0).
 arc(r_0011_0005__cost,r_0011_0007__firms,arg2).
 arc(r_0011_0005__cost,r_0011_0008__billions,arg1).
-arc(r_0011_0007__firms,r_0011_0006__U.S.,attrib1).
+arc(r_0011_0007__firms,r_0011_0006__U_S_,attrib1).
 arc(r_0011_0008__billions,r_0011_0010__dollars,r_0011_0009__of).
 arc(r_0011_0008__billions,r_0011_0012__year,mnr).
-arc(r_0011_0014__quantificational__most,r_0011_0015__are,scope).
-arc(r_0011_0014__quantificational__most,z_0011_1016,restriction).
+arc(r_0011_0014__quantificational__r_0011_0014__most,r_0011_0015__are,scope).
+arc(r_0011_0014__quantificational__r_0011_0014__most,z_0011_1016,restriction).
 arc(r_0011_0015__are,r_0011_0016__n_apos_t,catenative).
 arc(r_0011_0016__n_apos_t,r_0011_0018__taking,scope).
 arc(r_0011_0018__taking,r_0011_0017__yet,tmp2).
 arc(r_0011_0018__taking,r_0011_0019__precautions,arg1).
 arc(r_0011_0018__taking,z_0011_1016,arg0).
 arc(r_0011_0023__said,r_0011_0022__experts,arg0).
-arc(r_0011_0023__said,utterance_0011_1003,arg1).
-arc(utterance_0011_1003,r_0011_0001__Even_though_cnt,part1).
+arc(r_0011_0023__said,r_0011_1003__utterance,arg1).
+arc(r_0011_1003__utterance,r_0011_0001__Even_though_cnt,part1).
 
 </pre>
 <br>
 <pre>
-fof(id_11_A_ANC_wsj_1640,axiom,
+fof(id__11_A_ANC_wsj_1640,axiom,
     ? [STATEX1,CATENATIVEX17,EVENTX25,CONJX23,CONNX4,QUANTX15,EVENTX22,OPERATORX20,EVENTX21,OPERATORX12,EVENTX13,ENTITYX24,ENTITYX14,ENTITYX19,ENTITYX5,ENTITYX7,ENTITYX9,ENTITYX10,ENTITYX11,ATTRIBX8,ATTRIBX6,QUALITYX18] :
       ( STATEX1 = CONJX23
-      &amp; isA(CONJX23,utterance_0011_1003)
+      &amp; isA(CONJX23,r_0011_1003__utterance)
       &amp; part1(CONJX23) = CONNX4
       &amp; isA(CONNX4,r_0011_0001__Even_though_cnt)
       &amp; restriction(CONNX4) = OPERATORX12
@@ -336,7 +336,7 @@ fof(id_11_A_ANC_wsj_1640,axiom,
       &amp; arg2(EVENTX13) = ENTITYX7
       &amp; arg1(EVENTX13) = ENTITYX9
       &amp; scope(CONNX4) = QUANTX15
-      &amp; isA(QUANTX15,r_0011_0014__quantificational__most)
+      &amp; isA(QUANTX15,r_0011_0014__quantificational__r_0011_0014__most)
       &amp; restriction(QUANTX15) = ENTITYX14
       &amp; isA(ENTITYX14,z_0011_1016)
       &amp; scope(QUANTX15) = EVENTX22
@@ -361,7 +361,7 @@ fof(id_11_A_ANC_wsj_1640,axiom,
       &amp; isA(ENTITYX19,r_0011_0019__precautions)
       &amp; isA(ENTITYX24,r_0011_0022__experts)
       &amp; isA(ATTRIBX6,r_0011_0002__electronic)
-      &amp; isA(ATTRIBX8,r_0011_0006__U.S.)
+      &amp; isA(ATTRIBX8,r_0011_0006__U_S_)
       &amp; isA(QUALITYX18,r_0011_0017__yet)
       &amp; isA(EVENTX25,r_0011_0023__said)
       &amp; arg1(EVENTX25) = STATEX1

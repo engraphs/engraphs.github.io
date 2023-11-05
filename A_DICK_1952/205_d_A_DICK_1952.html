@@ -293,7 +293,8 @@
 arc(r_0261_0003___apos_s,r_0261_0002__It,arg0).
 arc(r_0261_0003___apos_s,r_0261_0004__macabre,prd2).
 arc(r_0261_0008__muttered,r_0261_0007__Dorle,arg0).
-arc(r_0261_0008__muttered,utterance_0261_1003,arg1).
+arc(r_0261_0008__muttered,r_0261_1003__utterance,arg1).
+arc(r_0261_1003__utterance,r_0261_0003___apos_s,part1).
 arc(r_0262_0003___apos_ve,r_0262_0004__seen,catenative).
 arc(r_0262_0004__seen,r_0261_0007__Dorle,arg0).
 arc(r_0262_0004__seen,r_0262_0006__cities,arg1).
@@ -308,15 +309,14 @@ arc(r_0262_0013__age,r_0262_0017__and,prn4).
 arc(r_0262_0016__age,r_0262_0015__old,attrib1).
 arc(r_0262_0017__and,r_0262_0016__age,conj1).
 arc(r_0262_0017__and,r_0262_0018__fatigue,conj2).
-arc(utterance_0261_1003,r_0261_0003___apos_s,part1).
 
 </pre>
 <br>
 <pre>
-fof(id_261_A_DICK_1952__262_A_DICK_1952,axiom,
+fof(id__261_A_DICK_1952__262_A_DICK_1952,axiom,
     ? [STATEX1,CATENATIVEX11,DORLEX10,CITIESX17,CONJX25,EVENTX24,EVENTX16,EVENTX15,EVENTX7,CONJX6,EVENTX5,ENTITYX18,ENTITYX20,ENTITYX21,ENTITYX23,CITIESX12,ATTRIBX19,ATTRIBX22,ATTRIBX13,ATTRIBX4,QUALITYX14] :
       ( STATEX1 = CONJX6
-      &amp; isA(CONJX6,utterance_0261_1003)
+      &amp; isA(CONJX6,r_0261_1003__utterance)
       &amp; part1(CONJX6) = EVENTX5
       &amp; isA(EVENTX5,r_0261_0003___apos_s)
       &amp; arg0(EVENTX5) = r_0261_0002__It

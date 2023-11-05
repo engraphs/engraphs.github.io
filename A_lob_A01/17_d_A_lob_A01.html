@@ -227,33 +227,33 @@
 </svg>
 <br>
 <pre>
-arc(question_0018_1004,r_0018_0008__do,scope).
 arc(r_0018_0003__want,r_0018_0002__We,arg0).
 arc(r_0018_0003__want,r_0018_0005__discuss,arg1).
-arc(r_0018_0005__discuss,question_0018_1004,arg1).
 arc(r_0018_0005__discuss,r_0018_0002__We,arg0).
+arc(r_0018_0005__discuss,r_0018_1004__question,arg1).
 arc(r_0018_0008__do,r_0018_0002__We,arg0).
 arc(r_0018_0008__do,r_0018_0006__what,arg1).
 arc(r_0018_0009__if_cnt_cnd,r_0018_0003__want,scope).
-arc(r_0018_0009__if_cnt_cnd,r_0018_0013__gives_in,restriction).
+arc(r_0018_0009__if_cnt_cnd,r_0018_0013__gives__r_0018_0014__in,restriction).
 arc(r_0018_0012__government,r_0018_0011__British,attrib2).
-arc(r_0018_0013__gives_in,r_0018_0012__government,arg0).
-arc(r_0018_0013__gives_in,r_0018_0016__Sir_Roy,r_0018_0015__to_clr).
+arc(r_0018_0013__gives__r_0018_0014__in,r_0018_0012__government,arg0).
+arc(r_0018_0013__gives__r_0018_0014__in,r_0018_0016__Sir_r_0018_0017__Roy,r_0018_0015__to_clr).
 arc(r_0018_0018__and,r_0018_0009__if_cnt_cnd,conj1).
-arc(r_0018_0018__and,r_0018_0021__fall_through,conj2).
-arc(r_0018_0021__fall_through,r_0018_0020__talks,arg0).
+arc(r_0018_0018__and,r_0018_0021__fall__r_0018_0022__through,conj2).
+arc(r_0018_0021__fall__r_0018_0022__through,r_0018_0020__talks,arg0).
+arc(r_0018_1004__question,r_0018_0008__do,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_18_A_lob_A01,axiom,
+fof(id__18_A_lob_A01,axiom,
     ? [STATEX1,STATEX2,CONJX15,EVENTX14,CONNX8,EVENTX11,EVENTX12,EVENTX7,OPERATORX4,EVENTX6,ENTITYX13,ENTITYX9,ENTITYX5,ATTRIBX10] :
       ( STATEX1 = EVENTX7
       &amp; isA(EVENTX7,r_0018_0005__discuss)
       &amp; arg0(EVENTX7) = r_0018_0002__We
       &amp; arg1(EVENTX7) = STATEX2
       &amp; STATEX2 = OPERATORX4
-      &amp; isA(OPERATORX4,question_0018_1004)
+      &amp; isA(OPERATORX4,r_0018_1004__question)
       &amp; scope(OPERATORX4) = EVENTX6
       &amp; isA(EVENTX6,r_0018_0008__do)
       &amp; arg0(EVENTX6) = r_0018_0002__We
@@ -271,11 +271,11 @@ fof(id_18_A_lob_A01,axiom,
       &amp; arg0(EVENTX12) = r_0018_0002__We
       &amp; arg1(EVENTX12) = STATEX1
       &amp; restriction(CONNX8) = EVENTX11
-      &amp; isA(EVENTX11,r_0018_0013__gives_in)
+      &amp; isA(EVENTX11,r_0018_0013__gives__r_0018_0014__in)
       &amp; arg0(EVENTX11) = ENTITYX9
-      &amp; r_0018_0015__to_clr(EVENTX11) = r_0018_0016__Sir_Roy
+      &amp; r_0018_0015__to_clr(EVENTX11) = r_0018_0016__Sir__r_0018_0017__Roy
       &amp; conj2(CONJX15) = EVENTX14
-      &amp; isA(EVENTX14,r_0018_0021__fall_through)
+      &amp; isA(EVENTX14,r_0018_0021__fall__r_0018_0022__through)
       &amp; arg0(EVENTX14) = ENTITYX13 ) ).
 
 

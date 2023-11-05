@@ -200,23 +200,23 @@ Write ( a ) or ( b ) as well as the number 5 in the question box , and the title
 </svg>
 <br>
 <pre>
-arc(imperative_0034_1002,r_0034_0001__Write,scope).
 arc(r_0034_0001__Write,r_0034_0009__as_well_as,arg1).
 arc(r_0034_0005__or,r_0034_0003__a,conj1).
 arc(r_0034_0005__or,r_0034_0007__b,conj2).
 arc(r_0034_0009__as_well_as,r_0034_0005__or,conj1).
 arc(r_0034_0009__as_well_as,r_0034_0018__and,conj2).
-arc(r_0034_0011__number_5,r_0034_0015__question_box,r_0034_0013__in).
-arc(r_0034_0018__and,r_0034_0011__number_5,conj1).
+arc(r_0034_0011__number__r_0034_0012__5,r_0034_0015__question_r_0034_0016__box,r_0034_0013__in).
+arc(r_0034_0018__and,r_0034_0011__number__r_0034_0012__5,conj1).
 arc(r_0034_0018__and,r_0034_0020__title,conj2).
 arc(r_0034_0020__title,r_0034_0023__book,r_0034_0021__of).
 arc(r_0034_0023__book,r_0034_0024__next,quality3).
 arc(r_0034_0024__next,r_0034_0027__box,r_0034_0025__to).
+arc(r_0034_1002__imperative,r_0034_0001__Write,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_34_A_fce_0100_2001_06,axiom,
+fof(id__34_A_fce_0100_2001_06,axiom,
     ? [OPERATORX2,EVENTX15,ENTITYX4,ENTITYX5,ENTITYX8,ENTITYX9,ENTITYX11,ENTITYX12,ENTITYX14,ENTITYX10,ENTITYX6,ENTITYX7,QUALITYX13] :
       ( isA(ENTITYX4,r_0034_0009__as_well_as)
       &amp; conj1(ENTITYX4) = ENTITYX5
@@ -229,9 +229,9 @@ fof(id_34_A_fce_0100_2001_06,axiom,
       &amp; isA(ENTITYX8,r_0034_0018__and)
       &amp; conj1(ENTITYX8) = ENTITYX9
       &amp; conj2(ENTITYX8) = ENTITYX11
-      &amp; isA(ENTITYX9,r_0034_0011__number_5)
+      &amp; isA(ENTITYX9,r_0034_0011__number__r_0034_0012__5)
       &amp; r_0034_0013__in(ENTITYX9) = ENTITYX10
-      &amp; isA(ENTITYX10,r_0034_0015__question_box)
+      &amp; isA(ENTITYX10,r_0034_0015__question__r_0034_0016__box)
       &amp; isA(ENTITYX11,r_0034_0020__title)
       &amp; r_0034_0021__of(ENTITYX11) = ENTITYX12
       &amp; isA(ENTITYX12,r_0034_0023__book)
@@ -239,7 +239,7 @@ fof(id_34_A_fce_0100_2001_06,axiom,
       &amp; isA(ENTITYX14,r_0034_0027__box)
       &amp; isA(QUALITYX13,r_0034_0024__next)
       &amp; r_0034_0025__to(QUALITYX13) = ENTITYX14
-      &amp; isA(OPERATORX2,imperative_0034_1002)
+      &amp; isA(OPERATORX2,r_0034_1002__imperative)
       &amp; scope(OPERATORX2) = EVENTX15
       &amp; isA(EVENTX15,r_0034_0001__Write)
       &amp; arg1(EVENTX15) = ENTITYX4 ) ).

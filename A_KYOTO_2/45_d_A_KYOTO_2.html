@@ -35,23 +35,23 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 214)">
 <title>%3</title>
 <polygon fill="white" stroke="transparent" points="-4,4 -4,-214 233.94,-214 233.94,4 -4,4"/>
-<!-- 0052_0002_0052_0005 -->
-<g id="node1" class="node">
-<title>0052_0002_0052_0005</title>
-<ellipse fill="none" stroke="black" cx="89.95" cy="-105" rx="59.59" ry="18"/>
-<text text-anchor="middle" x="89.95" y="-101.3" font-family="fixed" font-size="14.00">Does_have</text>
-</g>
 <!-- 0052_0004 -->
-<g id="node2" class="node">
+<g id="node1" class="node">
 <title>0052_0004</title>
 <ellipse fill="none" stroke="black" cx="27.95" cy="-18" rx="27.9" ry="18"/>
 <text text-anchor="middle" x="27.95" y="-14.3" font-family="fixed" font-size="14.00">dog</text>
 </g>
-<!-- 0052_0002_0052_0005&#45;&gt;0052_0004 -->
+<!-- 0052_0005 -->
+<g id="node2" class="node">
+<title>0052_0005</title>
+<ellipse fill="none" stroke="black" cx="89.95" cy="-105" rx="32.49" ry="18"/>
+<text text-anchor="middle" x="89.95" y="-101.3" font-family="fixed" font-size="14.00">have</text>
+</g>
+<!-- 0052_0005&#45;&gt;0052_0004 -->
 <g id="edge1" class="edge">
-<title>0052_0002_0052_0005&#45;&gt;0052_0004</title>
-<path fill="none" stroke="black" d="M77.7,-87.21C68.46,-74.55 55.67,-57.01 45.37,-42.89"/>
-<polygon fill="black" stroke="black" points="48.06,-40.63 39.34,-34.61 42.4,-44.75 48.06,-40.63"/>
+<title>0052_0005&#45;&gt;0052_0004</title>
+<path fill="none" stroke="black" d="M78.29,-88.01C69.05,-75.35 56,-57.45 45.5,-43.06"/>
+<polygon fill="black" stroke="black" points="48.07,-40.65 39.35,-34.63 42.41,-44.77 48.07,-40.65"/>
 <text text-anchor="middle" x="84.45" y="-57.8" font-family="fixed" font-size="14.00">[arg0]</text>
 </g>
 <!-- 0052_0006 -->
@@ -60,11 +60,11 @@
 <ellipse fill="none" stroke="black" cx="151.95" cy="-18" rx="77.99" ry="18"/>
 <text text-anchor="middle" x="151.95" y="-14.3" font-family="fixed" font-size="14.00">buddha&#45;nature</text>
 </g>
-<!-- 0052_0002_0052_0005&#45;&gt;0052_0006 -->
+<!-- 0052_0005&#45;&gt;0052_0006 -->
 <g id="edge2" class="edge">
-<title>0052_0002_0052_0005&#45;&gt;0052_0006</title>
-<path fill="none" stroke="black" d="M102.2,-87.21C111.14,-74.95 123.42,-58.11 133.54,-44.24"/>
-<polygon fill="black" stroke="black" points="136.45,-46.19 139.51,-36.05 130.79,-42.07 136.45,-46.19"/>
+<title>0052_0005&#45;&gt;0052_0006</title>
+<path fill="none" stroke="black" d="M101.61,-88.01C110.61,-75.67 123.24,-58.35 133.6,-44.15"/>
+<polygon fill="black" stroke="black" points="136.64,-45.93 139.7,-35.79 130.98,-41.81 136.64,-45.93"/>
 <text text-anchor="middle" x="146.45" y="-57.8" font-family="fixed" font-size="14.00">[arg1]</text>
 </g>
 <!-- question_0052_1002 -->
@@ -73,9 +73,9 @@
 <ellipse fill="none" stroke="black" cx="89.95" cy="-192" rx="56.59" ry="18"/>
 <text text-anchor="middle" x="89.95" y="-188.3" font-family="fixed" font-size="14.00">[question]</text>
 </g>
-<!-- question_0052_1002&#45;&gt;0052_0002_0052_0005 -->
+<!-- question_0052_1002&#45;&gt;0052_0005 -->
 <g id="edge3" class="edge">
-<title>question_0052_1002&#45;&gt;0052_0002_0052_0005</title>
+<title>question_0052_1002&#45;&gt;0052_0005</title>
 <path fill="none" stroke="black" d="M89.95,-173.8C89.95,-162.16 89.95,-146.55 89.95,-133.24"/>
 <polygon fill="black" stroke="black" points="93.45,-133.18 89.95,-123.18 86.45,-133.18 93.45,-133.18"/>
 <text text-anchor="middle" x="115.95" y="-144.8" font-family="fixed" font-size="14.00">[scope]</text>
@@ -84,20 +84,20 @@
 </svg>
 <br>
 <pre>
-arc(question_0052_1002,r_0052_0002__Does_have,scope).
-arc(r_0052_0002__Does_have,r_0052_0004__dog,arg0).
-arc(r_0052_0002__Does_have,r_0052_0006__buddha_nature,arg1).
+arc(r_0052_0005__have,r_0052_0004__dog,arg0).
+arc(r_0052_0005__have,r_0052_0006__buddha_nature,arg1).
+arc(r_0052_1002__question,r_0052_0005__have,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_52_A_KYOTO_2,axiom,
+fof(id__52_A_KYOTO_2,axiom,
     ? [OPERATORX2,EVENTX5,ENTITYX3,ENTITYX4] :
       ( isA(ENTITYX3,r_0052_0004__dog)
       &amp; isA(ENTITYX4,r_0052_0006__buddha_nature)
-      &amp; isA(OPERATORX2,question_0052_1002)
+      &amp; isA(OPERATORX2,r_0052_1002__question)
       &amp; scope(OPERATORX2) = EVENTX5
-      &amp; isA(EVENTX5,r_0052_0002__Does_have)
+      &amp; isA(EVENTX5,r_0052_0005__have)
       &amp; arg0(EVENTX5) = ENTITYX3
       &amp; arg1(EVENTX5) = ENTITYX4 ) ).
 

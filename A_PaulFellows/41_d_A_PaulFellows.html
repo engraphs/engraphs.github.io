@@ -344,7 +344,6 @@ Eventually , at about 1:30 in the morning I suggested we just send it something 
 </svg>
 <br>
 <pre>
-arc(question_0047_1015,r_0047_0027__would,scope).
 arc(r_0047_0005__1:30,r_0047_0004__about,quality1).
 arc(r_0047_0005__1:30,r_0047_0008__morning,r_0047_0006__in).
 arc(r_0047_0010__suggested,r_0047_0001__Eventually,tmp1).
@@ -365,14 +364,15 @@ arc(r_0047_0020__sent,r_0047_0026__would,prn7).
 arc(r_0047_0026__would,z_0047_1022,scope).
 arc(r_0047_0027__would,r_0047_0028__n_apos_t,scope).
 arc(r_0047_0028__n_apos_t,z_0047_1019,scope).
+arc(r_0047_1015__question,r_0047_0027__would,scope).
 arc(z_0047_1019,r_0047_0025__you,arg0).
-arc(z_0047_1022,question_0047_1015,prn4).
 arc(z_0047_1022,r_0047_0025__you,arg0).
+arc(z_0047_1022,r_0047_1015__question,prn4).
 
 </pre>
 <br>
 <pre>
-fof(id_47_A_PaulFellows,axiom,
+fof(id__47_A_PaulFellows,axiom,
     ? [STATEX5,EVENTX9,EVENTX12,EVENTX13,SPEAKER_AND_HEARERX11,HEARERX16,EVENTX25,OPERATORX10,EVENTX24,OPERATORX21,EVENTX23,OPERATORX15,OPERATORX17,OPERATORX18,EVENTX20,OPERATORX6,EVENTX8,QUALITYX1,QUALITYX3,ENTITYX2,ENTITYX4,ATTRIBX7] :
       ( STATEX5 = OPERATORX6
       &amp; isA(OPERATORX6,r_0047_0012__just)
@@ -396,7 +396,7 @@ fof(id_47_A_PaulFellows,axiom,
       &amp; arg0(EVENTX23) = r_0047_0025__you
       &amp; prn4(EVENTX23) = EVENTX13
       &amp; EVENTX13 = OPERATORX15
-      &amp; isA(OPERATORX15,question_0047_1015)
+      &amp; isA(OPERATORX15,r_0047_1015__question)
       &amp; scope(OPERATORX15) = OPERATORX17
       &amp; isA(OPERATORX17,r_0047_0027__would)
       &amp; scope(OPERATORX17) = OPERATORX18

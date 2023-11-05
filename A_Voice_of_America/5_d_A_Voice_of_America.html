@@ -796,8 +796,7 @@ Amy Katz Narrates .
 </svg>
 <br>
 <pre>
-arc(question_0022_1027,r_0025_0008__manage,scope).
-arc(r_0022_0005__reports,r_0022_0002__American_Diabetes_Association,arg0).
+arc(r_0022_0005__reports,r_0022_0002__American__r_0022_0003__Diabetes_r_0022_0004__Association,arg0).
 arc(r_0022_0005__reports,r_0022_0008__is,arg1).
 arc(r_0022_0008__is,r_0022_0007__disease,arg0).
 arc(r_0022_0008__is,r_0022_0011__cause,prd2).
@@ -806,20 +805,21 @@ arc(r_0022_0011__cause,r_0022_0014__cases,r_0022_0012__of).
 arc(r_0022_0014__cases,r_0022_0013__new,attrib1).
 arc(r_0022_0014__cases,r_0022_0016__blindness,r_0022_0015__of).
 arc(r_0022_0014__cases,r_0022_0018__adults,r_0022_0017__among).
+arc(r_0022_1027__question,r_0025_0008__manage,scope).
 arc(r_0023_0002__is,r_0022_0007__disease,arg0).
 arc(r_0023_0002__is,r_0023_0005__cause,prd2).
 arc(r_0023_0005__cause,r_0023_0004__leading,attrib2).
-arc(r_0023_0005__cause,r_0023_0007__kidney_failure,r_0023_0006__of).
+arc(r_0023_0005__cause,r_0023_0007__kidney__r_0023_0008__failure,r_0023_0006__of).
 arc(r_0024_0002__rate,r_0024_0004__amputation,r_0024_0003__of).
 arc(r_0024_0005__is,r_0024_0002__rate,arg0).
 arc(r_0024_0005__is,r_0024_0008__higher,prd2).
-arc(r_0024_0008__higher,r_0024_0006__10_times,modifier1).
+arc(r_0024_0008__higher,r_0024_0006__10__r_0024_0007__times,modifier1).
 arc(r_0024_0008__higher,r_0024_0010__those,r_0024_0009__among).
 arc(r_0024_0012__suffer,r_0024_0010__those,arg0).
 arc(r_0024_0012__suffer,r_0024_0015__disease,r_0024_0013__from_clr).
 arc(r_0025_0002__say,r_0025_0001__Experts,arg0).
 arc(r_0025_0002__say,r_0025_0013__can,arg1).
-arc(r_0025_0005__learn,question_0022_1027,arg1).
+arc(r_0025_0005__learn,r_0022_1027__question,arg1).
 arc(r_0025_0005__learn,r_0025_0003__those,arg0).
 arc(r_0025_0008__manage,r_0025_0003__those,arg0).
 arc(r_0025_0008__manage,r_0025_0006__how,mnr1).
@@ -832,8 +832,8 @@ arc(r_0025_0016__and,r_0025_0015__healthier,conj1).
 arc(r_0025_0016__and,r_0025_0018__normal,conj2).
 arc(r_0025_0018__normal,r_0025_0017__more,quality1).
 arc(r_0025_0019__lives,r_0025_0016__and,attrib1).
-arc(r_0026_0003__June_Soh,r_0026_0001__VOA,genv).
-arc(r_0026_0005__found,r_0026_0003__June_Soh,arg0).
+arc(r_0026_0003__June__r_0026_0004__Soh,r_0026_0001__VOA,genv).
+arc(r_0026_0005__found,r_0026_0003__June__r_0026_0004__Soh,arg0).
 arc(r_0026_0005__found,r_0026_0006__camps,arg1).
 arc(r_0026_0008__provide,r_0026_0006__camps,arg0).
 arc(r_0026_0008__provide,r_0026_0009__children,arg2).
@@ -850,12 +850,12 @@ arc(r_0026_0022__letting,r_0026_0009__children,arg1).
 arc(r_0026_0022__letting,r_0026_0024__just,prd).
 arc(r_0026_0024__just,r_0026_0025__be,scope).
 arc(r_0026_0025__be,r_0026_0026__kids,prd2).
-arc(r_0027_0003__Narrates,r_0027_0001__Amy_Katz,arg0).
+arc(r_0027_0003__Narrates,r_0027_0001__Amy__r_0027_0002__Katz,arg0).
 
 </pre>
 <br>
 <pre>
-fof(id_22_A_Voice_of_America,axiom,
+fof(id__22_A_Voice_of_America,axiom,
     ? [STATEX1,STATEX24,STATEX25,EVENTX47,STATEX54,DISEASEX11,CHILDRENX53,EVENTX63,EVENTX62,CONNX52,EVENTX60,OPERATORX57,EVENTX59,EVENTX61,EVENTX51,EVENTX40,OPERATORX38,EVENTX39,EVENTX32,OPERATORX27,EVENTX31,EVENTX22,EVENTX21,EVENTX15,EVENTX10,EVENTX9,ENTITYX41,CHILDRENX42,ENTITYX45,ENTITYX58,ENTITYX50,ENTITYX43,ENTITYX23,ENTITYX33,ENTITYX29,ENTITYX16,ENTITYX19,ENTITYX20,ENTITYX17,ENTITYX12,ENTITYX14,DISEASEX2,ENTITYX3,ENTITYX5,ENTITYX7,ENTITYX8,ATTRIBX46,ATTRIBX44,ATTRIBX34,ATTRIBX35,ATTRIBX36,ATTRIBX18,ATTRIBX13,ATTRIBX4,ATTRIBX6,QUALITYX37,QUALITYX28,QUALITYX30] :
       ( STATEX1 = EVENTX9
       &amp; isA(EVENTX9,r_0022_0008__is)
@@ -868,7 +868,7 @@ fof(id_22_A_Voice_of_America,axiom,
       &amp; arg0(EVENTX39) = r_0025_0003__those
       &amp; arg1(EVENTX39) = ENTITYX33
       &amp; STATEX25 = OPERATORX27
-      &amp; isA(OPERATORX27,question_0022_1027)
+      &amp; isA(OPERATORX27,r_0022_1027__question)
       &amp; scope(OPERATORX27) = EVENTX31
       &amp; isA(EVENTX31,r_0025_0008__manage)
       &amp; arg0(EVENTX31) = r_0025_0003__those
@@ -897,11 +897,11 @@ fof(id_22_A_Voice_of_America,axiom,
       &amp; isA(ENTITYX12,r_0023_0005__cause)
       &amp; attrib2(ENTITYX12) = ATTRIBX13
       &amp; r_0023_0006__of(ENTITYX12) = ENTITYX14
-      &amp; isA(ENTITYX14,r_0023_0007__kidney_failure)
+      &amp; isA(ENTITYX14,r_0023_0007__kidney__r_0023_0008__failure)
       &amp; isA(ENTITYX16,r_0024_0002__rate)
       &amp; r_0024_0003__of(ENTITYX16) = ENTITYX17
       &amp; isA(ENTITYX17,r_0024_0004__amputation)
-      &amp; isA(ENTITYX19,r_0024_0006__10_times)
+      &amp; isA(ENTITYX19,r_0024_0006__10__r_0024_0007__times)
       &amp; isA(ENTITYX20,r_0024_0015__disease)
       &amp; isA(ENTITYX23,r_0025_0001__Experts)
       &amp; isA(ENTITYX29,r_0025_0010__disease)
@@ -929,7 +929,7 @@ fof(id_22_A_Voice_of_America,axiom,
       &amp; isA(ENTITYX50,r_0026_0020__diabetes)
       &amp; CHILDRENX53 = CHILDRENX42
       &amp; isA(ENTITYX58,r_0026_0026__kids)
-      &amp; isA(r_0022_0002__American_Diabetes_Association,r_0022_0002__American_Diabetes_Association)
+      &amp; isA(r_0022_0002__American__r_0022_0003__Diabetes_r_0022_0004__Association,r_0022_0002__American_r_0022_0003__Diabetes_r_0022_0004__Association)
       &amp; isA(EVENTX21,r_0024_0012__suffer)
       &amp; arg0(EVENTX21) = r_0024_0010__those
       &amp; r_0024_0013__from_clr(EVENTX21) = ENTITYX20
@@ -938,8 +938,8 @@ fof(id_22_A_Voice_of_America,axiom,
       &amp; arg0(EVENTX32) = r_0025_0003__those
       &amp; arg1(EVENTX32) = STATEX25
       &amp; isA(r_0025_0003__those,r_0025_0003__those)
-      &amp; isA(r_0026_0003__June_Soh,r_0026_0003__June_Soh)
-      &amp; genv(r_0026_0003__June_Soh) = r_0026_0001__VOA
+      &amp; isA(r_0026_0003__June__r_0026_0004__Soh,r_0026_0003__June_r_0026_0004__Soh)
+      &amp; genv(r_0026_0003__June__r_0026_0004__Soh) = r_0026_0001__VOA
       &amp; isA(ATTRIBX4,r_0022_0010__leading)
       &amp; isA(ATTRIBX6,r_0022_0013__new)
       &amp; isA(ATTRIBX13,r_0023_0004__leading)
@@ -958,7 +958,7 @@ fof(id_22_A_Voice_of_America,axiom,
       &amp; isA(QUALITYX30,r_0025_0011__early)
       &amp; isA(QUALITYX37,r_0025_0017__more)
       &amp; isA(EVENTX10,r_0022_0005__reports)
-      &amp; arg0(EVENTX10) = r_0022_0002__American_Diabetes_Association
+      &amp; arg0(EVENTX10) = r_0022_0002__American__r_0022_0003__Diabetes_r_0022_0004__Association
       &amp; arg1(EVENTX10) = STATEX1
       &amp; isA(EVENTX15,r_0023_0002__is)
       &amp; arg0(EVENTX15) = DISEASEX11
@@ -970,10 +970,10 @@ fof(id_22_A_Voice_of_America,axiom,
       &amp; arg0(EVENTX40) = ENTITYX23
       &amp; arg1(EVENTX40) = STATEX24
       &amp; isA(EVENTX62,r_0026_0005__found)
-      &amp; arg0(EVENTX62) = r_0026_0003__June_Soh
+      &amp; arg0(EVENTX62) = r_0026_0003__June__r_0026_0004__Soh
       &amp; arg1(EVENTX62) = ENTITYX41
       &amp; isA(EVENTX63,r_0027_0003__Narrates)
-      &amp; arg0(EVENTX63) = r_0027_0001__Amy_Katz ) ).
+      &amp; arg0(EVENTX63) = r_0027_0001__Amy__r_0027_0002__Katz ) ).
 
 
 </pre>

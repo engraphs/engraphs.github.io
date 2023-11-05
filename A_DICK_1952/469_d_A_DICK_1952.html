@@ -291,23 +291,23 @@ It turned in a huge arc and then shot off beyond the horizon , heading into oute
 </svg>
 <br>
 <pre>
-arc(cnt_0605_1015,r_0606_0009__shot_off,scope).
-arc(cnt_0605_1015,r_0606_0015__heading,restriction).
-arc(mnr_0605_1003,r_0605_0003__roared,scope).
-arc(mnr_0605_1003,r_0605_0006__flying,restriction).
 arc(r_0605_0003__roared,r_0605_0002__ship,arg0).
 arc(r_0605_0003__roared,r_0605_0004__up,clr_dir3).
 arc(r_0605_0006__flying,r_0605_0002__ship,arg0).
 arc(r_0605_0006__flying,r_0605_0009__ruins,r_0605_0007__over_clr_dir).
 arc(r_0605_0009__ruins,r_0605_0012__city,r_0605_0010__of).
+arc(r_0605_1003__mnr,r_0605_0003__roared,scope).
+arc(r_0605_1003__mnr,r_0605_0006__flying,restriction).
+arc(r_0605_1015__cnt,r_0606_0009__shot__r_0606_0010__off,scope).
+arc(r_0605_1015__cnt,r_0606_0015__heading,restriction).
 arc(r_0606_0002__turned,r_0605_0002__ship,arg0).
 arc(r_0606_0002__turned,r_0606_0006__arc,r_0606_0003__in_dir).
 arc(r_0606_0006__arc,r_0606_0005__huge,attrib2).
-arc(r_0606_0007__and,cnt_0605_1015,conj2).
+arc(r_0606_0007__and,r_0605_1015__cnt,conj2).
 arc(r_0606_0007__and,r_0606_0002__turned,conj1).
-arc(r_0606_0009__shot_off,r_0605_0002__ship,arg0).
-arc(r_0606_0009__shot_off,r_0606_0008__then,tmp1).
-arc(r_0606_0009__shot_off,r_0606_0013__horizon,r_0606_0011__beyond_dir).
+arc(r_0606_0009__shot__r_0606_0010__off,r_0605_0002__ship,arg0).
+arc(r_0606_0009__shot__r_0606_0010__off,r_0606_0008__then,tmp1).
+arc(r_0606_0009__shot__r_0606_0010__off,r_0606_0013__horizon,r_0606_0011__beyond_dir).
 arc(r_0606_0015__heading,r_0605_0002__ship,arg0).
 arc(r_0606_0015__heading,r_0606_0018__space,r_0606_0016__into_dir).
 arc(r_0606_0018__space,r_0606_0017__outer,attrib1).
@@ -315,7 +315,7 @@ arc(r_0606_0018__space,r_0606_0017__outer,attrib1).
 </pre>
 <br>
 <pre>
-fof(id_605_A_DICK_1952__606_A_DICK_1952,axiom,
+fof(id__605_A_DICK_1952__606_A_DICK_1952,axiom,
     ? [SHIPX9,CONJX21,CONNX16,EVENTX19,EVENTX20,EVENTX12,CONNX4,EVENTX7,EVENTX8,ENTITYX14,ENTITYX17,ENTITYX10,SHIPX1,ENTITYX5,ENTITYX6,QUALITYX13,QUALITYX2,ATTRIBX18,ATTRIBX11] :
       ( isA(SHIPX1,r_0605_0002__ship)
       &amp; isA(ENTITYX5,r_0605_0009__ruins)
@@ -331,7 +331,7 @@ fof(id_605_A_DICK_1952__606_A_DICK_1952,axiom,
       &amp; isA(QUALITYX13,r_0606_0008__then)
       &amp; isA(ATTRIBX11,r_0606_0005__huge)
       &amp; isA(ATTRIBX18,r_0606_0017__outer)
-      &amp; isA(CONNX4,mnr_0605_1003)
+      &amp; isA(CONNX4,r_0605_1003__mnr)
       &amp; scope(CONNX4) = EVENTX8
       &amp; isA(EVENTX8,r_0605_0003__roared)
       &amp; arg0(EVENTX8) = SHIPX1
@@ -346,9 +346,9 @@ fof(id_605_A_DICK_1952__606_A_DICK_1952,axiom,
       &amp; arg0(EVENTX12) = SHIPX9
       &amp; r_0606_0003__in_dir(EVENTX12) = ENTITYX10
       &amp; conj2(CONJX21) = CONNX16
-      &amp; isA(CONNX16,cnt_0605_1015)
+      &amp; isA(CONNX16,r_0605_1015__cnt)
       &amp; scope(CONNX16) = EVENTX20
-      &amp; isA(EVENTX20,r_0606_0009__shot_off)
+      &amp; isA(EVENTX20,r_0606_0009__shot__r_0606_0010__off)
       &amp; arg0(EVENTX20) = SHIPX9
       &amp; tmp1(EVENTX20) = QUALITYX13
       &amp; r_0606_0011__beyond_dir(EVENTX20) = ENTITYX14

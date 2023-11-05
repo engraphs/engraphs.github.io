@@ -527,18 +527,18 @@ All source ports allow you to rebind these keys to a setup that you find more co
 <pre>
 arc(r_0006_0008__will,r_0006_0014__and,scope).
 arc(r_0006_0009__move,r_0006_0002__default,r_0006_0001__By_mod).
-arc(r_0006_0009__move,r_0006_0005__keyboard_cursor_keys,arg0).
+arc(r_0006_0009__move,r_0006_0005__keyboard__r_0006_0006__cursor_r_0006_0007__keys,arg0).
 arc(r_0006_0009__move,r_0006_0011__and,dir2).
 arc(r_0006_0011__and,r_0006_0010__forward,conj1).
 arc(r_0006_0011__and,r_0006_0012__backward,conj2).
 arc(r_0006_0014__and,r_0006_0009__move,conj1).
 arc(r_0006_0014__and,r_0006_0015__turn,conj2).
 arc(r_0006_0015__turn,r_0006_0002__default,r_0006_0001__By_mod).
-arc(r_0006_0015__turn,r_0006_0005__keyboard_cursor_keys,arg0).
+arc(r_0006_0015__turn,r_0006_0005__keyboard__r_0006_0006__cursor_r_0006_0007__keys,arg0).
 arc(r_0006_0015__turn,r_0006_0017__and,dir2).
 arc(r_0006_0017__and,r_0006_0016__left,conj1).
 arc(r_0006_0017__and,r_0006_0018__right,conj2).
-arc(r_0007_0004__fires,r_0007_0002__Control_key,arg0).
+arc(r_0007_0004__fires,r_0007_0002__Control__r_0007_0003__key,arg0).
 arc(r_0007_0004__fires,r_0007_0007__weapon,arg1).
 arc(r_0007_0007__weapon,r_0007_0006__current,attrib2).
 arc(r_0007_0009__and,r_0007_0004__fires,conj1).
@@ -550,9 +550,9 @@ arc(r_0007_0015__and,r_0007_0013__open,conj1).
 arc(r_0007_0015__and,r_0007_0016__activate,conj2).
 arc(r_0007_0016__activate,r_0007_0011__spacebar,arg0).
 arc(r_0007_0016__activate,r_0007_0017__switches,arg1).
-arc(r_0008_0001__quantificational__All,r_0008_0002__source_ports,restriction).
-arc(r_0008_0001__quantificational__All,r_0008_0004__allow,scope).
-arc(r_0008_0004__allow,r_0008_0002__source_ports,arg0).
+arc(r_0008_0001__quantificational__r_0008_0001__All,r_0008_0002__source__r_0008_0003__ports,restriction).
+arc(r_0008_0001__quantificational__r_0008_0001__All,r_0008_0004__allow,scope).
+arc(r_0008_0004__allow,r_0008_0002__source__r_0008_0003__ports,arg0).
 arc(r_0008_0004__allow,r_0008_0007__rebind,arg1).
 arc(r_0008_0007__rebind,r_0008_0005__you,arg0).
 arc(r_0008_0007__rebind,r_0008_0015__setup,r_0008_0013__to_cnt).
@@ -561,14 +561,14 @@ arc(r_0008_0018__find,r_0008_0005__you,arg0).
 arc(r_0008_0018__find,r_0008_0015__setup,arg1).
 arc(r_0008_0018__find,r_0008_0020__comfortable,prd).
 arc(r_0008_0020__comfortable,r_0008_0019__more,quality1).
-arc(z_0006_1034,r_0006_0005__keyboard_cursor_keys,conj1).
-arc(z_0006_1034,r_0007_0002__Control_key,conj2).
+arc(z_0006_1034,r_0006_0005__keyboard__r_0006_0006__cursor_r_0006_0007__keys,conj1).
+arc(z_0006_1034,r_0007_0002__Control__r_0007_0003__key,conj2).
 arc(z_0006_1034,r_0007_0011__spacebar,conj3).
 
 </pre>
 <br>
 <pre>
-fof(id_6_A_Freedoom__7_A_Freedoom__8_A_Freedoom,axiom,
+fof(id__6_A_Freedoom__7_A_Freedoom__8_A_Freedoom,axiom,
     ? [STATEX29,CURSOR_KEYSX31,CONTROL_KEYX32,SPACEBARX33,KEYSX35,HEARERX37,QUANTX28,EVENTX42,EVENTX41,EVENTX40,CONJX26,OPERATORX20,CONJX25,EVENTX24,EVENTX22,EVENTX18,OPERATORX3,CONJX12,EVENTX11,EVENTX7,ENTITYX27,KEYSX30,ENTITYX36,SPACEBARX19,ENTITYX23,ENTITYX21,CONTROL_KEYX15,ENTITYX16,ENTITYX1,CURSOR_KEYSX2,QUALITYX39,QUALITYX8,QUALITYX9,QUALITYX10,QUALITYX4,QUALITYX5,QUALITYX6,ATTRIBX38,ATTRIBX17] :
       ( STATEX29 = EVENTX41
       &amp; isA(EVENTX41,r_0008_0007__rebind)
@@ -576,8 +576,8 @@ fof(id_6_A_Freedoom__7_A_Freedoom__8_A_Freedoom,axiom,
       &amp; arg1(EVENTX41) = KEYSX35
       &amp; r_0008_0013__to_cnt(EVENTX41) = ENTITYX36
       &amp; isA(ENTITYX1,r_0006_0002__default)
-      &amp; isA(CURSOR_KEYSX2,r_0006_0005__keyboard_cursor_keys)
-      &amp; isA(CONTROL_KEYX15,r_0007_0002__Control_key)
+      &amp; isA(CURSOR_KEYSX2,r_0006_0005__keyboard__r_0006_0006__cursor_r_0006_0007__keys)
+      &amp; isA(CONTROL_KEYX15,r_0007_0002__Control__r_0007_0003__key)
       &amp; isA(ENTITYX16,r_0007_0007__weapon)
       &amp; attrib2(ENTITYX16) = ATTRIBX17
       &amp; isA(SPACEBARX19,r_0007_0011__spacebar)
@@ -644,9 +644,9 @@ fof(id_6_A_Freedoom__7_A_Freedoom__8_A_Freedoom,axiom,
       &amp; arg0(EVENTX24) = SPACEBARX19
       &amp; arg0(EVENTX24) = SPACEBARX19
       &amp; arg1(EVENTX24) = ENTITYX23
-      &amp; isA(QUANTX28,r_0008_0001__quantificational__All)
+      &amp; isA(QUANTX28,r_0008_0001__quantificational__r_0008_0001__All)
       &amp; restriction(QUANTX28) = ENTITYX27
-      &amp; isA(ENTITYX27,r_0008_0002__source_ports)
+      &amp; isA(ENTITYX27,r_0008_0002__source__r_0008_0003__ports)
       &amp; scope(QUANTX28) = EVENTX42
       &amp; isA(EVENTX42,r_0008_0004__allow)
       &amp; arg0(EVENTX42) = ENTITYX27

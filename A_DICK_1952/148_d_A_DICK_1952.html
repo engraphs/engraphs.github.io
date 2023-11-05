@@ -201,27 +201,27 @@
 </svg>
 <br>
 <pre>
-arc(mnr_0196_1012,r_0196_0011__said,scope).
-arc(mnr_0196_1012,r_0196_0013__examining,restriction).
 arc(r_0196_0003__think,r_0196_0002__I,arg0).
 arc(r_0196_0003__think,r_0196_0005__was,arg1).
 arc(r_0196_0005__was,r_0196_0004__this,arg0).
 arc(r_0196_0005__was,r_0196_0007__farm,prd2).
 arc(r_0196_0010__Tance,r_0196_0002__I,z_0196_1010).
 arc(r_0196_0011__said,r_0196_0010__Tance,arg0).
-arc(r_0196_0011__said,utterance_0196_1003,arg1).
+arc(r_0196_0011__said,r_0196_1003__utterance,arg1).
 arc(r_0196_0013__examining,r_0196_0010__Tance,arg0).
 arc(r_0196_0013__examining,r_0196_0015__piece,arg1).
 arc(r_0196_0015__piece,r_0196_0017__wood,r_0196_0016__of).
-arc(utterance_0196_1003,r_0196_0003__think,part1).
+arc(r_0196_1003__utterance,r_0196_0003__think,part1).
+arc(r_0196_1012__mnr,r_0196_0011__said,scope).
+arc(r_0196_1012__mnr,r_0196_0013__examining,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_196_A_DICK_1952,axiom,
+fof(id__196_A_DICK_1952,axiom,
     ? [STATEX1,STATEX4,TANCEX11,CONNX13,EVENTX16,EVENTX17,CONJX8,EVENTX7,EVENTX6,ENTITYX14,ENTITYX15,ENTITYX5] :
       ( STATEX1 = CONJX8
-      &amp; isA(CONJX8,utterance_0196_1003)
+      &amp; isA(CONJX8,r_0196_1003__utterance)
       &amp; part1(CONJX8) = EVENTX7
       &amp; isA(EVENTX7,r_0196_0003__think)
       &amp; arg0(EVENTX7) = r_0196_0002__I
@@ -237,7 +237,7 @@ fof(id_196_A_DICK_1952,axiom,
       &amp; isA(ENTITYX15,r_0196_0017__wood)
       &amp; isA(r_0196_0010__Tance,r_0196_0010__Tance)
       &amp; z_0196_1010(r_0196_0010__Tance) = TANCEX11
-      &amp; isA(CONNX13,mnr_0196_1012)
+      &amp; isA(CONNX13,r_0196_1012__mnr)
       &amp; scope(CONNX13) = EVENTX17
       &amp; isA(EVENTX17,r_0196_0011__said)
       &amp; arg1(EVENTX17) = STATEX1

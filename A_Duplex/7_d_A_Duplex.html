@@ -161,7 +161,6 @@ How could we know it actually worked in real life ?
 </svg>
 <br>
 <pre>
-arc(question_0015_1002,r_0015_0002__could,scope).
 arc(r_0015_0002__could,r_0015_0004__know,scope).
 arc(r_0015_0004__know,r_0015_0001__How,mnr1).
 arc(r_0015_0004__know,r_0015_0003__we,arg0).
@@ -170,11 +169,12 @@ arc(r_0015_0006__actually,r_0015_0007__worked,scope).
 arc(r_0015_0007__worked,r_0015_0005__it,arg0).
 arc(r_0015_0007__worked,r_0015_0010__life,r_0015_0008__in_loc).
 arc(r_0015_0010__life,r_0015_0009__real,attrib1).
+arc(r_0015_1002__question,r_0015_0002__could,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_15_A_Duplex,axiom,
+fof(id__15_A_Duplex,axiom,
     ? [STATEX4,OPERATORX2,OPERATORX9,EVENTX10,OPERATORX5,EVENTX8,QUALITYX3,ENTITYX6,ATTRIBX7] :
       ( STATEX4 = OPERATORX5
       &amp; isA(OPERATORX5,r_0015_0006__actually)
@@ -186,7 +186,7 @@ fof(id_15_A_Duplex,axiom,
       &amp; isA(ENTITYX6,r_0015_0010__life)
       &amp; attrib1(ENTITYX6) = ATTRIBX7
       &amp; isA(ATTRIBX7,r_0015_0009__real)
-      &amp; isA(OPERATORX2,question_0015_1002)
+      &amp; isA(OPERATORX2,r_0015_1002__question)
       &amp; scope(OPERATORX2) = OPERATORX9
       &amp; isA(OPERATORX9,r_0015_0002__could)
       &amp; scope(OPERATORX9) = EVENTX10

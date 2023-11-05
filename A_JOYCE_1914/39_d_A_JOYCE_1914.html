@@ -97,7 +97,7 @@ I felt that I had been very far away , in some land where the customs were stran
 <title>0091_0006&#45;&gt;0091_0009</title>
 <path fill="none" stroke="black" d="M173.66,-263.58C191.36,-249.9 218.15,-229.21 238.14,-213.75"/>
 <polygon fill="black" stroke="black" points="240.48,-216.37 246.25,-207.49 236.2,-210.83 240.48,-216.37"/>
-<text text-anchor="middle" x="231.5" y="-231.8" font-family="fixed" font-size="14.00">[loc]</text>
+<text text-anchor="middle" x="252.5" y="-231.8" font-family="fixed" font-size="14.00">[prd2][loc]</text>
 </g>
 <!-- 0091_0013 -->
 <g id="node6" class="node">
@@ -108,9 +108,9 @@ I felt that I had been very far away , in some land where the customs were stran
 <!-- 0091_0006&#45;&gt;0091_0013 -->
 <g id="edge6" class="edge">
 <title>0091_0006&#45;&gt;0091_0013</title>
-<path fill="none" stroke="black" d="M182.67,-268.95C202.05,-262.36 228.41,-252.89 251,-243 273.71,-233.05 298.56,-220.21 317.42,-210.03"/>
-<polygon fill="black" stroke="black" points="319.32,-212.98 326.42,-205.12 315.97,-206.83 319.32,-212.98"/>
-<text text-anchor="middle" x="301.5" y="-231.8" font-family="fixed" font-size="14.00">in[loc]</text>
+<path fill="none" stroke="black" d="M187.3,-274.34C216.34,-270.02 259.47,-261.02 293,-243 305.74,-236.16 317.86,-225.72 327.47,-216.16"/>
+<polygon fill="black" stroke="black" points="330.18,-218.39 334.6,-208.75 325.14,-213.53 330.18,-218.39"/>
+<text text-anchor="middle" x="334.5" y="-231.8" font-family="fixed" font-size="14.00">in[loc]</text>
 </g>
 <!-- z_0091_1017 -->
 <g id="node7" class="node">
@@ -231,7 +231,7 @@ arc(r_0091_0002__felt,r_0091_0001__I,arg0).
 arc(r_0091_0002__felt,r_0091_0005__had,arg1).
 arc(r_0091_0005__had,r_0091_0006__been,catenative).
 arc(r_0091_0006__been,r_0091_0001__I,arg0).
-arc(r_0091_0006__been,r_0091_0009__away,loc2).
+arc(r_0091_0006__been,r_0091_0009__away,prd2_loc2).
 arc(r_0091_0006__been,r_0091_0013__land,r_0091_0011__in_loc).
 arc(r_0091_0006__been,z_0091_1017,prn6).
 arc(r_0091_0008__far,r_0091_0007__very,quality1).
@@ -246,7 +246,7 @@ arc(z_0091_1017,r_0091_0024__thought,prn3).
 </pre>
 <br>
 <pre>
-fof(id_91_A_JOYCE_1914,axiom,
+fof(id__91_A_JOYCE_1914,axiom,
     ? [STATEX1,CATENATIVEX3,EVENTX11,EVENTX14,SPEAKERX2,SPEAKERX15,EVENTX21,EVENTX20,EVENTX19,EVENTX18,EVENTX16,EVENTX10,ENTITYX7,ENTITYX8,QUALITYX4,QUALITYX5,QUALITYX6,ATTRIBX9] :
       ( STATEX1 = EVENTX20
       &amp; isA(EVENTX20,r_0091_0005__had)
@@ -254,7 +254,7 @@ fof(id_91_A_JOYCE_1914,axiom,
       &amp; CATENATIVEX3 = EVENTX19
       &amp; isA(EVENTX19,r_0091_0006__been)
       &amp; arg0(EVENTX19) = SPEAKERX2
-      &amp; loc2(EVENTX19) = QUALITYX4
+      &amp; prd2_loc2(EVENTX19) = QUALITYX4
       &amp; r_0091_0011__in_loc(EVENTX19) = ENTITYX7
       &amp; prn6(EVENTX19) = EVENTX11
       &amp; EVENTX11 = EVENTX18
@@ -315,11 +315,11 @@ fof(id_91_A_JOYCE_1914,axiom,
 <line x1="541.32" y1="244" x2="541.32" y2="275" style="stroke:#000000;stroke-width:2;"/>
 <line x1="1620.72" y1="183" x2="540" y2="214" style="stroke:#000000;stroke-width:2;"/>
 <text x="1801.2" y="234" text-anchor="middle">IP-PPL-CAT</text>
-<text x="660.48" y="295" text-anchor="middle">BEN</text>
-<text x="660.48" y="356" text-anchor="middle">been</text>
-<line x1="660.48" y1="305" x2="660.48" y2="336" style="stroke:#000000;stroke-width:2;"/>
+<text x="660.84" y="295" text-anchor="middle">BEN;~La</text>
+<text x="660.84" y="356" text-anchor="middle">been</text>
+<line x1="660.84" y1="305" x2="660.84" y2="336" style="stroke:#000000;stroke-width:2;"/>
 <line x1="1801.2" y1="244" x2="660" y2="275" style="stroke:#000000;stroke-width:2;"/>
-<text x="900.96" y="295" text-anchor="middle">ADVP-LOC</text>
+<text x="901.56" y="295" text-anchor="middle">ADVP-PRD2-LOC</text>
 <text x="840.48" y="356" text-anchor="middle">ADVP</text>
 <text x="780.48" y="417" text-anchor="middle">ADVP</text>
 <text x="780.48" y="478" text-anchor="middle">ADV</text>
@@ -331,11 +331,11 @@ fof(id_91_A_JOYCE_1914,axiom,
 <text x="900.36" y="478" text-anchor="middle">far</text>
 <line x1="900.36" y1="427" x2="900.36" y2="458" style="stroke:#000000;stroke-width:2;"/>
 <line x1="840.48" y1="366" x2="900" y2="397" style="stroke:#000000;stroke-width:2;"/>
-<line x1="900.96" y1="305" x2="840" y2="336" style="stroke:#000000;stroke-width:2;"/>
+<line x1="901.56" y1="305" x2="840" y2="336" style="stroke:#000000;stroke-width:2;"/>
 <text x="1020.48" y="356" text-anchor="middle">ADV</text>
 <text x="1020.48" y="417" text-anchor="middle">away</text>
 <line x1="1020.48" y1="366" x2="1020.48" y2="397" style="stroke:#000000;stroke-width:2;"/>
-<line x1="900.96" y1="305" x2="1020" y2="336" style="stroke:#000000;stroke-width:2;"/>
+<line x1="901.56" y1="305" x2="1020" y2="336" style="stroke:#000000;stroke-width:2;"/>
 <line x1="1801.2" y1="244" x2="900" y2="275" style="stroke:#000000;stroke-width:2;"/>
 <text x="1140.48" y="295" text-anchor="middle">PUNC</text>
 <text x="1140.48" y="356" text-anchor="middle">,</text>
@@ -442,10 +442,10 @@ fof(id_91_A_JOYCE_1914,axiom,
           (CP-THT-OB1 (IP-SUB (C that;{that})
                               (NP-SBJ (PRO I;{I}))
                               (HVD;~cat_Ve had;{have})
-                              (IP-PPL-CAT (BEN been;{be})
-                                          (ADVP-LOC (ADVP (ADVP (ADV very;{very}))
-                                                          (ADV far;{far}))
-                                                    (ADV away;{away}))
+                              (IP-PPL-CAT (BEN;~La been;{be})
+                                          (ADVP-PRD2-LOC (ADVP (ADVP (ADV very;{very}))
+                                                               (ADV far;{far}))
+                                                         (ADV away;{away}))
                                           (PUNC ,)
                                           (PP-LOC (P-ROLE in;{in})
                                                   (NP (D some;{some})

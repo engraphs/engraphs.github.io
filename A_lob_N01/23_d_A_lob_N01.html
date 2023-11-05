@@ -386,8 +386,6 @@ He glanced at the speed recorder .
 </svg>
 <br>
 <pre>
-arc(cnt_0030_1003,r_0030_0002__turned,scope).
-arc(cnt_0030_1003,r_0030_0007__cover,restriction).
 arc(r_0030_0002__turned,r_0030_0001__Geoffrey,arg0).
 arc(r_0030_0002__turned,r_0030_0004__scale,arg1).
 arc(r_0030_0002__turned,r_0030_0005__slowly,mnr4).
@@ -395,37 +393,39 @@ arc(r_0030_0007__cover,r_0030_0004__scale,arg0).
 arc(r_0030_0007__cover,r_0030_0009__ground,arg1).
 arc(r_0030_0007__cover,r_0030_0010__immediately,tmp4).
 arc(r_0030_0007__cover,r_0030_0011__ahead,dir5).
+arc(r_0030_1003__cnt,r_0030_0002__turned,scope).
+arc(r_0030_1003__cnt,r_0030_0007__cover,restriction).
 arc(r_0031_0002__was,r_0030_0001__Geoffrey,arg0).
 arc(r_0031_0002__was,r_0031_0003__able,prd2).
-arc(r_0031_0003__able,r_0031_0005__pick_out,emb2).
-arc(r_0031_0005__pick_out,r_0031_0007__towns,arg1).
+arc(r_0031_0003__able,r_0031_0005__pick__r_0031_0006__out,emb2).
+arc(r_0031_0005__pick__r_0031_0006__out,r_0031_0007__towns,arg1).
 arc(r_0031_0007__towns,r_0031_0009__unrecognisable,attrib3).
 arc(r_0031_0009__unrecognisable,r_0031_0013__eye,r_0031_0010__to).
 arc(r_0031_0013__eye,r_0031_0012__naked,attrib2).
 arc(r_0031_0015__obscured,r_0031_0007__towns,arg1).
-arc(r_0031_0015__obscured,r_0031_0018__ground_haze,arg0_by_lgs).
+arc(r_0031_0015__obscured,r_0031_0018__ground__r_0031_0019__haze,arg0_r_0031_0016__by_lgs).
 arc(r_0031_0021__even,r_0031_0026__limited,scope).
 arc(r_0031_0025__night,r_0031_0024__clearest,attrib2).
-arc(r_0031_0026__limited,r_0031_0018__ground_haze,arg0).
+arc(r_0031_0026__limited,r_0031_0018__ground__r_0031_0019__haze,arg0).
 arc(r_0031_0026__limited,r_0031_0025__night,r_0031_0022__on_mnr).
 arc(r_0031_0026__limited,r_0031_0028__vision,arg1).
 arc(r_0031_0028__vision,r_0031_0027__angular,attrib1).
 arc(r_0032_0002__glanced,r_0030_0001__Geoffrey,arg0).
-arc(r_0032_0002__glanced,r_0032_0005__speed_recorder,r_0032_0003__at_dir).
+arc(r_0032_0002__glanced,r_0032_0005__speed__r_0032_0006__recorder,r_0032_0003__at_dir).
 
 </pre>
 <br>
 <pre>
-fof(id_30_A_lob_N01__31_A_lob_N01__32_A_lob_N01,axiom,
+fof(id__30_A_lob_N01__31_A_lob_N01__32_A_lob_N01,axiom,
     ? [STATEX12,GEOFFREYX10,GEOFFREYX29,EVENTX31,EVENTX28,EVENTX27,EVENTX26,OPERATORX20,EVENTX25,CONNX4,EVENTX8,EVENTX9,ENTITYX30,ENTITYX15,ENTITYX19,ENTITYX21,ENTITYX23,ENTITYX17,ENTITYX1,ENTITYX5,QUALITYX2,QUALITYX6,QUALITYX7,ATTRIBX11,ATTRIBX16,ATTRIBX24,ATTRIBX22,ATTRIBX18] :
       ( STATEX12 = EVENTX27
-      &amp; isA(EVENTX27,r_0031_0005__pick_out)
+      &amp; isA(EVENTX27,r_0031_0005__pick__r_0031_0006__out)
       &amp; arg1(EVENTX27) = ENTITYX15
       &amp; isA(ENTITYX1,r_0030_0004__scale)
       &amp; isA(ENTITYX5,r_0030_0009__ground)
       &amp; GEOFFREYX10 = r_0030_0001__Geoffrey
       &amp; isA(EVENTX26,r_0031_0015__obscured)
-      &amp; arg0_by_lgs(EVENTX26) = ENTITYX19
+      &amp; arg0__r_0031_0016__by_lgs(EVENTX26) = ENTITYX19
       &amp; arg1(EVENTX26) = ENTITYX15
       &amp; isA(ENTITYX15,r_0031_0007__towns)
       &amp; attrib3(ENTITYX15) = ATTRIBX16
@@ -437,13 +437,13 @@ fof(id_30_A_lob_N01__31_A_lob_N01__32_A_lob_N01,axiom,
       &amp; arg0(EVENTX25) = ENTITYX19
       &amp; r_0031_0022__on_mnr(EVENTX25) = ENTITYX21
       &amp; arg1(EVENTX25) = ENTITYX23
-      &amp; isA(ENTITYX19,r_0031_0018__ground_haze)
+      &amp; isA(ENTITYX19,r_0031_0018__ground__r_0031_0019__haze)
       &amp; isA(ENTITYX21,r_0031_0025__night)
       &amp; attrib2(ENTITYX21) = ATTRIBX22
       &amp; isA(ENTITYX23,r_0031_0028__vision)
       &amp; attrib1(ENTITYX23) = ATTRIBX24
       &amp; GEOFFREYX29 = r_0030_0001__Geoffrey
-      &amp; isA(ENTITYX30,r_0032_0005__speed_recorder)
+      &amp; isA(ENTITYX30,r_0032_0005__speed__r_0032_0006__recorder)
       &amp; isA(QUALITYX2,r_0030_0005__slowly)
       &amp; isA(QUALITYX6,r_0030_0010__immediately)
       &amp; isA(QUALITYX7,r_0030_0011__ahead)
@@ -454,7 +454,7 @@ fof(id_30_A_lob_N01__31_A_lob_N01__32_A_lob_N01,axiom,
       &amp; isA(ATTRIBX18,r_0031_0012__naked)
       &amp; isA(ATTRIBX22,r_0031_0024__clearest)
       &amp; isA(ATTRIBX24,r_0031_0027__angular)
-      &amp; isA(CONNX4,cnt_0030_1003)
+      &amp; isA(CONNX4,r_0030_1003__cnt)
       &amp; scope(CONNX4) = EVENTX9
       &amp; isA(EVENTX9,r_0030_0002__turned)
       &amp; arg0(EVENTX9) = r_0030_0001__Geoffrey

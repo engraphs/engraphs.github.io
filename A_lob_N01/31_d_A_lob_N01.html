@@ -201,32 +201,32 @@
 <pre>
 arc(r_0040_0003___apos_re,r_0040_0002__We,arg0).
 arc(r_0040_0003___apos_re,r_0040_0005__ahead,prd23).
-arc(r_0040_0004__quantificational__a_bit,r_0040_0005__ahead,scope).
-arc(r_0040_0004__quantificational__a_bit,z_0040_1007,restriction).
+arc(r_0040_0004__quantificational__r_0040_0004__a_bit,r_0040_0005__ahead,scope).
+arc(r_0040_0004__quantificational__r_0040_0004__a_bit,z_0040_1007,restriction).
 arc(r_0040_0005__ahead,r_0040_0007__time,r_0040_0006__of).
 arc(r_0040_0005__ahead,z_0040_1007,modifier1).
 arc(r_0040_0010__said,r_0040_0011__Alastair,arg0).
-arc(r_0040_0010__said,utterance_0040_1003,arg1).
-arc(r_0041_0003___apos_ll,r_0041_0004__run_in,scope).
-arc(r_0041_0004__run_in,r_0040_0002__We,arg0).
-arc(r_0041_0004__run_in,r_0041_0007__minimum_engine_power,r_0041_0006__on_mnr).
-arc(utterance_0040_1003,r_0040_0003___apos_re,part1).
+arc(r_0040_0010__said,r_0040_1003__utterance,arg1).
+arc(r_0040_1003__utterance,r_0040_0003___apos_re,part1).
+arc(r_0041_0003___apos_ll,r_0041_0004__run__r_0041_0005__in,scope).
+arc(r_0041_0004__run__r_0041_0005__in,r_0040_0002__We,arg0).
+arc(r_0041_0004__run__r_0041_0005__in,r_0041_0007__minimum_r_0041_0008__engine_r_0041_0009__power,r_0041_0006__on_mnr).
 
 </pre>
 <br>
 <pre>
-fof(id_40_A_lob_N01__41_A_lob_N01,axiom,
+fof(id__40_A_lob_N01__41_A_lob_N01,axiom,
     ? [STATEX1,ALASTAIR_AND_GEOFFREYX12,OPERATORX14,EVENTX15,EVENTX11,CONJX10,EVENTX9,QUANTX6,ENTITYX13,ENTITYX5,ENTITYX8,QUALITYX4] :
       ( STATEX1 = CONJX10
-      &amp; isA(CONJX10,utterance_0040_1003)
+      &amp; isA(CONJX10,r_0040_1003__utterance)
       &amp; part1(CONJX10) = EVENTX9
       &amp; isA(EVENTX9,r_0040_0003___apos_re)
       &amp; arg0(EVENTX9) = r_0040_0002__We
       &amp; prd23(EVENTX9) = QUALITYX4
       &amp; isA(ENTITYX8,r_0040_0007__time)
       &amp; ALASTAIR_AND_GEOFFREYX12 = r_0040_0002__We
-      &amp; isA(ENTITYX13,r_0041_0007__minimum_engine_power)
-      &amp; isA(QUANTX6,r_0040_0004__quantificational__a_bit)
+      &amp; isA(ENTITYX13,r_0041_0007__minimum__r_0041_0008__engine_r_0041_0009__power)
+      &amp; isA(QUANTX6,r_0040_0004__quantificational__r_0040_0004__a_bit)
       &amp; restriction(QUANTX6) = ENTITYX5
       &amp; isA(ENTITYX5,z_0040_1007)
       &amp; scope(QUANTX6) = QUALITYX4
@@ -238,7 +238,7 @@ fof(id_40_A_lob_N01__41_A_lob_N01,axiom,
       &amp; arg0(EVENTX11) = r_0040_0011__Alastair
       &amp; isA(OPERATORX14,r_0041_0003___apos_ll)
       &amp; scope(OPERATORX14) = EVENTX15
-      &amp; isA(EVENTX15,r_0041_0004__run_in)
+      &amp; isA(EVENTX15,r_0041_0004__run__r_0041_0005__in)
       &amp; arg0(EVENTX15) = ALASTAIR_AND_GEOFFREYX12
       &amp; r_0041_0006__on_mnr(EVENTX15) = ENTITYX13 ) ).
 

@@ -170,8 +170,8 @@ Atmosphere poisoned , water vaporized , all the land fused . &rdquo;
 <pre>
 arc(r_0043_0002__poisoned,r_0043_0001__Atmosphere,arg1).
 arc(r_0043_0005__vaporized,r_0043_0004__water,arg1).
-arc(r_0043_0007__quantificational__all,z_0043_1015,restriction).
-arc(r_0043_0007__quantificational__all,z_0043_1016,scope).
+arc(r_0043_0007__quantificational__r_0043_0007__all,z_0043_1015,restriction).
+arc(r_0043_0007__quantificational__r_0043_0007__all,z_0043_1016,scope).
 arc(r_0043_0010__fused,z_0043_1015,arg1).
 arc(z_0043_1015,r_0043_0009__land,nlyr2).
 arc(z_0043_1016,r_0043_0001__Atmosphere,conj1).
@@ -182,9 +182,9 @@ arc(z_0043_1017,z_0043_1016,z_0043_1002).
 </pre>
 <br>
 <pre>
-fof(id_43_A_DICK_1952,axiom,
+fof(id__43_A_DICK_1952,axiom,
     ? [EVENTX18,QUANTX11,EVENTX14,EVENTX9,EVENTX6,ENTITYX3,ENTITYX4,ENTITYX7,ENTITYX10,ENTITYX12] :
-      ( isA(QUANTX11,r_0043_0007__quantificational__all)
+      ( isA(QUANTX11,r_0043_0007__quantificational__r_0043_0007__all)
       &amp; isA(EVENTX14,r_0043_0010__fused)
       &amp; arg1(EVENTX14) = ENTITYX10
       &amp; isA(ENTITYX10,z_0043_1015)

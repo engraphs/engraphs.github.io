@@ -215,10 +215,10 @@ The Prime Minister and the heads of the administrative organs involved in the en
 </svg>
 <br>
 <pre>
-arc(r_0304_0004__and,r_0304_0002__Prime_Minister,conj1).
+arc(r_0304_0004__and,r_0304_0002__Prime__r_0304_0003__Minister,conj1).
 arc(r_0304_0004__and,r_0304_0006__heads,conj2).
-arc(r_0304_0006__heads,r_0304_0009__administrative_organs,r_0304_0007__of).
-arc(r_0304_0011__involved,r_0304_0009__administrative_organs,arg1).
+arc(r_0304_0006__heads,r_0304_0009__administrative__r_0304_0010__organs,r_0304_0007__of).
+arc(r_0304_0011__involved,r_0304_0009__administrative__r_0304_0010__organs,arg1).
 arc(r_0304_0011__involved,r_0304_0014__enforecement,r_0304_0012__in_clr).
 arc(r_0304_0014__enforecement,r_0304_0017__Act,r_0304_0015__of).
 arc(r_0304_0018__shall,r_0304_0022__and,scope).
@@ -233,24 +233,24 @@ arc(r_0304_0023__cooperate,r_0304_0004__and,r_0304_0024__with_com).
 </pre>
 <br>
 <pre>
-fof(id_304_A_law_h15A119,axiom,
+fof(id__304_A_law_h15A119,axiom,
     ? [PM_AND_HEADSX12,OPERATORX8,CONJX14,EVENTX13,EVENTX11,EVENTX7,PM_AND_HEADSX1,ENTITYX9,ENTITYX2,ENTITYX3,ENTITYX5,ENTITYX6,ATTRIBX10] :
       ( isA(PM_AND_HEADSX1,r_0304_0004__and)
-      &amp; conj1(PM_AND_HEADSX1) = r_0304_0002__Prime_Minister
+      &amp; conj1(PM_AND_HEADSX1) = r_0304_0002__Prime__r_0304_0003__Minister
       &amp; conj2(PM_AND_HEADSX1) = ENTITYX2
       &amp; isA(ENTITYX2,r_0304_0006__heads)
       &amp; r_0304_0007__of(ENTITYX2) = ENTITYX3
       &amp; isA(EVENTX7,r_0304_0011__involved)
       &amp; arg1(EVENTX7) = ENTITYX3
       &amp; r_0304_0012__in_clr(EVENTX7) = ENTITYX5
-      &amp; isA(ENTITYX3,r_0304_0009__administrative_organs)
+      &amp; isA(ENTITYX3,r_0304_0009__administrative__r_0304_0010__organs)
       &amp; isA(ENTITYX5,r_0304_0014__enforecement)
       &amp; r_0304_0015__of(ENTITYX5) = ENTITYX6
       &amp; isA(ENTITYX6,r_0304_0017__Act)
       &amp; isA(ENTITYX9,r_0304_0021__liaison)
       &amp; attrib1(ENTITYX9) = ATTRIBX10
       &amp; PM_AND_HEADSX12 = PM_AND_HEADSX1
-      &amp; isA(r_0304_0002__Prime_Minister,r_0304_0002__Prime_Minister)
+      &amp; isA(r_0304_0002__Prime__r_0304_0003__Minister,r_0304_0002__Prime_r_0304_0003__Minister)
       &amp; isA(ATTRIBX10,r_0304_0020__close)
       &amp; isA(OPERATORX8,r_0304_0018__shall)
       &amp; scope(OPERATORX8) = CONJX14

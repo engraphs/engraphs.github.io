@@ -325,11 +325,12 @@
 <br>
 <pre>
 arc(r_0070_0003___apos_s,z_0070_1007,arg0).
-arc(r_0070_0004__quantificational__nothing,r_0070_0003___apos_s,scope).
-arc(r_0070_0004__quantificational__nothing,z_0070_1007,restriction).
+arc(r_0070_0004__quantificational__r_0070_0004__nothing,r_0070_0003___apos_s,scope).
+arc(r_0070_0004__quantificational__r_0070_0004__nothing,z_0070_1007,restriction).
 arc(r_0070_0010__said,r_0070_0009__Captain,arg0).
 arc(r_0070_0010__said,r_0070_0011__at_last,tmp7).
-arc(r_0070_0010__said,utterance_0070_1003,arg1).
+arc(r_0070_0010__said,r_0070_1003__utterance,arg1).
+arc(r_0070_1003__utterance,r_0070_0004__quantificational__r_0070_0004__nothing,part1).
 arc(r_0071_0003__think,r_0070_0009__Captain,arg0).
 arc(r_0071_0003__think,r_0071_0005___apos_ll,arg1).
 arc(r_0071_0003__think,r_0071_0011__know,prn6).
@@ -338,12 +339,11 @@ arc(r_0071_0006__go,r_0071_0004__we,arg0).
 arc(r_0071_0006__go,r_0071_0008__back,clr_dir4).
 arc(r_0071_0008__back,r_0071_0007__right,quality1).
 arc(r_0071_0011__know,r_0070_0009__Captain,arg0).
-arc(r_0071_0011__know,r_0071_0012__quantificational__most,arg1).
-arc(r_0071_0012__quantificational__most,r_0071_0016__want,scope).
-arc(r_0071_0012__quantificational__most,z_0070_1025,restriction).
+arc(r_0071_0011__know,r_0071_0012__quantificational__r_0071_0012__most,arg1).
+arc(r_0071_0012__quantificational__r_0071_0012__most,r_0071_0016__want,scope).
+arc(r_0071_0012__quantificational__r_0071_0012__most,z_0070_1025,restriction).
 arc(r_0071_0016__want,z_0070_1025,arg0).
 arc(r_0071_0016__want,z_0070_1027,arg1).
-arc(utterance_0070_1003,r_0070_0004__quantificational__nothing,part1).
 arc(z_0070_1007,r_0070_0005__alive,attrib2).
 arc(z_0070_1025,r_0071_0015__crew,r_0071_0013__of).
 arc(z_0070_1027,z_0070_1025,arg0).
@@ -351,12 +351,12 @@ arc(z_0070_1027,z_0070_1025,arg0).
 </pre>
 <br>
 <pre>
-fof(id_70_A_DICK_1952__71_A_DICK_1952,axiom,
+fof(id__70_A_DICK_1952__71_A_DICK_1952,axiom,
     ? [STATEX1,STATEX14,EVENTX19,STATEX21,STATEX26,CAPTAINX13,CAPTAINX20,EVENTX31,EVENTX30,QUANTX23,EVENTX29,EVENTX28,OPERATORX17,EVENTX18,EVENTX12,CONJX9,QUANTX5,EVENTX8,ENTITYX22,ENTITYX24,CAPTAINX10,ENTITYX4,ATTRIBX6,QUALITYX15,QUALITYX16,QUALITYX11] :
       ( STATEX1 = CONJX9
-      &amp; isA(CONJX9,utterance_0070_1003)
+      &amp; isA(CONJX9,r_0070_1003__utterance)
       &amp; part1(CONJX9) = QUANTX5
-      &amp; isA(QUANTX5,r_0070_0004__quantificational__nothing)
+      &amp; isA(QUANTX5,r_0070_0004__quantificational__r_0070_0004__nothing)
       &amp; restriction(QUANTX5) = ENTITYX4
       &amp; isA(ENTITYX4,z_0070_1007)
       &amp; attrib2(ENTITYX4) = ATTRIBX6
@@ -374,7 +374,7 @@ fof(id_70_A_DICK_1952__71_A_DICK_1952,axiom,
       &amp; arg0(EVENTX30) = CAPTAINX20
       &amp; arg1(EVENTX30) = STATEX21
       &amp; STATEX21 = QUANTX23
-      &amp; isA(QUANTX23,r_0071_0012__quantificational__most)
+      &amp; isA(QUANTX23,r_0071_0012__quantificational__r_0071_0012__most)
       &amp; restriction(QUANTX23) = ENTITYX22
       &amp; isA(ENTITYX22,z_0070_1025)
       &amp; r_0071_0013__of(ENTITYX22) = ENTITYX24

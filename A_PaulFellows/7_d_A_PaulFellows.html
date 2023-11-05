@@ -455,8 +455,6 @@ Not having a compiler that worked on the nascent version of Arthur that we had a
 </svg>
 <br>
 <pre>
-arc(abs_0007_1004,r_0007_0001__Not,restriction).
-arc(abs_0007_1004,r_0007_0021__transliterated,scope).
 arc(r_0007_0001__Not,r_0007_0002__having,scope).
 arc(r_0007_0002__having,r_0007_0004__compiler,arg1).
 arc(r_0007_0002__having,r_0007_0020__I,arg0).
@@ -471,14 +469,14 @@ arc(r_0007_0021__transliterated,r_0007_0020__I,arg0).
 arc(r_0007_0021__transliterated,r_0007_0022__it,arg1).
 arc(r_0007_0021__transliterated,r_0007_0025__assembler,r_0007_0024__into_dir).
 arc(r_0007_0022__it,z_0007_1003,prn2).
-arc(r_0007_0023__quantificational__all,r_0007_0022__it,scope).
-arc(r_0007_0023__quantificational__all,z_0007_1003,restriction).
+arc(r_0007_0023__quantificational__r_0007_0023__all,r_0007_0022__it,scope).
+arc(r_0007_0023__quantificational__r_0007_0023__all,z_0007_1003,restriction).
 arc(r_0007_0028__went,r_0007_0027__it,arg0).
 arc(r_0007_0028__went,r_0007_0031__faster,mnr3).
-arc(r_0007_0031__faster,r_0007_0029__400_times,modifier1).
-arc(r_0007_0032__and,abs_0007_1004,conj1).
+arc(r_0007_0031__faster,r_0007_0029__400__r_0007_0030__times,modifier1).
 arc(r_0007_0032__and,r_0007_0028__went,conj2).
 arc(r_0007_0032__and,r_0007_0034__got,conj3).
+arc(r_0007_0032__and,r_0007_1004__abs,conj1).
 arc(r_0007_0034__got,r_0007_0033__it,arg0).
 arc(r_0007_0034__got,r_0007_0036__upset,prd2).
 arc(r_0007_0036__upset,r_0007_0035__slightly,quality1).
@@ -488,11 +486,13 @@ arc(r_0007_0040__driving,r_0007_0020__I,arg0).
 arc(r_0007_0040__driving,r_0007_0042__bus,arg1).
 arc(r_0007_0040__driving,r_0007_0044__fast,mnr3).
 arc(r_0007_0044__fast,r_0007_0043__too,quality1).
+arc(r_0007_1004__abs,r_0007_0001__Not,restriction).
+arc(r_0007_1004__abs,r_0007_0021__transliterated,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_7_A_PaulFellows,axiom,
+fof(id__7_A_PaulFellows,axiom,
     ? [STATEX20,CATENATIVEX22,SPEAKERX21,CONJX29,EVENTX28,EVENTX27,EVENTX26,EVENTX17,CONNX5,EVENTX14,OPERATORX12,EVENTX13,EVENTX11,EVENTX10,QUANTX2,ENTITYX23,ENTITYX16,ENTITYX6,ENTITYX7,ENTITYX9,ENTITYX1,ATTRIBX18,ATTRIBX8,QUALITYX19,QUALITYX24,QUALITYX25,QUALITYX15] :
       ( STATEX20 = EVENTX27
       &amp; isA(EVENTX27,r_0007_0039__was)
@@ -514,14 +514,14 @@ fof(id_7_A_PaulFellows,axiom,
       &amp; attrib2(ENTITYX7) = ATTRIBX8
       &amp; r_0007_0011__of(ENTITYX7) = r_0007_0012__Arthur
       &amp; isA(ENTITYX9,r_0007_0018__time)
-      &amp; isA(ENTITYX16,r_0007_0029__400_times)
+      &amp; isA(ENTITYX16,r_0007_0029__400__r_0007_0030__times)
       &amp; SPEAKERX21 = r_0007_0020__I
       &amp; isA(ENTITYX23,r_0007_0042__bus)
       &amp; isA(ATTRIBX8,r_0007_0009__nascent)
       &amp; isA(ATTRIBX18,r_0007_0036__upset)
       &amp; quality1(ATTRIBX18) = QUALITYX19
       &amp; emb3(ATTRIBX18) = STATEX20
-      &amp; isA(QUANTX2,r_0007_0023__quantificational__all)
+      &amp; isA(QUANTX2,r_0007_0023__quantificational__r_0007_0023__all)
       &amp; restriction(QUANTX2) = ENTITYX1
       &amp; isA(ENTITYX1,z_0007_1003)
       &amp; scope(QUANTX2) = r_0007_0022__it
@@ -535,7 +535,7 @@ fof(id_7_A_PaulFellows,axiom,
       &amp; isA(QUALITYX25,r_0007_0043__too)
       &amp; isA(CONJX29,r_0007_0032__and)
       &amp; conj1(CONJX29) = CONNX5
-      &amp; isA(CONNX5,abs_0007_1004)
+      &amp; isA(CONNX5,r_0007_1004__abs)
       &amp; restriction(CONNX5) = OPERATORX12
       &amp; isA(OPERATORX12,r_0007_0001__Not)
       &amp; scope(OPERATORX12) = EVENTX13

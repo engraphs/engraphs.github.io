@@ -440,7 +440,7 @@ His back was turned towards Peter , and beyond him was the gate !
 <title>0043_0011&#45;&gt;0042_0007_0042_0008</title>
 <path fill="none" stroke="black" d="M1382.29,-260.75C1384.63,-222.65 1387.59,-128.76 1367,-54 1366.17,-51 1365.07,-47.96 1363.82,-44.99"/>
 <polygon fill="black" stroke="black" points="1366.93,-43.38 1359.45,-35.87 1360.61,-46.4 1366.93,-43.38"/>
-<text text-anchor="middle" x="1430.5" y="-144.8" font-family="fixed" font-size="14.00">beyond[prd2]</text>
+<text text-anchor="middle" x="1446.5" y="-144.8" font-family="fixed" font-size="14.00">beyond[prd2][tpc]</text>
 </g>
 <!-- 0043_0013 -->
 <g id="node28" class="node">
@@ -461,10 +461,10 @@ His back was turned towards Peter , and beyond him was the gate !
 <pre>
 arc(r_0040_0002__scuttered,r_0040_0001__Peter,arg0).
 arc(r_0040_0002__scuttered,r_0040_0005__bushes,r_0040_0003__underneath_clr_dir).
-arc(r_0041_0004__as_cnt,r_0041_0005__quantificational__nothing,restriction).
+arc(r_0041_0004__as_cnt,r_0041_0005__quantificational__r_0041_0005__nothing,restriction).
 arc(r_0041_0004__as_cnt,r_0041_0012__and,scope).
-arc(r_0041_0005__quantificational__nothing,r_0041_0006__happened,scope).
-arc(r_0041_0005__quantificational__nothing,z_0040_1007,restriction).
+arc(r_0041_0005__quantificational__r_0041_0005__nothing,r_0041_0006__happened,scope).
+arc(r_0041_0005__quantificational__r_0041_0005__nothing,z_0040_1007,restriction).
 arc(r_0041_0006__happened,z_0040_1007,arg0).
 arc(r_0041_0009__came,r_0040_0001__Peter,arg0).
 arc(r_0041_0009__came,r_0041_0002__presently,tmp2).
@@ -480,28 +480,28 @@ arc(r_0041_0018__peeped,r_0040_0001__Peter,arg0).
 arc(r_0041_0018__peeped,r_0041_0002__presently,tmp2).
 arc(r_0041_0018__peeped,r_0041_0019__over,clr_dir2).
 arc(r_0042_0005__saw,r_0040_0001__Peter,arg0).
-arc(r_0042_0005__saw,r_0042_0002__first_thing,arg1).
-arc(r_0042_0006__was,r_0042_0002__first_thing,arg0).
+arc(r_0042_0005__saw,r_0042_0002__first__r_0042_0003__thing,arg1).
+arc(r_0042_0006__was,r_0042_0002__first__r_0042_0003__thing,arg0).
 arc(r_0042_0006__was,r_0042_0009__hoeing,prd2).
-arc(r_0042_0009__hoeing,r_0042_0007__Mr._McGregor,arg0).
+arc(r_0042_0009__hoeing,r_0042_0007__Mr__r_0042_0008__McGregor,arg0).
 arc(r_0042_0009__hoeing,r_0042_0010__onions,arg1).
-arc(r_0043_0002__back,r_0042_0007__Mr._McGregor,genv).
+arc(r_0043_0002__back,r_0042_0007__Mr__r_0042_0008__McGregor,genv).
 arc(r_0043_0003__was,r_0043_0004__turned,catenative).
 arc(r_0043_0004__turned,r_0040_0001__Peter,r_0043_0005__towards_clr_dir).
 arc(r_0043_0004__turned,r_0043_0002__back,arg1).
 arc(r_0043_0008__and,r_0043_0003__was,conj1).
 arc(r_0043_0008__and,r_0043_0011__was,conj2).
-arc(r_0043_0011__was,r_0042_0007__Mr._McGregor,r_0043_0009__beyond_prd2).
+arc(r_0043_0011__was,r_0042_0007__Mr__r_0042_0008__McGregor,r_0043_0009__beyond_prd2_tpc).
 arc(r_0043_0011__was,r_0043_0013__gate,arg0).
 
 </pre>
 <br>
 <pre>
-fof(id_40_A_POTTER_1902__41_A_POTTER_1902__42_A_POTTER_1902__43_A_POTTER_1902,axiom,
+fof(id__40_A_POTTER_1902__41_A_POTTER_1902__42_A_POTTER_1902__43_A_POTTER_1902,axiom,
     ? [STATEX21,CATENATIVEX29,PETERX9,PETERX19,MRMCGX28,PETERX31,MRMCGX34,CONJX37,EVENTX36,EVENTX33,EVENTX32,EVENTX24,EVENTX23,EVENTX20,CONNX4,CONJX17,CONJX16,EVENTX15,EVENTX13,EVENTX11,QUANTX6,EVENTX8,EVENTX2,GARDEN_GATEX35,ENTITYX27,ENTITYX18,ENTITYX22,ENTITYX12,ENTITYX5,ENTITYX1,QUALITYX3,QUALITYX14,QUALITYX10] :
       ( STATEX21 = EVENTX23
       &amp; isA(EVENTX23,r_0042_0009__hoeing)
-      &amp; arg0(EVENTX23) = r_0042_0007__Mr._McGregor
+      &amp; arg0(EVENTX23) = r_0042_0007__Mr__r_0042_0008__McGregor
       &amp; arg1(EVENTX23) = ENTITYX22
       &amp; CATENATIVEX29 = EVENTX32
       &amp; isA(EVENTX32,r_0043_0004__turned)
@@ -513,14 +513,14 @@ fof(id_40_A_POTTER_1902__41_A_POTTER_1902__42_A_POTTER_1902__43_A_POTTER_1902,ax
       &amp; isA(EVENTX20,r_0042_0005__saw)
       &amp; arg1(EVENTX20) = ENTITYX18
       &amp; arg0(EVENTX20) = PETERX19
-      &amp; isA(ENTITYX18,r_0042_0002__first_thing)
+      &amp; isA(ENTITYX18,r_0042_0002__first__r_0042_0003__thing)
       &amp; PETERX19 = r_0040_0001__Peter
       &amp; isA(ENTITYX22,r_0042_0010__onions)
       &amp; isA(ENTITYX27,r_0043_0002__back)
       &amp; genv(ENTITYX27) = MRMCGX28
-      &amp; MRMCGX28 = r_0042_0007__Mr._McGregor
+      &amp; MRMCGX28 = r_0042_0007__Mr__r_0042_0008__McGregor
       &amp; PETERX31 = r_0040_0001__Peter
-      &amp; MRMCGX34 = r_0042_0007__Mr._McGregor
+      &amp; MRMCGX34 = r_0042_0007__Mr__r_0042_0008__McGregor
       &amp; isA(GARDEN_GATEX35,r_0043_0013__gate)
       &amp; isA(QUALITYX3,r_0041_0002__presently)
       &amp; isA(QUALITYX10,r_0041_0010__out)
@@ -530,7 +530,7 @@ fof(id_40_A_POTTER_1902__41_A_POTTER_1902__42_A_POTTER_1902__43_A_POTTER_1902,ax
       &amp; r_0040_0003__underneath_clr_dir(EVENTX2) = ENTITYX1
       &amp; isA(CONNX4,r_0041_0004__as_cnt)
       &amp; restriction(CONNX4) = QUANTX6
-      &amp; isA(QUANTX6,r_0041_0005__quantificational__nothing)
+      &amp; isA(QUANTX6,r_0041_0005__quantificational__r_0041_0005__nothing)
       &amp; restriction(QUANTX6) = ENTITYX5
       &amp; isA(ENTITYX5,z_0040_1007)
       &amp; scope(QUANTX6) = EVENTX8
@@ -565,7 +565,7 @@ fof(id_40_A_POTTER_1902__41_A_POTTER_1902__42_A_POTTER_1902__43_A_POTTER_1902,ax
       &amp; conj2(CONJX37) = EVENTX36
       &amp; isA(EVENTX36,r_0043_0011__was)
       &amp; arg0(EVENTX36) = GARDEN_GATEX35
-      &amp; r_0043_0009__beyond_prd2(EVENTX36) = MRMCGX34
+      &amp; r_0043_0009__beyond_prd2_tpc(EVENTX36) = MRMCGX34
       &amp; arg0(EVENTX36) = GARDEN_GATEX35 ) ).
 
 
@@ -890,17 +890,17 @@ fof(id_40_A_POTTER_1902__41_A_POTTER_1902__42_A_POTTER_1902__43_A_POTTER_1902,ax
 <line x1="1020.48" y1="244" x2="1020.48" y2="275" style="stroke:#000000;stroke-width:2;"/>
 <line x1="1320.6" y1="183" x2="1020" y2="214" style="stroke:#000000;stroke-width:2;"/>
 <text x="1380.48" y="234" text-anchor="middle">ILYR</text>
-<text x="1200.84" y="295" text-anchor="middle">PP-PRD2</text>
+<text x="1201.32" y="295" text-anchor="middle">PP-PRD2-TPC</text>
 <text x="1140.72" y="356" text-anchor="middle">P-ROLE</text>
 <text x="1140.72" y="417" text-anchor="middle">beyond</text>
 <line x1="1140.72" y1="366" x2="1140.72" y2="397" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1200.84" y1="305" x2="1140" y2="336" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1201.32" y1="305" x2="1140" y2="336" style="stroke:#000000;stroke-width:2;"/>
 <text x="1260.24" y="356" text-anchor="middle">NP</text>
 <text x="1260.36" y="417" text-anchor="middle">PRO</text>
 <text x="1260.36" y="478" text-anchor="middle">him</text>
 <line x1="1260.36" y1="427" x2="1260.36" y2="458" style="stroke:#000000;stroke-width:2;"/>
 <line x1="1260.24" y1="366" x2="1260" y2="397" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1200.84" y1="305" x2="1260" y2="336" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1201.32" y1="305" x2="1260" y2="336" style="stroke:#000000;stroke-width:2;"/>
 <line x1="1380.48" y1="244" x2="1200" y2="275" style="stroke:#000000;stroke-width:2;"/>
 <text x="1380.84" y="295" text-anchor="middle">BED;~La</text>
 <text x="1380.84" y="356" text-anchor="middle">was</text>
@@ -935,8 +935,8 @@ fof(id_40_A_POTTER_1902__41_A_POTTER_1902__42_A_POTTER_1902__43_A_POTTER_1902,ax
                                               (NP;{PETER} (NPR Peter;{Peter})))))
                 (PUNC ,)
                 (CONJP (CONJ and;{and})
-                       (ILYR (PP-PRD2 (P-ROLE beyond;{beyond})
-                                      (NP;{MRMCG} (PRO him;{he})))
+                       (ILYR (PP-PRD2-TPC (P-ROLE beyond;{beyond})
+                                          (NP;{MRMCG} (PRO him;{he})))
                              (BED;~La was;{be})
                              (NP-SBJ;{GARDEN_GATE} (D the;{the})
                                                    (N gate;{gate})))))

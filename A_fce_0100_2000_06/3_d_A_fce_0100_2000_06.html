@@ -407,10 +407,6 @@ Then , using all the information in your notes , write a suitable reply .
 </svg>
 <br>
 <pre>
-arc(abs_0003_1032,r_0005_0004__quantificational__all,restriction).
-arc(abs_0003_1032,r_0005_0011__write,scope).
-arc(imperative_0003_1014,r_0004_0001__Read,scope).
-arc(imperative_0003_1028,r_0005_0001__Then,scope).
 arc(r_0003_0003__entered,r_0003_0001__You,arg0).
 arc(r_0003_0003__entered,r_0003_0002__recently,tmp1).
 arc(r_0003_0003__entered,r_0003_0005__competition,arg1).
@@ -421,16 +417,20 @@ arc(r_0003_0009__received,r_0003_0001__You,arg0).
 arc(r_0003_0009__received,r_0003_0008__just,tmp1).
 arc(r_0003_0009__received,r_0003_0011__letter,arg1).
 arc(r_0003_0009__received,r_0003_0014__organiser,r_0003_0012__from_clr_dir).
+arc(r_0003_1014__imperative,r_0004_0001__Read,scope).
+arc(r_0003_1028__imperative,r_0005_0001__Then,scope).
+arc(r_0003_1032__abs,r_0005_0004__quantificational__r_0005_0004__all,restriction).
+arc(r_0003_1032__abs,r_0005_0011__write,scope).
 arc(r_0004_0001__Read,r_0004_0003__letter,arg1).
 arc(r_0004_0003__letter,r_0003_0011__letter,z_0003_1017).
 arc(r_0004_0008__have,r_0004_0003__letter,r_0004_0005__on_rst).
 arc(r_0004_0008__have,r_0004_0009__made,catenative).
 arc(r_0004_0009__made,r_0003_0001__You,arg0).
 arc(r_0004_0009__made,r_0004_0011__notes,arg1).
-arc(r_0005_0001__Then,abs_0003_1032,scope).
+arc(r_0005_0001__Then,r_0003_1032__abs,scope).
 arc(r_0005_0003__using,r_0005_0006__information,arg1).
-arc(r_0005_0004__quantificational__all,r_0005_0003__using,scope).
-arc(r_0005_0004__quantificational__all,r_0005_0006__information,restriction).
+arc(r_0005_0004__quantificational__r_0005_0004__all,r_0005_0003__using,scope).
+arc(r_0005_0004__quantificational__r_0005_0004__all,r_0005_0006__information,restriction).
 arc(r_0005_0006__information,r_0005_0009__notes,r_0005_0007__in).
 arc(r_0005_0009__notes,r_0003_0001__You,genv).
 arc(r_0005_0009__notes,r_0004_0011__notes,z_0003_1038).
@@ -440,7 +440,7 @@ arc(r_0005_0014__reply,r_0005_0013__suitable,attrib2).
 </pre>
 <br>
 <pre>
-fof(id_3_A_fce_0100_2000_06__4_A_fce_0100_2000_06__5_A_fce_0100_2000_06,axiom,
+fof(id__3_A_fce_0100_2000_06__4_A_fce_0100_2000_06__5_A_fce_0100_2000_06,axiom,
     ? [CATENATIVEX4,CATENATIVEX20,LETTERX18,HEARERX19,NOTESX39,HEARERX40,OPERATORX28,OPERATORX29,CONNX33,EVENTX42,QUANTX35,EVENTX41,OPERATORX14,EVENTX24,EVENTX23,EVENTX22,CONJX10,EVENTX9,EVENTX8,EVENTX3,ENTITYX30,ENTITYX34,ENTITYX36,ENTITYX15,NOTESX21,LETTERX6,ENTITYX7,ENTITYX2,QUALITYX5,QUALITYX1,ATTRIBX31] :
       ( CATENATIVEX4 = EVENTX8
       &amp; isA(EVENTX8,r_0003_0009__received)
@@ -482,17 +482,17 @@ fof(id_3_A_fce_0100_2000_06__4_A_fce_0100_2000_06__5_A_fce_0100_2000_06,axiom,
       &amp; conj2(CONJX10) = EVENTX9
       &amp; isA(EVENTX9,r_0003_0007__have)
       &amp; catenative(EVENTX9) = CATENATIVEX4
-      &amp; isA(OPERATORX14,imperative_0003_1014)
+      &amp; isA(OPERATORX14,r_0003_1014__imperative)
       &amp; scope(OPERATORX14) = EVENTX24
       &amp; isA(EVENTX24,r_0004_0001__Read)
       &amp; arg1(EVENTX24) = ENTITYX15
-      &amp; isA(OPERATORX28,imperative_0003_1028)
+      &amp; isA(OPERATORX28,r_0003_1028__imperative)
       &amp; scope(OPERATORX28) = OPERATORX29
       &amp; isA(OPERATORX29,r_0005_0001__Then)
       &amp; scope(OPERATORX29) = CONNX33
-      &amp; isA(CONNX33,abs_0003_1032)
+      &amp; isA(CONNX33,r_0003_1032__abs)
       &amp; restriction(CONNX33) = QUANTX35
-      &amp; isA(QUANTX35,r_0005_0004__quantificational__all)
+      &amp; isA(QUANTX35,r_0005_0004__quantificational__r_0005_0004__all)
       &amp; restriction(QUANTX35) = ENTITYX34
       &amp; isA(ENTITYX34,r_0005_0006__information)
       &amp; r_0005_0007__in(ENTITYX34) = ENTITYX36

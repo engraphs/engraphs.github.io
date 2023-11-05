@@ -351,8 +351,8 @@ With the help of a House Purchase loan from Winchester R.D.C. , ( single young w
 <br>
 <pre>
 arc(r_0012_0003__help,r_0012_0008__loan,r_0012_0004__of).
-arc(r_0012_0008__loan,r_0012_0006__House_Purchase,nlyr2).
-arc(r_0012_0008__loan,r_0012_0010__Winchester_R.D.C.,r_0012_0009__from).
+arc(r_0012_0008__loan,r_0012_0006__House__r_0012_0007__Purchase,nlyr2).
+arc(r_0012_0008__loan,r_0012_0010__Winchester__r_0012_0011__R_D_C_,r_0012_0009__from).
 arc(r_0012_0008__loan,r_0012_0017__had,prn7).
 arc(r_0012_0016__women,r_0012_0014__single,attrib1).
 arc(r_0012_0016__women,r_0012_0015__young,attrib2).
@@ -362,7 +362,7 @@ arc(r_0012_0017__had,r_0012_0027__1970,r_0012_0026__before_tmp).
 arc(r_0012_0019__chance,r_0012_0018__little,attrib1).
 arc(r_0012_0019__chance,r_0012_0021__getting,r_0012_0020__of).
 arc(r_0012_0021__getting,r_0012_0025__mortgage,arg1).
-arc(r_0012_0025__mortgage,r_0012_0023__Building_Society,nlyr2).
+arc(r_0012_0025__mortgage,r_0012_0023__Building__r_0012_0024__Society,nlyr2).
 arc(r_0012_0030__bought,r_0012_0003__help,r_0012_0001__With_mnr).
 arc(r_0012_0030__bought,r_0012_0029__I,arg0).
 arc(r_0012_0030__bought,r_0012_0033__villa,arg1).
@@ -373,12 +373,12 @@ arc(r_0012_0037__and,r_0012_0038__was,conj2).
 arc(r_0012_0038__was,r_0012_0039__offered,catenative).
 arc(r_0012_0039__offered,r_0012_0029__I,arg2).
 arc(r_0012_0039__offered,r_0012_0041__job,arg1).
-arc(r_0012_0041__job,r_0012_0043__Perins_School,r_0012_0042__at).
+arc(r_0012_0041__job,r_0012_0043__Perins__r_0012_0044__School,r_0012_0042__at).
 
 </pre>
 <br>
 <pre>
-fof(id_12_A_Alresford,axiom,
+fof(id__12_A_Alresford,axiom,
     ? [EVENTX4,EVENTX10,CATENATIVEX20,CONJX25,EVENTX24,EVENTX23,EVENTX19,EVENTX16,EVENTX14,ENTITYX22,ENTITYX1,ENTITYX17,ENTITYX2,ENTITYX3,ENTITYX5,ENTITYX8,ENTITYX15,ENTITYX13,ATTRIBX18,ATTRIBX9,ATTRIBX6,ATTRIBX7] :
       ( EVENTX4 = EVENTX16
       &amp; isA(EVENTX16,r_0012_0017__had)
@@ -396,9 +396,9 @@ fof(id_12_A_Alresford,axiom,
       &amp; r_0012_0004__of(ENTITYX1) = ENTITYX2
       &amp; isA(ENTITYX2,r_0012_0008__loan)
       &amp; nlyr2(ENTITYX2) = ENTITYX3
-      &amp; r_0012_0009__from(ENTITYX2) = r_0012_0010__Winchester_R.D.C.
+      &amp; r_0012_0009__from(ENTITYX2) = r_0012_0010__Winchester__r_0012_0011__R_D_C.
       &amp; prn7(ENTITYX2) = EVENTX4
-      &amp; isA(ENTITYX3,r_0012_0006__House_Purchase)
+      &amp; isA(ENTITYX3,r_0012_0006__House__r_0012_0007__Purchase)
       &amp; isA(ENTITYX5,r_0012_0016__women)
       &amp; attrib1(ENTITYX5) = ATTRIBX6
       &amp; attrib2(ENTITYX5) = ATTRIBX7
@@ -406,13 +406,13 @@ fof(id_12_A_Alresford,axiom,
       &amp; attrib1(ENTITYX8) = ATTRIBX9
       &amp; r_0012_0020__of(ENTITYX8) = EVENTX10
       &amp; isA(ENTITYX13,r_0012_0025__mortgage)
-      &amp; nlyr2(ENTITYX13) = r_0012_0023__Building_Society
+      &amp; nlyr2(ENTITYX13) = r_0012_0023__Building__r_0012_0024__Society
       &amp; isA(ENTITYX15,r_0012_0027__1970)
       &amp; isA(ENTITYX17,r_0012_0033__villa)
       &amp; attrib2(ENTITYX17) = ATTRIBX18
       &amp; r_0012_0034__in(ENTITYX17) = r_0012_0036__Dean
       &amp; isA(ENTITYX22,r_0012_0041__job)
-      &amp; r_0012_0042__at(ENTITYX22) = r_0012_0043__Perins_School
+      &amp; r_0012_0042__at(ENTITYX22) = r_0012_0043__Perins__r_0012_0044__School
       &amp; isA(r_0012_0036__Dean,r_0012_0036__Dean)
       &amp; isA(ATTRIBX6,r_0012_0014__single)
       &amp; isA(ATTRIBX7,r_0012_0015__young)

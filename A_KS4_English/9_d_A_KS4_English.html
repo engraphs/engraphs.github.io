@@ -1253,16 +1253,14 @@ The national curriculum for English aims to ensure that all pupils : &lt;bull&gt
 </svg>
 <br>
 <pre>
-arc(cnt_0011_1053,r_0011_0068__write,scope).
-arc(cnt_0011_1053,r_0011_0075__adapting,restriction).
 arc(r_0011_0003__curriculum,r_0011_0002__national,attrib2).
 arc(r_0011_0003__curriculum,r_0011_0005__English,r_0011_0004__for).
 arc(r_0011_0006__aims,r_0011_0003__curriculum,arg0).
 arc(r_0011_0006__aims,r_0011_0008__ensure,arg1).
 arc(r_0011_0008__ensure,r_0011_0003__curriculum,arg0).
-arc(r_0011_0008__ensure,r_0011_0010__quantificational__all,arg1).
-arc(r_0011_0010__quantificational__all,r_0011_0011__pupils,restriction).
-arc(r_0011_0010__quantificational__all,r_0011_0110__are,scope).
+arc(r_0011_0008__ensure,r_0011_0010__quantificational__r_0011_0010__all,arg1).
+arc(r_0011_0010__quantificational__r_0011_0010__all,r_0011_0011__pupils,restriction).
+arc(r_0011_0010__quantificational__r_0011_0010__all,r_0011_0110__are,scope).
 arc(r_0011_0014__read,r_0011_0011__pupils,arg0).
 arc(r_0011_0014__read,r_0011_0015__easily,mnr2).
 arc(r_0011_0018__and,r_0011_0014__read,conj1).
@@ -1273,11 +1271,11 @@ arc(r_0011_0023__develop,r_0011_0011__pupils,arg0).
 arc(r_0011_0023__develop,r_0011_0025__habit,arg1).
 arc(r_0011_0025__habit,r_0011_0027__reading,r_0011_0026__of).
 arc(r_0011_0027__reading,r_0011_0029__and,mnr2).
-arc(r_0011_0027__reading,r_0011_0033__both_and,r_0011_0032__for_bnf).
+arc(r_0011_0027__reading,r_0011_0033__both__r_0011_0035__and,r_0011_0032__for_bnf).
 arc(r_0011_0029__and,r_0011_0028__widely,conj1).
 arc(r_0011_0029__and,r_0011_0030__often,conj2).
-arc(r_0011_0033__both_and,r_0011_0034__pleasure,conj1).
-arc(r_0011_0033__both_and,r_0011_0036__information,conj2).
+arc(r_0011_0033__both__r_0011_0035__and,r_0011_0034__pleasure,conj1).
+arc(r_0011_0033__both__r_0011_0035__and,r_0011_0036__information,conj2).
 arc(r_0011_0038__acquire,r_0011_0011__pupils,arg0).
 arc(r_0011_0038__acquire,r_0011_0047__and,arg1).
 arc(r_0011_0041__vocabulary,r_0011_0040__wide,attrib2).
@@ -1347,6 +1345,8 @@ arc(r_0011_0127__and,r_0011_0120__making,conj2).
 arc(r_0011_0127__and,r_0011_0124__demonstrating,conj3).
 arc(r_0011_0127__and,r_0011_0128__participating,conj4).
 arc(r_0011_0128__participating,r_0011_0130__debate,r_0011_0129__in_clr).
+arc(r_0011_1053__cnt,r_0011_0068__write,scope).
+arc(r_0011_1053__cnt,r_0011_0075__adapting,restriction).
 arc(z_0011_1010,r_0011_0011__pupils,arg0).
 arc(z_0011_1010,r_0011_0017__fluently,mnr1).
 arc(z_0011_1014,r_0011_0011__pupils,arg0).
@@ -1355,14 +1355,14 @@ arc(z_0011_1014,r_0011_0021__understanding,r_0011_0019__with_mnr).
 </pre>
 <br>
 <pre>
-fof(id_11_A_KS4_English,axiom,
+fof(id__11_A_KS4_English,axiom,
     ? [STATEX3,STATEX4,EVENTX18,EVENTX67,STATEX70,EVENTX88,PUPILSX56,PUPILSX68,PUPILSX75,EVENTX104,EVENTX103,QUANTX6,EVENTX102,CONJX101,EVENTX100,EVENTX98,EVENTX96,CONJX93,EVENTX92,EVENTX91,CONNX83,EVENTX84,EVENTX85,OPERATORX81,EVENTX82,CONJX80,EVENTX79,EVENTX78,CONNX54,EVENTX64,EVENTX65,EVENTX48,EVENTX42,EVENTX28,EVENTX27,CONJX16,EVENTX15,EVENTX11,EVENTX8,ENTITYX1,PUPILSX5,ENTITYX87,ENTITYX99,ENTITYX97,ENTITYX94,ENTITYX66,ENTITYX74,ENTITYX76,ENTITYX77,ENTITYX55,ENTITYX59,ENTITYX60,ENTITYX61,ENTITYX62,ENTITYX63,ENTITYX57,ENTITYX58,ENTITYX43,ENTITYX29,ENTITYX30,ENTITYX32,ENTITYX34,ENTITYX35,ENTITYX37,ENTITYX38,ENTITYX39,ENTITYX40,ENTITYX33,ENTITYX17,ENTITYX24,ENTITYX25,ENTITYX26,ENTITYX12,ATTRIBX86,ATTRIBX95,ATTRIBX69,ATTRIBX44,ATTRIBX47,ATTRIBX45,ATTRIBX46,ATTRIBX36,ATTRIBX41,ATTRIBX31,ATTRIBX13,ATTRIBX2,QUALITYX73,QUALITYX49,QUALITYX50,QUALITYX51,QUALITYX52,QUALITYX21,QUALITYX22,QUALITYX23,QUALITYX9,QUALITYX7] :
       ( STATEX3 = EVENTX103
       &amp; isA(EVENTX103,r_0011_0008__ensure)
       &amp; arg0(EVENTX103) = ENTITYX1
       &amp; arg1(EVENTX103) = STATEX4
       &amp; STATEX4 = QUANTX6
-      &amp; isA(QUANTX6,r_0011_0010__quantificational__all)
+      &amp; isA(QUANTX6,r_0011_0010__quantificational__r_0011_0010__all)
       &amp; restriction(QUANTX6) = PUPILSX5
       &amp; isA(PUPILSX5,r_0011_0011__pupils)
       &amp; isA(CONJX16,r_0011_0018__and)
@@ -1387,7 +1387,7 @@ fof(id_11_A_KS4_English,axiom,
       &amp; isA(EVENTX48,r_0011_0060__appreciate)
       &amp; arg0(EVENTX48) = PUPILSX5
       &amp; arg1(EVENTX48) = ENTITYX43
-      &amp; isA(CONNX54,cnt_0011_1053)
+      &amp; isA(CONNX54,r_0011_1053__cnt)
       &amp; scope(CONNX54) = EVENTX65
       &amp; isA(EVENTX65,r_0011_0068__write)
       &amp; arg0(EVENTX65) = PUPILSX5
@@ -1454,7 +1454,7 @@ fof(id_11_A_KS4_English,axiom,
       &amp; attrib1(ENTITYX12) = ATTRIBX13
       &amp; isA(ENTITYX17,r_0011_0025__habit)
       &amp; r_0011_0026__of(ENTITYX17) = EVENTX18
-      &amp; isA(ENTITYX24,r_0011_0033__both_and)
+      &amp; isA(ENTITYX24,r_0011_0033__both__r_0011_0035__and)
       &amp; conj1(ENTITYX24) = ENTITYX25
       &amp; conj2(ENTITYX24) = ENTITYX26
       &amp; isA(ENTITYX25,r_0011_0034__pleasure)

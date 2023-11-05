@@ -221,27 +221,27 @@ A business operator falling under any of the following items may not receive aut
 </svg>
 <br>
 <pre>
-arc(r_0219_0004__falling,r_0219_0002__business_operator,arg0).
+arc(r_0219_0004__falling,r_0219_0002__business__r_0219_0003__operator,arg0).
 arc(r_0219_0004__falling,z_0219_1006,r_0219_0005__under_loc).
-arc(r_0219_0006__quantificational__any,r_0219_0004__falling,scope).
-arc(r_0219_0006__quantificational__any,z_0219_1006,restriction).
+arc(r_0219_0006__quantificational__r_0219_0006__any,r_0219_0004__falling,scope).
+arc(r_0219_0006__quantificational__r_0219_0006__any,z_0219_1006,restriction).
 arc(r_0219_0010__items,r_0219_0009__following,attrib2).
 arc(r_0219_0011__may,r_0219_0012__not,scope).
 arc(r_0219_0012__not,r_0219_0013__receive,scope).
-arc(r_0219_0013__receive,r_0219_0002__business_operator,arg0).
+arc(r_0219_0013__receive,r_0219_0002__business__r_0219_0003__operator,arg0).
 arc(r_0219_0013__receive,r_0219_0014__authorization,arg1).
-arc(r_0219_0015__set_forth,r_0219_0014__authorization,arg1).
-arc(r_0219_0015__set_forth,r_0219_0018__paragraph_1,r_0219_0017__in_loc).
-arc(r_0219_0018__paragraph_1,r_0219_0025__article,r_0219_0022__of).
+arc(r_0219_0015__set__r_0219_0016__forth,r_0219_0014__authorization,arg1).
+arc(r_0219_0015__set__r_0219_0016__forth,r_0219_0018__paragraph_r_0219_0020__1,r_0219_0017__in_loc).
+arc(r_0219_0018__paragraph__r_0219_0020__1,r_0219_0025__article,r_0219_0022__of).
 arc(r_0219_0025__article,r_0219_0024__preceding,attrib2).
 arc(z_0219_1006,r_0219_0010__items,r_0219_0007__of).
 
 </pre>
 <br>
 <pre>
-fof(id_219_A_law_h15A119,axiom,
+fof(id__219_A_law_h15A119,axiom,
     ? [OPERATORX14,OPERATORX15,EVENTX16,EVENTX13,QUANTX3,EVENTX7,ENTITYX1,ENTITYX8,ENTITYX10,ENTITYX11,ENTITYX2,ENTITYX4,ATTRIBX12,ATTRIBX5] :
-      ( isA(QUANTX3,r_0219_0006__quantificational__any)
+      ( isA(QUANTX3,r_0219_0006__quantificational__r_0219_0006__any)
       &amp; restriction(QUANTX3) = ENTITYX2
       &amp; isA(ENTITYX2,z_0219_1006)
       &amp; r_0219_0007__of(ENTITYX2) = ENTITYX4
@@ -249,14 +249,14 @@ fof(id_219_A_law_h15A119,axiom,
       &amp; isA(EVENTX7,r_0219_0004__falling)
       &amp; arg0(EVENTX7) = ENTITYX1
       &amp; r_0219_0005__under_loc(EVENTX7) = ENTITYX2
-      &amp; isA(ENTITYX1,r_0219_0002__business_operator)
+      &amp; isA(ENTITYX1,r_0219_0002__business__r_0219_0003__operator)
       &amp; isA(ENTITYX4,r_0219_0010__items)
       &amp; attrib2(ENTITYX4) = ATTRIBX5
-      &amp; isA(EVENTX13,r_0219_0015__set_forth)
+      &amp; isA(EVENTX13,r_0219_0015__set__r_0219_0016__forth)
       &amp; arg1(EVENTX13) = ENTITYX8
       &amp; r_0219_0017__in_loc(EVENTX13) = ENTITYX10
       &amp; isA(ENTITYX8,r_0219_0014__authorization)
-      &amp; isA(ENTITYX10,r_0219_0018__paragraph_1)
+      &amp; isA(ENTITYX10,r_0219_0018__paragraph__r_0219_0020__1)
       &amp; r_0219_0022__of(ENTITYX10) = ENTITYX11
       &amp; isA(ENTITYX11,r_0219_0025__article)
       &amp; attrib2(ENTITYX11) = ATTRIBX12

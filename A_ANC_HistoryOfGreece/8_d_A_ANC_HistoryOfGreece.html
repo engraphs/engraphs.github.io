@@ -399,7 +399,7 @@ You will find original examples in the archaeological museums throughout the Cyc
 <title>0014_0020&#45;&gt;0014_0023</title>
 <path fill="none" stroke="black" d="M517.97,-354.23C544.72,-340.37 591.67,-316.04 624.5,-299.02"/>
 <polygon fill="black" stroke="black" points="626.51,-301.92 633.77,-294.21 623.28,-295.71 626.51,-301.92"/>
-<text text-anchor="middle" x="610.7" y="-318.8" font-family="fixed" font-size="14.00">in[loc]</text>
+<text text-anchor="middle" x="632.2" y="-318.8" font-family="fixed" font-size="14.00">in[prd2][loc]</text>
 </g>
 <!-- 0014_0019 -->
 <g id="node28" class="node">
@@ -445,18 +445,18 @@ You will find original examples in the archaeological museums throughout the Cyc
 <br>
 <pre>
 arc(r_0012_0003__3500,r_0012_0002__around,quality1).
-arc(r_0012_0003__3500,r_0012_0004__b.c.,quality3).
+arc(r_0012_0003__3500,r_0012_0004__b_c_,quality3).
 arc(r_0012_0008__culture,r_0012_0007__sophisticated,attrib2).
 arc(r_0012_0009__evolved,r_0012_0003__3500,r_0012_0001__At_tmp).
 arc(r_0012_0009__evolved,r_0012_0008__culture,arg0).
-arc(r_0012_0009__evolved,r_0012_0012__Cyclades_islands,r_0012_0010__in_loc).
-arc(r_0013_0004__sculpted,r_0013_0005__marble_figures,arg1).
-arc(r_0013_0005__marble_figures,r_0012_0003__3500,r_0013_0007__of).
-arc(r_0013_0005__marble_figures,r_0013_0002__distinctive,attrib2).
+arc(r_0012_0009__evolved,r_0012_0012__Cyclades__r_0012_0013__islands,r_0012_0010__in_loc).
+arc(r_0013_0004__sculpted,r_0013_0005__marble__r_0013_0006__figures,arg1).
+arc(r_0013_0005__marble__r_0013_0006__figures,r_0012_0003__3500,r_0013_0007__of).
+arc(r_0013_0005__marble__r_0013_0006__figures,r_0013_0002__distinctive,attrib2).
 arc(r_0013_0010__are,r_0013_0012__being,catenative).
 arc(r_0013_0012__being,r_0013_0011__now,tmp1).
 arc(r_0013_0012__being,r_0013_0013__reproduced,catenative).
-arc(r_0013_0013__reproduced,r_0013_0005__marble_figures,arg1).
+arc(r_0013_0013__reproduced,r_0013_0005__marble__r_0013_0006__figures,arg1).
 arc(r_0013_0013__reproduced,r_0013_0016__quantities,r_0013_0014__in_mnr).
 arc(r_0013_0013__reproduced,r_0013_0018__souvenirs,r_0013_0017__as_prd).
 arc(r_0013_0016__quantities,r_0013_0015__vast,attrib1).
@@ -465,20 +465,20 @@ arc(r_0014_0003__find,r_0014_0001__You,arg0).
 arc(r_0014_0003__find,r_0014_0005__examples,arg1).
 arc(r_0014_0003__find,r_0014_0009__museums,r_0014_0006__in_clr_loc).
 arc(r_0014_0005__examples,r_0014_0004__original,attrib1).
-arc(r_0014_0009__museums,r_0012_0012__Cyclades_islands,r_0014_0010__throughout).
+arc(r_0014_0009__museums,r_0012_0012__Cyclades__r_0012_0013__islands,r_0014_0010__throughout).
 arc(r_0014_0009__museums,r_0014_0008__archaeological,attrib2).
 arc(r_0014_0014__although_cnt,r_0014_0002__will,scope).
 arc(r_0014_0014__although_cnt,r_0014_0020__is,restriction).
 arc(r_0014_0015__one,r_0014_0019__examples,r_0014_0016__of).
 arc(r_0014_0019__examples,r_0014_0018__earliest,attrib2).
 arc(r_0014_0020__is,r_0014_0015__one,arg0).
-arc(r_0014_0020__is,r_0014_0023__museum,r_0014_0021__in_loc).
+arc(r_0014_0020__is,r_0014_0023__museum,r_0014_0021__in_prd2_loc).
 arc(r_0014_0023__museum,r_0014_0025__Paros,r_0014_0024__on).
 
 </pre>
 <br>
 <pre>
-fof(id_12_A_ANC_HistoryOfGreece__13_A_ANC_HistoryOfGreece__14_A_ANC_HistoryOfGreece,axiom,
+fof(id__12_A_ANC_HistoryOfGreece__13_A_ANC_HistoryOfGreece__14_A_ANC_HistoryOfGreece,axiom,
     ? [CATENATIVEX13,CATENATIVEX15,ERA3500X12,CYCLADESX27,CONNX28,EVENTX33,OPERATORX34,EVENTX35,EVENTX22,EVENTX21,EVENTX20,EVENTX11,EVENTX7,ENTITYX23,ENTITYX25,ENTITYX29,ENTITYX32,ENTITYX30,ENTITYX8,ENTITYX17,ENTITYX19,ERA3500X1,ENTITYX4,CYCLADESX6,QUALITYX14,QUALITYX2,QUALITYX3,ATTRIBX31,ATTRIBX26,ATTRIBX24,ATTRIBX18,ATTRIBX9,ATTRIBX5] :
       ( CATENATIVEX13 = EVENTX21
       &amp; isA(EVENTX21,r_0013_0012__being)
@@ -494,10 +494,10 @@ fof(id_12_A_ANC_HistoryOfGreece__13_A_ANC_HistoryOfGreece__14_A_ANC_HistoryOfGre
       &amp; quality3(ERA3500X1) = QUALITYX3
       &amp; isA(ENTITYX4,r_0012_0008__culture)
       &amp; attrib2(ENTITYX4) = ATTRIBX5
-      &amp; isA(CYCLADESX6,r_0012_0012__Cyclades_islands)
+      &amp; isA(CYCLADESX6,r_0012_0012__Cyclades__r_0012_0013__islands)
       &amp; isA(EVENTX11,r_0013_0004__sculpted)
       &amp; arg1(EVENTX11) = ENTITYX8
-      &amp; isA(ENTITYX8,r_0013_0005__marble_figures)
+      &amp; isA(ENTITYX8,r_0013_0005__marble__r_0013_0006__figures)
       &amp; attrib2(ENTITYX8) = ATTRIBX9
       &amp; r_0013_0007__of(ENTITYX8) = ERA3500X12
       &amp; ERA3500X12 = ERA3500X1
@@ -517,7 +517,7 @@ fof(id_12_A_ANC_HistoryOfGreece__13_A_ANC_HistoryOfGreece__14_A_ANC_HistoryOfGre
       &amp; isA(ENTITYX32,r_0014_0023__museum)
       &amp; r_0014_0024__on(ENTITYX32) = r_0014_0025__Paros
       &amp; isA(QUALITYX2,r_0012_0002__around)
-      &amp; isA(QUALITYX3,r_0012_0004__b.c.)
+      &amp; isA(QUALITYX3,r_0012_0004__b_c_)
       &amp; isA(QUALITYX14,r_0013_0011__now)
       &amp; isA(ATTRIBX5,r_0012_0007__sophisticated)
       &amp; isA(ATTRIBX9,r_0013_0002__distinctive)
@@ -542,7 +542,7 @@ fof(id_12_A_ANC_HistoryOfGreece__13_A_ANC_HistoryOfGreece__14_A_ANC_HistoryOfGre
       &amp; restriction(CONNX28) = EVENTX33
       &amp; isA(EVENTX33,r_0014_0020__is)
       &amp; arg0(EVENTX33) = ENTITYX29
-      &amp; r_0014_0021__in_loc(EVENTX33) = ENTITYX32 ) ).
+      &amp; r_0014_0021__in_prd2_loc(EVENTX33) = ENTITYX32 ) ).
 
 
 </pre>
@@ -884,15 +884,15 @@ fof(id_12_A_ANC_HistoryOfGreece__13_A_ANC_HistoryOfGreece__14_A_ANC_HistoryOfGre
 <line x1="2040.24" y1="305" x2="2100" y2="336" style="stroke:#000000;stroke-width:2;"/>
 <line x1="1980.72" y1="244" x2="2040" y2="275" style="stroke:#000000;stroke-width:2;"/>
 <line x1="2340.72" y1="183" x2="1980" y2="214" style="stroke:#000000;stroke-width:2;"/>
-<text x="2340.36" y="234" text-anchor="middle">BEP</text>
-<text x="2340.36" y="295" text-anchor="middle">is</text>
-<line x1="2340.36" y1="244" x2="2340.36" y2="275" style="stroke:#000000;stroke-width:2;"/>
+<text x="2340.84" y="234" text-anchor="middle">BEP;~La</text>
+<text x="2340.84" y="295" text-anchor="middle">is</text>
+<line x1="2340.84" y1="244" x2="2340.84" y2="275" style="stroke:#000000;stroke-width:2;"/>
 <line x1="2340.72" y1="183" x2="2340" y2="214" style="stroke:#000000;stroke-width:2;"/>
-<text x="2700.72" y="234" text-anchor="middle">PP-LOC</text>
+<text x="2701.32" y="234" text-anchor="middle">PP-PRD2-LOC</text>
 <text x="2460.72" y="295" text-anchor="middle">P-ROLE</text>
 <text x="2460.72" y="356" text-anchor="middle">in</text>
 <line x1="2460.72" y1="305" x2="2460.72" y2="336" style="stroke:#000000;stroke-width:2;"/>
-<line x1="2700.72" y1="244" x2="2460" y2="275" style="stroke:#000000;stroke-width:2;"/>
+<line x1="2701.32" y1="244" x2="2460" y2="275" style="stroke:#000000;stroke-width:2;"/>
 <text x="2760.24" y="295" text-anchor="middle">NP</text>
 <text x="2580.36" y="356" text-anchor="middle">D</text>
 <text x="2580.36" y="417" text-anchor="middle">the</text>
@@ -914,7 +914,7 @@ fof(id_12_A_ANC_HistoryOfGreece__13_A_ANC_HistoryOfGreece__14_A_ANC_HistoryOfGre
 <line x1="2940.24" y1="427" x2="2940" y2="458" style="stroke:#000000;stroke-width:2;"/>
 <line x1="2880.24" y1="366" x2="2940" y2="397" style="stroke:#000000;stroke-width:2;"/>
 <line x1="2760.24" y1="305" x2="2880" y2="336" style="stroke:#000000;stroke-width:2;"/>
-<line x1="2700.72" y1="244" x2="2760" y2="275" style="stroke:#000000;stroke-width:2;"/>
+<line x1="2701.32" y1="244" x2="2760" y2="275" style="stroke:#000000;stroke-width:2;"/>
 <line x1="2340.72" y1="183" x2="2700" y2="214" style="stroke:#000000;stroke-width:2;"/>
 <line x1="2281.32" y1="122" x2="2340" y2="153" style="stroke:#000000;stroke-width:2;"/>
 <line x1="1560.72" y1="61" x2="2280" y2="92" style="stroke:#000000;stroke-width:2;"/>
@@ -944,12 +944,12 @@ fof(id_12_A_ANC_HistoryOfGreece__13_A_ANC_HistoryOfGreece__14_A_ANC_HistoryOfGre
                                            (NP (D the;{the})
                                                (ADJP (ADJS earliest;{early}))
                                                (NS examples;{example}))))
-                               (BEP is;{be})
-                               (PP-LOC (P-ROLE in;{in})
-                                       (NP (D the;{the})
-                                           (N museum;{museum})
-                                           (PP (P-ROLE on;{on})
-                                               (NP (NPR Paros;{Paros})))))))
+                               (BEP;~La is;{be})
+                               (PP-PRD2-LOC (P-ROLE in;{in})
+                                            (NP (D the;{the})
+                                                (N museum;{museum})
+                                                (PP (P-ROLE on;{on})
+                                                    (NP (NPR Paros;{Paros})))))))
           (PUNC .))
   (ID 14_A_ANC_HistoryOfGreece))
 </pre>

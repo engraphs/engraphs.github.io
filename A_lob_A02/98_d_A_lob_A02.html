@@ -123,16 +123,16 @@ Russell jailed but ban-the-bomb fight goes on .
 <br>
 <pre>
 arc(r_0104_0002__jailed,r_0104_0001__Russell,arg0).
-arc(r_0104_0003__but,r_0104_0006__goes_on,conj2).
+arc(r_0104_0003__but,r_0104_0006__goes__r_0104_0007__on,conj2).
 arc(r_0104_0003__but,z_0104_1003,conj1).
 arc(r_0104_0005__fight,r_0104_0004__ban_the_bomb,attrib1).
-arc(r_0104_0006__goes_on,r_0104_0005__fight,arg0).
+arc(r_0104_0006__goes__r_0104_0007__on,r_0104_0005__fight,arg0).
 arc(z_0104_1003,r_0104_0002__jailed,catenative).
 
 </pre>
 <br>
 <pre>
-fof(id_104_A_lob_A02,axiom,
+fof(id__104_A_lob_A02,axiom,
     ? [CATENATIVEX1,CONJX8,EVENTX7,EVENTX4,EVENTX2,ENTITYX5,ATTRIBX6] :
       ( CATENATIVEX1 = EVENTX2
       &amp; isA(EVENTX2,r_0104_0002__jailed)
@@ -145,7 +145,7 @@ fof(id_104_A_lob_A02,axiom,
       &amp; isA(EVENTX4,z_0104_1003)
       &amp; catenative(EVENTX4) = CATENATIVEX1
       &amp; conj2(CONJX8) = EVENTX7
-      &amp; isA(EVENTX7,r_0104_0006__goes_on)
+      &amp; isA(EVENTX7,r_0104_0006__goes__r_0104_0007__on)
       &amp; arg0(EVENTX7) = ENTITYX5 ) ).
 
 

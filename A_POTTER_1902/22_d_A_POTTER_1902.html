@@ -566,9 +566,6 @@ His mother was busy cooking ; she wondered what he had done with his clothes .
 </svg>
 <br>
 <pre>
-arc(cnt_0048_1033,r_0050_0003__was,scope).
-arc(cnt_0048_1033,r_0050_0005__cooking,restriction).
-arc(question_0048_1040,r_0050_0011__had,scope).
 arc(r_0048_0003__stopped,r_0048_0002__never,tmp2).
 arc(r_0048_0003__stopped,r_0048_0004__running,catenative).
 arc(r_0048_0004__running,r_0048_0001__Peter,arg0).
@@ -583,6 +580,9 @@ arc(r_0048_0011__got,r_0048_0001__Peter,arg0).
 arc(r_0048_0011__got,r_0048_0012__home,clr_dir3).
 arc(r_0048_0012__home,r_0048_0016__fir_tree,r_0048_0013__to).
 arc(r_0048_0016__fir_tree,r_0048_0015__big,attrib2).
+arc(r_0048_1033__cnt,r_0050_0003__was,scope).
+arc(r_0048_1033__cnt,r_0050_0005__cooking,restriction).
+arc(r_0048_1040__question,r_0050_0011__had,scope).
 arc(r_0049_0002__was,r_0048_0001__Peter,arg0).
 arc(r_0049_0002__was,r_0049_0004__tired,prd2).
 arc(r_0049_0003__so,r_0049_0019__and,emb2).
@@ -603,7 +603,7 @@ arc(r_0050_0003__was,r_0050_0002__mother,arg0).
 arc(r_0050_0003__was,r_0050_0004__busy,prd2).
 arc(r_0050_0003__was,r_0050_0008__wondered,prn6).
 arc(r_0050_0005__cooking,r_0050_0002__mother,arg0).
-arc(r_0050_0008__wondered,question_0048_1040,arg1).
+arc(r_0050_0008__wondered,r_0048_1040__question,arg1).
 arc(r_0050_0008__wondered,r_0050_0002__mother,arg0).
 arc(r_0050_0011__had,r_0050_0012__done,catenative).
 arc(r_0050_0012__done,r_0048_0001__Peter,arg0).
@@ -614,7 +614,7 @@ arc(r_0050_0015__clothes,r_0048_0001__Peter,genv).
 </pre>
 <br>
 <pre>
-fof(id_48_A_POTTER_1902__49_A_POTTER_1902__50_A_POTTER_1902,axiom,
+fof(id__48_A_POTTER_1902__49_A_POTTER_1902__50_A_POTTER_1902,axiom,
     ? [CATENATIVEX8,STATEX17,EVENTX36,STATEX38,CATENATIVEX43,PETERX11,PETERX3,PETERX14,PETERX18,PETERX26,PETERX31,MOTHERX37,PETERX42,PETERX45,CONNX34,EVENTX35,EVENTX49,EVENTX48,OPERATORX40,EVENTX47,EVENTX46,EVENTX29,CONJX28,EVENTX27,EVENTX24,CONNX2,EVENTX7,CONJX13,EVENTX12,EVENTX10,EVENTX9,MOTHERX30,ENTITYX41,ENTITYX44,ENTITYX25,ENTITYX19,ENTITYX22,ENTITYX23,ENTITYX5,QUALITYX16,QUALITYX1,QUALITYX4,ATTRIBX32,ATTRIBX15,ATTRIBX20,ATTRIBX21,ATTRIBX6] :
       ( CATENATIVEX8 = EVENTX9
       &amp; isA(EVENTX9,r_0048_0004__running)
@@ -634,7 +634,7 @@ fof(id_48_A_POTTER_1902__49_A_POTTER_1902__50_A_POTTER_1902,axiom,
       &amp; arg0(EVENTX48) = MOTHERX37
       &amp; arg1(EVENTX48) = STATEX38
       &amp; STATEX38 = OPERATORX40
-      &amp; isA(OPERATORX40,question_0048_1040)
+      &amp; isA(OPERATORX40,r_0048_1040__question)
       &amp; scope(OPERATORX40) = EVENTX47
       &amp; isA(EVENTX47,r_0050_0011__had)
       &amp; catenative(EVENTX47) = CATENATIVEX43
@@ -702,7 +702,7 @@ fof(id_48_A_POTTER_1902__49_A_POTTER_1902__50_A_POTTER_1902,axiom,
       &amp; isA(EVENTX29,r_0049_0002__was)
       &amp; arg0(EVENTX29) = PETERX14
       &amp; prd2(EVENTX29) = ATTRIBX15
-      &amp; isA(CONNX34,cnt_0048_1033)
+      &amp; isA(CONNX34,r_0048_1033__cnt)
       &amp; scope(CONNX34) = EVENTX49
       &amp; isA(EVENTX49,r_0050_0003__was)
       &amp; arg0(EVENTX49) = MOTHERX30

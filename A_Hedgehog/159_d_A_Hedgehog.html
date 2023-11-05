@@ -169,7 +169,6 @@ Or would we rather return to the animal that is already our national symbol ?
 </svg>
 <br>
 <pre>
-arc(question_0182_1002,r_0182_0004__rather,scope).
 arc(r_0182_0002__would,r_0182_0005__return,scope).
 arc(r_0182_0004__rather,r_0182_0002__would,scope).
 arc(r_0182_0005__return,r_0182_0003__we,arg0).
@@ -179,11 +178,12 @@ arc(r_0182_0010__is,r_0182_0011__already,tmp3).
 arc(r_0182_0010__is,r_0182_0014__symbol,prd2).
 arc(r_0182_0014__symbol,r_0182_0003__we,genv).
 arc(r_0182_0014__symbol,r_0182_0013__national,attrib2).
+arc(r_0182_1002__question,r_0182_0004__rather,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_182_A_Hedgehog,axiom,
+fof(id__182_A_Hedgehog,axiom,
     ? [SPEAKER_AND_HEARERX7,OPERATORX2,OPERATORX3,OPERATORX10,EVENTX11,EVENTX9,ENTITYX4,ENTITYX6,QUALITYX5,ATTRIBX8] :
       ( isA(EVENTX9,r_0182_0010__is)
       &amp; arg0(EVENTX9) = ENTITYX4
@@ -196,7 +196,7 @@ fof(id_182_A_Hedgehog,axiom,
       &amp; SPEAKER_AND_HEARERX7 = r_0182_0003__we
       &amp; isA(QUALITYX5,r_0182_0011__already)
       &amp; isA(ATTRIBX8,r_0182_0013__national)
-      &amp; isA(OPERATORX2,question_0182_1002)
+      &amp; isA(OPERATORX2,r_0182_1002__question)
       &amp; scope(OPERATORX2) = OPERATORX3
       &amp; isA(OPERATORX3,r_0182_0004__rather)
       &amp; scope(OPERATORX3) = OPERATORX10

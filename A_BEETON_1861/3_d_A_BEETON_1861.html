@@ -576,12 +576,6 @@ At dessert , the slips being removed , the butler receives the dessert from the 
 </svg>
 <br>
 <pre>
-arc(abs_0009_1002,r_0009_0006__being,restriction).
-arc(abs_0009_1002,r_0009_0019__and_and,scope).
-arc(abs_0009_1037,r_0009_0051__stands,scope).
-arc(abs_0009_1037,r_0009_0063__leaving,restriction).
-arc(cnt_0009_1026,r_0009_0033__takes,scope).
-arc(cnt_0009_1026,r_0009_0048__while_tmp,restriction).
 arc(r_0009_0006__being,r_0009_0007__removed,catenative).
 arc(r_0009_0007__removed,r_0009_0005__slips,arg1).
 arc(r_0009_0011__receives,r_0009_0002__dessert,r_0009_0001__At_tmp).
@@ -589,9 +583,9 @@ arc(r_0009_0011__receives,r_0009_0010__butler,arg0).
 arc(r_0009_0011__receives,r_0009_0013__dessert,arg1).
 arc(r_0009_0011__receives,r_0009_0017__servants,r_0009_0014__from_dir).
 arc(r_0009_0017__servants,r_0009_0016__other,attrib2).
-arc(r_0009_0019__and_and,cnt_0009_1026,conj3).
-arc(r_0009_0019__and_and,r_0009_0011__receives,conj1).
-arc(r_0009_0019__and_and,r_0009_0020__arranges,conj2).
+arc(r_0009_0019__and__r_0009_0031__and,r_0009_0011__receives,conj1).
+arc(r_0009_0019__and__r_0009_0031__and,r_0009_0020__arranges,conj2).
+arc(r_0009_0019__and__r_0009_0031__and,r_0009_1026__cnt,conj3).
 arc(r_0009_0020__arranges,r_0009_0002__dessert,r_0009_0001__At_tmp).
 arc(r_0009_0020__arranges,r_0009_0010__butler,arg0).
 arc(r_0009_0020__arranges,r_0009_0013__dessert,arg1).
@@ -611,8 +605,8 @@ arc(r_0009_0042__hand,r_0009_0010__butler,arg0).
 arc(r_0009_0042__hand,r_0009_0045__and,arg1).
 arc(r_0009_0045__and,r_0009_0044__wines,conj1).
 arc(r_0009_0045__and,r_0009_0046__ices,conj2).
-arc(r_0009_0048__while_tmp,abs_0009_1037,restriction).
 arc(r_0009_0048__while_tmp,r_0009_0042__hand,scope).
+arc(r_0009_0048__while_tmp,r_0009_1037__abs,restriction).
 arc(r_0009_0051__stands,r_0009_0050__footman,arg0).
 arc(r_0009_0051__stands,r_0009_0054__mistress,r_0009_0052__behind_loc).
 arc(r_0009_0051__stands,r_0009_0058__purpose,r_0009_0055__for_mnr).
@@ -621,11 +615,17 @@ arc(r_0009_0058__purpose,r_0009_0057__same,attrib2).
 arc(r_0009_0062__attendants,r_0009_0061__other,attrib2).
 arc(r_0009_0063__leaving,r_0009_0062__attendants,arg0).
 arc(r_0009_0063__leaving,r_0009_0065__room,arg1).
+arc(r_0009_1002__abs,r_0009_0006__being,restriction).
+arc(r_0009_1002__abs,r_0009_0019__and__r_0009_0031__and,scope).
+arc(r_0009_1026__cnt,r_0009_0033__takes,scope).
+arc(r_0009_1026__cnt,r_0009_0048__while_tmp,restriction).
+arc(r_0009_1037__abs,r_0009_0051__stands,scope).
+arc(r_0009_1037__abs,r_0009_0063__leaving,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_9_A_BEETON_1861,axiom,
+fof(id__9_A_BEETON_1861,axiom,
     ? [CATENATIVEX5,DESSERTX14,BUTLERX22,BUTLERX25,FOOTMANX34,CONNX3,CONJX46,CONNX27,CONNX31,CONNX38,EVENTX42,EVENTX43,EVENTX44,EVENTX45,EVENTX19,EVENTX13,EVENTX8,EVENTX7,ENTITYX1,BUTLERX9,ENTITYX21,ENTITYX28,FOOTMANX32,ENTITYX33,ENTITYX35,ENTITYX39,ENTITYX41,ENTITYX29,ENTITYX30,ENTITYX23,ENTITYX24,ENTITYX15,ENTITYX16,ENTITYX17,ENTITYX18,DESSERTX10,ENTITYX11,ENTITYX4,ATTRIBX40,ATTRIBX36,ATTRIBX12,QUALITYX20] :
       ( CATENATIVEX5 = EVENTX7
       &amp; isA(EVENTX7,r_0009_0007__removed)
@@ -671,12 +671,12 @@ fof(id_9_A_BEETON_1861,axiom,
       &amp; isA(ATTRIBX36,r_0009_0057__same)
       &amp; isA(ATTRIBX40,r_0009_0061__other)
       &amp; isA(QUALITYX20,r_0009_0032__then)
-      &amp; isA(CONNX3,abs_0009_1002)
+      &amp; isA(CONNX3,r_0009_1002__abs)
       &amp; restriction(CONNX3) = EVENTX8
       &amp; isA(EVENTX8,r_0009_0006__being)
       &amp; catenative(EVENTX8) = CATENATIVEX5
       &amp; scope(CONNX3) = CONJX46
-      &amp; isA(CONJX46,r_0009_0019__and_and)
+      &amp; isA(CONJX46,r_0009_0019__and__r_0009_0031__and)
       &amp; conj1(CONJX46) = EVENTX13
       &amp; isA(EVENTX13,r_0009_0011__receives)
       &amp; r_0009_0001__At_tmp(EVENTX13) = ENTITYX1
@@ -691,7 +691,7 @@ fof(id_9_A_BEETON_1861,axiom,
       &amp; r_0009_0022__on_loc(EVENTX19) = ENTITYX15
       &amp; r_0009_0026__with_com(EVENTX19) = ENTITYX16
       &amp; conj3(CONJX46) = CONNX27
-      &amp; isA(CONNX27,cnt_0009_1026)
+      &amp; isA(CONNX27,r_0009_1026__cnt)
       &amp; scope(CONNX27) = EVENTX45
       &amp; isA(EVENTX45,r_0009_0033__takes)
       &amp; r_0009_0001__At_tmp(EVENTX45) = ENTITYX1
@@ -705,7 +705,7 @@ fof(id_9_A_BEETON_1861,axiom,
       &amp; arg0(EVENTX44) = BUTLERX9
       &amp; arg1(EVENTX44) = ENTITYX28
       &amp; restriction(CONNX31) = CONNX38
-      &amp; isA(CONNX38,abs_0009_1037)
+      &amp; isA(CONNX38,r_0009_1037__abs)
       &amp; scope(CONNX38) = EVENTX43
       &amp; isA(EVENTX43,r_0009_0051__stands)
       &amp; arg0(EVENTX43) = FOOTMANX32

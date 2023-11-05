@@ -679,8 +679,8 @@ Now he realised that he was entrusting not only his own life , but Geoffrey 's a
 <pre>
 arc(r_0001_0002__was,r_0001_0001__Alastair,arg0).
 arc(r_0001_0002__was,r_0001_0004__bachelor,prd2).
-arc(r_0002_0001__quantificational__All,r_0002_0003__life,restriction).
-arc(r_0002_0001__quantificational__All,r_0002_0005__had,scope).
+arc(r_0002_0001__quantificational__r_0002_0001__All,r_0002_0003__life,restriction).
+arc(r_0002_0001__quantificational__r_0002_0001__All,r_0002_0005__had,scope).
 arc(r_0002_0003__life,r_0001_0001__Alastair,genv).
 arc(r_0002_0005__had,r_0002_0003__life,tmp).
 arc(r_0002_0005__had,r_0002_0006__been,catenative).
@@ -701,10 +701,10 @@ arc(r_0003_0003__realised,r_0001_0001__Alastair,arg0).
 arc(r_0003_0003__realised,r_0003_0006__was,arg1).
 arc(r_0003_0006__was,r_0003_0007__entrusting,catenative).
 arc(r_0003_0007__entrusting,r_0001_0001__Alastair,arg0).
-arc(r_0003_0007__entrusting,r_0003_0008__not_only_but_as_well,arg1).
+arc(r_0003_0007__entrusting,r_0003_0008__not__r_0003_0009__only_r_0003_0014__but_r_0003_0017__as_well,arg1).
 arc(r_0003_0007__entrusting,r_0003_0022__girl,r_0003_0019__to_clr).
-arc(r_0003_0008__not_only_but_as_well,r_0003_0012__life,conj1).
-arc(r_0003_0008__not_only_but_as_well,z_0001_1036,conj2).
+arc(r_0003_0008__not__r_0003_0009__only_r_0003_0014__but_r_0003_0017__as_well,r_0003_0012__life,conj1).
+arc(r_0003_0008__not__r_0003_0009__only_r_0003_0014__but_r_0003_0017__as_well,z_0001_1036,conj2).
 arc(r_0003_0012__life,z_0001_1034,genv).
 arc(r_0003_0022__girl,r_0003_0021__strange,attrib2).
 arc(r_0003_0025__had,r_0003_0027__met,catenative).
@@ -713,8 +713,8 @@ arc(r_0003_0027__met,r_0003_0022__girl,arg1).
 arc(r_0003_0027__met,r_0003_0026__never,tmp2).
 arc(r_0003_0028__and,r_0003_0025__had,conj1).
 arc(r_0003_0028__and,r_0003_0041__was,conj2).
-arc(r_0003_0032__quantificational__no,r_0003_0033__more,scope).
-arc(r_0003_0032__quantificational__no,z_0001_1050,restriction).
+arc(r_0003_0032__quantificational__r_0003_0032__no,r_0003_0033__more,scope).
+arc(r_0003_0032__quantificational__r_0003_0032__no,z_0001_1050,restriction).
 arc(r_0003_0033__more,r_0003_0036__couple,r_0003_0034__than).
 arc(r_0003_0033__more,z_0001_1050,modifier1).
 arc(r_0003_0041__was,r_0003_0042__prepared,catenative).
@@ -729,12 +729,12 @@ arc(z_0001_1034,r_0001_0001__Alastair,genv).
 arc(z_0001_1034,r_0003_0011__own,attrib2).
 arc(z_0001_1036,r_0003_0015__Geoffrey,genv).
 arc(z_0001_1053,r_0003_0033__more,attrib1).
-arc(z_0001_1053,r_0003_0038__telephone_calls,r_0003_0037__of).
+arc(z_0001_1053,r_0003_0038__telephone__r_0003_0039__calls,r_0003_0037__of).
 
 </pre>
 <br>
 <pre>
-fof(id_1_A_lob_N01__2_A_lob_N01__3_A_lob_N01,axiom,
+fof(id__1_A_lob_N01__2_A_lob_N01__3_A_lob_N01,axiom,
     ? [CATENATIVEX7,CATENATIVEX8,STATEX10,CATENATIVEX14,STATEX26,CATENATIVEX28,CATENATIVEX42,CATENATIVEX55,STATEX57,ALASTAIRX5,ALASTAIRX6,ALASTAIRX17,ALASTAIRX25,ALASTAIRX27,ALASTAIRX32,ALASTAIRX41,ALASTAIRX54,OPERATORX24,EVENTX66,EVENTX65,EVENTX64,CONJX63,EVENTX62,EVENTX61,EVENTX60,QUANTX49,EVENTX45,EVENTX44,QUANTX4,EVENTX23,EVENTX22,EVENTX21,EVENTX20,OPERATORX12,OPERATORX13,EVENTX19,EVENTX18,EVENTX2,ENTITYX29,ENTITYX37,ENTITYX46,ENTITYX58,ENTITYX52,ENTITYX48,ENTITYX51,ENTITYX30,ENTITYX35,ENTITYX31,ENTITYX3,ENTITYX11,ENTITYX16,ENTITYX1,ATTRIBX38,ATTRIBX59,ATTRIBX47,ATTRIBX33,QUALITYX43] :
       ( CATENATIVEX7 = EVENTX22
       &amp; isA(EVENTX22,r_0002_0006__been)
@@ -784,7 +784,7 @@ fof(id_1_A_lob_N01__2_A_lob_N01__3_A_lob_N01,axiom,
       &amp; ALASTAIRX25 = r_0001_0001__Alastair
       &amp; ( ALASTAIRX27 = ALASTAIRX25
         | ALASTAIRX27 = r_0001_0001__Alastair )
-      &amp; isA(ENTITYX29,r_0003_0008__not_only_but_as_well)
+      &amp; isA(ENTITYX29,r_0003_0008__not__r_0003_0009__only_r_0003_0014__but_r_0003_0017__as_well)
       &amp; conj1(ENTITYX29) = ENTITYX30
       &amp; conj2(ENTITYX29) = ENTITYX35
       &amp; isA(ENTITYX30,r_0003_0012__life)
@@ -814,7 +814,7 @@ fof(id_1_A_lob_N01__2_A_lob_N01__3_A_lob_N01,axiom,
       &amp; attrib1(ENTITYX46) = ATTRIBX47
       &amp; r_0003_0037__of(ENTITYX46) = ENTITYX52
       &amp; isA(ENTITYX51,r_0003_0036__couple)
-      &amp; isA(ENTITYX52,r_0003_0038__telephone_calls)
+      &amp; isA(ENTITYX52,r_0003_0038__telephone__r_0003_0039__calls)
       &amp; ( ALASTAIRX54 = ALASTAIRX27
         | ALASTAIRX54 = ALASTAIRX25
         | ALASTAIRX54 = r_0001_0001__Alastair )
@@ -830,7 +830,7 @@ fof(id_1_A_lob_N01__2_A_lob_N01__3_A_lob_N01,axiom,
       &amp; isA(r_0002_0012__something,r_0002_0012__something)
       &amp; isA(ATTRIBX33,r_0003_0011__own)
       &amp; isA(ATTRIBX38,r_0003_0021__strange)
-      &amp; isA(QUANTX49,r_0003_0032__quantificational__no)
+      &amp; isA(QUANTX49,r_0003_0032__quantificational__r_0003_0032__no)
       &amp; restriction(QUANTX49) = ENTITYX48
       &amp; isA(ENTITYX48,z_0001_1050)
       &amp; scope(QUANTX49) = ATTRIBX47
@@ -842,7 +842,7 @@ fof(id_1_A_lob_N01__2_A_lob_N01__3_A_lob_N01,axiom,
       &amp; isA(EVENTX2,r_0001_0002__was)
       &amp; arg0(EVENTX2) = r_0001_0001__Alastair
       &amp; prd2(EVENTX2) = ENTITYX1
-      &amp; isA(QUANTX4,r_0002_0001__quantificational__All)
+      &amp; isA(QUANTX4,r_0002_0001__quantificational__r_0002_0001__All)
       &amp; restriction(QUANTX4) = ENTITYX3
       &amp; isA(ENTITYX3,r_0002_0003__life)
       &amp; genv(ENTITYX3) = ALASTAIRX5

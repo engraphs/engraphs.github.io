@@ -269,17 +269,17 @@
 arc(r_0243_0004__When_tmp,r_0243_0009__has,restriction).
 arc(r_0243_0004__When_tmp,r_0243_0032__shall,scope).
 arc(r_0243_0009__has,r_0243_0010__received,catenative).
-arc(r_0243_0010__received,r_0243_0006__target_business_operator,arg0).
+arc(r_0243_0010__received,r_0243_0006__target__r_0243_0007__business_r_0243_0008__operator,arg0).
 arc(r_0243_0010__received,r_0243_0012__request,arg1).
 arc(r_0243_0012__request,r_0243_0015__provision,r_0243_0013__under).
-arc(r_0243_0012__request,r_0243_0024__information_protection_organization,r_0243_0020__from).
+arc(r_0243_0012__request,r_0243_0024__information__r_0243_0025__protection_r_0243_0026__organization,r_0243_0020__from).
 arc(r_0243_0015__provision,r_0243_0019__paragraph,r_0243_0016__of).
 arc(r_0243_0019__paragraph,r_0243_0018__preceding,attrib2).
-arc(r_0243_0024__information_protection_organization,r_0243_0022__authorized,attrib2).
-arc(r_0243_0024__information_protection_organization,r_0243_0023__personal,attrib3).
+arc(r_0243_0024__information__r_0243_0025__protection_r_0243_0026__organization,r_0243_0022__authorized,attrib2).
+arc(r_0243_0024__information__r_0243_0025__protection_r_0243_0026__organization,r_0243_0023__personal,attrib3).
 arc(r_0243_0032__shall,r_0243_0033__not,scope).
 arc(r_0243_0033__not,r_0243_0034__reject,scope).
-arc(r_0243_0034__reject,r_0243_0029__target_business_operator,arg0).
+arc(r_0243_0034__reject,r_0243_0029__target__r_0243_0030__business_r_0243_0031__operator,arg0).
 arc(r_0243_0034__reject,r_0243_0036__request,arg1).
 arc(r_0243_0034__reject,r_0243_0039__ground,r_0243_0037__without_mnr).
 arc(r_0243_0039__ground,r_0243_0038__justifiable,attrib1).
@@ -287,13 +287,13 @@ arc(r_0243_0039__ground,r_0243_0038__justifiable,attrib1).
 </pre>
 <br>
 <pre>
-fof(id_243_A_law_h15A119,axiom,
+fof(id__243_A_law_h15A119,axiom,
     ? [CATENATIVEX3,CONNX1,OPERATORX17,OPERATORX18,EVENTX19,EVENTX12,EVENTX11,ENTITYX13,ENTITYX14,ENTITYX15,ENTITYX2,ENTITYX4,ENTITYX5,ENTITYX8,ENTITYX6,ATTRIBX16,ATTRIBX9,ATTRIBX10,ATTRIBX7] :
       ( CATENATIVEX3 = EVENTX11
       &amp; isA(EVENTX11,r_0243_0010__received)
       &amp; arg0(EVENTX11) = ENTITYX2
       &amp; arg1(EVENTX11) = ENTITYX4
-      &amp; isA(ENTITYX2,r_0243_0006__target_business_operator)
+      &amp; isA(ENTITYX2,r_0243_0006__target__r_0243_0007__business_r_0243_0008__operator)
       &amp; isA(ENTITYX4,r_0243_0012__request)
       &amp; r_0243_0013__under(ENTITYX4) = ENTITYX5
       &amp; r_0243_0020__from(ENTITYX4) = ENTITYX8
@@ -301,10 +301,10 @@ fof(id_243_A_law_h15A119,axiom,
       &amp; r_0243_0016__of(ENTITYX5) = ENTITYX6
       &amp; isA(ENTITYX6,r_0243_0019__paragraph)
       &amp; attrib2(ENTITYX6) = ATTRIBX7
-      &amp; isA(ENTITYX8,r_0243_0024__information_protection_organization)
+      &amp; isA(ENTITYX8,r_0243_0024__information__r_0243_0025__protection_r_0243_0026__organization)
       &amp; attrib2(ENTITYX8) = ATTRIBX9
       &amp; attrib3(ENTITYX8) = ATTRIBX10
-      &amp; isA(ENTITYX13,r_0243_0029__target_business_operator)
+      &amp; isA(ENTITYX13,r_0243_0029__target__r_0243_0030__business_r_0243_0031__operator)
       &amp; isA(ENTITYX14,r_0243_0036__request)
       &amp; isA(ENTITYX15,r_0243_0039__ground)
       &amp; attrib1(ENTITYX15) = ATTRIBX16

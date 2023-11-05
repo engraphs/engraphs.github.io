@@ -218,15 +218,15 @@ That brought it out of reset , powered it up , organised all the memory and so f
 arc(r_0010_0002__brought,r_0010_0001__That,arg0).
 arc(r_0010_0002__brought,r_0010_0003__it,arg1).
 arc(r_0010_0002__brought,r_0010_0005__reset,r_0010_0004__out_of_dir).
-arc(r_0010_0007__powered_up,r_0010_0001__That,arg0).
-arc(r_0010_0007__powered_up,r_0010_0008__it,arg1).
+arc(r_0010_0007__powered__r_0010_0009__up,r_0010_0001__That,arg0).
+arc(r_0010_0007__powered__r_0010_0009__up,r_0010_0008__it,arg1).
 arc(r_0010_0011__organised,r_0010_0001__That,arg0).
 arc(r_0010_0011__organised,r_0010_0014__memory,arg1).
-arc(r_0010_0012__quantificational__all,r_0010_0011__organised,scope).
-arc(r_0010_0012__quantificational__all,r_0010_0014__memory,restriction).
+arc(r_0010_0012__quantificational__r_0010_0012__all,r_0010_0011__organised,scope).
+arc(r_0010_0012__quantificational__r_0010_0012__all,r_0010_0014__memory,restriction).
 arc(r_0010_0015__and,r_0010_0002__brought,conj1).
-arc(r_0010_0015__and,r_0010_0007__powered_up,conj2).
-arc(r_0010_0015__and,r_0010_0012__quantificational__all,conj3).
+arc(r_0010_0015__and,r_0010_0007__powered__r_0010_0009__up,conj2).
+arc(r_0010_0015__and,r_0010_0012__quantificational__r_0010_0012__all,conj3).
 arc(r_0010_0015__and,r_0010_0016__so_forth,conj4).
 arc(r_0010_0016__so_forth,z_0010_1008,scope).
 arc(z_0010_1008,r_0010_0001__That,arg0).
@@ -234,7 +234,7 @@ arc(z_0010_1008,r_0010_0001__That,arg0).
 </pre>
 <br>
 <pre>
-fof(id_10_A_PaulFellows,axiom,
+fof(id__10_A_PaulFellows,axiom,
     ? [CONJX10,OPERATORX7,EVENTX9,QUANTX5,EVENTX6,EVENTX3,EVENTX2,ENTITYX4,ENTITYX1] :
       ( isA(ENTITYX1,r_0010_0005__reset)
       &amp; isA(CONJX10,r_0010_0015__and)
@@ -244,11 +244,11 @@ fof(id_10_A_PaulFellows,axiom,
       &amp; arg1(EVENTX2) = r_0010_0003__it
       &amp; r_0010_0004__out_of_dir(EVENTX2) = ENTITYX1
       &amp; conj2(CONJX10) = EVENTX3
-      &amp; isA(EVENTX3,r_0010_0007__powered_up)
+      &amp; isA(EVENTX3,r_0010_0007__powered__r_0010_0009__up)
       &amp; arg0(EVENTX3) = r_0010_0001__That
       &amp; arg1(EVENTX3) = r_0010_0008__it
       &amp; conj3(CONJX10) = QUANTX5
-      &amp; isA(QUANTX5,r_0010_0012__quantificational__all)
+      &amp; isA(QUANTX5,r_0010_0012__quantificational__r_0010_0012__all)
       &amp; restriction(QUANTX5) = ENTITYX4
       &amp; isA(ENTITYX4,r_0010_0014__memory)
       &amp; scope(QUANTX5) = EVENTX6

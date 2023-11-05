@@ -148,29 +148,29 @@ Sir Roy 's united federal party is boycotting the London talks on the protectora
 </svg>
 <br>
 <pre>
-arc(r_0016_0006__party,r_0016_0001__Sir_Roy,genv).
+arc(r_0016_0006__party,r_0016_0001__Sir__r_0016_0002__Roy,genv).
 arc(r_0016_0006__party,r_0016_0004__united,attrib2).
 arc(r_0016_0006__party,r_0016_0005__federal,attrib3).
 arc(r_0016_0007__is,r_0016_0008__boycotting,catenative).
 arc(r_0016_0008__boycotting,r_0016_0006__party,arg0).
-arc(r_0016_0008__boycotting,r_0016_0010__London_talks,arg1).
-arc(r_0016_0010__London_talks,r_0016_0016__future,r_0016_0012__on).
+arc(r_0016_0008__boycotting,r_0016_0010__London__r_0016_0011__talks,arg1).
+arc(r_0016_0010__London__r_0016_0011__talks,r_0016_0016__future,r_0016_0012__on).
 arc(r_0016_0016__future,r_0016_0014__protectorate,genv).
 
 </pre>
 <br>
 <pre>
-fof(id_16_A_lob_A01,axiom,
+fof(id__16_A_lob_A01,axiom,
     ? [CATENATIVEX4,EVENTX9,EVENTX8,ENTITYX1,ENTITYX5,ENTITYX6,ENTITYX7,ATTRIBX2,ATTRIBX3] :
       ( CATENATIVEX4 = EVENTX8
       &amp; isA(EVENTX8,r_0016_0008__boycotting)
       &amp; arg0(EVENTX8) = ENTITYX1
       &amp; arg1(EVENTX8) = ENTITYX5
       &amp; isA(ENTITYX1,r_0016_0006__party)
-      &amp; genv(ENTITYX1) = r_0016_0001__Sir_Roy
+      &amp; genv(ENTITYX1) = r_0016_0001__Sir__r_0016_0002__Roy
       &amp; attrib2(ENTITYX1) = ATTRIBX2
       &amp; attrib3(ENTITYX1) = ATTRIBX3
-      &amp; isA(ENTITYX5,r_0016_0010__London_talks)
+      &amp; isA(ENTITYX5,r_0016_0010__London__r_0016_0011__talks)
       &amp; r_0016_0012__on(ENTITYX5) = ENTITYX6
       &amp; isA(ENTITYX6,r_0016_0016__future)
       &amp; genv(ENTITYX6) = ENTITYX7

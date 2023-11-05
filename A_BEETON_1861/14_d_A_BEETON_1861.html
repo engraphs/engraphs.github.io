@@ -554,9 +554,6 @@ Supposing eggs ( the cheapest ) to be used , &mdash; Draw a gallon or so of the 
 </svg>
 <br>
 <pre>
-arc(abs_0027_1004,r_0027_0001__Supposing,restriction).
-arc(abs_0027_1004,r_0027_0020__and,scope).
-arc(imperative_0027_1002,r_0027_0042__when_tmp,scope).
 arc(r_0027_0001__Supposing,r_0027_0002__eggs,arg2).
 arc(r_0027_0001__Supposing,r_0027_0008__be,arg1).
 arc(r_0027_0002__eggs,z_0027_1009,prn3).
@@ -567,10 +564,10 @@ arc(r_0027_0014__gallon,r_0027_0015__or_so,quality3).
 arc(r_0027_0014__gallon,r_0027_0018__wine,r_0027_0016__of).
 arc(r_0027_0020__and,r_0027_0012__Draw,conj1).
 arc(r_0027_0020__and,r_0027_0033__by_mnr,conj2).
-arc(r_0027_0021__mix,r_0027_0022__one_quart,arg1).
+arc(r_0027_0021__mix,r_0027_0022__one__r_0027_0023__quart,arg1).
 arc(r_0027_0021__mix,r_0027_0028__whites,r_0027_0026__with_com).
-arc(r_0027_0022__one_quart,r_0027_0018__wine,r_0027_0024__of).
-arc(r_0027_0028__whites,r_0027_0030__four_eggs,r_0027_0029__of).
+arc(r_0027_0022__one__r_0027_0023__quart,r_0027_0018__wine,r_0027_0024__of).
+arc(r_0027_0028__whites,r_0027_0030__four__r_0027_0031__eggs,r_0027_0029__of).
 arc(r_0027_0033__by_mnr,r_0027_0021__mix,scope).
 arc(r_0027_0033__by_mnr,r_0027_0034__stirring,restriction).
 arc(r_0027_0034__stirring,r_0027_0018__wine,arg1).
@@ -584,22 +581,25 @@ arc(r_0027_0046__pour,r_0027_0048__back,dir3).
 arc(r_0027_0046__pour,r_0027_0054__bunghole,r_0027_0052__through_loc).
 arc(r_0027_0048__back,r_0027_0051__cask,r_0027_0049__into).
 arc(r_0027_0056__and,r_0027_0046__pour,conj1).
-arc(r_0027_0056__and,r_0027_0057__stir_up,conj2).
-arc(r_0027_0057__stir_up,r_0027_0040__afterwards,tmp1).
-arc(r_0027_0057__stir_up,r_0027_0061__cask,arg1).
-arc(r_0027_0057__stir_up,r_0027_0066__direction,r_0027_0063__in_mnr).
-arc(r_0027_0057__stir_up,r_0027_0071__split_stick,r_0027_0068__with_mnr).
+arc(r_0027_0056__and,r_0027_0057__stir__r_0027_0058__up,conj2).
+arc(r_0027_0057__stir__r_0027_0058__up,r_0027_0040__afterwards,tmp1).
+arc(r_0027_0057__stir__r_0027_0058__up,r_0027_0061__cask,arg1).
+arc(r_0027_0057__stir__r_0027_0058__up,r_0027_0066__direction,r_0027_0063__in_mnr).
+arc(r_0027_0057__stir__r_0027_0058__up,r_0027_0071__split_r_0027_0072__stick,r_0027_0068__with_mnr).
 arc(r_0027_0061__cask,r_0027_0060__whole,attrib2).
 arc(r_0027_0066__direction,r_0027_0065__rotatory,attrib2).
-arc(r_0027_0071__split_stick,r_0027_0070__clean,attrib2).
-arc(r_0027_0073__inserted,r_0027_0071__split_stick,arg1).
+arc(r_0027_0071__split__r_0027_0072__stick,r_0027_0070__clean,attrib2).
+arc(r_0027_0073__inserted,r_0027_0071__split__r_0027_0072__stick,arg1).
 arc(r_0027_0073__inserted,r_0027_0076__bunghole,r_0027_0074__through_loc).
+arc(r_0027_1002__imperative,r_0027_0042__when_tmp,scope).
+arc(r_0027_1004__abs,r_0027_0001__Supposing,restriction).
+arc(r_0027_1004__abs,r_0027_0020__and,scope).
 arc(z_0027_1009,r_0027_0005__cheapest,attrib2).
 
 </pre>
 <br>
 <pre>
-fof(id_27_A_BEETON_1861,axiom,
+fof(id__27_A_BEETON_1861,axiom,
     ? [STATEX10,CATENATIVEX11,WINEX21,WINEX25,WINEX35,OPERATORX2,CONNX31,CONJX50,EVENTX49,EVENTX48,EVENTX39,EVENTX34,CONNX5,CONJX29,CONNX24,EVENTX27,EVENTX28,EVENTX19,EVENTX15,EVENTX14,EVENTX13,ENTITYX40,ENTITYX42,ENTITYX44,ENTITYX47,ENTITYX38,ENTITYX37,ENTITYX20,ENTITYX22,ENTITYX26,ENTITYX23,ENTITYX16,WINEX18,ENTITYX6,ENTITYX7,ATTRIBX45,ATTRIBX43,ATTRIBX41,ATTRIBX8,QUALITYX30,QUALITYX36,QUALITYX33,QUALITYX17] :
       ( STATEX10 = EVENTX14
       &amp; isA(EVENTX14,r_0027_0008__be)
@@ -615,12 +615,12 @@ fof(id_27_A_BEETON_1861,axiom,
       &amp; quality3(ENTITYX16) = QUALITYX17
       &amp; r_0027_0016__of(ENTITYX16) = WINEX18
       &amp; isA(WINEX18,r_0027_0018__wine)
-      &amp; isA(ENTITYX20,r_0027_0022__one_quart)
+      &amp; isA(ENTITYX20,r_0027_0022__one__r_0027_0023__quart)
       &amp; r_0027_0024__of(ENTITYX20) = WINEX21
       &amp; WINEX21 = WINEX18
       &amp; isA(ENTITYX22,r_0027_0028__whites)
       &amp; r_0027_0029__of(ENTITYX22) = ENTITYX23
-      &amp; isA(ENTITYX23,r_0027_0030__four_eggs)
+      &amp; isA(ENTITYX23,r_0027_0030__four__r_0027_0031__eggs)
       &amp; WINEX25 = WINEX18
       &amp; isA(ENTITYX26,r_0027_0038__whisk)
       &amp; WINEX35 = WINEX18
@@ -633,7 +633,7 @@ fof(id_27_A_BEETON_1861,axiom,
       &amp; isA(EVENTX48,r_0027_0073__inserted)
       &amp; arg1(EVENTX48) = ENTITYX44
       &amp; r_0027_0074__through_loc(EVENTX48) = ENTITYX47
-      &amp; isA(ENTITYX44,r_0027_0071__split_stick)
+      &amp; isA(ENTITYX44,r_0027_0071__split__r_0027_0072__stick)
       &amp; attrib2(ENTITYX44) = ATTRIBX45
       &amp; isA(ENTITYX47,r_0027_0076__bunghole)
       &amp; isA(ATTRIBX8,r_0027_0005__cheapest)
@@ -645,8 +645,8 @@ fof(id_27_A_BEETON_1861,axiom,
       &amp; isA(QUALITYX33,r_0027_0043__thoroughly)
       &amp; isA(QUALITYX36,r_0027_0048__back)
       &amp; r_0027_0049__into(QUALITYX36) = ENTITYX37
-      &amp; isA(OPERATORX2,imperative_0027_1002)
-      &amp; isA(CONNX5,abs_0027_1004)
+      &amp; isA(OPERATORX2,r_0027_1002__imperative)
+      &amp; isA(CONNX5,r_0027_1004__abs)
       &amp; restriction(CONNX5) = EVENTX15
       &amp; isA(EVENTX15,r_0027_0001__Supposing)
       &amp; arg2(EVENTX15) = ENTITYX6
@@ -679,7 +679,7 @@ fof(id_27_A_BEETON_1861,axiom,
       &amp; dir3(EVENTX39) = QUALITYX36
       &amp; r_0027_0052__through_loc(EVENTX39) = ENTITYX38
       &amp; conj2(CONJX50) = EVENTX49
-      &amp; isA(EVENTX49,r_0027_0057__stir_up)
+      &amp; isA(EVENTX49,r_0027_0057__stir__r_0027_0058__up)
       &amp; tmp1(EVENTX49) = QUALITYX30
       &amp; arg1(EVENTX49) = ENTITYX40
       &amp; r_0027_0063__in_mnr(EVENTX49) = ENTITYX42

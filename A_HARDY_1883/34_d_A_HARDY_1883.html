@@ -389,14 +389,12 @@ A dancing-party was the alternative ; but this , while avoiding the foregoing ob
 </svg>
 <br>
 <pre>
-arc(abs_0037_1016,r_0037_0022__had,scope).
-arc(abs_0037_1016,r_0037_0040__causing,restriction).
 arc(r_0037_0003__was,r_0037_0002__dancing_party,arg0).
 arc(r_0037_0003__was,r_0037_0005__alternative,prd2).
 arc(r_0037_0007__but,r_0037_0003__was,conj1).
 arc(r_0037_0007__but,r_0037_0010__while_cnt,conj2).
-arc(r_0037_0010__while_cnt,abs_0037_1016,scope).
 arc(r_0037_0010__while_cnt,r_0037_0011__avoiding,restriction).
+arc(r_0037_0010__while_cnt,r_0037_1016__abs,scope).
 arc(r_0037_0011__avoiding,r_0037_0008__this,arg0).
 arc(r_0037_0011__avoiding,r_0037_0014__objection,arg1).
 arc(r_0037_0013__foregoing,r_0037_0014__objection,arg0).
@@ -411,16 +409,18 @@ arc(r_0037_0028__matter,r_0037_0031__victuals,r_0037_0029__of).
 arc(r_0037_0031__victuals,r_0037_0030__good,attrib1).
 arc(r_0037_0035__appetites,r_0037_0034__ravenous,attrib2).
 arc(r_0037_0036__engendered,r_0037_0035__appetites,arg1).
-arc(r_0037_0036__engendered,r_0037_0039__exercise,arg0_by_lgs).
+arc(r_0037_0036__engendered,r_0037_0039__exercise,arg0__r_0037_0037__by_lgs).
 arc(r_0037_0040__causing,r_0037_0035__appetites,arg0).
 arc(r_0037_0040__causing,r_0037_0042__havoc,arg1).
 arc(r_0037_0042__havoc,r_0037_0041__immense,attrib1).
 arc(r_0037_0042__havoc,r_0037_0045__buttery,r_0037_0043__in).
+arc(r_0037_1016__abs,r_0037_0022__had,scope).
+arc(r_0037_1016__abs,r_0037_0040__causing,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_37_A_HARDY_1883,axiom,
+fof(id__37_A_HARDY_1883,axiom,
     ? [CONJX27,CONNX4,CONNX17,EVENTX25,EVENTX21,EVENTX26,EVENTX12,EVENTX10,EVENTX6,EVENTX3,ENTITYX11,ENTITYX13,ENTITYX18,ENTITYX22,ENTITYX24,ENTITYX20,ENTITYX14,ENTITYX5,ENTITYX7,ENTITYX8,ENTITYX1,ENTITYX2,ATTRIBX23,ATTRIBX19,ATTRIBX15,ATTRIBX9] :
       ( isA(ENTITYX1,r_0037_0002__dancing_party)
       &amp; isA(ENTITYX2,r_0037_0005__alternative)
@@ -440,7 +440,7 @@ fof(id_37_A_HARDY_1883,axiom,
       &amp; isA(ENTITYX14,r_0037_0031__victuals)
       &amp; attrib1(ENTITYX14) = ATTRIBX15
       &amp; isA(EVENTX21,r_0037_0036__engendered)
-      &amp; arg0_by_lgs(EVENTX21) = ENTITYX20
+      &amp; arg0__r_0037_0037__by_lgs(EVENTX21) = ENTITYX20
       &amp; arg1(EVENTX21) = ENTITYX18
       &amp; isA(ENTITYX18,r_0037_0035__appetites)
       &amp; attrib2(ENTITYX18) = ATTRIBX19
@@ -465,7 +465,7 @@ fof(id_37_A_HARDY_1883,axiom,
       &amp; arg0(EVENTX10) = r_0037_0008__this
       &amp; arg1(EVENTX10) = ENTITYX5
       &amp; scope(CONNX4) = CONNX17
-      &amp; isA(CONNX17,abs_0037_1016)
+      &amp; isA(CONNX17,r_0037_1016__abs)
       &amp; scope(CONNX17) = EVENTX26
       &amp; isA(EVENTX26,r_0037_0022__had)
       &amp; arg0(EVENTX26) = r_0037_0008__this

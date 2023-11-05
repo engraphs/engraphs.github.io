@@ -1315,14 +1315,6 @@ In his indecision he turned and surveyed the scene around .
 </svg>
 <br>
 <pre>
-arc(abs_0067_1015,r_0067_0020__emerging,restriction).
-arc(abs_0067_1015,r_0067_0032__walked,scope).
-arc(abs_0067_1024,r_0068_0001__Arrived,restriction).
-arc(abs_0067_1024,r_0068_0007__was,scope).
-arc(abs_0067_1047,r_0069_0001__Having,restriction).
-arc(abs_0067_1047,r_0069_0014__but,scope).
-arc(cnt_0067_1057,r_0069_0008__lifted,scope).
-arc(cnt_0067_1057,r_0069_0012__knock,restriction).
 arc(r_0067_0002__cessation,r_0067_0004__activity,r_0067_0003__of).
 arc(r_0067_0005__aroused,r_0067_0002__cessation,arg0).
 arc(r_0067_0005__aroused,r_0067_0008__pedestrian,arg1).
@@ -1331,8 +1323,8 @@ arc(r_0067_0008__pedestrian,r_0067_0007__solitary,attrib2).
 arc(r_0067_0015__had,r_0067_0016__lapsed,catenative).
 arc(r_0067_0016__lapsed,r_0067_0008__pedestrian,arg0).
 arc(r_0067_0016__lapsed,r_0067_0011__reverie,r_0067_0012__into_loc).
-arc(r_0067_0018__and,abs_0067_1015,conj2).
 arc(r_0067_0018__and,r_0067_0005__aroused,conj1).
+arc(r_0067_0018__and,r_0067_1015__abs,conj2).
 arc(r_0067_0020__emerging,r_0067_0023__shed,r_0067_0021__from_dir).
 arc(r_0067_0020__emerging,r_0067_0029__intention,r_0067_0025__with_com).
 arc(r_0067_0020__emerging,r_0067_0031__he,arg0).
@@ -1341,10 +1333,18 @@ arc(r_0067_0029__intention,r_0067_0028__new,attrib2).
 arc(r_0067_0032__walked,r_0067_0031__he,arg0).
 arc(r_0067_0032__walked,r_0067_0035__path,r_0067_0033__up_dir).
 arc(r_0067_0035__path,r_0067_0038__house_door,r_0067_0036__to).
+arc(r_0067_1015__abs,r_0067_0020__emerging,restriction).
+arc(r_0067_1015__abs,r_0067_0032__walked,scope).
+arc(r_0067_1024__abs,r_0068_0001__Arrived,restriction).
+arc(r_0067_1024__abs,r_0068_0007__was,scope).
+arc(r_0067_1047__abs,r_0069_0001__Having,restriction).
+arc(r_0067_1047__abs,r_0069_0014__but,scope).
+arc(r_0067_1057__cnt,r_0069_0008__lifted,scope).
+arc(r_0067_1057__cnt,r_0069_0012__knock,restriction).
 arc(r_0068_0001__Arrived,r_0068_0002__here,loc2).
-arc(r_0068_0005__first_act,r_0067_0008__pedestrian,genv).
+arc(r_0068_0005__first__r_0068_0006__act,r_0067_0008__pedestrian,genv).
 arc(r_0068_0007__was,r_0068_0021__and,catenative).
-arc(r_0068_0009__kneel,r_0068_0005__first_act,arg0).
+arc(r_0068_0009__kneel,r_0068_0005__first__r_0068_0006__act,arg0).
 arc(r_0068_0009__kneel,r_0068_0010__down,dir3).
 arc(r_0068_0009__kneel,r_0068_0014__stone,r_0068_0011__on_loc).
 arc(r_0068_0014__stone,r_0068_0013__large,attrib2).
@@ -1352,7 +1352,7 @@ arc(r_0068_0014__stone,r_0068_0017__row,r_0068_0015__beside).
 arc(r_0068_0017__row,r_0068_0019__vessels,r_0068_0018__of).
 arc(r_0068_0021__and,r_0068_0009__kneel,conj1).
 arc(r_0068_0021__and,r_0068_0023__drink,conj2).
-arc(r_0068_0023__drink,r_0068_0005__first_act,arg0).
+arc(r_0068_0023__drink,r_0068_0005__first__r_0068_0006__act,arg0).
 arc(r_0068_0023__drink,r_0068_0026__draught,arg1).
 arc(r_0068_0026__draught,r_0068_0025__copious,attrib2).
 arc(r_0068_0026__draught,r_0068_0028__one,r_0068_0027__from).
@@ -1362,7 +1362,7 @@ arc(r_0069_0002__quenched,r_0067_0008__pedestrian,arg0).
 arc(r_0069_0002__quenched,r_0069_0004__thirst,arg1).
 arc(r_0069_0004__thirst,r_0067_0008__pedestrian,genv).
 arc(r_0069_0006__rose,r_0067_0008__pedestrian,arg0).
-arc(r_0069_0007__and,cnt_0067_1057,conj2).
+arc(r_0069_0007__and,r_0067_1057__cnt,conj2).
 arc(r_0069_0007__and,r_0069_0006__rose,conj1).
 arc(r_0069_0008__lifted,r_0067_0008__pedestrian,arg0).
 arc(r_0069_0008__lifted,r_0069_0010__hand,arg1).
@@ -1374,14 +1374,14 @@ arc(r_0069_0015__paused,r_0067_0008__pedestrian,arg0).
 arc(r_0069_0015__paused,r_0069_0018__eye,r_0069_0016__with_mnr).
 arc(r_0069_0018__eye,r_0067_0008__pedestrian,genv).
 arc(r_0069_0018__eye,r_0069_0021__panel,r_0069_0019__upon).
-arc(r_0070_0001__Since_cnt,r_0070_0010__quantificational__nothing,restriction).
+arc(r_0070_0001__Since_cnt,r_0070_0010__quantificational__r_0070_0010__nothing,restriction).
 arc(r_0070_0001__Since_cnt,r_0070_0013__was,scope).
 arc(r_0070_0004__surface,r_0070_0003__dark,attrib2).
 arc(r_0070_0004__surface,r_0070_0007__wood,r_0070_0005__of).
 arc(r_0070_0008__revealed,r_0070_0004__surface,arg0).
 arc(r_0070_0008__revealed,z_0067_1074,arg1).
-arc(r_0070_0010__quantificational__nothing,r_0070_0008__revealed,scope).
-arc(r_0070_0010__quantificational__nothing,z_0067_1074,restriction).
+arc(r_0070_0010__quantificational__r_0070_0010__nothing,r_0070_0008__revealed,scope).
+arc(r_0070_0010__quantificational__r_0070_0010__nothing,z_0067_1074,restriction).
 arc(r_0070_0013__was,r_0070_0014__evident,prd2).
 arc(r_0070_0013__was,r_0070_0017__must,arg0).
 arc(r_0070_0017__must,r_0070_0018__be,scope).
@@ -1396,8 +1396,8 @@ arc(r_0070_0027__wished,r_0070_0030__thereby,arg1).
 arc(r_0070_0029__measure,r_0067_0008__pedestrian,arg0).
 arc(r_0070_0029__measure,r_0070_0043__and,arg1).
 arc(r_0070_0030__thereby,r_0070_0029__measure,scope).
-arc(r_0070_0031__quantificational__all,r_0070_0033__possibilities,restriction).
-arc(r_0070_0031__quantificational__all,r_0070_0043__and,scope).
+arc(r_0070_0031__quantificational__r_0070_0031__all,r_0070_0033__possibilities,restriction).
+arc(r_0070_0031__quantificational__r_0070_0031__all,r_0070_0043__and,scope).
 arc(r_0070_0033__possibilities,r_0070_0040__might,emb4).
 arc(r_0070_0036__house,r_0070_0039__sort,r_0070_0037__of).
 arc(r_0070_0040__might,r_0070_0041__include,scope).
@@ -1424,7 +1424,7 @@ arc(z_0067_1074,r_0070_0009__absolutely,quality1).
 </pre>
 <br>
 <pre>
-fof(id_67_A_HARDY_1883__68_A_HARDY_1883__69_A_HARDY_1883__70_A_HARDY_1883__71_A_HARDY_1883,axiom,
+fof(id__67_A_HARDY_1883__68_A_HARDY_1883__69_A_HARDY_1883__70_A_HARDY_1883__71_A_HARDY_1883,axiom,
     ? [CATENATIVEX9,STATEX32,CATENATIVEX49,STATEX78,CATENATIVEX81,STATEX86,STATEX91,PEDESTRIANX8,PEDESTRIANX31,VESSELSX42,PEDESTRIANX46,PEDESTRIANX51,PEDESTRIANX56,PEDESTRIANX63,PEDESTRIANX79,PEDESTRIANX85,POSSIBILITIESX97,PEDESTRIANX100,PEDESTRIANX110,PEDESTRIANX111,CONJX116,EVENTX115,EVENTX112,CONNX67,EVENTX108,OPERATORX80,EVENTX107,CONNX84,EVENTX105,OPERATORX87,EVENTX104,QUANTX90,OPERATORX101,EVENTX102,OPERATORX94,EVENTX95,EVENTX106,QUANTX72,EVENTX75,CONNX48,CONJX66,EVENTX65,CONJX61,CONNX58,EVENTX59,EVENTX60,EVENTX54,EVENTX53,EVENTX52,CONNX25,EVENTX45,CONJX44,EVENTX43,EVENTX38,EVENTX29,CONJX23,CONNX16,EVENTX22,EVENTX21,EVENTX12,EVENTX11,EVENTX10,ENTITYX109,ENTITYX113,ENTITYX83,ENTITYX88,POSSIBILITIESX89,ENTITYX96,ENTITYX98,ENTITYX99,ENTITYX92,ENTITYX93,ENTITYX68,ENTITYX71,ENTITYX70,ENTITYX62,ENTITYX64,ENTITYX55,ENTITYX50,ENTITYX30,ENTITYX39,ENTITYX41,ENTITYX34,ENTITYX36,VESSELSX37,ENTITYX13,ENTITYX17,ENTITYX18,ENTITYX14,ENTITYX3,PEDESTRIANX5,ENTITYX7,ENTITYX4,ATTRIBX77,ATTRIBX69,ATTRIBX40,ATTRIBX35,ATTRIBX19,ATTRIBX6,QUALITYX114,QUALITYX82,QUALITYX73,QUALITYX33,QUALITYX28,QUALITYX20] :
       ( CATENATIVEX9 = EVENTX10
       &amp; isA(EVENTX10,r_0067_0016__lapsed)
@@ -1487,7 +1487,7 @@ fof(id_67_A_HARDY_1883__68_A_HARDY_1883__69_A_HARDY_1883__70_A_HARDY_1883__71_A_
       &amp; isA(ENTITYX17,r_0067_0023__shed)
       &amp; isA(ENTITYX18,r_0067_0029__intention)
       &amp; attrib2(ENTITYX18) = ATTRIBX19
-      &amp; isA(ENTITYX30,r_0068_0005__first_act)
+      &amp; isA(ENTITYX30,r_0068_0005__first__r_0068_0006__act)
       &amp; genv(ENTITYX30) = PEDESTRIANX31
       &amp; PEDESTRIANX31 = PEDESTRIANX5
       &amp; isA(ENTITYX34,r_0068_0014__stone)
@@ -1525,7 +1525,7 @@ fof(id_67_A_HARDY_1883__68_A_HARDY_1883__69_A_HARDY_1883__70_A_HARDY_1883__71_A_
       &amp; isA(ENTITYX83,r_0070_0023__door)
       &amp; ( PEDESTRIANX85 = PEDESTRIANX79
         | PEDESTRIANX85 = PEDESTRIANX5 )
-      &amp; isA(QUANTX90,r_0070_0031__quantificational__all)
+      &amp; isA(QUANTX90,r_0070_0031__quantificational__r_0070_0031__all)
       &amp; restriction(QUANTX90) = POSSIBILITIESX89
       &amp; isA(POSSIBILITIESX89,r_0070_0033__possibilities)
       &amp; emb4(POSSIBILITIESX89) = STATEX91
@@ -1577,7 +1577,7 @@ fof(id_67_A_HARDY_1883__68_A_HARDY_1883__69_A_HARDY_1883__70_A_HARDY_1883__71_A_
       &amp; arg1(EVENTX12) = PEDESTRIANX5
       &amp; r_0067_0009__from_dir(EVENTX12) = ENTITYX7
       &amp; conj2(CONJX23) = CONNX16
-      &amp; isA(CONNX16,abs_0067_1015)
+      &amp; isA(CONNX16,r_0067_1015__abs)
       &amp; restriction(CONNX16) = EVENTX21
       &amp; isA(EVENTX21,r_0067_0020__emerging)
       &amp; arg0(EVENTX21) = r_0067_0031__he
@@ -1588,14 +1588,14 @@ fof(id_67_A_HARDY_1883__68_A_HARDY_1883__69_A_HARDY_1883__70_A_HARDY_1883__71_A_
       &amp; arg0(EVENTX22) = r_0067_0031__he
       &amp; arg0(EVENTX22) = r_0067_0031__he
       &amp; r_0067_0033__up_dir(EVENTX22) = ENTITYX13
-      &amp; isA(CONNX25,abs_0067_1024)
+      &amp; isA(CONNX25,r_0067_1024__abs)
       &amp; restriction(CONNX25) = EVENTX29
       &amp; isA(EVENTX29,r_0068_0001__Arrived)
       &amp; loc2(EVENTX29) = QUALITYX28
       &amp; scope(CONNX25) = EVENTX45
       &amp; isA(EVENTX45,r_0068_0007__was)
       &amp; catenative(EVENTX45) = STATEX32
-      &amp; isA(CONNX48,abs_0067_1047)
+      &amp; isA(CONNX48,r_0067_1047__abs)
       &amp; restriction(CONNX48) = EVENTX53
       &amp; isA(EVENTX53,r_0069_0001__Having)
       &amp; catenative(EVENTX53) = CATENATIVEX49
@@ -1607,7 +1607,7 @@ fof(id_67_A_HARDY_1883__68_A_HARDY_1883__69_A_HARDY_1883__70_A_HARDY_1883__71_A_
       &amp; isA(EVENTX54,r_0069_0006__rose)
       &amp; arg0(EVENTX54) = PEDESTRIANX46
       &amp; conj2(CONJX61) = CONNX58
-      &amp; isA(CONNX58,cnt_0067_1057)
+      &amp; isA(CONNX58,r_0067_1057__cnt)
       &amp; scope(CONNX58) = EVENTX60
       &amp; isA(EVENTX60,r_0069_0008__lifted)
       &amp; arg0(EVENTX60) = PEDESTRIANX46
@@ -1621,7 +1621,7 @@ fof(id_67_A_HARDY_1883__68_A_HARDY_1883__69_A_HARDY_1883__70_A_HARDY_1883__71_A_
       &amp; r_0069_0016__with_mnr(EVENTX65) = ENTITYX62
       &amp; isA(CONNX67,r_0070_0001__Since_cnt)
       &amp; restriction(CONNX67) = QUANTX72
-      &amp; isA(QUANTX72,r_0070_0010__quantificational__nothing)
+      &amp; isA(QUANTX72,r_0070_0010__quantificational__r_0070_0010__nothing)
       &amp; restriction(QUANTX72) = ENTITYX71
       &amp; isA(ENTITYX71,z_0067_1074)
       &amp; quality1(ENTITYX71) = QUALITYX73

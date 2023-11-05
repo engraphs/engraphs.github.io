@@ -83,20 +83,20 @@ Use a glass rod for stirring .
 </svg>
 <br>
 <pre>
-arc(imperative_0097_1002,r_0097_0001__Use,scope).
-arc(r_0097_0001__Use,r_0097_0003__glass_rod,arg1).
-arc(r_0097_0003__glass_rod,r_0097_0006__stirring,r_0097_0005__for).
+arc(r_0097_0001__Use,r_0097_0003__glass__r_0097_0004__rod,arg1).
+arc(r_0097_0003__glass__r_0097_0004__rod,r_0097_0006__stirring,r_0097_0005__for).
+arc(r_0097_1002__imperative,r_0097_0001__Use,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_97_A_lob_J01,axiom,
+fof(id__97_A_lob_J01,axiom,
     ? [EVENTX5,OPERATORX2,EVENTX9,EVENTX8,ENTITYX4] :
       ( EVENTX5 = EVENTX8
       &amp; isA(EVENTX8,r_0097_0006__stirring)
-      &amp; isA(ENTITYX4,r_0097_0003__glass_rod)
+      &amp; isA(ENTITYX4,r_0097_0003__glass__r_0097_0004__rod)
       &amp; r_0097_0005__for(ENTITYX4) = EVENTX5
-      &amp; isA(OPERATORX2,imperative_0097_1002)
+      &amp; isA(OPERATORX2,r_0097_1002__imperative)
       &amp; scope(OPERATORX2) = EVENTX9
       &amp; isA(EVENTX9,r_0097_0001__Use)
       &amp; arg1(EVENTX9) = ENTITYX4 ) ).

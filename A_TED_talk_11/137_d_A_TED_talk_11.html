@@ -396,18 +396,16 @@ But now kids with degrees are often heading home to carry on playing video games
 </svg>
 <br>
 <pre>
-arc(cnt_0182_1027,r_0182_0008__heading,scope).
-arc(cnt_0182_1027,r_0182_0011__carry_on,restriction).
 arc(r_0182_0002__now,r_0182_0017__because_cnt,scope).
 arc(r_0182_0003__kids,r_0182_0005__degrees,r_0182_0004__with).
-arc(r_0182_0006__are,cnt_0182_1027,catenative).
+arc(r_0182_0006__are,r_0182_1027__cnt,catenative).
 arc(r_0182_0008__heading,r_0182_0003__kids,arg0).
 arc(r_0182_0008__heading,r_0182_0007__often,tmp1).
 arc(r_0182_0008__heading,r_0182_0009__home,dir3).
-arc(r_0182_0011__carry_on,r_0182_0003__kids,arg0).
-arc(r_0182_0011__carry_on,r_0182_0013__playing,arg1).
+arc(r_0182_0011__carry__r_0182_0012__on,r_0182_0003__kids,arg0).
+arc(r_0182_0011__carry__r_0182_0012__on,r_0182_0013__playing,arg1).
 arc(r_0182_0013__playing,r_0182_0003__kids,arg0).
-arc(r_0182_0013__playing,r_0182_0014__video_games,arg1).
+arc(r_0182_0013__playing,r_0182_0014__video__r_0182_0015__games,arg1).
 arc(r_0182_0017__because_cnt,r_0182_0006__are,scope).
 arc(r_0182_0017__because_cnt,r_0182_0030__and,restriction).
 arc(r_0182_0019__need,r_0182_0018__you,arg0).
@@ -423,22 +421,24 @@ arc(r_0182_0033__need,r_0182_0018__you,arg0).
 arc(r_0182_0033__need,r_0182_0031__now,tmp1).
 arc(r_0182_0033__need,r_0182_0035__PhD,arg1).
 arc(r_0182_0033__need,z_0182_1021,r_0182_0036__for_cnt).
+arc(r_0182_1027__cnt,r_0182_0008__heading,scope).
+arc(r_0182_1027__cnt,r_0182_0011__carry__r_0182_0012__on,restriction).
 arc(z_0182_1021,r_0182_0038__other,attrib2).
 
 </pre>
 <br>
 <pre>
-fof(id_182_A_TED_talk_11,axiom,
+fof(id__182_A_TED_talk_11,axiom,
     ? [CATENATIVEX24,STATEX29,HEARERX17,OPERATORX1,CONNX4,CONJX23,EVENTX22,EVENTX15,OPERATORX9,EVENTX13,EVENTX34,CONNX28,EVENTX32,EVENTX31,EVENTX33,ENTITYX2,ENTITYX18,ENTITYX19,ENTITYX7,ENTITYX8,ENTITYX10,ENTITYX12,ENTITYX30,ENTITYX3,QUALITYX16,QUALITYX25,QUALITYX26,ATTRIBX20,ATTRIBX11] :
       ( CATENATIVEX24 = CONNX28
-      &amp; isA(CONNX28,cnt_0182_1027)
+      &amp; isA(CONNX28,r_0182_1027__cnt)
       &amp; scope(CONNX28) = EVENTX33
       &amp; isA(EVENTX33,r_0182_0008__heading)
       &amp; arg0(EVENTX33) = ENTITYX2
       &amp; tmp1(EVENTX33) = QUALITYX25
       &amp; dir3(EVENTX33) = QUALITYX26
       &amp; restriction(CONNX28) = EVENTX32
-      &amp; isA(EVENTX32,r_0182_0011__carry_on)
+      &amp; isA(EVENTX32,r_0182_0011__carry__r_0182_0012__on)
       &amp; arg0(EVENTX32) = ENTITYX2
       &amp; arg1(EVENTX32) = STATEX29
       &amp; STATEX29 = EVENTX31
@@ -448,7 +448,7 @@ fof(id_182_A_TED_talk_11,axiom,
       &amp; isA(ENTITYX2,r_0182_0003__kids)
       &amp; r_0182_0004__with(ENTITYX2) = ENTITYX3
       &amp; isA(ENTITYX3,r_0182_0005__degrees)
-      &amp; isA(ENTITYX30,r_0182_0014__video_games)
+      &amp; isA(ENTITYX30,r_0182_0014__video__r_0182_0015__games)
       &amp; isA(ENTITYX7,r_0182_0021__MA)
       &amp; isA(OPERATORX9,r_0182_0022__where)
       &amp; scope(OPERATORX9) = EVENTX13

@@ -292,32 +292,32 @@ Could you tell me what it was like and whether you 'd recommend it ?
 </svg>
 <br>
 <pre>
-arc(question_0007_1010,r_0008_0001__Could,scope).
-arc(question_0007_1017,r_0008_0009__and,scope).
 arc(r_0007_0002__know,r_0007_0001__I,arg0).
 arc(r_0007_0002__know,r_0007_0004__went,arg1).
 arc(r_0007_0004__went,r_0007_0003__you,arg0).
-arc(r_0007_0004__went,r_0007_0007__river_trip,r_0007_0005__on_dir).
+arc(r_0007_0004__went,r_0007_0007__river__r_0007_0008__trip,r_0007_0005__on_dir).
 arc(r_0007_0004__went,r_0007_0012__class,r_0007_0009__with_com).
 arc(r_0007_0004__went,r_0007_0013__recently,tmp5).
 arc(r_0007_0012__class,r_0007_0003__you,genv).
 arc(r_0007_0012__class,r_0007_0011__English,attrib2).
+arc(r_0007_1010__question,r_0008_0001__Could,scope).
+arc(r_0007_1017__question,r_0008_0009__and,scope).
 arc(r_0008_0001__Could,r_0008_0003__tell,scope).
-arc(r_0008_0003__tell,question_0007_1017,arg1).
 arc(r_0008_0003__tell,r_0007_0001__I,arg2).
 arc(r_0008_0003__tell,r_0007_0003__you,arg0).
-arc(r_0008_0007__was,r_0007_0007__river_trip,arg0).
+arc(r_0008_0003__tell,r_0007_1017__question,arg1).
+arc(r_0008_0007__was,r_0007_0007__river__r_0007_0008__trip,arg0).
 arc(r_0008_0007__was,r_0008_0005__what,r_0008_0008__like_prd2).
 arc(r_0008_0009__and,r_0008_0007__was,conj1).
 arc(r_0008_0009__and,r_0008_0012___apos_d,conj2).
 arc(r_0008_0012___apos_d,r_0008_0013__recommend,scope).
 arc(r_0008_0013__recommend,r_0007_0003__you,arg0).
-arc(r_0008_0013__recommend,r_0007_0007__river_trip,arg1).
+arc(r_0008_0013__recommend,r_0007_0007__river__r_0007_0008__trip,arg1).
 
 </pre>
 <br>
 <pre>
-fof(id_7_A_fce_0102_2001_12__8_A_fce_0102_2001_12,axiom,
+fof(id__7_A_fce_0102_2001_12__8_A_fce_0102_2001_12,axiom,
     ? [STATEX1,STATEX13,HEARERX4,HEARERX11,SPEAKERX12,RIVER_TRIPX19,HEARERX21,RIVER_TRIPX22,OPERATORX10,OPERATORX26,EVENTX27,OPERATORX17,CONJX25,OPERATORX23,EVENTX24,EVENTX20,EVENTX8,EVENTX7,ENTITYX18,RIVER_TRIPX2,ENTITYX3,ATTRIBX5,QUALITYX6] :
       ( STATEX1 = EVENTX7
       &amp; isA(EVENTX7,r_0007_0004__went)
@@ -326,7 +326,7 @@ fof(id_7_A_fce_0102_2001_12__8_A_fce_0102_2001_12,axiom,
       &amp; r_0007_0009__with_com(EVENTX7) = ENTITYX3
       &amp; tmp5(EVENTX7) = QUALITYX6
       &amp; STATEX13 = OPERATORX17
-      &amp; isA(OPERATORX17,question_0007_1017)
+      &amp; isA(OPERATORX17,r_0007_1017__question)
       &amp; scope(OPERATORX17) = CONJX25
       &amp; isA(CONJX25,r_0008_0009__and)
       &amp; conj1(CONJX25) = EVENTX20
@@ -341,7 +341,7 @@ fof(id_7_A_fce_0102_2001_12__8_A_fce_0102_2001_12,axiom,
       &amp; arg0(EVENTX24) = HEARERX21
       &amp; arg0(EVENTX24) = HEARERX21
       &amp; arg1(EVENTX24) = RIVER_TRIPX22
-      &amp; isA(RIVER_TRIPX2,r_0007_0007__river_trip)
+      &amp; isA(RIVER_TRIPX2,r_0007_0007__river__r_0007_0008__trip)
       &amp; isA(ENTITYX3,r_0007_0012__class)
       &amp; genv(ENTITYX3) = HEARERX4
       &amp; attrib2(ENTITYX3) = ATTRIBX5
@@ -358,7 +358,7 @@ fof(id_7_A_fce_0102_2001_12__8_A_fce_0102_2001_12,axiom,
       &amp; isA(EVENTX8,r_0007_0002__know)
       &amp; arg0(EVENTX8) = r_0007_0001__I
       &amp; arg1(EVENTX8) = STATEX1
-      &amp; isA(OPERATORX10,question_0007_1010)
+      &amp; isA(OPERATORX10,r_0007_1010__question)
       &amp; scope(OPERATORX10) = OPERATORX26
       &amp; isA(OPERATORX26,r_0008_0001__Could)
       &amp; scope(OPERATORX26) = EVENTX27

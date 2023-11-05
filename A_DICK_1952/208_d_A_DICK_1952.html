@@ -168,30 +168,30 @@
 </svg>
 <br>
 <pre>
-arc(question_0265_1006,r_0265_0007__was,scope).
-arc(r_0265_0003__wonder,question_0265_1006,arg1).
 arc(r_0265_0003__wonder,r_0265_0002__I,arg0).
+arc(r_0265_0003__wonder,r_0265_1006__question,arg1).
 arc(r_0265_0007__was,r_0265_0008__called,catenative).
 arc(r_0265_0008__called,r_0265_0004__what,prd).
 arc(r_0265_0008__called,r_0265_0006__city,arg1).
 arc(r_0265_0011__Nasha,r_0265_0002__I,z_0265_1016).
 arc(r_0265_0012__said,r_0265_0011__Nasha,arg0).
-arc(r_0265_0012__said,utterance_0265_1003,arg1).
-arc(utterance_0265_1003,r_0265_0003__wonder,part1).
+arc(r_0265_0012__said,r_0265_1003__utterance,arg1).
+arc(r_0265_1003__utterance,r_0265_0003__wonder,part1).
+arc(r_0265_1006__question,r_0265_0007__was,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_265_A_DICK_1952,axiom,
+fof(id__265_A_DICK_1952,axiom,
     ? [STATEX1,STATEX4,CATENATIVEX9,NASHAX17,EVENTX18,CONJX14,EVENTX13,OPERATORX6,EVENTX12,EVENTX11,ENTITYX7,CITYX8] :
       ( STATEX1 = CONJX14
-      &amp; isA(CONJX14,utterance_0265_1003)
+      &amp; isA(CONJX14,r_0265_1003__utterance)
       &amp; part1(CONJX14) = EVENTX13
       &amp; isA(EVENTX13,r_0265_0003__wonder)
       &amp; arg0(EVENTX13) = r_0265_0002__I
       &amp; arg1(EVENTX13) = STATEX4
       &amp; STATEX4 = OPERATORX6
-      &amp; isA(OPERATORX6,question_0265_1006)
+      &amp; isA(OPERATORX6,r_0265_1006__question)
       &amp; scope(OPERATORX6) = EVENTX12
       &amp; isA(EVENTX12,r_0265_0007__was)
       &amp; catenative(EVENTX12) = CATENATIVEX9

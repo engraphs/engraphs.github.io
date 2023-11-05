@@ -305,30 +305,30 @@ Behind it a third cart came , loaded with telescopic tube sights .
 </svg>
 <br>
 <pre>
-arc(mnr_0615_1021,r_0619_0006__came,scope).
-arc(mnr_0615_1021,r_0619_0008__loaded,restriction).
 arc(r_0615_0003__later,r_0615_0002__moment,modifier1).
 arc(r_0615_0006__cart,r_0615_0005__small,attrib2).
 arc(r_0615_0007__rushed,r_0615_0003__later,tmp1).
 arc(r_0615_0007__rushed,r_0615_0006__cart,arg0).
 arc(r_0615_0007__rushed,r_0615_0010__surface,r_0615_0008__to_dir).
+arc(r_0615_1021__mnr,r_0619_0006__came,scope).
+arc(r_0615_1021__mnr,r_0619_0008__loaded,restriction).
 arc(r_0616_0003__turned,r_0615_0006__cart,arg0).
 arc(r_0616_0003__turned,r_0616_0006__city,r_0616_0004__toward_dir).
 arc(r_0617_0004__appeared,r_0615_0006__cart,r_0617_0005__behind_loc).
-arc(r_0617_0004__appeared,r_0617_0002__second_cart,arg0).
+arc(r_0617_0004__appeared,r_0617_0002__second__r_0617_0003__cart,arg0).
 arc(r_0618_0002__was,r_0618_0003__loaded,catenative).
-arc(r_0618_0003__loaded,r_0617_0002__second_cart,arg1).
-arc(r_0618_0003__loaded,r_0618_0005__wiring_cables,r_0618_0004__with_clr).
-arc(r_0619_0006__came,r_0617_0002__second_cart,r_0619_0001__Behind_loc).
-arc(r_0619_0006__came,r_0619_0004__third_cart,arg0).
-arc(r_0619_0008__loaded,r_0619_0004__third_cart,arg1).
-arc(r_0619_0008__loaded,r_0619_0011__tube_sights,r_0619_0009__with_clr).
-arc(r_0619_0011__tube_sights,r_0619_0010__telescopic,attrib1).
+arc(r_0618_0003__loaded,r_0617_0002__second__r_0617_0003__cart,arg1).
+arc(r_0618_0003__loaded,r_0618_0005__wiring__r_0618_0006__cables,r_0618_0004__with_clr).
+arc(r_0619_0006__came,r_0617_0002__second__r_0617_0003__cart,r_0619_0001__Behind_loc).
+arc(r_0619_0006__came,r_0619_0004__third__r_0619_0005__cart,arg0).
+arc(r_0619_0008__loaded,r_0619_0004__third__r_0619_0005__cart,arg1).
+arc(r_0619_0008__loaded,r_0619_0011__tube__r_0619_0012__sights,r_0619_0009__with_clr).
+arc(r_0619_0011__tube__r_0619_0012__sights,r_0619_0010__telescopic,attrib1).
 
 </pre>
 <br>
 <pre>
-fof(id_615_A_DICK_1952__616_A_DICK_1952__617_A_DICK_1952__618_A_DICK_1952__619_A_DICK_1952,axiom,
+fof(id__615_A_DICK_1952__616_A_DICK_1952__617_A_DICK_1952__618_A_DICK_1952__619_A_DICK_1952,axiom,
     ? [CATENATIVEX14,CART1X7,CART1X11,CART2X13,CART2X19,CONNX22,EVENTX26,EVENTX27,EVENTX18,EVENTX17,EVENTX12,EVENTX9,EVENTX6,QUALITYX1,ENTITYX20,ENTITYX24,ENTITYX16,CART2X10,ENTITYX8,CART1X3,ENTITYX5,ENTITYX2,ATTRIBX25,ATTRIBX4] :
       ( CATENATIVEX14 = EVENTX17
       &amp; isA(EVENTX17,r_0618_0003__loaded)
@@ -342,13 +342,13 @@ fof(id_615_A_DICK_1952__616_A_DICK_1952__617_A_DICK_1952__618_A_DICK_1952__619_A
       &amp; isA(ENTITYX5,r_0615_0010__surface)
       &amp; CART1X7 = CART1X3
       &amp; isA(ENTITYX8,r_0616_0006__city)
-      &amp; isA(CART2X10,r_0617_0002__second_cart)
+      &amp; isA(CART2X10,r_0617_0002__second__r_0617_0003__cart)
       &amp; CART1X11 = CART1X3
       &amp; CART2X13 = CART2X10
-      &amp; isA(ENTITYX16,r_0618_0005__wiring_cables)
+      &amp; isA(ENTITYX16,r_0618_0005__wiring__r_0618_0006__cables)
       &amp; CART2X19 = CART2X10
-      &amp; isA(ENTITYX20,r_0619_0004__third_cart)
-      &amp; isA(ENTITYX24,r_0619_0011__tube_sights)
+      &amp; isA(ENTITYX20,r_0619_0004__third__r_0619_0005__cart)
+      &amp; isA(ENTITYX24,r_0619_0011__tube__r_0619_0012__sights)
       &amp; attrib1(ENTITYX24) = ATTRIBX25
       &amp; isA(ATTRIBX4,r_0615_0005__small)
       &amp; isA(ATTRIBX25,r_0619_0010__telescopic)
@@ -364,7 +364,7 @@ fof(id_615_A_DICK_1952__616_A_DICK_1952__617_A_DICK_1952__618_A_DICK_1952__619_A
       &amp; r_0617_0005__behind_loc(EVENTX12) = CART1X11
       &amp; isA(EVENTX18,r_0618_0002__was)
       &amp; catenative(EVENTX18) = CATENATIVEX14
-      &amp; isA(CONNX22,mnr_0615_1021)
+      &amp; isA(CONNX22,r_0615_1021__mnr)
       &amp; scope(CONNX22) = EVENTX27
       &amp; isA(EVENTX27,r_0619_0006__came)
       &amp; r_0619_0001__Behind_loc(EVENTX27) = CART2X19

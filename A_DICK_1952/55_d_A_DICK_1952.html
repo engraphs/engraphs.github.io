@@ -263,12 +263,12 @@ As he started to his feet the second shell struck .
 </svg>
 <br>
 <pre>
-arc(mnr_0075_1003,r_0075_0003__fell,scope).
-arc(mnr_0075_1003,r_0075_0008__crashing,restriction).
 arc(r_0075_0003__fell,r_0075_0002__Captain,arg0).
 arc(r_0075_0003__fell,r_0075_0006__floor,r_0075_0004__to_clr_dir).
 arc(r_0075_0008__crashing,r_0075_0002__Captain,arg0).
-arc(r_0075_0008__crashing,r_0075_0011__control_table,r_0075_0009__into_clr_dir).
+arc(r_0075_0008__crashing,r_0075_0011__control__r_0075_0012__table,r_0075_0009__into_clr_dir).
+arc(r_0075_1003__mnr,r_0075_0003__fell,scope).
+arc(r_0075_1003__mnr,r_0075_0008__crashing,restriction).
 arc(r_0076_0002__and,r_0076_0001__Papers,conj1).
 arc(r_0076_0002__and,r_0076_0003__instruments,conj2).
 arc(r_0076_0004__rained,r_0075_0002__Captain,r_0076_0006__on_dir).
@@ -279,16 +279,16 @@ arc(r_0077_0001__As_tmp,r_0077_0010__struck,scope).
 arc(r_0077_0003__started,r_0075_0002__Captain,arg0).
 arc(r_0077_0003__started,r_0077_0006__feet,r_0077_0004__to_clr_dir).
 arc(r_0077_0006__feet,r_0075_0002__Captain,genv).
-arc(r_0077_0010__struck,r_0077_0008__second_shell,arg0).
+arc(r_0077_0010__struck,r_0077_0008__second__r_0077_0009__shell,arg0).
 
 </pre>
 <br>
 <pre>
-fof(id_75_A_DICK_1952__76_A_DICK_1952__77_A_DICK_1952,axiom,
+fof(id__75_A_DICK_1952__76_A_DICK_1952__77_A_DICK_1952,axiom,
     ? [CAPTAINX12,CAPTAINX15,CAPTAINX17,CONNX14,EVENTX20,EVENTX18,EVENTX13,CONNX4,EVENTX6,EVENTX7,ENTITYX19,ENTITYX16,ENTITYX8,ENTITYX9,ENTITYX10,CAPTAINX1,ENTITYX2,ENTITYX5,QUALITYX11] :
       ( isA(CAPTAINX1,r_0075_0002__Captain)
       &amp; isA(ENTITYX2,r_0075_0006__floor)
-      &amp; isA(ENTITYX5,r_0075_0011__control_table)
+      &amp; isA(ENTITYX5,r_0075_0011__control__r_0075_0012__table)
       &amp; isA(ENTITYX8,r_0076_0002__and)
       &amp; conj1(ENTITYX8) = ENTITYX9
       &amp; conj2(ENTITYX8) = ENTITYX10
@@ -300,9 +300,9 @@ fof(id_75_A_DICK_1952__76_A_DICK_1952__77_A_DICK_1952,axiom,
       &amp; genv(ENTITYX16) = CAPTAINX17
       &amp; ( CAPTAINX17 = CAPTAINX15
         | CAPTAINX17 = CAPTAINX1 )
-      &amp; isA(ENTITYX19,r_0077_0008__second_shell)
+      &amp; isA(ENTITYX19,r_0077_0008__second__r_0077_0009__shell)
       &amp; isA(QUALITYX11,r_0076_0005__down)
-      &amp; isA(CONNX4,mnr_0075_1003)
+      &amp; isA(CONNX4,r_0075_1003__mnr)
       &amp; scope(CONNX4) = EVENTX7
       &amp; isA(EVENTX7,r_0075_0003__fell)
       &amp; arg0(EVENTX7) = CAPTAINX1

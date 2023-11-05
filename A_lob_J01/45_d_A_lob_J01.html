@@ -295,12 +295,12 @@ Thus for the specific case of niobium in a sodium circuit a corrosion indicator 
 arc(r_0045_0001__Thus,r_0045_0015__could,scope).
 arc(r_0045_0005__case,r_0045_0004__specific,attrib2).
 arc(r_0045_0005__case,r_0045_0007__niobium,r_0045_0006__of).
-arc(r_0045_0007__niobium,r_0045_0010__sodium_circuit,r_0045_0008__in).
+arc(r_0045_0007__niobium,r_0045_0010__sodium__r_0045_0011__circuit,r_0045_0008__in).
 arc(r_0045_0015__could,r_0045_0016__be,scope).
 arc(r_0045_0016__be,r_0045_0005__case,r_0045_0002__for_rst).
-arc(r_0045_0016__be,r_0045_0013__corrosion_indicator,arg0).
-arc(r_0045_0016__be,r_0045_0018__reference_electrode,prd2).
-arc(r_0045_0018__reference_electrode,r_0045_0021__sodium,r_0045_0020__of).
+arc(r_0045_0016__be,r_0045_0013__corrosion__r_0045_0014__indicator,arg0).
+arc(r_0045_0016__be,r_0045_0018__reference__r_0045_0019__electrode,prd2).
+arc(r_0045_0018__reference__r_0045_0019__electrode,r_0045_0021__sodium,r_0045_0020__of).
 arc(r_0045_0022__saturated,r_0045_0021__sodium,arg1).
 arc(r_0045_0022__saturated,r_0045_0026__niobium,r_0045_0025__with_mnr).
 arc(r_0045_0023__and,r_0045_0022__saturated,conj1).
@@ -309,23 +309,23 @@ arc(r_0045_0024__equilibrated,r_0045_0021__sodium,arg1).
 arc(r_0045_0024__equilibrated,r_0045_0026__niobium,r_0045_0025__with_mnr).
 arc(r_0045_0027__separated,r_0045_0026__niobium,arg1).
 arc(r_0045_0027__separated,r_0045_0030__coolant,r_0045_0028__from_dir).
-arc(r_0045_0027__separated,r_0045_0035__electrolyte,arg0_by_lgs).
+arc(r_0045_0027__separated,r_0045_0035__electrolyte,arg0__r_0045_0031__by_lgs).
 arc(r_0045_0035__electrolyte,r_0045_0033__solid,attrib2).
 arc(r_0045_0035__electrolyte,r_0045_0034__anionic,attrib3).
 
 </pre>
 <br>
 <pre>
-fof(id_45_A_lob_J01,axiom,
+fof(id__45_A_lob_J01,axiom,
     ? [OPERATORX1,OPERATORX19,EVENTX20,CONJX18,EVENTX17,EVENTX16,EVENTX15,ENTITYX2,ENTITYX6,ENTITYX7,ENTITYX8,ENTITYX10,ENTITYX11,ENTITYX12,ENTITYX4,ENTITYX5,ATTRIBX13,ATTRIBX14,ATTRIBX3] :
       ( isA(ENTITYX2,r_0045_0005__case)
       &amp; attrib2(ENTITYX2) = ATTRIBX3
       &amp; r_0045_0006__of(ENTITYX2) = ENTITYX4
       &amp; isA(ENTITYX4,r_0045_0007__niobium)
       &amp; r_0045_0008__in(ENTITYX4) = ENTITYX5
-      &amp; isA(ENTITYX5,r_0045_0010__sodium_circuit)
-      &amp; isA(ENTITYX6,r_0045_0013__corrosion_indicator)
-      &amp; isA(ENTITYX7,r_0045_0018__reference_electrode)
+      &amp; isA(ENTITYX5,r_0045_0010__sodium__r_0045_0011__circuit)
+      &amp; isA(ENTITYX6,r_0045_0013__corrosion__r_0045_0014__indicator)
+      &amp; isA(ENTITYX7,r_0045_0018__reference__r_0045_0019__electrode)
       &amp; r_0045_0020__of(ENTITYX7) = ENTITYX8
       &amp; isA(CONJX18,r_0045_0023__and)
       &amp; conj1(CONJX18) = EVENTX16
@@ -338,7 +338,7 @@ fof(id_45_A_lob_J01,axiom,
       &amp; r_0045_0025__with_mnr(EVENTX17) = ENTITYX10
       &amp; isA(ENTITYX8,r_0045_0021__sodium)
       &amp; isA(EVENTX15,r_0045_0027__separated)
-      &amp; arg0_by_lgs(EVENTX15) = ENTITYX12
+      &amp; arg0__r_0045_0031__by_lgs(EVENTX15) = ENTITYX12
       &amp; arg1(EVENTX15) = ENTITYX10
       &amp; r_0045_0028__from_dir(EVENTX15) = ENTITYX11
       &amp; isA(ENTITYX10,r_0045_0026__niobium)

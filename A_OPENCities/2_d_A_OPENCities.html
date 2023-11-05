@@ -403,12 +403,12 @@ I know it 's a bit of a stereotype that English food is n't very good , but nowa
 <br>
 <pre>
 arc(r_0004_0002__know,r_0004_0001__I,arg0).
-arc(r_0004_0002__know,r_0004_0005__quantificational__a_bit,arg1).
+arc(r_0004_0002__know,r_0004_0005__quantificational__r_0004_0005__a_bit,arg1).
 arc(r_0004_0004___apos_s,r_0004_0013__n_apos_t,arg0).
 arc(r_0004_0004___apos_s,z_0004_1006,prd2).
-arc(r_0004_0005__quantificational__a_bit,r_0004_0004___apos_s,scope).
-arc(r_0004_0005__quantificational__a_bit,z_0004_1006,restriction).
-arc(r_0004_0012__is,r_0004_0010__English_food,arg0).
+arc(r_0004_0005__quantificational__r_0004_0005__a_bit,r_0004_0004___apos_s,scope).
+arc(r_0004_0005__quantificational__r_0004_0005__a_bit,z_0004_1006,restriction).
+arc(r_0004_0012__is,r_0004_0010__English__r_0004_0011__food,arg0).
 arc(r_0004_0012__is,r_0004_0015__good,prd2).
 arc(r_0004_0013__n_apos_t,r_0004_0012__is,scope).
 arc(r_0004_0015__good,r_0004_0014__very,quality1).
@@ -419,7 +419,7 @@ arc(r_0004_0021__is,r_0004_0020__UK,arg0).
 arc(r_0004_0021__is,r_0004_0022__one,prd2).
 arc(r_0004_0022__one,r_0004_0026__places,r_0004_0023__of).
 arc(r_0004_0026__places,r_0004_0025__best,attrib2).
-arc(r_0004_0028__eat_out,r_0004_0026__places,loc).
+arc(r_0004_0028__eat__r_0004_0029__out,r_0004_0026__places,loc).
 arc(r_0004_0030__and,r_0004_0021__is,conj1).
 arc(r_0004_0030__and,r_0004_0032__get,conj2).
 arc(r_0004_0032__get,r_0004_0031__you,arg0).
@@ -434,10 +434,10 @@ arc(z_0004_1006,r_0004_0008__stereotype,r_0004_0006__of).
 </pre>
 <br>
 <pre>
-fof(id_4_A_OPENCities,axiom,
+fof(id__4_A_OPENCities,axiom,
     ? [STATEX1,STATEX7,CONJX33,CONJX32,EVENTX31,EVENTX28,EVENTX22,EVENTX21,EVENTX14,QUANTX4,EVENTX13,OPERATORX11,EVENTX12,ENTITYX23,ENTITYX25,ENTITYX29,ENTITYX30,ENTITYX16,ENTITYX17,ENTITYX3,ENTITYX8,ENTITYX5,ATTRIBX24,ATTRIBX18,ATTRIBX9,QUALITYX15,QUALITYX10] :
       ( STATEX1 = QUANTX4
-      &amp; isA(QUANTX4,r_0004_0005__quantificational__a_bit)
+      &amp; isA(QUANTX4,r_0004_0005__quantificational__r_0004_0005__a_bit)
       &amp; restriction(QUANTX4) = ENTITYX3
       &amp; isA(ENTITYX3,z_0004_1006)
       &amp; r_0004_0006__of(ENTITYX3) = ENTITYX5
@@ -453,10 +453,10 @@ fof(id_4_A_OPENCities,axiom,
       &amp; arg0(EVENTX12) = ENTITYX8
       &amp; prd2(EVENTX12) = ATTRIBX9
       &amp; isA(ENTITYX5,r_0004_0008__stereotype)
-      &amp; isA(ENTITYX8,r_0004_0010__English_food)
+      &amp; isA(ENTITYX8,r_0004_0010__English__r_0004_0011__food)
       &amp; isA(ENTITYX16,r_0004_0022__one)
       &amp; r_0004_0023__of(ENTITYX16) = ENTITYX17
-      &amp; isA(EVENTX21,r_0004_0028__eat_out)
+      &amp; isA(EVENTX21,r_0004_0028__eat__r_0004_0029__out)
       &amp; loc(EVENTX21) = ENTITYX17
       &amp; isA(ENTITYX17,r_0004_0026__places)
       &amp; attrib2(ENTITYX17) = ATTRIBX18

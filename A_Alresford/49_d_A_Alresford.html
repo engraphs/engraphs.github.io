@@ -241,11 +241,11 @@ I held drama classes for local children at the Community Centre , where we inter
 <br>
 <pre>
 arc(r_0055_0002__held,r_0055_0001__I,arg0).
-arc(r_0055_0002__held,r_0055_0003__drama_classes,arg1).
+arc(r_0055_0002__held,r_0055_0003__drama__r_0055_0004__classes,arg1).
 arc(r_0055_0002__held,r_0055_0007__children,r_0055_0005__for_clr_bnf).
-arc(r_0055_0002__held,r_0055_0010__Community_Centre,r_0055_0008__at_loc).
+arc(r_0055_0002__held,r_0055_0010__Community__r_0055_0011__Centre,r_0055_0008__at_loc).
 arc(r_0055_0007__children,r_0055_0006__local,attrib1).
-arc(r_0055_0015__interpreted,r_0055_0010__Community_Centre,loc1).
+arc(r_0055_0015__interpreted,r_0055_0010__Community__r_0055_0011__Centre,loc1).
 arc(r_0055_0015__interpreted,r_0055_0014__we,arg0).
 arc(r_0055_0015__interpreted,r_0055_0016__text,arg1).
 arc(r_0055_0015__interpreted,r_0055_0019__and,r_0055_0017__with_mnr).
@@ -253,16 +253,16 @@ arc(r_0055_0019__and,r_0055_0018__voice,conj1).
 arc(r_0055_0019__and,r_0055_0020__movements,conj2).
 arc(r_0055_0021__and,r_0055_0015__interpreted,conj1).
 arc(r_0055_0021__and,r_0055_0022__worked,conj2).
-arc(r_0055_0022__worked,r_0055_0010__Community_Centre,loc1).
+arc(r_0055_0022__worked,r_0055_0010__Community__r_0055_0011__Centre,loc1).
 arc(r_0055_0022__worked,r_0055_0014__we,arg0).
 arc(r_0055_0022__worked,r_0055_0024__improvisations,r_0055_0023__on_clr).
 
 </pre>
 <br>
 <pre>
-fof(id_55_A_Alresford,axiom,
+fof(id__55_A_Alresford,axiom,
     ? [EVENTX12,CONJX11,EVENTX10,EVENTX8,ENTITYX1,ENTITYX2,ENTITYX9,ENTITYX4,ENTITYX5,ENTITYX6,ENTITYX7,ATTRIBX3] :
-      ( isA(ENTITYX1,r_0055_0003__drama_classes)
+      ( isA(ENTITYX1,r_0055_0003__drama__r_0055_0004__classes)
       &amp; isA(ENTITYX2,r_0055_0007__children)
       &amp; attrib1(ENTITYX2) = ATTRIBX3
       &amp; isA(ENTITYX4,r_0055_0016__text)
@@ -275,22 +275,22 @@ fof(id_55_A_Alresford,axiom,
       &amp; isA(CONJX11,r_0055_0021__and)
       &amp; conj1(CONJX11) = EVENTX8
       &amp; isA(EVENTX8,r_0055_0015__interpreted)
-      &amp; loc1(EVENTX8) = r_0055_0010__Community_Centre
+      &amp; loc1(EVENTX8) = r_0055_0010__Community__r_0055_0011__Centre
       &amp; arg0(EVENTX8) = r_0055_0014__we
       &amp; arg1(EVENTX8) = ENTITYX4
       &amp; r_0055_0017__with_mnr(EVENTX8) = ENTITYX5
       &amp; conj2(CONJX11) = EVENTX10
       &amp; isA(EVENTX10,r_0055_0022__worked)
-      &amp; loc1(EVENTX10) = r_0055_0010__Community_Centre
+      &amp; loc1(EVENTX10) = r_0055_0010__Community__r_0055_0011__Centre
       &amp; arg0(EVENTX10) = r_0055_0014__we
       &amp; r_0055_0023__on_clr(EVENTX10) = ENTITYX9
-      &amp; isA(r_0055_0010__Community_Centre,r_0055_0010__Community_Centre)
+      &amp; isA(r_0055_0010__Community__r_0055_0011__Centre,r_0055_0010__Community_r_0055_0011__Centre)
       &amp; isA(ATTRIBX3,r_0055_0006__local)
       &amp; isA(EVENTX12,r_0055_0002__held)
       &amp; arg0(EVENTX12) = r_0055_0001__I
       &amp; arg1(EVENTX12) = ENTITYX1
       &amp; r_0055_0005__for_clr_bnf(EVENTX12) = ENTITYX2
-      &amp; r_0055_0008__at_loc(EVENTX12) = r_0055_0010__Community_Centre ) ).
+      &amp; r_0055_0008__at_loc(EVENTX12) = r_0055_0010__Community__r_0055_0011__Centre ) ).
 
 
 </pre>

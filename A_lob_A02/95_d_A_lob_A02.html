@@ -417,12 +417,12 @@ A government report has recognised their rights and recommended a form of federa
 <br>
 <pre>
 arc(r_0101_0004__has,r_0101_0005__recognised,catenative).
-arc(r_0101_0005__recognised,r_0101_0002__government_report,arg0).
+arc(r_0101_0005__recognised,r_0101_0002__government__r_0101_0003__report,arg0).
 arc(r_0101_0005__recognised,r_0101_0007__rights,arg1).
 arc(r_0101_0007__rights,r_0101_0006__their,genv).
 arc(r_0101_0008__and,r_0101_0004__has,conj1).
 arc(r_0101_0008__and,r_0101_0009__recommended,conj2).
-arc(r_0101_0009__recommended,r_0101_0002__government_report,arg0).
+arc(r_0101_0009__recommended,r_0101_0002__government__r_0101_0003__report,arg0).
 arc(r_0101_0009__recommended,r_0101_0011__form,arg1).
 arc(r_0101_0011__form,r_0101_0014__association,r_0101_0012__of).
 arc(r_0101_0014__association,r_0101_0013__federal,attrib1).
@@ -430,27 +430,27 @@ arc(r_0101_0016__but,r_0101_0008__and,conj1).
 arc(r_0101_0016__but,r_0101_0031__although_cnt,conj2).
 arc(r_0101_0020__are,r_0101_0021__not,catenative).
 arc(r_0101_0021__not,r_0101_0024__and,scope).
-arc(r_0101_0022__committing,r_0101_0018__four_kings,arg0).
+arc(r_0101_0022__committing,r_0101_0018__four__r_0101_0019__kings,arg0).
 arc(r_0101_0022__committing,r_0101_0023__themselves,arg1).
 arc(r_0101_0024__and,r_0101_0022__committing,conj1).
 arc(r_0101_0024__and,r_0101_0025__not,conj2).
 arc(r_0101_0025__not,r_0101_0026__attending,scope).
-arc(r_0101_0026__attending,r_0101_0018__four_kings,arg0).
+arc(r_0101_0026__attending,r_0101_0018__four__r_0101_0019__kings,arg0).
 arc(r_0101_0026__attending,r_0101_0029__conference,arg1).
 arc(r_0101_0029__conference,r_0101_0028__actual,attrib2).
 arc(r_0101_0031__although_cnt,r_0101_0020__are,scope).
 arc(r_0101_0031__although_cnt,r_0101_0034__have,restriction).
 arc(r_0101_0034__have,r_0101_0035__agreed,catenative).
-arc(r_0101_0035__agreed,r_0101_0032__Buganda_politicians,arg0).
+arc(r_0101_0035__agreed,r_0101_0032__Buganda__r_0101_0033__politicians,arg0).
 arc(r_0101_0035__agreed,r_0101_0038__so,arg1).
-arc(r_0101_0035__agreed,r_0101_0041__last_minute,r_0101_0039__at_tmp).
-arc(r_0101_0037__do,r_0101_0032__Buganda_politicians,arg0).
+arc(r_0101_0035__agreed,r_0101_0041__last__r_0101_0042__minute,r_0101_0039__at_tmp).
+arc(r_0101_0037__do,r_0101_0032__Buganda__r_0101_0033__politicians,arg0).
 arc(r_0101_0038__so,r_0101_0037__do,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_101_A_lob_A02,axiom,
+fof(id__101_A_lob_A02,axiom,
     ? [CATENATIVEX2,CATENATIVEX21,CATENATIVEX14,STATEX15,CONJX30,CONNX12,EVENTX20,EVENTX19,OPERATORX16,EVENTX17,EVENTX29,OPERATORX22,CONJX28,OPERATORX26,EVENTX27,EVENTX23,CONJX10,EVENTX9,EVENTX5,EVENTX4,ENTITYX11,ENTITYX13,ENTITYX18,ENTITYX24,ENTITYX1,ENTITYX6,ENTITYX7,ENTITYX3,ATTRIBX25,ATTRIBX8] :
       ( CATENATIVEX2 = EVENTX4
       &amp; isA(EVENTX4,r_0101_0005__recognised)
@@ -480,18 +480,18 @@ fof(id_101_A_lob_A02,axiom,
       &amp; scope(OPERATORX16) = EVENTX17
       &amp; isA(EVENTX17,r_0101_0037__do)
       &amp; arg0(EVENTX17) = ENTITYX13
-      &amp; isA(ENTITYX1,r_0101_0002__government_report)
+      &amp; isA(ENTITYX1,r_0101_0002__government__r_0101_0003__report)
       &amp; isA(ENTITYX3,r_0101_0007__rights)
       &amp; genv(ENTITYX3) = r_0101_0006__their
       &amp; isA(ENTITYX6,r_0101_0011__form)
       &amp; r_0101_0012__of(ENTITYX6) = ENTITYX7
       &amp; isA(ENTITYX7,r_0101_0014__association)
       &amp; attrib1(ENTITYX7) = ATTRIBX8
-      &amp; isA(ENTITYX11,r_0101_0018__four_kings)
+      &amp; isA(ENTITYX11,r_0101_0018__four__r_0101_0019__kings)
       &amp; isA(ENTITYX24,r_0101_0029__conference)
       &amp; attrib2(ENTITYX24) = ATTRIBX25
-      &amp; isA(ENTITYX13,r_0101_0032__Buganda_politicians)
-      &amp; isA(ENTITYX18,r_0101_0041__last_minute)
+      &amp; isA(ENTITYX13,r_0101_0032__Buganda__r_0101_0033__politicians)
+      &amp; isA(ENTITYX18,r_0101_0041__last__r_0101_0042__minute)
       &amp; isA(ATTRIBX8,r_0101_0013__federal)
       &amp; isA(ATTRIBX25,r_0101_0028__actual)
       &amp; isA(CONJX30,r_0101_0016__but)

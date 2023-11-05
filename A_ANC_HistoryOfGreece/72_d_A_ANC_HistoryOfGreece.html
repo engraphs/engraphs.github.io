@@ -214,8 +214,6 @@ Thousands of people arrived with little more than the clothes they wore , puttin
 </svg>
 <br>
 <pre>
-arc(abs_0119_1008,r_0119_0004__arrived,scope).
-arc(abs_0119_1008,r_0119_0014__putting,restriction).
 arc(r_0119_0001__Thousands,r_0119_0003__people,r_0119_0002__of).
 arc(r_0119_0004__arrived,r_0119_0001__Thousands,arg0).
 arc(r_0119_0004__arrived,r_0119_0007__more,r_0119_0005__with_mnr).
@@ -228,11 +226,13 @@ arc(r_0119_0014__putting,r_0119_0016__strain,arg1).
 arc(r_0119_0014__putting,r_0119_0019__resources,r_0119_0017__on_clr_loc).
 arc(r_0119_0016__strain,r_0119_0015__great,attrib1).
 arc(r_0119_0019__resources,r_0119_0022__islands,r_0119_0020__of).
+arc(r_0119_1008__abs,r_0119_0004__arrived,scope).
+arc(r_0119_1008__abs,r_0119_0014__putting,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_119_A_ANC_HistoryOfGreece,axiom,
+fof(id__119_A_ANC_HistoryOfGreece,axiom,
     ? [PERSONSX6,CONNX9,EVENTX14,EVENTX15,EVENTX7,PERSONSX1,ENTITYX10,ENTITYX12,ENTITYX13,ENTITYX5,ENTITYX2,ATTRIBX3,ATTRIBX11,QUALITYX4] :
       ( isA(PERSONSX1,r_0119_0001__Thousands)
       &amp; r_0119_0002__of(PERSONSX1) = ENTITYX2
@@ -252,7 +252,7 @@ fof(id_119_A_ANC_HistoryOfGreece,axiom,
       &amp; r_0119_0008__than(ATTRIBX3) = ENTITYX5
       &amp; isA(ATTRIBX11,r_0119_0015__great)
       &amp; isA(QUALITYX4,r_0119_0006__little)
-      &amp; isA(CONNX9,abs_0119_1008)
+      &amp; isA(CONNX9,r_0119_1008__abs)
       &amp; scope(CONNX9) = EVENTX15
       &amp; isA(EVENTX15,r_0119_0004__arrived)
       &amp; arg0(EVENTX15) = PERSONSX1

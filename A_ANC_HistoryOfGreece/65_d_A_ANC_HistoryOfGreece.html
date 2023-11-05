@@ -272,8 +272,6 @@ A new sense of identity enveloped Greek peoples throughout the Aegean , thus com
 </svg>
 <br>
 <pre>
-arc(cnt_0108_1006,r_0108_0006__enveloped,scope).
-arc(cnt_0108_1006,r_0108_0013__thus,restriction).
 arc(r_0108_0003__sense,r_0108_0002__new,attrib2).
 arc(r_0108_0003__sense,r_0108_0005__identity,r_0108_0004__of).
 arc(r_0108_0006__enveloped,r_0108_0003__sense,arg0).
@@ -290,11 +288,13 @@ arc(r_0108_0020__and,r_0108_0021__unify,conj2).
 arc(r_0108_0021__unify,r_0108_0025__populations,arg1).
 arc(r_0108_0025__populations,r_0108_0023__disparate,attrib2).
 arc(r_0108_0025__populations,r_0108_0024__Orthodox,attrib3).
+arc(r_0108_1006__cnt,r_0108_0006__enveloped,scope).
+arc(r_0108_1006__cnt,r_0108_0013__thus,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_108_A_ANC_HistoryOfGreece,axiom,
+fof(id__108_A_ANC_HistoryOfGreece,axiom,
     ? [STATEX10,CONNX7,OPERATORX8,EVENTX19,CONJX18,EVENTX17,EVENTX13,EVENTX20,ENTITYX1,ENTITYX4,ENTITYX9,ENTITYX14,ENTITYX3,ATTRIBX15,ATTRIBX16,ATTRIBX5,ATTRIBX2] :
       ( STATEX10 = CONJX18
       &amp; isA(CONJX18,r_0108_0020__and)
@@ -321,7 +321,7 @@ fof(id_108_A_ANC_HistoryOfGreece,axiom,
       &amp; isA(ATTRIBX15,r_0108_0023__disparate)
       &amp; isA(ATTRIBX16,r_0108_0024__Orthodox)
       &amp; isA(r_0108_0011__Aegean,r_0108_0011__Aegean)
-      &amp; isA(CONNX7,cnt_0108_1006)
+      &amp; isA(CONNX7,r_0108_1006__cnt)
       &amp; scope(CONNX7) = EVENTX20
       &amp; isA(EVENTX20,r_0108_0006__enveloped)
       &amp; arg0(EVENTX20) = ENTITYX1

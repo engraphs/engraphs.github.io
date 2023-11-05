@@ -272,35 +272,35 @@
 </svg>
 <br>
 <pre>
-arc(question_0108_1005,r_0108_0002__Was,scope).
 arc(r_0108_0002__Was,r_0108_0004__studying,catenative).
 arc(r_0108_0004__studying,r_0108_0006__interests,arg1).
 arc(r_0108_0004__studying,r_0108_0008__bring,arg0).
 arc(r_0108_0006__interests,r_0108_0005__my,genv).
 arc(r_0108_0008__bring,r_0108_0006__interests,arg0).
-arc(r_0108_0008__bring,r_0108_0010__girl_friend,arg1).
+arc(r_0108_0008__bring,r_0108_0010__girl__r_0108_0011__friend,arg1).
 arc(r_0108_0008__bring,r_0108_0014__party,r_0108_0012__to_loc).
-arc(r_0108_0010__girl_friend,r_0108_0009__your,genv).
+arc(r_0108_0010__girl__r_0108_0011__friend,r_0108_0009__your,genv).
 arc(r_0108_0014__party,r_0108_0005__my,genv).
 arc(r_0108_0014__party,r_0108_0017__labourers,r_0108_0015__for).
 arc(r_0108_0021__demanded,r_0108_0005__my,arg0).
-arc(r_0108_0021__demanded,utterance_0108_1003,arg1).
-arc(r_0109_0003__have,r_0108_0010__girl_friend,arg1).
+arc(r_0108_0021__demanded,r_0108_1003__utterance,arg1).
+arc(r_0108_1003__utterance,r_0108_1005__question,part1).
+arc(r_0108_1005__question,r_0108_0002__Was,scope).
+arc(r_0109_0003__have,r_0108_0010__girl__r_0108_0011__friend,arg1).
 arc(r_0109_0003__have,r_0109_0005__act,prd).
 arc(r_0109_0005__act,r_0109_0007__hostess,r_0109_0006__as_prd2).
 arc(r_0109_0007__hostess,r_0109_0010__absence,r_0109_0008__in).
 arc(r_0109_0010__absence,r_0108_0005__my,genv).
-arc(utterance_0108_1003,question_0108_1005,part1).
 
 </pre>
 <br>
 <pre>
-fof(id_108_A_lob_N02__109_A_lob_N02,axiom,
+fof(id__108_A_lob_N02__109_A_lob_N02,axiom,
     ? [STATEX1,CATENATIVEX7,STATEX9,STATEX23,BERYLX12,BERYLX18,BLANCHEX22,BERYLX28,EVENTX30,EVENTX29,EVENTX19,CONJX17,OPERATORX5,EVENTX16,EVENTX15,EVENTX14,ENTITYX26,ENTITYX27,ENTITYX8,BLANCHEX10,ENTITYX11,ENTITYX13] :
       ( STATEX1 = CONJX17
-      &amp; isA(CONJX17,utterance_0108_1003)
+      &amp; isA(CONJX17,r_0108_1003__utterance)
       &amp; part1(CONJX17) = OPERATORX5
-      &amp; isA(OPERATORX5,question_0108_1005)
+      &amp; isA(OPERATORX5,r_0108_1005__question)
       &amp; scope(OPERATORX5) = EVENTX16
       &amp; isA(EVENTX16,r_0108_0002__Was)
       &amp; catenative(EVENTX16) = CATENATIVEX7
@@ -318,7 +318,7 @@ fof(id_108_A_lob_N02__109_A_lob_N02,axiom,
       &amp; r_0109_0006__as_prd2(EVENTX29) = ENTITYX26
       &amp; isA(ENTITYX8,r_0108_0006__interests)
       &amp; genv(ENTITYX8) = r_0108_0005__my
-      &amp; isA(BLANCHEX10,r_0108_0010__girl_friend)
+      &amp; isA(BLANCHEX10,r_0108_0010__girl__r_0108_0011__friend)
       &amp; genv(BLANCHEX10) = r_0108_0009__your
       &amp; isA(ENTITYX11,r_0108_0014__party)
       &amp; genv(ENTITYX11) = BERYLX12

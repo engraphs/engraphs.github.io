@@ -207,9 +207,9 @@ Hirosaki City not only has a rich historical and cultural background but is also
 </svg>
 <br>
 <pre>
-arc(r_0004_0003__not_only_but,r_0004_0005__has,conj1).
-arc(r_0004_0003__not_only_but,r_0004_0013__is,conj2).
-arc(r_0004_0005__has,r_0004_0001__Hirosaki_City,arg0).
+arc(r_0004_0003__not__r_0004_0004__only_r_0004_0012__but,r_0004_0005__has,conj1).
+arc(r_0004_0003__not__r_0004_0004__only_r_0004_0012__but,r_0004_0013__is,conj2).
+arc(r_0004_0005__has,r_0004_0001__Hirosaki__r_0004_0002__City,arg0).
 arc(r_0004_0005__has,r_0004_0011__background,arg1).
 arc(r_0004_0009__and,r_0004_0008__historical,conj1).
 arc(r_0004_0009__and,r_0004_0010__cultural,conj2).
@@ -217,20 +217,20 @@ arc(r_0004_0011__background,r_0004_0007__rich,attrib2).
 arc(r_0004_0011__background,r_0004_0009__and,attrib3).
 arc(r_0004_0013__is,r_0004_0014__also,catenative).
 arc(r_0004_0014__also,r_0004_0015__blessed,scope).
-arc(r_0004_0015__blessed,r_0004_0001__Hirosaki_City,arg1).
+arc(r_0004_0015__blessed,r_0004_0001__Hirosaki__r_0004_0002__City,arg1).
 arc(r_0004_0015__blessed,r_0004_0018__nature,r_0004_0016__with_rst).
 arc(r_0004_0018__nature,r_0004_0017__beautiful,attrib1).
 
 </pre>
 <br>
 <pre>
-fof(id_4_A_Hirodai_mission,axiom,
+fof(id__4_A_Hirodai_mission,axiom,
     ? [CATENATIVEX7,CONJX14,EVENTX13,OPERATORX9,EVENTX12,EVENTX6,ENTITYX10,ENTITYX1,ATTRIBX11,ATTRIBX2,ATTRIBX3,ATTRIBX4,ATTRIBX5] :
       ( CATENATIVEX7 = OPERATORX9
       &amp; isA(OPERATORX9,r_0004_0014__also)
       &amp; scope(OPERATORX9) = EVENTX12
       &amp; isA(EVENTX12,r_0004_0015__blessed)
-      &amp; arg1(EVENTX12) = r_0004_0001__Hirosaki_City
+      &amp; arg1(EVENTX12) = r_0004_0001__Hirosaki__r_0004_0002__City
       &amp; r_0004_0016__with_rst(EVENTX12) = ENTITYX10
       &amp; isA(ENTITYX1,r_0004_0011__background)
       &amp; attrib2(ENTITYX1) = ATTRIBX2
@@ -244,10 +244,10 @@ fof(id_4_A_Hirodai_mission,axiom,
       &amp; isA(ATTRIBX4,r_0004_0008__historical)
       &amp; isA(ATTRIBX5,r_0004_0010__cultural)
       &amp; isA(ATTRIBX11,r_0004_0017__beautiful)
-      &amp; isA(CONJX14,r_0004_0003__not_only_but)
+      &amp; isA(CONJX14,r_0004_0003__not__r_0004_0004__only_r_0004_0012__but)
       &amp; conj1(CONJX14) = EVENTX6
       &amp; isA(EVENTX6,r_0004_0005__has)
-      &amp; arg0(EVENTX6) = r_0004_0001__Hirosaki_City
+      &amp; arg0(EVENTX6) = r_0004_0001__Hirosaki__r_0004_0002__City
       &amp; arg1(EVENTX6) = ENTITYX1
       &amp; conj2(CONJX14) = EVENTX13
       &amp; isA(EVENTX13,r_0004_0013__is)

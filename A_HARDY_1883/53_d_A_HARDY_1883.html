@@ -175,32 +175,32 @@ He turned aside , and , finding it empty , stood under the pent-roof for shelter
 </svg>
 <br>
 <pre>
-arc(cnt_0061_1002,r_0061_0007__finding,restriction).
-arc(cnt_0061_1002,r_0061_0011__stood,scope).
-arc(r_0061_0002__turned_aside,r_0061_0001__He,arg0).
-arc(r_0061_0005__and,cnt_0061_1002,conj2).
-arc(r_0061_0005__and,r_0061_0002__turned_aside,conj1).
+arc(r_0061_0002__turned__r_0061_0003__aside,r_0061_0001__He,arg0).
+arc(r_0061_0005__and,r_0061_0002__turned__r_0061_0003__aside,conj1).
+arc(r_0061_0005__and,r_0061_1002__cnt,conj2).
 arc(r_0061_0007__finding,r_0061_0001__He,arg0).
 arc(r_0061_0007__finding,r_0061_0008__it,arg1).
 arc(r_0061_0007__finding,r_0061_0009__empty,prd).
 arc(r_0061_0011__stood,r_0061_0001__He,arg0).
 arc(r_0061_0011__stood,r_0061_0014__pent_roof,r_0061_0012__under_loc).
 arc(r_0061_0011__stood,r_0061_0016__shelter,r_0061_0015__for_cnt).
+arc(r_0061_1002__cnt,r_0061_0007__finding,restriction).
+arc(r_0061_1002__cnt,r_0061_0011__stood,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_61_A_HARDY_1883,axiom,
+fof(id__61_A_HARDY_1883,axiom,
     ? [CONJX9,CONNX3,EVENTX8,EVENTX5,EVENTX1,ENTITYX6,ENTITYX7,ATTRIBX4] :
       ( isA(ENTITYX6,r_0061_0014__pent_roof)
       &amp; isA(ENTITYX7,r_0061_0016__shelter)
       &amp; isA(ATTRIBX4,r_0061_0009__empty)
       &amp; isA(CONJX9,r_0061_0005__and)
       &amp; conj1(CONJX9) = EVENTX1
-      &amp; isA(EVENTX1,r_0061_0002__turned_aside)
+      &amp; isA(EVENTX1,r_0061_0002__turned__r_0061_0003__aside)
       &amp; arg0(EVENTX1) = r_0061_0001__He
       &amp; conj2(CONJX9) = CONNX3
-      &amp; isA(CONNX3,cnt_0061_1002)
+      &amp; isA(CONNX3,r_0061_1002__cnt)
       &amp; restriction(CONNX3) = EVENTX5
       &amp; isA(EVENTX5,r_0061_0007__finding)
       &amp; arg0(EVENTX5) = r_0061_0001__He

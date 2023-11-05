@@ -260,35 +260,35 @@ It is about a hundred yards from the southern end ; so that if all goes well we 
 <br>
 <pre>
 arc(r_0089_0002__is,r_0089_0001__It,arg0).
-arc(r_0089_0002__is,r_0089_0005__hundred_yards,prd2).
-arc(r_0089_0005__hundred_yards,r_0089_0003__about,quality1).
-arc(r_0089_0005__hundred_yards,r_0089_0010__end,r_0089_0007__from).
+arc(r_0089_0002__is,r_0089_0005__hundred__r_0089_0006__yards,prd2).
+arc(r_0089_0005__hundred__r_0089_0006__yards,r_0089_0003__about,quality1).
+arc(r_0089_0005__hundred__r_0089_0006__yards,r_0089_0010__end,r_0089_0007__from).
 arc(r_0089_0010__end,r_0089_0009__southern,attrib2).
 arc(r_0089_0012__so_that_cnt,r_0089_0002__is,scope).
 arc(r_0089_0012__so_that_cnt,r_0089_0013__if_cnt_cnd,restriction).
-arc(r_0089_0013__if_cnt_cnd,r_0089_0014__quantificational__all,restriction).
+arc(r_0089_0013__if_cnt_cnd,r_0089_0014__quantificational__r_0089_0014__all,restriction).
 arc(r_0089_0013__if_cnt_cnd,r_0089_0018__shall,scope).
-arc(r_0089_0014__quantificational__all,r_0089_0015__goes,scope).
-arc(r_0089_0014__quantificational__all,z_0089_1009,restriction).
+arc(r_0089_0014__quantificational__r_0089_0014__all,r_0089_0015__goes,scope).
+arc(r_0089_0014__quantificational__r_0089_0014__all,z_0089_1009,restriction).
 arc(r_0089_0015__goes,r_0089_0016__well,mnr3).
 arc(r_0089_0015__goes,z_0089_1009,arg0).
 arc(r_0089_0018__shall,r_0089_0019__come,scope).
 arc(r_0089_0019__come,r_0089_0017__we,arg0).
 arc(r_0089_0019__come,r_0089_0022__stop,r_0089_0020__to_clr).
-arc(r_0089_0022__stop,r_0089_0025__her,r_0089_0023__quite_near).
+arc(r_0089_0022__stop,r_0089_0025__her,r_0089_0023__quite__r_0089_0024__near).
 
 </pre>
 <br>
 <pre>
-fof(id_89_A_lob_N01,axiom,
+fof(id__89_A_lob_N01,axiom,
     ? [CONNX5,CONNX6,OPERATORX13,EVENTX14,QUANTX8,EVENTX11,EVENTX15,ENTITYX1,ENTITYX12,ENTITYX7,ENTITYX3,QUALITYX10,QUALITYX2,ATTRIBX4] :
-      ( isA(ENTITYX1,r_0089_0005__hundred_yards)
+      ( isA(ENTITYX1,r_0089_0005__hundred__r_0089_0006__yards)
       &amp; quality1(ENTITYX1) = QUALITYX2
       &amp; r_0089_0007__from(ENTITYX1) = ENTITYX3
       &amp; isA(ENTITYX3,r_0089_0010__end)
       &amp; attrib2(ENTITYX3) = ATTRIBX4
       &amp; isA(ENTITYX12,r_0089_0022__stop)
-      &amp; r_0089_0023__quite_near(ENTITYX12) = r_0089_0025__her
+      &amp; r_0089_0023__quite__r_0089_0024__near(ENTITYX12) = r_0089_0025__her
       &amp; isA(QUALITYX2,r_0089_0003__about)
       &amp; isA(QUALITYX10,r_0089_0016__well)
       &amp; isA(ATTRIBX4,r_0089_0009__southern)
@@ -300,7 +300,7 @@ fof(id_89_A_lob_N01,axiom,
       &amp; restriction(CONNX5) = CONNX6
       &amp; isA(CONNX6,r_0089_0013__if_cnt_cnd)
       &amp; restriction(CONNX6) = QUANTX8
-      &amp; isA(QUANTX8,r_0089_0014__quantificational__all)
+      &amp; isA(QUANTX8,r_0089_0014__quantificational__r_0089_0014__all)
       &amp; restriction(QUANTX8) = ENTITYX7
       &amp; isA(ENTITYX7,z_0089_1009)
       &amp; scope(QUANTX8) = EVENTX11

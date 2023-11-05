@@ -106,21 +106,21 @@ Question put and agreed to .
 <pre>
 arc(r_0188_0002__put,r_0188_0001__Question,arg1).
 arc(r_0188_0003__and,r_0188_0002__put,conj1).
-arc(r_0188_0003__and,r_0188_0004__agreed_to,conj2).
-arc(r_0188_0004__agreed_to,r_0188_0001__Question,arg1).
+arc(r_0188_0003__and,r_0188_0004__agreed__r_0188_0005__to,conj2).
+arc(r_0188_0004__agreed__r_0188_0005__to,r_0188_0001__Question,arg1).
 arc(z_0188_1008,r_0188_0001__Question,z_0188_1002).
 
 </pre>
 <br>
 <pre>
-fof(id_188_A_Hedgehog,axiom,
+fof(id__188_A_Hedgehog,axiom,
     ? [EVENTX9,CONJX7,EVENTX6,EVENTX5,ENTITYX3] :
       ( isA(CONJX7,r_0188_0003__and)
       &amp; conj1(CONJX7) = EVENTX5
       &amp; isA(EVENTX5,r_0188_0002__put)
       &amp; arg1(EVENTX5) = ENTITYX3
       &amp; conj2(CONJX7) = EVENTX6
-      &amp; isA(EVENTX6,r_0188_0004__agreed_to)
+      &amp; isA(EVENTX6,r_0188_0004__agreed__r_0188_0005__to)
       &amp; arg1(EVENTX6) = ENTITYX3
       &amp; isA(ENTITYX3,r_0188_0001__Question)
       &amp; isA(EVENTX9,z_0188_1008)

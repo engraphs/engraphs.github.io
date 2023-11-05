@@ -292,13 +292,10 @@ Write and tell us why you are the person we are looking for and explain how you 
 </svg>
 <br>
 <pre>
-arc(imperative_0027_1002,r_0027_0014__and,scope).
-arc(question_0027_1007,r_0027_0005__why,scope).
-arc(question_0027_1019,r_0027_0018__would,scope).
 arc(r_0027_0002__and,r_0027_0001__Write,conj1).
 arc(r_0027_0002__and,r_0027_0003__tell,conj2).
-arc(r_0027_0003__tell,question_0027_1007,arg1).
 arc(r_0027_0003__tell,r_0027_0004__us,arg2).
+arc(r_0027_0003__tell,r_0027_1007__question,arg1).
 arc(r_0027_0005__why,r_0027_0007__are,scope).
 arc(r_0027_0007__are,r_0027_0006__you,arg0).
 arc(r_0027_0007__are,r_0027_0009__person,prd2).
@@ -307,19 +304,22 @@ arc(r_0027_0012__looking,r_0027_0004__us,arg0).
 arc(r_0027_0012__looking,r_0027_0009__person,r_0027_0013__for_clr).
 arc(r_0027_0014__and,r_0027_0002__and,conj1).
 arc(r_0027_0014__and,r_0027_0015__explain,conj2).
-arc(r_0027_0015__explain,question_0027_1019,arg1).
+arc(r_0027_0015__explain,r_0027_1019__question,arg1).
 arc(r_0027_0018__would,r_0027_0019__benefit,scope).
 arc(r_0027_0019__benefit,r_0027_0006__you,arg0).
 arc(r_0027_0019__benefit,r_0027_0016__how,mnr1).
 arc(r_0027_0019__benefit,r_0027_0022__experience,r_0027_0020__from_clr).
+arc(r_0027_1002__imperative,r_0027_0014__and,scope).
+arc(r_0027_1007__question,r_0027_0005__why,scope).
+arc(r_0027_1019__question,r_0027_0018__would,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_27_A_fce_0102_2001_03,axiom,
+fof(id__27_A_fce_0102_2001_03,axiom,
     ? [STATEX5,CATENATIVEX11,STATEX17,SPEAKER_AND_HEARERX10,HEARERX21,OPERATORX2,CONJX26,EVENTX25,OPERATORX19,OPERATORX23,EVENTX24,CONJX16,EVENTX15,OPERATORX7,OPERATORX8,EVENTX14,EVENTX13,EVENTX12,EVENTX4,ENTITYX22,ENTITYX9,QUALITYX20] :
       ( STATEX5 = OPERATORX7
-      &amp; isA(OPERATORX7,question_0027_1007)
+      &amp; isA(OPERATORX7,r_0027_1007__question)
       &amp; scope(OPERATORX7) = OPERATORX8
       &amp; isA(OPERATORX8,r_0027_0005__why)
       &amp; scope(OPERATORX8) = EVENTX14
@@ -331,7 +331,7 @@ fof(id_27_A_fce_0102_2001_03,axiom,
       &amp; arg0(EVENTX12) = SPEAKER_AND_HEARERX10
       &amp; r_0027_0013__for_clr(EVENTX12) = ENTITYX9
       &amp; STATEX17 = OPERATORX19
-      &amp; isA(OPERATORX19,question_0027_1019)
+      &amp; isA(OPERATORX19,r_0027_1019__question)
       &amp; scope(OPERATORX19) = OPERATORX23
       &amp; isA(OPERATORX23,r_0027_0018__would)
       &amp; scope(OPERATORX23) = EVENTX24
@@ -346,7 +346,7 @@ fof(id_27_A_fce_0102_2001_03,axiom,
       &amp; HEARERX21 = r_0027_0006__you
       &amp; isA(ENTITYX22,r_0027_0022__experience)
       &amp; isA(QUALITYX20,r_0027_0016__how)
-      &amp; isA(OPERATORX2,imperative_0027_1002)
+      &amp; isA(OPERATORX2,r_0027_1002__imperative)
       &amp; scope(OPERATORX2) = CONJX26
       &amp; isA(CONJX26,r_0027_0014__and)
       &amp; conj1(CONJX26) = CONJX16

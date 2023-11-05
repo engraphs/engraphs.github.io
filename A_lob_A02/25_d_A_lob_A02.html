@@ -135,26 +135,26 @@ Last year it was the riots in Istanbul , which enlivened the NATO council meetin
 </svg>
 <br>
 <pre>
-arc(r_0025_0004__was,r_0025_0001__Last_year,tmp).
+arc(r_0025_0004__was,r_0025_0001__Last__r_0025_0002__year,tmp).
 arc(r_0025_0004__was,r_0025_0003__it,arg0).
 arc(r_0025_0004__was,r_0025_0006__riots,prd2).
 arc(r_0025_0006__riots,r_0025_0008__Istanbul,r_0025_0007__in).
 arc(r_0025_0011__enlivened,r_0025_0006__riots,arg0).
-arc(r_0025_0011__enlivened,r_0025_0014__council_meeting,arg1).
-arc(r_0025_0014__council_meeting,r_0025_0013__NATO,attrib2).
+arc(r_0025_0011__enlivened,r_0025_0014__council__r_0025_0015__meeting,arg1).
+arc(r_0025_0014__council__r_0025_0015__meeting,r_0025_0013__NATO,attrib2).
 
 </pre>
 <br>
 <pre>
-fof(id_25_A_lob_A02,axiom,
+fof(id__25_A_lob_A02,axiom,
     ? [EVENTX6,EVENTX5,ENTITYX1,ENTITYX2,ENTITYX3,ATTRIBX4] :
-      ( isA(ENTITYX1,r_0025_0001__Last_year)
+      ( isA(ENTITYX1,r_0025_0001__Last__r_0025_0002__year)
       &amp; isA(EVENTX5,r_0025_0011__enlivened)
       &amp; arg0(EVENTX5) = ENTITYX2
       &amp; arg1(EVENTX5) = ENTITYX3
       &amp; isA(ENTITYX2,r_0025_0006__riots)
       &amp; r_0025_0007__in(ENTITYX2) = r_0025_0008__Istanbul
-      &amp; isA(ENTITYX3,r_0025_0014__council_meeting)
+      &amp; isA(ENTITYX3,r_0025_0014__council__r_0025_0015__meeting)
       &amp; attrib2(ENTITYX3) = ATTRIBX4
       &amp; isA(ATTRIBX4,r_0025_0013__NATO)
       &amp; isA(EVENTX6,r_0025_0004__was)

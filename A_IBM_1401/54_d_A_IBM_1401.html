@@ -138,22 +138,22 @@ Service that has been proven by years of data processing experience .
 arc(r_0075_0003__has,r_0075_0004__been,catenative).
 arc(r_0075_0004__been,r_0075_0005__proven,catenative).
 arc(r_0075_0005__proven,r_0075_0001__Service,arg1).
-arc(r_0075_0005__proven,r_0075_0007__years,arg0_by_lgs).
+arc(r_0075_0005__proven,r_0075_0007__years,arg0__r_0075_0006__by_lgs).
 arc(r_0075_0007__years,r_0075_0011__experience,r_0075_0008__of).
-arc(r_0075_0011__experience,r_0075_0009__data_processing,nlyr1).
+arc(r_0075_0011__experience,r_0075_0009__data__r_0075_0010__processing,nlyr1).
 arc(z_0075_1012,r_0075_0001__Service,z_0075_1002).
 
 </pre>
 <br>
 <pre>
-fof(id_75_A_IBM_1401,axiom,
+fof(id__75_A_IBM_1401,axiom,
     ? [CATENATIVEX4,CATENATIVEX5,EVENTX13,EVENTX11,EVENTX10,EVENTX9,ENTITYX3,ENTITYX6,ENTITYX7,ENTITYX8] :
       ( CATENATIVEX4 = EVENTX10
       &amp; isA(EVENTX10,r_0075_0004__been)
       &amp; catenative(EVENTX10) = CATENATIVEX5
       &amp; CATENATIVEX5 = EVENTX9
       &amp; isA(EVENTX9,r_0075_0005__proven)
-      &amp; arg0_by_lgs(EVENTX9) = ENTITYX6
+      &amp; arg0__r_0075_0006__by_lgs(EVENTX9) = ENTITYX6
       &amp; arg1(EVENTX9) = ENTITYX3
       &amp; isA(EVENTX11,r_0075_0003__has)
       &amp; catenative(EVENTX11) = CATENATIVEX4
@@ -162,7 +162,7 @@ fof(id_75_A_IBM_1401,axiom,
       &amp; r_0075_0008__of(ENTITYX6) = ENTITYX7
       &amp; isA(ENTITYX7,r_0075_0011__experience)
       &amp; nlyr1(ENTITYX7) = ENTITYX8
-      &amp; isA(ENTITYX8,r_0075_0009__data_processing)
+      &amp; isA(ENTITYX8,r_0075_0009__data__r_0075_0010__processing)
       &amp; isA(EVENTX13,z_0075_1012)
       &amp; z_0075_1002(EVENTX13) = ENTITYX3 ) ).
 

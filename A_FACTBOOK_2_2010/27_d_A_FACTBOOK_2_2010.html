@@ -152,15 +152,15 @@ arc(r_0106_0002__law,r_0106_0001__Administrative,attrib1).
 arc(r_0106_0003__is,r_0106_0002__law,arg0).
 arc(r_0106_0003__is,r_0106_0005__authority,prd2).
 arc(r_0106_0006__delegated,r_0106_0005__authority,arg1).
-arc(r_0106_0006__delegated,r_0106_0011__executive_agencies,r_0106_0007__to_clr).
+arc(r_0106_0006__delegated,r_0106_0011__executive__r_0106_0012__agencies,r_0106_0007__to_clr).
 arc(r_0106_0009__and,r_0106_0008__federal,conj1).
 arc(r_0106_0009__and,r_0106_0010__state,conj2).
-arc(r_0106_0011__executive_agencies,r_0106_0009__and,attrib1).
+arc(r_0106_0011__executive__r_0106_0012__agencies,r_0106_0009__and,attrib1).
 
 </pre>
 <br>
 <pre>
-fof(id_106_A_FACTBOOK_2_2010,axiom,
+fof(id__106_A_FACTBOOK_2_2010,axiom,
     ? [EVENTX10,EVENTX9,ADMINISTRATIVE_LAWX1,ENTITYX3,ENTITYX5,ATTRIBX6,ATTRIBX7,ATTRIBX8,ATTRIBX2] :
       ( isA(ADMINISTRATIVE_LAWX1,r_0106_0002__law)
       &amp; attrib1(ADMINISTRATIVE_LAWX1) = ATTRIBX2
@@ -168,7 +168,7 @@ fof(id_106_A_FACTBOOK_2_2010,axiom,
       &amp; arg1(EVENTX9) = ENTITYX3
       &amp; r_0106_0007__to_clr(EVENTX9) = ENTITYX5
       &amp; isA(ENTITYX3,r_0106_0005__authority)
-      &amp; isA(ENTITYX5,r_0106_0011__executive_agencies)
+      &amp; isA(ENTITYX5,r_0106_0011__executive__r_0106_0012__agencies)
       &amp; attrib1(ENTITYX5) = ATTRIBX6
       &amp; isA(ATTRIBX2,r_0106_0001__Administrative)
       &amp; isA(ATTRIBX6,r_0106_0009__and)

@@ -169,10 +169,10 @@ So the Swallow plucked out the Prince 's eye , and flew away to the student 's g
 <br>
 <pre>
 arc(r_0151_0001__So,r_0151_0011__and,scope).
-arc(r_0151_0004__plucked_out,r_0151_0003__Swallow,arg0).
-arc(r_0151_0004__plucked_out,r_0151_0009__eye,arg1).
+arc(r_0151_0004__plucked__r_0151_0005__out,r_0151_0003__Swallow,arg0).
+arc(r_0151_0004__plucked__r_0151_0005__out,r_0151_0009__eye,arg1).
 arc(r_0151_0009__eye,r_0151_0007__Prince,genv).
-arc(r_0151_0011__and,r_0151_0004__plucked_out,conj1).
+arc(r_0151_0011__and,r_0151_0004__plucked__r_0151_0005__out,conj1).
 arc(r_0151_0011__and,r_0151_0012__flew,conj2).
 arc(r_0151_0012__flew,r_0151_0003__Swallow,arg0).
 arc(r_0151_0012__flew,r_0151_0013__away,dir2).
@@ -182,7 +182,7 @@ arc(r_0151_0018__garret,r_0151_0016__student,genv).
 </pre>
 <br>
 <pre>
-fof(id_151_A_WILDE_1_1888,axiom,
+fof(id__151_A_WILDE_1_1888,axiom,
     ? [OPERATORX1,CONJX10,EVENTX9,EVENTX5,ENTITYX2,ENTITYX7,ENTITYX8,ENTITYX3,ENTITYX4,QUALITYX6] :
       ( isA(ENTITYX2,r_0151_0003__Swallow)
       &amp; isA(ENTITYX3,r_0151_0009__eye)
@@ -196,7 +196,7 @@ fof(id_151_A_WILDE_1_1888,axiom,
       &amp; scope(OPERATORX1) = CONJX10
       &amp; isA(CONJX10,r_0151_0011__and)
       &amp; conj1(CONJX10) = EVENTX5
-      &amp; isA(EVENTX5,r_0151_0004__plucked_out)
+      &amp; isA(EVENTX5,r_0151_0004__plucked__r_0151_0005__out)
       &amp; arg0(EVENTX5) = ENTITYX2
       &amp; arg1(EVENTX5) = ENTITYX3
       &amp; conj2(CONJX10) = EVENTX9

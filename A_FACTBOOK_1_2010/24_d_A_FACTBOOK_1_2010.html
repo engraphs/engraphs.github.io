@@ -176,7 +176,7 @@ aerosolized dust or soil contact disease acquired through inhalation of aerosols
 <pre>
 arc(r_0070_0002__dust,r_0070_0001__aerosolized,attrib1).
 arc(r_0070_0003__or,r_0070_0002__dust,conj1).
-arc(r_0070_0003__or,r_0070_0004__soil_contact_disease,conj2).
+arc(r_0070_0003__or,r_0070_0004__soil__r_0070_0005__contact_r_0070_0006__disease,conj2).
 arc(r_0070_0007__acquired,r_0070_0003__or,arg1).
 arc(r_0070_0007__acquired,r_0070_0009__inhalation,r_0070_0008__through_cnt).
 arc(r_0070_0009__inhalation,r_0070_0011__aerosols,r_0070_0010__of).
@@ -188,7 +188,7 @@ arc(z_0070_1015,r_0070_0003__or,z_0070_1002).
 </pre>
 <br>
 <pre>
-fof(id_70_A_FACTBOOK_1_2010,axiom,
+fof(id__70_A_FACTBOOK_1_2010,axiom,
     ? [EVENTX16,EVENTX11,EVENTX10,ENTITYX3,ENTITYX12,ENTITYX14,ENTITYX5,ENTITYX6,ENTITYX8,ATTRIBX13,ATTRIBX9] :
       ( isA(EVENTX11,r_0070_0007__acquired)
       &amp; arg1(EVENTX11) = ENTITYX3
@@ -206,7 +206,7 @@ fof(id_70_A_FACTBOOK_1_2010,axiom,
       &amp; attrib1(ENTITYX8) = ATTRIBX9
       &amp; isA(ENTITYX12,r_0070_0002__dust)
       &amp; attrib1(ENTITYX12) = ATTRIBX13
-      &amp; isA(ENTITYX14,r_0070_0004__soil_contact_disease)
+      &amp; isA(ENTITYX14,r_0070_0004__soil__r_0070_0005__contact_r_0070_0006__disease)
       &amp; isA(ATTRIBX9,r_0070_0014__rodent)
       &amp; isA(ATTRIBX13,r_0070_0001__aerosolized)
       &amp; isA(EVENTX16,z_0070_1015)

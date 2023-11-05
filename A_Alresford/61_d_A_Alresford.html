@@ -363,11 +363,10 @@ With the ever - welcome advice of Messrs. Hankin and Thornton , I had the distin
 </svg>
 <br>
 <pre>
-arc(question_0067_1017,r_0067_0042__should,scope).
 arc(r_0067_0005__welcome,r_0067_0003__ever,quality1).
 arc(r_0067_0006__advice,r_0067_0005__welcome,attrib2).
-arc(r_0067_0006__advice,r_0067_0008__Messrs.,r_0067_0007__of).
-arc(r_0067_0008__Messrs.,r_0067_0010__and,nlyr2).
+arc(r_0067_0006__advice,r_0067_0008__Messrs_,r_0067_0007__of).
+arc(r_0067_0008__Messrs_,r_0067_0010__and,nlyr2).
 arc(r_0067_0010__and,r_0067_0009__Hankin,conj1).
 arc(r_0067_0010__and,r_0067_0011__Thornton,conj2).
 arc(r_0067_0014__had,r_0067_0006__advice,r_0067_0001__With_mnr).
@@ -375,30 +374,31 @@ arc(r_0067_0014__had,r_0067_0013__I,arg0).
 arc(r_0067_0014__had,r_0067_0016__distinction,arg1).
 arc(r_0067_0014__had,z_0067_1026,car7).
 arc(r_0067_0016__distinction,r_0067_0018__being,r_0067_0017__of).
-arc(r_0067_0018__being,r_0067_0021__woman_Chairman,prd2).
-arc(r_0067_0021__woman_Chairman,r_0067_0020__first,attrib2).
-arc(r_0067_0021__woman_Chairman,r_0067_0026__Parish_Council,r_0067_0023__of).
-arc(r_0067_0026__Parish_Council,r_0067_0024__New_Alresford,nlyr1).
+arc(r_0067_0018__being,r_0067_0021__woman__r_0067_0022__Chairman,prd2).
+arc(r_0067_0021__woman__r_0067_0022__Chairman,r_0067_0020__first,attrib2).
+arc(r_0067_0021__woman__r_0067_0022__Chairman,r_0067_0026__Parish_r_0067_0027__Council,r_0067_0023__of).
+arc(r_0067_0026__Parish__r_0067_0027__Council,r_0067_0024__New_r_0067_0025__Alresford,nlyr1).
 arc(r_0067_0030__caused,r_0067_0034__remarks,arg1).
 arc(r_0067_0030__caused,z_0067_1026,arg0).
-arc(r_0067_0034__remarks,question_0067_1017,r_0067_0035__about).
 arc(r_0067_0034__remarks,r_0067_0032__few,attrib2).
 arc(r_0067_0034__remarks,r_0067_0033__jocular,attrib3).
+arc(r_0067_0034__remarks,r_0067_1017__question,r_0067_0035__about).
 arc(r_0067_0042__should,r_0067_0043__be,scope).
 arc(r_0067_0043__be,r_0067_0044__addressed,catenative).
-arc(r_0067_0044__addressed,r_0067_0021__woman_Chairman,arg1).
+arc(r_0067_0044__addressed,r_0067_0021__woman__r_0067_0022__Chairman,arg1).
 arc(r_0067_0044__addressed,r_0067_0036__how,mnr1).
+arc(r_0067_1017__question,r_0067_0042__should,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_67_A_Alresford,axiom,
+fof(id__67_A_Alresford,axiom,
     ? [EVENTX6,EVENTX15,CATENATIVEX20,CHAIRX18,EVENTX27,EVENTX25,OPERATORX17,OPERATORX19,EVENTX24,EVENTX23,EVENTX10,ENTITYX1,ENTITYX5,ENTITYX11,ENTITYX12,ENTITYX4,ATTRIBX13,ATTRIBX14,ATTRIBX9,ATTRIBX2,QUALITYX21,QUALITYX3] :
       ( EVENTX6 = EVENTX10
       &amp; isA(EVENTX10,r_0067_0018__being)
-      &amp; prd2(EVENTX10) = r_0067_0021__woman_Chairman
+      &amp; prd2(EVENTX10) = r_0067_0021__woman__r_0067_0022__Chairman
       &amp; EVENTX15 = OPERATORX17
-      &amp; isA(OPERATORX17,question_0067_1017)
+      &amp; isA(OPERATORX17,r_0067_1017__question)
       &amp; scope(OPERATORX17) = OPERATORX19
       &amp; isA(OPERATORX19,r_0067_0042__should)
       &amp; scope(OPERATORX19) = EVENTX24
@@ -424,7 +424,7 @@ fof(id_67_A_Alresford,axiom,
       &amp; attrib2(ENTITYX12) = ATTRIBX13
       &amp; attrib3(ENTITYX12) = ATTRIBX14
       &amp; r_0067_0035__about(ENTITYX12) = EVENTX15
-      &amp; CHAIRX18 = r_0067_0021__woman_Chairman
+      &amp; CHAIRX18 = r_0067_0021__woman__r_0067_0022__Chairman
       &amp; isA(ATTRIBX2,r_0067_0005__welcome)
       &amp; quality1(ATTRIBX2) = QUALITYX3
       &amp; isA(ATTRIBX9,r_0067_0020__first)
@@ -432,13 +432,13 @@ fof(id_67_A_Alresford,axiom,
       &amp; isA(ATTRIBX14,r_0067_0033__jocular)
       &amp; isA(QUALITYX3,r_0067_0003__ever)
       &amp; isA(QUALITYX21,r_0067_0036__how)
-      &amp; isA(r_0067_0008__Messrs.,r_0067_0008__Messrs.)
-      &amp; nlyr2(r_0067_0008__Messrs.) = ENTITYX4
-      &amp; isA(r_0067_0021__woman_Chairman,r_0067_0021__woman_Chairman)
-      &amp; attrib2(r_0067_0021__woman_Chairman) = ATTRIBX9
-      &amp; r_0067_0023__of(r_0067_0021__woman_Chairman) = r_0067_0026__Parish_Council
-      &amp; isA(r_0067_0026__Parish_Council,r_0067_0026__Parish_Council)
-      &amp; nlyr1(r_0067_0026__Parish_Council) = r_0067_0024__New_Alresford
+      &amp; isA(r_0067_0008__Messrs_,r_0067_0008__Messrs_)
+      &amp; nlyr2(r_0067_0008__Messrs_) = ENTITYX4
+      &amp; isA(r_0067_0021__woman__r_0067_0022__Chairman,r_0067_0021__woman_r_0067_0022__Chairman)
+      &amp; attrib2(r_0067_0021__woman__r_0067_0022__Chairman) = ATTRIBX9
+      &amp; r_0067_0023__of(r_0067_0021__woman__r_0067_0022__Chairman) = r_0067_0026__Parish_r_0067_0027__Council
+      &amp; isA(r_0067_0026__Parish__r_0067_0027__Council,r_0067_0026__Parish_r_0067_0027__Council)
+      &amp; nlyr1(r_0067_0026__Parish__r_0067_0027__Council) = r_0067_0024__New_r_0067_0025__Alresford
       &amp; isA(EVENTX27,r_0067_0014__had)
       &amp; r_0067_0001__With_mnr(EVENTX27) = ENTITYX1
       &amp; arg0(EVENTX27) = r_0067_0013__I

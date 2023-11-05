@@ -135,10 +135,10 @@ The return journey to pick up the treasure would be a cinch ... they smiled .
 </svg>
 <br>
 <pre>
-arc(r_0005_0005__pick_up,r_0005_0002__return_journey,arg0).
-arc(r_0005_0005__pick_up,r_0005_0008__treasure,arg1).
+arc(r_0005_0005__pick__r_0005_0006__up,r_0005_0002__return_r_0005_0003__journey,arg0).
+arc(r_0005_0005__pick__r_0005_0006__up,r_0005_0008__treasure,arg1).
 arc(r_0005_0009__would,r_0005_0010__be,scope).
-arc(r_0005_0010__be,r_0005_0002__return_journey,arg0).
+arc(r_0005_0010__be,r_0005_0002__return__r_0005_0003__journey,arg0).
 arc(r_0005_0010__be,r_0005_0012__cinch,prd2).
 arc(r_0005_0010__be,r_0005_0015__smiled,prn6).
 arc(r_0005_0015__smiled,r_0005_0014__they,arg0).
@@ -146,15 +146,15 @@ arc(r_0005_0015__smiled,r_0005_0014__they,arg0).
 </pre>
 <br>
 <pre>
-fof(id_5_A_DICK_1952,axiom,
+fof(id__5_A_DICK_1952,axiom,
     ? [EVENTX5,OPERATORX7,EVENTX8,EVENTX6,EVENTX3,ENTITYX1,ENTITYX4,ENTITYX2] :
       ( EVENTX5 = EVENTX6
       &amp; isA(EVENTX6,r_0005_0015__smiled)
       &amp; arg0(EVENTX6) = r_0005_0014__they
-      &amp; isA(EVENTX3,r_0005_0005__pick_up)
+      &amp; isA(EVENTX3,r_0005_0005__pick__r_0005_0006__up)
       &amp; arg0(EVENTX3) = ENTITYX1
       &amp; arg1(EVENTX3) = ENTITYX2
-      &amp; isA(ENTITYX1,r_0005_0002__return_journey)
+      &amp; isA(ENTITYX1,r_0005_0002__return__r_0005_0003__journey)
       &amp; isA(ENTITYX2,r_0005_0008__treasure)
       &amp; isA(ENTITYX4,r_0005_0012__cinch)
       &amp; isA(OPERATORX7,r_0005_0009__would)

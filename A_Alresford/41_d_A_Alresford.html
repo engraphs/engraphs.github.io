@@ -242,30 +242,30 @@ For a few hours each week I was on duty in Alresford Library , a haven of civili
 <pre>
 arc(r_0047_0004__hours,r_0047_0003__few,attrib2).
 arc(r_0047_0004__hours,r_0047_0006__week,prn4).
-arc(r_0047_0005__quantificational__each,r_0047_0004__hours,scope).
-arc(r_0047_0005__quantificational__each,r_0047_0006__week,restriction).
+arc(r_0047_0005__quantificational__r_0047_0005__each,r_0047_0004__hours,scope).
+arc(r_0047_0005__quantificational__r_0047_0005__each,r_0047_0006__week,restriction).
 arc(r_0047_0008__was,r_0047_0004__hours,r_0047_0001__For_tmp).
 arc(r_0047_0008__was,r_0047_0007__I,arg0).
 arc(r_0047_0008__was,r_0047_0010__duty,r_0047_0009__on_prd2).
-arc(r_0047_0008__was,r_0047_0012__Alresford_Library,r_0047_0011__in_loc).
-arc(r_0047_0012__Alresford_Library,r_0047_0016__haven,prn4).
+arc(r_0047_0008__was,r_0047_0012__Alresford__r_0047_0013__Library,r_0047_0011__in_loc).
+arc(r_0047_0012__Alresford__r_0047_0013__Library,r_0047_0016__haven,prn4).
 arc(r_0047_0016__haven,r_0047_0018__civilisation,r_0047_0017__of).
-arc(r_0047_0016__haven,r_0047_0020__one_day,r_0047_0019__except).
-arc(r_0047_0020__one_day,r_0047_0024__rain,r_0047_0022__after).
+arc(r_0047_0016__haven,r_0047_0020__one__r_0047_0021__day,r_0047_0019__except).
+arc(r_0047_0020__one__r_0047_0021__day,r_0047_0024__rain,r_0047_0022__after).
 arc(r_0047_0024__rain,r_0047_0023__heavy,attrib1).
-arc(r_0047_0027__was,r_0047_0020__one_day,tmp1).
+arc(r_0047_0027__was,r_0047_0020__one__r_0047_0021__day,tmp1).
 arc(r_0047_0027__was,r_0047_0028__flooded,catenative).
-arc(r_0047_0028__flooded,r_0047_0012__Alresford_Library,arg1).
+arc(r_0047_0028__flooded,r_0047_0012__Alresford__r_0047_0013__Library,arg1).
 
 </pre>
 <br>
 <pre>
-fof(id_47_A_Alresford,axiom,
+fof(id__47_A_Alresford,axiom,
     ? [CATENATIVEX12,LIBRARYX11,EVENTX16,EVENTX15,EVENTX14,QUANTX4,ENTITYX1,ENTITYX5,ENTITYX6,ENTITYX7,ENTITYX8,ENTITYX9,ENTITYX3,ATTRIBX10,ATTRIBX2] :
       ( CATENATIVEX12 = EVENTX14
       &amp; isA(EVENTX14,r_0047_0028__flooded)
       &amp; arg1(EVENTX14) = LIBRARYX11
-      &amp; isA(QUANTX4,r_0047_0005__quantificational__each)
+      &amp; isA(QUANTX4,r_0047_0005__quantificational__r_0047_0005__each)
       &amp; restriction(QUANTX4) = ENTITYX3
       &amp; isA(ENTITYX3,r_0047_0006__week)
       &amp; scope(QUANTX4) = ENTITYX1
@@ -280,20 +280,20 @@ fof(id_47_A_Alresford,axiom,
       &amp; isA(EVENTX15,r_0047_0027__was)
       &amp; tmp1(EVENTX15) = ENTITYX8
       &amp; catenative(EVENTX15) = CATENATIVEX12
-      &amp; isA(ENTITYX8,r_0047_0020__one_day)
+      &amp; isA(ENTITYX8,r_0047_0020__one__r_0047_0021__day)
       &amp; r_0047_0022__after(ENTITYX8) = ENTITYX9
       &amp; isA(ENTITYX9,r_0047_0024__rain)
       &amp; attrib1(ENTITYX9) = ATTRIBX10
-      &amp; LIBRARYX11 = r_0047_0012__Alresford_Library
+      &amp; LIBRARYX11 = r_0047_0012__Alresford__r_0047_0013__Library
       &amp; isA(ATTRIBX2,r_0047_0003__few)
       &amp; isA(ATTRIBX10,r_0047_0023__heavy)
-      &amp; isA(r_0047_0012__Alresford_Library,r_0047_0012__Alresford_Library)
-      &amp; prn4(r_0047_0012__Alresford_Library) = ENTITYX6
+      &amp; isA(r_0047_0012__Alresford__r_0047_0013__Library,r_0047_0012__Alresford_r_0047_0013__Library)
+      &amp; prn4(r_0047_0012__Alresford__r_0047_0013__Library) = ENTITYX6
       &amp; isA(EVENTX16,r_0047_0008__was)
       &amp; r_0047_0001__For_tmp(EVENTX16) = ENTITYX1
       &amp; arg0(EVENTX16) = r_0047_0007__I
       &amp; r_0047_0009__on_prd2(EVENTX16) = ENTITYX5
-      &amp; r_0047_0011__in_loc(EVENTX16) = r_0047_0012__Alresford_Library ) ).
+      &amp; r_0047_0011__in_loc(EVENTX16) = r_0047_0012__Alresford__r_0047_0013__Library ) ).
 
 
 </pre>

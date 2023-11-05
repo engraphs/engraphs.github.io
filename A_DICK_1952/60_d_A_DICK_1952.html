@@ -259,8 +259,6 @@ Outside the men were already sealing the gaping leaks in the side of the ship , 
 </svg>
 <br>
 <pre>
-arc(cnt_0082_1012,r_0082_0023__rushing,scope).
-arc(cnt_0082_1012,r_0082_0025__dissipating,restriction).
 arc(r_0082_0004__were,r_0082_0001__Outside,loc1).
 arc(r_0082_0004__were,r_0082_0006__sealing,catenative).
 arc(r_0082_0006__sealing,r_0082_0003__men,arg0).
@@ -270,17 +268,19 @@ arc(r_0082_0009__leaks,r_0082_0008__gaping,attrib2).
 arc(r_0082_0009__leaks,r_0082_0012__side,r_0082_0010__in).
 arc(r_0082_0012__side,r_0082_0015__ship,r_0082_0013__of).
 arc(r_0082_0021__air,r_0082_0020__precious,attrib2).
-arc(r_0082_0022__was,cnt_0082_1012,catenative).
+arc(r_0082_0022__was,r_0082_1012__cnt,catenative).
 arc(r_0082_0023__rushing,r_0082_0009__leaks,r_0082_0017__through_clr_dir).
 arc(r_0082_0023__rushing,r_0082_0021__air,arg0).
 arc(r_0082_0025__dissipating,r_0082_0021__air,arg0).
 arc(r_0082_0025__dissipating,r_0082_0028__void,r_0082_0026__into_clr_dir).
 arc(r_0082_0028__void,r_0082_0029__beyond,loc3).
+arc(r_0082_1012__cnt,r_0082_0023__rushing,scope).
+arc(r_0082_1012__cnt,r_0082_0025__dissipating,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_82_A_DICK_1952,axiom,
+fof(id__82_A_DICK_1952,axiom,
     ? [CATENATIVEX3,CATENATIVEX11,EVENTX20,EVENTX19,EVENTX18,CONNX13,EVENTX16,EVENTX17,QUALITYX1,QUALITYX4,QUALITYX15,ENTITYX2,ENTITYX5,ENTITYX7,ENTITYX9,ENTITYX14,ENTITYX8,ATTRIBX6,ATTRIBX10] :
       ( CATENATIVEX3 = EVENTX19
       &amp; isA(EVENTX19,r_0082_0006__sealing)
@@ -288,7 +288,7 @@ fof(id_82_A_DICK_1952,axiom,
       &amp; tmp1(EVENTX19) = QUALITYX4
       &amp; arg1(EVENTX19) = ENTITYX5
       &amp; CATENATIVEX11 = CONNX13
-      &amp; isA(CONNX13,cnt_0082_1012)
+      &amp; isA(CONNX13,r_0082_1012__cnt)
       &amp; scope(CONNX13) = EVENTX17
       &amp; isA(EVENTX17,r_0082_0023__rushing)
       &amp; arg0(EVENTX17) = ENTITYX9

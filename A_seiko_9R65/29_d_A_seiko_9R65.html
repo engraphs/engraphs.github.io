@@ -319,52 +319,52 @@ In addition , by making the energy transfer of the train wheel efficient and ado
 <pre>
 arc(r_0038_0004__by_mnr,r_0038_0014__and,restriction).
 arc(r_0038_0004__by_mnr,r_0038_0037__is,scope).
-arc(r_0038_0005__making,r_0038_0007__energy_transfer,arg1).
+arc(r_0038_0005__making,r_0038_0007__energy__r_0038_0008__transfer,arg1).
 arc(r_0038_0005__making,r_0038_0013__efficient,prd).
-arc(r_0038_0007__energy_transfer,r_0038_0011__train_wheel,r_0038_0009__of).
+arc(r_0038_0007__energy__r_0038_0008__transfer,r_0038_0011__train_r_0038_0012__wheel,r_0038_0009__of).
 arc(r_0038_0014__and,r_0038_0005__making,conj1).
 arc(r_0038_0014__and,r_0038_0015__adopting,conj2).
 arc(r_0038_0015__adopting,r_0038_0017__IC,arg1).
 arc(r_0038_0019__drives,r_0038_0017__IC,arg0).
-arc(r_0038_0019__drives,r_0038_0022__power_consumption,r_0038_0020__with_mnr).
-arc(r_0038_0022__power_consumption,r_0038_0021__low,attrib1).
-arc(r_0038_0025__power_reserve,r_0038_0028__more,r_0038_0027__of).
-arc(r_0038_0028__more,r_0038_0030__72_hours,r_0038_0029__than).
+arc(r_0038_0019__drives,r_0038_0022__power__r_0038_0023__consumption,r_0038_0020__with_mnr).
+arc(r_0038_0022__power__r_0038_0023__consumption,r_0038_0021__low,attrib1).
+arc(r_0038_0025__power__r_0038_0026__reserve,r_0038_0028__more,r_0038_0027__of).
+arc(r_0038_0028__more,r_0038_0030__72__r_0038_0031__hours,r_0038_0029__than).
 arc(r_0038_0032__far,r_0038_0033__exceeding,scope).
-arc(r_0038_0033__exceeding,r_0038_0025__power_reserve,arg0).
+arc(r_0038_0033__exceeding,r_0038_0025__power__r_0038_0026__reserve,arg0).
 arc(r_0038_0033__exceeding,r_0038_0036__watches,arg1).
 arc(r_0038_0036__watches,r_0038_0034__normal,attrib1).
 arc(r_0038_0036__watches,r_0038_0035__mechanical,attrib2).
 arc(r_0038_0037__is,r_0038_0002__addition,r_0038_0001__In_cnt).
 arc(r_0038_0037__is,r_0038_0038__realized,catenative).
-arc(r_0038_0038__realized,r_0038_0025__power_reserve,arg1).
+arc(r_0038_0038__realized,r_0038_0025__power__r_0038_0026__reserve,arg1).
 
 </pre>
 <br>
 <pre>
-fof(id_38_A_seiko_9R65,axiom,
+fof(id__38_A_seiko_9R65,axiom,
     ? [CATENATIVEX23,CONNX2,EVENTX26,EVENTX25,OPERATORX18,EVENTX22,CONJX14,EVENTX13,EVENTX12,EVENTX8,ENTITYX1,ENTITYX15,ENTITYX19,ENTITYX17,ENTITYX9,ENTITYX10,ENTITYX5,ENTITYX6,ATTRIBX16,ATTRIBX20,ATTRIBX21,ATTRIBX11,ATTRIBX7] :
       ( CATENATIVEX23 = EVENTX25
       &amp; isA(EVENTX25,r_0038_0038__realized)
       &amp; arg1(EVENTX25) = ENTITYX15
       &amp; isA(ENTITYX1,r_0038_0002__addition)
-      &amp; isA(ENTITYX5,r_0038_0007__energy_transfer)
+      &amp; isA(ENTITYX5,r_0038_0007__energy__r_0038_0008__transfer)
       &amp; r_0038_0009__of(ENTITYX5) = ENTITYX6
-      &amp; isA(ENTITYX6,r_0038_0011__train_wheel)
+      &amp; isA(ENTITYX6,r_0038_0011__train__r_0038_0012__wheel)
       &amp; isA(EVENTX12,r_0038_0019__drives)
       &amp; arg0(EVENTX12) = ENTITYX9
       &amp; r_0038_0020__with_mnr(EVENTX12) = ENTITYX10
       &amp; isA(ENTITYX9,r_0038_0017__IC)
-      &amp; isA(ENTITYX10,r_0038_0022__power_consumption)
+      &amp; isA(ENTITYX10,r_0038_0022__power__r_0038_0023__consumption)
       &amp; attrib1(ENTITYX10) = ATTRIBX11
       &amp; isA(OPERATORX18,r_0038_0032__far)
       &amp; scope(OPERATORX18) = EVENTX22
       &amp; isA(EVENTX22,r_0038_0033__exceeding)
       &amp; arg0(EVENTX22) = ENTITYX15
       &amp; arg1(EVENTX22) = ENTITYX19
-      &amp; isA(ENTITYX15,r_0038_0025__power_reserve)
+      &amp; isA(ENTITYX15,r_0038_0025__power__r_0038_0026__reserve)
       &amp; r_0038_0027__of(ENTITYX15) = ATTRIBX16
-      &amp; isA(ENTITYX17,r_0038_0030__72_hours)
+      &amp; isA(ENTITYX17,r_0038_0030__72__r_0038_0031__hours)
       &amp; isA(ENTITYX19,r_0038_0036__watches)
       &amp; attrib1(ENTITYX19) = ATTRIBX20
       &amp; attrib2(ENTITYX19) = ATTRIBX21

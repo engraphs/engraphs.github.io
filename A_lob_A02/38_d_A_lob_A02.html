@@ -279,12 +279,10 @@ In Takoradi a &lsquo; limited state of emergency &rsquo; was declared , giving t
 </svg>
 <br>
 <pre>
-arc(cnt_0038_1006,r_0038_0011__declared,scope).
-arc(cnt_0038_1006,r_0038_0013__giving,restriction).
 arc(r_0038_0006__state,r_0038_0005__limited,attrib3).
 arc(r_0038_0006__state,r_0038_0008__emergency,r_0038_0007__of).
-arc(r_0038_0010__was,cnt_0038_1006,catenative).
 arc(r_0038_0010__was,r_0038_0002__Takoradi,r_0038_0001__In_loc).
+arc(r_0038_0010__was,r_0038_1006__cnt,catenative).
 arc(r_0038_0011__declared,r_0038_0006__state,arg1).
 arc(r_0038_0013__giving,r_0038_0006__state,arg0).
 arc(r_0038_0013__giving,r_0038_0015__government,arg2).
@@ -292,20 +290,22 @@ arc(r_0038_0013__giving,r_0038_0017__power,arg1).
 arc(r_0038_0017__power,r_0038_0016__adequate,attrib1).
 arc(r_0038_0017__power,r_0038_0023__and,emb3).
 arc(r_0038_0019__maintain,r_0038_0022__services,arg1).
-arc(r_0038_0020__quantificational__all,r_0038_0019__maintain,scope).
-arc(r_0038_0020__quantificational__all,r_0038_0022__services,restriction).
+arc(r_0038_0020__quantificational__r_0038_0020__all,r_0038_0019__maintain,scope).
+arc(r_0038_0020__quantificational__r_0038_0020__all,r_0038_0022__services,restriction).
 arc(r_0038_0022__services,r_0038_0021__essential,attrib2).
-arc(r_0038_0023__and,r_0038_0020__quantificational__all,conj1).
+arc(r_0038_0023__and,r_0038_0020__quantificational__r_0038_0020__all,conj1).
 arc(r_0038_0023__and,r_0038_0024__ensure,conj2).
-arc(r_0038_0024__ensure,r_0038_0025__food_supplies,arg1).
+arc(r_0038_0024__ensure,r_0038_0025__food__r_0038_0026__supplies,arg1).
+arc(r_0038_1006__cnt,r_0038_0011__declared,scope).
+arc(r_0038_1006__cnt,r_0038_0013__giving,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_38_A_lob_A02,axiom,
+fof(id__38_A_lob_A02,axiom,
     ? [CATENATIVEX4,STATEX11,EVENTX23,CONNX7,EVENTX21,CONJX20,EVENTX19,QUANTX15,EVENTX17,EVENTX22,ENTITYX1,ENTITYX8,ENTITYX9,ENTITYX18,ENTITYX14,ENTITYX3,ATTRIBX10,ATTRIBX16,ATTRIBX2] :
       ( CATENATIVEX4 = CONNX7
-      &amp; isA(CONNX7,cnt_0038_1006)
+      &amp; isA(CONNX7,r_0038_1006__cnt)
       &amp; scope(CONNX7) = EVENTX22
       &amp; isA(EVENTX22,r_0038_0011__declared)
       &amp; arg1(EVENTX22) = ENTITYX1
@@ -317,7 +317,7 @@ fof(id_38_A_lob_A02,axiom,
       &amp; STATEX11 = CONJX20
       &amp; isA(CONJX20,r_0038_0023__and)
       &amp; conj1(CONJX20) = QUANTX15
-      &amp; isA(QUANTX15,r_0038_0020__quantificational__all)
+      &amp; isA(QUANTX15,r_0038_0020__quantificational__r_0038_0020__all)
       &amp; restriction(QUANTX15) = ENTITYX14
       &amp; isA(ENTITYX14,r_0038_0022__services)
       &amp; attrib2(ENTITYX14) = ATTRIBX16
@@ -335,7 +335,7 @@ fof(id_38_A_lob_A02,axiom,
       &amp; isA(ENTITYX9,r_0038_0017__power)
       &amp; attrib1(ENTITYX9) = ATTRIBX10
       &amp; emb3(ENTITYX9) = STATEX11
-      &amp; isA(ENTITYX18,r_0038_0025__food_supplies)
+      &amp; isA(ENTITYX18,r_0038_0025__food__r_0038_0026__supplies)
       &amp; isA(ATTRIBX2,r_0038_0005__limited)
       &amp; isA(ATTRIBX10,r_0038_0016__adequate)
       &amp; isA(ATTRIBX16,r_0038_0021__essential)

@@ -335,37 +335,37 @@ In the book it said : &ldquo; Boa constrictors swallow their prey whole , withou
 <pre>
 arc(r_0005_0005__said,r_0005_0003__book,r_0005_0001__In_loc).
 arc(r_0005_0005__said,r_0005_0004__it,arg0).
-arc(r_0005_0005__said,utterance_0005_1004,arg1).
-arc(r_0005_0010__swallow,r_0005_0008__Boa_constrictors,arg0).
+arc(r_0005_0005__said,r_0005_1004__utterance,arg1).
+arc(r_0005_0010__swallow,r_0005_0008__Boa__r_0005_0009__constrictors,arg0).
 arc(r_0005_0010__swallow,r_0005_0012__prey,arg1).
 arc(r_0005_0010__swallow,r_0005_0013__whole,prd).
-arc(r_0005_0012__prey,r_0005_0008__Boa_constrictors,genv).
+arc(r_0005_0012__prey,r_0005_0008__Boa__r_0005_0009__constrictors,genv).
 arc(r_0005_0015__without_mnr,r_0005_0010__swallow,scope).
 arc(r_0005_0015__without_mnr,r_0005_0016__chewing,restriction).
-arc(r_0005_0016__chewing,r_0005_0008__Boa_constrictors,arg0).
+arc(r_0005_0016__chewing,r_0005_0008__Boa__r_0005_0009__constrictors,arg0).
 arc(r_0005_0016__chewing,r_0005_0012__prey,arg1).
-arc(r_0005_0022__are,r_0005_0008__Boa_constrictors,arg0).
+arc(r_0005_0022__are,r_0005_0008__Boa__r_0005_0009__constrictors,arg0).
 arc(r_0005_0022__are,r_0005_0020__that,r_0005_0019__After_tmp).
 arc(r_0005_0022__are,r_0005_0024__able,prd2).
 arc(r_0005_0023__not,r_0005_0022__are,scope).
 arc(r_0005_0024__able,r_0005_0026__move,emb2).
 arc(r_0005_0028__and,r_0005_0023__not,conj1).
 arc(r_0005_0028__and,r_0005_0030__sleep,conj2).
-arc(r_0005_0030__sleep,r_0005_0008__Boa_constrictors,arg0).
-arc(r_0005_0030__sleep,r_0005_0033__six_months,r_0005_0031__through_tmp).
-arc(r_0005_0037__need,r_0005_0008__Boa_constrictors,arg0).
-arc(r_0005_0037__need,r_0005_0033__six_months,arg1).
+arc(r_0005_0030__sleep,r_0005_0008__Boa__r_0005_0009__constrictors,arg0).
+arc(r_0005_0030__sleep,r_0005_0033__six__r_0005_0034__months,r_0005_0031__through_tmp).
+arc(r_0005_0037__need,r_0005_0008__Boa__r_0005_0009__constrictors,arg0).
+arc(r_0005_0037__need,r_0005_0033__six__r_0005_0034__months,arg1).
 arc(r_0005_0037__need,r_0005_0039__digestion,r_0005_0038__for_bnf).
-arc(utterance_0005_1004,r_0005_0015__without_mnr,part1).
-arc(utterance_0005_1004,r_0005_0028__and,part2).
+arc(r_0005_1004__utterance,r_0005_0015__without_mnr,part1).
+arc(r_0005_1004__utterance,r_0005_0028__and,part2).
 
 </pre>
 <br>
 <pre>
-fof(id_5_A_SAINT_EXUPERY_1943,axiom,
+fof(id__5_A_SAINT_EXUPERY_1943,axiom,
     ? [STATEX2,STATEX17,BOASX7,PREYX10,BOASX15,BOASX23,BOASX25,EVENTX31,CONJX30,CONJX29,EVENTX28,EVENTX27,OPERATORX21,EVENTX22,EVENTX20,CONNX9,EVENTX11,EVENTX12,ENTITYX1,ENTITYX24,ENTITYX26,BOASX5,PREYX6,ATTRIBX16,ATTRIBX8] :
       ( STATEX2 = CONJX30
-      &amp; isA(CONJX30,utterance_0005_1004)
+      &amp; isA(CONJX30,r_0005_1004__utterance)
       &amp; part1(CONJX30) = CONNX9
       &amp; isA(CONNX9,r_0005_0015__without_mnr)
       &amp; scope(CONNX9) = EVENTX12
@@ -395,7 +395,7 @@ fof(id_5_A_SAINT_EXUPERY_1943,axiom,
       &amp; STATEX17 = EVENTX20
       &amp; isA(EVENTX20,r_0005_0026__move)
       &amp; isA(ENTITYX1,r_0005_0003__book)
-      &amp; isA(BOASX5,r_0005_0008__Boa_constrictors)
+      &amp; isA(BOASX5,r_0005_0008__Boa__r_0005_0009__constrictors)
       &amp; isA(PREYX6,r_0005_0012__prey)
       &amp; genv(PREYX6) = BOASX7
       &amp; BOASX7 = BOASX5
@@ -406,7 +406,7 @@ fof(id_5_A_SAINT_EXUPERY_1943,axiom,
       &amp; arg1(EVENTX27) = ENTITYX24
       &amp; arg0(EVENTX27) = BOASX25
       &amp; r_0005_0038__for_bnf(EVENTX27) = ENTITYX26
-      &amp; isA(ENTITYX24,r_0005_0033__six_months)
+      &amp; isA(ENTITYX24,r_0005_0033__six__r_0005_0034__months)
       &amp; ( BOASX25 = BOASX23
         | BOASX25 = BOASX5 )
       &amp; isA(ENTITYX26,r_0005_0039__digestion)

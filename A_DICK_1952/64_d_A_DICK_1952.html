@@ -252,8 +252,6 @@ Tance watched helplessly , his eyeglasses broken and bent .
 </svg>
 <br>
 <pre>
-arc(abs_0086_1002,r_0086_0002__watched,scope).
-arc(abs_0086_1002,r_0086_0008__and,restriction).
 arc(r_0086_0002__watched,r_0086_0001__Tance,arg0).
 arc(r_0086_0002__watched,r_0086_0003__helplessly,mnr3).
 arc(r_0086_0006__eyeglasses,r_0086_0001__Tance,genv).
@@ -261,22 +259,24 @@ arc(r_0086_0007__broken,r_0086_0006__eyeglasses,arg1).
 arc(r_0086_0008__and,r_0086_0007__broken,conj1).
 arc(r_0086_0008__and,r_0086_0009__bent,conj2).
 arc(r_0086_0009__bent,r_0086_0006__eyeglasses,arg1).
+arc(r_0086_1002__abs,r_0086_0002__watched,scope).
+arc(r_0086_1002__abs,r_0086_0008__and,restriction).
+arc(r_0086_1013__utterance,r_0087_0002__So,part1).
 arc(r_0087_0002__So,r_0087_0008__after_all,scope).
 arc(r_0087_0004__is,r_0087_0005__life,arg0).
 arc(r_0087_0004__is,r_0087_0006__here,dir5).
 arc(r_0087_0008__after_all,r_0087_0004__is,scope).
 arc(r_0087_0012__said,r_0086_0001__Tance,arg0).
-arc(r_0087_0012__said,r_0086_0001__Tance,r_0087_0014__half_to_mnr).
-arc(r_0087_0012__said,utterance_0086_1013,arg1).
-arc(utterance_0086_1013,r_0087_0002__So,part1).
+arc(r_0087_0012__said,r_0086_0001__Tance,r_0087_0014__half__r_0087_0015__to_mnr).
+arc(r_0087_0012__said,r_0086_1013__utterance,arg1).
 
 </pre>
 <br>
 <pre>
-fof(id_86_A_DICK_1952__87_A_DICK_1952,axiom,
+fof(id__86_A_DICK_1952__87_A_DICK_1952,axiom,
     ? [STATEX11,TANCEX5,TANCEX20,TANCEX21,EVENTX22,CONJX19,OPERATORX14,OPERATORX17,EVENTX18,CONNX3,CONJX9,EVENTX8,EVENTX7,EVENTX10,ENTITYX15,ENTITYX4,QUALITYX16,QUALITYX1] :
       ( STATEX11 = CONJX19
-      &amp; isA(CONJX19,utterance_0086_1013)
+      &amp; isA(CONJX19,r_0086_1013__utterance)
       &amp; part1(CONJX19) = OPERATORX14
       &amp; isA(OPERATORX14,r_0087_0002__So)
       &amp; scope(OPERATORX14) = OPERATORX17
@@ -294,7 +294,7 @@ fof(id_86_A_DICK_1952__87_A_DICK_1952,axiom,
         | TANCEX21 = TANCEX20 )
       &amp; isA(QUALITYX1,r_0086_0003__helplessly)
       &amp; isA(QUALITYX16,r_0087_0006__here)
-      &amp; isA(CONNX3,abs_0086_1002)
+      &amp; isA(CONNX3,r_0086_1002__abs)
       &amp; scope(CONNX3) = EVENTX10
       &amp; isA(EVENTX10,r_0086_0002__watched)
       &amp; arg0(EVENTX10) = r_0086_0001__Tance
@@ -310,7 +310,7 @@ fof(id_86_A_DICK_1952__87_A_DICK_1952,axiom,
       &amp; isA(EVENTX22,r_0087_0012__said)
       &amp; arg1(EVENTX22) = STATEX11
       &amp; arg0(EVENTX22) = TANCEX20
-      &amp; r_0087_0014__half_to_mnr(EVENTX22) = TANCEX21 ) ).
+      &amp; r_0087_0014__half__r_0087_0015__to_mnr(EVENTX22) = TANCEX21 ) ).
 
 
 </pre>

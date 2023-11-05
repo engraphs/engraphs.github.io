@@ -233,47 +233,47 @@ The Senate banking committee , which is headed by another southern Senator &mdas
 </svg>
 <br>
 <pre>
-arc(cnt_0051_1010,r_0051_0020__met,scope).
-arc(cnt_0051_1010,r_0051_0026__discuss,restriction).
 arc(r_0051_0007__is,r_0051_0008__headed,catenative).
-arc(r_0051_0008__headed,r_0051_0002__Senate_banking_committee,arg1).
-arc(r_0051_0008__headed,r_0051_0012__Senator,arg0_by_lgs).
+arc(r_0051_0008__headed,r_0051_0002__Senate__r_0051_0003__banking_r_0051_0004__committee,arg1).
+arc(r_0051_0008__headed,r_0051_0012__Senator,arg0__r_0051_0009__by_lgs).
 arc(r_0051_0012__Senator,r_0051_0011__southern,attrib2).
-arc(r_0051_0012__Senator,r_0051_0014__Willis_Robertson,prn5).
-arc(r_0051_0014__Willis_Robertson,r_0051_0018__Virginia,r_0051_0017__of).
-arc(r_0051_0020__met,r_0051_0002__Senate_banking_committee,arg0).
+arc(r_0051_0012__Senator,r_0051_0014__Willis__r_0051_0015__Robertson,prn5).
+arc(r_0051_0014__Willis__r_0051_0015__Robertson,r_0051_0018__Virginia,r_0051_0017__of).
+arc(r_0051_0020__met,r_0051_0002__Senate__r_0051_0003__banking_r_0051_0004__committee,arg0).
 arc(r_0051_0020__met,r_0051_0021__today,tmp3).
 arc(r_0051_0020__met,r_0051_0024__session,r_0051_0022__in_mnr).
 arc(r_0051_0024__session,r_0051_0023__closed,attrib1).
-arc(r_0051_0026__discuss,r_0051_0002__Senate_banking_committee,arg0).
+arc(r_0051_0026__discuss,r_0051_0002__Senate__r_0051_0003__banking_r_0051_0004__committee,arg0).
 arc(r_0051_0026__discuss,r_0051_0029__appointment,arg1).
 arc(r_0051_0029__appointment,r_0051_0027__Weaver,genv).
+arc(r_0051_1010__cnt,r_0051_0020__met,scope).
+arc(r_0051_1010__cnt,r_0051_0026__discuss,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_51_A_lob_A01,axiom,
+fof(id__51_A_lob_A01,axiom,
     ? [CATENATIVEX2,CONNX11,EVENTX13,EVENTX14,EVENTX6,EVENTX5,ENTITYX1,ENTITYX8,ENTITYX12,ENTITYX3,ATTRIBX9,ATTRIBX4,QUALITYX7] :
       ( CATENATIVEX2 = EVENTX5
       &amp; isA(EVENTX5,r_0051_0008__headed)
-      &amp; arg0_by_lgs(EVENTX5) = ENTITYX3
+      &amp; arg0__r_0051_0009__by_lgs(EVENTX5) = ENTITYX3
       &amp; arg1(EVENTX5) = ENTITYX1
       &amp; isA(EVENTX6,r_0051_0007__is)
       &amp; catenative(EVENTX6) = CATENATIVEX2
-      &amp; isA(ENTITYX1,r_0051_0002__Senate_banking_committee)
+      &amp; isA(ENTITYX1,r_0051_0002__Senate__r_0051_0003__banking_r_0051_0004__committee)
       &amp; isA(ENTITYX3,r_0051_0012__Senator)
       &amp; attrib2(ENTITYX3) = ATTRIBX4
-      &amp; prn5(ENTITYX3) = r_0051_0014__Willis_Robertson
+      &amp; prn5(ENTITYX3) = r_0051_0014__Willis__r_0051_0015__Robertson
       &amp; isA(ENTITYX8,r_0051_0024__session)
       &amp; attrib1(ENTITYX8) = ATTRIBX9
       &amp; isA(ENTITYX12,r_0051_0029__appointment)
       &amp; genv(ENTITYX12) = r_0051_0027__Weaver
-      &amp; isA(r_0051_0014__Willis_Robertson,r_0051_0014__Willis_Robertson)
-      &amp; r_0051_0017__of(r_0051_0014__Willis_Robertson) = r_0051_0018__Virginia
+      &amp; isA(r_0051_0014__Willis__r_0051_0015__Robertson,r_0051_0014__Willis_r_0051_0015__Robertson)
+      &amp; r_0051_0017__of(r_0051_0014__Willis__r_0051_0015__Robertson) = r_0051_0018__Virginia
       &amp; isA(ATTRIBX4,r_0051_0011__southern)
       &amp; isA(ATTRIBX9,r_0051_0023__closed)
       &amp; isA(QUALITYX7,r_0051_0021__today)
-      &amp; isA(CONNX11,cnt_0051_1010)
+      &amp; isA(CONNX11,r_0051_1010__cnt)
       &amp; scope(CONNX11) = EVENTX14
       &amp; isA(EVENTX14,r_0051_0020__met)
       &amp; arg0(EVENTX14) = ENTITYX1

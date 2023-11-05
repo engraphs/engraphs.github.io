@@ -357,12 +357,11 @@ That is why , especially after it was brought to Japan , enlightenment has been 
 </svg>
 <br>
 <pre>
-arc(question_0042_1003,r_0042_0003__why,scope).
-arc(r_0042_0002__is,question_0042_1003,prd2).
 arc(r_0042_0002__is,r_0042_0001__That,arg0).
-arc(r_0042_0003__why,r_0042_0005__especially_after_tmp,scope).
-arc(r_0042_0005__especially_after_tmp,r_0042_0008__was,restriction).
-arc(r_0042_0005__especially_after_tmp,r_0042_0025__so_that_cnt,scope).
+arc(r_0042_0002__is,r_0042_1003__question,prd2).
+arc(r_0042_0003__why,r_0042_0005__especially__r_0042_0006__after_tmp,scope).
+arc(r_0042_0005__especially__r_0042_0006__after_tmp,r_0042_0008__was,restriction).
+arc(r_0042_0005__especially__r_0042_0006__after_tmp,r_0042_0025__so_that_cnt,scope).
 arc(r_0042_0008__was,r_0042_0009__brought,catenative).
 arc(r_0042_0009__brought,r_0042_0007__it,arg1).
 arc(r_0042_0009__brought,r_0042_0011__Japan,r_0042_0010__to_dir).
@@ -381,18 +380,19 @@ arc(r_0042_0028__get,r_0042_0026__one,arg0).
 arc(r_0042_0028__get,r_0042_0030__taste,arg1).
 arc(r_0042_0030__taste,r_0042_0033__aroma,r_0042_0031__of).
 arc(r_0042_0033__aroma,r_0042_0032__its,genv).
+arc(r_0042_1003__question,r_0042_0003__why,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_42_A_KYOTO_2,axiom,
+fof(id__42_A_KYOTO_2,axiom,
     ? [STATEX1,CATENATIVEX6,CATENATIVEX17,CATENATIVEX18,EVENTX28,OPERATORX3,OPERATORX4,CONNX5,CONNX11,OPERATORX15,EVENTX16,EVENTX27,EVENTX26,EVENTX25,EVENTX9,EVENTX8,ENTITYX10,ENTITYX12,ENTITYX13,ENTITYX14,ENTITYX20,ENTITYX22,ENTITYX23,ENTITYX24,ATTRIBX21] :
       ( STATEX1 = OPERATORX3
-      &amp; isA(OPERATORX3,question_0042_1003)
+      &amp; isA(OPERATORX3,r_0042_1003__question)
       &amp; scope(OPERATORX3) = OPERATORX4
       &amp; isA(OPERATORX4,r_0042_0003__why)
       &amp; scope(OPERATORX4) = CONNX5
-      &amp; isA(CONNX5,r_0042_0005__especially_after_tmp)
+      &amp; isA(CONNX5,r_0042_0005__especially__r_0042_0006__after_tmp)
       &amp; restriction(CONNX5) = EVENTX9
       &amp; isA(EVENTX9,r_0042_0008__was)
       &amp; catenative(EVENTX9) = CATENATIVEX6

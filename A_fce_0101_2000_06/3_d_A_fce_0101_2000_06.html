@@ -325,14 +325,14 @@ You have been asked to invite his wife to the party and to ask her advice on wha
 </svg>
 <br>
 <pre>
-arc(question_0003_1023,r_0004_0021__buy,scope).
 arc(r_0003_0002__class,r_0003_0001__Your,genv).
 arc(r_0003_0003__is,r_0003_0004__organising,catenative).
 arc(r_0003_0004__organising,r_0003_0002__class,arg0).
-arc(r_0003_0004__organising,r_0003_0006__surprise_birthday_party,arg1).
-arc(r_0003_0006__surprise_birthday_party,r_0003_0010__Mr_Brown,r_0003_0009__for).
-arc(r_0003_0010__Mr_Brown,r_0003_0014__English_teacher,prn4).
-arc(r_0003_0014__English_teacher,r_0003_0001__Your,genv).
+arc(r_0003_0004__organising,r_0003_0006__surprise__r_0003_0007__birthday_r_0003_0008__party,arg1).
+arc(r_0003_0006__surprise__r_0003_0007__birthday_r_0003_0008__party,r_0003_0010__Mr_r_0003_0011__Brown,r_0003_0009__for).
+arc(r_0003_0010__Mr__r_0003_0011__Brown,r_0003_0014__English_r_0003_0015__teacher,prn4).
+arc(r_0003_0014__English__r_0003_0015__teacher,r_0003_0001__Your,genv).
+arc(r_0003_1023__question,r_0004_0021__buy,scope).
 arc(r_0004_0002__have,r_0004_0003__been,catenative).
 arc(r_0004_0003__been,r_0004_0004__asked,catenative).
 arc(r_0004_0004__asked,r_0003_0001__Your,arg2).
@@ -340,20 +340,20 @@ arc(r_0004_0004__asked,r_0004_0012__and,arg1).
 arc(r_0004_0006__invite,r_0003_0001__Your,arg0).
 arc(r_0004_0006__invite,r_0004_0008__wife,arg1).
 arc(r_0004_0006__invite,r_0004_0011__party,r_0004_0009__to_loc).
-arc(r_0004_0008__wife,r_0003_0010__Mr_Brown,genv).
+arc(r_0004_0008__wife,r_0003_0010__Mr__r_0003_0011__Brown,genv).
 arc(r_0004_0012__and,r_0004_0006__invite,conj1).
 arc(r_0004_0012__and,r_0004_0014__ask,conj2).
 arc(r_0004_0014__ask,r_0003_0001__Your,arg0).
 arc(r_0004_0014__ask,r_0004_0016__advice,arg1).
-arc(r_0004_0016__advice,question_0003_1023,r_0004_0017__on).
+arc(r_0004_0016__advice,r_0003_1023__question,r_0004_0017__on).
 arc(r_0004_0016__advice,r_0004_0008__wife,genv).
-arc(r_0004_0021__buy,r_0003_0010__Mr_Brown,r_0004_0022__for_arg2).
+arc(r_0004_0021__buy,r_0003_0010__Mr__r_0003_0011__Brown,r_0004_0022__for_arg2).
 arc(r_0004_0021__buy,r_0004_0019__present,arg1).
 
 </pre>
 <br>
 <pre>
-fof(id_3_A_fce_0101_2000_06__4_A_fce_0101_2000_06,axiom,
+fof(id__3_A_fce_0101_2000_06__4_A_fce_0101_2000_06,axiom,
     ? [CATENATIVEX2,CATENATIVEX9,CATENATIVEX10,STATEX12,EVENTX19,HEARERX5,HEARERX8,BROWNX14,WIFE_OF_BROWNX18,BROWNX25,EVENTX31,EVENTX30,EVENTX29,CONJX28,EVENTX27,OPERATORX23,EVENTX26,EVENTX16,EVENTX7,EVENTX6,ENTITYX17,ENTITYX24,WIFE_OF_BROWNX13,ENTITYX15,ENTITYX1,ENTITYX3,ENTITYX4] :
       ( CATENATIVEX2 = EVENTX6
       &amp; isA(EVENTX6,r_0003_0004__organising)
@@ -378,31 +378,31 @@ fof(id_3_A_fce_0101_2000_06__4_A_fce_0101_2000_06,axiom,
       &amp; arg0(EVENTX27) = HEARERX8
       &amp; arg1(EVENTX27) = ENTITYX17
       &amp; EVENTX19 = OPERATORX23
-      &amp; isA(OPERATORX23,question_0003_1023)
+      &amp; isA(OPERATORX23,r_0003_1023__question)
       &amp; scope(OPERATORX23) = EVENTX26
       &amp; isA(EVENTX26,r_0004_0021__buy)
       &amp; arg1(EVENTX26) = ENTITYX24
       &amp; r_0004_0022__for_arg2(EVENTX26) = BROWNX25
       &amp; isA(ENTITYX1,r_0003_0002__class)
       &amp; genv(ENTITYX1) = r_0003_0001__Your
-      &amp; isA(ENTITYX3,r_0003_0006__surprise_birthday_party)
-      &amp; r_0003_0009__for(ENTITYX3) = r_0003_0010__Mr_Brown
-      &amp; isA(ENTITYX4,r_0003_0014__English_teacher)
+      &amp; isA(ENTITYX3,r_0003_0006__surprise__r_0003_0007__birthday_r_0003_0008__party)
+      &amp; r_0003_0009__for(ENTITYX3) = r_0003_0010__Mr__r_0003_0011__Brown
+      &amp; isA(ENTITYX4,r_0003_0014__English__r_0003_0015__teacher)
       &amp; genv(ENTITYX4) = HEARERX5
       &amp; HEARERX5 = r_0003_0001__Your
       &amp; HEARERX8 = r_0003_0001__Your
       &amp; isA(WIFE_OF_BROWNX13,r_0004_0008__wife)
       &amp; genv(WIFE_OF_BROWNX13) = BROWNX14
-      &amp; BROWNX14 = r_0003_0010__Mr_Brown
+      &amp; BROWNX14 = r_0003_0010__Mr__r_0003_0011__Brown
       &amp; isA(ENTITYX15,r_0004_0011__party)
       &amp; isA(ENTITYX17,r_0004_0016__advice)
       &amp; genv(ENTITYX17) = WIFE_OF_BROWNX18
       &amp; r_0004_0017__on(ENTITYX17) = EVENTX19
       &amp; WIFE_OF_BROWNX18 = WIFE_OF_BROWNX13
       &amp; isA(ENTITYX24,r_0004_0019__present)
-      &amp; BROWNX25 = r_0003_0010__Mr_Brown
-      &amp; isA(r_0003_0010__Mr_Brown,r_0003_0010__Mr_Brown)
-      &amp; prn4(r_0003_0010__Mr_Brown) = ENTITYX4
+      &amp; BROWNX25 = r_0003_0010__Mr__r_0003_0011__Brown
+      &amp; isA(r_0003_0010__Mr__r_0003_0011__Brown,r_0003_0010__Mr_r_0003_0011__Brown)
+      &amp; prn4(r_0003_0010__Mr__r_0003_0011__Brown) = ENTITYX4
       &amp; isA(EVENTX7,r_0003_0003__is)
       &amp; catenative(EVENTX7) = CATENATIVEX2
       &amp; isA(EVENTX31,r_0004_0002__have)

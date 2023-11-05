@@ -162,8 +162,6 @@ In the evening my aunt took me with her to visit the house of mourning .
 </svg>
 <br>
 <pre>
-arc(cnt_0093_1005,r_0093_0006__took,scope).
-arc(cnt_0093_1005,r_0093_0011__visit,restriction).
 arc(r_0093_0005__aunt,r_0093_0004__my,genv).
 arc(r_0093_0006__took,r_0093_0003__evening,r_0093_0001__In_tmp).
 arc(r_0093_0006__took,r_0093_0004__my,arg1).
@@ -172,11 +170,13 @@ arc(r_0093_0006__took,r_0093_0009__her,r_0093_0008__with_com).
 arc(r_0093_0011__visit,r_0093_0004__my,arg0).
 arc(r_0093_0011__visit,r_0093_0013__house,arg1).
 arc(r_0093_0013__house,r_0093_0015__mourning,r_0093_0014__of).
+arc(r_0093_1005__cnt,r_0093_0006__took,scope).
+arc(r_0093_1005__cnt,r_0093_0011__visit,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_93_A_JOYCE_1914,axiom,
+fof(id__93_A_JOYCE_1914,axiom,
     ? [SPEAKERX3,AUNTX4,CONNX6,EVENTX9,EVENTX10,ENTITYX1,AUNTX2,ENTITYX7,ENTITYX8] :
       ( isA(ENTITYX1,r_0093_0003__evening)
       &amp; isA(AUNTX2,r_0093_0005__aunt)
@@ -186,7 +186,7 @@ fof(id_93_A_JOYCE_1914,axiom,
       &amp; isA(ENTITYX7,r_0093_0013__house)
       &amp; r_0093_0014__of(ENTITYX7) = ENTITYX8
       &amp; isA(ENTITYX8,r_0093_0015__mourning)
-      &amp; isA(CONNX6,cnt_0093_1005)
+      &amp; isA(CONNX6,r_0093_1005__cnt)
       &amp; scope(CONNX6) = EVENTX10
       &amp; isA(EVENTX10,r_0093_0006__took)
       &amp; r_0093_0001__In_tmp(EVENTX10) = ENTITYX1

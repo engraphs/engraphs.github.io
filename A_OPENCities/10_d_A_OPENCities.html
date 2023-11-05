@@ -246,9 +246,9 @@ arc(r_0014_0004___apos_s,r_0014_0003__that,arg0).
 arc(r_0014_0004___apos_s,r_0014_0005__terrific,prd2).
 arc(r_0014_0006__when_tmp,r_0014_0002__think,scope).
 arc(r_0014_0006__when_tmp,r_0014_0013__and,restriction).
-arc(r_0014_0008__walk_out,r_0014_0001__I,arg0).
-arc(r_0014_0008__walk_out,r_0014_0012__street,r_0014_0010__in_loc).
-arc(r_0014_0013__and,r_0014_0008__walk_out,conj1).
+arc(r_0014_0008__walk__r_0014_0009__out,r_0014_0001__I,arg0).
+arc(r_0014_0008__walk__r_0014_0009__out,r_0014_0012__street,r_0014_0010__in_loc).
+arc(r_0014_0013__and,r_0014_0008__walk__r_0014_0009__out,conj1).
 arc(r_0014_0013__and,r_0014_0014__see,conj2).
 arc(r_0014_0014__see,r_0014_0001__I,arg0).
 arc(r_0014_0014__see,r_0014_0015__people,arg1).
@@ -260,7 +260,7 @@ arc(r_0014_0018__clothes,r_0014_0021__world,r_0014_0019__from_all_round).
 </pre>
 <br>
 <pre>
-fof(id_14_A_OPENCities,axiom,
+fof(id__14_A_OPENCities,axiom,
     ? [STATEX1,SPEAKERX5,CONNX4,CONJX14,EVENTX13,EVENTX12,EVENTX7,EVENTX15,EVENTX3,ENTITYX8,ENTITYX9,ENTITYX11,ENTITYX6,ATTRIBX10,ATTRIBX2] :
       ( STATEX1 = EVENTX3
       &amp; isA(EVENTX3,r_0014_0004___apos_s)
@@ -286,7 +286,7 @@ fof(id_14_A_OPENCities,axiom,
       &amp; restriction(CONNX4) = CONJX14
       &amp; isA(CONJX14,r_0014_0013__and)
       &amp; conj1(CONJX14) = EVENTX7
-      &amp; isA(EVENTX7,r_0014_0008__walk_out)
+      &amp; isA(EVENTX7,r_0014_0008__walk__r_0014_0009__out)
       &amp; arg0(EVENTX7) = SPEAKERX5
       &amp; r_0014_0010__in_loc(EVENTX7) = ENTITYX6
       &amp; conj2(CONJX14) = EVENTX13

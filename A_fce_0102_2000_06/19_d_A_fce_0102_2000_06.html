@@ -278,14 +278,9 @@ Write us an article describing what you think people in the future will wear , a
 </svg>
 <br>
 <pre>
-arc(cnt_0019_1005,r_0019_0001__Write,scope).
-arc(cnt_0019_1005,r_0019_0016__and,restriction).
-arc(imperative_0019_1002,cnt_0019_1005,scope).
-arc(question_0019_1009,r_0019_0008__think,scope).
-arc(question_0019_1020,r_0019_0018__why,scope).
 arc(r_0019_0001__Write,r_0019_0002__us,arg2).
 arc(r_0019_0001__Write,r_0019_0004__article,arg1).
-arc(r_0019_0005__describing,question_0019_1009,arg1).
+arc(r_0019_0005__describing,r_0019_1009__question,arg1).
 arc(r_0019_0008__think,r_0019_0007__you,arg0).
 arc(r_0019_0008__think,r_0019_0013__will,arg1).
 arc(r_0019_0009__people,r_0019_0012__future,r_0019_0010__in).
@@ -294,16 +289,21 @@ arc(r_0019_0014__wear,r_0019_0006__what,arg1).
 arc(r_0019_0014__wear,r_0019_0009__people,arg0).
 arc(r_0019_0016__and,r_0019_0005__describing,conj1).
 arc(r_0019_0016__and,r_0019_0017__explaining,conj2).
-arc(r_0019_0017__explaining,question_0019_1020,arg1).
+arc(r_0019_0017__explaining,r_0019_1020__question,arg1).
 arc(r_0019_0018__why,z_0019_1022,scope).
+arc(r_0019_1002__imperative,r_0019_1005__cnt,scope).
+arc(r_0019_1005__cnt,r_0019_0001__Write,scope).
+arc(r_0019_1005__cnt,r_0019_0016__and,restriction).
+arc(r_0019_1009__question,r_0019_0008__think,scope).
+arc(r_0019_1020__question,r_0019_0018__why,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_19_A_fce_0102_2000_06,axiom,
+fof(id__19_A_fce_0102_2000_06,axiom,
     ? [STATEX7,STATEX11,STATEX18,OPERATORX2,CONNX6,CONJX25,EVENTX24,OPERATORX20,OPERATORX21,EVENTX23,EVENTX17,OPERATORX9,EVENTX16,OPERATORX14,EVENTX15,EVENTX26,ENTITYX4,ENTITYX10,ENTITYX12,ENTITYX13] :
       ( STATEX7 = OPERATORX9
-      &amp; isA(OPERATORX9,question_0019_1009)
+      &amp; isA(OPERATORX9,r_0019_1009__question)
       &amp; scope(OPERATORX9) = EVENTX16
       &amp; isA(EVENTX16,r_0019_0008__think)
       &amp; arg0(EVENTX16) = r_0019_0007__you
@@ -315,7 +315,7 @@ fof(id_19_A_fce_0102_2000_06,axiom,
       &amp; arg1(EVENTX15) = ENTITYX10
       &amp; arg0(EVENTX15) = ENTITYX12
       &amp; STATEX18 = OPERATORX20
-      &amp; isA(OPERATORX20,question_0019_1020)
+      &amp; isA(OPERATORX20,r_0019_1020__question)
       &amp; scope(OPERATORX20) = OPERATORX21
       &amp; isA(OPERATORX21,r_0019_0018__why)
       &amp; scope(OPERATORX21) = EVENTX23
@@ -325,9 +325,9 @@ fof(id_19_A_fce_0102_2000_06,axiom,
       &amp; isA(ENTITYX12,r_0019_0009__people)
       &amp; r_0019_0010__in(ENTITYX12) = ENTITYX13
       &amp; isA(ENTITYX13,r_0019_0012__future)
-      &amp; isA(OPERATORX2,imperative_0019_1002)
+      &amp; isA(OPERATORX2,r_0019_1002__imperative)
       &amp; scope(OPERATORX2) = CONNX6
-      &amp; isA(CONNX6,cnt_0019_1005)
+      &amp; isA(CONNX6,r_0019_1005__cnt)
       &amp; scope(CONNX6) = EVENTX26
       &amp; isA(EVENTX26,r_0019_0001__Write)
       &amp; arg2(EVENTX26) = r_0019_0002__us

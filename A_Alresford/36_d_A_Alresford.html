@@ -162,21 +162,21 @@ George , a part - time fireman , wore a bleeper to call him out to a fire .
 </svg>
 <br>
 <pre>
-arc(cnt_0041_1005,r_0041_0009__wore,scope).
-arc(cnt_0041_1005,r_0041_0013__call_out,restriction).
 arc(r_0041_0001__George,r_0041_0007__fireman,prn3).
 arc(r_0041_0006__time,r_0041_0004__part,attrib1).
 arc(r_0041_0007__fireman,r_0041_0006__time,nlyr2).
 arc(r_0041_0009__wore,r_0041_0001__George,arg0).
 arc(r_0041_0009__wore,r_0041_0011__bleeper,arg1).
-arc(r_0041_0013__call_out,r_0041_0001__George,arg1).
-arc(r_0041_0013__call_out,r_0041_0011__bleeper,arg0).
-arc(r_0041_0013__call_out,r_0041_0018__fire,r_0041_0016__to_dir).
+arc(r_0041_0013__call__r_0041_0015__out,r_0041_0001__George,arg1).
+arc(r_0041_0013__call__r_0041_0015__out,r_0041_0011__bleeper,arg0).
+arc(r_0041_0013__call__r_0041_0015__out,r_0041_0018__fire,r_0041_0016__to_dir).
+arc(r_0041_1005__cnt,r_0041_0009__wore,scope).
+arc(r_0041_1005__cnt,r_0041_0013__call__r_0041_0015__out,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_41_A_Alresford,axiom,
+fof(id__41_A_Alresford,axiom,
     ? [GEORGEX7,CONNX6,EVENTX9,EVENTX10,ENTITYX4,ENTITYX8,ENTITYX1,ENTITYX2,ATTRIBX3] :
       ( isA(ENTITYX1,r_0041_0007__fireman)
       &amp; nlyr2(ENTITYX1) = ENTITYX2
@@ -188,13 +188,13 @@ fof(id_41_A_Alresford,axiom,
       &amp; isA(r_0041_0001__George,r_0041_0001__George)
       &amp; prn3(r_0041_0001__George) = ENTITYX1
       &amp; isA(ATTRIBX3,r_0041_0004__part)
-      &amp; isA(CONNX6,cnt_0041_1005)
+      &amp; isA(CONNX6,r_0041_1005__cnt)
       &amp; scope(CONNX6) = EVENTX10
       &amp; isA(EVENTX10,r_0041_0009__wore)
       &amp; arg0(EVENTX10) = r_0041_0001__George
       &amp; arg1(EVENTX10) = ENTITYX4
       &amp; restriction(CONNX6) = EVENTX9
-      &amp; isA(EVENTX9,r_0041_0013__call_out)
+      &amp; isA(EVENTX9,r_0041_0013__call__r_0041_0015__out)
       &amp; arg0(EVENTX9) = ENTITYX4
       &amp; arg1(EVENTX9) = GEORGEX7
       &amp; r_0041_0016__to_dir(EVENTX9) = ENTITYX8 ) ).

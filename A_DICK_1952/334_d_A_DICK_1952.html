@@ -263,10 +263,11 @@ They watched him reach the door and pull hopefully on it without success .
 </svg>
 <br>
 <pre>
-arc(imperative_0426_1007,r_0426_0002__Come_on,scope).
 arc(r_0426_0007__said,r_0426_0006__Tance,arg0).
 arc(r_0426_0007__said,r_0426_0008__excitedly,mnr7).
-arc(r_0426_0007__said,utterance_0426_1003,arg1).
+arc(r_0426_0007__said,r_0426_1003__utterance,arg1).
+arc(r_0426_1003__utterance,r_0426_1007__imperative,part1).
+arc(r_0426_1007__imperative,r_0426_0002__Come__r_0426_0003__on,scope).
 arc(r_0427_0002__started,r_0426_0006__Tance,arg0).
 arc(r_0427_0002__started,r_0427_0005__stairs,r_0427_0003__down_clr_dir).
 arc(r_0428_0002__watched,r_0428_0001__They,arg0).
@@ -279,19 +280,18 @@ arc(r_0428_0008__pull,r_0426_0006__Tance,arg0).
 arc(r_0428_0008__pull,r_0428_0006__door,r_0428_0010__on_clr).
 arc(r_0428_0008__pull,r_0428_0009__hopefully,mnr2).
 arc(r_0428_0008__pull,r_0428_0013__success,r_0428_0012__without_mnr).
-arc(utterance_0426_1003,imperative_0426_1007,part1).
 
 </pre>
 <br>
 <pre>
-fof(id_426_A_DICK_1952__427_A_DICK_1952__428_A_DICK_1952,axiom,
+fof(id__426_A_DICK_1952__427_A_DICK_1952__428_A_DICK_1952,axiom,
     ? [STATEX1,STATEX16,TANCEX12,TANCEX15,DOORX20,EVENTX24,CONJX23,EVENTX22,EVENTX18,EVENTX14,EVENTX11,CONJX9,OPERATORX7,EVENTX8,ENTITYX21,DOORX17,ENTITYX13,QUALITYX19,QUALITYX10] :
       ( STATEX1 = CONJX9
-      &amp; isA(CONJX9,utterance_0426_1003)
+      &amp; isA(CONJX9,r_0426_1003__utterance)
       &amp; part1(CONJX9) = OPERATORX7
-      &amp; isA(OPERATORX7,imperative_0426_1007)
+      &amp; isA(OPERATORX7,r_0426_1007__imperative)
       &amp; scope(OPERATORX7) = EVENTX8
-      &amp; isA(EVENTX8,r_0426_0002__Come_on)
+      &amp; isA(EVENTX8,r_0426_0002__Come__r_0426_0003__on)
       &amp; STATEX16 = CONJX23
       &amp; isA(CONJX23,r_0428_0007__and)
       &amp; conj1(CONJX23) = EVENTX18

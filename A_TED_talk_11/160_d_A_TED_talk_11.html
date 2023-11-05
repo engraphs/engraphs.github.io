@@ -83,19 +83,19 @@ Remember that old chestnut ?
 </svg>
 <br>
 <pre>
-arc(question_0206_1004,r_0206_0001__Remember,scope).
 arc(r_0206_0001__Remember,r_0206_0004__chestnut,arg1).
 arc(r_0206_0004__chestnut,r_0206_0003__old,attrib2).
+arc(r_0206_1004__question,r_0206_0001__Remember,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_206_A_TED_talk_11,axiom,
+fof(id__206_A_TED_talk_11,axiom,
     ? [OPERATORX4,EVENTX7,ENTITYX5,ATTRIBX6] :
       ( isA(ENTITYX5,r_0206_0004__chestnut)
       &amp; attrib2(ENTITYX5) = ATTRIBX6
       &amp; isA(ATTRIBX6,r_0206_0003__old)
-      &amp; isA(OPERATORX4,question_0206_1004)
+      &amp; isA(OPERATORX4,r_0206_1004__question)
       &amp; scope(OPERATORX4) = EVENTX7
       &amp; isA(EVENTX7,r_0206_0001__Remember)
       &amp; arg1(EVENTX7) = ENTITYX5 ) ).

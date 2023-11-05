@@ -194,11 +194,9 @@ Instead , it was suggested we air Google 's promotional video to show the &ldquo
 </svg>
 <br>
 <pre>
-arc(cnt_0037_1008,r_0037_0007__air,scope).
-arc(cnt_0037_1008,r_0037_0013__show,restriction).
 arc(r_0037_0001__Instead,r_0037_0004__was,scope).
 arc(r_0037_0004__was,r_0037_0005__suggested,catenative).
-arc(r_0037_0005__suggested,cnt_0037_1008,arg1).
+arc(r_0037_0005__suggested,r_0037_1008__cnt,arg1).
 arc(r_0037_0007__air,r_0037_0006__we,arg0).
 arc(r_0037_0007__air,r_0037_0011__video,arg1).
 arc(r_0037_0011__video,r_0037_0008__Google,genv).
@@ -206,17 +204,19 @@ arc(r_0037_0011__video,r_0037_0010__promotional,attrib2).
 arc(r_0037_0013__show,r_0037_0006__we,arg0).
 arc(r_0037_0013__show,r_0037_0017__context,arg1).
 arc(r_0037_0017__context,r_0037_0016__full,attrib3).
+arc(r_0037_1008__cnt,r_0037_0007__air,scope).
+arc(r_0037_1008__cnt,r_0037_0013__show,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_37_A_Duplex,axiom,
+fof(id__37_A_Duplex,axiom,
     ? [CATENATIVEX3,STATEX5,OPERATORX1,EVENTX15,EVENTX14,CONNX9,EVENTX12,EVENTX13,ENTITYX6,ENTITYX10,ATTRIBX11,ATTRIBX7] :
       ( CATENATIVEX3 = EVENTX14
       &amp; isA(EVENTX14,r_0037_0005__suggested)
       &amp; arg1(EVENTX14) = STATEX5
       &amp; STATEX5 = CONNX9
-      &amp; isA(CONNX9,cnt_0037_1008)
+      &amp; isA(CONNX9,r_0037_1008__cnt)
       &amp; scope(CONNX9) = EVENTX13
       &amp; isA(EVENTX13,r_0037_0007__air)
       &amp; arg0(EVENTX13) = r_0037_0006__we

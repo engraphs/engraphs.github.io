@@ -226,25 +226,25 @@ We spent ages trying to create some code on the ARM end make it reliably boot up
 </svg>
 <br>
 <pre>
-arc(cnt_0046_1002,r_0046_0002__spent,scope).
-arc(cnt_0046_1002,r_0046_0004__trying,restriction).
 arc(r_0046_0002__spent,r_0046_0001__We,arg0).
 arc(r_0046_0002__spent,r_0046_0003__ages,arg1).
 arc(r_0046_0004__trying,r_0046_0003__ages,arg0).
 arc(r_0046_0006__create,r_0046_0003__ages,arg0).
 arc(r_0046_0006__create,r_0046_0008__code,arg1).
-arc(r_0046_0006__create,r_0046_0011__ARM_end,r_0046_0009__on_loc).
+arc(r_0046_0006__create,r_0046_0011__ARM__r_0046_0012__end,r_0046_0009__on_loc).
 arc(r_0046_0013__make,r_0046_0003__ages,arg0).
 arc(r_0046_0013__make,r_0046_0014__it,arg1).
-arc(r_0046_0016__boot_up,r_0046_0015__reliably,mnr1).
+arc(r_0046_0016__boot__r_0046_0017__up,r_0046_0015__reliably,mnr1).
 arc(r_0046_0019__start,r_0046_0015__reliably,mnr1).
 arc(r_0046_0019__start,r_0046_0021__keyboard,arg1).
 arc(r_0046_0019__start,r_0046_0022__properly,mnr3).
+arc(r_0046_1002__cnt,r_0046_0002__spent,scope).
+arc(r_0046_1002__cnt,r_0046_0004__trying,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_46_A_PaulFellows,axiom,
+fof(id__46_A_PaulFellows,axiom,
     ? [STATEX4,STATEX8,CONNX3,EVENTX17,EVENTX16,EVENTX15,EVENTX12,EVENTX7,EVENTX18,ENTITYX1,ENTITYX13,ENTITYX5,ENTITYX6,QUALITYX11,QUALITYX14] :
       ( isA(EVENTX7,r_0046_0006__create)
       &amp; arg0(EVENTX7) = ENTITYX1
@@ -255,7 +255,7 @@ fof(id_46_A_PaulFellows,axiom,
       &amp; arg1(EVENTX16) = r_0046_0014__it
       &amp; prd(EVENTX16) = STATEX8
       &amp; isA(EVENTX16,STATEX4)
-      &amp; isA(EVENTX12,r_0046_0016__boot_up)
+      &amp; isA(EVENTX12,r_0046_0016__boot__r_0046_0017__up)
       &amp; mnr1(EVENTX12) = QUALITYX11
       &amp; isA(EVENTX15,r_0046_0019__start)
       &amp; mnr1(EVENTX15) = QUALITYX11
@@ -264,11 +264,11 @@ fof(id_46_A_PaulFellows,axiom,
       &amp; isA(EVENTX15,STATEX8)
       &amp; isA(ENTITYX1,r_0046_0003__ages)
       &amp; isA(ENTITYX5,r_0046_0008__code)
-      &amp; isA(ENTITYX6,r_0046_0011__ARM_end)
+      &amp; isA(ENTITYX6,r_0046_0011__ARM__r_0046_0012__end)
       &amp; isA(ENTITYX13,r_0046_0021__keyboard)
       &amp; isA(QUALITYX11,r_0046_0015__reliably)
       &amp; isA(QUALITYX14,r_0046_0022__properly)
-      &amp; isA(CONNX3,cnt_0046_1002)
+      &amp; isA(CONNX3,r_0046_1002__cnt)
       &amp; scope(CONNX3) = EVENTX18
       &amp; isA(EVENTX18,r_0046_0002__spent)
       &amp; arg0(EVENTX18) = r_0046_0001__We

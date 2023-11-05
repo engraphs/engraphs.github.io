@@ -253,9 +253,9 @@
 </svg>
 <br>
 <pre>
-arc(r_0009_0005__term,r_0009_0009__information_database,prn4).
-arc(r_0009_0009__information_database,r_0009_0008__personal,attrib2).
-arc(r_0009_0009__information_database,r_0009_0012__etc.,quality6).
+arc(r_0009_0005__term,r_0009_0009__information__r_0009_0010__database,prn4).
+arc(r_0009_0009__information__r_0009_0010__database,r_0009_0008__personal,attrib2).
+arc(r_0009_0009__information__r_0009_0010__database,r_0009_0012__etc_,quality6).
 arc(r_0009_0014__as_mod,r_0009_0015__used,restriction).
 arc(r_0009_0014__as_mod,r_0009_0019__shall,scope).
 arc(r_0009_0015__used,r_0009_0018__Act,r_0009_0016__in_loc).
@@ -267,17 +267,17 @@ arc(r_0009_0025__including,r_0009_0022__assembly,arg0).
 arc(r_0009_0025__including,r_0009_0027__information,arg1).
 arc(r_0009_0027__information,r_0009_0026__personal,attrib1).
 arc(r_0009_0028__as_mod,r_0009_0025__including,scope).
-arc(r_0009_0028__as_mod,r_0009_0029__set_forth,restriction).
-arc(r_0009_0029__set_forth,r_0009_0031__below,loc4).
+arc(r_0009_0028__as_mod,r_0009_0029__set__r_0009_0030__forth,restriction).
+arc(r_0009_0029__set__r_0009_0030__forth,r_0009_0031__below,loc4).
 
 </pre>
 <br>
 <pre>
-fof(id_9_A_law_h15A119,axiom,
+fof(id__9_A_law_h15A119,axiom,
     ? [CONNX5,OPERATORX22,EVENTX23,CONNX15,EVENTX20,EVENTX21,EVENTX10,ENTITYX1,ENTITYX11,ENTITYX12,ENTITYX13,ENTITYX9,ENTITYX2,ATTRIBX14,ATTRIBX3,QUALITYX19,QUALITYX4] :
       ( isA(ENTITYX1,r_0009_0005__term)
       &amp; prn4(ENTITYX1) = ENTITYX2
-      &amp; isA(ENTITYX2,r_0009_0009__information_database)
+      &amp; isA(ENTITYX2,r_0009_0009__information__r_0009_0010__database)
       &amp; attrib2(ENTITYX2) = ATTRIBX3
       &amp; quality6(ENTITYX2) = QUALITYX4
       &amp; isA(ENTITYX9,r_0009_0018__Act)
@@ -287,7 +287,7 @@ fof(id_9_A_law_h15A119,axiom,
       &amp; arg0(EVENTX21) = ENTITYX11
       &amp; arg1(EVENTX21) = ENTITYX13
       &amp; restriction(CONNX15) = EVENTX20
-      &amp; isA(EVENTX20,r_0009_0029__set_forth)
+      &amp; isA(EVENTX20,r_0009_0029__set__r_0009_0030__forth)
       &amp; loc4(EVENTX20) = QUALITYX19
       &amp; isA(ENTITYX11,r_0009_0022__assembly)
       &amp; r_0009_0023__of(ENTITYX11) = ENTITYX12
@@ -296,7 +296,7 @@ fof(id_9_A_law_h15A119,axiom,
       &amp; attrib1(ENTITYX13) = ATTRIBX14
       &amp; isA(ATTRIBX3,r_0009_0008__personal)
       &amp; isA(ATTRIBX14,r_0009_0026__personal)
-      &amp; isA(QUALITYX4,r_0009_0012__etc.)
+      &amp; isA(QUALITYX4,r_0009_0012__etc_)
       &amp; isA(QUALITYX19,r_0009_0031__below)
       &amp; isA(CONNX5,r_0009_0014__as_mod)
       &amp; restriction(CONNX5) = EVENTX10

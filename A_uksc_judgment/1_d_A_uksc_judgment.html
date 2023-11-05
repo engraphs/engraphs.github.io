@@ -83,18 +83,18 @@ Was the advice lawful ?
 </svg>
 <br>
 <pre>
-arc(question_0001_1002,r_0001_0001__Was,scope).
 arc(r_0001_0001__Was,r_0001_0003__advice,arg0).
 arc(r_0001_0001__Was,r_0001_0004__lawful,prd2).
+arc(r_0001_1002__question,r_0001_0001__Was,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_1_A_uksc_judgment,axiom,
+fof(id__1_A_uksc_judgment,axiom,
     ? [OPERATORX2,EVENTX5,ENTITYX3,ATTRIBX4] :
       ( isA(ENTITYX3,r_0001_0003__advice)
       &amp; isA(ATTRIBX4,r_0001_0004__lawful)
-      &amp; isA(OPERATORX2,question_0001_1002)
+      &amp; isA(OPERATORX2,r_0001_1002__question)
       &amp; scope(OPERATORX2) = EVENTX5
       &amp; isA(EVENTX5,r_0001_0001__Was)
       &amp; arg0(EVENTX5) = ENTITYX3

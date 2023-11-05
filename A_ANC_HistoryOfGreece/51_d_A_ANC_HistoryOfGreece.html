@@ -202,10 +202,10 @@ The Genoese took control of the eastern Aegean Islands , which were considered t
 <pre>
 arc(r_0085_0003__took,r_0085_0002__Genoese,arg0).
 arc(r_0085_0003__took,r_0085_0004__control,arg1).
-arc(r_0085_0004__control,r_0085_0008__Aegean_Islands,r_0085_0005__of).
-arc(r_0085_0008__Aegean_Islands,r_0085_0007__eastern,attrib2).
+arc(r_0085_0004__control,r_0085_0008__Aegean__r_0085_0009__Islands,r_0085_0005__of).
+arc(r_0085_0008__Aegean__r_0085_0009__Islands,r_0085_0007__eastern,attrib2).
 arc(r_0085_0012__were,r_0085_0013__considered,catenative).
-arc(r_0085_0013__considered,r_0085_0008__Aegean_Islands,arg1).
+arc(r_0085_0013__considered,r_0085_0008__Aegean__r_0085_0009__Islands,arg1).
 arc(r_0085_0013__considered,z_0085_1011,prd).
 arc(r_0085_0016__valuable,r_0085_0015__most,quality1).
 arc(r_0085_0019__and,r_0085_0018__agriculture,conj1).
@@ -216,14 +216,14 @@ arc(z_0085_1011,r_0085_0019__and,r_0085_0017__for).
 </pre>
 <br>
 <pre>
-fof(id_85_A_ANC_HistoryOfGreece,axiom,
+fof(id__85_A_ANC_HistoryOfGreece,axiom,
     ? [CATENATIVEX3,EVENTX14,EVENTX13,EVENTX12,ENTITYX1,ENTITYX5,ENTITYX8,ENTITYX9,ENTITYX10,ATTRIBX2,ATTRIBX6,QUALITYX7] :
       ( CATENATIVEX3 = EVENTX12
       &amp; isA(EVENTX12,r_0085_0013__considered)
-      &amp; arg1(EVENTX12) = r_0085_0008__Aegean_Islands
+      &amp; arg1(EVENTX12) = r_0085_0008__Aegean__r_0085_0009__Islands
       &amp; prd(EVENTX12) = ENTITYX5
       &amp; isA(ENTITYX1,r_0085_0004__control)
-      &amp; r_0085_0005__of(ENTITYX1) = r_0085_0008__Aegean_Islands
+      &amp; r_0085_0005__of(ENTITYX1) = r_0085_0008__Aegean__r_0085_0009__Islands
       &amp; isA(ENTITYX5,z_0085_1011)
       &amp; attrib2(ENTITYX5) = ATTRIBX6
       &amp; r_0085_0017__for(ENTITYX5) = ENTITYX8
@@ -235,8 +235,8 @@ fof(id_85_A_ANC_HistoryOfGreece,axiom,
       &amp; isA(r_0085_0002__Genoese,r_0085_0002__Genoese)
       &amp; isA(EVENTX13,r_0085_0012__were)
       &amp; catenative(EVENTX13) = CATENATIVEX3
-      &amp; isA(r_0085_0008__Aegean_Islands,r_0085_0008__Aegean_Islands)
-      &amp; attrib2(r_0085_0008__Aegean_Islands) = ATTRIBX2
+      &amp; isA(r_0085_0008__Aegean__r_0085_0009__Islands,r_0085_0008__Aegean_r_0085_0009__Islands)
+      &amp; attrib2(r_0085_0008__Aegean__r_0085_0009__Islands) = ATTRIBX2
       &amp; isA(ATTRIBX2,r_0085_0007__eastern)
       &amp; isA(ATTRIBX6,r_0085_0016__valuable)
       &amp; quality1(ATTRIBX6) = QUALITYX7

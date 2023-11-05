@@ -136,27 +136,27 @@ Famous Zen masters after the Meiji period include Kousen IMAKITA , Souen SHAKU ,
 </svg>
 <br>
 <pre>
-arc(r_0076_0002__Zen_masters,r_0076_0001__Famous,attrib1).
-arc(r_0076_0002__Zen_masters,r_0076_0006__Meiji_period,r_0076_0004__after).
-arc(r_0076_0008__include,r_0076_0002__Zen_masters,arg0).
+arc(r_0076_0002__Zen__r_0076_0003__masters,r_0076_0001__Famous,attrib1).
+arc(r_0076_0002__Zen__r_0076_0003__masters,r_0076_0006__Meiji_r_0076_0007__period,r_0076_0004__after).
+arc(r_0076_0008__include,r_0076_0002__Zen__r_0076_0003__masters,arg0).
 arc(r_0076_0008__include,r_0076_0015__and,arg1).
-arc(r_0076_0015__and,r_0076_0009__Kousen_IMAKITA,conj1).
-arc(r_0076_0015__and,r_0076_0012__Souen_SHAKU,conj2).
-arc(r_0076_0015__and,r_0076_0016__Sougen_ASAHINA,conj3).
+arc(r_0076_0015__and,r_0076_0009__Kousen__r_0076_0010__IMAKITA,conj1).
+arc(r_0076_0015__and,r_0076_0012__Souen__r_0076_0013__SHAKU,conj2).
+arc(r_0076_0015__and,r_0076_0016__Sougen__r_0076_0017__ASAHINA,conj3).
 
 </pre>
 <br>
 <pre>
-fof(id_76_A_KYOTO_2,axiom,
+fof(id__76_A_KYOTO_2,axiom,
     ? [EVENTX5,ENTITYX1,ENTITYX4,ENTITYX3,ATTRIBX2] :
-      ( isA(ENTITYX1,r_0076_0002__Zen_masters)
+      ( isA(ENTITYX1,r_0076_0002__Zen__r_0076_0003__masters)
       &amp; attrib1(ENTITYX1) = ATTRIBX2
       &amp; r_0076_0004__after(ENTITYX1) = ENTITYX3
-      &amp; isA(ENTITYX3,r_0076_0006__Meiji_period)
+      &amp; isA(ENTITYX3,r_0076_0006__Meiji__r_0076_0007__period)
       &amp; isA(ENTITYX4,r_0076_0015__and)
-      &amp; conj1(ENTITYX4) = r_0076_0009__Kousen_IMAKITA
-      &amp; conj2(ENTITYX4) = r_0076_0012__Souen_SHAKU
-      &amp; conj3(ENTITYX4) = r_0076_0016__Sougen_ASAHINA
+      &amp; conj1(ENTITYX4) = r_0076_0009__Kousen__r_0076_0010__IMAKITA
+      &amp; conj2(ENTITYX4) = r_0076_0012__Souen__r_0076_0013__SHAKU
+      &amp; conj3(ENTITYX4) = r_0076_0016__Sougen__r_0076_0017__ASAHINA
       &amp; isA(ATTRIBX2,r_0076_0001__Famous)
       &amp; isA(EVENTX5,r_0076_0008__include)
       &amp; arg0(EVENTX5) = ENTITYX1

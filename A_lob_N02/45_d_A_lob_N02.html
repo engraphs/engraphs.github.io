@@ -267,10 +267,6 @@ She turned away from him to fondle Judy , who , sensing something amiss , was nu
 </svg>
 <br>
 <pre>
-arc(cnt_0084_1002,r_0084_0002__turned,scope).
-arc(cnt_0084_1002,r_0084_0007__fondle,restriction).
-arc(cnt_0084_1004,r_0084_0012__sensing,restriction).
-arc(cnt_0084_1004,r_0084_0016__was,scope).
 arc(r_0084_0002__turned,r_0084_0001__She,arg0).
 arc(r_0084_0002__turned,r_0084_0003__away,dir3).
 arc(r_0084_0002__turned,r_0084_0005__him,r_0084_0004__from_dir).
@@ -286,11 +282,15 @@ arc(r_0084_0017__nudging,r_0084_0021__endeavour,r_0084_0019__in_cnt).
 arc(r_0084_0021__endeavour,r_0084_0023__gain,emb3).
 arc(r_0084_0023__gain,r_0084_0025__attention,arg1).
 arc(r_0084_0025__attention,r_0084_0001__She,genv).
+arc(r_0084_1002__cnt,r_0084_0002__turned,scope).
+arc(r_0084_1002__cnt,r_0084_0007__fondle,restriction).
+arc(r_0084_1004__cnt,r_0084_0012__sensing,restriction).
+arc(r_0084_1004__cnt,r_0084_0016__was,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_84_A_lob_N02,axiom,
+fof(id__84_A_lob_N02,axiom,
     ? [CATENATIVEX8,STATEX11,BERYLX9,BERYLX15,CONNX3,EVENTX19,CONNX5,EVENTX18,EVENTX17,EVENTX16,EVENTX7,EVENTX20,ENTITYX10,ENTITYX14,QUALITYX1,ATTRIBX6] :
       ( CATENATIVEX8 = EVENTX17
       &amp; isA(EVENTX17,r_0084_0017__nudging)
@@ -307,7 +307,7 @@ fof(id_84_A_lob_N02,axiom,
       &amp; genv(ENTITYX14) = BERYLX15
       &amp; ( BERYLX15 = BERYLX9
         | BERYLX15 = r_0084_0001__She )
-      &amp; isA(CONNX5,cnt_0084_1004)
+      &amp; isA(CONNX5,r_0084_1004__cnt)
       &amp; restriction(CONNX5) = EVENTX7
       &amp; isA(EVENTX7,r_0084_0012__sensing)
       &amp; arg0(EVENTX7) = r_0084_0008__Judy
@@ -320,7 +320,7 @@ fof(id_84_A_lob_N02,axiom,
       &amp; attrib2(r_0084_0013__something) = ATTRIBX6
       &amp; isA(QUALITYX1,r_0084_0003__away)
       &amp; isA(ATTRIBX6,r_0084_0014__amiss)
-      &amp; isA(CONNX3,cnt_0084_1002)
+      &amp; isA(CONNX3,r_0084_1002__cnt)
       &amp; scope(CONNX3) = EVENTX20
       &amp; isA(EVENTX20,r_0084_0002__turned)
       &amp; arg0(EVENTX20) = r_0084_0001__She

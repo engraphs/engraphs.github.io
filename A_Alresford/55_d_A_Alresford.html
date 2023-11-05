@@ -203,12 +203,12 @@ These ranged from costing playground equipment to monitoring street lighting ; f
 arc(r_0061_0002__ranged,r_0061_0001__These,arg0).
 arc(r_0061_0002__ranged,r_0061_0004__costing,r_0061_0003__from_clr_dir).
 arc(r_0061_0002__ranged,r_0061_0008__monitoring,r_0061_0007__to_clr_dir).
-arc(r_0061_0004__costing,r_0061_0005__playground_equipment,arg1).
-arc(r_0061_0008__monitoring,r_0061_0009__street_lighting,arg1).
+arc(r_0061_0004__costing,r_0061_0005__playground__r_0061_0006__equipment,arg1).
+arc(r_0061_0008__monitoring,r_0061_0009__street__r_0061_0010__lighting,arg1).
 arc(r_0061_0013__allocating,r_0061_0014__grants,arg1).
 arc(r_0061_0014__grants,r_0061_0017__projects,r_0061_0015__for).
 arc(r_0061_0017__projects,r_0061_0016__local,attrib1).
-arc(r_0061_0019__vetting,r_0061_0020__planning_applications,arg1).
+arc(r_0061_0019__vetting,r_0061_0020__planning__r_0061_0021__applications,arg1).
 arc(z_0061_1024,r_0061_0001__These,arg0).
 arc(z_0061_1024,r_0061_0013__allocating,r_0061_0012__from_dir).
 arc(z_0061_1024,r_0061_0019__vetting,r_0061_0018__to_dir).
@@ -216,7 +216,7 @@ arc(z_0061_1024,r_0061_0019__vetting,r_0061_0018__to_dir).
 </pre>
 <br>
 <pre>
-fof(id_61_A_Alresford,axiom,
+fof(id__61_A_Alresford,axiom,
     ? [EVENTX1,EVENTX6,EVENTX12,EVENTX19,EVENTX25,EVENTX23,EVENTX18,EVENTX11,EVENTX10,EVENTX5,ENTITYX22,ENTITYX15,ENTITYX16,ENTITYX9,ENTITYX4,ATTRIBX17] :
       ( EVENTX1 = EVENTX5
       &amp; isA(EVENTX5,r_0061_0004__costing)
@@ -230,13 +230,13 @@ fof(id_61_A_Alresford,axiom,
       &amp; EVENTX19 = EVENTX23
       &amp; isA(EVENTX23,r_0061_0019__vetting)
       &amp; arg1(EVENTX23) = ENTITYX22
-      &amp; isA(ENTITYX4,r_0061_0005__playground_equipment)
-      &amp; isA(ENTITYX9,r_0061_0009__street_lighting)
+      &amp; isA(ENTITYX4,r_0061_0005__playground__r_0061_0006__equipment)
+      &amp; isA(ENTITYX9,r_0061_0009__street__r_0061_0010__lighting)
       &amp; isA(ENTITYX15,r_0061_0014__grants)
       &amp; r_0061_0015__for(ENTITYX15) = ENTITYX16
       &amp; isA(ENTITYX16,r_0061_0017__projects)
       &amp; attrib1(ENTITYX16) = ATTRIBX17
-      &amp; isA(ENTITYX22,r_0061_0020__planning_applications)
+      &amp; isA(ENTITYX22,r_0061_0020__planning__r_0061_0021__applications)
       &amp; isA(ATTRIBX17,r_0061_0016__local)
       &amp; isA(EVENTX11,r_0061_0002__ranged)
       &amp; arg0(EVENTX11) = r_0061_0001__These

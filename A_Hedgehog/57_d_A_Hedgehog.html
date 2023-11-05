@@ -305,17 +305,17 @@ In a major DEFRA study , which assessed the ecological consequences of badger re
 </svg>
 <br>
 <pre>
-arc(r_0062_0004__DEFRA_study,r_0062_0003__major,attrib2).
-arc(r_0062_0008__assessed,r_0062_0004__DEFRA_study,arg0).
+arc(r_0062_0004__DEFRA__r_0062_0005__study,r_0062_0003__major,attrib2).
+arc(r_0062_0008__assessed,r_0062_0004__DEFRA__r_0062_0005__study,arg0).
 arc(r_0062_0008__assessed,r_0062_0011__consequences,arg1).
 arc(r_0062_0011__consequences,r_0062_0010__ecological,attrib2).
-arc(r_0062_0011__consequences,r_0062_0013__badger_removal,r_0062_0012__of).
-arc(r_0062_0013__badger_removal,r_0062_0018__badger_culling_trial,r_0062_0015__during).
-arc(r_0062_0018__badger_culling_trial,r_0062_0017__randomised,attrib2).
-arc(r_0062_0021__lasting,r_0062_0018__badger_culling_trial,arg0).
+arc(r_0062_0011__consequences,r_0062_0013__badger__r_0062_0014__removal,r_0062_0012__of).
+arc(r_0062_0013__badger__r_0062_0014__removal,r_0062_0018__badger_r_0062_0019__culling_r_0062_0020__trial,r_0062_0015__during).
+arc(r_0062_0018__badger__r_0062_0019__culling_r_0062_0020__trial,r_0062_0017__randomised,attrib2).
+arc(r_0062_0021__lasting,r_0062_0018__badger__r_0062_0019__culling_r_0062_0020__trial,arg0).
 arc(r_0062_0021__lasting,r_0062_0023__1998,r_0062_0022__from_tmp).
 arc(r_0062_0021__lasting,r_0062_0025__2006,r_0062_0024__to_tmp).
-arc(r_0062_0028__was,r_0062_0004__DEFRA_study,r_0062_0001__In_loc).
+arc(r_0062_0028__was,r_0062_0004__DEFRA__r_0062_0005__study,r_0062_0001__In_loc).
 arc(r_0062_0028__was,r_0062_0029__found,catenative).
 arc(r_0062_0029__found,r_0062_0036__had,arg1).
 arc(r_0062_0031__removing,r_0062_0032__badgers,arg1).
@@ -329,7 +329,7 @@ arc(r_0062_0043__species,r_0062_0042__other,attrib1).
 </pre>
 <br>
 <pre>
-fof(id_62_A_Hedgehog,axiom,
+fof(id__62_A_Hedgehog,axiom,
     ? [CATENATIVEX13,STATEX15,STATEX16,EVENTX28,EVENTX27,EVENTX26,EVENTX21,EVENTX11,EVENTX10,ENTITYX1,ENTITYX22,ENTITYX23,ENTITYX24,ENTITYX19,ENTITYX20,ENTITYX3,ENTITYX5,ENTITYX6,ENTITYX8,ENTITYX9,ATTRIBX25,ATTRIBX2,ATTRIBX4,ATTRIBX7] :
       ( CATENATIVEX13 = EVENTX27
       &amp; isA(EVENTX27,r_0062_0029__found)
@@ -345,18 +345,18 @@ fof(id_62_A_Hedgehog,axiom,
       &amp; isA(EVENTX11,r_0062_0008__assessed)
       &amp; arg0(EVENTX11) = ENTITYX1
       &amp; arg1(EVENTX11) = ENTITYX3
-      &amp; isA(ENTITYX1,r_0062_0004__DEFRA_study)
+      &amp; isA(ENTITYX1,r_0062_0004__DEFRA__r_0062_0005__study)
       &amp; attrib2(ENTITYX1) = ATTRIBX2
       &amp; isA(ENTITYX3,r_0062_0011__consequences)
       &amp; attrib2(ENTITYX3) = ATTRIBX4
       &amp; r_0062_0012__of(ENTITYX3) = ENTITYX5
-      &amp; isA(ENTITYX5,r_0062_0013__badger_removal)
+      &amp; isA(ENTITYX5,r_0062_0013__badger__r_0062_0014__removal)
       &amp; r_0062_0015__during(ENTITYX5) = ENTITYX6
       &amp; isA(EVENTX10,r_0062_0021__lasting)
       &amp; arg0(EVENTX10) = ENTITYX6
       &amp; r_0062_0022__from_tmp(EVENTX10) = ENTITYX8
       &amp; r_0062_0024__to_tmp(EVENTX10) = ENTITYX9
-      &amp; isA(ENTITYX6,r_0062_0018__badger_culling_trial)
+      &amp; isA(ENTITYX6,r_0062_0018__badger__r_0062_0019__culling_r_0062_0020__trial)
       &amp; attrib2(ENTITYX6) = ATTRIBX7
       &amp; isA(ENTITYX8,r_0062_0023__1998)
       &amp; isA(ENTITYX9,r_0062_0025__2006)

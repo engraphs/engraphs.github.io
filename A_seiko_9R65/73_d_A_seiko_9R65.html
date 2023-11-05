@@ -96,21 +96,21 @@ For replacement of parts , please specify &ldquo; GRAND SEIKO GENUINE PARTS &rdq
 </svg>
 <br>
 <pre>
-arc(imperative_0093_1002,r_0093_0007__specify,scope).
 arc(r_0093_0002__replacement,r_0093_0004__parts,r_0093_0003__of).
 arc(r_0093_0007__specify,r_0093_0002__replacement,r_0093_0001__For).
-arc(r_0093_0007__specify,r_0093_0009__GRAND_SEIKO_GENUINE_PARTS,arg1).
+arc(r_0093_0007__specify,r_0093_0009__GRAND__r_0093_0010__SEIKO_r_0093_0011__GENUINE_r_0093_0012__PARTS,arg1).
+arc(r_0093_1002__imperative,r_0093_0007__specify,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_93_A_seiko_9R65,axiom,
+fof(id__93_A_seiko_9R65,axiom,
     ? [OPERATORX2,EVENTX7,ENTITYX4,ENTITYX6,ENTITYX5] :
       ( isA(ENTITYX4,r_0093_0002__replacement)
       &amp; r_0093_0003__of(ENTITYX4) = ENTITYX5
       &amp; isA(ENTITYX5,r_0093_0004__parts)
-      &amp; isA(ENTITYX6,r_0093_0009__GRAND_SEIKO_GENUINE_PARTS)
-      &amp; isA(OPERATORX2,imperative_0093_1002)
+      &amp; isA(ENTITYX6,r_0093_0009__GRAND__r_0093_0010__SEIKO_r_0093_0011__GENUINE_r_0093_0012__PARTS)
+      &amp; isA(OPERATORX2,r_0093_1002__imperative)
       &amp; scope(OPERATORX2) = EVENTX7
       &amp; isA(EVENTX7,r_0093_0007__specify)
       &amp; r_0093_0001__For(EVENTX7) = ENTITYX4

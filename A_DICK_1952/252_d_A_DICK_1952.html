@@ -109,19 +109,19 @@
 </svg>
 <br>
 <pre>
-arc(question_0316_1003,r_0316_0004__fires,scope).
 arc(r_0316_0004__fires,r_0316_0003__who,arg0).
 arc(r_0316_0004__fires,r_0316_0005__it,arg1).
-arc(r_0316_0009__said,question_0316_1003,arg1).
 arc(r_0316_0009__said,r_0316_0008__Tance,arg0).
+arc(r_0316_0009__said,r_0316_1003__question,arg1).
+arc(r_0316_1003__question,r_0316_0004__fires,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_316_A_DICK_1952,axiom,
+fof(id__316_A_DICK_1952,axiom,
     ? [STATEX1,EVENTX6,OPERATORX3,EVENTX5,ENTITYX4] :
       ( STATEX1 = OPERATORX3
-      &amp; isA(OPERATORX3,question_0316_1003)
+      &amp; isA(OPERATORX3,r_0316_1003__question)
       &amp; scope(OPERATORX3) = EVENTX5
       &amp; isA(EVENTX5,r_0316_0004__fires)
       &amp; arg0(EVENTX5) = ENTITYX4

@@ -707,15 +707,16 @@ I took this fraternisation as defeat but I had to introduce her to a better port
 </svg>
 <br>
 <pre>
-arc(cnt_0051_1040,r_0053_0012__smiled,scope).
-arc(cnt_0051_1040,r_0053_0014__introducing,restriction).
 arc(r_0051_0003__show,r_0051_0002__You,arg0).
 arc(r_0051_0003__show,r_0051_0004__me,arg2).
 arc(r_0051_0003__show,r_0051_0005__one,arg1).
 arc(r_0051_0007__like,r_0051_0002__You,arg0).
 arc(r_0051_0007__like,r_0051_0005__one,arg1).
 arc(r_0051_0011__said,r_0051_0004__me,arg0).
-arc(r_0051_0011__said,utterance_0051_1003,arg1).
+arc(r_0051_0011__said,r_0051_1003__utterance,arg1).
+arc(r_0051_1003__utterance,r_0051_0003__show,part1).
+arc(r_0051_1040__cnt,r_0053_0012__smiled,scope).
+arc(r_0051_1040__cnt,r_0053_0014__introducing,restriction).
 arc(r_0052_0001__As_mod,r_0052_0003__mentioned,restriction).
 arc(r_0052_0001__As_mod,r_0052_0008__not,scope).
 arc(r_0052_0003__mentioned,r_0052_0002__I,arg0).
@@ -737,9 +738,9 @@ arc(r_0053_0004__encircled,r_0053_0002__eyes,arg1).
 arc(r_0053_0004__encircled,r_0053_0007__shadows,r_0053_0005__with_mnr).
 arc(r_0053_0007__shadows,r_0053_0006__dark,attrib1).
 arc(r_0053_0008__so_that_cnt,r_0053_0004__encircled,scope).
-arc(r_0053_0008__so_that_cnt,r_0053_0009__even_when_tmp,restriction).
-arc(r_0053_0009__even_when_tmp,cnt_0051_1040,restriction).
-arc(r_0053_0009__even_when_tmp,r_0053_0021__remained,scope).
+arc(r_0053_0008__so_that_cnt,r_0053_0009__even__r_0053_0010__when_tmp,restriction).
+arc(r_0053_0009__even__r_0053_0010__when_tmp,r_0051_1040__cnt,restriction).
+arc(r_0053_0009__even__r_0053_0010__when_tmp,r_0053_0021__remained,scope).
 arc(r_0053_0012__smiled,r_0051_0004__me,arg0).
 arc(r_0053_0014__introducing,r_0051_0004__me,arg0).
 arc(r_0053_0014__introducing,r_0051_0004__me,arg1).
@@ -760,15 +761,14 @@ arc(r_0054_0011__introduce,r_0051_0004__me,arg1).
 arc(r_0054_0011__introduce,r_0052_0002__I,arg0).
 arc(r_0054_0011__introduce,r_0054_0016__portrait,r_0054_0013__to_clr).
 arc(r_0054_0016__portrait,r_0054_0015__better,attrib2).
-arc(utterance_0051_1003,r_0051_0003__show,part1).
 
 </pre>
 <br>
 <pre>
-fof(id_51_A_LooseChange__52_A_LooseChange__53_A_LooseChange__54_A_LooseChange,axiom,
+fof(id__51_A_LooseChange__52_A_LooseChange__53_A_LooseChange__54_A_LooseChange,axiom,
     ? [STATEX1,EVENTX17,CATENATIVEX33,STATEX62,HEARERX4,LAYLORX8,SPEAKERX15,LAYLORX28,LAYLORX32,LAYLORX39,LAYLORX42,EYES_OF_LAYLORX47,SPEAKERX57,SPEAKERX61,LAYLORX63,CONJX68,EVENTX67,EVENTX66,EVENTX60,EVENTX54,CONNX37,CONNX38,EVENTX52,CONNX41,EVENTX45,EVENTX46,EVENTX53,CONJX30,EVENTX29,CONNX12,OPERATORX23,EVENTX24,EVENTX22,EVENTX14,EVENTX9,CONJX7,EVENTX6,EVENTX5,ENTITYX64,ENTITYX58,ENTITYX59,EYES_OF_LAYLORX31,ENTITYX35,ENTITYX49,ENTITYX51,ENTITYX44,ENTITYX25,ENTITYX16,ENTITYX20,ENTITYX21,QUALITYX43,QUALITYX13,ATTRIBX65,ATTRIBX48,ATTRIBX50,ATTRIBX36] :
       ( STATEX1 = CONJX7
-      &amp; isA(CONJX7,utterance_0051_1003)
+      &amp; isA(CONJX7,r_0051_1003__utterance)
       &amp; part1(CONJX7) = EVENTX6
       &amp; isA(EVENTX6,r_0051_0003__show)
       &amp; arg0(EVENTX6) = r_0051_0002__You
@@ -784,9 +784,9 @@ fof(id_51_A_LooseChange__52_A_LooseChange__53_A_LooseChange__54_A_LooseChange,ax
       &amp; arg1(EVENTX53) = EYES_OF_LAYLORX31
       &amp; r_0053_0005__with_mnr(EVENTX53) = ENTITYX35
       &amp; restriction(CONNX37) = CONNX38
-      &amp; isA(CONNX38,r_0053_0009__even_when_tmp)
+      &amp; isA(CONNX38,r_0053_0009__even__r_0053_0010__when_tmp)
       &amp; restriction(CONNX38) = CONNX41
-      &amp; isA(CONNX41,cnt_0051_1040)
+      &amp; isA(CONNX41,r_0051_1040__cnt)
       &amp; scope(CONNX41) = EVENTX46
       &amp; isA(EVENTX46,r_0053_0012__smiled)
       &amp; arg0(EVENTX46) = LAYLORX39

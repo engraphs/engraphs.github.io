@@ -350,19 +350,19 @@ Now your English teacher has asked you to write a composition , giving your opin
 </svg>
 <br>
 <pre>
-arc(cnt_0023_1014,r_0024_0009__write,scope).
-arc(cnt_0023_1014,r_0024_0013__giving,restriction).
 arc(r_0023_0002__have,r_0023_0004__had,catenative).
 arc(r_0023_0004__had,r_0023_0001__You,arg0).
 arc(r_0023_0004__had,r_0023_0003__recently,tmp1).
-arc(r_0023_0004__had,r_0023_0006__class_discussion,arg1).
-arc(r_0023_0006__class_discussion,r_0023_0009__shopping,r_0023_0008__about).
-arc(r_0024_0003__English_teacher,r_0023_0001__You,genv).
+arc(r_0023_0004__had,r_0023_0006__class__r_0023_0007__discussion,arg1).
+arc(r_0023_0006__class__r_0023_0007__discussion,r_0023_0009__shopping,r_0023_0008__about).
+arc(r_0023_1014__cnt,r_0024_0009__write,scope).
+arc(r_0023_1014__cnt,r_0024_0013__giving,restriction).
+arc(r_0024_0003__English__r_0024_0004__teacher,r_0023_0001__You,genv).
 arc(r_0024_0005__has,r_0024_0001__Now,tmp1).
 arc(r_0024_0005__has,r_0024_0006__asked,catenative).
-arc(r_0024_0006__asked,cnt_0023_1014,arg1).
 arc(r_0024_0006__asked,r_0023_0001__You,arg2).
-arc(r_0024_0006__asked,r_0024_0003__English_teacher,arg0).
+arc(r_0024_0006__asked,r_0023_1014__cnt,arg1).
+arc(r_0024_0006__asked,r_0024_0003__English__r_0024_0004__teacher,arg0).
 arc(r_0024_0009__write,r_0023_0001__You,arg0).
 arc(r_0024_0009__write,r_0024_0011__composition,arg1).
 arc(r_0024_0013__giving,r_0023_0001__You,arg0).
@@ -379,7 +379,7 @@ arc(r_0024_0025__enjoyable,r_0024_0024__always,quality1).
 </pre>
 <br>
 <pre>
-fof(id_23_A_fce_0100_2000_06__24_A_fce_0100_2000_06,axiom,
+fof(id__23_A_fce_0100_2000_06__24_A_fce_0100_2000_06,axiom,
     ? [CATENATIVEX1,CATENATIVEX10,STATEX12,EVENTX20,HEARERX9,HEARERX11,HEARERX17,EVENTX29,EVENTX28,CONNX15,EVENTX26,OPERATORX24,EVENTX25,EVENTX27,EVENTX6,EVENTX5,ENTITYX8,ENTITYX13,ENTITYX16,ENTITYX18,ENTITYX21,ENTITYX3,ENTITYX4,QUALITYX7,QUALITYX23,QUALITYX2,ATTRIBX19,ATTRIBX22] :
       ( CATENATIVEX1 = EVENTX5
       &amp; isA(EVENTX5,r_0023_0004__had)
@@ -392,7 +392,7 @@ fof(id_23_A_fce_0100_2000_06__24_A_fce_0100_2000_06,axiom,
       &amp; arg2(EVENTX28) = HEARERX11
       &amp; arg1(EVENTX28) = STATEX12
       &amp; STATEX12 = CONNX15
-      &amp; isA(CONNX15,cnt_0023_1014)
+      &amp; isA(CONNX15,r_0023_1014__cnt)
       &amp; scope(CONNX15) = EVENTX27
       &amp; isA(EVENTX27,r_0024_0009__write)
       &amp; arg0(EVENTX27) = HEARERX11
@@ -407,10 +407,10 @@ fof(id_23_A_fce_0100_2000_06__24_A_fce_0100_2000_06,axiom,
       &amp; isA(EVENTX25,r_0024_0022__is)
       &amp; arg0(EVENTX25) = ENTITYX21
       &amp; prd2(EVENTX25) = ATTRIBX22
-      &amp; isA(ENTITYX3,r_0023_0006__class_discussion)
+      &amp; isA(ENTITYX3,r_0023_0006__class__r_0023_0007__discussion)
       &amp; r_0023_0008__about(ENTITYX3) = ENTITYX4
       &amp; isA(ENTITYX4,r_0023_0009__shopping)
-      &amp; isA(ENTITYX8,r_0024_0003__English_teacher)
+      &amp; isA(ENTITYX8,r_0024_0003__English__r_0024_0004__teacher)
       &amp; genv(ENTITYX8) = HEARERX9
       &amp; HEARERX9 = r_0023_0001__You
       &amp; HEARERX11 = r_0023_0001__You

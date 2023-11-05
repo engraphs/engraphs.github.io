@@ -351,10 +351,9 @@ And that 's why you 've got an ARM in your phone today , it would take no power 
 </svg>
 <br>
 <pre>
-arc(question_0014_1003,r_0014_0004__why,scope).
-arc(r_0014_0003___apos_s,question_0014_1003,prd2).
 arc(r_0014_0003___apos_s,r_0014_0002__that,arg0).
-arc(r_0014_0003___apos_s,r_0014_0018__quantificational__no,prn6).
+arc(r_0014_0003___apos_s,r_0014_0018__quantificational__r_0014_0018__no,prn6).
+arc(r_0014_0003___apos_s,r_0014_1003__question,prd2).
 arc(r_0014_0004__why,r_0014_0006___apos_ve,scope).
 arc(r_0014_0006___apos_ve,r_0014_0007__got,catenative).
 arc(r_0014_0007__got,r_0014_0005__you,arg0).
@@ -366,24 +365,25 @@ arc(r_0014_0016__would,r_0014_0017__take,scope).
 arc(r_0014_0017__take,r_0014_0019__power,arg1).
 arc(r_0014_0017__take,r_0014_0021__keep,arg0).
 arc(r_0014_0017__take,r_0014_0029__would,prn6).
-arc(r_0014_0018__quantificational__no,r_0014_0016__would,scope).
-arc(r_0014_0018__quantificational__no,r_0014_0019__power,restriction).
+arc(r_0014_0018__quantificational__r_0014_0018__no,r_0014_0016__would,scope).
+arc(r_0014_0018__quantificational__r_0014_0018__no,r_0014_0019__power,restriction).
 arc(r_0014_0021__keep,r_0014_0019__power,arg0).
-arc(r_0014_0023__3_micron_ARM,r_0014_0027__25000_transistors,r_0014_0026__with).
+arc(r_0014_0023__3__r_0014_0024__micron_r_0014_0025__ARM,r_0014_0027__25000_r_0014_0028__transistors,r_0014_0026__with).
 arc(r_0014_0029__would,r_0014_0030__run,scope).
-arc(r_0014_0030__run,r_0014_0023__3_micron_ARM,arg0).
-arc(r_0014_0030__run,r_0014_0032__30_seconds,r_0014_0031__for_tmp).
+arc(r_0014_0030__run,r_0014_0023__3__r_0014_0024__micron_r_0014_0025__ARM,arg0).
+arc(r_0014_0030__run,r_0014_0032__30__r_0014_0033__seconds,r_0014_0031__for_tmp).
 arc(r_0014_0030__run,r_0014_0036__energy,r_0014_0034__off_mnr).
 arc(r_0014_0037__stored,r_0014_0036__energy,arg0).
 arc(r_0014_0037__stored,r_0014_0040__fan,r_0014_0038__in_loc).
+arc(r_0014_1003__question,r_0014_0004__why,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_14_A_PaulFellows,axiom,
+fof(id__14_A_PaulFellows,axiom,
     ? [STATEX1,CATENATIVEX5,EVENTX12,STATEX16,EVENTX18,HEARERX8,EVENTX28,QUANTX15,OPERATORX26,EVENTX27,OPERATORX24,EVENTX25,EVENTX23,EVENTX17,OPERATORX3,OPERATORX4,EVENTX11,EVENTX10,ENTITYX14,ENTITYX20,ENTITYX21,ENTITYX22,ENTITYX19,ENTITYX6,ENTITYX7,ENTITYX9] :
       ( STATEX1 = OPERATORX3
-      &amp; isA(OPERATORX3,question_0014_1003)
+      &amp; isA(OPERATORX3,r_0014_1003__question)
       &amp; scope(OPERATORX3) = OPERATORX4
       &amp; isA(OPERATORX4,r_0014_0004__why)
       &amp; scope(OPERATORX4) = EVENTX11
@@ -396,7 +396,7 @@ fof(id_14_A_PaulFellows,axiom,
       &amp; r_0014_0010__in_loc(EVENTX10) = ENTITYX7
       &amp; tmp(EVENTX10) = ENTITYX9
       &amp; EVENTX12 = QUANTX15
-      &amp; isA(QUANTX15,r_0014_0018__quantificational__no)
+      &amp; isA(QUANTX15,r_0014_0018__quantificational__r_0014_0018__no)
       &amp; restriction(QUANTX15) = ENTITYX14
       &amp; isA(ENTITYX14,r_0014_0019__power)
       &amp; scope(QUANTX15) = OPERATORX26
@@ -414,7 +414,7 @@ fof(id_14_A_PaulFellows,axiom,
       &amp; isA(OPERATORX24,r_0014_0029__would)
       &amp; scope(OPERATORX24) = EVENTX25
       &amp; isA(EVENTX25,r_0014_0030__run)
-      &amp; arg0(EVENTX25) = r_0014_0023__3_micron_ARM
+      &amp; arg0(EVENTX25) = r_0014_0023__3__r_0014_0024__micron_r_0014_0025__ARM
       &amp; r_0014_0031__for_tmp(EVENTX25) = ENTITYX20
       &amp; r_0014_0034__off_mnr(EVENTX25) = ENTITYX21
       &amp; isA(ENTITYX6,r_0014_0009__ARM)
@@ -422,15 +422,15 @@ fof(id_14_A_PaulFellows,axiom,
       &amp; genv(ENTITYX7) = HEARERX8
       &amp; HEARERX8 = r_0014_0005__you
       &amp; isA(ENTITYX9,r_0014_0013__today)
-      &amp; isA(ENTITYX19,r_0014_0027__25000_transistors)
-      &amp; isA(ENTITYX20,r_0014_0032__30_seconds)
+      &amp; isA(ENTITYX19,r_0014_0027__25000__r_0014_0028__transistors)
+      &amp; isA(ENTITYX20,r_0014_0032__30__r_0014_0033__seconds)
       &amp; isA(EVENTX23,r_0014_0037__stored)
       &amp; arg0(EVENTX23) = ENTITYX21
       &amp; r_0014_0038__in_loc(EVENTX23) = ENTITYX22
       &amp; isA(ENTITYX21,r_0014_0036__energy)
       &amp; isA(ENTITYX22,r_0014_0040__fan)
-      &amp; isA(r_0014_0023__3_micron_ARM,r_0014_0023__3_micron_ARM)
-      &amp; r_0014_0026__with(r_0014_0023__3_micron_ARM) = ENTITYX19
+      &amp; isA(r_0014_0023__3__r_0014_0024__micron_r_0014_0025__ARM,r_0014_0023__3_r_0014_0024__micron_r_0014_0025__ARM)
+      &amp; r_0014_0026__with(r_0014_0023__3__r_0014_0024__micron_r_0014_0025__ARM) = ENTITYX19
       &amp; isA(EVENTX28,r_0014_0003___apos_s)
       &amp; arg0(EVENTX28) = r_0014_0002__that
       &amp; prd2(EVENTX28) = STATEX1

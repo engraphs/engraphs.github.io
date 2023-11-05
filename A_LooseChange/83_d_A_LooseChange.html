@@ -122,24 +122,24 @@ Could n't she have gone to the police ?
 </svg>
 <br>
 <pre>
-arc(question_0151_1002,r_0151_0001__Could,scope).
 arc(r_0151_0001__Could,r_0151_0002__n_apos_t,scope).
 arc(r_0151_0002__n_apos_t,r_0151_0004__have,scope).
 arc(r_0151_0004__have,r_0151_0005__gone,catenative).
 arc(r_0151_0005__gone,r_0151_0003__she,arg0).
 arc(r_0151_0005__gone,r_0151_0008__police,r_0151_0006__to_dir).
+arc(r_0151_1002__question,r_0151_0001__Could,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_151_A_LooseChange,axiom,
+fof(id__151_A_LooseChange,axiom,
     ? [CATENATIVEX5,OPERATORX2,OPERATORX3,OPERATORX4,EVENTX8,EVENTX7,ENTITYX6] :
       ( CATENATIVEX5 = EVENTX7
       &amp; isA(EVENTX7,r_0151_0005__gone)
       &amp; arg0(EVENTX7) = r_0151_0003__she
       &amp; r_0151_0006__to_dir(EVENTX7) = ENTITYX6
       &amp; isA(ENTITYX6,r_0151_0008__police)
-      &amp; isA(OPERATORX2,question_0151_1002)
+      &amp; isA(OPERATORX2,r_0151_1002__question)
       &amp; scope(OPERATORX2) = OPERATORX3
       &amp; isA(OPERATORX3,r_0151_0001__Could)
       &amp; scope(OPERATORX3) = OPERATORX4

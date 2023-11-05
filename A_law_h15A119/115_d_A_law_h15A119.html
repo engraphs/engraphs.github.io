@@ -410,52 +410,52 @@ When a business operator handling personal information entrusts an individual or
 </svg>
 <br>
 <pre>
-arc(cnt_0115_1025,r_0115_0029__exercise,scope).
-arc(cnt_0115_1025,r_0115_0038__ensure,restriction).
 arc(r_0115_0001__When_tmp,r_0115_0008__entrusts,restriction).
 arc(r_0115_0001__When_tmp,r_0115_0028__shall,scope).
-arc(r_0115_0005__handling,r_0115_0003__business_operator,arg0).
+arc(r_0115_0005__handling,r_0115_0003__business__r_0115_0004__operator,arg0).
 arc(r_0115_0005__handling,r_0115_0007__information,arg1).
 arc(r_0115_0007__information,r_0115_0006__personal,attrib1).
-arc(r_0115_0008__entrusts,r_0115_0003__business_operator,arg0).
+arc(r_0115_0008__entrusts,r_0115_0003__business__r_0115_0004__operator,arg0).
 arc(r_0115_0008__entrusts,r_0115_0011__or,arg1).
 arc(r_0115_0008__entrusts,r_0115_0017__handling,r_0115_0015__with_clr).
 arc(r_0115_0011__or,r_0115_0010__individual,conj1).
-arc(r_0115_0011__or,r_0115_0013__business_operator,conj2).
+arc(r_0115_0011__or,r_0115_0013__business__r_0115_0014__operator,conj2).
 arc(r_0115_0017__handling,r_0115_0020__data,r_0115_0018__of).
 arc(r_0115_0020__data,r_0115_0019__personal,attrib1).
 arc(r_0115_0020__data,r_0115_0023__or,z_0115_1013).
 arc(r_0115_0023__or,r_0115_0022__whole,r_0115_0021__in).
 arc(r_0115_0023__or,r_0115_0025__part,r_0115_0024__in).
-arc(r_0115_0028__shall,cnt_0115_1025,scope).
-arc(r_0115_0029__exercise,r_0115_0003__business_operator,arg0).
+arc(r_0115_0028__shall,r_0115_1025__cnt,scope).
+arc(r_0115_0029__exercise,r_0115_0003__business__r_0115_0004__operator,arg0).
 arc(r_0115_0029__exercise,r_0115_0033__supervision,arg1).
 arc(r_0115_0031__and,r_0115_0030__necessary,conj1).
 arc(r_0115_0031__and,r_0115_0032__appropriate,conj2).
 arc(r_0115_0033__supervision,r_0115_0031__and,attrib1).
 arc(r_0115_0033__supervision,r_0115_0036__trustee,r_0115_0034__over).
-arc(r_0115_0038__ensure,r_0115_0003__business_operator,arg0).
-arc(r_0115_0038__ensure,r_0115_0040__security_control,arg1).
-arc(r_0115_0040__security_control,r_0115_0046__data,r_0115_0042__of).
+arc(r_0115_0038__ensure,r_0115_0003__business__r_0115_0004__operator,arg0).
+arc(r_0115_0038__ensure,r_0115_0040__security__r_0115_0041__control,arg1).
+arc(r_0115_0040__security__r_0115_0041__control,r_0115_0046__data,r_0115_0042__of).
 arc(r_0115_0044__entrusted,r_0115_0046__data,arg0).
 arc(r_0115_0046__data,r_0115_0045__personal,attrib3).
+arc(r_0115_1025__cnt,r_0115_0029__exercise,scope).
+arc(r_0115_1025__cnt,r_0115_0038__ensure,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_115_A_law_h15A119,axiom,
+fof(id__115_A_law_h15A119,axiom,
     ? [BUSINESSX18,CONNX1,OPERATORX24,CONNX26,EVENTX31,EVENTX29,EVENTX32,EVENTX17,EVENTX5,ENTITYX19,ENTITYX27,ENTITYX28,ENTITYX23,BUSINESSX2,ENTITYX6,ENTITYX9,ENTITYX10,CONJX14,ENTITYX15,ENTITYX16,ENTITYX7,ENTITYX8,ENTITYX3,ATTRIBX30,ATTRIBX20,ATTRIBX21,ATTRIBX22,ATTRIBX12,ATTRIBX4] :
       ( isA(EVENTX5,r_0115_0005__handling)
       &amp; arg0(EVENTX5) = BUSINESSX2
       &amp; arg1(EVENTX5) = ENTITYX3
-      &amp; isA(BUSINESSX2,r_0115_0003__business_operator)
+      &amp; isA(BUSINESSX2,r_0115_0003__business__r_0115_0004__operator)
       &amp; isA(ENTITYX3,r_0115_0007__information)
       &amp; attrib1(ENTITYX3) = ATTRIBX4
       &amp; isA(ENTITYX6,r_0115_0011__or)
       &amp; conj1(ENTITYX6) = ENTITYX7
       &amp; conj2(ENTITYX6) = ENTITYX8
       &amp; isA(ENTITYX7,r_0115_0010__individual)
-      &amp; isA(ENTITYX8,r_0115_0013__business_operator)
+      &amp; isA(ENTITYX8,r_0115_0013__business__r_0115_0014__operator)
       &amp; isA(ENTITYX9,r_0115_0017__handling)
       &amp; r_0115_0018__of(ENTITYX9) = ENTITYX10
       &amp; isA(ENTITYX10,r_0115_0020__data)
@@ -471,7 +471,7 @@ fof(id_115_A_law_h15A119,axiom,
       &amp; attrib1(ENTITYX19) = ATTRIBX20
       &amp; r_0115_0034__over(ENTITYX19) = ENTITYX23
       &amp; isA(ENTITYX23,r_0115_0036__trustee)
-      &amp; isA(ENTITYX27,r_0115_0040__security_control)
+      &amp; isA(ENTITYX27,r_0115_0040__security__r_0115_0041__control)
       &amp; r_0115_0042__of(ENTITYX27) = ENTITYX28
       &amp; isA(EVENTX29,r_0115_0044__entrusted)
       &amp; arg0(EVENTX29) = ENTITYX28
@@ -494,7 +494,7 @@ fof(id_115_A_law_h15A119,axiom,
       &amp; scope(CONNX1) = OPERATORX24
       &amp; isA(OPERATORX24,r_0115_0028__shall)
       &amp; scope(OPERATORX24) = CONNX26
-      &amp; isA(CONNX26,cnt_0115_1025)
+      &amp; isA(CONNX26,r_0115_1025__cnt)
       &amp; scope(CONNX26) = EVENTX32
       &amp; isA(EVENTX32,r_0115_0029__exercise)
       &amp; arg0(EVENTX32) = BUSINESSX18

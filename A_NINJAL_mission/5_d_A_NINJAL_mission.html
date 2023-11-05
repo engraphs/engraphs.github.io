@@ -125,14 +125,14 @@ NINJAL 's role is to promote humanities research focused on language .
 arc(r_0006_0003__role,r_0006_0001__NINJAL,genv).
 arc(r_0006_0004__is,r_0006_0003__role,arg0).
 arc(r_0006_0004__is,r_0006_0006__promote,prd2).
-arc(r_0006_0006__promote,r_0006_0007__humanities_research,arg1).
-arc(r_0006_0009__focused,r_0006_0007__humanities_research,arg1).
+arc(r_0006_0006__promote,r_0006_0007__humanities__r_0006_0008__research,arg1).
+arc(r_0006_0009__focused,r_0006_0007__humanities__r_0006_0008__research,arg1).
 arc(r_0006_0009__focused,r_0006_0011__language,r_0006_0010__on_clr).
 
 </pre>
 <br>
 <pre>
-fof(id_6_A_NINJAL_mission,axiom,
+fof(id__6_A_NINJAL_mission,axiom,
     ? [STATEX2,EVENTX10,EVENTX9,EVENTX8,ENTITYX1,ENTITYX5,ENTITYX7] :
       ( STATEX2 = EVENTX9
       &amp; isA(EVENTX9,r_0006_0006__promote)
@@ -142,7 +142,7 @@ fof(id_6_A_NINJAL_mission,axiom,
       &amp; isA(EVENTX8,r_0006_0009__focused)
       &amp; arg1(EVENTX8) = ENTITYX5
       &amp; r_0006_0010__on_clr(EVENTX8) = ENTITYX7
-      &amp; isA(ENTITYX5,r_0006_0007__humanities_research)
+      &amp; isA(ENTITYX5,r_0006_0007__humanities__r_0006_0008__research)
       &amp; isA(ENTITYX7,r_0006_0011__language)
       &amp; isA(EVENTX10,r_0006_0004__is)
       &amp; arg0(EVENTX10) = ENTITYX1

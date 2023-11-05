@@ -311,18 +311,16 @@ For the tories were massed in answer to their whips to defeat a censure motion o
 </svg>
 <br>
 <pre>
-arc(cnt_0093_1006,r_0093_0005__massed,scope).
-arc(cnt_0093_1006,r_0093_0012__defeat,restriction).
-arc(r_0093_0004__were,cnt_0093_1006,catenative).
+arc(r_0093_0004__were,r_0093_1006__cnt,catenative).
 arc(r_0093_0005__massed,r_0093_0003__tories,arg1).
 arc(r_0093_0005__massed,r_0093_0007__answer,r_0093_0006__in_mnr).
 arc(r_0093_0007__answer,r_0093_0010__whips,r_0093_0008__to).
 arc(r_0093_0010__whips,r_0093_0009__their,genv).
 arc(r_0093_0012__defeat,r_0093_0003__tories,arg0).
-arc(r_0093_0012__defeat,r_0093_0014__censure_motion,arg1).
-arc(r_0093_0014__censure_motion,r_0093_0018__government,r_0093_0016__on).
+arc(r_0093_0012__defeat,r_0093_0014__censure__r_0093_0015__motion,arg1).
+arc(r_0093_0014__censure__r_0093_0015__motion,r_0093_0018__government,r_0093_0016__on).
 arc(r_0093_0018__government,r_0093_0026__and,r_0093_0019__for).
-arc(r_0093_0021__undermining,r_0093_0023__health_service,arg1).
+arc(r_0093_0021__undermining,r_0093_0023__health__r_0093_0024__service,arg1).
 arc(r_0093_0026__and,r_0093_0021__undermining,conj1).
 arc(r_0093_0026__and,r_0093_0027__placing,conj2).
 arc(r_0093_0027__placing,r_0093_0029__burdens,arg1).
@@ -331,15 +329,17 @@ arc(r_0093_0029__burdens,z_0093_1024,r_0093_0030__on).
 arc(r_0093_0033__able,r_0093_0032__least,quality1).
 arc(r_0093_0033__able,r_0093_0035__bear,emb3).
 arc(r_0093_0035__bear,r_0093_0036__them,arg1).
+arc(r_0093_1006__cnt,r_0093_0005__massed,scope).
+arc(r_0093_1006__cnt,r_0093_0012__defeat,restriction).
 arc(z_0093_1024,r_0093_0033__able,attrib2).
 
 </pre>
 <br>
 <pre>
-fof(id_93_A_lob_A01,axiom,
+fof(id__93_A_lob_A01,axiom,
     ? [CATENATIVEX2,EVENTX10,STATEX20,EVENTX29,CONNX7,EVENTX27,CONJX26,EVENTX25,EVENTX23,EVENTX14,EVENTX28,ENTITYX1,ENTITYX4,ENTITYX8,ENTITYX9,ENTITYX15,ENTITYX17,ENTITYX13,ENTITYX5,ATTRIBX16,ATTRIBX18,QUALITYX19] :
       ( CATENATIVEX2 = CONNX7
-      &amp; isA(CONNX7,cnt_0093_1006)
+      &amp; isA(CONNX7,r_0093_1006__cnt)
       &amp; scope(CONNX7) = EVENTX28
       &amp; isA(EVENTX28,r_0093_0005__massed)
       &amp; arg1(EVENTX28) = ENTITYX1
@@ -364,11 +364,11 @@ fof(id_93_A_lob_A01,axiom,
       &amp; r_0093_0008__to(ENTITYX4) = ENTITYX5
       &amp; isA(ENTITYX5,r_0093_0010__whips)
       &amp; genv(ENTITYX5) = r_0093_0009__their
-      &amp; isA(ENTITYX8,r_0093_0014__censure_motion)
+      &amp; isA(ENTITYX8,r_0093_0014__censure__r_0093_0015__motion)
       &amp; r_0093_0016__on(ENTITYX8) = ENTITYX9
       &amp; isA(ENTITYX9,r_0093_0018__government)
       &amp; r_0093_0019__for(ENTITYX9) = EVENTX10
-      &amp; isA(ENTITYX13,r_0093_0023__health_service)
+      &amp; isA(ENTITYX13,r_0093_0023__health__r_0093_0024__service)
       &amp; isA(ENTITYX15,r_0093_0029__burdens)
       &amp; attrib1(ENTITYX15) = ATTRIBX16
       &amp; r_0093_0030__on(ENTITYX15) = ENTITYX17

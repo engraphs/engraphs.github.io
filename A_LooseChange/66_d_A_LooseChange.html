@@ -194,7 +194,6 @@ The memory of the bitter cold still tingled at my fingertips as I said , &lsquo;
 </svg>
 <br>
 <pre>
-arc(question_0122_1010,r_0122_0017__Why,scope).
 arc(r_0122_0002__memory,r_0122_0006__cold,r_0122_0003__of).
 arc(r_0122_0006__cold,r_0122_0005__bitter,attrib2).
 arc(r_0122_0008__tingled,r_0122_0002__memory,arg0).
@@ -203,17 +202,18 @@ arc(r_0122_0008__tingled,r_0122_0011__fingertips,r_0122_0009__at_clr).
 arc(r_0122_0011__fingertips,r_0122_0010__my,genv).
 arc(r_0122_0012__as_cnt,r_0122_0008__tingled,scope).
 arc(r_0122_0012__as_cnt,r_0122_0014__said,restriction).
-arc(r_0122_0014__said,question_0122_1010,arg1).
 arc(r_0122_0014__said,r_0122_0010__my,arg0).
+arc(r_0122_0014__said,r_0122_1010__question,arg1).
 arc(r_0122_0017__Why,z_0122_1012,scope).
+arc(r_0122_1010__question,r_0122_0017__Why,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_122_A_LooseChange,axiom,
+fof(id__122_A_LooseChange,axiom,
     ? [STATEX8,SPEAKERX7,CONNX6,EVENTX14,OPERATORX10,OPERATORX11,EVENTX13,EVENTX15,ENTITYX1,ENTITYX5,ENTITYX2,ATTRIBX3,QUALITYX4] :
       ( STATEX8 = OPERATORX10
-      &amp; isA(OPERATORX10,question_0122_1010)
+      &amp; isA(OPERATORX10,r_0122_1010__question)
       &amp; scope(OPERATORX10) = OPERATORX11
       &amp; isA(OPERATORX11,r_0122_0017__Why)
       &amp; scope(OPERATORX11) = EVENTX13

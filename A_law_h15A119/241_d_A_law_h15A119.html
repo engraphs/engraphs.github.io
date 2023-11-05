@@ -574,20 +574,18 @@
 </svg>
 <br>
 <pre>
-arc(cnt_0241_1008,r_0241_0012__requested,scope).
-arc(cnt_0241_1008,r_0241_0020__solve,restriction).
 arc(r_0241_0004__When_tmp,r_0241_0011__is,restriction).
 arc(r_0241_0004__When_tmp,r_0241_0042__shall,scope).
-arc(r_0241_0008__information_protection_organization,r_0241_0006__authorized,attrib2).
-arc(r_0241_0008__information_protection_organization,r_0241_0007__personal,attrib3).
-arc(r_0241_0011__is,cnt_0241_1008,catenative).
-arc(r_0241_0012__requested,r_0241_0008__information_protection_organization,arg1).
-arc(r_0241_0012__requested,r_0241_0015__person,arg0_by_lgs).
-arc(r_0241_0015__person,r_0241_0017__etc.,quality4).
-arc(r_0241_0020__solve,r_0241_0008__information_protection_organization,arg0).
+arc(r_0241_0008__information__r_0241_0009__protection_r_0241_0010__organization,r_0241_0006__authorized,attrib2).
+arc(r_0241_0008__information__r_0241_0009__protection_r_0241_0010__organization,r_0241_0007__personal,attrib3).
+arc(r_0241_0011__is,r_0241_1008__cnt,catenative).
+arc(r_0241_0012__requested,r_0241_0008__information__r_0241_0009__protection_r_0241_0010__organization,arg1).
+arc(r_0241_0012__requested,r_0241_0015__person,arg0__r_0241_0013__by_lgs).
+arc(r_0241_0015__person,r_0241_0017__etc_,quality4).
+arc(r_0241_0020__solve,r_0241_0008__information__r_0241_0009__protection_r_0241_0010__organization,arg0).
 arc(r_0241_0020__solve,r_0241_0022__complaint,arg1).
 arc(r_0241_0022__complaint,r_0241_0025__handling,r_0241_0023__about).
-arc(r_0241_0022__complaint,r_0241_0031__target_business_operator,r_0241_0029__by).
+arc(r_0241_0022__complaint,r_0241_0031__target__r_0241_0032__business_r_0241_0033__operator,r_0241_0029__by).
 arc(r_0241_0025__handling,r_0241_0028__information,r_0241_0026__of).
 arc(r_0241_0028__information,r_0241_0027__personal,attrib1).
 arc(r_0241_0035__corresponding,r_0241_0022__complaint,arg0).
@@ -596,7 +594,7 @@ arc(r_0241_0042__shall,r_0241_0058__and,scope).
 arc(r_0241_0043__give,r_0241_0041__organization,arg0).
 arc(r_0241_0043__give,r_0241_0045__person,arg2).
 arc(r_0241_0043__give,r_0241_0049__advice,arg1).
-arc(r_0241_0045__person,r_0241_0047__etc.,quality4).
+arc(r_0241_0045__person,r_0241_0047__etc_,quality4).
 arc(r_0241_0049__advice,r_0241_0048__necessary,attrib1).
 arc(r_0241_0051__investigate,r_0241_0041__organization,arg0).
 arc(r_0241_0051__investigate,r_0241_0053__circumstances,arg1).
@@ -606,28 +604,30 @@ arc(r_0241_0058__and,r_0241_0043__give,conj1).
 arc(r_0241_0058__and,r_0241_0051__investigate,conj2).
 arc(r_0241_0058__and,r_0241_0059__request,conj3).
 arc(r_0241_0059__request,r_0241_0041__organization,arg0).
-arc(r_0241_0059__request,r_0241_0061__target_business_operator,arg2).
+arc(r_0241_0059__request,r_0241_0061__target__r_0241_0062__business_r_0241_0063__operator,arg2).
 arc(r_0241_0059__request,r_0241_0069__by_mnr,arg1).
-arc(r_0241_0065__solve,r_0241_0061__target_business_operator,arg0).
+arc(r_0241_0065__solve,r_0241_0061__target__r_0241_0062__business_r_0241_0063__operator,arg0).
 arc(r_0241_0065__solve,r_0241_0067__complaint,arg1).
 arc(r_0241_0065__solve,r_0241_0068__promptly,tmp4).
 arc(r_0241_0069__by_mnr,r_0241_0065__solve,scope).
 arc(r_0241_0069__by_mnr,r_0241_0070__notifying,restriction).
-arc(r_0241_0070__notifying,r_0241_0061__target_business_operator,arg0).
-arc(r_0241_0070__notifying,r_0241_0072__target_business_operator,arg1).
+arc(r_0241_0070__notifying,r_0241_0061__target__r_0241_0062__business_r_0241_0063__operator,arg0).
+arc(r_0241_0070__notifying,r_0241_0072__target__r_0241_0073__business_r_0241_0074__operator,arg1).
 arc(r_0241_0070__notifying,r_0241_0077__content,r_0241_0075__of_clr).
 arc(r_0241_0077__content,r_0241_0080__complaint,r_0241_0078__of).
+arc(r_0241_1008__cnt,r_0241_0012__requested,scope).
+arc(r_0241_1008__cnt,r_0241_0020__solve,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_241_A_law_h15A119,axiom,
+fof(id__241_A_law_h15A119,axiom,
     ? [CATENATIVEX5,STATEX32,CONNX1,OPERATORX21,CONJX42,EVENTX41,CONNX35,EVENTX39,EVENTX40,EVENTX30,EVENTX29,EVENTX26,EVENTX19,CONNX9,EVENTX17,EVENTX16,EVENTX18,ENTITYX20,ENTITYX31,ENTITYX33,ENTITYX36,ENTITYX37,ENTITYX38,ENTITYX27,ENTITYX28,ENTITYX22,ENTITYX24,ENTITYX2,ENTITYX6,ENTITYX10,ENTITYX11,ENTITYX14,ENTITYX15,ENTITYX12,ATTRIBX25,ATTRIBX13,ATTRIBX3,ATTRIBX4,QUALITYX34,QUALITYX23,QUALITYX7] :
       ( CATENATIVEX5 = CONNX9
-      &amp; isA(CONNX9,cnt_0241_1008)
+      &amp; isA(CONNX9,r_0241_1008__cnt)
       &amp; scope(CONNX9) = EVENTX18
       &amp; isA(EVENTX18,r_0241_0012__requested)
-      &amp; arg0_by_lgs(EVENTX18) = ENTITYX6
+      &amp; arg0__r_0241_0013__by_lgs(EVENTX18) = ENTITYX6
       &amp; arg1(EVENTX18) = ENTITYX2
       &amp; restriction(CONNX9) = EVENTX17
       &amp; isA(EVENTX17,r_0241_0020__solve)
@@ -645,7 +645,7 @@ fof(id_241_A_law_h15A119,axiom,
       &amp; arg0(EVENTX39) = ENTITYX31
       &amp; arg1(EVENTX39) = ENTITYX36
       &amp; r_0241_0075__of_clr(EVENTX39) = ENTITYX37
-      &amp; isA(ENTITYX2,r_0241_0008__information_protection_organization)
+      &amp; isA(ENTITYX2,r_0241_0008__information__r_0241_0009__protection_r_0241_0010__organization)
       &amp; attrib2(ENTITYX2) = ATTRIBX3
       &amp; attrib3(ENTITYX2) = ATTRIBX4
       &amp; isA(ENTITYX6,r_0241_0015__person)
@@ -660,7 +660,7 @@ fof(id_241_A_law_h15A119,axiom,
       &amp; r_0241_0026__of(ENTITYX11) = ENTITYX12
       &amp; isA(ENTITYX12,r_0241_0028__information)
       &amp; attrib1(ENTITYX12) = ATTRIBX13
-      &amp; isA(ENTITYX14,r_0241_0031__target_business_operator)
+      &amp; isA(ENTITYX14,r_0241_0031__target__r_0241_0032__business_r_0241_0033__operator)
       &amp; isA(ENTITYX15,r_0241_0038__request)
       &amp; isA(ENTITYX20,r_0241_0041__organization)
       &amp; isA(ENTITYX22,r_0241_0045__person)
@@ -672,9 +672,9 @@ fof(id_241_A_law_h15A119,axiom,
       &amp; r_0241_0055__to_clr(EVENTX29) = ENTITYX28
       &amp; isA(ENTITYX27,r_0241_0053__circumstances)
       &amp; isA(ENTITYX28,r_0241_0057__complaint)
-      &amp; isA(ENTITYX31,r_0241_0061__target_business_operator)
+      &amp; isA(ENTITYX31,r_0241_0061__target__r_0241_0062__business_r_0241_0063__operator)
       &amp; isA(ENTITYX33,r_0241_0067__complaint)
-      &amp; isA(ENTITYX36,r_0241_0072__target_business_operator)
+      &amp; isA(ENTITYX36,r_0241_0072__target__r_0241_0073__business_r_0241_0074__operator)
       &amp; isA(ENTITYX37,r_0241_0077__content)
       &amp; r_0241_0078__of(ENTITYX37) = ENTITYX38
       &amp; isA(ENTITYX38,r_0241_0080__complaint)
@@ -682,8 +682,8 @@ fof(id_241_A_law_h15A119,axiom,
       &amp; isA(ATTRIBX4,r_0241_0007__personal)
       &amp; isA(ATTRIBX13,r_0241_0027__personal)
       &amp; isA(ATTRIBX25,r_0241_0048__necessary)
-      &amp; isA(QUALITYX7,r_0241_0017__etc.)
-      &amp; isA(QUALITYX23,r_0241_0047__etc.)
+      &amp; isA(QUALITYX7,r_0241_0017__etc_)
+      &amp; isA(QUALITYX23,r_0241_0047__etc_)
       &amp; isA(QUALITYX34,r_0241_0068__promptly)
       &amp; isA(CONNX1,r_0241_0004__When_tmp)
       &amp; restriction(CONNX1) = EVENTX19

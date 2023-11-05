@@ -221,29 +221,29 @@ The Spring Drive is powered by a mainspring , but adopts an electronic speed-reg
 <br>
 <pre>
 arc(r_0034_0004__is,r_0034_0005__powered,catenative).
-arc(r_0034_0005__powered,r_0034_0002__Spring_Drive,arg1).
-arc(r_0034_0005__powered,r_0034_0008__mainspring,arg0_by_lgs).
+arc(r_0034_0005__powered,r_0034_0002__Spring__r_0034_0003__Drive,arg1).
+arc(r_0034_0005__powered,r_0034_0008__mainspring,arg0__r_0034_0006__by_lgs).
 arc(r_0034_0010__but,r_0034_0004__is,conj1).
 arc(r_0034_0010__but,r_0034_0011__adopts,conj2).
-arc(r_0034_0011__adopts,r_0034_0002__Spring_Drive,arg0).
+arc(r_0034_0011__adopts,r_0034_0002__Spring__r_0034_0003__Drive,arg0).
 arc(r_0034_0011__adopts,r_0034_0015__unit,arg1).
 arc(r_0034_0015__unit,r_0034_0013__electronic,attrib2).
 arc(r_0034_0015__unit,r_0034_0014__speed_regulating,attrib3).
 arc(r_0034_0016__comprising,r_0034_0015__unit,arg0).
 arc(r_0034_0016__comprising,r_0034_0023__and,arg1).
 arc(r_0034_0023__and,r_0034_0018__generator,conj1).
-arc(r_0034_0023__and,r_0034_0020__IC_circuit,conj2).
-arc(r_0034_0023__and,r_0034_0024__crystal_oscillator,conj3).
+arc(r_0034_0023__and,r_0034_0020__IC__r_0034_0021__circuit,conj2).
+arc(r_0034_0023__and,r_0034_0024__crystal__r_0034_0025__oscillator,conj3).
 
 </pre>
 <br>
 <pre>
-fof(id_34_A_seiko_9R65,axiom,
+fof(id__34_A_seiko_9R65,axiom,
     ? [CATENATIVEX1,CONJX14,EVENTX13,EVENTX12,EVENTX4,EVENTX3,ENTITYX5,ENTITYX8,ENTITYX9,ENTITYX10,ENTITYX11,ENTITYX2,ATTRIBX6,ATTRIBX7] :
       ( CATENATIVEX1 = EVENTX3
       &amp; isA(EVENTX3,r_0034_0005__powered)
-      &amp; arg0_by_lgs(EVENTX3) = ENTITYX2
-      &amp; arg1(EVENTX3) = r_0034_0002__Spring_Drive
+      &amp; arg0__r_0034_0006__by_lgs(EVENTX3) = ENTITYX2
+      &amp; arg1(EVENTX3) = r_0034_0002__Spring__r_0034_0003__Drive
       &amp; isA(ENTITYX2,r_0034_0008__mainspring)
       &amp; isA(EVENTX12,r_0034_0016__comprising)
       &amp; arg0(EVENTX12) = ENTITYX5
@@ -256,9 +256,9 @@ fof(id_34_A_seiko_9R65,axiom,
       &amp; conj2(ENTITYX8) = ENTITYX10
       &amp; conj3(ENTITYX8) = ENTITYX11
       &amp; isA(ENTITYX9,r_0034_0018__generator)
-      &amp; isA(ENTITYX10,r_0034_0020__IC_circuit)
-      &amp; isA(ENTITYX11,r_0034_0024__crystal_oscillator)
-      &amp; isA(r_0034_0002__Spring_Drive,r_0034_0002__Spring_Drive)
+      &amp; isA(ENTITYX10,r_0034_0020__IC__r_0034_0021__circuit)
+      &amp; isA(ENTITYX11,r_0034_0024__crystal__r_0034_0025__oscillator)
+      &amp; isA(r_0034_0002__Spring__r_0034_0003__Drive,r_0034_0002__Spring_r_0034_0003__Drive)
       &amp; isA(ATTRIBX6,r_0034_0013__electronic)
       &amp; isA(ATTRIBX7,r_0034_0014__speed_regulating)
       &amp; isA(CONJX14,r_0034_0010__but)
@@ -267,7 +267,7 @@ fof(id_34_A_seiko_9R65,axiom,
       &amp; catenative(EVENTX4) = CATENATIVEX1
       &amp; conj2(CONJX14) = EVENTX13
       &amp; isA(EVENTX13,r_0034_0011__adopts)
-      &amp; arg0(EVENTX13) = r_0034_0002__Spring_Drive
+      &amp; arg0(EVENTX13) = r_0034_0002__Spring__r_0034_0003__Drive
       &amp; arg1(EVENTX13) = ENTITYX5 ) ).
 
 

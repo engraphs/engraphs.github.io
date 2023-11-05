@@ -213,27 +213,27 @@ Write a letter to a friend , explaining what you found interesting and why .
 </svg>
 <br>
 <pre>
-arc(cnt_0037_1006,r_0037_0001__Write,scope).
-arc(cnt_0037_1006,r_0037_0008__explaining,restriction).
-arc(imperative_0037_1002,cnt_0037_1006,scope).
-arc(question_0037_1012,r_0037_0013__and,scope).
 arc(r_0037_0001__Write,r_0037_0003__letter,arg1).
 arc(r_0037_0001__Write,r_0037_0006__friend,r_0037_0004__to_arg2).
-arc(r_0037_0008__explaining,question_0037_1012,arg1).
+arc(r_0037_0008__explaining,r_0037_1012__question,arg1).
 arc(r_0037_0011__found,r_0037_0009__what,arg1).
 arc(r_0037_0011__found,r_0037_0010__you,arg0).
 arc(r_0037_0011__found,r_0037_0012__interesting,prd).
 arc(r_0037_0013__and,r_0037_0011__found,conj1).
 arc(r_0037_0013__and,r_0037_0014__why,conj2).
 arc(r_0037_0014__why,z_0037_1017,scope).
+arc(r_0037_1002__imperative,r_0037_1006__cnt,scope).
+arc(r_0037_1006__cnt,r_0037_0001__Write,scope).
+arc(r_0037_1006__cnt,r_0037_0008__explaining,restriction).
+arc(r_0037_1012__question,r_0037_0013__and,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_37_A_fce_0100_2001_06,axiom,
+fof(id__37_A_fce_0100_2001_06,axiom,
     ? [STATEX8,OPERATORX2,CONNX7,EVENTX20,OPERATORX12,CONJX19,OPERATORX16,EVENTX18,EVENTX15,EVENTX21,ENTITYX4,ENTITYX5,ENTITYX13,ATTRIBX14] :
       ( STATEX8 = OPERATORX12
-      &amp; isA(OPERATORX12,question_0037_1012)
+      &amp; isA(OPERATORX12,r_0037_1012__question)
       &amp; scope(OPERATORX12) = CONJX19
       &amp; isA(CONJX19,r_0037_0013__and)
       &amp; conj1(CONJX19) = EVENTX15
@@ -250,9 +250,9 @@ fof(id_37_A_fce_0100_2001_06,axiom,
       &amp; isA(ENTITYX5,r_0037_0006__friend)
       &amp; isA(ENTITYX13,r_0037_0009__what)
       &amp; isA(ATTRIBX14,r_0037_0012__interesting)
-      &amp; isA(OPERATORX2,imperative_0037_1002)
+      &amp; isA(OPERATORX2,r_0037_1002__imperative)
       &amp; scope(OPERATORX2) = CONNX7
-      &amp; isA(CONNX7,cnt_0037_1006)
+      &amp; isA(CONNX7,r_0037_1006__cnt)
       &amp; scope(CONNX7) = EVENTX21
       &amp; isA(EVENTX21,r_0037_0001__Write)
       &amp; arg1(EVENTX21) = ENTITYX4

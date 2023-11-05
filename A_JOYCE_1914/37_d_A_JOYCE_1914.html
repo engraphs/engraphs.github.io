@@ -273,11 +273,10 @@ As I walked along in the sun I remembered old Cotter 's words and tried to remem
 </svg>
 <br>
 <pre>
-arc(question_0089_1011,r_0089_0019__had,scope).
-arc(r_0089_0001__As_cnt,r_0089_0003__walked_along,restriction).
+arc(r_0089_0001__As_cnt,r_0089_0003__walked__r_0089_0004__along,restriction).
 arc(r_0089_0001__As_cnt,r_0089_0014__and,scope).
-arc(r_0089_0003__walked_along,r_0089_0002__I,arg0).
-arc(r_0089_0003__walked_along,r_0089_0007__sun,r_0089_0005__in_loc).
+arc(r_0089_0003__walked__r_0089_0004__along,r_0089_0002__I,arg0).
+arc(r_0089_0003__walked__r_0089_0004__along,r_0089_0007__sun,r_0089_0005__in_loc).
 arc(r_0089_0009__remembered,r_0089_0002__I,arg0).
 arc(r_0089_0009__remembered,r_0089_0013__words,arg1).
 arc(r_0089_0011__Cotter,r_0089_0010__old,attrib1).
@@ -286,24 +285,25 @@ arc(r_0089_0014__and,r_0089_0009__remembered,conj1).
 arc(r_0089_0014__and,r_0089_0015__tried,conj2).
 arc(r_0089_0015__tried,r_0089_0002__I,arg0).
 arc(r_0089_0015__tried,r_0089_0017__remember,arg1).
-arc(r_0089_0017__remember,question_0089_1011,arg1).
 arc(r_0089_0017__remember,r_0089_0002__I,arg0).
+arc(r_0089_0017__remember,r_0089_1011__question,arg1).
 arc(r_0089_0019__had,r_0089_0020__happened,catenative).
 arc(r_0089_0020__happened,r_0089_0018__what,arg0).
 arc(r_0089_0020__happened,r_0089_0021__afterwards,tmp2).
 arc(r_0089_0020__happened,r_0089_0024__dream,r_0089_0022__in_loc).
+arc(r_0089_1011__question,r_0089_0019__had,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_89_A_JOYCE_1914,axiom,
+fof(id__89_A_JOYCE_1914,axiom,
     ? [STATEX8,STATEX9,CATENATIVEX13,SPEAKERX4,CONNX1,CONJX20,EVENTX19,EVENTX18,OPERATORX11,EVENTX17,EVENTX16,EVENTX7,EVENTX3,ENTITYX12,ENTITYX15,ENTITYX5,ENTITYX2,ATTRIBX6,QUALITYX14] :
       ( STATEX8 = EVENTX18
       &amp; isA(EVENTX18,r_0089_0017__remember)
       &amp; arg0(EVENTX18) = SPEAKERX4
       &amp; arg1(EVENTX18) = STATEX9
       &amp; STATEX9 = OPERATORX11
-      &amp; isA(OPERATORX11,question_0089_1011)
+      &amp; isA(OPERATORX11,r_0089_1011__question)
       &amp; scope(OPERATORX11) = EVENTX17
       &amp; isA(EVENTX17,r_0089_0019__had)
       &amp; catenative(EVENTX17) = CATENATIVEX13
@@ -324,7 +324,7 @@ fof(id_89_A_JOYCE_1914,axiom,
       &amp; isA(QUALITYX14,r_0089_0021__afterwards)
       &amp; isA(CONNX1,r_0089_0001__As_cnt)
       &amp; restriction(CONNX1) = EVENTX3
-      &amp; isA(EVENTX3,r_0089_0003__walked_along)
+      &amp; isA(EVENTX3,r_0089_0003__walked__r_0089_0004__along)
       &amp; arg0(EVENTX3) = r_0089_0002__I
       &amp; r_0089_0005__in_loc(EVENTX3) = ENTITYX2
       &amp; scope(CONNX1) = CONJX20

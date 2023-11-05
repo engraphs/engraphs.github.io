@@ -201,15 +201,15 @@
 </svg>
 <br>
 <pre>
-arc(r_0280_0012__and,r_0280_0004__Broadcasting_institutions,conj1).
-arc(r_0280_0012__and,r_0280_0007__newspaper_publishers,conj2).
-arc(r_0280_0012__and,r_0280_0010__communication_agencies,conj3).
+arc(r_0280_0012__and,r_0280_0004__Broadcasting__r_0280_0005__institutions,conj1).
+arc(r_0280_0012__and,r_0280_0007__newspaper__r_0280_0008__publishers,conj2).
+arc(r_0280_0012__and,r_0280_0010__communication__r_0280_0011__agencies,conj3).
 arc(r_0280_0012__and,r_0280_0015__press,conj4).
 arc(r_0280_0015__press,r_0280_0014__other,attrib2).
 arc(r_0280_0017__including,r_0280_0015__press,arg0).
 arc(r_0280_0017__including,r_0280_0018__individuals,arg1).
 arc(r_0280_0019__engaged,r_0280_0018__individuals,arg1).
-arc(r_0280_0019__engaged,r_0280_0021__news_report,r_0280_0020__in_cnt).
+arc(r_0280_0019__engaged,r_0280_0021__news__r_0280_0022__report,r_0280_0020__in_cnt).
 arc(r_0280_0019__engaged,r_0280_0025__business,r_0280_0023__as_prd).
 arc(r_0280_0025__business,r_0280_0024__their,genv).
 arc(z_0280_1015,r_0280_0012__and,z_0280_1002).
@@ -217,16 +217,16 @@ arc(z_0280_1015,r_0280_0012__and,z_0280_1002).
 </pre>
 <br>
 <pre>
-fof(id_280_A_law_h15A119,axiom,
+fof(id__280_A_law_h15A119,axiom,
     ? [EVENTX16,EVENTX14,EVENTX13,ENTITYX3,ENTITYX4,ENTITYX5,ENTITYX6,ENTITYX7,ENTITYX9,ENTITYX11,ENTITYX12,ATTRIBX8] :
       ( isA(ENTITYX3,r_0280_0012__and)
       &amp; conj1(ENTITYX3) = ENTITYX4
       &amp; conj2(ENTITYX3) = ENTITYX5
       &amp; conj3(ENTITYX3) = ENTITYX6
       &amp; conj4(ENTITYX3) = ENTITYX7
-      &amp; isA(ENTITYX4,r_0280_0004__Broadcasting_institutions)
-      &amp; isA(ENTITYX5,r_0280_0007__newspaper_publishers)
-      &amp; isA(ENTITYX6,r_0280_0010__communication_agencies)
+      &amp; isA(ENTITYX4,r_0280_0004__Broadcasting__r_0280_0005__institutions)
+      &amp; isA(ENTITYX5,r_0280_0007__newspaper__r_0280_0008__publishers)
+      &amp; isA(ENTITYX6,r_0280_0010__communication__r_0280_0011__agencies)
       &amp; isA(EVENTX14,r_0280_0017__including)
       &amp; arg0(EVENTX14) = ENTITYX7
       &amp; arg1(EVENTX14) = ENTITYX9
@@ -237,7 +237,7 @@ fof(id_280_A_law_h15A119,axiom,
       &amp; r_0280_0020__in_cnt(EVENTX13) = ENTITYX11
       &amp; r_0280_0023__as_prd(EVENTX13) = ENTITYX12
       &amp; isA(ENTITYX9,r_0280_0018__individuals)
-      &amp; isA(ENTITYX11,r_0280_0021__news_report)
+      &amp; isA(ENTITYX11,r_0280_0021__news__r_0280_0022__report)
       &amp; isA(ENTITYX12,r_0280_0025__business)
       &amp; genv(ENTITYX12) = r_0280_0024__their
       &amp; isA(ATTRIBX8,r_0280_0014__other)

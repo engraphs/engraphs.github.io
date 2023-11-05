@@ -271,12 +271,12 @@ arc(r_0186_0004__said,r_0186_0003__we,arg0).
 arc(r_0186_0004__said,r_0186_0005__goodbye,arg1).
 arc(r_0186_0007__would,r_0186_0008__press,scope).
 arc(r_0186_0008__press,r_0186_0006__I,arg0).
-arc(r_0186_0008__press,r_0186_0010__phone_number,arg1).
+arc(r_0186_0008__press,r_0186_0010__phone__r_0186_0011__number,arg1).
 arc(r_0186_0008__press,r_0186_0014__hand,r_0186_0012__into_loc).
-arc(r_0186_0010__phone_number,r_0186_0006__I,genv).
+arc(r_0186_0010__phone__r_0186_0011__number,r_0186_0006__I,genv).
 arc(r_0186_0014__hand,r_0186_0013__her,genv).
-arc(r_0187_0001__quantificational__All,r_0187_0004__grandchildren,restriction).
-arc(r_0187_0001__quantificational__All,r_0187_0005__would,scope).
+arc(r_0187_0001__quantificational__r_0187_0001__All,r_0187_0004__grandchildren,restriction).
+arc(r_0187_0001__quantificational__r_0187_0001__All,r_0187_0005__would,scope).
 arc(r_0187_0002__Laylor,r_0186_0013__her,z_0186_1012).
 arc(r_0187_0004__grandchildren,r_0187_0002__Laylor,genv).
 arc(r_0187_0005__would,r_0187_0006__know,scope).
@@ -287,10 +287,10 @@ arc(r_0187_0008__name,r_0186_0006__I,genv).
 </pre>
 <br>
 <pre>
-fof(id_186_A_LooseChange__187_A_LooseChange,axiom,
+fof(id__186_A_LooseChange__187_A_LooseChange,axiom,
     ? [SPEAKERX5,LAYLORX13,SPEAKERX15,QUANTX10,OPERATORX16,EVENTX17,CONNX1,OPERATORX7,EVENTX8,EVENTX3,ENTITYX9,ENTITYX14,ENTITYX4,ENTITYX6,ENTITYX2] :
       ( isA(ENTITYX2,r_0186_0005__goodbye)
-      &amp; isA(ENTITYX4,r_0186_0010__phone_number)
+      &amp; isA(ENTITYX4,r_0186_0010__phone__r_0186_0011__number)
       &amp; genv(ENTITYX4) = SPEAKERX5
       &amp; SPEAKERX5 = r_0186_0006__I
       &amp; isA(ENTITYX6,r_0186_0014__hand)
@@ -313,7 +313,7 @@ fof(id_186_A_LooseChange__187_A_LooseChange,axiom,
       &amp; arg0(EVENTX8) = r_0186_0006__I
       &amp; arg1(EVENTX8) = ENTITYX4
       &amp; r_0186_0012__into_loc(EVENTX8) = ENTITYX6
-      &amp; isA(QUANTX10,r_0187_0001__quantificational__All)
+      &amp; isA(QUANTX10,r_0187_0001__quantificational__r_0187_0001__All)
       &amp; restriction(QUANTX10) = ENTITYX9
       &amp; isA(ENTITYX9,r_0187_0004__grandchildren)
       &amp; genv(ENTITYX9) = r_0187_0002__Laylor

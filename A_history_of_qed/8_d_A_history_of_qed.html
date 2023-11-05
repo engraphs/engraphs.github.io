@@ -148,19 +148,19 @@
 </svg>
 <br>
 <pre>
-arc(question_0011_1002,r_0011_0003__said,scope).
 arc(r_0011_0003__said,r_0011_0002__Who,arg0).
 arc(r_0011_0003__said,r_0011_0005__could,arg1).
 arc(r_0011_0005__could,r_0011_0006__n_apos_t,scope).
 arc(r_0011_0006__n_apos_t,r_0011_0007__get,scope).
 arc(r_0011_0007__get,r_0011_0004__you,arg0).
-arc(r_0011_0007__get,r_0011_0009__software_patent,arg1).
+arc(r_0011_0007__get,r_0011_0009__software__r_0011_0010__patent,arg1).
 arc(r_0011_0007__get,r_0011_0012__recently,r_0011_0011__until_tmp).
+arc(r_0011_1002__question,r_0011_0003__said,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_11_A_history_of_qed,axiom,
+fof(id__11_A_history_of_qed,axiom,
     ? [STATEX4,OPERATORX2,EVENTX10,OPERATORX7,OPERATORX8,EVENTX9,ENTITYX3,ENTITYX5,QUALITYX6] :
       ( STATEX4 = OPERATORX7
       &amp; isA(OPERATORX7,r_0011_0005__could)
@@ -172,9 +172,9 @@ fof(id_11_A_history_of_qed,axiom,
       &amp; arg1(EVENTX9) = ENTITYX5
       &amp; r_0011_0011__until_tmp(EVENTX9) = QUALITYX6
       &amp; isA(ENTITYX3,r_0011_0002__Who)
-      &amp; isA(ENTITYX5,r_0011_0009__software_patent)
+      &amp; isA(ENTITYX5,r_0011_0009__software__r_0011_0010__patent)
       &amp; isA(QUALITYX6,r_0011_0012__recently)
-      &amp; isA(OPERATORX2,question_0011_1002)
+      &amp; isA(OPERATORX2,r_0011_1002__question)
       &amp; scope(OPERATORX2) = EVENTX10
       &amp; isA(EVENTX10,r_0011_0003__said)
       &amp; arg0(EVENTX10) = ENTITYX3

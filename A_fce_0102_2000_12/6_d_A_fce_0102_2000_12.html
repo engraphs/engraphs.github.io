@@ -252,34 +252,34 @@ Then write a letter to the organiser , Jane Clark , giving your opinions and mak
 </svg>
 <br>
 <pre>
-arc(cnt_0006_1007,r_0006_0002__write,scope).
-arc(cnt_0006_1007,r_0006_0015__and,restriction).
-arc(imperative_0006_1002,r_0006_0001__Then,scope).
-arc(r_0006_0001__Then,cnt_0006_1007,scope).
+arc(r_0006_0001__Then,r_0006_1007__cnt,scope).
 arc(r_0006_0002__write,r_0006_0004__letter,arg1).
 arc(r_0006_0002__write,r_0006_0007__organiser,r_0006_0005__to_arg2).
-arc(r_0006_0007__organiser,r_0006_0009__Jane_Clark,prn4).
+arc(r_0006_0007__organiser,r_0006_0009__Jane__r_0006_0010__Clark,prn4).
 arc(r_0006_0012__giving,r_0006_0014__opinions,arg1).
 arc(r_0006_0014__opinions,r_0006_0013__your,genv).
 arc(r_0006_0015__and,r_0006_0012__giving,conj1).
 arc(r_0006_0015__and,r_0006_0016__making,conj2).
-arc(r_0006_0016__making,r_0006_0018__one_suggestion,arg1).
-arc(r_0006_0018__one_suggestion,r_0006_0017__at_least,quality1).
-arc(r_0006_0018__one_suggestion,r_0006_0024__festival,r_0006_0020__for).
+arc(r_0006_0016__making,r_0006_0018__one__r_0006_0019__suggestion,arg1).
+arc(r_0006_0018__one__r_0006_0019__suggestion,r_0006_0017__at_least,quality1).
+arc(r_0006_0018__one__r_0006_0019__suggestion,r_0006_0024__festival,r_0006_0020__for).
 arc(r_0006_0022__year,r_0006_0021__next,attrib1).
 arc(r_0006_0024__festival,r_0006_0022__year,genv).
+arc(r_0006_1002__imperative,r_0006_0001__Then,scope).
+arc(r_0006_1007__cnt,r_0006_0002__write,scope).
+arc(r_0006_1007__cnt,r_0006_0015__and,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_6_A_fce_0102_2000_12,axiom,
+fof(id__6_A_fce_0102_2000_12,axiom,
     ? [OPERATORX2,OPERATORX4,CONNX8,CONJX17,EVENTX16,EVENTX10,EVENTX18,ENTITYX5,ENTITYX6,ENTITYX11,ENTITYX13,ENTITYX14,ENTITYX9,QUALITYX12,ATTRIBX15] :
       ( isA(ENTITYX5,r_0006_0004__letter)
       &amp; isA(ENTITYX6,r_0006_0007__organiser)
-      &amp; prn4(ENTITYX6) = r_0006_0009__Jane_Clark
+      &amp; prn4(ENTITYX6) = r_0006_0009__Jane__r_0006_0010__Clark
       &amp; isA(ENTITYX9,r_0006_0014__opinions)
       &amp; genv(ENTITYX9) = r_0006_0013__your
-      &amp; isA(ENTITYX11,r_0006_0018__one_suggestion)
+      &amp; isA(ENTITYX11,r_0006_0018__one__r_0006_0019__suggestion)
       &amp; quality1(ENTITYX11) = QUALITYX12
       &amp; r_0006_0020__for(ENTITYX11) = ENTITYX13
       &amp; isA(ENTITYX13,r_0006_0024__festival)
@@ -288,11 +288,11 @@ fof(id_6_A_fce_0102_2000_12,axiom,
       &amp; attrib1(ENTITYX14) = ATTRIBX15
       &amp; isA(QUALITYX12,r_0006_0017__at_least)
       &amp; isA(ATTRIBX15,r_0006_0021__next)
-      &amp; isA(OPERATORX2,imperative_0006_1002)
+      &amp; isA(OPERATORX2,r_0006_1002__imperative)
       &amp; scope(OPERATORX2) = OPERATORX4
       &amp; isA(OPERATORX4,r_0006_0001__Then)
       &amp; scope(OPERATORX4) = CONNX8
-      &amp; isA(CONNX8,cnt_0006_1007)
+      &amp; isA(CONNX8,r_0006_1007__cnt)
       &amp; scope(CONNX8) = EVENTX18
       &amp; isA(EVENTX18,r_0006_0002__write)
       &amp; arg1(EVENTX18) = ENTITYX5

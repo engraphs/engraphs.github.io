@@ -252,9 +252,8 @@ That is why , at this moment of national emergency , I urge you , please , to st
 </svg>
 <br>
 <pre>
-arc(question_0030_1003,r_0030_0003__why,scope).
-arc(r_0030_0002__is,question_0030_1003,prd2).
 arc(r_0030_0002__is,r_0030_0001__That,arg0).
+arc(r_0030_0002__is,r_0030_1003__question,prd2).
 arc(r_0030_0003__why,r_0030_0013__urge,scope).
 arc(r_0030_0007__moment,r_0030_0010__emergency,r_0030_0008__of).
 arc(r_0030_0010__emergency,r_0030_0009__national,attrib1).
@@ -268,14 +267,15 @@ arc(r_0030_0026__and,r_0030_0019__stay,conj1).
 arc(r_0030_0026__and,r_0030_0023__protect,conj2).
 arc(r_0030_0026__and,r_0030_0027__save,conj3).
 arc(r_0030_0027__save,r_0030_0028__lives,arg1).
+arc(r_0030_1003__question,r_0030_0003__why,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_30_A_Johnson_letter,axiom,
+fof(id__30_A_Johnson_letter,axiom,
     ? [STATEX1,STATEX8,EVENTX18,OPERATORX3,OPERATORX4,EVENTX17,CONJX16,EVENTX15,EVENTX13,EVENTX12,ENTITYX5,ENTITYX14,ENTITYX11,ENTITYX6,ATTRIBX7] :
       ( STATEX1 = OPERATORX3
-      &amp; isA(OPERATORX3,question_0030_1003)
+      &amp; isA(OPERATORX3,r_0030_1003__question)
       &amp; scope(OPERATORX3) = OPERATORX4
       &amp; isA(OPERATORX4,r_0030_0003__why)
       &amp; scope(OPERATORX4) = EVENTX17

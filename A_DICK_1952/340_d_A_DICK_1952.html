@@ -77,19 +77,19 @@ Dorle took out his hand weapon .
 </svg>
 <br>
 <pre>
-arc(r_0437_0002__took_out,r_0437_0001__Dorle,arg0).
-arc(r_0437_0002__took_out,r_0437_0005__hand_weapon,arg1).
-arc(r_0437_0005__hand_weapon,r_0437_0001__Dorle,genv).
+arc(r_0437_0002__took__r_0437_0003__out,r_0437_0001__Dorle,arg0).
+arc(r_0437_0002__took__r_0437_0003__out,r_0437_0005__hand_r_0437_0006__weapon,arg1).
+arc(r_0437_0005__hand__r_0437_0006__weapon,r_0437_0001__Dorle,genv).
 
 </pre>
 <br>
 <pre>
-fof(id_437_A_DICK_1952,axiom,
+fof(id__437_A_DICK_1952,axiom,
     ? [DORLEX2,EVENTX3,ENTITYX1] :
-      ( isA(ENTITYX1,r_0437_0005__hand_weapon)
+      ( isA(ENTITYX1,r_0437_0005__hand__r_0437_0006__weapon)
       &amp; genv(ENTITYX1) = DORLEX2
       &amp; DORLEX2 = r_0437_0001__Dorle
-      &amp; isA(EVENTX3,r_0437_0002__took_out)
+      &amp; isA(EVENTX3,r_0437_0002__took__r_0437_0003__out)
       &amp; arg0(EVENTX3) = r_0437_0001__Dorle
       &amp; arg1(EVENTX3) = ENTITYX1 ) ).
 

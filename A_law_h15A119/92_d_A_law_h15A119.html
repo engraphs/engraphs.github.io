@@ -214,12 +214,12 @@ A business operator handling personal information shall not acquire personal inf
 </svg>
 <br>
 <pre>
-arc(r_0092_0004__handling,r_0092_0002__business_operator,arg0).
+arc(r_0092_0004__handling,r_0092_0002__business__r_0092_0003__operator,arg0).
 arc(r_0092_0004__handling,r_0092_0006__information,arg1).
 arc(r_0092_0006__information,r_0092_0005__personal,attrib1).
 arc(r_0092_0007__shall,r_0092_0008__not,scope).
 arc(r_0092_0008__not,r_0092_0009__acquire,scope).
-arc(r_0092_0009__acquire,r_0092_0002__business_operator,arg0).
+arc(r_0092_0009__acquire,r_0092_0002__business__r_0092_0003__operator,arg0).
 arc(r_0092_0009__acquire,r_0092_0011__information,arg1).
 arc(r_0092_0009__acquire,r_0092_0015__or,r_0092_0012__by_mnr).
 arc(r_0092_0011__information,r_0092_0010__personal,attrib1).
@@ -231,12 +231,12 @@ arc(r_0092_0018__means,r_0092_0017__wrongful,attrib2).
 </pre>
 <br>
 <pre>
-fof(id_92_A_law_h15A119,axiom,
+fof(id__92_A_law_h15A119,axiom,
     ? [OPERATORX12,OPERATORX13,EVENTX14,EVENTX4,ENTITYX1,ENTITYX5,ENTITYX7,ENTITYX8,ENTITYX9,ENTITYX2,ATTRIBX10,ATTRIBX11,ATTRIBX6,ATTRIBX3] :
       ( isA(EVENTX4,r_0092_0004__handling)
       &amp; arg0(EVENTX4) = ENTITYX1
       &amp; arg1(EVENTX4) = ENTITYX2
-      &amp; isA(ENTITYX1,r_0092_0002__business_operator)
+      &amp; isA(ENTITYX1,r_0092_0002__business__r_0092_0003__operator)
       &amp; isA(ENTITYX2,r_0092_0006__information)
       &amp; attrib1(ENTITYX2) = ATTRIBX3
       &amp; isA(ENTITYX5,r_0092_0011__information)

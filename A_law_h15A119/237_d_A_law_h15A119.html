@@ -397,31 +397,31 @@
 </svg>
 <br>
 <pre>
-arc(r_0237_0004__quantificational__Each,r_0237_0005__target_business_operator,restriction).
-arc(r_0237_0004__quantificational__Each,r_0237_0015__shall,scope).
-arc(r_0237_0005__target_business_operator,r_0237_0012__information_protection_organization,r_0237_0008__of).
-arc(r_0237_0012__information_protection_organization,r_0237_0010__authorized,attrib2).
-arc(r_0237_0012__information_protection_organization,r_0237_0011__personal,attrib3).
+arc(r_0237_0004__quantificational__r_0237_0004__Each,r_0237_0005__target__r_0237_0006__business_r_0237_0007__operator,restriction).
+arc(r_0237_0004__quantificational__r_0237_0004__Each,r_0237_0015__shall,scope).
+arc(r_0237_0005__target__r_0237_0006__business_r_0237_0007__operator,r_0237_0012__information_r_0237_0013__protection_r_0237_0014__organization,r_0237_0008__of).
+arc(r_0237_0012__information__r_0237_0013__protection_r_0237_0014__organization,r_0237_0010__authorized,attrib2).
+arc(r_0237_0012__information__r_0237_0013__protection_r_0237_0014__organization,r_0237_0011__personal,attrib3).
 arc(r_0237_0015__shall,r_0237_0016__be,scope).
-arc(r_0237_0016__be,r_0237_0005__target_business_operator,arg0).
+arc(r_0237_0016__be,r_0237_0005__target__r_0237_0006__business_r_0237_0007__operator,arg0).
 arc(r_0237_0016__be,r_0237_0034__or,prd2).
-arc(r_0237_0020__handling,r_0237_0018__business_operator,arg0).
+arc(r_0237_0020__handling,r_0237_0018__business__r_0237_0019__operator,arg0).
 arc(r_0237_0020__handling,r_0237_0022__information,arg1).
 arc(r_0237_0022__information,r_0237_0021__personal,attrib1).
-arc(r_0237_0024__is,r_0237_0018__business_operator,arg0).
+arc(r_0237_0024__is,r_0237_0018__business__r_0237_0019__operator,arg0).
 arc(r_0237_0024__is,r_0237_0026__member,prd2).
-arc(r_0237_0026__member,r_0237_0031__information_protection_organization,r_0237_0027__of).
-arc(r_0237_0031__information_protection_organization,r_0237_0029__authorized,attrib2).
-arc(r_0237_0031__information_protection_organization,r_0237_0030__personal,attrib3).
-arc(r_0237_0034__or,r_0237_0018__business_operator,conj1).
-arc(r_0237_0034__or,r_0237_0036__business_operator,conj2).
-arc(r_0237_0038__handling,r_0237_0036__business_operator,arg0).
+arc(r_0237_0026__member,r_0237_0031__information__r_0237_0032__protection_r_0237_0033__organization,r_0237_0027__of).
+arc(r_0237_0031__information__r_0237_0032__protection_r_0237_0033__organization,r_0237_0029__authorized,attrib2).
+arc(r_0237_0031__information__r_0237_0032__protection_r_0237_0033__organization,r_0237_0030__personal,attrib3).
+arc(r_0237_0034__or,r_0237_0018__business__r_0237_0019__operator,conj1).
+arc(r_0237_0034__or,r_0237_0036__business__r_0237_0037__operator,conj2).
+arc(r_0237_0038__handling,r_0237_0036__business__r_0237_0037__operator,arg0).
 arc(r_0237_0038__handling,r_0237_0040__information,arg1).
 arc(r_0237_0040__information,r_0237_0039__personal,attrib1).
 arc(r_0237_0042__has,r_0237_0043__agreed,catenative).
-arc(r_0237_0043__agreed,r_0237_0036__business_operator,arg0).
+arc(r_0237_0043__agreed,r_0237_0036__business__r_0237_0037__operator,arg0).
 arc(r_0237_0043__agreed,r_0237_0045__become,arg1).
-arc(r_0237_0045__become,r_0237_0036__business_operator,arg0).
+arc(r_0237_0045__become,r_0237_0036__business__r_0237_0037__operator,arg0).
 arc(r_0237_0045__become,r_0237_0047__target,prd2).
 arc(r_0237_0047__target,r_0237_0051__businesses,r_0237_0048__of).
 arc(r_0237_0051__businesses,r_0237_0050__authorized,attrib2).
@@ -429,7 +429,7 @@ arc(r_0237_0051__businesses,r_0237_0050__authorized,attrib2).
 </pre>
 <br>
 <pre>
-fof(id_237_A_law_h15A119,axiom,
+fof(id__237_A_law_h15A119,axiom,
     ? [CATENATIVEX20,STATEX21,QUANTX2,OPERATORX28,EVENTX29,EVENTX27,EVENTX26,EVENTX25,EVENTX19,EVENTX15,EVENTX10,ENTITYX1,ENTITYX6,ENTITYX7,ENTITYX16,ENTITYX22,ENTITYX23,ENTITYX17,ENTITYX11,ENTITYX12,ENTITYX8,ENTITYX3,ATTRIBX24,ATTRIBX18,ATTRIBX13,ATTRIBX14,ATTRIBX9,ATTRIBX4,ATTRIBX5] :
       ( CATENATIVEX20 = EVENTX26
       &amp; isA(EVENTX26,r_0237_0043__agreed)
@@ -439,7 +439,7 @@ fof(id_237_A_law_h15A119,axiom,
       &amp; isA(EVENTX25,r_0237_0045__become)
       &amp; arg0(EVENTX25) = ENTITYX16
       &amp; prd2(EVENTX25) = ENTITYX22
-      &amp; isA(ENTITYX3,r_0237_0012__information_protection_organization)
+      &amp; isA(ENTITYX3,r_0237_0012__information__r_0237_0013__protection_r_0237_0014__organization)
       &amp; attrib2(ENTITYX3) = ATTRIBX4
       &amp; attrib3(ENTITYX3) = ATTRIBX5
       &amp; isA(ENTITYX6,r_0237_0034__or)
@@ -451,12 +451,12 @@ fof(id_237_A_law_h15A119,axiom,
       &amp; isA(EVENTX15,r_0237_0024__is)
       &amp; arg0(EVENTX15) = ENTITYX7
       &amp; prd2(EVENTX15) = ENTITYX11
-      &amp; isA(ENTITYX7,r_0237_0018__business_operator)
+      &amp; isA(ENTITYX7,r_0237_0018__business__r_0237_0019__operator)
       &amp; isA(ENTITYX8,r_0237_0022__information)
       &amp; attrib1(ENTITYX8) = ATTRIBX9
       &amp; isA(ENTITYX11,r_0237_0026__member)
       &amp; r_0237_0027__of(ENTITYX11) = ENTITYX12
-      &amp; isA(ENTITYX12,r_0237_0031__information_protection_organization)
+      &amp; isA(ENTITYX12,r_0237_0031__information__r_0237_0032__protection_r_0237_0033__organization)
       &amp; attrib2(ENTITYX12) = ATTRIBX13
       &amp; attrib3(ENTITYX12) = ATTRIBX14
       &amp; isA(EVENTX19,r_0237_0038__handling)
@@ -464,7 +464,7 @@ fof(id_237_A_law_h15A119,axiom,
       &amp; arg1(EVENTX19) = ENTITYX17
       &amp; isA(EVENTX27,r_0237_0042__has)
       &amp; catenative(EVENTX27) = CATENATIVEX20
-      &amp; isA(ENTITYX16,r_0237_0036__business_operator)
+      &amp; isA(ENTITYX16,r_0237_0036__business__r_0237_0037__operator)
       &amp; isA(ENTITYX17,r_0237_0040__information)
       &amp; attrib1(ENTITYX17) = ATTRIBX18
       &amp; isA(ENTITYX22,r_0237_0047__target)
@@ -478,9 +478,9 @@ fof(id_237_A_law_h15A119,axiom,
       &amp; isA(ATTRIBX14,r_0237_0030__personal)
       &amp; isA(ATTRIBX18,r_0237_0039__personal)
       &amp; isA(ATTRIBX24,r_0237_0050__authorized)
-      &amp; isA(QUANTX2,r_0237_0004__quantificational__Each)
+      &amp; isA(QUANTX2,r_0237_0004__quantificational__r_0237_0004__Each)
       &amp; restriction(QUANTX2) = ENTITYX1
-      &amp; isA(ENTITYX1,r_0237_0005__target_business_operator)
+      &amp; isA(ENTITYX1,r_0237_0005__target__r_0237_0006__business_r_0237_0007__operator)
       &amp; r_0237_0008__of(ENTITYX1) = ENTITYX3
       &amp; scope(QUANTX2) = OPERATORX28
       &amp; isA(OPERATORX28,r_0237_0015__shall)

@@ -187,7 +187,6 @@ Is this true of the book or one of the short stories you have read ?
 </svg>
 <br>
 <pre>
-arc(question_0032_1002,r_0032_0001__Is,scope).
 arc(r_0032_0001__Is,r_0032_0002__this,arg0).
 arc(r_0032_0001__Is,r_0032_0003__true,prd2).
 arc(r_0032_0003__true,r_0032_0007__or,r_0032_0004__of).
@@ -198,11 +197,12 @@ arc(r_0032_0012__stories,r_0032_0011__short,attrib2).
 arc(r_0032_0014__have,r_0032_0015__read,catenative).
 arc(r_0032_0015__read,r_0032_0007__or,arg1).
 arc(r_0032_0015__read,r_0032_0013__you,arg0).
+arc(r_0032_1002__question,r_0032_0001__Is,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_32_A_fce_0102_2000_06,axiom,
+fof(id__32_A_fce_0102_2000_06,axiom,
     ? [CATENATIVEX5,OPERATORX2,EVENTX12,EVENTX7,EVENTX6,ENTITYX4,ENTITYX8,ENTITYX9,ENTITYX10,ATTRIBX3,ATTRIBX11] :
       ( CATENATIVEX5 = EVENTX6
       &amp; isA(EVENTX6,r_0032_0015__read)
@@ -221,7 +221,7 @@ fof(id_32_A_fce_0102_2000_06,axiom,
       &amp; isA(ATTRIBX3,r_0032_0003__true)
       &amp; r_0032_0004__of(ATTRIBX3) = ENTITYX4
       &amp; isA(ATTRIBX11,r_0032_0011__short)
-      &amp; isA(OPERATORX2,question_0032_1002)
+      &amp; isA(OPERATORX2,r_0032_1002__question)
       &amp; scope(OPERATORX2) = EVENTX12
       &amp; isA(EVENTX12,r_0032_0001__Is)
       &amp; arg0(EVENTX12) = r_0032_0002__this

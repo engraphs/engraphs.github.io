@@ -422,9 +422,6 @@ To help you see how much your contribution means , I 'm sharing with you The wor
 </svg>
 <br>
 <pre>
-arc(cnt_0002_1012,r_0003_0002__help,restriction).
-arc(cnt_0002_1012,r_0003_0012___apos_m,scope).
-arc(question_0002_1020,r_0003_0009__means,scope).
 arc(r_0002_0002__contribution,r_0002_0001__Your,genv).
 arc(r_0002_0002__contribution,r_0002_0004__Goodwill,r_0002_0003__to).
 arc(r_0002_0005__will,r_0002_0006__mean,scope).
@@ -434,10 +431,13 @@ arc(r_0002_0007__more,z_0002_1008,r_0002_0008__than).
 arc(r_0002_0010__may,r_0002_0011__know,scope).
 arc(r_0002_0011__know,r_0002_0001__Your,arg0).
 arc(r_0002_0011__know,z_0002_1008,arg1).
+arc(r_0002_1012__cnt,r_0003_0002__help,restriction).
+arc(r_0002_1012__cnt,r_0003_0012___apos_m,scope).
+arc(r_0002_1020__question,r_0003_0009__means,scope).
 arc(r_0003_0002__help,r_0002_0001__Your,arg1).
 arc(r_0003_0002__help,r_0003_0004__see,prd).
 arc(r_0003_0002__help,r_0003_0011__I,arg0).
-arc(r_0003_0004__see,question_0002_1020,arg1).
+arc(r_0003_0004__see,r_0002_1020__question,arg1).
 arc(r_0003_0006__much,r_0003_0005__how,quality1).
 arc(r_0003_0008__contribution,r_0002_0001__Your,genv).
 arc(r_0003_0009__means,r_0003_0008__contribution,arg0).
@@ -457,13 +457,13 @@ arc(z_0002_1024,r_0003_0006__much,attrib1).
 </pre>
 <br>
 <pre>
-fof(id_2_A_ANC_110CYL067__3_A_ANC_110CYL067,axiom,
+fof(id__2_A_ANC_110CYL067__3_A_ANC_110CYL067,axiom,
     ? [STATEX15,STATEX18,CATENATIVEX30,CATENATIVEX34,HEARERX5,HEARERX14,HEARERX26,HEARERX31,GOODWILLX36,CONNX13,EVENTX40,EVENTX39,EVENTX38,EVENTX37,EVENTX29,EVENTX28,OPERATORX20,EVENTX27,OPERATORX10,EVENTX11,OPERATORX6,EVENTX7,ENTITYX32,ENTITYX33,ENTITYX35,ENTITYX21,ENTITYX25,ENTITYX1,ENTITYX2,ENTITYX4,ATTRIBX22,ATTRIBX3,QUALITYX23] :
       ( STATEX15 = EVENTX28
       &amp; isA(EVENTX28,r_0003_0004__see)
       &amp; arg1(EVENTX28) = STATEX18
       &amp; STATEX18 = OPERATORX20
-      &amp; isA(OPERATORX20,question_0002_1020)
+      &amp; isA(OPERATORX20,r_0002_1020__question)
       &amp; scope(OPERATORX20) = EVENTX27
       &amp; isA(EVENTX27,r_0003_0009__means)
       &amp; arg1(EVENTX27) = ENTITYX21
@@ -515,7 +515,7 @@ fof(id_2_A_ANC_110CYL067__3_A_ANC_110CYL067,axiom,
       &amp; isA(EVENTX11,r_0002_0006__mean)
       &amp; arg0(EVENTX11) = ENTITYX1
       &amp; arg1(EVENTX11) = ENTITYX2
-      &amp; isA(CONNX13,cnt_0002_1012)
+      &amp; isA(CONNX13,r_0002_1012__cnt)
       &amp; restriction(CONNX13) = EVENTX29
       &amp; isA(EVENTX29,r_0003_0002__help)
       &amp; arg0(EVENTX29) = r_0003_0011__I

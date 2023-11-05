@@ -403,20 +403,17 @@ The organisers of the club have asked you to write a report giving your suggesti
 </svg>
 <br>
 <pre>
-arc(cnt_0016_1006,r_0016_0010__write,scope).
-arc(cnt_0016_1006,r_0016_0013__giving,restriction).
-arc(question_0016_1014,r_0016_0033__and,scope).
 arc(r_0016_0002__organisers,r_0016_0005__club,r_0016_0003__of).
 arc(r_0016_0006__have,r_0016_0007__asked,catenative).
-arc(r_0016_0007__asked,cnt_0016_1006,arg1).
 arc(r_0016_0007__asked,r_0016_0002__organisers,arg0).
 arc(r_0016_0007__asked,r_0016_0008__you,arg2).
+arc(r_0016_0007__asked,r_0016_1006__cnt,arg1).
 arc(r_0016_0010__write,r_0016_0008__you,arg0).
 arc(r_0016_0010__write,r_0016_0012__report,arg1).
 arc(r_0016_0013__giving,r_0016_0008__you,arg0).
 arc(r_0016_0013__giving,r_0016_0015__suggestions,arg1).
-arc(r_0016_0015__suggestions,question_0016_1014,r_0016_0016__about).
 arc(r_0016_0015__suggestions,r_0016_0008__you,genv).
+arc(r_0016_0015__suggestions,r_0016_1014__question,r_0016_0016__about).
 arc(r_0016_0019__often,r_0016_0018__how,quality1).
 arc(r_0016_0022__should,r_0016_0023__meet,scope).
 arc(r_0016_0023__meet,r_0016_0019__often,tmp1).
@@ -432,11 +429,14 @@ arc(r_0016_0037__could,r_0016_0038__be,scope).
 arc(r_0016_0038__be,r_0016_0039__advertised,catenative).
 arc(r_0016_0039__advertised,r_0016_0034__how,mnr1).
 arc(r_0016_0039__advertised,r_0016_0036__club,arg1).
+arc(r_0016_1006__cnt,r_0016_0010__write,scope).
+arc(r_0016_1006__cnt,r_0016_0013__giving,restriction).
+arc(r_0016_1014__question,r_0016_0033__and,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_16_A_fce_0102_2001_12,axiom,
+fof(id__16_A_fce_0102_2001_12,axiom,
     ? [CATENATIVEX3,STATEX4,EVENTX10,CATENATIVEX26,HEARERX9,EVENTX35,EVENTX34,CONNX7,EVENTX32,OPERATORX14,CONJX31,OPERATORX25,EVENTX30,EVENTX29,OPERATORX22,EVENTX23,OPERATORX18,EVENTX19,EVENTX33,ENTITYX1,ENTITYX5,ENTITYX8,ENTITYX24,ENTITYX20,ENTITYX21,ENTITYX17,ENTITYX2,QUALITYX27,QUALITYX15,QUALITYX16] :
       ( CATENATIVEX3 = EVENTX34
       &amp; isA(EVENTX34,r_0016_0007__asked)
@@ -444,7 +444,7 @@ fof(id_16_A_fce_0102_2001_12,axiom,
       &amp; arg2(EVENTX34) = r_0016_0008__you
       &amp; arg1(EVENTX34) = STATEX4
       &amp; STATEX4 = CONNX7
-      &amp; isA(CONNX7,cnt_0016_1006)
+      &amp; isA(CONNX7,r_0016_1006__cnt)
       &amp; scope(CONNX7) = EVENTX33
       &amp; isA(EVENTX33,r_0016_0010__write)
       &amp; arg0(EVENTX33) = r_0016_0008__you
@@ -454,7 +454,7 @@ fof(id_16_A_fce_0102_2001_12,axiom,
       &amp; arg0(EVENTX32) = r_0016_0008__you
       &amp; arg1(EVENTX32) = ENTITYX8
       &amp; EVENTX10 = OPERATORX14
-      &amp; isA(OPERATORX14,question_0016_1014)
+      &amp; isA(OPERATORX14,r_0016_1014__question)
       &amp; scope(OPERATORX14) = CONJX31
       &amp; isA(CONJX31,r_0016_0033__and)
       &amp; conj1(CONJX31) = OPERATORX18

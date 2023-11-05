@@ -247,13 +247,9 @@ Seated beside Alastair , lulled by the uncanny silence of supersonic flight , Ge
 </svg>
 <br>
 <pre>
-arc(cnt_0017_1005,cnt_0017_1009,scope).
-arc(cnt_0017_1005,r_0017_0001__Seated,restriction).
-arc(cnt_0017_1009,r_0017_0005__lulled,restriction).
-arc(cnt_0017_1009,r_0017_0015__could,scope).
 arc(r_0017_0001__Seated,r_0017_0003__Alastair,r_0017_0002__beside_loc).
 arc(r_0017_0001__Seated,r_0017_0014__Geoffrey,arg1).
-arc(r_0017_0005__lulled,r_0017_0009__silence,arg0_by_lgs).
+arc(r_0017_0005__lulled,r_0017_0009__silence,arg0__r_0017_0006__by_lgs).
 arc(r_0017_0005__lulled,r_0017_0014__Geoffrey,arg1).
 arc(r_0017_0009__silence,r_0017_0008__uncanny,attrib2).
 arc(r_0017_0009__silence,r_0017_0012__flight,r_0017_0010__of).
@@ -264,11 +260,15 @@ arc(r_0017_0016__imagine,r_0017_0014__Geoffrey,arg1).
 arc(r_0017_0016__imagine,r_0017_0019__one,r_0017_0018__in_prd).
 arc(r_0017_0019__one,r_0017_0023__galleries,r_0017_0020__of).
 arc(r_0017_0023__galleries,r_0017_0022__upper,attrib2).
+arc(r_0017_1005__cnt,r_0017_0001__Seated,restriction).
+arc(r_0017_1005__cnt,r_0017_1009__cnt,scope).
+arc(r_0017_1009__cnt,r_0017_0005__lulled,restriction).
+arc(r_0017_1009__cnt,r_0017_0015__could,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_17_A_lob_N01,axiom,
+fof(id__17_A_lob_N01,axiom,
     ? [GEOFFREYX1,CONNX6,CONNX10,OPERATORX16,EVENTX17,EVENTX15,EVENTX8,ENTITYX2,ENTITYX11,ENTITYX13,ENTITYX3,ATTRIBX12,ATTRIBX14,ATTRIBX4] :
       ( GEOFFREYX1 = r_0017_0014__Geoffrey
       &amp; isA(ENTITYX2,r_0017_0019__one)
@@ -283,16 +283,16 @@ fof(id_17_A_lob_N01,axiom,
       &amp; isA(ATTRIBX4,r_0017_0022__upper)
       &amp; isA(ATTRIBX12,r_0017_0008__uncanny)
       &amp; isA(ATTRIBX14,r_0017_0011__supersonic)
-      &amp; isA(CONNX6,cnt_0017_1005)
+      &amp; isA(CONNX6,r_0017_1005__cnt)
       &amp; restriction(CONNX6) = EVENTX8
       &amp; isA(EVENTX8,r_0017_0001__Seated)
       &amp; arg1(EVENTX8) = r_0017_0014__Geoffrey
       &amp; r_0017_0002__beside_loc(EVENTX8) = r_0017_0003__Alastair
       &amp; scope(CONNX6) = CONNX10
-      &amp; isA(CONNX10,cnt_0017_1009)
+      &amp; isA(CONNX10,r_0017_1009__cnt)
       &amp; restriction(CONNX10) = EVENTX15
       &amp; isA(EVENTX15,r_0017_0005__lulled)
-      &amp; arg0_by_lgs(EVENTX15) = ENTITYX11
+      &amp; arg0__r_0017_0006__by_lgs(EVENTX15) = ENTITYX11
       &amp; arg1(EVENTX15) = r_0017_0014__Geoffrey
       &amp; scope(CONNX10) = OPERATORX16
       &amp; isA(OPERATORX16,r_0017_0015__could)

@@ -259,11 +259,10 @@ Write an article for your school magazine about a choice one of the characters h
 </svg>
 <br>
 <pre>
-arc(imperative_0038_1002,r_0038_0001__Write,scope).
 arc(r_0038_0001__Write,r_0038_0003__article,arg1).
-arc(r_0038_0001__Write,r_0038_0006__school_magazine,r_0038_0004__for_arg2).
+arc(r_0038_0001__Write,r_0038_0006__school__r_0038_0007__magazine,r_0038_0004__for_arg2).
 arc(r_0038_0001__Write,r_0038_0010__choice,r_0038_0008__about_rst).
-arc(r_0038_0006__school_magazine,r_0038_0005__your,genv).
+arc(r_0038_0006__school__r_0038_0007__magazine,r_0038_0005__your,genv).
 arc(r_0038_0011__one,r_0038_0014__characters,r_0038_0012__of).
 arc(r_0038_0015__had,r_0038_0017__make,catenative).
 arc(r_0038_0017__make,r_0038_0010__choice,arg1).
@@ -276,11 +275,12 @@ arc(r_0038_0026__stories,r_0038_0025__short,attrib2).
 arc(r_0038_0028__have,r_0038_0029__read,catenative).
 arc(r_0038_0029__read,r_0038_0005__your,arg0).
 arc(r_0038_0029__read,r_0038_0021__or,arg1).
+arc(r_0038_1002__imperative,r_0038_0001__Write,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_38_A_fce_0102_2000_12,axiom,
+fof(id__38_A_fce_0102_2000_12,axiom,
     ? [STATEX9,CATENATIVEX12,HEARERX11,OPERATORX2,EVENTX21,EVENTX20,EVENTX19,EVENTX14,EVENTX13,ENTITYX4,ENTITYX5,ENTITYX6,ENTITYX7,ENTITYX10,ENTITYX15,ENTITYX16,ENTITYX17,ENTITYX8,ATTRIBX18] :
       ( STATEX9 = EVENTX19
       &amp; isA(EVENTX19,r_0038_0017__make)
@@ -292,7 +292,7 @@ fof(id_38_A_fce_0102_2000_12,axiom,
       &amp; arg0(EVENTX13) = HEARERX11
       &amp; arg1(EVENTX13) = ENTITYX10
       &amp; isA(ENTITYX4,r_0038_0003__article)
-      &amp; isA(ENTITYX5,r_0038_0006__school_magazine)
+      &amp; isA(ENTITYX5,r_0038_0006__school__r_0038_0007__magazine)
       &amp; genv(ENTITYX5) = r_0038_0005__your
       &amp; isA(EVENTX20,r_0038_0015__had)
       &amp; catenative(EVENTX20) = STATEX9
@@ -312,7 +312,7 @@ fof(id_38_A_fce_0102_2000_12,axiom,
       &amp; isA(ENTITYX17,r_0038_0026__stories)
       &amp; attrib2(ENTITYX17) = ATTRIBX18
       &amp; isA(ATTRIBX18,r_0038_0025__short)
-      &amp; isA(OPERATORX2,imperative_0038_1002)
+      &amp; isA(OPERATORX2,r_0038_1002__imperative)
       &amp; scope(OPERATORX2) = EVENTX21
       &amp; isA(EVENTX21,r_0038_0001__Write)
       &amp; arg1(EVENTX21) = ENTITYX4

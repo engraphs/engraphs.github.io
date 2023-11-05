@@ -188,10 +188,8 @@ A few stars glinted above them , winking through the drifting silt that blew acr
 </svg>
 <br>
 <pre>
-arc(mnr_0092_1003,r_0092_0003__glinted,scope).
-arc(mnr_0092_1003,r_0092_0007__winking,restriction).
-arc(r_0092_0001__quantificational__A_few,mnr_0092_1003,scope).
-arc(r_0092_0001__quantificational__A_few,r_0092_0002__stars,restriction).
+arc(r_0092_0001__quantificational__r_0092_0001__A_few,r_0092_0002__stars,restriction).
+arc(r_0092_0001__quantificational__r_0092_0001__A_few,r_0092_1003__mnr,scope).
 arc(r_0092_0003__glinted,r_0092_0002__stars,arg0).
 arc(r_0092_0003__glinted,r_0092_0005__them,r_0092_0004__above_loc).
 arc(r_0092_0007__winking,r_0092_0002__stars,arg0).
@@ -200,11 +198,13 @@ arc(r_0092_0011__silt,r_0092_0010__drifting,attrib2).
 arc(r_0092_0013__blew,r_0092_0011__silt,arg0).
 arc(r_0092_0013__blew,r_0092_0016__surface,r_0092_0014__across_clr_dir).
 arc(r_0092_0016__surface,r_0092_0019__planet,r_0092_0017__of).
+arc(r_0092_1003__mnr,r_0092_0003__glinted,scope).
+arc(r_0092_1003__mnr,r_0092_0007__winking,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_92_A_DICK_1952,axiom,
+fof(id__92_A_DICK_1952,axiom,
     ? [QUANTX2,CONNX4,EVENTX10,EVENTX9,EVENTX11,ENTITYX1,ENTITYX5,ENTITYX7,ENTITYX8,ATTRIBX6] :
       ( isA(EVENTX9,r_0092_0013__blew)
       &amp; arg0(EVENTX9) = ENTITYX5
@@ -215,11 +215,11 @@ fof(id_92_A_DICK_1952,axiom,
       &amp; r_0092_0017__of(ENTITYX7) = ENTITYX8
       &amp; isA(ENTITYX8,r_0092_0019__planet)
       &amp; isA(ATTRIBX6,r_0092_0010__drifting)
-      &amp; isA(QUANTX2,r_0092_0001__quantificational__A_few)
+      &amp; isA(QUANTX2,r_0092_0001__quantificational__r_0092_0001__A_few)
       &amp; restriction(QUANTX2) = ENTITYX1
       &amp; isA(ENTITYX1,r_0092_0002__stars)
       &amp; scope(QUANTX2) = CONNX4
-      &amp; isA(CONNX4,mnr_0092_1003)
+      &amp; isA(CONNX4,r_0092_1003__mnr)
       &amp; scope(CONNX4) = EVENTX11
       &amp; isA(EVENTX11,r_0092_0003__glinted)
       &amp; arg0(EVENTX11) = ENTITYX1

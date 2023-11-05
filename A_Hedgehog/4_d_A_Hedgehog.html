@@ -163,19 +163,19 @@ Thank you , Madam Deputy Speaker , for giving me an Adjournment debate on hedgeh
 <br>
 <pre>
 arc(r_0004_0008__giving,r_0004_0009__me,arg2).
-arc(r_0004_0008__giving,r_0004_0011__Adjournment_debate,arg1).
-arc(r_0004_0011__Adjournment_debate,r_0004_0016__and,r_0004_0013__on).
-arc(r_0004_0016__and,r_0004_0014__hedgehog_habitats,conj1).
+arc(r_0004_0008__giving,r_0004_0011__Adjournment__r_0004_0012__debate,arg1).
+arc(r_0004_0011__Adjournment__r_0004_0012__debate,r_0004_0016__and,r_0004_0013__on).
+arc(r_0004_0016__and,r_0004_0014__hedgehog__r_0004_0015__habitats,conj1).
 arc(r_0004_0016__and,r_0004_0018__need,conj2).
 arc(r_0004_0018__need,r_0004_0020__protect,emb3).
 arc(r_0004_0020__protect,r_0004_0022__species,arg1).
-arc(z_0004_1014,r_0004_0003__Madam_Deputy_Speaker,voc).
+arc(z_0004_1014,r_0004_0003__Madam__r_0004_0004__Deputy_r_0004_0005__Speaker,voc).
 arc(z_0004_1014,r_0004_0008__giving,r_0004_0007__for).
 
 </pre>
 <br>
 <pre>
-fof(id_4_A_Hedgehog,axiom,
+fof(id__4_A_Hedgehog,axiom,
     ? [EVENTX1,STATEX8,EVENTX15,EVENTX13,EVENTX12,ENTITYX4,ENTITYX5,ENTITYX6,ENTITYX7,ENTITYX11] :
       ( EVENTX1 = EVENTX13
       &amp; isA(EVENTX13,r_0004_0008__giving)
@@ -184,17 +184,17 @@ fof(id_4_A_Hedgehog,axiom,
       &amp; STATEX8 = EVENTX12
       &amp; isA(EVENTX12,r_0004_0020__protect)
       &amp; arg1(EVENTX12) = ENTITYX11
-      &amp; isA(ENTITYX4,r_0004_0011__Adjournment_debate)
+      &amp; isA(ENTITYX4,r_0004_0011__Adjournment__r_0004_0012__debate)
       &amp; r_0004_0013__on(ENTITYX4) = ENTITYX5
       &amp; isA(ENTITYX5,r_0004_0016__and)
       &amp; conj1(ENTITYX5) = ENTITYX6
       &amp; conj2(ENTITYX5) = ENTITYX7
-      &amp; isA(ENTITYX6,r_0004_0014__hedgehog_habitats)
+      &amp; isA(ENTITYX6,r_0004_0014__hedgehog__r_0004_0015__habitats)
       &amp; isA(ENTITYX7,r_0004_0018__need)
       &amp; emb3(ENTITYX7) = STATEX8
       &amp; isA(ENTITYX11,r_0004_0022__species)
       &amp; isA(EVENTX15,z_0004_1014)
-      &amp; voc(EVENTX15) = r_0004_0003__Madam_Deputy_Speaker
+      &amp; voc(EVENTX15) = r_0004_0003__Madam__r_0004_0004__Deputy_r_0004_0005__Speaker
       &amp; r_0004_0007__for(EVENTX15) = EVENTX1 ) ).
 
 

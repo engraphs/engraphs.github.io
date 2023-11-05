@@ -527,9 +527,9 @@ arc(r_0033_0007__facing,r_0032_0003__want,arg0).
 arc(r_0033_0007__facing,r_0033_0009__monsters,arg1).
 arc(r_0033_0009__monsters,r_0033_0008__certain,attrib1).
 arc(r_0033_0009__monsters,z_0032_1031,prn5).
-arc(r_0033_0011__can,r_0033_0013__lock_on,scope).
-arc(r_0033_0013__lock_on,r_0032_0001__You,r_0033_0016__to_clr).
-arc(r_0033_0013__lock_on,r_0033_0009__monsters,arg0).
+arc(r_0033_0011__can,r_0033_0013__lock__r_0033_0014__on,scope).
+arc(r_0033_0013__lock__r_0033_0014__on,r_0032_0001__You,r_0033_0016__to_clr).
+arc(r_0033_0013__lock__r_0033_0014__on,r_0033_0009__monsters,arg0).
 arc(r_0033_0020__zombie,r_0033_0019__minigun,attrib1).
 arc(r_0033_0025__hiding,r_0033_0027__these,r_0033_0026__from_dir).
 arc(r_0033_0028__is,r_0033_0025__hiding,arg0).
@@ -541,7 +541,7 @@ arc(z_0032_1031,r_0033_0022__necromancer,conj2).
 </pre>
 <br>
 <pre>
-fof(id_32_A_Freedoom__33_A_Freedoom,axiom,
+fof(id__32_A_Freedoom__33_A_Freedoom,axiom,
     ? [STATEX1,EVENTX33,STATEX34,HEARERX3,HEARERX6,ADVICEX18,LOCK_ON_MONSTERSX37,HEARERX24,CONNX21,EVENTX32,OPERATORX25,EVENTX26,EVENTX42,EVENTX41,EVENTX38,OPERATORX16,ADVICEX17,EVENTX15,CONNX4,EVENTX7,OPERATORX8,EVENTX9,LOCK_ON_MONSTERSX22,ENTITYX27,ENTITYX28,ENTITYX30,ENTITYX39,ENTITYX2,ENTITYX10,ENTITYX11,ENTITYX12,ENTITYX14,ENTITYX5,ATTRIBX19,ATTRIBX23,ATTRIBX29,ATTRIBX40,ATTRIBX13,QUALITYX20] :
       ( STATEX1 = EVENTX15
       &amp; isA(EVENTX15,r_0032_0005__find)
@@ -585,7 +585,7 @@ fof(id_32_A_Freedoom__33_A_Freedoom,axiom,
       &amp; attrib2(ENTITYX39) = ATTRIBX40
       &amp; isA(OPERATORX25,r_0033_0011__can)
       &amp; scope(OPERATORX25) = EVENTX26
-      &amp; isA(EVENTX26,r_0033_0013__lock_on)
+      &amp; isA(EVENTX26,r_0033_0013__lock__r_0033_0014__on)
       &amp; arg0(EVENTX26) = LOCK_ON_MONSTERSX22
       &amp; r_0033_0016__to_clr(EVENTX26) = HEARERX24
       &amp; isA(LOCK_ON_MONSTERSX22,r_0033_0009__monsters)

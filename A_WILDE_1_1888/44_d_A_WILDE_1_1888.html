@@ -112,16 +112,16 @@
 arc(r_0166_0003__is,r_0166_0002__It,arg0).
 arc(r_0166_0003__is,r_0166_0004__winter,prd2).
 arc(r_0166_0007__answered,r_0166_0009__Swallow,arg0).
-arc(r_0166_0007__answered,utterance_0166_1003,arg1).
-arc(utterance_0166_1003,r_0166_0003__is,part1).
+arc(r_0166_0007__answered,r_0166_1003__utterance,arg1).
+arc(r_0166_1003__utterance,r_0166_0003__is,part1).
 
 </pre>
 <br>
 <pre>
-fof(id_166_A_WILDE_1_1888,axiom,
+fof(id__166_A_WILDE_1_1888,axiom,
     ? [STATEX1,EVENTX8,CONJX6,EVENTX5,ENTITYX7,ENTITYX4] :
       ( STATEX1 = CONJX6
-      &amp; isA(CONJX6,utterance_0166_1003)
+      &amp; isA(CONJX6,r_0166_1003__utterance)
       &amp; part1(CONJX6) = EVENTX5
       &amp; isA(EVENTX5,r_0166_0003__is)
       &amp; arg0(EVENTX5) = r_0166_0002__It

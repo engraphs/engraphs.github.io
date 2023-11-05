@@ -187,41 +187,41 @@ The E.M.F of such a cell placed in a sodium circuit will be affected by fluctuat
 </svg>
 <br>
 <pre>
-arc(r_0020_0002__E.M.F,r_0020_0006__cell,r_0020_0003__of).
+arc(r_0020_0002__E_M_F,r_0020_0006__cell,r_0020_0003__of).
 arc(r_0020_0006__cell,r_0020_0004__such,attrib1).
 arc(r_0020_0007__placed,r_0020_0006__cell,arg0).
-arc(r_0020_0007__placed,r_0020_0010__sodium_circuit,r_0020_0008__in_loc).
+arc(r_0020_0007__placed,r_0020_0010__sodium__r_0020_0011__circuit,r_0020_0008__in_loc).
 arc(r_0020_0012__will,r_0020_0013__be,scope).
 arc(r_0020_0013__be,r_0020_0014__affected,catenative).
-arc(r_0020_0014__affected,r_0020_0002__E.M.F,arg1).
-arc(r_0020_0014__affected,r_0020_0016__fluctuations,arg0_by_lgs).
+arc(r_0020_0014__affected,r_0020_0002__E_M_F,arg1).
+arc(r_0020_0014__affected,r_0020_0016__fluctuations,arg0__r_0020_0015__by_lgs).
 arc(r_0020_0016__fluctuations,r_0020_0020__and,r_0020_0017__in).
-arc(r_0020_0020__and,r_0020_0018__oxygen_content,conj1).
+arc(r_0020_0020__and,r_0020_0018__oxygen__r_0020_0019__content,conj1).
 arc(r_0020_0020__and,r_0020_0021__temperature,conj2).
 
 </pre>
 <br>
 <pre>
-fof(id_20_A_lob_J01,axiom,
+fof(id__20_A_lob_J01,axiom,
     ? [CATENATIVEX7,OPERATORX6,EVENTX13,EVENTX12,EVENTX5,ENTITYX1,ENTITYX8,ENTITYX9,ENTITYX10,ENTITYX11,ENTITYX2,ENTITYX4,ATTRIBX3] :
       ( CATENATIVEX7 = EVENTX12
       &amp; isA(EVENTX12,r_0020_0014__affected)
-      &amp; arg0_by_lgs(EVENTX12) = ENTITYX8
+      &amp; arg0__r_0020_0015__by_lgs(EVENTX12) = ENTITYX8
       &amp; arg1(EVENTX12) = ENTITYX1
-      &amp; isA(ENTITYX1,r_0020_0002__E.M.F)
+      &amp; isA(ENTITYX1,r_0020_0002__E_M_F)
       &amp; r_0020_0003__of(ENTITYX1) = ENTITYX2
       &amp; isA(EVENTX5,r_0020_0007__placed)
       &amp; arg0(EVENTX5) = ENTITYX2
       &amp; r_0020_0008__in_loc(EVENTX5) = ENTITYX4
       &amp; isA(ENTITYX2,r_0020_0006__cell)
       &amp; attrib1(ENTITYX2) = ATTRIBX3
-      &amp; isA(ENTITYX4,r_0020_0010__sodium_circuit)
+      &amp; isA(ENTITYX4,r_0020_0010__sodium__r_0020_0011__circuit)
       &amp; isA(ENTITYX8,r_0020_0016__fluctuations)
       &amp; r_0020_0017__in(ENTITYX8) = ENTITYX9
       &amp; isA(ENTITYX9,r_0020_0020__and)
       &amp; conj1(ENTITYX9) = ENTITYX10
       &amp; conj2(ENTITYX9) = ENTITYX11
-      &amp; isA(ENTITYX10,r_0020_0018__oxygen_content)
+      &amp; isA(ENTITYX10,r_0020_0018__oxygen__r_0020_0019__content)
       &amp; isA(ENTITYX11,r_0020_0021__temperature)
       &amp; isA(ATTRIBX3,r_0020_0004__such)
       &amp; isA(OPERATORX6,r_0020_0012__will)

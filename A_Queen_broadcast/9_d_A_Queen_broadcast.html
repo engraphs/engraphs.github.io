@@ -195,8 +195,6 @@ It reminds me of the very first broadcast I made , in 1940 , helped by my sister
 </svg>
 <br>
 <pre>
-arc(mnr_0013_1006,r_0013_0010__made,scope).
-arc(mnr_0013_1006,r_0013_0015__helped,restriction).
 arc(r_0013_0002__reminds,r_0013_0001__It,arg0).
 arc(r_0013_0002__reminds,r_0013_0003__me,arg1).
 arc(r_0013_0002__reminds,r_0013_0008__broadcast,r_0013_0004__of).
@@ -206,15 +204,17 @@ arc(r_0013_0010__made,r_0013_0003__me,arg0).
 arc(r_0013_0010__made,r_0013_0008__broadcast,arg1).
 arc(r_0013_0010__made,r_0013_0013__1940,r_0013_0012__in_tmp).
 arc(r_0013_0015__helped,r_0013_0003__me,arg1).
-arc(r_0013_0015__helped,r_0013_0018__sister,arg0_by_lgs).
+arc(r_0013_0015__helped,r_0013_0018__sister,arg0__r_0013_0016__by_lgs).
 arc(r_0013_0018__sister,r_0013_0003__me,genv).
+arc(r_0013_1006__mnr,r_0013_0010__made,scope).
+arc(r_0013_1006__mnr,r_0013_0015__helped,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_13_A_Queen_broadcast,axiom,
+fof(id__13_A_Queen_broadcast,axiom,
     ? [SPEAKERX4,SPEAKERX9,EVENTX12,CONNX7,EVENTX10,EVENTX11,ENTITYX1,ENTITYX5,SISTERX8,ATTRIBX2,QUALITYX3] :
-      ( isA(CONNX7,mnr_0013_1006)
+      ( isA(CONNX7,r_0013_1006__mnr)
       &amp; scope(CONNX7) = EVENTX11
       &amp; isA(EVENTX11,r_0013_0010__made)
       &amp; arg1(EVENTX11) = ENTITYX1
@@ -222,7 +222,7 @@ fof(id_13_A_Queen_broadcast,axiom,
       &amp; r_0013_0012__in_tmp(EVENTX11) = ENTITYX5
       &amp; restriction(CONNX7) = EVENTX10
       &amp; isA(EVENTX10,r_0013_0015__helped)
-      &amp; arg0_by_lgs(EVENTX10) = SISTERX8
+      &amp; arg0__r_0013_0016__by_lgs(EVENTX10) = SISTERX8
       &amp; arg1(EVENTX10) = SPEAKERX4
       &amp; isA(ENTITYX1,r_0013_0008__broadcast)
       &amp; attrib2(ENTITYX1) = ATTRIBX2

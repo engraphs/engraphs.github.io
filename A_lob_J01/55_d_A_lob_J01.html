@@ -265,15 +265,13 @@ The potential acquired by this pool of sodium is transmitted to the voltmeter V 
 </svg>
 <br>
 <pre>
-arc(abs_0055_1005,r_0055_0009__is,scope).
-arc(abs_0055_1005,r_0055_0022__being,restriction).
 arc(r_0055_0003__acquired,r_0055_0002__potential,arg1).
-arc(r_0055_0003__acquired,r_0055_0006__pool,arg0_by_lgs).
+arc(r_0055_0003__acquired,r_0055_0006__pool,arg0__r_0055_0004__by_lgs).
 arc(r_0055_0006__pool,r_0055_0008__sodium,r_0055_0007__of).
 arc(r_0055_0009__is,r_0055_0010__transmitted,catenative).
 arc(r_0055_0010__transmitted,r_0055_0002__potential,arg1).
-arc(r_0055_0010__transmitted,r_0055_0013__voltmeter_V,r_0055_0011__to_clr).
-arc(r_0055_0010__transmitted,r_0055_0017__nickel_conductor_D,arg0_by_lgs).
+arc(r_0055_0010__transmitted,r_0055_0013__voltmeter__r_0055_0014__V,r_0055_0011__to_clr).
+arc(r_0055_0010__transmitted,r_0055_0017__nickel__r_0055_0018__conductor_r_0055_0019__D,arg0_r_0055_0015__by_lgs).
 arc(r_0055_0022__being,r_0055_0021__nickel,arg0).
 arc(r_0055_0022__being,r_0055_0023__resistant,prd2).
 arc(r_0055_0023__resistant,r_0055_0026__attack,r_0055_0024__to).
@@ -281,27 +279,29 @@ arc(r_0055_0026__attack,r_0055_0025__corrosive,attrib1).
 arc(r_0055_0026__attack,r_0055_0030__sodium,r_0055_0027__by).
 arc(r_0055_0029__saturated,r_0055_0028__oxide,arg0_lgs).
 arc(r_0055_0029__saturated,r_0055_0030__sodium,arg1).
-arc(r_0055_0030__sodium,r_0055_0032__500__deg__C,r_0055_0031__at).
+arc(r_0055_0030__sodium,r_0055_0032__500__r_0055_0033___deg__r_0055_0034__C,r_0055_0031__at).
+arc(r_0055_1005__abs,r_0055_0009__is,scope).
+arc(r_0055_1005__abs,r_0055_0022__being,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_55_A_lob_J01,axiom,
+fof(id__55_A_lob_J01,axiom,
     ? [CATENATIVEX16,CONNX6,EVENTX15,EVENTX13,EVENTX20,EVENTX19,EVENTX4,ENTITYX1,ENTITYX7,ENTITYX9,ENTITYX11,ENTITYX14,ENTITYX12,ENTITYX17,ENTITYX18,ENTITYX2,ENTITYX3,ATTRIBX8,ATTRIBX10] :
       ( CATENATIVEX16 = EVENTX19
       &amp; isA(EVENTX19,r_0055_0010__transmitted)
-      &amp; arg0_by_lgs(EVENTX19) = ENTITYX18
+      &amp; arg0__r_0055_0015__by_lgs(EVENTX19) = ENTITYX18
       &amp; arg1(EVENTX19) = ENTITYX1
       &amp; r_0055_0011__to_clr(EVENTX19) = ENTITYX17
       &amp; isA(EVENTX4,r_0055_0003__acquired)
-      &amp; arg0_by_lgs(EVENTX4) = ENTITYX2
+      &amp; arg0__r_0055_0004__by_lgs(EVENTX4) = ENTITYX2
       &amp; arg1(EVENTX4) = ENTITYX1
       &amp; isA(ENTITYX1,r_0055_0002__potential)
       &amp; isA(ENTITYX2,r_0055_0006__pool)
       &amp; r_0055_0007__of(ENTITYX2) = ENTITYX3
       &amp; isA(ENTITYX3,r_0055_0008__sodium)
-      &amp; isA(ENTITYX17,r_0055_0013__voltmeter_V)
-      &amp; isA(ENTITYX18,r_0055_0017__nickel_conductor_D)
+      &amp; isA(ENTITYX17,r_0055_0013__voltmeter__r_0055_0014__V)
+      &amp; isA(ENTITYX18,r_0055_0017__nickel__r_0055_0018__conductor_r_0055_0019__D)
       &amp; isA(ENTITYX7,r_0055_0021__nickel)
       &amp; isA(ENTITYX9,r_0055_0026__attack)
       &amp; attrib1(ENTITYX9) = ATTRIBX10
@@ -312,11 +312,11 @@ fof(id_55_A_lob_J01,axiom,
       &amp; isA(ENTITYX11,r_0055_0030__sodium)
       &amp; r_0055_0031__at(ENTITYX11) = ENTITYX14
       &amp; isA(ENTITYX12,r_0055_0028__oxide)
-      &amp; isA(ENTITYX14,r_0055_0032__500__deg__C)
+      &amp; isA(ENTITYX14,r_0055_0032__500__r_0055_0033___deg__r_0055_0034__C)
       &amp; isA(ATTRIBX8,r_0055_0023__resistant)
       &amp; r_0055_0024__to(ATTRIBX8) = ENTITYX9
       &amp; isA(ATTRIBX10,r_0055_0025__corrosive)
-      &amp; isA(CONNX6,abs_0055_1005)
+      &amp; isA(CONNX6,r_0055_1005__abs)
       &amp; scope(CONNX6) = EVENTX20
       &amp; isA(EVENTX20,r_0055_0009__is)
       &amp; catenative(EVENTX20) = CATENATIVEX16

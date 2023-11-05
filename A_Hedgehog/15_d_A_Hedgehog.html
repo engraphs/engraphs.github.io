@@ -294,7 +294,7 @@ That is why I am calling on my hon. Friend the Minister to hold a national campa
 <title>0015_0023&#45;&gt;0015_0027</title>
 <path fill="none" stroke="black" d="M481.27,-175.68C486.34,-169.56 492.23,-162.45 497.55,-156 504.51,-147.55 512.12,-138.29 518.86,-130.05"/>
 <polygon fill="black" stroke="black" points="521.64,-132.18 525.27,-122.23 516.23,-127.75 521.64,-132.18"/>
-<text text-anchor="middle" x="530.05" y="-144.8" font-family="fixed" font-size="14.00">[arg1]</text>
+<text text-anchor="middle" x="530.05" y="-144.8" font-family="fixed" font-size="14.00">[prd2]</text>
 </g>
 <!-- 0015_0024 -->
 <g id="node20" class="node">
@@ -339,38 +339,38 @@ That is why I am calling on my hon. Friend the Minister to hold a national campa
 </svg>
 <br>
 <pre>
-arc(cnt_0015_1011,r_0015_0014__hold,scope).
-arc(cnt_0015_1011,r_0015_0019__identify,restriction).
-arc(question_0015_1003,r_0015_0005__am,scope).
-arc(question_0015_1015,r_0015_0022__should,scope).
-arc(r_0015_0002__is,question_0015_1003,prd2).
 arc(r_0015_0002__is,r_0015_0001__That,arg0).
+arc(r_0015_0002__is,r_0015_1003__question,prd2).
 arc(r_0015_0005__am,r_0015_0003__why,mnr1).
 arc(r_0015_0005__am,r_0015_0006__calling,catenative).
-arc(r_0015_0006__calling,cnt_0015_1011,arg1).
 arc(r_0015_0006__calling,r_0015_0004__I,arg0).
-arc(r_0015_0006__calling,r_0015_0009__hon._Friend,r_0015_0007__on_clr).
-arc(r_0015_0009__hon._Friend,r_0015_0004__I,genv).
-arc(r_0015_0009__hon._Friend,r_0015_0012__Minister,prn4).
-arc(r_0015_0014__hold,r_0015_0009__hon._Friend,arg0).
+arc(r_0015_0006__calling,r_0015_0009__hon__r_0015_0010__Friend,r_0015_0007__on_clr).
+arc(r_0015_0006__calling,r_0015_1011__cnt,arg1).
+arc(r_0015_0009__hon__r_0015_0010__Friend,r_0015_0004__I,genv).
+arc(r_0015_0009__hon__r_0015_0010__Friend,r_0015_0012__Minister,prn4).
+arc(r_0015_0014__hold,r_0015_0009__hon__r_0015_0010__Friend,arg0).
 arc(r_0015_0014__hold,r_0015_0017__campaign,arg1).
 arc(r_0015_0017__campaign,r_0015_0016__national,attrib2).
-arc(r_0015_0019__identify,question_0015_1015,arg1).
 arc(r_0015_0019__identify,r_0015_0017__campaign,arg0).
+arc(r_0015_0019__identify,r_0015_1015__question,arg1).
 arc(r_0015_0022__should,r_0015_0023__be,scope).
 arc(r_0015_0023__be,r_0015_0021__animal,arg0).
-arc(r_0015_0023__be,r_0015_0027__species,arg1).
+arc(r_0015_0023__be,r_0015_0027__species,prd2).
 arc(r_0015_0027__species,r_0015_0024__our,genv).
 arc(r_0015_0027__species,r_0015_0025__designated,attrib2).
 arc(r_0015_0027__species,r_0015_0026__national,attrib3).
+arc(r_0015_1003__question,r_0015_0005__am,scope).
+arc(r_0015_1011__cnt,r_0015_0014__hold,scope).
+arc(r_0015_1011__cnt,r_0015_0019__identify,restriction).
+arc(r_0015_1015__question,r_0015_0022__should,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_15_A_Hedgehog,axiom,
+fof(id__15_A_Hedgehog,axiom,
     ? [STATEX1,CATENATIVEX5,STATEX8,STATEX13,SPEAKERX7,EVENTX26,OPERATORX3,EVENTX25,EVENTX24,CONNX12,EVENTX22,OPERATORX15,OPERATORX20,EVENTX21,EVENTX23,ENTITYX6,ENTITYX9,ENTITYX16,ENTITYX17,QUALITYX4,ATTRIBX18,ATTRIBX19,ATTRIBX10] :
       ( STATEX1 = OPERATORX3
-      &amp; isA(OPERATORX3,question_0015_1003)
+      &amp; isA(OPERATORX3,r_0015_1003__question)
       &amp; scope(OPERATORX3) = EVENTX25
       &amp; isA(EVENTX25,r_0015_0005__am)
       &amp; mnr1(EVENTX25) = QUALITYX4
@@ -381,7 +381,7 @@ fof(id_15_A_Hedgehog,axiom,
       &amp; r_0015_0007__on_clr(EVENTX24) = ENTITYX6
       &amp; arg1(EVENTX24) = STATEX8
       &amp; STATEX8 = CONNX12
-      &amp; isA(CONNX12,cnt_0015_1011)
+      &amp; isA(CONNX12,r_0015_1011__cnt)
       &amp; scope(CONNX12) = EVENTX23
       &amp; isA(EVENTX23,r_0015_0014__hold)
       &amp; arg0(EVENTX23) = ENTITYX6
@@ -391,14 +391,14 @@ fof(id_15_A_Hedgehog,axiom,
       &amp; arg0(EVENTX22) = ENTITYX9
       &amp; arg1(EVENTX22) = STATEX13
       &amp; STATEX13 = OPERATORX15
-      &amp; isA(OPERATORX15,question_0015_1015)
+      &amp; isA(OPERATORX15,r_0015_1015__question)
       &amp; scope(OPERATORX15) = OPERATORX20
       &amp; isA(OPERATORX20,r_0015_0022__should)
       &amp; scope(OPERATORX20) = EVENTX21
       &amp; isA(EVENTX21,r_0015_0023__be)
       &amp; arg0(EVENTX21) = ENTITYX16
-      &amp; arg1(EVENTX21) = ENTITYX17
-      &amp; isA(ENTITYX6,r_0015_0009__hon._Friend)
+      &amp; prd2(EVENTX21) = ENTITYX17
+      &amp; isA(ENTITYX6,r_0015_0009__hon__r_0015_0010__Friend)
       &amp; genv(ENTITYX6) = SPEAKERX7
       &amp; prn4(ENTITYX6) = r_0015_0012__Minister
       &amp; SPEAKERX7 = r_0015_0004__I
@@ -541,33 +541,33 @@ fof(id_15_A_Hedgehog,axiom,
 <text x="2580.72" y="661" text-anchor="middle">should</text>
 <line x1="2580.72" y1="610" x2="2580.72" y2="641" style="stroke:#000000;stroke-width:2;"/>
 <line x1="2760.72" y1="549" x2="2580" y2="580" style="stroke:#000000;stroke-width:2;"/>
-<text x="2700.24" y="600" text-anchor="middle">BE</text>
-<text x="2700.24" y="661" text-anchor="middle">be</text>
-<line x1="2700.24" y1="610" x2="2700.24" y2="641" style="stroke:#000000;stroke-width:2;"/>
+<text x="2700.72" y="600" text-anchor="middle">BE;~Ln</text>
+<text x="2700.72" y="661" text-anchor="middle">be</text>
+<line x1="2700.72" y1="610" x2="2700.72" y2="641" style="stroke:#000000;stroke-width:2;"/>
 <line x1="2760.72" y1="549" x2="2700" y2="580" style="stroke:#000000;stroke-width:2;"/>
-<text x="3000.72" y="600" text-anchor="middle">NP-OB1</text>
+<text x="3000.84" y="600" text-anchor="middle">NP-PRD2</text>
 <text x="2820.84" y="661" text-anchor="middle">NP-GENV</text>
 <text x="2821.2" y="722" text-anchor="middle">PRO;_genm_</text>
 <text x="2821.2" y="783" text-anchor="middle">our</text>
 <line x1="2821.2" y1="732" x2="2821.2" y2="763" style="stroke:#000000;stroke-width:2;"/>
 <line x1="2820.84" y1="671" x2="2820" y2="702" style="stroke:#000000;stroke-width:2;"/>
-<line x1="3000.72" y1="610" x2="2820" y2="641" style="stroke:#000000;stroke-width:2;"/>
+<line x1="3000.84" y1="610" x2="2820" y2="641" style="stroke:#000000;stroke-width:2;"/>
 <text x="2940.48" y="661" text-anchor="middle">ADJP</text>
 <text x="2941.2" y="722" text-anchor="middle">ADJ</text>
 <text x="2941.2" y="783" text-anchor="middle">designated</text>
 <line x1="2941.2" y1="732" x2="2941.2" y2="763" style="stroke:#000000;stroke-width:2;"/>
 <line x1="2940.48" y1="671" x2="2940" y2="702" style="stroke:#000000;stroke-width:2;"/>
-<line x1="3000.72" y1="610" x2="2940" y2="641" style="stroke:#000000;stroke-width:2;"/>
+<line x1="3000.84" y1="610" x2="2940" y2="641" style="stroke:#000000;stroke-width:2;"/>
 <text x="3060.48" y="661" text-anchor="middle">ADJP</text>
 <text x="3060.96" y="722" text-anchor="middle">ADJ</text>
 <text x="3060.96" y="783" text-anchor="middle">national</text>
 <line x1="3060.96" y1="732" x2="3060.96" y2="763" style="stroke:#000000;stroke-width:2;"/>
 <line x1="3060.48" y1="671" x2="3060" y2="702" style="stroke:#000000;stroke-width:2;"/>
-<line x1="3000.72" y1="610" x2="3060" y2="641" style="stroke:#000000;stroke-width:2;"/>
+<line x1="3000.84" y1="610" x2="3060" y2="641" style="stroke:#000000;stroke-width:2;"/>
 <text x="3180.84" y="661" text-anchor="middle">NS</text>
 <text x="3180.84" y="722" text-anchor="middle">species</text>
 <line x1="3180.84" y1="671" x2="3180.84" y2="702" style="stroke:#000000;stroke-width:2;"/>
-<line x1="3000.72" y1="610" x2="3180" y2="641" style="stroke:#000000;stroke-width:2;"/>
+<line x1="3000.84" y1="610" x2="3180" y2="641" style="stroke:#000000;stroke-width:2;"/>
 <line x1="2760.72" y1="549" x2="3000" y2="580" style="stroke:#000000;stroke-width:2;"/>
 <line x1="2761.2" y1="488" x2="2760" y2="519" style="stroke:#000000;stroke-width:2;"/>
 <line x1="2640.72" y1="427" x2="2760" y2="458" style="stroke:#000000;stroke-width:2;"/>
@@ -606,11 +606,11 @@ fof(id_15_A_Hedgehog,axiom,
                                                                             (CP-QUE-OB1 (IP-SUB (NP-SBJ (WD which;{which})
                                                                                                         (N animal;{animal}))
                                                                                                 (MD should;{shall})
-                                                                                                (BE be;{be})
-                                                                                                (NP-OB1 (NP-GENV (PRO;_genm_ our;{our}))
-                                                                                                        (ADJP (ADJ designated;{designated}))
-                                                                                                        (ADJP (ADJ national;{national}))
-                                                                                                        (NS species;{specie}))))))))))
+                                                                                                (BE;~Ln be;{be})
+                                                                                                (NP-PRD2 (NP-GENV (PRO;_genm_ our;{our}))
+                                                                                                         (ADJP (ADJ designated;{designated}))
+                                                                                                         (ADJP (ADJ national;{national}))
+                                                                                                         (NS species;{specie}))))))))))
           (PUNC .))
   (ID 15_A_Hedgehog;2015-11-10;speaker=Colvile))
 </pre>

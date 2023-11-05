@@ -574,11 +574,6 @@ Having thoroughly washed and dried the bottles , supposing they have been before
 </svg>
 <br>
 <pre>
-arc(abs_0033_1004,abs_0033_1013,scope).
-arc(abs_0033_1004,r_0033_0001__Having,restriction).
-arc(abs_0033_1013,r_0033_0009__supposing,restriction).
-arc(abs_0033_1013,r_0033_0022__provide,scope).
-arc(imperative_0033_1002,abs_0033_1004,scope).
 arc(r_0033_0001__Having,r_0033_0004__and,catenative).
 arc(r_0033_0003__washed,r_0033_0002__thoroughly,mnr1).
 arc(r_0033_0003__washed,r_0033_0007__bottles,arg1).
@@ -614,14 +609,19 @@ arc(r_0033_0045__or,r_0033_0044__hammer,conj1).
 arc(r_0033_0045__or,r_0033_0046__mallet,conj2).
 arc(r_0033_0053__and,r_0033_0023__corks,conj1).
 arc(r_0033_0053__and,r_0033_0045__or,conj2).
-arc(r_0033_0053__and,r_0033_0049__bottling_boot,conj3).
+arc(r_0033_0053__and,r_0033_0049__bottling__r_0033_0051__boot,conj3).
 arc(r_0033_0053__and,r_0033_0055__squeezer,conj4).
 arc(r_0033_0055__squeezer,r_0033_0058__corks,r_0033_0056__for).
+arc(r_0033_1002__imperative,r_0033_1004__abs,scope).
+arc(r_0033_1004__abs,r_0033_0001__Having,restriction).
+arc(r_0033_1004__abs,r_0033_1013__abs,scope).
+arc(r_0033_1013__abs,r_0033_0009__supposing,restriction).
+arc(r_0033_1013__abs,r_0033_0022__provide,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_33_A_BEETON_1861,axiom,
+fof(id__33_A_BEETON_1861,axiom,
     ? [CATENATIVEX6,STATEX15,CATENATIVEX17,CATENATIVEX18,CATENATIVEX31,CATENATIVEX34,WINE_BOTTLESX16,OPERATORX2,CONNX5,CONNX14,EVENTX54,OPERATORX30,EVENTX46,CONNX33,EVENTX44,CONJX43,OPERATORX39,EVENTX42,EVENTX37,EVENTX45,EVENTX27,EVENTX26,EVENTX25,EVENTX24,EVENTX12,CONJX11,EVENTX10,EVENTX9,QUALITYX36,QUALITYX20,QUALITYX7,ENTITYX28,ENTITYX29,ENTITYX47,ENTITYX51,ENTITYX52,ENTITYX53,ENTITYX48,ENTITYX50,ENTITYX40,ENTITYX21,ENTITYX23,WINE_BOTTLESX8,ATTRIBX49,ATTRIBX41,ATTRIBX22] :
       ( CATENATIVEX6 = CONJX11
       &amp; isA(CONJX11,r_0033_0004__and)
@@ -691,21 +691,21 @@ fof(id_33_A_BEETON_1861,axiom,
       &amp; isA(ENTITYX48,r_0033_0044__hammer)
       &amp; attrib2(ENTITYX48) = ATTRIBX49
       &amp; isA(ENTITYX50,r_0033_0046__mallet)
-      &amp; isA(ENTITYX51,r_0033_0049__bottling_boot)
+      &amp; isA(ENTITYX51,r_0033_0049__bottling__r_0033_0051__boot)
       &amp; isA(ENTITYX52,r_0033_0055__squeezer)
       &amp; r_0033_0056__for(ENTITYX52) = ENTITYX53
       &amp; isA(ENTITYX53,r_0033_0058__corks)
       &amp; isA(ATTRIBX22,r_0033_0017__same)
       &amp; isA(ATTRIBX41,r_0033_0038__hot)
       &amp; isA(ATTRIBX49,r_0033_0043__wooden)
-      &amp; isA(OPERATORX2,imperative_0033_1002)
+      &amp; isA(OPERATORX2,r_0033_1002__imperative)
       &amp; scope(OPERATORX2) = CONNX5
-      &amp; isA(CONNX5,abs_0033_1004)
+      &amp; isA(CONNX5,r_0033_1004__abs)
       &amp; restriction(CONNX5) = EVENTX12
       &amp; isA(EVENTX12,r_0033_0001__Having)
       &amp; catenative(EVENTX12) = CATENATIVEX6
       &amp; scope(CONNX5) = CONNX14
-      &amp; isA(CONNX14,abs_0033_1013)
+      &amp; isA(CONNX14,r_0033_1013__abs)
       &amp; restriction(CONNX14) = EVENTX27
       &amp; isA(EVENTX27,r_0033_0009__supposing)
       &amp; arg1(EVENTX27) = STATEX15

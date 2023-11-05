@@ -161,14 +161,14 @@ arc(r_0088_0005__individuals,r_0088_0001__Experienced,attrib1).
 arc(r_0088_0006__work,r_0088_0005__individuals,arg0).
 arc(r_0088_0006__work,r_0088_0008__customers,r_0088_0007__with_com).
 arc(r_0088_0006__work,r_0088_0010__applying,r_0088_0009__in_clr).
-arc(r_0088_0010__applying,r_0088_0011__IBM_methods,arg1).
+arc(r_0088_0010__applying,r_0088_0011__IBM__r_0088_0012__methods,arg1).
 arc(r_0088_0010__applying,r_0088_0015__requirements,r_0088_0013__to_clr).
 arc(r_0088_0015__requirements,r_0088_0008__customers,genv).
 
 </pre>
 <br>
 <pre>
-fof(id_88_A_IBM_1401,axiom,
+fof(id__88_A_IBM_1401,axiom,
     ? [EVENTX7,CUSTOMERSX12,EVENTX14,EVENTX13,OPERATORX4,EVENTX5,ENTITYX1,CUSTOMERSX6,METHODSX10,ENTITYX11,ATTRIBX2] :
       ( EVENTX7 = EVENTX13
       &amp; isA(EVENTX13,r_0088_0010__applying)
@@ -181,7 +181,7 @@ fof(id_88_A_IBM_1401,axiom,
       &amp; isA(ENTITYX1,r_0088_0005__individuals)
       &amp; attrib1(ENTITYX1) = ATTRIBX2
       &amp; isA(CUSTOMERSX6,r_0088_0008__customers)
-      &amp; isA(METHODSX10,r_0088_0011__IBM_methods)
+      &amp; isA(METHODSX10,r_0088_0011__IBM__r_0088_0012__methods)
       &amp; isA(ENTITYX11,r_0088_0015__requirements)
       &amp; genv(ENTITYX11) = CUSTOMERSX12
       &amp; CUSTOMERSX12 = CUSTOMERSX6

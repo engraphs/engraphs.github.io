@@ -331,12 +331,10 @@ Mrs. Shepherd Fennel assented , and made room for the self-invited comer , who ,
 </svg>
 <br>
 <pre>
-arc(cnt_0094_1005,r_0094_0016__having,restriction).
-arc(cnt_0094_1005,r_0094_0023__stretched_out,scope).
-arc(r_0094_0004__assented,r_0094_0001__Mrs._Shepherd_Fennel,arg0).
+arc(r_0094_0004__assented,r_0094_0001__Mrs__r_0094_0002__Shepherd__r_0094_0003__Fennel,arg0).
 arc(r_0094_0006__and,r_0094_0004__assented,conj1).
 arc(r_0094_0006__and,r_0094_0007__made,conj2).
-arc(r_0094_0007__made,r_0094_0001__Mrs._Shepherd_Fennel,arg0).
+arc(r_0094_0007__made,r_0094_0001__Mrs__r_0094_0002__Shepherd__r_0094_0003__Fennel,arg0).
 arc(r_0094_0007__made,r_0094_0008__room,arg1).
 arc(r_0094_0008__room,r_0094_0012__comer,r_0094_0009__for).
 arc(r_0094_0012__comer,r_0094_0011__self_invited,attrib2).
@@ -344,9 +342,9 @@ arc(r_0094_0016__having,r_0094_0017__got,catenative).
 arc(r_0094_0017__got,r_0094_0012__comer,arg0).
 arc(r_0094_0017__got,r_0094_0018__completely,mnr2).
 arc(r_0094_0017__got,r_0094_0021__chimney_corner,r_0094_0019__inside_loc).
-arc(r_0094_0023__stretched_out,r_0094_0012__comer,arg0).
-arc(r_0094_0023__stretched_out,r_0094_0027__and,arg1).
-arc(r_0094_0023__stretched_out,r_0094_0032__expansiveness,r_0094_0030__with_mnr).
+arc(r_0094_0023__stretched__r_0094_0024__out,r_0094_0012__comer,arg0).
+arc(r_0094_0023__stretched__r_0094_0024__out,r_0094_0027__and,arg1).
+arc(r_0094_0023__stretched__r_0094_0024__out,r_0094_0032__expansiveness,r_0094_0030__with_mnr).
 arc(r_0094_0026__legs,r_0094_0025__his,genv).
 arc(r_0094_0027__and,r_0094_0026__legs,conj1).
 arc(r_0094_0027__and,r_0094_0029__arms,conj2).
@@ -354,11 +352,13 @@ arc(r_0094_0029__arms,r_0094_0028__his,genv).
 arc(r_0094_0032__expansiveness,r_0094_0035__person,r_0094_0033__of).
 arc(r_0094_0035__person,r_0094_0036__quite,mnr3).
 arc(r_0094_0036__quite,r_0094_0038__home,r_0094_0037__at).
+arc(r_0094_1005__cnt,r_0094_0016__having,restriction).
+arc(r_0094_1005__cnt,r_0094_0023__stretched__r_0094_0024__out,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_94_A_HARDY_1883,axiom,
+fof(id__94_A_HARDY_1883,axiom,
     ? [CATENATIVEX7,CONJX21,EVENTX20,CONNX6,EVENTX19,EVENTX11,EVENTX10,EVENTX1,ENTITYX2,ENTITYX3,ENTITYX12,ENTITYX15,ENTITYX16,ENTITYX18,ENTITYX13,ENTITYX14,ENTITYX9,ATTRIBX4,QUALITYX17,QUALITYX8] :
       ( CATENATIVEX7 = EVENTX10
       &amp; isA(EVENTX10,r_0094_0017__got)
@@ -367,12 +367,12 @@ fof(id_94_A_HARDY_1883,axiom,
       &amp; r_0094_0019__inside_loc(EVENTX10) = ENTITYX9
       &amp; isA(ENTITYX2,r_0094_0008__room)
       &amp; r_0094_0009__for(ENTITYX2) = ENTITYX3
-      &amp; isA(CONNX6,cnt_0094_1005)
+      &amp; isA(CONNX6,r_0094_1005__cnt)
       &amp; restriction(CONNX6) = EVENTX11
       &amp; isA(EVENTX11,r_0094_0016__having)
       &amp; catenative(EVENTX11) = CATENATIVEX7
       &amp; scope(CONNX6) = EVENTX19
-      &amp; isA(EVENTX19,r_0094_0023__stretched_out)
+      &amp; isA(EVENTX19,r_0094_0023__stretched__r_0094_0024__out)
       &amp; arg0(EVENTX19) = ENTITYX3
       &amp; arg1(EVENTX19) = ENTITYX12
       &amp; r_0094_0030__with_mnr(EVENTX19) = ENTITYX15
@@ -398,10 +398,10 @@ fof(id_94_A_HARDY_1883,axiom,
       &amp; isA(CONJX21,r_0094_0006__and)
       &amp; conj1(CONJX21) = EVENTX1
       &amp; isA(EVENTX1,r_0094_0004__assented)
-      &amp; arg0(EVENTX1) = r_0094_0001__Mrs._Shepherd_Fennel
+      &amp; arg0(EVENTX1) = r_0094_0001__Mrs__r_0094_0002__Shepherd__r_0094_0003__Fennel
       &amp; conj2(CONJX21) = EVENTX20
       &amp; isA(EVENTX20,r_0094_0007__made)
-      &amp; arg0(EVENTX20) = r_0094_0001__Mrs._Shepherd_Fennel
+      &amp; arg0(EVENTX20) = r_0094_0001__Mrs__r_0094_0002__Shepherd__r_0094_0003__Fennel
       &amp; arg1(EVENTX20) = ENTITYX2 ) ).
 
 

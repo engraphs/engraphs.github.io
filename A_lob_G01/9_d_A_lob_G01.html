@@ -448,8 +448,8 @@ But none of these deductions were drawn at the time , because large-scale war re
 </svg>
 <br>
 <pre>
-arc(r_0017_0002__quantificational__none,r_0017_0012__because_cnt,scope).
-arc(r_0017_0002__quantificational__none,z_0017_1004,restriction).
+arc(r_0017_0002__quantificational__r_0017_0002__none,r_0017_0012__because_cnt,scope).
+arc(r_0017_0002__quantificational__r_0017_0002__none,z_0017_1004,restriction).
 arc(r_0017_0006__were,r_0017_0007__drawn,catenative).
 arc(r_0017_0007__drawn,r_0017_0010__time,r_0017_0008__at_tmp).
 arc(r_0017_0007__drawn,z_0017_1004,arg1).
@@ -458,7 +458,7 @@ arc(r_0017_0012__because_cnt,r_0017_0015__required,restriction).
 arc(r_0017_0014__war,r_0017_0013__large_scale,attrib1).
 arc(r_0017_0015__required,r_0017_0014__war,arg0).
 arc(r_0017_0015__required,r_0017_0016__money,arg1).
-arc(r_0017_0018__and,r_0017_0002__quantificational__none,conj1).
+arc(r_0017_0018__and,r_0017_0002__quantificational__r_0017_0002__none,conj1).
 arc(r_0017_0018__and,r_0017_0026__not,conj2).
 arc(r_0017_0022__had,r_0017_0020__citizens,arg0).
 arc(r_0017_0022__had,r_0017_0024__money,arg1).
@@ -476,15 +476,15 @@ arc(r_0017_0038__money,r_0017_0020__citizens,genv).
 arc(r_0017_0040__spent,r_0017_0038__money,arg1).
 arc(r_0017_0040__spent,r_0017_0039__well,mnr2).
 arc(r_0017_0040__spent,r_0017_0042__financing,r_0017_0041__in_cnt).
-arc(r_0017_0042__financing,r_0017_0044__ruling_class,arg1).
-arc(r_0017_0047__despised,r_0017_0044__ruling_class,arg0).
+arc(r_0017_0042__financing,r_0017_0044__ruling__r_0017_0045__class,arg1).
+arc(r_0017_0047__despised,r_0017_0044__ruling__r_0017_0045__class,arg0).
 arc(r_0017_0047__despised,r_0017_0048__them,arg1).
 arc(z_0017_1004,r_0017_0005__deductions,r_0017_0003__of).
 
 </pre>
 <br>
 <pre>
-fof(id_17_A_lob_G01,axiom,
+fof(id__17_A_lob_G01,axiom,
     ? [CATENATIVEX10,STATEX23,EVENTX30,CITIZENSX27,CONJX40,OPERATORX38,EVENTX39,EVENTX37,EVENTX36,EVENTX35,EVENTX34,EVENTX17,QUANTX2,CONNX5,EVENTX9,EVENTX14,EVENTX13,CITIZENSX15,ENTITYX20,ENTITYX21,ENTITYX26,ENTITYX33,ENTITYX22,ENTITYX16,ENTITYX1,ENTITYX6,ENTITYX8,ENTITYX12,ENTITYX3,ATTRIBX7,QUALITYX18,QUALITYX19,QUALITYX29] :
       ( CATENATIVEX10 = EVENTX13
       &amp; isA(EVENTX13,r_0017_0007__drawn)
@@ -523,14 +523,14 @@ fof(id_17_A_lob_G01,axiom,
       &amp; isA(EVENTX34,r_0017_0047__despised)
       &amp; arg0(EVENTX34) = ENTITYX33
       &amp; arg1(EVENTX34) = r_0017_0048__them
-      &amp; isA(ENTITYX33,r_0017_0044__ruling_class)
+      &amp; isA(ENTITYX33,r_0017_0044__ruling__r_0017_0045__class)
       &amp; isA(ATTRIBX7,r_0017_0013__large_scale)
       &amp; isA(QUALITYX18,r_0017_0027__yet)
       &amp; isA(QUALITYX19,r_0017_0028__sufficiently)
       &amp; isA(QUALITYX29,r_0017_0039__well)
       &amp; isA(CONJX40,r_0017_0018__and)
       &amp; conj1(CONJX40) = QUANTX2
-      &amp; isA(QUANTX2,r_0017_0002__quantificational__none)
+      &amp; isA(QUANTX2,r_0017_0002__quantificational__r_0017_0002__none)
       &amp; restriction(QUANTX2) = ENTITYX1
       &amp; isA(ENTITYX1,z_0017_1004)
       &amp; r_0017_0003__of(ENTITYX1) = ENTITYX3

@@ -252,34 +252,34 @@ Write a letter to a friend who has not read the book , explaining why your frien
 </svg>
 <br>
 <pre>
-arc(cnt_0029_1011,r_0029_0001__Write,scope).
-arc(cnt_0029_1011,r_0029_0014__explaining,restriction).
-arc(imperative_0029_1002,cnt_0029_1011,scope).
-arc(question_0029_1015,r_0029_0015__why,scope).
 arc(r_0029_0001__Write,r_0029_0003__letter,arg1).
 arc(r_0029_0001__Write,r_0029_0006__friend,r_0029_0004__to_arg2).
 arc(r_0029_0008__has,r_0029_0010__read,catenative).
 arc(r_0029_0009__not,r_0029_0008__has,scope).
 arc(r_0029_0010__read,r_0029_0006__friend,arg0).
 arc(r_0029_0010__read,r_0029_0012__book,arg1).
-arc(r_0029_0014__explaining,question_0029_1015,arg1).
+arc(r_0029_0014__explaining,r_0029_1015__question,arg1).
 arc(r_0029_0015__why,r_0029_0018__should,scope).
 arc(r_0029_0017__friend,r_0029_0016__your,genv).
 arc(r_0029_0018__should,r_0029_0019__listen,scope).
 arc(r_0029_0019__listen,r_0029_0017__friend,arg0).
 arc(r_0029_0019__listen,r_0029_0022__programme,r_0029_0020__to_clr).
+arc(r_0029_1002__imperative,r_0029_1011__cnt,scope).
+arc(r_0029_1011__cnt,r_0029_0001__Write,scope).
+arc(r_0029_1011__cnt,r_0029_0014__explaining,restriction).
+arc(r_0029_1015__question,r_0029_0015__why,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_29_A_fce_0102_2000_06,axiom,
+fof(id__29_A_fce_0102_2000_06,axiom,
     ? [CATENATIVEX7,STATEX13,OPERATORX2,CONNX12,EVENTX21,OPERATORX15,OPERATORX16,OPERATORX19,EVENTX20,EVENTX22,OPERATORX6,EVENTX10,EVENTX9,ENTITYX4,ENTITYX5,ENTITYX17,ENTITYX18,ENTITYX8] :
       ( CATENATIVEX7 = EVENTX9
       &amp; isA(EVENTX9,r_0029_0010__read)
       &amp; arg0(EVENTX9) = ENTITYX5
       &amp; arg1(EVENTX9) = ENTITYX8
       &amp; STATEX13 = OPERATORX15
-      &amp; isA(OPERATORX15,question_0029_1015)
+      &amp; isA(OPERATORX15,r_0029_1015__question)
       &amp; scope(OPERATORX15) = OPERATORX16
       &amp; isA(OPERATORX16,r_0029_0015__why)
       &amp; scope(OPERATORX16) = OPERATORX19
@@ -298,9 +298,9 @@ fof(id_29_A_fce_0102_2000_06,axiom,
       &amp; isA(ENTITYX17,r_0029_0017__friend)
       &amp; genv(ENTITYX17) = r_0029_0016__your
       &amp; isA(ENTITYX18,r_0029_0022__programme)
-      &amp; isA(OPERATORX2,imperative_0029_1002)
+      &amp; isA(OPERATORX2,r_0029_1002__imperative)
       &amp; scope(OPERATORX2) = CONNX12
-      &amp; isA(CONNX12,cnt_0029_1011)
+      &amp; isA(CONNX12,r_0029_1011__cnt)
       &amp; scope(CONNX12) = EVENTX22
       &amp; isA(EVENTX22,r_0029_0001__Write)
       &amp; arg1(EVENTX22) = ENTITYX4

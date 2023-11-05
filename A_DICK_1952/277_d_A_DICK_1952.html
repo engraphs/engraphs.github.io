@@ -97,17 +97,17 @@
 <br>
 <pre>
 arc(r_0355_0007__said,r_0355_0006__Nasha,arg0).
-arc(r_0355_0007__said,utterance_0355_1004,arg1).
-arc(utterance_0355_1004,z_0355_1010,part1).
+arc(r_0355_0007__said,r_0355_1004__utterance,arg1).
+arc(r_0355_1004__utterance,z_0355_1010,part1).
 arc(z_0355_1010,r_0355_0003__enemy,z_0355_1008).
 
 </pre>
 <br>
 <pre>
-fof(id_355_A_DICK_1952,axiom,
+fof(id__355_A_DICK_1952,axiom,
     ? [STATEX2,EVENTX13,CONJX12,EVENTX11,ENEMYX9] :
       ( STATEX2 = CONJX12
-      &amp; isA(CONJX12,utterance_0355_1004)
+      &amp; isA(CONJX12,r_0355_1004__utterance)
       &amp; part1(CONJX12) = EVENTX11
       &amp; isA(EVENTX11,z_0355_1010)
       &amp; z_0355_1008(EVENTX11) = ENEMYX9

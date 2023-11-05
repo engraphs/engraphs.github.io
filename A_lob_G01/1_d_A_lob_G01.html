@@ -110,7 +110,7 @@ A Scottish knight &mdash; Sir John Mercer &mdash; was imprisoned in England .
 <br>
 <pre>
 arc(r_0001_0003__knight,r_0001_0002__Scottish,attrib2).
-arc(r_0001_0003__knight,r_0001_0005__Sir_John_Mercer,prn5).
+arc(r_0001_0003__knight,r_0001_0005__Sir__r_0001_0006__John_r_0001_0007__Mercer,prn5).
 arc(r_0001_0009__was,r_0001_0010__imprisoned,catenative).
 arc(r_0001_0010__imprisoned,r_0001_0003__knight,arg1).
 arc(r_0001_0010__imprisoned,r_0001_0012__England,r_0001_0011__in_loc).
@@ -118,7 +118,7 @@ arc(r_0001_0010__imprisoned,r_0001_0012__England,r_0001_0011__in_loc).
 </pre>
 <br>
 <pre>
-fof(id_1_A_lob_G01,axiom,
+fof(id__1_A_lob_G01,axiom,
     ? [CATENATIVEX3,EVENTX6,EVENTX5,ENTITYX1,ATTRIBX2] :
       ( CATENATIVEX3 = EVENTX5
       &amp; isA(EVENTX5,r_0001_0010__imprisoned)
@@ -126,7 +126,7 @@ fof(id_1_A_lob_G01,axiom,
       &amp; r_0001_0011__in_loc(EVENTX5) = r_0001_0012__England
       &amp; isA(ENTITYX1,r_0001_0003__knight)
       &amp; attrib2(ENTITYX1) = ATTRIBX2
-      &amp; prn5(ENTITYX1) = r_0001_0005__Sir_John_Mercer
+      &amp; prn5(ENTITYX1) = r_0001_0005__Sir__r_0001_0006__John_r_0001_0007__Mercer
       &amp; isA(ATTRIBX2,r_0001_0002__Scottish)
       &amp; isA(EVENTX6,r_0001_0009__was)
       &amp; catenative(EVENTX6) = CATENATIVEX3 ) ).

@@ -210,21 +210,21 @@ The chronicler Walsingham remarks that the Genoese 's chief crime was that he pr
 arc(r_0056_0003__Walsingham,r_0056_0002__chronicler,prn1).
 arc(r_0056_0004__remarks,r_0056_0003__Walsingham,arg0).
 arc(r_0056_0004__remarks,r_0056_0011__was,arg1).
-arc(r_0056_0009__chief_crime,r_0056_0007__Genoese,genv).
-arc(r_0056_0011__was,r_0056_0009__chief_crime,arg0).
+arc(r_0056_0009__chief__r_0056_0010__crime,r_0056_0007__Genoese,genv).
+arc(r_0056_0011__was,r_0056_0009__chief__r_0056_0010__crime,arg0).
 arc(r_0056_0011__was,r_0056_0014__proposed,prd2).
 arc(r_0056_0014__proposed,r_0056_0013__he,arg0).
 arc(r_0056_0014__proposed,r_0056_0016__sell,arg1).
 arc(r_0056_0016__sell,r_0056_0013__he,arg0).
 arc(r_0056_0016__sell,r_0056_0017__pepper,arg1).
-arc(r_0056_0016__sell,r_0056_0021__4_d,r_0056_0018__at_mnr).
-arc(r_0056_0021__4_d,r_0056_0020__mere,attrib2).
-arc(r_0056_0021__4_d,r_0056_0024__pound,mnr).
+arc(r_0056_0016__sell,r_0056_0021__4__r_0056_0022__d,r_0056_0018__at_mnr).
+arc(r_0056_0021__4__r_0056_0022__d,r_0056_0020__mere,attrib2).
+arc(r_0056_0021__4__r_0056_0022__d,r_0056_0024__pound,mnr).
 
 </pre>
 <br>
 <pre>
-fof(id_56_A_lob_G01,axiom,
+fof(id__56_A_lob_G01,axiom,
     ? [STATEX2,STATEX4,STATEX5,EVENTX13,EVENTX12,EVENTX11,EVENTX10,ENTITYX3,ENTITYX6,ENTITYX7,ENTITYX9,ENTITYX1,ATTRIBX8] :
       ( STATEX2 = EVENTX12
       &amp; isA(EVENTX12,r_0056_0011__was)
@@ -240,10 +240,10 @@ fof(id_56_A_lob_G01,axiom,
       &amp; arg1(EVENTX10) = ENTITYX6
       &amp; r_0056_0018__at_mnr(EVENTX10) = ENTITYX7
       &amp; isA(ENTITYX1,r_0056_0002__chronicler)
-      &amp; isA(ENTITYX3,r_0056_0009__chief_crime)
+      &amp; isA(ENTITYX3,r_0056_0009__chief__r_0056_0010__crime)
       &amp; genv(ENTITYX3) = r_0056_0007__Genoese
       &amp; isA(ENTITYX6,r_0056_0017__pepper)
-      &amp; isA(ENTITYX7,r_0056_0021__4_d)
+      &amp; isA(ENTITYX7,r_0056_0021__4__r_0056_0022__d)
       &amp; attrib2(ENTITYX7) = ATTRIBX8
       &amp; mnr(ENTITYX7) = ENTITYX9
       &amp; isA(ENTITYX9,r_0056_0024__pound)

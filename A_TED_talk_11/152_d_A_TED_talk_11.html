@@ -193,10 +193,8 @@ Following off from Helen yesterday , this is probably why women are better at mu
 </svg>
 <br>
 <pre>
-arc(abs_0197_1001,r_0197_0001__Following_off,restriction).
-arc(abs_0197_1001,r_0197_0009__probably,scope).
-arc(r_0197_0001__Following_off,r_0197_0004__Helen,r_0197_0003__from_dir).
-arc(r_0197_0001__Following_off,r_0197_0005__yesterday,tmp4).
+arc(r_0197_0001__Following__r_0197_0002__off,r_0197_0004__Helen,r_0197_0003__from_dir).
+arc(r_0197_0001__Following__r_0197_0002__off,r_0197_0005__yesterday,tmp4).
 arc(r_0197_0008__is,r_0197_0007__this,arg0).
 arc(r_0197_0008__is,z_0197_1014,prd2).
 arc(r_0197_0009__probably,r_0197_0008__is,scope).
@@ -204,11 +202,13 @@ arc(r_0197_0010__why,r_0197_0012__are,scope).
 arc(r_0197_0012__are,r_0197_0011__women,arg0).
 arc(r_0197_0012__are,r_0197_0013__better,prd2).
 arc(r_0197_0013__better,r_0197_0015__multi_tasking,r_0197_0014__at).
+arc(r_0197_1001__abs,r_0197_0001__Following__r_0197_0002__off,restriction).
+arc(r_0197_1001__abs,r_0197_0009__probably,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_197_A_TED_talk_11,axiom,
+fof(id__197_A_TED_talk_11,axiom,
     ? [CONNX2,OPERATORX7,EVENTX15,OPERATORX9,EVENTX13,EVENTX6,ENTITYX8,ENTITYX10,ENTITYX12,QUALITYX5,ATTRIBX11] :
       ( isA(OPERATORX9,r_0197_0010__why)
       &amp; scope(OPERATORX9) = EVENTX13
@@ -221,9 +221,9 @@ fof(id_197_A_TED_talk_11,axiom,
       &amp; isA(QUALITYX5,r_0197_0005__yesterday)
       &amp; isA(ATTRIBX11,r_0197_0013__better)
       &amp; r_0197_0014__at(ATTRIBX11) = ENTITYX12
-      &amp; isA(CONNX2,abs_0197_1001)
+      &amp; isA(CONNX2,r_0197_1001__abs)
       &amp; restriction(CONNX2) = EVENTX6
-      &amp; isA(EVENTX6,r_0197_0001__Following_off)
+      &amp; isA(EVENTX6,r_0197_0001__Following__r_0197_0002__off)
       &amp; r_0197_0003__from_dir(EVENTX6) = r_0197_0004__Helen
       &amp; tmp4(EVENTX6) = QUALITYX5
       &amp; scope(CONNX2) = OPERATORX7

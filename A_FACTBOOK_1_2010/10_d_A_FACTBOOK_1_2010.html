@@ -354,14 +354,14 @@ left untreated , mortality rates can reach 20 % .
 <pre>
 arc(cnt_cnd_0017_1024,r_0019_0001__left,restriction).
 arc(cnt_cnd_0017_1024,r_0019_0006__can,scope).
-arc(r_0017_0001__Typhoid_fever,r_0017_0004__bacterial_disease,prn4).
-arc(r_0017_0006__spread,r_0017_0004__bacterial_disease,arg1).
+arc(r_0017_0001__Typhoid__r_0017_0002__fever,r_0017_0004__bacterial_r_0017_0005__disease,prn4).
+arc(r_0017_0006__spread,r_0017_0004__bacterial__r_0017_0005__disease,arg1).
 arc(r_0017_0006__spread,r_0017_0008__contact,r_0017_0007__through_mnr).
 arc(r_0017_0008__contact,r_0017_0011__or,r_0017_0009__with).
 arc(r_0017_0011__or,r_0017_0010__food,conj1).
 arc(r_0017_0011__or,r_0017_0012__water,conj2).
 arc(r_0017_0013__contaminated,r_0017_0011__or,arg1).
-arc(r_0017_0013__contaminated,r_0017_0017__or,arg0_by_lgs).
+arc(r_0017_0013__contaminated,r_0017_0017__or,arg0__r_0017_0014__by_lgs).
 arc(r_0017_0016__matter,r_0017_0015__fecal,attrib1).
 arc(r_0017_0017__or,r_0017_0016__matter,conj1).
 arc(r_0017_0017__or,r_0017_0018__sewage,conj2).
@@ -371,23 +371,23 @@ arc(r_0018_0005__fevers,r_0018_0003__sustained,attrib1).
 arc(r_0018_0005__fevers,r_0018_0004__high,attrib2).
 arc(r_0019_0001__left,r_0019_0002__untreated,prd).
 arc(r_0019_0006__can,r_0019_0007__reach,scope).
-arc(r_0019_0007__reach,r_0019_0004__mortality_rates,arg0).
-arc(r_0019_0007__reach,r_0019_0008__20__,arg1).
-arc(z_0017_1017,r_0017_0001__Typhoid_fever,z_0017_1004).
+arc(r_0019_0007__reach,r_0019_0004__mortality__r_0019_0005__rates,arg0).
+arc(r_0019_0007__reach,r_0019_0008__20__r_0019_0009___,arg1).
+arc(z_0017_1017,r_0017_0001__Typhoid__r_0017_0002__fever,z_0017_1004).
 
 </pre>
 <br>
 <pre>
-fof(id_17_A_FACTBOOK_1_2010__18_A_FACTBOOK_1_2010__19_A_FACTBOOK_1_2010,axiom,
+fof(id__17_A_FACTBOOK_1_2010__18_A_FACTBOOK_1_2010__19_A_FACTBOOK_1_2010,axiom,
     ? [CONNX25,OPERATORX33,EVENTX34,EVENTX30,EVENTX23,EVENTX18,EVENTX16,EVENTX13,ENTITYX31,ENTITYX32,ENTITYX19,ENTITYX20,ENTITYX5,ENTITYX7,ENTITYX8,ENTITYX14,ENTITYX15,ENTITYX9,ENTITYX10,ENTITYX12,ATTRIBX29,ATTRIBX21,ATTRIBX22,ATTRIBX11] :
       ( isA(EVENTX16,r_0017_0006__spread)
       &amp; arg1(EVENTX16) = ENTITYX5
       &amp; r_0017_0007__through_mnr(EVENTX16) = ENTITYX7
-      &amp; isA(ENTITYX5,r_0017_0004__bacterial_disease)
+      &amp; isA(ENTITYX5,r_0017_0004__bacterial__r_0017_0005__disease)
       &amp; isA(ENTITYX7,r_0017_0008__contact)
       &amp; r_0017_0009__with(ENTITYX7) = ENTITYX8
       &amp; isA(EVENTX13,r_0017_0013__contaminated)
-      &amp; arg0_by_lgs(EVENTX13) = ENTITYX9
+      &amp; arg0__r_0017_0014__by_lgs(EVENTX13) = ENTITYX9
       &amp; arg1(EVENTX13) = ENTITYX8
       &amp; isA(ENTITYX8,r_0017_0011__or)
       &amp; conj1(ENTITYX8) = ENTITYX14
@@ -404,16 +404,16 @@ fof(id_17_A_FACTBOOK_1_2010__18_A_FACTBOOK_1_2010__19_A_FACTBOOK_1_2010,axiom,
       &amp; isA(ENTITYX20,r_0018_0005__fevers)
       &amp; attrib1(ENTITYX20) = ATTRIBX21
       &amp; attrib2(ENTITYX20) = ATTRIBX22
-      &amp; isA(ENTITYX31,r_0019_0004__mortality_rates)
-      &amp; isA(ENTITYX32,r_0019_0008__20__)
-      &amp; isA(r_0017_0001__Typhoid_fever,r_0017_0001__Typhoid_fever)
-      &amp; prn4(r_0017_0001__Typhoid_fever) = ENTITYX5
+      &amp; isA(ENTITYX31,r_0019_0004__mortality__r_0019_0005__rates)
+      &amp; isA(ENTITYX32,r_0019_0008__20__r_0019_0009___)
+      &amp; isA(r_0017_0001__Typhoid__r_0017_0002__fever,r_0017_0001__Typhoid_r_0017_0002__fever)
+      &amp; prn4(r_0017_0001__Typhoid__r_0017_0002__fever) = ENTITYX5
       &amp; isA(ATTRIBX11,r_0017_0015__fecal)
       &amp; isA(ATTRIBX21,r_0018_0003__sustained)
       &amp; isA(ATTRIBX22,r_0018_0004__high)
       &amp; isA(ATTRIBX29,r_0019_0002__untreated)
       &amp; isA(EVENTX18,z_0017_1017)
-      &amp; z_0017_1004(EVENTX18) = r_0017_0001__Typhoid_fever
+      &amp; z_0017_1004(EVENTX18) = r_0017_0001__Typhoid__r_0017_0002__fever
       &amp; isA(EVENTX23,r_0018_0002__exhibit)
       &amp; arg0(EVENTX23) = ENTITYX19
       &amp; arg1(EVENTX23) = ENTITYX20

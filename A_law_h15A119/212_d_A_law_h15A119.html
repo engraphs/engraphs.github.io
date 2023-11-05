@@ -281,30 +281,30 @@
 <pre>
 arc(r_0212_0005__processing,r_0212_0008__provision,r_0212_0006__under).
 arc(r_0212_0005__processing,r_0212_0013__complaints,r_0212_0012__of).
-arc(r_0212_0005__processing,r_0212_0036__referred_to,prn6).
-arc(r_0212_0008__provision,r_0212_0010__Article_42,r_0212_0009__of).
+arc(r_0212_0005__processing,r_0212_0036__referred__r_0212_0037__to,prn6).
+arc(r_0212_0008__provision,r_0212_0010__Article__r_0212_0011__42,r_0212_0009__of).
 arc(r_0212_0013__complaints,r_0212_0016__handling,r_0212_0014__about).
-arc(r_0212_0013__complaints,r_0212_0022__business_operations,r_0212_0020__of).
+arc(r_0212_0013__complaints,r_0212_0022__business__r_0212_0023__operations,r_0212_0020__of).
 arc(r_0212_0016__handling,r_0212_0019__information,r_0212_0017__of).
 arc(r_0212_0019__information,r_0212_0018__personal,attrib1).
-arc(r_0212_0022__business_operations,r_0212_0021__such,attrib1).
-arc(r_0212_0024__handling,r_0212_0022__business_operations,arg0).
+arc(r_0212_0022__business__r_0212_0023__operations,r_0212_0021__such,attrib1).
+arc(r_0212_0024__handling,r_0212_0022__business__r_0212_0023__operations,arg0).
 arc(r_0212_0024__handling,r_0212_0026__information,arg1).
 arc(r_0212_0026__information,r_0212_0025__personal,attrib1).
-arc(r_0212_0028__are,r_0212_0022__business_operations,arg0).
+arc(r_0212_0028__are,r_0212_0022__business__r_0212_0023__operations,arg0).
 arc(r_0212_0028__are,r_0212_0030__targets,prd2).
 arc(r_0212_0030__targets,r_0212_0033__business,r_0212_0031__of).
-arc(r_0212_0036__referred_to,r_0212_0035__hereinafter,tmp2).
-arc(r_0212_0036__referred_to,r_0212_0040__target_entities,r_0212_0038__as_prd).
+arc(r_0212_0036__referred__r_0212_0037__to,r_0212_0035__hereinafter,tmp2).
+arc(r_0212_0036__referred__r_0212_0037__to,r_0212_0040__target_r_0212_0041__entities,r_0212_0038__as_prd).
 arc(z_0212_1025,r_0212_0005__processing,z_0212_1002).
 
 </pre>
 <br>
 <pre>
-fof(id_212_A_law_h15A119,axiom,
+fof(id__212_A_law_h15A119,axiom,
     ? [EVENTX18,EVENTX26,EVENTX24,EVENTX17,EVENTX14,ENTITYX3,ENTITYX4,ENTITYX6,ENTITYX23,ENTITYX7,ENTITYX10,ENTITYX15,ENTITYX16,ENTITYX12,ENTITYX8,ENTITYX5,ATTRIBX11,ATTRIBX13,ATTRIBX9,QUALITYX22] :
       ( EVENTX18 = EVENTX24
-      &amp; isA(EVENTX24,r_0212_0036__referred_to)
+      &amp; isA(EVENTX24,r_0212_0036__referred__r_0212_0037__to)
       &amp; tmp2(EVENTX24) = QUALITYX22
       &amp; r_0212_0038__as_prd(EVENTX24) = ENTITYX23
       &amp; isA(ENTITYX3,r_0212_0005__processing)
@@ -313,7 +313,7 @@ fof(id_212_A_law_h15A119,axiom,
       &amp; prn6(ENTITYX3) = EVENTX18
       &amp; isA(ENTITYX4,r_0212_0008__provision)
       &amp; r_0212_0009__of(ENTITYX4) = ENTITYX5
-      &amp; isA(ENTITYX5,r_0212_0010__Article_42)
+      &amp; isA(ENTITYX5,r_0212_0010__Article__r_0212_0011__42)
       &amp; isA(ENTITYX6,r_0212_0013__complaints)
       &amp; r_0212_0014__about(ENTITYX6) = ENTITYX7
       &amp; r_0212_0020__of(ENTITYX6) = ENTITYX10
@@ -327,14 +327,14 @@ fof(id_212_A_law_h15A119,axiom,
       &amp; isA(EVENTX17,r_0212_0028__are)
       &amp; arg0(EVENTX17) = ENTITYX10
       &amp; prd2(EVENTX17) = ENTITYX15
-      &amp; isA(ENTITYX10,r_0212_0022__business_operations)
+      &amp; isA(ENTITYX10,r_0212_0022__business__r_0212_0023__operations)
       &amp; attrib1(ENTITYX10) = ATTRIBX11
       &amp; isA(ENTITYX12,r_0212_0026__information)
       &amp; attrib1(ENTITYX12) = ATTRIBX13
       &amp; isA(ENTITYX15,r_0212_0030__targets)
       &amp; r_0212_0031__of(ENTITYX15) = ENTITYX16
       &amp; isA(ENTITYX16,r_0212_0033__business)
-      &amp; isA(ENTITYX23,r_0212_0040__target_entities)
+      &amp; isA(ENTITYX23,r_0212_0040__target__r_0212_0041__entities)
       &amp; isA(ATTRIBX9,r_0212_0018__personal)
       &amp; isA(ATTRIBX11,r_0212_0021__such)
       &amp; isA(ATTRIBX13,r_0212_0025__personal)

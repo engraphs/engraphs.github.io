@@ -352,7 +352,7 @@ arc(r_0062_0008__discovered,r_0062_0011__had,arg1).
 arc(r_0062_0011__had,r_0062_0010__Alresford,arg0).
 arc(r_0062_0011__had,r_0062_0012__rights,arg1).
 arc(r_0062_0013__granted,r_0062_0012__rights,arg1).
-arc(r_0062_0013__granted,r_0062_0016__charter,arg0_by_lgs).
+arc(r_0062_0013__granted,r_0062_0016__charter,arg0__r_0062_0014__by_lgs).
 arc(r_0062_0016__charter,r_0062_0015__ancient,attrib1).
 arc(r_0062_0018__hold,r_0062_0012__rights,arg0).
 arc(r_0062_0018__hold,r_0062_0021__market,arg1).
@@ -360,8 +360,8 @@ arc(r_0062_0021__market,r_0062_0020__weekly,attrib2).
 arc(r_0062_0021__market,r_0062_0024__custom,prn5).
 arc(r_0062_0025__revived,r_0062_0024__custom,arg1).
 arc(r_0062_0025__revived,r_0062_0031__and,z_0062_1017).
-arc(r_0062_0028__parking_spaces,r_0062_0027__several,attrib1).
-arc(r_0062_0031__and,r_0062_0028__parking_spaces,r_0062_0026__across_loc).
+arc(r_0062_0028__parking__r_0062_0029__spaces,r_0062_0027__several,attrib1).
+arc(r_0062_0031__and,r_0062_0028__parking__r_0062_0029__spaces,r_0062_0026__across_loc).
 arc(r_0062_0031__and,r_0062_0037__barrage,r_0062_0032__against_mnr).
 arc(r_0062_0036__lived,r_0062_0034__short,quality1).
 arc(r_0062_0037__barrage,r_0062_0036__lived,attrib2).
@@ -370,7 +370,7 @@ arc(r_0062_0037__barrage,r_0062_0039__opposition,r_0062_0038__of).
 </pre>
 <br>
 <pre>
-fof(id_62_A_Alresford,axiom,
+fof(id__62_A_Alresford,axiom,
     ? [CATENATIVEX5,STATEX7,CONNX3,EVENTX29,EVENTX28,EVENTX27,EVENTX26,EVENTX25,EVENTX11,EVENTX30,ENTITYX1,ENTITYX8,ENTITYX12,ENTITYX14,CONJX18,ENTITYX19,ENTITYX21,ENTITYX24,ENTITYX9,ATTRIBX13,ATTRIBX22,ATTRIBX20,ATTRIBX10,ATTRIBX2,QUALITYX23] :
       ( CATENATIVEX5 = EVENTX28
       &amp; isA(EVENTX28,r_0062_0008__discovered)
@@ -382,7 +382,7 @@ fof(id_62_A_Alresford,axiom,
       &amp; isA(ENTITYX1,r_0062_0004__excitement)
       &amp; attrib1(ENTITYX1) = ATTRIBX2
       &amp; isA(EVENTX11,r_0062_0013__granted)
-      &amp; arg0_by_lgs(EVENTX11) = ENTITYX9
+      &amp; arg0__r_0062_0014__by_lgs(EVENTX11) = ENTITYX9
       &amp; arg1(EVENTX11) = ENTITYX8
       &amp; isA(EVENTX26,r_0062_0018__hold)
       &amp; arg0(EVENTX26) = ENTITYX8
@@ -400,7 +400,7 @@ fof(id_62_A_Alresford,axiom,
       &amp; isA(CONJX18,r_0062_0031__and)
       &amp; r_0062_0026__across_loc(CONJX18) = ENTITYX19
       &amp; r_0062_0032__against_mnr(CONJX18) = ENTITYX21
-      &amp; isA(ENTITYX19,r_0062_0028__parking_spaces)
+      &amp; isA(ENTITYX19,r_0062_0028__parking__r_0062_0029__spaces)
       &amp; attrib1(ENTITYX19) = ATTRIBX20
       &amp; isA(ENTITYX21,r_0062_0037__barrage)
       &amp; attrib2(ENTITYX21) = ATTRIBX22

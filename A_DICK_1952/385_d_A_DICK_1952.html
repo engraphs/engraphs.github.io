@@ -122,22 +122,22 @@
 </svg>
 <br>
 <pre>
-arc(imperative_0500_1007,r_0500_0004__stop,scope).
 arc(r_0500_0004__stop,r_0500_0005__it,arg1).
 arc(r_0500_0009__said,r_0500_0008__Nasha,arg0).
 arc(r_0500_0009__said,r_0500_0010__impatiently,mnr6).
-arc(r_0500_0009__said,utterance_0500_1003,arg1).
-arc(utterance_0500_1003,imperative_0500_1007,part1).
+arc(r_0500_0009__said,r_0500_1003__utterance,arg1).
+arc(r_0500_1003__utterance,r_0500_1007__imperative,part1).
+arc(r_0500_1007__imperative,r_0500_0004__stop,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_500_A_DICK_1952,axiom,
+fof(id__500_A_DICK_1952,axiom,
     ? [STATEX1,EVENTX11,CONJX9,OPERATORX7,EVENTX8,QUALITYX10] :
       ( STATEX1 = CONJX9
-      &amp; isA(CONJX9,utterance_0500_1003)
+      &amp; isA(CONJX9,r_0500_1003__utterance)
       &amp; part1(CONJX9) = OPERATORX7
-      &amp; isA(OPERATORX7,imperative_0500_1007)
+      &amp; isA(OPERATORX7,r_0500_1007__imperative)
       &amp; scope(OPERATORX7) = EVENTX8
       &amp; isA(EVENTX8,r_0500_0004__stop)
       &amp; arg1(EVENTX8) = r_0500_0005__it

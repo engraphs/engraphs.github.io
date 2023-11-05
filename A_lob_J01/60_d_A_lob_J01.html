@@ -214,35 +214,35 @@ Evaporation of sodium from the pool C is minimised by a close fitting cylindrica
 <br>
 <pre>
 arc(r_0060_0001__Evaporation,r_0060_0003__sodium,r_0060_0002__of).
-arc(r_0060_0001__Evaporation,r_0060_0006__pool_C,r_0060_0004__from).
+arc(r_0060_0001__Evaporation,r_0060_0006__pool__r_0060_0007__C,r_0060_0004__from).
 arc(r_0060_0008__is,r_0060_0009__minimised,catenative).
 arc(r_0060_0009__minimised,r_0060_0001__Evaporation,arg1).
-arc(r_0060_0009__minimised,r_0060_0015__block,arg0_by_lgs).
+arc(r_0060_0009__minimised,r_0060_0015__block,arg0__r_0060_0010__by_lgs).
 arc(r_0060_0015__block,r_0060_0012__close,attrib2).
 arc(r_0060_0015__block,r_0060_0013__fitting,attrib3).
 arc(r_0060_0015__block,r_0060_0014__cylindrical,attrib4).
-arc(r_0060_0015__block,r_0060_0017__electrolyte_J,r_0060_0016__of).
+arc(r_0060_0015__block,r_0060_0017__electrolyte__r_0060_0018__J,r_0060_0016__of).
 arc(r_0060_0019__attached,r_0060_0015__block,arg1).
-arc(r_0060_0019__attached,r_0060_0023__nickel_conductor,r_0060_0020__to_clr).
-arc(r_0060_0019__attached,r_0060_0026__nickel_circlips,arg0_by_lgs).
-arc(r_0060_0023__nickel_conductor,r_0060_0022___ve,attrib2).
+arc(r_0060_0019__attached,r_0060_0023__nickel__r_0060_0024__conductor,r_0060_0020__to_clr).
+arc(r_0060_0019__attached,r_0060_0026__nickel__r_0060_0027__circlips,arg0_r_0060_0025__by_lgs).
+arc(r_0060_0023__nickel__r_0060_0024__conductor,r_0060_0022___ve,attrib2).
 
 </pre>
 <br>
 <pre>
-fof(id_60_A_lob_J01,axiom,
+fof(id__60_A_lob_J01,axiom,
     ? [CATENATIVEX4,EVENTX15,EVENTX14,EVENTX13,ENTITYX1,ENTITYX5,ENTITYX9,ENTITYX10,ENTITYX12,ENTITYX2,ENTITYX3,ATTRIBX6,ATTRIBX7,ATTRIBX8,ATTRIBX11] :
       ( CATENATIVEX4 = EVENTX14
       &amp; isA(EVENTX14,r_0060_0009__minimised)
-      &amp; arg0_by_lgs(EVENTX14) = ENTITYX5
+      &amp; arg0__r_0060_0010__by_lgs(EVENTX14) = ENTITYX5
       &amp; arg1(EVENTX14) = ENTITYX1
       &amp; isA(ENTITYX1,r_0060_0001__Evaporation)
       &amp; r_0060_0002__of(ENTITYX1) = ENTITYX2
       &amp; r_0060_0004__from(ENTITYX1) = ENTITYX3
       &amp; isA(ENTITYX2,r_0060_0003__sodium)
-      &amp; isA(ENTITYX3,r_0060_0006__pool_C)
+      &amp; isA(ENTITYX3,r_0060_0006__pool__r_0060_0007__C)
       &amp; isA(EVENTX13,r_0060_0019__attached)
-      &amp; arg0_by_lgs(EVENTX13) = ENTITYX12
+      &amp; arg0__r_0060_0025__by_lgs(EVENTX13) = ENTITYX12
       &amp; arg1(EVENTX13) = ENTITYX5
       &amp; r_0060_0020__to_clr(EVENTX13) = ENTITYX10
       &amp; isA(ENTITYX5,r_0060_0015__block)
@@ -250,10 +250,10 @@ fof(id_60_A_lob_J01,axiom,
       &amp; attrib3(ENTITYX5) = ATTRIBX7
       &amp; attrib4(ENTITYX5) = ATTRIBX8
       &amp; r_0060_0016__of(ENTITYX5) = ENTITYX9
-      &amp; isA(ENTITYX9,r_0060_0017__electrolyte_J)
-      &amp; isA(ENTITYX10,r_0060_0023__nickel_conductor)
+      &amp; isA(ENTITYX9,r_0060_0017__electrolyte__r_0060_0018__J)
+      &amp; isA(ENTITYX10,r_0060_0023__nickel__r_0060_0024__conductor)
       &amp; attrib2(ENTITYX10) = ATTRIBX11
-      &amp; isA(ENTITYX12,r_0060_0026__nickel_circlips)
+      &amp; isA(ENTITYX12,r_0060_0026__nickel__r_0060_0027__circlips)
       &amp; isA(ATTRIBX6,r_0060_0012__close)
       &amp; isA(ATTRIBX7,r_0060_0013__fitting)
       &amp; isA(ATTRIBX8,r_0060_0014__cylindrical)

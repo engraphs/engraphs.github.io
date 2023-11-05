@@ -149,23 +149,23 @@ She screwed up her face as if to say nowhere .
 </svg>
 <br>
 <pre>
-arc(r_0080_0002__screwed_up,r_0080_0001__She,arg0).
-arc(r_0080_0002__screwed_up,r_0080_0005__face,arg1).
+arc(r_0080_0002__screwed__r_0080_0003__up,r_0080_0001__She,arg0).
+arc(r_0080_0002__screwed__r_0080_0003__up,r_0080_0005__face,arg1).
 arc(r_0080_0005__face,r_0080_0001__She,genv).
-arc(r_0080_0006__as_if_mnr,r_0080_0002__screwed_up,scope).
+arc(r_0080_0006__as_if_mnr,r_0080_0002__screwed__r_0080_0003__up,scope).
 arc(r_0080_0006__as_if_mnr,r_0080_0008__say,restriction).
 arc(r_0080_0008__say,r_0080_0005__face,arg0).
-arc(r_0080_0008__say,utterance_0080_1006,arg1).
-arc(utterance_0080_1006,z_0080_1010,part1).
+arc(r_0080_0008__say,r_0080_1006__utterance,arg1).
+arc(r_0080_1006__utterance,z_0080_1010,part1).
 arc(z_0080_1010,r_0080_0009__nowhere,quality1).
 
 </pre>
 <br>
 <pre>
-fof(id_80_A_LooseChange,axiom,
+fof(id__80_A_LooseChange,axiom,
     ? [STATEX4,LAYLORX2,CONNX3,EVENTX13,CONJX12,EVENTX11,EVENTX14,ENTITYX1,QUALITYX9] :
       ( STATEX4 = CONJX12
-      &amp; isA(CONJX12,utterance_0080_1006)
+      &amp; isA(CONJX12,r_0080_1006__utterance)
       &amp; part1(CONJX12) = EVENTX11
       &amp; isA(EVENTX11,z_0080_1010)
       &amp; quality1(EVENTX11) = QUALITYX9
@@ -175,7 +175,7 @@ fof(id_80_A_LooseChange,axiom,
       &amp; isA(QUALITYX9,r_0080_0009__nowhere)
       &amp; isA(CONNX3,r_0080_0006__as_if_mnr)
       &amp; scope(CONNX3) = EVENTX14
-      &amp; isA(EVENTX14,r_0080_0002__screwed_up)
+      &amp; isA(EVENTX14,r_0080_0002__screwed__r_0080_0003__up)
       &amp; arg0(EVENTX14) = r_0080_0001__She
       &amp; arg1(EVENTX14) = ENTITYX1
       &amp; restriction(CONNX3) = EVENTX13

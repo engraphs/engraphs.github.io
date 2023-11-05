@@ -702,7 +702,8 @@ arc(r_0019_0002__Perhaps,r_0019_0004___apos_s,scope).
 arc(r_0019_0004___apos_s,r_0019_0003__he,arg0).
 arc(r_0019_0004___apos_s,r_0019_0005__right,prd2).
 arc(r_0019_0010__murmured,r_0019_0009__biologist,arg0).
-arc(r_0019_0010__murmured,utterance_0019_1003,arg1).
+arc(r_0019_0010__murmured,r_0019_1003__utterance,arg1).
+arc(r_0019_1003__utterance,r_0019_0002__Perhaps,part1).
 arc(r_0020_0004___apos_d,r_0020_0005__like,scope).
 arc(r_0020_0005__like,r_0019_0009__biologist,arg0).
 arc(r_0020_0005__like,r_0020_0007__look,arg1).
@@ -742,22 +743,21 @@ arc(r_0023_0016__slag,r_0023_0021__slag,prn3).
 arc(r_0023_0021__slag,r_0023_0018__pitted,attrib1).
 arc(r_0023_0021__slag,r_0023_0020__fused,attrib3).
 arc(r_0023_0023__broken,r_0023_0021__slag,arg1).
-arc(r_0023_0023__broken,r_0023_0026__hills,arg0_by_lgs).
+arc(r_0023_0023__broken,r_0023_0026__hills,arg0__r_0023_0025__by_lgs).
 arc(r_0023_0024__only,r_0023_0023__broken,scope).
 arc(r_0023_0026__hills,r_0023_0028__rock,r_0023_0027__of).
 arc(r_0023_0029__jutting,r_0023_0026__hills,arg0).
 arc(r_0023_0029__jutting,r_0023_0030__up,dir2).
 arc(r_0023_0029__jutting,r_0023_0032__intervals,r_0023_0031__at_mnr).
-arc(utterance_0019_1003,r_0019_0002__Perhaps,part1).
 arc(z_0019_1017,r_0019_0009__biologist,arg0).
 
 </pre>
 <br>
 <pre>
-fof(id_19_A_DICK_1952__20_A_DICK_1952__21_A_DICK_1952__22_A_DICK_1952__23_A_DICK_1952,axiom,
+fof(id__19_A_DICK_1952__20_A_DICK_1952__21_A_DICK_1952__22_A_DICK_1952__23_A_DICK_1952,axiom,
     ? [STATEX1,STATEX11,STATEX40,STATEX47,FOMARX10,FOMARX12,FOMARX15,FOMARX21,FOMARX26,FOMARX39,EXPANSEX41,FOMARX46,EXPANSEX48,CONJX62,EVENTX61,EVENTX60,OPERATORX53,EVENTX59,EVENTX58,EVENTX44,EVENTX43,EVENTX35,EVENTX34,CONJX25,EVENTX24,EVENTX22,CONNX14,OPERATORX16,EVENTX18,OPERATORX19,EVENTX20,EVENTX13,EVENTX9,CONJX7,OPERATORX4,EVENTX6,ENTITYX45,ENTITYX49,ENTITYX50,ENTITYX54,ENTITYX55,ENTITYX57,ENTITYX42,EXPANSEX27,ENTITYX29,ENTITYX32,ENTITYX33,ENTITYX23,FOMARX8,ATTRIBX51,ATTRIBX52,ATTRIBX28,ATTRIBX30,ATTRIBX31,ATTRIBX5,QUALITYX56,QUALITYX38] :
       ( STATEX1 = CONJX7
-      &amp; isA(CONJX7,utterance_0019_1003)
+      &amp; isA(CONJX7,r_0019_1003__utterance)
       &amp; part1(CONJX7) = OPERATORX4
       &amp; isA(OPERATORX4,r_0019_0002__Perhaps)
       &amp; scope(OPERATORX4) = EVENTX6
@@ -808,7 +808,7 @@ fof(id_19_A_DICK_1952__20_A_DICK_1952__21_A_DICK_1952__22_A_DICK_1952__23_A_DICK
       &amp; isA(OPERATORX53,r_0023_0024__only)
       &amp; scope(OPERATORX53) = EVENTX59
       &amp; isA(EVENTX59,r_0023_0023__broken)
-      &amp; arg0_by_lgs(EVENTX59) = ENTITYX54
+      &amp; arg0__r_0023_0025__by_lgs(EVENTX59) = ENTITYX54
       &amp; arg1(EVENTX59) = ENTITYX50
       &amp; isA(ENTITYX50,r_0023_0021__slag)
       &amp; attrib1(ENTITYX50) = ATTRIBX51

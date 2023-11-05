@@ -789,12 +789,8 @@ He began to puff at his pipe , no doubt arranging his opinion in his mind .
 </svg>
 <br>
 <pre>
-arc(cnt_0011_1010,r_0011_0004__sitting,scope).
-arc(cnt_0011_1010,r_0011_0009__smoking,restriction).
-arc(cnt_0011_1060,r_0013_0002__began,scope).
-arc(cnt_0011_1060,r_0013_0009__quantificational__no,restriction).
 arc(r_0011_0002__Cotter,r_0011_0001__Old,attrib1).
-arc(r_0011_0003__was,cnt_0011_1010,catenative).
+arc(r_0011_0003__was,r_0011_1010__cnt,catenative).
 arc(r_0011_0004__sitting,r_0011_0002__Cotter,arg0).
 arc(r_0011_0004__sitting,r_0011_0007__fire,r_0011_0005__at_loc).
 arc(r_0011_0009__smoking,r_0011_0002__Cotter,arg0).
@@ -803,15 +799,23 @@ arc(r_0011_0011__when_tmp,r_0011_0013__came,restriction).
 arc(r_0011_0013__came,r_0011_0012__I,arg0).
 arc(r_0011_0013__came,r_0011_0014__downstairs,clr_dir3).
 arc(r_0011_0014__downstairs,r_0011_0016__supper,r_0011_0015__to).
+arc(r_0011_1010__cnt,r_0011_0004__sitting,scope).
+arc(r_0011_1010__cnt,r_0011_0009__smoking,restriction).
+arc(r_0011_1033__utterance,r_0012_0025__would,part1).
+arc(r_0011_1033__utterance,r_0012_0034__was,part2).
+arc(r_0011_1033__utterance,r_0012_0039__was,part3).
+arc(r_0011_1033__utterance,r_0012_0046___apos_ll,part4).
+arc(r_0011_1060__cnt,r_0013_0002__began,scope).
+arc(r_0011_1060__cnt,r_0013_0009__quantificational__r_0013_0009__no,restriction).
 arc(r_0012_0001__While_tmp,r_0012_0004__was,restriction).
 arc(r_0012_0001__While_tmp,r_0012_0012__as_if_mnr,scope).
 arc(r_0012_0003__aunt,r_0011_0012__I,genv).
-arc(r_0012_0004__was,r_0012_0005__ladling_out,catenative).
-arc(r_0012_0005__ladling_out,r_0012_0003__aunt,arg0).
-arc(r_0012_0005__ladling_out,r_0012_0008__stirabout,arg1).
+arc(r_0012_0004__was,r_0012_0005__ladling__r_0012_0006__out,catenative).
+arc(r_0012_0005__ladling__r_0012_0006__out,r_0012_0003__aunt,arg0).
+arc(r_0012_0005__ladling__r_0012_0006__out,r_0012_0008__stirabout,arg1).
 arc(r_0012_0008__stirabout,r_0011_0012__I,genv).
 arc(r_0012_0010__said,r_0011_0002__Cotter,arg0).
-arc(r_0012_0010__said,utterance_0011_1033,arg1).
+arc(r_0012_0010__said,r_0011_1033__utterance,arg1).
 arc(r_0012_0012__as_if_mnr,r_0012_0010__said,scope).
 arc(r_0012_0012__as_if_mnr,r_0012_0013__returning,restriction).
 arc(r_0012_0013__returning,r_0011_0002__Cotter,arg0).
@@ -838,28 +842,24 @@ arc(r_0013_0002__began,r_0013_0004__puff,catenative).
 arc(r_0013_0004__puff,r_0011_0002__Cotter,arg0).
 arc(r_0013_0004__puff,r_0013_0007__pipe,r_0013_0005__at_mnr).
 arc(r_0013_0007__pipe,r_0011_0002__Cotter,genv).
-arc(r_0013_0009__quantificational__no,r_0013_0010__doubt,restriction).
-arc(r_0013_0009__quantificational__no,r_0013_0011__arranging,scope).
+arc(r_0013_0009__quantificational__r_0013_0009__no,r_0013_0010__doubt,restriction).
+arc(r_0013_0009__quantificational__r_0013_0009__no,r_0013_0011__arranging,scope).
 arc(r_0013_0011__arranging,r_0011_0002__Cotter,arg0).
 arc(r_0013_0011__arranging,r_0013_0010__doubt,mod).
 arc(r_0013_0011__arranging,r_0013_0013__opinion,arg1).
 arc(r_0013_0011__arranging,r_0013_0016__mind,r_0013_0014__in_loc).
 arc(r_0013_0013__opinion,r_0011_0002__Cotter,genv).
 arc(r_0013_0016__mind,r_0011_0002__Cotter,genv).
-arc(utterance_0011_1033,r_0012_0025__would,part1).
-arc(utterance_0011_1033,r_0012_0034__was,part2).
-arc(utterance_0011_1033,r_0012_0039__was,part3).
-arc(utterance_0011_1033,r_0012_0046___apos_ll,part4).
 arc(z_0011_1029,r_0011_0002__Cotter,genv).
 arc(z_0011_1038,r_0012_0030__exactly,quality1).
 
 </pre>
 <br>
 <pre>
-fof(id_11_A_JOYCE_1914__12_A_JOYCE_1914__13_A_JOYCE_1914,axiom,
+fof(id__11_A_JOYCE_1914__12_A_JOYCE_1914__13_A_JOYCE_1914,axiom,
     ? [CATENATIVEX8,CATENATIVEX18,STATEX31,STATEX35,STATEX56,SPEAKERX17,SPEAKERX20,COTTERX23,COTTERX34,PRIESTX46,COTTERX48,COTTERX50,COTTERX28,COTTERX55,COTTERX58,COTTERX65,COTTERX67,CONNX61,QUANTX63,EVENTX68,EVENTX69,EVENTX59,CONNX15,CONNX24,EVENTX30,EVENTX54,CONJX53,OPERATORX51,EVENTX52,EVENTX47,EVENTX44,OPERATORX40,OPERATORX41,EVENTX42,EVENTX39,EVENTX22,EVENTX21,CONNX3,EVENTX6,EVENTX14,CONNX11,EVENTX12,EVENTX13,ENTITYX62,ENTITYX64,ENTITYX66,ENTITYX57,ENTITYX25,ENTITYX27,ENTITYX49,AUNTX16,ENTITYX19,ENTITYX5,ENTITYX9,ATTRIBX26,ATTRIBX45,ATTRIBX43,ATTRIBX36,ATTRIBX7,QUALITYX37,QUALITYX4] :
       ( CATENATIVEX8 = CONNX11
-      &amp; isA(CONNX11,cnt_0011_1010)
+      &amp; isA(CONNX11,r_0011_1010__cnt)
       &amp; scope(CONNX11) = EVENTX13
       &amp; isA(EVENTX13,r_0011_0004__sitting)
       &amp; arg0(EVENTX13) = r_0011_0002__Cotter
@@ -868,11 +868,11 @@ fof(id_11_A_JOYCE_1914__12_A_JOYCE_1914__13_A_JOYCE_1914,axiom,
       &amp; isA(EVENTX12,r_0011_0009__smoking)
       &amp; arg0(EVENTX12) = r_0011_0002__Cotter
       &amp; CATENATIVEX18 = EVENTX21
-      &amp; isA(EVENTX21,r_0012_0005__ladling_out)
+      &amp; isA(EVENTX21,r_0012_0005__ladling__r_0012_0006__out)
       &amp; arg0(EVENTX21) = AUNTX16
       &amp; arg1(EVENTX21) = ENTITYX19
       &amp; STATEX31 = CONJX53
-      &amp; isA(CONJX53,utterance_0011_1033)
+      &amp; isA(CONJX53,r_0011_1033__utterance)
       &amp; part1(CONJX53) = OPERATORX40
       &amp; isA(OPERATORX40,r_0012_0025__would)
       &amp; scope(OPERATORX40) = OPERATORX41
@@ -979,12 +979,12 @@ fof(id_11_A_JOYCE_1914__12_A_JOYCE_1914__13_A_JOYCE_1914,axiom,
       &amp; isA(EVENTX30,r_0012_0013__returning)
       &amp; arg0(EVENTX30) = COTTERX23
       &amp; r_0012_0014__to_dir(EVENTX30) = ENTITYX25
-      &amp; isA(CONNX61,cnt_0011_1060)
+      &amp; isA(CONNX61,r_0011_1060__cnt)
       &amp; scope(CONNX61) = EVENTX69
       &amp; isA(EVENTX69,r_0013_0002__began)
       &amp; catenative(EVENTX69) = STATEX56
       &amp; restriction(CONNX61) = QUANTX63
-      &amp; isA(QUANTX63,r_0013_0009__quantificational__no)
+      &amp; isA(QUANTX63,r_0013_0009__quantificational__r_0013_0009__no)
       &amp; restriction(QUANTX63) = ENTITYX62
       &amp; isA(ENTITYX62,r_0013_0010__doubt)
       &amp; scope(QUANTX63) = EVENTX68

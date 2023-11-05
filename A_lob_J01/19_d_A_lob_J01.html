@@ -152,15 +152,15 @@ arc(r_0019_0002__effect,r_0019_0005__changes,r_0019_0003__of).
 arc(r_0019_0002__effect,r_0019_0013__cell,r_0019_0011__on).
 arc(r_0019_0005__changes,r_0019_0004__small,attrib1).
 arc(r_0019_0005__changes,r_0019_0009__and,r_0019_0006__of).
-arc(r_0019_0009__and,r_0019_0007__oxygen_concentration,conj1).
+arc(r_0019_0009__and,r_0019_0007__oxygen__r_0019_0008__concentration,conj1).
 arc(r_0019_0009__and,r_0019_0010__temperature,conj2).
-arc(r_0019_0013__cell,r_0019_0014__E.M.F,prn3).
+arc(r_0019_0013__cell,r_0019_0014__E_M_F,prn3).
 arc(z_0019_1011,r_0019_0002__effect,z_0019_1002).
 
 </pre>
 <br>
 <pre>
-fof(id_19_A_lob_J01,axiom,
+fof(id__19_A_lob_J01,axiom,
     ? [EVENTX12,ENTITYX3,ENTITYX4,ENTITYX9,ENTITYX10,ENTITYX6,ENTITYX7,ENTITYX8,ATTRIBX5] :
       ( isA(ENTITYX3,r_0019_0002__effect)
       &amp; r_0019_0003__of(ENTITYX3) = ENTITYX4
@@ -171,11 +171,11 @@ fof(id_19_A_lob_J01,axiom,
       &amp; isA(ENTITYX6,r_0019_0009__and)
       &amp; conj1(ENTITYX6) = ENTITYX7
       &amp; conj2(ENTITYX6) = ENTITYX8
-      &amp; isA(ENTITYX7,r_0019_0007__oxygen_concentration)
+      &amp; isA(ENTITYX7,r_0019_0007__oxygen__r_0019_0008__concentration)
       &amp; isA(ENTITYX8,r_0019_0010__temperature)
       &amp; isA(ENTITYX9,r_0019_0013__cell)
       &amp; prn3(ENTITYX9) = ENTITYX10
-      &amp; isA(ENTITYX10,r_0019_0014__E.M.F)
+      &amp; isA(ENTITYX10,r_0019_0014__E_M_F)
       &amp; isA(ATTRIBX5,r_0019_0004__small)
       &amp; isA(EVENTX12,z_0019_1011)
       &amp; z_0019_1002(EVENTX12) = ENTITYX3 ) ).

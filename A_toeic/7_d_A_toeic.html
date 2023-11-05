@@ -97,15 +97,15 @@ What is the woman shopping for ?
 </svg>
 <br>
 <pre>
-arc(question_0011_1002,r_0011_0002__is,scope).
 arc(r_0011_0002__is,r_0011_0005__shopping,catenative).
 arc(r_0011_0005__shopping,r_0011_0001__What,r_0011_0006__for_clr).
 arc(r_0011_0005__shopping,r_0011_0004__woman,arg0).
+arc(r_0011_1002__question,r_0011_0002__is,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_11_A_toeic,axiom,
+fof(id__11_A_toeic,axiom,
     ? [CATENATIVEX5,OPERATORX2,EVENTX7,EVENTX6,ENTITYX3,ENTITYX4] :
       ( CATENATIVEX5 = EVENTX6
       &amp; isA(EVENTX6,r_0011_0005__shopping)
@@ -113,7 +113,7 @@ fof(id_11_A_toeic,axiom,
       &amp; r_0011_0006__for_clr(EVENTX6) = ENTITYX3
       &amp; isA(ENTITYX3,r_0011_0001__What)
       &amp; isA(ENTITYX4,r_0011_0004__woman)
-      &amp; isA(OPERATORX2,question_0011_1002)
+      &amp; isA(OPERATORX2,r_0011_1002__question)
       &amp; scope(OPERATORX2) = EVENTX7
       &amp; isA(EVENTX7,r_0011_0002__is)
       &amp; catenative(EVENTX7) = CATENATIVEX5 ) ).

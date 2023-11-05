@@ -213,34 +213,34 @@ We will be leaving from the school gates at 6.30 pm promptly so please ensure th
 </svg>
 <br>
 <pre>
-arc(imperative_0006_1005,r_0006_0013__so,scope).
 arc(r_0006_0002__will,r_0006_0003__be,scope).
-arc(r_0006_0003__be,imperative_0006_1005,prn5).
 arc(r_0006_0003__be,r_0006_0004__leaving,catenative).
+arc(r_0006_0003__be,r_0006_1005__imperative,prn5).
 arc(r_0006_0004__leaving,r_0006_0001__We,arg0).
-arc(r_0006_0004__leaving,r_0006_0007__school_gates,r_0006_0005__from_clr_loc).
-arc(r_0006_0004__leaving,r_0006_0010__6.30,r_0006_0009__at_tmp).
-arc(r_0006_0010__6.30,r_0006_0011__pm,quality2).
-arc(r_0006_0010__6.30,r_0006_0012__promptly,quality3).
+arc(r_0006_0004__leaving,r_0006_0007__school__r_0006_0008__gates,r_0006_0005__from_clr_loc).
+arc(r_0006_0004__leaving,r_0006_0010__6_30,r_0006_0009__at_tmp).
+arc(r_0006_0010__6_30,r_0006_0011__pm,quality2).
+arc(r_0006_0010__6_30,r_0006_0012__promptly,quality3).
 arc(r_0006_0013__so,r_0006_0015__ensure,scope).
-arc(r_0006_0015__ensure,r_0006_0018__turn_up,arg1).
-arc(r_0006_0018__turn_up,r_0006_0017__you,arg0).
-arc(r_0006_0018__turn_up,r_0006_0021__time,r_0006_0020__on_tmp).
+arc(r_0006_0015__ensure,r_0006_0018__turn__r_0006_0019__up,arg1).
+arc(r_0006_0018__turn__r_0006_0019__up,r_0006_0017__you,arg0).
+arc(r_0006_0018__turn__r_0006_0019__up,r_0006_0021__time,r_0006_0020__on_tmp).
+arc(r_0006_1005__imperative,r_0006_0013__so,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_6_A_pantomime,axiom,
+fof(id__6_A_pantomime,axiom,
     ? [EVENTX1,STATEX7,CATENATIVEX12,OPERATORX11,EVENTX18,EVENTX17,OPERATORX5,OPERATORX6,EVENTX10,EVENTX9,ENTITYX13,ENTITYX14,ENTITYX8,QUALITYX15,QUALITYX16] :
       ( EVENTX1 = OPERATORX5
-      &amp; isA(OPERATORX5,imperative_0006_1005)
+      &amp; isA(OPERATORX5,r_0006_1005__imperative)
       &amp; scope(OPERATORX5) = OPERATORX6
       &amp; isA(OPERATORX6,r_0006_0013__so)
       &amp; scope(OPERATORX6) = EVENTX10
       &amp; isA(EVENTX10,r_0006_0015__ensure)
       &amp; arg1(EVENTX10) = STATEX7
       &amp; STATEX7 = EVENTX9
-      &amp; isA(EVENTX9,r_0006_0018__turn_up)
+      &amp; isA(EVENTX9,r_0006_0018__turn__r_0006_0019__up)
       &amp; arg0(EVENTX9) = r_0006_0017__you
       &amp; r_0006_0020__on_tmp(EVENTX9) = ENTITYX8
       &amp; CATENATIVEX12 = EVENTX17
@@ -249,8 +249,8 @@ fof(id_6_A_pantomime,axiom,
       &amp; r_0006_0005__from_clr_loc(EVENTX17) = ENTITYX13
       &amp; r_0006_0009__at_tmp(EVENTX17) = ENTITYX14
       &amp; isA(ENTITYX8,r_0006_0021__time)
-      &amp; isA(ENTITYX13,r_0006_0007__school_gates)
-      &amp; isA(ENTITYX14,r_0006_0010__6.30)
+      &amp; isA(ENTITYX13,r_0006_0007__school__r_0006_0008__gates)
+      &amp; isA(ENTITYX14,r_0006_0010__6_30)
       &amp; quality2(ENTITYX14) = QUALITYX15
       &amp; quality3(ENTITYX14) = QUALITYX16
       &amp; isA(QUALITYX15,r_0006_0011__pm)

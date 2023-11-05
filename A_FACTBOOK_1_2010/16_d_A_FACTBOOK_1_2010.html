@@ -532,14 +532,14 @@ cattle and wild animals act as reservoir hosts for the parasites .
 </svg>
 <br>
 <pre>
-arc(r_0033_0004__caused,r_0033_0001__African_Trypanosomiasis,arg1).
-arc(r_0033_0004__caused,r_0033_0008__protozoa_Trypanosoma,arg0_by_lgs).
-arc(r_0033_0008__protozoa_Trypanosoma,r_0033_0007__parasitic,attrib2).
-arc(r_0033_0011__transmitted,r_0033_0001__African_Trypanosomiasis,arg1).
+arc(r_0033_0004__caused,r_0033_0001__African__r_0033_0002__Trypanosomiasis,arg1).
+arc(r_0033_0004__caused,r_0033_0008__protozoa__r_0033_0009__Trypanosoma,arg0_r_0033_0005__by_lgs).
+arc(r_0033_0008__protozoa__r_0033_0009__Trypanosoma,r_0033_0007__parasitic,attrib2).
+arc(r_0033_0011__transmitted,r_0033_0001__African__r_0033_0002__Trypanosomiasis,arg1).
 arc(r_0033_0011__transmitted,r_0033_0013__humans,r_0033_0012__to_clr).
 arc(r_0033_0011__transmitted,r_0033_0016__bite,r_0033_0014__via_mnr).
-arc(r_0033_0016__bite,r_0033_0019__Tsetse_flies,r_0033_0017__of).
-arc(r_0033_0019__Tsetse_flies,r_0033_0018__bloodsucking,attrib1).
+arc(r_0033_0016__bite,r_0033_0019__Tsetse__r_0033_0020__flies,r_0033_0017__of).
+arc(r_0033_0019__Tsetse__r_0033_0020__flies,r_0033_0018__bloodsucking,attrib1).
 arc(r_0034_0002__leads,r_0034_0001__infection,arg0).
 arc(r_0034_0002__leads,r_0034_0008__and,r_0034_0003__to_clr).
 arc(r_0034_0005__and,r_0034_0004__malaise,conj1).
@@ -556,14 +556,14 @@ arc(r_0034_0020__system,r_0034_0019__nervous,attrib3).
 arc(r_0034_0023__and,r_0034_0012__cases,r_0034_0010__in).
 arc(r_0034_0023__and,r_0034_0022__coma,conj1).
 arc(r_0034_0023__and,r_0034_0024__death,conj2).
-arc(r_0035_0001__endemic,r_0035_0003__36_countries,r_0035_0002__in).
-arc(r_0035_0003__36_countries,r_0035_0006__sub_Saharan_Africa,r_0035_0005__of).
+arc(r_0035_0001__endemic,r_0035_0003__36__r_0035_0004__countries,r_0035_0002__in).
+arc(r_0035_0003__36__r_0035_0004__countries,r_0035_0006__sub_Saharan_r_0035_0007__Africa,r_0035_0005__of).
 arc(r_0036_0002__and,r_0036_0001__cattle,conj1).
 arc(r_0036_0002__and,r_0036_0004__animals,conj2).
 arc(r_0036_0004__animals,r_0036_0003__wild,attrib1).
 arc(r_0036_0005__act,r_0036_0002__and,arg0).
-arc(r_0036_0005__act,r_0036_0007__reservoir_hosts,r_0036_0006__as_prd2).
-arc(r_0036_0007__reservoir_hosts,r_0036_0011__parasites,r_0036_0009__for).
+arc(r_0036_0005__act,r_0036_0007__reservoir__r_0036_0008__hosts,r_0036_0006__as_prd2).
+arc(r_0036_0007__reservoir__r_0036_0008__hosts,r_0036_0011__parasites,r_0036_0009__for).
 arc(z_0033_1005,r_0033_0004__caused,catenative).
 arc(z_0033_1014,r_0033_0011__transmitted,catenative).
 arc(z_0033_1037,r_0035_0001__endemic,prd2).
@@ -571,23 +571,23 @@ arc(z_0033_1037,r_0035_0001__endemic,prd2).
 </pre>
 <br>
 <pre>
-fof(id_33_A_FACTBOOK_1_2010__34_A_FACTBOOK_1_2010__35_A_FACTBOOK_1_2010__36_A_FACTBOOK_1_2010,axiom,
+fof(id__33_A_FACTBOOK_1_2010__34_A_FACTBOOK_1_2010__35_A_FACTBOOK_1_2010__36_A_FACTBOOK_1_2010,axiom,
     ? [CATENATIVEX1,CATENATIVEX7,EVENTX45,EVENTX38,EVENTX32,EVENTX29,EVENTX15,EVENTX13,EVENTX6,EVENTX4,ENTITYX39,ENTITYX43,ENTITYX44,ENTITYX40,ENTITYX41,ENTITYX36,ENTITYX16,ENTITYX17,ENTITYX18,ENTITYX22,ENTITYX23,ENTITYX30,ENTITYX31,ENTITYX25,ENTITYX26,ENTITYX19,ENTITYX20,ENTITYX9,ENTITYX10,ENTITYX11,ENTITYX2,ATTRIBX42,ATTRIBX35,ATTRIBX24,ATTRIBX27,ATTRIBX28,ATTRIBX21,ATTRIBX12,ATTRIBX3] :
       ( CATENATIVEX1 = EVENTX4
       &amp; isA(EVENTX4,r_0033_0004__caused)
-      &amp; arg0_by_lgs(EVENTX4) = ENTITYX2
-      &amp; arg1(EVENTX4) = r_0033_0001__African_Trypanosomiasis
+      &amp; arg0__r_0033_0005__by_lgs(EVENTX4) = ENTITYX2
+      &amp; arg1(EVENTX4) = r_0033_0001__African__r_0033_0002__Trypanosomiasis
       &amp; CATENATIVEX7 = EVENTX13
       &amp; isA(EVENTX13,r_0033_0011__transmitted)
-      &amp; arg1(EVENTX13) = r_0033_0001__African_Trypanosomiasis
+      &amp; arg1(EVENTX13) = r_0033_0001__African__r_0033_0002__Trypanosomiasis
       &amp; r_0033_0012__to_clr(EVENTX13) = ENTITYX9
       &amp; r_0033_0014__via_mnr(EVENTX13) = ENTITYX10
-      &amp; isA(ENTITYX2,r_0033_0008__protozoa_Trypanosoma)
+      &amp; isA(ENTITYX2,r_0033_0008__protozoa__r_0033_0009__Trypanosoma)
       &amp; attrib2(ENTITYX2) = ATTRIBX3
       &amp; isA(ENTITYX9,r_0033_0013__humans)
       &amp; isA(ENTITYX10,r_0033_0016__bite)
       &amp; r_0033_0017__of(ENTITYX10) = ENTITYX11
-      &amp; isA(ENTITYX11,r_0033_0019__Tsetse_flies)
+      &amp; isA(ENTITYX11,r_0033_0019__Tsetse__r_0033_0020__flies)
       &amp; attrib1(ENTITYX11) = ATTRIBX12
       &amp; isA(ENTITYX16,r_0034_0001__infection)
       &amp; isA(ENTITYX17,r_0034_0008__and)
@@ -615,15 +615,15 @@ fof(id_33_A_FACTBOOK_1_2010__34_A_FACTBOOK_1_2010__35_A_FACTBOOK_1_2010__36_A_FA
       &amp; attrib3(ENTITYX26) = ATTRIBX28
       &amp; isA(ENTITYX30,r_0034_0022__coma)
       &amp; isA(ENTITYX31,r_0034_0024__death)
-      &amp; isA(ENTITYX36,r_0035_0003__36_countries)
-      &amp; r_0035_0005__of(ENTITYX36) = r_0035_0006__sub_Saharan_Africa
+      &amp; isA(ENTITYX36,r_0035_0003__36__r_0035_0004__countries)
+      &amp; r_0035_0005__of(ENTITYX36) = r_0035_0006__sub_Saharan__r_0035_0007__Africa
       &amp; isA(ENTITYX39,r_0036_0002__and)
       &amp; conj1(ENTITYX39) = ENTITYX40
       &amp; conj2(ENTITYX39) = ENTITYX41
       &amp; isA(ENTITYX40,r_0036_0001__cattle)
       &amp; isA(ENTITYX41,r_0036_0004__animals)
       &amp; attrib1(ENTITYX41) = ATTRIBX42
-      &amp; isA(ENTITYX43,r_0036_0007__reservoir_hosts)
+      &amp; isA(ENTITYX43,r_0036_0007__reservoir__r_0036_0008__hosts)
       &amp; r_0036_0009__for(ENTITYX43) = ENTITYX44
       &amp; isA(ENTITYX44,r_0036_0011__parasites)
       &amp; isA(ATTRIBX3,r_0033_0007__parasitic)

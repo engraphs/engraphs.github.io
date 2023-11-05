@@ -697,7 +697,7 @@ arc(r_0059_0010__or,r_0059_0006__water,conj1).
 arc(r_0059_0010__or,r_0059_0008__food,conj2).
 arc(r_0059_0010__or,r_0059_0011__soil,conj3).
 arc(r_0059_0012__contaminated,r_0059_0010__or,arg1).
-arc(r_0059_0012__contaminated,r_0059_0014__animal_urine,arg0_by_lgs).
+arc(r_0059_0012__contaminated,r_0059_0014__animal__r_0059_0015__urine,arg0_r_0059_0013__by_lgs).
 arc(r_0060_0002__include,r_0060_0001__symptoms,arg0).
 arc(r_0060_0002__include,r_0060_0013__and,arg1).
 arc(r_0060_0004__fever,r_0060_0003__high,attrib1).
@@ -711,12 +711,12 @@ arc(r_0061_0001__untreated,r_0061_0004__disease,arg1).
 arc(r_0061_0005__can,r_0061_0006__result,scope).
 arc(r_0061_0006__result,r_0061_0004__disease,arg0).
 arc(r_0061_0006__result,r_0061_0016__or,r_0061_0007__in_clr).
-arc(r_0061_0016__or,r_0061_0008__kidney_damage,conj1).
-arc(r_0061_0016__or,r_0061_0011__liver_failure,conj2).
+arc(r_0061_0016__or,r_0061_0008__kidney__r_0061_0009__damage,conj1).
+arc(r_0061_0016__or,r_0061_0011__liver__r_0061_0012__failure,conj2).
 arc(r_0061_0016__or,r_0061_0014__meningitis,conj3).
 arc(r_0061_0016__or,r_0061_0018__distress,conj4).
 arc(r_0061_0018__distress,r_0061_0017__respiratory,attrib1).
-arc(r_0062_0003__are,r_0062_0001__fatality_rates,arg0).
+arc(r_0062_0003__are,r_0062_0001__fatality__r_0062_0002__rates,arg0).
 arc(r_0062_0003__are,r_0062_0004__low,prd2).
 arc(r_0062_0005__but,cnt_cnd_0058_1050,conj2).
 arc(r_0062_0005__but,r_0062_0003__are,conj1).
@@ -730,7 +730,7 @@ arc(z_0058_1057,r_0062_0006__left,catenative).
 </pre>
 <br>
 <pre>
-fof(id_58_A_FACTBOOK_1_2010__59_A_FACTBOOK_1_2010__60_A_FACTBOOK_1_2010__61_A_FACTBOOK_1_2010__62_A_FACTBOOK_1_2010,axiom,
+fof(id__58_A_FACTBOOK_1_2010__59_A_FACTBOOK_1_2010__60_A_FACTBOOK_1_2010__61_A_FACTBOOK_1_2010__62_A_FACTBOOK_1_2010,axiom,
     ? [CATENATIVEX54,CONJX63,CONNX51,OPERATORX61,EVENTX62,EVENTX58,EVENTX56,EVENTX49,CONNX40,OPERATORX43,EVENTX44,EVENTX42,EVENTX31,EVENTX21,EVENTX17,EVENTX12,EVENTX10,ENTITYX59,ENTITYX60,ENTITYX47,ENTITYX32,ENTITYX33,ENTITYX34,ENTITYX35,ENTITYX36,ENTITYX37,ENTITYX22,ENTITYX23,ENTITYX24,ENTITYX26,ENTITYX28,ENTITYX29,ENTITYX30,ENTITYX13,ENTITYX14,ENTITYX15,ENTITYX18,ENTITYX19,ENTITYX20,ENTITYX16,ENTITYX5,ENTITYX7,ENTITYX8,ENTITYX9,ATTRIBX55,ATTRIBX48,ATTRIBX38,ATTRIBX27,ATTRIBX25,ATTRIBX6] :
       ( CATENATIVEX54 = EVENTX56
       &amp; isA(EVENTX56,r_0062_0006__left)
@@ -749,13 +749,13 @@ fof(id_58_A_FACTBOOK_1_2010__59_A_FACTBOOK_1_2010__60_A_FACTBOOK_1_2010__61_A_FA
       &amp; isA(ENTITYX14,r_0059_0004__contact)
       &amp; r_0059_0005__with(ENTITYX14) = ENTITYX15
       &amp; isA(EVENTX17,r_0059_0012__contaminated)
-      &amp; arg0_by_lgs(EVENTX17) = ENTITYX16
+      &amp; arg0__r_0059_0013__by_lgs(EVENTX17) = ENTITYX16
       &amp; arg1(EVENTX17) = ENTITYX15
       &amp; isA(ENTITYX15,r_0059_0010__or)
       &amp; conj1(ENTITYX15) = ENTITYX18
       &amp; conj2(ENTITYX15) = ENTITYX19
       &amp; conj3(ENTITYX15) = ENTITYX20
-      &amp; isA(ENTITYX16,r_0059_0014__animal_urine)
+      &amp; isA(ENTITYX16,r_0059_0014__animal__r_0059_0015__urine)
       &amp; isA(ENTITYX18,r_0059_0006__water)
       &amp; isA(ENTITYX19,r_0059_0008__food)
       &amp; isA(ENTITYX20,r_0059_0011__soil)
@@ -779,12 +779,12 @@ fof(id_58_A_FACTBOOK_1_2010__59_A_FACTBOOK_1_2010__60_A_FACTBOOK_1_2010__61_A_FA
       &amp; conj2(ENTITYX33) = ENTITYX35
       &amp; conj3(ENTITYX33) = ENTITYX36
       &amp; conj4(ENTITYX33) = ENTITYX37
-      &amp; isA(ENTITYX34,r_0061_0008__kidney_damage)
-      &amp; isA(ENTITYX35,r_0061_0011__liver_failure)
+      &amp; isA(ENTITYX34,r_0061_0008__kidney__r_0061_0009__damage)
+      &amp; isA(ENTITYX35,r_0061_0011__liver__r_0061_0012__failure)
       &amp; isA(ENTITYX36,r_0061_0014__meningitis)
       &amp; isA(ENTITYX37,r_0061_0018__distress)
       &amp; attrib1(ENTITYX37) = ATTRIBX38
-      &amp; isA(ENTITYX47,r_0062_0001__fatality_rates)
+      &amp; isA(ENTITYX47,r_0062_0001__fatality__r_0062_0002__rates)
       &amp; isA(ENTITYX59,r_0062_0008__recovery)
       &amp; isA(ENTITYX60,r_0062_0011__months)
       &amp; isA(r_0058_0001__Leptospirosis,r_0058_0001__Leptospirosis)

@@ -201,12 +201,11 @@ For the crossing guard 's safety , allow him or her to safely get to the side of
 </svg>
 <br>
 <pre>
-arc(imperative_0038_1002,r_0038_0021__before_tmp,scope).
-arc(r_0038_0006__safety,r_0038_0003__crossing_guard,genv).
+arc(r_0038_0006__safety,r_0038_0003__crossing__r_0038_0004__guard,genv).
 arc(r_0038_0008__allow,r_0038_0006__safety,r_0038_0001__For_bnf).
 arc(r_0038_0008__allow,r_0038_0014__get,arg1).
-arc(r_0038_0010__or,r_0038_0003__crossing_guard,conj1).
-arc(r_0038_0010__or,r_0038_0003__crossing_guard,conj2).
+arc(r_0038_0010__or,r_0038_0003__crossing__r_0038_0004__guard,conj1).
+arc(r_0038_0010__or,r_0038_0003__crossing__r_0038_0004__guard,conj2).
 arc(r_0038_0014__get,r_0038_0010__or,arg0).
 arc(r_0038_0014__get,r_0038_0013__safely,mnr2).
 arc(r_0038_0014__get,r_0038_0017__side,r_0038_0015__to_loc).
@@ -214,11 +213,12 @@ arc(r_0038_0017__side,r_0038_0020__road,r_0038_0018__of).
 arc(r_0038_0021__before_tmp,r_0038_0008__allow,scope).
 arc(r_0038_0021__before_tmp,r_0038_0022__driving,restriction).
 arc(r_0038_0022__driving,r_0038_0023__ahead,dir2).
+arc(r_0038_1002__imperative,r_0038_0021__before_tmp,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_38_A_driver_handbook,axiom,
+fof(id__38_A_driver_handbook,axiom,
     ? [STATEX9,GUARDX7,GUARDX8,OPERATORX2,CONNX14,EVENTX16,EVENTX17,EVENTX13,ENTITYX4,ENTITYX6,ENTITYX11,ENTITYX12,GUARDX5,QUALITYX15,QUALITYX10] :
       ( STATEX9 = EVENTX13
       &amp; isA(EVENTX13,r_0038_0014__get)
@@ -227,7 +227,7 @@ fof(id_38_A_driver_handbook,axiom,
       &amp; r_0038_0015__to_loc(EVENTX13) = ENTITYX11
       &amp; isA(ENTITYX4,r_0038_0006__safety)
       &amp; genv(ENTITYX4) = GUARDX5
-      &amp; isA(GUARDX5,r_0038_0003__crossing_guard)
+      &amp; isA(GUARDX5,r_0038_0003__crossing__r_0038_0004__guard)
       &amp; isA(ENTITYX6,r_0038_0010__or)
       &amp; conj1(ENTITYX6) = GUARDX7
       &amp; conj2(ENTITYX6) = GUARDX8
@@ -238,7 +238,7 @@ fof(id_38_A_driver_handbook,axiom,
       &amp; isA(ENTITYX12,r_0038_0020__road)
       &amp; isA(QUALITYX10,r_0038_0013__safely)
       &amp; isA(QUALITYX15,r_0038_0023__ahead)
-      &amp; isA(OPERATORX2,imperative_0038_1002)
+      &amp; isA(OPERATORX2,r_0038_1002__imperative)
       &amp; scope(OPERATORX2) = CONNX14
       &amp; isA(CONNX14,r_0038_0021__before_tmp)
       &amp; scope(CONNX14) = EVENTX17

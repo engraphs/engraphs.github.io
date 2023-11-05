@@ -304,24 +304,24 @@ The yellow flashing lights warn you to slow down and prepare to stop .
 </svg>
 <br>
 <pre>
-arc(cnt_0040_1006,r_0040_0010__stop,scope).
-arc(cnt_0040_1006,r_0040_0012__let,restriction).
-arc(r_0040_0004__flash,r_0040_0002__school_buses,arg0).
+arc(r_0040_0004__flash,r_0040_0002__school__r_0040_0003__buses,arg0).
 arc(r_0040_0004__flash,r_0040_0006__lights,arg1).
 arc(r_0040_0006__lights,r_0040_0005__yellow,attrib1).
 arc(r_0040_0007__when_tmp,r_0040_0004__flash,scope).
 arc(r_0040_0007__when_tmp,r_0040_0008__preparing,restriction).
-arc(r_0040_0008__preparing,cnt_0040_1006,catenative).
-arc(r_0040_0010__stop,r_0040_0002__school_buses,arg0).
-arc(r_0040_0012__let,r_0040_0002__school_buses,arg0).
+arc(r_0040_0008__preparing,r_0040_1006__cnt,catenative).
+arc(r_0040_0010__stop,r_0040_0002__school__r_0040_0003__buses,arg0).
+arc(r_0040_0012__let,r_0040_0002__school__r_0040_0003__buses,arg0).
 arc(r_0040_0012__let,r_0040_0013__children,arg1).
 arc(r_0040_0012__let,r_0040_0016__bus,r_0040_0014__off_clr_dir).
-arc(r_0041_0003__flashing_lights,r_0040_0006__lights,z_0040_1016).
-arc(r_0041_0003__flashing_lights,r_0041_0002__yellow,attrib3).
-arc(r_0041_0005__warn,r_0041_0003__flashing_lights,arg0).
+arc(r_0040_1006__cnt,r_0040_0010__stop,scope).
+arc(r_0040_1006__cnt,r_0040_0012__let,restriction).
+arc(r_0041_0003__flashing__r_0041_0004__lights,r_0040_0006__lights,z_0040_1016).
+arc(r_0041_0003__flashing__r_0041_0004__lights,r_0041_0002__yellow,attrib3).
+arc(r_0041_0005__warn,r_0041_0003__flashing__r_0041_0004__lights,arg0).
 arc(r_0041_0005__warn,r_0041_0010__and,arg1).
-arc(r_0041_0008__slow_down,r_0041_0006__you,arg0).
-arc(r_0041_0010__and,r_0041_0008__slow_down,conj1).
+arc(r_0041_0008__slow__r_0041_0009__down,r_0041_0006__you,arg0).
+arc(r_0041_0010__and,r_0041_0008__slow__r_0041_0009__down,conj1).
 arc(r_0041_0010__and,r_0041_0011__prepare,conj2).
 arc(r_0041_0011__prepare,r_0041_0013__stop,catenative).
 arc(r_0041_0013__stop,r_0041_0006__you,arg0).
@@ -329,10 +329,10 @@ arc(r_0041_0013__stop,r_0041_0006__you,arg0).
 </pre>
 <br>
 <pre>
-fof(id_40_A_driver_handbook__41_A_driver_handbook,axiom,
+fof(id__40_A_driver_handbook__41_A_driver_handbook,axiom,
     ? [STATEX5,STATEX19,STATEX21,BUSX9,YELLOW_LIGHTSX17,EVENTX25,CONJX24,EVENTX23,EVENTX22,EVENTX20,CONNX4,EVENTX12,CONNX7,EVENTX10,EVENTX11,EVENTX13,ENTITYX14,BUSX1,YELLOW_LIGHTSX2,ENTITYX8,ATTRIBX18,ATTRIBX3] :
       ( STATEX5 = CONNX7
-      &amp; isA(CONNX7,cnt_0040_1006)
+      &amp; isA(CONNX7,r_0040_1006__cnt)
       &amp; scope(CONNX7) = EVENTX11
       &amp; isA(EVENTX11,r_0040_0010__stop)
       &amp; arg0(EVENTX11) = BUSX1
@@ -344,7 +344,7 @@ fof(id_40_A_driver_handbook__41_A_driver_handbook,axiom,
       &amp; STATEX19 = CONJX24
       &amp; isA(CONJX24,r_0041_0010__and)
       &amp; conj1(CONJX24) = EVENTX20
-      &amp; isA(EVENTX20,r_0041_0008__slow_down)
+      &amp; isA(EVENTX20,r_0041_0008__slow__r_0041_0009__down)
       &amp; arg0(EVENTX20) = r_0041_0006__you
       &amp; conj2(CONJX24) = EVENTX23
       &amp; isA(EVENTX23,r_0041_0011__prepare)
@@ -352,12 +352,12 @@ fof(id_40_A_driver_handbook__41_A_driver_handbook,axiom,
       &amp; STATEX21 = EVENTX22
       &amp; isA(EVENTX22,r_0041_0013__stop)
       &amp; arg0(EVENTX22) = r_0041_0006__you
-      &amp; isA(BUSX1,r_0040_0002__school_buses)
+      &amp; isA(BUSX1,r_0040_0002__school__r_0040_0003__buses)
       &amp; isA(YELLOW_LIGHTSX2,r_0040_0006__lights)
       &amp; attrib1(YELLOW_LIGHTSX2) = ATTRIBX3
       &amp; isA(ENTITYX8,r_0040_0013__children)
       &amp; isA(BUSX9,r_0040_0016__bus)
-      &amp; isA(ENTITYX14,r_0041_0003__flashing_lights)
+      &amp; isA(ENTITYX14,r_0041_0003__flashing__r_0041_0004__lights)
       &amp; z_0040_1016(ENTITYX14) = YELLOW_LIGHTSX17
       &amp; attrib3(ENTITYX14) = ATTRIBX18
       &amp; YELLOW_LIGHTSX17 = YELLOW_LIGHTSX2

@@ -219,26 +219,26 @@ arc(r_0037_0003__was,r_0037_0004__always,tmp4).
 arc(r_0037_0003__was,r_0037_0005__Winter,prd2).
 arc(r_0037_0003__was,r_0037_0006__there,loc6).
 arc(r_0037_0008__and,r_0037_0001__So,conj1).
-arc(r_0037_0008__and,r_0037_0023__danced_about,conj2).
-arc(r_0037_0012__and_and_and,r_0037_0010__North_Wind,conj1).
-arc(r_0037_0012__and_and_and,r_0037_0014__Hail,conj2).
-arc(r_0037_0012__and_and_and,r_0037_0018__Frost,conj3).
-arc(r_0037_0012__and_and_and,r_0037_0022__Snow,conj4).
-arc(r_0037_0023__danced_about,r_0037_0012__and_and_and,arg0).
-arc(r_0037_0023__danced_about,r_0037_0027__trees,r_0037_0025__through_dir).
+arc(r_0037_0008__and,r_0037_0023__danced__r_0037_0024__about,conj2).
+arc(r_0037_0012__and__r_0037_0016__and_r_0037_0020__and,r_0037_0010__North_r_0037_0011__Wind,conj1).
+arc(r_0037_0012__and__r_0037_0016__and_r_0037_0020__and,r_0037_0014__Hail,conj2).
+arc(r_0037_0012__and__r_0037_0016__and_r_0037_0020__and,r_0037_0018__Frost,conj3).
+arc(r_0037_0012__and__r_0037_0016__and_r_0037_0020__and,r_0037_0022__Snow,conj4).
+arc(r_0037_0023__danced__r_0037_0024__about,r_0037_0012__and_r_0037_0016__and_r_0037_0020__and,arg0).
+arc(r_0037_0023__danced__r_0037_0024__about,r_0037_0027__trees,r_0037_0025__through_dir).
 
 </pre>
 <br>
 <pre>
-fof(id_37_A_WILDE_2_1888,axiom,
+fof(id__37_A_WILDE_2_1888,axiom,
     ? [CONJX13,EVENTX12,OPERATORX1,EVENTX5,ENTITYX6,ENTITYX11,ENTITYX7,ENTITYX8,ENTITYX9,ENTITYX10,ENTITYX3,QUALITYX2,QUALITYX4] :
       ( isA(ENTITYX3,r_0037_0005__Winter)
-      &amp; isA(ENTITYX6,r_0037_0012__and_and_and)
+      &amp; isA(ENTITYX6,r_0037_0012__and__r_0037_0016__and_r_0037_0020__and)
       &amp; conj1(ENTITYX6) = ENTITYX7
       &amp; conj2(ENTITYX6) = ENTITYX8
       &amp; conj3(ENTITYX6) = ENTITYX9
       &amp; conj4(ENTITYX6) = ENTITYX10
-      &amp; isA(ENTITYX7,r_0037_0010__North_Wind)
+      &amp; isA(ENTITYX7,r_0037_0010__North__r_0037_0011__Wind)
       &amp; isA(ENTITYX8,r_0037_0014__Hail)
       &amp; isA(ENTITYX9,r_0037_0018__Frost)
       &amp; isA(ENTITYX10,r_0037_0022__Snow)
@@ -255,7 +255,7 @@ fof(id_37_A_WILDE_2_1888,axiom,
       &amp; prd2(EVENTX5) = ENTITYX3
       &amp; loc6(EVENTX5) = QUALITYX4
       &amp; conj2(CONJX13) = EVENTX12
-      &amp; isA(EVENTX12,r_0037_0023__danced_about)
+      &amp; isA(EVENTX12,r_0037_0023__danced__r_0037_0024__about)
       &amp; arg0(EVENTX12) = ENTITYX6
       &amp; r_0037_0025__through_dir(EVENTX12) = ENTITYX11 ) ).
 

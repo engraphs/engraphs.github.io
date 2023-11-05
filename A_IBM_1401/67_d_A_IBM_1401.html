@@ -254,29 +254,29 @@ Your IBM Sales Representative will be pleased to discuss all of them with you .
 <pre>
 arc(r_0089_0002__are,r_0089_0001__These,arg0).
 arc(r_0089_0002__are,z_0089_1006,prd2).
-arc(r_0089_0004__quantificational__a_few,r_0089_0002__are,scope).
-arc(r_0089_0004__quantificational__a_few,z_0089_1006,restriction).
-arc(r_0089_0008__IBM_services,r_0089_0007__many,attrib2).
-arc(r_0090_0002__IBM_Sales_Representative,r_0090_0001__Your,genv).
+arc(r_0089_0004__quantificational__r_0089_0004__a_few,r_0089_0002__are,scope).
+arc(r_0089_0004__quantificational__r_0089_0004__a_few,z_0089_1006,restriction).
+arc(r_0089_0008__IBM__r_0089_0009__services,r_0089_0007__many,attrib2).
+arc(r_0090_0002__IBM__r_0090_0003__Sales_r_0090_0004__Representative,r_0090_0001__Your,genv).
 arc(r_0090_0005__will,r_0090_0006__be,scope).
-arc(r_0090_0006__be,r_0090_0002__IBM_Sales_Representative,arg0).
+arc(r_0090_0006__be,r_0090_0002__IBM__r_0090_0003__Sales_r_0090_0004__Representative,arg0).
 arc(r_0090_0006__be,r_0090_0007__pleased,prd2).
-arc(r_0090_0007__pleased,r_0090_0010__quantificational__all,emb2).
+arc(r_0090_0007__pleased,r_0090_0010__quantificational__r_0090_0010__all,emb2).
 arc(r_0090_0009__discuss,r_0090_0001__Your,r_0090_0013__with_com).
 arc(r_0090_0009__discuss,z_0089_1016,arg1).
-arc(r_0090_0010__quantificational__all,r_0090_0009__discuss,scope).
-arc(r_0090_0010__quantificational__all,z_0089_1016,restriction).
+arc(r_0090_0010__quantificational__r_0090_0010__all,r_0090_0009__discuss,scope).
+arc(r_0090_0010__quantificational__r_0090_0010__all,z_0089_1016,restriction).
 arc(z_0089_1006,r_0089_0003__just,quality1).
-arc(z_0089_1006,r_0089_0008__IBM_services,r_0089_0005__of).
-arc(z_0089_1016,r_0089_0008__IBM_services,r_0090_0011__of).
+arc(z_0089_1006,r_0089_0008__IBM__r_0089_0009__services,r_0089_0005__of).
+arc(z_0089_1016,r_0089_0008__IBM__r_0089_0009__services,r_0090_0011__of).
 
 </pre>
 <br>
 <pre>
-fof(id_89_A_IBM_1401__90_A_IBM_1401,axiom,
+fof(id__89_A_IBM_1401__90_A_IBM_1401,axiom,
     ? [STATEX10,SERVICESX15,HEARERX17,OPERATORX19,EVENTX20,QUANTX14,EVENTX18,QUANTX2,EVENTX7,ENTITYX8,ENTITYX13,ENTITYX1,SERVICESX4,QUALITYX3,ATTRIBX9,ATTRIBX5] :
       ( STATEX10 = QUANTX14
-      &amp; isA(QUANTX14,r_0090_0010__quantificational__all)
+      &amp; isA(QUANTX14,r_0090_0010__quantificational__r_0090_0010__all)
       &amp; restriction(QUANTX14) = ENTITYX13
       &amp; isA(ENTITYX13,z_0089_1016)
       &amp; r_0090_0011__of(ENTITYX13) = SERVICESX15
@@ -284,9 +284,9 @@ fof(id_89_A_IBM_1401__90_A_IBM_1401,axiom,
       &amp; isA(EVENTX18,r_0090_0009__discuss)
       &amp; arg1(EVENTX18) = ENTITYX13
       &amp; r_0090_0013__with_com(EVENTX18) = HEARERX17
-      &amp; isA(SERVICESX4,r_0089_0008__IBM_services)
+      &amp; isA(SERVICESX4,r_0089_0008__IBM__r_0089_0009__services)
       &amp; attrib2(SERVICESX4) = ATTRIBX5
-      &amp; isA(ENTITYX8,r_0090_0002__IBM_Sales_Representative)
+      &amp; isA(ENTITYX8,r_0090_0002__IBM__r_0090_0003__Sales_r_0090_0004__Representative)
       &amp; genv(ENTITYX8) = r_0090_0001__Your
       &amp; SERVICESX15 = SERVICESX4
       &amp; HEARERX17 = r_0090_0001__Your
@@ -294,7 +294,7 @@ fof(id_89_A_IBM_1401__90_A_IBM_1401,axiom,
       &amp; isA(ATTRIBX5,r_0089_0007__many)
       &amp; isA(ATTRIBX9,r_0090_0007__pleased)
       &amp; emb2(ATTRIBX9) = STATEX10
-      &amp; isA(QUANTX2,r_0089_0004__quantificational__a_few)
+      &amp; isA(QUANTX2,r_0089_0004__quantificational__r_0089_0004__a_few)
       &amp; restriction(QUANTX2) = ENTITYX1
       &amp; isA(ENTITYX1,z_0089_1006)
       &amp; quality1(ENTITYX1) = QUALITYX3

@@ -253,16 +253,14 @@ Dancing was instantaneous , Mrs. Fennel privately enjoining the players on no ac
 </svg>
 <br>
 <pre>
-arc(abs_0042_1006,r_0042_0002__was,scope).
-arc(abs_0042_1006,r_0042_0008__enjoining,restriction).
 arc(r_0042_0002__was,r_0042_0001__Dancing,arg0).
 arc(r_0042_0002__was,r_0042_0003__instantaneous,prd2).
-arc(r_0042_0008__enjoining,r_0042_0005__Mrs._Fennel,arg0).
+arc(r_0042_0008__enjoining,r_0042_0005__Mrs__r_0042_0006__Fennel,arg0).
 arc(r_0042_0008__enjoining,r_0042_0007__privately,mnr2).
 arc(r_0042_0008__enjoining,r_0042_0010__players,arg2).
-arc(r_0042_0008__enjoining,r_0042_0012__quantificational__no,arg1).
-arc(r_0042_0012__quantificational__no,r_0042_0013__account,restriction).
-arc(r_0042_0012__quantificational__no,r_0042_0015__let,scope).
+arc(r_0042_0008__enjoining,r_0042_0012__quantificational__r_0042_0012__no,arg1).
+arc(r_0042_0012__quantificational__r_0042_0012__no,r_0042_0013__account,restriction).
+arc(r_0042_0012__quantificational__r_0042_0012__no,r_0042_0015__let,scope).
 arc(r_0042_0015__let,r_0042_0010__players,arg0).
 arc(r_0042_0015__let,r_0042_0013__account,r_0042_0011__on_mnr).
 arc(r_0042_0015__let,r_0042_0017__dance,arg1).
@@ -270,16 +268,18 @@ arc(r_0042_0015__let,r_0042_0018__exceed,prd).
 arc(r_0042_0018__exceed,r_0042_0020__length,arg1).
 arc(r_0042_0020__length,r_0042_0023__quarter,r_0042_0021__of).
 arc(r_0042_0023__quarter,r_0042_0026__hour,r_0042_0024__of).
+arc(r_0042_1006__abs,r_0042_0002__was,scope).
+arc(r_0042_1006__abs,r_0042_0008__enjoining,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_42_A_HARDY_1883,axiom,
+fof(id__42_A_HARDY_1883,axiom,
     ? [STATEX1,STATEX10,STATEX14,CONNX7,EVENTX22,QUANTX12,EVENTX21,EVENTX20,EVENTX23,EVENTX4,ATTRIBX5,ENTITYX9,ENTITYX11,ENTITYX13,ENTITYX17,ENTITYX18,ENTITYX19,QUALITYX8] :
       ( STATEX1 = EVENTX4
       &amp; isA(EVENTX4,r_0042_0001__Dancing)
       &amp; STATEX10 = QUANTX12
-      &amp; isA(QUANTX12,r_0042_0012__quantificational__no)
+      &amp; isA(QUANTX12,r_0042_0012__quantificational__r_0042_0012__no)
       &amp; restriction(QUANTX12) = ENTITYX11
       &amp; isA(ENTITYX11,r_0042_0013__account)
       &amp; scope(QUANTX12) = EVENTX21
@@ -300,14 +300,14 @@ fof(id_42_A_HARDY_1883,axiom,
       &amp; r_0042_0024__of(ENTITYX18) = ENTITYX19
       &amp; isA(ENTITYX19,r_0042_0026__hour)
       &amp; isA(QUALITYX8,r_0042_0007__privately)
-      &amp; isA(CONNX7,abs_0042_1006)
+      &amp; isA(CONNX7,r_0042_1006__abs)
       &amp; scope(CONNX7) = EVENTX23
       &amp; isA(EVENTX23,r_0042_0002__was)
       &amp; arg0(EVENTX23) = STATEX1
       &amp; prd2(EVENTX23) = ATTRIBX5
       &amp; restriction(CONNX7) = EVENTX22
       &amp; isA(EVENTX22,r_0042_0008__enjoining)
-      &amp; arg0(EVENTX22) = r_0042_0005__Mrs._Fennel
+      &amp; arg0(EVENTX22) = r_0042_0005__Mrs__r_0042_0006__Fennel
       &amp; mnr2(EVENTX22) = QUALITYX8
       &amp; arg2(EVENTX22) = ENTITYX9
       &amp; arg1(EVENTX22) = STATEX10 ) ).

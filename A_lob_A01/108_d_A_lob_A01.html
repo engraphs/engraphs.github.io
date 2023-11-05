@@ -149,18 +149,18 @@ Then Mr Brown swung his attack directly to the unsmiling Mr Powell .
 <br>
 <pre>
 arc(r_0116_0004__swung,r_0116_0001__Then,tmp1).
-arc(r_0116_0004__swung,r_0116_0002__Mr_Brown,arg0).
+arc(r_0116_0004__swung,r_0116_0002__Mr__r_0116_0003__Brown,arg0).
 arc(r_0116_0004__swung,r_0116_0006__attack,arg1).
 arc(r_0116_0004__swung,r_0116_0007__directly,mnr5).
-arc(r_0116_0004__swung,r_0116_0011__Mr_Powell,r_0116_0008__to_dir).
+arc(r_0116_0004__swung,r_0116_0011__Mr__r_0116_0012__Powell,r_0116_0008__to_dir).
 arc(r_0116_0006__attack,r_0116_0005__his,genv).
-arc(r_0116_0011__Mr_Powell,z_0116_1006,prn1).
+arc(r_0116_0011__Mr__r_0116_0012__Powell,z_0116_1006,prn1).
 arc(z_0116_1006,r_0116_0010__unsmiling,attrib2).
 
 </pre>
 <br>
 <pre>
-fof(id_116_A_lob_A01,axiom,
+fof(id__116_A_lob_A01,axiom,
     ? [EVENTX7,QUALITYX1,QUALITYX3,ENTITYX2,ENTITYX4,ATTRIBX5] :
       ( isA(QUALITYX1,r_0116_0001__Then)
       &amp; isA(QUALITYX3,r_0116_0007__directly)
@@ -168,15 +168,15 @@ fof(id_116_A_lob_A01,axiom,
       &amp; genv(ENTITYX2) = r_0116_0005__his
       &amp; isA(ENTITYX4,z_0116_1006)
       &amp; attrib2(ENTITYX4) = ATTRIBX5
-      &amp; isA(r_0116_0011__Mr_Powell,r_0116_0011__Mr_Powell)
-      &amp; prn1(r_0116_0011__Mr_Powell) = ENTITYX4
+      &amp; isA(r_0116_0011__Mr__r_0116_0012__Powell,r_0116_0011__Mr_r_0116_0012__Powell)
+      &amp; prn1(r_0116_0011__Mr__r_0116_0012__Powell) = ENTITYX4
       &amp; isA(ATTRIBX5,r_0116_0010__unsmiling)
       &amp; isA(EVENTX7,r_0116_0004__swung)
       &amp; tmp1(EVENTX7) = QUALITYX1
-      &amp; arg0(EVENTX7) = r_0116_0002__Mr_Brown
+      &amp; arg0(EVENTX7) = r_0116_0002__Mr__r_0116_0003__Brown
       &amp; arg1(EVENTX7) = ENTITYX2
       &amp; mnr5(EVENTX7) = QUALITYX3
-      &amp; r_0116_0008__to_dir(EVENTX7) = r_0116_0011__Mr_Powell ) ).
+      &amp; r_0116_0008__to_dir(EVENTX7) = r_0116_0011__Mr__r_0116_0012__Powell ) ).
 
 
 </pre>

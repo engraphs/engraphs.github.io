@@ -393,14 +393,14 @@
 <pre>
 arc(r_0141_0004__When_tmp,r_0141_0011__is,restriction).
 arc(r_0141_0004__When_tmp,r_0141_0045__shall,scope).
-arc(r_0141_0008__handling,r_0141_0006__business_operator,arg0).
+arc(r_0141_0008__handling,r_0141_0006__business__r_0141_0007__operator,arg0).
 arc(r_0141_0008__handling,r_0141_0010__information,arg1).
 arc(r_0141_0010__information,r_0141_0009__personal,attrib1).
 arc(r_0141_0011__is,r_0141_0012__requested,catenative).
-arc(r_0141_0012__requested,r_0141_0006__business_operator,arg2).
-arc(r_0141_0012__requested,r_0141_0015__person,arg0_by_lgs).
+arc(r_0141_0012__requested,r_0141_0006__business__r_0141_0007__operator,arg2).
+arc(r_0141_0012__requested,r_0141_0015__person,arg0__r_0141_0013__by_lgs).
 arc(r_0141_0012__requested,r_0141_0017__notify,arg1).
-arc(r_0141_0017__notify,r_0141_0006__business_operator,arg0).
+arc(r_0141_0017__notify,r_0141_0006__business__r_0141_0007__operator,arg0).
 arc(r_0141_0017__notify,r_0141_0019__or,arg1).
 arc(r_0141_0017__notify,r_0141_0023__Purpose,r_0141_0021__of_clr).
 arc(r_0141_0019__or,r_0141_0015__person,conj1).
@@ -416,18 +416,18 @@ arc(r_0141_0033__lead,r_0141_0036__identification,r_0141_0034__to_clr).
 arc(r_0141_0036__identification,r_0141_0039__person,r_0141_0037__of).
 arc(r_0141_0040__concerned,r_0141_0039__person,arg0).
 arc(r_0141_0045__shall,r_0141_0046__meet,scope).
-arc(r_0141_0046__meet,r_0141_0043__business_operator,arg0).
+arc(r_0141_0046__meet,r_0141_0043__business__r_0141_0044__operator,arg0).
 arc(r_0141_0046__meet,r_0141_0048__request,arg1).
 arc(r_0141_0046__meet,r_0141_0050__delay,r_0141_0049__without_mnr).
 
 </pre>
 <br>
 <pre>
-fof(id_141_A_law_h15A119,axiom,
+fof(id__141_A_law_h15A119,axiom,
     ? [CATENATIVEX6,STATEX8,PERSONX10,PERSONX11,CONNX1,OPERATORX29,EVENTX30,EVENTX25,EVENTX24,EVENTX23,OPERATORX21,EVENTX22,EVENTX20,EVENTX5,ENTITYX26,ENTITYX27,ENTITYX28,ENTITYX2,PERSONX7,ENTITYX9,ENTITYX12,ENTITYX13,ENTITYX14,ENTITYX18,ENTITYX19,ENTITYX3,ATTRIBX15,ATTRIBX16,ATTRIBX17,ATTRIBX4] :
       ( CATENATIVEX6 = EVENTX24
       &amp; isA(EVENTX24,r_0141_0012__requested)
-      &amp; arg0_by_lgs(EVENTX24) = PERSONX7
+      &amp; arg0__r_0141_0013__by_lgs(EVENTX24) = PERSONX7
       &amp; arg2(EVENTX24) = ENTITYX2
       &amp; arg1(EVENTX24) = STATEX8
       &amp; STATEX8 = EVENTX23
@@ -438,7 +438,7 @@ fof(id_141_A_law_h15A119,axiom,
       &amp; isA(EVENTX5,r_0141_0008__handling)
       &amp; arg0(EVENTX5) = ENTITYX2
       &amp; arg1(EVENTX5) = ENTITYX3
-      &amp; isA(ENTITYX2,r_0141_0006__business_operator)
+      &amp; isA(ENTITYX2,r_0141_0006__business__r_0141_0007__operator)
       &amp; isA(ENTITYX3,r_0141_0010__information)
       &amp; attrib1(ENTITYX3) = ATTRIBX4
       &amp; isA(PERSONX7,r_0141_0015__person)
@@ -465,7 +465,7 @@ fof(id_141_A_law_h15A119,axiom,
       &amp; isA(EVENTX20,r_0141_0040__concerned)
       &amp; arg0(EVENTX20) = ENTITYX19
       &amp; isA(ENTITYX19,r_0141_0039__person)
-      &amp; isA(ENTITYX26,r_0141_0043__business_operator)
+      &amp; isA(ENTITYX26,r_0141_0043__business__r_0141_0044__operator)
       &amp; isA(ENTITYX27,r_0141_0048__request)
       &amp; isA(ENTITYX28,r_0141_0050__delay)
       &amp; isA(ATTRIBX4,r_0141_0009__personal)

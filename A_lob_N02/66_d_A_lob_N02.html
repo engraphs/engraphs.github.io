@@ -329,21 +329,21 @@ arc(r_0115_0014__stuck,r_0115_0013__still,tmp2).
 arc(r_0115_0014__stuck,r_0115_0018__flesh,r_0115_0015__in_loc).
 arc(r_0115_0018__flesh,r_0115_0001__She,genv).
 arc(r_0115_0018__flesh,r_0115_0017__quivering,attrib2).
+arc(r_0115_1021__utterance,r_0116_0003___apos_ve,part1).
 arc(r_0116_0003___apos_ve,r_0116_0002__You,arg0).
 arc(r_0116_0003___apos_ve,r_0116_0005__answer,arg1).
 arc(r_0116_0005__answer,r_0116_0008__sorts,r_0116_0007__of).
 arc(r_0116_0005__answer,z_0115_1026,r_0116_0010__for).
-arc(r_0116_0011__quantificational__everything,r_0116_0005__answer,scope).
-arc(r_0116_0011__quantificational__everything,z_0115_1026,restriction).
+arc(r_0116_0011__quantificational__r_0116_0011__everything,r_0116_0005__answer,scope).
+arc(r_0116_0011__quantificational__r_0116_0011__everything,z_0115_1026,restriction).
 arc(r_0116_0015__said,r_0115_0001__She,arg0).
+arc(r_0116_0015__said,r_0115_1021__utterance,arg1).
 arc(r_0116_0015__said,r_0116_0016__shortly,tmp7).
-arc(r_0116_0015__said,utterance_0115_1021,arg1).
-arc(utterance_0115_1021,r_0116_0003___apos_ve,part1).
 
 </pre>
 <br>
 <pre>
-fof(id_115_A_lob_N02__116_A_lob_N02,axiom,
+fof(id__115_A_lob_N02__116_A_lob_N02,axiom,
     ? [CATENATIVEX3,STATEX5,EVENTX10,STATEX19,BERYLX14,BERYLX29,EVENTX31,CONJX28,EVENTX27,QUANTX25,CONJX18,EVENTX17,EVENTX16,EVENTX8,EVENTX7,EVENTX6,ENTITYX22,ENTITYX23,ENTITYX24,ENTITYX11,ENTITYX13,QUALITYX30,QUALITYX12,ATTRIBX15] :
       ( CATENATIVEX3 = EVENTX7
       &amp; isA(EVENTX7,r_0115_0003__tempted)
@@ -358,7 +358,7 @@ fof(id_115_A_lob_N02__116_A_lob_N02,axiom,
       &amp; tmp2(EVENTX16) = QUALITYX12
       &amp; r_0115_0015__in_loc(EVENTX16) = ENTITYX13
       &amp; STATEX19 = CONJX28
-      &amp; isA(CONJX28,utterance_0115_1021)
+      &amp; isA(CONJX28,r_0115_1021__utterance)
       &amp; part1(CONJX28) = EVENTX27
       &amp; isA(EVENTX27,r_0116_0003___apos_ve)
       &amp; arg0(EVENTX27) = r_0116_0002__You
@@ -368,7 +368,7 @@ fof(id_115_A_lob_N02__116_A_lob_N02,axiom,
       &amp; genv(ENTITYX13) = BERYLX14
       &amp; attrib2(ENTITYX13) = ATTRIBX15
       &amp; BERYLX14 = r_0115_0001__She
-      &amp; isA(QUANTX25,r_0116_0011__quantificational__everything)
+      &amp; isA(QUANTX25,r_0116_0011__quantificational__r_0116_0011__everything)
       &amp; restriction(QUANTX25) = ENTITYX24
       &amp; isA(ENTITYX24,z_0115_1026)
       &amp; scope(QUANTX25) = ENTITYX22

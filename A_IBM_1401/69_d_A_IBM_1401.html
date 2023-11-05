@@ -201,31 +201,31 @@
 <br>
 <pre>
 arc(r_0092_0007__were,r_0092_0008__developed,catenative).
-arc(r_0092_0008__developed,r_0092_0005__COBOL_specifications,arg1).
-arc(r_0092_0008__developed,r_0092_0011__Conference,arg0_by_lgs).
-arc(r_0092_0011__Conference,r_0092_0013__Data_Systems_Languages,r_0092_0012__on).
-arc(r_0092_0013__Data_Systems_Languages,r_0092_0020__effort,prn5).
+arc(r_0092_0008__developed,r_0092_0005__COBOL__r_0092_0006__specifications,arg1).
+arc(r_0092_0008__developed,r_0092_0011__Conference,arg0__r_0092_0009__by_lgs).
+arc(r_0092_0011__Conference,r_0092_0013__Data__r_0092_0014__Systems_r_0092_0015__Languages,r_0092_0012__on).
+arc(r_0092_0013__Data__r_0092_0014__Systems_r_0092_0015__Languages,r_0092_0020__effort,prn5).
 arc(r_0092_0020__effort,r_0092_0018__voluntary,attrib2).
 arc(r_0092_0020__effort,r_0092_0019__cooperative,attrib3).
 arc(r_0092_0020__effort,r_0092_0024__and,r_0092_0021__of).
 arc(r_0092_0024__and,r_0092_0022__users,conj1).
 arc(r_0092_0024__and,r_0092_0025__manufacturers,conj2).
 arc(r_0092_0025__manufacturers,r_0092_0029__systems,r_0092_0026__of).
-arc(r_0092_0029__systems,r_0092_0027__data_processing,nlyr1).
+arc(r_0092_0029__systems,r_0092_0027__data__r_0092_0028__processing,nlyr1).
 
 </pre>
 <br>
 <pre>
-fof(id_92_A_IBM_1401,axiom,
+fof(id__92_A_IBM_1401,axiom,
     ? [CATENATIVEX2,EVENTX14,EVENTX13,ENTITYX1,ENTITYX3,ENTITYX4,ENTITYX5,ENTITYX8,ENTITYX9,ENTITYX10,ENTITYX11,ENTITYX12,ATTRIBX6,ATTRIBX7] :
       ( CATENATIVEX2 = EVENTX13
       &amp; isA(EVENTX13,r_0092_0008__developed)
-      &amp; arg0_by_lgs(EVENTX13) = ENTITYX3
+      &amp; arg0__r_0092_0009__by_lgs(EVENTX13) = ENTITYX3
       &amp; arg1(EVENTX13) = ENTITYX1
-      &amp; isA(ENTITYX1,r_0092_0005__COBOL_specifications)
+      &amp; isA(ENTITYX1,r_0092_0005__COBOL__r_0092_0006__specifications)
       &amp; isA(ENTITYX3,r_0092_0011__Conference)
       &amp; r_0092_0012__on(ENTITYX3) = ENTITYX4
-      &amp; isA(ENTITYX4,r_0092_0013__Data_Systems_Languages)
+      &amp; isA(ENTITYX4,r_0092_0013__Data__r_0092_0014__Systems_r_0092_0015__Languages)
       &amp; prn5(ENTITYX4) = ENTITYX5
       &amp; isA(ENTITYX5,r_0092_0020__effort)
       &amp; attrib2(ENTITYX5) = ATTRIBX6
@@ -239,7 +239,7 @@ fof(id_92_A_IBM_1401,axiom,
       &amp; r_0092_0026__of(ENTITYX10) = ENTITYX11
       &amp; isA(ENTITYX11,r_0092_0029__systems)
       &amp; nlyr1(ENTITYX11) = ENTITYX12
-      &amp; isA(ENTITYX12,r_0092_0027__data_processing)
+      &amp; isA(ENTITYX12,r_0092_0027__data__r_0092_0028__processing)
       &amp; isA(ATTRIBX6,r_0092_0018__voluntary)
       &amp; isA(ATTRIBX7,r_0092_0019__cooperative)
       &amp; isA(EVENTX14,r_0092_0007__were)

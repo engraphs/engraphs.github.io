@@ -129,21 +129,21 @@ Death is the brother of Sleep , is he not ? &rdquo;
 </svg>
 <br>
 <pre>
-arc(question_0220_1004,r_0220_0010__not,scope).
-arc(r_0220_0002__is,question_0220_1004,prn5).
 arc(r_0220_0002__is,r_0220_0001__Death,arg0).
 arc(r_0220_0002__is,r_0220_0004__brother,prd2).
+arc(r_0220_0002__is,r_0220_1004__question,prn5).
 arc(r_0220_0004__brother,r_0220_0006__Sleep,r_0220_0005__of).
 arc(r_0220_0008__is,r_0220_0001__Death,arg0).
 arc(r_0220_0010__not,r_0220_0008__is,scope).
+arc(r_0220_1004__question,r_0220_0010__not,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_220_A_WILDE_1_1888,axiom,
+fof(id__220_A_WILDE_1_1888,axiom,
     ? [EVENTX2,DEATHX5,EVENTX8,OPERATORX4,OPERATORX6,EVENTX7,ENTITYX1] :
       ( EVENTX2 = OPERATORX4
-      &amp; isA(OPERATORX4,question_0220_1004)
+      &amp; isA(OPERATORX4,r_0220_1004__question)
       &amp; scope(OPERATORX4) = OPERATORX6
       &amp; isA(OPERATORX6,r_0220_0010__not)
       &amp; scope(OPERATORX6) = EVENTX7
@@ -201,9 +201,9 @@ fof(id_220_A_WILDE_1_1888,axiom,
 <text x="1020.36" y="112" text-anchor="middle">PRN</text>
 <text x="1020.72" y="173" text-anchor="middle">CP-QUE</text>
 <text x="1020.72" y="234" text-anchor="middle">IP-SUB</text>
-<text x="900.36" y="295" text-anchor="middle">BEP</text>
-<text x="900.36" y="356" text-anchor="middle">is</text>
-<line x1="900.36" y1="305" x2="900.36" y2="336" style="stroke:#000000;stroke-width:2;"/>
+<text x="900.84" y="295" text-anchor="middle">BEP;~Ln</text>
+<text x="900.84" y="356" text-anchor="middle">is</text>
+<line x1="900.84" y1="305" x2="900.84" y2="336" style="stroke:#000000;stroke-width:2;"/>
 <line x1="1020.72" y1="244" x2="900" y2="275" style="stroke:#000000;stroke-width:2;"/>
 <text x="1020.72" y="295" text-anchor="middle">NP-SBJ</text>
 <text x="1020.36" y="356" text-anchor="middle">PRO</text>
@@ -236,7 +236,7 @@ fof(id_220_A_WILDE_1_1888,axiom,
                    (PP (P-ROLE of;{of})
                        (NP (NPR Sleep;{Sleep}))))
           (PUNC ,)
-          (PRN (CP-QUE (IP-SUB (BEP is;{be})
+          (PRN (CP-QUE (IP-SUB (BEP;~Ln is;{be})
                                (NP-SBJ;{DEATH} (PRO he;{he}))
                                (NEG not;{not}))))
           (PUNC ?)

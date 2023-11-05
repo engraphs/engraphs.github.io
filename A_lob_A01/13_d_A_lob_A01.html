@@ -311,16 +311,14 @@ Delegates from Mr Kenneth Kaunda 's united national independence party ( 280,000
 </svg>
 <br>
 <pre>
-arc(cnt_0014_1012,r_0014_0026__will,scope).
-arc(cnt_0014_1012,r_0014_0032__discuss,restriction).
 arc(r_0014_0001__Delegates,r_0014_0015__and,r_0014_0002__from).
-arc(r_0014_0009__independence_party,r_0014_0003__Mr_Kenneth_Kaunda,genv).
-arc(r_0014_0009__independence_party,r_0014_0007__united,attrib2).
-arc(r_0014_0009__independence_party,r_0014_0008__national,attrib3).
-arc(r_0014_0009__independence_party,r_0014_0012__280,000_members,prn7).
-arc(r_0014_0015__and,r_0014_0009__independence_party,conj1).
+arc(r_0014_0009__independence__r_0014_0010__party,r_0014_0003__Mr_r_0014_0004__Kenneth_r_0014_0005__Kaunda,genv).
+arc(r_0014_0009__independence__r_0014_0010__party,r_0014_0007__united,attrib2).
+arc(r_0014_0009__independence__r_0014_0010__party,r_0014_0008__national,attrib3).
+arc(r_0014_0009__independence__r_0014_0010__party,r_0014_0012__280,000_r_0014_0013__members,prn7).
+arc(r_0014_0015__and,r_0014_0009__independence__r_0014_0010__party,conj1).
 arc(r_0014_0015__and,r_0014_0022__congress,conj2).
-arc(r_0014_0022__congress,r_0014_0016__Mr_Harry_Nkumbula,genv).
+arc(r_0014_0022__congress,r_0014_0016__Mr__r_0014_0017__Harry_r_0014_0018__Nkumbula,genv).
 arc(r_0014_0022__congress,r_0014_0020__African,attrib2).
 arc(r_0014_0022__congress,r_0014_0021__national,attrib3).
 arc(r_0014_0022__congress,r_0014_0024__400,000,prn6).
@@ -332,25 +330,27 @@ arc(r_0014_0032__discuss,r_0014_0001__Delegates,arg0).
 arc(r_0014_0032__discuss,r_0014_0035__course,arg1).
 arc(r_0014_0035__course,r_0014_0034__common,attrib2).
 arc(r_0014_0035__course,r_0014_0037__action,r_0014_0036__of).
+arc(r_0014_1012__cnt,r_0014_0026__will,scope).
+arc(r_0014_1012__cnt,r_0014_0032__discuss,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_14_A_lob_A01,axiom,
+fof(id__14_A_lob_A01,axiom,
     ? [CONNX13,EVENTX17,OPERATORX18,EVENTX19,ENTITYX1,ENTITYX14,ENTITYX16,ENTITYX2,ENTITYX3,ENTITYX7,ENTITYX10,ENTITYX6,ATTRIBX15,ATTRIBX8,ATTRIBX9,ATTRIBX4,ATTRIBX5,QUALITYX11] :
       ( isA(ENTITYX1,r_0014_0001__Delegates)
       &amp; r_0014_0002__from(ENTITYX1) = ENTITYX2
       &amp; isA(ENTITYX2,r_0014_0015__and)
       &amp; conj1(ENTITYX2) = ENTITYX3
       &amp; conj2(ENTITYX2) = ENTITYX7
-      &amp; isA(ENTITYX3,r_0014_0009__independence_party)
-      &amp; genv(ENTITYX3) = r_0014_0003__Mr_Kenneth_Kaunda
+      &amp; isA(ENTITYX3,r_0014_0009__independence__r_0014_0010__party)
+      &amp; genv(ENTITYX3) = r_0014_0003__Mr__r_0014_0004__Kenneth_r_0014_0005__Kaunda
       &amp; attrib2(ENTITYX3) = ATTRIBX4
       &amp; attrib3(ENTITYX3) = ATTRIBX5
       &amp; prn7(ENTITYX3) = ENTITYX6
-      &amp; isA(ENTITYX6,r_0014_0012__280,000_members)
+      &amp; isA(ENTITYX6,r_0014_0012__280,000__r_0014_0013__members)
       &amp; isA(ENTITYX7,r_0014_0022__congress)
-      &amp; genv(ENTITYX7) = r_0014_0016__Mr_Harry_Nkumbula
+      &amp; genv(ENTITYX7) = r_0014_0016__Mr__r_0014_0017__Harry_r_0014_0018__Nkumbula
       &amp; attrib2(ENTITYX7) = ATTRIBX8
       &amp; attrib3(ENTITYX7) = ATTRIBX9
       &amp; prn6(ENTITYX7) = ENTITYX10
@@ -365,7 +365,7 @@ fof(id_14_A_lob_A01,axiom,
       &amp; isA(ATTRIBX9,r_0014_0021__national)
       &amp; isA(ATTRIBX15,r_0014_0034__common)
       &amp; isA(QUALITYX11,r_0014_0030__today)
-      &amp; isA(CONNX13,cnt_0014_1012)
+      &amp; isA(CONNX13,r_0014_1012__cnt)
       &amp; scope(CONNX13) = OPERATORX18
       &amp; isA(OPERATORX18,r_0014_0026__will)
       &amp; scope(OPERATORX18) = EVENTX19

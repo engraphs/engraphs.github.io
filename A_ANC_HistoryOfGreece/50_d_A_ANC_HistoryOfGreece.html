@@ -391,17 +391,13 @@ The Venetians fortified their main towns &lt;ndash&gt; Naxos Town and Antiparos 
 </svg>
 <br>
 <pre>
-arc(cnt_0084_1009,r_0084_0003__fortified,scope).
-arc(cnt_0084_1009,r_0084_0019__creating,restriction).
-arc(cnt_0084_1018,r_0084_0028__designed,scope).
-arc(cnt_0084_1018,r_0084_0031__and,restriction).
 arc(r_0084_0003__fortified,r_0084_0002__Venetians,arg0).
 arc(r_0084_0003__fortified,r_0084_0006__towns,arg1).
 arc(r_0084_0003__fortified,r_0084_0013__are,prn5).
 arc(r_0084_0005__main,r_0084_0002__Venetians,genv).
 arc(r_0084_0006__towns,r_0084_0005__main,attrib1).
-arc(r_0084_0010__and,r_0084_0008__Naxos_Town,conj1).
-arc(r_0084_0010__and,r_0084_0011__Antiparos_Town,conj2).
+arc(r_0084_0010__and,r_0084_0008__Naxos__r_0084_0009__Town,conj1).
+arc(r_0084_0010__and,r_0084_0011__Antiparos__r_0084_0012__Town,conj2).
 arc(r_0084_0013__are,r_0084_0010__and,arg0).
 arc(r_0084_0013__are,r_0084_0015__examples,prd2).
 arc(r_0084_0015__examples,r_0084_0014__wonderful,attrib1).
@@ -412,7 +408,7 @@ arc(r_0084_0020__labyrinths,r_0084_0024__and,r_0084_0021__of).
 arc(r_0084_0023__alleys,r_0084_0022__narrow,attrib1).
 arc(r_0084_0024__and,r_0084_0023__alleys,conj1).
 arc(r_0084_0024__and,r_0084_0025__cul_de_sacs,conj2).
-arc(r_0084_0027__were,cnt_0084_1018,catenative).
+arc(r_0084_0027__were,r_0084_1018__cnt,catenative).
 arc(r_0084_0028__designed,r_0084_0020__labyrinths,arg1).
 arc(r_0084_0030__confuse,r_0084_0020__labyrinths,arg0).
 arc(r_0084_0030__confuse,r_0084_0034__invaders,arg1).
@@ -420,18 +416,22 @@ arc(r_0084_0031__and,r_0084_0030__confuse,conj1).
 arc(r_0084_0031__and,r_0084_0033__demoralize,conj2).
 arc(r_0084_0033__demoralize,r_0084_0020__labyrinths,arg0).
 arc(r_0084_0033__demoralize,r_0084_0034__invaders,arg1).
+arc(r_0084_1009__cnt,r_0084_0003__fortified,scope).
+arc(r_0084_1009__cnt,r_0084_0019__creating,restriction).
+arc(r_0084_1018__cnt,r_0084_0028__designed,scope).
+arc(r_0084_1018__cnt,r_0084_0031__and,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_84_A_ANC_HistoryOfGreece,axiom,
+fof(id__84_A_ANC_HistoryOfGreece,axiom,
     ? [EVENTX4,CATENATIVEX16,VENETIANSX3,CONNX10,EVENTX26,EVENTX25,CONNX19,CONJX23,EVENTX22,EVENTX21,EVENTX24,EVENTX27,EVENTX8,ENTITYX1,ENTITYX11,ENTITYX12,ENTITYX20,ENTITYX13,ENTITYX15,ENTITYX5,ENTITYX6,ATTRIBX14,ATTRIBX7,ATTRIBX2] :
       ( EVENTX4 = EVENTX8
       &amp; isA(EVENTX8,r_0084_0013__are)
       &amp; arg0(EVENTX8) = ENTITYX5
       &amp; prd2(EVENTX8) = ENTITYX6
       &amp; CATENATIVEX16 = CONNX19
-      &amp; isA(CONNX19,cnt_0084_1018)
+      &amp; isA(CONNX19,r_0084_1018__cnt)
       &amp; scope(CONNX19) = EVENTX24
       &amp; isA(EVENTX24,r_0084_0028__designed)
       &amp; arg1(EVENTX24) = ENTITYX11
@@ -449,8 +449,8 @@ fof(id_84_A_ANC_HistoryOfGreece,axiom,
       &amp; attrib1(ENTITYX1) = ATTRIBX2
       &amp; VENETIANSX3 = r_0084_0002__Venetians
       &amp; isA(ENTITYX5,r_0084_0010__and)
-      &amp; conj1(ENTITYX5) = r_0084_0008__Naxos_Town
-      &amp; conj2(ENTITYX5) = r_0084_0011__Antiparos_Town
+      &amp; conj1(ENTITYX5) = r_0084_0008__Naxos__r_0084_0009__Town
+      &amp; conj2(ENTITYX5) = r_0084_0011__Antiparos__r_0084_0012__Town
       &amp; isA(ENTITYX6,r_0084_0015__examples)
       &amp; attrib1(ENTITYX6) = ATTRIBX7
       &amp; r_0084_0016__of(ENTITYX6) = r_0084_0017__this
@@ -470,7 +470,7 @@ fof(id_84_A_ANC_HistoryOfGreece,axiom,
       &amp; genv(ATTRIBX2) = VENETIANSX3
       &amp; isA(ATTRIBX7,r_0084_0014__wonderful)
       &amp; isA(ATTRIBX14,r_0084_0022__narrow)
-      &amp; isA(CONNX10,cnt_0084_1009)
+      &amp; isA(CONNX10,r_0084_1009__cnt)
       &amp; scope(CONNX10) = EVENTX27
       &amp; isA(EVENTX27,r_0084_0003__fortified)
       &amp; arg0(EVENTX27) = r_0084_0002__Venetians

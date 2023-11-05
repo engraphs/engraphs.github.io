@@ -140,16 +140,16 @@ arc(r_0189_0004__stay,r_0189_0002__I,arg0).
 arc(r_0189_0004__stay,r_0189_0006__you,r_0189_0005__with_com).
 arc(r_0189_0004__stay,r_0189_0007__always,tmp5).
 arc(r_0189_0010__said,r_0189_0012__Swallow,arg0).
-arc(r_0189_0010__said,utterance_0189_1003,arg1).
-arc(utterance_0189_1003,r_0189_0003__will,part1).
+arc(r_0189_0010__said,r_0189_1003__utterance,arg1).
+arc(r_0189_1003__utterance,r_0189_0003__will,part1).
 
 </pre>
 <br>
 <pre>
-fof(id_189_A_WILDE_1_1888,axiom,
+fof(id__189_A_WILDE_1_1888,axiom,
     ? [STATEX1,EVENTX9,CONJX7,OPERATORX5,EVENTX6,ENTITYX8,QUALITYX4] :
       ( STATEX1 = CONJX7
-      &amp; isA(CONJX7,utterance_0189_1003)
+      &amp; isA(CONJX7,r_0189_1003__utterance)
       &amp; part1(CONJX7) = OPERATORX5
       &amp; isA(OPERATORX5,r_0189_0003__will)
       &amp; scope(OPERATORX5) = EVENTX6

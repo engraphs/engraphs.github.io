@@ -161,34 +161,34 @@ School safety patrols or school crossing guards and obey their directions .
 </svg>
 <br>
 <pre>
-arc(imperative_0037_1002,r_0037_0008__and,scope).
-arc(r_0037_0003__patrols,r_0037_0001__School_safety,nlyr1).
+arc(r_0037_0003__patrols,r_0037_0001__School__r_0037_0002__safety,nlyr1).
 arc(r_0037_0004__or,r_0037_0003__patrols,conj1).
 arc(r_0037_0004__or,r_0037_0007__guards,conj2).
-arc(r_0037_0007__guards,r_0037_0005__school_crossing,nlyr1).
+arc(r_0037_0007__guards,r_0037_0005__school__r_0037_0006__crossing,nlyr1).
 arc(r_0037_0008__and,r_0037_0009__obey,conj2).
 arc(r_0037_0008__and,z_0037_1009,conj1).
 arc(r_0037_0009__obey,r_0037_0011__directions,arg1).
 arc(r_0037_0011__directions,r_0037_0004__or,genv).
+arc(r_0037_1002__imperative,r_0037_0008__and,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_37_A_driver_handbook,axiom,
+fof(id__37_A_driver_handbook,axiom,
     ? [PATROLS_AND_GUARDSX12,OPERATORX2,CONJX14,EVENTX13,EVENTX10,ENTITYX11,PATROLS_AND_GUARDSX4,ENTITYX5,ENTITYX7,ENTITYX8,ENTITYX6] :
       ( isA(PATROLS_AND_GUARDSX4,r_0037_0004__or)
       &amp; conj1(PATROLS_AND_GUARDSX4) = ENTITYX5
       &amp; conj2(PATROLS_AND_GUARDSX4) = ENTITYX7
       &amp; isA(ENTITYX5,r_0037_0003__patrols)
       &amp; nlyr1(ENTITYX5) = ENTITYX6
-      &amp; isA(ENTITYX6,r_0037_0001__School_safety)
+      &amp; isA(ENTITYX6,r_0037_0001__School__r_0037_0002__safety)
       &amp; isA(ENTITYX7,r_0037_0007__guards)
       &amp; nlyr1(ENTITYX7) = ENTITYX8
-      &amp; isA(ENTITYX8,r_0037_0005__school_crossing)
+      &amp; isA(ENTITYX8,r_0037_0005__school__r_0037_0006__crossing)
       &amp; isA(ENTITYX11,r_0037_0011__directions)
       &amp; genv(ENTITYX11) = PATROLS_AND_GUARDSX12
       &amp; PATROLS_AND_GUARDSX12 = PATROLS_AND_GUARDSX4
-      &amp; isA(OPERATORX2,imperative_0037_1002)
+      &amp; isA(OPERATORX2,r_0037_1002__imperative)
       &amp; scope(OPERATORX2) = CONJX14
       &amp; isA(CONJX14,r_0037_0008__and)
       &amp; conj1(CONJX14) = EVENTX10

@@ -254,27 +254,27 @@ At the present time maximum sodium coolant temperatures are around 500 &lt;deg&g
 <br>
 <pre>
 arc(r_0016_0004__time,r_0016_0003__present,attrib2).
-arc(r_0016_0006__sodium_coolant_temperatures,r_0016_0005__maximum,attrib1).
+arc(r_0016_0006__sodium__r_0016_0007__coolant_r_0016_0008__temperatures,r_0016_0005__maximum,attrib1).
 arc(r_0016_0009__are,r_0016_0004__time,r_0016_0001__At_tmp).
-arc(r_0016_0009__are,r_0016_0006__sodium_coolant_temperatures,arg0).
-arc(r_0016_0009__are,r_0016_0011__500__deg__C,prd2).
-arc(r_0016_0011__500__deg__C,r_0016_0010__around,quality1).
+arc(r_0016_0009__are,r_0016_0006__sodium__r_0016_0007__coolant_r_0016_0008__temperatures,arg0).
+arc(r_0016_0009__are,r_0016_0011__500__r_0016_0012___deg__r_0016_0013__C,prd2).
+arc(r_0016_0011__500__r_0016_0012___deg__r_0016_0013__C,r_0016_0010__around,quality1).
 arc(r_0016_0014__and,r_0016_0009__are,conj1).
 arc(r_0016_0014__and,r_0016_0017__are,conj2).
 arc(r_0016_0017__are,r_0016_0004__time,r_0016_0001__At_tmp).
 arc(r_0016_0017__are,r_0016_0018__usually,catenative).
 arc(r_0016_0018__usually,r_0016_0019__intended,scope).
-arc(r_0016_0019__intended,r_0016_0015__oxygen_concentrations,arg2).
+arc(r_0016_0019__intended,r_0016_0015__oxygen__r_0016_0016__concentrations,arg2).
 arc(r_0016_0019__intended,r_0016_0021__be,arg1).
 arc(r_0016_0021__be,r_0016_0022__maintained,catenative).
-arc(r_0016_0022__maintained,r_0016_0015__oxygen_concentrations,arg1).
+arc(r_0016_0022__maintained,r_0016_0015__oxygen__r_0016_0016__concentrations,arg1).
 arc(r_0016_0022__maintained,r_0016_0025__range,r_0016_0023__in_loc).
 arc(r_0016_0025__range,r_0016_0026__1_10,prn3).
 
 </pre>
 <br>
 <pre>
-fof(id_16_A_lob_J01,axiom,
+fof(id__16_A_lob_J01,axiom,
     ? [CATENATIVEX8,STATEX11,CATENATIVEX12,CONJX20,EVENTX19,OPERATORX10,EVENTX18,EVENTX17,EVENTX16,EVENTX6,ENTITYX1,ENTITYX7,ENTITYX14,ENTITYX15,ENTITYX3,ATTRIBX4,ATTRIBX2,QUALITYX5] :
       ( CATENATIVEX8 = OPERATORX10
       &amp; isA(OPERATORX10,r_0016_0018__usually)
@@ -291,23 +291,23 @@ fof(id_16_A_lob_J01,axiom,
       &amp; r_0016_0023__in_loc(EVENTX16) = ENTITYX14
       &amp; isA(ENTITYX1,r_0016_0004__time)
       &amp; attrib2(ENTITYX1) = ATTRIBX2
-      &amp; isA(ENTITYX3,r_0016_0006__sodium_coolant_temperatures)
+      &amp; isA(ENTITYX3,r_0016_0006__sodium__r_0016_0007__coolant_r_0016_0008__temperatures)
       &amp; attrib1(ENTITYX3) = ATTRIBX4
-      &amp; isA(ENTITYX7,r_0016_0015__oxygen_concentrations)
+      &amp; isA(ENTITYX7,r_0016_0015__oxygen__r_0016_0016__concentrations)
       &amp; isA(ENTITYX14,r_0016_0025__range)
       &amp; prn3(ENTITYX14) = ENTITYX15
       &amp; isA(ENTITYX15,r_0016_0026__1_10)
       &amp; isA(ATTRIBX2,r_0016_0003__present)
       &amp; isA(ATTRIBX4,r_0016_0005__maximum)
       &amp; isA(QUALITYX5,r_0016_0010__around)
-      &amp; isA(r_0016_0011__500__deg__C,r_0016_0011__500__deg__C)
-      &amp; quality1(r_0016_0011__500__deg__C) = QUALITYX5
+      &amp; isA(r_0016_0011__500__r_0016_0012___deg__r_0016_0013__C,r_0016_0011__500_r_0016_0012___deg__r_0016_0013__C)
+      &amp; quality1(r_0016_0011__500__r_0016_0012___deg__r_0016_0013__C) = QUALITYX5
       &amp; isA(CONJX20,r_0016_0014__and)
       &amp; conj1(CONJX20) = EVENTX6
       &amp; isA(EVENTX6,r_0016_0009__are)
       &amp; r_0016_0001__At_tmp(EVENTX6) = ENTITYX1
       &amp; arg0(EVENTX6) = ENTITYX3
-      &amp; prd2(EVENTX6) = r_0016_0011__500__deg__C
+      &amp; prd2(EVENTX6) = r_0016_0011__500__r_0016_0012___deg__r_0016_0013__C
       &amp; conj2(CONJX20) = EVENTX19
       &amp; isA(EVENTX19,r_0016_0017__are)
       &amp; r_0016_0001__At_tmp(EVENTX19) = ENTITYX1

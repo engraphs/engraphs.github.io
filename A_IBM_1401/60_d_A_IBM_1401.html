@@ -84,18 +84,18 @@ Executive schools for management personnel .
 <br>
 <pre>
 arc(r_0082_0002__schools,r_0082_0001__Executive,attrib1).
-arc(r_0082_0002__schools,r_0082_0004__management_personnel,r_0082_0003__for).
+arc(r_0082_0002__schools,r_0082_0004__management__r_0082_0005__personnel,r_0082_0003__for).
 arc(z_0082_1006,r_0082_0002__schools,z_0082_1002).
 
 </pre>
 <br>
 <pre>
-fof(id_82_A_IBM_1401,axiom,
+fof(id__82_A_IBM_1401,axiom,
     ? [EVENTX7,ENTITYX3,ENTITYX5,ATTRIBX4] :
       ( isA(ENTITYX3,r_0082_0002__schools)
       &amp; attrib1(ENTITYX3) = ATTRIBX4
       &amp; r_0082_0003__for(ENTITYX3) = ENTITYX5
-      &amp; isA(ENTITYX5,r_0082_0004__management_personnel)
+      &amp; isA(ENTITYX5,r_0082_0004__management__r_0082_0005__personnel)
       &amp; isA(ATTRIBX4,r_0082_0001__Executive)
       &amp; isA(EVENTX7,z_0082_1006)
       &amp; z_0082_1002(EVENTX7) = ENTITYX3 ) ).

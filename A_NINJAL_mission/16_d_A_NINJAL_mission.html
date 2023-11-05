@@ -208,10 +208,8 @@ These scholars are also cooperating with local governments to preserve and revit
 </svg>
 <br>
 <pre>
-arc(cnt_0017_1006,r_0017_0005__cooperating,scope).
-arc(cnt_0017_1006,r_0017_0011__and,restriction).
 arc(r_0017_0003__are,r_0017_0004__also,catenative).
-arc(r_0017_0004__also,cnt_0017_1006,scope).
+arc(r_0017_0004__also,r_0017_1006__cnt,scope).
 arc(r_0017_0005__cooperating,r_0017_0002__scholars,arg0).
 arc(r_0017_0005__cooperating,r_0017_0008__governments,r_0017_0006__with_com).
 arc(r_0017_0008__governments,r_0017_0007__local,attrib1).
@@ -222,16 +220,18 @@ arc(r_0017_0011__and,r_0017_0012__revitalize,conj2).
 arc(r_0017_0012__revitalize,r_0017_0002__scholars,arg0).
 arc(r_0017_0012__revitalize,r_0017_0015__varieties,arg1).
 arc(r_0017_0014__disappearing,r_0017_0015__varieties,arg0).
+arc(r_0017_1006__cnt,r_0017_0005__cooperating,scope).
+arc(r_0017_1006__cnt,r_0017_0011__and,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_17_A_NINJAL_mission,axiom,
+fof(id__17_A_NINJAL_mission,axiom,
     ? [CATENATIVEX2,EVENTX14,OPERATORX3,CONNX7,CONJX12,EVENTX11,EVENTX10,EVENTX9,EVENTX13,ENTITYX1,ENTITYX4,ENTITYX8,ATTRIBX5] :
       ( CATENATIVEX2 = OPERATORX3
       &amp; isA(OPERATORX3,r_0017_0004__also)
       &amp; scope(OPERATORX3) = CONNX7
-      &amp; isA(CONNX7,cnt_0017_1006)
+      &amp; isA(CONNX7,r_0017_1006__cnt)
       &amp; scope(CONNX7) = EVENTX13
       &amp; isA(EVENTX13,r_0017_0005__cooperating)
       &amp; arg0(EVENTX13) = ENTITYX1

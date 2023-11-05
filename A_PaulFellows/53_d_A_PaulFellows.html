@@ -211,12 +211,12 @@ I want to talk a little about my friend Neil , sadly no longer with us .
 arc(r_0059_0002__want,r_0059_0001__I,arg0).
 arc(r_0059_0002__want,r_0059_0004__talk,arg1).
 arc(r_0059_0004__talk,r_0059_0001__I,arg0).
-arc(r_0059_0004__talk,r_0059_0009__friend_Neil,r_0059_0007__about_rst).
+arc(r_0059_0004__talk,r_0059_0009__friend__r_0059_0010__Neil,r_0059_0007__about_rst).
 arc(r_0059_0004__talk,z_0059_1004,mnr).
-arc(r_0059_0009__friend_Neil,r_0059_0001__I,genv).
-arc(r_0059_0009__friend_Neil,z_0059_1014,prn5).
-arc(r_0059_0013__quantificational__no,r_0059_0014__longer,scope).
-arc(r_0059_0013__quantificational__no,z_0059_1013,restriction).
+arc(r_0059_0009__friend__r_0059_0010__Neil,r_0059_0001__I,genv).
+arc(r_0059_0009__friend__r_0059_0010__Neil,z_0059_1014,prn5).
+arc(r_0059_0013__quantificational__r_0059_0013__no,r_0059_0014__longer,scope).
+arc(r_0059_0013__quantificational__r_0059_0013__no,z_0059_1013,restriction).
 arc(r_0059_0014__longer,z_0059_1013,modifier1).
 arc(z_0059_1004,r_0059_0006__little,attrib2).
 arc(z_0059_1014,r_0059_0012__sadly,mnr1).
@@ -226,13 +226,13 @@ arc(z_0059_1014,r_0059_0016__us,r_0059_0015__with_prd2).
 </pre>
 <br>
 <pre>
-fof(id_59_A_PaulFellows,axiom,
+fof(id__59_A_PaulFellows,axiom,
     ? [STATEX1,EVENTX6,SPEAKERX5,EVENTX17,EVENTX16,EVENTX15,QUANTX12,ENTITYX2,ENTITYX11,ATTRIBX3,QUALITYX9,QUALITYX10] :
       ( STATEX1 = EVENTX16
       &amp; isA(EVENTX16,r_0059_0004__talk)
       &amp; arg0(EVENTX16) = r_0059_0001__I
       &amp; mnr(EVENTX16) = ENTITYX2
-      &amp; r_0059_0007__about_rst(EVENTX16) = r_0059_0009__friend_Neil
+      &amp; r_0059_0007__about_rst(EVENTX16) = r_0059_0009__friend__r_0059_0010__Neil
       &amp; EVENTX6 = EVENTX15
       &amp; isA(EVENTX15,z_0059_1014)
       &amp; mnr1(EVENTX15) = QUALITYX9
@@ -241,12 +241,12 @@ fof(id_59_A_PaulFellows,axiom,
       &amp; isA(ENTITYX2,z_0059_1004)
       &amp; attrib2(ENTITYX2) = ATTRIBX3
       &amp; SPEAKERX5 = r_0059_0001__I
-      &amp; isA(r_0059_0009__friend_Neil,r_0059_0009__friend_Neil)
-      &amp; genv(r_0059_0009__friend_Neil) = SPEAKERX5
-      &amp; prn5(r_0059_0009__friend_Neil) = EVENTX6
+      &amp; isA(r_0059_0009__friend__r_0059_0010__Neil,r_0059_0009__friend_r_0059_0010__Neil)
+      &amp; genv(r_0059_0009__friend__r_0059_0010__Neil) = SPEAKERX5
+      &amp; prn5(r_0059_0009__friend__r_0059_0010__Neil) = EVENTX6
       &amp; isA(ATTRIBX3,r_0059_0006__little)
       &amp; isA(QUALITYX9,r_0059_0012__sadly)
-      &amp; isA(QUANTX12,r_0059_0013__quantificational__no)
+      &amp; isA(QUANTX12,r_0059_0013__quantificational__r_0059_0013__no)
       &amp; restriction(QUANTX12) = ENTITYX11
       &amp; isA(ENTITYX11,z_0059_1013)
       &amp; scope(QUANTX12) = QUALITYX10

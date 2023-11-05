@@ -122,17 +122,17 @@ Let 's go back to the ship and load up .
 </svg>
 <br>
 <pre>
-arc(imperative_0535_1002,r_0535_0001__Let,scope).
 arc(r_0535_0001__Let,r_0535_0002___apos_s,arg1).
 arc(r_0535_0001__Let,r_0535_0007__and,prd).
 arc(r_0535_0003__go,r_0535_0006__ship,r_0535_0004__back_to_clr_dir).
 arc(r_0535_0007__and,r_0535_0003__go,conj1).
-arc(r_0535_0007__and,r_0535_0008__load_up,conj2).
+arc(r_0535_0007__and,r_0535_0008__load__r_0535_0009__up,conj2).
+arc(r_0535_1002__imperative,r_0535_0001__Let,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_535_A_DICK_1952,axiom,
+fof(id__535_A_DICK_1952,axiom,
     ? [STATEX4,OPERATORX2,EVENTX11,CONJX10,EVENTX9,EVENTX8,ENTITYX7] :
       ( STATEX4 = CONJX10
       &amp; isA(CONJX10,r_0535_0007__and)
@@ -140,9 +140,9 @@ fof(id_535_A_DICK_1952,axiom,
       &amp; isA(EVENTX8,r_0535_0003__go)
       &amp; r_0535_0004__back_to_clr_dir(EVENTX8) = ENTITYX7
       &amp; conj2(CONJX10) = EVENTX9
-      &amp; isA(EVENTX9,r_0535_0008__load_up)
+      &amp; isA(EVENTX9,r_0535_0008__load__r_0535_0009__up)
       &amp; isA(ENTITYX7,r_0535_0006__ship)
-      &amp; isA(OPERATORX2,imperative_0535_1002)
+      &amp; isA(OPERATORX2,r_0535_1002__imperative)
       &amp; scope(OPERATORX2) = EVENTX11
       &amp; isA(EVENTX11,r_0535_0001__Let)
       &amp; arg1(EVENTX11) = r_0535_0002___apos_s

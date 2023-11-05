@@ -155,8 +155,6 @@ The conference will meet to discuss the function of a proposed House of Chiefs .
 </svg>
 <br>
 <pre>
-arc(cnt_0026_1002,r_0026_0003__will,scope).
-arc(cnt_0026_1002,r_0026_0006__discuss,restriction).
 arc(r_0026_0003__will,r_0026_0004__meet,scope).
 arc(r_0026_0004__meet,r_0026_0002__conference,arg0).
 arc(r_0026_0006__discuss,r_0026_0002__conference,arg0).
@@ -164,11 +162,13 @@ arc(r_0026_0006__discuss,r_0026_0008__function,arg1).
 arc(r_0026_0008__function,r_0026_0012__House,r_0026_0009__of).
 arc(r_0026_0012__House,r_0026_0011__proposed,attrib2).
 arc(r_0026_0012__House,r_0026_0014__Chiefs,r_0026_0013__of).
+arc(r_0026_1002__cnt,r_0026_0003__will,scope).
+arc(r_0026_1002__cnt,r_0026_0006__discuss,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_26_A_lob_A01,axiom,
+fof(id__26_A_lob_A01,axiom,
     ? [CONNX3,EVENTX8,OPERATORX9,EVENTX10,ENTITYX1,ENTITYX4,ENTITYX5,ENTITYX7,ATTRIBX6] :
       ( isA(ENTITYX1,r_0026_0002__conference)
       &amp; isA(ENTITYX4,r_0026_0008__function)
@@ -178,7 +178,7 @@ fof(id_26_A_lob_A01,axiom,
       &amp; r_0026_0013__of(ENTITYX5) = ENTITYX7
       &amp; isA(ENTITYX7,r_0026_0014__Chiefs)
       &amp; isA(ATTRIBX6,r_0026_0011__proposed)
-      &amp; isA(CONNX3,cnt_0026_1002)
+      &amp; isA(CONNX3,r_0026_1002__cnt)
       &amp; scope(CONNX3) = OPERATORX9
       &amp; isA(OPERATORX9,r_0026_0003__will)
       &amp; scope(OPERATORX9) = EVENTX10

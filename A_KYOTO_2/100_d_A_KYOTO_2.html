@@ -97,21 +97,21 @@ Head temple is Hoko-ji in Inasa Town , Kita-ku , Hamamatsu City .
 </svg>
 <br>
 <pre>
-arc(r_0108_0003__is,r_0108_0001__Head_temple,arg0).
+arc(r_0108_0003__is,r_0108_0001__Head__r_0108_0002__temple,arg0).
 arc(r_0108_0003__is,r_0108_0004__Hoko_ji,prd2).
-arc(r_0108_0004__Hoko_ji,r_0108_0006__Inasa_Town_Hamamatsu_City,r_0108_0005__in).
-arc(r_0108_0006__Inasa_Town_Hamamatsu_City,r_0108_0009__Kita_ku,prn4).
+arc(r_0108_0004__Hoko_ji,r_0108_0006__Inasa__r_0108_0007__Town_r_0108_0011__Hamamatsu_r_0108_0012__City,r_0108_0005__in).
+arc(r_0108_0006__Inasa__r_0108_0007__Town_r_0108_0011__Hamamatsu_r_0108_0012__City,r_0108_0009__Kita_ku,prn4).
 
 </pre>
 <br>
 <pre>
-fof(id_108_A_KYOTO_2,axiom,
+fof(id__108_A_KYOTO_2,axiom,
     ? [EVENTX2,ENTITYX1] :
-      ( isA(ENTITYX1,r_0108_0001__Head_temple)
+      ( isA(ENTITYX1,r_0108_0001__Head__r_0108_0002__temple)
       &amp; isA(r_0108_0004__Hoko_ji,r_0108_0004__Hoko_ji)
-      &amp; r_0108_0005__in(r_0108_0004__Hoko_ji) = r_0108_0006__Inasa_Town_Hamamatsu_City
-      &amp; isA(r_0108_0006__Inasa_Town_Hamamatsu_City,r_0108_0006__Inasa_Town_Hamamatsu_City)
-      &amp; prn4(r_0108_0006__Inasa_Town_Hamamatsu_City) = r_0108_0009__Kita_ku
+      &amp; r_0108_0005__in(r_0108_0004__Hoko_ji) = r_0108_0006__Inasa__r_0108_0007__Town_r_0108_0011__Hamamatsu_r_0108_0012__City
+      &amp; isA(r_0108_0006__Inasa__r_0108_0007__Town_r_0108_0011__Hamamatsu_r_0108_0012__City,r_0108_0006__Inasa_r_0108_0007__Town_r_0108_0011__Hamamatsu_r_0108_0012__City)
+      &amp; prn4(r_0108_0006__Inasa__r_0108_0007__Town_r_0108_0011__Hamamatsu_r_0108_0012__City) = r_0108_0009__Kita_ku
       &amp; isA(EVENTX2,r_0108_0003__is)
       &amp; arg0(EVENTX2) = ENTITYX1
       &amp; prd2(EVENTX2) = r_0108_0004__Hoko_ji ) ).

@@ -139,25 +139,25 @@
 arc(r_0089_0003__bully,r_0089_0005__that,r_0089_0004__like).
 arc(r_0089_0006__respects,r_0089_0003__bully,arg0).
 arc(r_0089_0006__respects,z_0089_1008,arg1).
-arc(r_0089_0007__quantificational__anyone,r_0089_0006__respects,scope).
-arc(r_0089_0007__quantificational__anyone,z_0089_1008,restriction).
-arc(r_0089_0009__dares,r_0089_0011__stand_up,catenative).
-arc(r_0089_0011__stand_up,r_0089_0003__bully,r_0089_0013__to_clr).
-arc(r_0089_0011__stand_up,z_0089_1008,arg0).
+arc(r_0089_0007__quantificational__r_0089_0007__anyone,r_0089_0006__respects,scope).
+arc(r_0089_0007__quantificational__r_0089_0007__anyone,z_0089_1008,restriction).
+arc(r_0089_0009__dares,r_0089_0011__stand__r_0089_0012__up,catenative).
+arc(r_0089_0011__stand__r_0089_0012__up,r_0089_0003__bully,r_0089_0013__to_clr).
+arc(r_0089_0011__stand__r_0089_0012__up,z_0089_1008,arg0).
 
 </pre>
 <br>
 <pre>
-fof(id_89_A_lob_N02,axiom,
+fof(id__89_A_lob_N02,axiom,
     ? [STATEX4,BULLYX5,QUANTX3,EVENTX9,EVENTX7,EVENTX6,BULLYX1,ENTITYX2] :
       ( STATEX4 = EVENTX6
-      &amp; isA(EVENTX6,r_0089_0011__stand_up)
+      &amp; isA(EVENTX6,r_0089_0011__stand__r_0089_0012__up)
       &amp; arg0(EVENTX6) = ENTITYX2
       &amp; r_0089_0013__to_clr(EVENTX6) = BULLYX5
       &amp; isA(BULLYX1,r_0089_0003__bully)
       &amp; r_0089_0004__like(BULLYX1) = r_0089_0005__that
       &amp; BULLYX5 = BULLYX1
-      &amp; isA(QUANTX3,r_0089_0007__quantificational__anyone)
+      &amp; isA(QUANTX3,r_0089_0007__quantificational__r_0089_0007__anyone)
       &amp; isA(EVENTX7,r_0089_0009__dares)
       &amp; catenative(EVENTX7) = STATEX4
       &amp; isA(ENTITYX2,z_0089_1008)

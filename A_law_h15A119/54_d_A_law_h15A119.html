@@ -692,8 +692,6 @@ In order to support the measures for the protection of personal information form
 </svg>
 <br>
 <pre>
-arc(cnt_0054_1014,r_0054_0021__performed,scope).
-arc(cnt_0054_1014,r_0054_0030__ensure,restriction).
 arc(r_0054_0001__In_order_cnt,r_0054_0003__support,restriction).
 arc(r_0054_0001__In_order_cnt,r_0054_0040__shall,scope).
 arc(r_0054_0003__support,r_0054_0005__measures,arg1).
@@ -702,16 +700,16 @@ arc(r_0054_0005__measures,r_0054_0008__protection,r_0054_0006__for).
 arc(r_0054_0008__protection,r_0054_0011__information,r_0054_0009__of).
 arc(r_0054_0011__information,r_0054_0010__personal,attrib1).
 arc(r_0054_0012__formulated,r_0054_0011__information,arg1).
-arc(r_0054_0012__formulated,r_0054_0018__and,arg0_by_lgs).
+arc(r_0054_0012__formulated,r_0054_0018__and,arg0__r_0054_0015__by_lgs).
 arc(r_0054_0013__or,r_0054_0012__formulated,conj1).
 arc(r_0054_0013__or,r_0054_0014__implemented,conj2).
 arc(r_0054_0014__implemented,r_0054_0011__information,arg1).
-arc(r_0054_0014__implemented,r_0054_0018__and,arg0_by_lgs).
+arc(r_0054_0014__implemented,r_0054_0018__and,arg0__r_0054_0015__by_lgs).
 arc(r_0054_0017__governments,r_0054_0016__local,attrib1).
 arc(r_0054_0018__and,r_0054_0017__governments,conj1).
 arc(r_0054_0018__and,r_0054_0020__activities,conj2).
 arc(r_0054_0021__performed,r_0054_0020__activities,arg1).
-arc(r_0054_0021__performed,r_0054_0027__and,arg0_by_lgs).
+arc(r_0054_0021__performed,r_0054_0027__and,arg0__r_0054_0022__by_lgs).
 arc(r_0054_0027__and,r_0054_0023__citizens,conj1).
 arc(r_0054_0027__and,r_0054_0025__entities,conj2).
 arc(r_0054_0027__and,r_0054_0028__others,conj3).
@@ -733,27 +731,29 @@ arc(r_0054_0052__implementation,r_0054_0050__and,attrib2).
 arc(r_0054_0052__implementation,r_0054_0054__measures,r_0054_0053__of).
 arc(r_0054_0056__be,r_0054_0057__taken,catenative).
 arc(r_0054_0057__taken,r_0054_0054__measures,arg1).
-arc(r_0054_0057__taken,r_0054_0060__and,arg0_by_lgs).
+arc(r_0054_0057__taken,r_0054_0060__and,arg0__r_0054_0058__by_lgs).
 arc(r_0054_0060__and,r_0054_0059__entities,conj1).
 arc(r_0054_0060__and,r_0054_0061__others,conj2).
 arc(r_0054_0063__and,r_0054_0041__provide,conj1).
 arc(r_0054_0063__and,r_0054_0044__formulate,conj2).
-arc(r_0054_0063__and,r_0054_0065__quantificational__any,conj3).
+arc(r_0054_0063__and,r_0054_0065__quantificational__r_0054_0065__any,conj3).
 arc(r_0054_0064__take,r_0054_0039__State,arg0).
 arc(r_0054_0064__take,r_0054_0068__measures,arg1).
-arc(r_0054_0065__quantificational__any,r_0054_0064__take,scope).
-arc(r_0054_0065__quantificational__any,r_0054_0068__measures,restriction).
+arc(r_0054_0065__quantificational__r_0054_0065__any,r_0054_0064__take,scope).
+arc(r_0054_0065__quantificational__r_0054_0065__any,r_0054_0068__measures,restriction).
 arc(r_0054_0068__measures,r_0054_0066__other,attrib2).
 arc(r_0054_0068__measures,r_0054_0067__necessary,attrib3).
+arc(r_0054_1014__cnt,r_0054_0021__performed,scope).
+arc(r_0054_1014__cnt,r_0054_0030__ensure,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_54_A_law_h15A119,axiom,
+fof(id__54_A_law_h15A119,axiom,
     ? [CATENATIVEX35,CONNX1,OPERATORX26,CONJX48,QUANTX44,EVENTX47,EVENTX42,EVENTX41,EVENTX40,EVENTX39,EVENTX28,EVENTX25,CONJX24,EVENTX23,EVENTX22,CONNX15,EVENTX20,EVENTX21,ENTITYX43,ENTITYX29,ENTITYX30,ENTITYX34,ENTITYX36,ENTITYX37,ENTITYX38,ENTITYX27,ENTITYX2,ENTITYX3,ENTITYX4,ENTITYX6,ENTITYX7,ENTITYX9,ENTITYX10,ENTITYX16,ENTITYX18,ENTITYX11,ENTITYX12,ENTITYX13,ATTRIBX45,ATTRIBX46,ATTRIBX31,ATTRIBX32,ATTRIBX33,ATTRIBX5,ATTRIBX17,ATTRIBX19,ATTRIBX8] :
       ( CATENATIVEX35 = EVENTX39
       &amp; isA(EVENTX39,r_0054_0057__taken)
-      &amp; arg0_by_lgs(EVENTX39) = ENTITYX36
+      &amp; arg0__r_0054_0058__by_lgs(EVENTX39) = ENTITYX36
       &amp; arg1(EVENTX39) = ENTITYX34
       &amp; isA(ENTITYX2,r_0054_0005__measures)
       &amp; r_0054_0006__for(ENTITYX2) = ENTITYX3
@@ -762,11 +762,11 @@ fof(id_54_A_law_h15A119,axiom,
       &amp; isA(CONJX24,r_0054_0013__or)
       &amp; conj1(CONJX24) = EVENTX22
       &amp; isA(EVENTX22,r_0054_0012__formulated)
-      &amp; arg0_by_lgs(EVENTX22) = ENTITYX6
+      &amp; arg0__r_0054_0015__by_lgs(EVENTX22) = ENTITYX6
       &amp; arg1(EVENTX22) = ENTITYX4
       &amp; conj2(CONJX24) = EVENTX23
       &amp; isA(EVENTX23,r_0054_0014__implemented)
-      &amp; arg0_by_lgs(EVENTX23) = ENTITYX6
+      &amp; arg0__r_0054_0015__by_lgs(EVENTX23) = ENTITYX6
       &amp; arg1(EVENTX23) = ENTITYX4
       &amp; isA(ENTITYX4,r_0054_0011__information)
       &amp; attrib1(ENTITYX4) = ATTRIBX5
@@ -775,10 +775,10 @@ fof(id_54_A_law_h15A119,axiom,
       &amp; conj2(ENTITYX6) = ENTITYX9
       &amp; isA(ENTITYX7,r_0054_0017__governments)
       &amp; attrib1(ENTITYX7) = ATTRIBX8
-      &amp; isA(CONNX15,cnt_0054_1014)
+      &amp; isA(CONNX15,r_0054_1014__cnt)
       &amp; scope(CONNX15) = EVENTX21
       &amp; isA(EVENTX21,r_0054_0021__performed)
-      &amp; arg0_by_lgs(EVENTX21) = ENTITYX10
+      &amp; arg0__r_0054_0022__by_lgs(EVENTX21) = ENTITYX10
       &amp; arg1(EVENTX21) = ENTITYX9
       &amp; restriction(CONNX15) = EVENTX20
       &amp; isA(EVENTX20,r_0054_0030__ensure)
@@ -843,7 +843,7 @@ fof(id_54_A_law_h15A119,axiom,
       &amp; arg0(EVENTX42) = r_0054_0039__State
       &amp; arg1(EVENTX42) = ENTITYX29
       &amp; conj3(CONJX48) = QUANTX44
-      &amp; isA(QUANTX44,r_0054_0065__quantificational__any)
+      &amp; isA(QUANTX44,r_0054_0065__quantificational__r_0054_0065__any)
       &amp; restriction(QUANTX44) = ENTITYX43
       &amp; isA(ENTITYX43,r_0054_0068__measures)
       &amp; attrib2(ENTITYX43) = ATTRIBX45

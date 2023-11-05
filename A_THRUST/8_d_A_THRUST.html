@@ -197,27 +197,27 @@ Accurate shooting from your spaceship will destroy the limpet guns .
 </svg>
 <br>
 <pre>
-arc(r_0018_0002__Limpet_Guns,r_0018_0001__Automatic,attrib1).
-arc(r_0019_0003__are,r_0018_0002__Limpet_Guns,arg0).
-arc(r_0019_0003__are,r_0019_0007__defence_system,prd2).
-arc(r_0019_0007__defence_system,r_0019_0005__planets,genv).
+arc(r_0018_0002__Limpet__r_0018_0003__Guns,r_0018_0001__Automatic,attrib1).
+arc(r_0019_0003__are,r_0018_0002__Limpet__r_0018_0003__Guns,arg0).
+arc(r_0019_0003__are,r_0019_0007__defence__r_0019_0008__system,prd2).
+arc(r_0019_0007__defence__r_0019_0008__system,r_0019_0005__planets,genv).
 arc(r_0020_0002__shooting,r_0020_0001__Accurate,attrib1).
 arc(r_0020_0002__shooting,r_0020_0005__spaceship,r_0020_0003__from).
 arc(r_0020_0005__spaceship,r_0020_0004__your,genv).
 arc(r_0020_0006__will,r_0020_0007__destroy,scope).
-arc(r_0020_0007__destroy,r_0018_0002__Limpet_Guns,arg1).
+arc(r_0020_0007__destroy,r_0018_0002__Limpet__r_0018_0003__Guns,arg1).
 arc(r_0020_0007__destroy,r_0020_0002__shooting,arg0).
-arc(z_0018_1007,r_0018_0002__Limpet_Guns,z_0018_1004).
+arc(z_0018_1007,r_0018_0002__Limpet__r_0018_0003__Guns,z_0018_1004).
 
 </pre>
 <br>
 <pre>
-fof(id_18_A_THRUST__19_A_THRUST__20_A_THRUST,axiom,
+fof(id__18_A_THRUST__19_A_THRUST__20_A_THRUST,axiom,
     ? [LIMPETX9,LIMPETX16,OPERATORX17,EVENTX18,EVENTX12,EVENTX8,ENTITYX13,ENTITYX15,ENTITYX10,PLANETX11,LIMPETX5,ATTRIBX14,ATTRIBX6] :
-      ( isA(LIMPETX5,r_0018_0002__Limpet_Guns)
+      ( isA(LIMPETX5,r_0018_0002__Limpet__r_0018_0003__Guns)
       &amp; attrib1(LIMPETX5) = ATTRIBX6
       &amp; LIMPETX9 = LIMPETX5
-      &amp; isA(ENTITYX10,r_0019_0007__defence_system)
+      &amp; isA(ENTITYX10,r_0019_0007__defence__r_0019_0008__system)
       &amp; genv(ENTITYX10) = PLANETX11
       &amp; isA(PLANETX11,r_0019_0005__planets)
       &amp; isA(ENTITYX13,r_0020_0002__shooting)

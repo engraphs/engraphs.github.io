@@ -480,20 +480,18 @@ The only way to catch an electronic thief , he said , is to set him up with erro
 </svg>
 <br>
 <pre>
-arc(abs_0009_1013,r_0009_0019__said,scope).
-arc(abs_0009_1013,r_0009_0021__adding,restriction).
 arc(r_0009_0003__can,r_0009_0004__have,scope).
 arc(r_0009_0004__have,r_0009_0002__You,arg0).
-arc(r_0009_0004__have,r_0009_0006__dozen_competitors,arg1).
+arc(r_0009_0004__have,r_0009_0006__dozen__r_0009_0007__competitors,arg1).
 arc(r_0009_0004__have,r_0009_0014__time,r_0009_0011__at_tmp).
-arc(r_0009_0008__stealing,r_0009_0006__dozen_competitors,arg0).
+arc(r_0009_0008__stealing,r_0009_0006__dozen__r_0009_0007__competitors,arg0).
 arc(r_0009_0008__stealing,r_0009_0010__secrets,arg1).
 arc(r_0009_0010__secrets,r_0009_0002__You,genv).
 arc(r_0009_0014__time,r_0009_0013__same,attrib2).
-arc(r_0009_0019__said,r_0009_0017__Mr._Matchett,arg0).
-arc(r_0009_0019__said,utterance_0009_1003,arg1).
-arc(r_0009_0021__adding,r_0009_0017__Mr._Matchett,arg0).
-arc(r_0009_0021__adding,utterance_0009_1017,arg1).
+arc(r_0009_0019__said,r_0009_0017__Mr__r_0009_0018__Matchett,arg0).
+arc(r_0009_0019__said,r_0009_1003__utterance,arg1).
+arc(r_0009_0021__adding,r_0009_0017__Mr__r_0009_0018__Matchett,arg0).
+arc(r_0009_0021__adding,r_0009_1017__utterance,arg1).
 arc(r_0009_0025___apos_s,r_0009_0029__bet,prd2).
 arc(r_0009_0025___apos_s,r_0009_0031__wo,arg0).
 arc(r_0009_0028__good,r_0009_0027__pretty,quality1).
@@ -501,28 +499,30 @@ arc(r_0009_0029__bet,r_0009_0028__good,attrib2).
 arc(r_0009_0031__wo,r_0009_0032__n_apos_t,scope).
 arc(r_0009_0032__n_apos_t,r_0009_0033__get,scope).
 arc(r_0009_0033__get,r_0009_0034__caught,catenative).
-arc(r_0009_0034__caught,r_0009_0006__dozen_competitors,arg1).
+arc(r_0009_0034__caught,r_0009_0006__dozen__r_0009_0007__competitors,arg1).
+arc(r_0009_1003__utterance,r_0009_0003__can,part1).
+arc(r_0009_1013__abs,r_0009_0019__said,scope).
+arc(r_0009_1013__abs,r_0009_0021__adding,restriction).
+arc(r_0009_1017__utterance,r_0009_0025___apos_s,part1).
 arc(r_0010_0003__way,r_0010_0002__only,attrib2).
 arc(r_0010_0003__way,r_0010_0005__catch,emb4).
 arc(r_0010_0005__catch,r_0010_0008__thief,arg1).
 arc(r_0010_0008__thief,r_0010_0007__electronic,attrib2).
-arc(r_0010_0011__said,r_0009_0017__Mr._Matchett,arg0).
+arc(r_0010_0011__said,r_0009_0017__Mr__r_0009_0018__Matchett,arg0).
 arc(r_0010_0013__is,r_0010_0003__way,arg0).
 arc(r_0010_0013__is,r_0010_0011__said,prn3).
-arc(r_0010_0013__is,r_0010_0015__set_up,prd2).
-arc(r_0010_0015__set_up,r_0010_0008__thief,arg1).
-arc(r_0010_0015__set_up,r_0010_0020__information,r_0010_0018__with_mnr).
+arc(r_0010_0013__is,r_0010_0015__set__r_0010_0017__up,prd2).
+arc(r_0010_0015__set__r_0010_0017__up,r_0010_0008__thief,arg1).
+arc(r_0010_0015__set__r_0010_0017__up,r_0010_0020__information,r_0010_0018__with_mnr).
 arc(r_0010_0020__information,r_0010_0019__erroneous,attrib1).
-arc(utterance_0009_1003,r_0009_0003__can,part1).
-arc(utterance_0009_1017,r_0009_0025___apos_s,part1).
 
 </pre>
 <br>
 <pre>
-fof(id_9_A_ANC_wsj_1640__10_A_ANC_wsj_1640,axiom,
+fof(id__9_A_ANC_wsj_1640__10_A_ANC_wsj_1640,axiom,
     ? [STATEX1,STATEX15,STATEX22,CATENATIVEX26,STATEX36,EVENTX42,STATEX45,GENERICX6,COMPETITORSX23,MATCHETTX43,THIEFX48,EVENTX52,EVENTX51,EVENTX44,EVENTX41,CONNX14,EVENTX32,CONJX31,EVENTX30,OPERATORX24,OPERATORX25,EVENTX29,EVENTX28,EVENTX33,CONJX12,OPERATORX10,EVENTX11,EVENTX7,ENTITYX34,ENTITYX49,THIEFX39,ENTITYX19,COMPETITORSX4,ENTITYX8,ENTITYX5,ATTRIBX50,ATTRIBX35,ATTRIBX40,ATTRIBX20,ATTRIBX9,QUALITYX21] :
       ( STATEX1 = CONJX12
-      &amp; isA(CONJX12,utterance_0009_1003)
+      &amp; isA(CONJX12,r_0009_1003__utterance)
       &amp; part1(CONJX12) = OPERATORX10
       &amp; isA(OPERATORX10,r_0009_0003__can)
       &amp; scope(OPERATORX10) = EVENTX11
@@ -531,7 +531,7 @@ fof(id_9_A_ANC_wsj_1640__10_A_ANC_wsj_1640,axiom,
       &amp; arg1(EVENTX11) = COMPETITORSX4
       &amp; r_0009_0011__at_tmp(EVENTX11) = ENTITYX8
       &amp; STATEX15 = CONJX31
-      &amp; isA(CONJX31,utterance_0009_1017)
+      &amp; isA(CONJX31,r_0009_1017__utterance)
       &amp; part1(CONJX31) = EVENTX30
       &amp; isA(EVENTX30,r_0009_0025___apos_s)
       &amp; arg0(EVENTX30) = STATEX22
@@ -554,13 +554,13 @@ fof(id_9_A_ANC_wsj_1640__10_A_ANC_wsj_1640,axiom,
       &amp; isA(EVENTX44,r_0010_0011__said)
       &amp; arg0(EVENTX44) = MATCHETTX43
       &amp; STATEX45 = EVENTX51
-      &amp; isA(EVENTX51,r_0010_0015__set_up)
+      &amp; isA(EVENTX51,r_0010_0015__set__r_0010_0017__up)
       &amp; arg1(EVENTX51) = THIEFX48
       &amp; r_0010_0018__with_mnr(EVENTX51) = ENTITYX49
       &amp; isA(EVENTX7,r_0009_0008__stealing)
       &amp; arg0(EVENTX7) = COMPETITORSX4
       &amp; arg1(EVENTX7) = ENTITYX5
-      &amp; isA(COMPETITORSX4,r_0009_0006__dozen_competitors)
+      &amp; isA(COMPETITORSX4,r_0009_0006__dozen__r_0009_0007__competitors)
       &amp; isA(ENTITYX5,r_0009_0010__secrets)
       &amp; genv(ENTITYX5) = GENERICX6
       &amp; GENERICX6 = r_0009_0002__You
@@ -574,7 +574,7 @@ fof(id_9_A_ANC_wsj_1640__10_A_ANC_wsj_1640,axiom,
       &amp; emb4(ENTITYX34) = STATEX36
       &amp; isA(THIEFX39,r_0010_0008__thief)
       &amp; attrib2(THIEFX39) = ATTRIBX40
-      &amp; MATCHETTX43 = r_0009_0017__Mr._Matchett
+      &amp; MATCHETTX43 = r_0009_0017__Mr__r_0009_0018__Matchett
       &amp; THIEFX48 = THIEFX39
       &amp; isA(ENTITYX49,r_0010_0020__information)
       &amp; attrib1(ENTITYX49) = ATTRIBX50
@@ -585,14 +585,14 @@ fof(id_9_A_ANC_wsj_1640__10_A_ANC_wsj_1640,axiom,
       &amp; isA(ATTRIBX40,r_0010_0007__electronic)
       &amp; isA(ATTRIBX50,r_0010_0019__erroneous)
       &amp; isA(QUALITYX21,r_0009_0027__pretty)
-      &amp; isA(CONNX14,abs_0009_1013)
+      &amp; isA(CONNX14,r_0009_1013__abs)
       &amp; scope(CONNX14) = EVENTX33
       &amp; isA(EVENTX33,r_0009_0019__said)
       &amp; arg1(EVENTX33) = STATEX1
-      &amp; arg0(EVENTX33) = r_0009_0017__Mr._Matchett
+      &amp; arg0(EVENTX33) = r_0009_0017__Mr__r_0009_0018__Matchett
       &amp; restriction(CONNX14) = EVENTX32
       &amp; isA(EVENTX32,r_0009_0021__adding)
-      &amp; arg0(EVENTX32) = r_0009_0017__Mr._Matchett
+      &amp; arg0(EVENTX32) = r_0009_0017__Mr__r_0009_0018__Matchett
       &amp; arg1(EVENTX32) = STATEX15
       &amp; isA(EVENTX52,r_0010_0013__is)
       &amp; arg0(EVENTX52) = ENTITYX34

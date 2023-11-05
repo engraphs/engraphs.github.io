@@ -175,30 +175,30 @@ Transfer to four 200 ml polythene bottles , centrifuge , decant and discard each
 </svg>
 <br>
 <pre>
-arc(imperative_0095_1002,r_0095_0014__quantificational__each,scope).
-arc(r_0095_0001__Transfer,r_0095_0003__four_polythene_bottles,r_0095_0002__to_clr).
-arc(r_0095_0003__four_polythene_bottles,r_0095_0004__200_ml,nlyr2).
+arc(r_0095_0001__Transfer,r_0095_0003__four__r_0095_0006__polythene_r_0095_0007__bottles,r_0095_0002__to_clr).
+arc(r_0095_0003__four__r_0095_0006__polythene_r_0095_0007__bottles,r_0095_0004__200_r_0095_0005__ml,nlyr2).
 arc(r_0095_0009__centrifuge,r_0095_0015__supernate,arg1).
 arc(r_0095_0011__decant,r_0095_0015__supernate,arg1).
 arc(r_0095_0012__and,r_0095_0009__centrifuge,conj1).
 arc(r_0095_0012__and,r_0095_0011__decant,conj2).
 arc(r_0095_0012__and,r_0095_0013__discard,conj3).
 arc(r_0095_0013__discard,r_0095_0015__supernate,arg1).
-arc(r_0095_0014__quantificational__each,r_0095_0012__and,scope).
-arc(r_0095_0014__quantificational__each,r_0095_0015__supernate,restriction).
+arc(r_0095_0014__quantificational__r_0095_0014__each,r_0095_0012__and,scope).
+arc(r_0095_0014__quantificational__r_0095_0014__each,r_0095_0015__supernate,restriction).
+arc(r_0095_1002__imperative,r_0095_0014__quantificational__r_0095_0014__each,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_95_A_lob_J01,axiom,
+fof(id__95_A_lob_J01,axiom,
     ? [OPERATORX2,QUANTX8,CONJX12,EVENTX11,EVENTX10,EVENTX9,EVENTX6,ENTITYX7,ENTITYX4,ENTITYX5] :
-      ( isA(ENTITYX4,r_0095_0003__four_polythene_bottles)
+      ( isA(ENTITYX4,r_0095_0003__four__r_0095_0006__polythene_r_0095_0007__bottles)
       &amp; nlyr2(ENTITYX4) = ENTITYX5
-      &amp; isA(ENTITYX5,r_0095_0004__200_ml)
-      &amp; isA(OPERATORX2,imperative_0095_1002)
+      &amp; isA(ENTITYX5,r_0095_0004__200__r_0095_0005__ml)
+      &amp; isA(OPERATORX2,r_0095_1002__imperative)
       &amp; isA(EVENTX6,r_0095_0001__Transfer)
       &amp; r_0095_0002__to_clr(EVENTX6) = ENTITYX4
-      &amp; isA(QUANTX8,r_0095_0014__quantificational__each)
+      &amp; isA(QUANTX8,r_0095_0014__quantificational__r_0095_0014__each)
       &amp; restriction(QUANTX8) = ENTITYX7
       &amp; isA(ENTITYX7,r_0095_0015__supernate)
       &amp; scope(QUANTX8) = CONJX12

@@ -200,7 +200,7 @@ We can not speculate , in the absence of further evidence , upon what such reaso
 <title>0052_0019&#45;&gt;0052_0014</title>
 <path fill="none" stroke="black" d="M234.38,-174.48C231.53,-168.72 228.46,-162.15 226,-156 222.98,-148.47 220.13,-140.13 217.69,-132.46"/>
 <polygon fill="black" stroke="black" points="221.03,-131.41 214.75,-122.88 214.34,-133.46 221.03,-131.41"/>
-<text text-anchor="middle" x="247.5" y="-144.8" font-family="fixed" font-size="14.00">[arg1]</text>
+<text text-anchor="middle" x="247.5" y="-144.8" font-family="fixed" font-size="14.00">[prd2]</text>
 </g>
 <!-- 0052_0019&#45;&gt;0052_0016 -->
 <g id="edge12" class="edge">
@@ -213,27 +213,27 @@ We can not speculate , in the absence of further evidence , upon what such reaso
 </svg>
 <br>
 <pre>
-arc(question_0052_1006,r_0052_0017__might,scope).
 arc(r_0052_0002__can,r_0052_0003__not,scope).
 arc(r_0052_0003__not,r_0052_0004__speculate,scope).
-arc(r_0052_0004__speculate,question_0052_1006,r_0052_0013__upon_clr).
 arc(r_0052_0004__speculate,r_0052_0001__We,arg0).
 arc(r_0052_0004__speculate,r_0052_0008__absence,r_0052_0006__in_mod).
+arc(r_0052_0004__speculate,r_0052_1006__question,r_0052_0013__upon_clr).
 arc(r_0052_0008__absence,r_0052_0011__evidence,r_0052_0009__of).
 arc(r_0052_0011__evidence,r_0052_0010__further,attrib1).
 arc(r_0052_0016__reasons,r_0052_0015__such,attrib1).
 arc(r_0052_0017__might,r_0052_0018__have,scope).
 arc(r_0052_0018__have,r_0052_0019__been,catenative).
-arc(r_0052_0019__been,r_0052_0014__what,arg1).
+arc(r_0052_0019__been,r_0052_0014__what,prd2).
 arc(r_0052_0019__been,r_0052_0016__reasons,arg0).
+arc(r_0052_1006__question,r_0052_0017__might,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_52_A_uksc_judgment,axiom,
+fof(id__52_A_uksc_judgment,axiom,
     ? [EVENTX4,CATENATIVEX11,OPERATORX14,OPERATORX15,EVENTX16,OPERATORX6,OPERATORX10,EVENTX13,EVENTX12,ENTITYX1,ENTITYX7,ENTITYX8,ENTITYX2,ATTRIBX9,ATTRIBX3] :
       ( EVENTX4 = OPERATORX6
-      &amp; isA(OPERATORX6,question_0052_1006)
+      &amp; isA(OPERATORX6,r_0052_1006__question)
       &amp; scope(OPERATORX6) = OPERATORX10
       &amp; isA(OPERATORX10,r_0052_0017__might)
       &amp; scope(OPERATORX10) = EVENTX13
@@ -242,7 +242,7 @@ fof(id_52_A_uksc_judgment,axiom,
       &amp; CATENATIVEX11 = EVENTX12
       &amp; isA(EVENTX12,r_0052_0019__been)
       &amp; arg0(EVENTX12) = ENTITYX8
-      &amp; arg1(EVENTX12) = ENTITYX7
+      &amp; prd2(EVENTX12) = ENTITYX7
       &amp; isA(ENTITYX1,r_0052_0008__absence)
       &amp; r_0052_0009__of(ENTITYX1) = ENTITYX2
       &amp; isA(ENTITYX2,r_0052_0011__evidence)
@@ -360,13 +360,13 @@ fof(id_52_A_uksc_judgment,axiom,
 <line x1="2101.2" y1="305" x2="2101.2" y2="336" style="stroke:#000000;stroke-width:2;"/>
 <line x1="1980.72" y1="244" x2="2100" y2="275" style="stroke:#000000;stroke-width:2;"/>
 <text x="2281.2" y="295" text-anchor="middle">IP-PPL-CAT</text>
-<text x="2221.08" y="356" text-anchor="middle">NP-OB1</text>
+<text x="2221.08" y="356" text-anchor="middle">NP-PRD2</text>
 <text x="2221.08" y="417" text-anchor="middle">*ICH*-212</text>
 <line x1="2221.08" y1="366" x2="2221.08" y2="397" style="stroke:#000000;stroke-width:2;"/>
 <line x1="2281.2" y1="305" x2="2220" y2="336" style="stroke:#000000;stroke-width:2;"/>
-<text x="2340.48" y="356" text-anchor="middle">BEN</text>
-<text x="2340.48" y="417" text-anchor="middle">been</text>
-<line x1="2340.48" y1="366" x2="2340.48" y2="397" style="stroke:#000000;stroke-width:2;"/>
+<text x="2340.84" y="356" text-anchor="middle">BEN;~Ln</text>
+<text x="2340.84" y="417" text-anchor="middle">been</text>
+<line x1="2340.84" y1="366" x2="2340.84" y2="397" style="stroke:#000000;stroke-width:2;"/>
 <line x1="2281.2" y1="305" x2="2340" y2="336" style="stroke:#000000;stroke-width:2;"/>
 <line x1="1980.72" y1="244" x2="2280" y2="275" style="stroke:#000000;stroke-width:2;"/>
 <line x1="1980.72" y1="183" x2="1980" y2="214" style="stroke:#000000;stroke-width:2;"/>
@@ -397,8 +397,8 @@ fof(id_52_A_uksc_judgment,axiom,
                                           (NS reasons;{reason}))
                                   (MD might;{may})
                                   (HV;~cat_Ve have;{have})
-                                  (IP-PPL-CAT (NP-OB1 *ICH*-212)
-                                              (BEN been;{be})))))
+                                  (IP-PPL-CAT (NP-PRD2 *ICH*-212)
+                                              (BEN;~Ln been;{be})))))
           (PUNC .))
   (ID 52_A_uksc_judgment))
 </pre>

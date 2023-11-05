@@ -427,8 +427,6 @@ And he said , &ldquo; Yeah , why ? Was that wrong ? &rdquo;
 </svg>
 <br>
 <pre>
-arc(question_0068_1022,z_0068_1025,scope).
-arc(question_0068_1036,r_0069_0010__Was,scope).
 arc(r_0068_0002__were,r_0068_0003__sitting,catenative).
 arc(r_0068_0003__sitting,r_0068_0001__We,arg0).
 arc(r_0068_0003__sitting,r_0068_0004__there,loc2).
@@ -447,11 +445,13 @@ arc(r_0068_0016__talked,r_0068_0021__afterward,tmp4).
 arc(r_0068_0020__boy,r_0068_0019__little,attrib2).
 arc(r_0068_0022__and,r_0068_0016__talked,conj1).
 arc(r_0068_0022__and,r_0068_0024__said,conj2).
-arc(r_0068_0024__said,question_0068_1022,arg1).
 arc(r_0068_0024__said,r_0068_0001__We,arg0).
+arc(r_0068_0024__said,r_0068_1022__question,arg1).
 arc(r_0068_0028__OK,r_0068_0030__that,r_0068_0029__with).
-arc(r_0069_0003__said,question_0068_1036,arg1).
+arc(r_0068_1022__question,z_0068_1025,scope).
+arc(r_0068_1036__question,r_0069_0010__Was,scope).
 arc(r_0069_0003__said,r_0068_0020__boy,arg0).
+arc(r_0069_0003__said,r_0068_1036__question,arg1).
 arc(r_0069_0008__why,z_0068_1038,scope).
 arc(r_0069_0010__Was,r_0069_0011__that,arg0).
 arc(r_0069_0010__Was,r_0069_0012__wrong,prd2).
@@ -461,7 +461,7 @@ arc(z_0068_1025,r_0068_0028__OK,prd).
 </pre>
 <br>
 <pre>
-fof(id_68_A_TED_talk_11__69_A_TED_talk_11,axiom,
+fof(id__68_A_TED_talk_11__69_A_TED_talk_11,axiom,
     ? [CATENATIVEX3,STATEX7,STATEX20,STATEX32,SPEAKER_AND_HEARERX14,SPEAKER_AND_HEARERX19,KING2X23,KING2X31,EVENTX42,OPERATORX36,EVENTX41,OPERATORX37,EVENTX39,CONJX30,CONNX11,CONJX28,EVENTX27,OPERATORX22,EVENTX26,EVENTX18,EVENTX29,OPERATORX8,EVENTX10,EVENTX6,EVENTX5,KING2X15,ENTITYX9,QUALITYX17,QUALITYX4,ATTRIBX40,ATTRIBX24,ATTRIBX16] :
       ( CATENATIVEX3 = EVENTX5
       &amp; isA(EVENTX5,r_0068_0003__sitting)
@@ -474,13 +474,13 @@ fof(id_68_A_TED_talk_11__69_A_TED_talk_11,axiom,
       &amp; arg0(EVENTX10) = r_0068_0008__they
       &amp; r_0068_0011__out_of_dir(EVENTX10) = ENTITYX9
       &amp; STATEX20 = OPERATORX22
-      &amp; isA(OPERATORX22,question_0068_1022)
+      &amp; isA(OPERATORX22,r_0068_1022__question)
       &amp; scope(OPERATORX22) = EVENTX26
       &amp; isA(EVENTX26,z_0068_1025)
       &amp; arg0(EVENTX26) = KING2X23
       &amp; prd(EVENTX26) = ATTRIBX24
       &amp; STATEX32 = OPERATORX36
-      &amp; isA(OPERATORX36,question_0068_1036)
+      &amp; isA(OPERATORX36,r_0068_1036__question)
       &amp; isA(OPERATORX37,r_0069_0008__why)
       &amp; scope(OPERATORX37) = EVENTX39
       &amp; isA(EVENTX39,z_0068_1038)

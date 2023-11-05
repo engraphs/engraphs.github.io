@@ -260,20 +260,20 @@
 </svg>
 <br>
 <pre>
-arc(r_0118_0007__handling,r_0118_0005__business_operator,arg0).
+arc(r_0118_0007__handling,r_0118_0005__business__r_0118_0006__operator,arg0).
 arc(r_0118_0007__handling,r_0118_0009__information,arg1).
 arc(r_0118_0009__information,r_0118_0008__personal,attrib1).
 arc(r_0118_0010__shall,r_0118_0011__not,scope).
 arc(r_0118_0011__not,r_0118_0026__without_cnt,scope).
 arc(r_0118_0017__cases,r_0118_0016__following,attrib2).
-arc(r_0118_0019__provide,r_0118_0005__business_operator,arg0).
-arc(r_0118_0019__provide,r_0118_0017__cases,r_0118_0013__except_in_mod).
+arc(r_0118_0019__provide,r_0118_0005__business__r_0118_0006__operator,arg0).
+arc(r_0118_0019__provide,r_0118_0017__cases,r_0118_0013__except__r_0118_0014__in_mod).
 arc(r_0118_0019__provide,r_0118_0021__data,arg1).
-arc(r_0118_0019__provide,r_0118_0024__third_party,r_0118_0022__to_clr).
+arc(r_0118_0019__provide,r_0118_0024__third__r_0118_0025__party,r_0118_0022__to_clr).
 arc(r_0118_0021__data,r_0118_0020__personal,attrib1).
 arc(r_0118_0026__without_cnt,r_0118_0019__provide,scope).
 arc(r_0118_0026__without_cnt,r_0118_0027__obtaining,restriction).
-arc(r_0118_0027__obtaining,r_0118_0005__business_operator,arg0).
+arc(r_0118_0027__obtaining,r_0118_0005__business__r_0118_0006__operator,arg0).
 arc(r_0118_0027__obtaining,r_0118_0030__consent,arg1).
 arc(r_0118_0030__consent,r_0118_0029__prior,attrib2).
 arc(r_0118_0030__consent,r_0118_0033__person,r_0118_0031__of).
@@ -281,19 +281,19 @@ arc(r_0118_0030__consent,r_0118_0033__person,r_0118_0031__of).
 </pre>
 <br>
 <pre>
-fof(id_118_A_law_h15A119,axiom,
+fof(id__118_A_law_h15A119,axiom,
     ? [OPERATORX10,OPERATORX11,CONNX12,EVENTX16,EVENTX17,EVENTX4,ENTITYX1,ENTITYX5,ENTITYX7,ENTITYX9,ENTITYX13,ENTITYX15,ENTITYX2,ATTRIBX14,ATTRIBX8,ATTRIBX6,ATTRIBX3] :
       ( isA(EVENTX4,r_0118_0007__handling)
       &amp; arg0(EVENTX4) = ENTITYX1
       &amp; arg1(EVENTX4) = ENTITYX2
-      &amp; isA(ENTITYX1,r_0118_0005__business_operator)
+      &amp; isA(ENTITYX1,r_0118_0005__business__r_0118_0006__operator)
       &amp; isA(ENTITYX2,r_0118_0009__information)
       &amp; attrib1(ENTITYX2) = ATTRIBX3
       &amp; isA(ENTITYX5,r_0118_0017__cases)
       &amp; attrib2(ENTITYX5) = ATTRIBX6
       &amp; isA(ENTITYX7,r_0118_0021__data)
       &amp; attrib1(ENTITYX7) = ATTRIBX8
-      &amp; isA(ENTITYX9,r_0118_0024__third_party)
+      &amp; isA(ENTITYX9,r_0118_0024__third__r_0118_0025__party)
       &amp; isA(ENTITYX13,r_0118_0030__consent)
       &amp; attrib2(ENTITYX13) = ATTRIBX14
       &amp; r_0118_0031__of(ENTITYX13) = ENTITYX15
@@ -310,7 +310,7 @@ fof(id_118_A_law_h15A119,axiom,
       &amp; scope(CONNX12) = EVENTX17
       &amp; isA(EVENTX17,r_0118_0019__provide)
       &amp; arg0(EVENTX17) = ENTITYX1
-      &amp; r_0118_0013__except_in_mod(EVENTX17) = ENTITYX5
+      &amp; r_0118_0013__except__r_0118_0014__in_mod(EVENTX17) = ENTITYX5
       &amp; arg1(EVENTX17) = ENTITYX7
       &amp; r_0118_0022__to_clr(EVENTX17) = ENTITYX9
       &amp; restriction(CONNX12) = EVENTX16

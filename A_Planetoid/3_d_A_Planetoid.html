@@ -207,18 +207,18 @@ arc(r_0005_0005__seen,r_0005_0002__raiders,arg2).
 arc(r_0005_0005__seen,r_0005_0006__hovering,arg1).
 arc(r_0005_0006__hovering,r_0005_0002__raiders,arg0).
 arc(r_0005_0006__hovering,r_0005_0009__surface,r_0005_0007__around_dir).
-arc(r_0005_0006__hovering,r_0005_0012__look_out,r_0005_0010__on_mnr).
-arc(r_0005_0012__look_out,r_0005_0016__life_forms,r_0005_0015__for).
+arc(r_0005_0006__hovering,r_0005_0012__look__r_0005_0014__out,r_0005_0010__on_mnr).
+arc(r_0005_0012__look__r_0005_0014__out,r_0005_0016__life_r_0005_0018__forms,r_0005_0015__for).
 arc(r_0005_0022__can,r_0005_0023__drag,scope).
 arc(r_0005_0023__drag,r_0005_0002__raiders,arg0).
-arc(r_0005_0023__drag,r_0005_0016__life_forms,arg1).
+arc(r_0005_0023__drag,r_0005_0016__life__r_0005_0018__forms,arg1).
 arc(r_0005_0023__drag,r_0005_0024__off,clr_dir5).
 arc(r_0005_0024__off,r_0005_0026__space,r_0005_0025__into).
 
 </pre>
 <br>
 <pre>
-fof(id_5_A_Planetoid,axiom,
+fof(id__5_A_Planetoid,axiom,
     ? [CATENATIVEX3,STATEX5,RAIDERSX9,OPERATORX2,EVENTX16,EVENTX15,EVENTX14,OPERATORX12,EVENTX13,RAIDERSX1,ENTITYX6,ENTITYX7,ENTITYX8,ENTITYX11,QUALITYX10] :
       ( CATENATIVEX3 = EVENTX15
       &amp; isA(EVENTX15,r_0005_0005__seen)
@@ -231,7 +231,7 @@ fof(id_5_A_Planetoid,axiom,
       &amp; r_0005_0010__on_mnr(EVENTX14) = ENTITYX7
       &amp; isA(RAIDERSX1,r_0005_0002__raiders)
       &amp; isA(ENTITYX6,r_0005_0009__surface)
-      &amp; isA(ENTITYX7,r_0005_0012__look_out)
+      &amp; isA(ENTITYX7,r_0005_0012__look__r_0005_0014__out)
       &amp; r_0005_0015__for(ENTITYX7) = ENTITYX8
       &amp; isA(OPERATORX12,r_0005_0022__can)
       &amp; scope(OPERATORX12) = EVENTX13
@@ -239,7 +239,7 @@ fof(id_5_A_Planetoid,axiom,
       &amp; arg1(EVENTX13) = ENTITYX8
       &amp; arg0(EVENTX13) = RAIDERSX9
       &amp; clr_dir5(EVENTX13) = QUALITYX10
-      &amp; isA(ENTITYX8,r_0005_0016__life_forms)
+      &amp; isA(ENTITYX8,r_0005_0016__life__r_0005_0018__forms)
       &amp; RAIDERSX9 = RAIDERSX1
       &amp; isA(ENTITYX11,r_0005_0026__space)
       &amp; isA(QUALITYX10,r_0005_0024__off)

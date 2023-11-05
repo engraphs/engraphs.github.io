@@ -103,19 +103,19 @@ Dorle peered out , frowning .
 </svg>
 <br>
 <pre>
-arc(abs_0093_1002,r_0093_0002__peered,scope).
-arc(abs_0093_1002,r_0093_0005__frowning,restriction).
 arc(r_0093_0002__peered,r_0093_0001__Dorle,arg0).
 arc(r_0093_0002__peered,r_0093_0003__out,clr_dir3).
 arc(r_0093_0005__frowning,r_0093_0001__Dorle,arg0).
+arc(r_0093_1002__abs,r_0093_0002__peered,scope).
+arc(r_0093_1002__abs,r_0093_0005__frowning,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_93_A_DICK_1952,axiom,
+fof(id__93_A_DICK_1952,axiom,
     ? [CONNX3,EVENTX4,EVENTX5,QUALITYX1] :
       ( isA(QUALITYX1,r_0093_0003__out)
-      &amp; isA(CONNX3,abs_0093_1002)
+      &amp; isA(CONNX3,r_0093_1002__abs)
       &amp; scope(CONNX3) = EVENTX5
       &amp; isA(EVENTX5,r_0093_0002__peered)
       &amp; arg0(EVENTX5) = r_0093_0001__Dorle

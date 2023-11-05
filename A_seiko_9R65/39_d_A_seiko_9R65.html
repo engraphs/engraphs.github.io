@@ -238,13 +238,13 @@ This generates small electricity in the coil to drive the IC and crystal oscilla
 </svg>
 <br>
 <pre>
-arc(cnt_0049_1011,r_0050_0002__generates,scope).
-arc(cnt_0049_1011,r_0050_0009__drive,restriction).
 arc(r_0049_0002__unwinding,r_0049_0003__power,arg0).
 arc(r_0049_0003__power,r_0049_0006__mainspring,r_0049_0004__of).
 arc(r_0049_0007__also,r_0049_0008__rotates,scope).
 arc(r_0049_0008__rotates,r_0049_0003__power,arg0).
-arc(r_0049_0008__rotates,r_0049_0010__glide_wheel,arg1).
+arc(r_0049_0008__rotates,r_0049_0010__glide__r_0049_0011__wheel,arg1).
+arc(r_0049_1011__cnt,r_0050_0002__generates,scope).
+arc(r_0049_1011__cnt,r_0050_0009__drive,restriction).
 arc(r_0050_0002__generates,r_0049_0003__power,arg0).
 arc(r_0050_0002__generates,r_0050_0004__electricity,arg1).
 arc(r_0050_0002__generates,r_0050_0007__coil,r_0050_0005__in_loc).
@@ -252,19 +252,19 @@ arc(r_0050_0004__electricity,r_0050_0003__small,attrib1).
 arc(r_0050_0009__drive,r_0050_0004__electricity,arg0).
 arc(r_0050_0009__drive,r_0050_0012__and,arg1).
 arc(r_0050_0012__and,r_0050_0011__IC,conj1).
-arc(r_0050_0012__and,r_0050_0013__crystal_oscillator,conj2).
+arc(r_0050_0012__and,r_0050_0013__crystal__r_0050_0014__oscillator,conj2).
 
 </pre>
 <br>
 <pre>
-fof(id_49_A_seiko_9R65__50_A_seiko_9R65,axiom,
+fof(id__49_A_seiko_9R65__50_A_seiko_9R65,axiom,
     ? [POWER_OF_MAINSPRINGX7,CONNX12,EVENTX16,EVENTX17,OPERATORX4,EVENTX6,EVENTX2,ENTITYX8,ENTITYX10,ENTITYX13,ENTITYX14,ENTITYX15,POWER_OF_MAINSPRINGX1,GLIDE_WHEELX5,ENTITYX3,ATTRIBX9] :
       ( isA(EVENTX2,r_0049_0002__unwinding)
       &amp; arg0(EVENTX2) = POWER_OF_MAINSPRINGX1
       &amp; isA(POWER_OF_MAINSPRINGX1,r_0049_0003__power)
       &amp; r_0049_0004__of(POWER_OF_MAINSPRINGX1) = ENTITYX3
       &amp; isA(ENTITYX3,r_0049_0006__mainspring)
-      &amp; isA(GLIDE_WHEELX5,r_0049_0010__glide_wheel)
+      &amp; isA(GLIDE_WHEELX5,r_0049_0010__glide__r_0049_0011__wheel)
       &amp; POWER_OF_MAINSPRINGX7 = POWER_OF_MAINSPRINGX1
       &amp; isA(ENTITYX8,r_0050_0004__electricity)
       &amp; attrib1(ENTITYX8) = ATTRIBX9
@@ -273,14 +273,14 @@ fof(id_49_A_seiko_9R65__50_A_seiko_9R65,axiom,
       &amp; conj1(ENTITYX13) = ENTITYX14
       &amp; conj2(ENTITYX13) = ENTITYX15
       &amp; isA(ENTITYX14,r_0050_0011__IC)
-      &amp; isA(ENTITYX15,r_0050_0013__crystal_oscillator)
+      &amp; isA(ENTITYX15,r_0050_0013__crystal__r_0050_0014__oscillator)
       &amp; isA(ATTRIBX9,r_0050_0003__small)
       &amp; isA(OPERATORX4,r_0049_0007__also)
       &amp; scope(OPERATORX4) = EVENTX6
       &amp; isA(EVENTX6,r_0049_0008__rotates)
       &amp; arg0(EVENTX6) = POWER_OF_MAINSPRINGX1
       &amp; arg1(EVENTX6) = GLIDE_WHEELX5
-      &amp; isA(CONNX12,cnt_0049_1011)
+      &amp; isA(CONNX12,r_0049_1011__cnt)
       &amp; scope(CONNX12) = EVENTX17
       &amp; isA(EVENTX17,r_0050_0002__generates)
       &amp; arg0(EVENTX17) = POWER_OF_MAINSPRINGX7

@@ -226,28 +226,28 @@ Whether such an apparatus can be incorporated in a reactor circuit in a manner t
 </svg>
 <br>
 <pre>
-arc(question_0070_1003,r_0070_0005__can,scope).
 arc(r_0070_0004__apparatus,r_0070_0002__such,attrib1).
 arc(r_0070_0005__can,r_0070_0006__be,scope).
 arc(r_0070_0006__be,r_0070_0007__incorporated,catenative).
 arc(r_0070_0007__incorporated,r_0070_0004__apparatus,arg1).
-arc(r_0070_0007__incorporated,r_0070_0010__reactor_circuit,r_0070_0008__in_loc).
+arc(r_0070_0007__incorporated,r_0070_0010__reactor__r_0070_0011__circuit,r_0070_0008__in_loc).
 arc(r_0070_0007__incorporated,r_0070_0014__manner,r_0070_0012__in_mnr).
 arc(r_0070_0016__will,r_0070_0017__satisfy,scope).
 arc(r_0070_0017__satisfy,r_0070_0014__manner,arg0).
-arc(r_0070_0017__satisfy,r_0070_0018__safety_requirements,arg1).
+arc(r_0070_0017__satisfy,r_0070_0018__safety__r_0070_0019__requirements,arg1).
 arc(r_0070_0020__will,r_0070_0021__need,scope).
-arc(r_0070_0021__need,question_0070_1003,arg0).
 arc(r_0070_0021__need,r_0070_0023__study,arg1).
+arc(r_0070_0021__need,r_0070_1003__question,arg0).
 arc(r_0070_0023__study,r_0070_0022__further,attrib1).
+arc(r_0070_1003__question,r_0070_0005__can,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_70_A_lob_J01,axiom,
+fof(id__70_A_lob_J01,axiom,
     ? [STATEX1,CATENATIVEX7,OPERATORX18,EVENTX19,OPERATORX3,OPERATORX6,EVENTX15,EVENTX14,OPERATORX12,EVENTX13,ENTITYX16,ENTITYX4,ENTITYX9,ENTITYX10,ENTITYX11,ATTRIBX17,ATTRIBX5] :
       ( STATEX1 = OPERATORX3
-      &amp; isA(OPERATORX3,question_0070_1003)
+      &amp; isA(OPERATORX3,r_0070_1003__question)
       &amp; scope(OPERATORX3) = OPERATORX6
       &amp; isA(OPERATORX6,r_0070_0005__can)
       &amp; scope(OPERATORX6) = EVENTX15
@@ -260,14 +260,14 @@ fof(id_70_A_lob_J01,axiom,
       &amp; r_0070_0012__in_mnr(EVENTX14) = ENTITYX10
       &amp; isA(ENTITYX4,r_0070_0004__apparatus)
       &amp; attrib1(ENTITYX4) = ATTRIBX5
-      &amp; isA(ENTITYX9,r_0070_0010__reactor_circuit)
+      &amp; isA(ENTITYX9,r_0070_0010__reactor__r_0070_0011__circuit)
       &amp; isA(OPERATORX12,r_0070_0016__will)
       &amp; scope(OPERATORX12) = EVENTX13
       &amp; isA(EVENTX13,r_0070_0017__satisfy)
       &amp; arg0(EVENTX13) = ENTITYX10
       &amp; arg1(EVENTX13) = ENTITYX11
       &amp; isA(ENTITYX10,r_0070_0014__manner)
-      &amp; isA(ENTITYX11,r_0070_0018__safety_requirements)
+      &amp; isA(ENTITYX11,r_0070_0018__safety__r_0070_0019__requirements)
       &amp; isA(ENTITYX16,r_0070_0023__study)
       &amp; attrib1(ENTITYX16) = ATTRIBX17
       &amp; isA(ATTRIBX5,r_0070_0002__such)

@@ -343,19 +343,19 @@ They eventually reached the islands , and founded colonies on the islands in the
 </svg>
 <br>
 <pre>
-arc(cnt_0004_1008,r_0004_0007__set_out,scope).
-arc(cnt_0004_1008,r_0004_0015__explore,restriction).
 arc(r_0004_0002__7000,r_0004_0001__Around,quality1).
-arc(r_0004_0002__7000,r_0004_0003__b.c.,quality3).
-arc(r_0004_0007__set_out,r_0004_0002__7000,tmp).
-arc(r_0004_0007__set_out,r_0004_0006__Phoenicians,arg0).
-arc(r_0004_0007__set_out,z_0004_1007,r_0004_0009__from_clr_loc).
+arc(r_0004_0002__7000,r_0004_0003__b_c_,quality3).
+arc(r_0004_0007__set__r_0004_0008__out,r_0004_0002__7000,tmp).
+arc(r_0004_0007__set__r_0004_0008__out,r_0004_0006__Phoenicians,arg0).
+arc(r_0004_0007__set__r_0004_0008__out,z_0004_1007,r_0004_0009__from_clr_loc).
 arc(r_0004_0011__is,r_0004_0012__now,tmp3).
 arc(r_0004_0011__is,r_0004_0013__Iran,prd2).
 arc(r_0004_0011__is,z_0004_1007,arg0).
 arc(r_0004_0015__explore,r_0004_0006__Phoenicians,arg0).
 arc(r_0004_0015__explore,r_0004_0017__surroundings,arg1).
 arc(r_0004_0017__surroundings,r_0004_0006__Phoenicians,genv).
+arc(r_0004_1008__cnt,r_0004_0007__set__r_0004_0008__out,scope).
+arc(r_0004_1008__cnt,r_0004_0015__explore,restriction).
 arc(r_0005_0003__reached,r_0004_0006__Phoenicians,arg0).
 arc(r_0005_0003__reached,r_0005_0002__eventually,tmp1).
 arc(r_0005_0003__reached,r_0005_0005__islands,arg1).
@@ -366,12 +366,12 @@ arc(r_0005_0008__founded,r_0005_0009__colonies,arg1).
 arc(r_0005_0009__colonies,r_0005_0012__islands,r_0005_0010__on).
 arc(r_0005_0012__islands,r_0005_0016__part,r_0005_0013__in).
 arc(r_0005_0016__part,r_0005_0015__northernmost,attrib2).
-arc(r_0005_0016__part,r_0005_0019__Aegean_Sea,r_0005_0017__of).
+arc(r_0005_0016__part,r_0005_0019__Aegean__r_0005_0020__Sea,r_0005_0017__of).
 
 </pre>
 <br>
 <pre>
-fof(id_4_A_ANC_HistoryOfGreece__5_A_ANC_HistoryOfGreece,axiom,
+fof(id__4_A_ANC_HistoryOfGreece__5_A_ANC_HistoryOfGreece,axiom,
     ? [PHOENICIANSX11,PHOENICIANSX14,CONJX23,EVENTX22,EVENTX17,CONNX9,EVENTX12,EVENTX13,EVENTX6,ENTITYX18,ENTITYX19,ENTITYX20,ENTITYX16,ENTITYX1,ENTITYX4,ENTITYX10,QUALITYX15,QUALITYX5,QUALITYX2,QUALITYX3,ATTRIBX21] :
       ( isA(ENTITYX1,r_0004_0002__7000)
       &amp; quality1(ENTITYX1) = QUALITYX2
@@ -392,17 +392,17 @@ fof(id_4_A_ANC_HistoryOfGreece__5_A_ANC_HistoryOfGreece,axiom,
       &amp; r_0005_0013__in(ENTITYX19) = ENTITYX20
       &amp; isA(ENTITYX20,r_0005_0016__part)
       &amp; attrib2(ENTITYX20) = ATTRIBX21
-      &amp; r_0005_0017__of(ENTITYX20) = r_0005_0019__Aegean_Sea
+      &amp; r_0005_0017__of(ENTITYX20) = r_0005_0019__Aegean__r_0005_0020__Sea
       &amp; isA(QUALITYX2,r_0004_0001__Around)
-      &amp; isA(QUALITYX3,r_0004_0003__b.c.)
+      &amp; isA(QUALITYX3,r_0004_0003__b_c_)
       &amp; isA(QUALITYX5,r_0004_0012__now)
       &amp; isA(QUALITYX15,r_0005_0002__eventually)
       &amp; isA(r_0004_0006__Phoenicians,r_0004_0006__Phoenicians)
-      &amp; isA(r_0005_0019__Aegean_Sea,r_0005_0019__Aegean_Sea)
+      &amp; isA(r_0005_0019__Aegean__r_0005_0020__Sea,r_0005_0019__Aegean_r_0005_0020__Sea)
       &amp; isA(ATTRIBX21,r_0005_0015__northernmost)
-      &amp; isA(CONNX9,cnt_0004_1008)
+      &amp; isA(CONNX9,r_0004_1008__cnt)
       &amp; scope(CONNX9) = EVENTX13
-      &amp; isA(EVENTX13,r_0004_0007__set_out)
+      &amp; isA(EVENTX13,r_0004_0007__set__r_0004_0008__out)
       &amp; tmp(EVENTX13) = ENTITYX1
       &amp; arg0(EVENTX13) = r_0004_0006__Phoenicians
       &amp; r_0004_0009__from_clr_loc(EVENTX13) = ENTITYX4

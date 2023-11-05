@@ -247,9 +247,7 @@ In a BBC wildlife poll , hedgehogs were chosen as the best natural emblem for th
 </svg>
 <br>
 <pre>
-arc(cnt_0010_1003,r_0010_0008__were,scope).
-arc(cnt_0010_1003,r_0010_0020__beating,restriction).
-arc(r_0010_0008__were,r_0010_0003__BBC_wildlife_poll,r_0010_0001__In_loc).
+arc(r_0010_0008__were,r_0010_0003__BBC__r_0010_0004__wildlife_r_0010_0005__poll,r_0010_0001__In_loc).
 arc(r_0010_0008__were,r_0010_0009__chosen,catenative).
 arc(r_0010_0009__chosen,r_0010_0007__hedgehogs,arg1).
 arc(r_0010_0009__chosen,r_0010_0014__emblem,r_0010_0010__as_prd).
@@ -263,17 +261,19 @@ arc(r_0010_0023__badger,r_0010_0022__charismatic,attrib2).
 arc(r_0010_0024__and,r_0010_0023__badger,conj1).
 arc(r_0010_0024__and,r_0010_0027__oak,conj2).
 arc(r_0010_0027__oak,r_0010_0026__sturdy,attrib2).
+arc(r_0010_1003__cnt,r_0010_0008__were,scope).
+arc(r_0010_1003__cnt,r_0010_0020__beating,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_10_A_Hedgehog,axiom,
+fof(id__10_A_Hedgehog,axiom,
     ? [CATENATIVEX11,CONNX4,EVENTX10,EVENTX19,EVENTX18,ENTITYX1,ENTITYX2,ENTITYX5,ENTITYX6,ENTITYX8,ENTITYX13,ENTITYX16,ATTRIBX9,ATTRIBX7,ATTRIBX14,ATTRIBX15,ATTRIBX17] :
       ( CATENATIVEX11 = EVENTX18
       &amp; isA(EVENTX18,r_0010_0009__chosen)
       &amp; arg1(EVENTX18) = ENTITYX2
       &amp; r_0010_0010__as_prd(EVENTX18) = ENTITYX13
-      &amp; isA(ENTITYX1,r_0010_0003__BBC_wildlife_poll)
+      &amp; isA(ENTITYX1,r_0010_0003__BBC__r_0010_0004__wildlife_r_0010_0005__poll)
       &amp; isA(ENTITYX2,r_0010_0007__hedgehogs)
       &amp; isA(ENTITYX13,r_0010_0014__emblem)
       &amp; attrib2(ENTITYX13) = ATTRIBX14
@@ -293,7 +293,7 @@ fof(id_10_A_Hedgehog,axiom,
       &amp; isA(ATTRIBX17,r_0010_0017__British)
       &amp; isA(ATTRIBX7,r_0010_0022__charismatic)
       &amp; isA(ATTRIBX9,r_0010_0026__sturdy)
-      &amp; isA(CONNX4,cnt_0010_1003)
+      &amp; isA(CONNX4,r_0010_1003__cnt)
       &amp; scope(CONNX4) = EVENTX19
       &amp; isA(EVENTX19,r_0010_0008__were)
       &amp; r_0010_0001__In_loc(EVENTX19) = ENTITYX1

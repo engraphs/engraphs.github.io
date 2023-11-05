@@ -235,31 +235,31 @@ Equation ( 5 ) indicates that any voltage fluctuation arising from a sudden smal
 <pre>
 arc(r_0022_0001__Equation,r_0022_0003__5,prn3).
 arc(r_0022_0005__indicates,r_0022_0001__Equation,arg0).
-arc(r_0022_0005__indicates,r_0022_0007__quantificational__any,arg1).
-arc(r_0022_0007__quantificational__any,r_0022_0008__voltage_fluctuation,restriction).
-arc(r_0022_0007__quantificational__any,r_0022_0017__will,scope).
-arc(r_0022_0010__arising,r_0022_0008__voltage_fluctuation,arg0).
-arc(r_0022_0010__arising,r_0022_0015__concentration_change,r_0022_0011__from_dir).
-arc(r_0022_0015__concentration_change,r_0022_0013__sudden,attrib2).
-arc(r_0022_0015__concentration_change,r_0022_0014__small,attrib3).
+arc(r_0022_0005__indicates,r_0022_0007__quantificational__r_0022_0007__any,arg1).
+arc(r_0022_0007__quantificational__r_0022_0007__any,r_0022_0008__voltage__r_0022_0009__fluctuation,restriction).
+arc(r_0022_0007__quantificational__r_0022_0007__any,r_0022_0017__will,scope).
+arc(r_0022_0010__arising,r_0022_0008__voltage__r_0022_0009__fluctuation,arg0).
+arc(r_0022_0010__arising,r_0022_0015__concentration__r_0022_0016__change,r_0022_0011__from_dir).
+arc(r_0022_0015__concentration__r_0022_0016__change,r_0022_0013__sudden,attrib2).
+arc(r_0022_0015__concentration__r_0022_0016__change,r_0022_0014__small,attrib3).
 arc(r_0022_0017__will,r_0022_0018__be,scope).
 arc(r_0022_0018__be,r_0022_0019__controlled,catenative).
-arc(r_0022_0019__controlled,r_0022_0008__voltage_fluctuation,arg1).
+arc(r_0022_0019__controlled,r_0022_0008__voltage__r_0022_0009__fluctuation,arg1).
 arc(r_0022_0019__controlled,r_0022_0020__principally,mnr2).
-arc(r_0022_0019__controlled,r_0022_0024__concentration,arg0_by_lgs).
+arc(r_0022_0019__controlled,r_0022_0024__concentration,arg0__r_0022_0021__by_lgs).
 arc(r_0022_0024__concentration,r_0022_0023__original,attrib2).
 
 </pre>
 <br>
 <pre>
-fof(id_22_A_lob_J01,axiom,
+fof(id__22_A_lob_J01,axiom,
     ? [STATEX2,CATENATIVEX10,EVENTX16,QUANTX4,OPERATORX9,EVENTX15,EVENTX14,EVENTX8,ENTITYX3,ENTITYX12,ENTITYX5,ENTITYX1,ATTRIBX13,ATTRIBX6,ATTRIBX7,QUALITYX11] :
       ( STATEX2 = QUANTX4
-      &amp; isA(QUANTX4,r_0022_0007__quantificational__any)
+      &amp; isA(QUANTX4,r_0022_0007__quantificational__r_0022_0007__any)
       &amp; isA(EVENTX8,r_0022_0010__arising)
       &amp; arg0(EVENTX8) = ENTITYX3
       &amp; r_0022_0011__from_dir(EVENTX8) = ENTITYX5
-      &amp; isA(ENTITYX3,r_0022_0008__voltage_fluctuation)
+      &amp; isA(ENTITYX3,r_0022_0008__voltage__r_0022_0009__fluctuation)
       &amp; restriction(QUANTX4) = ENTITYX3
       &amp; scope(QUANTX4) = OPERATORX9
       &amp; isA(OPERATORX9,r_0022_0017__will)
@@ -268,11 +268,11 @@ fof(id_22_A_lob_J01,axiom,
       &amp; catenative(EVENTX15) = CATENATIVEX10
       &amp; CATENATIVEX10 = EVENTX14
       &amp; isA(EVENTX14,r_0022_0019__controlled)
-      &amp; arg0_by_lgs(EVENTX14) = ENTITYX12
+      &amp; arg0__r_0022_0021__by_lgs(EVENTX14) = ENTITYX12
       &amp; arg1(EVENTX14) = ENTITYX3
       &amp; mnr2(EVENTX14) = QUALITYX11
       &amp; isA(ENTITYX1,r_0022_0003__5)
-      &amp; isA(ENTITYX5,r_0022_0015__concentration_change)
+      &amp; isA(ENTITYX5,r_0022_0015__concentration__r_0022_0016__change)
       &amp; attrib2(ENTITYX5) = ATTRIBX6
       &amp; attrib3(ENTITYX5) = ATTRIBX7
       &amp; isA(ENTITYX12,r_0022_0024__concentration)

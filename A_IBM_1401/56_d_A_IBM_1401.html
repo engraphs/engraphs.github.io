@@ -98,18 +98,18 @@ Other services available to every IBM customer :
 <pre>
 arc(r_0077_0002__services,r_0077_0001__Other,attrib1).
 arc(r_0077_0002__services,r_0077_0003__available,attrib3).
-arc(r_0077_0003__available,r_0077_0006__IBM_customer,r_0077_0004__to).
+arc(r_0077_0003__available,r_0077_0006__IBM__r_0077_0007__customer,r_0077_0004__to).
 arc(z_0077_1007,r_0077_0002__services,z_0077_1002).
 
 </pre>
 <br>
 <pre>
-fof(id_77_A_IBM_1401,axiom,
+fof(id__77_A_IBM_1401,axiom,
     ? [EVENTX8,ENTITYX3,ENTITYX6,ATTRIBX4,ATTRIBX5] :
       ( isA(ENTITYX3,r_0077_0002__services)
       &amp; attrib1(ENTITYX3) = ATTRIBX4
       &amp; attrib3(ENTITYX3) = ATTRIBX5
-      &amp; isA(ENTITYX6,r_0077_0006__IBM_customer)
+      &amp; isA(ENTITYX6,r_0077_0006__IBM__r_0077_0007__customer)
       &amp; isA(ATTRIBX4,r_0077_0001__Other)
       &amp; isA(ATTRIBX5,r_0077_0003__available)
       &amp; r_0077_0004__to(ATTRIBX5) = ENTITYX6

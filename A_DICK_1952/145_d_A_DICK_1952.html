@@ -188,34 +188,34 @@ See how the rock formations rise up on all sides , protecting the floor .
 </svg>
 <br>
 <pre>
-arc(imperative_0193_1002,r_0193_0001__See,scope).
-arc(mnr_0193_1011,r_0193_0006__rise_up,scope).
-arc(mnr_0193_1011,r_0193_0012__protecting,restriction).
-arc(question_0193_1006,r_0193_0009__quantificational__all,scope).
-arc(r_0193_0001__See,question_0193_1006,arg1).
-arc(r_0193_0006__rise_up,r_0193_0002__how,mnr1).
-arc(r_0193_0006__rise_up,r_0193_0004__rock_formations,arg0).
-arc(r_0193_0006__rise_up,r_0193_0010__sides,r_0193_0008__on_clr_dir).
-arc(r_0193_0009__quantificational__all,mnr_0193_1011,scope).
-arc(r_0193_0009__quantificational__all,r_0193_0010__sides,restriction).
-arc(r_0193_0012__protecting,r_0193_0004__rock_formations,arg0).
+arc(r_0193_0001__See,r_0193_1006__question,arg1).
+arc(r_0193_0006__rise__r_0193_0007__up,r_0193_0002__how,mnr1).
+arc(r_0193_0006__rise__r_0193_0007__up,r_0193_0004__rock_r_0193_0005__formations,arg0).
+arc(r_0193_0006__rise__r_0193_0007__up,r_0193_0010__sides,r_0193_0008__on_clr_dir).
+arc(r_0193_0009__quantificational__r_0193_0009__all,r_0193_0010__sides,restriction).
+arc(r_0193_0009__quantificational__r_0193_0009__all,r_0193_1011__mnr,scope).
+arc(r_0193_0012__protecting,r_0193_0004__rock__r_0193_0005__formations,arg0).
 arc(r_0193_0012__protecting,r_0193_0014__floor,arg1).
+arc(r_0193_1002__imperative,r_0193_0001__See,scope).
+arc(r_0193_1006__question,r_0193_0009__quantificational__r_0193_0009__all,scope).
+arc(r_0193_1011__mnr,r_0193_0006__rise__r_0193_0007__up,scope).
+arc(r_0193_1011__mnr,r_0193_0012__protecting,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_193_A_DICK_1952,axiom,
+fof(id__193_A_DICK_1952,axiom,
     ? [STATEX4,OPERATORX2,EVENTX16,OPERATORX6,QUANTX10,CONNX12,EVENTX14,EVENTX15,QUALITYX7,ENTITYX8,ENTITYX9,ENTITYX13] :
       ( STATEX4 = OPERATORX6
-      &amp; isA(OPERATORX6,question_0193_1006)
+      &amp; isA(OPERATORX6,r_0193_1006__question)
       &amp; scope(OPERATORX6) = QUANTX10
-      &amp; isA(QUANTX10,r_0193_0009__quantificational__all)
+      &amp; isA(QUANTX10,r_0193_0009__quantificational__r_0193_0009__all)
       &amp; restriction(QUANTX10) = ENTITYX9
       &amp; isA(ENTITYX9,r_0193_0010__sides)
       &amp; scope(QUANTX10) = CONNX12
-      &amp; isA(CONNX12,mnr_0193_1011)
+      &amp; isA(CONNX12,r_0193_1011__mnr)
       &amp; scope(CONNX12) = EVENTX15
-      &amp; isA(EVENTX15,r_0193_0006__rise_up)
+      &amp; isA(EVENTX15,r_0193_0006__rise__r_0193_0007__up)
       &amp; mnr1(EVENTX15) = QUALITYX7
       &amp; arg0(EVENTX15) = ENTITYX8
       &amp; r_0193_0008__on_clr_dir(EVENTX15) = ENTITYX9
@@ -224,9 +224,9 @@ fof(id_193_A_DICK_1952,axiom,
       &amp; arg0(EVENTX14) = ENTITYX8
       &amp; arg1(EVENTX14) = ENTITYX13
       &amp; isA(QUALITYX7,r_0193_0002__how)
-      &amp; isA(ENTITYX8,r_0193_0004__rock_formations)
+      &amp; isA(ENTITYX8,r_0193_0004__rock__r_0193_0005__formations)
       &amp; isA(ENTITYX13,r_0193_0014__floor)
-      &amp; isA(OPERATORX2,imperative_0193_1002)
+      &amp; isA(OPERATORX2,r_0193_1002__imperative)
       &amp; scope(OPERATORX2) = EVENTX16
       &amp; isA(EVENTX16,r_0193_0001__See)
       &amp; arg1(EVENTX16) = STATEX4 ) ).

@@ -406,9 +406,9 @@ The lower part of the screen displays the section over which the laser - ship is
 </svg>
 <br>
 <pre>
-arc(r_0002_0002__laser_ship,r_0002_0001__Your,genv).
+arc(r_0002_0002__laser__r_0002_0004__ship,r_0002_0001__Your,genv).
 arc(r_0002_0005__is,r_0002_0006__patrolling,catenative).
-arc(r_0002_0006__patrolling,r_0002_0002__laser_ship,arg0).
+arc(r_0002_0006__patrolling,r_0002_0002__laser__r_0002_0004__ship,arg0).
 arc(r_0002_0006__patrolling,r_0002_0008__surface,arg1).
 arc(r_0002_0006__patrolling,r_0004_0015__ship,arg0).
 arc(r_0002_0008__surface,r_0002_0011__planetoid,r_0002_0009__of).
@@ -431,14 +431,14 @@ arc(r_0004_0003__part,r_0004_0002__lower,attrib2).
 arc(r_0004_0007__displays,r_0004_0003__part,arg0).
 arc(r_0004_0007__displays,r_0004_0009__section,arg1).
 arc(r_0004_0016__is,r_0004_0017__flying,catenative).
-arc(r_0004_0017__flying,r_0002_0002__laser_ship,arg0).
+arc(r_0004_0017__flying,r_0002_0002__laser__r_0002_0004__ship,arg0).
 arc(r_0004_0017__flying,r_0004_0009__section,r_0004_0010__over_loc).
 arc(r_0004_0017__flying,r_0004_0015__ship,arg0).
 
 </pre>
 <br>
 <pre>
-fof(id_2_A_Planetoid__3_A_Planetoid__4_A_Planetoid,axiom,
+fof(id__2_A_Planetoid__3_A_Planetoid__4_A_Planetoid,axiom,
     ? [CATENATIVEX2,CATENATIVEX16,CATENATIVEX28,SCREENX25,SHIPX27,EVENTX31,EVENTX30,EVENTX29,CONJX22,OPERATORX15,EVENTX21,EVENTX20,EVENTX14,EVENTX6,EVENTX5,ENTITYX23,ENTITYX26,ENTITYX7,ENTITYX18,ENTITYX11,ENTITYX12,ENTITYX8,SCREENX10,SHIPX1,ENTITYX3,ENTITYX4,ATTRIBX24,ATTRIBX19,ATTRIBX13,ATTRIBX9] :
       ( CATENATIVEX2 = EVENTX5
       &amp; isA(EVENTX5,r_0002_0006__patrolling)
@@ -452,7 +452,7 @@ fof(id_2_A_Planetoid__3_A_Planetoid__4_A_Planetoid,axiom,
       &amp; isA(EVENTX29,r_0004_0017__flying)
       &amp; arg0(EVENTX29) = SHIPX27
       &amp; r_0004_0010__over_loc(EVENTX29) = ENTITYX26
-      &amp; isA(SHIPX1,r_0002_0002__laser_ship)
+      &amp; isA(SHIPX1,r_0002_0002__laser__r_0002_0004__ship)
       &amp; genv(SHIPX1) = r_0002_0001__Your
       &amp; isA(ENTITYX3,r_0002_0008__surface)
       &amp; r_0002_0009__of(ENTITYX3) = ENTITYX4

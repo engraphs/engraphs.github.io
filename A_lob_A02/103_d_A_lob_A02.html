@@ -280,27 +280,27 @@ Police leave has been cancelled and secret plans prepared to deal with the mass 
 <pre>
 arc(r_0109_0003__has,r_0109_0004__been,catenative).
 arc(r_0109_0004__been,r_0109_0005__cancelled,catenative).
-arc(r_0109_0005__cancelled,r_0109_0001__Police_leave,arg1).
+arc(r_0109_0005__cancelled,r_0109_0001__Police__r_0109_0002__leave,arg1).
 arc(r_0109_0006__and,r_0109_0003__has,conj1).
 arc(r_0109_0006__and,z_0109_1025,conj2).
 arc(r_0109_0008__plans,r_0109_0007__secret,attrib1).
 arc(r_0109_0009__prepared,r_0109_0008__plans,arg0).
 arc(r_0109_0009__prepared,r_0109_0011__deal,prd).
-arc(r_0109_0011__deal,r_0109_0014__mass_sit_down_rally,r_0109_0012__with_clr).
-arc(r_0109_0017__planned,r_0109_0014__mass_sit_down_rally,arg1).
+arc(r_0109_0011__deal,r_0109_0014__mass__r_0109_0015__sit_down_r_0109_0016__rally,r_0109_0012__with_clr).
+arc(r_0109_0017__planned,r_0109_0014__mass__r_0109_0015__sit_down_r_0109_0016__rally,arg1).
 arc(r_0109_0017__planned,r_0109_0019__Sunday,r_0109_0018__for_tmp).
 arc(r_0109_0017__planned,r_0109_0021__Parliament_square,r_0109_0020__in_loc).
-arc(r_0109_0017__planned,r_0109_0024__committee,arg0_by_lgs).
+arc(r_0109_0017__planned,r_0109_0024__committee,arg0__r_0109_0022__by_lgs).
 arc(r_0109_0024__committee,r_0109_0026__100,r_0109_0025__of).
-arc(r_0109_0026__100,r_0109_0030__arms_group,prn3).
-arc(r_0109_0030__arms_group,r_0109_0029__anti_nuclear,attrib2).
+arc(r_0109_0026__100,r_0109_0030__arms__r_0109_0031__group,prn3).
+arc(r_0109_0030__arms__r_0109_0031__group,r_0109_0029__anti_nuclear,attrib2).
 arc(z_0109_1023,r_0109_0009__prepared,catenative).
 arc(z_0109_1025,z_0109_1023,catenative).
 
 </pre>
 <br>
 <pre>
-fof(id_109_A_lob_A02,axiom,
+fof(id__109_A_lob_A02,axiom,
     ? [CATENATIVEX2,CATENATIVEX3,CATENATIVEX10,CATENATIVEX11,STATEX12,CONJX27,EVENTX26,EVENTX24,EVENTX22,EVENTX21,EVENTX20,EVENTX7,EVENTX6,EVENTX5,ENTITYX8,ENTITYX15,ENTITYX16,ENTITYX17,ENTITYX18,ENTITYX1,ATTRIBX19,ATTRIBX9] :
       ( CATENATIVEX2 = EVENTX6
       &amp; isA(EVENTX6,r_0109_0004__been)
@@ -318,20 +318,20 @@ fof(id_109_A_lob_A02,axiom,
       &amp; STATEX12 = EVENTX21
       &amp; isA(EVENTX21,r_0109_0011__deal)
       &amp; r_0109_0012__with_clr(EVENTX21) = ENTITYX15
-      &amp; isA(ENTITYX1,r_0109_0001__Police_leave)
+      &amp; isA(ENTITYX1,r_0109_0001__Police__r_0109_0002__leave)
       &amp; isA(ENTITYX8,r_0109_0008__plans)
       &amp; attrib1(ENTITYX8) = ATTRIBX9
       &amp; isA(EVENTX20,r_0109_0017__planned)
-      &amp; arg0_by_lgs(EVENTX20) = ENTITYX16
+      &amp; arg0__r_0109_0022__by_lgs(EVENTX20) = ENTITYX16
       &amp; arg1(EVENTX20) = ENTITYX15
       &amp; r_0109_0018__for_tmp(EVENTX20) = r_0109_0019__Sunday
       &amp; r_0109_0020__in_loc(EVENTX20) = r_0109_0021__Parliament_square
-      &amp; isA(ENTITYX15,r_0109_0014__mass_sit_down_rally)
+      &amp; isA(ENTITYX15,r_0109_0014__mass__r_0109_0015__sit_down_r_0109_0016__rally)
       &amp; isA(ENTITYX16,r_0109_0024__committee)
       &amp; r_0109_0025__of(ENTITYX16) = ENTITYX17
       &amp; isA(ENTITYX17,r_0109_0026__100)
       &amp; prn3(ENTITYX17) = ENTITYX18
-      &amp; isA(ENTITYX18,r_0109_0030__arms_group)
+      &amp; isA(ENTITYX18,r_0109_0030__arms__r_0109_0031__group)
       &amp; attrib2(ENTITYX18) = ATTRIBX19
       &amp; isA(ATTRIBX9,r_0109_0007__secret)
       &amp; isA(ATTRIBX19,r_0109_0029__anti_nuclear)

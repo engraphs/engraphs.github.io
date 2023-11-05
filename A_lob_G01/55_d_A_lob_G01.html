@@ -253,18 +253,18 @@ Trebling the rate was arrived at by a simple arithmetic which argued that , as t
 <br>
 <pre>
 arc(r_0063_0001__Trebling,r_0063_0003__rate,arg1).
-arc(r_0063_0004__was,r_0063_0005__arrived_at,catenative).
-arc(r_0063_0005__arrived_at,r_0063_0001__Trebling,arg1).
-arc(r_0063_0005__arrived_at,r_0063_0010__arithmetic,arg0_by_lgs).
+arc(r_0063_0004__was,r_0063_0005__arrived__r_0063_0006__at,catenative).
+arc(r_0063_0005__arrived__r_0063_0006__at,r_0063_0001__Trebling,arg1).
+arc(r_0063_0005__arrived__r_0063_0006__at,r_0063_0010__arithmetic,arg0_r_0063_0007__by_lgs).
 arc(r_0063_0010__arithmetic,r_0063_0009__simple,attrib2).
 arc(r_0063_0012__argued,r_0063_0010__arithmetic,arg0).
 arc(r_0063_0012__argued,r_0063_0015__as_cnt,arg1).
 arc(r_0063_0015__as_cnt,r_0063_0019__had,restriction).
 arc(r_0063_0015__as_cnt,r_0063_0030__would,scope).
 arc(r_0063_0019__had,r_0063_0020__supplied,catenative).
-arc(r_0063_0020__supplied,r_0063_0017__first_poll_tax,arg0).
+arc(r_0063_0020__supplied,r_0063_0017__first__r_0063_0018__poll_tax,arg0).
 arc(r_0063_0020__supplied,r_0063_0021___pound_22,000,arg1).
-arc(r_0063_0024__tax,r_0063_0026__three_times_rate,r_0063_0025__of).
+arc(r_0063_0024__tax,r_0063_0026__three__r_0063_0027__times_r_0063_0029__rate,r_0063_0025__of).
 arc(r_0063_0030__would,r_0063_0031__produce,scope).
 arc(r_0063_0031__produce,r_0063_0024__tax,arg0).
 arc(r_0063_0031__produce,r_0063_0032___pound_66,000,arg1).
@@ -272,14 +272,14 @@ arc(r_0063_0031__produce,r_0063_0032___pound_66,000,arg1).
 </pre>
 <br>
 <pre>
-fof(id_63_A_lob_G01,axiom,
+fof(id__63_A_lob_G01,axiom,
     ? [STATEX1,CATENATIVEX6,STATEX9,CATENATIVEX12,EVENTX23,EVENTX22,EVENTX21,CONNX10,OPERATORX19,EVENTX20,EVENTX15,EVENTX14,EVENTX5,ENTITYX7,ENTITYX16,ENTITYX18,ENTITYX17,ENTITYX11,ENTITYX13,ENTITYX4,ATTRIBX8] :
       ( STATEX1 = EVENTX5
       &amp; isA(EVENTX5,r_0063_0001__Trebling)
       &amp; arg1(EVENTX5) = ENTITYX4
       &amp; CATENATIVEX6 = EVENTX22
-      &amp; isA(EVENTX22,r_0063_0005__arrived_at)
-      &amp; arg0_by_lgs(EVENTX22) = ENTITYX7
+      &amp; isA(EVENTX22,r_0063_0005__arrived__r_0063_0006__at)
+      &amp; arg0__r_0063_0007__by_lgs(EVENTX22) = ENTITYX7
       &amp; arg1(EVENTX22) = STATEX1
       &amp; STATEX9 = CONNX10
       &amp; isA(CONNX10,r_0063_0015__as_cnt)
@@ -302,11 +302,11 @@ fof(id_63_A_lob_G01,axiom,
       &amp; arg1(EVENTX21) = STATEX9
       &amp; isA(ENTITYX7,r_0063_0010__arithmetic)
       &amp; attrib2(ENTITYX7) = ATTRIBX8
-      &amp; isA(ENTITYX11,r_0063_0017__first_poll_tax)
+      &amp; isA(ENTITYX11,r_0063_0017__first__r_0063_0018__poll_tax)
       &amp; isA(ENTITYX13,r_0063_0021___pound_22,000)
       &amp; isA(ENTITYX16,r_0063_0024__tax)
       &amp; r_0063_0025__of(ENTITYX16) = ENTITYX17
-      &amp; isA(ENTITYX17,r_0063_0026__three_times_rate)
+      &amp; isA(ENTITYX17,r_0063_0026__three__r_0063_0027__times_r_0063_0029__rate)
       &amp; isA(ENTITYX18,r_0063_0032___pound_66,000)
       &amp; isA(ATTRIBX8,r_0063_0009__simple)
       &amp; isA(EVENTX23,r_0063_0004__was)

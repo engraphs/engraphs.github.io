@@ -169,20 +169,20 @@
 arc(r_0311_0003___apos_s,r_0311_0002__It,arg0).
 arc(r_0311_0003___apos_s,r_0311_0004__alive,prd2).
 arc(r_0311_0008__whispered,r_0311_0007__Nasha,arg0).
-arc(r_0311_0008__whispered,utterance_0311_1003,arg1).
+arc(r_0311_0008__whispered,r_0311_1003__utterance,arg1).
+arc(r_0311_1003__utterance,r_0311_0003___apos_s,part1).
 arc(r_0312_0004__listening,r_0312_0002__It,arg0).
 arc(r_0312_0004__listening,r_0312_0006__us,r_0312_0005__to_clr).
 arc(r_0312_0008__watching,r_0312_0002__It,arg0).
 arc(r_0312_0008__watching,r_0312_0006__us,arg1).
-arc(utterance_0311_1003,r_0311_0003___apos_s,part1).
 
 </pre>
 <br>
 <pre>
-fof(id_311_A_DICK_1952__312_A_DICK_1952,axiom,
+fof(id__311_A_DICK_1952__312_A_DICK_1952,axiom,
     ? [STATEX1,CATENATIVEX8,DORLE_AND_NASHA_AND_TANCEX10,EVENTX12,EVENTX11,EVENTX9,EVENTX7,CONJX6,EVENTX5,ATTRIBX4] :
       ( STATEX1 = CONJX6
-      &amp; isA(CONJX6,utterance_0311_1003)
+      &amp; isA(CONJX6,r_0311_1003__utterance)
       &amp; part1(CONJX6) = EVENTX5
       &amp; isA(EVENTX5,r_0311_0003___apos_s)
       &amp; arg0(EVENTX5) = r_0311_0002__It

@@ -155,8 +155,6 @@ Niobium is precipitated with ammonia , partially separating it from zirconium .
 </svg>
 <br>
 <pre>
-arc(abs_0081_1001,r_0081_0002__is,scope).
-arc(abs_0081_1001,r_0081_0008__separating,restriction).
 arc(r_0081_0002__is,r_0081_0003__precipitated,catenative).
 arc(r_0081_0003__precipitated,r_0081_0001__Niobium,arg1).
 arc(r_0081_0003__precipitated,r_0081_0005__ammonia,r_0081_0004__with_com).
@@ -164,11 +162,13 @@ arc(r_0081_0008__separating,r_0081_0001__Niobium,arg0).
 arc(r_0081_0008__separating,r_0081_0007__partially,mnr1).
 arc(r_0081_0008__separating,r_0081_0009__it,arg1).
 arc(r_0081_0008__separating,r_0081_0011__zirconium,r_0081_0010__from_dir).
+arc(r_0081_1001__abs,r_0081_0002__is,scope).
+arc(r_0081_1001__abs,r_0081_0008__separating,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_81_A_lob_J01,axiom,
+fof(id__81_A_lob_J01,axiom,
     ? [CATENATIVEX6,CONNX2,EVENTX5,EVENTX10,EVENTX9,ENTITYX4,ENTITYX8,QUALITYX3] :
       ( CATENATIVEX6 = EVENTX9
       &amp; isA(EVENTX9,r_0081_0003__precipitated)
@@ -177,7 +177,7 @@ fof(id_81_A_lob_J01,axiom,
       &amp; isA(ENTITYX8,r_0081_0005__ammonia)
       &amp; isA(ENTITYX4,r_0081_0011__zirconium)
       &amp; isA(QUALITYX3,r_0081_0007__partially)
-      &amp; isA(CONNX2,abs_0081_1001)
+      &amp; isA(CONNX2,r_0081_1001__abs)
       &amp; scope(CONNX2) = EVENTX10
       &amp; isA(EVENTX10,r_0081_0002__is)
       &amp; catenative(EVENTX10) = CATENATIVEX6

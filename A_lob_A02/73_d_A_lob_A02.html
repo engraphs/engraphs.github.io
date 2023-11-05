@@ -324,14 +324,14 @@ Sir Roy , federal Rhodesian Prime Minister , said that Mr Kaunda 's united natio
 </svg>
 <br>
 <pre>
-arc(r_0074_0001__Sir_Roy,r_0074_0005__Rhodesian_Prime_Minister,prn4).
-arc(r_0074_0005__Rhodesian_Prime_Minister,r_0074_0004__federal,attrib1).
-arc(r_0074_0009__said,r_0074_0001__Sir_Roy,arg0).
+arc(r_0074_0001__Sir__r_0074_0002__Roy,r_0074_0005__Rhodesian_r_0074_0006__Prime_r_0074_0007__Minister,prn4).
+arc(r_0074_0005__Rhodesian__r_0074_0006__Prime_r_0074_0007__Minister,r_0074_0004__federal,attrib1).
+arc(r_0074_0009__said,r_0074_0001__Sir__r_0074_0002__Roy,arg0).
 arc(r_0074_0009__said,r_0074_0018__was,arg1).
-arc(r_0074_0016__independence_party,r_0074_0011__Mr_Kaunda,genv).
-arc(r_0074_0016__independence_party,r_0074_0014__united,attrib2).
-arc(r_0074_0016__independence_party,r_0074_0015__national,attrib3).
-arc(r_0074_0018__was,r_0074_0016__independence_party,arg0).
+arc(r_0074_0016__independence__r_0074_0017__party,r_0074_0011__Mr_r_0074_0012__Kaunda,genv).
+arc(r_0074_0016__independence__r_0074_0017__party,r_0074_0014__united,attrib2).
+arc(r_0074_0016__independence__r_0074_0017__party,r_0074_0015__national,attrib3).
+arc(r_0074_0018__was,r_0074_0016__independence__r_0074_0017__party,arg0).
 arc(r_0074_0018__was,r_0074_0020__monster,prd2).
 arc(r_0074_0020__monster,r_0074_0022__vicious,attrib3).
 arc(r_0074_0022__vicious,r_0074_0021__as,quality1).
@@ -340,17 +340,17 @@ arc(r_0074_0027__congress,r_0074_0025__Zambia,attrib2).
 arc(r_0074_0027__congress,r_0074_0026__national,attrib3).
 arc(r_0074_0030__was,r_0074_0035__until_tmp,catenative).
 arc(r_0074_0031__led,r_0074_0027__congress,arg1).
-arc(r_0074_0031__led,r_0074_0033__Mr_Kaunda,arg0_by_lgs).
+arc(r_0074_0031__led,r_0074_0033__Mr__r_0074_0034__Kaunda,arg0_r_0074_0032__by_lgs).
 arc(r_0074_0035__until_tmp,r_0074_0031__led,scope).
 arc(r_0074_0035__until_tmp,r_0074_0037__was,restriction).
 arc(r_0074_0037__was,r_0074_0038__outlawed,catenative).
-arc(r_0074_0038__outlawed,r_0074_0033__Mr_Kaunda,arg1).
+arc(r_0074_0038__outlawed,r_0074_0033__Mr__r_0074_0034__Kaunda,arg1).
 arc(r_0074_0038__outlawed,r_0074_0040__1959,r_0074_0039__in_tmp).
 
 </pre>
 <br>
 <pre>
-fof(id_74_A_lob_A02,axiom,
+fof(id__74_A_lob_A02,axiom,
     ? [STATEX2,CATENATIVEX12,CATENATIVEX15,KAUNDAX14,EVENTX23,EVENTX22,EVENTX21,CONNX13,EVENTX19,EVENTX18,EVENTX20,ENTITYX3,ENTITYX6,ENTITYX9,ENTITYX17,ATTRIBX7,ATTRIBX10,ATTRIBX11,ATTRIBX4,ATTRIBX5,ATTRIBX1,QUALITYX8] :
       ( STATEX2 = EVENTX22
       &amp; isA(EVENTX22,r_0074_0018__was)
@@ -360,7 +360,7 @@ fof(id_74_A_lob_A02,axiom,
       &amp; isA(CONNX13,r_0074_0035__until_tmp)
       &amp; scope(CONNX13) = EVENTX20
       &amp; isA(EVENTX20,r_0074_0031__led)
-      &amp; arg0_by_lgs(EVENTX20) = r_0074_0033__Mr_Kaunda
+      &amp; arg0__r_0074_0032__by_lgs(EVENTX20) = r_0074_0033__Mr_r_0074_0034__Kaunda
       &amp; arg1(EVENTX20) = ENTITYX9
       &amp; restriction(CONNX13) = EVENTX19
       &amp; isA(EVENTX19,r_0074_0037__was)
@@ -369,8 +369,8 @@ fof(id_74_A_lob_A02,axiom,
       &amp; isA(EVENTX18,r_0074_0038__outlawed)
       &amp; arg1(EVENTX18) = KAUNDAX14
       &amp; r_0074_0039__in_tmp(EVENTX18) = ENTITYX17
-      &amp; isA(ENTITYX3,r_0074_0016__independence_party)
-      &amp; genv(ENTITYX3) = r_0074_0011__Mr_Kaunda
+      &amp; isA(ENTITYX3,r_0074_0016__independence__r_0074_0017__party)
+      &amp; genv(ENTITYX3) = r_0074_0011__Mr__r_0074_0012__Kaunda
       &amp; attrib2(ENTITYX3) = ATTRIBX4
       &amp; attrib3(ENTITYX3) = ATTRIBX5
       &amp; isA(ENTITYX6,r_0074_0020__monster)
@@ -380,12 +380,12 @@ fof(id_74_A_lob_A02,axiom,
       &amp; isA(ENTITYX9,r_0074_0027__congress)
       &amp; attrib2(ENTITYX9) = ATTRIBX10
       &amp; attrib3(ENTITYX9) = ATTRIBX11
-      &amp; KAUNDAX14 = r_0074_0033__Mr_Kaunda
+      &amp; KAUNDAX14 = r_0074_0033__Mr__r_0074_0034__Kaunda
       &amp; isA(ENTITYX17,r_0074_0040__1959)
-      &amp; isA(r_0074_0001__Sir_Roy,r_0074_0001__Sir_Roy)
-      &amp; prn4(r_0074_0001__Sir_Roy) = r_0074_0005__Rhodesian_Prime_Minister
-      &amp; isA(r_0074_0005__Rhodesian_Prime_Minister,r_0074_0005__Rhodesian_Prime_Minister)
-      &amp; attrib1(r_0074_0005__Rhodesian_Prime_Minister) = ATTRIBX1
+      &amp; isA(r_0074_0001__Sir__r_0074_0002__Roy,r_0074_0001__Sir_r_0074_0002__Roy)
+      &amp; prn4(r_0074_0001__Sir__r_0074_0002__Roy) = r_0074_0005__Rhodesian_r_0074_0006__Prime_r_0074_0007__Minister
+      &amp; isA(r_0074_0005__Rhodesian__r_0074_0006__Prime_r_0074_0007__Minister,r_0074_0005__Rhodesian_r_0074_0006__Prime_r_0074_0007__Minister)
+      &amp; attrib1(r_0074_0005__Rhodesian__r_0074_0006__Prime_r_0074_0007__Minister) = ATTRIBX1
       &amp; isA(ATTRIBX1,r_0074_0004__federal)
       &amp; isA(ATTRIBX4,r_0074_0014__united)
       &amp; isA(ATTRIBX5,r_0074_0015__national)
@@ -396,7 +396,7 @@ fof(id_74_A_lob_A02,axiom,
       &amp; isA(ATTRIBX11,r_0074_0026__national)
       &amp; isA(QUALITYX8,r_0074_0021__as)
       &amp; isA(EVENTX23,r_0074_0009__said)
-      &amp; arg0(EVENTX23) = r_0074_0001__Sir_Roy
+      &amp; arg0(EVENTX23) = r_0074_0001__Sir__r_0074_0002__Roy
       &amp; arg1(EVENTX23) = STATEX2 ) ).
 
 

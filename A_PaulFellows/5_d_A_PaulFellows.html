@@ -228,25 +228,25 @@ It was the Acornsoft languages group , myself , I was the team leader , I was th
 <br>
 <pre>
 arc(r_0005_0002__was,r_0005_0001__It,arg0).
-arc(r_0005_0002__was,r_0005_0004__Acornsoft_languages_group,prd2).
-arc(r_0005_0004__Acornsoft_languages_group,r_0005_0008__myself,prn6).
+arc(r_0005_0002__was,r_0005_0004__Acornsoft__r_0005_0005__languages_r_0005_0006__group,prd2).
+arc(r_0005_0004__Acornsoft__r_0005_0005__languages_r_0005_0006__group,r_0005_0008__myself,prn6).
 arc(r_0005_0008__myself,r_0005_0011__was,prn3).
 arc(r_0005_0011__was,r_0005_0008__myself,arg0).
-arc(r_0005_0011__was,r_0005_0013__team_leader,prd2).
+arc(r_0005_0011__was,r_0005_0013__team__r_0005_0014__leader,prd2).
 arc(r_0005_0011__was,r_0005_0017__was,prn5).
 arc(r_0005_0017__was,r_0005_0008__myself,arg0).
 arc(r_0005_0017__was,r_0005_0019__fool,prd2).
 arc(r_0005_0021__said,r_0005_0019__fool,arg0).
-arc(r_0005_0021__said,utterance_0005_1010,arg1).
+arc(r_0005_0021__said,r_0005_1010__utterance,arg1).
 arc(r_0005_0025__can,r_0005_0026__do,scope).
 arc(r_0005_0026__do,r_0005_0024__we,arg0).
 arc(r_0005_0026__do,r_0005_0027__it,arg1).
-arc(utterance_0005_1010,r_0005_0025__can,part1).
+arc(r_0005_1010__utterance,r_0005_0025__can,part1).
 
 </pre>
 <br>
 <pre>
-fof(id_5_A_PaulFellows,axiom,
+fof(id__5_A_PaulFellows,axiom,
     ? [EVENTX2,EVENTX5,STATEX8,SPEAKERX3,SPEAKERX6,EVENTX17,EVENTX16,EVENTX15,EVENTX14,CONJX13,OPERATORX11,EVENTX12,ENTITYX1,ENTITYX4,ENTITYX7] :
       ( EVENTX2 = EVENTX16
       &amp; isA(EVENTX16,r_0005_0011__was)
@@ -258,17 +258,17 @@ fof(id_5_A_PaulFellows,axiom,
       &amp; arg0(EVENTX15) = SPEAKERX6
       &amp; prd2(EVENTX15) = ENTITYX7
       &amp; STATEX8 = CONJX13
-      &amp; isA(CONJX13,utterance_0005_1010)
+      &amp; isA(CONJX13,r_0005_1010__utterance)
       &amp; part1(CONJX13) = OPERATORX11
       &amp; isA(OPERATORX11,r_0005_0025__can)
       &amp; scope(OPERATORX11) = EVENTX12
       &amp; isA(EVENTX12,r_0005_0026__do)
       &amp; arg0(EVENTX12) = r_0005_0024__we
       &amp; arg1(EVENTX12) = r_0005_0027__it
-      &amp; isA(ENTITYX1,r_0005_0004__Acornsoft_languages_group)
+      &amp; isA(ENTITYX1,r_0005_0004__Acornsoft__r_0005_0005__languages_r_0005_0006__group)
       &amp; prn6(ENTITYX1) = r_0005_0008__myself
       &amp; SPEAKERX3 = r_0005_0008__myself
-      &amp; isA(ENTITYX4,r_0005_0013__team_leader)
+      &amp; isA(ENTITYX4,r_0005_0013__team__r_0005_0014__leader)
       &amp; ( SPEAKERX6 = SPEAKERX3
         | SPEAKERX6 = r_0005_0008__myself )
       &amp; isA(EVENTX14,r_0005_0021__said)

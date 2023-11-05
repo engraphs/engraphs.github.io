@@ -517,8 +517,6 @@ With all of them working together it took just five more days to make it spacewo
 </svg>
 <br>
 <pre>
-arc(cnt_0569_1032,r_0570_0006__repair,scope).
-arc(cnt_0569_1032,r_0570_0014__get,restriction).
 arc(r_0569_0003__had,r_0569_0004__been,catenative).
 arc(r_0569_0004__been,r_0569_0006__hurt,catenative).
 arc(r_0569_0006__hurt,r_0569_0002__ship,arg1).
@@ -529,8 +527,10 @@ arc(r_0569_0011__damaged,z_0569_1013,arg1).
 arc(r_0569_0012__and,r_0569_0011__damaged,conj1).
 arc(r_0569_0012__and,r_0569_0013__lost,conj2).
 arc(r_0569_0013__lost,z_0569_1013,arg1).
+arc(r_0569_1032__cnt,r_0570_0006__repair,scope).
+arc(r_0569_1032__cnt,r_0570_0014__get,restriction).
 arc(r_0570_0003__thing,r_0570_0002__important,attrib2).
-arc(r_0570_0004__was,cnt_0569_1032,prd2).
+arc(r_0570_0004__was,r_0569_1032__cnt,prd2).
 arc(r_0570_0004__was,r_0570_0003__thing,arg0).
 arc(r_0570_0006__repair,r_0569_0002__ship,arg1).
 arc(r_0570_0006__repair,r_0570_0009__quickly,tmp4).
@@ -538,10 +538,10 @@ arc(r_0570_0009__quickly,r_0570_0008__as,quality1).
 arc(r_0570_0009__quickly,r_0570_0011__possible,r_0570_0010__as).
 arc(r_0570_0014__get,r_0569_0002__ship,arg1).
 arc(r_0570_0014__get,r_0570_0018__air,r_0570_0016__into_clr_dir).
-arc(r_0571_0001__With_abs,r_0571_0002__quantificational__all,restriction).
+arc(r_0571_0001__With_abs,r_0571_0002__quantificational__r_0571_0002__all,restriction).
 arc(r_0571_0001__With_abs,r_0571_0008__took,scope).
-arc(r_0571_0002__quantificational__all,r_0571_0005__working,scope).
-arc(r_0571_0002__quantificational__all,z_0569_1042,restriction).
+arc(r_0571_0002__quantificational__r_0571_0002__all,r_0571_0005__working,scope).
+arc(r_0571_0002__quantificational__r_0571_0002__all,z_0569_1042,restriction).
 arc(r_0571_0005__working,r_0571_0006__together,com3).
 arc(r_0571_0005__working,z_0569_1042,arg0).
 arc(r_0571_0008__took,r_0571_0012__days,arg1).
@@ -558,7 +558,7 @@ arc(z_0569_1042,r_0571_0004__them,r_0571_0003__of).
 </pre>
 <br>
 <pre>
-fof(id_569_A_DICK_1952__570_A_DICK_1952__571_A_DICK_1952,axiom,
+fof(id__569_A_DICK_1952__570_A_DICK_1952__571_A_DICK_1952,axiom,
     ? [CATENATIVEX4,CATENATIVEX5,CATENATIVEX14,CATENATIVEX15,STATEX25,STATEX50,SHIPX28,SHIPX34,SHIPX51,CONNX39,EVENTX54,EVENTX53,QUANTX41,EVENTX44,EVENTX38,CONNX33,EVENTX36,EVENTX37,EVENTX22,EVENTX21,CONJX20,EVENTX19,EVENTX17,EVENTX10,EVENTX9,EVENTX8,ENTITYX46,ENTITYX49,ENTITYX40,ENTITYX23,ENTITYX35,ENTITYX11,SHIPX3,QUALITYX48,QUALITYX43,QUALITYX29,QUALITYX30,QUALITYX7,ATTRIBX52,ATTRIBX47,ATTRIBX31,ATTRIBX24,ATTRIBX12] :
       ( CATENATIVEX4 = EVENTX9
       &amp; isA(EVENTX9,r_0569_0004__been)
@@ -579,7 +579,7 @@ fof(id_569_A_DICK_1952__570_A_DICK_1952__571_A_DICK_1952,axiom,
       &amp; isA(EVENTX19,r_0569_0013__lost)
       &amp; arg1(EVENTX19) = ENTITYX11
       &amp; STATEX25 = CONNX33
-      &amp; isA(CONNX33,cnt_0569_1032)
+      &amp; isA(CONNX33,r_0569_1032__cnt)
       &amp; scope(CONNX33) = EVENTX37
       &amp; isA(EVENTX37,r_0570_0006__repair)
       &amp; arg1(EVENTX37) = SHIPX28
@@ -629,7 +629,7 @@ fof(id_569_A_DICK_1952__570_A_DICK_1952__571_A_DICK_1952,axiom,
       &amp; prd2(EVENTX38) = STATEX25
       &amp; isA(CONNX39,r_0571_0001__With_abs)
       &amp; restriction(CONNX39) = QUANTX41
-      &amp; isA(QUANTX41,r_0571_0002__quantificational__all)
+      &amp; isA(QUANTX41,r_0571_0002__quantificational__r_0571_0002__all)
       &amp; restriction(QUANTX41) = ENTITYX40
       &amp; isA(ENTITYX40,z_0569_1042)
       &amp; r_0571_0003__of(ENTITYX40) = r_0571_0004__them

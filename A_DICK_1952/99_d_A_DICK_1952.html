@@ -126,16 +126,16 @@ arc(r_0127_0005__fired,r_0127_0003__gun,arg0).
 arc(r_0127_0005__fired,r_0127_0007__projectiles,arg1).
 arc(r_0127_0008__survived,r_0127_0003__gun,arg0).
 arc(r_0127_0012__said,r_0127_0011__Nasha,arg0).
-arc(r_0127_0012__said,utterance_0127_1003,arg1).
-arc(utterance_0127_1003,r_0127_0008__survived,part1).
+arc(r_0127_0012__said,r_0127_1003__utterance,arg1).
+arc(r_0127_1003__utterance,r_0127_0008__survived,part1).
 
 </pre>
 <br>
 <pre>
-fof(id_127_A_DICK_1952,axiom,
+fof(id__127_A_DICK_1952,axiom,
     ? [STATEX1,EVENTX9,CONJX8,EVENTX7,EVENTX6,ENTITYX4,ENTITYX5] :
       ( STATEX1 = CONJX8
-      &amp; isA(CONJX8,utterance_0127_1003)
+      &amp; isA(CONJX8,r_0127_1003__utterance)
       &amp; part1(CONJX8) = EVENTX7
       &amp; isA(EVENTX7,r_0127_0008__survived)
       &amp; arg0(EVENTX7) = ENTITYX4

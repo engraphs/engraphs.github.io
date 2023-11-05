@@ -531,28 +531,28 @@ Their curiosity pushed them to build vessels that were strong enough to ford the
 </svg>
 <br>
 <pre>
-arc(abs_0002_1033,r_0003_0006__build,scope).
-arc(abs_0002_1033,r_0003_0022__marking,restriction).
 arc(r_0002_0002__man,r_0002_0001__Prehistoric,attrib1).
 arc(r_0002_0002__man,r_0002_0011__or,r_0002_0003__in).
-arc(r_0002_0004__Asia_Minor,r_0002_0009__Turkey,prn4).
+arc(r_0002_0004__Asia__r_0002_0005__Minor,r_0002_0009__Turkey,prn4).
 arc(r_0002_0009__Turkey,r_0002_0007__now,quality1).
 arc(r_0002_0009__Turkey,r_0002_0008__modern,attrib2).
-arc(r_0002_0011__or,r_0002_0004__Asia_Minor,conj1).
+arc(r_0002_0011__or,r_0002_0004__Asia__r_0002_0005__Minor,conj1).
 arc(r_0002_0011__or,r_0002_0012__Greece,conj2).
 arc(r_0002_0013__could,r_0002_0022__and,scope).
-arc(r_0002_0014__look_out,r_0002_0002__man,arg0).
-arc(r_0002_0014__look_out,r_0002_0018__Aegean,r_0002_0016__across_clr_dir).
-arc(r_0002_0014__look_out,r_0002_0021__horizon,r_0002_0019__toward_clr_dir).
-arc(r_0002_0022__and,r_0002_0014__look_out,conj1).
+arc(r_0002_0014__look__r_0002_0015__out,r_0002_0002__man,arg0).
+arc(r_0002_0014__look__r_0002_0015__out,r_0002_0018__Aegean,r_0002_0016__across_clr_dir).
+arc(r_0002_0014__look__r_0002_0015__out,r_0002_0021__horizon,r_0002_0019__toward_clr_dir).
+arc(r_0002_0022__and,r_0002_0014__look__r_0002_0015__out,conj1).
 arc(r_0002_0022__and,r_0002_0023__see,conj2).
 arc(r_0002_0023__see,r_0002_0002__man,arg0).
 arc(r_0002_0023__see,r_0002_0026__silhouette,arg1).
 arc(r_0002_0026__silhouette,r_0002_0025__faint,attrib2).
 arc(r_0002_0026__silhouette,r_0002_0028__land,r_0002_0027__of).
+arc(r_0002_1033__abs,r_0003_0006__build,scope).
+arc(r_0002_1033__abs,r_0003_0022__marking,restriction).
 arc(r_0003_0002__curiosity,r_0002_0002__man,genv).
-arc(r_0003_0003__pushed,abs_0002_1033,prd).
 arc(r_0003_0003__pushed,r_0002_0002__man,arg1).
+arc(r_0003_0003__pushed,r_0002_1033__abs,prd).
 arc(r_0003_0003__pushed,r_0003_0002__curiosity,arg0).
 arc(r_0003_0006__build,r_0003_0007__vessels,arg1).
 arc(r_0003_0009__were,r_0003_0007__vessels,arg0).
@@ -573,10 +573,10 @@ arc(r_0003_0031__seafaring,r_0003_0030__Mediterranean,attrib1).
 </pre>
 <br>
 <pre>
-fof(id_2_A_ANC_HistoryOfGreece__3_A_ANC_HistoryOfGreece,axiom,
+fof(id__2_A_ANC_HistoryOfGreece__3_A_ANC_HistoryOfGreece,axiom,
     ? [STATEX17,STATEX23,PMANX15,PMANX16,EVENTX44,CONNX34,EVENTX42,EVENTX43,EVENTX32,CONJX31,EVENTX30,EVENTX28,OPERATORX6,CONJX13,EVENTX12,EVENTX8,ENTITYX14,ENTITYX20,ENTITYX37,ENTITYX38,ENTITYX40,ENTITYX29,ENTITYX26,PMANX1,ENTITYX9,ENTITYX11,ENTITYX7,ENTITYX3,ATTRIBX39,ATTRIBX41,ATTRIBX21,ATTRIBX27,ATTRIBX10,ATTRIBX2,ATTRIBX5,QUALITYX22,QUALITYX4] :
       ( STATEX17 = CONNX34
-      &amp; isA(CONNX34,abs_0002_1033)
+      &amp; isA(CONNX34,r_0002_1033__abs)
       &amp; scope(CONNX34) = EVENTX43
       &amp; isA(EVENTX43,r_0003_0006__build)
       &amp; arg1(EVENTX43) = ENTITYX20
@@ -595,7 +595,7 @@ fof(id_2_A_ANC_HistoryOfGreece__3_A_ANC_HistoryOfGreece,axiom,
       &amp; attrib1(PMANX1) = ATTRIBX2
       &amp; r_0002_0003__in(PMANX1) = ENTITYX3
       &amp; isA(ENTITYX3,r_0002_0011__or)
-      &amp; conj1(ENTITYX3) = r_0002_0004__Asia_Minor
+      &amp; conj1(ENTITYX3) = r_0002_0004__Asia__r_0002_0005__Minor
       &amp; conj2(ENTITYX3) = r_0002_0012__Greece
       &amp; isA(ENTITYX7,r_0002_0021__horizon)
       &amp; isA(ENTITYX9,r_0002_0026__silhouette)
@@ -628,8 +628,8 @@ fof(id_2_A_ANC_HistoryOfGreece__3_A_ANC_HistoryOfGreece,axiom,
       &amp; isA(ATTRIBX27,r_0003_0015__open)
       &amp; isA(ATTRIBX39,r_0003_0027__long)
       &amp; isA(ATTRIBX41,r_0003_0030__Mediterranean)
-      &amp; isA(r_0002_0004__Asia_Minor,r_0002_0004__Asia_Minor)
-      &amp; prn4(r_0002_0004__Asia_Minor) = r_0002_0009__Turkey
+      &amp; isA(r_0002_0004__Asia__r_0002_0005__Minor,r_0002_0004__Asia_r_0002_0005__Minor)
+      &amp; prn4(r_0002_0004__Asia__r_0002_0005__Minor) = r_0002_0009__Turkey
       &amp; isA(r_0002_0009__Turkey,r_0002_0009__Turkey)
       &amp; quality1(r_0002_0009__Turkey) = QUALITYX4
       &amp; attrib2(r_0002_0009__Turkey) = ATTRIBX5
@@ -641,7 +641,7 @@ fof(id_2_A_ANC_HistoryOfGreece__3_A_ANC_HistoryOfGreece,axiom,
       &amp; scope(OPERATORX6) = CONJX13
       &amp; isA(CONJX13,r_0002_0022__and)
       &amp; conj1(CONJX13) = EVENTX8
-      &amp; isA(EVENTX8,r_0002_0014__look_out)
+      &amp; isA(EVENTX8,r_0002_0014__look__r_0002_0015__out)
       &amp; arg0(EVENTX8) = PMANX1
       &amp; r_0002_0016__across_clr_dir(EVENTX8) = r_0002_0018__Aegean
       &amp; r_0002_0019__toward_clr_dir(EVENTX8) = ENTITYX7

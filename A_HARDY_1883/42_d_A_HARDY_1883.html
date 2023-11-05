@@ -377,14 +377,12 @@ But they took no notice , and fearing she might lose her character of genial hos
 </svg>
 <br>
 <pre>
-arc(cnt_0046_1004,r_0046_0008__fearing,restriction).
-arc(cnt_0046_1004,r_0046_0027__and,scope).
 arc(r_0046_0003__took,r_0046_0002__they,arg0).
 arc(r_0046_0003__took,r_0046_0005__notice,arg1).
-arc(r_0046_0004__quantificational__no,r_0046_0003__took,scope).
-arc(r_0046_0004__quantificational__no,r_0046_0005__notice,restriction).
-arc(r_0046_0007__and,cnt_0046_1004,conj2).
-arc(r_0046_0007__and,r_0046_0004__quantificational__no,conj1).
+arc(r_0046_0004__quantificational__r_0046_0004__no,r_0046_0003__took,scope).
+arc(r_0046_0004__quantificational__r_0046_0004__no,r_0046_0005__notice,restriction).
+arc(r_0046_0007__and,r_0046_0004__quantificational__r_0046_0004__no,conj1).
+arc(r_0046_0007__and,r_0046_1004__cnt,conj2).
 arc(r_0046_0008__fearing,r_0046_0017__if_cnt_cnd,arg1).
 arc(r_0046_0008__fearing,r_0046_0025__she,arg0).
 arc(r_0046_0010__might,r_0046_0011__lose,scope).
@@ -401,14 +399,16 @@ arc(r_0046_0021__interfere,r_0046_0023__markedly,mnr3).
 arc(r_0046_0023__markedly,r_0046_0022__too,quality1).
 arc(r_0046_0026__retired,r_0046_0025__she,arg0).
 arc(r_0046_0027__and,r_0046_0026__retired,conj1).
-arc(r_0046_0027__and,r_0046_0028__sat_down,conj2).
-arc(r_0046_0028__sat_down,r_0046_0025__she,arg0).
-arc(r_0046_0028__sat_down,r_0046_0030__helpless,mnr3).
+arc(r_0046_0027__and,r_0046_0028__sat__r_0046_0029__down,conj2).
+arc(r_0046_0028__sat__r_0046_0029__down,r_0046_0025__she,arg0).
+arc(r_0046_0028__sat__r_0046_0029__down,r_0046_0030__helpless,mnr3).
+arc(r_0046_1004__cnt,r_0046_0008__fearing,restriction).
+arc(r_0046_1004__cnt,r_0046_0027__and,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_46_A_HARDY_1883,axiom,
+fof(id__46_A_HARDY_1883,axiom,
     ? [STATEX6,STATEX10,CONJX25,CONNX5,CONJX24,EVENTX23,EVENTX21,EVENTX20,CONNX9,EVENTX14,EVENTX13,OPERATORX18,EVENTX19,QUANTX2,EVENTX3,ENTITYX15,ENTITYX16,ENTITYX1,ATTRIBX17,QUALITYX22,QUALITYX11,QUALITYX12] :
       ( STATEX6 = CONNX9
       &amp; isA(CONNX9,r_0046_0017__if_cnt_cnd)
@@ -438,7 +438,7 @@ fof(id_46_A_HARDY_1883,axiom,
       &amp; isA(QUALITYX22,r_0046_0030__helpless)
       &amp; isA(CONJX25,r_0046_0007__and)
       &amp; conj1(CONJX25) = QUANTX2
-      &amp; isA(QUANTX2,r_0046_0004__quantificational__no)
+      &amp; isA(QUANTX2,r_0046_0004__quantificational__r_0046_0004__no)
       &amp; restriction(QUANTX2) = ENTITYX1
       &amp; isA(ENTITYX1,r_0046_0005__notice)
       &amp; scope(QUANTX2) = EVENTX3
@@ -446,7 +446,7 @@ fof(id_46_A_HARDY_1883,axiom,
       &amp; arg0(EVENTX3) = r_0046_0002__they
       &amp; arg1(EVENTX3) = ENTITYX1
       &amp; conj2(CONJX25) = CONNX5
-      &amp; isA(CONNX5,cnt_0046_1004)
+      &amp; isA(CONNX5,r_0046_1004__cnt)
       &amp; restriction(CONNX5) = EVENTX20
       &amp; isA(EVENTX20,r_0046_0008__fearing)
       &amp; arg0(EVENTX20) = r_0046_0025__she
@@ -457,7 +457,7 @@ fof(id_46_A_HARDY_1883,axiom,
       &amp; isA(EVENTX21,r_0046_0026__retired)
       &amp; arg0(EVENTX21) = r_0046_0025__she
       &amp; conj2(CONJX24) = EVENTX23
-      &amp; isA(EVENTX23,r_0046_0028__sat_down)
+      &amp; isA(EVENTX23,r_0046_0028__sat__r_0046_0029__down)
       &amp; arg0(EVENTX23) = r_0046_0025__she
       &amp; mnr3(EVENTX23) = QUALITYX22 ) ).
 

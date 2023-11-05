@@ -245,12 +245,12 @@ arc(r_0035_0002__if_cnt_cnd,r_0035_0016__is,scope).
 arc(r_0035_0003__voltmeters,r_0035_0006__type,r_0035_0004__of).
 arc(r_0035_0007__were,r_0035_0008__used,catenative).
 arc(r_0035_0008__used,r_0035_0003__voltmeters,arg1).
-arc(r_0035_0008__used,r_0035_0011__Na_Na_bsub_2_ast__bsub_0_cell,r_0035_0009__with_mnr).
+arc(r_0035_0008__used,r_0035_0011__Na__r_0035_0013__Na_bsub_2_ast__bsub_0_r_0035_0014__cell,r_0035_0009__with_mnr).
 arc(r_0035_0016__is,r_0035_0017__possible,prd2).
 arc(r_0035_0016__is,r_0035_0019__estimate,arg0).
 arc(r_0035_0019__estimate,r_0035_0021__contamination,arg1).
-arc(r_0035_0021__contamination,r_0035_0024__circuit_sodium,r_0035_0022__of).
-arc(r_0035_0024__circuit_sodium,r_0035_0027__oxygen,r_0035_0026__from).
+arc(r_0035_0021__contamination,r_0035_0024__circuit__r_0035_0025__sodium,r_0035_0022__of).
+arc(r_0035_0024__circuit__r_0035_0025__sodium,r_0035_0027__oxygen,r_0035_0026__from).
 arc(r_0035_0029__diffusing,r_0035_0027__oxygen,arg0).
 arc(r_0035_0029__diffusing,r_0035_0028__continuously,tmp1).
 arc(r_0035_0029__diffusing,r_0035_0032__electrolyte,r_0035_0030__through_dir).
@@ -258,7 +258,7 @@ arc(r_0035_0029__diffusing,r_0035_0032__electrolyte,r_0035_0030__through_dir).
 </pre>
 <br>
 <pre>
-fof(id_35_A_lob_J01,axiom,
+fof(id__35_A_lob_J01,axiom,
     ? [CATENATIVEX5,STATEX12,OPERATORX1,CONNX2,EVENTX20,EVENTX19,EVENTX18,EVENTX9,EVENTX8,ENTITYX13,ENTITYX14,ENTITYX15,ENTITYX17,ENTITYX3,ENTITYX7,ENTITYX4,ATTRIBX11,QUALITYX16] :
       ( CATENATIVEX5 = EVENTX8
       &amp; isA(EVENTX8,r_0035_0008__used)
@@ -270,10 +270,10 @@ fof(id_35_A_lob_J01,axiom,
       &amp; isA(ENTITYX3,r_0035_0003__voltmeters)
       &amp; r_0035_0004__of(ENTITYX3) = ENTITYX4
       &amp; isA(ENTITYX4,r_0035_0006__type)
-      &amp; isA(ENTITYX7,r_0035_0011__Na_Na_bsub_2_ast__bsub_0_cell)
+      &amp; isA(ENTITYX7,r_0035_0011__Na__r_0035_0013__Na_bsub_2_ast__bsub_0_r_0035_0014__cell)
       &amp; isA(ENTITYX13,r_0035_0021__contamination)
       &amp; r_0035_0022__of(ENTITYX13) = ENTITYX14
-      &amp; isA(ENTITYX14,r_0035_0024__circuit_sodium)
+      &amp; isA(ENTITYX14,r_0035_0024__circuit__r_0035_0025__sodium)
       &amp; r_0035_0026__from(ENTITYX14) = ENTITYX15
       &amp; isA(EVENTX18,r_0035_0029__diffusing)
       &amp; arg0(EVENTX18) = ENTITYX15

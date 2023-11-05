@@ -159,8 +159,8 @@ You organise events at your college English club for people who want to improve 
 arc(r_0003_0002__organise,r_0003_0001__You,arg0).
 arc(r_0003_0002__organise,r_0003_0003__events,arg1).
 arc(r_0003_0002__organise,r_0003_0010__people,r_0003_0009__for_bnf).
-arc(r_0003_0003__events,r_0003_0006__college_English_club,r_0003_0004__at).
-arc(r_0003_0006__college_English_club,r_0003_0001__You,genv).
+arc(r_0003_0003__events,r_0003_0006__college__r_0003_0007__English_r_0003_0008__club,r_0003_0004__at).
+arc(r_0003_0006__college__r_0003_0007__English_r_0003_0008__club,r_0003_0001__You,genv).
 arc(r_0003_0012__want,r_0003_0010__people,arg0).
 arc(r_0003_0012__want,r_0003_0014__improve,arg1).
 arc(r_0003_0014__improve,r_0003_0010__people,arg0).
@@ -170,7 +170,7 @@ arc(r_0003_0016__English,r_0003_0010__people,genv).
 </pre>
 <br>
 <pre>
-fof(id_3_A_fce_0102_2001_06,axiom,
+fof(id__3_A_fce_0102_2001_06,axiom,
     ? [STATEX5,HEARERX3,PEOPLEX6,EVENTX9,EVENTX8,EVENTX7,ENTITYX1,PEOPLEX4,ENTITYX2] :
       ( STATEX5 = EVENTX7
       &amp; isA(EVENTX7,r_0003_0014__improve)
@@ -178,7 +178,7 @@ fof(id_3_A_fce_0102_2001_06,axiom,
       &amp; arg1(EVENTX7) = r_0003_0016__English
       &amp; isA(ENTITYX1,r_0003_0003__events)
       &amp; r_0003_0004__at(ENTITYX1) = ENTITYX2
-      &amp; isA(ENTITYX2,r_0003_0006__college_English_club)
+      &amp; isA(ENTITYX2,r_0003_0006__college__r_0003_0007__English_r_0003_0008__club)
       &amp; genv(ENTITYX2) = HEARERX3
       &amp; HEARERX3 = r_0003_0001__You
       &amp; isA(EVENTX8,r_0003_0012__want)

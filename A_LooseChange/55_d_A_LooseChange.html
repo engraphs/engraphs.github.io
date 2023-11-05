@@ -142,26 +142,26 @@ He want to know where we sleep tonight . &rsquo;
 </svg>
 <br>
 <pre>
-arc(question_0108_1004,r_0108_0007__sleep,scope).
 arc(r_0108_0002__want,r_0108_0001__He,arg0).
 arc(r_0108_0002__want,r_0108_0004__know,arg1).
-arc(r_0108_0004__know,question_0108_1004,arg1).
 arc(r_0108_0004__know,r_0108_0001__He,arg0).
+arc(r_0108_0004__know,r_0108_1004__question,arg1).
 arc(r_0108_0007__sleep,r_0108_0005__where,loc1).
 arc(r_0108_0007__sleep,r_0108_0006__we,arg0).
 arc(r_0108_0007__sleep,r_0108_0008__tonight,tmp4).
+arc(r_0108_1004__question,r_0108_0007__sleep,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_108_A_LooseChange,axiom,
+fof(id__108_A_LooseChange,axiom,
     ? [STATEX1,STATEX2,EVENTX9,EVENTX8,OPERATORX4,EVENTX7,QUALITYX5,QUALITYX6] :
       ( STATEX1 = EVENTX8
       &amp; isA(EVENTX8,r_0108_0004__know)
       &amp; arg0(EVENTX8) = r_0108_0001__He
       &amp; arg1(EVENTX8) = STATEX2
       &amp; STATEX2 = OPERATORX4
-      &amp; isA(OPERATORX4,question_0108_1004)
+      &amp; isA(OPERATORX4,r_0108_1004__question)
       &amp; scope(OPERATORX4) = EVENTX7
       &amp; isA(EVENTX7,r_0108_0007__sleep)
       &amp; loc1(EVENTX7) = QUALITYX5

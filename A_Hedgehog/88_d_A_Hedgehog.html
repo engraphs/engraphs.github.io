@@ -482,7 +482,6 @@ I think that there is more to be done , and I have therefore suggested to the Ch
 </svg>
 <br>
 <pre>
-arc(question_0094_1030,r_0094_0052__can,scope).
 arc(r_0094_0002__think,r_0094_0001__I,arg0).
 arc(r_0094_0002__think,r_0094_0005__is,arg1).
 arc(r_0094_0005__is,z_0094_1011,arg0).
@@ -495,33 +494,34 @@ arc(r_0094_0015__suggested,r_0094_0001__I,arg0).
 arc(r_0094_0015__suggested,r_0094_0018__Chairman,r_0094_0016__to_arg2).
 arc(r_0094_0015__suggested,r_0094_0045__should,arg1).
 arc(r_0094_0018__Chairman,r_0094_0027__Committee,r_0094_0019__of).
-arc(r_0094_0018__Chairman,r_0094_0030__hon._Friend,prn5).
+arc(r_0094_0018__Chairman,r_0094_0030__hon__r_0094_0031__Friend,prn5).
 arc(r_0094_0024__and,r_0094_0021__Environment,conj1).
 arc(r_0094_0024__and,r_0094_0023__Food,conj2).
 arc(r_0094_0024__and,r_0094_0026__Affairs,conj3).
 arc(r_0094_0026__Affairs,r_0094_0025__Rural,attrib1).
 arc(r_0094_0027__Committee,r_0094_0024__and,nlyr2).
-arc(r_0094_0030__hon._Friend,r_0094_0001__I,genv).
-arc(r_0094_0030__hon._Friend,r_0094_0033__Member,prn4).
+arc(r_0094_0030__hon__r_0094_0031__Friend,r_0094_0001__I,genv).
+arc(r_0094_0030__hon__r_0094_0031__Friend,r_0094_0033__Member,prn4).
 arc(r_0094_0033__Member,r_0094_0036__and,r_0094_0034__for).
-arc(r_0094_0033__Member,r_0094_0039__Neil_Parish,prn5).
+arc(r_0094_0033__Member,r_0094_0039__Neil__r_0094_0040__Parish,prn5).
 arc(r_0094_0036__and,r_0094_0035__Tiverton,conj1).
 arc(r_0094_0036__and,r_0094_0037__Honiton,conj2).
 arc(r_0094_0045__should,r_0094_0046__hold,scope).
 arc(r_0094_0046__hold,r_0094_0027__Committee,arg0).
 arc(r_0094_0046__hold,r_0094_0048__inquiry,arg1).
-arc(r_0094_0048__inquiry,question_0094_1030,r_0094_0049__into).
+arc(r_0094_0048__inquiry,r_0094_1030__question,r_0094_0049__into).
 arc(r_0094_0052__can,r_0094_0053__save,scope).
 arc(r_0094_0053__save,r_0094_0050__how,mnr1).
 arc(r_0094_0053__save,r_0094_0051__we,arg0).
 arc(r_0094_0053__save,r_0094_0054__hedgehogs,arg1).
+arc(r_0094_1030__question,r_0094_0052__can,scope).
 arc(z_0094_1011,r_0094_0006__more,attrib1).
 arc(z_0094_1011,r_0094_0008__be,emb2).
 
 </pre>
 <br>
 <pre>
-fof(id_94_A_Hedgehog,axiom,
+fof(id__94_A_Hedgehog,axiom,
     ? [STATEX1,STATEX4,CATENATIVEX7,CATENATIVEX15,STATEX25,EVENTX28,SPEAKERX14,SPEAKERX23,COMMITTEEX26,CONJX39,EVENTX38,OPERATORX16,EVENTX37,OPERATORX35,EVENTX36,OPERATORX30,OPERATORX33,EVENTX34,EVENTX13,EVENTX12,EVENTX10,EVENTX9,ENTITYX27,ENTITYX32,COMMITTEEX17,ENTITYX22,ENTITYX24,ENTITYX18,ENTITYX19,ENTITYX20,ENTITYX2,ATTRIBX21,ATTRIBX3,QUALITYX31] :
       ( STATEX1 = EVENTX12
       &amp; isA(EVENTX12,r_0094_0005__is)
@@ -545,7 +545,7 @@ fof(id_94_A_Hedgehog,axiom,
       &amp; arg0(EVENTX36) = COMMITTEEX26
       &amp; arg1(EVENTX36) = ENTITYX27
       &amp; EVENTX28 = OPERATORX30
-      &amp; isA(OPERATORX30,question_0094_1030)
+      &amp; isA(OPERATORX30,r_0094_1030__question)
       &amp; scope(OPERATORX30) = OPERATORX33
       &amp; isA(OPERATORX33,r_0094_0052__can)
       &amp; scope(OPERATORX33) = EVENTX34
@@ -566,7 +566,7 @@ fof(id_94_A_Hedgehog,axiom,
       &amp; isA(ENTITYX19,r_0094_0021__Environment)
       &amp; isA(ENTITYX20,r_0094_0026__Affairs)
       &amp; attrib1(ENTITYX20) = ATTRIBX21
-      &amp; isA(ENTITYX22,r_0094_0030__hon._Friend)
+      &amp; isA(ENTITYX22,r_0094_0030__hon__r_0094_0031__Friend)
       &amp; genv(ENTITYX22) = SPEAKERX23
       &amp; prn4(ENTITYX22) = r_0094_0033__Member
       &amp; ( SPEAKERX23 = SPEAKERX14
@@ -583,7 +583,7 @@ fof(id_94_A_Hedgehog,axiom,
       &amp; prn5(r_0094_0018__Chairman) = ENTITYX22
       &amp; isA(r_0094_0033__Member,r_0094_0033__Member)
       &amp; r_0094_0034__for(r_0094_0033__Member) = ENTITYX24
-      &amp; prn5(r_0094_0033__Member) = r_0094_0039__Neil_Parish
+      &amp; prn5(r_0094_0033__Member) = r_0094_0039__Neil__r_0094_0040__Parish
       &amp; isA(ATTRIBX3,r_0094_0006__more)
       &amp; isA(ATTRIBX21,r_0094_0025__Rural)
       &amp; isA(QUALITYX31,r_0094_0050__how)

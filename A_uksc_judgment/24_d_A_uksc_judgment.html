@@ -325,7 +325,6 @@ The memorandum has much to say about a new session and Queen 's Speech but nothi
 </svg>
 <br>
 <pre>
-arc(question_0038_1019,r_0038_0018__why,scope).
 arc(r_0038_0003__has,r_0038_0002__memorandum,arg0).
 arc(r_0038_0003__has,r_0038_0015__but,arg1).
 arc(r_0038_0006__say,r_0038_0011__and,r_0038_0007__about_rst).
@@ -335,8 +334,8 @@ arc(r_0038_0011__and,r_0038_0014__Speech,conj2).
 arc(r_0038_0014__Speech,r_0038_0012__Queen,genv).
 arc(r_0038_0015__but,z_0038_1014,conj1).
 arc(r_0038_0015__but,z_0038_1032,conj2).
-arc(r_0038_0016__quantificational__nothing,r_0038_0015__but,scope).
-arc(r_0038_0016__quantificational__nothing,z_0038_1032,restriction).
+arc(r_0038_0016__quantificational__r_0038_0016__nothing,r_0038_0015__but,scope).
+arc(r_0038_0016__quantificational__r_0038_0016__nothing,z_0038_1032,restriction).
 arc(r_0038_0018__why,r_0038_0021__was,scope).
 arc(r_0038_0020__long,r_0038_0019__so,quality1).
 arc(r_0038_0021__was,r_0038_0022__needed,catenative).
@@ -344,21 +343,22 @@ arc(r_0038_0022__needed,r_0038_0024__prepare,arg1).
 arc(r_0038_0022__needed,z_0038_1024,arg2).
 arc(r_0038_0024__prepare,r_0038_0011__and,r_0038_0025__for_clr).
 arc(r_0038_0024__prepare,z_0038_1024,arg0).
+arc(r_0038_1019__question,r_0038_0018__why,scope).
 arc(z_0038_1014,r_0038_0004__much,attrib1).
 arc(z_0038_1014,r_0038_0006__say,emb2).
 arc(z_0038_1024,r_0038_0020__long,attrib1).
-arc(z_0038_1032,question_0038_1019,r_0038_0017__about).
+arc(z_0038_1032,r_0038_1019__question,r_0038_0017__about).
 
 </pre>
 <br>
 <pre>
-fof(id_38_A_uksc_judgment,axiom,
+fof(id__38_A_uksc_judgment,axiom,
     ? [STATEX5,EVENTX17,CATENATIVEX25,STATEX27,SESSION_AND_SPEECHX28,EVENTX33,QUANTX16,OPERATORX19,OPERATORX20,EVENTX31,EVENTX30,EVENTX29,EVENTX13,ENTITYX1,ENTITYX2,ENTITYX3,ENTITYX15,ENTITYX21,SESSION_AND_SPEECHX8,ENTITYX9,ENTITYX11,ENTITYX12,ATTRIBX22,ATTRIBX4,ATTRIBX10,QUALITYX23] :
       ( STATEX5 = EVENTX13
       &amp; isA(EVENTX13,r_0038_0006__say)
       &amp; r_0038_0007__about_rst(EVENTX13) = SESSION_AND_SPEECHX8
       &amp; EVENTX17 = OPERATORX19
-      &amp; isA(OPERATORX19,question_0038_1019)
+      &amp; isA(OPERATORX19,r_0038_1019__question)
       &amp; scope(OPERATORX19) = OPERATORX20
       &amp; isA(OPERATORX20,r_0038_0018__why)
       &amp; scope(OPERATORX20) = EVENTX31
@@ -373,7 +373,7 @@ fof(id_38_A_uksc_judgment,axiom,
       &amp; arg0(EVENTX29) = ENTITYX21
       &amp; r_0038_0025__for_clr(EVENTX29) = SESSION_AND_SPEECHX28
       &amp; isA(ENTITYX1,r_0038_0002__memorandum)
-      &amp; isA(QUANTX16,r_0038_0016__quantificational__nothing)
+      &amp; isA(QUANTX16,r_0038_0016__quantificational__r_0038_0016__nothing)
       &amp; restriction(QUANTX16) = ENTITYX15
       &amp; isA(ENTITYX15,z_0038_1032)
       &amp; r_0038_0017__about(ENTITYX15) = EVENTX17

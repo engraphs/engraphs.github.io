@@ -207,28 +207,28 @@ Combine the solutions from each of the 200 ml polythene bottles , and dilute to 
 </svg>
 <br>
 <pre>
-arc(imperative_0100_1002,r_0100_0013__and,scope).
 arc(r_0100_0001__Combine,r_0100_0003__solutions,arg1).
 arc(r_0100_0001__Combine,z_0100_1008,r_0100_0004__from_dir).
-arc(r_0100_0005__quantificational__each,r_0100_0001__Combine,scope).
-arc(r_0100_0005__quantificational__each,z_0100_1008,restriction).
-arc(r_0100_0013__and,r_0100_0005__quantificational__each,conj1).
+arc(r_0100_0005__quantificational__r_0100_0005__each,r_0100_0001__Combine,scope).
+arc(r_0100_0005__quantificational__r_0100_0005__each,z_0100_1008,restriction).
+arc(r_0100_0013__and,r_0100_0005__quantificational__r_0100_0005__each,conj1).
 arc(r_0100_0013__and,r_0100_0014__dilute,conj2).
-arc(r_0100_0014__dilute,r_0100_0016__2_litres,r_0100_0015__to_dir).
+arc(r_0100_0014__dilute,r_0100_0016__2__r_0100_0017__litres,r_0100_0015__to_dir).
 arc(r_0100_0014__dilute,r_0100_0020__water,r_0100_0018__with_mnr).
 arc(r_0100_0019__distilled,r_0100_0020__water,arg0).
 arc(r_0100_0020__water,r_0100_0024__bottle,r_0100_0021__in).
 arc(r_0100_0024__bottle,r_0100_0023__polythene,attrib2).
-arc(z_0100_1008,r_0100_0008__200_ml_polythene_bottles,r_0100_0006__of).
+arc(r_0100_1002__imperative,r_0100_0013__and,scope).
+arc(z_0100_1008,r_0100_0008__200__r_0100_0009__ml_r_0100_0010__polythene_r_0100_0011__bottles,r_0100_0006__of).
 
 </pre>
 <br>
 <pre>
-fof(id_100_A_lob_J01,axiom,
+fof(id__100_A_lob_J01,axiom,
     ? [OPERATORX2,CONJX16,EVENTX15,EVENTX12,QUANTX6,EVENTX9,ENTITYX10,ENTITYX11,ENTITYX13,ENTITYX4,ENTITYX5,ENTITYX7,ATTRIBX14] :
       ( isA(ENTITYX4,r_0100_0003__solutions)
-      &amp; isA(ENTITYX7,r_0100_0008__200_ml_polythene_bottles)
-      &amp; isA(ENTITYX10,r_0100_0016__2_litres)
+      &amp; isA(ENTITYX7,r_0100_0008__200__r_0100_0009__ml_r_0100_0010__polythene_r_0100_0011__bottles)
+      &amp; isA(ENTITYX10,r_0100_0016__2__r_0100_0017__litres)
       &amp; isA(EVENTX12,r_0100_0019__distilled)
       &amp; arg0(EVENTX12) = ENTITYX11
       &amp; isA(ENTITYX11,r_0100_0020__water)
@@ -236,11 +236,11 @@ fof(id_100_A_lob_J01,axiom,
       &amp; isA(ENTITYX13,r_0100_0024__bottle)
       &amp; attrib2(ENTITYX13) = ATTRIBX14
       &amp; isA(ATTRIBX14,r_0100_0023__polythene)
-      &amp; isA(OPERATORX2,imperative_0100_1002)
+      &amp; isA(OPERATORX2,r_0100_1002__imperative)
       &amp; scope(OPERATORX2) = CONJX16
       &amp; isA(CONJX16,r_0100_0013__and)
       &amp; conj1(CONJX16) = QUANTX6
-      &amp; isA(QUANTX6,r_0100_0005__quantificational__each)
+      &amp; isA(QUANTX6,r_0100_0005__quantificational__r_0100_0005__each)
       &amp; restriction(QUANTX6) = ENTITYX5
       &amp; isA(ENTITYX5,z_0100_1008)
       &amp; r_0100_0006__of(ENTITYX5) = ENTITYX7

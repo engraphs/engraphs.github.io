@@ -374,41 +374,41 @@ Leaving the picnic site take the path which climbs up , keeping Brooks Farm on y
 </svg>
 <br>
 <pre>
-arc(abs_0009_1024,r_0011_0001__Leaving,restriction).
-arc(abs_0009_1024,r_0011_0005__take,scope).
-arc(abs_0009_1030,r_0011_0009__climbs,scope).
-arc(abs_0009_1030,r_0011_0012__keeping,restriction).
-arc(imperative_0009_1004,r_0009_0006__until_tmp,scope).
-arc(imperative_0009_1023,abs_0009_1024,scope).
 arc(r_0009_0001__Continue,r_0009_0005__mile,r_0009_0002__for_dir).
 arc(r_0009_0005__mile,r_0009_0003__about,quality1).
 arc(r_0009_0006__until_tmp,r_0009_0001__Continue,scope).
 arc(r_0009_0006__until_tmp,r_0009_0008__reach,restriction).
 arc(r_0009_0008__reach,r_0009_0007__you,arg0).
-arc(r_0009_0008__reach,r_0009_0010__picnic_site,arg1).
-arc(r_0010_0002__here,r_0009_0010__picnic_site,z_0009_1013).
+arc(r_0009_0008__reach,r_0009_0010__picnic__r_0009_0011__site,arg1).
+arc(r_0009_1004__imperative,r_0009_0006__until_tmp,scope).
+arc(r_0009_1023__imperative,r_0009_1024__abs,scope).
+arc(r_0009_1024__abs,r_0011_0001__Leaving,restriction).
+arc(r_0009_1024__abs,r_0011_0005__take,scope).
+arc(r_0009_1030__abs,r_0011_0009__climbs,scope).
+arc(r_0009_1030__abs,r_0011_0012__keeping,restriction).
+arc(r_0010_0002__here,r_0009_0010__picnic__r_0009_0011__site,z_0009_1013).
 arc(r_0010_0004__have,r_0009_0007__you,arg0).
 arc(r_0010_0004__have,r_0010_0002__here,r_0010_0001__From_loc).
 arc(r_0010_0004__have,r_0010_0006__views,arg1).
 arc(r_0010_0006__views,r_0010_0005__uninterrupted,attrib1).
 arc(r_0010_0006__views,r_0010_0009__lake,r_0010_0007__over).
-arc(r_0011_0001__Leaving,r_0009_0010__picnic_site,arg1).
+arc(r_0011_0001__Leaving,r_0009_0010__picnic__r_0009_0011__site,arg1).
 arc(r_0011_0005__take,r_0011_0007__path,arg1).
 arc(r_0011_0009__climbs,r_0011_0007__path,arg0).
 arc(r_0011_0009__climbs,r_0011_0010__up,dir3).
 arc(r_0011_0012__keeping,r_0011_0007__path,arg0).
-arc(r_0011_0012__keeping,r_0011_0013__Brooks_Farm,arg1).
+arc(r_0011_0012__keeping,r_0011_0013__Brooks__r_0011_0014__Farm,arg1).
 arc(r_0011_0012__keeping,r_0011_0017__left,r_0011_0015__on_loc).
 arc(r_0011_0017__left,r_0009_0007__you,genv).
 
 </pre>
 <br>
 <pre>
-fof(id_9_A_maptext__10_A_maptext__11_A_maptext,axiom,
+fof(id__9_A_maptext__10_A_maptext__11_A_maptext,axiom,
     ? [PICNIC_SITEX14,HEARERX15,PICNIC_SITEX26,HEARERX33,OPERATORX23,CONNX25,EVENTX36,CONNX31,EVENTX34,EVENTX35,EVENTX27,EVENTX19,OPERATORX4,CONNX7,EVENTX9,EVENTX10,ENTITYX28,ENTITYX32,ENTITYX16,ENTITYX18,ENTITYX5,PICNIC_SITEX8,QUALITYX29,QUALITYX11,QUALITYX6,ATTRIBX17] :
       ( isA(ENTITYX5,r_0009_0005__mile)
       &amp; quality1(ENTITYX5) = QUALITYX6
-      &amp; isA(PICNIC_SITEX8,r_0009_0010__picnic_site)
+      &amp; isA(PICNIC_SITEX8,r_0009_0010__picnic__r_0009_0011__site)
       &amp; PICNIC_SITEX14 = PICNIC_SITEX8
       &amp; HEARERX15 = r_0009_0007__you
       &amp; isA(ENTITYX16,r_0010_0006__views)
@@ -416,7 +416,7 @@ fof(id_9_A_maptext__10_A_maptext__11_A_maptext,axiom,
       &amp; r_0010_0007__over(ENTITYX16) = ENTITYX18
       &amp; isA(ENTITYX18,r_0010_0009__lake)
       &amp; PICNIC_SITEX26 = PICNIC_SITEX8
-      &amp; isA(CONNX31,abs_0009_1030)
+      &amp; isA(CONNX31,r_0009_1030__abs)
       &amp; scope(CONNX31) = EVENTX35
       &amp; isA(EVENTX35,r_0011_0009__climbs)
       &amp; arg0(EVENTX35) = ENTITYX28
@@ -424,7 +424,7 @@ fof(id_9_A_maptext__10_A_maptext__11_A_maptext,axiom,
       &amp; restriction(CONNX31) = EVENTX34
       &amp; isA(EVENTX34,r_0011_0012__keeping)
       &amp; arg0(EVENTX34) = ENTITYX28
-      &amp; arg1(EVENTX34) = r_0011_0013__Brooks_Farm
+      &amp; arg1(EVENTX34) = r_0011_0013__Brooks__r_0011_0014__Farm
       &amp; r_0011_0015__on_loc(EVENTX34) = ENTITYX32
       &amp; isA(ENTITYX28,r_0011_0007__path)
       &amp; isA(ENTITYX32,r_0011_0017__left)
@@ -435,7 +435,7 @@ fof(id_9_A_maptext__10_A_maptext__11_A_maptext,axiom,
       &amp; z_0009_1013(QUALITYX11) = PICNIC_SITEX14
       &amp; isA(QUALITYX29,r_0011_0010__up)
       &amp; isA(ATTRIBX17,r_0010_0005__uninterrupted)
-      &amp; isA(OPERATORX4,imperative_0009_1004)
+      &amp; isA(OPERATORX4,r_0009_1004__imperative)
       &amp; scope(OPERATORX4) = CONNX7
       &amp; isA(CONNX7,r_0009_0006__until_tmp)
       &amp; scope(CONNX7) = EVENTX10
@@ -449,9 +449,9 @@ fof(id_9_A_maptext__10_A_maptext__11_A_maptext,axiom,
       &amp; r_0010_0001__From_loc(EVENTX19) = QUALITYX11
       &amp; arg0(EVENTX19) = HEARERX15
       &amp; arg1(EVENTX19) = ENTITYX16
-      &amp; isA(OPERATORX23,imperative_0009_1023)
+      &amp; isA(OPERATORX23,r_0009_1023__imperative)
       &amp; scope(OPERATORX23) = CONNX25
-      &amp; isA(CONNX25,abs_0009_1024)
+      &amp; isA(CONNX25,r_0009_1024__abs)
       &amp; restriction(CONNX25) = EVENTX27
       &amp; isA(EVENTX27,r_0011_0001__Leaving)
       &amp; arg1(EVENTX27) = PICNIC_SITEX26

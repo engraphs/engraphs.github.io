@@ -175,35 +175,35 @@ While you 're staying please use anything of mine you need .
 </svg>
 <br>
 <pre>
-arc(imperative_0008_1002,r_0008_0001__While_tmp,scope).
 arc(r_0008_0001__While_tmp,r_0008_0003___apos_re,restriction).
-arc(r_0008_0001__While_tmp,r_0008_0007__quantificational__anything,scope).
+arc(r_0008_0001__While_tmp,r_0008_0007__quantificational__r_0008_0007__anything,scope).
 arc(r_0008_0003___apos_re,r_0008_0004__staying,catenative).
 arc(r_0008_0004__staying,r_0008_0002__you,arg0).
 arc(r_0008_0006__use,z_0008_1012,arg1).
-arc(r_0008_0007__quantificational__anything,r_0008_0006__use,scope).
-arc(r_0008_0007__quantificational__anything,z_0008_1012,restriction).
+arc(r_0008_0007__quantificational__r_0008_0007__anything,r_0008_0006__use,scope).
+arc(r_0008_0007__quantificational__r_0008_0007__anything,z_0008_1012,restriction).
 arc(r_0008_0011__need,r_0008_0002__you,arg0).
 arc(r_0008_0011__need,z_0008_1012,arg1).
+arc(r_0008_1002__imperative,r_0008_0001__While_tmp,scope).
 arc(z_0008_1012,r_0008_0009__mine,r_0008_0008__of_genv).
 
 </pre>
 <br>
 <pre>
-fof(id_8_A_fce_0102_2001_03,axiom,
+fof(id__8_A_fce_0102_2001_03,axiom,
     ? [CATENATIVEX5,HEARERX10,OPERATORX2,CONNX4,QUANTX9,EVENTX13,EVENTX11,EVENTX7,EVENTX6,ENTITYX8] :
       ( CATENATIVEX5 = EVENTX6
       &amp; isA(EVENTX6,r_0008_0004__staying)
       &amp; arg0(EVENTX6) = r_0008_0002__you
       &amp; HEARERX10 = r_0008_0002__you
-      &amp; isA(OPERATORX2,imperative_0008_1002)
+      &amp; isA(OPERATORX2,r_0008_1002__imperative)
       &amp; scope(OPERATORX2) = CONNX4
       &amp; isA(CONNX4,r_0008_0001__While_tmp)
       &amp; restriction(CONNX4) = EVENTX7
       &amp; isA(EVENTX7,r_0008_0003___apos_re)
       &amp; catenative(EVENTX7) = CATENATIVEX5
       &amp; scope(CONNX4) = QUANTX9
-      &amp; isA(QUANTX9,r_0008_0007__quantificational__anything)
+      &amp; isA(QUANTX9,r_0008_0007__quantificational__r_0008_0007__anything)
       &amp; isA(EVENTX11,r_0008_0011__need)
       &amp; arg1(EVENTX11) = ENTITYX8
       &amp; arg0(EVENTX11) = HEARERX10

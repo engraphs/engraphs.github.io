@@ -286,7 +286,6 @@ Your teacher has now asked you to write a composition , answering the following 
 </svg>
 <br>
 <pre>
-arc(question_0023_1011,r_0023_0018__has,scope).
 arc(r_0023_0002__teacher,r_0023_0001__Your,genv).
 arc(r_0023_0003__has,r_0023_0005__asked,catenative).
 arc(r_0023_0005__asked,r_0023_0001__Your,arg2).
@@ -297,8 +296,8 @@ arc(r_0023_0008__write,r_0023_0001__Your,arg0).
 arc(r_0023_0008__write,r_0023_0010__composition,arg1).
 arc(r_0023_0012__answering,r_0023_0010__composition,arg0).
 arc(r_0023_0012__answering,r_0023_0015__question,arg1).
-arc(r_0023_0015__question,question_0023_1011,prn5).
 arc(r_0023_0015__question,r_0023_0014__following,attrib2).
+arc(r_0023_0015__question,r_0023_1011__question,prn5).
 arc(r_0023_0018__has,r_0023_0017__How,mnr1).
 arc(r_0023_0018__has,r_0023_0021__changed,catenative).
 arc(r_0023_0020__technology,r_0023_0019__modern,attrib1).
@@ -306,11 +305,12 @@ arc(r_0023_0021__changed,r_0023_0020__technology,arg0).
 arc(r_0023_0021__changed,r_0023_0024__life,arg1).
 arc(r_0023_0024__life,r_0023_0001__Your,genv).
 arc(r_0023_0024__life,r_0023_0023__daily,attrib2).
+arc(r_0023_1011__question,r_0023_0018__has,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_23_A_fce_0102_2000_06,axiom,
+fof(id__23_A_fce_0102_2000_06,axiom,
     ? [CATENATIVEX2,STATEX5,EVENTX9,CATENATIVEX15,HEARERX4,HEARERX17,EVENTX24,EVENTX23,EVENTX22,EVENTX21,OPERATORX11,EVENTX20,EVENTX19,ENTITYX1,ENTITYX6,ENTITYX7,ENTITYX13,ENTITYX16,QUALITYX3,QUALITYX12,ATTRIBX8,ATTRIBX18,ATTRIBX14] :
       ( CATENATIVEX2 = EVENTX23
       &amp; isA(EVENTX23,r_0023_0005__asked)
@@ -323,7 +323,7 @@ fof(id_23_A_fce_0102_2000_06,axiom,
       &amp; arg0(EVENTX22) = HEARERX4
       &amp; arg1(EVENTX22) = ENTITYX6
       &amp; EVENTX9 = OPERATORX11
-      &amp; isA(OPERATORX11,question_0023_1011)
+      &amp; isA(OPERATORX11,r_0023_1011__question)
       &amp; scope(OPERATORX11) = EVENTX20
       &amp; isA(EVENTX20,r_0023_0018__has)
       &amp; mnr1(EVENTX20) = QUALITYX12

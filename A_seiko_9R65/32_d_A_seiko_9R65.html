@@ -109,25 +109,25 @@ This is how the Spring Drive works .
 </svg>
 <br>
 <pre>
-arc(question_0042_1003,r_0042_0003__how,scope).
-arc(r_0042_0002__is,question_0042_1003,prd2).
 arc(r_0042_0002__is,r_0042_0001__This,arg0).
+arc(r_0042_0002__is,r_0042_1003__question,prd2).
 arc(r_0042_0003__how,r_0042_0007__works,scope).
-arc(r_0042_0007__works,r_0042_0005__Spring_Drive,arg0).
+arc(r_0042_0007__works,r_0042_0005__Spring__r_0042_0006__Drive,arg0).
+arc(r_0042_1003__question,r_0042_0003__how,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_42_A_seiko_9R65,axiom,
+fof(id__42_A_seiko_9R65,axiom,
     ? [STATEX1,EVENTX6,OPERATORX3,OPERATORX4,EVENTX5] :
       ( STATEX1 = OPERATORX3
-      &amp; isA(OPERATORX3,question_0042_1003)
+      &amp; isA(OPERATORX3,r_0042_1003__question)
       &amp; scope(OPERATORX3) = OPERATORX4
       &amp; isA(OPERATORX4,r_0042_0003__how)
       &amp; scope(OPERATORX4) = EVENTX5
       &amp; isA(EVENTX5,r_0042_0007__works)
-      &amp; arg0(EVENTX5) = r_0042_0005__Spring_Drive
-      &amp; isA(r_0042_0005__Spring_Drive,r_0042_0005__Spring_Drive)
+      &amp; arg0(EVENTX5) = r_0042_0005__Spring__r_0042_0006__Drive
+      &amp; isA(r_0042_0005__Spring__r_0042_0006__Drive,r_0042_0005__Spring_r_0042_0006__Drive)
       &amp; isA(EVENTX6,r_0042_0002__is)
       &amp; arg0(EVENTX6) = r_0042_0001__This
       &amp; prd2(EVENTX6) = STATEX1 ) ).

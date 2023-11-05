@@ -162,19 +162,19 @@ Root of the discontent : the austerity budget , including a compulsory savings s
 <br>
 <pre>
 arc(r_0029_0001__Root,r_0029_0004__discontent,r_0029_0002__of).
-arc(r_0029_0004__discontent,r_0029_0007__austerity_budget,prn4).
-arc(r_0029_0010__including,r_0029_0007__austerity_budget,arg0).
-arc(r_0029_0010__including,r_0029_0013__savings_scheme,arg1).
-arc(r_0029_0013__savings_scheme,r_0029_0012__compulsory,attrib2).
-arc(r_0029_0019__introduced,r_0029_0013__savings_scheme,arg1).
-arc(r_0029_0019__introduced,r_0029_0017__Ghana_government,arg0).
+arc(r_0029_0004__discontent,r_0029_0007__austerity__r_0029_0008__budget,prn4).
+arc(r_0029_0010__including,r_0029_0007__austerity__r_0029_0008__budget,arg0).
+arc(r_0029_0010__including,r_0029_0013__savings__r_0029_0014__scheme,arg1).
+arc(r_0029_0013__savings__r_0029_0014__scheme,r_0029_0012__compulsory,attrib2).
+arc(r_0029_0019__introduced,r_0029_0013__savings__r_0029_0014__scheme,arg1).
+arc(r_0029_0019__introduced,r_0029_0017__Ghana__r_0029_0018__government,arg0).
 arc(r_0029_0019__introduced,r_0029_0021__July,r_0029_0020__in_tmp).
 arc(z_0029_1011,r_0029_0001__Root,z_0029_1002).
 
 </pre>
 <br>
 <pre>
-fof(id_29_A_lob_A02,axiom,
+fof(id__29_A_lob_A02,axiom,
     ? [EVENTX12,EVENTX10,EVENTX9,ENTITYX3,ENTITYX4,ENTITYX5,ENTITYX6,ENTITYX8,ATTRIBX7] :
       ( isA(ENTITYX3,r_0029_0001__Root)
       &amp; r_0029_0002__of(ENTITYX3) = ENTITYX4
@@ -183,14 +183,14 @@ fof(id_29_A_lob_A02,axiom,
       &amp; isA(EVENTX10,r_0029_0010__including)
       &amp; arg0(EVENTX10) = ENTITYX5
       &amp; arg1(EVENTX10) = ENTITYX6
-      &amp; isA(ENTITYX5,r_0029_0007__austerity_budget)
+      &amp; isA(ENTITYX5,r_0029_0007__austerity__r_0029_0008__budget)
       &amp; isA(EVENTX9,r_0029_0019__introduced)
       &amp; arg1(EVENTX9) = ENTITYX6
       &amp; arg0(EVENTX9) = ENTITYX8
       &amp; r_0029_0020__in_tmp(EVENTX9) = r_0029_0021__July
-      &amp; isA(ENTITYX6,r_0029_0013__savings_scheme)
+      &amp; isA(ENTITYX6,r_0029_0013__savings__r_0029_0014__scheme)
       &amp; attrib2(ENTITYX6) = ATTRIBX7
-      &amp; isA(ENTITYX8,r_0029_0017__Ghana_government)
+      &amp; isA(ENTITYX8,r_0029_0017__Ghana__r_0029_0018__government)
       &amp; isA(ATTRIBX7,r_0029_0012__compulsory)
       &amp; isA(EVENTX12,z_0029_1011)
       &amp; z_0029_1002(EVENTX12) = ENTITYX3 ) ).

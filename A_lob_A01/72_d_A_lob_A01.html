@@ -129,7 +129,7 @@ And , since this is election year in West Germany , Dr Adenauer is in a tough sp
 <title>0076_0014&#45;&gt;0076_0018</title>
 <path fill="none" stroke="black" d="M491.96,-178.27C511.46,-164.23 543.06,-141.47 565.59,-125.24"/>
 <polygon fill="black" stroke="black" points="567.66,-128.06 573.73,-119.37 563.57,-122.38 567.66,-128.06"/>
-<text text-anchor="middle" x="561.8" y="-144.8" font-family="fixed" font-size="14.00">in[loc]</text>
+<text text-anchor="middle" x="583.3" y="-144.8" font-family="fixed" font-size="14.00">in[prd2][loc]</text>
 </g>
 <!-- 0076_0017 -->
 <g id="node9" class="node">
@@ -151,18 +151,18 @@ And , since this is election year in West Germany , Dr Adenauer is in a tough sp
 arc(r_0076_0003__since_cnt,r_0076_0005__is,restriction).
 arc(r_0076_0003__since_cnt,r_0076_0014__is,scope).
 arc(r_0076_0005__is,r_0076_0004__this,arg0).
-arc(r_0076_0005__is,r_0076_0006__election_year,prd2).
-arc(r_0076_0005__is,r_0076_0009__West_Germany,r_0076_0008__in_loc).
-arc(r_0076_0014__is,r_0076_0012__Dr_Adenauer,arg0).
-arc(r_0076_0014__is,r_0076_0018__spot,r_0076_0015__in_loc).
+arc(r_0076_0005__is,r_0076_0006__election__r_0076_0007__year,prd2).
+arc(r_0076_0005__is,r_0076_0009__West__r_0076_0010__Germany,r_0076_0008__in_loc).
+arc(r_0076_0014__is,r_0076_0012__Dr__r_0076_0013__Adenauer,arg0).
+arc(r_0076_0014__is,r_0076_0018__spot,r_0076_0015__in_prd2_loc).
 arc(r_0076_0018__spot,r_0076_0017__tough,attrib2).
 
 </pre>
 <br>
 <pre>
-fof(id_76_A_lob_A01,axiom,
+fof(id__76_A_lob_A01,axiom,
     ? [CONNX1,EVENTX6,EVENTX3,ENTITYX4,ENTITYX2,ATTRIBX5] :
-      ( isA(ENTITYX2,r_0076_0006__election_year)
+      ( isA(ENTITYX2,r_0076_0006__election__r_0076_0007__year)
       &amp; isA(ENTITYX4,r_0076_0018__spot)
       &amp; attrib2(ENTITYX4) = ATTRIBX5
       &amp; isA(ATTRIBX5,r_0076_0017__tough)
@@ -171,11 +171,11 @@ fof(id_76_A_lob_A01,axiom,
       &amp; isA(EVENTX3,r_0076_0005__is)
       &amp; arg0(EVENTX3) = r_0076_0004__this
       &amp; prd2(EVENTX3) = ENTITYX2
-      &amp; r_0076_0008__in_loc(EVENTX3) = r_0076_0009__West_Germany
+      &amp; r_0076_0008__in_loc(EVENTX3) = r_0076_0009__West__r_0076_0010__Germany
       &amp; scope(CONNX1) = EVENTX6
       &amp; isA(EVENTX6,r_0076_0014__is)
-      &amp; arg0(EVENTX6) = r_0076_0012__Dr_Adenauer
-      &amp; r_0076_0015__in_loc(EVENTX6) = ENTITYX4 ) ).
+      &amp; arg0(EVENTX6) = r_0076_0012__Dr__r_0076_0013__Adenauer
+      &amp; r_0076_0015__in_prd2_loc(EVENTX6) = ENTITYX4 ) ).
 
 
 </pre>
@@ -248,15 +248,15 @@ fof(id_76_A_lob_A01,axiom,
 <line x1="1500.96" y1="183" x2="1500.96" y2="214" style="stroke:#000000;stroke-width:2;"/>
 <line x1="1440.72" y1="122" x2="1500" y2="153" style="stroke:#000000;stroke-width:2;"/>
 <line x1="1140.72" y1="61" x2="1440" y2="92" style="stroke:#000000;stroke-width:2;"/>
-<text x="1620.36" y="112" text-anchor="middle">BEP</text>
-<text x="1620.36" y="173" text-anchor="middle">is</text>
-<line x1="1620.36" y1="122" x2="1620.36" y2="153" style="stroke:#000000;stroke-width:2;"/>
+<text x="1620.84" y="112" text-anchor="middle">BEP;~La</text>
+<text x="1620.84" y="173" text-anchor="middle">is</text>
+<line x1="1620.84" y1="122" x2="1620.84" y2="153" style="stroke:#000000;stroke-width:2;"/>
 <line x1="1140.72" y1="61" x2="1620" y2="92" style="stroke:#000000;stroke-width:2;"/>
-<text x="1920.72" y="112" text-anchor="middle">PP-LOC</text>
+<text x="1921.32" y="112" text-anchor="middle">PP-PRD2-LOC</text>
 <text x="1740.72" y="173" text-anchor="middle">P-ROLE</text>
 <text x="1740.72" y="234" text-anchor="middle">in</text>
 <line x1="1740.72" y1="183" x2="1740.72" y2="214" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1920.72" y1="122" x2="1740" y2="153" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1921.32" y1="122" x2="1740" y2="153" style="stroke:#000000;stroke-width:2;"/>
 <text x="1980.24" y="173" text-anchor="middle">NP</text>
 <text x="1860.12" y="234" text-anchor="middle">D</text>
 <text x="1860.12" y="295" text-anchor="middle">a</text>
@@ -272,7 +272,7 @@ fof(id_76_A_lob_A01,axiom,
 <text x="2100.48" y="295" text-anchor="middle">spot</text>
 <line x1="2100.48" y1="244" x2="2100.48" y2="275" style="stroke:#000000;stroke-width:2;"/>
 <line x1="1980.24" y1="183" x2="2100" y2="214" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1920.72" y1="122" x2="1980" y2="153" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1921.32" y1="122" x2="1980" y2="153" style="stroke:#000000;stroke-width:2;"/>
 <line x1="1140.72" y1="61" x2="1920" y2="92" style="stroke:#000000;stroke-width:2;"/>
 <text x="2220.48" y="112" text-anchor="middle">PUNC</text>
 <text x="2220.48" y="173" text-anchor="middle">.</text>
@@ -294,11 +294,11 @@ fof(id_76_A_lob_A01,axiom,
           (PUNC ,)
           (NP-SBJ (N Dr;{dr})
                   (NPR Adenauer;{Adenauer}))
-          (BEP is;{be})
-          (PP-LOC (P-ROLE in;{in})
-                  (NP (D a;{a})
-                      (ADJP (ADJ tough;{tough}))
-                      (N spot;{spot})))
+          (BEP;~La is;{be})
+          (PP-PRD2-LOC (P-ROLE in;{in})
+                       (NP (D a;{a})
+                           (ADJP (ADJ tough;{tough}))
+                           (N spot;{spot})))
           (PUNC .))
   (ID 76_A_lob_A01))
 </pre>

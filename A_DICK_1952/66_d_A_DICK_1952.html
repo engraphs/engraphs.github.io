@@ -168,33 +168,33 @@
 </svg>
 <br>
 <pre>
-arc(imperative_0089_1007,r_0089_0002__Give,scope).
-arc(mnr_0089_1011,r_0089_0009__said,scope).
-arc(mnr_0089_1011,r_0089_0011__hurrying,restriction).
 arc(r_0089_0002__Give,r_0089_0003__us,arg2).
 arc(r_0089_0002__Give,r_0089_0005__hand,arg1).
 arc(r_0089_0009__said,r_0089_0008__Fomar,arg0).
-arc(r_0089_0009__said,utterance_0089_1003,arg1).
+arc(r_0089_0009__said,r_0089_1003__utterance,arg1).
 arc(r_0089_0011__hurrying,r_0089_0008__Fomar,arg0).
 arc(r_0089_0011__hurrying,r_0089_0012__past,clr_dir2).
-arc(utterance_0089_1003,imperative_0089_1007,part1).
+arc(r_0089_1003__utterance,r_0089_1007__imperative,part1).
+arc(r_0089_1007__imperative,r_0089_0002__Give,scope).
+arc(r_0089_1011__mnr,r_0089_0009__said,scope).
+arc(r_0089_1011__mnr,r_0089_0011__hurrying,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_89_A_DICK_1952,axiom,
+fof(id__89_A_DICK_1952,axiom,
     ? [STATEX1,CONNX12,EVENTX14,EVENTX15,CONJX10,OPERATORX7,EVENTX9,ENTITYX8,QUALITYX13] :
       ( STATEX1 = CONJX10
-      &amp; isA(CONJX10,utterance_0089_1003)
+      &amp; isA(CONJX10,r_0089_1003__utterance)
       &amp; part1(CONJX10) = OPERATORX7
-      &amp; isA(OPERATORX7,imperative_0089_1007)
+      &amp; isA(OPERATORX7,r_0089_1007__imperative)
       &amp; scope(OPERATORX7) = EVENTX9
       &amp; isA(EVENTX9,r_0089_0002__Give)
       &amp; arg2(EVENTX9) = r_0089_0003__us
       &amp; arg1(EVENTX9) = ENTITYX8
       &amp; isA(ENTITYX8,r_0089_0005__hand)
       &amp; isA(QUALITYX13,r_0089_0012__past)
-      &amp; isA(CONNX12,mnr_0089_1011)
+      &amp; isA(CONNX12,r_0089_1011__mnr)
       &amp; scope(CONNX12) = EVENTX15
       &amp; isA(EVENTX15,r_0089_0009__said)
       &amp; arg1(EVENTX15) = STATEX1

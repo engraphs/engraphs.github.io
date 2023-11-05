@@ -168,32 +168,32 @@
 </svg>
 <br>
 <pre>
-arc(cnt_0213_1009,r_0213_0008__said,scope).
-arc(cnt_0213_1009,r_0213_0010__coming,restriction).
-arc(question_0213_1005,r_0213_0003__is,scope).
 arc(r_0213_0003__is,r_0213_0002__What,prd2).
 arc(r_0213_0003__is,r_0213_0004__it,arg0).
 arc(r_0213_0008__said,r_0213_0007__Tance,arg0).
-arc(r_0213_0008__said,utterance_0213_1003,arg1).
+arc(r_0213_0008__said,r_0213_1003__utterance,arg1).
 arc(r_0213_0010__coming,r_0213_0007__Tance,arg0).
 arc(r_0213_0010__coming,r_0213_0012__them,r_0213_0011__up_to_dir).
-arc(utterance_0213_1003,question_0213_1005,part1).
+arc(r_0213_1003__utterance,r_0213_1005__question,part1).
+arc(r_0213_1005__question,r_0213_0003__is,scope).
+arc(r_0213_1009__cnt,r_0213_0008__said,scope).
+arc(r_0213_1009__cnt,r_0213_0010__coming,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_213_A_DICK_1952,axiom,
+fof(id__213_A_DICK_1952,axiom,
     ? [STATEX1,CONNX10,EVENTX11,EVENTX12,CONJX8,OPERATORX5,EVENTX7,ENTITYX6] :
       ( STATEX1 = CONJX8
-      &amp; isA(CONJX8,utterance_0213_1003)
+      &amp; isA(CONJX8,r_0213_1003__utterance)
       &amp; part1(CONJX8) = OPERATORX5
-      &amp; isA(OPERATORX5,question_0213_1005)
+      &amp; isA(OPERATORX5,r_0213_1005__question)
       &amp; scope(OPERATORX5) = EVENTX7
       &amp; isA(EVENTX7,r_0213_0003__is)
       &amp; prd2(EVENTX7) = ENTITYX6
       &amp; arg0(EVENTX7) = r_0213_0004__it
       &amp; isA(ENTITYX6,r_0213_0002__What)
-      &amp; isA(CONNX10,cnt_0213_1009)
+      &amp; isA(CONNX10,r_0213_1009__cnt)
       &amp; scope(CONNX10) = EVENTX12
       &amp; isA(EVENTX12,r_0213_0008__said)
       &amp; arg1(EVENTX12) = STATEX1

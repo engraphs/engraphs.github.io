@@ -331,13 +331,11 @@ Thinking back on this transition period , from its start in October of 2009 thro
 </svg>
 <br>
 <pre>
-arc(abs_0007_1001,r_0007_0001__Thinking,restriction).
-arc(abs_0007_1001,r_0007_0029__have,scope).
 arc(r_0007_0001__Thinking,r_0007_0002__back,dir2).
-arc(r_0007_0001__Thinking,r_0007_0005__transition_period,r_0007_0003__on_clr).
+arc(r_0007_0001__Thinking,r_0007_0005__transition__r_0007_0006__period,r_0007_0003__on_clr).
 arc(r_0007_0001__Thinking,r_0007_0010__start,r_0007_0008__from_dir).
 arc(r_0007_0001__Thinking,r_0007_0020__emphasis,r_0007_0015__through_dir).
-arc(r_0007_0010__start,r_0007_0005__transition_period,genv).
+arc(r_0007_0010__start,r_0007_0005__transition__r_0007_0006__period,genv).
 arc(r_0007_0010__start,r_0007_0012__October,r_0007_0011__in).
 arc(r_0007_0012__October,r_0007_0014__2009,r_0007_0013__of).
 arc(r_0007_0018__year,r_0007_0017__current,attrib2).
@@ -352,13 +350,15 @@ arc(r_0007_0030__resulted,r_0007_0028__efforts,arg0).
 arc(r_0007_0030__resulted,r_0007_0033__progress,r_0007_0031__in_clr).
 arc(r_0007_0033__progress,r_0007_0032__steady,attrib1).
 arc(r_0007_0033__progress,r_0007_0035__becoming,r_0007_0034__toward).
-arc(r_0007_0035__becoming,r_0007_0038__research_organization,prd2).
-arc(r_0007_0038__research_organization,r_0007_0037__full_fledged,attrib2).
+arc(r_0007_0035__becoming,r_0007_0038__research__r_0007_0039__organization,prd2).
+arc(r_0007_0038__research__r_0007_0039__organization,r_0007_0037__full_fledged,attrib2).
+arc(r_0007_1001__abs,r_0007_0001__Thinking,restriction).
+arc(r_0007_1001__abs,r_0007_0029__have,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_7_A_NINJAL_mission,axiom,
+fof(id__7_A_NINJAL_mission,axiom,
     ? [EVENTX13,CATENATIVEX22,EVENTX25,PERIODX8,SPEAKER_AND_HEARERX20,CONNX2,EVENTX32,EVENTX31,EVENTX30,EVENTX18,EVENTX17,QUALITYX5,ENTITYX19,ENTITYX23,ENTITYX28,PERIODX6,ENTITYX7,ENTITYX10,ENTITYX11,ENTITYX16,ENTITYX9,ATTRIBX24,ATTRIBX29,ATTRIBX21,ATTRIBX12] :
       ( EVENTX13 = EVENTX17
       &amp; isA(EVENTX17,r_0007_0022__disseminating)
@@ -371,7 +371,7 @@ fof(id_7_A_NINJAL_mission,axiom,
       &amp; isA(EVENTX30,r_0007_0035__becoming)
       &amp; prd2(EVENTX30) = ENTITYX28
       &amp; isA(QUALITYX5,r_0007_0002__back)
-      &amp; isA(PERIODX6,r_0007_0005__transition_period)
+      &amp; isA(PERIODX6,r_0007_0005__transition__r_0007_0006__period)
       &amp; isA(ENTITYX7,r_0007_0010__start)
       &amp; genv(ENTITYX7) = PERIODX8
       &amp; r_0007_0011__in(ENTITYX7) = r_0007_0012__October
@@ -391,7 +391,7 @@ fof(id_7_A_NINJAL_mission,axiom,
       &amp; isA(ENTITYX23,r_0007_0033__progress)
       &amp; attrib1(ENTITYX23) = ATTRIBX24
       &amp; r_0007_0034__toward(ENTITYX23) = EVENTX25
-      &amp; isA(ENTITYX28,r_0007_0038__research_organization)
+      &amp; isA(ENTITYX28,r_0007_0038__research__r_0007_0039__organization)
       &amp; attrib2(ENTITYX28) = ATTRIBX29
       &amp; isA(r_0007_0012__October,r_0007_0012__October)
       &amp; r_0007_0013__of(r_0007_0012__October) = ENTITYX9
@@ -399,7 +399,7 @@ fof(id_7_A_NINJAL_mission,axiom,
       &amp; isA(ATTRIBX21,r_0007_0027__concerted)
       &amp; isA(ATTRIBX24,r_0007_0032__steady)
       &amp; isA(ATTRIBX29,r_0007_0037__full_fledged)
-      &amp; isA(CONNX2,abs_0007_1001)
+      &amp; isA(CONNX2,r_0007_1001__abs)
       &amp; restriction(CONNX2) = EVENTX18
       &amp; isA(EVENTX18,r_0007_0001__Thinking)
       &amp; dir2(EVENTX18) = QUALITYX5

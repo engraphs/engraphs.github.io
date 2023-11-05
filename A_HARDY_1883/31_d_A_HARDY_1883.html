@@ -415,10 +415,8 @@ Shepherd Fennel had married well , his wife being a dairyman 's daughter from a 
 </svg>
 <br>
 <pre>
-arc(abs_0034_1003,r_0034_0004__married,scope).
-arc(abs_0034_1003,r_0034_0009__being,restriction).
-arc(r_0034_0003__had,abs_0034_1003,catenative).
-arc(r_0034_0004__married,r_0034_0001__Shepherd_Fennel,arg0).
+arc(r_0034_0003__had,r_0034_1003__abs,catenative).
+arc(r_0034_0004__married,r_0034_0001__Shepherd__r_0034_0002__Fennel,arg0).
 arc(r_0034_0004__married,r_0034_0005__well,mnr2).
 arc(r_0034_0008__wife,r_0034_0007__his,genv).
 arc(r_0034_0009__being,r_0034_0008__wife,arg0).
@@ -427,7 +425,7 @@ arc(r_0034_0009__being,r_0034_0016__vale,r_0034_0014__from_dir).
 arc(r_0034_0013__daughter,r_0034_0011__dairyman,genv).
 arc(r_0034_0016__vale,r_0034_0019__distance,r_0034_0017__at).
 arc(r_0034_0022__brought,r_0034_0008__wife,arg0).
-arc(r_0034_0022__brought,r_0034_0023__fifty_guineas,arg1).
+arc(r_0034_0022__brought,r_0034_0023__fifty__r_0034_0024__guineas,arg1).
 arc(r_0034_0022__brought,r_0034_0027__pocket,r_0034_0025__in_loc).
 arc(r_0034_0027__pocket,r_0034_0026__her,genv).
 arc(r_0034_0029__and,r_0034_0022__brought,conj1).
@@ -444,17 +442,19 @@ arc(r_0034_0038__required,r_0034_0040__ministering,r_0034_0039__for_cnt).
 arc(r_0034_0040__ministering,r_0034_0043__needs,r_0034_0041__to_clr).
 arc(r_0034_0043__needs,r_0034_0047__family,r_0034_0044__of).
 arc(r_0034_0046__coming,r_0034_0047__family,arg0).
+arc(r_0034_1003__abs,r_0034_0004__married,scope).
+arc(r_0034_1003__abs,r_0034_0009__being,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_34_A_HARDY_1883,axiom,
+fof(id__34_A_HARDY_1883,axiom,
     ? [CATENATIVEX1,CATENATIVEX12,EVENTX14,EVENTX31,CONNX4,EVENTX29,CONJX24,CONNX10,OPERATORX11,EVENTX22,EVENTX21,EVENTX20,EVENTX19,EVENTX23,EVENTX8,EVENTX30,ENTITYX5,ENTITYX25,ENTITYX27,ENTITYX28,ENTITYX26,ENTITYX17,ENTITYX18,ENTITYX6,ENTITYX7,QUALITYX2,QUALITYX9] :
       ( CATENATIVEX1 = CONNX4
-      &amp; isA(CONNX4,abs_0034_1003)
+      &amp; isA(CONNX4,r_0034_1003__abs)
       &amp; scope(CONNX4) = EVENTX30
       &amp; isA(EVENTX30,r_0034_0004__married)
-      &amp; arg0(EVENTX30) = r_0034_0001__Shepherd_Fennel
+      &amp; arg0(EVENTX30) = r_0034_0001__Shepherd__r_0034_0002__Fennel
       &amp; mnr2(EVENTX30) = QUALITYX2
       &amp; restriction(CONNX4) = EVENTX29
       &amp; isA(EVENTX29,r_0034_0009__being)
@@ -488,7 +488,7 @@ fof(id_34_A_HARDY_1883,axiom,
       &amp; catenative(EVENTX22) = CATENATIVEX12
       &amp; isA(ENTITYX5,r_0034_0008__wife)
       &amp; genv(ENTITYX5) = r_0034_0007__his
-      &amp; isA(ENTITYX6,r_0034_0023__fifty_guineas)
+      &amp; isA(ENTITYX6,r_0034_0023__fifty__r_0034_0024__guineas)
       &amp; isA(ENTITYX7,r_0034_0027__pocket)
       &amp; genv(ENTITYX7) = r_0034_0026__her
       &amp; isA(ENTITYX17,r_0034_0043__needs)

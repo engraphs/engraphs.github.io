@@ -1039,17 +1039,15 @@ Regardless of the posted speed limit , your speed should depend on : The number 
 </svg>
 <br>
 <pre>
-arc(question_0007_1065,r_0009_0029__is,scope).
-arc(question_0007_1092,r_0009_0061__is,scope).
 arc(r_0007_0001__For_example,r_0007_0003__if_cnt_cnd,scope).
 arc(r_0007_0003__if_cnt_cnd,r_0007_0005__are,restriction).
 arc(r_0007_0003__if_cnt_cnd,r_0007_0021__could,scope).
 arc(r_0007_0005__are,r_0007_0006__driving,catenative).
 arc(r_0007_0006__driving,r_0007_0004__you,arg0).
-arc(r_0007_0006__driving,r_0007_0007__45_mph,arg1).
-arc(r_0007_0006__driving,r_0007_0013__speed_zone,r_0007_0009__in_loc).
+arc(r_0007_0006__driving,r_0007_0007__45__r_0007_0008__mph,arg1).
+arc(r_0007_0006__driving,r_0007_0013__speed__r_0007_0014__zone,r_0007_0009__in_loc).
 arc(r_0007_0006__driving,r_0007_0018__fog,r_0007_0015__during_tmp).
-arc(r_0007_0013__speed_zone,r_0007_0011__55_mph,nlyr2).
+arc(r_0007_0013__speed__r_0007_0014__zone,r_0007_0011__55_r_0007_0012__mph,nlyr2).
 arc(r_0007_0018__fog,r_0007_0017__dense,attrib2).
 arc(r_0007_0021__could,r_0007_0022__be,scope).
 arc(r_0007_0022__be,r_0007_0023__cited,catenative).
@@ -1058,14 +1056,20 @@ arc(r_0007_0023__cited,r_0007_0025__driving,r_0007_0024__for_rst).
 arc(r_0007_0025__driving,r_0007_0028__fast,mnr3).
 arc(r_0007_0028__fast,r_0007_0027__too,quality1).
 arc(r_0007_0028__fast,r_0007_0030__conditions,r_0007_0029__for).
+arc(r_0007_1051__utterance,r_0007_1065__question,part2).
+arc(r_0007_1051__utterance,r_0007_1092__question,part4).
+arc(r_0007_1051__utterance,z_0007_1062,part1).
+arc(r_0007_1051__utterance,z_0007_1089,part3).
+arc(r_0007_1065__question,r_0009_0029__is,scope).
+arc(r_0007_1092__question,r_0009_0061__is,scope).
 arc(r_0008_0002__may,r_0008_0005__drive,scope).
 arc(r_0008_0005__drive,r_0007_0004__you,arg0).
 arc(r_0008_0005__drive,r_0008_0003__never,tmp3).
 arc(r_0008_0005__drive,r_0008_0004__legally,mnr4).
 arc(r_0008_0005__drive,r_0008_0006__faster,mnr6).
-arc(r_0008_0006__faster,r_0008_0010__speed_limit,r_0008_0007__than).
+arc(r_0008_0006__faster,r_0008_0010__speed__r_0008_0011__limit,r_0008_0007__than).
 arc(r_0008_0006__faster,r_0009_0006__limit,r_0008_0007__than).
-arc(r_0008_0009__posted,r_0008_0010__speed_limit,arg1).
+arc(r_0008_0009__posted,r_0008_0010__speed__r_0008_0011__limit,arg1).
 arc(r_0008_0009__posted,r_0009_0006__limit,arg1).
 arc(r_0008_0013__even_if_cnt,r_0008_0002__may,scope).
 arc(r_0008_0013__even_if_cnt,r_0008_0015__think,restriction).
@@ -1074,21 +1078,21 @@ arc(r_0008_0015__think,r_0008_0017__is,arg1).
 arc(r_0008_0017__is,r_0008_0018__safe,prd2).
 arc(r_0008_0017__is,r_0008_0021__so,arg0).
 arc(r_0008_0021__so,r_0008_0020__do,scope).
-arc(r_0009_0001__Regardless,r_0008_0010__speed_limit,r_0009_0002__of).
+arc(r_0009_0001__Regardless,r_0008_0010__speed__r_0008_0011__limit,r_0009_0002__of).
 arc(r_0009_0001__Regardless,r_0009_0006__limit,r_0009_0002__of).
-arc(r_0009_0004__posted,r_0008_0010__speed_limit,arg1).
+arc(r_0009_0004__posted,r_0008_0010__speed__r_0008_0011__limit,arg1).
 arc(r_0009_0004__posted,r_0009_0006__limit,arg1).
 arc(r_0009_0009__speed,r_0007_0004__you,genv).
 arc(r_0009_0010__should,r_0009_0011__depend,scope).
+arc(r_0009_0011__depend,r_0007_1051__utterance,r_0009_0012__on_clr).
 arc(r_0009_0011__depend,r_0009_0001__Regardless,mod1).
 arc(r_0009_0011__depend,r_0009_0009__speed,arg0).
-arc(r_0009_0011__depend,utterance_0007_1051,r_0009_0012__on_clr).
 arc(r_0009_0016__and,r_0009_0015__number,conj1).
 arc(r_0009_0016__and,r_0009_0017__speed,conj2).
 arc(r_0009_0016__and,r_0009_0020__vehicles,r_0009_0018__of).
 arc(r_0009_0020__vehicles,r_0009_0019__other,attrib1).
 arc(r_0009_0020__vehicles,r_0009_0023__road,r_0009_0021__on).
-arc(r_0009_0029__is,r_0009_0027__road_surface,arg0).
+arc(r_0009_0029__is,r_0009_0027__road__r_0009_0028__surface,arg0).
 arc(r_0009_0029__is,r_0009_0042__or,prd2).
 arc(r_0009_0042__or,r_0009_0030__smooth,conj1).
 arc(r_0009_0042__or,r_0009_0032__rough,conj2).
@@ -1112,17 +1116,13 @@ arc(r_0009_0070__or,r_0009_0064__foggy,conj2).
 arc(r_0009_0070__or,r_0009_0066__snowy,conj3).
 arc(r_0009_0070__or,r_0009_0068__windy,conj4).
 arc(r_0009_0070__or,r_0009_0071__dusty,conj5).
-arc(utterance_0007_1051,question_0007_1065,part2).
-arc(utterance_0007_1051,question_0007_1092,part4).
-arc(utterance_0007_1051,z_0007_1062,part1).
-arc(utterance_0007_1051,z_0007_1089,part3).
 arc(z_0007_1062,r_0009_0016__and,z_0007_1055).
 arc(z_0007_1089,r_0009_0046__or,z_0007_1079).
 
 </pre>
 <br>
 <pre>
-fof(id_7_A_driver_handbook__8_A_driver_handbook__9_A_driver_handbook,axiom,
+fof(id__7_A_driver_handbook__8_A_driver_handbook__9_A_driver_handbook,axiom,
     ? [CATENATIVEX3,CATENATIVEX13,EVENTX15,STATEX33,STATEX36,EVENTX49,HEARERX11,HEARERX24,HEARERX32,PSLX44,HEARERX48,OPERATORX102,EVENTX103,CONJX101,OPERATORX92,EVENTX100,EVENTX90,CONJX88,EVENTX87,EVENTX85,OPERATORX65,EVENTX75,EVENTX63,EVENTX46,CONNX31,EVENTX40,EVENTX39,OPERATORX37,EVENTX38,OPERATORX41,EVENTX42,EVENTX30,OPERATORX1,CONNX2,OPERATORX12,EVENTX23,EVENTX22,EVENTX21,EVENTX10,EVENTX9,ENTITYX47,ENTITYX80,ENTITYX81,ENTITYX82,ENTITYX86,ENTITYX83,ENTITYX84,ENTITYX66,ENTITYX56,ENTITYX57,ENTITYX60,ENTITYX61,ENTITYX59,PSLX28,ENTITYX20,ENTITYX4,ENTITYX5,ENTITYX7,ENTITYX6,ATTRIBX94,ATTRIBX95,ATTRIBX96,ATTRIBX97,ATTRIBX98,ATTRIBX99,ATTRIBX67,ATTRIBX68,ATTRIBX69,ATTRIBX70,ATTRIBX71,ATTRIBX72,ATTRIBX73,ATTRIBX74,ATTRIBX58,ATTRIBX35,ATTRIBX8,QUALITYX43,QUALITYX25,QUALITYX26,QUALITYX27,QUALITYX18,QUALITYX19] :
       ( CATENATIVEX3 = EVENTX9
       &amp; isA(EVENTX9,r_0007_0006__driving)
@@ -1147,12 +1147,12 @@ fof(id_7_A_driver_handbook__8_A_driver_handbook__9_A_driver_handbook,axiom,
       &amp; scope(OPERATORX37) = EVENTX38
       &amp; isA(EVENTX38,r_0008_0020__do)
       &amp; EVENTX49 = CONJX101
-      &amp; isA(CONJX101,utterance_0007_1051)
+      &amp; isA(CONJX101,r_0007_1051__utterance)
       &amp; part1(CONJX101) = EVENTX63
       &amp; isA(EVENTX63,z_0007_1062)
       &amp; z_0007_1055(EVENTX63) = ENTITYX56
       &amp; part2(CONJX101) = OPERATORX65
-      &amp; isA(OPERATORX65,question_0007_1065)
+      &amp; isA(OPERATORX65,r_0007_1065__question)
       &amp; scope(OPERATORX65) = EVENTX75
       &amp; isA(EVENTX75,r_0009_0029__is)
       &amp; arg0(EVENTX75) = ENTITYX66
@@ -1161,14 +1161,14 @@ fof(id_7_A_driver_handbook__8_A_driver_handbook__9_A_driver_handbook,axiom,
       &amp; isA(EVENTX90,z_0007_1089)
       &amp; z_0007_1079(EVENTX90) = ENTITYX80
       &amp; part4(CONJX101) = OPERATORX92
-      &amp; isA(OPERATORX92,question_0007_1092)
+      &amp; isA(OPERATORX92,r_0007_1092__question)
       &amp; scope(OPERATORX92) = EVENTX100
       &amp; isA(EVENTX100,r_0009_0061__is)
       &amp; prd2(EVENTX100) = ATTRIBX94
-      &amp; isA(ENTITYX4,r_0007_0007__45_mph)
-      &amp; isA(ENTITYX5,r_0007_0013__speed_zone)
+      &amp; isA(ENTITYX4,r_0007_0007__45__r_0007_0008__mph)
+      &amp; isA(ENTITYX5,r_0007_0013__speed__r_0007_0014__zone)
       &amp; nlyr2(ENTITYX5) = ENTITYX6
-      &amp; isA(ENTITYX6,r_0007_0011__55_mph)
+      &amp; isA(ENTITYX6,r_0007_0011__55__r_0007_0012__mph)
       &amp; isA(ENTITYX7,r_0007_0018__fog)
       &amp; attrib2(ENTITYX7) = ATTRIBX8
       &amp; HEARERX11 = r_0007_0004__you
@@ -1176,7 +1176,7 @@ fof(id_7_A_driver_handbook__8_A_driver_handbook__9_A_driver_handbook,axiom,
       &amp; HEARERX24 = r_0007_0004__you
       &amp; isA(EVENTX30,r_0008_0009__posted)
       &amp; arg1(EVENTX30) = PSLX28
-      &amp; isA(PSLX28,r_0008_0010__speed_limit)
+      &amp; isA(PSLX28,r_0008_0010__speed__r_0008_0011__limit)
       &amp; ( HEARERX32 = HEARERX24
         | HEARERX32 = r_0007_0004__you )
       &amp; PSLX44 = PSLX28
@@ -1196,7 +1196,7 @@ fof(id_7_A_driver_handbook__8_A_driver_handbook__9_A_driver_handbook,axiom,
       &amp; isA(ENTITYX59,r_0009_0023__road)
       &amp; isA(ENTITYX60,r_0009_0015__number)
       &amp; isA(ENTITYX61,r_0009_0017__speed)
-      &amp; isA(ENTITYX66,r_0009_0027__road_surface)
+      &amp; isA(ENTITYX66,r_0009_0027__road__r_0009_0028__surface)
       &amp; isA(ENTITYX80,r_0009_0046__or)
       &amp; conj1(ENTITYX80) = ENTITYX81
       &amp; conj2(ENTITYX80) = ENTITYX82

@@ -247,31 +247,31 @@ Later the Rinzai school , which achieved the pinnacle of Zen teaching , was brou
 </svg>
 <br>
 <pre>
-arc(cnt_0013_1008,r_0013_0026__went,scope).
-arc(cnt_0013_1008,r_0013_0030__study,restriction).
-arc(r_0013_0007__achieved,r_0013_0003__Rinzai_school,arg0).
+arc(r_0013_0007__achieved,r_0013_0003__Rinzai__r_0013_0004__school,arg0).
 arc(r_0013_0007__achieved,r_0013_0009__pinnacle,arg1).
-arc(r_0013_0009__pinnacle,r_0013_0011__Zen_teaching,r_0013_0010__of).
+arc(r_0013_0009__pinnacle,r_0013_0011__Zen__r_0013_0012__teaching,r_0013_0010__of).
 arc(r_0013_0014__was,r_0013_0001__Later,tmp1).
 arc(r_0013_0014__was,r_0013_0015__brought,catenative).
-arc(r_0013_0015__brought,r_0013_0003__Rinzai_school,arg1).
+arc(r_0013_0015__brought,r_0013_0003__Rinzai__r_0013_0004__school,arg1).
 arc(r_0013_0015__brought,r_0013_0017__Japan,r_0013_0016__to_dir).
-arc(r_0013_0015__brought,r_0013_0020__Kamakura_period,r_0013_0018__in_tmp).
-arc(r_0013_0015__brought,r_0013_0023__Eisai,arg0_by_lgs).
+arc(r_0013_0015__brought,r_0013_0020__Kamakura__r_0013_0021__period,r_0013_0018__in_tmp).
+arc(r_0013_0015__brought,r_0013_0023__Eisai,arg0__r_0013_0022__by_lgs).
 arc(r_0013_0026__went,r_0013_0023__Eisai,arg0).
 arc(r_0013_0026__went,r_0013_0028__China,r_0013_0027__to_dir).
 arc(r_0013_0030__study,r_0013_0023__Eisai,arg0).
 arc(r_0013_0030__study,r_0013_0035__period,r_0013_0031__in_loc).
-arc(r_0013_0035__period,r_0013_0033__Southern_Song,nlyr2).
+arc(r_0013_0035__period,r_0013_0033__Southern__r_0013_0034__Song,nlyr2).
+arc(r_0013_1008__cnt,r_0013_0026__went,scope).
+arc(r_0013_1008__cnt,r_0013_0030__study,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_13_A_KYOTO_2,axiom,
+fof(id__13_A_KYOTO_2,axiom,
     ? [CATENATIVEX6,EVENTX14,EVENTX13,CONNX9,EVENTX11,EVENTX12,EVENTX5,QUALITYX1,ENTITYX2,ENTITYX7,ENTITYX10,ENTITYX3,ENTITYX4] :
       ( CATENATIVEX6 = EVENTX13
       &amp; isA(EVENTX13,r_0013_0015__brought)
-      &amp; arg0_by_lgs(EVENTX13) = r_0013_0023__Eisai
+      &amp; arg0__r_0013_0022__by_lgs(EVENTX13) = r_0013_0023__Eisai
       &amp; arg1(EVENTX13) = ENTITYX2
       &amp; r_0013_0016__to_dir(EVENTX13) = r_0013_0017__Japan
       &amp; r_0013_0018__in_tmp(EVENTX13) = ENTITYX7
@@ -279,14 +279,14 @@ fof(id_13_A_KYOTO_2,axiom,
       &amp; isA(EVENTX5,r_0013_0007__achieved)
       &amp; arg0(EVENTX5) = ENTITYX2
       &amp; arg1(EVENTX5) = ENTITYX3
-      &amp; isA(ENTITYX2,r_0013_0003__Rinzai_school)
+      &amp; isA(ENTITYX2,r_0013_0003__Rinzai__r_0013_0004__school)
       &amp; isA(ENTITYX3,r_0013_0009__pinnacle)
       &amp; r_0013_0010__of(ENTITYX3) = ENTITYX4
-      &amp; isA(ENTITYX4,r_0013_0011__Zen_teaching)
-      &amp; isA(ENTITYX7,r_0013_0020__Kamakura_period)
+      &amp; isA(ENTITYX4,r_0013_0011__Zen__r_0013_0012__teaching)
+      &amp; isA(ENTITYX7,r_0013_0020__Kamakura__r_0013_0021__period)
       &amp; isA(ENTITYX10,r_0013_0035__period)
-      &amp; nlyr2(ENTITYX10) = r_0013_0033__Southern_Song
-      &amp; isA(CONNX9,cnt_0013_1008)
+      &amp; nlyr2(ENTITYX10) = r_0013_0033__Southern__r_0013_0034__Song
+      &amp; isA(CONNX9,r_0013_1008__cnt)
       &amp; scope(CONNX9) = EVENTX12
       &amp; isA(EVENTX12,r_0013_0026__went)
       &amp; arg0(EVENTX12) = r_0013_0023__Eisai

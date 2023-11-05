@@ -306,10 +306,6 @@ The drawer is to see that the bottles are up to the mark , but not too full , th
 </svg>
 <br>
 <pre>
-arc(abs_0036_1014,r_0036_0003__is,scope).
-arc(abs_0036_1014,r_0036_0021__being,restriction).
-arc(cnt_0036_1021,r_0036_0022__placed,scope).
-arc(cnt_0036_1021,r_0036_0028__prevent,restriction).
 arc(r_0036_0003__is,r_0036_0005__see,catenative).
 arc(r_0036_0005__see,r_0036_0002__drawer,arg0).
 arc(r_0036_0005__see,r_0036_0014__but,arg1).
@@ -319,19 +315,23 @@ arc(r_0036_0014__but,r_0036_0009__are,conj1).
 arc(r_0036_0014__but,r_0036_0015__not,conj2).
 arc(r_0036_0015__not,z_0036_1010,scope).
 arc(r_0036_0017__full,r_0036_0016__too,quality1).
-arc(r_0036_0021__being,cnt_0036_1021,catenative).
+arc(r_0036_0021__being,r_0036_1021__cnt,catenative).
 arc(r_0036_0022__placed,r_0036_0020__bottle,arg1).
 arc(r_0036_0022__placed,r_0036_0026__tub,r_0036_0023__in_loc).
 arc(r_0036_0026__tub,r_0036_0025__clean,attrib2).
 arc(r_0036_0028__prevent,r_0036_0020__bottle,arg0).
 arc(r_0036_0028__prevent,r_0036_0029__waste,arg1).
+arc(r_0036_1014__abs,r_0036_0003__is,scope).
+arc(r_0036_1014__abs,r_0036_0021__being,restriction).
+arc(r_0036_1021__cnt,r_0036_0022__placed,scope).
+arc(r_0036_1021__cnt,r_0036_0028__prevent,restriction).
 arc(z_0036_1010,r_0036_0008__bottles,arg0).
 arc(z_0036_1010,r_0036_0017__full,prd).
 
 </pre>
 <br>
 <pre>
-fof(id_36_A_BEETON_1861,axiom,
+fof(id__36_A_BEETON_1861,axiom,
     ? [STATEX2,STATEX3,CATENATIVEX17,CONNX15,EVENTX26,CONNX22,EVENTX24,EVENTX25,EVENTX27,EVENTX13,CONJX12,OPERATORX9,EVENTX11,EVENTX6,ENTITYX1,ENTITYX16,ENTITYX19,ENTITYX23,ENTITYX4,ENTITYX5,ATTRIBX20,ATTRIBX7,QUALITYX8] :
       ( STATEX2 = EVENTX13
       &amp; isA(EVENTX13,r_0036_0005__see)
@@ -350,7 +350,7 @@ fof(id_36_A_BEETON_1861,axiom,
       &amp; arg0(EVENTX11) = ENTITYX4
       &amp; prd(EVENTX11) = ATTRIBX7
       &amp; CATENATIVEX17 = CONNX22
-      &amp; isA(CONNX22,cnt_0036_1021)
+      &amp; isA(CONNX22,r_0036_1021__cnt)
       &amp; scope(CONNX22) = EVENTX25
       &amp; isA(EVENTX25,r_0036_0022__placed)
       &amp; arg1(EVENTX25) = ENTITYX16
@@ -370,7 +370,7 @@ fof(id_36_A_BEETON_1861,axiom,
       &amp; quality1(ATTRIBX7) = QUALITYX8
       &amp; isA(ATTRIBX20,r_0036_0025__clean)
       &amp; isA(QUALITYX8,r_0036_0016__too)
-      &amp; isA(CONNX15,abs_0036_1014)
+      &amp; isA(CONNX15,r_0036_1014__abs)
       &amp; scope(CONNX15) = EVENTX27
       &amp; isA(EVENTX27,r_0036_0003__is)
       &amp; catenative(EVENTX27) = STATEX2

@@ -534,10 +534,6 @@ death occurs within days of the onset of symptoms .
 </svg>
 <br>
 <pre>
-arc(cnt_0082_1023,r_0083_0002__affects,scope).
-arc(cnt_0082_1023,r_0083_0007__causing,restriction).
-arc(cnt_0082_1036,r_0084_0003__are,scope).
-arc(cnt_0082_1036,r_0084_0008__progressing,restriction).
 arc(r_0082_0001__Rabies,r_0082_0004__disease,prn3).
 arc(r_0082_0004__disease,r_0082_0003__viral,attrib1).
 arc(r_0082_0004__disease,r_0082_0006__mammals,r_0082_0005__of).
@@ -549,13 +545,17 @@ arc(r_0082_0015__animal,r_0082_0014__infected,attrib2).
 arc(r_0082_0015__animal,r_0082_0019__dogs,prn5).
 arc(r_0082_0018__commonly,r_0082_0017__most,quality1).
 arc(r_0082_0019__dogs,r_0082_0018__commonly,quality1).
+arc(r_0082_1023__cnt,r_0083_0002__affects,scope).
+arc(r_0082_1023__cnt,r_0083_0007__causing,restriction).
+arc(r_0082_1036__cnt,r_0084_0003__are,scope).
+arc(r_0082_1036__cnt,r_0084_0008__progressing,restriction).
 arc(r_0083_0002__affects,r_0082_0001__Rabies,arg0).
 arc(r_0083_0002__affects,r_0083_0006__system,arg1).
 arc(r_0083_0006__system,r_0083_0004__central,attrib2).
 arc(r_0083_0006__system,r_0083_0005__nervous,attrib3).
 arc(r_0083_0007__causing,r_0082_0001__Rabies,arg0).
 arc(r_0083_0007__causing,r_0083_0010__and,arg1).
-arc(r_0083_0010__and,r_0083_0008__brain_alteration,conj1).
+arc(r_0083_0010__and,r_0083_0008__brain__r_0083_0009__alteration,conj1).
 arc(r_0083_0010__and,r_0083_0011__death,conj2).
 arc(r_0084_0003__are,r_0084_0001__symptoms,arg0).
 arc(r_0084_0003__are,r_0084_0002__initially,tmp2).
@@ -575,7 +575,7 @@ arc(z_0082_1017,r_0082_0001__Rabies,z_0082_1004).
 </pre>
 <br>
 <pre>
-fof(id_82_A_FACTBOOK_1_2010__83_A_FACTBOOK_1_2010__84_A_FACTBOOK_1_2010__85_A_FACTBOOK_1_2010,axiom,
+fof(id__82_A_FACTBOOK_1_2010__83_A_FACTBOOK_1_2010__84_A_FACTBOOK_1_2010__85_A_FACTBOOK_1_2010,axiom,
     ? [RABIESX19,RABIES_SYMPTOMSX45,EVENTX46,CONNX37,EVENTX40,EVENTX41,CONNX24,EVENTX28,EVENTX29,EVENTX18,EVENTX16,ENTITYX42,ENTITYX43,ENTITYX44,RABIES_SYMPTOMSX30,ENTITYX32,ENTITYX38,ENTITYX34,ENTITYX35,ENTITYX20,ENTITYX25,ENTITYX26,ENTITYX27,ENTITYX5,ENTITYX7,ENTITYX10,ENTITYX11,ENTITYX13,ATTRIBX39,ATTRIBX33,ATTRIBX21,ATTRIBX22,ATTRIBX6,ATTRIBX12,QUALITYX31,QUALITYX9,QUALITYX14,QUALITYX15] :
       ( isA(EVENTX16,r_0082_0008__transmitted)
       &amp; arg1(EVENTX16) = ENTITYX5
@@ -599,7 +599,7 @@ fof(id_82_A_FACTBOOK_1_2010__83_A_FACTBOOK_1_2010__84_A_FACTBOOK_1_2010__85_A_FA
       &amp; isA(ENTITYX25,r_0083_0010__and)
       &amp; conj1(ENTITYX25) = ENTITYX26
       &amp; conj2(ENTITYX25) = ENTITYX27
-      &amp; isA(ENTITYX26,r_0083_0008__brain_alteration)
+      &amp; isA(ENTITYX26,r_0083_0008__brain__r_0083_0009__alteration)
       &amp; isA(ENTITYX27,r_0083_0011__death)
       &amp; isA(RABIES_SYMPTOMSX30,r_0084_0001__symptoms)
       &amp; isA(ENTITYX32,r_0084_0006__and)
@@ -631,7 +631,7 @@ fof(id_82_A_FACTBOOK_1_2010__83_A_FACTBOOK_1_2010__84_A_FACTBOOK_1_2010__85_A_FA
       &amp; isA(QUALITYX31,r_0084_0002__initially)
       &amp; isA(EVENTX18,z_0082_1017)
       &amp; z_0082_1004(EVENTX18) = r_0082_0001__Rabies
-      &amp; isA(CONNX24,cnt_0082_1023)
+      &amp; isA(CONNX24,r_0082_1023__cnt)
       &amp; scope(CONNX24) = EVENTX29
       &amp; isA(EVENTX29,r_0083_0002__affects)
       &amp; arg0(EVENTX29) = RABIESX19
@@ -640,7 +640,7 @@ fof(id_82_A_FACTBOOK_1_2010__83_A_FACTBOOK_1_2010__84_A_FACTBOOK_1_2010__85_A_FA
       &amp; isA(EVENTX28,r_0083_0007__causing)
       &amp; arg0(EVENTX28) = RABIESX19
       &amp; arg1(EVENTX28) = ENTITYX25
-      &amp; isA(CONNX37,cnt_0082_1036)
+      &amp; isA(CONNX37,r_0082_1036__cnt)
       &amp; scope(CONNX37) = EVENTX41
       &amp; isA(EVENTX41,r_0084_0003__are)
       &amp; arg0(EVENTX41) = RABIES_SYMPTOMSX30

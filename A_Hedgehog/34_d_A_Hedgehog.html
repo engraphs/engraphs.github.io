@@ -322,32 +322,32 @@ Sadly , as yet I have no residents in it , but I hope it will encourage diversit
 <pre>
 arc(r_0035_0003__built,r_0035_0001__I,arg0).
 arc(r_0035_0003__built,r_0035_0002__recently,tmp2).
-arc(r_0035_0003__built,r_0035_0005__hedgehog_house,arg1).
-arc(r_0035_0005__hedgehog_house,r_0035_0009__garden,r_0035_0007__in).
+arc(r_0035_0003__built,r_0035_0005__hedgehog__r_0035_0006__house,arg1).
+arc(r_0035_0005__hedgehog__r_0035_0006__house,r_0035_0009__garden,r_0035_0007__in).
 arc(r_0035_0009__garden,r_0035_0001__I,genv).
 arc(r_0036_0006__have,r_0035_0001__I,arg0).
-arc(r_0036_0006__have,r_0035_0005__hedgehog_house,r_0036_0009__in_loc).
+arc(r_0036_0006__have,r_0035_0005__hedgehog__r_0035_0006__house,r_0036_0009__in_loc).
 arc(r_0036_0006__have,r_0036_0001__Sadly,mnr1).
 arc(r_0036_0006__have,r_0036_0004__yet,r_0036_0003__as_tmp).
 arc(r_0036_0006__have,r_0036_0008__residents,arg1).
-arc(r_0036_0007__quantificational__no,r_0036_0006__have,scope).
-arc(r_0036_0007__quantificational__no,r_0036_0008__residents,restriction).
-arc(r_0036_0012__but,r_0036_0007__quantificational__no,conj1).
+arc(r_0036_0007__quantificational__r_0036_0007__no,r_0036_0006__have,scope).
+arc(r_0036_0007__quantificational__r_0036_0007__no,r_0036_0008__residents,restriction).
+arc(r_0036_0012__but,r_0036_0007__quantificational__r_0036_0007__no,conj1).
 arc(r_0036_0012__but,r_0036_0014__hope,conj2).
 arc(r_0036_0014__hope,r_0035_0001__I,arg0).
 arc(r_0036_0014__hope,r_0036_0016__will,arg1).
 arc(r_0036_0016__will,r_0036_0017__encourage,scope).
-arc(r_0036_0017__encourage,r_0035_0005__hedgehog_house,arg0).
+arc(r_0036_0017__encourage,r_0035_0005__hedgehog__r_0035_0006__house,arg0).
 arc(r_0036_0017__encourage,r_0036_0019__and,arg1).
 arc(r_0036_0019__and,r_0036_0018__diversity,conj1).
 arc(r_0036_0019__and,r_0036_0021__growth,conj2).
-arc(r_0036_0021__growth,r_0036_0023__hedgehog_numbers,r_0036_0022__in).
-arc(r_0036_0021__growth,r_0036_0026__South_Staffordshire,r_0036_0025__in).
+arc(r_0036_0021__growth,r_0036_0023__hedgehog__r_0036_0024__numbers,r_0036_0022__in).
+arc(r_0036_0021__growth,r_0036_0026__South__r_0036_0027__Staffordshire,r_0036_0025__in).
 
 </pre>
 <br>
 <pre>
-fof(id_35_A_Hedgehog,axiom,
+fof(id__35_A_Hedgehog,axiom,
     ? [STATEX16,SPEAKERX4,SPEAKERX10,HEDGEHOG_HOUSEX13,SPEAKERX15,HEDGEHOG_HOUSEX17,CONJX25,EVENTX24,OPERATORX22,EVENTX23,QUANTX12,EVENTX14,EVENTX5,ENTITYX18,ENTITYX19,ENTITYX20,ENTITYX21,ENTITYX11,HEDGEHOG_HOUSEX2,ENTITYX3,QUALITYX8,QUALITYX9,QUALITYX1] :
       ( STATEX16 = OPERATORX22
       &amp; isA(OPERATORX22,r_0036_0016__will)
@@ -355,7 +355,7 @@ fof(id_35_A_Hedgehog,axiom,
       &amp; isA(EVENTX23,r_0036_0017__encourage)
       &amp; arg0(EVENTX23) = HEDGEHOG_HOUSEX17
       &amp; arg1(EVENTX23) = ENTITYX18
-      &amp; isA(HEDGEHOG_HOUSEX2,r_0035_0005__hedgehog_house)
+      &amp; isA(HEDGEHOG_HOUSEX2,r_0035_0005__hedgehog__r_0035_0006__house)
       &amp; r_0035_0007__in(HEDGEHOG_HOUSEX2) = ENTITYX3
       &amp; isA(ENTITYX3,r_0035_0009__garden)
       &amp; genv(ENTITYX3) = SPEAKERX4
@@ -370,8 +370,8 @@ fof(id_35_A_Hedgehog,axiom,
       &amp; isA(ENTITYX19,r_0036_0018__diversity)
       &amp; isA(ENTITYX20,r_0036_0021__growth)
       &amp; r_0036_0022__in(ENTITYX20) = ENTITYX21
-      &amp; r_0036_0025__in(ENTITYX20) = r_0036_0026__South_Staffordshire
-      &amp; isA(ENTITYX21,r_0036_0023__hedgehog_numbers)
+      &amp; r_0036_0025__in(ENTITYX20) = r_0036_0026__South__r_0036_0027__Staffordshire
+      &amp; isA(ENTITYX21,r_0036_0023__hedgehog__r_0036_0024__numbers)
       &amp; isA(QUALITYX1,r_0035_0002__recently)
       &amp; isA(QUALITYX8,r_0036_0001__Sadly)
       &amp; isA(QUALITYX9,r_0036_0004__yet)
@@ -381,7 +381,7 @@ fof(id_35_A_Hedgehog,axiom,
       &amp; arg1(EVENTX5) = HEDGEHOG_HOUSEX2
       &amp; isA(CONJX25,r_0036_0012__but)
       &amp; conj1(CONJX25) = QUANTX12
-      &amp; isA(QUANTX12,r_0036_0007__quantificational__no)
+      &amp; isA(QUANTX12,r_0036_0007__quantificational__r_0036_0007__no)
       &amp; restriction(QUANTX12) = ENTITYX11
       &amp; isA(ENTITYX11,r_0036_0008__residents)
       &amp; scope(QUANTX12) = EVENTX14

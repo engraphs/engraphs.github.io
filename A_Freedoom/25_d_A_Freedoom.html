@@ -225,7 +225,7 @@ arc(r_0038_0001__If_cnt_cnd,r_0038_0004__gets,restriction).
 arc(r_0038_0001__If_cnt_cnd,r_0038_0011___apos_ll,scope).
 arc(r_0038_0004__gets,r_0038_0005__injured,catenative).
 arc(r_0038_0005__injured,r_0038_0003__monster,arg1).
-arc(r_0038_0005__injured,r_0038_0008__monster,arg0_by_lgs).
+arc(r_0038_0005__injured,r_0038_0008__monster,arg0__r_0038_0006__by_lgs).
 arc(r_0038_0011___apos_ll,r_0038_0012__retaliate,scope).
 arc(r_0038_0012__retaliate,r_0038_0003__monster,arg0).
 arc(r_0038_0012__retaliate,r_0038_0015__one,r_0038_0013__against_clr).
@@ -235,16 +235,16 @@ arc(r_0038_0017__injured,r_0038_0003__monster,arg1).
 arc(r_0038_0017__injured,r_0038_0015__one,arg0).
 arc(r_0038_0021__is,r_0038_0022__called,catenative).
 arc(r_0038_0022__called,r_0038_0020__this,arg1).
-arc(r_0038_0022__called,r_0038_0023__monster_in_fighting,prd).
+arc(r_0038_0022__called,r_0038_0023__monster__r_0038_0024__in_fighting,prd).
 
 </pre>
 <br>
 <pre>
-fof(id_38_A_Freedoom,axiom,
+fof(id__38_A_Freedoom,axiom,
     ? [CATENATIVEX3,EVENTX14,CATENATIVEX15,MONSTER1X7,MONSTER2X11,MONSTER1X12,CONNX1,OPERATORX20,EVENTX21,EVENTX19,EVENTX18,EVENTX13,EVENTX6,EVENTX5,ENTITYX8,ENTITYX17,MONSTER1X2,MONSTER2X4] :
       ( CATENATIVEX3 = EVENTX5
       &amp; isA(EVENTX5,r_0038_0005__injured)
-      &amp; arg0_by_lgs(EVENTX5) = MONSTER2X4
+      &amp; arg0__r_0038_0006__by_lgs(EVENTX5) = MONSTER2X4
       &amp; arg1(EVENTX5) = MONSTER1X2
       &amp; EVENTX14 = EVENTX19
       &amp; isA(EVENTX19,r_0038_0021__is)
@@ -264,7 +264,7 @@ fof(id_38_A_Freedoom,axiom,
       &amp; MONSTER2X11 = MONSTER2X4
       &amp; ( MONSTER1X12 = MONSTER1X7
         | MONSTER1X12 = MONSTER1X2 )
-      &amp; isA(ENTITYX17,r_0038_0023__monster_in_fighting)
+      &amp; isA(ENTITYX17,r_0038_0023__monster__r_0038_0024__in_fighting)
       &amp; isA(CONNX1,r_0038_0001__If_cnt_cnd)
       &amp; restriction(CONNX1) = EVENTX6
       &amp; isA(EVENTX6,r_0038_0004__gets)

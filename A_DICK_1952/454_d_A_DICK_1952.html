@@ -70,7 +70,7 @@ Broken off , I suppose .
 <title>0588_0005&#45;&gt;z_0588_1006</title>
 <path fill="none" stroke="black" d="M75.04,-174.68C80.42,-168.81 86.5,-162.13 92,-156 99.41,-147.74 107.45,-138.64 114.61,-130.5"/>
 <polygon fill="black" stroke="black" points="117.45,-132.56 121.41,-122.74 112.19,-127.95 117.45,-132.56"/>
-<text text-anchor="middle" x="125.5" y="-144.8" font-family="fixed" font-size="14.00">[arg1]</text>
+<text text-anchor="middle" x="141.5" y="-144.8" font-family="fixed" font-size="14.00">[arg1][tpc]</text>
 </g>
 <!-- z_0588_1006&#45;&gt;0588_0001_0588_0002 -->
 <g id="edge3" class="edge">
@@ -84,21 +84,21 @@ Broken off , I suppose .
 <br>
 <pre>
 arc(r_0588_0005__suppose,r_0588_0004__I,arg0).
-arc(r_0588_0005__suppose,z_0588_1006,arg1).
-arc(z_0588_1006,r_0588_0001__Broken_off,catenative).
+arc(r_0588_0005__suppose,z_0588_1006,arg1_tpc).
+arc(z_0588_1006,r_0588_0001__Broken__r_0588_0002__off,catenative).
 
 </pre>
 <br>
 <pre>
-fof(id_588_A_DICK_1952,axiom,
+fof(id__588_A_DICK_1952,axiom,
     ? [STATEX1,CATENATIVEX4,EVENTX8,EVENTX7,EVENTX5] :
       ( STATEX1 = EVENTX7
       &amp; isA(EVENTX7,z_0588_1006)
       &amp; catenative(EVENTX7) = CATENATIVEX4
       &amp; CATENATIVEX4 = EVENTX5
-      &amp; isA(EVENTX5,r_0588_0001__Broken_off)
+      &amp; isA(EVENTX5,r_0588_0001__Broken__r_0588_0002__off)
       &amp; isA(EVENTX8,r_0588_0005__suppose)
-      &amp; arg1(EVENTX8) = STATEX1
+      &amp; arg1_tpc(EVENTX8) = STATEX1
       &amp; arg0(EVENTX8) = r_0588_0004__I ) ).
 
 
@@ -106,7 +106,7 @@ fof(id_588_A_DICK_1952,axiom,
 <br>
 <svg xmlns:svg="http://www.w3.org/2000/svg" xmlns:exslt="http://exslt.org/common" width="720" height="366" viewBox="-7.20 -1.830 900.00 457.50">
 <text x="360.72" y="51" text-anchor="middle">IP-MAT</text>
-<text x="121.2" y="112" text-anchor="middle">CP-THT-OB1</text>
+<text x="121.68" y="112" text-anchor="middle">CP-THT-OB1-TPC</text>
 <text x="120.72" y="173" text-anchor="middle">IP-SUB</text>
 <text x="121.2" y="234" text-anchor="middle">IP-PPL-CAT</text>
 <text x="60.72" y="295" text-anchor="middle">VVN</text>
@@ -118,7 +118,7 @@ fof(id_588_A_DICK_1952,axiom,
 <line x1="180.36" y1="305" x2="180.36" y2="336" style="stroke:#000000;stroke-width:2;"/>
 <line x1="121.2" y1="244" x2="180" y2="275" style="stroke:#000000;stroke-width:2;"/>
 <line x1="120.72" y1="183" x2="120" y2="214" style="stroke:#000000;stroke-width:2;"/>
-<line x1="121.2" y1="122" x2="120" y2="153" style="stroke:#000000;stroke-width:2;"/>
+<line x1="121.68" y1="122" x2="120" y2="153" style="stroke:#000000;stroke-width:2;"/>
 <line x1="360.72" y1="61" x2="120" y2="92" style="stroke:#000000;stroke-width:2;"/>
 <text x="300.48" y="112" text-anchor="middle">PUNC</text>
 <text x="300.48" y="173" text-anchor="middle">,</text>
@@ -141,8 +141,8 @@ fof(id_588_A_DICK_1952,axiom,
 </svg>
 <br>
 <pre>
-( (IP-MAT (CP-THT-OB1 (IP-SUB (IP-PPL-CAT (VVN Broken;{break})
-                                          (RP off;{off}))))
+( (IP-MAT (CP-THT-OB1-TPC (IP-SUB (IP-PPL-CAT (VVN Broken;{break})
+                                              (RP off;{off}))))
           (PUNC ,)
           (NP-SBJ;{DORLE} (PRO I;{I}))
           (VBP suppose;{suppose})

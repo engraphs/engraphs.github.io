@@ -228,11 +228,11 @@ Kencho-ji was the first Zen temple that opened the first pure Zen training hall 
 <br>
 <pre>
 arc(r_0071_0002__was,r_0071_0001__Kencho_ji,arg0).
-arc(r_0071_0002__was,r_0071_0004__first_Zen_temple,prd2).
-arc(r_0071_0008__opened,r_0071_0004__first_Zen_temple,arg0).
-arc(r_0071_0008__opened,r_0071_0010__first_training_hall,arg1).
-arc(r_0071_0010__first_training_hall,r_0071_0012__Zen,nlyr3).
-arc(r_0071_0010__first_training_hall,r_0071_0016__Japan,r_0071_0015__in).
+arc(r_0071_0002__was,r_0071_0004__first__r_0071_0005__Zen_r_0071_0006__temple,prd2).
+arc(r_0071_0008__opened,r_0071_0004__first__r_0071_0005__Zen_r_0071_0006__temple,arg0).
+arc(r_0071_0008__opened,r_0071_0010__first__r_0071_0013__training_r_0071_0014__hall,arg1).
+arc(r_0071_0010__first__r_0071_0013__training_r_0071_0014__hall,r_0071_0012__Zen,nlyr3).
+arc(r_0071_0010__first__r_0071_0013__training_r_0071_0014__hall,r_0071_0016__Japan,r_0071_0015__in).
 arc(r_0071_0012__Zen,r_0071_0011__pure,attrib1).
 arc(r_0071_0018__with_abs,r_0071_0002__was,scope).
 arc(r_0071_0018__with_abs,r_0071_0023__training,restriction).
@@ -240,24 +240,24 @@ arc(r_0071_0019__more,r_0071_0021__1,000,r_0071_0020__than).
 arc(r_0071_0022__monks,r_0071_0019__more,attrib1).
 arc(r_0071_0023__training,r_0071_0022__monks,arg0).
 arc(r_0071_0023__training,r_0071_0024__there,loc3).
-arc(r_0071_0023__training,r_0071_0026__one_time,r_0071_0025__at_tmp).
+arc(r_0071_0023__training,r_0071_0026__one__r_0071_0027__time,r_0071_0025__at_tmp).
 
 </pre>
 <br>
 <pre>
-fof(id_71_A_KYOTO_2,axiom,
+fof(id__71_A_KYOTO_2,axiom,
     ? [CONNX5,EVENTX11,EVENTX12,EVENTX4,ENTITYX1,ENTITYX6,ENTITYX10,ENTITYX8,ENTITYX2,ATTRIBX7,ATTRIBX3,QUALITYX9] :
       ( isA(EVENTX4,r_0071_0008__opened)
       &amp; arg0(EVENTX4) = ENTITYX1
       &amp; arg1(EVENTX4) = ENTITYX2
-      &amp; isA(ENTITYX1,r_0071_0004__first_Zen_temple)
-      &amp; isA(ENTITYX2,r_0071_0010__first_training_hall)
+      &amp; isA(ENTITYX1,r_0071_0004__first__r_0071_0005__Zen_r_0071_0006__temple)
+      &amp; isA(ENTITYX2,r_0071_0010__first__r_0071_0013__training_r_0071_0014__hall)
       &amp; nlyr3(ENTITYX2) = r_0071_0012__Zen
       &amp; r_0071_0015__in(ENTITYX2) = r_0071_0016__Japan
       &amp; isA(ENTITYX6,r_0071_0022__monks)
       &amp; attrib1(ENTITYX6) = ATTRIBX7
       &amp; isA(ENTITYX8,r_0071_0021__1,000)
-      &amp; isA(ENTITYX10,r_0071_0026__one_time)
+      &amp; isA(ENTITYX10,r_0071_0026__one__r_0071_0027__time)
       &amp; isA(r_0071_0012__Zen,r_0071_0012__Zen)
       &amp; attrib1(r_0071_0012__Zen) = ATTRIBX3
       &amp; isA(ATTRIBX3,r_0071_0011__pure)

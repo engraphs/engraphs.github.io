@@ -353,7 +353,7 @@ It &ldquo; may well be &rdquo; that theft of business data is &ldquo; as serious
 arc(r_0004_0003__may,r_0004_0005__be,scope).
 arc(r_0004_0004__well,r_0004_0003__may,scope).
 arc(r_0004_0005__be,r_0004_0012__is,arg0).
-arc(r_0004_0008__theft,r_0004_0010__business_data,r_0004_0009__of).
+arc(r_0004_0008__theft,r_0004_0010__business__r_0004_0011__data,r_0004_0009__of).
 arc(r_0004_0012__is,r_0004_0008__theft,arg0).
 arc(r_0004_0012__is,r_0004_0018__threat,prd2).
 arc(r_0004_0015__serious,r_0004_0014__as,quality1).
@@ -367,21 +367,21 @@ arc(r_0004_0025__is,r_0004_0027__threat,prd2).
 arc(r_0004_0027__threat,r_0004_0030__survival,r_0004_0028__to).
 arc(r_0004_0030__survival,r_0004_0034__firms,r_0004_0031__of).
 arc(r_0004_0032__victimized,r_0004_0034__firms,arg1).
-arc(r_0004_0034__firms,r_0004_0033__U.S.,attrib2).
-arc(r_0004_0036__said,r_0004_0037__Michelle_Van_Cleave,arg0).
-arc(r_0004_0036__said,utterance_0004_1003,arg1).
-arc(r_0004_0037__Michelle_Van_Cleave,r_0004_0045__assistant_director,prn5).
-arc(r_0004_0045__assistant_director,r_0004_0042__White_House,genv).
-arc(r_0004_0045__assistant_director,r_0004_0048__National_Security_Affairs,r_0004_0047__for).
-arc(utterance_0004_1003,r_0004_0004__well,part1).
+arc(r_0004_0034__firms,r_0004_0033__U_S_,attrib2).
+arc(r_0004_0036__said,r_0004_0037__Michelle__r_0004_0038__Van_r_0004_0039__Cleave,arg0).
+arc(r_0004_0036__said,r_0004_1003__utterance,arg1).
+arc(r_0004_0037__Michelle__r_0004_0038__Van_r_0004_0039__Cleave,r_0004_0045__assistant_r_0004_0046__director,prn5).
+arc(r_0004_0045__assistant__r_0004_0046__director,r_0004_0042__White_r_0004_0043__House,genv).
+arc(r_0004_0045__assistant__r_0004_0046__director,r_0004_0048__National_r_0004_0049__Security_r_0004_0050__Affairs,r_0004_0047__for).
+arc(r_0004_1003__utterance,r_0004_0004__well,part1).
 
 </pre>
 <br>
 <pre>
-fof(id_4_A_ANC_wsj_1640,axiom,
+fof(id__4_A_ANC_wsj_1640,axiom,
     ? [STATEX1,STATEX6,EVENTX12,THEFTX13,EVENTX29,CONJX27,OPERATORX5,OPERATORX25,EVENTX26,EVENTX24,EVENTX20,EVENTX18,ENTITYX28,THEFTX7,ENTITYX9,ENTITYX22,ENTITYX14,ENTITYX15,ENTITYX16,ENTITYX8,ATTRIBX10,ATTRIBX21,ATTRIBX23,ATTRIBX19,QUALITYX11] :
       ( STATEX1 = CONJX27
-      &amp; isA(CONJX27,utterance_0004_1003)
+      &amp; isA(CONJX27,r_0004_1003__utterance)
       &amp; part1(CONJX27) = OPERATORX5
       &amp; isA(OPERATORX5,r_0004_0004__well)
       &amp; scope(OPERATORX5) = OPERATORX25
@@ -400,7 +400,7 @@ fof(id_4_A_ANC_wsj_1640,axiom,
       &amp; prd2(EVENTX20) = ENTITYX14
       &amp; isA(THEFTX7,r_0004_0008__theft)
       &amp; r_0004_0009__of(THEFTX7) = ENTITYX8
-      &amp; isA(ENTITYX8,r_0004_0010__business_data)
+      &amp; isA(ENTITYX8,r_0004_0010__business__r_0004_0011__data)
       &amp; isA(ENTITYX9,r_0004_0018__threat)
       &amp; attrib2(ENTITYX9) = ATTRIBX10
       &amp; attrib4(ENTITYX9) = ATTRIBX21
@@ -416,22 +416,22 @@ fof(id_4_A_ANC_wsj_1640,axiom,
       &amp; attrib2(ENTITYX16) = ATTRIBX19
       &amp; isA(ENTITYX22,r_0004_0021__security)
       &amp; attrib1(ENTITYX22) = ATTRIBX23
-      &amp; isA(ENTITYX28,r_0004_0045__assistant_director)
-      &amp; genv(ENTITYX28) = r_0004_0042__White_House
-      &amp; r_0004_0047__for(ENTITYX28) = r_0004_0048__National_Security_Affairs
+      &amp; isA(ENTITYX28,r_0004_0045__assistant__r_0004_0046__director)
+      &amp; genv(ENTITYX28) = r_0004_0042__White__r_0004_0043__House
+      &amp; r_0004_0047__for(ENTITYX28) = r_0004_0048__National__r_0004_0049__Security_r_0004_0050__Affairs
       &amp; isA(ATTRIBX10,r_0004_0015__serious)
       &amp; quality1(ATTRIBX10) = QUALITYX11
       &amp; r_0004_0023__as(ATTRIBX10) = EVENTX12
-      &amp; isA(ATTRIBX19,r_0004_0033__U.S.)
+      &amp; isA(ATTRIBX19,r_0004_0033__U_S_)
       &amp; isA(ATTRIBX21,r_0004_0017__strategic)
       &amp; isA(ATTRIBX23,r_0004_0020__national)
       &amp; isA(QUALITYX11,r_0004_0014__as)
-      &amp; isA(r_0004_0037__Michelle_Van_Cleave,r_0004_0037__Michelle_Van_Cleave)
-      &amp; prn5(r_0004_0037__Michelle_Van_Cleave) = ENTITYX28
-      &amp; isA(r_0004_0042__White_House,r_0004_0042__White_House)
+      &amp; isA(r_0004_0037__Michelle__r_0004_0038__Van_r_0004_0039__Cleave,r_0004_0037__Michelle_r_0004_0038__Van_r_0004_0039__Cleave)
+      &amp; prn5(r_0004_0037__Michelle__r_0004_0038__Van_r_0004_0039__Cleave) = ENTITYX28
+      &amp; isA(r_0004_0042__White__r_0004_0043__House,r_0004_0042__White_r_0004_0043__House)
       &amp; isA(EVENTX29,r_0004_0036__said)
       &amp; arg1(EVENTX29) = STATEX1
-      &amp; arg0(EVENTX29) = r_0004_0037__Michelle_Van_Cleave ) ).
+      &amp; arg0(EVENTX29) = r_0004_0037__Michelle__r_0004_0038__Van_r_0004_0039__Cleave ) ).
 
 
 </pre>

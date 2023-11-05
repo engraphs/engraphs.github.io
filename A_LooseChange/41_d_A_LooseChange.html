@@ -122,22 +122,22 @@
 </svg>
 <br>
 <pre>
-arc(question_0081_1005,r_0081_0002__Are,scope).
 arc(r_0081_0002__Are,r_0081_0003__you,arg0).
 arc(r_0081_0002__Are,r_0081_0005__holiday,r_0081_0004__on_prd2).
 arc(r_0081_0009__asked,r_0081_0008__I,arg0).
-arc(r_0081_0009__asked,utterance_0081_1003,arg1).
-arc(utterance_0081_1003,question_0081_1005,part1).
+arc(r_0081_0009__asked,r_0081_1003__utterance,arg1).
+arc(r_0081_1003__utterance,r_0081_1005__question,part1).
+arc(r_0081_1005__question,r_0081_0002__Are,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_81_A_LooseChange,axiom,
+fof(id__81_A_LooseChange,axiom,
     ? [STATEX1,EVENTX9,CONJX8,OPERATORX5,EVENTX7,ENTITYX6] :
       ( STATEX1 = CONJX8
-      &amp; isA(CONJX8,utterance_0081_1003)
+      &amp; isA(CONJX8,r_0081_1003__utterance)
       &amp; part1(CONJX8) = OPERATORX5
-      &amp; isA(OPERATORX5,question_0081_1005)
+      &amp; isA(OPERATORX5,r_0081_1005__question)
       &amp; scope(OPERATORX5) = EVENTX7
       &amp; isA(EVENTX7,r_0081_0002__Are)
       &amp; arg0(EVENTX7) = r_0081_0003__you

@@ -172,10 +172,10 @@ I think , all in all , I really prefer you . &rdquo;
 arc(r_0602_0002__think,r_0602_0001__I,arg0).
 arc(r_0602_0002__think,r_0602_0009__really,arg1).
 arc(r_0602_0002__think,z_0602_1006,mod).
-arc(r_0602_0004__quantificational__all,r_0602_0002__think,scope).
-arc(r_0602_0004__quantificational__all,r_0602_0006__quantificational__all,restriction).
-arc(r_0602_0006__quantificational__all,z_0602_1005,restriction).
-arc(r_0602_0006__quantificational__all,z_0602_1006,scope).
+arc(r_0602_0004__quantificational__r_0602_0004__all,r_0602_0002__think,scope).
+arc(r_0602_0004__quantificational__r_0602_0004__all,r_0602_0006__quantificational__r_0602_0006__all,restriction).
+arc(r_0602_0006__quantificational__r_0602_0006__all,z_0602_1005,restriction).
+arc(r_0602_0006__quantificational__r_0602_0006__all,z_0602_1006,scope).
 arc(r_0602_0009__really,r_0602_0010__prefer,scope).
 arc(r_0602_0010__prefer,r_0602_0001__I,arg0).
 arc(r_0602_0010__prefer,r_0602_0011__you,arg1).
@@ -184,7 +184,7 @@ arc(z_0602_1006,z_0602_1005,r_0602_0005__in).
 </pre>
 <br>
 <pre>
-fof(id_602_A_DICK_1952,axiom,
+fof(id__602_A_DICK_1952,axiom,
     ? [STATEX7,NASHAX8,QUANTX2,EVENTX11,OPERATORX9,EVENTX10,QUANTX4,ENTITYX1,ENTITYX3] :
       ( STATEX7 = OPERATORX9
       &amp; isA(OPERATORX9,r_0602_0009__really)
@@ -193,9 +193,9 @@ fof(id_602_A_DICK_1952,axiom,
       &amp; arg0(EVENTX10) = NASHAX8
       &amp; arg1(EVENTX10) = r_0602_0011__you
       &amp; NASHAX8 = r_0602_0001__I
-      &amp; isA(QUANTX2,r_0602_0004__quantificational__all)
+      &amp; isA(QUANTX2,r_0602_0004__quantificational__r_0602_0004__all)
       &amp; restriction(QUANTX2) = QUANTX4
-      &amp; isA(QUANTX4,r_0602_0006__quantificational__all)
+      &amp; isA(QUANTX4,r_0602_0006__quantificational__r_0602_0006__all)
       &amp; restriction(QUANTX4) = ENTITYX3
       &amp; isA(ENTITYX3,z_0602_1005)
       &amp; scope(QUANTX4) = ENTITYX1

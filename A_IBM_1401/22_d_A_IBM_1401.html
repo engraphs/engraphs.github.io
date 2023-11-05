@@ -233,18 +233,18 @@ Many pre-written programs are supplied by IBM , eliminating necessity of custome
 </svg>
 <br>
 <pre>
-arc(abs_0027_1004,r_0027_0004__are,scope).
-arc(abs_0027_1004,r_0027_0009__eliminating,restriction).
 arc(r_0027_0003__programs,r_0027_0001__Many,attrib1).
 arc(r_0027_0003__programs,r_0027_0002__pre_written,attrib2).
 arc(r_0027_0004__are,r_0027_0005__supplied,catenative).
 arc(r_0027_0005__supplied,r_0027_0003__programs,arg1).
-arc(r_0027_0005__supplied,r_0027_0007__IBM,arg0_by_lgs).
+arc(r_0027_0005__supplied,r_0027_0007__IBM,arg0__r_0027_0006__by_lgs).
 arc(r_0027_0009__eliminating,r_0027_0010__necessity,arg1).
 arc(r_0027_0010__necessity,r_0027_0015__writing,r_0027_0011__of).
 arc(r_0027_0014__staffs,r_0027_0012__customers,genv).
 arc(r_0027_0015__writing,r_0027_0014__staffs,arg0).
 arc(r_0027_0015__writing,z_0027_1017,arg1).
+arc(r_0027_1004__abs,r_0027_0004__are,scope).
+arc(r_0027_1004__abs,r_0027_0009__eliminating,restriction).
 arc(z_0027_1016,r_0027_0014__staffs,genv).
 arc(z_0027_1016,r_0027_0017__own,attrib2).
 arc(z_0027_1017,z_0027_1016,genv).
@@ -252,11 +252,11 @@ arc(z_0027_1017,z_0027_1016,genv).
 </pre>
 <br>
 <pre>
-fof(id_27_A_IBM_1401,axiom,
+fof(id__27_A_IBM_1401,axiom,
     ? [CATENATIVEX20,EVENTX9,STAFFSX14,CONNX5,EVENTX19,EVENTX18,EVENTX22,EVENTX21,ENTITYX1,ENTITYX8,STAFFSX10,ENTITYX12,ENTITYX13,ENTITYX11,ATTRIBX15,ATTRIBX2,ATTRIBX3] :
       ( CATENATIVEX20 = EVENTX21
       &amp; isA(EVENTX21,r_0027_0005__supplied)
-      &amp; arg0_by_lgs(EVENTX21) = r_0027_0007__IBM
+      &amp; arg0__r_0027_0006__by_lgs(EVENTX21) = r_0027_0007__IBM
       &amp; arg1(EVENTX21) = ENTITYX1
       &amp; EVENTX9 = EVENTX18
       &amp; isA(EVENTX18,r_0027_0015__writing)
@@ -279,7 +279,7 @@ fof(id_27_A_IBM_1401,axiom,
       &amp; isA(ATTRIBX2,r_0027_0001__Many)
       &amp; isA(ATTRIBX3,r_0027_0002__pre_written)
       &amp; isA(ATTRIBX15,r_0027_0017__own)
-      &amp; isA(CONNX5,abs_0027_1004)
+      &amp; isA(CONNX5,r_0027_1004__abs)
       &amp; scope(CONNX5) = EVENTX22
       &amp; isA(EVENTX22,r_0027_0004__are)
       &amp; catenative(EVENTX22) = CATENATIVEX20

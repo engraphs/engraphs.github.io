@@ -135,18 +135,18 @@ Please check that your child is ready on the appropriate nights .
 </svg>
 <br>
 <pre>
-arc(imperative_0005_1002,r_0005_0002__check,scope).
 arc(r_0005_0002__check,r_0005_0006__is,arg1).
 arc(r_0005_0005__child,r_0005_0004__your,genv).
 arc(r_0005_0006__is,r_0005_0005__child,arg0).
 arc(r_0005_0006__is,r_0005_0007__ready,prd2).
 arc(r_0005_0006__is,r_0005_0011__nights,r_0005_0008__on_tmp).
 arc(r_0005_0011__nights,r_0005_0010__appropriate,attrib2).
+arc(r_0005_1002__imperative,r_0005_0002__check,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_5_A_pantomime,axiom,
+fof(id__5_A_pantomime,axiom,
     ? [STATEX4,OPERATORX2,EVENTX10,EVENTX9,ENTITYX5,ENTITYX7,ATTRIBX6,ATTRIBX8] :
       ( STATEX4 = EVENTX9
       &amp; isA(EVENTX9,r_0005_0006__is)
@@ -159,7 +159,7 @@ fof(id_5_A_pantomime,axiom,
       &amp; attrib2(ENTITYX7) = ATTRIBX8
       &amp; isA(ATTRIBX6,r_0005_0007__ready)
       &amp; isA(ATTRIBX8,r_0005_0010__appropriate)
-      &amp; isA(OPERATORX2,imperative_0005_1002)
+      &amp; isA(OPERATORX2,r_0005_1002__imperative)
       &amp; scope(OPERATORX2) = EVENTX10
       &amp; isA(EVENTX10,r_0005_0002__check)
       &amp; arg1(EVENTX10) = STATEX4 ) ).

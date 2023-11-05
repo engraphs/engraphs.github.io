@@ -110,24 +110,24 @@ Head temple is Shokoku-ji in Kyoto , established by Yoshimitsu ASHIKAGA .
 </svg>
 <br>
 <pre>
-arc(r_0113_0003__is,r_0113_0001__Head_temple,arg0).
+arc(r_0113_0003__is,r_0113_0001__Head__r_0113_0002__temple,arg0).
 arc(r_0113_0003__is,r_0113_0004__Shokoku_ji,prd2).
 arc(r_0113_0004__Shokoku_ji,r_0113_0006__Kyoto,r_0113_0005__in).
 arc(r_0113_0008__established,r_0113_0004__Shokoku_ji,arg1).
-arc(r_0113_0008__established,r_0113_0010__Yoshimitsu_ASHIKAGA,arg0_by_lgs).
+arc(r_0113_0008__established,r_0113_0010__Yoshimitsu__r_0113_0011__ASHIKAGA,arg0_r_0113_0009__by_lgs).
 
 </pre>
 <br>
 <pre>
-fof(id_113_A_KYOTO_2,axiom,
+fof(id__113_A_KYOTO_2,axiom,
     ? [EVENTX2,EVENTX1] :
       ( isA(EVENTX1,r_0113_0008__established)
-      &amp; arg0_by_lgs(EVENTX1) = r_0113_0010__Yoshimitsu_ASHIKAGA
+      &amp; arg0__r_0113_0009__by_lgs(EVENTX1) = r_0113_0010__Yoshimitsu_r_0113_0011__ASHIKAGA
       &amp; arg1(EVENTX1) = r_0113_0004__Shokoku_ji
       &amp; isA(r_0113_0004__Shokoku_ji,r_0113_0004__Shokoku_ji)
       &amp; r_0113_0005__in(r_0113_0004__Shokoku_ji) = r_0113_0006__Kyoto
       &amp; isA(EVENTX2,r_0113_0003__is)
-      &amp; arg0(EVENTX2) = r_0113_0001__Head_temple
+      &amp; arg0(EVENTX2) = r_0113_0001__Head__r_0113_0002__temple
       &amp; prd2(EVENTX2) = r_0113_0004__Shokoku_ji ) ).
 
 

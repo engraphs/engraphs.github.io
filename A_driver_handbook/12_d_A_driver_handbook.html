@@ -97,17 +97,17 @@ Construction zones usually have reduced speed zones .
 <br>
 <pre>
 arc(r_0016_0003__usually,r_0016_0004__have,scope).
-arc(r_0016_0004__have,r_0016_0001__Construction_zones,arg0).
-arc(r_0016_0004__have,r_0016_0006__speed_zones,arg1).
-arc(r_0016_0006__speed_zones,r_0016_0005__reduced,attrib1).
+arc(r_0016_0004__have,r_0016_0001__Construction__r_0016_0002__zones,arg0).
+arc(r_0016_0004__have,r_0016_0006__speed__r_0016_0007__zones,arg1).
+arc(r_0016_0006__speed__r_0016_0007__zones,r_0016_0005__reduced,attrib1).
 
 </pre>
 <br>
 <pre>
-fof(id_16_A_driver_handbook,axiom,
+fof(id__16_A_driver_handbook,axiom,
     ? [OPERATORX2,EVENTX5,ENTITYX1,ENTITYX3,ATTRIBX4] :
-      ( isA(ENTITYX1,r_0016_0001__Construction_zones)
-      &amp; isA(ENTITYX3,r_0016_0006__speed_zones)
+      ( isA(ENTITYX1,r_0016_0001__Construction__r_0016_0002__zones)
+      &amp; isA(ENTITYX3,r_0016_0006__speed__r_0016_0007__zones)
       &amp; attrib1(ENTITYX3) = ATTRIBX4
       &amp; isA(ATTRIBX4,r_0016_0005__reduced)
       &amp; isA(OPERATORX2,r_0016_0003__usually)

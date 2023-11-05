@@ -305,31 +305,31 @@ A business operator who violates orders issued under paragraph ( 2 ) or ( 3 ) of
 </svg>
 <br>
 <pre>
-arc(r_0310_0005__violates,r_0310_0002__business_operator,arg0).
+arc(r_0310_0005__violates,r_0310_0002__business__r_0310_0003__operator,arg0).
 arc(r_0310_0005__violates,r_0310_0006__orders,arg1).
 arc(r_0310_0007__issued,r_0310_0006__orders,arg1).
 arc(r_0310_0007__issued,r_0310_0013__or,r_0310_0008__under_loc).
-arc(r_0310_0013__or,r_0310_0009__paragraph_2,conj1).
+arc(r_0310_0013__or,r_0310_0009__paragraph__r_0310_0011__2,conj1).
 arc(r_0310_0013__or,r_0310_0015__3,conj2).
-arc(r_0310_0013__or,r_0310_0018__Article_34,r_0310_0017__of).
+arc(r_0310_0013__or,r_0310_0018__Article__r_0310_0019__34,r_0310_0017__of).
 arc(r_0310_0020__shall,r_0310_0021__be,scope).
 arc(r_0310_0021__be,r_0310_0022__sentenced,catenative).
-arc(r_0310_0022__sentenced,r_0310_0002__business_operator,arg1).
+arc(r_0310_0022__sentenced,r_0310_0002__business__r_0310_0003__operator,arg1).
 arc(r_0310_0022__sentenced,r_0310_0033__or,z_0310_1014).
 arc(r_0310_0024__imprisonment,r_0310_0026__work,r_0310_0025__with).
 arc(r_0310_0024__imprisonment,r_0310_0032__months,r_0310_0027__of).
-arc(r_0310_0028__not_more,r_0310_0031__six,r_0310_0030__than).
-arc(r_0310_0032__months,r_0310_0028__not_more,attrib1).
+arc(r_0310_0028__not__r_0310_0029__more,r_0310_0031__six,r_0310_0030__than).
+arc(r_0310_0032__months,r_0310_0028__not__r_0310_0029__more,attrib1).
 arc(r_0310_0033__or,r_0310_0024__imprisonment,r_0310_0023__to_clr).
 arc(r_0310_0033__or,r_0310_0036__fine,r_0310_0034__to_clr).
 arc(r_0310_0036__fine,r_0310_0042__yen,r_0310_0037__of).
-arc(r_0310_0038__not_more,r_0310_0041__300,000,r_0310_0040__than).
-arc(r_0310_0042__yen,r_0310_0038__not_more,attrib1).
+arc(r_0310_0038__not__r_0310_0039__more,r_0310_0041__300,000,r_0310_0040__than).
+arc(r_0310_0042__yen,r_0310_0038__not__r_0310_0039__more,attrib1).
 
 </pre>
 <br>
 <pre>
-fof(id_310_A_law_h15A119,axiom,
+fof(id__310_A_law_h15A119,axiom,
     ? [CATENATIVEX11,OPERATORX10,EVENTX26,EVENTX25,EVENTX9,EVENTX8,ENTITYX1,CONJX15,ENTITYX16,ENTITYX21,ENTITYX22,ENTITYX24,ENTITYX17,ENTITYX18,ENTITYX20,ENTITYX2,ENTITYX4,ENTITYX5,ENTITYX6,ENTITYX7,ATTRIBX23,ATTRIBX19] :
       ( CATENATIVEX11 = EVENTX25
       &amp; isA(EVENTX25,r_0310_0022__sentenced)
@@ -338,7 +338,7 @@ fof(id_310_A_law_h15A119,axiom,
       &amp; isA(EVENTX9,r_0310_0005__violates)
       &amp; arg0(EVENTX9) = ENTITYX1
       &amp; arg1(EVENTX9) = ENTITYX2
-      &amp; isA(ENTITYX1,r_0310_0002__business_operator)
+      &amp; isA(ENTITYX1,r_0310_0002__business__r_0310_0003__operator)
       &amp; isA(EVENTX8,r_0310_0007__issued)
       &amp; arg1(EVENTX8) = ENTITYX2
       &amp; r_0310_0008__under_loc(EVENTX8) = ENTITYX4
@@ -347,8 +347,8 @@ fof(id_310_A_law_h15A119,axiom,
       &amp; r_0310_0017__of(ENTITYX4) = ENTITYX5
       &amp; conj1(ENTITYX4) = ENTITYX6
       &amp; conj2(ENTITYX4) = ENTITYX7
-      &amp; isA(ENTITYX5,r_0310_0018__Article_34)
-      &amp; isA(ENTITYX6,r_0310_0009__paragraph_2)
+      &amp; isA(ENTITYX5,r_0310_0018__Article__r_0310_0019__34)
+      &amp; isA(ENTITYX6,r_0310_0009__paragraph__r_0310_0011__2)
       &amp; isA(ENTITYX7,r_0310_0015__3)
       &amp; isA(CONJX15,r_0310_0033__or)
       &amp; r_0310_0023__to_clr(CONJX15) = ENTITYX16
@@ -365,9 +365,9 @@ fof(id_310_A_law_h15A119,axiom,
       &amp; isA(ENTITYX22,r_0310_0042__yen)
       &amp; attrib1(ENTITYX22) = ATTRIBX23
       &amp; isA(ENTITYX24,r_0310_0041__300,000)
-      &amp; isA(ATTRIBX19,r_0310_0028__not_more)
+      &amp; isA(ATTRIBX19,r_0310_0028__not__r_0310_0029__more)
       &amp; r_0310_0030__than(ATTRIBX19) = ENTITYX20
-      &amp; isA(ATTRIBX23,r_0310_0038__not_more)
+      &amp; isA(ATTRIBX23,r_0310_0038__not__r_0310_0039__more)
       &amp; r_0310_0040__than(ATTRIBX23) = ENTITYX24
       &amp; isA(OPERATORX10,r_0310_0020__shall)
       &amp; scope(OPERATORX10) = EVENTX26

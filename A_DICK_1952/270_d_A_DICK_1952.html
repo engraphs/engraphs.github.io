@@ -164,9 +164,9 @@ The ship is safe until it takes off again , then the end will come . &rdquo;
 arc(r_0345_0003__is,r_0345_0002__ship,arg0).
 arc(r_0345_0003__is,r_0345_0004__safe,prd2).
 arc(r_0345_0005__until_tmp,r_0345_0003__is,scope).
-arc(r_0345_0005__until_tmp,r_0345_0007__takes_off,restriction).
-arc(r_0345_0007__takes_off,r_0345_0002__ship,arg0).
-arc(r_0345_0007__takes_off,r_0345_0009__again,tmp4).
+arc(r_0345_0005__until_tmp,r_0345_0007__takes__r_0345_0008__off,restriction).
+arc(r_0345_0007__takes__r_0345_0008__off,r_0345_0002__ship,arg0).
+arc(r_0345_0007__takes__r_0345_0008__off,r_0345_0009__again,tmp4).
 arc(r_0345_0014__will,r_0345_0015__come,scope).
 arc(r_0345_0015__come,r_0345_0011__then,tmp1).
 arc(r_0345_0015__come,r_0345_0013__end,arg0).
@@ -174,7 +174,7 @@ arc(r_0345_0015__come,r_0345_0013__end,arg0).
 </pre>
 <br>
 <pre>
-fof(id_345_A_DICK_1952,axiom,
+fof(id__345_A_DICK_1952,axiom,
     ? [SHIPX4,OPERATORX10,EVENTX11,CONNX3,EVENTX6,EVENTX7,ENTITYX9,SHIPX1,ATTRIBX2,QUALITYX8,QUALITYX5] :
       ( isA(SHIPX1,r_0345_0002__ship)
       &amp; SHIPX4 = SHIPX1
@@ -188,7 +188,7 @@ fof(id_345_A_DICK_1952,axiom,
       &amp; arg0(EVENTX7) = SHIPX1
       &amp; prd2(EVENTX7) = ATTRIBX2
       &amp; restriction(CONNX3) = EVENTX6
-      &amp; isA(EVENTX6,r_0345_0007__takes_off)
+      &amp; isA(EVENTX6,r_0345_0007__takes__r_0345_0008__off)
       &amp; arg0(EVENTX6) = SHIPX4
       &amp; tmp4(EVENTX6) = QUALITYX5
       &amp; isA(OPERATORX10,r_0345_0014__will)

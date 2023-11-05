@@ -204,8 +204,8 @@ This operation is best performed by two persons , one to draw the wine , the oth
 arc(r_0035_0003__is,r_0035_0005__performed,catenative).
 arc(r_0035_0005__performed,r_0035_0002__operation,arg1).
 arc(r_0035_0005__performed,r_0035_0004__best,mnr1).
-arc(r_0035_0005__performed,r_0035_0007__two_persons,arg0_by_lgs).
-arc(r_0035_0007__two_persons,z_0035_1014,prn4).
+arc(r_0035_0005__performed,r_0035_0007__two__r_0035_0008__persons,arg0_r_0035_0006__by_lgs).
+arc(r_0035_0007__two__r_0035_0008__persons,z_0035_1014,prn4).
 arc(r_0035_0012__draw,r_0035_0010__one,arg0).
 arc(r_0035_0012__draw,r_0035_0014__wine,arg1).
 arc(r_0035_0019__cork,r_0035_0021__bottles,arg1).
@@ -217,15 +217,15 @@ arc(z_0035_1014,z_0035_1013,conj2).
 </pre>
 <br>
 <pre>
-fof(id_35_A_BEETON_1861,axiom,
+fof(id__35_A_BEETON_1861,axiom,
     ? [CATENATIVEX2,EVENTX16,EVENTX15,EVENTX12,EVENTX8,ENTITYX1,ENTITYX4,ENTITYX5,ENTITYX6,ENTITYX9,ENTITYX11,ENTITYX7,QUALITYX3,ATTRIBX10] :
       ( CATENATIVEX2 = EVENTX15
       &amp; isA(EVENTX15,r_0035_0005__performed)
-      &amp; arg0_by_lgs(EVENTX15) = ENTITYX4
+      &amp; arg0__r_0035_0006__by_lgs(EVENTX15) = ENTITYX4
       &amp; arg1(EVENTX15) = ENTITYX1
       &amp; mnr1(EVENTX15) = QUALITYX3
       &amp; isA(ENTITYX1,r_0035_0002__operation)
-      &amp; isA(ENTITYX4,r_0035_0007__two_persons)
+      &amp; isA(ENTITYX4,r_0035_0007__two__r_0035_0008__persons)
       &amp; prn4(ENTITYX4) = ENTITYX5
       &amp; isA(ENTITYX5,z_0035_1014)
       &amp; conj1(ENTITYX5) = ENTITYX6

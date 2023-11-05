@@ -370,14 +370,14 @@ As I was saying , the hedgehog is a good indicator for hedgerow habitat , althou
 </svg>
 <br>
 <pre>
-arc(cnt_0154_1005,r_0154_0003__is,scope).
-arc(cnt_0154_1005,r_0154_0011__take_on,restriction).
 arc(r_0154_0003__is,r_0154_0002__hedgehog,arg0).
 arc(r_0154_0003__is,r_0154_0007__species,prd2).
 arc(r_0154_0006__challenging,r_0154_0005__more,quality1).
 arc(r_0154_0007__species,r_0154_0006__challenging,attrib2).
-arc(r_0154_0011__take_on,r_0154_0009__us,arg0).
-arc(r_0154_0011__take_on,r_0154_0013__board,arg1).
+arc(r_0154_0011__take__r_0154_0012__on,r_0154_0009__us,arg0).
+arc(r_0154_0011__take__r_0154_0012__on,r_0154_0013__board,arg1).
+arc(r_0154_1005__cnt,r_0154_0003__is,scope).
+arc(r_0154_1005__cnt,r_0154_0011__take__r_0154_0012__on,restriction).
 arc(r_0155_0001__As_cnt,r_0155_0003__was,restriction).
 arc(r_0155_0001__As_cnt,r_0155_0016__although_cnt,scope).
 arc(r_0155_0003__was,r_0155_0004__saying,catenative).
@@ -385,7 +385,7 @@ arc(r_0155_0004__saying,r_0155_0002__I,arg0).
 arc(r_0155_0008__is,r_0154_0002__hedgehog,arg0).
 arc(r_0155_0008__is,r_0155_0011__indicator,prd2).
 arc(r_0155_0011__indicator,r_0155_0010__good,attrib2).
-arc(r_0155_0011__indicator,r_0155_0013__hedgerow_habitat,r_0155_0012__for).
+arc(r_0155_0011__indicator,r_0155_0013__hedgerow__r_0155_0014__habitat,r_0155_0012__for).
 arc(r_0155_0016__although_cnt,r_0155_0008__is,scope).
 arc(r_0155_0016__although_cnt,r_0155_0019__not,restriction).
 arc(r_0155_0018__is,r_0154_0002__hedgehog,arg0).
@@ -399,7 +399,7 @@ arc(r_0155_0024__or,r_0155_0025__wetland,conj2).
 </pre>
 <br>
 <pre>
-fof(id_154_A_Hedgehog,axiom,
+fof(id__154_A_Hedgehog,axiom,
     ? [CATENATIVEX11,HEDGEHOGX14,HEDGEHOGX19,CONNX10,CONNX18,OPERATORX25,EVENTX26,EVENTX27,EVENTX13,EVENTX12,CONNX6,EVENTX8,EVENTX9,ENTITYX15,ENTITYX20,ENTITYX22,ENTITYX23,ENTITYX24,ENTITYX17,HEDGEHOGX1,ENTITYX2,ENTITYX7,ATTRIBX21,ATTRIBX16,ATTRIBX3,QUALITYX4] :
       ( CATENATIVEX11 = EVENTX12
       &amp; isA(EVENTX12,r_0155_0004__saying)
@@ -412,7 +412,7 @@ fof(id_154_A_Hedgehog,axiom,
       &amp; isA(ENTITYX15,r_0155_0011__indicator)
       &amp; attrib2(ENTITYX15) = ATTRIBX16
       &amp; r_0155_0012__for(ENTITYX15) = ENTITYX17
-      &amp; isA(ENTITYX17,r_0155_0013__hedgerow_habitat)
+      &amp; isA(ENTITYX17,r_0155_0013__hedgerow__r_0155_0014__habitat)
       &amp; ( HEDGEHOGX19 = HEDGEHOGX14
         | HEDGEHOGX19 = HEDGEHOGX1 )
       &amp; isA(ENTITYX20,r_0155_0021__use)
@@ -428,13 +428,13 @@ fof(id_154_A_Hedgehog,axiom,
       &amp; isA(ATTRIBX16,r_0155_0010__good)
       &amp; isA(ATTRIBX21,r_0155_0020__much)
       &amp; isA(QUALITYX4,r_0154_0005__more)
-      &amp; isA(CONNX6,cnt_0154_1005)
+      &amp; isA(CONNX6,r_0154_1005__cnt)
       &amp; scope(CONNX6) = EVENTX9
       &amp; isA(EVENTX9,r_0154_0003__is)
       &amp; arg0(EVENTX9) = HEDGEHOGX1
       &amp; prd2(EVENTX9) = ENTITYX2
       &amp; restriction(CONNX6) = EVENTX8
-      &amp; isA(EVENTX8,r_0154_0011__take_on)
+      &amp; isA(EVENTX8,r_0154_0011__take__r_0154_0012__on)
       &amp; arg0(EVENTX8) = r_0154_0009__us
       &amp; arg1(EVENTX8) = ENTITYX7
       &amp; isA(CONNX10,r_0155_0001__As_cnt)

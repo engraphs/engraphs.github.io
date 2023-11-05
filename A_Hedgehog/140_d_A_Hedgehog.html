@@ -325,7 +325,6 @@ Scottish Natural Heritage is doing careful work to humanely remove hedgehogs fro
 </svg>
 <br>
 <pre>
-arc(question_0162_1017,r_0162_0027__intend,scope).
 arc(r_0162_0003__Heritage,r_0162_0001__Scottish,attrib1).
 arc(r_0162_0003__Heritage,r_0162_0002__Natural,attrib2).
 arc(r_0162_0004__is,r_0162_0005__doing,catenative).
@@ -341,17 +340,18 @@ arc(r_0162_0016__and,r_0162_0018__would,conj2).
 arc(r_0162_0018__would,r_0162_0019__be,scope).
 arc(r_0162_0019__be,r_0162_0020__interesting,prd2).
 arc(r_0162_0019__be,r_0162_0022__hear,arg0).
-arc(r_0162_0022__hear,question_0162_1017,arg1).
+arc(r_0162_0022__hear,r_0162_1017__question,arg1).
 arc(r_0162_0027__intend,r_0162_0023__how,mnr1).
-arc(r_0162_0027__intend,r_0162_0025__UK_Government,arg0).
+arc(r_0162_0027__intend,r_0162_0025__UK__r_0162_0026__Government,arg0).
 arc(r_0162_0027__intend,r_0162_0029__support,arg1).
-arc(r_0162_0029__support,r_0162_0025__UK_Government,arg0).
+arc(r_0162_0029__support,r_0162_0025__UK__r_0162_0026__Government,arg0).
 arc(r_0162_0029__support,r_0162_0031__work,arg1).
+arc(r_0162_1017__question,r_0162_0027__intend,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_162_A_Hedgehog,axiom,
+fof(id__162_A_Hedgehog,axiom,
     ? [CATENATIVEX3,STATEX6,STATEX14,STATEX15,STATEX19,CONJX26,OPERATORX24,EVENTX25,EVENTX23,OPERATORX17,EVENTX22,EVENTX21,EVENTX11,EVENTX10,EVENTX9,ENTITYX20,ENTITYX4,ENTITYX8,ATTRIBX13,ATTRIBX5,ATTRIBX1,ATTRIBX2,QUALITYX18,QUALITYX7] :
       ( CATENATIVEX3 = EVENTX10
       &amp; isA(EVENTX10,r_0162_0005__doing)
@@ -367,15 +367,15 @@ fof(id_162_A_Hedgehog,axiom,
       &amp; isA(EVENTX23,r_0162_0022__hear)
       &amp; arg1(EVENTX23) = STATEX15
       &amp; STATEX15 = OPERATORX17
-      &amp; isA(OPERATORX17,question_0162_1017)
+      &amp; isA(OPERATORX17,r_0162_1017__question)
       &amp; scope(OPERATORX17) = EVENTX22
       &amp; isA(EVENTX22,r_0162_0027__intend)
       &amp; mnr1(EVENTX22) = QUALITYX18
-      &amp; arg0(EVENTX22) = r_0162_0025__UK_Government
+      &amp; arg0(EVENTX22) = r_0162_0025__UK__r_0162_0026__Government
       &amp; arg1(EVENTX22) = STATEX19
       &amp; STATEX19 = EVENTX21
       &amp; isA(EVENTX21,r_0162_0029__support)
-      &amp; arg0(EVENTX21) = r_0162_0025__UK_Government
+      &amp; arg0(EVENTX21) = r_0162_0025__UK__r_0162_0026__Government
       &amp; arg1(EVENTX21) = ENTITYX20
       &amp; isA(ENTITYX4,r_0162_0007__work)
       &amp; attrib1(ENTITYX4) = ATTRIBX5
@@ -389,7 +389,7 @@ fof(id_162_A_Hedgehog,axiom,
       &amp; attrib1(r_0162_0003__Heritage) = ATTRIBX1
       &amp; attrib2(r_0162_0003__Heritage) = ATTRIBX2
       &amp; isA(r_0162_0014__Hebrides,r_0162_0014__Hebrides)
-      &amp; isA(r_0162_0025__UK_Government,r_0162_0025__UK_Government)
+      &amp; isA(r_0162_0025__UK__r_0162_0026__Government,r_0162_0025__UK_r_0162_0026__Government)
       &amp; isA(QUALITYX7,r_0162_0009__humanely)
       &amp; isA(QUALITYX18,r_0162_0023__how)
       &amp; isA(CONJX26,r_0162_0016__and)

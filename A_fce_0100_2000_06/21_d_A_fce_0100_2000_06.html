@@ -432,10 +432,6 @@ Write a composition , explaining your views with reference to the book or one of
 </svg>
 <br>
 <pre>
-arc(cnt_0032_1024,r_0034_0001__Write,scope).
-arc(cnt_0032_1024,r_0034_0005__explaining,restriction).
-arc(imperative_0032_1022,cnt_0032_1024,scope).
-arc(question_0032_1011,r_0033_0001__Is,scope).
 arc(r_0032_0005__characters,r_0032_0004__bad,attrib2).
 arc(r_0032_0005__characters,r_0032_0008__story,r_0032_0006__in).
 arc(r_0032_0009__are,r_0032_0002__Sometimes,tmp2).
@@ -444,6 +440,10 @@ arc(r_0032_0009__are,r_0032_0011__interesting,prd2).
 arc(r_0032_0011__interesting,r_0032_0010__more,quality1).
 arc(r_0032_0011__interesting,r_0032_0015__ones,r_0032_0012__than).
 arc(r_0032_0015__ones,r_0032_0014__good,attrib2).
+arc(r_0032_1011__question,r_0033_0001__Is,scope).
+arc(r_0032_1022__imperative,r_0032_1024__cnt,scope).
+arc(r_0032_1024__cnt,r_0034_0001__Write,scope).
+arc(r_0032_1024__cnt,r_0034_0005__explaining,restriction).
 arc(r_0033_0001__Is,r_0032_0009__are,arg0).
 arc(r_0033_0001__Is,r_0033_0003__true,prd2).
 arc(r_0033_0003__true,r_0033_0006__book,r_0033_0004__of).
@@ -466,7 +466,7 @@ arc(r_0034_0021__read,r_0034_0013__or,arg1).
 </pre>
 <br>
 <pre>
-fof(id_32_A_fce_0100_2000_06__33_A_fce_0100_2000_06__34_A_fce_0100_2000_06,axiom,
+fof(id__32_A_fce_0100_2000_06__33_A_fce_0100_2000_06__34_A_fce_0100_2000_06,axiom,
     ? [CATENATIVEX15,CATENATIVEX31,STATEMENT1X12,HEARERX27,HEARERX30,BOOK1X34,OPERATORX22,CONNX25,EVENTX38,EVENTX33,EVENTX32,EVENTX39,OPERATORX11,EVENTX18,EVENTX17,EVENTX16,STATEMENT1X9,QUALITYX1,QUALITYX6,ENTITYX23,ENTITYX26,ENTITYX28,ENTITYX29,ENTITYX35,ENTITYX36,BOOK1X14,ENTITYX2,ENTITYX7,ENTITYX4,ATTRIBX37,ATTRIBX13,ATTRIBX5,ATTRIBX8,ATTRIBX3] :
       ( CATENATIVEX15 = EVENTX16
       &amp; isA(EVENTX16,r_0033_0009__read)
@@ -517,14 +517,14 @@ fof(id_32_A_fce_0100_2000_06__33_A_fce_0100_2000_06__34_A_fce_0100_2000_06,axiom
       &amp; tmp2(STATEMENT1X9) = QUALITYX1
       &amp; arg0(STATEMENT1X9) = ENTITYX2
       &amp; prd2(STATEMENT1X9) = ATTRIBX5
-      &amp; isA(OPERATORX11,question_0032_1011)
+      &amp; isA(OPERATORX11,r_0032_1011__question)
       &amp; scope(OPERATORX11) = EVENTX18
       &amp; isA(EVENTX18,r_0033_0001__Is)
       &amp; arg0(EVENTX18) = STATEMENT1X12
       &amp; prd2(EVENTX18) = ATTRIBX13
-      &amp; isA(OPERATORX22,imperative_0032_1022)
+      &amp; isA(OPERATORX22,r_0032_1022__imperative)
       &amp; scope(OPERATORX22) = CONNX25
-      &amp; isA(CONNX25,cnt_0032_1024)
+      &amp; isA(CONNX25,r_0032_1024__cnt)
       &amp; scope(CONNX25) = EVENTX39
       &amp; isA(EVENTX39,r_0034_0001__Write)
       &amp; arg1(EVENTX39) = ENTITYX23

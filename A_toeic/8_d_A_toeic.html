@@ -41,29 +41,29 @@ What feature does the man suggest ?
 <ellipse fill="none" stroke="black" cx="42.9" cy="-18" rx="42.79" ry="18"/>
 <text text-anchor="middle" x="42.9" y="-14.3" font-family="fixed" font-size="14.00">feature</text>
 </g>
-<!-- 0012_0003_0012_0006 -->
-<g id="node2" class="node">
-<title>0012_0003_0012_0006</title>
-<ellipse fill="none" stroke="black" cx="87.9" cy="-105" rx="72.59" ry="18"/>
-<text text-anchor="middle" x="87.9" y="-101.3" font-family="fixed" font-size="14.00">does_suggest</text>
-</g>
-<!-- 0012_0003_0012_0006&#45;&gt;0012_0002 -->
-<g id="edge1" class="edge">
-<title>0012_0003_0012_0006&#45;&gt;0012_0002</title>
-<path fill="none" stroke="black" d="M78.56,-86.94C75.46,-81.25 72.01,-74.86 68.9,-69 64.72,-61.14 60.23,-52.55 56.17,-44.74"/>
-<polygon fill="black" stroke="black" points="59.2,-42.97 51.49,-35.71 52.98,-46.19 59.2,-42.97"/>
-<text text-anchor="middle" x="90.4" y="-57.8" font-family="fixed" font-size="14.00">[arg1]</text>
-</g>
 <!-- 0012_0005 -->
-<g id="node3" class="node">
+<g id="node2" class="node">
 <title>0012_0005</title>
 <ellipse fill="none" stroke="black" cx="133.9" cy="-18" rx="30.59" ry="18"/>
 <text text-anchor="middle" x="133.9" y="-14.3" font-family="fixed" font-size="14.00">man</text>
 </g>
-<!-- 0012_0003_0012_0006&#45;&gt;0012_0005 -->
+<!-- 0012_0006 -->
+<g id="node3" class="node">
+<title>0012_0006</title>
+<ellipse fill="none" stroke="black" cx="87.9" cy="-105" rx="46.59" ry="18"/>
+<text text-anchor="middle" x="87.9" y="-101.3" font-family="fixed" font-size="14.00">suggest</text>
+</g>
+<!-- 0012_0006&#45;&gt;0012_0002 -->
+<g id="edge1" class="edge">
+<title>0012_0006&#45;&gt;0012_0002</title>
+<path fill="none" stroke="black" d="M78.75,-87.3C75.61,-81.51 72.08,-74.98 68.9,-69 64.72,-61.14 60.23,-52.55 56.17,-44.74"/>
+<polygon fill="black" stroke="black" points="59.2,-42.97 51.49,-35.71 52.98,-46.19 59.2,-42.97"/>
+<text text-anchor="middle" x="90.4" y="-57.8" font-family="fixed" font-size="14.00">[arg1]</text>
+</g>
+<!-- 0012_0006&#45;&gt;0012_0005 -->
 <g id="edge2" class="edge">
-<title>0012_0003_0012_0006&#45;&gt;0012_0005</title>
-<path fill="none" stroke="black" d="M100.52,-86.96C104.4,-81.38 108.53,-75.05 111.9,-69 116.05,-61.54 120,-53.15 123.38,-45.4"/>
+<title>0012_0006&#45;&gt;0012_0005</title>
+<path fill="none" stroke="black" d="M100.27,-87.32C104.22,-81.65 108.46,-75.18 111.9,-69 116.05,-61.54 120,-53.15 123.38,-45.4"/>
 <polygon fill="black" stroke="black" points="126.66,-46.62 127.32,-36.04 120.21,-43.9 126.66,-46.62"/>
 <text text-anchor="middle" x="140.4" y="-57.8" font-family="fixed" font-size="14.00">[arg0]</text>
 </g>
@@ -73,9 +73,9 @@ What feature does the man suggest ?
 <ellipse fill="none" stroke="black" cx="87.9" cy="-192" rx="56.59" ry="18"/>
 <text text-anchor="middle" x="87.9" y="-188.3" font-family="fixed" font-size="14.00">[question]</text>
 </g>
-<!-- question_0012_1002&#45;&gt;0012_0003_0012_0006 -->
+<!-- question_0012_1002&#45;&gt;0012_0006 -->
 <g id="edge3" class="edge">
-<title>question_0012_1002&#45;&gt;0012_0003_0012_0006</title>
+<title>question_0012_1002&#45;&gt;0012_0006</title>
 <path fill="none" stroke="black" d="M87.9,-173.8C87.9,-162.16 87.9,-146.55 87.9,-133.24"/>
 <polygon fill="black" stroke="black" points="91.4,-133.18 87.9,-123.18 84.4,-133.18 91.4,-133.18"/>
 <text text-anchor="middle" x="113.9" y="-144.8" font-family="fixed" font-size="14.00">[scope]</text>
@@ -84,20 +84,20 @@ What feature does the man suggest ?
 </svg>
 <br>
 <pre>
-arc(question_0012_1002,r_0012_0003__does_suggest,scope).
-arc(r_0012_0003__does_suggest,r_0012_0002__feature,arg1).
-arc(r_0012_0003__does_suggest,r_0012_0005__man,arg0).
+arc(r_0012_0006__suggest,r_0012_0002__feature,arg1).
+arc(r_0012_0006__suggest,r_0012_0005__man,arg0).
+arc(r_0012_1002__question,r_0012_0006__suggest,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_12_A_toeic,axiom,
+fof(id__12_A_toeic,axiom,
     ? [OPERATORX2,EVENTX5,ENTITYX3,ENTITYX4] :
       ( isA(ENTITYX3,r_0012_0002__feature)
       &amp; isA(ENTITYX4,r_0012_0005__man)
-      &amp; isA(OPERATORX2,question_0012_1002)
+      &amp; isA(OPERATORX2,r_0012_1002__question)
       &amp; scope(OPERATORX2) = EVENTX5
-      &amp; isA(EVENTX5,r_0012_0003__does_suggest)
+      &amp; isA(EVENTX5,r_0012_0006__suggest)
       &amp; arg1(EVENTX5) = ENTITYX3
       &amp; arg0(EVENTX5) = ENTITYX4 ) ).
 

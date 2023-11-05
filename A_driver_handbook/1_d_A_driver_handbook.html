@@ -109,24 +109,24 @@ Section 1 : Right - of - way on mountain road
 </svg>
 <br>
 <pre>
-arc(r_0001_0001__Section_1,z_0001_1008,prn4).
+arc(r_0001_0001__Section__r_0001_0002__1,z_0001_1008,prn4).
 arc(r_0001_0004__Right,r_0001_0008__way,r_0001_0006__of).
 arc(z_0001_1008,r_0001_0004__Right,attrib1).
-arc(z_0001_1008,r_0001_0010__mountain_road,r_0001_0009__on).
-arc(z_0001_1009,r_0001_0001__Section_1,z_0001_1002).
+arc(z_0001_1008,r_0001_0010__mountain__r_0001_0011__road,r_0001_0009__on).
+arc(z_0001_1009,r_0001_0001__Section__r_0001_0002__1,z_0001_1002).
 
 </pre>
 <br>
 <pre>
-fof(id_1_A_driver_handbook,axiom,
+fof(id__1_A_driver_handbook,axiom,
     ? [EVENTX10,ENTITYX3,ENTITYX4,ENTITYX7,ENTITYX6,ATTRIBX5] :
-      ( isA(ENTITYX3,r_0001_0001__Section_1)
+      ( isA(ENTITYX3,r_0001_0001__Section__r_0001_0002__1)
       &amp; prn4(ENTITYX3) = ENTITYX4
       &amp; isA(ENTITYX4,z_0001_1008)
       &amp; attrib1(ENTITYX4) = ATTRIBX5
       &amp; r_0001_0009__on(ENTITYX4) = ENTITYX7
       &amp; isA(ENTITYX6,r_0001_0008__way)
-      &amp; isA(ENTITYX7,r_0001_0010__mountain_road)
+      &amp; isA(ENTITYX7,r_0001_0010__mountain__r_0001_0011__road)
       &amp; isA(ATTRIBX5,r_0001_0004__Right)
       &amp; r_0001_0006__of(ATTRIBX5) = ENTITYX6
       &amp; isA(EVENTX10,z_0001_1009)

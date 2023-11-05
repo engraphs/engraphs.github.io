@@ -300,21 +300,21 @@ arc(r_0008_0004____list__,z_0008_1015,conj3).
 arc(r_0008_0005__visiting,r_0008_0008__garden,arg1).
 arc(r_0008_0008__garden,r_0008_0007__gracious,attrib2).
 arc(r_0008_0008__garden,r_0008_0013__or,prn5).
-arc(r_0008_0013__or,r_0008_0010__Hinton_Ampner,conj1).
+arc(r_0008_0013__or,r_0008_0010__Hinton__r_0008_0011__Ampner,conj1).
 arc(r_0008_0013__or,r_0008_0014__Coles,conj2).
 arc(r_0008_0014__Coles,r_0008_0016__Privett,r_0008_0015__at).
-arc(r_0008_0020__Hobby_Horse,r_0008_0025__Broad_Street,r_0008_0022__in).
-arc(r_0008_0025__Broad_Street,r_0008_0023__Alresford,genv).
-arc(r_0008_0034__bookshop,r_0008_0031__Laurence_Oxley,genv).
+arc(r_0008_0020__Hobby__r_0008_0021__Horse,r_0008_0025__Broad_r_0008_0026__Street,r_0008_0022__in).
+arc(r_0008_0025__Broad__r_0008_0026__Street,r_0008_0023__Alresford,genv).
+arc(r_0008_0034__bookshop,r_0008_0031__Laurence__r_0008_0032__Oxley,genv).
 arc(z_0008_1011,r_0008_0017__coffee,arg1).
-arc(z_0008_1011,r_0008_0020__Hobby_Horse,r_0008_0018__in_loc).
+arc(z_0008_1011,r_0008_0020__Hobby__r_0008_0021__Horse,r_0008_0018__in_loc).
 arc(z_0008_1015,r_0008_0029__browse,arg1).
 arc(z_0008_1015,r_0008_0034__bookshop,r_0008_0030__in_loc).
 
 </pre>
 <br>
 <pre>
-fof(id_8_A_Alresford,axiom,
+fof(id__8_A_Alresford,axiom,
     ? [STATEX3,EVENTX18,CONJX17,EVENTX16,EVENTX12,EVENTX9,ENTITYX1,ENTITYX13,ENTITYX14,ENTITYX10,ENTITYX6,ENTITYX8,QUALITYX2,ATTRIBX7] :
       ( STATEX3 = CONJX17
       &amp; isA(CONJX17,r_0008_0004____list__)
@@ -324,7 +324,7 @@ fof(id_8_A_Alresford,axiom,
       &amp; conj2(CONJX17) = EVENTX12
       &amp; isA(EVENTX12,z_0008_1011)
       &amp; arg1(EVENTX12) = ENTITYX10
-      &amp; r_0008_0018__in_loc(EVENTX12) = r_0008_0020__Hobby_Horse
+      &amp; r_0008_0018__in_loc(EVENTX12) = r_0008_0020__Hobby__r_0008_0021__Horse
       &amp; conj3(CONJX17) = EVENTX16
       &amp; isA(EVENTX16,z_0008_1015)
       &amp; arg1(EVENTX16) = ENTITYX13
@@ -334,20 +334,20 @@ fof(id_8_A_Alresford,axiom,
       &amp; attrib2(ENTITYX6) = ATTRIBX7
       &amp; prn5(ENTITYX6) = ENTITYX8
       &amp; isA(ENTITYX8,r_0008_0013__or)
-      &amp; conj1(ENTITYX8) = r_0008_0010__Hinton_Ampner
+      &amp; conj1(ENTITYX8) = r_0008_0010__Hinton__r_0008_0011__Ampner
       &amp; conj2(ENTITYX8) = r_0008_0014__Coles
       &amp; isA(ENTITYX10,r_0008_0017__coffee)
       &amp; isA(ENTITYX13,r_0008_0029__browse)
       &amp; isA(ENTITYX14,r_0008_0034__bookshop)
-      &amp; genv(ENTITYX14) = r_0008_0031__Laurence_Oxley
+      &amp; genv(ENTITYX14) = r_0008_0031__Laurence__r_0008_0032__Oxley
       &amp; isA(QUALITYX2,r_0008_0002__often)
       &amp; isA(ATTRIBX7,r_0008_0007__gracious)
       &amp; isA(r_0008_0014__Coles,r_0008_0014__Coles)
       &amp; r_0008_0015__at(r_0008_0014__Coles) = r_0008_0016__Privett
-      &amp; isA(r_0008_0020__Hobby_Horse,r_0008_0020__Hobby_Horse)
-      &amp; r_0008_0022__in(r_0008_0020__Hobby_Horse) = r_0008_0025__Broad_Street
-      &amp; isA(r_0008_0025__Broad_Street,r_0008_0025__Broad_Street)
-      &amp; genv(r_0008_0025__Broad_Street) = r_0008_0023__Alresford
+      &amp; isA(r_0008_0020__Hobby__r_0008_0021__Horse,r_0008_0020__Hobby_r_0008_0021__Horse)
+      &amp; r_0008_0022__in(r_0008_0020__Hobby__r_0008_0021__Horse) = r_0008_0025__Broad_r_0008_0026__Street
+      &amp; isA(r_0008_0025__Broad__r_0008_0026__Street,r_0008_0025__Broad_r_0008_0026__Street)
+      &amp; genv(r_0008_0025__Broad__r_0008_0026__Street) = r_0008_0023__Alresford
       &amp; isA(EVENTX18,r_0008_0003__included)
       &amp; arg0(EVENTX18) = ENTITYX1
       &amp; tmp2(EVENTX18) = QUALITYX2

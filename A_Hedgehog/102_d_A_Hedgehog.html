@@ -227,11 +227,11 @@ arc(r_0108_0004__pleased,r_0108_0003__extremely,quality1).
 arc(r_0108_0004__pleased,r_0108_0006__have,emb3).
 arc(r_0108_0006__have,r_0108_0008__opportunity,arg1).
 arc(r_0108_0008__opportunity,r_0108_0010__respond,emb3).
-arc(r_0108_0010__respond,r_0108_0013__hon._Friend,r_0108_0011__to_clr).
-arc(r_0108_0013__hon._Friend,r_0108_0001__I,genv).
-arc(r_0108_0013__hon._Friend,r_0108_0016__Member,prn4).
+arc(r_0108_0010__respond,r_0108_0013__hon__r_0108_0014__Friend,r_0108_0011__to_clr).
+arc(r_0108_0013__hon__r_0108_0014__Friend,r_0108_0001__I,genv).
+arc(r_0108_0013__hon__r_0108_0014__Friend,r_0108_0016__Member,prn4).
 arc(r_0108_0016__Member,r_0108_0021__and,r_0108_0017__for).
-arc(r_0108_0016__Member,r_0108_0024__Oliver_Colvile,prn5).
+arc(r_0108_0016__Member,r_0108_0024__Oliver__r_0108_0025__Colvile,prn5).
 arc(r_0108_0021__and,r_0108_0018__Plymouth,conj1).
 arc(r_0108_0021__and,r_0108_0020__Sutton,conj2).
 arc(r_0108_0021__and,r_0108_0022__Devonport,conj3).
@@ -239,7 +239,7 @@ arc(r_0108_0021__and,r_0108_0022__Devonport,conj3).
 </pre>
 <br>
 <pre>
-fof(id_108_A_Hedgehog,axiom,
+fof(id__108_A_Hedgehog,axiom,
     ? [STATEX3,STATEX7,SPEAKERX11,EVENTX15,EVENTX14,EVENTX13,ENTITYX6,ENTITYX10,ENTITYX12,ATTRIBX1,QUALITYX2] :
       ( STATEX3 = EVENTX14
       &amp; isA(EVENTX14,r_0108_0006__have)
@@ -249,7 +249,7 @@ fof(id_108_A_Hedgehog,axiom,
       &amp; r_0108_0011__to_clr(EVENTX13) = ENTITYX10
       &amp; isA(ENTITYX6,r_0108_0008__opportunity)
       &amp; emb3(ENTITYX6) = STATEX7
-      &amp; isA(ENTITYX10,r_0108_0013__hon._Friend)
+      &amp; isA(ENTITYX10,r_0108_0013__hon__r_0108_0014__Friend)
       &amp; genv(ENTITYX10) = SPEAKERX11
       &amp; prn4(ENTITYX10) = r_0108_0016__Member
       &amp; SPEAKERX11 = r_0108_0001__I
@@ -259,7 +259,7 @@ fof(id_108_A_Hedgehog,axiom,
       &amp; conj3(ENTITYX12) = r_0108_0022__Devonport
       &amp; isA(r_0108_0016__Member,r_0108_0016__Member)
       &amp; r_0108_0017__for(r_0108_0016__Member) = ENTITYX12
-      &amp; prn5(r_0108_0016__Member) = r_0108_0024__Oliver_Colvile
+      &amp; prn5(r_0108_0016__Member) = r_0108_0024__Oliver__r_0108_0025__Colvile
       &amp; isA(ATTRIBX1,r_0108_0004__pleased)
       &amp; quality1(ATTRIBX1) = QUALITYX2
       &amp; emb3(ATTRIBX1) = STATEX3

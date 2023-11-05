@@ -271,10 +271,10 @@ COBOL permits a programmer to use language based on English words and phrases in
 <br>
 <pre>
 arc(r_0042_0002__is,r_0042_0001__COBOL,arg0).
-arc(r_0042_0002__is,r_0042_0007__programming_language,prd2).
+arc(r_0042_0002__is,r_0042_0007__programming__r_0042_0008__language,prd2).
 arc(r_0042_0006__oriented,r_0042_0004__problem,dir).
-arc(r_0042_0006__oriented,r_0042_0007__programming_language,arg1).
-arc(r_0042_0007__programming_language,r_0042_0011__applications,r_0042_0009__for).
+arc(r_0042_0006__oriented,r_0042_0007__programming__r_0042_0008__language,arg1).
+arc(r_0042_0007__programming__r_0042_0008__language,r_0042_0011__applications,r_0042_0009__for).
 arc(r_0042_0011__applications,r_0042_0010__commercial,attrib1).
 arc(r_0043_0002__permits,r_0042_0001__COBOL,arg0).
 arc(r_0043_0002__permits,r_0043_0004__programmer,arg1).
@@ -291,7 +291,7 @@ arc(r_0043_0015__describing,r_0043_0017__application,arg1).
 </pre>
 <br>
 <pre>
-fof(id_42_A_IBM_1401__43_A_IBM_1401,axiom,
+fof(id__42_A_IBM_1401__43_A_IBM_1401,axiom,
     ? [STATEX10,EVENTX20,COBOLX8,EVENTX26,EVENTX25,EVENTX24,EVENTX19,EVENTX7,EVENTX4,ENTITYX9,ENTITYX13,ENTITYX23,ENTITYX15,ENTITYX16,ENTITYX17,ENTITYX18,ENTITYX1,ENTITYX5,ENTITYX3,ATTRIBX6] :
       ( STATEX10 = EVENTX25
       &amp; isA(EVENTX25,r_0043_0006__use)
@@ -303,7 +303,7 @@ fof(id_42_A_IBM_1401__43_A_IBM_1401,axiom,
       &amp; isA(EVENTX4,r_0042_0006__oriented)
       &amp; arg1(EVENTX4) = ENTITYX1
       &amp; dir(EVENTX4) = ENTITYX3
-      &amp; isA(ENTITYX1,r_0042_0007__programming_language)
+      &amp; isA(ENTITYX1,r_0042_0007__programming__r_0042_0008__language)
       &amp; r_0042_0009__for(ENTITYX1) = ENTITYX5
       &amp; isA(ENTITYX3,r_0042_0004__problem)
       &amp; isA(ENTITYX5,r_0042_0011__applications)

@@ -306,13 +306,14 @@ Look , we 're coming to something . &rdquo;
 </svg>
 <br>
 <pre>
-arc(imperative_0184_1017,r_0186_0003__as_cnt,scope).
 arc(r_0184_0003___apos_m,r_0184_0002__I,arg0).
 arc(r_0184_0003___apos_m,r_0184_0005__partial,prd2).
 arc(r_0184_0005__partial,r_0184_0004__rather,quality1).
 arc(r_0184_0005__partial,r_0184_0007__you,r_0184_0006__to).
 arc(r_0184_0011__said,r_0184_0002__I,arg0).
-arc(r_0184_0011__said,utterance_0184_1003,arg1).
+arc(r_0184_0011__said,r_0184_1003__utterance,arg1).
+arc(r_0184_1003__utterance,r_0184_0003___apos_m,part1).
+arc(r_0184_1017__imperative,r_0186_0003__as_cnt,scope).
 arc(r_0185_0003__might,r_0185_0004__try,scope).
 arc(r_0185_0004__try,r_0185_0002__We,arg0).
 arc(r_0185_0004__try,r_0185_0005__it,arg1).
@@ -324,15 +325,14 @@ arc(r_0186_0005__like,r_0184_0007__you,arg0).
 arc(r_0187_0004___apos_re,r_0187_0005__coming,catenative).
 arc(r_0187_0005__coming,r_0185_0002__We,arg0).
 arc(r_0187_0005__coming,r_0187_0007__something,r_0187_0006__to_clr_dir).
-arc(utterance_0184_1003,r_0184_0003___apos_m,part1).
 
 </pre>
 <br>
 <pre>
-fof(id_184_A_DICK_1952__185_A_DICK_1952__186_A_DICK_1952__187_A_DICK_1952,axiom,
+fof(id__184_A_DICK_1952__185_A_DICK_1952__186_A_DICK_1952__187_A_DICK_1952,axiom,
     ? [STATEX1,CATENATIVEX23,NASHAX8,DORLEX19,DORLE_AND_NASHAX22,EVENTX25,EVENTX24,OPERATORX17,CONNX18,EVENTX20,EVENTX21,OPERATORX11,OPERATORX12,EVENTX13,EVENTX9,CONJX7,EVENTX6,ENTITYX10,ATTRIBX4,QUALITYX5] :
       ( STATEX1 = CONJX7
-      &amp; isA(CONJX7,utterance_0184_1003)
+      &amp; isA(CONJX7,r_0184_1003__utterance)
       &amp; part1(CONJX7) = EVENTX6
       &amp; isA(EVENTX6,r_0184_0003___apos_m)
       &amp; arg0(EVENTX6) = r_0184_0002__I
@@ -360,7 +360,7 @@ fof(id_184_A_DICK_1952__185_A_DICK_1952__186_A_DICK_1952__187_A_DICK_1952,axiom,
       &amp; arg0(EVENTX13) = r_0185_0002__We
       &amp; arg1(EVENTX13) = r_0185_0005__it
       &amp; r_0185_0006__for_tmp(EVENTX13) = ENTITYX10
-      &amp; isA(OPERATORX17,imperative_0184_1017)
+      &amp; isA(OPERATORX17,r_0184_1017__imperative)
       &amp; scope(OPERATORX17) = CONNX18
       &amp; isA(CONNX18,r_0186_0003__as_cnt)
       &amp; scope(CONNX18) = EVENTX21

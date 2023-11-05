@@ -239,14 +239,14 @@ arc(r_0042_0011__be,z_0042_1013,arg0).
 arc(r_0042_0013__and,r_0042_0011__be,conj1).
 arc(r_0042_0013__and,r_0042_0014__also,conj2).
 arc(r_0042_0014__also,r_0042_0015__drain,scope).
-arc(r_0042_0015__drain,r_0042_0017__ammo_supplies,arg1).
+arc(r_0042_0015__drain,r_0042_0017__ammo__r_0042_0018__supplies,arg1).
 arc(r_0042_0015__drain,z_0042_1013,arg0).
-arc(r_0042_0017__ammo_supplies,r_0042_0002__you,genv).
+arc(r_0042_0017__ammo__r_0042_0018__supplies,r_0042_0002__you,genv).
 
 </pre>
 <br>
 <pre>
-fof(id_42_A_Freedoom,axiom,
+fof(id__42_A_Freedoom,axiom,
     ? [HEARERX10,OPERATORX14,EVENTX15,OPERATORX5,CONJX12,OPERATORX8,EVENTX11,EVENTX7,QUALITYX1,ENTITYX2,ENTITYX4,ENTITYX9,ENTITYX3,ATTRIBX6] :
       ( isA(QUALITYX1,r_0042_0001__Sometimes)
       &amp; isA(ENTITYX2,r_0042_0005__crowds)
@@ -266,7 +266,7 @@ fof(id_42_A_Freedoom,axiom,
       &amp; arg0(EVENTX11) = ENTITYX4
       &amp; arg1(EVENTX11) = ENTITYX9
       &amp; isA(ENTITYX4,z_0042_1013)
-      &amp; isA(ENTITYX9,r_0042_0017__ammo_supplies)
+      &amp; isA(ENTITYX9,r_0042_0017__ammo__r_0042_0018__supplies)
       &amp; genv(ENTITYX9) = HEARERX10
       &amp; HEARERX10 = r_0042_0002__you
       &amp; isA(ATTRIBX6,r_0042_0012__overwhelming)

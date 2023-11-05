@@ -252,34 +252,34 @@ We are concerned with whether there was a reason for him to do it .
 </svg>
 <br>
 <pre>
-arc(question_0025_1017,r_0026_0007__was,scope).
 arc(r_0025_0002__are,r_0025_0001__We,arg0).
 arc(r_0025_0002__are,r_0025_0004__concerned,prd2).
 arc(r_0025_0003__not,r_0025_0002__are,scope).
 arc(r_0025_0004__concerned,r_0025_0010__motive,r_0025_0005__with).
-arc(r_0025_0010__motive,r_0025_0007__Prime_Minister,genv).
+arc(r_0025_0010__motive,r_0025_0007__Prime__r_0025_0008__Minister,genv).
 arc(r_0025_0010__motive,r_0025_0012__doing,r_0025_0011__in).
 arc(r_0025_0012__doing,z_0025_1009,arg1).
-arc(r_0025_0015__did,r_0025_0007__Prime_Minister,arg0).
+arc(r_0025_0015__did,r_0025_0007__Prime__r_0025_0008__Minister,arg0).
 arc(r_0025_0015__did,z_0025_1009,arg1).
+arc(r_0025_1017__question,r_0026_0007__was,scope).
 arc(r_0026_0002__are,r_0025_0001__We,arg0).
 arc(r_0026_0002__are,r_0026_0003__concerned,prd2).
-arc(r_0026_0003__concerned,question_0025_1017,r_0026_0004__with).
+arc(r_0026_0003__concerned,r_0025_1017__question,r_0026_0004__with).
 arc(r_0026_0007__was,r_0026_0009__reason,arg0).
 arc(r_0026_0009__reason,r_0026_0013__do,emb3).
-arc(r_0026_0013__do,r_0025_0007__Prime_Minister,arg0).
+arc(r_0026_0013__do,r_0025_0007__Prime__r_0025_0008__Minister,arg0).
 arc(r_0026_0013__do,z_0025_1009,arg1).
 
 </pre>
 <br>
 <pre>
-fof(id_25_A_uksc_judgment__26_A_uksc_judgment,axiom,
+fof(id__25_A_uksc_judgment__26_A_uksc_judgment,axiom,
     ? [EVENTX3,EVENTX15,STATEX19,PMX7,SPEAKER_AND_HEARERX13,PMX20,ACTIONX21,EVENTX24,OPERATORX17,EVENTX23,EVENTX22,OPERATORX11,EVENTX12,EVENTX10,EVENTX8,ENTITYX18,ENTITYX2,ACTIONX6,ATTRIBX14,ATTRIBX1] :
       ( EVENTX3 = EVENTX10
       &amp; isA(EVENTX10,r_0025_0012__doing)
       &amp; arg1(EVENTX10) = ACTIONX6
       &amp; EVENTX15 = OPERATORX17
-      &amp; isA(OPERATORX17,question_0025_1017)
+      &amp; isA(OPERATORX17,r_0025_1017__question)
       &amp; scope(OPERATORX17) = EVENTX23
       &amp; isA(EVENTX23,r_0026_0007__was)
       &amp; arg0(EVENTX23) = ENTITYX18
@@ -288,19 +288,19 @@ fof(id_25_A_uksc_judgment__26_A_uksc_judgment,axiom,
       &amp; arg0(EVENTX22) = PMX20
       &amp; arg1(EVENTX22) = ACTIONX21
       &amp; isA(ENTITYX2,r_0025_0010__motive)
-      &amp; genv(ENTITYX2) = r_0025_0007__Prime_Minister
+      &amp; genv(ENTITYX2) = r_0025_0007__Prime__r_0025_0008__Minister
       &amp; r_0025_0011__in(ENTITYX2) = EVENTX3
       &amp; isA(EVENTX8,r_0025_0015__did)
       &amp; arg1(EVENTX8) = ACTIONX6
       &amp; arg0(EVENTX8) = PMX7
       &amp; isA(ACTIONX6,z_0025_1009)
-      &amp; PMX7 = r_0025_0007__Prime_Minister
+      &amp; PMX7 = r_0025_0007__Prime__r_0025_0008__Minister
       &amp; SPEAKER_AND_HEARERX13 = r_0025_0001__We
       &amp; isA(ENTITYX18,r_0026_0009__reason)
       &amp; emb3(ENTITYX18) = STATEX19
-      &amp; PMX20 = r_0025_0007__Prime_Minister
+      &amp; PMX20 = r_0025_0007__Prime__r_0025_0008__Minister
       &amp; ACTIONX21 = ACTIONX6
-      &amp; isA(r_0025_0007__Prime_Minister,r_0025_0007__Prime_Minister)
+      &amp; isA(r_0025_0007__Prime__r_0025_0008__Minister,r_0025_0007__Prime_r_0025_0008__Minister)
       &amp; isA(ATTRIBX1,r_0025_0004__concerned)
       &amp; r_0025_0005__with(ATTRIBX1) = ENTITYX2
       &amp; isA(ATTRIBX14,r_0026_0003__concerned)

@@ -318,11 +318,9 @@ The other clearing ingredients are applied in the same manner , the material bei
 </svg>
 <br>
 <pre>
-arc(abs_0031_1008,r_0031_0006__applied,scope).
-arc(abs_0031_1008,z_0031_1030,restriction).
 arc(r_0031_0004__ingredients,r_0031_0002__other,attrib2).
 arc(r_0031_0004__ingredients,r_0031_0003__clearing,attrib3).
-arc(r_0031_0005__are,abs_0031_1008,catenative).
+arc(r_0031_0005__are,r_0031_1008__abs,catenative).
 arc(r_0031_0006__applied,r_0031_0004__ingredients,arg1).
 arc(r_0031_0006__applied,r_0031_0010__manner,r_0031_0007__in_mnr).
 arc(r_0031_0010__manner,r_0031_0009__same,attrib2).
@@ -338,15 +336,17 @@ arc(r_0031_0024__quart,r_0031_0026__wine,r_0031_0025__of).
 arc(r_0031_0031__stirred,r_0031_0030__cask,arg1).
 arc(r_0031_0031__stirred,r_0031_0035__manner,r_0031_0032__in_mnr).
 arc(r_0031_0035__manner,r_0031_0034__same,attrib2).
+arc(r_0031_1008__abs,r_0031_0006__applied,scope).
+arc(r_0031_1008__abs,z_0031_1030,restriction).
 arc(z_0031_1030,r_0031_0031__stirred,catenative).
 
 </pre>
 <br>
 <pre>
-fof(id_31_A_BEETON_1861,axiom,
+fof(id__31_A_BEETON_1861,axiom,
     ? [CATENATIVEX4,CATENATIVEX13,CATENATIVEX25,EVENTX33,CONNX9,EVENTX31,EVENTX29,EVENTX23,CONJX22,EVENTX21,EVENTX17,EVENTX32,ENTITYX1,ENTITYX6,ENTITYX24,ENTITYX27,ENTITYX12,ENTITYX19,ENTITYX20,ENTITYX15,ATTRIBX28,ATTRIBX16,ATTRIBX7,ATTRIBX2,ATTRIBX3] :
       ( CATENATIVEX4 = CONNX9
-      &amp; isA(CONNX9,abs_0031_1008)
+      &amp; isA(CONNX9,r_0031_1008__abs)
       &amp; scope(CONNX9) = EVENTX32
       &amp; isA(EVENTX32,r_0031_0006__applied)
       &amp; arg1(EVENTX32) = ENTITYX1

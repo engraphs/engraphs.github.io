@@ -187,25 +187,25 @@ Write and tell us what difference this would make to your life .
 </svg>
 <br>
 <pre>
-arc(imperative_0023_1002,r_0023_0002__and,scope).
-arc(question_0023_1007,r_0023_0008__would,scope).
 arc(r_0023_0002__and,r_0023_0001__Write,conj1).
 arc(r_0023_0002__and,r_0023_0003__tell,conj2).
-arc(r_0023_0003__tell,question_0023_1007,arg1).
 arc(r_0023_0003__tell,r_0023_0004__us,arg2).
+arc(r_0023_0003__tell,r_0023_1007__question,arg1).
 arc(r_0023_0008__would,r_0023_0009__make,scope).
 arc(r_0023_0009__make,r_0023_0006__difference,arg1).
 arc(r_0023_0009__make,r_0023_0007__this,arg0).
 arc(r_0023_0009__make,r_0023_0012__life,r_0023_0010__to_rst).
 arc(r_0023_0012__life,r_0023_0011__your,genv).
+arc(r_0023_1002__imperative,r_0023_0002__and,scope).
+arc(r_0023_1007__question,r_0023_0008__would,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_23_A_fce_0102_2001_12,axiom,
+fof(id__23_A_fce_0102_2001_12,axiom,
     ? [STATEX5,OPERATORX2,CONJX13,EVENTX12,OPERATORX7,OPERATORX10,EVENTX11,EVENTX4,ENTITYX8,ENTITYX9] :
       ( STATEX5 = OPERATORX7
-      &amp; isA(OPERATORX7,question_0023_1007)
+      &amp; isA(OPERATORX7,r_0023_1007__question)
       &amp; scope(OPERATORX7) = OPERATORX10
       &amp; isA(OPERATORX10,r_0023_0008__would)
       &amp; scope(OPERATORX10) = EVENTX11
@@ -216,7 +216,7 @@ fof(id_23_A_fce_0102_2001_12,axiom,
       &amp; isA(ENTITYX8,r_0023_0006__difference)
       &amp; isA(ENTITYX9,r_0023_0012__life)
       &amp; genv(ENTITYX9) = r_0023_0011__your
-      &amp; isA(OPERATORX2,imperative_0023_1002)
+      &amp; isA(OPERATORX2,r_0023_1002__imperative)
       &amp; scope(OPERATORX2) = CONJX13
       &amp; isA(CONJX13,r_0023_0002__and)
       &amp; conj1(CONJX13) = EVENTX4

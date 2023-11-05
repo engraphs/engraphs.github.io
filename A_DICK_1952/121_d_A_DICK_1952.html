@@ -181,29 +181,29 @@ The three people , two men and a woman , stepped through the port , dropping dow
 </svg>
 <br>
 <pre>
-arc(cnt_0157_1006,r_0157_0011__stepped,scope).
-arc(cnt_0157_1006,r_0157_0016__dropping,restriction).
-arc(r_0157_0002__three_people,r_0157_0007__and,prn5).
-arc(r_0157_0007__and,r_0157_0005__two_men,conj1).
+arc(r_0157_0002__three__r_0157_0003__people,r_0157_0007__and,prn5).
+arc(r_0157_0007__and,r_0157_0005__two__r_0157_0006__men,conj1).
 arc(r_0157_0007__and,r_0157_0009__woman,conj2).
-arc(r_0157_0011__stepped,r_0157_0002__three_people,arg0).
+arc(r_0157_0011__stepped,r_0157_0002__three__r_0157_0003__people,arg0).
 arc(r_0157_0011__stepped,r_0157_0014__port,r_0157_0012__through_clr_dir).
-arc(r_0157_0016__dropping,r_0157_0002__three_people,arg0).
+arc(r_0157_0016__dropping,r_0157_0002__three__r_0157_0003__people,arg0).
 arc(r_0157_0016__dropping,r_0157_0021__ground,r_0157_0018__on_clr_dir).
 arc(r_0157_0021__ground,r_0157_0020__hard,attrib2).
 arc(r_0157_0021__ground,r_0157_0022__below,quality4).
+arc(r_0157_1006__cnt,r_0157_0011__stepped,scope).
+arc(r_0157_1006__cnt,r_0157_0016__dropping,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_157_A_DICK_1952,axiom,
+fof(id__157_A_DICK_1952,axiom,
     ? [CONNX7,EVENTX11,EVENTX12,ENTITYX1,ENTITYX5,ENTITYX8,ENTITYX2,ENTITYX3,ENTITYX4,ATTRIBX9,QUALITYX10] :
-      ( isA(ENTITYX1,r_0157_0002__three_people)
+      ( isA(ENTITYX1,r_0157_0002__three__r_0157_0003__people)
       &amp; prn5(ENTITYX1) = ENTITYX2
       &amp; isA(ENTITYX2,r_0157_0007__and)
       &amp; conj1(ENTITYX2) = ENTITYX3
       &amp; conj2(ENTITYX2) = ENTITYX4
-      &amp; isA(ENTITYX3,r_0157_0005__two_men)
+      &amp; isA(ENTITYX3,r_0157_0005__two__r_0157_0006__men)
       &amp; isA(ENTITYX4,r_0157_0009__woman)
       &amp; isA(ENTITYX5,r_0157_0014__port)
       &amp; isA(ENTITYX8,r_0157_0021__ground)
@@ -211,7 +211,7 @@ fof(id_157_A_DICK_1952,axiom,
       &amp; quality4(ENTITYX8) = QUALITYX10
       &amp; isA(ATTRIBX9,r_0157_0020__hard)
       &amp; isA(QUALITYX10,r_0157_0022__below)
-      &amp; isA(CONNX7,cnt_0157_1006)
+      &amp; isA(CONNX7,r_0157_1006__cnt)
       &amp; scope(CONNX7) = EVENTX12
       &amp; isA(EVENTX12,r_0157_0011__stepped)
       &amp; arg0(EVENTX12) = ENTITYX1

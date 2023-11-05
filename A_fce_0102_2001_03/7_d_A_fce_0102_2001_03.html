@@ -148,25 +148,25 @@ Please let me know what you 'd like .
 </svg>
 <br>
 <pre>
-arc(imperative_0011_1002,r_0011_0002__let,scope).
-arc(question_0011_1009,r_0011_0007___apos_d,scope).
 arc(r_0011_0002__let,r_0011_0003__me,arg1).
 arc(r_0011_0002__let,r_0011_0004__know,prd).
-arc(r_0011_0004__know,question_0011_1009,arg1).
+arc(r_0011_0004__know,r_0011_1009__question,arg1).
 arc(r_0011_0007___apos_d,r_0011_0008__like,scope).
 arc(r_0011_0008__like,r_0011_0005__what,arg1).
 arc(r_0011_0008__like,r_0011_0006__you,arg0).
+arc(r_0011_1002__imperative,r_0011_0002__let,scope).
+arc(r_0011_1009__question,r_0011_0007___apos_d,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_11_A_fce_0102_2001_03,axiom,
+fof(id__11_A_fce_0102_2001_03,axiom,
     ? [STATEX4,STATEX7,OPERATORX2,EVENTX14,EVENTX13,OPERATORX9,OPERATORX11,EVENTX12,ENTITYX10] :
       ( STATEX4 = EVENTX13
       &amp; isA(EVENTX13,r_0011_0004__know)
       &amp; arg1(EVENTX13) = STATEX7
       &amp; STATEX7 = OPERATORX9
-      &amp; isA(OPERATORX9,question_0011_1009)
+      &amp; isA(OPERATORX9,r_0011_1009__question)
       &amp; scope(OPERATORX9) = OPERATORX11
       &amp; isA(OPERATORX11,r_0011_0007___apos_d)
       &amp; scope(OPERATORX11) = EVENTX12
@@ -174,7 +174,7 @@ fof(id_11_A_fce_0102_2001_03,axiom,
       &amp; arg1(EVENTX12) = ENTITYX10
       &amp; arg0(EVENTX12) = r_0011_0006__you
       &amp; isA(ENTITYX10,r_0011_0005__what)
-      &amp; isA(OPERATORX2,imperative_0011_1002)
+      &amp; isA(OPERATORX2,r_0011_1002__imperative)
       &amp; scope(OPERATORX2) = EVENTX14
       &amp; isA(EVENTX14,r_0011_0002__let)
       &amp; arg1(EVENTX14) = r_0011_0003__me

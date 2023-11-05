@@ -227,13 +227,11 @@ Waiting until it ends so they can go home and write a paper about it .
 </svg>
 <br>
 <pre>
-arc(abs_0159_1002,r_0159_0002__until_tmp,restriction).
-arc(abs_0159_1002,r_0159_0007__can,scope).
 arc(r_0159_0001__Waiting,r_0159_0006__they,arg0).
 arc(r_0159_0002__until_tmp,r_0159_0001__Waiting,scope).
 arc(r_0159_0002__until_tmp,r_0159_0004__ends,restriction).
 arc(r_0159_0004__ends,r_0159_0003__it,arg0).
-arc(r_0159_0005__so,abs_0159_1002,scope).
+arc(r_0159_0005__so,r_0159_1002__abs,scope).
 arc(r_0159_0007__can,r_0159_0010__and,scope).
 arc(r_0159_0008__go,r_0159_0006__they,arg0).
 arc(r_0159_0008__go,r_0159_0009__home,dir2).
@@ -242,17 +240,19 @@ arc(r_0159_0010__and,r_0159_0011__write,conj2).
 arc(r_0159_0011__write,r_0159_0006__they,arg0).
 arc(r_0159_0011__write,r_0159_0013__paper,arg1).
 arc(r_0159_0011__write,r_0159_0015__it,r_0159_0014__about_rst).
+arc(r_0159_1002__abs,r_0159_0002__until_tmp,restriction).
+arc(r_0159_1002__abs,r_0159_0007__can,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_159_A_TED_talk_11,axiom,
+fof(id__159_A_TED_talk_11,axiom,
     ? [OPERATORX1,CONNX3,OPERATORX7,CONJX12,EVENTX11,EVENTX9,CONNX4,EVENTX5,EVENTX6,ENTITYX10,QUALITYX8] :
       ( isA(ENTITYX10,r_0159_0013__paper)
       &amp; isA(QUALITYX8,r_0159_0009__home)
       &amp; isA(OPERATORX1,r_0159_0005__so)
       &amp; scope(OPERATORX1) = CONNX3
-      &amp; isA(CONNX3,abs_0159_1002)
+      &amp; isA(CONNX3,r_0159_1002__abs)
       &amp; restriction(CONNX3) = CONNX4
       &amp; isA(CONNX4,r_0159_0002__until_tmp)
       &amp; scope(CONNX4) = EVENTX6

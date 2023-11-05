@@ -197,20 +197,20 @@ Changes in voltage accompanying fluctuations of coolant temperature according to
 arc(r_0027_0001__Changes,r_0027_0003__voltage,r_0027_0002__in).
 arc(r_0027_0004__accompanying,r_0027_0003__voltage,arg0).
 arc(r_0027_0004__accompanying,r_0027_0005__fluctuations,arg1).
-arc(r_0027_0005__fluctuations,r_0027_0007__coolant_temperature,r_0027_0006__of).
-arc(r_0027_0005__fluctuations,r_0027_0010__equation_6,r_0027_0009__according_to).
+arc(r_0027_0005__fluctuations,r_0027_0007__coolant__r_0027_0008__temperature,r_0027_0006__of).
+arc(r_0027_0005__fluctuations,r_0027_0010__equation__r_0027_0012__6,r_0027_0009__according_to).
 arc(r_0027_0014__vary,r_0027_0001__Changes,arg0).
-arc(r_0027_0014__vary,r_0027_0018__concentration,r_0027_0015__only_slightly_with_mnr).
+arc(r_0027_0014__vary,r_0027_0018__concentration,r_0027_0015__only__r_0027_0016__slightly_r_0027_0017__with_mnr).
 arc(r_0027_0019__and,r_0027_0014__vary,conj1).
 arc(r_0027_0019__and,r_0027_0020__are,conj2).
 arc(r_0027_0020__are,r_0027_0001__Changes,arg0).
 arc(r_0027_0020__are,r_0027_0021__proportional,prd2).
-arc(r_0027_0021__proportional,r_0027_0024__temperature_change,r_0027_0022__to).
+arc(r_0027_0021__proportional,r_0027_0024__temperature__r_0027_0025__change,r_0027_0022__to).
 
 </pre>
 <br>
 <pre>
-fof(id_27_A_lob_J01,axiom,
+fof(id__27_A_lob_J01,axiom,
     ? [CONJX12,EVENTX11,EVENTX8,EVENTX6,ENTITYX1,ENTITYX10,ENTITYX7,ENTITYX2,ENTITYX3,ENTITYX4,ENTITYX5,ATTRIBX9] :
       ( isA(ENTITYX1,r_0027_0001__Changes)
       &amp; r_0027_0002__in(ENTITYX1) = ENTITYX2
@@ -221,17 +221,17 @@ fof(id_27_A_lob_J01,axiom,
       &amp; isA(ENTITYX3,r_0027_0005__fluctuations)
       &amp; r_0027_0006__of(ENTITYX3) = ENTITYX4
       &amp; r_0027_0009__according_to(ENTITYX3) = ENTITYX5
-      &amp; isA(ENTITYX4,r_0027_0007__coolant_temperature)
-      &amp; isA(ENTITYX5,r_0027_0010__equation_6)
+      &amp; isA(ENTITYX4,r_0027_0007__coolant__r_0027_0008__temperature)
+      &amp; isA(ENTITYX5,r_0027_0010__equation__r_0027_0012__6)
       &amp; isA(ENTITYX7,r_0027_0018__concentration)
-      &amp; isA(ENTITYX10,r_0027_0024__temperature_change)
+      &amp; isA(ENTITYX10,r_0027_0024__temperature__r_0027_0025__change)
       &amp; isA(ATTRIBX9,r_0027_0021__proportional)
       &amp; r_0027_0022__to(ATTRIBX9) = ENTITYX10
       &amp; isA(CONJX12,r_0027_0019__and)
       &amp; conj1(CONJX12) = EVENTX8
       &amp; isA(EVENTX8,r_0027_0014__vary)
       &amp; arg0(EVENTX8) = ENTITYX1
-      &amp; r_0027_0015__only_slightly_with_mnr(EVENTX8) = ENTITYX7
+      &amp; r_0027_0015__only__r_0027_0016__slightly_r_0027_0017__with_mnr(EVENTX8) = ENTITYX7
       &amp; conj2(CONJX12) = EVENTX11
       &amp; isA(EVENTX11,r_0027_0020__are)
       &amp; arg0(EVENTX11) = ENTITYX1

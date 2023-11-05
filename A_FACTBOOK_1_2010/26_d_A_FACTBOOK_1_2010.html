@@ -122,22 +122,22 @@ respiratory disease acquired through close contact with an infectious person :
 </svg>
 <br>
 <pre>
-arc(r_0074_0003__acquired,r_0074_0001__respiratory_disease,arg1).
+arc(r_0074_0003__acquired,r_0074_0001__respiratory__r_0074_0002__disease,arg1).
 arc(r_0074_0003__acquired,r_0074_0006__contact,r_0074_0004__through_cnt).
 arc(r_0074_0006__contact,r_0074_0005__close,attrib1).
 arc(r_0074_0006__contact,r_0074_0010__person,r_0074_0007__with).
 arc(r_0074_0010__person,r_0074_0009__infectious,attrib2).
-arc(z_0074_1010,r_0074_0001__respiratory_disease,z_0074_1002).
+arc(z_0074_1010,r_0074_0001__respiratory__r_0074_0002__disease,z_0074_1002).
 
 </pre>
 <br>
 <pre>
-fof(id_74_A_FACTBOOK_1_2010,axiom,
+fof(id__74_A_FACTBOOK_1_2010,axiom,
     ? [EVENTX11,EVENTX9,ENTITYX3,ENTITYX5,ENTITYX7,ATTRIBX6,ATTRIBX8] :
       ( isA(EVENTX9,r_0074_0003__acquired)
       &amp; arg1(EVENTX9) = ENTITYX3
       &amp; r_0074_0004__through_cnt(EVENTX9) = ENTITYX5
-      &amp; isA(ENTITYX3,r_0074_0001__respiratory_disease)
+      &amp; isA(ENTITYX3,r_0074_0001__respiratory__r_0074_0002__disease)
       &amp; isA(ENTITYX5,r_0074_0006__contact)
       &amp; attrib1(ENTITYX5) = ATTRIBX6
       &amp; r_0074_0007__with(ENTITYX5) = ENTITYX7

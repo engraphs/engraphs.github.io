@@ -34,22 +34,22 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 388)">
 <title>%3</title>
 <polygon fill="white" stroke="transparent" points="-4,4 -4,-388 209.69,-388 209.69,4 -4,4"/>
-<!-- 0267_0002_0267_0004 -->
-<g id="node1" class="node">
-<title>0267_0002_0267_0004</title>
-<ellipse fill="none" stroke="black" cx="60.3" cy="-279" rx="50.09" ry="18"/>
-<text text-anchor="middle" x="60.3" y="-275.3" font-family="fixed" font-size="14.00">Do_think</text>
-</g>
 <!-- 0267_0003 -->
-<g id="node2" class="node">
+<g id="node1" class="node">
 <title>0267_0003</title>
 <ellipse fill="none" stroke="black" cx="27.3" cy="-192" rx="27.1" ry="18"/>
 <text text-anchor="middle" x="27.3" y="-188.3" font-family="fixed" font-size="14.00">you</text>
 </g>
-<!-- 0267_0002_0267_0004&#45;&gt;0267_0003 -->
+<!-- 0267_0004 -->
+<g id="node2" class="node">
+<title>0267_0004</title>
+<ellipse fill="none" stroke="black" cx="60.3" cy="-279" rx="33.6" ry="18"/>
+<text text-anchor="middle" x="60.3" y="-275.3" font-family="fixed" font-size="14.00">think</text>
+</g>
+<!-- 0267_0004&#45;&gt;0267_0003 -->
 <g id="edge1" class="edge">
-<title>0267_0002_0267_0004&#45;&gt;0267_0003</title>
-<path fill="none" stroke="black" d="M46.79,-261.39C42.86,-255.83 38.93,-249.41 36.3,-243 33.38,-235.9 31.41,-227.85 30.08,-220.32"/>
+<title>0267_0004&#45;&gt;0267_0003</title>
+<path fill="none" stroke="black" d="M47.29,-262.09C43.2,-256.37 39.04,-249.68 36.3,-243 33.38,-235.9 31.41,-227.85 30.08,-220.32"/>
 <polygon fill="black" stroke="black" points="33.5,-219.55 28.58,-210.17 26.57,-220.57 33.5,-219.55"/>
 <text text-anchor="middle" x="57.8" y="-231.8" font-family="fixed" font-size="14.00">[arg0]</text>
 </g>
@@ -59,11 +59,11 @@
 <ellipse fill="none" stroke="black" cx="109.3" cy="-192" rx="37.09" ry="18"/>
 <text text-anchor="middle" x="109.3" y="-188.3" font-family="fixed" font-size="14.00">might</text>
 </g>
-<!-- 0267_0002_0267_0004&#45;&gt;0267_0006 -->
+<!-- 0267_0004&#45;&gt;0267_0006 -->
 <g id="edge2" class="edge">
-<title>0267_0002_0267_0004&#45;&gt;0267_0006</title>
-<path fill="none" stroke="black" d="M69.98,-261.21C77,-249.02 86.63,-232.32 94.6,-218.49"/>
-<polygon fill="black" stroke="black" points="97.84,-219.88 99.8,-209.47 91.78,-216.38 97.84,-219.88"/>
+<title>0267_0004&#45;&gt;0267_0006</title>
+<path fill="none" stroke="black" d="M69.75,-261.61C76.82,-249.34 86.62,-232.34 94.7,-218.32"/>
+<polygon fill="black" stroke="black" points="97.75,-220.04 99.71,-209.63 91.69,-216.54 97.75,-220.04"/>
 <text text-anchor="middle" x="109.8" y="-231.8" font-family="fixed" font-size="14.00">[arg1]</text>
 </g>
 <!-- 0267_0007 -->
@@ -111,9 +111,9 @@
 <ellipse fill="none" stroke="black" cx="60.3" cy="-366" rx="56.59" ry="18"/>
 <text text-anchor="middle" x="60.3" y="-362.3" font-family="fixed" font-size="14.00">[question]</text>
 </g>
-<!-- question_0267_1002&#45;&gt;0267_0002_0267_0004 -->
+<!-- question_0267_1002&#45;&gt;0267_0004 -->
 <g id="edge6" class="edge">
-<title>question_0267_1002&#45;&gt;0267_0002_0267_0004</title>
+<title>question_0267_1002&#45;&gt;0267_0004</title>
 <path fill="none" stroke="black" d="M60.3,-347.8C60.3,-336.16 60.3,-320.55 60.3,-307.24"/>
 <polygon fill="black" stroke="black" points="63.8,-307.18 60.3,-297.18 56.8,-307.18 63.8,-307.18"/>
 <text text-anchor="middle" x="86.3" y="-318.8" font-family="fixed" font-size="14.00">[scope]</text>
@@ -122,17 +122,17 @@
 </svg>
 <br>
 <pre>
-arc(question_0267_1002,r_0267_0002__Do_think,scope).
-arc(r_0267_0002__Do_think,r_0267_0003__you,arg0).
-arc(r_0267_0002__Do_think,r_0267_0006__might,arg1).
+arc(r_0267_0004__think,r_0267_0003__you,arg0).
+arc(r_0267_0004__think,r_0267_0006__might,arg1).
 arc(r_0267_0006__might,r_0267_0007__find,scope).
 arc(r_0267_0007__find,r_0267_0005__we,arg0).
 arc(r_0267_0007__find,r_0267_0009__signpost,arg1).
+arc(r_0267_1002__question,r_0267_0004__think,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_267_A_DICK_1952,axiom,
+fof(id__267_A_DICK_1952,axiom,
     ? [STATEX3,OPERATORX2,EVENTX7,OPERATORX5,EVENTX6,ENTITYX4] :
       ( STATEX3 = OPERATORX5
       &amp; isA(OPERATORX5,r_0267_0006__might)
@@ -141,9 +141,9 @@ fof(id_267_A_DICK_1952,axiom,
       &amp; arg0(EVENTX6) = r_0267_0005__we
       &amp; arg1(EVENTX6) = ENTITYX4
       &amp; isA(ENTITYX4,r_0267_0009__signpost)
-      &amp; isA(OPERATORX2,question_0267_1002)
+      &amp; isA(OPERATORX2,r_0267_1002__question)
       &amp; scope(OPERATORX2) = EVENTX7
-      &amp; isA(EVENTX7,r_0267_0002__Do_think)
+      &amp; isA(EVENTX7,r_0267_0004__think)
       &amp; arg0(EVENTX7) = r_0267_0003__you
       &amp; arg1(EVENTX7) = STATEX3 ) ).
 

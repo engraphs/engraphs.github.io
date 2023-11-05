@@ -547,13 +547,13 @@ Without taking it too seriously she found herself regretting some of the sharp t
 </svg>
 <br>
 <pre>
-arc(abs_0133_1025,r_0134_0025__said,restriction).
-arc(abs_0133_1025,r_0134_0028__climbed,scope).
 arc(r_0133_0002__sidelight,r_0133_0004__Piers,r_0133_0003__on).
 arc(r_0133_0005__had,r_0133_0002__sidelight,arg0).
 arc(r_0133_0005__had,r_0133_0007__effect,arg1).
 arc(r_0133_0007__effect,r_0133_0002__sidelight,genv).
 arc(r_0133_0007__effect,r_0133_0009__Beryl,r_0133_0008__on).
+arc(r_0133_1025__abs,r_0134_0025__said,restriction).
+arc(r_0133_1025__abs,r_0134_0028__climbed,scope).
 arc(r_0134_0001__Without_cnt,r_0134_0002__taking,restriction).
 arc(r_0134_0001__Without_cnt,r_0134_0007__found,scope).
 arc(r_0134_0002__taking,r_0133_0002__sidelight,arg1).
@@ -572,7 +572,7 @@ arc(r_0134_0017__said,r_0133_0009__Beryl,arg0).
 arc(r_0134_0017__said,r_0134_0014__things,arg1).
 arc(r_0134_0020__and,r_0134_0001__Without_cnt,conj1).
 arc(r_0134_0020__and,r_0134_0021__when_cnt,conj2).
-arc(r_0134_0021__when_cnt,abs_0133_1025,restriction).
+arc(r_0134_0021__when_cnt,r_0133_1025__abs,restriction).
 arc(r_0134_0021__when_cnt,r_0134_0042__was,scope).
 arc(r_0134_0024__goodbyes,r_0133_0009__Beryl,genv).
 arc(r_0134_0025__said,r_0134_0024__goodbyes,arg0).
@@ -584,16 +584,16 @@ arc(r_0134_0034__preparatory,r_0134_0036__returning,r_0134_0035__to).
 arc(r_0134_0036__returning,r_0134_0039__Villa,r_0134_0037__to_dir).
 arc(r_0134_0042__was,r_0134_0041__it,arg0).
 arc(r_0134_0042__was,r_0134_0045__resolve,r_0134_0043__with_prd2).
-arc(r_0134_0047__make_up,r_0134_0050__quarrel,arg1).
+arc(r_0134_0047__make__r_0134_0048__up,r_0134_0050__quarrel,arg1).
 arc(r_0134_0050__quarrel,r_0133_0004__Piers,r_0134_0051__with).
 arc(r_0134_0050__quarrel,r_0133_0009__Beryl,genv).
-arc(r_0134_0055__achieve,r_0134_0060__surface_peace,arg1).
+arc(r_0134_0055__achieve,r_0134_0060__surface__r_0134_0061__peace,arg1).
 arc(r_0134_0057__at_least,r_0134_0055__achieve,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_133_A_lob_N02__134_A_lob_N02,axiom,
+fof(id__133_A_lob_N02__134_A_lob_N02,axiom,
     ? [STATEX9,CATENATIVEX13,EVENTX34,STATEX40,SIDELIGHTX3,BERYLX7,BERYLX8,BERYLX12,PIERSX14,SIDELIGHTX19,BERYLX28,BERYLX30,BERYLX44,PIERSX45,CONJX51,CONNX24,EVENTX50,OPERATORX47,EVENTX49,EVENTX46,CONNX26,EVENTX38,EVENTX37,EVENTX29,CONNX18,EVENTX23,EVENTX22,EVENTX17,EVENTX16,EVENTX15,EVENTX4,ENTITYX39,ENTITYX48,ENTITYX43,ENTITYX32,ENTITYX27,ENTITYX10,SIDELIGHTX1,ENTITYX2,QUALITYX31,QUALITYX20,QUALITYX21,ATTRIBX33,ATTRIBX11] :
       ( STATEX9 = EVENTX17
       &amp; isA(EVENTX17,r_0134_0009__regretting)
@@ -607,7 +607,7 @@ fof(id_133_A_lob_N02__134_A_lob_N02,axiom,
       &amp; EVENTX34 = EVENTX37
       &amp; isA(EVENTX37,r_0134_0036__returning)
       &amp; r_0134_0037__to_dir(EVENTX37) = r_0134_0039__Villa
-      &amp; isA(EVENTX46,r_0134_0047__make_up)
+      &amp; isA(EVENTX46,r_0134_0047__make__r_0134_0048__up)
       &amp; arg1(EVENTX46) = ENTITYX43
       &amp; isA(OPERATORX47,r_0134_0057__at_least)
       &amp; scope(OPERATORX47) = EVENTX49
@@ -644,7 +644,7 @@ fof(id_133_A_lob_N02__134_A_lob_N02,axiom,
       &amp; r_0134_0051__with(ENTITYX43) = PIERSX45
       &amp; BERYLX44 = r_0133_0009__Beryl
       &amp; PIERSX45 = r_0133_0004__Piers
-      &amp; isA(ENTITYX48,r_0134_0060__surface_peace)
+      &amp; isA(ENTITYX48,r_0134_0060__surface__r_0134_0061__peace)
       &amp; isA(r_0134_0010__some,r_0134_0010__some)
       &amp; r_0134_0011__of(r_0134_0010__some) = ENTITYX10
       &amp; isA(r_0134_0039__Villa,r_0134_0039__Villa)
@@ -674,7 +674,7 @@ fof(id_133_A_lob_N02__134_A_lob_N02,axiom,
       &amp; conj2(CONJX51) = CONNX24
       &amp; isA(CONNX24,r_0134_0021__when_cnt)
       &amp; restriction(CONNX24) = CONNX26
-      &amp; isA(CONNX26,abs_0133_1025)
+      &amp; isA(CONNX26,r_0133_1025__abs)
       &amp; restriction(CONNX26) = EVENTX29
       &amp; isA(EVENTX29,r_0134_0025__said)
       &amp; arg0(EVENTX29) = ENTITYX27

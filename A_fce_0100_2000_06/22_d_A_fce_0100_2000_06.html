@@ -422,10 +422,6 @@ Write an article for your college magazine , saying whether you think this state
 </svg>
 <br>
 <pre>
-arc(cnt_0035_1019,r_0036_0001__Write,scope).
-arc(cnt_0035_1019,r_0036_0009__saying,restriction).
-arc(imperative_0035_1015,cnt_0035_1019,scope).
-arc(question_0035_1023,r_0036_0012__think,scope).
 arc(r_0035_0003__is,r_0035_0002__This,arg0).
 arc(r_0035_0003__is,r_0035_0007__book,prd2).
 arc(r_0035_0004__such,r_0035_0009__will,emb2).
@@ -437,10 +433,14 @@ arc(r_0035_0010__want,r_0035_0012__read,arg1).
 arc(r_0035_0012__read,r_0035_0002__This,arg1).
 arc(r_0035_0012__read,r_0035_0008__you,arg0).
 arc(r_0035_0012__read,r_0035_0014__again,tmp4).
+arc(r_0035_1015__imperative,r_0035_1019__cnt,scope).
+arc(r_0035_1019__cnt,r_0036_0001__Write,scope).
+arc(r_0035_1019__cnt,r_0036_0009__saying,restriction).
+arc(r_0035_1023__question,r_0036_0012__think,scope).
 arc(r_0036_0001__Write,r_0036_0003__article,arg1).
-arc(r_0036_0001__Write,r_0036_0006__college_magazine,r_0036_0004__for_arg2).
-arc(r_0036_0006__college_magazine,r_0035_0008__you,genv).
-arc(r_0036_0009__saying,question_0035_1023,arg1).
+arc(r_0036_0001__Write,r_0036_0006__college__r_0036_0007__magazine,r_0036_0004__for_arg2).
+arc(r_0036_0006__college__r_0036_0007__magazine,r_0035_0008__you,genv).
+arc(r_0036_0009__saying,r_0035_1023__question,arg1).
 arc(r_0036_0012__think,r_0035_0008__you,arg0).
 arc(r_0036_0012__think,r_0036_0015__is,arg1).
 arc(r_0036_0015__is,r_0035_0003__is,arg0).
@@ -457,7 +457,7 @@ arc(r_0036_0028__read,r_0036_0020__or,arg1).
 </pre>
 <br>
 <pre>
-fof(id_35_A_fce_0100_2000_06__36_A_fce_0100_2000_06,axiom,
+fof(id__35_A_fce_0100_2000_06__36_A_fce_0100_2000_06,axiom,
     ? [STATEX3,STATEX4,STATEX21,STATEX25,CATENATIVEX30,BOOKX5,HEARERX18,HEARERX24,STATEMENT2X26,HEARERX29,OPERATORX15,CONNX20,EVENTX39,OPERATORX23,EVENTX38,EVENTX37,EVENTX32,EVENTX31,EVENTX40,STATEMENT2X11,OPERATORX8,EVENTX9,EVENTX7,ENTITYX16,ENTITYX17,ENTITYX28,ENTITYX33,ENTITYX34,ENTITYX35,ENTITYX1,ATTRIBX27,ATTRIBX36,ATTRIBX2,ATTRIBX10,QUALITYX6] :
       ( STATEX3 = OPERATORX8
       &amp; isA(OPERATORX8,r_0035_0009__will)
@@ -471,7 +471,7 @@ fof(id_35_A_fce_0100_2000_06__36_A_fce_0100_2000_06,axiom,
       &amp; arg1(EVENTX7) = BOOKX5
       &amp; tmp4(EVENTX7) = QUALITYX6
       &amp; STATEX21 = OPERATORX23
-      &amp; isA(OPERATORX23,question_0035_1023)
+      &amp; isA(OPERATORX23,r_0035_1023__question)
       &amp; scope(OPERATORX23) = EVENTX38
       &amp; isA(EVENTX38,r_0036_0012__think)
       &amp; arg0(EVENTX38) = HEARERX24
@@ -489,7 +489,7 @@ fof(id_35_A_fce_0100_2000_06__36_A_fce_0100_2000_06,axiom,
       &amp; attrib3(ENTITYX1) = ATTRIBX10
       &amp; BOOKX5 = r_0035_0002__This
       &amp; isA(ENTITYX16,r_0036_0003__article)
-      &amp; isA(ENTITYX17,r_0036_0006__college_magazine)
+      &amp; isA(ENTITYX17,r_0036_0006__college__r_0036_0007__magazine)
       &amp; genv(ENTITYX17) = HEARERX18
       &amp; HEARERX18 = r_0035_0008__you
       &amp; HEARERX24 = r_0035_0008__you
@@ -516,9 +516,9 @@ fof(id_35_A_fce_0100_2000_06__36_A_fce_0100_2000_06,axiom,
       &amp; isA(STATEMENT2X11,r_0035_0003__is)
       &amp; arg0(STATEMENT2X11) = r_0035_0002__This
       &amp; prd2(STATEMENT2X11) = ENTITYX1
-      &amp; isA(OPERATORX15,imperative_0035_1015)
+      &amp; isA(OPERATORX15,r_0035_1015__imperative)
       &amp; scope(OPERATORX15) = CONNX20
-      &amp; isA(CONNX20,cnt_0035_1019)
+      &amp; isA(CONNX20,r_0035_1019__cnt)
       &amp; scope(CONNX20) = EVENTX40
       &amp; isA(EVENTX40,r_0036_0001__Write)
       &amp; arg1(EVENTX40) = ENTITYX16

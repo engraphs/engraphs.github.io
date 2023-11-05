@@ -148,7 +148,6 @@ Read the advertisement for the show and the notes you have made .
 </svg>
 <br>
 <pre>
-arc(imperative_0005_1002,r_0005_0001__Read,scope).
 arc(r_0005_0001__Read,r_0005_0007__and,arg1).
 arc(r_0005_0003__advertisement,r_0005_0006__show,r_0005_0004__for).
 arc(r_0005_0007__and,r_0005_0003__advertisement,conj1).
@@ -156,11 +155,12 @@ arc(r_0005_0007__and,r_0005_0009__notes,conj2).
 arc(r_0005_0011__have,r_0005_0012__made,catenative).
 arc(r_0005_0012__made,r_0005_0009__notes,arg1).
 arc(r_0005_0012__made,r_0005_0010__you,arg0).
+arc(r_0005_1002__imperative,r_0005_0001__Read,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_5_A_fce_0102_2000_06,axiom,
+fof(id__5_A_fce_0102_2000_06,axiom,
     ? [CATENATIVEX8,OPERATORX2,EVENTX11,EVENTX10,EVENTX9,ENTITYX4,ENTITYX5,ENTITYX7,ENTITYX6] :
       ( CATENATIVEX8 = EVENTX9
       &amp; isA(EVENTX9,r_0005_0012__made)
@@ -175,7 +175,7 @@ fof(id_5_A_fce_0102_2000_06,axiom,
       &amp; isA(EVENTX10,r_0005_0011__have)
       &amp; catenative(EVENTX10) = CATENATIVEX8
       &amp; isA(ENTITYX7,r_0005_0009__notes)
-      &amp; isA(OPERATORX2,imperative_0005_1002)
+      &amp; isA(OPERATORX2,r_0005_1002__imperative)
       &amp; scope(OPERATORX2) = EVENTX11
       &amp; isA(EVENTX11,r_0005_0001__Read)
       &amp; arg1(EVENTX11) = ENTITYX4 ) ).

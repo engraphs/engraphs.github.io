@@ -568,9 +568,7 @@ A force was gaining strength in the east to threaten their new bases .
 </svg>
 <br>
 <pre>
-arc(cnt_0087_1040,r_0090_0004__gaining,scope).
-arc(cnt_0087_1040,r_0090_0010__threaten,restriction).
-arc(r_0087_0002__Knights,r_0087_0004__St._John,r_0087_0003__of).
+arc(r_0087_0002__Knights,r_0087_0004__St__r_0087_0005__John,r_0087_0003__of).
 arc(r_0087_0002__Knights,r_0087_0010__force,prn5).
 arc(r_0087_0010__force,r_0087_0008__holy,attrib2).
 arc(r_0087_0010__force,r_0087_0009__military,attrib3).
@@ -581,6 +579,8 @@ arc(r_0087_0014__way,r_0087_0017__and,r_0087_0015__to).
 arc(r_0087_0017__and,r_0087_0016__Rhodes,conj1).
 arc(r_0087_0017__and,r_0087_0018__Kos,conj2).
 arc(r_0087_0017__and,r_0087_0021__Dodecanese,r_0087_0019__in).
+arc(r_0087_1040__cnt,r_0090_0004__gaining,scope).
+arc(r_0087_1040__cnt,r_0090_0010__threaten,restriction).
 arc(r_0088_0002__began,r_0087_0002__Knights,arg0).
 arc(r_0088_0002__began,r_0088_0004__process,arg1).
 arc(r_0088_0004__process,r_0088_0011__and,r_0088_0005__of).
@@ -599,7 +599,7 @@ arc(r_0089_0006__seen,r_0087_0002__Knights,arg0).
 arc(r_0089_0006__seen,z_0087_1032,arg1).
 arc(r_0089_0012__foe,r_0087_0002__Knights,genv).
 arc(r_0089_0012__foe,r_0089_0011__Muslim,attrib2).
-arc(r_0090_0003__was,cnt_0087_1040,catenative).
+arc(r_0090_0003__was,r_0087_1040__cnt,catenative).
 arc(r_0090_0004__gaining,r_0090_0002__force,arg0).
 arc(r_0090_0004__gaining,r_0090_0005__strength,arg1).
 arc(r_0090_0004__gaining,r_0090_0008__east,r_0090_0006__in_loc).
@@ -613,7 +613,7 @@ arc(z_0087_1032,r_0089_0012__foe,r_0089_0009__of).
 </pre>
 <br>
 <pre>
-fof(id_87_A_ANC_HistoryOfGreece__88_A_ANC_HistoryOfGreece__89_A_ANC_HistoryOfGreece__90_A_ANC_HistoryOfGreece,axiom,
+fof(id__87_A_ANC_HistoryOfGreece__88_A_ANC_HistoryOfGreece__89_A_ANC_HistoryOfGreece__90_A_ANC_HistoryOfGreece,axiom,
     ? [EVENTX11,CATENATIVEX26,CATENATIVEX37,KNIGHTSX6,KNIGHTSX9,KNIGHTSX15,KNIGHTSX25,KNIGHTSX30,KNIGHTSX43,EVENTX47,CONNX41,EVENTX45,EVENTX46,OPERATORX24,EVENTX35,OPERATORX33,EVENTX34,EVENTX23,CONJX22,EVENTX21,EVENTX17,EVENTX8,ENTITYX36,ENTITYX38,ENTITYX39,ENTITYX42,ENTITYX27,ENTITYX29,ENTITYX10,ENTITYX18,ENTITYX20,ENTITYX14,KNIGHTSX1,ENTITYX5,ENTITYX7,ENTITYX2,ATTRIBX44,ATTRIBX28,ATTRIBX31,ATTRIBX19,ATTRIBX16,ATTRIBX3,ATTRIBX4] :
       ( EVENTX11 = CONJX22
       &amp; isA(CONJX22,r_0088_0011__and)
@@ -630,7 +630,7 @@ fof(id_87_A_ANC_HistoryOfGreece__88_A_ANC_HistoryOfGreece__89_A_ANC_HistoryOfGre
       &amp; arg0(EVENTX34) = KNIGHTSX25
       &amp; arg1(EVENTX34) = ENTITYX27
       &amp; CATENATIVEX37 = CONNX41
-      &amp; isA(CONNX41,cnt_0087_1040)
+      &amp; isA(CONNX41,r_0087_1040__cnt)
       &amp; scope(CONNX41) = EVENTX46
       &amp; isA(EVENTX46,r_0090_0004__gaining)
       &amp; arg0(EVENTX46) = ENTITYX36
@@ -641,7 +641,7 @@ fof(id_87_A_ANC_HistoryOfGreece__88_A_ANC_HistoryOfGreece__89_A_ANC_HistoryOfGre
       &amp; arg0(EVENTX45) = ENTITYX36
       &amp; arg1(EVENTX45) = ENTITYX42
       &amp; isA(KNIGHTSX1,r_0087_0002__Knights)
-      &amp; r_0087_0003__of(KNIGHTSX1) = r_0087_0004__St._John
+      &amp; r_0087_0003__of(KNIGHTSX1) = r_0087_0004__St__r_0087_0005__John
       &amp; prn5(KNIGHTSX1) = ENTITYX2
       &amp; isA(ENTITYX2,r_0087_0010__force)
       &amp; attrib2(ENTITYX2) = ATTRIBX3

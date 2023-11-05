@@ -142,9 +142,9 @@ No witness statements or affidavits have been filed to that effect .
 </svg>
 <br>
 <pre>
-arc(r_0005_0001__quantificational__No,r_0005_0004__or,restriction).
-arc(r_0005_0001__quantificational__No,r_0005_0006__have,scope).
-arc(r_0005_0004__or,r_0005_0002__witness_statements,conj1).
+arc(r_0005_0001__quantificational__r_0005_0001__No,r_0005_0004__or,restriction).
+arc(r_0005_0001__quantificational__r_0005_0001__No,r_0005_0006__have,scope).
+arc(r_0005_0004__or,r_0005_0002__witness__r_0005_0003__statements,conj1).
 arc(r_0005_0004__or,r_0005_0005__affidavits,conj2).
 arc(r_0005_0006__have,r_0005_0007__been,catenative).
 arc(r_0005_0007__been,r_0005_0008__filed,catenative).
@@ -154,7 +154,7 @@ arc(r_0005_0008__filed,r_0005_0011__effect,r_0005_0009__to_clr).
 </pre>
 <br>
 <pre>
-fof(id_5_A_Major_case,axiom,
+fof(id__5_A_Major_case,axiom,
     ? [CATENATIVEX5,CATENATIVEX6,QUANTX2,EVENTX11,EVENTX10,EVENTX9,ENTITYX1,ENTITYX8,ENTITYX3,ENTITYX4] :
       ( CATENATIVEX5 = EVENTX10
       &amp; isA(EVENTX10,r_0005_0007__been)
@@ -163,10 +163,10 @@ fof(id_5_A_Major_case,axiom,
       &amp; isA(EVENTX9,r_0005_0008__filed)
       &amp; arg1(EVENTX9) = ENTITYX1
       &amp; r_0005_0009__to_clr(EVENTX9) = ENTITYX8
-      &amp; isA(ENTITYX3,r_0005_0002__witness_statements)
+      &amp; isA(ENTITYX3,r_0005_0002__witness__r_0005_0003__statements)
       &amp; isA(ENTITYX4,r_0005_0005__affidavits)
       &amp; isA(ENTITYX8,r_0005_0011__effect)
-      &amp; isA(QUANTX2,r_0005_0001__quantificational__No)
+      &amp; isA(QUANTX2,r_0005_0001__quantificational__r_0005_0001__No)
       &amp; restriction(QUANTX2) = ENTITYX1
       &amp; isA(ENTITYX1,r_0005_0004__or)
       &amp; conj1(ENTITYX1) = ENTITYX3

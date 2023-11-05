@@ -29,11 +29,11 @@
 Monsters only attack when you 're in their line of sight .
 <br>
 <br>
-<svg width="234pt" height="413pt"
- viewBox="0.00 0.00 234.35 413.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="277pt" height="413pt"
+ viewBox="0.00 0.00 277.35 413.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 409)">
 <title>%3</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-409 230.35,-409 230.35,4 -4,4"/>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-409 273.35,-409 273.35,4 -4,4"/>
 <!-- 0031_0001 -->
 <g id="node1" class="node">
 <title>0031_0001</title>
@@ -116,7 +116,7 @@ Monsters only attack when you 're in their line of sight .
 <title>0031_0006&#45;&gt;0031_0009</title>
 <path fill="none" stroke="black" d="M140.39,-200.88C149.69,-194.86 160.23,-186.67 167.35,-177 176.85,-164.09 182.99,-147.24 186.81,-133.19"/>
 <polygon fill="black" stroke="black" points="190.29,-133.66 189.29,-123.11 183.5,-131.99 190.29,-133.66"/>
-<text text-anchor="middle" x="204.85" y="-155.3" font-family="fixed" font-size="14.00">in[loc]</text>
+<text text-anchor="middle" x="226.35" y="-155.3" font-family="fixed" font-size="14.00">in[prd2][loc]</text>
 </g>
 <!-- 0031_0009&#45;&gt;0031_0001 -->
 <g id="edge7" class="edge">
@@ -147,14 +147,14 @@ arc(r_0031_0003__attack,r_0031_0001__Monsters,arg0).
 arc(r_0031_0004__when_tmp,r_0031_0003__attack,scope).
 arc(r_0031_0004__when_tmp,r_0031_0006___apos_re,restriction).
 arc(r_0031_0006___apos_re,r_0031_0005__you,arg0).
-arc(r_0031_0006___apos_re,r_0031_0009__line,r_0031_0007__in_loc).
+arc(r_0031_0006___apos_re,r_0031_0009__line,r_0031_0007__in_prd2_loc).
 arc(r_0031_0009__line,r_0031_0001__Monsters,genv).
 arc(r_0031_0009__line,r_0031_0011__sight,r_0031_0010__of).
 
 </pre>
 <br>
 <pre>
-fof(id_31_A_Freedoom,axiom,
+fof(id__31_A_Freedoom,axiom,
     ? [MONSTERSX5,OPERATORX2,CONNX3,EVENTX7,EVENTX8,MONSTERSX1,ENTITYX4,ENTITYX6] :
       ( isA(MONSTERSX1,r_0031_0001__Monsters)
       &amp; isA(ENTITYX4,r_0031_0009__line)
@@ -171,7 +171,7 @@ fof(id_31_A_Freedoom,axiom,
       &amp; restriction(CONNX3) = EVENTX7
       &amp; isA(EVENTX7,r_0031_0006___apos_re)
       &amp; arg0(EVENTX7) = r_0031_0005__you
-      &amp; r_0031_0007__in_loc(EVENTX7) = ENTITYX4 ) ).
+      &amp; r_0031_0007__in_prd2_loc(EVENTX7) = ENTITYX4 ) ).
 
 
 </pre>
@@ -206,15 +206,15 @@ fof(id_31_A_Freedoom,axiom,
 <line x1="540.36" y1="305" x2="540.36" y2="336" style="stroke:#000000;stroke-width:2;"/>
 <line x1="540.72" y1="244" x2="540" y2="275" style="stroke:#000000;stroke-width:2;"/>
 <line x1="900.72" y1="183" x2="540" y2="214" style="stroke:#000000;stroke-width:2;"/>
-<text x="661.68" y="234" text-anchor="middle">BEP</text>
+<text x="661.68" y="234" text-anchor="middle">BEP;~La</text>
 <text x="661.68" y="295" text-anchor="middle">&lt;apos&gt;re</text>
 <line x1="661.68" y1="244" x2="661.68" y2="275" style="stroke:#000000;stroke-width:2;"/>
 <line x1="900.72" y1="183" x2="660" y2="214" style="stroke:#000000;stroke-width:2;"/>
-<text x="1020.72" y="234" text-anchor="middle">PP-LOC</text>
+<text x="1021.32" y="234" text-anchor="middle">PP-PRD2-LOC</text>
 <text x="780.72" y="295" text-anchor="middle">P-ROLE</text>
 <text x="780.72" y="356" text-anchor="middle">in</text>
 <line x1="780.72" y1="305" x2="780.72" y2="336" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1020.72" y1="244" x2="780" y2="275" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1021.32" y1="244" x2="780" y2="275" style="stroke:#000000;stroke-width:2;"/>
 <text x="1080.24" y="295" text-anchor="middle">NP</text>
 <text x="900.84" y="356" text-anchor="middle">NP-GENV</text>
 <text x="901.2" y="417" text-anchor="middle">PRO;_genm_</text>
@@ -238,7 +238,7 @@ fof(id_31_A_Freedoom,axiom,
 <line x1="1260.24" y1="427" x2="1260" y2="458" style="stroke:#000000;stroke-width:2;"/>
 <line x1="1200.24" y1="366" x2="1260" y2="397" style="stroke:#000000;stroke-width:2;"/>
 <line x1="1080.24" y1="305" x2="1200" y2="336" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1020.72" y1="244" x2="1080" y2="275" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1021.32" y1="244" x2="1080" y2="275" style="stroke:#000000;stroke-width:2;"/>
 <line x1="900.72" y1="183" x2="1020" y2="214" style="stroke:#000000;stroke-width:2;"/>
 <line x1="841.32" y1="122" x2="900" y2="153" style="stroke:#000000;stroke-width:2;"/>
 <line x1="720.72" y1="61" x2="840" y2="92" style="stroke:#000000;stroke-width:2;"/>
@@ -254,12 +254,12 @@ fof(id_31_A_Freedoom,axiom,
           (VBP attack;{attack})
           (PP-SCON-TMP (P-CONN when;{when})
                        (IP-ADV (NP-SBJ (PRO you;{you}))
-                               (BEP &lt;apos&gt;re;{be})
-                               (PP-LOC (P-ROLE in;{in})
-                                       (NP (NP-GENV;{MONSTERS} (PRO;_genm_ their;{their}))
-                                           (N line;{line})
-                                           (PP (P-ROLE of;{of})
-                                               (NP (N sight;{sight})))))))
+                               (BEP;~La &lt;apos&gt;re;{be})
+                               (PP-PRD2-LOC (P-ROLE in;{in})
+                                            (NP (NP-GENV;{MONSTERS} (PRO;_genm_ their;{their}))
+                                                (N line;{line})
+                                                (PP (P-ROLE of;{of})
+                                                    (NP (N sight;{sight})))))))
           (PUNC .))
   (ID 31_A_Freedoom))
 </pre>

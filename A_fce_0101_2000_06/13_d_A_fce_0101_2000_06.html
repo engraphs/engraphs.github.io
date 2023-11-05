@@ -201,27 +201,27 @@ Describe your favourite season and explain why it is so special for you .
 </svg>
 <br>
 <pre>
-arc(imperative_0014_1002,r_0014_0005__and,scope).
-arc(question_0014_1009,r_0014_0007__why,scope).
 arc(r_0014_0001__Describe,r_0014_0004__season,arg1).
 arc(r_0014_0004__season,r_0014_0002__your,genv).
 arc(r_0014_0004__season,r_0014_0003__favourite,attrib2).
 arc(r_0014_0005__and,r_0014_0001__Describe,conj1).
 arc(r_0014_0005__and,r_0014_0006__explain,conj2).
-arc(r_0014_0006__explain,question_0014_1009,arg1).
+arc(r_0014_0006__explain,r_0014_1009__question,arg1).
 arc(r_0014_0007__why,r_0014_0009__is,scope).
 arc(r_0014_0009__is,r_0014_0002__your,r_0014_0012__for_rst).
 arc(r_0014_0009__is,r_0014_0004__season,arg0).
 arc(r_0014_0009__is,r_0014_0011__special,prd2).
 arc(r_0014_0011__special,r_0014_0010__so,quality1).
+arc(r_0014_1002__imperative,r_0014_0005__and,scope).
+arc(r_0014_1009__question,r_0014_0007__why,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_14_A_fce_0101_2000_06,axiom,
+fof(id__14_A_fce_0101_2000_06,axiom,
     ? [STATEX7,SEASONX11,HEARERX14,OPERATORX2,CONJX17,EVENTX16,OPERATORX9,OPERATORX10,EVENTX15,EVENTX6,SEASONX4,ATTRIBX12,ATTRIBX5,QUALITYX13] :
       ( STATEX7 = OPERATORX9
-      &amp; isA(OPERATORX9,question_0014_1009)
+      &amp; isA(OPERATORX9,r_0014_1009__question)
       &amp; scope(OPERATORX9) = OPERATORX10
       &amp; isA(OPERATORX10,r_0014_0007__why)
       &amp; scope(OPERATORX10) = EVENTX15
@@ -238,7 +238,7 @@ fof(id_14_A_fce_0101_2000_06,axiom,
       &amp; isA(ATTRIBX12,r_0014_0011__special)
       &amp; quality1(ATTRIBX12) = QUALITYX13
       &amp; isA(QUALITYX13,r_0014_0010__so)
-      &amp; isA(OPERATORX2,imperative_0014_1002)
+      &amp; isA(OPERATORX2,r_0014_1002__imperative)
       &amp; scope(OPERATORX2) = CONJX17
       &amp; isA(CONJX17,r_0014_0005__and)
       &amp; conj1(CONJX17) = EVENTX6

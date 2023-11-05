@@ -109,27 +109,27 @@
 </svg>
 <br>
 <pre>
-arc(question_0574_1002,r_0574_0003__are,scope).
 arc(r_0574_0003__are,r_0574_0005__thinking,catenative).
 arc(r_0574_0003__are,r_0574_0008__Dorle,voc).
 arc(r_0574_0005__thinking,r_0574_0002__What,arg1).
 arc(r_0574_0005__thinking,r_0574_0004__you,arg0).
+arc(r_0574_1002__question,r_0574_0003__are,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_574_A_DICK_1952,axiom,
+fof(id__574_A_DICK_1952,axiom,
     ? [CATENATIVEX4,OPERATORX2,EVENTX6,EVENTX5,ENTITYX3] :
       ( CATENATIVEX4 = EVENTX5
       &amp; isA(EVENTX5,r_0574_0005__thinking)
       &amp; arg0(EVENTX5) = r_0574_0004__you
       &amp; arg1(EVENTX5) = ENTITYX3
       &amp; isA(ENTITYX3,r_0574_0002__What)
-      &amp; isA(OPERATORX2,question_0574_1002)
+      &amp; isA(OPERATORX2,r_0574_1002__question)
       &amp; scope(OPERATORX2) = EVENTX6
       &amp; isA(EVENTX6,r_0574_0003__are)
-      &amp; catenative(EVENTX6) = CATENATIVEX4
-      &amp; voc(EVENTX6) = r_0574_0008__Dorle ) ).
+      &amp; voc(EVENTX6) = r_0574_0008__Dorle
+      &amp; catenative(EVENTX6) = CATENATIVEX4 ) ).
 
 
 </pre>

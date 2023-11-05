@@ -97,16 +97,16 @@ Freedoom is a real-time first-person shooter ( FPS ) .
 <br>
 <pre>
 arc(r_0001_0002__is,r_0001_0001__Freedoom,arg0).
-arc(r_0001_0002__is,r_0001_0005__first_person_shooter,prd2).
-arc(r_0001_0005__first_person_shooter,r_0001_0004__real_time,attrib2).
-arc(r_0001_0005__first_person_shooter,r_0001_0008__FPS,prn6).
+arc(r_0001_0002__is,r_0001_0005__first_person__r_0001_0006__shooter,prd2).
+arc(r_0001_0005__first_person__r_0001_0006__shooter,r_0001_0004__real_time,attrib2).
+arc(r_0001_0005__first_person__r_0001_0006__shooter,r_0001_0008__FPS,prn6).
 
 </pre>
 <br>
 <pre>
-fof(id_1_A_Freedoom,axiom,
+fof(id__1_A_Freedoom,axiom,
     ? [EVENTX4,ENTITYX1,ENTITYX3,ATTRIBX2] :
-      ( isA(ENTITYX1,r_0001_0005__first_person_shooter)
+      ( isA(ENTITYX1,r_0001_0005__first_person__r_0001_0006__shooter)
       &amp; attrib2(ENTITYX1) = ATTRIBX2
       &amp; prn6(ENTITYX1) = ENTITYX3
       &amp; isA(ENTITYX3,r_0001_0008__FPS)

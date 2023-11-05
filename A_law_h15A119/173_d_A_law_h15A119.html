@@ -312,13 +312,11 @@
 </svg>
 <br>
 <pre>
-arc(cnt_0173_1011,r_0173_0010__may,scope).
-arc(cnt_0173_1011,r_0173_0022__show,restriction).
-arc(r_0173_0007__handling,r_0173_0005__business_operator,arg0).
+arc(r_0173_0007__handling,r_0173_0005__business__r_0173_0006__operator,arg0).
 arc(r_0173_0007__handling,r_0173_0009__information,arg1).
 arc(r_0173_0009__information,r_0173_0008__personal,attrib1).
 arc(r_0173_0010__may,r_0173_0011__request,scope).
-arc(r_0173_0011__request,r_0173_0005__business_operator,arg0).
+arc(r_0173_0011__request,r_0173_0005__business__r_0173_0006__operator,arg0).
 arc(r_0173_0011__request,r_0173_0013__person,arg1).
 arc(r_0173_0014__making,r_0173_0013__person,arg0).
 arc(r_0173_0014__making,r_0173_0016__request,arg1).
@@ -333,11 +331,13 @@ arc(r_0173_0026__identify,r_0173_0030__data,arg1).
 arc(r_0173_0030__data,r_0173_0028__retained,attrib2).
 arc(r_0173_0030__data,r_0173_0029__personal,attrib3).
 arc(r_0173_0030__data,r_0173_0032__question,r_0173_0031__in).
+arc(r_0173_1011__cnt,r_0173_0010__may,scope).
+arc(r_0173_1011__cnt,r_0173_0022__show,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_173_A_law_h15A119,axiom,
+fof(id__173_A_law_h15A119,axiom,
     ? [STATEX15,CONNX12,EVENTX21,EVENTX20,OPERATORX22,EVENTX23,EVENTX10,EVENTX4,ENTITYX1,ENTITYX5,ENTITYX13,ENTITYX16,ENTITYX19,ENTITYX6,ENTITYX7,ENTITYX8,ENTITYX9,ENTITYX2,ATTRIBX17,ATTRIBX18,ATTRIBX14,ATTRIBX3] :
       ( STATEX15 = EVENTX20
       &amp; isA(EVENTX20,r_0173_0026__identify)
@@ -346,7 +346,7 @@ fof(id_173_A_law_h15A119,axiom,
       &amp; isA(EVENTX4,r_0173_0007__handling)
       &amp; arg0(EVENTX4) = ENTITYX1
       &amp; arg1(EVENTX4) = ENTITYX2
-      &amp; isA(ENTITYX1,r_0173_0005__business_operator)
+      &amp; isA(ENTITYX1,r_0173_0005__business__r_0173_0006__operator)
       &amp; isA(ENTITYX2,r_0173_0009__information)
       &amp; attrib1(ENTITYX2) = ATTRIBX3
       &amp; isA(EVENTX10,r_0173_0014__making)
@@ -371,7 +371,7 @@ fof(id_173_A_law_h15A119,axiom,
       &amp; isA(ATTRIBX14,r_0173_0023__sufficient)
       &amp; isA(ATTRIBX17,r_0173_0028__retained)
       &amp; isA(ATTRIBX18,r_0173_0029__personal)
-      &amp; isA(CONNX12,cnt_0173_1011)
+      &amp; isA(CONNX12,r_0173_1011__cnt)
       &amp; scope(CONNX12) = OPERATORX22
       &amp; isA(OPERATORX22,r_0173_0010__may)
       &amp; scope(OPERATORX22) = EVENTX23

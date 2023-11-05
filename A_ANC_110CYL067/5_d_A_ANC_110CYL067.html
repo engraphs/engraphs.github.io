@@ -137,8 +137,8 @@ Because turning welfare recipients into tax payers just makes sense .
 <pre>
 arc(r_0012_0001__Because_cnt,r_0012_0008__just,restriction).
 arc(r_0012_0001__Because_cnt,z_0012_1011,scope).
-arc(r_0012_0002__turning,r_0012_0003__welfare_recipients,arg1).
-arc(r_0012_0002__turning,r_0012_0006__tax_payers,r_0012_0005__into_clr_dir).
+arc(r_0012_0002__turning,r_0012_0003__welfare__r_0012_0004__recipients,arg1).
+arc(r_0012_0002__turning,r_0012_0006__tax__r_0012_0007__payers,r_0012_0005__into_clr_dir).
 arc(r_0012_0008__just,r_0012_0009__makes,scope).
 arc(r_0012_0009__makes,r_0012_0002__turning,arg0).
 arc(r_0012_0009__makes,r_0012_0010__sense,prd2).
@@ -146,14 +146,14 @@ arc(r_0012_0009__makes,r_0012_0010__sense,prd2).
 </pre>
 <br>
 <pre>
-fof(id_12_A_ANC_110CYL067,axiom,
+fof(id__12_A_ANC_110CYL067,axiom,
     ? [STATEX2,CONNX1,EVENTX12,OPERATORX8,EVENTX10,EVENTX7,ENTITYX9,ENTITYX5,ENTITYX6] :
       ( STATEX2 = EVENTX7
       &amp; isA(EVENTX7,r_0012_0002__turning)
       &amp; arg1(EVENTX7) = ENTITYX5
       &amp; r_0012_0005__into_clr_dir(EVENTX7) = ENTITYX6
-      &amp; isA(ENTITYX5,r_0012_0003__welfare_recipients)
-      &amp; isA(ENTITYX6,r_0012_0006__tax_payers)
+      &amp; isA(ENTITYX5,r_0012_0003__welfare__r_0012_0004__recipients)
+      &amp; isA(ENTITYX6,r_0012_0006__tax__r_0012_0007__payers)
       &amp; isA(ENTITYX9,r_0012_0010__sense)
       &amp; isA(CONNX1,r_0012_0001__Because_cnt)
       &amp; restriction(CONNX1) = OPERATORX8

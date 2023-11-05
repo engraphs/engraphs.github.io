@@ -194,9 +194,7 @@ It 's booted up there running what seems to be RISC OS 2 to me .
 </svg>
 <br>
 <pre>
-arc(cnt_0037_1005,r_0037_0003__booted,scope).
-arc(cnt_0037_1005,r_0037_0006__running,restriction).
-arc(r_0037_0002___apos_s,cnt_0037_1005,catenative).
+arc(r_0037_0002___apos_s,r_0037_1005__cnt,catenative).
 arc(r_0037_0003__booted,r_0037_0001__It,arg1).
 arc(r_0037_0003__booted,r_0037_0004__up,dir3).
 arc(r_0037_0003__booted,r_0037_0005__there,loc4).
@@ -204,16 +202,18 @@ arc(r_0037_0006__running,r_0037_0001__It,arg0).
 arc(r_0037_0006__running,z_0037_1012,arg1).
 arc(r_0037_0008__seems,r_0037_0010__be,catenative).
 arc(r_0037_0008__seems,r_0037_0015__me,r_0037_0014__to_rst).
-arc(r_0037_0010__be,r_0037_0011__RISC_OS_2,prd2).
+arc(r_0037_0010__be,r_0037_0011__RISC__r_0037_0012__OS_r_0037_0013__2,prd2).
 arc(r_0037_0010__be,z_0037_1012,arg0).
+arc(r_0037_1005__cnt,r_0037_0003__booted,scope).
+arc(r_0037_1005__cnt,r_0037_0006__running,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_37_A_PaulFellows,axiom,
+fof(id__37_A_PaulFellows,axiom,
     ? [CATENATIVEX1,STATEX8,EVENTX15,CONNX6,EVENTX13,EVENTX11,EVENTX10,EVENTX14,ENTITYX7,ENTITYX9,QUALITYX3,QUALITYX4] :
       ( CATENATIVEX1 = CONNX6
-      &amp; isA(CONNX6,cnt_0037_1005)
+      &amp; isA(CONNX6,r_0037_1005__cnt)
       &amp; scope(CONNX6) = EVENTX14
       &amp; isA(EVENTX14,r_0037_0003__booted)
       &amp; arg1(EVENTX14) = r_0037_0001__It
@@ -231,7 +231,7 @@ fof(id_37_A_PaulFellows,axiom,
       &amp; catenative(EVENTX11) = STATEX8
       &amp; r_0037_0014__to_rst(EVENTX11) = r_0037_0015__me
       &amp; isA(ENTITYX7,z_0037_1012)
-      &amp; isA(ENTITYX9,r_0037_0011__RISC_OS_2)
+      &amp; isA(ENTITYX9,r_0037_0011__RISC__r_0037_0012__OS_r_0037_0013__2)
       &amp; isA(QUALITYX3,r_0037_0004__up)
       &amp; isA(QUALITYX4,r_0037_0005__there)
       &amp; isA(EVENTX15,r_0037_0002___apos_s)

@@ -239,8 +239,6 @@ Keeping a constantly updated window on a part of the text being edited is now , 
 </svg>
 <br>
 <pre>
-arc(abs_0045_1003,r_0045_0001__Keeping,restriction).
-arc(abs_0045_1003,r_0045_0017__of_course,scope).
 arc(r_0045_0001__Keeping,r_0045_0005__window,arg1).
 arc(r_0045_0001__Keeping,r_0045_0008__part,r_0045_0006__on_loc).
 arc(r_0045_0004__updated,r_0045_0003__constantly,tmp2).
@@ -254,11 +252,13 @@ arc(r_0045_0017__of_course,r_0045_0014__is,scope).
 arc(r_0045_0021__and,r_0045_0019__completely,quality1).
 arc(r_0045_0021__and,r_0045_0020__standard,conj1).
 arc(r_0045_0021__and,r_0045_0022__accepted,conj2).
+arc(r_0045_1003__abs,r_0045_0001__Keeping,restriction).
+arc(r_0045_1003__abs,r_0045_0017__of_course,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_45_A_history_of_qed,axiom,
+fof(id__45_A_history_of_qed,axiom,
     ? [CATENATIVEX11,CONNX4,OPERATORX17,EVENTX22,EVENTX15,EVENTX14,EVENTX13,EVENTX8,ENTITYX5,ENTITYX9,ENTITYX10,QUALITYX16,QUALITYX19,QUALITYX7,ATTRIBX18,ATTRIBX20,ATTRIBX21] :
       ( CATENATIVEX11 = EVENTX13
       &amp; isA(EVENTX13,r_0045_0013__edited)
@@ -281,7 +281,7 @@ fof(id_45_A_history_of_qed,axiom,
       &amp; conj2(ATTRIBX18) = ATTRIBX21
       &amp; isA(ATTRIBX20,r_0045_0020__standard)
       &amp; isA(ATTRIBX21,r_0045_0022__accepted)
-      &amp; isA(CONNX4,abs_0045_1003)
+      &amp; isA(CONNX4,r_0045_1003__abs)
       &amp; restriction(CONNX4) = EVENTX15
       &amp; isA(EVENTX15,r_0045_0001__Keeping)
       &amp; arg1(EVENTX15) = ENTITYX5

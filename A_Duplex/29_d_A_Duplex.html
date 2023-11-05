@@ -163,7 +163,7 @@ A nifty trick to avoid tourist hotspots if you 're far from home .
 <pre>
 arc(r_0048_0003__trick,r_0048_0002__nifty,attrib2).
 arc(r_0048_0005__avoid,r_0048_0003__trick,arg0).
-arc(r_0048_0005__avoid,r_0048_0006__tourist_hotspots,arg1).
+arc(r_0048_0005__avoid,r_0048_0006__tourist__r_0048_0007__hotspots,arg1).
 arc(r_0048_0008__if_cnt_cnd,r_0048_0010___apos_re,restriction).
 arc(r_0048_0008__if_cnt_cnd,z_0048_1011,scope).
 arc(r_0048_0010___apos_re,r_0048_0009__you,arg0).
@@ -174,14 +174,14 @@ arc(z_0048_1011,r_0048_0003__trick,z_0048_1002).
 </pre>
 <br>
 <pre>
-fof(id_48_A_Duplex,axiom,
+fof(id__48_A_Duplex,axiom,
     ? [CONNX7,EVENTX12,EVENTX10,EVENTX6,ENTITYX3,ENTITYX9,ENTITYX5,ATTRIBX8,ATTRIBX4] :
       ( isA(EVENTX6,r_0048_0005__avoid)
       &amp; arg0(EVENTX6) = ENTITYX3
       &amp; arg1(EVENTX6) = ENTITYX5
       &amp; isA(ENTITYX3,r_0048_0003__trick)
       &amp; attrib2(ENTITYX3) = ATTRIBX4
-      &amp; isA(ENTITYX5,r_0048_0006__tourist_hotspots)
+      &amp; isA(ENTITYX5,r_0048_0006__tourist__r_0048_0007__hotspots)
       &amp; isA(ENTITYX9,r_0048_0013__home)
       &amp; isA(ATTRIBX4,r_0048_0002__nifty)
       &amp; isA(ATTRIBX8,r_0048_0011__far)

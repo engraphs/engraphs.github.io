@@ -136,9 +136,9 @@ More than 200 branch offices serve customer needs promptly and efficiently .
 <br>
 <pre>
 arc(r_0086_0001__More,r_0086_0003__200,r_0086_0002__than).
-arc(r_0086_0004__branch_offices,r_0086_0001__More,attrib1).
-arc(r_0086_0006__serve,r_0086_0004__branch_offices,arg0).
-arc(r_0086_0006__serve,r_0086_0007__customer_needs,arg1).
+arc(r_0086_0004__branch__r_0086_0005__offices,r_0086_0001__More,attrib1).
+arc(r_0086_0006__serve,r_0086_0004__branch__r_0086_0005__offices,arg0).
+arc(r_0086_0006__serve,r_0086_0007__customer__r_0086_0008__needs,arg1).
 arc(r_0086_0006__serve,r_0086_0010__and,mnr4).
 arc(r_0086_0010__and,r_0086_0009__promptly,conj1).
 arc(r_0086_0010__and,r_0086_0011__efficiently,conj2).
@@ -146,12 +146,12 @@ arc(r_0086_0010__and,r_0086_0011__efficiently,conj2).
 </pre>
 <br>
 <pre>
-fof(id_86_A_IBM_1401,axiom,
+fof(id__86_A_IBM_1401,axiom,
     ? [EVENTX8,ENTITYX1,ENTITYX4,ENTITYX3,ATTRIBX2,QUALITYX5,QUALITYX6,QUALITYX7] :
-      ( isA(ENTITYX1,r_0086_0004__branch_offices)
+      ( isA(ENTITYX1,r_0086_0004__branch__r_0086_0005__offices)
       &amp; attrib1(ENTITYX1) = ATTRIBX2
       &amp; isA(ENTITYX3,r_0086_0003__200)
-      &amp; isA(ENTITYX4,r_0086_0007__customer_needs)
+      &amp; isA(ENTITYX4,r_0086_0007__customer__r_0086_0008__needs)
       &amp; isA(ATTRIBX2,r_0086_0001__More)
       &amp; r_0086_0002__than(ATTRIBX2) = ENTITYX3
       &amp; isA(QUALITYX5,r_0086_0010__and)

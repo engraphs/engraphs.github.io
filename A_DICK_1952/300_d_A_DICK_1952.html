@@ -45,29 +45,29 @@
 <ellipse fill="none" stroke="black" cx="311.45" cy="-105" rx="39.79" ry="18"/>
 <text text-anchor="middle" x="311.45" y="-101.3" font-family="fixed" font-size="14.00">Where</text>
 </g>
-<!-- 0385_0003_0385_0005 -->
-<g id="node2" class="node">
-<title>0385_0003_0385_0005</title>
-<ellipse fill="none" stroke="black" cx="278.45" cy="-192" rx="40.09" ry="18"/>
-<text text-anchor="middle" x="278.45" y="-188.3" font-family="fixed" font-size="14.00">did_go</text>
-</g>
-<!-- 0385_0003_0385_0005&#45;&gt;0385_0002 -->
-<g id="edge1" class="edge">
-<title>0385_0003_0385_0005&#45;&gt;0385_0002</title>
-<path fill="none" stroke="black" d="M284.97,-174.21C289.62,-162.22 295.98,-145.85 301.29,-132.16"/>
-<polygon fill="black" stroke="black" points="304.58,-133.35 304.94,-122.76 298.06,-130.81 304.58,-133.35"/>
-<text text-anchor="middle" x="311.95" y="-144.8" font-family="fixed" font-size="14.00">[loc]</text>
-</g>
 <!-- 0385_0004 -->
-<g id="node3" class="node">
+<g id="node2" class="node">
 <title>0385_0004</title>
 <ellipse fill="none" stroke="black" cx="206.45" cy="-105" rx="27" ry="18"/>
 <text text-anchor="middle" x="206.45" y="-101.3" font-family="fixed" font-size="14.00">he</text>
 </g>
-<!-- 0385_0003_0385_0005&#45;&gt;0385_0004 -->
+<!-- 0385_0005 -->
+<g id="node3" class="node">
+<title>0385_0005</title>
+<ellipse fill="none" stroke="black" cx="278.45" cy="-192" rx="27" ry="18"/>
+<text text-anchor="middle" x="278.45" y="-188.3" font-family="fixed" font-size="14.00">go</text>
+</g>
+<!-- 0385_0005&#45;&gt;0385_0002 -->
+<g id="edge1" class="edge">
+<title>0385_0005&#45;&gt;0385_0002</title>
+<path fill="none" stroke="black" d="M284.97,-174.21C289.62,-162.22 295.98,-145.85 301.29,-132.16"/>
+<polygon fill="black" stroke="black" points="304.58,-133.35 304.94,-122.76 298.06,-130.81 304.58,-133.35"/>
+<text text-anchor="middle" x="311.95" y="-144.8" font-family="fixed" font-size="14.00">[loc]</text>
+</g>
+<!-- 0385_0005&#45;&gt;0385_0004 -->
 <g id="edge2" class="edge">
-<title>0385_0003_0385_0005&#45;&gt;0385_0004</title>
-<path fill="none" stroke="black" d="M263.01,-175.26C257.36,-169.33 250.99,-162.46 245.45,-156 238.24,-147.6 230.68,-138.09 224.16,-129.64"/>
+<title>0385_0005&#45;&gt;0385_0004</title>
+<path fill="none" stroke="black" d="M264.33,-176.64C258.36,-170.41 251.43,-162.97 245.45,-156 238.24,-147.6 230.68,-138.09 224.16,-129.64"/>
 <polygon fill="black" stroke="black" points="226.88,-127.44 218.03,-121.62 221.32,-131.69 226.88,-127.44"/>
 <text text-anchor="middle" x="266.95" y="-144.8" font-family="fixed" font-size="14.00">[arg0]</text>
 </g>
@@ -194,9 +194,9 @@
 <polygon fill="black" stroke="black" points="37.95,-46.18 34.45,-36.18 30.95,-46.18 37.95,-46.18"/>
 <text text-anchor="middle" x="54.45" y="-57.8" font-family="fixed" font-size="14.00">[mnr]</text>
 </g>
-<!-- question_0385_1005&#45;&gt;0385_0003_0385_0005 -->
+<!-- question_0385_1005&#45;&gt;0385_0005 -->
 <g id="edge11" class="edge">
-<title>question_0385_1005&#45;&gt;0385_0003_0385_0005</title>
+<title>question_0385_1005&#45;&gt;0385_0005</title>
 <path fill="none" stroke="black" d="M278.45,-260.8C278.45,-249.16 278.45,-233.55 278.45,-220.24"/>
 <polygon fill="black" stroke="black" points="281.95,-220.18 278.45,-210.18 274.95,-220.18 281.95,-220.18"/>
 <text text-anchor="middle" x="304.45" y="-231.8" font-family="fixed" font-size="14.00">[scope]</text>
@@ -205,30 +205,30 @@
 </svg>
 <br>
 <pre>
-arc(question_0385_1005,r_0385_0003__did_go,scope).
-arc(r_0385_0003__did_go,r_0385_0002__Where,loc1).
-arc(r_0385_0003__did_go,r_0385_0004__he,arg0).
+arc(r_0385_0005__go,r_0385_0002__Where,loc1).
+arc(r_0385_0005__go,r_0385_0004__he,arg0).
 arc(r_0385_0009__said,r_0385_0008__Nasha,arg0).
 arc(r_0385_0009__said,r_0385_0010__irritably,mnr6).
-arc(r_0385_0009__said,utterance_0385_1003,arg1).
+arc(r_0385_0009__said,r_0385_1003__utterance,arg1).
+arc(r_0385_1003__utterance,r_0385_1005__question,part1).
+arc(r_0385_1005__question,r_0385_0005__go,scope).
 arc(r_0386_0003___apos_ll,r_0386_0004__get,scope).
 arc(r_0386_0004__get,r_0385_0004__he,arg0).
 arc(r_0386_0004__get,r_0386_0005__us,arg1).
 arc(r_0386_0004__get,r_0386_0007__killed,prd).
 arc(r_0386_0007__killed,r_0386_0006__all,mnr2).
-arc(utterance_0385_1003,question_0385_1005,part1).
 
 </pre>
 <br>
 <pre>
-fof(id_385_A_DICK_1952__386_A_DICK_1952,axiom,
+fof(id__385_A_DICK_1952__386_A_DICK_1952,axiom,
     ? [STATEX1,STATEX12,TANCEX11,OPERATORX18,EVENTX19,EVENTX17,EVENTX10,CONJX8,OPERATORX5,EVENTX7,QUALITYX16,QUALITYX9,QUALITYX6] :
       ( STATEX1 = CONJX8
-      &amp; isA(CONJX8,utterance_0385_1003)
+      &amp; isA(CONJX8,r_0385_1003__utterance)
       &amp; part1(CONJX8) = OPERATORX5
-      &amp; isA(OPERATORX5,question_0385_1005)
+      &amp; isA(OPERATORX5,r_0385_1005__question)
       &amp; scope(OPERATORX5) = EVENTX7
-      &amp; isA(EVENTX7,r_0385_0003__did_go)
+      &amp; isA(EVENTX7,r_0385_0005__go)
       &amp; loc1(EVENTX7) = QUALITYX6
       &amp; arg0(EVENTX7) = r_0385_0004__he
       &amp; STATEX12 = EVENTX17

@@ -600,11 +600,10 @@ It prevented Parliament from carrying out its constitutional role for five out o
 </svg>
 <br>
 <pre>
-arc(question_0009_1005,r_0009_0014__had,scope).
 arc(r_0009_0005__therefore,r_0009_0007__is,scope).
-arc(r_0009_0007__is,question_0009_1005,prd2).
-arc(r_0009_0007__is,r_0009_0002__first_question,arg0).
-arc(r_0009_0013__action,r_0009_0010__Prime_Minister,genv).
+arc(r_0009_0007__is,r_0009_0002__first__r_0009_0003__question,arg0).
+arc(r_0009_0007__is,r_0009_1005__question,prd2).
+arc(r_0009_0013__action,r_0009_0010__Prime__r_0009_0011__Minister,genv).
 arc(r_0009_0014__had,r_0009_0013__action,arg0).
 arc(r_0009_0014__had,r_0009_0016__effect,arg1).
 arc(r_0009_0016__effect,r_0009_0019__or,r_0009_0017__of).
@@ -617,6 +616,7 @@ arc(r_0009_0023__role,r_0009_0025__Parliament,r_0009_0024__of).
 arc(r_0009_0023__role,r_0009_0027__holding,r_0009_0026__in).
 arc(r_0009_0027__holding,r_0009_0029__Government,arg1).
 arc(r_0009_0027__holding,r_0009_0031__account,r_0009_0030__to_dir).
+arc(r_0009_1005__question,r_0009_0014__had,scope).
 arc(r_0010_0004__is,r_0010_0003__answer,arg0).
 arc(r_0010_0004__is,r_0010_0009__did,prd2).
 arc(r_0010_0009__did,r_0009_0013__action,arg0).
@@ -630,27 +630,27 @@ arc(r_0011_0009__run_up,r_0011_0014__Speech,r_0011_0010__to).
 arc(r_0011_0014__Speech,r_0011_0012__Queen,genv).
 arc(r_0012_0002__prevented,r_0009_0013__action,arg0).
 arc(r_0012_0002__prevented,r_0009_0025__Parliament,arg1).
-arc(r_0012_0002__prevented,r_0012_0005__carrying_out,r_0012_0004__from_rst).
-arc(r_0012_0005__carrying_out,r_0012_0009__role,arg1).
-arc(r_0012_0005__carrying_out,r_0012_0011__five_weeks,r_0012_0010__for_tmp).
+arc(r_0012_0002__prevented,r_0012_0005__carrying__r_0012_0006__out,r_0012_0004__from_rst).
+arc(r_0012_0005__carrying__r_0012_0006__out,r_0012_0009__role,arg1).
+arc(r_0012_0005__carrying__r_0012_0006__out,r_0012_0011__five_r_0012_0016__weeks,r_0012_0010__for_tmp).
 arc(r_0012_0009__role,r_0009_0025__Parliament,genv).
 arc(r_0012_0009__role,r_0012_0008__constitutional,attrib2).
-arc(r_0012_0011__five_weeks,r_0012_0015__eight,r_0012_0012__out_of).
-arc(r_0012_0011__five_weeks,r_0012_0024__and,r_0012_0017__between).
+arc(r_0012_0011__five__r_0012_0016__weeks,r_0012_0015__eight,r_0012_0012__out_of).
+arc(r_0012_0011__five__r_0012_0016__weeks,r_0012_0024__and,r_0012_0017__between).
 arc(r_0012_0015__eight,r_0012_0014__possible,attrib2).
-arc(r_0012_0019__end,r_0012_0022__summer_recess,r_0012_0020__of).
+arc(r_0012_0019__end,r_0012_0022__summer__r_0012_0023__recess,r_0012_0020__of).
 arc(r_0012_0024__and,r_0012_0019__end,conj1).
-arc(r_0012_0024__and,r_0012_0025__exit_day,conj2).
-arc(r_0012_0025__exit_day,r_0012_0030__October,r_0012_0027__on).
+arc(r_0012_0024__and,r_0012_0025__exit__r_0012_0026__day,conj2).
+arc(r_0012_0025__exit__r_0012_0026__day,r_0012_0030__October,r_0012_0027__on).
 arc(r_0012_0030__October,r_0012_0029__31st,attrib2).
 
 </pre>
 <br>
 <pre>
-fof(id_9_A_uksc_judgment__10_A_uksc_judgment__11_A_uksc_judgment__12_A_uksc_judgment,axiom,
+fof(id__9_A_uksc_judgment__10_A_uksc_judgment__11_A_uksc_judgment__12_A_uksc_judgment,axiom,
     ? [STATEX3,EVENTX8,EVENTX13,STATEX25,EVENTX39,PROROGATIONX27,PROROGATIONX30,PROROGATIONX37,PARLIAMENTX38,PARLIAMENTX43,EVENTX54,EVENTX53,OPERATORX35,EVENTX36,EVENTX29,EVENTX28,OPERATORX2,EVENTX23,OPERATORX5,EVENTX22,CONJX21,EVENTX20,EVENTX19,EVENTX18,ENTITYX42,ENTITYX45,ENTITYX46,ENTITYX48,ENTITYX49,ENTITYX51,ENTITYX50,ENTITYX31,ENTITYX33,ENTITYX34,ENTITYX24,ENTITYX26,ENTITYX1,PROROGATIONX6,ENTITYX7,ENTITYX11,ENTITYX16,ENTITYX17,ATTRIBX52,ATTRIBX47,ATTRIBX44,ATTRIBX32,ATTRIBX12] :
       ( STATEX3 = OPERATORX5
-      &amp; isA(OPERATORX5,question_0009_1005)
+      &amp; isA(OPERATORX5,r_0009_1005__question)
       &amp; scope(OPERATORX5) = EVENTX22
       &amp; isA(EVENTX22,r_0009_0014__had)
       &amp; arg0(EVENTX22) = PROROGATIONX6
@@ -672,12 +672,12 @@ fof(id_9_A_uksc_judgment__10_A_uksc_judgment__11_A_uksc_judgment__12_A_uksc_judg
       &amp; r_0010_0006__of_mod(EVENTX28) = ENTITYX26
       &amp; arg0(EVENTX28) = PROROGATIONX27
       &amp; EVENTX39 = EVENTX53
-      &amp; isA(EVENTX53,r_0012_0005__carrying_out)
+      &amp; isA(EVENTX53,r_0012_0005__carrying__r_0012_0006__out)
       &amp; arg1(EVENTX53) = ENTITYX42
       &amp; r_0012_0010__for_tmp(EVENTX53) = ENTITYX45
-      &amp; isA(ENTITYX1,r_0009_0002__first_question)
+      &amp; isA(ENTITYX1,r_0009_0002__first__r_0009_0003__question)
       &amp; isA(PROROGATIONX6,r_0009_0013__action)
-      &amp; genv(PROROGATIONX6) = r_0009_0010__Prime_Minister
+      &amp; genv(PROROGATIONX6) = r_0009_0010__Prime__r_0009_0011__Minister
       &amp; isA(ENTITYX7,r_0009_0016__effect)
       &amp; r_0009_0017__of(ENTITYX7) = EVENTX8
       &amp; isA(ENTITYX11,r_0009_0023__role)
@@ -704,7 +704,7 @@ fof(id_9_A_uksc_judgment__10_A_uksc_judgment__11_A_uksc_judgment__12_A_uksc_judg
       &amp; attrib2(ENTITYX42) = ATTRIBX44
       &amp; ( PARLIAMENTX43 = PARLIAMENTX38
         | PARLIAMENTX43 = r_0009_0025__Parliament )
-      &amp; isA(ENTITYX45,r_0012_0011__five_weeks)
+      &amp; isA(ENTITYX45,r_0012_0011__five__r_0012_0016__weeks)
       &amp; r_0012_0012__out_of(ENTITYX45) = ENTITYX46
       &amp; r_0012_0017__between(ENTITYX45) = ENTITYX48
       &amp; isA(ENTITYX46,r_0012_0015__eight)
@@ -714,10 +714,10 @@ fof(id_9_A_uksc_judgment__10_A_uksc_judgment__11_A_uksc_judgment__12_A_uksc_judg
       &amp; conj2(ENTITYX48) = ENTITYX51
       &amp; isA(ENTITYX49,r_0012_0019__end)
       &amp; r_0012_0020__of(ENTITYX49) = ENTITYX50
-      &amp; isA(ENTITYX50,r_0012_0022__summer_recess)
-      &amp; isA(ENTITYX51,r_0012_0025__exit_day)
+      &amp; isA(ENTITYX50,r_0012_0022__summer__r_0012_0023__recess)
+      &amp; isA(ENTITYX51,r_0012_0025__exit__r_0012_0026__day)
       &amp; r_0012_0027__on(ENTITYX51) = r_0012_0030__October
-      &amp; isA(r_0009_0010__Prime_Minister,r_0009_0010__Prime_Minister)
+      &amp; isA(r_0009_0010__Prime__r_0009_0011__Minister,r_0009_0010__Prime_r_0009_0011__Minister)
       &amp; isA(r_0012_0030__October,r_0012_0030__October)
       &amp; attrib2(r_0012_0030__October) = ATTRIBX52
       &amp; isA(ATTRIBX12,r_0009_0022__constitutional)

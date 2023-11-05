@@ -214,7 +214,7 @@ A negative voltage from the reference electrode would mean oxidizing conditions 
 <br>
 <pre>
 arc(r_0046_0003__voltage,r_0046_0002__negative,attrib2).
-arc(r_0046_0003__voltage,r_0046_0006__reference_electrode,r_0046_0004__from).
+arc(r_0046_0003__voltage,r_0046_0006__reference__r_0046_0007__electrode,r_0046_0004__from).
 arc(r_0046_0008__would,r_0046_0009__mean,scope).
 arc(r_0046_0009__mean,r_0046_0003__voltage,arg0).
 arc(r_0046_0009__mean,r_0046_0014__and,arg1).
@@ -230,12 +230,12 @@ arc(z_0046_1013,r_0046_0019__conditions,conj2).
 </pre>
 <br>
 <pre>
-fof(id_46_A_lob_J01,axiom,
+fof(id__46_A_lob_J01,axiom,
     ? [OPERATORX14,EVENTX15,ENTITYX1,ENTITYX4,ENTITYX5,ENTITYX8,ENTITYX9,ENTITYX11,ENTITYX7,ENTITYX3,ATTRIBX12,ATTRIBX10,ATTRIBX6,ATTRIBX2] :
       ( isA(ENTITYX1,r_0046_0003__voltage)
       &amp; attrib2(ENTITYX1) = ATTRIBX2
       &amp; r_0046_0004__from(ENTITYX1) = ENTITYX3
-      &amp; isA(ENTITYX3,r_0046_0006__reference_electrode)
+      &amp; isA(ENTITYX3,r_0046_0006__reference__r_0046_0007__electrode)
       &amp; isA(ENTITYX4,r_0046_0014__and)
       &amp; conj1(ENTITYX4) = ENTITYX5
       &amp; conj2(ENTITYX4) = ENTITYX8

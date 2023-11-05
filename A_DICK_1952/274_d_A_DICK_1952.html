@@ -112,16 +112,16 @@
 arc(r_0349_0003___apos_s,r_0349_0002__It,arg0).
 arc(r_0349_0003___apos_s,r_0349_0005__machine,prd2).
 arc(r_0349_0009__said,r_0349_0008__Dorle,arg0).
-arc(r_0349_0009__said,utterance_0349_1003,arg1).
-arc(utterance_0349_1003,r_0349_0003___apos_s,part1).
+arc(r_0349_0009__said,r_0349_1003__utterance,arg1).
+arc(r_0349_1003__utterance,r_0349_0003___apos_s,part1).
 
 </pre>
 <br>
 <pre>
-fof(id_349_A_DICK_1952,axiom,
+fof(id__349_A_DICK_1952,axiom,
     ? [STATEX1,EVENTX7,CONJX6,EVENTX5,ENTITYX4] :
       ( STATEX1 = CONJX6
-      &amp; isA(CONJX6,utterance_0349_1003)
+      &amp; isA(CONJX6,r_0349_1003__utterance)
       &amp; part1(CONJX6) = EVENTX5
       &amp; isA(EVENTX5,r_0349_0003___apos_s)
       &amp; arg0(EVENTX5) = r_0349_0002__It

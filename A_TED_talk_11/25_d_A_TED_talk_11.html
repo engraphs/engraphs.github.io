@@ -393,16 +393,16 @@ And she 's exceptional , but I think she 's not , so to speak , exceptional in t
 </svg>
 <br>
 <pre>
-arc(abs_0033_1027,r_0035_0011__not,scope).
-arc(abs_0033_1027,r_0035_0013__so,restriction).
-arc(question_0033_1006,r_0033_0011__n_apos_t,scope).
 arc(r_0033_0005__night,r_0033_0004__last,attrib1).
-arc(r_0033_0006__was,question_0033_1006,prn8).
 arc(r_0033_0006__was,r_0033_0003__Sirena,arg0).
 arc(r_0033_0006__was,r_0033_0005__night,tmp).
 arc(r_0033_0006__was,r_0033_0008__marvel,prd2).
+arc(r_0033_0006__was,r_0033_1006__question,prn8).
 arc(r_0033_0010__was,r_0033_0003__Sirena,arg0).
 arc(r_0033_0011__n_apos_t,r_0033_0010__was,scope).
+arc(r_0033_1006__question,r_0033_0011__n_apos_t,scope).
+arc(r_0033_1027__abs,r_0035_0011__not,scope).
+arc(r_0033_1027__abs,r_0035_0013__so,restriction).
 arc(r_0034_0001__Just,r_0034_0002__seeing,scope).
 arc(r_0034_0002__seeing,z_0033_1018,arg1).
 arc(r_0034_0005__could,r_0034_0006__do,scope).
@@ -412,7 +412,7 @@ arc(r_0035_0003___apos_s,r_0033_0003__Sirena,arg0).
 arc(r_0035_0003___apos_s,r_0035_0004__exceptional,prd2).
 arc(r_0035_0006__but,r_0035_0003___apos_s,conj1).
 arc(r_0035_0006__but,r_0035_0008__think,conj2).
-arc(r_0035_0008__think,abs_0033_1027,arg1).
+arc(r_0035_0008__think,r_0033_1027__abs,arg1).
 arc(r_0035_0008__think,r_0035_0007__I,arg0).
 arc(r_0035_0010___apos_s,r_0033_0003__Sirena,arg0).
 arc(r_0035_0010___apos_s,r_0035_0017__exceptional,prd2).
@@ -424,17 +424,17 @@ arc(r_0035_0020__whole,r_0035_0022__childhood,r_0035_0021__of).
 </pre>
 <br>
 <pre>
-fof(id_33_A_TED_talk_11__34_A_TED_talk_11__35_A_TED_talk_11,axiom,
+fof(id__33_A_TED_talk_11__34_A_TED_talk_11__35_A_TED_talk_11,axiom,
     ? [EVENTX4,STATEX25,SIRENAX7,SIRENAX15,SIRENAX22,SIRENAX26,CONJX39,EVENTX38,CONNX28,OPERATORX31,EVENTX32,OPERATORX36,EVENTX37,EVENTX24,OPERATORX13,EVENTX19,OPERATORX16,EVENTX17,EVENTX10,OPERATORX6,OPERATORX8,EVENTX9,ENTITYX34,ENTITYX35,ENTITYX14,ENTITYX1,ENTITYX3,ATTRIBX33,ATTRIBX23,ATTRIBX2] :
       ( EVENTX4 = OPERATORX6
-      &amp; isA(OPERATORX6,question_0033_1006)
+      &amp; isA(OPERATORX6,r_0033_1006__question)
       &amp; scope(OPERATORX6) = OPERATORX8
       &amp; isA(OPERATORX8,r_0033_0011__n_apos_t)
       &amp; scope(OPERATORX8) = EVENTX9
       &amp; isA(EVENTX9,r_0033_0010__was)
       &amp; arg0(EVENTX9) = SIRENAX7
       &amp; STATEX25 = CONNX28
-      &amp; isA(CONNX28,abs_0033_1027)
+      &amp; isA(CONNX28,r_0033_1027__abs)
       &amp; scope(CONNX28) = OPERATORX36
       &amp; isA(OPERATORX36,r_0035_0011__not)
       &amp; scope(OPERATORX36) = EVENTX37
@@ -538,9 +538,9 @@ fof(id_33_A_TED_talk_11__34_A_TED_talk_11__35_A_TED_talk_11,axiom,
 <text x="1260.36" y="112" text-anchor="middle">PRN</text>
 <text x="1260.72" y="173" text-anchor="middle">CP-QUE</text>
 <text x="1260.72" y="234" text-anchor="middle">IP-SUB</text>
-<text x="1140.36" y="295" text-anchor="middle">BED</text>
-<text x="1140.36" y="356" text-anchor="middle">was</text>
-<line x1="1140.36" y1="305" x2="1140.36" y2="336" style="stroke:#000000;stroke-width:2;"/>
+<text x="1140.84" y="295" text-anchor="middle">BED;~Ln</text>
+<text x="1140.84" y="356" text-anchor="middle">was</text>
+<line x1="1140.84" y1="305" x2="1140.84" y2="336" style="stroke:#000000;stroke-width:2;"/>
 <line x1="1260.72" y1="244" x2="1140" y2="275" style="stroke:#000000;stroke-width:2;"/>
 <text x="1261.68" y="295" text-anchor="middle">NEG;_clitic_</text>
 <text x="1261.68" y="356" text-anchor="middle">n&lt;apos&gt;t</text>
@@ -571,7 +571,7 @@ fof(id_33_A_TED_talk_11__34_A_TED_talk_11__35_A_TED_talk_11,axiom,
           (NP-PRD2 (D a;{a})
                    (N marvel;{marvel}))
           (PUNC ,)
-          (PRN (CP-QUE (IP-SUB (BED was;{be})
+          (PRN (CP-QUE (IP-SUB (BED;~Ln was;{be})
                                (NEG;_clitic_ n&lt;apos&gt;t;{not})
                                (NP-SBJ;{SIRENA} (PRO she;{she})))))
           (PUNC ?))

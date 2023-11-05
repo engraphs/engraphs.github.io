@@ -181,25 +181,25 @@ Get the Government Receiving Station on the sender and tell them what we found ,
 </svg>
 <br>
 <pre>
-arc(imperative_0072_1002,r_0072_0009__and,scope).
-arc(question_0072_1013,r_0072_0014__found,scope).
-arc(r_0072_0001__Get,r_0072_0003__Government_Station,arg1).
+arc(r_0072_0001__Get,r_0072_0003__Government__r_0072_0005__Station,arg1).
 arc(r_0072_0001__Get,r_0072_0008__sender,r_0072_0006__on_loc).
-arc(r_0072_0004__Receiving,r_0072_0003__Government_Station,arg0).
+arc(r_0072_0004__Receiving,r_0072_0003__Government__r_0072_0005__Station,arg0).
 arc(r_0072_0009__and,r_0072_0001__Get,conj1).
 arc(r_0072_0009__and,r_0072_0010__tell,conj2).
-arc(r_0072_0010__tell,question_0072_1013,arg1).
-arc(r_0072_0010__tell,r_0072_0003__Government_Station,arg2).
+arc(r_0072_0010__tell,r_0072_0003__Government__r_0072_0005__Station,arg2).
+arc(r_0072_0010__tell,r_0072_1013__question,arg1).
 arc(r_0072_0014__found,r_0072_0012__what,arg1).
 arc(r_0072_0014__found,r_0072_0013__we,arg0).
+arc(r_0072_1002__imperative,r_0072_0009__and,scope).
+arc(r_0072_1013__question,r_0072_0014__found,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_72_A_DICK_1952,axiom,
+fof(id__72_A_DICK_1952,axiom,
     ? [STATEX9,GOVSTATIONX8,OPERATORX2,CONJX17,EVENTX16,OPERATORX13,EVENTX15,EVENTX7,EVENTX5,ENTITYX14,GOVSTATIONX4,ENTITYX6] :
       ( STATEX9 = OPERATORX13
-      &amp; isA(OPERATORX13,question_0072_1013)
+      &amp; isA(OPERATORX13,r_0072_1013__question)
       &amp; scope(OPERATORX13) = EVENTX15
       &amp; isA(EVENTX15,r_0072_0014__found)
       &amp; arg0(EVENTX15) = r_0072_0013__we
@@ -207,11 +207,11 @@ fof(id_72_A_DICK_1952,axiom,
       &amp; arg0(EVENTX15) = r_0072_0013__we
       &amp; isA(EVENTX5,r_0072_0004__Receiving)
       &amp; arg0(EVENTX5) = GOVSTATIONX4
-      &amp; isA(GOVSTATIONX4,r_0072_0003__Government_Station)
+      &amp; isA(GOVSTATIONX4,r_0072_0003__Government__r_0072_0005__Station)
       &amp; isA(ENTITYX6,r_0072_0008__sender)
       &amp; GOVSTATIONX8 = GOVSTATIONX4
       &amp; isA(ENTITYX14,r_0072_0012__what)
-      &amp; isA(OPERATORX2,imperative_0072_1002)
+      &amp; isA(OPERATORX2,r_0072_1002__imperative)
       &amp; scope(OPERATORX2) = CONJX17
       &amp; isA(CONJX17,r_0072_0009__and)
       &amp; conj1(CONJX17) = EVENTX7

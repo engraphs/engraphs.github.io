@@ -163,28 +163,28 @@ I leave it to you , Madam Deputy Speaker , to decide which of those traits I sha
 </svg>
 <br>
 <pre>
-arc(question_0009_1004,r_0009_0018__share,scope).
 arc(r_0009_0002__leave,r_0009_0001__I,arg0).
 arc(r_0009_0002__leave,r_0009_0005__you,r_0009_0004__to_clr).
 arc(r_0009_0002__leave,r_0009_0012__decide,arg1).
-arc(r_0009_0005__you,r_0009_0007__Madam_Deputy_Speaker,prn3).
-arc(r_0009_0012__decide,question_0009_1004,arg1).
+arc(r_0009_0005__you,r_0009_0007__Madam__r_0009_0008__Deputy_r_0009_0009__Speaker,prn3).
 arc(r_0009_0012__decide,r_0009_0001__I,arg0).
+arc(r_0009_0012__decide,r_0009_1004__question,arg1).
 arc(r_0009_0013__which,r_0009_0016__traits,r_0009_0014__of).
 arc(r_0009_0018__share,r_0009_0001__I,arg0).
 arc(r_0009_0018__share,r_0009_0013__which,arg1).
+arc(r_0009_1004__question,r_0009_0018__share,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_9_A_Hedgehog,axiom,
+fof(id__9_A_Hedgehog,axiom,
     ? [STATEX1,STATEX2,SPEAKERX7,EVENTX10,EVENTX9,OPERATORX4,EVENTX8,ENTITYX5,ENTITYX6] :
       ( STATEX1 = EVENTX9
       &amp; isA(EVENTX9,r_0009_0012__decide)
       &amp; arg0(EVENTX9) = r_0009_0001__I
       &amp; arg1(EVENTX9) = STATEX2
       &amp; STATEX2 = OPERATORX4
-      &amp; isA(OPERATORX4,question_0009_1004)
+      &amp; isA(OPERATORX4,r_0009_1004__question)
       &amp; scope(OPERATORX4) = EVENTX8
       &amp; isA(EVENTX8,r_0009_0018__share)
       &amp; arg1(EVENTX8) = ENTITYX5
@@ -194,7 +194,7 @@ fof(id_9_A_Hedgehog,axiom,
       &amp; isA(ENTITYX6,r_0009_0016__traits)
       &amp; SPEAKERX7 = r_0009_0001__I
       &amp; isA(r_0009_0005__you,r_0009_0005__you)
-      &amp; prn3(r_0009_0005__you) = r_0009_0007__Madam_Deputy_Speaker
+      &amp; prn3(r_0009_0005__you) = r_0009_0007__Madam__r_0009_0008__Deputy_r_0009_0009__Speaker
       &amp; isA(EVENTX10,r_0009_0002__leave)
       &amp; arg0(EVENTX10) = r_0009_0001__I
       &amp; arg1(EVENTX10) = STATEX1

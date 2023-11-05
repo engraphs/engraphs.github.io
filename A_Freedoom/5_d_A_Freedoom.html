@@ -396,11 +396,8 @@ If you have n't played Freedoom before , take a few minutes when you start the g
 </svg>
 <br>
 <pre>
-arc(cnt_0010_1015,r_0010_0009__take,scope).
-arc(cnt_0010_1015,r_0010_0025__and,restriction).
-arc(imperative_0010_1002,r_0010_0001__If_cnt_cnd,scope).
-arc(r_0010_0001__If_cnt_cnd,cnt_0010_1015,scope).
 arc(r_0010_0001__If_cnt_cnd,r_0010_0003__have,restriction).
+arc(r_0010_0001__If_cnt_cnd,r_0010_1015__cnt,scope).
 arc(r_0010_0003__have,r_0010_0004__n_apos_t,catenative).
 arc(r_0010_0004__n_apos_t,r_0010_0005__played,scope).
 arc(r_0010_0005__played,r_0010_0002__you,arg0).
@@ -424,11 +421,14 @@ arc(r_0010_0031__makes,r_0010_0034__comfortable,prd).
 arc(r_0010_0031__makes,r_0010_0036__play,arg1).
 arc(r_0010_0031__makes,z_0010_1025,arg0).
 arc(r_0010_0034__comfortable,r_0010_0033__more,quality1).
+arc(r_0010_1002__imperative,r_0010_0001__If_cnt_cnd,scope).
+arc(r_0010_1015__cnt,r_0010_0009__take,scope).
+arc(r_0010_1015__cnt,r_0010_0025__and,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_10_A_Freedoom,axiom,
+fof(id__10_A_Freedoom,axiom,
     ? [CATENATIVEX5,STATEX26,HEARERX12,HEARERX23,OPERATORX2,CONNX4,CONNX16,CONJX34,CONNX21,EVENTX32,EVENTX29,EVENTX24,EVENTX33,EVENTX19,EVENTX35,EVENTX14,EVENTX9,OPERATORX7,EVENTX8,ENTITYX10,ENTITYX20,ENTITYX22,ENTITYX18,ENTITYX13,QUALITYX31,QUALITYX6,ATTRIBX30,ATTRIBX17,ATTRIBX11] :
       ( CATENATIVEX5 = OPERATORX7
       &amp; isA(OPERATORX7,r_0010_0004__n_apos_t)
@@ -461,14 +461,14 @@ fof(id_10_A_Freedoom,axiom,
       &amp; r_0010_0021__with(ATTRIBX17) = ENTITYX18
       &amp; isA(ATTRIBX30,r_0010_0034__comfortable)
       &amp; quality1(ATTRIBX30) = QUALITYX31
-      &amp; isA(OPERATORX2,imperative_0010_1002)
+      &amp; isA(OPERATORX2,r_0010_1002__imperative)
       &amp; scope(OPERATORX2) = CONNX4
       &amp; isA(CONNX4,r_0010_0001__If_cnt_cnd)
       &amp; restriction(CONNX4) = EVENTX9
       &amp; isA(EVENTX9,r_0010_0003__have)
       &amp; catenative(EVENTX9) = CATENATIVEX5
       &amp; scope(CONNX4) = CONNX16
-      &amp; isA(CONNX16,cnt_0010_1015)
+      &amp; isA(CONNX16,r_0010_1015__cnt)
       &amp; scope(CONNX16) = EVENTX35
       &amp; isA(EVENTX35,r_0010_0009__take)
       &amp; arg1(EVENTX35) = ENTITYX10

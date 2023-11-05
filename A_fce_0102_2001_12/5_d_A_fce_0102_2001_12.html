@@ -312,16 +312,10 @@ Then , using all your notes , write a letter to your friend giving the informati
 </svg>
 <br>
 <pre>
-arc(abs_0005_1005,cnt_0005_1013,scope).
-arc(abs_0005_1005,r_0005_0004__quantificational__all,restriction).
-arc(cnt_0005_1013,r_0005_0008__write,scope).
-arc(cnt_0005_1013,r_0005_0018__and,restriction).
-arc(imperative_0005_1002,r_0005_0001__Then,scope).
-arc(question_0005_1021,r_0005_0022__would,scope).
-arc(r_0005_0001__Then,abs_0005_1005,scope).
+arc(r_0005_0001__Then,r_0005_1005__abs,scope).
 arc(r_0005_0003__using,r_0005_0006__notes,arg1).
-arc(r_0005_0004__quantificational__all,r_0005_0003__using,scope).
-arc(r_0005_0004__quantificational__all,r_0005_0006__notes,restriction).
+arc(r_0005_0004__quantificational__r_0005_0004__all,r_0005_0003__using,scope).
+arc(r_0005_0004__quantificational__r_0005_0004__all,r_0005_0006__notes,restriction).
 arc(r_0005_0006__notes,r_0005_0005__your,genv).
 arc(r_0005_0008__write,r_0005_0010__letter,arg1).
 arc(r_0005_0008__write,r_0005_0013__friend,r_0005_0011__to_arg2).
@@ -330,18 +324,24 @@ arc(r_0005_0014__giving,r_0005_0016__information,arg1).
 arc(r_0005_0017__requested,r_0005_0016__information,arg1).
 arc(r_0005_0018__and,r_0005_0014__giving,conj1).
 arc(r_0005_0018__and,r_0005_0019__saying,conj2).
-arc(r_0005_0019__saying,question_0005_1021,arg1).
+arc(r_0005_0019__saying,r_0005_1021__question,arg1).
 arc(r_0005_0022__would,r_0005_0023__recommend,scope).
 arc(r_0005_0023__recommend,r_0005_0005__your,arg0).
 arc(r_0005_0023__recommend,r_0005_0025__trip,arg1).
+arc(r_0005_1002__imperative,r_0005_0001__Then,scope).
+arc(r_0005_1005__abs,r_0005_0004__quantificational__r_0005_0004__all,restriction).
+arc(r_0005_1005__abs,r_0005_1013__cnt,scope).
+arc(r_0005_1013__cnt,r_0005_0008__write,scope).
+arc(r_0005_1013__cnt,r_0005_0018__and,restriction).
+arc(r_0005_1021__question,r_0005_0022__would,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_5_A_fce_0102_2001_12,axiom,
+fof(id__5_A_fce_0102_2001_12,axiom,
     ? [STATEX19,HEARERX12,HEARERX22,OPERATORX2,OPERATORX4,CONNX6,CONNX14,CONJX27,EVENTX26,OPERATORX21,OPERATORX24,EVENTX25,EVENTX18,EVENTX17,EVENTX28,QUANTX8,EVENTX9,ENTITYX10,ENTITYX11,ENTITYX23,ENTITYX15,ENTITYX7] :
       ( STATEX19 = OPERATORX21
-      &amp; isA(OPERATORX21,question_0005_1021)
+      &amp; isA(OPERATORX21,r_0005_1021__question)
       &amp; scope(OPERATORX21) = OPERATORX24
       &amp; isA(OPERATORX24,r_0005_0022__would)
       &amp; scope(OPERATORX24) = EVENTX25
@@ -357,13 +357,13 @@ fof(id_5_A_fce_0102_2001_12,axiom,
       &amp; isA(ENTITYX15,r_0005_0016__information)
       &amp; HEARERX22 = r_0005_0005__your
       &amp; isA(ENTITYX23,r_0005_0025__trip)
-      &amp; isA(OPERATORX2,imperative_0005_1002)
+      &amp; isA(OPERATORX2,r_0005_1002__imperative)
       &amp; scope(OPERATORX2) = OPERATORX4
       &amp; isA(OPERATORX4,r_0005_0001__Then)
       &amp; scope(OPERATORX4) = CONNX6
-      &amp; isA(CONNX6,abs_0005_1005)
+      &amp; isA(CONNX6,r_0005_1005__abs)
       &amp; restriction(CONNX6) = QUANTX8
-      &amp; isA(QUANTX8,r_0005_0004__quantificational__all)
+      &amp; isA(QUANTX8,r_0005_0004__quantificational__r_0005_0004__all)
       &amp; restriction(QUANTX8) = ENTITYX7
       &amp; isA(ENTITYX7,r_0005_0006__notes)
       &amp; genv(ENTITYX7) = r_0005_0005__your
@@ -371,7 +371,7 @@ fof(id_5_A_fce_0102_2001_12,axiom,
       &amp; isA(EVENTX9,r_0005_0003__using)
       &amp; arg1(EVENTX9) = ENTITYX7
       &amp; scope(CONNX6) = CONNX14
-      &amp; isA(CONNX14,cnt_0005_1013)
+      &amp; isA(CONNX14,r_0005_1013__cnt)
       &amp; scope(CONNX14) = EVENTX28
       &amp; isA(EVENTX28,r_0005_0008__write)
       &amp; arg1(EVENTX28) = ENTITYX10

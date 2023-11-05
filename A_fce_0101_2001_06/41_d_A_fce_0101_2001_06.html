@@ -261,9 +261,6 @@ Now your teacher has asked you to write a composition in which you compare two c
 </svg>
 <br>
 <pre>
-arc(cnt_0041_1009,r_0041_0014__compare,scope).
-arc(cnt_0041_1009,r_0041_0018__saying,restriction).
-arc(question_0041_1013,r_0041_0021__are,scope).
 arc(r_0041_0003__teacher,r_0041_0002__your,genv).
 arc(r_0041_0004__has,r_0041_0001__Now,tmp1).
 arc(r_0041_0004__has,r_0041_0005__asked,catenative).
@@ -274,17 +271,20 @@ arc(r_0041_0008__write,r_0041_0002__your,arg0).
 arc(r_0041_0008__write,r_0041_0010__composition,arg1).
 arc(r_0041_0014__compare,r_0041_0002__your,arg0).
 arc(r_0041_0014__compare,r_0041_0010__composition,r_0041_0011__in_loc).
-arc(r_0041_0014__compare,r_0041_0015__two_characters,arg1).
-arc(r_0041_0018__saying,question_0041_1013,arg1).
+arc(r_0041_0014__compare,r_0041_0015__two__r_0041_0016__characters,arg1).
 arc(r_0041_0018__saying,r_0041_0002__your,arg0).
-arc(r_0041_0021__are,r_0041_0015__two_characters,arg0).
+arc(r_0041_0018__saying,r_0041_1013__question,arg1).
+arc(r_0041_0021__are,r_0041_0015__two__r_0041_0016__characters,arg0).
 arc(r_0041_0021__are,r_0041_0019__how,mnr1).
 arc(r_0041_0021__are,r_0041_0022__different,prd2).
+arc(r_0041_1009__cnt,r_0041_0014__compare,scope).
+arc(r_0041_1009__cnt,r_0041_0018__saying,restriction).
+arc(r_0041_1013__question,r_0041_0021__are,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_41_A_fce_0101_2001_06,axiom,
+fof(id__41_A_fce_0101_2001_06,axiom,
     ? [CATENATIVEX3,STATEX5,STATEX11,HEARERX4,HEARERX7,CHARACTERSX15,EVENTX22,EVENTX21,EVENTX20,CONNX10,EVENTX18,OPERATORX13,EVENTX17,EVENTX19,QUALITYX1,QUALITYX14,ENTITYX2,ENTITYX6,CHARACTERSX8,ATTRIBX16] :
       ( CATENATIVEX3 = EVENTX21
       &amp; isA(EVENTX21,r_0041_0005__asked)
@@ -296,7 +296,7 @@ fof(id_41_A_fce_0101_2001_06,axiom,
       &amp; arg0(EVENTX20) = HEARERX4
       &amp; arg1(EVENTX20) = ENTITYX6
       &amp; STATEX11 = OPERATORX13
-      &amp; isA(OPERATORX13,question_0041_1013)
+      &amp; isA(OPERATORX13,r_0041_1013__question)
       &amp; scope(OPERATORX13) = EVENTX17
       &amp; isA(EVENTX17,r_0041_0021__are)
       &amp; mnr1(EVENTX17) = QUALITYX14
@@ -307,7 +307,7 @@ fof(id_41_A_fce_0101_2001_06,axiom,
       &amp; isA(ENTITYX2,r_0041_0003__teacher)
       &amp; genv(ENTITYX2) = r_0041_0002__your
       &amp; HEARERX4 = r_0041_0002__your
-      &amp; isA(CONNX10,cnt_0041_1009)
+      &amp; isA(CONNX10,r_0041_1009__cnt)
       &amp; scope(CONNX10) = EVENTX19
       &amp; isA(EVENTX19,r_0041_0014__compare)
       &amp; r_0041_0011__in_loc(EVENTX19) = ENTITYX6
@@ -320,7 +320,7 @@ fof(id_41_A_fce_0101_2001_06,axiom,
       &amp; isA(ENTITYX6,r_0041_0010__composition)
       &amp; ( HEARERX7 = HEARERX4
         | HEARERX7 = r_0041_0002__your )
-      &amp; isA(CHARACTERSX8,r_0041_0015__two_characters)
+      &amp; isA(CHARACTERSX8,r_0041_0015__two__r_0041_0016__characters)
       &amp; CHARACTERSX15 = CHARACTERSX8
       &amp; isA(ATTRIBX16,r_0041_0022__different)
       &amp; isA(EVENTX22,r_0041_0004__has)

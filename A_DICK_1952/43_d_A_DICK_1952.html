@@ -97,17 +97,17 @@
 <br>
 <pre>
 arc(r_0062_0006__said,r_0062_0005__he,arg0).
-arc(r_0062_0006__said,utterance_0062_1004,arg1).
-arc(utterance_0062_1004,z_0062_1010,part1).
+arc(r_0062_0006__said,r_0062_1004__utterance,arg1).
+arc(r_0062_1004__utterance,z_0062_1010,part1).
 arc(z_0062_1010,r_0062_0002__Piers,z_0062_1008).
 
 </pre>
 <br>
 <pre>
-fof(id_62_A_DICK_1952,axiom,
+fof(id__62_A_DICK_1952,axiom,
     ? [STATEX2,EVENTX13,CONJX12,EVENTX11,ENTITYX9] :
       ( STATEX2 = CONJX12
-      &amp; isA(CONJX12,utterance_0062_1004)
+      &amp; isA(CONJX12,r_0062_1004__utterance)
       &amp; part1(CONJX12) = EVENTX11
       &amp; isA(EVENTX11,z_0062_1010)
       &amp; z_0062_1008(EVENTX11) = ENTITYX9

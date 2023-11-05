@@ -480,7 +480,7 @@ vaccine available .
 </svg>
 <br>
 <pre>
-arc(r_0011_0001__Hepatitis_A,r_0011_0005__disease,prn4).
+arc(r_0011_0001__Hepatitis__r_0011_0002__A,r_0011_0005__disease,prn4).
 arc(r_0011_0005__disease,r_0011_0004__viral,attrib1).
 arc(r_0011_0007__interferes,r_0011_0005__disease,arg0).
 arc(r_0011_0007__interferes,r_0011_0010__functioning,r_0011_0008__with_clr).
@@ -502,20 +502,20 @@ arc(r_0012_0002__exhibit,r_0012_0007__and,arg1).
 arc(r_0012_0007__and,r_0012_0003__fever,conj1).
 arc(r_0012_0007__and,r_0012_0005__jaundice,conj2).
 arc(r_0012_0007__and,r_0012_0008__diarrhea,conj3).
-arc(r_0013_0001__15__,r_0013_0004__victims,r_0013_0003__of).
+arc(r_0013_0001__15__r_0013_0002___,r_0013_0004__victims,r_0013_0003__of).
 arc(r_0013_0005__will,r_0013_0006__experience,scope).
-arc(r_0013_0006__experience,r_0013_0001__15__,arg0).
+arc(r_0013_0006__experience,r_0013_0001__15__r_0013_0002___,arg0).
 arc(r_0013_0006__experience,r_0013_0008__symptoms,arg1).
-arc(r_0013_0006__experience,r_0013_0010__6_9_months,r_0013_0009__over_tmp).
+arc(r_0013_0006__experience,r_0013_0010__6__r_0013_0012__9_r_0013_0013__months,r_0013_0009__over_tmp).
 arc(r_0013_0008__symptoms,r_0013_0007__prolonged,attrib1).
-arc(z_0011_1024,r_0011_0001__Hepatitis_A,z_0011_1004).
+arc(z_0011_1024,r_0011_0001__Hepatitis__r_0011_0002__A,z_0011_1004).
 arc(z_0011_1041,r_0014_0001__vaccine,arg0).
 arc(z_0011_1041,r_0014_0002__available,prd).
 
 </pre>
 <br>
 <pre>
-fof(id_11_A_FACTBOOK_1_2010__12_A_FACTBOOK_1_2010__13_A_FACTBOOK_1_2010__14_A_FACTBOOK_1_2010,axiom,
+fof(id__11_A_FACTBOOK_1_2010__12_A_FACTBOOK_1_2010__13_A_FACTBOOK_1_2010__14_A_FACTBOOK_1_2010,axiom,
     ? [EVENTX42,OPERATORX37,EVENTX38,EVENTX31,EVENTX25,EVENTX23,EVENTX16,EVENTX9,ENTITYX39,ENTITYX32,ENTITYX34,ENTITYX36,ENTITYX33,ENTITYX26,ENTITYX27,ENTITYX28,ENTITYX29,ENTITYX30,ENTITYX5,ENTITYX11,ENTITYX20,ENTITYX21,ENTITYX12,ENTITYX17,ENTITYX18,ENTITYX14,ENTITYX7,ENTITYX8,ATTRIBX40,ATTRIBX35,ATTRIBX6,ATTRIBX22,ATTRIBX15,QUALITYX19] :
       ( isA(EVENTX9,r_0011_0007__interferes)
       &amp; arg0(EVENTX9) = ENTITYX5
@@ -553,15 +553,15 @@ fof(id_11_A_FACTBOOK_1_2010__12_A_FACTBOOK_1_2010__13_A_FACTBOOK_1_2010__14_A_FA
       &amp; isA(ENTITYX28,r_0012_0003__fever)
       &amp; isA(ENTITYX29,r_0012_0005__jaundice)
       &amp; isA(ENTITYX30,r_0012_0008__diarrhea)
-      &amp; isA(ENTITYX32,r_0013_0001__15__)
+      &amp; isA(ENTITYX32,r_0013_0001__15__r_0013_0002___)
       &amp; r_0013_0003__of(ENTITYX32) = ENTITYX33
       &amp; isA(ENTITYX33,r_0013_0004__victims)
       &amp; isA(ENTITYX34,r_0013_0008__symptoms)
       &amp; attrib1(ENTITYX34) = ATTRIBX35
-      &amp; isA(ENTITYX36,r_0013_0010__6_9_months)
+      &amp; isA(ENTITYX36,r_0013_0010__6__r_0013_0012__9_r_0013_0013__months)
       &amp; isA(ENTITYX39,r_0014_0001__vaccine)
-      &amp; isA(r_0011_0001__Hepatitis_A,r_0011_0001__Hepatitis_A)
-      &amp; prn4(r_0011_0001__Hepatitis_A) = ENTITYX5
+      &amp; isA(r_0011_0001__Hepatitis__r_0011_0002__A,r_0011_0001__Hepatitis_r_0011_0002__A)
+      &amp; prn4(r_0011_0001__Hepatitis__r_0011_0002__A) = ENTITYX5
       &amp; isA(ATTRIBX6,r_0011_0004__viral)
       &amp; isA(ATTRIBX15,r_0011_0024__fecal)
       &amp; isA(ATTRIBX22,r_0011_0031__poor)
@@ -570,7 +570,7 @@ fof(id_11_A_FACTBOOK_1_2010__12_A_FACTBOOK_1_2010__13_A_FACTBOOK_1_2010__14_A_FA
       &amp; isA(QUALITYX19,r_0011_0027__principally)
       &amp; r_0011_0028__in(QUALITYX19) = ENTITYX20
       &amp; isA(EVENTX25,z_0011_1024)
-      &amp; z_0011_1004(EVENTX25) = r_0011_0001__Hepatitis_A
+      &amp; z_0011_1004(EVENTX25) = r_0011_0001__Hepatitis__r_0011_0002__A
       &amp; isA(EVENTX31,r_0012_0002__exhibit)
       &amp; arg0(EVENTX31) = ENTITYX26
       &amp; arg1(EVENTX31) = ENTITYX27

@@ -380,12 +380,13 @@ arc(r_0118_0004__upset,r_0118_0001__He,arg1).
 arc(r_0118_0004__upset,r_0118_0003__really,mnr2).
 arc(r_0118_0004__upset,r_0118_0007__plane,r_0118_0005__on_loc).
 arc(r_0118_0010__said,r_0118_0001__He,arg0).
-arc(r_0118_0010__said,utterance_0118_1012,arg1).
+arc(r_0118_0010__said,r_0118_1012__utterance,arg1).
 arc(r_0118_0014___apos_ll,r_0118_0016__find,scope).
 arc(r_0118_0016__find,r_0118_0001__He,arg0).
 arc(r_0118_0016__find,r_0118_0015__never,tmp3).
 arc(r_0118_0016__find,r_0118_0018__girl,arg1).
 arc(r_0118_0018__girl,r_0118_0020__Sarah,r_0118_0019__like).
+arc(r_0118_1012__utterance,r_0118_0014___apos_ll,part1).
 arc(r_0119_0003__were,r_0119_0002__we,arg0).
 arc(r_0119_0003__were,r_0119_0005__pleased,prd2).
 arc(r_0119_0003__were,r_0119_0009__frankly,mnr6).
@@ -400,12 +401,11 @@ arc(r_0119_0016__reason,r_0119_0018__were,emb4).
 arc(r_0119_0018__were,r_0119_0019__leaving,catenative).
 arc(r_0119_0019__leaving,r_0119_0002__we,arg0).
 arc(r_0119_0019__leaving,r_0119_0021__country,arg1).
-arc(utterance_0118_1012,r_0118_0014___apos_ll,part1).
 
 </pre>
 <br>
 <pre>
-fof(id_118_A_TED_talk_11__119_A_TED_talk_11,axiom,
+fof(id__118_A_TED_talk_11__119_A_TED_talk_11,axiom,
     ? [CATENATIVEX3,STATEX10,STATEX27,CATENATIVEX29,JAMESX9,JAMESX13,SARAHX24,SPEAKER_AND_HEARERX28,CONNX23,EVENTX33,EVENTX32,EVENTX31,EVENTX34,EVENTX19,CONJX18,OPERATORX16,EVENTX17,EVENTX8,EVENTX7,ENTITYX25,ENTITYX30,ENTITYX15,ENTITYX6,QUALITYX22,QUALITYX21,QUALITYX14,QUALITYX5,ATTRIBX20,ATTRIBX26] :
       ( CATENATIVEX3 = EVENTX7
       &amp; isA(EVENTX7,r_0118_0004__upset)
@@ -413,7 +413,7 @@ fof(id_118_A_TED_talk_11__119_A_TED_talk_11,axiom,
       &amp; mnr2(EVENTX7) = QUALITYX5
       &amp; r_0118_0005__on_loc(EVENTX7) = ENTITYX6
       &amp; STATEX10 = CONJX18
-      &amp; isA(CONJX18,utterance_0118_1012)
+      &amp; isA(CONJX18,r_0118_1012__utterance)
       &amp; part1(CONJX18) = OPERATORX16
       &amp; isA(OPERATORX16,r_0118_0014___apos_ll)
       &amp; scope(OPERATORX16) = EVENTX17

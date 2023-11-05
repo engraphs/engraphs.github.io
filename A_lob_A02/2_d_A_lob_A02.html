@@ -132,22 +132,22 @@ Our man in Paris is no 1 aide to Heath .
 arc(r_0002_0002__man,r_0002_0001__Our,genv).
 arc(r_0002_0002__man,r_0002_0004__Paris,r_0002_0003__in).
 arc(r_0002_0005__is,r_0002_0002__man,arg0).
-arc(r_0002_0005__is,r_0002_0007__1_aide,prd2).
-arc(r_0002_0006__quantificational__no,r_0002_0005__is,scope).
-arc(r_0002_0006__quantificational__no,r_0002_0007__1_aide,restriction).
-arc(r_0002_0007__1_aide,r_0002_0010__Heath,r_0002_0009__to).
+arc(r_0002_0005__is,r_0002_0007__1__r_0002_0008__aide,prd2).
+arc(r_0002_0006__quantificational__r_0002_0006__no,r_0002_0005__is,scope).
+arc(r_0002_0006__quantificational__r_0002_0006__no,r_0002_0007__1__r_0002_0008__aide,restriction).
+arc(r_0002_0007__1__r_0002_0008__aide,r_0002_0010__Heath,r_0002_0009__to).
 
 </pre>
 <br>
 <pre>
-fof(id_2_A_lob_A02,axiom,
+fof(id__2_A_lob_A02,axiom,
     ? [QUANTX3,EVENTX4,ENTITYX1,ENTITYX2] :
       ( isA(ENTITYX1,r_0002_0002__man)
       &amp; genv(ENTITYX1) = r_0002_0001__Our
       &amp; r_0002_0003__in(ENTITYX1) = r_0002_0004__Paris
-      &amp; isA(QUANTX3,r_0002_0006__quantificational__no)
+      &amp; isA(QUANTX3,r_0002_0006__quantificational__r_0002_0006__no)
       &amp; restriction(QUANTX3) = ENTITYX2
-      &amp; isA(ENTITYX2,r_0002_0007__1_aide)
+      &amp; isA(ENTITYX2,r_0002_0007__1__r_0002_0008__aide)
       &amp; r_0002_0009__to(ENTITYX2) = r_0002_0010__Heath
       &amp; scope(QUANTX3) = EVENTX4
       &amp; isA(EVENTX4,r_0002_0005__is)

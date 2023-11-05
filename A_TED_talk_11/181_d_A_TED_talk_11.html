@@ -161,7 +161,7 @@ Al Gore spoke the other night about ecology and the revolution that was triggere
 </svg>
 <br>
 <pre>
-arc(r_0249_0003__spoke,r_0249_0001__Al_Gore,arg0).
+arc(r_0249_0003__spoke,r_0249_0001__Al__r_0249_0002__Gore,arg0).
 arc(r_0249_0003__spoke,r_0249_0006__night,tmp).
 arc(r_0249_0003__spoke,r_0249_0009__and,r_0249_0007__about_rst).
 arc(r_0249_0006__night,r_0249_0005__other,attrib2).
@@ -169,16 +169,16 @@ arc(r_0249_0009__and,r_0249_0008__ecology,conj1).
 arc(r_0249_0009__and,r_0249_0011__revolution,conj2).
 arc(r_0249_0013__was,r_0249_0014__triggered,catenative).
 arc(r_0249_0014__triggered,r_0249_0011__revolution,arg1).
-arc(r_0249_0014__triggered,r_0249_0016__Rachel_Carson,arg0_by_lgs).
+arc(r_0249_0014__triggered,r_0249_0016__Rachel__r_0249_0017__Carson,arg0_r_0249_0015__by_lgs).
 
 </pre>
 <br>
 <pre>
-fof(id_249_A_TED_talk_11,axiom,
+fof(id__249_A_TED_talk_11,axiom,
     ? [CATENATIVEX6,EVENTX9,EVENTX8,EVENTX7,ENTITYX1,ENTITYX3,ENTITYX4,ENTITYX5,ATTRIBX2] :
       ( CATENATIVEX6 = EVENTX7
       &amp; isA(EVENTX7,r_0249_0014__triggered)
-      &amp; arg0_by_lgs(EVENTX7) = r_0249_0016__Rachel_Carson
+      &amp; arg0__r_0249_0015__by_lgs(EVENTX7) = r_0249_0016__Rachel_r_0249_0017__Carson
       &amp; arg1(EVENTX7) = ENTITYX5
       &amp; isA(ENTITYX1,r_0249_0006__night)
       &amp; attrib2(ENTITYX1) = ATTRIBX2
@@ -191,7 +191,7 @@ fof(id_249_A_TED_talk_11,axiom,
       &amp; isA(ENTITYX5,r_0249_0011__revolution)
       &amp; isA(ATTRIBX2,r_0249_0005__other)
       &amp; isA(EVENTX9,r_0249_0003__spoke)
-      &amp; arg0(EVENTX9) = r_0249_0001__Al_Gore
+      &amp; arg0(EVENTX9) = r_0249_0001__Al__r_0249_0002__Gore
       &amp; tmp(EVENTX9) = ENTITYX1
       &amp; r_0249_0007__about_rst(EVENTX9) = ENTITYX3 ) ).
 

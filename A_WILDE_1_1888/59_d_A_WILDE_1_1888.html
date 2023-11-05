@@ -409,45 +409,45 @@ Then he flew back and told the Prince what he had seen .
 </svg>
 <br>
 <pre>
-arc(question_0201_1006,r_0201_0011__had,scope).
-arc(r_0201_0003__flew_back,r_0201_0001__Then,tmp1).
-arc(r_0201_0003__flew_back,r_0201_0002__he,arg0).
-arc(r_0201_0005__and,r_0201_0003__flew_back,conj1).
+arc(r_0201_0003__flew__r_0201_0004__back,r_0201_0001__Then,tmp1).
+arc(r_0201_0003__flew__r_0201_0004__back,r_0201_0002__he,arg0).
+arc(r_0201_0005__and,r_0201_0003__flew__r_0201_0004__back,conj1).
 arc(r_0201_0005__and,r_0201_0006__told,conj2).
-arc(r_0201_0006__told,question_0201_1006,arg1).
 arc(r_0201_0006__told,r_0201_0001__Then,tmp1).
 arc(r_0201_0006__told,r_0201_0002__he,arg0).
 arc(r_0201_0006__told,r_0201_0008__Prince,arg2).
+arc(r_0201_0006__told,r_0201_1006__question,arg1).
 arc(r_0201_0011__had,r_0201_0012__seen,catenative).
 arc(r_0201_0012__seen,r_0201_0002__he,arg0).
 arc(r_0201_0012__seen,r_0201_0009__what,arg1).
+arc(r_0201_1006__question,r_0201_0011__had,scope).
+arc(r_0201_1016__utterance,r_0202_0003__am,part1).
 arc(r_0202_0003__am,r_0201_0008__Prince,arg0).
 arc(r_0202_0003__am,r_0202_0004__covered,prd2).
 arc(r_0202_0004__covered,r_0202_0007__gold,r_0202_0005__with).
 arc(r_0202_0007__gold,r_0202_0006__fine,attrib1).
 arc(r_0202_0010__said,r_0201_0008__Prince,arg0).
-arc(r_0202_0010__said,utterance_0201_1016,arg1).
+arc(r_0202_0010__said,r_0201_1016__utterance,arg1).
 arc(r_0203_0003__must,r_0203_0012__and,scope).
-arc(r_0203_0004__take_off,r_0201_0002__he,arg0).
-arc(r_0203_0004__take_off,r_0202_0007__gold,arg1).
-arc(r_0203_0004__take_off,r_0203_0008__leaf,mnr).
+arc(r_0203_0004__take__r_0203_0006__off,r_0201_0002__he,arg0).
+arc(r_0203_0004__take__r_0203_0006__off,r_0202_0007__gold,arg1).
+arc(r_0203_0004__take__r_0203_0006__off,r_0203_0008__leaf,mnr).
 arc(r_0203_0008__leaf,r_0203_0010__leaf,r_0203_0009__by).
-arc(r_0203_0012__and,r_0203_0004__take_off,conj1).
+arc(r_0203_0012__and,r_0203_0004__take__r_0203_0006__off,conj1).
 arc(r_0203_0012__and,r_0203_0013__give,conj2).
 arc(r_0203_0013__give,r_0201_0002__he,arg0).
 arc(r_0203_0013__give,r_0202_0007__gold,arg1).
 arc(r_0203_0013__give,z_0201_1035,r_0203_0015__to_arg2).
-arc(utterance_0201_1016,r_0202_0003__am,part1).
 arc(z_0201_1035,r_0201_0008__Prince,genv).
 arc(z_0201_1035,r_0203_0017__poor,attrib2).
 
 </pre>
 <br>
 <pre>
-fof(id_201_A_WILDE_1_1888__202_A_WILDE_1_1888__203_A_WILDE_1_1888,axiom,
+fof(id__201_A_WILDE_1_1888__202_A_WILDE_1_1888__203_A_WILDE_1_1888,axiom,
     ? [STATEX4,CATENATIVEX9,STATEX14,SWALLOWX8,PRINCEX17,PRINCEX23,SWALLOWX25,GOLDX27,GOLDX31,PRINCEX33,OPERATORX26,CONJX37,EVENTX36,EVENTX30,EVENTX24,CONJX22,EVENTX21,CONJX13,EVENTX12,OPERATORX6,EVENTX11,EVENTX10,EVENTX2,QUALITYX1,ENTITYX32,ENTITYX28,ENTITYX29,GOLDX19,PRINCEX3,ENTITYX7,ATTRIBX34,ATTRIBX18,ATTRIBX20] :
       ( STATEX4 = OPERATORX6
-      &amp; isA(OPERATORX6,question_0201_1006)
+      &amp; isA(OPERATORX6,r_0201_1006__question)
       &amp; scope(OPERATORX6) = EVENTX11
       &amp; isA(EVENTX11,r_0201_0011__had)
       &amp; catenative(EVENTX11) = CATENATIVEX9
@@ -456,7 +456,7 @@ fof(id_201_A_WILDE_1_1888__202_A_WILDE_1_1888__203_A_WILDE_1_1888,axiom,
       &amp; arg0(EVENTX10) = SWALLOWX8
       &amp; arg1(EVENTX10) = ENTITYX7
       &amp; STATEX14 = CONJX22
-      &amp; isA(CONJX22,utterance_0201_1016)
+      &amp; isA(CONJX22,r_0201_1016__utterance)
       &amp; part1(CONJX22) = EVENTX21
       &amp; isA(EVENTX21,r_0202_0003__am)
       &amp; arg0(EVENTX21) = PRINCEX17
@@ -485,7 +485,7 @@ fof(id_201_A_WILDE_1_1888__202_A_WILDE_1_1888__203_A_WILDE_1_1888,axiom,
       &amp; isA(ATTRIBX34,r_0203_0017__poor)
       &amp; isA(CONJX13,r_0201_0005__and)
       &amp; conj1(CONJX13) = EVENTX2
-      &amp; isA(EVENTX2,r_0201_0003__flew_back)
+      &amp; isA(EVENTX2,r_0201_0003__flew__r_0201_0004__back)
       &amp; tmp1(EVENTX2) = QUALITYX1
       &amp; arg0(EVENTX2) = r_0201_0002__he
       &amp; conj2(CONJX13) = EVENTX12
@@ -501,7 +501,7 @@ fof(id_201_A_WILDE_1_1888__202_A_WILDE_1_1888__203_A_WILDE_1_1888,axiom,
       &amp; scope(OPERATORX26) = CONJX37
       &amp; isA(CONJX37,r_0203_0012__and)
       &amp; conj1(CONJX37) = EVENTX30
-      &amp; isA(EVENTX30,r_0203_0004__take_off)
+      &amp; isA(EVENTX30,r_0203_0004__take__r_0203_0006__off)
       &amp; arg0(EVENTX30) = SWALLOWX25
       &amp; arg1(EVENTX30) = GOLDX27
       &amp; mnr(EVENTX30) = ENTITYX28

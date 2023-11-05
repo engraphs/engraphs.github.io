@@ -70,7 +70,7 @@
 <title>0083_0004&#45;&gt;0083_0006</title>
 <path fill="none" stroke="black" d="M103.3,-173.8C103.3,-162.16 103.3,-146.55 103.3,-133.24"/>
 <polygon fill="black" stroke="black" points="106.8,-133.18 103.3,-123.18 99.8,-133.18 106.8,-133.18"/>
-<text text-anchor="middle" x="118.8" y="-144.8" font-family="fixed" font-size="14.00">[loc]</text>
+<text text-anchor="middle" x="139.8" y="-144.8" font-family="fixed" font-size="14.00">[prd2][loc]</text>
 </g>
 <!-- z_0083_1006 -->
 <g id="node5" class="node">
@@ -81,9 +81,9 @@
 <!-- 0083_0004&#45;&gt;z_0083_1006 -->
 <g id="edge3" class="edge">
 <title>0083_0004&#45;&gt;z_0083_1006</title>
-<path fill="none" stroke="black" d="M119.86,-177.72C136.27,-164.56 161.7,-144.17 181.26,-128.49"/>
-<polygon fill="black" stroke="black" points="183.62,-131.07 189.24,-122.09 179.24,-125.61 183.62,-131.07"/>
-<text text-anchor="middle" x="192.3" y="-144.8" font-family="fixed" font-size="14.00">for[tmp]</text>
+<path fill="none" stroke="black" d="M127.72,-184.22C144.08,-178.71 165.28,-169.6 180.3,-156 187.54,-149.44 193.47,-140.64 198.03,-132.25"/>
+<polygon fill="black" stroke="black" points="201.27,-133.6 202.61,-123.09 195.01,-130.48 201.27,-133.6"/>
+<text text-anchor="middle" x="221.3" y="-144.8" font-family="fixed" font-size="14.00">for[tmp]</text>
 </g>
 <!-- z_0083_1006&#45;&gt;0083_0002 -->
 <g id="edge5" class="edge">
@@ -109,26 +109,26 @@
 </svg>
 <br>
 <pre>
-arc(question_0083_1002,r_0083_0004__are,scope).
 arc(r_0083_0004__are,r_0083_0005__you,arg0).
-arc(r_0083_0004__are,r_0083_0006__here,loc3).
+arc(r_0083_0004__are,r_0083_0006__here,prd2_loc3).
 arc(r_0083_0004__are,z_0083_1006,r_0083_0007__for_tmp).
+arc(r_0083_1002__question,r_0083_0004__are,scope).
 arc(z_0083_1006,r_0083_0002__How,quality1).
 
 </pre>
 <br>
 <pre>
-fof(id_83_A_LooseChange,axiom,
+fof(id__83_A_LooseChange,axiom,
     ? [OPERATORX2,EVENTX7,QUALITYX3,QUALITYX4,QUALITYX5] :
       ( isA(QUALITYX3,r_0083_0006__here)
       &amp; isA(QUALITYX4,z_0083_1006)
       &amp; quality1(QUALITYX4) = QUALITYX5
       &amp; isA(QUALITYX5,r_0083_0002__How)
-      &amp; isA(OPERATORX2,question_0083_1002)
+      &amp; isA(OPERATORX2,r_0083_1002__question)
       &amp; scope(OPERATORX2) = EVENTX7
       &amp; isA(EVENTX7,r_0083_0004__are)
       &amp; arg0(EVENTX7) = r_0083_0005__you
-      &amp; loc3(EVENTX7) = QUALITYX3
+      &amp; prd2_loc3(EVENTX7) = QUALITYX3
       &amp; r_0083_0007__for_tmp(EVENTX7) = QUALITYX4 ) ).
 
 
@@ -153,9 +153,9 @@ fof(id_83_A_LooseChange,axiom,
 <line x1="300.48" y1="244" x2="300.48" y2="275" style="stroke:#000000;stroke-width:2;"/>
 <line x1="240.96" y1="183" x2="300" y2="214" style="stroke:#000000;stroke-width:2;"/>
 <line x1="540.72" y1="122" x2="240" y2="153" style="stroke:#000000;stroke-width:2;"/>
-<text x="420.36" y="173" text-anchor="middle">BEP</text>
-<text x="420.36" y="234" text-anchor="middle">are</text>
-<line x1="420.36" y1="183" x2="420.36" y2="214" style="stroke:#000000;stroke-width:2;"/>
+<text x="420.84" y="173" text-anchor="middle">BEP;~La</text>
+<text x="420.84" y="234" text-anchor="middle">are</text>
+<line x1="420.84" y1="183" x2="420.84" y2="214" style="stroke:#000000;stroke-width:2;"/>
 <line x1="540.72" y1="122" x2="420" y2="153" style="stroke:#000000;stroke-width:2;"/>
 <text x="540.72" y="173" text-anchor="middle">NP-SBJ</text>
 <text x="540.36" y="234" text-anchor="middle">PRO</text>
@@ -163,11 +163,11 @@ fof(id_83_A_LooseChange,axiom,
 <line x1="540.36" y1="244" x2="540.36" y2="275" style="stroke:#000000;stroke-width:2;"/>
 <line x1="540.72" y1="183" x2="540" y2="214" style="stroke:#000000;stroke-width:2;"/>
 <line x1="540.72" y1="122" x2="540" y2="153" style="stroke:#000000;stroke-width:2;"/>
-<text x="660.96" y="173" text-anchor="middle">ADVP-LOC</text>
+<text x="661.56" y="173" text-anchor="middle">ADVP-PRD2-LOC</text>
 <text x="660.48" y="234" text-anchor="middle">ADV</text>
 <text x="660.48" y="295" text-anchor="middle">here</text>
 <line x1="660.48" y1="244" x2="660.48" y2="275" style="stroke:#000000;stroke-width:2;"/>
-<line x1="660.96" y1="183" x2="660" y2="214" style="stroke:#000000;stroke-width:2;"/>
+<line x1="661.56" y1="183" x2="660" y2="214" style="stroke:#000000;stroke-width:2;"/>
 <line x1="540.72" y1="122" x2="660" y2="153" style="stroke:#000000;stroke-width:2;"/>
 <text x="840.72" y="173" text-anchor="middle">PP-TMP</text>
 <text x="780.72" y="234" text-anchor="middle">P-ROLE</text>
@@ -194,9 +194,9 @@ fof(id_83_A_LooseChange,axiom,
 ( (CP-QUE (PULQ &lt;lquo&gt;)
           (IP-SUB (ADJP-132 (ADVP (WADV How;{how}))
                             (ADJ long;{long}))
-                  (BEP are;{be})
+                  (BEP;~La are;{be})
                   (NP-SBJ (PRO you;{you}))
-                  (ADVP-LOC (ADV here;{here}))
+                  (ADVP-PRD2-LOC (ADV here;{here}))
                   (PP-TMP (P-ROLE for;{for})
                           (ADVP *ICH*-132)))
           (PUNC ?)

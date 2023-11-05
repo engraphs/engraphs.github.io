@@ -307,24 +307,24 @@ arc(r_0086_0011__horde,r_0086_0017__and,r_0086_0012__of).
 arc(r_0086_0016__family,r_0086_0014__farmer,genv).
 arc(r_0086_0017__and,r_0086_0016__family,conj1).
 arc(r_0086_0017__and,r_0086_0020__workpeople,conj2).
-arc(r_0086_0018__quantificational__all,r_0086_0017__and,scope).
-arc(r_0086_0018__quantificational__all,r_0086_0020__workpeople,restriction).
+arc(r_0086_0018__quantificational__r_0086_0018__all,r_0086_0017__and,scope).
+arc(r_0086_0018__quantificational__r_0086_0018__all,r_0086_0020__workpeople,restriction).
 arc(r_0086_0020__workpeople,r_0086_0014__farmer,genv).
 arc(r_0086_0021__hastened,r_0086_0011__horde,arg0).
 arc(r_0086_0021__hastened,r_0086_0023__remove,arg1).
 arc(r_0086_0023__remove,r_0086_0011__horde,arg0).
-arc(r_0086_0023__remove,r_0086_0024__not_only_but,arg1).
-arc(r_0086_0024__not_only_but,r_0086_0027__cattle,conj1).
-arc(r_0086_0024__not_only_but,r_0086_0030__trace,conj2).
-arc(r_0086_0029__quantificational__every,r_0086_0024__not_only_but,scope).
-arc(r_0086_0029__quantificational__every,r_0086_0030__trace,restriction).
+arc(r_0086_0023__remove,r_0086_0024__not__r_0086_0025__only_r_0086_0028__but,arg1).
+arc(r_0086_0024__not__r_0086_0025__only_r_0086_0028__but,r_0086_0027__cattle,conj1).
+arc(r_0086_0024__not__r_0086_0025__only_r_0086_0028__but,r_0086_0030__trace,conj2).
+arc(r_0086_0029__quantificational__r_0086_0029__every,r_0086_0024__not__r_0086_0025__only_r_0086_0028__but,scope).
+arc(r_0086_0029__quantificational__r_0086_0029__every,r_0086_0030__trace,restriction).
 arc(r_0086_0030__trace,r_0086_0033__presence,r_0086_0031__of).
 arc(r_0086_0033__presence,r_0086_0032__their,genv).
 
 </pre>
 <br>
 <pre>
-fof(id_86_A_lob_N01,axiom,
+fof(id__86_A_lob_N01,axiom,
     ? [STATEX13,FARMERX12,CATTLEX19,EVENTX21,EVENTX20,QUANTX17,QUANTX11,EVENTX5,ENTITYX6,ENTITYX14,CATTLEX15,ENTITYX16,ENTITYX18,ENTITYX7,ENTITYX8,ENTITYX10,FARMERX9,ENTITYX1,ENTITYX2,ATTRIBX3,QUALITYX4] :
       ( STATEX13 = EVENTX20
       &amp; isA(EVENTX20,r_0086_0023__remove)
@@ -334,7 +334,7 @@ fof(id_86_A_lob_N01,axiom,
       &amp; isA(ENTITYX2,r_0086_0005__strip)
       &amp; isA(ENTITYX6,r_0086_0011__horde)
       &amp; r_0086_0012__of(ENTITYX6) = ENTITYX7
-      &amp; isA(QUANTX11,r_0086_0018__quantificational__all)
+      &amp; isA(QUANTX11,r_0086_0018__quantificational__r_0086_0018__all)
       &amp; restriction(QUANTX11) = ENTITYX10
       &amp; isA(ENTITYX10,r_0086_0020__workpeople)
       &amp; genv(ENTITYX10) = FARMERX12
@@ -346,12 +346,12 @@ fof(id_86_A_lob_N01,axiom,
       &amp; genv(ENTITYX8) = FARMERX9
       &amp; isA(FARMERX9,r_0086_0014__farmer)
       &amp; FARMERX12 = FARMERX9
-      &amp; isA(QUANTX17,r_0086_0029__quantificational__every)
+      &amp; isA(QUANTX17,r_0086_0029__quantificational__r_0086_0029__every)
       &amp; restriction(QUANTX17) = ENTITYX16
       &amp; isA(ENTITYX16,r_0086_0030__trace)
       &amp; r_0086_0031__of(ENTITYX16) = ENTITYX18
       &amp; scope(QUANTX17) = ENTITYX14
-      &amp; isA(ENTITYX14,r_0086_0024__not_only_but)
+      &amp; isA(ENTITYX14,r_0086_0024__not__r_0086_0025__only_r_0086_0028__but)
       &amp; conj1(ENTITYX14) = CATTLEX15
       &amp; conj2(ENTITYX14) = ENTITYX16
       &amp; isA(CATTLEX15,r_0086_0027__cattle)

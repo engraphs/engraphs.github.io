@@ -546,19 +546,12 @@ Write your letter .
 </svg>
 <br>
 <pre>
-arc(cnt_0031_1003,r_0031_0005__written,scope).
-arc(cnt_0031_1003,r_0031_0007__ask,restriction).
-arc(cnt_0031_1035,r_0032_0001__Write,scope).
-arc(cnt_0031_1035,r_0032_0008__giving,restriction).
-arc(imperative_0031_1028,cnt_0031_1035,scope).
-arc(imperative_0031_1056,r_0033_0001__Write,scope).
-arc(question_0031_1008,r_0031_0015__would,scope).
-arc(r_0031_0002__pen_friend,r_0031_0001__Your,genv).
-arc(r_0031_0004__has,cnt_0031_1003,catenative).
-arc(r_0031_0005__written,r_0031_0002__pen_friend,arg0).
-arc(r_0031_0007__ask,question_0031_1008,arg1).
+arc(r_0031_0002__pen__r_0031_0003__friend,r_0031_0001__Your,genv).
+arc(r_0031_0004__has,r_0031_1003__cnt,catenative).
+arc(r_0031_0005__written,r_0031_0002__pen__r_0031_0003__friend,arg0).
 arc(r_0031_0007__ask,r_0031_0001__Your,arg2).
-arc(r_0031_0007__ask,r_0031_0002__pen_friend,arg0).
+arc(r_0031_0007__ask,r_0031_0002__pen__r_0031_0003__friend,arg0).
+arc(r_0031_0007__ask,r_0031_1008__question,arg1).
 arc(r_0031_0013__have,r_0031_0014__read,catenative).
 arc(r_0031_0014__read,r_0031_0001__Your,arg0).
 arc(r_0031_0014__read,r_0031_0011__book,arg1).
@@ -567,13 +560,20 @@ arc(r_0031_0016__be,r_0031_0011__book,arg0).
 arc(r_0031_0016__be,r_0031_0019__present,prd2).
 arc(r_0031_0019__present,r_0031_0018__suitable,attrib2).
 arc(r_0031_0019__present,r_0031_0025__birthday,r_0031_0020__for).
-arc(r_0031_0022__cousin,r_0031_0002__pen_friend,genv).
+arc(r_0031_0022__cousin,r_0031_0002__pen__r_0031_0003__friend,genv).
 arc(r_0031_0025__birthday,r_0031_0022__cousin,genv).
 arc(r_0031_0025__birthday,r_0031_0024__fifteenth,attrib2).
+arc(r_0031_1003__cnt,r_0031_0005__written,scope).
+arc(r_0031_1003__cnt,r_0031_0007__ask,restriction).
+arc(r_0031_1008__question,r_0031_0015__would,scope).
+arc(r_0031_1028__imperative,r_0031_1035__cnt,scope).
+arc(r_0031_1035__cnt,r_0032_0001__Write,scope).
+arc(r_0031_1035__cnt,r_0032_0008__giving,restriction).
+arc(r_0031_1056__imperative,r_0033_0001__Write,scope).
 arc(r_0032_0001__Write,r_0032_0003__letter,arg1).
-arc(r_0032_0001__Write,r_0032_0006__pen_friend,r_0032_0004__to_arg2).
-arc(r_0032_0006__pen_friend,r_0031_0001__Your,genv).
-arc(r_0032_0006__pen_friend,r_0031_0002__pen_friend,z_0031_1032).
+arc(r_0032_0001__Write,r_0032_0006__pen__r_0032_0007__friend,r_0032_0004__to_arg2).
+arc(r_0032_0006__pen__r_0032_0007__friend,r_0031_0001__Your,genv).
+arc(r_0032_0006__pen__r_0032_0007__friend,r_0031_0002__pen_r_0031_0003__friend,z_0031_1032).
 arc(r_0032_0008__giving,r_0032_0010__opinion,arg1).
 arc(r_0032_0008__giving,r_0032_0012__reference,r_0032_0011__with_mnr).
 arc(r_0032_0010__opinion,r_0031_0001__Your,genv).
@@ -592,10 +592,10 @@ arc(r_0033_0003__letter,r_0032_0003__letter,z_0031_1059).
 </pre>
 <br>
 <pre>
-fof(id_31_A_fce_0100_2000_12__32_A_fce_0100_2000_12__33_A_fce_0100_2000_12,axiom,
+fof(id__31_A_fce_0100_2000_12__32_A_fce_0100_2000_12__33_A_fce_0100_2000_12,axiom,
     ? [CATENATIVEX2,STATEX6,CATENATIVEX11,CATENATIVEX45,HEARERX5,HEARERX10,FRIENDX18,FRIENDX33,HEARERX34,HEARERX38,BOOKX43,HEARERX44,LETTERX60,HEARERX61,OPERATORX56,EVENTX62,OPERATORX28,CONNX36,EVENTX51,EVENTX47,EVENTX46,EVENTX52,EVENTX24,CONNX4,EVENTX22,OPERATORX8,OPERATORX20,EVENTX21,EVENTX13,EVENTX12,EVENTX23,ENTITYX57,LETTERX29,ENTITYX30,ENTITYX37,ENTITYX39,ENTITYX40,ENTITYX48,ENTITYX49,FRIENDX1,BOOKX9,ENTITYX14,ENTITYX16,ENTITYX17,ATTRIBX50,ATTRIBX15,ATTRIBX19] :
       ( CATENATIVEX2 = CONNX4
-      &amp; isA(CONNX4,cnt_0031_1003)
+      &amp; isA(CONNX4,r_0031_1003__cnt)
       &amp; scope(CONNX4) = EVENTX23
       &amp; isA(EVENTX23,r_0031_0005__written)
       &amp; arg0(EVENTX23) = FRIENDX1
@@ -605,7 +605,7 @@ fof(id_31_A_fce_0100_2000_12__32_A_fce_0100_2000_12__33_A_fce_0100_2000_12,axiom
       &amp; arg2(EVENTX22) = HEARERX5
       &amp; arg1(EVENTX22) = STATEX6
       &amp; STATEX6 = OPERATORX8
-      &amp; isA(OPERATORX8,question_0031_1008)
+      &amp; isA(OPERATORX8,r_0031_1008__question)
       &amp; scope(OPERATORX8) = OPERATORX20
       &amp; isA(OPERATORX20,r_0031_0015__would)
       &amp; scope(OPERATORX20) = EVENTX21
@@ -620,7 +620,7 @@ fof(id_31_A_fce_0100_2000_12__32_A_fce_0100_2000_12__33_A_fce_0100_2000_12,axiom
       &amp; isA(EVENTX46,r_0032_0021__read)
       &amp; arg0(EVENTX46) = HEARERX44
       &amp; arg1(EVENTX46) = ENTITYX40
-      &amp; isA(FRIENDX1,r_0031_0002__pen_friend)
+      &amp; isA(FRIENDX1,r_0031_0002__pen__r_0031_0003__friend)
       &amp; genv(FRIENDX1) = r_0031_0001__Your
       &amp; HEARERX5 = r_0031_0001__Your
       &amp; isA(EVENTX13,r_0031_0013__have)
@@ -638,7 +638,7 @@ fof(id_31_A_fce_0100_2000_12__32_A_fce_0100_2000_12__33_A_fce_0100_2000_12,axiom
       &amp; genv(ENTITYX17) = FRIENDX18
       &amp; FRIENDX18 = FRIENDX1
       &amp; isA(LETTERX29,r_0032_0003__letter)
-      &amp; isA(ENTITYX30,r_0032_0006__pen_friend)
+      &amp; isA(ENTITYX30,r_0032_0006__pen__r_0032_0007__friend)
       &amp; z_0031_1032(ENTITYX30) = FRIENDX33
       &amp; genv(ENTITYX30) = HEARERX34
       &amp; FRIENDX33 = FRIENDX1
@@ -669,9 +669,9 @@ fof(id_31_A_fce_0100_2000_12__32_A_fce_0100_2000_12__33_A_fce_0100_2000_12,axiom
       &amp; isA(ATTRIBX50,r_0032_0017__short)
       &amp; isA(EVENTX24,r_0031_0004__has)
       &amp; catenative(EVENTX24) = CATENATIVEX2
-      &amp; isA(OPERATORX28,imperative_0031_1028)
+      &amp; isA(OPERATORX28,r_0031_1028__imperative)
       &amp; scope(OPERATORX28) = CONNX36
-      &amp; isA(CONNX36,cnt_0031_1035)
+      &amp; isA(CONNX36,r_0031_1035__cnt)
       &amp; scope(CONNX36) = EVENTX52
       &amp; isA(EVENTX52,r_0032_0001__Write)
       &amp; arg1(EVENTX52) = LETTERX29
@@ -680,7 +680,7 @@ fof(id_31_A_fce_0100_2000_12__32_A_fce_0100_2000_12__33_A_fce_0100_2000_12,axiom
       &amp; isA(EVENTX51,r_0032_0008__giving)
       &amp; arg1(EVENTX51) = ENTITYX37
       &amp; r_0032_0011__with_mnr(EVENTX51) = ENTITYX39
-      &amp; isA(OPERATORX56,imperative_0031_1056)
+      &amp; isA(OPERATORX56,r_0031_1056__imperative)
       &amp; scope(OPERATORX56) = EVENTX62
       &amp; isA(EVENTX62,r_0033_0001__Write)
       &amp; arg1(EVENTX62) = ENTITYX57 ) ).

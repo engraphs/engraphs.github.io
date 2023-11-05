@@ -358,24 +358,20 @@ In 1770 , Russia came to aid the Greeks ( defined by their Orthodox religion rat
 </svg>
 <br>
 <pre>
-arc(cnt_0100_1002,cnt_0100_1017,scope).
-arc(cnt_0100_1002,r_0100_0007__aid,restriction).
-arc(cnt_0100_1017,r_0100_0005__came,scope).
-arc(cnt_0100_1017,r_0100_0030__and,restriction).
 arc(r_0100_0005__came,r_0100_0002__1770,r_0100_0001__In_tmp).
 arc(r_0100_0005__came,r_0100_0004__Russia,arg0).
 arc(r_0100_0007__aid,r_0100_0004__Russia,arg0).
 arc(r_0100_0007__aid,r_0100_0009__Greeks,arg1).
 arc(r_0100_0011__defined,r_0100_0009__Greeks,arg1).
-arc(r_0100_0011__defined,r_0100_0014__Orthodox_religion,arg0_by_lgs).
+arc(r_0100_0011__defined,r_0100_0014__Orthodox__r_0100_0015__religion,arg0_r_0100_0012__by_lgs).
 arc(r_0100_0011__defined,r_0100_0016__rather,mod3).
-arc(r_0100_0014__Orthodox_religion,r_0100_0009__Greeks,genv).
+arc(r_0100_0014__Orthodox__r_0100_0015__religion,r_0100_0009__Greeks,genv).
 arc(r_0100_0016__rather,z_0100_1013,r_0100_0017__than).
 arc(r_0100_0021__boundaries,r_0100_0019__historical,attrib1).
 arc(r_0100_0021__boundaries,r_0100_0020__geographical,attrib2).
 arc(r_0100_0024__declaring,r_0100_0004__Russia,arg0).
 arc(r_0100_0024__declaring,r_0100_0025__war,arg1).
-arc(r_0100_0025__war,r_0100_0028__Ottoman_Empire,r_0100_0026__on).
+arc(r_0100_0025__war,r_0100_0028__Ottoman__r_0100_0029__Empire,r_0100_0026__on).
 arc(r_0100_0030__and,r_0100_0024__declaring,conj1).
 arc(r_0100_0030__and,r_0100_0031__occupying,conj2).
 arc(r_0100_0031__occupying,r_0100_0004__Russia,arg0).
@@ -383,32 +379,36 @@ arc(r_0100_0031__occupying,r_0100_0034__islands,arg1).
 arc(r_0100_0031__occupying,r_0100_0036__1774,r_0100_0035__until_tmp).
 arc(r_0100_0034__islands,r_0100_0032__several,attrib1).
 arc(r_0100_0034__islands,r_0100_0033__Aegean,attrib2).
+arc(r_0100_1002__cnt,r_0100_0007__aid,restriction).
+arc(r_0100_1002__cnt,r_0100_1017__cnt,scope).
+arc(r_0100_1017__cnt,r_0100_0005__came,scope).
+arc(r_0100_1017__cnt,r_0100_0030__and,restriction).
 arc(z_0100_1013,r_0100_0021__boundaries,r_0100_0018__by).
 
 </pre>
 <br>
 <pre>
-fof(id_100_A_ANC_HistoryOfGreece,axiom,
+fof(id__100_A_ANC_HistoryOfGreece,axiom,
     ? [EVENTX7,GREEKSX5,CONNX3,EVENTX16,EVENTX15,EVENTX14,CONNX18,CONJX26,EVENTX25,EVENTX20,EVENTX27,ENTITYX1,ENTITYX4,ENTITYX10,ENTITYX21,ENTITYX24,ENTITYX19,QUALITYX6,ATTRIBX11,ATTRIBX12,ATTRIBX22,ATTRIBX23] :
       ( EVENTX7 = EVENTX14
       &amp; isA(EVENTX14,z_0100_1013)
       &amp; r_0100_0018__by(EVENTX14) = ENTITYX10
       &amp; isA(ENTITYX1,r_0100_0002__1770)
       &amp; isA(ENTITYX19,r_0100_0025__war)
-      &amp; r_0100_0026__on(ENTITYX19) = r_0100_0028__Ottoman_Empire
+      &amp; r_0100_0026__on(ENTITYX19) = r_0100_0028__Ottoman__r_0100_0029__Empire
       &amp; isA(ENTITYX21,r_0100_0034__islands)
       &amp; attrib1(ENTITYX21) = ATTRIBX22
       &amp; attrib2(ENTITYX21) = ATTRIBX23
       &amp; isA(ENTITYX24,r_0100_0036__1774)
-      &amp; isA(ENTITYX4,r_0100_0014__Orthodox_religion)
+      &amp; isA(ENTITYX4,r_0100_0014__Orthodox__r_0100_0015__religion)
       &amp; genv(ENTITYX4) = GREEKSX5
       &amp; GREEKSX5 = r_0100_0009__Greeks
       &amp; isA(ENTITYX10,r_0100_0021__boundaries)
       &amp; attrib1(ENTITYX10) = ATTRIBX11
       &amp; attrib2(ENTITYX10) = ATTRIBX12
-      &amp; isA(r_0100_0028__Ottoman_Empire,r_0100_0028__Ottoman_Empire)
+      &amp; isA(r_0100_0028__Ottoman__r_0100_0029__Empire,r_0100_0028__Ottoman_r_0100_0029__Empire)
       &amp; isA(EVENTX15,r_0100_0011__defined)
-      &amp; arg0_by_lgs(EVENTX15) = ENTITYX4
+      &amp; arg0__r_0100_0012__by_lgs(EVENTX15) = ENTITYX4
       &amp; arg1(EVENTX15) = r_0100_0009__Greeks
       &amp; mod3(EVENTX15) = QUALITYX6
       &amp; isA(r_0100_0009__Greeks,r_0100_0009__Greeks)
@@ -418,9 +418,9 @@ fof(id_100_A_ANC_HistoryOfGreece,axiom,
       &amp; isA(ATTRIBX23,r_0100_0033__Aegean)
       &amp; isA(ATTRIBX11,r_0100_0019__historical)
       &amp; isA(ATTRIBX12,r_0100_0020__geographical)
-      &amp; isA(CONNX3,cnt_0100_1002)
+      &amp; isA(CONNX3,r_0100_1002__cnt)
       &amp; scope(CONNX3) = CONNX18
-      &amp; isA(CONNX18,cnt_0100_1017)
+      &amp; isA(CONNX18,r_0100_1017__cnt)
       &amp; scope(CONNX18) = EVENTX27
       &amp; isA(EVENTX27,r_0100_0005__came)
       &amp; r_0100_0001__In_tmp(EVENTX27) = ENTITYX1

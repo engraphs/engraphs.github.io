@@ -232,8 +232,6 @@ After a moment a red warning light flashed on down inside its destroyed works .
 </svg>
 <br>
 <pre>
-arc(mnr_0608_1005,r_0608_0007__throbbed,scope).
-arc(mnr_0608_1005,r_0608_0010__straining,restriction).
 arc(r_0608_0002__base,r_0608_0006__gun,r_0608_0003__of).
 arc(r_0608_0006__gun,r_0608_0005__great,attrib2).
 arc(r_0608_0007__throbbed,r_0608_0002__base,arg0).
@@ -241,17 +239,19 @@ arc(r_0608_0007__throbbed,r_0608_0008__painfully,mnr3).
 arc(r_0608_0010__straining,r_0608_0002__base,arg0).
 arc(r_0608_0010__straining,r_0608_0012__turn,arg1).
 arc(r_0608_0012__turn,r_0608_0002__base,arg0).
-arc(r_0609_0006__warning_light,r_0609_0005__red,attrib2).
-arc(r_0609_0008__flashed_on,r_0609_0003__moment,r_0609_0001__After_tmp).
-arc(r_0609_0008__flashed_on,r_0609_0006__warning_light,arg0).
-arc(r_0609_0008__flashed_on,r_0609_0014__works,r_0609_0011__inside_loc).
+arc(r_0608_1005__mnr,r_0608_0007__throbbed,scope).
+arc(r_0608_1005__mnr,r_0608_0010__straining,restriction).
+arc(r_0609_0006__warning__r_0609_0007__light,r_0609_0005__red,attrib2).
+arc(r_0609_0008__flashed__r_0609_0009__on,r_0609_0003__moment,r_0609_0001__After_tmp).
+arc(r_0609_0008__flashed__r_0609_0009__on,r_0609_0006__warning_r_0609_0007__light,arg0).
+arc(r_0609_0008__flashed__r_0609_0009__on,r_0609_0014__works,r_0609_0011__inside_loc).
 arc(r_0609_0014__works,r_0608_0006__gun,genv).
 arc(r_0609_0014__works,r_0609_0013__destroyed,attrib2).
 
 </pre>
 <br>
 <pre>
-fof(id_608_A_DICK_1952__609_A_DICK_1952,axiom,
+fof(id__608_A_DICK_1952__609_A_DICK_1952,axiom,
     ? [STATEX7,GUNX15,EVENTX17,CONNX6,EVENTX9,EVENTX8,EVENTX10,ENTITYX11,ENTITYX12,ENTITYX14,ENTITYX1,GUNX2,ATTRIBX16,ATTRIBX13,ATTRIBX3,QUALITYX4] :
       ( STATEX7 = EVENTX8
       &amp; isA(EVENTX8,r_0608_0012__turn)
@@ -261,7 +261,7 @@ fof(id_608_A_DICK_1952__609_A_DICK_1952,axiom,
       &amp; isA(GUNX2,r_0608_0006__gun)
       &amp; attrib2(GUNX2) = ATTRIBX3
       &amp; isA(ENTITYX11,r_0609_0003__moment)
-      &amp; isA(ENTITYX12,r_0609_0006__warning_light)
+      &amp; isA(ENTITYX12,r_0609_0006__warning__r_0609_0007__light)
       &amp; attrib2(ENTITYX12) = ATTRIBX13
       &amp; isA(ENTITYX14,r_0609_0014__works)
       &amp; genv(ENTITYX14) = GUNX15
@@ -271,7 +271,7 @@ fof(id_608_A_DICK_1952__609_A_DICK_1952,axiom,
       &amp; isA(ATTRIBX13,r_0609_0005__red)
       &amp; isA(ATTRIBX16,r_0609_0013__destroyed)
       &amp; isA(QUALITYX4,r_0608_0008__painfully)
-      &amp; isA(CONNX6,mnr_0608_1005)
+      &amp; isA(CONNX6,r_0608_1005__mnr)
       &amp; scope(CONNX6) = EVENTX10
       &amp; isA(EVENTX10,r_0608_0007__throbbed)
       &amp; arg0(EVENTX10) = ENTITYX1
@@ -280,7 +280,7 @@ fof(id_608_A_DICK_1952__609_A_DICK_1952,axiom,
       &amp; isA(EVENTX9,r_0608_0010__straining)
       &amp; arg0(EVENTX9) = ENTITYX1
       &amp; arg1(EVENTX9) = STATEX7
-      &amp; isA(EVENTX17,r_0609_0008__flashed_on)
+      &amp; isA(EVENTX17,r_0609_0008__flashed__r_0609_0009__on)
       &amp; r_0609_0001__After_tmp(EVENTX17) = ENTITYX11
       &amp; arg0(EVENTX17) = ENTITYX12
       &amp; r_0609_0011__inside_loc(EVENTX17) = ENTITYX14 ) ).

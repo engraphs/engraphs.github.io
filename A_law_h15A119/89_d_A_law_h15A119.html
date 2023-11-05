@@ -522,20 +522,20 @@ arc(r_0089_0012__is,r_0089_0013__necessary,prd2).
 arc(r_0089_0013__necessary,r_0089_0015__cooperating,r_0089_0014__for).
 arc(r_0089_0015__cooperating,r_0089_0025__or,r_0089_0016__with_com).
 arc(r_0089_0023__government,r_0089_0022__local,attrib2).
-arc(r_0089_0025__or,r_0089_0018__state_organ,conj1).
+arc(r_0089_0025__or,r_0089_0018__state__r_0089_0019__organ,conj1).
 arc(r_0089_0025__or,r_0089_0023__government,conj2).
 arc(r_0089_0025__or,r_0089_0028__or,conj3).
 arc(r_0089_0028__or,r_0089_0027__individual,conj1).
-arc(r_0089_0028__or,r_0089_0030__business_operator,conj2).
+arc(r_0089_0028__or,r_0089_0030__business__r_0089_0031__operator,conj2).
 arc(r_0089_0032__entrusted,r_0089_0028__or,arg1).
 arc(r_0089_0032__entrusted,r_0089_0040__executing,r_0089_0039__in_clr).
-arc(r_0089_0032__entrusted,z_0089_1022,arg0_by_lgs).
-arc(r_0089_0034__quantificational__either,r_0089_0032__entrusted,scope).
-arc(r_0089_0034__quantificational__either,z_0089_1022,restriction).
+arc(r_0089_0032__entrusted,z_0089_1022,arg0__r_0089_0033__by_lgs).
+arc(r_0089_0034__quantificational__r_0089_0034__either,r_0089_0032__entrusted,scope).
+arc(r_0089_0034__quantificational__r_0089_0034__either,z_0089_1022,restriction).
 arc(r_0089_0038__two,r_0089_0037__former,attrib2).
 arc(r_0089_0040__executing,r_0089_0042__affairs,arg1).
 arc(r_0089_0043__prescribed,r_0089_0042__affairs,arg1).
-arc(r_0089_0043__prescribed,r_0089_0046__and,arg0_by_lgs).
+arc(r_0089_0043__prescribed,r_0089_0046__and,arg0__r_0089_0044__by_lgs).
 arc(r_0089_0046__and,r_0089_0045__laws,conj1).
 arc(r_0089_0046__and,r_0089_0047__regulations,conj2).
 arc(r_0089_0048__and,r_0089_0012__is,conj1).
@@ -555,7 +555,7 @@ arc(z_0089_1053,r_0089_0004__Cases,z_0089_1002).
 </pre>
 <br>
 <pre>
-fof(id_89_A_law_h15A119,axiom,
+fof(id__89_A_law_h15A119,axiom,
     ? [EVENTX10,EVENTX23,STATEX37,STATEX44,EVENTX54,CONJX52,EVENTX51,EVENTX50,EVENTX49,EVENTX42,EVENTX36,EVENTX35,QUANTX19,EVENTX32,EVENTX31,EVENTX30,ENTITYX3,ENTITYX47,ENTITYX48,ENTITYX40,ENTITYX41,ENTITYX6,ENTITYX13,ENTITYX14,ENTITYX15,ENTITYX17,ENTITYX33,ENTITYX34,ENTITYX18,ENTITYX26,ENTITYX27,ENTITYX28,ENTITYX29,ENTITYX20,ENTITYX7,ATTRIBX43,ATTRIBX9,ATTRIBX21,ATTRIBX16,ATTRIBX8] :
       ( EVENTX10 = EVENTX35
       &amp; isA(EVENTX35,r_0089_0015__cooperating)
@@ -591,16 +591,16 @@ fof(id_89_A_law_h15A119,axiom,
       &amp; conj1(ENTITYX13) = ENTITYX14
       &amp; conj2(ENTITYX13) = ENTITYX15
       &amp; conj3(ENTITYX13) = ENTITYX17
-      &amp; isA(ENTITYX14,r_0089_0018__state_organ)
+      &amp; isA(ENTITYX14,r_0089_0018__state__r_0089_0019__organ)
       &amp; isA(ENTITYX15,r_0089_0023__government)
       &amp; attrib2(ENTITYX15) = ATTRIBX16
-      &amp; isA(QUANTX19,r_0089_0034__quantificational__either)
+      &amp; isA(QUANTX19,r_0089_0034__quantificational__r_0089_0034__either)
       &amp; restriction(QUANTX19) = ENTITYX18
       &amp; isA(ENTITYX18,z_0089_1022)
       &amp; r_0089_0035__of(ENTITYX18) = ENTITYX20
       &amp; scope(QUANTX19) = EVENTX32
       &amp; isA(EVENTX32,r_0089_0032__entrusted)
-      &amp; arg0_by_lgs(EVENTX32) = ENTITYX18
+      &amp; arg0__r_0089_0033__by_lgs(EVENTX32) = ENTITYX18
       &amp; arg1(EVENTX32) = ENTITYX17
       &amp; r_0089_0039__in_clr(EVENTX32) = EVENTX23
       &amp; isA(ENTITYX17,r_0089_0028__or)
@@ -609,7 +609,7 @@ fof(id_89_A_law_h15A119,axiom,
       &amp; isA(ENTITYX20,r_0089_0038__two)
       &amp; attrib2(ENTITYX20) = ATTRIBX21
       &amp; isA(EVENTX30,r_0089_0043__prescribed)
-      &amp; arg0_by_lgs(EVENTX30) = ENTITYX27
+      &amp; arg0__r_0089_0044__by_lgs(EVENTX30) = ENTITYX27
       &amp; arg1(EVENTX30) = ENTITYX26
       &amp; isA(ENTITYX26,r_0089_0042__affairs)
       &amp; isA(ENTITYX27,r_0089_0046__and)
@@ -618,7 +618,7 @@ fof(id_89_A_law_h15A119,axiom,
       &amp; isA(ENTITYX28,r_0089_0045__laws)
       &amp; isA(ENTITYX29,r_0089_0047__regulations)
       &amp; isA(ENTITYX33,r_0089_0027__individual)
-      &amp; isA(ENTITYX34,r_0089_0030__business_operator)
+      &amp; isA(ENTITYX34,r_0089_0030__business__r_0089_0031__operator)
       &amp; isA(ENTITYX40,r_0089_0053__consent)
       &amp; r_0089_0054__of(ENTITYX40) = ENTITYX41
       &amp; isA(ENTITYX41,r_0089_0056__person)

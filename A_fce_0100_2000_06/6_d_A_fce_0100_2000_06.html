@@ -155,23 +155,23 @@ All accommodation and travel costs are paid for , including transport to and fro
 </svg>
 <br>
 <pre>
-arc(r_0008_0001__quantificational__All,r_0008_0005__costs,restriction).
-arc(r_0008_0001__quantificational__All,r_0008_0006__are,scope).
+arc(r_0008_0001__quantificational__r_0008_0001__All,r_0008_0005__costs,restriction).
+arc(r_0008_0001__quantificational__r_0008_0001__All,r_0008_0006__are,scope).
 arc(r_0008_0003__and,r_0008_0002__accommodation,conj1).
 arc(r_0008_0003__and,r_0008_0004__travel,conj2).
 arc(r_0008_0005__costs,r_0008_0003__and,nlyr2).
-arc(r_0008_0006__are,r_0008_0007__paid_for,catenative).
+arc(r_0008_0006__are,r_0008_0007__paid__r_0008_0008__for,catenative).
 arc(r_0008_0006__are,r_0008_0011__transport,r_0008_0010__including_abs).
-arc(r_0008_0007__paid_for,r_0008_0005__costs,arg1).
+arc(r_0008_0007__paid__r_0008_0008__for,r_0008_0005__costs,arg1).
 arc(r_0008_0011__transport,r_0008_0014__airport,r_0008_0012__to_and_from).
 
 </pre>
 <br>
 <pre>
-fof(id_8_A_fce_0100_2000_06,axiom,
+fof(id__8_A_fce_0100_2000_06,axiom,
     ? [CATENATIVEX8,QUANTX2,EVENTX11,EVENTX10,ENTITYX1,ENTITYX6,ENTITYX7,ENTITYX3,ENTITYX4,ENTITYX5] :
       ( CATENATIVEX8 = EVENTX10
-      &amp; isA(EVENTX10,r_0008_0007__paid_for)
+      &amp; isA(EVENTX10,r_0008_0007__paid__r_0008_0008__for)
       &amp; arg1(EVENTX10) = ENTITYX1
       &amp; isA(ENTITYX3,r_0008_0003__and)
       &amp; conj1(ENTITYX3) = ENTITYX4
@@ -181,7 +181,7 @@ fof(id_8_A_fce_0100_2000_06,axiom,
       &amp; isA(ENTITYX6,r_0008_0011__transport)
       &amp; r_0008_0012__to_and_from(ENTITYX6) = ENTITYX7
       &amp; isA(ENTITYX7,r_0008_0014__airport)
-      &amp; isA(QUANTX2,r_0008_0001__quantificational__All)
+      &amp; isA(QUANTX2,r_0008_0001__quantificational__r_0008_0001__All)
       &amp; restriction(QUANTX2) = ENTITYX1
       &amp; isA(ENTITYX1,r_0008_0005__costs)
       &amp; nlyr2(ENTITYX1) = ENTITYX3

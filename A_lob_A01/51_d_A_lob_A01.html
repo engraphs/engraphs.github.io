@@ -207,24 +207,24 @@ Immediately Mr Kennedy rushed a letter to Senator Robertson saying the federal b
 </svg>
 <br>
 <pre>
-arc(abs_0054_1003,r_0054_0004__rushed,scope).
-arc(abs_0054_1003,r_0054_0010__saying,restriction).
 arc(r_0054_0004__rushed,r_0054_0001__Immediately,tmp1).
-arc(r_0054_0004__rushed,r_0054_0002__Mr_Kennedy,arg0).
+arc(r_0054_0004__rushed,r_0054_0002__Mr__r_0054_0003__Kennedy,arg0).
 arc(r_0054_0004__rushed,r_0054_0006__letter,arg1).
-arc(r_0054_0006__letter,r_0054_0008__Senator_Robertson,r_0054_0007__to).
+arc(r_0054_0006__letter,r_0054_0008__Senator__r_0054_0009__Robertson,r_0054_0007__to).
 arc(r_0054_0010__saying,r_0054_0006__letter,arg0).
 arc(r_0054_0010__saying,r_0054_0016__had,arg1).
 arc(r_0054_0013__bureau,r_0054_0012__federal,attrib2).
 arc(r_0054_0013__bureau,r_0054_0015__investigation,r_0054_0014__of).
 arc(r_0054_0016__had,r_0054_0017__reported,catenative).
 arc(r_0054_0017__reported,r_0054_0013__bureau,arg0).
-arc(r_0054_0017__reported,r_0054_0019__Mr_Weaver,r_0054_0018__on_clr).
+arc(r_0054_0017__reported,r_0054_0019__Mr__r_0054_0020__Weaver,r_0054_0018__on_clr).
+arc(r_0054_1003__abs,r_0054_0004__rushed,scope).
+arc(r_0054_1003__abs,r_0054_0010__saying,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_54_A_lob_A01,axiom,
+fof(id__54_A_lob_A01,axiom,
     ? [STATEX5,CATENATIVEX9,CONNX4,EVENTX12,EVENTX11,EVENTX10,EVENTX13,QUALITYX1,ENTITYX2,ENTITYX6,ENTITYX8,ATTRIBX7] :
       ( STATEX5 = EVENTX11
       &amp; isA(EVENTX11,r_0054_0016__had)
@@ -232,20 +232,20 @@ fof(id_54_A_lob_A01,axiom,
       &amp; CATENATIVEX9 = EVENTX10
       &amp; isA(EVENTX10,r_0054_0017__reported)
       &amp; arg0(EVENTX10) = ENTITYX6
-      &amp; r_0054_0018__on_clr(EVENTX10) = r_0054_0019__Mr_Weaver
+      &amp; r_0054_0018__on_clr(EVENTX10) = r_0054_0019__Mr__r_0054_0020__Weaver
       &amp; isA(QUALITYX1,r_0054_0001__Immediately)
       &amp; isA(ENTITYX2,r_0054_0006__letter)
-      &amp; r_0054_0007__to(ENTITYX2) = r_0054_0008__Senator_Robertson
+      &amp; r_0054_0007__to(ENTITYX2) = r_0054_0008__Senator__r_0054_0009__Robertson
       &amp; isA(ENTITYX6,r_0054_0013__bureau)
       &amp; attrib2(ENTITYX6) = ATTRIBX7
       &amp; r_0054_0014__of(ENTITYX6) = ENTITYX8
       &amp; isA(ENTITYX8,r_0054_0015__investigation)
       &amp; isA(ATTRIBX7,r_0054_0012__federal)
-      &amp; isA(CONNX4,abs_0054_1003)
+      &amp; isA(CONNX4,r_0054_1003__abs)
       &amp; scope(CONNX4) = EVENTX13
       &amp; isA(EVENTX13,r_0054_0004__rushed)
       &amp; tmp1(EVENTX13) = QUALITYX1
-      &amp; arg0(EVENTX13) = r_0054_0002__Mr_Kennedy
+      &amp; arg0(EVENTX13) = r_0054_0002__Mr__r_0054_0003__Kennedy
       &amp; arg1(EVENTX13) = ENTITYX2
       &amp; restriction(CONNX4) = EVENTX12
       &amp; isA(EVENTX12,r_0054_0010__saying)

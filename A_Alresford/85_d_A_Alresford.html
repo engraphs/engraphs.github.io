@@ -356,7 +356,6 @@ I had openings for single plays , series episodes , more How We Used To Live ; a
 </svg>
 <br>
 <pre>
-arc(question_0091_1010,r_0091_0014__Used,scope).
 arc(r_0091_0002__had,r_0091_0001__I,arg0).
 arc(r_0091_0002__had,r_0091_0003__openings,arg1).
 arc(r_0091_0003__openings,z_0091_1018,r_0091_0004__for).
@@ -374,20 +373,21 @@ arc(r_0091_0029__offer,r_0091_0022__move,arg0).
 arc(r_0091_0029__offer,r_0091_0031__glimmer,arg1).
 arc(r_0091_0031__glimmer,r_0091_0034__security,r_0091_0032__of).
 arc(r_0091_0034__security,r_0091_0033__financial,attrib1).
+arc(r_0091_1010__question,r_0091_0014__Used,scope).
 arc(z_0091_1015,r_0091_0016__Live,catenative).
-arc(z_0091_1017,question_0091_1010,prn2).
 arc(z_0091_1017,r_0091_0011__more,attrib1).
+arc(z_0091_1017,r_0091_1010__question,prn2).
 arc(z_0091_1018,r_0091_0006__plays,conj1).
-arc(z_0091_1018,r_0091_0008__series_episodes,conj2).
+arc(z_0091_1018,r_0091_0008__series__r_0091_0009__episodes,conj2).
 arc(z_0091_1018,z_0091_1017,conj3).
 
 </pre>
 <br>
 <pre>
-fof(id_91_A_Alresford,axiom,
+fof(id__91_A_Alresford,axiom,
     ? [EVENTX8,STATEX11,STATEX24,CONJX30,EVENTX29,EVENTX28,EVENTX19,OPERATORX10,OPERATORX14,EVENTX16,EVENTX13,ENTITYX20,ENTITYX21,ENTITYX25,ENTITYX26,ENTITYX23,ENTITYX1,ENTITYX2,ENTITYX3,ENTITYX5,ENTITYX6,ATTRIBX27,ATTRIBX7,ATTRIBX4,QUALITYX22,QUALITYX12] :
       ( EVENTX8 = OPERATORX10
-      &amp; isA(OPERATORX10,question_0091_1010)
+      &amp; isA(OPERATORX10,r_0091_1010__question)
       &amp; scope(OPERATORX10) = OPERATORX14
       &amp; isA(OPERATORX14,r_0091_0014__Used)
       &amp; scope(OPERATORX14) = EVENTX16
@@ -409,7 +409,7 @@ fof(id_91_A_Alresford,axiom,
       &amp; conj3(ENTITYX2) = ENTITYX6
       &amp; isA(ENTITYX3,r_0091_0006__plays)
       &amp; attrib1(ENTITYX3) = ATTRIBX4
-      &amp; isA(ENTITYX5,r_0091_0008__series_episodes)
+      &amp; isA(ENTITYX5,r_0091_0008__series__r_0091_0009__episodes)
       &amp; isA(ENTITYX6,z_0091_1017)
       &amp; attrib1(ENTITYX6) = ATTRIBX7
       &amp; prn2(ENTITYX6) = EVENTX8

@@ -194,26 +194,26 @@ In your report , you should also explain why students at the school will enjoy t
 </svg>
 <br>
 <pre>
-arc(question_0020_1006,r_0020_0009__why,scope).
 arc(r_0020_0003__report,r_0020_0002__your,genv).
 arc(r_0020_0006__should,r_0020_0008__explain,scope).
 arc(r_0020_0007__also,r_0020_0006__should,scope).
-arc(r_0020_0008__explain,question_0020_1006,arg1).
 arc(r_0020_0008__explain,r_0020_0002__your,arg0).
 arc(r_0020_0008__explain,r_0020_0003__report,r_0020_0001__In_loc).
+arc(r_0020_0008__explain,r_0020_1006__question,arg1).
 arc(r_0020_0009__why,r_0020_0014__will,scope).
 arc(r_0020_0010__students,r_0020_0013__school,r_0020_0011__at).
 arc(r_0020_0014__will,r_0020_0015__enjoy,scope).
 arc(r_0020_0015__enjoy,r_0020_0010__students,arg0).
 arc(r_0020_0015__enjoy,r_0020_0017__videos,arg1).
+arc(r_0020_1006__question,r_0020_0009__why,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_20_A_fce_0102_2001_03,axiom,
+fof(id__20_A_fce_0102_2001_03,axiom,
     ? [STATEX4,HEARERX2,OPERATORX3,OPERATORX13,EVENTX14,OPERATORX6,OPERATORX7,OPERATORX11,EVENTX12,ENTITYX1,ENTITYX8,ENTITYX10,ENTITYX9] :
       ( STATEX4 = OPERATORX6
-      &amp; isA(OPERATORX6,question_0020_1006)
+      &amp; isA(OPERATORX6,r_0020_1006__question)
       &amp; scope(OPERATORX6) = OPERATORX7
       &amp; isA(OPERATORX7,r_0020_0009__why)
       &amp; scope(OPERATORX7) = OPERATORX11

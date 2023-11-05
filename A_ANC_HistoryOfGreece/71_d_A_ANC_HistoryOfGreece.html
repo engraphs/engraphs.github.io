@@ -253,9 +253,7 @@ Many had to leave their birthplaces , fleeing to Lesvos , Chios , and Samos , th
 </svg>
 <br>
 <pre>
-arc(cnt_0118_1007,r_0118_0004__leave,scope).
-arc(cnt_0118_1007,r_0118_0008__fleeing,restriction).
-arc(r_0118_0002__had,cnt_0118_1007,catenative).
+arc(r_0118_0002__had,r_0118_1007__cnt,catenative).
 arc(r_0118_0004__leave,r_0118_0006__birthplaces,arg1).
 arc(r_0118_0004__leave,z_0118_1003,arg0).
 arc(r_0118_0006__birthplaces,z_0118_1003,genv).
@@ -269,15 +267,17 @@ arc(r_0118_0020__ruled,r_0118_0018__Greek,arg0_lgs).
 arc(r_0118_0020__ruled,r_0118_0021__islands,arg1).
 arc(r_0118_0021__islands,r_0118_0023__offshore,loc4).
 arc(r_0118_0023__offshore,r_0118_0022__just,quality1).
+arc(r_0118_1007__cnt,r_0118_0004__leave,scope).
+arc(r_0118_1007__cnt,r_0118_0008__fleeing,restriction).
 arc(z_0118_1003,r_0118_0001__Many,attrib1).
 
 </pre>
 <br>
 <pre>
-fof(id_118_A_ANC_HistoryOfGreece,axiom,
+fof(id__118_A_ANC_HistoryOfGreece,axiom,
     ? [STATEX4,PERSONSX6,EVENTX16,CONNX8,EVENTX14,EVENTX11,EVENTX15,PERSONSX1,ENTITYX5,ENTITYX9,ENTITYX10,ATTRIBX2,QUALITYX12,QUALITYX13] :
       ( STATEX4 = CONNX8
-      &amp; isA(CONNX8,cnt_0118_1007)
+      &amp; isA(CONNX8,r_0118_1007__cnt)
       &amp; scope(CONNX8) = EVENTX15
       &amp; isA(EVENTX15,r_0118_0004__leave)
       &amp; arg0(EVENTX15) = PERSONSX1

@@ -122,17 +122,17 @@ Why pick on a single mother with a young son ?
 </svg>
 <br>
 <pre>
-arc(question_0143_1004,r_0143_0001__Why,scope).
 arc(r_0143_0001__Why,r_0143_0002__pick,scope).
 arc(r_0143_0002__pick,r_0143_0006__mother,r_0143_0003__on_clr).
 arc(r_0143_0006__mother,r_0143_0005__single,attrib2).
 arc(r_0143_0006__mother,r_0143_0010__son,r_0143_0007__with).
 arc(r_0143_0010__son,r_0143_0009__young,attrib2).
+arc(r_0143_1004__question,r_0143_0001__Why,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_143_A_LooseChange,axiom,
+fof(id__143_A_LooseChange,axiom,
     ? [OPERATORX4,OPERATORX5,EVENTX10,ENTITYX6,ENTITYX8,ATTRIBX7,ATTRIBX9] :
       ( isA(ENTITYX6,r_0143_0006__mother)
       &amp; attrib2(ENTITYX6) = ATTRIBX7
@@ -141,7 +141,7 @@ fof(id_143_A_LooseChange,axiom,
       &amp; attrib2(ENTITYX8) = ATTRIBX9
       &amp; isA(ATTRIBX7,r_0143_0005__single)
       &amp; isA(ATTRIBX9,r_0143_0009__young)
-      &amp; isA(OPERATORX4,question_0143_1004)
+      &amp; isA(OPERATORX4,r_0143_1004__question)
       &amp; scope(OPERATORX4) = OPERATORX5
       &amp; isA(OPERATORX5,r_0143_0001__Why)
       &amp; scope(OPERATORX5) = EVENTX10

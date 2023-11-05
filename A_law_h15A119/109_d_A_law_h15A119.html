@@ -292,11 +292,11 @@ A business operator handling personal information shall take necessary and prope
 </svg>
 <br>
 <pre>
-arc(r_0109_0004__handling,r_0109_0002__business_operator,arg0).
+arc(r_0109_0004__handling,r_0109_0002__business__r_0109_0003__operator,arg0).
 arc(r_0109_0004__handling,r_0109_0006__information,arg1).
 arc(r_0109_0006__information,r_0109_0005__personal,attrib1).
 arc(r_0109_0007__shall,r_0109_0008__take,scope).
-arc(r_0109_0008__take,r_0109_0002__business_operator,arg0).
+arc(r_0109_0008__take,r_0109_0002__business__r_0109_0003__operator,arg0).
 arc(r_0109_0008__take,r_0109_0012__measures,arg1).
 arc(r_0109_0010__and,r_0109_0009__necessary,conj1).
 arc(r_0109_0010__and,r_0109_0011__proper,conj2).
@@ -307,20 +307,20 @@ arc(r_0109_0021__or,r_0109_0017__leakage,conj1).
 arc(r_0109_0021__or,r_0109_0019__loss,conj2).
 arc(r_0109_0021__or,r_0109_0022__damage,conj3).
 arc(r_0109_0024__and,r_0109_0015__prevention,r_0109_0013__for).
-arc(r_0109_0024__and,r_0109_0027__security_control,r_0109_0025__for).
-arc(r_0109_0027__security_control,r_0109_0026__other,attrib1).
-arc(r_0109_0027__security_control,r_0109_0032__data,r_0109_0029__of).
+arc(r_0109_0024__and,r_0109_0027__security__r_0109_0028__control,r_0109_0025__for).
+arc(r_0109_0027__security__r_0109_0028__control,r_0109_0026__other,attrib1).
+arc(r_0109_0027__security__r_0109_0028__control,r_0109_0032__data,r_0109_0029__of).
 arc(r_0109_0032__data,r_0109_0031__personal,attrib2).
 
 </pre>
 <br>
 <pre>
-fof(id_109_A_law_h15A119,axiom,
+fof(id__109_A_law_h15A119,axiom,
     ? [OPERATORX21,EVENTX22,EVENTX4,ENTITYX1,ENTITYX5,CONJX11,ENTITYX12,ENTITYX17,ENTITYX19,ENTITYX13,ENTITYX14,ENTITYX15,ENTITYX16,ENTITYX2,ATTRIBX7,ATTRIBX18,ATTRIBX20,ATTRIBX8,ATTRIBX9,ATTRIBX3] :
       ( isA(EVENTX4,r_0109_0004__handling)
       &amp; arg0(EVENTX4) = ENTITYX1
       &amp; arg1(EVENTX4) = ENTITYX2
-      &amp; isA(ENTITYX1,r_0109_0002__business_operator)
+      &amp; isA(ENTITYX1,r_0109_0002__business__r_0109_0003__operator)
       &amp; isA(ENTITYX2,r_0109_0006__information)
       &amp; attrib1(ENTITYX2) = ATTRIBX3
       &amp; isA(ENTITYX5,r_0109_0012__measures)
@@ -338,7 +338,7 @@ fof(id_109_A_law_h15A119,axiom,
       &amp; isA(ENTITYX14,r_0109_0017__leakage)
       &amp; isA(ENTITYX15,r_0109_0019__loss)
       &amp; isA(ENTITYX16,r_0109_0022__damage)
-      &amp; isA(ENTITYX17,r_0109_0027__security_control)
+      &amp; isA(ENTITYX17,r_0109_0027__security__r_0109_0028__control)
       &amp; attrib1(ENTITYX17) = ATTRIBX18
       &amp; r_0109_0029__of(ENTITYX17) = ENTITYX19
       &amp; isA(ENTITYX19,r_0109_0032__data)

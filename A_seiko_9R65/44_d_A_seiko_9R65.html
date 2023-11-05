@@ -300,18 +300,18 @@ This part has properties for expanding and contracting with temperature changes 
 arc(r_0057_0001__Accuracy,r_0057_0004__watches,r_0057_0002__of).
 arc(r_0057_0004__watches,r_0057_0003__mechanical,attrib1).
 arc(r_0057_0005__depends,r_0057_0001__Accuracy,arg0).
-arc(r_0057_0005__depends,r_0057_0008__balance_spring,r_0057_0006__on_clr).
-arc(r_0057_0010__attached,r_0057_0008__balance_spring,arg0).
+arc(r_0057_0005__depends,r_0057_0008__balance__r_0057_0009__spring,r_0057_0006__on_clr).
+arc(r_0057_0010__attached,r_0057_0008__balance__r_0057_0009__spring,arg0).
 arc(r_0057_0010__attached,r_0057_0013__part,r_0057_0011__to).
 arc(r_0057_0014__called,r_0057_0013__part,arg1).
 arc(r_0057_0014__called,r_0057_0016__balance,prd).
 arc(r_0058_0003__has,r_0057_0013__part,arg0).
 arc(r_0058_0003__has,r_0058_0004__properties,arg1).
 arc(r_0058_0004__properties,r_0058_0007__and,r_0058_0005__for).
-arc(r_0058_0006__expanding,r_0058_0010__temperature_changes,r_0058_0009__with_rst).
+arc(r_0058_0006__expanding,r_0058_0010__temperature__r_0058_0011__changes,r_0058_0009__with_rst).
 arc(r_0058_0007__and,r_0058_0006__expanding,conj1).
 arc(r_0058_0007__and,r_0058_0008__contracting,conj2).
-arc(r_0058_0008__contracting,r_0058_0010__temperature_changes,r_0058_0009__with_rst).
+arc(r_0058_0008__contracting,r_0058_0010__temperature__r_0058_0011__changes,r_0058_0009__with_rst).
 arc(r_0058_0013__and,r_0058_0003__has,conj1).
 arc(r_0058_0013__and,r_0058_0014__influences,conj2).
 arc(r_0058_0014__influences,r_0057_0013__part,arg0).
@@ -321,7 +321,7 @@ arc(r_0058_0016__accuracy,r_0058_0019__watch,r_0058_0017__of).
 </pre>
 <br>
 <pre>
-fof(id_57_A_seiko_9R65__58_A_seiko_9R65,axiom,
+fof(id__57_A_seiko_9R65__58_A_seiko_9R65,axiom,
     ? [EVENTX13,BALANCEX11,CONJX24,EVENTX23,EVENTX20,CONJX19,EVENTX18,EVENTX17,EVENTX10,EVENTX9,EVENTX8,ENTITYX21,ENTITYX22,ENTITYX12,ENTITYX16,ENTITYX1,ENTITYX4,BALANCEX5,ENTITYX7,ENTITYX2,ATTRIBX3] :
       ( EVENTX13 = CONJX19
       &amp; isA(CONJX19,r_0058_0007__and)
@@ -338,7 +338,7 @@ fof(id_57_A_seiko_9R65__58_A_seiko_9R65,axiom,
       &amp; isA(EVENTX9,r_0057_0010__attached)
       &amp; arg0(EVENTX9) = ENTITYX4
       &amp; r_0057_0011__to(EVENTX9) = BALANCEX5
-      &amp; isA(ENTITYX4,r_0057_0008__balance_spring)
+      &amp; isA(ENTITYX4,r_0057_0008__balance__r_0057_0009__spring)
       &amp; isA(EVENTX8,r_0057_0014__called)
       &amp; arg1(EVENTX8) = BALANCEX5
       &amp; prd(EVENTX8) = ENTITYX7
@@ -347,7 +347,7 @@ fof(id_57_A_seiko_9R65__58_A_seiko_9R65,axiom,
       &amp; BALANCEX11 = BALANCEX5
       &amp; isA(ENTITYX12,r_0058_0004__properties)
       &amp; r_0058_0005__for(ENTITYX12) = EVENTX13
-      &amp; isA(ENTITYX16,r_0058_0010__temperature_changes)
+      &amp; isA(ENTITYX16,r_0058_0010__temperature__r_0058_0011__changes)
       &amp; isA(ENTITYX21,r_0058_0016__accuracy)
       &amp; r_0058_0017__of(ENTITYX21) = ENTITYX22
       &amp; isA(ENTITYX22,r_0058_0019__watch)

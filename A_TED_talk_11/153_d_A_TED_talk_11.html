@@ -129,21 +129,21 @@ Because you are , are n't you ?
 </svg>
 <br>
 <pre>
-arc(question_0198_1005,r_0198_0006__n_apos_t,scope).
 arc(r_0198_0001__Because_cnt,r_0198_0003__are,restriction).
 arc(r_0198_0001__Because_cnt,z_0198_1009,scope).
 arc(r_0198_0003__are,r_0198_0002__you,arg0).
 arc(r_0198_0005__are,r_0198_0002__you,arg0).
 arc(r_0198_0006__n_apos_t,r_0198_0005__are,scope).
-arc(z_0198_1009,question_0198_1005,prn3).
+arc(r_0198_1005__question,r_0198_0006__n_apos_t,scope).
+arc(z_0198_1009,r_0198_1005__question,prn3).
 
 </pre>
 <br>
 <pre>
-fof(id_198_A_TED_talk_11,axiom,
+fof(id__198_A_TED_talk_11,axiom,
     ? [EVENTX3,HEARERX6,CONNX1,EVENTX10,OPERATORX5,OPERATORX7,EVENTX8,EVENTX2] :
       ( EVENTX3 = OPERATORX5
-      &amp; isA(OPERATORX5,question_0198_1005)
+      &amp; isA(OPERATORX5,r_0198_1005__question)
       &amp; scope(OPERATORX5) = OPERATORX7
       &amp; isA(OPERATORX7,r_0198_0006__n_apos_t)
       &amp; scope(OPERATORX7) = EVENTX8

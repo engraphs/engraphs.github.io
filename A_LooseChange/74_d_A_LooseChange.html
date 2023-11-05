@@ -580,33 +580,34 @@ She 'd even cunningly made me obliged to her .
 </svg>
 <br>
 <pre>
-arc(cnt_0134_1023,r_0136_0008__smiled,scope).
-arc(cnt_0134_1023,r_0136_0011__saying,restriction).
-arc(question_0134_1004,r_0134_0011__had,scope).
 arc(r_0134_0001__Only,r_0134_0003__knew,scope).
-arc(r_0134_0003__knew,question_0134_1004,arg1).
 arc(r_0134_0003__knew,r_0134_0002__I,arg0).
+arc(r_0134_0003__knew,r_0134_1004__question,arg1).
 arc(r_0134_0007__place,r_0134_0006__menacing,attrib3).
 arc(r_0134_0010__world,r_0134_0008__Laylor,genv).
 arc(r_0134_0011__had,r_0134_0012__become,catenative).
 arc(r_0134_0012__become,r_0134_0007__place,prd2).
 arc(r_0134_0012__become,r_0134_0010__world,arg0).
+arc(r_0134_1004__question,r_0134_0011__had,scope).
+arc(r_0134_1023__cnt,r_0136_0008__smiled,scope).
+arc(r_0134_1023__cnt,r_0136_0011__saying,restriction).
+arc(r_0134_1027__utterance,r_0136_0015__love,part1).
 arc(r_0135_0002___apos_d,r_0135_0003__lost,catenative).
 arc(r_0135_0003__lost,r_0134_0008__Laylor,arg0).
 arc(r_0135_0003__lost,r_0135_0005__tooth,arg1).
 arc(r_0136_0002__noticed,r_0134_0002__I,arg0).
 arc(r_0136_0002__noticed,r_0136_0005__gap,arg1).
 arc(r_0136_0005__gap,r_0136_0004__ugly,attrib2).
-arc(r_0136_0006__when_tmp,cnt_0134_1023,restriction).
+arc(r_0136_0006__when_tmp,r_0134_1023__cnt,restriction).
 arc(r_0136_0006__when_tmp,r_0136_0002__noticed,scope).
 arc(r_0136_0008__smiled,r_0134_0002__I,r_0136_0009__at_dir).
 arc(r_0136_0008__smiled,r_0134_0008__Laylor,arg0).
 arc(r_0136_0011__saying,r_0134_0008__Laylor,arg0).
-arc(r_0136_0011__saying,utterance_0134_1027,arg1).
+arc(r_0136_0011__saying,r_0134_1027__utterance,arg1).
 arc(r_0136_0015__love,r_0134_0002__I,arg0).
 arc(r_0136_0015__love,r_0136_0016__London,arg1).
-arc(r_0137_0003__sought_out,r_0134_0002__I,arg1).
-arc(r_0137_0003__sought_out,r_0134_0008__Laylor,arg0).
+arc(r_0137_0003__sought__r_0137_0005__out,r_0134_0002__I,arg1).
+arc(r_0137_0003__sought__r_0137_0005__out,r_0134_0008__Laylor,arg0).
 arc(r_0137_0007__sifted,r_0134_0002__I,arg1).
 arc(r_0137_0007__sifted,r_0134_0008__Laylor,arg0).
 arc(r_0137_0007__sifted,r_0137_0011__crowd,r_0137_0009__from_rst).
@@ -622,15 +623,14 @@ arc(r_0139_0005__made,r_0134_0008__Laylor,arg0).
 arc(r_0139_0005__made,r_0139_0004__cunningly,mnr2).
 arc(r_0139_0005__made,r_0139_0007__obliged,prd).
 arc(r_0139_0007__obliged,r_0134_0008__Laylor,r_0139_0008__to_clr).
-arc(utterance_0134_1027,r_0136_0015__love,part1).
 
 </pre>
 <br>
 <pre>
-fof(id_134_A_LooseChange__135_A_LooseChange__136_A_LooseChange__137_A_LooseChange__138_A_LooseChange__139_A_LooseChange,axiom,
+fof(id__134_A_LooseChange__135_A_LooseChange__136_A_LooseChange__137_A_LooseChange__138_A_LooseChange__139_A_LooseChange,axiom,
     ? [STATEX2,CATENATIVEX8,CATENATIVEX13,STATEX25,CATENATIVEX35,CATENATIVEX51,STATEX55,LAYLORX12,SPEAKERX17,LAYLORX21,SPEAKERX22,SPEAKERX28,LAYLORX34,SPEAKERX36,SPEAKERX38,LAYLORX45,LAYLORX50,SPEAKERX54,LAYLORX59,EVENTX62,OPERATORX52,EVENTX61,EVENTX60,EVENTX49,EVENTX41,EVENTX40,EVENTX37,CONNX20,CONNX24,EVENTX31,CONJX30,EVENTX29,EVENTX32,EVENTX33,EVENTX16,EVENTX15,OPERATORX1,EVENTX11,OPERATORX4,EVENTX10,EVENTX9,ENTITYX42,ENTITYX48,ENTITYX39,ENTITYX18,ENTITYX14,ENTITYX5,ENTITYX7,ATTRIBX47,ATTRIBX46,ATTRIBX19,ATTRIBX6,QUALITYX53] :
       ( STATEX2 = OPERATORX4
-      &amp; isA(OPERATORX4,question_0134_1004)
+      &amp; isA(OPERATORX4,r_0134_1004__question)
       &amp; scope(OPERATORX4) = EVENTX10
       &amp; isA(EVENTX10,r_0134_0011__had)
       &amp; catenative(EVENTX10) = CATENATIVEX8
@@ -643,12 +643,12 @@ fof(id_134_A_LooseChange__135_A_LooseChange__136_A_LooseChange__137_A_LooseChang
       &amp; arg0(EVENTX15) = LAYLORX12
       &amp; arg1(EVENTX15) = ENTITYX14
       &amp; STATEX25 = CONJX30
-      &amp; isA(CONJX30,utterance_0134_1027)
+      &amp; isA(CONJX30,r_0134_1027__utterance)
       &amp; part1(CONJX30) = EVENTX29
       &amp; isA(EVENTX29,r_0136_0015__love)
       &amp; arg0(EVENTX29) = SPEAKERX28
       &amp; arg1(EVENTX29) = r_0136_0016__London
-      &amp; isA(EVENTX37,r_0137_0003__sought_out)
+      &amp; isA(EVENTX37,r_0137_0003__sought__r_0137_0005__out)
       &amp; arg0(EVENTX37) = LAYLORX34
       &amp; arg1(EVENTX37) = SPEAKERX36
       &amp; isA(EVENTX40,r_0137_0007__sifted)
@@ -714,7 +714,7 @@ fof(id_134_A_LooseChange__135_A_LooseChange__136_A_LooseChange__137_A_LooseChang
       &amp; arg0(EVENTX33) = SPEAKERX17
       &amp; arg1(EVENTX33) = ENTITYX18
       &amp; restriction(CONNX20) = CONNX24
-      &amp; isA(CONNX24,cnt_0134_1023)
+      &amp; isA(CONNX24,r_0134_1023__cnt)
       &amp; scope(CONNX24) = EVENTX32
       &amp; isA(EVENTX32,r_0136_0008__smiled)
       &amp; arg0(EVENTX32) = LAYLORX21

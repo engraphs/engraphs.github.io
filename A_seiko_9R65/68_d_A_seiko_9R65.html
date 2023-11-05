@@ -343,8 +343,6 @@ To ensure these parts work together properly , periodic inspection including cle
 </svg>
 <br>
 <pre>
-arc(cnt_0088_1001,r_0088_0002__ensure,restriction).
-arc(cnt_0088_1001,r_0088_0031__is,scope).
 arc(r_0088_0002__ensure,r_0088_0007__properly,arg1).
 arc(r_0088_0005__work,r_0088_0004__parts,arg0).
 arc(r_0088_0005__work,r_0088_0006__together,mnr3).
@@ -366,11 +364,13 @@ arc(r_0088_0027__replacement,r_0088_0030__parts,r_0088_0028__of).
 arc(r_0088_0030__parts,r_0088_0029__worn,attrib1).
 arc(r_0088_0031__is,r_0088_0032__needed,catenative).
 arc(r_0088_0032__needed,r_0088_0010__inspection,arg1).
+arc(r_0088_1001__cnt,r_0088_0002__ensure,restriction).
+arc(r_0088_1001__cnt,r_0088_0031__is,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_88_A_seiko_9R65,axiom,
+fof(id__88_A_seiko_9R65,axiom,
     ? [STATEX5,CATENATIVEX27,CONNX2,EVENTX30,EVENTX29,EVENTX26,EVENTX10,OPERATORX8,EVENTX9,ENTITYX11,ENTITYX13,ENTITYX14,ENTITYX18,ENTITYX19,ENTITYX21,ENTITYX23,ENTITYX24,ENTITYX20,ENTITYX15,ENTITYX16,ENTITYX17,ENTITYX6,QUALITYX7,ATTRIBX12,ATTRIBX25,ATTRIBX22] :
       ( STATEX5 = OPERATORX8
       &amp; isA(OPERATORX8,r_0088_0007__properly)
@@ -414,7 +414,7 @@ fof(id_88_A_seiko_9R65,axiom,
       &amp; isA(ATTRIBX12,r_0088_0009__periodic)
       &amp; isA(ATTRIBX22,r_0088_0024__functional)
       &amp; isA(ATTRIBX25,r_0088_0029__worn)
-      &amp; isA(CONNX2,cnt_0088_1001)
+      &amp; isA(CONNX2,r_0088_1001__cnt)
       &amp; restriction(CONNX2) = EVENTX10
       &amp; isA(EVENTX10,r_0088_0002__ensure)
       &amp; arg1(EVENTX10) = STATEX5

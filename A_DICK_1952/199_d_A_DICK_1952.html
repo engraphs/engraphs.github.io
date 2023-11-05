@@ -136,37 +136,37 @@
 <polygon fill="black" stroke="black" points="223.95,-133.18 220.45,-123.18 216.95,-133.18 223.95,-133.18"/>
 <text text-anchor="middle" x="244.95" y="-144.8" font-family="fixed" font-size="14.00">[part1]</text>
 </g>
-<!-- 0255_0002_0255_0004 -->
-<g id="node9" class="node">
-<title>0255_0002_0255_0004</title>
-<ellipse fill="none" stroke="black" cx="374.45" cy="-105" rx="53.89" ry="18"/>
-<text text-anchor="middle" x="374.45" y="-101.3" font-family="fixed" font-size="14.00">Do_forget</text>
-</g>
-<!-- 0255_0005 -->
-<g id="node10" class="node">
-<title>0255_0005</title>
-<ellipse fill="none" stroke="black" cx="374.45" cy="-18" rx="28.7" ry="18"/>
-<text text-anchor="middle" x="374.45" y="-14.3" font-family="fixed" font-size="14.00">that</text>
-</g>
-<!-- 0255_0002_0255_0004&#45;&gt;0255_0005 -->
-<g id="edge7" class="edge">
-<title>0255_0002_0255_0004&#45;&gt;0255_0005</title>
-<path fill="none" stroke="black" d="M374.45,-86.8C374.45,-75.16 374.45,-59.55 374.45,-46.24"/>
-<polygon fill="black" stroke="black" points="377.95,-46.18 374.45,-36.18 370.95,-46.18 377.95,-46.18"/>
-<text text-anchor="middle" x="395.95" y="-57.8" font-family="fixed" font-size="14.00">[arg1]</text>
-</g>
 <!-- 0255_0003 -->
-<g id="node11" class="node">
+<g id="node9" class="node">
 <title>0255_0003</title>
 <ellipse fill="none" stroke="black" cx="374.45" cy="-192" rx="27" ry="18"/>
 <text text-anchor="middle" x="374.45" y="-188.3" font-family="fixed" font-size="14.00">n&#39;t</text>
 </g>
-<!-- 0255_0003&#45;&gt;0255_0002_0255_0004 -->
-<g id="edge8" class="edge">
-<title>0255_0003&#45;&gt;0255_0002_0255_0004</title>
+<!-- 0255_0004 -->
+<g id="node10" class="node">
+<title>0255_0004</title>
+<ellipse fill="none" stroke="black" cx="374.45" cy="-105" rx="37.89" ry="18"/>
+<text text-anchor="middle" x="374.45" y="-101.3" font-family="fixed" font-size="14.00">forget</text>
+</g>
+<!-- 0255_0003&#45;&gt;0255_0004 -->
+<g id="edge7" class="edge">
+<title>0255_0003&#45;&gt;0255_0004</title>
 <path fill="none" stroke="black" d="M374.45,-173.8C374.45,-162.16 374.45,-146.55 374.45,-133.24"/>
 <polygon fill="black" stroke="black" points="377.95,-133.18 374.45,-123.18 370.95,-133.18 377.95,-133.18"/>
 <text text-anchor="middle" x="400.45" y="-144.8" font-family="fixed" font-size="14.00">[scope]</text>
+</g>
+<!-- 0255_0005 -->
+<g id="node11" class="node">
+<title>0255_0005</title>
+<ellipse fill="none" stroke="black" cx="374.45" cy="-18" rx="28.7" ry="18"/>
+<text text-anchor="middle" x="374.45" y="-14.3" font-family="fixed" font-size="14.00">that</text>
+</g>
+<!-- 0255_0004&#45;&gt;0255_0005 -->
+<g id="edge8" class="edge">
+<title>0255_0004&#45;&gt;0255_0005</title>
+<path fill="none" stroke="black" d="M374.45,-86.8C374.45,-75.16 374.45,-59.55 374.45,-46.24"/>
+<polygon fill="black" stroke="black" points="377.95,-46.18 374.45,-36.18 370.95,-46.18 377.95,-46.18"/>
+<text text-anchor="middle" x="395.95" y="-57.8" font-family="fixed" font-size="14.00">[arg1]</text>
 </g>
 <!-- imperative_0254_1016 -->
 <g id="node12" class="node">
@@ -185,24 +185,24 @@
 </svg>
 <br>
 <pre>
-arc(imperative_0254_1016,r_0255_0003__n_apos_t,scope).
 arc(r_0254_0004__was,r_0254_0006__here,r_0254_0005__from_foc).
 arc(r_0254_0004__was,z_0254_1009,clf).
 arc(r_0254_0010__came,r_0254_0009__firing,arg0).
 arc(r_0254_0010__came,z_0254_1009,clr_dir).
 arc(r_0254_0014__murmured,r_0254_0013__Tance,arg0).
-arc(r_0254_0014__murmured,utterance_0254_1003,arg1).
-arc(r_0255_0002__Do_forget,r_0255_0005__that,arg1).
-arc(r_0255_0003__n_apos_t,r_0255_0002__Do_forget,scope).
-arc(utterance_0254_1003,r_0254_0004__was,part1).
+arc(r_0254_0014__murmured,r_0254_1003__utterance,arg1).
+arc(r_0254_1003__utterance,r_0254_0004__was,part1).
+arc(r_0254_1016__imperative,r_0255_0003__n_apos_t,scope).
+arc(r_0255_0003__n_apos_t,r_0255_0004__forget,scope).
+arc(r_0255_0004__forget,r_0255_0005__that,arg1).
 
 </pre>
 <br>
 <pre>
-fof(id_254_A_DICK_1952__255_A_DICK_1952,axiom,
+fof(id__254_A_DICK_1952__255_A_DICK_1952,axiom,
     ? [STATEX1,OPERATORX16,OPERATORX17,EVENTX18,EVENTX12,CONJX11,EVENTX10,EVENTX8,ENTITYX6,ENTITYX7,QUALITYX5] :
       ( STATEX1 = CONJX11
-      &amp; isA(CONJX11,utterance_0254_1003)
+      &amp; isA(CONJX11,r_0254_1003__utterance)
       &amp; part1(CONJX11) = EVENTX10
       &amp; isA(EVENTX10,r_0254_0004__was)
       &amp; r_0254_0005__from_foc(EVENTX10) = QUALITYX5
@@ -216,11 +216,11 @@ fof(id_254_A_DICK_1952__255_A_DICK_1952,axiom,
       &amp; isA(EVENTX12,r_0254_0014__murmured)
       &amp; arg1(EVENTX12) = STATEX1
       &amp; arg0(EVENTX12) = r_0254_0013__Tance
-      &amp; isA(OPERATORX16,imperative_0254_1016)
+      &amp; isA(OPERATORX16,r_0254_1016__imperative)
       &amp; scope(OPERATORX16) = OPERATORX17
       &amp; isA(OPERATORX17,r_0255_0003__n_apos_t)
       &amp; scope(OPERATORX17) = EVENTX18
-      &amp; isA(EVENTX18,r_0255_0002__Do_forget)
+      &amp; isA(EVENTX18,r_0255_0004__forget)
       &amp; arg1(EVENTX18) = r_0255_0005__that ) ).
 
 

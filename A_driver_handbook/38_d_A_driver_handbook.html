@@ -259,10 +259,7 @@ For example , to : Turn right at the intersection , choose the right - hand lane
 </svg>
 <br>
 <pre>
-arc(cnt_0048_1005,r_0048_0005__Turn,restriction).
-arc(cnt_0048_1005,r_0048_0017__and,scope).
-arc(imperative_0048_1002,r_0048_0001__For_example,scope).
-arc(r_0048_0001__For_example,cnt_0048_1005,scope).
+arc(r_0048_0001__For_example,r_0048_1005__cnt,scope).
 arc(r_0048_0005__Turn,r_0048_0006__right,dir4).
 arc(r_0048_0005__Turn,r_0048_0009__intersection,r_0048_0007__at_loc).
 arc(r_0048_0011__choose,r_0048_0016__lane,arg1).
@@ -276,11 +273,14 @@ arc(r_0048_0018__exit,r_0048_0027__car,prn7).
 arc(r_0048_0023__hand,r_0048_0021__right,attrib1).
 arc(r_0048_0024__lane,r_0048_0023__hand,nlyr2).
 arc(r_0048_0027__car,r_0048_0026__blue,attrib1).
+arc(r_0048_1002__imperative,r_0048_0001__For_example,scope).
+arc(r_0048_1005__cnt,r_0048_0005__Turn,restriction).
+arc(r_0048_1005__cnt,r_0048_0017__and,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_48_A_driver_handbook,axiom,
+fof(id__48_A_driver_handbook,axiom,
     ? [OPERATORX2,OPERATORX4,CONNX6,CONJX20,EVENTX19,EVENTX15,EVENTX9,QUALITYX7,ENTITYX10,ENTITYX16,ENTITYX17,ENTITYX12,ENTITYX13,ENTITYX8,ATTRIBX18,ATTRIBX14,ATTRIBX11] :
       ( isA(QUALITYX7,r_0048_0006__right)
       &amp; isA(ENTITYX8,r_0048_0009__intersection)
@@ -297,11 +297,11 @@ fof(id_48_A_driver_handbook,axiom,
       &amp; isA(ATTRIBX11,r_0048_0026__blue)
       &amp; isA(ATTRIBX14,r_0048_0013__right)
       &amp; isA(ATTRIBX18,r_0048_0021__right)
-      &amp; isA(OPERATORX2,imperative_0048_1002)
+      &amp; isA(OPERATORX2,r_0048_1002__imperative)
       &amp; scope(OPERATORX2) = OPERATORX4
       &amp; isA(OPERATORX4,r_0048_0001__For_example)
       &amp; scope(OPERATORX4) = CONNX6
-      &amp; isA(CONNX6,cnt_0048_1005)
+      &amp; isA(CONNX6,r_0048_1005__cnt)
       &amp; restriction(CONNX6) = EVENTX9
       &amp; isA(EVENTX9,r_0048_0005__Turn)
       &amp; dir4(EVENTX9) = QUALITYX7

@@ -248,28 +248,28 @@ I have now volunteered to be one , and I am the 150th hedgehog champion from Ply
 </svg>
 <br>
 <pre>
-arc(cnt_0085_1011,r_0085_0011__am,scope).
-arc(cnt_0085_1011,r_0085_0019__sign_up,restriction).
 arc(r_0085_0002__have,r_0085_0004__volunteered,catenative).
 arc(r_0085_0004__volunteered,r_0085_0001__I,arg0).
 arc(r_0085_0004__volunteered,r_0085_0003__now,tmp1).
 arc(r_0085_0004__volunteered,r_0085_0006__be,arg1).
 arc(r_0085_0006__be,r_0085_0001__I,arg0).
 arc(r_0085_0006__be,r_0085_0007__one,prd2).
-arc(r_0085_0009__and,cnt_0085_1011,conj2).
 arc(r_0085_0009__and,r_0085_0002__have,conj1).
+arc(r_0085_0009__and,r_0085_1011__cnt,conj2).
 arc(r_0085_0011__am,r_0085_0001__I,arg0).
-arc(r_0085_0011__am,r_0085_0014__hedgehog_champion,prd2).
-arc(r_0085_0014__hedgehog_champion,r_0085_0013__150th,attrib2).
-arc(r_0085_0014__hedgehog_champion,r_0085_0017__Plymouth,r_0085_0016__from).
-arc(r_0085_0019__sign_up,r_0085_0001__I,arg0).
-arc(r_0085_0019__sign_up,r_0085_0024__scheme,r_0085_0021__to_clr).
+arc(r_0085_0011__am,r_0085_0014__hedgehog__r_0085_0015__champion,prd2).
+arc(r_0085_0014__hedgehog__r_0085_0015__champion,r_0085_0013__150th,attrib2).
+arc(r_0085_0014__hedgehog__r_0085_0015__champion,r_0085_0017__Plymouth,r_0085_0016__from).
+arc(r_0085_0019__sign__r_0085_0020__up,r_0085_0001__I,arg0).
+arc(r_0085_0019__sign__r_0085_0020__up,r_0085_0024__scheme,r_0085_0021__to_clr).
 arc(r_0085_0024__scheme,r_0085_0023__excellent,attrib2).
+arc(r_0085_1011__cnt,r_0085_0011__am,scope).
+arc(r_0085_1011__cnt,r_0085_0019__sign__r_0085_0020__up,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_85_A_Hedgehog,axiom,
+fof(id__85_A_Hedgehog,axiom,
     ? [CATENATIVEX1,STATEX3,SPEAKERX8,CONJX17,CONNX12,EVENTX15,EVENTX16,EVENTX7,EVENTX6,EVENTX5,ENTITYX9,ENTITYX13,ENTITYX4,QUALITYX2,ATTRIBX14,ATTRIBX10] :
       ( CATENATIVEX1 = EVENTX6
       &amp; isA(EVENTX6,r_0085_0004__volunteered)
@@ -282,7 +282,7 @@ fof(id_85_A_Hedgehog,axiom,
       &amp; prd2(EVENTX5) = ENTITYX4
       &amp; isA(ENTITYX4,r_0085_0007__one)
       &amp; SPEAKERX8 = r_0085_0001__I
-      &amp; isA(ENTITYX9,r_0085_0014__hedgehog_champion)
+      &amp; isA(ENTITYX9,r_0085_0014__hedgehog__r_0085_0015__champion)
       &amp; attrib2(ENTITYX9) = ATTRIBX10
       &amp; r_0085_0016__from(ENTITYX9) = r_0085_0017__Plymouth
       &amp; isA(ENTITYX13,r_0085_0024__scheme)
@@ -295,13 +295,13 @@ fof(id_85_A_Hedgehog,axiom,
       &amp; isA(EVENTX7,r_0085_0002__have)
       &amp; catenative(EVENTX7) = CATENATIVEX1
       &amp; conj2(CONJX17) = CONNX12
-      &amp; isA(CONNX12,cnt_0085_1011)
+      &amp; isA(CONNX12,r_0085_1011__cnt)
       &amp; scope(CONNX12) = EVENTX16
       &amp; isA(EVENTX16,r_0085_0011__am)
       &amp; arg0(EVENTX16) = SPEAKERX8
       &amp; prd2(EVENTX16) = ENTITYX9
       &amp; restriction(CONNX12) = EVENTX15
-      &amp; isA(EVENTX15,r_0085_0019__sign_up)
+      &amp; isA(EVENTX15,r_0085_0019__sign__r_0085_0020__up)
       &amp; arg0(EVENTX15) = SPEAKERX8
       &amp; r_0085_0021__to_clr(EVENTX15) = ENTITYX13 ) ).
 

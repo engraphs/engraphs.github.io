@@ -451,15 +451,16 @@ And so it goes , back and forth - and before long , Oren has the reservation in 
 </svg>
 <br>
 <pre>
-arc(cnt_0018_1005,r_0018_0006__calling,scope).
-arc(cnt_0018_1005,r_0018_0008__make,restriction).
-arc(r_0018_0005___apos_m,cnt_0018_1005,catenative).
+arc(r_0018_0005___apos_m,r_0018_1005__cnt,catenative).
 arc(r_0018_0006__calling,r_0018_0004__I,arg0).
 arc(r_0018_0008__make,r_0018_0004__I,arg0).
 arc(r_0018_0008__make,r_0018_0010__reservation,arg1).
 arc(r_0018_0014__voice,r_0018_0017__woman,prn4).
 arc(r_0018_0019__begins,r_0018_0014__voice,arg0).
-arc(r_0018_0019__begins,utterance_0018_1003,arg1).
+arc(r_0018_0019__begins,r_0018_1003__utterance,arg1).
+arc(r_0018_1003__utterance,r_0018_0005___apos_m,part1).
+arc(r_0018_1005__cnt,r_0018_0006__calling,scope).
+arc(r_0018_1005__cnt,r_0018_0008__make,restriction).
 arc(r_0019_0003___apos_m,r_0018_0014__voice,arg0).
 arc(r_0019_0003___apos_m,r_0019_0008__service,prd2).
 arc(r_0019_0007__booking,r_0019_0008__service,arg0).
@@ -481,20 +482,19 @@ arc(r_0020_0015__has,r_0018_0010__reservation,arg1).
 arc(r_0020_0015__has,r_0020_0012__long,tmp1).
 arc(r_0020_0015__has,r_0020_0014__Oren,arg0).
 arc(r_0020_0015__has,r_0020_0019__place,r_0020_0018__in_mnr).
-arc(utterance_0018_1003,r_0018_0005___apos_m,part1).
 
 </pre>
 <br>
 <pre>
-fof(id_18_A_Duplex__19_A_Duplex__20_A_Duplex,axiom,
+fof(id__18_A_Duplex__19_A_Duplex__20_A_Duplex,axiom,
     ? [STATEX1,CATENATIVEX4,ROBOT_VOICEX17,ROBOT_VOICEX23,RESERVATIONX36,CONJX39,EVENTX38,OPERATORX29,EVENTX33,OPERATORX22,OPERATORX25,EVENTX26,EVENTX21,EVENTX20,EVENTX14,CONJX11,EVENTX10,CONNX6,EVENTX8,EVENTX9,ENTITYX37,ENTITYX24,ROBOT_CALLERX18,ROBOT_VOICEX12,ENTITYX13,RESERVATIONX7,ATTRIBX19,QUALITYX34,QUALITYX35,QUALITYX30,QUALITYX31,QUALITYX32] :
       ( STATEX1 = CONJX11
-      &amp; isA(CONJX11,utterance_0018_1003)
+      &amp; isA(CONJX11,r_0018_1003__utterance)
       &amp; part1(CONJX11) = EVENTX10
       &amp; isA(EVENTX10,r_0018_0005___apos_m)
       &amp; catenative(EVENTX10) = CATENATIVEX4
       &amp; CATENATIVEX4 = CONNX6
-      &amp; isA(CONNX6,cnt_0018_1005)
+      &amp; isA(CONNX6,r_0018_1005__cnt)
       &amp; scope(CONNX6) = EVENTX9
       &amp; isA(EVENTX9,r_0018_0006__calling)
       &amp; arg0(EVENTX9) = r_0018_0004__I

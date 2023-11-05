@@ -161,7 +161,6 @@ Use the enclosed card and give a generous gift to Goodwill today !
 </svg>
 <br>
 <pre>
-arc(imperative_0042_1002,r_0042_0005__and,scope).
 arc(r_0042_0001__Use,r_0042_0004__card,arg1).
 arc(r_0042_0004__card,r_0042_0003__enclosed,attrib2).
 arc(r_0042_0005__and,r_0042_0001__Use,conj1).
@@ -170,11 +169,12 @@ arc(r_0042_0006__give,r_0042_0009__gift,arg1).
 arc(r_0042_0006__give,r_0042_0011__Goodwill,r_0042_0010__to_arg2).
 arc(r_0042_0006__give,r_0042_0012__today,tmp4).
 arc(r_0042_0009__gift,r_0042_0008__generous,attrib2).
+arc(r_0042_1002__imperative,r_0042_0005__and,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_42_A_ANC_110CYL067,axiom,
+fof(id__42_A_ANC_110CYL067,axiom,
     ? [OPERATORX2,CONJX11,EVENTX10,EVENTX6,ENTITYX7,ENTITYX4,ATTRIBX8,ATTRIBX5,QUALITYX9] :
       ( isA(ENTITYX4,r_0042_0004__card)
       &amp; attrib2(ENTITYX4) = ATTRIBX5
@@ -183,7 +183,7 @@ fof(id_42_A_ANC_110CYL067,axiom,
       &amp; isA(ATTRIBX5,r_0042_0003__enclosed)
       &amp; isA(ATTRIBX8,r_0042_0008__generous)
       &amp; isA(QUALITYX9,r_0042_0012__today)
-      &amp; isA(OPERATORX2,imperative_0042_1002)
+      &amp; isA(OPERATORX2,r_0042_1002__imperative)
       &amp; scope(OPERATORX2) = CONJX11
       &amp; isA(CONJX11,r_0042_0005__and)
       &amp; conj1(CONJX11) = EVENTX6

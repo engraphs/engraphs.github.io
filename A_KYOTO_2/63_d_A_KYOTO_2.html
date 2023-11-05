@@ -110,24 +110,24 @@ Head temple is Kencho-ji in Kamakura , founded by Douryuu RANKEI .
 </svg>
 <br>
 <pre>
-arc(r_0070_0003__is,r_0070_0001__Head_temple,arg0).
+arc(r_0070_0003__is,r_0070_0001__Head__r_0070_0002__temple,arg0).
 arc(r_0070_0003__is,r_0070_0004__Kencho_ji,prd2).
 arc(r_0070_0004__Kencho_ji,r_0070_0006__Kamakura,r_0070_0005__in).
 arc(r_0070_0008__founded,r_0070_0004__Kencho_ji,arg1).
-arc(r_0070_0008__founded,r_0070_0010__Douryuu_RANKEI,arg0_by_lgs).
+arc(r_0070_0008__founded,r_0070_0010__Douryuu__r_0070_0011__RANKEI,arg0_r_0070_0009__by_lgs).
 
 </pre>
 <br>
 <pre>
-fof(id_70_A_KYOTO_2,axiom,
+fof(id__70_A_KYOTO_2,axiom,
     ? [EVENTX2,EVENTX1] :
       ( isA(EVENTX1,r_0070_0008__founded)
-      &amp; arg0_by_lgs(EVENTX1) = r_0070_0010__Douryuu_RANKEI
+      &amp; arg0__r_0070_0009__by_lgs(EVENTX1) = r_0070_0010__Douryuu_r_0070_0011__RANKEI
       &amp; arg1(EVENTX1) = r_0070_0004__Kencho_ji
       &amp; isA(r_0070_0004__Kencho_ji,r_0070_0004__Kencho_ji)
       &amp; r_0070_0005__in(r_0070_0004__Kencho_ji) = r_0070_0006__Kamakura
       &amp; isA(EVENTX2,r_0070_0003__is)
-      &amp; arg0(EVENTX2) = r_0070_0001__Head_temple
+      &amp; arg0(EVENTX2) = r_0070_0001__Head__r_0070_0002__temple
       &amp; prd2(EVENTX2) = r_0070_0004__Kencho_ji ) ).
 
 

@@ -64,7 +64,7 @@ Mr Macleod was not at the week-end meeting .
 <title>0033_0003&#45;&gt;0033_0007_0033_0008</title>
 <path fill="none" stroke="black" d="M167.79,-89.58C181.17,-76.8 200.98,-57.89 216.72,-42.85"/>
 <polygon fill="black" stroke="black" points="219.26,-45.27 224.07,-35.83 214.42,-40.21 219.26,-45.27"/>
-<text text-anchor="middle" x="224.69" y="-57.8" font-family="fixed" font-size="14.00">at[loc]</text>
+<text text-anchor="middle" x="246.19" y="-57.8" font-family="fixed" font-size="14.00">at[prd2][loc]</text>
 </g>
 <!-- 0033_0004 -->
 <g id="node4" class="node">
@@ -83,21 +83,21 @@ Mr Macleod was not at the week-end meeting .
 </svg>
 <br>
 <pre>
-arc(r_0033_0003__was,r_0033_0001__Mr_Macleod,arg0).
-arc(r_0033_0003__was,r_0033_0007__week_end_meeting,r_0033_0005__at_loc).
+arc(r_0033_0003__was,r_0033_0001__Mr__r_0033_0002__Macleod,arg0).
+arc(r_0033_0003__was,r_0033_0007__week_end__r_0033_0008__meeting,r_0033_0005__at_prd2_loc).
 arc(r_0033_0004__not,r_0033_0003__was,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_33_A_lob_A01,axiom,
+fof(id__33_A_lob_A01,axiom,
     ? [OPERATORX2,EVENTX3,ENTITYX1] :
-      ( isA(ENTITYX1,r_0033_0007__week_end_meeting)
+      ( isA(ENTITYX1,r_0033_0007__week_end__r_0033_0008__meeting)
       &amp; isA(OPERATORX2,r_0033_0004__not)
       &amp; scope(OPERATORX2) = EVENTX3
       &amp; isA(EVENTX3,r_0033_0003__was)
-      &amp; arg0(EVENTX3) = r_0033_0001__Mr_Macleod
-      &amp; r_0033_0005__at_loc(EVENTX3) = ENTITYX1 ) ).
+      &amp; arg0(EVENTX3) = r_0033_0001__Mr__r_0033_0002__Macleod
+      &amp; r_0033_0005__at_prd2_loc(EVENTX3) = ENTITYX1 ) ).
 
 
 </pre>
@@ -114,19 +114,19 @@ fof(id_33_A_lob_A01,axiom,
 <line x1="180.84" y1="183" x2="180.84" y2="214" style="stroke:#000000;stroke-width:2;"/>
 <line x1="120.72" y1="122" x2="180" y2="153" style="stroke:#000000;stroke-width:2;"/>
 <line x1="540.72" y1="61" x2="120" y2="92" style="stroke:#000000;stroke-width:2;"/>
-<text x="300.36" y="112" text-anchor="middle">BED</text>
-<text x="300.36" y="173" text-anchor="middle">was</text>
-<line x1="300.36" y1="122" x2="300.36" y2="153" style="stroke:#000000;stroke-width:2;"/>
+<text x="300.84" y="112" text-anchor="middle">BED;~La</text>
+<text x="300.84" y="173" text-anchor="middle">was</text>
+<line x1="300.84" y1="122" x2="300.84" y2="153" style="stroke:#000000;stroke-width:2;"/>
 <line x1="540.72" y1="61" x2="300" y2="92" style="stroke:#000000;stroke-width:2;"/>
 <text x="420.36" y="112" text-anchor="middle">NEG</text>
 <text x="420.36" y="173" text-anchor="middle">not</text>
 <line x1="420.36" y1="122" x2="420.36" y2="153" style="stroke:#000000;stroke-width:2;"/>
 <line x1="540.72" y1="61" x2="420" y2="92" style="stroke:#000000;stroke-width:2;"/>
-<text x="720.72" y="112" text-anchor="middle">PP-LOC</text>
+<text x="721.32" y="112" text-anchor="middle">PP-PRD2-LOC</text>
 <text x="540.72" y="173" text-anchor="middle">P-ROLE</text>
 <text x="540.72" y="234" text-anchor="middle">at</text>
 <line x1="540.72" y1="183" x2="540.72" y2="214" style="stroke:#000000;stroke-width:2;"/>
-<line x1="720.72" y1="122" x2="540" y2="153" style="stroke:#000000;stroke-width:2;"/>
+<line x1="721.32" y1="122" x2="540" y2="153" style="stroke:#000000;stroke-width:2;"/>
 <text x="780.24" y="173" text-anchor="middle">NP</text>
 <text x="660.36" y="234" text-anchor="middle">D</text>
 <text x="660.36" y="295" text-anchor="middle">the</text>
@@ -140,7 +140,7 @@ fof(id_33_A_lob_A01,axiom,
 <text x="900.84" y="295" text-anchor="middle">meeting</text>
 <line x1="900.84" y1="244" x2="900.84" y2="275" style="stroke:#000000;stroke-width:2;"/>
 <line x1="780.24" y1="183" x2="900" y2="214" style="stroke:#000000;stroke-width:2;"/>
-<line x1="720.72" y1="122" x2="780" y2="153" style="stroke:#000000;stroke-width:2;"/>
+<line x1="721.32" y1="122" x2="780" y2="153" style="stroke:#000000;stroke-width:2;"/>
 <line x1="540.72" y1="61" x2="720" y2="92" style="stroke:#000000;stroke-width:2;"/>
 <text x="1020.48" y="112" text-anchor="middle">PUNC</text>
 <text x="1020.48" y="173" text-anchor="middle">.</text>
@@ -151,12 +151,12 @@ fof(id_33_A_lob_A01,axiom,
 <pre>
 ( (IP-MAT (NP-SBJ (N Mr;{mr})
                   (NPR Macleod;{Macleod}))
-          (BED was;{be})
+          (BED;~La was;{be})
           (NEG not;{not})
-          (PP-LOC (P-ROLE at;{at})
-                  (NP (D the;{the})
-                      (N week-end;{week_end})
-                      (N meeting;{meeting})))
+          (PP-PRD2-LOC (P-ROLE at;{at})
+                       (NP (D the;{the})
+                           (N week-end;{week_end})
+                           (N meeting;{meeting})))
           (PUNC .))
   (ID 33_A_lob_A01))
 </pre>

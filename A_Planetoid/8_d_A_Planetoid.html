@@ -311,12 +311,11 @@ Look out when only one life - form remains , since if the raider abducting him r
 </svg>
 <br>
 <pre>
-arc(imperative_0012_1002,r_0012_0003__when_tmp,scope).
 arc(r_0012_0003__when_tmp,r_0012_0009__remains,restriction).
 arc(r_0012_0003__when_tmp,r_0012_0011__since_cnt,scope).
-arc(r_0012_0005__one_life_form,r_0012_0004__only,quality1).
-arc(r_0012_0009__remains,r_0012_0005__one_life_form,arg0).
-arc(r_0012_0011__since_cnt,r_0012_0001__Look_out,scope).
+arc(r_0012_0005__one__r_0012_0006__life_r_0012_0008__form,r_0012_0004__only,quality1).
+arc(r_0012_0009__remains,r_0012_0005__one__r_0012_0006__life_r_0012_0008__form,arg0).
+arc(r_0012_0011__since_cnt,r_0012_0001__Look__r_0012_0002__out,scope).
 arc(r_0012_0011__since_cnt,r_0012_0012__if_cnt_cnd,restriction).
 arc(r_0012_0012__if_cnt_cnd,r_0012_0017__reaches,restriction).
 arc(r_0012_0012__if_cnt_cnd,r_0012_0027__and,scope).
@@ -327,16 +326,17 @@ arc(r_0012_0017__reaches,r_0012_0019__top,arg1).
 arc(r_0012_0019__top,r_0012_0022__screen,r_0012_0020__of).
 arc(r_0012_0025__explodes,r_0012_0024__planetoid,arg0).
 arc(r_0012_0027__and,r_0012_0025__explodes,conj1).
-arc(r_0012_0027__and,r_0012_0028__quantificational__all,conj2).
-arc(r_0012_0028__quantificational__all,r_0012_0030__raiders,restriction).
-arc(r_0012_0028__quantificational__all,r_0012_0031__become,scope).
+arc(r_0012_0027__and,r_0012_0028__quantificational__r_0012_0028__all,conj2).
+arc(r_0012_0028__quantificational__r_0012_0028__all,r_0012_0030__raiders,restriction).
+arc(r_0012_0028__quantificational__r_0012_0028__all,r_0012_0031__become,scope).
 arc(r_0012_0031__become,r_0012_0030__raiders,arg0).
 arc(r_0012_0031__become,r_0012_0032__mutants,prd2).
+arc(r_0012_1002__imperative,r_0012_0003__when_tmp,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_12_A_Planetoid,axiom,
+fof(id__12_A_Planetoid,axiom,
     ? [LIFE_FORM3X13,OPERATORX2,CONNX4,EVENTX7,CONNX8,CONNX11,CONJX24,QUANTX21,EVENTX23,EVENTX19,EVENTX17,EVENTX14,EVENTX25,LIFE_FORM3X5,ENTITYX20,ENTITYX22,ENTITYX18,ENTITYX12,ENTITYX15,SCREENX16,QUALITYX6] :
       ( isA(EVENTX14,r_0012_0015__abducting)
       &amp; arg0(EVENTX14) = ENTITYX12
@@ -348,16 +348,16 @@ fof(id_12_A_Planetoid,axiom,
       &amp; isA(SCREENX16,r_0012_0022__screen)
       &amp; isA(ENTITYX18,r_0012_0024__planetoid)
       &amp; isA(ENTITYX22,r_0012_0032__mutants)
-      &amp; isA(LIFE_FORM3X5,r_0012_0005__one_life_form)
+      &amp; isA(LIFE_FORM3X5,r_0012_0005__one__r_0012_0006__life_r_0012_0008__form)
       &amp; quality1(LIFE_FORM3X5) = QUALITYX6
       &amp; isA(QUALITYX6,r_0012_0004__only)
-      &amp; isA(OPERATORX2,imperative_0012_1002)
+      &amp; isA(OPERATORX2,r_0012_1002__imperative)
       &amp; scope(OPERATORX2) = CONNX4
       &amp; isA(CONNX4,r_0012_0003__when_tmp)
       &amp; scope(CONNX4) = CONNX8
       &amp; isA(CONNX8,r_0012_0011__since_cnt)
       &amp; scope(CONNX8) = EVENTX25
-      &amp; isA(EVENTX25,r_0012_0001__Look_out)
+      &amp; isA(EVENTX25,r_0012_0001__Look__r_0012_0002__out)
       &amp; restriction(CONNX8) = CONNX11
       &amp; isA(CONNX11,r_0012_0012__if_cnt_cnd)
       &amp; restriction(CONNX11) = EVENTX17
@@ -371,7 +371,7 @@ fof(id_12_A_Planetoid,axiom,
       &amp; arg0(EVENTX19) = ENTITYX18
       &amp; arg0(EVENTX19) = ENTITYX18
       &amp; conj2(CONJX24) = QUANTX21
-      &amp; isA(QUANTX21,r_0012_0028__quantificational__all)
+      &amp; isA(QUANTX21,r_0012_0028__quantificational__r_0012_0028__all)
       &amp; restriction(QUANTX21) = ENTITYX20
       &amp; isA(ENTITYX20,r_0012_0030__raiders)
       &amp; scope(QUANTX21) = EVENTX23

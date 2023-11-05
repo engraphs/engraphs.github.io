@@ -659,10 +659,6 @@ I 've told my neighbours that you 'll come to pick up the keys at 5 o'clock on 4
 </svg>
 <br>
 <pre>
-arc(abs_0003_1038,r_0006_0004__quantificational__all,restriction).
-arc(abs_0003_1038,r_0006_0008__write,scope).
-arc(imperative_0003_1025,r_0005_0001__Read,scope).
-arc(imperative_0003_1036,r_0006_0001__Then,scope).
 arc(r_0003_0002__month,r_0003_0001__Next,attrib1).
 arc(r_0003_0004__Pete,r_0003_0008__friend,prn3).
 arc(r_0003_0008__friend,r_0003_0007__English,attrib2).
@@ -672,8 +668,12 @@ arc(r_0003_0014__will,r_0003_0015__be,scope).
 arc(r_0003_0015__be,r_0003_0002__month,tmp).
 arc(r_0003_0015__be,r_0003_0004__Pete,arg0).
 arc(r_0003_0015__be,r_0003_0017__holiday,r_0003_0016__on_prd2).
-arc(r_0003_0015__be,r_0003_0022__two_weeks,r_0003_0021__for_tmp).
-arc(r_0003_0017__holiday,r_0003_0019__New_York,r_0003_0018__in).
+arc(r_0003_0015__be,r_0003_0022__two__r_0003_0023__weeks,r_0003_0021__for_tmp).
+arc(r_0003_0017__holiday,r_0003_0019__New__r_0003_0020__York,r_0003_0018__in).
+arc(r_0003_1025__imperative,r_0005_0001__Read,scope).
+arc(r_0003_1036__imperative,r_0006_0001__Then,scope).
+arc(r_0003_1038__abs,r_0006_0004__quantificational__r_0006_0004__all,restriction).
+arc(r_0003_1038__abs,r_0006_0008__write,scope).
 arc(r_0004_0002__have,r_0004_0003__agreed,catenative).
 arc(r_0004_0003__agreed,r_0004_0011__while_tmp,catenative).
 arc(r_0004_0005__look,r_0003_0004__Pete,r_0004_0009__for_bnf).
@@ -690,10 +690,10 @@ arc(r_0005_0006__letter,r_0003_0004__Pete,genv).
 arc(r_0005_0007__and,r_0005_0003__extract,conj1).
 arc(r_0005_0007__and,r_0005_0009__notes,conj2).
 arc(r_0005_0009__notes,r_0004_0001__You,genv).
-arc(r_0006_0001__Then,abs_0003_1038,scope).
+arc(r_0006_0001__Then,r_0003_1038__abs,scope).
 arc(r_0006_0003__using,r_0006_0006__notes,arg1).
-arc(r_0006_0004__quantificational__all,r_0006_0003__using,scope).
-arc(r_0006_0004__quantificational__all,r_0006_0006__notes,restriction).
+arc(r_0006_0004__quantificational__r_0006_0004__all,r_0006_0003__using,scope).
+arc(r_0006_0004__quantificational__r_0006_0004__all,r_0006_0006__notes,restriction).
 arc(r_0006_0006__notes,r_0004_0001__You,genv).
 arc(r_0006_0008__write,r_0003_0004__Pete,r_0006_0011__to_arg2).
 arc(r_0006_0008__write,r_0006_0010__letter,arg1).
@@ -703,16 +703,16 @@ arc(r_0007_0003__told,r_0007_0005__neighbours,arg2).
 arc(r_0007_0003__told,r_0007_0008___apos_ll,arg1).
 arc(r_0007_0005__neighbours,r_0003_0004__Pete,genv).
 arc(r_0007_0008___apos_ll,r_0007_0009__come,scope).
-arc(r_0007_0009__come,r_0007_0011__pick_up,catenative).
-arc(r_0007_0011__pick_up,r_0004_0001__You,arg0).
-arc(r_0007_0011__pick_up,r_0007_0014__keys,arg1).
-arc(r_0007_0011__pick_up,r_0007_0016__5_o_apos_clock,r_0007_0015__at_tmp).
-arc(r_0007_0016__5_o_apos_clock,r_0007_0019__4th_July,r_0007_0018__on).
+arc(r_0007_0009__come,r_0007_0011__pick__r_0007_0012__up,catenative).
+arc(r_0007_0011__pick__r_0007_0012__up,r_0004_0001__You,arg0).
+arc(r_0007_0011__pick__r_0007_0012__up,r_0007_0014__keys,arg1).
+arc(r_0007_0011__pick__r_0007_0012__up,r_0007_0016__5_r_0007_0017__o_apos_clock,r_0007_0015__at_tmp).
+arc(r_0007_0016__5__r_0007_0017__o_apos_clock,r_0007_0019__4th_r_0007_0020__July,r_0007_0018__on).
 
 </pre>
 <br>
 <pre>
-fof(id_3_A_fce_0102_2001_03__4_A_fce_0102_2001_03__5_A_fce_0102_2001_03__6_A_fce_0102_2001_03__7_A_fce_0102_2001_03,axiom,
+fof(id__3_A_fce_0102_2001_03__4_A_fce_0102_2001_03__5_A_fce_0102_2001_03__6_A_fce_0102_2001_03__7_A_fce_0102_2001_03,axiom,
     ? [CATENATIVEX10,STATEX11,CATENATIVEX48,STATEX51,STATEX53,PETEX13,PETEX14,PETEX16,PETEX29,HEARERX31,HEARERX42,PETEX45,PETEX47,PETEX50,HEARERX52,EVENTX60,EVENTX59,OPERATORX57,EVENTX58,EVENTX56,OPERATORX36,OPERATORX37,CONNX39,EVENTX46,QUANTX41,EVENTX43,OPERATORX25,EVENTX32,EVENTX21,EVENTX20,CONNX15,EVENTX18,EVENTX19,OPERATORX8,EVENTX9,EVENTX5,ENTITYX49,ENTITYX54,ENTITYX55,ENTITYX44,ENTITYX40,ENTITYX26,ENTITYX27,ENTITYX30,ENTITYX28,ENTITYX12,ENTITYX1,ENTITYX6,ENTITYX7,ENTITYX3,ATTRIBX4,ATTRIBX2,QUALITYX17] :
       ( CATENATIVEX10 = EVENTX20
       &amp; isA(EVENTX20,r_0004_0003__agreed)
@@ -739,7 +739,7 @@ fof(id_3_A_fce_0102_2001_03__4_A_fce_0102_2001_03__5_A_fce_0102_2001_03__6_A_fce
       &amp; isA(EVENTX58,r_0007_0009__come)
       &amp; catenative(EVENTX58) = STATEX53
       &amp; STATEX53 = EVENTX56
-      &amp; isA(EVENTX56,r_0007_0011__pick_up)
+      &amp; isA(EVENTX56,r_0007_0011__pick__r_0007_0012__up)
       &amp; arg0(EVENTX56) = HEARERX52
       &amp; arg1(EVENTX56) = ENTITYX54
       &amp; r_0007_0015__at_tmp(EVENTX56) = ENTITYX55
@@ -751,8 +751,8 @@ fof(id_3_A_fce_0102_2001_03__4_A_fce_0102_2001_03__5_A_fce_0102_2001_03__6_A_fce
       &amp; isA(ENTITYX3,r_0003_0008__friend)
       &amp; attrib2(ENTITYX3) = ATTRIBX4
       &amp; isA(ENTITYX6,r_0003_0017__holiday)
-      &amp; r_0003_0018__in(ENTITYX6) = r_0003_0019__New_York
-      &amp; isA(ENTITYX7,r_0003_0022__two_weeks)
+      &amp; r_0003_0018__in(ENTITYX6) = r_0003_0019__New__r_0003_0020__York
+      &amp; isA(ENTITYX7,r_0003_0022__two__r_0003_0023__weeks)
       &amp; isA(ENTITYX12,r_0004_0008__flat)
       &amp; genv(ENTITYX12) = PETEX13
       &amp; PETEX13 = r_0003_0004__Pete
@@ -780,8 +780,8 @@ fof(id_3_A_fce_0102_2001_03__4_A_fce_0102_2001_03__5_A_fce_0102_2001_03__6_A_fce
         | PETEX50 = r_0003_0004__Pete )
       &amp; HEARERX52 = r_0004_0001__You
       &amp; isA(ENTITYX54,r_0007_0014__keys)
-      &amp; isA(ENTITYX55,r_0007_0016__5_o_apos_clock)
-      &amp; r_0007_0018__on(ENTITYX55) = r_0007_0019__4th_July
+      &amp; isA(ENTITYX55,r_0007_0016__5__r_0007_0017__o_apos_clock)
+      &amp; r_0007_0018__on(ENTITYX55) = r_0007_0019__4th__r_0007_0020__July
       &amp; isA(ATTRIBX2,r_0003_0001__Next)
       &amp; isA(ATTRIBX4,r_0003_0007__English)
       &amp; isA(r_0003_0004__Pete,r_0003_0004__Pete)
@@ -796,17 +796,17 @@ fof(id_3_A_fce_0102_2001_03__4_A_fce_0102_2001_03__5_A_fce_0102_2001_03__6_A_fce
       &amp; r_0003_0021__for_tmp(EVENTX9) = ENTITYX7
       &amp; isA(EVENTX21,r_0004_0002__have)
       &amp; catenative(EVENTX21) = CATENATIVEX10
-      &amp; isA(OPERATORX25,imperative_0003_1025)
+      &amp; isA(OPERATORX25,r_0003_1025__imperative)
       &amp; scope(OPERATORX25) = EVENTX32
       &amp; isA(EVENTX32,r_0005_0001__Read)
       &amp; arg1(EVENTX32) = ENTITYX26
-      &amp; isA(OPERATORX36,imperative_0003_1036)
+      &amp; isA(OPERATORX36,r_0003_1036__imperative)
       &amp; scope(OPERATORX36) = OPERATORX37
       &amp; isA(OPERATORX37,r_0006_0001__Then)
       &amp; scope(OPERATORX37) = CONNX39
-      &amp; isA(CONNX39,abs_0003_1038)
+      &amp; isA(CONNX39,r_0003_1038__abs)
       &amp; restriction(CONNX39) = QUANTX41
-      &amp; isA(QUANTX41,r_0006_0004__quantificational__all)
+      &amp; isA(QUANTX41,r_0006_0004__quantificational__r_0006_0004__all)
       &amp; restriction(QUANTX41) = ENTITYX40
       &amp; isA(ENTITYX40,r_0006_0006__notes)
       &amp; genv(ENTITYX40) = HEARERX42

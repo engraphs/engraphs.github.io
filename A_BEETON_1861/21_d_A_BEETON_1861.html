@@ -292,9 +292,6 @@ Bore a hole in the lower part of the cask with a gimlet , receiving the liquid s
 </svg>
 <br>
 <pre>
-arc(cnt_0034_1009,r_0034_0001__Bore,scope).
-arc(cnt_0034_1009,r_0034_0015__receiving,restriction).
-arc(imperative_0034_1002,cnt_0034_1009,scope).
 arc(r_0034_0001__Bore,r_0034_0003__hole,arg1).
 arc(r_0034_0001__Bore,r_0034_0013__gimlet,r_0034_0011__with_mnr).
 arc(r_0034_0003__hole,r_0034_0007__part,r_0034_0004__in).
@@ -311,11 +308,14 @@ arc(r_0034_0029__placed,r_0034_0024__and,arg1).
 arc(r_0034_0029__placed,r_0034_0033__or,r_0034_0030__in_loc).
 arc(r_0034_0033__or,r_0034_0032__tub,conj1).
 arc(r_0034_0033__or,r_0034_0034__basin,conj2).
+arc(r_0034_1002__imperative,r_0034_1009__cnt,scope).
+arc(r_0034_1009__cnt,r_0034_0001__Bore,scope).
+arc(r_0034_1009__cnt,r_0034_0015__receiving,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_34_A_BEETON_1861,axiom,
+fof(id__34_A_BEETON_1861,axiom,
     ? [CATENATIVEX14,OPERATORX2,CONNX10,EVENTX24,EVENTX23,EVENTX20,EVENTX19,EVENTX25,ENTITYX4,ENTITYX8,ENTITYX11,ENTITYX13,ENTITYX21,ENTITYX22,ENTITYX16,ENTITYX17,ENTITYX18,ENTITYX5,ENTITYX7,ATTRIBX12,ATTRIBX6] :
       ( CATENATIVEX14 = EVENTX19
       &amp; isA(EVENTX19,r_0034_0029__placed)
@@ -347,9 +347,9 @@ fof(id_34_A_BEETON_1861,axiom,
       &amp; isA(ENTITYX22,r_0034_0025__filterer)
       &amp; isA(ATTRIBX6,r_0034_0006__lower)
       &amp; isA(ATTRIBX12,r_0034_0017__liquid)
-      &amp; isA(OPERATORX2,imperative_0034_1002)
+      &amp; isA(OPERATORX2,r_0034_1002__imperative)
       &amp; scope(OPERATORX2) = CONNX10
-      &amp; isA(CONNX10,cnt_0034_1009)
+      &amp; isA(CONNX10,r_0034_1009__cnt)
       &amp; scope(CONNX10) = EVENTX25
       &amp; isA(EVENTX25,r_0034_0001__Bore)
       &amp; arg1(EVENTX25) = ENTITYX4

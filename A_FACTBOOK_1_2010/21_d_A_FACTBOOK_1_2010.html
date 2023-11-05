@@ -531,7 +531,7 @@ water contact diseases acquired through swimming or wading in freshwater lakes ,
 <br>
 <pre>
 arc(r_0056_0001__Chikungunya,r_0056_0011__disease,prn3).
-arc(r_0056_0003__mosquito,r_0056_0007__Aedes_aegypti,prn2).
+arc(r_0056_0003__mosquito,r_0056_0007__Aedes__r_0056_0008__aegypti,prn2).
 arc(r_0056_0005__borne,r_0056_0003__mosquito,arg0_lgs).
 arc(r_0056_0005__borne,r_0056_0011__disease,arg1).
 arc(r_0056_0011__disease,r_0056_0010__viral,attrib4).
@@ -539,9 +539,9 @@ arc(r_0056_0011__disease,r_0056_0017__similar,attrib8).
 arc(r_0056_0012__associated,r_0056_0011__disease,arg1).
 arc(r_0056_0012__associated,r_0056_0015__environments,r_0056_0013__with_clr).
 arc(r_0056_0015__environments,r_0056_0014__urban,attrib1).
-arc(r_0056_0017__similar,r_0056_0019__Dengue_Fever,r_0056_0018__to).
+arc(r_0056_0017__similar,r_0056_0019__Dengue__r_0056_0020__Fever,r_0056_0018__to).
 arc(r_0056_0022__characterized,r_0056_0011__disease,arg1).
-arc(r_0056_0022__characterized,r_0056_0025__onset,arg0_by_lgs).
+arc(r_0056_0022__characterized,r_0056_0025__onset,arg0__r_0056_0023__by_lgs).
 arc(r_0056_0022__characterized,r_0056_0044__result,prn4).
 arc(r_0056_0025__onset,r_0056_0024__sudden,attrib1).
 arc(r_0056_0025__onset,r_0056_0031__and,r_0056_0026__of).
@@ -552,26 +552,26 @@ arc(r_0056_0034__pain,r_0056_0032__severe,attrib1).
 arc(r_0056_0034__pain,r_0056_0033__joint,attrib2).
 arc(r_0056_0035__usually,r_0056_0036__lasting,scope).
 arc(r_0056_0036__lasting,r_0056_0025__onset,arg0).
-arc(r_0056_0036__lasting,r_0056_0037__3_7_days,clr_tmp).
+arc(r_0056_0036__lasting,r_0056_0037__3__r_0056_0039__7_r_0056_0040__days,clr_tmp).
 arc(r_0056_0044__result,r_0056_0043__cases,arg0).
 arc(r_0056_0044__result,r_0056_0047__arthritis,r_0056_0045__in_clr).
 arc(r_0056_0047__arthritis,r_0056_0046__persistent,attrib1).
-arc(r_0057_0004__acquired,r_0057_0001__water_contact_diseases,arg1).
+arc(r_0057_0004__acquired,r_0057_0001__water__r_0057_0002__contact_r_0057_0003__diseases,arg1).
 arc(r_0057_0004__acquired,r_0057_0007__or,r_0057_0005__through_cnt).
 arc(r_0057_0006__swimming,r_0057_0015__and,r_0057_0009__in_loc).
 arc(r_0057_0007__or,r_0057_0006__swimming,conj1).
 arc(r_0057_0007__or,r_0057_0008__wading,conj2).
 arc(r_0057_0008__wading,r_0057_0015__and,r_0057_0009__in_loc).
-arc(r_0057_0015__and,r_0057_0010__freshwater_lakes,conj1).
+arc(r_0057_0015__and,r_0057_0010__freshwater__r_0057_0011__lakes,conj1).
 arc(r_0057_0015__and,r_0057_0013__streams,conj2).
 arc(r_0057_0015__and,r_0057_0016__rivers,conj3).
 arc(z_0056_1031,r_0056_0001__Chikungunya,z_0056_1004).
-arc(z_0056_1050,r_0057_0001__water_contact_diseases,z_0056_1036).
+arc(z_0056_1050,r_0057_0001__water__r_0057_0002__contact_r_0057_0003__diseases,z_0056_1036).
 
 </pre>
 <br>
 <pre>
-fof(id_56_A_FACTBOOK_1_2010__57_A_FACTBOOK_1_2010,axiom,
+fof(id__56_A_FACTBOOK_1_2010__57_A_FACTBOOK_1_2010,axiom,
     ? [EVENTX25,EVENTX39,EVENTX51,EVENTX49,CONJX48,EVENTX47,EVENTX46,EVENTX32,EVENTX30,EVENTX29,OPERATORX22,EVENTX24,EVENTX12,EVENTX7,ENTITYX37,ENTITYX42,ENTITYX43,ENTITYX44,ENTITYX45,ENTITYX5,ENTITYX14,ENTITYX26,ENTITYX27,ENTITYX16,ENTITYX23,ENTITYX17,ENTITYX18,ENTITYX19,ENTITYX10,ENTITYX6,ATTRIBX8,ATTRIBX13,ATTRIBX28,ATTRIBX15,ATTRIBX20,ATTRIBX21,ATTRIBX11] :
       ( EVENTX25 = EVENTX29
       &amp; isA(EVENTX29,r_0056_0044__result)
@@ -592,14 +592,14 @@ fof(id_56_A_FACTBOOK_1_2010__57_A_FACTBOOK_1_2010,axiom,
       &amp; arg1(EVENTX12) = ENTITYX5
       &amp; r_0056_0013__with_clr(EVENTX12) = ENTITYX10
       &amp; isA(EVENTX30,r_0056_0022__characterized)
-      &amp; arg0_by_lgs(EVENTX30) = ENTITYX14
+      &amp; arg0__r_0056_0023__by_lgs(EVENTX30) = ENTITYX14
       &amp; arg1(EVENTX30) = ENTITYX5
       &amp; prn4(EVENTX30) = EVENTX25
       &amp; isA(ENTITYX5,r_0056_0011__disease)
       &amp; attrib4(ENTITYX5) = ATTRIBX8
       &amp; attrib8(ENTITYX5) = ATTRIBX13
       &amp; isA(ENTITYX6,r_0056_0003__mosquito)
-      &amp; prn2(ENTITYX6) = r_0056_0007__Aedes_aegypti
+      &amp; prn2(ENTITYX6) = r_0056_0007__Aedes__r_0056_0008__aegypti
       &amp; isA(ENTITYX10,r_0056_0015__environments)
       &amp; attrib1(ENTITYX10) = ATTRIBX11
       &amp; isA(OPERATORX22,r_0056_0035__usually)
@@ -619,19 +619,19 @@ fof(id_56_A_FACTBOOK_1_2010__57_A_FACTBOOK_1_2010,axiom,
       &amp; isA(ENTITYX19,r_0056_0034__pain)
       &amp; attrib1(ENTITYX19) = ATTRIBX20
       &amp; attrib2(ENTITYX19) = ATTRIBX21
-      &amp; isA(ENTITYX23,r_0056_0037__3_7_days)
+      &amp; isA(ENTITYX23,r_0056_0037__3__r_0056_0039__7_r_0056_0040__days)
       &amp; isA(ENTITYX26,r_0056_0043__cases)
       &amp; isA(ENTITYX27,r_0056_0047__arthritis)
       &amp; attrib1(ENTITYX27) = ATTRIBX28
       &amp; isA(EVENTX49,r_0057_0004__acquired)
       &amp; arg1(EVENTX49) = ENTITYX37
       &amp; r_0057_0005__through_cnt(EVENTX49) = EVENTX39
-      &amp; isA(ENTITYX37,r_0057_0001__water_contact_diseases)
+      &amp; isA(ENTITYX37,r_0057_0001__water__r_0057_0002__contact_r_0057_0003__diseases)
       &amp; isA(ENTITYX42,r_0057_0015__and)
       &amp; conj1(ENTITYX42) = ENTITYX43
       &amp; conj2(ENTITYX42) = ENTITYX44
       &amp; conj3(ENTITYX42) = ENTITYX45
-      &amp; isA(ENTITYX43,r_0057_0010__freshwater_lakes)
+      &amp; isA(ENTITYX43,r_0057_0010__freshwater__r_0057_0011__lakes)
       &amp; isA(ENTITYX44,r_0057_0013__streams)
       &amp; isA(ENTITYX45,r_0057_0016__rivers)
       &amp; isA(r_0056_0001__Chikungunya,r_0056_0001__Chikungunya)
@@ -639,7 +639,7 @@ fof(id_56_A_FACTBOOK_1_2010__57_A_FACTBOOK_1_2010,axiom,
       &amp; isA(ATTRIBX8,r_0056_0010__viral)
       &amp; isA(ATTRIBX11,r_0056_0014__urban)
       &amp; isA(ATTRIBX13,r_0056_0017__similar)
-      &amp; r_0056_0018__to(ATTRIBX13) = r_0056_0019__Dengue_Fever
+      &amp; r_0056_0018__to(ATTRIBX13) = r_0056_0019__Dengue__r_0056_0020__Fever
       &amp; isA(ATTRIBX15,r_0056_0024__sudden)
       &amp; isA(ATTRIBX20,r_0056_0032__severe)
       &amp; isA(ATTRIBX21,r_0056_0033__joint)

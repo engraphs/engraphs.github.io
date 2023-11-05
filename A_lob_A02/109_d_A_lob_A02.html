@@ -155,23 +155,23 @@ It was last used a year ago , to deal with the St Pancras rent riots .
 </svg>
 <br>
 <pre>
-arc(cnt_0115_1006,r_0115_0004__used,scope).
-arc(cnt_0115_1006,r_0115_0010__deal,restriction).
-arc(r_0115_0002__was,cnt_0115_1006,catenative).
+arc(r_0115_0002__was,r_0115_1006__cnt,catenative).
 arc(r_0115_0004__used,r_0115_0001__It,arg1).
 arc(r_0115_0004__used,r_0115_0003__last,tmp2).
 arc(r_0115_0004__used,r_0115_0007__ago,tmp4).
 arc(r_0115_0007__ago,r_0115_0006__year,tmp).
 arc(r_0115_0010__deal,r_0115_0001__It,arg0).
-arc(r_0115_0010__deal,r_0115_0013__St_Pancras_rent_riots,r_0115_0011__with_clr).
+arc(r_0115_0010__deal,r_0115_0013__St__r_0115_0014__Pancras_r_0115_0015__rent_r_0115_0016__riots,r_0115_0011__with_clr).
+arc(r_0115_1006__cnt,r_0115_0004__used,scope).
+arc(r_0115_1006__cnt,r_0115_0010__deal,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_115_A_lob_A02,axiom,
+fof(id__115_A_lob_A02,axiom,
     ? [CATENATIVEX1,EVENTX11,CONNX7,EVENTX9,EVENTX10,ENTITYX8,ENTITYX5,QUALITYX3,QUALITYX4] :
       ( CATENATIVEX1 = CONNX7
-      &amp; isA(CONNX7,cnt_0115_1006)
+      &amp; isA(CONNX7,r_0115_1006__cnt)
       &amp; scope(CONNX7) = EVENTX10
       &amp; isA(EVENTX10,r_0115_0004__used)
       &amp; arg1(EVENTX10) = r_0115_0001__It
@@ -182,7 +182,7 @@ fof(id_115_A_lob_A02,axiom,
       &amp; arg0(EVENTX9) = r_0115_0001__It
       &amp; r_0115_0011__with_clr(EVENTX9) = ENTITYX8
       &amp; isA(ENTITYX5,r_0115_0006__year)
-      &amp; isA(ENTITYX8,r_0115_0013__St_Pancras_rent_riots)
+      &amp; isA(ENTITYX8,r_0115_0013__St__r_0115_0014__Pancras_r_0115_0015__rent_r_0115_0016__riots)
       &amp; isA(QUALITYX3,r_0115_0003__last)
       &amp; isA(QUALITYX4,r_0115_0007__ago)
       &amp; tmp(QUALITYX4) = ENTITYX5

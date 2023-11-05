@@ -258,7 +258,6 @@
 </svg>
 <br>
 <pre>
-arc(imperative_0061_1007,r_0061_0004__let,scope).
 arc(r_0061_0004__let,r_0061_0005__me,arg1).
 arc(r_0061_0004__let,r_0061_0006__buy,prd).
 arc(r_0061_0006__buy,r_0061_0007__us,arg2).
@@ -266,7 +265,9 @@ arc(r_0061_0006__buy,r_0061_0008__both,com3).
 arc(r_0061_0006__buy,r_0061_0010__cup,arg1).
 arc(r_0061_0010__cup,r_0061_0012__tea,r_0061_0011__of).
 arc(r_0061_0016__said,r_0061_0005__me,arg0).
-arc(r_0061_0016__said,utterance_0061_1003,arg1).
+arc(r_0061_0016__said,r_0061_1003__utterance,arg1).
+arc(r_0061_1003__utterance,r_0061_1007__imperative,part1).
+arc(r_0061_1007__imperative,r_0061_0004__let,scope).
 arc(r_0062_0002__Then,r_0062_0004__can,scope).
 arc(r_0062_0004__can,r_0062_0005__give,scope).
 arc(r_0062_0005__give,r_0061_0005__me,arg0).
@@ -274,17 +275,16 @@ arc(r_0062_0005__give,r_0062_0006__you,arg2).
 arc(r_0062_0005__give,r_0062_0007__back,dir7).
 arc(r_0062_0005__give,r_0062_0009__money,arg1).
 arc(r_0062_0009__money,r_0062_0006__you,genv).
-arc(utterance_0061_1003,imperative_0061_1007,part1).
 
 </pre>
 <br>
 <pre>
-fof(id_61_A_LooseChange__62_A_LooseChange,axiom,
+fof(id__61_A_LooseChange__62_A_LooseChange,axiom,
     ? [STATEX1,STATEX8,SPEAKERX17,SPEAKERX20,LAYLORX23,OPERATORX19,OPERATORX24,EVENTX25,EVENTX18,CONJX16,OPERATORX7,EVENTX15,EVENTX14,ENTITYX22,ENTITYX12,ENTITYX13,QUALITYX21,QUALITYX11] :
       ( STATEX1 = CONJX16
-      &amp; isA(CONJX16,utterance_0061_1003)
+      &amp; isA(CONJX16,r_0061_1003__utterance)
       &amp; part1(CONJX16) = OPERATORX7
-      &amp; isA(OPERATORX7,imperative_0061_1007)
+      &amp; isA(OPERATORX7,r_0061_1007__imperative)
       &amp; scope(OPERATORX7) = EVENTX15
       &amp; isA(EVENTX15,r_0061_0004__let)
       &amp; arg1(EVENTX15) = r_0061_0005__me

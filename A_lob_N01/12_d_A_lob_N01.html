@@ -242,30 +242,30 @@ For some reason the orderlies had forgotten to switch on the lights ; there was 
 arc(r_0018_0006__had,r_0018_0003__reason,r_0018_0001__For_cnt).
 arc(r_0018_0006__had,r_0018_0007__forgotten,catenative).
 arc(r_0018_0007__forgotten,r_0018_0005__orderlies,arg0).
-arc(r_0018_0007__forgotten,r_0018_0009__switch_on,arg1).
-arc(r_0018_0009__switch_on,r_0018_0005__orderlies,arg0).
-arc(r_0018_0009__switch_on,r_0018_0012__lights,arg1).
+arc(r_0018_0007__forgotten,r_0018_0009__switch__r_0018_0010__on,arg1).
+arc(r_0018_0009__switch__r_0018_0010__on,r_0018_0005__orderlies,arg0).
+arc(r_0018_0009__switch__r_0018_0010__on,r_0018_0012__lights,arg1).
 arc(r_0018_0015__was,r_0018_0017__colour,arg0).
-arc(r_0018_0016__quantificational__no,r_0018_0015__was,scope).
-arc(r_0018_0016__quantificational__no,r_0018_0017__colour,restriction).
+arc(r_0018_0016__quantificational__r_0018_0016__no,r_0018_0015__was,scope).
+arc(r_0018_0016__quantificational__r_0018_0016__no,r_0018_0017__colour,restriction).
 arc(r_0018_0020__features,r_0018_0019__physical,attrib1).
 arc(r_0018_0021__were,r_0018_0020__features,arg0).
 arc(r_0018_0021__were,r_0018_0022__distinguishable,prd2).
-arc(r_0018_0022__distinguishable,r_0018_0025__gradations,r_0018_0023__solely_by).
+arc(r_0018_0022__distinguishable,r_0018_0025__gradations,r_0018_0023__solely__r_0018_0024__by).
 arc(r_0018_0025__gradations,r_0018_0028__greyness,r_0018_0026__of).
 arc(r_0018_0028__greyness,r_0018_0027__silvery,attrib1).
 
 </pre>
 <br>
 <pre>
-fof(id_18_A_lob_N01,axiom,
+fof(id__18_A_lob_N01,axiom,
     ? [CATENATIVEX3,STATEX4,EVENTX18,QUANTX10,EVENTX11,EVENTX8,EVENTX7,EVENTX6,ENTITYX12,ENTITYX15,ENTITYX16,ENTITYX9,ENTITYX1,ENTITYX2,ENTITYX5,ATTRIBX14,ATTRIBX17,ATTRIBX13] :
       ( CATENATIVEX3 = EVENTX7
       &amp; isA(EVENTX7,r_0018_0007__forgotten)
       &amp; arg0(EVENTX7) = ENTITYX2
       &amp; arg1(EVENTX7) = STATEX4
       &amp; STATEX4 = EVENTX6
-      &amp; isA(EVENTX6,r_0018_0009__switch_on)
+      &amp; isA(EVENTX6,r_0018_0009__switch__r_0018_0010__on)
       &amp; arg0(EVENTX6) = ENTITYX2
       &amp; arg1(EVENTX6) = ENTITYX5
       &amp; isA(ENTITYX1,r_0018_0003__reason)
@@ -279,12 +279,12 @@ fof(id_18_A_lob_N01,axiom,
       &amp; attrib1(ENTITYX16) = ATTRIBX17
       &amp; isA(ATTRIBX13,r_0018_0019__physical)
       &amp; isA(ATTRIBX14,r_0018_0022__distinguishable)
-      &amp; r_0018_0023__solely_by(ATTRIBX14) = ENTITYX15
+      &amp; r_0018_0023__solely__r_0018_0024__by(ATTRIBX14) = ENTITYX15
       &amp; isA(ATTRIBX17,r_0018_0027__silvery)
       &amp; isA(EVENTX8,r_0018_0006__had)
       &amp; r_0018_0001__For_cnt(EVENTX8) = ENTITYX1
       &amp; catenative(EVENTX8) = CATENATIVEX3
-      &amp; isA(QUANTX10,r_0018_0016__quantificational__no)
+      &amp; isA(QUANTX10,r_0018_0016__quantificational__r_0018_0016__no)
       &amp; restriction(QUANTX10) = ENTITYX9
       &amp; isA(ENTITYX9,r_0018_0017__colour)
       &amp; scope(QUANTX10) = EVENTX11

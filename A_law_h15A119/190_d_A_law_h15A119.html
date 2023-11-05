@@ -243,10 +243,10 @@ The competent minister may advise a business operator handling personal informat
 arc(r_0190_0003__minister,r_0190_0002__competent,attrib2).
 arc(r_0190_0004__may,r_0190_0005__advise,scope).
 arc(r_0190_0005__advise,r_0190_0003__minister,arg0).
-arc(r_0190_0005__advise,r_0190_0007__business_operator,arg1).
+arc(r_0190_0005__advise,r_0190_0007__business__r_0190_0008__operator,arg1).
 arc(r_0190_0005__advise,r_0190_0014__handle,r_0190_0012__on_clr).
 arc(r_0190_0005__advise,r_0190_0020__extent,r_0190_0018__to_mnr).
-arc(r_0190_0009__handling,r_0190_0007__business_operator,arg0).
+arc(r_0190_0009__handling,r_0190_0007__business__r_0190_0008__operator,arg0).
 arc(r_0190_0009__handling,r_0190_0011__information,arg1).
 arc(r_0190_0011__information,r_0190_0010__personal,attrib1).
 arc(r_0190_0014__handle,r_0190_0017__information,r_0190_0015__of).
@@ -259,14 +259,14 @@ arc(r_0190_0026__provisions,r_0190_0029__section,r_0190_0027__of).
 </pre>
 <br>
 <pre>
-fof(id_190_A_law_h15A119,axiom,
+fof(id__190_A_law_h15A119,axiom,
     ? [OPERATORX15,EVENTX16,EVENTX6,ENTITYX1,ENTITYX3,ENTITYX7,ENTITYX10,ENTITYX12,ENTITYX13,ENTITYX14,ENTITYX8,ENTITYX4,ATTRIBX11,ATTRIBX9,ATTRIBX5,ATTRIBX2] :
       ( isA(ENTITYX1,r_0190_0003__minister)
       &amp; attrib2(ENTITYX1) = ATTRIBX2
       &amp; isA(EVENTX6,r_0190_0009__handling)
       &amp; arg0(EVENTX6) = ENTITYX3
       &amp; arg1(EVENTX6) = ENTITYX4
-      &amp; isA(ENTITYX3,r_0190_0007__business_operator)
+      &amp; isA(ENTITYX3,r_0190_0007__business__r_0190_0008__operator)
       &amp; isA(ENTITYX4,r_0190_0011__information)
       &amp; attrib1(ENTITYX4) = ATTRIBX5
       &amp; isA(ENTITYX7,r_0190_0014__handle)

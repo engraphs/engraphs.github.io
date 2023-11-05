@@ -212,16 +212,16 @@ You act as if you knew what he 's found . &rdquo;
 </svg>
 <br>
 <pre>
-arc(question_0408_1002,r_0408_0003__are,scope).
-arc(question_0408_1012,r_0409_0008___apos_s,scope).
 arc(r_0408_0003__are,r_0408_0005__talking,catenative).
 arc(r_0408_0005__talking,r_0408_0002__What,r_0408_0006__about_clr).
 arc(r_0408_0005__talking,r_0408_0004__you,arg0).
+arc(r_0408_1002__question,r_0408_0003__are,scope).
+arc(r_0408_1012__question,r_0409_0008___apos_s,scope).
 arc(r_0409_0002__act,r_0408_0004__you,arg0).
 arc(r_0409_0003__as_if_mnr,r_0409_0002__act,scope).
 arc(r_0409_0003__as_if_mnr,r_0409_0005__knew,restriction).
-arc(r_0409_0005__knew,question_0408_1012,arg1).
 arc(r_0409_0005__knew,r_0408_0004__you,arg0).
+arc(r_0409_0005__knew,r_0408_1012__question,arg1).
 arc(r_0409_0008___apos_s,r_0409_0009__found,catenative).
 arc(r_0409_0009__found,r_0409_0006__what,arg1).
 arc(r_0409_0009__found,r_0409_0007__he,arg0).
@@ -229,14 +229,14 @@ arc(r_0409_0009__found,r_0409_0007__he,arg0).
 </pre>
 <br>
 <pre>
-fof(id_408_A_DICK_1952__409_A_DICK_1952,axiom,
+fof(id__408_A_DICK_1952__409_A_DICK_1952,axiom,
     ? [CATENATIVEX4,STATEX10,CATENATIVEX14,DORLEX7,DORLEX9,CONNX8,EVENTX17,OPERATORX12,EVENTX16,EVENTX15,EVENTX18,OPERATORX2,EVENTX6,EVENTX5,ENTITYX13,ENTITYX3] :
       ( CATENATIVEX4 = EVENTX5
       &amp; isA(EVENTX5,r_0408_0005__talking)
       &amp; arg0(EVENTX5) = r_0408_0004__you
       &amp; r_0408_0006__about_clr(EVENTX5) = ENTITYX3
       &amp; STATEX10 = OPERATORX12
-      &amp; isA(OPERATORX12,question_0408_1012)
+      &amp; isA(OPERATORX12,r_0408_1012__question)
       &amp; scope(OPERATORX12) = EVENTX16
       &amp; isA(EVENTX16,r_0409_0008___apos_s)
       &amp; catenative(EVENTX16) = CATENATIVEX14
@@ -249,7 +249,7 @@ fof(id_408_A_DICK_1952__409_A_DICK_1952,axiom,
       &amp; ( DORLEX9 = DORLEX7
         | DORLEX9 = r_0408_0004__you )
       &amp; isA(ENTITYX13,r_0409_0006__what)
-      &amp; isA(OPERATORX2,question_0408_1002)
+      &amp; isA(OPERATORX2,r_0408_1002__question)
       &amp; scope(OPERATORX2) = EVENTX6
       &amp; isA(EVENTX6,r_0408_0003__are)
       &amp; catenative(EVENTX6) = CATENATIVEX4

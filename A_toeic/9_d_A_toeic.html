@@ -41,30 +41,30 @@ What color item does the woman buy ?
 <ellipse fill="none" stroke="black" cx="57.19" cy="-18" rx="57.39" ry="18"/>
 <text text-anchor="middle" x="57.19" y="-14.3" font-family="fixed" font-size="14.00">color_item</text>
 </g>
-<!-- 0013_0004_0013_0007 -->
-<g id="node2" class="node">
-<title>0013_0004_0013_0007</title>
-<ellipse fill="none" stroke="black" cx="116.19" cy="-105" rx="53.89" ry="18"/>
-<text text-anchor="middle" x="116.19" y="-101.3" font-family="fixed" font-size="14.00">does_buy</text>
-</g>
-<!-- 0013_0004_0013_0007&#45;&gt;0013_0002_0013_0003 -->
-<g id="edge1" class="edge">
-<title>0013_0004_0013_0007&#45;&gt;0013_0002_0013_0003</title>
-<path fill="none" stroke="black" d="M104.54,-87.21C96.05,-74.98 84.41,-58.21 74.8,-44.36"/>
-<polygon fill="black" stroke="black" points="77.4,-41.98 68.83,-35.76 71.65,-45.97 77.4,-41.98"/>
-<text text-anchor="middle" x="112.69" y="-57.8" font-family="fixed" font-size="14.00">[arg1]</text>
-</g>
 <!-- 0013_0006 -->
-<g id="node3" class="node">
+<g id="node2" class="node">
 <title>0013_0006</title>
 <ellipse fill="none" stroke="black" cx="176.19" cy="-18" rx="43.59" ry="18"/>
 <text text-anchor="middle" x="176.19" y="-14.3" font-family="fixed" font-size="14.00">woman</text>
 </g>
-<!-- 0013_0004_0013_0007&#45;&gt;0013_0006 -->
+<!-- 0013_0007 -->
+<g id="node3" class="node">
+<title>0013_0007</title>
+<ellipse fill="none" stroke="black" cx="116.19" cy="-105" rx="27.9" ry="18"/>
+<text text-anchor="middle" x="116.19" y="-101.3" font-family="fixed" font-size="14.00">buy</text>
+</g>
+<!-- 0013_0007&#45;&gt;0013_0002_0013_0003 -->
+<g id="edge1" class="edge">
+<title>0013_0007&#45;&gt;0013_0002_0013_0003</title>
+<path fill="none" stroke="black" d="M105.1,-88.01C96.53,-75.67 84.51,-58.35 74.65,-44.15"/>
+<polygon fill="black" stroke="black" points="77.43,-42.01 68.85,-35.79 71.68,-46 77.43,-42.01"/>
+<text text-anchor="middle" x="112.69" y="-57.8" font-family="fixed" font-size="14.00">[arg1]</text>
+</g>
+<!-- 0013_0007&#45;&gt;0013_0006 -->
 <g id="edge2" class="edge">
-<title>0013_0004_0013_0007&#45;&gt;0013_0006</title>
-<path fill="none" stroke="black" d="M128.05,-87.21C136.82,-74.79 148.9,-57.67 158.76,-43.7"/>
-<polygon fill="black" stroke="black" points="161.66,-45.66 164.57,-35.47 155.94,-41.62 161.66,-45.66"/>
+<title>0013_0007&#45;&gt;0013_0006</title>
+<path fill="none" stroke="black" d="M127.2,-88.41C136,-75.95 148.5,-58.24 158.67,-43.83"/>
+<polygon fill="black" stroke="black" points="161.74,-45.55 164.65,-35.36 156.02,-41.51 161.74,-45.55"/>
 <text text-anchor="middle" x="171.69" y="-57.8" font-family="fixed" font-size="14.00">[arg0]</text>
 </g>
 <!-- question_0013_1002 -->
@@ -73,9 +73,9 @@ What color item does the woman buy ?
 <ellipse fill="none" stroke="black" cx="116.19" cy="-192" rx="56.59" ry="18"/>
 <text text-anchor="middle" x="116.19" y="-188.3" font-family="fixed" font-size="14.00">[question]</text>
 </g>
-<!-- question_0013_1002&#45;&gt;0013_0004_0013_0007 -->
+<!-- question_0013_1002&#45;&gt;0013_0007 -->
 <g id="edge3" class="edge">
-<title>question_0013_1002&#45;&gt;0013_0004_0013_0007</title>
+<title>question_0013_1002&#45;&gt;0013_0007</title>
 <path fill="none" stroke="black" d="M116.19,-173.8C116.19,-162.16 116.19,-146.55 116.19,-133.24"/>
 <polygon fill="black" stroke="black" points="119.7,-133.18 116.19,-123.18 112.7,-133.18 119.7,-133.18"/>
 <text text-anchor="middle" x="142.19" y="-144.8" font-family="fixed" font-size="14.00">[scope]</text>
@@ -84,20 +84,20 @@ What color item does the woman buy ?
 </svg>
 <br>
 <pre>
-arc(question_0013_1002,r_0013_0004__does_buy,scope).
-arc(r_0013_0004__does_buy,r_0013_0002__color_item,arg1).
-arc(r_0013_0004__does_buy,r_0013_0006__woman,arg0).
+arc(r_0013_0007__buy,r_0013_0002__color__r_0013_0003__item,arg1).
+arc(r_0013_0007__buy,r_0013_0006__woman,arg0).
+arc(r_0013_1002__question,r_0013_0007__buy,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_13_A_toeic,axiom,
+fof(id__13_A_toeic,axiom,
     ? [OPERATORX2,EVENTX5,ENTITYX3,ENTITYX4] :
-      ( isA(ENTITYX3,r_0013_0002__color_item)
+      ( isA(ENTITYX3,r_0013_0002__color__r_0013_0003__item)
       &amp; isA(ENTITYX4,r_0013_0006__woman)
-      &amp; isA(OPERATORX2,question_0013_1002)
+      &amp; isA(OPERATORX2,r_0013_1002__question)
       &amp; scope(OPERATORX2) = EVENTX5
-      &amp; isA(EVENTX5,r_0013_0004__does_buy)
+      &amp; isA(EVENTX5,r_0013_0007__buy)
       &amp; arg1(EVENTX5) = ENTITYX3
       &amp; arg0(EVENTX5) = ENTITYX4 ) ).
 

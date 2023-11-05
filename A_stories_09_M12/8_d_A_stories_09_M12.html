@@ -149,8 +149,6 @@ John knelt down to make it easier to clean the bulldog .
 </svg>
 <br>
 <pre>
-arc(cnt_0008_1002,r_0008_0002__knelt,scope).
-arc(cnt_0008_1002,r_0008_0005__make,restriction).
 arc(r_0008_0002__knelt,r_0008_0001__John,arg0).
 arc(r_0008_0002__knelt,r_0008_0003__down,clr_dir3).
 arc(r_0008_0005__make,r_0008_0001__John,arg0).
@@ -158,11 +156,13 @@ arc(r_0008_0005__make,r_0008_0007__easier,prd).
 arc(r_0008_0005__make,r_0008_0009__clean,arg1).
 arc(r_0008_0009__clean,r_0008_0001__John,arg0).
 arc(r_0008_0009__clean,r_0008_0011__bulldog,arg1).
+arc(r_0008_1002__cnt,r_0008_0002__knelt,scope).
+arc(r_0008_1002__cnt,r_0008_0005__make,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_8_A_stories_09_M12,axiom,
+fof(id__8_A_stories_09_M12,axiom,
     ? [STATEX4,CONNX3,EVENTX8,EVENTX6,EVENTX9,BULLDOGX5,QUALITYX1,ATTRIBX7] :
       ( STATEX4 = EVENTX6
       &amp; isA(EVENTX6,r_0008_0009__clean)
@@ -171,7 +171,7 @@ fof(id_8_A_stories_09_M12,axiom,
       &amp; isA(BULLDOGX5,r_0008_0011__bulldog)
       &amp; isA(QUALITYX1,r_0008_0003__down)
       &amp; isA(ATTRIBX7,r_0008_0007__easier)
-      &amp; isA(CONNX3,cnt_0008_1002)
+      &amp; isA(CONNX3,r_0008_1002__cnt)
       &amp; scope(CONNX3) = EVENTX9
       &amp; isA(EVENTX9,r_0008_0002__knelt)
       &amp; arg0(EVENTX9) = r_0008_0001__John

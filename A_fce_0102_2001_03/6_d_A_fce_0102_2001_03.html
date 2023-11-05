@@ -214,8 +214,6 @@ To thank you for looking after the flat , I 'd like to bring you back something 
 </svg>
 <br>
 <pre>
-arc(cnt_0010_1005,r_0010_0002__thank,restriction).
-arc(cnt_0010_1005,r_0010_0011___apos_d,scope).
 arc(r_0010_0002__thank,r_0010_0003__you,arg1).
 arc(r_0010_0002__thank,r_0010_0005__looking,r_0010_0004__for_cnt).
 arc(r_0010_0002__thank,r_0010_0010__I,arg0).
@@ -228,11 +226,13 @@ arc(r_0010_0014__bring,r_0010_0015__you,arg2).
 arc(r_0010_0014__bring,r_0010_0016__back,dir4).
 arc(r_0010_0014__bring,r_0010_0017__something,arg1).
 arc(r_0010_0017__something,r_0010_0020__USA,r_0010_0018__from).
+arc(r_0010_1005__cnt,r_0010_0002__thank,restriction).
+arc(r_0010_1005__cnt,r_0010_0011___apos_d,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_10_A_fce_0102_2001_03,axiom,
+fof(id__10_A_fce_0102_2001_03,axiom,
     ? [STATEX1,EVENTX7,HEARERX2,CONNX6,OPERATORX13,EVENTX14,EVENTX12,EVENTX11,EVENTX4,ENTITYX10,QUALITYX3] :
       ( STATEX1 = EVENTX4
       &amp; isA(EVENTX4,r_0010_0014__bring)
@@ -249,7 +249,7 @@ fof(id_10_A_fce_0102_2001_03,axiom,
       &amp; r_0010_0018__from(r_0010_0017__something) = r_0010_0020__USA
       &amp; isA(r_0010_0020__USA,r_0010_0020__USA)
       &amp; isA(QUALITYX3,r_0010_0016__back)
-      &amp; isA(CONNX6,cnt_0010_1005)
+      &amp; isA(CONNX6,r_0010_1005__cnt)
       &amp; restriction(CONNX6) = EVENTX12
       &amp; isA(EVENTX12,r_0010_0002__thank)
       &amp; arg0(EVENTX12) = r_0010_0010__I

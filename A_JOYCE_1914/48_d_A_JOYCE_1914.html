@@ -739,10 +739,6 @@ His face was very truculent , grey and massive , with black cavernous nostrils a
 </svg>
 <br>
 <pre>
-arc(abs_0105_1040,r_0107_0003__lay,scope).
-arc(abs_0105_1040,r_0107_0018__retaining,restriction).
-arc(cnt_0105_1035,abs_0105_1040,scope).
-arc(cnt_0105_1035,r_0107_0009__vested,restriction).
 arc(r_0105_0002__fancy,r_0105_0010__was,emb3).
 arc(r_0105_0003__came,r_0105_0002__fancy,arg0).
 arc(r_0105_0003__came,r_0105_0005__me,r_0105_0004__to_dir).
@@ -755,13 +751,17 @@ arc(r_0105_0014__lay,r_0105_0009__priest,arg0).
 arc(r_0105_0014__lay,r_0105_0015__there,loc3).
 arc(r_0105_0014__lay,r_0105_0018__coffin,r_0105_0016__in_loc).
 arc(r_0105_0018__coffin,r_0105_0009__priest,genv).
+arc(r_0105_1035__cnt,r_0105_1040__abs,scope).
+arc(r_0105_1035__cnt,r_0107_0009__vested,restriction).
+arc(r_0105_1040__abs,r_0107_0003__lay,scope).
+arc(r_0105_1040__abs,r_0107_0018__retaining,restriction).
 arc(r_0106_0006__rose,r_0106_0005__we,arg0).
 arc(r_0106_0006__rose,z_0105_1021,tmp1).
 arc(r_0106_0007__and,r_0106_0006__rose,conj1).
-arc(r_0106_0007__and,r_0106_0008__went_up,conj2).
-arc(r_0106_0008__went_up,r_0106_0005__we,arg0).
-arc(r_0106_0008__went_up,r_0106_0012__head,r_0106_0010__to_dir).
-arc(r_0106_0008__went_up,z_0105_1021,tmp1).
+arc(r_0106_0007__and,r_0106_0008__went__r_0106_0009__up,conj2).
+arc(r_0106_0008__went__r_0106_0009__up,r_0106_0005__we,arg0).
+arc(r_0106_0008__went__r_0106_0009__up,r_0106_0012__head,r_0106_0010__to_dir).
+arc(r_0106_0008__went__r_0106_0009__up,z_0105_1021,tmp1).
 arc(r_0106_0012__head,r_0106_0015__bed,r_0106_0013__of).
 arc(r_0106_0017__saw,r_0105_0005__me,arg0).
 arc(r_0106_0017__saw,r_0106_0020__was,arg1).
@@ -791,7 +791,7 @@ arc(r_0108_0008__and,r_0108_0009__massive,conj3).
 arc(r_0108_0015__and,r_0108_0003__was,conj1).
 arc(r_0108_0015__and,r_0108_0016__circled,conj2).
 arc(r_0108_0016__circled,r_0108_0002__face,arg1).
-arc(r_0108_0016__circled,r_0108_0021__fur,arg0_by_lgs).
+arc(r_0108_0016__circled,r_0108_0021__fur,arg0__r_0108_0017__by_lgs).
 arc(r_0108_0021__fur,r_0108_0019__scanty,attrib2).
 arc(r_0108_0021__fur,r_0108_0020__white,attrib3).
 arc(z_0105_1057,r_0108_0008__and,conj1).
@@ -799,7 +799,7 @@ arc(z_0105_1057,r_0108_0008__and,conj1).
 </pre>
 <br>
 <pre>
-fof(id_105_A_JOYCE_1914__106_A_JOYCE_1914__107_A_JOYCE_1914__108_A_JOYCE_1914,axiom,
+fof(id__105_A_JOYCE_1914__106_A_JOYCE_1914__107_A_JOYCE_1914__108_A_JOYCE_1914,axiom,
     ? [STATEX2,CATENATIVEX5,STATEX23,CATENATIVEX25,PRIESTX7,PRIESTX10,SPEAKERX22,PRIESTX24,PRIESTX31,PRIESTX43,PRIESTX50,CONJX63,EVENTX62,EVENTX58,CONNX36,EVENTX39,CONNX41,EVENTX47,EVENTX48,EVENTX29,EVENTX28,OPERATORX26,EVENTX27,CONJX20,EVENTX19,EVENTX16,EVENTX14,EVENTX13,CONNX6,EVENTX11,EVENTX12,ENTITYX49,ENTITYX59,ENTITYX38,ENTITYX42,ENTITYX46,ENTITYX15,ENTITYX17,ENTITYX18,ENTITYX1,PRIESTX3,ENTITYX9,ATTRIBX60,ATTRIBX61,ATTRIBX51,ATTRIBX52,ATTRIBX53,ATTRIBX55,ATTRIBX56,ATTRIBX32,ATTRIBX44,ATTRIBX33,ATTRIBX34,ATTRIBX4,QUALITYX54,QUALITYX30,QUALITYX45,QUALITYX8] :
       ( STATEX2 = EVENTX13
       &amp; isA(EVENTX13,r_0105_0010__was)
@@ -837,7 +837,7 @@ fof(id_105_A_JOYCE_1914__106_A_JOYCE_1914__107_A_JOYCE_1914__108_A_JOYCE_1914,ax
       &amp; tmp1(EVENTX16) = ENTITYX15
       &amp; arg0(EVENTX16) = r_0106_0005__we
       &amp; conj2(CONJX20) = EVENTX19
-      &amp; isA(EVENTX19,r_0106_0008__went_up)
+      &amp; isA(EVENTX19,r_0106_0008__went__r_0106_0009__up)
       &amp; tmp1(EVENTX19) = ENTITYX15
       &amp; arg0(EVENTX19) = r_0106_0005__we
       &amp; r_0106_0010__to_dir(EVENTX19) = ENTITYX17
@@ -891,9 +891,9 @@ fof(id_105_A_JOYCE_1914__106_A_JOYCE_1914__107_A_JOYCE_1914__108_A_JOYCE_1914,ax
       &amp; tmp(EVENTX29) = ENTITYX15
       &amp; arg0(EVENTX29) = SPEAKERX22
       &amp; arg1(EVENTX29) = STATEX23
-      &amp; isA(CONNX36,cnt_0105_1035)
+      &amp; isA(CONNX36,r_0105_1035__cnt)
       &amp; scope(CONNX36) = CONNX41
-      &amp; isA(CONNX41,abs_0105_1040)
+      &amp; isA(CONNX41,r_0105_1040__abs)
       &amp; scope(CONNX41) = EVENTX48
       &amp; isA(EVENTX48,r_0107_0003__lay)
       &amp; loc1(EVENTX48) = QUALITYX30
@@ -915,7 +915,7 @@ fof(id_105_A_JOYCE_1914__106_A_JOYCE_1914__107_A_JOYCE_1914__108_A_JOYCE_1914,ax
       &amp; prd2(EVENTX58) = ATTRIBX51
       &amp; conj2(CONJX63) = EVENTX62
       &amp; isA(EVENTX62,r_0108_0016__circled)
-      &amp; arg0_by_lgs(EVENTX62) = ENTITYX59
+      &amp; arg0__r_0108_0017__by_lgs(EVENTX62) = ENTITYX59
       &amp; arg1(EVENTX62) = ENTITYX49 ) ).
 
 

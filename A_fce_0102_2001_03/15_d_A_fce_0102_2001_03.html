@@ -240,27 +240,27 @@ You have been asked to write a report for the Principal , suggesting what kinds 
 </svg>
 <br>
 <pre>
-arc(cnt_0019_1007,r_0019_0006__write,scope).
-arc(cnt_0019_1007,r_0019_0013__suggesting,restriction).
-arc(question_0019_1011,r_0019_0020__should,scope).
 arc(r_0019_0002__have,r_0019_0003__been,catenative).
 arc(r_0019_0003__been,r_0019_0004__asked,catenative).
-arc(r_0019_0004__asked,cnt_0019_1007,arg1).
 arc(r_0019_0004__asked,r_0019_0001__You,arg2).
+arc(r_0019_0004__asked,r_0019_1007__cnt,arg1).
 arc(r_0019_0006__write,r_0019_0001__You,arg0).
 arc(r_0019_0006__write,r_0019_0008__report,arg1).
 arc(r_0019_0006__write,r_0019_0011__Principal,r_0019_0009__for_arg2).
-arc(r_0019_0013__suggesting,question_0019_1011,arg1).
 arc(r_0019_0013__suggesting,r_0019_0001__You,arg0).
+arc(r_0019_0013__suggesting,r_0019_1011__question,arg1).
 arc(r_0019_0015__kinds,r_0019_0017__videos,r_0019_0016__of).
 arc(r_0019_0020__should,r_0019_0021__buy,scope).
 arc(r_0019_0021__buy,r_0019_0015__kinds,arg1).
 arc(r_0019_0021__buy,r_0019_0019__school,arg0).
+arc(r_0019_1007__cnt,r_0019_0006__write,scope).
+arc(r_0019_1007__cnt,r_0019_0013__suggesting,restriction).
+arc(r_0019_1011__question,r_0019_0020__should,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_19_A_fce_0102_2001_03,axiom,
+fof(id__19_A_fce_0102_2001_03,axiom,
     ? [CATENATIVEX1,CATENATIVEX2,STATEX4,STATEX9,EVENTX21,EVENTX20,EVENTX19,CONNX8,EVENTX17,OPERATORX11,OPERATORX15,EVENTX16,EVENTX18,ENTITYX5,ENTITYX6,ENTITYX12,ENTITYX14,ENTITYX13] :
       ( CATENATIVEX1 = EVENTX20
       &amp; isA(EVENTX20,r_0019_0003__been)
@@ -270,7 +270,7 @@ fof(id_19_A_fce_0102_2001_03,axiom,
       &amp; arg2(EVENTX19) = r_0019_0001__You
       &amp; arg1(EVENTX19) = STATEX4
       &amp; STATEX4 = CONNX8
-      &amp; isA(CONNX8,cnt_0019_1007)
+      &amp; isA(CONNX8,r_0019_1007__cnt)
       &amp; scope(CONNX8) = EVENTX18
       &amp; isA(EVENTX18,r_0019_0006__write)
       &amp; arg0(EVENTX18) = r_0019_0001__You
@@ -281,7 +281,7 @@ fof(id_19_A_fce_0102_2001_03,axiom,
       &amp; arg0(EVENTX17) = r_0019_0001__You
       &amp; arg1(EVENTX17) = STATEX9
       &amp; STATEX9 = OPERATORX11
-      &amp; isA(OPERATORX11,question_0019_1011)
+      &amp; isA(OPERATORX11,r_0019_1011__question)
       &amp; scope(OPERATORX11) = OPERATORX15
       &amp; isA(OPERATORX15,r_0019_0020__should)
       &amp; scope(OPERATORX15) = EVENTX16

@@ -215,19 +215,19 @@ arc(r_0013_0009__have,r_0013_0001__Already,tmp1).
 arc(r_0013_0009__have,r_0013_0004__firms,arg0).
 arc(r_0013_0009__have,r_0013_0012__cryptographers,arg1).
 arc(r_0013_0012__cryptographers,z_0013_1014,genv).
-arc(r_0013_0016__reported,r_0013_0014__conference_speakers,arg0).
-arc(r_0013_0016__reported,utterance_0013_1003,arg1).
-arc(utterance_0013_1003,r_0013_0009__have,part1).
+arc(r_0013_0016__reported,r_0013_0014__conference__r_0013_0015__speakers,arg0).
+arc(r_0013_0016__reported,r_0013_1003__utterance,arg1).
+arc(r_0013_1003__utterance,r_0013_0009__have,part1).
 arc(z_0013_1014,r_0013_0004__firms,genv).
 arc(z_0013_1014,r_0013_0011__own,attrib2).
 
 </pre>
 <br>
 <pre>
-fof(id_13_A_ANC_wsj_1640,axiom,
+fof(id__13_A_ANC_wsj_1640,axiom,
     ? [STATEX1,FIRMSX12,EVENTX18,CONJX16,EVENTX15,QUALITYX4,QUALITYX8,ENTITYX17,FIRMSX5,ENTITYX10,ENTITYX11,ENTITYX9,ATTRIBX13,ATTRIBX6,ATTRIBX7] :
       ( STATEX1 = CONJX16
-      &amp; isA(CONJX16,utterance_0013_1003)
+      &amp; isA(CONJX16,r_0013_1003__utterance)
       &amp; part1(CONJX16) = EVENTX15
       &amp; isA(EVENTX15,r_0013_0009__have)
       &amp; tmp1(EVENTX15) = QUALITYX4
@@ -247,7 +247,7 @@ fof(id_13_A_ANC_wsj_1640,axiom,
       &amp; genv(ENTITYX11) = FIRMSX12
       &amp; attrib2(ENTITYX11) = ATTRIBX13
       &amp; FIRMSX12 = FIRMSX5
-      &amp; isA(ENTITYX17,r_0013_0014__conference_speakers)
+      &amp; isA(ENTITYX17,r_0013_0014__conference__r_0013_0015__speakers)
       &amp; isA(ATTRIBX6,r_0013_0002__many)
       &amp; isA(ATTRIBX7,r_0013_0003__foreign)
       &amp; isA(ATTRIBX13,r_0013_0011__own)

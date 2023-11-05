@@ -122,17 +122,17 @@
 </svg>
 <br>
 <pre>
-arc(imperative_0030_1002,r_0030_0006__let,scope).
 arc(r_0030_0006__let,r_0030_0007__me,arg1).
 arc(r_0030_0006__let,r_0030_0008__just,prd).
 arc(r_0030_0008__just,r_0030_0009__take,scope).
 arc(r_0030_0009__take,r_0030_0010__this,arg1).
 arc(r_0030_0009__take,r_0030_0011__now,tmp4).
+arc(r_0030_1002__imperative,r_0030_0006__let,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_30_A_LooseChange,axiom,
+fof(id__30_A_LooseChange,axiom,
     ? [STATEX4,OPERATORX2,EVENTX10,OPERATORX7,EVENTX9,QUALITYX8] :
       ( STATEX4 = OPERATORX7
       &amp; isA(OPERATORX7,r_0030_0008__just)
@@ -141,7 +141,7 @@ fof(id_30_A_LooseChange,axiom,
       &amp; arg1(EVENTX9) = r_0030_0010__this
       &amp; tmp4(EVENTX9) = QUALITYX8
       &amp; isA(QUALITYX8,r_0030_0011__now)
-      &amp; isA(OPERATORX2,imperative_0030_1002)
+      &amp; isA(OPERATORX2,r_0030_1002__imperative)
       &amp; scope(OPERATORX2) = EVENTX10
       &amp; isA(EVENTX10,r_0030_0006__let)
       &amp; arg1(EVENTX10) = r_0030_0007__me

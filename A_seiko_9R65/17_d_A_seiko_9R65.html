@@ -275,39 +275,39 @@ In one word , this is a &ldquo; mechanical watch having accuracy equivalent to a
 </svg>
 <br>
 <pre>
-arc(question_0021_1002,r_0021_0002__is,scope).
 arc(r_0021_0002__is,r_0021_0001__What,r_0021_0006__like_prd2).
-arc(r_0021_0002__is,r_0021_0004__Spring_Drive,arg0).
-arc(r_0022_0002__is,r_0021_0004__Spring_Drive,arg0).
+arc(r_0021_0002__is,r_0021_0004__Spring__r_0021_0005__Drive,arg0).
+arc(r_0021_1002__question,r_0021_0002__is,scope).
+arc(r_0022_0002__is,r_0021_0004__Spring__r_0021_0005__Drive,arg0).
 arc(r_0022_0002__is,r_0022_0007__or,prd2).
 arc(r_0022_0003__not,r_0022_0002__is,scope).
 arc(r_0022_0006__watch,r_0022_0005__mechanical,attrib2).
 arc(r_0022_0007__or,r_0022_0006__watch,conj1).
-arc(r_0022_0007__or,r_0022_0009__quartz_watch,conj2).
-arc(r_0023_0006__is,r_0021_0004__Spring_Drive,arg0).
-arc(r_0023_0006__is,r_0023_0002__one_word,r_0023_0001__In_rst).
+arc(r_0022_0007__or,r_0022_0009__quartz__r_0022_0010__watch,conj2).
+arc(r_0023_0006__is,r_0021_0004__Spring__r_0021_0005__Drive,arg0).
+arc(r_0023_0006__is,r_0023_0002__one__r_0023_0003__word,r_0023_0001__In_rst).
 arc(r_0023_0006__is,r_0023_0010__watch,prd2).
 arc(r_0023_0010__watch,r_0023_0009__mechanical,attrib3).
 arc(r_0023_0011__having,r_0023_0010__watch,arg0).
 arc(r_0023_0011__having,r_0023_0012__accuracy,arg1).
 arc(r_0023_0012__accuracy,r_0023_0013__equivalent,attrib2).
-arc(r_0023_0013__equivalent,r_0023_0016__quartz_watch,r_0023_0014__to).
+arc(r_0023_0013__equivalent,r_0023_0016__quartz__r_0023_0017__watch,r_0023_0014__to).
 
 </pre>
 <br>
 <pre>
-fof(id_21_A_seiko_9R65__22_A_seiko_9R65__23_A_seiko_9R65,axiom,
+fof(id__21_A_seiko_9R65__22_A_seiko_9R65__23_A_seiko_9R65,axiom,
     ? [SPRING_DRIVEX5,SPRING_DRIVEX13,EVENTX20,EVENTX19,OPERATORX10,EVENTX11,OPERATORX2,EVENTX4,ENTITYX12,ENTITYX14,ENTITYX16,ENTITYX18,ENTITYX6,ENTITYX7,ENTITYX9,ENTITYX3,ATTRIBX15,ATTRIBX17,ATTRIBX8] :
       ( isA(ENTITYX3,r_0021_0001__What)
-      &amp; SPRING_DRIVEX5 = r_0021_0004__Spring_Drive
+      &amp; SPRING_DRIVEX5 = r_0021_0004__Spring__r_0021_0005__Drive
       &amp; isA(ENTITYX6,r_0022_0007__or)
       &amp; conj1(ENTITYX6) = ENTITYX7
       &amp; conj2(ENTITYX6) = ENTITYX9
       &amp; isA(ENTITYX7,r_0022_0006__watch)
       &amp; attrib2(ENTITYX7) = ATTRIBX8
-      &amp; isA(ENTITYX9,r_0022_0009__quartz_watch)
-      &amp; isA(ENTITYX12,r_0023_0002__one_word)
-      &amp; SPRING_DRIVEX13 = r_0021_0004__Spring_Drive
+      &amp; isA(ENTITYX9,r_0022_0009__quartz__r_0022_0010__watch)
+      &amp; isA(ENTITYX12,r_0023_0002__one__r_0023_0003__word)
+      &amp; SPRING_DRIVEX13 = r_0021_0004__Spring__r_0021_0005__Drive
       &amp; isA(EVENTX19,r_0023_0011__having)
       &amp; arg0(EVENTX19) = ENTITYX14
       &amp; arg1(EVENTX19) = ENTITYX16
@@ -315,16 +315,16 @@ fof(id_21_A_seiko_9R65__22_A_seiko_9R65__23_A_seiko_9R65,axiom,
       &amp; attrib3(ENTITYX14) = ATTRIBX15
       &amp; isA(ENTITYX16,r_0023_0012__accuracy)
       &amp; attrib2(ENTITYX16) = ATTRIBX17
-      &amp; isA(ENTITYX18,r_0023_0016__quartz_watch)
-      &amp; isA(r_0021_0004__Spring_Drive,r_0021_0004__Spring_Drive)
+      &amp; isA(ENTITYX18,r_0023_0016__quartz__r_0023_0017__watch)
+      &amp; isA(r_0021_0004__Spring__r_0021_0005__Drive,r_0021_0004__Spring_r_0021_0005__Drive)
       &amp; isA(ATTRIBX8,r_0022_0005__mechanical)
       &amp; isA(ATTRIBX15,r_0023_0009__mechanical)
       &amp; isA(ATTRIBX17,r_0023_0013__equivalent)
       &amp; r_0023_0014__to(ATTRIBX17) = ENTITYX18
-      &amp; isA(OPERATORX2,question_0021_1002)
+      &amp; isA(OPERATORX2,r_0021_1002__question)
       &amp; scope(OPERATORX2) = EVENTX4
       &amp; isA(EVENTX4,r_0021_0002__is)
-      &amp; arg0(EVENTX4) = r_0021_0004__Spring_Drive
+      &amp; arg0(EVENTX4) = r_0021_0004__Spring__r_0021_0005__Drive
       &amp; r_0021_0006__like_prd2(EVENTX4) = ENTITYX3
       &amp; isA(OPERATORX10,r_0022_0003__not)
       &amp; scope(OPERATORX10) = EVENTX11

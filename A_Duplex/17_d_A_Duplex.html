@@ -382,18 +382,16 @@ This floored Duplex , and the human operator picked up to finish the job .
 </svg>
 <br>
 <pre>
-arc(cnt_0031_1026,r_0032_0009__picked_up,scope).
-arc(cnt_0031_1026,r_0032_0012__finish,restriction).
-arc(r_0031_0001__Seung_Lee,r_0031_0006__San_Jose_Mercury_News,r_0031_0004__from).
-arc(r_0031_0011__went_through,r_0031_0001__Seung_Lee,arg0).
-arc(r_0031_0011__went_through,r_0031_0015__reservation,r_0031_0013__with_cnt).
-arc(r_0031_0016__before_tmp,r_0031_0011__went_through,scope).
+arc(r_0031_0001__Seung__r_0031_0002__Lee,r_0031_0006__San_r_0031_0007__Jose_r_0031_0008__Mercury_r_0031_0009__News,r_0031_0004__from).
+arc(r_0031_0011__went__r_0031_0012__through,r_0031_0001__Seung_r_0031_0002__Lee,arg0).
+arc(r_0031_0011__went__r_0031_0012__through,r_0031_0015__reservation,r_0031_0013__with_cnt).
+arc(r_0031_0016__before_tmp,r_0031_0011__went__r_0031_0012__through,scope).
 arc(r_0031_0016__before_tmp,r_0031_0018__saying,restriction).
-arc(r_0031_0018__saying,r_0031_0001__Seung_Lee,arg0).
+arc(r_0031_0018__saying,r_0031_0001__Seung__r_0031_0002__Lee,arg0).
 arc(r_0031_0018__saying,r_0031_0017__suddenly,mnr1).
 arc(r_0031_0018__saying,r_0031_0024__and,arg1).
 arc(r_0031_0020___apos_d,r_0031_0021__made,catenative).
-arc(r_0031_0021__made,r_0031_0001__Seung_Lee,arg0).
+arc(r_0031_0021__made,r_0031_0001__Seung__r_0031_0002__Lee,arg0).
 arc(r_0031_0021__made,r_0031_0023__mistake,arg1).
 arc(r_0031_0024__and,r_0031_0020___apos_d,conj1).
 arc(r_0031_0024__and,r_0031_0028__actually,conj2).
@@ -401,19 +399,21 @@ arc(r_0031_0026__was,r_0031_0030__table,arg0).
 arc(r_0031_0027__n_apos_t,r_0031_0026__was,scope).
 arc(r_0031_0028__actually,r_0031_0031__after_all,scope).
 arc(r_0031_0031__after_all,r_0031_0027__n_apos_t,scope).
+arc(r_0031_1026__cnt,r_0032_0009__picked__r_0032_0010__up,scope).
+arc(r_0031_1026__cnt,r_0032_0012__finish,restriction).
 arc(r_0032_0002__floored,r_0031_0026__was,arg0).
 arc(r_0032_0002__floored,r_0032_0003__Duplex,arg1).
-arc(r_0032_0005__and,cnt_0031_1026,conj2).
+arc(r_0032_0005__and,r_0031_1026__cnt,conj2).
 arc(r_0032_0005__and,r_0032_0002__floored,conj1).
 arc(r_0032_0008__operator,r_0032_0007__human,attrib2).
-arc(r_0032_0009__picked_up,r_0032_0008__operator,arg0).
+arc(r_0032_0009__picked__r_0032_0010__up,r_0032_0008__operator,arg0).
 arc(r_0032_0012__finish,r_0032_0008__operator,arg0).
 arc(r_0032_0012__finish,r_0032_0014__job,arg1).
 
 </pre>
 <br>
 <pre>
-fof(id_31_A_Duplex__32_A_Duplex,axiom,
+fof(id__31_A_Duplex__32_A_Duplex,axiom,
     ? [STATEX4,CATENATIVEX8,SEUNG_LEEX7,MISTAKEX22,CONJX31,CONNX27,EVENTX29,EVENTX30,EVENTX23,CONNX2,EVENTX18,CONJX17,OPERATORX12,OPERATORX14,OPERATORX15,MISTAKEX16,EVENTX11,EVENTX10,EVENTX19,HUMANX24,ENTITYX28,ENTITYX1,ENTITYX13,ENTITYX9,QUALITYX3,ATTRIBX25] :
       ( STATEX4 = CONJX17
       &amp; isA(CONJX17,r_0031_0024__and)
@@ -435,26 +435,26 @@ fof(id_31_A_Duplex__32_A_Duplex,axiom,
       &amp; arg0(EVENTX10) = SEUNG_LEEX7
       &amp; arg1(EVENTX10) = ENTITYX9
       &amp; isA(ENTITYX1,r_0031_0015__reservation)
-      &amp; SEUNG_LEEX7 = r_0031_0001__Seung_Lee
+      &amp; SEUNG_LEEX7 = r_0031_0001__Seung__r_0031_0002__Lee
       &amp; isA(ENTITYX9,r_0031_0023__mistake)
       &amp; isA(ENTITYX13,r_0031_0030__table)
       &amp; MISTAKEX22 = MISTAKEX16
       &amp; isA(HUMANX24,r_0032_0008__operator)
       &amp; attrib2(HUMANX24) = ATTRIBX25
       &amp; isA(ENTITYX28,r_0032_0014__job)
-      &amp; isA(r_0031_0001__Seung_Lee,r_0031_0001__Seung_Lee)
-      &amp; r_0031_0004__from(r_0031_0001__Seung_Lee) = r_0031_0006__San_Jose_Mercury_News
-      &amp; isA(r_0031_0006__San_Jose_Mercury_News,r_0031_0006__San_Jose_Mercury_News)
+      &amp; isA(r_0031_0001__Seung__r_0031_0002__Lee,r_0031_0001__Seung_r_0031_0002__Lee)
+      &amp; r_0031_0004__from(r_0031_0001__Seung__r_0031_0002__Lee) = r_0031_0006__San_r_0031_0007__Jose_r_0031_0008__Mercury_r_0031_0009__News
+      &amp; isA(r_0031_0006__San__r_0031_0007__Jose_r_0031_0008__Mercury_r_0031_0009__News,r_0031_0006__San_r_0031_0007__Jose_r_0031_0008__Mercury_r_0031_0009__News)
       &amp; isA(QUALITYX3,r_0031_0017__suddenly)
       &amp; isA(ATTRIBX25,r_0032_0007__human)
       &amp; isA(CONNX2,r_0031_0016__before_tmp)
       &amp; scope(CONNX2) = EVENTX19
-      &amp; isA(EVENTX19,r_0031_0011__went_through)
-      &amp; arg0(EVENTX19) = r_0031_0001__Seung_Lee
+      &amp; isA(EVENTX19,r_0031_0011__went__r_0031_0012__through)
+      &amp; arg0(EVENTX19) = r_0031_0001__Seung__r_0031_0002__Lee
       &amp; r_0031_0013__with_cnt(EVENTX19) = ENTITYX1
       &amp; restriction(CONNX2) = EVENTX18
       &amp; isA(EVENTX18,r_0031_0018__saying)
-      &amp; arg0(EVENTX18) = r_0031_0001__Seung_Lee
+      &amp; arg0(EVENTX18) = r_0031_0001__Seung__r_0031_0002__Lee
       &amp; mnr1(EVENTX18) = QUALITYX3
       &amp; arg1(EVENTX18) = STATEX4
       &amp; isA(CONJX31,r_0032_0005__and)
@@ -464,9 +464,9 @@ fof(id_31_A_Duplex__32_A_Duplex,axiom,
       &amp; arg0(EVENTX23) = MISTAKEX22
       &amp; arg1(EVENTX23) = r_0032_0003__Duplex
       &amp; conj2(CONJX31) = CONNX27
-      &amp; isA(CONNX27,cnt_0031_1026)
+      &amp; isA(CONNX27,r_0031_1026__cnt)
       &amp; scope(CONNX27) = EVENTX30
-      &amp; isA(EVENTX30,r_0032_0009__picked_up)
+      &amp; isA(EVENTX30,r_0032_0009__picked__r_0032_0010__up)
       &amp; arg0(EVENTX30) = HUMANX24
       &amp; arg0(EVENTX30) = HUMANX24
       &amp; restriction(CONNX27) = EVENTX29

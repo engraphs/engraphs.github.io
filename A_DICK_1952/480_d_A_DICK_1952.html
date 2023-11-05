@@ -310,24 +310,24 @@ The lead cart started off , across the frozen ground , bumping calmly along , fo
 </svg>
 <br>
 <pre>
-arc(abs_0622_1013,cnt_0622_1017,scope).
-arc(abs_0622_1013,r_0623_0016__followed,restriction).
-arc(cnt_0622_1017,r_0623_0004__started_off,scope).
-arc(cnt_0622_1017,r_0623_0021__Moving,restriction).
-arc(mnr_0622_1008,abs_0622_1013,scope).
-arc(mnr_0622_1008,r_0623_0012__bumping,restriction).
-arc(r_0622_0003__lined_up,r_0622_0002__carts,arg0).
-arc(r_0622_0003__lined_up,r_0622_0007__first_one,r_0622_0005__behind_loc).
-arc(r_0622_0007__first_one,r_0622_0011__lead_cart,prn5).
-arc(r_0623_0004__started_off,r_0623_0002__lead_cart,arg0).
-arc(r_0623_0004__started_off,r_0623_0010__ground,r_0623_0007__across_dir).
+arc(r_0622_0003__lined__r_0622_0004__up,r_0622_0002__carts,arg0).
+arc(r_0622_0003__lined__r_0622_0004__up,r_0622_0007__first_r_0622_0008__one,r_0622_0005__behind_loc).
+arc(r_0622_0007__first__r_0622_0008__one,r_0622_0011__lead_r_0622_0012__cart,prn5).
+arc(r_0622_1008__mnr,r_0622_1013__abs,scope).
+arc(r_0622_1008__mnr,r_0623_0012__bumping,restriction).
+arc(r_0622_1013__abs,r_0622_1017__cnt,scope).
+arc(r_0622_1013__abs,r_0623_0016__followed,restriction).
+arc(r_0622_1017__cnt,r_0623_0004__started__r_0623_0005__off,scope).
+arc(r_0622_1017__cnt,r_0623_0021__Moving,restriction).
+arc(r_0623_0004__started__r_0623_0005__off,r_0623_0002__lead_r_0623_0003__cart,arg0).
+arc(r_0623_0004__started__r_0623_0005__off,r_0623_0010__ground,r_0623_0007__across_dir).
 arc(r_0623_0010__ground,r_0623_0009__frozen,attrib2).
-arc(r_0623_0012__bumping,r_0623_0002__lead_cart,arg0).
+arc(r_0623_0012__bumping,r_0623_0002__lead__r_0623_0003__cart,arg0).
 arc(r_0623_0012__bumping,r_0623_0013__calmly,mnr2).
 arc(r_0623_0012__bumping,r_0623_0014__along,dir3).
-arc(r_0623_0016__followed,r_0623_0002__lead_cart,arg1).
-arc(r_0623_0016__followed,r_0623_0019__others,arg0_by_lgs).
-arc(r_0623_0021__Moving,r_0623_0002__lead_cart,arg0).
+arc(r_0623_0016__followed,r_0623_0002__lead__r_0623_0003__cart,arg1).
+arc(r_0623_0016__followed,r_0623_0019__others,arg0__r_0623_0017__by_lgs).
+arc(r_0623_0021__Moving,r_0623_0002__lead__r_0623_0003__cart,arg0).
 arc(r_0623_0021__Moving,r_0623_0024__city,r_0623_0022__toward_clr_dir).
 arc(r_0623_0021__Moving,r_0623_0029__gun,r_0623_0026__To_loc).
 arc(r_0623_0029__gun,r_0623_0028__damaged,attrib2).
@@ -335,13 +335,13 @@ arc(r_0623_0029__gun,r_0623_0028__damaged,attrib2).
 </pre>
 <br>
 <pre>
-fof(id_622_A_DICK_1952__623_A_DICK_1952,axiom,
+fof(id__622_A_DICK_1952__623_A_DICK_1952,axiom,
     ? [CONNX9,EVENTX12,CONNX14,EVENTX16,CONNX18,EVENTX22,EVENTX23,EVENTX4,ENTITYX5,ENTITYX6,ENTITYX15,ENTITYX19,ENTITYX20,ENTITYX1,ENTITYX2,ENTITYX3,ATTRIBX21,ATTRIBX7,QUALITYX10,QUALITYX11] :
       ( isA(ENTITYX1,r_0622_0002__carts)
-      &amp; isA(ENTITYX2,r_0622_0007__first_one)
+      &amp; isA(ENTITYX2,r_0622_0007__first__r_0622_0008__one)
       &amp; prn5(ENTITYX2) = ENTITYX3
-      &amp; isA(ENTITYX3,r_0622_0011__lead_cart)
-      &amp; isA(ENTITYX5,r_0623_0002__lead_cart)
+      &amp; isA(ENTITYX3,r_0622_0011__lead__r_0622_0012__cart)
+      &amp; isA(ENTITYX5,r_0623_0002__lead__r_0623_0003__cart)
       &amp; isA(ENTITYX6,r_0623_0010__ground)
       &amp; attrib2(ENTITYX6) = ATTRIBX7
       &amp; isA(ENTITYX19,r_0623_0024__city)
@@ -352,16 +352,16 @@ fof(id_622_A_DICK_1952__623_A_DICK_1952,axiom,
       &amp; isA(ATTRIBX21,r_0623_0028__damaged)
       &amp; isA(QUALITYX10,r_0623_0013__calmly)
       &amp; isA(QUALITYX11,r_0623_0014__along)
-      &amp; isA(EVENTX4,r_0622_0003__lined_up)
+      &amp; isA(EVENTX4,r_0622_0003__lined__r_0622_0004__up)
       &amp; arg0(EVENTX4) = ENTITYX1
       &amp; r_0622_0005__behind_loc(EVENTX4) = ENTITYX2
-      &amp; isA(CONNX9,mnr_0622_1008)
+      &amp; isA(CONNX9,r_0622_1008__mnr)
       &amp; scope(CONNX9) = CONNX14
-      &amp; isA(CONNX14,abs_0622_1013)
+      &amp; isA(CONNX14,r_0622_1013__abs)
       &amp; scope(CONNX14) = CONNX18
-      &amp; isA(CONNX18,cnt_0622_1017)
+      &amp; isA(CONNX18,r_0622_1017__cnt)
       &amp; scope(CONNX18) = EVENTX23
-      &amp; isA(EVENTX23,r_0623_0004__started_off)
+      &amp; isA(EVENTX23,r_0623_0004__started__r_0623_0005__off)
       &amp; arg0(EVENTX23) = ENTITYX5
       &amp; r_0623_0007__across_dir(EVENTX23) = ENTITYX6
       &amp; restriction(CONNX18) = EVENTX22
@@ -371,7 +371,7 @@ fof(id_622_A_DICK_1952__623_A_DICK_1952,axiom,
       &amp; r_0623_0026__To_loc(EVENTX22) = ENTITYX20
       &amp; restriction(CONNX14) = EVENTX16
       &amp; isA(EVENTX16,r_0623_0016__followed)
-      &amp; arg0_by_lgs(EVENTX16) = ENTITYX15
+      &amp; arg0__r_0623_0017__by_lgs(EVENTX16) = ENTITYX15
       &amp; arg1(EVENTX16) = ENTITYX5
       &amp; restriction(CONNX9) = EVENTX12
       &amp; isA(EVENTX12,r_0623_0012__bumping)

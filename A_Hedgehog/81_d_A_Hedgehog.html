@@ -202,24 +202,24 @@ I am sure , Madam Deputy Speaker , that you will want to know what you can do .
 </svg>
 <br>
 <pre>
-arc(question_0086_1006,r_0086_0017__can,scope).
 arc(r_0086_0002__am,r_0086_0001__I,arg0).
 arc(r_0086_0002__am,r_0086_0003__sure,prd2).
-arc(r_0086_0003__sure,r_0086_0005__Madam_Deputy_Speaker,prn3).
+arc(r_0086_0003__sure,r_0086_0005__Madam__r_0086_0006__Deputy_r_0086_0007__Speaker,prn3).
 arc(r_0086_0003__sure,r_0086_0011__will,emb5).
 arc(r_0086_0011__will,r_0086_0012__want,scope).
 arc(r_0086_0012__want,r_0086_0010__you,arg0).
 arc(r_0086_0012__want,r_0086_0014__know,arg1).
-arc(r_0086_0014__know,question_0086_1006,arg1).
 arc(r_0086_0014__know,r_0086_0010__you,arg0).
+arc(r_0086_0014__know,r_0086_1006__question,arg1).
 arc(r_0086_0017__can,r_0086_0018__do,scope).
 arc(r_0086_0018__do,r_0086_0010__you,arg0).
 arc(r_0086_0018__do,r_0086_0015__what,arg1).
+arc(r_0086_1006__question,r_0086_0017__can,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_86_A_Hedgehog,axiom,
+fof(id__86_A_Hedgehog,axiom,
     ? [STATEX2,STATEX3,STATEX4,HEARERX8,EVENTX14,OPERATORX12,EVENTX13,EVENTX11,OPERATORX6,OPERATORX9,EVENTX10,ENTITYX7,ATTRIBX1] :
       ( STATEX2 = OPERATORX12
       &amp; isA(OPERATORX12,r_0086_0011__will)
@@ -232,7 +232,7 @@ fof(id_86_A_Hedgehog,axiom,
       &amp; arg0(EVENTX11) = r_0086_0010__you
       &amp; arg1(EVENTX11) = STATEX4
       &amp; STATEX4 = OPERATORX6
-      &amp; isA(OPERATORX6,question_0086_1006)
+      &amp; isA(OPERATORX6,r_0086_1006__question)
       &amp; scope(OPERATORX6) = OPERATORX9
       &amp; isA(OPERATORX9,r_0086_0017__can)
       &amp; scope(OPERATORX9) = EVENTX10
@@ -242,7 +242,7 @@ fof(id_86_A_Hedgehog,axiom,
       &amp; isA(ENTITYX7,r_0086_0015__what)
       &amp; HEARERX8 = r_0086_0010__you
       &amp; isA(ATTRIBX1,r_0086_0003__sure)
-      &amp; prn3(ATTRIBX1) = r_0086_0005__Madam_Deputy_Speaker
+      &amp; prn3(ATTRIBX1) = r_0086_0005__Madam__r_0086_0006__Deputy_r_0086_0007__Speaker
       &amp; emb5(ATTRIBX1) = STATEX2
       &amp; isA(EVENTX14,r_0086_0002__am)
       &amp; arg0(EVENTX14) = r_0086_0001__I

@@ -586,9 +586,7 @@ The Government shall take necessary legislative and other measures to ensure tha
 </svg>
 <br>
 <pre>
-arc(cnt_0034_1010,r_0034_0004__take,scope).
-arc(cnt_0034_1010,r_0034_0011__ensure,restriction).
-arc(r_0034_0003__shall,cnt_0034_1010,scope).
+arc(r_0034_0003__shall,r_0034_1010__cnt,scope).
 arc(r_0034_0004__take,r_0034_0002__Government,arg0).
 arc(r_0034_0004__take,r_0034_0007__and,arg1).
 arc(r_0034_0007__and,r_0034_0009__measures,conj2).
@@ -625,6 +623,8 @@ arc(r_0034_0054__and,r_0034_0056__method,conj2).
 arc(r_0034_0054__and,r_0034_0058__utilization,r_0034_0057__of).
 arc(r_0034_0058__utilization,r_0034_0062__information,r_0034_0059__of).
 arc(r_0034_0062__information,r_0034_0061__personal,attrib2).
+arc(r_0034_1010__cnt,r_0034_0004__take,scope).
+arc(r_0034_1010__cnt,r_0034_0011__ensure,restriction).
 arc(z_0034_1006,r_0034_0005__necessary,attrib1).
 arc(z_0034_1006,r_0034_0006__legislative,attrib2).
 arc(z_0034_1047,r_0034_0020__protection,conj1).
@@ -633,7 +633,7 @@ arc(z_0034_1047,r_0034_0033__implementation,conj2).
 </pre>
 <br>
 <pre>
-fof(id_34_A_law_h15A119,axiom,
+fof(id__34_A_law_h15A119,axiom,
     ? [STATEX12,CATENATIVEX16,STATEX23,CATENATIVEX24,PERSONAL_INFORMATIONX33,OPERATORX9,CONNX11,EVENTX50,OPERATORX15,EVENTX49,EVENTX48,OPERATORX22,EVENTX28,EVENTX27,EVENTX26,EVENTX51,GOVERNMENTX1,ENTITYX2,ENTITYX13,ENTITYX18,ENTITYX19,ENTITYX29,ENTITYX31,ENTITYX34,ENTITYX40,ENTITYX41,ENTITYX42,ENTITYX45,ENTITYX46,ENTITYX43,ENTITYX36,ENTITYX37,ENTITYX38,ENTITYX39,PERSONAL_INFORMATIONX20,ENTITYX3,ENTITYX7,ATTRIBX30,ATTRIBX44,ATTRIBX35,ATTRIBX32,ATTRIBX21,ATTRIBX14,ATTRIBX8,ATTRIBX4,ATTRIBX5] :
       ( STATEX12 = OPERATORX15
       &amp; isA(OPERATORX15,r_0034_0015__will)
@@ -715,7 +715,7 @@ fof(id_34_A_law_h15A119,axiom,
       &amp; isA(ATTRIBX44,r_0034_0061__personal)
       &amp; isA(OPERATORX9,r_0034_0003__shall)
       &amp; scope(OPERATORX9) = CONNX11
-      &amp; isA(CONNX11,cnt_0034_1010)
+      &amp; isA(CONNX11,r_0034_1010__cnt)
       &amp; scope(CONNX11) = EVENTX51
       &amp; isA(EVENTX51,r_0034_0004__take)
       &amp; arg0(EVENTX51) = GOVERNMENTX1

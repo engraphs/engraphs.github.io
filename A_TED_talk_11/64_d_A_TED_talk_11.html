@@ -205,14 +205,14 @@ So you can imagine what a seamless transition that was .
 </svg>
 <br>
 <pre>
-arc(question_0092_1006,r_0093_0010__was,scope).
 arc(r_0092_0001__In_fact,r_0092_0004__moved,scope).
 arc(r_0092_0004__moved,r_0092_0003__we,arg0).
 arc(r_0092_0004__moved,r_0092_0006__Stratford,r_0092_0005__from_dir).
-arc(r_0092_0004__moved,r_0092_0008__Los_Angeles,r_0092_0007__to_dir).
+arc(r_0092_0004__moved,r_0092_0008__Los__r_0092_0009__Angeles,r_0092_0007__to_dir).
+arc(r_0092_1006__question,r_0093_0010__was,scope).
 arc(r_0093_0001__So,r_0093_0003__can,scope).
 arc(r_0093_0003__can,r_0093_0004__imagine,scope).
-arc(r_0093_0004__imagine,question_0092_1006,arg1).
+arc(r_0093_0004__imagine,r_0092_1006__question,arg1).
 arc(r_0093_0004__imagine,r_0093_0002__you,arg0).
 arc(r_0093_0008__transition,r_0093_0007__seamless,attrib3).
 arc(r_0093_0010__was,r_0092_0004__moved,arg0).
@@ -221,10 +221,10 @@ arc(r_0093_0010__was,r_0093_0008__transition,prd2).
 </pre>
 <br>
 <pre>
-fof(id_92_A_TED_talk_11__93_A_TED_talk_11,axiom,
+fof(id__92_A_TED_talk_11__93_A_TED_talk_11,axiom,
     ? [STATEX4,HOUSEMOVEX9,OPERATORX3,OPERATORX11,EVENTX12,OPERATORX6,EVENTX10,OPERATORX1,HOUSEMOVEX2,ENTITYX7,ATTRIBX8] :
       ( STATEX4 = OPERATORX6
-      &amp; isA(OPERATORX6,question_0092_1006)
+      &amp; isA(OPERATORX6,r_0092_1006__question)
       &amp; scope(OPERATORX6) = EVENTX10
       &amp; isA(EVENTX10,r_0093_0010__was)
       &amp; prd2(EVENTX10) = ENTITYX7
@@ -238,7 +238,7 @@ fof(id_92_A_TED_talk_11__93_A_TED_talk_11,axiom,
       &amp; isA(HOUSEMOVEX2,r_0092_0004__moved)
       &amp; arg0(HOUSEMOVEX2) = r_0092_0003__we
       &amp; r_0092_0005__from_dir(HOUSEMOVEX2) = r_0092_0006__Stratford
-      &amp; r_0092_0007__to_dir(HOUSEMOVEX2) = r_0092_0008__Los_Angeles
+      &amp; r_0092_0007__to_dir(HOUSEMOVEX2) = r_0092_0008__Los__r_0092_0009__Angeles
       &amp; isA(OPERATORX3,r_0093_0001__So)
       &amp; scope(OPERATORX3) = OPERATORX11
       &amp; isA(OPERATORX11,r_0093_0003__can)

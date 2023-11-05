@@ -319,10 +319,10 @@ Port wine , old in the wood , will be ready to drink in five or six months ; but
 </svg>
 <br>
 <pre>
-arc(r_0041_0001__Port_wine,r_0041_0004__old,attrib4).
+arc(r_0041_0001__Port__r_0041_0002__wine,r_0041_0004__old,attrib4).
 arc(r_0041_0004__old,r_0041_0007__wood,r_0041_0005__in).
 arc(r_0041_0009__will,r_0041_0010__be,scope).
-arc(r_0041_0010__be,r_0041_0001__Port_wine,arg0).
+arc(r_0041_0010__be,r_0041_0001__Port__r_0041_0002__wine,arg0).
 arc(r_0041_0010__be,r_0041_0011__ready,prd2).
 arc(r_0041_0010__be,r_0041_0018__months,r_0041_0014__in_tmp).
 arc(r_0041_0011__ready,r_0041_0013__drink,emb2).
@@ -332,24 +332,24 @@ arc(r_0041_0018__months,r_0041_0016__or,nlyr1).
 arc(r_0041_0020__but,r_0041_0009__will,conj1).
 arc(r_0041_0020__but,r_0041_0021__if_cnt_cnd,conj2).
 arc(r_0041_0021__if_cnt_cnd,r_0041_0023__is,restriction).
-arc(r_0041_0021__if_cnt_cnd,r_0041_0031__quantificational__every,scope).
+arc(r_0041_0021__if_cnt_cnd,r_0041_0031__quantificational__r_0041_0031__every,scope).
 arc(r_0041_0023__is,r_0041_0022__it,arg0).
 arc(r_0041_0023__is,r_0041_0026__wine,prd2).
 arc(r_0041_0026__wine,r_0041_0025__fruity,attrib2).
 arc(r_0041_0029__will,r_0041_0030__improve,scope).
 arc(r_0041_0030__improve,r_0041_0022__it,arg0).
 arc(r_0041_0030__improve,r_0041_0032__year,tmp).
-arc(r_0041_0031__quantificational__every,r_0041_0029__will,scope).
-arc(r_0041_0031__quantificational__every,r_0041_0032__year,restriction).
+arc(r_0041_0031__quantificational__r_0041_0031__every,r_0041_0029__will,scope).
+arc(r_0041_0031__quantificational__r_0041_0031__every,r_0041_0032__year,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_41_A_BEETON_1861,axiom,
+fof(id__41_A_BEETON_1861,axiom,
     ? [STATEX5,WINEX19,CONJX24,CONNX15,QUANTX21,OPERATORX22,EVENTX23,EVENTX18,OPERATORX13,EVENTX14,EVENTX8,ENTITYX20,ENTITYX16,ENTITYX1,ENTITYX9,ENTITYX10,ENTITYX11,ENTITYX12,ENTITYX3,ATTRIBX17,ATTRIBX4,ATTRIBX2] :
       ( STATEX5 = EVENTX8
       &amp; isA(EVENTX8,r_0041_0013__drink)
-      &amp; isA(ENTITYX1,r_0041_0001__Port_wine)
+      &amp; isA(ENTITYX1,r_0041_0001__Port__r_0041_0002__wine)
       &amp; attrib4(ENTITYX1) = ATTRIBX2
       &amp; isA(ENTITYX3,r_0041_0007__wood)
       &amp; isA(ENTITYX9,r_0041_0018__months)
@@ -382,7 +382,7 @@ fof(id_41_A_BEETON_1861,axiom,
       &amp; arg0(EVENTX18) = r_0041_0022__it
       &amp; prd2(EVENTX18) = ENTITYX16
       &amp; scope(CONNX15) = QUANTX21
-      &amp; isA(QUANTX21,r_0041_0031__quantificational__every)
+      &amp; isA(QUANTX21,r_0041_0031__quantificational__r_0041_0031__every)
       &amp; restriction(QUANTX21) = ENTITYX20
       &amp; isA(ENTITYX20,r_0041_0032__year)
       &amp; scope(QUANTX21) = OPERATORX22

@@ -380,8 +380,9 @@ arc(r_0147_0002__Indeed,r_0147_0005___apos_s,scope).
 arc(r_0147_0005___apos_s,r_0147_0004__that,arg0).
 arc(r_0147_0005___apos_s,r_0147_0006__true,prd2).
 arc(r_0147_0009__said,r_0147_0011__aunt,arg0).
-arc(r_0147_0009__said,utterance_0147_1003,arg1).
+arc(r_0147_0009__said,r_0147_1003__utterance,arg1).
 arc(r_0147_0011__aunt,r_0147_0010__my,genv).
+arc(r_0147_1003__utterance,r_0147_0002__Indeed,part1).
 arc(r_0148_0004___apos_m,r_0147_0011__aunt,arg0).
 arc(r_0148_0004___apos_m,r_0148_0005__sure,prd2).
 arc(r_0148_0004___apos_m,r_0148_0006__now,tmp6).
@@ -398,19 +399,18 @@ arc(r_0148_0018__forget,r_0148_0015__he,arg0).
 arc(r_0148_0018__forget,r_0148_0020__and,arg1).
 arc(r_0148_0020__and,r_0148_0019__you,conj1).
 arc(r_0148_0020__and,r_0148_0023__kindness,conj2).
-arc(r_0148_0021__quantificational__all,r_0148_0020__and,scope).
-arc(r_0148_0021__quantificational__all,r_0148_0023__kindness,restriction).
+arc(r_0148_0021__quantificational__r_0148_0021__all,r_0148_0020__and,scope).
+arc(r_0148_0021__quantificational__r_0148_0021__all,r_0148_0023__kindness,restriction).
 arc(r_0148_0023__kindness,r_0148_0015__he,r_0148_0024__to).
 arc(r_0148_0023__kindness,r_0148_0022__your,genv).
-arc(utterance_0147_1003,r_0147_0002__Indeed,part1).
 
 </pre>
 <br>
 <pre>
-fof(id_147_A_JOYCE_1914__148_A_JOYCE_1914,axiom,
+fof(id__147_A_JOYCE_1914__148_A_JOYCE_1914,axiom,
     ? [STATEX1,STATEX12,STATEX22,CATENATIVEX24,AUNTX10,SISTERSX16,PRIESTX17,PRIESTX23,PRIESTX27,EVENTX30,EVENTX29,EVENTX28,OPERATORX18,OPERATORX19,EVENTX20,QUANTX15,EVENTX9,CONJX7,OPERATORX4,EVENTX6,ENTITYX25,ENTITYX13,ENTITYX14,AUNTX8,ATTRIBX11,ATTRIBX26,ATTRIBX5,QUALITYX21] :
       ( STATEX1 = CONJX7
-      &amp; isA(CONJX7,utterance_0147_1003)
+      &amp; isA(CONJX7,r_0147_1003__utterance)
       &amp; part1(CONJX7) = OPERATORX4
       &amp; isA(OPERATORX4,r_0147_0002__Indeed)
       &amp; scope(OPERATORX4) = EVENTX6
@@ -435,7 +435,7 @@ fof(id_147_A_JOYCE_1914__148_A_JOYCE_1914,axiom,
       &amp; isA(AUNTX8,r_0147_0011__aunt)
       &amp; genv(AUNTX8) = r_0147_0010__my
       &amp; AUNTX10 = AUNTX8
-      &amp; isA(QUANTX15,r_0148_0021__quantificational__all)
+      &amp; isA(QUANTX15,r_0148_0021__quantificational__r_0148_0021__all)
       &amp; restriction(QUANTX15) = ENTITYX14
       &amp; isA(ENTITYX14,r_0148_0023__kindness)
       &amp; genv(ENTITYX14) = SISTERSX16

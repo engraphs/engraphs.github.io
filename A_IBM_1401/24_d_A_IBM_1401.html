@@ -207,24 +207,24 @@ Pre-written programs have already been tested by IBM , reducing tedious checking
 </svg>
 <br>
 <pre>
-arc(abs_0029_1003,r_0029_0003__have,scope).
-arc(abs_0029_1003,r_0029_0010__reducing,restriction).
 arc(r_0029_0002__programs,r_0029_0001__Pre_written,attrib1).
 arc(r_0029_0003__have,r_0029_0005__been,catenative).
 arc(r_0029_0005__been,r_0029_0004__already,tmp1).
 arc(r_0029_0005__been,r_0029_0006__tested,catenative).
 arc(r_0029_0006__tested,r_0029_0002__programs,arg1).
-arc(r_0029_0006__tested,r_0029_0008__IBM,arg0_by_lgs).
+arc(r_0029_0006__tested,r_0029_0008__IBM,arg0__r_0029_0007__by_lgs).
 arc(r_0029_0010__reducing,r_0029_0002__programs,arg0).
 arc(r_0029_0010__reducing,r_0029_0013__operations,arg1).
 arc(r_0029_0013__operations,r_0029_0011__tedious,attrib1).
 arc(r_0029_0013__operations,r_0029_0012__checking,attrib2).
 arc(r_0029_0013__operations,r_0029_0016__computer,r_0029_0014__on).
+arc(r_0029_1003__abs,r_0029_0003__have,scope).
+arc(r_0029_1003__abs,r_0029_0010__reducing,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_29_A_IBM_1401,axiom,
+fof(id__29_A_IBM_1401,axiom,
     ? [CATENATIVEX10,CATENATIVEX12,CONNX4,EVENTX9,EVENTX15,EVENTX14,EVENTX13,ENTITYX1,ENTITYX5,ENTITYX8,ATTRIBX6,ATTRIBX7,ATTRIBX2,QUALITYX11] :
       ( CATENATIVEX10 = EVENTX14
       &amp; isA(EVENTX14,r_0029_0005__been)
@@ -232,7 +232,7 @@ fof(id_29_A_IBM_1401,axiom,
       &amp; catenative(EVENTX14) = CATENATIVEX12
       &amp; CATENATIVEX12 = EVENTX13
       &amp; isA(EVENTX13,r_0029_0006__tested)
-      &amp; arg0_by_lgs(EVENTX13) = r_0029_0008__IBM
+      &amp; arg0__r_0029_0007__by_lgs(EVENTX13) = r_0029_0008__IBM
       &amp; arg1(EVENTX13) = ENTITYX1
       &amp; isA(ENTITYX1,r_0029_0002__programs)
       &amp; attrib1(ENTITYX1) = ATTRIBX2
@@ -245,7 +245,7 @@ fof(id_29_A_IBM_1401,axiom,
       &amp; isA(ATTRIBX6,r_0029_0011__tedious)
       &amp; isA(ATTRIBX7,r_0029_0012__checking)
       &amp; isA(QUALITYX11,r_0029_0004__already)
-      &amp; isA(CONNX4,abs_0029_1003)
+      &amp; isA(CONNX4,r_0029_1003__abs)
       &amp; scope(CONNX4) = EVENTX15
       &amp; isA(EVENTX15,r_0029_0003__have)
       &amp; catenative(EVENTX15) = CATENATIVEX10

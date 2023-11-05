@@ -190,28 +190,28 @@ And like an idiot I said &ldquo; yes &rdquo; , we had n't got very much to do .
 arc(r_0002_0006__said,r_0002_0004__idiot,r_0002_0002__like_mnr).
 arc(r_0002_0006__said,r_0002_0005__I,arg0).
 arc(r_0002_0006__said,r_0002_0013__n_apos_t,prn9).
-arc(r_0002_0006__said,utterance_0002_1004,arg1).
-arc(r_0002_0012__had_got,r_0002_0011__we,arg0).
-arc(r_0002_0012__had_got,z_0002_1018,arg1).
-arc(r_0002_0013__n_apos_t,r_0002_0012__had_got,scope).
+arc(r_0002_0006__said,r_0002_1004__utterance,arg1).
+arc(r_0002_0012__had__r_0002_0014__got,r_0002_0011__we,arg0).
+arc(r_0002_0012__had__r_0002_0014__got,z_0002_1018,arg1).
+arc(r_0002_0013__n_apos_t,r_0002_0012__had__r_0002_0014__got,scope).
 arc(r_0002_0016__much,r_0002_0015__very,quality1).
-arc(utterance_0002_1004,z_0002_1007,part1).
+arc(r_0002_1004__utterance,z_0002_1007,part1).
 arc(z_0002_1018,r_0002_0016__much,attrib1).
 arc(z_0002_1018,r_0002_0018__do,emb2).
 
 </pre>
 <br>
 <pre>
-fof(id_2_A_PaulFellows,axiom,
+fof(id__2_A_PaulFellows,axiom,
     ? [STATEX2,EVENTX10,STATEX14,EVENTX21,OPERATORX19,EVENTX20,EVENTX17,CONJX9,EVENTX8,ENTITYX1,ENTITYX11,ATTRIBX12,QUALITYX13] :
       ( STATEX2 = CONJX9
-      &amp; isA(CONJX9,utterance_0002_1004)
+      &amp; isA(CONJX9,r_0002_1004__utterance)
       &amp; part1(CONJX9) = EVENTX8
       &amp; isA(EVENTX8,z_0002_1007)
       &amp; EVENTX10 = OPERATORX19
       &amp; isA(OPERATORX19,r_0002_0013__n_apos_t)
       &amp; scope(OPERATORX19) = EVENTX20
-      &amp; isA(EVENTX20,r_0002_0012__had_got)
+      &amp; isA(EVENTX20,r_0002_0012__had__r_0002_0014__got)
       &amp; arg0(EVENTX20) = r_0002_0011__we
       &amp; arg1(EVENTX20) = ENTITYX11
       &amp; STATEX14 = EVENTX17

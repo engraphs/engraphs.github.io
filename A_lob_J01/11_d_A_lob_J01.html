@@ -315,24 +315,24 @@ arc(r_0011_0010__proportional,r_0011_0013__concentration,r_0011_0011__to).
 arc(r_0011_0013__concentration,r_0011_0012__its,genv).
 arc(r_0011_0015__is,r_0011_0016__required,catenative).
 arc(r_0011_0016__required,r_0011_0013__concentration,arg1).
-arc(r_0011_0016__required,r_0011_0020__law,arg0_by_lgs).
+arc(r_0011_0016__required,r_0011_0020__law,arg0__r_0011_0017__by_lgs).
 arc(r_0011_0020__law,r_0011_0018__Henry,genv).
 arc(r_0011_0021__then,r_0011_0030__may,scope).
-arc(r_0011_0024__energy_change,r_0011_0023__free,attrib2).
-arc(r_0011_0024__energy_change,r_0011_0027__mole_0_bsup_=_ast__bsup__ion,r_0011_0026__per).
+arc(r_0011_0024__energy__r_0011_0025__change,r_0011_0023__free,attrib2).
+arc(r_0011_0024__energy__r_0011_0025__change,r_0011_0027__mole_r_0011_0028__0_bsup_=_ast__bsup__r_0011_0029__ion,r_0011_0026__per).
 arc(r_0011_0030__may,r_0011_0031__be,scope).
 arc(r_0011_0031__be,r_0011_0032__written,catenative).
-arc(r_0011_0032__written,r_0011_0024__energy_change,arg1).
+arc(r_0011_0032__written,r_0011_0024__energy__r_0011_0025__change,arg1).
 arc(r_0011_0032__written,z_0011_1021,prd).
 
 </pre>
 <br>
 <pre>
-fof(id_11_A_lob_J01,axiom,
+fof(id__11_A_lob_J01,axiom,
     ? [CATENATIVEX8,CATENATIVEX18,CONNX1,OPERATORX13,OPERATORX17,EVENTX23,EVENTX22,EVENTX12,EVENTX11,EVENTX10,EVENTX5,ENTITYX14,ENTITYX20,ENTITYX16,ENTITYX2,ENTITYX7,ENTITYX9,ENTITYX3,ENTITYX4,ATTRIBX15,ATTRIBX6] :
       ( CATENATIVEX8 = EVENTX10
       &amp; isA(EVENTX10,r_0011_0016__required)
-      &amp; arg0_by_lgs(EVENTX10) = ENTITYX9
+      &amp; arg0__r_0011_0017__by_lgs(EVENTX10) = ENTITYX9
       &amp; arg1(EVENTX10) = ENTITYX7
       &amp; CATENATIVEX18 = EVENTX22
       &amp; isA(EVENTX22,r_0011_0032__written)
@@ -351,10 +351,10 @@ fof(id_11_A_lob_J01,axiom,
       &amp; genv(ENTITYX7) = r_0011_0012__its
       &amp; isA(ENTITYX9,r_0011_0020__law)
       &amp; genv(ENTITYX9) = r_0011_0018__Henry
-      &amp; isA(ENTITYX14,r_0011_0024__energy_change)
+      &amp; isA(ENTITYX14,r_0011_0024__energy__r_0011_0025__change)
       &amp; attrib2(ENTITYX14) = ATTRIBX15
       &amp; r_0011_0026__per(ENTITYX14) = ENTITYX16
-      &amp; isA(ENTITYX16,r_0011_0027__mole_0_bsup_=_ast__bsup__ion)
+      &amp; isA(ENTITYX16,r_0011_0027__mole__r_0011_0028__0_bsup_=_ast__bsup__r_0011_0029__ion)
       &amp; isA(ENTITYX20,z_0011_1021)
       &amp; isA(ATTRIBX6,r_0011_0010__proportional)
       &amp; r_0011_0011__to(ATTRIBX6) = ENTITYX7

@@ -229,22 +229,22 @@ Note : The statement has been placed in a National Aeronautics and Space Adminis
 arc(r_0003_0004__has,r_0003_0005__been,catenative).
 arc(r_0003_0005__been,r_0003_0006__placed,catenative).
 arc(r_0003_0006__placed,r_0003_0003__statement,arg1).
-arc(r_0003_0006__placed,r_0003_0014__Voyager_spacecraft,r_0003_0007__in_clr_loc).
+arc(r_0003_0006__placed,r_0003_0014__Voyager__r_0003_0015__spacecraft,r_0003_0007__in_clr_loc).
 arc(r_0003_0011__and,r_0003_0010__Aeronautics,conj1).
 arc(r_0003_0011__and,r_0003_0012__Space,conj2).
 arc(r_0003_0013__Administration,r_0003_0009__National,attrib1).
 arc(r_0003_0013__Administration,r_0003_0011__and,nlyr2).
-arc(r_0003_0014__Voyager_spacecraft,r_0003_0013__Administration,nlyr2).
+arc(r_0003_0014__Voyager__r_0003_0015__spacecraft,r_0003_0013__Administration,nlyr2).
 arc(r_0003_0017__is,r_0003_0018__scheduled,catenative).
-arc(r_0003_0018__scheduled,r_0003_0014__Voyager_spacecraft,arg1).
+arc(r_0003_0018__scheduled,r_0003_0014__Voyager__r_0003_0015__spacecraft,arg1).
 arc(r_0003_0018__scheduled,r_0003_0020__be,prd).
 arc(r_0003_0020__be,r_0003_0021__launched,catenative).
-arc(r_0003_0021__launched,r_0003_0022__August_20,tmp).
+arc(r_0003_0021__launched,r_0003_0022__August__r_0003_0023__20,tmp).
 
 </pre>
 <br>
 <pre>
-fof(id_3_A_Voyager,axiom,
+fof(id__3_A_Voyager,axiom,
     ? [CATENATIVEX2,CATENATIVEX3,CATENATIVEX11,STATEX13,CATENATIVEX16,EVENTX25,EVENTX24,EVENTX23,EVENTX22,EVENTX21,EVENTX20,EVENTX19,ENTITYX1,ENTITYX5,ENTITYX6,ENTITYX18,ENTITYX8,ENTITYX9,ENTITYX10,ATTRIBX7] :
       ( CATENATIVEX2 = EVENTX24
       &amp; isA(EVENTX24,r_0003_0005__been)
@@ -266,7 +266,7 @@ fof(id_3_A_Voyager,axiom,
       &amp; isA(ENTITYX1,r_0003_0003__statement)
       &amp; isA(EVENTX22,r_0003_0017__is)
       &amp; catenative(EVENTX22) = CATENATIVEX11
-      &amp; isA(ENTITYX5,r_0003_0014__Voyager_spacecraft)
+      &amp; isA(ENTITYX5,r_0003_0014__Voyager__r_0003_0015__spacecraft)
       &amp; nlyr2(ENTITYX5) = ENTITYX6
       &amp; isA(ENTITYX6,r_0003_0013__Administration)
       &amp; attrib1(ENTITYX6) = ATTRIBX7
@@ -276,7 +276,7 @@ fof(id_3_A_Voyager,axiom,
       &amp; conj2(ENTITYX8) = ENTITYX10
       &amp; isA(ENTITYX9,r_0003_0010__Aeronautics)
       &amp; isA(ENTITYX10,r_0003_0012__Space)
-      &amp; isA(ENTITYX18,r_0003_0022__August_20)
+      &amp; isA(ENTITYX18,r_0003_0022__August__r_0003_0023__20)
       &amp; isA(ATTRIBX7,r_0003_0009__National)
       &amp; isA(EVENTX25,r_0003_0004__has)
       &amp; catenative(EVENTX25) = CATENATIVEX2 ) ).

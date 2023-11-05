@@ -509,6 +509,7 @@ But it 's not a pretty sight . &rdquo;
 arc(r_0006_0003__peered,r_0006_0002__Captain,arg0).
 arc(r_0006_0003__peered,r_0006_0006__eyepiece,r_0006_0004__into_clr_dir).
 arc(r_0006_0006__eyepiece,r_0006_0009__telescope,r_0006_0007__of).
+arc(r_0006_1011__utterance,r_0008_0003__was,part1).
 arc(r_0007_0002__adjusted,r_0006_0002__Captain,arg0).
 arc(r_0007_0002__adjusted,r_0007_0004__focus,arg1).
 arc(r_0007_0002__adjusted,r_0007_0005__quickly,mnr4).
@@ -519,16 +520,16 @@ arc(r_0008_0006__fission,r_0008_0005__atomic,attrib2).
 arc(r_0008_0008__saw,r_0008_0007__we,arg0).
 arc(r_0008_0008__saw,z_0006_1017,arg1).
 arc(r_0008_0014__said,r_0006_0002__Captain,arg0).
+arc(r_0008_0014__said,r_0006_1011__utterance,arg1).
 arc(r_0008_0014__said,r_0008_0015__presently,tmp7).
-arc(r_0008_0014__said,utterance_0006_1011,arg1).
 arc(r_0009_0002__sighed,r_0006_0002__Captain,arg0).
 arc(r_0009_0003__and,r_0009_0002__sighed,conj1).
 arc(r_0009_0003__and,r_0009_0004__pushed,conj2).
 arc(r_0009_0004__pushed,r_0006_0002__Captain,arg0).
 arc(r_0009_0004__pushed,r_0009_0006__eyepiece,arg1).
 arc(r_0009_0004__pushed,r_0009_0007__away,clr_dir3).
-arc(r_0010_0002__quantificational__Any,r_0010_0009__may,scope).
-arc(r_0010_0002__quantificational__Any,z_0006_1036,restriction).
+arc(r_0010_0002__quantificational__r_0010_0002__Any,r_0010_0009__may,scope).
+arc(r_0010_0002__quantificational__r_0010_0002__Any,z_0006_1036,restriction).
 arc(r_0010_0006__wants,r_0010_0008__look,arg1).
 arc(r_0010_0006__wants,z_0006_1036,arg0).
 arc(r_0010_0008__look,z_0006_1036,arg0).
@@ -539,16 +540,15 @@ arc(r_0011_0003___apos_s,r_0008_0006__fission,arg0).
 arc(r_0011_0003___apos_s,r_0011_0007__sight,prd2).
 arc(r_0011_0004__not,r_0011_0003___apos_s,scope).
 arc(r_0011_0007__sight,r_0011_0006__pretty,attrib2).
-arc(utterance_0006_1011,r_0008_0003__was,part1).
 arc(z_0006_1036,r_0008_0007__we,r_0010_0003__of).
 
 </pre>
 <br>
 <pre>
-fof(id_6_A_DICK_1952__7_A_DICK_1952__8_A_DICK_1952__9_A_DICK_1952__10_A_DICK_1952__11_A_DICK_1952,axiom,
+fof(id__6_A_DICK_1952__7_A_DICK_1952__8_A_DICK_1952__9_A_DICK_1952__10_A_DICK_1952__11_A_DICK_1952,axiom,
     ? [STATEX9,STATEX33,CAPTAINX5,CAPTAINX21,CAPTAINX24,TRESPASSERSX32,FISSIONX40,OPERATORX43,EVENTX44,QUANTX31,OPERATORX38,EVENTX39,EVENTX35,EVENTX34,CONJX29,EVENTX28,EVENTX25,EVENTX23,CONJX20,EVENTX19,EVENTX16,EVENTX8,EVENTX4,ENTITYX41,ENTITYX30,ENTITYX26,FISSIONX13,ENTITYX15,ENTITYX6,CAPTAINX1,ENTITYX2,ENTITYX3,QUALITYX37,QUALITYX27,QUALITYX22,QUALITYX18,QUALITYX7,ATTRIBX42,ATTRIBX14] :
       ( STATEX9 = CONJX20
-      &amp; isA(CONJX20,utterance_0006_1011)
+      &amp; isA(CONJX20,r_0006_1011__utterance)
       &amp; part1(CONJX20) = EVENTX19
       &amp; isA(EVENTX19,r_0008_0003__was)
       &amp; foc(EVENTX19) = FISSIONX13
@@ -603,7 +603,7 @@ fof(id_6_A_DICK_1952__7_A_DICK_1952__8_A_DICK_1952__9_A_DICK_1952__10_A_DICK_195
       &amp; arg0(EVENTX28) = CAPTAINX24
       &amp; arg1(EVENTX28) = ENTITYX26
       &amp; clr_dir3(EVENTX28) = QUALITYX27
-      &amp; isA(QUANTX31,r_0010_0002__quantificational__Any)
+      &amp; isA(QUANTX31,r_0010_0002__quantificational__r_0010_0002__Any)
       &amp; isA(EVENTX35,r_0010_0006__wants)
       &amp; arg0(EVENTX35) = ENTITYX30
       &amp; arg1(EVENTX35) = STATEX33

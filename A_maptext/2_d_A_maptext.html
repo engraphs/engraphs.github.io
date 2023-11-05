@@ -213,24 +213,24 @@ Proceed along the main Swafford to Hardley road and turn left to Burfell just be
 </svg>
 <br>
 <pre>
-arc(imperative_0002_1002,r_0002_0009__and,scope).
 arc(r_0002_0001__Proceed,r_0002_0008__road,r_0002_0002__along_dir).
 arc(r_0002_0005__Swafford,r_0002_0007__Hardley,r_0002_0006__to).
 arc(r_0002_0008__road,r_0002_0004__main,attrib2).
 arc(r_0002_0008__road,r_0002_0005__Swafford,nlyr3).
 arc(r_0002_0009__and,r_0002_0001__Proceed,conj1).
-arc(r_0002_0009__and,r_0002_0014__just_before_tmp,conj2).
+arc(r_0002_0009__and,r_0002_0014__just__r_0002_0015__before_tmp,conj2).
 arc(r_0002_0010__turn,r_0002_0011__left,dir2).
 arc(r_0002_0010__turn,r_0002_0013__Burfell,r_0002_0012__to_dir).
-arc(r_0002_0014__just_before_tmp,r_0002_0010__turn,scope).
-arc(r_0002_0014__just_before_tmp,r_0002_0017__reach,restriction).
+arc(r_0002_0014__just__r_0002_0015__before_tmp,r_0002_0010__turn,scope).
+arc(r_0002_0014__just__r_0002_0015__before_tmp,r_0002_0017__reach,restriction).
 arc(r_0002_0017__reach,r_0002_0016__you,arg0).
 arc(r_0002_0017__reach,r_0002_0018__Hardley,arg1).
+arc(r_0002_1002__imperative,r_0002_0009__and,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_2_A_maptext,axiom,
+fof(id__2_A_maptext,axiom,
     ? [OPERATORX2,CONJX11,CONNX8,EVENTX9,EVENTX10,EVENTX6,ENTITYX4,ATTRIBX5,QUALITYX7] :
       ( isA(ENTITYX4,r_0002_0008__road)
       &amp; attrib2(ENTITYX4) = ATTRIBX5
@@ -239,14 +239,14 @@ fof(id_2_A_maptext,axiom,
       &amp; isA(r_0002_0005__Swafford,r_0002_0005__Swafford)
       &amp; r_0002_0006__to(r_0002_0005__Swafford) = r_0002_0007__Hardley
       &amp; isA(QUALITYX7,r_0002_0011__left)
-      &amp; isA(OPERATORX2,imperative_0002_1002)
+      &amp; isA(OPERATORX2,r_0002_1002__imperative)
       &amp; scope(OPERATORX2) = CONJX11
       &amp; isA(CONJX11,r_0002_0009__and)
       &amp; conj1(CONJX11) = EVENTX6
       &amp; isA(EVENTX6,r_0002_0001__Proceed)
       &amp; r_0002_0002__along_dir(EVENTX6) = ENTITYX4
       &amp; conj2(CONJX11) = CONNX8
-      &amp; isA(CONNX8,r_0002_0014__just_before_tmp)
+      &amp; isA(CONNX8,r_0002_0014__just__r_0002_0015__before_tmp)
       &amp; scope(CONNX8) = EVENTX10
       &amp; isA(EVENTX10,r_0002_0010__turn)
       &amp; dir2(EVENTX10) = QUALITYX7

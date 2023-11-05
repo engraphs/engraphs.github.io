@@ -189,14 +189,14 @@ arc(r_0003_0009__and,r_0003_0002__are,conj1).
 arc(r_0003_0009__and,r_0003_0011__attended,conj2).
 arc(r_0003_0011__attended,r_0003_0001__You,arg0).
 arc(r_0003_0011__attended,r_0003_0010__recently,tmp1).
-arc(r_0003_0011__attended,r_0003_0013__activities_weekend,arg1).
-arc(r_0003_0015__organised,r_0003_0013__activities_weekend,arg1).
-arc(r_0003_0015__organised,r_0003_0018__college,arg0_by_lgs).
+arc(r_0003_0011__attended,r_0003_0013__activities__r_0003_0014__weekend,arg1).
+arc(r_0003_0015__organised,r_0003_0013__activities__r_0003_0014__weekend,arg1).
+arc(r_0003_0015__organised,r_0003_0018__college,arg0__r_0003_0016__by_lgs).
 
 </pre>
 <br>
 <pre>
-fof(id_3_A_fce_0101_2001_06,axiom,
+fof(id__3_A_fce_0101_2001_06,axiom,
     ? [CATENATIVEX1,CONJX10,EVENTX9,EVENTX8,EVENTX4,EVENTX3,ENTITYX6,ENTITYX7,ENTITYX2,QUALITYX5] :
       ( CATENATIVEX1 = EVENTX3
       &amp; isA(EVENTX3,r_0003_0003__studying)
@@ -205,9 +205,9 @@ fof(id_3_A_fce_0101_2001_06,axiom,
       &amp; isA(ENTITYX2,r_0003_0006__college)
       &amp; r_0003_0007__in(ENTITYX2) = r_0003_0008__Britain
       &amp; isA(EVENTX8,r_0003_0015__organised)
-      &amp; arg0_by_lgs(EVENTX8) = ENTITYX7
+      &amp; arg0__r_0003_0016__by_lgs(EVENTX8) = ENTITYX7
       &amp; arg1(EVENTX8) = ENTITYX6
-      &amp; isA(ENTITYX6,r_0003_0013__activities_weekend)
+      &amp; isA(ENTITYX6,r_0003_0013__activities__r_0003_0014__weekend)
       &amp; isA(ENTITYX7,r_0003_0018__college)
       &amp; isA(QUALITYX5,r_0003_0010__recently)
       &amp; isA(CONJX10,r_0003_0009__and)

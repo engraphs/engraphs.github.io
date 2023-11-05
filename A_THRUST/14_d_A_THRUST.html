@@ -143,21 +143,21 @@ An extra spaceship is awarded for every 10,000 points scored .
 <br>
 <pre>
 arc(r_0026_0003__spaceship,r_0026_0002__extra,attrib2).
-arc(r_0026_0004__is,r_0026_0007__quantificational__every,catenative).
+arc(r_0026_0004__is,r_0026_0007__quantificational__r_0026_0007__every,catenative).
 arc(r_0026_0005__awarded,r_0026_0003__spaceship,arg1).
 arc(r_0026_0005__awarded,z_0026_1010,r_0026_0006__for_clr_cnt).
-arc(r_0026_0007__quantificational__every,r_0026_0005__awarded,scope).
-arc(r_0026_0007__quantificational__every,z_0026_1010,restriction).
-arc(r_0026_0010__scored,r_0026_0008__10,000_points,arg1).
-arc(z_0026_1010,r_0026_0008__10,000_points,nlyr2).
+arc(r_0026_0007__quantificational__r_0026_0007__every,r_0026_0005__awarded,scope).
+arc(r_0026_0007__quantificational__r_0026_0007__every,z_0026_1010,restriction).
+arc(r_0026_0010__scored,r_0026_0008__10,000__r_0026_0009__points,arg1).
+arc(z_0026_1010,r_0026_0008__10,000__r_0026_0009__points,nlyr2).
 
 </pre>
 <br>
 <pre>
-fof(id_26_A_THRUST,axiom,
+fof(id__26_A_THRUST,axiom,
     ? [CATENATIVEX3,EVENTX12,QUANTX6,EVENTX11,EVENTX9,ENTITYX1,ENTITYX5,ENTITYX7,ATTRIBX2] :
       ( CATENATIVEX3 = QUANTX6
-      &amp; isA(QUANTX6,r_0026_0007__quantificational__every)
+      &amp; isA(QUANTX6,r_0026_0007__quantificational__r_0026_0007__every)
       &amp; restriction(QUANTX6) = ENTITYX5
       &amp; isA(ENTITYX5,z_0026_1010)
       &amp; nlyr2(ENTITYX5) = ENTITYX7
@@ -169,7 +169,7 @@ fof(id_26_A_THRUST,axiom,
       &amp; attrib2(ENTITYX1) = ATTRIBX2
       &amp; isA(EVENTX9,r_0026_0010__scored)
       &amp; arg1(EVENTX9) = ENTITYX7
-      &amp; isA(ENTITYX7,r_0026_0008__10,000_points)
+      &amp; isA(ENTITYX7,r_0026_0008__10,000__r_0026_0009__points)
       &amp; isA(ATTRIBX2,r_0026_0002__extra)
       &amp; isA(EVENTX12,r_0026_0004__is)
       &amp; catenative(EVENTX12) = CATENATIVEX3 ) ).

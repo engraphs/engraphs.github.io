@@ -163,13 +163,13 @@ As the background , any Buddhist knows that &ldquo; all living things have Buddh
 </svg>
 <br>
 <pre>
-arc(r_0054_0005__quantificational__any,r_0054_0006__Buddhist,restriction).
-arc(r_0054_0005__quantificational__any,r_0054_0007__knows,scope).
+arc(r_0054_0005__quantificational__r_0054_0005__any,r_0054_0006__Buddhist,restriction).
+arc(r_0054_0005__quantificational__r_0054_0005__any,r_0054_0007__knows,scope).
 arc(r_0054_0007__knows,r_0054_0003__background,r_0054_0001__As_abs).
 arc(r_0054_0007__knows,r_0054_0006__Buddhist,arg0).
-arc(r_0054_0007__knows,r_0054_0010__quantificational__all,arg1).
-arc(r_0054_0010__quantificational__all,r_0054_0012__things,restriction).
-arc(r_0054_0010__quantificational__all,r_0054_0013__have,scope).
+arc(r_0054_0007__knows,r_0054_0010__quantificational__r_0054_0010__all,arg1).
+arc(r_0054_0010__quantificational__r_0054_0010__all,r_0054_0012__things,restriction).
+arc(r_0054_0010__quantificational__r_0054_0010__all,r_0054_0013__have,scope).
 arc(r_0054_0012__things,r_0054_0011__living,attrib2).
 arc(r_0054_0013__have,r_0054_0012__things,arg0).
 arc(r_0054_0013__have,r_0054_0014__Buddha_nature,arg1).
@@ -177,10 +177,10 @@ arc(r_0054_0013__have,r_0054_0014__Buddha_nature,arg1).
 </pre>
 <br>
 <pre>
-fof(id_54_A_KYOTO_2,axiom,
+fof(id__54_A_KYOTO_2,axiom,
     ? [STATEX4,QUANTX3,EVENTX10,QUANTX6,EVENTX9,ENTITYX1,ENTITYX2,ENTITYX5,ENTITYX8,ATTRIBX7] :
       ( STATEX4 = QUANTX6
-      &amp; isA(QUANTX6,r_0054_0010__quantificational__all)
+      &amp; isA(QUANTX6,r_0054_0010__quantificational__r_0054_0010__all)
       &amp; restriction(QUANTX6) = ENTITYX5
       &amp; isA(ENTITYX5,r_0054_0012__things)
       &amp; attrib2(ENTITYX5) = ATTRIBX7
@@ -191,7 +191,7 @@ fof(id_54_A_KYOTO_2,axiom,
       &amp; isA(ENTITYX1,r_0054_0003__background)
       &amp; isA(ENTITYX8,r_0054_0014__Buddha_nature)
       &amp; isA(ATTRIBX7,r_0054_0011__living)
-      &amp; isA(QUANTX3,r_0054_0005__quantificational__any)
+      &amp; isA(QUANTX3,r_0054_0005__quantificational__r_0054_0005__any)
       &amp; restriction(QUANTX3) = ENTITYX2
       &amp; isA(ENTITYX2,r_0054_0006__Buddhist)
       &amp; scope(QUANTX3) = EVENTX10

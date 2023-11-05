@@ -175,7 +175,6 @@ Turn left , choose the left lane , and exit ( yellow car . )
 </svg>
 <br>
 <pre>
-arc(imperative_0050_1002,r_0050_0009__and,scope).
 arc(r_0050_0001__Turn,r_0050_0002__left,dir2).
 arc(r_0050_0001__Turn,r_0050_0013__car,prn3).
 arc(r_0050_0004__choose,r_0050_0007__lane,arg1).
@@ -186,11 +185,12 @@ arc(r_0050_0009__and,r_0050_0004__choose,conj2).
 arc(r_0050_0009__and,r_0050_0010__exit,conj3).
 arc(r_0050_0010__exit,r_0050_0013__car,prn3).
 arc(r_0050_0013__car,r_0050_0012__yellow,attrib1).
+arc(r_0050_1002__imperative,r_0050_0009__and,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_50_A_driver_handbook,axiom,
+fof(id__50_A_driver_handbook,axiom,
     ? [OPERATORX2,CONJX12,EVENTX11,EVENTX10,EVENTX7,QUALITYX6,ENTITYX4,ENTITYX8,ATTRIBX9,ATTRIBX5] :
       ( isA(QUALITYX6,r_0050_0002__left)
       &amp; isA(ENTITYX4,r_0050_0013__car)
@@ -199,7 +199,7 @@ fof(id_50_A_driver_handbook,axiom,
       &amp; attrib2(ENTITYX8) = ATTRIBX9
       &amp; isA(ATTRIBX5,r_0050_0012__yellow)
       &amp; isA(ATTRIBX9,r_0050_0006__left)
-      &amp; isA(OPERATORX2,imperative_0050_1002)
+      &amp; isA(OPERATORX2,r_0050_1002__imperative)
       &amp; scope(OPERATORX2) = CONJX12
       &amp; isA(CONJX12,r_0050_0009__and)
       &amp; conj1(CONJX12) = EVENTX7

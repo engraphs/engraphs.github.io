@@ -423,18 +423,16 @@ You must then carry the pod away from the planet .
 </svg>
 <br>
 <pre>
-arc(cnt_0005_1001,r_0005_0002__do,restriction).
-arc(cnt_0005_1001,r_0005_0005__must,scope).
 arc(r_0005_0002__do,r_0005_0003__so,mnr3).
 arc(r_0005_0005__must,r_0005_0021__and,scope).
 arc(r_0005_0006__locate,r_0005_0004__you,arg0).
 arc(r_0005_0006__locate,r_0005_0008__pod,arg1).
 arc(r_0005_0010__hover,r_0005_0004__you,arg0).
-arc(r_0005_0010__hover,r_0005_0008__pod,r_0005_0011__just_above_clr_loc).
+arc(r_0005_0010__hover,r_0005_0008__pod,r_0005_0011__just__r_0005_0012__above_clr_loc).
 arc(r_0005_0015__activate,r_0005_0004__you,arg0).
-arc(r_0005_0015__activate,r_0005_0019__tractor_beam,arg1).
+arc(r_0005_0015__activate,r_0005_0019__tractor__r_0005_0020__beam,arg1).
 arc(r_0005_0017__starship,r_0005_0004__you,genv).
-arc(r_0005_0019__tractor_beam,r_0005_0017__starship,genv).
+arc(r_0005_0019__tractor__r_0005_0020__beam,r_0005_0017__starship,genv).
 arc(r_0005_0021__and,r_0005_0006__locate,conj1).
 arc(r_0005_0021__and,r_0005_0010__hover,conj2).
 arc(r_0005_0021__and,r_0005_0015__activate,conj3).
@@ -442,14 +440,16 @@ arc(r_0005_0021__and,r_0005_0022__thrust,conj4).
 arc(r_0005_0022__thrust,r_0005_0004__you,arg0).
 arc(r_0005_0022__thrust,r_0005_0023__away,clr_dir2).
 arc(r_0005_0023__away,r_0005_0008__pod,r_0005_0024__from).
+arc(r_0005_1001__cnt,r_0005_0002__do,restriction).
+arc(r_0005_1001__cnt,r_0005_0005__must,scope).
 arc(r_0006_0001__Once_tmp,r_0006_0004__has,restriction).
 arc(r_0006_0001__Once_tmp,r_0006_0011__can,scope).
 arc(r_0006_0004__has,r_0006_0005__locked,catenative).
 arc(r_0006_0005__locked,r_0005_0008__pod,r_0006_0006__onto_clr_dir).
-arc(r_0006_0005__locked,r_0005_0019__tractor_beam,arg0).
+arc(r_0006_0005__locked,r_0005_0019__tractor__r_0005_0020__beam,arg0).
 arc(r_0006_0011__can,r_0006_0012__deactivate,scope).
 arc(r_0006_0012__deactivate,r_0005_0004__you,arg0).
-arc(r_0006_0012__deactivate,r_0005_0019__tractor_beam,arg1).
+arc(r_0006_0012__deactivate,r_0005_0019__tractor__r_0005_0020__beam,arg1).
 arc(r_0007_0002__must,r_0007_0004__carry,scope).
 arc(r_0007_0004__carry,r_0005_0004__you,arg0).
 arc(r_0007_0004__carry,r_0005_0008__pod,arg1).
@@ -460,7 +460,7 @@ arc(r_0007_0007__away,r_0007_0010__planet,r_0007_0008__from).
 </pre>
 <br>
 <pre>
-fof(id_5_A_THRUST__6_A_THRUST__7_A_THRUST,axiom,
+fof(id__5_A_THRUST__6_A_THRUST__7_A_THRUST,axiom,
     ? [CATENATIVEX22,PODX10,PLAYERX14,PODX17,BEAMX21,PODX23,PLAYERX26,BEAMX27,PLAYERX30,PODX32,OPERATORX35,EVENTX36,CONNX20,OPERATORX28,EVENTX29,EVENTX25,EVENTX24,CONNX2,OPERATORX7,CONJX19,EVENTX18,EVENTX15,EVENTX11,EVENTX9,EVENTX6,QUALITYX31,QUALITYX33,QUALITYX16,QUALITYX5,ENTITYX34,BEAMX12,ENTITYX13,PODX8] :
       ( CATENATIVEX22 = EVENTX24
       &amp; isA(EVENTX24,r_0006_0005__locked)
@@ -474,7 +474,7 @@ fof(id_5_A_THRUST__6_A_THRUST__7_A_THRUST,axiom,
       &amp; r_0007_0008__from(QUALITYX33) = ENTITYX34
       &amp; isA(PODX8,r_0005_0008__pod)
       &amp; PODX10 = PODX8
-      &amp; isA(BEAMX12,r_0005_0019__tractor_beam)
+      &amp; isA(BEAMX12,r_0005_0019__tractor__r_0005_0020__beam)
       &amp; genv(BEAMX12) = ENTITYX13
       &amp; isA(ENTITYX13,r_0005_0017__starship)
       &amp; genv(ENTITYX13) = PLAYERX14
@@ -487,7 +487,7 @@ fof(id_5_A_THRUST__6_A_THRUST__7_A_THRUST,axiom,
       &amp; PLAYERX30 = r_0005_0004__you
       &amp; PODX32 = PODX8
       &amp; isA(ENTITYX34,r_0007_0010__planet)
-      &amp; isA(CONNX2,cnt_0005_1001)
+      &amp; isA(CONNX2,r_0005_1001__cnt)
       &amp; restriction(CONNX2) = EVENTX6
       &amp; isA(EVENTX6,r_0005_0002__do)
       &amp; mnr3(EVENTX6) = QUALITYX5
@@ -502,7 +502,7 @@ fof(id_5_A_THRUST__6_A_THRUST__7_A_THRUST,axiom,
       &amp; conj2(CONJX19) = EVENTX11
       &amp; isA(EVENTX11,r_0005_0010__hover)
       &amp; arg0(EVENTX11) = r_0005_0004__you
-      &amp; r_0005_0011__just_above_clr_loc(EVENTX11) = PODX10
+      &amp; r_0005_0011__just__r_0005_0012__above_clr_loc(EVENTX11) = PODX10
       &amp; conj3(CONJX19) = EVENTX15
       &amp; isA(EVENTX15,r_0005_0015__activate)
       &amp; arg0(EVENTX15) = r_0005_0004__you

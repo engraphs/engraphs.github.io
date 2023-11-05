@@ -157,19 +157,19 @@ I urge my hon. Friend to encourage our Pashtun community in this country to foll
 <br>
 <pre>
 arc(r_0104_0002__urge,r_0104_0001__I,arg0).
-arc(r_0104_0002__urge,r_0104_0004__hon._Friend,arg1).
+arc(r_0104_0002__urge,r_0104_0004__hon__r_0104_0005__Friend,arg1).
 arc(r_0104_0002__urge,r_0104_0007__encourage,prd).
-arc(r_0104_0004__hon._Friend,r_0104_0001__I,genv).
+arc(r_0104_0004__hon__r_0104_0005__Friend,r_0104_0001__I,genv).
 arc(r_0104_0007__encourage,r_0104_0015__follow,arg1).
-arc(r_0104_0009__Pashtun_community,r_0104_0008__our,genv).
-arc(r_0104_0009__Pashtun_community,r_0104_0013__country,r_0104_0011__in).
-arc(r_0104_0015__follow,r_0104_0009__Pashtun_community,arg0).
+arc(r_0104_0009__Pashtun__r_0104_0010__community,r_0104_0008__our,genv).
+arc(r_0104_0009__Pashtun__r_0104_0010__community,r_0104_0013__country,r_0104_0011__in).
+arc(r_0104_0015__follow,r_0104_0009__Pashtun__r_0104_0010__community,arg0).
 arc(r_0104_0015__follow,r_0104_0017__example,arg1).
 
 </pre>
 <br>
 <pre>
-fof(id_104_A_Hedgehog,axiom,
+fof(id__104_A_Hedgehog,axiom,
     ? [STATEX3,STATEX8,SPEAKERX2,EVENTX12,EVENTX11,EVENTX10,ENTITYX1,ENTITYX6,ENTITYX9,ENTITYX7] :
       ( STATEX3 = EVENTX11
       &amp; isA(EVENTX11,r_0104_0007__encourage)
@@ -178,10 +178,10 @@ fof(id_104_A_Hedgehog,axiom,
       &amp; isA(EVENTX10,r_0104_0015__follow)
       &amp; arg0(EVENTX10) = ENTITYX6
       &amp; arg1(EVENTX10) = ENTITYX9
-      &amp; isA(ENTITYX1,r_0104_0004__hon._Friend)
+      &amp; isA(ENTITYX1,r_0104_0004__hon__r_0104_0005__Friend)
       &amp; genv(ENTITYX1) = SPEAKERX2
       &amp; SPEAKERX2 = r_0104_0001__I
-      &amp; isA(ENTITYX6,r_0104_0009__Pashtun_community)
+      &amp; isA(ENTITYX6,r_0104_0009__Pashtun__r_0104_0010__community)
       &amp; genv(ENTITYX6) = r_0104_0008__our
       &amp; r_0104_0011__in(ENTITYX6) = ENTITYX7
       &amp; isA(ENTITYX7,r_0104_0013__country)

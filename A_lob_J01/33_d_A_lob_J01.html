@@ -246,27 +246,27 @@ Experiments with solid oxide electrolyte galvanic cells have indicated that it i
 </svg>
 <br>
 <pre>
-arc(cnt_0033_1011,r_0033_0015__obtain,scope).
-arc(cnt_0033_1011,r_0033_0018__using,restriction).
-arc(r_0033_0001__Experiments,r_0033_0004__oxide_electrolyte_galvanic_cells,r_0033_0002__with).
-arc(r_0033_0004__oxide_electrolyte_galvanic_cells,r_0033_0003__solid,attrib1).
+arc(r_0033_0001__Experiments,r_0033_0004__oxide__r_0033_0005__electrolyte_r_0033_0006__galvanic_r_0033_0007__cells,r_0033_0002__with).
+arc(r_0033_0004__oxide__r_0033_0005__electrolyte_r_0033_0006__galvanic_r_0033_0007__cells,r_0033_0003__solid,attrib1).
 arc(r_0033_0008__have,r_0033_0009__indicated,catenative).
 arc(r_0033_0009__indicated,r_0033_0001__Experiments,arg0).
 arc(r_0033_0009__indicated,r_0033_0012__is,arg1).
-arc(r_0033_0012__is,cnt_0033_1011,arg0).
 arc(r_0033_0012__is,r_0033_0013__difficult,prd2).
+arc(r_0033_0012__is,r_0033_1011__cnt,arg0).
 arc(r_0033_0015__obtain,r_0033_0017__voltages,arg1).
 arc(r_0033_0017__voltages,r_0033_0016__reproducible,attrib1).
 arc(r_0033_0018__using,r_0033_0017__voltages,arg0).
-arc(r_0033_0018__using,r_0033_0020__potentiometric_methods,arg1).
+arc(r_0033_0018__using,r_0033_0020__potentiometric__r_0033_0021__methods,arg1).
 arc(r_0033_0018__using,r_0033_0023__temperatures,r_0033_0022__at_mnr).
-arc(r_0033_0020__potentiometric_methods,r_0033_0019__normal,attrib1).
-arc(r_0033_0023__temperatures,r_0033_0025__750__deg__C,r_0033_0024__below).
+arc(r_0033_0020__potentiometric__r_0033_0021__methods,r_0033_0019__normal,attrib1).
+arc(r_0033_0023__temperatures,r_0033_0025__750__r_0033_0026___deg__r_0033_0027__C,r_0033_0024__below).
+arc(r_0033_1011__cnt,r_0033_0015__obtain,scope).
+arc(r_0033_1011__cnt,r_0033_0018__using,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_33_A_lob_J01,axiom,
+fof(id__33_A_lob_J01,axiom,
     ? [CATENATIVEX4,STATEX5,STATEX8,EVENTX21,EVENTX20,EVENTX19,CONNX12,EVENTX17,EVENTX18,ENTITYX1,ENTITYX9,ENTITYX13,ENTITYX15,ENTITYX16,ENTITYX2,ATTRIBX7,ATTRIBX14,ATTRIBX10,ATTRIBX3] :
       ( CATENATIVEX4 = EVENTX20
       &amp; isA(EVENTX20,r_0033_0009__indicated)
@@ -278,7 +278,7 @@ fof(id_33_A_lob_J01,axiom,
       &amp; prd2(EVENTX19) = ATTRIBX7
       &amp; arg0(EVENTX19) = STATEX8
       &amp; STATEX8 = CONNX12
-      &amp; isA(CONNX12,cnt_0033_1011)
+      &amp; isA(CONNX12,r_0033_1011__cnt)
       &amp; scope(CONNX12) = EVENTX18
       &amp; isA(EVENTX18,r_0033_0015__obtain)
       &amp; arg1(EVENTX18) = ENTITYX9
@@ -289,15 +289,15 @@ fof(id_33_A_lob_J01,axiom,
       &amp; r_0033_0022__at_mnr(EVENTX17) = ENTITYX15
       &amp; isA(ENTITYX1,r_0033_0001__Experiments)
       &amp; r_0033_0002__with(ENTITYX1) = ENTITYX2
-      &amp; isA(ENTITYX2,r_0033_0004__oxide_electrolyte_galvanic_cells)
+      &amp; isA(ENTITYX2,r_0033_0004__oxide__r_0033_0005__electrolyte_r_0033_0006__galvanic_r_0033_0007__cells)
       &amp; attrib1(ENTITYX2) = ATTRIBX3
       &amp; isA(ENTITYX9,r_0033_0017__voltages)
       &amp; attrib1(ENTITYX9) = ATTRIBX10
-      &amp; isA(ENTITYX13,r_0033_0020__potentiometric_methods)
+      &amp; isA(ENTITYX13,r_0033_0020__potentiometric__r_0033_0021__methods)
       &amp; attrib1(ENTITYX13) = ATTRIBX14
       &amp; isA(ENTITYX15,r_0033_0023__temperatures)
       &amp; r_0033_0024__below(ENTITYX15) = ENTITYX16
-      &amp; isA(ENTITYX16,r_0033_0025__750__deg__C)
+      &amp; isA(ENTITYX16,r_0033_0025__750__r_0033_0026___deg__r_0033_0027__C)
       &amp; isA(ATTRIBX3,r_0033_0003__solid)
       &amp; isA(ATTRIBX7,r_0033_0013__difficult)
       &amp; isA(ATTRIBX10,r_0033_0016__reproducible)

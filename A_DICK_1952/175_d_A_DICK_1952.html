@@ -422,6 +422,7 @@ They probably have seen us already , for that matter . &rdquo;
 arc(r_0225_0002__must,r_0225_0003__have,scope).
 arc(r_0225_0003__have,r_0225_0001__They,arg0).
 arc(r_0225_0003__have,r_0225_0004__patrols,arg1).
+arc(r_0225_1013__utterance,r_0227_0003__probably,part1).
 arc(r_0226_0002__probably,r_0226_0003__have,scope).
 arc(r_0226_0003__have,r_0226_0004__seen,catenative).
 arc(r_0226_0004__seen,r_0225_0001__They,arg0).
@@ -433,8 +434,8 @@ arc(r_0227_0004__have,r_0227_0005__seen,catenative).
 arc(r_0227_0005__seen,r_0225_0001__They,arg0).
 arc(r_0227_0005__seen,r_0227_0007__ship,arg1).
 arc(r_0227_0005__seen,r_0227_0007__ship,rfl).
+arc(r_0227_0012__said,r_0225_1013__utterance,arg1).
 arc(r_0227_0012__said,r_0227_0011__Tance,arg0).
-arc(r_0227_0012__said,utterance_0225_1013,arg1).
 arc(r_0228_0003__probably,r_0228_0004__know,scope).
 arc(r_0228_0004__know,r_0225_0001__They,arg0).
 arc(r_0228_0004__know,r_0228_0006__now,tmp5).
@@ -444,16 +445,15 @@ arc(r_0228_0009__can,r_0228_0010__find,scope).
 arc(r_0228_0010__find,r_0225_0001__They,arg0).
 arc(r_0228_0010__find,r_0227_0007__ship,arg1).
 arc(r_0228_0010__find,z_0225_1038,loc1).
-arc(r_0228_0015__can,r_0228_0016__blow_up,scope).
-arc(r_0228_0016__blow_up,r_0225_0001__They,arg0).
-arc(r_0228_0016__blow_up,r_0227_0007__ship,arg1).
-arc(r_0228_0016__blow_up,z_0225_1038,loc1).
-arc(utterance_0225_1013,r_0227_0003__probably,part1).
+arc(r_0228_0015__can,r_0228_0016__blow__r_0228_0018__up,scope).
+arc(r_0228_0016__blow__r_0228_0018__up,r_0225_0001__They,arg0).
+arc(r_0228_0016__blow__r_0228_0018__up,r_0227_0007__ship,arg1).
+arc(r_0228_0016__blow__r_0228_0018__up,z_0225_1038,loc1).
 
 </pre>
 <br>
 <pre>
-fof(id_225_A_DICK_1952__226_A_DICK_1952__227_A_DICK_1952__228_A_DICK_1952,axiom,
+fof(id__225_A_DICK_1952__226_A_DICK_1952__227_A_DICK_1952__228_A_DICK_1952,axiom,
     ? [CATENATIVEX6,STATEX11,CATENATIVEX16,INHABITANTSX4,INHABITANTSX14,SHIPX18,INHABITANTSX23,INHABITANTSX30,SHIPX31,INHABITANTSX34,SHIPX35,OPERATORX24,EVENTX39,OPERATORX36,EVENTX37,OPERATORX32,EVENTX33,EVENTX22,CONJX21,OPERATORX15,EVENTX20,EVENTX19,OPERATORX5,EVENTX10,EVENTX9,OPERATORX2,EVENTX3,ENTITYX27,SHIPX17,ENTITYX8,ENTITYX1,QUALITYX25,QUALITYX26,QUALITYX7] :
       ( CATENATIVEX6 = EVENTX9
       &amp; isA(EVENTX9,r_0226_0004__seen)
@@ -462,7 +462,7 @@ fof(id_225_A_DICK_1952__226_A_DICK_1952__227_A_DICK_1952__228_A_DICK_1952,axiom,
       &amp; tmp3(EVENTX9) = QUALITYX7
       &amp; r_0226_0008__for_mod(EVENTX9) = ENTITYX8
       &amp; STATEX11 = CONJX21
-      &amp; isA(CONJX21,utterance_0225_1013)
+      &amp; isA(CONJX21,r_0225_1013__utterance)
       &amp; part1(CONJX21) = OPERATORX15
       &amp; isA(OPERATORX15,r_0227_0003__probably)
       &amp; scope(OPERATORX15) = EVENTX20
@@ -489,7 +489,7 @@ fof(id_225_A_DICK_1952__226_A_DICK_1952__227_A_DICK_1952__228_A_DICK_1952,axiom,
       &amp; arg1(EVENTX33) = SHIPX31
       &amp; isA(OPERATORX36,r_0228_0015__can)
       &amp; scope(OPERATORX36) = EVENTX37
-      &amp; isA(EVENTX37,r_0228_0016__blow_up)
+      &amp; isA(EVENTX37,r_0228_0016__blow__r_0228_0018__up)
       &amp; arg0(EVENTX37) = INHABITANTSX34
       &amp; loc1(EVENTX37) = ENTITYX27
       &amp; arg0(EVENTX37) = INHABITANTSX34

@@ -319,13 +319,12 @@ I saw a great t-shirt recently , which said , &ldquo; If a man speaks his mind i
 </svg>
 <br>
 <pre>
-arc(question_0207_1007,r_0207_0012__If_cnt_cnd,scope).
 arc(r_0207_0002__saw,r_0207_0001__I,arg0).
 arc(r_0207_0002__saw,r_0207_0005__t_shirt,arg1).
 arc(r_0207_0002__saw,r_0207_0006__recently,tmp4).
 arc(r_0207_0005__t_shirt,r_0207_0004__great,attrib2).
 arc(r_0207_0009__said,r_0207_0005__t_shirt,arg0).
-arc(r_0207_0009__said,utterance_0207_1005,arg1).
+arc(r_0207_0009__said,r_0207_1005__utterance,arg1).
 arc(r_0207_0012__If_cnt_cnd,r_0207_0022__and,restriction).
 arc(r_0207_0012__If_cnt_cnd,r_0207_0028__is,scope).
 arc(r_0207_0015__speaks,r_0207_0014__man,arg0).
@@ -333,25 +332,26 @@ arc(r_0207_0015__speaks,r_0207_0017__mind,arg1).
 arc(r_0207_0015__speaks,r_0207_0020__forest,r_0207_0018__in_loc).
 arc(r_0207_0017__mind,r_0207_0014__man,genv).
 arc(r_0207_0022__and,r_0207_0015__speaks,conj1).
-arc(r_0207_0022__and,r_0207_0023__quantificational__no,conj2).
-arc(r_0207_0023__quantificational__no,r_0207_0024__woman,restriction).
-arc(r_0207_0023__quantificational__no,r_0207_0025__hears,scope).
+arc(r_0207_0022__and,r_0207_0023__quantificational__r_0207_0023__no,conj2).
+arc(r_0207_0023__quantificational__r_0207_0023__no,r_0207_0024__woman,restriction).
+arc(r_0207_0023__quantificational__r_0207_0023__no,r_0207_0025__hears,scope).
 arc(r_0207_0025__hears,r_0207_0014__man,arg1).
 arc(r_0207_0025__hears,r_0207_0024__woman,arg0).
 arc(r_0207_0028__is,r_0207_0014__man,arg0).
 arc(r_0207_0028__is,r_0207_0030__still,mnr5).
 arc(r_0207_0028__is,r_0207_0031__wrong,prd2).
-arc(utterance_0207_1005,question_0207_1007,part1).
+arc(r_0207_1005__utterance,r_0207_1007__question,part1).
+arc(r_0207_1007__question,r_0207_0012__If_cnt_cnd,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_207_A_TED_talk_11,axiom,
+fof(id__207_A_TED_talk_11,axiom,
     ? [STATEX3,MANX13,MANX18,MANX21,EVENTX28,EVENTX26,CONJX25,OPERATORX7,CONNX8,EVENTX24,CONJX20,QUANTX17,EVENTX19,EVENTX15,ENTITYX1,ENTITYX16,MANX11,ENTITYX12,ENTITYX14,ATTRIBX2,ATTRIBX23,QUALITYX27,QUALITYX22] :
       ( STATEX3 = CONJX25
-      &amp; isA(CONJX25,utterance_0207_1005)
+      &amp; isA(CONJX25,r_0207_1005__utterance)
       &amp; part1(CONJX25) = OPERATORX7
-      &amp; isA(OPERATORX7,question_0207_1007)
+      &amp; isA(OPERATORX7,r_0207_1007__question)
       &amp; scope(OPERATORX7) = CONNX8
       &amp; isA(CONNX8,r_0207_0012__If_cnt_cnd)
       &amp; restriction(CONNX8) = CONJX20
@@ -363,7 +363,7 @@ fof(id_207_A_TED_talk_11,axiom,
       &amp; arg1(EVENTX15) = ENTITYX12
       &amp; r_0207_0018__in_loc(EVENTX15) = ENTITYX14
       &amp; conj2(CONJX20) = QUANTX17
-      &amp; isA(QUANTX17,r_0207_0023__quantificational__no)
+      &amp; isA(QUANTX17,r_0207_0023__quantificational__r_0207_0023__no)
       &amp; restriction(QUANTX17) = ENTITYX16
       &amp; isA(ENTITYX16,r_0207_0024__woman)
       &amp; scope(QUANTX17) = EVENTX19

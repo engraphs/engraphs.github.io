@@ -338,38 +338,38 @@ Write us an article about one invention , explaining why you think it is importa
 </svg>
 <br>
 <pre>
-arc(cnt_0027_1006,r_0027_0001__Write,scope).
-arc(cnt_0027_1006,r_0027_0016__and,restriction).
-arc(imperative_0027_1002,cnt_0027_1006,scope).
-arc(question_0027_1010,r_0027_0010__why,scope).
-arc(question_0027_1020,r_0027_0020__has,scope).
 arc(r_0027_0001__Write,r_0027_0002__us,arg2).
 arc(r_0027_0001__Write,r_0027_0004__article,arg1).
-arc(r_0027_0004__article,r_0027_0006__one_invention,r_0027_0005__about).
-arc(r_0027_0009__explaining,question_0027_1010,arg1).
+arc(r_0027_0004__article,r_0027_0006__one__r_0027_0007__invention,r_0027_0005__about).
+arc(r_0027_0009__explaining,r_0027_1010__question,arg1).
 arc(r_0027_0010__why,r_0027_0012__think,scope).
 arc(r_0027_0012__think,r_0027_0011__you,arg0).
 arc(r_0027_0012__think,r_0027_0014__is,arg1).
-arc(r_0027_0014__is,r_0027_0006__one_invention,arg0).
+arc(r_0027_0014__is,r_0027_0006__one__r_0027_0007__invention,arg0).
 arc(r_0027_0014__is,r_0027_0015__important,prd2).
 arc(r_0027_0016__and,r_0027_0009__explaining,conj1).
 arc(r_0027_0016__and,r_0027_0017__saying,conj2).
-arc(r_0027_0017__saying,question_0027_1020,arg1).
+arc(r_0027_0017__saying,r_0027_1020__question,arg1).
 arc(r_0027_0020__has,r_0027_0021__affected,catenative).
-arc(r_0027_0021__affected,r_0027_0006__one_invention,arg0).
+arc(r_0027_0021__affected,r_0027_0006__one__r_0027_0007__invention,arg0).
 arc(r_0027_0021__affected,r_0027_0018__how,mnr1).
 arc(r_0027_0021__affected,r_0027_0024__life,arg1).
 arc(r_0027_0024__life,z_0027_1028,genv).
+arc(r_0027_1002__imperative,r_0027_1006__cnt,scope).
+arc(r_0027_1006__cnt,r_0027_0001__Write,scope).
+arc(r_0027_1006__cnt,r_0027_0016__and,restriction).
+arc(r_0027_1010__question,r_0027_0010__why,scope).
+arc(r_0027_1020__question,r_0027_0020__has,scope).
 arc(z_0027_1028,r_0027_0011__you,genv).
 arc(z_0027_1028,r_0027_0023__own,attrib2).
 
 </pre>
 <br>
 <pre>
-fof(id_27_A_fce_0100_2001_06,axiom,
+fof(id__27_A_fce_0100_2001_06,axiom,
     ? [STATEX8,STATEX12,STATEX18,CATENATIVEX22,INVENTIONX13,INVENTIONX21,HEARERX26,OPERATORX2,CONNX7,CONJX32,EVENTX31,OPERATORX20,EVENTX30,EVENTX29,EVENTX17,OPERATORX10,OPERATORX11,EVENTX16,EVENTX15,EVENTX33,ENTITYX4,ENTITYX24,ENTITYX25,INVENTIONX5,ATTRIBX27,ATTRIBX14,QUALITYX23] :
       ( STATEX8 = OPERATORX10
-      &amp; isA(OPERATORX10,question_0027_1010)
+      &amp; isA(OPERATORX10,r_0027_1010__question)
       &amp; scope(OPERATORX10) = OPERATORX11
       &amp; isA(OPERATORX11,r_0027_0010__why)
       &amp; scope(OPERATORX11) = EVENTX16
@@ -381,7 +381,7 @@ fof(id_27_A_fce_0100_2001_06,axiom,
       &amp; arg0(EVENTX15) = INVENTIONX13
       &amp; prd2(EVENTX15) = ATTRIBX14
       &amp; STATEX18 = OPERATORX20
-      &amp; isA(OPERATORX20,question_0027_1020)
+      &amp; isA(OPERATORX20,r_0027_1020__question)
       &amp; scope(OPERATORX20) = EVENTX30
       &amp; isA(EVENTX30,r_0027_0020__has)
       &amp; catenative(EVENTX30) = CATENATIVEX22
@@ -392,7 +392,7 @@ fof(id_27_A_fce_0100_2001_06,axiom,
       &amp; arg1(EVENTX29) = ENTITYX24
       &amp; isA(ENTITYX4,r_0027_0004__article)
       &amp; r_0027_0005__about(ENTITYX4) = INVENTIONX5
-      &amp; isA(INVENTIONX5,r_0027_0006__one_invention)
+      &amp; isA(INVENTIONX5,r_0027_0006__one__r_0027_0007__invention)
       &amp; INVENTIONX13 = INVENTIONX5
       &amp; INVENTIONX21 = INVENTIONX5
       &amp; isA(ENTITYX24,r_0027_0024__life)
@@ -404,9 +404,9 @@ fof(id_27_A_fce_0100_2001_06,axiom,
       &amp; isA(ATTRIBX14,r_0027_0015__important)
       &amp; isA(ATTRIBX27,r_0027_0023__own)
       &amp; isA(QUALITYX23,r_0027_0018__how)
-      &amp; isA(OPERATORX2,imperative_0027_1002)
+      &amp; isA(OPERATORX2,r_0027_1002__imperative)
       &amp; scope(OPERATORX2) = CONNX7
-      &amp; isA(CONNX7,cnt_0027_1006)
+      &amp; isA(CONNX7,r_0027_1006__cnt)
       &amp; scope(CONNX7) = EVENTX33
       &amp; isA(EVENTX33,r_0027_0001__Write)
       &amp; arg2(EVENTX33) = r_0027_0002__us

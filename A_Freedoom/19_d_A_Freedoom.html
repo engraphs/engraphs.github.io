@@ -70,16 +70,16 @@ Take cover !
 </svg>
 <br>
 <pre>
-arc(imperative_0030_1002,r_0030_0001__Take,scope).
 arc(r_0030_0001__Take,r_0030_0002__cover,arg1).
+arc(r_0030_1002__imperative,r_0030_0001__Take,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_30_A_Freedoom,axiom,
+fof(id__30_A_Freedoom,axiom,
     ? [OPERATORX2,EVENTX5,ENTITYX4] :
       ( isA(ENTITYX4,r_0030_0002__cover)
-      &amp; isA(OPERATORX2,imperative_0030_1002)
+      &amp; isA(OPERATORX2,r_0030_1002__imperative)
       &amp; scope(OPERATORX2) = EVENTX5
       &amp; isA(EVENTX5,r_0030_0001__Take)
       &amp; arg1(EVENTX5) = ENTITYX4 ) ).

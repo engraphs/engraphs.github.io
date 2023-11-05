@@ -715,24 +715,24 @@ endemic in 100 , mostly tropical , countries with 90 % of cases and the majority
 </svg>
 <br>
 <pre>
-arc(cnt_0021_1019,cnt_0021_1024,scope).
-arc(cnt_0021_1019,r_0022_0006__attacking,restriction).
-arc(cnt_0021_1024,r_0022_0002__multiply,scope).
-arc(cnt_0021_1024,r_0022_0010__resulting,restriction).
 arc(r_0021_0003__caused,r_0021_0001__Malaria,arg1).
-arc(r_0021_0003__caused,r_0021_0007__protozoa_Plasmodium,arg0_by_lgs).
-arc(r_0021_0007__protozoa_Plasmodium,r_0021_0005__single_cell,attrib1).
-arc(r_0021_0007__protozoa_Plasmodium,r_0021_0006__parasitic,attrib2).
+arc(r_0021_0003__caused,r_0021_0007__protozoa__r_0021_0008__Plasmodium,arg0_r_0021_0004__by_lgs).
+arc(r_0021_0007__protozoa__r_0021_0008__Plasmodium,r_0021_0005__single_cell,attrib1).
+arc(r_0021_0007__protozoa__r_0021_0008__Plasmodium,r_0021_0006__parasitic,attrib2).
 arc(r_0021_0010__transmitted,r_0021_0001__Malaria,arg1).
 arc(r_0021_0010__transmitted,r_0021_0012__humans,r_0021_0011__to_clr).
 arc(r_0021_0010__transmitted,r_0021_0015__bite,r_0021_0013__via_mnr).
-arc(r_0021_0015__bite,r_0021_0019__Anopheles_mosquito,r_0021_0016__of).
-arc(r_0021_0019__Anopheles_mosquito,r_0021_0018__female,attrib2).
+arc(r_0021_0015__bite,r_0021_0019__Anopheles__r_0021_0020__mosquito,r_0021_0016__of).
+arc(r_0021_0019__Anopheles__r_0021_0020__mosquito,r_0021_0018__female,attrib2).
+arc(r_0021_1019__cnt,r_0021_1024__cnt,scope).
+arc(r_0021_1019__cnt,r_0022_0006__attacking,restriction).
+arc(r_0021_1024__cnt,r_0022_0002__multiply,scope).
+arc(r_0021_1024__cnt,r_0022_0010__resulting,restriction).
 arc(r_0022_0002__multiply,r_0022_0001__parasites,arg0).
 arc(r_0022_0002__multiply,r_0022_0005__liver,r_0022_0003__in_loc).
 arc(r_0022_0006__attacking,r_0022_0001__parasites,arg0).
-arc(r_0022_0006__attacking,r_0022_0008__blood_cells,arg1).
-arc(r_0022_0008__blood_cells,r_0022_0007__red,attrib1).
+arc(r_0022_0006__attacking,r_0022_0008__blood__r_0022_0009__cells,arg1).
+arc(r_0022_0008__blood__r_0022_0009__cells,r_0022_0007__red,attrib1).
 arc(r_0022_0010__resulting,r_0022_0001__parasites,arg0).
 arc(r_0022_0010__resulting,r_0022_0012__cycles,r_0022_0011__in_clr).
 arc(r_0022_0012__cycles,r_0022_0018__and,r_0022_0013__of).
@@ -740,27 +740,27 @@ arc(r_0022_0018__and,r_0022_0014__fever,conj1).
 arc(r_0022_0018__and,r_0022_0016__chills,conj2).
 arc(r_0022_0018__and,r_0022_0019__sweats,conj3).
 arc(r_0022_0020__accompanied,r_0022_0012__cycles,arg1).
-arc(r_0022_0020__accompanied,r_0022_0022__anemia,arg0_by_lgs).
+arc(r_0022_0020__accompanied,r_0022_0022__anemia,arg0__r_0022_0021__by_lgs).
 arc(r_0023_0001__death,r_0023_0002__due,attrib2).
 arc(r_0023_0002__due,r_0023_0004__damage,emb2).
 arc(r_0023_0004__damage,r_0023_0008__and,r_0023_0005__to_clr).
 arc(r_0023_0007__organs,r_0023_0006__vital,attrib1).
 arc(r_0023_0008__and,r_0023_0007__organs,conj1).
 arc(r_0023_0008__and,r_0023_0009__interruption,conj2).
-arc(r_0023_0009__interruption,r_0023_0011__blood_supply,r_0023_0010__of).
-arc(r_0023_0011__blood_supply,r_0023_0015__brain,r_0023_0013__to).
-arc(r_0024_0001__endemic,r_0024_0003__100_countries,r_0024_0002__in).
+arc(r_0023_0009__interruption,r_0023_0011__blood__r_0023_0012__supply,r_0023_0010__of).
+arc(r_0023_0011__blood__r_0023_0012__supply,r_0023_0015__brain,r_0023_0013__to).
+arc(r_0024_0001__endemic,r_0024_0003__100__r_0024_0008__countries,r_0024_0002__in).
 arc(r_0024_0001__endemic,r_0024_0025__occurring,r_0024_0009__with_abs).
-arc(r_0024_0003__100_countries,r_0024_0006__tropical,attrib3).
+arc(r_0024_0003__100__r_0024_0008__countries,r_0024_0006__tropical,attrib3).
 arc(r_0024_0006__tropical,r_0024_0005__mostly,quality1).
-arc(r_0024_0010__90__,r_0024_0013__cases,r_0024_0012__of).
-arc(r_0024_0014__and,r_0024_0010__90__,conj1).
+arc(r_0024_0010__90__r_0024_0011___,r_0024_0013__cases,r_0024_0012__of).
+arc(r_0024_0014__and,r_0024_0010__90__r_0024_0011___,conj1).
 arc(r_0024_0014__and,r_0024_0016__majority,conj2).
-arc(r_0024_0016__majority,r_0024_0018__1.5_2.5_million_deaths,r_0024_0017__of).
-arc(r_0024_0018__1.5_2.5_million_deaths,r_0024_0023__annual,attrib6).
-arc(r_0024_0022__estimated,r_0024_0018__1.5_2.5_million_deaths,arg1).
+arc(r_0024_0016__majority,r_0024_0018__1_5__r_0024_0020__2_5_r_0024_0021__million_r_0024_0024__deaths,r_0024_0017__of).
+arc(r_0024_0018__1_5__r_0024_0020__2_5_r_0024_0021__million_r_0024_0024__deaths,r_0024_0023__annual,attrib6).
+arc(r_0024_0022__estimated,r_0024_0018__1_5__r_0024_0020__2_5_r_0024_0021__million_r_0024_0024__deaths,arg1).
 arc(r_0024_0025__occurring,r_0024_0014__and,arg0).
-arc(r_0024_0025__occurring,r_0024_0027__sub_Saharan_Africa,r_0024_0026__in_loc).
+arc(r_0024_0025__occurring,r_0024_0027__sub_Saharan__r_0024_0028__Africa,r_0024_0026__in_loc).
 arc(z_0021_1006,r_0021_0003__caused,catenative).
 arc(z_0021_1015,r_0021_0010__transmitted,catenative).
 arc(z_0021_1051,r_0023_0001__death,z_0021_1038).
@@ -769,11 +769,11 @@ arc(z_0021_1069,r_0024_0001__endemic,prd2).
 </pre>
 <br>
 <pre>
-fof(id_21_A_FACTBOOK_1_2010__22_A_FACTBOOK_1_2010__23_A_FACTBOOK_1_2010__24_A_FACTBOOK_1_2010,axiom,
+fof(id__21_A_FACTBOOK_1_2010__22_A_FACTBOOK_1_2010__23_A_FACTBOOK_1_2010__24_A_FACTBOOK_1_2010,axiom,
     ? [CATENATIVEX1,CATENATIVEX8,STATEX41,EVENTX59,EVENTX70,EVENTX68,EVENTX66,EVENTX52,EVENTX50,CONNX20,EVENTX23,CONNX25,EVENTX33,EVENTX32,EVENTX34,EVENTX16,EVENTX14,EVENTX7,EVENTX5,ENTITYX56,ENTITYX60,ENTITYX61,ENTITYX63,ENTITYX64,ENTITYX62,ENTITYX39,ENTITYX44,ENTITYX45,ENTITYX47,ENTITYX48,ENTITYX49,ENTITYX17,ENTITYX18,ENTITYX21,ENTITYX26,ENTITYX27,ENTITYX31,ENTITYX28,ENTITYX29,ENTITYX30,ENTITYX10,ENTITYX11,ENTITYX12,ENTITYX2,ATTRIBX55,ATTRIBX67,ATTRIBX57,ATTRIBX40,ATTRIBX46,ATTRIBX22,ATTRIBX13,ATTRIBX3,ATTRIBX4,QUALITYX58] :
       ( CATENATIVEX1 = EVENTX5
       &amp; isA(EVENTX5,r_0021_0003__caused)
-      &amp; arg0_by_lgs(EVENTX5) = ENTITYX2
+      &amp; arg0__r_0021_0004__by_lgs(EVENTX5) = ENTITYX2
       &amp; arg1(EVENTX5) = r_0021_0001__Malaria
       &amp; CATENATIVEX8 = EVENTX14
       &amp; isA(EVENTX14,r_0021_0010__transmitted)
@@ -786,19 +786,19 @@ fof(id_21_A_FACTBOOK_1_2010__22_A_FACTBOOK_1_2010__23_A_FACTBOOK_1_2010__24_A_FA
       &amp; EVENTX59 = EVENTX68
       &amp; isA(EVENTX68,r_0024_0025__occurring)
       &amp; arg0(EVENTX68) = ENTITYX60
-      &amp; r_0024_0026__in_loc(EVENTX68) = r_0024_0027__sub_Saharan_Africa
-      &amp; isA(ENTITYX2,r_0021_0007__protozoa_Plasmodium)
+      &amp; r_0024_0026__in_loc(EVENTX68) = r_0024_0027__sub_Saharan__r_0024_0028__Africa
+      &amp; isA(ENTITYX2,r_0021_0007__protozoa__r_0021_0008__Plasmodium)
       &amp; attrib1(ENTITYX2) = ATTRIBX3
       &amp; attrib2(ENTITYX2) = ATTRIBX4
       &amp; isA(ENTITYX10,r_0021_0012__humans)
       &amp; isA(ENTITYX11,r_0021_0015__bite)
       &amp; r_0021_0016__of(ENTITYX11) = ENTITYX12
-      &amp; isA(ENTITYX12,r_0021_0019__Anopheles_mosquito)
+      &amp; isA(ENTITYX12,r_0021_0019__Anopheles__r_0021_0020__mosquito)
       &amp; attrib2(ENTITYX12) = ATTRIBX13
       &amp; isA(ENTITYX17,r_0022_0001__parasites)
       &amp; isA(ENTITYX18,r_0022_0005__liver)
       &amp; isA(EVENTX32,r_0022_0020__accompanied)
-      &amp; arg0_by_lgs(EVENTX32) = ENTITYX31
+      &amp; arg0__r_0022_0021__by_lgs(EVENTX32) = ENTITYX31
       &amp; arg1(EVENTX32) = ENTITYX26
       &amp; isA(ENTITYX26,r_0022_0012__cycles)
       &amp; r_0022_0013__of(ENTITYX26) = ENTITYX27
@@ -810,7 +810,7 @@ fof(id_21_A_FACTBOOK_1_2010__22_A_FACTBOOK_1_2010__23_A_FACTBOOK_1_2010__24_A_FA
       &amp; isA(ENTITYX29,r_0022_0016__chills)
       &amp; isA(ENTITYX30,r_0022_0019__sweats)
       &amp; isA(ENTITYX31,r_0022_0022__anemia)
-      &amp; isA(ENTITYX21,r_0022_0008__blood_cells)
+      &amp; isA(ENTITYX21,r_0022_0008__blood__r_0022_0009__cells)
       &amp; attrib1(ENTITYX21) = ATTRIBX22
       &amp; isA(ENTITYX39,r_0023_0001__death)
       &amp; attrib2(ENTITYX39) = ATTRIBX40
@@ -821,22 +821,22 @@ fof(id_21_A_FACTBOOK_1_2010__22_A_FACTBOOK_1_2010__23_A_FACTBOOK_1_2010__24_A_FA
       &amp; attrib1(ENTITYX45) = ATTRIBX46
       &amp; isA(ENTITYX47,r_0023_0009__interruption)
       &amp; r_0023_0010__of(ENTITYX47) = ENTITYX48
-      &amp; isA(ENTITYX48,r_0023_0011__blood_supply)
+      &amp; isA(ENTITYX48,r_0023_0011__blood__r_0023_0012__supply)
       &amp; r_0023_0013__to(ENTITYX48) = ENTITYX49
       &amp; isA(ENTITYX49,r_0023_0015__brain)
-      &amp; isA(ENTITYX56,r_0024_0003__100_countries)
+      &amp; isA(ENTITYX56,r_0024_0003__100__r_0024_0008__countries)
       &amp; attrib3(ENTITYX56) = ATTRIBX57
       &amp; isA(ENTITYX60,r_0024_0014__and)
       &amp; conj1(ENTITYX60) = ENTITYX61
       &amp; conj2(ENTITYX60) = ENTITYX63
-      &amp; isA(ENTITYX61,r_0024_0010__90__)
+      &amp; isA(ENTITYX61,r_0024_0010__90__r_0024_0011___)
       &amp; r_0024_0012__of(ENTITYX61) = ENTITYX62
       &amp; isA(ENTITYX62,r_0024_0013__cases)
       &amp; isA(ENTITYX63,r_0024_0016__majority)
       &amp; r_0024_0017__of(ENTITYX63) = ENTITYX64
       &amp; isA(EVENTX66,r_0024_0022__estimated)
       &amp; arg1(EVENTX66) = ENTITYX64
-      &amp; isA(ENTITYX64,r_0024_0018__1.5_2.5_million_deaths)
+      &amp; isA(ENTITYX64,r_0024_0018__1_5__r_0024_0020__2_5_r_0024_0021__million_r_0024_0024__deaths)
       &amp; attrib6(ENTITYX64) = ATTRIBX67
       &amp; isA(ATTRIBX3,r_0021_0005__single_cell)
       &amp; isA(ATTRIBX4,r_0021_0006__parasitic)
@@ -856,9 +856,9 @@ fof(id_21_A_FACTBOOK_1_2010__22_A_FACTBOOK_1_2010__23_A_FACTBOOK_1_2010__24_A_FA
       &amp; catenative(EVENTX7) = CATENATIVEX1
       &amp; isA(EVENTX16,z_0021_1015)
       &amp; catenative(EVENTX16) = CATENATIVEX8
-      &amp; isA(CONNX20,cnt_0021_1019)
+      &amp; isA(CONNX20,r_0021_1019__cnt)
       &amp; scope(CONNX20) = CONNX25
-      &amp; isA(CONNX25,cnt_0021_1024)
+      &amp; isA(CONNX25,r_0021_1024__cnt)
       &amp; scope(CONNX25) = EVENTX34
       &amp; isA(EVENTX34,r_0022_0002__multiply)
       &amp; arg0(EVENTX34) = ENTITYX17

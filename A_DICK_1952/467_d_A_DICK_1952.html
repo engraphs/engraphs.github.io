@@ -135,23 +135,23 @@
 </svg>
 <br>
 <pre>
-arc(imperative_0603_1007,r_0603_0003__let,scope).
 arc(r_0603_0003__let,r_0603_0002__Then,tmp1).
 arc(r_0603_0003__let,r_0603_0004___apos_s,arg1).
 arc(r_0603_0003__let,r_0603_0005__go,prd).
 arc(r_0603_0009__said,r_0603_0008__Dorle,arg0).
-arc(r_0603_0009__said,utterance_0603_1003,arg1).
-arc(utterance_0603_1003,imperative_0603_1007,part1).
+arc(r_0603_0009__said,r_0603_1003__utterance,arg1).
+arc(r_0603_1003__utterance,r_0603_1007__imperative,part1).
+arc(r_0603_1007__imperative,r_0603_0003__let,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_603_A_DICK_1952,axiom,
+fof(id__603_A_DICK_1952,axiom,
     ? [STATEX1,STATEX9,EVENTX15,CONJX14,OPERATORX7,EVENTX13,EVENTX12,QUALITYX8] :
       ( STATEX1 = CONJX14
-      &amp; isA(CONJX14,utterance_0603_1003)
+      &amp; isA(CONJX14,r_0603_1003__utterance)
       &amp; part1(CONJX14) = OPERATORX7
-      &amp; isA(OPERATORX7,imperative_0603_1007)
+      &amp; isA(OPERATORX7,r_0603_1007__imperative)
       &amp; scope(OPERATORX7) = EVENTX13
       &amp; isA(EVENTX13,r_0603_0003__let)
       &amp; tmp1(EVENTX13) = QUALITYX8

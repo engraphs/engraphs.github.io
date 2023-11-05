@@ -439,13 +439,13 @@ In order to ensure that any complaint arising between a business operator and a 
 <pre>
 arc(r_0071_0001__In_order_cnt,r_0071_0003__ensure,restriction).
 arc(r_0071_0001__In_order_cnt,r_0071_0031__shall,scope).
-arc(r_0071_0003__ensure,r_0071_0005__quantificational__any,arg1).
+arc(r_0071_0003__ensure,r_0071_0005__quantificational__r_0071_0005__any,arg1).
 arc(r_0071_0003__ensure,r_0071_0030__government,arg0).
-arc(r_0071_0005__quantificational__any,r_0071_0006__complaint,restriction).
-arc(r_0071_0005__quantificational__any,r_0071_0021__will,scope).
+arc(r_0071_0005__quantificational__r_0071_0005__any,r_0071_0006__complaint,restriction).
+arc(r_0071_0005__quantificational__r_0071_0005__any,r_0071_0021__will,scope).
 arc(r_0071_0007__arising,r_0071_0006__complaint,arg0).
 arc(r_0071_0007__arising,r_0071_0012__and,r_0071_0008__between_loc).
-arc(r_0071_0012__and,r_0071_0010__business_operator,conj1).
+arc(r_0071_0012__and,r_0071_0010__business__r_0071_0011__operator,conj1).
 arc(r_0071_0012__and,r_0071_0014__person,conj2).
 arc(r_0071_0014__person,r_0071_0017__handling,r_0071_0015__about).
 arc(r_0071_0017__handling,r_0071_0020__information,r_0071_0018__of).
@@ -473,7 +473,7 @@ arc(r_0071_0043__measures,r_0071_0042__necessary,attrib2).
 </pre>
 <br>
 <pre>
-fof(id_71_A_law_h15A119,axiom,
+fof(id__71_A_law_h15A119,axiom,
     ? [STATEX3,STATEX13,CATENATIVEX24,CONNX12,OPERATORX32,EVENTX33,EVENTX31,QUANTX15,OPERATORX23,EVENTX30,EVENTX29,EVENTX22,CONJX11,EVENTX10,EVENTX6,ENTITYX1,ENTITYX14,ENTITYX16,ENTITYX17,ENTITYX18,ENTITYX19,ENTITYX20,ENTITYX7,ENTITYX4,ENTITYX5,ATTRIBX21,ATTRIBX8,ATTRIBX9,ATTRIBX2,QUALITYX26,QUALITYX27,QUALITYX28] :
       ( STATEX3 = CONJX11
       &amp; isA(CONJX11,r_0071_0039__and)
@@ -486,7 +486,7 @@ fof(id_71_A_law_h15A119,axiom,
       &amp; arg0(EVENTX10) = ENTITYX1
       &amp; arg1(EVENTX10) = ENTITYX7
       &amp; STATEX13 = QUANTX15
-      &amp; isA(QUANTX15,r_0071_0005__quantificational__any)
+      &amp; isA(QUANTX15,r_0071_0005__quantificational__r_0071_0005__any)
       &amp; isA(EVENTX22,r_0071_0007__arising)
       &amp; arg0(EVENTX22) = ENTITYX14
       &amp; r_0071_0008__between_loc(EVENTX22) = ENTITYX16
@@ -512,7 +512,7 @@ fof(id_71_A_law_h15A119,axiom,
       &amp; isA(ENTITYX16,r_0071_0012__and)
       &amp; conj1(ENTITYX16) = ENTITYX17
       &amp; conj2(ENTITYX16) = ENTITYX18
-      &amp; isA(ENTITYX17,r_0071_0010__business_operator)
+      &amp; isA(ENTITYX17,r_0071_0010__business__r_0071_0011__operator)
       &amp; isA(ENTITYX18,r_0071_0014__person)
       &amp; r_0071_0015__about(ENTITYX18) = ENTITYX19
       &amp; isA(ENTITYX19,r_0071_0017__handling)

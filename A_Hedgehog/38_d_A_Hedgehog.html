@@ -203,9 +203,9 @@ However , these suburban habitats are broken up by fences and roads , pushing he
 <pre>
 arc(r_0040_0001__However,r_0040_0006__are,scope).
 arc(r_0040_0005__habitats,r_0040_0004__suburban,attrib2).
-arc(r_0040_0006__are,r_0040_0007__broken_up,catenative).
-arc(r_0040_0007__broken_up,r_0040_0005__habitats,arg1).
-arc(r_0040_0007__broken_up,r_0040_0011__and,r_0040_0009__by_mnr).
+arc(r_0040_0006__are,r_0040_0007__broken__r_0040_0008__up,catenative).
+arc(r_0040_0007__broken__r_0040_0008__up,r_0040_0005__habitats,arg1).
+arc(r_0040_0007__broken__r_0040_0008__up,r_0040_0011__and,r_0040_0009__by_mnr).
 arc(r_0040_0011__and,r_0040_0010__fences,conj1).
 arc(r_0040_0011__and,r_0040_0012__roads,conj2).
 arc(r_0040_0014__pushing,r_0040_0011__and,arg0).
@@ -217,10 +217,10 @@ arc(r_0040_0019__areas,r_0040_0018__small,attrib1).
 </pre>
 <br>
 <pre>
-fof(id_40_A_Hedgehog,axiom,
+fof(id__40_A_Hedgehog,axiom,
     ? [CATENATIVEX4,OPERATORX1,EVENTX15,EVENTX14,EVENTX11,ENTITYX2,ENTITYX6,ENTITYX12,ENTITYX13,ENTITYX7,ENTITYX8,ATTRIBX9,ATTRIBX3,QUALITYX10] :
       ( CATENATIVEX4 = EVENTX14
-      &amp; isA(EVENTX14,r_0040_0007__broken_up)
+      &amp; isA(EVENTX14,r_0040_0007__broken__r_0040_0008__up)
       &amp; arg1(EVENTX14) = ENTITYX2
       &amp; r_0040_0009__by_mnr(EVENTX14) = ENTITYX6
       &amp; isA(ENTITYX2,r_0040_0005__habitats)

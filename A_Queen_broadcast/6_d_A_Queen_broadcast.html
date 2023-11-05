@@ -377,15 +377,13 @@ The moments when the United Kingdom has come together to applaud its care and es
 </svg>
 <br>
 <pre>
-arc(cnt_0010_1004,r_0010_0008__come,scope).
-arc(cnt_0010_1004,r_0010_0011__applaud,restriction).
-arc(r_0010_0007__has,cnt_0010_1004,catenative).
 arc(r_0010_0007__has,r_0010_0002__moments,tmp1).
-arc(r_0010_0008__come,r_0010_0005__United_Kingdom,arg0).
+arc(r_0010_0007__has,r_0010_1004__cnt,catenative).
+arc(r_0010_0008__come,r_0010_0005__United__r_0010_0006__Kingdom,arg0).
 arc(r_0010_0008__come,r_0010_0009__together,com2).
-arc(r_0010_0011__applaud,r_0010_0005__United_Kingdom,arg0).
+arc(r_0010_0011__applaud,r_0010_0005__United__r_0010_0006__Kingdom,arg0).
 arc(r_0010_0011__applaud,r_0010_0014__and,arg1).
-arc(r_0010_0014__and,r_0010_0005__United_Kingdom,genv).
+arc(r_0010_0014__and,r_0010_0005__United__r_0010_0006__Kingdom,genv).
 arc(r_0010_0014__and,r_0010_0013__care,conj1).
 arc(r_0010_0014__and,r_0010_0016__workers,conj2).
 arc(r_0010_0016__workers,r_0010_0015__essential,attrib1).
@@ -403,22 +401,24 @@ arc(r_0010_0031__will,r_0010_0032__be,scope).
 arc(r_0010_0032__be,r_0010_0030__symbol,arg0).
 arc(r_0010_0032__be,r_0010_0034__rainbows,prd2).
 arc(r_0010_0035__drawn,r_0010_0034__rainbows,arg1).
-arc(r_0010_0035__drawn,r_0010_0037__children,arg0_by_lgs).
+arc(r_0010_0035__drawn,r_0010_0037__children,arg0__r_0010_0036__by_lgs).
+arc(r_0010_1004__cnt,r_0010_0008__come,scope).
+arc(r_0010_1004__cnt,r_0010_0011__applaud,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_10_A_Queen_broadcast,axiom,
+fof(id__10_A_Queen_broadcast,axiom,
     ? [CATENATIVEX2,CATENATIVEX15,UK_PEOPLEX7,SPIRITX23,CONJX29,OPERATORX27,EVENTX28,EVENTX26,OPERATORX14,EVENTX21,EVENTX20,EVENTX13,CONNX5,EVENTX11,EVENTX12,ENTITYX22,ENTITYX24,ENTITYX25,ENTITYX1,ENTITYX17,SPIRITX18,ENTITYX6,ENTITYX8,ENTITYX9,QUALITYX3,ATTRIBX19,ATTRIBX10] :
       ( CATENATIVEX2 = CONNX5
-      &amp; isA(CONNX5,cnt_0010_1004)
+      &amp; isA(CONNX5,r_0010_1004__cnt)
       &amp; scope(CONNX5) = EVENTX12
       &amp; isA(EVENTX12,r_0010_0008__come)
-      &amp; arg0(EVENTX12) = r_0010_0005__United_Kingdom
+      &amp; arg0(EVENTX12) = r_0010_0005__United__r_0010_0006__Kingdom
       &amp; com2(EVENTX12) = QUALITYX3
       &amp; restriction(CONNX5) = EVENTX11
       &amp; isA(EVENTX11,r_0010_0011__applaud)
-      &amp; arg0(EVENTX11) = r_0010_0005__United_Kingdom
+      &amp; arg0(EVENTX11) = r_0010_0005__United__r_0010_0006__Kingdom
       &amp; arg1(EVENTX11) = ENTITYX6
       &amp; CATENATIVEX15 = EVENTX20
       &amp; isA(EVENTX20,r_0010_0019__remembered)
@@ -432,7 +432,7 @@ fof(id_10_A_Queen_broadcast,axiom,
       &amp; genv(ENTITYX6) = UK_PEOPLEX7
       &amp; conj1(ENTITYX6) = ENTITYX8
       &amp; conj2(ENTITYX6) = ENTITYX9
-      &amp; UK_PEOPLEX7 = r_0010_0005__United_Kingdom
+      &amp; UK_PEOPLEX7 = r_0010_0005__United__r_0010_0006__Kingdom
       &amp; isA(ENTITYX8,r_0010_0013__care)
       &amp; isA(ENTITYX9,r_0010_0016__workers)
       &amp; attrib1(ENTITYX9) = ATTRIBX10
@@ -445,12 +445,12 @@ fof(id_10_A_Queen_broadcast,axiom,
       &amp; genv(ENTITYX22) = SPIRITX23
       &amp; SPIRITX23 = SPIRITX18
       &amp; isA(EVENTX26,r_0010_0035__drawn)
-      &amp; arg0_by_lgs(EVENTX26) = ENTITYX25
+      &amp; arg0__r_0010_0036__by_lgs(EVENTX26) = ENTITYX25
       &amp; arg1(EVENTX26) = ENTITYX24
       &amp; isA(ENTITYX24,r_0010_0034__rainbows)
       &amp; isA(ENTITYX25,r_0010_0037__children)
       &amp; isA(QUALITYX3,r_0010_0009__together)
-      &amp; isA(r_0010_0005__United_Kingdom,r_0010_0005__United_Kingdom)
+      &amp; isA(r_0010_0005__United__r_0010_0006__Kingdom,r_0010_0005__United_r_0010_0006__Kingdom)
       &amp; isA(ATTRIBX10,r_0010_0015__essential)
       &amp; isA(ATTRIBX19,r_0010_0025__national)
       &amp; isA(CONJX29,r_0010_0028__and)

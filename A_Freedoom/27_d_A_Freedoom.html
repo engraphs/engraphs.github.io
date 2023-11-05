@@ -213,7 +213,6 @@ Be aware though , that a monster can not be injured by a projectile launched by 
 </svg>
 <br>
 <pre>
-arc(imperative_0041_1002,r_0041_0003__though,scope).
 arc(r_0041_0001__Be,r_0041_0002__aware,prd2).
 arc(r_0041_0002__aware,r_0041_0008__can,emb2).
 arc(r_0041_0003__though,r_0041_0001__Be,scope).
@@ -221,16 +220,17 @@ arc(r_0041_0008__can,r_0041_0009__not,scope).
 arc(r_0041_0009__not,r_0041_0010__be,scope).
 arc(r_0041_0010__be,r_0041_0011__injured,catenative).
 arc(r_0041_0011__injured,r_0041_0007__monster,arg1).
-arc(r_0041_0011__injured,r_0041_0014__projectile,arg0_by_lgs).
+arc(r_0041_0011__injured,r_0041_0014__projectile,arg0__r_0041_0012__by_lgs).
 arc(r_0041_0015__launched,r_0041_0014__projectile,arg1).
-arc(r_0041_0015__launched,r_0041_0017__another,arg0_by_lgs).
+arc(r_0041_0015__launched,r_0041_0017__another,arg0__r_0041_0016__by_lgs).
 arc(r_0041_0017__another,r_0041_0021__species,r_0041_0018__of).
 arc(r_0041_0021__species,r_0041_0020__same,attrib2).
+arc(r_0041_1002__imperative,r_0041_0003__though,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_41_A_Freedoom,axiom,
+fof(id__41_A_Freedoom,axiom,
     ? [STATEX5,CATENATIVEX9,OPERATORX2,OPERATORX16,EVENTX17,OPERATORX7,OPERATORX8,EVENTX15,EVENTX14,EVENTX13,ATTRIBX4,ATTRIBX12,ENTITYX6,ENTITYX10,ENTITYX11] :
       ( STATEX5 = OPERATORX7
       &amp; isA(OPERATORX7,r_0041_0008__can)
@@ -241,21 +241,21 @@ fof(id_41_A_Freedoom,axiom,
       &amp; catenative(EVENTX15) = CATENATIVEX9
       &amp; CATENATIVEX9 = EVENTX14
       &amp; isA(EVENTX14,r_0041_0011__injured)
-      &amp; arg0_by_lgs(EVENTX14) = ENTITYX10
+      &amp; arg0__r_0041_0012__by_lgs(EVENTX14) = ENTITYX10
       &amp; arg1(EVENTX14) = ENTITYX6
       &amp; isA(ATTRIBX4,r_0041_0002__aware)
       &amp; emb2(ATTRIBX4) = STATEX5
       &amp; isA(ATTRIBX12,r_0041_0020__same)
       &amp; isA(ENTITYX6,r_0041_0007__monster)
       &amp; isA(EVENTX13,r_0041_0015__launched)
-      &amp; arg0_by_lgs(EVENTX13) = r_0041_0017__another
+      &amp; arg0__r_0041_0016__by_lgs(EVENTX13) = r_0041_0017__another
       &amp; arg1(EVENTX13) = ENTITYX10
       &amp; isA(ENTITYX10,r_0041_0014__projectile)
       &amp; isA(ENTITYX11,r_0041_0021__species)
       &amp; attrib2(ENTITYX11) = ATTRIBX12
       &amp; isA(r_0041_0017__another,r_0041_0017__another)
       &amp; r_0041_0018__of(r_0041_0017__another) = ENTITYX11
-      &amp; isA(OPERATORX2,imperative_0041_1002)
+      &amp; isA(OPERATORX2,r_0041_1002__imperative)
       &amp; scope(OPERATORX2) = OPERATORX16
       &amp; isA(OPERATORX16,r_0041_0003__though)
       &amp; scope(OPERATORX16) = EVENTX17

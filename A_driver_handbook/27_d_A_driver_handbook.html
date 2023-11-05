@@ -252,7 +252,6 @@ Always drive more carefully near schools , playgrounds , parks , and residential
 </svg>
 <br>
 <pre>
-arc(imperative_0033_1002,r_0033_0015__because_cnt,scope).
 arc(r_0033_0002__drive,r_0033_0001__Always,tmp1).
 arc(r_0033_0002__drive,r_0033_0004__carefully,mnr3).
 arc(r_0033_0002__drive,r_0033_0012__and,r_0033_0005__near_loc).
@@ -268,11 +267,12 @@ arc(r_0033_0017__may,r_0033_0019__dart,scope).
 arc(r_0033_0019__dart,r_0033_0016__children,arg0).
 arc(r_0033_0019__dart,r_0033_0018__suddenly,mnr3).
 arc(r_0033_0019__dart,r_0033_0022__street,r_0033_0020__into_loc).
+arc(r_0033_1002__imperative,r_0033_0015__because_cnt,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_33_A_driver_handbook,axiom,
+fof(id__33_A_driver_handbook,axiom,
     ? [OPERATORX2,CONNX13,OPERATORX17,EVENTX18,EVENTX19,QUALITYX4,QUALITYX5,QUALITYX15,QUALITYX6,ENTITYX7,ENTITYX14,ENTITYX16,ENTITYX8,ENTITYX9,ENTITYX10,ENTITYX11,ATTRIBX12] :
       ( isA(QUALITYX4,r_0033_0001__Always)
       &amp; isA(QUALITYX5,r_0033_0004__carefully)
@@ -292,7 +292,7 @@ fof(id_33_A_driver_handbook,axiom,
       &amp; isA(ENTITYX14,r_0033_0016__children)
       &amp; isA(ENTITYX16,r_0033_0022__street)
       &amp; isA(ATTRIBX12,r_0033_0013__residential)
-      &amp; isA(OPERATORX2,imperative_0033_1002)
+      &amp; isA(OPERATORX2,r_0033_1002__imperative)
       &amp; scope(OPERATORX2) = CONNX13
       &amp; isA(CONNX13,r_0033_0015__because_cnt)
       &amp; scope(CONNX13) = EVENTX19

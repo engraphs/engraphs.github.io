@@ -460,10 +460,10 @@ arc(r_0103_0002__had,r_0103_0004__smile,catenative).
 arc(r_0103_0004__smile,r_0103_0001__He,arg0).
 arc(r_0103_0004__smile,r_0103_0006__that,r_0103_0005__at_dir).
 arc(r_0103_0008__but,r_0103_0002__had,conj1).
-arc(r_0103_0008__but,r_0103_0009__went_on,conj2).
-arc(r_0103_0009__went_on,r_0103_0001__He,arg0).
-arc(r_0103_0009__went_on,r_0103_0011__airily,mnr3).
-arc(r_0103_0009__went_on,utterance_0103_1007,arg1).
+arc(r_0103_0008__but,r_0103_0009__went__r_0103_0010__on,conj2).
+arc(r_0103_0009__went__r_0103_0010__on,r_0103_0001__He,arg0).
+arc(r_0103_0009__went__r_0103_0010__on,r_0103_0011__airily,mnr3).
+arc(r_0103_0009__went__r_0103_0010__on,r_0103_1007__utterance,arg1).
 arc(r_0103_0015___apos_d,r_0103_0016__have,scope).
 arc(r_0103_0016__have,r_0103_0017__made,catenative).
 arc(r_0103_0017__made,r_0103_0014__I,arg0).
@@ -476,6 +476,7 @@ arc(r_0103_0026__put,r_0103_0014__I,arg0).
 arc(r_0103_0026__put,r_0103_0028__interests,arg1).
 arc(r_0103_0026__put,z_0103_1025,r_0103_0029__before_dir).
 arc(r_0103_0028__interests,r_0103_0023__lady_love,genv).
+arc(r_0103_1007__utterance,r_0103_0015___apos_d,part1).
 arc(r_0104_0002__would,r_0104_0003__n_apos_t,scope).
 arc(r_0104_0003__n_apos_t,r_0104_0004__have,scope).
 arc(r_0104_0004__have,r_0104_0005__cared,catenative).
@@ -487,7 +488,6 @@ arc(r_0104_0009__thinking,r_0103_0014__I,arg2).
 arc(r_0104_0009__thinking,r_0103_0023__lady_love,arg0).
 arc(r_0104_0009__thinking,r_0104_0013__weakling,arg1).
 arc(r_0104_0013__weakling,r_0104_0012__selfish,attrib2).
-arc(utterance_0103_1007,r_0103_0015___apos_d,part1).
 arc(z_0103_1024,r_0103_0014__I,genv).
 arc(z_0103_1024,r_0103_0031__own,attrib2).
 arc(z_0103_1025,z_0103_1024,genv).
@@ -495,14 +495,14 @@ arc(z_0103_1025,z_0103_1024,genv).
 </pre>
 <br>
 <pre>
-fof(id_103_A_lob_N02__104_A_lob_N02,axiom,
+fof(id__103_A_lob_N02__104_A_lob_N02,axiom,
     ? [STATEX1,STATEX5,CATENATIVEX9,STATEX11,STATEX16,CATENATIVEX36,STATEX37,STATEX39,LOVERX15,LOVERX17,LADY_LOVEX19,LOVERX22,LOVERX33,LADY_LOVEX38,LOVERX40,OPERATORX34,OPERATORX35,EVENTX46,EVENTX45,EVENTX44,EVENTX43,CONJX32,EVENTX31,CONJX30,OPERATORX8,EVENTX29,EVENTX28,EVENTX27,EVENTX26,EVENTX3,EVENTX2,ENTITYX41,ENTITYX10,LADY_LOVEX14,ENTITYX18,ENTITYX20,ENTITYX21,QUALITYX4,ATTRIBX42,ATTRIBX23] :
       ( STATEX1 = EVENTX2
       &amp; isA(EVENTX2,r_0103_0004__smile)
       &amp; arg0(EVENTX2) = r_0103_0001__He
       &amp; r_0103_0005__at_dir(EVENTX2) = r_0103_0006__that
       &amp; STATEX5 = CONJX30
-      &amp; isA(CONJX30,utterance_0103_1007)
+      &amp; isA(CONJX30,r_0103_1007__utterance)
       &amp; part1(CONJX30) = OPERATORX8
       &amp; isA(OPERATORX8,r_0103_0015___apos_d)
       &amp; scope(OPERATORX8) = EVENTX29
@@ -564,7 +564,7 @@ fof(id_103_A_lob_N02__104_A_lob_N02,axiom,
       &amp; isA(EVENTX3,r_0103_0002__had)
       &amp; catenative(EVENTX3) = STATEX1
       &amp; conj2(CONJX32) = EVENTX31
-      &amp; isA(EVENTX31,r_0103_0009__went_on)
+      &amp; isA(EVENTX31,r_0103_0009__went__r_0103_0010__on)
       &amp; arg0(EVENTX31) = r_0103_0001__He
       &amp; mnr3(EVENTX31) = QUALITYX4
       &amp; arg1(EVENTX31) = STATEX5

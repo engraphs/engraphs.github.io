@@ -174,21 +174,21 @@ President Kennedy is ready to get tough over West Germany 's cash offer to help 
 </svg>
 <br>
 <pre>
-arc(r_0060_0003__is,r_0060_0001__President_Kennedy,arg0).
+arc(r_0060_0003__is,r_0060_0001__President__r_0060_0002__Kennedy,arg0).
 arc(r_0060_0003__is,r_0060_0004__ready,prd2).
 arc(r_0060_0004__ready,r_0060_0006__get,emb2).
 arc(r_0060_0006__get,r_0060_0007__tough,prd).
-arc(r_0060_0007__tough,r_0060_0012__cash_offer,r_0060_0008__over).
-arc(r_0060_0012__cash_offer,r_0060_0009__West_Germany,genv).
-arc(r_0060_0012__cash_offer,r_0060_0015__help,emb4).
+arc(r_0060_0007__tough,r_0060_0012__cash__r_0060_0013__offer,r_0060_0008__over).
+arc(r_0060_0012__cash__r_0060_0013__offer,r_0060_0009__West_r_0060_0010__Germany,genv).
+arc(r_0060_0012__cash__r_0060_0013__offer,r_0060_0015__help,emb4).
 arc(r_0060_0015__help,r_0060_0018__balance,arg1).
 arc(r_0060_0018__balance,r_0060_0016__America,genv).
-arc(r_0060_0018__balance,r_0060_0020__payments_position,r_0060_0019__of).
+arc(r_0060_0018__balance,r_0060_0020__payments__r_0060_0021__position,r_0060_0019__of).
 
 </pre>
 <br>
 <pre>
-fof(id_60_A_lob_A01,axiom,
+fof(id__60_A_lob_A01,axiom,
     ? [STATEX2,STATEX7,EVENTX14,EVENTX13,EVENTX12,ENTITYX6,ENTITYX10,ENTITYX11,ATTRIBX1,ATTRIBX5] :
       ( STATEX2 = EVENTX13
       &amp; isA(EVENTX13,r_0060_0006__get)
@@ -196,19 +196,19 @@ fof(id_60_A_lob_A01,axiom,
       &amp; STATEX7 = EVENTX12
       &amp; isA(EVENTX12,r_0060_0015__help)
       &amp; arg1(EVENTX12) = ENTITYX10
-      &amp; isA(ENTITYX6,r_0060_0012__cash_offer)
-      &amp; genv(ENTITYX6) = r_0060_0009__West_Germany
+      &amp; isA(ENTITYX6,r_0060_0012__cash__r_0060_0013__offer)
+      &amp; genv(ENTITYX6) = r_0060_0009__West__r_0060_0010__Germany
       &amp; emb4(ENTITYX6) = STATEX7
       &amp; isA(ENTITYX10,r_0060_0018__balance)
       &amp; genv(ENTITYX10) = r_0060_0016__America
       &amp; r_0060_0019__of(ENTITYX10) = ENTITYX11
-      &amp; isA(ENTITYX11,r_0060_0020__payments_position)
+      &amp; isA(ENTITYX11,r_0060_0020__payments__r_0060_0021__position)
       &amp; isA(ATTRIBX1,r_0060_0004__ready)
       &amp; emb2(ATTRIBX1) = STATEX2
       &amp; isA(ATTRIBX5,r_0060_0007__tough)
       &amp; r_0060_0008__over(ATTRIBX5) = ENTITYX6
       &amp; isA(EVENTX14,r_0060_0003__is)
-      &amp; arg0(EVENTX14) = r_0060_0001__President_Kennedy
+      &amp; arg0(EVENTX14) = r_0060_0001__President__r_0060_0002__Kennedy
       &amp; prd2(EVENTX14) = ATTRIBX1 ) ).
 
 

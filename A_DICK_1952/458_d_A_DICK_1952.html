@@ -255,9 +255,9 @@ We can land and take the treasure , as you call it . &rdquo;
 <!-- 0593_0007&#45;&gt;0593_0002_0593_0003 -->
 <g id="edge16" class="edge">
 <title>0593_0007&#45;&gt;0593_0002_0593_0003</title>
-<path fill="none" stroke="black" d="M765.31,-92.36C787.81,-78.8 825.39,-56.14 852.85,-39.59"/>
-<polygon fill="black" stroke="black" points="854.98,-42.39 861.74,-34.23 851.37,-36.39 854.98,-42.39"/>
-<text text-anchor="middle" x="843.5" y="-57.8" font-family="fixed" font-size="14.00">[tmp]</text>
+<path fill="none" stroke="black" d="M771.32,-98.19C791.39,-92.78 819.53,-83.38 841,-69 851.21,-62.17 860.72,-52.62 868.42,-43.7"/>
+<polygon fill="black" stroke="black" points="871.28,-45.72 874.94,-35.78 865.88,-41.27 871.28,-45.72"/>
+<text text-anchor="middle" x="877.5" y="-57.8" font-family="fixed" font-size="14.00">[tmp]</text>
 </g>
 <!-- 0593_0008 -->
 <g id="node17" class="node">
@@ -270,7 +270,7 @@ We can land and take the treasure , as you call it . &rdquo;
 <title>0593_0007&#45;&gt;0593_0008</title>
 <path fill="none" stroke="black" d="M752.52,-87.21C757.18,-75.22 763.53,-58.85 768.84,-45.16"/>
 <polygon fill="black" stroke="black" points="772.14,-46.35 772.49,-35.76 765.61,-43.81 772.14,-46.35"/>
-<text text-anchor="middle" x="779.5" y="-57.8" font-family="fixed" font-size="14.00">[loc]</text>
+<text text-anchor="middle" x="800.5" y="-57.8" font-family="fixed" font-size="14.00">[prd2][loc]</text>
 </g>
 <!-- 0593_0010 -->
 <g id="node18" class="node">
@@ -447,8 +447,6 @@ We can land and take the treasure , as you call it . &rdquo;
 </svg>
 <br>
 <pre>
-arc(cnt_0592_1020,r_0593_0005__wo,scope).
-arc(cnt_0592_1020,r_0593_0010__shoot,restriction).
 arc(r_0592_0002__When_tmp,r_0592_0004__come,restriction).
 arc(r_0592_0002__When_tmp,r_0592_0007__wo,scope).
 arc(r_0592_0004__come,r_0592_0003__we,arg0).
@@ -460,12 +458,15 @@ arc(r_0592_0009__find,r_0592_0012__waiting,arg1).
 arc(r_0592_0012__waiting,r_0592_0003__we,r_0592_0013__for_clr).
 arc(r_0592_0012__waiting,r_0592_0011__gun,arg0).
 arc(r_0592_0018__said,r_0592_0017__Nasha,arg0).
-arc(r_0592_0018__said,utterance_0592_1003,arg1).
+arc(r_0592_0018__said,r_0592_1003__utterance,arg1).
+arc(r_0592_1003__utterance,r_0592_0002__When_tmp,part1).
+arc(r_0592_1020__cnt,r_0593_0005__wo,scope).
+arc(r_0592_1020__cnt,r_0593_0010__shoot,restriction).
 arc(r_0593_0005__wo,r_0593_0006__n_apos_t,scope).
 arc(r_0593_0006__n_apos_t,r_0593_0007__be,scope).
 arc(r_0593_0007__be,r_0592_0011__gun,arg0).
-arc(r_0593_0007__be,r_0593_0002__Next_time,tmp).
-arc(r_0593_0007__be,r_0593_0008__there,loc7).
+arc(r_0593_0007__be,r_0593_0002__Next__r_0593_0003__time,tmp).
+arc(r_0593_0007__be,r_0593_0008__there,prd2_loc7).
 arc(r_0593_0010__shoot,r_0592_0003__we,arg1).
 arc(r_0593_0010__shoot,r_0592_0011__gun,arg0).
 arc(r_0593_0010__shoot,r_0593_0012__down,dir4).
@@ -479,15 +480,14 @@ arc(r_0594_0009__as_cnt,r_0594_0005__take,scope).
 arc(r_0594_0009__as_cnt,r_0594_0011__call,restriction).
 arc(r_0594_0011__call,r_0594_0007__treasure,arg1).
 arc(r_0594_0011__call,r_0594_0010__you,arg0).
-arc(utterance_0592_1003,r_0592_0002__When_tmp,part1).
 
 </pre>
 <br>
 <pre>
-fof(id_592_A_DICK_1952__593_A_DICK_1952__594_A_DICK_1952,axiom,
+fof(id__592_A_DICK_1952__593_A_DICK_1952__594_A_DICK_1952,axiom,
     ? [STATEX1,STATEX8,TRESPASSERSX7,TRESPASSERSX10,GUNX18,TRESPASSERSX22,TRESPASSERSX28,TREASUREX33,OPERATORX29,CONJX36,CONNX32,EVENTX34,EVENTX35,EVENTX30,CONNX21,EVENTX24,OPERATORX25,OPERATORX26,EVENTX27,EVENTX16,CONJX15,CONNX4,OPERATORX12,OPERATORX13,EVENTX14,EVENTX11,EVENTX6,TREASUREX31,ENTITYX17,GUNX9,QUALITYX19,QUALITYX23,QUALITYX5] :
       ( STATEX1 = CONJX15
-      &amp; isA(CONJX15,utterance_0592_1003)
+      &amp; isA(CONJX15,r_0592_1003__utterance)
       &amp; part1(CONJX15) = CONNX4
       &amp; isA(CONNX4,r_0592_0002__When_tmp)
       &amp; restriction(CONNX4) = EVENTX6
@@ -510,7 +510,7 @@ fof(id_592_A_DICK_1952__593_A_DICK_1952__594_A_DICK_1952,axiom,
       &amp; isA(GUNX9,r_0592_0011__gun)
       &amp; ( TRESPASSERSX10 = TRESPASSERSX7
         | TRESPASSERSX10 = r_0592_0003__we )
-      &amp; isA(ENTITYX17,r_0593_0002__Next_time)
+      &amp; isA(ENTITYX17,r_0593_0002__Next__r_0593_0003__time)
       &amp; GUNX18 = GUNX9
       &amp; TRESPASSERSX22 = r_0592_0003__we
       &amp; TRESPASSERSX28 = r_0592_0003__we
@@ -522,7 +522,7 @@ fof(id_592_A_DICK_1952__593_A_DICK_1952__594_A_DICK_1952,axiom,
       &amp; isA(EVENTX16,r_0592_0018__said)
       &amp; arg1(EVENTX16) = STATEX1
       &amp; arg0(EVENTX16) = r_0592_0017__Nasha
-      &amp; isA(CONNX21,cnt_0592_1020)
+      &amp; isA(CONNX21,r_0592_1020__cnt)
       &amp; scope(CONNX21) = OPERATORX25
       &amp; isA(OPERATORX25,r_0593_0005__wo)
       &amp; scope(OPERATORX25) = OPERATORX26
@@ -531,7 +531,7 @@ fof(id_592_A_DICK_1952__593_A_DICK_1952__594_A_DICK_1952,axiom,
       &amp; isA(EVENTX27,r_0593_0007__be)
       &amp; tmp(EVENTX27) = ENTITYX17
       &amp; arg0(EVENTX27) = GUNX18
-      &amp; loc7(EVENTX27) = QUALITYX19
+      &amp; prd2_loc7(EVENTX27) = QUALITYX19
       &amp; restriction(CONNX21) = EVENTX24
       &amp; isA(EVENTX24,r_0593_0010__shoot)
       &amp; arg0(EVENTX24) = GUNX18
@@ -714,15 +714,15 @@ fof(id_592_A_DICK_1952__593_A_DICK_1952__594_A_DICK_1952,axiom,
 <text x="661.68" y="173" text-anchor="middle">n&lt;apos&gt;t</text>
 <line x1="661.68" y1="122" x2="661.68" y2="153" style="stroke:#000000;stroke-width:2;"/>
 <line x1="780.72" y1="61" x2="660" y2="92" style="stroke:#000000;stroke-width:2;"/>
-<text x="780.24" y="112" text-anchor="middle">BE</text>
-<text x="780.24" y="173" text-anchor="middle">be</text>
-<line x1="780.24" y1="122" x2="780.24" y2="153" style="stroke:#000000;stroke-width:2;"/>
+<text x="780.72" y="112" text-anchor="middle">BE;~La</text>
+<text x="780.72" y="173" text-anchor="middle">be</text>
+<line x1="780.72" y1="122" x2="780.72" y2="153" style="stroke:#000000;stroke-width:2;"/>
 <line x1="780.72" y1="61" x2="780" y2="92" style="stroke:#000000;stroke-width:2;"/>
-<text x="900.96" y="112" text-anchor="middle">ADVP-LOC</text>
+<text x="901.56" y="112" text-anchor="middle">ADVP-PRD2-LOC</text>
 <text x="900.6" y="173" text-anchor="middle">ADV</text>
 <text x="900.6" y="234" text-anchor="middle">there</text>
 <line x1="900.6" y1="183" x2="900.6" y2="214" style="stroke:#000000;stroke-width:2;"/>
-<line x1="900.96" y1="122" x2="900" y2="153" style="stroke:#000000;stroke-width:2;"/>
+<line x1="901.56" y1="122" x2="900" y2="153" style="stroke:#000000;stroke-width:2;"/>
 <line x1="780.72" y1="61" x2="900" y2="92" style="stroke:#000000;stroke-width:2;"/>
 <text x="1201.32" y="112" text-anchor="middle">PP-SCON-CNT</text>
 <text x="1200.72" y="173" text-anchor="middle">IP-INF</text>
@@ -761,8 +761,8 @@ fof(id_592_A_DICK_1952__593_A_DICK_1952__594_A_DICK_1952,axiom,
           (NP-SBJ;{GUN} (PRO it;{it}))
           (MD wo;{will})
           (NEG;_clitic_ n&lt;apos&gt;t;{not})
-          (BE be;{be})
-          (ADVP-LOC (ADV there;{there}))
+          (BE;~La be;{be})
+          (ADVP-PRD2-LOC (ADV there;{there}))
           (PP-SCON-CNT (IP-INF (TO to;{to})
                                (VB shoot;{shoot})
                                (NP-OB1;{TRESPASSERS} (PRO us;{we}))

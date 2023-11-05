@@ -264,28 +264,28 @@ arc(r_0237_0002__As_cnt,r_0237_0004__is,restriction).
 arc(r_0237_0002__As_cnt,r_0237_0009__is,scope).
 arc(r_0237_0004__is,r_0237_0003__he,arg0).
 arc(r_0237_0004__is,r_0237_0007__beautiful,prd2).
-arc(r_0237_0005__quantificational__no,r_0237_0006__longer,scope).
-arc(r_0237_0005__quantificational__no,z_0237_1009,restriction).
+arc(r_0237_0005__quantificational__r_0237_0005__no,r_0237_0006__longer,scope).
+arc(r_0237_0005__quantificational__r_0237_0005__no,z_0237_1009,restriction).
 arc(r_0237_0006__longer,z_0237_1009,modifier1).
 arc(r_0237_0007__beautiful,r_0237_0006__longer,quality1).
 arc(r_0237_0009__is,r_0237_0003__he,arg0).
 arc(r_0237_0009__is,r_0237_0012__useful,prd2).
-arc(r_0237_0010__quantificational__no,r_0237_0011__longer,scope).
-arc(r_0237_0010__quantificational__no,z_0237_1016,restriction).
+arc(r_0237_0010__quantificational__r_0237_0010__no,r_0237_0011__longer,scope).
+arc(r_0237_0010__quantificational__r_0237_0010__no,z_0237_1016,restriction).
 arc(r_0237_0011__longer,z_0237_1016,modifier1).
 arc(r_0237_0012__useful,r_0237_0011__longer,quality1).
-arc(r_0237_0015__said,r_0237_0017__Art_Professor,arg0).
-arc(r_0237_0015__said,utterance_0237_1003,arg1).
-arc(r_0237_0017__Art_Professor,r_0237_0021__University,r_0237_0019__at).
-arc(utterance_0237_1003,r_0237_0002__As_cnt,part1).
+arc(r_0237_0015__said,r_0237_0017__Art__r_0237_0018__Professor,arg0).
+arc(r_0237_0015__said,r_0237_1003__utterance,arg1).
+arc(r_0237_0017__Art__r_0237_0018__Professor,r_0237_0021__University,r_0237_0019__at).
+arc(r_0237_1003__utterance,r_0237_0002__As_cnt,part1).
 
 </pre>
 <br>
 <pre>
-fof(id_237_A_WILDE_1_1888,axiom,
+fof(id__237_A_WILDE_1_1888,axiom,
     ? [STATEX1,PRINCEX11,EVENTX21,CONJX18,CONNX4,EVENTX17,QUANTX15,EVENTX10,QUANTX8,ART_PROFESSORX19,ENTITYX20,ENTITYX14,ENTITYX7,ATTRIBX12,ATTRIBX5,QUALITYX13,QUALITYX6] :
       ( STATEX1 = CONJX18
-      &amp; isA(CONJX18,utterance_0237_1003)
+      &amp; isA(CONJX18,r_0237_1003__utterance)
       &amp; part1(CONJX18) = CONNX4
       &amp; isA(CONNX4,r_0237_0002__As_cnt)
       &amp; restriction(CONNX4) = EVENTX10
@@ -297,20 +297,20 @@ fof(id_237_A_WILDE_1_1888,axiom,
       &amp; arg0(EVENTX17) = PRINCEX11
       &amp; prd2(EVENTX17) = ATTRIBX12
       &amp; PRINCEX11 = r_0237_0003__he
-      &amp; isA(ART_PROFESSORX19,r_0237_0017__Art_Professor)
+      &amp; isA(ART_PROFESSORX19,r_0237_0017__Art__r_0237_0018__Professor)
       &amp; r_0237_0019__at(ART_PROFESSORX19) = ENTITYX20
       &amp; isA(ENTITYX20,r_0237_0021__University)
       &amp; isA(ATTRIBX5,r_0237_0007__beautiful)
       &amp; quality1(ATTRIBX5) = QUALITYX6
       &amp; isA(ATTRIBX12,r_0237_0012__useful)
       &amp; quality1(ATTRIBX12) = QUALITYX13
-      &amp; isA(QUANTX8,r_0237_0005__quantificational__no)
+      &amp; isA(QUANTX8,r_0237_0005__quantificational__r_0237_0005__no)
       &amp; restriction(QUANTX8) = ENTITYX7
       &amp; isA(ENTITYX7,z_0237_1009)
       &amp; scope(QUANTX8) = QUALITYX6
       &amp; isA(QUALITYX6,r_0237_0006__longer)
       &amp; modifier1(QUALITYX6) = ENTITYX7
-      &amp; isA(QUANTX15,r_0237_0010__quantificational__no)
+      &amp; isA(QUANTX15,r_0237_0010__quantificational__r_0237_0010__no)
       &amp; restriction(QUANTX15) = ENTITYX14
       &amp; isA(ENTITYX14,z_0237_1016)
       &amp; scope(QUANTX15) = QUALITYX13

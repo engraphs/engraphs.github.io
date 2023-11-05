@@ -363,10 +363,6 @@ Write an article , briefly describing the beginning of the book or one of the sh
 </svg>
 <br>
 <pre>
-arc(cnt_0038_1005,r_0038_0001__Write,scope).
-arc(cnt_0038_1005,r_0038_0022__and,restriction).
-arc(imperative_0038_1002,cnt_0038_1005,scope).
-arc(question_0038_1020,r_0038_0024__why,scope).
 arc(r_0038_0001__Write,r_0038_0003__article,arg1).
 arc(r_0038_0006__describing,r_0038_0005__briefly,mnr1).
 arc(r_0038_0006__describing,r_0038_0008__beginning,arg1).
@@ -380,7 +376,7 @@ arc(r_0038_0020__read,r_0038_0012__or,arg1).
 arc(r_0038_0020__read,r_0038_0018__you,arg0).
 arc(r_0038_0022__and,r_0038_0006__describing,conj1).
 arc(r_0038_0022__and,r_0038_0023__explaining,conj2).
-arc(r_0038_0023__explaining,question_0038_1020,arg1).
+arc(r_0038_0023__explaining,r_0038_1020__question,arg1).
 arc(r_0038_0024__why,r_0038_0027__made,scope).
 arc(r_0038_0027__made,r_0038_0018__you,arg1).
 arc(r_0038_0027__made,r_0038_0026__beginning,arg0).
@@ -388,18 +384,22 @@ arc(r_0038_0027__made,r_0038_0029__want,prd).
 arc(r_0038_0029__want,r_0038_0031__read,arg1).
 arc(r_0038_0031__read,r_0038_0033__rest,arg1).
 arc(r_0038_0033__rest,r_0038_0036__story,r_0038_0034__of).
+arc(r_0038_1002__imperative,r_0038_1005__cnt,scope).
+arc(r_0038_1005__cnt,r_0038_0001__Write,scope).
+arc(r_0038_1005__cnt,r_0038_0022__and,restriction).
+arc(r_0038_1020__question,r_0038_0024__why,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_38_A_fce_0102_2001_03,axiom,
+fof(id__38_A_fce_0102_2001_03,axiom,
     ? [CATENATIVEX10,STATEX18,STATEX24,STATEX27,HEARERX23,OPERATORX2,CONNX6,CONJX34,EVENTX33,OPERATORX20,OPERATORX21,EVENTX32,EVENTX31,EVENTX30,EVENTX17,EVENTX12,EVENTX11,EVENTX35,ENTITYX4,ENTITYX22,ENTITYX28,ENTITYX29,ENTITYX8,ENTITYX9,ENTITYX13,ENTITYX14,ENTITYX15,QUALITYX7,ATTRIBX16] :
       ( CATENATIVEX10 = EVENTX11
       &amp; isA(EVENTX11,r_0038_0020__read)
       &amp; arg0(EVENTX11) = r_0038_0018__you
       &amp; arg1(EVENTX11) = ENTITYX9
       &amp; STATEX18 = OPERATORX20
-      &amp; isA(OPERATORX20,question_0038_1020)
+      &amp; isA(OPERATORX20,r_0038_1020__question)
       &amp; scope(OPERATORX20) = OPERATORX21
       &amp; isA(OPERATORX21,r_0038_0024__why)
       &amp; scope(OPERATORX21) = EVENTX32
@@ -433,9 +433,9 @@ fof(id_38_A_fce_0102_2001_03,axiom,
       &amp; isA(ENTITYX29,r_0038_0036__story)
       &amp; isA(QUALITYX7,r_0038_0005__briefly)
       &amp; isA(ATTRIBX16,r_0038_0016__short)
-      &amp; isA(OPERATORX2,imperative_0038_1002)
+      &amp; isA(OPERATORX2,r_0038_1002__imperative)
       &amp; scope(OPERATORX2) = CONNX6
-      &amp; isA(CONNX6,cnt_0038_1005)
+      &amp; isA(CONNX6,r_0038_1005__cnt)
       &amp; scope(CONNX6) = EVENTX35
       &amp; isA(EVENTX35,r_0038_0001__Write)
       &amp; arg1(EVENTX35) = ENTITYX4

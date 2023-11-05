@@ -660,11 +660,11 @@ arc(r_0042_0009__be,r_0042_0010__fit,prd2).
 arc(r_0042_0010__fit,r_0042_0012__drink,emb2).
 arc(r_0042_0013__as_soon_as_tmp,r_0042_0008__will,scope).
 arc(r_0042_0013__as_soon_as_tmp,r_0042_0028__ceases,restriction).
-arc(r_0042_0021__first_condition,r_0042_0001__Sherry,genv).
-arc(r_0042_0021__first_condition,r_0042_0024__bottling,r_0042_0023__after).
+arc(r_0042_0021__first__r_0042_0022__condition,r_0042_0001__Sherry,genv).
+arc(r_0042_0021__first__r_0042_0022__condition,r_0042_0024__bottling,r_0042_0023__after).
 arc(r_0042_0025__is,r_0042_0026__called,catenative).
 arc(r_0042_0026__called,r_0042_0016__sickness,prd2).
-arc(r_0042_0026__called,r_0042_0021__first_condition,arg1).
+arc(r_0042_0026__called,r_0042_0021__first__r_0042_0022__condition,arg1).
 arc(r_0042_0028__ceases,r_0042_0016__sickness,arg0).
 arc(r_0042_0030__and,r_0042_0013__as_soon_as_tmp,conj1).
 arc(r_0042_0030__and,r_0042_0032__also,conj2).
@@ -680,22 +680,22 @@ arc(r_0042_0040__kept,r_0042_0045__temperature,r_0042_0041__at_mnr).
 arc(r_0042_0044__steady,r_0042_0043__perfectly,quality1).
 arc(r_0042_0045__temperature,r_0042_0044__steady,attrib2).
 arc(r_0042_0045__temperature,r_0042_0054__but,prn5).
-arc(r_0042_0047__neither_nor,r_0042_0049__hot,conj1).
-arc(r_0042_0047__neither_nor,r_0042_0052__cold,conj2).
+arc(r_0042_0047__neither__r_0042_0050__nor,r_0042_0049__hot,conj1).
+arc(r_0042_0047__neither__r_0042_0050__nor,r_0042_0052__cold,conj2).
 arc(r_0042_0049__hot,r_0042_0048__too,quality1).
 arc(r_0042_0052__cold,r_0042_0051__too,quality1).
 arc(r_0042_0054__but,r_0042_0058__or,conj2).
 arc(r_0042_0054__but,z_0042_1043,conj1).
 arc(r_0042_0058__or,r_0042_0055__about,quality1).
-arc(r_0042_0058__or,r_0042_0056__55__deg_,conj1).
-arc(r_0042_0058__or,r_0042_0059__60__deg_,conj2).
+arc(r_0042_0058__or,r_0042_0056__55__r_0042_0057___deg_,conj1).
+arc(r_0042_0058__or,r_0042_0059__60__r_0042_0060___deg_,conj2).
 arc(r_0042_0062__and,r_0042_0039__be,conj1).
 arc(r_0042_0062__and,z_0042_1055,conj2).
 arc(r_0042_0064__free,r_0042_0066__draughts,r_0042_0065__from).
 arc(r_0042_0066__draughts,r_0042_0069__air,r_0042_0067__of).
 arc(r_0042_0069__air,r_0042_0068__cold,attrib1).
 arc(z_0042_1006,r_0042_0006__quality,r_0042_0004__of_prd2).
-arc(z_0042_1043,r_0042_0047__neither_nor,attrib1).
+arc(z_0042_1043,r_0042_0047__neither__r_0042_0050__nor,attrib1).
 arc(z_0042_1055,r_0042_0037__cellar,arg0).
 arc(z_0042_1055,r_0042_0063__absolutely,mnr1).
 arc(z_0042_1055,r_0042_0064__free,prd).
@@ -703,7 +703,7 @@ arc(z_0042_1055,r_0042_0064__free,prd).
 </pre>
 <br>
 <pre>
-fof(id_42_A_BEETON_1861,axiom,
+fof(id__42_A_BEETON_1861,axiom,
     ? [STATEX9,CATENATIVEX18,CATENATIVEX31,SHERRYX16,CONJX58,OPERATORX30,CONJX57,EVENTX56,EVENTX49,EVENTX48,CONNX1,CONJX28,OPERATORX25,OPERATORX26,EVENTX27,CONNX13,EVENTX22,EVENTX21,EVENTX20,OPERATORX23,EVENTX24,EVENTX12,EVENTX7,ENTITYX29,ENTITYX52,ENTITYX53,ENTITYX33,ENTITYX36,ENTITYX37,ENTITYX44,ENTITYX46,ENTITYX47,ENTITYX14,ENTITYX15,ENTITYX17,ENTITYX4,ATTRIBX51,ATTRIBX54,ATTRIBX34,ATTRIBX38,ATTRIBX39,ATTRIBX41,ATTRIBX8,ATTRIBX5,QUALITYX50,QUALITYX45,QUALITYX42,QUALITYX40,QUALITYX35] :
       ( STATEX9 = EVENTX12
       &amp; isA(EVENTX12,r_0042_0012__drink)
@@ -720,7 +720,7 @@ fof(id_42_A_BEETON_1861,axiom,
       &amp; isA(EVENTX21,r_0042_0025__is)
       &amp; catenative(EVENTX21) = CATENATIVEX18
       &amp; isA(ENTITYX14,r_0042_0016__sickness)
-      &amp; isA(ENTITYX15,r_0042_0021__first_condition)
+      &amp; isA(ENTITYX15,r_0042_0021__first__r_0042_0022__condition)
       &amp; genv(ENTITYX15) = SHERRYX16
       &amp; r_0042_0023__after(ENTITYX15) = ENTITYX17
       &amp; SHERRYX16 = r_0042_0001__Sherry
@@ -738,8 +738,8 @@ fof(id_42_A_BEETON_1861,axiom,
       &amp; quality1(ENTITYX44) = QUALITYX45
       &amp; conj1(ENTITYX44) = ENTITYX46
       &amp; conj2(ENTITYX44) = ENTITYX47
-      &amp; isA(ENTITYX46,r_0042_0056__55__deg_)
-      &amp; isA(ENTITYX47,r_0042_0059__60__deg_)
+      &amp; isA(ENTITYX46,r_0042_0056__55__r_0042_0057___deg_)
+      &amp; isA(ENTITYX47,r_0042_0059__60__r_0042_0060___deg_)
       &amp; isA(ENTITYX52,r_0042_0066__draughts)
       &amp; r_0042_0067__of(ENTITYX52) = ENTITYX53
       &amp; isA(ENTITYX53,r_0042_0069__air)
@@ -749,7 +749,7 @@ fof(id_42_A_BEETON_1861,axiom,
       &amp; emb2(ATTRIBX8) = STATEX9
       &amp; isA(ATTRIBX34,r_0042_0044__steady)
       &amp; quality1(ATTRIBX34) = QUALITYX35
-      &amp; isA(ATTRIBX38,r_0042_0047__neither_nor)
+      &amp; isA(ATTRIBX38,r_0042_0047__neither__r_0042_0050__nor)
       &amp; conj1(ATTRIBX38) = ATTRIBX39
       &amp; conj2(ATTRIBX38) = ATTRIBX41
       &amp; isA(ATTRIBX39,r_0042_0049__hot)

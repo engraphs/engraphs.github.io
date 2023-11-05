@@ -275,7 +275,7 @@ arc(r_0009_0013__is,r_0009_0008__one,arg0).
 arc(r_0009_0013__is,r_0009_0015__happy,prd2).
 arc(r_0009_0015__happy,r_0009_0014__quite,quality1).
 arc(r_0009_0018__muttered,r_0009_0021__man,arg0).
-arc(r_0009_0018__muttered,utterance_0009_1003,arg1).
+arc(r_0009_0018__muttered,r_0009_1003__utterance,arg1).
 arc(r_0009_0021__man,r_0009_0002__I,z_0009_1016).
 arc(r_0009_0021__man,r_0009_0020__disappointed,attrib3).
 arc(r_0009_0022__as_cnt,r_0009_0018__muttered,scope).
@@ -283,15 +283,15 @@ arc(r_0009_0022__as_cnt,r_0009_0024__gazed,restriction).
 arc(r_0009_0024__gazed,r_0009_0002__I,arg0).
 arc(r_0009_0024__gazed,r_0009_0028__statue,r_0009_0025__at_dir).
 arc(r_0009_0028__statue,r_0009_0027__wonderful,attrib2).
-arc(utterance_0009_1003,r_0009_0003__am,part1).
+arc(r_0009_1003__utterance,r_0009_0003__am,part1).
 
 </pre>
 <br>
 <pre>
-fof(id_9_A_WILDE_1_1888,axiom,
+fof(id__9_A_WILDE_1_1888,axiom,
     ? [STATEX1,STATEX5,DISAPPOINTEDX17,DISAPPOINTEDX20,CONNX19,EVENTX23,EVENTX24,CONJX13,EVENTX12,EVENTX11,EVENTX10,ENTITYX14,ENTITYX21,ENTITYX6,ENTITYX7,ATTRIBX22,ATTRIBX18,ATTRIBX4,ATTRIBX8,QUALITYX9] :
       ( STATEX1 = CONJX13
-      &amp; isA(CONJX13,utterance_0009_1003)
+      &amp; isA(CONJX13,r_0009_1003__utterance)
       &amp; part1(CONJX13) = EVENTX12
       &amp; isA(EVENTX12,r_0009_0003__am)
       &amp; arg0(EVENTX12) = r_0009_0002__I

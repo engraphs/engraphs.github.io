@@ -277,8 +277,6 @@ It was an unassuming shop , registered under the vague name of Drapery .
 </svg>
 <br>
 <pre>
-arc(cnt_0064_1005,r_0064_0007__went,scope).
-arc(cnt_0064_1005,r_0064_0010__look,restriction).
 arc(r_0064_0003__morning,r_0064_0002__next,attrib2).
 arc(r_0064_0003__morning,r_0064_0005__breakfast,r_0064_0004__after).
 arc(r_0064_0007__went,r_0064_0003__morning,tmp).
@@ -287,7 +285,9 @@ arc(r_0064_0007__went,r_0064_0008__down,dir4).
 arc(r_0064_0010__look,r_0064_0006__I,arg0).
 arc(r_0064_0010__look,r_0064_0014__house,r_0064_0011__at_dir).
 arc(r_0064_0014__house,r_0064_0013__little,attrib2).
-arc(r_0064_0014__house,r_0064_0016__Great_Britain_Street,r_0064_0015__in).
+arc(r_0064_0014__house,r_0064_0016__Great__r_0064_0017__Britain_r_0064_0018__Street,r_0064_0015__in).
+arc(r_0064_1005__cnt,r_0064_0007__went,scope).
+arc(r_0064_1005__cnt,r_0064_0010__look,restriction).
 arc(r_0065_0002__was,r_0064_0014__house,arg0).
 arc(r_0065_0002__was,r_0065_0005__shop,prd2).
 arc(r_0065_0005__shop,r_0065_0004__unassuming,attrib2).
@@ -299,7 +299,7 @@ arc(r_0065_0011__name,r_0065_0013__Drapery,r_0065_0012__of).
 </pre>
 <br>
 <pre>
-fof(id_64_A_JOYCE_1914__65_A_JOYCE_1914,axiom,
+fof(id__64_A_JOYCE_1914__65_A_JOYCE_1914,axiom,
     ? [SHOPHOUSEX11,EVENTX18,EVENTX17,CONNX6,EVENTX9,EVENTX10,ENTITYX12,ENTITYX15,ENTITYX1,SHOPHOUSEX7,ENTITYX3,ATTRIBX13,ATTRIBX16,ATTRIBX8,ATTRIBX2,QUALITYX4] :
       ( isA(ENTITYX1,r_0064_0003__morning)
       &amp; attrib2(ENTITYX1) = ATTRIBX2
@@ -307,7 +307,7 @@ fof(id_64_A_JOYCE_1914__65_A_JOYCE_1914,axiom,
       &amp; isA(ENTITYX3,r_0064_0005__breakfast)
       &amp; isA(SHOPHOUSEX7,r_0064_0014__house)
       &amp; attrib2(SHOPHOUSEX7) = ATTRIBX8
-      &amp; r_0064_0015__in(SHOPHOUSEX7) = r_0064_0016__Great_Britain_Street
+      &amp; r_0064_0015__in(SHOPHOUSEX7) = r_0064_0016__Great__r_0064_0017__Britain_r_0064_0018__Street
       &amp; SHOPHOUSEX11 = SHOPHOUSEX7
       &amp; isA(EVENTX17,r_0065_0007__registered)
       &amp; arg1(EVENTX17) = ENTITYX12
@@ -322,7 +322,7 @@ fof(id_64_A_JOYCE_1914__65_A_JOYCE_1914,axiom,
       &amp; isA(ATTRIBX13,r_0065_0004__unassuming)
       &amp; isA(ATTRIBX16,r_0065_0010__vague)
       &amp; isA(QUALITYX4,r_0064_0008__down)
-      &amp; isA(CONNX6,cnt_0064_1005)
+      &amp; isA(CONNX6,r_0064_1005__cnt)
       &amp; scope(CONNX6) = EVENTX10
       &amp; isA(EVENTX10,r_0064_0007__went)
       &amp; tmp(EVENTX10) = ENTITYX1

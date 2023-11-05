@@ -357,16 +357,14 @@ The Spring Drive is Seiko 's unique mechanism in which the mainspring is wound b
 </svg>
 <br>
 <pre>
-arc(cnt_0002_1021,r_0002_0032__using,scope).
-arc(cnt_0002_1021,r_0002_0040__move,restriction).
-arc(r_0002_0004__is,r_0002_0002__Spring_Drive,arg0).
+arc(r_0002_0004__is,r_0002_0002__Spring__r_0002_0003__Drive,arg0).
 arc(r_0002_0004__is,r_0002_0008__mechanism,prd2).
 arc(r_0002_0008__mechanism,r_0002_0005__Seiko,genv).
 arc(r_0002_0008__mechanism,r_0002_0007__unique,attrib2).
 arc(r_0002_0013__is,r_0002_0008__mechanism,r_0002_0009__in_loc).
 arc(r_0002_0013__is,r_0002_0014__wound,catenative).
 arc(r_0002_0014__wound,r_0002_0012__mainspring,arg1).
-arc(r_0002_0014__wound,r_0002_0018__motions,arg0_by_lgs).
+arc(r_0002_0014__wound,r_0002_0018__motions,arg0__r_0002_0015__by_lgs).
 arc(r_0002_0018__motions,r_0002_0017__natural,attrib2).
 arc(r_0002_0018__motions,r_0002_0021__user,r_0002_0019__of).
 arc(r_0002_0022__and,r_0002_0013__is,conj1).
@@ -374,32 +372,34 @@ arc(r_0002_0022__and,r_0002_0024__is,conj2).
 arc(r_0002_0024__is,r_0002_0008__mechanism,r_0002_0009__in_loc).
 arc(r_0002_0024__is,r_0002_0031__while_cnt,catenative).
 arc(r_0002_0025__controlled,r_0002_0023__accuracy,arg1).
-arc(r_0002_0025__controlled,r_0002_0028__microelectronics_quartz_mechanism,arg0_by_lgs).
-arc(r_0002_0031__while_cnt,cnt_0002_1021,restriction).
+arc(r_0002_0025__controlled,r_0002_0028__microelectronics__r_0002_0029__quartz_r_0002_0030__mechanism,arg0_r_0002_0026__by_lgs).
 arc(r_0002_0031__while_cnt,r_0002_0025__controlled,scope).
+arc(r_0002_0031__while_cnt,r_0002_1021__cnt,restriction).
 arc(r_0002_0032__using,r_0002_0035__power,arg1).
 arc(r_0002_0034__unwinding,r_0002_0035__power,arg0).
 arc(r_0002_0035__power,r_0002_0038__mainspring,r_0002_0036__of).
 arc(r_0002_0040__move,r_0002_0035__power,arg0).
 arc(r_0002_0040__move,r_0002_0042__hands,arg1).
+arc(r_0002_1021__cnt,r_0002_0032__using,scope).
+arc(r_0002_1021__cnt,r_0002_0040__move,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_2_A_seiko_9R65,axiom,
+fof(id__2_A_seiko_9R65,axiom,
     ? [CATENATIVEX6,CATENATIVEX13,EVENTX29,CONJX28,EVENTX27,CONNX15,CONNX22,EVENTX24,EVENTX25,EVENTX19,EVENTX26,EVENTX11,EVENTX10,ENTITYX1,ENTITYX12,ENTITYX14,ENTITYX18,ENTITYX23,ENTITYX20,ENTITYX5,ENTITYX7,ENTITYX9,ATTRIBX2,ATTRIBX8] :
       ( CATENATIVEX6 = EVENTX10
       &amp; isA(EVENTX10,r_0002_0014__wound)
-      &amp; arg0_by_lgs(EVENTX10) = ENTITYX7
+      &amp; arg0__r_0002_0015__by_lgs(EVENTX10) = ENTITYX7
       &amp; arg1(EVENTX10) = ENTITYX5
       &amp; CATENATIVEX13 = CONNX15
       &amp; isA(CONNX15,r_0002_0031__while_cnt)
       &amp; scope(CONNX15) = EVENTX26
       &amp; isA(EVENTX26,r_0002_0025__controlled)
-      &amp; arg0_by_lgs(EVENTX26) = ENTITYX14
+      &amp; arg0__r_0002_0026__by_lgs(EVENTX26) = ENTITYX14
       &amp; arg1(EVENTX26) = ENTITYX12
       &amp; restriction(CONNX15) = CONNX22
-      &amp; isA(CONNX22,cnt_0002_1021)
+      &amp; isA(CONNX22,r_0002_1021__cnt)
       &amp; scope(CONNX22) = EVENTX25
       &amp; isA(EVENTX25,r_0002_0032__using)
       &amp; arg1(EVENTX25) = ENTITYX18
@@ -425,18 +425,18 @@ fof(id_2_A_seiko_9R65,axiom,
       &amp; r_0002_0019__of(ENTITYX7) = ENTITYX9
       &amp; isA(ENTITYX9,r_0002_0021__user)
       &amp; isA(ENTITYX12,r_0002_0023__accuracy)
-      &amp; isA(ENTITYX14,r_0002_0028__microelectronics_quartz_mechanism)
+      &amp; isA(ENTITYX14,r_0002_0028__microelectronics__r_0002_0029__quartz_r_0002_0030__mechanism)
       &amp; isA(EVENTX19,r_0002_0034__unwinding)
       &amp; arg0(EVENTX19) = ENTITYX18
       &amp; isA(ENTITYX18,r_0002_0035__power)
       &amp; r_0002_0036__of(ENTITYX18) = ENTITYX20
       &amp; isA(ENTITYX20,r_0002_0038__mainspring)
       &amp; isA(ENTITYX23,r_0002_0042__hands)
-      &amp; isA(r_0002_0002__Spring_Drive,r_0002_0002__Spring_Drive)
+      &amp; isA(r_0002_0002__Spring__r_0002_0003__Drive,r_0002_0002__Spring_r_0002_0003__Drive)
       &amp; isA(ATTRIBX2,r_0002_0007__unique)
       &amp; isA(ATTRIBX8,r_0002_0017__natural)
       &amp; isA(EVENTX29,r_0002_0004__is)
-      &amp; arg0(EVENTX29) = r_0002_0002__Spring_Drive
+      &amp; arg0(EVENTX29) = r_0002_0002__Spring__r_0002_0003__Drive
       &amp; prd2(EVENTX29) = ENTITYX1 ) ).
 
 

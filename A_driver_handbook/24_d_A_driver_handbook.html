@@ -294,9 +294,9 @@ When driving within 500 to 1,000 feet of a school while children are outside or 
 <pre>
 arc(r_0030_0001__When_tmp,r_0030_0011__while_tmp,restriction).
 arc(r_0030_0001__When_tmp,r_0030_0026__unless_cnt,scope).
-arc(r_0030_0002__driving,r_0030_0004__500_feet,r_0030_0003__within_loc).
-arc(r_0030_0004__500_feet,r_0030_0006__1,000,r_0030_0005__to).
-arc(r_0030_0004__500_feet,r_0030_0010__school,r_0030_0008__of).
+arc(r_0030_0002__driving,r_0030_0004__500__r_0030_0007__feet,r_0030_0003__within_loc).
+arc(r_0030_0004__500__r_0030_0007__feet,r_0030_0006__1,000,r_0030_0005__to).
+arc(r_0030_0004__500__r_0030_0007__feet,r_0030_0010__school,r_0030_0008__of).
 arc(r_0030_0011__while_tmp,r_0030_0002__driving,scope).
 arc(r_0030_0011__while_tmp,r_0030_0013__are,restriction).
 arc(r_0030_0013__are,r_0030_0015__or,catenative).
@@ -304,19 +304,19 @@ arc(r_0030_0015__or,r_0030_0016__crossing,conj2).
 arc(r_0030_0015__or,z_0030_1011,conj1).
 arc(r_0030_0016__crossing,r_0030_0012__children,arg0).
 arc(r_0030_0016__crossing,r_0030_0018__street,arg1).
-arc(r_0030_0023__is,r_0030_0021__speed_limit,arg0).
-arc(r_0030_0023__is,r_0030_0024__25_mph,prd2).
+arc(r_0030_0023__is,r_0030_0021__speed__r_0030_0022__limit,arg0).
+arc(r_0030_0023__is,r_0030_0024__25__r_0030_0025__mph,prd2).
 arc(r_0030_0026__unless_cnt,r_0030_0023__is,scope).
 arc(r_0030_0026__unless_cnt,r_0030_0027__otherwise,restriction).
 arc(r_0030_0027__otherwise,r_0030_0028__posted,scope).
-arc(r_0030_0028__posted,r_0030_0021__speed_limit,arg1).
+arc(r_0030_0028__posted,r_0030_0021__speed__r_0030_0022__limit,arg1).
 arc(z_0030_1011,r_0030_0012__children,arg0).
 arc(z_0030_1011,r_0030_0014__outside,prd2).
 
 </pre>
 <br>
 <pre>
-fof(id_30_A_driver_handbook,axiom,
+fof(id__30_A_driver_handbook,axiom,
     ? [CATENATIVEX9,CONNX1,CONNX20,OPERATORX22,EVENTX23,EVENTX24,CONNX7,EVENTX16,CONJX15,EVENTX14,EVENTX12,EVENTX17,ENTITYX18,ENTITYX19,ENTITYX4,ENTITYX8,ENTITYX13,ENTITYX5,ENTITYX6,ATTRIBX10] :
       ( CATENATIVEX9 = CONJX15
       &amp; isA(CONJX15,r_0030_0015__or)
@@ -328,15 +328,15 @@ fof(id_30_A_driver_handbook,axiom,
       &amp; isA(EVENTX14,r_0030_0016__crossing)
       &amp; arg0(EVENTX14) = ENTITYX8
       &amp; arg1(EVENTX14) = ENTITYX13
-      &amp; isA(ENTITYX4,r_0030_0004__500_feet)
+      &amp; isA(ENTITYX4,r_0030_0004__500__r_0030_0007__feet)
       &amp; r_0030_0005__to(ENTITYX4) = ENTITYX5
       &amp; r_0030_0008__of(ENTITYX4) = ENTITYX6
       &amp; isA(ENTITYX5,r_0030_0006__1,000)
       &amp; isA(ENTITYX6,r_0030_0010__school)
       &amp; isA(ENTITYX8,r_0030_0012__children)
       &amp; isA(ENTITYX13,r_0030_0018__street)
-      &amp; isA(ENTITYX18,r_0030_0021__speed_limit)
-      &amp; isA(ENTITYX19,r_0030_0024__25_mph)
+      &amp; isA(ENTITYX18,r_0030_0021__speed__r_0030_0022__limit)
+      &amp; isA(ENTITYX19,r_0030_0024__25__r_0030_0025__mph)
       &amp; isA(ATTRIBX10,r_0030_0014__outside)
       &amp; isA(CONNX1,r_0030_0001__When_tmp)
       &amp; restriction(CONNX1) = CONNX7

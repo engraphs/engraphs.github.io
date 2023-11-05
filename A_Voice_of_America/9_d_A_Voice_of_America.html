@@ -976,11 +976,11 @@ arc(r_0043_0002__defense,r_0043_0001__British,attrib1).
 arc(r_0043_0003__officials,r_0043_0002__defense,nlyr1).
 arc(r_0043_0004__say,r_0043_0003__officials,arg0).
 arc(r_0043_0004__say,r_0043_0009__have,arg1).
-arc(r_0043_0005__14_personnel,r_0043_0007__military,nlyr2).
+arc(r_0043_0005__14__r_0043_0008__personnel,r_0043_0007__military,nlyr2).
 arc(r_0043_0007__military,r_0043_0006__British,attrib1).
 arc(r_0043_0009__have,r_0043_0010__been,catenative).
 arc(r_0043_0010__been,r_0043_0011__killed,catenative).
-arc(r_0043_0011__killed,r_0043_0005__14_personnel,arg1).
+arc(r_0043_0011__killed,r_0043_0005__14__r_0043_0008__personnel,arg1).
 arc(r_0043_0011__killed,r_0043_0014__crash,r_0043_0012__in_loc).
 arc(r_0043_0014__crash,r_0043_0018__aircraft,r_0043_0015__of).
 arc(r_0043_0014__crash,r_0043_0021__Afghanistan,r_0043_0019__in).
@@ -1008,12 +1008,12 @@ arc(r_0045_0006__supporting,r_0045_0014__south,r_0045_0010__in_loc).
 arc(r_0045_0009__mission,r_0045_0008__NATO,attrib2).
 arc(r_0045_0014__south,r_0045_0012__country,genv).
 arc(r_0045_0016__but,r_0045_0002__say,conj1).
-arc(r_0045_0016__but,r_0045_0019__quantificational__no,conj2).
+arc(r_0045_0016__but,r_0045_0019__quantificational__r_0045_0019__no,conj2).
 arc(r_0045_0018__is,r_0045_0020__indication,arg0).
-arc(r_0045_0019__quantificational__no,r_0045_0018__is,scope).
-arc(r_0045_0019__quantificational__no,r_0045_0020__indication,restriction).
-arc(r_0045_0020__indication,r_0045_0022__enemy_action,r_0045_0021__of).
-arc(r_0045_0024__causing,r_0045_0022__enemy_action,arg0).
+arc(r_0045_0019__quantificational__r_0045_0019__no,r_0045_0018__is,scope).
+arc(r_0045_0019__quantificational__r_0045_0019__no,r_0045_0020__indication,restriction).
+arc(r_0045_0020__indication,r_0045_0022__enemy__r_0045_0023__action,r_0045_0021__of).
+arc(r_0045_0024__causing,r_0045_0022__enemy__r_0045_0023__action,arg0).
 arc(r_0045_0024__causing,r_0045_0026__crash,arg1).
 arc(r_0046_0003__comes,r_0046_0002__crash,arg0).
 arc(r_0046_0004__as_tmp,r_0046_0003__comes,scope).
@@ -1028,7 +1028,7 @@ arc(r_0046_0013__remnants,r_0046_0012__Taleban,attrib1).
 arc(r_0047_0002__say,r_0047_0001__Officials,arg0).
 arc(r_0047_0002__say,r_0047_0014__so_that_cnt,arg1).
 arc(r_0047_0007__is,r_0047_0008__aimed,catenative).
-arc(r_0047_0008__aimed,r_0047_0004__Operation_Medusa,arg1).
+arc(r_0047_0008__aimed,r_0047_0004__Operation__r_0047_0005__Medusa,arg1).
 arc(r_0047_0008__aimed,r_0047_0010__removing,r_0047_0009__at_dir).
 arc(r_0047_0010__removing,r_0047_0013__threat,arg1).
 arc(r_0047_0013__threat,r_0047_0012__Taleban,attrib2).
@@ -1045,7 +1045,7 @@ arc(r_0047_0022__achieved,r_0047_0025__area,r_0047_0023__in_loc).
 </pre>
 <br>
 <pre>
-fof(id_43_A_Voice_of_America,axiom,
+fof(id__43_A_Voice_of_America,axiom,
     ? [STATEX4,CATENATIVEX8,CATENATIVEX9,STATEX21,STATEX33,CATENATIVEX35,STATEX55,STATEX64,CATENATIVEX76,EVENTX78,CATENATIVEX71,EVENTX86,CONNX65,OPERATORX70,EVENTX75,EVENTX74,EVENTX85,EVENTX84,EVENTX83,CONNX51,EVENTX61,EVENTX60,EVENTX62,CONJX49,QUANTX44,EVENTX48,EVENTX47,EVENTX42,EVENTX41,EVENTX40,EVENTX29,CONJX28,EVENTX27,EVENTX24,EVENTX18,EVENTX17,EVENTX16,EVENTX15,ENTITYX63,ENTITYX66,ENTITYX73,ENTITYX67,ENTITYX68,ENTITYX69,ENTITYX81,ENTITYX50,ENTITYX52,ENTITYX54,ENTITYX58,ENTITYX43,ENTITYX45,ENTITYX46,ENTITYX32,ENTITYX34,ENTITYX36,ENTITYX38,ENTITYX39,ENTITYX19,ENTITYX22,ENTITYX25,ENTITYX23,ENTITYX1,ENTITYX5,ENTITYX11,ENTITYX12,ENTITYX6,ENTITYX2,ATTRIBX82,ATTRIBX59,ATTRIBX53,ATTRIBX37,ATTRIBX26,ATTRIBX20,ATTRIBX14,ATTRIBX13,ATTRIBX7,ATTRIBX3] :
       ( STATEX4 = EVENTX17
       &amp; isA(EVENTX17,r_0043_0009__have)
@@ -1093,7 +1093,7 @@ fof(id_43_A_Voice_of_America,axiom,
       &amp; catenative(EVENTX75) = CATENATIVEX71
       &amp; CATENATIVEX76 = EVENTX84
       &amp; isA(EVENTX84,r_0047_0008__aimed)
-      &amp; arg1(EVENTX84) = r_0047_0004__Operation_Medusa
+      &amp; arg1(EVENTX84) = r_0047_0004__Operation__r_0047_0005__Medusa
       &amp; r_0047_0009__at_dir(EVENTX84) = EVENTX78
       &amp; EVENTX78 = EVENTX83
       &amp; isA(EVENTX83,r_0047_0010__removing)
@@ -1106,7 +1106,7 @@ fof(id_43_A_Voice_of_America,axiom,
       &amp; nlyr1(ENTITYX1) = ENTITYX2
       &amp; isA(ENTITYX2,r_0043_0002__defense)
       &amp; attrib1(ENTITYX2) = ATTRIBX3
-      &amp; isA(ENTITYX5,r_0043_0005__14_personnel)
+      &amp; isA(ENTITYX5,r_0043_0005__14__r_0043_0008__personnel)
       &amp; nlyr2(ENTITYX5) = ENTITYX6
       &amp; isA(ENTITYX6,r_0043_0007__military)
       &amp; attrib1(ENTITYX6) = ATTRIBX7
@@ -1132,7 +1132,7 @@ fof(id_43_A_Voice_of_America,axiom,
       &amp; isA(EVENTX47,r_0045_0024__causing)
       &amp; arg0(EVENTX47) = ENTITYX45
       &amp; arg1(EVENTX47) = ENTITYX46
-      &amp; isA(ENTITYX45,r_0045_0022__enemy_action)
+      &amp; isA(ENTITYX45,r_0045_0022__enemy__r_0045_0023__action)
       &amp; isA(ENTITYX46,r_0045_0026__crash)
       &amp; isA(ENTITYX50,r_0046_0002__crash)
       &amp; isA(ENTITYX52,r_0046_0006__forces)
@@ -1177,7 +1177,7 @@ fof(id_43_A_Voice_of_America,axiom,
       &amp; arg0(EVENTX42) = ENTITYX32
       &amp; arg1(EVENTX42) = STATEX33
       &amp; conj2(CONJX49) = QUANTX44
-      &amp; isA(QUANTX44,r_0045_0019__quantificational__no)
+      &amp; isA(QUANTX44,r_0045_0019__quantificational__r_0045_0019__no)
       &amp; restriction(QUANTX44) = ENTITYX43
       &amp; isA(ENTITYX43,r_0045_0020__indication)
       &amp; r_0045_0021__of(ENTITYX43) = ENTITYX45

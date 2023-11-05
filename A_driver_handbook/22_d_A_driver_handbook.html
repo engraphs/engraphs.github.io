@@ -353,45 +353,45 @@ If no lanes are marked and there are four lanes or more in your direction , you 
 <pre>
 arc(r_0028_0001__If_cnt_cnd,r_0028_0006__and,restriction).
 arc(r_0028_0001__If_cnt_cnd,r_0028_0019__only,scope).
-arc(r_0028_0002__quantificational__no,r_0028_0003__lanes,restriction).
-arc(r_0028_0002__quantificational__no,r_0028_0004__are,scope).
+arc(r_0028_0002__quantificational__r_0028_0002__no,r_0028_0003__lanes,restriction).
+arc(r_0028_0002__quantificational__r_0028_0002__no,r_0028_0004__are,scope).
 arc(r_0028_0004__are,r_0028_0003__lanes,arg0).
 arc(r_0028_0004__are,r_0028_0005__marked,prd2).
-arc(r_0028_0006__and,r_0028_0002__quantificational__no,conj1).
+arc(r_0028_0006__and,r_0028_0002__quantificational__r_0028_0002__no,conj1).
 arc(r_0028_0006__and,r_0028_0008__are,conj2).
 arc(r_0028_0008__are,r_0028_0011__or,arg0).
 arc(r_0028_0008__are,r_0028_0015__direction,r_0028_0013__in_clr_loc).
-arc(r_0028_0011__or,r_0028_0009__four_lanes,conj1).
+arc(r_0028_0011__or,r_0028_0009__four__r_0028_0010__lanes,conj1).
 arc(r_0028_0011__or,z_0028_1012,conj2).
 arc(r_0028_0015__direction,r_0028_0014__your,genv).
 arc(r_0028_0018__may,r_0028_0020__drive,scope).
-arc(r_0028_0019__only,r_0028_0022__quantificational__either,scope).
+arc(r_0028_0019__only,r_0028_0022__quantificational__r_0028_0022__either,scope).
 arc(r_0028_0020__drive,r_0028_0014__your,arg0).
 arc(r_0028_0020__drive,z_0028_1025,r_0028_0021__in_loc).
-arc(r_0028_0022__quantificational__either,r_0028_0018__may,scope).
-arc(r_0028_0022__quantificational__either,z_0028_1025,restriction).
+arc(r_0028_0022__quantificational__r_0028_0022__either,r_0028_0018__may,scope).
+arc(r_0028_0022__quantificational__r_0028_0022__either,z_0028_1025,restriction).
 arc(r_0028_0027__closest,r_0028_0031__edge,r_0028_0028__to).
 arc(r_0028_0031__edge,r_0028_0030__right,attrib2).
 arc(r_0028_0031__edge,r_0028_0034__road,r_0028_0032__of).
 arc(z_0028_1012,r_0028_0012__more,attrib1).
-arc(z_0028_1025,r_0028_0025__two_lanes,r_0028_0023__of).
+arc(z_0028_1025,r_0028_0025__two__r_0028_0026__lanes,r_0028_0023__of).
 arc(z_0028_1025,r_0028_0027__closest,attrib3).
 
 </pre>
 <br>
 <pre>
-fof(id_28_A_driver_handbook,axiom,
+fof(id__28_A_driver_handbook,axiom,
     ? [HEARERX16,CONNX1,OPERATORX17,QUANTX19,OPERATORX26,EVENTX27,CONJX15,EVENTX14,QUANTX5,EVENTX7,ENTITYX18,ENTITYX20,ENTITYX22,ENTITYX24,ENTITYX8,ENTITYX13,ENTITYX9,ENTITYX10,ENTITYX4,ATTRIBX21,ATTRIBX23,ATTRIBX11,ATTRIBX6] :
       ( isA(ENTITYX8,r_0028_0011__or)
       &amp; conj1(ENTITYX8) = ENTITYX9
       &amp; conj2(ENTITYX8) = ENTITYX10
-      &amp; isA(ENTITYX9,r_0028_0009__four_lanes)
+      &amp; isA(ENTITYX9,r_0028_0009__four__r_0028_0010__lanes)
       &amp; isA(ENTITYX10,z_0028_1012)
       &amp; attrib1(ENTITYX10) = ATTRIBX11
       &amp; isA(ENTITYX13,r_0028_0015__direction)
       &amp; genv(ENTITYX13) = r_0028_0014__your
       &amp; HEARERX16 = r_0028_0014__your
-      &amp; isA(ENTITYX20,r_0028_0025__two_lanes)
+      &amp; isA(ENTITYX20,r_0028_0025__two__r_0028_0026__lanes)
       &amp; isA(ENTITYX22,r_0028_0031__edge)
       &amp; attrib2(ENTITYX22) = ATTRIBX23
       &amp; r_0028_0032__of(ENTITYX22) = ENTITYX24
@@ -405,7 +405,7 @@ fof(id_28_A_driver_handbook,axiom,
       &amp; restriction(CONNX1) = CONJX15
       &amp; isA(CONJX15,r_0028_0006__and)
       &amp; conj1(CONJX15) = QUANTX5
-      &amp; isA(QUANTX5,r_0028_0002__quantificational__no)
+      &amp; isA(QUANTX5,r_0028_0002__quantificational__r_0028_0002__no)
       &amp; restriction(QUANTX5) = ENTITYX4
       &amp; isA(ENTITYX4,r_0028_0003__lanes)
       &amp; scope(QUANTX5) = EVENTX7
@@ -421,7 +421,7 @@ fof(id_28_A_driver_handbook,axiom,
       &amp; scope(CONNX1) = OPERATORX17
       &amp; isA(OPERATORX17,r_0028_0019__only)
       &amp; scope(OPERATORX17) = QUANTX19
-      &amp; isA(QUANTX19,r_0028_0022__quantificational__either)
+      &amp; isA(QUANTX19,r_0028_0022__quantificational__r_0028_0022__either)
       &amp; restriction(QUANTX19) = ENTITYX18
       &amp; isA(ENTITYX18,z_0028_1025)
       &amp; r_0028_0023__of(ENTITYX18) = ENTITYX20

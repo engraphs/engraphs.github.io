@@ -189,46 +189,46 @@
 </svg>
 <br>
 <pre>
-arc(cnt_0048_1003,r_0048_0008__prepare,scope).
-arc(cnt_0048_1003,r_0048_0016__consulting,restriction).
 arc(r_0048_0007__shall,r_0048_0023__and,scope).
-arc(r_0048_0008__prepare,r_0048_0005__Prime_Minister,arg0).
+arc(r_0048_0008__prepare,r_0048_0005__Prime__r_0048_0006__Minister,arg0).
 arc(r_0048_0008__prepare,r_0048_0010__draft,arg1).
-arc(r_0048_0010__draft,r_0048_0013__Basic_Policy,r_0048_0011__of).
-arc(r_0048_0016__consulting,r_0048_0005__Prime_Minister,arg0).
-arc(r_0048_0016__consulting,r_0048_0018__Quality_of_Life_Council,arg1).
-arc(r_0048_0023__and,cnt_0048_1003,conj1).
+arc(r_0048_0010__draft,r_0048_0013__Basic__r_0048_0014__Policy,r_0048_0011__of).
+arc(r_0048_0016__consulting,r_0048_0005__Prime__r_0048_0006__Minister,arg0).
+arc(r_0048_0016__consulting,r_0048_0018__Quality__r_0048_0019__of_r_0048_0020__Life_r_0048_0021__Council,arg1).
 arc(r_0048_0023__and,r_0048_0024__seek,conj2).
-arc(r_0048_0024__seek,r_0048_0005__Prime_Minister,arg0).
-arc(r_0048_0024__seek,r_0048_0026__cabinet_decision,arg1).
+arc(r_0048_0023__and,r_0048_1003__cnt,conj1).
+arc(r_0048_0024__seek,r_0048_0005__Prime__r_0048_0006__Minister,arg0).
+arc(r_0048_0024__seek,r_0048_0026__cabinet__r_0048_0027__decision,arg1).
+arc(r_0048_1003__cnt,r_0048_0008__prepare,scope).
+arc(r_0048_1003__cnt,r_0048_0016__consulting,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_48_A_law_h15A119,axiom,
+fof(id__48_A_law_h15A119,axiom,
     ? [OPERATORX1,CONJX9,EVENTX8,CONNX4,EVENTX5,EVENTX6,ENTITYX7,ENTITYX2] :
       ( isA(ENTITYX2,r_0048_0010__draft)
-      &amp; r_0048_0011__of(ENTITYX2) = r_0048_0013__Basic_Policy
-      &amp; isA(ENTITYX7,r_0048_0026__cabinet_decision)
-      &amp; isA(r_0048_0005__Prime_Minister,r_0048_0005__Prime_Minister)
-      &amp; isA(r_0048_0013__Basic_Policy,r_0048_0013__Basic_Policy)
-      &amp; isA(r_0048_0018__Quality_of_Life_Council,r_0048_0018__Quality_of_Life_Council)
+      &amp; r_0048_0011__of(ENTITYX2) = r_0048_0013__Basic__r_0048_0014__Policy
+      &amp; isA(ENTITYX7,r_0048_0026__cabinet__r_0048_0027__decision)
+      &amp; isA(r_0048_0005__Prime__r_0048_0006__Minister,r_0048_0005__Prime_r_0048_0006__Minister)
+      &amp; isA(r_0048_0013__Basic__r_0048_0014__Policy,r_0048_0013__Basic_r_0048_0014__Policy)
+      &amp; isA(r_0048_0018__Quality__r_0048_0019__of_r_0048_0020__Life_r_0048_0021__Council,r_0048_0018__Quality_r_0048_0019__of_r_0048_0020__Life_r_0048_0021__Council)
       &amp; isA(OPERATORX1,r_0048_0007__shall)
       &amp; scope(OPERATORX1) = CONJX9
       &amp; isA(CONJX9,r_0048_0023__and)
       &amp; conj1(CONJX9) = CONNX4
-      &amp; isA(CONNX4,cnt_0048_1003)
+      &amp; isA(CONNX4,r_0048_1003__cnt)
       &amp; scope(CONNX4) = EVENTX6
       &amp; isA(EVENTX6,r_0048_0008__prepare)
-      &amp; arg0(EVENTX6) = r_0048_0005__Prime_Minister
+      &amp; arg0(EVENTX6) = r_0048_0005__Prime__r_0048_0006__Minister
       &amp; arg1(EVENTX6) = ENTITYX2
       &amp; restriction(CONNX4) = EVENTX5
       &amp; isA(EVENTX5,r_0048_0016__consulting)
-      &amp; arg0(EVENTX5) = r_0048_0005__Prime_Minister
-      &amp; arg1(EVENTX5) = r_0048_0018__Quality_of_Life_Council
+      &amp; arg0(EVENTX5) = r_0048_0005__Prime__r_0048_0006__Minister
+      &amp; arg1(EVENTX5) = r_0048_0018__Quality__r_0048_0019__of_r_0048_0020__Life_r_0048_0021__Council
       &amp; conj2(CONJX9) = EVENTX8
       &amp; isA(EVENTX8,r_0048_0024__seek)
-      &amp; arg0(EVENTX8) = r_0048_0005__Prime_Minister
+      &amp; arg0(EVENTX8) = r_0048_0005__Prime__r_0048_0006__Minister
       &amp; arg1(EVENTX8) = ENTITYX7 ) ).
 
 

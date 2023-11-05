@@ -239,10 +239,9 @@
 </svg>
 <br>
 <pre>
-arc(question_0023_1005,r_0023_0008__is,scope).
 arc(r_0023_0004__question,r_0023_0003__next,attrib2).
-arc(r_0023_0005__is,question_0023_1005,prd2).
 arc(r_0023_0005__is,r_0023_0004__question,arg0).
+arc(r_0023_0005__is,r_0023_1005__question,prd2).
 arc(r_0023_0008__is,r_0023_0011__justification,arg0).
 arc(r_0023_0011__justification,r_0023_0010__reasonable,attrib2).
 arc(r_0023_0011__justification,r_0023_0013__taking,r_0023_0012__for).
@@ -254,14 +253,15 @@ arc(r_0023_0020__effect,r_0023_0019__extreme,attrib3).
 arc(r_0023_0020__effect,r_0023_0023__fundamentals,r_0023_0021__upon).
 arc(r_0023_0023__fundamentals,r_0023_0026__democracy,r_0023_0024__of).
 arc(r_0023_0026__democracy,r_0023_0025__our,genv).
+arc(r_0023_1005__question,r_0023_0008__is,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_23_A_uksc_judgment,axiom,
+fof(id__23_A_uksc_judgment,axiom,
     ? [STATEX3,EVENTX8,EVENTX20,OPERATORX5,EVENTX19,EVENTX18,EVENTX17,ENTITYX1,ENTITYX6,ENTITYX11,ENTITYX12,ENTITYX15,ENTITYX16,ATTRIBX7,ATTRIBX13,ATTRIBX14,ATTRIBX2] :
       ( STATEX3 = OPERATORX5
-      &amp; isA(OPERATORX5,question_0023_1005)
+      &amp; isA(OPERATORX5,r_0023_1005__question)
       &amp; scope(OPERATORX5) = EVENTX19
       &amp; isA(EVENTX19,r_0023_0008__is)
       &amp; arg0(EVENTX19) = ENTITYX6

@@ -369,22 +369,21 @@ If it is assumed that in practise the maximum voltage developed by the cell at 5
 </svg>
 <br>
 <pre>
-arc(imperative_0036_1018,r_0036_0025__see,scope).
 arc(r_0036_0001__If_cnt_cnd,r_0036_0003__is,restriction).
 arc(r_0036_0001__If_cnt_cnd,r_0036_0029__then,scope).
 arc(r_0036_0003__is,r_0036_0004__assumed,catenative).
 arc(r_0036_0004__assumed,r_0036_0019__will,arg1).
 arc(r_0036_0010__voltage,r_0036_0009__maximum,attrib2).
 arc(r_0036_0011__developed,r_0036_0010__voltage,arg1).
-arc(r_0036_0011__developed,r_0036_0014__cell,arg0_by_lgs).
-arc(r_0036_0011__developed,r_0036_0016__500__deg_,r_0036_0015__at_mnr).
+arc(r_0036_0011__developed,r_0036_0014__cell,arg0__r_0036_0012__by_lgs).
+arc(r_0036_0011__developed,r_0036_0016__500__r_0036_0017___deg_,r_0036_0015__at_mnr).
 arc(r_0036_0019__will,r_0036_0020__be,scope).
 arc(r_0036_0020__be,r_0036_0007__practise,r_0036_0006__in_mod).
 arc(r_0036_0020__be,r_0036_0010__voltage,arg0).
-arc(r_0036_0020__be,r_0036_0022__300_mv,prd2).
-arc(r_0036_0022__300_mv,imperative_0036_1018,prn5).
-arc(r_0036_0022__300_mv,r_0036_0021__around,quality1).
-arc(r_0036_0025__see,r_0036_0026__fig_1,arg1).
+arc(r_0036_0020__be,r_0036_0022__300__r_0036_0023__mv,prd2).
+arc(r_0036_0022__300__r_0036_0023__mv,r_0036_0021__around,quality1).
+arc(r_0036_0022__300__r_0036_0023__mv,r_0036_1018__imperative,prn5).
+arc(r_0036_0025__see,r_0036_0026__fig__r_0036_0027__1,arg1).
 arc(r_0036_0029__then,r_0036_0042__will,scope).
 arc(r_0036_0032__case,r_0036_0035__instrument,r_0036_0033__of).
 arc(r_0036_0035__instrument,r_0036_0039__resistance,r_0036_0036__with).
@@ -392,13 +391,14 @@ arc(r_0036_0039__resistance,r_0036_0038__lower,attrib2).
 arc(r_0036_0042__will,r_0036_0043__be,scope).
 arc(r_0036_0043__be,r_0036_0032__case,r_0036_0030__in_rst).
 arc(r_0036_0043__be,r_0036_0041__current,arg0).
-arc(r_0036_0043__be,r_0036_0046__3_coulombs,prd2).
-arc(r_0036_0046__3_coulombs,r_0036_0051__sec,r_0036_0050___sol_).
+arc(r_0036_0043__be,r_0036_0046__3__r_0036_0049__coulombs,prd2).
+arc(r_0036_0046__3__r_0036_0049__coulombs,r_0036_0051__sec,r_0036_0050___sol_).
+arc(r_0036_1018__imperative,r_0036_0025__see,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_36_A_lob_J01,axiom,
+fof(id__36_A_lob_J01,axiom,
     ? [CATENATIVEX3,STATEX5,EVENTX14,CONNX1,OPERATORX25,OPERATORX33,EVENTX34,EVENTX24,EVENTX23,OPERATORX21,EVENTX22,OPERATORX18,EVENTX20,EVENTX11,ENTITYX26,ENTITYX30,ENTITYX31,ENTITYX32,ENTITYX27,ENTITYX28,ENTITYX6,ENTITYX7,ENTITYX12,ENTITYX19,ENTITYX9,ENTITYX10,ATTRIBX29,ATTRIBX8,QUALITYX13] :
       ( CATENATIVEX3 = EVENTX23
       &amp; isA(EVENTX23,r_0036_0004__assumed)
@@ -411,23 +411,23 @@ fof(id_36_A_lob_J01,axiom,
       &amp; arg0(EVENTX22) = ENTITYX7
       &amp; prd2(EVENTX22) = ENTITYX12
       &amp; EVENTX14 = OPERATORX18
-      &amp; isA(OPERATORX18,imperative_0036_1018)
+      &amp; isA(OPERATORX18,r_0036_1018__imperative)
       &amp; scope(OPERATORX18) = EVENTX20
       &amp; isA(EVENTX20,r_0036_0025__see)
       &amp; arg1(EVENTX20) = ENTITYX19
       &amp; isA(ENTITYX6,r_0036_0007__practise)
       &amp; isA(EVENTX11,r_0036_0011__developed)
-      &amp; arg0_by_lgs(EVENTX11) = ENTITYX9
+      &amp; arg0__r_0036_0012__by_lgs(EVENTX11) = ENTITYX9
       &amp; arg1(EVENTX11) = ENTITYX7
       &amp; r_0036_0015__at_mnr(EVENTX11) = ENTITYX10
       &amp; isA(ENTITYX7,r_0036_0010__voltage)
       &amp; attrib2(ENTITYX7) = ATTRIBX8
       &amp; isA(ENTITYX9,r_0036_0014__cell)
-      &amp; isA(ENTITYX10,r_0036_0016__500__deg_)
-      &amp; isA(ENTITYX12,r_0036_0022__300_mv)
+      &amp; isA(ENTITYX10,r_0036_0016__500__r_0036_0017___deg_)
+      &amp; isA(ENTITYX12,r_0036_0022__300__r_0036_0023__mv)
       &amp; quality1(ENTITYX12) = QUALITYX13
       &amp; prn5(ENTITYX12) = EVENTX14
-      &amp; isA(ENTITYX19,r_0036_0026__fig_1)
+      &amp; isA(ENTITYX19,r_0036_0026__fig__r_0036_0027__1)
       &amp; isA(ENTITYX26,r_0036_0032__case)
       &amp; r_0036_0033__of(ENTITYX26) = ENTITYX27
       &amp; isA(ENTITYX27,r_0036_0035__instrument)
@@ -435,7 +435,7 @@ fof(id_36_A_lob_J01,axiom,
       &amp; isA(ENTITYX28,r_0036_0039__resistance)
       &amp; attrib2(ENTITYX28) = ATTRIBX29
       &amp; isA(ENTITYX30,r_0036_0041__current)
-      &amp; isA(ENTITYX31,r_0036_0046__3_coulombs)
+      &amp; isA(ENTITYX31,r_0036_0046__3__r_0036_0049__coulombs)
       &amp; r_0036_0050___sol_(ENTITYX31) = ENTITYX32
       &amp; isA(ENTITYX32,r_0036_0051__sec)
       &amp; isA(ATTRIBX8,r_0036_0009__maximum)

@@ -298,10 +298,8 @@ The drapery consisted mainly of children 's bootees and umbrellas ; and on ordin
 </svg>
 <br>
 <pre>
-arc(cnt_0066_1012,r_0066_0020__hang,scope).
-arc(cnt_0066_1012,r_0066_0025__saying,restriction).
 arc(r_0066_0003__consisted,r_0066_0002__drapery,arg0).
-arc(r_0066_0003__consisted,r_0066_0009__and,r_0066_0004__mainly_of_clr).
+arc(r_0066_0003__consisted,r_0066_0009__and,r_0066_0004__mainly__r_0066_0005__of_clr).
 arc(r_0066_0009__and,r_0066_0006__children,genv).
 arc(r_0066_0009__and,r_0066_0008__bootees,conj1).
 arc(r_0066_0009__and,r_0066_0010__umbrellas,conj2).
@@ -312,20 +310,22 @@ arc(r_0066_0018__used,z_0066_1027,scope).
 arc(r_0066_0020__hang,r_0066_0017__notice,arg0).
 arc(r_0066_0020__hang,r_0066_0023__window,r_0066_0021__in_loc).
 arc(r_0066_0025__saying,r_0066_0017__notice,arg0).
-arc(r_0066_0025__saying,utterance_0066_1016,arg1).
+arc(r_0066_0025__saying,r_0066_1016__utterance,arg1).
 arc(r_0066_0028__Re_covered,r_0066_0027__Umbrellas,arg1).
-arc(utterance_0066_1016,z_0066_1021,part1).
+arc(r_0066_1012__cnt,r_0066_0020__hang,scope).
+arc(r_0066_1012__cnt,r_0066_0025__saying,restriction).
+arc(r_0066_1016__utterance,z_0066_1021,part1).
 arc(z_0066_1021,r_0066_0028__Re_covered,catenative).
-arc(z_0066_1027,cnt_0066_1012,catenative).
 arc(z_0066_1027,r_0066_0015__days,r_0066_0013__on_tmp).
+arc(z_0066_1027,r_0066_1012__cnt,catenative).
 
 </pre>
 <br>
 <pre>
-fof(id_66_A_JOYCE_1914,axiom,
+fof(id__66_A_JOYCE_1914,axiom,
     ? [STATEX10,STATEX14,CATENATIVEX18,CONJX29,OPERATORX26,EVENTX28,CONNX13,EVENTX24,CONJX23,EVENTX22,EVENTX20,EVENTX25,EVENTX6,ENTITYX7,ENTITYX9,ENTITYX11,ENTITYX17,ENTITYX1,ENTITYX2,ENTITYX3,ENTITYX4,ENTITYX5,ATTRIBX8] :
       ( STATEX10 = CONNX13
-      &amp; isA(CONNX13,cnt_0066_1012)
+      &amp; isA(CONNX13,r_0066_1012__cnt)
       &amp; scope(CONNX13) = EVENTX25
       &amp; isA(EVENTX25,r_0066_0020__hang)
       &amp; arg0(EVENTX25) = ENTITYX9
@@ -335,7 +335,7 @@ fof(id_66_A_JOYCE_1914,axiom,
       &amp; arg0(EVENTX24) = ENTITYX9
       &amp; arg1(EVENTX24) = STATEX14
       &amp; STATEX14 = CONJX23
-      &amp; isA(CONJX23,utterance_0066_1016)
+      &amp; isA(CONJX23,r_0066_1016__utterance)
       &amp; part1(CONJX23) = EVENTX22
       &amp; isA(EVENTX22,z_0066_1021)
       &amp; catenative(EVENTX22) = CATENATIVEX18
@@ -360,7 +360,7 @@ fof(id_66_A_JOYCE_1914,axiom,
       &amp; conj1(CONJX29) = EVENTX6
       &amp; isA(EVENTX6,r_0066_0003__consisted)
       &amp; arg0(EVENTX6) = ENTITYX1
-      &amp; r_0066_0004__mainly_of_clr(EVENTX6) = ENTITYX2
+      &amp; r_0066_0004__mainly__r_0066_0005__of_clr(EVENTX6) = ENTITYX2
       &amp; conj2(CONJX29) = OPERATORX26
       &amp; isA(OPERATORX26,r_0066_0018__used)
       &amp; scope(OPERATORX26) = EVENTX28

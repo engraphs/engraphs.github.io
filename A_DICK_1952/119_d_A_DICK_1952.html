@@ -179,24 +179,24 @@
 </svg>
 <br>
 <pre>
-arc(imperative_0154_1012,r_0155_0002__Let,scope).
 arc(r_0154_0003___apos_ll,r_0154_0004__know,scope).
 arc(r_0154_0004__know,r_0154_0002__We,arg0).
 arc(r_0154_0004__know,r_0154_0007__morning,r_0154_0005__in_tmp).
 arc(r_0154_0011__said,r_0154_0010__Fomar,arg0).
-arc(r_0154_0011__said,utterance_0154_1003,arg1).
+arc(r_0154_0011__said,r_0154_1003__utterance,arg1).
+arc(r_0154_1003__utterance,r_0154_0003___apos_ll,part1).
+arc(r_0154_1012__imperative,r_0155_0002__Let,scope).
 arc(r_0155_0002__Let,r_0154_0002__We,arg1).
 arc(r_0155_0002__Let,r_0155_0004__get,prd).
 arc(r_0155_0004__get,r_0155_0006__sleep,arg1).
-arc(utterance_0154_1003,r_0154_0003___apos_ll,part1).
 
 </pre>
 <br>
 <pre>
-fof(id_154_A_DICK_1952__155_A_DICK_1952,axiom,
+fof(id__154_A_DICK_1952__155_A_DICK_1952,axiom,
     ? [STATEX1,STATEX14,TRESPASSERSX13,OPERATORX12,EVENTX19,EVENTX18,EVENTX8,CONJX7,OPERATORX5,EVENTX6,ENTITYX17,ENTITYX4] :
       ( STATEX1 = CONJX7
-      &amp; isA(CONJX7,utterance_0154_1003)
+      &amp; isA(CONJX7,r_0154_1003__utterance)
       &amp; part1(CONJX7) = OPERATORX5
       &amp; isA(OPERATORX5,r_0154_0003___apos_ll)
       &amp; scope(OPERATORX5) = EVENTX6
@@ -212,7 +212,7 @@ fof(id_154_A_DICK_1952__155_A_DICK_1952,axiom,
       &amp; isA(EVENTX8,r_0154_0011__said)
       &amp; arg1(EVENTX8) = STATEX1
       &amp; arg0(EVENTX8) = r_0154_0010__Fomar
-      &amp; isA(OPERATORX12,imperative_0154_1012)
+      &amp; isA(OPERATORX12,r_0154_1012__imperative)
       &amp; scope(OPERATORX12) = EVENTX19
       &amp; isA(EVENTX19,r_0155_0002__Let)
       &amp; arg1(EVENTX19) = TRESPASSERSX13

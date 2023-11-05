@@ -315,21 +315,21 @@
 arc(r_0079_0004__When_tmp,r_0079_0005__handling,restriction).
 arc(r_0079_0004__When_tmp,r_0079_0015__shall,scope).
 arc(r_0079_0005__handling,r_0079_0007__information,arg1).
-arc(r_0079_0005__handling,r_0079_0010__business_operator,arg0).
+arc(r_0079_0005__handling,r_0079_0010__business__r_0079_0011__operator,arg0).
 arc(r_0079_0007__information,r_0079_0006__personal,attrib1).
-arc(r_0079_0012__handling,r_0079_0010__business_operator,arg0).
+arc(r_0079_0012__handling,r_0079_0010__business__r_0079_0011__operator,arg0).
 arc(r_0079_0012__handling,r_0079_0014__information,arg1).
 arc(r_0079_0014__information,r_0079_0013__personal,attrib1).
 arc(r_0079_0015__shall,r_0079_0016__specify,scope).
-arc(r_0079_0016__specify,r_0079_0010__business_operator,arg0).
+arc(r_0079_0016__specify,r_0079_0010__business__r_0079_0011__operator,arg0).
 arc(r_0079_0016__specify,r_0079_0018__purpose,arg1).
 arc(r_0079_0016__specify,r_0079_0036__much,mnr8).
 arc(r_0079_0018__purpose,r_0079_0020__utilization,r_0079_0019__of).
 arc(r_0079_0020__utilization,r_0079_0023__information,r_0079_0021__of).
 arc(r_0079_0023__information,r_0079_0022__personal,attrib1).
-arc(r_0079_0026__referred_to,r_0079_0018__purpose,arg1).
-arc(r_0079_0026__referred_to,r_0079_0025__hereinafter,tmp3).
-arc(r_0079_0026__referred_to,r_0079_0030__Purpose,r_0079_0028__as_prd).
+arc(r_0079_0026__referred__r_0079_0027__to,r_0079_0018__purpose,arg1).
+arc(r_0079_0026__referred__r_0079_0027__to,r_0079_0025__hereinafter,tmp3).
+arc(r_0079_0026__referred__r_0079_0027__to,r_0079_0030__Purpose,r_0079_0028__as_prd).
 arc(r_0079_0030__Purpose,r_0079_0032__Utilization,r_0079_0031__of).
 arc(r_0079_0036__much,r_0079_0035__as,quality1).
 arc(r_0079_0036__much,r_0079_0038__possible,r_0079_0037__as).
@@ -337,15 +337,15 @@ arc(r_0079_0036__much,r_0079_0038__possible,r_0079_0037__as).
 </pre>
 <br>
 <pre>
-fof(id_79_A_law_h15A119,axiom,
+fof(id__79_A_law_h15A119,axiom,
     ? [CONNX17,OPERATORX21,EVENTX22,EVENTX20,EVENTX13,EVENTX4,ENTITYX1,ENTITYX5,ENTITYX18,ENTITYX6,ENTITYX11,ENTITYX12,ENTITYX7,ENTITYX2,ATTRIBX19,ATTRIBX16,ATTRIBX8,ATTRIBX3,QUALITYX14,QUALITYX15,QUALITYX10] :
       ( isA(EVENTX4,r_0079_0012__handling)
       &amp; arg0(EVENTX4) = ENTITYX1
       &amp; arg1(EVENTX4) = ENTITYX2
-      &amp; isA(ENTITYX1,r_0079_0010__business_operator)
+      &amp; isA(ENTITYX1,r_0079_0010__business__r_0079_0011__operator)
       &amp; isA(ENTITYX2,r_0079_0014__information)
       &amp; attrib1(ENTITYX2) = ATTRIBX3
-      &amp; isA(EVENTX13,r_0079_0026__referred_to)
+      &amp; isA(EVENTX13,r_0079_0026__referred__r_0079_0027__to)
       &amp; arg1(EVENTX13) = ENTITYX5
       &amp; tmp3(EVENTX13) = QUALITYX10
       &amp; r_0079_0028__as_prd(EVENTX13) = ENTITYX11

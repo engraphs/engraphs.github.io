@@ -459,10 +459,6 @@ She licked her finger again to carefully plop a wet dot on to the map saying , &
 </svg>
 <br>
 <pre>
-arc(cnt_0076_1021,cnt_0076_1027,restriction).
-arc(cnt_0076_1021,r_0078_0002__licked,scope).
-arc(cnt_0076_1027,r_0078_0008__plop,scope).
-arc(cnt_0076_1027,r_0078_0015__saying,restriction).
 arc(r_0076_0002__licked,r_0076_0001__She,arg0).
 arc(r_0076_0002__licked,r_0076_0004__finger,arg1).
 arc(r_0076_0004__finger,r_0076_0001__She,genv).
@@ -472,10 +468,16 @@ arc(r_0076_0010__drew,r_0076_0001__She,arg0).
 arc(r_0076_0010__drew,r_0076_0009__concentration,r_0076_0007__with_mnr).
 arc(r_0076_0010__drew,r_0076_0012__outline,arg1).
 arc(r_0076_0010__drew,r_0076_0015__tabletop,r_0076_0013__on_to_loc).
+arc(r_0076_1012__utterance,r_0077_0003__is,part1).
+arc(r_0076_1021__cnt,r_0076_1027__cnt,restriction).
+arc(r_0076_1021__cnt,r_0078_0002__licked,scope).
+arc(r_0076_1027__cnt,r_0078_0008__plop,scope).
+arc(r_0076_1027__cnt,r_0078_0015__saying,restriction).
+arc(r_0076_1031__utterance,r_0078_0020__come,part1).
 arc(r_0077_0003__is,r_0077_0002__This,arg0).
 arc(r_0077_0003__is,r_0077_0004__Uzbekistan,prd2).
 arc(r_0077_0008__said,r_0076_0001__She,arg0).
-arc(r_0077_0008__said,utterance_0076_1012,arg1).
+arc(r_0077_0008__said,r_0076_1012__utterance,arg1).
 arc(r_0078_0002__licked,r_0076_0001__She,arg0).
 arc(r_0078_0002__licked,r_0078_0004__finger,arg1).
 arc(r_0078_0002__licked,r_0078_0005__again,tmp4).
@@ -485,27 +487,25 @@ arc(r_0078_0008__plop,r_0078_0007__carefully,mnr2).
 arc(r_0078_0008__plop,r_0078_0011__dot,arg1).
 arc(r_0078_0008__plop,r_0078_0014__map,r_0078_0012__on_to_loc).
 arc(r_0078_0011__dot,r_0078_0010__wet,attrib2).
+arc(r_0078_0015__saying,r_0076_1031__utterance,arg1).
 arc(r_0078_0015__saying,r_0078_0011__dot,arg0).
-arc(r_0078_0015__saying,utterance_0076_1031,arg1).
 arc(r_0078_0020__come,r_0078_0019__I,arg0).
 arc(r_0078_0020__come,r_0078_0022__here,r_0078_0021__from_dir).
 arc(r_0078_0022__here,r_0078_0024__Tashkent,prn3).
-arc(utterance_0076_1012,r_0077_0003__is,part1).
-arc(utterance_0076_1031,r_0078_0020__come,part1).
 
 </pre>
 <br>
 <pre>
-fof(id_76_A_LooseChange__77_A_LooseChange__78_A_LooseChange,axiom,
+fof(id__76_A_LooseChange__77_A_LooseChange__78_A_LooseChange,axiom,
     ? [STATEX10,STATEX29,LAYLORX2,LAYLORX15,LAYLORX17,LAYLORX19,CONNX22,CONNX28,EVENTX35,CONJX34,EVENTX33,EVENTX36,EVENTX37,EVENTX16,CONJX14,EVENTX13,OPERATORX4,EVENTX9,EVENTX3,ENTITYX18,ENTITYX24,ENTITYX26,ENTITYX5,ENTITYX7,ENTITYX8,ENTITYX1,ATTRIBX25,ATTRIBX6,QUALITYX20,QUALITYX23,QUALITYX32] :
       ( STATEX10 = CONJX14
-      &amp; isA(CONJX14,utterance_0076_1012)
+      &amp; isA(CONJX14,r_0076_1012__utterance)
       &amp; part1(CONJX14) = EVENTX13
       &amp; isA(EVENTX13,r_0077_0003__is)
       &amp; arg0(EVENTX13) = r_0077_0002__This
       &amp; prd2(EVENTX13) = r_0077_0004__Uzbekistan
       &amp; STATEX29 = CONJX34
-      &amp; isA(CONJX34,utterance_0076_1031)
+      &amp; isA(CONJX34,r_0076_1031__utterance)
       &amp; part1(CONJX34) = EVENTX33
       &amp; isA(EVENTX33,r_0078_0020__come)
       &amp; arg0(EVENTX33) = r_0078_0019__I
@@ -545,14 +545,14 @@ fof(id_76_A_LooseChange__77_A_LooseChange__78_A_LooseChange,axiom,
       &amp; isA(EVENTX16,r_0077_0008__said)
       &amp; arg1(EVENTX16) = STATEX10
       &amp; arg0(EVENTX16) = LAYLORX15
-      &amp; isA(CONNX22,cnt_0076_1021)
+      &amp; isA(CONNX22,r_0076_1021__cnt)
       &amp; scope(CONNX22) = EVENTX37
       &amp; isA(EVENTX37,r_0078_0002__licked)
       &amp; arg0(EVENTX37) = LAYLORX17
       &amp; arg1(EVENTX37) = ENTITYX18
       &amp; tmp4(EVENTX37) = QUALITYX20
       &amp; restriction(CONNX22) = CONNX28
-      &amp; isA(CONNX28,cnt_0076_1027)
+      &amp; isA(CONNX28,r_0076_1027__cnt)
       &amp; scope(CONNX28) = EVENTX36
       &amp; isA(EVENTX36,r_0078_0008__plop)
       &amp; arg0(EVENTX36) = ENTITYX18

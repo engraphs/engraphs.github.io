@@ -247,8 +247,8 @@
 </svg>
 <br>
 <pre>
-arc(r_0012_0005__term,r_0012_0008__business_operator,prn4).
-arc(r_0012_0010__handling,r_0012_0008__business_operator,arg0).
+arc(r_0012_0005__term,r_0012_0008__business__r_0012_0009__operator,prn4).
+arc(r_0012_0010__handling,r_0012_0008__business__r_0012_0009__operator,arg0).
 arc(r_0012_0010__handling,r_0012_0012__information,arg1).
 arc(r_0012_0012__information,r_0012_0011__personal,attrib1).
 arc(r_0012_0014__as_mod,r_0012_0015__used,restriction).
@@ -256,25 +256,25 @@ arc(r_0012_0014__as_mod,r_0012_0019__shall,scope).
 arc(r_0012_0015__used,r_0012_0018__Act,r_0012_0016__in_loc).
 arc(r_0012_0019__shall,r_0012_0020__mean,scope).
 arc(r_0012_0020__mean,r_0012_0005__term,arg0).
-arc(r_0012_0020__mean,r_0012_0022__business_operator,arg1).
-arc(r_0012_0024__using,r_0012_0022__business_operator,arg0).
-arc(r_0012_0024__using,r_0012_0027__information_database,arg1).
+arc(r_0012_0020__mean,r_0012_0022__business__r_0012_0023__operator,arg1).
+arc(r_0012_0024__using,r_0012_0022__business__r_0012_0023__operator,arg0).
+arc(r_0012_0024__using,r_0012_0027__information__r_0012_0028__database,arg1).
 arc(r_0012_0024__using,r_0012_0033__business,r_0012_0031__for_cnt).
-arc(r_0012_0027__information_database,r_0012_0026__personal,attrib2).
-arc(r_0012_0027__information_database,r_0012_0030__etc.,quality6).
-arc(r_0012_0033__business,r_0012_0022__business_operator,genv).
+arc(r_0012_0027__information__r_0012_0028__database,r_0012_0026__personal,attrib2).
+arc(r_0012_0027__information__r_0012_0028__database,r_0012_0030__etc_,quality6).
+arc(r_0012_0033__business,r_0012_0022__business__r_0012_0023__operator,genv).
 
 </pre>
 <br>
 <pre>
-fof(id_12_A_law_h15A119,axiom,
+fof(id__12_A_law_h15A119,axiom,
     ? [OPERATORX17,CONNX6,OPERATORX19,EVENTX20,EVENTX18,EVENTX11,EVENTX5,ENTITYX1,OPERATORX12,ENTITYX13,ENTITYX16,ENTITYX10,ENTITYX2,ENTITYX3,ATTRIBX14,ATTRIBX4,QUALITYX15] :
       ( isA(ENTITYX1,r_0012_0005__term)
       &amp; prn4(ENTITYX1) = ENTITYX2
       &amp; isA(EVENTX5,r_0012_0010__handling)
       &amp; arg0(EVENTX5) = ENTITYX2
       &amp; arg1(EVENTX5) = ENTITYX3
-      &amp; isA(ENTITYX2,r_0012_0008__business_operator)
+      &amp; isA(ENTITYX2,r_0012_0008__business__r_0012_0009__operator)
       &amp; isA(ENTITYX3,r_0012_0012__information)
       &amp; attrib1(ENTITYX3) = ATTRIBX4
       &amp; isA(ENTITYX10,r_0012_0018__Act)
@@ -282,8 +282,8 @@ fof(id_12_A_law_h15A119,axiom,
       &amp; arg0(EVENTX18) = OPERATORX12
       &amp; arg1(EVENTX18) = ENTITYX13
       &amp; r_0012_0031__for_cnt(EVENTX18) = ENTITYX16
-      &amp; isA(OPERATORX12,r_0012_0022__business_operator)
-      &amp; isA(ENTITYX13,r_0012_0027__information_database)
+      &amp; isA(OPERATORX12,r_0012_0022__business__r_0012_0023__operator)
+      &amp; isA(ENTITYX13,r_0012_0027__information__r_0012_0028__database)
       &amp; attrib2(ENTITYX13) = ATTRIBX14
       &amp; quality6(ENTITYX13) = QUALITYX15
       &amp; isA(ENTITYX16,r_0012_0033__business)
@@ -291,7 +291,7 @@ fof(id_12_A_law_h15A119,axiom,
       &amp; OPERATORX17 = OPERATORX12
       &amp; isA(ATTRIBX4,r_0012_0011__personal)
       &amp; isA(ATTRIBX14,r_0012_0026__personal)
-      &amp; isA(QUALITYX15,r_0012_0030__etc.)
+      &amp; isA(QUALITYX15,r_0012_0030__etc_)
       &amp; isA(CONNX6,r_0012_0014__as_mod)
       &amp; restriction(CONNX6) = EVENTX11
       &amp; isA(EVENTX11,r_0012_0015__used)

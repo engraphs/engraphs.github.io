@@ -687,24 +687,24 @@ This gives a puzzle element to the game in addition to the action .
 </svg>
 <br>
 <pre>
-arc(cnt_0002_1005,r_0002_0004__exploring,scope).
-arc(cnt_0002_1005,r_0002_0011__quantificational__each,restriction).
-arc(cnt_0002_1031,r_0003_0016__use,scope).
-arc(cnt_0002_1031,r_0003_0019__defend,restriction).
-arc(cnt_0002_1044,r_0004_0015__or,scope).
-arc(cnt_0002_1044,r_0004_0020__open,restriction).
 arc(r_0002_0002___apos_ll,r_0002_0003__be,scope).
-arc(r_0002_0003__be,cnt_0002_1005,catenative).
+arc(r_0002_0003__be,r_0002_1005__cnt,catenative).
 arc(r_0002_0004__exploring,r_0002_0001__You,arg0).
 arc(r_0002_0004__exploring,r_0002_0006__series,arg1).
 arc(r_0002_0006__series,r_0002_0008__levels,r_0002_0007__of).
-arc(r_0002_0011__quantificational__each,r_0002_0013__trying,scope).
-arc(r_0002_0011__quantificational__each,z_0002_1011,restriction).
+arc(r_0002_0011__quantificational__r_0002_0011__each,r_0002_0013__trying,scope).
+arc(r_0002_0011__quantificational__r_0002_0011__each,z_0002_1011,restriction).
 arc(r_0002_0013__trying,r_0002_0015__find,catenative).
 arc(r_0002_0013__trying,z_0002_1011,r_0002_0010__in_rst).
 arc(r_0002_0015__find,r_0002_0001__You,arg0).
 arc(r_0002_0015__find,r_0002_0017__way,arg1).
 arc(r_0002_0017__way,r_0002_0020__exit,r_0002_0018__to).
+arc(r_0002_1005__cnt,r_0002_0004__exploring,scope).
+arc(r_0002_1005__cnt,r_0002_0011__quantificational__r_0002_0011__each,restriction).
+arc(r_0002_1031__cnt,r_0003_0016__use,scope).
+arc(r_0002_1031__cnt,r_0003_0019__defend,restriction).
+arc(r_0002_1044__cnt,r_0004_0015__or,scope).
+arc(r_0002_1044__cnt,r_0004_0020__open,restriction).
 arc(r_0003_0002__assortment,r_0003_0004__monsters,r_0003_0003__of).
 arc(r_0003_0005__will,r_0003_0006__try,scope).
 arc(r_0003_0006__try,r_0003_0008__stop,catenative).
@@ -713,7 +713,7 @@ arc(r_0003_0008__stop,r_0003_0002__assortment,arg0).
 arc(r_0003_0011__and,r_0003_0005__will,conj1).
 arc(r_0003_0011__and,r_0003_0013___apos_ll,conj2).
 arc(r_0003_0013___apos_ll,r_0003_0014__need,scope).
-arc(r_0003_0014__need,cnt_0002_1031,catenative).
+arc(r_0003_0014__need,r_0002_1031__cnt,catenative).
 arc(r_0003_0016__use,r_0002_0001__You,arg0).
 arc(r_0003_0016__use,r_0003_0017__weapons,arg1).
 arc(r_0003_0019__defend,r_0002_0001__You,arg0).
@@ -722,7 +722,7 @@ arc(r_0004_0001__Portions,r_0002_0008__levels,r_0004_0002__of).
 arc(r_0004_0005__may,r_0004_0006__be,scope).
 arc(r_0004_0006__be,r_0004_0001__Portions,arg0).
 arc(r_0004_0006__be,r_0004_0007__inaccessible,prd2).
-arc(r_0004_0008__until_tmp,cnt_0002_1044,restriction).
+arc(r_0004_0008__until_tmp,r_0002_1044__cnt,restriction).
 arc(r_0004_0008__until_tmp,r_0004_0005__may,scope).
 arc(r_0004_0010__find,r_0002_0001__You,arg0).
 arc(r_0004_0010__find,r_0004_0013__key,arg1).
@@ -735,7 +735,7 @@ arc(r_0004_0020__open,r_0002_0001__You,arg0).
 arc(r_0004_0020__open,r_0004_0023__door,arg1).
 arc(r_0004_0022__locked,r_0004_0023__door,arg1).
 arc(r_0005_0002__gives,r_0004_0006__be,arg0).
-arc(r_0005_0002__gives,r_0005_0004__puzzle_element,arg1).
+arc(r_0005_0002__gives,r_0005_0004__puzzle__r_0005_0005__element,arg1).
 arc(r_0005_0002__gives,r_0005_0008__game,r_0005_0006__to_arg2).
 arc(r_0005_0002__gives,r_0005_0011__action,r_0005_0009__in_addition_to_mod).
 arc(z_0002_1011,z_0002_1010,nlyr2).
@@ -743,16 +743,16 @@ arc(z_0002_1011,z_0002_1010,nlyr2).
 </pre>
 <br>
 <pre>
-fof(id_2_A_Freedoom__3_A_Freedoom__4_A_Freedoom__5_A_Freedoom,axiom,
+fof(id__2_A_Freedoom__3_A_Freedoom__4_A_Freedoom__5_A_Freedoom,axiom,
     ? [CATENATIVEX2,STATEX12,STATEX23,STATEX29,HEARERX24,HEARERX28,HEARERX33,LEVELSX40,HEARERX43,INACCESSIBLEX58,EVENTX62,CONNX42,CONNX45,EVENTX49,EVENTX48,CONJX55,EVENTX54,EVENTX52,OPERATORX56,INACCESSIBLEX57,CONJX38,OPERATORX36,EVENTX37,CONNX32,EVENTX34,EVENTX35,OPERATORX26,EVENTX27,EVENTX25,OPERATORX1,EVENTX18,CONNX6,QUANTX8,EVENTX16,EVENTX15,EVENTX17,ENTITYX59,ENTITYX60,ENTITYX61,ENTITYX39,ENTITYX46,ENTITYX53,ENTITYX50,ENTITYX30,ENTITYX21,ENTITYX22,ENTITYX3,ENTITYX7,ENTITYX13,ENTITYX14,ENTITYX9,LEVELSX4,ATTRIBX41,ATTRIBX51] :
       ( CATENATIVEX2 = CONNX6
-      &amp; isA(CONNX6,cnt_0002_1005)
+      &amp; isA(CONNX6,r_0002_1005__cnt)
       &amp; scope(CONNX6) = EVENTX17
       &amp; isA(EVENTX17,r_0002_0004__exploring)
       &amp; arg0(EVENTX17) = r_0002_0001__You
       &amp; arg1(EVENTX17) = ENTITYX3
       &amp; restriction(CONNX6) = QUANTX8
-      &amp; isA(QUANTX8,r_0002_0011__quantificational__each)
+      &amp; isA(QUANTX8,r_0002_0011__quantificational__r_0002_0011__each)
       &amp; restriction(QUANTX8) = ENTITYX7
       &amp; isA(ENTITYX7,z_0002_1011)
       &amp; nlyr2(ENTITYX7) = ENTITYX9
@@ -769,7 +769,7 @@ fof(id_2_A_Freedoom__3_A_Freedoom__4_A_Freedoom__5_A_Freedoom,axiom,
       &amp; arg0(EVENTX25) = ENTITYX21
       &amp; arg1(EVENTX25) = HEARERX24
       &amp; STATEX29 = CONNX32
-      &amp; isA(CONNX32,cnt_0002_1031)
+      &amp; isA(CONNX32,r_0002_1031__cnt)
       &amp; scope(CONNX32) = EVENTX35
       &amp; isA(EVENTX35,r_0003_0016__use)
       &amp; arg0(EVENTX35) = HEARERX28
@@ -804,7 +804,7 @@ fof(id_2_A_Freedoom__3_A_Freedoom__4_A_Freedoom__5_A_Freedoom,axiom,
       &amp; arg1(EVENTX48) = ENTITYX46
       &amp; isA(ENTITYX46,r_0004_0023__door)
       &amp; INACCESSIBLEX58 = INACCESSIBLEX57
-      &amp; isA(ENTITYX59,r_0005_0004__puzzle_element)
+      &amp; isA(ENTITYX59,r_0005_0004__puzzle__r_0005_0005__element)
       &amp; isA(ENTITYX60,r_0005_0008__game)
       &amp; isA(ENTITYX61,r_0005_0011__action)
       &amp; isA(ATTRIBX41,r_0004_0007__inaccessible)
@@ -832,7 +832,7 @@ fof(id_2_A_Freedoom__3_A_Freedoom__4_A_Freedoom__5_A_Freedoom,axiom,
       &amp; arg0(INACCESSIBLEX57) = ENTITYX39
       &amp; prd2(INACCESSIBLEX57) = ATTRIBX41
       &amp; restriction(CONNX42) = CONNX45
-      &amp; isA(CONNX45,cnt_0002_1044)
+      &amp; isA(CONNX45,r_0002_1044__cnt)
       &amp; scope(CONNX45) = CONJX55
       &amp; isA(CONJX55,r_0004_0015__or)
       &amp; conj1(CONJX55) = EVENTX52

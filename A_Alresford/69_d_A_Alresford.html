@@ -364,23 +364,23 @@ Nor was the railway left derelict , but soon adopted by steam enthusiasts , whos
 </svg>
 <br>
 <pre>
-arc(r_0075_0001__Nor_but,r_0075_0005__left,conj1).
-arc(r_0075_0001__Nor_but,r_0075_0010__adopted,conj2).
-arc(r_0075_0002__was,r_0075_0001__Nor_but,catenative).
+arc(r_0075_0001__Nor__r_0075_0008__but,r_0075_0005__left,conj1).
+arc(r_0075_0001__Nor__r_0075_0008__but,r_0075_0010__adopted,conj2).
+arc(r_0075_0002__was,r_0075_0001__Nor__r_0075_0008__but,catenative).
 arc(r_0075_0005__left,r_0075_0004__railway,arg1).
 arc(r_0075_0005__left,r_0075_0006__derelict,prd2).
 arc(r_0075_0010__adopted,r_0075_0004__railway,arg1).
 arc(r_0075_0010__adopted,r_0075_0009__soon,tmp1).
-arc(r_0075_0010__adopted,r_0075_0012__steam_enthusiasts,arg0_by_lgs).
-arc(r_0075_0016__efforts,r_0075_0012__steam_enthusiasts,genv).
+arc(r_0075_0010__adopted,r_0075_0012__steam__r_0075_0013__enthusiasts,arg0_r_0075_0011__by_lgs).
+arc(r_0075_0016__efforts,r_0075_0012__steam__r_0075_0013__enthusiasts,genv).
 arc(r_0075_0017__bring,r_0075_0016__efforts,arg0).
-arc(r_0075_0017__bring,r_0075_0020__rail_travellers,arg1).
+arc(r_0075_0017__bring,r_0075_0020__rail__r_0075_0021__travellers,arg1).
 arc(r_0075_0019__more,r_0075_0018__far,quality1).
 arc(r_0075_0019__more,z_0075_1023,r_0075_0022__than).
-arc(r_0075_0020__rail_travellers,r_0075_0019__more,attrib1).
+arc(r_0075_0020__rail__r_0075_0021__travellers,r_0075_0019__more,attrib1).
 arc(r_0075_0024__made,r_0075_0023__ever,tmp2).
 arc(r_0075_0024__made,r_0075_0026__way,arg1).
-arc(r_0075_0024__made,r_0075_0028__Station_Road,r_0075_0027__down_clr_dir).
+arc(r_0075_0024__made,r_0075_0028__Station__r_0075_0029__Road,r_0075_0027__down_clr_dir).
 arc(r_0075_0024__made,z_0075_1023,arg0).
 arc(r_0075_0026__way,z_0075_1023,genv).
 arc(r_0075_0030__when_tmp,r_0075_0024__made,scope).
@@ -394,27 +394,27 @@ arc(r_0075_0038__transport,r_0075_0037__regular,attrib2).
 </pre>
 <br>
 <pre>
-fof(id_75_A_Alresford,axiom,
+fof(id__75_A_Alresford,axiom,
     ? [CATENATIVEX2,TRAVELLERSX15,SPEAKERX19,EVENTX27,CONJX26,EVENTX25,EVENTX24,CONNX16,EVENTX21,EVENTX22,EVENTX5,ENTITYX1,ENTITYX7,ENTITYX8,ENTITYX9,TRAVELLERSX12,ENTITYX14,ENTITYX17,ENTITYX18,ATTRIBX10,ATTRIBX20,ATTRIBX4,QUALITYX6,QUALITYX11,QUALITYX13] :
       ( CATENATIVEX2 = CONJX26
-      &amp; isA(CONJX26,r_0075_0001__Nor_but)
+      &amp; isA(CONJX26,r_0075_0001__Nor__r_0075_0008__but)
       &amp; conj1(CONJX26) = EVENTX5
       &amp; isA(EVENTX5,r_0075_0005__left)
       &amp; arg1(EVENTX5) = ENTITYX1
       &amp; prd2(EVENTX5) = ATTRIBX4
       &amp; conj2(CONJX26) = EVENTX25
       &amp; isA(EVENTX25,r_0075_0010__adopted)
-      &amp; arg0_by_lgs(EVENTX25) = ENTITYX7
+      &amp; arg0__r_0075_0011__by_lgs(EVENTX25) = ENTITYX7
       &amp; arg1(EVENTX25) = ENTITYX1
       &amp; tmp1(EVENTX25) = QUALITYX6
       &amp; isA(ENTITYX1,r_0075_0004__railway)
       &amp; isA(EVENTX24,r_0075_0017__bring)
       &amp; arg0(EVENTX24) = ENTITYX8
       &amp; arg1(EVENTX24) = ENTITYX9
-      &amp; isA(ENTITYX7,r_0075_0012__steam_enthusiasts)
+      &amp; isA(ENTITYX7,r_0075_0012__steam__r_0075_0013__enthusiasts)
       &amp; isA(ENTITYX8,r_0075_0016__efforts)
       &amp; genv(ENTITYX8) = ENTITYX7
-      &amp; isA(ENTITYX9,r_0075_0020__rail_travellers)
+      &amp; isA(ENTITYX9,r_0075_0020__rail__r_0075_0021__travellers)
       &amp; attrib1(ENTITYX9) = ATTRIBX10
       &amp; isA(CONNX16,r_0075_0030__when_tmp)
       &amp; scope(CONNX16) = EVENTX22
@@ -422,7 +422,7 @@ fof(id_75_A_Alresford,axiom,
       &amp; arg0(EVENTX22) = TRAVELLERSX12
       &amp; tmp2(EVENTX22) = QUALITYX13
       &amp; arg1(EVENTX22) = ENTITYX14
-      &amp; r_0075_0027__down_clr_dir(EVENTX22) = r_0075_0028__Station_Road
+      &amp; r_0075_0027__down_clr_dir(EVENTX22) = r_0075_0028__Station__r_0075_0029__Road
       &amp; restriction(CONNX16) = EVENTX21
       &amp; isA(EVENTX21,r_0075_0032__used)
       &amp; arg0(EVENTX21) = r_0075_0031__I

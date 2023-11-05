@@ -161,7 +161,7 @@ Section 5 : Reduced Speeds : Towing Vehicles , Buses , or Large Trucks
 </svg>
 <br>
 <pre>
-arc(r_0026_0001__Section_5,r_0026_0005__Speeds,prn4).
+arc(r_0026_0001__Section__r_0026_0002__5,r_0026_0005__Speeds,prn4).
 arc(r_0026_0005__Speeds,r_0026_0004__Reduced,attrib1).
 arc(r_0026_0005__Speeds,r_0026_0012__or,prn4).
 arc(r_0026_0008__Vehicles,r_0026_0007__Towing,attrib1).
@@ -169,14 +169,14 @@ arc(r_0026_0012__or,r_0026_0008__Vehicles,conj1).
 arc(r_0026_0012__or,r_0026_0010__Buses,conj2).
 arc(r_0026_0012__or,r_0026_0014__Trucks,conj3).
 arc(r_0026_0014__Trucks,r_0026_0013__Large,attrib1).
-arc(z_0026_1012,r_0026_0001__Section_5,z_0026_1002).
+arc(z_0026_1012,r_0026_0001__Section__r_0026_0002__5,z_0026_1002).
 
 </pre>
 <br>
 <pre>
-fof(id_26_A_driver_handbook,axiom,
+fof(id__26_A_driver_handbook,axiom,
     ? [EVENTX13,ENTITYX3,ENTITYX4,ENTITYX6,ENTITYX7,ENTITYX9,ENTITYX10,ATTRIBX5,ATTRIBX11,ATTRIBX8] :
-      ( isA(ENTITYX3,r_0026_0001__Section_5)
+      ( isA(ENTITYX3,r_0026_0001__Section__r_0026_0002__5)
       &amp; prn4(ENTITYX3) = ENTITYX4
       &amp; isA(ENTITYX4,r_0026_0005__Speeds)
       &amp; attrib1(ENTITYX4) = ATTRIBX5

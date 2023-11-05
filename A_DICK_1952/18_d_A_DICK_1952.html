@@ -142,16 +142,16 @@ arc(r_0031_0005__can,r_0031_0006__guess,scope).
 arc(r_0031_0006__guess,r_0031_0002__I,arg0).
 arc(r_0031_0010__Captain,r_0031_0002__I,z_0031_1012).
 arc(r_0031_0011__answered,r_0031_0010__Captain,arg0).
-arc(r_0031_0011__answered,utterance_0031_1003,arg1).
-arc(utterance_0031_1003,r_0031_0003__think,part1).
+arc(r_0031_0011__answered,r_0031_1003__utterance,arg1).
+arc(r_0031_1003__utterance,r_0031_0003__think,part1).
 
 </pre>
 <br>
 <pre>
-fof(id_31_A_DICK_1952,axiom,
+fof(id__31_A_DICK_1952,axiom,
     ? [STATEX1,STATEX4,CAPTAINX5,CAPTAINX13,EVENTX14,CONJX9,EVENTX8,OPERATORX6,EVENTX7,ENTITYX10] :
       ( STATEX1 = CONJX9
-      &amp; isA(CONJX9,utterance_0031_1003)
+      &amp; isA(CONJX9,r_0031_1003__utterance)
       &amp; part1(CONJX9) = EVENTX8
       &amp; isA(EVENTX8,r_0031_0003__think)
       &amp; arg0(EVENTX8) = r_0031_0002__I

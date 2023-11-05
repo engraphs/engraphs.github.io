@@ -122,24 +122,24 @@ The gun was smashed , the great weapon destroyed .
 </svg>
 <br>
 <pre>
-arc(abs_0561_1003,r_0561_0003__was,scope).
-arc(abs_0561_1003,r_0561_0009__destroyed,restriction).
 arc(r_0561_0003__was,r_0561_0002__gun,arg0).
 arc(r_0561_0003__was,r_0561_0004__smashed,prd2).
 arc(r_0561_0008__weapon,r_0561_0007__great,attrib2).
 arc(r_0561_0009__destroyed,r_0561_0008__weapon,arg1).
+arc(r_0561_1003__abs,r_0561_0003__was,scope).
+arc(r_0561_1003__abs,r_0561_0009__destroyed,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_561_A_DICK_1952,axiom,
+fof(id__561_A_DICK_1952,axiom,
     ? [CONNX4,EVENTX8,EVENTX9,ENTITYX1,ENTITYX5,ATTRIBX2,ATTRIBX6] :
       ( isA(ENTITYX1,r_0561_0002__gun)
       &amp; isA(ENTITYX5,r_0561_0008__weapon)
       &amp; attrib2(ENTITYX5) = ATTRIBX6
       &amp; isA(ATTRIBX2,r_0561_0004__smashed)
       &amp; isA(ATTRIBX6,r_0561_0007__great)
-      &amp; isA(CONNX4,abs_0561_1003)
+      &amp; isA(CONNX4,r_0561_1003__abs)
       &amp; scope(CONNX4) = EVENTX9
       &amp; isA(EVENTX9,r_0561_0003__was)
       &amp; arg0(EVENTX9) = ENTITYX1

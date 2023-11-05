@@ -513,38 +513,38 @@ Write your letter .
 </svg>
 <br>
 <pre>
-arc(cnt_0025_1023,r_0026_0001__Write,scope).
-arc(cnt_0025_1023,r_0026_0013__and,restriction).
-arc(cnt_0025_1030,r_0026_0010__did,scope).
-arc(cnt_0025_1030,r_0026_0012__help,restriction).
-arc(imperative_0025_1020,cnt_0025_1023,scope).
-arc(imperative_0025_1049,r_0027_0001__Write,scope).
-arc(question_0025_1027,cnt_0025_1030,scope).
-arc(question_0025_1037,r_0026_0017__particularly,scope).
 arc(r_0025_0002__month,r_0025_0001__Last,attrib1).
 arc(r_0025_0005__enjoyed,r_0025_0002__month,tmp).
 arc(r_0025_0005__enjoyed,r_0025_0004__you,arg0).
 arc(r_0025_0005__enjoyed,r_0025_0006__helping,arg1).
 arc(r_0025_0006__helping,r_0025_0004__you,arg0).
-arc(r_0025_0006__helping,r_0025_0009__pop_concert,r_0025_0007__at_loc).
+arc(r_0025_0006__helping,r_0025_0009__pop__r_0025_0010__concert,r_0025_0007__at_loc).
 arc(r_0025_0011__and,r_0025_0005__enjoyed,conj1).
 arc(r_0025_0011__and,r_0025_0018__wants,conj2).
-arc(r_0025_0013__pen_friend,r_0025_0004__you,genv).
-arc(r_0025_0013__pen_friend,r_0025_0016__Kim,prn5).
-arc(r_0025_0018__wants,r_0025_0013__pen_friend,arg0).
+arc(r_0025_0013__pen__r_0025_0014__friend,r_0025_0004__you,genv).
+arc(r_0025_0013__pen__r_0025_0014__friend,r_0025_0016__Kim,prn5).
+arc(r_0025_0018__wants,r_0025_0013__pen__r_0025_0014__friend,arg0).
 arc(r_0025_0018__wants,r_0025_0020__hear,arg1).
-arc(r_0025_0020__hear,r_0025_0013__pen_friend,arg0).
+arc(r_0025_0020__hear,r_0025_0013__pen__r_0025_0014__friend,arg0).
 arc(r_0025_0020__hear,r_0025_0023__experience,r_0025_0021__about_clr).
 arc(r_0025_0023__experience,r_0025_0004__you,genv).
+arc(r_0025_1020__imperative,r_0025_1023__cnt,scope).
+arc(r_0025_1023__cnt,r_0026_0001__Write,scope).
+arc(r_0025_1023__cnt,r_0026_0013__and,restriction).
+arc(r_0025_1027__question,r_0025_1030__cnt,scope).
+arc(r_0025_1030__cnt,r_0026_0010__did,scope).
+arc(r_0025_1030__cnt,r_0026_0012__help,restriction).
+arc(r_0025_1037__question,r_0026_0017__particularly,scope).
+arc(r_0025_1049__imperative,r_0027_0001__Write,scope).
 arc(r_0026_0001__Write,r_0025_0016__Kim,r_0026_0004__to_arg2).
 arc(r_0026_0001__Write,r_0026_0003__letter,arg1).
-arc(r_0026_0007__describing,question_0025_1027,arg1).
+arc(r_0026_0007__describing,r_0025_1027__question,arg1).
 arc(r_0026_0010__did,r_0025_0004__you,arg0).
 arc(r_0026_0010__did,r_0026_0008__what,arg1).
 arc(r_0026_0012__help,r_0025_0004__you,arg0).
 arc(r_0026_0013__and,r_0026_0007__describing,conj1).
 arc(r_0026_0013__and,r_0026_0014__explaining,conj2).
-arc(r_0026_0014__explaining,question_0025_1037,arg1).
+arc(r_0026_0014__explaining,r_0025_1037__question,arg1).
 arc(r_0026_0017__particularly,r_0026_0018__liked,scope).
 arc(r_0026_0018__liked,r_0025_0004__you,arg0).
 arc(r_0026_0018__liked,r_0026_0015__what,arg1).
@@ -556,7 +556,7 @@ arc(r_0027_0003__letter,r_0026_0003__letter,z_0025_1052).
 </pre>
 <br>
 <pre>
-fof(id_25_A_fce_0100_2000_06__26_A_fce_0100_2000_06__27_A_fce_0100_2000_06,axiom,
+fof(id__25_A_fce_0100_2000_06__26_A_fce_0100_2000_06__27_A_fce_0100_2000_06,axiom,
     ? [STATEX5,STATEX11,STATEX25,STATEX35,HEARERX10,HEARERX13,KIMX22,HEARERX29,HEARERX39,LETTERX53,HEARERX54,OPERATORX49,EVENTX55,OPERATORX20,CONNX24,CONJX44,EVENTX43,OPERATORX37,OPERATORX40,EVENTX42,EVENTX34,OPERATORX27,CONNX31,EVENTX32,EVENTX33,EVENTX45,CONJX16,EVENTX15,EVENTX14,EVENTX8,EVENTX7,ENTITYX50,LETTERX21,ENTITYX38,ENTITYX41,ENTITYX28,ENTITYX9,ENTITYX12,ENTITYX3,ENTITYX6,ATTRIBX4] :
       ( STATEX5 = EVENTX7
       &amp; isA(EVENTX7,r_0025_0006__helping)
@@ -567,9 +567,9 @@ fof(id_25_A_fce_0100_2000_06__26_A_fce_0100_2000_06__27_A_fce_0100_2000_06,axiom
       &amp; arg0(EVENTX14) = ENTITYX9
       &amp; r_0025_0021__about_clr(EVENTX14) = ENTITYX12
       &amp; STATEX25 = OPERATORX27
-      &amp; isA(OPERATORX27,question_0025_1027)
+      &amp; isA(OPERATORX27,r_0025_1027__question)
       &amp; scope(OPERATORX27) = CONNX31
-      &amp; isA(CONNX31,cnt_0025_1030)
+      &amp; isA(CONNX31,r_0025_1030__cnt)
       &amp; scope(CONNX31) = EVENTX33
       &amp; isA(EVENTX33,r_0026_0010__did)
       &amp; arg1(EVENTX33) = ENTITYX28
@@ -578,7 +578,7 @@ fof(id_25_A_fce_0100_2000_06__26_A_fce_0100_2000_06__27_A_fce_0100_2000_06,axiom
       &amp; isA(EVENTX32,r_0026_0012__help)
       &amp; arg0(EVENTX32) = HEARERX29
       &amp; STATEX35 = OPERATORX37
-      &amp; isA(OPERATORX37,question_0025_1037)
+      &amp; isA(OPERATORX37,r_0025_1037__question)
       &amp; scope(OPERATORX37) = OPERATORX40
       &amp; isA(OPERATORX40,r_0026_0017__particularly)
       &amp; scope(OPERATORX40) = EVENTX42
@@ -588,8 +588,8 @@ fof(id_25_A_fce_0100_2000_06__26_A_fce_0100_2000_06__27_A_fce_0100_2000_06,axiom
       &amp; r_0026_0019__about_rst(EVENTX42) = ENTITYX41
       &amp; isA(ENTITYX3,r_0025_0002__month)
       &amp; attrib1(ENTITYX3) = ATTRIBX4
-      &amp; isA(ENTITYX6,r_0025_0009__pop_concert)
-      &amp; isA(ENTITYX9,r_0025_0013__pen_friend)
+      &amp; isA(ENTITYX6,r_0025_0009__pop__r_0025_0010__concert)
+      &amp; isA(ENTITYX9,r_0025_0013__pen__r_0025_0014__friend)
       &amp; genv(ENTITYX9) = HEARERX10
       &amp; prn5(ENTITYX9) = r_0025_0016__Kim
       &amp; HEARERX10 = r_0025_0004__you
@@ -621,9 +621,9 @@ fof(id_25_A_fce_0100_2000_06__26_A_fce_0100_2000_06__27_A_fce_0100_2000_06,axiom
       &amp; arg0(EVENTX15) = ENTITYX9
       &amp; arg0(EVENTX15) = ENTITYX9
       &amp; arg1(EVENTX15) = STATEX11
-      &amp; isA(OPERATORX20,imperative_0025_1020)
+      &amp; isA(OPERATORX20,r_0025_1020__imperative)
       &amp; scope(OPERATORX20) = CONNX24
-      &amp; isA(CONNX24,cnt_0025_1023)
+      &amp; isA(CONNX24,r_0025_1023__cnt)
       &amp; scope(CONNX24) = EVENTX45
       &amp; isA(EVENTX45,r_0026_0001__Write)
       &amp; arg1(EVENTX45) = LETTERX21
@@ -636,7 +636,7 @@ fof(id_25_A_fce_0100_2000_06__26_A_fce_0100_2000_06__27_A_fce_0100_2000_06,axiom
       &amp; conj2(CONJX44) = EVENTX43
       &amp; isA(EVENTX43,r_0026_0014__explaining)
       &amp; arg1(EVENTX43) = STATEX35
-      &amp; isA(OPERATORX49,imperative_0025_1049)
+      &amp; isA(OPERATORX49,r_0025_1049__imperative)
       &amp; scope(OPERATORX49) = EVENTX55
       &amp; isA(EVENTX55,r_0027_0001__Write)
       &amp; arg1(EVENTX55) = ENTITYX50 ) ).

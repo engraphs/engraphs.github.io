@@ -135,18 +135,18 @@ And as a percentage of social service expenditure , health had fallen from 28.5 
 </svg>
 <br>
 <pre>
-arc(r_0115_0004__percentage,r_0115_0007__service_expenditure,r_0115_0005__of).
-arc(r_0115_0007__service_expenditure,r_0115_0006__social,attrib1).
+arc(r_0115_0004__percentage,r_0115_0007__service__r_0115_0008__expenditure,r_0115_0005__of).
+arc(r_0115_0007__service__r_0115_0008__expenditure,r_0115_0006__social,attrib1).
 arc(r_0115_0011__had,r_0115_0012__fallen,catenative).
 arc(r_0115_0012__fallen,r_0115_0004__percentage,r_0115_0002__as_rst).
 arc(r_0115_0012__fallen,r_0115_0010__health,arg0).
-arc(r_0115_0012__fallen,r_0115_0014__28.5,r_0115_0013__from_dir).
-arc(r_0115_0012__fallen,r_0115_0016__23.1_per_cent,r_0115_0015__to_dir).
+arc(r_0115_0012__fallen,r_0115_0014__28_5,r_0115_0013__from_dir).
+arc(r_0115_0012__fallen,r_0115_0016__23_1__r_0115_0017__per_cent,r_0115_0015__to_dir).
 
 </pre>
 <br>
 <pre>
-fof(id_115_A_lob_A01,axiom,
+fof(id__115_A_lob_A01,axiom,
     ? [CATENATIVEX2,EVENTX9,EVENTX8,ENTITYX1,ENTITYX3,ENTITYX6,ENTITYX7,ENTITYX4,ATTRIBX5] :
       ( CATENATIVEX2 = EVENTX8
       &amp; isA(EVENTX8,r_0115_0012__fallen)
@@ -157,10 +157,10 @@ fof(id_115_A_lob_A01,axiom,
       &amp; isA(ENTITYX1,r_0115_0010__health)
       &amp; isA(ENTITYX3,r_0115_0004__percentage)
       &amp; r_0115_0005__of(ENTITYX3) = ENTITYX4
-      &amp; isA(ENTITYX4,r_0115_0007__service_expenditure)
+      &amp; isA(ENTITYX4,r_0115_0007__service__r_0115_0008__expenditure)
       &amp; attrib1(ENTITYX4) = ATTRIBX5
-      &amp; isA(ENTITYX6,r_0115_0014__28.5)
-      &amp; isA(ENTITYX7,r_0115_0016__23.1_per_cent)
+      &amp; isA(ENTITYX6,r_0115_0014__28_5)
+      &amp; isA(ENTITYX7,r_0115_0016__23_1__r_0115_0017__per_cent)
       &amp; isA(ATTRIBX5,r_0115_0006__social)
       &amp; isA(EVENTX9,r_0115_0011__had)
       &amp; catenative(EVENTX9) = CATENATIVEX2 ) ).

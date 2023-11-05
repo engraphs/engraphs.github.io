@@ -116,20 +116,20 @@ Who had to move to think .
 </svg>
 <br>
 <pre>
-arc(cnt_0242_1005,r_0242_0004__move,scope).
-arc(cnt_0242_1005,r_0242_0006__think,restriction).
-arc(r_0242_0002__had,cnt_0242_1005,catenative).
+arc(r_0242_0002__had,r_0242_1005__cnt,catenative).
 arc(r_0242_0004__move,z_0242_1010,arg0).
 arc(r_0242_0006__think,z_0242_1010,arg0).
+arc(r_0242_1005__cnt,r_0242_0004__move,scope).
+arc(r_0242_1005__cnt,r_0242_0006__think,restriction).
 arc(z_0242_1011,z_0242_1010,z_0242_1002).
 
 </pre>
 <br>
 <pre>
-fof(id_242_A_TED_talk_11,axiom,
+fof(id__242_A_TED_talk_11,axiom,
     ? [STATEX4,EVENTX12,EVENTX9,CONNX6,EVENTX7,EVENTX8,ENTITYX3] :
       ( STATEX4 = CONNX6
-      &amp; isA(CONNX6,cnt_0242_1005)
+      &amp; isA(CONNX6,r_0242_1005__cnt)
       &amp; scope(CONNX6) = EVENTX8
       &amp; isA(EVENTX8,r_0242_0004__move)
       &amp; arg0(EVENTX8) = ENTITYX3

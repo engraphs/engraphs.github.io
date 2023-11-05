@@ -40,29 +40,29 @@
 <ellipse fill="none" stroke="black" cx="34.45" cy="-18" rx="34.39" ry="18"/>
 <text text-anchor="middle" x="34.45" y="-14.3" font-family="fixed" font-size="14.00">What</text>
 </g>
-<!-- 0321_0003_0321_0005 -->
-<g id="node2" class="node">
-<title>0321_0003_0321_0005</title>
-<ellipse fill="none" stroke="black" cx="74.45" cy="-105" rx="51.99" ry="18"/>
-<text text-anchor="middle" x="74.45" y="-101.3" font-family="fixed" font-size="14.00">do_mean</text>
-</g>
-<!-- 0321_0003_0321_0005&#45;&gt;0321_0002 -->
-<g id="edge1" class="edge">
-<title>0321_0003_0321_0005&#45;&gt;0321_0002</title>
-<path fill="none" stroke="black" d="M60.8,-87.26C56.73,-81.7 52.54,-75.3 49.45,-69 45.94,-61.84 43.07,-53.69 40.81,-46.09"/>
-<polygon fill="black" stroke="black" points="44.12,-44.92 38.12,-36.19 37.37,-46.76 44.12,-44.92"/>
-<text text-anchor="middle" x="70.95" y="-57.8" font-family="fixed" font-size="14.00">[arg1]</text>
-</g>
 <!-- 0321_0004 -->
-<g id="node3" class="node">
+<g id="node2" class="node">
 <title>0321_0004</title>
 <ellipse fill="none" stroke="black" cx="114.45" cy="-18" rx="27.1" ry="18"/>
 <text text-anchor="middle" x="114.45" y="-14.3" font-family="fixed" font-size="14.00">you</text>
 </g>
-<!-- 0321_0003_0321_0005&#45;&gt;0321_0004 -->
+<!-- 0321_0005 -->
+<g id="node3" class="node">
+<title>0321_0005</title>
+<ellipse fill="none" stroke="black" cx="74.45" cy="-105" rx="36.29" ry="18"/>
+<text text-anchor="middle" x="74.45" y="-101.3" font-family="fixed" font-size="14.00">mean</text>
+</g>
+<!-- 0321_0005&#45;&gt;0321_0002 -->
+<g id="edge1" class="edge">
+<title>0321_0005&#45;&gt;0321_0002</title>
+<path fill="none" stroke="black" d="M61.31,-87.97C57.09,-82.24 52.67,-75.57 49.45,-69 45.94,-61.84 43.07,-53.69 40.81,-46.09"/>
+<polygon fill="black" stroke="black" points="44.12,-44.92 38.12,-36.19 37.37,-46.76 44.12,-44.92"/>
+<text text-anchor="middle" x="70.95" y="-57.8" font-family="fixed" font-size="14.00">[arg1]</text>
+</g>
+<!-- 0321_0005&#45;&gt;0321_0004 -->
 <g id="edge2" class="edge">
-<title>0321_0003_0321_0005&#45;&gt;0321_0004</title>
-<path fill="none" stroke="black" d="M83.44,-87.01C86.39,-81.32 89.62,-74.92 92.45,-69 96.12,-61.3 99.93,-52.83 103.32,-45.09"/>
+<title>0321_0005&#45;&gt;0321_0004</title>
+<path fill="none" stroke="black" d="M83.26,-87.37C86.25,-81.59 89.57,-75.04 92.45,-69 96.12,-61.3 99.93,-52.83 103.32,-45.09"/>
 <polygon fill="black" stroke="black" points="106.59,-46.35 107.36,-35.78 100.17,-43.56 106.59,-46.35"/>
 <text text-anchor="middle" x="120.95" y="-57.8" font-family="fixed" font-size="14.00">[arg0]</text>
 </g>
@@ -72,9 +72,9 @@
 <ellipse fill="none" stroke="black" cx="74.45" cy="-192" rx="56.59" ry="18"/>
 <text text-anchor="middle" x="74.45" y="-188.3" font-family="fixed" font-size="14.00">[question]</text>
 </g>
-<!-- question_0321_1002&#45;&gt;0321_0003_0321_0005 -->
+<!-- question_0321_1002&#45;&gt;0321_0005 -->
 <g id="edge3" class="edge">
-<title>question_0321_1002&#45;&gt;0321_0003_0321_0005</title>
+<title>question_0321_1002&#45;&gt;0321_0005</title>
 <path fill="none" stroke="black" d="M74.45,-173.8C74.45,-162.16 74.45,-146.55 74.45,-133.24"/>
 <polygon fill="black" stroke="black" points="77.95,-133.18 74.45,-123.18 70.95,-133.18 77.95,-133.18"/>
 <text text-anchor="middle" x="100.45" y="-144.8" font-family="fixed" font-size="14.00">[scope]</text>
@@ -83,19 +83,19 @@
 </svg>
 <br>
 <pre>
-arc(question_0321_1002,r_0321_0003__do_mean,scope).
-arc(r_0321_0003__do_mean,r_0321_0002__What,arg1).
-arc(r_0321_0003__do_mean,r_0321_0004__you,arg0).
+arc(r_0321_0005__mean,r_0321_0002__What,arg1).
+arc(r_0321_0005__mean,r_0321_0004__you,arg0).
+arc(r_0321_1002__question,r_0321_0005__mean,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_321_A_DICK_1952,axiom,
+fof(id__321_A_DICK_1952,axiom,
     ? [OPERATORX2,EVENTX4,ENTITYX3] :
       ( isA(ENTITYX3,r_0321_0002__What)
-      &amp; isA(OPERATORX2,question_0321_1002)
+      &amp; isA(OPERATORX2,r_0321_1002__question)
       &amp; scope(OPERATORX2) = EVENTX4
-      &amp; isA(EVENTX4,r_0321_0003__do_mean)
+      &amp; isA(EVENTX4,r_0321_0005__mean)
       &amp; arg1(EVENTX4) = ENTITYX3
       &amp; arg0(EVENTX4) = r_0321_0004__you ) ).
 

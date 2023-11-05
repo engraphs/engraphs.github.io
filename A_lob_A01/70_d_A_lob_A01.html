@@ -109,23 +109,23 @@ Dr Adenauer 's answer is the once-and-for-all cash offer of &lt;pound&gt; 357 mi
 </svg>
 <br>
 <pre>
-arc(r_0073_0004__answer,r_0073_0001__Dr_Adenauer,genv).
+arc(r_0073_0004__answer,r_0073_0001__Dr__r_0073_0002__Adenauer,genv).
 arc(r_0073_0005__is,r_0073_0004__answer,arg0).
-arc(r_0073_0005__is,r_0073_0008__cash_offer,prd2).
-arc(r_0073_0008__cash_offer,r_0073_0007__once_and_for_all,attrib2).
-arc(r_0073_0008__cash_offer,r_0073_0011___pound__357_million,r_0073_0010__of).
+arc(r_0073_0005__is,r_0073_0008__cash__r_0073_0009__offer,prd2).
+arc(r_0073_0008__cash__r_0073_0009__offer,r_0073_0007__once_and_for_all,attrib2).
+arc(r_0073_0008__cash__r_0073_0009__offer,r_0073_0011___pound__r_0073_0012__357_r_0073_0013__million,r_0073_0010__of).
 
 </pre>
 <br>
 <pre>
-fof(id_73_A_lob_A01,axiom,
+fof(id__73_A_lob_A01,axiom,
     ? [EVENTX5,ENTITYX1,ENTITYX2,ENTITYX4,ATTRIBX3] :
       ( isA(ENTITYX1,r_0073_0004__answer)
-      &amp; genv(ENTITYX1) = r_0073_0001__Dr_Adenauer
-      &amp; isA(ENTITYX2,r_0073_0008__cash_offer)
+      &amp; genv(ENTITYX1) = r_0073_0001__Dr__r_0073_0002__Adenauer
+      &amp; isA(ENTITYX2,r_0073_0008__cash__r_0073_0009__offer)
       &amp; attrib2(ENTITYX2) = ATTRIBX3
       &amp; r_0073_0010__of(ENTITYX2) = ENTITYX4
-      &amp; isA(ENTITYX4,r_0073_0011___pound__357_million)
+      &amp; isA(ENTITYX4,r_0073_0011___pound__r_0073_0012__357__r_0073_0013__million)
       &amp; isA(ATTRIBX3,r_0073_0007__once_and_for_all)
       &amp; isA(EVENTX5,r_0073_0005__is)
       &amp; arg0(EVENTX5) = ENTITYX1

@@ -227,10 +227,9 @@ Go straight through the intersection , choose either lane , and exit in the lane
 </svg>
 <br>
 <pre>
-arc(imperative_0049_1002,r_0049_0011__and,scope).
 arc(r_0049_0001__Go,r_0049_0002__straight,dir2).
 arc(r_0049_0001__Go,r_0049_0020__car,prn3).
-arc(r_0049_0002__straight,r_0049_0005__intersection,prn2_through).
+arc(r_0049_0002__straight,r_0049_0005__intersection,prn2__r_0049_0003__through).
 arc(r_0049_0007__choose,r_0049_0009__lane,arg1).
 arc(r_0049_0007__choose,r_0049_0020__car,prn3).
 arc(r_0049_0009__lane,r_0049_0008__either,attrib1).
@@ -242,14 +241,15 @@ arc(r_0049_0012__exit,r_0049_0020__car,prn3).
 arc(r_0049_0017__entered,r_0049_0015__lane,arg1).
 arc(r_0049_0017__entered,r_0049_0016__you,arg0).
 arc(r_0049_0020__car,r_0049_0019__red,attrib1).
+arc(r_0049_1002__imperative,r_0049_0011__and,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_49_A_driver_handbook,axiom,
+fof(id__49_A_driver_handbook,axiom,
     ? [OPERATORX2,CONJX15,EVENTX14,EVENTX13,EVENTX11,EVENTX8,QUALITYX6,ENTITYX4,ENTITYX12,ENTITYX9,ENTITYX7,ATTRIBX10,ATTRIBX5] :
       ( isA(QUALITYX6,r_0049_0002__straight)
-      &amp; prn2_through(QUALITYX6) = ENTITYX7
+      &amp; prn2__r_0049_0003__through(QUALITYX6) = ENTITYX7
       &amp; isA(ENTITYX4,r_0049_0020__car)
       &amp; attrib1(ENTITYX4) = ATTRIBX5
       &amp; isA(ENTITYX7,r_0049_0005__intersection)
@@ -261,7 +261,7 @@ fof(id_49_A_driver_handbook,axiom,
       &amp; isA(ENTITYX12,r_0049_0015__lane)
       &amp; isA(ATTRIBX5,r_0049_0019__red)
       &amp; isA(ATTRIBX10,r_0049_0008__either)
-      &amp; isA(OPERATORX2,imperative_0049_1002)
+      &amp; isA(OPERATORX2,r_0049_1002__imperative)
       &amp; scope(OPERATORX2) = CONJX15
       &amp; isA(CONJX15,r_0049_0011__and)
       &amp; conj1(CONJX15) = EVENTX8

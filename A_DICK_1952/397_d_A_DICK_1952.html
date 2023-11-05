@@ -527,14 +527,6 @@ Well , they can keep them . &rdquo;
 </svg>
 <br>
 <pre>
-arc(abs_0514_1029,cnt_0514_1032,restriction).
-arc(abs_0514_1029,r_0515_0002__were,scope).
-arc(cnt_0514_1009,r_0514_0013__setting_up,scope).
-arc(cnt_0514_1009,r_0514_0018__quantificational__anything,restriction).
-arc(cnt_0514_1032,r_0515_0013__coming,scope).
-arc(cnt_0514_1032,r_0515_0015__take_away,restriction).
-arc(mnr_0514_1004,r_0514_0002__was,scope).
-arc(mnr_0514_1004,r_0514_0012__and,restriction).
 arc(r_0514_0002__was,r_0514_0001__This,arg0).
 arc(r_0514_0002__was,r_0514_0005__way,prd2).
 arc(r_0514_0005__way,r_0514_0004__only,attrib2).
@@ -542,28 +534,36 @@ arc(r_0514_0007__knew,r_0514_0005__way,arg1).
 arc(r_0514_0007__knew,r_0514_0006__they,arg0).
 arc(r_0514_0009__building,r_0514_0001__This,arg0).
 arc(r_0514_0009__building,r_0514_0011__gun,arg1).
-arc(r_0514_0012__and,cnt_0514_1009,conj2).
 arc(r_0514_0012__and,r_0514_0009__building,conj1).
-arc(r_0514_0013__setting_up,r_0514_0001__This,arg0).
-arc(r_0514_0013__setting_up,r_0514_0011__gun,arg1).
+arc(r_0514_0012__and,r_0514_1009__cnt,conj2).
+arc(r_0514_0013__setting__r_0514_0015__up,r_0514_0001__This,arg0).
+arc(r_0514_0013__setting__r_0514_0015__up,r_0514_0011__gun,arg1).
 arc(r_0514_0017__shoot,r_0514_0011__gun,arg0).
 arc(r_0514_0017__shoot,z_0514_1015,arg1).
-arc(r_0514_0018__quantificational__anything,r_0514_0017__shoot,scope).
-arc(r_0514_0018__quantificational__anything,z_0514_1015,restriction).
+arc(r_0514_0018__quantificational__r_0514_0018__anything,r_0514_0017__shoot,scope).
+arc(r_0514_0018__quantificational__r_0514_0018__anything,z_0514_1015,restriction).
 arc(r_0514_0020__came,r_0514_0021__along,dir3).
 arc(r_0514_0020__came,z_0514_1015,arg0).
+arc(r_0514_1004__mnr,r_0514_0002__was,scope).
+arc(r_0514_1004__mnr,r_0514_0012__and,restriction).
+arc(r_0514_1009__cnt,r_0514_0013__setting__r_0514_0015__up,scope).
+arc(r_0514_1009__cnt,r_0514_0018__quantificational__r_0514_0018__anything,restriction).
+arc(r_0514_1029__abs,r_0514_1032__cnt,restriction).
+arc(r_0514_1029__abs,r_0515_0002__were,scope).
+arc(r_0514_1032__cnt,r_0515_0013__coming,scope).
+arc(r_0514_1032__cnt,r_0515_0015__take__r_0515_0018__away,restriction).
 arc(r_0515_0002__were,r_0514_0006__they,arg0).
 arc(r_0515_0002__were,r_0515_0004__certain,prd2).
 arc(r_0515_0004__certain,r_0515_0003__so,quality1).
-arc(r_0515_0004__certain,r_0515_0006__quantificational__everything,emb3).
-arc(r_0515_0006__quantificational__everything,r_0515_0007__was,scope).
-arc(r_0515_0006__quantificational__everything,z_0514_1026,restriction).
+arc(r_0515_0004__certain,r_0515_0006__quantificational__r_0515_0006__everything,emb3).
+arc(r_0515_0006__quantificational__r_0515_0006__everything,r_0515_0007__was,scope).
+arc(r_0515_0006__quantificational__r_0515_0006__everything,z_0514_1026,restriction).
 arc(r_0515_0007__was,r_0515_0008__hostile,prd2).
 arc(r_0515_0007__was,z_0514_1026,arg0).
 arc(r_0515_0013__coming,r_0515_0011__enemy,arg0).
-arc(r_0515_0015__take_away,r_0514_0006__they,r_0515_0019__from_dir).
-arc(r_0515_0015__take_away,r_0515_0011__enemy,arg0).
-arc(r_0515_0015__take_away,r_0515_0017__possessions,arg1).
+arc(r_0515_0015__take__r_0515_0018__away,r_0514_0006__they,r_0515_0019__from_dir).
+arc(r_0515_0015__take__r_0515_0018__away,r_0515_0011__enemy,arg0).
+arc(r_0515_0015__take__r_0515_0018__away,r_0515_0017__possessions,arg1).
 arc(r_0515_0017__possessions,r_0514_0006__they,genv).
 arc(r_0516_0004__can,r_0516_0005__keep,scope).
 arc(r_0516_0005__keep,r_0514_0006__they,arg0).
@@ -572,10 +572,10 @@ arc(r_0516_0005__keep,r_0515_0017__possessions,arg1).
 </pre>
 <br>
 <pre>
-fof(id_514_A_DICK_1952__515_A_DICK_1952__516_A_DICK_1952,axiom,
+fof(id__514_A_DICK_1952__515_A_DICK_1952__516_A_DICK_1952,axiom,
     ? [STATEX23,GUNX8,INHABITANTSX20,INHABITANTSX35,INHABITANTSX36,INHABITANTSX40,POSSESSIONSX41,OPERATORX42,EVENTX43,CONNX30,CONNX33,EVENTX37,EVENTX38,EVENTX39,QUANTX25,EVENTX28,CONNX5,CONJX18,CONNX10,QUANTX12,EVENTX16,EVENTX14,EVENTX17,EVENTX7,EVENTX19,EVENTX3,ENTITYX31,POSSESSIONSX34,ENTITYX24,ENTITYX1,ENTITYX11,GUNX6,ATTRIBX21,ATTRIBX27,ATTRIBX2,QUALITYX22,QUALITYX13] :
       ( STATEX23 = QUANTX25
-      &amp; isA(QUANTX25,r_0515_0006__quantificational__everything)
+      &amp; isA(QUANTX25,r_0515_0006__quantificational__r_0515_0006__everything)
       &amp; restriction(QUANTX25) = ENTITYX24
       &amp; isA(ENTITYX24,z_0514_1026)
       &amp; scope(QUANTX25) = EVENTX28
@@ -606,7 +606,7 @@ fof(id_514_A_DICK_1952__515_A_DICK_1952__516_A_DICK_1952,axiom,
       &amp; isA(ATTRIBX27,r_0515_0008__hostile)
       &amp; isA(QUALITYX13,r_0514_0021__along)
       &amp; isA(QUALITYX22,r_0515_0003__so)
-      &amp; isA(CONNX5,mnr_0514_1004)
+      &amp; isA(CONNX5,r_0514_1004__mnr)
       &amp; scope(CONNX5) = EVENTX19
       &amp; isA(EVENTX19,r_0514_0002__was)
       &amp; arg0(EVENTX19) = r_0514_0001__This
@@ -618,13 +618,13 @@ fof(id_514_A_DICK_1952__515_A_DICK_1952__516_A_DICK_1952,axiom,
       &amp; arg0(EVENTX7) = r_0514_0001__This
       &amp; arg1(EVENTX7) = GUNX6
       &amp; conj2(CONJX18) = CONNX10
-      &amp; isA(CONNX10,cnt_0514_1009)
+      &amp; isA(CONNX10,r_0514_1009__cnt)
       &amp; scope(CONNX10) = EVENTX17
-      &amp; isA(EVENTX17,r_0514_0013__setting_up)
+      &amp; isA(EVENTX17,r_0514_0013__setting__r_0514_0015__up)
       &amp; arg0(EVENTX17) = r_0514_0001__This
       &amp; arg1(EVENTX17) = GUNX8
       &amp; restriction(CONNX10) = QUANTX12
-      &amp; isA(QUANTX12,r_0514_0018__quantificational__anything)
+      &amp; isA(QUANTX12,r_0514_0018__quantificational__r_0514_0018__anything)
       &amp; isA(EVENTX14,r_0514_0020__came)
       &amp; arg0(EVENTX14) = ENTITYX11
       &amp; dir3(EVENTX14) = QUALITYX13
@@ -634,18 +634,18 @@ fof(id_514_A_DICK_1952__515_A_DICK_1952__516_A_DICK_1952,axiom,
       &amp; isA(EVENTX16,r_0514_0017__shoot)
       &amp; arg0(EVENTX16) = GUNX8
       &amp; arg1(EVENTX16) = ENTITYX11
-      &amp; isA(CONNX30,abs_0514_1029)
+      &amp; isA(CONNX30,r_0514_1029__abs)
       &amp; scope(CONNX30) = EVENTX39
       &amp; isA(EVENTX39,r_0515_0002__were)
       &amp; arg0(EVENTX39) = INHABITANTSX20
       &amp; prd2(EVENTX39) = ATTRIBX21
       &amp; restriction(CONNX30) = CONNX33
-      &amp; isA(CONNX33,cnt_0514_1032)
+      &amp; isA(CONNX33,r_0514_1032__cnt)
       &amp; scope(CONNX33) = EVENTX38
       &amp; isA(EVENTX38,r_0515_0013__coming)
       &amp; arg0(EVENTX38) = ENTITYX31
       &amp; restriction(CONNX33) = EVENTX37
-      &amp; isA(EVENTX37,r_0515_0015__take_away)
+      &amp; isA(EVENTX37,r_0515_0015__take__r_0515_0018__away)
       &amp; arg0(EVENTX37) = ENTITYX31
       &amp; arg1(EVENTX37) = POSSESSIONSX34
       &amp; r_0515_0019__from_dir(EVENTX37) = INHABITANTSX36

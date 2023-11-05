@@ -150,23 +150,23 @@ Mr Brown , passionate and warm-hearted , led labour 's attack on the higher heal
 <pre>
 arc(r_0089_0005__and,r_0089_0004__passionate,conj1).
 arc(r_0089_0005__and,r_0089_0006__warm_hearted,conj2).
-arc(r_0089_0008__led,r_0089_0001__Mr_Brown,arg0).
+arc(r_0089_0008__led,r_0089_0001__Mr__r_0089_0002__Brown,arg0).
 arc(r_0089_0008__led,r_0089_0005__and,abs3).
 arc(r_0089_0008__led,r_0089_0011__attack,arg1).
 arc(r_0089_0011__attack,r_0089_0009__labour,genv).
-arc(r_0089_0011__attack,r_0089_0015__health_charges,r_0089_0012__on).
-arc(r_0089_0015__health_charges,r_0089_0014__higher,attrib2).
+arc(r_0089_0011__attack,r_0089_0015__health__r_0089_0016__charges,r_0089_0012__on).
+arc(r_0089_0015__health__r_0089_0016__charges,r_0089_0014__higher,attrib2).
 
 </pre>
 <br>
 <pre>
-fof(id_89_A_lob_A01,axiom,
+fof(id__89_A_lob_A01,axiom,
     ? [EVENTX8,ENTITYX4,ENTITYX5,ENTITYX6,ATTRIBX1,ATTRIBX7,ATTRIBX2,ATTRIBX3] :
       ( isA(ENTITYX4,r_0089_0011__attack)
       &amp; genv(ENTITYX4) = ENTITYX5
       &amp; r_0089_0012__on(ENTITYX4) = ENTITYX6
       &amp; isA(ENTITYX5,r_0089_0009__labour)
-      &amp; isA(ENTITYX6,r_0089_0015__health_charges)
+      &amp; isA(ENTITYX6,r_0089_0015__health__r_0089_0016__charges)
       &amp; attrib2(ENTITYX6) = ATTRIBX7
       &amp; isA(ATTRIBX1,r_0089_0005__and)
       &amp; conj1(ATTRIBX1) = ATTRIBX2
@@ -175,7 +175,7 @@ fof(id_89_A_lob_A01,axiom,
       &amp; isA(ATTRIBX3,r_0089_0006__warm_hearted)
       &amp; isA(ATTRIBX7,r_0089_0014__higher)
       &amp; isA(EVENTX8,r_0089_0008__led)
-      &amp; arg0(EVENTX8) = r_0089_0001__Mr_Brown
+      &amp; arg0(EVENTX8) = r_0089_0001__Mr__r_0089_0002__Brown
       &amp; abs3(EVENTX8) = ATTRIBX1
       &amp; arg1(EVENTX8) = ENTITYX4 ) ).
 

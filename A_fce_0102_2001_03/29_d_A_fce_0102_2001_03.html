@@ -83,18 +83,18 @@ Write your composition .
 </svg>
 <br>
 <pre>
-arc(imperative_0033_1002,r_0033_0001__Write,scope).
 arc(r_0033_0001__Write,r_0033_0003__composition,arg1).
 arc(r_0033_0003__composition,r_0033_0002__your,genv).
+arc(r_0033_1002__imperative,r_0033_0001__Write,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_33_A_fce_0102_2001_03,axiom,
+fof(id__33_A_fce_0102_2001_03,axiom,
     ? [OPERATORX2,EVENTX5,ENTITYX4] :
       ( isA(ENTITYX4,r_0033_0003__composition)
       &amp; genv(ENTITYX4) = r_0033_0002__your
-      &amp; isA(OPERATORX2,imperative_0033_1002)
+      &amp; isA(OPERATORX2,r_0033_1002__imperative)
       &amp; scope(OPERATORX2) = EVENTX5
       &amp; isA(EVENTX5,r_0033_0001__Write)
       &amp; arg1(EVENTX5) = ENTITYX4 ) ).

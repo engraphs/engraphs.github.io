@@ -336,9 +336,9 @@ Human helper Oren Dobronsky , the restaurant 's owner , picks up the phone and w
 <br>
 <pre>
 arc(r_0016_0007__restaurant,r_0016_0006__hummus,attrib2).
-arc(r_0016_0007__restaurant,r_0016_0009__Mountain_View,r_0016_0008__in).
-arc(r_0016_0009__Mountain_View,r_0016_0013__Silicon_Valley_town,prn4).
-arc(r_0016_0017__surrounds,r_0016_0013__Silicon_Valley_town,arg0).
+arc(r_0016_0007__restaurant,r_0016_0009__Mountain__r_0016_0010__View,r_0016_0008__in).
+arc(r_0016_0009__Mountain__r_0016_0010__View,r_0016_0013__Silicon_r_0016_0014__Valley_r_0016_0015__town,prn4).
+arc(r_0016_0017__surrounds,r_0016_0013__Silicon__r_0016_0014__Valley_r_0016_0015__town,arg0).
 arc(r_0016_0017__surrounds,r_0016_0020__campus,arg1).
 arc(r_0016_0020__campus,r_0016_0018__Google,genv).
 arc(r_0016_0023__heard,r_0016_0002__Tuesday,r_0016_0001__On_tmp).
@@ -346,46 +346,46 @@ arc(r_0016_0023__heard,r_0016_0007__restaurant,r_0016_0004__at_loc).
 arc(r_0016_0023__heard,r_0016_0022__I,arg0).
 arc(r_0016_0023__heard,r_0016_0024__Duplex,arg1).
 arc(r_0016_0023__heard,r_0016_0027__action,r_0016_0025__in_mnr).
-arc(r_0016_0023__heard,r_0016_0030__first_time,r_0016_0028__for_tmp).
+arc(r_0016_0023__heard,r_0016_0030__first__r_0016_0031__time,r_0016_0028__for_tmp).
 arc(r_0016_0027__action,r_0016_0026__live,attrib1).
 arc(r_0017_0002__helper,r_0017_0001__Human,attrib1).
-arc(r_0017_0002__helper,r_0017_0003__Oren_Dobronsky,prn3).
-arc(r_0017_0003__Oren_Dobronsky,r_0017_0009__owner,prn4).
+arc(r_0017_0002__helper,r_0017_0003__Oren__r_0017_0004__Dobronsky,prn3).
+arc(r_0017_0003__Oren__r_0017_0004__Dobronsky,r_0017_0009__owner,prn4).
 arc(r_0017_0009__owner,r_0016_0007__restaurant,genv).
-arc(r_0017_0011__picks_up,r_0017_0002__helper,arg0).
-arc(r_0017_0011__picks_up,r_0017_0014__phone,arg1).
-arc(r_0017_0015__and,r_0017_0011__picks_up,conj1).
-arc(r_0017_0015__and,r_0017_0017__listen_in,conj2).
-arc(r_0017_0017__listen_in,r_0017_0016__we,arg0).
+arc(r_0017_0011__picks__r_0017_0012__up,r_0017_0002__helper,arg0).
+arc(r_0017_0011__picks__r_0017_0012__up,r_0017_0014__phone,arg1).
+arc(r_0017_0015__and,r_0017_0011__picks__r_0017_0012__up,conj1).
+arc(r_0017_0015__and,r_0017_0017__listen__r_0017_0018__in,conj2).
+arc(r_0017_0017__listen__r_0017_0018__in,r_0017_0016__we,arg0).
 
 </pre>
 <br>
 <pre>
-fof(id_16_A_Duplex__17_A_Duplex,axiom,
+fof(id__16_A_Duplex__17_A_Duplex,axiom,
     ? [RESTAURANTX15,CONJX19,EVENTX18,EVENTX17,EVENTX9,EVENTX5,ENTITYX12,ENTITYX16,ENTITYX14,RESTAURANTX1,ENTITYX6,ENTITYX8,ENTITYX3,ENTITYX4,ATTRIBX13,ATTRIBX7,ATTRIBX2] :
       ( isA(RESTAURANTX1,r_0016_0007__restaurant)
       &amp; attrib2(RESTAURANTX1) = ATTRIBX2
-      &amp; r_0016_0008__in(RESTAURANTX1) = r_0016_0009__Mountain_View
+      &amp; r_0016_0008__in(RESTAURANTX1) = r_0016_0009__Mountain__r_0016_0010__View
       &amp; isA(EVENTX5,r_0016_0017__surrounds)
       &amp; arg0(EVENTX5) = ENTITYX3
       &amp; arg1(EVENTX5) = ENTITYX4
-      &amp; isA(ENTITYX3,r_0016_0013__Silicon_Valley_town)
+      &amp; isA(ENTITYX3,r_0016_0013__Silicon__r_0016_0014__Valley_r_0016_0015__town)
       &amp; isA(ENTITYX4,r_0016_0020__campus)
       &amp; genv(ENTITYX4) = r_0016_0018__Google
       &amp; isA(ENTITYX6,r_0016_0027__action)
       &amp; attrib1(ENTITYX6) = ATTRIBX7
-      &amp; isA(ENTITYX8,r_0016_0030__first_time)
+      &amp; isA(ENTITYX8,r_0016_0030__first__r_0016_0031__time)
       &amp; isA(ENTITYX12,r_0017_0002__helper)
       &amp; attrib1(ENTITYX12) = ATTRIBX13
-      &amp; prn3(ENTITYX12) = r_0017_0003__Oren_Dobronsky
+      &amp; prn3(ENTITYX12) = r_0017_0003__Oren__r_0017_0004__Dobronsky
       &amp; isA(ENTITYX14,r_0017_0009__owner)
       &amp; genv(ENTITYX14) = RESTAURANTX15
       &amp; RESTAURANTX15 = RESTAURANTX1
       &amp; isA(ENTITYX16,r_0017_0014__phone)
-      &amp; isA(r_0016_0009__Mountain_View,r_0016_0009__Mountain_View)
-      &amp; prn4(r_0016_0009__Mountain_View) = ENTITYX3
-      &amp; isA(r_0017_0003__Oren_Dobronsky,r_0017_0003__Oren_Dobronsky)
-      &amp; prn4(r_0017_0003__Oren_Dobronsky) = ENTITYX14
+      &amp; isA(r_0016_0009__Mountain__r_0016_0010__View,r_0016_0009__Mountain_r_0016_0010__View)
+      &amp; prn4(r_0016_0009__Mountain__r_0016_0010__View) = ENTITYX3
+      &amp; isA(r_0017_0003__Oren__r_0017_0004__Dobronsky,r_0017_0003__Oren_r_0017_0004__Dobronsky)
+      &amp; prn4(r_0017_0003__Oren__r_0017_0004__Dobronsky) = ENTITYX14
       &amp; isA(ATTRIBX2,r_0016_0006__hummus)
       &amp; isA(ATTRIBX7,r_0016_0026__live)
       &amp; isA(ATTRIBX13,r_0017_0001__Human)
@@ -398,12 +398,12 @@ fof(id_16_A_Duplex__17_A_Duplex,axiom,
       &amp; r_0016_0028__for_tmp(EVENTX9) = ENTITYX8
       &amp; isA(CONJX19,r_0017_0015__and)
       &amp; conj1(CONJX19) = EVENTX17
-      &amp; isA(EVENTX17,r_0017_0011__picks_up)
+      &amp; isA(EVENTX17,r_0017_0011__picks__r_0017_0012__up)
       &amp; arg0(EVENTX17) = ENTITYX12
       &amp; arg0(EVENTX17) = ENTITYX12
       &amp; arg1(EVENTX17) = ENTITYX16
       &amp; conj2(CONJX19) = EVENTX18
-      &amp; isA(EVENTX18,r_0017_0017__listen_in)
+      &amp; isA(EVENTX18,r_0017_0017__listen__r_0017_0018__in)
       &amp; arg0(EVENTX18) = r_0017_0016__we
       &amp; arg0(EVENTX18) = r_0017_0016__we ) ).
 

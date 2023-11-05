@@ -220,11 +220,9 @@ This personage strode on through the rain without a pause , following the little
 </svg>
 <br>
 <pre>
-arc(abs_0050_1004,r_0050_0003__strode_on,scope).
-arc(abs_0050_1004,r_0050_0012__following,restriction).
-arc(r_0050_0003__strode_on,r_0050_0002__personage,arg0).
-arc(r_0050_0003__strode_on,r_0050_0007__rain,r_0050_0005__through_dir).
-arc(r_0050_0003__strode_on,r_0050_0010__pause,r_0050_0008__without_mnr).
+arc(r_0050_0003__strode__r_0050_0004__on,r_0050_0002__personage,arg0).
+arc(r_0050_0003__strode__r_0050_0004__on,r_0050_0007__rain,r_0050_0005__through_dir).
+arc(r_0050_0003__strode__r_0050_0004__on,r_0050_0010__pause,r_0050_0008__without_mnr).
 arc(r_0050_0012__following,r_0050_0002__personage,arg0).
 arc(r_0050_0012__following,r_0050_0015__path,arg1).
 arc(r_0050_0015__path,r_0050_0014__little_worn,attrib2).
@@ -234,11 +232,13 @@ arc(r_0050_0023__skirted,r_0050_0015__path,arg0).
 arc(r_0050_0023__skirted,r_0050_0018__further,prd).
 arc(r_0050_0023__skirted,r_0050_0027__cottage,arg1).
 arc(r_0050_0027__cottage,r_0050_0025__shepherd,genv).
+arc(r_0050_1004__abs,r_0050_0003__strode__r_0050_0004__on,scope).
+arc(r_0050_1004__abs,r_0050_0012__following,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_50_A_HARDY_1883,axiom,
+fof(id__50_A_HARDY_1883,axiom,
     ? [CONNX5,EVENTX13,EVENTX12,EVENTX14,ENTITYX1,ENTITYX2,ENTITYX3,ENTITYX6,ENTITYX10,ENTITYX11,ENTITYX9,ATTRIBX7,ATTRIBX8] :
       ( isA(ENTITYX1,r_0050_0002__personage)
       &amp; isA(ENTITYX2,r_0050_0007__rain)
@@ -257,9 +257,9 @@ fof(id_50_A_HARDY_1883,axiom,
       &amp; isA(ATTRIBX7,r_0050_0014__little_worn)
       &amp; isA(ATTRIBX8,r_0050_0018__further)
       &amp; r_0050_0019__on_in(ATTRIBX8) = ENTITYX9
-      &amp; isA(CONNX5,abs_0050_1004)
+      &amp; isA(CONNX5,r_0050_1004__abs)
       &amp; scope(CONNX5) = EVENTX14
-      &amp; isA(EVENTX14,r_0050_0003__strode_on)
+      &amp; isA(EVENTX14,r_0050_0003__strode__r_0050_0004__on)
       &amp; arg0(EVENTX14) = ENTITYX1
       &amp; r_0050_0005__through_dir(EVENTX14) = ENTITYX2
       &amp; r_0050_0008__without_mnr(EVENTX14) = ENTITYX3

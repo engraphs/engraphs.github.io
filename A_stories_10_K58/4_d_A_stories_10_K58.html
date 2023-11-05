@@ -280,8 +280,6 @@ Being blind at first Mickey always kept bumping into objects that were in his pa
 </svg>
 <br>
 <pre>
-arc(abs_0004_1002,r_0004_0001__Being,restriction).
-arc(abs_0004_1002,r_0004_0006__kept,scope).
 arc(r_0004_0001__Being,r_0004_0002__blind,prd2).
 arc(r_0004_0001__Being,r_0004_0003__at_first,tmp3).
 arc(r_0004_0001__Being,r_0004_0004__Mickey,arg0).
@@ -292,19 +290,21 @@ arc(r_0004_0007__bumping,r_0004_0009__objects,r_0004_0008__into_clr_dir).
 arc(r_0004_0011__were,r_0004_0009__objects,arg0).
 arc(r_0004_0011__were,r_0004_0014__path,r_0004_0012__in_prd2).
 arc(r_0004_0014__path,r_0004_0004__Mickey,genv).
-arc(r_0004_0015__but,abs_0004_1002,conj1).
 arc(r_0004_0015__but,r_0004_0016__as_tmp,conj2).
+arc(r_0004_0015__but,r_0004_1002__abs,conj1).
 arc(r_0004_0016__as_tmp,r_0004_0019__formed,restriction).
 arc(r_0004_0016__as_tmp,r_0004_0021__began,scope).
 arc(r_0004_0018__eyes,r_0004_0004__Mickey,genv).
 arc(r_0004_0019__formed,r_0004_0018__eyes,arg0).
 arc(r_0004_0021__began,r_0004_0023__see,catenative).
 arc(r_0004_0023__see,r_0004_0004__Mickey,arg0).
+arc(r_0004_1002__abs,r_0004_0001__Being,restriction).
+arc(r_0004_1002__abs,r_0004_0006__kept,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_4_A_stories_10_K58,axiom,
+fof(id__4_A_stories_10_K58,axiom,
     ? [CATENATIVEX7,STATEX19,MICKEYX10,MICKEYX16,MICKEYX18,CONJX22,CONNX14,EVENTX21,EVENTX20,EVENTX17,CONNX3,EVENTX13,EVENTX12,EVENTX11,EVENTX6,ATTRIBX4,QUALITYX1,QUALITYX5,ENTITYX15,ENTITYX8,ENTITYX9] :
       ( CATENATIVEX7 = EVENTX12
       &amp; isA(EVENTX12,r_0004_0007__bumping)
@@ -329,7 +329,7 @@ fof(id_4_A_stories_10_K58,axiom,
       &amp; MICKEYX18 = r_0004_0004__Mickey
       &amp; isA(CONJX22,r_0004_0015__but)
       &amp; conj1(CONJX22) = CONNX3
-      &amp; isA(CONNX3,abs_0004_1002)
+      &amp; isA(CONNX3,r_0004_1002__abs)
       &amp; restriction(CONNX3) = EVENTX6
       &amp; isA(EVENTX6,r_0004_0001__Being)
       &amp; arg0(EVENTX6) = r_0004_0004__Mickey

@@ -210,23 +210,23 @@ When we ponder our subject matter , namely , the nature of the Japanese language
 arc(r_0013_0001__When_tmp,r_0013_0003__ponder,restriction).
 arc(r_0013_0001__When_tmp,r_0013_0024__is,scope).
 arc(r_0013_0003__ponder,r_0013_0002__we,arg0).
-arc(r_0013_0003__ponder,r_0013_0005__subject_matter,arg1).
-arc(r_0013_0005__subject_matter,r_0013_0002__we,genv).
-arc(r_0013_0005__subject_matter,r_0013_0008__namely,quality5).
-arc(r_0013_0005__subject_matter,r_0013_0011__nature,prn7).
+arc(r_0013_0003__ponder,r_0013_0005__subject__r_0013_0006__matter,arg1).
+arc(r_0013_0005__subject__r_0013_0006__matter,r_0013_0002__we,genv).
+arc(r_0013_0005__subject__r_0013_0006__matter,r_0013_0008__namely,quality5).
+arc(r_0013_0005__subject__r_0013_0006__matter,r_0013_0011__nature,prn7).
 arc(r_0013_0011__nature,r_0013_0015__language,r_0013_0012__of).
 arc(r_0013_0015__language,r_0013_0014__Japanese,attrib2).
-arc(r_0013_0018__importance,r_0013_0021__two_notions,r_0013_0019__of).
-arc(r_0013_0021__two_notions,r_0013_0022__key,attrib3).
+arc(r_0013_0018__importance,r_0013_0021__two__r_0013_0023__notions,r_0013_0019__of).
+arc(r_0013_0021__two__r_0013_0023__notions,r_0013_0022__key,attrib3).
 arc(r_0013_0024__is,r_0013_0018__importance,arg0).
 arc(r_0013_0024__is,r_0013_0025__apparent,prd2).
 
 </pre>
 <br>
 <pre>
-fof(id_13_A_NINJAL_mission,axiom,
+fof(id__13_A_NINJAL_mission,axiom,
     ? [SPEAKER_AND_HEARERX3,CONNX1,EVENTX13,EVENTX8,ENTITYX9,ENTITYX10,ENTITYX2,ENTITYX5,ENTITYX6,QUALITYX4,ATTRIBX12,ATTRIBX11,ATTRIBX7] :
-      ( isA(ENTITYX2,r_0013_0005__subject_matter)
+      ( isA(ENTITYX2,r_0013_0005__subject__r_0013_0006__matter)
       &amp; genv(ENTITYX2) = SPEAKER_AND_HEARERX3
       &amp; quality5(ENTITYX2) = QUALITYX4
       &amp; prn7(ENTITYX2) = ENTITYX5
@@ -237,7 +237,7 @@ fof(id_13_A_NINJAL_mission,axiom,
       &amp; attrib2(ENTITYX6) = ATTRIBX7
       &amp; isA(ENTITYX9,r_0013_0018__importance)
       &amp; r_0013_0019__of(ENTITYX9) = ENTITYX10
-      &amp; isA(ENTITYX10,r_0013_0021__two_notions)
+      &amp; isA(ENTITYX10,r_0013_0021__two__r_0013_0023__notions)
       &amp; attrib3(ENTITYX10) = ATTRIBX11
       &amp; isA(QUALITYX4,r_0013_0008__namely)
       &amp; isA(ATTRIBX7,r_0013_0014__Japanese)

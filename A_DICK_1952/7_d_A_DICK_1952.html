@@ -239,32 +239,32 @@ He bent down to look , squinting .
 </svg>
 <br>
 <pre>
-arc(abs_0012_1020,cnt_0012_1024,scope).
-arc(abs_0012_1020,r_0013_0007__squinting,restriction).
-arc(cnt_0012_1024,r_0013_0002__bent,scope).
-arc(cnt_0012_1024,r_0013_0005__look,restriction).
-arc(imperative_0012_1007,r_0012_0002__Let,scope).
 arc(r_0012_0002__Let,r_0012_0003__me,arg1).
 arc(r_0012_0002__Let,r_0012_0004__look,prd).
 arc(r_0012_0007__Tance,r_0012_0003__me,z_0012_1015).
 arc(r_0012_0007__Tance,r_0012_0009__archeologist,prn3).
 arc(r_0012_0010__said,r_0012_0007__Tance,arg0).
-arc(r_0012_0010__said,utterance_0012_1003,arg1).
+arc(r_0012_0010__said,r_0012_1003__utterance,arg1).
+arc(r_0012_1003__utterance,r_0012_1007__imperative,part1).
+arc(r_0012_1007__imperative,r_0012_0002__Let,scope).
+arc(r_0012_1020__abs,r_0012_1024__cnt,scope).
+arc(r_0012_1020__abs,r_0013_0007__squinting,restriction).
+arc(r_0012_1024__cnt,r_0013_0002__bent,scope).
+arc(r_0012_1024__cnt,r_0013_0005__look,restriction).
 arc(r_0013_0002__bent,r_0012_0003__me,arg0).
 arc(r_0013_0002__bent,r_0013_0003__down,dir2).
 arc(r_0013_0005__look,r_0012_0003__me,arg0).
 arc(r_0013_0007__squinting,r_0012_0003__me,arg0).
-arc(utterance_0012_1003,imperative_0012_1007,part1).
 
 </pre>
 <br>
 <pre>
-fof(id_12_A_DICK_1952__13_A_DICK_1952,axiom,
+fof(id__12_A_DICK_1952__13_A_DICK_1952,axiom,
     ? [STATEX1,STATEX8,TANCEX16,TANCEX19,CONNX21,EVENTX22,CONNX25,EVENTX26,EVENTX27,EVENTX18,CONJX13,OPERATORX7,EVENTX12,EVENTX11,ENTITYX17,QUALITYX23] :
       ( STATEX1 = CONJX13
-      &amp; isA(CONJX13,utterance_0012_1003)
+      &amp; isA(CONJX13,r_0012_1003__utterance)
       &amp; part1(CONJX13) = OPERATORX7
-      &amp; isA(OPERATORX7,imperative_0012_1007)
+      &amp; isA(OPERATORX7,r_0012_1007__imperative)
       &amp; scope(OPERATORX7) = EVENTX12
       &amp; isA(EVENTX12,r_0012_0002__Let)
       &amp; arg1(EVENTX12) = r_0012_0003__me
@@ -281,9 +281,9 @@ fof(id_12_A_DICK_1952__13_A_DICK_1952,axiom,
       &amp; isA(EVENTX18,r_0012_0010__said)
       &amp; arg1(EVENTX18) = STATEX1
       &amp; arg0(EVENTX18) = r_0012_0007__Tance
-      &amp; isA(CONNX21,abs_0012_1020)
+      &amp; isA(CONNX21,r_0012_1020__abs)
       &amp; scope(CONNX21) = CONNX25
-      &amp; isA(CONNX25,cnt_0012_1024)
+      &amp; isA(CONNX25,r_0012_1024__cnt)
       &amp; scope(CONNX25) = EVENTX27
       &amp; isA(EVENTX27,r_0013_0002__bent)
       &amp; arg0(EVENTX27) = TANCEX19

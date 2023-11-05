@@ -307,7 +307,7 @@ In contrast to the Soto Zen school which spreads through regional clans and the 
 <br>
 <pre>
 arc(r_0017_0002__contrast,r_0017_0007__school,r_0017_0003__to).
-arc(r_0017_0007__school,r_0017_0005__Soto_Zen,nlyr2).
+arc(r_0017_0007__school,r_0017_0005__Soto__r_0017_0006__Zen,nlyr2).
 arc(r_0017_0009__spreads,r_0017_0007__school,arg0).
 arc(r_0017_0009__spreads,r_0017_0013__and,r_0017_0010__through_dir).
 arc(r_0017_0012__clans,r_0017_0011__regional,attrib1).
@@ -315,15 +315,15 @@ arc(r_0017_0013__and,r_0017_0012__clans,conj1).
 arc(r_0017_0013__and,r_0017_0016__people,conj2).
 arc(r_0017_0016__people,r_0017_0015__general,attrib2).
 arc(r_0017_0021__received,r_0017_0002__contrast,r_0017_0001__In_cnt).
-arc(r_0017_0021__received,r_0017_0019__Rinzai_School,arg0).
+arc(r_0017_0021__received,r_0017_0019__Rinzai__r_0017_0020__School,arg0).
 arc(r_0017_0021__received,r_0017_0022__support,arg1).
-arc(r_0017_0021__received,r_0017_0024__Samurai_families,r_0017_0023__from_dir).
-arc(r_0017_0024__Samurai_families,r_0017_0027__government,r_0017_0026__in).
+arc(r_0017_0021__received,r_0017_0024__Samurai__r_0017_0025__families,r_0017_0023__from_dir).
+arc(r_0017_0024__Samurai__r_0017_0025__families,r_0017_0027__government,r_0017_0026__in).
 arc(r_0017_0029__and,r_0017_0021__received,conj1).
 arc(r_0017_0029__and,r_0017_0030__was,conj2).
 arc(r_0017_0030__was,r_0017_0002__contrast,r_0017_0001__In_cnt).
 arc(r_0017_0030__was,r_0017_0031__esteemed,catenative).
-arc(r_0017_0031__esteemed,r_0017_0019__Rinzai_School,arg1).
+arc(r_0017_0031__esteemed,r_0017_0019__Rinzai__r_0017_0020__School,arg1).
 arc(r_0017_0031__esteemed,r_0017_0035__and,r_0017_0032__in_loc).
 arc(r_0017_0035__and,r_0017_0034__politics,conj1).
 arc(r_0017_0035__and,r_0017_0036__culture,conj2).
@@ -331,11 +331,11 @@ arc(r_0017_0035__and,r_0017_0036__culture,conj2).
 </pre>
 <br>
 <pre>
-fof(id_17_A_KYOTO_2,axiom,
+fof(id__17_A_KYOTO_2,axiom,
     ? [CATENATIVEX13,CONJX20,EVENTX19,EVENTX18,EVENTX12,EVENTX8,ENTITYX1,ENTITYX15,ENTITYX16,ENTITYX17,ENTITYX9,ENTITYX10,ENTITYX11,ENTITYX2,ENTITYX3,ENTITYX4,ENTITYX6,ATTRIBX7,ATTRIBX5] :
       ( CATENATIVEX13 = EVENTX18
       &amp; isA(EVENTX18,r_0017_0031__esteemed)
-      &amp; arg1(EVENTX18) = r_0017_0019__Rinzai_School
+      &amp; arg1(EVENTX18) = r_0017_0019__Rinzai__r_0017_0020__School
       &amp; r_0017_0032__in_loc(EVENTX18) = ENTITYX15
       &amp; isA(ENTITYX1,r_0017_0002__contrast)
       &amp; r_0017_0003__to(ENTITYX1) = ENTITYX2
@@ -343,7 +343,7 @@ fof(id_17_A_KYOTO_2,axiom,
       &amp; arg0(EVENTX8) = ENTITYX2
       &amp; r_0017_0010__through_dir(EVENTX8) = ENTITYX3
       &amp; isA(ENTITYX2,r_0017_0007__school)
-      &amp; nlyr2(ENTITYX2) = r_0017_0005__Soto_Zen
+      &amp; nlyr2(ENTITYX2) = r_0017_0005__Soto__r_0017_0006__Zen
       &amp; isA(ENTITYX3,r_0017_0013__and)
       &amp; conj1(ENTITYX3) = ENTITYX4
       &amp; conj2(ENTITYX3) = ENTITYX6
@@ -352,7 +352,7 @@ fof(id_17_A_KYOTO_2,axiom,
       &amp; isA(ENTITYX6,r_0017_0016__people)
       &amp; attrib2(ENTITYX6) = ATTRIBX7
       &amp; isA(ENTITYX9,r_0017_0022__support)
-      &amp; isA(ENTITYX10,r_0017_0024__Samurai_families)
+      &amp; isA(ENTITYX10,r_0017_0024__Samurai__r_0017_0025__families)
       &amp; r_0017_0026__in(ENTITYX10) = ENTITYX11
       &amp; isA(ENTITYX11,r_0017_0027__government)
       &amp; isA(ENTITYX15,r_0017_0035__and)
@@ -360,14 +360,14 @@ fof(id_17_A_KYOTO_2,axiom,
       &amp; conj2(ENTITYX15) = ENTITYX17
       &amp; isA(ENTITYX16,r_0017_0034__politics)
       &amp; isA(ENTITYX17,r_0017_0036__culture)
-      &amp; isA(r_0017_0019__Rinzai_School,r_0017_0019__Rinzai_School)
+      &amp; isA(r_0017_0019__Rinzai__r_0017_0020__School,r_0017_0019__Rinzai_r_0017_0020__School)
       &amp; isA(ATTRIBX5,r_0017_0011__regional)
       &amp; isA(ATTRIBX7,r_0017_0015__general)
       &amp; isA(CONJX20,r_0017_0029__and)
       &amp; conj1(CONJX20) = EVENTX12
       &amp; isA(EVENTX12,r_0017_0021__received)
       &amp; r_0017_0001__In_cnt(EVENTX12) = ENTITYX1
-      &amp; arg0(EVENTX12) = r_0017_0019__Rinzai_School
+      &amp; arg0(EVENTX12) = r_0017_0019__Rinzai__r_0017_0020__School
       &amp; arg1(EVENTX12) = ENTITYX9
       &amp; r_0017_0023__from_dir(EVENTX12) = ENTITYX10
       &amp; conj2(CONJX20) = EVENTX19

@@ -112,16 +112,16 @@
 arc(r_0230_0003___apos_s,r_0230_0002__That,arg0).
 arc(r_0230_0003___apos_s,r_0230_0004__true,prd2).
 arc(r_0230_0008__said,r_0230_0007__Nasha,arg0).
-arc(r_0230_0008__said,utterance_0230_1003,arg1).
-arc(utterance_0230_1003,r_0230_0003___apos_s,part1).
+arc(r_0230_0008__said,r_0230_1003__utterance,arg1).
+arc(r_0230_1003__utterance,r_0230_0003___apos_s,part1).
 
 </pre>
 <br>
 <pre>
-fof(id_230_A_DICK_1952,axiom,
+fof(id__230_A_DICK_1952,axiom,
     ? [STATEX1,EVENTX7,CONJX6,EVENTX5,ATTRIBX4] :
       ( STATEX1 = CONJX6
-      &amp; isA(CONJX6,utterance_0230_1003)
+      &amp; isA(CONJX6,r_0230_1003__utterance)
       &amp; part1(CONJX6) = EVENTX5
       &amp; isA(EVENTX5,r_0230_0003___apos_s)
       &amp; arg0(EVENTX5) = r_0230_0002__That

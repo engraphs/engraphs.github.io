@@ -195,8 +195,6 @@ In a half-circle the white squares jutted from the slag , chipped and cracked , 
 </svg>
 <br>
 <pre>
-arc(abs_0069_1005,r_0069_0007__jutted,scope).
-arc(abs_0069_1005,r_0069_0013__and,restriction).
 arc(r_0069_0006__squares,r_0069_0005__white,attrib2).
 arc(r_0069_0007__jutted,r_0069_0003__half_circle,r_0069_0001__In_mnr).
 arc(r_0069_0007__jutted,r_0069_0006__squares,arg0).
@@ -208,11 +206,13 @@ arc(r_0069_0013__and,r_0069_0014__cracked,conj2).
 arc(r_0069_0014__cracked,r_0069_0006__squares,arg1).
 arc(r_0069_0014__cracked,r_0069_0018__teeth,r_0069_0016__like_mnr).
 arc(r_0069_0018__teeth,r_0069_0017__broken,attrib1).
+arc(r_0069_1005__abs,r_0069_0007__jutted,scope).
+arc(r_0069_1005__abs,r_0069_0013__and,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_69_A_DICK_1952,axiom,
+fof(id__69_A_DICK_1952,axiom,
     ? [CONNX6,CONJX12,EVENTX11,EVENTX10,EVENTX13,ENTITYX1,ENTITYX2,ENTITYX4,ENTITYX8,ATTRIBX9,ATTRIBX3] :
       ( isA(ENTITYX1,r_0069_0003__half_circle)
       &amp; isA(ENTITYX2,r_0069_0006__squares)
@@ -222,7 +222,7 @@ fof(id_69_A_DICK_1952,axiom,
       &amp; attrib1(ENTITYX8) = ATTRIBX9
       &amp; isA(ATTRIBX3,r_0069_0005__white)
       &amp; isA(ATTRIBX9,r_0069_0017__broken)
-      &amp; isA(CONNX6,abs_0069_1005)
+      &amp; isA(CONNX6,r_0069_1005__abs)
       &amp; scope(CONNX6) = EVENTX13
       &amp; isA(EVENTX13,r_0069_0007__jutted)
       &amp; r_0069_0001__In_mnr(EVENTX13) = ENTITYX1

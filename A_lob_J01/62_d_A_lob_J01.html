@@ -295,28 +295,28 @@ The probe can be evacuated and filled with inert gas via the tube L which must o
 arc(r_0062_0003__can,r_0062_0004__be,scope).
 arc(r_0062_0004__be,r_0062_0006__and,catenative).
 arc(r_0062_0005__evacuated,r_0062_0002__probe,arg1).
-arc(r_0062_0005__evacuated,r_0062_0013__tube_L,r_0062_0011__via_mnr).
+arc(r_0062_0005__evacuated,r_0062_0013__tube__r_0062_0014__L,r_0062_0011__via_mnr).
 arc(r_0062_0006__and,r_0062_0005__evacuated,conj1).
 arc(r_0062_0006__and,r_0062_0007__filled,conj2).
 arc(r_0062_0007__filled,r_0062_0002__probe,arg1).
 arc(r_0062_0007__filled,r_0062_0010__gas,r_0062_0008__with_mnr).
-arc(r_0062_0007__filled,r_0062_0013__tube_L,r_0062_0011__via_mnr).
+arc(r_0062_0007__filled,r_0062_0013__tube__r_0062_0014__L,r_0062_0011__via_mnr).
 arc(r_0062_0010__gas,r_0062_0009__inert,attrib1).
 arc(r_0062_0016__must,r_0062_0018__be,scope).
 arc(r_0062_0017__of_course,r_0062_0021__after_tmp,scope).
-arc(r_0062_0018__be,r_0062_0013__tube_L,arg0).
+arc(r_0062_0018__be,r_0062_0013__tube__r_0062_0014__L,arg0).
 arc(r_0062_0018__be,r_0062_0020__isolated,prd2).
 arc(r_0062_0020__isolated,r_0062_0019__electrically,quality1).
 arc(r_0062_0021__after_tmp,r_0062_0016__must,scope).
 arc(r_0062_0021__after_tmp,r_0062_0023__has,restriction).
 arc(r_0062_0023__has,r_0062_0024__been,catenative).
-arc(r_0062_0024__been,r_0062_0025__carried_out,catenative).
-arc(r_0062_0025__carried_out,r_0062_0022__this,arg1).
+arc(r_0062_0024__been,r_0062_0025__carried__r_0062_0026__out,catenative).
+arc(r_0062_0025__carried__r_0062_0026__out,r_0062_0022__this,arg1).
 
 </pre>
 <br>
 <pre>
-fof(id_62_A_lob_J01,axiom,
+fof(id__62_A_lob_J01,axiom,
     ? [CATENATIVEX3,CATENATIVEX10,CATENATIVEX11,OPERATORX2,EVENTX23,CONJX22,EVENTX21,EVENTX18,OPERATORX6,CONNX9,EVENTX15,EVENTX14,EVENTX13,OPERATORX16,EVENTX17,ENTITYX1,ENTITYX5,ENTITYX19,ATTRIBX20,ATTRIBX7,QUALITYX8] :
       ( CATENATIVEX3 = CONJX22
       &amp; isA(CONJX22,r_0062_0006__and)
@@ -333,7 +333,7 @@ fof(id_62_A_lob_J01,axiom,
       &amp; isA(EVENTX14,r_0062_0024__been)
       &amp; catenative(EVENTX14) = CATENATIVEX11
       &amp; CATENATIVEX11 = EVENTX13
-      &amp; isA(EVENTX13,r_0062_0025__carried_out)
+      &amp; isA(EVENTX13,r_0062_0025__carried__r_0062_0026__out)
       &amp; arg1(EVENTX13) = r_0062_0022__this
       &amp; isA(ENTITYX1,r_0062_0002__probe)
       &amp; isA(OPERATORX6,r_0062_0017__of_course)
@@ -348,7 +348,7 @@ fof(id_62_A_lob_J01,axiom,
       &amp; restriction(CONNX9) = EVENTX15
       &amp; isA(EVENTX15,r_0062_0023__has)
       &amp; catenative(EVENTX15) = CATENATIVEX10
-      &amp; isA(ENTITYX5,r_0062_0013__tube_L)
+      &amp; isA(ENTITYX5,r_0062_0013__tube__r_0062_0014__L)
       &amp; isA(ENTITYX19,r_0062_0010__gas)
       &amp; attrib1(ENTITYX19) = ATTRIBX20
       &amp; isA(ATTRIBX7,r_0062_0020__isolated)

@@ -228,8 +228,6 @@ During your stay you went to the theatre to see a musical show and had a very di
 </svg>
 <br>
 <pre>
-arc(cnt_0004_1004,r_0004_0005__went,scope).
-arc(cnt_0004_1004,r_0004_0010__see,restriction).
 arc(r_0004_0003__stay,r_0004_0002__your,genv).
 arc(r_0004_0005__went,r_0004_0002__your,arg0).
 arc(r_0004_0005__went,r_0004_0003__stay,r_0004_0001__During_tmp).
@@ -237,18 +235,20 @@ arc(r_0004_0005__went,r_0004_0008__theatre,r_0004_0006__to_dir).
 arc(r_0004_0010__see,r_0004_0002__your,arg0).
 arc(r_0004_0010__see,r_0004_0013__show,arg1).
 arc(r_0004_0013__show,r_0004_0012__musical,attrib2).
-arc(r_0004_0014__and,cnt_0004_1004,conj1).
 arc(r_0004_0014__and,r_0004_0015__had,conj2).
+arc(r_0004_0014__and,r_0004_1004__cnt,conj1).
 arc(r_0004_0015__had,r_0004_0002__your,arg0).
 arc(r_0004_0015__had,r_0004_0003__stay,r_0004_0001__During_tmp).
 arc(r_0004_0015__had,r_0004_0019__evening,arg1).
 arc(r_0004_0018__disappointing,r_0004_0017__very,quality1).
 arc(r_0004_0019__evening,r_0004_0018__disappointing,attrib2).
+arc(r_0004_1004__cnt,r_0004_0005__went,scope).
+arc(r_0004_1004__cnt,r_0004_0010__see,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_4_A_fce_0102_2000_06,axiom,
+fof(id__4_A_fce_0102_2000_06,axiom,
     ? [HEARERX2,CONJX14,EVENTX13,CONNX5,EVENTX8,EVENTX9,ENTITYX1,ENTITYX10,ENTITYX3,ENTITYX6,ATTRIBX11,ATTRIBX7,QUALITYX12] :
       ( isA(ENTITYX1,r_0004_0003__stay)
       &amp; genv(ENTITYX1) = r_0004_0002__your
@@ -264,7 +264,7 @@ fof(id_4_A_fce_0102_2000_06,axiom,
       &amp; isA(QUALITYX12,r_0004_0017__very)
       &amp; isA(CONJX14,r_0004_0014__and)
       &amp; conj1(CONJX14) = CONNX5
-      &amp; isA(CONNX5,cnt_0004_1004)
+      &amp; isA(CONNX5,r_0004_1004__cnt)
       &amp; scope(CONNX5) = EVENTX9
       &amp; isA(EVENTX9,r_0004_0005__went)
       &amp; r_0004_0001__During_tmp(EVENTX9) = ENTITYX1

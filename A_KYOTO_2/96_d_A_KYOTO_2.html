@@ -111,21 +111,21 @@ It has about 150 branch temples mainly in the area of Shiga Prefecture .
 <br>
 <pre>
 arc(r_0104_0002__has,r_0104_0001__It,arg0).
-arc(r_0104_0002__has,r_0104_0004__150_branch_temples,arg1).
-arc(r_0104_0004__150_branch_temples,r_0104_0003__about,quality1).
-arc(r_0104_0004__150_branch_temples,r_0104_0010__area,r_0104_0007__mainly_in).
-arc(r_0104_0010__area,r_0104_0012__Shiga_Prefecture,r_0104_0011__of).
+arc(r_0104_0002__has,r_0104_0004__150__r_0104_0005__branch_r_0104_0006__temples,arg1).
+arc(r_0104_0004__150__r_0104_0005__branch_r_0104_0006__temples,r_0104_0003__about,quality1).
+arc(r_0104_0004__150__r_0104_0005__branch_r_0104_0006__temples,r_0104_0010__area,r_0104_0007__mainly_r_0104_0008__in).
+arc(r_0104_0010__area,r_0104_0012__Shiga__r_0104_0013__Prefecture,r_0104_0011__of).
 
 </pre>
 <br>
 <pre>
-fof(id_104_A_KYOTO_2,axiom,
+fof(id__104_A_KYOTO_2,axiom,
     ? [EVENTX4,ENTITYX1,ENTITYX3,QUALITYX2] :
-      ( isA(ENTITYX1,r_0104_0004__150_branch_temples)
+      ( isA(ENTITYX1,r_0104_0004__150__r_0104_0005__branch_r_0104_0006__temples)
       &amp; quality1(ENTITYX1) = QUALITYX2
-      &amp; r_0104_0007__mainly_in(ENTITYX1) = ENTITYX3
+      &amp; r_0104_0007__mainly__r_0104_0008__in(ENTITYX1) = ENTITYX3
       &amp; isA(ENTITYX3,r_0104_0010__area)
-      &amp; r_0104_0011__of(ENTITYX3) = r_0104_0012__Shiga_Prefecture
+      &amp; r_0104_0011__of(ENTITYX3) = r_0104_0012__Shiga__r_0104_0013__Prefecture
       &amp; isA(QUALITYX2,r_0104_0003__about)
       &amp; isA(EVENTX4,r_0104_0002__has)
       &amp; arg0(EVENTX4) = r_0104_0001__It

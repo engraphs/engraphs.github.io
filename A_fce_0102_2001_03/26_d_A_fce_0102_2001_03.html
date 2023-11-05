@@ -137,8 +137,8 @@ You have had a class discussion on food and eating habits .
 <pre>
 arc(r_0030_0002__have,r_0030_0003__had,catenative).
 arc(r_0030_0003__had,r_0030_0001__You,arg0).
-arc(r_0030_0003__had,r_0030_0005__class_discussion,arg1).
-arc(r_0030_0005__class_discussion,r_0030_0011__habits,r_0030_0007__on).
+arc(r_0030_0003__had,r_0030_0005__class__r_0030_0006__discussion,arg1).
+arc(r_0030_0005__class__r_0030_0006__discussion,r_0030_0011__habits,r_0030_0007__on).
 arc(r_0030_0009__and,r_0030_0008__food,conj1).
 arc(r_0030_0009__and,r_0030_0010__eating,conj2).
 arc(r_0030_0011__habits,r_0030_0009__and,nlyr1).
@@ -146,13 +146,13 @@ arc(r_0030_0011__habits,r_0030_0009__and,nlyr1).
 </pre>
 <br>
 <pre>
-fof(id_30_A_fce_0102_2001_03,axiom,
+fof(id__30_A_fce_0102_2001_03,axiom,
     ? [CATENATIVEX1,EVENTX8,EVENTX7,ENTITYX2,ENTITYX3,ENTITYX4,ENTITYX5,ENTITYX6] :
       ( CATENATIVEX1 = EVENTX7
       &amp; isA(EVENTX7,r_0030_0003__had)
       &amp; arg0(EVENTX7) = r_0030_0001__You
       &amp; arg1(EVENTX7) = ENTITYX2
-      &amp; isA(ENTITYX2,r_0030_0005__class_discussion)
+      &amp; isA(ENTITYX2,r_0030_0005__class__r_0030_0006__discussion)
       &amp; r_0030_0007__on(ENTITYX2) = ENTITYX3
       &amp; isA(ENTITYX3,r_0030_0011__habits)
       &amp; nlyr1(ENTITYX3) = ENTITYX4

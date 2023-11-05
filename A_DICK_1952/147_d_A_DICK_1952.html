@@ -155,8 +155,6 @@ They wandered around the ruins , picking up rocks and fragments .
 </svg>
 <br>
 <pre>
-arc(mnr_0195_1002,r_0195_0002__wandered,scope).
-arc(mnr_0195_1002,r_0195_0007__picking,restriction).
 arc(r_0195_0002__wandered,r_0195_0001__They,arg0).
 arc(r_0195_0002__wandered,r_0195_0005__ruins,r_0195_0003__around_clr_dir).
 arc(r_0195_0007__picking,r_0195_0001__They,arg0).
@@ -164,11 +162,13 @@ arc(r_0195_0007__picking,r_0195_0008__up,clr_dir2).
 arc(r_0195_0007__picking,r_0195_0010__and,arg1).
 arc(r_0195_0010__and,r_0195_0009__rocks,conj1).
 arc(r_0195_0010__and,r_0195_0011__fragments,conj2).
+arc(r_0195_1002__mnr,r_0195_0002__wandered,scope).
+arc(r_0195_1002__mnr,r_0195_0007__picking,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_195_A_DICK_1952,axiom,
+fof(id__195_A_DICK_1952,axiom,
     ? [CONNX3,EVENTX8,EVENTX9,ENTITYX1,ENTITYX5,ENTITYX6,ENTITYX7,QUALITYX4] :
       ( isA(ENTITYX1,r_0195_0005__ruins)
       &amp; isA(ENTITYX5,r_0195_0010__and)
@@ -177,7 +177,7 @@ fof(id_195_A_DICK_1952,axiom,
       &amp; isA(ENTITYX6,r_0195_0009__rocks)
       &amp; isA(ENTITYX7,r_0195_0011__fragments)
       &amp; isA(QUALITYX4,r_0195_0008__up)
-      &amp; isA(CONNX3,mnr_0195_1002)
+      &amp; isA(CONNX3,r_0195_1002__mnr)
       &amp; scope(CONNX3) = EVENTX9
       &amp; isA(EVENTX9,r_0195_0002__wandered)
       &amp; arg0(EVENTX9) = r_0195_0001__They

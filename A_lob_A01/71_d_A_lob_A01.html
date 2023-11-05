@@ -421,29 +421,29 @@ It will now have to pay more &mdash; and increase taxation to do so &mdash; or r
 </svg>
 <br>
 <pre>
-arc(cnt_0074_1015,r_0075_0010__increase,scope).
-arc(cnt_0074_1015,r_0075_0014__so,restriction).
-arc(r_0074_0004__rejection,r_0074_0001__President_Kennedy,genv).
+arc(r_0074_0004__rejection,r_0074_0001__President__r_0074_0002__Kennedy,genv).
 arc(r_0074_0004__rejection,r_0074_0006__it,r_0074_0005__of).
 arc(r_0074_0007__is,r_0074_0004__rejection,arg0).
 arc(r_0074_0007__is,r_0074_0010__blow,prd2).
 arc(r_0074_0010__blow,r_0074_0009__painful,attrib2).
-arc(r_0074_0010__blow,r_0074_0013__West_government,r_0074_0011__to).
-arc(r_0074_0013__West_government,r_0074_0014__German,attrib3).
+arc(r_0074_0010__blow,r_0074_0013__West__r_0074_0015__government,r_0074_0011__to).
+arc(r_0074_0013__West__r_0074_0015__government,r_0074_0014__German,attrib3).
+arc(r_0074_1015__cnt,r_0075_0010__increase,scope).
+arc(r_0074_1015__cnt,r_0075_0014__so,restriction).
 arc(r_0075_0002__will,r_0075_0004__have,scope).
 arc(r_0075_0003__now,r_0075_0002__will,scope).
 arc(r_0075_0004__have,r_0075_0016__or,catenative).
-arc(r_0075_0006__pay,r_0074_0013__West_government,arg0).
+arc(r_0075_0006__pay,r_0074_0013__West__r_0074_0015__government,arg0).
 arc(r_0075_0006__pay,z_0074_1012,arg1).
-arc(r_0075_0009__and,cnt_0074_1015,conj2).
+arc(r_0075_0009__and,r_0074_1015__cnt,conj2).
 arc(r_0075_0009__and,r_0075_0006__pay,conj1).
-arc(r_0075_0010__increase,r_0074_0013__West_government,arg0).
+arc(r_0075_0010__increase,r_0074_0013__West__r_0074_0015__government,arg0).
 arc(r_0075_0010__increase,r_0075_0011__taxation,arg1).
-arc(r_0075_0013__do,r_0074_0013__West_government,arg0).
+arc(r_0075_0013__do,r_0074_0013__West__r_0074_0015__government,arg0).
 arc(r_0075_0014__so,r_0075_0013__do,scope).
 arc(r_0075_0016__or,r_0075_0009__and,conj1).
 arc(r_0075_0016__or,r_0075_0017__run,conj2).
-arc(r_0075_0017__run,r_0074_0013__West_government,arg0).
+arc(r_0075_0017__run,r_0074_0013__West__r_0074_0015__government,arg0).
 arc(r_0075_0017__run,r_0075_0020__risks,arg1).
 arc(r_0075_0020__risks,r_0075_0019__obvious,attrib2).
 arc(r_0075_0020__risks,r_0075_0022__upsetting,r_0075_0021__in).
@@ -455,7 +455,7 @@ arc(z_0074_1012,r_0075_0007__more,attrib1).
 </pre>
 <br>
 <pre>
-fof(id_74_A_lob_A01__75_A_lob_A01,axiom,
+fof(id__74_A_lob_A01__75_A_lob_A01,axiom,
     ? [STATEX9,EVENTX23,ADENAUER_GOVERNMENTX7,OPERATORX8,OPERATORX32,EVENTX33,CONJX31,EVENTX30,EVENTX29,CONJX20,CONNX16,OPERATORX17,EVENTX18,EVENTX19,EVENTX13,EVENTX6,ENTITYX21,ENTITYX26,ENTITYX14,ENTITYX10,ENTITYX1,ENTITYX2,ADENAUER_GOVERNMENTX4,ATTRIBX22,ATTRIBX27,ATTRIBX28,ATTRIBX11,ATTRIBX3,ATTRIBX5] :
       ( STATEX9 = CONJX31
       &amp; isA(CONJX31,r_0075_0016__or)
@@ -466,7 +466,7 @@ fof(id_74_A_lob_A01__75_A_lob_A01,axiom,
       &amp; arg0(EVENTX13) = ADENAUER_GOVERNMENTX7
       &amp; arg1(EVENTX13) = ENTITYX10
       &amp; conj2(CONJX20) = CONNX16
-      &amp; isA(CONNX16,cnt_0074_1015)
+      &amp; isA(CONNX16,r_0074_1015__cnt)
       &amp; scope(CONNX16) = EVENTX19
       &amp; isA(EVENTX19,r_0075_0010__increase)
       &amp; arg0(EVENTX19) = ADENAUER_GOVERNMENTX7
@@ -484,12 +484,12 @@ fof(id_74_A_lob_A01__75_A_lob_A01,axiom,
       &amp; isA(EVENTX29,r_0075_0022__upsetting)
       &amp; arg1(EVENTX29) = ENTITYX26
       &amp; isA(ENTITYX1,r_0074_0004__rejection)
-      &amp; genv(ENTITYX1) = r_0074_0001__President_Kennedy
+      &amp; genv(ENTITYX1) = r_0074_0001__President__r_0074_0002__Kennedy
       &amp; r_0074_0005__of(ENTITYX1) = r_0074_0006__it
       &amp; isA(ENTITYX2,r_0074_0010__blow)
       &amp; attrib2(ENTITYX2) = ATTRIBX3
       &amp; r_0074_0011__to(ENTITYX2) = ADENAUER_GOVERNMENTX4
-      &amp; isA(ADENAUER_GOVERNMENTX4,r_0074_0013__West_government)
+      &amp; isA(ADENAUER_GOVERNMENTX4,r_0074_0013__West__r_0074_0015__government)
       &amp; attrib3(ADENAUER_GOVERNMENTX4) = ATTRIBX5
       &amp; ADENAUER_GOVERNMENTX7 = ADENAUER_GOVERNMENTX4
       &amp; isA(ENTITYX10,z_0074_1012)

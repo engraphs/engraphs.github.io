@@ -233,9 +233,6 @@ Write a composition , explaining your views with reference to the book or one of
 </svg>
 <br>
 <pre>
-arc(cnt_0029_1005,r_0029_0001__Write,scope).
-arc(cnt_0029_1005,r_0029_0005__explaining,restriction).
-arc(imperative_0029_1002,cnt_0029_1005,scope).
 arc(r_0029_0001__Write,r_0029_0003__composition,arg1).
 arc(r_0029_0005__explaining,r_0029_0007__views,arg1).
 arc(r_0029_0005__explaining,r_0029_0009__reference,r_0029_0008__with_mnr).
@@ -248,11 +245,14 @@ arc(r_0029_0018__stories,r_0029_0017__short,attrib2).
 arc(r_0029_0020__have,r_0029_0021__read,catenative).
 arc(r_0029_0021__read,r_0029_0006__your,arg0).
 arc(r_0029_0021__read,r_0029_0013__or,arg1).
+arc(r_0029_1002__imperative,r_0029_1005__cnt,scope).
+arc(r_0029_1005__cnt,r_0029_0001__Write,scope).
+arc(r_0029_1005__cnt,r_0029_0005__explaining,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_29_A_fce_0101_2000_06,axiom,
+fof(id__29_A_fce_0101_2000_06,axiom,
     ? [CATENATIVEX11,HEARERX10,OPERATORX2,CONNX6,EVENTX18,EVENTX13,EVENTX12,EVENTX19,ENTITYX4,ENTITYX7,ENTITYX8,ENTITYX9,ENTITYX14,ENTITYX15,ENTITYX16,ATTRIBX17] :
       ( CATENATIVEX11 = EVENTX12
       &amp; isA(EVENTX12,r_0029_0021__read)
@@ -275,9 +275,9 @@ fof(id_29_A_fce_0101_2000_06,axiom,
       &amp; isA(ENTITYX16,r_0029_0018__stories)
       &amp; attrib2(ENTITYX16) = ATTRIBX17
       &amp; isA(ATTRIBX17,r_0029_0017__short)
-      &amp; isA(OPERATORX2,imperative_0029_1002)
+      &amp; isA(OPERATORX2,r_0029_1002__imperative)
       &amp; scope(OPERATORX2) = CONNX6
-      &amp; isA(CONNX6,cnt_0029_1005)
+      &amp; isA(CONNX6,r_0029_1005__cnt)
       &amp; scope(CONNX6) = EVENTX19
       &amp; isA(EVENTX19,r_0029_0001__Write)
       &amp; arg1(EVENTX19) = ENTITYX4

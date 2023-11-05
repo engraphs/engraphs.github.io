@@ -122,24 +122,24 @@ The island communities were undecided about which side to back for a time .
 </svg>
 <br>
 <pre>
-arc(question_0044_1007,r_0044_0010__back,scope).
-arc(r_0044_0004__were,question_0044_1007,r_0044_0006__about_rst).
-arc(r_0044_0004__were,r_0044_0002__island_communities,arg0).
+arc(r_0044_0004__were,r_0044_0002__island__r_0044_0003__communities,arg0).
 arc(r_0044_0004__were,r_0044_0005__undecided,prd2).
 arc(r_0044_0004__were,r_0044_0013__time,r_0044_0011__for_tmp).
+arc(r_0044_0004__were,r_0044_1007__question,r_0044_0006__about_rst).
 arc(r_0044_0010__back,r_0044_0008__side,arg1).
+arc(r_0044_1007__question,r_0044_0010__back,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_44_A_ANC_HistoryOfGreece,axiom,
+fof(id__44_A_ANC_HistoryOfGreece,axiom,
     ? [EVENTX3,EVENTX11,OPERATORX7,EVENTX9,ENTITYX1,ENTITYX10,ENTITYX8,ATTRIBX2] :
       ( EVENTX3 = OPERATORX7
-      &amp; isA(OPERATORX7,question_0044_1007)
+      &amp; isA(OPERATORX7,r_0044_1007__question)
       &amp; scope(OPERATORX7) = EVENTX9
       &amp; isA(EVENTX9,r_0044_0010__back)
       &amp; arg1(EVENTX9) = ENTITYX8
-      &amp; isA(ENTITYX1,r_0044_0002__island_communities)
+      &amp; isA(ENTITYX1,r_0044_0002__island__r_0044_0003__communities)
       &amp; isA(ENTITYX8,r_0044_0008__side)
       &amp; isA(ENTITYX10,r_0044_0013__time)
       &amp; isA(ATTRIBX2,r_0044_0005__undecided)

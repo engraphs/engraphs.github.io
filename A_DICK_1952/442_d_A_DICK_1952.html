@@ -252,17 +252,17 @@ She folded her arms , sitting down on the edge of the table .
 </svg>
 <br>
 <pre>
-arc(abs_0572_1013,r_0573_0002__folded,scope).
-arc(abs_0572_1013,r_0573_0006__sitting,restriction).
-arc(mnr_0572_1002,r_0572_0002__stood,scope).
-arc(mnr_0572_1002,r_0572_0008__watching,restriction).
 arc(r_0572_0002__stood,r_0572_0001__Nasha,arg0).
-arc(r_0572_0002__stood,r_0572_0005__control_room,r_0572_0003__in_loc).
+arc(r_0572_0002__stood,r_0572_0005__control__r_0572_0006__room,r_0572_0003__in_loc).
 arc(r_0572_0008__watching,r_0572_0001__Nasha,arg0).
 arc(r_0572_0008__watching,r_0572_0011__fall,arg1).
 arc(r_0572_0011__fall,r_0572_0010__planet,arg0).
 arc(r_0572_0011__fall,r_0572_0012__away,clr_dir2).
 arc(r_0572_0011__fall,r_0572_0014__them,r_0572_0013__behind_dir).
+arc(r_0572_1002__mnr,r_0572_0002__stood,scope).
+arc(r_0572_1002__mnr,r_0572_0008__watching,restriction).
+arc(r_0572_1013__abs,r_0573_0002__folded,scope).
+arc(r_0572_1013__abs,r_0573_0006__sitting,restriction).
 arc(r_0573_0002__folded,r_0572_0001__Nasha,arg0).
 arc(r_0573_0002__folded,r_0573_0004__arms,arg1).
 arc(r_0573_0004__arms,r_0572_0001__Nasha,genv).
@@ -273,14 +273,14 @@ arc(r_0573_0010__edge,r_0573_0013__table,r_0573_0011__of).
 </pre>
 <br>
 <pre>
-fof(id_572_A_DICK_1952__573_A_DICK_1952,axiom,
+fof(id__572_A_DICK_1952__573_A_DICK_1952,axiom,
     ? [STATEX5,NASHAX10,NASHAX12,CONNX14,EVENTX17,EVENTX18,CONNX3,EVENTX8,EVENTX7,EVENTX9,ENTITYX11,ENTITYX15,ENTITYX16,ENTITYX1,ENTITYX4,QUALITYX6] :
       ( STATEX5 = EVENTX7
       &amp; isA(EVENTX7,r_0572_0011__fall)
       &amp; arg0(EVENTX7) = ENTITYX4
       &amp; clr_dir2(EVENTX7) = QUALITYX6
       &amp; r_0572_0013__behind_dir(EVENTX7) = r_0572_0014__them
-      &amp; isA(ENTITYX1,r_0572_0005__control_room)
+      &amp; isA(ENTITYX1,r_0572_0005__control__r_0572_0006__room)
       &amp; isA(ENTITYX4,r_0572_0010__planet)
       &amp; NASHAX10 = r_0572_0001__Nasha
       &amp; isA(ENTITYX11,r_0573_0004__arms)
@@ -291,7 +291,7 @@ fof(id_572_A_DICK_1952__573_A_DICK_1952,axiom,
       &amp; r_0573_0011__of(ENTITYX15) = ENTITYX16
       &amp; isA(ENTITYX16,r_0573_0013__table)
       &amp; isA(QUALITYX6,r_0572_0012__away)
-      &amp; isA(CONNX3,mnr_0572_1002)
+      &amp; isA(CONNX3,r_0572_1002__mnr)
       &amp; scope(CONNX3) = EVENTX9
       &amp; isA(EVENTX9,r_0572_0002__stood)
       &amp; arg0(EVENTX9) = r_0572_0001__Nasha
@@ -300,7 +300,7 @@ fof(id_572_A_DICK_1952__573_A_DICK_1952,axiom,
       &amp; isA(EVENTX8,r_0572_0008__watching)
       &amp; arg0(EVENTX8) = r_0572_0001__Nasha
       &amp; arg1(EVENTX8) = STATEX5
-      &amp; isA(CONNX14,abs_0572_1013)
+      &amp; isA(CONNX14,r_0572_1013__abs)
       &amp; scope(CONNX14) = EVENTX18
       &amp; isA(EVENTX18,r_0573_0002__folded)
       &amp; arg0(EVENTX18) = NASHAX10

@@ -178,28 +178,28 @@ I want to say something to you .
 </svg>
 <br>
 <pre>
-arc(imperative_0160_1007,r_0160_0002__Come_on,scope).
 arc(r_0160_0007__said,r_0160_0006__Nasha,arg0).
-arc(r_0160_0007__said,utterance_0160_1003,arg1).
+arc(r_0160_0007__said,r_0160_1003__utterance,arg1).
+arc(r_0160_1003__utterance,r_0160_1007__imperative,part1).
+arc(r_0160_1007__imperative,r_0160_0002__Come__r_0160_0003__on,scope).
 arc(r_0162_0002__want,r_0160_0006__Nasha,arg0).
 arc(r_0162_0002__want,r_0162_0004__say,arg1).
 arc(r_0162_0004__say,r_0160_0006__Nasha,arg0).
 arc(r_0162_0004__say,r_0162_0005__something,arg1).
 arc(r_0162_0004__say,r_0162_0007__you,r_0162_0006__to_arg2).
-arc(utterance_0160_1003,imperative_0160_1007,part1).
 arc(z_0160_1014,r_0160_0006__Nasha,r_0161_0003__beside).
 
 </pre>
 <br>
 <pre>
-fof(id_160_A_DICK_1952__161_A_DICK_1952__162_A_DICK_1952,axiom,
+fof(id__160_A_DICK_1952__161_A_DICK_1952__162_A_DICK_1952,axiom,
     ? [STATEX1,STATEX17,NASHAX13,NASHAX16,EVENTX19,EVENTX18,EVENTX15,EVENTX10,CONJX9,OPERATORX7,EVENTX8] :
       ( STATEX1 = CONJX9
-      &amp; isA(CONJX9,utterance_0160_1003)
+      &amp; isA(CONJX9,r_0160_1003__utterance)
       &amp; part1(CONJX9) = OPERATORX7
-      &amp; isA(OPERATORX7,imperative_0160_1007)
+      &amp; isA(OPERATORX7,r_0160_1007__imperative)
       &amp; scope(OPERATORX7) = EVENTX8
-      &amp; isA(EVENTX8,r_0160_0002__Come_on)
+      &amp; isA(EVENTX8,r_0160_0002__Come__r_0160_0003__on)
       &amp; STATEX17 = EVENTX18
       &amp; isA(EVENTX18,r_0162_0004__say)
       &amp; arg0(EVENTX18) = NASHAX16

@@ -682,10 +682,6 @@ With that announcement a light briefly came on in those dull eyes to reveal that
 </svg>
 <br>
 <pre>
-arc(cnt_0066_1014,r_0067_0003__playing,scope).
-arc(cnt_0066_1014,r_0067_0010__pushing,restriction).
-arc(cnt_0066_1044,r_0069_0007__came_on,scope).
-arc(cnt_0066_1044,r_0069_0014__reveal,restriction).
 arc(r_0066_0001__When_tmp,r_0066_0003__got,restriction).
 arc(r_0066_0001__When_tmp,r_0066_0010__pushed,scope).
 arc(r_0066_0003__got,r_0066_0002__I,arg0).
@@ -696,8 +692,13 @@ arc(r_0066_0010__pushed,r_0066_0013__twenty_pences,r_0066_0011__over_clr).
 arc(r_0066_0015__owed,r_0066_0002__I,arg0).
 arc(r_0066_0015__owed,r_0066_0013__twenty_pences,arg1).
 arc(r_0066_0015__owed,r_0066_0016__her,arg2).
-arc(r_0067_0002__began,cnt_0066_1014,arg1).
+arc(r_0066_1014__cnt,r_0067_0003__playing,scope).
+arc(r_0066_1014__cnt,r_0067_0010__pushing,restriction).
+arc(r_0066_1032__utterance,r_0068_0018__like,part1).
+arc(r_0066_1044__cnt,r_0069_0007__came__r_0069_0008__on,scope).
+arc(r_0066_1044__cnt,r_0069_0014__reveal,restriction).
 arc(r_0067_0002__began,r_0066_0016__her,arg0).
+arc(r_0067_0002__began,r_0066_1014__cnt,arg1).
 arc(r_0067_0003__playing,r_0066_0013__twenty_pences,r_0067_0004__with_com).
 arc(r_0067_0003__playing,r_0066_0016__her,arg0).
 arc(r_0067_0003__playing,r_0067_0008__tabletop,r_0067_0006__on_loc).
@@ -717,32 +718,31 @@ arc(r_0068_0010__conspiracy,r_0068_0012__us,r_0068_0011__between).
 arc(r_0068_0013__and,r_0068_0006__as_if_mnr,conj1).
 arc(r_0068_0013__and,r_0068_0014__said,conj2).
 arc(r_0068_0014__said,r_0066_0016__her,arg0).
+arc(r_0068_0014__said,r_0066_1032__utterance,arg1).
 arc(r_0068_0014__said,r_0068_0001__Suddenly,tmp1).
-arc(r_0068_0014__said,utterance_0066_1032,arg1).
 arc(r_0068_0018__like,r_0066_0002__I,arg0).
 arc(r_0068_0018__like,r_0068_0019__art,arg1).
-arc(r_0069_0007__came_on,r_0069_0003__announcement,r_0069_0001__With_cnt).
-arc(r_0069_0007__came_on,r_0069_0005__light,arg0).
-arc(r_0069_0007__came_on,r_0069_0006__briefly,tmp3).
-arc(r_0069_0007__came_on,r_0069_0012__eyes,r_0069_0009__in_loc).
+arc(r_0069_0007__came__r_0069_0008__on,r_0069_0003__announcement,r_0069_0001__With_cnt).
+arc(r_0069_0007__came__r_0069_0008__on,r_0069_0005__light,arg0).
+arc(r_0069_0007__came__r_0069_0008__on,r_0069_0006__briefly,tmp3).
+arc(r_0069_0007__came__r_0069_0008__on,r_0069_0012__eyes,r_0069_0009__in_loc).
 arc(r_0069_0012__eyes,r_0069_0011__dull,attrib2).
 arc(r_0069_0014__reveal,r_0069_0005__light,arg0).
 arc(r_0069_0014__reveal,r_0069_0017__was,arg1).
 arc(r_0069_0017__was,r_0066_0016__her,arg0).
 arc(r_0069_0017__was,r_0069_0019__more,prd2).
-arc(r_0069_0018__quantificational__no,r_0069_0019__more,scope).
-arc(r_0069_0018__quantificational__no,z_0066_1051,restriction).
+arc(r_0069_0018__quantificational__r_0069_0018__no,r_0069_0019__more,scope).
+arc(r_0069_0018__quantificational__r_0069_0018__no,z_0066_1051,restriction).
 arc(r_0069_0019__more,r_0069_0021__eighteen,r_0069_0020__than).
 arc(r_0069_0019__more,z_0066_1051,modifier1).
-arc(utterance_0066_1032,r_0068_0018__like,part1).
 
 </pre>
 <br>
 <pre>
-fof(id_66_A_LooseChange__67_A_LooseChange__68_A_LooseChange__69_A_LooseChange,axiom,
+fof(id__66_A_LooseChange__67_A_LooseChange__68_A_LooseChange__69_A_LooseChange,axiom,
     ? [STATEX11,STATEX30,STATEX46,SPEAKERX5,SPEAKERX7,LAYLORX10,COINSX12,LAYLORX24,SPEAKERX25,SPEAKERX33,LAYLORX47,CONNX45,EVENTX54,EVENTX53,QUANTX50,EVENTX55,CONJX38,EVENTX37,CONJX36,EVENTX35,CONNX26,EVENTX28,EVENTX29,EVENTX22,CONNX15,EVENTX20,EVENTX21,CONNX1,EVENTX9,EVENTX8,EVENTX4,ENTITYX39,ENTITYX40,ENTITYX42,ENTITYX49,ENTITYX52,ENTITYX34,ENTITYX27,ENTITYX13,ENTITYX16,ENTITYX18,ENTITYX19,COINSX6,ENTITYX3,QUALITYX41,QUALITYX23,QUALITYX2,ATTRIBX48,ATTRIBX43,ATTRIBX17] :
       ( STATEX11 = CONNX15
-      &amp; isA(CONNX15,cnt_0066_1014)
+      &amp; isA(CONNX15,r_0066_1014__cnt)
       &amp; scope(CONNX15) = EVENTX21
       &amp; isA(EVENTX21,r_0067_0003__playing)
       &amp; arg0(EVENTX21) = LAYLORX10
@@ -755,7 +755,7 @@ fof(id_66_A_LooseChange__67_A_LooseChange__68_A_LooseChange__69_A_LooseChange,ax
       &amp; r_0067_0012__around_dir(EVENTX20) = ENTITYX16
       &amp; r_0067_0016__in_mnr(EVENTX20) = ENTITYX18
       &amp; STATEX30 = CONJX36
-      &amp; isA(CONJX36,utterance_0066_1032)
+      &amp; isA(CONJX36,r_0066_1032__utterance)
       &amp; part1(CONJX36) = EVENTX35
       &amp; isA(EVENTX35,r_0068_0018__like)
       &amp; arg0(EVENTX35) = SPEAKERX33
@@ -798,7 +798,7 @@ fof(id_66_A_LooseChange__67_A_LooseChange__68_A_LooseChange__69_A_LooseChange,ax
       &amp; isA(QUALITYX41,r_0069_0006__briefly)
       &amp; isA(ATTRIBX17,r_0067_0014__other)
       &amp; isA(ATTRIBX43,r_0069_0011__dull)
-      &amp; isA(QUANTX50,r_0069_0018__quantificational__no)
+      &amp; isA(QUANTX50,r_0069_0018__quantificational__r_0069_0018__no)
       &amp; restriction(QUANTX50) = ENTITYX49
       &amp; isA(ENTITYX49,z_0066_1051)
       &amp; scope(QUANTX50) = ATTRIBX48
@@ -834,9 +834,9 @@ fof(id_66_A_LooseChange__67_A_LooseChange__68_A_LooseChange__69_A_LooseChange,ax
       &amp; tmp1(EVENTX37) = QUALITYX23
       &amp; arg0(EVENTX37) = LAYLORX24
       &amp; arg1(EVENTX37) = STATEX30
-      &amp; isA(CONNX45,cnt_0066_1044)
+      &amp; isA(CONNX45,r_0066_1044__cnt)
       &amp; scope(CONNX45) = EVENTX55
-      &amp; isA(EVENTX55,r_0069_0007__came_on)
+      &amp; isA(EVENTX55,r_0069_0007__came__r_0069_0008__on)
       &amp; r_0069_0001__With_cnt(EVENTX55) = ENTITYX39
       &amp; arg0(EVENTX55) = ENTITYX40
       &amp; tmp3(EVENTX55) = QUALITYX41

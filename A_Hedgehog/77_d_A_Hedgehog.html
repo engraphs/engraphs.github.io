@@ -267,14 +267,14 @@ The progressive loss of suitable feeding areas through intensive gardening or in
 <br>
 <pre>
 arc(r_0082_0003__loss,r_0082_0002__progressive,attrib2).
-arc(r_0082_0003__loss,r_0082_0006__feeding_areas,r_0082_0004__of).
+arc(r_0082_0003__loss,r_0082_0006__feeding__r_0082_0007__areas,r_0082_0004__of).
 arc(r_0082_0003__loss,r_0082_0011__or,r_0082_0008__through).
-arc(r_0082_0006__feeding_areas,r_0082_0005__suitable,attrib1).
+arc(r_0082_0006__feeding__r_0082_0007__areas,r_0082_0005__suitable,attrib1).
 arc(r_0082_0010__gardening,r_0082_0009__intensive,attrib1).
 arc(r_0082_0011__or,r_0082_0010__gardening,conj1).
 arc(r_0082_0011__or,r_0082_0013__management,conj2).
 arc(r_0082_0013__management,r_0082_0012__inappropriate,attrib1).
-arc(r_0082_0013__management,r_0082_0015__amenity_grasslands,r_0082_0014__of).
+arc(r_0082_0013__management,r_0082_0015__amenity__r_0082_0016__grasslands,r_0082_0014__of).
 arc(r_0082_0017__are,r_0082_0003__loss,arg0).
 arc(r_0082_0017__are,r_0082_0020__issues,prd2).
 arc(r_0082_0018__also,r_0082_0017__are,scope).
@@ -287,13 +287,13 @@ arc(r_0082_0025__take,r_0082_0026__action,arg1).
 </pre>
 <br>
 <pre>
-fof(id_82_A_Hedgehog,axiom,
+fof(id__82_A_Hedgehog,axiom,
     ? [OPERATORX11,EVENTX17,OPERATORX15,EVENTX16,IDEOLOGYX1,ENTITYX12,ENTITYX14,ENTITYX3,ENTITYX5,ENTITYX6,ENTITYX8,ENTITYX10,ATTRIBX13,ATTRIBX2,ATTRIBX9,ATTRIBX7,ATTRIBX4] :
       ( isA(IDEOLOGYX1,r_0082_0003__loss)
       &amp; attrib2(IDEOLOGYX1) = ATTRIBX2
       &amp; r_0082_0004__of(IDEOLOGYX1) = ENTITYX3
       &amp; r_0082_0008__through(IDEOLOGYX1) = ENTITYX5
-      &amp; isA(ENTITYX3,r_0082_0006__feeding_areas)
+      &amp; isA(ENTITYX3,r_0082_0006__feeding__r_0082_0007__areas)
       &amp; attrib1(ENTITYX3) = ATTRIBX4
       &amp; isA(ENTITYX5,r_0082_0011__or)
       &amp; conj1(ENTITYX5) = ENTITYX6
@@ -303,7 +303,7 @@ fof(id_82_A_Hedgehog,axiom,
       &amp; isA(ENTITYX8,r_0082_0013__management)
       &amp; attrib1(ENTITYX8) = ATTRIBX9
       &amp; r_0082_0014__of(ENTITYX8) = ENTITYX10
-      &amp; isA(ENTITYX10,r_0082_0015__amenity_grasslands)
+      &amp; isA(ENTITYX10,r_0082_0015__amenity__r_0082_0016__grasslands)
       &amp; isA(OPERATORX15,r_0082_0024__can)
       &amp; scope(OPERATORX15) = EVENTX16
       &amp; isA(EVENTX16,r_0082_0025__take)

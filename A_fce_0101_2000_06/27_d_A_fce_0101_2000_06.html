@@ -142,7 +142,6 @@ Would you give a prize to the book you have read ?
 </svg>
 <br>
 <pre>
-arc(question_0028_1002,r_0028_0001__Would,scope).
 arc(r_0028_0001__Would,r_0028_0003__give,scope).
 arc(r_0028_0003__give,r_0028_0002__you,arg0).
 arc(r_0028_0003__give,r_0028_0005__prize,arg1).
@@ -150,11 +149,12 @@ arc(r_0028_0003__give,r_0028_0008__book,r_0028_0006__to_arg2).
 arc(r_0028_0010__have,r_0028_0011__read,catenative).
 arc(r_0028_0011__read,r_0028_0002__you,arg0).
 arc(r_0028_0011__read,r_0028_0008__book,arg1).
+arc(r_0028_1002__question,r_0028_0001__Would,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_28_A_fce_0101_2000_06,axiom,
+fof(id__28_A_fce_0101_2000_06,axiom,
     ? [CATENATIVEX6,HEARERX5,OPERATORX2,OPERATORX9,EVENTX10,EVENTX8,EVENTX7,ENTITYX3,ENTITYX4] :
       ( CATENATIVEX6 = EVENTX7
       &amp; isA(EVENTX7,r_0028_0011__read)
@@ -165,7 +165,7 @@ fof(id_28_A_fce_0101_2000_06,axiom,
       &amp; catenative(EVENTX8) = CATENATIVEX6
       &amp; isA(ENTITYX4,r_0028_0008__book)
       &amp; HEARERX5 = r_0028_0002__you
-      &amp; isA(OPERATORX2,question_0028_1002)
+      &amp; isA(OPERATORX2,r_0028_1002__question)
       &amp; scope(OPERATORX2) = OPERATORX9
       &amp; isA(OPERATORX9,r_0028_0001__Would)
       &amp; scope(OPERATORX9) = EVENTX10

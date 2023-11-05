@@ -267,8 +267,6 @@ Elected members brought individual strengths and points of view to meetings , so
 </svg>
 <br>
 <pre>
-arc(cnt_0060_1009,r_0060_0003__brought,scope).
-arc(cnt_0060_1009,r_0060_0015__or,restriction).
 arc(r_0060_0002__members,r_0060_0001__Elected,attrib1).
 arc(r_0060_0003__brought,r_0060_0002__members,arg0).
 arc(r_0060_0003__brought,r_0060_0006__and,arg1).
@@ -286,11 +284,13 @@ arc(r_0060_0016__re_grouping,r_0060_0002__members,arg0).
 arc(r_0060_0016__re_grouping,r_0060_0013__sometimes,tmp1).
 arc(r_0060_0016__re_grouping,r_0060_0019__issues,r_0060_0017__according_to_mnr).
 arc(r_0060_0019__issues,r_0060_0021__discussion,r_0060_0020__under).
+arc(r_0060_1009__cnt,r_0060_0003__brought,scope).
+arc(r_0060_1009__cnt,r_0060_0015__or,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_60_A_Alresford,axiom,
+fof(id__60_A_Alresford,axiom,
     ? [CONNX10,CONJX16,EVENTX15,EVENTX14,EVENTX17,ENTITYX1,ENTITYX3,ENTITYX8,ISSUESX12,ENTITYX13,ENTITYX5,ENTITYX6,ENTITYX7,ATTRIBX4,ATTRIBX2,QUALITYX11] :
       ( isA(ENTITYX1,r_0060_0002__members)
       &amp; attrib1(ENTITYX1) = ATTRIBX2
@@ -309,7 +309,7 @@ fof(id_60_A_Alresford,axiom,
       &amp; isA(ATTRIBX2,r_0060_0001__Elected)
       &amp; isA(ATTRIBX4,r_0060_0004__individual)
       &amp; isA(QUALITYX11,r_0060_0013__sometimes)
-      &amp; isA(CONNX10,cnt_0060_1009)
+      &amp; isA(CONNX10,r_0060_1009__cnt)
       &amp; scope(CONNX10) = EVENTX17
       &amp; isA(EVENTX17,r_0060_0003__brought)
       &amp; arg0(EVENTX17) = ENTITYX1

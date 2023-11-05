@@ -152,7 +152,7 @@
 arc(r_0062_0002__Protection,r_0062_0005__Information,r_0062_0003__of).
 arc(r_0062_0005__Information,r_0062_0004__Personal,attrib1).
 arc(r_0062_0006__Held,r_0062_0005__Information,arg1).
-arc(r_0062_0006__Held,r_0062_0010__and,arg0_by_lgs).
+arc(r_0062_0006__Held,r_0062_0010__and,arg0__r_0062_0007__by_lgs).
 arc(r_0062_0009__Governments,r_0062_0008__Local,attrib1).
 arc(r_0062_0010__and,r_0062_0009__Governments,conj1).
 arc(r_0062_0010__and,r_0062_0011__Others,conj2).
@@ -161,12 +161,12 @@ arc(z_0062_1011,r_0062_0002__Protection,z_0062_1002).
 </pre>
 <br>
 <pre>
-fof(id_62_A_law_h15A119,axiom,
+fof(id__62_A_law_h15A119,axiom,
     ? [EVENTX12,EVENTX10,ENTITYX3,ENTITYX4,ENTITYX6,ENTITYX7,ENTITYX9,ATTRIBX5,ATTRIBX8] :
       ( isA(ENTITYX3,r_0062_0002__Protection)
       &amp; r_0062_0003__of(ENTITYX3) = ENTITYX4
       &amp; isA(EVENTX10,r_0062_0006__Held)
-      &amp; arg0_by_lgs(EVENTX10) = ENTITYX6
+      &amp; arg0__r_0062_0007__by_lgs(EVENTX10) = ENTITYX6
       &amp; arg1(EVENTX10) = ENTITYX4
       &amp; isA(ENTITYX4,r_0062_0005__Information)
       &amp; attrib1(ENTITYX4) = ATTRIBX5

@@ -311,31 +311,31 @@ Having stirred it sufficiently , pour in the remainder of the wine drawn off , u
 </svg>
 <br>
 <pre>
-arc(abs_0028_1004,r_0028_0001__Having,restriction).
-arc(abs_0028_1004,r_0028_0016__until_tmp,scope).
-arc(cnt_0028_1021,r_0028_0023__stir,scope).
-arc(cnt_0028_1021,r_0028_0026__skimming_off,restriction).
-arc(imperative_0028_1002,cnt_0028_1021,scope).
 arc(r_0028_0001__Having,r_0028_0002__stirred,catenative).
 arc(r_0028_0002__stirred,r_0028_0003__it,arg1).
 arc(r_0028_0002__stirred,r_0028_0004__sufficiently,mnr3).
 arc(r_0028_0006__pour,r_0028_0009__remainder,r_0028_0007__in_clr).
 arc(r_0028_0009__remainder,r_0028_0012__wine,r_0028_0010__of).
-arc(r_0028_0013__drawn_off,r_0028_0012__wine,arg1).
+arc(r_0028_0013__drawn__r_0028_0014__off,r_0028_0012__wine,arg1).
 arc(r_0028_0016__until_tmp,r_0028_0006__pour,scope).
 arc(r_0028_0016__until_tmp,r_0028_0019__is,restriction).
 arc(r_0028_0019__is,r_0028_0018__cask,arg0).
 arc(r_0028_0019__is,r_0028_0020__full,prd2).
 arc(r_0028_0023__stir,r_0028_0022__then,tmp1).
 arc(r_0028_0023__stir,r_0028_0024__again,tmp3).
-arc(r_0028_0026__skimming_off,r_0028_0029__bubbles,arg1).
+arc(r_0028_0026__skimming__r_0028_0027__off,r_0028_0029__bubbles,arg1).
 arc(r_0028_0031__rise,r_0028_0029__bubbles,arg0).
 arc(r_0028_0031__rise,r_0028_0034__surface,r_0028_0032__to_dir).
+arc(r_0028_1002__imperative,r_0028_1021__cnt,scope).
+arc(r_0028_1004__abs,r_0028_0001__Having,restriction).
+arc(r_0028_1004__abs,r_0028_0016__until_tmp,scope).
+arc(r_0028_1021__cnt,r_0028_0023__stir,scope).
+arc(r_0028_1021__cnt,r_0028_0026__skimming__r_0028_0027__off,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_28_A_BEETON_1861,axiom,
+fof(id__28_A_BEETON_1861,axiom,
     ? [CATENATIVEX6,OPERATORX2,CONNX22,EVENTX26,EVENTX25,EVENTX27,CONNX5,CONNX14,EVENTX17,EVENTX18,EVENTX13,EVENTX9,EVENTX8,ENTITYX23,ENTITYX24,ENTITYX10,ENTITYX15,ENTITYX11,QUALITYX19,QUALITYX20,QUALITYX7,ATTRIBX16] :
       ( CATENATIVEX6 = EVENTX8
       &amp; isA(EVENTX8,r_0028_0002__stirred)
@@ -343,7 +343,7 @@ fof(id_28_A_BEETON_1861,axiom,
       &amp; mnr3(EVENTX8) = QUALITYX7
       &amp; isA(ENTITYX10,r_0028_0009__remainder)
       &amp; r_0028_0010__of(ENTITYX10) = ENTITYX11
-      &amp; isA(EVENTX13,r_0028_0013__drawn_off)
+      &amp; isA(EVENTX13,r_0028_0013__drawn__r_0028_0014__off)
       &amp; arg1(EVENTX13) = ENTITYX11
       &amp; isA(ENTITYX11,r_0028_0012__wine)
       &amp; isA(ENTITYX15,r_0028_0018__cask)
@@ -356,8 +356,8 @@ fof(id_28_A_BEETON_1861,axiom,
       &amp; isA(QUALITYX19,r_0028_0022__then)
       &amp; isA(QUALITYX20,r_0028_0024__again)
       &amp; isA(ATTRIBX16,r_0028_0020__full)
-      &amp; isA(OPERATORX2,imperative_0028_1002)
-      &amp; isA(CONNX5,abs_0028_1004)
+      &amp; isA(OPERATORX2,r_0028_1002__imperative)
+      &amp; isA(CONNX5,r_0028_1004__abs)
       &amp; restriction(CONNX5) = EVENTX9
       &amp; isA(EVENTX9,r_0028_0001__Having)
       &amp; catenative(EVENTX9) = CATENATIVEX6
@@ -370,13 +370,13 @@ fof(id_28_A_BEETON_1861,axiom,
       &amp; isA(EVENTX17,r_0028_0019__is)
       &amp; arg0(EVENTX17) = ENTITYX15
       &amp; prd2(EVENTX17) = ATTRIBX16
-      &amp; isA(CONNX22,cnt_0028_1021)
+      &amp; isA(CONNX22,r_0028_1021__cnt)
       &amp; scope(CONNX22) = EVENTX27
       &amp; isA(EVENTX27,r_0028_0023__stir)
       &amp; tmp1(EVENTX27) = QUALITYX19
       &amp; tmp3(EVENTX27) = QUALITYX20
       &amp; restriction(CONNX22) = EVENTX26
-      &amp; isA(EVENTX26,r_0028_0026__skimming_off)
+      &amp; isA(EVENTX26,r_0028_0026__skimming__r_0028_0027__off)
       &amp; arg1(EVENTX26) = ENTITYX23
       &amp; scope(OPERATORX2) = CONNX22 ) ).
 

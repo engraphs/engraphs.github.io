@@ -122,17 +122,17 @@ Wrap her in thick towels heated on a rail .
 </svg>
 <br>
 <pre>
-arc(imperative_0179_1002,r_0179_0001__Wrap,scope).
 arc(r_0179_0001__Wrap,r_0179_0002__her,arg1).
 arc(r_0179_0001__Wrap,r_0179_0005__towels,r_0179_0003__in_loc).
 arc(r_0179_0005__towels,r_0179_0004__thick,attrib1).
 arc(r_0179_0006__heated,r_0179_0005__towels,arg0).
 arc(r_0179_0006__heated,r_0179_0009__rail,r_0179_0007__on_loc).
+arc(r_0179_1002__imperative,r_0179_0001__Wrap,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_179_A_LooseChange,axiom,
+fof(id__179_A_LooseChange,axiom,
     ? [OPERATORX2,EVENTX8,EVENTX7,ENTITYX4,ENTITYX6,ATTRIBX5] :
       ( isA(EVENTX7,r_0179_0006__heated)
       &amp; arg0(EVENTX7) = ENTITYX4
@@ -141,7 +141,7 @@ fof(id_179_A_LooseChange,axiom,
       &amp; attrib1(ENTITYX4) = ATTRIBX5
       &amp; isA(ENTITYX6,r_0179_0009__rail)
       &amp; isA(ATTRIBX5,r_0179_0004__thick)
-      &amp; isA(OPERATORX2,imperative_0179_1002)
+      &amp; isA(OPERATORX2,r_0179_1002__imperative)
       &amp; scope(OPERATORX2) = EVENTX8
       &amp; isA(EVENTX8,r_0179_0001__Wrap)
       &amp; arg1(EVENTX8) = r_0179_0002__her

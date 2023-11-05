@@ -298,7 +298,7 @@ The first requirement is for an anionic electrolyte , which can be fabricated in
 </svg>
 <br>
 <pre>
-arc(r_0050_0004__is,r_0050_0002__first_requirement,arg0).
+arc(r_0050_0004__is,r_0050_0002__first__r_0050_0003__requirement,arg0).
 arc(r_0050_0004__is,r_0050_0008__electrolyte,r_0050_0005__for_prd2).
 arc(r_0050_0008__electrolyte,r_0050_0007__anionic,attrib2).
 arc(r_0050_0011__can,r_0050_0012__be,scope).
@@ -314,15 +314,15 @@ arc(r_0050_0022__sodium,r_0050_0021__liquid,attrib1).
 arc(r_0050_0023__and,r_0050_0011__can,conj1).
 arc(r_0050_0023__and,r_0050_0025__is,conj2).
 arc(r_0050_0025__is,r_0050_0027__corroded,catenative).
-arc(r_0050_0026__neither_nor,r_0050_0029__sodium,arg0_by_lgs).
-arc(r_0050_0026__neither_nor,r_0050_0032__sodium_monoxide,r_0050_0031__by_lgs).
+arc(r_0050_0026__neither__r_0050_0030__nor,r_0050_0029__sodium,arg0_r_0050_0028__by_lgs).
+arc(r_0050_0026__neither__r_0050_0030__nor,r_0050_0032__sodium_r_0050_0033__monoxide,r_0050_0031__by_lgs).
 arc(r_0050_0027__corroded,r_0050_0008__electrolyte,arg0).
-arc(r_0050_0027__corroded,r_0050_0026__neither_nor,z_0050_1020).
+arc(r_0050_0027__corroded,r_0050_0026__neither__r_0050_0030__nor,z_0050_1020).
 
 </pre>
 <br>
 <pre>
-fof(id_50_A_lob_J01,axiom,
+fof(id__50_A_lob_J01,axiom,
     ? [CATENATIVEX7,CATENATIVEX18,EVENTX27,CONJX26,EVENTX25,EVENTX24,OPERATORX6,EVENTX17,EVENTX16,ENTITYX1,ENTITYX2,CONJX21,ENTITYX22,ENTITYX23,ENTITYX9,ENTITYX12,ENTITYX13,ENTITYX14,ATTRIBX3,ATTRIBX10,ATTRIBX11,ATTRIBX15] :
       ( CATENATIVEX7 = EVENTX16
       &amp; isA(EVENTX16,r_0050_0013__fabricated)
@@ -332,7 +332,7 @@ fof(id_50_A_lob_J01,axiom,
       &amp; isA(EVENTX24,r_0050_0027__corroded)
       &amp; arg0(EVENTX24) = ENTITYX2
       &amp; z_0050_1020(EVENTX24) = CONJX21
-      &amp; isA(ENTITYX1,r_0050_0002__first_requirement)
+      &amp; isA(ENTITYX1,r_0050_0002__first__r_0050_0003__requirement)
       &amp; isA(CONJX26,r_0050_0023__and)
       &amp; conj1(CONJX26) = OPERATORX6
       &amp; isA(OPERATORX6,r_0050_0011__can)
@@ -353,11 +353,11 @@ fof(id_50_A_lob_J01,axiom,
       &amp; isA(ENTITYX13,r_0050_0019__gases)
       &amp; isA(ENTITYX14,r_0050_0022__sodium)
       &amp; attrib1(ENTITYX14) = ATTRIBX15
-      &amp; isA(CONJX21,r_0050_0026__neither_nor)
-      &amp; arg0_by_lgs(CONJX21) = ENTITYX22
+      &amp; isA(CONJX21,r_0050_0026__neither__r_0050_0030__nor)
+      &amp; arg0__r_0050_0028__by_lgs(CONJX21) = ENTITYX22
       &amp; r_0050_0031__by_lgs(CONJX21) = ENTITYX23
       &amp; isA(ENTITYX22,r_0050_0029__sodium)
-      &amp; isA(ENTITYX23,r_0050_0032__sodium_monoxide)
+      &amp; isA(ENTITYX23,r_0050_0032__sodium__r_0050_0033__monoxide)
       &amp; isA(ATTRIBX3,r_0050_0007__anionic)
       &amp; isA(ATTRIBX10,r_0050_0015__suitable)
       &amp; isA(ATTRIBX11,r_0050_0017__impervious)

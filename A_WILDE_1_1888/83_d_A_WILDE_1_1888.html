@@ -578,18 +578,19 @@ and the Angel brought Him the leaden heart and the dead bird .
 </svg>
 <br>
 <pre>
-arc(imperative_0248_1007,r_0248_0002__Bring,scope).
 arc(r_0248_0002__Bring,r_0248_0003__me,arg2).
-arc(r_0248_0002__Bring,r_0248_0005__two_things,arg1).
-arc(r_0248_0005__two_things,r_0248_0007__precious,attrib3).
-arc(r_0248_0005__two_things,r_0248_0011__city,r_0248_0009__in).
+arc(r_0248_0002__Bring,r_0248_0005__two__r_0248_0008__things,arg1).
+arc(r_0248_0005__two__r_0248_0008__things,r_0248_0007__precious,attrib3).
+arc(r_0248_0005__two__r_0248_0008__things,r_0248_0011__city,r_0248_0009__in).
 arc(r_0248_0007__precious,r_0248_0006__most,quality1).
 arc(r_0248_0014__said,r_0248_0015__God,arg0).
 arc(r_0248_0014__said,r_0248_0017__one,r_0248_0016__to_arg2).
-arc(r_0248_0014__said,utterance_0248_1003,arg1).
+arc(r_0248_0014__said,r_0248_1003__utterance,arg1).
 arc(r_0248_0015__God,r_0248_0003__me,z_0248_1015).
 arc(r_0248_0017__one,r_0248_0020__Angels,r_0248_0018__of).
 arc(r_0248_0020__Angels,r_0248_0003__me,genv).
+arc(r_0248_1003__utterance,r_0248_1007__imperative,part1).
+arc(r_0248_1007__imperative,r_0248_0002__Bring,scope).
 arc(r_0249_0004__brought,r_0248_0003__me,arg2).
 arc(r_0249_0004__brought,r_0248_0017__one,arg0).
 arc(r_0249_0004__brought,r_0249_0009__and,arg1).
@@ -621,17 +622,16 @@ arc(r_0250_0035__shall,r_0250_0036__praise,scope).
 arc(r_0250_0036__praise,r_0248_0003__me,arg1).
 arc(r_0250_0036__praise,r_0250_0029__city,r_0250_0027__in_loc).
 arc(r_0250_0036__praise,r_0250_0034__Prince,arg0).
-arc(utterance_0248_1003,imperative_0248_1007,part1).
 
 </pre>
 <br>
 <pre>
-fof(id_248_A_WILDE_1_1888__249_A_WILDE_1_1888__250_A_WILDE_1_1888,axiom,
+fof(id__248_A_WILDE_1_1888__249_A_WILDE_1_1888__250_A_WILDE_1_1888,axiom,
     ? [STATEX1,EVENTX32,CATENATIVEX46,GODX16,GODX19,ANGELX21,GODX22,ANGELX31,GODX33,GODX37,SWALLOWX41,GODX51,GODX55,CONJX58,OPERATORX56,EVENTX57,CONNX35,OPERATORX44,EVENTX45,EVENTX49,EVENTX48,EVENTX34,EVENTX28,EVENTX20,CONJX13,OPERATORX7,EVENTX12,ENTITYX50,PRINCEX53,ENTITYX52,ENTITYX36,ENTITYX38,ENTITYX23,HEARTX24,SWALLOWX26,ANGELX17,ENTITYX18,ENTITYX8,ENTITYX11,ATTRIBX54,ATTRIBX42,ATTRIBX27,ATTRIBX25,ATTRIBX9,QUALITYX43,QUALITYX47,QUALITYX10] :
       ( STATEX1 = CONJX13
-      &amp; isA(CONJX13,utterance_0248_1003)
+      &amp; isA(CONJX13,r_0248_1003__utterance)
       &amp; part1(CONJX13) = OPERATORX7
-      &amp; isA(OPERATORX7,imperative_0248_1007)
+      &amp; isA(OPERATORX7,r_0248_1007__imperative)
       &amp; scope(OPERATORX7) = EVENTX12
       &amp; isA(EVENTX12,r_0248_0002__Bring)
       &amp; arg2(EVENTX12) = r_0248_0003__me
@@ -643,7 +643,7 @@ fof(id_248_A_WILDE_1_1888__249_A_WILDE_1_1888__250_A_WILDE_1_1888,axiom,
       &amp; isA(EVENTX48,r_0250_0005__chosen)
       &amp; arg0(EVENTX48) = ANGELX31
       &amp; mnr1(EVENTX48) = QUALITYX47
-      &amp; isA(ENTITYX8,r_0248_0005__two_things)
+      &amp; isA(ENTITYX8,r_0248_0005__two__r_0248_0008__things)
       &amp; attrib3(ENTITYX8) = ATTRIBX9
       &amp; r_0248_0009__in(ENTITYX8) = ENTITYX11
       &amp; isA(ENTITYX11,r_0248_0011__city)

@@ -202,15 +202,15 @@ John got on alright with the bulldog but it kept on standing up when he told it 
 </svg>
 <br>
 <pre>
-arc(r_0006_0002__got_on,r_0006_0001__John,arg0).
-arc(r_0006_0002__got_on,r_0006_0004__alright,mnr4).
-arc(r_0006_0002__got_on,r_0006_0007__bulldog,r_0006_0005__with_com).
-arc(r_0006_0008__but,r_0006_0002__got_on,conj1).
+arc(r_0006_0002__got__r_0006_0003__on,r_0006_0001__John,arg0).
+arc(r_0006_0002__got__r_0006_0003__on,r_0006_0004__alright,mnr4).
+arc(r_0006_0002__got__r_0006_0003__on,r_0006_0007__bulldog,r_0006_0005__with_com).
+arc(r_0006_0008__but,r_0006_0002__got__r_0006_0003__on,conj1).
 arc(r_0006_0008__but,r_0006_0014__when_tmp,conj2).
-arc(r_0006_0010__kept_on,r_0006_0012__standing,catenative).
+arc(r_0006_0010__kept__r_0006_0011__on,r_0006_0012__standing,catenative).
 arc(r_0006_0012__standing,r_0006_0007__bulldog,arg0).
 arc(r_0006_0012__standing,r_0006_0013__up,dir2).
-arc(r_0006_0014__when_tmp,r_0006_0010__kept_on,scope).
+arc(r_0006_0014__when_tmp,r_0006_0010__kept__r_0006_0011__on,scope).
 arc(r_0006_0014__when_tmp,r_0006_0016__told,restriction).
 arc(r_0006_0016__told,r_0006_0001__John,arg0).
 arc(r_0006_0016__told,r_0006_0007__bulldog,arg2).
@@ -220,7 +220,7 @@ arc(r_0006_0019__sit,r_0006_0007__bulldog,arg0).
 </pre>
 <br>
 <pre>
-fof(id_6_A_stories_09_M12,axiom,
+fof(id__6_A_stories_09_M12,axiom,
     ? [CATENATIVEX11,STATEX8,BULLDOGX4,JOHNX6,BULLDOGX7,CONJX15,CONNX5,EVENTX10,EVENTX9,EVENTX14,EVENTX13,EVENTX3,BULLDOGX2,QUALITYX12,QUALITYX1] :
       ( CATENATIVEX11 = EVENTX13
       &amp; isA(EVENTX13,r_0006_0012__standing)
@@ -238,14 +238,14 @@ fof(id_6_A_stories_09_M12,axiom,
       &amp; isA(QUALITYX12,r_0006_0013__up)
       &amp; isA(CONJX15,r_0006_0008__but)
       &amp; conj1(CONJX15) = EVENTX3
-      &amp; isA(EVENTX3,r_0006_0002__got_on)
+      &amp; isA(EVENTX3,r_0006_0002__got__r_0006_0003__on)
       &amp; arg0(EVENTX3) = r_0006_0001__John
       &amp; mnr4(EVENTX3) = QUALITYX1
       &amp; r_0006_0005__with_com(EVENTX3) = BULLDOGX2
       &amp; conj2(CONJX15) = CONNX5
       &amp; isA(CONNX5,r_0006_0014__when_tmp)
       &amp; scope(CONNX5) = EVENTX14
-      &amp; isA(EVENTX14,r_0006_0010__kept_on)
+      &amp; isA(EVENTX14,r_0006_0010__kept__r_0006_0011__on)
       &amp; catenative(EVENTX14) = CATENATIVEX11
       &amp; restriction(CONNX5) = EVENTX10
       &amp; isA(EVENTX10,r_0006_0016__told)

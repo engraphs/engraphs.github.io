@@ -555,8 +555,6 @@ Whenever I 'd bring in his soup to him there I 'd find him with his breviary fal
 </svg>
 <br>
 <pre>
-arc(cnt_0157_1035,r_0158_0012___apos_d,scope).
-arc(cnt_0157_1035,r_0158_0028__and,restriction).
 arc(r_0157_0002__stopped,r_0157_0001__She,arg0).
 arc(r_0157_0004__as_if_mnr,r_0157_0002__stopped,scope).
 arc(r_0157_0004__as_if_mnr,r_0157_0006__were,restriction).
@@ -576,12 +574,14 @@ arc(r_0157_0023__something,r_0157_0024__queer,quality2).
 arc(r_0157_0025__coming,r_0157_0023__something,arg0).
 arc(r_0157_0025__coming,r_0157_0027__him,r_0157_0026__over_dir).
 arc(r_0157_0025__coming,r_0157_0028__latterly,tmp3).
-arc(r_0158_0001__Whenever_tmp,cnt_0157_1035,scope).
+arc(r_0157_1035__cnt,r_0158_0012___apos_d,scope).
+arc(r_0157_1035__cnt,r_0158_0028__and,restriction).
+arc(r_0158_0001__Whenever_tmp,r_0157_1035__cnt,scope).
 arc(r_0158_0001__Whenever_tmp,r_0158_0003___apos_d,restriction).
-arc(r_0158_0003___apos_d,r_0158_0004__bring_in,scope).
-arc(r_0158_0004__bring_in,r_0157_0001__She,arg0).
-arc(r_0158_0004__bring_in,r_0157_0027__him,r_0158_0008__to_clr).
-arc(r_0158_0004__bring_in,r_0158_0007__soup,arg1).
+arc(r_0158_0003___apos_d,r_0158_0004__bring__r_0158_0005__in,scope).
+arc(r_0158_0004__bring__r_0158_0005__in,r_0157_0001__She,arg0).
+arc(r_0158_0004__bring__r_0158_0005__in,r_0157_0027__him,r_0158_0008__to_clr).
+arc(r_0158_0004__bring__r_0158_0005__in,r_0158_0007__soup,arg1).
 arc(r_0158_0007__soup,r_0157_0027__him,genv).
 arc(r_0158_0012___apos_d,r_0158_0013__find,scope).
 arc(r_0158_0013__find,r_0157_0001__She,arg0).
@@ -591,9 +591,9 @@ arc(r_0158_0013__find,r_0158_0017__breviary,r_0158_0015__with_mnr).
 arc(r_0158_0017__breviary,r_0157_0027__him,genv).
 arc(r_0158_0018__fallen,r_0158_0017__breviary,arg0).
 arc(r_0158_0018__fallen,r_0158_0021__floor,r_0158_0019__to_dir).
-arc(r_0158_0023__lying_back,r_0157_0027__him,arg0).
-arc(r_0158_0023__lying_back,r_0158_0027__chair,r_0158_0025__in_loc).
-arc(r_0158_0028__and,r_0158_0023__lying_back,conj1).
+arc(r_0158_0023__lying__r_0158_0024__back,r_0157_0027__him,arg0).
+arc(r_0158_0023__lying__r_0158_0024__back,r_0158_0027__chair,r_0158_0025__in_loc).
+arc(r_0158_0028__and,r_0158_0023__lying__r_0158_0024__back,conj1).
 arc(r_0158_0028__and,z_0157_1042,conj2).
 arc(r_0158_0030__mouth,r_0157_0027__him,genv).
 arc(r_0158_0030__mouth,r_0158_0031__open,attrib3).
@@ -603,7 +603,7 @@ arc(z_0157_1042,r_0158_0030__mouth,mnr).
 </pre>
 <br>
 <pre>
-fof(id_157_A_JOYCE_1914__158_A_JOYCE_1914,axiom,
+fof(id__157_A_JOYCE_1914__158_A_JOYCE_1914,axiom,
     ? [CATENATIVEX3,STATEX10,STATEX12,CATENATIVEX14,ELIZAX2,ELIZAX11,ELIZAX22,PRIESTX24,PRIESTX25,ELIZAX29,PRIESTX30,PRIESTX32,PRIESTX40,CONNX21,CONNX36,CONJX44,EVENTX43,EVENTX38,OPERATORX45,EVENTX46,EVENTX34,OPERATORX26,EVENTX27,CONJX20,EVENTX19,EVENTX18,EVENTX17,EVENTX16,CONNX1,EVENTX6,EVENTX5,EVENTX7,ENTITYX31,ENTITYX39,ENTITYX37,ENTITYX33,ENTITYX23,ENTITYX4,QUALITYX28,QUALITYX8,QUALITYX9,QUALITYX15,QUALITYX13,ATTRIBX41] :
       ( CATENATIVEX3 = EVENTX5
       &amp; isA(EVENTX5,r_0157_0007__communing)
@@ -672,12 +672,12 @@ fof(id_157_A_JOYCE_1914__158_A_JOYCE_1914,axiom,
       &amp; restriction(CONNX21) = OPERATORX26
       &amp; isA(OPERATORX26,r_0158_0003___apos_d)
       &amp; scope(OPERATORX26) = EVENTX27
-      &amp; isA(EVENTX27,r_0158_0004__bring_in)
+      &amp; isA(EVENTX27,r_0158_0004__bring__r_0158_0005__in)
       &amp; arg0(EVENTX27) = ELIZAX22
       &amp; arg1(EVENTX27) = ENTITYX23
       &amp; r_0158_0008__to_clr(EVENTX27) = PRIESTX25
       &amp; scope(CONNX21) = CONNX36
-      &amp; isA(CONNX36,cnt_0157_1035)
+      &amp; isA(CONNX36,r_0157_1035__cnt)
       &amp; scope(CONNX36) = OPERATORX45
       &amp; isA(OPERATORX45,r_0158_0012___apos_d)
       &amp; scope(OPERATORX45) = EVENTX46
@@ -689,7 +689,7 @@ fof(id_157_A_JOYCE_1914__158_A_JOYCE_1914,axiom,
       &amp; restriction(CONNX36) = CONJX44
       &amp; isA(CONJX44,r_0158_0028__and)
       &amp; conj1(CONJX44) = EVENTX38
-      &amp; isA(EVENTX38,r_0158_0023__lying_back)
+      &amp; isA(EVENTX38,r_0158_0023__lying__r_0158_0024__back)
       &amp; arg0(EVENTX38) = PRIESTX30
       &amp; r_0158_0025__in_loc(EVENTX38) = ENTITYX37
       &amp; conj2(CONJX44) = EVENTX43

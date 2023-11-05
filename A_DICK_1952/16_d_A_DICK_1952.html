@@ -433,22 +433,23 @@ He stepped away and stood by himself , staring past the others .
 </svg>
 <br>
 <pre>
-arc(mnr_0026_1007,r_0026_0007__said,scope).
-arc(mnr_0026_1007,r_0026_0009__backing,restriction).
-arc(mnr_0026_1031,r_0029_0004__and,scope).
-arc(mnr_0026_1031,r_0029_0009__staring,restriction).
 arc(r_0026_0003__see,r_0026_0006__Fomar,arg0).
 arc(r_0026_0007__said,r_0026_0006__Fomar,arg0).
-arc(r_0026_0007__said,utterance_0026_1003,arg1).
+arc(r_0026_0007__said,r_0026_1003__utterance,arg1).
 arc(r_0026_0009__backing,r_0026_0006__Fomar,arg0).
 arc(r_0026_0009__backing,r_0026_0012__eyepiece,r_0026_0010__away_from_clr_dir).
+arc(r_0026_1003__utterance,r_0026_0003__see,part1).
+arc(r_0026_1007__mnr,r_0026_0007__said,scope).
+arc(r_0026_1007__mnr,r_0026_0009__backing,restriction).
+arc(r_0026_1031__mnr,r_0029_0004__and,scope).
+arc(r_0026_1031__mnr,r_0029_0009__staring,restriction).
 arc(r_0027_0005__wo,r_0027_0006__n_apos_t,scope).
 arc(r_0027_0006__n_apos_t,r_0027_0007__find,scope).
 arc(r_0027_0007__find,r_0026_0006__Fomar,arg0).
 arc(r_0027_0007__find,r_0027_0009__legumes,arg1).
 arc(r_0027_0007__find,r_0027_0010__there,clr_loc9).
-arc(r_0027_0008__quantificational__any,r_0027_0005__wo,scope).
-arc(r_0027_0008__quantificational__any,r_0027_0009__legumes,restriction).
+arc(r_0027_0008__quantificational__r_0027_0008__any,r_0027_0005__wo,scope).
+arc(r_0027_0008__quantificational__r_0027_0008__any,r_0027_0009__legumes,restriction).
 arc(r_0028_0002__tried,r_0028_0004__smile,catenative).
 arc(r_0028_0004__smile,r_0026_0006__Fomar,arg0).
 arc(r_0028_0006__but,r_0028_0002__tried,conj1).
@@ -464,15 +465,14 @@ arc(r_0029_0005__stood,r_0026_0006__Fomar,arg0).
 arc(r_0029_0005__stood,r_0026_0006__Fomar,r_0029_0006__by_mnr).
 arc(r_0029_0009__staring,r_0026_0006__Fomar,arg0).
 arc(r_0029_0009__staring,r_0029_0012__others,r_0029_0010__past_clr_dir).
-arc(utterance_0026_1003,r_0026_0003__see,part1).
 
 </pre>
 <br>
 <pre>
-fof(id_26_A_DICK_1952__27_A_DICK_1952__28_A_DICK_1952__29_A_DICK_1952,axiom,
+fof(id__26_A_DICK_1952__27_A_DICK_1952__28_A_DICK_1952__29_A_DICK_1952,axiom,
     ? [STATEX1,STATEX22,FOMARX4,FOMARX12,FOMARX21,FOMARX26,FOMARX30,FOMARX37,CONNX32,EVENTX34,CONJX39,EVENTX38,EVENTX36,CONJX29,EVENTX28,EVENTX24,EVENTX23,QUANTX14,OPERATORX16,OPERATORX17,EVENTX18,CONNX8,EVENTX10,EVENTX11,CONJX6,EVENTX5,ENTITYX33,ENTITYX25,ENTITYX13,ENTITYX9,QUALITYX35,QUALITYX15,ATTRIBX27] :
       ( STATEX1 = CONJX6
-      &amp; isA(CONJX6,utterance_0026_1003)
+      &amp; isA(CONJX6,r_0026_1003__utterance)
       &amp; part1(CONJX6) = EVENTX5
       &amp; isA(EVENTX5,r_0026_0003__see)
       &amp; arg0(EVENTX5) = FOMARX4
@@ -493,7 +493,7 @@ fof(id_26_A_DICK_1952__27_A_DICK_1952__28_A_DICK_1952__29_A_DICK_1952,axiom,
       &amp; isA(QUALITYX15,r_0027_0010__there)
       &amp; isA(QUALITYX35,r_0029_0003__away)
       &amp; isA(ATTRIBX27,r_0028_0010__unmoved)
-      &amp; isA(CONNX8,mnr_0026_1007)
+      &amp; isA(CONNX8,r_0026_1007__mnr)
       &amp; scope(CONNX8) = EVENTX11
       &amp; isA(EVENTX11,r_0026_0007__said)
       &amp; arg0(EVENTX11) = r_0026_0006__Fomar
@@ -502,7 +502,7 @@ fof(id_26_A_DICK_1952__27_A_DICK_1952__28_A_DICK_1952__29_A_DICK_1952,axiom,
       &amp; isA(EVENTX10,r_0026_0009__backing)
       &amp; arg0(EVENTX10) = r_0026_0006__Fomar
       &amp; r_0026_0010__away_from_clr_dir(EVENTX10) = ENTITYX9
-      &amp; isA(QUANTX14,r_0027_0008__quantificational__any)
+      &amp; isA(QUANTX14,r_0027_0008__quantificational__r_0027_0008__any)
       &amp; restriction(QUANTX14) = ENTITYX13
       &amp; isA(ENTITYX13,r_0027_0009__legumes)
       &amp; scope(QUANTX14) = OPERATORX16
@@ -523,7 +523,7 @@ fof(id_26_A_DICK_1952__27_A_DICK_1952__28_A_DICK_1952__29_A_DICK_1952,axiom,
       &amp; arg0(EVENTX28) = ENTITYX25
       &amp; arg0(EVENTX28) = ENTITYX25
       &amp; prd2(EVENTX28) = ATTRIBX27
-      &amp; isA(CONNX32,mnr_0026_1031)
+      &amp; isA(CONNX32,r_0026_1031__mnr)
       &amp; scope(CONNX32) = CONJX39
       &amp; isA(CONJX39,r_0029_0004__and)
       &amp; conj1(CONJX39) = EVENTX36

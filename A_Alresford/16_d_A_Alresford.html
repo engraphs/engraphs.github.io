@@ -239,8 +239,6 @@ From there it was possible to walk to Stockbridge hardly crossing tarmac at all 
 </svg>
 <br>
 <pre>
-arc(mnr_0020_1005,r_0020_0007__walk,scope).
-arc(mnr_0020_1005,r_0020_0010__hardly,restriction).
 arc(r_0020_0004__was,r_0020_0002__there,r_0020_0001__From_loc).
 arc(r_0020_0004__was,r_0020_0005__possible,prd2).
 arc(r_0020_0004__was,r_0020_0015__or,arg0).
@@ -248,22 +246,24 @@ arc(r_0020_0007__walk,r_0020_0009__Stockbridge,r_0020_0008__to_clr_dir).
 arc(r_0020_0010__hardly,r_0020_0013__at_all,scope).
 arc(r_0020_0011__crossing,r_0020_0012__tarmac,arg1).
 arc(r_0020_0013__at_all,r_0020_0011__crossing,scope).
-arc(r_0020_0015__or,mnr_0020_1005,conj1).
 arc(r_0020_0015__or,r_0020_0016__take,conj2).
+arc(r_0020_0015__or,r_0020_1005__mnr,conj1).
 arc(r_0020_0016__take,r_0020_0019__stroll,arg1).
 arc(r_0020_0016__take,r_0020_0022__Bush,r_0020_0020__to_clr_dir).
 arc(r_0020_0019__stroll,r_0020_0018__shorter,attrib2).
 arc(r_0020_0022__Bush,r_0020_0024__Ovington,r_0020_0023__at).
+arc(r_0020_1005__mnr,r_0020_0007__walk,scope).
+arc(r_0020_1005__mnr,r_0020_0010__hardly,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_20_A_Alresford,axiom,
+fof(id__20_A_Alresford,axiom,
     ? [STATEX4,EVENTX16,CONJX15,EVENTX14,CONNX6,OPERATORX7,OPERATORX9,EVENTX10,EVENTX11,QUALITYX1,ENTITYX12,ENTITYX8,ATTRIBX3,ATTRIBX13] :
       ( STATEX4 = CONJX15
       &amp; isA(CONJX15,r_0020_0015__or)
       &amp; conj1(CONJX15) = CONNX6
-      &amp; isA(CONNX6,mnr_0020_1005)
+      &amp; isA(CONNX6,r_0020_1005__mnr)
       &amp; scope(CONNX6) = EVENTX11
       &amp; isA(EVENTX11,r_0020_0007__walk)
       &amp; r_0020_0008__to_clr_dir(EVENTX11) = r_0020_0009__Stockbridge

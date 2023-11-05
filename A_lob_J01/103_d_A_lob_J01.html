@@ -311,16 +311,15 @@ Heat the solution nearly to boiling , by placing the polythene beaker in a glass
 </svg>
 <br>
 <pre>
-arc(imperative_0103_1002,r_0103_0026__and,scope).
 arc(r_0103_0001__Heat,r_0103_0003__solution,arg1).
-arc(r_0103_0001__Heat,r_0103_0006__boiling,r_0103_0004__nearly_to_dir).
+arc(r_0103_0001__Heat,r_0103_0006__boiling,r_0103_0004__nearly__r_0103_0005__to_dir).
 arc(r_0103_0008__by_mnr,r_0103_0001__Heat,scope).
 arc(r_0103_0008__by_mnr,r_0103_0009__placing,restriction).
 arc(r_0103_0009__placing,r_0103_0003__solution,arg0).
 arc(r_0103_0009__placing,r_0103_0012__beaker,arg1).
 arc(r_0103_0012__beaker,r_0103_0011__polythene,attrib2).
-arc(r_0103_0012__beaker,r_0103_0015__glass_beaker,r_0103_0013__in).
-arc(r_0103_0015__glass_beaker,r_0103_0018__water,r_0103_0017__of).
+arc(r_0103_0012__beaker,r_0103_0015__glass__r_0103_0016__beaker,r_0103_0013__in).
+arc(r_0103_0015__glass__r_0103_0016__beaker,r_0103_0018__water,r_0103_0017__of).
 arc(r_0103_0020__heated,r_0103_0018__water,arg0).
 arc(r_0103_0020__heated,r_0103_0024__plate,r_0103_0021__on_loc).
 arc(r_0103_0024__plate,r_0103_0023__hot,attrib2).
@@ -328,15 +327,16 @@ arc(r_0103_0026__and,r_0103_0008__by_mnr,conj1).
 arc(r_0103_0026__and,r_0103_0027__add,conj2).
 arc(r_0103_0027__add,r_0103_0030__solution,r_0103_0028__to_clr).
 arc(r_0103_0027__add,r_0103_0031__1,arg1).
-arc(r_0103_0031__1,r_0103_0034__tannic_acid,r_0103_0033__of).
-arc(r_0103_0036__dissolved,r_0103_0034__tannic_acid,arg0).
+arc(r_0103_0031__1,r_0103_0034__tannic__r_0103_0035__acid,r_0103_0033__of).
+arc(r_0103_0036__dissolved,r_0103_0034__tannic__r_0103_0035__acid,arg0).
 arc(r_0103_0036__dissolved,r_0103_0039__water,r_0103_0037__in_loc).
 arc(r_0103_0039__water,r_0103_0038__hot,attrib1).
+arc(r_0103_1002__imperative,r_0103_0026__and,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_103_A_lob_J01,axiom,
+fof(id__103_A_lob_J01,axiom,
     ? [EVENTX5,OPERATORX2,CONJX26,EVENTX25,EVENTX24,CONNX9,EVENTX17,EVENTX16,EVENTX18,EVENTX8,ENTITYX19,ENTITYX20,ENTITYX21,ENTITYX22,ENTITYX4,ENTITYX10,ENTITYX12,ENTITYX13,ENTITYX14,ATTRIBX23,ATTRIBX11,ATTRIBX15] :
       ( EVENTX5 = EVENTX8
       &amp; isA(EVENTX8,r_0103_0006__boiling)
@@ -344,7 +344,7 @@ fof(id_103_A_lob_J01,axiom,
       &amp; isA(ENTITYX10,r_0103_0012__beaker)
       &amp; attrib2(ENTITYX10) = ATTRIBX11
       &amp; r_0103_0013__in(ENTITYX10) = ENTITYX12
-      &amp; isA(ENTITYX12,r_0103_0015__glass_beaker)
+      &amp; isA(ENTITYX12,r_0103_0015__glass__r_0103_0016__beaker)
       &amp; r_0103_0017__of(ENTITYX12) = ENTITYX13
       &amp; isA(EVENTX16,r_0103_0020__heated)
       &amp; arg0(EVENTX16) = ENTITYX13
@@ -358,13 +358,13 @@ fof(id_103_A_lob_J01,axiom,
       &amp; isA(EVENTX24,r_0103_0036__dissolved)
       &amp; arg0(EVENTX24) = ENTITYX21
       &amp; r_0103_0037__in_loc(EVENTX24) = ENTITYX22
-      &amp; isA(ENTITYX21,r_0103_0034__tannic_acid)
+      &amp; isA(ENTITYX21,r_0103_0034__tannic__r_0103_0035__acid)
       &amp; isA(ENTITYX22,r_0103_0039__water)
       &amp; attrib1(ENTITYX22) = ATTRIBX23
       &amp; isA(ATTRIBX11,r_0103_0011__polythene)
       &amp; isA(ATTRIBX15,r_0103_0023__hot)
       &amp; isA(ATTRIBX23,r_0103_0038__hot)
-      &amp; isA(OPERATORX2,imperative_0103_1002)
+      &amp; isA(OPERATORX2,r_0103_1002__imperative)
       &amp; scope(OPERATORX2) = CONJX26
       &amp; isA(CONJX26,r_0103_0026__and)
       &amp; conj1(CONJX26) = CONNX9
@@ -372,7 +372,7 @@ fof(id_103_A_lob_J01,axiom,
       &amp; scope(CONNX9) = EVENTX18
       &amp; isA(EVENTX18,r_0103_0001__Heat)
       &amp; arg1(EVENTX18) = ENTITYX4
-      &amp; r_0103_0004__nearly_to_dir(EVENTX18) = EVENTX5
+      &amp; r_0103_0004__nearly__r_0103_0005__to_dir(EVENTX18) = EVENTX5
       &amp; restriction(CONNX9) = EVENTX17
       &amp; isA(EVENTX17,r_0103_0009__placing)
       &amp; arg0(EVENTX17) = ENTITYX4

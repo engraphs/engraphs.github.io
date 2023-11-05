@@ -297,10 +297,10 @@ I still retain an interest in a small public relations company that gives advice
 arc(r_0006_0003__retain,r_0006_0001__I,arg0).
 arc(r_0006_0003__retain,r_0006_0002__still,tmp2).
 arc(r_0006_0003__retain,r_0006_0005__interest,arg1).
-arc(r_0006_0005__interest,r_0006_0010__relations_company,r_0006_0006__in).
-arc(r_0006_0010__relations_company,r_0006_0008__small,attrib2).
-arc(r_0006_0010__relations_company,r_0006_0009__public,attrib3).
-arc(r_0006_0013__gives,r_0006_0010__relations_company,arg0).
+arc(r_0006_0005__interest,r_0006_0010__relations__r_0006_0011__company,r_0006_0006__in).
+arc(r_0006_0010__relations__r_0006_0011__company,r_0006_0008__small,attrib2).
+arc(r_0006_0010__relations__r_0006_0011__company,r_0006_0009__public,attrib3).
+arc(r_0006_0013__gives,r_0006_0010__relations__r_0006_0011__company,arg0).
 arc(r_0006_0013__gives,r_0006_0014__advice,arg1).
 arc(r_0006_0013__gives,r_0006_0016__developers,r_0006_0015__to_arg2).
 arc(r_0006_0018__although_cnt,r_0006_0003__retain,scope).
@@ -310,16 +310,16 @@ arc(r_0006_0020__am,r_0006_0022__sure,prd2).
 arc(r_0006_0021__not,r_0006_0020__am,scope).
 arc(r_0006_0022__sure,r_0006_0024__will,emb2).
 arc(r_0006_0024__will,r_0006_0025__want,scope).
-arc(r_0006_0025__want,r_0006_0010__relations_company,arg0).
+arc(r_0006_0025__want,r_0006_0010__relations__r_0006_0011__company,arg0).
 arc(r_0006_0025__want,r_0006_0027__talk,arg1).
 arc(r_0006_0027__talk,r_0006_0001__I,r_0006_0028__to_clr).
-arc(r_0006_0027__talk,r_0006_0010__relations_company,arg0).
+arc(r_0006_0027__talk,r_0006_0010__relations__r_0006_0011__company,arg0).
 arc(r_0006_0027__talk,r_0006_0031__this,r_0006_0030__after_tmp).
 
 </pre>
 <br>
 <pre>
-fof(id_6_A_Hedgehog,axiom,
+fof(id__6_A_Hedgehog,axiom,
     ? [STATEX12,STATEX14,SPEAKERX10,COMPANYX13,SPEAKERX15,CONNX9,OPERATORX19,EVENTX20,OPERATORX17,EVENTX18,EVENTX16,EVENTX21,EVENTX8,ENTITYX2,COMPANYX3,ENTITYX6,ENTITYX7,QUALITYX1,ATTRIBX11,ATTRIBX4,ATTRIBX5] :
       ( STATEX12 = OPERATORX17
       &amp; isA(OPERATORX17,r_0006_0024__will)
@@ -338,7 +338,7 @@ fof(id_6_A_Hedgehog,axiom,
       &amp; arg0(EVENTX8) = COMPANYX3
       &amp; arg1(EVENTX8) = ENTITYX6
       &amp; r_0006_0015__to_arg2(EVENTX8) = ENTITYX7
-      &amp; isA(COMPANYX3,r_0006_0010__relations_company)
+      &amp; isA(COMPANYX3,r_0006_0010__relations__r_0006_0011__company)
       &amp; attrib2(COMPANYX3) = ATTRIBX4
       &amp; attrib3(COMPANYX3) = ATTRIBX5
       &amp; isA(ENTITYX6,r_0006_0014__advice)

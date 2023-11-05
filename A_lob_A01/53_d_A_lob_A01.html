@@ -194,23 +194,23 @@ Senator Robertson 's committee has to pass Mr Weaver 's nomination before it can
 </svg>
 <br>
 <pre>
-arc(r_0056_0004__committee,r_0056_0001__Senator_Robertson,genv).
+arc(r_0056_0004__committee,r_0056_0001__Senator__r_0056_0002__Robertson,genv).
 arc(r_0056_0005__has,r_0056_0007__pass,catenative).
 arc(r_0056_0007__pass,r_0056_0004__committee,arg0).
 arc(r_0056_0007__pass,r_0056_0011__nomination,arg1).
-arc(r_0056_0011__nomination,r_0056_0008__Mr_Weaver,genv).
+arc(r_0056_0011__nomination,r_0056_0008__Mr__r_0056_0009__Weaver,genv).
 arc(r_0056_0012__before_tmp,r_0056_0005__has,scope).
 arc(r_0056_0012__before_tmp,r_0056_0014__can,restriction).
 arc(r_0056_0014__can,r_0056_0015__be,scope).
 arc(r_0056_0015__be,r_0056_0016__considered,catenative).
 arc(r_0056_0016__considered,r_0056_0011__nomination,arg1).
-arc(r_0056_0016__considered,r_0056_0020__Senate,arg0_by_lgs).
+arc(r_0056_0016__considered,r_0056_0020__Senate,arg0__r_0056_0017__by_lgs).
 arc(r_0056_0020__Senate,r_0056_0019__full,attrib2).
 
 </pre>
 <br>
 <pre>
-fof(id_56_A_lob_A01,axiom,
+fof(id__56_A_lob_A01,axiom,
     ? [STATEX2,CATENATIVEX8,NOMINATIONX6,CONNX5,OPERATORX7,EVENTX11,EVENTX10,EVENTX12,EVENTX4,ENTITYX1,NOMINATIONX3,ATTRIBX9] :
       ( STATEX2 = EVENTX4
       &amp; isA(EVENTX4,r_0056_0007__pass)
@@ -218,12 +218,12 @@ fof(id_56_A_lob_A01,axiom,
       &amp; arg1(EVENTX4) = NOMINATIONX3
       &amp; CATENATIVEX8 = EVENTX10
       &amp; isA(EVENTX10,r_0056_0016__considered)
-      &amp; arg0_by_lgs(EVENTX10) = r_0056_0020__Senate
+      &amp; arg0__r_0056_0017__by_lgs(EVENTX10) = r_0056_0020__Senate
       &amp; arg1(EVENTX10) = NOMINATIONX6
       &amp; isA(ENTITYX1,r_0056_0004__committee)
-      &amp; genv(ENTITYX1) = r_0056_0001__Senator_Robertson
+      &amp; genv(ENTITYX1) = r_0056_0001__Senator__r_0056_0002__Robertson
       &amp; isA(NOMINATIONX3,r_0056_0011__nomination)
-      &amp; genv(NOMINATIONX3) = r_0056_0008__Mr_Weaver
+      &amp; genv(NOMINATIONX3) = r_0056_0008__Mr__r_0056_0009__Weaver
       &amp; NOMINATIONX6 = NOMINATIONX3
       &amp; isA(r_0056_0020__Senate,r_0056_0020__Senate)
       &amp; attrib2(r_0056_0020__Senate) = ATTRIBX9

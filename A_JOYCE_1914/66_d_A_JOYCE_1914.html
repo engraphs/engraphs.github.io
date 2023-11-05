@@ -334,46 +334,46 @@
 arc(r_0154_0003__know,r_0154_0002__I,arg0).
 arc(r_0154_0003__know,r_0154_0004__that,arg1).
 arc(r_0154_0007__said,r_0154_0008__Eliza,arg0).
-arc(r_0154_0007__said,utterance_0154_1003,arg1).
+arc(r_0154_0007__said,r_0154_1003__utterance,arg1).
 arc(r_0154_0008__Eliza,r_0154_0002__I,z_0154_1007).
+arc(r_0154_1003__utterance,r_0154_0003__know,part1).
 arc(r_0155_0003__wo,r_0155_0004__n_apos_t,scope).
 arc(r_0155_0004__n_apos_t,r_0155_0005__be,scope).
-arc(r_0155_0005__be,r_0155_0013__quantificational__any,catenative).
-arc(r_0155_0006__bringing_in,r_0154_0002__I,arg0).
-arc(r_0155_0006__bringing_in,r_0155_0007__him,arg2).
-arc(r_0155_0006__bringing_in,r_0155_0010__cup,arg1).
-arc(r_0155_0006__bringing_in,r_0155_0021__sending,r_0155_0016__nor_cnt).
-arc(r_0155_0006__bringing_in,z_0154_1020,mnr).
+arc(r_0155_0005__be,r_0155_0013__quantificational__r_0155_0013__any,catenative).
+arc(r_0155_0006__bringing__r_0155_0008__in,r_0154_0002__I,arg0).
+arc(r_0155_0006__bringing__r_0155_0008__in,r_0155_0007__him,arg2).
+arc(r_0155_0006__bringing__r_0155_0008__in,r_0155_0010__cup,arg1).
+arc(r_0155_0006__bringing__r_0155_0008__in,r_0155_0021__sending,r_0155_0016__nor_cnt).
+arc(r_0155_0006__bringing__r_0155_0008__in,z_0154_1020,mnr).
 arc(r_0155_0010__cup,r_0155_0007__him,genv).
 arc(r_0155_0010__cup,r_0155_0012__beef_tea,r_0155_0011__of).
-arc(r_0155_0013__quantificational__any,r_0155_0006__bringing_in,scope).
-arc(r_0155_0013__quantificational__any,z_0154_1020,restriction).
+arc(r_0155_0013__quantificational__r_0155_0013__any,r_0155_0006__bringing__r_0155_0008__in,scope).
+arc(r_0155_0013__quantificational__r_0155_0013__any,z_0154_1020,restriction).
 arc(r_0155_0017__you,r_0155_0019__ma_apos_am,prn3).
 arc(r_0155_0021__sending,r_0155_0007__him,arg2).
 arc(r_0155_0021__sending,r_0155_0017__you,arg0).
 arc(r_0155_0021__sending,r_0155_0024__snuff,arg1).
 arc(r_0155_0024__snuff,r_0155_0007__him,genv).
-arc(utterance_0154_1003,r_0154_0003__know,part1).
 arc(z_0154_1020,r_0155_0014__more,attrib2).
 
 </pre>
 <br>
 <pre>
-fof(id_154_A_JOYCE_1914__155_A_JOYCE_1914,axiom,
+fof(id__154_A_JOYCE_1914__155_A_JOYCE_1914,axiom,
     ? [STATEX1,CATENATIVEX13,EVENTX21,ELIZAX8,ELIZAX10,PRIESTX15,PRIESTX23,PRIESTX25,OPERATORX11,OPERATORX12,EVENTX28,QUANTX18,EVENTX27,EVENTX26,EVENTX9,CONJX5,EVENTX4,ENTITYX14,ENTITYX17,ENTITYX24,AUNTX22,ENTITYX16,ATTRIBX19] :
       ( STATEX1 = CONJX5
-      &amp; isA(CONJX5,utterance_0154_1003)
+      &amp; isA(CONJX5,r_0154_1003__utterance)
       &amp; part1(CONJX5) = EVENTX4
       &amp; isA(EVENTX4,r_0154_0003__know)
       &amp; arg0(EVENTX4) = r_0154_0002__I
       &amp; arg1(EVENTX4) = r_0154_0004__that
       &amp; CATENATIVEX13 = QUANTX18
-      &amp; isA(QUANTX18,r_0155_0013__quantificational__any)
+      &amp; isA(QUANTX18,r_0155_0013__quantificational__r_0155_0013__any)
       &amp; restriction(QUANTX18) = ENTITYX17
       &amp; isA(ENTITYX17,z_0154_1020)
       &amp; attrib2(ENTITYX17) = ATTRIBX19
       &amp; scope(QUANTX18) = EVENTX27
-      &amp; isA(EVENTX27,r_0155_0006__bringing_in)
+      &amp; isA(EVENTX27,r_0155_0006__bringing__r_0155_0008__in)
       &amp; arg0(EVENTX27) = ELIZAX10
       &amp; arg2(EVENTX27) = r_0155_0007__him
       &amp; arg1(EVENTX27) = ENTITYX14

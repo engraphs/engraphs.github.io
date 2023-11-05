@@ -161,12 +161,12 @@ Scrutiny committees in both the House of Commons and the House of Lords play a v
 </svg>
 <br>
 <pre>
-arc(r_0045_0001__Scrutiny_committees,r_0045_0004__both_and,r_0045_0003__in).
-arc(r_0045_0004__both_and,r_0045_0006__House,conj1).
-arc(r_0045_0004__both_and,r_0045_0011__House,conj2).
+arc(r_0045_0001__Scrutiny__r_0045_0002__committees,r_0045_0004__both_r_0045_0009__and,r_0045_0003__in).
+arc(r_0045_0004__both__r_0045_0009__and,r_0045_0006__House,conj1).
+arc(r_0045_0004__both__r_0045_0009__and,r_0045_0011__House,conj2).
 arc(r_0045_0006__House,r_0045_0008__Commons,r_0045_0007__of).
 arc(r_0045_0011__House,r_0045_0013__Lords,r_0045_0012__of).
-arc(r_0045_0014__play,r_0045_0001__Scrutiny_committees,arg0).
+arc(r_0045_0014__play,r_0045_0001__Scrutiny__r_0045_0002__committees,arg0).
 arc(r_0045_0014__play,r_0045_0017__role,arg1).
 arc(r_0045_0014__play,r_0045_0019__this,r_0045_0018__in_rst).
 arc(r_0045_0017__role,r_0045_0016__vital,attrib2).
@@ -174,11 +174,11 @@ arc(r_0045_0017__role,r_0045_0016__vital,attrib2).
 </pre>
 <br>
 <pre>
-fof(id_45_A_uksc_judgment,axiom,
+fof(id__45_A_uksc_judgment,axiom,
     ? [EVENTX9,ENTITYX1,ENTITYX7,ENTITYX2,ENTITYX3,ENTITYX5,ENTITYX6,ENTITYX4,ATTRIBX8] :
-      ( isA(ENTITYX1,r_0045_0001__Scrutiny_committees)
+      ( isA(ENTITYX1,r_0045_0001__Scrutiny__r_0045_0002__committees)
       &amp; r_0045_0003__in(ENTITYX1) = ENTITYX2
-      &amp; isA(ENTITYX2,r_0045_0004__both_and)
+      &amp; isA(ENTITYX2,r_0045_0004__both__r_0045_0009__and)
       &amp; conj1(ENTITYX2) = ENTITYX3
       &amp; conj2(ENTITYX2) = ENTITYX5
       &amp; isA(ENTITYX3,r_0045_0006__House)

@@ -116,28 +116,28 @@ Then standing straight I walked on .
 </svg>
 <br>
 <pre>
-arc(abs_0196_1002,r_0196_0002__standing,restriction).
-arc(abs_0196_1002,r_0196_0005__walked_on,scope).
-arc(r_0196_0001__Then,abs_0196_1002,scope).
+arc(r_0196_0001__Then,r_0196_1002__abs,scope).
 arc(r_0196_0002__standing,r_0196_0003__straight,mnr2).
 arc(r_0196_0002__standing,r_0196_0004__I,arg0).
-arc(r_0196_0005__walked_on,r_0196_0004__I,arg0).
+arc(r_0196_0005__walked__r_0196_0006__on,r_0196_0004__I,arg0).
+arc(r_0196_1002__abs,r_0196_0002__standing,restriction).
+arc(r_0196_1002__abs,r_0196_0005__walked__r_0196_0006__on,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_196_A_LooseChange,axiom,
+fof(id__196_A_LooseChange,axiom,
     ? [OPERATORX1,CONNX3,EVENTX6,EVENTX5,QUALITYX4] :
       ( isA(QUALITYX4,r_0196_0003__straight)
       &amp; isA(OPERATORX1,r_0196_0001__Then)
       &amp; scope(OPERATORX1) = CONNX3
-      &amp; isA(CONNX3,abs_0196_1002)
+      &amp; isA(CONNX3,r_0196_1002__abs)
       &amp; restriction(CONNX3) = EVENTX5
       &amp; isA(EVENTX5,r_0196_0002__standing)
       &amp; arg0(EVENTX5) = r_0196_0004__I
       &amp; mnr2(EVENTX5) = QUALITYX4
       &amp; scope(CONNX3) = EVENTX6
-      &amp; isA(EVENTX6,r_0196_0005__walked_on)
+      &amp; isA(EVENTX6,r_0196_0005__walked__r_0196_0006__on)
       &amp; arg0(EVENTX6) = r_0196_0004__I ) ).
 
 

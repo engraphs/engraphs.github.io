@@ -372,20 +372,18 @@ Once a beautiful flower put its head out from the grass , but when it saw the no
 </svg>
 <br>
 <pre>
-arc(cnt_0023_1022,r_0023_0038__went,scope).
-arc(cnt_0023_1022,r_0023_0041__sleep,restriction).
 arc(r_0023_0004__flower,r_0023_0003__beautiful,attrib2).
-arc(r_0023_0005__put_out,r_0023_0001__Once,tmp1).
-arc(r_0023_0005__put_out,r_0023_0004__flower,arg0).
-arc(r_0023_0005__put_out,r_0023_0007__head,arg1).
-arc(r_0023_0005__put_out,r_0023_0011__grass,r_0023_0009__from_dir).
+arc(r_0023_0005__put__r_0023_0008__out,r_0023_0001__Once,tmp1).
+arc(r_0023_0005__put__r_0023_0008__out,r_0023_0004__flower,arg0).
+arc(r_0023_0005__put__r_0023_0008__out,r_0023_0007__head,arg1).
+arc(r_0023_0005__put__r_0023_0008__out,r_0023_0011__grass,r_0023_0009__from_dir).
 arc(r_0023_0007__head,r_0023_0004__flower,genv).
-arc(r_0023_0013__but,r_0023_0005__put_out,conj1).
+arc(r_0023_0013__but,r_0023_0005__put__r_0023_0008__out,conj1).
 arc(r_0023_0013__but,r_0023_0014__when_tmp,conj2).
 arc(r_0023_0014__when_tmp,r_0023_0016__saw,restriction).
 arc(r_0023_0014__when_tmp,r_0023_0022__was,scope).
 arc(r_0023_0016__saw,r_0023_0004__flower,arg0).
-arc(r_0023_0016__saw,r_0023_0018__notice_board,arg1).
+arc(r_0023_0016__saw,r_0023_0018__notice__r_0023_0020__board,arg1).
 arc(r_0023_0022__was,r_0023_0004__flower,arg0).
 arc(r_0023_0022__was,r_0023_0024__sorry,prd2).
 arc(r_0023_0023__so,r_0023_0037__and,emb2).
@@ -395,16 +393,18 @@ arc(r_0023_0030__slipped,r_0023_0004__flower,arg0).
 arc(r_0023_0030__slipped,r_0023_0031__back,clr_dir2).
 arc(r_0023_0030__slipped,r_0023_0035__again,tmp3).
 arc(r_0023_0031__back,r_0023_0034__ground,r_0023_0032__into).
-arc(r_0023_0037__and,cnt_0023_1022,conj2).
 arc(r_0023_0037__and,r_0023_0030__slipped,conj1).
+arc(r_0023_0037__and,r_0023_1022__cnt,conj2).
 arc(r_0023_0038__went,r_0023_0004__flower,arg0).
 arc(r_0023_0038__went,r_0023_0039__off,dir2).
 arc(r_0023_0041__sleep,r_0023_0004__flower,arg0).
+arc(r_0023_1022__cnt,r_0023_0038__went,scope).
+arc(r_0023_1022__cnt,r_0023_0041__sleep,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_23_A_WILDE_2_1888,axiom,
+fof(id__23_A_WILDE_2_1888,axiom,
     ? [STATEX15,FLOWERX5,FLOWERX9,FLOWERX12,FLOWERX16,CONJX29,CONNX8,EVENTX28,CONJX26,CONNX23,EVENTX24,EVENTX25,EVENTX20,EVENTX11,EVENTX7,QUALITYX14,QUALITYX21,QUALITYX17,QUALITYX19,QUALITYX1,ENTITYX27,ENTITYX18,ENTITYX10,FLOWERX2,ENTITYX4,ENTITYX6,ATTRIBX13,ATTRIBX3] :
       ( STATEX15 = CONJX26
       &amp; isA(CONJX26,r_0023_0037__and)
@@ -414,7 +414,7 @@ fof(id_23_A_WILDE_2_1888,axiom,
       &amp; clr_dir2(EVENTX20) = QUALITYX17
       &amp; tmp3(EVENTX20) = QUALITYX19
       &amp; conj2(CONJX26) = CONNX23
-      &amp; isA(CONNX23,cnt_0023_1022)
+      &amp; isA(CONNX23,r_0023_1022__cnt)
       &amp; scope(CONNX23) = EVENTX25
       &amp; isA(EVENTX25,r_0023_0038__went)
       &amp; arg0(EVENTX25) = FLOWERX16
@@ -436,7 +436,7 @@ fof(id_23_A_WILDE_2_1888,axiom,
       &amp; FLOWERX5 = FLOWERX2
       &amp; isA(ENTITYX6,r_0023_0011__grass)
       &amp; FLOWERX9 = FLOWERX2
-      &amp; isA(ENTITYX10,r_0023_0018__notice_board)
+      &amp; isA(ENTITYX10,r_0023_0018__notice__r_0023_0020__board)
       &amp; FLOWERX12 = FLOWERX2
       &amp; ( FLOWERX16 = FLOWERX12
         | FLOWERX16 = FLOWERX2 )
@@ -448,7 +448,7 @@ fof(id_23_A_WILDE_2_1888,axiom,
       &amp; r_0023_0025__for(ATTRIBX13) = ENTITYX27
       &amp; isA(CONJX29,r_0023_0013__but)
       &amp; conj1(CONJX29) = EVENTX7
-      &amp; isA(EVENTX7,r_0023_0005__put_out)
+      &amp; isA(EVENTX7,r_0023_0005__put__r_0023_0008__out)
       &amp; tmp1(EVENTX7) = QUALITYX1
       &amp; arg0(EVENTX7) = FLOWERX2
       &amp; arg1(EVENTX7) = ENTITYX4

@@ -85,16 +85,16 @@ Iraq clears visit by Ohio official
 <pre>
 arc(r_0001_0002__clears,r_0001_0001__Iraq,arg0).
 arc(r_0001_0002__clears,r_0001_0003__visit,arg1).
-arc(r_0001_0003__visit,r_0001_0005__Ohio_official,r_0001_0004__by).
+arc(r_0001_0003__visit,r_0001_0005__Ohio__r_0001_0006__official,r_0001_0004__by).
 
 </pre>
 <br>
 <pre>
-fof(id_1_A_ANC_nyt20000410,axiom,
+fof(id__1_A_ANC_nyt20000410,axiom,
     ? [EVENTX3,ENTITYX1,HALLX2] :
       ( isA(ENTITYX1,r_0001_0003__visit)
       &amp; r_0001_0004__by(ENTITYX1) = HALLX2
-      &amp; isA(HALLX2,r_0001_0005__Ohio_official)
+      &amp; isA(HALLX2,r_0001_0005__Ohio__r_0001_0006__official)
       &amp; isA(EVENTX3,r_0001_0002__clears)
       &amp; arg0(EVENTX3) = r_0001_0001__Iraq
       &amp; arg1(EVENTX3) = ENTITYX1 ) ).

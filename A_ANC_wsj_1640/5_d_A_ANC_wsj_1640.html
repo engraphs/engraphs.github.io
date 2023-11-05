@@ -519,8 +519,8 @@ They need only position themselves near a company 's satellite dish and wait .
 </svg>
 <br>
 <pre>
-arc(r_0006_0001__quantificational__Any,r_0006_0002__secret,restriction).
-arc(r_0006_0001__quantificational__Any,r_0006_0011__if_cnt_cnd,scope).
+arc(r_0006_0001__quantificational__r_0006_0001__Any,r_0006_0002__secret,restriction).
+arc(r_0006_0001__quantificational__r_0006_0001__Any,r_0006_0011__if_cnt_cnd,scope).
 arc(r_0006_0003__can,r_0006_0004__be,scope).
 arc(r_0006_0004__be,r_0006_0005__pirated,catenative).
 arc(r_0006_0004__be,r_0006_0009__said,prn6).
@@ -537,24 +537,24 @@ arc(r_0007_0004__can,r_0007_0005__do,scope).
 arc(r_0007_0005__do,r_0006_0005__pirated,arg1).
 arc(r_0007_0005__do,r_0007_0003__amateurs,arg0).
 arc(r_0007_0007__if_cnt_cnd,r_0007_0004__can,scope).
-arc(r_0007_0007__if_cnt_cnd,r_0007_0010__quantificational__a_few,restriction).
+arc(r_0007_0007__if_cnt_cnd,r_0007_0010__quantificational__r_0007_0010__a_few,restriction).
 arc(r_0007_0009__spend,r_0007_0003__amateurs,arg0).
-arc(r_0007_0009__spend,r_0007_0011__thousand_dollars,arg1).
+arc(r_0007_0009__spend,r_0007_0011__thousand__r_0007_0012__dollars,arg1).
 arc(r_0007_0009__spend,r_0007_0021__and,r_0007_0013__for_cnt).
-arc(r_0007_0010__quantificational__a_few,r_0007_0009__spend,scope).
-arc(r_0007_0010__quantificational__a_few,r_0007_0011__thousand_dollars,restriction).
+arc(r_0007_0010__quantificational__r_0007_0010__a_few,r_0007_0009__spend,scope).
+arc(r_0007_0010__quantificational__r_0007_0010__a_few,r_0007_0011__thousand__r_0007_0012__dollars,restriction).
 arc(r_0007_0016__available,r_0007_0015__commercially,quality1).
-arc(r_0007_0017__microwave_receiver,r_0007_0016__available,attrib2).
-arc(r_0007_0017__microwave_receiver,r_0007_0020__amplifier,r_0007_0019__with).
-arc(r_0007_0021__and,r_0007_0017__microwave_receiver,conj1).
-arc(r_0007_0021__and,r_0007_0023__VCR_recorder,conj2).
+arc(r_0007_0017__microwave__r_0007_0018__receiver,r_0007_0016__available,attrib2).
+arc(r_0007_0017__microwave__r_0007_0018__receiver,r_0007_0020__amplifier,r_0007_0019__with).
+arc(r_0007_0021__and,r_0007_0017__microwave__r_0007_0018__receiver,conj1).
+arc(r_0007_0021__and,r_0007_0023__VCR__r_0007_0024__recorder,conj2).
 arc(r_0008_0002__need,r_0007_0003__amateurs,arg0).
 arc(r_0008_0002__need,r_0008_0012__and,arg1).
 arc(r_0008_0003__only,r_0008_0002__need,scope).
 arc(r_0008_0004__position,r_0007_0003__amateurs,arg0).
 arc(r_0008_0004__position,r_0007_0003__amateurs,arg1).
-arc(r_0008_0004__position,r_0008_0010__satellite_dish,r_0008_0006__near_loc).
-arc(r_0008_0010__satellite_dish,r_0008_0008__company,genv).
+arc(r_0008_0004__position,r_0008_0010__satellite__r_0008_0011__dish,r_0008_0006__near_loc).
+arc(r_0008_0010__satellite__r_0008_0011__dish,r_0008_0008__company,genv).
 arc(r_0008_0012__and,r_0008_0004__position,conj1).
 arc(r_0008_0012__and,r_0008_0013__wait,conj2).
 arc(r_0008_0013__wait,r_0007_0003__amateurs,arg0).
@@ -562,7 +562,7 @@ arc(r_0008_0013__wait,r_0007_0003__amateurs,arg0).
 </pre>
 <br>
 <pre>
-fof(id_6_A_ANC_wsj_1640__7_A_ANC_wsj_1640__8_A_ANC_wsj_1640,axiom,
+fof(id__6_A_ANC_wsj_1640__7_A_ANC_wsj_1640__8_A_ANC_wsj_1640,axiom,
     ? [EVENTX3,PIRATE_SECRETSX14,CATENATIVEX8,STATEX37,SECRETX7,PIRATE_SECRETSX32,AMATEURSX22,AMATEURSX35,AMATEURSX38,OPERATORX36,EVENTX44,CONJX43,EVENTX42,EVENTX41,OPERATORX18,CONNX21,QUANTX24,EVENTX31,OPERATORX33,EVENTX34,QUANTX2,CONNX6,EVENTX12,EVENTX11,OPERATORX13,EVENTX17,PIRATE_SECRETSX16,EVENTX5,ENTITYX39,ENTITYX40,AMATEURSX19,ENTITYX23,ENTITYX25,ENTITYX26,ENTITYX30,ENTITYX29,SECRETX1,ENTITYX10,ENTITYX4,ATTRIBX27,ATTRIBX20,QUALITYX28] :
       ( EVENTX3 = EVENTX5
       &amp; isA(EVENTX5,r_0006_0009__said)
@@ -594,22 +594,22 @@ fof(id_6_A_ANC_wsj_1640__7_A_ANC_wsj_1640__8_A_ANC_wsj_1640,axiom,
       &amp; isA(ENTITYX25,r_0007_0021__and)
       &amp; conj1(ENTITYX25) = ENTITYX26
       &amp; conj2(ENTITYX25) = ENTITYX30
-      &amp; isA(ENTITYX26,r_0007_0017__microwave_receiver)
+      &amp; isA(ENTITYX26,r_0007_0017__microwave__r_0007_0018__receiver)
       &amp; attrib2(ENTITYX26) = ATTRIBX27
       &amp; r_0007_0019__with(ENTITYX26) = ENTITYX29
       &amp; isA(ENTITYX29,r_0007_0020__amplifier)
-      &amp; isA(ENTITYX30,r_0007_0023__VCR_recorder)
+      &amp; isA(ENTITYX30,r_0007_0023__VCR__r_0007_0024__recorder)
       &amp; AMATEURSX35 = AMATEURSX19
       &amp; ( AMATEURSX38 = AMATEURSX19
         | AMATEURSX38 = AMATEURSX35 )
-      &amp; isA(ENTITYX39,r_0008_0010__satellite_dish)
+      &amp; isA(ENTITYX39,r_0008_0010__satellite__r_0008_0011__dish)
       &amp; genv(ENTITYX39) = ENTITYX40
       &amp; isA(ENTITYX40,r_0008_0008__company)
       &amp; isA(ATTRIBX20,r_0007_0002__rank)
       &amp; isA(ATTRIBX27,r_0007_0016__available)
       &amp; quality1(ATTRIBX27) = QUALITYX28
       &amp; isA(QUALITYX28,r_0007_0015__commercially)
-      &amp; isA(QUANTX2,r_0006_0001__quantificational__Any)
+      &amp; isA(QUANTX2,r_0006_0001__quantificational__r_0006_0001__Any)
       &amp; restriction(QUANTX2) = SECRETX1
       &amp; isA(SECRETX1,r_0006_0002__secret)
       &amp; scope(QUANTX2) = CONNX6
@@ -633,9 +633,9 @@ fof(id_6_A_ANC_wsj_1640__7_A_ANC_wsj_1640__8_A_ANC_wsj_1640,axiom,
       &amp; arg0(EVENTX34) = AMATEURSX19
       &amp; arg1(EVENTX34) = PIRATE_SECRETSX32
       &amp; restriction(CONNX21) = QUANTX24
-      &amp; isA(QUANTX24,r_0007_0010__quantificational__a_few)
+      &amp; isA(QUANTX24,r_0007_0010__quantificational__r_0007_0010__a_few)
       &amp; restriction(QUANTX24) = ENTITYX23
-      &amp; isA(ENTITYX23,r_0007_0011__thousand_dollars)
+      &amp; isA(ENTITYX23,r_0007_0011__thousand__r_0007_0012__dollars)
       &amp; scope(QUANTX24) = EVENTX31
       &amp; isA(EVENTX31,r_0007_0009__spend)
       &amp; arg0(EVENTX31) = AMATEURSX22

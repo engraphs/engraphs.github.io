@@ -292,12 +292,9 @@ Write an article for your college magazine , comparing one of the places describ
 </svg>
 <br>
 <pre>
-arc(cnt_0039_1006,r_0039_0001__Write,scope).
-arc(cnt_0039_1006,r_0039_0009__comparing,restriction).
-arc(imperative_0039_1002,cnt_0039_1006,scope).
 arc(r_0039_0001__Write,r_0039_0003__article,arg1).
-arc(r_0039_0001__Write,r_0039_0006__college_magazine,r_0039_0004__for_arg2).
-arc(r_0039_0006__college_magazine,r_0039_0005__your,genv).
+arc(r_0039_0001__Write,r_0039_0006__college__r_0039_0007__magazine,r_0039_0004__for_arg2).
+arc(r_0039_0006__college__r_0039_0007__magazine,r_0039_0005__your,genv).
 arc(r_0039_0009__comparing,r_0039_0010__one,arg1).
 arc(r_0039_0009__comparing,r_0039_0029__place,r_0039_0027__with_clr).
 arc(r_0039_0010__one,r_0039_0013__places,r_0039_0011__of).
@@ -312,18 +309,21 @@ arc(r_0039_0026__read,r_0039_0005__your,arg0).
 arc(r_0039_0026__read,r_0039_0018__or,arg1).
 arc(r_0039_0029__place,r_0039_0032__country,r_0039_0030__in).
 arc(r_0039_0032__country,r_0039_0005__your,genv).
+arc(r_0039_1002__imperative,r_0039_1006__cnt,scope).
+arc(r_0039_1006__cnt,r_0039_0001__Write,scope).
+arc(r_0039_1006__cnt,r_0039_0009__comparing,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_39_A_fce_0101_2001_06,axiom,
+fof(id__39_A_fce_0101_2001_06,axiom,
     ? [CATENATIVEX13,HEARERX12,HEARERX23,OPERATORX2,CONNX7,EVENTX24,EVENTX20,EVENTX15,EVENTX14,EVENTX25,ENTITYX4,ENTITYX5,ENTITYX8,ENTITYX21,ENTITYX22,ENTITYX9,ENTITYX11,ENTITYX16,ENTITYX17,ENTITYX18,ATTRIBX19] :
       ( CATENATIVEX13 = EVENTX14
       &amp; isA(EVENTX14,r_0039_0026__read)
       &amp; arg0(EVENTX14) = HEARERX12
       &amp; arg1(EVENTX14) = ENTITYX11
       &amp; isA(ENTITYX4,r_0039_0003__article)
-      &amp; isA(ENTITYX5,r_0039_0006__college_magazine)
+      &amp; isA(ENTITYX5,r_0039_0006__college__r_0039_0007__magazine)
       &amp; genv(ENTITYX5) = r_0039_0005__your
       &amp; isA(ENTITYX8,r_0039_0010__one)
       &amp; r_0039_0011__of(ENTITYX8) = ENTITYX9
@@ -348,9 +348,9 @@ fof(id_39_A_fce_0101_2001_06,axiom,
       &amp; genv(ENTITYX22) = HEARERX23
       &amp; HEARERX23 = r_0039_0005__your
       &amp; isA(ATTRIBX19,r_0039_0022__short)
-      &amp; isA(OPERATORX2,imperative_0039_1002)
+      &amp; isA(OPERATORX2,r_0039_1002__imperative)
       &amp; scope(OPERATORX2) = CONNX7
-      &amp; isA(CONNX7,cnt_0039_1006)
+      &amp; isA(CONNX7,r_0039_1006__cnt)
       &amp; scope(CONNX7) = EVENTX25
       &amp; isA(EVENTX25,r_0039_0001__Write)
       &amp; arg1(EVENTX25) = ENTITYX4

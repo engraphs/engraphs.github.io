@@ -328,7 +328,7 @@ fatality rates 30 % .
 <pre>
 arc(r_0030_0002__Encephalitis,r_0030_0001__Japanese,attrib1).
 arc(r_0030_0002__Encephalitis,r_0030_0012__disease,prn4).
-arc(r_0030_0004__mosquito,r_0030_0008__Culex_tritaeniorhynchus,prn2).
+arc(r_0030_0004__mosquito,r_0030_0008__Culex__r_0030_0009__tritaeniorhynchus,prn2).
 arc(r_0030_0006__borne,r_0030_0004__mosquito,arg0_lgs).
 arc(r_0030_0006__borne,r_0030_0012__disease,arg1).
 arc(r_0030_0012__disease,r_0030_0011__viral,attrib4).
@@ -344,13 +344,13 @@ arc(r_0031_0010__and,r_0031_0006__paralysis,conj1).
 arc(r_0031_0010__and,r_0031_0008__coma,conj2).
 arc(r_0031_0010__and,r_0031_0011__death,conj3).
 arc(z_0030_1014,r_0030_0002__Encephalitis,z_0030_1004).
-arc(z_0030_1026,r_0032_0001__fatality_rates,arg0).
-arc(z_0030_1026,r_0032_0003__30__,prd2).
+arc(z_0030_1026,r_0032_0001__fatality__r_0032_0002__rates,arg0).
+arc(z_0030_1026,r_0032_0003__30__r_0032_0004___,prd2).
 
 </pre>
 <br>
 <pre>
-fof(id_30_A_FACTBOOK_1_2010__31_A_FACTBOOK_1_2010__32_A_FACTBOOK_1_2010,axiom,
+fof(id__30_A_FACTBOOK_1_2010__31_A_FACTBOOK_1_2010__32_A_FACTBOOK_1_2010,axiom,
     ? [EVENTX27,OPERATORX22,EVENTX23,EVENTX15,EVENTX13,EVENTX8,ENTITYX24,ENTITYX25,ENTITYX16,ENTITYX18,ENTITYX19,ENTITYX20,ENTITYX21,ENTITYX6,ENTITYX11,ENTITYX7,ATTRIBX17,ATTRIBX5,ATTRIBX9,ATTRIBX12] :
       ( isA(EVENTX8,r_0030_0006__borne)
       &amp; arg0_lgs(EVENTX8) = ENTITYX7
@@ -361,7 +361,7 @@ fof(id_30_A_FACTBOOK_1_2010__31_A_FACTBOOK_1_2010__32_A_FACTBOOK_1_2010,axiom,
       &amp; isA(ENTITYX6,r_0030_0012__disease)
       &amp; attrib4(ENTITYX6) = ATTRIBX9
       &amp; isA(ENTITYX7,r_0030_0004__mosquito)
-      &amp; prn2(ENTITYX7) = r_0030_0008__Culex_tritaeniorhynchus
+      &amp; prn2(ENTITYX7) = r_0030_0008__Culex__r_0030_0009__tritaeniorhynchus
       &amp; isA(ENTITYX11,r_0030_0016__areas)
       &amp; attrib1(ENTITYX11) = ATTRIBX12
       &amp; r_0030_0017__in(ENTITYX11) = r_0030_0018__Asia
@@ -374,8 +374,8 @@ fof(id_30_A_FACTBOOK_1_2010__31_A_FACTBOOK_1_2010__32_A_FACTBOOK_1_2010,axiom,
       &amp; isA(ENTITYX19,r_0031_0006__paralysis)
       &amp; isA(ENTITYX20,r_0031_0008__coma)
       &amp; isA(ENTITYX21,r_0031_0011__death)
-      &amp; isA(ENTITYX24,r_0032_0001__fatality_rates)
-      &amp; isA(ENTITYX25,r_0032_0003__30__)
+      &amp; isA(ENTITYX24,r_0032_0001__fatality__r_0032_0002__rates)
+      &amp; isA(ENTITYX25,r_0032_0003__30__r_0032_0004___)
       &amp; isA(ATTRIBX5,r_0030_0001__Japanese)
       &amp; isA(ATTRIBX9,r_0030_0011__viral)
       &amp; isA(ATTRIBX12,r_0030_0015__rural)

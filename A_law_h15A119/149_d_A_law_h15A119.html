@@ -269,16 +269,16 @@ However , in falling under any of the following items , the business operator ma
 <pre>
 arc(r_0149_0001__However,r_0149_0015__may,scope).
 arc(r_0149_0004__falling,z_0149_1009,r_0149_0005__under_loc).
-arc(r_0149_0006__quantificational__any,r_0149_0004__falling,scope).
-arc(r_0149_0006__quantificational__any,z_0149_1009,restriction).
+arc(r_0149_0006__quantificational__r_0149_0006__any,r_0149_0004__falling,scope).
+arc(r_0149_0006__quantificational__r_0149_0006__any,z_0149_1009,restriction).
 arc(r_0149_0010__items,r_0149_0009__following,attrib2).
 arc(r_0149_0015__may,r_0149_0016__keep,scope).
-arc(r_0149_0016__keep,r_0149_0006__quantificational__any,r_0149_0003__in_cnt).
-arc(r_0149_0016__keep,r_0149_0013__business_operator,arg0).
+arc(r_0149_0016__keep,r_0149_0006__quantificational__r_0149_0006__any,r_0149_0003__in_cnt).
+arc(r_0149_0016__keep,r_0149_0013__business__r_0149_0014__operator,arg0).
 arc(r_0149_0016__keep,r_0149_0018__or,arg1).
 arc(r_0149_0016__keep,r_0149_0025__undisclosed,prd).
-arc(r_0149_0017__quantificational__all,r_0149_0018__or,scope).
-arc(r_0149_0017__quantificational__all,z_0149_1018,restriction).
+arc(r_0149_0017__quantificational__r_0149_0017__all,r_0149_0018__or,scope).
+arc(r_0149_0017__quantificational__r_0149_0017__all,z_0149_1018,restriction).
 arc(r_0149_0018__or,r_0149_0019__part,conj2).
 arc(r_0149_0018__or,r_0149_0024__data,r_0149_0020__of).
 arc(r_0149_0018__or,z_0149_1018,conj1).
@@ -289,10 +289,10 @@ arc(z_0149_1009,r_0149_0010__items,r_0149_0007__of).
 </pre>
 <br>
 <pre>
-fof(id_149_A_law_h15A119,axiom,
+fof(id__149_A_law_h15A119,axiom,
     ? [EVENTX2,OPERATORX1,OPERATORX21,EVENTX22,QUANTX17,QUANTX6,EVENTX10,ENTITYX11,ENTITYX12,ENTITYX13,ENTITYX16,ENTITYX19,ENTITYX5,ENTITYX7,ATTRIBX20,ATTRIBX14,ATTRIBX15,ATTRIBX8] :
       ( EVENTX2 = QUANTX6
-      &amp; isA(QUANTX6,r_0149_0006__quantificational__any)
+      &amp; isA(QUANTX6,r_0149_0006__quantificational__r_0149_0006__any)
       &amp; restriction(QUANTX6) = ENTITYX5
       &amp; isA(ENTITYX5,z_0149_1009)
       &amp; r_0149_0007__of(ENTITYX5) = ENTITYX7
@@ -301,8 +301,8 @@ fof(id_149_A_law_h15A119,axiom,
       &amp; r_0149_0005__under_loc(EVENTX10) = ENTITYX5
       &amp; isA(ENTITYX7,r_0149_0010__items)
       &amp; attrib2(ENTITYX7) = ATTRIBX8
-      &amp; isA(ENTITYX11,r_0149_0013__business_operator)
-      &amp; isA(QUANTX17,r_0149_0017__quantificational__all)
+      &amp; isA(ENTITYX11,r_0149_0013__business__r_0149_0014__operator)
+      &amp; isA(QUANTX17,r_0149_0017__quantificational__r_0149_0017__all)
       &amp; restriction(QUANTX17) = ENTITYX16
       &amp; isA(ENTITYX16,z_0149_1018)
       &amp; scope(QUANTX17) = ENTITYX12

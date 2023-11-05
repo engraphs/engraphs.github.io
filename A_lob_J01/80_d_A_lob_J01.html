@@ -109,23 +109,23 @@ Rare earth elements are co-precipitated with lanthanum as fluorides .
 </svg>
 <br>
 <pre>
-arc(r_0080_0002__earth_elements,r_0080_0001__Rare,attrib1).
+arc(r_0080_0002__earth__r_0080_0003__elements,r_0080_0001__Rare,attrib1).
 arc(r_0080_0004__are,r_0080_0005__co_precipitated,catenative).
-arc(r_0080_0005__co_precipitated,r_0080_0002__earth_elements,arg1).
+arc(r_0080_0005__co_precipitated,r_0080_0002__earth__r_0080_0003__elements,arg1).
 arc(r_0080_0005__co_precipitated,r_0080_0007__lanthanum,r_0080_0006__with_com).
 arc(r_0080_0005__co_precipitated,r_0080_0009__fluorides,r_0080_0008__as_prd).
 
 </pre>
 <br>
 <pre>
-fof(id_80_A_lob_J01,axiom,
+fof(id__80_A_lob_J01,axiom,
     ? [CATENATIVEX3,EVENTX8,EVENTX7,ENTITYX1,ENTITYX5,ENTITYX6,ATTRIBX2] :
       ( CATENATIVEX3 = EVENTX7
       &amp; isA(EVENTX7,r_0080_0005__co_precipitated)
       &amp; arg1(EVENTX7) = ENTITYX1
       &amp; r_0080_0006__with_com(EVENTX7) = ENTITYX5
       &amp; r_0080_0008__as_prd(EVENTX7) = ENTITYX6
-      &amp; isA(ENTITYX1,r_0080_0002__earth_elements)
+      &amp; isA(ENTITYX1,r_0080_0002__earth__r_0080_0003__elements)
       &amp; attrib1(ENTITYX1) = ATTRIBX2
       &amp; isA(ENTITYX5,r_0080_0007__lanthanum)
       &amp; isA(ENTITYX6,r_0080_0009__fluorides)

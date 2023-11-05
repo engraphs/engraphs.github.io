@@ -503,8 +503,6 @@ However , this provision shall not apply to cases in which it costs large amount
 </svg>
 <br>
 <pre>
-arc(cnt_0162_1032,r_0162_0035__takes,scope).
-arc(cnt_0162_1032,r_0162_0040__protect,restriction).
 arc(r_0162_0001__However,r_0162_0005__shall,scope).
 arc(r_0162_0005__shall,r_0162_0006__not,scope).
 arc(r_0162_0006__not,r_0162_0007__apply,scope).
@@ -525,17 +523,19 @@ arc(r_0162_0022__or,r_0162_0024__erase,conj2).
 arc(r_0162_0024__erase,r_0162_0028__data,arg1).
 arc(r_0162_0028__data,r_0162_0026__retained,attrib2).
 arc(r_0162_0028__data,r_0162_0027__personal,attrib3).
-arc(r_0162_0029__and,cnt_0162_1032,conj2).
 arc(r_0162_0029__and,r_0162_0016__or,conj1).
+arc(r_0162_0029__and,r_0162_1032__cnt,conj2).
 arc(r_0162_0035__takes,r_0162_0009__cases,r_0162_0030__in_loc).
-arc(r_0162_0035__takes,r_0162_0033__business_operator,arg0).
+arc(r_0162_0035__takes,r_0162_0033__business__r_0162_0034__operator,arg0).
 arc(r_0162_0035__takes,z_0162_1031,arg1).
 arc(r_0162_0038__measures,r_0162_0037__alternative,attrib1).
-arc(r_0162_0040__protect,r_0162_0033__business_operator,arg0).
+arc(r_0162_0040__protect,r_0162_0033__business__r_0162_0034__operator,arg0).
 arc(r_0162_0040__protect,r_0162_0043__and,arg1).
 arc(r_0162_0043__and,r_0162_0042__rights,conj1).
 arc(r_0162_0043__and,r_0162_0044__interests,conj2).
 arc(r_0162_0043__and,r_0162_0047__person,r_0162_0045__of).
+arc(r_0162_1032__cnt,r_0162_0035__takes,scope).
+arc(r_0162_1032__cnt,r_0162_0040__protect,restriction).
 arc(z_0162_1023,r_0162_0004__provision,arg0).
 arc(z_0162_1023,r_0162_0009__cases,r_0162_0010__in_loc).
 arc(z_0162_1023,r_0162_0018__difficult,prd2).
@@ -545,7 +545,7 @@ arc(z_0162_1031,r_0162_0038__measures,nlyr2).
 </pre>
 <br>
 <pre>
-fof(id_162_A_law_h15A119,axiom,
+fof(id__162_A_law_h15A119,axiom,
     ? [STATEX12,STATEX18,PROVISIONX6,OPERATORX1,OPERATORX41,OPERATORX42,EVENTX43,CONJX40,CONNX33,EVENTX38,EVENTX39,CONJX25,OPERATORX10,EVENTX24,CONJX22,EVENTX21,EVENTX20,EVENTX19,EVENTX9,PROVISIONX2,ENTITYX3,ENTITYX26,ENTITYX27,ENTITYX34,ENTITYX35,ENTITYX36,ENTITYX37,ENTITYX29,ENTITYX15,ENTITYX7,ATTRIBX28,ATTRIBX30,ATTRIBX11,ATTRIBX16,ATTRIBX17,ATTRIBX8] :
       ( STATEX12 = CONJX22
       &amp; isA(CONJX22,r_0162_0022__or)
@@ -578,7 +578,7 @@ fof(id_162_A_law_h15A119,axiom,
       &amp; arg0(EVENTX24) = PROVISIONX6
       &amp; prd2(EVENTX24) = ATTRIBX11
       &amp; conj2(CONJX40) = CONNX33
-      &amp; isA(CONNX33,cnt_0162_1032)
+      &amp; isA(CONNX33,r_0162_1032__cnt)
       &amp; scope(CONNX33) = EVENTX39
       &amp; isA(EVENTX39,r_0162_0035__takes)
       &amp; arg0(EVENTX39) = ENTITYX26
@@ -596,7 +596,7 @@ fof(id_162_A_law_h15A119,axiom,
       &amp; isA(ENTITYX15,r_0162_0028__data)
       &amp; attrib2(ENTITYX15) = ATTRIBX16
       &amp; attrib3(ENTITYX15) = ATTRIBX17
-      &amp; isA(ENTITYX26,r_0162_0033__business_operator)
+      &amp; isA(ENTITYX26,r_0162_0033__business__r_0162_0034__operator)
       &amp; isA(ENTITYX27,z_0162_1031)
       &amp; attrib1(ENTITYX27) = ATTRIBX28
       &amp; nlyr2(ENTITYX27) = ENTITYX29

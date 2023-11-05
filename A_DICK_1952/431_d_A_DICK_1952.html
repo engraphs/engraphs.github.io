@@ -188,23 +188,23 @@ And presently , from the ship , a line of people came , each carrying something 
 </svg>
 <br>
 <pre>
-arc(abs_0554_1005,r_0554_0012__came,scope).
-arc(abs_0554_1005,r_0554_0014__quantificational__each,restriction).
 arc(r_0554_0009__line,r_0554_0011__people,r_0554_0010__of).
 arc(r_0554_0012__came,r_0554_0002__presently,tmp2).
 arc(r_0554_0012__came,r_0554_0006__ship,r_0554_0004__from_dir).
 arc(r_0554_0012__came,r_0554_0009__line,arg0).
-arc(r_0554_0014__quantificational__each,r_0554_0015__carrying,scope).
-arc(r_0554_0014__quantificational__each,z_0554_1009,restriction).
+arc(r_0554_0014__quantificational__r_0554_0014__each,r_0554_0015__carrying,scope).
+arc(r_0554_0014__quantificational__r_0554_0014__each,z_0554_1009,restriction).
 arc(r_0554_0015__carrying,r_0554_0016__something,arg1).
 arc(r_0554_0015__carrying,r_0554_0019__hands,r_0554_0017__in_loc).
 arc(r_0554_0015__carrying,z_0554_1009,arg0).
 arc(r_0554_0019__hands,r_0554_0011__people,genv).
+arc(r_0554_1005__abs,r_0554_0012__came,scope).
+arc(r_0554_1005__abs,r_0554_0014__quantificational__r_0554_0014__each,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_554_A_DICK_1952,axiom,
+fof(id__554_A_DICK_1952,axiom,
     ? [TRESPASSERSX11,CONNX6,QUANTX8,EVENTX12,EVENTX13,QUALITYX1,ENTITYX2,ENTITYX3,ENTITYX7,ENTITYX10,TRESPASSERSX4] :
       ( isA(QUALITYX1,r_0554_0002__presently)
       &amp; isA(ENTITYX2,r_0554_0006__ship)
@@ -214,14 +214,14 @@ fof(id_554_A_DICK_1952,axiom,
       &amp; isA(ENTITYX10,r_0554_0019__hands)
       &amp; genv(ENTITYX10) = TRESPASSERSX11
       &amp; TRESPASSERSX11 = TRESPASSERSX4
-      &amp; isA(CONNX6,abs_0554_1005)
+      &amp; isA(CONNX6,r_0554_1005__abs)
       &amp; scope(CONNX6) = EVENTX13
       &amp; isA(EVENTX13,r_0554_0012__came)
       &amp; tmp2(EVENTX13) = QUALITYX1
       &amp; r_0554_0004__from_dir(EVENTX13) = ENTITYX2
       &amp; arg0(EVENTX13) = ENTITYX3
       &amp; restriction(CONNX6) = QUANTX8
-      &amp; isA(QUANTX8,r_0554_0014__quantificational__each)
+      &amp; isA(QUANTX8,r_0554_0014__quantificational__r_0554_0014__each)
       &amp; restriction(QUANTX8) = ENTITYX7
       &amp; isA(ENTITYX7,z_0554_1009)
       &amp; scope(QUANTX8) = EVENTX12

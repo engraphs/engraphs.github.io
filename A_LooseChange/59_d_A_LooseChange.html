@@ -51,7 +51,7 @@
 <title>0112_0004&#45;&gt;0112_0003</title>
 <path fill="none" stroke="black" d="M59.13,-89.14C54.48,-83.21 49.55,-76.1 46.15,-69 42.74,-61.88 40.14,-53.75 38.19,-46.14"/>
 <polygon fill="black" stroke="black" points="41.57,-45.2 35.93,-36.23 34.74,-46.76 41.57,-45.2"/>
-<text text-anchor="middle" x="67.65" y="-57.8" font-family="fixed" font-size="14.00">[arg1]</text>
+<text text-anchor="middle" x="67.65" y="-57.8" font-family="fixed" font-size="14.00">[prd2]</text>
 </g>
 <!-- 0112_0005 -->
 <g id="node3" class="node">
@@ -83,20 +83,20 @@
 </svg>
 <br>
 <pre>
-arc(question_0112_1002,r_0112_0004__is,scope).
-arc(r_0112_0004__is,r_0112_0003__hotel,arg1).
+arc(r_0112_0004__is,r_0112_0003__hotel,prd2).
 arc(r_0112_0004__is,r_0112_0005__it,arg0).
+arc(r_0112_1002__question,r_0112_0004__is,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_112_A_LooseChange,axiom,
+fof(id__112_A_LooseChange,axiom,
     ? [OPERATORX2,EVENTX4,ENTITYX3] :
       ( isA(ENTITYX3,r_0112_0003__hotel)
-      &amp; isA(OPERATORX2,question_0112_1002)
+      &amp; isA(OPERATORX2,r_0112_1002__question)
       &amp; scope(OPERATORX2) = EVENTX4
       &amp; isA(EVENTX4,r_0112_0004__is)
-      &amp; arg1(EVENTX4) = ENTITYX3
+      &amp; prd2(EVENTX4) = ENTITYX3
       &amp; arg0(EVENTX4) = r_0112_0005__it ) ).
 
 
@@ -109,19 +109,19 @@ fof(id_112_A_LooseChange,axiom,
 <line x1="61.44" y1="122" x2="61.44" y2="153" style="stroke:#000000;stroke-width:2;"/>
 <line x1="420.72" y1="61" x2="60" y2="92" style="stroke:#000000;stroke-width:2;"/>
 <text x="360.72" y="112" text-anchor="middle">IP-SUB</text>
-<text x="240.72" y="173" text-anchor="middle">NP-OB1</text>
+<text x="240.84" y="173" text-anchor="middle">NP-PRD2</text>
 <text x="180.6" y="234" text-anchor="middle">WD</text>
 <text x="180.6" y="295" text-anchor="middle">Which</text>
 <line x1="180.6" y1="244" x2="180.6" y2="275" style="stroke:#000000;stroke-width:2;"/>
-<line x1="240.72" y1="183" x2="180" y2="214" style="stroke:#000000;stroke-width:2;"/>
+<line x1="240.84" y1="183" x2="180" y2="214" style="stroke:#000000;stroke-width:2;"/>
 <text x="300.6" y="234" text-anchor="middle">N</text>
 <text x="300.6" y="295" text-anchor="middle">hotel</text>
 <line x1="300.6" y1="244" x2="300.6" y2="275" style="stroke:#000000;stroke-width:2;"/>
-<line x1="240.72" y1="183" x2="300" y2="214" style="stroke:#000000;stroke-width:2;"/>
+<line x1="240.84" y1="183" x2="300" y2="214" style="stroke:#000000;stroke-width:2;"/>
 <line x1="360.72" y1="122" x2="240" y2="153" style="stroke:#000000;stroke-width:2;"/>
-<text x="420.36" y="173" text-anchor="middle">BEP</text>
-<text x="420.36" y="234" text-anchor="middle">is</text>
-<line x1="420.36" y1="183" x2="420.36" y2="214" style="stroke:#000000;stroke-width:2;"/>
+<text x="420.84" y="173" text-anchor="middle">BEP;~La</text>
+<text x="420.84" y="234" text-anchor="middle">is</text>
+<line x1="420.84" y1="183" x2="420.84" y2="214" style="stroke:#000000;stroke-width:2;"/>
 <line x1="360.72" y1="122" x2="420" y2="153" style="stroke:#000000;stroke-width:2;"/>
 <text x="540.72" y="173" text-anchor="middle">NP-SBJ</text>
 <text x="540.36" y="234" text-anchor="middle">PRO</text>
@@ -142,9 +142,9 @@ fof(id_112_A_LooseChange,axiom,
 <br>
 <pre>
 ( (CP-QUE (PULQ &lt;lquo&gt;)
-          (IP-SUB (NP-OB1 (WD Which;{which})
-                          (N hotel;{hotel}))
-                  (BEP is;{be})
+          (IP-SUB (NP-PRD2 (WD Which;{which})
+                           (N hotel;{hotel}))
+                  (BEP;~La is;{be})
                   (NP-SBJ (PRO it;{it})))
           (PUNC ?)
           (PURQ &lt;rquo&gt;))

@@ -163,10 +163,10 @@ And a long way off , a hundred miles from the city , another warning light flash
 <pre>
 arc(r_0610_0004__way,r_0610_0003__long,attrib2).
 arc(r_0610_0005__off,r_0610_0004__way,modifier1).
-arc(r_0610_0008__hundred_miles,r_0610_0012__city,r_0610_0010__from).
+arc(r_0610_0008__hundred__r_0610_0009__miles,r_0610_0012__city,r_0610_0010__from).
 arc(r_0610_0017__flashed,r_0610_0005__off,loc2).
-arc(r_0610_0017__flashed,r_0610_0008__hundred_miles,loc).
-arc(r_0610_0017__flashed,r_0610_0015__warning_light,arg0).
+arc(r_0610_0017__flashed,r_0610_0008__hundred__r_0610_0009__miles,loc).
+arc(r_0610_0017__flashed,r_0610_0015__warning__r_0610_0016__light,arg0).
 arc(r_0610_0017__flashed,r_0610_0018__on,clr_dir8).
 arc(r_0610_0017__flashed,r_0610_0021__underground,loc10).
 arc(r_0610_0021__underground,r_0610_0020__far,quality1).
@@ -174,7 +174,7 @@ arc(r_0610_0021__underground,r_0610_0020__far,quality1).
 </pre>
 <br>
 <pre>
-fof(id_610_A_DICK_1952,axiom,
+fof(id__610_A_DICK_1952,axiom,
     ? [EVENTX10,QUALITYX1,QUALITYX7,QUALITYX8,QUALITYX9,ENTITYX4,ENTITYX6,ENTITYX5,ENTITYX2,ATTRIBX3] :
       ( isA(QUALITYX1,r_0610_0005__off)
       &amp; modifier1(QUALITYX1) = ENTITYX2
@@ -184,10 +184,10 @@ fof(id_610_A_DICK_1952,axiom,
       &amp; isA(QUALITYX9,r_0610_0020__far)
       &amp; isA(ENTITYX2,r_0610_0004__way)
       &amp; attrib2(ENTITYX2) = ATTRIBX3
-      &amp; isA(ENTITYX4,r_0610_0008__hundred_miles)
+      &amp; isA(ENTITYX4,r_0610_0008__hundred__r_0610_0009__miles)
       &amp; r_0610_0010__from(ENTITYX4) = ENTITYX5
       &amp; isA(ENTITYX5,r_0610_0012__city)
-      &amp; isA(ENTITYX6,r_0610_0015__warning_light)
+      &amp; isA(ENTITYX6,r_0610_0015__warning__r_0610_0016__light)
       &amp; isA(ATTRIBX3,r_0610_0003__long)
       &amp; isA(EVENTX10,r_0610_0017__flashed)
       &amp; loc2(EVENTX10) = QUALITYX1

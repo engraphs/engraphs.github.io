@@ -125,17 +125,17 @@
 arc(r_0071_0003__well,r_0071_0002__Very,quality1).
 arc(r_0071_0007__said,r_0071_0006__she,arg0).
 arc(r_0071_0007__said,r_0071_0008__coolly,mnr7).
-arc(r_0071_0007__said,utterance_0071_1003,arg1).
-arc(utterance_0071_1003,z_0071_1008,part1).
+arc(r_0071_0007__said,r_0071_1003__utterance,arg1).
+arc(r_0071_1003__utterance,z_0071_1008,part1).
 arc(z_0071_1008,r_0071_0003__well,quality1).
 
 </pre>
 <br>
 <pre>
-fof(id_71_A_lob_N02,axiom,
+fof(id__71_A_lob_N02,axiom,
     ? [STATEX1,EVENTX12,CONJX10,EVENTX9,QUALITYX11,QUALITYX6,QUALITYX7] :
       ( STATEX1 = CONJX10
-      &amp; isA(CONJX10,utterance_0071_1003)
+      &amp; isA(CONJX10,r_0071_1003__utterance)
       &amp; part1(CONJX10) = EVENTX9
       &amp; isA(EVENTX9,z_0071_1008)
       &amp; quality1(EVENTX9) = QUALITYX6

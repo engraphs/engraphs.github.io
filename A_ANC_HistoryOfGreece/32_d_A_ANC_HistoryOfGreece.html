@@ -816,8 +816,8 @@ arc(r_0048_0013__alliance,r_0048_0016__kind,prn5).
 arc(r_0048_0016__kind,r_0048_0018__NATO,r_0048_0017__of).
 arc(r_0048_0018__NATO,r_0048_0022__world,r_0048_0019__of).
 arc(r_0048_0022__world,r_0048_0021__ancient,attrib2).
-arc(r_0049_0001__quantificational__Several,r_0049_0002__islands,restriction).
-arc(r_0049_0001__quantificational__Several,r_0049_0003__and,scope).
+arc(r_0049_0001__quantificational__r_0049_0001__Several,r_0049_0002__islands,restriction).
+arc(r_0049_0001__quantificational__r_0049_0001__Several,r_0049_0003__and,scope).
 arc(r_0049_0003__and,r_0049_0002__islands,conj1).
 arc(r_0049_0003__and,r_0049_0005__city_states,conj2).
 arc(r_0049_0005__city_states,r_0049_0004__Greek,attrib1).
@@ -838,9 +838,9 @@ arc(r_0049_0022__held,r_0049_0025__island,r_0049_0023__on_loc).
 arc(r_0049_0025__island,r_0049_0027__Delos,r_0049_0026__of).
 arc(r_0050_0003__became,r_0050_0004__known,catenative).
 arc(r_0050_0004__known,r_0048_0013__alliance,arg1).
-arc(r_0050_0004__known,r_0050_0007__Delian_League,r_0050_0005__as_prd).
+arc(r_0050_0004__known,r_0050_0007__Delian__r_0050_0008__League,r_0050_0005__as_prd).
 arc(r_0051_0001__Although_cnt,r_0051_0003__were,restriction).
-arc(r_0051_0001__Although_cnt,r_0051_0019__quantificational__most,scope).
+arc(r_0051_0001__Although_cnt,r_0051_0019__quantificational__r_0051_0019__most,scope).
 arc(r_0051_0003__were,r_0051_0006__wrangles,arg0).
 arc(r_0051_0006__wrangles,r_0051_0004__minor,attrib1).
 arc(r_0051_0006__wrangles,r_0051_0005__internal,attrib2).
@@ -848,17 +848,17 @@ arc(r_0051_0010__controlled,r_0048_0013__alliance,arg0).
 arc(r_0051_0010__controlled,r_0051_0013__and,arg1).
 arc(r_0051_0010__controlled,z_0047_1066,r_0051_0018__for_tmp).
 arc(r_0051_0013__and,r_0051_0012__Aegean,conj1).
-arc(r_0051_0013__and,r_0051_0016__Athenian_Empire,conj2).
-arc(r_0051_0016__Athenian_Empire,r_0051_0015__greater,attrib2).
-arc(r_0051_0019__quantificational__most,r_0051_0010__controlled,scope).
-arc(r_0051_0019__quantificational__most,z_0047_1066,restriction).
-arc(r_0051_0022__fifth_century,r_0051_0024__b.c,quality4).
-arc(z_0047_1066,r_0051_0022__fifth_century,r_0051_0020__of).
+arc(r_0051_0013__and,r_0051_0016__Athenian__r_0051_0017__Empire,conj2).
+arc(r_0051_0016__Athenian__r_0051_0017__Empire,r_0051_0015__greater,attrib2).
+arc(r_0051_0019__quantificational__r_0051_0019__most,r_0051_0010__controlled,scope).
+arc(r_0051_0019__quantificational__r_0051_0019__most,z_0047_1066,restriction).
+arc(r_0051_0022__fifth__r_0051_0023__century,r_0051_0024__b_c,quality4).
+arc(z_0047_1066,r_0051_0022__fifth__r_0051_0023__century,r_0051_0020__of).
 
 </pre>
 <br>
 <pre>
-fof(id_47_A_ANC_HistoryOfGreece__48_A_ANC_HistoryOfGreece__49_A_ANC_HistoryOfGreece__50_A_ANC_HistoryOfGreece__51_A_ANC_HistoryOfGreece,axiom,
+fof(id__47_A_ANC_HistoryOfGreece__48_A_ANC_HistoryOfGreece__49_A_ANC_HistoryOfGreece__50_A_ANC_HistoryOfGreece__51_A_ANC_HistoryOfGreece,axiom,
     ? [CATENATIVEX3,CATENATIVEX9,STATEX31,CATENATIVEX42,CATENATIVEX50,ATHENSX10,ATHENSX16,ATHENSX17,ALLIANCEX39,ISLANDS_AND_STATESX40,ALLIANCEX49,ALLIANCEX59,CONNX54,QUANTX63,EVENTX67,EVENTX58,EVENTX53,EVENTX52,CONJX48,EVENTX47,EVENTX46,EVENTX45,EVENTX41,EVENTX34,EVENTX33,QUANTX28,EVENTX25,CONJX14,EVENTX13,EVENTX12,EVENTX11,EVENTX6,EVENTX5,ENTITYX60,ENTITYX62,ENTITYX64,ENTITYX55,ISLANDS_AND_STATESX26,ENTITYX35,ENTITYX44,ENTITYX36,ENTITYX27,ENTITYX29,ENTITYX15,ENTITYX18,ALLIANCEX19,ENTITYX20,ENTITYX22,ENTITYX23,ENTITYX8,QUALITYX65,QUALITYX32,QUALITYX7,ATTRIBX61,ATTRIBX56,ATTRIBX57,ATTRIBX30,ATTRIBX24,ATTRIBX21] :
       ( CATENATIVEX3 = EVENTX5
       &amp; isA(EVENTX5,r_0047_0004__defeated)
@@ -878,7 +878,7 @@ fof(id_47_A_ANC_HistoryOfGreece__48_A_ANC_HistoryOfGreece__49_A_ANC_HistoryOfGre
       &amp; CATENATIVEX50 = EVENTX52
       &amp; isA(EVENTX52,r_0050_0004__known)
       &amp; arg1(EVENTX52) = ALLIANCEX49
-      &amp; r_0050_0005__as_prd(EVENTX52) = r_0050_0007__Delian_League
+      &amp; r_0050_0005__as_prd(EVENTX52) = r_0050_0007__Delian__r_0050_0008__League
       &amp; isA(EVENTX12,r_0047_0013__had)
       &amp; catenative(EVENTX12) = CATENATIVEX9
       &amp; isA(ENTITYX8,r_0047_0011__islands)
@@ -898,7 +898,7 @@ fof(id_47_A_ANC_HistoryOfGreece__48_A_ANC_HistoryOfGreece__49_A_ANC_HistoryOfGre
       &amp; r_0048_0017__of(ENTITYX22) = r_0048_0018__NATO
       &amp; isA(ENTITYX23,r_0048_0022__world)
       &amp; attrib2(ENTITYX23) = ATTRIBX24
-      &amp; isA(QUANTX28,r_0049_0001__quantificational__Several)
+      &amp; isA(QUANTX28,r_0049_0001__quantificational__r_0049_0001__Several)
       &amp; restriction(QUANTX28) = ENTITYX27
       &amp; isA(ENTITYX27,r_0049_0002__islands)
       &amp; scope(QUANTX28) = ISLANDS_AND_STATESX26
@@ -927,19 +927,19 @@ fof(id_47_A_ANC_HistoryOfGreece__48_A_ANC_HistoryOfGreece__49_A_ANC_HistoryOfGre
       &amp; ALLIANCEX59 = ALLIANCEX19
       &amp; isA(ENTITYX60,r_0051_0013__and)
       &amp; conj1(ENTITYX60) = r_0051_0012__Aegean
-      &amp; conj2(ENTITYX60) = r_0051_0016__Athenian_Empire
-      &amp; isA(ENTITYX64,r_0051_0022__fifth_century)
+      &amp; conj2(ENTITYX60) = r_0051_0016__Athenian__r_0051_0017__Empire
+      &amp; isA(ENTITYX64,r_0051_0022__fifth__r_0051_0023__century)
       &amp; quality4(ENTITYX64) = QUALITYX65
       &amp; isA(r_0047_0002__Persians,r_0047_0002__Persians)
       &amp; isA(r_0048_0018__NATO,r_0048_0018__NATO)
       &amp; r_0048_0019__of(r_0048_0018__NATO) = ENTITYX23
-      &amp; isA(r_0050_0007__Delian_League,r_0050_0007__Delian_League)
+      &amp; isA(r_0050_0007__Delian__r_0050_0008__League,r_0050_0007__Delian_r_0050_0008__League)
       &amp; isA(r_0051_0012__Aegean,r_0051_0012__Aegean)
-      &amp; isA(r_0051_0016__Athenian_Empire,r_0051_0016__Athenian_Empire)
-      &amp; attrib2(r_0051_0016__Athenian_Empire) = ATTRIBX61
+      &amp; isA(r_0051_0016__Athenian__r_0051_0017__Empire,r_0051_0016__Athenian_r_0051_0017__Empire)
+      &amp; attrib2(r_0051_0016__Athenian__r_0051_0017__Empire) = ATTRIBX61
       &amp; isA(QUALITYX7,r_0047_0008__duly)
       &amp; isA(QUALITYX32,r_0049_0009__together)
-      &amp; isA(QUALITYX65,r_0051_0024__b.c)
+      &amp; isA(QUALITYX65,r_0051_0024__b_c)
       &amp; isA(ATTRIBX21,r_0048_0011__mutual)
       &amp; isA(ATTRIBX24,r_0048_0021__ancient)
       &amp; isA(ATTRIBX30,r_0049_0004__Greek)
@@ -975,7 +975,7 @@ fof(id_47_A_ANC_HistoryOfGreece__48_A_ANC_HistoryOfGreece__49_A_ANC_HistoryOfGre
       &amp; isA(EVENTX58,r_0051_0003__were)
       &amp; arg0(EVENTX58) = ENTITYX55
       &amp; scope(CONNX54) = QUANTX63
-      &amp; isA(QUANTX63,r_0051_0019__quantificational__most)
+      &amp; isA(QUANTX63,r_0051_0019__quantificational__r_0051_0019__most)
       &amp; restriction(QUANTX63) = ENTITYX62
       &amp; isA(ENTITYX62,z_0047_1066)
       &amp; r_0051_0020__of(ENTITYX62) = ENTITYX64

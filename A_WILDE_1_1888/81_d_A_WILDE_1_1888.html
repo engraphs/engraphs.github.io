@@ -137,19 +137,19 @@
 <pre>
 arc(r_0244_0005__thing,r_0244_0004__strange,attrib3).
 arc(r_0244_0008__said,r_0244_0010__overseer,arg0).
-arc(r_0244_0008__said,utterance_0244_1004,arg1).
+arc(r_0244_0008__said,r_0244_1004__utterance,arg1).
 arc(r_0244_0010__overseer,r_0244_0013__workmen,r_0244_0011__of).
 arc(r_0244_0013__workmen,r_0244_0016__foundry,r_0244_0014__at).
-arc(utterance_0244_1004,z_0244_1011,part1).
+arc(r_0244_1004__utterance,z_0244_1011,part1).
 arc(z_0244_1011,r_0244_0005__thing,z_0244_1008).
 
 </pre>
 <br>
 <pre>
-fof(id_244_A_WILDE_1_1888,axiom,
+fof(id__244_A_WILDE_1_1888,axiom,
     ? [STATEX2,EVENTX17,CONJX13,EVENTX12,OVERSEERX14,WORKMENX15,ENTITYX16,ENTITYX9,ATTRIBX10] :
       ( STATEX2 = CONJX13
-      &amp; isA(CONJX13,utterance_0244_1004)
+      &amp; isA(CONJX13,r_0244_1004__utterance)
       &amp; part1(CONJX13) = EVENTX12
       &amp; isA(EVENTX12,z_0244_1011)
       &amp; z_0244_1008(EVENTX12) = ENTITYX9

@@ -331,34 +331,34 @@ The possibility that the government might invoke the public order act , 1936 , a
 </svg>
 <br>
 <pre>
-arc(question_0114_1008,r_0114_0022__whether_or_not,scope).
 arc(r_0114_0002__possibility,r_0114_0006__might,emb3).
 arc(r_0114_0006__might,r_0114_0015__and,scope).
-arc(r_0114_0007__invoke,question_0114_1008,prn6).
 arc(r_0114_0007__invoke,r_0114_0005__government,arg0).
-arc(r_0114_0007__invoke,r_0114_0010__order_act,arg1).
-arc(r_0114_0010__order_act,r_0114_0009__public,attrib2).
-arc(r_0114_0010__order_act,r_0114_0013__1936,prn6).
+arc(r_0114_0007__invoke,r_0114_0010__order__r_0114_0011__act,arg1).
+arc(r_0114_0007__invoke,r_0114_1008__question,prn6).
+arc(r_0114_0010__order__r_0114_0011__act,r_0114_0009__public,attrib2).
+arc(r_0114_0010__order__r_0114_0011__act,r_0114_0013__1936,prn6).
 arc(r_0114_0015__and,r_0114_0007__invoke,conj1).
 arc(r_0114_0015__and,r_0114_0016__declare,conj2).
-arc(r_0114_0016__declare,question_0114_1008,prn6).
 arc(r_0114_0016__declare,r_0114_0005__government,arg0).
 arc(r_0114_0016__declare,r_0114_0019__rally,arg1).
 arc(r_0114_0016__declare,r_0114_0020__illegal,prd).
+arc(r_0114_0016__declare,r_0114_1008__question,prn6).
 arc(r_0114_0019__rally,r_0114_0018__whole,attrib2).
-arc(r_0114_0022__whether_or_not,r_0114_0025__sit_down,conj1).
-arc(r_0114_0025__sit_down,r_0114_0024__demonstrators,arg0).
+arc(r_0114_0022__whether__r_0114_0027__or_r_0114_0028__not,r_0114_0025__sit_r_0114_0026__down,conj1).
+arc(r_0114_0025__sit__r_0114_0026__down,r_0114_0024__demonstrators,arg0).
 arc(r_0114_0030__was,r_0114_0031__being,catenative).
 arc(r_0114_0031__being,r_0114_0032__discussed,catenative).
 arc(r_0114_0032__discussed,r_0114_0002__possibility,arg1).
 arc(r_0114_0032__discussed,r_0114_0034__Whitehall,r_0114_0033__in_loc).
 arc(r_0114_0032__discussed,r_0114_0036__night,tmp).
 arc(r_0114_0036__night,r_0114_0035__last,attrib1).
+arc(r_0114_1008__question,r_0114_0022__whether__r_0114_0027__or_r_0114_0028__not,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_114_A_lob_A02,axiom,
+fof(id__114_A_lob_A02,axiom,
     ? [STATEX2,EVENTX4,CATENATIVEX22,CATENATIVEX23,EVENTX29,EVENTX28,EVENTX27,OPERATORX12,CONJX21,EVENTX20,EVENTX16,OPERATORX8,CONJX11,EVENTX10,ENTITYX1,ENTITYX25,ENTITYX3,ENTITYX17,ENTITYX13,ENTITYX15,ENTITYX9,ATTRIBX26,ATTRIBX19,ATTRIBX18,ATTRIBX14] :
       ( STATEX2 = OPERATORX12
       &amp; isA(OPERATORX12,r_0114_0006__might)
@@ -376,11 +376,11 @@ fof(id_114_A_lob_A02,axiom,
       &amp; arg1(EVENTX20) = ENTITYX17
       &amp; prd(EVENTX20) = ATTRIBX19
       &amp; EVENTX4 = OPERATORX8
-      &amp; isA(OPERATORX8,question_0114_1008)
+      &amp; isA(OPERATORX8,r_0114_1008__question)
       &amp; scope(OPERATORX8) = CONJX11
-      &amp; isA(CONJX11,r_0114_0022__whether_or_not)
+      &amp; isA(CONJX11,r_0114_0022__whether__r_0114_0027__or_r_0114_0028__not)
       &amp; conj1(CONJX11) = EVENTX10
-      &amp; isA(EVENTX10,r_0114_0025__sit_down)
+      &amp; isA(EVENTX10,r_0114_0025__sit__r_0114_0026__down)
       &amp; arg0(EVENTX10) = ENTITYX9
       &amp; arg0(EVENTX10) = ENTITYX9
       &amp; CATENATIVEX22 = EVENTX28
@@ -395,7 +395,7 @@ fof(id_114_A_lob_A02,axiom,
       &amp; emb3(ENTITYX1) = STATEX2
       &amp; isA(ENTITYX3,r_0114_0005__government)
       &amp; isA(ENTITYX9,r_0114_0024__demonstrators)
-      &amp; isA(ENTITYX13,r_0114_0010__order_act)
+      &amp; isA(ENTITYX13,r_0114_0010__order__r_0114_0011__act)
       &amp; attrib2(ENTITYX13) = ATTRIBX14
       &amp; prn6(ENTITYX13) = ENTITYX15
       &amp; isA(ENTITYX15,r_0114_0013__1936)

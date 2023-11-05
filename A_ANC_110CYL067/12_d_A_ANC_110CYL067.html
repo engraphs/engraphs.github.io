@@ -344,19 +344,17 @@ A robust economy helps by providing job opportunities , but to be honest , most 
 </svg>
 <br>
 <pre>
-arc(mod_0035_1007,r_0035_0012__be,restriction).
-arc(mod_0035_1007,r_0035_0015__quantificational__most,scope).
 arc(r_0035_0003__economy,r_0035_0002__robust,attrib2).
 arc(r_0035_0004__helps,r_0035_0003__economy,arg0).
 arc(r_0035_0005__by_mnr,r_0035_0004__helps,scope).
 arc(r_0035_0005__by_mnr,r_0035_0006__providing,restriction).
 arc(r_0035_0006__providing,r_0035_0003__economy,arg0).
-arc(r_0035_0006__providing,r_0035_0007__job_opportunities,arg1).
-arc(r_0035_0010__but,mod_0035_1007,conj2).
+arc(r_0035_0006__providing,r_0035_0007__job__r_0035_0008__opportunities,arg1).
 arc(r_0035_0010__but,r_0035_0005__by_mnr,conj1).
+arc(r_0035_0010__but,r_0035_1007__mod,conj2).
 arc(r_0035_0012__be,r_0035_0013__honest,prd2).
-arc(r_0035_0015__quantificational__most,r_0035_0025__quite_simply,scope).
-arc(r_0035_0015__quantificational__most,z_0035_1021,restriction).
+arc(r_0035_0015__quantificational__r_0035_0015__most,r_0035_0025__quite_simply,scope).
+arc(r_0035_0015__quantificational__r_0035_0015__most,z_0035_1021,restriction).
 arc(r_0035_0020__are,r_0035_0021__n_apos_t,catenative).
 arc(r_0035_0021__n_apos_t,r_0035_0022__working,scope).
 arc(r_0035_0022__working,r_0035_0018__people,arg0).
@@ -367,12 +365,14 @@ arc(r_0035_0025__quite_simply,r_0035_0024__are,scope).
 arc(r_0035_0029__face,r_0035_0027__ones,arg0).
 arc(r_0035_0029__face,r_0035_0032__obstacles,arg1).
 arc(r_0035_0032__obstacles,r_0035_0031__greatest,attrib2).
+arc(r_0035_1007__mod,r_0035_0012__be,restriction).
+arc(r_0035_1007__mod,r_0035_0015__quantificational__r_0035_0015__most,scope).
 arc(z_0035_1021,r_0035_0018__people,r_0035_0016__of).
 
 </pre>
 <br>
 <pre>
-fof(id_35_A_ANC_110CYL067,axiom,
+fof(id__35_A_ANC_110CYL067,axiom,
     ? [CATENATIVEX16,CONJX28,CONNX8,QUANTX14,OPERATORX22,EVENTX27,EVENTX26,EVENTX20,OPERATORX18,EVENTX19,EVENTX12,CONNX3,EVENTX5,EVENTX6,ENTITYX13,ENTITYX23,ENTITYX24,ENTITYX15,ENTITYX1,ENTITYX4,ATTRIBX25,ATTRIBX11,ATTRIBX2,QUALITYX17] :
       ( CATENATIVEX16 = OPERATORX18
       &amp; isA(OPERATORX18,r_0035_0021__n_apos_t)
@@ -382,7 +382,7 @@ fof(id_35_A_ANC_110CYL067,axiom,
       &amp; tmp3(EVENTX19) = QUALITYX17
       &amp; isA(ENTITYX1,r_0035_0003__economy)
       &amp; attrib2(ENTITYX1) = ATTRIBX2
-      &amp; isA(ENTITYX4,r_0035_0007__job_opportunities)
+      &amp; isA(ENTITYX4,r_0035_0007__job__r_0035_0008__opportunities)
       &amp; isA(EVENTX20,r_0035_0020__are)
       &amp; catenative(EVENTX20) = CATENATIVEX16
       &amp; isA(ENTITYX15,r_0035_0018__people)
@@ -407,12 +407,12 @@ fof(id_35_A_ANC_110CYL067,axiom,
       &amp; arg0(EVENTX5) = ENTITYX1
       &amp; arg1(EVENTX5) = ENTITYX4
       &amp; conj2(CONJX28) = CONNX8
-      &amp; isA(CONNX8,mod_0035_1007)
+      &amp; isA(CONNX8,r_0035_1007__mod)
       &amp; restriction(CONNX8) = EVENTX12
       &amp; isA(EVENTX12,r_0035_0012__be)
       &amp; prd2(EVENTX12) = ATTRIBX11
       &amp; scope(CONNX8) = QUANTX14
-      &amp; isA(QUANTX14,r_0035_0015__quantificational__most)
+      &amp; isA(QUANTX14,r_0035_0015__quantificational__r_0035_0015__most)
       &amp; restriction(QUANTX14) = ENTITYX13
       &amp; isA(ENTITYX13,z_0035_1021)
       &amp; r_0035_0016__of(ENTITYX13) = ENTITYX15

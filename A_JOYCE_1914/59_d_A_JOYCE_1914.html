@@ -403,15 +403,15 @@ as poor as we are &mdash; we would n't see him want anything while he was in it 
 </svg>
 <br>
 <pre>
-arc(abs_0137_1023,r_0138_0008__would,scope).
-arc(abs_0137_1023,z_0137_1031,restriction).
 arc(r_0137_0003__knows,r_0137_0002__God,arg0).
 arc(r_0137_0003__knows,z_0137_1011,arg1).
 arc(r_0137_0005__done,r_0137_0004__we,arg0).
 arc(r_0137_0005__done,z_0137_1009,arg1).
-arc(r_0137_0006__quantificational__all,r_0137_0005__done,scope).
-arc(r_0137_0006__quantificational__all,z_0137_1009,restriction).
+arc(r_0137_0006__quantificational__r_0137_0006__all,r_0137_0005__done,scope).
+arc(r_0137_0006__quantificational__r_0137_0006__all,z_0137_1009,restriction).
 arc(r_0137_0008__could,z_0137_1007,scope).
+arc(r_0137_1023__abs,r_0138_0008__would,scope).
+arc(r_0137_1023__abs,z_0137_1031,restriction).
 arc(r_0138_0002__poor,r_0138_0001__as,quality1).
 arc(r_0138_0002__poor,z_0137_1030,r_0138_0003__as).
 arc(r_0138_0005__are,r_0137_0004__we,arg0).
@@ -419,31 +419,31 @@ arc(r_0138_0005__are,z_0137_1030,prd2).
 arc(r_0138_0008__would,r_0138_0009__n_apos_t,scope).
 arc(r_0138_0009__n_apos_t,r_0138_0010__see,scope).
 arc(r_0138_0010__see,r_0137_0004__we,arg0).
-arc(r_0138_0010__see,r_0138_0013__quantificational__anything,arg1).
+arc(r_0138_0010__see,r_0138_0013__quantificational__r_0138_0013__anything,arg1).
 arc(r_0138_0012__want,r_0138_0011__him,arg0).
 arc(r_0138_0012__want,z_0137_1018,arg1).
-arc(r_0138_0013__quantificational__anything,r_0138_0012__want,scope).
-arc(r_0138_0013__quantificational__anything,z_0137_1018,restriction).
-arc(r_0138_0014__while_tmp,abs_0137_1023,scope).
+arc(r_0138_0013__quantificational__r_0138_0013__anything,r_0138_0012__want,scope).
+arc(r_0138_0013__quantificational__r_0138_0013__anything,z_0137_1018,restriction).
+arc(r_0138_0014__while_tmp,r_0137_1023__abs,scope).
 arc(r_0138_0014__while_tmp,r_0138_0016__was,restriction).
 arc(r_0138_0016__was,r_0138_0011__him,arg0).
 arc(r_0138_0016__was,r_0138_0018__it,r_0138_0017__in_prd2).
 arc(z_0137_1007,r_0137_0004__we,arg0).
 arc(z_0137_1007,z_0137_1009,arg1).
-arc(z_0137_1011,r_0137_0006__quantificational__all,catenative).
+arc(z_0137_1011,r_0137_0006__quantificational__r_0137_0006__all,catenative).
 arc(z_0137_1031,r_0137_0004__we,arg0).
 arc(z_0137_1031,r_0138_0002__poor,prd2).
 
 </pre>
 <br>
 <pre>
-fof(id_137_A_JOYCE_1914__138_A_JOYCE_1914,axiom,
+fof(id__137_A_JOYCE_1914__138_A_JOYCE_1914,axiom,
     ? [STATEX1,CATENATIVEX2,STATEX15,SISTERSX5,SISTERSX14,SISTERSX28,PRIESTX21,CONNX20,EVENTX22,CONNX24,OPERATORX33,OPERATORX34,EVENTX35,EVENTX32,EVENTX29,QUANTX17,EVENTX19,EVENTX13,EVENTX12,QUANTX4,EVENTX10,OPERATORX6,EVENTX8,ENTITYX27,ENTITYX16,ENTITYX3,ATTRIBX25,QUALITYX26] :
       ( STATEX1 = EVENTX12
       &amp; isA(EVENTX12,z_0137_1011)
       &amp; catenative(EVENTX12) = CATENATIVEX2
       &amp; CATENATIVEX2 = QUANTX4
-      &amp; isA(QUANTX4,r_0137_0006__quantificational__all)
+      &amp; isA(QUANTX4,r_0137_0006__quantificational__r_0137_0006__all)
       &amp; isA(OPERATORX6,r_0137_0008__could)
       &amp; scope(OPERATORX6) = EVENTX8
       &amp; isA(EVENTX8,z_0137_1007)
@@ -456,7 +456,7 @@ fof(id_137_A_JOYCE_1914__138_A_JOYCE_1914,axiom,
       &amp; arg0(EVENTX10) = r_0137_0004__we
       &amp; arg1(EVENTX10) = ENTITYX3
       &amp; STATEX15 = QUANTX17
-      &amp; isA(QUANTX17,r_0138_0013__quantificational__anything)
+      &amp; isA(QUANTX17,r_0138_0013__quantificational__r_0138_0013__anything)
       &amp; restriction(QUANTX17) = ENTITYX16
       &amp; isA(ENTITYX16,z_0137_1018)
       &amp; scope(QUANTX17) = EVENTX19
@@ -481,7 +481,7 @@ fof(id_137_A_JOYCE_1914__138_A_JOYCE_1914,axiom,
       &amp; arg1(EVENTX13) = STATEX1
       &amp; isA(CONNX20,r_0138_0014__while_tmp)
       &amp; scope(CONNX20) = CONNX24
-      &amp; isA(CONNX24,abs_0137_1023)
+      &amp; isA(CONNX24,r_0137_1023__abs)
       &amp; restriction(CONNX24) = EVENTX32
       &amp; isA(EVENTX32,z_0137_1031)
       &amp; arg0(EVENTX32) = SISTERSX14

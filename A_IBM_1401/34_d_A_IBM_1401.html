@@ -179,7 +179,7 @@ This system provides the programmer with a packaged means of accomplishing input
 </svg>
 <br>
 <pre>
-arc(r_0045_0003__provides,r_0044_0001__Input_sol_Output_Control_System,arg0).
+arc(r_0045_0003__provides,r_0044_0001__Input_sol_Output__r_0044_0002__Control_r_0044_0003__System,arg0).
 arc(r_0045_0003__provides,r_0045_0005__programmer,arg1).
 arc(r_0045_0003__provides,r_0045_0009__means,r_0045_0006__with_clr).
 arc(r_0045_0008__packaged,r_0045_0009__means,arg1).
@@ -188,17 +188,17 @@ arc(r_0045_0011__accomplishing,r_0045_0015__requirements,arg1).
 arc(r_0045_0013__and,r_0045_0012__input,conj1).
 arc(r_0045_0013__and,r_0045_0014__output,conj2).
 arc(r_0045_0015__requirements,r_0045_0013__and,nlyr1).
-arc(z_0044_1005,r_0044_0001__Input_sol_Output_Control_System,z_0044_1004).
+arc(z_0044_1005,r_0044_0001__Input_sol_Output__r_0044_0002__Control_r_0044_0003__System,z_0044_1004).
 
 </pre>
 <br>
 <pre>
-fof(id_44_A_IBM_1401__45_A_IBM_1401,axiom,
+fof(id__44_A_IBM_1401__45_A_IBM_1401,axiom,
     ? [EVENTX12,IO_SYSTEMX7,EVENTX20,EVENTX19,EVENTX11,EVENTX6,ENTITYX8,ENTITYX9,ENTITYX15,ENTITYX16,ENTITYX17,ENTITYX18] :
       ( EVENTX12 = EVENTX19
       &amp; isA(EVENTX19,r_0045_0011__accomplishing)
       &amp; arg1(EVENTX19) = ENTITYX15
-      &amp; IO_SYSTEMX7 = r_0044_0001__Input_sol_Output_Control_System
+      &amp; IO_SYSTEMX7 = r_0044_0001__Input_sol_Output__r_0044_0002__Control_r_0044_0003__System
       &amp; isA(ENTITYX8,r_0045_0005__programmer)
       &amp; isA(EVENTX11,r_0045_0008__packaged)
       &amp; arg1(EVENTX11) = ENTITYX9
@@ -212,7 +212,7 @@ fof(id_44_A_IBM_1401__45_A_IBM_1401,axiom,
       &amp; isA(ENTITYX17,r_0045_0012__input)
       &amp; isA(ENTITYX18,r_0045_0014__output)
       &amp; isA(EVENTX6,z_0044_1005)
-      &amp; z_0044_1004(EVENTX6) = r_0044_0001__Input_sol_Output_Control_System
+      &amp; z_0044_1004(EVENTX6) = r_0044_0001__Input_sol_Output__r_0044_0002__Control_r_0044_0003__System
       &amp; isA(EVENTX20,r_0045_0003__provides)
       &amp; arg0(EVENTX20) = IO_SYSTEMX7
       &amp; arg1(EVENTX20) = ENTITYX8

@@ -96,7 +96,7 @@ Contamination of the sodium circuit by oxygen from the cell .
 </svg>
 <br>
 <pre>
-arc(r_0032_0001__Contamination,r_0032_0004__sodium_circuit,r_0032_0002__of).
+arc(r_0032_0001__Contamination,r_0032_0004__sodium__r_0032_0005__circuit,r_0032_0002__of).
 arc(r_0032_0001__Contamination,r_0032_0007__oxygen,r_0032_0006__by).
 arc(r_0032_0007__oxygen,r_0032_0010__cell,r_0032_0008__from).
 arc(z_0032_1007,r_0032_0001__Contamination,z_0032_1002).
@@ -104,12 +104,12 @@ arc(z_0032_1007,r_0032_0001__Contamination,z_0032_1002).
 </pre>
 <br>
 <pre>
-fof(id_32_A_lob_J01,axiom,
+fof(id__32_A_lob_J01,axiom,
     ? [EVENTX8,ENTITYX3,ENTITYX4,ENTITYX5,ENTITYX6] :
       ( isA(ENTITYX3,r_0032_0001__Contamination)
       &amp; r_0032_0002__of(ENTITYX3) = ENTITYX4
       &amp; r_0032_0006__by(ENTITYX3) = ENTITYX5
-      &amp; isA(ENTITYX4,r_0032_0004__sodium_circuit)
+      &amp; isA(ENTITYX4,r_0032_0004__sodium__r_0032_0005__circuit)
       &amp; isA(ENTITYX5,r_0032_0007__oxygen)
       &amp; r_0032_0008__from(ENTITYX5) = ENTITYX6
       &amp; isA(ENTITYX6,r_0032_0010__cell)

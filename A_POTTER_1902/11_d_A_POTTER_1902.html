@@ -334,10 +334,10 @@ Peter gave himself up for lost , and shed big tears ; but his sobs were overhear
 </svg>
 <br>
 <pre>
-arc(r_0018_0002__gave_up,r_0018_0001__Peter,arg0).
-arc(r_0018_0002__gave_up,r_0018_0001__Peter,arg1).
-arc(r_0018_0002__gave_up,r_0018_0006__lost,r_0018_0005__for_mnr).
-arc(r_0018_0008__and,r_0018_0002__gave_up,conj1).
+arc(r_0018_0002__gave__r_0018_0004__up,r_0018_0001__Peter,arg0).
+arc(r_0018_0002__gave__r_0018_0004__up,r_0018_0001__Peter,arg1).
+arc(r_0018_0002__gave__r_0018_0004__up,r_0018_0006__lost,r_0018_0005__for_mnr).
+arc(r_0018_0008__and,r_0018_0002__gave__r_0018_0004__up,conj1).
 arc(r_0018_0008__and,r_0018_0009__shed,conj2).
 arc(r_0018_0009__shed,r_0018_0001__Peter,arg0).
 arc(r_0018_0009__shed,r_0018_0011__tears,arg1).
@@ -347,7 +347,7 @@ arc(r_0018_0013__but,r_0018_0016__were,conj2).
 arc(r_0018_0015__sobs,r_0018_0001__Peter,genv).
 arc(r_0018_0016__were,r_0018_0017__overheard,catenative).
 arc(r_0018_0017__overheard,r_0018_0015__sobs,arg1).
-arc(r_0018_0017__overheard,r_0018_0021__sparrows,arg0_by_lgs).
+arc(r_0018_0017__overheard,r_0018_0021__sparrows,arg0__r_0018_0018__by_lgs).
 arc(r_0018_0021__sparrows,r_0018_0020__friendly,attrib2).
 arc(r_0018_0024__flew,r_0018_0001__Peter,r_0018_0025__to_clr_dir).
 arc(r_0018_0024__flew,r_0018_0021__sparrows,arg0).
@@ -364,11 +364,11 @@ arc(r_0018_0035__exert,r_0018_0001__Peter,arg1).
 </pre>
 <br>
 <pre>
-fof(id_18_A_POTTER_1902,axiom,
+fof(id__18_A_POTTER_1902,axiom,
     ? [CATENATIVEX10,STATEX18,PETERX1,PETERX9,PETERX13,PETERX17,PETERX19,CONJX25,EVENTX24,EVENTX23,CONJX22,EVENTX21,EVENTX20,EVENTX16,CONJX7,EVENTX6,EVENTX3,ENTITYX8,ENTITYX11,ENTITYX14,ENTITYX4,ATTRIBX12,ATTRIBX15,ATTRIBX5,ATTRIBX2] :
       ( CATENATIVEX10 = EVENTX23
       &amp; isA(EVENTX23,r_0018_0017__overheard)
-      &amp; arg0_by_lgs(EVENTX23) = ENTITYX11
+      &amp; arg0__r_0018_0018__by_lgs(EVENTX23) = ENTITYX11
       &amp; arg1(EVENTX23) = ENTITYX8
       &amp; STATEX18 = EVENTX20
       &amp; isA(EVENTX20,r_0018_0035__exert)
@@ -407,7 +407,7 @@ fof(id_18_A_POTTER_1902,axiom,
       &amp; conj1(CONJX25) = CONJX7
       &amp; isA(CONJX7,r_0018_0008__and)
       &amp; conj1(CONJX7) = EVENTX3
-      &amp; isA(EVENTX3,r_0018_0002__gave_up)
+      &amp; isA(EVENTX3,r_0018_0002__gave__r_0018_0004__up)
       &amp; arg0(EVENTX3) = r_0018_0001__Peter
       &amp; arg1(EVENTX3) = PETERX1
       &amp; r_0018_0005__for_mnr(EVENTX3) = ATTRIBX2

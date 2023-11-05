@@ -243,9 +243,9 @@ On the same day , the next report reviewing the four main surveys covering hedge
 arc(r_0092_0004__day,r_0092_0003__same,attrib2).
 arc(r_0092_0008__report,r_0092_0007__next,attrib2).
 arc(r_0092_0009__reviewing,r_0092_0008__report,arg0).
-arc(r_0092_0009__reviewing,r_0092_0011__four_surveys,arg1).
-arc(r_0092_0011__four_surveys,r_0092_0012__main,attrib3).
-arc(r_0092_0014__covering,r_0092_0011__four_surveys,arg0).
+arc(r_0092_0009__reviewing,r_0092_0011__four__r_0092_0013__surveys,arg1).
+arc(r_0092_0011__four__r_0092_0013__surveys,r_0092_0012__main,attrib3).
+arc(r_0092_0014__covering,r_0092_0011__four__r_0092_0013__surveys,arg0).
 arc(r_0092_0014__covering,r_0092_0015__hedgehogs,arg1).
 arc(r_0092_0015__hedgehogs,r_0092_0020__areas,r_0092_0016__in).
 arc(r_0092_0018__and,r_0092_0017__rural,conj1).
@@ -259,7 +259,7 @@ arc(r_0092_0023__released,r_0092_0008__report,arg1).
 </pre>
 <br>
 <pre>
-fof(id_92_A_Hedgehog,axiom,
+fof(id__92_A_Hedgehog,axiom,
     ? [CATENATIVEX15,OPERATORX14,EVENTX18,EVENTX17,EVENTX13,EVENTX12,ENTITYX1,ENTITYX3,ENTITYX5,ENTITYX7,ENTITYX8,ATTRIBX4,ATTRIBX6,ATTRIBX9,ATTRIBX10,ATTRIBX11,ATTRIBX2] :
       ( CATENATIVEX15 = EVENTX17
       &amp; isA(EVENTX17,r_0092_0023__released)
@@ -274,7 +274,7 @@ fof(id_92_A_Hedgehog,axiom,
       &amp; isA(EVENTX12,r_0092_0014__covering)
       &amp; arg0(EVENTX12) = ENTITYX5
       &amp; arg1(EVENTX12) = ENTITYX7
-      &amp; isA(ENTITYX5,r_0092_0011__four_surveys)
+      &amp; isA(ENTITYX5,r_0092_0011__four__r_0092_0013__surveys)
       &amp; attrib3(ENTITYX5) = ATTRIBX6
       &amp; isA(ENTITYX7,r_0092_0015__hedgehogs)
       &amp; r_0092_0016__in(ENTITYX7) = ENTITYX8

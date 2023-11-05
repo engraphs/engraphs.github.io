@@ -235,19 +235,19 @@
 </svg>
 <br>
 <pre>
-arc(r_0301_0004__quantificational__Each,r_0301_0005__year,restriction).
-arc(r_0301_0004__quantificational__Each,r_0301_0009__shall,scope).
+arc(r_0301_0004__quantificational__r_0301_0004__Each,r_0301_0005__year,restriction).
+arc(r_0301_0004__quantificational__r_0301_0004__Each,r_0301_0009__shall,scope).
 arc(r_0301_0009__shall,r_0301_0019__and,scope).
 arc(r_0301_0010__compile,r_0301_0005__year,tmp).
-arc(r_0301_0010__compile,r_0301_0007__Prime_Minister,arg0).
+arc(r_0301_0010__compile,r_0301_0007__Prime__r_0301_0008__Minister,arg0).
 arc(r_0301_0010__compile,r_0301_0012__reports,arg1).
-arc(r_0301_0013__set_forth,r_0301_0012__reports,arg1).
-arc(r_0301_0013__set_forth,r_0301_0018__paragraph,r_0301_0015__in_loc).
+arc(r_0301_0013__set__r_0301_0014__forth,r_0301_0012__reports,arg1).
+arc(r_0301_0013__set__r_0301_0014__forth,r_0301_0018__paragraph,r_0301_0015__in_loc).
 arc(r_0301_0018__paragraph,r_0301_0017__preceding,attrib2).
 arc(r_0301_0019__and,r_0301_0010__compile,conj1).
 arc(r_0301_0019__and,r_0301_0021__announce,conj2).
 arc(r_0301_0021__announce,r_0301_0005__year,tmp).
-arc(r_0301_0021__announce,r_0301_0007__Prime_Minister,arg0).
+arc(r_0301_0021__announce,r_0301_0007__Prime__r_0301_0008__Minister,arg0).
 arc(r_0301_0021__announce,r_0301_0020__publicly,mnr1).
 arc(r_0301_0021__announce,r_0301_0023__outline,arg1).
 arc(r_0301_0023__outline,r_0301_0022__their,genv).
@@ -255,9 +255,9 @@ arc(r_0301_0023__outline,r_0301_0022__their,genv).
 </pre>
 <br>
 <pre>
-fof(id_301_A_law_h15A119,axiom,
+fof(id__301_A_law_h15A119,axiom,
     ? [QUANTX2,OPERATORX3,CONJX13,EVENTX12,EVENTX9,EVENTX8,ENTITYX1,ENTITYX11,ENTITYX4,ENTITYX6,ATTRIBX7,QUALITYX10] :
-      ( isA(EVENTX8,r_0301_0013__set_forth)
+      ( isA(EVENTX8,r_0301_0013__set__r_0301_0014__forth)
       &amp; arg1(EVENTX8) = ENTITYX4
       &amp; r_0301_0015__in_loc(EVENTX8) = ENTITYX6
       &amp; isA(ENTITYX4,r_0301_0012__reports)
@@ -265,10 +265,10 @@ fof(id_301_A_law_h15A119,axiom,
       &amp; attrib2(ENTITYX6) = ATTRIBX7
       &amp; isA(ENTITYX11,r_0301_0023__outline)
       &amp; genv(ENTITYX11) = r_0301_0022__their
-      &amp; isA(r_0301_0007__Prime_Minister,r_0301_0007__Prime_Minister)
+      &amp; isA(r_0301_0007__Prime__r_0301_0008__Minister,r_0301_0007__Prime_r_0301_0008__Minister)
       &amp; isA(ATTRIBX7,r_0301_0017__preceding)
       &amp; isA(QUALITYX10,r_0301_0020__publicly)
-      &amp; isA(QUANTX2,r_0301_0004__quantificational__Each)
+      &amp; isA(QUANTX2,r_0301_0004__quantificational__r_0301_0004__Each)
       &amp; restriction(QUANTX2) = ENTITYX1
       &amp; isA(ENTITYX1,r_0301_0005__year)
       &amp; scope(QUANTX2) = OPERATORX3
@@ -278,12 +278,12 @@ fof(id_301_A_law_h15A119,axiom,
       &amp; conj1(CONJX13) = EVENTX9
       &amp; isA(EVENTX9,r_0301_0010__compile)
       &amp; tmp(EVENTX9) = ENTITYX1
-      &amp; arg0(EVENTX9) = r_0301_0007__Prime_Minister
+      &amp; arg0(EVENTX9) = r_0301_0007__Prime__r_0301_0008__Minister
       &amp; arg1(EVENTX9) = ENTITYX4
       &amp; conj2(CONJX13) = EVENTX12
       &amp; isA(EVENTX12,r_0301_0021__announce)
       &amp; tmp(EVENTX12) = ENTITYX1
-      &amp; arg0(EVENTX12) = r_0301_0007__Prime_Minister
+      &amp; arg0(EVENTX12) = r_0301_0007__Prime__r_0301_0008__Minister
       &amp; mnr1(EVENTX12) = QUALITYX10
       &amp; arg1(EVENTX12) = ENTITYX11 ) ).
 

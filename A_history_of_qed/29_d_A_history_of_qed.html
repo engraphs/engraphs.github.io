@@ -140,13 +140,13 @@ arc(r_0055_0002__back,r_0055_0005__1970s,r_0055_0003__to).
 arc(r_0055_0008__had,r_0055_0007__QED,arg0).
 arc(r_0055_0008__had,r_0055_0010__offspring,arg1).
 arc(r_0055_0010__offspring,r_0055_0009__other,attrib1).
-arc(tmp_0055_1001,r_0055_0001__Going,restriction).
-arc(tmp_0055_1001,r_0055_0008__had,scope).
+arc(r_0055_1001__tmp,r_0055_0001__Going,restriction).
+arc(r_0055_1001__tmp,r_0055_0008__had,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_55_A_history_of_qed,axiom,
+fof(id__55_A_history_of_qed,axiom,
     ? [CONNX2,EVENTX10,EVENTX7,QUALITYX5,ENTITYX8,ENTITYX6,ATTRIBX9] :
       ( isA(QUALITYX5,r_0055_0002__back)
       &amp; r_0055_0003__to(QUALITYX5) = ENTITYX6
@@ -154,7 +154,7 @@ fof(id_55_A_history_of_qed,axiom,
       &amp; isA(ENTITYX8,r_0055_0010__offspring)
       &amp; attrib1(ENTITYX8) = ATTRIBX9
       &amp; isA(ATTRIBX9,r_0055_0009__other)
-      &amp; isA(CONNX2,tmp_0055_1001)
+      &amp; isA(CONNX2,r_0055_1001__tmp)
       &amp; restriction(CONNX2) = EVENTX7
       &amp; isA(EVENTX7,r_0055_0001__Going)
       &amp; clr_dir2(EVENTX7) = QUALITYX5

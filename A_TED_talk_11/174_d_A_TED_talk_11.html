@@ -321,14 +321,15 @@ We walked in this room and it was full of people like me .
 </svg>
 <br>
 <pre>
-arc(question_0237_1010,r_0238_0009__was,scope).
 arc(r_0237_0002__said,r_0237_0001__She,arg0).
-arc(r_0237_0002__said,utterance_0237_1003,arg1).
+arc(r_0237_0002__said,r_0237_1003__utterance,arg1).
 arc(r_0237_0006__did,r_0237_0005__She,arg0).
+arc(r_0237_1003__utterance,r_0237_0006__did,part1).
+arc(r_0237_1010__question,r_0238_0009__was,scope).
 arc(r_0238_0002__ca,r_0238_0003__n_apos_t,scope).
 arc(r_0238_0003__n_apos_t,r_0238_0004__tell,scope).
-arc(r_0238_0004__tell,question_0237_1010,arg1).
 arc(r_0238_0004__tell,r_0237_0001__She,arg0).
+arc(r_0238_0004__tell,r_0237_1010__question,arg1).
 arc(r_0238_0004__tell,r_0238_0005__you,arg2).
 arc(r_0238_0007__wonderful,r_0238_0006__how,quality1).
 arc(r_0238_0009__was,r_0238_0007__wonderful,prd2).
@@ -341,20 +342,19 @@ arc(r_0239_0008__was,r_0239_0005__room,arg0).
 arc(r_0239_0008__was,r_0239_0009__full,prd2).
 arc(r_0239_0009__full,r_0239_0011__people,r_0239_0010__of).
 arc(r_0239_0011__people,r_0237_0001__She,r_0239_0012__like).
-arc(utterance_0237_1003,r_0237_0006__did,part1).
 
 </pre>
 <br>
 <pre>
-fof(id_237_A_TED_talk_11__238_A_TED_talk_11__239_A_TED_talk_11,axiom,
+fof(id__237_A_TED_talk_11__238_A_TED_talk_11__239_A_TED_talk_11,axiom,
     ? [STATEX1,STATEX8,GILLIANX7,ROOMX21,GILLIANX24,CONJX26,EVENTX25,EVENTX20,OPERATORX14,OPERATORX15,EVENTX16,OPERATORX10,EVENTX13,EVENTX6,CONJX5,EVENTX4,ENTITYX23,ROOMX19,ATTRIBX22,ATTRIBX11,QUALITYX12] :
       ( STATEX1 = CONJX5
-      &amp; isA(CONJX5,utterance_0237_1003)
+      &amp; isA(CONJX5,r_0237_1003__utterance)
       &amp; part1(CONJX5) = EVENTX4
       &amp; isA(EVENTX4,r_0237_0006__did)
       &amp; arg0(EVENTX4) = r_0237_0005__She
       &amp; STATEX8 = OPERATORX10
-      &amp; isA(OPERATORX10,question_0237_1010)
+      &amp; isA(OPERATORX10,r_0237_1010__question)
       &amp; scope(OPERATORX10) = EVENTX13
       &amp; isA(EVENTX13,r_0238_0009__was)
       &amp; prd2(EVENTX13) = ATTRIBX11

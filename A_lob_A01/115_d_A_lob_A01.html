@@ -213,26 +213,26 @@ When Mr Brown sat down labour MPs cheered for a full minute &mdash; and even his
 </svg>
 <br>
 <pre>
-arc(r_0123_0001__When_tmp,r_0123_0004__sat_down,restriction).
+arc(r_0123_0001__When_tmp,r_0123_0004__sat__r_0123_0005__down,restriction).
 arc(r_0123_0001__When_tmp,r_0123_0008__cheered,scope).
-arc(r_0123_0004__sat_down,r_0123_0002__Mr_Brown,arg0).
-arc(r_0123_0008__cheered,r_0123_0006__labour_MPs,arg0).
+arc(r_0123_0004__sat__r_0123_0005__down,r_0123_0002__Mr_r_0123_0003__Brown,arg0).
+arc(r_0123_0008__cheered,r_0123_0006__labour__r_0123_0007__MPs,arg0).
 arc(r_0123_0008__cheered,r_0123_0012__minute,r_0123_0009__for_tmp).
 arc(r_0123_0012__minute,r_0123_0011__full,attrib2).
 arc(r_0123_0014__and,r_0123_0001__When_tmp,conj1).
 arc(r_0123_0014__and,r_0123_0015__even,conj2).
-arc(r_0123_0015__even,r_0123_0021__joined_in,scope).
+arc(r_0123_0015__even,r_0123_0021__joined__r_0123_0022__in,scope).
 arc(r_0123_0018__opponents,r_0123_0016__his,genv).
 arc(r_0123_0018__opponents,r_0123_0017__bitterest,attrib2).
 arc(r_0123_0018__opponents,r_0123_0020__defence,r_0123_0019__on).
-arc(r_0123_0021__joined_in,r_0123_0018__opponents,arg0).
+arc(r_0123_0021__joined__r_0123_0022__in,r_0123_0018__opponents,arg0).
 
 </pre>
 <br>
 <pre>
-fof(id_123_A_lob_A01,axiom,
+fof(id__123_A_lob_A01,axiom,
     ? [CONJX12,OPERATORX7,EVENTX11,CONNX1,EVENTX6,EVENTX2,ENTITYX8,ENTITYX10,ENTITYX3,ENTITYX4,ATTRIBX9,ATTRIBX5] :
-      ( isA(ENTITYX3,r_0123_0006__labour_MPs)
+      ( isA(ENTITYX3,r_0123_0006__labour__r_0123_0007__MPs)
       &amp; isA(ENTITYX4,r_0123_0012__minute)
       &amp; attrib2(ENTITYX4) = ATTRIBX5
       &amp; isA(ENTITYX8,r_0123_0018__opponents)
@@ -246,8 +246,8 @@ fof(id_123_A_lob_A01,axiom,
       &amp; conj1(CONJX12) = CONNX1
       &amp; isA(CONNX1,r_0123_0001__When_tmp)
       &amp; restriction(CONNX1) = EVENTX2
-      &amp; isA(EVENTX2,r_0123_0004__sat_down)
-      &amp; arg0(EVENTX2) = r_0123_0002__Mr_Brown
+      &amp; isA(EVENTX2,r_0123_0004__sat__r_0123_0005__down)
+      &amp; arg0(EVENTX2) = r_0123_0002__Mr__r_0123_0003__Brown
       &amp; scope(CONNX1) = EVENTX6
       &amp; isA(EVENTX6,r_0123_0008__cheered)
       &amp; arg0(EVENTX6) = ENTITYX3
@@ -255,7 +255,7 @@ fof(id_123_A_lob_A01,axiom,
       &amp; conj2(CONJX12) = OPERATORX7
       &amp; isA(OPERATORX7,r_0123_0015__even)
       &amp; scope(OPERATORX7) = EVENTX11
-      &amp; isA(EVENTX11,r_0123_0021__joined_in)
+      &amp; isA(EVENTX11,r_0123_0021__joined__r_0123_0022__in)
       &amp; arg0(EVENTX11) = ENTITYX8 ) ).
 
 

@@ -366,10 +366,8 @@ Hedgehogs need to move a surprising distance to search for food , mates and nest
 </svg>
 <br>
 <pre>
-arc(cnt_0047_1005,r_0047_0004__move,scope).
-arc(cnt_0047_1005,r_0047_0009__search,restriction).
-arc(r_0047_0002__need,cnt_0047_1005,arg1).
 arc(r_0047_0002__need,r_0047_0001__Hedgehogs,arg0).
+arc(r_0047_0002__need,r_0047_1005__cnt,arg1).
 arc(r_0047_0004__move,r_0047_0001__Hedgehogs,arg0).
 arc(r_0047_0004__move,r_0047_0007__distance,arg1).
 arc(r_0047_0007__distance,r_0047_0006__surprising,attrib2).
@@ -382,25 +380,27 @@ arc(r_0047_0016__sites,r_0047_0015__nesting,attrib1).
 arc(r_0047_0018__so_cnt,r_0047_0002__need,scope).
 arc(r_0047_0018__so_cnt,r_0047_0020__need,restriction).
 arc(r_0047_0020__need,r_0047_0019__we,arg0).
-arc(r_0047_0020__need,r_0047_0032__perhaps_by_mnr,arg1).
+arc(r_0047_0020__need,r_0047_0032__perhaps__r_0047_0033__by_mnr,arg1).
 arc(r_0047_0022__make,r_0047_0019__we,arg0).
 arc(r_0047_0022__make,r_0047_0024__easier,prd).
 arc(r_0047_0022__make,r_0047_0028__move,arg1).
 arc(r_0047_0028__move,r_0047_0001__Hedgehogs,arg0).
 arc(r_0047_0028__move,r_0047_0030__gardens,r_0047_0029__between_dir).
-arc(r_0047_0032__perhaps_by_mnr,r_0047_0022__make,scope).
-arc(r_0047_0032__perhaps_by_mnr,r_0047_0034__making,restriction).
+arc(r_0047_0032__perhaps__r_0047_0033__by_mnr,r_0047_0022__make,scope).
+arc(r_0047_0032__perhaps__r_0047_0033__by_mnr,r_0047_0034__making,restriction).
 arc(r_0047_0034__making,r_0047_0019__we,arg0).
 arc(r_0047_0034__making,r_0047_0035__holes,arg1).
 arc(r_0047_0034__making,r_0047_0037__fences,r_0047_0036__in_loc).
+arc(r_0047_1005__cnt,r_0047_0004__move,scope).
+arc(r_0047_1005__cnt,r_0047_0009__search,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_47_A_Hedgehog,axiom,
+fof(id__47_A_Hedgehog,axiom,
     ? [STATEX2,STATEX15,STATEX16,HEDGEHOGSX17,CONNX14,EVENTX26,CONNX21,EVENTX24,EVENTX25,EVENTX19,EVENTX27,CONNX6,EVENTX12,EVENTX13,HEDGEHOGSX1,ENTITYX22,ENTITYX23,ENTITYX18,ENTITYX3,ENTITYX7,ENTITYX8,ENTITYX9,ENTITYX10,ATTRIBX20,ATTRIBX11,ATTRIBX4] :
       ( STATEX2 = CONNX6
-      &amp; isA(CONNX6,cnt_0047_1005)
+      &amp; isA(CONNX6,r_0047_1005__cnt)
       &amp; scope(CONNX6) = EVENTX13
       &amp; isA(EVENTX13,r_0047_0004__move)
       &amp; arg0(EVENTX13) = HEDGEHOGSX1
@@ -410,7 +410,7 @@ fof(id_47_A_Hedgehog,axiom,
       &amp; arg0(EVENTX12) = HEDGEHOGSX1
       &amp; r_0047_0010__for_clr(EVENTX12) = ENTITYX7
       &amp; STATEX15 = CONNX21
-      &amp; isA(CONNX21,r_0047_0032__perhaps_by_mnr)
+      &amp; isA(CONNX21,r_0047_0032__perhaps__r_0047_0033__by_mnr)
       &amp; scope(CONNX21) = EVENTX25
       &amp; isA(EVENTX25,r_0047_0022__make)
       &amp; arg0(EVENTX25) = r_0047_0019__we

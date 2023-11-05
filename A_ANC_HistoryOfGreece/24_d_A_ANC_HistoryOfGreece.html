@@ -233,32 +233,32 @@ Athletic prowess was admired and the Olympic games were constituted in 776 b.c. 
 </svg>
 <br>
 <pre>
-arc(cnt_0036_1013,r_0036_0010__constituted,scope).
-arc(cnt_0036_1013,r_0036_0016__promote,restriction).
 arc(r_0036_0002__prowess,r_0036_0001__Athletic,attrib1).
 arc(r_0036_0003__was,r_0036_0004__admired,catenative).
 arc(r_0036_0004__admired,r_0036_0002__prowess,arg1).
 arc(r_0036_0005__and,r_0036_0003__was,conj1).
 arc(r_0036_0005__and,r_0036_0009__were,conj2).
 arc(r_0036_0008__games,r_0036_0007__Olympic,attrib2).
-arc(r_0036_0009__were,cnt_0036_1013,catenative).
+arc(r_0036_0009__were,r_0036_1013__cnt,catenative).
 arc(r_0036_0010__constituted,r_0036_0008__games,arg1).
 arc(r_0036_0010__constituted,r_0036_0012__776,r_0036_0011__in_tmp).
-arc(r_0036_0012__776,r_0036_0013__b.c.,quality2).
+arc(r_0036_0012__776,r_0036_0013__b_c_,quality2).
 arc(r_0036_0016__promote,r_0036_0008__games,arg0).
 arc(r_0036_0016__promote,r_0036_0018__competition,arg1).
 arc(r_0036_0018__competition,r_0036_0017__friendly,attrib1).
+arc(r_0036_1013__cnt,r_0036_0010__constituted,scope).
+arc(r_0036_1013__cnt,r_0036_0016__promote,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_36_A_ANC_HistoryOfGreece,axiom,
+fof(id__36_A_ANC_HistoryOfGreece,axiom,
     ? [CATENATIVEX3,CATENATIVEX9,CONJX20,EVENTX19,CONNX14,EVENTX17,EVENTX18,EVENTX6,EVENTX5,ENTITYX7,ENTITYX11,ENTITYX15,ENTITYX1,ATTRIBX16,ATTRIBX8,ATTRIBX2,QUALITYX12] :
       ( CATENATIVEX3 = EVENTX5
       &amp; isA(EVENTX5,r_0036_0004__admired)
       &amp; arg1(EVENTX5) = ENTITYX1
       &amp; CATENATIVEX9 = CONNX14
-      &amp; isA(CONNX14,cnt_0036_1013)
+      &amp; isA(CONNX14,r_0036_1013__cnt)
       &amp; scope(CONNX14) = EVENTX18
       &amp; isA(EVENTX18,r_0036_0010__constituted)
       &amp; arg1(EVENTX18) = ENTITYX7
@@ -278,7 +278,7 @@ fof(id_36_A_ANC_HistoryOfGreece,axiom,
       &amp; isA(ATTRIBX2,r_0036_0001__Athletic)
       &amp; isA(ATTRIBX8,r_0036_0007__Olympic)
       &amp; isA(ATTRIBX16,r_0036_0017__friendly)
-      &amp; isA(QUALITYX12,r_0036_0013__b.c.)
+      &amp; isA(QUALITYX12,r_0036_0013__b_c_)
       &amp; isA(CONJX20,r_0036_0005__and)
       &amp; conj1(CONJX20) = EVENTX6
       &amp; isA(EVENTX6,r_0036_0003__was)

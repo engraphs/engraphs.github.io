@@ -195,23 +195,23 @@
 </svg>
 <br>
 <pre>
-arc(r_0215_0007__intending,r_0215_0005__business_operator,arg0).
+arc(r_0215_0007__intending,r_0215_0005__business__r_0215_0006__operator,arg0).
 arc(r_0215_0007__intending,r_0215_0009__receive,arg1).
-arc(r_0215_0009__receive,r_0215_0005__business_operator,arg0).
+arc(r_0215_0009__receive,r_0215_0005__business__r_0215_0006__operator,arg0).
 arc(r_0215_0009__receive,r_0215_0010__authorization,arg1).
-arc(r_0215_0011__set_forth,r_0215_0010__authorization,arg1).
-arc(r_0215_0011__set_forth,r_0215_0016__paragraph,r_0215_0013__in_loc).
+arc(r_0215_0011__set__r_0215_0012__forth,r_0215_0010__authorization,arg1).
+arc(r_0215_0011__set__r_0215_0012__forth,r_0215_0016__paragraph,r_0215_0013__in_loc).
 arc(r_0215_0016__paragraph,r_0215_0015__preceding,attrib2).
 arc(r_0215_0017__shall,r_0215_0018__apply,scope).
-arc(r_0215_0018__apply,r_0215_0005__business_operator,arg0).
+arc(r_0215_0018__apply,r_0215_0005__business__r_0215_0006__operator,arg0).
 arc(r_0215_0018__apply,r_0215_0022__minister,r_0215_0019__to_dir).
-arc(r_0215_0018__apply,r_0215_0025__Cabinet_Order,r_0215_0023__as_prescribed_by_mnr).
+arc(r_0215_0018__apply,r_0215_0025__Cabinet__r_0215_0026__Order,r_0215_0023__as_prescribed_by_mnr).
 arc(r_0215_0022__minister,r_0215_0021__competent,attrib2).
 
 </pre>
 <br>
 <pre>
-fof(id_215_A_law_h15A119,axiom,
+fof(id__215_A_law_h15A119,axiom,
     ? [STATEX2,OPERATORX13,EVENTX14,EVENTX9,EVENTX8,EVENTX7,ENTITYX1,ENTITYX10,ENTITYX12,ENTITYX3,ENTITYX5,ATTRIBX11,ATTRIBX6] :
       ( STATEX2 = EVENTX8
       &amp; isA(EVENTX8,r_0215_0009__receive)
@@ -220,8 +220,8 @@ fof(id_215_A_law_h15A119,axiom,
       &amp; isA(EVENTX9,r_0215_0007__intending)
       &amp; arg0(EVENTX9) = ENTITYX1
       &amp; arg1(EVENTX9) = STATEX2
-      &amp; isA(ENTITYX1,r_0215_0005__business_operator)
-      &amp; isA(EVENTX7,r_0215_0011__set_forth)
+      &amp; isA(ENTITYX1,r_0215_0005__business__r_0215_0006__operator)
+      &amp; isA(EVENTX7,r_0215_0011__set__r_0215_0012__forth)
       &amp; arg1(EVENTX7) = ENTITYX3
       &amp; r_0215_0013__in_loc(EVENTX7) = ENTITYX5
       &amp; isA(ENTITYX3,r_0215_0010__authorization)
@@ -229,7 +229,7 @@ fof(id_215_A_law_h15A119,axiom,
       &amp; attrib2(ENTITYX5) = ATTRIBX6
       &amp; isA(ENTITYX10,r_0215_0022__minister)
       &amp; attrib2(ENTITYX10) = ATTRIBX11
-      &amp; isA(ENTITYX12,r_0215_0025__Cabinet_Order)
+      &amp; isA(ENTITYX12,r_0215_0025__Cabinet__r_0215_0026__Order)
       &amp; isA(ATTRIBX6,r_0215_0015__preceding)
       &amp; isA(ATTRIBX11,r_0215_0021__competent)
       &amp; isA(OPERATORX13,r_0215_0017__shall)

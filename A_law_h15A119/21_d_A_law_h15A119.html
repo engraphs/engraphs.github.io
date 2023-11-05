@@ -215,7 +215,7 @@
 <br>
 <pre>
 arc(r_0021_0005__term,r_0021_0007__person,prn4).
-arc(r_0021_0005__term,r_0021_0012__information,r_0021_0009__as_to).
+arc(r_0021_0005__term,r_0021_0012__information,r_0021_0009__as__r_0021_0010__to).
 arc(r_0021_0012__information,r_0021_0011__personal,attrib1).
 arc(r_0021_0013__as_mod,r_0021_0014__used,restriction).
 arc(r_0021_0013__as_mod,r_0021_0018__shall,scope).
@@ -225,23 +225,23 @@ arc(r_0021_0019__mean,r_0021_0005__term,arg0).
 arc(r_0021_0019__mean,r_0021_0022__individual,arg1).
 arc(r_0021_0022__individual,r_0021_0021__specific,attrib2).
 arc(r_0021_0023__identified,r_0021_0022__individual,arg1).
-arc(r_0021_0023__identified,r_0021_0026__information,arg0_by_lgs).
+arc(r_0021_0023__identified,r_0021_0026__information,arg0__r_0021_0024__by_lgs).
 arc(r_0021_0026__information,r_0021_0025__personal,attrib1).
 
 </pre>
 <br>
 <pre>
-fof(id_21_A_law_h15A119,axiom,
+fof(id__21_A_law_h15A119,axiom,
     ? [CONNX5,OPERATORX16,EVENTX17,EVENTX15,EVENTX10,ENTITYX1,ENTITYX11,ENTITYX13,ENTITYX9,ENTITYX2,ENTITYX3,ATTRIBX12,ATTRIBX14,ATTRIBX4] :
       ( isA(ENTITYX1,r_0021_0005__term)
       &amp; prn4(ENTITYX1) = ENTITYX2
-      &amp; r_0021_0009__as_to(ENTITYX1) = ENTITYX3
+      &amp; r_0021_0009__as__r_0021_0010__to(ENTITYX1) = ENTITYX3
       &amp; isA(ENTITYX2,r_0021_0007__person)
       &amp; isA(ENTITYX3,r_0021_0012__information)
       &amp; attrib1(ENTITYX3) = ATTRIBX4
       &amp; isA(ENTITYX9,r_0021_0017__Act)
       &amp; isA(EVENTX15,r_0021_0023__identified)
-      &amp; arg0_by_lgs(EVENTX15) = ENTITYX13
+      &amp; arg0__r_0021_0024__by_lgs(EVENTX15) = ENTITYX13
       &amp; arg1(EVENTX15) = ENTITYX11
       &amp; isA(ENTITYX11,r_0021_0022__individual)
       &amp; attrib2(ENTITYX11) = ATTRIBX12

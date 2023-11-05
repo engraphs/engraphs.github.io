@@ -217,11 +217,11 @@ arc(r_0065_0003__will,r_0065_0005__discuss,scope).
 arc(r_0065_0004__probably,r_0065_0003__will,scope).
 arc(r_0065_0005__discuss,r_0065_0002__President,arg0).
 arc(r_0065_0005__discuss,r_0065_0007__problem,arg1).
-arc(r_0065_0005__discuss,r_0065_0009__Dr_Brentano,r_0065_0008__with_com).
-arc(r_0065_0009__Dr_Brentano,r_0065_0013__West_Minister,prn4).
-arc(r_0065_0013__West_Minister,r_0065_0014__German,attrib3).
-arc(r_0065_0013__West_Minister,r_0065_0015__foreign,attrib4).
-arc(r_0065_0019__is,r_0065_0013__West_Minister,arg0).
+arc(r_0065_0005__discuss,r_0065_0009__Dr__r_0065_0010__Brentano,r_0065_0008__with_com).
+arc(r_0065_0009__Dr__r_0065_0010__Brentano,r_0065_0013__West_r_0065_0016__Minister,prn4).
+arc(r_0065_0013__West__r_0065_0016__Minister,r_0065_0014__German,attrib3).
+arc(r_0065_0013__West__r_0065_0016__Minister,r_0065_0015__foreign,attrib4).
+arc(r_0065_0019__is,r_0065_0013__West__r_0065_0016__Minister,arg0).
 arc(r_0065_0019__is,r_0065_0020__due,prd2).
 arc(r_0065_0019__is,r_0065_0024__week,tmp).
 arc(r_0065_0020__due,r_0065_0022__Washington,r_0065_0021__in).
@@ -230,7 +230,7 @@ arc(r_0065_0024__week,r_0065_0023__next,attrib1).
 </pre>
 <br>
 <pre>
-fof(id_65_A_lob_A01,axiom,
+fof(id__65_A_lob_A01,axiom,
     ? [OPERATORX2,OPERATORX11,EVENTX12,EVENTX10,ENTITYX1,ENTITYX3,ENTITYX4,ENTITYX8,ATTRIBX5,ATTRIBX6,ATTRIBX7,ATTRIBX9] :
       ( isA(ENTITYX1,r_0065_0002__President)
       &amp; isA(ENTITYX3,r_0065_0007__problem)
@@ -238,13 +238,13 @@ fof(id_65_A_lob_A01,axiom,
       &amp; arg0(EVENTX10) = ENTITYX4
       &amp; prd2(EVENTX10) = ATTRIBX7
       &amp; tmp(EVENTX10) = ENTITYX8
-      &amp; isA(ENTITYX4,r_0065_0013__West_Minister)
+      &amp; isA(ENTITYX4,r_0065_0013__West__r_0065_0016__Minister)
       &amp; attrib3(ENTITYX4) = ATTRIBX5
       &amp; attrib4(ENTITYX4) = ATTRIBX6
       &amp; isA(ENTITYX8,r_0065_0024__week)
       &amp; attrib1(ENTITYX8) = ATTRIBX9
-      &amp; isA(r_0065_0009__Dr_Brentano,r_0065_0009__Dr_Brentano)
-      &amp; prn4(r_0065_0009__Dr_Brentano) = ENTITYX4
+      &amp; isA(r_0065_0009__Dr__r_0065_0010__Brentano,r_0065_0009__Dr_r_0065_0010__Brentano)
+      &amp; prn4(r_0065_0009__Dr__r_0065_0010__Brentano) = ENTITYX4
       &amp; isA(ATTRIBX5,r_0065_0014__German)
       &amp; isA(ATTRIBX6,r_0065_0015__foreign)
       &amp; isA(ATTRIBX7,r_0065_0020__due)
@@ -257,7 +257,7 @@ fof(id_65_A_lob_A01,axiom,
       &amp; isA(EVENTX12,r_0065_0005__discuss)
       &amp; arg0(EVENTX12) = ENTITYX1
       &amp; arg1(EVENTX12) = ENTITYX3
-      &amp; r_0065_0008__with_com(EVENTX12) = r_0065_0009__Dr_Brentano ) ).
+      &amp; r_0065_0008__with_com(EVENTX12) = r_0065_0009__Dr__r_0065_0010__Brentano ) ).
 
 
 </pre>

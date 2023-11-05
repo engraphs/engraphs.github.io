@@ -214,12 +214,12 @@ The committee 's president 89 - year - old Earl Russell and his 61 - year - old 
 <br>
 <pre>
 arc(r_0111_0004__president,r_0111_0002__committee,genv).
-arc(r_0111_0004__president,r_0111_0010__Earl_Russell,prn3).
-arc(r_0111_0009__old,r_0111_0005__89_year,modifier1).
-arc(r_0111_0010__Earl_Russell,r_0111_0009__old,attrib1).
+arc(r_0111_0004__president,r_0111_0010__Earl__r_0111_0011__Russell,prn3).
+arc(r_0111_0009__old,r_0111_0005__89__r_0111_0007__year,modifier1).
+arc(r_0111_0010__Earl__r_0111_0011__Russell,r_0111_0009__old,attrib1).
 arc(r_0111_0012__and,r_0111_0004__president,conj1).
 arc(r_0111_0012__and,r_0111_0019__wife,conj2).
-arc(r_0111_0018__old,r_0111_0014__61_year,modifier1).
+arc(r_0111_0018__old,r_0111_0014__61__r_0111_0016__year,modifier1).
 arc(r_0111_0019__wife,r_0111_0013__his,genv).
 arc(r_0111_0019__wife,r_0111_0018__old,attrib2).
 arc(r_0111_0020__were,r_0111_0022__jailed,catenative).
@@ -230,7 +230,7 @@ arc(r_0111_0022__jailed,r_0111_0025__week,r_0111_0023__for_tmp).
 </pre>
 <br>
 <pre>
-fof(id_111_A_lob_A02,axiom,
+fof(id__111_A_lob_A02,axiom,
     ? [CATENATIVEX10,PRESIDENTX7,EVENTX15,EVENTX14,ENTITYX1,ENTITYX13,PRESIDENTX2,ENTITYX6,ENTITYX9,ENTITYX3,ENTITYX5,ATTRIBX8,ATTRIBX4,QUALITYX12] :
       ( CATENATIVEX10 = EVENTX14
       &amp; isA(EVENTX14,r_0111_0022__jailed)
@@ -242,21 +242,21 @@ fof(id_111_A_lob_A02,axiom,
       &amp; conj2(ENTITYX1) = ENTITYX6
       &amp; isA(PRESIDENTX2,r_0111_0004__president)
       &amp; genv(PRESIDENTX2) = ENTITYX3
-      &amp; prn3(PRESIDENTX2) = r_0111_0010__Earl_Russell
+      &amp; prn3(PRESIDENTX2) = r_0111_0010__Earl__r_0111_0011__Russell
       &amp; isA(ENTITYX3,r_0111_0002__committee)
-      &amp; isA(ENTITYX5,r_0111_0005__89_year)
+      &amp; isA(ENTITYX5,r_0111_0005__89__r_0111_0007__year)
       &amp; isA(ENTITYX6,r_0111_0019__wife)
       &amp; genv(ENTITYX6) = PRESIDENTX7
       &amp; attrib2(ENTITYX6) = ATTRIBX8
       &amp; isA(PRESIDENTX7,r_0111_0013__his)
-      &amp; isA(ENTITYX9,r_0111_0014__61_year)
+      &amp; isA(ENTITYX9,r_0111_0014__61__r_0111_0016__year)
       &amp; isA(ENTITYX13,r_0111_0025__week)
       &amp; isA(ATTRIBX4,r_0111_0009__old)
       &amp; modifier1(ATTRIBX4) = ENTITYX5
       &amp; isA(ATTRIBX8,r_0111_0018__old)
       &amp; modifier1(ATTRIBX8) = ENTITYX9
-      &amp; isA(r_0111_0010__Earl_Russell,r_0111_0010__Earl_Russell)
-      &amp; attrib1(r_0111_0010__Earl_Russell) = ATTRIBX4
+      &amp; isA(r_0111_0010__Earl__r_0111_0011__Russell,r_0111_0010__Earl_r_0111_0011__Russell)
+      &amp; attrib1(r_0111_0010__Earl__r_0111_0011__Russell) = ATTRIBX4
       &amp; isA(QUALITYX12,r_0111_0021__each)
       &amp; isA(EVENTX15,r_0111_0020__were)
       &amp; catenative(EVENTX15) = CATENATIVEX10 ) ).

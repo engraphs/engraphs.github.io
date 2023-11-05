@@ -181,25 +181,25 @@ You should also say whether you would have made the same choice as the character
 </svg>
 <br>
 <pre>
-arc(question_0039_1004,r_0039_0007__would,scope).
 arc(r_0039_0002__should,r_0039_0004__say,scope).
 arc(r_0039_0003__also,r_0039_0002__should,scope).
-arc(r_0039_0004__say,question_0039_1004,arg1).
 arc(r_0039_0004__say,r_0039_0001__You,arg0).
+arc(r_0039_0004__say,r_0039_1004__question,arg1).
 arc(r_0039_0007__would,r_0039_0008__have,scope).
 arc(r_0039_0008__have,r_0039_0009__made,catenative).
 arc(r_0039_0009__made,r_0039_0001__You,arg0).
 arc(r_0039_0009__made,r_0039_0012__choice,arg1).
 arc(r_0039_0011__same,r_0039_0015__character,r_0039_0013__as).
 arc(r_0039_0012__choice,r_0039_0011__same,attrib2).
+arc(r_0039_1004__question,r_0039_0007__would,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_39_A_fce_0102_2000_12,axiom,
+fof(id__39_A_fce_0102_2000_12,axiom,
     ? [STATEX2,CATENATIVEX7,HEARERX5,OPERATORX1,OPERATORX13,EVENTX14,OPERATORX4,OPERATORX6,EVENTX12,EVENTX11,ENTITYX8,ENTITYX10,ATTRIBX9] :
       ( STATEX2 = OPERATORX4
-      &amp; isA(OPERATORX4,question_0039_1004)
+      &amp; isA(OPERATORX4,r_0039_1004__question)
       &amp; scope(OPERATORX4) = OPERATORX6
       &amp; isA(OPERATORX6,r_0039_0007__would)
       &amp; scope(OPERATORX6) = EVENTX12

@@ -332,8 +332,6 @@ So you were probably steered benignly away from things at school when you were a
 </svg>
 <br>
 <pre>
-arc(mnr_0166_1021,r_0166_0028__get,scope).
-arc(mnr_0166_1021,r_0166_0031__doing,restriction).
 arc(r_0166_0001__So,r_0166_0003__were,scope).
 arc(r_0166_0003__were,r_0166_0004__probably,catenative).
 arc(r_0166_0004__probably,r_0166_0011__when_tmp,scope).
@@ -350,17 +348,19 @@ arc(r_0166_0013__were,r_0166_0015__kid,prd2).
 arc(r_0166_0019__liked,r_0166_0002__you,arg0).
 arc(r_0166_0019__liked,r_0166_0017__things,arg1).
 arc(r_0166_0023__grounds,r_0166_0026__would,emb3).
-arc(r_0166_0026__would,mnr_0166_1021,scope).
+arc(r_0166_0026__would,r_0166_1021__mnr,scope).
 arc(r_0166_0028__get,r_0166_0002__you,arg0).
 arc(r_0166_0028__get,r_0166_0027__never,tmp4).
 arc(r_0166_0028__get,r_0166_0030__job,arg1).
 arc(r_0166_0031__doing,r_0166_0002__you,arg0).
 arc(r_0166_0031__doing,r_0166_0032__that,arg1).
+arc(r_0166_1021__mnr,r_0166_0028__get,scope).
+arc(r_0166_1021__mnr,r_0166_0031__doing,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_166_A_TED_talk_11,axiom,
+fof(id__166_A_TED_talk_11,axiom,
     ? [CATENATIVEX2,STATEX16,HEARERX9,HEARERX17,HEARERX12,OPERATORX1,EVENTX26,OPERATORX4,CONNX11,EVENTX14,EVENTX25,OPERATORX20,CONNX22,EVENTX23,EVENTX24,EVENTX10,ENTITYX6,ENTITYX13,ENTITYX15,ENTITYX19,ENTITYX7,ENTITYX8,QUALITYX5,QUALITYX18] :
       ( CATENATIVEX2 = OPERATORX4
       &amp; isA(OPERATORX4,r_0166_0004__probably)
@@ -379,7 +379,7 @@ fof(id_166_A_TED_talk_11,axiom,
       &amp; STATEX16 = OPERATORX20
       &amp; isA(OPERATORX20,r_0166_0026__would)
       &amp; scope(OPERATORX20) = CONNX22
-      &amp; isA(CONNX22,mnr_0166_1021)
+      &amp; isA(CONNX22,r_0166_1021__mnr)
       &amp; scope(CONNX22) = EVENTX24
       &amp; isA(EVENTX24,r_0166_0028__get)
       &amp; arg0(EVENTX24) = HEARERX17

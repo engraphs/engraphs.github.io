@@ -126,14 +126,14 @@ The purpose for political activities ( including activities incidental thereto )
 arc(r_0289_0002__purpose,r_0289_0005__activities,r_0289_0003__for).
 arc(r_0289_0005__activities,r_0289_0004__political,attrib1).
 arc(r_0289_0007__including,r_0289_0005__activities,arg0).
-arc(r_0289_0007__including,r_0289_0008__activities_thereto,arg1).
-arc(r_0289_0008__activities_thereto,r_0289_0009__incidental,attrib2).
+arc(r_0289_0007__including,r_0289_0008__activities__r_0289_0010__thereto,arg1).
+arc(r_0289_0008__activities__r_0289_0010__thereto,r_0289_0009__incidental,attrib2).
 arc(z_0289_1009,r_0289_0002__purpose,z_0289_1002).
 
 </pre>
 <br>
 <pre>
-fof(id_289_A_law_h15A119,axiom,
+fof(id__289_A_law_h15A119,axiom,
     ? [EVENTX10,EVENTX8,ENTITYX3,ENTITYX4,ENTITYX6,ATTRIBX5,ATTRIBX7] :
       ( isA(ENTITYX3,r_0289_0002__purpose)
       &amp; r_0289_0003__for(ENTITYX3) = ENTITYX4
@@ -142,7 +142,7 @@ fof(id_289_A_law_h15A119,axiom,
       &amp; arg1(EVENTX8) = ENTITYX6
       &amp; isA(ENTITYX4,r_0289_0005__activities)
       &amp; attrib1(ENTITYX4) = ATTRIBX5
-      &amp; isA(ENTITYX6,r_0289_0008__activities_thereto)
+      &amp; isA(ENTITYX6,r_0289_0008__activities__r_0289_0010__thereto)
       &amp; attrib2(ENTITYX6) = ATTRIBX7
       &amp; isA(ATTRIBX5,r_0289_0004__political)
       &amp; isA(ATTRIBX7,r_0289_0009__incidental)

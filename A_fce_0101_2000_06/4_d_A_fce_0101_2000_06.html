@@ -129,18 +129,18 @@ Read the extract from your diary and your notes .
 </svg>
 <br>
 <pre>
-arc(imperative_0005_1002,r_0005_0001__Read,scope).
 arc(r_0005_0001__Read,r_0005_0003__extract,arg1).
 arc(r_0005_0003__extract,r_0005_0007__and,r_0005_0004__from).
 arc(r_0005_0006__diary,r_0005_0005__your,genv).
 arc(r_0005_0007__and,r_0005_0006__diary,conj1).
 arc(r_0005_0007__and,r_0005_0009__notes,conj2).
 arc(r_0005_0009__notes,r_0005_0005__your,genv).
+arc(r_0005_1002__imperative,r_0005_0001__Read,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_5_A_fce_0101_2000_06,axiom,
+fof(id__5_A_fce_0101_2000_06,axiom,
     ? [HEARERX8,OPERATORX2,EVENTX9,ENTITYX4,ENTITYX5,ENTITYX6,ENTITYX7] :
       ( isA(ENTITYX4,r_0005_0003__extract)
       &amp; r_0005_0004__from(ENTITYX4) = ENTITYX5
@@ -152,7 +152,7 @@ fof(id_5_A_fce_0101_2000_06,axiom,
       &amp; isA(ENTITYX7,r_0005_0009__notes)
       &amp; genv(ENTITYX7) = HEARERX8
       &amp; HEARERX8 = r_0005_0005__your
-      &amp; isA(OPERATORX2,imperative_0005_1002)
+      &amp; isA(OPERATORX2,r_0005_1002__imperative)
       &amp; scope(OPERATORX2) = EVENTX9
       &amp; isA(EVENTX9,r_0005_0001__Read)
       &amp; arg1(EVENTX9) = ENTITYX4 ) ).

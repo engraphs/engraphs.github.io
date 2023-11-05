@@ -207,24 +207,24 @@ A tiny red light sprang into life , only to fade as the screen of the second rad
 </svg>
 <br>
 <pre>
-arc(cnt_0024_1006,r_0024_0005__sprang,scope).
-arc(cnt_0024_1006,r_0024_0012__as_cnt,restriction).
 arc(r_0024_0004__light,r_0024_0002__tiny,attrib2).
 arc(r_0024_0004__light,r_0024_0003__red,attrib3).
 arc(r_0024_0005__sprang,r_0024_0004__light,arg0).
 arc(r_0024_0005__sprang,r_0024_0007__life,r_0024_0006__into_mnr).
-arc(r_0024_0009__only,cnt_0024_1006,scope).
+arc(r_0024_0009__only,r_0024_1006__cnt,scope).
 arc(r_0024_0011__fade,r_0024_0004__light,arg0).
 arc(r_0024_0012__as_cnt,r_0024_0011__fade,scope).
 arc(r_0024_0012__as_cnt,r_0024_0020__came,restriction).
-arc(r_0024_0014__screen,r_0024_0017__second_radar_scanner,r_0024_0015__of).
+arc(r_0024_0014__screen,r_0024_0017__second__r_0024_0018__radar_r_0024_0019__scanner,r_0024_0015__of).
 arc(r_0024_0020__came,r_0024_0014__screen,arg0).
 arc(r_0024_0020__came,r_0024_0022__operation,r_0024_0021__into_mnr).
+arc(r_0024_1006__cnt,r_0024_0005__sprang,scope).
+arc(r_0024_1006__cnt,r_0024_0012__as_cnt,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_24_A_lob_N01,axiom,
+fof(id__24_A_lob_N01,axiom,
     ? [OPERATORX5,CONNX7,CONNX8,EVENTX12,EVENTX13,EVENTX14,ENTITYX1,ENTITYX4,ENTITYX9,ENTITYX11,ENTITYX10,ATTRIBX2,ATTRIBX3] :
       ( isA(ENTITYX1,r_0024_0004__light)
       &amp; attrib2(ENTITYX1) = ATTRIBX2
@@ -232,13 +232,13 @@ fof(id_24_A_lob_N01,axiom,
       &amp; isA(ENTITYX4,r_0024_0007__life)
       &amp; isA(ENTITYX9,r_0024_0014__screen)
       &amp; r_0024_0015__of(ENTITYX9) = ENTITYX10
-      &amp; isA(ENTITYX10,r_0024_0017__second_radar_scanner)
+      &amp; isA(ENTITYX10,r_0024_0017__second__r_0024_0018__radar_r_0024_0019__scanner)
       &amp; isA(ENTITYX11,r_0024_0022__operation)
       &amp; isA(ATTRIBX2,r_0024_0002__tiny)
       &amp; isA(ATTRIBX3,r_0024_0003__red)
       &amp; isA(OPERATORX5,r_0024_0009__only)
       &amp; scope(OPERATORX5) = CONNX7
-      &amp; isA(CONNX7,cnt_0024_1006)
+      &amp; isA(CONNX7,r_0024_1006__cnt)
       &amp; scope(CONNX7) = EVENTX14
       &amp; isA(EVENTX14,r_0024_0005__sprang)
       &amp; arg0(EVENTX14) = ENTITYX1

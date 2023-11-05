@@ -244,32 +244,32 @@ These systems permit programs to be written using meaningful names ( symbols ) r
 </svg>
 <br>
 <pre>
-arc(mnr_0036_1016,r_0037_0007__written,scope).
-arc(mnr_0036_1016,r_0037_0008__using,restriction).
-arc(r_0036_0002__Programming_Systems,r_0036_0001__Symbolic,attrib1).
-arc(r_0037_0003__permit,r_0036_0002__Programming_Systems,arg0).
+arc(r_0036_0002__Programming__r_0036_0003__Systems,r_0036_0001__Symbolic,attrib1).
+arc(r_0036_1016__mnr,r_0037_0007__written,scope).
+arc(r_0036_1016__mnr,r_0037_0008__using,restriction).
+arc(r_0037_0003__permit,r_0036_0002__Programming__r_0036_0003__Systems,arg0).
 arc(r_0037_0003__permit,r_0037_0004__programs,arg1).
 arc(r_0037_0003__permit,r_0037_0006__be,prd).
-arc(r_0037_0006__be,mnr_0036_1016,catenative).
+arc(r_0037_0006__be,r_0036_1016__mnr,catenative).
 arc(r_0037_0008__using,r_0037_0010__names,arg1).
 arc(r_0037_0008__using,r_0037_0014__rather,mod3).
 arc(r_0037_0010__names,r_0037_0009__meaningful,attrib1).
 arc(r_0037_0010__names,r_0037_0012__symbols,prn4).
 arc(r_0037_0014__rather,z_0036_1027,r_0037_0015__than).
-arc(r_0037_0017__machine_language,r_0037_0016__actual,attrib1).
-arc(z_0036_1007,r_0036_0002__Programming_Systems,z_0036_1004).
-arc(z_0036_1027,r_0037_0017__machine_language,arg1).
+arc(r_0037_0017__machine__r_0037_0018__language,r_0037_0016__actual,attrib1).
+arc(z_0036_1007,r_0036_0002__Programming__r_0036_0003__Systems,z_0036_1004).
+arc(z_0036_1027,r_0037_0017__machine__r_0037_0018__language,arg1).
 
 </pre>
 <br>
 <pre>
-fof(id_36_A_IBM_1401__37_A_IBM_1401,axiom,
+fof(id__36_A_IBM_1401__37_A_IBM_1401,axiom,
     ? [STATEX11,CATENATIVEX14,EVENTX22,SYMBOLIC_SYSTEMSX9,EVENTX32,EVENTX31,CONNX17,EVENTX29,EVENTX28,EVENTX30,EVENTX8,ENTITYX10,ENTITYX18,ENTITYX25,ENTITYX20,SYMBOLIC_SYSTEMSX5,ATTRIBX26,ATTRIBX19,ATTRIBX6,QUALITYX21] :
       ( STATEX11 = EVENTX31
       &amp; isA(EVENTX31,r_0037_0006__be)
       &amp; catenative(EVENTX31) = CATENATIVEX14
       &amp; CATENATIVEX14 = CONNX17
-      &amp; isA(CONNX17,mnr_0036_1016)
+      &amp; isA(CONNX17,r_0036_1016__mnr)
       &amp; scope(CONNX17) = EVENTX30
       &amp; isA(EVENTX30,r_0037_0007__written)
       &amp; restriction(CONNX17) = EVENTX29
@@ -279,7 +279,7 @@ fof(id_36_A_IBM_1401__37_A_IBM_1401,axiom,
       &amp; EVENTX22 = EVENTX28
       &amp; isA(EVENTX28,z_0036_1027)
       &amp; arg1(EVENTX28) = ENTITYX25
-      &amp; isA(SYMBOLIC_SYSTEMSX5,r_0036_0002__Programming_Systems)
+      &amp; isA(SYMBOLIC_SYSTEMSX5,r_0036_0002__Programming__r_0036_0003__Systems)
       &amp; attrib1(SYMBOLIC_SYSTEMSX5) = ATTRIBX6
       &amp; SYMBOLIC_SYSTEMSX9 = SYMBOLIC_SYSTEMSX5
       &amp; isA(ENTITYX10,r_0037_0004__programs)
@@ -287,7 +287,7 @@ fof(id_36_A_IBM_1401__37_A_IBM_1401,axiom,
       &amp; attrib1(ENTITYX18) = ATTRIBX19
       &amp; prn4(ENTITYX18) = ENTITYX20
       &amp; isA(ENTITYX20,r_0037_0012__symbols)
-      &amp; isA(ENTITYX25,r_0037_0017__machine_language)
+      &amp; isA(ENTITYX25,r_0037_0017__machine__r_0037_0018__language)
       &amp; attrib1(ENTITYX25) = ATTRIBX26
       &amp; isA(ATTRIBX6,r_0036_0001__Symbolic)
       &amp; isA(ATTRIBX19,r_0037_0009__meaningful)

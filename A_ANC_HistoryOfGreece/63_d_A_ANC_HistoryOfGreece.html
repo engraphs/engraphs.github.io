@@ -194,23 +194,23 @@ In return , the Turks violently put down every insurrection , including the mass
 </svg>
 <br>
 <pre>
-arc(r_0105_0007__put_down,r_0105_0002__return,r_0105_0001__In_cnt).
-arc(r_0105_0007__put_down,r_0105_0005__Turks,arg0).
-arc(r_0105_0007__put_down,r_0105_0006__violently,mnr4).
-arc(r_0105_0007__put_down,r_0105_0010__insurrection,arg1).
-arc(r_0105_0009__quantificational__every,r_0105_0007__put_down,scope).
-arc(r_0105_0009__quantificational__every,r_0105_0010__insurrection,restriction).
+arc(r_0105_0007__put__r_0105_0008__down,r_0105_0002__return,r_0105_0001__In_cnt).
+arc(r_0105_0007__put__r_0105_0008__down,r_0105_0005__Turks,arg0).
+arc(r_0105_0007__put__r_0105_0008__down,r_0105_0006__violently,mnr4).
+arc(r_0105_0007__put__r_0105_0008__down,r_0105_0010__insurrection,arg1).
+arc(r_0105_0009__quantificational__r_0105_0009__every,r_0105_0007__put__r_0105_0008__down,scope).
+arc(r_0105_0009__quantificational__r_0105_0009__every,r_0105_0010__insurrection,restriction).
 arc(r_0105_0012__including,r_0105_0010__insurrection,arg0).
 arc(r_0105_0012__including,r_0105_0014__massacre,arg1).
 arc(r_0105_0014__massacre,r_0105_0016__Chios,r_0105_0015__on).
 arc(r_0105_0021__were,r_0105_0014__massacre,tmp1).
 arc(r_0105_0021__were,r_0105_0022__slaughtered,catenative).
-arc(r_0105_0022__slaughtered,r_0105_0019__22,000_people,arg1).
+arc(r_0105_0022__slaughtered,r_0105_0019__22,000__r_0105_0020__people,arg1).
 
 </pre>
 <br>
 <pre>
-fof(id_105_A_ANC_HistoryOfGreece,axiom,
+fof(id__105_A_ANC_HistoryOfGreece,axiom,
     ? [CATENATIVEX7,QUANTX4,EVENTX12,EVENTX11,EVENTX10,EVENTX9,ENTITYX1,ENTITYX3,ENTITYX5,ENTITYX6,QUALITYX2] :
       ( CATENATIVEX7 = EVENTX9
       &amp; isA(EVENTX9,r_0105_0022__slaughtered)
@@ -221,17 +221,17 @@ fof(id_105_A_ANC_HistoryOfGreece,axiom,
       &amp; catenative(EVENTX10) = CATENATIVEX7
       &amp; isA(ENTITYX5,r_0105_0014__massacre)
       &amp; r_0105_0015__on(ENTITYX5) = r_0105_0016__Chios
-      &amp; isA(ENTITYX6,r_0105_0019__22,000_people)
+      &amp; isA(ENTITYX6,r_0105_0019__22,000__r_0105_0020__people)
       &amp; isA(r_0105_0005__Turks,r_0105_0005__Turks)
       &amp; isA(QUALITYX2,r_0105_0006__violently)
-      &amp; isA(QUANTX4,r_0105_0009__quantificational__every)
+      &amp; isA(QUANTX4,r_0105_0009__quantificational__r_0105_0009__every)
       &amp; isA(EVENTX11,r_0105_0012__including)
       &amp; arg0(EVENTX11) = ENTITYX3
       &amp; arg1(EVENTX11) = ENTITYX5
       &amp; isA(ENTITYX3,r_0105_0010__insurrection)
       &amp; restriction(QUANTX4) = ENTITYX3
       &amp; scope(QUANTX4) = EVENTX12
-      &amp; isA(EVENTX12,r_0105_0007__put_down)
+      &amp; isA(EVENTX12,r_0105_0007__put__r_0105_0008__down)
       &amp; r_0105_0001__In_cnt(EVENTX12) = ENTITYX1
       &amp; arg0(EVENTX12) = r_0105_0005__Turks
       &amp; mnr4(EVENTX12) = QUALITYX2

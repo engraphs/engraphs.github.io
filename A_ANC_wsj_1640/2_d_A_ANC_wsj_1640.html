@@ -405,7 +405,7 @@ arc(r_0003_0008__steal,r_0003_0006__nations,arg0).
 arc(r_0003_0008__steal,r_0003_0007__routinely,tmp2).
 arc(r_0003_0008__steal,r_0003_0009__information,arg1).
 arc(r_0003_0008__steal,r_0003_0012__companies,r_0003_0010__from_loc).
-arc(r_0003_0012__companies,r_0003_0011__U.S.,attrib1).
+arc(r_0003_0012__companies,r_0003_0011__U_S_,attrib1).
 arc(r_0003_0013__and,r_0003_0008__steal,conj1).
 arc(r_0003_0013__and,r_0003_0014__share,conj2).
 arc(r_0003_0014__share,r_0003_0006__nations,arg0).
@@ -413,27 +413,27 @@ arc(r_0003_0014__share,r_0003_0007__routinely,tmp2).
 arc(r_0003_0014__share,r_0003_0009__information,arg1).
 arc(r_0003_0014__share,r_0003_0019__companies,r_0003_0016__with_com).
 arc(r_0003_0019__companies,z_0003_1019,genv).
-arc(r_0003_0022__said,r_0003_0023__Noel_D._Matchett,arg0).
-arc(r_0003_0022__said,utterance_0003_1003,arg1).
-arc(r_0003_0023__Noel_D._Matchett,r_0003_0036__and,prn5).
+arc(r_0003_0022__said,r_0003_0023__Noel__r_0003_0024__D__r_0003_0025__Matchett,arg0).
+arc(r_0003_0022__said,r_0003_1003__utterance,arg1).
+arc(r_0003_0023__Noel__r_0003_0024__D__r_0003_0025__Matchett,r_0003_0036__and,prn5).
 arc(r_0003_0029__staffer,r_0003_0028__former,attrib2).
-arc(r_0003_0029__staffer,r_0003_0033__National_Security_Agency,r_0003_0030__at).
-arc(r_0003_0033__National_Security_Agency,r_0003_0032__federal,attrib2).
+arc(r_0003_0029__staffer,r_0003_0033__National__r_0003_0034__Security_r_0003_0035__Agency,r_0003_0030__at).
+arc(r_0003_0033__National__r_0003_0034__Security_r_0003_0035__Agency,r_0003_0032__federal,attrib2).
 arc(r_0003_0036__and,r_0003_0029__staffer,conj1).
 arc(r_0003_0036__and,r_0003_0038__president,conj2).
 arc(r_0003_0038__president,r_0003_0037__now,quality1).
-arc(r_0003_0038__president,r_0003_0040__Information_Security_Inc._Silver_Spring_Md,r_0003_0039__of).
-arc(utterance_0003_1003,r_0003_0013__and,part1).
+arc(r_0003_0038__president,r_0003_0040__Information__r_0003_0041__Security_r_0003_0042__Inc__r_0003_0044__Silver_r_0003_0045__Spring_r_0003_0047__Md,r_0003_0039__of).
+arc(r_0003_1003__utterance,r_0003_0013__and,part1).
 arc(z_0003_1019,r_0003_0006__nations,genv).
 arc(z_0003_1019,r_0003_0018__own,attrib2).
 
 </pre>
 <br>
 <pre>
-fof(id_3_A_ANC_wsj_1640,axiom,
+fof(id__3_A_ANC_wsj_1640,axiom,
     ? [STATEX1,INFORMATIONX14,NATIONSX17,EVENTX29,CONJX22,CONJX21,EVENTX20,EVENTX13,OPERATORX8,ENTITYX23,ENTITYX24,ENTITYX27,NATIONSX4,ENTITYX15,ENTITYX16,INFORMATIONX10,US_COMPANIESX11,ATTRIBX25,ATTRIBX26,ATTRIBX18,ATTRIBX12,ATTRIBX5,ATTRIBX6,ATTRIBX7,QUALITYX28,QUALITYX9] :
       ( STATEX1 = CONJX22
-      &amp; isA(CONJX22,utterance_0003_1003)
+      &amp; isA(CONJX22,r_0003_1003__utterance)
       &amp; part1(CONJX22) = CONJX21
       &amp; isA(CONJX21,r_0003_0013__and)
       &amp; conj1(CONJX21) = EVENTX13
@@ -465,10 +465,10 @@ fof(id_3_A_ANC_wsj_1640,axiom,
       &amp; conj2(ENTITYX23) = ENTITYX27
       &amp; isA(ENTITYX24,r_0003_0029__staffer)
       &amp; attrib2(ENTITYX24) = ATTRIBX25
-      &amp; r_0003_0030__at(ENTITYX24) = r_0003_0033__National_Security_Agency
+      &amp; r_0003_0030__at(ENTITYX24) = r_0003_0033__National__r_0003_0034__Security_r_0003_0035__Agency
       &amp; isA(ENTITYX27,r_0003_0038__president)
       &amp; quality1(ENTITYX27) = QUALITYX28
-      &amp; r_0003_0039__of(ENTITYX27) = r_0003_0040__Information_Security_Inc._Silver_Spring_Md
+      &amp; r_0003_0039__of(ENTITYX27) = r_0003_0040__Information__r_0003_0041__Security_r_0003_0042__Inc__r_0003_0044__Silver_r_0003_0045__Spring_r_0003_0047__Md
       &amp; isA(ATTRIBX5,r_0003_0003__and)
       &amp; conj1(ATTRIBX5) = ATTRIBX6
       &amp; conj2(ATTRIBX5) = ATTRIBX7
@@ -476,20 +476,20 @@ fof(id_3_A_ANC_wsj_1640,axiom,
       &amp; isA(OPERATORX8,r_0003_0004__even)
       &amp; scope(OPERATORX8) = ATTRIBX7
       &amp; isA(ATTRIBX7,r_0003_0005__friendly)
-      &amp; isA(ATTRIBX12,r_0003_0011__U.S.)
+      &amp; isA(ATTRIBX12,r_0003_0011__U_S_)
       &amp; isA(ATTRIBX18,r_0003_0018__own)
       &amp; isA(ATTRIBX25,r_0003_0028__former)
       &amp; isA(ATTRIBX26,r_0003_0032__federal)
       &amp; isA(QUALITYX9,r_0003_0007__routinely)
       &amp; isA(QUALITYX28,r_0003_0037__now)
-      &amp; isA(r_0003_0023__Noel_D._Matchett,r_0003_0023__Noel_D._Matchett)
-      &amp; prn5(r_0003_0023__Noel_D._Matchett) = ENTITYX23
-      &amp; isA(r_0003_0033__National_Security_Agency,r_0003_0033__National_Security_Agency)
-      &amp; attrib2(r_0003_0033__National_Security_Agency) = ATTRIBX26
-      &amp; isA(r_0003_0040__Information_Security_Inc._Silver_Spring_Md,r_0003_0040__Information_Security_Inc._Silver_Spring_Md)
+      &amp; isA(r_0003_0023__Noel__r_0003_0024__D__r_0003_0025__Matchett,r_0003_0023__Noel_r_0003_0024__D__r_0003_0025__Matchett)
+      &amp; prn5(r_0003_0023__Noel__r_0003_0024__D__r_0003_0025__Matchett) = ENTITYX23
+      &amp; isA(r_0003_0033__National__r_0003_0034__Security_r_0003_0035__Agency,r_0003_0033__National_r_0003_0034__Security_r_0003_0035__Agency)
+      &amp; attrib2(r_0003_0033__National__r_0003_0034__Security_r_0003_0035__Agency) = ATTRIBX26
+      &amp; isA(r_0003_0040__Information__r_0003_0041__Security_r_0003_0042__Inc__r_0003_0044__Silver_r_0003_0045__Spring_r_0003_0047__Md,r_0003_0040__Information_r_0003_0041__Security_r_0003_0042__Inc__r_0003_0044__Silver_r_0003_0045__Spring_r_0003_0047__Md)
       &amp; isA(EVENTX29,r_0003_0022__said)
       &amp; arg1(EVENTX29) = STATEX1
-      &amp; arg0(EVENTX29) = r_0003_0023__Noel_D._Matchett ) ).
+      &amp; arg0(EVENTX29) = r_0003_0023__Noel__r_0003_0024__D__r_0003_0025__Matchett ) ).
 
 
 </pre>

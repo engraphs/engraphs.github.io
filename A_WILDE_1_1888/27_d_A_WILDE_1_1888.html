@@ -284,14 +284,14 @@ They have eyes like green beryls , and their roar is louder than the roar of the
 </svg>
 <br>
 <pre>
-arc(cnt_0134_1006,r_0134_0006__come,scope).
-arc(cnt_0134_1006,r_0134_0013__drink,restriction).
 arc(r_0134_0005__lions,r_0134_0004__yellow,attrib2).
 arc(r_0134_0006__come,r_0134_0002__noon,r_0134_0001__At_tmp).
 arc(r_0134_0006__come,r_0134_0005__lions,arg0).
 arc(r_0134_0006__come,r_0134_0011__edge,r_0134_0007__down_to_dir).
 arc(r_0134_0011__edge,r_0134_0009__water,genv).
 arc(r_0134_0013__drink,r_0134_0005__lions,arg0).
+arc(r_0134_1006__cnt,r_0134_0006__come,scope).
+arc(r_0134_1006__cnt,r_0134_0013__drink,restriction).
 arc(r_0135_0002__have,r_0134_0005__lions,arg0).
 arc(r_0135_0002__have,r_0135_0003__eyes,arg1).
 arc(r_0135_0003__eyes,r_0135_0006__beryls,r_0135_0004__like).
@@ -307,7 +307,7 @@ arc(r_0135_0015__roar,r_0135_0018__cataract,r_0135_0016__of).
 </pre>
 <br>
 <pre>
-fof(id_134_A_WILDE_1_1888__135_A_WILDE_1_1888,axiom,
+fof(id__134_A_WILDE_1_1888__135_A_WILDE_1_1888,axiom,
     ? [LIONSX12,LIONSX18,CONJX23,EVENTX22,EVENTX16,CONNX7,EVENTX8,EVENTX9,ENTITYX17,ENTITYX20,ENTITYX21,ENTITYX13,ENTITYX14,ENTITYX1,LIONSX2,ENTITYX4,ENTITYX5,ATTRIBX19,ATTRIBX15,ATTRIBX3] :
       ( isA(ENTITYX1,r_0134_0002__noon)
       &amp; isA(LIONSX2,r_0134_0005__lions)
@@ -330,7 +330,7 @@ fof(id_134_A_WILDE_1_1888__135_A_WILDE_1_1888,axiom,
       &amp; isA(ATTRIBX15,r_0135_0005__green)
       &amp; isA(ATTRIBX19,r_0135_0012__louder)
       &amp; r_0135_0013__than(ATTRIBX19) = ENTITYX20
-      &amp; isA(CONNX7,cnt_0134_1006)
+      &amp; isA(CONNX7,r_0134_1006__cnt)
       &amp; scope(CONNX7) = EVENTX9
       &amp; isA(EVENTX9,r_0134_0006__come)
       &amp; r_0134_0001__At_tmp(EVENTX9) = ENTITYX1

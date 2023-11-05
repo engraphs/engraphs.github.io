@@ -422,25 +422,25 @@ arc(r_0003_0010__starships,r_0003_0009__several,attrib1).
 arc(r_0003_0012__but,r_0003_0007__have,conj1).
 arc(r_0003_0012__but,r_0003_0014__lack,conj2).
 arc(r_0003_0014__lack,r_0002_0002__Resistance,arg0).
-arc(r_0003_0014__lack,r_0003_0017__power_sources,arg1).
-arc(r_0003_0017__power_sources,r_0003_0016__essential,attrib2).
-arc(r_0003_0017__power_sources,r_0003_0022__craft,r_0003_0019__for).
-arc(r_0003_0017__power_sources,r_0003_0024__Klyston_Pods,prn7).
+arc(r_0003_0014__lack,r_0003_0017__power__r_0003_0018__sources,arg1).
+arc(r_0003_0017__power__r_0003_0018__sources,r_0003_0016__essential,attrib2).
+arc(r_0003_0017__power__r_0003_0018__sources,r_0003_0022__craft,r_0003_0019__for).
+arc(r_0003_0017__power__r_0003_0018__sources,r_0003_0024__Klyston_r_0003_0025__Pods,prn7).
 arc(r_0003_0022__craft,r_0003_0021__formidable,attrib2).
 arc(r_0004_0002__have,r_0004_0003__been,catenative).
 arc(r_0004_0003__been,r_0004_0004__commissioned,catenative).
-arc(r_0004_0004__commissioned,r_0002_0002__Resistance,arg0_by_lgs).
+arc(r_0004_0004__commissioned,r_0002_0002__Resistance,arg0__r_0004_0005__by_lgs).
 arc(r_0004_0004__commissioned,r_0004_0001__You,arg2).
 arc(r_0004_0004__commissioned,r_0004_0009__steal,arg1).
-arc(r_0004_0009__steal,r_0003_0024__Klyston_Pods,arg1).
+arc(r_0004_0009__steal,r_0003_0024__Klyston__r_0003_0025__Pods,arg1).
 arc(r_0004_0009__steal,r_0004_0001__You,arg0).
-arc(r_0004_0009__steal,r_0004_0016__storage_panels,r_0004_0012__from_clr_dir).
-arc(r_0004_0016__storage_panels,r_0004_0014__Empire,genv).
+arc(r_0004_0009__steal,r_0004_0016__storage__r_0004_0017__panels,r_0004_0012__from_clr_dir).
+arc(r_0004_0016__storage__r_0004_0017__panels,r_0004_0014__Empire,genv).
 
 </pre>
 <br>
 <pre>
-fof(id_2_A_THRUST__3_A_THRUST__4_A_THRUST,axiom,
+fof(id__2_A_THRUST__3_A_THRUST__4_A_THRUST,axiom,
     ? [STATEX2,CATENATIVEX15,CATENATIVEX28,CATENATIVEX29,STATEX31,OFFENSIVEX13,RESISTANCEX14,RESISTANCEX20,RESISTANCEX30,KLYSTON_PODSX32,EVENTX38,EVENTX37,EVENTX36,EVENTX35,CONJX27,EVENTX26,EVENTX19,EVENTX18,EVENTX9,EVENTX8,ENTITYX33,ENTITYX34,ENTITYX21,ENTITYX23,KLYSTON_PODSX25,ENTITYX12,ENTITYX16,OFFENSIVEX5,ENTITYX7,QUALITYX1,ATTRIBX22,ATTRIBX24,ATTRIBX17,ATTRIBX6] :
       ( STATEX2 = EVENTX8
       &amp; isA(EVENTX8,r_0002_0006__launch)
@@ -455,7 +455,7 @@ fof(id_2_A_THRUST__3_A_THRUST__4_A_THRUST,axiom,
       &amp; catenative(EVENTX37) = CATENATIVEX29
       &amp; CATENATIVEX29 = EVENTX36
       &amp; isA(EVENTX36,r_0004_0004__commissioned)
-      &amp; arg0_by_lgs(EVENTX36) = RESISTANCEX30
+      &amp; arg0__r_0004_0005__by_lgs(EVENTX36) = RESISTANCEX30
       &amp; arg2(EVENTX36) = r_0004_0001__You
       &amp; arg1(EVENTX36) = STATEX31
       &amp; STATEX31 = EVENTX35
@@ -473,16 +473,16 @@ fof(id_2_A_THRUST__3_A_THRUST__4_A_THRUST,axiom,
       &amp; isA(ENTITYX16,r_0003_0010__starships)
       &amp; attrib1(ENTITYX16) = ATTRIBX17
       &amp; RESISTANCEX20 = r_0002_0002__Resistance
-      &amp; isA(ENTITYX21,r_0003_0017__power_sources)
+      &amp; isA(ENTITYX21,r_0003_0017__power__r_0003_0018__sources)
       &amp; attrib2(ENTITYX21) = ATTRIBX22
       &amp; r_0003_0019__for(ENTITYX21) = ENTITYX23
       &amp; prn7(ENTITYX21) = KLYSTON_PODSX25
       &amp; isA(ENTITYX23,r_0003_0022__craft)
       &amp; attrib2(ENTITYX23) = ATTRIBX24
-      &amp; isA(KLYSTON_PODSX25,r_0003_0024__Klyston_Pods)
+      &amp; isA(KLYSTON_PODSX25,r_0003_0024__Klyston__r_0003_0025__Pods)
       &amp; RESISTANCEX30 = r_0002_0002__Resistance
       &amp; KLYSTON_PODSX32 = KLYSTON_PODSX25
-      &amp; isA(ENTITYX33,r_0004_0016__storage_panels)
+      &amp; isA(ENTITYX33,r_0004_0016__storage__r_0004_0017__panels)
       &amp; genv(ENTITYX33) = ENTITYX34
       &amp; isA(ENTITYX34,r_0004_0014__Empire)
       &amp; isA(r_0002_0002__Resistance,r_0002_0002__Resistance)

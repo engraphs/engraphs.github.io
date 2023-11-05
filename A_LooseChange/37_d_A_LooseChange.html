@@ -49,9 +49,9 @@
 <!-- 0075_0003&#45;&gt;0075_0002 -->
 <g id="edge1" class="edge">
 <title>0075_0003&#45;&gt;0075_0002</title>
-<path fill="none" stroke="black" d="M85.93,-88.01C77.59,-75.59 65.88,-58.13 56.33,-43.88"/>
-<polygon fill="black" stroke="black" points="59.18,-41.85 50.71,-35.5 53.37,-45.75 59.18,-41.85"/>
-<text text-anchor="middle" x="87.15" y="-57.8" font-family="fixed" font-size="14.00">[loc]</text>
+<path fill="none" stroke="black" d="M79.6,-90.68C72.71,-84.64 65.11,-77.04 59.65,-69 54.84,-61.93 50.92,-53.54 47.86,-45.66"/>
+<polygon fill="black" stroke="black" points="51.11,-44.35 44.45,-36.11 44.52,-46.7 51.11,-44.35"/>
+<text text-anchor="middle" x="96.15" y="-57.8" font-family="fixed" font-size="14.00">[prd2][loc]</text>
 </g>
 <!-- z_0075_1005 -->
 <g id="node3" class="node">
@@ -62,9 +62,9 @@
 <!-- 0075_0003&#45;&gt;z_0075_1005 -->
 <g id="edge2" class="edge">
 <title>0075_0003&#45;&gt;z_0075_1005</title>
-<path fill="none" stroke="black" d="M107.28,-88.41C115.73,-76.03 127.72,-58.47 137.52,-44.11"/>
-<polygon fill="black" stroke="black" points="140.54,-45.89 143.28,-35.65 134.76,-41.94 140.54,-45.89"/>
-<text text-anchor="middle" x="150.15" y="-57.8" font-family="fixed" font-size="14.00">[arg0]</text>
+<path fill="none" stroke="black" d="M113.08,-90.52C119.76,-84.45 127.18,-76.88 132.65,-69 137.59,-61.88 141.81,-53.47 145.19,-45.6"/>
+<polygon fill="black" stroke="black" points="148.54,-46.64 149.02,-36.05 142.05,-44.03 148.54,-46.64"/>
+<text text-anchor="middle" x="162.15" y="-57.8" font-family="fixed" font-size="14.00">[arg0]</text>
 </g>
 <!-- question_0075_1002 -->
 <g id="node4" class="node">
@@ -83,21 +83,21 @@
 </svg>
 <br>
 <pre>
-arc(question_0075_1002,r_0075_0003__is,scope).
-arc(r_0075_0003__is,r_0075_0002__Where,loc1).
+arc(r_0075_0003__is,r_0075_0002__Where,prd2_loc1).
 arc(r_0075_0003__is,z_0075_1005,arg0).
+arc(r_0075_1002__question,r_0075_0003__is,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_75_A_LooseChange,axiom,
+fof(id__75_A_LooseChange,axiom,
     ? [OPERATORX2,EVENTX6,QUALITYX3,ENTITYX4] :
       ( isA(QUALITYX3,r_0075_0002__Where)
       &amp; isA(ENTITYX4,z_0075_1005)
-      &amp; isA(OPERATORX2,question_0075_1002)
+      &amp; isA(OPERATORX2,r_0075_1002__question)
       &amp; scope(OPERATORX2) = EVENTX6
       &amp; isA(EVENTX6,r_0075_0003__is)
-      &amp; loc1(EVENTX6) = QUALITYX3
+      &amp; prd2_loc1(EVENTX6) = QUALITYX3
       &amp; arg0(EVENTX6) = ENTITYX4 ) ).
 
 
@@ -110,15 +110,15 @@ fof(id_75_A_LooseChange,axiom,
 <line x1="61.44" y1="122" x2="61.44" y2="153" style="stroke:#000000;stroke-width:2;"/>
 <line x1="360.72" y1="61" x2="60" y2="92" style="stroke:#000000;stroke-width:2;"/>
 <text x="300.72" y="112" text-anchor="middle">IP-SUB</text>
-<text x="180.96" y="173" text-anchor="middle">ADVP-LOC</text>
+<text x="181.56" y="173" text-anchor="middle">ADVP-PRD2-LOC</text>
 <text x="180.6" y="234" text-anchor="middle">WADV</text>
 <text x="180.6" y="295" text-anchor="middle">Where</text>
 <line x1="180.6" y1="244" x2="180.6" y2="275" style="stroke:#000000;stroke-width:2;"/>
-<line x1="180.96" y1="183" x2="180" y2="214" style="stroke:#000000;stroke-width:2;"/>
+<line x1="181.56" y1="183" x2="180" y2="214" style="stroke:#000000;stroke-width:2;"/>
 <line x1="300.72" y1="122" x2="180" y2="153" style="stroke:#000000;stroke-width:2;"/>
-<text x="300.36" y="173" text-anchor="middle">BEP</text>
-<text x="300.36" y="234" text-anchor="middle">is</text>
-<line x1="300.36" y1="183" x2="300.36" y2="214" style="stroke:#000000;stroke-width:2;"/>
+<text x="300.84" y="173" text-anchor="middle">BEP;~La</text>
+<text x="300.84" y="234" text-anchor="middle">is</text>
+<line x1="300.84" y1="183" x2="300.84" y2="214" style="stroke:#000000;stroke-width:2;"/>
 <line x1="300.72" y1="122" x2="300" y2="153" style="stroke:#000000;stroke-width:2;"/>
 <text x="420.72" y="173" text-anchor="middle">NP-SBJ</text>
 <text x="420.72" y="234" text-anchor="middle">P-ROLE</text>
@@ -139,8 +139,8 @@ fof(id_75_A_LooseChange,axiom,
 <br>
 <pre>
 ( (CP-QUE (PULQ &lt;lquo&gt;)
-          (IP-SUB (ADVP-LOC (WADV Where;{where}))
-                  (BEP is;{be})
+          (IP-SUB (ADVP-PRD2-LOC (WADV Where;{where}))
+                  (BEP;~La is;{be})
                   (NP-SBJ (P-ROLE that;{that})))
           (PUNC ?)
           (PURQ &lt;rquo&gt;))

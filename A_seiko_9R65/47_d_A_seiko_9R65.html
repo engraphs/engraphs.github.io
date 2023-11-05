@@ -379,7 +379,7 @@ Due to the difference in position , the area where the shaft of the balance cont
 <title>0063_0020&#45;&gt;0063_0001</title>
 <path fill="none" stroke="black" d="M829.73,-434.8C829.05,-423.16 828.13,-407.55 827.35,-394.24"/>
 <polygon fill="black" stroke="black" points="830.84,-393.95 826.75,-384.18 823.85,-394.36 830.84,-393.95"/>
-<text text-anchor="middle" x="849.24" y="-405.8" font-family="fixed" font-size="14.00">[prd2]</text>
+<text text-anchor="middle" x="844.24" y="-405.8" font-family="fixed" font-size="14.00">[cnt]</text>
 </g>
 <!-- 0063_0020&#45;&gt;0063_0009 -->
 <g id="edge26" class="edge">
@@ -474,7 +474,7 @@ arc(r_0061_0003__watches,r_0061_0002__mechanical,attrib1).
 arc(r_0061_0007__is,r_0061_0003__watches,r_0061_0001__For_rst).
 arc(r_0061_0007__is,r_0061_0008__influenced,catenative).
 arc(r_0061_0008__influenced,r_0061_0006__accuracy,arg1).
-arc(r_0061_0008__influenced,r_0061_0012__difference,arg0_even_by_lgs).
+arc(r_0061_0008__influenced,r_0061_0012__difference,arg0__r_0061_0009__even_r_0061_0010__by_lgs).
 arc(r_0061_0012__difference,r_0061_0015__or,r_0061_0013__in).
 arc(r_0061_0015__or,r_0061_0014__position,conj1).
 arc(r_0061_0015__or,r_0061_0016__direction,conj2).
@@ -482,7 +482,7 @@ arc(r_0061_0015__or,r_0061_0019__watch,r_0061_0017__of).
 arc(r_0062_0002__is,r_0062_0003__also,catenative).
 arc(r_0062_0003__also,r_0062_0004__caused,scope).
 arc(r_0062_0004__caused,r_0061_0008__influenced,arg1).
-arc(r_0062_0004__caused,r_0062_0007__balance,arg0_by_lgs).
+arc(r_0062_0004__caused,r_0062_0007__balance,arg0__r_0062_0005__by_lgs).
 arc(r_0062_0009__controls,r_0062_0007__balance,arg0).
 arc(r_0062_0009__controls,r_0062_0011__accuracy,arg1).
 arc(r_0062_0011__accuracy,r_0062_0014__watches,r_0062_0012__of).
@@ -494,7 +494,7 @@ arc(r_0063_0016__contacts,r_0063_0009__area,loc1).
 arc(r_0063_0016__contacts,r_0063_0012__shaft,arg0).
 arc(r_0063_0016__contacts,r_0063_0019__parts,r_0063_0017__with_com).
 arc(r_0063_0019__parts,r_0063_0018__other,attrib1).
-arc(r_0063_0020__differs,r_0063_0001__Due,prd2).
+arc(r_0063_0020__differs,r_0063_0001__Due,cnt1).
 arc(r_0063_0020__differs,r_0063_0009__area,arg0).
 arc(r_0063_0022__and,r_0063_0020__differs,conj1).
 arc(r_0063_0022__and,r_0063_0027__influence,conj2).
@@ -506,17 +506,17 @@ arc(r_0063_0027__influence,r_0063_0029__accuracy,arg1).
 </pre>
 <br>
 <pre>
-fof(id_61_A_seiko_9R65__62_A_seiko_9R65__63_A_seiko_9R65,axiom,
+fof(id__61_A_seiko_9R65__62_A_seiko_9R65__63_A_seiko_9R65,axiom,
     ? [ACCURACY_INFLUENCEX4,CATENATIVEX13,ACCURACY_INFLUENCEX12,BALANCEX29,CONJX39,EVENTX38,EVENTX33,EVENTX32,EVENTX21,OPERATORX14,EVENTX20,EVENTX19,EVENTX11,ACCURACY_INFLUENCEX10,ENTITYX34,ENTITYX37,ENTITYX36,ENTITYX27,ENTITYX28,ENTITYX30,ENTITYX25,ENTITYX26,BALANCEX15,ENTITYX16,ENTITYX17,ENTITYX1,ENTITYX3,ENTITYX5,ENTITYX6,ENTITYX7,ENTITYX8,ENTITYX9,ATTRIBX35,ATTRIBX24,ATTRIBX31,ATTRIBX18,ATTRIBX2] :
       ( ACCURACY_INFLUENCEX4 = ACCURACY_INFLUENCEX10
       &amp; isA(ACCURACY_INFLUENCEX10,r_0061_0008__influenced)
-      &amp; arg0_even_by_lgs(ACCURACY_INFLUENCEX10) = ENTITYX5
+      &amp; arg0__r_0061_0009__even_r_0061_0010__by_lgs(ACCURACY_INFLUENCEX10) = ENTITYX5
       &amp; arg1(ACCURACY_INFLUENCEX10) = ENTITYX3
       &amp; CATENATIVEX13 = OPERATORX14
       &amp; isA(OPERATORX14,r_0062_0003__also)
       &amp; scope(OPERATORX14) = EVENTX20
       &amp; isA(EVENTX20,r_0062_0004__caused)
-      &amp; arg0_by_lgs(EVENTX20) = BALANCEX15
+      &amp; arg0__r_0062_0005__by_lgs(EVENTX20) = BALANCEX15
       &amp; arg1(EVENTX20) = ACCURACY_INFLUENCEX12
       &amp; isA(ENTITYX1,r_0061_0003__watches)
       &amp; attrib1(ENTITYX1) = ATTRIBX2
@@ -572,7 +572,7 @@ fof(id_61_A_seiko_9R65__62_A_seiko_9R65__63_A_seiko_9R65,axiom,
       &amp; conj1(CONJX39) = EVENTX33
       &amp; isA(EVENTX33,r_0063_0020__differs)
       &amp; arg0(EVENTX33) = ENTITYX27
-      &amp; prd2(EVENTX33) = ATTRIBX24
+      &amp; cnt1(EVENTX33) = ATTRIBX24
       &amp; arg0(EVENTX33) = ENTITYX27
       &amp; conj2(CONJX39) = EVENTX38
       &amp; isA(EVENTX38,r_0063_0027__influence)
@@ -832,11 +832,11 @@ fof(id_61_A_seiko_9R65__62_A_seiko_9R65__63_A_seiko_9R65,axiom,
 <text x="1800.72" y="51" text-anchor="middle">IP-MAT</text>
 <text x="1740.48" y="112" text-anchor="middle">ILYR</text>
 <text x="1200.48" y="173" text-anchor="middle">ILYR</text>
-<text x="361.08" y="234" text-anchor="middle">ADJP-PRD2</text>
+<text x="360.96" y="234" text-anchor="middle">ADJP-CNT</text>
 <text x="60.36" y="295" text-anchor="middle">ADJ</text>
 <text x="60.36" y="356" text-anchor="middle">Due</text>
 <line x1="60.36" y1="305" x2="60.36" y2="336" style="stroke:#000000;stroke-width:2;"/>
-<line x1="361.08" y1="244" x2="60" y2="275" style="stroke:#000000;stroke-width:2;"/>
+<line x1="360.96" y1="244" x2="60" y2="275" style="stroke:#000000;stroke-width:2;"/>
 <text x="420.24" y="295" text-anchor="middle">PP</text>
 <text x="180.72" y="356" text-anchor="middle">P-ROLE</text>
 <text x="180.72" y="417" text-anchor="middle">to</text>
@@ -864,7 +864,7 @@ fof(id_61_A_seiko_9R65__62_A_seiko_9R65__63_A_seiko_9R65,axiom,
 <line x1="600.24" y1="427" x2="660" y2="458" style="stroke:#000000;stroke-width:2;"/>
 <line x1="480.24" y1="366" x2="600" y2="397" style="stroke:#000000;stroke-width:2;"/>
 <line x1="420.24" y1="305" x2="480" y2="336" style="stroke:#000000;stroke-width:2;"/>
-<line x1="361.08" y1="244" x2="420" y2="275" style="stroke:#000000;stroke-width:2;"/>
+<line x1="360.96" y1="244" x2="420" y2="275" style="stroke:#000000;stroke-width:2;"/>
 <line x1="1200.48" y1="183" x2="360" y2="214" style="stroke:#000000;stroke-width:2;"/>
 <text x="780.48" y="234" text-anchor="middle">PUNC</text>
 <text x="780.48" y="295" text-anchor="middle">,</text>
@@ -936,7 +936,7 @@ fof(id_61_A_seiko_9R65__62_A_seiko_9R65__63_A_seiko_9R65,axiom,
 <line x1="1680.72" y1="305" x2="2100" y2="336" style="stroke:#000000;stroke-width:2;"/>
 <line x1="1560.72" y1="244" x2="1680" y2="275" style="stroke:#000000;stroke-width:2;"/>
 <line x1="1200.48" y1="183" x2="1560" y2="214" style="stroke:#000000;stroke-width:2;"/>
-<text x="2340.84" y="234" text-anchor="middle">VBP</text>
+<text x="2340.84" y="234" text-anchor="middle">VBP;~I</text>
 <text x="2340.84" y="295" text-anchor="middle">differs</text>
 <line x1="2340.84" y1="244" x2="2340.84" y2="275" style="stroke:#000000;stroke-width:2;"/>
 <line x1="1200.48" y1="183" x2="2340" y2="214" style="stroke:#000000;stroke-width:2;"/>
@@ -999,12 +999,12 @@ fof(id_61_A_seiko_9R65__62_A_seiko_9R65__63_A_seiko_9R65,axiom,
 </svg>
 <br>
 <pre>
-( (IP-MAT (ILYR (ILYR (ADJP-PRD2 (ADJ Due;{due})
-                                 (PP (P-ROLE to;{to})
-                                     (NP (D the;{the})
-                                         (N difference;{difference})
-                                         (PP (P-ROLE in;{in})
-                                             (NP (N position;{position}))))))
+( (IP-MAT (ILYR (ILYR (ADJP-CNT (ADJ Due;{due})
+                                (PP (P-ROLE to;{to})
+                                    (NP (D the;{the})
+                                        (N difference;{difference})
+                                        (PP (P-ROLE in;{in})
+                                            (NP (N position;{position}))))))
                       (PUNC ,)
                       (NP-SBJ (D the;{the})
                               (N area;{area})
@@ -1018,7 +1018,7 @@ fof(id_61_A_seiko_9R65__62_A_seiko_9R65__63_A_seiko_9R65,axiom,
                                       (PP-COM (P-ROLE with;{with})
                                               (NP (ADJP (ADJ other;{other}))
                                                   (NS parts;{part})))))
-                      (VBP differs;{differ}))
+                      (VBP;~I differs;{differ}))
                 (PUNC ,)
                 (CONJP (CONJ and;{and})
                        (ILYR (NP-SBJ (ADJP (ADJ;_such_ such;{such}))

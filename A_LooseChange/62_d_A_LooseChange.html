@@ -163,26 +163,26 @@ I found a tissue and used it to wipe my sweating palms .
 </svg>
 <br>
 <pre>
-arc(cnt_0116_1004,r_0116_0006__used,scope).
-arc(cnt_0116_1004,r_0116_0009__wipe,restriction).
 arc(r_0116_0002__found,r_0116_0001__I,arg0).
 arc(r_0116_0002__found,r_0116_0004__tissue,arg1).
-arc(r_0116_0005__and,cnt_0116_1004,conj2).
 arc(r_0116_0005__and,r_0116_0002__found,conj1).
+arc(r_0116_0005__and,r_0116_1004__cnt,conj2).
 arc(r_0116_0006__used,r_0116_0001__I,arg0).
 arc(r_0116_0006__used,r_0116_0004__tissue,arg1).
 arc(r_0116_0009__wipe,r_0116_0004__tissue,arg0).
-arc(r_0116_0009__wipe,r_0116_0011__sweating_palms,arg1).
-arc(r_0116_0011__sweating_palms,r_0116_0001__I,genv).
+arc(r_0116_0009__wipe,r_0116_0011__sweating__r_0116_0012__palms,arg1).
+arc(r_0116_0011__sweating__r_0116_0012__palms,r_0116_0001__I,genv).
+arc(r_0116_1004__cnt,r_0116_0006__used,scope).
+arc(r_0116_1004__cnt,r_0116_0009__wipe,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_116_A_LooseChange,axiom,
+fof(id__116_A_LooseChange,axiom,
     ? [TISSUEX3,SPEAKERX7,CONJX10,CONNX5,EVENTX8,EVENTX9,EVENTX2,ENTITYX6,TISSUEX1] :
       ( isA(TISSUEX1,r_0116_0004__tissue)
       &amp; TISSUEX3 = TISSUEX1
-      &amp; isA(ENTITYX6,r_0116_0011__sweating_palms)
+      &amp; isA(ENTITYX6,r_0116_0011__sweating__r_0116_0012__palms)
       &amp; genv(ENTITYX6) = SPEAKERX7
       &amp; SPEAKERX7 = r_0116_0001__I
       &amp; isA(CONJX10,r_0116_0005__and)
@@ -191,7 +191,7 @@ fof(id_116_A_LooseChange,axiom,
       &amp; arg0(EVENTX2) = r_0116_0001__I
       &amp; arg1(EVENTX2) = TISSUEX1
       &amp; conj2(CONJX10) = CONNX5
-      &amp; isA(CONNX5,cnt_0116_1004)
+      &amp; isA(CONNX5,r_0116_1004__cnt)
       &amp; scope(CONNX5) = EVENTX9
       &amp; isA(EVENTX9,r_0116_0006__used)
       &amp; arg0(EVENTX9) = r_0116_0001__I

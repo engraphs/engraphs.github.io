@@ -260,35 +260,35 @@ All of these corpora allow precision searching , and inviting interfaces have be
 </svg>
 <br>
 <pre>
-arc(cnt_0022_1012,r_0022_0014__developed,scope).
-arc(cnt_0022_1012,r_0022_0016__make,restriction).
-arc(r_0022_0001__quantificational__All,r_0022_0005__allow,scope).
-arc(r_0022_0001__quantificational__All,z_0022_1004,restriction).
-arc(r_0022_0005__allow,r_0022_0006__precision_searching,arg1).
+arc(r_0022_0001__quantificational__r_0022_0001__All,r_0022_0005__allow,scope).
+arc(r_0022_0001__quantificational__r_0022_0001__All,z_0022_1004,restriction).
+arc(r_0022_0005__allow,r_0022_0006__precision__r_0022_0007__searching,arg1).
 arc(r_0022_0005__allow,z_0022_1004,arg0).
-arc(r_0022_0009__and,r_0022_0001__quantificational__All,conj1).
+arc(r_0022_0009__and,r_0022_0001__quantificational__r_0022_0001__All,conj1).
 arc(r_0022_0009__and,r_0022_0012__have,conj2).
 arc(r_0022_0011__interfaces,r_0022_0010__inviting,attrib1).
 arc(r_0022_0012__have,r_0022_0013__been,catenative).
-arc(r_0022_0013__been,cnt_0022_1012,catenative).
+arc(r_0022_0013__been,r_0022_1012__cnt,catenative).
 arc(r_0022_0014__developed,r_0022_0011__interfaces,arg1).
 arc(r_0022_0016__make,r_0022_0011__interfaces,arg0).
 arc(r_0022_0016__make,r_0022_0019__convenient,prd).
 arc(r_0022_0016__make,z_0022_1004,arg1).
 arc(r_0022_0019__convenient,r_0022_0018__as,quality1).
 arc(r_0022_0019__convenient,r_0022_0021__possible,r_0022_0020__as).
+arc(r_0022_1012__cnt,r_0022_0014__developed,scope).
+arc(r_0022_1012__cnt,r_0022_0016__make,restriction).
 arc(z_0022_1004,r_0022_0004__corpora,r_0022_0002__of).
 
 </pre>
 <br>
 <pre>
-fof(id_22_A_NINJAL_mission,axiom,
+fof(id__22_A_NINJAL_mission,axiom,
     ? [CATENATIVEX9,CATENATIVEX10,CORPORAX14,CONJX22,EVENTX21,EVENTX20,CONNX13,EVENTX18,EVENTX19,QUANTX2,EVENTX6,ENTITYX7,CORPORAX1,ENTITYX5,ENTITYX3,ATTRIBX15,ATTRIBX17,ATTRIBX8,QUALITYX16] :
       ( CATENATIVEX9 = EVENTX20
       &amp; isA(EVENTX20,r_0022_0013__been)
       &amp; catenative(EVENTX20) = CATENATIVEX10
       &amp; CATENATIVEX10 = CONNX13
-      &amp; isA(CONNX13,cnt_0022_1012)
+      &amp; isA(CONNX13,r_0022_1012__cnt)
       &amp; scope(CONNX13) = EVENTX19
       &amp; isA(EVENTX19,r_0022_0014__developed)
       &amp; arg1(EVENTX19) = ENTITYX7
@@ -298,7 +298,7 @@ fof(id_22_A_NINJAL_mission,axiom,
       &amp; arg1(EVENTX18) = CORPORAX14
       &amp; prd(EVENTX18) = ATTRIBX15
       &amp; isA(ENTITYX3,r_0022_0004__corpora)
-      &amp; isA(ENTITYX5,r_0022_0006__precision_searching)
+      &amp; isA(ENTITYX5,r_0022_0006__precision__r_0022_0007__searching)
       &amp; isA(ENTITYX7,r_0022_0011__interfaces)
       &amp; attrib1(ENTITYX7) = ATTRIBX8
       &amp; CORPORAX14 = CORPORAX1
@@ -310,7 +310,7 @@ fof(id_22_A_NINJAL_mission,axiom,
       &amp; isA(QUALITYX16,r_0022_0018__as)
       &amp; isA(CONJX22,r_0022_0009__and)
       &amp; conj1(CONJX22) = QUANTX2
-      &amp; isA(QUANTX2,r_0022_0001__quantificational__All)
+      &amp; isA(QUANTX2,r_0022_0001__quantificational__r_0022_0001__All)
       &amp; restriction(QUANTX2) = CORPORAX1
       &amp; isA(CORPORAX1,z_0022_1004)
       &amp; r_0022_0002__of(CORPORAX1) = ENTITYX3

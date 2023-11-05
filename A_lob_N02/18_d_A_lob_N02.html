@@ -161,25 +161,25 @@
 </svg>
 <br>
 <pre>
-arc(question_0052_1005,r_0052_0003__dare,scope).
 arc(r_0052_0003__dare,r_0052_0005__say,scope).
 arc(r_0052_0005__say,r_0052_0002__How,mnr1).
 arc(r_0052_0005__say,r_0052_0004__you,arg0).
 arc(r_0052_0005__say,r_0052_0008__thing,arg1).
 arc(r_0052_0008__thing,r_0052_0006__such,attrib1).
 arc(r_0052_0012__blazed,r_0052_0011__she,arg0).
-arc(r_0052_0012__blazed,utterance_0052_1003,arg1).
-arc(utterance_0052_1003,question_0052_1005,part1).
+arc(r_0052_0012__blazed,r_0052_1003__utterance,arg1).
+arc(r_0052_1003__utterance,r_0052_1005__question,part1).
+arc(r_0052_1005__question,r_0052_0003__dare,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_52_A_lob_N02,axiom,
+fof(id__52_A_lob_N02,axiom,
     ? [STATEX1,EVENTX12,CONJX11,OPERATORX5,OPERATORX9,EVENTX10,QUALITYX6,ENTITYX7,ATTRIBX8] :
       ( STATEX1 = CONJX11
-      &amp; isA(CONJX11,utterance_0052_1003)
+      &amp; isA(CONJX11,r_0052_1003__utterance)
       &amp; part1(CONJX11) = OPERATORX5
-      &amp; isA(OPERATORX5,question_0052_1005)
+      &amp; isA(OPERATORX5,r_0052_1005__question)
       &amp; scope(OPERATORX5) = OPERATORX9
       &amp; isA(OPERATORX9,r_0052_0003__dare)
       &amp; scope(OPERATORX9) = EVENTX10

@@ -272,13 +272,11 @@ The new culture spread throughout the Mediterranean , helped by a huge increase 
 </svg>
 <br>
 <pre>
-arc(abs_0034_1003,r_0034_0004__spread,scope).
-arc(abs_0034_1003,r_0034_0009__helped,restriction).
 arc(r_0034_0003__culture,r_0034_0002__new,attrib2).
 arc(r_0034_0004__spread,r_0034_0003__culture,arg0).
 arc(r_0034_0004__spread,r_0034_0007__Mediterranean,r_0034_0005__throughout_clr_dir).
 arc(r_0034_0009__helped,r_0034_0003__culture,arg1).
-arc(r_0034_0009__helped,r_0034_0013__increase,arg0_by_lgs).
+arc(r_0034_0009__helped,r_0034_0013__increase,arg0__r_0034_0010__by_lgs).
 arc(r_0034_0013__increase,r_0034_0012__huge,attrib2).
 arc(r_0034_0013__increase,r_0034_0015__migration,r_0034_0014__in).
 arc(r_0034_0015__migration,r_0034_0018__mainland,r_0034_0016__from).
@@ -290,11 +288,13 @@ arc(r_0034_0027__city,r_0034_0026__Greek,attrib2).
 arc(r_0034_0027__city,r_0034_0031__coast,r_0034_0028__on).
 arc(r_0034_0031__coast,r_0034_0030__African,attrib2).
 arc(r_0034_0031__coast,r_0034_0034__Mediterranean,r_0034_0032__of).
+arc(r_0034_1003__abs,r_0034_0004__spread,scope).
+arc(r_0034_1003__abs,r_0034_0009__helped,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_34_A_ANC_HistoryOfGreece,axiom,
+fof(id__34_A_ANC_HistoryOfGreece,axiom,
     ? [CONNX4,EVENTX15,SPREADX16,ENTITYX1,ENTITYX5,ENTITYX7,ENTITYX8,ENTITYX9,ENTITYX11,ENTITYX13,ATTRIBX6,ATTRIBX10,ATTRIBX12,ATTRIBX14,ATTRIBX2] :
       ( isA(ENTITYX1,r_0034_0003__culture)
       &amp; attrib2(ENTITYX1) = ATTRIBX2
@@ -323,14 +323,14 @@ fof(id_34_A_ANC_HistoryOfGreece,axiom,
       &amp; isA(r_0034_0023__Carthage,r_0034_0023__Carthage)
       &amp; prn3(r_0034_0023__Carthage) = ENTITYX11
       &amp; isA(r_0034_0034__Mediterranean,r_0034_0034__Mediterranean)
-      &amp; isA(CONNX4,abs_0034_1003)
+      &amp; isA(CONNX4,r_0034_1003__abs)
       &amp; scope(CONNX4) = SPREADX16
       &amp; isA(SPREADX16,r_0034_0004__spread)
       &amp; arg0(SPREADX16) = ENTITYX1
       &amp; r_0034_0005__throughout_clr_dir(SPREADX16) = r_0034_0007__Mediterranean
       &amp; restriction(CONNX4) = EVENTX15
       &amp; isA(EVENTX15,r_0034_0009__helped)
-      &amp; arg0_by_lgs(EVENTX15) = ENTITYX5
+      &amp; arg0__r_0034_0010__by_lgs(EVENTX15) = ENTITYX5
       &amp; arg1(EVENTX15) = ENTITYX1 ) ).
 
 

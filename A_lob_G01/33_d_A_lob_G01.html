@@ -369,9 +369,9 @@ In the event , the first poll-tax of 1377 ( also called the &lsquo; tallage of g
 </svg>
 <br>
 <pre>
-arc(r_0041_0006__first_poll_tax,r_0041_0009__1377,r_0041_0008__of).
+arc(r_0041_0006__first__r_0041_0007__poll_tax,r_0041_0009__1377,r_0041_0008__of).
 arc(r_0041_0011__also,r_0041_0012__called,scope).
-arc(r_0041_0012__called,r_0041_0006__first_poll_tax,arg1).
+arc(r_0041_0012__called,r_0041_0006__first__r_0041_0007__poll_tax,arg1).
 arc(r_0041_0012__called,r_0041_0015__tallage,prd).
 arc(r_0041_0015__tallage,r_0041_0017__groats,r_0041_0016__of).
 arc(r_0041_0020__while_cnt,r_0041_0021__naturally,restriction).
@@ -380,25 +380,25 @@ arc(r_0041_0021__naturally,r_0041_0022__rousing,scope).
 arc(r_0041_0022__rousing,r_0041_0024__resentment,arg1).
 arc(r_0041_0024__resentment,r_0041_0023__much,attrib1).
 arc(r_0041_0026__produced,r_0041_0003__event,r_0041_0001__In_mod).
-arc(r_0041_0026__produced,r_0041_0006__first_poll_tax,arg0).
+arc(r_0041_0026__produced,r_0041_0006__first__r_0041_0007__poll_tax,arg0).
 arc(r_0041_0026__produced,r_0041_0029__returns,arg1).
 arc(r_0041_0028__meagre,r_0041_0027__but,quality1).
 arc(r_0041_0029__returns,r_0041_0028__meagre,attrib1).
 arc(r_0041_0032__was,r_0041_0033__as_yet,tmp3).
 arc(r_0041_0032__was,r_0041_0038__make,catenative).
-arc(r_0041_0034__quantificational__no,r_0041_0032__was,scope).
-arc(r_0041_0034__quantificational__no,r_0041_0036__bureaucracy,restriction).
+arc(r_0041_0034__quantificational__r_0041_0034__no,r_0041_0032__was,scope).
+arc(r_0041_0034__quantificational__r_0041_0034__no,r_0041_0036__bureaucracy,restriction).
 arc(r_0041_0036__bureaucracy,r_0041_0035__trained,attrib2).
 arc(r_0041_0038__make,r_0041_0036__bureaucracy,arg0).
-arc(r_0041_0038__make,r_0041_0039__tax_collecting,arg1).
-arc(r_0041_0038__make,r_0041_0041__either_or,prd).
-arc(r_0041_0041__either_or,r_0041_0042__fair,conj1).
-arc(r_0041_0041__either_or,r_0041_0044__productive,conj2).
+arc(r_0041_0038__make,r_0041_0039__tax__r_0041_0040__collecting,arg1).
+arc(r_0041_0038__make,r_0041_0041__either__r_0041_0043__or,prd).
+arc(r_0041_0041__either__r_0041_0043__or,r_0041_0042__fair,conj1).
+arc(r_0041_0041__either__r_0041_0043__or,r_0041_0044__productive,conj2).
 
 </pre>
 <br>
 <pre>
-fof(id_41_A_lob_G01,axiom,
+fof(id__41_A_lob_G01,axiom,
     ? [STATEX24,QUANTX22,EVENTX30,EVENTX29,CONNX9,EVENTX19,OPERATORX12,EVENTX15,OPERATORX5,EVENTX8,ENTITYX21,ENTITYX25,ENTITYX1,ENTITYX2,ENTITYX16,ENTITYX13,ENTITYX3,ENTITYX6,ENTITYX7,ATTRIBX26,ATTRIBX27,ATTRIBX28,ATTRIBX23,ATTRIBX17,ATTRIBX14,QUALITYX20,QUALITYX18] :
       ( STATEX24 = EVENTX29
       &amp; isA(EVENTX29,r_0041_0038__make)
@@ -411,7 +411,7 @@ fof(id_41_A_lob_G01,axiom,
       &amp; isA(EVENTX8,r_0041_0012__called)
       &amp; arg1(EVENTX8) = ENTITYX2
       &amp; prd(EVENTX8) = ENTITYX6
-      &amp; isA(ENTITYX2,r_0041_0006__first_poll_tax)
+      &amp; isA(ENTITYX2,r_0041_0006__first__r_0041_0007__poll_tax)
       &amp; r_0041_0008__of(ENTITYX2) = ENTITYX3
       &amp; isA(ENTITYX3,r_0041_0009__1377)
       &amp; isA(ENTITYX6,r_0041_0015__tallage)
@@ -421,12 +421,12 @@ fof(id_41_A_lob_G01,axiom,
       &amp; attrib1(ENTITYX13) = ATTRIBX14
       &amp; isA(ENTITYX16,r_0041_0029__returns)
       &amp; attrib1(ENTITYX16) = ATTRIBX17
-      &amp; isA(ENTITYX25,r_0041_0039__tax_collecting)
+      &amp; isA(ENTITYX25,r_0041_0039__tax__r_0041_0040__collecting)
       &amp; isA(ATTRIBX14,r_0041_0023__much)
       &amp; isA(ATTRIBX17,r_0041_0028__meagre)
       &amp; quality1(ATTRIBX17) = QUALITYX18
       &amp; isA(ATTRIBX23,r_0041_0035__trained)
-      &amp; isA(ATTRIBX26,r_0041_0041__either_or)
+      &amp; isA(ATTRIBX26,r_0041_0041__either__r_0041_0043__or)
       &amp; conj1(ATTRIBX26) = ATTRIBX27
       &amp; conj2(ATTRIBX26) = ATTRIBX28
       &amp; isA(ATTRIBX27,r_0041_0042__fair)
@@ -444,7 +444,7 @@ fof(id_41_A_lob_G01,axiom,
       &amp; r_0041_0001__In_mod(EVENTX19) = ENTITYX1
       &amp; arg0(EVENTX19) = ENTITYX2
       &amp; arg1(EVENTX19) = ENTITYX16
-      &amp; isA(QUANTX22,r_0041_0034__quantificational__no)
+      &amp; isA(QUANTX22,r_0041_0034__quantificational__r_0041_0034__no)
       &amp; restriction(QUANTX22) = ENTITYX21
       &amp; isA(ENTITYX21,r_0041_0036__bureaucracy)
       &amp; attrib2(ENTITYX21) = ATTRIBX23

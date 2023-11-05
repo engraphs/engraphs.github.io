@@ -216,8 +216,8 @@ Everybody else seems to have had notice of my speech before I ended up making it
 </svg>
 <br>
 <pre>
-arc(r_0081_0001__quantificational__Everybody,r_0081_0003__seems,scope).
-arc(r_0081_0001__quantificational__Everybody,z_0081_1004,restriction).
+arc(r_0081_0001__quantificational__r_0081_0001__Everybody,r_0081_0003__seems,scope).
+arc(r_0081_0001__quantificational__r_0081_0001__Everybody,z_0081_1004,restriction).
 arc(r_0081_0003__seems,r_0081_0005__have,catenative).
 arc(r_0081_0005__have,r_0081_0011__before_tmp,catenative).
 arc(r_0081_0006__had,r_0081_0007__notice,arg1).
@@ -225,9 +225,9 @@ arc(r_0081_0006__had,z_0081_1004,arg0).
 arc(r_0081_0007__notice,r_0081_0010__speech,r_0081_0008__of).
 arc(r_0081_0010__speech,r_0081_0009__my,genv).
 arc(r_0081_0011__before_tmp,r_0081_0006__had,scope).
-arc(r_0081_0011__before_tmp,r_0081_0013__ended_up,restriction).
-arc(r_0081_0013__ended_up,r_0081_0009__my,arg0).
-arc(r_0081_0013__ended_up,r_0081_0015__making,arg1).
+arc(r_0081_0011__before_tmp,r_0081_0013__ended__r_0081_0014__up,restriction).
+arc(r_0081_0013__ended__r_0081_0014__up,r_0081_0009__my,arg0).
+arc(r_0081_0013__ended__r_0081_0014__up,r_0081_0015__making,arg1).
 arc(r_0081_0015__making,r_0081_0009__my,arg0).
 arc(r_0081_0015__making,r_0081_0010__speech,arg1).
 arc(z_0081_1004,r_0081_0002__else,quality2).
@@ -235,7 +235,7 @@ arc(z_0081_1004,r_0081_0002__else,quality2).
 </pre>
 <br>
 <pre>
-fof(id_81_A_Hedgehog,axiom,
+fof(id__81_A_Hedgehog,axiom,
     ? [STATEX5,CATENATIVEX6,STATEX11,SPEAKERX10,SPEECHX12,QUANTX2,EVENTX17,EVENTX16,CONNX9,EVENTX14,EVENTX13,EVENTX15,ENTITYX1,ENTITYX7,SPEECHX8,QUALITYX3] :
       ( STATEX5 = EVENTX16
       &amp; isA(EVENTX16,r_0081_0005__have)
@@ -247,7 +247,7 @@ fof(id_81_A_Hedgehog,axiom,
       &amp; arg0(EVENTX15) = ENTITYX1
       &amp; arg1(EVENTX15) = ENTITYX7
       &amp; restriction(CONNX9) = EVENTX14
-      &amp; isA(EVENTX14,r_0081_0013__ended_up)
+      &amp; isA(EVENTX14,r_0081_0013__ended__r_0081_0014__up)
       &amp; arg0(EVENTX14) = SPEAKERX10
       &amp; arg1(EVENTX14) = STATEX11
       &amp; STATEX11 = EVENTX13
@@ -261,7 +261,7 @@ fof(id_81_A_Hedgehog,axiom,
       &amp; SPEAKERX10 = r_0081_0009__my
       &amp; SPEECHX12 = SPEECHX8
       &amp; isA(QUALITYX3,r_0081_0002__else)
-      &amp; isA(QUANTX2,r_0081_0001__quantificational__Everybody)
+      &amp; isA(QUANTX2,r_0081_0001__quantificational__r_0081_0001__Everybody)
       &amp; restriction(QUANTX2) = ENTITYX1
       &amp; isA(ENTITYX1,z_0081_1004)
       &amp; quality2(ENTITYX1) = QUALITYX3

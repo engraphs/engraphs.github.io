@@ -291,7 +291,6 @@ When asking for inspection and adjustment by disassembly and cleaning ( overhaul
 </svg>
 <br>
 <pre>
-arc(imperative_0094_1002,r_0094_0001__When_cnt,scope).
 arc(r_0094_0001__When_cnt,r_0094_0002__asking,restriction).
 arc(r_0094_0001__When_cnt,r_0094_0015__make,scope).
 arc(r_0094_0002__asking,r_0094_0005__and,r_0094_0003__for_cnt).
@@ -304,17 +303,18 @@ arc(r_0094_0009__and,r_0094_0010__cleaning,conj2).
 arc(r_0094_0015__make,r_0094_0016__sure,prd2).
 arc(r_0094_0016__sure,r_0094_0023__are,emb2).
 arc(r_0094_0020__and,r_0094_0019__gasket,conj1).
-arc(r_0094_0020__and,r_0094_0021__push_pin,conj2).
+arc(r_0094_0020__and,r_0094_0021__push__r_0094_0022__pin,conj2).
 arc(r_0094_0023__are,r_0094_0024__also,catenative).
 arc(r_0094_0024__also,r_0094_0025__replaced,scope).
 arc(r_0094_0025__replaced,r_0094_0020__and,arg1).
 arc(r_0094_0025__replaced,r_0094_0028__ones,r_0094_0026__with_clr).
 arc(r_0094_0028__ones,r_0094_0027__new,attrib1).
+arc(r_0094_1002__imperative,r_0094_0001__When_cnt,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_94_A_seiko_9R65,axiom,
+fof(id__94_A_seiko_9R65,axiom,
     ? [STATEX14,CATENATIVEX18,OPERATORX2,CONNX4,EVENTX25,EVENTX24,OPERATORX20,EVENTX23,EVENTX12,ENTITYX15,ENTITYX21,ENTITYX16,ENTITYX17,ENTITYX5,ENTITYX6,ENTITYX9,ENTITYX10,ENTITYX11,ENTITYX7,ENTITYX8,ATTRIBX13,ATTRIBX22] :
       ( STATEX14 = EVENTX24
       &amp; isA(EVENTX24,r_0094_0023__are)
@@ -342,13 +342,13 @@ fof(id_94_A_seiko_9R65,axiom,
       &amp; conj1(ENTITYX15) = ENTITYX16
       &amp; conj2(ENTITYX15) = ENTITYX17
       &amp; isA(ENTITYX16,r_0094_0019__gasket)
-      &amp; isA(ENTITYX17,r_0094_0021__push_pin)
+      &amp; isA(ENTITYX17,r_0094_0021__push__r_0094_0022__pin)
       &amp; isA(ENTITYX21,r_0094_0028__ones)
       &amp; attrib1(ENTITYX21) = ATTRIBX22
       &amp; isA(ATTRIBX13,r_0094_0016__sure)
       &amp; emb2(ATTRIBX13) = STATEX14
       &amp; isA(ATTRIBX22,r_0094_0027__new)
-      &amp; isA(OPERATORX2,imperative_0094_1002)
+      &amp; isA(OPERATORX2,r_0094_1002__imperative)
       &amp; scope(OPERATORX2) = CONNX4
       &amp; isA(CONNX4,r_0094_0001__When_cnt)
       &amp; restriction(CONNX4) = EVENTX12

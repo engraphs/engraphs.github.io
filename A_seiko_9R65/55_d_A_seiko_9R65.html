@@ -254,7 +254,7 @@ For the Spring Drive , wear and damage occur less than mechanical watches since 
 <pre>
 arc(r_0072_0007__and,r_0072_0006__wear,conj1).
 arc(r_0072_0007__and,r_0072_0008__damage,conj2).
-arc(r_0072_0009__occur,r_0072_0003__Spring_Drive,r_0072_0001__For_rst).
+arc(r_0072_0009__occur,r_0072_0003__Spring__r_0072_0004__Drive,r_0072_0001__For_rst).
 arc(r_0072_0009__occur,r_0072_0007__and,arg0).
 arc(r_0072_0009__occur,r_0072_0010__less,prd2).
 arc(r_0072_0010__less,r_0072_0013__watches,r_0072_0011__than).
@@ -265,18 +265,18 @@ arc(r_0072_0016__spinning,r_0072_0017__speed,arg0).
 arc(r_0072_0017__speed,r_0072_0020__rotor,r_0072_0018__of).
 arc(r_0072_0021__is,r_0072_0022__adjusted,catenative).
 arc(r_0072_0022__adjusted,r_0072_0017__speed,arg1).
-arc(r_0072_0022__adjusted,r_0072_0029__brake,arg0_by_lgs).
+arc(r_0072_0022__adjusted,r_0072_0029__brake,arg0__r_0072_0023__by_lgs).
 arc(r_0072_0029__brake,r_0072_0026__contact_free,attrib3).
 arc(r_0072_0029__brake,r_0072_0028__electromagnetic,attrib5).
 
 </pre>
 <br>
 <pre>
-fof(id_72_A_seiko_9R65,axiom,
+fof(id__72_A_seiko_9R65,axiom,
     ? [CATENATIVEX11,CONNX7,EVENTX16,EVENTX15,EVENTX9,EVENTX17,ENTITYX1,ENTITYX8,ENTITYX12,ENTITYX10,ENTITYX5,ENTITYX2,ENTITYX3,ATTRIBX4,ATTRIBX13,ATTRIBX14,ATTRIBX6] :
       ( CATENATIVEX11 = EVENTX15
       &amp; isA(EVENTX15,r_0072_0022__adjusted)
-      &amp; arg0_by_lgs(EVENTX15) = ENTITYX12
+      &amp; arg0__r_0072_0023__by_lgs(EVENTX15) = ENTITYX12
       &amp; arg1(EVENTX15) = ENTITYX8
       &amp; isA(ENTITYX1,r_0072_0007__and)
       &amp; conj1(ENTITYX1) = ENTITYX2
@@ -293,7 +293,7 @@ fof(id_72_A_seiko_9R65,axiom,
       &amp; isA(ENTITYX12,r_0072_0029__brake)
       &amp; attrib3(ENTITYX12) = ATTRIBX13
       &amp; attrib5(ENTITYX12) = ATTRIBX14
-      &amp; isA(r_0072_0003__Spring_Drive,r_0072_0003__Spring_Drive)
+      &amp; isA(r_0072_0003__Spring__r_0072_0004__Drive,r_0072_0003__Spring_r_0072_0004__Drive)
       &amp; isA(ATTRIBX4,r_0072_0010__less)
       &amp; r_0072_0011__than(ATTRIBX4) = ENTITYX5
       &amp; isA(ATTRIBX6,r_0072_0012__mechanical)
@@ -302,7 +302,7 @@ fof(id_72_A_seiko_9R65,axiom,
       &amp; isA(CONNX7,r_0072_0014__since_cnt)
       &amp; scope(CONNX7) = EVENTX17
       &amp; isA(EVENTX17,r_0072_0009__occur)
-      &amp; r_0072_0001__For_rst(EVENTX17) = r_0072_0003__Spring_Drive
+      &amp; r_0072_0001__For_rst(EVENTX17) = r_0072_0003__Spring__r_0072_0004__Drive
       &amp; arg0(EVENTX17) = ENTITYX1
       &amp; prd2(EVENTX17) = ATTRIBX4
       &amp; restriction(CONNX7) = EVENTX16

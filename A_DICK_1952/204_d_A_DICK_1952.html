@@ -136,19 +136,19 @@ They walked in silence , listening to the echo of their footsteps .
 </svg>
 <br>
 <pre>
-arc(mnr_0260_1002,r_0260_0002__walked,scope).
-arc(mnr_0260_1002,r_0260_0006__listening,restriction).
 arc(r_0260_0002__walked,r_0260_0001__They,arg0).
 arc(r_0260_0002__walked,r_0260_0004__silence,r_0260_0003__in_mnr).
 arc(r_0260_0006__listening,r_0260_0001__They,arg0).
 arc(r_0260_0006__listening,r_0260_0009__echo,r_0260_0007__to_clr).
 arc(r_0260_0009__echo,r_0260_0012__footsteps,r_0260_0010__of).
 arc(r_0260_0012__footsteps,r_0260_0001__They,genv).
+arc(r_0260_1002__mnr,r_0260_0002__walked,scope).
+arc(r_0260_1002__mnr,r_0260_0006__listening,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_260_A_DICK_1952,axiom,
+fof(id__260_A_DICK_1952,axiom,
     ? [DORLE_AND_NASHA_AND_TANCEX6,CONNX3,EVENTX7,EVENTX8,ENTITYX1,ENTITYX4,ENTITYX5] :
       ( isA(ENTITYX1,r_0260_0004__silence)
       &amp; isA(ENTITYX4,r_0260_0009__echo)
@@ -156,7 +156,7 @@ fof(id_260_A_DICK_1952,axiom,
       &amp; isA(ENTITYX5,r_0260_0012__footsteps)
       &amp; genv(ENTITYX5) = DORLE_AND_NASHA_AND_TANCEX6
       &amp; DORLE_AND_NASHA_AND_TANCEX6 = r_0260_0001__They
-      &amp; isA(CONNX3,mnr_0260_1002)
+      &amp; isA(CONNX3,r_0260_1002__mnr)
       &amp; scope(CONNX3) = EVENTX8
       &amp; isA(EVENTX8,r_0260_0002__walked)
       &amp; arg0(EVENTX8) = r_0260_0001__They

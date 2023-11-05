@@ -207,34 +207,34 @@ Stand the beaker on a hot plate and keep the solution warm for 30 minutes to coa
 </svg>
 <br>
 <pre>
-arc(cnt_0094_1011,r_0094_0009__keep,scope).
-arc(cnt_0094_1011,r_0094_0017__coagulate,restriction).
-arc(imperative_0094_1002,r_0094_0008__and,scope).
 arc(r_0094_0001__Stand,r_0094_0003__beaker,arg1).
 arc(r_0094_0001__Stand,r_0094_0007__plate,r_0094_0004__on_loc).
 arc(r_0094_0007__plate,r_0094_0006__hot,attrib2).
-arc(r_0094_0008__and,cnt_0094_1011,conj2).
 arc(r_0094_0008__and,r_0094_0001__Stand,conj1).
+arc(r_0094_0008__and,r_0094_1011__cnt,conj2).
 arc(r_0094_0009__keep,r_0094_0011__solution,arg1).
 arc(r_0094_0009__keep,r_0094_0012__warm,prd).
-arc(r_0094_0009__keep,r_0094_0014__30_minutes,r_0094_0013__for_tmp).
+arc(r_0094_0009__keep,r_0094_0014__30__r_0094_0015__minutes,r_0094_0013__for_tmp).
 arc(r_0094_0017__coagulate,r_0094_0011__solution,arg0).
 arc(r_0094_0017__coagulate,r_0094_0019__precipitate,arg1).
+arc(r_0094_1002__imperative,r_0094_0008__and,scope).
+arc(r_0094_1011__cnt,r_0094_0009__keep,scope).
+arc(r_0094_1011__cnt,r_0094_0017__coagulate,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_94_A_lob_J01,axiom,
+fof(id__94_A_lob_J01,axiom,
     ? [OPERATORX2,CONJX16,CONNX12,EVENTX14,EVENTX15,EVENTX7,ENTITYX8,ENTITYX10,ENTITYX13,ENTITYX4,ENTITYX5,ATTRIBX9,ATTRIBX6] :
       ( isA(ENTITYX4,r_0094_0003__beaker)
       &amp; isA(ENTITYX5,r_0094_0007__plate)
       &amp; attrib2(ENTITYX5) = ATTRIBX6
       &amp; isA(ENTITYX8,r_0094_0011__solution)
-      &amp; isA(ENTITYX10,r_0094_0014__30_minutes)
+      &amp; isA(ENTITYX10,r_0094_0014__30__r_0094_0015__minutes)
       &amp; isA(ENTITYX13,r_0094_0019__precipitate)
       &amp; isA(ATTRIBX6,r_0094_0006__hot)
       &amp; isA(ATTRIBX9,r_0094_0012__warm)
-      &amp; isA(OPERATORX2,imperative_0094_1002)
+      &amp; isA(OPERATORX2,r_0094_1002__imperative)
       &amp; scope(OPERATORX2) = CONJX16
       &amp; isA(CONJX16,r_0094_0008__and)
       &amp; conj1(CONJX16) = EVENTX7
@@ -242,7 +242,7 @@ fof(id_94_A_lob_J01,axiom,
       &amp; arg1(EVENTX7) = ENTITYX4
       &amp; r_0094_0004__on_loc(EVENTX7) = ENTITYX5
       &amp; conj2(CONJX16) = CONNX12
-      &amp; isA(CONNX12,cnt_0094_1011)
+      &amp; isA(CONNX12,r_0094_1011__cnt)
       &amp; scope(CONNX12) = EVENTX15
       &amp; isA(EVENTX15,r_0094_0009__keep)
       &amp; arg1(EVENTX15) = ENTITYX8

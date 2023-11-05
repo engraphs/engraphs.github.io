@@ -520,15 +520,11 @@ Piers came strolling out to meet the Deanes , and as soon as Guy had driven away
 </svg>
 <br>
 <pre>
-arc(cnt_0003_1002,r_0003_0005__made,restriction).
-arc(cnt_0003_1002,r_0003_0012__drove,scope).
-arc(cnt_0003_1020,r_0004_0003__strolling,scope).
-arc(cnt_0003_1020,r_0004_0006__meet,restriction).
-arc(r_0003_0002__though_cnt,cnt_0003_1002,restriction).
 arc(r_0003_0002__though_cnt,r_0003_0021__was,scope).
+arc(r_0003_0002__though_cnt,r_0003_1002__cnt,restriction).
 arc(r_0003_0005__made,r_0003_0003__Guy,arg1).
 arc(r_0003_0005__made,r_0003_0006__nervous,prd).
-arc(r_0003_0005__made,r_0003_0010__silence,arg0_by_lgs).
+arc(r_0003_0005__made,r_0003_0010__silence,arg0__r_0003_0007__by_lgs).
 arc(r_0003_0010__silence,r_0003_0008__Beryl,genv).
 arc(r_0003_0012__drove,r_0003_0003__Guy,arg0).
 arc(r_0003_0012__drove,r_0003_0015__speed,r_0003_0013__at_mnr).
@@ -539,7 +535,11 @@ arc(r_0003_0021__was,r_0003_0027__was,arg0).
 arc(r_0003_0023__evident,r_0003_0022__quickly,quality1).
 arc(r_0003_0027__was,r_0003_0026__party,arg0).
 arc(r_0003_0027__was,r_0003_0028__over,prd24).
-arc(r_0004_0002__came,cnt_0003_1020,catenative).
+arc(r_0003_1002__cnt,r_0003_0005__made,restriction).
+arc(r_0003_1002__cnt,r_0003_0012__drove,scope).
+arc(r_0003_1020__cnt,r_0004_0003__strolling,scope).
+arc(r_0003_1020__cnt,r_0004_0006__meet,restriction).
+arc(r_0004_0002__came,r_0003_1020__cnt,catenative).
 arc(r_0004_0003__strolling,r_0004_0001__Piers,arg0).
 arc(r_0004_0003__strolling,r_0004_0004__out,dir2).
 arc(r_0004_0006__meet,r_0004_0001__Piers,arg0).
@@ -563,14 +563,14 @@ arc(r_0004_0024__flat,r_0004_0001__Piers,genv).
 </pre>
 <br>
 <pre>
-fof(id_3_A_lob_N02__4_A_lob_N02,axiom,
+fof(id__3_A_lob_N02__4_A_lob_N02,axiom,
     ? [STATEX13,CATENATIVEX18,CATENATIVEX27,STATEX33,FORRESTX26,BERYL_AND_MRS_DEANEX31,PIERSX35,CONJX39,CONNX25,EVENTX38,EVENTX37,EVENTX30,EVENTX29,EVENTX24,CONNX21,EVENTX22,EVENTX23,CONNX1,EVENTX17,EVENTX16,CONNX3,EVENTX9,EVENTX6,ENTITYX34,ENTITYX36,ENTITYX14,ENTITYX7,ENTITYX5,ATTRIBX11,ATTRIBX8,ATTRIBX4,QUALITYX32,QUALITYX28,QUALITYX19,QUALITYX15,QUALITYX12] :
       ( STATEX13 = EVENTX16
       &amp; isA(EVENTX16,r_0003_0027__was)
       &amp; arg0(EVENTX16) = ENTITYX14
       &amp; prd24(EVENTX16) = QUALITYX15
       &amp; CATENATIVEX18 = CONNX21
-      &amp; isA(CONNX21,cnt_0003_1020)
+      &amp; isA(CONNX21,r_0003_1020__cnt)
       &amp; scope(CONNX21) = EVENTX23
       &amp; isA(EVENTX23,r_0004_0003__strolling)
       &amp; arg0(EVENTX23) = r_0004_0001__Piers
@@ -612,10 +612,10 @@ fof(id_3_A_lob_N02__4_A_lob_N02,axiom,
       &amp; isA(QUALITYX32,r_0004_0019__casually)
       &amp; isA(CONNX1,r_0003_0002__though_cnt)
       &amp; restriction(CONNX1) = CONNX3
-      &amp; isA(CONNX3,cnt_0003_1002)
+      &amp; isA(CONNX3,r_0003_1002__cnt)
       &amp; restriction(CONNX3) = EVENTX6
       &amp; isA(EVENTX6,r_0003_0005__made)
-      &amp; arg0_by_lgs(EVENTX6) = ENTITYX5
+      &amp; arg0__r_0003_0007__by_lgs(EVENTX6) = ENTITYX5
       &amp; arg1(EVENTX6) = r_0003_0003__Guy
       &amp; prd(EVENTX6) = ATTRIBX4
       &amp; scope(CONNX3) = EVENTX9

@@ -109,24 +109,24 @@ Let 's start from the drive method of a watch .
 </svg>
 <br>
 <pre>
-arc(imperative_0013_1002,r_0013_0001__Let,scope).
 arc(r_0013_0001__Let,r_0013_0002___apos_s,arg1).
 arc(r_0013_0001__Let,r_0013_0003__start,prd).
-arc(r_0013_0003__start,r_0013_0006__drive_method,r_0013_0004__from_loc).
-arc(r_0013_0006__drive_method,r_0013_0010__watch,r_0013_0008__of).
+arc(r_0013_0003__start,r_0013_0006__drive__r_0013_0007__method,r_0013_0004__from_loc).
+arc(r_0013_0006__drive__r_0013_0007__method,r_0013_0010__watch,r_0013_0008__of).
+arc(r_0013_1002__imperative,r_0013_0001__Let,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_13_A_seiko_9R65,axiom,
+fof(id__13_A_seiko_9R65,axiom,
     ? [STATEX4,OPERATORX2,EVENTX10,EVENTX9,ENTITYX7,ENTITYX8] :
       ( STATEX4 = EVENTX9
       &amp; isA(EVENTX9,r_0013_0003__start)
       &amp; r_0013_0004__from_loc(EVENTX9) = ENTITYX7
-      &amp; isA(ENTITYX7,r_0013_0006__drive_method)
+      &amp; isA(ENTITYX7,r_0013_0006__drive__r_0013_0007__method)
       &amp; r_0013_0008__of(ENTITYX7) = ENTITYX8
       &amp; isA(ENTITYX8,r_0013_0010__watch)
-      &amp; isA(OPERATORX2,imperative_0013_1002)
+      &amp; isA(OPERATORX2,r_0013_1002__imperative)
       &amp; scope(OPERATORX2) = EVENTX10
       &amp; isA(EVENTX10,r_0013_0001__Let)
       &amp; arg1(EVENTX10) = r_0013_0002___apos_s

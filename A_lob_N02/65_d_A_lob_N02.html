@@ -306,21 +306,17 @@ In fact , she trotted round , obviously trying to make everyone feel at home , g
 </svg>
 <br>
 <pre>
-arc(cnt_0114_1003,cnt_0114_1017,scope).
-arc(cnt_0114_1003,r_0114_0007__obviously,restriction).
-arc(cnt_0114_1017,r_0114_0004__trotted,scope).
-arc(cnt_0114_1017,r_0114_0016__gazing,restriction).
-arc(r_0114_0001__In_fact,cnt_0114_1003,scope).
+arc(r_0114_0001__In_fact,r_0114_1003__cnt,scope).
 arc(r_0114_0004__trotted,r_0114_0003__she,arg0).
 arc(r_0114_0004__trotted,r_0114_0005__round,dir5).
 arc(r_0114_0007__obviously,r_0114_0008__trying,scope).
 arc(r_0114_0008__trying,r_0114_0003__she,arg0).
-arc(r_0114_0008__trying,r_0114_0011__quantificational__everyone,arg1).
+arc(r_0114_0008__trying,r_0114_0011__quantificational__r_0114_0011__everyone,arg1).
 arc(r_0114_0010__make,r_0114_0003__she,arg0).
 arc(r_0114_0010__make,r_0114_0012__feel,prd).
 arc(r_0114_0010__make,z_0114_1009,arg1).
-arc(r_0114_0011__quantificational__everyone,r_0114_0010__make,scope).
-arc(r_0114_0011__quantificational__everyone,z_0114_1009,restriction).
+arc(r_0114_0011__quantificational__r_0114_0011__everyone,r_0114_0010__make,scope).
+arc(r_0114_0011__quantificational__r_0114_0011__everyone,z_0114_1009,restriction).
 arc(r_0114_0012__feel,r_0114_0014__home,r_0114_0013__at_loc).
 arc(r_0114_0016__gazing,r_0114_0003__she,arg0).
 arc(r_0114_0016__gazing,r_0114_0017__reproachfully,mnr2).
@@ -328,14 +324,18 @@ arc(r_0114_0016__gazing,r_0114_0022__ones,r_0114_0018__at_dir).
 arc(r_0114_0022__ones,r_0114_0020__few,attrib2).
 arc(r_0114_0022__ones,r_0114_0021__timid,attrib3).
 arc(r_0114_0024__bolted,r_0114_0022__ones,arg0).
+arc(r_0114_1003__cnt,r_0114_0007__obviously,restriction).
+arc(r_0114_1003__cnt,r_0114_1017__cnt,scope).
+arc(r_0114_1017__cnt,r_0114_0004__trotted,scope).
+arc(r_0114_1017__cnt,r_0114_0016__gazing,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_114_A_lob_N02,axiom,
+fof(id__114_A_lob_N02,axiom,
     ? [STATEX6,STATEX10,OPERATORX1,CONNX4,OPERATORX5,EVENTX16,QUANTX8,EVENTX15,EVENTX14,CONNX18,EVENTX23,EVENTX22,EVENTX24,ENTITYX7,QUALITYX2,QUALITYX13,QUALITYX19,ATTRIBX20,ATTRIBX21] :
       ( STATEX6 = QUANTX8
-      &amp; isA(QUANTX8,r_0114_0011__quantificational__everyone)
+      &amp; isA(QUANTX8,r_0114_0011__quantificational__r_0114_0011__everyone)
       &amp; restriction(QUANTX8) = ENTITYX7
       &amp; isA(ENTITYX7,z_0114_1009)
       &amp; scope(QUANTX8) = EVENTX15
@@ -358,9 +358,9 @@ fof(id_114_A_lob_N02,axiom,
       &amp; isA(ATTRIBX21,r_0114_0021__timid)
       &amp; isA(OPERATORX1,r_0114_0001__In_fact)
       &amp; scope(OPERATORX1) = CONNX4
-      &amp; isA(CONNX4,cnt_0114_1003)
+      &amp; isA(CONNX4,r_0114_1003__cnt)
       &amp; scope(CONNX4) = CONNX18
-      &amp; isA(CONNX18,cnt_0114_1017)
+      &amp; isA(CONNX18,r_0114_1017__cnt)
       &amp; scope(CONNX18) = EVENTX24
       &amp; isA(EVENTX24,r_0114_0004__trotted)
       &amp; arg0(EVENTX24) = r_0114_0003__she

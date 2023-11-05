@@ -116,26 +116,26 @@ Take off your sunglasses and look at them .
 </svg>
 <br>
 <pre>
-arc(imperative_0006_1002,r_0006_0005__and,scope).
-arc(r_0006_0001__Take_off,r_0006_0004__sunglasses,arg1).
+arc(r_0006_0001__Take__r_0006_0002__off,r_0006_0004__sunglasses,arg1).
 arc(r_0006_0004__sunglasses,r_0006_0003__your,genv).
-arc(r_0006_0005__and,r_0006_0001__Take_off,conj1).
+arc(r_0006_0005__and,r_0006_0001__Take__r_0006_0002__off,conj1).
 arc(r_0006_0005__and,r_0006_0006__look,conj2).
 arc(r_0006_0006__look,r_0006_0004__sunglasses,r_0006_0007__at_dir).
+arc(r_0006_1002__imperative,r_0006_0005__and,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_6_A_sunglasses_story,axiom,
+fof(id__6_A_sunglasses_story,axiom,
     ? [SUNGLASSESX6,OPERATORX2,CONJX8,EVENTX7,EVENTX5,SUNGLASSESX4] :
       ( isA(SUNGLASSESX4,r_0006_0004__sunglasses)
       &amp; genv(SUNGLASSESX4) = r_0006_0003__your
       &amp; SUNGLASSESX6 = SUNGLASSESX4
-      &amp; isA(OPERATORX2,imperative_0006_1002)
+      &amp; isA(OPERATORX2,r_0006_1002__imperative)
       &amp; scope(OPERATORX2) = CONJX8
       &amp; isA(CONJX8,r_0006_0005__and)
       &amp; conj1(CONJX8) = EVENTX5
-      &amp; isA(EVENTX5,r_0006_0001__Take_off)
+      &amp; isA(EVENTX5,r_0006_0001__Take__r_0006_0002__off)
       &amp; arg1(EVENTX5) = SUNGLASSESX4
       &amp; conj2(CONJX8) = EVENTX7
       &amp; isA(EVENTX7,r_0006_0006__look)

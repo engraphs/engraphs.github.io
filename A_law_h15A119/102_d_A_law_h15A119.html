@@ -421,12 +421,12 @@ arc(r_0102_0008__is,r_0102_0009__necessary,prd2).
 arc(r_0102_0008__is,r_0102_0011__cooperate,arg0).
 arc(r_0102_0011__cooperate,r_0102_0016__or,r_0102_0012__with_com).
 arc(r_0102_0011__cooperate,r_0102_0021__executing,r_0102_0020__in_cnt).
-arc(r_0102_0016__or,r_0102_0014__state_organ,conj1).
+arc(r_0102_0016__or,r_0102_0014__state__r_0102_0015__organ,conj1).
 arc(r_0102_0016__or,r_0102_0019__government,conj2).
 arc(r_0102_0019__government,r_0102_0018__local,attrib2).
 arc(r_0102_0021__executing,r_0102_0023__affairs,arg1).
 arc(r_0102_0024__prescribed,r_0102_0023__affairs,arg1).
-arc(r_0102_0024__prescribed,r_0102_0027__and,arg0_by_lgs).
+arc(r_0102_0024__prescribed,r_0102_0027__and,arg0__r_0102_0025__by_lgs).
 arc(r_0102_0027__and,r_0102_0026__laws,conj1).
 arc(r_0102_0027__and,r_0102_0028__regulations,conj2).
 arc(r_0102_0029__and,r_0102_0008__is,conj1).
@@ -449,7 +449,7 @@ arc(z_0102_1043,r_0102_0004__Cases,z_0102_1002).
 </pre>
 <br>
 <pre>
-fof(id_102_A_law_h15A119,axiom,
+fof(id__102_A_law_h15A119,axiom,
     ? [STATEX8,EVENTX13,STATEX24,STATEX35,EVENTX44,CONJX42,EVENTX41,EVENTX40,CONJX33,EVENTX32,EVENTX30,EVENTX23,EVENTX22,EVENTX21,EVENTX20,ENTITYX3,ENTITYX38,ENTITYX39,ENTITYX27,ENTITYX28,ENTITYX29,ENTITYX9,ENTITYX16,ENTITYX17,ENTITYX18,ENTITYX19,ENTITYX10,ENTITYX11,ATTRIBX34,ATTRIBX7,ATTRIBX12,QUALITYX31] :
       ( STATEX8 = EVENTX22
       &amp; isA(EVENTX22,r_0102_0011__cooperate)
@@ -488,11 +488,11 @@ fof(id_102_A_law_h15A119,axiom,
       &amp; isA(ENTITYX9,r_0102_0016__or)
       &amp; conj1(ENTITYX9) = ENTITYX10
       &amp; conj2(ENTITYX9) = ENTITYX11
-      &amp; isA(ENTITYX10,r_0102_0014__state_organ)
+      &amp; isA(ENTITYX10,r_0102_0014__state__r_0102_0015__organ)
       &amp; isA(ENTITYX11,r_0102_0019__government)
       &amp; attrib2(ENTITYX11) = ATTRIBX12
       &amp; isA(EVENTX20,r_0102_0024__prescribed)
-      &amp; arg0_by_lgs(EVENTX20) = ENTITYX17
+      &amp; arg0__r_0102_0025__by_lgs(EVENTX20) = ENTITYX17
       &amp; arg1(EVENTX20) = ENTITYX16
       &amp; isA(ENTITYX16,r_0102_0023__affairs)
       &amp; isA(ENTITYX17,r_0102_0027__and)

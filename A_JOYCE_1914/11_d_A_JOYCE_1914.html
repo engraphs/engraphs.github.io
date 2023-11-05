@@ -288,7 +288,7 @@ arc(r_0020_0006__and,r_0020_0003__saw,conj1).
 arc(r_0020_0006__and,r_0020_0007__said,conj2).
 arc(r_0020_0007__said,r_0020_0001__My,r_0020_0008__to_arg2).
 arc(r_0020_0007__said,r_0020_0002__uncle,arg0).
-arc(r_0020_0007__said,utterance_0020_1009,arg1).
+arc(r_0020_0007__said,r_0020_1009__utterance,arg1).
 arc(r_0020_0014__so,r_0020_0022___apos_ll,scope).
 arc(r_0020_0017__friend,r_0020_0016__old,attrib2).
 arc(r_0020_0017__friend,r_0020_0021__you,genv).
@@ -299,18 +299,18 @@ arc(r_0020_0023__be,r_0020_0021__you,arg0).
 arc(r_0020_0023__be,r_0020_0024__sorry,prd2).
 arc(r_0020_0024__sorry,r_0020_0026__hear,emb2).
 arc(r_0020_0026__hear,r_0020_0018__is,arg1).
-arc(utterance_0020_1009,r_0020_0014__so,part1).
+arc(r_0020_1009__utterance,r_0020_0014__so,part1).
 
 </pre>
 <br>
 <pre>
-fof(id_20_A_JOYCE_1914,axiom,
+fof(id__20_A_JOYCE_1914,axiom,
     ? [STATEX3,STATEX7,STATEX12,STATEX15,SPEAKERX2,SPEAKERX6,HEARERX17,CONJX26,EVENTX25,CONJX24,OPERATORX10,OPERATORX22,EVENTX23,EVENTX21,EVENTX20,EVENTX5,EVENTX4,UNCLEX1,PRIESTX16,ATTRIBX11,ATTRIBX19,ATTRIBX18] :
       ( STATEX3 = EVENTX4
       &amp; isA(EVENTX4,r_0020_0005__staring)
       &amp; arg0(EVENTX4) = SPEAKERX2
       &amp; STATEX7 = CONJX24
-      &amp; isA(CONJX24,utterance_0020_1009)
+      &amp; isA(CONJX24,r_0020_1009__utterance)
       &amp; part1(CONJX24) = OPERATORX10
       &amp; isA(OPERATORX10,r_0020_0014__so)
       &amp; scope(OPERATORX10) = OPERATORX22

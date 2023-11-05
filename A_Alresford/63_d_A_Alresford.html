@@ -291,11 +291,10 @@ During the 1960s and '70s , new housing developments and conversions of older pr
 </svg>
 <br>
 <pre>
-arc(question_0069_1016,r_0069_0022__reconcile,scope).
 arc(r_0069_0004__and,r_0069_0003__1960s,conj1).
 arc(r_0069_0004__and,r_0069_0005___apos_70s,conj2).
-arc(r_0069_0008__housing_developments,r_0069_0007__new,attrib1).
-arc(r_0069_0010__and,r_0069_0008__housing_developments,conj1).
+arc(r_0069_0008__housing__r_0069_0009__developments,r_0069_0007__new,attrib1).
+arc(r_0069_0010__and,r_0069_0008__housing__r_0069_0009__developments,conj1).
 arc(r_0069_0010__and,r_0069_0011__conversions,conj2).
 arc(r_0069_0011__conversions,r_0069_0014__properties,r_0069_0012__of).
 arc(r_0069_0014__properties,r_0069_0013__older,attrib1).
@@ -303,21 +302,22 @@ arc(r_0069_0015__flourished,r_0069_0004__and,r_0069_0001__During_tmp).
 arc(r_0069_0015__flourished,r_0069_0010__and,arg0).
 arc(r_0069_0017__and,r_0069_0015__flourished,conj1).
 arc(r_0069_0017__and,r_0069_0026__needed,conj2).
-arc(r_0069_0018__dilemmas,question_0069_1016,r_0069_0019__of).
+arc(r_0069_0018__dilemmas,r_0069_1016__question,r_0069_0019__of).
 arc(r_0069_0022__reconcile,r_0069_0020__how,mnr1).
 arc(r_0069_0022__reconcile,r_0069_0023__progress,arg1).
 arc(r_0069_0022__reconcile,r_0069_0025__conservation,r_0069_0024__with_clr).
 arc(r_0069_0026__needed,r_0069_0018__dilemmas,arg0).
 arc(r_0069_0026__needed,r_0069_0028__resolution,arg1).
 arc(r_0069_0028__resolution,r_0069_0027__tactful,attrib1).
+arc(r_0069_1016__question,r_0069_0022__reconcile,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_69_A_Alresford,axiom,
+fof(id__69_A_Alresford,axiom,
     ? [EVENTX12,CONJX24,EVENTX23,OPERATORX16,EVENTX20,EVENTX10,ENTITYX11,ENTITYX21,ENTITYX18,ENTITYX19,ENTITYX1,ENTITYX4,ENTITYX5,ENTITYX7,ENTITYX8,ENTITYX2,ENTITYX3,ATTRIBX22,ATTRIBX9,ATTRIBX6,QUALITYX17] :
       ( EVENTX12 = OPERATORX16
-      &amp; isA(OPERATORX16,question_0069_1016)
+      &amp; isA(OPERATORX16,r_0069_1016__question)
       &amp; scope(OPERATORX16) = EVENTX20
       &amp; isA(EVENTX20,r_0069_0022__reconcile)
       &amp; mnr1(EVENTX20) = QUALITYX17
@@ -331,7 +331,7 @@ fof(id_69_A_Alresford,axiom,
       &amp; isA(ENTITYX4,r_0069_0010__and)
       &amp; conj1(ENTITYX4) = ENTITYX5
       &amp; conj2(ENTITYX4) = ENTITYX7
-      &amp; isA(ENTITYX5,r_0069_0008__housing_developments)
+      &amp; isA(ENTITYX5,r_0069_0008__housing__r_0069_0009__developments)
       &amp; attrib1(ENTITYX5) = ATTRIBX6
       &amp; isA(ENTITYX7,r_0069_0011__conversions)
       &amp; r_0069_0012__of(ENTITYX7) = ENTITYX8

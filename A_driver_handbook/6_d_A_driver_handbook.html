@@ -83,18 +83,18 @@ Section 3 : Maximum Speed Limits
 </svg>
 <br>
 <pre>
-arc(r_0010_0001__Section_3,r_0010_0005__Speed_Limits,prn4).
-arc(r_0010_0005__Speed_Limits,r_0010_0004__Maximum,attrib1).
-arc(z_0010_1006,r_0010_0001__Section_3,z_0010_1002).
+arc(r_0010_0001__Section__r_0010_0002__3,r_0010_0005__Speed_r_0010_0006__Limits,prn4).
+arc(r_0010_0005__Speed__r_0010_0006__Limits,r_0010_0004__Maximum,attrib1).
+arc(z_0010_1006,r_0010_0001__Section__r_0010_0002__3,z_0010_1002).
 
 </pre>
 <br>
 <pre>
-fof(id_10_A_driver_handbook,axiom,
+fof(id__10_A_driver_handbook,axiom,
     ? [EVENTX7,ENTITYX3,ENTITYX4,ATTRIBX5] :
-      ( isA(ENTITYX3,r_0010_0001__Section_3)
+      ( isA(ENTITYX3,r_0010_0001__Section__r_0010_0002__3)
       &amp; prn4(ENTITYX3) = ENTITYX4
-      &amp; isA(ENTITYX4,r_0010_0005__Speed_Limits)
+      &amp; isA(ENTITYX4,r_0010_0005__Speed__r_0010_0006__Limits)
       &amp; attrib1(ENTITYX4) = ATTRIBX5
       &amp; isA(ATTRIBX5,r_0010_0004__Maximum)
       &amp; isA(EVENTX7,z_0010_1006)

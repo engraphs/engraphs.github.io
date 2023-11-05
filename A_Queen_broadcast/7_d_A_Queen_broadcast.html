@@ -416,16 +416,10 @@ Across the Commonwealth and around the world , we have seen heart-warming storie
 </svg>
 <br>
 <pre>
-arc(cnt_0011_1010,r_0011_0016__coming,scope).
-arc(cnt_0011_1010,r_0011_0019__help,restriction).
-arc(cnt_0011_1015,r_0011_0011__seen,scope).
-arc(cnt_0011_1015,r_0011_0022__be,restriction).
-arc(cnt_0011_1028,r_0011_0036__converting,scope).
-arc(cnt_0011_1028,r_0011_0039__help,restriction).
 arc(r_0011_0004__and,r_0011_0003__Commonwealth,r_0011_0001__Across_dir).
 arc(r_0011_0004__and,r_0011_0007__world,r_0011_0005__around_dir).
-arc(r_0011_0010__have,cnt_0011_1015,catenative).
 arc(r_0011_0010__have,r_0011_0004__and,z_0011_1002).
+arc(r_0011_0010__have,r_0011_1015__cnt,catenative).
 arc(r_0011_0011__seen,r_0011_0009__we,arg0).
 arc(r_0011_0011__seen,r_0011_0013__stories,arg1).
 arc(r_0011_0013__stories,r_0011_0012__heart_warming,attrib1).
@@ -434,26 +428,32 @@ arc(r_0011_0016__coming,r_0011_0015__people,arg0).
 arc(r_0011_0016__coming,r_0011_0017__together,com2).
 arc(r_0011_0019__help,r_0011_0015__people,arg0).
 arc(r_0011_0019__help,r_0011_0020__others,arg1).
-arc(r_0011_0022__be,cnt_0011_1010,arg0).
 arc(r_0011_0022__be,r_0011_0035__or,r_0011_0024__through_prd2).
+arc(r_0011_0022__be,r_0011_1010__cnt,arg0).
 arc(r_0011_0025__delivering,r_0011_0028__and,arg1).
-arc(r_0011_0028__and,r_0011_0026__food_parcels,conj1).
+arc(r_0011_0028__and,r_0011_0026__food__r_0011_0027__parcels,conj1).
 arc(r_0011_0028__and,r_0011_0029__medicines,conj2).
 arc(r_0011_0031__checking,r_0011_0033__neighbours,r_0011_0032__on_clr).
-arc(r_0011_0035__or,cnt_0011_1028,conj3).
 arc(r_0011_0035__or,r_0011_0025__delivering,conj1).
 arc(r_0011_0035__or,r_0011_0031__checking,conj2).
+arc(r_0011_0035__or,r_0011_1028__cnt,conj3).
 arc(r_0011_0036__converting,r_0011_0037__businesses,arg1).
 arc(r_0011_0039__help,r_0011_0037__businesses,arg0).
-arc(r_0011_0039__help,r_0011_0041__relief_effort,arg1).
+arc(r_0011_0039__help,r_0011_0041__relief__r_0011_0042__effort,arg1).
+arc(r_0011_1010__cnt,r_0011_0016__coming,scope).
+arc(r_0011_1010__cnt,r_0011_0019__help,restriction).
+arc(r_0011_1015__cnt,r_0011_0011__seen,scope).
+arc(r_0011_1015__cnt,r_0011_0022__be,restriction).
+arc(r_0011_1028__cnt,r_0011_0036__converting,scope).
+arc(r_0011_1028__cnt,r_0011_0039__help,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_11_A_Queen_broadcast,axiom,
+fof(id__11_A_Queen_broadcast,axiom,
     ? [CATENATIVEX5,EVENTX18,HELPX17,EVENTX36,CONNX16,EVENTX34,CONJX33,CONNX29,EVENTX31,EVENTX32,EVENTX26,EVENTX24,EVENTX35,HELPX11,EVENTX13,EVENTX14,CONJX3,ENTITYX6,ENTITYX27,ENTITYX30,ENTITYX25,ENTITYX21,ENTITYX22,ENTITYX23,ENTITYX8,ENTITYX12,ENTITYX4,ATTRIBX7,QUALITYX9] :
       ( CATENATIVEX5 = CONNX16
-      &amp; isA(CONNX16,cnt_0011_1015)
+      &amp; isA(CONNX16,r_0011_1015__cnt)
       &amp; scope(CONNX16) = EVENTX35
       &amp; isA(EVENTX35,r_0011_0011__seen)
       &amp; arg0(EVENTX35) = r_0011_0009__we
@@ -471,7 +471,7 @@ fof(id_11_A_Queen_broadcast,axiom,
       &amp; isA(EVENTX26,r_0011_0031__checking)
       &amp; r_0011_0032__on_clr(EVENTX26) = ENTITYX25
       &amp; conj3(CONJX33) = CONNX29
-      &amp; isA(CONNX29,cnt_0011_1028)
+      &amp; isA(CONNX29,r_0011_1028__cnt)
       &amp; scope(CONNX29) = EVENTX32
       &amp; isA(EVENTX32,r_0011_0036__converting)
       &amp; arg1(EVENTX32) = ENTITYX27
@@ -486,7 +486,7 @@ fof(id_11_A_Queen_broadcast,axiom,
       &amp; isA(ENTITYX6,r_0011_0013__stories)
       &amp; attrib1(ENTITYX6) = ATTRIBX7
       &amp; r_0011_0014__of(ENTITYX6) = ENTITYX8
-      &amp; isA(HELPX11,cnt_0011_1010)
+      &amp; isA(HELPX11,r_0011_1010__cnt)
       &amp; scope(HELPX11) = EVENTX14
       &amp; isA(EVENTX14,r_0011_0016__coming)
       &amp; arg0(EVENTX14) = ENTITYX8
@@ -501,11 +501,11 @@ fof(id_11_A_Queen_broadcast,axiom,
       &amp; isA(ENTITYX21,r_0011_0028__and)
       &amp; conj1(ENTITYX21) = ENTITYX22
       &amp; conj2(ENTITYX21) = ENTITYX23
-      &amp; isA(ENTITYX22,r_0011_0026__food_parcels)
+      &amp; isA(ENTITYX22,r_0011_0026__food__r_0011_0027__parcels)
       &amp; isA(ENTITYX23,r_0011_0029__medicines)
       &amp; isA(ENTITYX25,r_0011_0033__neighbours)
       &amp; isA(ENTITYX27,r_0011_0037__businesses)
-      &amp; isA(ENTITYX30,r_0011_0041__relief_effort)
+      &amp; isA(ENTITYX30,r_0011_0041__relief__r_0011_0042__effort)
       &amp; isA(r_0011_0003__Commonwealth,r_0011_0003__Commonwealth)
       &amp; isA(ATTRIBX7,r_0011_0012__heart_warming)
       &amp; isA(QUALITYX9,r_0011_0017__together)

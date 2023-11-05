@@ -109,25 +109,25 @@ Are you struck by a new thought ?
 </svg>
 <br>
 <pre>
-arc(question_0095_1002,r_0095_0001__Are,scope).
 arc(r_0095_0001__Are,r_0095_0003__struck,catenative).
 arc(r_0095_0003__struck,r_0095_0002__you,arg1).
-arc(r_0095_0003__struck,r_0095_0007__thought,arg0_by_lgs).
+arc(r_0095_0003__struck,r_0095_0007__thought,arg0__r_0095_0004__by_lgs).
 arc(r_0095_0007__thought,r_0095_0006__new,attrib2).
+arc(r_0095_1002__question,r_0095_0001__Are,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_95_A_TED_talk_11,axiom,
+fof(id__95_A_TED_talk_11,axiom,
     ? [CATENATIVEX3,OPERATORX2,EVENTX7,EVENTX6,ENTITYX4,ATTRIBX5] :
       ( CATENATIVEX3 = EVENTX6
       &amp; isA(EVENTX6,r_0095_0003__struck)
-      &amp; arg0_by_lgs(EVENTX6) = ENTITYX4
+      &amp; arg0__r_0095_0004__by_lgs(EVENTX6) = ENTITYX4
       &amp; arg1(EVENTX6) = r_0095_0002__you
       &amp; isA(ENTITYX4,r_0095_0007__thought)
       &amp; attrib2(ENTITYX4) = ATTRIBX5
       &amp; isA(ATTRIBX5,r_0095_0006__new)
-      &amp; isA(OPERATORX2,question_0095_1002)
+      &amp; isA(OPERATORX2,r_0095_1002__question)
       &amp; scope(OPERATORX2) = EVENTX7
       &amp; isA(EVENTX7,r_0095_0001__Are)
       &amp; catenative(EVENTX7) = CATENATIVEX3 ) ).

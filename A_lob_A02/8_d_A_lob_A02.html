@@ -298,70 +298,70 @@ Instead Mr Macmillan will rely on a hand-picked team under the leadership of Sir
 </svg>
 <br>
 <pre>
-arc(cnt_0008_1006,r_0008_0004__will,scope).
-arc(cnt_0008_1006,r_0008_0025__back,restriction).
-arc(r_0008_0001__Instead,cnt_0008_1006,scope).
+arc(r_0008_0001__Instead,r_0008_1006__cnt,scope).
 arc(r_0008_0004__will,r_0008_0005__rely,scope).
-arc(r_0008_0005__rely,r_0008_0002__Mr_Macmillan,arg0).
+arc(r_0008_0005__rely,r_0008_0002__Mr__r_0008_0003__Macmillan,arg0).
 arc(r_0008_0005__rely,r_0008_0009__team,r_0008_0006__on_clr).
 arc(r_0008_0009__team,r_0008_0008__hand_picked,attrib2).
 arc(r_0008_0009__team,r_0008_0012__leadership,r_0008_0010__under).
-arc(r_0008_0012__leadership,r_0008_0014__Sir_Pierson_Dixon,r_0008_0013__of).
-arc(r_0008_0014__Sir_Pierson_Dixon,r_0008_0020__Ambassador,prn5).
+arc(r_0008_0012__leadership,r_0008_0014__Sir__r_0008_0015__Pierson_r_0008_0016__Dixon,r_0008_0013__of).
+arc(r_0008_0014__Sir__r_0008_0015__Pierson_r_0008_0016__Dixon,r_0008_0020__Ambassador,prn5).
 arc(r_0008_0020__Ambassador,r_0008_0018__Britain,genv).
 arc(r_0008_0020__Ambassador,r_0008_0022__France,r_0008_0021__to).
 arc(r_0008_0025__back,r_0008_0009__team,arg0).
-arc(r_0008_0025__back,r_0008_0026__Mr_Edward_Heath,arg1).
-arc(r_0008_0026__Mr_Edward_Heath,r_0008_0030__Lord_Privy_Seal,prn5).
+arc(r_0008_0025__back,r_0008_0026__Mr__r_0008_0027__Edward_r_0008_0028__Heath,arg1).
+arc(r_0008_0026__Mr__r_0008_0027__Edward_r_0008_0028__Heath,r_0008_0030__Lord_r_0008_0031__Privy_r_0008_0032__Seal,prn5).
 arc(r_0008_0035__is,r_0008_0036__charged,catenative).
-arc(r_0008_0036__charged,r_0008_0026__Mr_Edward_Heath,arg1).
+arc(r_0008_0036__charged,r_0008_0026__Mr__r_0008_0027__Edward_r_0008_0028__Heath,arg1).
 arc(r_0008_0036__charged,r_0008_0039__conduct,r_0008_0037__with_clr).
 arc(r_0008_0039__conduct,r_0008_0041__negotiations,r_0008_0040__of).
 arc(r_0008_0041__negotiations,r_0008_0044__six,r_0008_0042__with).
+arc(r_0008_1006__cnt,r_0008_0004__will,scope).
+arc(r_0008_1006__cnt,r_0008_0025__back,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_8_A_lob_A02,axiom,
+fof(id__8_A_lob_A02,axiom,
     ? [CATENATIVEX9,OPERATORX1,CONNX7,EVENTX16,EVENTX15,EVENTX14,OPERATORX17,EVENTX18,ENTITYX2,ENTITYX8,ENTITYX11,ENTITYX12,ENTITYX13,ENTITYX4,ENTITYX5,ATTRIBX3] :
       ( CATENATIVEX9 = EVENTX14
       &amp; isA(EVENTX14,r_0008_0036__charged)
-      &amp; arg1(EVENTX14) = r_0008_0026__Mr_Edward_Heath
+      &amp; arg1(EVENTX14) = r_0008_0026__Mr__r_0008_0027__Edward_r_0008_0028__Heath
       &amp; r_0008_0037__with_clr(EVENTX14) = ENTITYX11
       &amp; isA(ENTITYX2,r_0008_0009__team)
       &amp; attrib2(ENTITYX2) = ATTRIBX3
       &amp; r_0008_0010__under(ENTITYX2) = ENTITYX4
       &amp; isA(ENTITYX4,r_0008_0012__leadership)
-      &amp; r_0008_0013__of(ENTITYX4) = r_0008_0014__Sir_Pierson_Dixon
+      &amp; r_0008_0013__of(ENTITYX4) = r_0008_0014__Sir__r_0008_0015__Pierson_r_0008_0016__Dixon
       &amp; isA(ENTITYX5,r_0008_0020__Ambassador)
       &amp; genv(ENTITYX5) = r_0008_0018__Britain
       &amp; r_0008_0021__to(ENTITYX5) = r_0008_0022__France
-      &amp; isA(ENTITYX8,r_0008_0030__Lord_Privy_Seal)
+      &amp; isA(ENTITYX8,r_0008_0030__Lord__r_0008_0031__Privy_r_0008_0032__Seal)
       &amp; isA(ENTITYX11,r_0008_0039__conduct)
       &amp; r_0008_0040__of(ENTITYX11) = ENTITYX12
       &amp; isA(ENTITYX12,r_0008_0041__negotiations)
       &amp; r_0008_0042__with(ENTITYX12) = ENTITYX13
       &amp; isA(ENTITYX13,r_0008_0044__six)
-      &amp; isA(r_0008_0014__Sir_Pierson_Dixon,r_0008_0014__Sir_Pierson_Dixon)
-      &amp; prn5(r_0008_0014__Sir_Pierson_Dixon) = ENTITYX5
+      &amp; isA(r_0008_0014__Sir__r_0008_0015__Pierson_r_0008_0016__Dixon,r_0008_0014__Sir_r_0008_0015__Pierson_r_0008_0016__Dixon)
+      &amp; prn5(r_0008_0014__Sir__r_0008_0015__Pierson_r_0008_0016__Dixon) = ENTITYX5
       &amp; isA(EVENTX15,r_0008_0035__is)
       &amp; catenative(EVENTX15) = CATENATIVEX9
-      &amp; isA(r_0008_0026__Mr_Edward_Heath,r_0008_0026__Mr_Edward_Heath)
-      &amp; prn5(r_0008_0026__Mr_Edward_Heath) = ENTITYX8
+      &amp; isA(r_0008_0026__Mr__r_0008_0027__Edward_r_0008_0028__Heath,r_0008_0026__Mr_r_0008_0027__Edward_r_0008_0028__Heath)
+      &amp; prn5(r_0008_0026__Mr__r_0008_0027__Edward_r_0008_0028__Heath) = ENTITYX8
       &amp; isA(ATTRIBX3,r_0008_0008__hand_picked)
       &amp; isA(OPERATORX1,r_0008_0001__Instead)
       &amp; scope(OPERATORX1) = CONNX7
-      &amp; isA(CONNX7,cnt_0008_1006)
+      &amp; isA(CONNX7,r_0008_1006__cnt)
       &amp; scope(CONNX7) = OPERATORX17
       &amp; isA(OPERATORX17,r_0008_0004__will)
       &amp; scope(OPERATORX17) = EVENTX18
       &amp; isA(EVENTX18,r_0008_0005__rely)
-      &amp; arg0(EVENTX18) = r_0008_0002__Mr_Macmillan
+      &amp; arg0(EVENTX18) = r_0008_0002__Mr__r_0008_0003__Macmillan
       &amp; r_0008_0006__on_clr(EVENTX18) = ENTITYX2
       &amp; restriction(CONNX7) = EVENTX16
       &amp; isA(EVENTX16,r_0008_0025__back)
       &amp; arg0(EVENTX16) = ENTITYX2
-      &amp; arg1(EVENTX16) = r_0008_0026__Mr_Edward_Heath ) ).
+      &amp; arg1(EVENTX16) = r_0008_0026__Mr__r_0008_0027__Edward_r_0008_0028__Heath ) ).
 
 
 </pre>

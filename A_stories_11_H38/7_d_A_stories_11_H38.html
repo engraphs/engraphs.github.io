@@ -455,48 +455,48 @@ She ran out of the shop , told the man how sorry she was , and made Stephen and 
 </svg>
 <br>
 <pre>
-arc(abs_0009_1004,r_0009_0005__were,scope).
-arc(abs_0009_1004,r_0009_0008__watching,restriction).
-arc(mnr_0009_1008,r_0009_0006__dying,scope).
-arc(mnr_0009_1008,r_0009_0007__laughing,restriction).
-arc(question_0009_1025,r_0010_0013__was,scope).
-arc(r_0009_0005__were,mnr_0009_1008,catenative).
 arc(r_0009_0005__were,r_0009_0003__time,r_0009_0001__By_tmp).
+arc(r_0009_0005__were,r_0009_1008__mnr,catenative).
 arc(r_0009_0006__dying,r_0009_0004__we,arg0).
 arc(r_0009_0007__laughing,r_0009_0004__we,arg0).
 arc(r_0009_0008__watching,r_0009_0004__we,arg0).
 arc(r_0009_0008__watching,r_0009_0009__them,arg1).
-arc(r_0009_0011__but,abs_0009_1004,conj1).
 arc(r_0009_0011__but,r_0009_0014__was,conj2).
+arc(r_0009_0011__but,r_0009_1004__abs,conj1).
 arc(r_0009_0014__was,r_0009_0015__n_apos_t,catenative).
 arc(r_0009_0015__n_apos_t,z_0009_1015,scope).
-arc(r_0010_0002__ran,r_0009_0012__Mrs_Smith,arg0).
+arc(r_0009_1004__abs,r_0009_0005__were,scope).
+arc(r_0009_1004__abs,r_0009_0008__watching,restriction).
+arc(r_0009_1008__mnr,r_0009_0006__dying,scope).
+arc(r_0009_1008__mnr,r_0009_0007__laughing,restriction).
+arc(r_0009_1025__question,r_0010_0013__was,scope).
+arc(r_0010_0002__ran,r_0009_0012__Mrs__r_0009_0013__Smith,arg0).
 arc(r_0010_0002__ran,r_0010_0005__shop,r_0010_0003__out_of_clr_dir).
-arc(r_0010_0007__told,question_0009_1025,arg1).
-arc(r_0010_0007__told,r_0009_0012__Mrs_Smith,arg0).
+arc(r_0010_0007__told,r_0009_0012__Mrs__r_0009_0013__Smith,arg0).
+arc(r_0010_0007__told,r_0009_1025__question,arg1).
 arc(r_0010_0007__told,r_0010_0009__man,arg2).
 arc(r_0010_0011__sorry,r_0010_0010__how,quality1).
-arc(r_0010_0013__was,r_0009_0012__Mrs_Smith,arg0).
+arc(r_0010_0013__was,r_0009_0012__Mrs__r_0009_0013__Smith,arg0).
 arc(r_0010_0013__was,r_0010_0011__sorry,prd2).
 arc(r_0010_0015__and,r_0010_0002__ran,conj1).
 arc(r_0010_0015__and,r_0010_0007__told,conj2).
 arc(r_0010_0015__and,r_0010_0016__made,conj3).
-arc(r_0010_0016__made,r_0009_0012__Mrs_Smith,arg0).
+arc(r_0010_0016__made,r_0009_0012__Mrs__r_0009_0013__Smith,arg0).
 arc(r_0010_0016__made,r_0010_0018__and,arg1).
 arc(r_0010_0016__made,r_0010_0020__walk,prd).
 arc(r_0010_0018__and,r_0009_0009__them,z_0009_1033).
 arc(r_0010_0018__and,r_0010_0017__Stephen,conj1).
 arc(r_0010_0018__and,r_0010_0019__Russell,conj2).
 arc(r_0010_0020__walk,r_0010_0022__Bluche,r_0010_0021__down_to_clr_dir).
-arc(z_0009_1015,r_0009_0012__Mrs_Smith,arg0).
+arc(z_0009_1015,r_0009_0012__Mrs__r_0009_0013__Smith,arg0).
 
 </pre>
 <br>
 <pre>
-fof(id_9_A_stories_11_H38__10_A_stories_11_H38,axiom,
+fof(id__9_A_stories_11_H38__10_A_stories_11_H38,axiom,
     ? [CATENATIVEX7,CATENATIVEX13,STATEX23,STATEX35,MRS_SX19,MRS_SX28,STEPHEN_AND_RUSSELLX34,CONJX40,EVENTX39,EVENTX38,EVENTX30,OPERATORX25,EVENTX29,EVENTX21,CONJX18,EVENTX17,OPERATORX14,EVENTX16,CONNX5,EVENTX6,EVENTX12,CONNX9,EVENTX10,EVENTX11,ENTITYX31,ENTITYX22,ENTITYX20,ENTITYX3,ATTRIBX26,QUALITYX27] :
       ( CATENATIVEX7 = CONNX9
-      &amp; isA(CONNX9,mnr_0009_1008)
+      &amp; isA(CONNX9,r_0009_1008__mnr)
       &amp; scope(CONNX9) = EVENTX11
       &amp; isA(EVENTX11,r_0009_0006__dying)
       &amp; arg0(EVENTX11) = r_0009_0004__we
@@ -507,9 +507,9 @@ fof(id_9_A_stories_11_H38__10_A_stories_11_H38,axiom,
       &amp; isA(OPERATORX14,r_0009_0015__n_apos_t)
       &amp; scope(OPERATORX14) = EVENTX16
       &amp; isA(EVENTX16,z_0009_1015)
-      &amp; arg0(EVENTX16) = r_0009_0012__Mrs_Smith
+      &amp; arg0(EVENTX16) = r_0009_0012__Mrs__r_0009_0013__Smith
       &amp; STATEX23 = OPERATORX25
-      &amp; isA(OPERATORX25,question_0009_1025)
+      &amp; isA(OPERATORX25,r_0009_1025__question)
       &amp; scope(OPERATORX25) = EVENTX29
       &amp; isA(EVENTX29,r_0010_0013__was)
       &amp; prd2(EVENTX29) = ATTRIBX26
@@ -518,11 +518,11 @@ fof(id_9_A_stories_11_H38__10_A_stories_11_H38,axiom,
       &amp; isA(EVENTX38,r_0010_0020__walk)
       &amp; r_0010_0021__down_to_clr_dir(EVENTX38) = r_0010_0022__Bluche
       &amp; isA(ENTITYX3,r_0009_0003__time)
-      &amp; MRS_SX19 = r_0009_0012__Mrs_Smith
+      &amp; MRS_SX19 = r_0009_0012__Mrs__r_0009_0013__Smith
       &amp; isA(ENTITYX20,r_0010_0005__shop)
       &amp; isA(ENTITYX22,r_0010_0009__man)
       &amp; ( MRS_SX28 = MRS_SX19
-        | MRS_SX28 = r_0009_0012__Mrs_Smith )
+        | MRS_SX28 = r_0009_0012__Mrs__r_0009_0013__Smith )
       &amp; isA(ENTITYX31,r_0010_0018__and)
       &amp; z_0009_1033(ENTITYX31) = STEPHEN_AND_RUSSELLX34
       &amp; conj1(ENTITYX31) = r_0010_0017__Stephen
@@ -533,7 +533,7 @@ fof(id_9_A_stories_11_H38__10_A_stories_11_H38,axiom,
       &amp; isA(QUALITYX27,r_0010_0010__how)
       &amp; isA(CONJX18,r_0009_0011__but)
       &amp; conj1(CONJX18) = CONNX5
-      &amp; isA(CONNX5,abs_0009_1004)
+      &amp; isA(CONNX5,r_0009_1004__abs)
       &amp; scope(CONNX5) = EVENTX12
       &amp; isA(EVENTX12,r_0009_0005__were)
       &amp; r_0009_0001__By_tmp(EVENTX12) = ENTITYX3

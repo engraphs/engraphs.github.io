@@ -694,11 +694,8 @@ Tread softly because you tread on my dreams .
 </svg>
 <br>
 <pre>
-arc(abs_0002_1036,r_0003_0004__being,restriction).
-arc(abs_0002_1036,r_0003_0008__only,scope).
 arc(cnt_cnd_0002_1001,r_0002_0001__Had,restriction).
 arc(cnt_cnd_0002_1001,r_0002_0033__would,scope).
-arc(imperative_0002_1058,r_0005_0003__because_cnt,scope).
 arc(r_0002_0001__Had,r_0002_0002__I,arg0).
 arc(r_0002_0001__Had,r_0002_0007__cloths,arg1).
 arc(r_0002_0006__embroidered,r_0002_0007__cloths,arg1).
@@ -724,6 +721,9 @@ arc(r_0002_0034__spread,r_0002_0002__I,arg0).
 arc(r_0002_0034__spread,r_0002_0007__cloths,arg1).
 arc(r_0002_0034__spread,r_0002_0039__feet,r_0002_0037__under_clr_loc).
 arc(r_0002_0039__feet,r_0002_0038__your,genv).
+arc(r_0002_1036__abs,r_0003_0004__being,restriction).
+arc(r_0002_1036__abs,r_0003_0008__only,scope).
+arc(r_0002_1058__imperative,r_0005_0003__because_cnt,scope).
 arc(r_0003_0004__being,r_0002_0002__I,arg0).
 arc(r_0003_0004__being,r_0003_0005__poor,prd2).
 arc(r_0003_0007__have,r_0002_0002__I,arg0).
@@ -751,7 +751,7 @@ arc(z_0002_1023,r_0002_0023__dark,attrib2).
 </pre>
 <br>
 <pre>
-fof(id_2_A_YEATS_1899__3_A_YEATS_1899__4_A_YEATS_1899__5_A_YEATS_1899,axiom,
+fof(id__2_A_YEATS_1899__3_A_YEATS_1899__4_A_YEATS_1899__5_A_YEATS_1899,axiom,
     ? [CATENATIVEX45,SPEAKERX30,CLOTHSX31,SPEAKERX35,SPEAKERX42,SPEAKERX44,DREAMSX49,SPEAKERX50,HEARERX52,HEARERX61,DREAMSX65,SPEAKERX66,OPERATORX58,CONNX60,EVENTX67,EVENTX68,EVENTX54,EVENTX53,CONNX37,OPERATORX40,EVENTX43,EVENTX39,CONNX2,OPERATORX33,EVENTX34,EVENTX29,EVENTX6,ENTITYX62,ENTITYX46,ENTITYX51,DREAMSX41,ENTITYX32,CLOTHSX3,ENTITYX4,ENTITYX12,ENTITYX13,ENTITYX24,ENTITYX25,ENTITYX26,ENTITYX27,ENTITYX28,ENTITYX14,ENTITYX17,ENTITYX18,ENTITYX21,ENTITYX8,ATTRIBX38,ATTRIBX7,ATTRIBX22,ATTRIBX19,ATTRIBX15,ATTRIBX9,ATTRIBX10,ATTRIBX11,QUALITYX59] :
       ( CATENATIVEX45 = EVENTX53
       &amp; isA(EVENTX53,r_0004_0003__spread)
@@ -840,7 +840,7 @@ fof(id_2_A_YEATS_1899__3_A_YEATS_1899__4_A_YEATS_1899__5_A_YEATS_1899,axiom,
       &amp; arg0(EVENTX34) = SPEAKERX30
       &amp; arg1(EVENTX34) = CLOTHSX31
       &amp; r_0002_0037__under_clr_loc(EVENTX34) = ENTITYX32
-      &amp; isA(CONNX37,abs_0002_1036)
+      &amp; isA(CONNX37,r_0002_1036__abs)
       &amp; restriction(CONNX37) = EVENTX39
       &amp; isA(EVENTX39,r_0003_0004__being)
       &amp; arg0(EVENTX39) = SPEAKERX35
@@ -853,7 +853,7 @@ fof(id_2_A_YEATS_1899__3_A_YEATS_1899__4_A_YEATS_1899__5_A_YEATS_1899,axiom,
       &amp; arg1(EVENTX43) = DREAMSX41
       &amp; isA(EVENTX54,r_0004_0002__have)
       &amp; catenative(EVENTX54) = CATENATIVEX45
-      &amp; isA(OPERATORX58,imperative_0002_1058)
+      &amp; isA(OPERATORX58,r_0002_1058__imperative)
       &amp; scope(OPERATORX58) = CONNX60
       &amp; isA(CONNX60,r_0005_0003__because_cnt)
       &amp; scope(CONNX60) = EVENTX68

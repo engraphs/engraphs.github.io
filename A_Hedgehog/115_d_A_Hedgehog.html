@@ -1050,8 +1050,6 @@ This led to the death of between of # half a million and 2 million hedgehogs bet
 </svg>
 <br>
 <pre>
-arc(cnt_0132_1055,r_0133_0048__issue,scope).
-arc(cnt_0132_1055,r_0133_0054__encouraging,restriction).
 arc(r_0132_0005__introduced,r_0132_0004__legislation,arg0).
 arc(r_0132_0005__introduced,r_0132_0008__House,r_0132_0006__in_loc).
 arc(r_0132_0005__introduced,r_0132_0013__despair,r_0132_0010__to_mnr).
@@ -1077,26 +1075,28 @@ arc(r_0132_0047__in_order_cnt,r_0132_0049__feed,restriction).
 arc(r_0132_0049__feed,r_0132_0038__hedgehog,arg0).
 arc(r_0132_0049__feed,r_0132_0038__hedgehog,arg1).
 arc(r_0132_0049__feed,r_0132_0052__milk,r_0132_0051__on_mnr).
+arc(r_0132_1055__cnt,r_0133_0048__issue,scope).
+arc(r_0132_1055__cnt,r_0133_0054__encouraging,restriction).
 arc(r_0133_0002__led,r_0133_0001__This,arg0).
 arc(r_0133_0002__led,r_0133_0005__death,r_0133_0003__to_clr).
 arc(r_0133_0005__death,r_0133_0016__hedgehogs,r_0133_0006__of).
 arc(r_0133_0005__death,r_0133_0019__and,r_0133_0017__between).
 arc(r_0133_0005__death,r_0133_0023__subject,prn6).
-arc(r_0133_0010__quantificational__half,r_0133_0012__million,restriction).
-arc(r_0133_0010__quantificational__half,r_0133_0013__and,scope).
+arc(r_0133_0010__quantificational__r_0133_0010__half,r_0133_0012__million,restriction).
+arc(r_0133_0010__quantificational__r_0133_0010__half,r_0133_0013__and,scope).
 arc(r_0133_0013__and,r_0133_0012__million,conj1).
-arc(r_0133_0013__and,r_0133_0014__2_million,conj2).
+arc(r_0133_0013__and,r_0133_0014__2__r_0133_0015__million,conj2).
 arc(r_0133_0016__hedgehogs,r_0133_0013__and,r_0133_0007__between).
 arc(r_0133_0019__and,r_0133_0018__1566,conj1).
 arc(r_0133_0019__and,r_0133_0020__1800,conj2).
 arc(r_0133_0026__takes,r_0133_0023__subject,arg1).
-arc(r_0133_0026__takes,r_0133_0024__John_Clare,arg0).
+arc(r_0133_0026__takes,r_0133_0024__John__r_0133_0025__Clare,arg0).
 arc(r_0133_0026__takes,r_0133_0027__forward,dir4).
 arc(r_0133_0026__takes,r_0133_0030__poem,r_0133_0028__in_loc).
 arc(r_0133_0030__poem,r_0133_0032__1805,r_0133_0031__of).
 arc(r_0133_0033__and,r_0133_0026__takes,conj1).
 arc(r_0133_0033__and,r_0133_0035__led,conj2).
-arc(r_0133_0035__led,cnt_0132_1055,arg1).
+arc(r_0133_0035__led,r_0132_1055__cnt,arg1).
 arc(r_0133_0035__led,r_0133_0023__subject,arg0).
 arc(r_0133_0035__led,r_0133_0038__Department,arg2).
 arc(r_0133_0035__led,r_0133_0046__1908,r_0133_0045__in_tmp).
@@ -1135,7 +1135,7 @@ arc(z_0132_1047,r_0133_0037__own,attrib2).
 </pre>
 <br>
 <pre>
-fof(id_132_A_Hedgehog,axiom,
+fof(id__132_A_Hedgehog,axiom,
     ? [CATENATIVEX11,STATEX15,STATEX51,STATEX58,STATEX59,STATEX71,STATEX75,HEDGEHOGX21,SPEAKERX45,FARMERSX57,HEDGEHOGX60,EVENTX89,CONJX88,EVENTX87,CONNX56,EVENTX85,OPERATORX83,EVENTX84,CONNX65,EVENTX81,EVENTX80,EVENTX79,EVENTX82,EVENTX86,EVENTX42,QUANTX31,EVENTX26,EVENTX25,CONNX20,EVENTX23,EVENTX24,EVENTX10,EVENTX6,QUALITYX70,QUALITYX39,QUALITYX1,ENTITYX27,ENTITYX28,ENTITYX33,ENTITYX36,ENTITYX43,ENTITYX50,ENTITYX52,ENTITYX61,ENTITYX62,ENTITYX66,ENTITYX67,ENTITYX78,ENTITYX68,ENTITYX63,FARMERSX54,ENTITYX44,ENTITYX48,ENTITYX49,ENTITYX40,ENTITYX41,ENTITYX34,ENTITYX35,ENTITYX29,ENTITYX30,ENTITYX32,ENTITYX2,ENTITYX13,ENTITYX14,HEDGEHOGX16,ENTITYX17,ENTITYX22,ENTITYX18,ENTITYX7,ENTITYX8,ENTITYX9,ENTITYX3,ENTITYX5,ATTRIBX69,ATTRIBX74,ATTRIBX64,ATTRIBX53,ATTRIBX46,ATTRIBX19,ATTRIBX4] :
       ( CATENATIVEX11 = EVENTX25
       &amp; isA(EVENTX25,r_0132_0029__based)
@@ -1153,7 +1153,7 @@ fof(id_132_A_Hedgehog,axiom,
       &amp; arg1(EVENTX23) = HEDGEHOGX21
       &amp; r_0132_0051__on_mnr(EVENTX23) = ENTITYX22
       &amp; STATEX51 = CONNX56
-      &amp; isA(CONNX56,cnt_0132_1055)
+      &amp; isA(CONNX56,r_0132_1055__cnt)
       &amp; scope(CONNX56) = EVENTX86
       &amp; isA(EVENTX86,r_0133_0048__issue)
       &amp; arg0(EVENTX86) = ENTITYX43
@@ -1225,14 +1225,14 @@ fof(id_132_A_Hedgehog,axiom,
       &amp; prn6(ENTITYX27) = ENTITYX36
       &amp; isA(ENTITYX28,r_0133_0016__hedgehogs)
       &amp; r_0133_0007__between(ENTITYX28) = ENTITYX29
-      &amp; isA(QUANTX31,r_0133_0010__quantificational__half)
+      &amp; isA(QUANTX31,r_0133_0010__quantificational__r_0133_0010__half)
       &amp; restriction(QUANTX31) = ENTITYX30
       &amp; isA(ENTITYX30,r_0133_0012__million)
       &amp; scope(QUANTX31) = ENTITYX29
       &amp; isA(ENTITYX29,r_0133_0013__and)
       &amp; conj1(ENTITYX29) = ENTITYX30
       &amp; conj2(ENTITYX29) = ENTITYX32
-      &amp; isA(ENTITYX32,r_0133_0014__2_million)
+      &amp; isA(ENTITYX32,r_0133_0014__2__r_0133_0015__million)
       &amp; isA(ENTITYX33,r_0133_0019__and)
       &amp; conj1(ENTITYX33) = ENTITYX34
       &amp; conj2(ENTITYX33) = ENTITYX35
@@ -1241,9 +1241,9 @@ fof(id_132_A_Hedgehog,axiom,
       &amp; isA(CONJX88,r_0133_0033__and)
       &amp; conj1(CONJX88) = EVENTX42
       &amp; isA(EVENTX42,r_0133_0026__takes)
-      &amp; arg0(EVENTX42) = r_0133_0024__John_Clare
+      &amp; arg0(EVENTX42) = r_0133_0024__John__r_0133_0025__Clare
       &amp; arg1(EVENTX42) = ENTITYX36
-      &amp; arg0(EVENTX42) = r_0133_0024__John_Clare
+      &amp; arg0(EVENTX42) = r_0133_0024__John__r_0133_0025__Clare
       &amp; dir4(EVENTX42) = QUALITYX39
       &amp; r_0133_0028__in_loc(EVENTX42) = ENTITYX40
       &amp; conj2(CONJX88) = EVENTX87

@@ -210,43 +210,43 @@ They discussed a sit-down at Watford at 5.30 p.m &mdash; none was planned but po
 arc(r_0070_0002__discussed,r_0070_0001__They,arg0).
 arc(r_0070_0002__discussed,r_0070_0004__sit_down,arg1).
 arc(r_0070_0002__discussed,r_0070_0006__Watford,r_0070_0005__at_loc).
-arc(r_0070_0002__discussed,r_0070_0008__5.30,r_0070_0007__at_tmp).
+arc(r_0070_0002__discussed,r_0070_0008__5_30,r_0070_0007__at_tmp).
 arc(r_0070_0002__discussed,r_0070_0014__but,prn7).
-arc(r_0070_0008__5.30,r_0070_0009__p.m,quality2).
-arc(r_0070_0011__quantificational__none,r_0070_0012__was,scope).
-arc(r_0070_0011__quantificational__none,z_0070_1009,restriction).
+arc(r_0070_0008__5_30,r_0070_0009__p_m,quality2).
+arc(r_0070_0011__quantificational__r_0070_0011__none,r_0070_0012__was,scope).
+arc(r_0070_0011__quantificational__r_0070_0011__none,z_0070_1009,restriction).
 arc(r_0070_0012__was,r_0070_0013__planned,catenative).
 arc(r_0070_0013__planned,z_0070_1009,arg1).
-arc(r_0070_0014__but,r_0070_0011__quantificational__none,conj1).
-arc(r_0070_0014__but,r_0070_0016__turned_up,conj2).
-arc(r_0070_0016__turned_up,r_0070_0015__police,arg0).
+arc(r_0070_0014__but,r_0070_0011__quantificational__r_0070_0011__none,conj1).
+arc(r_0070_0014__but,r_0070_0016__turned__r_0070_0017__up,conj2).
+arc(r_0070_0016__turned__r_0070_0017__up,r_0070_0015__police,arg0).
 
 </pre>
 <br>
 <pre>
-fof(id_70_A_lob_A02,axiom,
+fof(id__70_A_lob_A02,axiom,
     ? [EVENTX4,CATENATIVEX10,EVENTX17,CONJX16,EVENTX15,QUANTX8,EVENTX13,EVENTX12,ENTITYX1,ENTITYX2,ENTITYX14,ENTITYX7,QUALITYX3] :
       ( EVENTX4 = CONJX16
       &amp; isA(CONJX16,r_0070_0014__but)
       &amp; conj1(CONJX16) = QUANTX8
-      &amp; isA(QUANTX8,r_0070_0011__quantificational__none)
+      &amp; isA(QUANTX8,r_0070_0011__quantificational__r_0070_0011__none)
       &amp; restriction(QUANTX8) = ENTITYX7
       &amp; isA(ENTITYX7,z_0070_1009)
       &amp; scope(QUANTX8) = EVENTX13
       &amp; isA(EVENTX13,r_0070_0012__was)
       &amp; catenative(EVENTX13) = CATENATIVEX10
       &amp; conj2(CONJX16) = EVENTX15
-      &amp; isA(EVENTX15,r_0070_0016__turned_up)
+      &amp; isA(EVENTX15,r_0070_0016__turned__r_0070_0017__up)
       &amp; arg0(EVENTX15) = ENTITYX14
       &amp; arg0(EVENTX15) = ENTITYX14
       &amp; CATENATIVEX10 = EVENTX12
       &amp; isA(EVENTX12,r_0070_0013__planned)
       &amp; arg1(EVENTX12) = ENTITYX7
       &amp; isA(ENTITYX1,r_0070_0004__sit_down)
-      &amp; isA(ENTITYX2,r_0070_0008__5.30)
+      &amp; isA(ENTITYX2,r_0070_0008__5_30)
       &amp; quality2(ENTITYX2) = QUALITYX3
       &amp; isA(ENTITYX14,r_0070_0015__police)
-      &amp; isA(QUALITYX3,r_0070_0009__p.m)
+      &amp; isA(QUALITYX3,r_0070_0009__p_m)
       &amp; isA(EVENTX17,r_0070_0002__discussed)
       &amp; arg0(EVENTX17) = r_0070_0001__They
       &amp; arg1(EVENTX17) = ENTITYX1

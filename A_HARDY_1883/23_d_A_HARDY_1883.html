@@ -148,22 +148,22 @@ The lights were scattered about the room , two of them standing on the chimney-p
 </svg>
 <br>
 <pre>
-arc(abs_0026_1005,r_0026_0004__scattered,scope).
-arc(abs_0026_1005,r_0026_0012__standing,restriction).
-arc(r_0026_0003__were,abs_0026_1005,catenative).
+arc(r_0026_0003__were,r_0026_1005__abs,catenative).
 arc(r_0026_0004__scattered,r_0026_0002__lights,arg1).
 arc(r_0026_0004__scattered,r_0026_0007__room,r_0026_0005__about_dir).
 arc(r_0026_0009__two,r_0026_0011__them,r_0026_0010__of).
 arc(r_0026_0012__standing,r_0026_0009__two,arg0).
 arc(r_0026_0012__standing,r_0026_0015__chimney_piece,r_0026_0013__on_loc).
+arc(r_0026_1005__abs,r_0026_0004__scattered,scope).
+arc(r_0026_1005__abs,r_0026_0012__standing,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_26_A_HARDY_1883,axiom,
+fof(id__26_A_HARDY_1883,axiom,
     ? [CATENATIVEX2,EVENTX11,CONNX6,EVENTX9,EVENTX10,ENTITYX1,ENTITYX4,ENTITYX7,ENTITYX8] :
       ( CATENATIVEX2 = CONNX6
-      &amp; isA(CONNX6,abs_0026_1005)
+      &amp; isA(CONNX6,r_0026_1005__abs)
       &amp; scope(CONNX6) = EVENTX10
       &amp; isA(EVENTX10,r_0026_0004__scattered)
       &amp; arg1(EVENTX10) = ENTITYX1

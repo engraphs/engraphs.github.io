@@ -200,7 +200,6 @@ Please contact the retailer from whom the watch was purchased for inspection and
 </svg>
 <br>
 <pre>
-arc(imperative_0092_1002,r_0092_0002__contact,scope).
 arc(r_0092_0002__contact,r_0092_0004__retailer,arg1).
 arc(r_0092_0009__was,r_0092_0010__purchased,catenative).
 arc(r_0092_0010__purchased,r_0092_0004__retailer,r_0092_0005__from_dir).
@@ -212,11 +211,12 @@ arc(r_0092_0013__and,r_0092_0017__and,r_0092_0015__by).
 arc(r_0092_0013__and,r_0092_0020__overhaul,prn4).
 arc(r_0092_0017__and,r_0092_0016__disassembly,conj1).
 arc(r_0092_0017__and,r_0092_0018__cleaning,conj2).
+arc(r_0092_1002__imperative,r_0092_0002__contact,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_92_A_seiko_9R65,axiom,
+fof(id__92_A_seiko_9R65,axiom,
     ? [CATENATIVEX6,OPERATORX2,EVENTX17,EVENTX16,EVENTX15,ENTITYX4,ENTITYX5,ENTITYX8,ENTITYX9,ENTITYX12,ENTITYX13,ENTITYX14,ENTITYX10,ENTITYX11] :
       ( CATENATIVEX6 = EVENTX15
       &amp; isA(EVENTX15,r_0092_0010__purchased)
@@ -240,7 +240,7 @@ fof(id_92_A_seiko_9R65,axiom,
       &amp; isA(ENTITYX12,r_0092_0020__overhaul)
       &amp; isA(ENTITYX13,r_0092_0012__inspection)
       &amp; isA(ENTITYX14,r_0092_0014__adjustment)
-      &amp; isA(OPERATORX2,imperative_0092_1002)
+      &amp; isA(OPERATORX2,r_0092_1002__imperative)
       &amp; scope(OPERATORX2) = EVENTX17
       &amp; isA(EVENTX17,r_0092_0002__contact)
       &amp; arg1(EVENTX17) = ENTITYX4 ) ).

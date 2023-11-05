@@ -306,7 +306,7 @@ They will accompany Mr Heath next month when he goes to Brussels , headquarters 
 <pre>
 arc(r_0020_0002__will,r_0020_0003__accompany,scope).
 arc(r_0020_0003__accompany,r_0020_0001__They,arg0).
-arc(r_0020_0003__accompany,r_0020_0004__Mr_Heath,arg1).
+arc(r_0020_0003__accompany,r_0020_0004__Mr__r_0020_0005__Heath,arg1).
 arc(r_0020_0003__accompany,r_0020_0007__month,tmp).
 arc(r_0020_0007__month,r_0020_0006__next,attrib1).
 arc(r_0020_0008__when_tmp,r_0020_0002__will,scope).
@@ -314,8 +314,8 @@ arc(r_0020_0008__when_tmp,r_0020_0010__goes,restriction).
 arc(r_0020_0010__goes,r_0020_0009__he,arg0).
 arc(r_0020_0010__goes,r_0020_0021__or,r_0020_0011__to_dir).
 arc(r_0020_0012__Brussels,r_0020_0014__headquarters,prn3).
-arc(r_0020_0014__headquarters,r_0020_0018__market_commission,r_0020_0015__of).
-arc(r_0020_0018__market_commission,r_0020_0017__common,attrib2).
+arc(r_0020_0014__headquarters,r_0020_0018__market__r_0020_0019__commission,r_0020_0015__of).
+arc(r_0020_0018__market__r_0020_0019__commission,r_0020_0017__common,attrib2).
 arc(r_0020_0021__or,r_0020_0012__Brussels,conj1).
 arc(r_0020_0021__or,z_0020_1018,conj2).
 arc(r_0020_0025__decide,r_0020_0024__six,arg0).
@@ -328,7 +328,7 @@ arc(r_0020_0029__held,z_0020_1018,loc2).
 </pre>
 <br>
 <pre>
-fof(id_20_A_lob_A02,axiom,
+fof(id__20_A_lob_A02,axiom,
     ? [STATEX10,CATENATIVEX13,CONNX3,EVENTX19,EVENTX17,OPERATORX12,EVENTX16,EVENTX15,OPERATORX20,EVENTX21,ENTITYX1,ENTITYX4,ENTITYX8,ENTITYX9,ENTITYX11,ENTITYX5,ENTITYX6,ATTRIBX7,ATTRIBX2] :
       ( STATEX10 = OPERATORX12
       &amp; isA(OPERATORX12,r_0020_0027__should)
@@ -346,7 +346,7 @@ fof(id_20_A_lob_A02,axiom,
       &amp; conj2(ENTITYX4) = ENTITYX8
       &amp; isA(ENTITYX5,r_0020_0014__headquarters)
       &amp; r_0020_0015__of(ENTITYX5) = ENTITYX6
-      &amp; isA(ENTITYX6,r_0020_0018__market_commission)
+      &amp; isA(ENTITYX6,r_0020_0018__market__r_0020_0019__commission)
       &amp; attrib2(ENTITYX6) = ATTRIBX7
       &amp; isA(EVENTX17,r_0020_0025__decide)
       &amp; arg0(EVENTX17) = ENTITYX9
@@ -364,7 +364,7 @@ fof(id_20_A_lob_A02,axiom,
       &amp; scope(OPERATORX20) = EVENTX21
       &amp; isA(EVENTX21,r_0020_0003__accompany)
       &amp; arg0(EVENTX21) = r_0020_0001__They
-      &amp; arg1(EVENTX21) = r_0020_0004__Mr_Heath
+      &amp; arg1(EVENTX21) = r_0020_0004__Mr__r_0020_0005__Heath
       &amp; tmp(EVENTX21) = ENTITYX1
       &amp; restriction(CONNX3) = EVENTX19
       &amp; isA(EVENTX19,r_0020_0010__goes)

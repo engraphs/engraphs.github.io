@@ -178,7 +178,7 @@ Draw me a sheep . &rdquo;
 <title>0074_0004&#45;&gt;0074_0006</title>
 <path fill="none" stroke="black" d="M769.27,-174.16C771.13,-168.48 772.91,-162.04 773.84,-156 774.98,-148.58 774.57,-140.53 773.52,-133.1"/>
 <polygon fill="black" stroke="black" points="776.95,-132.35 771.72,-123.14 770.06,-133.61 776.95,-132.35"/>
-<text text-anchor="middle" x="795.34" y="-144.8" font-family="fixed" font-size="14.00">[arg1]</text>
+<text text-anchor="middle" x="795.34" y="-144.8" font-family="fixed" font-size="14.00">[prd2]</text>
 </g>
 <!-- 0075_0001 -->
 <g id="node12" class="node">
@@ -237,18 +237,18 @@ Draw me a sheep . &rdquo;
 </svg>
 <br>
 <pre>
-arc(imperative_0073_1019,r_0075_0001__Draw,scope).
 arc(r_0073_0003__live,r_0073_0002__I,arg0).
 arc(r_0073_0003__live,z_0073_1003,loc1).
-arc(r_0073_0005__quantificational__everything,r_0073_0006__is,scope).
-arc(r_0073_0005__quantificational__everything,z_0073_1006,restriction).
+arc(r_0073_0005__quantificational__r_0073_0005__everything,r_0073_0006__is,scope).
+arc(r_0073_0005__quantificational__r_0073_0005__everything,z_0073_1006,restriction).
 arc(r_0073_0006__is,r_0073_0008__small,prd2).
 arc(r_0073_0006__is,z_0073_1003,loc).
 arc(r_0073_0006__is,z_0073_1006,arg0).
 arc(r_0073_0008__small,r_0073_0007__very,quality1).
+arc(r_0073_1019__imperative,r_0075_0001__Draw,scope).
 arc(r_0074_0003__need,r_0073_0002__I,arg0).
 arc(r_0074_0003__need,z_0073_1013,arg1).
-arc(r_0074_0004__is,r_0074_0006__sheep,arg1).
+arc(r_0074_0004__is,r_0074_0006__sheep,prd2).
 arc(r_0074_0004__is,z_0073_1013,arg0).
 arc(r_0075_0001__Draw,r_0073_0002__I,arg2).
 arc(r_0075_0001__Draw,r_0074_0006__sheep,arg1).
@@ -256,7 +256,7 @@ arc(r_0075_0001__Draw,r_0074_0006__sheep,arg1).
 </pre>
 <br>
 <pre>
-fof(id_73_A_SAINT_EXUPERY_1943__74_A_SAINT_EXUPERY_1943__75_A_SAINT_EXUPERY_1943,axiom,
+fof(id__73_A_SAINT_EXUPERY_1943__74_A_SAINT_EXUPERY_1943__75_A_SAINT_EXUPERY_1943,axiom,
     ? [PRINCEX11,PRINCEX20,SHEEPX21,OPERATORX19,EVENTX22,EVENTX15,EVENTX12,QUANTX5,EVENTX9,EVENTX2,ENTITYX10,SHEEPX14,ENTITYX1,ENTITYX4,QUALITYX8,ATTRIBX7] :
       ( isA(EVENTX2,r_0073_0003__live)
       &amp; loc1(EVENTX2) = ENTITYX1
@@ -273,7 +273,7 @@ fof(id_73_A_SAINT_EXUPERY_1943__74_A_SAINT_EXUPERY_1943__75_A_SAINT_EXUPERY_1943
       &amp; isA(QUALITYX8,r_0073_0007__very)
       &amp; isA(ATTRIBX7,r_0073_0008__small)
       &amp; quality1(ATTRIBX7) = QUALITYX8
-      &amp; isA(QUANTX5,r_0073_0005__quantificational__everything)
+      &amp; isA(QUANTX5,r_0073_0005__quantificational__r_0073_0005__everything)
       &amp; restriction(QUANTX5) = ENTITYX4
       &amp; isA(ENTITYX4,z_0073_1006)
       &amp; scope(QUANTX5) = EVENTX9
@@ -283,8 +283,8 @@ fof(id_73_A_SAINT_EXUPERY_1943__74_A_SAINT_EXUPERY_1943__75_A_SAINT_EXUPERY_1943
       &amp; prd2(EVENTX9) = ATTRIBX7
       &amp; isA(EVENTX15,r_0074_0004__is)
       &amp; arg0(EVENTX15) = ENTITYX10
-      &amp; arg1(EVENTX15) = SHEEPX14
-      &amp; isA(OPERATORX19,imperative_0073_1019)
+      &amp; prd2(EVENTX15) = SHEEPX14
+      &amp; isA(OPERATORX19,r_0073_1019__imperative)
       &amp; scope(OPERATORX19) = EVENTX22
       &amp; isA(EVENTX22,r_0075_0001__Draw)
       &amp; arg2(EVENTX22) = PRINCEX20
@@ -382,19 +382,19 @@ fof(id_73_A_SAINT_EXUPERY_1943__74_A_SAINT_EXUPERY_1943__75_A_SAINT_EXUPERY_1943
 <line x1="180.72" y1="183" x2="300" y2="214" style="stroke:#000000;stroke-width:2;"/>
 <line x1="180.72" y1="122" x2="180" y2="153" style="stroke:#000000;stroke-width:2;"/>
 <line x1="420.72" y1="61" x2="180" y2="92" style="stroke:#000000;stroke-width:2;"/>
-<text x="420.36" y="112" text-anchor="middle">BEP</text>
-<text x="420.36" y="173" text-anchor="middle">is</text>
-<line x1="420.36" y1="122" x2="420.36" y2="153" style="stroke:#000000;stroke-width:2;"/>
+<text x="420.84" y="112" text-anchor="middle">BEP;~Ln</text>
+<text x="420.84" y="173" text-anchor="middle">is</text>
+<line x1="420.84" y1="122" x2="420.84" y2="153" style="stroke:#000000;stroke-width:2;"/>
 <line x1="420.72" y1="61" x2="420" y2="92" style="stroke:#000000;stroke-width:2;"/>
-<text x="600.72" y="112" text-anchor="middle">NP-OB1</text>
+<text x="600.84" y="112" text-anchor="middle">NP-PRD2</text>
 <text x="540.12" y="173" text-anchor="middle">D</text>
 <text x="540.12" y="234" text-anchor="middle">a</text>
 <line x1="540.12" y1="183" x2="540.12" y2="214" style="stroke:#000000;stroke-width:2;"/>
-<line x1="600.72" y1="122" x2="540" y2="153" style="stroke:#000000;stroke-width:2;"/>
+<line x1="600.84" y1="122" x2="540" y2="153" style="stroke:#000000;stroke-width:2;"/>
 <text x="660.6" y="173" text-anchor="middle">N</text>
 <text x="660.6" y="234" text-anchor="middle">sheep</text>
 <line x1="660.6" y1="183" x2="660.6" y2="214" style="stroke:#000000;stroke-width:2;"/>
-<line x1="600.72" y1="122" x2="660" y2="153" style="stroke:#000000;stroke-width:2;"/>
+<line x1="600.84" y1="122" x2="660" y2="153" style="stroke:#000000;stroke-width:2;"/>
 <line x1="420.72" y1="61" x2="600" y2="92" style="stroke:#000000;stroke-width:2;"/>
 <text x="780.48" y="112" text-anchor="middle">PUNC</text>
 <text x="780.48" y="173" text-anchor="middle">.</text>
@@ -406,9 +406,9 @@ fof(id_73_A_SAINT_EXUPERY_1943__74_A_SAINT_EXUPERY_1943__75_A_SAINT_EXUPERY_1943
 ( (IP-MAT (NP-SBJ (IP-REL (NP-OB1 (RPRO What;{what}))
                           (NP-SBJ;{PRINCE} (PRO I;{I}))
                           (VBP need;{need})))
-          (BEP is;{be})
-          (NP-OB1;{SHEEP} (D a;{a})
-                          (N sheep;{sheep}))
+          (BEP;~Ln is;{be})
+          (NP-PRD2;{SHEEP} (D a;{a})
+                           (N sheep;{sheep}))
           (PUNC .))
   (ID 74_A_SAINT_EXUPERY_1943))
 </pre>

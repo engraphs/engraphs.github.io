@@ -319,7 +319,8 @@ arc(r_0163_0003__was,r_0163_0005__scrupulous,prd2).
 arc(r_0163_0003__was,r_0163_0006__always,tmp4).
 arc(r_0163_0005__scrupulous,r_0163_0004__too,quality1).
 arc(r_0163_0010__said,r_0163_0009__she,arg0).
-arc(r_0163_0010__said,utterance_0163_1003,arg1).
+arc(r_0163_0010__said,r_0163_1003__utterance,arg1).
+arc(r_0163_1003__utterance,r_0163_0003__was,part1).
 arc(r_0164_0003__duties,r_0164_0006__priesthood,r_0164_0004__of).
 arc(r_0164_0007__was,r_0164_0003__duties,arg0).
 arc(r_0164_0007__was,z_0163_1016,prd2).
@@ -331,17 +332,16 @@ arc(r_0165_0005__was,r_0165_0011__crossed,catenative).
 arc(r_0165_0008__might,r_0165_0009__say,scope).
 arc(r_0165_0009__say,r_0165_0007__you,arg0).
 arc(r_0165_0011__crossed,r_0165_0004__life,arg1).
-arc(utterance_0163_1003,r_0163_0003__was,part1).
 arc(z_0163_1016,r_0163_0002__He,r_0164_0010__for).
 arc(z_0163_1016,r_0164_0009__much,attrib1).
 
 </pre>
 <br>
 <pre>
-fof(id_163_A_JOYCE_1914__164_A_JOYCE_1914__165_A_JOYCE_1914,axiom,
+fof(id__163_A_JOYCE_1914__164_A_JOYCE_1914__165_A_JOYCE_1914,axiom,
     ? [STATEX1,EVENTX21,CATENATIVEX24,PRIESTX15,PRIESTX20,EVENTX27,EVENTX26,OPERATORX22,EVENTX23,EVENTX17,EVENTX9,CONJX8,EVENTX7,ENTITYX19,ENTITYX10,ENTITYX12,ENTITYX11,ATTRIBX13,ATTRIBX4,QUALITYX18,QUALITYX14,QUALITYX6,QUALITYX5] :
       ( STATEX1 = CONJX8
-      &amp; isA(CONJX8,utterance_0163_1003)
+      &amp; isA(CONJX8,r_0163_1003__utterance)
       &amp; part1(CONJX8) = EVENTX7
       &amp; isA(EVENTX7,r_0163_0003__was)
       &amp; arg0(EVENTX7) = r_0163_0002__He

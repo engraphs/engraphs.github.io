@@ -231,35 +231,35 @@ Go through a turnstile at the back of the car park and follow the footpath past 
 </svg>
 <br>
 <pre>
-arc(imperative_0003_1004,r_0003_0005__until_tmp,scope).
-arc(imperative_0003_1013,r_0004_0012__and,scope).
 arc(r_0003_0001__Continue,r_0003_0004__road,r_0003_0002__along_dir).
 arc(r_0003_0005__until_tmp,r_0003_0001__Continue,scope).
 arc(r_0003_0005__until_tmp,r_0003_0007__arrive,restriction).
 arc(r_0003_0007__arrive,r_0003_0006__you,arg0).
-arc(r_0003_0007__arrive,r_0003_0010__car_park,r_0003_0008__at_loc).
+arc(r_0003_0007__arrive,r_0003_0010__car__r_0003_0011__park,r_0003_0008__at_loc).
+arc(r_0003_1004__imperative,r_0003_0005__until_tmp,scope).
+arc(r_0003_1013__imperative,r_0004_0012__and,scope).
 arc(r_0004_0001__Go,r_0004_0004__turnstile,r_0004_0002__through_dir).
 arc(r_0004_0004__turnstile,r_0004_0007__back,r_0004_0005__at).
-arc(r_0004_0007__back,r_0003_0010__car_park,r_0004_0008__of).
+arc(r_0004_0007__back,r_0003_0010__car__r_0003_0011__park,r_0004_0008__of).
 arc(r_0004_0012__and,r_0004_0001__Go,conj1).
 arc(r_0004_0012__and,r_0004_0013__follow,conj2).
 arc(r_0004_0013__follow,r_0004_0015__footpath,arg1).
-arc(r_0004_0013__follow,r_0004_0017__Garston_Hall,r_0004_0016__past_loc).
+arc(r_0004_0013__follow,r_0004_0017__Garston__r_0004_0018__Hall,r_0004_0016__past_loc).
 
 </pre>
 <br>
 <pre>
-fof(id_3_A_maptext__4_A_maptext,axiom,
+fof(id__3_A_maptext__4_A_maptext,axiom,
     ? [CAR_PARKX16,OPERATORX13,CONJX20,EVENTX19,EVENTX17,OPERATORX4,CONNX6,EVENTX8,EVENTX9,ENTITYX18,ENTITYX14,ENTITYX15,ENTITYX5,CAR_PARKX7] :
       ( isA(ENTITYX5,r_0003_0004__road)
-      &amp; isA(CAR_PARKX7,r_0003_0010__car_park)
+      &amp; isA(CAR_PARKX7,r_0003_0010__car__r_0003_0011__park)
       &amp; isA(ENTITYX14,r_0004_0004__turnstile)
       &amp; r_0004_0005__at(ENTITYX14) = ENTITYX15
       &amp; isA(ENTITYX15,r_0004_0007__back)
       &amp; r_0004_0008__of(ENTITYX15) = CAR_PARKX16
       &amp; CAR_PARKX16 = CAR_PARKX7
       &amp; isA(ENTITYX18,r_0004_0015__footpath)
-      &amp; isA(OPERATORX4,imperative_0003_1004)
+      &amp; isA(OPERATORX4,r_0003_1004__imperative)
       &amp; scope(OPERATORX4) = CONNX6
       &amp; isA(CONNX6,r_0003_0005__until_tmp)
       &amp; scope(CONNX6) = EVENTX9
@@ -269,7 +269,7 @@ fof(id_3_A_maptext__4_A_maptext,axiom,
       &amp; isA(EVENTX8,r_0003_0007__arrive)
       &amp; arg0(EVENTX8) = r_0003_0006__you
       &amp; r_0003_0008__at_loc(EVENTX8) = CAR_PARKX7
-      &amp; isA(OPERATORX13,imperative_0003_1013)
+      &amp; isA(OPERATORX13,r_0003_1013__imperative)
       &amp; scope(OPERATORX13) = CONJX20
       &amp; isA(CONJX20,r_0004_0012__and)
       &amp; conj1(CONJX20) = EVENTX17
@@ -278,7 +278,7 @@ fof(id_3_A_maptext__4_A_maptext,axiom,
       &amp; conj2(CONJX20) = EVENTX19
       &amp; isA(EVENTX19,r_0004_0013__follow)
       &amp; arg1(EVENTX19) = ENTITYX18
-      &amp; r_0004_0016__past_loc(EVENTX19) = r_0004_0017__Garston_Hall ) ).
+      &amp; r_0004_0016__past_loc(EVENTX19) = r_0004_0017__Garston__r_0004_0018__Hall ) ).
 
 
 </pre>

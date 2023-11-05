@@ -313,10 +313,9 @@ It was always impressive when gentlemen of the town urgently left their work and
 </svg>
 <br>
 <pre>
-arc(question_0042_1006,r_0042_0014__and,scope).
-arc(r_0042_0002__was,question_0042_1006,arg0).
 arc(r_0042_0002__was,r_0042_0003__always,tmp3).
 arc(r_0042_0002__was,r_0042_0004__impressive,prd2).
+arc(r_0042_0002__was,r_0042_1006__question,arg0).
 arc(r_0042_0006__gentlemen,r_0042_0009__town,r_0042_0007__of).
 arc(r_0042_0011__left,r_0042_0005__when,tmp1).
 arc(r_0042_0011__left,r_0042_0006__gentlemen,arg0).
@@ -331,19 +330,20 @@ arc(r_0042_0016__be,r_0042_0017__seen,catenative).
 arc(r_0042_0017__seen,r_0042_0006__gentlemen,arg2).
 arc(r_0042_0017__seen,r_0042_0018__dashing,arg1).
 arc(r_0042_0018__dashing,r_0042_0006__gentlemen,arg0).
-arc(r_0042_0018__dashing,r_0042_0020__West_Street,r_0042_0019__down_clr_dir).
-arc(r_0042_0018__dashing,r_0042_0023__Pound_Hill,r_0042_0022__to_clr_dir).
+arc(r_0042_0018__dashing,r_0042_0020__West__r_0042_0021__Street,r_0042_0019__down_clr_dir).
+arc(r_0042_0018__dashing,r_0042_0023__Pound__r_0042_0024__Hill,r_0042_0022__to_clr_dir).
 arc(r_0042_0018__dashing,r_0042_0026__response,r_0042_0025__in_mnr).
 arc(r_0042_0026__response,r_0042_0029__bleepers,r_0042_0027__to).
 arc(r_0042_0029__bleepers,r_0042_0006__gentlemen,genv).
+arc(r_0042_1006__question,r_0042_0014__and,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_42_A_Alresford,axiom,
+fof(id__42_A_Alresford,axiom,
     ? [STATEX4,CATENATIVEX15,STATEX17,MENX12,MENX20,EVENTX25,OPERATORX6,CONJX24,OPERATORX14,EVENTX23,EVENTX22,EVENTX21,EVENTX13,MENX8,ENTITYX18,BLEEPERSX19,ENTITYX11,ENTITYX9,QUALITYX2,QUALITYX7,QUALITYX10,ATTRIBX3] :
       ( STATEX4 = OPERATORX6
-      &amp; isA(OPERATORX6,question_0042_1006)
+      &amp; isA(OPERATORX6,r_0042_1006__question)
       &amp; scope(OPERATORX6) = CONJX24
       &amp; isA(CONJX24,r_0042_0014__and)
       &amp; conj1(CONJX24) = EVENTX13
@@ -365,8 +365,8 @@ fof(id_42_A_Alresford,axiom,
       &amp; STATEX17 = EVENTX21
       &amp; isA(EVENTX21,r_0042_0018__dashing)
       &amp; arg0(EVENTX21) = MENX8
-      &amp; r_0042_0019__down_clr_dir(EVENTX21) = r_0042_0020__West_Street
-      &amp; r_0042_0022__to_clr_dir(EVENTX21) = r_0042_0023__Pound_Hill
+      &amp; r_0042_0019__down_clr_dir(EVENTX21) = r_0042_0020__West__r_0042_0021__Street
+      &amp; r_0042_0022__to_clr_dir(EVENTX21) = r_0042_0023__Pound__r_0042_0024__Hill
       &amp; r_0042_0025__in_mnr(EVENTX21) = ENTITYX18
       &amp; isA(MENX8,r_0042_0006__gentlemen)
       &amp; r_0042_0007__of(MENX8) = ENTITYX9

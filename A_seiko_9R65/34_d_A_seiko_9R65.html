@@ -224,7 +224,7 @@ arc(r_0044_0003__is,r_0044_0004__wound,catenative).
 arc(r_0044_0004__wound,r_0044_0002__mainspring,arg0).
 arc(r_0044_0004__wound,r_0044_0011__or,z_0044_1004).
 arc(r_0044_0006__rotation,r_0044_0009__rotor,r_0044_0007__of).
-arc(r_0044_0011__or,r_0044_0006__rotation,arg0_by_lgs).
+arc(r_0044_0011__or,r_0044_0006__rotation,arg0__r_0044_0005__by_lgs).
 arc(r_0044_0011__or,r_0044_0013__turning,r_0044_0012__by_lgs).
 arc(r_0044_0013__turning,r_0044_0016__crown,r_0044_0014__of).
 arc(r_0044_0019__and,r_0044_0003__is,conj1).
@@ -232,13 +232,13 @@ arc(r_0044_0019__and,r_0044_0023__is,conj2).
 arc(r_0044_0021__unwinding,r_0044_0022__power,arg0).
 arc(r_0044_0022__power,r_0044_0002__mainspring,genv).
 arc(r_0044_0023__is,r_0044_0022__power,arg0).
-arc(r_0044_0023__is,r_0044_0026__power_source,prd2).
-arc(r_0044_0026__power_source,r_0044_0025__sole,attrib2).
+arc(r_0044_0023__is,r_0044_0026__power__r_0044_0027__source,prd2).
+arc(r_0044_0026__power__r_0044_0027__source,r_0044_0025__sole,attrib2).
 
 </pre>
 <br>
 <pre>
-fof(id_44_A_seiko_9R65,axiom,
+fof(id__44_A_seiko_9R65,axiom,
     ? [CATENATIVEX2,EVENTX8,MAINSPRINGX16,CONJX21,EVENTX20,EVENTX17,EVENTX14,EVENTX13,EVENTX12,ENTITYX15,ENTITYX18,MAINSPRINGX1,CONJX5,ENTITYX6,ENTITYX11,ENTITYX7,ATTRIBX19] :
       ( CATENATIVEX2 = EVENTX13
       &amp; isA(EVENTX13,r_0044_0004__wound)
@@ -249,7 +249,7 @@ fof(id_44_A_seiko_9R65,axiom,
       &amp; r_0044_0014__of(EVENTX12) = ENTITYX11
       &amp; isA(MAINSPRINGX1,r_0044_0002__mainspring)
       &amp; isA(CONJX5,r_0044_0011__or)
-      &amp; arg0_by_lgs(CONJX5) = ENTITYX6
+      &amp; arg0__r_0044_0005__by_lgs(CONJX5) = ENTITYX6
       &amp; r_0044_0012__by_lgs(CONJX5) = EVENTX8
       &amp; isA(ENTITYX6,r_0044_0006__rotation)
       &amp; r_0044_0007__of(ENTITYX6) = ENTITYX7
@@ -260,7 +260,7 @@ fof(id_44_A_seiko_9R65,axiom,
       &amp; isA(ENTITYX15,r_0044_0022__power)
       &amp; genv(ENTITYX15) = MAINSPRINGX16
       &amp; MAINSPRINGX16 = MAINSPRINGX1
-      &amp; isA(ENTITYX18,r_0044_0026__power_source)
+      &amp; isA(ENTITYX18,r_0044_0026__power__r_0044_0027__source)
       &amp; attrib2(ENTITYX18) = ATTRIBX19
       &amp; isA(ATTRIBX19,r_0044_0025__sole)
       &amp; isA(CONJX21,r_0044_0019__and)

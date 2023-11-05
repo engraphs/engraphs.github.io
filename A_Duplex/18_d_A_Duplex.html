@@ -520,7 +520,6 @@ Without missing a beat , the voice replied : &ldquo; Oh , OK , cool . In that ca
 </svg>
 <br>
 <pre>
-arc(question_0033_1035,r_0034_0022___apos_s,scope).
 arc(r_0033_0003__turn,r_0033_0002__my,genv).
 arc(r_0033_0005__when_tmp,r_0033_0007__asked,restriction).
 arc(r_0033_0005__when_tmp,r_0033_0026__as_cnt,scope).
@@ -546,24 +545,25 @@ arc(r_0033_0029__make,r_0033_0030__bookings,arg1).
 arc(r_0033_0030__bookings,r_0033_0033__or,r_0033_0031__for).
 arc(r_0033_0033__or,r_0033_0032__four,conj1).
 arc(r_0033_0033__or,z_0033_1023,conj2).
+arc(r_0033_1029__utterance,r_0033_1035__question,part2).
+arc(r_0033_1029__utterance,z_0033_1032,part1).
+arc(r_0033_1035__question,r_0034_0022___apos_s,scope).
 arc(r_0034_0001__Without_abs,r_0034_0002__missing,restriction).
 arc(r_0034_0001__Without_abs,r_0034_0008__replied,scope).
 arc(r_0034_0002__missing,r_0033_0006__Duplex,arg0).
 arc(r_0034_0002__missing,r_0034_0004__beat,arg1).
 arc(r_0034_0008__replied,r_0033_0006__Duplex,arg0).
-arc(r_0034_0008__replied,utterance_0033_1029,prn7).
+arc(r_0034_0008__replied,r_0033_1029__utterance,prn7).
 arc(r_0034_0022___apos_s,r_0034_0019__case,r_0034_0017__In_cnt).
 arc(r_0034_0022___apos_s,r_0034_0021__what,arg0).
 arc(r_0034_0022___apos_s,r_0034_0025__time,prd2).
 arc(r_0034_0025__time,r_0034_0024__wait,attrib2).
-arc(utterance_0033_1029,question_0033_1035,part2).
-arc(utterance_0033_1029,z_0033_1032,part1).
 arc(z_0033_1023,r_0033_0034__more,attrib1).
 
 </pre>
 <br>
 <pre>
-fof(id_33_A_Duplex__34_A_Duplex,axiom,
+fof(id__33_A_Duplex__34_A_Duplex,axiom,
     ? [STATEX4,STATEX13,EVENTX27,DAVEX3,DAVEX10,ROBOT_CALLERX12,ROBOT_CALLERX26,CONNX42,EVENTX45,EVENTX44,CONJX41,OPERATORX35,EVENTX40,EVENTX33,CONNX2,CONNX16,OPERATORX17,EVENTX24,EVENTX25,EVENTX15,EVENTX9,EVENTX8,ENTITYX43,ENTITYX36,ENTITYX37,ENTITYX38,ENTITYX1,ENTITYX18,ENTITYX19,ENTITYX20,ENTITYX21,ENTITYX5,ENTITYX6,ENTITYX7,QUALITYX11,QUALITYX14,ATTRIBX39,ATTRIBX22] :
       ( STATEX4 = EVENTX8
       &amp; isA(EVENTX8,r_0033_0010__make)
@@ -574,11 +574,11 @@ fof(id_33_A_Duplex__34_A_Duplex,axiom,
       &amp; arg0(EVENTX15) = ROBOT_CALLERX12
       &amp; dir3(EVENTX15) = QUALITYX14
       &amp; EVENTX27 = CONJX41
-      &amp; isA(CONJX41,utterance_0033_1029)
+      &amp; isA(CONJX41,r_0033_1029__utterance)
       &amp; part1(CONJX41) = EVENTX33
       &amp; isA(EVENTX33,z_0033_1032)
       &amp; part2(CONJX41) = OPERATORX35
-      &amp; isA(OPERATORX35,question_0033_1035)
+      &amp; isA(OPERATORX35,r_0033_1035__question)
       &amp; scope(OPERATORX35) = EVENTX40
       &amp; isA(EVENTX40,r_0034_0022___apos_s)
       &amp; r_0034_0017__In_cnt(EVENTX40) = ENTITYX36

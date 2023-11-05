@@ -550,12 +550,13 @@ arc(r_0135_0002__Anyhow,r_0135_0008__think,scope).
 arc(r_0135_0008__think,r_0135_0006__morning,r_0135_0004__in_tmp).
 arc(r_0135_0008__think,r_0135_0007__I,arg0).
 arc(r_0135_0008__think,r_0135_0010__should,arg1).
-arc(r_0135_0010__should,r_0135_0011__send_out,scope).
-arc(r_0135_0011__send_out,r_0135_0009__we,arg0).
-arc(r_0135_0011__send_out,r_0135_0014__search_party,arg1).
-arc(r_0136_0004__should,r_0136_0005__keep_on,scope).
-arc(r_0136_0005__keep_on,r_0136_0002__meanwhile,tmp2).
-arc(r_0136_0005__keep_on,r_0136_0007__trying,catenative).
+arc(r_0135_0010__should,r_0135_0011__send__r_0135_0012__out,scope).
+arc(r_0135_0011__send__r_0135_0012__out,r_0135_0009__we,arg0).
+arc(r_0135_0011__send__r_0135_0012__out,r_0135_0014__search_r_0135_0015__party,arg1).
+arc(r_0135_1022__utterance,r_0137_0006__before_tmp,part1).
+arc(r_0136_0004__should,r_0136_0005__keep__r_0136_0006__on,scope).
+arc(r_0136_0005__keep__r_0136_0006__on,r_0136_0002__meanwhile,tmp2).
+arc(r_0136_0005__keep__r_0136_0006__on,r_0136_0007__trying,catenative).
 arc(r_0136_0007__trying,r_0136_0009__get,catenative).
 arc(r_0136_0009__get,r_0135_0009__we,arg0).
 arc(r_0136_0009__get,r_0136_0011__ship,arg1).
@@ -566,34 +567,33 @@ arc(r_0137_0003___apos_ll,r_0137_0004__be,scope).
 arc(r_0137_0004__be,r_0137_0005__days,prd2).
 arc(r_0137_0006__before_tmp,r_0137_0003___apos_ll,scope).
 arc(r_0137_0006__before_tmp,r_0137_0008__can,restriction).
-arc(r_0137_0008__can,r_0137_0009__take_off,scope).
-arc(r_0137_0009__take_off,r_0135_0009__we,arg0).
+arc(r_0137_0008__can,r_0137_0009__take__r_0137_0010__off,scope).
+arc(r_0137_0009__take__r_0137_0010__off,r_0135_0009__we,arg0).
+arc(r_0137_0014__said,r_0135_1022__utterance,arg1).
 arc(r_0137_0014__said,r_0137_0013__Fomar,arg0).
-arc(r_0137_0014__said,utterance_0135_1022,arg1).
 arc(r_0138_0003__should,r_0138_0004__keep,scope).
 arc(r_0138_0004__keep,r_0135_0009__we,arg0).
 arc(r_0138_0004__keep,r_0138_0006__man,arg1).
 arc(r_0138_0004__keep,r_0138_0007__working,prd).
-arc(r_0138_0005__quantificational__every,r_0138_0003__should,scope).
-arc(r_0138_0005__quantificational__every,r_0138_0006__man,restriction).
+arc(r_0138_0005__quantificational__r_0138_0005__every,r_0138_0003__should,scope).
+arc(r_0138_0005__quantificational__r_0138_0005__every,r_0138_0006__man,restriction).
 arc(r_0138_0007__working,r_0138_0008__here,loc2).
 arc(r_0139_0002__can,r_0139_0003___apos_t,scope).
 arc(r_0139_0003___apos_t,r_0139_0004__afford,scope).
 arc(r_0139_0004__afford,r_0135_0009__we,arg0).
-arc(r_0139_0004__afford,r_0139_0006__send_out,arg1).
-arc(r_0139_0006__send_out,r_0135_0009__we,arg0).
-arc(r_0139_0006__send_out,r_0139_0009__party,arg1).
-arc(utterance_0135_1022,r_0137_0006__before_tmp,part1).
+arc(r_0139_0004__afford,r_0139_0006__send__r_0139_0007__out,arg1).
+arc(r_0139_0006__send__r_0139_0007__out,r_0135_0009__we,arg0).
+arc(r_0139_0006__send__r_0139_0007__out,r_0139_0009__party,arg1).
 
 </pre>
 <br>
 <pre>
-fof(id_135_A_DICK_1952__136_A_DICK_1952__137_A_DICK_1952__138_A_DICK_1952__139_A_DICK_1952,axiom,
+fof(id__135_A_DICK_1952__136_A_DICK_1952__137_A_DICK_1952__138_A_DICK_1952__139_A_DICK_1952,axiom,
     ? [STATEX3,CATENATIVEX11,STATEX12,STATEX20,STATEX36,STATEX44,TRESPASSERSX9,TRESPASSERSX26,TRESPASSERSX33,TRESPASSERSX43,OPERATORX47,OPERATORX48,EVENTX49,EVENTX46,QUANTX35,OPERATORX41,EVENTX42,EVENTX40,EVENTX32,CONJX31,CONNX25,OPERATORX27,EVENTX28,OPERATORX29,EVENTX30,OPERATORX10,EVENTX19,EVENTX18,EVENTX17,OPERATORX1,EVENTX7,OPERATORX5,EVENTX6,ENTITYX45,ENTITYX34,ENTITYX24,ENTITYX13,ENTITYX14,ENTITYX15,ENTITYX2,ENTITYX4,QUALITYX39,QUALITYX8,QUALITYX16] :
       ( STATEX3 = OPERATORX5
       &amp; isA(OPERATORX5,r_0135_0010__should)
       &amp; scope(OPERATORX5) = EVENTX6
-      &amp; isA(EVENTX6,r_0135_0011__send_out)
+      &amp; isA(EVENTX6,r_0135_0011__send__r_0135_0012__out)
       &amp; arg0(EVENTX6) = r_0135_0009__we
       &amp; arg1(EVENTX6) = ENTITYX4
       &amp; CATENATIVEX11 = EVENTX18
@@ -605,7 +605,7 @@ fof(id_135_A_DICK_1952__136_A_DICK_1952__137_A_DICK_1952__138_A_DICK_1952__139_A
       &amp; arg1(EVENTX17) = ENTITYX13
       &amp; r_0136_0012__in_clr_mnr(EVENTX17) = ENTITYX14
       &amp; STATEX20 = CONJX31
-      &amp; isA(CONJX31,utterance_0135_1022)
+      &amp; isA(CONJX31,r_0135_1022__utterance)
       &amp; part1(CONJX31) = CONNX25
       &amp; isA(CONNX25,r_0137_0006__before_tmp)
       &amp; scope(CONNX25) = OPERATORX29
@@ -616,17 +616,17 @@ fof(id_135_A_DICK_1952__136_A_DICK_1952__137_A_DICK_1952__138_A_DICK_1952__139_A
       &amp; restriction(CONNX25) = OPERATORX27
       &amp; isA(OPERATORX27,r_0137_0008__can)
       &amp; scope(OPERATORX27) = EVENTX28
-      &amp; isA(EVENTX28,r_0137_0009__take_off)
+      &amp; isA(EVENTX28,r_0137_0009__take__r_0137_0010__off)
       &amp; arg0(EVENTX28) = TRESPASSERSX26
       &amp; STATEX36 = EVENTX40
       &amp; isA(EVENTX40,r_0138_0007__working)
       &amp; loc2(EVENTX40) = QUALITYX39
       &amp; STATEX44 = EVENTX46
-      &amp; isA(EVENTX46,r_0139_0006__send_out)
+      &amp; isA(EVENTX46,r_0139_0006__send__r_0139_0007__out)
       &amp; arg0(EVENTX46) = TRESPASSERSX43
       &amp; arg1(EVENTX46) = ENTITYX45
       &amp; isA(ENTITYX2,r_0135_0006__morning)
-      &amp; isA(ENTITYX4,r_0135_0014__search_party)
+      &amp; isA(ENTITYX4,r_0135_0014__search__r_0135_0015__party)
       &amp; TRESPASSERSX9 = r_0135_0009__we
       &amp; isA(ENTITYX13,r_0136_0011__ship)
       &amp; isA(ENTITYX14,r_0136_0013__condition)
@@ -649,13 +649,13 @@ fof(id_135_A_DICK_1952__136_A_DICK_1952__137_A_DICK_1952__138_A_DICK_1952__139_A
       &amp; arg1(EVENTX7) = STATEX3
       &amp; isA(OPERATORX10,r_0136_0004__should)
       &amp; scope(OPERATORX10) = EVENTX19
-      &amp; isA(EVENTX19,r_0136_0005__keep_on)
+      &amp; isA(EVENTX19,r_0136_0005__keep__r_0136_0006__on)
       &amp; tmp2(EVENTX19) = QUALITYX8
       &amp; catenative(EVENTX19) = CATENATIVEX11
       &amp; isA(EVENTX32,r_0137_0014__said)
       &amp; arg1(EVENTX32) = STATEX20
       &amp; arg0(EVENTX32) = r_0137_0013__Fomar
-      &amp; isA(QUANTX35,r_0138_0005__quantificational__every)
+      &amp; isA(QUANTX35,r_0138_0005__quantificational__r_0138_0005__every)
       &amp; restriction(QUANTX35) = ENTITYX34
       &amp; isA(ENTITYX34,r_0138_0006__man)
       &amp; scope(QUANTX35) = OPERATORX41

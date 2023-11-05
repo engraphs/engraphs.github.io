@@ -110,23 +110,23 @@ The ship turned , changing its course .
 </svg>
 <br>
 <pre>
-arc(abs_0060_1002,r_0060_0003__turned,scope).
-arc(abs_0060_1002,r_0060_0005__changing,restriction).
 arc(r_0060_0003__turned,r_0060_0002__ship,arg0).
 arc(r_0060_0005__changing,r_0060_0002__ship,arg0).
 arc(r_0060_0005__changing,r_0060_0007__course,arg1).
 arc(r_0060_0007__course,r_0060_0002__ship,genv).
+arc(r_0060_1002__abs,r_0060_0003__turned,scope).
+arc(r_0060_1002__abs,r_0060_0005__changing,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_60_A_DICK_1952,axiom,
+fof(id__60_A_DICK_1952,axiom,
     ? [SHIPX5,CONNX3,EVENTX6,EVENTX7,SHIPX1,ENTITYX4] :
       ( isA(SHIPX1,r_0060_0002__ship)
       &amp; isA(ENTITYX4,r_0060_0007__course)
       &amp; genv(ENTITYX4) = SHIPX5
       &amp; SHIPX5 = SHIPX1
-      &amp; isA(CONNX3,abs_0060_1002)
+      &amp; isA(CONNX3,r_0060_1002__abs)
       &amp; scope(CONNX3) = EVENTX7
       &amp; isA(EVENTX7,r_0060_0003__turned)
       &amp; arg0(EVENTX7) = SHIPX1

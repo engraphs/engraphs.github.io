@@ -378,11 +378,11 @@ arc(r_0065_0008__endeavor,r_0065_0021__in_order_cnt,arg1).
 arc(r_0065_0010__take,r_0065_0006__government,arg0).
 arc(r_0065_0010__take,r_0065_0012__measures,arg1).
 arc(r_0065_0012__measures,r_0065_0011__necessary,attrib1).
-arc(r_0065_0012__measures,r_0065_0016__administrative_agencies,r_0065_0013__for).
-arc(r_0065_0015__incorporated,r_0065_0016__administrative_agencies,arg1).
-arc(r_0065_0016__administrative_agencies,r_0065_0014__local,attrib1).
-arc(r_0065_0018__established,r_0065_0016__administrative_agencies,arg1).
-arc(r_0065_0018__established,r_0065_0020__it,arg0_by_lgs).
+arc(r_0065_0012__measures,r_0065_0016__administrative__r_0065_0017__agencies,r_0065_0013__for).
+arc(r_0065_0015__incorporated,r_0065_0016__administrative__r_0065_0017__agencies,arg1).
+arc(r_0065_0016__administrative__r_0065_0017__agencies,r_0065_0014__local,attrib1).
+arc(r_0065_0018__established,r_0065_0016__administrative__r_0065_0017__agencies,arg1).
+arc(r_0065_0018__established,r_0065_0020__it,arg0__r_0065_0019__by_lgs).
 arc(r_0065_0021__in_order_cnt,r_0065_0010__take,scope).
 arc(r_0065_0021__in_order_cnt,r_0065_0023__ensure,restriction).
 arc(r_0065_0023__ensure,r_0065_0006__government,arg0).
@@ -401,7 +401,7 @@ arc(r_0065_0038__and,r_0065_0041__them,r_0065_0040__of).
 </pre>
 <br>
 <pre>
-fof(id_65_A_law_h15A119,axiom,
+fof(id__65_A_law_h15A119,axiom,
     ? [STATEX3,OPERATORX23,EVENTX24,CONNX11,EVENTX21,EVENTX20,EVENTX22,EVENTX10,EVENTX9,ENTITYX1,ENTITYX4,ENTITYX12,ENTITYX14,ENTITYX16,ENTITYX17,ENTITYX18,ENTITYX19,ENTITYX6,ATTRIBX13,ATTRIBX15,ATTRIBX5,ATTRIBX7,ATTRIBX2] :
       ( STATEX3 = CONNX11
       &amp; isA(CONNX11,r_0065_0021__in_order_cnt)
@@ -421,9 +421,9 @@ fof(id_65_A_law_h15A119,axiom,
       &amp; isA(EVENTX9,r_0065_0015__incorporated)
       &amp; arg1(EVENTX9) = ENTITYX6
       &amp; isA(EVENTX10,r_0065_0018__established)
-      &amp; arg0_by_lgs(EVENTX10) = r_0065_0020__it
+      &amp; arg0__r_0065_0019__by_lgs(EVENTX10) = r_0065_0020__it
       &amp; arg1(EVENTX10) = ENTITYX6
-      &amp; isA(ENTITYX6,r_0065_0016__administrative_agencies)
+      &amp; isA(ENTITYX6,r_0065_0016__administrative__r_0065_0017__agencies)
       &amp; attrib1(ENTITYX6) = ATTRIBX7
       &amp; isA(ENTITYX12,r_0065_0026__handling)
       &amp; attrib2(ENTITYX12) = ATTRIBX13

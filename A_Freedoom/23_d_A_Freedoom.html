@@ -161,25 +161,25 @@ A single , well-timed shotgun blast aimed at a barrel can take down several enem
 </svg>
 <br>
 <pre>
-arc(r_0036_0005__shotgun_blast,r_0036_0002__single,attrib2).
-arc(r_0036_0005__shotgun_blast,r_0036_0004__well_timed,attrib4).
-arc(r_0036_0007__aimed,r_0036_0005__shotgun_blast,arg0).
+arc(r_0036_0005__shotgun__r_0036_0006__blast,r_0036_0002__single,attrib2).
+arc(r_0036_0005__shotgun__r_0036_0006__blast,r_0036_0004__well_timed,attrib4).
+arc(r_0036_0007__aimed,r_0036_0005__shotgun__r_0036_0006__blast,arg0).
 arc(r_0036_0007__aimed,r_0036_0010__barrel,r_0036_0008__at_dir).
-arc(r_0036_0011__can,r_0036_0012__take_down,scope).
-arc(r_0036_0012__take_down,r_0036_0005__shotgun_blast,arg0).
-arc(r_0036_0012__take_down,r_0036_0015__enemies,arg1).
-arc(r_0036_0012__take_down,r_0036_0016__at_once,tmp6).
+arc(r_0036_0011__can,r_0036_0012__take__r_0036_0013__down,scope).
+arc(r_0036_0012__take__r_0036_0013__down,r_0036_0005__shotgun_r_0036_0006__blast,arg0).
+arc(r_0036_0012__take__r_0036_0013__down,r_0036_0015__enemies,arg1).
+arc(r_0036_0012__take__r_0036_0013__down,r_0036_0016__at_once,tmp6).
 arc(r_0036_0015__enemies,r_0036_0014__several,attrib1).
 
 </pre>
 <br>
 <pre>
-fof(id_36_A_Freedoom,axiom,
+fof(id__36_A_Freedoom,axiom,
     ? [OPERATORX9,EVENTX10,EVENTX5,ENTITYX1,ENTITYX6,ENTITYX4,ATTRIBX7,ATTRIBX2,ATTRIBX3,QUALITYX8] :
       ( isA(EVENTX5,r_0036_0007__aimed)
       &amp; arg0(EVENTX5) = ENTITYX1
       &amp; r_0036_0008__at_dir(EVENTX5) = ENTITYX4
-      &amp; isA(ENTITYX1,r_0036_0005__shotgun_blast)
+      &amp; isA(ENTITYX1,r_0036_0005__shotgun__r_0036_0006__blast)
       &amp; attrib2(ENTITYX1) = ATTRIBX2
       &amp; attrib4(ENTITYX1) = ATTRIBX3
       &amp; isA(ENTITYX4,r_0036_0010__barrel)
@@ -191,7 +191,7 @@ fof(id_36_A_Freedoom,axiom,
       &amp; isA(QUALITYX8,r_0036_0016__at_once)
       &amp; isA(OPERATORX9,r_0036_0011__can)
       &amp; scope(OPERATORX9) = EVENTX10
-      &amp; isA(EVENTX10,r_0036_0012__take_down)
+      &amp; isA(EVENTX10,r_0036_0012__take__r_0036_0013__down)
       &amp; arg0(EVENTX10) = ENTITYX1
       &amp; arg1(EVENTX10) = ENTITYX6
       &amp; tmp6(EVENTX10) = QUALITYX8 ) ).

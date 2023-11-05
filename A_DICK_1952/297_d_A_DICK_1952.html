@@ -318,10 +318,6 @@ For one terrible moment it hesitated over their heads , clicking and whirring , 
 </svg>
 <br>
 <pre>
-arc(mnr_0377_1014,mnr_0377_1016,restriction).
-arc(mnr_0377_1014,r_0378_0006__hesitated,scope).
-arc(mnr_0377_1016,r_0378_0012__and,scope).
-arc(mnr_0377_1016,r_0378_0015__settling,restriction).
 arc(r_0377_0003__swung,r_0377_0002__barrel,arg0).
 arc(r_0377_0003__swung,r_0377_0005__them,r_0377_0004__past_dir).
 arc(r_0377_0006__as_cnt,r_0377_0003__swung,scope).
@@ -330,9 +326,13 @@ arc(r_0377_0008__stood,r_0377_0005__them,arg0).
 arc(r_0377_0008__stood,r_0377_0011__and,abs4).
 arc(r_0377_0011__and,r_0377_0010__rigid,conj1).
 arc(r_0377_0011__and,r_0377_0012__still,conj2).
-arc(r_0378_0002__one_moment,r_0378_0003__terrible,attrib2).
+arc(r_0377_1014__mnr,r_0377_1016__mnr,restriction).
+arc(r_0377_1014__mnr,r_0378_0006__hesitated,scope).
+arc(r_0377_1016__mnr,r_0378_0012__and,scope).
+arc(r_0377_1016__mnr,r_0378_0015__settling,restriction).
+arc(r_0378_0002__one__r_0378_0004__moment,r_0378_0003__terrible,attrib2).
 arc(r_0378_0006__hesitated,r_0377_0002__barrel,arg0).
-arc(r_0378_0006__hesitated,r_0378_0002__one_moment,r_0378_0001__For_tmp).
+arc(r_0378_0006__hesitated,r_0378_0002__one__r_0378_0004__moment,r_0378_0001__For_tmp).
 arc(r_0378_0006__hesitated,r_0378_0009__heads,r_0378_0007__over_dir).
 arc(r_0378_0009__heads,r_0377_0005__them,genv).
 arc(r_0378_0011__clicking,r_0377_0002__barrel,arg0).
@@ -345,11 +345,11 @@ arc(r_0378_0015__settling,r_0378_0017__position,r_0378_0016__into_loc).
 </pre>
 <br>
 <pre>
-fof(id_377_A_DICK_1952__378_A_DICK_1952,axiom,
+fof(id__377_A_DICK_1952__378_A_DICK_1952,axiom,
     ? [DORLE_AND_NASHA_AND_TANCEX3,BARRELX11,DORLE_AND_NASHA_AND_TANCEX13,CONNX15,CONNX17,EVENTX19,CONJX22,EVENTX21,EVENTX20,EVENTX23,CONNX2,EVENTX7,EVENTX8,ENTITYX9,ENTITYX12,ENTITYX18,BARRELX1,ATTRIBX10,ATTRIBX4,ATTRIBX5,ATTRIBX6] :
       ( isA(BARRELX1,r_0377_0002__barrel)
       &amp; DORLE_AND_NASHA_AND_TANCEX3 = r_0377_0005__them
-      &amp; isA(ENTITYX9,r_0378_0002__one_moment)
+      &amp; isA(ENTITYX9,r_0378_0002__one__r_0378_0004__moment)
       &amp; attrib2(ENTITYX9) = ATTRIBX10
       &amp; BARRELX11 = BARRELX1
       &amp; isA(ENTITYX12,r_0378_0009__heads)
@@ -371,14 +371,14 @@ fof(id_377_A_DICK_1952__378_A_DICK_1952,axiom,
       &amp; isA(EVENTX7,r_0377_0008__stood)
       &amp; arg0(EVENTX7) = DORLE_AND_NASHA_AND_TANCEX3
       &amp; abs4(EVENTX7) = ATTRIBX4
-      &amp; isA(CONNX15,mnr_0377_1014)
+      &amp; isA(CONNX15,r_0377_1014__mnr)
       &amp; scope(CONNX15) = EVENTX23
       &amp; isA(EVENTX23,r_0378_0006__hesitated)
       &amp; r_0378_0001__For_tmp(EVENTX23) = ENTITYX9
       &amp; arg0(EVENTX23) = BARRELX11
       &amp; r_0378_0007__over_dir(EVENTX23) = ENTITYX12
       &amp; restriction(CONNX15) = CONNX17
-      &amp; isA(CONNX17,mnr_0377_1016)
+      &amp; isA(CONNX17,r_0377_1016__mnr)
       &amp; scope(CONNX17) = CONJX22
       &amp; isA(CONJX22,r_0378_0012__and)
       &amp; conj1(CONJX22) = EVENTX20

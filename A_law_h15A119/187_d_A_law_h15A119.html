@@ -269,9 +269,9 @@ The competent minister may have a business operator handling personal informatio
 arc(r_0187_0003__minister,r_0187_0002__competent,attrib2).
 arc(r_0187_0004__may,r_0187_0005__have,scope).
 arc(r_0187_0005__have,r_0187_0003__minister,arg0).
-arc(r_0187_0005__have,r_0187_0007__business_operator,arg1).
+arc(r_0187_0005__have,r_0187_0007__business__r_0187_0008__operator,arg1).
 arc(r_0187_0005__have,r_0187_0012__make,prd).
-arc(r_0187_0009__handling,r_0187_0007__business_operator,arg0).
+arc(r_0187_0009__handling,r_0187_0007__business__r_0187_0008__operator,arg0).
 arc(r_0187_0009__handling,r_0187_0011__information,arg1).
 arc(r_0187_0011__information,r_0187_0010__personal,attrib1).
 arc(r_0187_0012__make,r_0187_0014__report,arg1).
@@ -287,7 +287,7 @@ arc(r_0187_0029__provisions,r_0187_0032__section,r_0187_0030__of).
 </pre>
 <br>
 <pre>
-fof(id_187_A_law_h15A119,axiom,
+fof(id__187_A_law_h15A119,axiom,
     ? [STATEX7,OPERATORX20,EVENTX21,EVENTX19,EVENTX6,ENTITYX1,ENTITYX3,ENTITYX10,ENTITYX14,ENTITYX16,ENTITYX17,ENTITYX18,ENTITYX11,ENTITYX12,ENTITYX4,ATTRIBX15,ATTRIBX13,ATTRIBX5,ATTRIBX2] :
       ( STATEX7 = EVENTX19
       &amp; isA(EVENTX19,r_0187_0012__make)
@@ -298,7 +298,7 @@ fof(id_187_A_law_h15A119,axiom,
       &amp; isA(EVENTX6,r_0187_0009__handling)
       &amp; arg0(EVENTX6) = ENTITYX3
       &amp; arg1(EVENTX6) = ENTITYX4
-      &amp; isA(ENTITYX3,r_0187_0007__business_operator)
+      &amp; isA(ENTITYX3,r_0187_0007__business__r_0187_0008__operator)
       &amp; isA(ENTITYX4,r_0187_0011__information)
       &amp; attrib1(ENTITYX4) = ATTRIBX5
       &amp; isA(ENTITYX10,r_0187_0014__report)

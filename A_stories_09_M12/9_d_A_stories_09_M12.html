@@ -264,9 +264,9 @@ The bulldog suddenly put its front paws on John , gave him a mighty push which s
 <pre>
 arc(r_0009_0004__put,r_0009_0002__bulldog,arg0).
 arc(r_0009_0004__put,r_0009_0003__suddenly,tmp1).
-arc(r_0009_0004__put,r_0009_0006__front_paws,arg1).
+arc(r_0009_0004__put,r_0009_0006__front__r_0009_0007__paws,arg1).
 arc(r_0009_0004__put,r_0009_0009__John,r_0009_0008__on_clr_dir).
-arc(r_0009_0006__front_paws,r_0009_0002__bulldog,genv).
+arc(r_0009_0006__front__r_0009_0007__paws,r_0009_0002__bulldog,genv).
 arc(r_0009_0011__gave,r_0009_0002__bulldog,arg0).
 arc(r_0009_0011__gave,r_0009_0009__John,arg2).
 arc(r_0009_0011__gave,r_0009_0015__push,arg1).
@@ -286,14 +286,14 @@ arc(r_0009_0027__lick,r_0009_0009__John,arg1).
 </pre>
 <br>
 <pre>
-fof(id_9_A_stories_09_M12,axiom,
+fof(id__9_A_stories_09_M12,axiom,
     ? [STATEX15,BULLDOGX4,JOHNX6,JOHNX9,JOHNX12,JOHNX16,CONJX19,EVENTX18,EVENTX17,EVENTX14,EVENTX13,EVENTX5,BULLDOGX1,ENTITYX7,ENTITYX11,ENTITYX3,QUALITYX2,ATTRIBX8,ATTRIBX10] :
       ( STATEX15 = EVENTX17
       &amp; isA(EVENTX17,r_0009_0027__lick)
       &amp; arg0(EVENTX17) = BULLDOGX1
       &amp; arg1(EVENTX17) = JOHNX16
       &amp; isA(BULLDOGX1,r_0009_0002__bulldog)
-      &amp; isA(ENTITYX3,r_0009_0006__front_paws)
+      &amp; isA(ENTITYX3,r_0009_0006__front__r_0009_0007__paws)
       &amp; genv(ENTITYX3) = BULLDOGX4
       &amp; BULLDOGX4 = BULLDOGX1
       &amp; JOHNX6 = r_0009_0009__John

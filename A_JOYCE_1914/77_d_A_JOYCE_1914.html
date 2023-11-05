@@ -135,23 +135,23 @@
 </svg>
 <br>
 <pre>
-arc(question_0172_1005,r_0172_0003__was,scope).
 arc(r_0172_0003__was,r_0172_0004__that,arg0).
 arc(r_0172_0003__was,r_0172_0005__it,prd2).
 arc(r_0172_0008__said,r_0172_0010__aunt,arg0).
-arc(r_0172_0008__said,utterance_0172_1003,arg1).
+arc(r_0172_0008__said,r_0172_1003__utterance,arg1).
 arc(r_0172_0010__aunt,r_0172_0009__my,genv).
-arc(utterance_0172_1003,question_0172_1005,part1).
+arc(r_0172_1003__utterance,r_0172_1005__question,part1).
+arc(r_0172_1005__question,r_0172_0003__was,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_172_A_JOYCE_1914,axiom,
+fof(id__172_A_JOYCE_1914,axiom,
     ? [STATEX1,EVENTX9,CONJX7,OPERATORX5,EVENTX6,AUNTX8] :
       ( STATEX1 = CONJX7
-      &amp; isA(CONJX7,utterance_0172_1003)
+      &amp; isA(CONJX7,r_0172_1003__utterance)
       &amp; part1(CONJX7) = OPERATORX5
-      &amp; isA(OPERATORX5,question_0172_1005)
+      &amp; isA(OPERATORX5,r_0172_1005__question)
       &amp; scope(OPERATORX5) = EVENTX6
       &amp; isA(EVENTX6,r_0172_0003__was)
       &amp; arg0(EVENTX6) = r_0172_0004__that

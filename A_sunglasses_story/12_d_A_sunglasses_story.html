@@ -1167,8 +1167,6 @@ When she arrived home in her own country she became an expert on the other count
 </svg>
 <br>
 <pre>
-arc(cnt_0016_1028,r_0017_0023__get,scope).
-arc(cnt_0016_1028,r_0017_0030__be,restriction).
 arc(r_0016_0003__was,r_0016_0001__Once,tmp1).
 arc(r_0016_0003__was,r_0016_0006__travelling,catenative).
 arc(r_0016_0006__travelling,r_0016_0005__person,arg0).
@@ -1176,6 +1174,8 @@ arc(r_0016_0006__travelling,r_0016_0009__country,r_0016_0007__from_dir).
 arc(r_0016_0006__travelling,r_0016_0013__country,r_0016_0010__to_dir).
 arc(r_0016_0009__country,r_0016_0008__your,genv).
 arc(r_0016_0013__country,r_0016_0012__other,attrib2).
+arc(r_0016_1028__cnt,r_0017_0023__get,scope).
+arc(r_0016_1028__cnt,r_0017_0030__be,restriction).
 arc(r_0017_0002__was,r_0016_0005__person,arg0).
 arc(r_0017_0002__was,r_0017_0003__smart,prd2).
 arc(r_0017_0004__and,r_0017_0002__was,conj1).
@@ -1192,7 +1192,7 @@ arc(r_0017_0015__country,r_0017_0014__other,attrib2).
 arc(r_0017_0016__and,r_0017_0015__country,conj1).
 arc(r_0017_0016__and,r_0017_0019__people,conj2).
 arc(r_0017_0019__people,r_0017_0018__other,attrib2).
-arc(r_0017_0021__had,cnt_0016_1028,catenative).
+arc(r_0017_0021__had,r_0016_1028__cnt,catenative).
 arc(r_0017_0023__get,r_0016_0005__person,arg0).
 arc(r_0017_0023__get,r_0017_0025__pair,arg1).
 arc(r_0017_0025__pair,r_0017_0028__glasses,r_0017_0026__of).
@@ -1213,7 +1213,7 @@ arc(r_0018_0012__got,r_0018_0014__pair,arg1).
 arc(r_0018_0014__pair,r_0018_0017__glasses,r_0018_0015__of).
 arc(r_0018_0017__glasses,r_0018_0016__blue,attrib1).
 arc(r_0019_0002__stayed,r_0016_0005__person,arg0).
-arc(r_0019_0002__stayed,r_0019_0004__three_months,r_0019_0003__for_tmp).
+arc(r_0019_0002__stayed,r_0019_0004__three__r_0019_0005__months,r_0019_0003__for_tmp).
 arc(r_0019_0006__and,r_0019_0002__stayed,conj1).
 arc(r_0019_0006__and,r_0019_0007__felt,conj2).
 arc(r_0019_0007__felt,r_0016_0005__person,arg0).
@@ -1261,7 +1261,7 @@ arc(z_0016_1085,r_0021_0007__own,attrib2).
 </pre>
 <br>
 <pre>
-fof(id_16_A_sunglasses_story__17_A_sunglasses_story__18_A_sunglasses_story__19_A_sunglasses_story__20_A_sunglasses_story__21_A_sunglasses_story,axiom,
+fof(id__16_A_sunglasses_story__17_A_sunglasses_story__18_A_sunglasses_story__19_A_sunglasses_story__20_A_sunglasses_story__21_A_sunglasses_story,axiom,
     ? [CATENATIVEX3,STATEX12,STATEX15,STATEX24,STATEX31,STATEX47,STATEX57,STATEX96,PERSONX9,PERSONX14,PERSONX23,PERSONX41,PERSONX45,PERSONX48,PERSONX54,PERSONX58,PERSONX70,PERSONX79,PERSONX83,PERSONX87,CONNX78,CONJX102,EVENTX101,EVENTX100,EVENTX91,EVENTX86,OPERATORX71,OPERATORX76,EVENTX77,CONJX69,EVENTX68,OPERATORX59,EVENTX67,EVENTX56,CONNX40,EVENTX53,EVENTX52,EVENTX44,CONJX39,EVENTX38,CONNX13,EVENTX37,CONNX29,EVENTX35,EVENTX34,EVENTX36,EVENTX22,EVENTX21,EVENTX11,EVENTX8,EVENTX7,QUALITYX92,QUALITYX80,QUALITYX1,ENTITYX93,ENTITYX97,ENTITYX94,ENTITYX88,ENTITYX89,ENTITYX81,ENTITYX82,ENTITYX72,ENTITYX73,ENTITYX60,ENTITYX61,ENTITYX62,ENTITYX64,ENTITYX65,ENTITYX66,ENTITYX55,ENTITYX49,ENTITYX50,ENTITYX42,ENTITYX25,ENTITYX26,ENTITYX16,ENTITYX17,ENTITYX19,PERSONX2,ENTITYX4,ENTITYX5,ATTRIBX99,ATTRIBX98,ATTRIBX95,ATTRIBX90,ATTRIBX84,ATTRIBX74,ATTRIBX75,ATTRIBX63,ATTRIBX46,ATTRIBX51,ATTRIBX43,ATTRIBX30,ATTRIBX27,ATTRIBX20,ATTRIBX18,ATTRIBX10,ATTRIBX6] :
       ( CATENATIVEX3 = EVENTX7
       &amp; isA(EVENTX7,r_0016_0006__travelling)
@@ -1282,7 +1282,7 @@ fof(id_16_A_sunglasses_story__17_A_sunglasses_story__18_A_sunglasses_story__19_A
       &amp; arg0(EVENTX21) = PERSONX14
       &amp; r_0017_0012__about_clr(EVENTX21) = ENTITYX16
       &amp; STATEX24 = CONNX29
-      &amp; isA(CONNX29,cnt_0016_1028)
+      &amp; isA(CONNX29,r_0016_1028__cnt)
       &amp; scope(CONNX29) = EVENTX36
       &amp; isA(EVENTX36,r_0017_0023__get)
       &amp; arg0(EVENTX36) = PERSONX23
@@ -1342,7 +1342,7 @@ fof(id_16_A_sunglasses_story__17_A_sunglasses_story__18_A_sunglasses_story__19_A
       &amp; isA(ENTITYX50,r_0018_0017__glasses)
       &amp; attrib1(ENTITYX50) = ATTRIBX51
       &amp; PERSONX54 = PERSONX2
-      &amp; isA(ENTITYX55,r_0019_0004__three_months)
+      &amp; isA(ENTITYX55,r_0019_0004__three__r_0019_0005__months)
       &amp; ( PERSONX58 = PERSONX54
         | PERSONX58 = PERSONX2 )
       &amp; isA(ENTITYX60,r_0019_0013__lot)

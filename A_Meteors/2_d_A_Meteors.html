@@ -604,27 +604,27 @@ Your ship is equipped with as many laser bolts as you can fire and as a last res
 </svg>
 <br>
 <pre>
-arc(cnt_0002_1008,r_0002_0001__Steer,scope).
-arc(cnt_0002_1008,r_0002_0017__as_cnt,restriction).
-arc(imperative_0002_1004,cnt_0002_1008,scope).
-arc(imperative_0002_1024,r_0003_0001__Avoid,scope).
-arc(r_0002_0001__Steer,r_0002_0003__laser_ship,arg1).
+arc(r_0002_0001__Steer,r_0002_0003__laser__r_0002_0005__ship,arg1).
 arc(r_0002_0001__Steer,r_0002_0008__hail,r_0002_0006__through_dir).
-arc(r_0002_0003__laser_ship,r_0002_0002__your,genv).
+arc(r_0002_0003__laser__r_0002_0005__ship,r_0002_0002__your,genv).
 arc(r_0002_0008__hail,r_0002_0010__meteors,r_0002_0009__of).
 arc(r_0002_0011__smashing,r_0002_0010__meteors,arg1).
-arc(r_0002_0011__smashing,r_0002_0015__laser_bolts,r_0002_0013__with_mnr).
-arc(r_0002_0015__laser_bolts,r_0002_0002__your,genv).
+arc(r_0002_0011__smashing,r_0002_0015__laser__r_0002_0016__bolts,r_0002_0013__with_mnr).
+arc(r_0002_0015__laser__r_0002_0016__bolts,r_0002_0002__your,genv).
 arc(r_0002_0017__as_cnt,r_0002_0011__smashing,scope).
-arc(r_0002_0017__as_cnt,r_0002_0023__quantificational__all,restriction).
+arc(r_0002_0017__as_cnt,r_0002_0023__quantificational__r_0002_0023__all,restriction).
 arc(r_0002_0019__hurtle,r_0002_0002__your,r_0002_0020__towards_dir).
 arc(r_0002_0019__hurtle,r_0002_0010__meteors,arg0).
 arc(r_0002_0019__hurtle,r_0002_0024__sides,r_0002_0022__on_loc).
-arc(r_0002_0023__quantificational__all,r_0002_0019__hurtle,scope).
-arc(r_0002_0023__quantificational__all,r_0002_0024__sides,restriction).
+arc(r_0002_0023__quantificational__r_0002_0023__all,r_0002_0019__hurtle,scope).
+arc(r_0002_0023__quantificational__r_0002_0023__all,r_0002_0024__sides,restriction).
+arc(r_0002_1004__imperative,r_0002_1008__cnt,scope).
+arc(r_0002_1008__cnt,r_0002_0001__Steer,scope).
+arc(r_0002_1008__cnt,r_0002_0017__as_cnt,restriction).
+arc(r_0002_1024__imperative,r_0003_0001__Avoid,scope).
 arc(r_0003_0001__Avoid,r_0003_0002__being,arg1).
 arc(r_0003_0002__being,r_0003_0003__hit,catenative).
-arc(r_0003_0003__hit,r_0003_0006__missiles,arg0_by_lgs).
+arc(r_0003_0003__hit,r_0003_0006__missiles,arg0__r_0003_0004__by_lgs).
 arc(r_0003_0006__missiles,r_0003_0010__saucers,r_0003_0007__from).
 arc(r_0003_0009__flying,r_0003_0010__saucers,arg0).
 arc(r_0003_0010__saucers,r_0003_0008__hostile,attrib1).
@@ -636,10 +636,10 @@ arc(r_0003_0017__pass,r_0003_0010__saucers,arg0).
 arc(r_0004_0002__ship,r_0002_0002__your,genv).
 arc(r_0004_0003__is,r_0004_0004__equipped,catenative).
 arc(r_0004_0004__equipped,r_0004_0002__ship,arg1).
-arc(r_0004_0004__equipped,r_0004_0008__laser_bolts,r_0004_0005__with_clr).
+arc(r_0004_0004__equipped,r_0004_0008__laser__r_0004_0009__bolts,r_0004_0005__with_clr).
 arc(r_0004_0007__many,r_0004_0006__as,quality1).
 arc(r_0004_0007__many,z_0002_1052,r_0004_0010__as).
-arc(r_0004_0008__laser_bolts,r_0004_0007__many,attrib1).
+arc(r_0004_0008__laser__r_0004_0009__bolts,r_0004_0007__many,attrib1).
 arc(r_0004_0012__can,r_0004_0013__fire,scope).
 arc(r_0004_0013__fire,r_0002_0002__your,arg0).
 arc(r_0004_0013__fire,z_0002_1052,arg1).
@@ -654,25 +654,25 @@ arc(r_0004_0022__escape,r_0004_0024__hyperspace,r_0004_0023__through_dir).
 </pre>
 <br>
 <pre>
-fof(id_2_A_Meteors__3_A_Meteors__4_A_Meteors,axiom,
+fof(id__2_A_Meteors__3_A_Meteors__4_A_Meteors,axiom,
     ? [STATEX25,CATENATIVEX26,CATENATIVEX43,METEORSX10,HEARERX12,METEORSX14,HEARERX15,HEARERX31,FLYING_SAUCERSX33,HEARERX42,HEARERX49,HEARERX57,CONJX61,OPERATORX59,EVENTX60,EVENTX54,EVENTX53,OPERATORX50,EVENTX51,OPERATORX24,EVENTX38,EVENTX37,EVENTX36,CONNX32,EVENTX34,EVENTX35,EVENTX30,OPERATORX4,CONNX9,CONNX13,QUANTX17,EVENTX18,EVENTX19,EVENTX20,ENTITYX55,ENTITYX58,ENTITYX41,ENTITYX45,ENTITYX48,ENTITYX27,FLYING_SAUCERSX28,ENTITYX5,ENTITYX6,ENTITYX11,ENTITYX16,METEORSX7,ATTRIBX56,ATTRIBX46,ATTRIBX29,QUALITYX47] :
       ( STATEX25 = EVENTX37
       &amp; isA(EVENTX37,r_0003_0002__being)
       &amp; catenative(EVENTX37) = CATENATIVEX26
       &amp; CATENATIVEX26 = EVENTX36
       &amp; isA(EVENTX36,r_0003_0003__hit)
-      &amp; arg0_by_lgs(EVENTX36) = ENTITYX27
+      &amp; arg0__r_0003_0004__by_lgs(EVENTX36) = ENTITYX27
       &amp; CATENATIVEX43 = EVENTX53
       &amp; isA(EVENTX53,r_0004_0004__equipped)
       &amp; arg1(EVENTX53) = ENTITYX41
       &amp; r_0004_0005__with_clr(EVENTX53) = ENTITYX45
-      &amp; isA(ENTITYX5,r_0002_0003__laser_ship)
+      &amp; isA(ENTITYX5,r_0002_0003__laser__r_0002_0005__ship)
       &amp; genv(ENTITYX5) = r_0002_0002__your
       &amp; isA(ENTITYX6,r_0002_0008__hail)
       &amp; r_0002_0009__of(ENTITYX6) = METEORSX7
       &amp; isA(METEORSX7,r_0002_0010__meteors)
       &amp; METEORSX10 = METEORSX7
-      &amp; isA(ENTITYX11,r_0002_0015__laser_bolts)
+      &amp; isA(ENTITYX11,r_0002_0015__laser__r_0002_0016__bolts)
       &amp; genv(ENTITYX11) = HEARERX12
       &amp; HEARERX12 = r_0002_0002__your
       &amp; ( METEORSX14 = METEORSX10
@@ -697,7 +697,7 @@ fof(id_2_A_Meteors__3_A_Meteors__4_A_Meteors,axiom,
       &amp; isA(ENTITYX41,r_0004_0002__ship)
       &amp; genv(ENTITYX41) = HEARERX42
       &amp; HEARERX42 = r_0002_0002__your
-      &amp; isA(ENTITYX45,r_0004_0008__laser_bolts)
+      &amp; isA(ENTITYX45,r_0004_0008__laser__r_0004_0009__bolts)
       &amp; attrib1(ENTITYX45) = ATTRIBX46
       &amp; isA(OPERATORX50,r_0004_0012__can)
       &amp; scope(OPERATORX50) = EVENTX51
@@ -716,9 +716,9 @@ fof(id_2_A_Meteors__3_A_Meteors__4_A_Meteors,axiom,
       &amp; r_0004_0010__as(ATTRIBX46) = ENTITYX48
       &amp; isA(ATTRIBX56,r_0004_0017__last)
       &amp; isA(QUALITYX47,r_0004_0006__as)
-      &amp; isA(OPERATORX4,imperative_0002_1004)
+      &amp; isA(OPERATORX4,r_0002_1004__imperative)
       &amp; scope(OPERATORX4) = CONNX9
-      &amp; isA(CONNX9,cnt_0002_1008)
+      &amp; isA(CONNX9,r_0002_1008__cnt)
       &amp; scope(CONNX9) = EVENTX20
       &amp; isA(EVENTX20,r_0002_0001__Steer)
       &amp; arg1(EVENTX20) = ENTITYX5
@@ -730,7 +730,7 @@ fof(id_2_A_Meteors__3_A_Meteors__4_A_Meteors,axiom,
       &amp; arg1(EVENTX19) = METEORSX10
       &amp; r_0002_0013__with_mnr(EVENTX19) = ENTITYX11
       &amp; restriction(CONNX13) = QUANTX17
-      &amp; isA(QUANTX17,r_0002_0023__quantificational__all)
+      &amp; isA(QUANTX17,r_0002_0023__quantificational__r_0002_0023__all)
       &amp; restriction(QUANTX17) = ENTITYX16
       &amp; isA(ENTITYX16,r_0002_0024__sides)
       &amp; scope(QUANTX17) = EVENTX18
@@ -738,7 +738,7 @@ fof(id_2_A_Meteors__3_A_Meteors__4_A_Meteors,axiom,
       &amp; arg0(EVENTX18) = METEORSX14
       &amp; r_0002_0020__towards_dir(EVENTX18) = HEARERX15
       &amp; r_0002_0022__on_loc(EVENTX18) = ENTITYX16
-      &amp; isA(OPERATORX24,imperative_0002_1024)
+      &amp; isA(OPERATORX24,r_0002_1024__imperative)
       &amp; scope(OPERATORX24) = EVENTX38
       &amp; isA(EVENTX38,r_0003_0001__Avoid)
       &amp; arg1(EVENTX38) = STATEX25

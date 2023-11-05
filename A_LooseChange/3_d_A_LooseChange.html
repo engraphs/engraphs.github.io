@@ -401,32 +401,32 @@ I 'd just gone into the National Portrait Gallery to get out of the cold .
 </svg>
 <br>
 <pre>
-arc(cnt_0005_1031,r_0007_0004__gone,scope).
-arc(cnt_0005_1031,r_0007_0011__get,restriction).
 arc(r_0005_0002___apos_m,r_0005_0001__I,arg0).
 arc(r_0005_0002___apos_m,r_0005_0004__Londoner,prd2).
 arc(r_0005_0004__Londoner,r_0005_0007__sweats,prn4).
 arc(r_0005_0007__sweats,r_0005_0006__aloof,attrib1).
 arc(r_0005_0007__sweats,r_0005_0010__pores,r_0005_0008__from).
 arc(r_0005_0010__pores,r_0005_0001__I,genv).
+arc(r_0005_1031__cnt,r_0007_0004__gone,scope).
+arc(r_0005_1031__cnt,r_0007_0011__get,restriction).
 arc(r_0006_0003__was,r_0005_0001__I,arg0).
 arc(r_0006_0003__was,r_0006_0016__and,prn6).
 arc(r_0006_0003__was,z_0005_1011,r_0006_0004__in_prd2).
-arc(r_0006_0005__quantificational__a_bit,r_0006_0003__was,scope).
-arc(r_0006_0005__quantificational__a_bit,z_0005_1011,restriction).
+arc(r_0006_0005__quantificational__r_0006_0005__a_bit,r_0006_0003__was,scope).
+arc(r_0006_0005__quantificational__r_0006_0005__a_bit,z_0005_1011,restriction).
 arc(r_0006_0011__period,r_0005_0001__I,genv).
 arc(r_0006_0012__was,r_0006_0011__period,arg0).
 arc(r_0006_0012__was,r_0006_0015__early,prd23).
-arc(r_0006_0015__early,r_0006_0013__two_days,modifier1).
+arc(r_0006_0015__early,r_0006_0013__two__r_0006_0014__days,modifier1).
 arc(r_0006_0016__and,r_0006_0012__was,conj1).
 arc(r_0006_0016__and,r_0006_0018__was,conj2).
 arc(r_0006_0018__was,r_0006_0019__caught,catenative).
 arc(r_0006_0019__caught,r_0005_0001__I,arg1).
 arc(r_0006_0019__caught,r_0006_0020__unprepared,prd).
 arc(r_0007_0002___apos_d,r_0007_0003__just,catenative).
-arc(r_0007_0003__just,cnt_0005_1031,scope).
+arc(r_0007_0003__just,r_0005_1031__cnt,scope).
 arc(r_0007_0004__gone,r_0005_0001__I,arg0).
-arc(r_0007_0004__gone,r_0007_0007__National_Portrait_Gallery,r_0007_0005__into_loc).
+arc(r_0007_0004__gone,r_0007_0007__National__r_0007_0008__Portrait_r_0007_0009__Gallery,r_0007_0005__into_loc).
 arc(r_0007_0011__get,r_0005_0001__I,arg0).
 arc(r_0007_0011__get,r_0007_0014__cold,r_0007_0012__out_of_clr).
 arc(z_0005_1011,r_0006_0008__predicament,r_0006_0006__of).
@@ -434,7 +434,7 @@ arc(z_0005_1011,r_0006_0008__predicament,r_0006_0006__of).
 </pre>
 <br>
 <pre>
-fof(id_5_A_LooseChange__6_A_LooseChange__7_A_LooseChange,axiom,
+fof(id__5_A_LooseChange__6_A_LooseChange__7_A_LooseChange,axiom,
     ? [EVENTX12,CATENATIVEX21,CATENATIVEX29,SPEAKERX5,SPEAKERX7,SPEAKERX16,SPEAKERX20,SPEAKERX28,EVENTX36,OPERATORX30,CONNX32,EVENTX34,EVENTX35,QUANTX9,EVENTX27,CONJX26,EVENTX25,EVENTX24,EVENTX19,EVENTX6,ENTITYX33,ENTITYX8,ENTITYX15,ENTITYX18,ENTITYX10,ENTITYX1,ENTITYX2,ENTITYX4,ATTRIBX23,ATTRIBX3,QUALITYX17] :
       ( EVENTX12 = CONJX26
       &amp; isA(CONJX26,r_0006_0016__and)
@@ -453,11 +453,11 @@ fof(id_5_A_LooseChange__6_A_LooseChange__7_A_LooseChange,axiom,
       &amp; CATENATIVEX29 = OPERATORX30
       &amp; isA(OPERATORX30,r_0007_0003__just)
       &amp; scope(OPERATORX30) = CONNX32
-      &amp; isA(CONNX32,cnt_0005_1031)
+      &amp; isA(CONNX32,r_0005_1031__cnt)
       &amp; scope(CONNX32) = EVENTX35
       &amp; isA(EVENTX35,r_0007_0004__gone)
       &amp; arg0(EVENTX35) = SPEAKERX28
-      &amp; r_0007_0005__into_loc(EVENTX35) = r_0007_0007__National_Portrait_Gallery
+      &amp; r_0007_0005__into_loc(EVENTX35) = r_0007_0007__National__r_0007_0008__Portrait_r_0007_0009__Gallery
       &amp; restriction(CONNX32) = EVENTX34
       &amp; isA(EVENTX34,r_0007_0011__get)
       &amp; arg0(EVENTX34) = SPEAKERX28
@@ -476,12 +476,12 @@ fof(id_5_A_LooseChange__6_A_LooseChange__7_A_LooseChange,axiom,
       &amp; genv(ENTITYX15) = SPEAKERX16
       &amp; ( SPEAKERX16 = SPEAKERX7
         | SPEAKERX16 = r_0005_0001__I )
-      &amp; isA(ENTITYX18,r_0006_0013__two_days)
+      &amp; isA(ENTITYX18,r_0006_0013__two__r_0006_0014__days)
       &amp; ( SPEAKERX20 = SPEAKERX7
         | SPEAKERX20 = r_0005_0001__I )
       &amp; SPEAKERX28 = r_0005_0001__I
       &amp; isA(ENTITYX33,r_0007_0014__cold)
-      &amp; isA(r_0007_0007__National_Portrait_Gallery,r_0007_0007__National_Portrait_Gallery)
+      &amp; isA(r_0007_0007__National__r_0007_0008__Portrait_r_0007_0009__Gallery,r_0007_0007__National_r_0007_0008__Portrait_r_0007_0009__Gallery)
       &amp; isA(ATTRIBX3,r_0005_0006__aloof)
       &amp; isA(ATTRIBX23,r_0006_0020__unprepared)
       &amp; isA(QUALITYX17,r_0006_0015__early)
@@ -489,7 +489,7 @@ fof(id_5_A_LooseChange__6_A_LooseChange__7_A_LooseChange,axiom,
       &amp; isA(EVENTX6,r_0005_0002___apos_m)
       &amp; arg0(EVENTX6) = r_0005_0001__I
       &amp; prd2(EVENTX6) = ENTITYX1
-      &amp; isA(QUANTX9,r_0006_0005__quantificational__a_bit)
+      &amp; isA(QUANTX9,r_0006_0005__quantificational__r_0006_0005__a_bit)
       &amp; restriction(QUANTX9) = ENTITYX8
       &amp; isA(ENTITYX8,z_0005_1011)
       &amp; r_0006_0006__of(ENTITYX8) = ENTITYX10

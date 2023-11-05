@@ -207,24 +207,24 @@ Nasha and Fomar were sitting at the table in the control room , pale and solemn 
 </svg>
 <br>
 <pre>
-arc(abs_0097_1005,r_0097_0004__were,scope).
-arc(abs_0097_1005,r_0097_0018__studying,restriction).
 arc(r_0097_0002__and,r_0097_0001__Nasha,conj1).
 arc(r_0097_0002__and,r_0097_0003__Fomar,conj2).
 arc(r_0097_0004__were,r_0097_0005__sitting,catenative).
 arc(r_0097_0004__were,r_0097_0015__and,abs5).
 arc(r_0097_0005__sitting,r_0097_0002__and,arg0).
 arc(r_0097_0005__sitting,r_0097_0008__table,r_0097_0006__at_clr_loc).
-arc(r_0097_0008__table,r_0097_0011__control_room,r_0097_0009__in).
+arc(r_0097_0008__table,r_0097_0011__control__r_0097_0012__room,r_0097_0009__in).
 arc(r_0097_0015__and,r_0097_0014__pale,conj1).
 arc(r_0097_0015__and,r_0097_0016__solemn,conj2).
 arc(r_0097_0018__studying,r_0097_0002__and,arg0).
-arc(r_0097_0018__studying,r_0097_0020__inventory_lists,arg1).
+arc(r_0097_0018__studying,r_0097_0020__inventory__r_0097_0021__lists,arg1).
+arc(r_0097_1005__abs,r_0097_0004__were,scope).
+arc(r_0097_1005__abs,r_0097_0018__studying,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_97_A_DICK_1952,axiom,
+fof(id__97_A_DICK_1952,axiom,
     ? [CATENATIVEX9,CONNX6,EVENTX8,EVENTX13,EVENTX12,NASHA_AND_FOMARX1,ENTITYX7,ENTITYX10,ENTITYX11,ATTRIBX2,ATTRIBX3,ATTRIBX4] :
       ( CATENATIVEX9 = EVENTX12
       &amp; isA(EVENTX12,r_0097_0005__sitting)
@@ -235,14 +235,14 @@ fof(id_97_A_DICK_1952,axiom,
       &amp; conj2(NASHA_AND_FOMARX1) = r_0097_0003__Fomar
       &amp; isA(ENTITYX10,r_0097_0008__table)
       &amp; r_0097_0009__in(ENTITYX10) = ENTITYX11
-      &amp; isA(ENTITYX11,r_0097_0011__control_room)
-      &amp; isA(ENTITYX7,r_0097_0020__inventory_lists)
+      &amp; isA(ENTITYX11,r_0097_0011__control__r_0097_0012__room)
+      &amp; isA(ENTITYX7,r_0097_0020__inventory__r_0097_0021__lists)
       &amp; isA(ATTRIBX2,r_0097_0015__and)
       &amp; conj1(ATTRIBX2) = ATTRIBX3
       &amp; conj2(ATTRIBX2) = ATTRIBX4
       &amp; isA(ATTRIBX3,r_0097_0014__pale)
       &amp; isA(ATTRIBX4,r_0097_0016__solemn)
-      &amp; isA(CONNX6,abs_0097_1005)
+      &amp; isA(CONNX6,r_0097_1005__abs)
       &amp; scope(CONNX6) = EVENTX13
       &amp; isA(EVENTX13,r_0097_0004__were)
       &amp; catenative(EVENTX13) = CATENATIVEX9

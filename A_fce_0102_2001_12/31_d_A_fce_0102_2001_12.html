@@ -286,10 +286,6 @@ Write a letter to your friend about the book you have read , explaining why it w
 </svg>
 <br>
 <pre>
-arc(cnt_0032_1011,r_0032_0001__Write,scope).
-arc(cnt_0032_1011,r_0032_0014__explaining,restriction).
-arc(imperative_0032_1002,cnt_0032_1011,scope).
-arc(question_0032_1015,r_0032_0015__why,scope).
 arc(r_0032_0001__Write,r_0032_0003__letter,arg1).
 arc(r_0032_0001__Write,r_0032_0006__friend,r_0032_0004__to_arg2).
 arc(r_0032_0001__Write,r_0032_0009__book,r_0032_0007__about_rst).
@@ -297,27 +293,31 @@ arc(r_0032_0006__friend,r_0032_0005__your,genv).
 arc(r_0032_0011__have,r_0032_0012__read,catenative).
 arc(r_0032_0012__read,r_0032_0005__your,arg0).
 arc(r_0032_0012__read,r_0032_0009__book,arg1).
-arc(r_0032_0014__explaining,question_0032_1015,arg1).
+arc(r_0032_0014__explaining,r_0032_1015__question,arg1).
 arc(r_0032_0015__why,r_0032_0017__would,scope).
 arc(r_0032_0017__would,r_0032_0018__be,scope).
 arc(r_0032_0018__be,r_0032_0019__suitable,prd2).
 arc(r_0032_0018__be,r_0032_0025__read,arg0).
-arc(r_0032_0022__pen_friend,r_0032_0005__your,genv).
+arc(r_0032_0022__pen__r_0032_0023__friend,r_0032_0005__your,genv).
 arc(r_0032_0025__read,r_0032_0009__book,arg1).
-arc(r_0032_0025__read,r_0032_0022__pen_friend,arg0_lgs).
+arc(r_0032_0025__read,r_0032_0022__pen__r_0032_0023__friend,arg0_lgs).
 arc(r_0032_0025__read,r_0032_0027__holiday,r_0032_0026__on_loc).
+arc(r_0032_1002__imperative,r_0032_1011__cnt,scope).
+arc(r_0032_1011__cnt,r_0032_0001__Write,scope).
+arc(r_0032_1011__cnt,r_0032_0014__explaining,restriction).
+arc(r_0032_1015__question,r_0032_0015__why,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_32_A_fce_0102_2001_12,axiom,
+fof(id__32_A_fce_0102_2001_12,axiom,
     ? [CATENATIVEX8,STATEX13,STATEX19,HEARERX7,BOOKX17,HEARERX21,OPERATORX2,CONNX12,EVENTX26,OPERATORX15,OPERATORX16,OPERATORX24,EVENTX25,EVENTX23,EVENTX27,EVENTX10,EVENTX9,ENTITYX4,ENTITYX5,BOOKX6,ENTITYX20,ENTITYX22,ATTRIBX18] :
       ( CATENATIVEX8 = EVENTX9
       &amp; isA(EVENTX9,r_0032_0012__read)
       &amp; arg0(EVENTX9) = HEARERX7
       &amp; arg1(EVENTX9) = BOOKX6
       &amp; STATEX13 = OPERATORX15
-      &amp; isA(OPERATORX15,question_0032_1015)
+      &amp; isA(OPERATORX15,r_0032_1015__question)
       &amp; scope(OPERATORX15) = OPERATORX16
       &amp; isA(OPERATORX16,r_0032_0015__why)
       &amp; scope(OPERATORX16) = OPERATORX24
@@ -340,14 +340,14 @@ fof(id_32_A_fce_0102_2001_12,axiom,
       &amp; isA(BOOKX6,r_0032_0009__book)
       &amp; HEARERX7 = r_0032_0005__your
       &amp; BOOKX17 = BOOKX6
-      &amp; isA(ENTITYX20,r_0032_0022__pen_friend)
+      &amp; isA(ENTITYX20,r_0032_0022__pen__r_0032_0023__friend)
       &amp; genv(ENTITYX20) = HEARERX21
       &amp; HEARERX21 = r_0032_0005__your
       &amp; isA(ENTITYX22,r_0032_0027__holiday)
       &amp; isA(ATTRIBX18,r_0032_0019__suitable)
-      &amp; isA(OPERATORX2,imperative_0032_1002)
+      &amp; isA(OPERATORX2,r_0032_1002__imperative)
       &amp; scope(OPERATORX2) = CONNX12
-      &amp; isA(CONNX12,cnt_0032_1011)
+      &amp; isA(CONNX12,r_0032_1011__cnt)
       &amp; scope(CONNX12) = EVENTX27
       &amp; isA(EVENTX27,r_0032_0001__Write)
       &amp; arg1(EVENTX27) = ENTITYX4

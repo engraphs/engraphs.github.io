@@ -181,32 +181,32 @@ My father is on shift work and Mickey can tell which shift he is on .
 </svg>
 <br>
 <pre>
-arc(question_0009_1006,r_0009_0014__is,scope).
 arc(r_0009_0002__father,r_0009_0001__My,genv).
 arc(r_0009_0003__is,r_0009_0002__father,arg0).
-arc(r_0009_0003__is,r_0009_0005__shift_work,r_0009_0004__on_prd2).
+arc(r_0009_0003__is,r_0009_0005__shift__r_0009_0006__work,r_0009_0004__on_prd2).
 arc(r_0009_0007__and,r_0009_0003__is,conj1).
 arc(r_0009_0007__and,r_0009_0009__can,conj2).
 arc(r_0009_0009__can,r_0009_0010__tell,scope).
-arc(r_0009_0010__tell,question_0009_1006,arg1).
 arc(r_0009_0010__tell,r_0009_0008__Mickey,arg0).
+arc(r_0009_0010__tell,r_0009_1006__question,arg1).
 arc(r_0009_0014__is,r_0009_0002__father,arg0).
 arc(r_0009_0014__is,r_0009_0012__shift,r_0009_0015__on_prd2).
+arc(r_0009_1006__question,r_0009_0014__is,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_9_A_stories_10_K58,axiom,
+fof(id__9_A_stories_10_K58,axiom,
     ? [STATEX4,FATHERX8,CONJX12,OPERATORX10,EVENTX11,OPERATORX6,EVENTX9,EVENTX3,ENTITYX7,FATHERX1,ENTITYX2] :
       ( STATEX4 = OPERATORX6
-      &amp; isA(OPERATORX6,question_0009_1006)
+      &amp; isA(OPERATORX6,r_0009_1006__question)
       &amp; scope(OPERATORX6) = EVENTX9
       &amp; isA(EVENTX9,r_0009_0014__is)
       &amp; arg0(EVENTX9) = FATHERX8
       &amp; r_0009_0015__on_prd2(EVENTX9) = ENTITYX7
       &amp; isA(FATHERX1,r_0009_0002__father)
       &amp; genv(FATHERX1) = r_0009_0001__My
-      &amp; isA(ENTITYX2,r_0009_0005__shift_work)
+      &amp; isA(ENTITYX2,r_0009_0005__shift__r_0009_0006__work)
       &amp; isA(ENTITYX7,r_0009_0012__shift)
       &amp; FATHERX8 = FATHERX1
       &amp; isA(CONJX12,r_0009_0007__and)

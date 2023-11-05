@@ -880,8 +880,6 @@ Pupils should be taught to understand and use the conventions for discussion and
 </svg>
 <br>
 <pre>
-arc(cnt_0013_1065,r_0015_0023__working,scope).
-arc(cnt_0013_1065,r_0015_0029__discuss,restriction).
 arc(r_0013_0003__curriculum,r_0013_0002__national,attrib2).
 arc(r_0013_0003__curriculum,r_0013_0005__English,r_0013_0004__for).
 arc(r_0013_0006__reflects,r_0013_0003__curriculum,arg0).
@@ -896,16 +894,18 @@ arc(r_0013_0019__curriculum,r_0013_0018__whole,attrib2).
 arc(r_0013_0024__and,r_0013_0021__cognitively,conj1).
 arc(r_0013_0024__and,r_0013_0023__socially,conj2).
 arc(r_0013_0024__and,r_0013_0025__linguistically,conj3).
+arc(r_0013_1065__cnt,r_0015_0023__working,scope).
+arc(r_0013_1065__cnt,r_0015_0029__discuss,restriction).
 arc(r_0014_0002__language,r_0014_0001__Spoken,attrib1).
 arc(r_0014_0003__continues,r_0014_0005__underpin,catenative).
 arc(r_0014_0005__underpin,r_0014_0002__language,arg0).
 arc(r_0014_0005__underpin,r_0014_0007__development,arg1).
 arc(r_0014_0007__development,r_0014_0012__and,r_0014_0008__of).
-arc(r_0014_0007__development,r_0014_0016__stage_4,r_0014_0014__during).
+arc(r_0014_0007__development,r_0014_0016__stage__r_0014_0017__4,r_0014_0014__during).
 arc(r_0014_0012__and,r_0013_0013__pupils,genv).
 arc(r_0014_0012__and,r_0014_0011__reading,conj1).
 arc(r_0014_0012__and,r_0014_0013__writing,conj2).
-arc(r_0014_0016__stage_4,r_0014_0015__key,attrib1).
+arc(r_0014_0016__stage__r_0014_0017__4,r_0014_0015__key,attrib1).
 arc(r_0014_0018__and,r_0014_0003__continues,conj1).
 arc(r_0014_0018__and,r_0014_0021__therefore,conj2).
 arc(r_0014_0020__should,r_0014_0022__ensure,scope).
@@ -937,8 +937,8 @@ arc(r_0015_0016__as_well_as,r_0015_0019__develop,conj2).
 arc(r_0015_0019__develop,r_0013_0013__pupils,arg0).
 arc(r_0015_0019__develop,r_0015_0017__continuing,tmp1).
 arc(r_0015_0019__develop,r_0015_0021__skills,arg1).
-arc(r_0015_0021__skills,cnt_0013_1065,r_0015_0022__in).
 arc(r_0015_0021__skills,r_0013_0013__pupils,genv).
+arc(r_0015_0021__skills,r_0013_1065__cnt,r_0015_0022__in).
 arc(r_0015_0023__working,r_0015_0024__collaboratively,mnr2).
 arc(r_0015_0023__working,r_0015_0027__peers,r_0015_0025__with_com).
 arc(r_0015_0027__peers,r_0013_0013__pupils,genv).
@@ -951,7 +951,7 @@ arc(r_0015_0033__and,r_0015_0037__curriculum,r_0015_0035__across).
 </pre>
 <br>
 <pre>
-fof(id_13_A_KS4_English,axiom,
+fof(id__13_A_KS4_English,axiom,
     ? [STATEX19,STATEX31,STATEX38,CATENATIVEX46,STATEX48,EVENTX59,PUPILSX22,PUPILSX33,PUPILSX44,PUPILSX58,PUPILSX64,OPERATORX45,EVENTX77,EVENTX76,CONJX75,EVENTX74,CONNX66,EVENTX72,EVENTX73,CONJX55,EVENTX54,EVENTX53,CONJX43,OPERATORX30,OPERATORX41,EVENTX42,EVENTX40,EVENTX39,EVENTX28,EVENTX27,EVENTX14,ENTITYX57,ENTITYX63,ENTITYX67,ENTITYX68,ENTITYX69,ENTITYX70,ENTITYX71,ENTITYX49,ENTITYX50,ENTITYX51,ENTITYX52,ENTITYX29,ENTITYX32,ENTITYX34,ENTITYX36,ENTITYX37,ENTITYX35,ENTITYX17,ENTITYX20,ENTITYX21,ENTITYX25,ENTITYX23,ENTITYX24,ENTITYX1,ENTITYX3,ENTITYX4,ENTITYX6,PUPILSX7,ENTITYX8,ATTRIBX26,ATTRIBX18,ATTRIBX5,ATTRIBX9,ATTRIBX2,QUALITYX56,QUALITYX62,QUALITYX10,QUALITYX11,QUALITYX12,QUALITYX13] :
       ( STATEX19 = EVENTX27
       &amp; isA(EVENTX27,r_0014_0005__underpin)
@@ -985,7 +985,7 @@ fof(id_13_A_KS4_English,axiom,
       &amp; tmp1(EVENTX74) = QUALITYX56
       &amp; arg1(EVENTX74) = ENTITYX57
       &amp; EVENTX59 = CONNX66
-      &amp; isA(CONNX66,cnt_0013_1065)
+      &amp; isA(CONNX66,r_0013_1065__cnt)
       &amp; scope(CONNX66) = EVENTX73
       &amp; isA(EVENTX73,r_0015_0023__working)
       &amp; mnr2(EVENTX73) = QUALITYX62
@@ -1020,7 +1020,7 @@ fof(id_13_A_KS4_English,axiom,
       &amp; PUPILSX22 = PUPILSX7
       &amp; isA(ENTITYX23,r_0014_0011__reading)
       &amp; isA(ENTITYX24,r_0014_0013__writing)
-      &amp; isA(ENTITYX25,r_0014_0016__stage_4)
+      &amp; isA(ENTITYX25,r_0014_0016__stage__r_0014_0017__4)
       &amp; attrib1(ENTITYX25) = ATTRIBX26
       &amp; isA(ENTITYX29,r_0014_0019__teachers)
       &amp; isA(ENTITYX32,r_0014_0026__and)

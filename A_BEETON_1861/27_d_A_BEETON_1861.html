@@ -169,8 +169,8 @@ Wine so laid in will be ready for use according to its quality and age .
 </svg>
 <br>
 <pre>
-arc(r_0040_0002__so,r_0040_0003__laid_in,scope).
-arc(r_0040_0003__laid_in,r_0040_0001__Wine,arg1).
+arc(r_0040_0002__so,r_0040_0003__laid__r_0040_0004__in,scope).
+arc(r_0040_0003__laid__r_0040_0004__in,r_0040_0001__Wine,arg1).
 arc(r_0040_0005__will,r_0040_0006__be,scope).
 arc(r_0040_0006__be,r_0040_0001__Wine,arg0).
 arc(r_0040_0006__be,r_0040_0007__ready,prd2).
@@ -183,11 +183,11 @@ arc(r_0040_0013__and,r_0040_0014__age,conj2).
 </pre>
 <br>
 <pre>
-fof(id_40_A_BEETON_1861,axiom,
+fof(id__40_A_BEETON_1861,axiom,
     ? [WINEX8,OPERATORX11,EVENTX12,OPERATORX3,EVENTX4,WINEX1,ENTITYX7,ENTITYX9,ENTITYX10,ENTITYX6,ATTRIBX5] :
       ( isA(OPERATORX3,r_0040_0002__so)
       &amp; scope(OPERATORX3) = EVENTX4
-      &amp; isA(EVENTX4,r_0040_0003__laid_in)
+      &amp; isA(EVENTX4,r_0040_0003__laid__r_0040_0004__in)
       &amp; arg1(EVENTX4) = WINEX1
       &amp; isA(WINEX1,r_0040_0001__Wine)
       &amp; isA(ENTITYX6,r_0040_0009__use)

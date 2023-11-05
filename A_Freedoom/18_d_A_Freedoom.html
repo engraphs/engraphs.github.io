@@ -297,16 +297,16 @@ Headphones give you a more precise way to pick up on these cues .
 </svg>
 <br>
 <pre>
-arc(r_0028_0004__stereo_separation,r_0028_0002__game,genv).
+arc(r_0028_0004__stereo__r_0028_0005__separation,r_0028_0002__game,genv).
 arc(r_0028_0006__can,r_0028_0016__and,scope).
-arc(r_0028_0007__give,r_0028_0004__stereo_separation,arg0).
-arc(r_0028_0007__give,r_0028_0009__audio_cues,arg1).
-arc(r_0028_0009__audio_cues,r_0028_0008__helpful,attrib1).
-arc(r_0028_0009__audio_cues,r_0028_0013__positions,r_0028_0011__about).
+arc(r_0028_0007__give,r_0028_0004__stereo__r_0028_0005__separation,arg0).
+arc(r_0028_0007__give,r_0028_0009__audio__r_0028_0010__cues,arg1).
+arc(r_0028_0009__audio__r_0028_0010__cues,r_0028_0008__helpful,attrib1).
+arc(r_0028_0009__audio__r_0028_0010__cues,r_0028_0013__positions,r_0028_0011__about).
 arc(r_0028_0013__positions,r_0028_0015__enemies,r_0028_0014__of).
 arc(r_0028_0016__and,r_0028_0007__give,conj1).
 arc(r_0028_0016__and,r_0028_0017__alert,conj2).
-arc(r_0028_0017__alert,r_0028_0004__stereo_separation,arg0).
+arc(r_0028_0017__alert,r_0028_0004__stereo__r_0028_0005__separation,arg0).
 arc(r_0028_0017__alert,r_0028_0018__you,arg1).
 arc(r_0028_0017__alert,r_0028_0021__projectiles,r_0028_0019__to_clr).
 arc(r_0028_0021__projectiles,r_0028_0020__incoming,attrib1).
@@ -315,21 +315,21 @@ arc(r_0029_0002__give,r_0029_0001__Headphones,arg0).
 arc(r_0029_0002__give,r_0029_0007__way,arg1).
 arc(r_0029_0006__precise,r_0029_0005__more,quality1).
 arc(r_0029_0007__way,r_0029_0006__precise,attrib2).
-arc(r_0029_0007__way,r_0029_0009__pick_up,emb4).
-arc(r_0029_0009__pick_up,r_0028_0009__audio_cues,r_0029_0011__on_clr).
+arc(r_0029_0007__way,r_0029_0009__pick__r_0029_0010__up,emb4).
+arc(r_0029_0009__pick__r_0029_0010__up,r_0028_0009__audio_r_0028_0010__cues,r_0029_0011__on_clr).
 
 </pre>
 <br>
 <pre>
-fof(id_28_A_Freedoom__29_A_Freedoom,axiom,
+fof(id__28_A_Freedoom__29_A_Freedoom,axiom,
     ? [STATEX18,HEARERX14,AUDIO_CUESX21,EVENTX23,EVENTX22,OPERATORX3,CONJX12,EVENTX11,EVENTX8,ENTITYX13,ENTITYX15,ENTITYX1,ENTITYX9,AUDIO_CUESX4,ENTITYX6,ENTITYX7,ENTITYX2,ATTRIBX16,ATTRIBX10,ATTRIBX5,QUALITYX17] :
       ( STATEX18 = EVENTX22
-      &amp; isA(EVENTX22,r_0029_0009__pick_up)
+      &amp; isA(EVENTX22,r_0029_0009__pick__r_0029_0010__up)
       &amp; r_0029_0011__on_clr(EVENTX22) = AUDIO_CUESX21
-      &amp; isA(ENTITYX1,r_0028_0004__stereo_separation)
+      &amp; isA(ENTITYX1,r_0028_0004__stereo__r_0028_0005__separation)
       &amp; genv(ENTITYX1) = ENTITYX2
       &amp; isA(ENTITYX2,r_0028_0002__game)
-      &amp; isA(AUDIO_CUESX4,r_0028_0009__audio_cues)
+      &amp; isA(AUDIO_CUESX4,r_0028_0009__audio__r_0028_0010__cues)
       &amp; attrib1(AUDIO_CUESX4) = ATTRIBX5
       &amp; r_0028_0011__about(AUDIO_CUESX4) = ENTITYX6
       &amp; isA(ENTITYX6,r_0028_0013__positions)

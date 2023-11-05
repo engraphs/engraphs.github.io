@@ -292,10 +292,8 @@ A stored program machine is one which stores its own instructions in magnetic fo
 </svg>
 <br>
 <pre>
-arc(cnt_0015_1017,r_0015_0019__acting,scope).
-arc(cnt_0015_1017,r_0015_0024__complete,restriction).
-arc(r_0015_0003__program_machine,r_0015_0002__stored,attrib2).
-arc(r_0015_0005__is,r_0015_0003__program_machine,arg0).
+arc(r_0015_0003__program__r_0015_0004__machine,r_0015_0002__stored,attrib2).
+arc(r_0015_0005__is,r_0015_0003__program__r_0015_0004__machine,arg0).
 arc(r_0015_0005__is,r_0015_0006__one,prd2).
 arc(r_0015_0008__stores,r_0015_0006__one,arg0).
 arc(r_0015_0008__stores,r_0015_0011__instructions,arg1).
@@ -306,27 +304,29 @@ arc(r_0015_0015__and,r_0015_0008__stores,conj1).
 arc(r_0015_0015__and,r_0015_0016__is,conj2).
 arc(r_0015_0016__is,r_0015_0006__one,arg0).
 arc(r_0015_0016__is,r_0015_0017__capable,prd2).
-arc(r_0015_0017__capable,cnt_0015_1017,r_0015_0018__of).
+arc(r_0015_0017__capable,r_0015_1017__cnt,r_0015_0018__of).
 arc(r_0015_0019__acting,r_0015_0022__instructions,r_0015_0020__on_clr).
 arc(r_0015_0024__complete,r_0015_0026__application,arg1).
 arc(r_0015_0027__assigned,r_0015_0026__application,arg1).
-arc(z_0015_1008,r_0015_0003__program_machine,genv).
+arc(r_0015_1017__cnt,r_0015_0019__acting,scope).
+arc(r_0015_1017__cnt,r_0015_0024__complete,restriction).
+arc(z_0015_1008,r_0015_0003__program__r_0015_0004__machine,genv).
 arc(z_0015_1008,r_0015_0010__own,attrib2).
 
 </pre>
 <br>
 <pre>
-fof(id_15_A_IBM_1401,axiom,
+fof(id__15_A_IBM_1401,axiom,
     ? [EVENTX13,MACHINEX6,EVENTX26,CONJX25,EVENTX24,CONNX18,EVENTX22,EVENTX21,EVENTX23,EVENTX11,MACHINEX1,ENTITYX3,ENTITYX16,ENTITYX19,ENTITYX4,ENTITYX9,ENTITYX5,ATTRIBX12,ATTRIBX10,ATTRIBX7,ATTRIBX2] :
       ( EVENTX13 = CONNX18
-      &amp; isA(CONNX18,cnt_0015_1017)
+      &amp; isA(CONNX18,r_0015_1017__cnt)
       &amp; scope(CONNX18) = EVENTX23
       &amp; isA(EVENTX23,r_0015_0019__acting)
       &amp; r_0015_0020__on_clr(EVENTX23) = ENTITYX16
       &amp; restriction(CONNX18) = EVENTX22
       &amp; isA(EVENTX22,r_0015_0024__complete)
       &amp; arg1(EVENTX22) = ENTITYX19
-      &amp; isA(MACHINEX1,r_0015_0003__program_machine)
+      &amp; isA(MACHINEX1,r_0015_0003__program__r_0015_0004__machine)
       &amp; attrib2(MACHINEX1) = ATTRIBX2
       &amp; isA(CONJX25,r_0015_0015__and)
       &amp; conj1(CONJX25) = EVENTX11

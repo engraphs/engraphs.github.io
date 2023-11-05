@@ -283,14 +283,14 @@ In 1996 the WHO found that much of the population existed in a state of &ldquo; 
 </svg>
 <br>
 <pre>
-arc(r_0006_0003__Gulf_War,r_0006_0002__Persian,attrib2).
-arc(r_0006_0005__destroyed,r_0006_0003__Gulf_War,arg0).
+arc(r_0006_0003__Gulf__r_0006_0004__War,r_0006_0002__Persian,attrib2).
+arc(r_0006_0005__destroyed,r_0006_0003__Gulf__r_0006_0004__War,arg0).
 arc(r_0006_0005__destroyed,r_0006_0016__report,r_0006_0014__according_to_mod).
 arc(r_0006_0005__destroyed,z_0006_1008,arg1).
 arc(r_0006_0012__infrastructure,r_0006_0009__country,genv).
 arc(r_0006_0012__infrastructure,r_0006_0011__medical,attrib2).
-arc(r_0006_0016__report,r_0006_0019__World_Health_Organization,r_0006_0017__by).
-arc(r_0007_0005__found,r_0006_0019__World_Health_Organization,arg0).
+arc(r_0006_0016__report,r_0006_0019__World__r_0006_0020__Health_r_0006_0021__Organization,r_0006_0017__by).
+arc(r_0007_0005__found,r_0006_0019__World__r_0006_0020__Health_r_0006_0021__Organization,arg0).
 arc(r_0007_0005__found,r_0007_0002__1996,r_0007_0001__In_tmp).
 arc(r_0007_0005__found,r_0007_0011__existed,arg1).
 arc(r_0007_0011__existed,r_0007_0014__state,r_0007_0012__in_mnr).
@@ -305,13 +305,13 @@ arc(z_0006_1018,r_0007_0010__population,r_0007_0008__of).
 </pre>
 <br>
 <pre>
-fof(id_6_A_ANC_nyt20000410__7_A_ANC_nyt20000410,axiom,
+fof(id__6_A_ANC_nyt20000410__7_A_ANC_nyt20000410,axiom,
     ? [STATEX14,WHOX13,EVENTX23,EVENTX22,EVENTX11,ENTITYX12,ENTITYX15,ENTITYX19,ENTITYX20,ENTITYX17,ENTITYX1,ENTITYX3,ENTITYX9,WHOX10,ENTITYX5,ENTITYX6,ATTRIBX21,ATTRIBX16,ATTRIBX4,ATTRIBX7,ATTRIBX2] :
       ( STATEX14 = EVENTX22
       &amp; isA(EVENTX22,r_0007_0011__existed)
       &amp; arg0(EVENTX22) = ENTITYX15
       &amp; r_0007_0012__in_mnr(EVENTX22) = ENTITYX19
-      &amp; isA(ENTITYX1,r_0006_0003__Gulf_War)
+      &amp; isA(ENTITYX1,r_0006_0003__Gulf__r_0006_0004__War)
       &amp; attrib2(ENTITYX1) = ATTRIBX2
       &amp; isA(ENTITYX3,z_0006_1008)
       &amp; attrib1(ENTITYX3) = ATTRIBX4
@@ -322,7 +322,7 @@ fof(id_6_A_ANC_nyt20000410__7_A_ANC_nyt20000410,axiom,
       &amp; isA(ENTITYX6,r_0006_0009__country)
       &amp; isA(ENTITYX9,r_0006_0016__report)
       &amp; r_0006_0017__by(ENTITYX9) = WHOX10
-      &amp; isA(WHOX10,r_0006_0019__World_Health_Organization)
+      &amp; isA(WHOX10,r_0006_0019__World__r_0006_0020__Health_r_0006_0021__Organization)
       &amp; isA(ENTITYX12,r_0007_0002__1996)
       &amp; WHOX13 = WHOX10
       &amp; isA(ENTITYX15,z_0006_1018)

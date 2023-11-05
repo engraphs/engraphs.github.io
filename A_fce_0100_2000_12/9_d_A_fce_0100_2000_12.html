@@ -514,19 +514,16 @@ Write your composition .
 </svg>
 <br>
 <pre>
-arc(cnt_0015_1011,r_0015_0020__write,scope).
-arc(cnt_0015_1011,r_0015_0024__giving,restriction).
-arc(imperative_0015_1039,r_0016_0001__Write,scope).
-arc(r_0015_0003__class_discussion,r_0015_0009__treatment,r_0015_0005__on).
+arc(r_0015_0003__class__r_0015_0004__discussion,r_0015_0009__treatment,r_0015_0005__on).
 arc(r_0015_0009__treatment,r_0015_0007__media,genv).
 arc(r_0015_0009__treatment,r_0015_0012__people,r_0015_0010__of).
 arc(r_0015_0012__people,r_0015_0011__famous,attrib1).
 arc(r_0015_0015__teacher,r_0015_0014__your,genv).
-arc(r_0015_0016__has,r_0015_0003__class_discussion,r_0015_0001__After_tmp).
+arc(r_0015_0016__has,r_0015_0003__class__r_0015_0004__discussion,r_0015_0001__After_tmp).
 arc(r_0015_0016__has,r_0015_0017__asked,catenative).
-arc(r_0015_0017__asked,cnt_0015_1011,arg1).
 arc(r_0015_0017__asked,r_0015_0014__your,arg2).
 arc(r_0015_0017__asked,r_0015_0015__teacher,arg0).
+arc(r_0015_0017__asked,r_0015_1011__cnt,arg1).
 arc(r_0015_0020__write,r_0015_0014__your,arg0).
 arc(r_0015_0020__write,r_0015_0022__composition,arg1).
 arc(r_0015_0024__giving,r_0015_0014__your,arg0).
@@ -538,7 +535,7 @@ arc(r_0015_0030__statement,r_0015_0041__deserve,prn5).
 arc(r_0015_0033__people,r_0015_0032__Famous,attrib1).
 arc(r_0015_0033__people,r_0015_0037__and,r_0015_0035__such_as).
 arc(r_0015_0037__and,r_0015_0036__politicians,conj1).
-arc(r_0015_0037__and,r_0015_0038__film_stars,conj2).
+arc(r_0015_0037__and,r_0015_0038__film__r_0015_0039__stars,conj2).
 arc(r_0015_0041__deserve,r_0015_0033__people,arg0).
 arc(r_0015_0041__deserve,r_0015_0043__have,arg1).
 arc(r_0015_0043__have,r_0015_0033__people,arg0).
@@ -548,8 +545,11 @@ arc(r_0015_0046__life,r_0015_0048__journalists,r_0015_0047__without).
 arc(r_0015_0049__following,r_0015_0048__journalists,arg0).
 arc(r_0015_0049__following,r_0015_0050__them,arg1).
 arc(r_0015_0049__following,r_0015_0053__time,tmp).
-arc(r_0015_0051__quantificational__all,r_0015_0049__following,scope).
-arc(r_0015_0051__quantificational__all,r_0015_0053__time,restriction).
+arc(r_0015_0051__quantificational__r_0015_0051__all,r_0015_0049__following,scope).
+arc(r_0015_0051__quantificational__r_0015_0051__all,r_0015_0053__time,restriction).
+arc(r_0015_1011__cnt,r_0015_0020__write,scope).
+arc(r_0015_1011__cnt,r_0015_0024__giving,restriction).
+arc(r_0015_1039__imperative,r_0016_0001__Write,scope).
 arc(r_0016_0001__Write,r_0016_0003__composition,arg1).
 arc(r_0016_0003__composition,r_0015_0014__your,genv).
 arc(r_0016_0003__composition,r_0015_0022__composition,z_0015_1042).
@@ -557,7 +557,7 @@ arc(r_0016_0003__composition,r_0015_0022__composition,z_0015_1042).
 </pre>
 <br>
 <pre>
-fof(id_15_A_fce_0100_2000_12__16_A_fce_0100_2000_12,axiom,
+fof(id__15_A_fce_0100_2000_12__16_A_fce_0100_2000_12,axiom,
     ? [CATENATIVEX7,STATEX9,EVENTX17,STATEX23,HEARERX8,HEARERX14,COMPOSITION1X43,HEARERX44,OPERATORX39,EVENTX45,EVENTX35,EVENTX34,CONNX12,EVENTX32,EVENTX31,EVENTX30,QUANTX28,EVENTX29,EVENTX33,ENTITYX40,ENTITYX1,ENTITYX6,COMPOSITION1X10,ENTITYX13,ENTITYX15,ENTITYX18,ENTITYX24,ENTITYX26,ENTITYX27,ENTITYX20,ENTITYX21,ENTITYX22,ENTITYX2,ENTITYX3,ENTITYX4,ATTRIBX16,ATTRIBX25,ATTRIBX19,ATTRIBX5] :
       ( CATENATIVEX7 = EVENTX34
       &amp; isA(EVENTX34,r_0015_0017__asked)
@@ -565,7 +565,7 @@ fof(id_15_A_fce_0100_2000_12__16_A_fce_0100_2000_12,axiom,
       &amp; arg2(EVENTX34) = HEARERX8
       &amp; arg1(EVENTX34) = STATEX9
       &amp; STATEX9 = CONNX12
-      &amp; isA(CONNX12,cnt_0015_1011)
+      &amp; isA(CONNX12,r_0015_1011__cnt)
       &amp; scope(CONNX12) = EVENTX33
       &amp; isA(EVENTX33,r_0015_0020__write)
       &amp; arg0(EVENTX33) = HEARERX8
@@ -582,7 +582,7 @@ fof(id_15_A_fce_0100_2000_12__16_A_fce_0100_2000_12,axiom,
       &amp; isA(EVENTX30,r_0015_0043__have)
       &amp; arg0(EVENTX30) = ENTITYX18
       &amp; arg1(EVENTX30) = ENTITYX24
-      &amp; isA(ENTITYX1,r_0015_0003__class_discussion)
+      &amp; isA(ENTITYX1,r_0015_0003__class__r_0015_0004__discussion)
       &amp; r_0015_0005__on(ENTITYX1) = ENTITYX2
       &amp; isA(ENTITYX2,r_0015_0009__treatment)
       &amp; genv(ENTITYX2) = ENTITYX3
@@ -609,11 +609,11 @@ fof(id_15_A_fce_0100_2000_12__16_A_fce_0100_2000_12,axiom,
       &amp; conj1(ENTITYX20) = ENTITYX21
       &amp; conj2(ENTITYX20) = ENTITYX22
       &amp; isA(ENTITYX21,r_0015_0036__politicians)
-      &amp; isA(ENTITYX22,r_0015_0038__film_stars)
+      &amp; isA(ENTITYX22,r_0015_0038__film__r_0015_0039__stars)
       &amp; isA(ENTITYX24,r_0015_0046__life)
       &amp; attrib2(ENTITYX24) = ATTRIBX25
       &amp; r_0015_0047__without(ENTITYX24) = ENTITYX26
-      &amp; isA(QUANTX28,r_0015_0051__quantificational__all)
+      &amp; isA(QUANTX28,r_0015_0051__quantificational__r_0015_0051__all)
       &amp; restriction(QUANTX28) = ENTITYX27
       &amp; isA(ENTITYX27,r_0015_0053__time)
       &amp; scope(QUANTX28) = EVENTX29
@@ -634,7 +634,7 @@ fof(id_15_A_fce_0100_2000_12__16_A_fce_0100_2000_12,axiom,
       &amp; isA(EVENTX35,r_0015_0016__has)
       &amp; r_0015_0001__After_tmp(EVENTX35) = ENTITYX1
       &amp; catenative(EVENTX35) = CATENATIVEX7
-      &amp; isA(OPERATORX39,imperative_0015_1039)
+      &amp; isA(OPERATORX39,r_0015_1039__imperative)
       &amp; scope(OPERATORX39) = EVENTX45
       &amp; isA(EVENTX45,r_0016_0001__Write)
       &amp; arg1(EVENTX45) = ENTITYX40 ) ).

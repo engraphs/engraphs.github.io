@@ -556,7 +556,7 @@ mortality rate is approximately 30 % .
 </svg>
 <br>
 <pre>
-arc(r_0045_0001__Crimean_Congo_hemorrhagic_fever,r_0045_0009__disease,prn5).
+arc(r_0045_0001__Crimean_Congo__r_0045_0002__hemorrhagic_r_0045_0003__fever,r_0045_0009__disease,prn5).
 arc(r_0045_0007__borne,r_0045_0005__tick,arg0_lgs).
 arc(r_0045_0007__borne,r_0045_0009__disease,arg1).
 arc(r_0045_0009__disease,r_0045_0008__viral,attrib2).
@@ -565,38 +565,38 @@ arc(r_0046_0003__also,r_0046_0002__may,scope).
 arc(r_0046_0004__result,r_0046_0001__infection,arg0).
 arc(r_0046_0004__result,r_0046_0006__exposure,r_0046_0005__from_dir).
 arc(r_0046_0006__exposure,r_0046_0011__or,r_0046_0007__to).
-arc(r_0046_0009__animal_blood,r_0046_0008__infected,attrib1).
-arc(r_0046_0011__or,r_0046_0009__animal_blood,conj1).
+arc(r_0046_0009__animal__r_0046_0010__blood,r_0046_0008__infected,attrib1).
+arc(r_0046_0011__or,r_0046_0009__animal__r_0046_0010__blood,conj1).
 arc(r_0046_0011__or,r_0046_0012__tissue,conj2).
 arc(r_0047_0002__distribution,r_0047_0001__geographic,attrib1).
 arc(r_0047_0003__includes,r_0047_0002__distribution,arg0).
 arc(r_0047_0003__includes,r_0047_0012__and,arg1).
 arc(r_0047_0012__and,r_0047_0004__Africa,conj1).
 arc(r_0047_0012__and,r_0047_0006__Asia,conj2).
-arc(r_0047_0012__and,r_0047_0009__Middle_East,conj3).
-arc(r_0047_0012__and,r_0047_0013__Eastern_Europe,conj4).
+arc(r_0047_0012__and,r_0047_0009__Middle__r_0047_0010__East,conj3).
+arc(r_0047_0012__and,r_0047_0013__Eastern__r_0047_0014__Europe,conj4).
 arc(r_0048_0002__onset,r_0048_0001__sudden,attrib1).
 arc(r_0048_0002__onset,r_0048_0008__and,r_0048_0003__of).
 arc(r_0048_0008__and,r_0048_0004__fever,conj1).
 arc(r_0048_0008__and,r_0048_0006__headache,conj2).
-arc(r_0048_0008__and,r_0048_0009__muscle_aches,conj3).
+arc(r_0048_0008__and,r_0048_0009__muscle__r_0048_0010__aches,conj3).
 arc(r_0048_0011__followed,r_0048_0002__onset,arg1).
-arc(r_0048_0011__followed,r_0048_0013__hemorrhaging,arg0_by_lgs).
+arc(r_0048_0011__followed,r_0048_0013__hemorrhaging,arg0__r_0048_0012__by_lgs).
 arc(r_0048_0013__hemorrhaging,r_0048_0022__and,r_0048_0014__in).
 arc(r_0048_0022__and,r_0048_0016__bowels,conj1).
 arc(r_0048_0022__and,r_0048_0018__urine,conj2).
 arc(r_0048_0022__and,r_0048_0020__nose,conj3).
 arc(r_0048_0022__and,r_0048_0023__gums,conj4).
-arc(r_0049_0003__is,r_0049_0001__mortality_rate,arg0).
-arc(r_0049_0003__is,r_0049_0005__30__,prd2).
-arc(r_0049_0005__30__,r_0049_0004__approximately,quality1).
-arc(z_0045_1009,r_0045_0001__Crimean_Congo_hemorrhagic_fever,z_0045_1004).
+arc(r_0049_0003__is,r_0049_0001__mortality__r_0049_0002__rate,arg0).
+arc(r_0049_0003__is,r_0049_0005__30__r_0049_0006___,prd2).
+arc(r_0049_0005__30__r_0049_0006___,r_0049_0004__approximately,quality1).
+arc(z_0045_1009,r_0045_0001__Crimean_Congo__r_0045_0002__hemorrhagic_r_0045_0003__fever,z_0045_1004).
 arc(z_0045_1041,r_0048_0002__onset,z_0045_1027).
 
 </pre>
 <br>
 <pre>
-fof(id_45_A_FACTBOOK_1_2010__46_A_FACTBOOK_1_2010__47_A_FACTBOOK_1_2010__48_A_FACTBOOK_1_2010__49_A_FACTBOOK_1_2010,axiom,
+fof(id__45_A_FACTBOOK_1_2010__46_A_FACTBOOK_1_2010__47_A_FACTBOOK_1_2010__48_A_FACTBOOK_1_2010__49_A_FACTBOOK_1_2010,axiom,
     ? [EVENTX46,EVENTX42,EVENTX40,EVENTX23,OPERATORX12,OPERATORX18,EVENTX19,EVENTX10,EVENTX7,ENTITYX43,ENTITYX44,ENTITYX28,ENTITYX30,ENTITYX34,ENTITYX35,ENTITYX36,ENTITYX37,ENTITYX38,ENTITYX39,ENTITYX31,ENTITYX32,ENTITYX33,ENTITYX20,ENTITYX22,ENTITYX11,ENTITYX13,ENTITYX14,ENTITYX15,ENTITYX17,ENTITYX5,ENTITYX6,ATTRIBX29,ATTRIBX21,ATTRIBX16,ATTRIBX8,QUALITYX45] :
       ( isA(EVENTX7,r_0045_0007__borne)
       &amp; arg0_lgs(EVENTX7) = ENTITYX6
@@ -610,7 +610,7 @@ fof(id_45_A_FACTBOOK_1_2010__46_A_FACTBOOK_1_2010__47_A_FACTBOOK_1_2010__48_A_FA
       &amp; isA(ENTITYX14,r_0046_0011__or)
       &amp; conj1(ENTITYX14) = ENTITYX15
       &amp; conj2(ENTITYX14) = ENTITYX17
-      &amp; isA(ENTITYX15,r_0046_0009__animal_blood)
+      &amp; isA(ENTITYX15,r_0046_0009__animal__r_0046_0010__blood)
       &amp; attrib1(ENTITYX15) = ATTRIBX16
       &amp; isA(ENTITYX17,r_0046_0012__tissue)
       &amp; isA(ENTITYX20,r_0047_0002__distribution)
@@ -618,10 +618,10 @@ fof(id_45_A_FACTBOOK_1_2010__46_A_FACTBOOK_1_2010__47_A_FACTBOOK_1_2010__48_A_FA
       &amp; isA(ENTITYX22,r_0047_0012__and)
       &amp; conj1(ENTITYX22) = r_0047_0004__Africa
       &amp; conj2(ENTITYX22) = r_0047_0006__Asia
-      &amp; conj3(ENTITYX22) = r_0047_0009__Middle_East
-      &amp; conj4(ENTITYX22) = r_0047_0013__Eastern_Europe
+      &amp; conj3(ENTITYX22) = r_0047_0009__Middle__r_0047_0010__East
+      &amp; conj4(ENTITYX22) = r_0047_0013__Eastern__r_0047_0014__Europe
       &amp; isA(EVENTX40,r_0048_0011__followed)
-      &amp; arg0_by_lgs(EVENTX40) = ENTITYX34
+      &amp; arg0__r_0048_0012__by_lgs(EVENTX40) = ENTITYX34
       &amp; arg1(EVENTX40) = ENTITYX28
       &amp; isA(ENTITYX28,r_0048_0002__onset)
       &amp; attrib1(ENTITYX28) = ATTRIBX29
@@ -632,7 +632,7 @@ fof(id_45_A_FACTBOOK_1_2010__46_A_FACTBOOK_1_2010__47_A_FACTBOOK_1_2010__48_A_FA
       &amp; conj3(ENTITYX30) = ENTITYX33
       &amp; isA(ENTITYX31,r_0048_0004__fever)
       &amp; isA(ENTITYX32,r_0048_0006__headache)
-      &amp; isA(ENTITYX33,r_0048_0009__muscle_aches)
+      &amp; isA(ENTITYX33,r_0048_0009__muscle__r_0048_0010__aches)
       &amp; isA(ENTITYX34,r_0048_0013__hemorrhaging)
       &amp; r_0048_0014__in(ENTITYX34) = ENTITYX35
       &amp; isA(ENTITYX35,r_0048_0022__and)
@@ -644,19 +644,19 @@ fof(id_45_A_FACTBOOK_1_2010__46_A_FACTBOOK_1_2010__47_A_FACTBOOK_1_2010__48_A_FA
       &amp; isA(ENTITYX37,r_0048_0018__urine)
       &amp; isA(ENTITYX38,r_0048_0020__nose)
       &amp; isA(ENTITYX39,r_0048_0023__gums)
-      &amp; isA(ENTITYX43,r_0049_0001__mortality_rate)
-      &amp; isA(ENTITYX44,r_0049_0005__30__)
+      &amp; isA(ENTITYX43,r_0049_0001__mortality__r_0049_0002__rate)
+      &amp; isA(ENTITYX44,r_0049_0005__30__r_0049_0006___)
       &amp; quality1(ENTITYX44) = QUALITYX45
-      &amp; isA(r_0045_0001__Crimean_Congo_hemorrhagic_fever,r_0045_0001__Crimean_Congo_hemorrhagic_fever)
-      &amp; prn5(r_0045_0001__Crimean_Congo_hemorrhagic_fever) = ENTITYX5
-      &amp; isA(r_0047_0009__Middle_East,r_0047_0009__Middle_East)
+      &amp; isA(r_0045_0001__Crimean_Congo__r_0045_0002__hemorrhagic_r_0045_0003__fever,r_0045_0001__Crimean_Congo_r_0045_0002__hemorrhagic_r_0045_0003__fever)
+      &amp; prn5(r_0045_0001__Crimean_Congo__r_0045_0002__hemorrhagic_r_0045_0003__fever) = ENTITYX5
+      &amp; isA(r_0047_0009__Middle__r_0047_0010__East,r_0047_0009__Middle_r_0047_0010__East)
       &amp; isA(ATTRIBX8,r_0045_0008__viral)
       &amp; isA(ATTRIBX16,r_0046_0008__infected)
       &amp; isA(ATTRIBX21,r_0047_0001__geographic)
       &amp; isA(ATTRIBX29,r_0048_0001__sudden)
       &amp; isA(QUALITYX45,r_0049_0004__approximately)
       &amp; isA(EVENTX10,z_0045_1009)
-      &amp; z_0045_1004(EVENTX10) = r_0045_0001__Crimean_Congo_hemorrhagic_fever
+      &amp; z_0045_1004(EVENTX10) = r_0045_0001__Crimean_Congo__r_0045_0002__hemorrhagic_r_0045_0003__fever
       &amp; isA(OPERATORX12,r_0046_0003__also)
       &amp; scope(OPERATORX12) = OPERATORX18
       &amp; isA(OPERATORX18,r_0046_0002__may)

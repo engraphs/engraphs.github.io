@@ -325,10 +325,8 @@
 </svg>
 <br>
 <pre>
-arc(abs_0018_1019,r_0018_0005__specified,scope).
-arc(abs_0018_1019,r_0018_0023__considering,restriction).
 arc(r_0018_0005__specified,r_0018_0004__Entities,arg1).
-arc(r_0018_0005__specified,r_0018_0008__Cabinet_Order,arg0_by_lgs).
+arc(r_0018_0005__specified,r_0018_0008__Cabinet__r_0018_0009__Order,arg0_r_0018_0006__by_lgs).
 arc(r_0018_0005__specified,r_0018_0011__having,r_0018_0010__as_prd).
 arc(r_0018_0011__having,r_0018_0014__likelihood,arg1).
 arc(r_0018_0014__likelihood,r_0018_0013__little,attrib2).
@@ -346,12 +344,14 @@ arc(r_0018_0030__utilization,r_0018_0033__information,r_0018_0031__of).
 arc(r_0018_0033__information,r_0018_0032__personal,attrib1).
 arc(r_0018_0035__handle,r_0018_0033__information,arg1).
 arc(r_0018_0035__handle,r_0018_0034__they,arg0).
+arc(r_0018_1019__abs,r_0018_0005__specified,scope).
+arc(r_0018_1019__abs,r_0018_0023__considering,restriction).
 arc(z_0018_1030,r_0018_0004__Entities,z_0018_1002).
 
 </pre>
 <br>
 <pre>
-fof(id_18_A_law_h15A119,axiom,
+fof(id__18_A_law_h15A119,axiom,
     ? [EVENTX5,STATEX10,EVENTX31,CONNX20,EVENTX28,EVENTX25,EVENTX29,EVENTX18,EVENTX17,ENTITYX3,ENTITYX4,ENTITYX21,ENTITYX22,ENTITYX26,ENTITYX27,ENTITYX23,ENTITYX8,ENTITYX13,ENTITYX14,ENTITYX15,ENTITYX16,ATTRIBX24,ATTRIBX9] :
       ( EVENTX5 = EVENTX18
       &amp; isA(EVENTX18,r_0018_0011__having)
@@ -359,10 +359,10 @@ fof(id_18_A_law_h15A119,axiom,
       &amp; STATEX10 = EVENTX17
       &amp; isA(EVENTX17,r_0018_0016__harm)
       &amp; arg1(EVENTX17) = ENTITYX13
-      &amp; isA(CONNX20,abs_0018_1019)
+      &amp; isA(CONNX20,r_0018_1019__abs)
       &amp; scope(CONNX20) = EVENTX29
       &amp; isA(EVENTX29,r_0018_0005__specified)
-      &amp; arg0_by_lgs(EVENTX29) = ENTITYX4
+      &amp; arg0__r_0018_0006__by_lgs(EVENTX29) = ENTITYX4
       &amp; arg1(EVENTX29) = ENTITYX3
       &amp; r_0018_0010__as_prd(EVENTX29) = EVENTX5
       &amp; restriction(CONNX20) = EVENTX28
@@ -370,7 +370,7 @@ fof(id_18_A_law_h15A119,axiom,
       &amp; arg0(EVENTX28) = ENTITYX3
       &amp; arg1(EVENTX28) = ENTITYX21
       &amp; isA(ENTITYX3,r_0018_0004__Entities)
-      &amp; isA(ENTITYX4,r_0018_0008__Cabinet_Order)
+      &amp; isA(ENTITYX4,r_0018_0008__Cabinet__r_0018_0009__Order)
       &amp; isA(ENTITYX8,r_0018_0014__likelihood)
       &amp; attrib2(ENTITYX8) = ATTRIBX9
       &amp; emb4(ENTITYX8) = STATEX10

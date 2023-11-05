@@ -77,7 +77,7 @@ My reply was , in the absence of children , who play a pivotal role in introduci
 <title>0031_0003&#45;&gt;utterance_0031_1004</title>
 <path fill="none" stroke="black" d="M99.68,-610.01C107.81,-597.67 119.22,-580.35 128.58,-566.15"/>
 <polygon fill="black" stroke="black" points="131.51,-568.06 134.09,-557.79 125.66,-564.21 131.51,-568.06"/>
-<text text-anchor="middle" x="138.15" y="-579.8" font-family="fixed" font-size="14.00">[prd]</text>
+<text text-anchor="middle" x="142.65" y="-579.8" font-family="fixed" font-size="14.00">[prd2]</text>
 </g>
 <!-- imperative_0031_1008 -->
 <g id="node15" class="node">
@@ -226,10 +226,9 @@ My reply was , in the absence of children , who play a pivotal role in introduci
 </svg>
 <br>
 <pre>
-arc(imperative_0031_1008,r_0031_0022__exercise,scope).
 arc(r_0031_0002__reply,r_0031_0001__My,genv).
 arc(r_0031_0003__was,r_0031_0002__reply,arg0).
-arc(r_0031_0003__was,utterance_0031_1004,prd).
+arc(r_0031_0003__was,r_0031_1004__utterance,prd2).
 arc(r_0031_0007__absence,r_0031_0009__children,r_0031_0008__of).
 arc(r_0031_0012__play,r_0031_0009__children,arg0).
 arc(r_0031_0012__play,r_0031_0015__role,arg1).
@@ -239,17 +238,18 @@ arc(r_0031_0017__introducing,r_0031_0018__families,arg1).
 arc(r_0031_0017__introducing,r_0031_0020__each_other,r_0031_0019__to_clr_com).
 arc(r_0031_0022__exercise,r_0031_0007__absence,r_0031_0005__in_rst).
 arc(r_0031_0022__exercise,r_0031_0024__dog,arg1).
-arc(utterance_0031_1004,imperative_0031_1008,part1).
+arc(r_0031_1004__utterance,r_0031_1008__imperative,part1).
+arc(r_0031_1008__imperative,r_0031_0022__exercise,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_31_A_Alresford,axiom,
+fof(id__31_A_Alresford,axiom,
     ? [STATEX2,EVENTX13,EVENTX22,CONJX21,OPERATORX8,EVENTX20,EVENTX18,EVENTX17,ENTITYX1,ENTITYX9,ENTITYX19,ENTITYX10,ENTITYX11,ENTITYX16,ATTRIBX12] :
       ( STATEX2 = CONJX21
-      &amp; isA(CONJX21,utterance_0031_1004)
+      &amp; isA(CONJX21,r_0031_1004__utterance)
       &amp; part1(CONJX21) = OPERATORX8
-      &amp; isA(OPERATORX8,imperative_0031_1008)
+      &amp; isA(OPERATORX8,r_0031_1008__imperative)
       &amp; scope(OPERATORX8) = EVENTX20
       &amp; isA(EVENTX20,r_0031_0022__exercise)
       &amp; r_0031_0005__in_rst(EVENTX20) = ENTITYX9
@@ -274,7 +274,7 @@ fof(id_31_A_Alresford,axiom,
       &amp; isA(ATTRIBX12,r_0031_0014__pivotal)
       &amp; isA(EVENTX22,r_0031_0003__was)
       &amp; arg0(EVENTX22) = ENTITYX1
-      &amp; prd(EVENTX22) = STATEX2 ) ).
+      &amp; prd2(EVENTX22) = STATEX2 ) ).
 
 
 </pre>
@@ -301,7 +301,7 @@ fof(id_31_A_Alresford,axiom,
 <text x="420.48" y="173" text-anchor="middle">,</text>
 <line x1="420.48" y1="122" x2="420.48" y2="153" style="stroke:#000000;stroke-width:2;"/>
 <line x1="1500.72" y1="61" x2="420" y2="92" style="stroke:#000000;stroke-width:2;"/>
-<text x="1681.56" y="112" text-anchor="middle">utterance-PRD</text>
+<text x="1681.68" y="112" text-anchor="middle">utterance-PRD2</text>
 <text x="1680.72" y="173" text-anchor="middle">IP-IMP</text>
 <text x="1440.72" y="234" text-anchor="middle">PP-RST</text>
 <text x="540.72" y="295" text-anchor="middle">P-ROLE</text>
@@ -411,7 +411,7 @@ fof(id_31_A_Alresford,axiom,
 <line x1="2820.36" y1="305" x2="2820.36" y2="336" style="stroke:#000000;stroke-width:2;"/>
 <line x1="2760.72" y1="244" x2="2820" y2="275" style="stroke:#000000;stroke-width:2;"/>
 <line x1="1680.72" y1="183" x2="2760" y2="214" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1681.56" y1="122" x2="1680" y2="153" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1681.68" y1="122" x2="1680" y2="153" style="stroke:#000000;stroke-width:2;"/>
 <line x1="1500.72" y1="61" x2="1680" y2="92" style="stroke:#000000;stroke-width:2;"/>
 <text x="2940.48" y="112" text-anchor="middle">PUNC</text>
 <text x="2940.48" y="173" text-anchor="middle">!</text>
@@ -424,26 +424,26 @@ fof(id_31_A_Alresford,axiom,
                   (N reply;{reply}))
           (BED;~equ_Vr was;{be})
           (PUNC ,)
-          (utterance-PRD (IP-IMP (PP-RST (P-ROLE in;{in})
-                                         (NP (D the;{the})
-                                             (N absence;{absence})
-                                             (PP (P-ROLE of;{of})
-                                                 (NP (NS children;{child})
-                                                     (PUNC ,)
-                                                     (IP-REL (NP-SBJ (RPRO who;{who}))
-                                                             (VBP;~Tn play;{play})
-                                                             (NP-OB1 (D a;{a})
-                                                                     (ADJP (ADJ pivotal;{pivotal}))
-                                                                     (N role;{role})
-                                                                     (PP (P-ROLE in;{in})
-                                                                         (IP-PPL (VAG;~Tn.pr introducing;{introduce[to]})
-                                                                                 (NP-OB1 (NS families;{family}))
-                                                                                 (PP-CLR-COM (P-ROLE to;{to})
-                                                                                             (NP (PNX each_other;{each_other})))))))))))
-                                 (PUNC ,)
-                                 (VB;~Tn exercise;{exercise})
-                                 (NP-OB1 (D a;{a})
-                                         (N dog;{dog}))))
+          (utterance-PRD2 (IP-IMP (PP-RST (P-ROLE in;{in})
+                                          (NP (D the;{the})
+                                              (N absence;{absence})
+                                              (PP (P-ROLE of;{of})
+                                                  (NP (NS children;{child})
+                                                      (PUNC ,)
+                                                      (IP-REL (NP-SBJ (RPRO who;{who}))
+                                                              (VBP;~Tn play;{play})
+                                                              (NP-OB1 (D a;{a})
+                                                                      (ADJP (ADJ pivotal;{pivotal}))
+                                                                      (N role;{role})
+                                                                      (PP (P-ROLE in;{in})
+                                                                          (IP-PPL (VAG;~Tn.pr introducing;{introduce[to]})
+                                                                                  (NP-OB1 (NS families;{family}))
+                                                                                  (PP-CLR-COM (P-ROLE to;{to})
+                                                                                              (NP (PNX each_other;{each_other})))))))))))
+                                  (PUNC ,)
+                                  (VB;~Tn exercise;{exercise})
+                                  (NP-OB1 (D a;{a})
+                                          (N dog;{dog}))))
           (PUNC !))
   (ID 31_A_Alresford))
 </pre>

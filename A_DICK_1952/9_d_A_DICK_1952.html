@@ -155,8 +155,6 @@ He leaped violently back , knocking against Dorle , the Chief Navigator .
 </svg>
 <br>
 <pre>
-arc(mnr_0015_1003,r_0015_0002__leaped,scope).
-arc(mnr_0015_1003,r_0015_0006__knocking,restriction).
 arc(r_0015_0002__leaped,r_0015_0001__He,arg0).
 arc(r_0015_0002__leaped,r_0015_0003__violently,mnr3).
 arc(r_0015_0002__leaped,r_0015_0004__back,dir4).
@@ -164,11 +162,13 @@ arc(r_0015_0006__knocking,r_0015_0001__He,arg0).
 arc(r_0015_0006__knocking,r_0015_0008__Dorle,r_0015_0007__against_clr_dir).
 arc(r_0015_0008__Dorle,r_0015_0012__Navigator,prn3).
 arc(r_0015_0012__Navigator,r_0015_0011__Chief,attrib2).
+arc(r_0015_1003__mnr,r_0015_0002__leaped,scope).
+arc(r_0015_1003__mnr,r_0015_0006__knocking,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_15_A_DICK_1952,axiom,
+fof(id__15_A_DICK_1952,axiom,
     ? [CONNX4,EVENTX7,EVENTX8,ENTITYX5,QUALITYX1,QUALITYX2,ATTRIBX6] :
       ( isA(ENTITYX5,r_0015_0012__Navigator)
       &amp; attrib2(ENTITYX5) = ATTRIBX6
@@ -177,7 +177,7 @@ fof(id_15_A_DICK_1952,axiom,
       &amp; isA(QUALITYX1,r_0015_0003__violently)
       &amp; isA(QUALITYX2,r_0015_0004__back)
       &amp; isA(ATTRIBX6,r_0015_0011__Chief)
-      &amp; isA(CONNX4,mnr_0015_1003)
+      &amp; isA(CONNX4,r_0015_1003__mnr)
       &amp; scope(CONNX4) = EVENTX8
       &amp; isA(EVENTX8,r_0015_0002__leaped)
       &amp; arg0(EVENTX8) = r_0015_0001__He

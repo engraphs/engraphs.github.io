@@ -162,10 +162,10 @@ Playwrights Arnold Wesker ( the kitchen ) and Robert Bolt ( the flowering cherry
 <br>
 <pre>
 arc(r_0112_0001__Playwrights,r_0112_0008__and,nlyr2).
-arc(r_0112_0002__Arnold_Wesker,r_0112_0006__kitchen,prn4).
-arc(r_0112_0008__and,r_0112_0002__Arnold_Wesker,conj1).
-arc(r_0112_0008__and,r_0112_0009__Robert_Bolt,conj2).
-arc(r_0112_0009__Robert_Bolt,r_0112_0014__cherry,prn4).
+arc(r_0112_0002__Arnold__r_0112_0003__Wesker,r_0112_0006__kitchen,prn4).
+arc(r_0112_0008__and,r_0112_0002__Arnold__r_0112_0003__Wesker,conj1).
+arc(r_0112_0008__and,r_0112_0009__Robert__r_0112_0010__Bolt,conj2).
+arc(r_0112_0009__Robert__r_0112_0010__Bolt,r_0112_0014__cherry,prn4).
 arc(r_0112_0013__flowering,r_0112_0014__cherry,arg0).
 arc(r_0112_0016__were,r_0112_0017__jailed,catenative).
 arc(r_0112_0017__jailed,r_0112_0001__Playwrights,arg1).
@@ -174,7 +174,7 @@ arc(r_0112_0017__jailed,r_0112_0020__month,r_0112_0018__for_tmp).
 </pre>
 <br>
 <pre>
-fof(id_112_A_lob_A02,axiom,
+fof(id__112_A_lob_A02,axiom,
     ? [CATENATIVEX6,EVENTX10,EVENTX9,EVENTX5,ENTITYX1,ENTITYX8,ENTITYX2,ENTITYX4,ENTITYX3] :
       ( CATENATIVEX6 = EVENTX9
       &amp; isA(EVENTX9,r_0112_0017__jailed)
@@ -183,17 +183,17 @@ fof(id_112_A_lob_A02,axiom,
       &amp; isA(ENTITYX1,r_0112_0001__Playwrights)
       &amp; nlyr2(ENTITYX1) = ENTITYX2
       &amp; isA(ENTITYX2,r_0112_0008__and)
-      &amp; conj1(ENTITYX2) = r_0112_0002__Arnold_Wesker
-      &amp; conj2(ENTITYX2) = r_0112_0009__Robert_Bolt
+      &amp; conj1(ENTITYX2) = r_0112_0002__Arnold__r_0112_0003__Wesker
+      &amp; conj2(ENTITYX2) = r_0112_0009__Robert__r_0112_0010__Bolt
       &amp; isA(ENTITYX3,r_0112_0006__kitchen)
       &amp; isA(EVENTX5,r_0112_0013__flowering)
       &amp; arg0(EVENTX5) = ENTITYX4
       &amp; isA(ENTITYX4,r_0112_0014__cherry)
       &amp; isA(ENTITYX8,r_0112_0020__month)
-      &amp; isA(r_0112_0002__Arnold_Wesker,r_0112_0002__Arnold_Wesker)
-      &amp; prn4(r_0112_0002__Arnold_Wesker) = ENTITYX3
-      &amp; isA(r_0112_0009__Robert_Bolt,r_0112_0009__Robert_Bolt)
-      &amp; prn4(r_0112_0009__Robert_Bolt) = ENTITYX4
+      &amp; isA(r_0112_0002__Arnold__r_0112_0003__Wesker,r_0112_0002__Arnold_r_0112_0003__Wesker)
+      &amp; prn4(r_0112_0002__Arnold__r_0112_0003__Wesker) = ENTITYX3
+      &amp; isA(r_0112_0009__Robert__r_0112_0010__Bolt,r_0112_0009__Robert_r_0112_0010__Bolt)
+      &amp; prn4(r_0112_0009__Robert__r_0112_0010__Bolt) = ENTITYX4
       &amp; isA(EVENTX10,r_0112_0016__were)
       &amp; catenative(EVENTX10) = CATENATIVEX6 ) ).
 

@@ -83,18 +83,18 @@ Write your story .
 </svg>
 <br>
 <pre>
-arc(imperative_0018_1002,r_0018_0001__Write,scope).
 arc(r_0018_0001__Write,r_0018_0003__story,arg1).
 arc(r_0018_0003__story,r_0018_0002__your,genv).
+arc(r_0018_1002__imperative,r_0018_0001__Write,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_18_A_fce_0101_2000_06,axiom,
+fof(id__18_A_fce_0101_2000_06,axiom,
     ? [OPERATORX2,EVENTX5,ENTITYX4] :
       ( isA(ENTITYX4,r_0018_0003__story)
       &amp; genv(ENTITYX4) = r_0018_0002__your
-      &amp; isA(OPERATORX2,imperative_0018_1002)
+      &amp; isA(OPERATORX2,r_0018_1002__imperative)
       &amp; scope(OPERATORX2) = EVENTX5
       &amp; isA(EVENTX5,r_0018_0001__Write)
       &amp; arg1(EVENTX5) = ENTITYX4 ) ).

@@ -341,7 +341,7 @@ victims exhibit jaundice , fatigue , abdominal pain , and dark colored urine .
 </svg>
 <br>
 <pre>
-arc(r_0015_0001__Hepatitis_E,r_0015_0008__disease,prn4).
+arc(r_0015_0001__Hepatitis__r_0015_0002__E,r_0015_0008__disease,prn4).
 arc(r_0015_0006__borne,r_0015_0004__water,arg0_lgs).
 arc(r_0015_0006__borne,r_0015_0008__disease,arg1).
 arc(r_0015_0008__disease,r_0015_0007__viral,attrib2).
@@ -361,13 +361,13 @@ arc(r_0016_0010__and,r_0016_0003__jaundice,conj1).
 arc(r_0016_0010__and,r_0016_0005__fatigue,conj2).
 arc(r_0016_0010__and,r_0016_0008__pain,conj3).
 arc(r_0016_0010__and,r_0016_0013__urine,conj4).
-arc(r_0016_0013__urine,r_0016_0011__dark_colored,attrib1).
-arc(z_0015_1019,r_0015_0001__Hepatitis_E,z_0015_1004).
+arc(r_0016_0013__urine,r_0016_0011__dark__r_0016_0012__colored,attrib1).
+arc(z_0015_1019,r_0015_0001__Hepatitis__r_0015_0002__E,z_0015_1004).
 
 </pre>
 <br>
 <pre>
-fof(id_15_A_FACTBOOK_1_2010__16_A_FACTBOOK_1_2010,axiom,
+fof(id__15_A_FACTBOOK_1_2010__16_A_FACTBOOK_1_2010,axiom,
     ? [EVENTX29,EVENTX20,OPERATORX13,EVENTX18,EVENTX11,EVENTX7,ENTITYX21,ENTITYX22,ENTITYX23,ENTITYX24,ENTITYX25,ENTITYX27,ENTITYX5,ENTITYX14,ENTITYX16,ENTITYX9,ENTITYX10,ENTITYX6,ATTRIBX28,ATTRIBX26,ATTRIBX8,ATTRIBX15,ATTRIBX17] :
       ( isA(EVENTX7,r_0015_0006__borne)
       &amp; arg0_lgs(EVENTX7) = ENTITYX6
@@ -403,15 +403,15 @@ fof(id_15_A_FACTBOOK_1_2010__16_A_FACTBOOK_1_2010,axiom,
       &amp; attrib1(ENTITYX25) = ATTRIBX26
       &amp; isA(ENTITYX27,r_0016_0013__urine)
       &amp; attrib1(ENTITYX27) = ATTRIBX28
-      &amp; isA(r_0015_0001__Hepatitis_E,r_0015_0001__Hepatitis_E)
-      &amp; prn4(r_0015_0001__Hepatitis_E) = ENTITYX5
+      &amp; isA(r_0015_0001__Hepatitis__r_0015_0002__E,r_0015_0001__Hepatitis_r_0015_0002__E)
+      &amp; prn4(r_0015_0001__Hepatitis__r_0015_0002__E) = ENTITYX5
       &amp; isA(ATTRIBX8,r_0015_0007__viral)
       &amp; isA(ATTRIBX15,r_0015_0021__fecal)
       &amp; isA(ATTRIBX17,r_0015_0024__drinking)
       &amp; isA(ATTRIBX26,r_0016_0007__abdominal)
-      &amp; isA(ATTRIBX28,r_0016_0011__dark_colored)
+      &amp; isA(ATTRIBX28,r_0016_0011__dark__r_0016_0012__colored)
       &amp; isA(EVENTX20,z_0015_1019)
-      &amp; z_0015_1004(EVENTX20) = r_0015_0001__Hepatitis_E
+      &amp; z_0015_1004(EVENTX20) = r_0015_0001__Hepatitis__r_0015_0002__E
       &amp; isA(EVENTX29,r_0016_0002__exhibit)
       &amp; arg0(EVENTX29) = ENTITYX21
       &amp; arg1(EVENTX29) = ENTITYX22 ) ).

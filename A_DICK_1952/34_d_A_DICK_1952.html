@@ -34,22 +34,22 @@ Do you see it ? &rdquo;
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 214)">
 <title>%3</title>
 <polygon fill="white" stroke="transparent" points="-4,4 -4,-214 130.3,-214 130.3,4 -4,4"/>
-<!-- 0051_0001_0051_0003 -->
-<g id="node1" class="node">
-<title>0051_0001_0051_0003</title>
-<ellipse fill="none" stroke="black" cx="63.3" cy="-105" rx="42.79" ry="18"/>
-<text text-anchor="middle" x="63.3" y="-101.3" font-family="fixed" font-size="14.00">Do_see</text>
-</g>
 <!-- 0051_0002 -->
-<g id="node2" class="node">
+<g id="node1" class="node">
 <title>0051_0002</title>
 <ellipse fill="none" stroke="black" cx="27.3" cy="-18" rx="27.1" ry="18"/>
 <text text-anchor="middle" x="27.3" y="-14.3" font-family="fixed" font-size="14.00">you</text>
 </g>
-<!-- 0051_0001_0051_0003&#45;&gt;0051_0002 -->
+<!-- 0051_0003 -->
+<g id="node2" class="node">
+<title>0051_0003</title>
+<ellipse fill="none" stroke="black" cx="63.3" cy="-105" rx="27" ry="18"/>
+<text text-anchor="middle" x="63.3" y="-101.3" font-family="fixed" font-size="14.00">see</text>
+</g>
+<!-- 0051_0003&#45;&gt;0051_0002 -->
 <g id="edge1" class="edge">
-<title>0051_0001_0051_0003&#45;&gt;0051_0002</title>
-<path fill="none" stroke="black" d="M47.06,-88.2C42.2,-82.59 37.36,-75.93 34.3,-69 31.22,-62.02 29.42,-54.01 28.4,-46.48"/>
+<title>0051_0003&#45;&gt;0051_0002</title>
+<path fill="none" stroke="black" d="M48.27,-89.58C43.02,-83.69 37.61,-76.51 34.3,-69 31.22,-62.02 29.42,-54.01 28.4,-46.48"/>
 <polygon fill="black" stroke="black" points="31.86,-45.91 27.4,-36.3 24.89,-46.59 31.86,-45.91"/>
 <text text-anchor="middle" x="55.8" y="-57.8" font-family="fixed" font-size="14.00">[arg0]</text>
 </g>
@@ -59,9 +59,9 @@ Do you see it ? &rdquo;
 <ellipse fill="none" stroke="black" cx="99.3" cy="-18" rx="27" ry="18"/>
 <text text-anchor="middle" x="99.3" y="-14.3" font-family="fixed" font-size="14.00">it</text>
 </g>
-<!-- 0051_0001_0051_0003&#45;&gt;0051_0004 -->
+<!-- 0051_0003&#45;&gt;0051_0004 -->
 <g id="edge2" class="edge">
-<title>0051_0001_0051_0003&#45;&gt;0051_0004</title>
+<title>0051_0003&#45;&gt;0051_0004</title>
 <path fill="none" stroke="black" d="M70.41,-87.21C75.52,-75.14 82.51,-58.64 88.33,-44.89"/>
 <polygon fill="black" stroke="black" points="91.65,-46.04 92.32,-35.47 85.2,-43.31 91.65,-46.04"/>
 <text text-anchor="middle" x="104.8" y="-57.8" font-family="fixed" font-size="14.00">[arg1]</text>
@@ -72,9 +72,9 @@ Do you see it ? &rdquo;
 <ellipse fill="none" stroke="black" cx="63.3" cy="-192" rx="56.59" ry="18"/>
 <text text-anchor="middle" x="63.3" y="-188.3" font-family="fixed" font-size="14.00">[question]</text>
 </g>
-<!-- question_0051_1002&#45;&gt;0051_0001_0051_0003 -->
+<!-- question_0051_1002&#45;&gt;0051_0003 -->
 <g id="edge3" class="edge">
-<title>question_0051_1002&#45;&gt;0051_0001_0051_0003</title>
+<title>question_0051_1002&#45;&gt;0051_0003</title>
 <path fill="none" stroke="black" d="M63.3,-173.8C63.3,-162.16 63.3,-146.55 63.3,-133.24"/>
 <polygon fill="black" stroke="black" points="66.8,-133.18 63.3,-123.18 59.8,-133.18 66.8,-133.18"/>
 <text text-anchor="middle" x="89.3" y="-144.8" font-family="fixed" font-size="14.00">[scope]</text>
@@ -83,18 +83,18 @@ Do you see it ? &rdquo;
 </svg>
 <br>
 <pre>
-arc(question_0051_1002,r_0051_0001__Do_see,scope).
-arc(r_0051_0001__Do_see,r_0051_0002__you,arg0).
-arc(r_0051_0001__Do_see,r_0051_0004__it,arg1).
+arc(r_0051_0003__see,r_0051_0002__you,arg0).
+arc(r_0051_0003__see,r_0051_0004__it,arg1).
+arc(r_0051_1002__question,r_0051_0003__see,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_51_A_DICK_1952,axiom,
+fof(id__51_A_DICK_1952,axiom,
     ? [OPERATORX2,EVENTX3] :
-      ( isA(OPERATORX2,question_0051_1002)
+      ( isA(OPERATORX2,r_0051_1002__question)
       &amp; scope(OPERATORX2) = EVENTX3
-      &amp; isA(EVENTX3,r_0051_0001__Do_see)
+      &amp; isA(EVENTX3,r_0051_0003__see)
       &amp; arg0(EVENTX3) = r_0051_0002__you
       &amp; arg1(EVENTX3) = r_0051_0004__it ) ).
 

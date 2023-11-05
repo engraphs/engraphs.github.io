@@ -233,7 +233,6 @@ If you were to visit education , as an alien , and say &ldquo; What 's it for , 
 </svg>
 <br>
 <pre>
-arc(question_0140_1010,r_0140_0016___apos_s,scope).
 arc(r_0140_0001__If_cnt_cnd,r_0140_0003__were,restriction).
 arc(r_0140_0001__If_cnt_cnd,z_0140_1020,scope).
 arc(r_0140_0003__were,r_0140_0012__and,catenative).
@@ -243,16 +242,17 @@ arc(r_0140_0005__visit,r_0140_0010__alien,r_0140_0008__as_abs).
 arc(r_0140_0012__and,r_0140_0005__visit,conj1).
 arc(r_0140_0012__and,r_0140_0013__say,conj2).
 arc(r_0140_0013__say,r_0140_0002__you,arg0).
-arc(r_0140_0013__say,utterance_0140_1008,arg1).
+arc(r_0140_0013__say,r_0140_1008__utterance,arg1).
 arc(r_0140_0016___apos_s,r_0140_0015__What,r_0140_0018__for_prd2).
 arc(r_0140_0016___apos_s,r_0140_0021__education,arg0).
 arc(r_0140_0021__education,r_0140_0020__public,attrib1).
-arc(utterance_0140_1008,question_0140_1010,part1).
+arc(r_0140_1008__utterance,r_0140_1010__question,part1).
+arc(r_0140_1010__question,r_0140_0016___apos_s,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_140_A_TED_talk_11,axiom,
+fof(id__140_A_TED_talk_11,axiom,
     ? [STATEX2,STATEX6,CONNX1,EVENTX21,EVENTX19,CONJX18,EVENTX17,CONJX16,OPERATORX10,EVENTX15,EVENTX5,ENTITYX11,ENTITYX13,ENTITYX3,ENTITYX4,ATTRIBX14] :
       ( STATEX2 = CONJX18
       &amp; isA(CONJX18,r_0140_0012__and)
@@ -266,9 +266,9 @@ fof(id_140_A_TED_talk_11,axiom,
       &amp; arg0(EVENTX17) = r_0140_0002__you
       &amp; arg1(EVENTX17) = STATEX6
       &amp; STATEX6 = CONJX16
-      &amp; isA(CONJX16,utterance_0140_1008)
+      &amp; isA(CONJX16,r_0140_1008__utterance)
       &amp; part1(CONJX16) = OPERATORX10
-      &amp; isA(OPERATORX10,question_0140_1010)
+      &amp; isA(OPERATORX10,r_0140_1010__question)
       &amp; scope(OPERATORX10) = EVENTX15
       &amp; isA(EVENTX15,r_0140_0016___apos_s)
       &amp; arg0(EVENTX15) = ENTITYX13

@@ -154,18 +154,18 @@ arc(r_0107_0004__resting,r_0107_0007__lip,r_0107_0005__on_loc).
 arc(r_0107_0007__lip,r_0107_0006__her,genv).
 arc(r_0107_0010__said,r_0107_0003__teacup,r_0107_0001__With_mnr).
 arc(r_0107_0010__said,r_0107_0006__her,arg0).
-arc(r_0107_0010__said,utterance_0107_1008,arg1).
+arc(r_0107_0010__said,r_0107_1008__utterance,arg1).
 arc(r_0107_0014__brother,r_0107_0006__her,genv).
-arc(utterance_0107_1008,z_0107_1015,part1).
+arc(r_0107_1008__utterance,z_0107_1015,part1).
 arc(z_0107_1015,r_0107_0014__brother,z_0107_1012).
 
 </pre>
 <br>
 <pre>
-fof(id_107_A_LooseChange,axiom,
+fof(id__107_A_LooseChange,axiom,
     ? [STATEX6,LAYLORX5,LAYLORX14,EVENTX18,CONJX17,EVENTX16,EVENTX4,ENTITYX2,ENTITYX13,ENTITYX3] :
       ( STATEX6 = CONJX17
-      &amp; isA(CONJX17,utterance_0107_1008)
+      &amp; isA(CONJX17,r_0107_1008__utterance)
       &amp; part1(CONJX17) = EVENTX16
       &amp; isA(EVENTX16,z_0107_1015)
       &amp; z_0107_1012(EVENTX16) = ENTITYX13

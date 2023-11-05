@@ -208,32 +208,32 @@ A move to stop Mr Gaitskell from nominating any more labour life peers is to be 
 <br>
 <pre>
 arc(r_0003_0002__move,r_0003_0004__stop,emb3).
-arc(r_0003_0004__stop,r_0003_0005__Mr_Gaitskell,arg1).
-arc(r_0003_0004__stop,r_0003_0009__quantificational__any,r_0003_0007__from_cnt).
-arc(r_0003_0008__nominating,r_0003_0011__labour_life_peers,arg1).
-arc(r_0003_0009__quantificational__any,r_0003_0008__nominating,scope).
-arc(r_0003_0009__quantificational__any,r_0003_0011__labour_life_peers,restriction).
-arc(r_0003_0011__labour_life_peers,r_0003_0010__more,attrib2).
+arc(r_0003_0004__stop,r_0003_0005__Mr__r_0003_0006__Gaitskell,arg1).
+arc(r_0003_0004__stop,r_0003_0009__quantificational__r_0003_0009__any,r_0003_0007__from_cnt).
+arc(r_0003_0008__nominating,r_0003_0011__labour__r_0003_0012__life_r_0003_0013__peers,arg1).
+arc(r_0003_0009__quantificational__r_0003_0009__any,r_0003_0008__nominating,scope).
+arc(r_0003_0009__quantificational__r_0003_0009__any,r_0003_0011__labour__r_0003_0012__life_r_0003_0013__peers,restriction).
+arc(r_0003_0011__labour__r_0003_0012__life_r_0003_0013__peers,r_0003_0010__more,attrib2).
 arc(r_0003_0014__is,r_0003_0002__move,arg0).
 arc(r_0003_0014__is,r_0003_0016__be,prd2).
 arc(r_0003_0016__be,r_0003_0017__made,catenative).
 arc(r_0003_0017__made,r_0003_0020__meeting,r_0003_0018__at_loc).
 arc(r_0003_0017__made,r_0003_0024__tomorrow,tmp4).
-arc(r_0003_0020__meeting,r_0003_0022__labour_MPs,r_0003_0021__of).
+arc(r_0003_0020__meeting,r_0003_0022__labour__r_0003_0023__MPs,r_0003_0021__of).
 
 </pre>
 <br>
 <pre>
-fof(id_3_A_lob_A01,axiom,
+fof(id__3_A_lob_A01,axiom,
     ? [STATEX2,EVENTX5,STATEX13,CATENATIVEX16,EVENTX23,EVENTX22,EVENTX21,EVENTX12,QUANTX9,EVENTX11,ENTITYX1,ENTITYX18,ENTITYX19,ENTITYX8,ATTRIBX10,QUALITYX20] :
       ( STATEX2 = EVENTX12
       &amp; isA(EVENTX12,r_0003_0004__stop)
-      &amp; arg1(EVENTX12) = r_0003_0005__Mr_Gaitskell
+      &amp; arg1(EVENTX12) = r_0003_0005__Mr__r_0003_0006__Gaitskell
       &amp; r_0003_0007__from_cnt(EVENTX12) = EVENTX5
       &amp; EVENTX5 = QUANTX9
-      &amp; isA(QUANTX9,r_0003_0009__quantificational__any)
+      &amp; isA(QUANTX9,r_0003_0009__quantificational__r_0003_0009__any)
       &amp; restriction(QUANTX9) = ENTITYX8
-      &amp; isA(ENTITYX8,r_0003_0011__labour_life_peers)
+      &amp; isA(ENTITYX8,r_0003_0011__labour__r_0003_0012__life_r_0003_0013__peers)
       &amp; attrib2(ENTITYX8) = ATTRIBX10
       &amp; scope(QUANTX9) = EVENTX11
       &amp; isA(EVENTX11,r_0003_0008__nominating)
@@ -249,7 +249,7 @@ fof(id_3_A_lob_A01,axiom,
       &amp; emb3(ENTITYX1) = STATEX2
       &amp; isA(ENTITYX18,r_0003_0020__meeting)
       &amp; r_0003_0021__of(ENTITYX18) = ENTITYX19
-      &amp; isA(ENTITYX19,r_0003_0022__labour_MPs)
+      &amp; isA(ENTITYX19,r_0003_0022__labour__r_0003_0023__MPs)
       &amp; isA(ATTRIBX10,r_0003_0010__more)
       &amp; isA(QUALITYX20,r_0003_0024__tomorrow)
       &amp; isA(EVENTX23,r_0003_0014__is)

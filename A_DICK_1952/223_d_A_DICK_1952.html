@@ -69,7 +69,7 @@
 <title>0282_0003&#45;&gt;0282_0005</title>
 <path fill="none" stroke="black" d="M299.91,-91.33C291,-84.8 280.07,-76.64 270.55,-69 258.81,-59.59 246.12,-48.73 235.61,-39.54"/>
 <polygon fill="black" stroke="black" points="237.87,-36.87 228.05,-32.89 233.24,-42.12 237.87,-36.87"/>
-<text text-anchor="middle" x="292.05" y="-57.8" font-family="fixed" font-size="14.00">[arg1]</text>
+<text text-anchor="middle" x="292.05" y="-57.8" font-family="fixed" font-size="14.00">[prd2]</text>
 </g>
 <!-- 0282_0008 -->
 <g id="node4" class="node">
@@ -167,26 +167,26 @@
 <br>
 <pre>
 arc(r_0282_0003___apos_s,r_0282_0002__That,arg0).
-arc(r_0282_0003___apos_s,r_0282_0005__city,arg1).
+arc(r_0282_0003___apos_s,r_0282_0005__city,prd2).
 arc(r_0282_0009__said,r_0282_0008__Nasha,arg0).
 arc(r_0282_0009__said,r_0282_0010__softly,mnr7).
-arc(r_0282_0009__said,utterance_0282_1003,arg1).
+arc(r_0282_0009__said,r_0282_1003__utterance,arg1).
+arc(r_0282_1003__utterance,r_0282_0003___apos_s,part1).
 arc(r_0283_0003__was,r_0283_0002__That,arg0).
 arc(r_0283_0003__was,r_0283_0005__name,prd2).
 arc(r_0283_0005__name,r_0282_0005__city,genv).
-arc(utterance_0282_1003,r_0282_0003___apos_s,part1).
 
 </pre>
 <br>
 <pre>
-fof(id_282_A_DICK_1952__283_A_DICK_1952,axiom,
+fof(id__282_A_DICK_1952__283_A_DICK_1952,axiom,
     ? [STATEX1,CITYX10,EVENTX11,EVENTX8,CONJX6,EVENTX5,ENTITYX9,CITYX4,QUALITYX7] :
       ( STATEX1 = CONJX6
-      &amp; isA(CONJX6,utterance_0282_1003)
+      &amp; isA(CONJX6,r_0282_1003__utterance)
       &amp; part1(CONJX6) = EVENTX5
       &amp; isA(EVENTX5,r_0282_0003___apos_s)
       &amp; arg0(EVENTX5) = r_0282_0002__That
-      &amp; arg1(EVENTX5) = CITYX4
+      &amp; prd2(EVENTX5) = CITYX4
       &amp; isA(CITYX4,r_0282_0005__city)
       &amp; isA(ENTITYX9,r_0283_0005__name)
       &amp; genv(ENTITYX9) = CITYX10
@@ -217,19 +217,19 @@ fof(id_282_A_DICK_1952__283_A_DICK_1952,axiom,
 <line x1="180.96" y1="305" x2="180.96" y2="336" style="stroke:#000000;stroke-width:2;"/>
 <line x1="180.72" y1="244" x2="180" y2="275" style="stroke:#000000;stroke-width:2;"/>
 <line x1="360.72" y1="183" x2="180" y2="214" style="stroke:#000000;stroke-width:2;"/>
-<text x="301.56" y="234" text-anchor="middle">BEP</text>
+<text x="301.56" y="234" text-anchor="middle">BEP;~Ln</text>
 <text x="301.56" y="295" text-anchor="middle">&lt;apos&gt;s</text>
 <line x1="301.56" y1="244" x2="301.56" y2="275" style="stroke:#000000;stroke-width:2;"/>
 <line x1="360.72" y1="183" x2="300" y2="214" style="stroke:#000000;stroke-width:2;"/>
-<text x="480.72" y="234" text-anchor="middle">NP-OB1</text>
+<text x="480.84" y="234" text-anchor="middle">NP-PRD2</text>
 <text x="420.48" y="295" text-anchor="middle">D</text>
 <text x="420.48" y="356" text-anchor="middle">this</text>
 <line x1="420.48" y1="305" x2="420.48" y2="336" style="stroke:#000000;stroke-width:2;"/>
-<line x1="480.72" y1="244" x2="420" y2="275" style="stroke:#000000;stroke-width:2;"/>
+<line x1="480.84" y1="244" x2="420" y2="275" style="stroke:#000000;stroke-width:2;"/>
 <text x="540.48" y="295" text-anchor="middle">N</text>
 <text x="540.48" y="356" text-anchor="middle">city</text>
 <line x1="540.48" y1="305" x2="540.48" y2="336" style="stroke:#000000;stroke-width:2;"/>
-<line x1="480.72" y1="244" x2="540" y2="275" style="stroke:#000000;stroke-width:2;"/>
+<line x1="480.84" y1="244" x2="540" y2="275" style="stroke:#000000;stroke-width:2;"/>
 <line x1="360.72" y1="183" x2="480" y2="214" style="stroke:#000000;stroke-width:2;"/>
 <line x1="361.56" y1="122" x2="360" y2="153" style="stroke:#000000;stroke-width:2;"/>
 <line x1="660.72" y1="61" x2="360" y2="92" style="stroke:#000000;stroke-width:2;"/>
@@ -266,9 +266,9 @@ fof(id_282_A_DICK_1952__283_A_DICK_1952,axiom,
 <pre>
 ( (IP-MAT (PULQ &lt;ldquo&gt;)
           (utterance-OB1 (IP-MAT (NP-SBJ (D;_nphd_ That;{that}))
-                                 (BEP &lt;apos&gt;s;{be})
-                                 (NP-OB1;{CITY} (D this;{this})
-                                                (N city;{city}))))
+                                 (BEP;~Ln &lt;apos&gt;s;{be})
+                                 (NP-PRD2;{CITY} (D this;{this})
+                                                 (N city;{city}))))
           (PUNC ,)
           (PURQ &lt;rdquo&gt;)
           (NP-SBJ;{NASHA} (NPR Nasha;{Nasha}))

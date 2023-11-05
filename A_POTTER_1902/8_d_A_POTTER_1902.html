@@ -557,19 +557,19 @@ But round the end of a cucumber frame , whom should he meet but Mr. McGregor !
 </svg>
 <br>
 <pre>
-arc(abs_0010_1029,r_0011_0021__feeling,restriction).
-arc(abs_0010_1029,r_0011_0026__went,scope).
 arc(r_0010_0005__was,r_0010_0002__Peter,arg0).
 arc(r_0010_0005__was,r_0010_0007__naughty,prd2).
 arc(r_0010_0007__naughty,r_0010_0006__very,quality1).
 arc(r_0010_0009__ran,r_0010_0002__Peter,arg0).
 arc(r_0010_0009__ran,r_0010_0010__straight_away,tmp2).
 arc(r_0010_0009__ran,r_0010_0015__garden,r_0010_0011__to_clr_dir).
-arc(r_0010_0015__garden,r_0010_0012__Mr._McGregor,genv).
+arc(r_0010_0015__garden,r_0010_0012__Mr__r_0010_0013__McGregor,genv).
 arc(r_0010_0017__and,r_0010_0009__ran,conj1).
 arc(r_0010_0017__and,r_0010_0018__squeezed,conj2).
 arc(r_0010_0018__squeezed,r_0010_0002__Peter,arg0).
 arc(r_0010_0018__squeezed,r_0010_0021__gate,r_0010_0019__under_clr_dir).
+arc(r_0010_1029__abs,r_0011_0021__feeling,restriction).
+arc(r_0010_1029__abs,r_0011_0026__went,scope).
 arc(r_0011_0003__ate,r_0010_0002__Peter,arg0).
 arc(r_0011_0003__ate,r_0011_0001__First,tmp1).
 arc(r_0011_0003__ate,r_0011_0006__and,arg1).
@@ -581,7 +581,7 @@ arc(r_0011_0011__and,r_0011_0014__ate,conj2).
 arc(r_0011_0014__ate,r_0010_0002__Peter,arg0).
 arc(r_0011_0014__ate,r_0011_0012__then,tmp1).
 arc(r_0011_0014__ate,r_0011_0016__radishes,arg1).
-arc(r_0011_0018__And,abs_0010_1029,conj2).
+arc(r_0011_0018__And,r_0010_1029__abs,conj2).
 arc(r_0011_0018__And,r_0011_0011__and,conj1).
 arc(r_0011_0021__feeling,r_0010_0002__Peter,arg0).
 arc(r_0011_0021__feeling,r_0011_0023__sick,prd2).
@@ -590,26 +590,26 @@ arc(r_0011_0026__went,r_0011_0019__then,tmp1).
 arc(r_0011_0026__went,r_0011_0028__look,catenative).
 arc(r_0011_0028__look,r_0010_0002__Peter,arg0).
 arc(r_0011_0028__look,r_0011_0031__parsley,r_0011_0029__for_clr).
-arc(r_0012_0004__end,r_0012_0007__cucumber_frame,r_0012_0005__of).
+arc(r_0012_0004__end,r_0012_0007__cucumber__r_0012_0008__frame,r_0012_0005__of).
 arc(r_0012_0011__should,r_0012_0013__meet,scope).
 arc(r_0012_0013__meet,r_0010_0002__Peter,arg0).
 arc(r_0012_0013__meet,r_0012_0004__end,r_0012_0002__round_loc).
 arc(r_0012_0013__meet,z_0010_1047,arg1).
-arc(r_0012_0014__but,r_0010_0012__Mr._McGregor,conj2).
+arc(r_0012_0014__but,r_0010_0012__Mr__r_0010_0013__McGregor,conj2).
 arc(r_0012_0014__but,z_0010_1047,conj1).
 arc(z_0010_1049,r_0012_0014__but,z_0010_1039).
 
 </pre>
 <br>
 <pre>
-fof(id_10_A_POTTER_1902__11_A_POTTER_1902__12_A_POTTER_1902,axiom,
+fof(id__10_A_POTTER_1902__11_A_POTTER_1902__12_A_POTTER_1902,axiom,
     ? [STATEX26,PETERX13,PETERX20,PETERX25,PETERX44,MRMCGX48,EVENTX50,OPERATORX45,EVENTX46,CONJX35,CONNX30,EVENTX34,EVENTX33,EVENTX28,CONJX23,EVENTX22,EVENTX18,CONJX9,EVENTX8,EVENTX6,EVENTX3,ENTITYX40,ENTITYX41,ENTITYX42,ENTITYX43,ENTITYX27,ENTITYX21,ENTITYX14,ENTITYX15,ENTITYX16,GARDEN_GATEX7,ENTITYX5,ATTRIBX31,ATTRIBX17,ATTRIBX1,QUALITYX24,QUALITYX32,QUALITYX19,QUALITYX12,QUALITYX4,QUALITYX2] :
       ( STATEX26 = EVENTX28
       &amp; isA(EVENTX28,r_0011_0028__look)
       &amp; arg0(EVENTX28) = PETERX25
       &amp; r_0011_0029__for_clr(EVENTX28) = ENTITYX27
       &amp; isA(ENTITYX5,r_0010_0015__garden)
-      &amp; genv(ENTITYX5) = r_0010_0012__Mr._McGregor
+      &amp; genv(ENTITYX5) = r_0010_0012__Mr__r_0010_0013__McGregor
       &amp; isA(GARDEN_GATEX7,r_0010_0021__gate)
       &amp; PETERX13 = r_0010_0002__Peter
       &amp; isA(ENTITYX14,r_0011_0006__and)
@@ -634,9 +634,9 @@ fof(id_10_A_POTTER_1902__11_A_POTTER_1902__12_A_POTTER_1902,axiom,
       &amp; isA(ENTITYX41,z_0010_1047)
       &amp; isA(ENTITYX42,r_0012_0004__end)
       &amp; r_0012_0005__of(ENTITYX42) = ENTITYX43
-      &amp; isA(ENTITYX43,r_0012_0007__cucumber_frame)
+      &amp; isA(ENTITYX43,r_0012_0007__cucumber__r_0012_0008__frame)
       &amp; PETERX44 = r_0010_0002__Peter
-      &amp; MRMCGX48 = r_0010_0012__Mr._McGregor
+      &amp; MRMCGX48 = r_0010_0012__Mr__r_0010_0013__McGregor
       &amp; isA(EVENTX3,r_0010_0005__was)
       &amp; arg0(EVENTX3) = r_0010_0002__Peter
       &amp; prd2(EVENTX3) = ATTRIBX1
@@ -678,7 +678,7 @@ fof(id_10_A_POTTER_1902__11_A_POTTER_1902__12_A_POTTER_1902,axiom,
       &amp; arg0(EVENTX22) = PETERX20
       &amp; arg1(EVENTX22) = ENTITYX21
       &amp; conj2(CONJX35) = CONNX30
-      &amp; isA(CONNX30,abs_0010_1029)
+      &amp; isA(CONNX30,r_0010_1029__abs)
       &amp; restriction(CONNX30) = EVENTX33
       &amp; isA(EVENTX33,r_0011_0021__feeling)
       &amp; arg0(EVENTX33) = PETERX25

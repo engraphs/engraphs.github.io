@@ -220,28 +220,28 @@ Could you give me some suggestions for what we could do in your area for about t
 </svg>
 <br>
 <pre>
-arc(question_0014_1002,r_0014_0001__Could,scope).
-arc(question_0014_1006,r_0014_0010__could,scope).
 arc(r_0014_0001__Could,r_0014_0003__give,scope).
 arc(r_0014_0003__give,r_0014_0002__you,arg0).
 arc(r_0014_0003__give,r_0014_0004__me,arg2).
 arc(r_0014_0003__give,r_0014_0006__suggestions,arg1).
-arc(r_0014_0006__suggestions,question_0014_1006,r_0014_0007__for).
+arc(r_0014_0006__suggestions,r_0014_1006__question,r_0014_0007__for).
 arc(r_0014_0010__could,r_0014_0011__do,scope).
 arc(r_0014_0011__do,r_0014_0008__what,arg1).
 arc(r_0014_0011__do,r_0014_0009__we,arg0).
 arc(r_0014_0011__do,r_0014_0014__area,r_0014_0012__in_loc).
-arc(r_0014_0011__do,r_0014_0017__three_hours,r_0014_0015__for_tmp).
+arc(r_0014_0011__do,r_0014_0017__three__r_0014_0018__hours,r_0014_0015__for_tmp).
 arc(r_0014_0014__area,r_0014_0002__you,genv).
-arc(r_0014_0017__three_hours,r_0014_0016__about,quality1).
+arc(r_0014_0017__three__r_0014_0018__hours,r_0014_0016__about,quality1).
+arc(r_0014_1002__question,r_0014_0001__Could,scope).
+arc(r_0014_1006__question,r_0014_0010__could,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_14_A_fce_0100_2001_06,axiom,
+fof(id__14_A_fce_0100_2001_06,axiom,
     ? [EVENTX4,HEARERX9,OPERATORX2,OPERATORX14,EVENTX15,OPERATORX6,OPERATORX12,EVENTX13,ENTITYX3,ENTITYX7,ENTITYX8,ENTITYX10,QUALITYX11] :
       ( EVENTX4 = OPERATORX6
-      &amp; isA(OPERATORX6,question_0014_1006)
+      &amp; isA(OPERATORX6,r_0014_1006__question)
       &amp; scope(OPERATORX6) = OPERATORX12
       &amp; isA(OPERATORX12,r_0014_0010__could)
       &amp; scope(OPERATORX12) = EVENTX13
@@ -256,10 +256,10 @@ fof(id_14_A_fce_0100_2001_06,axiom,
       &amp; isA(ENTITYX8,r_0014_0014__area)
       &amp; genv(ENTITYX8) = HEARERX9
       &amp; HEARERX9 = r_0014_0002__you
-      &amp; isA(ENTITYX10,r_0014_0017__three_hours)
+      &amp; isA(ENTITYX10,r_0014_0017__three__r_0014_0018__hours)
       &amp; quality1(ENTITYX10) = QUALITYX11
       &amp; isA(QUALITYX11,r_0014_0016__about)
-      &amp; isA(OPERATORX2,question_0014_1002)
+      &amp; isA(OPERATORX2,r_0014_1002__question)
       &amp; scope(OPERATORX2) = OPERATORX14
       &amp; isA(OPERATORX14,r_0014_0001__Could)
       &amp; scope(OPERATORX14) = EVENTX15

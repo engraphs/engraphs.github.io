@@ -332,34 +332,34 @@ When a business operator handling personal information has an employee handle pe
 </svg>
 <br>
 <pre>
-arc(cnt_0112_1021,r_0112_0017__exercise,scope).
-arc(cnt_0112_1021,r_0112_0026__ensure,restriction).
 arc(r_0112_0001__When_tmp,r_0112_0008__has,restriction).
 arc(r_0112_0001__When_tmp,r_0112_0016__shall,scope).
-arc(r_0112_0005__handling,r_0112_0003__business_operator,arg0).
+arc(r_0112_0005__handling,r_0112_0003__business__r_0112_0004__operator,arg0).
 arc(r_0112_0005__handling,r_0112_0007__information,arg1).
 arc(r_0112_0007__information,r_0112_0006__personal,attrib1).
-arc(r_0112_0008__has,r_0112_0003__business_operator,arg0).
+arc(r_0112_0008__has,r_0112_0003__business__r_0112_0004__operator,arg0).
 arc(r_0112_0008__has,r_0112_0010__employee,arg1).
 arc(r_0112_0008__has,r_0112_0011__handle,prd).
 arc(r_0112_0011__handle,r_0112_0013__data,arg1).
 arc(r_0112_0013__data,r_0112_0012__personal,attrib1).
-arc(r_0112_0016__shall,cnt_0112_1021,scope).
-arc(r_0112_0017__exercise,r_0112_0003__business_operator,arg0).
+arc(r_0112_0016__shall,r_0112_1021__cnt,scope).
+arc(r_0112_0017__exercise,r_0112_0003__business__r_0112_0004__operator,arg0).
 arc(r_0112_0017__exercise,r_0112_0021__supervision,arg1).
 arc(r_0112_0019__and,r_0112_0018__necessary,conj1).
 arc(r_0112_0019__and,r_0112_0020__appropriate,conj2).
 arc(r_0112_0021__supervision,r_0112_0019__and,attrib1).
 arc(r_0112_0021__supervision,r_0112_0024__employee,r_0112_0022__over).
-arc(r_0112_0026__ensure,r_0112_0003__business_operator,arg0).
-arc(r_0112_0026__ensure,r_0112_0028__security_control,arg1).
-arc(r_0112_0028__security_control,r_0112_0033__data,r_0112_0030__of).
+arc(r_0112_0026__ensure,r_0112_0003__business__r_0112_0004__operator,arg0).
+arc(r_0112_0026__ensure,r_0112_0028__security__r_0112_0029__control,arg1).
+arc(r_0112_0028__security__r_0112_0029__control,r_0112_0033__data,r_0112_0030__of).
 arc(r_0112_0033__data,r_0112_0032__personal,attrib2).
+arc(r_0112_1021__cnt,r_0112_0017__exercise,scope).
+arc(r_0112_1021__cnt,r_0112_0026__ensure,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_112_A_law_h15A119,axiom,
+fof(id__112_A_law_h15A119,axiom,
     ? [STATEX7,BUSINESSX14,CONNX1,OPERATORX20,CONNX22,EVENTX26,EVENTX27,EVENTX13,EVENTX12,EVENTX5,ENTITYX15,ENTITYX23,ENTITYX24,ENTITYX19,BUSINESSX2,ENTITYX6,ENTITYX10,ENTITYX3,ATTRIBX25,ATTRIBX16,ATTRIBX17,ATTRIBX18,ATTRIBX11,ATTRIBX4] :
       ( STATEX7 = EVENTX12
       &amp; isA(EVENTX12,r_0112_0011__handle)
@@ -367,7 +367,7 @@ fof(id_112_A_law_h15A119,axiom,
       &amp; isA(EVENTX5,r_0112_0005__handling)
       &amp; arg0(EVENTX5) = BUSINESSX2
       &amp; arg1(EVENTX5) = ENTITYX3
-      &amp; isA(BUSINESSX2,r_0112_0003__business_operator)
+      &amp; isA(BUSINESSX2,r_0112_0003__business__r_0112_0004__operator)
       &amp; isA(ENTITYX3,r_0112_0007__information)
       &amp; attrib1(ENTITYX3) = ATTRIBX4
       &amp; isA(ENTITYX6,r_0112_0010__employee)
@@ -378,7 +378,7 @@ fof(id_112_A_law_h15A119,axiom,
       &amp; attrib1(ENTITYX15) = ATTRIBX16
       &amp; r_0112_0022__over(ENTITYX15) = ENTITYX19
       &amp; isA(ENTITYX19,r_0112_0024__employee)
-      &amp; isA(ENTITYX23,r_0112_0028__security_control)
+      &amp; isA(ENTITYX23,r_0112_0028__security__r_0112_0029__control)
       &amp; r_0112_0030__of(ENTITYX23) = ENTITYX24
       &amp; isA(ENTITYX24,r_0112_0033__data)
       &amp; attrib2(ENTITYX24) = ATTRIBX25
@@ -399,7 +399,7 @@ fof(id_112_A_law_h15A119,axiom,
       &amp; scope(CONNX1) = OPERATORX20
       &amp; isA(OPERATORX20,r_0112_0016__shall)
       &amp; scope(OPERATORX20) = CONNX22
-      &amp; isA(CONNX22,cnt_0112_1021)
+      &amp; isA(CONNX22,r_0112_1021__cnt)
       &amp; scope(CONNX22) = EVENTX27
       &amp; isA(EVENTX27,r_0112_0017__exercise)
       &amp; arg0(EVENTX27) = BUSINESSX14

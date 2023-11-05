@@ -330,17 +330,17 @@ But this one is too short .
 </svg>
 <br>
 <pre>
-arc(question_0001_1004,r_0001_0007__had,scope).
-arc(question_0001_1021,r_0003_0001__See,scope).
 arc(r_0001_0003__was,r_0001_0004__wondering,catenative).
-arc(r_0001_0004__wondering,question_0001_1004,arg1).
 arc(r_0001_0004__wondering,r_0001_0002__I,arg0).
+arc(r_0001_0004__wondering,r_0001_1004__question,arg1).
 arc(r_0001_0007__had,r_0001_0006__you,arg0).
 arc(r_0001_0007__had,r_0001_0010__purse,arg1).
 arc(r_0001_0010__purse,r_0001_0009__blue,attrib2).
 arc(r_0001_0010__purse,r_0001_0012__this,r_0001_0011__like).
 arc(r_0001_0010__purse,r_0001_0016__strap,r_0001_0013__with).
 arc(r_0001_0016__strap,r_0001_0015__longer,attrib2).
+arc(r_0001_1004__question,r_0001_0007__had,scope).
+arc(r_0001_1021__question,r_0003_0001__See,scope).
 arc(r_0002_0002__like,r_0001_0002__I,arg0).
 arc(r_0002_0002__like,r_0002_0004__carry,arg1).
 arc(r_0002_0004__carry,r_0001_0002__I,arg0).
@@ -355,14 +355,14 @@ arc(r_0004_0006__short,r_0004_0005__too,quality1).
 </pre>
 <br>
 <pre>
-fof(id_1_A_toeic,axiom,
+fof(id__1_A_toeic,axiom,
     ? [CATENATIVEX1,STATEX2,STATEX13,SPEAKERX12,SPEAKERX15,SHORT_PURSEX26,EVENTX29,OPERATORX21,EVENTX22,EVENTX17,EVENTX16,EVENTX11,EVENTX10,OPERATORX4,EVENTX9,ENTITYX23,ENTITYX14,BLUE_PURSEX5,ENTITYX7,ATTRIBX27,ATTRIBX6,ATTRIBX8,QUALITYX28] :
       ( CATENATIVEX1 = EVENTX10
       &amp; isA(EVENTX10,r_0001_0004__wondering)
       &amp; arg0(EVENTX10) = r_0001_0002__I
       &amp; arg1(EVENTX10) = STATEX2
       &amp; STATEX2 = OPERATORX4
-      &amp; isA(OPERATORX4,question_0001_1004)
+      &amp; isA(OPERATORX4,r_0001_1004__question)
       &amp; scope(OPERATORX4) = EVENTX9
       &amp; isA(EVENTX9,r_0001_0007__had)
       &amp; arg0(EVENTX9) = r_0001_0006__you
@@ -396,7 +396,7 @@ fof(id_1_A_toeic,axiom,
       &amp; isA(EVENTX17,r_0002_0002__like)
       &amp; arg0(EVENTX17) = SPEAKERX12
       &amp; arg1(EVENTX17) = STATEX13
-      &amp; isA(OPERATORX21,question_0001_1021)
+      &amp; isA(OPERATORX21,r_0001_1021__question)
       &amp; scope(OPERATORX21) = EVENTX22
       &amp; isA(EVENTX22,r_0003_0001__See)
       &amp; isA(EVENTX29,r_0004_0004__is)

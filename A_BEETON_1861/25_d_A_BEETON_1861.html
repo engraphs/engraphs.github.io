@@ -260,16 +260,14 @@ As the wine draws near to the bottom of the cask , a thick piece of muslin is pl
 </svg>
 <br>
 <pre>
-arc(cnt_0038_1012,r_0038_0019__placed,scope).
-arc(cnt_0038_1012,r_0038_0025__prevent,restriction).
-arc(r_0038_0001__As_cnt,r_0038_0004__draws_near,restriction).
+arc(r_0038_0001__As_cnt,r_0038_0004__draws__r_0038_0005__near,restriction).
 arc(r_0038_0001__As_cnt,r_0038_0018__is,scope).
-arc(r_0038_0004__draws_near,r_0038_0003__wine,arg0).
-arc(r_0038_0004__draws_near,r_0038_0008__bottom,r_0038_0006__to_dir).
+arc(r_0038_0004__draws__r_0038_0005__near,r_0038_0003__wine,arg0).
+arc(r_0038_0004__draws__r_0038_0005__near,r_0038_0008__bottom,r_0038_0006__to_dir).
 arc(r_0038_0008__bottom,r_0038_0011__cask,r_0038_0009__of).
 arc(r_0038_0015__piece,r_0038_0014__thick,attrib2).
 arc(r_0038_0015__piece,r_0038_0017__muslin,r_0038_0016__of).
-arc(r_0038_0018__is,cnt_0038_1012,catenative).
+arc(r_0038_0018__is,r_0038_1012__cnt,catenative).
 arc(r_0038_0019__placed,r_0038_0015__piece,arg1).
 arc(r_0038_0019__placed,r_0038_0022__strainer,r_0038_0020__in_loc).
 arc(r_0038_0025__prevent,r_0038_0015__piece,arg0).
@@ -277,14 +275,16 @@ arc(r_0038_0025__prevent,r_0038_0028__grounds,arg1).
 arc(r_0038_0025__prevent,r_0038_0030__passing,r_0038_0029__from_clr).
 arc(r_0038_0028__grounds,r_0038_0027__viscous,attrib2).
 arc(r_0038_0030__passing,r_0038_0033__bottle,r_0038_0031__into_loc).
+arc(r_0038_1012__cnt,r_0038_0019__placed,scope).
+arc(r_0038_1012__cnt,r_0038_0025__prevent,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_38_A_BEETON_1861,axiom,
+fof(id__38_A_BEETON_1861,axiom,
     ? [CATENATIVEX9,EVENTX16,CONNX1,EVENTX23,CONNX13,EVENTX21,EVENTX20,EVENTX22,EVENTX5,ENTITYX6,ENTITYX11,ENTITYX14,ENTITYX19,ENTITYX8,ENTITYX2,ENTITYX3,ENTITYX4,ATTRIBX15,ATTRIBX7] :
       ( CATENATIVEX9 = CONNX13
-      &amp; isA(CONNX13,cnt_0038_1012)
+      &amp; isA(CONNX13,r_0038_1012__cnt)
       &amp; scope(CONNX13) = EVENTX22
       &amp; isA(EVENTX22,r_0038_0019__placed)
       &amp; arg1(EVENTX22) = ENTITYX6
@@ -313,7 +313,7 @@ fof(id_38_A_BEETON_1861,axiom,
       &amp; isA(ATTRIBX15,r_0038_0027__viscous)
       &amp; isA(CONNX1,r_0038_0001__As_cnt)
       &amp; restriction(CONNX1) = EVENTX5
-      &amp; isA(EVENTX5,r_0038_0004__draws_near)
+      &amp; isA(EVENTX5,r_0038_0004__draws__r_0038_0005__near)
       &amp; arg0(EVENTX5) = ENTITYX2
       &amp; r_0038_0006__to_dir(EVENTX5) = ENTITYX3
       &amp; scope(CONNX1) = EVENTX23

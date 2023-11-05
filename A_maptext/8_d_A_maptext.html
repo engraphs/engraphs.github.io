@@ -116,24 +116,24 @@ The car park is now a few hundred yards away .
 </svg>
 <br>
 <pre>
-arc(r_0014_0004__is,r_0014_0002__car_park,arg0).
+arc(r_0014_0004__is,r_0014_0002__car__r_0014_0003__park,arg0).
 arc(r_0014_0004__is,r_0014_0005__now,tmp3).
-arc(r_0014_0004__is,r_0014_0007__hundred_yards,prd2).
-arc(r_0014_0006__quantificational__a_few,r_0014_0004__is,scope).
-arc(r_0014_0006__quantificational__a_few,r_0014_0007__hundred_yards,restriction).
-arc(r_0014_0007__hundred_yards,r_0014_0009__away,quality4).
+arc(r_0014_0004__is,r_0014_0007__hundred__r_0014_0008__yards,prd2).
+arc(r_0014_0006__quantificational__r_0014_0006__a_few,r_0014_0004__is,scope).
+arc(r_0014_0006__quantificational__r_0014_0006__a_few,r_0014_0007__hundred__r_0014_0008__yards,restriction).
+arc(r_0014_0007__hundred__r_0014_0008__yards,r_0014_0009__away,quality4).
 
 </pre>
 <br>
 <pre>
-fof(id_14_A_maptext,axiom,
+fof(id__14_A_maptext,axiom,
     ? [QUANTX4,EVENTX6,CAR_PARKX1,ENTITYX3,QUALITYX2,QUALITYX5] :
-      ( isA(CAR_PARKX1,r_0014_0002__car_park)
+      ( isA(CAR_PARKX1,r_0014_0002__car__r_0014_0003__park)
       &amp; isA(QUALITYX2,r_0014_0005__now)
       &amp; isA(QUALITYX5,r_0014_0009__away)
-      &amp; isA(QUANTX4,r_0014_0006__quantificational__a_few)
+      &amp; isA(QUANTX4,r_0014_0006__quantificational__r_0014_0006__a_few)
       &amp; restriction(QUANTX4) = ENTITYX3
-      &amp; isA(ENTITYX3,r_0014_0007__hundred_yards)
+      &amp; isA(ENTITYX3,r_0014_0007__hundred__r_0014_0008__yards)
       &amp; quality4(ENTITYX3) = QUALITYX5
       &amp; scope(QUANTX4) = EVENTX6
       &amp; isA(EVENTX6,r_0014_0004__is)

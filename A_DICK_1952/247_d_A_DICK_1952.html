@@ -162,33 +162,33 @@ Even as they watched the gun moved on its swivel base , whirring underneath .
 </svg>
 <br>
 <pre>
-arc(mnr_0309_1006,r_0309_0007__moved,scope).
-arc(mnr_0309_1006,r_0309_0013__whirring,restriction).
-arc(r_0309_0001__Even_as_cnt,mnr_0309_1006,scope).
-arc(r_0309_0001__Even_as_cnt,r_0309_0004__watched,restriction).
+arc(r_0309_0001__Even__r_0309_0002__as_cnt,r_0309_0004__watched,restriction).
+arc(r_0309_0001__Even__r_0309_0002__as_cnt,r_0309_1006__mnr,scope).
 arc(r_0309_0004__watched,r_0309_0003__they,arg0).
 arc(r_0309_0007__moved,r_0309_0006__gun,arg0).
-arc(r_0309_0007__moved,r_0309_0010__swivel_base,r_0309_0008__on_loc).
-arc(r_0309_0010__swivel_base,r_0309_0006__gun,genv).
+arc(r_0309_0007__moved,r_0309_0010__swivel__r_0309_0011__base,r_0309_0008__on_loc).
+arc(r_0309_0010__swivel__r_0309_0011__base,r_0309_0006__gun,genv).
 arc(r_0309_0013__whirring,r_0309_0006__gun,arg0).
 arc(r_0309_0013__whirring,r_0309_0014__underneath,loc2).
+arc(r_0309_1006__mnr,r_0309_0007__moved,scope).
+arc(r_0309_1006__mnr,r_0309_0013__whirring,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_309_A_DICK_1952,axiom,
+fof(id__309_A_DICK_1952,axiom,
     ? [GUNX5,CONNX1,CONNX7,EVENTX9,EVENTX10,EVENTX2,GUNX3,ENTITYX4,QUALITYX8] :
       ( isA(GUNX3,r_0309_0006__gun)
-      &amp; isA(ENTITYX4,r_0309_0010__swivel_base)
+      &amp; isA(ENTITYX4,r_0309_0010__swivel__r_0309_0011__base)
       &amp; genv(ENTITYX4) = GUNX5
       &amp; GUNX5 = GUNX3
       &amp; isA(QUALITYX8,r_0309_0014__underneath)
-      &amp; isA(CONNX1,r_0309_0001__Even_as_cnt)
+      &amp; isA(CONNX1,r_0309_0001__Even__r_0309_0002__as_cnt)
       &amp; restriction(CONNX1) = EVENTX2
       &amp; isA(EVENTX2,r_0309_0004__watched)
       &amp; arg0(EVENTX2) = r_0309_0003__they
       &amp; scope(CONNX1) = CONNX7
-      &amp; isA(CONNX7,mnr_0309_1006)
+      &amp; isA(CONNX7,r_0309_1006__mnr)
       &amp; scope(CONNX7) = EVENTX10
       &amp; isA(EVENTX10,r_0309_0007__moved)
       &amp; arg0(EVENTX10) = GUNX3

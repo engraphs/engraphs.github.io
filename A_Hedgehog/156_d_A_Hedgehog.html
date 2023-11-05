@@ -207,8 +207,8 @@ arc(r_0179_0004__like,r_0179_0002__I,arg0).
 arc(r_0179_0004__like,r_0179_0006__challenge,arg1).
 arc(r_0179_0006__challenge,r_0179_0002__I,arg0).
 arc(r_0179_0006__challenge,r_0179_0011__assertion,arg1).
-arc(r_0179_0008__hon._Friend,r_0179_0002__I,genv).
-arc(r_0179_0011__assertion,r_0179_0008__hon._Friend,genv).
+arc(r_0179_0008__hon__r_0179_0009__Friend,r_0179_0002__I,genv).
+arc(r_0179_0011__assertion,r_0179_0008__hon__r_0179_0009__Friend,genv).
 arc(r_0179_0011__assertion,r_0179_0015__should,emb3).
 arc(r_0179_0015__should,r_0179_0016__become,scope).
 arc(r_0179_0016__become,r_0179_0014__hedgehog,arg0).
@@ -219,7 +219,7 @@ arc(r_0179_0019__symbol,r_0179_0018__national,attrib2).
 </pre>
 <br>
 <pre>
-fof(id_179_A_Hedgehog,axiom,
+fof(id__179_A_Hedgehog,axiom,
     ? [STATEX1,STATEX5,SPEAKERX4,OPERATORX12,EVENTX13,EVENTX11,OPERATORX9,EVENTX10,ENTITYX2,ENTITYX3,ENTITYX6,ENTITYX7,ATTRIBX8] :
       ( STATEX1 = EVENTX11
       &amp; isA(EVENTX11,r_0179_0006__challenge)
@@ -234,7 +234,7 @@ fof(id_179_A_Hedgehog,axiom,
       &amp; isA(ENTITYX2,r_0179_0011__assertion)
       &amp; genv(ENTITYX2) = ENTITYX3
       &amp; emb3(ENTITYX2) = STATEX5
-      &amp; isA(ENTITYX3,r_0179_0008__hon._Friend)
+      &amp; isA(ENTITYX3,r_0179_0008__hon__r_0179_0009__Friend)
       &amp; genv(ENTITYX3) = SPEAKERX4
       &amp; SPEAKERX4 = r_0179_0002__I
       &amp; isA(ENTITYX6,r_0179_0014__hedgehog)

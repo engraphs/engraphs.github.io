@@ -155,20 +155,20 @@ She turned aside , going up the remains of a stairway from one of the foundation
 </svg>
 <br>
 <pre>
-arc(mnr_0266_1002,r_0266_0002__turned,scope).
-arc(mnr_0266_1002,r_0266_0005__going_up,restriction).
 arc(r_0266_0002__turned,r_0266_0001__She,arg0).
 arc(r_0266_0002__turned,r_0266_0003__aside,clr_dir3).
-arc(r_0266_0005__going_up,r_0266_0001__She,arg0).
-arc(r_0266_0005__going_up,r_0266_0008__remains,arg1).
+arc(r_0266_0005__going__r_0266_0006__up,r_0266_0001__She,arg0).
+arc(r_0266_0005__going__r_0266_0006__up,r_0266_0008__remains,arg1).
 arc(r_0266_0008__remains,r_0266_0011__stairway,r_0266_0009__of).
 arc(r_0266_0011__stairway,r_0266_0013__one,r_0266_0012__from).
 arc(r_0266_0013__one,r_0266_0016__foundations,r_0266_0014__of).
+arc(r_0266_1002__mnr,r_0266_0002__turned,scope).
+arc(r_0266_1002__mnr,r_0266_0005__going__r_0266_0006__up,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_266_A_DICK_1952,axiom,
+fof(id__266_A_DICK_1952,axiom,
     ? [CONNX3,EVENTX8,EVENTX9,ENTITYX4,ENTITYX5,ENTITYX6,ENTITYX7,QUALITYX1] :
       ( isA(ENTITYX4,r_0266_0008__remains)
       &amp; r_0266_0009__of(ENTITYX4) = ENTITYX5
@@ -178,13 +178,13 @@ fof(id_266_A_DICK_1952,axiom,
       &amp; r_0266_0014__of(ENTITYX6) = ENTITYX7
       &amp; isA(ENTITYX7,r_0266_0016__foundations)
       &amp; isA(QUALITYX1,r_0266_0003__aside)
-      &amp; isA(CONNX3,mnr_0266_1002)
+      &amp; isA(CONNX3,r_0266_1002__mnr)
       &amp; scope(CONNX3) = EVENTX9
       &amp; isA(EVENTX9,r_0266_0002__turned)
       &amp; arg0(EVENTX9) = r_0266_0001__She
       &amp; clr_dir3(EVENTX9) = QUALITYX1
       &amp; restriction(CONNX3) = EVENTX8
-      &amp; isA(EVENTX8,r_0266_0005__going_up)
+      &amp; isA(EVENTX8,r_0266_0005__going__r_0266_0006__up)
       &amp; arg0(EVENTX8) = r_0266_0001__She
       &amp; arg1(EVENTX8) = ENTITYX4 ) ).
 

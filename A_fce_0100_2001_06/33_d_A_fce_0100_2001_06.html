@@ -122,24 +122,24 @@ Write a composition , giving your opinion .
 </svg>
 <br>
 <pre>
-arc(cnt_0040_1005,r_0040_0001__Write,scope).
-arc(cnt_0040_1005,r_0040_0005__giving,restriction).
-arc(imperative_0040_1002,cnt_0040_1005,scope).
 arc(r_0040_0001__Write,r_0040_0003__composition,arg1).
 arc(r_0040_0005__giving,r_0040_0007__opinion,arg1).
 arc(r_0040_0007__opinion,r_0040_0006__your,genv).
+arc(r_0040_1002__imperative,r_0040_1005__cnt,scope).
+arc(r_0040_1005__cnt,r_0040_0001__Write,scope).
+arc(r_0040_1005__cnt,r_0040_0005__giving,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_40_A_fce_0100_2001_06,axiom,
+fof(id__40_A_fce_0100_2001_06,axiom,
     ? [OPERATORX2,CONNX6,EVENTX8,EVENTX9,ENTITYX4,ENTITYX7] :
       ( isA(ENTITYX4,r_0040_0003__composition)
       &amp; isA(ENTITYX7,r_0040_0007__opinion)
       &amp; genv(ENTITYX7) = r_0040_0006__your
-      &amp; isA(OPERATORX2,imperative_0040_1002)
+      &amp; isA(OPERATORX2,r_0040_1002__imperative)
       &amp; scope(OPERATORX2) = CONNX6
-      &amp; isA(CONNX6,cnt_0040_1005)
+      &amp; isA(CONNX6,r_0040_1005__cnt)
       &amp; scope(CONNX6) = EVENTX9
       &amp; isA(EVENTX9,r_0040_0001__Write)
       &amp; arg1(EVENTX9) = ENTITYX4

@@ -202,13 +202,13 @@ The g-activity is measured through a lead &sol; aluminium sandwich using standar
 <pre>
 arc(r_0085_0003__is,r_0085_0004__measured,catenative).
 arc(r_0085_0004__measured,r_0085_0002__g_activity,arg1).
-arc(r_0085_0004__measured,r_0085_0007__lead_aluminium_sandwich,r_0085_0005__through_dir).
-arc(r_0085_0011__using,r_0085_0007__lead_aluminium_sandwich,arg0).
-arc(r_0085_0011__using,r_0085_0013__gamma_scintillation_equipment,arg1).
-arc(r_0085_0013__gamma_scintillation_equipment,r_0085_0012__standard,attrib1).
+arc(r_0085_0004__measured,r_0085_0007__lead__r_0085_0009__aluminium_r_0085_0010__sandwich,r_0085_0005__through_dir).
+arc(r_0085_0011__using,r_0085_0007__lead__r_0085_0009__aluminium_r_0085_0010__sandwich,arg0).
+arc(r_0085_0011__using,r_0085_0013__gamma__r_0085_0014__scintillation_r_0085_0015__equipment,arg1).
+arc(r_0085_0013__gamma__r_0085_0014__scintillation_r_0085_0015__equipment,r_0085_0012__standard,attrib1).
 arc(r_0085_0018__has,r_0085_0019__been,catenative).
 arc(r_0085_0019__been,r_0085_0020__calibrated,catenative).
-arc(r_0085_0020__calibrated,r_0085_0013__gamma_scintillation_equipment,arg1).
+arc(r_0085_0020__calibrated,r_0085_0013__gamma__r_0085_0014__scintillation_r_0085_0015__equipment,arg1).
 arc(r_0085_0020__calibrated,r_0085_0023__amounts,r_0085_0021__with_mnr).
 arc(r_0085_0022__known,r_0085_0023__amounts,arg1).
 arc(r_0085_0023__amounts,r_0085_0025__niobium_95,r_0085_0024__of).
@@ -216,7 +216,7 @@ arc(r_0085_0023__amounts,r_0085_0025__niobium_95,r_0085_0024__of).
 </pre>
 <br>
 <pre>
-fof(id_85_A_lob_J01,axiom,
+fof(id__85_A_lob_J01,axiom,
     ? [CATENATIVEX2,CATENATIVEX7,CATENATIVEX8,EVENTX19,EVENTX18,EVENTX17,EVENTX16,EVENTX15,EVENTX14,EVENTX12,ENTITYX1,ENTITYX4,ENTITYX5,ENTITYX10,ENTITYX13,ATTRIBX6] :
       ( CATENATIVEX2 = EVENTX18
       &amp; isA(EVENTX18,r_0085_0004__measured)
@@ -233,10 +233,10 @@ fof(id_85_A_lob_J01,axiom,
       &amp; isA(EVENTX17,r_0085_0011__using)
       &amp; arg0(EVENTX17) = ENTITYX4
       &amp; arg1(EVENTX17) = ENTITYX5
-      &amp; isA(ENTITYX4,r_0085_0007__lead_aluminium_sandwich)
+      &amp; isA(ENTITYX4,r_0085_0007__lead__r_0085_0009__aluminium_r_0085_0010__sandwich)
       &amp; isA(EVENTX16,r_0085_0018__has)
       &amp; catenative(EVENTX16) = CATENATIVEX7
-      &amp; isA(ENTITYX5,r_0085_0013__gamma_scintillation_equipment)
+      &amp; isA(ENTITYX5,r_0085_0013__gamma__r_0085_0014__scintillation_r_0085_0015__equipment)
       &amp; attrib1(ENTITYX5) = ATTRIBX6
       &amp; isA(EVENTX12,r_0085_0022__known)
       &amp; arg1(EVENTX12) = ENTITYX10

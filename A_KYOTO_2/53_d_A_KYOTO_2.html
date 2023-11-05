@@ -125,21 +125,21 @@ The sect began when Eisai came back from Southern Song China in 1202 .
 <pre>
 arc(r_0060_0003__began,r_0060_0002__sect,arg0).
 arc(r_0060_0003__began,z_0060_1005,tmp).
-arc(r_0060_0006__came_back,r_0060_0005__Eisai,arg0).
-arc(r_0060_0006__came_back,r_0060_0009__Southern_Song_China,r_0060_0008__from_dir).
-arc(r_0060_0006__came_back,r_0060_0013__1202,r_0060_0012__in_tmp).
-arc(r_0060_0006__came_back,z_0060_1005,tmp1).
+arc(r_0060_0006__came__r_0060_0007__back,r_0060_0005__Eisai,arg0).
+arc(r_0060_0006__came__r_0060_0007__back,r_0060_0009__Southern_r_0060_0010__Song_r_0060_0011__China,r_0060_0008__from_dir).
+arc(r_0060_0006__came__r_0060_0007__back,r_0060_0013__1202,r_0060_0012__in_tmp).
+arc(r_0060_0006__came__r_0060_0007__back,z_0060_1005,tmp1).
 
 </pre>
 <br>
 <pre>
-fof(id_60_A_KYOTO_2,axiom,
+fof(id__60_A_KYOTO_2,axiom,
     ? [EVENTX6,EVENTX4,ENTITYX1,ENTITYX2,ENTITYX3] :
       ( isA(ENTITYX1,r_0060_0002__sect)
-      &amp; isA(EVENTX4,r_0060_0006__came_back)
+      &amp; isA(EVENTX4,r_0060_0006__came__r_0060_0007__back)
       &amp; tmp1(EVENTX4) = ENTITYX2
       &amp; arg0(EVENTX4) = r_0060_0005__Eisai
-      &amp; r_0060_0008__from_dir(EVENTX4) = r_0060_0009__Southern_Song_China
+      &amp; r_0060_0008__from_dir(EVENTX4) = r_0060_0009__Southern__r_0060_0010__Song_r_0060_0011__China
       &amp; r_0060_0012__in_tmp(EVENTX4) = ENTITYX3
       &amp; isA(ENTITYX2,z_0060_1005)
       &amp; isA(ENTITYX3,r_0060_0013__1202)

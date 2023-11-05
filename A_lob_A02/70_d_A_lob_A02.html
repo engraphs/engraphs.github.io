@@ -96,7 +96,7 @@ Sir Roy attacks Kaunda 's &lsquo; vicious monster &rsquo; .
 </svg>
 <br>
 <pre>
-arc(r_0071_0003__attacks,r_0071_0001__Sir_Roy,arg0).
+arc(r_0071_0003__attacks,r_0071_0001__Sir__r_0071_0002__Roy,arg0).
 arc(r_0071_0003__attacks,r_0071_0008__monster,arg1).
 arc(r_0071_0008__monster,r_0071_0004__Kaunda,genv).
 arc(r_0071_0008__monster,r_0071_0007__vicious,attrib3).
@@ -104,14 +104,14 @@ arc(r_0071_0008__monster,r_0071_0007__vicious,attrib3).
 </pre>
 <br>
 <pre>
-fof(id_71_A_lob_A02,axiom,
+fof(id__71_A_lob_A02,axiom,
     ? [EVENTX3,ENTITYX1,ATTRIBX2] :
       ( isA(ENTITYX1,r_0071_0008__monster)
       &amp; genv(ENTITYX1) = r_0071_0004__Kaunda
       &amp; attrib3(ENTITYX1) = ATTRIBX2
       &amp; isA(ATTRIBX2,r_0071_0007__vicious)
       &amp; isA(EVENTX3,r_0071_0003__attacks)
-      &amp; arg0(EVENTX3) = r_0071_0001__Sir_Roy
+      &amp; arg0(EVENTX3) = r_0071_0001__Sir__r_0071_0002__Roy
       &amp; arg1(EVENTX3) = ENTITYX1 ) ).
 
 

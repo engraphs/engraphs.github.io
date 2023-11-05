@@ -413,13 +413,13 @@ arc(r_0044_0003__if_cnt_cnd,r_0044_0006__oxidizes,restriction).
 arc(r_0044_0003__if_cnt_cnd,r_0044_0032__for_cnt,scope).
 arc(r_0044_0006__oxidizes,r_0044_0005__material,arg0).
 arc(r_0044_0006__oxidizes,r_0044_0008__sodium,r_0044_0007__in_loc).
-arc(r_0044_0006__oxidizes,r_0044_0012__oxygen_potential,r_0044_0009__at_mnr).
-arc(r_0044_0011__given,r_0044_0012__oxygen_potential,arg0).
+arc(r_0044_0006__oxidizes,r_0044_0012__oxygen__r_0044_0013__potential,r_0044_0009__at_mnr).
+arc(r_0044_0011__given,r_0044_0012__oxygen__r_0044_0013__potential,arg0).
 arc(r_0044_0017__could,r_0044_0018__be,scope).
 arc(r_0044_0018__be,r_0044_0019__held,catenative).
-arc(r_0044_0019__held,r_0044_0015__reference_electrode,arg1).
+arc(r_0044_0019__held,r_0044_0015__reference__r_0044_0016__electrode,arg1).
 arc(r_0044_0019__held,r_0044_0025__or,r_0044_0020__at_mnr).
-arc(r_0044_0019__held,r_0044_0030__coolant_circuit,r_0044_0028__in_loc).
+arc(r_0044_0019__held,r_0044_0030__coolant__r_0044_0031__circuit,r_0044_0028__in_loc).
 arc(r_0044_0023__and,r_0044_0022__potential,conj1).
 arc(r_0044_0023__and,r_0044_0024__oxidizing,conj2).
 arc(r_0044_0025__or,r_0044_0027__conditions,conj2).
@@ -430,17 +430,17 @@ arc(r_0044_0032__for_cnt,r_0044_0035__would,restriction).
 arc(r_0044_0035__would,r_0044_0036__be,scope).
 arc(r_0044_0036__be,r_0044_0037__indicated,catenative).
 arc(r_0044_0037__indicated,r_0044_0034__material,arg1).
-arc(r_0044_0037__indicated,r_0044_0043__potential,arg0_by_lgs).
+arc(r_0044_0037__indicated,r_0044_0043__potential,arg0__r_0044_0038__by_lgs).
 arc(r_0044_0041__or,r_0044_0040__negative,conj1).
 arc(r_0044_0041__or,r_0044_0042__positive,conj2).
 arc(r_0044_0043__potential,r_0044_0041__or,attrib2).
-arc(r_0044_0043__potential,r_0044_0046__reference_electrode,r_0044_0044__at).
+arc(r_0044_0043__potential,r_0044_0046__reference__r_0044_0047__electrode,r_0044_0044__at).
 arc(z_0044_1028,r_0044_0023__and,attrib2).
 
 </pre>
 <br>
 <pre>
-fof(id_44_A_lob_J01,axiom,
+fof(id__44_A_lob_J01,axiom,
     ? [CATENATIVEX21,CATENATIVEX12,OPERATORX1,CONNX2,CONNX9,OPERATORX11,EVENTX19,EVENTX18,OPERATORX20,EVENTX33,EVENTX32,EVENTX30,EVENTX7,EVENTX6,ENTITYX8,ENTITYX10,ENTITYX13,ENTITYX17,ENTITYX23,ENTITYX31,ENTITYX24,ENTITYX29,ENTITYX3,ENTITYX4,ENTITYX5,ATTRIBX14,ATTRIBX15,ATTRIBX16,ATTRIBX25,ATTRIBX26,ATTRIBX27] :
       ( CATENATIVEX21 = EVENTX32
       &amp; isA(EVENTX32,r_0044_0019__held)
@@ -449,14 +449,14 @@ fof(id_44_A_lob_J01,axiom,
       &amp; r_0044_0028__in_loc(EVENTX32) = ENTITYX31
       &amp; CATENATIVEX12 = EVENTX18
       &amp; isA(EVENTX18,r_0044_0037__indicated)
-      &amp; arg0_by_lgs(EVENTX18) = ENTITYX13
+      &amp; arg0__r_0044_0038__by_lgs(EVENTX18) = ENTITYX13
       &amp; arg1(EVENTX18) = ENTITYX10
       &amp; isA(ENTITYX3,r_0044_0005__material)
       &amp; isA(ENTITYX4,r_0044_0008__sodium)
       &amp; isA(EVENTX6,r_0044_0011__given)
       &amp; arg0(EVENTX6) = ENTITYX5
-      &amp; isA(ENTITYX5,r_0044_0012__oxygen_potential)
-      &amp; isA(ENTITYX8,r_0044_0015__reference_electrode)
+      &amp; isA(ENTITYX5,r_0044_0012__oxygen__r_0044_0013__potential)
+      &amp; isA(ENTITYX8,r_0044_0015__reference__r_0044_0016__electrode)
       &amp; isA(ENTITYX23,r_0044_0025__or)
       &amp; conj1(ENTITYX23) = ENTITYX24
       &amp; conj2(ENTITYX23) = ENTITYX29
@@ -465,12 +465,12 @@ fof(id_44_A_lob_J01,axiom,
       &amp; isA(EVENTX30,r_0044_0026__reducing)
       &amp; arg0(EVENTX30) = ENTITYX29
       &amp; isA(ENTITYX29,r_0044_0027__conditions)
-      &amp; isA(ENTITYX31,r_0044_0030__coolant_circuit)
+      &amp; isA(ENTITYX31,r_0044_0030__coolant__r_0044_0031__circuit)
       &amp; isA(ENTITYX10,r_0044_0034__material)
       &amp; isA(ENTITYX13,r_0044_0043__potential)
       &amp; attrib2(ENTITYX13) = ATTRIBX14
       &amp; r_0044_0044__at(ENTITYX13) = ENTITYX17
-      &amp; isA(ENTITYX17,r_0044_0046__reference_electrode)
+      &amp; isA(ENTITYX17,r_0044_0046__reference__r_0044_0047__electrode)
       &amp; isA(ATTRIBX25,r_0044_0023__and)
       &amp; conj1(ATTRIBX25) = ATTRIBX26
       &amp; conj2(ATTRIBX25) = ATTRIBX27

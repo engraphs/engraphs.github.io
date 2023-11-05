@@ -702,10 +702,6 @@ I 'm gon na take some time away from the court now , but when the time is right 
 </svg>
 <br>
 <pre>
-arc(cnt_0011_1003,r_0011_0002__wrote,scope).
-arc(cnt_0011_1003,r_0011_0008__and,restriction).
-arc(cnt_0011_1043,r_0012_0024__work,scope).
-arc(cnt_0011_1043,r_0012_0029__discuss,restriction).
 arc(r_0011_0002__wrote,r_0011_0001__I,arg0).
 arc(r_0011_0002__wrote,r_0011_0003__privately,mnr3).
 arc(r_0011_0002__wrote,r_0011_0006__tournament,r_0011_0004__to_clr).
@@ -726,6 +722,10 @@ arc(r_0011_0024__as_cnt,r_0011_0012__would,scope).
 arc(r_0011_0024__as_cnt,r_0011_0027__are,restriction).
 arc(r_0011_0027__are,r_0011_0026__Slams,arg0).
 arc(r_0011_0027__are,r_0011_0028__intense,prd2).
+arc(r_0011_1003__cnt,r_0011_0002__wrote,scope).
+arc(r_0011_1003__cnt,r_0011_0008__and,restriction).
+arc(r_0011_1043__cnt,r_0012_0024__work,scope).
+arc(r_0011_1043__cnt,r_0012_0029__discuss,restriction).
 arc(r_0012_0002___apos_m,r_0012_0003__gon,catenative).
 arc(r_0012_0003__gon,r_0012_0005__take,catenative).
 arc(r_0012_0005__take,r_0011_0001__I,arg0).
@@ -740,8 +740,8 @@ arc(r_0012_0015__when_tmp,r_0012_0021__really,scope).
 arc(r_0012_0018__is,r_0012_0017__time,arg0).
 arc(r_0012_0018__is,r_0012_0019__right,prd2).
 arc(r_0012_0021__really,r_0012_0022__want,scope).
-arc(r_0012_0022__want,cnt_0011_1043,arg1).
 arc(r_0012_0022__want,r_0011_0001__I,arg0).
+arc(r_0012_0022__want,r_0011_1043__cnt,arg1).
 arc(r_0012_0024__work,r_0011_0001__I,arg0).
 arc(r_0012_0024__work,r_0012_0027__Tour,r_0012_0025__with_clr_com).
 arc(r_0012_0029__discuss,r_0011_0001__I,arg0).
@@ -759,7 +759,7 @@ arc(r_0012_0041__and,r_0012_0042__fans,conj3).
 </pre>
 <br>
 <pre>
-fof(id_11_A_Osaka_statement__12_A_Osaka_statement,axiom,
+fof(id__11_A_Osaka_statement__12_A_Osaka_statement,axiom,
     ? [STATEX6,STATEX11,CATENATIVEX27,STATEX28,STATEX42,STATEX46,SPEAKERX7,SPEAKERX26,SPEAKERX40,CONJX58,CONNX36,OPERATORX41,EVENTX57,CONNX44,EVENTX55,OPERATORX53,EVENTX54,EVENTX56,EVENTX39,EVENTX35,EVENTX34,EVENTX33,CONNX4,CONJX22,EVENTX21,CONNX16,EVENTX18,OPERATORX19,EVENTX20,EVENTX15,EVENTX5,EVENTX23,ENTITYX45,ENTITYX47,ENTITYX49,ENTITYX50,ENTITYX51,ENTITYX52,ENTITYX37,ENTITYX29,ENTITYX31,ENTITYX2,ENTITYX14,QUALITYX32,QUALITYX30,QUALITYX1,QUALITYX9,QUALITYX10,ATTRIBX48,ATTRIBX38,ATTRIBX8,ATTRIBX17] :
       ( STATEX6 = CONNX16
       &amp; isA(CONNX16,r_0011_0024__as_cnt)
@@ -786,7 +786,7 @@ fof(id_11_A_Osaka_statement__12_A_Osaka_statement,axiom,
       &amp; arg1(EVENTX33) = ENTITYX29
       &amp; tmp4(EVENTX33) = QUALITYX32
       &amp; STATEX42 = CONNX44
-      &amp; isA(CONNX44,cnt_0011_1043)
+      &amp; isA(CONNX44,r_0011_1043__cnt)
       &amp; scope(CONNX44) = EVENTX56
       &amp; isA(EVENTX56,r_0012_0024__work)
       &amp; arg0(EVENTX56) = SPEAKERX40
@@ -837,7 +837,7 @@ fof(id_11_A_Osaka_statement__12_A_Osaka_statement,axiom,
       &amp; isA(ATTRIBX38,r_0012_0019__right)
       &amp; isA(ATTRIBX48,r_0012_0035__better)
       &amp; r_0012_0036__for(ATTRIBX48) = ENTITYX49
-      &amp; isA(CONNX4,cnt_0011_1003)
+      &amp; isA(CONNX4,r_0011_1003__cnt)
       &amp; scope(CONNX4) = EVENTX23
       &amp; isA(EVENTX23,r_0011_0002__wrote)
       &amp; arg0(EVENTX23) = r_0011_0001__I

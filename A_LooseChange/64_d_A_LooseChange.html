@@ -283,13 +283,14 @@ She nodded .
 </svg>
 <br>
 <pre>
-arc(cnt_0118_1014,r_0119_0006__spread,scope).
-arc(cnt_0118_1014,r_0119_0010__suggest,restriction).
-arc(r_0118_0003__sleep_out,r_0118_0002__We,arg0).
-arc(r_0118_0003__sleep_out,r_0118_0007__square,r_0118_0005__in_loc).
+arc(r_0118_0003__sleep__r_0118_0004__out,r_0118_0002__We,arg0).
+arc(r_0118_0003__sleep__r_0118_0004__out,r_0118_0007__square,r_0118_0005__in_loc).
 arc(r_0118_0011__said,r_0118_0010__she,arg0).
-arc(r_0118_0011__said,utterance_0118_1003,arg1).
-arc(r_0119_0002__was,cnt_0118_1014,prn4).
+arc(r_0118_0011__said,r_0118_1003__utterance,arg1).
+arc(r_0118_1003__utterance,r_0118_0003__sleep__r_0118_0004__out,part1).
+arc(r_0118_1014__cnt,r_0119_0006__spread,scope).
+arc(r_0118_1014__cnt,r_0119_0010__suggest,restriction).
+arc(r_0119_0002__was,r_0118_1014__cnt,prn4).
 arc(r_0119_0002__was,r_0119_0001__It,arg0).
 arc(r_0119_0002__was,r_0119_0004__simple,prd2).
 arc(r_0119_0004__simple,r_0119_0003__so,quality1).
@@ -301,21 +302,20 @@ arc(r_0119_0010__suggest,r_0119_0012__lie,arg1).
 arc(r_0119_0012__lie,r_0119_0015__bed,r_0119_0013__of).
 arc(r_0119_0015__bed,r_0118_0010__she,genv).
 arc(r_0120_0002__nodded,r_0118_0010__she,arg0).
-arc(utterance_0118_1003,r_0118_0003__sleep_out,part1).
 
 </pre>
 <br>
 <pre>
-fof(id_118_A_LooseChange__119_A_LooseChange__120_A_LooseChange,axiom,
+fof(id__118_A_LooseChange__119_A_LooseChange__120_A_LooseChange,axiom,
     ? [STATEX1,EVENTX10,LAYLORX11,LAYLORX13,LAYLORX18,LAYLORX22,EVENTX23,EVENTX21,CONNX15,EVENTX19,EVENTX20,EVENTX7,CONJX6,EVENTX5,ENTITYX12,ENTITYX16,ENTITYX17,ENTITYX4,ATTRIBX8,QUALITYX9] :
       ( STATEX1 = CONJX6
-      &amp; isA(CONJX6,utterance_0118_1003)
+      &amp; isA(CONJX6,r_0118_1003__utterance)
       &amp; part1(CONJX6) = EVENTX5
-      &amp; isA(EVENTX5,r_0118_0003__sleep_out)
+      &amp; isA(EVENTX5,r_0118_0003__sleep__r_0118_0004__out)
       &amp; arg0(EVENTX5) = r_0118_0002__We
       &amp; r_0118_0005__in_loc(EVENTX5) = ENTITYX4
       &amp; EVENTX10 = CONNX15
-      &amp; isA(CONNX15,cnt_0118_1014)
+      &amp; isA(CONNX15,r_0118_1014__cnt)
       &amp; scope(CONNX15) = EVENTX20
       &amp; isA(EVENTX20,r_0119_0006__spread)
       &amp; arg0(EVENTX20) = LAYLORX11

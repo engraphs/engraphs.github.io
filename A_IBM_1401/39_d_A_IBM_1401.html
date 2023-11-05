@@ -233,34 +233,34 @@ arc(r_0055_0003__be,r_0055_0005__and,catenative).
 arc(r_0055_0004__sorted,r_0055_0001__Data,arg1).
 arc(r_0055_0004__sorted,r_0055_0009__speed,r_0055_0007__at_mnr).
 arc(r_0055_0004__sorted,r_0055_0012__processing,r_0055_0010__for_bnf).
-arc(r_0055_0004__sorted,r_0055_0014__use,arg0_by_lgs).
+arc(r_0055_0004__sorted,r_0055_0014__use,arg0__r_0055_0013__by_lgs).
 arc(r_0055_0005__and,r_0055_0004__sorted,conj1).
 arc(r_0055_0005__and,r_0055_0006__classified,conj2).
 arc(r_0055_0006__classified,r_0055_0001__Data,arg1).
 arc(r_0055_0006__classified,r_0055_0009__speed,r_0055_0007__at_mnr).
 arc(r_0055_0006__classified,r_0055_0012__processing,r_0055_0010__for_bnf).
-arc(r_0055_0006__classified,r_0055_0014__use,arg0_by_lgs).
+arc(r_0055_0006__classified,r_0055_0014__use,arg0__r_0055_0013__by_lgs).
 arc(r_0055_0009__speed,r_0055_0008__high,attrib1).
 arc(r_0055_0012__processing,r_0055_0011__further,attrib1).
-arc(r_0055_0014__use,r_0055_0018__sorting_routines,r_0055_0015__of).
-arc(r_0055_0018__sorting_routines,r_0055_0017__generalized,attrib2).
+arc(r_0055_0014__use,r_0055_0018__sorting__r_0055_0019__routines,r_0055_0015__of).
+arc(r_0055_0018__sorting__r_0055_0019__routines,r_0055_0017__generalized,attrib2).
 
 </pre>
 <br>
 <pre>
-fof(id_55_A_IBM_1401,axiom,
+fof(id__55_A_IBM_1401,axiom,
     ? [CATENATIVEX3,OPERATORX2,EVENTX14,CONJX13,EVENTX12,EVENTX11,ENTITYX1,ENTITYX4,ENTITYX6,ENTITYX8,ENTITYX9,ATTRIBX10,ATTRIBX7,ATTRIBX5] :
       ( CATENATIVEX3 = CONJX13
       &amp; isA(CONJX13,r_0055_0005__and)
       &amp; conj1(CONJX13) = EVENTX11
       &amp; isA(EVENTX11,r_0055_0004__sorted)
-      &amp; arg0_by_lgs(EVENTX11) = ENTITYX8
+      &amp; arg0__r_0055_0013__by_lgs(EVENTX11) = ENTITYX8
       &amp; arg1(EVENTX11) = ENTITYX1
       &amp; r_0055_0007__at_mnr(EVENTX11) = ENTITYX4
       &amp; r_0055_0010__for_bnf(EVENTX11) = ENTITYX6
       &amp; conj2(CONJX13) = EVENTX12
       &amp; isA(EVENTX12,r_0055_0006__classified)
-      &amp; arg0_by_lgs(EVENTX12) = ENTITYX8
+      &amp; arg0__r_0055_0013__by_lgs(EVENTX12) = ENTITYX8
       &amp; arg1(EVENTX12) = ENTITYX1
       &amp; r_0055_0007__at_mnr(EVENTX12) = ENTITYX4
       &amp; r_0055_0010__for_bnf(EVENTX12) = ENTITYX6
@@ -271,7 +271,7 @@ fof(id_55_A_IBM_1401,axiom,
       &amp; attrib1(ENTITYX6) = ATTRIBX7
       &amp; isA(ENTITYX8,r_0055_0014__use)
       &amp; r_0055_0015__of(ENTITYX8) = ENTITYX9
-      &amp; isA(ENTITYX9,r_0055_0018__sorting_routines)
+      &amp; isA(ENTITYX9,r_0055_0018__sorting__r_0055_0019__routines)
       &amp; attrib2(ENTITYX9) = ATTRIBX10
       &amp; isA(ATTRIBX5,r_0055_0008__high)
       &amp; isA(ATTRIBX7,r_0055_0011__further)

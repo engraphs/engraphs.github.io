@@ -311,13 +311,12 @@ Could you suggest at least one topic she could talk about , and give her a choic
 </svg>
 <br>
 <pre>
-arc(question_0009_1002,r_0009_0001__Could,scope).
 arc(r_0009_0001__Could,r_0009_0012__and,scope).
 arc(r_0009_0003__suggest,r_0009_0002__you,arg0).
-arc(r_0009_0003__suggest,r_0009_0005__one_topic,arg1).
-arc(r_0009_0005__one_topic,r_0009_0004__at_least,quality1).
+arc(r_0009_0003__suggest,r_0009_0005__one__r_0009_0006__topic,arg1).
+arc(r_0009_0005__one__r_0009_0006__topic,r_0009_0004__at_least,quality1).
 arc(r_0009_0008__could,r_0009_0009__talk,scope).
-arc(r_0009_0009__talk,r_0009_0005__one_topic,r_0009_0010__about_clr).
+arc(r_0009_0009__talk,r_0009_0005__one__r_0009_0006__topic,r_0009_0010__about_clr).
 arc(r_0009_0009__talk,r_0009_0007__she,arg0).
 arc(r_0009_0012__and,r_0009_0003__suggest,conj1).
 arc(r_0009_0012__and,r_0009_0013__give,conj2).
@@ -331,19 +330,20 @@ arc(r_0009_0021__or,r_0009_0022__22,conj2).
 arc(r_0009_0023__February,r_0009_0021__or,nlyr1).
 arc(r_0009_0023__February,r_0009_0026__7,r_0009_0025__from).
 arc(r_0009_0023__February,r_0009_0028__8,r_0009_0027__to).
-arc(r_0009_0028__8,r_0009_0029__p.m.,quality2).
+arc(r_0009_0028__8,r_0009_0029__p_m_,quality2).
+arc(r_0009_1002__question,r_0009_0001__Could,scope).
 
 </pre>
 <br>
 <pre>
-fof(id_9_A_fce_0102_2001_06,axiom,
+fof(id__9_A_fce_0102_2001_06,axiom,
     ? [OPERATORX2,OPERATORX3,CONJX18,EVENTX17,EVENTX8,OPERATORX6,EVENTX7,ENTITYX9,ENTITYX10,ENTITYX11,ENTITYX14,ENTITYX15,ENTITYX12,ENTITYX13,ENTITYX4,QUALITYX16,QUALITYX5] :
       ( isA(OPERATORX6,r_0009_0008__could)
       &amp; scope(OPERATORX6) = EVENTX7
       &amp; isA(EVENTX7,r_0009_0009__talk)
       &amp; arg0(EVENTX7) = r_0009_0007__she
       &amp; r_0009_0010__about_clr(EVENTX7) = ENTITYX4
-      &amp; isA(ENTITYX4,r_0009_0005__one_topic)
+      &amp; isA(ENTITYX4,r_0009_0005__one__r_0009_0006__topic)
       &amp; quality1(ENTITYX4) = QUALITYX5
       &amp; isA(ENTITYX9,r_0009_0016__choice)
       &amp; r_0009_0017__of(ENTITYX9) = ENTITYX10
@@ -362,8 +362,8 @@ fof(id_9_A_fce_0102_2001_06,axiom,
       &amp; r_0009_0025__from(r_0009_0023__February) = ENTITYX14
       &amp; r_0009_0027__to(r_0009_0023__February) = ENTITYX15
       &amp; isA(QUALITYX5,r_0009_0004__at_least)
-      &amp; isA(QUALITYX16,r_0009_0029__p.m.)
-      &amp; isA(OPERATORX2,question_0009_1002)
+      &amp; isA(QUALITYX16,r_0009_0029__p_m_)
+      &amp; isA(OPERATORX2,r_0009_1002__question)
       &amp; scope(OPERATORX2) = OPERATORX3
       &amp; isA(OPERATORX3,r_0009_0001__Could)
       &amp; scope(OPERATORX3) = CONJX18

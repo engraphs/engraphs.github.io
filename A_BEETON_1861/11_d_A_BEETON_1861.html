@@ -698,10 +698,8 @@ Where wine comes into the cellar ready bottled , it is usual to return the same 
 </svg>
 <br>
 <pre>
-arc(abs_0024_1004,r_0024_0003__comes,scope).
-arc(abs_0024_1004,r_0024_0008__bottled,restriction).
-arc(r_0024_0001__Where_cnt_cnd,abs_0024_1004,restriction).
 arc(r_0024_0001__Where_cnt_cnd,r_0024_0011__is,scope).
+arc(r_0024_0001__Where_cnt_cnd,r_0024_1004__abs,restriction).
 arc(r_0024_0003__comes,r_0024_0002__wine,arg0).
 arc(r_0024_0003__comes,r_0024_0006__cellar,r_0024_0004__into_clr_loc).
 arc(r_0024_0008__bottled,r_0024_0002__wine,arg1).
@@ -733,10 +731,10 @@ arc(r_0024_0049__bottled,r_0024_0052__house,r_0024_0050__in_loc).
 arc(r_0024_0055__will,r_0024_0056__find,scope).
 arc(r_0024_0056__find,r_0024_0023__butler,arg0).
 arc(r_0024_0056__find,r_0024_0058__account,arg1).
-arc(r_0024_0056__find,r_0024_0060__not_only_but,z_0024_1046).
+arc(r_0024_0056__find,r_0024_0060__not__r_0024_0061__only_r_0024_0067__but,z_0024_1046).
 arc(r_0024_0058__account,r_0024_0023__butler,genv).
-arc(r_0024_0060__not_only_but,r_0024_0063__keeping,r_0024_0062__in_mnr).
-arc(r_0024_0060__not_only_but,r_0024_0073__and,r_0024_0068__in_mnr).
+arc(r_0024_0060__not__r_0024_0061__only_r_0024_0067__but,r_0024_0063__keeping,r_0024_0062__in_mnr).
+arc(r_0024_0060__not__r_0024_0061__only_r_0024_0067__but,r_0024_0073__and,r_0024_0068__in_mnr).
 arc(r_0024_0063__keeping,r_0024_0064__them,arg1).
 arc(r_0024_0063__keeping,r_0024_0065__separate,prd).
 arc(r_0024_0069__rinsing,r_0024_0064__them,arg1).
@@ -751,11 +749,13 @@ arc(r_0024_0080__as_soon_as_tmp,r_0024_0075__washing,scope).
 arc(r_0024_0080__as_soon_as_tmp,r_0024_0082__are,restriction).
 arc(r_0024_0082__are,r_0024_0064__them,arg0).
 arc(r_0024_0082__are,r_0024_0083__empty,prd2).
+arc(r_0024_1004__abs,r_0024_0003__comes,scope).
+arc(r_0024_1004__abs,r_0024_0008__bottled,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_24_A_BEETON_1861,axiom,
+fof(id__24_A_BEETON_1861,axiom,
     ? [STATEX12,EVENTX18,STATEX23,CATENATIVEX38,EVENTX48,EVENTX53,BUTLERX43,BUTLERX45,WINE_BOTTLESX56,WINE_BOTTLESX60,WINE_BOTTLESX64,CONJX71,CONNX36,OPERATORX69,EVENTX70,CONJX68,OPERATORX59,CONNX63,EVENTX66,EVENTX67,EVENTX58,EVENTX52,EVENTX42,EVENTX41,CONNX1,EVENTX34,OPERATORX32,EVENTX33,EVENTX31,EVENTX30,EVENTX17,CONNX5,EVENTX8,EVENTX9,ENTITYX44,CONJX47,ENTITYX61,WINEX37,ENTITYX40,BUTLERX19,ENTITYX20,ENTITYX21,ENTITYX26,ENTITYX27,ENTITYX13,ENTITYX15,ENTITYX2,ENTITYX3,QUALITYX57,QUALITYX7,ATTRIBX65,ATTRIBX62,ATTRIBX51,ATTRIBX11,ATTRIBX22,ATTRIBX28,ATTRIBX14,ATTRIBX16] :
       ( STATEX12 = EVENTX17
       &amp; isA(EVENTX17,r_0024_0014__return)
@@ -821,7 +821,7 @@ fof(id_24_A_BEETON_1861,axiom,
       &amp; genv(ENTITYX44) = BUTLERX45
       &amp; ( BUTLERX45 = BUTLERX43
         | BUTLERX45 = BUTLERX19 )
-      &amp; isA(CONJX47,r_0024_0060__not_only_but)
+      &amp; isA(CONJX47,r_0024_0060__not__r_0024_0061__only_r_0024_0067__but)
       &amp; r_0024_0062__in_mnr(CONJX47) = EVENTX48
       &amp; r_0024_0068__in_mnr(CONJX47) = EVENTX53
       &amp; WINE_BOTTLESX56 = r_0024_0064__them
@@ -844,7 +844,7 @@ fof(id_24_A_BEETON_1861,axiom,
       &amp; conj1(CONJX71) = CONNX1
       &amp; isA(CONNX1,r_0024_0001__Where_cnt_cnd)
       &amp; restriction(CONNX1) = CONNX5
-      &amp; isA(CONNX5,abs_0024_1004)
+      &amp; isA(CONNX5,r_0024_1004__abs)
       &amp; scope(CONNX5) = EVENTX9
       &amp; isA(EVENTX9,r_0024_0003__comes)
       &amp; arg0(EVENTX9) = ENTITYX2

@@ -414,8 +414,6 @@ The government will do whatever it takes to help you make ends meet and put food
 </svg>
 <br>
 <pre>
-arc(cnt_0018_1018,r_0019_0007__takes,scope).
-arc(cnt_0018_1018,r_0019_0009__help,restriction).
 arc(r_0018_0002__know,r_0018_0001__I,arg0).
 arc(r_0018_0002__know,r_0018_0006__will,arg1).
 arc(r_0018_0006__will,r_0018_0007__be,scope).
@@ -428,6 +426,8 @@ arc(r_0018_0013__impact,r_0018_0016__and,r_0018_0014__on).
 arc(r_0018_0016__and,r_0018_0005__you,conj1).
 arc(r_0018_0016__and,r_0018_0018__family,conj2).
 arc(r_0018_0018__family,r_0018_0005__you,genv).
+arc(r_0018_1018__cnt,r_0019_0007__takes,scope).
+arc(r_0018_1018__cnt,r_0019_0009__help,restriction).
 arc(r_0019_0003__will,r_0019_0004__do,scope).
 arc(r_0019_0004__do,r_0019_0002__government,arg0).
 arc(r_0019_0004__do,z_0018_1038,arg1).
@@ -447,7 +447,7 @@ arc(z_0018_1004,r_0018_0005__you,r_0018_0004__of).
 </pre>
 <br>
 <pre>
-fof(id_18_A_Johnson_letter__19_A_Johnson_letter,axiom,
+fof(id__18_A_Johnson_letter__19_A_Johnson_letter,axiom,
     ? [STATEX1,STATEX23,STATEX27,HEARERX10,HEARERX12,HEARERX22,OPERATORX39,EVENTX40,CONNX19,EVENTX36,CONJX35,EVENTX34,EVENTX31,EVENTX30,EVENTX37,EVENTX15,OPERATORX13,EVENTX14,ENTITYX16,ENTITYX17,ENTITYX32,ENTITYX33,ENTITYX26,ENTITYX2,ENTITYX7,ENTITYX9,ENTITYX11,ATTRIBX5,ATTRIBX8,ATTRIBX3,QUALITYX6] :
       ( STATEX1 = OPERATORX13
       &amp; isA(OPERATORX13,r_0018_0006__will)
@@ -481,7 +481,7 @@ fof(id_18_A_Johnson_letter__19_A_Johnson_letter,axiom,
       &amp; genv(ENTITYX11) = HEARERX12
       &amp; HEARERX12 = r_0018_0005__you
       &amp; isA(ENTITYX16,r_0019_0002__government)
-      &amp; isA(CONNX19,cnt_0018_1018)
+      &amp; isA(CONNX19,r_0018_1018__cnt)
       &amp; scope(CONNX19) = EVENTX37
       &amp; isA(EVENTX37,r_0019_0007__takes)
       &amp; arg1(EVENTX37) = ENTITYX17

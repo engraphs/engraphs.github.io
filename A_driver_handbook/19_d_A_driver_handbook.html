@@ -370,10 +370,9 @@ When traveling below the speed limit always move to the right when another drive
 </svg>
 <br>
 <pre>
-arc(imperative_0025_1002,r_0025_0001__When_tmp,scope).
 arc(r_0025_0001__When_tmp,r_0025_0002__traveling,restriction).
 arc(r_0025_0001__When_tmp,r_0025_0007__always,scope).
-arc(r_0025_0002__traveling,r_0025_0005__speed_limit,r_0025_0003__below_mnr).
+arc(r_0025_0002__traveling,r_0025_0005__speed__r_0025_0006__limit,r_0025_0003__below_mnr).
 arc(r_0025_0007__always,r_0025_0012__when_tmp,scope).
 arc(r_0025_0008__move,z_0025_1010,r_0025_0009__to_dir).
 arc(r_0025_0012__when_tmp,r_0025_0019__and,restriction).
@@ -394,19 +393,20 @@ arc(r_0025_0027__are,r_0025_0028__already,tmp3).
 arc(r_0025_0027__are,r_0025_0033__lane,r_0025_0029__in_prd2).
 arc(r_0025_0032__right,z_0025_1027,modifier1).
 arc(r_0025_0033__lane,r_0025_0032__right,attrib2).
+arc(r_0025_1002__imperative,r_0025_0001__When_tmp,scope).
 arc(z_0025_1010,r_0025_0011__right,attrib2).
 arc(z_0025_1027,r_0025_0031__extreme,attrib1).
 
 </pre>
 <br>
 <pre>
-fof(id_25_A_driver_handbook,axiom,
+fof(id__25_A_driver_handbook,axiom,
     ? [STATEX15,HEARERX21,OPERATORX2,CONNX4,OPERATORX7,CONNX11,CONJX19,EVENTX18,EVENTX17,EVENTX14,CONNX20,EVENTX28,EVENTX29,EVENTX6,ENTITYX8,ENTITYX12,ENTITYX23,ENTITYX25,ENTITYX5,ATTRIBX13,ATTRIBX24,ATTRIBX26,ATTRIBX9,QUALITYX16,QUALITYX22] :
       ( STATEX15 = EVENTX17
       &amp; isA(EVENTX17,r_0025_0022__drive)
       &amp; arg0(EVENTX17) = ENTITYX12
       &amp; mnr3(EVENTX17) = QUALITYX16
-      &amp; isA(ENTITYX5,r_0025_0005__speed_limit)
+      &amp; isA(ENTITYX5,r_0025_0005__speed__r_0025_0006__limit)
       &amp; isA(ENTITYX8,z_0025_1010)
       &amp; attrib2(ENTITYX8) = ATTRIBX9
       &amp; isA(HEARERX21,r_0025_0026__you)
@@ -423,7 +423,7 @@ fof(id_25_A_driver_handbook,axiom,
       &amp; r_0025_0017__behind(ATTRIBX13) = r_0025_0018__you
       &amp; isA(QUALITYX22,r_0025_0028__already)
       &amp; isA(QUALITYX16,r_0025_0023__faster)
-      &amp; isA(OPERATORX2,imperative_0025_1002)
+      &amp; isA(OPERATORX2,r_0025_1002__imperative)
       &amp; scope(OPERATORX2) = CONNX4
       &amp; isA(CONNX4,r_0025_0001__When_tmp)
       &amp; restriction(CONNX4) = EVENTX6

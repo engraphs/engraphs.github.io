@@ -208,10 +208,8 @@ Needless to say , I will be launching a petition after this debate to name the h
 </svg>
 <br>
 <pre>
-arc(cnt_0016_1005,r_0016_0006__launching,scope).
-arc(cnt_0016_1005,r_0016_0013__name,restriction).
 arc(r_0016_0004__will,r_0016_0005__be,scope).
-arc(r_0016_0005__be,cnt_0016_1005,catenative).
+arc(r_0016_0005__be,r_0016_1005__cnt,catenative).
 arc(r_0016_0006__launching,r_0016_0003__I,arg0).
 arc(r_0016_0006__launching,r_0016_0008__petition,arg1).
 arc(r_0016_0006__launching,r_0016_0011__debate,r_0016_0009__after_tmp).
@@ -221,14 +219,16 @@ arc(r_0016_0013__name,r_0016_0020__species,r_0016_0016__as_prd).
 arc(r_0016_0020__species,r_0016_0017__our,genv).
 arc(r_0016_0020__species,r_0016_0018__designated,attrib2).
 arc(r_0016_0020__species,r_0016_0019__national,attrib3).
+arc(r_0016_1005__cnt,r_0016_0006__launching,scope).
+arc(r_0016_1005__cnt,r_0016_0013__name,restriction).
 
 </pre>
 <br>
 <pre>
-fof(id_16_A_Hedgehog,axiom,
+fof(id__16_A_Hedgehog,axiom,
     ? [CATENATIVEX2,OPERATORX1,EVENTX13,CONNX6,EVENTX11,EVENTX12,ENTITYX3,ENTITYX4,ENTITYX7,ENTITYX8,ATTRIBX9,ATTRIBX10] :
       ( CATENATIVEX2 = CONNX6
-      &amp; isA(CONNX6,cnt_0016_1005)
+      &amp; isA(CONNX6,r_0016_1005__cnt)
       &amp; scope(CONNX6) = EVENTX12
       &amp; isA(EVENTX12,r_0016_0006__launching)
       &amp; arg0(EVENTX12) = r_0016_0003__I

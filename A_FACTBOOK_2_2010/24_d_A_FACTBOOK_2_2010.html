@@ -608,26 +608,26 @@ Taken together with those of the state constitutions , these documents outline t
 </svg>
 <br>
 <pre>
-arc(cnt_0101_1031,r_0103_0001__Taken,restriction).
-arc(cnt_0101_1031,r_0103_0022__and,scope).
 arc(r_0101_0002__law,r_0101_0001__US,attrib1).
 arc(r_0101_0003__draws,r_0101_0002__law,arg0).
 arc(r_0101_0003__draws,r_0101_0005__authority,arg1).
-arc(r_0101_0003__draws,r_0101_0007__four_sources,r_0101_0006__from_dir).
+arc(r_0101_0003__draws,r_0101_0007__four__r_0101_0008__sources,r_0101_0006__from_dir).
 arc(r_0101_0005__authority,r_0101_0002__law,genv).
-arc(r_0101_0007__four_sources,r_0101_0019__and,prn4).
+arc(r_0101_0007__four__r_0101_0008__sources,r_0101_0019__and,prn4).
 arc(r_0101_0011__law,r_0101_0010__constitutional,attrib1).
 arc(r_0101_0014__law,r_0101_0013__statutory,attrib1).
 arc(r_0101_0017__regulations,r_0101_0016__administrative,attrib1).
 arc(r_0101_0019__and,r_0101_0011__law,conj1).
 arc(r_0101_0019__and,r_0101_0014__law,conj2).
 arc(r_0101_0019__and,r_0101_0017__regulations,conj3).
-arc(r_0101_0019__and,r_0101_0020__case_law,conj4).
+arc(r_0101_0019__and,r_0101_0020__case__r_0101_0021__law,conj4).
+arc(r_0101_1031__cnt,r_0103_0001__Taken,restriction).
+arc(r_0101_1031__cnt,r_0103_0022__and,scope).
 arc(r_0102_0002__law,r_0101_0011__law,z_0101_1017).
 arc(r_0102_0002__law,r_0102_0001__Constitutional,attrib2).
 arc(r_0102_0003__is,r_0102_0004__based,catenative).
 arc(r_0102_0004__based,r_0102_0002__law,arg1).
-arc(r_0102_0004__based,r_0102_0007__US_Constitution,r_0102_0005__on_clr).
+arc(r_0102_0004__based,r_0102_0007__US__r_0102_0008__Constitution,r_0102_0005__on_clr).
 arc(r_0102_0009__and,r_0102_0003__is,conj1).
 arc(r_0102_0009__and,r_0102_0010__serves,conj2).
 arc(r_0102_0010__serves,r_0102_0002__law,arg0).
@@ -637,7 +637,7 @@ arc(r_0102_0015__law,r_0102_0014__federal,attrib3).
 arc(r_0103_0001__Taken,r_0103_0002__together,com2).
 arc(r_0103_0001__Taken,r_0103_0004__those,r_0103_0003__with_mnr).
 arc(r_0103_0001__Taken,r_0103_0011__documents,arg0).
-arc(r_0103_0004__those,r_0103_0007__state_constitutions,r_0103_0005__of).
+arc(r_0103_0004__those,r_0103_0007__state__r_0103_0008__constitutions,r_0103_0005__of).
 arc(r_0103_0012__outline,r_0103_0011__documents,arg0).
 arc(r_0103_0012__outline,r_0103_0015__structure,arg1).
 arc(r_0103_0015__structure,r_0103_0014__general,attrib2).
@@ -656,7 +656,7 @@ arc(r_0103_0026__and,r_0103_0029__power,r_0103_0028__of).
 </pre>
 <br>
 <pre>
-fof(id_101_A_FACTBOOK_2_2010__102_A_FACTBOOK_2_2010__103_A_FACTBOOK_2_2010,axiom,
+fof(id__101_A_FACTBOOK_2_2010__102_A_FACTBOOK_2_2010__103_A_FACTBOOK_2_2010,axiom,
     ? [CATENATIVEX20,US_LAWX4,CONSTITUTIONAL_LAWX18,CONNX32,CONJX48,EVENTX47,EVENTX42,EVENTX35,CONJX29,EVENTX28,EVENTX24,EVENTX23,EVENTX14,ENTITYX30,ENTITYX43,ENTITYX44,ENTITYX45,ENTITYX46,ENTITYX36,ENTITYX38,ENTITYX34,ENTITYX15,ENTITYX25,ENTITYX22,US_LAWX1,ENTITYX3,ENTITYX5,ENTITYX6,CONSTITUTIONAL_LAWX7,STATUTORY_LAWX9,ADMINISTRATIVE_LAWX11,CASE_LAWX13,ATTRIBX37,ATTRIBX39,ATTRIBX40,ATTRIBX41,ATTRIBX26,ATTRIBX27,ATTRIBX19,ATTRIBX12,ATTRIBX10,ATTRIBX8,ATTRIBX2,QUALITYX33] :
       ( CATENATIVEX20 = EVENTX23
       &amp; isA(EVENTX23,r_0102_0004__based)
@@ -667,7 +667,7 @@ fof(id_101_A_FACTBOOK_2_2010__102_A_FACTBOOK_2_2010__103_A_FACTBOOK_2_2010,axiom
       &amp; isA(ENTITYX3,r_0101_0005__authority)
       &amp; genv(ENTITYX3) = US_LAWX4
       &amp; US_LAWX4 = US_LAWX1
-      &amp; isA(ENTITYX5,r_0101_0007__four_sources)
+      &amp; isA(ENTITYX5,r_0101_0007__four__r_0101_0008__sources)
       &amp; prn4(ENTITYX5) = ENTITYX6
       &amp; isA(ENTITYX6,r_0101_0019__and)
       &amp; conj1(ENTITYX6) = CONSTITUTIONAL_LAWX7
@@ -680,17 +680,17 @@ fof(id_101_A_FACTBOOK_2_2010__102_A_FACTBOOK_2_2010__103_A_FACTBOOK_2_2010,axiom
       &amp; attrib1(STATUTORY_LAWX9) = ATTRIBX10
       &amp; isA(ADMINISTRATIVE_LAWX11,r_0101_0017__regulations)
       &amp; attrib1(ADMINISTRATIVE_LAWX11) = ATTRIBX12
-      &amp; isA(CASE_LAWX13,r_0101_0020__case_law)
+      &amp; isA(CASE_LAWX13,r_0101_0020__case__r_0101_0021__law)
       &amp; isA(ENTITYX15,r_0102_0002__law)
       &amp; z_0101_1017(ENTITYX15) = CONSTITUTIONAL_LAWX18
       &amp; attrib2(ENTITYX15) = ATTRIBX19
       &amp; CONSTITUTIONAL_LAWX18 = CONSTITUTIONAL_LAWX7
-      &amp; isA(ENTITYX22,r_0102_0007__US_Constitution)
+      &amp; isA(ENTITYX22,r_0102_0007__US__r_0102_0008__Constitution)
       &amp; isA(ENTITYX25,r_0102_0015__law)
       &amp; attrib2(ENTITYX25) = ATTRIBX26
       &amp; attrib3(ENTITYX25) = ATTRIBX27
       &amp; isA(ENTITYX30,r_0103_0011__documents)
-      &amp; isA(ENTITYX34,r_0103_0007__state_constitutions)
+      &amp; isA(ENTITYX34,r_0103_0007__state__r_0103_0008__constitutions)
       &amp; isA(ENTITYX36,r_0103_0015__structure)
       &amp; attrib2(ENTITYX36) = ATTRIBX37
       &amp; r_0103_0016__of(ENTITYX36) = ENTITYX38
@@ -731,7 +731,7 @@ fof(id_101_A_FACTBOOK_2_2010__102_A_FACTBOOK_2_2010__103_A_FACTBOOK_2_2010,axiom
       &amp; isA(EVENTX28,r_0102_0010__serves)
       &amp; arg0(EVENTX28) = ENTITYX15
       &amp; r_0102_0011__as_prd2(EVENTX28) = ENTITYX25
-      &amp; isA(CONNX32,cnt_0101_1031)
+      &amp; isA(CONNX32,r_0101_1031__cnt)
       &amp; restriction(CONNX32) = EVENTX35
       &amp; isA(EVENTX35,r_0103_0001__Taken)
       &amp; arg0(EVENTX35) = ENTITYX30

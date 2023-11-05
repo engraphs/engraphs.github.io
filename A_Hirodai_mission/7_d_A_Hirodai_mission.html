@@ -326,27 +326,27 @@ All of us ― the students , faculty , and staff members ― have to follow our 
 </svg>
 <br>
 <pre>
-arc(cnt_0009_1014,r_0009_0016__follow,scope).
-arc(cnt_0009_1014,r_0009_0024__and,restriction).
-arc(r_0009_0001__quantificational__All,r_0009_0014__have,scope).
-arc(r_0009_0001__quantificational__All,z_0009_1007,restriction).
+arc(r_0009_0001__quantificational__r_0009_0001__All,r_0009_0014__have,scope).
+arc(r_0009_0001__quantificational__r_0009_0001__All,z_0009_1007,restriction).
 arc(r_0009_0003__us,r_0009_0010__and,prn3).
 arc(r_0009_0010__and,r_0009_0006__students,conj1).
 arc(r_0009_0010__and,r_0009_0008__faculty,conj2).
-arc(r_0009_0010__and,r_0009_0011__staff_members,conj3).
-arc(r_0009_0014__have,cnt_0009_1014,catenative).
+arc(r_0009_0010__and,r_0009_0011__staff__r_0009_0012__members,conj3).
+arc(r_0009_0014__have,r_0009_1014__cnt,catenative).
 arc(r_0009_0016__follow,r_0009_0019__paths,arg1).
 arc(r_0009_0016__follow,z_0009_1007,arg0).
 arc(r_0009_0019__paths,z_0009_1013,genv).
 arc(r_0009_0021__pursue,r_0009_0023__progress,arg1).
-arc(r_0009_0021__pursue,r_0009_0028__Hirosaki_University,r_0009_0027__at_loc).
+arc(r_0009_0021__pursue,r_0009_0028__Hirosaki__r_0009_0029__University,r_0009_0027__at_loc).
 arc(r_0009_0021__pursue,z_0009_1007,arg0).
 arc(r_0009_0023__progress,r_0009_0022__continuous,attrib1).
 arc(r_0009_0024__and,r_0009_0021__pursue,conj1).
 arc(r_0009_0024__and,r_0009_0025__maintain,conj2).
 arc(r_0009_0025__maintain,r_0009_0026__excellence,arg1).
-arc(r_0009_0025__maintain,r_0009_0028__Hirosaki_University,r_0009_0027__at_loc).
+arc(r_0009_0025__maintain,r_0009_0028__Hirosaki__r_0009_0029__University,r_0009_0027__at_loc).
 arc(r_0009_0025__maintain,z_0009_1007,arg0).
+arc(r_0009_1014__cnt,r_0009_0016__follow,scope).
+arc(r_0009_1014__cnt,r_0009_0024__and,restriction).
 arc(z_0009_1007,r_0009_0003__us,r_0009_0002__of).
 arc(z_0009_1013,r_0009_0003__us,genv).
 arc(z_0009_1013,r_0009_0018__own,attrib2).
@@ -354,10 +354,10 @@ arc(z_0009_1013,r_0009_0018__own,attrib2).
 </pre>
 <br>
 <pre>
-fof(id_9_A_Hirodai_mission,axiom,
+fof(id__9_A_Hirodai_mission,axiom,
     ? [STATEX8,SPEAKER_AND_HEARERX11,QUANTX2,EVENTX23,CONNX15,CONJX21,EVENTX20,EVENTX18,EVENTX22,ENTITYX1,ENTITYX9,ENTITYX19,ENTITYX16,ENTITYX10,ENTITYX3,ENTITYX4,ENTITYX5,ENTITYX6,ATTRIBX17,ATTRIBX12] :
       ( STATEX8 = CONNX15
-      &amp; isA(CONNX15,cnt_0009_1014)
+      &amp; isA(CONNX15,r_0009_1014__cnt)
       &amp; scope(CONNX15) = EVENTX22
       &amp; isA(EVENTX22,r_0009_0016__follow)
       &amp; arg0(EVENTX22) = ENTITYX1
@@ -367,12 +367,12 @@ fof(id_9_A_Hirodai_mission,axiom,
       &amp; conj1(CONJX21) = EVENTX18
       &amp; isA(EVENTX18,r_0009_0021__pursue)
       &amp; arg0(EVENTX18) = ENTITYX1
-      &amp; r_0009_0027__at_loc(EVENTX18) = r_0009_0028__Hirosaki_University
+      &amp; r_0009_0027__at_loc(EVENTX18) = r_0009_0028__Hirosaki__r_0009_0029__University
       &amp; arg1(EVENTX18) = ENTITYX16
       &amp; conj2(CONJX21) = EVENTX20
       &amp; isA(EVENTX20,r_0009_0025__maintain)
       &amp; arg0(EVENTX20) = ENTITYX1
-      &amp; r_0009_0027__at_loc(EVENTX20) = r_0009_0028__Hirosaki_University
+      &amp; r_0009_0027__at_loc(EVENTX20) = r_0009_0028__Hirosaki__r_0009_0029__University
       &amp; arg1(EVENTX20) = ENTITYX19
       &amp; isA(ENTITYX3,r_0009_0010__and)
       &amp; conj1(ENTITYX3) = ENTITYX4
@@ -380,7 +380,7 @@ fof(id_9_A_Hirodai_mission,axiom,
       &amp; conj3(ENTITYX3) = ENTITYX6
       &amp; isA(ENTITYX4,r_0009_0006__students)
       &amp; isA(ENTITYX5,r_0009_0008__faculty)
-      &amp; isA(ENTITYX6,r_0009_0011__staff_members)
+      &amp; isA(ENTITYX6,r_0009_0011__staff__r_0009_0012__members)
       &amp; isA(ENTITYX9,r_0009_0019__paths)
       &amp; genv(ENTITYX9) = ENTITYX10
       &amp; isA(ENTITYX10,z_0009_1013)
@@ -394,7 +394,7 @@ fof(id_9_A_Hirodai_mission,axiom,
       &amp; prn3(r_0009_0003__us) = ENTITYX3
       &amp; isA(ATTRIBX12,r_0009_0018__own)
       &amp; isA(ATTRIBX17,r_0009_0022__continuous)
-      &amp; isA(QUANTX2,r_0009_0001__quantificational__All)
+      &amp; isA(QUANTX2,r_0009_0001__quantificational__r_0009_0001__All)
       &amp; restriction(QUANTX2) = ENTITYX1
       &amp; isA(ENTITYX1,z_0009_1007)
       &amp; r_0009_0002__of(ENTITYX1) = r_0009_0003__us

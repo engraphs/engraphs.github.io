@@ -29,11 +29,11 @@
 &ldquo; and the chill snow will soon be here .
 <br>
 <br>
-<svg width="239pt" height="305pt"
- viewBox="0.00 0.00 238.99 305.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="256pt" height="305pt"
+ viewBox="0.00 0.00 256.45 305.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 301)">
 <title>%3</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-301 234.99,-301 234.99,4 -4,4"/>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-301 252.45,-301 252.45,4 -4,4"/>
 <!-- 0167_0004 -->
 <g id="node1" class="node">
 <title>0167_0004</title>
@@ -103,7 +103,7 @@
 <title>0167_0008&#45;&gt;0167_0009</title>
 <path fill="none" stroke="black" d="M137,-178.25C145.13,-171.96 154.68,-164.03 162.45,-156 170.06,-148.12 177.56,-138.73 183.85,-130.21"/>
 <polygon fill="black" stroke="black" points="186.7,-132.25 189.7,-122.09 181.02,-128.16 186.7,-132.25"/>
-<text text-anchor="middle" x="190.95" y="-144.8" font-family="fixed" font-size="14.00">[loc]</text>
+<text text-anchor="middle" x="211.95" y="-144.8" font-family="fixed" font-size="14.00">[prd2][loc]</text>
 </g>
 </g>
 </svg>
@@ -113,12 +113,12 @@ arc(r_0167_0005__snow,r_0167_0004__chill,attrib2).
 arc(r_0167_0006__will,r_0167_0008__be,scope).
 arc(r_0167_0008__be,r_0167_0005__snow,arg0).
 arc(r_0167_0008__be,r_0167_0007__soon,tmp5).
-arc(r_0167_0008__be,r_0167_0009__here,loc7).
+arc(r_0167_0008__be,r_0167_0009__here,prd2_loc7).
 
 </pre>
 <br>
 <pre>
-fof(id_167_A_WILDE_1_1888,axiom,
+fof(id__167_A_WILDE_1_1888,axiom,
     ? [OPERATORX5,EVENTX6,ENTITYX1,ATTRIBX2,QUALITYX3,QUALITYX4] :
       ( isA(ENTITYX1,r_0167_0005__snow)
       &amp; attrib2(ENTITYX1) = ATTRIBX2
@@ -130,7 +130,7 @@ fof(id_167_A_WILDE_1_1888,axiom,
       &amp; isA(EVENTX6,r_0167_0008__be)
       &amp; arg0(EVENTX6) = ENTITYX1
       &amp; tmp5(EVENTX6) = QUALITYX3
-      &amp; loc7(EVENTX6) = QUALITYX4 ) ).
+      &amp; prd2_loc7(EVENTX6) = QUALITYX4 ) ).
 
 
 </pre>
@@ -171,15 +171,15 @@ fof(id_167_A_WILDE_1_1888,axiom,
 <line x1="780.48" y1="183" x2="780.48" y2="214" style="stroke:#000000;stroke-width:2;"/>
 <line x1="780.96" y1="122" x2="780" y2="153" style="stroke:#000000;stroke-width:2;"/>
 <line x1="600.72" y1="61" x2="780" y2="92" style="stroke:#000000;stroke-width:2;"/>
-<text x="900.24" y="112" text-anchor="middle">BE</text>
-<text x="900.24" y="173" text-anchor="middle">be</text>
-<line x1="900.24" y1="122" x2="900.24" y2="153" style="stroke:#000000;stroke-width:2;"/>
+<text x="900.72" y="112" text-anchor="middle">BE;~La</text>
+<text x="900.72" y="173" text-anchor="middle">be</text>
+<line x1="900.72" y1="122" x2="900.72" y2="153" style="stroke:#000000;stroke-width:2;"/>
 <line x1="600.72" y1="61" x2="900" y2="92" style="stroke:#000000;stroke-width:2;"/>
-<text x="1020.96" y="112" text-anchor="middle">ADVP-LOC</text>
+<text x="1021.56" y="112" text-anchor="middle">ADVP-PRD2-LOC</text>
 <text x="1020.48" y="173" text-anchor="middle">ADV</text>
 <text x="1020.48" y="234" text-anchor="middle">here</text>
 <line x1="1020.48" y1="183" x2="1020.48" y2="214" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1020.96" y1="122" x2="1020" y2="153" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1021.56" y1="122" x2="1020" y2="153" style="stroke:#000000;stroke-width:2;"/>
 <line x1="600.72" y1="61" x2="1020" y2="92" style="stroke:#000000;stroke-width:2;"/>
 <text x="1140.48" y="112" text-anchor="middle">PUNC</text>
 <text x="1140.48" y="173" text-anchor="middle">.</text>
@@ -195,8 +195,8 @@ fof(id_167_A_WILDE_1_1888,axiom,
                   (N snow;{snow}))
           (MD will;{will})
           (ADVP-TMP (ADV soon;{soon}))
-          (BE be;{be})
-          (ADVP-LOC (ADV here;{here}))
+          (BE;~La be;{be})
+          (ADVP-PRD2-LOC (ADV here;{here}))
           (PUNC .))
   (ID 167_A_WILDE_1_1888))
 </pre>
