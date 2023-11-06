@@ -631,7 +631,7 @@ According to rumours , one of them did not die until the third volley , leading 
 <br>
 <pre>
 arc(r_0004_0002__pleaded,r_0004_0001__Byers,arg0).
-arc(r_0004_0002__pleaded,z_0004_1003,arg1).
+arc(r_0004_0002__pleaded,r_0004_1003,arg1).
 arc(r_0004_0005__believing,r_0004_0001__Byers,arg0).
 arc(r_0004_0005__believing,r_0004_0009__would,arg1).
 arc(r_0004_0008__candour,r_0004_0001__Byers,genv).
@@ -639,6 +639,7 @@ arc(r_0004_0009__would,r_0004_0010__save,scope).
 arc(r_0004_0010__save,r_0004_0001__Byers,arg1).
 arc(r_0004_0010__save,r_0004_0008__candour,arg0).
 arc(r_0004_0010__save,r_0004_0014__death__r_0004_0015__sentence,r_0004_0012__from_clr).
+arc(r_0004_1003,r_0004_0003__guilty,attrib1).
 arc(r_0004_1004__abs,r_0004_0002__pleaded,scope).
 arc(r_0004_1004__abs,r_0004_0005__believing,restriction).
 arc(r_0004_1042__abs,r_0006_0008__not,scope).
@@ -647,11 +648,11 @@ arc(r_0004_1051__cnt,r_0006_0023__fired,scope).
 arc(r_0004_1051__cnt,r_0006_0026__avoid,restriction).
 arc(r_0005_0002__being,r_0005_0003__under_age,prd2).
 arc(r_0005_0006__was,r_0005_0002__being,r_0005_0001__Despite_mod).
-arc(r_0005_0006__was,r_0005_0008__quantificational__r_0005_0008__no,catenative).
+arc(r_0005_0006__was,r_0005_0008__quantificational__no,catenative).
 arc(r_0005_0007__given,r_0004_0001__Byers,arg2).
 arc(r_0005_0007__given,r_0005_0009__representation,arg1).
-arc(r_0005_0008__quantificational__r_0005_0008__no,r_0005_0007__given,scope).
-arc(r_0005_0008__quantificational__r_0005_0008__no,r_0005_0009__representation,restriction).
+arc(r_0005_0008__quantificational__no,r_0005_0007__given,scope).
+arc(r_0005_0008__quantificational__no,r_0005_0009__representation,restriction).
 arc(r_0005_0009__representation,r_0005_0012__trial,r_0005_0010__at).
 arc(r_0005_0012__trial,r_0004_0001__Byers,genv).
 arc(r_0005_0014__and,r_0005_0006__was,conj1).
@@ -677,7 +678,6 @@ arc(r_0006_0026__avoid,r_0006_0020__firing__r_0006_0021__squad,arg0).
 arc(r_0006_0026__avoid,r_0006_0027__killing,arg1).
 arc(r_0006_0027__killing,r_0006_0020__firing__r_0006_0021__squad,arg0).
 arc(r_0006_0027__killing,r_0006_0029__youth,arg1).
-arc(z_0004_1003,r_0004_0003__guilty,attrib1).
 
 </pre>
 <br>
@@ -695,7 +695,7 @@ fof(id__4_A_Joseph_Byers__5_A_Joseph_Byers__6_A_Joseph_Byers,axiom,
       &amp; isA(EVENTX21,r_0005_0002__being)
       &amp; prd2(EVENTX21) = ATTRIBX20
       &amp; CATENATIVEX23 = QUANTX26
-      &amp; isA(QUANTX26,r_0005_0008__quantificational__r_0005_0008__no)
+      &amp; isA(QUANTX26,r_0005_0008__quantificational__no)
       &amp; restriction(QUANTX26) = ENTITYX25
       &amp; isA(ENTITYX25,r_0005_0009__representation)
       &amp; r_0005_0010__at(ENTITYX25) = ENTITYX27
@@ -720,7 +720,7 @@ fof(id__4_A_Joseph_Byers__5_A_Joseph_Byers__6_A_Joseph_Byers,axiom,
       &amp; isA(EVENTX55,r_0006_0027__killing)
       &amp; arg0(EVENTX55) = ENTITYX48
       &amp; arg1(EVENTX55) = ENTITYX54
-      &amp; isA(ENTITYX1,z_0004_1003)
+      &amp; isA(ENTITYX1,r_0004_1003)
       &amp; attrib1(ENTITYX1) = ATTRIBX2
       &amp; isA(ENTITYX7,r_0004_0008__candour)
       &amp; genv(ENTITYX7) = BYERSX8

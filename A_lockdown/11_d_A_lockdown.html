@@ -1285,6 +1285,17 @@ But then I know everyone probably has a justification for their lockdown breache
 arc(r_0060_0003__formed,r_0060_0002__We,arg0).
 arc(r_0060_0003__formed,r_0060_0005__isolation__r_0060_0006__bubble,arg1).
 arc(r_0060_0003__formed,r_0060_0008__two__r_0060_0009__friends,r_0060_0007__with_com).
+arc(r_0060_1019,r_0061_0015__friend,genv).
+arc(r_0060_1019,r_0061_0023__own,attrib2).
+arc(r_0060_1020,r_0060_1019,genv).
+arc(r_0060_1028,r_0061_0026__friend,genv).
+arc(r_0060_1028,r_0061_0035__own,attrib2).
+arc(r_0060_1029,r_0060_1028,genv).
+arc(r_0060_1086,r_0065_0007__people,genv).
+arc(r_0060_1086,r_0065_0012__own,attrib2).
+arc(r_0060_1087,r_0060_1086,genv).
+arc(r_0060_1109,r_0065_0007__people,r_0060_1107).
+arc(r_0060_1123,r_0066_0021__pang,r_0066_0019__of).
 arc(r_0061_0002__live,r_0061_0001__I,arg0).
 arc(r_0061_0002__live,r_0061_0005__flat,r_0061_0003__in_loc).
 arc(r_0061_0005__flat,r_0061_0008__housemate,r_0061_0006__with).
@@ -1294,14 +1305,14 @@ arc(r_0061_0011__has,r_0061_0008__housemate,arg0).
 arc(r_0061_0011__has,r_0061_0024__and,arg1).
 arc(r_0061_0014__close,r_0061_0013__very,quality1).
 arc(r_0061_0015__friend,r_0061_0014__close,attrib2).
+arc(r_0061_0017__lives,r_0060_1020,r_0061_0021__on_mnr).
 arc(r_0061_0017__lives,r_0061_0015__friend,arg0).
 arc(r_0061_0017__lives,r_0061_0020__road,dir).
-arc(r_0061_0017__lives,z_0060_1020,r_0061_0021__on_mnr).
 arc(r_0061_0024__and,r_0061_0015__friend,conj1).
 arc(r_0061_0024__and,r_0061_0026__friend,conj2).
+arc(r_0061_0028__lives,r_0060_1029,r_0061_0032__also__r_0061_0033__on_mnr).
 arc(r_0061_0028__lives,r_0061_0026__friend,arg0).
 arc(r_0061_0028__lives,r_0061_0031__road,dir).
-arc(r_0061_0028__lives,z_0060_1029,r_0061_0032__also__r_0061_0033__on_mnr).
 arc(r_0061_0037__so,r_0061_0039__were,scope).
 arc(r_0061_0039__were,r_0061_0040__doing,catenative).
 arc(r_0061_0040__doing,r_0061_0038__we,arg0).
@@ -1342,8 +1353,8 @@ arc(r_0065_0002__sort_of,r_0065_0005__because_cnt,scope).
 arc(r_0065_0003__seemed,r_0065_0004__justified,prd2).
 arc(r_0065_0005__because_cnt,r_0065_0003__seemed,scope).
 arc(r_0065_0005__because_cnt,r_0065_0014__think,restriction).
+arc(r_0065_0009__live,r_0060_1087,r_0065_0010__on_mnr).
 arc(r_0065_0009__live,r_0065_0007__people,arg0).
-arc(r_0065_0009__live,z_0060_1087,r_0065_0010__on_mnr).
 arc(r_0065_0014__think,r_0061_0001__I,arg0).
 arc(r_0065_0014__think,r_0065_0007__people,r_0065_0006__for_rst).
 arc(r_0065_0014__think,r_0065_0016___apos_s,arg1).
@@ -1353,32 +1364,21 @@ arc(r_0065_0020__hard,r_0065_0017__really,quality1).
 arc(r_0065_0020__hard,r_0065_0019__really,quality3).
 arc(r_0066_0002__then,r_0066_0004__know,scope).
 arc(r_0066_0004__know,r_0061_0001__I,arg0).
-arc(r_0066_0004__know,r_0066_0005__quantificational__r_0066_0005__everyone,arg1).
-arc(r_0066_0005__quantificational__r_0066_0005__everyone,r_0066_0006__probably,scope).
-arc(r_0066_0005__quantificational__r_0066_0005__everyone,z_0060_1109,restriction).
+arc(r_0066_0004__know,r_0066_0005__quantificational__everyone,arg1).
+arc(r_0066_0005__quantificational__everyone,r_0060_1109,restriction).
+arc(r_0066_0005__quantificational__everyone,r_0066_0006__probably,scope).
 arc(r_0066_0006__probably,r_0066_0007__has,scope).
+arc(r_0066_0007__has,r_0060_1109,arg0).
 arc(r_0066_0007__has,r_0066_0009__justification,arg1).
-arc(r_0066_0007__has,z_0060_1109,arg0).
 arc(r_0066_0009__justification,r_0066_0012__lockdown__r_0066_0013__breaches,r_0066_0010__for).
 arc(r_0066_0012__lockdown__r_0066_0013__breaches,r_0065_0007__people,genv).
 arc(r_0066_0014__so,r_0066_0016__have,scope).
-arc(r_0066_0016__have,r_0066_0018__quantificational__r_0066_0018__a_bit,catenative).
+arc(r_0066_0016__have,r_0066_0018__quantificational__a_bit,catenative).
+arc(r_0066_0017__had,r_0060_1123,arg1).
 arc(r_0066_0017__had,r_0061_0001__I,arg0).
-arc(r_0066_0017__had,z_0060_1123,arg1).
-arc(r_0066_0018__quantificational__r_0066_0018__a_bit,r_0066_0017__had,scope).
-arc(r_0066_0018__quantificational__r_0066_0018__a_bit,z_0060_1123,restriction).
+arc(r_0066_0018__quantificational__a_bit,r_0060_1123,restriction).
+arc(r_0066_0018__quantificational__a_bit,r_0066_0017__had,scope).
 arc(r_0066_0021__pang,r_0066_0023__guilt,r_0066_0022__of).
-arc(z_0060_1019,r_0061_0015__friend,genv).
-arc(z_0060_1019,r_0061_0023__own,attrib2).
-arc(z_0060_1020,z_0060_1019,genv).
-arc(z_0060_1028,r_0061_0026__friend,genv).
-arc(z_0060_1028,r_0061_0035__own,attrib2).
-arc(z_0060_1029,z_0060_1028,genv).
-arc(z_0060_1086,r_0065_0007__people,genv).
-arc(z_0060_1086,r_0065_0012__own,attrib2).
-arc(z_0060_1087,z_0060_1086,genv).
-arc(z_0060_1109,r_0065_0007__people,z_0060_1107).
-arc(z_0060_1123,r_0066_0021__pang,r_0066_0019__of).
 
 </pre>
 <br>
@@ -1398,10 +1398,10 @@ fof(id__60_A_lockdown,axiom,
       &amp; isA(EVENTX96,r_0065_0016___apos_s)
       &amp; prd2(EVENTX96) = ATTRIBX92
       &amp; STATEX103 = QUANTX105
-      &amp; isA(QUANTX105,r_0066_0005__quantificational__r_0066_0005__everyone)
+      &amp; isA(QUANTX105,r_0066_0005__quantificational__everyone)
       &amp; restriction(QUANTX105) = ENTITYX104
-      &amp; isA(ENTITYX104,z_0060_1109)
-      &amp; z_0060_1107(ENTITYX104) = PERSONSX108
+      &amp; isA(ENTITYX104,r_0060_1109)
+      &amp; r_0060_1107(ENTITYX104) = PERSONSX108
       &amp; scope(QUANTX105) = OPERATORX110
       &amp; isA(OPERATORX110,r_0066_0006__probably)
       &amp; scope(OPERATORX110) = EVENTX114
@@ -1409,9 +1409,9 @@ fof(id__60_A_lockdown,axiom,
       &amp; arg0(EVENTX114) = ENTITYX104
       &amp; arg1(EVENTX114) = ENTITYX111
       &amp; CATENATIVEX118 = QUANTX120
-      &amp; isA(QUANTX120,r_0066_0018__quantificational__r_0066_0018__a_bit)
+      &amp; isA(QUANTX120,r_0066_0018__quantificational__a_bit)
       &amp; restriction(QUANTX120) = ENTITYX119
-      &amp; isA(ENTITYX119,z_0060_1123)
+      &amp; isA(ENTITYX119,r_0060_1123)
       &amp; r_0066_0019__of(ENTITYX119) = ENTITYX121
       &amp; scope(QUANTX120) = EVENTX124
       &amp; isA(EVENTX124,r_0066_0017__had)
@@ -1433,9 +1433,9 @@ fof(id__60_A_lockdown,axiom,
       &amp; isA(FRIEND_AX11,r_0061_0015__friend)
       &amp; attrib2(FRIEND_AX11) = ATTRIBX12
       &amp; isA(ENTITYX14,r_0061_0020__road)
-      &amp; isA(ENTITYX15,z_0060_1020)
+      &amp; isA(ENTITYX15,r_0060_1020)
       &amp; genv(ENTITYX15) = ENTITYX16
-      &amp; isA(ENTITYX16,z_0060_1019)
+      &amp; isA(ENTITYX16,r_0060_1019)
       &amp; genv(ENTITYX16) = FRIEND_AX17
       &amp; attrib2(ENTITYX16) = ATTRIBX18
       &amp; FRIEND_AX17 = FRIEND_AX11
@@ -1445,9 +1445,9 @@ fof(id__60_A_lockdown,axiom,
       &amp; r_0061_0032__also__r_0061_0033__on_mnr(EVENTX30) = ENTITYX24
       &amp; isA(FRIEND_BX22,r_0061_0026__friend)
       &amp; isA(ENTITYX23,r_0061_0031__road)
-      &amp; isA(ENTITYX24,z_0060_1029)
+      &amp; isA(ENTITYX24,r_0060_1029)
       &amp; genv(ENTITYX24) = ENTITYX25
-      &amp; isA(ENTITYX25,z_0060_1028)
+      &amp; isA(ENTITYX25,r_0060_1028)
       &amp; genv(ENTITYX25) = FRIEND_BX26
       &amp; attrib2(ENTITYX25) = ATTRIBX27
       &amp; FRIEND_BX26 = FRIEND_BX22
@@ -1484,9 +1484,9 @@ fof(id__60_A_lockdown,axiom,
       &amp; arg0(EVENTX88) = PERSONSX81
       &amp; r_0065_0010__on_mnr(EVENTX88) = ENTITYX82
       &amp; isA(PERSONSX81,r_0065_0007__people)
-      &amp; isA(ENTITYX82,z_0060_1087)
+      &amp; isA(ENTITYX82,r_0060_1087)
       &amp; genv(ENTITYX82) = ENTITYX83
-      &amp; isA(ENTITYX83,z_0060_1086)
+      &amp; isA(ENTITYX83,r_0060_1086)
       &amp; genv(ENTITYX83) = PERSONSX84
       &amp; attrib2(ENTITYX83) = ATTRIBX85
       &amp; PERSONSX84 = PERSONSX81

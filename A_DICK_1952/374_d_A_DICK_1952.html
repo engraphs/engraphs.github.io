@@ -535,11 +535,14 @@ arc(r_0488_0018__someplace,r_0488_0009__they,r_0488_0020__inside).
 arc(r_0488_0026__treasure,r_0488_0009__they,genv).
 arc(r_0488_0026__treasure,r_0488_0025__real,attrib2).
 arc(r_0488_0027__was,r_0488_0026__treasure,arg0).
-arc(r_0488_0027__was,z_0488_1025,prd2).
+arc(r_0488_0027__was,r_0488_1025,prd2).
 arc(r_0488_0032__and,r_0488_0009__they,genv).
 arc(r_0488_0032__and,r_0488_0031__books,conj1).
 arc(r_0488_0032__and,r_0488_0033__pictures,conj2).
 arc(r_0488_0036__myths,r_0488_0009__they,genv).
+arc(r_0488_1024,r_0488_0032__and,conj1).
+arc(r_0488_1024,r_0488_0036__myths,conj2).
+arc(r_0488_1025,r_0488_1024,prn3).
 arc(r_0489_0001__Even__r_0489_0002__after_tmp,r_0489_0010__were,restriction).
 arc(r_0489_0001__Even__r_0489_0002__after_tmp,r_0489_0013__probably,scope).
 arc(r_0489_0005__cities,r_0489_0004__big,attrib1).
@@ -558,9 +561,6 @@ arc(r_0489_0018__and,r_0489_0016__come,conj1).
 arc(r_0489_0018__and,r_0489_0019__find,conj2).
 arc(r_0489_0019__find,r_0488_0009__they,arg0).
 arc(r_0489_0019__find,r_0489_0020__this,arg1).
-arc(z_0488_1024,r_0488_0032__and,conj1).
-arc(z_0488_1024,r_0488_0036__myths,conj2).
-arc(z_0488_1025,z_0488_1024,prn3).
 
 </pre>
 <br>
@@ -599,9 +599,9 @@ fof(id__488_A_DICK_1952__489_A_DICK_1952,axiom,
       &amp; attrib2(ENTITYX13) = ATTRIBX15
       &amp; ( INHABITANTSX14 = INHABITANTSX8
         | INHABITANTSX14 = r_0488_0009__they )
-      &amp; isA(ENTITYX16,z_0488_1025)
+      &amp; isA(ENTITYX16,r_0488_1025)
       &amp; prn3(ENTITYX16) = ENTITYX17
-      &amp; isA(ENTITYX17,z_0488_1024)
+      &amp; isA(ENTITYX17,r_0488_1024)
       &amp; conj1(ENTITYX17) = ENTITYX18
       &amp; conj2(ENTITYX17) = ENTITYX22
       &amp; isA(ENTITYX18,r_0488_0032__and)

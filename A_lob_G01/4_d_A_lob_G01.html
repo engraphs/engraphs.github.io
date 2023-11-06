@@ -1568,8 +1568,12 @@ The &lsquo; ribald &rsquo; Londoners , who cursed Gaunt as the murderer of Hawle
 <pre>
 arc(r_0005_0006__sailed,r_0005_0003__at_last,tmp3).
 arc(r_0005_0006__sailed,r_0005_0005__Gaunt,arg0).
+arc(r_0005_1047__abs,r_0005_1058,restriction).
 arc(r_0005_1047__abs,r_0008_0027__attempted,scope).
-arc(r_0005_1047__abs,z_0005_1058,restriction).
+arc(r_0005_1058,r_0005_0005__Gaunt,arg0).
+arc(r_0005_1058,r_0008_0016__afraid,prd).
+arc(r_0005_1103,r_0010_0033__it,r_0010_0032__with_com).
+arc(r_0005_1103,r_0010_0036__hopes,arg0).
 arc(r_0006_0001__Opposing,r_0005_0005__Gaunt,arg1).
 arc(r_0006_0001__Opposing,r_0006_0006__Admiral,arg0).
 arc(r_0006_0003__was,r_0006_0001__Opposing,catenative).
@@ -1627,14 +1631,14 @@ arc(r_0009_0021__skill,r_0009_0007__mining__r_0009_0008__operations,r_0009_0009_
 arc(r_0009_0021__skill,r_0009_0020__considerable,attrib1).
 arc(r_0009_0021__skill,r_0009_0024__siege,r_0009_0022__at).
 arc(r_0009_0024__siege,r_0009_0026__Limoges,r_0009_0025__of).
-arc(r_0010_0001__When_tmp,r_0010_0002__quantificational__r_0010_0002__all,restriction).
+arc(r_0010_0001__When_tmp,r_0010_0002__quantificational__all,restriction).
 arc(r_0010_0001__When_tmp,r_0010_0011__surprised,scope).
-arc(r_0010_0002__quantificational__r_0010_0002__all,r_0010_0003__seemed,scope).
-arc(r_0010_0002__quantificational__r_0010_0002__all,z_0005_1082,restriction).
+arc(r_0010_0002__quantificational__all,r_0005_1082,restriction).
+arc(r_0010_0002__quantificational__all,r_0010_0003__seemed,scope).
 arc(r_0010_0003__seemed,r_0010_0005__be,catenative).
 arc(r_0010_0005__be,r_0010_0006__going,catenative).
+arc(r_0010_0006__going,r_0005_1082,arg0).
 arc(r_0010_0006__going,r_0010_0007__well,mnr2).
-arc(r_0010_0006__going,z_0005_1082,arg0).
 arc(r_0010_0011__surprised,r_0010_0010__sortie,arg0).
 arc(r_0010_0011__surprised,r_0010_0013__Earl,arg1).
 arc(r_0010_0013__Earl,r_0010_0015__Arundel,r_0010_0014__of).
@@ -1643,8 +1647,8 @@ arc(r_0010_0021__had,r_0010_0020__moment,r_0010_0018__at_tmp).
 arc(r_0010_0021__had,r_0010_0022__charge,arg1).
 arc(r_0010_0022__charge,r_0010_0025__mine,r_0010_0023__of).
 arc(r_0010_0029__collapsed,r_0010_0028__mine,arg0).
+arc(r_0010_0031__and,r_0005_1103,conj2).
 arc(r_0010_0031__and,r_0010_0029__collapsed,conj1).
-arc(r_0010_0031__and,z_0005_1103,conj2).
 arc(r_0010_0036__hopes,r_0005_0005__Gaunt,genv).
 arc(r_0010_0036__hopes,r_0010_0039__and,r_0010_0037__of).
 arc(r_0010_0039__and,r_0010_0038__fame,conj1).
@@ -1681,10 +1685,6 @@ arc(r_0012_0030__failure,r_0012_0038__success,r_0012_0035__with).
 arc(r_0012_0034__duke,r_0012_0033__subsidized,attrib2).
 arc(r_0012_0038__success,r_0012_0037__independent,attrib2).
 arc(r_0012_0038__success,r_0012_0041__London__r_0012_0042__citizen,r_0012_0039__of).
-arc(z_0005_1058,r_0005_0005__Gaunt,arg0).
-arc(z_0005_1058,r_0008_0016__afraid,prd).
-arc(z_0005_1103,r_0010_0033__it,r_0010_0032__with_com).
-arc(z_0005_1103,r_0010_0036__hopes,arg0).
 
 </pre>
 <br>
@@ -1901,7 +1901,7 @@ fof(id__5_A_lob_G01__6_A_lob_G01__7_A_lob_G01__8_A_lob_G01__9_A_lob_G01__10_A_lo
       &amp; conj2(CONJX61) = CONNX48
       &amp; isA(CONNX48,r_0005_1047__abs)
       &amp; restriction(CONNX48) = EVENTX59
-      &amp; isA(EVENTX59,z_0005_1058)
+      &amp; isA(EVENTX59,r_0005_1058)
       &amp; arg0(EVENTX59) = GAUNTX41
       &amp; prd(EVENTX59) = ATTRIBX49
       &amp; scope(CONNX48) = BESIEGEX60
@@ -1915,9 +1915,9 @@ fof(id__5_A_lob_G01__6_A_lob_G01__7_A_lob_G01__8_A_lob_G01__9_A_lob_G01__10_A_lo
       &amp; arg1(EVENTX76) = ENTITYX63
       &amp; isA(CONNX79,r_0010_0001__When_tmp)
       &amp; restriction(CONNX79) = QUANTX81
-      &amp; isA(QUANTX81,r_0010_0002__quantificational__r_0010_0002__all)
+      &amp; isA(QUANTX81,r_0010_0002__quantificational__all)
       &amp; restriction(QUANTX81) = ENTITYX80
-      &amp; isA(ENTITYX80,z_0005_1082)
+      &amp; isA(ENTITYX80,r_0005_1082)
       &amp; scope(QUANTX81) = EVENTX88
       &amp; isA(EVENTX88,r_0010_0003__seemed)
       &amp; catenative(EVENTX88) = STATEX83
@@ -1932,7 +1932,7 @@ fof(id__5_A_lob_G01__6_A_lob_G01__7_A_lob_G01__8_A_lob_G01__9_A_lob_G01__10_A_lo
       &amp; arg0(EVENTX97) = ENTITYX96
       &amp; arg0(EVENTX97) = ENTITYX96
       &amp; conj2(CONJX105) = EVENTX104
-      &amp; isA(EVENTX104,z_0005_1103)
+      &amp; isA(EVENTX104,r_0005_1103)
       &amp; arg0(EVENTX104) = ENTITYX98
       &amp; r_0010_0032__with_com(EVENTX104) = r_0010_0033__it
       &amp; arg0(EVENTX104) = ENTITYX98

@@ -1617,10 +1617,12 @@ There are many works that even experts can not agree if they are really his work
 </svg>
 <br>
 <pre>
+arc(r_0001_1005,r_0001_0001__Sesshu,r_0001_1004).
 arc(r_0001_1008__abs,r_0002_0001__Known,restriction).
 arc(r_0001_1008__abs,r_0002_0030__and,scope).
 arc(r_0001_1042__abs,r_0005_0001__Born,restriction).
 arc(r_0001_1042__abs,r_0005_0007__moved,scope).
+arc(r_0001_1068,r_0007_0004__many,attrib1).
 arc(r_0001_1129__question,r_0011_0011__if__r_0011_0017__or_r_0011_0018__not,scope).
 arc(r_0002_0001__Known,r_0001_0001__Sesshu,arg1).
 arc(r_0002_0001__Known,r_0002_0003__Sesshu,r_0002_0002__as_prd).
@@ -1670,10 +1672,10 @@ arc(r_0006_0011__learned,r_0006_0001__Later,tmp1).
 arc(r_0006_0011__learned,r_0006_0013__ink__r_0006_0014__painting,arg1).
 arc(r_0006_0013__ink__r_0006_0014__painting,r_0006_0012__Chinese,attrib1).
 arc(r_0007_0002__works,r_0001_0001__Sesshu,genv).
+arc(r_0007_0003__were,r_0001_1068,prd2).
 arc(r_0007_0003__were,r_0007_0002__works,arg0).
-arc(r_0007_0003__were,z_0001_1068,prd2).
+arc(r_0007_0006__including,r_0001_1068,arg0).
 arc(r_0007_0006__including,r_0007_0007__not__r_0007_0008__only_r_0007_0013__but_r_0007_0014__also,arg1).
-arc(r_0007_0006__including,z_0001_1068,arg0).
 arc(r_0007_0007__not__r_0007_0008__only_r_0007_0013__but_r_0007_0014__also,r_0007_0010__landscape_r_0007_0011__paintings,conj1).
 arc(r_0007_0007__not__r_0007_0008__only_r_0007_0013__but_r_0007_0014__also,r_0007_0016__and,conj2).
 arc(r_0007_0010__landscape__r_0007_0011__paintings,r_0007_0009__Chinese_style,attrib1).
@@ -1735,8 +1737,6 @@ arc(r_0011_0013__are,r_0011_0004__works,arg0).
 arc(r_0011_0013__are,r_0011_0016__work,prd2).
 arc(r_0011_0014__really,r_0011_0013__are,scope).
 arc(r_0011_0016__work,r_0001_0001__Sesshu,genv).
-arc(z_0001_1005,r_0001_0001__Sesshu,z_0001_1004).
-arc(z_0001_1068,r_0007_0004__many,attrib1).
 
 </pre>
 <br>
@@ -1824,7 +1824,7 @@ fof(id__1_A_KYOTO_1,axiom,
       &amp; isA(EVENTX67,r_0007_0006__including)
       &amp; arg0(EVENTX67) = ENTITYX56
       &amp; arg1(EVENTX67) = ENTITYX58
-      &amp; isA(ENTITYX56,z_0001_1068)
+      &amp; isA(ENTITYX56,r_0001_1068)
       &amp; attrib1(ENTITYX56) = ATTRIBX57
       &amp; isA(ENTITYX58,r_0007_0007__not__r_0007_0008__only_r_0007_0013__but_r_0007_0014__also)
       &amp; conj1(ENTITYX58) = ENTITYX59
@@ -1928,8 +1928,8 @@ fof(id__1_A_KYOTO_1,axiom,
       &amp; isA(QUALITYX46,r_0006_0001__Later)
       &amp; isA(QUALITYX78,r_0008_0010__extremely)
       &amp; isA(QUALITYX105,r_0010_0008__great)
-      &amp; isA(EVENTX6,z_0001_1005)
-      &amp; z_0001_1004(EVENTX6) = r_0001_0001__Sesshu
+      &amp; isA(EVENTX6,r_0001_1005)
+      &amp; r_0001_1004(EVENTX6) = r_0001_0001__Sesshu
       &amp; isA(CONNX9,r_0001_1008__abs)
       &amp; restriction(CONNX9) = EVENTX12
       &amp; isA(EVENTX12,r_0002_0001__Known)

@@ -286,21 +286,21 @@ In 1996 the WHO found that much of the population existed in a state of &ldquo; 
 arc(r_0006_0003__Gulf__r_0006_0004__War,r_0006_0002__Persian,attrib2).
 arc(r_0006_0005__destroyed,r_0006_0003__Gulf__r_0006_0004__War,arg0).
 arc(r_0006_0005__destroyed,r_0006_0016__report,r_0006_0014__according_to_mod).
-arc(r_0006_0005__destroyed,z_0006_1008,arg1).
+arc(r_0006_0005__destroyed,r_0006_1008,arg1).
 arc(r_0006_0012__infrastructure,r_0006_0009__country,genv).
 arc(r_0006_0012__infrastructure,r_0006_0011__medical,attrib2).
 arc(r_0006_0016__report,r_0006_0019__World__r_0006_0020__Health_r_0006_0021__Organization,r_0006_0017__by).
+arc(r_0006_1008,r_0006_0006__much,attrib1).
+arc(r_0006_1008,r_0006_0012__infrastructure,r_0006_0007__of).
+arc(r_0006_1018,r_0007_0007__much,attrib1).
+arc(r_0006_1018,r_0007_0010__population,r_0007_0008__of).
 arc(r_0007_0005__found,r_0006_0019__World__r_0006_0020__Health_r_0006_0021__Organization,arg0).
 arc(r_0007_0005__found,r_0007_0002__1996,r_0007_0001__In_tmp).
 arc(r_0007_0005__found,r_0007_0011__existed,arg1).
+arc(r_0007_0011__existed,r_0006_1018,arg0).
 arc(r_0007_0011__existed,r_0007_0014__state,r_0007_0012__in_mnr).
-arc(r_0007_0011__existed,z_0006_1018,arg0).
 arc(r_0007_0014__state,r_0007_0018__starvation,r_0007_0015__of).
 arc(r_0007_0018__starvation,r_0007_0017__semi,attrib1).
-arc(z_0006_1008,r_0006_0006__much,attrib1).
-arc(z_0006_1008,r_0006_0012__infrastructure,r_0006_0007__of).
-arc(z_0006_1018,r_0007_0007__much,attrib1).
-arc(z_0006_1018,r_0007_0010__population,r_0007_0008__of).
 
 </pre>
 <br>
@@ -313,7 +313,7 @@ fof(id__6_A_ANC_nyt20000410__7_A_ANC_nyt20000410,axiom,
       &amp; r_0007_0012__in_mnr(EVENTX22) = ENTITYX19
       &amp; isA(ENTITYX1,r_0006_0003__Gulf__r_0006_0004__War)
       &amp; attrib2(ENTITYX1) = ATTRIBX2
-      &amp; isA(ENTITYX3,z_0006_1008)
+      &amp; isA(ENTITYX3,r_0006_1008)
       &amp; attrib1(ENTITYX3) = ATTRIBX4
       &amp; r_0006_0007__of(ENTITYX3) = ENTITYX5
       &amp; isA(ENTITYX5,r_0006_0012__infrastructure)
@@ -325,7 +325,7 @@ fof(id__6_A_ANC_nyt20000410__7_A_ANC_nyt20000410,axiom,
       &amp; isA(WHOX10,r_0006_0019__World__r_0006_0020__Health_r_0006_0021__Organization)
       &amp; isA(ENTITYX12,r_0007_0002__1996)
       &amp; WHOX13 = WHOX10
-      &amp; isA(ENTITYX15,z_0006_1018)
+      &amp; isA(ENTITYX15,r_0006_1018)
       &amp; attrib1(ENTITYX15) = ATTRIBX16
       &amp; r_0007_0008__of(ENTITYX15) = ENTITYX17
       &amp; isA(ENTITYX17,r_0007_0010__population)

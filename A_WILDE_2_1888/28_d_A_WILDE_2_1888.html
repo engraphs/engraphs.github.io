@@ -988,6 +988,8 @@ arc(r_0049_0012__was,r_0049_0013__still,tmp5).
 arc(r_0049_0012__was,r_0049_0014__winter,prd2).
 arc(r_0049_1073__utterance,r_0049_1077__imperative,part1).
 arc(r_0049_1077__imperative,r_0053_0002__Climb,scope).
+arc(r_0049_1097,r_0049_1099,mnr).
+arc(r_0049_1097,r_0051_0016__tree,arg0).
 arc(r_0050_0002__was,r_0049_0009__one__r_0049_0010__corner,arg0).
 arc(r_0050_0002__was,r_0050_0005__corner,prd2).
 arc(r_0050_0005__corner,r_0050_0004__farthest,attrib2).
@@ -1013,7 +1015,7 @@ arc(r_0051_0021__wandering,r_0050_0017__boy,arg0).
 arc(r_0051_0021__wandering,r_0051_0016__tree,r_0051_0022__all__r_0051_0023__round_dir).
 arc(r_0051_0026__crying,r_0050_0017__boy,arg0).
 arc(r_0051_0026__crying,r_0051_0027__bitterly,mnr2).
-arc(r_0052_0003__tree,r_0051_0016__tree,z_0049_1051).
+arc(r_0052_0003__tree,r_0051_0016__tree,r_0049_1051).
 arc(r_0052_0003__tree,r_0052_0002__poor,attrib3).
 arc(r_0052_0004__was,r_0052_0003__tree,arg0).
 arc(r_0052_0004__was,r_0052_0007__covered,prd2).
@@ -1033,7 +1035,7 @@ arc(r_0052_0020__roaring,r_0051_0016__tree,r_0052_0021__above_loc).
 arc(r_0052_0020__roaring,r_0052_0015__North__r_0052_0016__Wind,arg0).
 arc(r_0053_0002__Climb,r_0053_0003__up,dir3).
 arc(r_0053_0002__Climb,r_0053_0006__boy,voc).
-arc(r_0053_0006__boy,r_0050_0017__boy,z_0049_1080).
+arc(r_0053_0006__boy,r_0050_0017__boy,r_0049_1080).
 arc(r_0053_0006__boy,r_0053_0005__little,attrib2).
 arc(r_0053_0009__said,r_0049_1073__utterance,arg1).
 arc(r_0053_0009__said,r_0051_0016__tree,arg0).
@@ -1044,16 +1046,14 @@ arc(r_0053_0015__bent,r_0053_0017__branches,arg1).
 arc(r_0053_0015__bent,r_0053_0018__down,dir4).
 arc(r_0053_0015__bent,r_0053_0020__low,mnr5).
 arc(r_0053_0017__branches,r_0051_0016__tree,genv).
+arc(r_0053_0020__low,r_0049_1099,r_0053_0021__as).
 arc(r_0053_0020__low,r_0053_0019__as,quality1).
-arc(r_0053_0020__low,z_0049_1099,r_0053_0021__as).
-arc(r_0053_0023__could,z_0049_1097,scope).
+arc(r_0053_0023__could,r_0049_1097,scope).
 arc(r_0053_0025__but,r_0053_0013__and,conj1).
 arc(r_0053_0025__but,r_0053_0028__was,conj2).
 arc(r_0053_0028__was,r_0050_0017__boy,arg0).
 arc(r_0053_0028__was,r_0053_0030__tiny,prd2).
 arc(r_0053_0030__tiny,r_0053_0029__too,quality1).
-arc(z_0049_1097,r_0051_0016__tree,arg0).
-arc(z_0049_1097,z_0049_1099,mnr).
 
 </pre>
 <br>
@@ -1117,7 +1117,7 @@ fof(id__49_A_WILDE_2_1888__50_A_WILDE_2_1888__51_A_WILDE_2_1888__52_A_WILDE_2_18
       &amp; LITTLE_BOYX39 = LITTLE_BOYX20
       &amp; TREEX41 = TREEX34
       &amp; isA(ENTITYX49,r_0052_0003__tree)
-      &amp; z_0049_1051(ENTITYX49) = TREEX52
+      &amp; r_0049_1051(ENTITYX49) = TREEX52
       &amp; attrib3(ENTITYX49) = ATTRIBX53
       &amp; TREEX52 = TREEX34
       &amp; isA(ENTITYX57,r_0052_0010__and)
@@ -1128,7 +1128,7 @@ fof(id__49_A_WILDE_2_1888__50_A_WILDE_2_1888__51_A_WILDE_2_1888__52_A_WILDE_2_18
       &amp; isA(ENTITYX61,r_0052_0015__North__r_0052_0016__Wind)
       &amp; TREEX63 = TREEX34
       &amp; isA(ENTITYX78,r_0053_0006__boy)
-      &amp; z_0049_1080(ENTITYX78) = LITTLE_BOYX81
+      &amp; r_0049_1080(ENTITYX78) = LITTLE_BOYX81
       &amp; attrib2(ENTITYX78) = ATTRIBX82
       &amp; LITTLE_BOYX81 = LITTLE_BOYX20
       &amp; TREEX86 = TREEX34
@@ -1139,10 +1139,10 @@ fof(id__49_A_WILDE_2_1888__50_A_WILDE_2_1888__51_A_WILDE_2_1888__52_A_WILDE_2_18
         | TREEX90 = TREEX34 )
       &amp; isA(OPERATORX96,r_0053_0023__could)
       &amp; scope(OPERATORX96) = EVENTX98
-      &amp; isA(EVENTX98,z_0049_1097)
+      &amp; isA(EVENTX98,r_0049_1097)
       &amp; mnr(EVENTX98) = ENTITYX94
       &amp; arg0(EVENTX98) = TREEX95
-      &amp; isA(ENTITYX94,z_0049_1099)
+      &amp; isA(ENTITYX94,r_0049_1099)
       &amp; ( TREEX95 = TREEX88
         | TREEX95 = TREEX34 )
       &amp; LITTLE_BOYX102 = LITTLE_BOYX20

@@ -302,22 +302,22 @@ arc(r_0102_0004__lifetime,r_0102_0008__and,r_0102_0005__of).
 arc(r_0102_0006__helping,r_0102_0007__others,arg1).
 arc(r_0102_0008__and,r_0102_0006__helping,conj1).
 arc(r_0102_0008__and,r_0102_0009__healing,conj2).
-arc(r_0102_0009__healing,z_0102_1009,arg1).
+arc(r_0102_0009__healing,r_0102_1009,arg1).
 arc(r_0102_0015__opinion,r_0102_0013__my,genv).
 arc(r_0102_0015__opinion,r_0102_0014__considered,attrib2).
 arc(r_0102_0016__is,r_0102_0004__lifetime,r_0102_0002__After_tmp).
 arc(r_0102_0016__is,r_0102_0015__opinion,arg0).
-arc(r_0102_0016__is,r_0102_0018__quantificational__r_0102_0018__anybody,prd2).
-arc(r_0102_0018__quantificational__r_0102_0018__anybody,r_0102_0023__is,scope).
-arc(r_0102_0018__quantificational__r_0102_0018__anybody,z_0102_1020,restriction).
+arc(r_0102_0016__is,r_0102_0018__quantificational__anybody,prd2).
+arc(r_0102_0018__quantificational__anybody,r_0102_0023__is,scope).
+arc(r_0102_0018__quantificational__anybody,r_0102_1020,restriction).
 arc(r_0102_0019__supporting,r_0102_0022__charges,arg1).
-arc(r_0102_0019__supporting,z_0102_1020,arg0).
+arc(r_0102_0019__supporting,r_0102_1020,arg0).
 arc(r_0102_0022__charges,r_0102_0021__increased,attrib2).
-arc(r_0102_0023__is,z_0102_1020,arg0).
-arc(r_0102_0023__is,z_0102_1024,prd2).
-arc(z_0102_1009,r_0102_0011__sick,attrib2).
-arc(z_0102_1024,r_0102_0025__wicked,attrib2).
-arc(z_0102_1024,r_0102_0027__old,attrib4).
+arc(r_0102_0023__is,r_0102_1020,arg0).
+arc(r_0102_0023__is,r_0102_1024,prd2).
+arc(r_0102_1009,r_0102_0011__sick,attrib2).
+arc(r_0102_1024,r_0102_0025__wicked,attrib2).
+arc(r_0102_1024,r_0102_0027__old,attrib4).
 
 </pre>
 <br>
@@ -333,11 +333,11 @@ fof(id__102_A_lob_A01,axiom,
       &amp; isA(EVENTX10,r_0102_0009__healing)
       &amp; arg1(EVENTX10) = ENTITYX7
       &amp; STATEX14 = QUANTX16
-      &amp; isA(QUANTX16,r_0102_0018__quantificational__r_0102_0018__anybody)
+      &amp; isA(QUANTX16,r_0102_0018__quantificational__anybody)
       &amp; isA(EVENTX19,r_0102_0019__supporting)
       &amp; arg0(EVENTX19) = ENTITYX15
       &amp; arg1(EVENTX19) = ENTITYX17
-      &amp; isA(ENTITYX15,z_0102_1020)
+      &amp; isA(ENTITYX15,r_0102_1020)
       &amp; restriction(QUANTX16) = ENTITYX15
       &amp; scope(QUANTX16) = EVENTX25
       &amp; isA(EVENTX25,r_0102_0023__is)
@@ -346,14 +346,14 @@ fof(id__102_A_lob_A01,axiom,
       &amp; isA(ENTITYX1,r_0102_0004__lifetime)
       &amp; r_0102_0005__of(ENTITYX1) = EVENTX2
       &amp; isA(ENTITYX5,r_0102_0007__others)
-      &amp; isA(ENTITYX7,z_0102_1009)
+      &amp; isA(ENTITYX7,r_0102_1009)
       &amp; attrib2(ENTITYX7) = ATTRIBX8
       &amp; isA(ENTITYX12,r_0102_0015__opinion)
       &amp; genv(ENTITYX12) = r_0102_0013__my
       &amp; attrib2(ENTITYX12) = ATTRIBX13
       &amp; isA(ENTITYX17,r_0102_0022__charges)
       &amp; attrib2(ENTITYX17) = ATTRIBX18
-      &amp; isA(ENTITYX21,z_0102_1024)
+      &amp; isA(ENTITYX21,r_0102_1024)
       &amp; attrib2(ENTITYX21) = ATTRIBX22
       &amp; attrib4(ENTITYX21) = ATTRIBX23
       &amp; isA(ATTRIBX8,r_0102_0011__sick)

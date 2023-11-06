@@ -318,16 +318,16 @@ Most players find that a mouse and keyboard combination is the most effective , 
 </svg>
 <br>
 <pre>
-arc(r_0022_0001__quantificational__r_0022_0001__Most,r_0022_0002__players,restriction).
-arc(r_0022_0001__quantificational__r_0022_0001__Most,r_0022_0003__find,scope).
+arc(r_0022_0001__quantificational__Most,r_0022_0002__players,restriction).
+arc(r_0022_0001__quantificational__Most,r_0022_0003__find,scope).
 arc(r_0022_0003__find,r_0022_0002__players,arg0).
 arc(r_0022_0003__find,r_0022_0010__is,arg1).
 arc(r_0022_0007__and,r_0022_0006__mouse,conj1).
 arc(r_0022_0007__and,r_0022_0008__keyboard,conj2).
 arc(r_0022_0009__combination,r_0022_0007__and,nlyr2).
 arc(r_0022_0010__is,r_0022_0009__combination,arg0).
-arc(r_0022_0010__is,z_0022_1011,prd2).
-arc(r_0022_0010__is,z_0022_1034,car6).
+arc(r_0022_0010__is,r_0022_1011,prd2).
+arc(r_0022_0010__is,r_0022_1034,car6).
 arc(r_0022_0013__effective,r_0022_0012__most,quality1).
 arc(r_0022_0015__where,r_0022_0022__while_cnt,scope).
 arc(r_0022_0018__is,r_0022_0019__used,catenative).
@@ -339,7 +339,7 @@ arc(r_0022_0025__is,r_0022_0026__used,catenative).
 arc(r_0022_0026__used,r_0022_0008__keyboard,arg2).
 arc(r_0022_0026__used,r_0022_0028__move,arg1).
 arc(r_0022_0028__move,r_0022_0029__around,dir3).
-arc(z_0022_1011,r_0022_0013__effective,attrib2).
+arc(r_0022_1011,r_0022_0013__effective,attrib2).
 
 </pre>
 <br>
@@ -371,7 +371,7 @@ fof(id__22_A_Freedoom,axiom,
       &amp; conj2(ENTITYX5) = KEYBOARDX7
       &amp; isA(MOUSEX6,r_0022_0006__mouse)
       &amp; isA(KEYBOARDX7,r_0022_0008__keyboard)
-      &amp; isA(ENTITYX8,z_0022_1011)
+      &amp; isA(ENTITYX8,r_0022_1011)
       &amp; attrib2(ENTITYX8) = ATTRIBX9
       &amp; isA(OPERATORX13,r_0022_0015__where)
       &amp; scope(OPERATORX13) = CONNX15
@@ -382,14 +382,14 @@ fof(id__22_A_Freedoom,axiom,
       &amp; restriction(CONNX15) = EVENTX25
       &amp; isA(EVENTX25,r_0022_0025__is)
       &amp; catenative(EVENTX25) = CATENATIVEX17
-      &amp; isA(ENTITYX12,z_0022_1034)
+      &amp; isA(ENTITYX12,r_0022_1034)
       &amp; MOUSEX14 = MOUSEX6
       &amp; KEYBOARDX16 = KEYBOARDX7
       &amp; isA(ATTRIBX9,r_0022_0013__effective)
       &amp; quality1(ATTRIBX9) = QUALITYX10
       &amp; isA(QUALITYX10,r_0022_0012__most)
       &amp; isA(QUALITYX22,r_0022_0029__around)
-      &amp; isA(QUANTX2,r_0022_0001__quantificational__r_0022_0001__Most)
+      &amp; isA(QUANTX2,r_0022_0001__quantificational__Most)
       &amp; restriction(QUANTX2) = ENTITYX1
       &amp; isA(ENTITYX1,r_0022_0002__players)
       &amp; scope(QUANTX2) = EVENTX36

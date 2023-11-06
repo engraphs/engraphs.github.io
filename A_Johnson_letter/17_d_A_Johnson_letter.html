@@ -332,16 +332,16 @@ I want to thank everyone who is working flat out to beat the virus , in particul
 <br>
 <pre>
 arc(r_0026_0002__want,r_0026_0001__I,arg0).
-arc(r_0026_0002__want,r_0026_0005__quantificational__r_0026_0005__everyone,arg1).
+arc(r_0026_0002__want,r_0026_0005__quantificational__everyone,arg1).
 arc(r_0026_0004__thank,r_0026_0001__I,arg0).
-arc(r_0026_0004__thank,z_0026_1017,arg1).
-arc(r_0026_0005__quantificational__r_0026_0005__everyone,r_0026_0004__thank,scope).
-arc(r_0026_0005__quantificational__r_0026_0005__everyone,z_0026_1017,restriction).
+arc(r_0026_0004__thank,r_0026_1017,arg1).
+arc(r_0026_0005__quantificational__everyone,r_0026_0004__thank,scope).
+arc(r_0026_0005__quantificational__everyone,r_0026_1017,restriction).
 arc(r_0026_0007__is,r_0026_0008__working,catenative).
 arc(r_0026_0008__working,r_0026_0009__flat_out,mnr2).
 arc(r_0026_0008__working,r_0026_0011__beat,catenative).
 arc(r_0026_0011__beat,r_0026_0013__virus,arg1).
-arc(r_0026_0011__beat,z_0026_1017,arg0).
+arc(r_0026_0011__beat,r_0026_1017,arg0).
 arc(r_0026_0018__staff,r_0026_0016__particular,attrib1).
 arc(r_0026_0018__staff,r_0026_0023__and,r_0026_0019__in).
 arc(r_0026_0023__and,r_0026_0020__our,genv).
@@ -353,7 +353,7 @@ arc(r_0026_0032__and,r_0026_0027__England,conj1).
 arc(r_0026_0032__and,r_0026_0029__Scotland,conj2).
 arc(r_0026_0032__and,r_0026_0031__Wales,conj3).
 arc(r_0026_0032__and,r_0026_0033__Northern__r_0026_0034__Ireland,conj4).
-arc(z_0026_1017,r_0026_0018__staff,r_0026_0015__in).
+arc(r_0026_1017,r_0026_0018__staff,r_0026_0015__in).
 
 </pre>
 <br>
@@ -361,10 +361,10 @@ arc(z_0026_1017,r_0026_0018__staff,r_0026_0015__in).
 fof(id__26_A_Johnson_letter,axiom,
     ? [STATEX1,CATENATIVEX4,STATEX6,EVENTX19,QUANTX3,EVENTX18,EVENTX10,EVENTX9,EVENTX8,ENTITYX2,ENTITYX11,ENTITYX13,ENTITYX15,ENTITYX16,ENTITYX7,QUALITYX5,ATTRIBX12,ATTRIBX14] :
       ( STATEX1 = QUANTX3
-      &amp; isA(QUANTX3,r_0026_0005__quantificational__r_0026_0005__everyone)
+      &amp; isA(QUANTX3,r_0026_0005__quantificational__everyone)
       &amp; isA(EVENTX10,r_0026_0007__is)
       &amp; catenative(EVENTX10) = CATENATIVEX4
-      &amp; isA(ENTITYX2,z_0026_1017)
+      &amp; isA(ENTITYX2,r_0026_1017)
       &amp; r_0026_0015__in(ENTITYX2) = ENTITYX11
       &amp; restriction(QUANTX3) = ENTITYX2
       &amp; scope(QUANTX3) = EVENTX18

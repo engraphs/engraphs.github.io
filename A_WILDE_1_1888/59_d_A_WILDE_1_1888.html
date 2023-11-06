@@ -422,6 +422,8 @@ arc(r_0201_0012__seen,r_0201_0002__he,arg0).
 arc(r_0201_0012__seen,r_0201_0009__what,arg1).
 arc(r_0201_1006__question,r_0201_0011__had,scope).
 arc(r_0201_1016__utterance,r_0202_0003__am,part1).
+arc(r_0201_1035,r_0201_0008__Prince,genv).
+arc(r_0201_1035,r_0203_0017__poor,attrib2).
 arc(r_0202_0003__am,r_0201_0008__Prince,arg0).
 arc(r_0202_0003__am,r_0202_0004__covered,prd2).
 arc(r_0202_0004__covered,r_0202_0007__gold,r_0202_0005__with).
@@ -436,10 +438,8 @@ arc(r_0203_0008__leaf,r_0203_0010__leaf,r_0203_0009__by).
 arc(r_0203_0012__and,r_0203_0004__take__r_0203_0006__off,conj1).
 arc(r_0203_0012__and,r_0203_0013__give,conj2).
 arc(r_0203_0013__give,r_0201_0002__he,arg0).
+arc(r_0203_0013__give,r_0201_1035,r_0203_0015__to_arg2).
 arc(r_0203_0013__give,r_0202_0007__gold,arg1).
-arc(r_0203_0013__give,z_0201_1035,r_0203_0015__to_arg2).
-arc(z_0201_1035,r_0201_0008__Prince,genv).
-arc(z_0201_1035,r_0203_0017__poor,attrib2).
 
 </pre>
 <br>
@@ -475,7 +475,7 @@ fof(id__201_A_WILDE_1_1888__202_A_WILDE_1_1888__203_A_WILDE_1_1888,axiom,
       &amp; r_0203_0009__by(ENTITYX28) = ENTITYX29
       &amp; isA(ENTITYX29,r_0203_0010__leaf)
       &amp; GOLDX31 = GOLDX19
-      &amp; isA(ENTITYX32,z_0201_1035)
+      &amp; isA(ENTITYX32,r_0201_1035)
       &amp; genv(ENTITYX32) = PRINCEX33
       &amp; attrib2(ENTITYX32) = ATTRIBX34
       &amp; PRINCEX33 = PRINCEX3

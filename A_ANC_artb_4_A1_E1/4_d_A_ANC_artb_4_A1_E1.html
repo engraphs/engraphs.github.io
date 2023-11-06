@@ -799,7 +799,7 @@ The e-commerce free zone is situated in north Dubai , near the industrial free z
 <pre>
 arc(r_0006_0005__has,r_0006_0002__minister,arg0).
 arc(r_0006_0005__has,r_0006_0008__website,arg1).
-arc(r_0006_0008__website,z_0006_1006,genv).
+arc(r_0006_0008__website,r_0006_1006,genv).
 arc(r_0006_0010__also,r_0006_0011__said,scope).
 arc(r_0006_0011__said,r_0006_0002__minister,arg0).
 arc(r_0006_0011__said,r_0006_1011__utterance,arg1).
@@ -811,7 +811,10 @@ arc(r_0006_0021__place,r_0006_0020__best,attrib2).
 arc(r_0006_0021__place,r_0006_0024__world,r_0006_0022__in).
 arc(r_0006_0021__place,r_0006_0027__technology__r_0006_0028__companies,r_0006_0025__for).
 arc(r_0006_0027__technology__r_0006_0028__companies,r_0006_0026__state_of_the_art,attrib1).
+arc(r_0006_1006,r_0006_0002__minister,genv).
+arc(r_0006_1006,r_0006_0007__own,attrib2).
 arc(r_0006_1011__utterance,r_0006_0015__want,part1).
+arc(r_0006_1069,r_0008_0023__and,attrib1).
 arc(r_0007_0002__said,r_0006_0002__minister,arg0).
 arc(r_0007_0002__said,r_0007_0007__would,arg1).
 arc(r_0007_0004__engaged,r_0007_0003__companies,arg1).
@@ -834,7 +837,7 @@ arc(r_0007_0025__including,r_0007_0003__companies,arg0).
 arc(r_0007_0025__including,r_0007_0028__companies,arg1).
 arc(r_0007_0028__companies,r_0007_0026__fully_owned,attrib1).
 arc(r_0007_0028__companies,r_0007_0027__foreign,attrib2).
-arc(r_0008_0002__e_commerce,r_0007_0023__zone,z_0006_1051).
+arc(r_0008_0002__e_commerce,r_0007_0023__zone,r_0006_1051).
 arc(r_0008_0002__e_commerce,r_0008_0004__zone,nlyr4).
 arc(r_0008_0004__zone,r_0008_0003__free,attrib1).
 arc(r_0008_0005__is,r_0008_0006__situated,catenative).
@@ -850,12 +853,9 @@ arc(r_0008_0022__regional,r_0008_0021__top,modifier1).
 arc(r_0008_0023__and,r_0008_0022__regional,conj1).
 arc(r_0008_0023__and,r_0008_0025__international,conj2).
 arc(r_0008_0025__international,r_0008_0024__tenth,modifier1).
-arc(r_0008_0026__leading,z_0006_1069,modifier1).
+arc(r_0008_0026__leading,r_0006_1069,modifier1).
 arc(r_0008_0027__area,r_0008_0026__leading,attrib2).
 arc(r_0008_0027__area,r_0008_0029__container__r_0008_0030__transit,r_0008_0028__in).
-arc(z_0006_1006,r_0006_0002__minister,genv).
-arc(z_0006_1006,r_0006_0007__own,attrib2).
-arc(z_0006_1069,r_0008_0023__and,attrib1).
 
 </pre>
 <br>
@@ -903,7 +903,7 @@ fof(id__6_A_ANC_artb_4_A1_E1__7_A_ANC_artb_4_A1_E1__8_A_ANC_artb_4_A1_E1,axiom,
       &amp; isA(MAKTOUMX1,r_0006_0002__minister)
       &amp; isA(ENTITYX2,r_0006_0008__website)
       &amp; genv(ENTITYX2) = ENTITYX3
-      &amp; isA(ENTITYX3,z_0006_1006)
+      &amp; isA(ENTITYX3,r_0006_1006)
       &amp; genv(ENTITYX3) = MAKTOUMX4
       &amp; attrib2(ENTITYX3) = ATTRIBX5
       &amp; MAKTOUMX4 = MAKTOUMX1
@@ -933,7 +933,7 @@ fof(id__6_A_ANC_artb_4_A1_E1__7_A_ANC_artb_4_A1_E1__8_A_ANC_artb_4_A1_E1,axiom,
       &amp; isA(ENTITYX41,r_0007_0016__staff)
       &amp; isA(ENTITYX43,r_0007_0019__equipment)
       &amp; isA(ENTITYX49,r_0008_0002__e_commerce)
-      &amp; z_0006_1051(ENTITYX49) = ZONEX52
+      &amp; r_0006_1051(ENTITYX49) = ZONEX52
       &amp; nlyr4(ENTITYX49) = ENTITYX53
       &amp; ZONEX52 = ZONEX37
       &amp; isA(ENTITYX53,r_0008_0004__zone)
@@ -946,7 +946,7 @@ fof(id__6_A_ANC_artb_4_A1_E1__7_A_ANC_artb_4_A1_E1__8_A_ANC_artb_4_A1_E1,axiom,
       &amp; isA(ENTITYX61,r_0008_0027__area)
       &amp; attrib2(ENTITYX61) = ATTRIBX62
       &amp; r_0008_0028__in(ENTITYX61) = ENTITYX70
-      &amp; isA(ENTITYX63,z_0006_1069)
+      &amp; isA(ENTITYX63,r_0006_1069)
       &amp; attrib1(ENTITYX63) = ATTRIBX64
       &amp; isA(ENTITYX66,r_0008_0021__top)
       &amp; isA(ENTITYX68,r_0008_0024__tenth)

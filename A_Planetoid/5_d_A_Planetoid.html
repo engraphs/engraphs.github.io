@@ -606,6 +606,7 @@ arc(r_0008_0015__reaches,r_0008_0017__top,arg1).
 arc(r_0008_0017__top,r_0008_0020__screen,r_0008_0018__of).
 arc(r_0008_0024__will,r_0008_0025__mutate,scope).
 arc(r_0008_0025__mutate,r_0008_0012__raider,arg0).
+arc(r_0008_1025,r_0009_0019__and,r_0009_0023__of).
 arc(r_0009_0002__will,r_0009_0004__have,scope).
 arc(r_0009_0003__then,r_0009_0002__will,scope).
 arc(r_0009_0004__have,r_0009_0011__while_cnt,catenative).
@@ -620,23 +621,22 @@ arc(r_0009_0014__attacked,r_0009_0019__and,arg0__r_0009_0015__by_lgs).
 arc(r_0009_0019__and,r_0009_0016__bombers,conj1).
 arc(r_0009_0019__and,r_0009_0018__spores,conj2).
 arc(r_0009_0019__and,r_0009_0020__megacytes,conj3).
-arc(r_0009_0022__quantificational__r_0009_0022__all,r_0009_0025__are,scope).
-arc(r_0009_0022__quantificational__r_0009_0022__all,z_0008_1025,restriction).
+arc(r_0009_0022__quantificational__all,r_0008_1025,restriction).
+arc(r_0009_0022__quantificational__all,r_0009_0025__are,scope).
 arc(r_0009_0025__are,r_0009_0027__be,catenative).
 arc(r_0009_0027__be,r_0009_0032__and,catenative).
+arc(r_0009_0028__avoided,r_0008_1025,arg1).
 arc(r_0009_0028__avoided,r_0009_0031__costs,r_0009_0029__at_mnr).
-arc(r_0009_0028__avoided,z_0008_1025,arg1).
-arc(r_0009_0030__quantificational__r_0009_0030__all,r_0009_0028__avoided,scope).
-arc(r_0009_0030__quantificational__r_0009_0030__all,r_0009_0031__costs,restriction).
-arc(r_0009_0032__and,r_0009_0030__quantificational__r_0009_0030__all,conj1).
+arc(r_0009_0030__quantificational__all,r_0009_0028__avoided,scope).
+arc(r_0009_0030__quantificational__all,r_0009_0031__costs,restriction).
+arc(r_0009_0032__and,r_0009_0030__quantificational__all,conj1).
 arc(r_0009_0032__and,r_0009_0034__before_tmp,conj2).
-arc(r_0009_0033__killed,z_0008_1025,arg1).
+arc(r_0009_0033__killed,r_0008_1025,arg1).
 arc(r_0009_0034__before_tmp,r_0009_0033__killed,scope).
 arc(r_0009_0034__before_tmp,r_0009_0035__going__r_0009_0036__on,restriction).
+arc(r_0009_0035__going__r_0009_0036__on,r_0008_1025,arg0).
 arc(r_0009_0035__going__r_0009_0036__on,r_0009_0040__wave,r_0009_0037__to_dir).
-arc(r_0009_0035__going__r_0009_0036__on,z_0008_1025,arg0).
 arc(r_0009_0040__wave,r_0009_0039__next,attrib2).
-arc(z_0008_1025,r_0009_0019__and,r_0009_0023__of).
 
 </pre>
 <br>
@@ -664,7 +664,7 @@ fof(id__8_A_Planetoid__9_A_Planetoid,axiom,
       &amp; CATENATIVEX27 = CONJX37
       &amp; isA(CONJX37,r_0009_0032__and)
       &amp; conj1(CONJX37) = QUANTX30
-      &amp; isA(QUANTX30,r_0009_0030__quantificational__r_0009_0030__all)
+      &amp; isA(QUANTX30,r_0009_0030__quantificational__all)
       &amp; restriction(QUANTX30) = ENTITYX29
       &amp; isA(ENTITYX29,r_0009_0031__costs)
       &amp; scope(QUANTX30) = EVENTX31
@@ -692,9 +692,9 @@ fof(id__8_A_Planetoid__9_A_Planetoid,axiom,
       &amp; RAIDERX12 = RAIDERX4
       &amp; HEARERX15 = r_0008_0002__you
       &amp; isA(ENTITYX18,r_0009_0009__mutant)
-      &amp; isA(QUANTX24,r_0009_0022__quantificational__r_0009_0022__all)
+      &amp; isA(QUANTX24,r_0009_0022__quantificational__all)
       &amp; restriction(QUANTX24) = ENTITYX23
-      &amp; isA(ENTITYX23,z_0008_1025)
+      &amp; isA(ENTITYX23,r_0008_1025)
       &amp; r_0009_0023__of(ENTITYX23) = ENTITYX22
       &amp; scope(QUANTX24) = EVENTX39
       &amp; isA(EVENTX39,r_0009_0025__are)

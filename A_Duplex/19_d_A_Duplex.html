@@ -517,11 +517,12 @@ The company had promised the BBC it would record the calls and provide the audio
 arc(r_0035_0001__Unfortunately,r_0035_0005__n_apos_t,scope).
 arc(r_0035_0005__n_apos_t,r_0035_0006__allow,scope).
 arc(r_0035_0006__allow,r_0035_0003__Google,arg0).
-arc(r_0035_0006__allow,r_0035_0011__quantificational__r_0035_0011__any,arg1).
+arc(r_0035_0006__allow,r_0035_0011__quantificational__any,arg1).
 arc(r_0035_0010__record,r_0035_0008__BBC,arg0).
-arc(r_0035_0010__record,z_0035_1006,arg1).
-arc(r_0035_0011__quantificational__r_0035_0011__any,r_0035_0010__record,scope).
-arc(r_0035_0011__quantificational__r_0035_0011__any,z_0035_1006,restriction).
+arc(r_0035_0010__record,r_0035_1006,arg1).
+arc(r_0035_0011__quantificational__any,r_0035_0010__record,scope).
+arc(r_0035_0011__quantificational__any,r_0035_1006,restriction).
+arc(r_0035_1006,r_0035_0014__calls,r_0035_0012__of).
 arc(r_0036_0003__had,r_0036_0004__promised,catenative).
 arc(r_0036_0004__promised,r_0035_0003__Google,arg0).
 arc(r_0036_0004__promised,r_0035_0008__BBC,arg2).
@@ -552,7 +553,6 @@ arc(r_0036_0036__be,r_0036_0039__after_all,catenative).
 arc(r_0036_0037__doing,r_0035_0003__Google,arg0).
 arc(r_0036_0037__doing,r_0036_0013__provide,arg1).
 arc(r_0036_0039__after_all,r_0036_0037__doing,scope).
-arc(z_0035_1006,r_0035_0014__calls,r_0035_0012__of).
 
 </pre>
 <br>
@@ -560,9 +560,9 @@ arc(z_0035_1006,r_0035_0014__calls,r_0035_0012__of).
 fof(id__35_A_Duplex__36_A_Duplex,axiom,
     ? [STATEX2,CATENATIVEX13,STATEX15,CATENATIVEX20,STATEX37,CATENATIVEX41,GOOGLEX12,BBCX14,GOOGLEX16,AUDIOX18,GOOGLEX38,PROVIDEX42,CONJX47,EVENTX46,OPERATORX39,OPERATORX40,EVENTX45,OPERATORX43,EVENTX44,EVENTX32,EVENTX31,CONNX17,OPERATORX19,EVENTX23,EVENTX22,OPERATORX24,CONJX30,PROVIDEX29,EVENTX26,OPERATORX1,OPERATORX8,EVENTX9,QUANTX4,EVENTX7,ENTITYX33,ENTITYX36,ENTITYX35,AUDIOX27,ENTITYX25,ENTITYX3,ENTITYX5,QUALITYX28,ATTRIBX34] :
       ( STATEX2 = QUANTX4
-      &amp; isA(QUANTX4,r_0035_0011__quantificational__r_0035_0011__any)
+      &amp; isA(QUANTX4,r_0035_0011__quantificational__any)
       &amp; restriction(QUANTX4) = ENTITYX3
-      &amp; isA(ENTITYX3,z_0035_1006)
+      &amp; isA(ENTITYX3,r_0035_1006)
       &amp; r_0035_0012__of(ENTITYX3) = ENTITYX5
       &amp; scope(QUANTX4) = EVENTX7
       &amp; isA(EVENTX7,r_0035_0010__record)

@@ -241,33 +241,33 @@ We got everything going , the sound , graphics , the memory management and every
 <br>
 <pre>
 arc(r_0031_0002__got,r_0031_0001__We,arg0).
-arc(r_0031_0002__got,z_0031_1015,arg1).
-arc(r_0031_0003__quantificational__r_0031_0003__everything,r_0031_0002__got,scope).
-arc(r_0031_0003__quantificational__r_0031_0003__everything,z_0031_1015,restriction).
-arc(r_0031_0004__going,z_0031_1015,arg0).
+arc(r_0031_0002__got,r_0031_1015,arg1).
+arc(r_0031_0003__quantificational__everything,r_0031_0002__got,scope).
+arc(r_0031_0003__quantificational__everything,r_0031_1015,restriction).
+arc(r_0031_0004__going,r_0031_1015,arg0).
 arc(r_0031_0014__and,r_0031_0007__sound,conj1).
 arc(r_0031_0014__and,r_0031_0009__graphics,conj2).
 arc(r_0031_0014__and,r_0031_0012__memory__r_0031_0013__management,conj3).
-arc(r_0031_0014__and,z_0031_1014,conj4).
-arc(r_0031_0015__quantificational__r_0031_0015__everything,r_0031_0014__and,scope).
-arc(r_0031_0015__quantificational__r_0031_0015__everything,z_0031_1014,restriction).
+arc(r_0031_0014__and,r_0031_1014,conj4).
+arc(r_0031_0015__quantificational__everything,r_0031_0014__and,scope).
+arc(r_0031_0015__quantificational__everything,r_0031_1014,restriction).
 arc(r_0031_0016__running__r_0031_0017__on,r_0031_0018__here,loc3).
 arc(r_0031_0016__running__r_0031_0017__on,r_0031_0022__systems,r_0031_0019__as_prd2).
-arc(r_0031_0016__running__r_0031_0017__on,z_0031_1014,arg0).
+arc(r_0031_0016__running__r_0031_0017__on,r_0031_1014,arg0).
 arc(r_0031_0022__systems,r_0031_0021__initial,attrib2).
-arc(z_0031_1015,r_0031_0014__and,prn4).
+arc(r_0031_1015,r_0031_0014__and,prn4).
 
 </pre>
 <br>
 <pre>
 fof(id__31_A_PaulFellows,axiom,
     ? [QUANTX2,EVENTX16,QUANTX9,EVENTX13,EVENTX3,ENTITYX1,ENTITYX4,ENTITYX5,ENTITYX6,ENTITYX7,ENTITYX8,ENTITYX11,QUALITYX10,ATTRIBX12] :
-      ( isA(QUANTX9,r_0031_0015__quantificational__r_0031_0015__everything)
+      ( isA(QUANTX9,r_0031_0015__quantificational__everything)
       &amp; isA(EVENTX13,r_0031_0016__running__r_0031_0017__on)
       &amp; arg0(EVENTX13) = ENTITYX8
       &amp; loc3(EVENTX13) = QUALITYX10
       &amp; r_0031_0019__as_prd2(EVENTX13) = ENTITYX11
-      &amp; isA(ENTITYX8,z_0031_1014)
+      &amp; isA(ENTITYX8,r_0031_1014)
       &amp; restriction(QUANTX9) = ENTITYX8
       &amp; scope(QUANTX9) = ENTITYX4
       &amp; isA(ENTITYX4,r_0031_0014__and)
@@ -282,10 +282,10 @@ fof(id__31_A_PaulFellows,axiom,
       &amp; attrib2(ENTITYX11) = ATTRIBX12
       &amp; isA(QUALITYX10,r_0031_0018__here)
       &amp; isA(ATTRIBX12,r_0031_0021__initial)
-      &amp; isA(QUANTX2,r_0031_0003__quantificational__r_0031_0003__everything)
+      &amp; isA(QUANTX2,r_0031_0003__quantificational__everything)
       &amp; isA(EVENTX3,r_0031_0004__going)
       &amp; arg0(EVENTX3) = ENTITYX1
-      &amp; isA(ENTITYX1,z_0031_1015)
+      &amp; isA(ENTITYX1,r_0031_1015)
       &amp; prn4(ENTITYX1) = ENTITYX4
       &amp; restriction(QUANTX2) = ENTITYX1
       &amp; scope(QUANTX2) = EVENTX16

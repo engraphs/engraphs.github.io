@@ -1011,6 +1011,9 @@ arc(r_0017_0047__and,r_0017_0043__and,conj2).
 arc(r_0017_0047__and,r_0017_0048__place,conj3).
 arc(r_0017_0048__place,r_0017_0029__wine,arg1).
 arc(r_0017_0048__place,r_0017_0052__binns,r_0017_0050__in_loc).
+arc(r_0017_1071,r_0017_0007__butler,genv).
+arc(r_0017_1071,r_0019_0014__own,attrib2).
+arc(r_0017_1090,r_0019_0033__entered,catenative).
 arc(r_0018_0001__Brewing,r_0018_0007__malt__r_0018_0008__liquors,arg1).
 arc(r_0018_0003__racking,r_0018_0007__malt__r_0018_0008__liquors,arg1).
 arc(r_0018_0005__and,r_0018_0001__Brewing,conj1).
@@ -1026,37 +1029,34 @@ arc(r_0018_0017__distribution,r_0018_0007__malt__r_0018_0008__liquors,genv).
 arc(r_0019_0002__and,r_0018_0007__malt__r_0018_0008__liquors,conj1).
 arc(r_0019_0002__and,r_0019_0004__drinkables,conj2).
 arc(r_0019_0004__drinkables,r_0019_0003__other,attrib1).
-arc(r_0019_0005__are,r_0019_0010__quantificational__r_0019_0010__every,catenative).
-arc(r_0019_0005__are,z_0017_1062,r_0019_0017__except_mod).
+arc(r_0019_0005__are,r_0017_1062,r_0019_0017__except_mod).
+arc(r_0019_0005__are,r_0019_0010__quantificational__every,catenative).
 arc(r_0019_0006__brought,r_0019_0002__and,arg1).
 arc(r_0019_0006__brought,r_0019_0009__cellar,r_0019_0007__from_dir).
 arc(r_0019_0006__brought,r_0019_0011__day,tmp).
 arc(r_0019_0006__brought,r_0019_0015__hands,arg0__r_0019_0012__by_lgs).
-arc(r_0019_0010__quantificational__r_0019_0010__every,r_0019_0006__brought,scope).
-arc(r_0019_0010__quantificational__r_0019_0010__every,r_0019_0011__day,restriction).
-arc(r_0019_0015__hands,z_0017_1071,genv).
+arc(r_0019_0010__quantificational__every,r_0019_0006__brought,scope).
+arc(r_0019_0010__quantificational__every,r_0019_0011__day,restriction).
+arc(r_0019_0015__hands,r_0017_1071,genv).
 arc(r_0019_0021__is,r_0019_0022__kept,catenative).
+arc(r_0019_0022__kept,r_0017_1062,loc1).
 arc(r_0019_0022__kept,r_0019_0020__under_butler,arg1).
-arc(r_0019_0022__kept,z_0017_1062,loc1).
 arc(r_0019_0024__and,r_0019_0005__are,conj1).
 arc(r_0019_0024__and,r_0019_0038__so_that_cnt,conj2).
 arc(r_0019_0027__entry,r_0019_0026__careful,attrib2).
 arc(r_0019_0027__entry,r_0019_0030__bottle,r_0019_0028__of).
-arc(r_0019_0029__quantificational__r_0019_0029__every,r_0019_0027__entry,scope).
-arc(r_0019_0029__quantificational__r_0019_0029__every,r_0019_0030__bottle,restriction).
+arc(r_0019_0029__quantificational__every,r_0019_0027__entry,scope).
+arc(r_0019_0029__quantificational__every,r_0019_0030__bottle,restriction).
 arc(r_0019_0031__used,r_0019_0030__bottle,arg1).
 arc(r_0019_0033__entered,r_0019_0027__entry,arg0).
 arc(r_0019_0033__entered,r_0019_0036__cellar_book,r_0019_0034__in_loc).
+arc(r_0019_0038__so_that_cnt,r_0017_1090,scope).
 arc(r_0019_0038__so_that_cnt,r_0019_0041__should,restriction).
-arc(r_0019_0038__so_that_cnt,z_0017_1090,scope).
 arc(r_0019_0041__should,r_0019_0043__show,scope).
 arc(r_0019_0043__show,r_0019_0040__book,arg0).
 arc(r_0019_0043__show,r_0019_0042__always,tmp3).
 arc(r_0019_0043__show,r_0019_0045__contents,arg1).
 arc(r_0019_0045__contents,r_0019_0048__cellar,r_0019_0046__of).
-arc(z_0017_1071,r_0017_0007__butler,genv).
-arc(z_0017_1071,r_0019_0014__own,attrib2).
-arc(z_0017_1090,r_0019_0033__entered,catenative).
 
 </pre>
 <br>
@@ -1113,7 +1113,7 @@ fof(id__17_A_BEETON_1861,axiom,
       &amp; arg1(EVENTX60) = ENTITYX57
       &amp; loc1(EVENTX60) = ENTITYX56
       &amp; CATENATIVEX63 = QUANTX66
-      &amp; isA(QUANTX66,r_0019_0010__quantificational__r_0019_0010__every)
+      &amp; isA(QUANTX66,r_0019_0010__quantificational__every)
       &amp; restriction(QUANTX66) = ENTITYX65
       &amp; isA(ENTITYX65,r_0019_0011__day)
       &amp; scope(QUANTX66) = EVENTX72
@@ -1166,16 +1166,16 @@ fof(id__17_A_BEETON_1861,axiom,
       &amp; attrib1(ENTITYX54) = ATTRIBX55
       &amp; isA(EVENTX61,r_0019_0021__is)
       &amp; catenative(EVENTX61) = CATENATIVEX58
-      &amp; isA(ENTITYX56,z_0017_1062)
+      &amp; isA(ENTITYX56,r_0017_1062)
       &amp; isA(ENTITYX57,r_0019_0020__under_butler)
       &amp; isA(ENTITYX64,r_0019_0009__cellar)
       &amp; isA(ENTITYX67,r_0019_0015__hands)
       &amp; genv(ENTITYX67) = ENTITYX68
-      &amp; isA(ENTITYX68,z_0017_1071)
+      &amp; isA(ENTITYX68,r_0017_1071)
       &amp; genv(ENTITYX68) = BUTLERX69
       &amp; attrib2(ENTITYX68) = ATTRIBX70
       &amp; BUTLERX69 = BUTLERX3
-      &amp; isA(QUANTX77,r_0019_0029__quantificational__r_0019_0029__every)
+      &amp; isA(QUANTX77,r_0019_0029__quantificational__every)
       &amp; isA(EVENTX79,r_0019_0031__used)
       &amp; arg1(EVENTX79) = ENTITYX76
       &amp; isA(ENTITYX76,r_0019_0030__bottle)
@@ -1212,7 +1212,7 @@ fof(id__17_A_BEETON_1861,axiom,
       &amp; conj2(CONJX92) = CONNX80
       &amp; isA(CONNX80,r_0019_0038__so_that_cnt)
       &amp; scope(CONNX80) = EVENTX91
-      &amp; isA(EVENTX91,z_0017_1090)
+      &amp; isA(EVENTX91,r_0017_1090)
       &amp; catenative(EVENTX91) = CATENATIVEX87
       &amp; restriction(CONNX80) = OPERATORX85
       &amp; isA(OPERATORX85,r_0019_0041__should)

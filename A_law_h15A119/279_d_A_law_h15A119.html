@@ -501,27 +501,27 @@ arc(r_0279_0008__information,r_0279_0007__personal,attrib1).
 arc(r_0279_0010__being,r_0279_0005__entities,arg0).
 arc(r_0279_0010__being,r_0279_0012__entities,prd2).
 arc(r_0279_0013__enumerated,r_0279_0012__entities,arg0).
-arc(r_0279_0013__enumerated,z_0279_1010,r_0279_0014__in_loc).
-arc(r_0279_0015__quantificational__r_0279_0015__each,r_0279_0013__enumerated,scope).
-arc(r_0279_0015__quantificational__r_0279_0015__each,z_0279_1010,restriction).
+arc(r_0279_0013__enumerated,r_0279_1010,r_0279_0014__in_loc).
+arc(r_0279_0015__quantificational__each,r_0279_0013__enumerated,scope).
+arc(r_0279_0015__quantificational__each,r_0279_1010,restriction).
 arc(r_0279_0018__items,r_0279_0019__below,loc3).
 arc(r_0279_0021__if_cnt_cnd,r_0279_0032__is,restriction).
 arc(r_0279_0021__if_cnt_cnd,r_0279_0049__shall,scope).
-arc(r_0279_0022__quantificational__r_0279_0022__all,r_0279_0023__or,scope).
-arc(r_0279_0022__quantificational__r_0279_0022__all,z_0279_1024,restriction).
+arc(r_0279_0022__quantificational__all,r_0279_0023__or,scope).
+arc(r_0279_0022__quantificational__all,r_0279_1024,restriction).
 arc(r_0279_0023__or,r_0279_0024__part,conj2).
 arc(r_0279_0023__or,r_0279_0027__purpose,r_0279_0025__of).
-arc(r_0279_0023__or,z_0279_1024,conj1).
+arc(r_0279_0023__or,r_0279_1024,conj1).
 arc(r_0279_0027__purpose,r_0279_0029__handling,r_0279_0028__of).
 arc(r_0279_0029__handling,r_0279_0031__information,arg1).
 arc(r_0279_0031__information,r_0279_0030__personal,attrib1).
 arc(r_0279_0032__is,r_0279_0023__or,arg0).
 arc(r_0279_0032__is,r_0279_0034__purpose,prd2).
-arc(r_0279_0035__respectively,r_0279_0038__quantificational__r_0279_0038__each,scope).
+arc(r_0279_0035__respectively,r_0279_0038__quantificational__each,scope).
 arc(r_0279_0036__prescribed,r_0279_0034__purpose,arg1).
-arc(r_0279_0036__prescribed,z_0279_1032,r_0279_0037__in_loc).
-arc(r_0279_0038__quantificational__r_0279_0038__each,r_0279_0036__prescribed,scope).
-arc(r_0279_0038__quantificational__r_0279_0038__each,z_0279_1032,restriction).
+arc(r_0279_0036__prescribed,r_0279_1032,r_0279_0037__in_loc).
+arc(r_0279_0038__quantificational__each,r_0279_0036__prescribed,scope).
+arc(r_0279_0038__quantificational__each,r_0279_1032,restriction).
 arc(r_0279_0044__provisions,r_0279_0048__chapter,r_0279_0045__of).
 arc(r_0279_0048__chapter,r_0279_0047__preceding,attrib2).
 arc(r_0279_0049__shall,r_0279_0050__not,scope).
@@ -529,8 +529,8 @@ arc(r_0279_0050__not,r_0279_0051__be,scope).
 arc(r_0279_0051__be,r_0279_0005__entities,r_0279_0004__With_respect_to_rst).
 arc(r_0279_0051__be,r_0279_0052__applied,catenative).
 arc(r_0279_0052__applied,r_0279_0044__provisions,arg1).
-arc(z_0279_1010,r_0279_0018__items,r_0279_0016__of).
-arc(z_0279_1032,r_0279_0041__items,r_0279_0039__of).
+arc(r_0279_1010,r_0279_0018__items,r_0279_0016__of).
+arc(r_0279_1032,r_0279_0041__items,r_0279_0039__of).
 
 </pre>
 <br>
@@ -552,9 +552,9 @@ fof(id__279_A_law_h15A119,axiom,
       &amp; isA(ENTITYX1,r_0279_0005__entities)
       &amp; isA(ENTITYX2,r_0279_0008__information)
       &amp; attrib1(ENTITYX2) = ATTRIBX3
-      &amp; isA(QUANTX7,r_0279_0015__quantificational__r_0279_0015__each)
+      &amp; isA(QUANTX7,r_0279_0015__quantificational__each)
       &amp; restriction(QUANTX7) = ENTITYX6
-      &amp; isA(ENTITYX6,z_0279_1010)
+      &amp; isA(ENTITYX6,r_0279_1010)
       &amp; r_0279_0016__of(ENTITYX6) = ENTITYX8
       &amp; scope(QUANTX7) = EVENTX11
       &amp; isA(EVENTX11,r_0279_0013__enumerated)
@@ -563,9 +563,9 @@ fof(id__279_A_law_h15A119,axiom,
       &amp; isA(ENTITYX5,r_0279_0012__entities)
       &amp; isA(ENTITYX8,r_0279_0018__items)
       &amp; loc3(ENTITYX8) = QUALITYX9
-      &amp; isA(QUANTX23,r_0279_0022__quantificational__r_0279_0022__all)
+      &amp; isA(QUANTX23,r_0279_0022__quantificational__all)
       &amp; restriction(QUANTX23) = ENTITYX22
-      &amp; isA(ENTITYX22,z_0279_1024)
+      &amp; isA(ENTITYX22,r_0279_1024)
       &amp; scope(QUANTX23) = ENTITYX14
       &amp; isA(ENTITYX14,r_0279_0023__or)
       &amp; r_0279_0025__of(ENTITYX14) = ENTITYX15
@@ -578,9 +578,9 @@ fof(id__279_A_law_h15A119,axiom,
       &amp; isA(ENTITYX25,r_0279_0024__part)
       &amp; isA(OPERATORX28,r_0279_0035__respectively)
       &amp; scope(OPERATORX28) = QUANTX30
-      &amp; isA(QUANTX30,r_0279_0038__quantificational__r_0279_0038__each)
+      &amp; isA(QUANTX30,r_0279_0038__quantificational__each)
       &amp; restriction(QUANTX30) = ENTITYX29
-      &amp; isA(ENTITYX29,z_0279_1032)
+      &amp; isA(ENTITYX29,r_0279_1032)
       &amp; r_0279_0039__of(ENTITYX29) = ENTITYX31
       &amp; scope(QUANTX30) = EVENTX33
       &amp; isA(EVENTX33,r_0279_0036__prescribed)

@@ -552,22 +552,27 @@ You were both very kind to him , I must say . &rdquo;
 </svg>
 <br>
 <pre>
-arc(r_0132_0004__indeed,z_0132_1007,scope).
+arc(r_0132_0004__indeed,r_0132_1007,scope).
 arc(r_0132_0007__said,r_0132_0009__aunt,arg0).
 arc(r_0132_0007__said,r_0132_1003__utterance,arg1).
 arc(r_0132_0009__aunt,r_0132_0008__my,genv).
 arc(r_0132_1003__utterance,r_0132_0004__indeed,part1).
+arc(r_0132_1018,r_0133_0004__more,attrib1).
+arc(r_0132_1018,r_0133_0007__glass,r_0133_0005__from).
+arc(r_0132_1033,r_0132_1035,arg1).
+arc(r_0132_1033,r_0133_0027__you,arg0).
+arc(r_0132_1033,r_0133_0037__him,r_0133_0036__for_bnf).
 arc(r_0132_1044__utterance,r_0134_0002__were,part1).
 arc(r_0133_0002__sipped,r_0132_0009__aunt,arg0).
-arc(r_0133_0002__sipped,z_0132_1018,arg1).
+arc(r_0133_0002__sipped,r_0132_1018,arg1).
 arc(r_0133_0004__more,r_0133_0003__a_little,quality1).
 arc(r_0133_0007__glass,r_0132_0009__aunt,genv).
 arc(r_0133_0008__and,r_0133_0002__sipped,conj1).
 arc(r_0133_0008__and,r_0133_0009__said,conj2).
 arc(r_0133_0009__said,r_0132_0009__aunt,arg0).
-arc(r_0133_0009__said,r_0133_0018__quantificational__r_0133_0018__any,arg1).
-arc(r_0133_0018__quantificational__r_0133_0018__any,r_0133_0019__rate,restriction).
-arc(r_0133_0018__quantificational__r_0133_0018__any,r_0133_0021__must,scope).
+arc(r_0133_0009__said,r_0133_0018__quantificational__any,arg1).
+arc(r_0133_0018__quantificational__any,r_0133_0019__rate,restriction).
+arc(r_0133_0018__quantificational__any,r_0133_0021__must,scope).
 arc(r_0133_0021__must,r_0133_0022__be,scope).
 arc(r_0133_0022__be,r_0133_0014__Miss__r_0133_0015__Flynn,voc).
 arc(r_0133_0022__be,r_0133_0019__rate,r_0133_0017__at_mod).
@@ -575,12 +580,12 @@ arc(r_0133_0022__be,r_0133_0025__comfort,prd2).
 arc(r_0133_0022__be,r_0133_0029__know,arg0).
 arc(r_0133_0025__comfort,r_0133_0024__great,attrib2).
 arc(r_0133_0029__know,r_0133_0027__you,arg0).
-arc(r_0133_0029__know,r_0133_0033__quantificational__r_0133_0033__all,arg1).
+arc(r_0133_0029__know,r_0133_0033__quantificational__all,arg1).
+arc(r_0133_0032__did,r_0132_1035,arg1).
 arc(r_0133_0032__did,r_0133_0027__you,arg0).
-arc(r_0133_0032__did,z_0132_1035,arg1).
-arc(r_0133_0033__quantificational__r_0133_0033__all,r_0133_0032__did,scope).
-arc(r_0133_0033__quantificational__r_0133_0033__all,z_0132_1035,restriction).
-arc(r_0133_0035__could,z_0132_1033,scope).
+arc(r_0133_0033__quantificational__all,r_0132_1035,restriction).
+arc(r_0133_0033__quantificational__all,r_0133_0032__did,scope).
+arc(r_0133_0035__could,r_0132_1033,scope).
 arc(r_0134_0002__were,r_0133_0027__you,arg0).
 arc(r_0134_0002__were,r_0134_0003__both,mnr3).
 arc(r_0134_0002__were,r_0134_0005__kind,prd2).
@@ -589,11 +594,6 @@ arc(r_0134_0005__kind,r_0134_0004__very,quality1).
 arc(r_0134_0010__must,r_0134_0011__say,scope).
 arc(r_0134_0011__say,r_0132_0009__aunt,arg0).
 arc(r_0134_0011__say,r_0132_1044__utterance,arg1).
-arc(z_0132_1018,r_0133_0004__more,attrib1).
-arc(z_0132_1018,r_0133_0007__glass,r_0133_0005__from).
-arc(z_0132_1033,r_0133_0027__you,arg0).
-arc(z_0132_1033,r_0133_0037__him,r_0133_0036__for_bnf).
-arc(z_0132_1033,z_0132_1035,arg1).
 
 </pre>
 <br>
@@ -605,9 +605,9 @@ fof(id__132_A_JOYCE_1914__133_A_JOYCE_1914__134_A_JOYCE_1914,axiom,
       &amp; part1(CONJX9) = OPERATORX6
       &amp; isA(OPERATORX6,r_0132_0004__indeed)
       &amp; scope(OPERATORX6) = EVENTX8
-      &amp; isA(EVENTX8,z_0132_1007)
+      &amp; isA(EVENTX8,r_0132_1007)
       &amp; STATEX20 = QUANTX22
-      &amp; isA(QUANTX22,r_0133_0018__quantificational__r_0133_0018__any)
+      &amp; isA(QUANTX22,r_0133_0018__quantificational__any)
       &amp; restriction(QUANTX22) = ENTITYX21
       &amp; isA(ENTITYX21,r_0133_0019__rate)
       &amp; scope(QUANTX22) = OPERATORX38
@@ -624,14 +624,14 @@ fof(id__132_A_JOYCE_1914__133_A_JOYCE_1914__134_A_JOYCE_1914,axiom,
       &amp; arg0(EVENTX37) = r_0133_0027__you
       &amp; arg1(EVENTX37) = STATEX27
       &amp; STATEX27 = QUANTX30
-      &amp; isA(QUANTX30,r_0133_0033__quantificational__r_0133_0033__all)
+      &amp; isA(QUANTX30,r_0133_0033__quantificational__all)
       &amp; isA(OPERATORX32,r_0133_0035__could)
       &amp; scope(OPERATORX32) = EVENTX34
-      &amp; isA(EVENTX34,z_0132_1033)
+      &amp; isA(EVENTX34,r_0132_1033)
       &amp; arg1(EVENTX34) = ENTITYX29
       &amp; arg0(EVENTX34) = SISTERSX31
       &amp; r_0133_0036__for_bnf(EVENTX34) = r_0133_0037__him
-      &amp; isA(ENTITYX29,z_0132_1035)
+      &amp; isA(ENTITYX29,r_0132_1035)
       &amp; restriction(QUANTX30) = ENTITYX29
       &amp; scope(QUANTX30) = EVENTX36
       &amp; isA(EVENTX36,r_0133_0032__did)
@@ -647,7 +647,7 @@ fof(id__132_A_JOYCE_1914__133_A_JOYCE_1914__134_A_JOYCE_1914,axiom,
       &amp; isA(AUNTX10,r_0132_0009__aunt)
       &amp; genv(AUNTX10) = r_0132_0008__my
       &amp; AUNTX12 = AUNTX10
-      &amp; isA(ENTITYX13,z_0132_1018)
+      &amp; isA(ENTITYX13,r_0132_1018)
       &amp; attrib1(ENTITYX13) = ATTRIBX14
       &amp; r_0133_0005__from(ENTITYX13) = ENTITYX16
       &amp; isA(ENTITYX16,r_0133_0007__glass)

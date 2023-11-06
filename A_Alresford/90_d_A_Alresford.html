@@ -711,13 +711,18 @@ arc(r_0096_0014__owed,r_0096_0019__relationship,r_0096_0017__to_clr).
 arc(r_0096_0016__title,r_0096_0002__play,genv).
 arc(r_0096_0019__relationship,r_0096_0022__two__r_0096_0023__establishments,r_0096_0020__between).
 arc(r_0096_0022__two__r_0096_0023__establishments,r_0096_0025____list__,prn5).
-arc(r_0096_0025____list__,z_0096_1021,conj1).
-arc(r_0096_0025____list__,z_0096_1027,conj2).
+arc(r_0096_0025____list__,r_0096_1021,conj1).
+arc(r_0096_0025____list__,r_0096_1027,conj2).
 arc(r_0096_0030__and,r_0096_0028__so,quality1).
 arc(r_0096_0030__and,r_0096_0029__classified,conj1).
 arc(r_0096_0030__and,r_0096_0031__orderly,conj2).
 arc(r_0096_0036__haven,r_0096_0038__serendipity,r_0096_0037__of).
 arc(r_0096_0036__haven,r_0096_0040__browsers,r_0096_0039__for).
+arc(r_0096_1021,r_0096_0027__first,arg0).
+arc(r_0096_1021,r_0096_0030__and,prd2).
+arc(r_0096_1027,r_0096_0034__second,arg0).
+arc(r_0096_1027,r_0096_0036__haven,prd2).
+arc(r_0096_1045,r_0097_0018__second,attrib1).
 arc(r_0097_0001__As_cnt,r_0097_0003__was,restriction).
 arc(r_0097_0001__As_cnt,r_0097_0011__were,scope).
 arc(r_0097_0003__was,r_0097_0004__produced,catenative).
@@ -729,7 +734,7 @@ arc(r_0097_0011__were,r_0097_0013__Pershore,r_0097_0012__in_prd2_loc).
 arc(r_0097_0013__Pershore,r_0097_0015__not,prn3).
 arc(r_0097_0015__not,r_0097_0017__bad,attrib3).
 arc(r_0097_0015__not,r_0097_0020__best,attrib4).
-arc(r_0097_0020__best,z_0096_1045,modifier1).
+arc(r_0097_0020__best,r_0096_1045,modifier1).
 arc(r_0098_0003__received,r_0096_0002__play,arg0).
 arc(r_0098_0003__received,r_0098_0005__International__r_0098_0008__Award,arg1).
 arc(r_0098_0005__International__r_0098_0008__Award,r_0098_0006__TV_r_0098_0007__Movie,nlyr3).
@@ -743,11 +748,6 @@ arc(r_0098_0018__liked,r_0098_0022__eccentricity,arg1).
 arc(r_0098_0022__eccentricity,r_0098_0019__our,genv).
 arc(r_0098_0022__eccentricity,r_0098_0020__quiet,attrib2).
 arc(r_0098_0022__eccentricity,r_0098_0021__English,attrib3).
-arc(z_0096_1021,r_0096_0027__first,arg0).
-arc(z_0096_1021,r_0096_0030__and,prd2).
-arc(z_0096_1027,r_0096_0034__second,arg0).
-arc(z_0096_1027,r_0096_0036__haven,prd2).
-arc(z_0096_1045,r_0097_0018__second,attrib1).
 
 </pre>
 <br>
@@ -766,12 +766,12 @@ fof(id__96_A_Alresford__97_A_Alresford__98_A_Alresford,axiom,
       &amp; EVENTX13 = CONJX29
       &amp; isA(CONJX29,r_0096_0025____list__)
       &amp; conj1(CONJX29) = EVENTX22
-      &amp; isA(EVENTX22,z_0096_1021)
+      &amp; isA(EVENTX22,r_0096_1021)
       &amp; arg0(EVENTX22) = ENTITYX16
       &amp; arg0(EVENTX22) = ENTITYX16
       &amp; prd2(EVENTX22) = ATTRIBX17
       &amp; conj2(CONJX29) = EVENTX28
-      &amp; isA(EVENTX28,z_0096_1027)
+      &amp; isA(EVENTX28,r_0096_1027)
       &amp; arg0(EVENTX28) = ENTITYX23
       &amp; arg0(EVENTX28) = ENTITYX23
       &amp; prd2(EVENTX28) = ENTITYX24
@@ -810,7 +810,7 @@ fof(id__96_A_Alresford__97_A_Alresford__98_A_Alresford,axiom,
       &amp; isA(ENTITYX40,r_0097_0015__not)
       &amp; attrib3(ENTITYX40) = ATTRIBX41
       &amp; attrib4(ENTITYX40) = ATTRIBX42
-      &amp; isA(ENTITYX43,z_0096_1045)
+      &amp; isA(ENTITYX43,r_0096_1045)
       &amp; attrib1(ENTITYX43) = ATTRIBX44
       &amp; PLAYX47 = PLAYX1
       &amp; isA(ENTITYX48,r_0098_0005__International__r_0098_0008__Award)

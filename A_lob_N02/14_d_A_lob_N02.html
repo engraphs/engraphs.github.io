@@ -462,12 +462,12 @@
 arc(r_0043_0004__employee,r_0043_0003__your,genv).
 arc(r_0043_0006___apos_s,r_0043_0004__employee,r_0043_0002__As_rst).
 arc(r_0043_0006___apos_s,r_0043_0009__business,prd2).
-arc(r_0043_0006___apos_s,r_0043_0012__quantificational__r_0043_0012__all,arg0).
+arc(r_0043_0006___apos_s,r_0043_0012__quantificational__all,arg0).
 arc(r_0043_0007__not,r_0043_0006___apos_s,scope).
 arc(r_0043_0009__business,r_0043_0008__my,genv).
 arc(r_0043_0011__understand,r_0043_0015__and,arg1).
-arc(r_0043_0012__quantificational__r_0043_0012__all,r_0043_0011__understand,scope).
-arc(r_0043_0012__quantificational__r_0043_0012__all,r_0043_0015__and,restriction).
+arc(r_0043_0012__quantificational__all,r_0043_0011__understand,scope).
+arc(r_0043_0012__quantificational__all,r_0043_0015__and,restriction).
 arc(r_0043_0015__and,r_0043_0014__whys,conj1).
 arc(r_0043_0015__and,r_0043_0016__wherefores,conj2).
 arc(r_0043_0015__and,r_0043_0019__actions,r_0043_0017__of).
@@ -476,6 +476,7 @@ arc(r_0043_0023__said,r_0043_0008__my,arg0).
 arc(r_0043_0023__said,r_0043_0024__stiffly,mnr7).
 arc(r_0043_0023__said,r_0043_1003__utterance,arg1).
 arc(r_0043_1003__utterance,r_0043_0007__not,part1).
+arc(r_0043_1030,r_0044_0003__less,quality2).
 arc(r_0043_1034__utterance,r_0043_1038__imperative,part1).
 arc(r_0043_1034__utterance,r_0043_1047__imperative,part2).
 arc(r_0043_1038__imperative,r_0045_0004__drop,scope).
@@ -485,13 +486,12 @@ arc(r_0044_0003__less,r_0044_0005__criticise,emb3).
 arc(r_0044_0005__criticise,r_0043_0003__your,arg1).
 arc(r_0045_0004__drop,r_0045_0006__nonsense,arg1).
 arc(r_0045_0004__drop,r_0045_0008__Piers,voc).
-arc(r_0045_0008__Piers,r_0043_0008__my,z_0043_1040).
+arc(r_0045_0008__Piers,r_0043_0008__my,r_0043_1040).
 arc(r_0045_0010__Be,r_0043_0008__my,prd2).
 arc(r_0045_0015__exclaimed,r_0043_1034__utterance,arg1).
 arc(r_0045_0015__exclaimed,r_0045_0014__she,arg0).
 arc(r_0045_0015__exclaimed,r_0045_0019__exasperation,r_0045_0017__with_mnr).
 arc(r_0045_0019__exasperation,r_0045_0018__mounting,attrib1).
-arc(z_0043_1030,r_0044_0003__less,quality2).
 
 </pre>
 <br>
@@ -509,7 +509,7 @@ fof(id__43_A_lob_N02__44_A_lob_N02__45_A_lob_N02,axiom,
       &amp; prd2(EVENTX16) = ENTITYX6
       &amp; arg0(EVENTX16) = STATEX7
       &amp; STATEX7 = QUANTX9
-      &amp; isA(QUANTX9,r_0043_0012__quantificational__r_0043_0012__all)
+      &amp; isA(QUANTX9,r_0043_0012__quantificational__all)
       &amp; restriction(QUANTX9) = ENTITYX8
       &amp; isA(ENTITYX8,r_0043_0015__and)
       &amp; r_0043_0017__of(ENTITYX8) = ENTITYX10
@@ -551,7 +551,7 @@ fof(id__43_A_lob_N02__44_A_lob_N02__45_A_lob_N02,axiom,
       &amp; isA(ENTITYX51,r_0045_0019__exasperation)
       &amp; attrib1(ENTITYX51) = ATTRIBX52
       &amp; isA(r_0045_0008__Piers,r_0045_0008__Piers)
-      &amp; z_0043_1040(r_0045_0008__Piers) = PIERSX41
+      &amp; r_0043_1040(r_0045_0008__Piers) = PIERSX41
       &amp; isA(QUALITYX19,r_0043_0024__stiffly)
       &amp; isA(QUALITYX23,r_0044_0003__less)
       &amp; quality1(QUALITYX23) = QUALITYX24
@@ -562,7 +562,7 @@ fof(id__43_A_lob_N02__44_A_lob_N02__45_A_lob_N02,axiom,
       &amp; arg1(EVENTX20) = STATEX1
       &amp; arg0(EVENTX20) = PIERSX18
       &amp; mnr7(EVENTX20) = QUALITYX19
-      &amp; isA(EVENTX31,z_0043_1030)
+      &amp; isA(EVENTX31,r_0043_1030)
       &amp; quality2(EVENTX31) = QUALITYX23
       &amp; isA(EVENTX53,r_0045_0015__exclaimed)
       &amp; arg1(EVENTX53) = STATEX32

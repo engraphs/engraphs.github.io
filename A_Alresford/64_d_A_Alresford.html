@@ -394,16 +394,16 @@ arc(r_0070_0004__time,r_0070_0003__my,genv).
 arc(r_0070_0004__time,r_0070_0008__chair,r_0070_0006__in).
 arc(r_0070_0010__was,r_0070_0023__or,catenative).
 arc(r_0070_0011__spent,r_0070_0013__meetings,r_0070_0012__at_clr_loc).
-arc(r_0070_0011__spent,z_0070_1005,arg1).
+arc(r_0070_0011__spent,r_0070_1005,arg1).
 arc(r_0070_0019__route,r_0070_0016__by__r_0070_0018__pass,nlyr2).
 arc(r_0070_0020__was,r_0070_0021__debated,catenative).
 arc(r_0070_0021__debated,r_0070_0013__meetings,loc1).
 arc(r_0070_0021__debated,r_0070_0019__route,arg1).
 arc(r_0070_0023__or,r_0070_0024__urging,conj2).
-arc(r_0070_0023__or,z_0070_1017,conj1).
+arc(r_0070_0023__or,r_0070_1017,conj1).
 arc(r_0070_0024__urging,r_0070_0025__Winchester__r_0070_0026__City_r_0070_0027__Council,arg1).
+arc(r_0070_0024__urging,r_0070_1005,arg0).
 arc(r_0070_0024__urging,r_0070_1024__cnt,prd).
-arc(r_0070_0024__urging,z_0070_1005,arg0).
 arc(r_0070_0029__use,r_0070_0031__powers,arg1).
 arc(r_0070_0031__powers,r_0070_0025__Winchester__r_0070_0026__City_r_0070_0027__Council,genv).
 arc(r_0070_0033__buy,r_0070_0031__powers,arg0).
@@ -413,11 +413,11 @@ arc(r_0070_0033__buy,r_0070_0044__behalf,r_0070_0042__on_bnf).
 arc(r_0070_0034__ten__r_0070_0035__acres,r_0070_0037__Arlebury_r_0070_0038__Park,r_0070_0036__of).
 arc(r_0070_0041__purchase,r_0070_0040__compulsory,attrib1).
 arc(r_0070_0044__behalf,r_0070_0043__our,genv).
+arc(r_0070_1005,r_0070_0001__Much,attrib1).
+arc(r_0070_1005,r_0070_0004__time,r_0070_0002__of).
+arc(r_0070_1017,r_0070_0011__spent,catenative).
 arc(r_0070_1024__cnt,r_0070_0029__use,scope).
 arc(r_0070_1024__cnt,r_0070_0033__buy,restriction).
-arc(z_0070_1005,r_0070_0001__Much,attrib1).
-arc(z_0070_1005,r_0070_0004__time,r_0070_0002__of).
-arc(z_0070_1017,r_0070_0011__spent,catenative).
 
 </pre>
 <br>
@@ -427,7 +427,7 @@ fof(id__70_A_Alresford,axiom,
       ( CATENATIVEX6 = CONJX33
       &amp; isA(CONJX33,r_0070_0023__or)
       &amp; conj1(CONJX33) = EVENTX18
-      &amp; isA(EVENTX18,z_0070_1017)
+      &amp; isA(EVENTX18,r_0070_1017)
       &amp; catenative(EVENTX18) = CATENATIVEX7
       &amp; conj2(CONJX33) = EVENTX32
       &amp; isA(EVENTX32,r_0070_0024__urging)
@@ -453,7 +453,7 @@ fof(id__70_A_Alresford,axiom,
       &amp; arg1(EVENTX30) = ENTITYX26
       &amp; r_0070_0039__by_mnr(EVENTX30) = ENTITYX27
       &amp; r_0070_0042__on_bnf(EVENTX30) = ENTITYX29
-      &amp; isA(ENTITYX1,z_0070_1005)
+      &amp; isA(ENTITYX1,r_0070_1005)
       &amp; attrib1(ENTITYX1) = ATTRIBX2
       &amp; r_0070_0002__of(ENTITYX1) = ENTITYX3
       &amp; isA(ENTITYX3,r_0070_0004__time)

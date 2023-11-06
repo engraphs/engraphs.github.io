@@ -517,6 +517,8 @@ arc(r_0032_0018__while_tmp,r_0032_0015__can,scope).
 arc(r_0032_0018__while_tmp,r_0032_0021__reloads,restriction).
 arc(r_0032_0020__weapon,r_0032_0001__You,genv).
 arc(r_0032_0021__reloads,r_0032_0020__weapon,arg0).
+arc(r_0032_1031,r_0033_0020__zombie,conj1).
+arc(r_0032_1031,r_0033_0022__necromancer,conj2).
 arc(r_0033_0003__is,r_0032_0003__want,arg0).
 arc(r_0033_0003__is,r_0033_0005__important,prd2).
 arc(r_0033_0003__is,r_0033_0028__is,prn6).
@@ -525,8 +527,8 @@ arc(r_0033_0006__when_tmp,r_0033_0003__is,scope).
 arc(r_0033_0006__when_tmp,r_0033_0007__facing,restriction).
 arc(r_0033_0007__facing,r_0032_0003__want,arg0).
 arc(r_0033_0007__facing,r_0033_0009__monsters,arg1).
+arc(r_0033_0009__monsters,r_0032_1031,prn5).
 arc(r_0033_0009__monsters,r_0033_0008__certain,attrib1).
-arc(r_0033_0009__monsters,z_0032_1031,prn5).
 arc(r_0033_0011__can,r_0033_0013__lock__r_0033_0014__on,scope).
 arc(r_0033_0013__lock__r_0033_0014__on,r_0032_0001__You,r_0033_0016__to_clr).
 arc(r_0033_0013__lock__r_0033_0014__on,r_0033_0009__monsters,arg0).
@@ -535,8 +537,6 @@ arc(r_0033_0025__hiding,r_0033_0027__these,r_0033_0026__from_dir).
 arc(r_0033_0028__is,r_0033_0025__hiding,arg0).
 arc(r_0033_0028__is,r_0033_0031__skill,prd2).
 arc(r_0033_0031__skill,r_0033_0030__crucial,attrib2).
-arc(z_0032_1031,r_0033_0020__zombie,conj1).
-arc(z_0032_1031,r_0033_0022__necromancer,conj2).
 
 </pre>
 <br>
@@ -592,7 +592,7 @@ fof(id__32_A_Freedoom__33_A_Freedoom,axiom,
       &amp; attrib1(LOCK_ON_MONSTERSX22) = ATTRIBX23
       &amp; prn5(LOCK_ON_MONSTERSX22) = ENTITYX27
       &amp; HEARERX24 = r_0032_0001__You
-      &amp; isA(ENTITYX27,z_0032_1031)
+      &amp; isA(ENTITYX27,r_0032_1031)
       &amp; conj1(ENTITYX27) = ENTITYX28
       &amp; conj2(ENTITYX27) = ENTITYX30
       &amp; isA(ENTITYX28,r_0033_0020__zombie)

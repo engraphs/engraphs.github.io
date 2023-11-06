@@ -173,13 +173,13 @@
 <pre>
 arc(r_0301_0007__said,r_0301_0006__Nasha,arg0).
 arc(r_0301_0007__said,r_0301_1004__utterance,arg1).
-arc(r_0301_1004__utterance,z_0301_1010,part1).
+arc(r_0301_1004__utterance,r_0301_1010,part1).
+arc(r_0301_1010,r_0301_0003__gun,r_0301_1008).
 arc(r_0301_1020__imperative,r_0303_0002__Look,scope).
 arc(r_0302_0003___apos_s,r_0301_0003__gun,arg0).
 arc(r_0302_0003___apos_s,r_0302_0005__gun,prd2).
 arc(r_0303_0002__Look,r_0303_0005__size,r_0303_0003__at_clr).
 arc(r_0303_0005__size,r_0301_0003__gun,r_0303_0006__of).
-arc(z_0301_1010,r_0301_0003__gun,z_0301_1008).
 
 </pre>
 <br>
@@ -189,8 +189,8 @@ fof(id__301_A_DICK_1952__302_A_DICK_1952__303_A_DICK_1952,axiom,
       ( STATEX2 = CONJX12
       &amp; isA(CONJX12,r_0301_1004__utterance)
       &amp; part1(CONJX12) = EVENTX11
-      &amp; isA(EVENTX11,z_0301_1010)
-      &amp; z_0301_1008(EVENTX11) = GUNX9
+      &amp; isA(EVENTX11,r_0301_1010)
+      &amp; r_0301_1008(EVENTX11) = GUNX9
       &amp; isA(GUNX9,r_0301_0003__gun)
       &amp; GUNX14 = GUNX9
       &amp; isA(ENTITYX15,r_0302_0005__gun)

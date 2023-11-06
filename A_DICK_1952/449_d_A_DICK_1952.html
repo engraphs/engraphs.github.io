@@ -346,20 +346,20 @@ It 's unfortunate that no ships from our system came this far , but then we had 
 <br>
 <pre>
 arc(r_0580_0002___apos_s,r_0580_0003__unfortunate,prd2).
-arc(r_0580_0002___apos_s,r_0580_0005__quantificational__r_0580_0005__no,arg0).
-arc(r_0580_0005__quantificational__r_0580_0005__no,r_0580_0006__ships,restriction).
-arc(r_0580_0005__quantificational__r_0580_0005__no,r_0580_0010__came,scope).
+arc(r_0580_0002___apos_s,r_0580_0005__quantificational__no,arg0).
+arc(r_0580_0005__quantificational__no,r_0580_0006__ships,restriction).
+arc(r_0580_0005__quantificational__no,r_0580_0010__came,scope).
 arc(r_0580_0006__ships,r_0580_0009__system,r_0580_0007__from).
 arc(r_0580_0009__system,r_0580_0008__our,genv).
 arc(r_0580_0010__came,r_0580_0006__ships,arg0).
-arc(r_0580_0010__came,z_0580_1009,loc).
+arc(r_0580_0010__came,r_0580_1009,loc).
 arc(r_0580_0014__but,r_0580_0002___apos_s,conj1).
-arc(r_0580_0014__but,r_0580_0018__quantificational__r_0580_0018__no,conj2).
+arc(r_0580_0014__but,r_0580_0018__quantificational__no,conj2).
 arc(r_0580_0017__had,r_0580_0008__our,arg0).
 arc(r_0580_0017__had,r_0580_0015__then,tmp1).
 arc(r_0580_0017__had,r_0580_0019__reason,arg1).
-arc(r_0580_0018__quantificational__r_0580_0018__no,r_0580_0019__reason,restriction).
-arc(r_0580_0018__quantificational__r_0580_0018__no,r_0580_0024__until_tmp,scope).
+arc(r_0580_0018__quantificational__no,r_0580_0019__reason,restriction).
+arc(r_0580_0018__quantificational__no,r_0580_0024__until_tmp,scope).
 arc(r_0580_0019__reason,r_0580_0021__suspect,emb3).
 arc(r_0580_0021__suspect,r_0580_0023__life,arg1).
 arc(r_0580_0023__life,r_0580_0022__intelligent,attrib1).
@@ -369,7 +369,7 @@ arc(r_0580_0026__saw,r_0580_0008__our,arg0).
 arc(r_0580_0026__saw,r_0580_0029__glow,arg1).
 arc(r_0580_0029__glow,r_0580_0028__fission,arg0).
 arc(r_0580_0029__glow,r_0580_0032__sky,r_0580_0030__in_loc).
-arc(z_0580_1009,r_0580_0012__far,attrib2).
+arc(r_0580_1009,r_0580_0012__far,attrib2).
 
 </pre>
 <br>
@@ -377,7 +377,7 @@ arc(z_0580_1009,r_0580_0012__far,attrib2).
 fof(id__580_A_DICK_1952,axiom,
     ? [STATEX3,STATEX16,STATEX25,TRESPASSERSX13,TRESPASSERSX23,CONJX30,QUANTX15,CONNX22,EVENTX28,EVENTX27,EVENTX29,EVENTX21,EVENTX11,QUANTX5,EVENTX10,ENTITYX14,ENTITYX24,ENTITYX26,ENTITYX19,ENTITYX4,ENTITYX7,ENTITYX6,ATTRIBX20,ATTRIBX2,ATTRIBX8,QUALITYX12] :
       ( STATEX3 = QUANTX5
-      &amp; isA(QUANTX5,r_0580_0005__quantificational__r_0580_0005__no)
+      &amp; isA(QUANTX5,r_0580_0005__quantificational__no)
       &amp; restriction(QUANTX5) = ENTITYX4
       &amp; isA(ENTITYX4,r_0580_0006__ships)
       &amp; r_0580_0007__from(ENTITYX4) = ENTITYX6
@@ -394,7 +394,7 @@ fof(id__580_A_DICK_1952,axiom,
       &amp; r_0580_0030__in_loc(EVENTX27) = ENTITYX26
       &amp; isA(ENTITYX6,r_0580_0009__system)
       &amp; genv(ENTITYX6) = r_0580_0008__our
-      &amp; isA(ENTITYX7,z_0580_1009)
+      &amp; isA(ENTITYX7,r_0580_1009)
       &amp; attrib2(ENTITYX7) = ATTRIBX8
       &amp; TRESPASSERSX13 = r_0580_0008__our
       &amp; isA(ENTITYX19,r_0580_0023__life)
@@ -414,7 +414,7 @@ fof(id__580_A_DICK_1952,axiom,
       &amp; prd2(EVENTX11) = ATTRIBX2
       &amp; arg0(EVENTX11) = STATEX3
       &amp; conj2(CONJX30) = QUANTX15
-      &amp; isA(QUANTX15,r_0580_0018__quantificational__r_0580_0018__no)
+      &amp; isA(QUANTX15,r_0580_0018__quantificational__no)
       &amp; restriction(QUANTX15) = ENTITYX14
       &amp; isA(ENTITYX14,r_0580_0019__reason)
       &amp; emb3(ENTITYX14) = STATEX16

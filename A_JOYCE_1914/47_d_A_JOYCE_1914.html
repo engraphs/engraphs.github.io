@@ -606,6 +606,7 @@ arc(r_0102_0008__knelt__r_0102_0009__down,r_0102_0007__three,mod).
 arc(r_0102_0008__knelt__r_0102_0009__down,r_0102_0012__foot,r_0102_0010__at_loc).
 arc(r_0102_0012__foot,r_0102_0015__bed,r_0102_0013__of).
 arc(r_0102_1036__question,r_0104_0012__and,scope).
+arc(r_0102_1055,r_0104_0025__one__r_0104_0026__side,r_0104_0024__to).
 arc(r_0103_0002__pretended,r_0103_0001__I,arg0).
 arc(r_0103_0002__pretended,r_0103_0004__pray,arg1).
 arc(r_0103_0004__pray,r_0103_0001__I,arg0).
@@ -618,7 +619,7 @@ arc(r_0103_0009__gather,r_0103_0011__thoughts,arg1).
 arc(r_0103_0011__thoughts,r_0103_0001__I,genv).
 arc(r_0103_0012__because_cnt,r_0103_0007__could,scope).
 arc(r_0103_0012__because_cnt,r_0103_0018__distracted,restriction).
-arc(r_0103_0015__woman,r_0102_0001__Nannie,z_0102_1019).
+arc(r_0103_0015__woman,r_0102_0001__Nannie,r_0102_1019).
 arc(r_0103_0015__woman,r_0103_0014__old,attrib3).
 arc(r_0103_0017__mutterings,r_0103_0015__woman,genv).
 arc(r_0103_0018__distracted,r_0103_0001__I,arg1).
@@ -636,12 +637,11 @@ arc(r_0104_0012__and,r_0104_0020__were,conj2).
 arc(r_0104_0015__heels,r_0104_0018__cloth__r_0104_0019__boots,r_0104_0016__of).
 arc(r_0104_0018__cloth__r_0104_0019__boots,r_0102_0001__Nannie,genv).
 arc(r_0104_0020__were,r_0104_0013__how,mnr1).
-arc(r_0104_0020__were,r_0104_0023__quantificational__r_0104_0023__all,catenative).
+arc(r_0104_0020__were,r_0104_0023__quantificational__all,catenative).
+arc(r_0104_0021__trodden__r_0104_0022__down,r_0102_1055,dir).
 arc(r_0104_0021__trodden__r_0104_0022__down,r_0104_0015__heels,arg1).
-arc(r_0104_0021__trodden__r_0104_0022__down,z_0102_1055,dir).
-arc(r_0104_0023__quantificational__r_0104_0023__all,r_0104_0021__trodden__r_0104_0022__down,scope).
-arc(r_0104_0023__quantificational__r_0104_0023__all,z_0102_1055,restriction).
-arc(z_0102_1055,r_0104_0025__one__r_0104_0026__side,r_0104_0024__to).
+arc(r_0104_0023__quantificational__all,r_0102_1055,restriction).
+arc(r_0104_0023__quantificational__all,r_0104_0021__trodden__r_0104_0022__down,scope).
 
 </pre>
 <br>
@@ -668,9 +668,9 @@ fof(id__102_A_JOYCE_1914__103_A_JOYCE_1914__104_A_JOYCE_1914,axiom,
       &amp; arg1(EVENTX44) = ENTITYX39
       &amp; r_0104_0009__at_loc(EVENTX44) = ENTITYX43
       &amp; CATENATIVEX50 = QUANTX53
-      &amp; isA(QUANTX53,r_0104_0023__quantificational__r_0104_0023__all)
+      &amp; isA(QUANTX53,r_0104_0023__quantificational__all)
       &amp; restriction(QUANTX53) = ENTITYX52
-      &amp; isA(ENTITYX52,z_0102_1055)
+      &amp; isA(ENTITYX52,r_0102_1055)
       &amp; r_0104_0024__to(ENTITYX52) = ENTITYX54
       &amp; scope(QUANTX53) = EVENTX56
       &amp; isA(EVENTX56,r_0104_0021__trodden__r_0104_0022__down)
@@ -689,7 +689,7 @@ fof(id__102_A_JOYCE_1914__103_A_JOYCE_1914__104_A_JOYCE_1914,axiom,
       &amp; isA(ENTITYX16,r_0103_0017__mutterings)
       &amp; genv(ENTITYX16) = ENTITYX17
       &amp; isA(ENTITYX17,r_0103_0015__woman)
-      &amp; z_0102_1019(ENTITYX17) = NANNIEX20
+      &amp; r_0102_1019(ENTITYX17) = NANNIEX20
       &amp; attrib3(ENTITYX17) = ATTRIBX21
       &amp; NANNIEX20 = r_0102_0001__Nannie
       &amp; SPEAKERX22 = r_0103_0001__I

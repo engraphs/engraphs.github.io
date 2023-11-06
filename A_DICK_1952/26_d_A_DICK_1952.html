@@ -170,28 +170,28 @@ Atmosphere poisoned , water vaporized , all the land fused . &rdquo;
 <pre>
 arc(r_0043_0002__poisoned,r_0043_0001__Atmosphere,arg1).
 arc(r_0043_0005__vaporized,r_0043_0004__water,arg1).
-arc(r_0043_0007__quantificational__r_0043_0007__all,z_0043_1015,restriction).
-arc(r_0043_0007__quantificational__r_0043_0007__all,z_0043_1016,scope).
-arc(r_0043_0010__fused,z_0043_1015,arg1).
-arc(z_0043_1015,r_0043_0009__land,nlyr2).
-arc(z_0043_1016,r_0043_0001__Atmosphere,conj1).
-arc(z_0043_1016,r_0043_0004__water,conj2).
-arc(z_0043_1016,z_0043_1015,conj3).
-arc(z_0043_1017,z_0043_1016,z_0043_1002).
+arc(r_0043_0007__quantificational__all,r_0043_1015,restriction).
+arc(r_0043_0007__quantificational__all,r_0043_1016,scope).
+arc(r_0043_0010__fused,r_0043_1015,arg1).
+arc(r_0043_1015,r_0043_0009__land,nlyr2).
+arc(r_0043_1016,r_0043_0001__Atmosphere,conj1).
+arc(r_0043_1016,r_0043_0004__water,conj2).
+arc(r_0043_1016,r_0043_1015,conj3).
+arc(r_0043_1017,r_0043_1016,r_0043_1002).
 
 </pre>
 <br>
 <pre>
 fof(id__43_A_DICK_1952,axiom,
     ? [EVENTX18,QUANTX11,EVENTX14,EVENTX9,EVENTX6,ENTITYX3,ENTITYX4,ENTITYX7,ENTITYX10,ENTITYX12] :
-      ( isA(QUANTX11,r_0043_0007__quantificational__r_0043_0007__all)
+      ( isA(QUANTX11,r_0043_0007__quantificational__all)
       &amp; isA(EVENTX14,r_0043_0010__fused)
       &amp; arg1(EVENTX14) = ENTITYX10
-      &amp; isA(ENTITYX10,z_0043_1015)
+      &amp; isA(ENTITYX10,r_0043_1015)
       &amp; nlyr2(ENTITYX10) = ENTITYX12
       &amp; restriction(QUANTX11) = ENTITYX10
       &amp; scope(QUANTX11) = ENTITYX3
-      &amp; isA(ENTITYX3,z_0043_1016)
+      &amp; isA(ENTITYX3,r_0043_1016)
       &amp; conj1(ENTITYX3) = ENTITYX4
       &amp; conj2(ENTITYX3) = ENTITYX7
       &amp; conj3(ENTITYX3) = ENTITYX10
@@ -202,8 +202,8 @@ fof(id__43_A_DICK_1952,axiom,
       &amp; arg1(EVENTX9) = ENTITYX7
       &amp; isA(ENTITYX7,r_0043_0004__water)
       &amp; isA(ENTITYX12,r_0043_0009__land)
-      &amp; isA(EVENTX18,z_0043_1017)
-      &amp; z_0043_1002(EVENTX18) = ENTITYX3 ) ).
+      &amp; isA(EVENTX18,r_0043_1017)
+      &amp; r_0043_1002(EVENTX18) = ENTITYX3 ) ).
 
 
 </pre>

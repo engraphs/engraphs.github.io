@@ -422,22 +422,22 @@ arc(r_0145_0008__head,r_0145_0001__Eliza,genv).
 arc(r_0146_0005___apos_s,r_0146_0007__friends,arg0).
 arc(r_0146_0005___apos_s,r_0146_0011__friends,r_0146_0008__like_mod).
 arc(r_0146_0005___apos_s,r_0146_0015__said,prn10).
-arc(r_0146_0006__quantificational__r_0146_0006__no,r_0146_0007__friends,restriction).
-arc(r_0146_0006__quantificational__r_0146_0006__no,r_0146_0018__when_tmp,scope).
+arc(r_0146_0006__quantificational__no,r_0146_0007__friends,restriction).
+arc(r_0146_0006__quantificational__no,r_0146_0018__when_tmp,scope).
 arc(r_0146_0011__friends,r_0146_0010__old,attrib2).
 arc(r_0146_0011__friends,r_0146_0026__friends,prn4).
 arc(r_0146_0015__said,r_0145_0001__Eliza,arg0).
 arc(r_0146_0018__when_tmp,r_0146_0005___apos_s,scope).
-arc(r_0146_0018__when_tmp,r_0146_0019__quantificational__r_0146_0019__all,restriction).
-arc(r_0146_0019__quantificational__r_0146_0019__all,r_0146_0020__is,scope).
-arc(r_0146_0019__quantificational__r_0146_0019__all,z_0145_1024,restriction).
+arc(r_0146_0018__when_tmp,r_0146_0019__quantificational__all,restriction).
+arc(r_0146_0019__quantificational__all,r_0145_1024,restriction).
+arc(r_0146_0019__quantificational__all,r_0146_0020__is,scope).
 arc(r_0146_0020__is,r_0146_0022__and,catenative).
-arc(r_0146_0021__said,z_0145_1024,arg1).
+arc(r_0146_0021__said,r_0145_1024,arg1).
 arc(r_0146_0022__and,r_0146_0021__said,conj1).
 arc(r_0146_0022__and,r_0146_0023__done,conj2).
-arc(r_0146_0023__done,z_0145_1024,arg1).
-arc(r_0146_0025__quantificational__r_0146_0025__no,r_0146_0011__friends,scope).
-arc(r_0146_0025__quantificational__r_0146_0025__no,r_0146_0026__friends,restriction).
+arc(r_0146_0023__done,r_0145_1024,arg1).
+arc(r_0146_0025__quantificational__no,r_0146_0011__friends,scope).
+arc(r_0146_0025__quantificational__no,r_0146_0026__friends,restriction).
 arc(r_0146_0030__can,r_0146_0031__trust,scope).
 arc(r_0146_0031__trust,r_0146_0026__friends,arg1).
 arc(r_0146_0031__trust,r_0146_0029__body,arg0).
@@ -464,7 +464,7 @@ fof(id__145_A_JOYCE_1914__146_A_JOYCE_1914,axiom,
       &amp; isA(ENTITYX4,r_0145_0008__head)
       &amp; genv(ENTITYX4) = ELIZAX5
       &amp; ELIZAX5 = r_0145_0001__Eliza
-      &amp; isA(QUANTX14,r_0146_0025__quantificational__r_0146_0025__no)
+      &amp; isA(QUANTX14,r_0146_0025__quantificational__no)
       &amp; isA(OPERATORX16,r_0146_0030__can)
       &amp; scope(OPERATORX16) = EVENTX17
       &amp; isA(EVENTX17,r_0146_0031__trust)
@@ -490,7 +490,7 @@ fof(id__145_A_JOYCE_1914__146_A_JOYCE_1914,axiom,
       &amp; arg0(EVENTX7) = r_0145_0001__Eliza
       &amp; arg1(EVENTX7) = ENTITYX4
       &amp; mnr3(EVENTX7) = QUALITYX6
-      &amp; isA(QUANTX10,r_0146_0006__quantificational__r_0146_0006__no)
+      &amp; isA(QUANTX10,r_0146_0006__quantificational__no)
       &amp; restriction(QUANTX10) = ENTITYX9
       &amp; isA(ENTITYX9,r_0146_0007__friends)
       &amp; scope(QUANTX10) = CONNX21
@@ -501,9 +501,9 @@ fof(id__145_A_JOYCE_1914__146_A_JOYCE_1914,axiom,
       &amp; r_0146_0008__like_mod(EVENTX31) = ENTITYX11
       &amp; prn10(EVENTX31) = EVENTX18
       &amp; restriction(CONNX21) = QUANTX23
-      &amp; isA(QUANTX23,r_0146_0019__quantificational__r_0146_0019__all)
+      &amp; isA(QUANTX23,r_0146_0019__quantificational__all)
       &amp; restriction(QUANTX23) = ENTITYX22
-      &amp; isA(ENTITYX22,z_0145_1024)
+      &amp; isA(ENTITYX22,r_0145_1024)
       &amp; scope(QUANTX23) = EVENTX30
       &amp; isA(EVENTX30,r_0146_0020__is)
       &amp; catenative(EVENTX30) = CATENATIVEX25 ) ).

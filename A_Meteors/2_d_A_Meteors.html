@@ -612,12 +612,12 @@ arc(r_0002_0011__smashing,r_0002_0010__meteors,arg1).
 arc(r_0002_0011__smashing,r_0002_0015__laser__r_0002_0016__bolts,r_0002_0013__with_mnr).
 arc(r_0002_0015__laser__r_0002_0016__bolts,r_0002_0002__your,genv).
 arc(r_0002_0017__as_cnt,r_0002_0011__smashing,scope).
-arc(r_0002_0017__as_cnt,r_0002_0023__quantificational__r_0002_0023__all,restriction).
+arc(r_0002_0017__as_cnt,r_0002_0023__quantificational__all,restriction).
 arc(r_0002_0019__hurtle,r_0002_0002__your,r_0002_0020__towards_dir).
 arc(r_0002_0019__hurtle,r_0002_0010__meteors,arg0).
 arc(r_0002_0019__hurtle,r_0002_0024__sides,r_0002_0022__on_loc).
-arc(r_0002_0023__quantificational__r_0002_0023__all,r_0002_0019__hurtle,scope).
-arc(r_0002_0023__quantificational__r_0002_0023__all,r_0002_0024__sides,restriction).
+arc(r_0002_0023__quantificational__all,r_0002_0019__hurtle,scope).
+arc(r_0002_0023__quantificational__all,r_0002_0024__sides,restriction).
 arc(r_0002_1004__imperative,r_0002_1008__cnt,scope).
 arc(r_0002_1008__cnt,r_0002_0001__Steer,scope).
 arc(r_0002_1008__cnt,r_0002_0017__as_cnt,restriction).
@@ -637,12 +637,12 @@ arc(r_0004_0002__ship,r_0002_0002__your,genv).
 arc(r_0004_0003__is,r_0004_0004__equipped,catenative).
 arc(r_0004_0004__equipped,r_0004_0002__ship,arg1).
 arc(r_0004_0004__equipped,r_0004_0008__laser__r_0004_0009__bolts,r_0004_0005__with_clr).
+arc(r_0004_0007__many,r_0002_1052,r_0004_0010__as).
 arc(r_0004_0007__many,r_0004_0006__as,quality1).
-arc(r_0004_0007__many,z_0002_1052,r_0004_0010__as).
 arc(r_0004_0008__laser__r_0004_0009__bolts,r_0004_0007__many,attrib1).
 arc(r_0004_0012__can,r_0004_0013__fire,scope).
 arc(r_0004_0013__fire,r_0002_0002__your,arg0).
-arc(r_0004_0013__fire,z_0002_1052,arg1).
+arc(r_0004_0013__fire,r_0002_1052,arg1).
 arc(r_0004_0014__and,r_0004_0003__is,conj1).
 arc(r_0004_0014__and,r_0004_0021__can,conj2).
 arc(r_0004_0018__resort,r_0004_0017__last,attrib2).
@@ -704,7 +704,7 @@ fof(id__2_A_Meteors__3_A_Meteors__4_A_Meteors,axiom,
       &amp; isA(EVENTX51,r_0004_0013__fire)
       &amp; arg1(EVENTX51) = ENTITYX48
       &amp; arg0(EVENTX51) = HEARERX49
-      &amp; isA(ENTITYX48,z_0002_1052)
+      &amp; isA(ENTITYX48,r_0002_1052)
       &amp; HEARERX49 = r_0002_0002__your
       &amp; isA(ENTITYX55,r_0004_0018__resort)
       &amp; attrib2(ENTITYX55) = ATTRIBX56
@@ -730,7 +730,7 @@ fof(id__2_A_Meteors__3_A_Meteors__4_A_Meteors,axiom,
       &amp; arg1(EVENTX19) = METEORSX10
       &amp; r_0002_0013__with_mnr(EVENTX19) = ENTITYX11
       &amp; restriction(CONNX13) = QUANTX17
-      &amp; isA(QUANTX17,r_0002_0023__quantificational__r_0002_0023__all)
+      &amp; isA(QUANTX17,r_0002_0023__quantificational__all)
       &amp; restriction(QUANTX17) = ENTITYX16
       &amp; isA(ENTITYX16,r_0002_0024__sides)
       &amp; scope(QUANTX17) = EVENTX18

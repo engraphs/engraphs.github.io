@@ -244,19 +244,19 @@
 arc(r_0138_0005__Purpose,r_0138_0007__Utilization,r_0138_0006__of).
 arc(r_0138_0005__Purpose,r_0138_0016__cases,prn5__r_0138_0014__except_r_0138_0015__in).
 arc(r_0138_0007__Utilization,r_0138_0012__data,r_0138_0008__of).
-arc(r_0138_0009__quantificational__r_0138_0009__all,r_0138_0007__Utilization,scope).
-arc(r_0138_0009__quantificational__r_0138_0009__all,r_0138_0012__data,restriction).
+arc(r_0138_0009__quantificational__all,r_0138_0007__Utilization,scope).
+arc(r_0138_0009__quantificational__all,r_0138_0012__data,restriction).
 arc(r_0138_0012__data,r_0138_0010__retained,attrib2).
 arc(r_0138_0012__data,r_0138_0011__personal,attrib3).
 arc(r_0138_0017__falling,r_0138_0016__cases,arg0).
-arc(r_0138_0017__falling,z_0138_1016,r_0138_0018__under_loc).
-arc(r_0138_0019__quantificational__r_0138_0019__any,r_0138_0017__falling,scope).
-arc(r_0138_0019__quantificational__r_0138_0019__any,z_0138_1016,restriction).
+arc(r_0138_0017__falling,r_0138_1016,r_0138_0018__under_loc).
+arc(r_0138_0019__quantificational__any,r_0138_0017__falling,scope).
+arc(r_0138_0019__quantificational__any,r_0138_1016,restriction).
 arc(r_0138_0021__items__r_0138_0023__i,r_0138_0027__iii,r_0138_0025__to).
 arc(r_0138_0021__items__r_0138_0023__i,r_0138_0030__paragraph_r_0138_0032__4,r_0138_0029__of).
 arc(r_0138_0030__paragraph__r_0138_0032__4,r_0138_0035__Article_r_0138_0036__18,r_0138_0034__of).
-arc(z_0138_1016,r_0138_0021__items__r_0138_0023__i,r_0138_0020__of).
-arc(z_0138_1018,r_0138_0005__Purpose,z_0138_1002).
+arc(r_0138_1016,r_0138_0021__items__r_0138_0023__i,r_0138_0020__of).
+arc(r_0138_1018,r_0138_0005__Purpose,r_0138_1002).
 
 </pre>
 <br>
@@ -266,7 +266,7 @@ fof(id__138_A_law_h15A119,axiom,
       ( isA(ENTITYX3,r_0138_0005__Purpose)
       &amp; r_0138_0006__of(ENTITYX3) = ENTITYX4
       &amp; prn5__r_0138_0014__except_r_0138_0015__in(ENTITYX3) = ENTITYX9
-      &amp; isA(QUANTX6,r_0138_0009__quantificational__r_0138_0009__all)
+      &amp; isA(QUANTX6,r_0138_0009__quantificational__all)
       &amp; restriction(QUANTX6) = ENTITYX5
       &amp; isA(ENTITYX5,r_0138_0012__data)
       &amp; attrib2(ENTITYX5) = ATTRIBX7
@@ -274,9 +274,9 @@ fof(id__138_A_law_h15A119,axiom,
       &amp; scope(QUANTX6) = ENTITYX4
       &amp; isA(ENTITYX4,r_0138_0007__Utilization)
       &amp; r_0138_0008__of(ENTITYX4) = ENTITYX5
-      &amp; isA(QUANTX11,r_0138_0019__quantificational__r_0138_0019__any)
+      &amp; isA(QUANTX11,r_0138_0019__quantificational__any)
       &amp; restriction(QUANTX11) = ENTITYX10
-      &amp; isA(ENTITYX10,z_0138_1016)
+      &amp; isA(ENTITYX10,r_0138_1016)
       &amp; r_0138_0020__of(ENTITYX10) = ENTITYX12
       &amp; scope(QUANTX11) = EVENTX17
       &amp; isA(EVENTX17,r_0138_0017__falling)
@@ -292,8 +292,8 @@ fof(id__138_A_law_h15A119,axiom,
       &amp; isA(ENTITYX15,r_0138_0035__Article__r_0138_0036__18)
       &amp; isA(ATTRIBX7,r_0138_0010__retained)
       &amp; isA(ATTRIBX8,r_0138_0011__personal)
-      &amp; isA(EVENTX19,z_0138_1018)
-      &amp; z_0138_1002(EVENTX19) = ENTITYX3 ) ).
+      &amp; isA(EVENTX19,r_0138_1018)
+      &amp; r_0138_1002(EVENTX19) = ENTITYX3 ) ).
 
 
 </pre>

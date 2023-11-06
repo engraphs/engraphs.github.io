@@ -365,6 +365,7 @@ arc(r_0018_0011__article,r_0018_0015__Home,r_0018_0012__on).
 arc(r_0018_0015__Home,r_0018_0018__Future,r_0018_0016__of).
 arc(r_0018_1010__question,r_0019_0006__think,scope).
 arc(r_0018_1024__question,r_0020_0004__might,scope).
+arc(r_0018_1030,r_0020_0009__same,attrib2).
 arc(r_0019_0006__think,r_0018_0003__you,arg0).
 arc(r_0019_0006__think,r_0019_0010__will,arg1).
 arc(r_0019_0009__homes,r_0019_0007__people,genv).
@@ -374,10 +375,9 @@ arc(r_0019_0011__be,r_0019_0009__homes,arg0).
 arc(r_0019_0011__be,r_0019_0012__different,prd2).
 arc(r_0019_0012__different,r_0019_0003__ways,r_0019_0001__In).
 arc(r_0020_0004__might,r_0020_0007__be,scope).
+arc(r_0020_0007__be,r_0018_1030,prd2).
 arc(r_0020_0007__be,r_0020_0003__ways,r_0020_0001__In_mnr).
 arc(r_0020_0007__be,r_0020_0006__still,tmp4).
-arc(r_0020_0007__be,z_0018_1030,prd2).
-arc(z_0018_1030,r_0020_0009__same,attrib2).
 
 </pre>
 <br>
@@ -412,7 +412,7 @@ fof(id__18_A_fce_0100_2000_12__19_A_fce_0100_2000_12__20_A_fce_0100_2000_12,axio
       &amp; isA(ENTITYX25,r_0020_0003__ways)
       &amp; ( HOMESX26 = HOMESX26
         | HOMESX26 = HOMESX13 )
-      &amp; isA(ENTITYX28,z_0018_1030)
+      &amp; isA(ENTITYX28,r_0018_1030)
       &amp; attrib2(ENTITYX28) = ATTRIBX29
       &amp; isA(r_0018_0003__you,r_0018_0003__you)
       &amp; prn3(r_0018_0003__you) = ENTITYX1

@@ -801,12 +801,14 @@ arc(r_0011_0013__came,r_0011_0014__downstairs,clr_dir3).
 arc(r_0011_0014__downstairs,r_0011_0016__supper,r_0011_0015__to).
 arc(r_0011_1010__cnt,r_0011_0004__sitting,scope).
 arc(r_0011_1010__cnt,r_0011_0009__smoking,restriction).
+arc(r_0011_1029,r_0011_0002__Cotter,genv).
 arc(r_0011_1033__utterance,r_0012_0025__would,part1).
 arc(r_0011_1033__utterance,r_0012_0034__was,part2).
 arc(r_0011_1033__utterance,r_0012_0039__was,part3).
 arc(r_0011_1033__utterance,r_0012_0046___apos_ll,part4).
+arc(r_0011_1038,r_0012_0030__exactly,quality1).
 arc(r_0011_1060__cnt,r_0013_0002__began,scope).
-arc(r_0011_1060__cnt,r_0013_0009__quantificational__r_0013_0009__no,restriction).
+arc(r_0011_1060__cnt,r_0013_0009__quantificational__no,restriction).
 arc(r_0012_0001__While_tmp,r_0012_0004__was,restriction).
 arc(r_0012_0001__While_tmp,r_0012_0012__as_if_mnr,scope).
 arc(r_0012_0003__aunt,r_0011_0012__I,genv).
@@ -820,14 +822,14 @@ arc(r_0012_0012__as_if_mnr,r_0012_0010__said,scope).
 arc(r_0012_0012__as_if_mnr,r_0012_0013__returning,restriction).
 arc(r_0012_0013__returning,r_0011_0002__Cotter,arg0).
 arc(r_0012_0013__returning,r_0012_0017__remark,r_0012_0014__to_dir).
+arc(r_0012_0017__remark,r_0011_1029,r_0012_0018__of).
 arc(r_0012_0017__remark,r_0012_0016__former,attrib2).
-arc(r_0012_0017__remark,z_0011_1029,r_0012_0018__of).
 arc(r_0012_0025__would,r_0012_0026__n_apos_t,scope).
 arc(r_0012_0026__n_apos_t,r_0012_0027__say,scope).
 arc(r_0012_0027__say,r_0011_0002__Cotter,arg0).
 arc(r_0012_0027__say,r_0012_0029__was,arg1).
+arc(r_0012_0029__was,r_0011_1038,prd2).
 arc(r_0012_0029__was,r_0012_0028__he,arg0).
-arc(r_0012_0029__was,z_0011_1038,prd2).
 arc(r_0012_0034__was,r_0012_0035__something,arg0).
 arc(r_0012_0035__something,r_0012_0036__queer,attrib2).
 arc(r_0012_0039__was,r_0012_0040__something,arg0).
@@ -842,16 +844,14 @@ arc(r_0013_0002__began,r_0013_0004__puff,catenative).
 arc(r_0013_0004__puff,r_0011_0002__Cotter,arg0).
 arc(r_0013_0004__puff,r_0013_0007__pipe,r_0013_0005__at_mnr).
 arc(r_0013_0007__pipe,r_0011_0002__Cotter,genv).
-arc(r_0013_0009__quantificational__r_0013_0009__no,r_0013_0010__doubt,restriction).
-arc(r_0013_0009__quantificational__r_0013_0009__no,r_0013_0011__arranging,scope).
+arc(r_0013_0009__quantificational__no,r_0013_0010__doubt,restriction).
+arc(r_0013_0009__quantificational__no,r_0013_0011__arranging,scope).
 arc(r_0013_0011__arranging,r_0011_0002__Cotter,arg0).
 arc(r_0013_0011__arranging,r_0013_0010__doubt,mod).
 arc(r_0013_0011__arranging,r_0013_0013__opinion,arg1).
 arc(r_0013_0011__arranging,r_0013_0016__mind,r_0013_0014__in_loc).
 arc(r_0013_0013__opinion,r_0011_0002__Cotter,genv).
 arc(r_0013_0016__mind,r_0011_0002__Cotter,genv).
-arc(z_0011_1029,r_0011_0002__Cotter,genv).
-arc(z_0011_1038,r_0012_0030__exactly,quality1).
 
 </pre>
 <br>
@@ -924,7 +924,7 @@ fof(id__11_A_JOYCE_1914__12_A_JOYCE_1914__13_A_JOYCE_1914,axiom,
       &amp; isA(ENTITYX25,r_0012_0017__remark)
       &amp; attrib2(ENTITYX25) = ATTRIBX26
       &amp; r_0012_0018__of(ENTITYX25) = ENTITYX27
-      &amp; isA(ENTITYX27,z_0011_1029)
+      &amp; isA(ENTITYX27,r_0011_1029)
       &amp; genv(ENTITYX27) = COTTERX28
       &amp; ( COTTERX28 = COTTERX23
         | COTTERX28 = r_0011_0002__Cotter )
@@ -942,7 +942,7 @@ fof(id__11_A_JOYCE_1914__12_A_JOYCE_1914__13_A_JOYCE_1914,axiom,
       &amp; ( COTTERX67 = COTTERX55
         | COTTERX67 = r_0011_0002__Cotter )
       &amp; isA(ATTRIBX7,r_0011_0001__Old)
-      &amp; isA(ATTRIBX36,z_0011_1038)
+      &amp; isA(ATTRIBX36,r_0011_1038)
       &amp; quality1(ATTRIBX36) = QUALITYX37
       &amp; isA(ATTRIBX43,r_0012_0036__queer)
       &amp; isA(ATTRIBX45,r_0012_0041__uncanny)
@@ -984,7 +984,7 @@ fof(id__11_A_JOYCE_1914__12_A_JOYCE_1914__13_A_JOYCE_1914,axiom,
       &amp; isA(EVENTX69,r_0013_0002__began)
       &amp; catenative(EVENTX69) = STATEX56
       &amp; restriction(CONNX61) = QUANTX63
-      &amp; isA(QUANTX63,r_0013_0009__quantificational__r_0013_0009__no)
+      &amp; isA(QUANTX63,r_0013_0009__quantificational__no)
       &amp; restriction(QUANTX63) = ENTITYX62
       &amp; isA(ENTITYX62,r_0013_0010__doubt)
       &amp; scope(QUANTX63) = EVENTX68

@@ -746,8 +746,8 @@ arc(r_0009_0015__travel,r_0009_0010__When,tmp1).
 arc(r_0009_1006__question,r_0009_0011__would,scope).
 arc(r_0009_1020__question,r_0010_0013__would,scope).
 arc(r_0009_1042__imperative,r_0012_0008__and,scope).
-arc(r_0009_1050__question,r_0012_0016__quantificational__r_0012_0016__each,scope).
-arc(r_0009_1060__question,r_0013_0003__quantificational__r_0013_0003__anything,scope).
+arc(r_0009_1050__question,r_0012_0016__quantificational__each,scope).
+arc(r_0009_1060__question,r_0013_0003__quantificational__anything,scope).
 arc(r_0010_0001__Accommodation,r_0010_0003__Camp__r_0010_0004__California,r_0010_0002__at).
 arc(r_0010_0005__is,r_0009_1020__question,prn5).
 arc(r_0010_0005__is,r_0010_0001__Accommodation,arg0).
@@ -777,17 +777,17 @@ arc(r_0012_0012__good,r_0012_0011__how,quality1).
 arc(r_0012_0014__are,r_0009_0008__you,arg0).
 arc(r_0012_0014__are,r_0012_0012__good,prd2).
 arc(r_0012_0014__are,r_0012_0017__one,r_0012_0015__at_rst).
-arc(r_0012_0016__quantificational__r_0012_0016__each,r_0012_0014__are,scope).
-arc(r_0012_0016__quantificational__r_0012_0016__each,r_0012_0017__one,restriction).
-arc(r_0013_0001__Is,z_0009_1069,arg0).
-arc(r_0013_0003__quantificational__r_0013_0003__anything,r_0013_0001__Is,scope).
-arc(r_0013_0003__quantificational__r_0013_0003__anything,z_0009_1069,restriction).
+arc(r_0012_0016__quantificational__each,r_0012_0014__are,scope).
+arc(r_0012_0016__quantificational__each,r_0012_0017__one,restriction).
+arc(r_0013_0001__Is,r_0009_1069,arg0).
+arc(r_0013_0003__quantificational__anything,r_0009_1069,restriction).
+arc(r_0013_0003__quantificational__anything,r_0013_0001__Is,scope).
 arc(r_0013_0005__would,r_0013_0006__like,scope).
 arc(r_0013_0006__like,r_0009_0008__you,arg0).
 arc(r_0013_0006__like,r_0013_0008__ask,arg1).
 arc(r_0013_0008__ask,r_0009_0001__We,arg2).
 arc(r_0013_0008__ask,r_0009_0008__you,arg0).
-arc(r_0013_0008__ask,z_0009_1069,arg1).
+arc(r_0013_0008__ask,r_0009_1069,arg1).
 
 </pre>
 <br>
@@ -820,7 +820,7 @@ fof(id__9_A_fce_0100_2000_06__10_A_fce_0100_2000_06__11_A_fce_0100_2000_06__12_A
       &amp; STATEX48 = OPERATORX50
       &amp; isA(OPERATORX50,r_0009_1050__question)
       &amp; scope(OPERATORX50) = QUANTX55
-      &amp; isA(QUANTX55,r_0012_0016__quantificational__r_0012_0016__each)
+      &amp; isA(QUANTX55,r_0012_0016__quantificational__each)
       &amp; restriction(QUANTX55) = ENTITYX54
       &amp; isA(ENTITYX54,r_0012_0017__one)
       &amp; scope(QUANTX55) = EVENTX56
@@ -900,13 +900,13 @@ fof(id__9_A_fce_0100_2000_06__10_A_fce_0100_2000_06__11_A_fce_0100_2000_06__12_A
       &amp; arg1(EVENTX57) = STATEX48
       &amp; isA(OPERATORX60,r_0009_1060__question)
       &amp; scope(OPERATORX60) = QUANTX62
-      &amp; isA(QUANTX62,r_0013_0003__quantificational__r_0013_0003__anything)
+      &amp; isA(QUANTX62,r_0013_0003__quantificational__anything)
       &amp; isA(OPERATORX67,r_0013_0005__would)
       &amp; scope(OPERATORX67) = EVENTX68
       &amp; isA(EVENTX68,r_0013_0006__like)
       &amp; arg0(EVENTX68) = HEARERX63
       &amp; arg1(EVENTX68) = STATEX64
-      &amp; isA(ENTITYX61,z_0009_1069)
+      &amp; isA(ENTITYX61,r_0009_1069)
       &amp; restriction(QUANTX62) = ENTITYX61
       &amp; scope(QUANTX62) = EVENTX70
       &amp; isA(EVENTX70,r_0013_0001__Is)

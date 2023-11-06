@@ -289,22 +289,22 @@ It has an adjustable strap , so you can wear it anyway you want .
 arc(r_0005_0007__n_apos_t,r_0005_0008__have,scope).
 arc(r_0005_0008__have,r_0005_0005__I,arg0).
 arc(r_0005_0008__have,r_0005_0011__color,arg1).
-arc(r_0005_0008__have,z_0005_1011,prn10).
+arc(r_0005_0008__have,r_0005_1011,prn10).
 arc(r_0005_0011__color,r_0005_0010__exact,attrib2).
 arc(r_0005_0014__what,r_0005_0017__one,r_0005_0015__about).
+arc(r_0005_1011,r_0005_0014__what,r_0005_1008).
 arc(r_0006_0002__has,r_0005_0017__one,arg0).
 arc(r_0006_0002__has,r_0006_0005__strap,arg1).
 arc(r_0006_0005__strap,r_0006_0004__adjustable,attrib2).
 arc(r_0006_0007__so,r_0006_0009__can,scope).
-arc(r_0006_0009__can,r_0006_0012__quantificational__r_0006_0012__anyway,scope).
+arc(r_0006_0009__can,r_0006_0012__quantificational__anyway,scope).
 arc(r_0006_0010__wear,r_0005_0017__one,arg1).
+arc(r_0006_0010__wear,r_0005_1028,mnr).
 arc(r_0006_0010__wear,r_0006_0008__you,arg0).
-arc(r_0006_0010__wear,z_0005_1028,mnr).
-arc(r_0006_0012__quantificational__r_0006_0012__anyway,r_0006_0010__wear,scope).
-arc(r_0006_0012__quantificational__r_0006_0012__anyway,z_0005_1028,restriction).
+arc(r_0006_0012__quantificational__anyway,r_0005_1028,restriction).
+arc(r_0006_0012__quantificational__anyway,r_0006_0010__wear,scope).
+arc(r_0006_0014__want,r_0005_1028,mnr).
 arc(r_0006_0014__want,r_0006_0008__you,arg0).
-arc(r_0006_0014__want,z_0005_1028,mnr).
-arc(z_0005_1011,r_0005_0014__what,z_0005_1008).
 
 </pre>
 <br>
@@ -312,8 +312,8 @@ arc(z_0005_1011,r_0005_0014__what,z_0005_1008).
 fof(id__5_A_toeic,axiom,
     ? [EVENTX4,PURSE_TWOX17,PURSE_TWOX23,HEARERX26,OPERATORX21,OPERATORX22,QUANTX25,EVENTX29,EVENTX27,EVENTX20,OPERATORX13,EVENTX14,EVENTX12,ENTITYX24,ENTITYX18,ENTITYX2,ENTITYX9,PURSE_TWOX10,ATTRIBX19,ATTRIBX3] :
       ( EVENTX4 = EVENTX12
-      &amp; isA(EVENTX12,z_0005_1011)
-      &amp; z_0005_1008(EVENTX12) = ENTITYX9
+      &amp; isA(EVENTX12,r_0005_1011)
+      &amp; r_0005_1008(EVENTX12) = ENTITYX9
       &amp; isA(ENTITYX2,r_0005_0011__color)
       &amp; attrib2(ENTITYX2) = ATTRIBX3
       &amp; isA(ENTITYX9,r_0005_0014__what)
@@ -340,11 +340,11 @@ fof(id__5_A_toeic,axiom,
       &amp; scope(OPERATORX21) = OPERATORX22
       &amp; isA(OPERATORX22,r_0006_0009__can)
       &amp; scope(OPERATORX22) = QUANTX25
-      &amp; isA(QUANTX25,r_0006_0012__quantificational__r_0006_0012__anyway)
+      &amp; isA(QUANTX25,r_0006_0012__quantificational__anyway)
       &amp; isA(EVENTX27,r_0006_0014__want)
       &amp; mnr(EVENTX27) = ENTITYX24
       &amp; arg0(EVENTX27) = HEARERX26
-      &amp; isA(ENTITYX24,z_0005_1028)
+      &amp; isA(ENTITYX24,r_0005_1028)
       &amp; restriction(QUANTX25) = ENTITYX24
       &amp; scope(QUANTX25) = EVENTX29
       &amp; isA(EVENTX29,r_0006_0010__wear)

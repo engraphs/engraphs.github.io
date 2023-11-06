@@ -687,6 +687,9 @@ arc(r_0040_0005__transmitted,r_0040_0007__fleas,arg0__r_0040_0006__by_lgs).
 arc(r_0040_0008__normally,r_0040_0009__associated,scope).
 arc(r_0040_0009__associated,r_0040_0007__fleas,arg1).
 arc(r_0040_0009__associated,r_0040_0011__rats,r_0040_0010__with_clr).
+arc(r_0040_1013,r_0040_0001__Plague,r_0040_1004).
+arc(r_0040_1020,r_0041_0003__transmission,arg0).
+arc(r_0040_1020,r_0041_0005__possible,prd).
 arc(r_0041_0003__transmission,r_0041_0001__person_to_person,attrib1).
 arc(r_0041_0003__transmission,r_0041_0002__airborne,attrib2).
 arc(r_0041_0005__possible,r_0041_0004__also,quality1).
@@ -723,9 +726,6 @@ arc(r_0044_0011__form,r_0044_0010__pneumonic,attrib1).
 arc(r_0044_0011__form,r_0044_0014__death__r_0044_0015__rate,r_0044_0012__with).
 arc(r_0044_0014__death__r_0044_0015__rate,r_0044_0017__excess,r_0044_0016__in).
 arc(r_0044_0017__excess,r_0044_0019__50__r_0044_0020___,r_0044_0018__of).
-arc(z_0040_1013,r_0040_0001__Plague,z_0040_1004).
-arc(z_0040_1020,r_0041_0003__transmission,arg0).
-arc(z_0040_1020,r_0041_0005__possible,prd).
 
 </pre>
 <br>
@@ -805,9 +805,9 @@ fof(id__40_A_FACTBOOK_1_2010__41_A_FACTBOOK_1_2010__42_A_FACTBOOK_1_2010__43_A_F
       &amp; isA(ATTRIBX51,r_0044_0010__pneumonic)
       &amp; isA(QUALITYX19,r_0041_0004__also)
       &amp; isA(QUALITYX46,r_0044_0003__rapidly)
-      &amp; isA(EVENTX14,z_0040_1013)
-      &amp; z_0040_1004(EVENTX14) = r_0040_0001__Plague
-      &amp; isA(EVENTX21,z_0040_1020)
+      &amp; isA(EVENTX14,r_0040_1013)
+      &amp; r_0040_1004(EVENTX14) = r_0040_0001__Plague
+      &amp; isA(EVENTX21,r_0040_1020)
       &amp; arg0(EVENTX21) = ENTITYX15
       &amp; prd(EVENTX21) = ATTRIBX18
       &amp; isA(EVENTX35,r_0042_0004__occurred)

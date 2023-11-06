@@ -648,6 +648,7 @@ arc(r_0018_0011__Constitution,r_0018_0014__United__r_0018_0015__Kingdom,r_0018_0
 arc(r_0018_0011__Constitution,r_0018_0018__October__r_0018_0019__2019,r_0018_0016__on).
 arc(r_0018_0018__October__r_0018_0019__2019,r_0018_0017__31st,attrib1).
 arc(r_0018_1017__question,r_0019_0001__Whether__r_0019_0002__or_r_0019_0003__not,scope).
+arc(r_0018_1044,r_0021_0014__democratically,quality1).
 arc(r_0018_1053__question,r_0021_0032__comes,scope).
 arc(r_0019_0001__Whether__r_0019_0002__or_r_0019_0003__not,r_0019_0005__is,conj1).
 arc(r_0019_0005__is,r_0018_0003__change,arg0).
@@ -657,8 +658,8 @@ arc(r_0019_0009__is,r_0019_0018__judge,arg0).
 arc(r_0019_0010__not,r_0019_0009__is,scope).
 arc(r_0019_0013__or,r_0019_0012__this,conj1).
 arc(r_0019_0013__or,r_0019_0016__court,conj2).
-arc(r_0019_0014__quantificational__r_0019_0014__any,r_0019_0013__or,scope).
-arc(r_0019_0014__quantificational__r_0019_0014__any,r_0019_0016__court,restriction).
+arc(r_0019_0014__quantificational__any,r_0019_0013__or,scope).
+arc(r_0019_0014__quantificational__any,r_0019_0016__court,restriction).
 arc(r_0019_0016__court,r_0019_0015__other,attrib2).
 arc(r_0019_0018__judge,r_0018_1017__question,arg1).
 arc(r_0019_0018__judge,r_0019_0013__or,arg0_lgs).
@@ -670,8 +671,8 @@ arc(r_0021_0005__and,r_0021_0009__House,conj2).
 arc(r_0021_0009__House,r_0021_0007__particular,r_0021_0006__in).
 arc(r_0021_0009__House,r_0021_0011__Commons,r_0021_0010__of).
 arc(r_0021_0009__House,r_0021_0016__representatives,r_0021_0012__as).
+arc(r_0021_0016__representatives,r_0018_1044,attrib2).
 arc(r_0021_0016__representatives,r_0021_0019__people,r_0021_0017__of).
-arc(r_0021_0016__representatives,z_0018_1044,attrib2).
 arc(r_0021_0021__has,r_0021_0005__and,arg0).
 arc(r_0021_0021__has,r_0021_0023__right,arg1).
 arc(r_0021_0023__right,r_0021_0025__have,emb3).
@@ -682,7 +683,6 @@ arc(r_0021_0032__comes,r_0021_0029__how,mnr1).
 arc(r_0021_0032__comes,r_0021_0033__about,dir4).
 arc(r_0021_0034__is,r_0021_0021__has,arg0).
 arc(r_0021_0034__is,r_0021_0035__indisputable,prd2).
-arc(z_0018_1044,r_0021_0014__democratically,quality1).
 
 </pre>
 <br>
@@ -735,7 +735,7 @@ fof(id__18_A_uksc_judgment__19_A_uksc_judgment__20_A_uksc_judgment__21_A_uksc_ju
       &amp; CHANGEX18 = CHANGEX1
       &amp; isA(ENTITYX19,r_0019_0008__thing)
       &amp; attrib2(ENTITYX19) = ATTRIBX20
-      &amp; isA(QUANTX26,r_0019_0014__quantificational__r_0019_0014__any)
+      &amp; isA(QUANTX26,r_0019_0014__quantificational__any)
       &amp; restriction(QUANTX26) = ENTITYX25
       &amp; isA(ENTITYX25,r_0019_0016__court)
       &amp; attrib2(ENTITYX25) = ATTRIBX27
@@ -769,7 +769,7 @@ fof(id__18_A_uksc_judgment__19_A_uksc_judgment__20_A_uksc_judgment__21_A_uksc_ju
       &amp; isA(ATTRIBX20,r_0019_0007__good)
       &amp; isA(ATTRIBX27,r_0019_0015__other)
       &amp; isA(ATTRIBX39,r_0021_0007__particular)
-      &amp; isA(ATTRIBX42,z_0018_1044)
+      &amp; isA(ATTRIBX42,r_0018_1044)
       &amp; quality1(ATTRIBX42) = QUALITYX43
       &amp; isA(ATTRIBX60,r_0021_0035__indisputable)
       &amp; isA(r_0018_0014__United__r_0018_0015__Kingdom,r_0018_0014__United_r_0018_0015__Kingdom)

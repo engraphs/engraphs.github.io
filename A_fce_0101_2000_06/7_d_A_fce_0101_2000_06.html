@@ -118,10 +118,10 @@ Do not write any postal addresses .
 <pre>
 arc(r_0008_0002__not,r_0008_0003__write,scope).
 arc(r_0008_0003__write,r_0008_0006__addresses,arg1).
-arc(r_0008_0004__quantificational__r_0008_0004__any,r_0008_0002__not,scope).
-arc(r_0008_0004__quantificational__r_0008_0004__any,r_0008_0006__addresses,restriction).
+arc(r_0008_0004__quantificational__any,r_0008_0002__not,scope).
+arc(r_0008_0004__quantificational__any,r_0008_0006__addresses,restriction).
 arc(r_0008_0006__addresses,r_0008_0005__postal,attrib2).
-arc(r_0008_1002__imperative,r_0008_0004__quantificational__r_0008_0004__any,scope).
+arc(r_0008_1002__imperative,r_0008_0004__quantificational__any,scope).
 
 </pre>
 <br>
@@ -131,7 +131,7 @@ fof(id__8_A_fce_0101_2000_06,axiom,
       ( isA(ATTRIBX6,r_0008_0005__postal)
       &amp; isA(OPERATORX2,r_0008_1002__imperative)
       &amp; scope(OPERATORX2) = QUANTX5
-      &amp; isA(QUANTX5,r_0008_0004__quantificational__r_0008_0004__any)
+      &amp; isA(QUANTX5,r_0008_0004__quantificational__any)
       &amp; restriction(QUANTX5) = ENTITYX4
       &amp; isA(ENTITYX4,r_0008_0006__addresses)
       &amp; attrib2(ENTITYX4) = ATTRIBX6

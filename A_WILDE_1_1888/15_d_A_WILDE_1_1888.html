@@ -2118,12 +2118,12 @@ arc(r_0072_0008__asking,r_0072_0010__oranges,r_0072_0009__for_clr).
 arc(r_0073_0002__mother,r_0071_0012__boy,genv).
 arc(r_0073_0003__has,r_0073_0002__mother,arg0).
 arc(r_0073_0003__has,r_0073_0008__but,arg1).
-arc(r_0073_0004__quantificational__r_0073_0004__nothing,r_0073_0008__but,scope).
-arc(r_0073_0004__quantificational__r_0073_0004__nothing,z_0068_1080,restriction).
+arc(r_0073_0004__quantificational__nothing,r_0068_1080,restriction).
+arc(r_0073_0004__quantificational__nothing,r_0073_0008__but,scope).
+arc(r_0073_0006__give,r_0068_1080,arg1).
 arc(r_0073_0006__give,r_0071_0012__boy,arg2).
-arc(r_0073_0006__give,z_0068_1080,arg1).
+arc(r_0073_0008__but,r_0068_1080,conj1).
 arc(r_0073_0008__but,r_0073_0009__river__r_0073_0010__water,conj2).
-arc(r_0073_0008__but,z_0068_1080,conj1).
 arc(r_0073_0012__so,r_0073_0014__is,scope).
 arc(r_0073_0014__is,r_0073_0015__crying,catenative).
 arc(r_0073_0015__crying,r_0071_0012__boy,arg0).
@@ -2173,7 +2173,7 @@ arc(r_0079_0006__sleep,r_0079_0009__tomb,r_0079_0007__in_loc).
 arc(r_0079_0009__tomb,r_0079_0013__King,r_0079_0010__of).
 arc(r_0079_0013__King,r_0079_0012__great,attrib2).
 arc(r_0080_0002__King,r_0079_0013__King,prn4).
-arc(r_0080_0002__King,r_0079_0013__King,z_0068_1143).
+arc(r_0080_0002__King,r_0079_0013__King,r_0068_1143).
 arc(r_0080_0003__is,r_0080_0002__King,arg0).
 arc(r_0080_0003__is,r_0080_0004__there,prd2_loc3).
 arc(r_0080_0003__is,r_0080_0009__coffin,r_0080_0006__in_loc).
@@ -2202,7 +2202,7 @@ arc(r_0082_0018__leaves,r_0082_0017__withered,attrib1).
 arc(r_0083_0002__Swallow__r_0083_0004__Swallow,r_0083_0007__Swallow,prn5).
 arc(r_0083_0007__Swallow,r_0083_0006__little,attrib1).
 arc(r_0083_0010__said,r_0083_0012__Prince,arg0).
-arc(r_0083_0012__Prince,r_0068_0011__I,z_0068_1185).
+arc(r_0083_0012__Prince,r_0068_0011__I,r_0068_1185).
 arc(r_0083_0015__will,r_0083_0025__and,scope).
 arc(r_0083_0017__not,r_0083_0018__stay,scope).
 arc(r_0083_0018__stay,r_0068_0011__I,r_0083_0019__with_com).
@@ -2335,11 +2335,11 @@ fof(id__68_A_WILDE_1_1888__69_A_WILDE_1_1888__70_A_WILDE_1_1888__71_A_WILDE_1_18
       &amp; isA(ENTITYX71,r_0073_0002__mother)
       &amp; genv(ENTITYX71) = ILLBOYX72
       &amp; ILLBOYX72 = ILLBOYX54
-      &amp; isA(QUANTX75,r_0073_0004__quantificational__r_0073_0004__nothing)
+      &amp; isA(QUANTX75,r_0073_0004__quantificational__nothing)
       &amp; isA(EVENTX79,r_0073_0006__give)
       &amp; arg1(EVENTX79) = ENTITYX74
       &amp; arg2(EVENTX79) = ILLBOYX78
-      &amp; isA(ENTITYX74,z_0068_1080)
+      &amp; isA(ENTITYX74,r_0068_1080)
       &amp; restriction(QUANTX75) = ENTITYX74
       &amp; scope(QUANTX75) = ENTITYX73
       &amp; isA(ENTITYX73,r_0073_0008__but)
@@ -2377,7 +2377,7 @@ fof(id__68_A_WILDE_1_1888__69_A_WILDE_1_1888__70_A_WILDE_1_1888__71_A_WILDE_1_18
       &amp; isA(KINGX136,r_0079_0013__King)
       &amp; attrib2(KINGX136) = ATTRIBX137
       &amp; isA(ENTITYX141,r_0080_0002__King)
-      &amp; z_0068_1143(ENTITYX141) = KINGX144
+      &amp; r_0068_1143(ENTITYX141) = KINGX144
       &amp; prn4(ENTITYX141) = KINGX145
       &amp; KINGX144 = KINGX136
       &amp; KINGX145 = KINGX136
@@ -2408,7 +2408,7 @@ fof(id__68_A_WILDE_1_1888__69_A_WILDE_1_1888__70_A_WILDE_1_1888__71_A_WILDE_1_18
       &amp; isA(ENTITYX180,r_0083_0007__Swallow)
       &amp; attrib1(ENTITYX180) = ATTRIBX181
       &amp; isA(ENTITYX183,r_0083_0012__Prince)
-      &amp; z_0068_1185(ENTITYX183) = PRINCEX186
+      &amp; r_0068_1185(ENTITYX183) = PRINCEX186
       &amp; PRINCEX186 = r_0068_0011__I
       &amp; ( SWALLOWX188 = SWALLOWX179
         | SWALLOWX188 = SWALLOWX90 )

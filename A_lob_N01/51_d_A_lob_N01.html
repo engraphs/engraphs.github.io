@@ -1277,12 +1277,19 @@ arc(r_0101_0017__and,r_0101_0014__just,quality1).
 arc(r_0101_0017__and,r_0101_0015__one__r_0101_0016__hundred,conj1).
 arc(r_0101_0017__and,r_0101_0018__seven__r_0101_0019__minutes,conj2).
 arc(r_0101_0020__since_tmp,r_0101_0022__had,restriction).
-arc(r_0101_0020__since_tmp,z_0101_1017,scope).
+arc(r_0101_0020__since_tmp,r_0101_1017,scope).
 arc(r_0101_0022__had,r_0101_0023__left,catenative).
 arc(r_0101_0023__left,r_0101_0021__they,arg0).
 arc(r_0101_0023__left,r_0101_0024__Boscombe__r_0101_0025__Down,arg1).
+arc(r_0101_1017,r_0101_0017__and,prd2).
 arc(r_0101_1021__utterance,r_0102_0003___apos_ll,part1).
+arc(r_0101_1036,r_0101_0001__Geoffrey,arg0).
 arc(r_0101_1044__imperative,r_0104_0011__and,scope).
+arc(r_0101_1068,r_0105_0002__sooner,quality2).
+arc(r_0101_1072,r_0105_0012__better,quality2).
+arc(r_0101_1073,r_0101_1068,r_0101_1060).
+arc(r_0101_1073,r_0101_1072,r_0101_1069).
+arc(r_0101_1121,r_0101_0021__they,r_0108_0007__of).
 arc(r_0102_0003___apos_ll,r_0102_0004__land,scope).
 arc(r_0102_0004__land,r_0101_0021__they,arg0).
 arc(r_0102_0004__land,r_0102_0006__five__r_0102_0007__minutes,r_0102_0005__in_tmp).
@@ -1295,7 +1302,7 @@ arc(r_0103_0007__be,r_0101_0001__Geoffrey,arg0).
 arc(r_0103_0007__be,r_0103_0009__quick,prd2).
 arc(r_0103_0009__quick,r_0103_0008__as,quality1).
 arc(r_0103_0009__quick,r_0103_0012__can,r_0103_0010__as).
-arc(r_0103_0012__can,z_0101_1036,scope).
+arc(r_0103_0012__can,r_0101_1036,scope).
 arc(r_0104_0001__Chuck,r_0104_0004__kit,arg1).
 arc(r_0104_0001__Chuck,r_0104_0007__back,r_0104_0005__into_loc).
 arc(r_0104_0003__flying,r_0104_0004__kit,arg0).
@@ -1350,19 +1357,12 @@ arc(r_0107_0013__give,r_0107_0003__spotted,arg0).
 arc(r_0107_0013__give,r_0107_0015__ideas,arg1).
 arc(r_0108_0003__was,r_0108_0002__landing,arg0).
 arc(r_0108_0003__was,r_0108_0004__easier,prd2).
-arc(r_0108_0004__easier,r_0108_0006__quantificational__r_0108_0006__either,r_0108_0005__than).
-arc(r_0108_0006__quantificational__r_0108_0006__either,r_0108_0009__had,scope).
-arc(r_0108_0006__quantificational__r_0108_0006__either,z_0101_1121,restriction).
+arc(r_0108_0004__easier,r_0108_0006__quantificational__either,r_0108_0005__than).
+arc(r_0108_0006__quantificational__either,r_0101_1121,restriction).
+arc(r_0108_0006__quantificational__either,r_0108_0009__had,scope).
 arc(r_0108_0009__had,r_0108_0010__dared,catenative).
 arc(r_0108_0010__dared,r_0108_0012__hope,catenative).
-arc(r_0108_0012__hope,z_0101_1121,arg0).
-arc(z_0101_1017,r_0101_0017__and,prd2).
-arc(z_0101_1036,r_0101_0001__Geoffrey,arg0).
-arc(z_0101_1068,r_0105_0002__sooner,quality2).
-arc(z_0101_1072,r_0105_0012__better,quality2).
-arc(z_0101_1073,z_0101_1068,z_0101_1060).
-arc(z_0101_1073,z_0101_1072,z_0101_1069).
-arc(z_0101_1121,r_0101_0021__they,r_0108_0007__of).
+arc(r_0108_0012__hope,r_0101_1121,arg0).
 
 </pre>
 <br>
@@ -1388,7 +1388,7 @@ fof(id__101_A_lob_N01__102_A_lob_N01__103_A_lob_N01__104_A_lob_N01__105_A_lob_N0
       &amp; EVENTX33 = OPERATORX35
       &amp; isA(OPERATORX35,r_0103_0012__can)
       &amp; scope(OPERATORX35) = EVENTX37
-      &amp; isA(EVENTX37,z_0101_1036)
+      &amp; isA(EVENTX37,r_0101_1036)
       &amp; arg0(EVENTX37) = GEOFFREYX34
       &amp; STATEX63 = OPERATORX66
       &amp; isA(OPERATORX66,r_0105_0004__can)
@@ -1420,9 +1420,9 @@ fof(id__101_A_lob_N01__102_A_lob_N01__103_A_lob_N01__104_A_lob_N01__105_A_lob_N0
       &amp; arg0(EVENTX108) = ALASTAIR_AND_GEOFFREYX104
       &amp; arg1(EVENTX108) = ENTITYX106
       &amp; EVENTX117 = QUANTX119
-      &amp; isA(QUANTX119,r_0108_0006__quantificational__r_0108_0006__either)
+      &amp; isA(QUANTX119,r_0108_0006__quantificational__either)
       &amp; restriction(QUANTX119) = ENTITYX118
-      &amp; isA(ENTITYX118,z_0101_1121)
+      &amp; isA(ENTITYX118,r_0101_1121)
       &amp; r_0108_0007__of(ENTITYX118) = ALASTAIR_AND_GEOFFREYX120
       &amp; scope(QUANTX119) = EVENTX126
       &amp; isA(EVENTX126,r_0108_0009__had)
@@ -1460,12 +1460,12 @@ fof(id__101_A_lob_N01__102_A_lob_N01__103_A_lob_N01__104_A_lob_N01__105_A_lob_N0
       &amp; r_0104_0008__of(ENTITYX48) = ENTITYX49
       &amp; isA(ENTITYX49,r_0104_0010__aircraft)
       &amp; ALASTAIRX51 = r_0102_0010__Alastair
-      &amp; isA(ENTITYX61,z_0101_1068)
+      &amp; isA(ENTITYX61,r_0101_1068)
       &amp; quality2(ENTITYX61) = QUALITYX62
       &amp; ALASTAIRX64 = r_0102_0010__Alastair
       &amp; isA(ENTITYX65,r_0105_0009__radar__r_0105_0010__screens)
       &amp; genv(ENTITYX65) = r_0105_0008__their
-      &amp; isA(ENTITYX70,z_0101_1072)
+      &amp; isA(ENTITYX70,r_0101_1072)
       &amp; quality2(ENTITYX70) = QUALITYX71
       &amp; isA(ENTITYX77,r_0106_0006__job)
       &amp; attrib2(ENTITYX77) = ATTRIBX78
@@ -1522,7 +1522,7 @@ fof(id__101_A_lob_N01__102_A_lob_N01__103_A_lob_N01__104_A_lob_N01__105_A_lob_N0
       &amp; isA(EVENTX16,r_0101_0022__had)
       &amp; catenative(EVENTX16) = CATENATIVEX14
       &amp; scope(CONNX13) = EVENTX18
-      &amp; isA(EVENTX18,z_0101_1017)
+      &amp; isA(EVENTX18,r_0101_1017)
       &amp; prd2(EVENTX18) = ENTITYX9
       &amp; isA(EVENTX27,r_0102_0011__announced)
       &amp; arg1(EVENTX27) = STATEX19
@@ -1546,9 +1546,9 @@ fof(id__101_A_lob_N01__102_A_lob_N01__103_A_lob_N01__104_A_lob_N01__105_A_lob_N0
       &amp; arg0(EVENTX54) = ALASTAIRX51
       &amp; arg0(EVENTX54) = ALASTAIRX51
       &amp; prd(EVENTX54) = ATTRIBX52
-      &amp; isA(EVENTX74,z_0101_1073)
-      &amp; z_0101_1060(EVENTX74) = ENTITYX61
-      &amp; z_0101_1069(EVENTX74) = ENTITYX70
+      &amp; isA(EVENTX74,r_0101_1073)
+      &amp; r_0101_1060(EVENTX74) = ENTITYX61
+      &amp; r_0101_1069(EVENTX74) = ENTITYX70
       &amp; isA(CONJX101,r_0106_0007__and)
       &amp; conj1(CONJX101) = EVENTX80
       &amp; isA(EVENTX80,r_0106_0002__is)

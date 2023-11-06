@@ -2026,11 +2026,12 @@ arc(r_0002_0025__assisted,r_0002_0028__footman,arg0__r_0002_0026__by_lgs).
 arc(r_0002_0030__and,r_0002_0031__see,conj2).
 arc(r_0002_0030__and,r_0002_1012__cnt,conj1).
 arc(r_0002_0031__see,r_0002_0034__cleanliness,r_0002_0032__to_clr).
-arc(r_0002_0034__cleanliness,z_0002_1021,r_0002_0035__of).
-arc(r_0002_0036__quantificational__r_0002_0036__everything,r_0002_0034__cleanliness,scope).
-arc(r_0002_0036__quantificational__r_0002_0036__everything,z_0002_1021,restriction).
+arc(r_0002_0034__cleanliness,r_0002_1021,r_0002_0035__of).
+arc(r_0002_0036__quantificational__everything,r_0002_0034__cleanliness,scope).
+arc(r_0002_0036__quantificational__everything,r_0002_1021,restriction).
 arc(r_0002_1012__cnt,r_0002_0017__wait,scope).
 arc(r_0002_1012__cnt,r_0002_0025__assisted,restriction).
+arc(r_0002_1021,r_0002_0038__table,r_0002_0037__at).
 arc(r_0002_1042__abs,r_0004_0009__and,scope).
 arc(r_0002_1042__abs,r_0004_0015__being,restriction).
 arc(r_0002_1102__cnt,r_0002_1105__cnt,restriction).
@@ -2081,23 +2082,23 @@ arc(r_0005_0008__and,r_0005_0009__plated,conj2).
 arc(r_0005_0010__articles,r_0005_0008__and,attrib2).
 arc(r_0005_0015__sees,r_0002_0006__butler,arg0).
 arc(r_0005_0015__sees,r_0005_0002__dinner,r_0005_0001__At_tmp).
-arc(r_0005_0015__sees,r_0005_0017__quantificational__r_0005_0017__everything,arg1).
-arc(r_0005_0017__quantificational__r_0005_0017__everything,r_0005_0018__is,scope).
-arc(r_0005_0017__quantificational__r_0005_0017__everything,z_0002_1068,restriction).
+arc(r_0005_0015__sees,r_0005_0017__quantificational__everything,arg1).
+arc(r_0005_0017__quantificational__everything,r_0002_1068,restriction).
+arc(r_0005_0017__quantificational__everything,r_0005_0018__is,scope).
+arc(r_0005_0018__is,r_0002_1068,arg0).
 arc(r_0005_0018__is,r_0005_0021__place,r_0005_0019__in_prd2).
-arc(r_0005_0018__is,z_0002_1068,arg0).
-arc(r_0005_0021__place,z_0002_1068,genv).
+arc(r_0005_0021__place,r_0002_1068,genv).
 arc(r_0005_0023__and,r_0005_0005__places,conj1).
 arc(r_0005_0023__and,r_0005_0015__sees,conj2).
 arc(r_0005_0023__and,r_0005_0024__rectifies,conj3).
 arc(r_0005_0024__rectifies,r_0002_0006__butler,arg0).
+arc(r_0005_0024__rectifies,r_0002_1076,arg1).
 arc(r_0005_0024__rectifies,r_0005_0002__dinner,r_0005_0001__At_tmp).
-arc(r_0005_0024__rectifies,z_0002_1076,arg1).
+arc(r_0005_0026__is,r_0002_1076,arg0).
 arc(r_0005_0026__is,r_0005_0027__wrong,prd2).
-arc(r_0005_0026__is,z_0002_1076,arg0).
 arc(r_0006_0002__carries,r_0002_0006__butler,arg0).
+arc(r_0006_0002__carries,r_0002_1081,clr_dir2).
 arc(r_0006_0002__carries,r_0006_0005__first__r_0006_0006__dish,arg1).
-arc(r_0006_0002__carries,z_0002_1081,clr_dir2).
 arc(r_0006_0008__and,r_0006_0002__carries,conj1).
 arc(r_0006_0008__and,r_0006_0020__and,conj2).
 arc(r_0006_0009__announces,r_0002_0006__butler,arg0).
@@ -2172,7 +2173,6 @@ arc(r_0008_0050__taking,r_0008_0049__again,tmp1).
 arc(r_0008_0050__taking,r_0008_0052__place,arg1).
 arc(r_0008_0050__taking,r_0008_0055__sideboard,r_0008_0053__at_loc).
 arc(r_0008_0052__place,r_0002_0006__butler,genv).
-arc(z_0002_1021,r_0002_0038__table,r_0002_0037__at).
 
 </pre>
 <br>
@@ -2208,9 +2208,9 @@ fof(id__2_A_BEETON_1861,axiom,
       &amp; tmp2(EVENTX50) = QUALITYX47
       &amp; r_0004_0018__in_cnt(EVENTX50) = ENTITYX48
       &amp; STATEX65 = QUANTX67
-      &amp; isA(QUANTX67,r_0005_0017__quantificational__r_0005_0017__everything)
+      &amp; isA(QUANTX67,r_0005_0017__quantificational__everything)
       &amp; restriction(QUANTX67) = THINGX66
-      &amp; isA(THINGX66,z_0002_1068)
+      &amp; isA(THINGX66,r_0002_1068)
       &amp; scope(QUANTX67) = EVENTX71
       &amp; isA(EVENTX71,r_0005_0018__is)
       &amp; arg0(EVENTX71) = THINGX66
@@ -2234,9 +2234,9 @@ fof(id__2_A_BEETON_1861,axiom,
       &amp; isA(ENTITYX10,r_0002_0020__family)
       &amp; isA(ENTITYX11,r_0002_0023__meal)
       &amp; isA(ENTITYX14,r_0002_0028__footman)
-      &amp; isA(QUANTX19,r_0002_0036__quantificational__r_0002_0036__everything)
+      &amp; isA(QUANTX19,r_0002_0036__quantificational__everything)
       &amp; restriction(QUANTX19) = ENTITYX18
-      &amp; isA(ENTITYX18,z_0002_1021)
+      &amp; isA(ENTITYX18,r_0002_1021)
       &amp; r_0002_0037__at(ENTITYX18) = ENTITYX20
       &amp; scope(QUANTX19) = ENTITYX17
       &amp; isA(ENTITYX17,r_0002_0034__cleanliness)
@@ -2272,7 +2272,7 @@ fof(id__2_A_BEETON_1861,axiom,
       &amp; isA(EVENTX75,r_0005_0026__is)
       &amp; arg0(EVENTX75) = ENTITYX73
       &amp; prd2(EVENTX75) = ATTRIBX74
-      &amp; isA(ENTITYX73,z_0002_1076)
+      &amp; isA(ENTITYX73,r_0002_1076)
       &amp; BUTLERX79 = BUTLERX3
       &amp; isA(ENTITYX82,r_0006_0005__first__r_0006_0006__dish)
       &amp; isA(ENTITYX84,r_0006_0012__drawing_room)
@@ -2366,7 +2366,7 @@ fof(id__2_A_BEETON_1861,axiom,
       &amp; isA(ATTRIBX156,r_0008_0022__other)
       &amp; isA(QUALITYX29,r_0003_0003__away)
       &amp; isA(QUALITYX47,r_0004_0016__now)
-      &amp; isA(QUALITYX80,z_0002_1081)
+      &amp; isA(QUALITYX80,r_0002_1081)
       &amp; isA(QUALITYX90,r_0006_0021__respectfully)
       &amp; isA(QUALITYX112,r_0006_0059__out)
       &amp; isA(QUALITYX170,r_0008_0046__before)

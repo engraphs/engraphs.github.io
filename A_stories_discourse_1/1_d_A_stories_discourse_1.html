@@ -811,27 +811,29 @@ arc(r_0001_0012__said,r_0001_0011__he,arg0).
 arc(r_0001_0012__said,r_0001_0014__us,r_0001_0013__to_arg2).
 arc(r_0001_0012__said,r_0001_1004__utterance,arg1).
 arc(r_0001_0019__Let,r_0001_0024__as_well,prd).
-arc(r_0001_0019__Let,z_0001_1012,arg1).
+arc(r_0001_0019__Let,r_0001_1012,arg1).
 arc(r_0001_0021__take,r_0001_0022__these,arg1).
 arc(r_0001_0021__take,r_0001_0023__home,clr_dir3).
 arc(r_0001_0024__as_well,r_0001_0021__take,scope).
 arc(r_0001_1004__utterance,r_0001_1008__imperative,part1).
 arc(r_0001_1008__imperative,r_0001_0019__Let,scope).
+arc(r_0001_1012,r_0001_0011__he,conj1).
+arc(r_0001_1012,r_0001_0014__us,conj2).
 arc(r_0001_1023__abs,r_0001_0001__Pointing,restriction).
 arc(r_0001_1023__abs,r_0001_0012__said,scope).
-arc(r_0002_0001__quantificational__r_0002_0001__Everyone,r_0002_0006__and,scope).
-arc(r_0002_0001__quantificational__r_0002_0001__Everyone,z_0001_1036,restriction).
+arc(r_0002_0001__quantificational__Everyone,r_0001_1036,restriction).
+arc(r_0002_0001__quantificational__Everyone,r_0002_0006__and,scope).
 arc(r_0002_0002__picked__r_0002_0004__up,r_0001_0004__and,arg1).
-arc(r_0002_0002__picked__r_0002_0004__up,z_0001_1036,arg0).
+arc(r_0002_0002__picked__r_0002_0004__up,r_0001_1036,arg0).
 arc(r_0002_0006__and,r_0002_0002__picked__r_0002_0004__up,conj1).
 arc(r_0002_0006__and,r_0002_0007__put,conj2).
 arc(r_0002_0007__put,r_0001_0004__and,arg1).
+arc(r_0002_0007__put,r_0001_1036,arg0).
 arc(r_0002_0007__put,r_0002_0011__bag,r_0002_0009__in_clr_dir).
-arc(r_0002_0007__put,z_0001_1036,arg0).
 arc(r_0002_0013__was,r_0002_0014__lying,catenative).
 arc(r_0002_0014__lying,r_0002_0011__bag,arg0).
 arc(r_0002_0014__lying,r_0002_0015__around,clr_loc2).
-arc(r_0003_0003__bag,r_0002_0011__bag,z_0001_1051).
+arc(r_0003_0003__bag,r_0002_0011__bag,r_0001_1051).
 arc(r_0003_0003__bag,r_0003_0002__big,attrib3).
 arc(r_0003_0004__was,r_0003_0003__bag,arg0).
 arc(r_0003_0004__was,r_0003_0005__full,prd2).
@@ -842,7 +844,7 @@ arc(r_0003_0011__somehow,r_0003_0012__crammed,scope).
 arc(r_0003_0012__crammed,r_0003_0010__he,arg0).
 arc(r_0003_0012__crammed,r_0003_0013__it,arg1).
 arc(r_0003_0012__crammed,r_0003_0016__rucksack,r_0003_0014__into_clr_dir).
-arc(r_0003_0016__rucksack,r_0002_0011__bag,z_0001_1061).
+arc(r_0003_0016__rucksack,r_0002_0011__bag,r_0001_1061).
 arc(r_0003_0016__rucksack,r_0003_0010__he,genv).
 arc(r_0004_0002__shut,r_0004_0001__He,arg0).
 arc(r_0004_0002__shut,r_0004_0006__zipper,arg1).
@@ -854,15 +856,13 @@ arc(r_0004_0013__back,r_0004_0001__He,genv).
 arc(r_0004_0015__and,r_0004_0008__put,conj1).
 arc(r_0004_0015__and,r_0004_0016__when_cnt,conj2).
 arc(r_0004_0016__when_cnt,r_0004_0018__stood,restriction).
-arc(r_0004_0016__when_cnt,r_0004_0023__quantificational__r_0004_0023__a_bit,scope).
+arc(r_0004_0016__when_cnt,r_0004_0023__quantificational__a_bit,scope).
 arc(r_0004_0018__stood,r_0004_0017__he,arg0).
 arc(r_0004_0018__stood,r_0004_0019__up,clr_dir3).
+arc(r_0004_0022__staggered,r_0001_1083,mod).
 arc(r_0004_0022__staggered,r_0004_0021__he,arg0).
-arc(r_0004_0022__staggered,z_0001_1083,mod).
-arc(r_0004_0023__quantificational__r_0004_0023__a_bit,r_0004_0022__staggered,scope).
-arc(r_0004_0023__quantificational__r_0004_0023__a_bit,z_0001_1083,restriction).
-arc(z_0001_1012,r_0001_0011__he,conj1).
-arc(z_0001_1012,r_0001_0014__us,conj2).
+arc(r_0004_0023__quantificational__a_bit,r_0001_1083,restriction).
+arc(r_0004_0023__quantificational__a_bit,r_0004_0022__staggered,scope).
 
 </pre>
 <br>
@@ -888,7 +888,7 @@ fof(id__1_A_stories_discourse_1__2_A_stories_discourse_1__3_A_stories_discourse_
       &amp; arg0(EVENTX43) = BAGX40
       &amp; clr_loc2(EVENTX43) = QUALITYX42
       &amp; isA(TEACHERX1,r_0001_0011__he)
-      &amp; isA(TEACHER_AND_STUDENTSX9,z_0001_1012)
+      &amp; isA(TEACHER_AND_STUDENTSX9,r_0001_1012)
       &amp; conj1(TEACHER_AND_STUDENTSX9) = TEACHERX10
       &amp; conj2(TEACHER_AND_STUDENTSX9) = STUDENTSX11
       &amp; TEACHERX10 = TEACHERX1
@@ -912,13 +912,13 @@ fof(id__1_A_stories_discourse_1__2_A_stories_discourse_1__3_A_stories_discourse_
       &amp; catenative(EVENTX44) = CATENATIVEX41
       &amp; isA(BAGX40,r_0002_0011__bag)
       &amp; isA(ENTITYX49,r_0003_0003__bag)
-      &amp; z_0001_1051(ENTITYX49) = BAGX52
+      &amp; r_0001_1051(ENTITYX49) = BAGX52
       &amp; attrib3(ENTITYX49) = ATTRIBX53
       &amp; BAGX52 = BAGX40
       &amp; JUNKX55 = JUNKX25
       &amp; isA(TEACHERX57,r_0003_0010__he)
       &amp; isA(ENTITYX59,r_0003_0016__rucksack)
-      &amp; z_0001_1061(ENTITYX59) = BAGX62
+      &amp; r_0001_1061(ENTITYX59) = BAGX62
       &amp; genv(ENTITYX59) = TEACHERX63
       &amp; BAGX62 = BAGX40
       &amp; TEACHERX63 = TEACHERX57
@@ -948,9 +948,9 @@ fof(id__1_A_stories_discourse_1__2_A_stories_discourse_1__3_A_stories_discourse_
       &amp; arg0(EVENTX33) = TEACHERX1
       &amp; r_0001_0013__to_arg2(EVENTX33) = r_0001_0014__us
       &amp; arg1(EVENTX33) = STATEX2
-      &amp; isA(QUANTX35,r_0002_0001__quantificational__r_0002_0001__Everyone)
+      &amp; isA(QUANTX35,r_0002_0001__quantificational__Everyone)
       &amp; restriction(QUANTX35) = ENTITYX34
-      &amp; isA(ENTITYX34,z_0001_1036)
+      &amp; isA(ENTITYX34,r_0001_1036)
       &amp; scope(QUANTX35) = CONJX46
       &amp; isA(CONJX46,r_0002_0006__and)
       &amp; conj1(CONJX46) = EVENTX38
@@ -994,9 +994,9 @@ fof(id__1_A_stories_discourse_1__2_A_stories_discourse_1__3_A_stories_discourse_
       &amp; arg0(EVENTX79) = TEACHERX77
       &amp; clr_dir3(EVENTX79) = QUALITYX78
       &amp; scope(CONNX76) = QUANTX82
-      &amp; isA(QUANTX82,r_0004_0023__quantificational__r_0004_0023__a_bit)
+      &amp; isA(QUANTX82,r_0004_0023__quantificational__a_bit)
       &amp; restriction(QUANTX82) = ENTITYX81
-      &amp; isA(ENTITYX81,z_0001_1083)
+      &amp; isA(ENTITYX81,r_0001_1083)
       &amp; scope(QUANTX82) = EVENTX84
       &amp; isA(EVENTX84,r_0004_0022__staggered)
       &amp; arg0(EVENTX84) = TEACHERX80

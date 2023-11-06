@@ -820,7 +820,7 @@ arc(r_0036_0010__can,r_0036_0011__tell,scope).
 arc(r_0036_0011__tell,r_0036_0001__I,arg0).
 arc(r_0036_0011__tell,r_0036_0013___apos_s,arg1).
 arc(r_0036_0013___apos_s,r_0036_0012__it,arg0).
-arc(r_0036_0013___apos_s,z_0036_1011,prd2).
+arc(r_0036_0013___apos_s,r_0036_1011,prd2).
 arc(r_0036_0015__because_cnt,r_0036_0010__can,scope).
 arc(r_0036_0015__because_cnt,r_0036_0017___apos_s,restriction).
 arc(r_0036_0017___apos_s,r_0036_1018__cnt,catenative).
@@ -831,9 +831,9 @@ arc(r_0036_0020__stickies,r_0036_0022__some,r_0036_0021__on).
 arc(r_0036_0022__some,r_0036_0025__function__r_0036_0026__keys,r_0036_0023__of).
 arc(r_0036_0029__change,r_0036_0020__stickies,arg0).
 arc(r_0036_0029__change,r_0036_0031__names,arg1).
-arc(r_0036_0031__names,z_0036_1024,r_0036_0032__of).
+arc(r_0036_0031__names,r_0036_1024,r_0036_0032__of).
 arc(r_0036_0036__did,r_0036_0035__buttons,arg0).
-arc(r_0036_0036__did,z_0036_1024,arg1).
+arc(r_0036_0036__did,r_0036_1024,arg1).
 arc(r_0036_0038__because_cnt,r_0036_0018__got,scope).
 arc(r_0036_0038__because_cnt,r_0036_0045__and,restriction).
 arc(r_0036_0041__was,r_0036_0042__designed,catenative).
@@ -845,11 +845,11 @@ arc(r_0036_0046__had,r_0036_0040__keyboard,arg0).
 arc(r_0036_0046__had,r_0036_0049__buttons,arg1).
 arc(r_0036_0049__buttons,r_0036_0040__keyboard,r_0036_0050__on).
 arc(r_0036_0049__buttons,r_0036_0048__weird,attrib2).
-arc(r_0036_0053__quantificational__r_0036_0053__nobody,r_0036_0055__knew,scope).
-arc(r_0036_0053__quantificational__r_0036_0053__nobody,z_0036_1037,restriction).
+arc(r_0036_0053__quantificational__nobody,r_0036_0055__knew,scope).
+arc(r_0036_0053__quantificational__nobody,r_0036_1037,restriction).
 arc(r_0036_0055__knew,r_0036_0054__ever,quality3).
+arc(r_0036_0055__knew,r_0036_1037,arg0).
 arc(r_0036_0055__knew,r_0036_1041__question,arg1).
-arc(r_0036_0055__knew,z_0036_1037,arg0).
 arc(r_0036_0058__were,r_0036_0059__supposed,catenative).
 arc(r_0036_0059__supposed,r_0036_0049__buttons,arg1).
 arc(r_0036_0059__supposed,r_0036_0061__do,prd).
@@ -866,12 +866,12 @@ arc(r_0036_0079__make,r_0036_0067__labels,arg0).
 arc(r_0036_0079__make,r_0036_0067__labels,arg1).
 arc(r_0036_0079__make,r_0036_0082__appropriate,prd).
 arc(r_0036_0082__appropriate,r_0036_0081__more,quality1).
+arc(r_0036_1011,r_0036_0001__I,genv).
 arc(r_0036_1018__cnt,r_0036_0029__change,restriction).
 arc(r_0036_1018__cnt,r_0036_0038__because_cnt,scope).
 arc(r_0036_1041__question,r_0036_0058__were,scope).
 arc(r_0036_1063__cnt,r_0036_0073__was,scope).
 arc(r_0036_1063__cnt,r_0036_0079__make,restriction).
-arc(z_0036_1011,r_0036_0001__I,genv).
 
 </pre>
 <br>
@@ -962,7 +962,7 @@ fof(id__36_A_PaulFellows,axiom,
       &amp; genv(ENTITYX3) = SPEAKERX4
       &amp; SPEAKERX4 = r_0036_0001__I
       &amp; SPEAKERX7 = r_0036_0001__I
-      &amp; isA(ENTITYX9,z_0036_1011)
+      &amp; isA(ENTITYX9,r_0036_1011)
       &amp; genv(ENTITYX9) = SPEAKERX10
       &amp; ( SPEAKERX10 = SPEAKERX7
         | SPEAKERX10 = r_0036_0001__I )
@@ -971,9 +971,9 @@ fof(id__36_A_PaulFellows,axiom,
       &amp; r_0036_0021__on(ENTITYX15) = r_0036_0022__some
       &amp; isA(ENTITYX17,r_0036_0025__function__r_0036_0026__keys)
       &amp; isA(KEYBOARDX27,r_0036_0040__keyboard)
-      &amp; isA(QUANTX36,r_0036_0053__quantificational__r_0036_0053__nobody)
+      &amp; isA(QUANTX36,r_0036_0053__quantificational__nobody)
       &amp; restriction(QUANTX36) = ENTITYX35
-      &amp; isA(ENTITYX35,z_0036_1037)
+      &amp; isA(ENTITYX35,r_0036_1037)
       &amp; scope(QUANTX36) = EVENTX71
       &amp; isA(EVENTX71,r_0036_0055__knew)
       &amp; arg0(EVENTX71) = ENTITYX35
@@ -998,7 +998,7 @@ fof(id__36_A_PaulFellows,axiom,
       &amp; isA(EVENTX23,r_0036_0036__did)
       &amp; arg1(EVENTX23) = ENTITYX21
       &amp; arg0(EVENTX23) = ENTITYX22
-      &amp; isA(ENTITYX21,z_0036_1024)
+      &amp; isA(ENTITYX21,r_0036_1024)
       &amp; isA(ENTITYX22,r_0036_0035__buttons)
       &amp; isA(r_0036_0022__some,r_0036_0022__some)
       &amp; r_0036_0023__of(r_0036_0022__some) = ENTITYX17

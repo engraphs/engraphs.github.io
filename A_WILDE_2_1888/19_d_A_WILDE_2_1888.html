@@ -289,16 +289,16 @@ arc(r_0035_0003__gave,r_0035_0002__Autumn,arg0).
 arc(r_0035_0003__gave,r_0035_0005__fruit,arg1).
 arc(r_0035_0003__gave,r_0035_0008__garden,r_0035_0006__to_arg2).
 arc(r_0035_0005__fruit,r_0035_0004__golden,attrib1).
-arc(r_0035_0007__quantificational__r_0035_0007__every,r_0035_0003__gave,scope).
-arc(r_0035_0007__quantificational__r_0035_0007__every,r_0035_0008__garden,restriction).
-arc(r_0035_0010__but,r_0035_0007__quantificational__r_0035_0007__every,conj1).
-arc(r_0035_0010__but,r_0035_0018__quantificational__r_0035_0018__none,conj2).
+arc(r_0035_0007__quantificational__every,r_0035_0003__gave,scope).
+arc(r_0035_0007__quantificational__every,r_0035_0008__garden,restriction).
+arc(r_0035_0010__but,r_0035_0007__quantificational__every,conj1).
+arc(r_0035_0010__but,r_0035_0018__quantificational__none,conj2).
 arc(r_0035_0015__garden,r_0035_0013__Giant,genv).
 arc(r_0035_0017__gave,r_0035_0002__Autumn,arg0).
 arc(r_0035_0017__gave,r_0035_0015__garden,r_0035_0011__to_arg2_tpc).
-arc(r_0035_0017__gave,z_0035_1014,arg1).
-arc(r_0035_0018__quantificational__r_0035_0018__none,r_0035_0017__gave,scope).
-arc(r_0035_0018__quantificational__r_0035_0018__none,z_0035_1014,restriction).
+arc(r_0035_0017__gave,r_0035_1014,arg1).
+arc(r_0035_0018__quantificational__none,r_0035_0017__gave,scope).
+arc(r_0035_0018__quantificational__none,r_0035_1014,restriction).
 arc(r_0035_1019__utterance,r_0036_0003__is,part1).
 arc(r_0036_0003__is,r_0035_0013__Giant,arg0).
 arc(r_0036_0003__is,r_0036_0005__selfish,prd2).
@@ -332,7 +332,7 @@ fof(id__35_A_WILDE_2_1888__36_A_WILDE_2_1888,axiom,
       &amp; isA(QUALITYX22,r_0036_0004__too)
       &amp; isA(CONJX16,r_0035_0010__but)
       &amp; conj1(CONJX16) = QUANTX7
-      &amp; isA(QUANTX7,r_0035_0007__quantificational__r_0035_0007__every)
+      &amp; isA(QUANTX7,r_0035_0007__quantificational__every)
       &amp; restriction(QUANTX7) = ENTITYX6
       &amp; isA(ENTITYX6,r_0035_0008__garden)
       &amp; scope(QUANTX7) = EVENTX8
@@ -342,9 +342,9 @@ fof(id__35_A_WILDE_2_1888__36_A_WILDE_2_1888,axiom,
       &amp; arg1(EVENTX8) = ENTITYX4
       &amp; r_0035_0006__to_arg2(EVENTX8) = ENTITYX6
       &amp; conj2(CONJX16) = QUANTX13
-      &amp; isA(QUANTX13,r_0035_0018__quantificational__r_0035_0018__none)
+      &amp; isA(QUANTX13,r_0035_0018__quantificational__none)
       &amp; restriction(QUANTX13) = ENTITYX12
-      &amp; isA(ENTITYX12,z_0035_1014)
+      &amp; isA(ENTITYX12,r_0035_1014)
       &amp; scope(QUANTX13) = EVENTX15
       &amp; isA(EVENTX15,r_0035_0017__gave)
       &amp; arg0(EVENTX15) = AUTUMNX11

@@ -1221,16 +1221,19 @@ arc(r_0092_0007__came,r_0092_0005__invaders,arg0).
 arc(r_0092_0007__came,r_0092_0010__east,r_0092_0008__from_clr_dir).
 arc(r_0092_0012__taking,r_0092_0005__invaders,arg0).
 arc(r_0092_0012__taking,r_0092_0013__land,arg1).
-arc(r_0092_0013__land,z_0092_1010,r_0092_0014__in).
+arc(r_0092_0013__land,r_0092_1010,r_0092_0014__in).
 arc(r_0092_0016__is,r_0092_0017__now,tmp3).
 arc(r_0092_0016__is,r_0092_0018__Turkey,prd2).
-arc(r_0092_0016__is,z_0092_1010,arg0).
+arc(r_0092_0016__is,r_0092_1010,arg0).
 arc(r_0092_1004__cnt,r_0092_0007__came,scope).
 arc(r_0092_1004__cnt,r_0092_0012__taking,restriction).
 arc(r_0092_1028__cnt,r_0094_0010__made,scope).
 arc(r_0092_1028__cnt,r_0094_0015__renaming,restriction).
+arc(r_0092_1059,r_0096_0036__last,attrib2).
+arc(r_0092_1065,r_0096_0009__Genoese,attrib2).
 arc(r_0092_1066__cnt,r_0096_0005__wrested,scope).
 arc(r_0092_1066__cnt,r_0096_0011__bolstering,restriction).
+arc(r_0092_1079,r_0096_0031__more,attrib1).
 arc(r_0092_1088__cnt,r_0097_0003__brought,scope).
 arc(r_0092_1088__cnt,r_0097_0013__forming,restriction).
 arc(r_0093_0003__end,r_0093_0007__century,r_0093_0004__of).
@@ -1272,10 +1275,10 @@ arc(r_0095_0026__ejected,r_0095_0028__knights,arg1).
 arc(r_0095_0026__ejected,r_0095_0031__Dodecanese,r_0095_0029__from_clr_dir).
 arc(r_0095_0026__ejected,r_0095_0033__1522,r_0095_0032__in_tmp).
 arc(r_0096_0005__wrested,r_0092_0002__Ottomans,arg0).
+arc(r_0096_0005__wrested,r_0092_1065,r_0096_0007__from_clr_dir).
 arc(r_0096_0005__wrested,r_0096_0002__1566,r_0096_0001__In_tmp).
 arc(r_0096_0005__wrested,r_0096_0006__Chios,arg1).
 arc(r_0096_0005__wrested,r_0096_0034__was,prn3).
-arc(r_0096_0005__wrested,z_0092_1065,r_0096_0007__from_clr_dir).
 arc(r_0096_0011__bolstering,r_0092_0002__Ottomans,arg0).
 arc(r_0096_0011__bolstering,r_0096_0013__hold,arg1).
 arc(r_0096_0013__hold,r_0092_0002__Ottomans,genv).
@@ -1288,12 +1291,12 @@ arc(r_0096_0023__remained,r_0096_0026__hands,r_0096_0024__in_prd2).
 arc(r_0096_0023__remained,r_0096_0030__or,r_0096_0027__for_tmp).
 arc(r_0096_0023__remained,r_0096_0034__was,prn3).
 arc(r_0096_0026__hands,r_0096_0025__Venetian,attrib1).
+arc(r_0096_0030__or,r_0092_1079,conj2).
 arc(r_0096_0030__or,r_0096_0029__generation,conj1).
-arc(r_0096_0030__or,z_0092_1079,conj2).
+arc(r_0096_0034__was,r_0092_1059,prd2).
 arc(r_0096_0034__was,r_0096_0033__Tinos,arg0).
-arc(r_0096_0034__was,z_0092_1059,prd2).
+arc(r_0096_0038__fall,r_0092_1059,arg0).
 arc(r_0096_0038__fall,r_0096_0040__1715,r_0096_0039__in_tmp).
-arc(r_0096_0038__fall,z_0092_1059,arg0).
 arc(r_0097_0003__brought,r_0092_0002__Ottomans,arg0).
 arc(r_0097_0003__brought,r_0097_0005__influences,arg1).
 arc(r_0097_0003__brought,r_0097_0008__islands,r_0097_0006__to_clr_dir).
@@ -1306,9 +1309,6 @@ arc(r_0097_0016__empire,r_0097_0015__large,attrib2).
 arc(r_0097_0018__stretched,r_0097_0016__empire,arg0).
 arc(r_0097_0018__stretched,r_0097_0022__Mediterranean,r_0097_0019__around_clr_dir).
 arc(r_0097_0022__Mediterranean,r_0097_0021__eastern,attrib2).
-arc(z_0092_1059,r_0096_0036__last,attrib2).
-arc(z_0092_1065,r_0096_0009__Genoese,attrib2).
-arc(z_0092_1079,r_0096_0031__more,attrib1).
 
 </pre>
 <br>
@@ -1338,7 +1338,7 @@ fof(id__92_A_ANC_HistoryOfGreece__93_A_ANC_HistoryOfGreece__94_A_ANC_HistoryOfGr
       &amp; arg0(EVENTX9) = ENTITYX7
       &amp; tmp3(EVENTX9) = QUALITYX8
       &amp; prd2(EVENTX9) = r_0092_0018__Turkey
-      &amp; isA(ENTITYX7,z_0092_1010)
+      &amp; isA(ENTITYX7,r_0092_1010)
       &amp; isA(ENTITYX14,r_0093_0003__end)
       &amp; r_0093_0004__of(ENTITYX14) = ENTITYX15
       &amp; isA(ENTITYX15,r_0093_0007__century)
@@ -1378,12 +1378,12 @@ fof(id__92_A_ANC_HistoryOfGreece__93_A_ANC_HistoryOfGreece__94_A_ANC_HistoryOfGr
       &amp; isA(EVENTX58,r_0096_0038__fall)
       &amp; arg0(EVENTX58) = ENTITYX55
       &amp; r_0096_0039__in_tmp(EVENTX58) = ENTITYX57
-      &amp; isA(ENTITYX55,z_0092_1059)
+      &amp; isA(ENTITYX55,r_0092_1059)
       &amp; attrib2(ENTITYX55) = ATTRIBX56
       &amp; isA(ENTITYX57,r_0096_0040__1715)
       &amp; isA(ENTITYX61,r_0096_0002__1566)
       &amp; OTTOMANSX62 = r_0092_0002__Ottomans
-      &amp; isA(ENTITYX63,z_0092_1065)
+      &amp; isA(ENTITYX63,r_0092_1065)
       &amp; attrib2(ENTITYX63) = ATTRIBX64
       &amp; isA(ENTITYX68,r_0096_0013__hold)
       &amp; genv(ENTITYX68) = OTTOMANSX69
@@ -1396,7 +1396,7 @@ fof(id__92_A_ANC_HistoryOfGreece__93_A_ANC_HistoryOfGreece__94_A_ANC_HistoryOfGr
       &amp; conj1(ENTITYX75) = ENTITYX76
       &amp; conj2(ENTITYX75) = ENTITYX77
       &amp; isA(ENTITYX76,r_0096_0029__generation)
-      &amp; isA(ENTITYX77,z_0092_1079)
+      &amp; isA(ENTITYX77,r_0092_1079)
       &amp; attrib1(ENTITYX77) = ATTRIBX78
       &amp; OTTOMANSX82 = r_0092_0002__Ottomans
       &amp; isA(ENTITYX83,r_0097_0005__influences)

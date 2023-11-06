@@ -219,25 +219,25 @@ Cleopatra was a member of this famous ruling clan .
 <br>
 <pre>
 arc(r_0062_0005__came,r_0062_0008__rule,r_0062_0006__under_clr).
-arc(r_0062_0005__came,z_0062_1004,arg0).
+arc(r_0062_0005__came,r_0062_1004,arg0).
 arc(r_0062_0008__rule,r_0062_0011__Ptolemies,r_0062_0009__of).
+arc(r_0062_1004,r_0062_0001__Much,attrib1).
+arc(r_0062_1004,r_0062_0004__Aegean,r_0062_0002__of).
+arc(r_0062_1004,r_0062_0013__along,quality3).
+arc(r_0062_1004,r_0062_0015__Egypt,r_0062_0014__with).
 arc(r_0063_0002__was,r_0063_0001__Cleopatra,arg0).
 arc(r_0063_0002__was,r_0063_0004__member,prd2).
 arc(r_0063_0004__member,r_0063_0009__clan,r_0063_0005__of).
 arc(r_0063_0008__ruling,r_0063_0009__clan,arg0).
-arc(r_0063_0009__clan,r_0062_0011__Ptolemies,z_0062_1010).
+arc(r_0063_0009__clan,r_0062_0011__Ptolemies,r_0062_1010).
 arc(r_0063_0009__clan,r_0063_0007__famous,attrib3).
-arc(z_0062_1004,r_0062_0001__Much,attrib1).
-arc(z_0062_1004,r_0062_0004__Aegean,r_0062_0002__of).
-arc(z_0062_1004,r_0062_0013__along,quality3).
-arc(z_0062_1004,r_0062_0015__Egypt,r_0062_0014__with).
 
 </pre>
 <br>
 <pre>
 fof(id__62_A_ANC_HistoryOfGreece__63_A_ANC_HistoryOfGreece,axiom,
     ? [PTOLEMIESX11,EVENTX14,EVENTX13,EVENTX6,ENTITYX7,ENTITYX8,ENTITYX1,ENTITYX5,ATTRIBX12,ATTRIBX2,QUALITYX3] :
-      ( isA(ENTITYX1,z_0062_1004)
+      ( isA(ENTITYX1,r_0062_1004)
       &amp; attrib1(ENTITYX1) = ATTRIBX2
       &amp; r_0062_0002__of(ENTITYX1) = r_0062_0004__Aegean
       &amp; quality3(ENTITYX1) = QUALITYX3
@@ -249,7 +249,7 @@ fof(id__62_A_ANC_HistoryOfGreece__63_A_ANC_HistoryOfGreece,axiom,
       &amp; isA(EVENTX13,r_0063_0008__ruling)
       &amp; arg0(EVENTX13) = ENTITYX8
       &amp; isA(ENTITYX8,r_0063_0009__clan)
-      &amp; z_0062_1010(ENTITYX8) = PTOLEMIESX11
+      &amp; r_0062_1010(ENTITYX8) = PTOLEMIESX11
       &amp; attrib3(ENTITYX8) = ATTRIBX12
       &amp; PTOLEMIESX11 = r_0062_0011__Ptolemies
       &amp; isA(ATTRIBX2,r_0062_0001__Much)

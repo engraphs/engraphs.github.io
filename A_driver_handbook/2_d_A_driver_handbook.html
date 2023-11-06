@@ -533,11 +533,11 @@ arc(r_0002_0001__When_tmp,r_0002_0018__must,scope).
 arc(r_0002_0004__meet,r_0002_0002__two__r_0002_0003__vehicles,arg0).
 arc(r_0002_0004__meet,r_0002_0008__road,r_0002_0005__on_loc).
 arc(r_0002_0008__road,r_0002_0007__steep,attrib2).
-arc(r_0002_0010__quantificational__r_0002_0010__neither,r_0002_0011__can,scope).
-arc(r_0002_0010__quantificational__r_0002_0010__neither,z_0002_1010,restriction).
+arc(r_0002_0010__quantificational__neither,r_0002_0011__can,scope).
+arc(r_0002_0010__quantificational__neither,r_0002_1010,restriction).
 arc(r_0002_0011__can,r_0002_0012__pass,scope).
 arc(r_0002_0012__pass,r_0002_0008__road,loc1).
-arc(r_0002_0012__pass,z_0002_1010,arg0).
+arc(r_0002_0012__pass,r_0002_1010,arg0).
 arc(r_0002_0016__facing,r_0002_0015__vehicle,arg0).
 arc(r_0002_0016__facing,r_0002_0017__downhill,dir2).
 arc(r_0002_0016__facing,r_0003_0002__vehicle,arg0).
@@ -556,6 +556,7 @@ arc(r_0002_0032__going,r_0002_0031__vehicle,arg0).
 arc(r_0002_0032__going,r_0002_0033__uphill,dir2).
 arc(r_0002_0034__can,r_0002_0035__pass,scope).
 arc(r_0002_0035__pass,r_0002_0031__vehicle,arg0).
+arc(r_0002_1010,r_0002_0002__two__r_0002_0003__vehicles,r_0002_1008).
 arc(r_0003_0003__facing,r_0002_0015__vehicle,arg0).
 arc(r_0003_0003__facing,r_0003_0002__vehicle,arg0).
 arc(r_0003_0003__facing,r_0003_0004__downhill,dir2).
@@ -568,7 +569,6 @@ arc(r_0003_0011__when_tmp,r_0003_0005__has,scope).
 arc(r_0003_0011__when_tmp,r_0003_0012__backing,restriction).
 arc(r_0003_0012__backing,r_0002_0015__vehicle,arg0).
 arc(r_0003_0012__backing,r_0003_0002__vehicle,arg0).
-arc(z_0002_1010,r_0002_0002__two__r_0002_0003__vehicles,z_0002_1008).
 
 </pre>
 <br>
@@ -576,10 +576,10 @@ arc(z_0002_1010,r_0002_0002__two__r_0002_0003__vehicles,z_0002_1008).
 fof(id__2_A_driver_handbook__3_A_driver_handbook,axiom,
     ? [VEHICLEX9,DOWNHILL_VEHICLEX29,CONNX35,EVENTX36,EVENTX37,EVENTX31,CONNX1,OPERATORX19,CONNX20,CONNX21,OPERATORX25,EVENTX26,EVENTX24,EVENTX27,EVENTX28,EVENTX16,EVENTX13,QUANTX6,OPERATORX11,EVENTX12,ENTITYX32,ENTITYX34,DOWNHILL_VEHICLEX14,ENTITYX17,ENTITYX22,ENTITYX18,VEHICLEX2,ENTITYX3,ENTITYX5,ATTRIBX33,ATTRIBX4,QUALITYX30,QUALITYX23,QUALITYX15] :
       ( isA(VEHICLEX2,r_0002_0002__two__r_0002_0003__vehicles)
-      &amp; isA(QUANTX6,r_0002_0010__quantificational__r_0002_0010__neither)
+      &amp; isA(QUANTX6,r_0002_0010__quantificational__neither)
       &amp; restriction(QUANTX6) = ENTITYX5
-      &amp; isA(ENTITYX5,z_0002_1010)
-      &amp; z_0002_1008(ENTITYX5) = VEHICLEX9
+      &amp; isA(ENTITYX5,r_0002_1010)
+      &amp; r_0002_1008(ENTITYX5) = VEHICLEX9
       &amp; scope(QUANTX6) = OPERATORX11
       &amp; isA(OPERATORX11,r_0002_0011__can)
       &amp; scope(OPERATORX11) = EVENTX12

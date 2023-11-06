@@ -526,9 +526,11 @@ arc(r_0048_0004__fascinated,r_0048_0002__teacher,arg1).
 arc(r_0048_1013__utterance,r_0048_1015__question,part1).
 arc(r_0048_1015__question,r_0049_0012__are,scope).
 arc(r_0048_1030__utterance,r_0050_0008___apos_m,part1).
-arc(r_0048_1042__utterance,r_0051_0008__quantificational__r_0051_0008__nobody,part1).
+arc(r_0048_1042__utterance,r_0051_0008__quantificational__nobody,part1).
 arc(r_0048_1048__question,r_0051_0012__looks,scope).
 arc(r_0048_1058__utterance,r_0052_0008__will,part1).
+arc(r_0048_1061,r_0052_0007__They,arg0).
+arc(r_0048_1061,r_0052_0012__minute,r_0052_0010__in_tmp).
 arc(r_0049_0002__went,r_0048_0002__teacher,arg0).
 arc(r_0049_0002__went,r_0049_0004__her,r_0049_0003__over_to_dir).
 arc(r_0049_0006__and,r_0049_0002__went,conj1).
@@ -538,7 +540,7 @@ arc(r_0049_0008__said,r_0048_1013__utterance,arg1).
 arc(r_0049_0012__are,r_0049_0014__drawing,catenative).
 arc(r_0049_0014__drawing,r_0049_0004__her,arg0).
 arc(r_0049_0014__drawing,r_0049_0011__What,arg1).
-arc(r_0050_0003__girl,r_0049_0004__her,z_0048_1026).
+arc(r_0050_0003__girl,r_0049_0004__her,r_0048_1026).
 arc(r_0050_0004__said,r_0048_1030__utterance,arg1).
 arc(r_0050_0004__said,r_0050_0003__girl,arg0).
 arc(r_0050_0008___apos_m,r_0050_0009__drawing,catenative).
@@ -547,17 +549,15 @@ arc(r_0050_0009__drawing,r_0050_0011__picture,arg1).
 arc(r_0050_0011__picture,r_0050_0013__God,r_0050_0012__of).
 arc(r_0051_0004__said,r_0048_0002__teacher,arg0).
 arc(r_0051_0004__said,r_0048_1042__utterance,arg1).
-arc(r_0051_0008__quantificational__r_0051_0008__nobody,r_0051_0009__knows,scope).
-arc(r_0051_0008__quantificational__r_0051_0008__nobody,z_0048_1045,restriction).
+arc(r_0051_0008__quantificational__nobody,r_0048_1045,restriction).
+arc(r_0051_0008__quantificational__nobody,r_0051_0009__knows,scope).
+arc(r_0051_0009__knows,r_0048_1045,arg0).
 arc(r_0051_0009__knows,r_0048_1048__question,arg1).
-arc(r_0051_0009__knows,z_0048_1045,arg0).
 arc(r_0051_0012__looks,r_0051_0010__what,r_0051_0013__like_prd2).
 arc(r_0051_0012__looks,r_0051_0011__God,arg0).
 arc(r_0052_0004__said,r_0048_1058__utterance,arg1).
 arc(r_0052_0004__said,r_0049_0004__her,arg0).
-arc(r_0052_0008__will,z_0048_1061,scope).
-arc(z_0048_1061,r_0052_0007__They,arg0).
-arc(z_0048_1061,r_0052_0012__minute,r_0052_0010__in_tmp).
+arc(r_0052_0008__will,r_0048_1061,scope).
 
 </pre>
 <br>
@@ -590,9 +590,9 @@ fof(id__48_A_TED_talk_11__49_A_TED_talk_11__50_A_TED_talk_11__51_A_TED_talk_11__
       &amp; STATEX40 = CONJX53
       &amp; isA(CONJX53,r_0048_1042__utterance)
       &amp; part1(CONJX53) = QUANTX44
-      &amp; isA(QUANTX44,r_0051_0008__quantificational__r_0051_0008__nobody)
+      &amp; isA(QUANTX44,r_0051_0008__quantificational__nobody)
       &amp; restriction(QUANTX44) = ENTITYX43
-      &amp; isA(ENTITYX43,z_0048_1045)
+      &amp; isA(ENTITYX43,r_0048_1045)
       &amp; scope(QUANTX44) = EVENTX52
       &amp; isA(EVENTX52,r_0051_0009__knows)
       &amp; arg0(EVENTX52) = ENTITYX43
@@ -608,7 +608,7 @@ fof(id__48_A_TED_talk_11__49_A_TED_talk_11__50_A_TED_talk_11__51_A_TED_talk_11__
       &amp; part1(CONJX63) = OPERATORX60
       &amp; isA(OPERATORX60,r_0052_0008__will)
       &amp; scope(OPERATORX60) = EVENTX62
-      &amp; isA(EVENTX62,z_0048_1061)
+      &amp; isA(EVENTX62,r_0048_1061)
       &amp; arg0(EVENTX62) = r_0052_0007__They
       &amp; r_0052_0010__in_tmp(EVENTX62) = ENTITYX59
       &amp; isA(TEACHERX1,r_0048_0002__teacher)
@@ -617,7 +617,7 @@ fof(id__48_A_TED_talk_11__49_A_TED_talk_11__50_A_TED_talk_11__51_A_TED_talk_11__
       &amp; isA(ENTITYX16,r_0049_0011__What)
       &amp; GIRLX17 = r_0049_0004__her
       &amp; isA(ENTITYX24,r_0050_0003__girl)
-      &amp; z_0048_1026(ENTITYX24) = GIRLX27
+      &amp; r_0048_1026(ENTITYX24) = GIRLX27
       &amp; GIRLX27 = r_0049_0004__her
       &amp; GIRLX31 = r_0049_0004__her
       &amp; isA(ENTITYX33,r_0050_0011__picture)

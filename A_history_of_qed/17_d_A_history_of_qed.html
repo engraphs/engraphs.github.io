@@ -954,6 +954,9 @@ arc(r_0030_0029__using,r_0030_0030__IBM,arg1).
 arc(r_0030_0029__using,r_0030_0032__and,arg1).
 arc(r_0030_0032__and,r_0030_0031__hardware,conj1).
 arc(r_0030_0032__and,r_0030_0033__software,conj2).
+arc(r_0030_1062,r_0033_0015__concisely,quality1).
+arc(r_0030_1063,r_0033_0012__many,attrib1).
+arc(r_0030_1063,r_0033_0018__commands,r_0033_0013__of).
 arc(r_0031_0002__seems,r_0031_0012__was,arg0).
 arc(r_0031_0007__or__r_0031_0008__perhaps,r_0030_0011__version,conj1).
 arc(r_0031_0007__or__r_0031_0008__perhaps,r_0031_0010__reimplementation,conj2).
@@ -986,14 +989,14 @@ arc(r_0033_0007__purpose,r_0033_0005__general,attrib1).
 arc(r_0033_0008__commands,r_0033_0004__fewer,attrib1).
 arc(r_0033_0008__commands,r_0033_0007__purpose,nlyr2).
 arc(r_0033_0008__commands,r_0033_0010__EDIT,r_0033_0009__than).
-arc(r_0033_0018__commands,z_0030_1062,attrib2).
+arc(r_0033_0018__commands,r_0030_1062,attrib2).
 arc(r_0033_0019__can,r_0033_0020__not,scope).
 arc(r_0033_0020__not,r_0033_0021__be,scope).
 arc(r_0033_0021__be,r_0033_0022__performed,catenative).
+arc(r_0033_0022__performed,r_0030_1063,arg1).
 arc(r_0033_0022__performed,r_0033_0026__editors,arg0__r_0033_0023__by_lgs).
-arc(r_0033_0022__performed,z_0030_1063,arg1).
 arc(r_0033_0026__editors,r_0033_0025__other,attrib2).
-arc(r_0034_0004__UMC__r_0034_0005__notes,r_0031_0023__document,z_0030_1073).
+arc(r_0034_0004__UMC__r_0034_0005__notes,r_0031_0023__document,r_0030_1073).
 arc(r_0034_0004__UMC__r_0034_0005__notes,r_0031_0027__Joshua_r_0031_0028__Ryan,genv).
 arc(r_0034_0006__also,r_0034_0007__talk,scope).
 arc(r_0034_0007__talk,r_0034_0004__UMC__r_0034_0005__notes,arg0).
@@ -1001,9 +1004,6 @@ arc(r_0034_0007__talk,r_0034_0012__QED,r_0034_0008__about_rst).
 arc(r_0034_0011__unrelated,r_0034_0010__apparently,quality1).
 arc(r_0034_0012__QED,r_0034_0011__unrelated,attrib2).
 arc(r_0034_0012__QED,r_0034_0016__Quick__r_0034_0017__Edit,r_0034_0014__for).
-arc(z_0030_1062,r_0033_0015__concisely,quality1).
-arc(z_0030_1063,r_0033_0012__many,attrib1).
-arc(z_0030_1063,r_0033_0018__commands,r_0033_0013__of).
 
 </pre>
 <br>
@@ -1074,7 +1074,7 @@ fof(id__30_A_history_of_qed__31_A_history_of_qed__32_A_history_of_qed__33_A_hist
       &amp; r_0033_0009__than(ENTITYX52) = r_0033_0010__EDIT
       &amp; isA(ENTITYX54,r_0033_0007__purpose)
       &amp; attrib1(ENTITYX54) = ATTRIBX55
-      &amp; isA(ENTITYX57,z_0030_1063)
+      &amp; isA(ENTITYX57,r_0030_1063)
       &amp; attrib1(ENTITYX57) = ATTRIBX58
       &amp; r_0033_0013__of(ENTITYX57) = ENTITYX59
       &amp; isA(ENTITYX59,r_0033_0018__commands)
@@ -1082,7 +1082,7 @@ fof(id__30_A_history_of_qed__31_A_history_of_qed__32_A_history_of_qed__33_A_hist
       &amp; isA(ENTITYX67,r_0033_0026__editors)
       &amp; attrib2(ENTITYX67) = ATTRIBX68
       &amp; isA(ENTITYX71,r_0034_0004__UMC__r_0034_0005__notes)
-      &amp; z_0030_1073(ENTITYX71) = BQED_NOTESX74
+      &amp; r_0030_1073(ENTITYX71) = BQED_NOTESX74
       &amp; genv(ENTITYX71) = JOSHUA_RYANX75
       &amp; BQED_NOTESX74 = BQED_NOTESX35
       &amp; JOSHUA_RYANX75 = r_0031_0027__Joshua__r_0031_0028__Ryan
@@ -1110,7 +1110,7 @@ fof(id__30_A_history_of_qed__31_A_history_of_qed__32_A_history_of_qed__33_A_hist
       &amp; isA(ATTRIBX53,r_0033_0004__fewer)
       &amp; isA(ATTRIBX55,r_0033_0005__general)
       &amp; isA(ATTRIBX58,r_0033_0012__many)
-      &amp; isA(ATTRIBX60,z_0030_1062)
+      &amp; isA(ATTRIBX60,r_0030_1062)
       &amp; quality1(ATTRIBX60) = QUALITYX61
       &amp; isA(ATTRIBX68,r_0033_0025__other)
       &amp; isA(ATTRIBX77,r_0034_0011__unrelated)

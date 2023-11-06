@@ -418,7 +418,7 @@ arc(r_0018_0002__know,r_0018_0001__I,arg0).
 arc(r_0018_0002__know,r_0018_0006__will,arg1).
 arc(r_0018_0006__will,r_0018_0007__be,scope).
 arc(r_0018_0007__be,r_0018_0009__worried,prd2).
-arc(r_0018_0007__be,z_0018_1004,arg0).
+arc(r_0018_0007__be,r_0018_1004,arg0).
 arc(r_0018_0009__worried,r_0018_0008__deeply,quality1).
 arc(r_0018_0009__worried,r_0018_0013__impact,r_0018_0010__about).
 arc(r_0018_0013__impact,r_0018_0012__financial,attrib2).
@@ -426,13 +426,15 @@ arc(r_0018_0013__impact,r_0018_0016__and,r_0018_0014__on).
 arc(r_0018_0016__and,r_0018_0005__you,conj1).
 arc(r_0018_0016__and,r_0018_0018__family,conj2).
 arc(r_0018_0018__family,r_0018_0005__you,genv).
+arc(r_0018_1004,r_0018_0003__many,attrib1).
+arc(r_0018_1004,r_0018_0005__you,r_0018_0004__of).
 arc(r_0018_1018__cnt,r_0019_0007__takes,scope).
 arc(r_0018_1018__cnt,r_0019_0009__help,restriction).
 arc(r_0019_0003__will,r_0019_0004__do,scope).
+arc(r_0019_0004__do,r_0018_1038,arg1).
 arc(r_0019_0004__do,r_0019_0002__government,arg0).
-arc(r_0019_0004__do,z_0018_1038,arg1).
+arc(r_0019_0007__takes,r_0018_1038,arg1).
 arc(r_0019_0007__takes,r_0019_0006__it,arg0).
-arc(r_0019_0007__takes,z_0018_1038,arg1).
 arc(r_0019_0009__help,r_0018_0005__you,arg1).
 arc(r_0019_0009__help,r_0019_0014__and,prd).
 arc(r_0019_0011__make,r_0019_0012__ends,arg1).
@@ -441,8 +443,6 @@ arc(r_0019_0014__and,r_0019_0011__make,conj1).
 arc(r_0019_0014__and,r_0019_0015__put,conj2).
 arc(r_0019_0015__put,r_0019_0016__food,arg1).
 arc(r_0019_0015__put,r_0019_0019__table,r_0019_0017__on_loc).
-arc(z_0018_1004,r_0018_0003__many,attrib1).
-arc(z_0018_1004,r_0018_0005__you,r_0018_0004__of).
 
 </pre>
 <br>
@@ -467,7 +467,7 @@ fof(id__18_A_Johnson_letter__19_A_Johnson_letter,axiom,
       &amp; r_0019_0017__on_loc(EVENTX34) = ENTITYX33
       &amp; STATEX27 = EVENTX30
       &amp; isA(EVENTX30,r_0019_0013__meet)
-      &amp; isA(ENTITYX2,z_0018_1004)
+      &amp; isA(ENTITYX2,r_0018_1004)
       &amp; attrib1(ENTITYX2) = ATTRIBX3
       &amp; r_0018_0004__of(ENTITYX2) = r_0018_0005__you
       &amp; isA(ENTITYX7,r_0018_0013__impact)
@@ -490,7 +490,7 @@ fof(id__18_A_Johnson_letter__19_A_Johnson_letter,axiom,
       &amp; isA(EVENTX36,r_0019_0009__help)
       &amp; arg1(EVENTX36) = HEARERX22
       &amp; prd(EVENTX36) = STATEX23
-      &amp; isA(ENTITYX17,z_0018_1038)
+      &amp; isA(ENTITYX17,r_0018_1038)
       &amp; HEARERX22 = r_0018_0005__you
       &amp; isA(ENTITYX26,r_0019_0012__ends)
       &amp; isA(ENTITYX32,r_0019_0016__food)

@@ -1078,12 +1078,16 @@ humans act as the reservoir for this parasite .
 arc(r_0063_0003__caused,r_0063_0001__Schistosomiasis,arg1).
 arc(r_0063_0003__caused,r_0063_0006__trematode__r_0063_0007__flatworm_r_0063_0008__Schistosoma,arg0_r_0063_0004__by_lgs).
 arc(r_0063_0006__trematode__r_0063_0007__flatworm_r_0063_0008__Schistosoma,r_0063_0005__parasitic,attrib1).
+arc(r_0063_1008,r_0063_0001__Schistosomiasis,r_0063_1004).
 arc(r_0063_1033__cnt,r_0065_0003__and,scope).
 arc(r_0063_1033__cnt,r_0065_0016__releasing,restriction).
 arc(r_0063_1036__cnt,r_0065_0020__become,scope).
 arc(r_0063_1036__cnt,r_0065_0024__triggering,restriction).
 arc(r_0063_1056__cnt,r_0066_0001__may,scope).
 arc(r_0063_1056__cnt,r_0066_0009__resulting,restriction).
+arc(r_0063_1070,r_0067_0001__mortality,arg0).
+arc(r_0063_1070,r_0067_0005__low,prd).
+arc(r_0063_1088,r_0068_0001__endemic,prd2).
 arc(r_0064_0002__water__r_0064_0003__snails,r_0064_0001__fresh,attrib1).
 arc(r_0064_0004__act,r_0064_0002__water__r_0064_0003__snails,arg0).
 arc(r_0064_0004__act,r_0064_0007__host,r_0064_0005__as_prd2).
@@ -1128,8 +1132,8 @@ arc(r_0066_0011__decreased,r_0066_0012__work,arg0).
 arc(r_0066_0013__or,r_0066_0012__work,conj1).
 arc(r_0066_0013__or,r_0066_0015__capacity,conj2).
 arc(r_0066_0014__learning,r_0066_0015__capacity,arg0).
+arc(r_0067_0003__while_cnt,r_0063_1070,restriction).
 arc(r_0067_0003__while_cnt,r_0067_0007__may,scope).
-arc(r_0067_0003__while_cnt,z_0063_1070,restriction).
 arc(r_0067_0005__low,r_0067_0004__generally,quality1).
 arc(r_0067_0007__may,r_0067_0008__occur,scope).
 arc(r_0067_0008__occur,r_0067_0001__mortality,arg0).
@@ -1148,10 +1152,6 @@ arc(r_0068_0012__living,r_0068_0014__sub_Saharan__r_0068_0015__Africa,r_0068_001
 arc(r_0069_0002__act,r_0069_0001__humans,arg0).
 arc(r_0069_0002__act,r_0069_0005__reservoir,r_0069_0003__as_prd2).
 arc(r_0069_0005__reservoir,r_0069_0008__parasite,r_0069_0006__for).
-arc(z_0063_1008,r_0063_0001__Schistosomiasis,z_0063_1004).
-arc(z_0063_1070,r_0067_0001__mortality,arg0).
-arc(z_0063_1070,r_0067_0005__low,prd).
-arc(z_0063_1088,r_0068_0001__endemic,prd2).
 
 </pre>
 <br>
@@ -1261,8 +1261,8 @@ fof(id__63_A_FACTBOOK_1_2010__64_A_FACTBOOK_1_2010__65_A_FACTBOOK_1_2010__66_A_F
       &amp; isA(ATTRIBX86,r_0068_0010__infected)
       &amp; isA(QUALITYX69,r_0067_0004__generally)
       &amp; isA(QUALITYX75,r_0067_0012__usually)
-      &amp; isA(EVENTX9,z_0063_1008)
-      &amp; z_0063_1004(EVENTX9) = r_0063_0001__Schistosomiasis
+      &amp; isA(EVENTX9,r_0063_1008)
+      &amp; r_0063_1004(EVENTX9) = r_0063_0001__Schistosomiasis
       &amp; isA(CONJX26,r_0064_0008__and)
       &amp; conj1(CONJX26) = EVENTX14
       &amp; isA(EVENTX14,r_0064_0004__act)
@@ -1298,7 +1298,7 @@ fof(id__63_A_FACTBOOK_1_2010__64_A_FACTBOOK_1_2010__65_A_FACTBOOK_1_2010__66_A_F
       &amp; r_0066_0010__in_clr(EVENTX63) = ENTITYX58
       &amp; isA(CONNX67,r_0067_0003__while_cnt)
       &amp; restriction(CONNX67) = EVENTX71
-      &amp; isA(EVENTX71,z_0063_1070)
+      &amp; isA(EVENTX71,r_0063_1070)
       &amp; arg0(EVENTX71) = ENTITYX66
       &amp; prd(EVENTX71) = ATTRIBX68
       &amp; scope(CONNX67) = OPERATORX77
@@ -1308,7 +1308,7 @@ fof(id__63_A_FACTBOOK_1_2010__64_A_FACTBOOK_1_2010__65_A_FACTBOOK_1_2010__66_A_F
       &amp; arg0(EVENTX78) = ENTITYX66
       &amp; r_0067_0009__in_rst(EVENTX78) = ENTITYX72
       &amp; prd(EVENTX78) = ATTRIBX74
-      &amp; isA(EVENTX89,z_0063_1088)
+      &amp; isA(EVENTX89,r_0063_1088)
       &amp; prd2(EVENTX89) = ATTRIBX81
       &amp; isA(EVENTX93,r_0069_0002__act)
       &amp; arg0(EVENTX93) = ENTITYX90

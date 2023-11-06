@@ -1235,15 +1235,16 @@ arc(r_0065_0028__seen,r_0065_0027__ever,tmp2).
 arc(r_0065_1033__cnt,r_0066_0012__came,scope).
 arc(r_0065_1033__cnt,r_0066_0017__bid,restriction).
 arc(r_0065_1041__question,r_0067_0004__is,scope).
+arc(r_0065_1058,r_0068_0006__best,attrib2).
 arc(r_0065_1081__utterance,r_0070_0003__must,part1).
 arc(r_0065_1105__question,r_0071_0012__lived,scope).
-arc(r_0066_0001__quantificational__r_0066_0001__All,r_0066_0002__day,restriction).
-arc(r_0066_0001__quantificational__r_0066_0001__All,r_0066_0005__played,scope).
+arc(r_0066_0001__quantificational__All,r_0066_0002__day,restriction).
+arc(r_0066_0001__quantificational__All,r_0066_0005__played,scope).
 arc(r_0066_0002__day,r_0066_0003__long,attrib3).
 arc(r_0066_0005__played,r_0065_0019__children,arg0).
 arc(r_0066_0005__played,r_0066_0002__day,tmp).
 arc(r_0066_0007__and,r_0065_1033__cnt,conj2).
-arc(r_0066_0007__and,r_0066_0001__quantificational__r_0066_0001__All,conj1).
+arc(r_0066_0007__and,r_0066_0001__quantificational__All,conj1).
 arc(r_0066_0012__came,r_0065_0015__Giant,r_0066_0013__to_dir).
 arc(r_0066_0012__came,r_0065_0019__children,arg0).
 arc(r_0066_0012__came,r_0066_0010__evening,r_0066_0008__in_tmp).
@@ -1264,9 +1265,9 @@ arc(r_0067_0017__put,r_0067_0007__companion,arg1).
 arc(r_0067_0017__put,r_0067_0015__boy,arg1).
 arc(r_0067_0017__put,r_0067_0020__tree,r_0067_0018__into_dir).
 arc(r_0068_0003__loved,r_0065_0015__Giant,arg0).
+arc(r_0068_0003__loved,r_0065_1058,mnr).
 arc(r_0068_0003__loved,r_0067_0007__companion,arg1).
 arc(r_0068_0003__loved,r_0067_0015__boy,arg1).
-arc(r_0068_0003__loved,z_0065_1058,mnr).
 arc(r_0068_0007__because_cnt,r_0068_0003__loved,scope).
 arc(r_0068_0007__because_cnt,r_0068_0009__had,restriction).
 arc(r_0068_0009__had,r_0068_0010__kissed,catenative).
@@ -1315,7 +1316,6 @@ arc(r_0071_0021__and,r_0071_0024__felt,conj2).
 arc(r_0071_0024__felt,r_0065_0015__Giant,arg0).
 arc(r_0071_0024__felt,r_0071_0026__sad,prd).
 arc(r_0071_0026__sad,r_0071_0025__very,quality1).
-arc(z_0065_1058,r_0068_0006__best,attrib2).
 
 </pre>
 <br>
@@ -1427,7 +1427,7 @@ fof(id__65_A_WILDE_2_1888__66_A_WILDE_2_1888__67_A_WILDE_2_1888__68_A_WILDE_2_18
       &amp; GIANTX54 = GIANTX10
       &amp; ( LITTLE_BOYX55 = LITTLE_BOYX43
         | LITTLE_BOYX55 = LITTLE_BOYX46 )
-      &amp; isA(ENTITYX56,z_0065_1058)
+      &amp; isA(ENTITYX56,r_0065_1058)
       &amp; attrib2(ENTITYX56) = ATTRIBX57
       &amp; ( LITTLE_BOYX60 = LITTLE_BOYX55
         | LITTLE_BOYX60 = LITTLE_BOYX43
@@ -1481,7 +1481,7 @@ fof(id__65_A_WILDE_2_1888__66_A_WILDE_2_1888__67_A_WILDE_2_1888__68_A_WILDE_2_18
       &amp; arg1(EVENTX22) = STATEX11
       &amp; isA(CONJX39,r_0066_0007__and)
       &amp; conj1(CONJX39) = QUANTX26
-      &amp; isA(QUANTX26,r_0066_0001__quantificational__r_0066_0001__All)
+      &amp; isA(QUANTX26,r_0066_0001__quantificational__All)
       &amp; restriction(QUANTX26) = ENTITYX25
       &amp; isA(ENTITYX25,r_0066_0002__day)
       &amp; attrib3(ENTITYX25) = ATTRIBX27

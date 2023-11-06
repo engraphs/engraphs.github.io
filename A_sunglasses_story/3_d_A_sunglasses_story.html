@@ -374,19 +374,19 @@ Everyone wears them .
 </svg>
 <br>
 <pre>
-arc(r_0003_0001__quantificational__r_0003_0001__No,r_0003_0002__one,restriction).
-arc(r_0003_0001__quantificational__r_0003_0001__No,r_0003_0003__has,scope).
+arc(r_0003_0001__quantificational__No,r_0003_0002__one,restriction).
+arc(r_0003_0001__quantificational__No,r_0003_0003__has,scope).
 arc(r_0003_0003__has,r_0003_0005__thought,catenative).
 arc(r_0003_0005__thought,r_0003_0002__one,arg0).
 arc(r_0003_0005__thought,r_0003_0004__ever,tmp1).
 arc(r_0003_0005__thought,r_0003_0008__is,arg1).
 arc(r_0003_0008__is,r_0003_0009__strange,prd2).
-arc(r_0003_0008__is,r_0003_0014__quantificational__r_0003_0014__all,arg0).
+arc(r_0003_0008__is,r_0003_0014__quantificational__all,arg0).
 arc(r_0003_0012__wear,r_0003_0011__people,arg0).
 arc(r_0003_0012__wear,r_0003_0013__sunglasses,arg1).
 arc(r_0003_0012__wear,r_0003_0016__time,tmp).
-arc(r_0003_0014__quantificational__r_0003_0014__all,r_0003_0012__wear,scope).
-arc(r_0003_0014__quantificational__r_0003_0014__all,r_0003_0016__time,restriction).
+arc(r_0003_0014__quantificational__all,r_0003_0012__wear,scope).
+arc(r_0003_0014__quantificational__all,r_0003_0016__time,restriction).
 arc(r_0004_0002__has,r_0004_0004__been,catenative).
 arc(r_0004_0004__been,r_0004_0003__always,tmp1).
 arc(r_0004_0004__been,r_0004_0006__that,r_0004_0005__like_prd2).
@@ -396,10 +396,10 @@ arc(r_0004_0009__are,r_0003_0013__sunglasses,arg0).
 arc(r_0004_0009__are,r_0004_0012__part,r_0004_0010__like_prd2).
 arc(r_0004_0012__part,r_0004_0016__body,r_0004_0013__of).
 arc(r_0004_0016__body,r_0004_0015__human,attrib2).
-arc(r_0005_0001__quantificational__r_0005_0001__Everyone,r_0005_0002__wears,scope).
-arc(r_0005_0001__quantificational__r_0005_0001__Everyone,z_0003_1032,restriction).
+arc(r_0005_0001__quantificational__Everyone,r_0003_1032,restriction).
+arc(r_0005_0001__quantificational__Everyone,r_0005_0002__wears,scope).
 arc(r_0005_0002__wears,r_0003_0013__sunglasses,arg1).
-arc(r_0005_0002__wears,z_0003_1032,arg0).
+arc(r_0005_0002__wears,r_0003_1032,arg0).
 
 </pre>
 <br>
@@ -417,7 +417,7 @@ fof(id__3_A_sunglasses_story__4_A_sunglasses_story__5_A_sunglasses_story,axiom,
       &amp; prd2(EVENTX14) = ATTRIBX7
       &amp; arg0(EVENTX14) = STATEX8
       &amp; STATEX8 = QUANTX12
-      &amp; isA(QUANTX12,r_0003_0014__quantificational__r_0003_0014__all)
+      &amp; isA(QUANTX12,r_0003_0014__quantificational__all)
       &amp; restriction(QUANTX12) = ENTITYX11
       &amp; isA(ENTITYX11,r_0003_0016__time)
       &amp; scope(QUANTX12) = EVENTX13
@@ -441,7 +441,7 @@ fof(id__3_A_sunglasses_story__4_A_sunglasses_story__5_A_sunglasses_story,axiom,
       &amp; isA(QUALITYX21,r_0004_0003__always)
       &amp; isA(ATTRIBX7,r_0003_0009__strange)
       &amp; isA(ATTRIBX27,r_0004_0015__human)
-      &amp; isA(QUANTX2,r_0003_0001__quantificational__r_0003_0001__No)
+      &amp; isA(QUANTX2,r_0003_0001__quantificational__No)
       &amp; restriction(QUANTX2) = ENTITYX1
       &amp; isA(ENTITYX1,r_0003_0002__one)
       &amp; scope(QUANTX2) = EVENTX16
@@ -456,9 +456,9 @@ fof(id__3_A_sunglasses_story__4_A_sunglasses_story__5_A_sunglasses_story,axiom,
       &amp; arg0(EVENTX28) = SUNGLASSESX24
       &amp; arg0(EVENTX28) = SUNGLASSESX24
       &amp; r_0004_0010__like_prd2(EVENTX28) = ENTITYX25
-      &amp; isA(QUANTX31,r_0005_0001__quantificational__r_0005_0001__Everyone)
+      &amp; isA(QUANTX31,r_0005_0001__quantificational__Everyone)
       &amp; restriction(QUANTX31) = ENTITYX30
-      &amp; isA(ENTITYX30,z_0003_1032)
+      &amp; isA(ENTITYX30,r_0003_1032)
       &amp; scope(QUANTX31) = EVENTX34
       &amp; isA(EVENTX34,r_0005_0002__wears)
       &amp; arg0(EVENTX34) = ENTITYX30

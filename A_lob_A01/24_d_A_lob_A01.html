@@ -103,11 +103,11 @@ No secret talks &mdash; Macleod .
 </svg>
 <br>
 <pre>
-arc(r_0027_0001__quantificational__r_0027_0001__No,r_0027_0003__talks,restriction).
-arc(r_0027_0001__quantificational__r_0027_0001__No,z_0027_1008,scope).
+arc(r_0027_0001__quantificational__No,r_0027_0003__talks,restriction).
+arc(r_0027_0001__quantificational__No,r_0027_1008,scope).
 arc(r_0027_0003__talks,r_0027_0002__secret,attrib2).
-arc(z_0027_1008,r_0027_0003__talks,z_0027_1003).
-arc(z_0027_1008,r_0027_0005__Macleod,z_0027_1007).
+arc(r_0027_1008,r_0027_0003__talks,r_0027_1003).
+arc(r_0027_1008,r_0027_0005__Macleod,r_0027_1007).
 
 </pre>
 <br>
@@ -115,14 +115,14 @@ arc(z_0027_1008,r_0027_0005__Macleod,z_0027_1007).
 fof(id__27_A_lob_A01,axiom,
     ? [QUANTX5,EVENTX9,ENTITYX4,ATTRIBX6] :
       ( isA(ATTRIBX6,r_0027_0002__secret)
-      &amp; isA(QUANTX5,r_0027_0001__quantificational__r_0027_0001__No)
+      &amp; isA(QUANTX5,r_0027_0001__quantificational__No)
       &amp; restriction(QUANTX5) = ENTITYX4
       &amp; isA(ENTITYX4,r_0027_0003__talks)
       &amp; attrib2(ENTITYX4) = ATTRIBX6
       &amp; scope(QUANTX5) = EVENTX9
-      &amp; isA(EVENTX9,z_0027_1008)
-      &amp; z_0027_1003(EVENTX9) = ENTITYX4
-      &amp; z_0027_1007(EVENTX9) = r_0027_0005__Macleod ) ).
+      &amp; isA(EVENTX9,r_0027_1008)
+      &amp; r_0027_1003(EVENTX9) = ENTITYX4
+      &amp; r_0027_1007(EVENTX9) = r_0027_0005__Macleod ) ).
 
 
 </pre>

@@ -526,6 +526,8 @@ arc(r_0097_0027__island__r_0097_0028__possessions,r_0097_0026__its,genv).
 arc(r_0097_0027__island__r_0097_0028__possessions,r_0097_0032__and,r_0097_0029__in).
 arc(r_0097_0032__and,r_0097_0031__Caribbean,conj1).
 arc(r_0097_0032__and,r_0097_0034__Pacific,conj2).
+arc(r_0097_1013,r_0097_0003__Law,arg0).
+arc(r_0097_1013,r_0097_0006__type,prd2).
 arc(r_0098_0003__system,r_0098_0002__legal,attrib2).
 arc(r_0098_0004__has,r_0098_0003__system,arg0).
 arc(r_0098_0004__has,r_0098_0006__layers,arg1).
@@ -533,8 +535,8 @@ arc(r_0098_0004__has,r_0098_0009__possibly,mod4).
 arc(r_0098_0006__layers,r_0098_0005__several,attrib1).
 arc(r_0098_0008__more,r_0098_0014__countries,r_0098_0010__than__r_0098_0011__in).
 arc(r_0098_0009__possibly,r_0098_0008__more,quality1).
-arc(r_0098_0012__quantificational__r_0098_0012__most,r_0098_0008__more,scope).
-arc(r_0098_0012__quantificational__r_0098_0012__most,r_0098_0014__countries,restriction).
+arc(r_0098_0012__quantificational__most,r_0098_0008__more,scope).
+arc(r_0098_0012__quantificational__most,r_0098_0014__countries,restriction).
 arc(r_0098_0014__countries,r_0098_0013__other,attrib2).
 arc(r_0098_0016__and,r_0098_0004__has,conj1).
 arc(r_0098_0016__and,r_0098_0017__is,conj2).
@@ -545,8 +547,6 @@ arc(r_0098_0020__part,r_0098_0023__division,r_0098_0021__to).
 arc(r_0098_0023__division,r_0098_0026__and,r_0098_0024__between).
 arc(r_0098_0026__and,r_0098_0025__federal,conj1).
 arc(r_0098_0026__and,r_0098_0027__state__r_0098_0028__law,conj2).
-arc(z_0097_1013,r_0097_0003__Law,arg0).
-arc(z_0097_1013,r_0097_0006__type,prd2).
 
 </pre>
 <br>
@@ -604,14 +604,14 @@ fof(id__97_A_FACTBOOK_2_2010__98_A_FACTBOOK_2_2010,axiom,
       &amp; r_0098_0019__in(ATTRIBX25) = ENTITYX26
       &amp; isA(QUALITYX19,r_0098_0009__possibly)
       &amp; quality1(QUALITYX19) = QUALITYX20
-      &amp; isA(QUANTX22,r_0098_0012__quantificational__r_0098_0012__most)
+      &amp; isA(QUANTX22,r_0098_0012__quantificational__most)
       &amp; restriction(QUANTX22) = ENTITYX21
       &amp; isA(ENTITYX21,r_0098_0014__countries)
       &amp; attrib2(ENTITYX21) = ATTRIBX23
       &amp; scope(QUANTX22) = QUALITYX20
       &amp; isA(QUALITYX20,r_0098_0008__more)
       &amp; r_0098_0010__than__r_0098_0011__in(QUALITYX20) = ENTITYX21
-      &amp; isA(EVENTX14,z_0097_1013)
+      &amp; isA(EVENTX14,r_0097_1013)
       &amp; arg0(EVENTX14) = ENTITYX1
       &amp; prd2(EVENTX14) = ENTITYX2
       &amp; isA(CONJX32,r_0098_0016__and)

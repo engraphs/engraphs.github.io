@@ -544,9 +544,10 @@ arc(r_0033_0029__make,r_0033_0027__we,arg0).
 arc(r_0033_0029__make,r_0033_0030__bookings,arg1).
 arc(r_0033_0030__bookings,r_0033_0033__or,r_0033_0031__for).
 arc(r_0033_0033__or,r_0033_0032__four,conj1).
-arc(r_0033_0033__or,z_0033_1023,conj2).
+arc(r_0033_0033__or,r_0033_1023,conj2).
+arc(r_0033_1023,r_0033_0034__more,attrib1).
+arc(r_0033_1029__utterance,r_0033_1032,part1).
 arc(r_0033_1029__utterance,r_0033_1035__question,part2).
-arc(r_0033_1029__utterance,z_0033_1032,part1).
 arc(r_0033_1035__question,r_0034_0022___apos_s,scope).
 arc(r_0034_0001__Without_abs,r_0034_0002__missing,restriction).
 arc(r_0034_0001__Without_abs,r_0034_0008__replied,scope).
@@ -558,7 +559,6 @@ arc(r_0034_0022___apos_s,r_0034_0019__case,r_0034_0017__In_cnt).
 arc(r_0034_0022___apos_s,r_0034_0021__what,arg0).
 arc(r_0034_0022___apos_s,r_0034_0025__time,prd2).
 arc(r_0034_0025__time,r_0034_0024__wait,attrib2).
-arc(z_0033_1023,r_0033_0034__more,attrib1).
 
 </pre>
 <br>
@@ -576,7 +576,7 @@ fof(id__33_A_Duplex__34_A_Duplex,axiom,
       &amp; EVENTX27 = CONJX41
       &amp; isA(CONJX41,r_0033_1029__utterance)
       &amp; part1(CONJX41) = EVENTX33
-      &amp; isA(EVENTX33,z_0033_1032)
+      &amp; isA(EVENTX33,r_0033_1032)
       &amp; part2(CONJX41) = OPERATORX35
       &amp; isA(OPERATORX35,r_0033_1035__question)
       &amp; scope(OPERATORX35) = EVENTX40
@@ -600,7 +600,7 @@ fof(id__33_A_Duplex__34_A_Duplex,axiom,
       &amp; conj1(ENTITYX19) = ENTITYX20
       &amp; conj2(ENTITYX19) = ENTITYX21
       &amp; isA(ENTITYX20,r_0033_0032__four)
-      &amp; isA(ENTITYX21,z_0033_1023)
+      &amp; isA(ENTITYX21,r_0033_1023)
       &amp; attrib1(ENTITYX21) = ATTRIBX22
       &amp; ROBOT_CALLERX26 = r_0033_0006__Duplex
       &amp; isA(ENTITYX36,r_0034_0019__case)

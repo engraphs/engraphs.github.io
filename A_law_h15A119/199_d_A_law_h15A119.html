@@ -620,8 +620,8 @@ arc(r_0199_0031__or,r_0199_0030__individual,conj1).
 arc(r_0199_0031__or,r_0199_0032__business__r_0199_0033__operator,conj2).
 arc(r_0199_0034__mentioned,r_0199_0031__or,arg1).
 arc(r_0199_0034__mentioned,r_0199_0037__item,r_0199_0035__in_clr).
-arc(r_0199_0036__quantificational__r_0199_0036__each,r_0199_0034__mentioned,scope).
-arc(r_0199_0036__quantificational__r_0199_0036__each,r_0199_0037__item,restriction).
+arc(r_0199_0036__quantificational__each,r_0199_0034__mentioned,scope).
+arc(r_0199_0036__quantificational__each,r_0199_0037__item,restriction).
 arc(r_0199_0037__item,r_0199_0039__paragraph__r_0199_0041__1,r_0199_0038__of).
 arc(r_0199_0039__paragraph__r_0199_0041__1,r_0199_0044__Article_r_0199_0045__50,r_0199_0043__of).
 arc(r_0199_0047__limited,r_0199_0037__item,arg1).
@@ -631,12 +631,12 @@ arc(r_0199_0055__is,r_0199_0049__cases,r_0199_0050__in_loc).
 arc(r_0199_0055__is,r_0199_0056__handled,catenative).
 arc(r_0199_0056__handled,r_0199_0054__information,arg1).
 arc(r_0199_0056__handled,r_0199_0059__purpose,r_0199_0057__for_bnf).
-arc(r_0199_0056__handled,z_0199_1036,car4).
-arc(r_0199_0061__respectively,r_0199_0064__quantificational__r_0199_0064__each,scope).
-arc(r_0199_0062__provided,z_0199_1032,r_0199_0063__in_loc).
-arc(r_0199_0062__provided,z_0199_1036,arg1).
-arc(r_0199_0064__quantificational__r_0199_0064__each,r_0199_0062__provided,scope).
-arc(r_0199_0064__quantificational__r_0199_0064__each,z_0199_1032,restriction).
+arc(r_0199_0056__handled,r_0199_1036,car4).
+arc(r_0199_0061__respectively,r_0199_0064__quantificational__each,scope).
+arc(r_0199_0062__provided,r_0199_1032,r_0199_0063__in_loc).
+arc(r_0199_0062__provided,r_0199_1036,arg1).
+arc(r_0199_0064__quantificational__each,r_0199_0062__provided,scope).
+arc(r_0199_0064__quantificational__each,r_0199_1032,restriction).
 arc(r_0199_0067__items,r_0199_0066__such,attrib1).
 arc(r_0199_0071__information,r_0199_0070__personal,attrib1).
 arc(r_0199_0075__Minister,r_0199_0074__competent,attrib2).
@@ -647,8 +647,8 @@ arc(r_0199_0078__exercise,r_0199_0019__act,r_0199_0017__with_respect_to_rst).
 arc(r_0199_0078__exercise,r_0199_0075__Minister,arg0).
 arc(r_0199_0078__exercise,r_0199_0080__authority,arg1).
 arc(r_0199_0080__authority,r_0199_0079__its,genv).
-arc(z_0199_1032,r_0199_0067__items,r_0199_0065__of).
-arc(z_0199_1034,r_0199_0061__respectively,catenative).
+arc(r_0199_1032,r_0199_0067__items,r_0199_0065__of).
+arc(r_0199_1034,r_0199_0061__respectively,catenative).
 
 </pre>
 <br>
@@ -663,9 +663,9 @@ fof(id__199_A_law_h15A119,axiom,
       &amp; CATENATIVEX25 = OPERATORX27
       &amp; isA(OPERATORX27,r_0199_0061__respectively)
       &amp; scope(OPERATORX27) = QUANTX29
-      &amp; isA(QUANTX29,r_0199_0064__quantificational__r_0199_0064__each)
+      &amp; isA(QUANTX29,r_0199_0064__quantificational__each)
       &amp; restriction(QUANTX29) = ENTITYX28
-      &amp; isA(ENTITYX28,z_0199_1032)
+      &amp; isA(ENTITYX28,r_0199_1032)
       &amp; r_0199_0065__of(ENTITYX28) = ENTITYX30
       &amp; scope(QUANTX29) = EVENTX33
       &amp; isA(EVENTX33,r_0199_0062__provided)
@@ -691,7 +691,7 @@ fof(id__199_A_law_h15A119,axiom,
       &amp; isA(ENTITYX7,r_0199_0022__business__r_0199_0023__operator)
       &amp; isA(ENTITYX8,r_0199_0026__information)
       &amp; attrib1(ENTITYX8) = ATTRIBX9
-      &amp; isA(QUANTX14,r_0199_0036__quantificational__r_0199_0036__each)
+      &amp; isA(QUANTX14,r_0199_0036__quantificational__each)
       &amp; isA(EVENTX39,r_0199_0047__limited)
       &amp; arg1(EVENTX39) = ENTITYX13
       &amp; r_0199_0048__to_clr(EVENTX39) = ENTITYX18
@@ -715,9 +715,9 @@ fof(id__199_A_law_h15A119,axiom,
       &amp; isA(ENTITYX19,r_0199_0054__information)
       &amp; attrib2(ENTITYX19) = ATTRIBX20
       &amp; isA(ENTITYX23,r_0199_0059__purpose)
-      &amp; isA(EVENTX35,z_0199_1034)
+      &amp; isA(EVENTX35,r_0199_1034)
       &amp; catenative(EVENTX35) = CATENATIVEX25
-      &amp; isA(ENTITYX24,z_0199_1036)
+      &amp; isA(ENTITYX24,r_0199_1036)
       &amp; isA(ENTITYX30,r_0199_0067__items)
       &amp; attrib1(ENTITYX30) = ATTRIBX31
       &amp; isA(ENTITYX41,r_0199_0030__individual)

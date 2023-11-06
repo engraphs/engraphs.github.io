@@ -1067,6 +1067,8 @@ arc(r_0036_1039__question,r_0038_0007__why,scope).
 arc(r_0036_1051__utterance,r_0036_1058__abs,part1).
 arc(r_0036_1051__utterance,r_0039_0025__was,part2).
 arc(r_0036_1051__utterance,r_0039_0052__and,part3).
+arc(r_0036_1057,r_0039_0008__puppet__r_0039_0009__drama,nlyr2).
+arc(r_0036_1057,r_0039_0011__Kabuki__r_0039_0012__work,nlyr4).
 arc(r_0036_1058__abs,r_0039_0001__Reflecting,restriction).
 arc(r_0036_1058__abs,r_0039_0020__was,scope).
 arc(r_0037_0002__is,r_0037_0003__thought,catenative).
@@ -1097,14 +1099,14 @@ arc(r_0038_0009__number,r_0038_0011__artworks,r_0038_0010__of).
 arc(r_0038_0012__attributed,r_0036_0001__Sesshu,r_0038_0013__to_clr).
 arc(r_0038_0012__attributed,r_0038_0011__artworks,arg1).
 arc(r_0038_0015__increased,r_0038_0009__number,arg0).
+arc(r_0039_0001__Reflecting,r_0036_1057,arg0).
 arc(r_0039_0001__Reflecting,r_0039_0004__popularity,arg1).
-arc(r_0039_0001__Reflecting,z_0036_1057,arg0).
 arc(r_0039_0004__popularity,r_0036_0001__Sesshu,genv).
 arc(r_0039_0008__puppet__r_0039_0009__drama,r_0039_0007__Japanese,attrib1).
+arc(r_0039_0013__entitled,r_0036_1057,arg0).
 arc(r_0039_0013__entitled,r_0039_0016__Gion__r_0039_0017__Religious_r_0039_0018__Festival,arg1).
-arc(r_0039_0013__entitled,z_0036_1057,arg0).
 arc(r_0039_0020__was,r_0039_0021__created,catenative).
-arc(r_0039_0021__created,z_0036_1057,arg1).
+arc(r_0039_0021__created,r_0036_1057,arg1).
 arc(r_0039_0025__was,r_0039_0027__performed,catenative).
 arc(r_0039_0027__performed,r_0039_0024__drama,arg1).
 arc(r_0039_0027__performed,r_0039_0026__first,tmp2).
@@ -1123,7 +1125,7 @@ arc(r_0039_0052__and,r_0039_0055__were,conj2).
 arc(r_0039_0054__works,r_0039_0053__similar,attrib1).
 arc(r_0039_0055__were,r_0039_0056__performed,catenative).
 arc(r_0039_0056__performed,r_0039_0054__works,arg1).
-arc(r_0040_0003__Sesshu,r_0036_0001__Sesshu,z_0036_1094).
+arc(r_0040_0003__Sesshu,r_0036_0001__Sesshu,r_0036_1094).
 arc(r_0040_0005__gave,r_0040_0003__Sesshu,arg0).
 arc(r_0040_0005__gave,r_0040_0006__birth,arg1).
 arc(r_0040_0006__birth,r_0040_0008__one,r_0040_0007__to).
@@ -1135,8 +1137,6 @@ arc(r_0040_0012__is,r_0040_0016__figure,prd2).
 arc(r_0040_0016__figure,r_0040_0014__leading,attrib2).
 arc(r_0040_0016__figure,r_0040_0015__historical,attrib3).
 arc(r_0040_0016__figure,r_0040_0019__country,r_0040_0017__of).
-arc(z_0036_1057,r_0039_0008__puppet__r_0039_0009__drama,nlyr2).
-arc(z_0036_1057,r_0039_0011__Kabuki__r_0039_0012__work,nlyr4).
 
 </pre>
 <br>
@@ -1219,7 +1219,7 @@ fof(id__36_A_KYOTO_1,axiom,
       &amp; isA(EVENTX56,r_0039_0013__entitled)
       &amp; arg0(EVENTX56) = ENTITYX52
       &amp; arg1(EVENTX56) = r_0039_0016__Gion__r_0039_0017__Religious_r_0039_0018__Festival
-      &amp; isA(ENTITYX52,z_0036_1057)
+      &amp; isA(ENTITYX52,r_0036_1057)
       &amp; nlyr2(ENTITYX52) = ENTITYX53
       &amp; nlyr4(ENTITYX52) = ENTITYX55
       &amp; isA(ENTITYX53,r_0039_0008__puppet__r_0039_0009__drama)
@@ -1268,7 +1268,7 @@ fof(id__36_A_KYOTO_1,axiom,
       &amp; arg0(EVENTX100) = r_0040_0003__Sesshu
       &amp; arg1(EVENTX100) = ENTITYX96
       &amp; isA(r_0040_0003__Sesshu,r_0040_0003__Sesshu)
-      &amp; z_0036_1094(r_0040_0003__Sesshu) = SESSHUX95
+      &amp; r_0036_1094(r_0040_0003__Sesshu) = SESSHUX95
       &amp; isA(ATTRIBX23,r_0037_0024__feudal)
       &amp; isA(ATTRIBX54,r_0039_0007__Japanese)
       &amp; isA(ATTRIBX80,r_0039_0047__active)

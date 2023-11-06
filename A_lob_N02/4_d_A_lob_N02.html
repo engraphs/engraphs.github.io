@@ -1226,9 +1226,15 @@ arc(r_0005_0007__was,r_0005_0002__Beryl,r_0005_0001__To_bnf).
 arc(r_0005_0007__was,r_0005_0006__this,arg0).
 arc(r_0005_0007__was,r_0005_0008__anti_climax,prd2).
 arc(r_0005_0008__anti_climax,r_0005_0011__vengeance,r_0005_0009__with).
+arc(r_0005_1021,r_0006_0013__he,arg0).
+arc(r_0005_1021,r_0006_0015__bland,prd2).
+arc(r_0005_1055,r_0006_0013__he,genv).
+arc(r_0005_1055,r_0008_0013__own,attrib2).
 arc(r_0005_1080__utterance,r_0009_0005__just__r_0009_0006__as_cnt,part1).
 arc(r_0005_1087__cnt,r_0009_0009__going,scope).
 arc(r_0005_1087__cnt,r_0009_0014__meet,restriction).
+arc(r_0005_1119,r_0008_0024__Jack,conj1).
+arc(r_0005_1119,r_0009_0015__Blanche,conj2).
 arc(r_0006_0002__had,r_0006_0003__expected,catenative).
 arc(r_0006_0003__expected,r_0005_0002__Beryl,arg0).
 arc(r_0006_0003__expected,r_0006_0005__be,arg1).
@@ -1240,8 +1246,8 @@ arc(r_0006_0011__and,r_0006_0002__had,conj1).
 arc(r_0006_0011__and,r_0006_0014__was,conj2).
 arc(r_0006_0014__was,r_0006_0012__here,loc1).
 arc(r_0006_0014__was,r_0006_0016__and,catenative).
+arc(r_0006_0016__and,r_0005_1021,conj1).
 arc(r_0006_0016__and,r_0006_0017__smiling,conj2).
-arc(r_0006_0016__and,z_0005_1021,conj1).
 arc(r_0006_0017__smiling,r_0006_0013__he,arg0).
 arc(r_0007_0004__not,r_0007_0005__take,scope).
 arc(r_0007_0005__take,r_0005_0002__Beryl,arg1).
@@ -1264,7 +1270,7 @@ arc(r_0008_0006__as_cnt,r_0008_0008__led,restriction).
 arc(r_0008_0008__led,r_0006_0013__he,arg0).
 arc(r_0008_0008__led,r_0008_0010__way,arg1).
 arc(r_0008_0010__way,r_0008_0014__veranda,r_0008_0011__to).
-arc(r_0008_0014__veranda,z_0005_1055,genv).
+arc(r_0008_0014__veranda,r_0005_1055,genv).
 arc(r_0008_0018__had,r_0008_0019__taken,catenative).
 arc(r_0008_0019__taken,r_0006_0013__he,arg0).
 arc(r_0008_0019__taken,r_0008_0021__liberty,arg1).
@@ -1310,15 +1316,9 @@ arc(r_0011_0002__brought,r_0008_0024__Jack,arg0).
 arc(r_0011_0002__brought,r_0009_0015__Blanche,arg1).
 arc(r_0011_0002__brought,r_0011_0006__party,r_0011_0004__to_dir).
 arc(r_0011_0007__too,r_0011_0002__brought,scope).
+arc(r_0012_0004___apos_re,r_0005_1119,arg0).
 arc(r_0012_0004___apos_re,r_0012_0005__both,com4).
 arc(r_0012_0004___apos_re,r_0012_0006__here,prd2_loc5).
-arc(r_0012_0004___apos_re,z_0005_1119,arg0).
-arc(z_0005_1021,r_0006_0013__he,arg0).
-arc(z_0005_1021,r_0006_0015__bland,prd2).
-arc(z_0005_1055,r_0006_0013__he,genv).
-arc(z_0005_1055,r_0008_0013__own,attrib2).
-arc(z_0005_1119,r_0008_0024__Jack,conj1).
-arc(z_0005_1119,r_0009_0015__Blanche,conj2).
 
 </pre>
 <br>
@@ -1339,7 +1339,7 @@ fof(id__5_A_lob_N02__6_A_lob_N02__7_A_lob_N02__8_A_lob_N02__9_A_lob_N02__10_A_lo
       &amp; CATENATIVEX19 = CONJX24
       &amp; isA(CONJX24,r_0006_0016__and)
       &amp; conj1(CONJX24) = EVENTX22
-      &amp; isA(EVENTX22,z_0005_1021)
+      &amp; isA(EVENTX22,r_0005_1021)
       &amp; arg0(EVENTX22) = r_0006_0013__he
       &amp; prd2(EVENTX22) = ATTRIBX20
       &amp; conj2(CONJX24) = EVENTX23
@@ -1446,7 +1446,7 @@ fof(id__5_A_lob_N02__6_A_lob_N02__7_A_lob_N02__8_A_lob_N02__9_A_lob_N02__10_A_lo
       &amp; r_0008_0011__to(ENTITYX50) = ENTITYX51
       &amp; isA(ENTITYX51,r_0008_0014__veranda)
       &amp; genv(ENTITYX51) = ENTITYX52
-      &amp; isA(ENTITYX52,z_0005_1055)
+      &amp; isA(ENTITYX52,r_0005_1055)
       &amp; genv(ENTITYX52) = PIERSX53
       &amp; attrib2(ENTITYX52) = ATTRIBX54
       &amp; ( PIERSX53 = PIERSX49
@@ -1471,7 +1471,7 @@ fof(id__5_A_lob_N02__6_A_lob_N02__7_A_lob_N02__8_A_lob_N02__9_A_lob_N02__10_A_lo
       &amp; JACKX111 = r_0008_0024__Jack
       &amp; BLANCHEX112 = r_0009_0015__Blanche
       &amp; isA(ENTITYX113,r_0011_0006__party)
-      &amp; isA(JACK_AND_BLANCHEX116,z_0005_1119)
+      &amp; isA(JACK_AND_BLANCHEX116,r_0005_1119)
       &amp; conj1(JACK_AND_BLANCHEX116) = JACKX117
       &amp; conj2(JACK_AND_BLANCHEX116) = BLANCHEX118
       &amp; JACKX117 = r_0008_0024__Jack

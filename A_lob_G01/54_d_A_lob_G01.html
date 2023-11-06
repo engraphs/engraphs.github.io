@@ -536,20 +536,20 @@ arc(r_0062_0034__weight,r_0062_0038__tax,r_0062_0035__by).
 arc(r_0062_0038__tax,r_0062_0037__flat_rate,attrib2).
 arc(r_0062_0038__tax,r_0062_0040__treble,r_0062_0039__at).
 arc(r_0062_0040__treble,r_0062_0042__rate,arg1).
-arc(r_0062_0044__quantificational__r_0062_0044__every,r_0062_0045__adult,restriction).
-arc(r_0062_0044__quantificational__r_0062_0044__every,r_0062_0046__had,scope).
+arc(r_0062_0044__quantificational__every,r_0062_0045__adult,restriction).
+arc(r_0062_0044__quantificational__every,r_0062_0046__had,scope).
 arc(r_0062_0046__had,r_0062_0048__pay,catenative).
 arc(r_0062_0048__pay,r_0062_0045__adult,arg0).
 arc(r_0062_0048__pay,r_0062_0049__three__r_0062_0050__groats,arg1).
-arc(r_0062_0052__but,r_0062_0044__quantificational__r_0062_0044__every,conj1).
+arc(r_0062_0052__but,r_0062_0044__quantificational__every,conj1).
 arc(r_0062_0052__but,r_0062_0057__was,conj2).
 arc(r_0062_0057__was,r_0062_0054__time,tmp).
-arc(r_0062_0057__was,r_0062_0060__quantificational__r_0062_0060__anyone,catenative).
+arc(r_0062_0057__was,r_0062_0060__quantificational__anyone,catenative).
 arc(r_0062_0058__re_defined,r_0062_0056__adult,arg1).
-arc(r_0062_0058__re_defined,z_0062_1043,r_0062_0059__as_prd).
-arc(r_0062_0060__quantificational__r_0062_0060__anyone,r_0062_0058__re_defined,scope).
-arc(r_0062_0060__quantificational__r_0062_0060__anyone,z_0062_1043,restriction).
-arc(z_0062_1043,r_0062_0062__fifteen,r_0062_0061__over).
+arc(r_0062_0058__re_defined,r_0062_1043,r_0062_0059__as_prd).
+arc(r_0062_0060__quantificational__anyone,r_0062_0058__re_defined,scope).
+arc(r_0062_0060__quantificational__anyone,r_0062_1043,restriction).
+arc(r_0062_1043,r_0062_0062__fifteen,r_0062_0061__over).
 
 </pre>
 <br>
@@ -575,9 +575,9 @@ fof(id__62_A_lob_G01,axiom,
       &amp; arg0(EVENTX34) = ENTITYX30
       &amp; arg1(EVENTX34) = ENTITYX33
       &amp; CATENATIVEX38 = QUANTX41
-      &amp; isA(QUANTX41,r_0062_0060__quantificational__r_0062_0060__anyone)
+      &amp; isA(QUANTX41,r_0062_0060__quantificational__anyone)
       &amp; restriction(QUANTX41) = ENTITYX40
-      &amp; isA(ENTITYX40,z_0062_1043)
+      &amp; isA(ENTITYX40,r_0062_1043)
       &amp; r_0062_0061__over(ENTITYX40) = ENTITYX42
       &amp; scope(QUANTX41) = EVENTX44
       &amp; isA(EVENTX44,r_0062_0058__re_defined)
@@ -625,7 +625,7 @@ fof(id__62_A_lob_G01,axiom,
       &amp; conj3(CONJX47) = CONJX46
       &amp; isA(CONJX46,r_0062_0052__but)
       &amp; conj1(CONJX46) = QUANTX31
-      &amp; isA(QUANTX31,r_0062_0044__quantificational__r_0062_0044__every)
+      &amp; isA(QUANTX31,r_0062_0044__quantificational__every)
       &amp; restriction(QUANTX31) = ENTITYX30
       &amp; isA(ENTITYX30,r_0062_0045__adult)
       &amp; scope(QUANTX31) = EVENTX35

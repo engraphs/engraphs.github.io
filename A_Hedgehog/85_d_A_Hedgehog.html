@@ -209,10 +209,10 @@ If any Members are interested , I should be delighted if they contacted me on ol
 </svg>
 <br>
 <pre>
-arc(r_0091_0001__If_cnt_cnd,r_0091_0002__quantificational__r_0091_0002__any,restriction).
+arc(r_0091_0001__If_cnt_cnd,r_0091_0002__quantificational__any,restriction).
 arc(r_0091_0001__If_cnt_cnd,r_0091_0011__if_cnt_cnd,scope).
-arc(r_0091_0002__quantificational__r_0091_0002__any,r_0091_0003__Members,restriction).
-arc(r_0091_0002__quantificational__r_0091_0002__any,r_0091_0004__are,scope).
+arc(r_0091_0002__quantificational__any,r_0091_0003__Members,restriction).
+arc(r_0091_0002__quantificational__any,r_0091_0004__are,scope).
 arc(r_0091_0004__are,r_0091_0003__Members,arg0).
 arc(r_0091_0004__are,r_0091_0005__interested,prd2).
 arc(r_0091_0008__should,r_0091_0009__be,scope).
@@ -222,7 +222,7 @@ arc(r_0091_0011__if_cnt_cnd,r_0091_0008__should,scope).
 arc(r_0091_0011__if_cnt_cnd,r_0091_0013__contacted,restriction).
 arc(r_0091_0013__contacted,r_0091_0003__Members,arg0).
 arc(r_0091_0013__contacted,r_0091_0007__I,arg1).
-arc(r_0091_0013__contacted,z_0091_1011,r_0091_0015__on_loc).
+arc(r_0091_0013__contacted,r_0091_1011,r_0091_0015__on_loc).
 
 </pre>
 <br>
@@ -231,12 +231,12 @@ fof(id__91_A_Hedgehog,axiom,
     ? [MEMBERSX8,SPEAKERX9,CONNX1,CONNX7,EVENTX12,OPERATORX13,EVENTX14,QUANTX3,EVENTX5,EMAILX10,MEMBERSX2,ATTRIBX6,ATTRIBX4] :
       ( MEMBERSX8 = MEMBERSX2
       &amp; SPEAKERX9 = r_0091_0007__I
-      &amp; isA(EMAILX10,z_0091_1011)
+      &amp; isA(EMAILX10,r_0091_1011)
       &amp; isA(ATTRIBX4,r_0091_0005__interested)
       &amp; isA(ATTRIBX6,r_0091_0010__delighted)
       &amp; isA(CONNX1,r_0091_0001__If_cnt_cnd)
       &amp; restriction(CONNX1) = QUANTX3
-      &amp; isA(QUANTX3,r_0091_0002__quantificational__r_0091_0002__any)
+      &amp; isA(QUANTX3,r_0091_0002__quantificational__any)
       &amp; restriction(QUANTX3) = MEMBERSX2
       &amp; isA(MEMBERSX2,r_0091_0003__Members)
       &amp; scope(QUANTX3) = EVENTX5

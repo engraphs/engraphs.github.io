@@ -196,15 +196,15 @@ The United States was founded not as one nation but as a union of 13 colonies , 
 <pre>
 arc(r_0099_0004__was,r_0099_0005__founded,catenative).
 arc(r_0099_0005__founded,r_0099_0002__United__r_0099_0003__States,arg1).
-arc(r_0099_0005__founded,r_0099_0006__not__r_0099_0010__but,z_0099_1004).
+arc(r_0099_0005__founded,r_0099_0006__not__r_0099_0010__but,r_0099_1004).
 arc(r_0099_0006__not__r_0099_0010__but,r_0099_0008__one_r_0099_0009__nation,r_0099_0007__as_prd).
 arc(r_0099_0006__not__r_0099_0010__but,r_0099_0013__union,r_0099_0011__as_prd).
 arc(r_0099_0013__union,r_0099_0015__13__r_0099_0016__colonies,r_0099_0014__of).
-arc(r_0099_0015__13__r_0099_0016__colonies,z_0099_1013,prn4).
-arc(r_0099_0018__quantificational__r_0099_0018__each,r_0099_0015__13__r_0099_0016__colonies,scope).
-arc(r_0099_0018__quantificational__r_0099_0018__each,z_0099_1013,restriction).
+arc(r_0099_0015__13__r_0099_0016__colonies,r_0099_1013,prn4).
+arc(r_0099_0018__quantificational__each,r_0099_0015__13__r_0099_0016__colonies,scope).
+arc(r_0099_0018__quantificational__each,r_0099_1013,restriction).
 arc(r_0099_0019__claiming,r_0099_0020__independence,arg1).
-arc(r_0099_0019__claiming,z_0099_1013,arg0).
+arc(r_0099_0019__claiming,r_0099_1013,arg0).
 arc(r_0099_0020__independence,r_0099_0023__British__r_0099_0024__Crown,r_0099_0021__from).
 
 </pre>
@@ -215,18 +215,18 @@ fof(id__99_A_FACTBOOK_2_2010,axiom,
       ( CATENATIVEX1 = EVENTX14
       &amp; isA(EVENTX14,r_0099_0005__founded)
       &amp; arg1(EVENTX14) = r_0099_0002__United__r_0099_0003__States
-      &amp; z_0099_1004(EVENTX14) = CONJX5
+      &amp; r_0099_1004(EVENTX14) = CONJX5
       &amp; isA(CONJX5,r_0099_0006__not__r_0099_0010__but)
       &amp; r_0099_0007__as_prd(CONJX5) = ENTITYX6
       &amp; r_0099_0011__as_prd(CONJX5) = ENTITYX7
       &amp; isA(ENTITYX6,r_0099_0008__one__r_0099_0009__nation)
       &amp; isA(ENTITYX7,r_0099_0013__union)
       &amp; r_0099_0014__of(ENTITYX7) = ENTITYX8
-      &amp; isA(QUANTX10,r_0099_0018__quantificational__r_0099_0018__each)
+      &amp; isA(QUANTX10,r_0099_0018__quantificational__each)
       &amp; isA(EVENTX12,r_0099_0019__claiming)
       &amp; arg0(EVENTX12) = ENTITYX9
       &amp; arg1(EVENTX12) = ENTITYX11
-      &amp; isA(ENTITYX9,z_0099_1013)
+      &amp; isA(ENTITYX9,r_0099_1013)
       &amp; restriction(QUANTX10) = ENTITYX9
       &amp; scope(QUANTX10) = ENTITYX8
       &amp; isA(ENTITYX8,r_0099_0015__13__r_0099_0016__colonies)

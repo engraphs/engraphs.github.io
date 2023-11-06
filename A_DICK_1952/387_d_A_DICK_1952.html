@@ -222,18 +222,18 @@ He 's right : all this must be taken back home , sooner or later .
 <pre>
 arc(r_0502_0002___apos_s,r_0502_0001__He,arg0).
 arc(r_0502_0002___apos_s,r_0502_0003__right,prd2).
-arc(r_0502_0002___apos_s,r_0502_0005__quantificational__r_0502_0005__all,prn5).
-arc(r_0502_0005__quantificational__r_0502_0005__all,r_0502_0007__must,scope).
-arc(r_0502_0005__quantificational__r_0502_0005__all,z_0502_1007,restriction).
+arc(r_0502_0002___apos_s,r_0502_0005__quantificational__all,prn5).
+arc(r_0502_0005__quantificational__all,r_0502_0007__must,scope).
+arc(r_0502_0005__quantificational__all,r_0502_1007,restriction).
 arc(r_0502_0007__must,r_0502_0008__be,scope).
 arc(r_0502_0008__be,r_0502_0009__taken,catenative).
 arc(r_0502_0009__taken,r_0502_0011__home,clr_dir3).
 arc(r_0502_0009__taken,r_0502_0014__or,tmp5).
-arc(r_0502_0009__taken,z_0502_1007,arg1).
+arc(r_0502_0009__taken,r_0502_1007,arg1).
 arc(r_0502_0011__home,r_0502_0010__back,quality1).
 arc(r_0502_0014__or,r_0502_0013__sooner,conj1).
 arc(r_0502_0014__or,r_0502_0015__later,conj2).
-arc(z_0502_1007,z_0502_1006,nlyr2).
+arc(r_0502_1007,r_0502_1006,nlyr2).
 
 </pre>
 <br>
@@ -241,9 +241,9 @@ arc(z_0502_1007,z_0502_1006,nlyr2).
 fof(id__502_A_DICK_1952,axiom,
     ? [EVENTX2,CATENATIVEX9,EVENTX18,QUANTX4,OPERATORX8,EVENTX17,EVENTX16,ENTITYX3,ENTITYX5,ATTRIBX1,QUALITYX11,QUALITYX13,QUALITYX14,QUALITYX15,QUALITYX12] :
       ( EVENTX2 = QUANTX4
-      &amp; isA(QUANTX4,r_0502_0005__quantificational__r_0502_0005__all)
+      &amp; isA(QUANTX4,r_0502_0005__quantificational__all)
       &amp; restriction(QUANTX4) = ENTITYX3
-      &amp; isA(ENTITYX3,z_0502_1007)
+      &amp; isA(ENTITYX3,r_0502_1007)
       &amp; nlyr2(ENTITYX3) = ENTITYX5
       &amp; scope(QUANTX4) = OPERATORX8
       &amp; isA(OPERATORX8,r_0502_0007__must)
@@ -255,7 +255,7 @@ fof(id__502_A_DICK_1952,axiom,
       &amp; arg1(EVENTX16) = ENTITYX3
       &amp; clr_dir3(EVENTX16) = QUALITYX11
       &amp; tmp5(EVENTX16) = QUALITYX13
-      &amp; isA(ENTITYX5,z_0502_1006)
+      &amp; isA(ENTITYX5,r_0502_1006)
       &amp; isA(ATTRIBX1,r_0502_0003__right)
       &amp; isA(QUALITYX11,r_0502_0011__home)
       &amp; quality1(QUALITYX11) = QUALITYX12

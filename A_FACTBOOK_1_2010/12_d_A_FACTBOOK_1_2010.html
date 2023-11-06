@@ -724,10 +724,14 @@ arc(r_0021_0010__transmitted,r_0021_0012__humans,r_0021_0011__to_clr).
 arc(r_0021_0010__transmitted,r_0021_0015__bite,r_0021_0013__via_mnr).
 arc(r_0021_0015__bite,r_0021_0019__Anopheles__r_0021_0020__mosquito,r_0021_0016__of).
 arc(r_0021_0019__Anopheles__r_0021_0020__mosquito,r_0021_0018__female,attrib2).
+arc(r_0021_1006,r_0021_0003__caused,catenative).
+arc(r_0021_1015,r_0021_0010__transmitted,catenative).
 arc(r_0021_1019__cnt,r_0021_1024__cnt,scope).
 arc(r_0021_1019__cnt,r_0022_0006__attacking,restriction).
 arc(r_0021_1024__cnt,r_0022_0002__multiply,scope).
 arc(r_0021_1024__cnt,r_0022_0010__resulting,restriction).
+arc(r_0021_1051,r_0023_0001__death,r_0021_1038).
+arc(r_0021_1069,r_0024_0001__endemic,prd2).
 arc(r_0022_0002__multiply,r_0022_0001__parasites,arg0).
 arc(r_0022_0002__multiply,r_0022_0005__liver,r_0022_0003__in_loc).
 arc(r_0022_0006__attacking,r_0022_0001__parasites,arg0).
@@ -761,10 +765,6 @@ arc(r_0024_0018__1_5__r_0024_0020__2_5_r_0024_0021__million_r_0024_0024__deaths,
 arc(r_0024_0022__estimated,r_0024_0018__1_5__r_0024_0020__2_5_r_0024_0021__million_r_0024_0024__deaths,arg1).
 arc(r_0024_0025__occurring,r_0024_0014__and,arg0).
 arc(r_0024_0025__occurring,r_0024_0027__sub_Saharan__r_0024_0028__Africa,r_0024_0026__in_loc).
-arc(z_0021_1006,r_0021_0003__caused,catenative).
-arc(z_0021_1015,r_0021_0010__transmitted,catenative).
-arc(z_0021_1051,r_0023_0001__death,z_0021_1038).
-arc(z_0021_1069,r_0024_0001__endemic,prd2).
 
 </pre>
 <br>
@@ -852,9 +852,9 @@ fof(id__21_A_FACTBOOK_1_2010__22_A_FACTBOOK_1_2010__23_A_FACTBOOK_1_2010__24_A_F
       &amp; quality1(ATTRIBX57) = QUALITYX58
       &amp; isA(ATTRIBX67,r_0024_0023__annual)
       &amp; isA(QUALITYX58,r_0024_0005__mostly)
-      &amp; isA(EVENTX7,z_0021_1006)
+      &amp; isA(EVENTX7,r_0021_1006)
       &amp; catenative(EVENTX7) = CATENATIVEX1
-      &amp; isA(EVENTX16,z_0021_1015)
+      &amp; isA(EVENTX16,r_0021_1015)
       &amp; catenative(EVENTX16) = CATENATIVEX8
       &amp; isA(CONNX20,r_0021_1019__cnt)
       &amp; scope(CONNX20) = CONNX25
@@ -871,9 +871,9 @@ fof(id__21_A_FACTBOOK_1_2010__22_A_FACTBOOK_1_2010__23_A_FACTBOOK_1_2010__24_A_F
       &amp; isA(EVENTX23,r_0022_0006__attacking)
       &amp; arg0(EVENTX23) = ENTITYX17
       &amp; arg1(EVENTX23) = ENTITYX21
-      &amp; isA(EVENTX52,z_0021_1051)
-      &amp; z_0021_1038(EVENTX52) = ENTITYX39
-      &amp; isA(EVENTX70,z_0021_1069)
+      &amp; isA(EVENTX52,r_0021_1051)
+      &amp; r_0021_1038(EVENTX52) = ENTITYX39
+      &amp; isA(EVENTX70,r_0021_1069)
       &amp; prd2(EVENTX70) = ATTRIBX55 ) ).
 
 

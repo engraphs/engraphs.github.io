@@ -583,10 +583,10 @@ arc(r_0021_0002__can,r_0021_0003___apos_t,scope).
 arc(r_0021_0003___apos_t,r_0021_0004__understand,scope).
 arc(r_0021_0004__understand,r_0021_0001__I,arg0).
 arc(r_0021_0004__understand,r_0021_0005__it,arg1).
-arc(r_0021_0004__understand,z_0021_1013,tmp).
+arc(r_0021_0004__understand,r_0021_1013,tmp).
 arc(r_0021_0008__hear,r_0021_0001__I,arg0).
 arc(r_0021_0008__hear,r_0021_0009__people,arg1).
-arc(r_0021_0008__hear,z_0021_1013,tmp1).
+arc(r_0021_0008__hear,r_0021_1013,tmp1).
 arc(r_0021_0010__complaining,r_0021_0009__people,arg0).
 arc(r_0021_0010__complaining,r_0021_0012__immigrants,r_0021_0011__about_clr).
 arc(r_0021_0013__coming,r_0021_0012__immigrants,arg0).
@@ -596,10 +596,11 @@ arc(r_0021_0015__and,r_0021_0016__taking__r_0021_0017__away,conj2).
 arc(r_0021_0016__taking__r_0021_0017__away,r_0021_0012__immigrants,arg0).
 arc(r_0021_0016__taking__r_0021_0017__away,r_0021_0021__jobs,arg1).
 arc(r_0021_0021__jobs,r_0021_0019__our,attrib2).
-arc(r_0022_0001__quantificational__r_0022_0001__A_lot,r_0022_0005__are,scope).
-arc(r_0022_0001__quantificational__r_0022_0001__A_lot,z_0021_1022,restriction).
+arc(r_0021_1022,r_0021_0012__immigrants,r_0022_0002__of).
+arc(r_0022_0001__quantificational__A_lot,r_0021_1022,restriction).
+arc(r_0022_0001__quantificational__A_lot,r_0022_0005__are,scope).
+arc(r_0022_0005__are,r_0021_1022,arg0).
 arc(r_0022_0005__are,r_0022_0007__people,prd2).
-arc(r_0022_0005__are,z_0021_1022,arg0).
 arc(r_0022_0007__people,r_0022_0006__young,attrib1).
 arc(r_0022_0009__come,r_0022_0007__people,arg0).
 arc(r_0022_0009__come,r_0022_0012__UK,r_0022_0010__to_clr_dir).
@@ -615,14 +616,13 @@ arc(r_0022_0023__society,r_0022_0022__our,genv).
 arc(r_0022_0024__and,r_0022_0023__society,conj1).
 arc(r_0022_0024__and,r_0022_0026__economy,conj2).
 arc(r_0022_0026__economy,r_0022_0022__our,genv).
-arc(r_0022_0027__and,r_0022_0001__quantificational__r_0022_0001__A_lot,conj1).
+arc(r_0022_0027__and,r_0022_0001__quantificational__A_lot,conj1).
 arc(r_0022_0027__and,r_0022_0031__think,conj2).
 arc(r_0022_0031__think,r_0021_0001__I,arg0).
 arc(r_0022_0031__think,r_0022_0030__one,r_0022_0029__for_mod).
 arc(r_0022_0031__think,r_0022_0033__is,arg1).
 arc(r_0022_0033__is,r_0022_0005__are,arg0).
 arc(r_0022_0033__is,r_0022_0034__great,prd2).
-arc(z_0021_1022,r_0021_0012__immigrants,r_0022_0002__of).
 
 </pre>
 <br>
@@ -637,7 +637,7 @@ fof(id__21_A_OPENCities__22_A_OPENCities,axiom,
       &amp; tmp1(EVENTX12) = ENTITYX1
       &amp; arg0(EVENTX12) = SPEAKERX2
       &amp; arg1(EVENTX12) = ENTITYX3
-      &amp; isA(ENTITYX1,z_0021_1013)
+      &amp; isA(ENTITYX1,r_0021_1013)
       &amp; SPEAKERX2 = r_0021_0001__I
       &amp; isA(EVENTX11,r_0021_0010__complaining)
       &amp; arg0(EVENTX11) = ENTITYX3
@@ -701,9 +701,9 @@ fof(id__21_A_OPENCities__22_A_OPENCities,axiom,
       &amp; tmp(EVENTX16) = ENTITYX1
       &amp; isA(CONJX44,r_0022_0027__and)
       &amp; conj1(CONJX44) = QUANTX20
-      &amp; isA(QUANTX20,r_0022_0001__quantificational__r_0022_0001__A_lot)
+      &amp; isA(QUANTX20,r_0022_0001__quantificational__A_lot)
       &amp; restriction(QUANTX20) = ENTITYX19
-      &amp; isA(ENTITYX19,z_0021_1022)
+      &amp; isA(ENTITYX19,r_0021_1022)
       &amp; r_0022_0002__of(ENTITYX19) = IMMIGRANTSX21
       &amp; scope(QUANTX20) = IMMIGRAX36
       &amp; isA(IMMIGRAX36,r_0022_0005__are)

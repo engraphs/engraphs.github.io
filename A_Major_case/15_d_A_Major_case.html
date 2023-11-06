@@ -1009,10 +1009,10 @@ arc(r_0025_0042__explain,r_0025_1010__question,arg1).
 arc(r_0025_0043__why,r_0025_0045__has,scope).
 arc(r_0025_0045__has,r_0025_0046__proved,catenative).
 arc(r_0025_0046__proved,r_0025_0047__impossible,prd2).
-arc(r_0025_0046__proved,r_0025_0050__quantificational__r_0025_0050__any,arg0).
+arc(r_0025_0046__proved,r_0025_0050__quantificational__any,arg0).
 arc(r_0025_0049__find,r_0025_0052__or,arg1).
-arc(r_0025_0050__quantificational__r_0025_0050__any,r_0025_0049__find,scope).
-arc(r_0025_0050__quantificational__r_0025_0050__any,r_0025_0052__or,restriction).
+arc(r_0025_0050__quantificational__any,r_0025_0049__find,scope).
+arc(r_0025_0050__quantificational__any,r_0025_0052__or,restriction).
 arc(r_0025_0052__or,r_0025_0051__official,conj1).
 arc(r_0025_0052__or,r_0025_0053__Minister,conj2).
 arc(r_0025_0054__prepared,r_0025_0052__or,arg0).
@@ -1034,6 +1034,7 @@ arc(r_0025_0086__involved,r_0025_0084__Government,arg1).
 arc(r_0025_1002__question,r_0025_0037__could,scope).
 arc(r_0025_1010__question,r_0025_0043__why,scope).
 arc(r_0025_1045__question,r_0026_0001__Would,scope).
+arc(r_0025_1068,r_0027_0013__learned,attrib1).
 arc(r_0026_0001__Would,r_0026_0005__like,scope).
 arc(r_0026_0005__like,r_0025_0017__Prime__r_0025_0018__Minister,arg0).
 arc(r_0026_0005__like,r_0026_0007__reconsider,arg1).
@@ -1050,8 +1051,8 @@ arc(r_0027_0008__advise,r_0025_0022__my,arg0).
 arc(r_0027_0008__advise,r_0027_0014__Friend,arg1).
 arc(r_0027_0008__advise,r_0027_0017__proceedings,r_0027_0015__about_rst).
 arc(r_0027_0011__hon_,r_0027_0010__right,attrib1).
+arc(r_0027_0012__and,r_0025_1068,conj2).
 arc(r_0027_0012__and,r_0027_0011__hon_,conj1).
-arc(r_0027_0012__and,z_0025_1068,conj2).
 arc(r_0027_0014__Friend,r_0025_0022__my,genv).
 arc(r_0027_0014__Friend,r_0027_0012__and,nlyr2).
 arc(r_0027_0017__proceedings,r_0027_0016__legal,attrib1).
@@ -1059,17 +1060,16 @@ arc(r_0027_0018__but,r_0027_0006__hesitate,conj1).
 arc(r_0027_0018__but,r_0027_0020__if_cnt_cnd,conj2).
 arc(r_0027_0020__if_cnt_cnd,r_0027_0022__looks,restriction).
 arc(r_0027_0020__if_cnt_cnd,r_0027_0032__will,scope).
+arc(r_0027_0022__looks,r_0025_1078,r_0027_0023__at_clr).
 arc(r_0027_0022__looks,r_0027_0014__Friend,arg0).
-arc(r_0027_0022__looks,z_0025_1078,r_0027_0023__at_clr).
+arc(r_0027_0025__happened,r_0025_1078,arg0).
 arc(r_0027_0025__happened,r_0027_0027__Scotland,r_0027_0026__in_loc).
 arc(r_0027_0025__happened,r_0027_0029__morning,tmp).
-arc(r_0027_0025__happened,z_0025_1078,arg0).
 arc(r_0027_0032__will,r_0027_0033__discover,scope).
 arc(r_0027_0033__discover,r_0027_0014__Friend,arg0).
 arc(r_0027_0033__discover,r_0027_0037__was,arg1).
 arc(r_0027_0037__was,r_0027_0038__thrown__r_0027_0039__out,catenative).
 arc(r_0027_0038__thrown__r_0027_0039__out,r_0027_0036__case,arg1).
-arc(z_0025_1068,r_0027_0013__learned,attrib1).
 
 </pre>
 <br>
@@ -1088,7 +1088,7 @@ fof(id__25_A_Major_case__26_A_Major_case__27_A_Major_case,axiom,
       &amp; prd2(EVENTX40) = ATTRIBX14
       &amp; arg0(EVENTX40) = STATEX15
       &amp; STATEX15 = QUANTX17
-      &amp; isA(QUANTX17,r_0025_0050__quantificational__r_0025_0050__any)
+      &amp; isA(QUANTX17,r_0025_0050__quantificational__any)
       &amp; isA(EVENTX36,r_0025_0054__prepared)
       &amp; arg0(EVENTX36) = ENTITYX16
       &amp; r_0025_0055__to_clr(EVENTX36) = ENTITYX18
@@ -1178,7 +1178,7 @@ fof(id__25_A_Major_case__26_A_Major_case__27_A_Major_case,axiom,
       &amp; conj2(ENTITYX63) = ENTITYX66
       &amp; isA(ENTITYX64,r_0027_0011__hon_)
       &amp; attrib1(ENTITYX64) = ATTRIBX65
-      &amp; isA(ENTITYX66,z_0025_1068)
+      &amp; isA(ENTITYX66,r_0025_1068)
       &amp; attrib1(ENTITYX66) = ATTRIBX67
       &amp; isA(ENTITYX69,r_0027_0017__proceedings)
       &amp; attrib1(ENTITYX69) = ATTRIBX70
@@ -1187,7 +1187,7 @@ fof(id__25_A_Major_case__26_A_Major_case__27_A_Major_case,axiom,
       &amp; arg0(EVENTX77) = ENTITYX75
       &amp; r_0027_0026__in_loc(EVENTX77) = r_0027_0027__Scotland
       &amp; tmp(EVENTX77) = ENTITYX76
-      &amp; isA(ENTITYX75,z_0025_1078)
+      &amp; isA(ENTITYX75,r_0025_1078)
       &amp; isA(ENTITYX76,r_0027_0029__morning)
       &amp; GRIEVEX80 = GRIEVEX61
       &amp; isA(ENTITYX82,r_0027_0036__case)

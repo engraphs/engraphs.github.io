@@ -137,13 +137,13 @@
 <br>
 <pre>
 arc(r_0241_0006__said,r_0241_1003__utterance,arg1).
-arc(r_0241_0006__said,z_0241_1015,arg0).
-arc(r_0241_0007__quantificational__r_0241_0007__each,r_0241_0006__said,scope).
-arc(r_0241_0007__quantificational__r_0241_0007__each,z_0241_1015,restriction).
-arc(r_0241_1003__utterance,z_0241_1006,part1).
-arc(z_0241_1006,r_0241_0003__myself,r_0241_0002__Of).
-arc(z_0241_1015,r_0241_0003__myself,z_0241_1012).
-arc(z_0241_1015,r_0241_0010__Town__r_0241_0011__Councillors,r_0241_0008__of).
+arc(r_0241_0006__said,r_0241_1015,arg0).
+arc(r_0241_0007__quantificational__each,r_0241_0006__said,scope).
+arc(r_0241_0007__quantificational__each,r_0241_1015,restriction).
+arc(r_0241_1003__utterance,r_0241_1006,part1).
+arc(r_0241_1006,r_0241_0003__myself,r_0241_0002__Of).
+arc(r_0241_1015,r_0241_0003__myself,r_0241_1012).
+arc(r_0241_1015,r_0241_0010__Town__r_0241_0011__Councillors,r_0241_0008__of).
 
 </pre>
 <br>
@@ -153,14 +153,14 @@ fof(id__241_A_WILDE_1_1888,axiom,
       ( STATEX1 = CONJX8
       &amp; isA(CONJX8,r_0241_1003__utterance)
       &amp; part1(CONJX8) = EVENTX7
-      &amp; isA(EVENTX7,z_0241_1006)
+      &amp; isA(EVENTX7,r_0241_1006)
       &amp; r_0241_0002__Of(EVENTX7) = r_0241_0003__myself
       &amp; COUNCILLORX13 = r_0241_0003__myself
       &amp; isA(COUNCILLORSX14,r_0241_0010__Town__r_0241_0011__Councillors)
-      &amp; isA(QUANTX10,r_0241_0007__quantificational__r_0241_0007__each)
+      &amp; isA(QUANTX10,r_0241_0007__quantificational__each)
       &amp; restriction(QUANTX10) = ENTITYX9
-      &amp; isA(ENTITYX9,z_0241_1015)
-      &amp; z_0241_1012(ENTITYX9) = COUNCILLORX13
+      &amp; isA(ENTITYX9,r_0241_1015)
+      &amp; r_0241_1012(ENTITYX9) = COUNCILLORX13
       &amp; r_0241_0008__of(ENTITYX9) = COUNCILLORSX14
       &amp; scope(QUANTX10) = EVENTX16
       &amp; isA(EVENTX16,r_0241_0006__said)

@@ -2017,10 +2017,14 @@ arc(r_0027_0021__are,r_0027_0017__rights,arg0).
 arc(r_0027_0021__are,r_0027_0022__limited,prd2).
 arc(r_0027_0022__limited,r_0027_0024__relation,r_0027_0023__in).
 arc(r_0027_0024__relation,r_0027_0026__one,r_0027_0025__to).
+arc(r_0027_1016,r_0027_0003__Law,arg0).
+arc(r_0027_1016,r_0027_0006__sub_discipline,prd2).
 arc(r_0027_1028__cnt,r_0028_0001__Also,restriction).
 arc(r_0027_1028__cnt,r_0028_0016__is,scope).
+arc(r_0027_1044__cnt,r_0027_1049,restriction).
 arc(r_0027_1044__cnt,r_0029_0010__ensures,scope).
-arc(r_0027_1044__cnt,z_0027_1049,restriction).
+arc(r_0027_1049,r_0029_0001__Similar,prd).
+arc(r_0027_1049,r_0029_0009__system,arg0).
 arc(r_0028_0001__Also,r_0028_0002__referred__r_0028_0003__to,scope).
 arc(r_0028_0002__referred__r_0028_0003__to,r_0027_0013__law,arg1).
 arc(r_0028_0002__referred__r_0028_0003__to,r_0028_0011__or,r_0028_0004__as_prd).
@@ -2095,9 +2099,9 @@ arc(r_0031_0049__is,r_0031_0032__EU,arg0).
 arc(r_0031_0049__is,r_0031_0051__union,prd2).
 arc(r_0031_0051__union,r_0031_0053__member__r_0031_0054__states,r_0031_0052__of).
 arc(r_0031_0056__and,r_0031_0049__is,conj1).
-arc(r_0031_0056__and,r_0031_0057__quantificational__r_0031_0057__all,conj2).
-arc(r_0031_0057__quantificational__r_0031_0057__all,r_0031_0059__authorities,restriction).
-arc(r_0031_0057__quantificational__r_0031_0057__all,r_0031_0060__are,scope).
+arc(r_0031_0056__and,r_0031_0057__quantificational__all,conj2).
+arc(r_0031_0057__quantificational__all,r_0031_0059__authorities,restriction).
+arc(r_0031_0057__quantificational__all,r_0031_0060__are,scope).
 arc(r_0031_0059__authorities,r_0031_0032__EU,genv).
 arc(r_0031_0060__are,r_0031_0062__granted,catenative).
 arc(r_0031_0062__granted,r_0031_0059__authorities,arg1).
@@ -2134,7 +2138,7 @@ arc(r_0031_0096__cause,r_0031_0100__harm,arg1).
 arc(r_0031_0098__or,r_0031_0097__severe,conj1).
 arc(r_0031_0098__or,r_0031_0099__irreversible,conj2).
 arc(r_0031_0100__harm,r_0031_0098__or,attrib1).
-arc(r_0031_0100__harm,r_0031_0104__or,z_0027_1139).
+arc(r_0031_0100__harm,r_0031_0104__or,r_0027_1139).
 arc(r_0031_0104__or,r_0031_0103__public,r_0031_0101__to).
 arc(r_0031_0104__or,r_0031_0107__environment,r_0031_0105__to).
 arc(r_0031_0111__absence,r_0031_0115__consensus,r_0031_0112__of).
@@ -2152,10 +2156,6 @@ arc(r_0031_0131__advocate,r_0031_0128__those,arg0).
 arc(r_0031_0131__advocate,r_0031_0132__taking,arg1).
 arc(r_0031_0132__taking,r_0031_0128__those,arg0).
 arc(r_0031_0132__taking,r_0031_0134__action,arg1).
-arc(z_0027_1016,r_0027_0003__Law,arg0).
-arc(z_0027_1016,r_0027_0006__sub_discipline,prd2).
-arc(z_0027_1049,r_0029_0001__Similar,prd).
-arc(z_0027_1049,r_0029_0009__system,arg0).
 
 </pre>
 <br>
@@ -2193,7 +2193,7 @@ fof(id__27_A_FACTBOOK_2_2010__28_A_FACTBOOK_2_2010__29_A_FACTBOOK_2_2010__30_A_F
       &amp; arg0(EVENTX102) = EUX99
       &amp; prd2(EVENTX102) = ENTITYX100
       &amp; conj2(CONJX112) = QUANTX104
-      &amp; isA(QUANTX104,r_0031_0057__quantificational__r_0031_0057__all)
+      &amp; isA(QUANTX104,r_0031_0057__quantificational__all)
       &amp; restriction(QUANTX104) = ENTITYX103
       &amp; isA(ENTITYX103,r_0031_0059__authorities)
       &amp; genv(ENTITYX103) = EUX105
@@ -2360,7 +2360,7 @@ fof(id__27_A_FACTBOOK_2_2010__28_A_FACTBOOK_2_2010__29_A_FACTBOOK_2_2010__30_A_F
       &amp; isA(ENTITYX133,r_0031_0094__policy)
       &amp; isA(ENTITYX134,r_0031_0100__harm)
       &amp; attrib1(ENTITYX134) = ATTRIBX136
-      &amp; z_0027_1139(ENTITYX134) = CONJX140
+      &amp; r_0027_1139(ENTITYX134) = CONJX140
       &amp; isA(CONJX140,r_0031_0104__or)
       &amp; r_0031_0101__to(CONJX140) = ENTITYX141
       &amp; r_0031_0105__to(CONJX140) = ENTITYX142
@@ -2443,7 +2443,7 @@ fof(id__27_A_FACTBOOK_2_2010__28_A_FACTBOOK_2_2010__29_A_FACTBOOK_2_2010__30_A_F
       &amp; isA(QUALITYX60,r_0030_0021__largely)
       &amp; isA(QUALITYX80,r_0031_0024__least)
       &amp; isA(QUALITYX107,r_0031_0061__voluntarily)
-      &amp; isA(EVENTX17,z_0027_1016)
+      &amp; isA(EVENTX17,r_0027_1016)
       &amp; arg0(EVENTX17) = ENTITYX1
       &amp; prd2(EVENTX17) = ENTITYX2
       &amp; isA(CONNX29,r_0027_1028__cnt)
@@ -2459,7 +2459,7 @@ fof(id__27_A_FACTBOOK_2_2010__28_A_FACTBOOK_2_2010__29_A_FACTBOOK_2_2010__30_A_F
       &amp; prd2(EVENTX35) = ENTITYX19
       &amp; isA(CONNX45,r_0027_1044__cnt)
       &amp; restriction(CONNX45) = EVENTX50
-      &amp; isA(EVENTX50,z_0027_1049)
+      &amp; isA(EVENTX50,r_0027_1049)
       &amp; arg0(EVENTX50) = ENTITYX36
       &amp; prd(EVENTX50) = ATTRIBX46
       &amp; scope(CONNX45) = EVENTX51

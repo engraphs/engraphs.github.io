@@ -529,12 +529,12 @@ I turned the gas on and put a piece of bacon in the pan but the gas was too high
 <br>
 <pre>
 arc(r_0010_0004__was,r_0010_0005__melted,catenative).
-arc(r_0010_0004__was,z_0010_1009,tmp1).
+arc(r_0010_0004__was,r_0010_1009,tmp1).
 arc(r_0010_0005__melted,r_0010_0003__fat,arg1).
 arc(r_0010_0007__turned,r_0010_0006__I,arg0).
 arc(r_0010_0007__turned,r_0010_0009__gas,arg1).
 arc(r_0010_0007__turned,r_0010_0010__off,clr_dir5).
-arc(r_0010_0007__turned,z_0010_1009,tmp).
+arc(r_0010_0007__turned,r_0010_1009,tmp).
 arc(r_0010_0011__and,r_0010_0007__turned,conj1).
 arc(r_0010_0011__and,r_0010_0017__and,conj2).
 arc(r_0010_0013__went,r_0010_0006__I,arg0).
@@ -552,7 +552,7 @@ arc(r_0011_0006__and,r_0011_0007__put,conj2).
 arc(r_0011_0007__put,r_0010_0006__I,arg0).
 arc(r_0011_0007__put,r_0011_0009__piece,arg1).
 arc(r_0011_0007__put,r_0011_0014__pan,r_0011_0012__in_clr_dir).
-arc(r_0011_0009__piece,r_0010_0020__bacon,z_0010_1029).
+arc(r_0011_0009__piece,r_0010_0020__bacon,r_0010_1029).
 arc(r_0011_0009__piece,r_0011_0011__bacon,r_0011_0010__of).
 arc(r_0011_0015__but,r_0011_0006__and,conj1).
 arc(r_0011_0015__but,r_0011_0018__was,conj2).
@@ -561,13 +561,13 @@ arc(r_0011_0018__was,r_0011_0020__high,prd2).
 arc(r_0011_0020__high,r_0011_0019__too,quality1).
 arc(r_0011_0021__and,r_0011_0015__but,conj1).
 arc(r_0011_0021__and,r_0011_0029__was,conj2).
+arc(r_0011_0024__had,r_0010_1046,tmp1).
 arc(r_0011_0024__had,r_0011_0025__done,catenative).
-arc(r_0011_0024__had,z_0010_1046,tmp1).
 arc(r_0011_0025__done,r_0010_0006__I,arg0).
 arc(r_0011_0025__done,r_0010_0020__bacon,arg1).
 arc(r_0011_0029__was,r_0010_0020__bacon,arg0).
+arc(r_0011_0029__was,r_0010_1046,tmp).
 arc(r_0011_0029__was,r_0011_0031__burnt,prd2).
-arc(r_0011_0029__was,z_0010_1046,tmp).
 arc(r_0011_0031__burnt,r_0011_0030__all,quality1).
 
 </pre>
@@ -585,7 +585,7 @@ fof(id__10_A_stories_10_K03__11_A_stories_10_K03,axiom,
       &amp; isA(EVENTX8,r_0010_0004__was)
       &amp; tmp1(EVENTX8) = ENTITYX3
       &amp; catenative(EVENTX8) = CATENATIVEX5
-      &amp; isA(ENTITYX3,z_0010_1009)
+      &amp; isA(ENTITYX3,r_0010_1009)
       &amp; isA(FATX4,r_0010_0003__fat)
       &amp; isA(GASX10,r_0010_0009__gas)
       &amp; SPEAKERX13 = r_0010_0006__I
@@ -594,7 +594,7 @@ fof(id__10_A_stories_10_K03__11_A_stories_10_K03,axiom,
       &amp; SPEAKERX23 = r_0010_0006__I
       &amp; GASX24 = GASX10
       &amp; isA(ENTITYX27,r_0011_0009__piece)
-      &amp; z_0010_1029(ENTITYX27) = BACONX30
+      &amp; r_0010_1029(ENTITYX27) = BACONX30
       &amp; r_0011_0010__of(ENTITYX27) = ENTITYX31
       &amp; BACONX30 = BACONX16
       &amp; isA(ENTITYX31,r_0011_0011__bacon)
@@ -603,7 +603,7 @@ fof(id__10_A_stories_10_K03__11_A_stories_10_K03,axiom,
       &amp; isA(EVENTX45,r_0011_0024__had)
       &amp; tmp1(EVENTX45) = ENTITYX40
       &amp; catenative(EVENTX45) = CATENATIVEX42
-      &amp; isA(ENTITYX40,z_0010_1046)
+      &amp; isA(ENTITYX40,r_0010_1046)
       &amp; SPEAKERX41 = r_0010_0006__I
       &amp; BACONX43 = BACONX16
       &amp; BACONX47 = BACONX16

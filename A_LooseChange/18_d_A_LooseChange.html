@@ -806,6 +806,7 @@ arc(r_0039_0012__handful,r_0039_0011__her,genv).
 arc(r_0039_0012__handful,r_0039_0014__change,r_0039_0013__of).
 arc(r_0039_0015__were,r_0039_0010__and,arg0).
 arc(r_0039_0015__were,r_0039_0016__gone,prd2).
+arc(r_0039_1026,r_0041_0010__other,attrib2).
 arc(r_0039_1048__utterance,r_0042_0014__is,part1).
 arc(r_0039_1057__question,r_0043_0001__Was,scope).
 arc(r_0040_0002__found,r_0039_0003__I,arg0).
@@ -816,9 +817,9 @@ arc(r_0040_0005__staring,r_0040_0008__portrait,r_0040_0006__at_clr_dir).
 arc(r_0040_0008__portrait,r_0040_0010__Darcy__r_0040_0011__Bussell,r_0040_0009__of).
 arc(r_0041_0002__head,r_0039_0009__girl,genv).
 arc(r_0041_0003__was,r_0041_0011__as_if_mnr,catenative).
+arc(r_0041_0004__inclining,r_0039_1026,r_0041_0008__to_dir).
 arc(r_0041_0004__inclining,r_0041_0002__head,arg0).
 arc(r_0041_0004__inclining,r_0041_0006__one__r_0041_0007__side,r_0041_0005__from_dir).
-arc(r_0041_0004__inclining,z_0039_1026,r_0041_0008__to_dir).
 arc(r_0041_0011__as_if_mnr,r_0041_0004__inclining,scope).
 arc(r_0041_0011__as_if_mnr,r_0041_0014__were,restriction).
 arc(r_0041_0014__were,r_0041_0013__painting,arg0).
@@ -839,8 +840,8 @@ arc(r_0042_0010__said,r_0039_1048__utterance,arg1).
 arc(r_0042_0014__is,r_0040_0008__portrait,arg0).
 arc(r_0042_0014__is,r_0042_0016__picture,prd2).
 arc(r_0042_0016__picture,r_0042_0015__good,attrib1).
+arc(r_0043_0001__Was,r_0039_1080,clf).
 arc(r_0043_0001__Was,r_0043_0007__or,foc).
-arc(r_0043_0001__Was,z_0039_1080,clf).
 arc(r_0043_0004__explanation,r_0039_0003__I,genv).
 arc(r_0043_0005__left,r_0043_0004__explanation,arg1).
 arc(r_0043_0005__left,r_0043_0006__dangling,prd).
@@ -849,13 +850,12 @@ arc(r_0043_0007__or,r_0043_0009__fact,conj2).
 arc(r_0043_0009__fact,r_0043_0012__liked,emb3).
 arc(r_0043_0012__liked,r_0039_0009__girl,arg0).
 arc(r_0043_0012__liked,r_0043_0015__painting,arg1).
-arc(r_0043_0015__painting,r_0040_0008__portrait,z_0039_1070).
+arc(r_0043_0015__painting,r_0040_0008__portrait,r_0039_1070).
 arc(r_0043_0015__painting,r_0043_0014__dreadful,attrib3).
+arc(r_0043_0017__caused,r_0039_1080,arg0).
 arc(r_0043_0017__caused,r_0043_0021__gape,arg1).
-arc(r_0043_0017__caused,z_0039_1080,arg0).
 arc(r_0043_0019__mouth,r_0039_0003__I,genv).
 arc(r_0043_0021__gape,r_0043_0019__mouth,arg0).
-arc(z_0039_1026,r_0041_0010__other,attrib2).
 
 </pre>
 <br>
@@ -907,7 +907,7 @@ fof(id__39_A_LooseChange__40_A_LooseChange__41_A_LooseChange__42_A_LooseChange__
       &amp; genv(ENTITYX20) = LAYLORX21
       &amp; LAYLORX21 = LAYLORX5
       &amp; isA(ENTITYX23,r_0041_0006__one__r_0041_0007__side)
-      &amp; isA(ENTITYX24,z_0039_1026)
+      &amp; isA(ENTITYX24,r_0039_1026)
       &amp; attrib2(ENTITYX24) = ATTRIBX25
       &amp; isA(ENTITYX28,r_0041_0013__painting)
       &amp; isA(OPERATORX33,r_0041_0018__might)
@@ -940,13 +940,13 @@ fof(id__39_A_LooseChange__40_A_LooseChange__41_A_LooseChange__42_A_LooseChange__
       &amp; emb3(ENTITYX65) = STATEX66
       &amp; LAYLORX67 = LAYLORX5
       &amp; isA(ENTITYX68,r_0043_0015__painting)
-      &amp; z_0039_1070(ENTITYX68) = DARCY_BUSSELL_PORTRAITX71
+      &amp; r_0039_1070(ENTITYX68) = DARCY_BUSSELL_PORTRAITX71
       &amp; attrib3(ENTITYX68) = ATTRIBX72
       &amp; DARCY_BUSSELL_PORTRAITX71 = DARCY_BUSSELL_PORTRAITX17
       &amp; isA(EVENTX79,r_0043_0017__caused)
       &amp; arg0(EVENTX79) = ENTITYX74
       &amp; arg1(EVENTX79) = STATEX77
-      &amp; isA(ENTITYX74,z_0039_1080)
+      &amp; isA(ENTITYX74,r_0039_1080)
       &amp; isA(ENTITYX75,r_0043_0019__mouth)
       &amp; genv(ENTITYX75) = SPEAKERX76
       &amp; SPEAKERX76 = r_0039_0003__I

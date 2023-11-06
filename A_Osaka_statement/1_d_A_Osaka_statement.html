@@ -555,12 +555,12 @@ arc(r_0002_0017__is,r_0002_0006__thing,arg0).
 arc(r_0002_0017__is,r_0002_0021__so_that_cnt,prd2).
 arc(r_0002_0020__withdraw,r_0001_0007__I,arg0).
 arc(r_0002_0021__so_that_cnt,r_0002_0020__withdraw,scope).
-arc(r_0002_0021__so_that_cnt,r_0002_0022__quantificational__r_0002_0022__everyone,restriction).
-arc(r_0002_0022__quantificational__r_0002_0022__everyone,r_0002_0023__can,scope).
-arc(r_0002_0022__quantificational__r_0002_0022__everyone,z_0001_1031,restriction).
+arc(r_0002_0021__so_that_cnt,r_0002_0022__quantificational__everyone,restriction).
+arc(r_0002_0022__quantificational__everyone,r_0001_1031,restriction).
+arc(r_0002_0022__quantificational__everyone,r_0002_0023__can,scope).
 arc(r_0002_0023__can,r_0002_0024__get,scope).
+arc(r_0002_0024__get,r_0001_1031,arg0).
 arc(r_0002_0024__get,r_0002_0025__back,clr_dir4).
-arc(r_0002_0024__get,z_0001_1031,arg0).
 arc(r_0002_0025__back,r_0002_0027__focusing,r_0002_0026__to).
 arc(r_0002_0027__focusing,r_0002_0030__tennis,r_0002_0028__on_clr).
 arc(r_0002_0031__going__r_0002_0032__on,r_0002_0030__tennis,arg0).
@@ -591,9 +591,9 @@ fof(id__1_A_Osaka_statement__2_A_Osaka_statement,axiom,
       &amp; isA(EVENTX41,r_0002_0020__withdraw)
       &amp; arg0(EVENTX41) = SPEAKERX27
       &amp; restriction(CONNX28) = QUANTX30
-      &amp; isA(QUANTX30,r_0002_0022__quantificational__r_0002_0022__everyone)
+      &amp; isA(QUANTX30,r_0002_0022__quantificational__everyone)
       &amp; restriction(QUANTX30) = ENTITYX29
-      &amp; isA(ENTITYX29,z_0001_1031)
+      &amp; isA(ENTITYX29,r_0001_1031)
       &amp; scope(QUANTX30) = OPERATORX39
       &amp; isA(OPERATORX39,r_0002_0023__can)
       &amp; scope(OPERATORX39) = EVENTX40

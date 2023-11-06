@@ -514,7 +514,7 @@ arc(r_0162_0013__costs,r_0162_0015__amount,arg1).
 arc(r_0162_0015__amount,r_0162_0014__large,attrib1).
 arc(r_0162_0016__or,r_0162_0013__costs,conj1).
 arc(r_0162_0016__or,r_0162_0017__otherwise,conj2).
-arc(r_0162_0017__otherwise,z_0162_1023,scope).
+arc(r_0162_0017__otherwise,r_0162_1023,scope).
 arc(r_0162_0018__difficult,r_0162_0022__or,emb2).
 arc(r_0162_0020__discontinue,r_0162_0021__using,arg1).
 arc(r_0162_0021__using,r_0162_0028__data,arg0).
@@ -527,20 +527,20 @@ arc(r_0162_0029__and,r_0162_0016__or,conj1).
 arc(r_0162_0029__and,r_0162_1032__cnt,conj2).
 arc(r_0162_0035__takes,r_0162_0009__cases,r_0162_0030__in_loc).
 arc(r_0162_0035__takes,r_0162_0033__business__r_0162_0034__operator,arg0).
-arc(r_0162_0035__takes,z_0162_1031,arg1).
+arc(r_0162_0035__takes,r_0162_1031,arg1).
 arc(r_0162_0038__measures,r_0162_0037__alternative,attrib1).
 arc(r_0162_0040__protect,r_0162_0033__business__r_0162_0034__operator,arg0).
 arc(r_0162_0040__protect,r_0162_0043__and,arg1).
 arc(r_0162_0043__and,r_0162_0042__rights,conj1).
 arc(r_0162_0043__and,r_0162_0044__interests,conj2).
 arc(r_0162_0043__and,r_0162_0047__person,r_0162_0045__of).
+arc(r_0162_1023,r_0162_0004__provision,arg0).
+arc(r_0162_1023,r_0162_0009__cases,r_0162_0010__in_loc).
+arc(r_0162_1023,r_0162_0018__difficult,prd2).
+arc(r_0162_1031,r_0162_0036__necessary,attrib1).
+arc(r_0162_1031,r_0162_0038__measures,nlyr2).
 arc(r_0162_1032__cnt,r_0162_0035__takes,scope).
 arc(r_0162_1032__cnt,r_0162_0040__protect,restriction).
-arc(z_0162_1023,r_0162_0004__provision,arg0).
-arc(z_0162_1023,r_0162_0009__cases,r_0162_0010__in_loc).
-arc(z_0162_1023,r_0162_0018__difficult,prd2).
-arc(z_0162_1031,r_0162_0036__necessary,attrib1).
-arc(z_0162_1031,r_0162_0038__measures,nlyr2).
 
 </pre>
 <br>
@@ -572,7 +572,7 @@ fof(id__162_A_law_h15A119,axiom,
       &amp; conj2(CONJX25) = OPERATORX10
       &amp; isA(OPERATORX10,r_0162_0017__otherwise)
       &amp; scope(OPERATORX10) = EVENTX24
-      &amp; isA(EVENTX24,z_0162_1023)
+      &amp; isA(EVENTX24,r_0162_1023)
       &amp; arg0(EVENTX24) = PROVISIONX6
       &amp; r_0162_0010__in_loc(EVENTX24) = ENTITYX3
       &amp; arg0(EVENTX24) = PROVISIONX6
@@ -597,7 +597,7 @@ fof(id__162_A_law_h15A119,axiom,
       &amp; attrib2(ENTITYX15) = ATTRIBX16
       &amp; attrib3(ENTITYX15) = ATTRIBX17
       &amp; isA(ENTITYX26,r_0162_0033__business__r_0162_0034__operator)
-      &amp; isA(ENTITYX27,z_0162_1031)
+      &amp; isA(ENTITYX27,r_0162_1031)
       &amp; attrib1(ENTITYX27) = ATTRIBX28
       &amp; nlyr2(ENTITYX27) = ENTITYX29
       &amp; isA(ENTITYX29,r_0162_0038__measures)

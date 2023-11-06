@@ -876,17 +876,17 @@ arc(r_0002_0002__was,r_0002_0005__clear,prd2).
 arc(r_0002_0003__not,r_0002_0002__was,scope).
 arc(r_0002_0009__was,r_0001_0017__Abdullahi__r_0001_0018__Yusuf_r_0001_0019__Ahmad,arg0).
 arc(r_0002_0009__was,r_0002_0012__palace,r_0002_0010__in_prd2_loc).
-arc(r_0002_0012__palace,r_0001_0010__palace,z_0001_1021).
+arc(r_0002_0012__palace,r_0001_0010__palace,r_0001_1021).
 arc(r_0002_0012__palace,r_0002_0014__Mogadishu,r_0002_0013__in).
 arc(r_0002_0015__when_tmp,r_0002_0009__was,scope).
 arc(r_0002_0015__when_tmp,r_0002_0018__occurred,restriction).
 arc(r_0002_0018__occurred,r_0002_0017__attack,arg0).
 arc(r_0002_0019__or,r_0002_0015__when_tmp,conj1).
-arc(r_0002_0019__or,r_0002_0021__quantificational__r_0002_0021__anyone,conj2).
-arc(r_0002_0021__quantificational__r_0002_0021__anyone,r_0002_0022__was,scope).
-arc(r_0002_0021__quantificational__r_0002_0021__anyone,z_0001_1029,restriction).
+arc(r_0002_0019__or,r_0002_0021__quantificational__anyone,conj2).
+arc(r_0002_0021__quantificational__anyone,r_0001_1029,restriction).
+arc(r_0002_0021__quantificational__anyone,r_0002_0022__was,scope).
 arc(r_0002_0022__was,r_0002_0023__hurt,catenative).
-arc(r_0002_0023__hurt,z_0001_1029,arg1).
+arc(r_0002_0023__hurt,r_0001_1029,arg1).
 arc(r_0003_0002__news,r_0003_0001__Local,attrib1).
 arc(r_0003_0003__reports,r_0003_0002__news,nlyr1).
 arc(r_0003_0004__said,r_0003_0003__reports,arg0).
@@ -947,9 +947,9 @@ fof(id__1_A_Voice_of_America,axiom,
       &amp; isA(EVENTX25,r_0002_0018__occurred)
       &amp; arg0(EVENTX25) = ENTITYX24
       &amp; conj2(CONJX34) = QUANTX28
-      &amp; isA(QUANTX28,r_0002_0021__quantificational__r_0002_0021__anyone)
+      &amp; isA(QUANTX28,r_0002_0021__quantificational__anyone)
       &amp; restriction(QUANTX28) = ENTITYX27
-      &amp; isA(ENTITYX27,z_0001_1029)
+      &amp; isA(ENTITYX27,r_0001_1029)
       &amp; scope(QUANTX28) = EVENTX33
       &amp; isA(EVENTX33,r_0002_0022__was)
       &amp; catenative(EVENTX33) = CATENATIVEX30
@@ -996,7 +996,7 @@ fof(id__1_A_Voice_of_America,axiom,
       &amp; attrib2(ENTITYX7) = ATTRIBX8
       &amp; AHMADX18 = r_0001_0017__Abdullahi__r_0001_0018__Yusuf_r_0001_0019__Ahmad
       &amp; isA(ENTITYX19,r_0002_0012__palace)
-      &amp; z_0001_1021(ENTITYX19) = PALACEX22
+      &amp; r_0001_1021(ENTITYX19) = PALACEX22
       &amp; r_0002_0013__in(ENTITYX19) = r_0002_0014__Mogadishu
       &amp; PALACEX22 = PALACEX6
       &amp; isA(ENTITYX24,r_0002_0017__attack)

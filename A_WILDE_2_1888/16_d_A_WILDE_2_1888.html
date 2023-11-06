@@ -442,30 +442,31 @@ He was dressed in grey , and his breath was like ice .
 </svg>
 <br>
 <pre>
-arc(r_0031_0001__quantificational__r_0031_0001__Every,r_0031_0002__day,restriction).
-arc(r_0031_0001__quantificational__r_0031_0001__Every,r_0031_0014__till_tmp,scope).
+arc(r_0031_0001__quantificational__Every,r_0031_0002__day,restriction).
+arc(r_0031_0001__quantificational__Every,r_0031_0014__till_tmp,scope).
 arc(r_0031_0002__day,r_0031_0004__three__r_0031_0005__hours,r_0031_0003__for).
 arc(r_0031_0007__rattled,r_0031_0002__day,tmp).
 arc(r_0031_0007__rattled,r_0031_0006__he,arg0).
 arc(r_0031_0007__rattled,r_0031_0010__roof,r_0031_0008__on_loc).
 arc(r_0031_0010__roof,r_0031_0013__castle,r_0031_0011__of).
 arc(r_0031_0014__till_tmp,r_0031_0007__rattled,scope).
-arc(r_0031_0014__till_tmp,r_0031_0017__quantificational__r_0031_0017__most,restriction).
+arc(r_0031_0014__till_tmp,r_0031_0017__quantificational__most,restriction).
 arc(r_0031_0016__broke,r_0031_0006__he,arg0).
-arc(r_0031_0016__broke,z_0031_1013,arg1).
-arc(r_0031_0017__quantificational__r_0031_0017__most,r_0031_0016__broke,scope).
-arc(r_0031_0017__quantificational__r_0031_0017__most,z_0031_1013,restriction).
-arc(r_0031_0022__and,r_0031_0001__quantificational__r_0031_0001__Every,conj1).
+arc(r_0031_0016__broke,r_0031_1013,arg1).
+arc(r_0031_0017__quantificational__most,r_0031_0016__broke,scope).
+arc(r_0031_0017__quantificational__most,r_0031_1013,restriction).
+arc(r_0031_0022__and,r_0031_0001__quantificational__Every,conj1).
 arc(r_0031_0022__and,r_0031_0025__ran,conj2).
 arc(r_0031_0025__ran,r_0031_0006__he,arg0).
 arc(r_0031_0025__ran,r_0031_0023__then,tmp1).
 arc(r_0031_0025__ran,r_0031_0028__garden,r_0031_0026__round_and_round_dir).
 arc(r_0031_0025__ran,r_0031_0030__fast,mnr5).
 arc(r_0031_0030__fast,r_0031_0029__as,quality1).
-arc(r_0031_0030__fast,z_0031_1025,r_0031_0031__as).
+arc(r_0031_0030__fast,r_0031_1025,r_0031_0031__as).
 arc(r_0031_0033__could,r_0031_0034__go,scope).
 arc(r_0031_0034__go,r_0031_0006__he,arg0).
-arc(r_0031_0034__go,z_0031_1025,mnr).
+arc(r_0031_0034__go,r_0031_1025,mnr).
+arc(r_0031_1013,r_0031_0020__slates,r_0031_0018__of).
 arc(r_0032_0002__was,r_0032_0003__dressed,catenative).
 arc(r_0032_0003__dressed,r_0031_0006__he,arg1).
 arc(r_0032_0003__dressed,r_0032_0005__grey,r_0032_0004__in_mnr).
@@ -474,7 +475,6 @@ arc(r_0032_0007__and,r_0032_0010__was,conj2).
 arc(r_0032_0009__breath,r_0031_0006__he,genv).
 arc(r_0032_0010__was,r_0032_0009__breath,arg0).
 arc(r_0032_0010__was,r_0032_0012__ice,r_0032_0011__like_prd2).
-arc(z_0031_1013,r_0031_0020__slates,r_0031_0018__of).
 
 </pre>
 <br>
@@ -498,7 +498,7 @@ fof(id__31_A_WILDE_2_1888__32_A_WILDE_2_1888,axiom,
       &amp; isA(EVENTX24,r_0031_0034__go)
       &amp; mnr(EVENTX24) = ENTITYX21
       &amp; arg0(EVENTX24) = HAILX22
-      &amp; isA(ENTITYX21,z_0031_1025)
+      &amp; isA(ENTITYX21,r_0031_1025)
       &amp; ( HAILX22 = HAILX17
         | HAILX22 = r_0031_0006__he )
       &amp; HAILX30 = r_0031_0006__he
@@ -514,7 +514,7 @@ fof(id__31_A_WILDE_2_1888__32_A_WILDE_2_1888,axiom,
       &amp; isA(QUALITYX20,r_0031_0029__as)
       &amp; isA(CONJX27,r_0031_0022__and)
       &amp; conj1(CONJX27) = QUANTX4
-      &amp; isA(QUANTX4,r_0031_0001__quantificational__r_0031_0001__Every)
+      &amp; isA(QUANTX4,r_0031_0001__quantificational__Every)
       &amp; restriction(QUANTX4) = ENTITYX3
       &amp; isA(ENTITYX3,r_0031_0002__day)
       &amp; r_0031_0003__for(ENTITYX3) = ENTITYX5
@@ -527,9 +527,9 @@ fof(id__31_A_WILDE_2_1888__32_A_WILDE_2_1888,axiom,
       &amp; arg0(EVENTX15) = r_0031_0006__he
       &amp; r_0031_0008__on_loc(EVENTX15) = ENTITYX6
       &amp; restriction(CONNX8) = QUANTX11
-      &amp; isA(QUANTX11,r_0031_0017__quantificational__r_0031_0017__most)
+      &amp; isA(QUANTX11,r_0031_0017__quantificational__most)
       &amp; restriction(QUANTX11) = ENTITYX10
-      &amp; isA(ENTITYX10,z_0031_1013)
+      &amp; isA(ENTITYX10,r_0031_1013)
       &amp; r_0031_0018__of(ENTITYX10) = ENTITYX12
       &amp; scope(QUANTX11) = EVENTX14
       &amp; isA(EVENTX14,r_0031_0016__broke)

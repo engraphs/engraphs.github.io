@@ -1141,6 +1141,7 @@ arc(r_0062_0030__game,r_0062_0029__great,attrib2).
 arc(r_0062_1005__utterance,r_0062_0009___apos_ve,part1).
 arc(r_0062_1030__cnt,r_0063_0005__writing,scope).
 arc(r_0062_1030__cnt,r_0063_0010__run,restriction).
+arc(r_0062_1084,r_0062_0002__Neil,arg0).
 arc(r_0063_0002__got,r_0062_0002__Neil,arg0).
 arc(r_0063_0002__got,r_0063_0003__interested,prd2).
 arc(r_0063_0002__got,r_0063_0014__so,prn5).
@@ -1154,18 +1155,18 @@ arc(r_0063_0016__wrote,r_0063_0017__two,arg1).
 arc(r_0063_0017__two,r_0063_0020__bitmap__r_0063_0021__one,prn3).
 arc(r_0063_0023__was,r_0063_0020__bitmap__r_0063_0021__one,arg0).
 arc(r_0063_0023__was,r_0063_0028__but,prd2).
-arc(r_0063_0024__quantificational__r_0063_0024__all,r_0063_0026__and,scope).
-arc(r_0063_0024__quantificational__r_0063_0024__all,z_0062_1043,restriction).
+arc(r_0063_0024__quantificational__all,r_0062_1043,restriction).
+arc(r_0063_0024__quantificational__all,r_0063_0026__and,scope).
+arc(r_0063_0026__and,r_0062_1043,modifier1).
 arc(r_0063_0026__and,r_0063_0025__well,conj1).
 arc(r_0063_0026__and,r_0063_0027__good,conj2).
-arc(r_0063_0026__and,z_0062_1043,modifier1).
 arc(r_0063_0028__but,r_0063_0026__and,conj1).
 arc(r_0063_0028__but,r_0063_0031__and,conj2).
-arc(r_0063_0029__quantificational__r_0063_0029__a_bit,r_0063_0031__and,scope).
-arc(r_0063_0029__quantificational__r_0063_0029__a_bit,z_0062_1049,restriction).
+arc(r_0063_0029__quantificational__a_bit,r_0062_1049,restriction).
+arc(r_0063_0029__quantificational__a_bit,r_0063_0031__and,scope).
+arc(r_0063_0031__and,r_0062_1049,modifier1).
 arc(r_0063_0031__and,r_0063_0030__clunky,conj1).
 arc(r_0063_0031__and,r_0063_0032__horrible,conj2).
-arc(r_0063_0031__and,z_0062_1049,modifier1).
 arc(r_0064_0003__wrote,r_0062_0002__Neil,arg0).
 arc(r_0064_0003__wrote,r_0064_0001__Then,tmp1).
 arc(r_0064_0003__wrote,r_0064_0006__font__r_0064_0007__manager,arg1).
@@ -1195,7 +1196,7 @@ arc(r_0065_0012__wrote,r_0065_0013__that,arg1).
 arc(r_0065_0014__because_cnt,r_0065_0012__wrote,scope).
 arc(r_0065_0014__because_cnt,r_0065_0016__wanted,restriction).
 arc(r_0065_0016__wanted,r_0062_0002__Neil,arg0).
-arc(r_0065_0016__wanted,z_0062_1084,arg1).
+arc(r_0065_0016__wanted,r_0062_1084,arg1).
 arc(r_0065_0020__addition,r_0065_0023__two__r_0065_0024__modules,r_0065_0021__of).
 arc(r_0065_0025__transformed,r_0065_0020__addition,arg0).
 arc(r_0065_0025__transformed,r_0065_0026__Arthur,arg1).
@@ -1204,7 +1205,6 @@ arc(r_0065_0025__transformed,r_0065_0035__system,r_0065_0031__to_dir).
 arc(r_0065_0030__world,r_0065_0029__command_line,attrib2).
 arc(r_0065_0034__based,r_0065_0033__desktop,modifier1).
 arc(r_0065_0035__system,r_0065_0034__based,attrib2).
-arc(z_0062_1084,r_0062_0002__Neil,arg0).
 
 </pre>
 <br>
@@ -1264,7 +1264,7 @@ fof(id__62_A_PaulFellows__63_A_PaulFellows__64_A_PaulFellows__65_A_PaulFellows,a
       &amp; arg0(EVENTX86) = NEILX82
       &amp; arg1(EVENTX86) = STATEX83
       &amp; STATEX83 = EVENTX85
-      &amp; isA(EVENTX85,z_0062_1084)
+      &amp; isA(EVENTX85,r_0062_1084)
       &amp; arg0(EVENTX85) = NEILX82
       &amp; EVENTX88 = EVENTX96
       &amp; isA(EVENTX96,r_0065_0025__transformed)
@@ -1344,9 +1344,9 @@ fof(id__62_A_PaulFellows__63_A_PaulFellows__64_A_PaulFellows__65_A_PaulFellows,a
       &amp; isA(ATTRIBX39,r_0063_0028__but)
       &amp; conj1(ATTRIBX39) = ATTRIBX40
       &amp; conj2(ATTRIBX39) = ATTRIBX46
-      &amp; isA(QUANTX42,r_0063_0024__quantificational__r_0063_0024__all)
+      &amp; isA(QUANTX42,r_0063_0024__quantificational__all)
       &amp; restriction(QUANTX42) = ENTITYX41
-      &amp; isA(ENTITYX41,z_0062_1043)
+      &amp; isA(ENTITYX41,r_0062_1043)
       &amp; scope(QUANTX42) = ATTRIBX40
       &amp; isA(ATTRIBX40,r_0063_0026__and)
       &amp; modifier1(ATTRIBX40) = ENTITYX41
@@ -1354,9 +1354,9 @@ fof(id__62_A_PaulFellows__63_A_PaulFellows__64_A_PaulFellows__65_A_PaulFellows,a
       &amp; conj2(ATTRIBX40) = ATTRIBX45
       &amp; isA(ATTRIBX44,r_0063_0025__well)
       &amp; isA(ATTRIBX45,r_0063_0027__good)
-      &amp; isA(QUANTX48,r_0063_0029__quantificational__r_0063_0029__a_bit)
+      &amp; isA(QUANTX48,r_0063_0029__quantificational__a_bit)
       &amp; restriction(QUANTX48) = ENTITYX47
-      &amp; isA(ENTITYX47,z_0062_1049)
+      &amp; isA(ENTITYX47,r_0062_1049)
       &amp; scope(QUANTX48) = ATTRIBX46
       &amp; isA(ATTRIBX46,r_0063_0031__and)
       &amp; modifier1(ATTRIBX46) = ENTITYX47

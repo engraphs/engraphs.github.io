@@ -239,9 +239,9 @@ arc(r_0040_0007__not,r_0040_0008__learn,scope).
 arc(r_0040_0008__learn,r_0040_0001__Masters,arg0).
 arc(r_0040_0010__get,r_0040_0001__Masters,arg0).
 arc(r_0040_0010__get,r_0040_0011__enlightenment,arg1).
-arc(r_0040_0010__get,z_0040_1007,r_0040_0012__from_dir).
-arc(r_0040_0013__quantificational__r_0040_0013__anybody,r_0040_0010__get,scope).
-arc(r_0040_0013__quantificational__r_0040_0013__anybody,z_0040_1007,restriction).
+arc(r_0040_0010__get,r_0040_1007,r_0040_0012__from_dir).
+arc(r_0040_0013__quantificational__anybody,r_0040_0010__get,scope).
+arc(r_0040_0013__quantificational__anybody,r_0040_1007,restriction).
 arc(r_0040_0015__not,r_0040_0017__mention,scope).
 arc(r_0040_0017__mention,r_0040_0001__Masters,arg0).
 arc(r_0040_0017__mention,r_0040_0018__Siddhartha__r_0040_0019__Gautama,arg1).
@@ -255,9 +255,9 @@ arc(r_0040_0027__gained,r_0040_0031__teacher,r_0040_0029__without_com).
 <pre>
 fof(id__40_A_KYOTO_2,axiom,
     ? [STATEX3,OPERATORX14,EVENTX15,OPERATORX12,EVENTX13,EVENTX11,QUANTX6,EVENTX8,ENTITYX1,ENTITYX9,ENTITYX10,ENTITYX4,ENTITYX5,ENTITYX2] :
-      ( isA(QUANTX6,r_0040_0013__quantificational__r_0040_0013__anybody)
+      ( isA(QUANTX6,r_0040_0013__quantificational__anybody)
       &amp; restriction(QUANTX6) = ENTITYX5
-      &amp; isA(ENTITYX5,z_0040_1007)
+      &amp; isA(ENTITYX5,r_0040_1007)
       &amp; scope(QUANTX6) = EVENTX8
       &amp; isA(EVENTX8,r_0040_0010__get)
       &amp; arg0(EVENTX8) = ENTITYX1

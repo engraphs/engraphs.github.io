@@ -487,13 +487,20 @@ Their sculpturing , especially .
 <pre>
 arc(r_0583_0001__After_all,r_0583_0017__will,scope).
 arc(r_0583_0004__possessions,r_0583_0003__their,genv).
-arc(r_0583_0004__possessions,z_0583_1012,prn4).
+arc(r_0583_0004__possessions,r_0583_1012,prn4).
 arc(r_0583_0007__music,r_0583_0003__their,genv).
 arc(r_0583_0012__pictures,r_0583_0003__their,genv).
-arc(r_0583_0014__quantificational__r_0583_0014__all,z_0583_1006,restriction).
-arc(r_0583_0014__quantificational__r_0583_0014__all,z_0583_1012,scope).
+arc(r_0583_0014__quantificational__all,r_0583_1006,restriction).
+arc(r_0583_0014__quantificational__all,r_0583_1012,scope).
 arc(r_0583_0017__will,r_0583_0018__survive,scope).
 arc(r_0583_0018__survive,r_0583_0004__possessions,arg0).
+arc(r_0583_1006,r_0583_0016__that,r_0583_0015__of).
+arc(r_0583_1012,r_0583_0007__music,conj1).
+arc(r_0583_1012,r_0583_0009__books,conj2).
+arc(r_0583_1012,r_0583_0012__pictures,conj3).
+arc(r_0583_1012,r_0583_1006,prn3).
+arc(r_0583_1032,r_0585_0006__same,attrib2).
+arc(r_0583_1044,r_0586_0002__sculpturing,r_0583_1040).
 arc(r_0584_0002___apos_ll,r_0584_0006__and,scope).
 arc(r_0584_0003__take,r_0583_0004__possessions,arg1).
 arc(r_0584_0003__take,r_0584_0001__We,arg0).
@@ -509,18 +516,11 @@ arc(r_0584_0013__change,r_0583_0004__possessions,arg0).
 arc(r_0584_0013__change,r_0584_0001__We,arg1).
 arc(r_0585_0002__wo,r_0585_0003__n_apos_t,scope).
 arc(r_0585_0003__n_apos_t,r_0585_0004__be,scope).
+arc(r_0585_0004__be,r_0583_1032,prd2).
 arc(r_0585_0004__be,r_0584_0001__We,arg0).
 arc(r_0585_0004__be,r_0585_0007__afterwards,tmp6).
-arc(r_0585_0004__be,z_0583_1032,prd2).
 arc(r_0586_0002__sculpturing,r_0583_0003__their,genv).
 arc(r_0586_0002__sculpturing,r_0586_0004__especially,quality4).
-arc(z_0583_1006,r_0583_0016__that,r_0583_0015__of).
-arc(z_0583_1012,r_0583_0007__music,conj1).
-arc(z_0583_1012,r_0583_0009__books,conj2).
-arc(z_0583_1012,r_0583_0012__pictures,conj3).
-arc(z_0583_1012,z_0583_1006,prn3).
-arc(z_0583_1032,r_0585_0006__same,attrib2).
-arc(z_0583_1044,r_0586_0002__sculpturing,z_0583_1040).
 
 </pre>
 <br>
@@ -530,12 +530,12 @@ fof(id__583_A_DICK_1952__584_A_DICK_1952__585_A_DICK_1952__586_A_DICK_1952,axiom
       ( isA(POSSESSIONSX2,r_0583_0004__possessions)
       &amp; genv(POSSESSIONSX2) = r_0583_0003__their
       &amp; prn4(POSSESSIONSX2) = ENTITYX3
-      &amp; isA(QUANTX5,r_0583_0014__quantificational__r_0583_0014__all)
+      &amp; isA(QUANTX5,r_0583_0014__quantificational__all)
       &amp; restriction(QUANTX5) = ENTITYX4
-      &amp; isA(ENTITYX4,z_0583_1006)
+      &amp; isA(ENTITYX4,r_0583_1006)
       &amp; r_0583_0015__of(ENTITYX4) = r_0583_0016__that
       &amp; scope(QUANTX5) = ENTITYX3
-      &amp; isA(ENTITYX3,z_0583_1012)
+      &amp; isA(ENTITYX3,r_0583_1012)
       &amp; prn3(ENTITYX3) = ENTITYX4
       &amp; conj1(ENTITYX3) = ENTITYX7
       &amp; conj2(ENTITYX3) = ENTITYX9
@@ -552,7 +552,7 @@ fof(id__583_A_DICK_1952__584_A_DICK_1952__585_A_DICK_1952__586_A_DICK_1952,axiom
       &amp; POSSESSIONSX24 = POSSESSIONSX2
       &amp; TRESPASSERSX25 = r_0584_0001__We
       &amp; TRESPASSERSX29 = r_0584_0001__We
-      &amp; isA(ENTITYX30,z_0583_1032)
+      &amp; isA(ENTITYX30,r_0583_1032)
       &amp; attrib2(ENTITYX30) = ATTRIBX31
       &amp; isA(ENTITYX41,r_0586_0002__sculpturing)
       &amp; genv(ENTITYX41) = INHABITANTSX42
@@ -599,8 +599,8 @@ fof(id__583_A_DICK_1952__584_A_DICK_1952__585_A_DICK_1952__586_A_DICK_1952,axiom
       &amp; arg0(EVENTX36) = TRESPASSERSX29
       &amp; prd2(EVENTX36) = ENTITYX30
       &amp; tmp6(EVENTX36) = QUALITYX33
-      &amp; isA(EVENTX45,z_0583_1044)
-      &amp; z_0583_1040(EVENTX45) = ENTITYX41 ) ).
+      &amp; isA(EVENTX45,r_0583_1044)
+      &amp; r_0583_1040(EVENTX45) = ENTITYX41 ) ).
 
 
 </pre>

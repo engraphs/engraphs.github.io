@@ -188,11 +188,11 @@ arc(r_0142_0006__not,r_0142_0007__apply,scope).
 arc(r_0142_0007__apply,r_0142_0004__provision,arg0).
 arc(r_0142_0007__apply,r_0142_0009__cases,r_0142_0008__to_clr).
 arc(r_0142_0010__falling,r_0142_0009__cases,arg0).
-arc(r_0142_0010__falling,z_0142_1008,r_0142_0011__under_loc).
-arc(r_0142_0012__quantificational__r_0142_0012__either,r_0142_0010__falling,scope).
-arc(r_0142_0012__quantificational__r_0142_0012__either,z_0142_1008,restriction).
+arc(r_0142_0010__falling,r_0142_1008,r_0142_0011__under_loc).
+arc(r_0142_0012__quantificational__either,r_0142_0010__falling,scope).
+arc(r_0142_0012__quantificational__either,r_0142_1008,restriction).
 arc(r_0142_0016__items,r_0142_0015__following,attrib2).
-arc(z_0142_1008,r_0142_0016__items,r_0142_0013__of).
+arc(r_0142_1008,r_0142_0016__items,r_0142_0013__of).
 
 </pre>
 <br>
@@ -200,9 +200,9 @@ arc(z_0142_1008,r_0142_0016__items,r_0142_0013__of).
 fof(id__142_A_law_h15A119,axiom,
     ? [OPERATORX1,OPERATORX10,OPERATORX11,EVENTX12,QUANTX5,EVENTX9,ENTITYX2,ENTITYX3,ENTITYX4,ENTITYX6,ATTRIBX7] :
       ( isA(ENTITYX2,r_0142_0004__provision)
-      &amp; isA(QUANTX5,r_0142_0012__quantificational__r_0142_0012__either)
+      &amp; isA(QUANTX5,r_0142_0012__quantificational__either)
       &amp; restriction(QUANTX5) = ENTITYX4
-      &amp; isA(ENTITYX4,z_0142_1008)
+      &amp; isA(ENTITYX4,r_0142_1008)
       &amp; r_0142_0013__of(ENTITYX4) = ENTITYX6
       &amp; scope(QUANTX5) = EVENTX9
       &amp; isA(EVENTX9,r_0142_0010__falling)

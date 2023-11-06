@@ -1964,6 +1964,8 @@ arc(r_0015_0003__born,r_0015_0005__Akahama__r_0015_0007__Bicchu_r_0015_0008__Pro
 arc(r_0015_0003__born,r_0015_0019__1420,r_0015_0018__in_tmp).
 arc(r_0015_0005__Akahama__r_0015_0007__Bicchu_r_0015_0008__Province,r_0015_0011__Soja_r_0015_0012__City_r_0015_0014__Okayama_r_0015_0015__Prefecture,prn6).
 arc(r_0015_0011__Soja__r_0015_0012__City_r_0015_0014__Okayama_r_0015_0015__Prefecture,r_0015_0010__present_day,attrib1).
+arc(r_0015_1019,r_0015_0001__He,arg0).
+arc(r_0015_1019,r_0017_0011__young,prd2).
 arc(r_0016_0002__was,r_0016_0003__born,catenative).
 arc(r_0016_0003__born,r_0015_0001__He,arg1).
 arc(r_0016_0003__born,r_0016_0006__Samurai__r_0016_0007__family,r_0016_0004__to_com).
@@ -1973,8 +1975,8 @@ arc(r_0017_0002__entered,r_0015_0001__He,arg0).
 arc(r_0017_0002__entered,r_0017_0004__Hofuku_ji__r_0017_0005__Temple,arg1).
 arc(r_0017_0004__Hofuku_ji__r_0017_0005__Temple,r_0017_0003__nearby,attrib1).
 arc(r_0017_0004__Hofuku_ji__r_0017_0005__Temple,r_0017_0007__Soja_r_0017_0008__City,prn5).
+arc(r_0017_0010__while_tmp,r_0015_1019,restriction).
 arc(r_0017_0010__while_tmp,r_0017_0002__entered,scope).
-arc(r_0017_0010__while_tmp,z_0015_1019,restriction).
 arc(r_0018_0002__moved,r_0015_0001__He,arg0).
 arc(r_0018_0002__moved,r_0018_0006__Shokoku_ji__r_0018_0007__Temple,r_0018_0003__to_dir).
 arc(r_0018_0002__moved,r_0018_0010__age,r_0018_0008__at_tmp).
@@ -2075,19 +2077,19 @@ arc(r_0025_0008__traveled,r_0015_0001__He,arg0).
 arc(r_0025_0008__traveled,r_0025_0003__fall,r_0025_0001__In_tmp).
 arc(r_0025_0008__traveled,r_0025_0010__Mino__r_0025_0011__Province,r_0025_0009__to_loc).
 arc(r_0026_0002__is,r_0026_0005__record,arg0).
-arc(r_0026_0003__quantificational__r_0026_0003__no,r_0026_0002__is,scope).
-arc(r_0026_0003__quantificational__r_0026_0003__no,r_0026_0005__record,restriction).
+arc(r_0026_0003__quantificational__no,r_0026_0002__is,scope).
+arc(r_0026_0003__quantificational__no,r_0026_0005__record,restriction).
 arc(r_0026_0005__record,r_0026_0004__reliable,attrib2).
 arc(r_0026_0005__record,r_0026_0008__date,r_0026_0006__of).
 arc(r_0026_0008__date,r_0026_0011__death,r_0026_0009__of).
 arc(r_0026_0011__death,r_0015_0001__He,genv).
-arc(r_0026_0013__but,r_0026_0003__quantificational__r_0026_0003__no,conj1).
-arc(r_0026_0013__but,r_0026_0014__quantificational__r_0026_0014__most,conj2).
-arc(r_0026_0014__quantificational__r_0026_0014__most,r_0026_0015__put,scope).
-arc(r_0026_0014__quantificational__r_0026_0014__most,z_0015_1135,restriction).
+arc(r_0026_0013__but,r_0026_0003__quantificational__no,conj1).
+arc(r_0026_0013__but,r_0026_0014__quantificational__most,conj2).
+arc(r_0026_0014__quantificational__most,r_0015_1135,restriction).
+arc(r_0026_0014__quantificational__most,r_0026_0015__put,scope).
+arc(r_0026_0015__put,r_0015_1135,arg0).
 arc(r_0026_0015__put,r_0026_0011__death,arg1).
 arc(r_0026_0015__put,r_0026_0018__1506,r_0026_0017__at_tmp).
-arc(r_0026_0015__put,z_0015_1135,arg0).
 arc(r_0027_0002__records,r_0027_0001__Other,attrib1).
 arc(r_0027_0003__write,r_0027_0002__records,arg0).
 arc(r_0027_0003__write,r_0027_0006__died,arg1).
@@ -2101,12 +2103,10 @@ arc(r_0028_0011__are,r_0028_0014__aspects,arg0).
 arc(r_0028_0014__aspects,r_0028_0012__many,attrib1).
 arc(r_0028_0014__aspects,r_0028_0013__other,attrib2).
 arc(r_0028_0014__aspects,r_0028_0018__life,r_0028_0015__of).
-arc(r_0028_0016__Sesshu,r_0015_0001__He,z_0015_1156).
+arc(r_0028_0016__Sesshu,r_0015_0001__He,r_0015_1156).
 arc(r_0028_0018__life,r_0028_0016__Sesshu,genv).
 arc(r_0028_0020__remain,r_0028_0014__aspects,arg0).
 arc(r_0028_0020__remain,r_0028_0021__unknown,prd2).
-arc(z_0015_1019,r_0015_0001__He,arg0).
-arc(z_0015_1019,r_0017_0011__young,prd2).
 
 </pre>
 <br>
@@ -2279,7 +2279,7 @@ fof(id__15_A_KYOTO_1,axiom,
       &amp; r_0019_0025__with(r_0019_0014__studio__r_0019_0016__Unkokuan) = ENTITYX41
       &amp; isA(r_0019_0018__Yamaguchi__r_0019_0019__City_r_0019_0021__Yamaguchi_r_0019_0022__Prefecture,r_0019_0018__Yamaguchi_r_0019_0019__City_r_0019_0021__Yamaguchi_r_0019_0022__Prefecture)
       &amp; isA(r_0028_0016__Sesshu,r_0028_0016__Sesshu)
-      &amp; z_0015_1156(r_0028_0016__Sesshu) = SESSHUX157
+      &amp; r_0015_1156(r_0028_0016__Sesshu) = SESSHUX157
       &amp; isA(ATTRIBX3,r_0015_0010__present_day)
       &amp; isA(ATTRIBX16,r_0017_0003__nearby)
       &amp; isA(ATTRIBX18,r_0017_0011__young)
@@ -2308,7 +2308,7 @@ fof(id__15_A_KYOTO_1,axiom,
       &amp; arg0(EVENTX21) = SESSHUX15
       &amp; arg1(EVENTX21) = r_0017_0004__Hofuku_ji__r_0017_0005__Temple
       &amp; restriction(CONNX17) = EVENTX20
-      &amp; isA(EVENTX20,z_0015_1019)
+      &amp; isA(EVENTX20,r_0015_1019)
       &amp; arg0(EVENTX20) = SESSHUX15
       &amp; prd2(EVENTX20) = ATTRIBX18
       &amp; isA(CONJX35,r_0018_0015__and)
@@ -2389,7 +2389,7 @@ fof(id__15_A_KYOTO_1,axiom,
       &amp; r_0025_0009__to_loc(EVENTX123) = r_0025_0010__Mino__r_0025_0011__Province
       &amp; isA(CONJX139,r_0026_0013__but)
       &amp; conj1(CONJX139) = QUANTX127
-      &amp; isA(QUANTX127,r_0026_0003__quantificational__r_0026_0003__no)
+      &amp; isA(QUANTX127,r_0026_0003__quantificational__no)
       &amp; restriction(QUANTX127) = ENTITYX126
       &amp; isA(ENTITYX126,r_0026_0005__record)
       &amp; attrib2(ENTITYX126) = ATTRIBX128
@@ -2399,9 +2399,9 @@ fof(id__15_A_KYOTO_1,axiom,
       &amp; arg0(EVENTX132) = ENTITYX126
       &amp; arg0(EVENTX132) = ENTITYX126
       &amp; conj2(CONJX139) = QUANTX134
-      &amp; isA(QUANTX134,r_0026_0014__quantificational__r_0026_0014__most)
+      &amp; isA(QUANTX134,r_0026_0014__quantificational__most)
       &amp; restriction(QUANTX134) = ENTITYX133
-      &amp; isA(ENTITYX133,z_0015_1135)
+      &amp; isA(ENTITYX133,r_0015_1135)
       &amp; scope(QUANTX134) = EVENTX138
       &amp; isA(EVENTX138,r_0026_0015__put)
       &amp; arg0(EVENTX138) = ENTITYX133

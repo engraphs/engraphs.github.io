@@ -222,9 +222,9 @@ A business operator who falls under any of the following items shall be sentence
 <br>
 <pre>
 arc(r_0317_0005__falls,r_0317_0002__business__r_0317_0003__operator,arg0).
-arc(r_0317_0005__falls,z_0317_1006,r_0317_0006__under_loc).
-arc(r_0317_0007__quantificational__r_0317_0007__any,r_0317_0005__falls,scope).
-arc(r_0317_0007__quantificational__r_0317_0007__any,z_0317_1006,restriction).
+arc(r_0317_0005__falls,r_0317_1006,r_0317_0006__under_loc).
+arc(r_0317_0007__quantificational__any,r_0317_0005__falls,scope).
+arc(r_0317_0007__quantificational__any,r_0317_1006,restriction).
 arc(r_0317_0011__items,r_0317_0010__following,attrib2).
 arc(r_0317_0012__shall,r_0317_0013__be,scope).
 arc(r_0317_0013__be,r_0317_0014__sentenced,catenative).
@@ -234,7 +234,7 @@ arc(r_0317_0018__fine,r_0317_0017__civil,attrib2).
 arc(r_0317_0018__fine,r_0317_0024__yen,r_0317_0019__of).
 arc(r_0317_0020__not__r_0317_0021__more,r_0317_0023__100,000,r_0317_0022__than).
 arc(r_0317_0024__yen,r_0317_0020__not__r_0317_0021__more,attrib1).
-arc(z_0317_1006,r_0317_0011__items,r_0317_0008__of).
+arc(r_0317_1006,r_0317_0011__items,r_0317_0008__of).
 
 </pre>
 <br>
@@ -245,9 +245,9 @@ fof(id__317_A_law_h15A119,axiom,
       &amp; isA(EVENTX16,r_0317_0014__sentenced)
       &amp; arg1(EVENTX16) = ENTITYX1
       &amp; r_0317_0015__to_clr(EVENTX16) = ENTITYX11
-      &amp; isA(QUANTX3,r_0317_0007__quantificational__r_0317_0007__any)
+      &amp; isA(QUANTX3,r_0317_0007__quantificational__any)
       &amp; restriction(QUANTX3) = ENTITYX2
-      &amp; isA(ENTITYX2,z_0317_1006)
+      &amp; isA(ENTITYX2,r_0317_1006)
       &amp; r_0317_0008__of(ENTITYX2) = ENTITYX4
       &amp; scope(QUANTX3) = EVENTX7
       &amp; isA(EVENTX7,r_0317_0005__falls)

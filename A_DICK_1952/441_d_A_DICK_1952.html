@@ -523,12 +523,14 @@ arc(r_0569_0006__hurt,r_0569_0002__ship,arg1).
 arc(r_0569_0006__hurt,r_0569_0005__badly,mnr2).
 arc(r_0569_0009__had,r_0569_0010__been,catenative).
 arc(r_0569_0010__been,r_0569_0012__and,catenative).
-arc(r_0569_0011__damaged,z_0569_1013,arg1).
+arc(r_0569_0011__damaged,r_0569_1013,arg1).
 arc(r_0569_0012__and,r_0569_0011__damaged,conj1).
 arc(r_0569_0012__and,r_0569_0013__lost,conj2).
-arc(r_0569_0013__lost,z_0569_1013,arg1).
+arc(r_0569_0013__lost,r_0569_1013,arg1).
+arc(r_0569_1013,r_0569_0008__much,attrib1).
 arc(r_0569_1032__cnt,r_0570_0006__repair,scope).
 arc(r_0569_1032__cnt,r_0570_0014__get,restriction).
+arc(r_0569_1042,r_0571_0004__them,r_0571_0003__of).
 arc(r_0570_0003__thing,r_0570_0002__important,attrib2).
 arc(r_0570_0004__was,r_0569_1032__cnt,prd2).
 arc(r_0570_0004__was,r_0570_0003__thing,arg0).
@@ -538,12 +540,12 @@ arc(r_0570_0009__quickly,r_0570_0008__as,quality1).
 arc(r_0570_0009__quickly,r_0570_0011__possible,r_0570_0010__as).
 arc(r_0570_0014__get,r_0569_0002__ship,arg1).
 arc(r_0570_0014__get,r_0570_0018__air,r_0570_0016__into_clr_dir).
-arc(r_0571_0001__With_abs,r_0571_0002__quantificational__r_0571_0002__all,restriction).
+arc(r_0571_0001__With_abs,r_0571_0002__quantificational__all,restriction).
 arc(r_0571_0001__With_abs,r_0571_0008__took,scope).
-arc(r_0571_0002__quantificational__r_0571_0002__all,r_0571_0005__working,scope).
-arc(r_0571_0002__quantificational__r_0571_0002__all,z_0569_1042,restriction).
+arc(r_0571_0002__quantificational__all,r_0569_1042,restriction).
+arc(r_0571_0002__quantificational__all,r_0571_0005__working,scope).
+arc(r_0571_0005__working,r_0569_1042,arg0).
 arc(r_0571_0005__working,r_0571_0006__together,com3).
-arc(r_0571_0005__working,z_0569_1042,arg0).
 arc(r_0571_0008__took,r_0571_0012__days,arg1).
 arc(r_0571_0008__took,r_0571_0014__make,arg0).
 arc(r_0571_0011__more,r_0571_0009__just,quality1).
@@ -552,8 +554,6 @@ arc(r_0571_0012__days,r_0571_0011__more,attrib1).
 arc(r_0571_0014__make,r_0569_0002__ship,arg1).
 arc(r_0571_0014__make,r_0571_0012__days,arg0).
 arc(r_0571_0014__make,r_0571_0016__spaceworthy,prd).
-arc(z_0569_1013,r_0569_0008__much,attrib1).
-arc(z_0569_1042,r_0571_0004__them,r_0571_0003__of).
 
 </pre>
 <br>
@@ -594,7 +594,7 @@ fof(id__569_A_DICK_1952__570_A_DICK_1952__571_A_DICK_1952,axiom,
       &amp; arg1(EVENTX53) = SHIPX51
       &amp; prd(EVENTX53) = ATTRIBX52
       &amp; isA(SHIPX3,r_0569_0002__ship)
-      &amp; isA(ENTITYX11,z_0569_1013)
+      &amp; isA(ENTITYX11,r_0569_1013)
       &amp; attrib1(ENTITYX11) = ATTRIBX12
       &amp; isA(ENTITYX23,r_0570_0003__thing)
       &amp; attrib2(ENTITYX23) = ATTRIBX24
@@ -629,9 +629,9 @@ fof(id__569_A_DICK_1952__570_A_DICK_1952__571_A_DICK_1952,axiom,
       &amp; prd2(EVENTX38) = STATEX25
       &amp; isA(CONNX39,r_0571_0001__With_abs)
       &amp; restriction(CONNX39) = QUANTX41
-      &amp; isA(QUANTX41,r_0571_0002__quantificational__r_0571_0002__all)
+      &amp; isA(QUANTX41,r_0571_0002__quantificational__all)
       &amp; restriction(QUANTX41) = ENTITYX40
-      &amp; isA(ENTITYX40,z_0569_1042)
+      &amp; isA(ENTITYX40,r_0569_1042)
       &amp; r_0571_0003__of(ENTITYX40) = r_0571_0004__them
       &amp; scope(QUANTX41) = EVENTX44
       &amp; isA(EVENTX44,r_0571_0005__working)

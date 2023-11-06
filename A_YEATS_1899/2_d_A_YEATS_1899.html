@@ -707,9 +707,9 @@ arc(r_0002_0012__and,r_0002_0011__golden,conj1).
 arc(r_0002_0012__and,r_0002_0013__silver,conj2).
 arc(r_0002_0014__light,r_0002_0012__and,attrib1).
 arc(r_0002_0018__and,r_0002_0021__and,conj2).
-arc(r_0002_0018__and,z_0002_1016,conj1).
-arc(r_0002_0021__and,z_0002_1020,conj1).
-arc(r_0002_0021__and,z_0002_1023,conj2).
+arc(r_0002_0018__and,r_0002_1016,conj1).
+arc(r_0002_0021__and,r_0002_1020,conj1).
+arc(r_0002_0021__and,r_0002_1023,conj2).
 arc(r_0002_0024__cloths,r_0002_0018__and,nlyr1).
 arc(r_0002_0024__cloths,r_0002_0027__and,r_0002_0025__Of).
 arc(r_0002_0027__and,r_0002_0026__night,conj1).
@@ -721,6 +721,9 @@ arc(r_0002_0034__spread,r_0002_0002__I,arg0).
 arc(r_0002_0034__spread,r_0002_0007__cloths,arg1).
 arc(r_0002_0034__spread,r_0002_0039__feet,r_0002_0037__under_clr_loc).
 arc(r_0002_0039__feet,r_0002_0038__your,genv).
+arc(r_0002_1016,r_0002_0017__blue,attrib2).
+arc(r_0002_1020,r_0002_0020__dim,attrib2).
+arc(r_0002_1023,r_0002_0023__dark,attrib2).
 arc(r_0002_1036__abs,r_0003_0004__being,restriction).
 arc(r_0002_1036__abs,r_0003_0008__only,scope).
 arc(r_0002_1058__imperative,r_0005_0003__because_cnt,scope).
@@ -735,7 +738,7 @@ arc(r_0004_0003__spread,r_0002_0002__I,arg0).
 arc(r_0004_0003__spread,r_0004_0005__dreams,arg1).
 arc(r_0004_0003__spread,r_0004_0008__feet,r_0004_0006__under_clr_loc).
 arc(r_0004_0005__dreams,r_0002_0002__I,genv).
-arc(r_0004_0005__dreams,r_0003_0010__dreams,z_0002_1048).
+arc(r_0004_0005__dreams,r_0003_0010__dreams,r_0002_1048).
 arc(r_0004_0008__feet,r_0002_0038__your,genv).
 arc(r_0005_0001__Tread,r_0005_0002__softly,mnr2).
 arc(r_0005_0003__because_cnt,r_0005_0001__Tread,scope).
@@ -743,10 +746,7 @@ arc(r_0005_0003__because_cnt,r_0005_0005__tread,restriction).
 arc(r_0005_0005__tread,r_0002_0038__your,arg0).
 arc(r_0005_0005__tread,r_0005_0008__dreams,r_0005_0006__on_clr_loc).
 arc(r_0005_0008__dreams,r_0002_0002__I,genv).
-arc(r_0005_0008__dreams,r_0003_0010__dreams,z_0002_1064).
-arc(z_0002_1016,r_0002_0017__blue,attrib2).
-arc(z_0002_1020,r_0002_0020__dim,attrib2).
-arc(z_0002_1023,r_0002_0023__dark,attrib2).
+arc(r_0005_0008__dreams,r_0003_0010__dreams,r_0002_1064).
 
 </pre>
 <br>
@@ -773,14 +773,14 @@ fof(id__2_A_YEATS_1899__3_A_YEATS_1899__4_A_YEATS_1899__5_A_YEATS_1899,axiom,
       &amp; isA(ENTITYX13,r_0002_0018__and)
       &amp; conj1(ENTITYX13) = ENTITYX14
       &amp; conj2(ENTITYX13) = ENTITYX17
-      &amp; isA(ENTITYX14,z_0002_1016)
+      &amp; isA(ENTITYX14,r_0002_1016)
       &amp; attrib2(ENTITYX14) = ATTRIBX15
       &amp; isA(ENTITYX17,r_0002_0021__and)
       &amp; conj1(ENTITYX17) = ENTITYX18
       &amp; conj2(ENTITYX17) = ENTITYX21
-      &amp; isA(ENTITYX18,z_0002_1020)
+      &amp; isA(ENTITYX18,r_0002_1020)
       &amp; attrib2(ENTITYX18) = ATTRIBX19
-      &amp; isA(ENTITYX21,z_0002_1023)
+      &amp; isA(ENTITYX21,r_0002_1023)
       &amp; attrib2(ENTITYX21) = ATTRIBX22
       &amp; isA(ENTITYX24,r_0002_0027__and)
       &amp; conj1(ENTITYX24) = ENTITYX25
@@ -802,7 +802,7 @@ fof(id__2_A_YEATS_1899__3_A_YEATS_1899__4_A_YEATS_1899__5_A_YEATS_1899,axiom,
         | SPEAKERX42 = r_0002_0002__I )
       &amp; SPEAKERX44 = r_0002_0002__I
       &amp; isA(ENTITYX46,r_0004_0005__dreams)
-      &amp; z_0002_1048(ENTITYX46) = DREAMSX49
+      &amp; r_0002_1048(ENTITYX46) = DREAMSX49
       &amp; genv(ENTITYX46) = SPEAKERX50
       &amp; DREAMSX49 = DREAMSX41
       &amp; ( SPEAKERX50 = SPEAKERX44
@@ -812,7 +812,7 @@ fof(id__2_A_YEATS_1899__3_A_YEATS_1899__4_A_YEATS_1899__5_A_YEATS_1899,axiom,
       &amp; HEARERX52 = r_0002_0038__your
       &amp; HEARERX61 = r_0002_0038__your
       &amp; isA(ENTITYX62,r_0005_0008__dreams)
-      &amp; z_0002_1064(ENTITYX62) = DREAMSX65
+      &amp; r_0002_1064(ENTITYX62) = DREAMSX65
       &amp; genv(ENTITYX62) = SPEAKERX66
       &amp; DREAMSX65 = DREAMSX41
       &amp; SPEAKERX66 = r_0002_0002__I

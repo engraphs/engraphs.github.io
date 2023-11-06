@@ -653,11 +653,13 @@ arc(r_0052_0017__used,r_0052_0015__deposits,arg2).
 arc(r_0052_0017__used,r_0052_0019__finance,arg1).
 arc(r_0052_0019__finance,r_0052_0015__deposits,arg0).
 arc(r_0052_0019__finance,r_0052_0021__construction,arg1).
-arc(r_0052_0021__construction,z_0052_1023,r_0052_0022__of).
+arc(r_0052_0021__construction,r_0052_1023,r_0052_0022__of).
 arc(r_0052_0028__and,r_0052_0026__major,attrib2).
 arc(r_0052_0028__and,r_0052_0027__buildings,conj1).
 arc(r_0052_0028__and,r_0052_0029__temples,conj2).
 arc(r_0052_0028__and,r_0052_0032__Classical__r_0052_0033__Age,r_0052_0030__of).
+arc(r_0052_1023,r_0052_0023__many,attrib1).
+arc(r_0052_1023,r_0052_0028__and,r_0052_0024__of).
 arc(r_0053_0002__431,r_0053_0003__b_c_,quality2).
 arc(r_0053_0006__began,r_0052_0012__Athens,arg0).
 arc(r_0053_0006__began,r_0053_0002__431,r_0053_0001__In_tmp).
@@ -667,12 +669,12 @@ arc(r_0053_0011__neighbor,r_0052_0012__Athens,genv).
 arc(r_0053_0012__and,r_0053_0011__neighbor,conj1).
 arc(r_0053_0012__and,r_0053_0013__league__r_0053_0014__member,conj2).
 arc(r_0053_0015__Sparta,r_0053_0012__and,prn1).
-arc(r_0054_0001__Although_cnt,r_0054_0005__quantificational__r_0054_0005__little,restriction).
+arc(r_0054_0001__Although_cnt,r_0054_0005__quantificational__little,restriction).
 arc(r_0054_0001__Although_cnt,r_0054_0008__as_cnt,scope).
 arc(r_0054_0004__saw,r_0054_0003__islands,arg0).
 arc(r_0054_0004__saw,r_0054_0006__action,arg1).
-arc(r_0054_0005__quantificational__r_0054_0005__little,r_0054_0004__saw,scope).
-arc(r_0054_0005__quantificational__r_0054_0005__little,r_0054_0006__action,restriction).
+arc(r_0054_0005__quantificational__little,r_0054_0004__saw,scope).
+arc(r_0054_0005__quantificational__little,r_0054_0006__action,restriction).
 arc(r_0054_0008__as_cnt,r_0054_0011__went__r_0054_0012__on,restriction).
 arc(r_0054_0008__as_cnt,r_0054_0014__could,scope).
 arc(r_0054_0011__went__r_0054_0012__on,r_0053_0008__war,arg0).
@@ -684,8 +686,6 @@ arc(r_0054_0020__losing,r_0052_0012__Athens,arg0).
 arc(r_0054_0020__losing,r_0054_0019__slowly,mnr1).
 arc(r_0054_0020__losing,r_0054_0022__power,arg1).
 arc(r_0054_0022__power,r_0052_0012__Athens,genv).
-arc(z_0052_1023,r_0052_0023__many,attrib1).
-arc(z_0052_1023,r_0052_0028__and,r_0052_0024__of).
 
 </pre>
 <br>
@@ -724,7 +724,7 @@ fof(id__52_A_ANC_HistoryOfGreece__53_A_ANC_HistoryOfGreece__54_A_ANC_HistoryOfGr
       &amp; TREASURYX12 = TREASURYX6
       &amp; isA(ENTITYX16,r_0052_0021__construction)
       &amp; r_0052_0022__of(ENTITYX16) = ENTITYX17
-      &amp; isA(ENTITYX17,z_0052_1023)
+      &amp; isA(ENTITYX17,r_0052_1023)
       &amp; attrib1(ENTITYX17) = ATTRIBX18
       &amp; r_0052_0024__of(ENTITYX17) = ENTITYX19
       &amp; isA(ENTITYX19,r_0052_0028__and)
@@ -777,7 +777,7 @@ fof(id__52_A_ANC_HistoryOfGreece__53_A_ANC_HistoryOfGreece__54_A_ANC_HistoryOfGr
       &amp; arg1(EVENTX36) = WAR431X31
       &amp; isA(CONNX37,r_0054_0001__Although_cnt)
       &amp; restriction(CONNX37) = QUANTX40
-      &amp; isA(QUANTX40,r_0054_0005__quantificational__r_0054_0005__little)
+      &amp; isA(QUANTX40,r_0054_0005__quantificational__little)
       &amp; restriction(QUANTX40) = ENTITYX39
       &amp; isA(ENTITYX39,r_0054_0006__action)
       &amp; scope(QUANTX40) = EVENTX41

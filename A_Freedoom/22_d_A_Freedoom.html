@@ -260,8 +260,10 @@ While these can pose a danger to you , they 're equally dangerous to your oppone
 <pre>
 arc(r_0034_0005__are,r_0034_0006__littered,catenative).
 arc(r_0034_0006__littered,r_0034_0009__barrels,r_0034_0007__with_clr).
-arc(r_0034_0006__littered,z_0034_1004,arg1).
+arc(r_0034_0006__littered,r_0034_1004,arg1).
 arc(r_0034_0008__exploding,r_0034_0009__barrels,arg0).
+arc(r_0034_1004,r_0034_0001__Many,attrib1).
+arc(r_0034_1004,r_0034_0004__levels,r_0034_0002__of).
 arc(r_0035_0001__While_cnt,r_0035_0003__can,restriction).
 arc(r_0035_0001__While_cnt,r_0035_0011___apos_re,scope).
 arc(r_0035_0003__can,r_0035_0004__pose,scope).
@@ -273,8 +275,6 @@ arc(r_0035_0011___apos_re,r_0035_0013__dangerous,prd2).
 arc(r_0035_0013__dangerous,r_0035_0012__equally,quality1).
 arc(r_0035_0013__dangerous,r_0035_0016__opponents,r_0035_0014__to).
 arc(r_0035_0016__opponents,r_0035_0008__you,genv).
-arc(z_0034_1004,r_0034_0001__Many,attrib1).
-arc(z_0034_1004,r_0034_0004__levels,r_0034_0002__of).
 
 </pre>
 <br>
@@ -285,7 +285,7 @@ fof(id__34_A_Freedoom__35_A_Freedoom,axiom,
       &amp; isA(EVENTX9,r_0034_0006__littered)
       &amp; arg1(EVENTX9) = ENTITYX1
       &amp; r_0034_0007__with_clr(EVENTX9) = BARRELSX7
-      &amp; isA(ENTITYX1,z_0034_1004)
+      &amp; isA(ENTITYX1,r_0034_1004)
       &amp; attrib1(ENTITYX1) = ATTRIBX2
       &amp; r_0034_0002__of(ENTITYX1) = ENTITYX3
       &amp; isA(ENTITYX3,r_0034_0004__levels)

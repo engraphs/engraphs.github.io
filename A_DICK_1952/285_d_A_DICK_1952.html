@@ -315,8 +315,11 @@ arc(r_0364_0004__have,r_0364_0005__been,catenative).
 arc(r_0364_0005__been,r_0364_0002__They,arg0).
 arc(r_0364_0005__been,r_0364_0006__used,prd2).
 arc(r_0364_0006__used,r_0364_0009__sight,r_0364_0007__to).
-arc(r_0364_0006__used,z_0364_1005,attrib1).
-arc(r_0364_0009__sight,z_0364_1011,prn4).
+arc(r_0364_0006__used,r_0364_1005,attrib1).
+arc(r_0364_0009__sight,r_0364_1011,prn4).
+arc(r_0364_1011,r_0364_0011__guns,conj1).
+arc(r_0364_1011,r_0364_0013__weapons,conj2).
+arc(r_0364_1011,r_0364_0015__uniforms,conj3).
 arc(r_0365_0001__Probably,r_0365_0003__accepted,scope).
 arc(r_0365_0003__accepted,r_0364_0002__They,arg0).
 arc(r_0365_0003__accepted,r_0364_0009__sight,arg1).
@@ -328,9 +331,6 @@ arc(r_0365_0010__part,r_0365_0017__and,r_0365_0015__like).
 arc(r_0365_0013__lives,r_0364_0002__They,genv).
 arc(r_0365_0017__and,r_0365_0016__eating,conj1).
 arc(r_0365_0017__and,r_0365_0018__sleeping,conj2).
-arc(z_0364_1011,r_0364_0011__guns,conj1).
-arc(z_0364_1011,r_0364_0013__weapons,conj2).
-arc(z_0364_1011,r_0364_0015__uniforms,conj3).
 
 </pre>
 <br>
@@ -349,7 +349,7 @@ fof(id__364_A_DICK_1952__365_A_DICK_1952,axiom,
       &amp; isA(EVENTX26,r_0365_0018__sleeping)
       &amp; isA(SIGHTX6,r_0364_0009__sight)
       &amp; prn4(SIGHTX6) = ENTITYX7
-      &amp; isA(ENTITYX7,z_0364_1011)
+      &amp; isA(ENTITYX7,r_0364_1011)
       &amp; conj1(ENTITYX7) = ENTITYX8
       &amp; conj2(ENTITYX7) = ENTITYX9
       &amp; conj3(ENTITYX7) = ENTITYX10
@@ -371,7 +371,7 @@ fof(id__364_A_DICK_1952__365_A_DICK_1952,axiom,
       &amp; isA(ATTRIBX3,r_0364_0006__used)
       &amp; attrib1(ATTRIBX3) = ATTRIBX4
       &amp; r_0364_0007__to(ATTRIBX3) = SIGHTX6
-      &amp; isA(ATTRIBX4,z_0364_1005)
+      &amp; isA(ATTRIBX4,r_0364_1005)
       &amp; isA(ATTRIBX18,r_0365_0007__natural)
       &amp; isA(OPERATORX1,r_0364_0003__must)
       &amp; scope(OPERATORX1) = EVENTX13

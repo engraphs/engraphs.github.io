@@ -882,6 +882,7 @@ arc(r_0003_0026__when_tmp,r_0003_0025__triggered,scope).
 arc(r_0003_0026__when_tmp,r_0003_0029__take,restriction).
 arc(r_0003_0029__take,r_0003_0020__and,arg0).
 arc(r_0003_0029__take,r_0003_0030__place,arg1).
+arc(r_0003_1047,r_0005_0030__else,quality2).
 arc(r_0003_1048__cnt,r_0005_0012__handles,scope).
 arc(r_0003_1048__cnt,r_0005_0041__as_far_as_rst,restriction).
 arc(r_0003_1060__question,r_0005_0051__should,scope).
@@ -909,14 +910,14 @@ arc(r_0005_0022__or,r_0005_0013__only,attrib1).
 arc(r_0005_0022__or,r_0005_0014__clicks,conj1).
 arc(r_0005_0022__or,r_0005_0023__drags,conj2).
 arc(r_0005_0023__drags,r_0005_0026__iconbar,r_0005_0024__to).
+arc(r_0005_0028__and,r_0003_1047,conj2).
 arc(r_0005_0028__and,r_0005_0022__or,conj1).
-arc(r_0005_0028__and,z_0003_1047,conj2).
-arc(r_0005_0029__quantificational__r_0005_0029__nothing,r_0005_0028__and,scope).
-arc(r_0005_0029__quantificational__r_0005_0029__nothing,z_0003_1047,restriction).
+arc(r_0005_0029__quantificational__nothing,r_0003_1047,restriction).
+arc(r_0005_0029__quantificational__nothing,r_0005_0028__and,scope).
 arc(r_0005_0032__pushing__r_0005_0033__out,r_0005_0028__and,arg0).
 arc(r_0005_0032__pushing__r_0005_0033__out,r_0005_0038__and,r_0005_0034__to_clr).
 arc(r_0005_0032__pushing__r_0005_0033__out,r_0005_0046__responsibility,arg1).
-arc(r_0005_0038__and,r_0003_0020__and,z_0003_1052).
+arc(r_0005_0038__and,r_0003_0020__and,r_0003_1052).
 arc(r_0005_0038__and,r_0005_0035__!Select,conj1).
 arc(r_0005_0038__and,r_0005_0037__!Adjust,conj2).
 arc(r_0005_0038__and,r_0005_0039__!Drag,conj3).
@@ -927,7 +928,6 @@ arc(r_0005_0046__responsibility,r_0003_1060__question,r_0005_0047__for).
 arc(r_0005_0051__should,r_0005_0052__react,scope).
 arc(r_0005_0052__react,r_0005_0048__how,mnr1).
 arc(r_0005_0052__react,r_0005_0050__computer,arg0).
-arc(z_0003_1047,r_0005_0030__else,quality2).
 
 </pre>
 <br>
@@ -1009,9 +1009,9 @@ fof(id__3_A_stick__4_A_stick__5_A_stick,axiom,
       &amp; isA(EVENTX56,r_0005_0043__exist)
       &amp; arg0(EVENTX56) = ACTIONSX55
       &amp; isA(ENTITYX36,r_0005_0008__wimp__r_0005_0010__task)
-      &amp; isA(QUANTX45,r_0005_0029__quantificational__r_0005_0029__nothing)
+      &amp; isA(QUANTX45,r_0005_0029__quantificational__nothing)
       &amp; restriction(QUANTX45) = ENTITYX44
-      &amp; isA(ENTITYX44,z_0003_1047)
+      &amp; isA(ENTITYX44,r_0003_1047)
       &amp; quality2(ENTITYX44) = QUALITYX46
       &amp; scope(QUANTX45) = ENTITYX37
       &amp; isA(ENTITYX37,r_0005_0028__and)
@@ -1029,7 +1029,7 @@ fof(id__3_A_stick__4_A_stick__5_A_stick,axiom,
       &amp; r_0005_0024__to(ENTITYX42) = ENTITYX43
       &amp; isA(ENTITYX43,r_0005_0026__iconbar)
       &amp; isA(ENTITYX50,r_0005_0038__and)
-      &amp; z_0003_1052(ENTITYX50) = ACTIONSX53
+      &amp; r_0003_1052(ENTITYX50) = ACTIONSX53
       &amp; conj1(ENTITYX50) = r_0005_0035__!Select
       &amp; conj2(ENTITYX50) = r_0005_0037__!Adjust
       &amp; conj3(ENTITYX50) = r_0005_0039__!Drag

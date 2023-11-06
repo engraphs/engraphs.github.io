@@ -806,16 +806,18 @@ arc(r_0045_0014__added,r_0045_0017__aunt,r_0045_0015__to_arg2).
 arc(r_0045_0014__added,r_0045_1003__utterance,arg1).
 arc(r_0045_0017__aunt,r_0045_0016__my,genv).
 arc(r_0045_1003__utterance,r_0045_0003__might,part1).
-arc(r_0045_1013__utterance,z_0045_1017,part1).
+arc(r_0045_1013__utterance,r_0045_1017,part1).
+arc(r_0045_1017,r_0045_0001__Mr__r_0045_0002__Cotter,r_0046_0005__for_bnf).
+arc(r_0045_1017,skc12,r_0046_0005__for_bnf).
 arc(r_0045_1039__utterance,r_0045_1041__question,part1).
 arc(r_0045_1041__question,r_0048_0003__why,scope).
 arc(r_0046_0009__said,r_0045_1013__utterance,arg1).
 arc(r_0046_0009__said,r_0046_0011__Cotter,arg0).
-arc(r_0046_0011__Cotter,r_0045_0001__Mr__r_0045_0002__Cotter,z_0045_1021).
+arc(r_0046_0011__Cotter,r_0045_0001__Mr__r_0045_0002__Cotter,r_0045_1021).
 arc(r_0046_0011__Cotter,r_0046_0010__old,attrib2).
-arc(r_0046_0011__Cotter,skc12,z_0045_1021).
+arc(r_0046_0011__Cotter,skc12,r_0045_1021).
 arc(r_0047_0002__aunt,r_0045_0016__my,genv).
-arc(r_0047_0002__aunt,r_0045_0017__aunt,z_0045_1027).
+arc(r_0047_0002__aunt,r_0045_0017__aunt,r_0045_1027).
 arc(r_0047_0003__brought,r_0047_0002__aunt,arg0).
 arc(r_0047_0003__brought,r_0047_0005__dish,arg1).
 arc(r_0047_0003__brought,r_0047_0008__safe,r_0047_0006__from_dir).
@@ -839,9 +841,9 @@ arc(r_0049_0003___apos_s,r_0049_0004__bad,prd2).
 arc(r_0049_0003___apos_s,r_0049_0009__said,prn7).
 arc(r_0049_0004__bad,r_0048_0012__children,r_0049_0005__for).
 arc(r_0049_0009__said,r_0049_0011__Cotter,arg0).
-arc(r_0049_0011__Cotter,r_0045_0001__Mr__r_0045_0002__Cotter,z_0045_1058).
+arc(r_0049_0011__Cotter,r_0045_0001__Mr__r_0045_0002__Cotter,r_0045_1058).
 arc(r_0049_0011__Cotter,r_0049_0010__old,attrib2).
-arc(r_0049_0011__Cotter,skc12,z_0045_1058).
+arc(r_0049_0011__Cotter,skc12,r_0045_1058).
 arc(r_0049_0014__because_cnt,r_0049_0003___apos_s,scope).
 arc(r_0049_0014__because_cnt,r_0049_0017__are,restriction).
 arc(r_0049_0016__minds,r_0048_0012__children,genv).
@@ -855,8 +857,6 @@ arc(r_0050_0003__see,r_0050_0004__things,arg1).
 arc(r_0050_0004__things,r_0050_0006__that,r_0050_0005__like).
 arc(r_0050_0011__has,r_0050_0010__it,arg0).
 arc(r_0050_0011__has,r_0050_0013__effect,arg1).
-arc(z_0045_1017,r_0045_0001__Mr__r_0045_0002__Cotter,r_0046_0005__for_bnf).
-arc(z_0045_1017,skc12,r_0046_0005__for_bnf).
 
 </pre>
 <br>
@@ -874,7 +874,7 @@ fof(id__45_A_JOYCE_1914__46_A_JOYCE_1914__47_A_JOYCE_1914__48_A_JOYCE_1914__49_A
       &amp; STATEX11 = CONJX19
       &amp; isA(CONJX19,r_0045_1013__utterance)
       &amp; part1(CONJX19) = EVENTX18
-      &amp; isA(EVENTX18,z_0045_1017)
+      &amp; isA(EVENTX18,r_0045_1017)
       &amp; r_0046_0005__for_bnf(EVENTX18) = COTTERX16
       &amp; STATEX37 = CONJX51
       &amp; isA(CONJX51,r_0045_1039__utterance)
@@ -903,7 +903,7 @@ fof(id__45_A_JOYCE_1914__46_A_JOYCE_1914__47_A_JOYCE_1914__48_A_JOYCE_1914__49_A
       &amp; COTTERX16 = r_0045_0001__Mr__r_0045_0002__Cotter
       &amp; COTTERX22 = r_0045_0001__Mr__r_0045_0002__Cotter
       &amp; isA(ENTITYX25,r_0047_0002__aunt)
-      &amp; z_0045_1027(ENTITYX25) = AUNTX28
+      &amp; r_0045_1027(ENTITYX25) = AUNTX28
       &amp; genv(ENTITYX25) = SPEAKERX29
       &amp; AUNTX28 = AUNTX9
       &amp; SPEAKERX29 = r_0045_0016__my
@@ -927,10 +927,10 @@ fof(id__45_A_JOYCE_1914__46_A_JOYCE_1914__47_A_JOYCE_1914__48_A_JOYCE_1914__49_A
       &amp; r_0050_0005__like(ENTITYX71) = r_0050_0006__that
       &amp; isA(ENTITYX73,r_0050_0013__effect)
       &amp; isA(r_0046_0011__Cotter,r_0046_0011__Cotter)
-      &amp; z_0045_1021(r_0046_0011__Cotter) = COTTERX22
+      &amp; r_0045_1021(r_0046_0011__Cotter) = COTTERX22
       &amp; attrib2(r_0046_0011__Cotter) = ATTRIBX23
       &amp; isA(r_0049_0011__Cotter,r_0049_0011__Cotter)
-      &amp; z_0045_1058(r_0049_0011__Cotter) = COTTERX59
+      &amp; r_0045_1058(r_0049_0011__Cotter) = COTTERX59
       &amp; attrib2(r_0049_0011__Cotter) = ATTRIBX60
       &amp; isA(ATTRIBX23,r_0046_0010__old)
       &amp; isA(ATTRIBX46,r_0048_0010__good)

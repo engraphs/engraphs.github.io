@@ -940,7 +940,8 @@ arc(r_0011_0023__support,r_0011_0026__troops,r_0011_0024__to).
 arc(r_0011_0026__troops,r_0011_0025__U_S_,attrib1).
 arc(r_0011_0026__troops,r_0011_0029__and,r_0011_0027__in).
 arc(r_0011_0029__and,r_0011_0028__Iraq,conj1).
-arc(r_0011_0029__and,z_0011_1020,conj2).
+arc(r_0011_0029__and,r_0011_1020,conj2).
+arc(r_0011_1020,r_0011_0030__elsewhere,quality1).
 arc(r_0012_0002__has,r_0012_0003__been,catenative).
 arc(r_0012_0003__been,r_0012_0004__providing,catenative).
 arc(r_0012_0004__providing,r_0011_0018__Halliburton__r_0011_0019__company,arg0).
@@ -974,19 +975,18 @@ arc(r_0015_0004__denies,r_0011_0018__Halliburton__r_0011_0019__company,arg0).
 arc(r_0015_0004__denies,r_0015_0003__strongly,mnr2).
 arc(r_0015_0004__denies,r_0015_0006__allegations,arg1).
 arc(r_0016_0004__contract,r_0016_0003__huge,attrib2).
+arc(r_0016_0005__is,r_0011_1073,tmp1).
 arc(r_0016_0005__is,r_0016_0006__put__r_0016_0007__out,catenative).
-arc(r_0016_0005__is,z_0011_1073,tmp1).
 arc(r_0016_0006__put__r_0016_0007__out,r_0016_0004__contract,arg1).
 arc(r_0016_0006__put__r_0016_0007__out,r_0016_0009__re_bidding,r_0016_0008__for_clr).
 arc(r_0016_0012__companies,r_0016_0011__several,attrib1).
 arc(r_0016_0013__will,r_0016_0014__get,scope).
+arc(r_0016_0014__get,r_0011_1073,tmp).
 arc(r_0016_0014__get,r_0016_0012__companies,arg0).
 arc(r_0016_0014__get,r_0016_0016__chance,arg1).
-arc(r_0016_0014__get,z_0011_1073,tmp).
 arc(r_0016_0016__chance,r_0016_0018__compete,emb3).
 arc(r_0016_0018__compete,r_0016_0020__portions,r_0016_0019__for_clr).
 arc(r_0016_0020__portions,r_0016_0023__work,r_0016_0021__of).
-arc(z_0011_1020,r_0011_0030__elsewhere,quality1).
 
 </pre>
 <br>
@@ -1054,7 +1054,7 @@ fof(id__11_A_Voice_of_America,axiom,
       &amp; isA(ENTITYX17,r_0011_0029__and)
       &amp; conj1(ENTITYX17) = r_0011_0028__Iraq
       &amp; conj2(ENTITYX17) = ENTITYX18
-      &amp; isA(ENTITYX18,z_0011_1020)
+      &amp; isA(ENTITYX18,r_0011_1020)
       &amp; quality1(ENTITYX18) = QUALITYX19
       &amp; HALLIBURTONX26 = HALLIBURTONX9
       &amp; isA(ENTITYX29,r_0012_0007__list)
@@ -1088,7 +1088,7 @@ fof(id__11_A_Voice_of_America,axiom,
       &amp; isA(EVENTX72,r_0016_0005__is)
       &amp; tmp1(EVENTX72) = ENTITYX65
       &amp; catenative(EVENTX72) = CATENATIVEX68
-      &amp; isA(ENTITYX65,z_0011_1073)
+      &amp; isA(ENTITYX65,r_0011_1073)
       &amp; isA(ENTITYX66,r_0016_0004__contract)
       &amp; attrib2(ENTITYX66) = ATTRIBX67
       &amp; isA(ENTITYX70,r_0016_0009__re_bidding)

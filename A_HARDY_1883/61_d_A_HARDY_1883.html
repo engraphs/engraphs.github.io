@@ -917,7 +917,7 @@ arc(r_0073_0033__rail,r_0073_0032__top,attrib2).
 arc(r_0073_0033__rail,r_0073_0036__garden_gate,r_0073_0034__of).
 arc(r_0073_0038__were,r_0073_0039__varnished,catenative).
 arc(r_0073_0039__varnished,r_0073_0045__glaze,r_0073_0040__with_mnr).
-arc(r_0073_0039__varnished,z_0073_1020,arg1).
+arc(r_0073_0039__varnished,r_0073_1020,arg1).
 arc(r_0073_0045__glaze,r_0073_0042__same,attrib2).
 arc(r_0073_0045__glaze,r_0073_0043__dull,attrib3).
 arc(r_0073_0045__glaze,r_0073_0044__liquid,attrib4).
@@ -937,13 +937,16 @@ arc(r_0073_0067__were,r_0073_0068__high,prd2).
 arc(r_0073_0068__high,r_0073_0071__meads,r_0073_0069__in).
 arc(r_0073_1004__abs,r_0073_0003__stretched,scope).
 arc(r_0073_1004__abs,r_0073_0009__gleaming,restriction).
-arc(r_0074_0002__quantificational__r_0074_0002__all,r_0074_0005__quantificational__r_0074_0005__a_few,scope).
-arc(r_0074_0002__quantificational__r_0074_0002__all,z_0073_1047,restriction).
+arc(r_0073_1020,r_0073_0018__roof,conj1).
+arc(r_0073_1020,r_0073_0029__well_cover,conj2).
+arc(r_0073_1020,r_0073_0033__rail,conj3).
+arc(r_0074_0002__quantificational__all,r_0073_1047,restriction).
+arc(r_0074_0002__quantificational__all,r_0074_0005__quantificational__a_few,scope).
+arc(r_0074_0004__winked,r_0073_1047,r_0074_0001__Beyond_dir).
 arc(r_0074_0004__winked,r_0074_0007__lamplights,arg0).
 arc(r_0074_0004__winked,r_0074_0011__drops,r_0074_0008__through_dir).
-arc(r_0074_0004__winked,z_0073_1047,r_0074_0001__Beyond_dir).
-arc(r_0074_0005__quantificational__r_0074_0005__a_few,r_0074_0004__winked,scope).
-arc(r_0074_0005__quantificational__r_0074_0005__a_few,r_0074_0007__lamplights,restriction).
+arc(r_0074_0005__quantificational__a_few,r_0074_0004__winked,scope).
+arc(r_0074_0005__quantificational__a_few,r_0074_0007__lamplights,restriction).
 arc(r_0074_0007__lamplights,r_0074_0006__bleared,attrib2).
 arc(r_0074_0007__lamplights,r_0074_0013__lights,prn4).
 arc(r_0074_0011__drops,r_0074_0010__beating,attrib2).
@@ -956,8 +959,8 @@ arc(r_0074_0029__come,r_0073_0006__his,arg0).
 arc(r_0074_0029__come,r_0074_0020__county__r_0074_0021___hyphen__r_0074_0022__town,r_0074_0023__from_dir).
 arc(r_0075_0002__absence,r_0075_0005__notes,r_0075_0003__of).
 arc(r_0075_0002__absence,r_0075_0010__direction,r_0075_0008__in).
-arc(r_0075_0004__quantificational__r_0075_0004__all,r_0075_0002__absence,scope).
-arc(r_0075_0004__quantificational__r_0075_0004__all,r_0075_0005__notes,restriction).
+arc(r_0075_0004__quantificational__all,r_0075_0002__absence,scope).
+arc(r_0075_0004__quantificational__all,r_0075_0005__notes,restriction).
 arc(r_0075_0005__notes,r_0075_0007__life,r_0075_0006__of).
 arc(r_0075_0011__seemed,r_0075_0013__clinch,catenative).
 arc(r_0075_0013__clinch,r_0075_0002__absence,arg0).
@@ -965,9 +968,6 @@ arc(r_0075_0013__clinch,r_0075_0015__intentions,arg1).
 arc(r_0075_0015__intentions,r_0073_0006__his,genv).
 arc(r_0075_0019__knocked,r_0073_0006__his,arg0).
 arc(r_0075_0019__knocked,r_0075_0022__door,r_0075_0020__at_clr).
-arc(z_0073_1020,r_0073_0018__roof,conj1).
-arc(z_0073_1020,r_0073_0029__well_cover,conj2).
-arc(z_0073_1020,r_0073_0033__rail,conj3).
 
 </pre>
 <br>
@@ -1006,7 +1006,7 @@ fof(id__73_A_HARDY_1883__74_A_HARDY_1883__75_A_HARDY_1883,axiom,
       &amp; isA(ENTITYX1,r_0073_0002__garden_path)
       &amp; isA(ENTITYX3,r_0073_0007__feet)
       &amp; genv(ENTITYX3) = r_0073_0006__his
-      &amp; isA(ENTITYX10,z_0073_1020)
+      &amp; isA(ENTITYX10,r_0073_1020)
       &amp; conj1(ENTITYX10) = ENTITYX11
       &amp; conj2(ENTITYX10) = ENTITYX16
       &amp; conj3(ENTITYX10) = ENTITYX17
@@ -1047,7 +1047,7 @@ fof(id__73_A_HARDY_1883__74_A_HARDY_1883__75_A_HARDY_1883,axiom,
       &amp; PEDESTRIANX54 = r_0073_0006__his
       &amp; isA(ENTITYX61,r_0074_0011__drops)
       &amp; attrib2(ENTITYX61) = ATTRIBX62
-      &amp; isA(QUANTX68,r_0075_0004__quantificational__r_0075_0004__all)
+      &amp; isA(QUANTX68,r_0075_0004__quantificational__all)
       &amp; restriction(QUANTX68) = ENTITYX67
       &amp; isA(ENTITYX67,r_0075_0005__notes)
       &amp; r_0075_0006__of(ENTITYX67) = ENTITYX69
@@ -1094,11 +1094,11 @@ fof(id__73_A_HARDY_1883__74_A_HARDY_1883__75_A_HARDY_1883,axiom,
       &amp; isA(EVENTX8,r_0073_0009__gleaming)
       &amp; arg0(EVENTX8) = ENTITYX1
       &amp; r_0073_0010__like_mnr(EVENTX8) = ENTITYX6
-      &amp; isA(QUANTX46,r_0074_0002__quantificational__r_0074_0002__all)
+      &amp; isA(QUANTX46,r_0074_0002__quantificational__all)
       &amp; restriction(QUANTX46) = ENTITYX45
-      &amp; isA(ENTITYX45,z_0073_1047)
+      &amp; isA(ENTITYX45,r_0073_1047)
       &amp; scope(QUANTX46) = QUANTX49
-      &amp; isA(QUANTX49,r_0074_0005__quantificational__r_0074_0005__a_few)
+      &amp; isA(QUANTX49,r_0074_0005__quantificational__a_few)
       &amp; restriction(QUANTX49) = ENTITYX48
       &amp; isA(ENTITYX48,r_0074_0007__lamplights)
       &amp; attrib2(ENTITYX48) = ATTRIBX50

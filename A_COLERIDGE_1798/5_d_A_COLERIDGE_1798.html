@@ -926,15 +926,17 @@ arc(r_0007_0023__and,r_0007_0022__fountain,conj1).
 arc(r_0007_0023__and,r_0007_0025__caves,conj2).
 arc(r_0007_1044__cnt,r_0009_0024__played,scope).
 arc(r_0007_1044__cnt,r_0009_0026__Singing,restriction).
+arc(r_0007_1081,r_0010_0032__dome,conj1).
+arc(r_0007_1081,r_0010_0041__caves,conj2).
 arc(r_0008_0002__was,r_0007_0005__dome,arg0).
 arc(r_0008_0002__was,r_0008_0004__miracle,prd2).
 arc(r_0008_0004__miracle,r_0008_0007__device,r_0008_0005__of).
 arc(r_0008_0004__miracle,r_0008_0011__pleasure_dome,prn5).
 arc(r_0008_0007__device,r_0008_0006__rare,attrib1).
-arc(r_0008_0011__pleasure_dome,r_0007_0005__dome,z_0007_1022).
+arc(r_0008_0011__pleasure_dome,r_0007_0005__dome,r_0007_1022).
 arc(r_0008_0011__pleasure_dome,r_0008_0010__sunny,attrib3).
 arc(r_0008_0011__pleasure_dome,r_0008_0013__caves,r_0008_0012__with).
-arc(r_0008_0013__caves,r_0007_0025__caves,z_0007_1027).
+arc(r_0008_0013__caves,r_0007_0025__caves,r_0007_1027).
 arc(r_0008_0013__caves,r_0008_0015__ice,r_0008_0014__of).
 arc(r_0009_0002__damsel,r_0009_0005__dulcimer,r_0009_0003__with).
 arc(r_0009_0011__saw,r_0009_0002__damsel,arg1_tpc).
@@ -970,17 +972,15 @@ arc(r_0010_0023__music,r_0010_0025__and,attrib2).
 arc(r_0010_0025__and,r_0010_0024__loud,conj1).
 arc(r_0010_0025__and,r_0010_0026__long,conj2).
 arc(r_0010_0029__would,r_0010_0030__build,scope).
+arc(r_0010_0030__build,r_0007_1081,arg1).
 arc(r_0010_0030__build,r_0009_0010__I,arg0).
 arc(r_0010_0030__build,r_0010_0023__music,r_0010_0022__with_com).
-arc(r_0010_0030__build,z_0007_1081,arg1).
-arc(r_0010_0032__dome,r_0007_0005__dome,z_0007_1071).
+arc(r_0010_0032__dome,r_0007_0005__dome,r_0007_1071).
 arc(r_0010_0032__dome,r_0010_0034__air,r_0010_0033__in).
 arc(r_0010_0032__dome,r_0010_0038__dome,prn6).
 arc(r_0010_0038__dome,r_0010_0037__sunny,attrib2).
-arc(r_0010_0041__caves,r_0007_0025__caves,z_0007_1078).
+arc(r_0010_0041__caves,r_0007_0025__caves,r_0007_1078).
 arc(r_0010_0041__caves,r_0010_0043__ice,r_0010_0042__of).
-arc(z_0007_1081,r_0010_0032__dome,conj1).
-arc(z_0007_1081,r_0010_0041__caves,conj2).
 
 </pre>
 <br>
@@ -1034,13 +1034,13 @@ fof(id__7_A_COLERIDGE_1798__8_A_COLERIDGE_1798__9_A_COLERIDGE_1798__10_A_COLERID
       &amp; isA(ENTITYX18,r_0008_0007__device)
       &amp; attrib1(ENTITYX18) = ATTRIBX19
       &amp; isA(ENTITYX20,r_0008_0011__pleasure_dome)
-      &amp; z_0007_1022(ENTITYX20) = DOMEX23
+      &amp; r_0007_1022(ENTITYX20) = DOMEX23
       &amp; attrib3(ENTITYX20) = ATTRIBX24
       &amp; r_0008_0012__with(ENTITYX20) = ENTITYX25
       &amp; ( DOMEX23 = DOMEX16
         | DOMEX23 = DOMEX2 )
       &amp; isA(ENTITYX25,r_0008_0013__caves)
-      &amp; z_0007_1027(ENTITYX25) = CAVESX28
+      &amp; r_0007_1027(ENTITYX25) = CAVESX28
       &amp; r_0008_0014__of(ENTITYX25) = ENTITYX29
       &amp; CAVESX28 = CAVESX10
       &amp; isA(ENTITYX29,r_0008_0015__ice)
@@ -1071,11 +1071,11 @@ fof(id__7_A_COLERIDGE_1798__8_A_COLERIDGE_1798__9_A_COLERIDGE_1798__10_A_COLERID
       &amp; isA(ENTITYX63,r_0010_0023__music)
       &amp; attrib2(ENTITYX63) = ATTRIBX64
       &amp; SPEAKERX67 = r_0009_0010__I
-      &amp; isA(ENTITYX68,z_0007_1081)
+      &amp; isA(ENTITYX68,r_0007_1081)
       &amp; conj1(ENTITYX68) = ENTITYX69
       &amp; conj2(ENTITYX68) = ENTITYX76
       &amp; isA(ENTITYX69,r_0010_0032__dome)
-      &amp; z_0007_1071(ENTITYX69) = DOMEX72
+      &amp; r_0007_1071(ENTITYX69) = DOMEX72
       &amp; r_0010_0033__in(ENTITYX69) = ENTITYX73
       &amp; prn6(ENTITYX69) = ENTITYX74
       &amp; DOMEX72 = DOMEX2
@@ -1083,7 +1083,7 @@ fof(id__7_A_COLERIDGE_1798__8_A_COLERIDGE_1798__9_A_COLERIDGE_1798__10_A_COLERID
       &amp; isA(ENTITYX74,r_0010_0038__dome)
       &amp; attrib2(ENTITYX74) = ATTRIBX75
       &amp; isA(ENTITYX76,r_0010_0041__caves)
-      &amp; z_0007_1078(ENTITYX76) = CAVESX79
+      &amp; r_0007_1078(ENTITYX76) = CAVESX79
       &amp; r_0010_0042__of(ENTITYX76) = ENTITYX80
       &amp; CAVESX79 = CAVESX10
       &amp; isA(ENTITYX80,r_0010_0043__ice)

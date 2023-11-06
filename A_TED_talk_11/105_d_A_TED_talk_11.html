@@ -438,28 +438,28 @@ arc(r_0141_0009__if_cnt_cnd,r_0141_0002__think,scope).
 arc(r_0141_0009__if_cnt_cnd,r_0141_0011__look,restriction).
 arc(r_0141_0011__look,r_0141_0003__you,arg0).
 arc(r_0141_0011__look,r_0141_0014__output,r_0141_0012__at_clr).
-arc(r_0141_0014__output,z_0141_1033,prn4).
+arc(r_0141_0014__output,r_0141_1033,prn4).
 arc(r_0141_0017__really,r_0141_0018__succeeds,scope).
 arc(r_0141_0018__succeeds,r_0141_0020__this,r_0141_0019__by_mnr).
-arc(r_0141_0018__succeeds,z_0141_1013,arg0).
-arc(r_0141_0023__does,z_0141_1020,arg1).
-arc(r_0141_0023__does,z_0141_1022,arg0).
-arc(r_0141_0024__quantificational__r_0141_0024__everything,r_0141_0023__does,scope).
-arc(r_0141_0024__quantificational__r_0141_0024__everything,z_0141_1020,restriction).
-arc(r_0141_0027__should,z_0141_1018,scope).
+arc(r_0141_0018__succeeds,r_0141_1013,arg0).
+arc(r_0141_0023__does,r_0141_1020,arg1).
+arc(r_0141_0023__does,r_0141_1022,arg0).
+arc(r_0141_0024__quantificational__everything,r_0141_0023__does,scope).
+arc(r_0141_0024__quantificational__everything,r_0141_1020,restriction).
+arc(r_0141_0027__should,r_0141_1018,scope).
 arc(r_0141_0030__gets,r_0141_0034__points,arg1).
-arc(r_0141_0030__gets,z_0141_1028,arg0).
-arc(r_0141_0031__quantificational__r_0141_0031__all,r_0141_0030__gets,scope).
-arc(r_0141_0031__quantificational__r_0141_0031__all,r_0141_0034__points,restriction).
+arc(r_0141_0030__gets,r_0141_1028,arg0).
+arc(r_0141_0031__quantificational__all,r_0141_0030__gets,scope).
+arc(r_0141_0031__quantificational__all,r_0141_0034__points,restriction).
 arc(r_0141_0034__points,r_0141_0033__brownie,attrib3).
 arc(r_0141_0037__are,r_0141_0039__winners,prd2).
-arc(r_0141_0037__are,z_0141_1032,arg0).
-arc(z_0141_1018,r_0141_0026__they,arg0).
-arc(z_0141_1018,z_0141_1020,arg1).
-arc(z_0141_1033,z_0141_1013,conj1).
-arc(z_0141_1033,z_0141_1022,conj2).
-arc(z_0141_1033,z_0141_1028,conj3).
-arc(z_0141_1033,z_0141_1032,conj4).
+arc(r_0141_0037__are,r_0141_1032,arg0).
+arc(r_0141_1018,r_0141_0026__they,arg0).
+arc(r_0141_1018,r_0141_1020,arg1).
+arc(r_0141_1033,r_0141_1013,conj1).
+arc(r_0141_1033,r_0141_1022,conj2).
+arc(r_0141_1033,r_0141_1028,conj3).
+arc(r_0141_1033,r_0141_1032,conj4).
 
 </pre>
 <br>
@@ -477,7 +477,7 @@ fof(id__141_A_TED_talk_11,axiom,
       &amp; HEARERX7 = r_0141_0003__you
       &amp; isA(ENTITYX8,r_0141_0014__output)
       &amp; prn4(ENTITYX8) = ENTITYX9
-      &amp; isA(ENTITYX9,z_0141_1033)
+      &amp; isA(ENTITYX9,r_0141_1033)
       &amp; conj1(ENTITYX9) = ENTITYX10
       &amp; conj2(ENTITYX9) = ENTITYX14
       &amp; conj3(ENTITYX9) = ENTITYX23
@@ -487,21 +487,21 @@ fof(id__141_A_TED_talk_11,axiom,
       &amp; isA(EVENTX12,r_0141_0018__succeeds)
       &amp; arg0(EVENTX12) = ENTITYX10
       &amp; r_0141_0019__by_mnr(EVENTX12) = r_0141_0020__this
-      &amp; isA(ENTITYX10,z_0141_1013)
-      &amp; isA(QUANTX16,r_0141_0024__quantificational__r_0141_0024__everything)
+      &amp; isA(ENTITYX10,r_0141_1013)
+      &amp; isA(QUANTX16,r_0141_0024__quantificational__everything)
       &amp; isA(OPERATORX17,r_0141_0027__should)
       &amp; scope(OPERATORX17) = EVENTX19
-      &amp; isA(EVENTX19,z_0141_1018)
+      &amp; isA(EVENTX19,r_0141_1018)
       &amp; arg1(EVENTX19) = ENTITYX15
       &amp; arg0(EVENTX19) = r_0141_0026__they
-      &amp; isA(ENTITYX15,z_0141_1020)
+      &amp; isA(ENTITYX15,r_0141_1020)
       &amp; restriction(QUANTX16) = ENTITYX15
       &amp; scope(QUANTX16) = EVENTX21
       &amp; isA(EVENTX21,r_0141_0023__does)
       &amp; arg0(EVENTX21) = ENTITYX14
       &amp; arg1(EVENTX21) = ENTITYX15
-      &amp; isA(ENTITYX14,z_0141_1022)
-      &amp; isA(QUANTX25,r_0141_0031__quantificational__r_0141_0031__all)
+      &amp; isA(ENTITYX14,r_0141_1022)
+      &amp; isA(QUANTX25,r_0141_0031__quantificational__all)
       &amp; restriction(QUANTX25) = ENTITYX24
       &amp; isA(ENTITYX24,r_0141_0034__points)
       &amp; attrib3(ENTITYX24) = ATTRIBX26
@@ -509,11 +509,11 @@ fof(id__141_A_TED_talk_11,axiom,
       &amp; isA(EVENTX27,r_0141_0030__gets)
       &amp; arg0(EVENTX27) = ENTITYX23
       &amp; arg1(EVENTX27) = ENTITYX24
-      &amp; isA(ENTITYX23,z_0141_1028)
+      &amp; isA(ENTITYX23,r_0141_1028)
       &amp; isA(EVENTX31,r_0141_0037__are)
       &amp; arg0(EVENTX31) = ENTITYX29
       &amp; prd2(EVENTX31) = ENTITYX30
-      &amp; isA(ENTITYX29,z_0141_1032)
+      &amp; isA(ENTITYX29,r_0141_1032)
       &amp; isA(ENTITYX30,r_0141_0039__winners)
       &amp; isA(ATTRIBX26,r_0141_0033__brownie)
       &amp; isA(CONNX6,r_0141_0009__if_cnt_cnd)

@@ -419,21 +419,21 @@ arc(r_0003_0009__received,r_0003_0011__letter,arg1).
 arc(r_0003_0009__received,r_0003_0014__organiser,r_0003_0012__from_clr_dir).
 arc(r_0003_1014__imperative,r_0004_0001__Read,scope).
 arc(r_0003_1028__imperative,r_0005_0001__Then,scope).
-arc(r_0003_1032__abs,r_0005_0004__quantificational__r_0005_0004__all,restriction).
+arc(r_0003_1032__abs,r_0005_0004__quantificational__all,restriction).
 arc(r_0003_1032__abs,r_0005_0011__write,scope).
 arc(r_0004_0001__Read,r_0004_0003__letter,arg1).
-arc(r_0004_0003__letter,r_0003_0011__letter,z_0003_1017).
+arc(r_0004_0003__letter,r_0003_0011__letter,r_0003_1017).
 arc(r_0004_0008__have,r_0004_0003__letter,r_0004_0005__on_rst).
 arc(r_0004_0008__have,r_0004_0009__made,catenative).
 arc(r_0004_0009__made,r_0003_0001__You,arg0).
 arc(r_0004_0009__made,r_0004_0011__notes,arg1).
 arc(r_0005_0001__Then,r_0003_1032__abs,scope).
 arc(r_0005_0003__using,r_0005_0006__information,arg1).
-arc(r_0005_0004__quantificational__r_0005_0004__all,r_0005_0003__using,scope).
-arc(r_0005_0004__quantificational__r_0005_0004__all,r_0005_0006__information,restriction).
+arc(r_0005_0004__quantificational__all,r_0005_0003__using,scope).
+arc(r_0005_0004__quantificational__all,r_0005_0006__information,restriction).
 arc(r_0005_0006__information,r_0005_0009__notes,r_0005_0007__in).
 arc(r_0005_0009__notes,r_0003_0001__You,genv).
-arc(r_0005_0009__notes,r_0004_0011__notes,z_0003_1038).
+arc(r_0005_0009__notes,r_0004_0011__notes,r_0003_1038).
 arc(r_0005_0011__write,r_0005_0014__reply,arg1).
 arc(r_0005_0014__reply,r_0005_0013__suitable,attrib2).
 
@@ -459,14 +459,14 @@ fof(id__3_A_fce_0100_2000_06__4_A_fce_0100_2000_06__5_A_fce_0100_2000_06,axiom,
       &amp; r_0004_0005__on_rst(EVENTX23) = ENTITYX15
       &amp; catenative(EVENTX23) = CATENATIVEX20
       &amp; isA(ENTITYX15,r_0004_0003__letter)
-      &amp; z_0003_1017(ENTITYX15) = LETTERX18
+      &amp; r_0003_1017(ENTITYX15) = LETTERX18
       &amp; LETTERX18 = LETTERX6
       &amp; HEARERX19 = r_0003_0001__You
       &amp; isA(NOTESX21,r_0004_0011__notes)
       &amp; isA(ENTITYX30,r_0005_0014__reply)
       &amp; attrib2(ENTITYX30) = ATTRIBX31
       &amp; isA(ENTITYX36,r_0005_0009__notes)
-      &amp; z_0003_1038(ENTITYX36) = NOTESX39
+      &amp; r_0003_1038(ENTITYX36) = NOTESX39
       &amp; genv(ENTITYX36) = HEARERX40
       &amp; NOTESX39 = NOTESX21
       &amp; HEARERX40 = r_0003_0001__You
@@ -492,7 +492,7 @@ fof(id__3_A_fce_0100_2000_06__4_A_fce_0100_2000_06__5_A_fce_0100_2000_06,axiom,
       &amp; scope(OPERATORX29) = CONNX33
       &amp; isA(CONNX33,r_0003_1032__abs)
       &amp; restriction(CONNX33) = QUANTX35
-      &amp; isA(QUANTX35,r_0005_0004__quantificational__r_0005_0004__all)
+      &amp; isA(QUANTX35,r_0005_0004__quantificational__all)
       &amp; restriction(QUANTX35) = ENTITYX34
       &amp; isA(ENTITYX34,r_0005_0006__information)
       &amp; r_0005_0007__in(ENTITYX34) = ENTITYX36

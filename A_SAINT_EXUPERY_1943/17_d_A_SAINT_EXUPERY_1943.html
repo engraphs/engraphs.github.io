@@ -1196,9 +1196,9 @@ arc(r_0064_0001__Absurd,r_0064_0004__might,r_0064_0002__as).
 arc(r_0064_0004__might,r_0064_0005__seem,scope).
 arc(r_0064_0005__seem,r_0064_0003__it,arg0).
 arc(r_0064_0005__seem,r_0064_0007__me,r_0064_0006__to_clr).
-arc(r_0064_0010__thousand__r_0064_0011__miles,r_0064_0016__and,z_0064_1007).
-arc(r_0064_0013__quantificational__r_0064_0013__any,r_0064_0015__habitation,restriction).
-arc(r_0064_0013__quantificational__r_0064_0013__any,r_0064_0016__and,scope).
+arc(r_0064_0010__thousand__r_0064_0011__miles,r_0064_0016__and,r_0064_1007).
+arc(r_0064_0013__quantificational__any,r_0064_0015__habitation,restriction).
+arc(r_0064_0013__quantificational__any,r_0064_0016__and,scope).
 arc(r_0064_0015__habitation,r_0064_0014__human,attrib2).
 arc(r_0064_0016__and,r_0064_0015__habitation,r_0064_0012__from).
 arc(r_0064_0016__and,r_0064_0018__danger,r_0064_0017__in).
@@ -1214,6 +1214,7 @@ arc(r_0064_0031__and,r_0064_0028__sheet,conj1).
 arc(r_0064_0031__and,r_0064_0033__fountain_pen,conj2).
 arc(r_0064_0033__fountain_pen,r_0064_0007__me,genv).
 arc(r_0064_1029__question,r_0065_0008__had,scope).
+arc(r_0064_1051,r_0065_0029__little,attrib2).
 arc(r_0064_1057__question,r_0065_0041__draw,scope).
 arc(r_0064_1068__utterance,r_0064_1074__imperative,part2).
 arc(r_0064_1068__utterance,r_0066_0008__n_apos_t,part1).
@@ -1238,7 +1239,7 @@ arc(r_0065_0023__told,r_0065_0026__chap,arg2).
 arc(r_0065_0023__told,r_0065_0030__crossly,mnr5).
 arc(r_0065_0023__told,r_0065_0037__not,arg1).
 arc(r_0065_0026__chap,r_0065_0025__little,attrib2).
-arc(r_0065_0030__crossly,z_0064_1051,modifier1).
+arc(r_0065_0030__crossly,r_0064_1051,modifier1).
 arc(r_0065_0032__too,r_0065_0023__told,scope).
 arc(r_0065_0037__not,r_0065_0038__know,scope).
 arc(r_0065_0038__know,r_0064_0007__me,arg0).
@@ -1275,16 +1276,15 @@ arc(r_0070_0004__astounded,r_0064_0007__me,arg2).
 arc(r_0070_0004__astounded,r_0070_0006__hear,arg1).
 arc(r_0070_0006__hear,r_0064_0007__me,arg0).
 arc(r_0070_0006__hear,r_0070_0010__greet,arg1).
-arc(r_0070_0009__fellow,r_0065_0026__chap,z_0064_1108).
+arc(r_0070_0009__fellow,r_0065_0026__chap,r_0064_1108).
 arc(r_0070_0009__fellow,r_0070_0008__little,attrib3).
+arc(r_0070_0010__greet,r_0064_1114,r_0070_0012__with_mnr).
 arc(r_0070_0010__greet,r_0068_0006__one,arg1).
 arc(r_0070_0010__greet,r_0070_0009__fellow,arg0).
-arc(r_0070_0010__greet,z_0064_1114,r_0070_0012__with_mnr).
 arc(r_0071_0003__not,r_0071_0004__want,scope).
 arc(r_0071_0004__want,r_0065_0026__chap,arg0).
 arc(r_0071_0004__want,r_0071_0006__elephant,arg1).
 arc(r_0071_0006__elephant,r_0071_0009__boa__r_0071_0010__constrictor,r_0071_0007__inside).
-arc(z_0064_1051,r_0065_0029__little,attrib2).
 
 </pre>
 <br>
@@ -1365,8 +1365,8 @@ fof(id__64_A_SAINT_EXUPERY_1943__65_A_SAINT_EXUPERY_1943__66_A_SAINT_EXUPERY_194
       &amp; isA(ATTRIBX50,r_0065_0029__little)
       &amp; isA(ATTRIBX110,r_0070_0008__little)
       &amp; isA(ENTITYX5,r_0064_0010__thousand__r_0064_0011__miles)
-      &amp; z_0064_1007(ENTITYX5) = CONJX8
-      &amp; isA(QUANTX10,r_0064_0013__quantificational__r_0064_0013__any)
+      &amp; r_0064_1007(ENTITYX5) = CONJX8
+      &amp; isA(QUANTX10,r_0064_0013__quantificational__any)
       &amp; restriction(QUANTX10) = ENTITYX9
       &amp; isA(ENTITYX9,r_0064_0015__habitation)
       &amp; attrib2(ENTITYX9) = ATTRIBX11
@@ -1409,7 +1409,7 @@ fof(id__64_A_SAINT_EXUPERY_1943__65_A_SAINT_EXUPERY_1943__66_A_SAINT_EXUPERY_194
       &amp; NARRATORX45 = r_0064_0007__me
       &amp; isA(PRINCEX46,r_0065_0026__chap)
       &amp; attrib2(PRINCEX46) = ATTRIBX47
-      &amp; isA(ENTITYX49,z_0064_1051)
+      &amp; isA(ENTITYX49,r_0064_1051)
       &amp; attrib2(ENTITYX49) = ATTRIBX50
       &amp; ( NARRATORX54 = NARRATORX45
         | NARRATORX54 = r_0064_0007__me )
@@ -1435,11 +1435,11 @@ fof(id__64_A_SAINT_EXUPERY_1943__65_A_SAINT_EXUPERY_1943__66_A_SAINT_EXUPERY_194
       &amp; isA(ENTITYX100,r_0069_0010__outside)
       &amp; NARRATORX102 = r_0064_0007__me
       &amp; isA(ENTITYX106,r_0070_0009__fellow)
-      &amp; z_0064_1108(ENTITYX106) = PRINCEX109
+      &amp; r_0064_1108(ENTITYX106) = PRINCEX109
       &amp; attrib3(ENTITYX106) = ATTRIBX110
       &amp; PRINCEX109 = PRINCEX46
       &amp; ARTWORKX112 = ARTWORKX89
-      &amp; isA(ENTITYX113,z_0064_1114)
+      &amp; isA(ENTITYX113,r_0064_1114)
       &amp; PRINCEX119 = PRINCEX46
       &amp; isA(ENTITYX120,r_0071_0006__elephant)
       &amp; r_0071_0007__inside(ENTITYX120) = ENTITYX121

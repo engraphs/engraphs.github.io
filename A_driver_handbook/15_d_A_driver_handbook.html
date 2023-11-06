@@ -215,7 +215,7 @@ The faster you go , the less time you have to avoid a hazard or collision .
 <br>
 <pre>
 arc(r_0019_0004__go,r_0019_0003__you,arg0).
-arc(r_0019_0004__go,z_0019_1007,arg1).
+arc(r_0019_0004__go,r_0019_1007,arg1).
 arc(r_0019_0008__time,r_0019_0007__less,attrib2).
 arc(r_0019_0010__have,r_0019_0003__you,arg0).
 arc(r_0019_0010__have,r_0019_0008__time,arg1).
@@ -223,11 +223,11 @@ arc(r_0019_0012__avoid,r_0019_0003__you,arg0).
 arc(r_0019_0012__avoid,r_0019_0015__or,arg1).
 arc(r_0019_0015__or,r_0019_0014__hazard,conj1).
 arc(r_0019_0015__or,r_0019_0016__collision,conj2).
+arc(r_0019_1007,r_0019_0002__faster,attrib2).
 arc(r_0019_1012__cnt,r_0019_0010__have,scope).
 arc(r_0019_1012__cnt,r_0019_0012__avoid,restriction).
-arc(z_0019_1007,r_0019_0002__faster,attrib2).
-arc(z_0019_1019,r_0019_0008__time,z_0019_1008).
-arc(z_0019_1019,z_0019_1007,z_0019_1003).
+arc(r_0019_1019,r_0019_0008__time,r_0019_1008).
+arc(r_0019_1019,r_0019_1007,r_0019_1003).
 
 </pre>
 <br>
@@ -237,7 +237,7 @@ fof(id__19_A_driver_handbook,axiom,
       ( isA(EVENTX6,r_0019_0004__go)
       &amp; arg1(EVENTX6) = ENTITYX4
       &amp; arg0(EVENTX6) = r_0019_0003__you
-      &amp; isA(ENTITYX4,z_0019_1007)
+      &amp; isA(ENTITYX4,r_0019_1007)
       &amp; attrib2(ENTITYX4) = ATTRIBX5
       &amp; isA(CONNX13,r_0019_1012__cnt)
       &amp; scope(CONNX13) = EVENTX18
@@ -258,9 +258,9 @@ fof(id__19_A_driver_handbook,axiom,
       &amp; isA(ENTITYX16,r_0019_0016__collision)
       &amp; isA(ATTRIBX5,r_0019_0002__faster)
       &amp; isA(ATTRIBX10,r_0019_0007__less)
-      &amp; isA(EVENTX20,z_0019_1019)
-      &amp; z_0019_1003(EVENTX20) = ENTITYX4
-      &amp; z_0019_1008(EVENTX20) = ENTITYX9 ) ).
+      &amp; isA(EVENTX20,r_0019_1019)
+      &amp; r_0019_1003(EVENTX20) = ENTITYX4
+      &amp; r_0019_1008(EVENTX20) = ENTITYX9 ) ).
 
 
 </pre>

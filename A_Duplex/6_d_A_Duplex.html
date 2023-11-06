@@ -274,11 +274,12 @@ But how many attempts did it take to achieve the flawless examples ?
 arc(r_0013_0002__were,r_0013_0003__played,catenative).
 arc(r_0013_0003__played,r_0013_0001__We,arg2).
 arc(r_0013_0003__played,r_0013_0004__two__r_0013_0005__recordings,arg1).
-arc(r_0013_0007__quantificational__r_0013_0007__both,r_0013_0010__worked,scope).
-arc(r_0013_0007__quantificational__r_0013_0007__both,z_0013_1006,restriction).
+arc(r_0013_0007__quantificational__both,r_0013_0010__worked,scope).
+arc(r_0013_0007__quantificational__both,r_0013_1006,restriction).
 arc(r_0013_0010__worked,r_0013_0012__well,mnr3).
-arc(r_0013_0010__worked,z_0013_1006,arg0).
+arc(r_0013_0010__worked,r_0013_1006,arg0).
 arc(r_0013_0012__well,r_0013_0011__very,quality1).
+arc(r_0013_1006,r_0013_0004__two__r_0013_0005__recordings,r_0013_0008__of).
 arc(r_0013_1013__question,r_0014_0007__take,scope).
 arc(r_0014_0003__many,r_0014_0002__how,quality1).
 arc(r_0014_0004__attempts,r_0014_0003__many,attrib1).
@@ -286,9 +287,8 @@ arc(r_0014_0007__take,r_0014_0004__attempts,arg1).
 arc(r_0014_0007__take,r_0014_0009__achieve,arg0).
 arc(r_0014_0009__achieve,r_0014_0004__attempts,arg0).
 arc(r_0014_0009__achieve,r_0014_0012__examples,arg1).
-arc(r_0014_0012__examples,r_0013_0004__two__r_0013_0005__recordings,z_0013_1021).
+arc(r_0014_0012__examples,r_0013_0004__two__r_0013_0005__recordings,r_0013_1021).
 arc(r_0014_0012__examples,r_0014_0011__flawless,attrib3).
-arc(z_0013_1006,r_0013_0004__two__r_0013_0005__recordings,r_0013_0008__of).
 
 </pre>
 <br>
@@ -303,9 +303,9 @@ fof(id__13_A_Duplex__14_A_Duplex,axiom,
       &amp; isA(EVENTX24,r_0014_0009__achieve)
       &amp; arg0(EVENTX24) = ENTITYX14
       &amp; arg1(EVENTX24) = ENTITYX19
-      &amp; isA(QUANTX5,r_0013_0007__quantificational__r_0013_0007__both)
+      &amp; isA(QUANTX5,r_0013_0007__quantificational__both)
       &amp; restriction(QUANTX5) = ENTITYX4
-      &amp; isA(ENTITYX4,z_0013_1006)
+      &amp; isA(ENTITYX4,r_0013_1006)
       &amp; r_0013_0008__of(ENTITYX4) = RECORDINGSX3
       &amp; scope(QUANTX5) = EVENTX9
       &amp; isA(EVENTX9,r_0013_0010__worked)
@@ -315,7 +315,7 @@ fof(id__13_A_Duplex__14_A_Duplex,axiom,
       &amp; isA(ENTITYX14,r_0014_0004__attempts)
       &amp; attrib1(ENTITYX14) = ATTRIBX15
       &amp; isA(ENTITYX19,r_0014_0012__examples)
-      &amp; z_0013_1021(ENTITYX19) = RECORDINGSX22
+      &amp; r_0013_1021(ENTITYX19) = RECORDINGSX22
       &amp; attrib3(ENTITYX19) = ATTRIBX23
       &amp; RECORDINGSX22 = RECORDINGSX3
       &amp; isA(QUALITYX7,r_0013_0012__well)

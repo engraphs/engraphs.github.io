@@ -245,8 +245,10 @@ These systems permit programs to be written using meaningful names ( symbols ) r
 <br>
 <pre>
 arc(r_0036_0002__Programming__r_0036_0003__Systems,r_0036_0001__Symbolic,attrib1).
+arc(r_0036_1007,r_0036_0002__Programming__r_0036_0003__Systems,r_0036_1004).
 arc(r_0036_1016__mnr,r_0037_0007__written,scope).
 arc(r_0036_1016__mnr,r_0037_0008__using,restriction).
+arc(r_0036_1027,r_0037_0017__machine__r_0037_0018__language,arg1).
 arc(r_0037_0003__permit,r_0036_0002__Programming__r_0036_0003__Systems,arg0).
 arc(r_0037_0003__permit,r_0037_0004__programs,arg1).
 arc(r_0037_0003__permit,r_0037_0006__be,prd).
@@ -255,10 +257,8 @@ arc(r_0037_0008__using,r_0037_0010__names,arg1).
 arc(r_0037_0008__using,r_0037_0014__rather,mod3).
 arc(r_0037_0010__names,r_0037_0009__meaningful,attrib1).
 arc(r_0037_0010__names,r_0037_0012__symbols,prn4).
-arc(r_0037_0014__rather,z_0036_1027,r_0037_0015__than).
+arc(r_0037_0014__rather,r_0036_1027,r_0037_0015__than).
 arc(r_0037_0017__machine__r_0037_0018__language,r_0037_0016__actual,attrib1).
-arc(z_0036_1007,r_0036_0002__Programming__r_0036_0003__Systems,z_0036_1004).
-arc(z_0036_1027,r_0037_0017__machine__r_0037_0018__language,arg1).
 
 </pre>
 <br>
@@ -277,7 +277,7 @@ fof(id__36_A_IBM_1401__37_A_IBM_1401,axiom,
       &amp; arg1(EVENTX29) = ENTITYX18
       &amp; mod3(EVENTX29) = QUALITYX21
       &amp; EVENTX22 = EVENTX28
-      &amp; isA(EVENTX28,z_0036_1027)
+      &amp; isA(EVENTX28,r_0036_1027)
       &amp; arg1(EVENTX28) = ENTITYX25
       &amp; isA(SYMBOLIC_SYSTEMSX5,r_0036_0002__Programming__r_0036_0003__Systems)
       &amp; attrib1(SYMBOLIC_SYSTEMSX5) = ATTRIBX6
@@ -294,8 +294,8 @@ fof(id__36_A_IBM_1401__37_A_IBM_1401,axiom,
       &amp; isA(ATTRIBX26,r_0037_0016__actual)
       &amp; isA(QUALITYX21,r_0037_0014__rather)
       &amp; r_0037_0015__than(QUALITYX21) = EVENTX22
-      &amp; isA(EVENTX8,z_0036_1007)
-      &amp; z_0036_1004(EVENTX8) = SYMBOLIC_SYSTEMSX5
+      &amp; isA(EVENTX8,r_0036_1007)
+      &amp; r_0036_1004(EVENTX8) = SYMBOLIC_SYSTEMSX5
       &amp; isA(EVENTX32,r_0037_0003__permit)
       &amp; arg0(EVENTX32) = SYMBOLIC_SYSTEMSX9
       &amp; arg1(EVENTX32) = ENTITYX10

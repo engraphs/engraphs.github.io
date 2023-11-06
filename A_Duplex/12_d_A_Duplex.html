@@ -640,6 +640,7 @@ arc(r_0023_0034__consent__r_0023_0035__law,r_0023_0033__two_party,attrib2).
 arc(r_0023_0034__consent__r_0023_0035__law,r_0023_0037__monitoring,r_0023_0036__for).
 arc(r_0023_0037__monitoring,r_0023_0038__phone__r_0023_0039__calls,arg1).
 arc(r_0023_1042__utterance,r_0024_0018__n_apos_t,part1).
+arc(r_0023_1055,r_0024_0026__words,arg1).
 arc(r_0024_0006__recipient,r_0023_0021__call,r_0024_0007__of).
 arc(r_0024_0010__has,r_0024_0003__point,r_0024_0001__At_tmp).
 arc(r_0024_0010__has,r_0024_0006__recipient,arg0).
@@ -651,14 +652,13 @@ arc(r_0024_0019__want,r_0024_0006__recipient,arg0).
 arc(r_0024_0019__want,r_0024_0021__be,arg1).
 arc(r_0024_0021__be,r_0024_0022__recorded,catenative).
 arc(r_0024_0022__recorded,r_0024_0006__recipient,arg1).
+arc(r_0024_0025__or,r_0023_1055,conj2).
 arc(r_0024_0025__or,r_0024_0014__say,conj1).
-arc(r_0024_0025__or,z_0023_1055,conj2).
 arc(r_0024_0026__words,r_0024_0029__effect,r_0024_0027__to).
 arc(r_0024_0031__and,r_0024_0010__has,conj1).
 arc(r_0024_0031__and,r_0024_0034__will,conj2).
 arc(r_0024_0034__will,r_0024_0035__hang__r_0024_0036__up,scope).
 arc(r_0024_0035__hang__r_0024_0036__up,r_0023_0005__Duplex,arg0).
-arc(z_0023_1055,r_0024_0026__words,arg1).
 
 </pre>
 <br>
@@ -699,7 +699,7 @@ fof(id__23_A_Duplex__24_A_Duplex,axiom,
       &amp; isA(EVENTX52,r_0024_0014__say)
       &amp; arg1(EVENTX52) = STATEX40
       &amp; conj2(CONJX57) = EVENTX56
-      &amp; isA(EVENTX56,z_0023_1055)
+      &amp; isA(EVENTX56,r_0023_1055)
       &amp; arg1(EVENTX56) = ENTITYX53
       &amp; STATEX40 = CONJX51
       &amp; isA(CONJX51,r_0023_1042__utterance)

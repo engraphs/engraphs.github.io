@@ -552,17 +552,17 @@ arc(r_0180_0009__as_cnt,r_0180_0020__because_cnt,scope).
 arc(r_0180_0011__ask,r_0180_0001__I,arg0).
 arc(r_0180_0011__ask,r_0180_0012__those,arg1).
 arc(r_0180_0012__those,r_0180_0015__sides,r_0180_0013__on).
-arc(r_0180_0014__quantificational__r_0180_0014__both,r_0180_0012__those,scope).
-arc(r_0180_0014__quantificational__r_0180_0014__both,r_0180_0015__sides,restriction).
+arc(r_0180_0014__quantificational__both,r_0180_0012__those,scope).
+arc(r_0180_0014__quantificational__both,r_0180_0015__sides,restriction).
 arc(r_0180_0015__sides,r_0180_0018__House,r_0180_0016__of).
 arc(r_0180_0020__because_cnt,r_0180_0002__ask,scope).
 arc(r_0180_0020__because_cnt,r_0180_0023__concerns,restriction).
 arc(r_0180_0023__concerns,r_0180_0022__question,arg0).
 arc(r_0180_0023__concerns,r_0180_0024__not__r_0180_0025__only_r_0180_0029__but,arg1).
 arc(r_0180_0024__not__r_0180_0025__only_r_0180_0029__but,r_0180_0026__one_r_0180_0027__party,conj1).
-arc(r_0180_0024__not__r_0180_0025__only_r_0180_0029__but,z_0180_1012,conj2).
-arc(r_0180_0030__quantificational__r_0180_0030__all,r_0180_0024__not__r_0180_0025__only_r_0180_0029__but,scope).
-arc(r_0180_0030__quantificational__r_0180_0030__all,z_0180_1012,restriction).
+arc(r_0180_0024__not__r_0180_0025__only_r_0180_0029__but,r_0180_1012,conj2).
+arc(r_0180_0030__quantificational__all,r_0180_0024__not__r_0180_0025__only_r_0180_0029__but,scope).
+arc(r_0180_0030__quantificational__all,r_0180_1012,restriction).
 arc(r_0180_0036__want,r_0180_0035__we,arg0).
 arc(r_0180_0036__want,r_0180_0038__have,arg1).
 arc(r_0180_0038__have,r_0180_0035__we,arg0).
@@ -575,16 +575,16 @@ arc(r_0180_0046__when_tmp,r_0180_0056__and,scope).
 arc(r_0180_0047__confronted,r_0180_0044__animal,arg0).
 arc(r_0180_0047__confronted,r_0180_0049__danger,r_0180_0048__with_clr).
 arc(r_0180_0050__rolls,r_0180_0044__animal,arg0).
-arc(r_0180_0050__rolls,z_0180_1029,clr_dir2).
+arc(r_0180_0050__rolls,r_0180_1029,clr_dir2).
 arc(r_0180_0055__ball,r_0180_0054__little,attrib2).
 arc(r_0180_0056__and,r_0180_0050__rolls,conj1).
 arc(r_0180_0056__and,r_0180_0057__puts__r_0180_0060__up,conj2).
 arc(r_0180_0057__puts__r_0180_0060__up,r_0180_0044__animal,arg0).
 arc(r_0180_0057__puts__r_0180_0060__up,r_0180_0059__spikes,arg1).
 arc(r_0180_0059__spikes,r_0180_0044__animal,genv).
+arc(r_0180_1012,r_0180_0032__us,r_0180_0031__of).
 arc(r_0180_1016__question,r_0180_0036__want,scope).
-arc(z_0180_1012,r_0180_0032__us,r_0180_0031__of).
-arc(z_0180_1029,r_0180_0055__ball,r_0180_0052__into).
+arc(r_0180_1029,r_0180_0055__ball,r_0180_0052__into).
 
 </pre>
 <br>
@@ -630,9 +630,9 @@ fof(id__180_A_Hedgehog,axiom,
       &amp; genv(ENTITYX31) = ANIMALX32
       &amp; ANIMALX32 = ANIMALX22
       &amp; isA(ENTITYX7,r_0180_0022__question)
-      &amp; isA(QUANTX11,r_0180_0030__quantificational__r_0180_0030__all)
+      &amp; isA(QUANTX11,r_0180_0030__quantificational__all)
       &amp; restriction(QUANTX11) = ENTITYX10
-      &amp; isA(ENTITYX10,z_0180_1012)
+      &amp; isA(ENTITYX10,r_0180_1012)
       &amp; r_0180_0031__of(ENTITYX10) = r_0180_0032__us
       &amp; scope(QUANTX11) = ENTITYX8
       &amp; isA(ENTITYX8,r_0180_0024__not__r_0180_0025__only_r_0180_0029__but)
@@ -642,7 +642,7 @@ fof(id__180_A_Hedgehog,axiom,
       &amp; SPEAKERX2 = r_0180_0001__I
       &amp; isA(r_0180_0003__you,r_0180_0003__you)
       &amp; prn3(r_0180_0003__you) = r_0180_0005__Madam__r_0180_0006__Deputy_r_0180_0007__Speaker
-      &amp; isA(QUANTX4,r_0180_0014__quantificational__r_0180_0014__both)
+      &amp; isA(QUANTX4,r_0180_0014__quantificational__both)
       &amp; restriction(QUANTX4) = ENTITYX3
       &amp; isA(ENTITYX3,r_0180_0015__sides)
       &amp; r_0180_0016__of(ENTITYX3) = r_0180_0018__House
@@ -652,7 +652,7 @@ fof(id__180_A_Hedgehog,axiom,
       &amp; isA(r_0180_0018__House,r_0180_0018__House)
       &amp; isA(ATTRIBX21,r_0180_0041__national)
       &amp; isA(ATTRIBX28,r_0180_0054__little)
-      &amp; isA(QUALITYX26,z_0180_1029)
+      &amp; isA(QUALITYX26,r_0180_1029)
       &amp; r_0180_0052__into(QUALITYX26) = ENTITYX27
       &amp; isA(CONNX1,r_0180_0009__as_cnt)
       &amp; scope(CONNX1) = CONNX6

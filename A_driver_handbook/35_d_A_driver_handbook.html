@@ -988,7 +988,7 @@ If the school bus is on the other side of a divided or multilane highway ( two o
 <br>
 <pre>
 arc(r_0042_0001__When_tmp,r_0042_0004__flashes,restriction).
-arc(r_0042_0001__When_tmp,r_0042_0024__quantificational__r_0042_0024__either,scope).
+arc(r_0042_0001__When_tmp,r_0042_0024__quantificational__either,scope).
 arc(r_0042_0004__flashes,r_0042_0003__bus,arg0).
 arc(r_0042_0004__flashes,r_0042_0006__lights,arg1).
 arc(r_0042_0006__lights,r_0042_0005__red,attrib1).
@@ -1001,8 +1001,8 @@ arc(r_0042_0013__and,r_0042_0017__bus,r_0042_0015__of).
 arc(r_0042_0021__must,r_0042_0022__stop,scope).
 arc(r_0042_0022__stop,r_0042_0020__you,arg0).
 arc(r_0042_0022__stop,r_0042_0025__direction,r_0042_0023__from_dir).
-arc(r_0042_0024__quantificational__r_0042_0024__either,r_0042_0025__direction,restriction).
-arc(r_0042_0024__quantificational__r_0042_0024__either,r_0042_0026__until_tmp,scope).
+arc(r_0042_0024__quantificational__either,r_0042_0025__direction,restriction).
+arc(r_0042_0024__quantificational__either,r_0042_0026__until_tmp,scope).
 arc(r_0042_0026__until_tmp,r_0042_0021__must,scope).
 arc(r_0042_0026__until_tmp,r_0042_0034__and,restriction).
 arc(r_0042_0029__are,r_0042_0028__children,arg0).
@@ -1013,6 +1013,7 @@ arc(r_0042_0034__and,r_0042_0037__stop,conj2).
 arc(r_0042_0037__stop,r_0042_0006__lights,arg0).
 arc(r_0042_0037__stop,r_0042_0038__flashing,arg1).
 arc(r_0042_0038__flashing,r_0042_0006__lights,arg0).
+arc(r_0042_1086,r_0045_0019__more,attrib1).
 arc(r_0043_0003__requires,r_0043_0002__law,arg0).
 arc(r_0043_0003__requires,r_0043_0007__as_long_as_tmp,arg1).
 arc(r_0043_0003__requires,r_0043_0014__CVC__r_0043_0015__22454,prn5).
@@ -1020,7 +1021,7 @@ arc(r_0043_0005__remain,r_0042_0020__you,arg0).
 arc(r_0043_0005__remain,r_0043_0006__stopped,prd2).
 arc(r_0043_0007__as_long_as_tmp,r_0043_0005__remain,scope).
 arc(r_0043_0007__as_long_as_tmp,r_0043_0011__are,restriction).
-arc(r_0043_0010__lights,r_0042_0006__lights,z_0042_1038).
+arc(r_0043_0010__lights,r_0042_0006__lights,r_0042_1038).
 arc(r_0043_0010__lights,r_0043_0009__red,attrib3).
 arc(r_0043_0011__are,r_0043_0012__flashing,catenative).
 arc(r_0043_0012__flashing,r_0043_0010__lights,arg0).
@@ -1048,21 +1049,20 @@ arc(r_0045_0005__is,r_0042_0003__bus,arg0).
 arc(r_0045_0005__is,r_0045_0009__side,r_0045_0006__on_prd2).
 arc(r_0045_0009__side,r_0045_0008__other,attrib2).
 arc(r_0045_0009__side,r_0045_0015__highway,r_0045_0010__of).
+arc(r_0045_0013__or,r_0042_1079,conj1).
 arc(r_0045_0013__or,r_0045_0014__multilane,conj2).
-arc(r_0045_0013__or,z_0042_1079,conj1).
 arc(r_0045_0015__highway,r_0045_0013__or,attrib2).
 arc(r_0045_0015__highway,r_0045_0020__lanes,prn5).
+arc(r_0045_0018__or,r_0042_1086,conj2).
 arc(r_0045_0018__or,r_0045_0017__two,conj1).
-arc(r_0045_0018__or,z_0042_1086,conj2).
 arc(r_0045_0020__lanes,r_0045_0018__or,nlyr1).
 arc(r_0045_0020__lanes,r_0045_0023__direction,r_0045_0021__in).
-arc(r_0045_0022__quantificational__r_0045_0022__each,r_0045_0020__lanes,scope).
-arc(r_0045_0022__quantificational__r_0045_0022__each,r_0045_0023__direction,restriction).
+arc(r_0045_0022__quantificational__each,r_0045_0020__lanes,scope).
+arc(r_0045_0022__quantificational__each,r_0045_0023__direction,restriction).
 arc(r_0045_0028__not,r_0045_0029__need,scope).
 arc(r_0045_0029__need,r_0042_0020__you,arg0).
 arc(r_0045_0029__need,r_0045_0031__stop,arg1).
 arc(r_0045_0031__stop,r_0042_0020__you,arg0).
-arc(z_0042_1086,r_0045_0019__more,attrib1).
 
 </pre>
 <br>
@@ -1119,7 +1119,7 @@ fof(id__42_A_driver_handbook__43_A_driver_handbook__44_A_driver_handbook__45_A_d
       &amp; isA(ENTITYX31,r_0043_0002__law)
       &amp; HEARERX33 = r_0042_0020__you
       &amp; isA(ENTITYX36,r_0043_0010__lights)
-      &amp; z_0042_1038(ENTITYX36) = RED_LIGHTSX39
+      &amp; r_0042_1038(ENTITYX36) = RED_LIGHTSX39
       &amp; attrib3(ENTITYX36) = ATTRIBX40
       &amp; RED_LIGHTSX39 = RED_LIGHTSX3
       &amp; isA(ENTITYX45,r_0043_0014__CVC__r_0043_0015__22454)
@@ -1138,7 +1138,7 @@ fof(id__42_A_driver_handbook__43_A_driver_handbook__44_A_driver_handbook__45_A_d
       &amp; isA(ENTITYX76,r_0045_0015__highway)
       &amp; attrib2(ENTITYX76) = ATTRIBX77
       &amp; prn5(ENTITYX76) = ENTITYX81
-      &amp; isA(QUANTX88,r_0045_0022__quantificational__r_0045_0022__each)
+      &amp; isA(QUANTX88,r_0045_0022__quantificational__each)
       &amp; restriction(QUANTX88) = ENTITYX87
       &amp; isA(ENTITYX87,r_0045_0023__direction)
       &amp; scope(QUANTX88) = ENTITYX81
@@ -1149,7 +1149,7 @@ fof(id__42_A_driver_handbook__43_A_driver_handbook__44_A_driver_handbook__45_A_d
       &amp; conj1(ENTITYX82) = ENTITYX83
       &amp; conj2(ENTITYX82) = ENTITYX84
       &amp; isA(ENTITYX83,r_0045_0017__two)
-      &amp; isA(ENTITYX84,z_0042_1086)
+      &amp; isA(ENTITYX84,r_0042_1086)
       &amp; attrib1(ENTITYX84) = ATTRIBX85
       &amp; HEARERX90 = r_0042_0020__you
       &amp; isA(ATTRIBX4,r_0042_0005__red)
@@ -1161,7 +1161,7 @@ fof(id__42_A_driver_handbook__43_A_driver_handbook__44_A_driver_handbook__45_A_d
       &amp; isA(ATTRIBX77,r_0045_0013__or)
       &amp; conj1(ATTRIBX77) = ATTRIBX78
       &amp; conj2(ATTRIBX77) = ATTRIBX80
-      &amp; isA(ATTRIBX78,z_0042_1079)
+      &amp; isA(ATTRIBX78,r_0042_1079)
       &amp; isA(ATTRIBX80,r_0045_0014__multilane)
       &amp; isA(ATTRIBX85,r_0045_0019__more)
       &amp; isA(QUALITYX21,r_0042_0030__safely)
@@ -1173,7 +1173,7 @@ fof(id__42_A_driver_handbook__43_A_driver_handbook__44_A_driver_handbook__45_A_d
       &amp; arg0(EVENTX14) = SCHOOL_BUSX2
       &amp; arg1(EVENTX14) = RED_LIGHTSX3
       &amp; scope(CONNX1) = QUANTX16
-      &amp; isA(QUANTX16,r_0042_0024__quantificational__r_0042_0024__either)
+      &amp; isA(QUANTX16,r_0042_0024__quantificational__either)
       &amp; restriction(QUANTX16) = ENTITYX15
       &amp; isA(ENTITYX15,r_0042_0025__direction)
       &amp; scope(QUANTX16) = CONNX17

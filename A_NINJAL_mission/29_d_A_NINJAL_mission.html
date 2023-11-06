@@ -648,16 +648,16 @@ It is more than just a tool for communication ; it is part of our biological mak
 <pre>
 arc(r_0030_0003__is,r_0030_0002__series,arg0).
 arc(r_0030_0003__is,r_0030_0006__undertaking,prd2).
-arc(r_0030_0003__is,r_0030_0010__quantificational__r_0030_0010__no,prn5).
+arc(r_0030_0003__is,r_0030_0010__quantificational__no,prn5).
 arc(r_0030_0006__undertaking,r_0030_0005__unprecedented,attrib2).
 arc(r_0030_0009__is,r_0030_0013__treatment,arg0).
-arc(r_0030_0010__quantificational__r_0030_0010__no,r_0030_0009__is,scope).
-arc(r_0030_0010__quantificational__r_0030_0010__no,r_0030_0015__quantificational__r_0030_0015__any,restriction).
+arc(r_0030_0010__quantificational__no,r_0030_0009__is,scope).
+arc(r_0030_0010__quantificational__no,r_0030_0015__quantificational__any,restriction).
 arc(r_0030_0012__comprehensive,r_0030_0011__comparably,quality1).
 arc(r_0030_0013__treatment,r_0030_0012__comprehensive,attrib2).
 arc(r_0030_0013__treatment,r_0030_0017__language,r_0030_0014__of).
-arc(r_0030_0015__quantificational__r_0030_0015__any,r_0030_0013__treatment,scope).
-arc(r_0030_0015__quantificational__r_0030_0015__any,r_0030_0017__language,restriction).
+arc(r_0030_0015__quantificational__any,r_0030_0013__treatment,scope).
+arc(r_0030_0015__quantificational__any,r_0030_0017__language,restriction).
 arc(r_0030_0017__language,r_0030_0016__other,attrib2).
 arc(r_0031_0002__will,r_0031_0003__introduce,scope).
 arc(r_0031_0003__introduce,r_0030_0002__series,arg0).
@@ -689,10 +689,10 @@ arc(r_0033_0013__part,r_0033_0017__make_up,r_0033_0014__of).
 arc(r_0033_0013__part,r_0033_0019__part,prn4).
 arc(r_0033_0016__biological,r_0033_0015__our,genv).
 arc(r_0033_0017__make_up,r_0033_0016__biological,attrib1).
-arc(r_0033_0019__part,z_0030_1052,r_0033_0020__of).
+arc(r_0033_0019__part,r_0030_1052,r_0033_0020__of).
+arc(r_0033_0022__makes,r_0030_1052,arg0).
 arc(r_0033_0022__makes,r_0033_0015__our,arg1).
 arc(r_0033_0022__makes,r_0033_0024__human,prd).
-arc(r_0033_0022__makes,z_0030_1052,arg0).
 
 </pre>
 <br>
@@ -700,9 +700,9 @@ arc(r_0033_0022__makes,z_0030_1052,arg0).
 fof(id__30_A_NINJAL_mission__31_A_NINJAL_mission__32_A_NINJAL_mission__33_A_NINJAL_mission,axiom,
     ? [EVENTX4,CATENATIVEX20,CATENATIVEX21,EVENTX42,SERIESX14,LANGUAGEX23,LANGUAGEX31,LANGUAGEX37,LANGUAGEX43,PEOPLEX49,EVENTX54,EVENTX53,EVENTX51,EVENTX36,OPERATORX29,EVENTX30,EVENTX26,EVENTX25,EVENTX24,EVENTX13,QUANTX6,EVENTX12,QUANTX10,ENTITYX44,ENTITYX45,ENTITYX47,ENTITYX48,ENTITYX39,ENTITYX41,ENTITYX32,ENTITYX33,ENTITYX15,ENTITYX27,LANGUAGEX16,ENTITYX18,SERIESX1,ENTITYX2,ENTITYX5,ENTITYX9,ATTRIBX38,ATTRIBX50,ATTRIBX46,ATTRIBX34,ATTRIBX28,ATTRIBX19,ATTRIBX17,ATTRIBX7,ATTRIBX11,ATTRIBX3,QUALITYX40,QUALITYX35,QUALITYX8] :
       ( EVENTX4 = QUANTX6
-      &amp; isA(QUANTX6,r_0030_0010__quantificational__r_0030_0010__no)
+      &amp; isA(QUANTX6,r_0030_0010__quantificational__no)
       &amp; restriction(QUANTX6) = QUANTX10
-      &amp; isA(QUANTX10,r_0030_0015__quantificational__r_0030_0015__any)
+      &amp; isA(QUANTX10,r_0030_0015__quantificational__any)
       &amp; restriction(QUANTX10) = ENTITYX9
       &amp; isA(ENTITYX9,r_0030_0017__language)
       &amp; attrib2(ENTITYX9) = ATTRIBX11
@@ -763,7 +763,7 @@ fof(id__30_A_NINJAL_mission__31_A_NINJAL_mission__32_A_NINJAL_mission__33_A_NINJ
       &amp; arg0(EVENTX51) = ENTITYX48
       &amp; arg1(EVENTX51) = PEOPLEX49
       &amp; prd(EVENTX51) = ATTRIBX50
-      &amp; isA(ENTITYX48,z_0030_1052)
+      &amp; isA(ENTITYX48,r_0030_1052)
       &amp; PEOPLEX49 = r_0033_0015__our
       &amp; isA(ATTRIBX3,r_0030_0005__unprecedented)
       &amp; isA(ATTRIBX7,r_0030_0012__comprehensive)

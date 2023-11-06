@@ -398,19 +398,19 @@ arc(r_0018_0017__are,r_0018_0025__UK,r_0018_0023__across_loc).
 arc(r_0018_0018__more,r_0018_0020__100,r_0018_0019__than).
 arc(r_0018_0021__priority__r_0018_0022__species,r_0018_0018__more,attrib1).
 arc(r_0018_0030__reside,r_0018_0033__constituency,r_0018_0031__within_loc).
-arc(r_0018_0030__reside,z_0018_1018,arg0).
+arc(r_0018_0030__reside,r_0018_1018,arg0).
 arc(r_0018_0033__constituency,r_0018_0001__I,genv).
+arc(r_0018_1018,r_0018_0021__priority__r_0018_0022__species,r_0018_0028__of).
+arc(r_0018_1018,r_0018_0027__many,attrib1).
 arc(r_0018_1025__question,r_0019_0003__agree,scope).
 arc(r_0019_0003__agree,r_0018_0007__hon__r_0018_0008__Gentleman,arg0).
 arc(r_0019_0003__agree,r_0019_0005__need,arg1).
 arc(r_0019_0005__need,r_0018_0013__us,arg0).
 arc(r_0019_0005__need,r_0019_0007__strategy,arg1).
 arc(r_0019_0007__strategy,r_0019_0011__species,r_0019_0008__for).
-arc(r_0019_0009__quantificational__r_0019_0009__all,r_0019_0007__strategy,scope).
-arc(r_0019_0009__quantificational__r_0019_0009__all,r_0019_0011__species,restriction).
+arc(r_0019_0009__quantificational__all,r_0019_0007__strategy,scope).
+arc(r_0019_0009__quantificational__all,r_0019_0011__species,restriction).
 arc(r_0019_0011__species,r_0019_0015__hedgehog,r_0019_0013__including).
-arc(z_0018_1018,r_0018_0021__priority__r_0018_0022__species,r_0018_0028__of).
-arc(z_0018_1018,r_0018_0027__many,attrib1).
 
 </pre>
 <br>
@@ -437,7 +437,7 @@ fof(id__18_A_Hedgehog,axiom,
       &amp; isA(ENTITYX13,r_0018_0021__priority__r_0018_0022__species)
       &amp; attrib1(ENTITYX13) = ATTRIBX14
       &amp; isA(ENTITYX15,r_0018_0020__100)
-      &amp; isA(ENTITYX16,z_0018_1018)
+      &amp; isA(ENTITYX16,r_0018_1018)
       &amp; attrib1(ENTITYX16) = ATTRIBX17
       &amp; r_0018_0028__of(ENTITYX16) = ENTITYX13
       &amp; isA(ENTITYX19,r_0018_0033__constituency)
@@ -445,7 +445,7 @@ fof(id__18_A_Hedgehog,axiom,
       &amp; SPEAKERX20 = r_0018_0001__I
       &amp; COLVILEX26 = COLVILEX7
       &amp; SPEAKER_AND_HEARERX28 = r_0018_0013__us
-      &amp; isA(QUANTX31,r_0019_0009__quantificational__r_0019_0009__all)
+      &amp; isA(QUANTX31,r_0019_0009__quantificational__all)
       &amp; restriction(QUANTX31) = ENTITYX30
       &amp; isA(ENTITYX30,r_0019_0011__species)
       &amp; r_0019_0013__including(ENTITYX30) = ENTITYX32

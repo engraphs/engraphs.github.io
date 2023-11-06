@@ -515,7 +515,7 @@ New IBM Services include : Programmed Applications Library Pre-tested computer p
 <pre>
 arc(r_0076_0002__IBM__r_0076_0003__Services,r_0076_0001__New,attrib1).
 arc(r_0076_0004__include,r_0076_0002__IBM__r_0076_0003__Services,arg0).
-arc(r_0076_0004__include,z_0076_1042,arg1).
+arc(r_0076_0004__include,r_0076_1042,arg1).
 arc(r_0076_0006__Programmed,r_0076_0007__Applications__r_0076_0008__Library,arg1).
 arc(r_0076_0007__Applications__r_0076_0008__Library,r_0076_0010__computer_r_0076_0011__programs,prn4).
 arc(r_0076_0010__computer__r_0076_0011__programs,r_0076_0009__Pre_tested,attrib1).
@@ -536,8 +536,8 @@ arc(r_0076_0034__up_to_date,r_0076_0038__and,r_0076_0035__on).
 arc(r_0076_0038__and,r_0076_0037__availability,conj1).
 arc(r_0076_0038__and,r_0076_0039__use,conj2).
 arc(r_0076_0038__and,r_0076_0043__programming__r_0076_0044__systems,r_0076_0040__of).
-arc(r_0076_0041__quantificational__r_0076_0041__all,r_0076_0038__and,scope).
-arc(r_0076_0041__quantificational__r_0076_0041__all,r_0076_0043__programming__r_0076_0044__systems,restriction).
+arc(r_0076_0041__quantificational__all,r_0076_0038__and,scope).
+arc(r_0076_0041__quantificational__all,r_0076_0043__programming__r_0076_0044__systems,restriction).
 arc(r_0076_0043__programming__r_0076_0044__systems,r_0076_0042__new,attrib2).
 arc(r_0076_0047__assist,r_0076_0028__Programming__r_0076_0029__Systems_r_0076_0030__Support,arg0).
 arc(r_0076_0047__assist,r_0076_0049__IBM__r_0076_0050__programming_r_0076_0051__staff,arg1).
@@ -548,8 +548,8 @@ arc(r_0076_0058__specification,r_0076_0061__programming__r_0076_0062__systems,r_
 arc(r_0076_0061__programming__r_0076_0062__systems,r_0076_0060__new,attrib1).
 arc(r_0076_1010__cnt,r_0076_0012__designed,scope).
 arc(r_0076_1010__cnt,r_0076_0014__handle,restriction).
-arc(z_0076_1042,r_0076_0007__Applications__r_0076_0008__Library,conj1).
-arc(z_0076_1042,r_0076_0028__Programming__r_0076_0029__Systems_r_0076_0030__Support,conj2).
+arc(r_0076_1042,r_0076_0007__Applications__r_0076_0008__Library,conj1).
+arc(r_0076_1042,r_0076_0028__Programming__r_0076_0029__Systems_r_0076_0030__Support,conj2).
 
 </pre>
 <br>
@@ -561,7 +561,7 @@ fof(id__76_A_IBM_1401,axiom,
       &amp; arg1(EVENTX40) = ENTITYX36
       &amp; isA(ENTITYX1,r_0076_0002__IBM__r_0076_0003__Services)
       &amp; attrib1(ENTITYX1) = ATTRIBX2
-      &amp; isA(ENTITYX3,z_0076_1042)
+      &amp; isA(ENTITYX3,r_0076_1042)
       &amp; conj1(ENTITYX3) = ENTITYX4
       &amp; conj2(ENTITYX3) = ENTITYX22
       &amp; isA(EVENTX6,r_0076_0006__Programmed)
@@ -598,7 +598,7 @@ fof(id__76_A_IBM_1401,axiom,
       &amp; r_0076_0052__in_clr(EVENTX41) = EVENTX33
       &amp; isA(ENTITYX22,r_0076_0028__Programming__r_0076_0029__Systems_r_0076_0030__Support)
       &amp; isA(ENTITYX23,r_0076_0033__customers)
-      &amp; isA(QUANTX27,r_0076_0041__quantificational__r_0076_0041__all)
+      &amp; isA(QUANTX27,r_0076_0041__quantificational__all)
       &amp; restriction(QUANTX27) = ENTITYX26
       &amp; isA(ENTITYX26,r_0076_0043__programming__r_0076_0044__systems)
       &amp; attrib2(ENTITYX26) = ATTRIBX28

@@ -508,10 +508,12 @@ You 'll know you 've mastered this skill when you can easily circle around an en
 <pre>
 arc(r_0024_0004__enemies,r_0024_0007__game,r_0024_0005__in).
 arc(r_0024_0008__launch,r_0024_0009__projectiles,arg1).
-arc(r_0024_0008__launch,z_0024_1005,arg0).
+arc(r_0024_0008__launch,r_0024_1005,arg0).
 arc(r_0024_0011__must,r_0024_0012__be,scope).
 arc(r_0024_0012__be,r_0024_0013__dodged,catenative).
 arc(r_0024_0013__dodged,r_0024_0009__projectiles,arg1).
+arc(r_0024_1005,r_0024_0001__Many,attrib1).
+arc(r_0024_1005,r_0024_0004__enemies,r_0024_0002__of).
 arc(r_0025_0001__Sidestepping,r_0024_0009__projectiles,arg1).
 arc(r_0025_0004__is,r_0025_0001__Sidestepping,arg0).
 arc(r_0025_0004__is,r_0025_0007__skill,prd2).
@@ -542,8 +544,6 @@ arc(r_0026_0023__keeping,r_0026_0025__weapon,arg1).
 arc(r_0026_0023__keeping,r_0026_0026__trained,prd).
 arc(r_0026_0025__weapon,r_0026_0001__You,genv).
 arc(r_0026_0026__trained,r_0026_0016__enemy,r_0026_0027__on_clr).
-arc(z_0024_1005,r_0024_0001__Many,attrib1).
-arc(z_0024_1005,r_0024_0004__enemies,r_0024_0002__of).
 
 </pre>
 <br>
@@ -568,7 +568,7 @@ fof(id__24_A_Freedoom__25_A_Freedoom__26_A_Freedoom,axiom,
       &amp; STATEX43 = EVENTX48
       &amp; isA(EVENTX48,r_0026_0026__trained)
       &amp; r_0026_0027__on_clr(EVENTX48) = ENEMYX47
-      &amp; isA(ENTITYX1,z_0024_1005)
+      &amp; isA(ENTITYX1,r_0024_1005)
       &amp; attrib1(ENTITYX1) = ATTRIBX2
       &amp; r_0024_0002__of(ENTITYX1) = ENTITYX3
       &amp; isA(ENTITYX3,r_0024_0004__enemies)

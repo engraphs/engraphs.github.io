@@ -982,13 +982,14 @@ arc(r_0018_0004__thing,r_0018_0003__important,attrib3).
 arc(r_0018_0004__thing,r_0018_0009__economy,r_0018_0005__for).
 arc(r_0018_0009__economy,r_0018_0007__country,genv).
 arc(r_0018_0010__is,r_0018_0004__thing,arg0).
-arc(r_0018_0010__is,r_0018_0012__quantificational__r_0018_0012__a_lot,prd2).
-arc(r_0018_0012__quantificational__r_0018_0012__a_lot,r_0018_0018__are,scope).
-arc(r_0018_0012__quantificational__r_0018_0012__a_lot,z_0018_1012,restriction).
+arc(r_0018_0010__is,r_0018_0012__quantificational__a_lot,prd2).
+arc(r_0018_0012__quantificational__a_lot,r_0018_0018__are,scope).
+arc(r_0018_0012__quantificational__a_lot,r_0018_1012,restriction).
 arc(r_0018_0016__coming,r_0018_0015__people,arg0).
 arc(r_0018_0016__coming,r_0018_0017__here,loc2).
 arc(r_0018_0018__are,r_0018_0019__young,prd2).
-arc(r_0018_0018__are,z_0018_1012,arg0).
+arc(r_0018_0018__are,r_0018_1012,arg0).
+arc(r_0018_1012,r_0018_0015__people,r_0018_0013__of).
 arc(r_0018_1027__question,r_0019_0022__is,scope).
 arc(r_0018_1068__cnt,r_0020_0036__and,scope).
 arc(r_0018_1068__cnt,r_0020_0043__help,restriction).
@@ -1008,18 +1009,18 @@ arc(r_0019_0022__is,r_0019_0019__how,mnr1).
 arc(r_0019_0022__is,r_0019_0023__aging,catenative).
 arc(r_0019_0023__aging,r_0019_0021__population,arg0).
 arc(r_0020_0002__have,r_0018_0007__country,arg0).
+arc(r_0020_0002__have,r_0018_1056,car4).
 arc(r_0020_0002__have,r_0020_0006__and,arg1).
-arc(r_0020_0002__have,z_0018_1056,car4).
 arc(r_0020_0006__and,r_0020_0003__good,attrib1).
 arc(r_0020_0006__and,r_0020_0004__health__r_0020_0005__care,conj1).
 arc(r_0020_0006__and,r_0020_0007__pensions,conj2).
+arc(r_0020_0009__means,r_0018_1056,arg0).
 arc(r_0020_0009__means,r_0020_0011__have,arg1).
-arc(r_0020_0009__means,z_0018_1056,arg0).
 arc(r_0020_0011__have,r_0018_0007__country,arg0).
 arc(r_0020_0011__have,r_0020_0016__people,arg1).
-arc(r_0020_0012__quantificational__r_0020_0012__a_lot,r_0020_0013__more,scope).
-arc(r_0020_0012__quantificational__r_0020_0012__a_lot,z_0018_1049,restriction).
-arc(r_0020_0013__more,z_0018_1049,modifier1).
+arc(r_0020_0012__quantificational__a_lot,r_0018_1049,restriction).
+arc(r_0020_0012__quantificational__a_lot,r_0020_0013__more,scope).
+arc(r_0020_0013__more,r_0018_1049,modifier1).
 arc(r_0020_0016__people,r_0020_0013__more,attrib1).
 arc(r_0020_0016__people,r_0020_0014__healthy,attrib2).
 arc(r_0020_0016__people,r_0020_0015__older,attrib3).
@@ -1053,7 +1054,6 @@ arc(r_0020_0047__keep,r_0020_0032__people,arg0).
 arc(r_0020_0047__keep,r_0020_0049__economy,arg1).
 arc(r_0020_0047__keep,r_0020_0050__going,prd).
 arc(r_0020_0049__economy,r_0018_0007__country,genv).
-arc(z_0018_1012,r_0018_0015__people,r_0018_0013__of).
 
 </pre>
 <br>
@@ -1061,9 +1061,9 @@ arc(z_0018_1012,r_0018_0015__people,r_0018_0013__of).
 fof(id__18_A_OPENCities__19_A_OPENCities__20_A_OPENCities,axiom,
     ? [STATEX6,STATEX25,CATENATIVEX31,STATEX43,CATENATIVEX66,STATEX70,STATEX75,COUNTRYX18,SPEAKERX24,COUNTRYX30,COUNTRYX37,COUNTRYX44,RETIREESX58,COUNTRYX61,SYSTEMX71,COUNTRYX74,CONJX89,CONJX88,OPERATORX62,EVENTX87,EVENTX86,CONNX69,EVENTX81,CONJX80,EVENTX79,EVENTX78,EVENTX72,CONJX85,EVENTX84,EVENTX82,EVENTX60,EVENTX57,EVENTX55,EVENTX54,EVENTX53,QUANTX48,CONNX16,EVENTX34,OPERATORX27,EVENTX33,EVENTX32,EVENTX23,OPERATORX21,EVENTX22,EVENTX15,QUANTX8,EVENTX14,EVENTX11,ENTITYX63,ENTITYX73,SYSTEMX83,ENTITYX38,ENTITYX42,RETIREESX45,ENTITYX47,ENTITYX40,ENTITYX41,ENTITYX29,ENTITYX17,ENTITYX19,ENTITYX1,ENTITYX7,ENTITYX9,ENTITYX4,COUNTRYX5,ATTRIBX64,ATTRIBX59,ATTRIBX46,ATTRIBX50,ATTRIBX51,ATTRIBX52,ATTRIBX39,ATTRIBX20,ATTRIBX13,ATTRIBX2,ATTRIBX3,QUALITYX67,QUALITYX65,QUALITYX28,QUALITYX10] :
       ( STATEX6 = QUANTX8
-      &amp; isA(QUANTX8,r_0018_0012__quantificational__r_0018_0012__a_lot)
+      &amp; isA(QUANTX8,r_0018_0012__quantificational__a_lot)
       &amp; restriction(QUANTX8) = ENTITYX7
-      &amp; isA(ENTITYX7,z_0018_1012)
+      &amp; isA(ENTITYX7,r_0018_1012)
       &amp; r_0018_0013__of(ENTITYX7) = ENTITYX9
       &amp; scope(QUANTX8) = EVENTX14
       &amp; isA(EVENTX14,r_0018_0018__are)
@@ -1146,7 +1146,7 @@ fof(id__18_A_OPENCities__19_A_OPENCities__20_A_OPENCities,axiom,
       &amp; isA(EVENTX55,r_0020_0009__means)
       &amp; arg0(EVENTX55) = ENTITYX42
       &amp; arg1(EVENTX55) = STATEX43
-      &amp; isA(ENTITYX42,z_0018_1056)
+      &amp; isA(ENTITYX42,r_0018_1056)
       &amp; ( COUNTRYX44 = COUNTRYX37
         | COUNTRYX44 = COUNTRYX5 )
       &amp; isA(EVENTX53,r_0020_0018__are)
@@ -1173,9 +1173,9 @@ fof(id__18_A_OPENCities__19_A_OPENCities__20_A_OPENCities,axiom,
       &amp; isA(ATTRIBX13,r_0018_0019__young)
       &amp; isA(ATTRIBX20,r_0019_0014__much)
       &amp; isA(ATTRIBX39,r_0020_0003__good)
-      &amp; isA(QUANTX48,r_0020_0012__quantificational__r_0020_0012__a_lot)
+      &amp; isA(QUANTX48,r_0020_0012__quantificational__a_lot)
       &amp; restriction(QUANTX48) = ENTITYX47
-      &amp; isA(ENTITYX47,z_0018_1049)
+      &amp; isA(ENTITYX47,r_0018_1049)
       &amp; scope(QUANTX48) = ATTRIBX46
       &amp; isA(ATTRIBX46,r_0020_0013__more)
       &amp; modifier1(ATTRIBX46) = ENTITYX47

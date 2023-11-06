@@ -751,12 +751,13 @@ arc(r_0082_0011__stimulated,r_0082_0009__statements,arg0).
 arc(r_0082_0011__stimulated,r_0082_0012__violence,arg1).
 arc(r_0082_0014__but,r_0082_0010__had,conj1).
 arc(r_0082_0014__but,r_0082_0016__had,conj2).
-arc(r_0082_0016__had,r_0082_0018__quantificational__r_0082_0018__nothing,catenative).
+arc(r_0082_0016__had,r_0082_0018__quantificational__nothing,catenative).
 arc(r_0082_0017__done,r_0082_0003__Mr__r_0082_0004__Kaunda,arg0).
-arc(r_0082_0017__done,z_0082_1020,arg1).
-arc(r_0082_0018__quantificational__r_0082_0018__nothing,r_0082_0017__done,scope).
-arc(r_0082_0018__quantificational__r_0082_0018__nothing,z_0082_1020,restriction).
+arc(r_0082_0017__done,r_0082_1020,arg1).
+arc(r_0082_0018__quantificational__nothing,r_0082_0017__done,scope).
+arc(r_0082_0018__quantificational__nothing,r_0082_1020,restriction).
 arc(r_0082_0020__stop,r_0082_0012__violence,arg1).
+arc(r_0082_1020,r_0082_0020__stop,emb2).
 arc(r_0083_0003__is,r_0083_0004__true,prd2).
 arc(r_0083_0003__is,r_0083_0006__made,arg0).
 arc(r_0083_0006__made,r_0082_0003__Mr__r_0082_0004__Kaunda,arg0).
@@ -774,8 +775,8 @@ arc(r_0083_0020__indulged,r_0083_0023__violence,r_0083_0021__in_clr).
 arc(r_0083_0023__violence,r_0083_0022__such,attrib1).
 arc(r_0084_0004__pointed__r_0084_0005__out,r_0084_0002__Sir_r_0084_0003__Roy,arg0).
 arc(r_0084_0004__pointed__r_0084_0005__out,r_0084_0012__said,arg1).
-arc(r_0084_0007__quantificational__r_0084_0007__a_few,r_0084_0008__months,restriction).
-arc(r_0084_0007__quantificational__r_0084_0007__a_few,r_0084_0009__ago,scope).
+arc(r_0084_0007__quantificational__a_few,r_0084_0008__months,restriction).
+arc(r_0084_0007__quantificational__a_few,r_0084_0009__ago,scope).
 arc(r_0084_0009__ago,r_0084_0008__months,modifier1).
 arc(r_0084_0012__said,r_0082_0003__Mr__r_0082_0004__Kaunda,arg0).
 arc(r_0084_0012__said,r_0084_0009__ago,tmp2).
@@ -787,15 +788,14 @@ arc(r_0084_0018__get,r_0084_0015__UNIP,arg0).
 arc(r_0084_0018__get,r_0084_0020__way,arg1).
 arc(r_0084_0020__way,r_0084_0015__UNIP,genv).
 arc(r_0084_0022__would,r_0084_0023__happen,scope).
-arc(r_0084_0023__happen,z_0082_1062,arg0).
+arc(r_0084_0023__happen,r_0082_1062,arg0).
 arc(r_0084_0024__would,r_0084_0025__make,scope).
+arc(r_0084_0025__make,r_0082_1062,arg0).
 arc(r_0084_0025__make,r_0084_0027__Mau__r_0084_0028__Mau,arg1).
 arc(r_0084_0025__make,r_0084_0032__seem,prd).
-arc(r_0084_0025__make,z_0082_1062,arg0).
 arc(r_0084_0027__Mau__r_0084_0028__Mau,r_0084_0030__Kenya,r_0084_0029__in).
 arc(r_0084_0032__seem,r_0084_0037__picnic,r_0084_0033__like_mnr).
 arc(r_0084_0037__picnic,r_0084_0035__child,genv).
-arc(z_0082_1020,r_0082_0020__stop,emb2).
 
 </pre>
 <br>
@@ -821,9 +821,9 @@ fof(id__82_A_lob_A02__83_A_lob_A02__84_A_lob_A02,axiom,
       &amp; arg0(EVENTX9) = ENTITYX5
       &amp; arg1(EVENTX9) = VIOLENCEX8
       &amp; CATENATIVEX12 = QUANTX14
-      &amp; isA(QUANTX14,r_0082_0018__quantificational__r_0082_0018__nothing)
+      &amp; isA(QUANTX14,r_0082_0018__quantificational__nothing)
       &amp; restriction(QUANTX14) = ENTITYX13
-      &amp; isA(ENTITYX13,z_0082_1020)
+      &amp; isA(ENTITYX13,r_0082_1020)
       &amp; emb2(ENTITYX13) = STATEX15
       &amp; scope(QUANTX14) = EVENTX21
       &amp; isA(EVENTX21,r_0082_0017__done)
@@ -895,7 +895,7 @@ fof(id__82_A_lob_A02__83_A_lob_A02__84_A_lob_A02,axiom,
       &amp; scope(OPERATORX60) = EVENTX61
       &amp; isA(EVENTX61,r_0084_0023__happen)
       &amp; arg0(EVENTX61) = ENTITYX59
-      &amp; isA(ENTITYX59,z_0082_1062)
+      &amp; isA(ENTITYX59,r_0082_1062)
       &amp; isA(ENTITYX66,r_0084_0037__picnic)
       &amp; genv(ENTITYX66) = ENTITYX67
       &amp; isA(ENTITYX67,r_0084_0035__child)
@@ -906,7 +906,7 @@ fof(id__82_A_lob_A02__83_A_lob_A02__84_A_lob_A02,axiom,
       &amp; r_0083_0013__from(ATTRIBX36) = r_0083_0014__Northern__r_0083_0015__Rhodesia
       &amp; isA(ATTRIBX42,r_0083_0022__such)
       &amp; isA(QUALITYX35,r_0083_0010__again)
-      &amp; isA(QUANTX51,r_0084_0007__quantificational__r_0084_0007__a_few)
+      &amp; isA(QUANTX51,r_0084_0007__quantificational__a_few)
       &amp; restriction(QUANTX51) = ENTITYX50
       &amp; isA(ENTITYX50,r_0084_0008__months)
       &amp; scope(QUANTX51) = QUALITYX49

@@ -1236,6 +1236,10 @@ arc(r_0120_0052__relationship,r_0120_0051__master_servant,attrib2).
 arc(r_0120_1003__utterance,r_0120_0006__was,part1).
 arc(r_0120_1009__cnt,r_0120_0009__thought,scope).
 arc(r_0120_1009__cnt,r_0120_0012__trying,restriction).
+arc(r_0120_1075,r_0122_0056__back,quality1).
+arc(r_0120_1075,r_0122_0059__Villa,r_0122_0057__at).
+arc(r_0120_1094,r_0123_0008__at_all,prd2).
+arc(r_0120_1112,r_0124_0003__was,prd2).
 arc(r_0121_0002__then,r_0121_0004__received,scope).
 arc(r_0121_0004__received,r_0120_0008__she,arg0).
 arc(r_0121_0004__received,r_0120_0015__her,arg0).
@@ -1265,8 +1269,8 @@ arc(r_0122_0034__had,r_0122_0035__explained,catenative).
 arc(r_0122_0035__explained,r_0120_0005__man,arg0).
 arc(r_0122_0035__explained,r_0122_0039__start,r_0122_0036__right__r_0122_0037__at_tmp).
 arc(r_0122_0035__explained,r_0122_0045__would,arg1).
-arc(r_0122_0042__Mis_apos__r_0122_0043__Beryl,r_0120_0008__she,z_0120_1065).
-arc(r_0122_0042__Mis_apos__r_0122_0043__Beryl,r_0120_0015__her,z_0120_1065).
+arc(r_0122_0042__Mis_apos__r_0122_0043__Beryl,r_0120_0008__she,r_0120_1065).
+arc(r_0122_0042__Mis_apos__r_0122_0043__Beryl,r_0120_0015__her,r_0120_1065).
 arc(r_0122_0045__would,r_0122_0046__be,scope).
 arc(r_0122_0046__be,r_0122_0042__Mis_apos__r_0122_0043__Beryl,arg0).
 arc(r_0122_0046__be,r_0122_0051__sad,prd2).
@@ -1274,8 +1278,8 @@ arc(r_0122_0051__sad,r_0122_0048__plenty,quality1).
 arc(r_0122_0051__sad,r_0122_0050__plenty,quality3).
 arc(r_0122_0051__sad,r_0122_0053__not,emb6).
 arc(r_0122_0053__not,r_0122_0055__be,scope).
+arc(r_0122_0055__be,r_0120_1075,prd2).
 arc(r_0122_0055__be,r_0122_0061__time,r_0122_0060__in_tmp).
-arc(r_0122_0055__be,z_0120_1075,prd2).
 arc(r_0123_0003__would,r_0123_0004__n_apos_t,scope).
 arc(r_0123_0004__n_apos_t,r_0123_0005__be,scope).
 arc(r_0123_0005__be,r_0122_0055__be,arg0).
@@ -1296,10 +1300,6 @@ arc(r_0124_0016__pride,r_0124_0018__keeping,r_0124_0017__in).
 arc(r_0124_0018__keeping,r_0124_0020__word,arg1).
 arc(r_0124_0020__word,r_0120_0008__she,genv).
 arc(r_0124_0020__word,r_0120_0015__her,genv).
-arc(z_0120_1075,r_0122_0056__back,quality1).
-arc(z_0120_1075,r_0122_0059__Villa,r_0122_0057__at).
-arc(z_0120_1094,r_0123_0008__at_all,prd2).
-arc(z_0120_1112,r_0124_0003__was,prd2).
 
 </pre>
 <br>
@@ -1420,7 +1420,7 @@ fof(id__120_A_lob_N02__121_A_lob_N02__122_A_lob_N02__123_A_lob_N02__124_A_lob_N0
       &amp; isA(ENTITYX62,r_0122_0039__start)
       &amp; ( BERYLX66 = BERYLX56
         | BERYLX66 = r_0120_0008__she )
-      &amp; isA(ENTITYX73,z_0120_1075)
+      &amp; isA(ENTITYX73,r_0120_1075)
       &amp; quality1(ENTITYX73) = QUALITYX74
       &amp; r_0122_0057__at(ENTITYX73) = r_0122_0059__Villa
       &amp; isA(ENTITYX76,r_0122_0061__time)
@@ -1449,7 +1449,7 @@ fof(id__120_A_lob_N02__121_A_lob_N02__122_A_lob_N02__123_A_lob_N02__124_A_lob_N0
       &amp; isA(r_0122_0002__Hubert,r_0122_0002__Hubert)
       &amp; attrib1(r_0122_0002__Hubert) = ATTRIBX42
       &amp; isA(r_0122_0042__Mis_apos__r_0122_0043__Beryl,r_0122_0042__Mis_apos__r_0122_0043__Beryl)
-      &amp; z_0120_1065(r_0122_0042__Mis_apos__r_0122_0043__Beryl) = BERYLX66
+      &amp; r_0120_1065(r_0122_0042__Mis_apos__r_0122_0043__Beryl) = BERYLX66
       &amp; isA(r_0122_0059__Villa,r_0122_0059__Villa)
       &amp; isA(r_0124_0010__Uncle__r_0124_0011__Charles,r_0124_0010__Uncle_r_0124_0011__Charles)
       &amp; genv(r_0124_0010__Uncle__r_0124_0011__Charles) = BERYLX101
@@ -1492,9 +1492,9 @@ fof(id__120_A_lob_N02__121_A_lob_N02__122_A_lob_N02__123_A_lob_N02__124_A_lob_N0
       &amp; arg2(EVENTX83) = BERYLX56
       &amp; r_0122_0026__in_mnr(EVENTX83) = ENTITYX57
       &amp; arg1(EVENTX83) = STATEX59
-      &amp; isA(EVENTX95,z_0120_1094)
+      &amp; isA(EVENTX95,r_0120_1094)
       &amp; prd2(EVENTX95) = STATEX86
-      &amp; isA(EVENTX113,z_0120_1112)
+      &amp; isA(EVENTX113,r_0120_1112)
       &amp; prd2(EVENTX113) = STATEX98 ) ).
 
 

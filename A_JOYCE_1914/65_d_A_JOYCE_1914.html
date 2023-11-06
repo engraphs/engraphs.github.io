@@ -628,48 +628,48 @@ Still , I know he 's gone and all to that .... &rdquo;
 arc(r_0149_0005__James,r_0149_0004__poor,attrib1).
 arc(r_0149_0008__said,r_0149_0009__Eliza,arg0).
 arc(r_0149_0008__said,r_0149_1004__utterance,arg1).
-arc(r_0149_1004__utterance,z_0149_1010,part1).
+arc(r_0149_1004__utterance,r_0149_1010,part1).
+arc(r_0149_1010,r_0149_0005__James,r_0149_1008).
+arc(r_0149_1025,r_0151_0010__more,attrib2).
+arc(r_0149_1036,r_0152_0009__all,quality1).
 arc(r_0149_1043__utterance,r_0153_0003___apos_s,part1).
 arc(r_0150_0003__was,r_0149_0005__James,arg0).
 arc(r_0150_0003__was,r_0150_0006__trouble,prd2).
-arc(r_0150_0004__quantificational__r_0150_0004__no,r_0150_0003__was,scope).
-arc(r_0150_0004__quantificational__r_0150_0004__no,r_0150_0006__trouble,restriction).
+arc(r_0150_0004__quantificational__no,r_0150_0003__was,scope).
+arc(r_0150_0004__quantificational__no,r_0150_0006__trouble,restriction).
 arc(r_0150_0006__trouble,r_0150_0005__great,attrib2).
 arc(r_0150_0006__trouble,r_0150_0008__us,r_0150_0007__to).
 arc(r_0151_0002__would,r_0151_0003__n_apos_t,scope).
 arc(r_0151_0003__n_apos_t,r_0151_0004__hear,scope).
 arc(r_0151_0004__hear,r_0149_0005__James,arg1).
+arc(r_0151_0004__hear,r_0149_1025,mnr).
 arc(r_0151_0004__hear,r_0151_0001__You,arg0).
 arc(r_0151_0004__hear,r_0151_0008__house,r_0151_0006__in_loc).
-arc(r_0151_0004__hear,z_0149_1025,mnr).
-arc(r_0151_0009__quantificational__r_0151_0009__any,r_0151_0002__would,scope).
-arc(r_0151_0009__quantificational__r_0151_0009__any,z_0149_1025,restriction).
+arc(r_0151_0009__quantificational__any,r_0149_1025,restriction).
+arc(r_0151_0009__quantificational__any,r_0151_0002__would,scope).
 arc(r_0151_0010__more,r_0151_0012__now,r_0151_0011__than).
 arc(r_0152_0001__Still,r_0152_0004__know,scope).
 arc(r_0152_0004__know,r_0152_0003__I,arg0).
 arc(r_0152_0004__know,r_0152_0006___apos_s,arg1).
 arc(r_0152_0006___apos_s,r_0149_0005__James,arg0).
+arc(r_0152_0006___apos_s,r_0149_1038,r_0152_0010__to_dir).
 arc(r_0152_0006___apos_s,r_0152_0008__and,prd2).
-arc(r_0152_0006___apos_s,z_0149_1038,r_0152_0010__to_dir).
+arc(r_0152_0008__and,r_0149_1036,conj2).
 arc(r_0152_0008__and,r_0152_0007__gone,conj1).
-arc(r_0152_0008__and,z_0149_1036,conj2).
-arc(r_0153_0003___apos_s,z_0149_1049,foc).
-arc(r_0153_0003___apos_s,z_0149_1055,clf).
+arc(r_0153_0003___apos_s,r_0149_1049,foc).
+arc(r_0153_0003___apos_s,r_0149_1055,clf).
+arc(r_0153_0006___apos_s,r_0149_1049,tmp1).
 arc(r_0153_0006___apos_s,r_0153_0005__it,arg0).
 arc(r_0153_0006___apos_s,r_0153_0007__all,mnr4).
 arc(r_0153_0006___apos_s,r_0153_0008__over,prd25).
-arc(r_0153_0006___apos_s,z_0149_1049,tmp1).
 arc(r_0153_0011___apos_ll,r_0153_0012__miss,scope).
 arc(r_0153_0012__miss,r_0149_0005__James,arg1).
+arc(r_0153_0012__miss,r_0149_1055,tmp).
 arc(r_0153_0012__miss,r_0150_0008__us,arg0).
-arc(r_0153_0012__miss,z_0149_1055,tmp).
 arc(r_0153_0016__said,r_0149_1043__utterance,arg1).
 arc(r_0153_0016__said,r_0153_0018__aunt,arg0).
-arc(r_0153_0018__aunt,r_0152_0003__I,z_0149_1060).
+arc(r_0153_0018__aunt,r_0152_0003__I,r_0149_1060).
 arc(r_0153_0018__aunt,r_0153_0017__my,genv).
-arc(z_0149_1010,r_0149_0005__James,z_0149_1008).
-arc(z_0149_1025,r_0151_0010__more,attrib2).
-arc(z_0149_1036,r_0152_0009__all,quality1).
 
 </pre>
 <br>
@@ -679,8 +679,8 @@ fof(id__149_A_JOYCE_1914__150_A_JOYCE_1914__151_A_JOYCE_1914__152_A_JOYCE_1914__
       ( STATEX2 = CONJX12
       &amp; isA(CONJX12,r_0149_1004__utterance)
       &amp; part1(CONJX12) = EVENTX11
-      &amp; isA(EVENTX11,z_0149_1010)
-      &amp; z_0149_1008(EVENTX11) = r_0149_0005__James
+      &amp; isA(EVENTX11,r_0149_1010)
+      &amp; r_0149_1008(EVENTX11) = r_0149_0005__James
       &amp; STATEX30 = EVENTX39
       &amp; isA(EVENTX39,r_0152_0006___apos_s)
       &amp; arg0(EVENTX39) = PRIESTX31
@@ -696,24 +696,24 @@ fof(id__149_A_JOYCE_1914__150_A_JOYCE_1914__151_A_JOYCE_1914__152_A_JOYCE_1914__
       &amp; PRIESTX19 = r_0149_0005__James
       &amp; isA(ENTITYX20,r_0151_0008__house)
       &amp; PRIESTX31 = r_0149_0005__James
-      &amp; isA(ENTITYX37,z_0149_1038)
+      &amp; isA(ENTITYX37,r_0149_1038)
       &amp; isA(EVENTX48,r_0153_0006___apos_s)
       &amp; tmp1(EVENTX48) = ENTITYX45
       &amp; arg0(EVENTX48) = r_0153_0005__it
       &amp; mnr4(EVENTX48) = QUALITYX46
       &amp; prd25(EVENTX48) = QUALITYX47
-      &amp; isA(ENTITYX45,z_0149_1049)
+      &amp; isA(ENTITYX45,r_0149_1049)
       &amp; isA(OPERATORX53,r_0153_0011___apos_ll)
       &amp; scope(OPERATORX53) = EVENTX54
       &amp; isA(EVENTX54,r_0153_0012__miss)
       &amp; tmp(EVENTX54) = ENTITYX50
       &amp; arg0(EVENTX54) = SISTERSX51
       &amp; arg1(EVENTX54) = PRIESTX52
-      &amp; isA(ENTITYX50,z_0149_1055)
+      &amp; isA(ENTITYX50,r_0149_1055)
       &amp; SISTERSX51 = r_0150_0008__us
       &amp; PRIESTX52 = r_0149_0005__James
       &amp; isA(ENTITYX58,r_0153_0018__aunt)
-      &amp; z_0149_1060(ENTITYX58) = AUNTX61
+      &amp; r_0149_1060(ENTITYX58) = AUNTX61
       &amp; genv(ENTITYX58) = r_0153_0017__my
       &amp; AUNTX61 = r_0152_0003__I
       &amp; isA(ATTRIBX9,r_0149_0004__poor)
@@ -724,7 +724,7 @@ fof(id__149_A_JOYCE_1914__150_A_JOYCE_1914__151_A_JOYCE_1914__152_A_JOYCE_1914__
       &amp; conj1(ATTRIBX32) = ATTRIBX33
       &amp; conj2(ATTRIBX32) = ATTRIBX34
       &amp; isA(ATTRIBX33,r_0152_0007__gone)
-      &amp; isA(ATTRIBX34,z_0149_1036)
+      &amp; isA(ATTRIBX34,r_0149_1036)
       &amp; quality1(ATTRIBX34) = QUALITYX35
       &amp; isA(r_0149_0005__James,r_0149_0005__James)
       &amp; attrib1(r_0149_0005__James) = ATTRIBX9
@@ -735,7 +735,7 @@ fof(id__149_A_JOYCE_1914__150_A_JOYCE_1914__151_A_JOYCE_1914__152_A_JOYCE_1914__
       &amp; isA(EVENTX13,r_0149_0008__said)
       &amp; arg1(EVENTX13) = STATEX2
       &amp; arg0(EVENTX13) = r_0149_0009__Eliza
-      &amp; isA(QUANTX16,r_0150_0004__quantificational__r_0150_0004__no)
+      &amp; isA(QUANTX16,r_0150_0004__quantificational__no)
       &amp; restriction(QUANTX16) = ENTITYX15
       &amp; isA(ENTITYX15,r_0150_0006__trouble)
       &amp; attrib2(ENTITYX15) = ATTRIBX17
@@ -744,9 +744,9 @@ fof(id__149_A_JOYCE_1914__150_A_JOYCE_1914__151_A_JOYCE_1914__152_A_JOYCE_1914__
       &amp; isA(EVENTX18,r_0150_0003__was)
       &amp; arg0(EVENTX18) = PRIESTX14
       &amp; prd2(EVENTX18) = ENTITYX15
-      &amp; isA(QUANTX22,r_0151_0009__quantificational__r_0151_0009__any)
+      &amp; isA(QUANTX22,r_0151_0009__quantificational__any)
       &amp; restriction(QUANTX22) = ENTITYX21
-      &amp; isA(ENTITYX21,z_0149_1025)
+      &amp; isA(ENTITYX21,r_0149_1025)
       &amp; attrib2(ENTITYX21) = ATTRIBX23
       &amp; scope(QUANTX22) = OPERATORX26
       &amp; isA(OPERATORX26,r_0151_0002__would)

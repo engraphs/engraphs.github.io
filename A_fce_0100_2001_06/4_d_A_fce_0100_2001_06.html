@@ -1128,6 +1128,8 @@ arc(r_0004_0009__received,r_0004_0011__Mrs__r_0004_0012__Maria_r_0004_0013__Smit
 arc(r_0004_1026__imperative,r_0006_0001__Read,scope).
 arc(r_0004_1039__imperative,r_0007_0001__Then,scope).
 arc(r_0004_1100__question,r_0011_0001__Could,scope).
+arc(r_0004_1107,r_0011_0005__more,attrib1).
+arc(r_0004_1107,r_0011_0009__party,r_0011_0006__about).
 arc(r_0005_0002__is,r_0004_0011__Mrs__r_0004_0012__Maria_r_0004_0013__Smith,arg0).
 arc(r_0005_0002__is,r_0005_0004__leader,prd2).
 arc(r_0005_0004__leader,r_0005_0007__group,r_0005_0005__of).
@@ -1152,8 +1154,8 @@ arc(r_0007_0001__Then,r_0007_0002__write,scope).
 arc(r_0007_0002__write,r_0004_0011__Mrs__r_0004_0012__Maria_r_0004_0013__Smith,r_0007_0005__to_arg2).
 arc(r_0007_0002__write,r_0007_0004__reply,arg1).
 arc(r_0007_0004__reply,r_0007_0011__information,r_0007_0008__including).
-arc(r_0007_0009__quantificational__r_0007_0009__all,r_0007_0004__reply,scope).
-arc(r_0007_0009__quantificational__r_0007_0009__all,r_0007_0011__information,restriction).
+arc(r_0007_0009__quantificational__all,r_0007_0004__reply,scope).
+arc(r_0007_0009__quantificational__all,r_0007_0011__information,restriction).
 arc(r_0007_0013__asks,r_0007_0011__information,r_0007_0014__for_clr).
 arc(r_0007_0013__asks,r_0007_0012__she,arg0).
 arc(r_0008_0001__As_cnt,r_0008_0004__is,restriction).
@@ -1186,12 +1188,12 @@ arc(r_0010_0004__know,r_0004_0011__Mrs__r_0004_0012__Maria_r_0004_0013__Smith,ar
 arc(r_0010_0004__know,r_0010_0014__and,arg1).
 arc(r_0010_0009__has,r_0010_0010__been,catenative).
 arc(r_0010_0010__been,r_0010_0011__booked,catenative).
+arc(r_0010_0011__booked,r_0004_1088,r_0010_0012__into_loc).
 arc(r_0010_0011__booked,r_0010_0006__hotel,r_0010_0012__into_loc).
 arc(r_0010_0011__booked,r_0010_0008__group,arg1).
-arc(r_0010_0011__booked,z_0004_1088,r_0010_0012__into_loc).
+arc(r_0010_0014__and,r_0004_1088,conj1).
 arc(r_0010_0014__and,r_0010_0006__hotel,conj1).
 arc(r_0010_0014__and,r_0010_0017__way,conj2).
-arc(r_0010_0014__and,z_0004_1088,conj1).
 arc(r_0010_0017__way,r_0010_0016__best,attrib2).
 arc(r_0010_0017__way,r_0010_0019__get,emb4).
 arc(r_0010_0019__get,r_0010_0021__there,r_0010_0020__from_dir).
@@ -1199,10 +1201,8 @@ arc(r_0010_0019__get,r_0010_0024__conference,r_0010_0022__to_dir).
 arc(r_0011_0001__Could,r_0011_0003__tell,scope).
 arc(r_0011_0003__tell,r_0004_0007__you,arg0).
 arc(r_0011_0003__tell,r_0004_0011__Mrs__r_0004_0012__Maria_r_0004_0013__Smith,arg2).
-arc(r_0011_0003__tell,z_0004_1107,arg1).
+arc(r_0011_0003__tell,r_0004_1107,arg1).
 arc(r_0011_0009__party,r_0011_0008__end_of_conference,attrib2).
-arc(z_0004_1107,r_0011_0005__more,attrib1).
-arc(z_0004_1107,r_0011_0009__party,r_0011_0006__about).
 
 </pre>
 <br>
@@ -1286,7 +1286,7 @@ fof(id__4_A_fce_0100_2001_06__5_A_fce_0100_2001_06__6_A_fce_0100_2001_06__7_A_fc
       &amp; HEARERX30 = r_0004_0007__you
       &amp; isA(ENTITYX32,r_0006_0014__notes)
       &amp; r_0006_0008__on(ENTITYX32) = ENTITYX28
-      &amp; isA(QUANTX43,r_0007_0009__quantificational__r_0007_0009__all)
+      &amp; isA(QUANTX43,r_0007_0009__quantificational__all)
       &amp; isA(EVENTX44,r_0007_0013__asks)
       &amp; arg0(EVENTX44) = r_0007_0012__she
       &amp; r_0007_0014__for_clr(EVENTX44) = ENTITYX42
@@ -1316,7 +1316,7 @@ fof(id__4_A_fce_0100_2001_06__5_A_fce_0100_2001_06__6_A_fce_0100_2001_06__7_A_fc
       &amp; conj2(ENTITYX79) = ENTITYX89
       &amp; isA(EVENTX87,r_0010_0009__has)
       &amp; catenative(EVENTX87) = CATENATIVEX82
-      &amp; isA(ENTITYX80,z_0004_1088)
+      &amp; isA(ENTITYX80,r_0004_1088)
       &amp; isA(ENTITYX80,r_0010_0006__hotel)
       &amp; isA(ENTITYX81,r_0010_0008__group)
       &amp; isA(ENTITYX89,r_0010_0017__way)
@@ -1325,7 +1325,7 @@ fof(id__4_A_fce_0100_2001_06__5_A_fce_0100_2001_06__6_A_fce_0100_2001_06__7_A_fc
       &amp; isA(ENTITYX95,r_0010_0024__conference)
       &amp; HEARERX101 = r_0004_0007__you
       &amp; SMITHX102 = r_0004_0011__Mrs__r_0004_0012__Maria_r_0004_0013__Smith
-      &amp; isA(ENTITYX103,z_0004_1107)
+      &amp; isA(ENTITYX103,r_0004_1107)
       &amp; attrib1(ENTITYX103) = ATTRIBX104
       &amp; r_0011_0006__about(ENTITYX103) = ENTITYX105
       &amp; isA(ENTITYX105,r_0011_0009__party)

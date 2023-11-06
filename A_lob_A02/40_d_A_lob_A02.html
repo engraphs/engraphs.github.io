@@ -171,13 +171,13 @@ And up to ten years ' imprisonment can be imposed on anyone convicted of sabotag
 arc(r_0040_0003__ten__r_0040_0004__years,r_0040_0002__up_to,quality1).
 arc(r_0040_0006__imprisonment,r_0040_0003__ten__r_0040_0004__years,genv).
 arc(r_0040_0007__can,r_0040_0008__be,scope).
-arc(r_0040_0008__be,r_0040_0011__quantificational__r_0040_0011__anyone,catenative).
+arc(r_0040_0008__be,r_0040_0011__quantificational__anyone,catenative).
 arc(r_0040_0009__imposed,r_0040_0006__imprisonment,arg1).
-arc(r_0040_0009__imposed,z_0040_1011,r_0040_0010__on_clr).
-arc(r_0040_0011__quantificational__r_0040_0011__anyone,r_0040_0009__imposed,scope).
-arc(r_0040_0011__quantificational__r_0040_0011__anyone,z_0040_1011,restriction).
+arc(r_0040_0009__imposed,r_0040_1011,r_0040_0010__on_clr).
+arc(r_0040_0011__quantificational__anyone,r_0040_0009__imposed,scope).
+arc(r_0040_0011__quantificational__anyone,r_0040_1011,restriction).
 arc(r_0040_0012__convicted,r_0040_0014__sabotage,r_0040_0013__of_clr).
-arc(r_0040_0012__convicted,z_0040_1011,arg0).
+arc(r_0040_0012__convicted,r_0040_1011,arg0).
 
 </pre>
 <br>
@@ -185,11 +185,11 @@ arc(r_0040_0012__convicted,z_0040_1011,arg0).
 fof(id__40_A_lob_A02,axiom,
     ? [CATENATIVEX5,OPERATORX4,EVENTX13,QUANTX8,EVENTX12,EVENTX10,ENTITYX1,ENTITYX7,ENTITYX9,ENTITYX2,QUALITYX3] :
       ( CATENATIVEX5 = QUANTX8
-      &amp; isA(QUANTX8,r_0040_0011__quantificational__r_0040_0011__anyone)
+      &amp; isA(QUANTX8,r_0040_0011__quantificational__anyone)
       &amp; isA(EVENTX10,r_0040_0012__convicted)
       &amp; arg0(EVENTX10) = ENTITYX7
       &amp; r_0040_0013__of_clr(EVENTX10) = ENTITYX9
-      &amp; isA(ENTITYX7,z_0040_1011)
+      &amp; isA(ENTITYX7,r_0040_1011)
       &amp; restriction(QUANTX8) = ENTITYX7
       &amp; scope(QUANTX8) = EVENTX12
       &amp; isA(EVENTX12,r_0040_0009__imposed)

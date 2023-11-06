@@ -472,10 +472,11 @@ arc(r_0013_0009__was,r_0013_0003__I,arg0).
 arc(r_0013_0009__was,r_0013_0012__parent,prd2).
 arc(r_0013_0012__parent,r_0013_0011__single,attrib2).
 arc(r_0013_0012__parent,r_0013_0015__self_esteem,r_0013_0013__with).
-arc(r_0013_0014__quantificational__r_0013_0014__little_or_no,r_0013_0012__parent,scope).
-arc(r_0013_0014__quantificational__r_0013_0014__little_or_no,r_0013_0015__self_esteem,restriction).
+arc(r_0013_0014__quantificational__little_or_no,r_0013_0012__parent,scope).
+arc(r_0013_0014__quantificational__little_or_no,r_0013_0015__self_esteem,restriction).
+arc(r_0013_1027,r_0013_0003__I,genv).
 arc(r_0014_0002__was,r_0013_0003__I,arg0).
-arc(r_0014_0002__was,r_0014_0005__and,z_0013_1012).
+arc(r_0014_0002__was,r_0014_0005__and,r_0013_1012).
 arc(r_0014_0005__and,r_0014_0004__welfare,r_0014_0003__on_prd2).
 arc(r_0014_0005__and,r_0014_0008__diploma,r_0014_0006__without_prd2).
 arc(r_0014_0008__diploma,r_0013_0003__I,genv).
@@ -483,8 +484,8 @@ arc(r_0015_0001__Coming,r_0013_0007__Goodwill,r_0015_0002__to_clr_dir).
 arc(r_0015_0004__was,r_0015_0001__Coming,arg0).
 arc(r_0015_0004__was,r_0015_0006__first__r_0015_0007__step,prd2).
 arc(r_0015_0006__first__r_0015_0007__step,r_0015_0010__becoming,r_0015_0008__toward).
+arc(r_0015_0010__becoming,r_0013_1027,arg0).
 arc(r_0015_0010__becoming,r_0015_0012__independent,prd2).
-arc(r_0015_0010__becoming,z_0013_1027,arg0).
 arc(r_0015_0012__independent,r_0015_0011__totally,quality1).
 arc(r_0016_0002__am,r_0013_0003__I,arg0).
 arc(r_0016_0002__am,r_0016_0003__now,tmp3).
@@ -495,7 +496,6 @@ arc(r_0017_0002__really,r_0017_0003__like,scope).
 arc(r_0017_0003__like,r_0013_0003__I,arg0).
 arc(r_0017_0003__like,r_0017_0005__job,arg1).
 arc(r_0017_0005__job,r_0013_0003__I,genv).
-arc(z_0013_1027,r_0013_0003__I,genv).
 
 </pre>
 <br>
@@ -510,7 +510,7 @@ fof(id__13_A_ANC_110CYL067__14_A_ANC_110CYL067__15_A_ANC_110CYL067__16_A_ANC_110
       &amp; arg0(EVENTX30) = ENTITYX25
       &amp; prd2(EVENTX30) = ATTRIBX28
       &amp; SPEAKERX4 = r_0013_0003__I
-      &amp; isA(QUANTX8,r_0013_0014__quantificational__r_0013_0014__little_or_no)
+      &amp; isA(QUANTX8,r_0013_0014__quantificational__little_or_no)
       &amp; restriction(QUANTX8) = ENTITYX7
       &amp; isA(ENTITYX7,r_0013_0015__self_esteem)
       &amp; scope(QUANTX8) = ENTITYX5
@@ -529,7 +529,7 @@ fof(id__13_A_ANC_110CYL067__14_A_ANC_110CYL067__15_A_ANC_110CYL067__16_A_ANC_110
       &amp; GOODWILLX21 = r_0013_0007__Goodwill
       &amp; isA(ENTITYX23,r_0015_0006__first__r_0015_0007__step)
       &amp; r_0015_0008__toward(ENTITYX23) = EVENTX24
-      &amp; isA(ENTITYX25,z_0013_1027)
+      &amp; isA(ENTITYX25,r_0013_1027)
       &amp; genv(ENTITYX25) = SPEAKERX26
       &amp; SPEAKERX26 = r_0013_0003__I
       &amp; SPEAKERX32 = r_0013_0003__I
@@ -561,7 +561,7 @@ fof(id__13_A_ANC_110CYL067__14_A_ANC_110CYL067__15_A_ANC_110CYL067__16_A_ANC_110
       &amp; prd2(EVENTX9) = ENTITYX5
       &amp; isA(EVENTX17,r_0014_0002__was)
       &amp; arg0(EVENTX17) = SPEAKERX11
-      &amp; z_0013_1012(EVENTX17) = CONJX13
+      &amp; r_0013_1012(EVENTX17) = CONJX13
       &amp; isA(EVENTX31,r_0015_0004__was)
       &amp; arg0(EVENTX31) = STATEX18
       &amp; prd2(EVENTX31) = ENTITYX23

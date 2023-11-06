@@ -321,14 +321,15 @@ it was full of so many words that they could not understand .
 <br>
 <pre>
 arc(r_0117_0003__swallow,r_0117_0005__winter,r_0117_0004__in).
+arc(r_0117_1005,r_0117_0003__swallow,prd).
 arc(r_0118_0003__wrote,r_0118_0002__he,arg0).
 arc(r_0118_0003__wrote,r_0118_0006__letter,arg1).
 arc(r_0118_0003__wrote,r_0118_0012__newspaper,r_0118_0009__to_clr).
 arc(r_0118_0006__letter,r_0117_0003__swallow,r_0118_0007__about).
 arc(r_0118_0006__letter,r_0118_0005__long,attrib2).
 arc(r_0118_0012__newspaper,r_0118_0011__local,attrib2).
-arc(r_0119_0001__quantificational__r_0119_0001__Every,r_0119_0002__one,restriction).
-arc(r_0119_0001__quantificational__r_0119_0001__Every,r_0119_0003__quoted,scope).
+arc(r_0119_0001__quantificational__Every,r_0119_0002__one,restriction).
+arc(r_0119_0001__quantificational__Every,r_0119_0003__quoted,scope).
 arc(r_0119_0003__quoted,r_0118_0006__letter,arg1).
 arc(r_0119_0003__quoted,r_0119_0002__one,arg0).
 arc(r_0120_0002__was,r_0118_0006__letter,arg0).
@@ -340,7 +341,6 @@ arc(r_0120_0010__could,r_0120_0011__not,scope).
 arc(r_0120_0011__not,r_0120_0012__understand,scope).
 arc(r_0120_0012__understand,r_0119_0002__one,arg0).
 arc(r_0120_0012__understand,r_0120_0007__words,arg1).
-arc(z_0117_1005,r_0117_0003__swallow,prd).
 
 </pre>
 <br>
@@ -375,13 +375,13 @@ fof(id__117_A_WILDE_1_1888__118_A_WILDE_1_1888__119_A_WILDE_1_1888__120_A_WILDE_
       &amp; isA(ATTRIBX20,r_0120_0006__many)
       &amp; quality1(ATTRIBX20) = QUALITYX21
       &amp; isA(QUALITYX21,r_0120_0005__so)
-      &amp; isA(EVENTX6,z_0117_1005)
+      &amp; isA(EVENTX6,r_0117_1005)
       &amp; prd(EVENTX6) = WINTER_SWALLOWX3
       &amp; isA(EVENTX12,r_0118_0003__wrote)
       &amp; arg0(EVENTX12) = r_0118_0002__he
       &amp; arg1(EVENTX12) = LONG_LETTERX7
       &amp; r_0118_0009__to_clr(EVENTX12) = ENTITYX10
-      &amp; isA(QUANTX14,r_0119_0001__quantificational__r_0119_0001__Every)
+      &amp; isA(QUANTX14,r_0119_0001__quantificational__Every)
       &amp; restriction(QUANTX14) = PERSONSX13
       &amp; isA(PERSONSX13,r_0119_0002__one)
       &amp; scope(QUANTX14) = EVENTX16

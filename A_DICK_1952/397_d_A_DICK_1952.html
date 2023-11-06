@@ -539,15 +539,15 @@ arc(r_0514_0012__and,r_0514_1009__cnt,conj2).
 arc(r_0514_0013__setting__r_0514_0015__up,r_0514_0001__This,arg0).
 arc(r_0514_0013__setting__r_0514_0015__up,r_0514_0011__gun,arg1).
 arc(r_0514_0017__shoot,r_0514_0011__gun,arg0).
-arc(r_0514_0017__shoot,z_0514_1015,arg1).
-arc(r_0514_0018__quantificational__r_0514_0018__anything,r_0514_0017__shoot,scope).
-arc(r_0514_0018__quantificational__r_0514_0018__anything,z_0514_1015,restriction).
+arc(r_0514_0017__shoot,r_0514_1015,arg1).
+arc(r_0514_0018__quantificational__anything,r_0514_0017__shoot,scope).
+arc(r_0514_0018__quantificational__anything,r_0514_1015,restriction).
 arc(r_0514_0020__came,r_0514_0021__along,dir3).
-arc(r_0514_0020__came,z_0514_1015,arg0).
+arc(r_0514_0020__came,r_0514_1015,arg0).
 arc(r_0514_1004__mnr,r_0514_0002__was,scope).
 arc(r_0514_1004__mnr,r_0514_0012__and,restriction).
 arc(r_0514_1009__cnt,r_0514_0013__setting__r_0514_0015__up,scope).
-arc(r_0514_1009__cnt,r_0514_0018__quantificational__r_0514_0018__anything,restriction).
+arc(r_0514_1009__cnt,r_0514_0018__quantificational__anything,restriction).
 arc(r_0514_1029__abs,r_0514_1032__cnt,restriction).
 arc(r_0514_1029__abs,r_0515_0002__were,scope).
 arc(r_0514_1032__cnt,r_0515_0013__coming,scope).
@@ -555,11 +555,11 @@ arc(r_0514_1032__cnt,r_0515_0015__take__r_0515_0018__away,restriction).
 arc(r_0515_0002__were,r_0514_0006__they,arg0).
 arc(r_0515_0002__were,r_0515_0004__certain,prd2).
 arc(r_0515_0004__certain,r_0515_0003__so,quality1).
-arc(r_0515_0004__certain,r_0515_0006__quantificational__r_0515_0006__everything,emb3).
-arc(r_0515_0006__quantificational__r_0515_0006__everything,r_0515_0007__was,scope).
-arc(r_0515_0006__quantificational__r_0515_0006__everything,z_0514_1026,restriction).
+arc(r_0515_0004__certain,r_0515_0006__quantificational__everything,emb3).
+arc(r_0515_0006__quantificational__everything,r_0514_1026,restriction).
+arc(r_0515_0006__quantificational__everything,r_0515_0007__was,scope).
+arc(r_0515_0007__was,r_0514_1026,arg0).
 arc(r_0515_0007__was,r_0515_0008__hostile,prd2).
-arc(r_0515_0007__was,z_0514_1026,arg0).
 arc(r_0515_0013__coming,r_0515_0011__enemy,arg0).
 arc(r_0515_0015__take__r_0515_0018__away,r_0514_0006__they,r_0515_0019__from_dir).
 arc(r_0515_0015__take__r_0515_0018__away,r_0515_0011__enemy,arg0).
@@ -575,9 +575,9 @@ arc(r_0516_0005__keep,r_0515_0017__possessions,arg1).
 fof(id__514_A_DICK_1952__515_A_DICK_1952__516_A_DICK_1952,axiom,
     ? [STATEX23,GUNX8,INHABITANTSX20,INHABITANTSX35,INHABITANTSX36,INHABITANTSX40,POSSESSIONSX41,OPERATORX42,EVENTX43,CONNX30,CONNX33,EVENTX37,EVENTX38,EVENTX39,QUANTX25,EVENTX28,CONNX5,CONJX18,CONNX10,QUANTX12,EVENTX16,EVENTX14,EVENTX17,EVENTX7,EVENTX19,EVENTX3,ENTITYX31,POSSESSIONSX34,ENTITYX24,ENTITYX1,ENTITYX11,GUNX6,ATTRIBX21,ATTRIBX27,ATTRIBX2,QUALITYX22,QUALITYX13] :
       ( STATEX23 = QUANTX25
-      &amp; isA(QUANTX25,r_0515_0006__quantificational__r_0515_0006__everything)
+      &amp; isA(QUANTX25,r_0515_0006__quantificational__everything)
       &amp; restriction(QUANTX25) = ENTITYX24
-      &amp; isA(ENTITYX24,z_0514_1026)
+      &amp; isA(ENTITYX24,r_0514_1026)
       &amp; scope(QUANTX25) = EVENTX28
       &amp; isA(EVENTX28,r_0515_0007__was)
       &amp; arg0(EVENTX28) = ENTITYX24
@@ -624,11 +624,11 @@ fof(id__514_A_DICK_1952__515_A_DICK_1952__516_A_DICK_1952,axiom,
       &amp; arg0(EVENTX17) = r_0514_0001__This
       &amp; arg1(EVENTX17) = GUNX8
       &amp; restriction(CONNX10) = QUANTX12
-      &amp; isA(QUANTX12,r_0514_0018__quantificational__r_0514_0018__anything)
+      &amp; isA(QUANTX12,r_0514_0018__quantificational__anything)
       &amp; isA(EVENTX14,r_0514_0020__came)
       &amp; arg0(EVENTX14) = ENTITYX11
       &amp; dir3(EVENTX14) = QUALITYX13
-      &amp; isA(ENTITYX11,z_0514_1015)
+      &amp; isA(ENTITYX11,r_0514_1015)
       &amp; restriction(QUANTX12) = ENTITYX11
       &amp; scope(QUANTX12) = EVENTX16
       &amp; isA(EVENTX16,r_0514_0017__shoot)

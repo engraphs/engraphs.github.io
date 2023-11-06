@@ -775,11 +775,11 @@ arc(r_0195_0013__where_cnt_cnd,r_0195_0048__when_tmp,scope).
 arc(r_0195_0017__handling,r_0195_0015__business__r_0195_0016__operator,arg0).
 arc(r_0195_0017__handling,r_0195_0019__information,arg1).
 arc(r_0195_0019__information,r_0195_0018__personal,attrib1).
-arc(r_0195_0020__has,r_0195_0022__quantificational__r_0195_0022__any,catenative).
+arc(r_0195_0020__has,r_0195_0022__quantificational__any,catenative).
 arc(r_0195_0021__violated,r_0195_0015__business__r_0195_0016__operator,arg0).
-arc(r_0195_0021__violated,z_0195_1020,arg1).
-arc(r_0195_0022__quantificational__r_0195_0022__any,r_0195_0021__violated,scope).
-arc(r_0195_0022__quantificational__r_0195_0022__any,z_0195_1020,restriction).
+arc(r_0195_0021__violated,r_0195_1020,arg1).
+arc(r_0195_0022__quantificational__any,r_0195_0021__violated,scope).
+arc(r_0195_0022__quantificational__any,r_0195_1020,restriction).
 arc(r_0195_0025__provisions,r_0195_0038__or,r_0195_0026__of).
 arc(r_0195_0033__Articles__r_0195_0034__20,r_0195_0036__22,r_0195_0035__to).
 arc(r_0195_0038__or,r_0195_0027__Article__r_0195_0028__16,conj1).
@@ -824,7 +824,7 @@ arc(r_0195_0094__measures,r_0195_0092__other,attrib1).
 arc(r_0195_0094__measures,r_0195_0093__necessary,attrib2).
 arc(r_0195_0096__rectify,r_0195_0094__measures,arg0).
 arc(r_0195_0096__rectify,r_0195_0098__violation,arg1).
-arc(z_0195_1020,r_0195_0025__provisions,r_0195_0023__of).
+arc(r_0195_1020,r_0195_0025__provisions,r_0195_0023__of).
 
 </pre>
 <br>
@@ -832,9 +832,9 @@ arc(z_0195_1020,r_0195_0025__provisions,r_0195_0023__of).
 fof(id__195_A_law_h15A119,axiom,
     ? [CATENATIVEX9,STATEX27,STATEX47,CONNX4,CONNX23,OPERATORX57,EVENTX58,CONJX56,EVENTX55,EVENTX54,EVENTX49,EVENTX46,CONNX31,EVENTX39,EVENTX40,EVENTX30,EVENTX22,QUANTX11,EVENTX21,EVENTX8,ENTITYX1,ENTITYX41,ENTITYX43,ENTITYX50,ENTITYX53,ENTITYX48,ENTITYX44,ENTITYX24,ENTITYX32,ENTITYX33,ENTITYX35,ENTITYX36,ENTITYX37,ENTITYX38,ENTITYX28,ENTITYX5,ENTITYX10,ENTITYX12,ENTITYX13,ENTITYX14,ENTITYX15,ENTITYX16,ENTITYX18,ENTITYX19,ENTITYX17,ENTITYX6,ENTITYX2,ATTRIBX51,ATTRIBX52,ATTRIBX45,ATTRIBX42,ATTRIBX26,ATTRIBX34,ATTRIBX25,ATTRIBX7,ATTRIBX3,QUALITYX29] :
       ( CATENATIVEX9 = QUANTX11
-      &amp; isA(QUANTX11,r_0195_0022__quantificational__r_0195_0022__any)
+      &amp; isA(QUANTX11,r_0195_0022__quantificational__any)
       &amp; restriction(QUANTX11) = ENTITYX10
-      &amp; isA(ENTITYX10,z_0195_1020)
+      &amp; isA(ENTITYX10,r_0195_1020)
       &amp; r_0195_0023__of(ENTITYX10) = ENTITYX12
       &amp; scope(QUANTX11) = EVENTX21
       &amp; isA(EVENTX21,r_0195_0021__violated)

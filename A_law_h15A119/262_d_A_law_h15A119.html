@@ -234,21 +234,21 @@
 </svg>
 <br>
 <pre>
-arc(r_0262_0004__If_cnt_cnd,r_0262_0013__quantificational__r_0262_0013__any,restriction).
+arc(r_0262_0004__If_cnt_cnd,r_0262_0013__quantificational__any,restriction).
 arc(r_0262_0004__If_cnt_cnd,r_0262_0022__may,scope).
 arc(r_0262_0008__information__r_0262_0009__protection_r_0262_0010__organization,r_0262_0006__authorized,attrib2).
 arc(r_0262_0008__information__r_0262_0009__protection_r_0262_0010__organization,r_0262_0007__personal,attrib3).
 arc(r_0262_0011__falls,r_0262_0008__information__r_0262_0009__protection_r_0262_0010__organization,arg0).
-arc(r_0262_0011__falls,z_0262_1009,r_0262_0012__under_loc).
-arc(r_0262_0013__quantificational__r_0262_0013__any,r_0262_0011__falls,scope).
-arc(r_0262_0013__quantificational__r_0262_0013__any,z_0262_1009,restriction).
+arc(r_0262_0011__falls,r_0262_1009,r_0262_0012__under_loc).
+arc(r_0262_0013__quantificational__any,r_0262_0011__falls,scope).
+arc(r_0262_0013__quantificational__any,r_0262_1009,restriction).
 arc(r_0262_0017__items,r_0262_0016__following,attrib2).
 arc(r_0262_0021__minister,r_0262_0020__competent,attrib2).
 arc(r_0262_0022__may,r_0262_0023__rescind,scope).
 arc(r_0262_0023__rescind,r_0262_0021__minister,arg0).
 arc(r_0262_0023__rescind,r_0262_0025__authorization,arg1).
 arc(r_0262_0025__authorization,r_0262_0024__its,genv).
-arc(z_0262_1009,r_0262_0017__items,r_0262_0014__of).
+arc(r_0262_1009,r_0262_0017__items,r_0262_0014__of).
 
 </pre>
 <br>
@@ -270,9 +270,9 @@ fof(id__262_A_law_h15A119,axiom,
       &amp; isA(ATTRIBX12,r_0262_0020__competent)
       &amp; isA(CONNX1,r_0262_0004__If_cnt_cnd)
       &amp; restriction(CONNX1) = QUANTX6
-      &amp; isA(QUANTX6,r_0262_0013__quantificational__r_0262_0013__any)
+      &amp; isA(QUANTX6,r_0262_0013__quantificational__any)
       &amp; restriction(QUANTX6) = ENTITYX5
-      &amp; isA(ENTITYX5,z_0262_1009)
+      &amp; isA(ENTITYX5,r_0262_1009)
       &amp; r_0262_0014__of(ENTITYX5) = ENTITYX7
       &amp; scope(QUANTX6) = EVENTX10
       &amp; isA(EVENTX10,r_0262_0011__falls)

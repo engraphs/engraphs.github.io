@@ -144,12 +144,12 @@ A dead skeleton of a city , that 's all . &rdquo;
 <pre>
 arc(r_0253_0003__skeleton,r_0253_0002__dead,attrib2).
 arc(r_0253_0003__skeleton,r_0253_0006__city,r_0253_0004__of).
-arc(r_0253_0003__skeleton,r_0253_0010__quantificational__r_0253_0010__all,prn6).
+arc(r_0253_0003__skeleton,r_0253_0010__quantificational__all,prn6).
 arc(r_0253_0009___apos_s,r_0253_0008__that,arg0).
-arc(r_0253_0009___apos_s,z_0253_1009,prd2).
-arc(r_0253_0010__quantificational__r_0253_0010__all,r_0253_0009___apos_s,scope).
-arc(r_0253_0010__quantificational__r_0253_0010__all,z_0253_1009,restriction).
-arc(z_0253_1011,r_0253_0003__skeleton,z_0253_1002).
+arc(r_0253_0009___apos_s,r_0253_1009,prd2).
+arc(r_0253_0010__quantificational__all,r_0253_0009___apos_s,scope).
+arc(r_0253_0010__quantificational__all,r_0253_1009,restriction).
+arc(r_0253_1011,r_0253_0003__skeleton,r_0253_1002).
 
 </pre>
 <br>
@@ -157,9 +157,9 @@ arc(z_0253_1011,r_0253_0003__skeleton,z_0253_1002).
 fof(id__253_A_DICK_1952,axiom,
     ? [EVENTX6,EVENTX12,QUANTX8,EVENTX10,ENTITYX3,ENTITYX5,ENTITYX7,ATTRIBX4] :
       ( EVENTX6 = QUANTX8
-      &amp; isA(QUANTX8,r_0253_0010__quantificational__r_0253_0010__all)
+      &amp; isA(QUANTX8,r_0253_0010__quantificational__all)
       &amp; restriction(QUANTX8) = ENTITYX7
-      &amp; isA(ENTITYX7,z_0253_1009)
+      &amp; isA(ENTITYX7,r_0253_1009)
       &amp; scope(QUANTX8) = EVENTX10
       &amp; isA(EVENTX10,r_0253_0009___apos_s)
       &amp; arg0(EVENTX10) = r_0253_0008__that
@@ -170,8 +170,8 @@ fof(id__253_A_DICK_1952,axiom,
       &amp; prn6(ENTITYX3) = EVENTX6
       &amp; isA(ENTITYX5,r_0253_0006__city)
       &amp; isA(ATTRIBX4,r_0253_0002__dead)
-      &amp; isA(EVENTX12,z_0253_1011)
-      &amp; z_0253_1002(EVENTX12) = ENTITYX3 ) ).
+      &amp; isA(EVENTX12,r_0253_1011)
+      &amp; r_0253_1002(EVENTX12) = ENTITYX3 ) ).
 
 
 </pre>

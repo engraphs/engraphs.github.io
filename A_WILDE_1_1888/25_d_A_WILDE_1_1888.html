@@ -1273,13 +1273,15 @@ arc(r_0121_0004__go,r_0129_0002__Swallow__r_0129_0004__Swallow,arg0).
 arc(r_0121_0004__go,skc13,arg0).
 arc(r_0121_0009__said,r_0121_0011__Swallow,arg0).
 arc(r_0121_0009__said,r_0121_1003__utterance,arg1).
-arc(r_0121_0011__Swallow,r_0121_0003__I,z_0121_1009).
-arc(r_0121_0011__Swallow,r_0129_0002__Swallow__r_0129_0004__Swallow,z_0121_1009).
-arc(r_0121_0011__Swallow,skc13,z_0121_1009).
+arc(r_0121_0011__Swallow,r_0121_0003__I,r_0121_1009).
+arc(r_0121_0011__Swallow,r_0129_0002__Swallow__r_0129_0004__Swallow,r_0121_1009).
+arc(r_0121_0011__Swallow,skc13,r_0121_1009).
 arc(r_0121_1003__utterance,r_0121_0004__go,part1).
-arc(r_0121_1036__utterance,z_0121_1043,part1).
+arc(r_0121_1036__utterance,r_0121_1043,part1).
+arc(r_0121_1043,r_0124_0017__stranger,r_0121_1040).
+arc(r_0121_1054,r_0125_0006__much,attrib1).
 arc(r_0121_1067__utterance,r_0121_1069__question,part1).
-arc(r_0121_1069__question,r_0127_0004__quantificational__r_0127_0004__any,scope).
+arc(r_0121_1069__question,r_0127_0004__quantificational__any,scope).
 arc(r_0121_1083__question,r_0129_0015__will,scope).
 arc(r_0121_1099__utterance,r_0130_0003__am,part1).
 arc(r_0122_0003__was,r_0121_0003__I,arg0).
@@ -1292,10 +1294,10 @@ arc(r_0123_0002__visited,r_0121_0003__I,arg0).
 arc(r_0123_0002__visited,r_0123_0006__monuments,arg1).
 arc(r_0123_0002__visited,r_0129_0002__Swallow__r_0129_0004__Swallow,arg0).
 arc(r_0123_0002__visited,skc13,arg0).
-arc(r_0123_0003__quantificational__r_0123_0003__all,r_0123_0002__visited,scope).
-arc(r_0123_0003__quantificational__r_0123_0003__all,r_0123_0006__monuments,restriction).
+arc(r_0123_0003__quantificational__all,r_0123_0002__visited,scope).
+arc(r_0123_0003__quantificational__all,r_0123_0006__monuments,restriction).
 arc(r_0123_0006__monuments,r_0123_0005__public,attrib3).
-arc(r_0123_0008__and,r_0123_0003__quantificational__r_0123_0003__all,conj1).
+arc(r_0123_0008__and,r_0123_0003__quantificational__all,conj1).
 arc(r_0123_0008__and,r_0123_0009__sat,conj2).
 arc(r_0123_0009__sat,r_0121_0003__I,arg0).
 arc(r_0123_0009__sat,r_0123_0012__time,tmp).
@@ -1318,25 +1320,25 @@ arc(r_0124_0017__stranger,r_0124_0016__distinguished,attrib3).
 arc(r_0125_0001__so,r_0125_0003__enjoyed,scope).
 arc(r_0125_0003__enjoyed,r_0121_0003__I,arg0).
 arc(r_0125_0003__enjoyed,r_0121_0003__I,arg1).
+arc(r_0125_0003__enjoyed,r_0121_1054,mnr).
 arc(r_0125_0003__enjoyed,r_0129_0002__Swallow__r_0129_0004__Swallow,arg0).
 arc(r_0125_0003__enjoyed,r_0129_0002__Swallow__r_0129_0004__Swallow,arg1).
 arc(r_0125_0003__enjoyed,skc13,arg0).
 arc(r_0125_0003__enjoyed,skc13,arg1).
-arc(r_0125_0003__enjoyed,z_0121_1054,mnr).
 arc(r_0125_0006__much,r_0125_0005__very,quality1).
+arc(r_0126_0004__rose,r_0121_1059,tmp1).
 arc(r_0126_0004__rose,r_0126_0003__moon,arg0).
-arc(r_0126_0004__rose,z_0121_1059,tmp1).
 arc(r_0126_0006__flew,r_0121_0003__I,arg0).
+arc(r_0126_0006__flew,r_0121_1059,tmp).
 arc(r_0126_0006__flew,r_0126_0007__back,dir4).
 arc(r_0126_0006__flew,r_0129_0002__Swallow__r_0129_0004__Swallow,arg0).
 arc(r_0126_0006__flew,skc13,arg0).
-arc(r_0126_0006__flew,z_0121_1059,tmp).
 arc(r_0126_0007__back,r_0126_0011__Prince,r_0126_0008__to).
 arc(r_0126_0011__Prince,r_0126_0010__Happy,attrib2).
 arc(r_0127_0002__Have,r_0126_0011__Prince,arg0).
 arc(r_0127_0002__Have,r_0127_0005__commissions,arg1).
-arc(r_0127_0004__quantificational__r_0127_0004__any,r_0127_0002__Have,scope).
-arc(r_0127_0004__quantificational__r_0127_0004__any,r_0127_0005__commissions,restriction).
+arc(r_0127_0004__quantificational__any,r_0127_0002__Have,scope).
+arc(r_0127_0004__quantificational__any,r_0127_0005__commissions,restriction).
 arc(r_0127_0005__commissions,r_0127_0007__Egypt,r_0127_0006__for).
 arc(r_0127_0011__cried,r_0121_0003__I,arg0).
 arc(r_0127_0011__cried,r_0121_1067__utterance,arg1).
@@ -1368,8 +1370,6 @@ arc(r_0131_0006__fly,r_0131_0002__To_morrow,tmp).
 arc(r_0131_0006__fly,r_0131_0004__friends,arg0).
 arc(r_0131_0006__fly,r_0131_0007__up,dir6).
 arc(r_0131_0006__fly,r_0131_0010__Second__r_0131_0011__Cataract,r_0131_0008__to_loc).
-arc(z_0121_1043,r_0124_0017__stranger,z_0121_1040).
-arc(z_0121_1054,r_0125_0006__much,attrib1).
 
 </pre>
 <br>
@@ -1386,14 +1386,14 @@ fof(id__121_A_WILDE_1_1888__122_A_WILDE_1_1888__123_A_WILDE_1_1888__124_A_WILDE_
       &amp; STATEX34 = CONJX45
       &amp; isA(CONJX45,r_0121_1036__utterance)
       &amp; part1(CONJX45) = EVENTX44
-      &amp; isA(EVENTX44,z_0121_1043)
-      &amp; z_0121_1040(EVENTX44) = ENTITYX41
+      &amp; isA(EVENTX44,r_0121_1043)
+      &amp; r_0121_1040(EVENTX44) = ENTITYX41
       &amp; STATEX65 = CONJX74
       &amp; isA(CONJX74,r_0121_1067__utterance)
       &amp; part1(CONJX74) = OPERATORX69
       &amp; isA(OPERATORX69,r_0121_1069__question)
       &amp; scope(OPERATORX69) = QUANTX72
-      &amp; isA(QUANTX72,r_0127_0004__quantificational__r_0127_0004__any)
+      &amp; isA(QUANTX72,r_0127_0004__quantificational__any)
       &amp; restriction(QUANTX72) = ENTITYX71
       &amp; isA(ENTITYX71,r_0127_0005__commissions)
       &amp; r_0127_0006__for(ENTITYX71) = r_0127_0007__Egypt
@@ -1419,7 +1419,7 @@ fof(id__121_A_WILDE_1_1888__122_A_WILDE_1_1888__123_A_WILDE_1_1888__124_A_WILDE_
       &amp; r_0130_0006__in_loc(EVENTX103) = r_0130_0007__Egypt
       &amp; isA(ENTITYX4,r_0121_0002__To_night)
       &amp; isA(ENTITYX7,r_0121_0011__Swallow)
-      &amp; z_0121_1009(ENTITYX7) = SWALLOWX10
+      &amp; r_0121_1009(ENTITYX7) = SWALLOWX10
       &amp; SWALLOWX10 = r_0121_0003__I
       &amp; SWALLOWX12 = r_0121_0003__I
       &amp; isA(ENTITYX13,r_0122_0006__spirits)
@@ -1438,12 +1438,12 @@ fof(id__121_A_WILDE_1_1888__122_A_WILDE_1_1888__123_A_WILDE_1_1888__124_A_WILDE_
       &amp; SWALLOWX49 = r_0121_0003__I
       &amp; ( SWALLOWX50 = r_0121_0003__I
         | SWALLOWX50 = SWALLOWX49 )
-      &amp; isA(ENTITYX51,z_0121_1054)
+      &amp; isA(ENTITYX51,r_0121_1054)
       &amp; attrib1(ENTITYX51) = ATTRIBX52
       &amp; isA(EVENTX58,r_0126_0004__rose)
       &amp; tmp1(EVENTX58) = ENTITYX56
       &amp; arg0(EVENTX58) = ENTITYX57
-      &amp; isA(ENTITYX56,z_0121_1059)
+      &amp; isA(ENTITYX56,r_0121_1059)
       &amp; isA(ENTITYX57,r_0126_0003__moon)
       &amp; SWALLOWX60 = r_0121_0003__I
       &amp; isA(PRINCEX62,r_0126_0011__Prince)
@@ -1492,7 +1492,7 @@ fof(id__121_A_WILDE_1_1888__122_A_WILDE_1_1888__123_A_WILDE_1_1888__124_A_WILDE_
       &amp; r_0122_0004__in_prd2(EVENTX16) = ENTITYX13
       &amp; isA(CONJX26,r_0123_0008__and)
       &amp; conj1(CONJX26) = QUANTX19
-      &amp; isA(QUANTX19,r_0123_0003__quantificational__r_0123_0003__all)
+      &amp; isA(QUANTX19,r_0123_0003__quantificational__all)
       &amp; restriction(QUANTX19) = ENTITYX18
       &amp; isA(ENTITYX18,r_0123_0006__monuments)
       &amp; attrib3(ENTITYX18) = ATTRIBX20

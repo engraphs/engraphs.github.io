@@ -467,10 +467,10 @@ arc(r_0019_0020__spent,r_0019_0021__months,arg1).
 arc(r_0019_0022__watching,r_0019_0002__I,arg0).
 arc(r_0019_0022__watching,r_0019_0024__river,arg1).
 arc(r_0019_0022__watching,r_0019_0028__moods,r_0019_0025__in_mnr).
-arc(r_0019_0026__quantificational__r_0019_0026__all,r_0019_0022__watching,scope).
-arc(r_0019_0026__quantificational__r_0019_0026__all,r_0019_0028__moods,restriction).
+arc(r_0019_0026__quantificational__all,r_0019_0022__watching,scope).
+arc(r_0019_0026__quantificational__all,r_0019_0028__moods,restriction).
 arc(r_0019_0028__moods,r_0019_0024__river,genv).
-arc(r_0019_0028__moods,z_0019_1032,r_0019_0030__with).
+arc(r_0019_0028__moods,r_0019_1032,r_0019_0030__with).
 arc(r_0019_0032__and,r_0019_0031__birds,conj1).
 arc(r_0019_0032__and,r_0019_0034__trout,conj2).
 arc(r_0019_0032__and,r_0019_0036__courtiers,prn2).
@@ -481,9 +481,9 @@ arc(r_0019_0039__and,r_0019_0040__alder,conj2).
 arc(r_0019_0039__and,r_0019_0042__sentinels,prn2).
 arc(r_0019_0042__sentinels,r_0019_0024__river,genv).
 arc(r_0019_1014__cnt,r_0019_0020__spent,scope).
-arc(r_0019_1014__cnt,r_0019_0026__quantificational__r_0019_0026__all,restriction).
-arc(z_0019_1032,r_0019_0032__and,conj1).
-arc(z_0019_1032,r_0019_0039__and,conj2).
+arc(r_0019_1014__cnt,r_0019_0026__quantificational__all,restriction).
+arc(r_0019_1032,r_0019_0032__and,conj1).
+arc(r_0019_1032,r_0019_0039__and,conj2).
 
 </pre>
 <br>
@@ -504,7 +504,7 @@ fof(id__19_A_Alresford,axiom,
       &amp; isA(ENTITYX13,r_0019_0021__months)
       &amp; isA(RIVERX16,r_0019_0024__river)
       &amp; RIVERX19 = RIVERX16
-      &amp; isA(ENTITYX20,z_0019_1032)
+      &amp; isA(ENTITYX20,r_0019_1032)
       &amp; conj1(ENTITYX20) = ENTITYX21
       &amp; conj2(ENTITYX20) = ENTITYX27
       &amp; isA(ENTITYX21,r_0019_0032__and)
@@ -547,7 +547,7 @@ fof(id__19_A_Alresford,axiom,
       &amp; arg0(EVENTX34) = SPEAKERX12
       &amp; arg1(EVENTX34) = ENTITYX13
       &amp; restriction(CONNX15) = QUANTX18
-      &amp; isA(QUANTX18,r_0019_0026__quantificational__r_0019_0026__all)
+      &amp; isA(QUANTX18,r_0019_0026__quantificational__all)
       &amp; restriction(QUANTX18) = ENTITYX17
       &amp; isA(ENTITYX17,r_0019_0028__moods)
       &amp; genv(ENTITYX17) = RIVERX19

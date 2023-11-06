@@ -579,14 +579,15 @@ It also encourages monster in-fighting ; if done effectively , they 'll spend th
 <pre>
 arc(r_0044_0003__instinct,r_0044_0002__primary,attrib2).
 arc(r_0044_0003__instinct,r_0044_0006__monsters,r_0044_0004__of).
-arc(r_0044_0005__quantificational__r_0044_0005__all,r_0044_0003__instinct,scope).
-arc(r_0044_0005__quantificational__r_0044_0005__all,r_0044_0006__monsters,restriction).
+arc(r_0044_0005__quantificational__all,r_0044_0003__instinct,scope).
+arc(r_0044_0005__quantificational__all,r_0044_0006__monsters,restriction).
 arc(r_0044_0007__is,r_0044_0003__instinct,arg0).
 arc(r_0044_0007__is,r_0044_0009__move,prd2).
 arc(r_0044_0009__move,r_0044_0011__you,r_0044_0010__towards_dir).
 arc(r_0044_1013__imperative,r_0045_0001__Circle,scope).
 arc(r_0044_1044__mnr,r_0046_0013__spend,scope).
-arc(r_0044_1044__mnr,r_0046_0017__quantificational__r_0046_0017__each,restriction).
+arc(r_0044_1044__mnr,r_0046_0017__quantificational__each,restriction).
+arc(r_0044_1049,r_0046_0018__other,attrib2).
 arc(r_0045_0001__Circle,r_0045_0004__crowd,r_0045_0002__around_dir).
 arc(r_0045_0001__Circle,r_0045_0005__continually,mnr3).
 arc(r_0045_0001__Circle,r_0045_0008__encourages,prn5).
@@ -610,16 +611,15 @@ arc(r_0046_0012___apos_ll,r_0044_1044__mnr,scope).
 arc(r_0046_0013__spend,r_0046_0011__they,arg0).
 arc(r_0046_0013__spend,r_0046_0015__energy,arg1).
 arc(r_0046_0015__energy,r_0046_0011__they,genv).
+arc(r_0046_0016__killing,r_0044_1049,arg1).
 arc(r_0046_0016__killing,r_0046_0011__they,arg0).
-arc(r_0046_0016__killing,z_0044_1049,arg1).
-arc(r_0046_0017__quantificational__r_0046_0017__each,r_0046_0016__killing,scope).
-arc(r_0046_0017__quantificational__r_0046_0017__each,z_0044_1049,restriction).
+arc(r_0046_0017__quantificational__each,r_0044_1049,restriction).
+arc(r_0046_0017__quantificational__each,r_0046_0016__killing,scope).
 arc(r_0046_0019__and,r_0046_0012___apos_ll,conj1).
 arc(r_0046_0019__and,r_0046_0021___apos_ll,conj2).
 arc(r_0046_0021___apos_ll,r_0046_0022__save,scope).
 arc(r_0046_0022__save,r_0044_0011__you,arg0).
 arc(r_0046_0022__save,r_0046_0024__ammunition,r_0046_0023__on_clr).
-arc(z_0044_1049,r_0046_0018__other,attrib2).
 
 </pre>
 <br>
@@ -657,9 +657,9 @@ fof(id__44_A_Freedoom__45_A_Freedoom__46_A_Freedoom,axiom,
       &amp; arg0(EVENTX51) = r_0046_0011__they
       &amp; arg1(EVENTX51) = ENTITYX41
       &amp; restriction(CONNX45) = QUANTX47
-      &amp; isA(QUANTX47,r_0046_0017__quantificational__r_0046_0017__each)
+      &amp; isA(QUANTX47,r_0046_0017__quantificational__each)
       &amp; restriction(QUANTX47) = ENTITYX46
-      &amp; isA(ENTITYX46,z_0044_1049)
+      &amp; isA(ENTITYX46,r_0044_1049)
       &amp; attrib2(ENTITYX46) = ATTRIBX48
       &amp; scope(QUANTX47) = EVENTX50
       &amp; isA(EVENTX50,r_0046_0016__killing)
@@ -672,7 +672,7 @@ fof(id__44_A_Freedoom__45_A_Freedoom__46_A_Freedoom,axiom,
       &amp; arg0(EVENTX55) = HEARERX52
       &amp; arg0(EVENTX55) = HEARERX52
       &amp; r_0046_0023__on_clr(EVENTX55) = ENTITYX53
-      &amp; isA(QUANTX4,r_0044_0005__quantificational__r_0044_0005__all)
+      &amp; isA(QUANTX4,r_0044_0005__quantificational__all)
       &amp; restriction(QUANTX4) = ENTITYX3
       &amp; isA(ENTITYX3,r_0044_0006__monsters)
       &amp; scope(QUANTX4) = ENTITYX1

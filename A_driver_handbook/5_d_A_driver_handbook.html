@@ -1056,11 +1056,13 @@ arc(r_0007_0023__cited,r_0007_0025__driving,r_0007_0024__for_rst).
 arc(r_0007_0025__driving,r_0007_0028__fast,mnr3).
 arc(r_0007_0028__fast,r_0007_0027__too,quality1).
 arc(r_0007_0028__fast,r_0007_0030__conditions,r_0007_0029__for).
+arc(r_0007_1051__utterance,r_0007_1062,part1).
 arc(r_0007_1051__utterance,r_0007_1065__question,part2).
+arc(r_0007_1051__utterance,r_0007_1089,part3).
 arc(r_0007_1051__utterance,r_0007_1092__question,part4).
-arc(r_0007_1051__utterance,z_0007_1062,part1).
-arc(r_0007_1051__utterance,z_0007_1089,part3).
+arc(r_0007_1062,r_0009_0016__and,r_0007_1055).
 arc(r_0007_1065__question,r_0009_0029__is,scope).
+arc(r_0007_1089,r_0009_0046__or,r_0007_1079).
 arc(r_0007_1092__question,r_0009_0061__is,scope).
 arc(r_0008_0002__may,r_0008_0005__drive,scope).
 arc(r_0008_0005__drive,r_0007_0004__you,arg0).
@@ -1116,8 +1118,6 @@ arc(r_0009_0070__or,r_0009_0064__foggy,conj2).
 arc(r_0009_0070__or,r_0009_0066__snowy,conj3).
 arc(r_0009_0070__or,r_0009_0068__windy,conj4).
 arc(r_0009_0070__or,r_0009_0071__dusty,conj5).
-arc(z_0007_1062,r_0009_0016__and,z_0007_1055).
-arc(z_0007_1089,r_0009_0046__or,z_0007_1079).
 
 </pre>
 <br>
@@ -1149,8 +1149,8 @@ fof(id__7_A_driver_handbook__8_A_driver_handbook__9_A_driver_handbook,axiom,
       &amp; EVENTX49 = CONJX101
       &amp; isA(CONJX101,r_0007_1051__utterance)
       &amp; part1(CONJX101) = EVENTX63
-      &amp; isA(EVENTX63,z_0007_1062)
-      &amp; z_0007_1055(EVENTX63) = ENTITYX56
+      &amp; isA(EVENTX63,r_0007_1062)
+      &amp; r_0007_1055(EVENTX63) = ENTITYX56
       &amp; part2(CONJX101) = OPERATORX65
       &amp; isA(OPERATORX65,r_0007_1065__question)
       &amp; scope(OPERATORX65) = EVENTX75
@@ -1158,8 +1158,8 @@ fof(id__7_A_driver_handbook__8_A_driver_handbook__9_A_driver_handbook,axiom,
       &amp; arg0(EVENTX75) = ENTITYX66
       &amp; prd2(EVENTX75) = ATTRIBX67
       &amp; part3(CONJX101) = EVENTX90
-      &amp; isA(EVENTX90,z_0007_1089)
-      &amp; z_0007_1079(EVENTX90) = ENTITYX80
+      &amp; isA(EVENTX90,r_0007_1089)
+      &amp; r_0007_1079(EVENTX90) = ENTITYX80
       &amp; part4(CONJX101) = OPERATORX92
       &amp; isA(OPERATORX92,r_0007_1092__question)
       &amp; scope(OPERATORX92) = EVENTX100

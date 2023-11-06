@@ -371,29 +371,29 @@ It has brought about a lot of changes in my country , but many of them , for me 
 arc(r_0001_0004__bring,r_0001_0001__What,arg1).
 arc(r_0001_0004__bring,r_0001_0003__migration,arg0).
 arc(r_0001_1002__question,r_0001_0004__bring,scope).
+arc(r_0001_1022,r_0003_0007__changes,r_0003_0006__of).
+arc(r_0001_1028,r_0003_0007__changes,r_0003_0014__of).
+arc(r_0001_1028,r_0003_0013__many,attrib1).
 arc(r_0002_0004__think,r_0002_0002__personally,mnr2).
 arc(r_0002_0004__think,r_0002_0003__I,arg0).
 arc(r_0002_0004__think,r_0002_0006___apos_s,arg1).
 arc(r_0002_0006___apos_s,r_0001_0003__migration,arg0).
 arc(r_0002_0006___apos_s,r_0002_0009__thing,prd2).
 arc(r_0002_0009__thing,r_0002_0008__great,attrib2).
-arc(r_0003_0002__has,r_0003_0005__quantificational__r_0003_0005__a_lot,catenative).
+arc(r_0003_0002__has,r_0003_0005__quantificational__a_lot,catenative).
 arc(r_0003_0003__brought__r_0003_0004__about,r_0001_0003__migration,arg0).
-arc(r_0003_0003__brought__r_0003_0004__about,z_0001_1022,arg1).
-arc(r_0003_0005__quantificational__r_0003_0005__a_lot,r_0003_0003__brought__r_0003_0004__about,scope).
-arc(r_0003_0005__quantificational__r_0003_0005__a_lot,z_0001_1022,restriction).
+arc(r_0003_0003__brought__r_0003_0004__about,r_0001_1022,arg1).
+arc(r_0003_0005__quantificational__a_lot,r_0001_1022,restriction).
+arc(r_0003_0005__quantificational__a_lot,r_0003_0003__brought__r_0003_0004__about,scope).
 arc(r_0003_0007__changes,r_0003_0010__country,r_0003_0008__in).
 arc(r_0003_0010__country,r_0002_0003__I,genv).
 arc(r_0003_0012__but,r_0003_0002__has,conj1).
 arc(r_0003_0012__but,r_0003_0019__at_least,conj2).
 arc(r_0003_0019__at_least,r_0003_0020__are,scope).
+arc(r_0003_0020__are,r_0001_1028,arg0).
 arc(r_0003_0020__are,r_0002_0003__I,r_0003_0017__for_rst).
 arc(r_0003_0020__are,r_0003_0022__benefits,prd2).
-arc(r_0003_0020__are,z_0001_1028,arg0).
 arc(r_0003_0022__benefits,r_0003_0021__real,attrib1).
-arc(z_0001_1022,r_0003_0007__changes,r_0003_0006__of).
-arc(z_0001_1028,r_0003_0007__changes,r_0003_0014__of).
-arc(z_0001_1028,r_0003_0013__many,attrib1).
 
 </pre>
 <br>
@@ -405,9 +405,9 @@ fof(id__1_A_OPENCities__2_A_OPENCities__3_A_OPENCities,axiom,
       &amp; arg0(EVENTX11) = MIGRATIONX8
       &amp; prd2(EVENTX11) = ENTITYX9
       &amp; CATENATIVEX16 = QUANTX18
-      &amp; isA(QUANTX18,r_0003_0005__quantificational__r_0003_0005__a_lot)
+      &amp; isA(QUANTX18,r_0003_0005__quantificational__a_lot)
       &amp; restriction(QUANTX18) = ENTITYX17
-      &amp; isA(ENTITYX17,z_0001_1022)
+      &amp; isA(ENTITYX17,r_0001_1022)
       &amp; r_0003_0006__of(ENTITYX17) = CHANGESX19
       &amp; scope(QUANTX18) = EVENTX23
       &amp; isA(EVENTX23,r_0003_0003__brought__r_0003_0004__about)
@@ -424,7 +424,7 @@ fof(id__1_A_OPENCities__2_A_OPENCities__3_A_OPENCities,axiom,
       &amp; isA(ENTITYX20,r_0003_0010__country)
       &amp; genv(ENTITYX20) = SPEAKERX21
       &amp; SPEAKERX21 = r_0002_0003__I
-      &amp; isA(ENTITYX25,z_0001_1028)
+      &amp; isA(ENTITYX25,r_0001_1028)
       &amp; attrib1(ENTITYX25) = ATTRIBX26
       &amp; r_0003_0014__of(ENTITYX25) = CHANGESX27
       &amp; CHANGESX27 = CHANGESX19

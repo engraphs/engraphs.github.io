@@ -658,21 +658,25 @@ arc(r_0007_0002__is,r_0007_0001__One,arg0).
 arc(r_0007_0002__is,r_0007_0005__evidence,prd2).
 arc(r_0007_0005__evidence,r_0007_0004__extraordinary,attrib2).
 arc(r_0007_0005__evidence,r_0007_0008__creativity,r_0007_0006__of).
-arc(r_0007_0005__evidence,r_0007_0018__and,z_0007_1007).
+arc(r_0007_0005__evidence,r_0007_0018__and,r_0007_1007).
 arc(r_0007_0008__creativity,r_0007_0007__human,attrib1).
-arc(r_0007_0010__quantificational__r_0007_0010__all,r_0007_0020__quantificational__r_0007_0020__all,scope).
-arc(r_0007_0010__quantificational__r_0007_0010__all,z_0007_1015,restriction).
+arc(r_0007_0010__quantificational__all,r_0007_0020__quantificational__all,scope).
+arc(r_0007_0010__quantificational__all,r_0007_1015,restriction).
 arc(r_0007_0016___apos_ve,r_0007_0017__had,catenative).
 arc(r_0007_0017__had,r_0007_0013__presentations,arg1).
 arc(r_0007_0017__had,r_0007_0015__we,arg0).
-arc(r_0007_0018__and,z_0007_1015,r_0007_0009__in).
-arc(r_0007_0018__and,z_0007_1020,r_0007_0019__in).
-arc(r_0007_0020__quantificational__r_0007_0020__all,r_0007_0018__and,scope).
-arc(r_0007_0020__quantificational__r_0007_0020__all,z_0007_1020,restriction).
+arc(r_0007_0018__and,r_0007_1015,r_0007_0009__in).
+arc(r_0007_0018__and,r_0007_1020,r_0007_0019__in).
+arc(r_0007_0020__quantificational__all,r_0007_0018__and,scope).
+arc(r_0007_0020__quantificational__all,r_0007_1020,restriction).
 arc(r_0007_0023__people,r_0007_0024__here,loc3).
+arc(r_0007_1015,r_0007_0013__presentations,r_0007_0011__of).
+arc(r_0007_1020,r_0007_0023__people,r_0007_0021__of).
+arc(r_0007_1032,r_0008_0006__and,r_0007_1026).
 arc(r_0007_1045__question,r_0009_0018___apos_s,scope).
 arc(r_0007_1065__question,r_0010_0005__may,scope).
-arc(r_0008_0001__Just,z_0007_1032,scope).
+arc(r_0007_1070,r_0010_0002__idea,r_0007_1060).
+arc(r_0008_0001__Just,r_0007_1032,scope).
 arc(r_0008_0003__variety,r_0007_0008__creativity,r_0008_0004__of).
 arc(r_0008_0006__and,r_0008_0003__variety,conj1).
 arc(r_0008_0006__and,r_0008_0008__range,conj2).
@@ -686,23 +690,19 @@ arc(r_0009_0007__put,r_0009_0011__place,r_0009_0009__in_loc).
 arc(r_0009_0014__have,r_0007_0015__we,arg0).
 arc(r_0009_0014__have,r_0009_0011__place,loc1).
 arc(r_0009_0014__have,r_0009_0016__idea,arg1).
-arc(r_0009_0015__quantificational__r_0009_0015__no,r_0009_0014__have,scope).
-arc(r_0009_0015__quantificational__r_0009_0015__no,r_0009_0016__idea,restriction).
+arc(r_0009_0015__quantificational__no,r_0009_0014__have,scope).
+arc(r_0009_0015__quantificational__no,r_0009_0016__idea,restriction).
 arc(r_0009_0016__idea,r_0007_1045__question,emb3).
 arc(r_0009_0018___apos_s,r_0009_0019__going,catenative).
 arc(r_0009_0019__going,r_0009_0021__happen,catenative).
 arc(r_0009_0021__happen,r_0009_0017__what,arg0).
 arc(r_0009_0021__happen,r_0009_0025__future,r_0009_0023__in_terms_of_mnr).
-arc(r_0010_0001__quantificational__r_0010_0001__No,r_0010_0002__idea,restriction).
-arc(r_0010_0001__quantificational__r_0010_0001__No,z_0007_1070,scope).
+arc(r_0010_0001__quantificational__No,r_0007_1070,scope).
+arc(r_0010_0001__quantificational__No,r_0010_0002__idea,restriction).
 arc(r_0010_0002__idea,r_0007_1065__question,emb3).
 arc(r_0010_0005__may,r_0010_0006__play__r_0010_0007__out,scope).
 arc(r_0010_0006__play__r_0010_0007__out,r_0009_0025__future,arg0).
 arc(r_0010_0006__play__r_0010_0007__out,r_0010_0003__how,mnr1).
-arc(z_0007_1015,r_0007_0013__presentations,r_0007_0011__of).
-arc(z_0007_1020,r_0007_0023__people,r_0007_0021__of).
-arc(z_0007_1032,r_0008_0006__and,z_0007_1026).
-arc(z_0007_1070,r_0010_0002__idea,z_0007_1060).
 
 </pre>
 <br>
@@ -745,17 +745,17 @@ fof(id__7_A_TED_talk_11__8_A_TED_talk_11__9_A_TED_talk_11__10_A_TED_talk_11,axio
       &amp; isA(ENTITYX2,r_0007_0005__evidence)
       &amp; attrib2(ENTITYX2) = ATTRIBX4
       &amp; r_0007_0006__of(ENTITYX2) = CREATIVITYX5
-      &amp; z_0007_1007(ENTITYX2) = CONJX8
+      &amp; r_0007_1007(ENTITYX2) = CONJX8
       &amp; isA(CREATIVITYX5,r_0007_0008__creativity)
       &amp; attrib1(CREATIVITYX5) = ATTRIBX6
-      &amp; isA(QUANTX10,r_0007_0010__quantificational__r_0007_0010__all)
+      &amp; isA(QUANTX10,r_0007_0010__quantificational__all)
       &amp; restriction(QUANTX10) = ENTITYX9
-      &amp; isA(ENTITYX9,z_0007_1015)
+      &amp; isA(ENTITYX9,r_0007_1015)
       &amp; r_0007_0011__of(ENTITYX9) = ENTITYX11
       &amp; scope(QUANTX10) = QUANTX17
-      &amp; isA(QUANTX17,r_0007_0020__quantificational__r_0007_0020__all)
+      &amp; isA(QUANTX17,r_0007_0020__quantificational__all)
       &amp; restriction(QUANTX17) = ENTITYX16
-      &amp; isA(ENTITYX16,z_0007_1020)
+      &amp; isA(ENTITYX16,r_0007_1020)
       &amp; r_0007_0021__of(ENTITYX16) = ENTITYX18
       &amp; scope(QUANTX17) = CONJX8
       &amp; isA(CONJX8,r_0007_0018__and)
@@ -778,7 +778,7 @@ fof(id__7_A_TED_talk_11__8_A_TED_talk_11__9_A_TED_talk_11__10_A_TED_talk_11,axio
       &amp; isA(ENTITYX34,r_0009_0002__second)
       &amp; CREATIVITYX36 = CREATIVITYX5
       &amp; SPEAKER_AND_HEARERX38 = r_0007_0015__we
-      &amp; isA(QUANTX42,r_0009_0015__quantificational__r_0009_0015__no)
+      &amp; isA(QUANTX42,r_0009_0015__quantificational__no)
       &amp; restriction(QUANTX42) = ENTITYX41
       &amp; isA(ENTITYX41,r_0009_0016__idea)
       &amp; emb3(ENTITYX41) = STATEX43
@@ -802,18 +802,18 @@ fof(id__7_A_TED_talk_11__8_A_TED_talk_11__9_A_TED_talk_11__10_A_TED_talk_11,axio
       &amp; prd2(EVENTX21) = ENTITYX2
       &amp; isA(OPERATORX25,r_0008_0001__Just)
       &amp; scope(OPERATORX25) = EVENTX33
-      &amp; isA(EVENTX33,z_0007_1032)
-      &amp; z_0007_1026(EVENTX33) = ENTITYX27
+      &amp; isA(EVENTX33,r_0007_1032)
+      &amp; r_0007_1026(EVENTX33) = ENTITYX27
       &amp; isA(EVENTX56,r_0009_0003__is)
       &amp; arg0(EVENTX56) = ENTITYX34
       &amp; prd2(EVENTX56) = STATEX35
-      &amp; isA(QUANTX62,r_0010_0001__quantificational__r_0010_0001__No)
+      &amp; isA(QUANTX62,r_0010_0001__quantificational__No)
       &amp; restriction(QUANTX62) = ENTITYX61
       &amp; isA(ENTITYX61,r_0010_0002__idea)
       &amp; emb3(ENTITYX61) = STATEX63
       &amp; scope(QUANTX62) = EVENTX71
-      &amp; isA(EVENTX71,z_0007_1070)
-      &amp; z_0007_1060(EVENTX71) = ENTITYX61 ) ).
+      &amp; isA(EVENTX71,r_0007_1070)
+      &amp; r_0007_1060(EVENTX71) = ENTITYX61 ) ).
 
 
 </pre>

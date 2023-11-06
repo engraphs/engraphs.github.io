@@ -1373,7 +1373,8 @@ arc(r_0210_0019__loved,r_0210_0022__well,mnr4).
 arc(r_0210_0022__well,r_0210_0021__too,quality1).
 arc(r_0210_1056__cnt,r_0213_0002__had,scope).
 arc(r_0210_1056__cnt,r_0213_0006__fly__r_0213_0007__up,restriction).
-arc(r_0210_1065__utterance,z_0210_1073,part1).
+arc(r_0210_1065__utterance,r_0210_1073,part1).
+arc(r_0210_1073,r_0214_0005__Prince,voc).
 arc(r_0210_1079__question,r_0215_0002__will,scope).
 arc(r_0210_1092__utterance,r_0216_0003__am,part1).
 arc(r_0210_1131__utterance,r_0218_0004__not,part1).
@@ -1411,7 +1412,7 @@ arc(r_0213_0006__fly__r_0213_0007__up,r_0210_0004__Swallow,arg0).
 arc(r_0213_0006__fly__r_0213_0007__up,r_0213_0012__shoulder,r_0213_0008__to_loc).
 arc(r_0213_0006__fly__r_0213_0007__up,r_0213_0013__once_more,tmp5).
 arc(r_0213_0012__shoulder,r_0213_0010__Prince,genv).
-arc(r_0214_0005__Prince,r_0210_0016__Prince,z_0210_1070).
+arc(r_0214_0005__Prince,r_0210_0016__Prince,r_0210_1070).
 arc(r_0214_0005__Prince,r_0214_0004__dear,attrib2).
 arc(r_0214_0009__murmured,r_0210_0004__Swallow,arg0).
 arc(r_0214_0009__murmured,r_0210_1065__utterance,arg1).
@@ -1429,7 +1430,7 @@ arc(r_0216_0007__are,r_0216_0008__going,catenative).
 arc(r_0216_0008__going,r_0210_0004__Swallow,arg0).
 arc(r_0216_0008__going,r_0216_0010__Egypt,r_0216_0009__to_dir).
 arc(r_0216_0008__going,r_0216_0011__at_last,tmp3).
-arc(r_0216_0014__Swallow,r_0210_0004__Swallow,z_0210_1095).
+arc(r_0216_0014__Swallow,r_0210_0004__Swallow,r_0210_1095).
 arc(r_0216_0014__Swallow,r_0216_0013__little,attrib2).
 arc(r_0216_0017__said,r_0210_0016__Prince,arg0).
 arc(r_0216_0017__said,r_0210_1092__utterance,arg1).
@@ -1448,19 +1449,18 @@ arc(r_0217_0018__for_cnt,r_0217_0011__must,scope).
 arc(r_0217_0018__for_cnt,r_0217_0020__love,restriction).
 arc(r_0217_0020__love,r_0210_0004__Swallow,arg1).
 arc(r_0217_0020__love,r_0210_0016__Prince,arg0).
+arc(r_0218_0003__is,r_0210_1138,clf).
 arc(r_0218_0003__is,r_0218_0006__Egypt,r_0218_0005__to_foc).
-arc(r_0218_0003__is,z_0210_1138,clf).
 arc(r_0218_0004__not,r_0218_0003__is,scope).
 arc(r_0218_0009__am,r_0218_0010__going,catenative).
 arc(r_0218_0010__going,r_0210_0004__Swallow,arg0).
-arc(r_0218_0010__going,z_0210_1138,dir).
+arc(r_0218_0010__going,r_0210_1138,dir).
 arc(r_0218_0013__said,r_0210_0004__Swallow,arg0).
 arc(r_0218_0013__said,r_0210_1131__utterance,arg1).
 arc(r_0219_0003__am,r_0219_0004__going,catenative).
 arc(r_0219_0004__going,r_0210_0004__Swallow,arg0).
 arc(r_0219_0004__going,r_0219_0007__House,r_0219_0005__to_dir).
 arc(r_0219_0007__House,r_0219_0009__Death,r_0219_0008__of).
-arc(z_0210_1073,r_0214_0005__Prince,voc).
 
 </pre>
 <br>
@@ -1500,7 +1500,7 @@ fof(id__210_A_WILDE_1_1888__211_A_WILDE_1_1888__212_A_WILDE_1_1888__213_A_WILDE_
       &amp; STATEX63 = CONJX75
       &amp; isA(CONJX75,r_0210_1065__utterance)
       &amp; part1(CONJX75) = EVENTX74
-      &amp; isA(EVENTX74,z_0210_1073)
+      &amp; isA(EVENTX74,r_0210_1073)
       &amp; voc(EVENTX74) = ENTITYX68
       &amp; STATEX82 = EVENTX87
       &amp; isA(EVENTX87,r_0215_0006__kiss)
@@ -1572,7 +1572,7 @@ fof(id__210_A_WILDE_1_1888__211_A_WILDE_1_1888__212_A_WILDE_1_1888__213_A_WILDE_
       &amp; genv(ENTITYX58) = ENTITYX59
       &amp; isA(ENTITYX59,r_0213_0010__Prince)
       &amp; isA(ENTITYX68,r_0214_0005__Prince)
-      &amp; z_0210_1070(ENTITYX68) = PRINCEX71
+      &amp; r_0210_1070(ENTITYX68) = PRINCEX71
       &amp; attrib2(ENTITYX68) = ATTRIBX72
       &amp; PRINCEX71 = PRINCEX11
       &amp; SWALLOWX76 = SWALLOWX3
@@ -1583,7 +1583,7 @@ fof(id__210_A_WILDE_1_1888__211_A_WILDE_1_1888__212_A_WILDE_1_1888__213_A_WILDE_
       &amp; ( PRINCEX86 = PRINCEX80
         | PRINCEX86 = PRINCEX11 )
       &amp; isA(ENTITYX93,r_0216_0014__Swallow)
-      &amp; z_0210_1095(ENTITYX93) = SWALLOWX96
+      &amp; r_0210_1095(ENTITYX93) = SWALLOWX96
       &amp; attrib2(ENTITYX93) = ATTRIBX97
       &amp; SWALLOWX96 = SWALLOWX3
       &amp; PRINCEX98 = PRINCEX11
@@ -1599,7 +1599,7 @@ fof(id__210_A_WILDE_1_1888__211_A_WILDE_1_1888__212_A_WILDE_1_1888__213_A_WILDE_
         | SWALLOWX124 = SWALLOWX3 )
       &amp; isA(EVENTX137,r_0218_0009__am)
       &amp; catenative(EVENTX137) = CATENATIVEX135
-      &amp; isA(ENTITYX133,z_0210_1138)
+      &amp; isA(ENTITYX133,r_0210_1138)
       &amp; SWALLOWX134 = SWALLOWX3
       &amp; SWALLOWX142 = SWALLOWX3
       &amp; SWALLOWX144 = SWALLOWX3

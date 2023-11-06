@@ -538,6 +538,9 @@ arc(r_0006_0015__turn,r_0006_0005__keyboard__r_0006_0006__cursor_r_0006_0007__ke
 arc(r_0006_0015__turn,r_0006_0017__and,dir2).
 arc(r_0006_0017__and,r_0006_0016__left,conj1).
 arc(r_0006_0017__and,r_0006_0018__right,conj2).
+arc(r_0006_1034,r_0006_0005__keyboard__r_0006_0006__cursor_r_0006_0007__keys,conj1).
+arc(r_0006_1034,r_0007_0002__Control__r_0007_0003__key,conj2).
+arc(r_0006_1034,r_0007_0011__spacebar,conj3).
 arc(r_0007_0004__fires,r_0007_0002__Control__r_0007_0003__key,arg0).
 arc(r_0007_0004__fires,r_0007_0007__weapon,arg1).
 arc(r_0007_0007__weapon,r_0007_0006__current,attrib2).
@@ -550,20 +553,17 @@ arc(r_0007_0015__and,r_0007_0013__open,conj1).
 arc(r_0007_0015__and,r_0007_0016__activate,conj2).
 arc(r_0007_0016__activate,r_0007_0011__spacebar,arg0).
 arc(r_0007_0016__activate,r_0007_0017__switches,arg1).
-arc(r_0008_0001__quantificational__r_0008_0001__All,r_0008_0002__source__r_0008_0003__ports,restriction).
-arc(r_0008_0001__quantificational__r_0008_0001__All,r_0008_0004__allow,scope).
+arc(r_0008_0001__quantificational__All,r_0008_0002__source__r_0008_0003__ports,restriction).
+arc(r_0008_0001__quantificational__All,r_0008_0004__allow,scope).
 arc(r_0008_0004__allow,r_0008_0002__source__r_0008_0003__ports,arg0).
 arc(r_0008_0004__allow,r_0008_0007__rebind,arg1).
+arc(r_0008_0007__rebind,r_0006_1034,arg1).
 arc(r_0008_0007__rebind,r_0008_0005__you,arg0).
 arc(r_0008_0007__rebind,r_0008_0015__setup,r_0008_0013__to_cnt).
-arc(r_0008_0007__rebind,z_0006_1034,arg1).
 arc(r_0008_0018__find,r_0008_0005__you,arg0).
 arc(r_0008_0018__find,r_0008_0015__setup,arg1).
 arc(r_0008_0018__find,r_0008_0020__comfortable,prd).
 arc(r_0008_0020__comfortable,r_0008_0019__more,quality1).
-arc(z_0006_1034,r_0006_0005__keyboard__r_0006_0006__cursor_r_0006_0007__keys,conj1).
-arc(z_0006_1034,r_0007_0002__Control__r_0007_0003__key,conj2).
-arc(z_0006_1034,r_0007_0011__spacebar,conj3).
 
 </pre>
 <br>
@@ -583,7 +583,7 @@ fof(id__6_A_Freedoom__7_A_Freedoom__8_A_Freedoom,axiom,
       &amp; isA(SPACEBARX19,r_0007_0011__spacebar)
       &amp; isA(ENTITYX21,r_0007_0014__doors)
       &amp; isA(ENTITYX23,r_0007_0017__switches)
-      &amp; isA(KEYSX30,z_0006_1034)
+      &amp; isA(KEYSX30,r_0006_1034)
       &amp; conj1(KEYSX30) = CURSOR_KEYSX31
       &amp; conj2(KEYSX30) = CONTROL_KEYX32
       &amp; conj3(KEYSX30) = SPACEBARX33
@@ -644,7 +644,7 @@ fof(id__6_A_Freedoom__7_A_Freedoom__8_A_Freedoom,axiom,
       &amp; arg0(EVENTX24) = SPACEBARX19
       &amp; arg0(EVENTX24) = SPACEBARX19
       &amp; arg1(EVENTX24) = ENTITYX23
-      &amp; isA(QUANTX28,r_0008_0001__quantificational__r_0008_0001__All)
+      &amp; isA(QUANTX28,r_0008_0001__quantificational__All)
       &amp; restriction(QUANTX28) = ENTITYX27
       &amp; isA(ENTITYX27,r_0008_0002__source__r_0008_0003__ports)
       &amp; scope(QUANTX28) = EVENTX42

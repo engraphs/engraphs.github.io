@@ -682,14 +682,16 @@ fatality rates are low but left untreated recovery can take months .
 <pre>
 arc(cnt_cnd_0058_1039,r_0061_0001__untreated,restriction).
 arc(cnt_cnd_0058_1039,r_0061_0005__can,scope).
+arc(cnt_cnd_0058_1050,r_0058_1057,restriction).
 arc(cnt_cnd_0058_1050,r_0062_0009__can,scope).
-arc(cnt_cnd_0058_1050,z_0058_1057,restriction).
 arc(r_0058_0001__Leptospirosis,r_0058_0004__disease,prn3).
 arc(r_0058_0004__disease,r_0058_0003__bacterial,attrib1).
 arc(r_0058_0006__affects,r_0058_0004__disease,arg0).
 arc(r_0058_0006__affects,r_0058_0008__and,arg1).
 arc(r_0058_0008__and,r_0058_0007__animals,conj1).
 arc(r_0058_0008__and,r_0058_0009__humans,conj2).
+arc(r_0058_1011,r_0058_0001__Leptospirosis,r_0058_1004).
+arc(r_0058_1057,r_0062_0006__left,catenative).
 arc(r_0059_0002__occurs,r_0059_0001__infection,arg0).
 arc(r_0059_0002__occurs,r_0059_0004__contact,r_0059_0003__through_mnr).
 arc(r_0059_0004__contact,r_0059_0010__or,r_0059_0005__with).
@@ -724,8 +726,6 @@ arc(r_0062_0006__left,r_0062_0007__untreated,prd).
 arc(r_0062_0009__can,r_0062_0010__take,scope).
 arc(r_0062_0010__take,r_0062_0008__recovery,arg0).
 arc(r_0062_0010__take,r_0062_0011__months,arg1).
-arc(z_0058_1011,r_0058_0001__Leptospirosis,z_0058_1004).
-arc(z_0058_1057,r_0062_0006__left,catenative).
 
 </pre>
 <br>
@@ -795,8 +795,8 @@ fof(id__58_A_FACTBOOK_1_2010__59_A_FACTBOOK_1_2010__60_A_FACTBOOK_1_2010__61_A_F
       &amp; isA(ATTRIBX38,r_0061_0017__respiratory)
       &amp; isA(ATTRIBX48,r_0062_0004__low)
       &amp; isA(ATTRIBX55,r_0062_0007__untreated)
-      &amp; isA(EVENTX12,z_0058_1011)
-      &amp; z_0058_1004(EVENTX12) = r_0058_0001__Leptospirosis
+      &amp; isA(EVENTX12,r_0058_1011)
+      &amp; r_0058_1004(EVENTX12) = r_0058_0001__Leptospirosis
       &amp; isA(EVENTX21,r_0059_0002__occurs)
       &amp; arg0(EVENTX21) = ENTITYX13
       &amp; r_0059_0003__through_mnr(EVENTX21) = ENTITYX14
@@ -822,7 +822,7 @@ fof(id__58_A_FACTBOOK_1_2010__59_A_FACTBOOK_1_2010__60_A_FACTBOOK_1_2010__61_A_F
       &amp; conj2(CONJX63) = CONNX51
       &amp; isA(CONNX51,cnt_cnd_0058_1050)
       &amp; restriction(CONNX51) = EVENTX58
-      &amp; isA(EVENTX58,z_0058_1057)
+      &amp; isA(EVENTX58,r_0058_1057)
       &amp; catenative(EVENTX58) = CATENATIVEX54
       &amp; scope(CONNX51) = OPERATORX61
       &amp; isA(OPERATORX61,r_0062_0009__can)

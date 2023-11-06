@@ -751,7 +751,7 @@ With its Zen Talks that try to awaken self awareness through study of Koan , it 
 <pre>
 arc(r_0002_0004__is,r_0002_0001__Rinzai__r_0002_0002__Zen_r_0002_0003__Buddhism,arg0).
 arc(r_0002_0004__is,r_0002_0005__one,prd2).
-arc(r_0002_0005__one,z_0002_1010,r_0002_0006__of).
+arc(r_0002_0005__one,r_0002_1010,r_0002_0006__of).
 arc(r_0002_0009__five__r_0002_0010__Houses,r_0002_0008__Chinese,attrib1).
 arc(r_0002_0012__seven__r_0002_0013__Schools,r_0002_0015__Zen,r_0002_0014__of).
 arc(r_0002_0027__and,r_0002_0004__is,conj1).
@@ -761,6 +761,14 @@ arc(r_0002_0028__Gigen__r_0002_0029__RINZAI,r_0002_0036__Tang,r_0002_0035__of).
 arc(r_0002_0037__was,r_0002_0028__Gigen__r_0002_0029__RINZAI,arg0).
 arc(r_0002_0037__was,r_0002_0039__founder,prd2).
 arc(r_0002_0039__founder,r_0002_0001__Rinzai__r_0002_0002__Zen_r_0002_0003__Buddhism,genv).
+arc(r_0002_1009,r_0002_0017__Rinzai,conj1).
+arc(r_0002_1009,r_0002_0019__Igyou,conj2).
+arc(r_0002_1009,r_0002_0021__Soto,conj3).
+arc(r_0002_1009,r_0002_0023__Unmon,conj4).
+arc(r_0002_1009,r_0002_0025__Hogan,conj5).
+arc(r_0002_1010,r_0002_0009__five__r_0002_0010__Houses,nlyr2).
+arc(r_0002_1010,r_0002_0012__seven__r_0002_0013__Schools,nlyr4).
+arc(r_0002_1010,r_0002_1009,prn6).
 arc(r_0003_0002__was,r_0003_0003__known,catenative).
 arc(r_0003_0003__known,r_0002_0028__Gigen__r_0002_0029__RINZAI,arg1).
 arc(r_0003_0003__known,r_0003_0020__and,r_0003_0004__as_prd).
@@ -797,14 +805,6 @@ arc(r_0004_0021__Zen,r_0004_0024__Soto__r_0004_0025__sect,r_0004_0022__of).
 arc(r_0004_0028__just,r_0004_0029__does,scope).
 arc(r_0004_0029__does,r_0004_0021__Zen,arg0).
 arc(r_0004_0029__does,r_0004_0030__meditation,arg1).
-arc(z_0002_1009,r_0002_0017__Rinzai,conj1).
-arc(z_0002_1009,r_0002_0019__Igyou,conj2).
-arc(z_0002_1009,r_0002_0021__Soto,conj3).
-arc(z_0002_1009,r_0002_0023__Unmon,conj4).
-arc(z_0002_1009,r_0002_0025__Hogan,conj5).
-arc(z_0002_1010,r_0002_0009__five__r_0002_0010__Houses,nlyr2).
-arc(z_0002_1010,r_0002_0012__seven__r_0002_0013__Schools,nlyr4).
-arc(z_0002_1010,z_0002_1009,prn6).
 
 </pre>
 <br>
@@ -829,7 +829,7 @@ fof(id__2_A_KYOTO_2,axiom,
       &amp; r_0004_0011__through_cnt(EVENTX43) = ENTITYX41
       &amp; isA(ENTITYX3,r_0002_0005__one)
       &amp; r_0002_0006__of(ENTITYX3) = ENTITYX4
-      &amp; isA(ENTITYX4,z_0002_1010)
+      &amp; isA(ENTITYX4,r_0002_1010)
       &amp; nlyr2(ENTITYX4) = ENTITYX5
       &amp; nlyr4(ENTITYX4) = ENTITYX7
       &amp; prn6(ENTITYX4) = ENTITYX8
@@ -837,7 +837,7 @@ fof(id__2_A_KYOTO_2,axiom,
       &amp; attrib1(ENTITYX5) = ATTRIBX6
       &amp; isA(ENTITYX7,r_0002_0012__seven__r_0002_0013__Schools)
       &amp; r_0002_0014__of(ENTITYX7) = r_0002_0015__Zen
-      &amp; isA(ENTITYX8,z_0002_1009)
+      &amp; isA(ENTITYX8,r_0002_1009)
       &amp; conj1(ENTITYX8) = r_0002_0017__Rinzai
       &amp; conj2(ENTITYX8) = r_0002_0019__Igyou
       &amp; conj3(ENTITYX8) = r_0002_0021__Soto

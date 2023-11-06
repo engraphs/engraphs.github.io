@@ -1075,6 +1075,8 @@ arc(r_0132_0047__in_order_cnt,r_0132_0049__feed,restriction).
 arc(r_0132_0049__feed,r_0132_0038__hedgehog,arg0).
 arc(r_0132_0049__feed,r_0132_0038__hedgehog,arg1).
 arc(r_0132_0049__feed,r_0132_0052__milk,r_0132_0051__on_mnr).
+arc(r_0132_1047,r_0132_0011__my,genv).
+arc(r_0132_1047,r_0133_0037__own,attrib2).
 arc(r_0132_1055__cnt,r_0133_0048__issue,scope).
 arc(r_0132_1055__cnt,r_0133_0054__encouraging,restriction).
 arc(r_0133_0002__led,r_0133_0001__This,arg0).
@@ -1082,8 +1084,8 @@ arc(r_0133_0002__led,r_0133_0005__death,r_0133_0003__to_clr).
 arc(r_0133_0005__death,r_0133_0016__hedgehogs,r_0133_0006__of).
 arc(r_0133_0005__death,r_0133_0019__and,r_0133_0017__between).
 arc(r_0133_0005__death,r_0133_0023__subject,prn6).
-arc(r_0133_0010__quantificational__r_0133_0010__half,r_0133_0012__million,restriction).
-arc(r_0133_0010__quantificational__r_0133_0010__half,r_0133_0013__and,scope).
+arc(r_0133_0010__quantificational__half,r_0133_0012__million,restriction).
+arc(r_0133_0010__quantificational__half,r_0133_0013__and,scope).
 arc(r_0133_0013__and,r_0133_0012__million,conj1).
 arc(r_0133_0013__and,r_0133_0014__2__r_0133_0015__million,conj2).
 arc(r_0133_0016__hedgehogs,r_0133_0013__and,r_0133_0007__between).
@@ -1100,8 +1102,8 @@ arc(r_0133_0035__led,r_0132_1055__cnt,arg1).
 arc(r_0133_0035__led,r_0133_0023__subject,arg0).
 arc(r_0133_0035__led,r_0133_0038__Department,arg2).
 arc(r_0133_0035__led,r_0133_0046__1908,r_0133_0045__in_tmp).
+arc(r_0133_0038__Department,r_0132_1047,genv).
 arc(r_0133_0038__Department,r_0133_0041__Ministry,prn4).
-arc(r_0133_0038__Department,z_0132_1047,genv).
 arc(r_0133_0041__Ministry,r_0133_0043__Agriculture,r_0133_0042__of).
 arc(r_0133_0048__issue,r_0133_0038__Department,arg0).
 arc(r_0133_0048__issue,r_0133_0051__notice,arg1).
@@ -1129,8 +1131,6 @@ arc(r_0133_0080__small,r_0133_0082__be,emb3).
 arc(r_0133_0082__be,r_0133_0083__able,prd2).
 arc(r_0133_0083__able,r_0133_0085__perform,emb2).
 arc(r_0133_0085__perform,r_0133_0087__function,arg1).
-arc(z_0132_1047,r_0132_0011__my,genv).
-arc(z_0132_1047,r_0133_0037__own,attrib2).
 
 </pre>
 <br>
@@ -1225,7 +1225,7 @@ fof(id__132_A_Hedgehog,axiom,
       &amp; prn6(ENTITYX27) = ENTITYX36
       &amp; isA(ENTITYX28,r_0133_0016__hedgehogs)
       &amp; r_0133_0007__between(ENTITYX28) = ENTITYX29
-      &amp; isA(QUANTX31,r_0133_0010__quantificational__r_0133_0010__half)
+      &amp; isA(QUANTX31,r_0133_0010__quantificational__half)
       &amp; restriction(QUANTX31) = ENTITYX30
       &amp; isA(ENTITYX30,r_0133_0012__million)
       &amp; scope(QUANTX31) = ENTITYX29
@@ -1260,7 +1260,7 @@ fof(id__132_A_Hedgehog,axiom,
       &amp; isA(ENTITYX43,r_0133_0038__Department)
       &amp; genv(ENTITYX43) = ENTITYX44
       &amp; prn4(ENTITYX43) = ENTITYX48
-      &amp; isA(ENTITYX44,z_0132_1047)
+      &amp; isA(ENTITYX44,r_0132_1047)
       &amp; genv(ENTITYX44) = SPEAKERX45
       &amp; attrib2(ENTITYX44) = ATTRIBX46
       &amp; SPEAKERX45 = r_0132_0011__my

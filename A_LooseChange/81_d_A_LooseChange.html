@@ -425,6 +425,7 @@ arc(r_0146_0003__n_apos_t,r_0146_0002__had__r_0146_0005__approached,scope).
 arc(r_0146_0007__instead,r_0146_0003__n_apos_t,scope).
 arc(r_0146_1002__question,r_0146_0001__Why,scope).
 arc(r_0146_1009__utterance,r_0147_0008__want,part1).
+arc(r_0146_1025,r_0148_0007__people,r_0148_0006__about).
 arc(r_0146_1029__question,r_0149_0002__n_apos_t,scope).
 arc(r_0147_0004__girl,r_0147_0003__little,attrib1).
 arc(r_0147_0008__want,r_0146_0004__she,arg0).
@@ -436,17 +437,16 @@ arc(r_0147_0010__see,r_0147_0011__it,arg1).
 arc(r_0147_0015__went__r_0147_0016__on,r_0146_0004__she,arg0).
 arc(r_0147_0015__went__r_0147_0016__on,r_0146_1009__utterance,arg1).
 arc(r_0148_0003__n_apos_t,r_0148_0004__know,scope).
+arc(r_0148_0004__know,r_0146_1025,arg1).
 arc(r_0148_0004__know,r_0148_0001__I,arg0).
-arc(r_0148_0004__know,z_0146_1025,arg1).
-arc(r_0148_0005__quantificational__r_0148_0005__anything,r_0148_0003__n_apos_t,scope).
-arc(r_0148_0005__quantificational__r_0148_0005__anything,z_0146_1025,restriction).
+arc(r_0148_0005__quantificational__anything,r_0146_1025,restriction).
+arc(r_0148_0005__quantificational__anything,r_0148_0003__n_apos_t,scope).
 arc(r_0148_0007__people,r_0148_0010__situation,r_0148_0008__in).
 arc(r_0148_0010__situation,r_0146_0004__she,genv).
 arc(r_0149_0002__n_apos_t,r_0149_0004__have,scope).
 arc(r_0149_0004__have,r_0149_0006__go,catenative).
 arc(r_0149_0006__go,r_0148_0007__people,arg0).
 arc(r_0149_0006__go,r_0149_0007__somewhere,loc3).
-arc(z_0146_1025,r_0148_0007__people,r_0148_0006__about).
 
 </pre>
 <br>
@@ -496,9 +496,9 @@ fof(id__146_A_LooseChange__147_A_LooseChange__148_A_LooseChange__149_A_LooseChan
       &amp; isA(EVENTX19,r_0147_0015__went__r_0147_0016__on)
       &amp; arg1(EVENTX19) = STATEX7
       &amp; arg0(EVENTX19) = LAYLORX18
-      &amp; isA(QUANTX21,r_0148_0005__quantificational__r_0148_0005__anything)
+      &amp; isA(QUANTX21,r_0148_0005__quantificational__anything)
       &amp; restriction(QUANTX21) = ENTITYX20
-      &amp; isA(ENTITYX20,z_0146_1025)
+      &amp; isA(ENTITYX20,r_0146_1025)
       &amp; r_0148_0006__about(ENTITYX20) = PEOPLEX22
       &amp; scope(QUANTX21) = OPERATORX26
       &amp; isA(OPERATORX26,r_0148_0003__n_apos_t)

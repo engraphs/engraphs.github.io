@@ -301,7 +301,7 @@ arc(r_0030_0011__while_tmp,r_0030_0002__driving,scope).
 arc(r_0030_0011__while_tmp,r_0030_0013__are,restriction).
 arc(r_0030_0013__are,r_0030_0015__or,catenative).
 arc(r_0030_0015__or,r_0030_0016__crossing,conj2).
-arc(r_0030_0015__or,z_0030_1011,conj1).
+arc(r_0030_0015__or,r_0030_1011,conj1).
 arc(r_0030_0016__crossing,r_0030_0012__children,arg0).
 arc(r_0030_0016__crossing,r_0030_0018__street,arg1).
 arc(r_0030_0023__is,r_0030_0021__speed__r_0030_0022__limit,arg0).
@@ -310,8 +310,8 @@ arc(r_0030_0026__unless_cnt,r_0030_0023__is,scope).
 arc(r_0030_0026__unless_cnt,r_0030_0027__otherwise,restriction).
 arc(r_0030_0027__otherwise,r_0030_0028__posted,scope).
 arc(r_0030_0028__posted,r_0030_0021__speed__r_0030_0022__limit,arg1).
-arc(z_0030_1011,r_0030_0012__children,arg0).
-arc(z_0030_1011,r_0030_0014__outside,prd2).
+arc(r_0030_1011,r_0030_0012__children,arg0).
+arc(r_0030_1011,r_0030_0014__outside,prd2).
 
 </pre>
 <br>
@@ -321,7 +321,7 @@ fof(id__30_A_driver_handbook,axiom,
       ( CATENATIVEX9 = CONJX15
       &amp; isA(CONJX15,r_0030_0015__or)
       &amp; conj1(CONJX15) = EVENTX12
-      &amp; isA(EVENTX12,z_0030_1011)
+      &amp; isA(EVENTX12,r_0030_1011)
       &amp; arg0(EVENTX12) = ENTITYX8
       &amp; prd2(EVENTX12) = ATTRIBX10
       &amp; conj2(CONJX15) = EVENTX14

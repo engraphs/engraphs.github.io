@@ -247,17 +247,17 @@ Driving faster than the posted speed limit or than is safe for current condition
 <br>
 <pre>
 arc(r_0017_0001__Driving,r_0017_0002__faster,mnr2).
-arc(r_0017_0002__faster,r_0017_0008__or,z_0017_1007).
+arc(r_0017_0002__faster,r_0017_0008__or,r_0017_1007).
 arc(r_0017_0005__posted,r_0017_0006__speed__r_0017_0007__limit,arg1).
 arc(r_0017_0008__or,r_0017_0006__speed__r_0017_0007__limit,r_0017_0003__than).
-arc(r_0017_0008__or,z_0017_1019,r_0017_0009__than).
+arc(r_0017_0008__or,r_0017_1019,r_0017_0009__than).
 arc(r_0017_0010__is,r_0017_0011__safe,prd2).
-arc(r_0017_0010__is,z_0017_1019,arg0).
+arc(r_0017_0010__is,r_0017_1019,arg0).
 arc(r_0017_0011__safe,r_0017_0014__conditions,r_0017_0012__for).
 arc(r_0017_0014__conditions,r_0017_0013__current,attrib1).
 arc(r_0017_0014__conditions,r_0017_0018__road,r_0017_0016__on).
-arc(r_0017_0017__quantificational__r_0017_0017__any,r_0017_0014__conditions,scope).
-arc(r_0017_0017__quantificational__r_0017_0017__any,r_0017_0018__road,restriction).
+arc(r_0017_0017__quantificational__any,r_0017_0014__conditions,scope).
+arc(r_0017_0017__quantificational__any,r_0017_0018__road,restriction).
 arc(r_0017_0020__is,r_0017_0001__Driving,arg0).
 arc(r_0017_0020__is,r_0017_0022__and,prd2).
 arc(r_0017_0022__and,r_0017_0021__dangerous,conj1).
@@ -272,7 +272,7 @@ fof(id__17_A_driver_handbook,axiom,
       &amp; isA(EVENTX20,r_0017_0001__Driving)
       &amp; mnr2(EVENTX20) = QUALITYX5
       &amp; isA(QUALITYX5,r_0017_0002__faster)
-      &amp; z_0017_1007(QUALITYX5) = CONJX8
+      &amp; r_0017_1007(QUALITYX5) = CONJX8
       &amp; isA(CONJX8,r_0017_0008__or)
       &amp; r_0017_0003__than(CONJX8) = PSLX9
       &amp; r_0017_0009__than(CONJX8) = ENTITYX12
@@ -282,8 +282,8 @@ fof(id__17_A_driver_handbook,axiom,
       &amp; isA(EVENTX18,r_0017_0010__is)
       &amp; arg0(EVENTX18) = ENTITYX12
       &amp; prd2(EVENTX18) = ATTRIBX13
-      &amp; isA(ENTITYX12,z_0017_1019)
-      &amp; isA(QUANTX17,r_0017_0017__quantificational__r_0017_0017__any)
+      &amp; isA(ENTITYX12,r_0017_1019)
+      &amp; isA(QUANTX17,r_0017_0017__quantificational__any)
       &amp; restriction(QUANTX17) = ENTITYX16
       &amp; isA(ENTITYX16,r_0017_0018__road)
       &amp; scope(QUANTX17) = ENTITYX14

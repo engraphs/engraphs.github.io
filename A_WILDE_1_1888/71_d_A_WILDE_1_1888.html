@@ -855,6 +855,7 @@ arc(r_0225_0011__square,r_0225_0012__below,loc3).
 arc(r_0225_0014__company,r_0225_0017__Town__r_0225_0018__Councillors,r_0225_0015__with).
 arc(r_0225_1020__utterance,r_0227_0009__looks,part1).
 arc(r_0225_1031__utterance,r_0228_0004__indeed,part1).
+arc(r_0225_1037,r_0228_0003__shabby,attrib1).
 arc(r_0225_1050__cnt,r_0229_0003__went,scope).
 arc(r_0225_1050__cnt,r_0229_0006__look,restriction).
 arc(r_0225_1057__utterance,r_0230_0015__and,part1).
@@ -871,10 +872,10 @@ arc(r_0227_0009__looks,r_0227_0008__Prince,arg0).
 arc(r_0227_0013__said,r_0225_0006__Mayor,arg0).
 arc(r_0227_0013__said,r_0225_1020__utterance,arg1).
 arc(r_0228_0003__shabby,r_0228_0002__How,quality1).
-arc(r_0228_0004__indeed,z_0225_1037,scope).
+arc(r_0228_0004__indeed,r_0225_1037,scope).
 arc(r_0228_0007__cried,r_0225_1031__utterance,arg1).
 arc(r_0228_0007__cried,r_0228_0009__Town__r_0228_0010__Councillors,arg0).
-arc(r_0228_0009__Town__r_0228_0010__Councillors,r_0225_0017__Town_r_0225_0018__Councillors,z_0225_1042).
+arc(r_0228_0009__Town__r_0228_0010__Councillors,r_0225_0017__Town_r_0225_0018__Councillors,r_0225_1042).
 arc(r_0228_0014__agreed,r_0225_0006__Mayor,r_0228_0015__with_clr).
 arc(r_0228_0014__agreed,r_0228_0009__Town__r_0228_0010__Councillors,arg0).
 arc(r_0228_0014__agreed,r_0228_0013__always,tmp2).
@@ -895,9 +896,9 @@ arc(r_0230_0015__and,r_0230_0017__is,conj3).
 arc(r_0230_0017__is,r_0227_0008__Prince,arg0).
 arc(r_0230_0017__is,r_0230_0018__golden,prd2).
 arc(r_0230_0017__is,r_0230_0020__longer,tmp4).
-arc(r_0230_0019__quantificational__r_0230_0019__no,r_0230_0020__longer,scope).
-arc(r_0230_0019__quantificational__r_0230_0019__no,z_0225_1075,restriction).
-arc(r_0230_0020__longer,z_0225_1075,modifier1).
+arc(r_0230_0019__quantificational__no,r_0225_1075,restriction).
+arc(r_0230_0019__quantificational__no,r_0230_0020__longer,scope).
+arc(r_0230_0020__longer,r_0225_1075,modifier1).
 arc(r_0230_0023__said,r_0225_1057__utterance,arg1).
 arc(r_0230_0023__said,r_0230_0025__Mayor,arg0).
 arc(r_0231_0002__in_fact,r_0231_0005__is,scope).
@@ -905,7 +906,6 @@ arc(r_0231_0005__is,r_0227_0008__Prince,arg0).
 arc(r_0231_0005__is,r_0231_0007__better,prd2).
 arc(r_0231_0007__better,r_0231_0006__little,quality1).
 arc(r_0231_0007__better,r_0231_0010__beggar,r_0231_0008__than).
-arc(z_0225_1037,r_0228_0003__shabby,attrib1).
 
 </pre>
 <br>
@@ -928,7 +928,7 @@ fof(id__225_A_WILDE_1_1888__226_A_WILDE_1_1888__227_A_WILDE_1_1888__228_A_WILDE_
       &amp; part1(CONJX39) = OPERATORX36
       &amp; isA(OPERATORX36,r_0228_0004__indeed)
       &amp; scope(OPERATORX36) = EVENTX38
-      &amp; isA(EVENTX38,z_0225_1037)
+      &amp; isA(EVENTX38,r_0225_1037)
       &amp; attrib1(EVENTX38) = ATTRIBX34
       &amp; STATEX55 = CONJX78
       &amp; isA(CONJX78,r_0225_1057__utterance)
@@ -958,9 +958,9 @@ fof(id__225_A_WILDE_1_1888__226_A_WILDE_1_1888__227_A_WILDE_1_1888__228_A_WILDE_
       &amp; isA(QUALITYX35,r_0228_0002__How)
       &amp; isA(QUALITYX44,r_0228_0013__always)
       &amp; isA(QUALITYX49,r_0229_0004__up)
-      &amp; isA(QUANTX74,r_0230_0019__quantificational__r_0230_0019__no)
+      &amp; isA(QUANTX74,r_0230_0019__quantificational__no)
       &amp; restriction(QUANTX74) = ENTITYX73
-      &amp; isA(ENTITYX73,z_0225_1075)
+      &amp; isA(ENTITYX73,r_0225_1075)
       &amp; scope(QUANTX74) = QUALITYX72
       &amp; isA(QUALITYX72,r_0230_0020__longer)
       &amp; modifier1(QUALITYX72) = ENTITYX73
@@ -984,7 +984,7 @@ fof(id__225_A_WILDE_1_1888__226_A_WILDE_1_1888__227_A_WILDE_1_1888__228_A_WILDE_
       &amp; tmp2(EVENTX46) = QUALITYX44
       &amp; r_0228_0015__with_clr(EVENTX46) = MAYORX45
       &amp; isA(ENTITYX40,r_0228_0009__Town__r_0228_0010__Councillors)
-      &amp; z_0225_1042(ENTITYX40) = COUNCILLORSX43
+      &amp; r_0225_1042(ENTITYX40) = COUNCILLORSX43
       &amp; COUNCILLORSX43 = COUNCILLORSX9
       &amp; MAYORX45 = MAYORX4
       &amp; MAYOR_AND_COUNCILLORSX48 = r_0226_0002__they

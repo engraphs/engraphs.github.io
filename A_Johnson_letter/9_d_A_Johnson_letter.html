@@ -958,6 +958,9 @@ arc(r_0011_0012__must,r_0011_0013__stay,scope).
 arc(r_0011_0013__stay,r_0011_0011__you,arg0).
 arc(r_0011_0013__stay,r_0011_0015__home,r_0011_0014__at_loc).
 arc(r_0011_1003__question,r_0011_0003__why,scope).
+arc(r_0011_1050,r_0013_0004__leave,catenative).
+arc(r_0011_1060,r_0011_0011__you,arg0).
+arc(r_0011_1082,r_0015_0027__household,r_0015_0025__outside_of).
 arc(r_0012_0002__should,r_0012_0003__not,scope).
 arc(r_0012_0003__not,r_0012_0004__meet,scope).
 arc(r_0012_0004__meet,r_0011_0011__you,arg0).
@@ -968,7 +971,7 @@ arc(r_0012_0010__not,r_0012_0011__live,scope).
 arc(r_0012_0011__live,r_0012_0006__or,arg0).
 arc(r_0012_0011__live,r_0012_0014__home,r_0012_0012__in_loc).
 arc(r_0012_0014__home,r_0011_0011__you,genv).
-arc(r_0013_0002__may,z_0011_1050,scope).
+arc(r_0013_0002__may,r_0011_1050,scope).
 arc(r_0013_0003__only,r_0013_0002__may,scope).
 arc(r_0013_0004__leave,r_0011_0011__you,arg0).
 arc(r_0013_0004__leave,r_0013_0006__home,arg1).
@@ -997,7 +1000,7 @@ arc(r_0014_0008__work,r_0011_0011__you,arg0).
 arc(r_0014_0008__work,r_0014_0010__home,r_0014_0009__from_loc).
 arc(r_0014_0011__if_cnt_cnd,r_0014_0007__should,scope).
 arc(r_0014_0011__if_cnt_cnd,r_0014_0013__can,restriction).
-arc(r_0014_0013__can,z_0011_1060,scope).
+arc(r_0014_0013__can,r_0011_1060,scope).
 arc(r_0015_0001__When_tmp,r_0015_0004__have,restriction).
 arc(r_0015_0001__When_tmp,r_0015_0011__should,scope).
 arc(r_0015_0004__have,r_0015_0006__leave,catenative).
@@ -1010,14 +1013,11 @@ arc(r_0015_0012__ensure,r_0015_0015__possible,r_0015_0014__wherever_mod).
 arc(r_0015_0012__ensure,r_0015_0019__are,arg1).
 arc(r_0015_0019__are,r_0011_0011__you,arg0).
 arc(r_0015_0019__are,r_0015_0020__two__r_0015_0021__metres,prd2).
+arc(r_0015_0020__two__r_0015_0021__metres,r_0011_1082,r_0015_0023__from).
 arc(r_0015_0020__two__r_0015_0021__metres,r_0015_0022__apart,quality3).
-arc(r_0015_0020__two__r_0015_0021__metres,z_0011_1082,r_0015_0023__from).
-arc(r_0015_0024__quantificational__r_0015_0024__anyone,r_0015_0020__two__r_0015_0021__metres,scope).
-arc(r_0015_0024__quantificational__r_0015_0024__anyone,z_0011_1082,restriction).
+arc(r_0015_0024__quantificational__anyone,r_0011_1082,restriction).
+arc(r_0015_0024__quantificational__anyone,r_0015_0020__two__r_0015_0021__metres,scope).
 arc(r_0015_0027__household,r_0011_0011__you,genv).
-arc(z_0011_1050,r_0013_0004__leave,catenative).
-arc(z_0011_1060,r_0011_0011__you,arg0).
-arc(z_0011_1082,r_0015_0027__household,r_0015_0025__outside_of).
 
 </pre>
 <br>
@@ -1114,9 +1114,9 @@ fof(id__11_A_Johnson_letter__12_A_Johnson_letter__13_A_Johnson_letter__14_A_John
       &amp; HEARERX72 = r_0011_0011__you
       &amp; ( HEARERX75 = HEARERX72
         | HEARERX75 = r_0011_0011__you )
-      &amp; isA(QUANTX79,r_0015_0024__quantificational__r_0015_0024__anyone)
+      &amp; isA(QUANTX79,r_0015_0024__quantificational__anyone)
       &amp; restriction(QUANTX79) = ENTITYX78
-      &amp; isA(ENTITYX78,z_0011_1082)
+      &amp; isA(ENTITYX78,r_0011_1082)
       &amp; r_0015_0025__outside_of(ENTITYX78) = ENTITYX80
       &amp; scope(QUANTX79) = ENTITYX76
       &amp; isA(ENTITYX76,r_0015_0020__two__r_0015_0021__metres)
@@ -1149,7 +1149,7 @@ fof(id__11_A_Johnson_letter__12_A_Johnson_letter__13_A_Johnson_letter__14_A_John
       &amp; scope(OPERATORX27) = OPERATORX28
       &amp; isA(OPERATORX28,r_0013_0002__may)
       &amp; scope(OPERATORX28) = EVENTX51
-      &amp; isA(EVENTX51,z_0011_1050)
+      &amp; isA(EVENTX51,r_0011_1050)
       &amp; catenative(EVENTX51) = CATENATIVEX29
       &amp; isA(CONJX64,r_0014_0006__but)
       &amp; conj1(CONJX64) = OPERATORX54
@@ -1169,7 +1169,7 @@ fof(id__11_A_Johnson_letter__12_A_Johnson_letter__13_A_Johnson_letter__14_A_John
       &amp; restriction(CONNX57) = OPERATORX59
       &amp; isA(OPERATORX59,r_0014_0013__can)
       &amp; scope(OPERATORX59) = EVENTX61
-      &amp; isA(EVENTX61,z_0011_1060)
+      &amp; isA(EVENTX61,r_0011_1060)
       &amp; arg0(EVENTX61) = HEARERX58
       &amp; isA(CONNX65,r_0015_0001__When_tmp)
       &amp; restriction(CONNX65) = EVENTX71

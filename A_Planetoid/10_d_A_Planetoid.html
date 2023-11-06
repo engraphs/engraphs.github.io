@@ -242,15 +242,15 @@ Score 500 for each life - form caught in flight and 500 for each one safely retu
 <pre>
 arc(r_0015_0001__Score,r_0015_0011__and,arg1).
 arc(r_0015_0002__500,r_0015_0005__life__r_0015_0007__form,r_0015_0003__for).
-arc(r_0015_0004__quantificational__r_0015_0004__each,r_0015_0002__500,scope).
-arc(r_0015_0004__quantificational__r_0015_0004__each,r_0015_0005__life__r_0015_0007__form,restriction).
+arc(r_0015_0004__quantificational__each,r_0015_0002__500,scope).
+arc(r_0015_0004__quantificational__each,r_0015_0005__life__r_0015_0007__form,restriction).
 arc(r_0015_0008__caught,r_0015_0005__life__r_0015_0007__form,arg1).
 arc(r_0015_0008__caught,r_0015_0010__flight,r_0015_0009__in_mnr).
 arc(r_0015_0011__and,r_0015_0002__500,conj1).
 arc(r_0015_0011__and,r_0015_0012__500,conj2).
 arc(r_0015_0012__500,r_0015_0015__one,r_0015_0013__for).
-arc(r_0015_0014__quantificational__r_0015_0014__each,r_0015_0012__500,scope).
-arc(r_0015_0014__quantificational__r_0015_0014__each,r_0015_0015__one,restriction).
+arc(r_0015_0014__quantificational__each,r_0015_0012__500,scope).
+arc(r_0015_0014__quantificational__each,r_0015_0015__one,restriction).
 arc(r_0015_0017__returned,r_0015_0015__one,arg1).
 arc(r_0015_0017__returned,r_0015_0016__safely,mnr2).
 arc(r_0015_0017__returned,r_0015_0021__surface,r_0015_0018__to_dir).
@@ -265,7 +265,7 @@ fof(id__15_A_Planetoid,axiom,
       ( isA(ENTITYX4,r_0015_0011__and)
       &amp; conj1(ENTITYX4) = ENTITYX5
       &amp; conj2(ENTITYX4) = ENTITYX11
-      &amp; isA(QUANTX7,r_0015_0004__quantificational__r_0015_0004__each)
+      &amp; isA(QUANTX7,r_0015_0004__quantificational__each)
       &amp; isA(EVENTX10,r_0015_0008__caught)
       &amp; arg1(EVENTX10) = ENTITYX6
       &amp; r_0015_0009__in_mnr(EVENTX10) = ENTITYX9
@@ -275,7 +275,7 @@ fof(id__15_A_Planetoid,axiom,
       &amp; isA(ENTITYX5,r_0015_0002__500)
       &amp; r_0015_0003__for(ENTITYX5) = ENTITYX6
       &amp; isA(ENTITYX9,r_0015_0010__flight)
-      &amp; isA(QUANTX13,r_0015_0014__quantificational__r_0015_0014__each)
+      &amp; isA(QUANTX13,r_0015_0014__quantificational__each)
       &amp; isA(EVENTX18,r_0015_0017__returned)
       &amp; arg1(EVENTX18) = ENTITYX12
       &amp; mnr2(EVENTX18) = QUALITYX15

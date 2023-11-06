@@ -715,9 +715,9 @@ arc(r_0183_0005__but,r_0183_0002__too,conj1).
 arc(r_0183_0005__but,r_0183_0014__and,conj2).
 arc(r_0183_0007__was,r_0183_0009__sound,arg0).
 arc(r_0183_0007__was,r_0183_0012__house,r_0183_0010__in_loc).
-arc(r_0183_0008__quantificational__r_0183_0008__no,r_0183_0007__was,scope).
-arc(r_0183_0008__quantificational__r_0183_0008__no,r_0183_0009__sound,restriction).
-arc(r_0183_0014__and,r_0183_0008__quantificational__r_0183_0008__no,conj1).
+arc(r_0183_0008__quantificational__no,r_0183_0007__was,scope).
+arc(r_0183_0008__quantificational__no,r_0183_0009__sound,restriction).
+arc(r_0183_0014__and,r_0183_0008__quantificational__no,conj1).
 arc(r_0183_0014__and,r_0183_0016__knew,conj2).
 arc(r_0183_0016__knew,r_0183_0001__I,arg0).
 arc(r_0183_0016__knew,r_0183_0021__was,arg1).
@@ -740,8 +740,9 @@ arc(r_0183_0034__and,r_0183_0037__death,r_0183_0036__in).
 arc(r_0183_0041__chalice,r_0183_0040__idle,attrib2).
 arc(r_0183_0041__chalice,r_0183_0044__breast,r_0183_0042__on).
 arc(r_0183_0044__breast,r_0183_0020__priest,genv).
+arc(r_0183_1037__utterance,r_0183_1044,part1).
 arc(r_0183_1037__utterance,r_0184_0012__So,part2).
-arc(r_0183_1037__utterance,z_0183_1044,part1).
+arc(r_0183_1044,r_0184_0006__and,attrib1).
 arc(r_0184_0002__resumed,r_0183_1037__utterance,arg1).
 arc(r_0184_0002__resumed,r_0184_0001__Eliza,arg0).
 arc(r_0184_0006__and,r_0184_0005__Wide_awake,conj1).
@@ -762,7 +763,6 @@ arc(r_0184_0028__was,r_0184_0030__gone,catenative).
 arc(r_0184_0030__gone,r_0184_0029__something,arg0).
 arc(r_0184_0030__gone,r_0184_0031__wrong,prd2).
 arc(r_0184_0031__wrong,r_0183_0020__priest,r_0184_0032__with).
-arc(z_0183_1044,r_0184_0006__and,attrib1).
 
 </pre>
 <br>
@@ -791,7 +791,7 @@ fof(id__183_A_JOYCE_1914__184_A_JOYCE_1914,axiom,
       &amp; STATEX35 = CONJX63
       &amp; isA(CONJX63,r_0183_1037__utterance)
       &amp; part1(CONJX63) = EVENTX45
-      &amp; isA(EVENTX45,z_0183_1044)
+      &amp; isA(EVENTX45,r_0183_1044)
       &amp; attrib1(EVENTX45) = ATTRIBX40
       &amp; part2(CONJX63) = OPERATORX46
       &amp; isA(OPERATORX46,r_0184_0012__So)
@@ -866,7 +866,7 @@ fof(id__183_A_JOYCE_1914__184_A_JOYCE_1914,axiom,
       &amp; conj2(CONJX34) = CONJX33
       &amp; isA(CONJX33,r_0183_0014__and)
       &amp; conj1(CONJX33) = QUANTX6
-      &amp; isA(QUANTX6,r_0183_0008__quantificational__r_0183_0008__no)
+      &amp; isA(QUANTX6,r_0183_0008__quantificational__no)
       &amp; restriction(QUANTX6) = ENTITYX5
       &amp; isA(ENTITYX5,r_0183_0009__sound)
       &amp; scope(QUANTX6) = EVENTX8

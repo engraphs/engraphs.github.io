@@ -646,17 +646,17 @@ arc(r_0211_0022__specified,r_0211_0023__representative,arg1).
 arc(r_0211_0024__or,r_0211_0023__representative,conj1).
 arc(r_0211_0024__or,r_0211_0025__manager,conj2).
 arc(r_0211_0029__applies,r_0211_0032__b,r_0211_0030__in_loc).
-arc(r_0211_0029__applies,z_0211_1019,arg0).
+arc(r_0211_0029__applies,r_0211_1019,arg0).
 arc(r_0211_0032__b,r_0211_0035__item__r_0211_0037__iii,r_0211_0034__of).
 arc(r_0211_0035__item__r_0211_0037__iii,r_0211_0042__article,r_0211_0039__of).
 arc(r_0211_0042__article,r_0211_0041__next,attrib2).
 arc(r_0211_0045__intends,r_0211_0006__person,arg0).
-arc(r_0211_0045__intends,r_0211_0048__quantificational__r_0211_0048__any,arg1).
+arc(r_0211_0045__intends,r_0211_0048__quantificational__any,arg1).
 arc(r_0211_0047__conduct,r_0211_0006__person,arg0).
 arc(r_0211_0047__conduct,r_0211_0059__purpose,r_0211_0057__for_bnf).
-arc(r_0211_0047__conduct,z_0211_1032,arg1).
-arc(r_0211_0048__quantificational__r_0211_0048__any,r_0211_0047__conduct,scope).
-arc(r_0211_0048__quantificational__r_0211_0048__any,z_0211_1032,restriction).
+arc(r_0211_0047__conduct,r_0211_1032,arg1).
+arc(r_0211_0048__quantificational__any,r_0211_0047__conduct,scope).
+arc(r_0211_0048__quantificational__any,r_0211_1032,restriction).
 arc(r_0211_0052__enumerated,r_0211_0051__businesses,arg0).
 arc(r_0211_0052__enumerated,r_0211_0056__items,r_0211_0053__in_loc).
 arc(r_0211_0056__items,r_0211_0055__following,attrib2).
@@ -675,8 +675,8 @@ arc(r_0211_0078__authorized,r_0211_0006__person,arg1).
 arc(r_0211_0078__authorized,r_0211_0080__such,r_0211_0079__as_mod).
 arc(r_0211_0078__authorized,r_0211_0084__minister,arg0__r_0211_0081__by_lgs).
 arc(r_0211_0084__minister,r_0211_0083__competent,attrib2).
-arc(z_0211_1019,r_0211_0028__same,attrib2).
-arc(z_0211_1032,r_0211_0051__businesses,r_0211_0049__of).
+arc(r_0211_1019,r_0211_0028__same,attrib2).
+arc(r_0211_1032,r_0211_0051__businesses,r_0211_0049__of).
 
 </pre>
 <br>
@@ -688,9 +688,9 @@ fof(id__211_A_law_h15A119,axiom,
       &amp; arg0(EVENTX24) = ENTITYX17
       &amp; r_0211_0030__in_loc(EVENTX24) = ENTITYX20
       &amp; STATEX25 = QUANTX27
-      &amp; isA(QUANTX27,r_0211_0048__quantificational__r_0211_0048__any)
+      &amp; isA(QUANTX27,r_0211_0048__quantificational__any)
       &amp; restriction(QUANTX27) = ENTITYX26
-      &amp; isA(ENTITYX26,z_0211_1032)
+      &amp; isA(ENTITYX26,r_0211_1032)
       &amp; r_0211_0049__of(ENTITYX26) = ENTITYX28
       &amp; scope(QUANTX27) = EVENTX46
       &amp; isA(EVENTX46,r_0211_0047__conduct)
@@ -734,7 +734,7 @@ fof(id__211_A_law_h15A119,axiom,
       &amp; isA(ENTITYX10,r_0211_0025__manager)
       &amp; isA(ENTITYX13,r_0211_0011__association)
       &amp; isA(ENTITYX14,r_0211_0013__foundation)
-      &amp; isA(ENTITYX17,z_0211_1019)
+      &amp; isA(ENTITYX17,r_0211_1019)
       &amp; attrib2(ENTITYX17) = ATTRIBX18
       &amp; isA(ENTITYX20,r_0211_0032__b)
       &amp; r_0211_0034__of(ENTITYX20) = ENTITYX21

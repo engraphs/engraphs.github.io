@@ -676,6 +676,7 @@ arc(r_0026_0004__got,r_0026_0006__Goodwill,r_0026_0005__to_clr_dir).
 arc(r_0026_0009__was,r_0026_0003__I,arg0).
 arc(r_0026_0009__was,r_0026_0012__mission,r_0026_0010__on_prd2).
 arc(r_0026_1013__question,r_0028_0008__was,scope).
+arc(r_0026_1039,r_0030_0004__more,attrib1).
 arc(r_0027_0002__just,r_0027_0003__wanted,scope).
 arc(r_0027_0003__wanted,r_0026_0003__I,arg0).
 arc(r_0027_0003__wanted,r_0027_0005__job,arg1).
@@ -693,7 +694,7 @@ arc(r_0029_0004___apos_m,r_0029_0007__journey,r_0029_0005__on_prd2).
 arc(r_0030_0002___apos_ve,r_0030_0003__got,catenative).
 arc(r_0030_0002___apos_ve,r_0030_0010___apos_ve,prn5).
 arc(r_0030_0003__got,r_0026_0003__I,arg0).
-arc(r_0030_0003__got,z_0026_1039,arg1).
+arc(r_0030_0003__got,r_0026_1039,arg1).
 arc(r_0030_0004__more,r_0030_0007__job,r_0030_0005__than).
 arc(r_0030_0010___apos_ve,r_0030_0011__got,catenative).
 arc(r_0030_0011__got,r_0026_0003__I,arg0).
@@ -702,22 +703,21 @@ arc(r_0031_0002__instructor,r_0026_0003__I,genv).
 arc(r_0031_0003__played,r_0031_0002__instructor,arg0).
 arc(r_0031_0003__played,r_0031_0005__role,arg1).
 arc(r_0031_0005__role,r_0031_0009__instructor,r_0031_0006__like).
-arc(r_0031_0007__quantificational__r_0031_0007__no,r_0031_0005__role,scope).
-arc(r_0031_0007__quantificational__r_0031_0007__no,r_0031_0009__instructor,restriction).
+arc(r_0031_0007__quantificational__no,r_0031_0005__role,scope).
+arc(r_0031_0007__quantificational__no,r_0031_0009__instructor,restriction).
 arc(r_0031_0009__instructor,r_0031_0008__other,attrib2).
 arc(r_0031_0011___apos_ve,r_0031_0013__had,catenative).
 arc(r_0031_0013__had,r_0026_0003__I,arg0).
 arc(r_0031_0013__had,r_0031_0009__instructor,arg1).
 arc(r_0031_0013__had,r_0031_0012__ever,tmp2).
 arc(r_0032_0002__appreciate,r_0026_0003__I,arg0).
-arc(r_0032_0002__appreciate,z_0026_1062,arg1).
-arc(r_0032_0003__quantificational__r_0032_0003__everything,r_0032_0002__appreciate,scope).
-arc(r_0032_0003__quantificational__r_0032_0003__everything,z_0026_1062,restriction).
+arc(r_0032_0002__appreciate,r_0026_1062,arg1).
+arc(r_0032_0003__quantificational__everything,r_0026_1062,restriction).
+arc(r_0032_0003__quantificational__everything,r_0032_0002__appreciate,scope).
 arc(r_0032_0006__has,r_0032_0007__done,catenative).
 arc(r_0032_0007__done,r_0026_0003__I,r_0032_0008__for_bnf).
 arc(r_0032_0007__done,r_0026_0006__Goodwill,arg0).
-arc(r_0032_0007__done,z_0026_1062,arg1).
-arc(z_0026_1039,r_0030_0004__more,attrib1).
+arc(r_0032_0007__done,r_0026_1062,arg1).
 
 </pre>
 <br>
@@ -771,13 +771,13 @@ fof(id__26_A_ANC_110CYL067__27_A_ANC_110CYL067__28_A_ANC_110CYL067__29_A_ANC_110
       &amp; ( SPEAKERX30 = SPEAKERX28
         | SPEAKERX30 = r_0026_0003__I )
       &amp; isA(ENTITYX32,r_0030_0013__career)
-      &amp; isA(ENTITYX36,z_0026_1039)
+      &amp; isA(ENTITYX36,r_0026_1039)
       &amp; attrib1(ENTITYX36) = ATTRIBX37
       &amp; isA(ENTITYX38,r_0030_0007__job)
       &amp; isA(ENTITYX42,r_0031_0002__instructor)
       &amp; genv(ENTITYX42) = SPEAKERX43
       &amp; SPEAKERX43 = r_0026_0003__I
-      &amp; isA(QUANTX46,r_0031_0007__quantificational__r_0031_0007__no)
+      &amp; isA(QUANTX46,r_0031_0007__quantificational__no)
       &amp; isA(EVENTX52,r_0031_0011___apos_ve)
       &amp; catenative(EVENTX52) = CATENATIVEX49
       &amp; isA(ENTITYX45,r_0031_0009__instructor)
@@ -826,10 +826,10 @@ fof(id__26_A_ANC_110CYL067__27_A_ANC_110CYL067__28_A_ANC_110CYL067__29_A_ANC_110
       &amp; isA(EVENTX53,r_0031_0003__played)
       &amp; arg0(EVENTX53) = ENTITYX42
       &amp; arg1(EVENTX53) = ENTITYX44
-      &amp; isA(QUANTX56,r_0032_0003__quantificational__r_0032_0003__everything)
+      &amp; isA(QUANTX56,r_0032_0003__quantificational__everything)
       &amp; isA(EVENTX61,r_0032_0006__has)
       &amp; catenative(EVENTX61) = CATENATIVEX58
-      &amp; isA(ENTITYX55,z_0026_1062)
+      &amp; isA(ENTITYX55,r_0026_1062)
       &amp; restriction(QUANTX56) = ENTITYX55
       &amp; scope(QUANTX56) = EVENTX63
       &amp; isA(EVENTX63,r_0032_0002__appreciate)

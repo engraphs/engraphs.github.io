@@ -255,10 +255,10 @@ Many had to leave their birthplaces , fleeing to Lesvos , Chios , and Samos , th
 <pre>
 arc(r_0118_0002__had,r_0118_1007__cnt,catenative).
 arc(r_0118_0004__leave,r_0118_0006__birthplaces,arg1).
-arc(r_0118_0004__leave,z_0118_1003,arg0).
-arc(r_0118_0006__birthplaces,z_0118_1003,genv).
+arc(r_0118_0004__leave,r_0118_1003,arg0).
+arc(r_0118_0006__birthplaces,r_0118_1003,genv).
 arc(r_0118_0008__fleeing,r_0118_0014__and,r_0118_0009__to_clr_dir).
-arc(r_0118_0008__fleeing,z_0118_1003,arg0).
+arc(r_0118_0008__fleeing,r_0118_1003,arg0).
 arc(r_0118_0014__and,r_0118_0010__Lesvos,conj1).
 arc(r_0118_0014__and,r_0118_0012__Chios,conj2).
 arc(r_0118_0014__and,r_0118_0015__Samos,conj3).
@@ -267,9 +267,9 @@ arc(r_0118_0020__ruled,r_0118_0018__Greek,arg0_lgs).
 arc(r_0118_0020__ruled,r_0118_0021__islands,arg1).
 arc(r_0118_0021__islands,r_0118_0023__offshore,loc4).
 arc(r_0118_0023__offshore,r_0118_0022__just,quality1).
+arc(r_0118_1003,r_0118_0001__Many,attrib1).
 arc(r_0118_1007__cnt,r_0118_0004__leave,scope).
 arc(r_0118_1007__cnt,r_0118_0008__fleeing,restriction).
-arc(z_0118_1003,r_0118_0001__Many,attrib1).
 
 </pre>
 <br>
@@ -286,7 +286,7 @@ fof(id__118_A_ANC_HistoryOfGreece,axiom,
       &amp; isA(EVENTX14,r_0118_0008__fleeing)
       &amp; arg0(EVENTX14) = PERSONSX1
       &amp; r_0118_0009__to_clr_dir(EVENTX14) = ENTITYX9
-      &amp; isA(PERSONSX1,z_0118_1003)
+      &amp; isA(PERSONSX1,r_0118_1003)
       &amp; attrib1(PERSONSX1) = ATTRIBX2
       &amp; isA(ENTITYX5,r_0118_0006__birthplaces)
       &amp; genv(ENTITYX5) = PERSONSX6

@@ -681,17 +681,18 @@ arc(r_0335_0015__as_soon_as_tmp,r_0335_0017__threw__r_0335_0019__up,restriction)
 arc(r_0335_0017__threw__r_0335_0019__up,r_0335_0006__Dorle,arg0).
 arc(r_0335_0017__threw__r_0335_0019__up,r_0335_0013__rock,arg1).
 arc(r_0335_0017__threw__r_0335_0019__up,r_0335_0022__air,r_0335_0020__in_dir).
+arc(r_0335_1045,r_0340_0006__ship,r_0340_0004__about).
 arc(r_0336_0002___apos_s,r_0335_0010__it,arg0).
 arc(r_0336_0002___apos_s,r_0336_0003__alert,prd2).
-arc(r_0336_0003__alert,z_0335_1020,r_0336_0004__to).
-arc(r_0336_0005__quantificational__r_0336_0005__anything,r_0336_0003__alert,scope).
-arc(r_0336_0005__quantificational__r_0336_0005__anything,z_0335_1020,restriction).
+arc(r_0336_0003__alert,r_0335_1020,r_0336_0004__to).
+arc(r_0336_0005__quantificational__anything,r_0335_1020,restriction).
+arc(r_0336_0005__quantificational__anything,r_0336_0003__alert,scope).
+arc(r_0336_0007__flies,r_0335_1020,arg0).
 arc(r_0336_0007__flies,r_0336_0012__ground__r_0336_0013__level,r_0336_0010__above_loc).
-arc(r_0336_0007__flies,z_0335_1020,arg0).
 arc(r_0336_0008__or,r_0336_0007__flies,conj1).
 arc(r_0336_0008__or,r_0336_0009__moves,conj2).
+arc(r_0336_0009__moves,r_0335_1020,arg0).
 arc(r_0336_0009__moves,r_0336_0012__ground__r_0336_0013__level,r_0336_0010__above_loc).
-arc(r_0336_0009__moves,z_0335_1020,arg0).
 arc(r_0337_0001__Probably,r_0337_0005__as_soon_as_tmp,scope).
 arc(r_0337_0003__detected,r_0335_0010__it,arg0).
 arc(r_0337_0003__detected,r_0337_0004__us,arg1).
@@ -710,16 +711,15 @@ arc(r_0339_0003__n_apos_t,r_0339_0004__have,scope).
 arc(r_0339_0004__have,r_0337_0004__us,arg0).
 arc(r_0339_0004__have,r_0339_0006__chance,arg1).
 arc(r_0340_0002__knows,r_0335_0010__it,arg0).
-arc(r_0340_0002__knows,z_0335_1045,arg1).
-arc(r_0340_0003__quantificational__r_0340_0003__all,r_0340_0002__knows,scope).
-arc(r_0340_0003__quantificational__r_0340_0003__all,z_0335_1045,restriction).
+arc(r_0340_0002__knows,r_0335_1045,arg1).
+arc(r_0340_0003__quantificational__all,r_0335_1045,restriction).
+arc(r_0340_0003__quantificational__all,r_0340_0002__knows,scope).
 arc(r_0341_0002___apos_s,r_0341_0004__waiting,catenative).
 arc(r_0341_0004__waiting,r_0335_0010__it,arg0).
 arc(r_0341_0004__waiting,r_0341_0003__just,tmp1).
 arc(r_0341_0004__waiting,r_0341_0008__take__r_0341_0009__off,clr).
 arc(r_0341_0008__take__r_0341_0009__off,r_0337_0004__us,arg0).
 arc(r_0341_0008__take__r_0341_0009__off,r_0341_0010__again,tmp6).
-arc(z_0335_1045,r_0340_0006__ship,r_0340_0004__about).
 
 </pre>
 <br>
@@ -772,7 +772,7 @@ fof(id__335_A_DICK_1952__336_A_DICK_1952__337_A_DICK_1952__338_A_DICK_1952__339_
       &amp; isA(SHIPX44,r_0340_0006__ship)
       &amp; GUNX47 = r_0335_0010__it
       &amp; TRESPASSERSX51 = r_0337_0004__us
-      &amp; isA(QUANTX15,r_0336_0005__quantificational__r_0336_0005__anything)
+      &amp; isA(QUANTX15,r_0336_0005__quantificational__anything)
       &amp; isA(CONJX19,r_0336_0008__or)
       &amp; conj1(CONJX19) = EVENTX17
       &amp; isA(EVENTX17,r_0336_0007__flies)
@@ -782,7 +782,7 @@ fof(id__335_A_DICK_1952__336_A_DICK_1952__337_A_DICK_1952__338_A_DICK_1952__339_
       &amp; isA(EVENTX18,r_0336_0009__moves)
       &amp; arg0(EVENTX18) = ENTITYX14
       &amp; r_0336_0010__above_loc(EVENTX18) = ENTITYX16
-      &amp; isA(ENTITYX14,z_0335_1020)
+      &amp; isA(ENTITYX14,r_0335_1020)
       &amp; restriction(QUANTX15) = ENTITYX14
       &amp; scope(QUANTX15) = ATTRIBX13
       &amp; isA(ATTRIBX13,r_0336_0003__alert)
@@ -819,9 +819,9 @@ fof(id__335_A_DICK_1952__336_A_DICK_1952__337_A_DICK_1952__338_A_DICK_1952__339_
       &amp; isA(EVENTX40,r_0339_0004__have)
       &amp; arg0(EVENTX40) = TRESPASSERSX37
       &amp; arg1(EVENTX40) = ENTITYX38
-      &amp; isA(QUANTX43,r_0340_0003__quantificational__r_0340_0003__all)
+      &amp; isA(QUANTX43,r_0340_0003__quantificational__all)
       &amp; restriction(QUANTX43) = ENTITYX42
-      &amp; isA(ENTITYX42,z_0335_1045)
+      &amp; isA(ENTITYX42,r_0335_1045)
       &amp; r_0340_0004__about(ENTITYX42) = SHIPX44
       &amp; scope(QUANTX43) = EVENTX46
       &amp; isA(EVENTX46,r_0340_0002__knows)

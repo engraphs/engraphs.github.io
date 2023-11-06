@@ -133,8 +133,8 @@ arc(r_0008_0002__receive,r_0008_0001__You,arg0).
 arc(r_0008_0002__receive,r_0008_0004__bonus,arg1).
 arc(r_0008_0002__receive,r_0008_0007__end,r_0008_0005__at_tmp).
 arc(r_0008_0007__end,r_0008_0011__mission,r_0008_0008__of).
-arc(r_0008_0009__quantificational__r_0008_0009__each,r_0008_0007__end,scope).
-arc(r_0008_0009__quantificational__r_0008_0009__each,r_0008_0011__mission,restriction).
+arc(r_0008_0009__quantificational__each,r_0008_0007__end,scope).
+arc(r_0008_0009__quantificational__each,r_0008_0011__mission,restriction).
 arc(r_0008_0011__mission,r_0008_0010__successful,attrib2).
 
 </pre>
@@ -143,7 +143,7 @@ arc(r_0008_0011__mission,r_0008_0010__successful,attrib2).
 fof(id__8_A_THRUST,axiom,
     ? [EVENTX6,QUANTX4,ENTITYX1,ENTITYX2,ENTITYX3,ATTRIBX5] :
       ( isA(ENTITYX1,r_0008_0004__bonus)
-      &amp; isA(QUANTX4,r_0008_0009__quantificational__r_0008_0009__each)
+      &amp; isA(QUANTX4,r_0008_0009__quantificational__each)
       &amp; restriction(QUANTX4) = ENTITYX3
       &amp; isA(ENTITYX3,r_0008_0011__mission)
       &amp; attrib2(ENTITYX3) = ATTRIBX5

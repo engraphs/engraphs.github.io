@@ -1075,13 +1075,16 @@ If you retrieve the pod , send the reactor into its critical phase and leave the
 </svg>
 <br>
 <pre>
-arc(r_0011_0001__quantificational__r_0011_0001__Each,r_0011_0002__planet,restriction).
-arc(r_0011_0001__quantificational__r_0011_0001__Each,r_0011_0003__has,scope).
+arc(r_0011_0001__quantificational__Each,r_0011_0002__planet,restriction).
+arc(r_0011_0001__quantificational__Each,r_0011_0003__has,scope).
 arc(r_0011_0003__has,r_0011_0002__planet,arg0).
 arc(r_0011_0003__has,r_0011_0005__reactor,arg1).
 arc(r_0011_0006__providing,r_0011_0005__reactor,arg0).
 arc(r_0011_0006__providing,r_0011_0007__power,arg1).
 arc(r_0011_0006__providing,r_0011_0010__limpet__r_0011_0011__guns,r_0011_0008__for_arg2).
+arc(r_0011_1046,r_0013_0007__longer,attrib2).
+arc(r_0011_1047,r_0011_1046,r_0011_1040).
+arc(r_0011_1047,r_0013_0003__damage,r_0011_1035).
 arc(r_0012_0001__Shooting,r_0011_0005__reactor,arg1).
 arc(r_0012_0004__will,r_0012_0005__damage,scope).
 arc(r_0012_0005__damage,r_0011_0005__reactor,arg1).
@@ -1099,8 +1102,8 @@ arc(r_0012_0018__restored,r_0012_0015__power,arg1).
 arc(r_0013_0003__damage,r_0013_0002__more,attrib2).
 arc(r_0013_0004__done,r_0013_0003__damage,arg1).
 arc(r_0013_0009__will,r_0013_0010__take,scope).
+arc(r_0013_0010__take,r_0011_1046,arg1).
 arc(r_0013_0010__take,r_0012_0018__restored,arg0).
-arc(r_0013_0010__take,z_0011_1046,arg1).
 arc(r_0014_0001__If_cnt_cnd,r_0014_0003__shoot,restriction).
 arc(r_0014_0001__If_cnt_cnd,r_0014_0009__will,scope).
 arc(r_0014_0003__shoot,r_0011_0005__reactor,arg1).
@@ -1155,9 +1158,6 @@ arc(r_0017_0021__receive,r_0014_0002__you,arg0).
 arc(r_0017_0021__receive,r_0017_0024__bonus,arg1).
 arc(r_0017_0024__bonus,r_0017_0023__extra,attrib2).
 arc(r_0017_0024__bonus,r_0017_0026__2000__r_0017_0027__points,r_0017_0025__of).
-arc(z_0011_1046,r_0013_0007__longer,attrib2).
-arc(z_0011_1047,r_0013_0003__damage,z_0011_1035).
-arc(z_0011_1047,z_0011_1046,z_0011_1040).
 
 </pre>
 <br>
@@ -1207,7 +1207,7 @@ fof(id__11_A_THRUST__12_A_THRUST__13_A_THRUST__14_A_THRUST__15_A_THRUST__16_A_TH
       &amp; isA(EVENTX45,r_0013_0010__take)
       &amp; arg1(EVENTX45) = ENTITYX41
       &amp; arg0(EVENTX45) = RESTORE_POWERX43
-      &amp; isA(ENTITYX41,z_0011_1046)
+      &amp; isA(ENTITYX41,r_0011_1046)
       &amp; attrib2(ENTITYX41) = ATTRIBX42
       &amp; RESTORE_POWERX43 = RESTORE_POWERX24
       &amp; REACTORX50 = REACTORX3
@@ -1248,7 +1248,7 @@ fof(id__11_A_THRUST__12_A_THRUST__13_A_THRUST__14_A_THRUST__15_A_THRUST__16_A_TH
       &amp; isA(QUALITYX51,r_0014_0006__repeatedly)
       &amp; isA(QUALITYX55,r_0014_0011__critically)
       &amp; isA(QUALITYX107,r_0017_0018__safely)
-      &amp; isA(QUANTX2,r_0011_0001__quantificational__r_0011_0001__Each)
+      &amp; isA(QUANTX2,r_0011_0001__quantificational__Each)
       &amp; restriction(QUANTX2) = PLANETX1
       &amp; isA(PLANETX1,r_0011_0002__planet)
       &amp; scope(QUANTX2) = EVENTX7
@@ -1275,9 +1275,9 @@ fof(id__11_A_THRUST__12_A_THRUST__13_A_THRUST__14_A_THRUST__15_A_THRUST__16_A_TH
       &amp; scope(OPERATORX21) = EVENTX25
       &amp; isA(EVENTX25,r_0012_0017__be)
       &amp; catenative(EVENTX25) = RESTORE_POWERX22
-      &amp; isA(EVENTX48,z_0011_1047)
-      &amp; z_0011_1035(EVENTX48) = ENTITYX36
-      &amp; z_0011_1040(EVENTX48) = ENTITYX41
+      &amp; isA(EVENTX48,r_0011_1047)
+      &amp; r_0011_1035(EVENTX48) = ENTITYX36
+      &amp; r_0011_1040(EVENTX48) = ENTITYX41
       &amp; isA(CONNX49,r_0014_0001__If_cnt_cnd)
       &amp; restriction(CONNX49) = EVENTX52
       &amp; isA(EVENTX52,r_0014_0003__shoot)

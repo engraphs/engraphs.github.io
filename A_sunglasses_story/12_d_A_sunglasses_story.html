@@ -1176,6 +1176,8 @@ arc(r_0016_0009__country,r_0016_0008__your,genv).
 arc(r_0016_0013__country,r_0016_0012__other,attrib2).
 arc(r_0016_1028__cnt,r_0017_0023__get,scope).
 arc(r_0016_1028__cnt,r_0017_0030__be,restriction).
+arc(r_0016_1085,r_0016_0005__person,genv).
+arc(r_0016_1085,r_0021_0007__own,attrib2).
 arc(r_0017_0002__was,r_0016_0005__person,arg0).
 arc(r_0017_0002__was,r_0017_0003__smart,prd2).
 arc(r_0017_0004__and,r_0017_0002__was,conj1).
@@ -1239,7 +1241,7 @@ arc(r_0021_0001__When_tmp,r_0021_0017__and,scope).
 arc(r_0021_0003__arrived,r_0016_0005__person,arg0).
 arc(r_0021_0003__arrived,r_0021_0004__home,dir3).
 arc(r_0021_0003__arrived,r_0021_0008__country,r_0021_0005__in_loc).
-arc(r_0021_0008__country,z_0016_1085,genv).
+arc(r_0021_0008__country,r_0016_1085,genv).
 arc(r_0021_0010__became,r_0016_0005__person,arg0).
 arc(r_0021_0010__became,r_0021_0012__expert,prd2).
 arc(r_0021_0012__expert,r_0021_0016__country,r_0021_0013__on).
@@ -1255,8 +1257,6 @@ arc(r_0021_0024__listeners,r_0021_0023__interested,attrib1).
 arc(r_0021_0028__culture,r_0021_0027__other,attrib2).
 arc(r_0021_0029__was,r_0021_0028__culture,arg0).
 arc(r_0021_0029__was,r_0021_0030__green,prd2).
-arc(z_0016_1085,r_0016_0005__person,genv).
-arc(z_0016_1085,r_0021_0007__own,attrib2).
 
 </pre>
 <br>
@@ -1366,7 +1366,7 @@ fof(id__16_A_sunglasses_story__17_A_sunglasses_story__18_A_sunglasses_story__19_
       &amp; PERSONX79 = PERSONX2
       &amp; isA(ENTITYX81,r_0021_0008__country)
       &amp; genv(ENTITYX81) = ENTITYX82
-      &amp; isA(ENTITYX82,z_0016_1085)
+      &amp; isA(ENTITYX82,r_0016_1085)
       &amp; genv(ENTITYX82) = PERSONX83
       &amp; attrib2(ENTITYX82) = ATTRIBX84
       &amp; ( PERSONX83 = PERSONX79

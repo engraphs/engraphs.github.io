@@ -116,29 +116,29 @@ Nothing we could use .
 </svg>
 <br>
 <pre>
-arc(r_0108_0001__quantificational__r_0108_0001__Nothing,z_0108_1007,restriction).
-arc(r_0108_0001__quantificational__r_0108_0001__Nothing,z_0108_1008,scope).
+arc(r_0108_0001__quantificational__Nothing,r_0108_1007,restriction).
+arc(r_0108_0001__quantificational__Nothing,r_0108_1008,scope).
 arc(r_0108_0003__could,r_0108_0004__use,scope).
 arc(r_0108_0004__use,r_0108_0002__we,arg0).
-arc(r_0108_0004__use,z_0108_1007,arg1).
-arc(z_0108_1008,z_0108_1007,z_0108_1002).
+arc(r_0108_0004__use,r_0108_1007,arg1).
+arc(r_0108_1008,r_0108_1007,r_0108_1002).
 
 </pre>
 <br>
 <pre>
 fof(id__108_A_DICK_1952,axiom,
     ? [QUANTX4,EVENTX9,OPERATORX5,EVENTX6,ENTITYX3] :
-      ( isA(QUANTX4,r_0108_0001__quantificational__r_0108_0001__Nothing)
+      ( isA(QUANTX4,r_0108_0001__quantificational__Nothing)
       &amp; isA(OPERATORX5,r_0108_0003__could)
       &amp; scope(OPERATORX5) = EVENTX6
       &amp; isA(EVENTX6,r_0108_0004__use)
       &amp; arg1(EVENTX6) = ENTITYX3
       &amp; arg0(EVENTX6) = r_0108_0002__we
-      &amp; isA(ENTITYX3,z_0108_1007)
+      &amp; isA(ENTITYX3,r_0108_1007)
       &amp; restriction(QUANTX4) = ENTITYX3
       &amp; scope(QUANTX4) = EVENTX9
-      &amp; isA(EVENTX9,z_0108_1008)
-      &amp; z_0108_1002(EVENTX9) = ENTITYX3 ) ).
+      &amp; isA(EVENTX9,r_0108_1008)
+      &amp; r_0108_1002(EVENTX9) = ENTITYX3 ) ).
 
 
 </pre>

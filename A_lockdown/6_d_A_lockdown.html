@@ -199,15 +199,15 @@ It just takes forever to unload everything and disinfect it and put it all away 
 arc(r_0032_0002__just,r_0032_0003__takes,scope).
 arc(r_0032_0003__takes,r_0032_0004__forever,tmp4).
 arc(r_0032_0003__takes,r_0032_0008__and__r_0032_0011__and,arg0).
-arc(r_0032_0006__unload,z_0032_1007,arg1).
-arc(r_0032_0007__quantificational__r_0032_0007__everything,r_0032_0006__unload,scope).
-arc(r_0032_0007__quantificational__r_0032_0007__everything,z_0032_1007,restriction).
-arc(r_0032_0008__and__r_0032_0011__and,r_0032_0007__quantificational__r_0032_0007__everything,conj1).
+arc(r_0032_0006__unload,r_0032_1007,arg1).
+arc(r_0032_0007__quantificational__everything,r_0032_0006__unload,scope).
+arc(r_0032_0007__quantificational__everything,r_0032_1007,restriction).
+arc(r_0032_0008__and__r_0032_0011__and,r_0032_0007__quantificational__everything,conj1).
 arc(r_0032_0008__and__r_0032_0011__and,r_0032_0009__disinfect,conj2).
 arc(r_0032_0008__and__r_0032_0011__and,r_0032_0012__put,conj3).
-arc(r_0032_0009__disinfect,z_0032_1007,arg1).
+arc(r_0032_0009__disinfect,r_0032_1007,arg1).
 arc(r_0032_0012__put,r_0032_0015__away,loc3).
-arc(r_0032_0012__put,z_0032_1007,arg1).
+arc(r_0032_0012__put,r_0032_1007,arg1).
 arc(r_0032_0015__away,r_0032_0014__all,quality1).
 
 </pre>
@@ -218,9 +218,9 @@ fof(id__32_A_lockdown,axiom,
       ( STATEX4 = CONJX15
       &amp; isA(CONJX15,r_0032_0008__and__r_0032_0011__and)
       &amp; conj1(CONJX15) = QUANTX6
-      &amp; isA(QUANTX6,r_0032_0007__quantificational__r_0032_0007__everything)
+      &amp; isA(QUANTX6,r_0032_0007__quantificational__everything)
       &amp; restriction(QUANTX6) = GROCERIESX5
-      &amp; isA(GROCERIESX5,z_0032_1007)
+      &amp; isA(GROCERIESX5,r_0032_1007)
       &amp; scope(QUANTX6) = EVENTX8
       &amp; isA(EVENTX8,r_0032_0006__unload)
       &amp; arg1(EVENTX8) = GROCERIESX5

@@ -496,8 +496,11 @@ arc(r_0140_1003__cnt,r_0140_0008__said,scope).
 arc(r_0140_1003__cnt,r_0140_0011__looking,restriction).
 arc(r_0140_1020__cnt,r_0141_0005__had,scope).
 arc(r_0140_1020__cnt,r_0141_0018__and__r_0141_0023__and_r_0141_0027__and,restriction).
-arc(r_0141_0001__quantificational__r_0141_0001__All,r_0140_1020__cnt,scope).
-arc(r_0141_0001__quantificational__r_0141_0001__All,r_0141_0003__work,restriction).
+arc(r_0140_1033,r_0141_0004__we,arg0).
+arc(r_0140_1033,r_0141_0024__then,tmp1).
+arc(r_0140_1033,r_0141_0026__coffin,arg1).
+arc(r_0141_0001__quantificational__All,r_0140_1020__cnt,scope).
+arc(r_0141_0001__quantificational__All,r_0141_0003__work,restriction).
 arc(r_0141_0004__we,r_0141_0008__and,prn2).
 arc(r_0141_0005__had,r_0141_0003__work,arg1_tpc).
 arc(r_0141_0005__had,r_0141_0004__we,arg0).
@@ -507,10 +510,10 @@ arc(r_0141_0011__getting__r_0141_0012__in,r_0141_0004__we,arg0).
 arc(r_0141_0011__getting__r_0141_0012__in,r_0141_0014__woman,arg1).
 arc(r_0141_0011__getting__r_0141_0012__in,r_0141_0016__wash,prd).
 arc(r_0141_0016__wash,r_0141_0017__him,arg1).
+arc(r_0141_0018__and__r_0141_0023__and_r_0141_0027__and,r_0140_1033,conj3).
 arc(r_0141_0018__and__r_0141_0023__and_r_0141_0027__and,r_0141_0011__getting_r_0141_0012__in,conj1).
 arc(r_0141_0018__and__r_0141_0023__and_r_0141_0027__and,r_0141_0020__laying_r_0141_0022__out,conj2).
 arc(r_0141_0018__and__r_0141_0023__and_r_0141_0027__and,r_0141_0029__arranging,conj4).
-arc(r_0141_0018__and__r_0141_0023__and_r_0141_0027__and,z_0140_1033,conj3).
 arc(r_0141_0020__laying__r_0141_0022__out,r_0141_0004__we,arg0).
 arc(r_0141_0020__laying__r_0141_0022__out,r_0141_0017__him,arg1).
 arc(r_0141_0020__laying__r_0141_0022__out,r_0141_0019__then,tmp1).
@@ -518,9 +521,6 @@ arc(r_0141_0029__arranging,r_0141_0004__we,arg0).
 arc(r_0141_0029__arranging,r_0141_0028__then,tmp1).
 arc(r_0141_0029__arranging,r_0141_0032__Mass,r_0141_0030__about_clr).
 arc(r_0141_0032__Mass,r_0141_0035__chapel,r_0141_0033__in).
-arc(z_0140_1033,r_0141_0004__we,arg0).
-arc(z_0140_1033,r_0141_0024__then,tmp1).
-arc(z_0140_1033,r_0141_0026__coffin,arg1).
 
 </pre>
 <br>
@@ -570,7 +570,7 @@ fof(id__140_A_JOYCE_1914__141_A_JOYCE_1914,axiom,
       &amp; arg0(EVENTX14) = r_0140_0005__Nannie
       &amp; prn7(EVENTX14) = EVENTX2
       &amp; prn10(EVENTX14) = EVENTX8
-      &amp; isA(QUANTX16,r_0141_0001__quantificational__r_0141_0001__All)
+      &amp; isA(QUANTX16,r_0141_0001__quantificational__All)
       &amp; restriction(QUANTX16) = ENTITYX15
       &amp; isA(ENTITYX15,r_0141_0003__work)
       &amp; scope(QUANTX16) = CONNX21
@@ -592,7 +592,7 @@ fof(id__140_A_JOYCE_1914__141_A_JOYCE_1914,axiom,
       &amp; tmp1(EVENTX30) = QUALITYX28
       &amp; arg1(EVENTX30) = PRIESTX29
       &amp; conj3(CONJX39) = EVENTX34
-      &amp; isA(EVENTX34,z_0140_1033)
+      &amp; isA(EVENTX34,r_0140_1033)
       &amp; arg0(EVENTX34) = r_0141_0004__we
       &amp; tmp1(EVENTX34) = QUALITYX31
       &amp; arg1(EVENTX34) = ENTITYX32

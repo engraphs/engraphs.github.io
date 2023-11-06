@@ -960,7 +960,8 @@ arc(r_0002_0020__translating,r_0002_0022__requirements,arg1).
 arc(r_0002_0020__translating,r_0002_0027__applications,r_0002_0025__into_clr_dir).
 arc(r_0002_0022__requirements,r_0002_0024__management,r_0002_0023__of).
 arc(r_0002_0027__applications,r_0002_0026__finished,attrib1).
-arc(r_0003_0001__1401__r_0003_0002__Programming_r_0003_0003__Systems,r_0002_0005__IBM_r_0002_0006__1401_r_0002_0007__Data_r_0002_0008__Processing_r_0002_0009__System,z_0002_1022).
+arc(r_0002_1089,r_0006_0018__functions,r_0006_0015__of).
+arc(r_0003_0001__1401__r_0003_0002__Programming_r_0003_0003__Systems,r_0002_0005__IBM_r_0002_0006__1401_r_0002_0007__Data_r_0002_0008__Processing_r_0002_0009__System,r_0002_1022).
 arc(r_0003_0004__are,r_0003_0005__helping,catenative).
 arc(r_0003_0005__helping,r_0003_0006__cut,catenative).
 arc(r_0003_0006__cut,r_0003_0001__1401__r_0003_0002__Programming_r_0003_0003__Systems,arg0).
@@ -981,7 +982,7 @@ arc(r_0004_0005__speed,r_0004_0003__high,attrib1).
 arc(r_0004_0006__computers,r_0004_0001__Modern,attrib1).
 arc(r_0004_0006__computers,r_0004_0005__speed,nlyr3).
 arc(r_0004_0006__computers,r_0004_0010__1401,r_0004_0008__such_as).
-arc(r_0004_0010__1401,r_0002_0005__IBM__r_0002_0006__1401_r_0002_0007__Data_r_0002_0008__Processing_r_0002_0009__System,z_0002_1050).
+arc(r_0004_0010__1401,r_0002_0005__IBM__r_0002_0006__1401_r_0002_0007__Data_r_0002_0008__Processing_r_0002_0009__System,r_0002_1050).
 arc(r_0004_0012__are,r_0004_0006__computers,arg0).
 arc(r_0004_0012__are,r_0004_0015__instruments,prd2).
 arc(r_0004_0015__instruments,r_0004_0013__marvelous,attrib1).
@@ -1000,24 +1001,23 @@ arc(r_0005_0007__communication,r_0005_0009__computers,r_0005_0008__with).
 arc(r_0005_0010__must,r_0005_0011__accompany,scope).
 arc(r_0005_0011__accompany,r_0004_0025__systems,arg1).
 arc(r_0005_0011__accompany,r_0005_0004__programming__r_0005_0005__languages,arg0).
+arc(r_0006_0002__is,r_0002_1093,clf).
 arc(r_0006_0002__is,r_0005_0004__programming__r_0005_0005__languages,r_0006_0003__through_foc).
-arc(r_0006_0002__is,z_0002_1093,clf).
 arc(r_0006_0010__is,r_0006_0008__computer,rfl).
 arc(r_0006_0010__is,r_0006_0011__used,catenative).
+arc(r_0006_0011__used,r_0002_1093,mnr).
 arc(r_0006_0011__used,r_0006_0008__computer,arg2).
-arc(r_0006_0011__used,r_0006_0014__quantificational__r_0006_0014__many,arg1).
-arc(r_0006_0011__used,z_0002_1093,mnr).
+arc(r_0006_0011__used,r_0006_0014__quantificational__many,arg1).
+arc(r_0006_0013__perform,r_0002_1089,arg1).
 arc(r_0006_0013__perform,r_0006_0008__computer,arg0).
-arc(r_0006_0013__perform,z_0002_1089,arg1).
-arc(r_0006_0014__quantificational__r_0006_0014__many,r_0006_0013__perform,scope).
-arc(r_0006_0014__quantificational__r_0006_0014__many,z_0002_1089,restriction).
+arc(r_0006_0014__quantificational__many,r_0002_1089,restriction).
+arc(r_0006_0014__quantificational__many,r_0006_0013__perform,scope).
 arc(r_0006_0018__functions,r_0006_0017__tedious,attrib2).
 arc(r_0006_0022__would,r_0006_0024__have,scope).
 arc(r_0006_0023__otherwise,r_0006_0022__would,scope).
 arc(r_0006_0024__have,r_0006_0026__perform,catenative).
 arc(r_0006_0026__perform,r_0006_0018__functions,arg1).
 arc(r_0006_0026__perform,r_0006_0021__programmer,arg0).
-arc(z_0002_1089,r_0006_0018__functions,r_0006_0015__of).
 
 </pre>
 <br>
@@ -1049,9 +1049,9 @@ fof(id__2_A_IBM_1401__3_A_IBM_1401__4_A_IBM_1401__5_A_IBM_1401__6_A_IBM_1401,axi
       &amp; mnr(EVENTX91) = ENTITYX73
       &amp; arg1(EVENTX91) = STATEX78
       &amp; STATEX78 = QUANTX80
-      &amp; isA(QUANTX80,r_0006_0014__quantificational__r_0006_0014__many)
+      &amp; isA(QUANTX80,r_0006_0014__quantificational__many)
       &amp; restriction(QUANTX80) = ENTITYX79
-      &amp; isA(ENTITYX79,z_0002_1089)
+      &amp; isA(ENTITYX79,r_0002_1089)
       &amp; r_0006_0015__of(ENTITYX79) = ENTITYX81
       &amp; scope(QUANTX80) = EVENTX90
       &amp; isA(EVENTX90,r_0006_0013__perform)
@@ -1075,7 +1075,7 @@ fof(id__2_A_IBM_1401__3_A_IBM_1401__4_A_IBM_1401__5_A_IBM_1401__6_A_IBM_1401,axi
       &amp; isA(ENTITYX15,r_0002_0027__applications)
       &amp; attrib1(ENTITYX15) = ATTRIBX16
       &amp; isA(ENTITYX20,r_0003_0001__1401__r_0003_0002__Programming_r_0003_0003__Systems)
-      &amp; z_0002_1022(ENTITYX20) = IBM1401X23
+      &amp; r_0002_1022(ENTITYX20) = IBM1401X23
       &amp; IBM1401X23 = r_0002_0005__IBM__r_0002_0006__1401_r_0002_0007__Data_r_0002_0008__Processing_r_0002_0009__System
       &amp; isA(ENTITYX26,r_0003_0008__costs)
       &amp; r_0003_0009__of(ENTITYX26) = EVENTX27
@@ -1091,7 +1091,7 @@ fof(id__2_A_IBM_1401__3_A_IBM_1401__4_A_IBM_1401__5_A_IBM_1401__6_A_IBM_1401,axi
       &amp; isA(ENTITYX46,r_0004_0005__speed)
       &amp; attrib1(ENTITYX46) = ATTRIBX47
       &amp; isA(ENTITYX48,r_0004_0010__1401)
-      &amp; z_0002_1050(ENTITYX48) = IBM1401X51
+      &amp; r_0002_1050(ENTITYX48) = IBM1401X51
       &amp; IBM1401X51 = r_0002_0005__IBM__r_0002_0006__1401_r_0002_0007__Data_r_0002_0008__Processing_r_0002_0009__System
       &amp; isA(ENTITYX52,r_0004_0015__instruments)
       &amp; attrib1(ENTITYX52) = ATTRIBX53
@@ -1114,7 +1114,7 @@ fof(id__2_A_IBM_1401__3_A_IBM_1401__4_A_IBM_1401__5_A_IBM_1401__6_A_IBM_1401,axi
       &amp; isA(EVENTX92,r_0006_0010__is)
       &amp; rfl(EVENTX92) = COMPUTERX75
       &amp; catenative(EVENTX92) = CATENATIVEX76
-      &amp; isA(ENTITYX73,z_0002_1093)
+      &amp; isA(ENTITYX73,r_0002_1093)
       &amp; isA(COMPUTERX74,r_0006_0008__computer)
       &amp; COMPUTERX75 = COMPUTERX74
       &amp; isA(OPERATORX84,r_0006_0023__otherwise)

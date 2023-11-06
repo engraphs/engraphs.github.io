@@ -991,6 +991,8 @@ arc(r_0097_0018__recovered,r_0097_0020__body,arg1).
 arc(r_0097_0020__body,r_0097_0025__miner,r_0097_0021__of).
 arc(r_0097_0024__missing,r_0097_0023__last,quality1).
 arc(r_0097_0025__miner,r_0097_0024__missing,attrib2).
+arc(r_0097_1064,r_0101_0007__dangerous,attrib2).
+arc(r_0097_1064,r_0101_0010__world,r_0101_0008__in).
 arc(r_0098_0003__state_run,r_0098_0001__China,genv).
 arc(r_0098_0004__media,r_0098_0003__state_run,attrib1).
 arc(r_0098_0005__say,r_0098_0004__media,arg0).
@@ -1023,15 +1025,15 @@ arc(r_0100_0011__and,r_0100_0010__owner,conj1).
 arc(r_0100_0011__and,r_0100_0012__managers,conj2).
 arc(r_0100_0011__and,r_0100_0015__mine,r_0100_0013__of).
 arc(r_0100_0017__but,r_0100_0005__says,conj1).
-arc(r_0100_0017__but,r_0100_0019__quantificational__r_0100_0019__no,conj2).
+arc(r_0100_0017__but,r_0100_0019__quantificational__no,conj2).
 arc(r_0100_0018__provided,r_0100_0004__agency,arg0).
 arc(r_0100_0018__provided,r_0100_0021__details,arg1).
-arc(r_0100_0019__quantificational__r_0100_0019__no,r_0100_0018__provided,scope).
-arc(r_0100_0019__quantificational__r_0100_0019__no,r_0100_0021__details,restriction).
+arc(r_0100_0019__quantificational__no,r_0100_0018__provided,scope).
+arc(r_0100_0019__quantificational__no,r_0100_0021__details,restriction).
 arc(r_0100_0021__details,r_0100_0020__other,attrib2).
 arc(r_0101_0002__mines,r_0101_0001__Chinese,attrib1).
+arc(r_0101_0003__are,r_0097_1064,r_0101_0004__among_prd2).
 arc(r_0101_0003__are,r_0101_0002__mines,arg0).
-arc(r_0101_0003__are,z_0097_1064,r_0101_0004__among_prd2).
 arc(r_0101_0007__dangerous,r_0101_0006__most,quality1).
 arc(r_0102_0001__Thousands,r_0102_0003__people,r_0102_0002__of).
 arc(r_0102_0004__are,r_0102_0005__killed,catenative).
@@ -1039,14 +1041,12 @@ arc(r_0102_0005__killed,r_0102_0001__Thousands,arg1).
 arc(r_0102_0005__killed,r_0102_0007__year,tmp).
 arc(r_0102_0005__killed,r_0102_0012__and,r_0102_0008__in_loc).
 arc(r_0102_0005__killed,r_0102_0016__government__r_0102_0017__crackdowns,r_0102_0015__despite_cnt).
-arc(r_0102_0006__quantificational__r_0102_0006__every,r_0102_0004__are,scope).
-arc(r_0102_0006__quantificational__r_0102_0006__every,r_0102_0007__year,restriction).
+arc(r_0102_0006__quantificational__every,r_0102_0004__are,scope).
+arc(r_0102_0006__quantificational__every,r_0102_0007__year,restriction).
 arc(r_0102_0012__and,r_0102_0009__explosions,conj1).
 arc(r_0102_0012__and,r_0102_0011__cave_ins,conj2).
 arc(r_0102_0012__and,r_0102_0013__floods,conj3).
 arc(r_0102_0016__government__r_0102_0017__crackdowns,r_0102_0019__safety_r_0102_0020__violations,r_0102_0018__on).
-arc(z_0097_1064,r_0101_0007__dangerous,attrib2).
-arc(z_0097_1064,r_0101_0010__world,r_0101_0008__in).
 
 </pre>
 <br>
@@ -1123,7 +1123,7 @@ fof(id__97_A_Voice_of_America,axiom,
       &amp; isA(ENTITYX49,r_0100_0012__managers)
       &amp; isA(ENTITYX58,r_0101_0002__mines)
       &amp; attrib1(ENTITYX58) = ATTRIBX59
-      &amp; isA(ENTITYX60,z_0097_1064)
+      &amp; isA(ENTITYX60,r_0097_1064)
       &amp; attrib2(ENTITYX60) = ATTRIBX61
       &amp; r_0101_0008__in(ENTITYX60) = ENTITYX63
       &amp; isA(ENTITYX63,r_0101_0010__world)
@@ -1180,7 +1180,7 @@ fof(id__97_A_Voice_of_America,axiom,
       &amp; arg0(EVENTX52) = ENTITYX41
       &amp; arg1(EVENTX52) = STATEX43
       &amp; conj2(CONJX57) = QUANTX54
-      &amp; isA(QUANTX54,r_0100_0019__quantificational__r_0100_0019__no)
+      &amp; isA(QUANTX54,r_0100_0019__quantificational__no)
       &amp; restriction(QUANTX54) = ENTITYX53
       &amp; isA(ENTITYX53,r_0100_0021__details)
       &amp; attrib2(ENTITYX53) = ATTRIBX55
@@ -1191,7 +1191,7 @@ fof(id__97_A_Voice_of_America,axiom,
       &amp; isA(EVENTX65,r_0101_0003__are)
       &amp; arg0(EVENTX65) = ENTITYX58
       &amp; r_0101_0004__among_prd2(EVENTX65) = ENTITYX60
-      &amp; isA(QUANTX67,r_0102_0006__quantificational__r_0102_0006__every)
+      &amp; isA(QUANTX67,r_0102_0006__quantificational__every)
       &amp; restriction(QUANTX67) = ENTITYX66
       &amp; isA(ENTITYX66,r_0102_0007__year)
       &amp; scope(QUANTX67) = EVENTX79

@@ -336,6 +336,9 @@ arc(r_0030_0013__associated,r_0030_0012__disease,arg1).
 arc(r_0030_0013__associated,r_0030_0016__areas,r_0030_0014__with_clr).
 arc(r_0030_0016__areas,r_0030_0015__rural,attrib1).
 arc(r_0030_0016__areas,r_0030_0018__Asia,r_0030_0017__in).
+arc(r_0030_1014,r_0030_0002__Encephalitis,r_0030_1004).
+arc(r_0030_1026,r_0032_0001__fatality__r_0032_0002__rates,arg0).
+arc(r_0030_1026,r_0032_0003__30__r_0032_0004___,prd2).
 arc(r_0031_0002__encephalitis,r_0031_0001__acute,attrib1).
 arc(r_0031_0003__can,r_0031_0004__progress,scope).
 arc(r_0031_0004__progress,r_0031_0002__encephalitis,arg0).
@@ -343,9 +346,6 @@ arc(r_0031_0004__progress,r_0031_0010__and,r_0031_0005__to_dir).
 arc(r_0031_0010__and,r_0031_0006__paralysis,conj1).
 arc(r_0031_0010__and,r_0031_0008__coma,conj2).
 arc(r_0031_0010__and,r_0031_0011__death,conj3).
-arc(z_0030_1014,r_0030_0002__Encephalitis,z_0030_1004).
-arc(z_0030_1026,r_0032_0001__fatality__r_0032_0002__rates,arg0).
-arc(z_0030_1026,r_0032_0003__30__r_0032_0004___,prd2).
 
 </pre>
 <br>
@@ -383,14 +383,14 @@ fof(id__30_A_FACTBOOK_1_2010__31_A_FACTBOOK_1_2010__32_A_FACTBOOK_1_2010,axiom,
       &amp; isA(r_0030_0002__Encephalitis,r_0030_0002__Encephalitis)
       &amp; attrib1(r_0030_0002__Encephalitis) = ATTRIBX5
       &amp; prn4(r_0030_0002__Encephalitis) = ENTITYX6
-      &amp; isA(EVENTX15,z_0030_1014)
-      &amp; z_0030_1004(EVENTX15) = r_0030_0002__Encephalitis
+      &amp; isA(EVENTX15,r_0030_1014)
+      &amp; r_0030_1004(EVENTX15) = r_0030_0002__Encephalitis
       &amp; isA(OPERATORX22,r_0031_0003__can)
       &amp; scope(OPERATORX22) = EVENTX23
       &amp; isA(EVENTX23,r_0031_0004__progress)
       &amp; arg0(EVENTX23) = ENTITYX16
       &amp; r_0031_0005__to_dir(EVENTX23) = ENTITYX18
-      &amp; isA(EVENTX27,z_0030_1026)
+      &amp; isA(EVENTX27,r_0030_1026)
       &amp; arg0(EVENTX27) = ENTITYX24
       &amp; prd2(EVENTX27) = ENTITYX25 ) ).
 

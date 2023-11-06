@@ -686,6 +686,9 @@ arc(r_0179_0007__try,r_0179_0009__chapel,arg1).
 arc(r_0179_1032__question,r_0181_0006__but,scope).
 arc(r_0179_1038__cnt,r_0181_0009__was,scope).
 arc(r_0179_1038__cnt,r_0181_0023__and,restriction).
+arc(r_0179_1044,r_0181_0017__dark,attrib2).
+arc(r_0179_1049,r_0180_0031__him,arg0).
+arc(r_0179_1049,r_0181_0022__wide_awake,prd).
 arc(r_0180_0001__So,r_0180_0007__and,scope).
 arc(r_0180_0004__got,r_0180_0002__then,tmp2).
 arc(r_0180_0004__got,r_0180_0003__they,arg0).
@@ -702,9 +705,9 @@ arc(r_0180_0014__and__r_0180_0017__and,r_0180_0015__Father_r_0180_0016__O_apos_R
 arc(r_0180_0014__and__r_0180_0017__and,r_0180_0019__priest,conj3).
 arc(r_0180_0021__was,r_0180_0019__priest,arg0).
 arc(r_0180_0021__was,r_0180_0022__there,prd2_loc3).
+arc(r_0180_0023__brought,r_0179_1023,dir3).
 arc(r_0180_0023__brought,r_0180_0014__and__r_0180_0017__and,arg0).
 arc(r_0180_0023__brought,r_0180_0026__light,arg1).
-arc(r_0180_0023__brought,z_0179_1023,dir3).
 arc(r_0180_0027__for_cnt,r_0180_0023__brought,scope).
 arc(r_0180_0027__for_cnt,r_0180_0029__look,restriction).
 arc(r_0180_0029__look,r_0180_0014__and__r_0180_0017__and,arg0).
@@ -715,21 +718,18 @@ arc(r_0181_0006__but,r_0179_1038__cnt,conj2).
 arc(r_0181_0006__but,r_0181_0005__think,conj1).
 arc(r_0181_0009__was,r_0180_0031__him,arg0).
 arc(r_0181_0009__was,r_0181_0007__there,prd2_loc_tpc1).
+arc(r_0181_0011__sitting,r_0179_1044,r_0181_0015__in_mnr).
 arc(r_0181_0011__sitting,r_0180_0031__him,arg0).
 arc(r_0181_0011__sitting,r_0180_0031__him,r_0181_0013__by_mnr).
 arc(r_0181_0011__sitting,r_0181_0012__up,dir2).
 arc(r_0181_0011__sitting,r_0181_0020__confession_box,r_0181_0018__in_loc).
-arc(r_0181_0011__sitting,z_0179_1044,r_0181_0015__in_mnr).
 arc(r_0181_0020__confession_box,r_0180_0031__him,genv).
+arc(r_0181_0023__and,r_0179_1049,conj2).
 arc(r_0181_0023__and,r_0181_0011__sitting,conj1).
 arc(r_0181_0023__and,r_0181_0024__laughing_like,conj3).
-arc(r_0181_0023__and,z_0179_1049,conj2).
 arc(r_0181_0024__laughing_like,r_0180_0031__him,arg0).
 arc(r_0181_0024__laughing_like,r_0180_0031__him,r_0181_0026__to_com).
 arc(r_0181_0024__laughing_like,r_0181_0025__softly,mnr2).
-arc(z_0179_1044,r_0181_0017__dark,attrib2).
-arc(z_0179_1049,r_0180_0031__him,arg0).
-arc(z_0179_1049,r_0181_0022__wide_awake,prd).
 
 </pre>
 <br>
@@ -743,7 +743,7 @@ fof(id__179_A_JOYCE_1914__180_A_JOYCE_1914__181_A_JOYCE_1914,axiom,
       &amp; isA(QUALITYX2,r_0179_0002__then)
       &amp; isA(QUALITYX11,r_0180_0002__then)
       &amp; isA(QUALITYX20,r_0180_0022__there)
-      &amp; isA(QUALITYX22,z_0179_1023)
+      &amp; isA(QUALITYX22,r_0179_1023)
       &amp; isA(QUALITYX36,r_0181_0007__there)
       &amp; isA(QUALITYX40,r_0181_0012__up)
       &amp; isA(QUALITYX51,r_0181_0025__softly)
@@ -766,7 +766,7 @@ fof(id__179_A_JOYCE_1914__180_A_JOYCE_1914__181_A_JOYCE_1914,axiom,
       &amp; PRIESTX37 = r_0180_0031__him
       &amp; ( PRIESTX41 = r_0180_0031__him
         | PRIESTX41 = PRIESTX37 )
-      &amp; isA(ENTITYX42,z_0179_1044)
+      &amp; isA(ENTITYX42,r_0179_1044)
       &amp; attrib2(ENTITYX42) = ATTRIBX43
       &amp; isA(ENTITYX45,r_0181_0020__confession_box)
       &amp; genv(ENTITYX45) = PRIESTX46
@@ -837,7 +837,7 @@ fof(id__179_A_JOYCE_1914__180_A_JOYCE_1914__181_A_JOYCE_1914,axiom,
       &amp; r_0181_0015__in_mnr(EVENTX47) = ENTITYX42
       &amp; r_0181_0018__in_loc(EVENTX47) = ENTITYX45
       &amp; conj2(CONJX54) = EVENTX50
-      &amp; isA(EVENTX50,z_0179_1049)
+      &amp; isA(EVENTX50,r_0179_1049)
       &amp; arg0(EVENTX50) = PRIESTX37
       &amp; prd(EVENTX50) = ATTRIBX48
       &amp; conj3(CONJX54) = EVENTX53

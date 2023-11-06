@@ -916,6 +916,8 @@ arc(r_0090_0010__managed,r_0090_0012__surround,arg1).
 arc(r_0090_0012__surround,r_0090_0006__efficiency,r_0090_0007__with_mnr).
 arc(r_0090_0012__surround,r_0090_0009__Alastair,arg0).
 arc(r_0090_0012__surround,r_0090_0009__Alastair,arg1).
+arc(r_0090_1059,r_0090_0009__Alastair,genv).
+arc(r_0090_1059,r_0092_0036__own,attrib2).
 arc(r_0091_0003__service,r_0090_0009__Alastair,genv).
 arc(r_0091_0005__was,r_0091_0003__service,r_0091_0001__In_loc).
 arc(r_0091_0005__was,r_0091_0006__known,catenative).
@@ -925,12 +927,12 @@ arc(r_0091_0008__be,r_0090_0009__Alastair,arg0).
 arc(r_0091_0008__be,r_0091_0009__ruthless,prd2).
 arc(r_0091_0009__ruthless,r_0091_0011__incompetence,emb2).
 arc(r_0091_0013__but,r_0091_0005__was,conj1).
-arc(r_0091_0013__but,r_0091_0017__quantificational__r_0091_0017__any,conj2).
+arc(r_0091_0013__but,r_0091_0017__quantificational__any,conj2).
 arc(r_0091_0016__had,r_0090_0009__Alastair,arg0).
 arc(r_0091_0016__had,r_0091_0015__seldom,tmp2).
 arc(r_0091_0016__had,r_0091_0018__difficulty,arg1).
-arc(r_0091_0017__quantificational__r_0091_0017__any,r_0091_0016__had,scope).
-arc(r_0091_0017__quantificational__r_0091_0017__any,r_0091_0018__difficulty,restriction).
+arc(r_0091_0017__quantificational__any,r_0091_0016__had,scope).
+arc(r_0091_0017__quantificational__any,r_0091_0018__difficulty,restriction).
 arc(r_0091_0018__difficulty,r_0091_0021__precisely,r_0091_0019__in).
 arc(r_0091_0020__recruiting,r_0091_0023__staff,arg1).
 arc(r_0091_0021__precisely,r_0091_0020__recruiting,scope).
@@ -941,14 +943,14 @@ arc(r_0092_0002__possessed,r_0092_0005__gift,arg1).
 arc(r_0092_0005__gift,r_0092_0004__strange,attrib2).
 arc(r_0092_0005__gift,r_0092_0007__leadership,r_0092_0006__of).
 arc(r_0092_0009__enabled,r_0092_0005__gift,arg0).
-arc(r_0092_0009__enabled,r_0092_0019__quantificational__r_0092_0019__all,arg1).
+arc(r_0092_0009__enabled,r_0092_0019__quantificational__all,arg1).
 arc(r_0092_0012__imbue,r_0092_0010__him,arg0).
 arc(r_0092_0012__imbue,r_0092_0016__film__r_0092_0017__actress,arg1).
 arc(r_0092_0012__imbue,r_0092_0021__qualities,r_0092_0018__with_clr).
 arc(r_0092_0016__film__r_0092_0017__actress,r_0092_0013__even,quality1).
 arc(r_0092_0016__film__r_0092_0017__actress,r_0092_0015__unknown,attrib3).
-arc(r_0092_0019__quantificational__r_0092_0019__all,r_0092_0012__imbue,scope).
-arc(r_0092_0019__quantificational__r_0092_0019__all,r_0092_0021__qualities,restriction).
+arc(r_0092_0019__quantificational__all,r_0092_0012__imbue,scope).
+arc(r_0092_0019__quantificational__all,r_0092_0021__qualities,restriction).
 arc(r_0092_0021__qualities,r_0092_0024__and,r_0092_0022__of).
 arc(r_0092_0024__and,r_0092_0023__efficiency,conj1).
 arc(r_0092_0024__and,r_0092_0025__decision,conj2).
@@ -957,7 +959,7 @@ arc(r_0092_0028__took,r_0092_0021__qualities,arg1).
 arc(r_0092_0028__took,r_0092_0031__matter,r_0092_0029__as_mnr).
 arc(r_0092_0031__matter,r_0092_0033__course,r_0092_0032__of).
 arc(r_0092_0033__course,r_0092_0037__officers,r_0092_0034__among).
-arc(r_0092_0037__officers,z_0090_1059,genv).
+arc(r_0092_0037__officers,r_0090_1059,genv).
 arc(r_0093_0002__remembered,r_0090_0001__Geoffrey,arg0).
 arc(r_0093_0002__remembered,r_0093_0013__had,arg1).
 arc(r_0093_0006__field__r_0093_0007__marshal,r_0093_0005__famous,attrib2).
@@ -976,8 +978,6 @@ arc(r_0094_0002__certainly,r_0094_0003__seemed,scope).
 arc(r_0094_0003__seemed,r_0094_0005__apply,catenative).
 arc(r_0094_0005__apply,r_0090_0009__Alastair,r_0094_0006__to_clr).
 arc(r_0094_0005__apply,r_0094_0001__It,arg0).
-arc(z_0090_1059,r_0090_0009__Alastair,genv).
-arc(z_0090_1059,r_0092_0036__own,attrib2).
 
 </pre>
 <br>
@@ -1009,7 +1009,7 @@ fof(id__90_A_lob_N01__91_A_lob_N01__92_A_lob_N01__93_A_lob_N01__94_A_lob_N01,axi
       &amp; isA(EVENTX36,r_0091_0020__recruiting)
       &amp; arg1(EVENTX36) = ENTITYX33
       &amp; STATEX43 = QUANTX48
-      &amp; isA(QUANTX48,r_0092_0019__quantificational__r_0092_0019__all)
+      &amp; isA(QUANTX48,r_0092_0019__quantificational__all)
       &amp; isA(EVENTX60,r_0092_0028__took)
       &amp; arg1(EVENTX60) = ENTITYX47
       &amp; arg0(EVENTX60) = ALASTAIRX52
@@ -1081,7 +1081,7 @@ fof(id__90_A_lob_N01__91_A_lob_N01__92_A_lob_N01__93_A_lob_N01__94_A_lob_N01,axi
       &amp; r_0092_0034__among(ENTITYX54) = ENTITYX55
       &amp; isA(ENTITYX55,r_0092_0037__officers)
       &amp; genv(ENTITYX55) = ENTITYX56
-      &amp; isA(ENTITYX56,z_0090_1059)
+      &amp; isA(ENTITYX56,r_0090_1059)
       &amp; genv(ENTITYX56) = ALASTAIRX57
       &amp; attrib2(ENTITYX56) = ATTRIBX58
       &amp; ( ALASTAIRX57 = ALASTAIRX52
@@ -1116,7 +1116,7 @@ fof(id__90_A_lob_N01__91_A_lob_N01__92_A_lob_N01__93_A_lob_N01__94_A_lob_N01,axi
       &amp; r_0091_0001__In_loc(EVENTX24) = ENTITYX11
       &amp; catenative(EVENTX24) = CATENATIVEX14
       &amp; conj2(CONJX38) = QUANTX28
-      &amp; isA(QUANTX28,r_0091_0017__quantificational__r_0091_0017__any)
+      &amp; isA(QUANTX28,r_0091_0017__quantificational__any)
       &amp; restriction(QUANTX28) = ENTITYX27
       &amp; isA(ENTITYX27,r_0091_0018__difficulty)
       &amp; r_0091_0019__in(ENTITYX27) = EVENTX29

@@ -497,6 +497,9 @@ arc(r_0011_0025__matter,r_0011_0024__fecal,attrib1).
 arc(r_0011_0027__principally,r_0011_0029__areas,r_0011_0028__in).
 arc(r_0011_0029__areas,r_0011_0032__sanitation,r_0011_0030__of).
 arc(r_0011_0032__sanitation,r_0011_0031__poor,attrib1).
+arc(r_0011_1024,r_0011_0001__Hepatitis__r_0011_0002__A,r_0011_1004).
+arc(r_0011_1041,r_0014_0001__vaccine,arg0).
+arc(r_0011_1041,r_0014_0002__available,prd).
 arc(r_0012_0002__exhibit,r_0012_0001__victims,arg0).
 arc(r_0012_0002__exhibit,r_0012_0007__and,arg1).
 arc(r_0012_0007__and,r_0012_0003__fever,conj1).
@@ -508,9 +511,6 @@ arc(r_0013_0006__experience,r_0013_0001__15__r_0013_0002___,arg0).
 arc(r_0013_0006__experience,r_0013_0008__symptoms,arg1).
 arc(r_0013_0006__experience,r_0013_0010__6__r_0013_0012__9_r_0013_0013__months,r_0013_0009__over_tmp).
 arc(r_0013_0008__symptoms,r_0013_0007__prolonged,attrib1).
-arc(z_0011_1024,r_0011_0001__Hepatitis__r_0011_0002__A,z_0011_1004).
-arc(z_0011_1041,r_0014_0001__vaccine,arg0).
-arc(z_0011_1041,r_0014_0002__available,prd).
 
 </pre>
 <br>
@@ -569,8 +569,8 @@ fof(id__11_A_FACTBOOK_1_2010__12_A_FACTBOOK_1_2010__13_A_FACTBOOK_1_2010__14_A_F
       &amp; isA(ATTRIBX40,r_0014_0002__available)
       &amp; isA(QUALITYX19,r_0011_0027__principally)
       &amp; r_0011_0028__in(QUALITYX19) = ENTITYX20
-      &amp; isA(EVENTX25,z_0011_1024)
-      &amp; z_0011_1004(EVENTX25) = r_0011_0001__Hepatitis__r_0011_0002__A
+      &amp; isA(EVENTX25,r_0011_1024)
+      &amp; r_0011_1004(EVENTX25) = r_0011_0001__Hepatitis__r_0011_0002__A
       &amp; isA(EVENTX31,r_0012_0002__exhibit)
       &amp; arg0(EVENTX31) = ENTITYX26
       &amp; arg1(EVENTX31) = ENTITYX27
@@ -580,7 +580,7 @@ fof(id__11_A_FACTBOOK_1_2010__12_A_FACTBOOK_1_2010__13_A_FACTBOOK_1_2010__14_A_F
       &amp; arg0(EVENTX38) = ENTITYX32
       &amp; arg1(EVENTX38) = ENTITYX34
       &amp; r_0013_0009__over_tmp(EVENTX38) = ENTITYX36
-      &amp; isA(EVENTX42,z_0011_1041)
+      &amp; isA(EVENTX42,r_0011_1041)
       &amp; arg0(EVENTX42) = ENTITYX39
       &amp; prd(EVENTX42) = ATTRIBX40 ) ).
 

@@ -752,16 +752,18 @@ arc(r_0020_0040__face,r_0020_0010__somebody,genv).
 arc(r_0020_1013__utterance,r_0020_1015__question,part1).
 arc(r_0020_1015__question,r_0020_0021__do,scope).
 arc(r_0020_1042__question,r_0021_0011__Why,scope).
+arc(r_0020_1045,r_0020_0010__somebody,arg1).
 arc(r_0020_1074__question,r_0024_0014__am,scope).
+arc(r_0020_1077,r_0020_1074__question,prn3).
 arc(r_0021_0002___apos_re,r_0020_0010__somebody,arg0).
 arc(r_0021_0002___apos_re,r_0021_0003__like,prd2).
 arc(r_0021_0003__like,r_0020_1042__question,prn3).
-arc(r_0021_0011__Why,z_0020_1045,scope).
+arc(r_0021_0011__Why,r_0020_1045,scope).
 arc(r_0022_0003__one__r_0022_0004__night,r_0020_0010__somebody,genv).
 arc(r_0022_0005__out,r_0022_0003__one__r_0022_0004__night,arg0).
 arc(r_0022_0005__out,r_0022_0007__week,tmp).
-arc(r_0022_0006__quantificational__r_0022_0006__all,r_0022_0005__out,scope).
-arc(r_0022_0006__quantificational__r_0022_0006__all,r_0022_0007__week,restriction).
+arc(r_0022_0006__quantificational__all,r_0022_0005__out,scope).
+arc(r_0022_0006__quantificational__all,r_0022_0007__week,restriction).
 arc(r_0023_0002__if_cnt_cnd,r_0023_0004__ask,restriction).
 arc(r_0023_0002__if_cnt_cnd,r_0023_0010__pin,scope).
 arc(r_0023_0004__ask,r_0020_0003__you,arg0).
@@ -770,8 +772,8 @@ arc(r_0023_0007__education,r_0020_0010__somebody,genv).
 arc(r_0023_0010__pin,r_0020_0003__you,arg1).
 arc(r_0023_0010__pin,r_0020_0010__somebody,arg0).
 arc(r_0023_0010__pin,r_0023_0014__wall,r_0023_0012__to_loc).
+arc(r_0024_0001__Because_cnt,r_0020_1077,scope).
 arc(r_0024_0001__Because_cnt,r_0024_0003___apos_s,restriction).
-arc(r_0024_0001__Because_cnt,z_0020_1077,scope).
 arc(r_0024_0003___apos_s,r_0023_0007__education,arg0).
 arc(r_0024_0003___apos_s,r_0024_0004__one,prd2).
 arc(r_0024_0004__one,r_0024_0007__things,r_0024_0005__of).
@@ -780,8 +782,6 @@ arc(r_0024_0009__goes,r_0024_0010__deep,prd23).
 arc(r_0024_0009__goes,r_0024_0012__people,r_0024_0011__with_com).
 arc(r_0024_0014__am,r_0024_0015__I,arg0).
 arc(r_0024_0014__am,r_0024_0016__right,prd2).
-arc(z_0020_1045,r_0020_0010__somebody,arg1).
-arc(z_0020_1077,r_0020_1074__question,prn3).
 
 </pre>
 <br>
@@ -809,7 +809,7 @@ fof(id__20_A_TED_talk_11__21_A_TED_talk_11__22_A_TED_talk_11__23_A_TED_talk_11__
       &amp; scope(OPERATORX42) = OPERATORX43
       &amp; isA(OPERATORX43,r_0021_0011__Why)
       &amp; scope(OPERATORX43) = EVENTX46
-      &amp; isA(EVENTX46,z_0020_1045)
+      &amp; isA(EVENTX46,r_0020_1045)
       &amp; arg1(EVENTX46) = PERSONX44
       &amp; EVENTX72 = OPERATORX74
       &amp; isA(OPERATORX74,r_0020_1074__question)
@@ -889,7 +889,7 @@ fof(id__20_A_TED_talk_11__21_A_TED_talk_11__22_A_TED_talk_11__23_A_TED_talk_11__
       &amp; isA(EVENTX47,r_0021_0002___apos_re)
       &amp; arg0(EVENTX47) = PERSONX36
       &amp; prd2(EVENTX47) = ATTRIBX37
-      &amp; isA(QUANTX51,r_0022_0006__quantificational__r_0022_0006__all)
+      &amp; isA(QUANTX51,r_0022_0006__quantificational__all)
       &amp; restriction(QUANTX51) = ENTITYX50
       &amp; isA(ENTITYX50,r_0022_0007__week)
       &amp; scope(QUANTX51) = EVENTX52
@@ -912,7 +912,7 @@ fof(id__20_A_TED_talk_11__21_A_TED_talk_11__22_A_TED_talk_11__23_A_TED_talk_11__
       &amp; arg0(EVENTX71) = EDUCATIONX65
       &amp; prd2(EVENTX71) = ENTITYX66
       &amp; scope(CONNX64) = EVENTX78
-      &amp; isA(EVENTX78,z_0020_1077)
+      &amp; isA(EVENTX78,r_0020_1077)
       &amp; prn3(EVENTX78) = EVENTX72 ) ).
 
 

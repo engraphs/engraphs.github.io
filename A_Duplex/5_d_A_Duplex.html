@@ -1231,6 +1231,8 @@ arc(r_0007_1001__tmp,r_0007_0002__shown,restriction).
 arc(r_0007_1001__tmp,r_0007_0015__has,scope).
 arc(r_0007_1049__cnt,r_0009_0012__was,scope).
 arc(r_0007_1049__cnt,r_0009_0016__even,restriction).
+arc(r_0007_1056,r_0008_0009__voice,genv).
+arc(r_0007_1056,r_0009_0019__own,attrib2).
 arc(r_0008_0006__heard,r_0007_0010__conference,r_0008_0001__At_loc).
 arc(r_0008_0006__heard,r_0008_0005__we,arg0).
 arc(r_0008_0006__heard,r_0008_0016__by_mnr,arg1).
@@ -1251,10 +1253,10 @@ arc(r_0008_0029__and,r_0008_0021__speaking,conj2).
 arc(r_0008_0029__and,r_0008_0030__confirming,conj3).
 arc(r_0008_0030__confirming,r_0008_0009__voice,arg0).
 arc(r_0008_0030__confirming,r_0008_0032__details,arg1).
+arc(r_0009_0002__startled,r_0007_1042,arg0).
 arc(r_0009_0002__startled,r_0009_0003__people,arg1).
-arc(r_0009_0002__startled,z_0007_1042,arg0).
+arc(r_0009_0004__was,r_0007_1042,arg0).
 arc(r_0009_0004__was,r_0009_0009__while_tmp,prd2).
-arc(r_0009_0004__was,z_0007_1042,arg0).
 arc(r_0009_0009__while_tmp,r_0007_1049__cnt,scope).
 arc(r_0009_0009__while_tmp,r_0009_0010__synthesised,restriction).
 arc(r_0009_0010__synthesised,r_0008_0009__voice,arg0).
@@ -1265,17 +1267,17 @@ arc(r_0009_0016__even,r_0009_0017__adding,scope).
 arc(r_0009_0017__adding,r_0008_0009__voice,arg0).
 arc(r_0009_0017__adding,r_0009_0023__and,arg1).
 arc(r_0009_0017__adding,r_0009_0029__flow,r_0009_0027__to_dir).
+arc(r_0009_0023__and,r_0007_1056,genv).
 arc(r_0009_0023__and,r_0009_0021__uh_huh,conj1).
 arc(r_0009_0023__and,r_0009_0025__mm,conj2).
-arc(r_0009_0023__and,z_0007_1056,genv).
 arc(r_0009_0029__flow,r_0009_0031__conversation,r_0009_0030__of).
-arc(r_0010_0001__Indeed,r_0010_0010__quantificational__r_0010_0010__no,scope).
+arc(r_0010_0001__Indeed,r_0010_0010__quantificational__no,scope).
 arc(r_0010_0004__recipient,r_0008_0010__book,r_0010_0005__of).
 arc(r_0010_0008__may,r_0010_0009__have,scope).
 arc(r_0010_0009__have,r_0010_0004__recipient,arg0).
 arc(r_0010_0009__have,r_0010_0011__idea,arg1).
-arc(r_0010_0010__quantificational__r_0010_0010__no,r_0010_0008__may,scope).
-arc(r_0010_0010__quantificational__r_0010_0010__no,r_0010_0011__idea,restriction).
+arc(r_0010_0010__quantificational__no,r_0010_0008__may,scope).
+arc(r_0010_0010__quantificational__no,r_0010_0011__idea,restriction).
 arc(r_0010_0011__idea,r_0010_0013__are,emb3).
 arc(r_0010_0013__are,r_0010_0014__talking,catenative).
 arc(r_0010_0014__talking,r_0010_0004__recipient,arg0).
@@ -1301,8 +1303,6 @@ arc(r_0012_0003__also,r_0012_0002__was,scope).
 arc(r_0012_0007__demo,r_0007_0017__one,rfl).
 arc(r_0012_0007__demo,r_0007_0023__demos,r_0007_0018__of).
 arc(r_0012_0007__demo,r_0012_0007__demo,rfl).
-arc(z_0007_1056,r_0008_0009__voice,genv).
-arc(z_0007_1056,r_0009_0019__own,attrib2).
 
 </pre>
 <br>
@@ -1389,14 +1389,14 @@ fof(id__7_A_Duplex__8_A_Duplex__9_A_Duplex__10_A_Duplex__11_A_Duplex__12_A_Duple
       &amp; isA(EVENTX41,r_0009_0002__startled)
       &amp; arg0(EVENTX41) = ENTITYX39
       &amp; arg1(EVENTX41) = ENTITYX40
-      &amp; isA(ENTITYX39,z_0007_1042)
+      &amp; isA(ENTITYX39,r_0007_1042)
       &amp; isA(ENTITYX40,r_0009_0003__people)
       &amp; ROBOT_VOICEX44 = ROBOT_VOICEX22
       &amp; isA(ENTITYX52,r_0009_0023__and)
       &amp; genv(ENTITYX52) = ENTITYX53
       &amp; conj1(ENTITYX52) = ENTITYX57
       &amp; conj2(ENTITYX52) = ENTITYX58
-      &amp; isA(ENTITYX53,z_0007_1056)
+      &amp; isA(ENTITYX53,r_0007_1056)
       &amp; genv(ENTITYX53) = ROBOT_VOICEX54
       &amp; attrib2(ENTITYX53) = ATTRIBX55
       &amp; ( ROBOT_VOICEX54 = ROBOT_VOICEX44
@@ -1464,7 +1464,7 @@ fof(id__7_A_Duplex__8_A_Duplex__9_A_Duplex__10_A_Duplex__11_A_Duplex__12_A_Duple
       &amp; prd2(EVENTX63) = STATEX43
       &amp; isA(OPERATORX64,r_0010_0001__Indeed)
       &amp; scope(OPERATORX64) = QUANTX68
-      &amp; isA(QUANTX68,r_0010_0010__quantificational__r_0010_0010__no)
+      &amp; isA(QUANTX68,r_0010_0010__quantificational__no)
       &amp; restriction(QUANTX68) = ENTITYX67
       &amp; isA(ENTITYX67,r_0010_0011__idea)
       &amp; emb3(ENTITYX67) = STATEX69

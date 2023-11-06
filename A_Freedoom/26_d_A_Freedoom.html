@@ -562,6 +562,7 @@ arc(r_0039_0026__shoot,r_0039_0022__those,arg0).
 arc(r_0039_0026__shoot,r_0039_0027__those,arg1).
 arc(r_0039_0027__those,r_0039_0030__front,r_0039_0028__at).
 arc(r_0039_1025__imperative,r_0040_0004__and,scope).
+arc(r_0039_1039,r_0040_0012__other,attrib2).
 arc(r_0040_0001__Do,r_0039_0015__stand,arg1).
 arc(r_0040_0001__Do,r_0040_0003__right,prd).
 arc(r_0040_0004__and,r_0040_0001__Do,conj1).
@@ -571,10 +572,10 @@ arc(r_0040_0007__spend,r_0039_0005__crowd,arg0).
 arc(r_0040_0007__spend,r_0040_0009__time,arg1).
 arc(r_0040_0008__more,r_0040_0014__fighting,r_0040_0013__than).
 arc(r_0040_0009__time,r_0040_0008__more,attrib1).
+arc(r_0040_0010__fighting,r_0039_1039,arg1).
 arc(r_0040_0010__fighting,r_0040_0009__time,arg0).
-arc(r_0040_0010__fighting,z_0039_1039,arg1).
-arc(r_0040_0011__quantificational__r_0040_0011__each,r_0040_0010__fighting,scope).
-arc(r_0040_0011__quantificational__r_0040_0011__each,z_0039_1039,restriction).
+arc(r_0040_0011__quantificational__each,r_0039_1039,restriction).
+arc(r_0040_0011__quantificational__each,r_0040_0010__fighting,scope).
 arc(r_0040_0014__fighting,r_0040_0015__you,arg1).
 arc(r_0040_0017__and,r_0040_0006___apos_ll,conj1).
 arc(r_0040_0017__and,r_0040_0020__will,conj2).
@@ -582,7 +583,6 @@ arc(r_0040_0020__will,r_0040_0021__be,scope).
 arc(r_0040_0021__be,r_0040_0022__significantly,catenative).
 arc(r_0040_0022__significantly,r_0040_0023__weakened,scope).
 arc(r_0040_0023__weakened,r_0040_0019__survivors,arg1).
-arc(z_0039_1039,r_0040_0012__other,attrib2).
 
 </pre>
 <br>
@@ -618,9 +618,9 @@ fof(id__39_A_Freedoom__40_A_Freedoom,axiom,
       &amp; isA(ENTITYX17,r_0039_0030__front)
       &amp; STANDX26 = STANDX19
       &amp; CROWDX29 = CROWDX4
-      &amp; isA(QUANTX37,r_0040_0011__quantificational__r_0040_0011__each)
+      &amp; isA(QUANTX37,r_0040_0011__quantificational__each)
       &amp; restriction(QUANTX37) = ENTITYX36
-      &amp; isA(ENTITYX36,z_0039_1039)
+      &amp; isA(ENTITYX36,r_0039_1039)
       &amp; attrib2(ENTITYX36) = ATTRIBX38
       &amp; scope(QUANTX37) = EVENTX40
       &amp; isA(EVENTX40,r_0040_0010__fighting)

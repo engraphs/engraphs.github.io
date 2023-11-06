@@ -796,6 +796,7 @@ arc(r_0118_0017___apos_s,r_0118_0018__gone,catenative).
 arc(r_0118_0018__gone,r_0118_0016__he,arg0).
 arc(r_0118_0018__gone,r_0118_0022__world,r_0118_0019__to_dir).
 arc(r_0118_0022__world,r_0118_0021__better,attrib2).
+arc(r_0118_1033,r_0120_0012__little,attrib2).
 arc(r_0118_1038__utterance,r_0118_1040__question,part1).
 arc(r_0118_1040__question,r_0121_0002__Did,scope).
 arc(r_0118_1055__question,r_0122_0021__went,scope).
@@ -809,15 +810,15 @@ arc(r_0119_0005__bowed,r_0119_0007__head,arg1).
 arc(r_0119_0005__bowed,r_0119_0009__assent,r_0119_0008__in_mnr).
 arc(r_0119_0007__head,r_0118_0005__Eliza,genv).
 arc(r_0120_0002__aunt,r_0118_0001__My,genv).
-arc(r_0120_0002__aunt,r_0118_0002__aunt,z_0118_1024).
+arc(r_0120_0002__aunt,r_0118_0002__aunt,r_0118_1024).
 arc(r_0120_0003__fingered,r_0120_0002__aunt,arg0).
 arc(r_0120_0003__fingered,r_0120_0005__stem,arg1).
 arc(r_0120_0005__stem,r_0120_0008__wine_glass,r_0120_0006__of).
 arc(r_0120_0008__wine_glass,r_0118_0002__aunt,genv).
 arc(r_0120_0009__before_tmp,r_0120_0003__fingered,scope).
 arc(r_0120_0009__before_tmp,r_0120_0010__sipping,restriction).
+arc(r_0120_0010__sipping,r_0118_1033,arg1).
 arc(r_0120_0010__sipping,r_0120_0002__aunt,arg0).
-arc(r_0120_0010__sipping,z_0118_1033,arg1).
 arc(r_0121_0002__Did,r_0118_0016__he,arg0).
 arc(r_0121_0002__Did,r_0121_0006__peacefully,mnr5).
 arc(r_0121_0010__asked,r_0118_0002__aunt,arg0).
@@ -840,7 +841,6 @@ arc(r_0123_0002__had,r_0123_0005__death,arg1).
 arc(r_0123_0005__death,r_0123_0004__beautiful,attrib2).
 arc(r_0123_0008__be,r_0123_0007__God,voc).
 arc(r_0123_0008__be,r_0123_0009__praised,catenative).
-arc(z_0118_1033,r_0120_0012__little,attrib2).
 
 </pre>
 <br>
@@ -891,7 +891,7 @@ fof(id__118_A_JOYCE_1914__119_A_JOYCE_1914__120_A_JOYCE_1914__121_A_JOYCE_1914__
         | ELIZAX18 = r_0118_0005__Eliza )
       &amp; isA(ENTITYX19,r_0119_0009__assent)
       &amp; isA(ENTITYX22,r_0120_0002__aunt)
-      &amp; z_0118_1024(ENTITYX22) = AUNTX25
+      &amp; r_0118_1024(ENTITYX22) = AUNTX25
       &amp; genv(ENTITYX22) = SPEAKERX26
       &amp; AUNTX25 = AUNTX1
       &amp; SPEAKERX26 = r_0118_0001__My
@@ -900,7 +900,7 @@ fof(id__118_A_JOYCE_1914__119_A_JOYCE_1914__120_A_JOYCE_1914__121_A_JOYCE_1914__
       &amp; isA(ENTITYX28,r_0120_0008__wine_glass)
       &amp; genv(ENTITYX28) = AUNTX29
       &amp; AUNTX29 = AUNTX1
-      &amp; isA(ENTITYX31,z_0118_1033)
+      &amp; isA(ENTITYX31,r_0118_1033)
       &amp; attrib2(ENTITYX31) = ATTRIBX32
       &amp; PRIESTX41 = r_0118_0016__he
       &amp; AUNTX45 = AUNTX1

@@ -143,12 +143,12 @@ It was also a pity that nobody registered for the local history course .
 <br>
 <pre>
 arc(r_0011_0002__was,r_0011_0005__pity,prd2).
-arc(r_0011_0002__was,r_0011_0007__quantificational__r_0011_0007__nobody,arg0).
+arc(r_0011_0002__was,r_0011_0007__quantificational__nobody,arg0).
 arc(r_0011_0003__also,r_0011_0002__was,scope).
-arc(r_0011_0007__quantificational__r_0011_0007__nobody,r_0011_0008__registered,scope).
-arc(r_0011_0007__quantificational__r_0011_0007__nobody,z_0011_1007,restriction).
+arc(r_0011_0007__quantificational__nobody,r_0011_0008__registered,scope).
+arc(r_0011_0007__quantificational__nobody,r_0011_1007,restriction).
 arc(r_0011_0008__registered,r_0011_0012__history__r_0011_0013__course,r_0011_0009__for_clr).
-arc(r_0011_0008__registered,z_0011_1007,arg0).
+arc(r_0011_0008__registered,r_0011_1007,arg0).
 arc(r_0011_0012__history__r_0011_0013__course,r_0011_0011__local,attrib2).
 
 </pre>
@@ -157,9 +157,9 @@ arc(r_0011_0012__history__r_0011_0013__course,r_0011_0011__local,attrib2).
 fof(id__11_A_fce_0101_2001_06,axiom,
     ? [STATEX4,OPERATORX2,EVENTX11,QUANTX6,EVENTX10,ENTITYX3,ENTITYX5,ENTITYX8,ATTRIBX9] :
       ( STATEX4 = QUANTX6
-      &amp; isA(QUANTX6,r_0011_0007__quantificational__r_0011_0007__nobody)
+      &amp; isA(QUANTX6,r_0011_0007__quantificational__nobody)
       &amp; restriction(QUANTX6) = ENTITYX5
-      &amp; isA(ENTITYX5,z_0011_1007)
+      &amp; isA(ENTITYX5,r_0011_1007)
       &amp; scope(QUANTX6) = EVENTX10
       &amp; isA(EVENTX10,r_0011_0008__registered)
       &amp; arg0(EVENTX10) = ENTITYX5

@@ -747,21 +747,29 @@ arc(r_0562_0007__and,r_0562_0003__went,conj1).
 arc(r_0562_0007__and,r_0562_0008__examined,conj2).
 arc(r_0562_0008__examined,r_0562_0002__people,arg0).
 arc(r_0562_0008__examined,r_0562_0010__treasure,arg1).
+arc(r_0562_1012,r_0563_0004__guardian,arg0).
+arc(r_0562_1012,r_0563_0005__dead,prd2).
+arc(r_0562_1031,r_0564_0004__pictures,conj1).
+arc(r_0562_1031,r_0564_0007__films,conj2).
+arc(r_0562_1031,r_0564_0010__crates,conj3).
+arc(r_0562_1031,r_0564_0016__crowns,conj4).
+arc(r_0562_1031,r_0564_0019__cups,conj5).
+arc(r_0562_1031,r_0564_0022__statues,conj6).
 arc(r_0562_1051__mnr,r_0566_0005__stood,scope).
 arc(r_0562_1051__mnr,r_0566_0010__looking,restriction).
-arc(r_0563_0001__With_abs,r_0563_0008__quantificational__r_0563_0008__no,scope).
-arc(r_0563_0001__With_abs,z_0562_1012,restriction).
+arc(r_0563_0001__With_abs,r_0562_1012,restriction).
+arc(r_0563_0001__With_abs,r_0563_0008__quantificational__no,scope).
 arc(r_0563_0004__guardian,r_0562_0010__treasure,genv).
 arc(r_0563_0004__guardian,r_0563_0003__metal_armored,attrib2).
 arc(r_0563_0007__was,r_0563_0009__danger,arg0).
 arc(r_0563_0007__was,r_0563_0011__longer,tmp5).
-arc(r_0563_0008__quantificational__r_0563_0008__no,r_0563_0007__was,scope).
-arc(r_0563_0008__quantificational__r_0563_0008__no,r_0563_0009__danger,restriction).
-arc(r_0563_0010__quantificational__r_0563_0010__any,r_0563_0011__longer,scope).
-arc(r_0563_0010__quantificational__r_0563_0010__any,z_0562_1019,restriction).
-arc(r_0563_0011__longer,z_0562_1019,modifier1).
+arc(r_0563_0008__quantificational__no,r_0563_0007__was,scope).
+arc(r_0563_0008__quantificational__no,r_0563_0009__danger,restriction).
+arc(r_0563_0010__quantificational__any,r_0562_1019,restriction).
+arc(r_0563_0010__quantificational__any,r_0563_0011__longer,scope).
+arc(r_0563_0011__longer,r_0562_1019,modifier1).
 arc(r_0564_0002__studied,r_0562_0002__people,arg0).
-arc(r_0564_0002__studied,z_0562_1031,arg1).
+arc(r_0564_0002__studied,r_0562_1031,arg1).
 arc(r_0564_0010__crates,r_0564_0012__books,r_0564_0011__of).
 arc(r_0564_0016__crowns,r_0564_0015__jeweled,attrib2).
 arc(r_0565_0003__as_cnt,r_0565_0006__was,restriction).
@@ -787,14 +795,6 @@ arc(r_0566_0014__outline,r_0566_0013__unmoving,attrib2).
 arc(r_0567_0003__started,r_0562_0002__people,arg0).
 arc(r_0567_0003__started,r_0567_0001__Then,tmp1).
 arc(r_0567_0003__started,r_0567_0006__ship,r_0567_0004__back_to_clr_dir).
-arc(z_0562_1012,r_0563_0004__guardian,arg0).
-arc(z_0562_1012,r_0563_0005__dead,prd2).
-arc(z_0562_1031,r_0564_0004__pictures,conj1).
-arc(z_0562_1031,r_0564_0007__films,conj2).
-arc(z_0562_1031,r_0564_0010__crates,conj3).
-arc(z_0562_1031,r_0564_0016__crowns,conj4).
-arc(z_0562_1031,r_0564_0019__cups,conj5).
-arc(z_0562_1031,r_0564_0022__statues,conj6).
 
 </pre>
 <br>
@@ -813,7 +813,7 @@ fof(id__562_A_DICK_1952__563_A_DICK_1952__564_A_DICK_1952__565_A_DICK_1952__566_
       &amp; attrib2(ENTITYX8) = ATTRIBX10
       &amp; TREASUREX9 = TREASUREX4
       &amp; TRESPASSERSX21 = TRESPASSERSX1
-      &amp; isA(ENTITYX22,z_0562_1031)
+      &amp; isA(ENTITYX22,r_0562_1031)
       &amp; conj1(ENTITYX22) = ENTITYX23
       &amp; conj2(ENTITYX22) = ENTITYX24
       &amp; conj3(ENTITYX22) = ENTITYX25
@@ -854,9 +854,9 @@ fof(id__562_A_DICK_1952__563_A_DICK_1952__564_A_DICK_1952__565_A_DICK_1952__566_
       &amp; isA(ATTRIBX38,r_0565_0010__gray)
       &amp; isA(ATTRIBX50,r_0566_0008__wrecked)
       &amp; isA(ATTRIBX54,r_0566_0013__unmoving)
-      &amp; isA(QUANTX18,r_0563_0010__quantificational__r_0563_0010__any)
+      &amp; isA(QUANTX18,r_0563_0010__quantificational__any)
       &amp; restriction(QUANTX18) = ENTITYX17
-      &amp; isA(ENTITYX17,z_0562_1019)
+      &amp; isA(ENTITYX17,r_0562_1019)
       &amp; scope(QUANTX18) = QUALITYX16
       &amp; isA(QUALITYX16,r_0563_0011__longer)
       &amp; modifier1(QUALITYX16) = ENTITYX17
@@ -874,11 +874,11 @@ fof(id__562_A_DICK_1952__563_A_DICK_1952__564_A_DICK_1952__565_A_DICK_1952__566_
       &amp; arg1(EVENTX5) = TREASUREX4
       &amp; isA(CONNX7,r_0563_0001__With_abs)
       &amp; restriction(CONNX7) = EVENTX13
-      &amp; isA(EVENTX13,z_0562_1012)
+      &amp; isA(EVENTX13,r_0562_1012)
       &amp; arg0(EVENTX13) = ENTITYX8
       &amp; prd2(EVENTX13) = ATTRIBX11
       &amp; scope(CONNX7) = QUANTX15
-      &amp; isA(QUANTX15,r_0563_0008__quantificational__r_0563_0008__no)
+      &amp; isA(QUANTX15,r_0563_0008__quantificational__no)
       &amp; restriction(QUANTX15) = ENTITYX14
       &amp; isA(ENTITYX14,r_0563_0009__danger)
       &amp; scope(QUANTX15) = EVENTX20

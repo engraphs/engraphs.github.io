@@ -155,15 +155,15 @@ All reagents are analytical reagent quality where available .
 </svg>
 <br>
 <pre>
-arc(r_0088_0001__quantificational__r_0088_0001__All,r_0088_0002__reagents,restriction).
-arc(r_0088_0001__quantificational__r_0088_0001__All,r_0088_0007__where_loc,scope).
+arc(r_0088_0001__quantificational__All,r_0088_0002__reagents,restriction).
+arc(r_0088_0001__quantificational__All,r_0088_0007__where_loc,scope).
 arc(r_0088_0003__are,r_0088_0002__reagents,arg0).
 arc(r_0088_0003__are,r_0088_0006__quality,prd2).
 arc(r_0088_0006__quality,r_0088_0004__analytical,attrib1).
 arc(r_0088_0006__quality,r_0088_0005__reagent,attrib2).
 arc(r_0088_0007__where_loc,r_0088_0003__are,scope).
-arc(r_0088_0007__where_loc,z_0088_1010,restriction).
-arc(z_0088_1010,r_0088_0008__available,prd).
+arc(r_0088_0007__where_loc,r_0088_1010,restriction).
+arc(r_0088_1010,r_0088_0008__available,prd).
 
 </pre>
 <br>
@@ -176,7 +176,7 @@ fof(id__88_A_lob_J01,axiom,
       &amp; isA(ATTRIBX4,r_0088_0004__analytical)
       &amp; isA(ATTRIBX5,r_0088_0005__reagent)
       &amp; isA(ATTRIBX9,r_0088_0008__available)
-      &amp; isA(QUANTX2,r_0088_0001__quantificational__r_0088_0001__All)
+      &amp; isA(QUANTX2,r_0088_0001__quantificational__All)
       &amp; restriction(QUANTX2) = ENTITYX1
       &amp; isA(ENTITYX1,r_0088_0002__reagents)
       &amp; scope(QUANTX2) = CONNX6
@@ -186,7 +186,7 @@ fof(id__88_A_lob_J01,axiom,
       &amp; arg0(EVENTX12) = ENTITYX1
       &amp; prd2(EVENTX12) = ENTITYX3
       &amp; restriction(CONNX6) = EVENTX11
-      &amp; isA(EVENTX11,z_0088_1010)
+      &amp; isA(EVENTX11,r_0088_1010)
       &amp; prd(EVENTX11) = ATTRIBX9 ) ).
 
 

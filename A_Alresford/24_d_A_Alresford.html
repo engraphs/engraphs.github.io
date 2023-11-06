@@ -488,13 +488,16 @@ arc(r_0028_0014__invited,r_0028_0015__me,arg2).
 arc(r_0028_0014__invited,r_0028_0017__teach,arg1).
 arc(r_0028_0017__teach,r_0028_0015__me,arg0).
 arc(r_0028_0017__teach,r_0028_0020__Sunday__r_0028_0021__School,r_0028_0018__in_loc).
-arc(r_0028_0020__Sunday__r_0028_0021__School,z_0028_1010,r_0028_0022__at).
+arc(r_0028_0020__Sunday__r_0028_0021__School,r_0028_1010,r_0028_0022__at).
 arc(r_0028_1001__abs,r_0028_0009__struck,restriction).
 arc(r_0028_1001__abs,r_0028_0014__invited,scope).
+arc(r_0028_1010,r_0028_0023__St__r_0028_0024__John,genv).
+arc(r_0028_1038,r_0029_0014__and,r_0029_0009__in_loc).
+arc(r_0028_1038,r_0029_0021__series,arg0).
+arc(r_0029_0005__were,r_0028_1010,r_0029_0001__At_loc).
 arc(r_0029_0005__were,r_0029_0006__concerts,arg0).
-arc(r_0029_0005__were,z_0028_1010,r_0029_0001__At_loc).
+arc(r_0029_0008__and,r_0028_1038,conj2).
 arc(r_0029_0008__and,r_0029_0005__were,conj1).
-arc(r_0029_0008__and,z_0028_1038,conj2).
 arc(r_0029_0013__Hall,r_0029_0011__John__r_0029_0012__Pearson,nlyr2).
 arc(r_0029_0014__and,r_0029_0013__Hall,conj1).
 arc(r_0029_0014__and,r_0029_0017__Community__r_0029_0018__Centre,conj2).
@@ -510,9 +513,6 @@ arc(r_0029_0030__causes,r_0029_0029__good,attrib1).
 arc(r_0029_0032__enough,r_0029_0034__fill,emb2).
 arc(r_0029_0034__fill,r_0029_0036__diary,arg1).
 arc(r_0029_0034__fill,r_0029_0038__overflowing,r_0029_0037__to_mnr).
-arc(z_0028_1010,r_0028_0023__St__r_0028_0024__John,genv).
-arc(z_0028_1038,r_0029_0014__and,r_0029_0009__in_loc).
-arc(z_0028_1038,r_0029_0021__series,arg0).
 
 </pre>
 <br>
@@ -533,7 +533,7 @@ fof(id__28_A_Alresford__29_A_Alresford,axiom,
       &amp; genv(ENTITYX3) = BEECHEYX4
       &amp; BEECHEYX4 = r_0028_0002__Rev__r_0028_0003__George__r_0028_0004__Beechey
       &amp; isA(ENTITYX6,r_0028_0012__thunderbolt)
-      &amp; isA(CHURCHX9,z_0028_1010)
+      &amp; isA(CHURCHX9,r_0028_1010)
       &amp; genv(CHURCHX9) = r_0028_0023__St__r_0028_0024__John
       &amp; CHURCHX15 = CHURCHX9
       &amp; isA(ENTITYX16,r_0029_0006__concerts)
@@ -586,7 +586,7 @@ fof(id__28_A_Alresford__29_A_Alresford,axiom,
       &amp; r_0029_0001__At_loc(EVENTX17) = CHURCHX15
       &amp; arg0(EVENTX17) = ENTITYX16
       &amp; conj2(CONJX40) = EVENTX39
-      &amp; isA(EVENTX39,z_0028_1038)
+      &amp; isA(EVENTX39,r_0028_1038)
       &amp; arg0(EVENTX39) = ENTITYX20
       &amp; r_0029_0009__in_loc(EVENTX39) = ENTITYX18
       &amp; arg0(EVENTX39) = ENTITYX20 ) ).

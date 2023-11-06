@@ -653,7 +653,7 @@ arc(r_0003_0024__and,r_0003_0025__manned,conj3).
 arc(r_0003_0025__manned,r_0003_0001__John__r_0003_0002__Philpot,arg0).
 arc(r_0003_0025__manned,r_0003_0027__fleet,arg1).
 arc(r_0003_0025__manned,r_0003_0031__resources,r_0003_0028__from_dir).
-arc(r_0003_0031__resources,z_0003_1014,genv).
+arc(r_0003_0031__resources,r_0003_1014,genv).
 arc(r_0003_0033__and,r_0003_0024__and,conj1).
 arc(r_0003_0033__and,r_0003_0034__captured,conj2).
 arc(r_0003_0034__captured,r_0003_0001__John__r_0003_0002__Philpot,arg0).
@@ -661,6 +661,8 @@ arc(r_0003_0034__captured,r_0003_0037__Mercer,arg1).
 arc(r_0003_0034__captured,r_0003_0041__Channel__r_0003_0042__fight,r_0003_0038__in_loc).
 arc(r_0003_0037__Mercer,r_0003_0036__young,attrib2).
 arc(r_0003_0041__Channel__r_0003_0042__fight,r_0003_0040__brilliant,attrib2).
+arc(r_0003_1014,r_0003_0029__his,genv).
+arc(r_0003_1014,r_0003_0030__own,attrib2).
 arc(r_0004_0002__was,r_0003_0034__captured,arg0).
 arc(r_0004_0002__was,r_0004_0007__victory,prd2).
 arc(r_0004_0003__naturally,r_0004_0002__was,scope).
@@ -679,8 +681,6 @@ arc(r_0004_0021__believed,r_0004_0024__had,arg1).
 arc(r_0004_0024__had,r_0004_0018__nobles,arg0).
 arc(r_0004_0024__had,r_0004_0026__monopoly,arg1).
 arc(r_0004_0026__monopoly,r_0004_0028__leadership,r_0004_0027__of).
-arc(z_0003_1014,r_0003_0029__his,genv).
-arc(z_0003_1014,r_0003_0030__own,attrib2).
 
 </pre>
 <br>
@@ -710,7 +710,7 @@ fof(id__3_A_lob_G01__4_A_lob_G01,axiom,
       &amp; isA(ENTITYX10,r_0003_0027__fleet)
       &amp; isA(ENTITYX11,r_0003_0031__resources)
       &amp; genv(ENTITYX11) = ENTITYX12
-      &amp; isA(ENTITYX12,z_0003_1014)
+      &amp; isA(ENTITYX12,r_0003_1014)
       &amp; genv(ENTITYX12) = r_0003_0029__his
       &amp; attrib2(ENTITYX12) = ATTRIBX13
       &amp; isA(ENTITYX20,r_0003_0041__Channel__r_0003_0042__fight)

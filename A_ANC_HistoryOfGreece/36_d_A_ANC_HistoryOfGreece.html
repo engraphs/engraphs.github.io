@@ -402,18 +402,19 @@ Following Alexander 's death , his lands were divided among his generals .
 <pre>
 arc(r_0059_0003__went,r_0059_0004__on,dir4).
 arc(r_0059_0003__went,r_0059_0006__conquer,catenative).
-arc(r_0059_0003__went,z_0059_1012,tmp1).
+arc(r_0059_0003__went,r_0059_1012,tmp1).
 arc(r_0059_0006__conquer,r_0059_0002__Alexander,arg0).
 arc(r_0059_0006__conquer,r_0059_0007__lands,arg1).
 arc(r_0059_0007__lands,r_0059_0009__far,loc2).
 arc(r_0059_0009__far,r_0059_0008__as,quality1).
 arc(r_0059_0009__far,r_0059_0014__India,r_0059_0013__as).
-arc(r_0059_0009__far,z_0059_1009,r_0059_0010__to).
+arc(r_0059_0009__far,r_0059_1009,r_0059_0010__to).
 arc(r_0059_0018__became,r_0059_0017__Aegean,arg0).
 arc(r_0059_0018__became,r_0059_0020__crossroads,prd2).
-arc(r_0059_0018__became,z_0059_1012,tmp).
+arc(r_0059_0018__became,r_0059_1012,tmp).
 arc(r_0059_0020__crossroads,r_0059_0024__trading__r_0059_0025__routes,r_0059_0021__for).
 arc(r_0059_0024__trading__r_0059_0025__routes,r_0059_0023__long,attrib2).
+arc(r_0059_1009,r_0059_0012__east,attrib2).
 arc(r_0060_0002__became,r_0060_0001__Delos,arg0).
 arc(r_0060_0002__became,r_0060_0003__one,prd2).
 arc(r_0060_0003__one,r_0060_0007__marketplaces,r_0060_0004__of).
@@ -421,13 +422,12 @@ arc(r_0060_0007__marketplaces,r_0059_0007__lands,r_0060_0008__in).
 arc(r_0060_0007__marketplaces,r_0060_0006__largest,attrib2).
 arc(r_0061_0004__death,r_0059_0002__Alexander,genv).
 arc(r_0061_0007__lands,r_0059_0002__Alexander,genv).
-arc(r_0061_0007__lands,r_0059_0007__lands,z_0059_1026).
+arc(r_0061_0007__lands,r_0059_0007__lands,r_0059_1026).
 arc(r_0061_0008__were,r_0061_0004__death,r_0061_0001__Following_tmp).
 arc(r_0061_0008__were,r_0061_0009__divided,catenative).
 arc(r_0061_0009__divided,r_0061_0007__lands,arg1).
 arc(r_0061_0009__divided,r_0061_0012__generals,r_0061_0010__among_clr_rst).
 arc(r_0061_0012__generals,r_0059_0002__Alexander,genv).
-arc(z_0059_1009,r_0059_0012__east,attrib2).
 
 </pre>
 <br>
@@ -446,10 +446,10 @@ fof(id__59_A_ANC_HistoryOfGreece__60_A_ANC_HistoryOfGreece__61_A_ANC_HistoryOfGr
       &amp; tmp1(EVENTX11) = ENTITYX1
       &amp; dir4(EVENTX11) = QUALITYX2
       &amp; catenative(EVENTX11) = STATEX3
-      &amp; isA(ENTITYX1,z_0059_1012)
+      &amp; isA(ENTITYX1,r_0059_1012)
       &amp; isA(ALEXANDER_LANDSX4,r_0059_0007__lands)
       &amp; loc2(ALEXANDER_LANDSX4) = ATTRIBX5
-      &amp; isA(ENTITYX7,z_0059_1009)
+      &amp; isA(ENTITYX7,r_0059_1009)
       &amp; attrib2(ENTITYX7) = ATTRIBX8
       &amp; isA(ENTITYX13,r_0059_0020__crossroads)
       &amp; r_0059_0021__for(ENTITYX13) = ENTITYX14
@@ -465,7 +465,7 @@ fof(id__59_A_ANC_HistoryOfGreece__60_A_ANC_HistoryOfGreece__61_A_ANC_HistoryOfGr
       &amp; genv(ENTITYX22) = ALEXANDERX23
       &amp; ALEXANDERX23 = r_0059_0002__Alexander
       &amp; isA(ENTITYX24,r_0061_0007__lands)
-      &amp; z_0059_1026(ENTITYX24) = ALEXANDER_LANDSX27
+      &amp; r_0059_1026(ENTITYX24) = ALEXANDER_LANDSX27
       &amp; genv(ENTITYX24) = ALEXANDERX28
       &amp; ALEXANDER_LANDSX27 = ALEXANDER_LANDSX4
       &amp; ALEXANDERX28 = r_0059_0002__Alexander

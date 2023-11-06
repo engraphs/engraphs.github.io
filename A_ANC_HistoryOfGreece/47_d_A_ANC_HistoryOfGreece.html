@@ -942,6 +942,10 @@ arc(r_0075_1008__cnt,r_0075_0017__sent,scope).
 arc(r_0075_1008__cnt,r_0075_0026__and,restriction).
 arc(r_0075_1030__cnt,r_0077_0003__swept,scope).
 arc(r_0075_1030__cnt,r_0077_0009__slaughtering,restriction).
+arc(r_0075_1037,r_0077_0011__as_well_as,conj1).
+arc(r_0075_1037,r_0077_0015__as_well_as,conj2).
+arc(r_0075_1058,r_0078_0016__many,attrib1).
+arc(r_0075_1058,r_0078_0020__treasures,r_0078_0017__of).
 arc(r_0076_0001__Unfortunately,r_0076_0005__was,scope).
 arc(r_0076_0004__zeal,r_0075_0014__Crusader__r_0075_0015__forces,genv).
 arc(r_0076_0005__was,r_0076_0006__not,catenative).
@@ -953,7 +957,7 @@ arc(r_0077_0003__swept,r_0075_0014__Crusader__r_0075_0015__forces,arg0).
 arc(r_0077_0003__swept,r_0077_0006__land,r_0077_0004__through_clr_dir).
 arc(r_0077_0006__land,r_0077_0008__Byzantium,r_0077_0007__of).
 arc(r_0077_0009__slaughtering,r_0075_0014__Crusader__r_0075_0015__forces,arg0).
-arc(r_0077_0009__slaughtering,z_0075_1037,arg1).
+arc(r_0077_0009__slaughtering,r_0075_1037,arg1).
 arc(r_0077_0011__as_well_as,r_0077_0010__Christians,conj1).
 arc(r_0077_0011__as_well_as,r_0077_0012__Muslims,conj2).
 arc(r_0077_0015__as_well_as,r_0077_0014__civilians,conj1).
@@ -965,8 +969,8 @@ arc(r_0078_0003__taken,r_0078_0008__1204,r_0078_0007__in_tmp).
 arc(r_0078_0010__and,r_0078_0002__was,conj1).
 arc(r_0078_0010__and,r_0078_0031__although_cnt,conj2).
 arc(r_0078_0012__stripped,r_0075_0014__Crusader__r_0075_0015__forces,arg0).
+arc(r_0078_0012__stripped,r_0075_1058,r_0078_0015__of_clr).
 arc(r_0078_0012__stripped,r_0078_0001__Constantinople,arg1).
-arc(r_0078_0012__stripped,z_0075_1058,r_0078_0015__of_clr).
 arc(r_0078_0020__treasures,r_0078_0001__Constantinople,genv).
 arc(r_0078_0020__treasures,r_0078_0019__finest,attrib2).
 arc(r_0078_0024__grace,r_0078_0020__treasures,arg0).
@@ -987,10 +991,6 @@ arc(r_0078_0043__monastery,r_0078_0045__Patmos,r_0078_0044__at).
 arc(r_0078_0046__before_tmp,r_0078_0039__was,scope).
 arc(r_0078_0046__before_tmp,r_0078_0049__fell,restriction).
 arc(r_0078_0049__fell,r_0078_0001__Constantinople,arg0).
-arc(z_0075_1037,r_0077_0011__as_well_as,conj1).
-arc(z_0075_1037,r_0077_0015__as_well_as,conj2).
-arc(z_0075_1058,r_0078_0016__many,attrib1).
-arc(z_0075_1058,r_0078_0020__treasures,r_0078_0017__of).
 
 </pre>
 <br>
@@ -1046,7 +1046,7 @@ fof(id__75_A_ANC_HistoryOfGreece__76_A_ANC_HistoryOfGreece__77_A_ANC_HistoryOfGr
       &amp; CRUSADERSX28 = CRUSADERSX5
       &amp; isA(ENTITYX29,r_0077_0006__land)
       &amp; r_0077_0007__of(ENTITYX29) = r_0077_0008__Byzantium
-      &amp; isA(ENTITYX32,z_0075_1037)
+      &amp; isA(ENTITYX32,r_0075_1037)
       &amp; conj1(ENTITYX32) = ENTITYX33
       &amp; conj2(ENTITYX32) = ENTITYX34
       &amp; isA(ENTITYX33,r_0077_0011__as_well_as)
@@ -1061,7 +1061,7 @@ fof(id__75_A_ANC_HistoryOfGreece__76_A_ANC_HistoryOfGreece__77_A_ANC_HistoryOfGr
       &amp; isA(ENTITYX44,r_0078_0008__1204)
       &amp; CRUSADERSX47 = CRUSADERSX5
       &amp; CONSTANTINOPLEX48 = r_0078_0001__Constantinople
-      &amp; isA(ENTITYX49,z_0075_1058)
+      &amp; isA(ENTITYX49,r_0075_1058)
       &amp; attrib1(ENTITYX49) = ATTRIBX50
       &amp; r_0078_0017__of(ENTITYX49) = ENTITYX51
       &amp; isA(EVENTX57,r_0078_0024__grace)

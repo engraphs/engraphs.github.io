@@ -413,6 +413,7 @@ arc(r_0026_0001__Yellow__r_0026_0002__fever,r_0026_0008__disease,prn4).
 arc(r_0026_0006__borne,r_0026_0004__mosquito,arg0_lgs).
 arc(r_0026_0006__borne,r_0026_0008__disease,arg1).
 arc(r_0026_0008__disease,r_0026_0007__viral,attrib2).
+arc(r_0026_1009,r_0026_0001__Yellow__r_0026_0002__fever,r_0026_1004).
 arc(r_0027_0002__ranges,r_0027_0001__severity,arg0).
 arc(r_0027_0002__ranges,r_0027_0005__symptoms,r_0027_0003__from_dir).
 arc(r_0027_0002__ranges,r_0027_0009__and,r_0027_0006__to_dir).
@@ -426,15 +427,14 @@ arc(r_0028_0002__only,r_0028_0001__occurs,scope).
 arc(r_0028_0005__South__r_0028_0006__America,r_0028_0004__tropical,attrib1).
 arc(r_0028_0007__and,r_0028_0005__South__r_0028_0006__America,conj1).
 arc(r_0028_0007__and,r_0028_0008__sub_Saharan__r_0028_0009__Africa,conj2).
-arc(r_0028_0012__quantificational__r_0028_0012__most,r_0028_0013__cases,restriction).
-arc(r_0028_0012__quantificational__r_0028_0012__most,r_0028_0014__are,scope).
+arc(r_0028_0012__quantificational__most,r_0028_0013__cases,restriction).
+arc(r_0028_0012__quantificational__most,r_0028_0014__are,scope).
 arc(r_0028_0014__are,r_0028_0007__and,loc1).
 arc(r_0028_0014__are,r_0028_0015__reported,catenative).
 arc(r_0028_0015__reported,r_0028_0013__cases,arg1).
 arc(r_0029_0003__is,r_0029_0001__fatality__r_0029_0002__rate,arg0).
 arc(r_0029_0003__is,r_0029_0004__less,prd2).
 arc(r_0029_0004__less,r_0029_0006__20__r_0029_0007___,r_0029_0005__than).
-arc(z_0026_1009,r_0026_0001__Yellow__r_0026_0002__fever,z_0026_1004).
 
 </pre>
 <br>
@@ -460,7 +460,7 @@ fof(id__26_A_FACTBOOK_1_2010__27_A_FACTBOOK_1_2010__28_A_FACTBOOK_1_2010__29_A_F
       &amp; attrib1(ENTITYX15) = ATTRIBX16
       &amp; isA(ENTITYX17,r_0027_0011__fever)
       &amp; attrib1(ENTITYX17) = ATTRIBX18
-      &amp; isA(QUANTX25,r_0028_0012__quantificational__r_0028_0012__most)
+      &amp; isA(QUANTX25,r_0028_0012__quantificational__most)
       &amp; restriction(QUANTX25) = ENTITYX24
       &amp; isA(ENTITYX24,r_0028_0013__cases)
       &amp; scope(QUANTX25) = EVENTX29
@@ -483,8 +483,8 @@ fof(id__26_A_FACTBOOK_1_2010__27_A_FACTBOOK_1_2010__28_A_FACTBOOK_1_2010__29_A_F
       &amp; isA(ATTRIBX30,r_0028_0004__tropical)
       &amp; isA(ATTRIBX33,r_0029_0004__less)
       &amp; r_0029_0005__than(ATTRIBX33) = ENTITYX34
-      &amp; isA(EVENTX10,z_0026_1009)
-      &amp; z_0026_1004(EVENTX10) = r_0026_0001__Yellow__r_0026_0002__fever
+      &amp; isA(EVENTX10,r_0026_1009)
+      &amp; r_0026_1004(EVENTX10) = r_0026_0001__Yellow__r_0026_0002__fever
       &amp; isA(EVENTX19,r_0027_0002__ranges)
       &amp; arg0(EVENTX19) = ENTITYX11
       &amp; r_0027_0003__from_dir(EVENTX19) = ENTITYX12

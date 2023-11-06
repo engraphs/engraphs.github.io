@@ -1279,6 +1279,7 @@ arc(r_0051_0012__am,r_0051_0002__I,arg0).
 arc(r_0051_0012__am,r_0051_0010__lonely,prd2).
 arc(r_0051_1009__question,r_0051_0012__am,scope).
 arc(r_0051_1030__question,r_0052_0017__get,scope).
+arc(r_0051_1059,r_0054_0012__same,attrib2).
 arc(r_0052_0002__live,r_0051_0002__I,arg0).
 arc(r_0052_0002__live,r_0052_0003__alone,mnr3).
 arc(r_0052_0002__live,r_0052_0006__flat,r_0052_0004__in_clr_loc).
@@ -1304,8 +1305,8 @@ arc(r_0054_0002__video_chat,r_0054_0006__frequently,tmp4).
 arc(r_0054_0005__friends,r_0051_0002__I,genv).
 arc(r_0054_0007__but,r_0054_0002__video_chat,conj1).
 arc(r_0054_0007__but,r_0054_0010__not,conj2).
+arc(r_0054_0009___apos_s,r_0051_1059,prd2).
 arc(r_0054_0009___apos_s,r_0054_0002__video_chat,arg0).
-arc(r_0054_0009___apos_s,z_0051_1059,prd2).
 arc(r_0054_0010__not,r_0054_0009___apos_s,scope).
 arc(r_0054_0012__same,r_0054_0014__having,r_0054_0013__as).
 arc(r_0054_0014__having,r_0054_0005__friends,arg1).
@@ -1357,12 +1358,11 @@ arc(r_0059_0008__is,r_0059_0009__now,tmp3).
 arc(r_0059_0008__is,r_0059_0011__home,prd2).
 arc(r_0059_0011__home,r_0051_0002__I,genv).
 arc(r_0059_0012__and,r_0059_0008__is,conj1).
-arc(r_0059_0012__and,r_0059_0015__quantificational__r_0059_0015__no,conj2).
+arc(r_0059_0012__and,r_0059_0015__quantificational__no,conj2).
 arc(r_0059_0014__is,r_0059_0016__crowd,arg0).
-arc(r_0059_0015__quantificational__r_0059_0015__no,r_0059_0014__is,scope).
-arc(r_0059_0015__quantificational__r_0059_0015__no,r_0059_0016__crowd,restriction).
+arc(r_0059_0015__quantificational__no,r_0059_0014__is,scope).
+arc(r_0059_0015__quantificational__no,r_0059_0016__crowd,restriction).
 arc(r_0059_0016__crowd,r_0059_0018__people,r_0059_0017__of).
-arc(z_0051_1059,r_0054_0012__same,attrib2).
 
 </pre>
 <br>
@@ -1423,7 +1423,7 @@ fof(id__51_A_lockdown,axiom,
       &amp; tmp3(EVENTX120) = QUALITYX117
       &amp; prd2(EVENTX120) = ENTITYX118
       &amp; conj2(CONJX125) = QUANTX122
-      &amp; isA(QUANTX122,r_0059_0015__quantificational__r_0059_0015__no)
+      &amp; isA(QUANTX122,r_0059_0015__quantificational__no)
       &amp; restriction(QUANTX122) = ENTITYX121
       &amp; isA(ENTITYX121,r_0059_0016__crowd)
       &amp; r_0059_0017__of(ENTITYX121) = ENTITYX123
@@ -1454,7 +1454,7 @@ fof(id__51_A_lockdown,axiom,
       &amp; ( PERSON_EX47 = PERSON_EX45
         | PERSON_EX47 = r_0051_0002__I )
       &amp; VIDEO_CHATX50 = VIDEO_CHATX49
-      &amp; isA(ENTITYX51,z_0051_1059)
+      &amp; isA(ENTITYX51,r_0051_1059)
       &amp; attrib2(ENTITYX51) = ATTRIBX52
       &amp; FRIENDS_OF_EX56 = FRIENDS_OF_EX46
       &amp; PERSON_EX63 = r_0051_0002__I

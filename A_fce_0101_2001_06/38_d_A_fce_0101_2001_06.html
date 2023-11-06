@@ -221,8 +221,8 @@ Did any of the places described in the book you have read remind you of your own
 </svg>
 <br>
 <pre>
-arc(r_0038_0002__quantificational__r_0038_0002__any,r_0038_0013__remind,scope).
-arc(r_0038_0002__quantificational__r_0038_0002__any,z_0038_1012,restriction).
+arc(r_0038_0002__quantificational__any,r_0038_0013__remind,scope).
+arc(r_0038_0002__quantificational__any,r_0038_1012,restriction).
 arc(r_0038_0006__described,r_0038_0005__places,arg1).
 arc(r_0038_0006__described,r_0038_0009__book,r_0038_0007__in_loc).
 arc(r_0038_0011__have,r_0038_0012__read,catenative).
@@ -230,12 +230,12 @@ arc(r_0038_0012__read,r_0038_0009__book,arg1).
 arc(r_0038_0012__read,r_0038_0010__you,arg0).
 arc(r_0038_0013__remind,r_0038_0010__you,arg1).
 arc(r_0038_0013__remind,r_0038_0018__country,r_0038_0015__of_clr).
-arc(r_0038_0013__remind,z_0038_1012,arg0).
-arc(r_0038_0018__country,z_0038_1018,genv).
-arc(r_0038_1002__question,r_0038_0002__quantificational__r_0038_0002__any,scope).
-arc(z_0038_1012,r_0038_0005__places,r_0038_0003__of).
-arc(z_0038_1018,r_0038_0010__you,genv).
-arc(z_0038_1018,r_0038_0017__own,attrib2).
+arc(r_0038_0013__remind,r_0038_1012,arg0).
+arc(r_0038_0018__country,r_0038_1018,genv).
+arc(r_0038_1002__question,r_0038_0002__quantificational__any,scope).
+arc(r_0038_1012,r_0038_0005__places,r_0038_0003__of).
+arc(r_0038_1018,r_0038_0010__you,genv).
+arc(r_0038_1018,r_0038_0017__own,attrib2).
 
 </pre>
 <br>
@@ -256,7 +256,7 @@ fof(id__38_A_fce_0101_2001_06,axiom,
       &amp; HEARERX13 = r_0038_0010__you
       &amp; isA(ENTITYX14,r_0038_0018__country)
       &amp; genv(ENTITYX14) = ENTITYX15
-      &amp; isA(ENTITYX15,z_0038_1018)
+      &amp; isA(ENTITYX15,r_0038_1018)
       &amp; genv(ENTITYX15) = HEARERX16
       &amp; attrib2(ENTITYX15) = ATTRIBX17
       &amp; ( HEARERX16 = HEARERX13
@@ -264,9 +264,9 @@ fof(id__38_A_fce_0101_2001_06,axiom,
       &amp; isA(ATTRIBX17,r_0038_0017__own)
       &amp; isA(OPERATORX2,r_0038_1002__question)
       &amp; scope(OPERATORX2) = QUANTX4
-      &amp; isA(QUANTX4,r_0038_0002__quantificational__r_0038_0002__any)
+      &amp; isA(QUANTX4,r_0038_0002__quantificational__any)
       &amp; restriction(QUANTX4) = ENTITYX3
-      &amp; isA(ENTITYX3,z_0038_1012)
+      &amp; isA(ENTITYX3,r_0038_1012)
       &amp; r_0038_0003__of(ENTITYX3) = ENTITYX5
       &amp; scope(QUANTX4) = EVENTX19
       &amp; isA(EVENTX19,r_0038_0013__remind)

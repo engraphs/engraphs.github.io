@@ -631,12 +631,13 @@ arc(r_0076_0008__grew,r_0076_0011__and,prd).
 arc(r_0076_0011__and,r_0076_0009__very,quality1).
 arc(r_0076_0011__and,r_0076_0010__old,conj1).
 arc(r_0076_0011__and,r_0076_0012__feeble,conj2).
+arc(r_0076_1017,r_0077_0007__more,attrib2).
 arc(r_0077_0002__could,r_0077_0003__not,scope).
 arc(r_0077_0003__not,r_0077_0004__play__r_0077_0005__about,scope).
 arc(r_0077_0004__play__r_0077_0005__about,r_0076_0007__Giant,arg0).
-arc(r_0077_0004__play__r_0077_0005__about,z_0076_1017,tmp).
-arc(r_0077_0006__quantificational__r_0077_0006__any,r_0077_0009__so_cnt,scope).
-arc(r_0077_0006__quantificational__r_0077_0006__any,z_0076_1017,restriction).
+arc(r_0077_0004__play__r_0077_0005__about,r_0076_1017,tmp).
+arc(r_0077_0006__quantificational__any,r_0076_1017,restriction).
+arc(r_0077_0006__quantificational__any,r_0077_0009__so_cnt,scope).
 arc(r_0077_0009__so_cnt,r_0077_0002__could,scope).
 arc(r_0077_0009__so_cnt,r_0077_0017__and__r_0077_0025__and,restriction).
 arc(r_0077_0011__sat,r_0077_0010__he,arg0).
@@ -663,11 +664,10 @@ arc(r_0078_0013__but,r_0078_0016__are,conj2).
 arc(r_0078_0016__are,r_0078_0015__children,arg0).
 arc(r_0078_0016__are,r_0078_0020__flowers,prd2).
 arc(r_0078_0019__beautiful,r_0078_0018__most,quality1).
+arc(r_0078_0020__flowers,r_0076_1047,r_0078_0021__of).
 arc(r_0078_0020__flowers,r_0078_0019__beautiful,attrib2).
-arc(r_0078_0020__flowers,z_0076_1047,r_0078_0021__of).
-arc(r_0078_0022__quantificational__r_0078_0022__all,r_0078_0020__flowers,scope).
-arc(r_0078_0022__quantificational__r_0078_0022__all,z_0076_1047,restriction).
-arc(z_0076_1017,r_0077_0007__more,attrib2).
+arc(r_0078_0022__quantificational__all,r_0076_1047,restriction).
+arc(r_0078_0022__quantificational__all,r_0078_0020__flowers,scope).
 
 </pre>
 <br>
@@ -695,9 +695,9 @@ fof(id__76_A_WILDE_2_1888__77_A_WILDE_2_1888__78_A_WILDE_2_1888,axiom,
       &amp; ( GIANTX38 = GIANTX33
         | GIANTX38 = GIANTX6 )
       &amp; isA(ENTITYX41,r_0078_0015__children)
-      &amp; isA(QUANTX46,r_0078_0022__quantificational__r_0078_0022__all)
+      &amp; isA(QUANTX46,r_0078_0022__quantificational__all)
       &amp; restriction(QUANTX46) = ENTITYX45
-      &amp; isA(ENTITYX45,z_0076_1047)
+      &amp; isA(ENTITYX45,r_0076_1047)
       &amp; scope(QUANTX46) = ENTITYX42
       &amp; isA(ENTITYX42,r_0078_0020__flowers)
       &amp; attrib2(ENTITYX42) = ATTRIBX43
@@ -728,9 +728,9 @@ fof(id__76_A_WILDE_2_1888__77_A_WILDE_2_1888__78_A_WILDE_2_1888,axiom,
       &amp; arg0(EVENTX11) = GIANTX6
       &amp; arg0(EVENTX11) = GIANTX6
       &amp; prd(EVENTX11) = ATTRIBX7
-      &amp; isA(QUANTX15,r_0077_0006__quantificational__r_0077_0006__any)
+      &amp; isA(QUANTX15,r_0077_0006__quantificational__any)
       &amp; restriction(QUANTX15) = ENTITYX14
-      &amp; isA(ENTITYX14,z_0076_1017)
+      &amp; isA(ENTITYX14,r_0076_1017)
       &amp; attrib2(ENTITYX14) = ATTRIBX16
       &amp; scope(QUANTX15) = CONNX18
       &amp; isA(CONNX18,r_0077_0009__so_cnt)

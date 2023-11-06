@@ -298,7 +298,7 @@ arc(r_0015_0005__is,r_0015_0006__one,prd2).
 arc(r_0015_0008__stores,r_0015_0006__one,arg0).
 arc(r_0015_0008__stores,r_0015_0011__instructions,arg1).
 arc(r_0015_0008__stores,r_0015_0014__form,r_0015_0012__in_mnr).
-arc(r_0015_0011__instructions,z_0015_1008,genv).
+arc(r_0015_0011__instructions,r_0015_1008,genv).
 arc(r_0015_0014__form,r_0015_0013__magnetic,attrib1).
 arc(r_0015_0015__and,r_0015_0008__stores,conj1).
 arc(r_0015_0015__and,r_0015_0016__is,conj2).
@@ -308,10 +308,10 @@ arc(r_0015_0017__capable,r_0015_1017__cnt,r_0015_0018__of).
 arc(r_0015_0019__acting,r_0015_0022__instructions,r_0015_0020__on_clr).
 arc(r_0015_0024__complete,r_0015_0026__application,arg1).
 arc(r_0015_0027__assigned,r_0015_0026__application,arg1).
+arc(r_0015_1008,r_0015_0003__program__r_0015_0004__machine,genv).
+arc(r_0015_1008,r_0015_0010__own,attrib2).
 arc(r_0015_1017__cnt,r_0015_0019__acting,scope).
 arc(r_0015_1017__cnt,r_0015_0024__complete,restriction).
-arc(z_0015_1008,r_0015_0003__program__r_0015_0004__machine,genv).
-arc(z_0015_1008,r_0015_0010__own,attrib2).
 
 </pre>
 <br>
@@ -341,7 +341,7 @@ fof(id__15_A_IBM_1401,axiom,
       &amp; isA(ENTITYX3,r_0015_0006__one)
       &amp; isA(ENTITYX4,r_0015_0011__instructions)
       &amp; genv(ENTITYX4) = ENTITYX5
-      &amp; isA(ENTITYX5,z_0015_1008)
+      &amp; isA(ENTITYX5,r_0015_1008)
       &amp; genv(ENTITYX5) = MACHINEX6
       &amp; attrib2(ENTITYX5) = ATTRIBX7
       &amp; MACHINEX6 = MACHINEX1

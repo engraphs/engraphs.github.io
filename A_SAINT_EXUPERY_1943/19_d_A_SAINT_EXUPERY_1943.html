@@ -238,18 +238,18 @@ Draw me a sheep . &rdquo;
 <br>
 <pre>
 arc(r_0073_0003__live,r_0073_0002__I,arg0).
-arc(r_0073_0003__live,z_0073_1003,loc1).
-arc(r_0073_0005__quantificational__r_0073_0005__everything,r_0073_0006__is,scope).
-arc(r_0073_0005__quantificational__r_0073_0005__everything,z_0073_1006,restriction).
+arc(r_0073_0003__live,r_0073_1003,loc1).
+arc(r_0073_0005__quantificational__everything,r_0073_0006__is,scope).
+arc(r_0073_0005__quantificational__everything,r_0073_1006,restriction).
 arc(r_0073_0006__is,r_0073_0008__small,prd2).
-arc(r_0073_0006__is,z_0073_1003,loc).
-arc(r_0073_0006__is,z_0073_1006,arg0).
+arc(r_0073_0006__is,r_0073_1003,loc).
+arc(r_0073_0006__is,r_0073_1006,arg0).
 arc(r_0073_0008__small,r_0073_0007__very,quality1).
 arc(r_0073_1019__imperative,r_0075_0001__Draw,scope).
 arc(r_0074_0003__need,r_0073_0002__I,arg0).
-arc(r_0074_0003__need,z_0073_1013,arg1).
+arc(r_0074_0003__need,r_0073_1013,arg1).
+arc(r_0074_0004__is,r_0073_1013,arg0).
 arc(r_0074_0004__is,r_0074_0006__sheep,prd2).
-arc(r_0074_0004__is,z_0073_1013,arg0).
 arc(r_0075_0001__Draw,r_0073_0002__I,arg2).
 arc(r_0075_0001__Draw,r_0074_0006__sheep,arg1).
 
@@ -261,11 +261,11 @@ fof(id__73_A_SAINT_EXUPERY_1943__74_A_SAINT_EXUPERY_1943__75_A_SAINT_EXUPERY_194
       ( isA(EVENTX2,r_0073_0003__live)
       &amp; loc1(EVENTX2) = ENTITYX1
       &amp; arg0(EVENTX2) = r_0073_0002__I
-      &amp; isA(ENTITYX1,z_0073_1003)
+      &amp; isA(ENTITYX1,r_0073_1003)
       &amp; isA(EVENTX12,r_0074_0003__need)
       &amp; arg1(EVENTX12) = ENTITYX10
       &amp; arg0(EVENTX12) = PRINCEX11
-      &amp; isA(ENTITYX10,z_0073_1013)
+      &amp; isA(ENTITYX10,r_0073_1013)
       &amp; PRINCEX11 = r_0073_0002__I
       &amp; isA(SHEEPX14,r_0074_0006__sheep)
       &amp; PRINCEX20 = r_0073_0002__I
@@ -273,9 +273,9 @@ fof(id__73_A_SAINT_EXUPERY_1943__74_A_SAINT_EXUPERY_1943__75_A_SAINT_EXUPERY_194
       &amp; isA(QUALITYX8,r_0073_0007__very)
       &amp; isA(ATTRIBX7,r_0073_0008__small)
       &amp; quality1(ATTRIBX7) = QUALITYX8
-      &amp; isA(QUANTX5,r_0073_0005__quantificational__r_0073_0005__everything)
+      &amp; isA(QUANTX5,r_0073_0005__quantificational__everything)
       &amp; restriction(QUANTX5) = ENTITYX4
-      &amp; isA(ENTITYX4,z_0073_1006)
+      &amp; isA(ENTITYX4,r_0073_1006)
       &amp; scope(QUANTX5) = EVENTX9
       &amp; isA(EVENTX9,r_0073_0006__is)
       &amp; loc(EVENTX9) = ENTITYX1

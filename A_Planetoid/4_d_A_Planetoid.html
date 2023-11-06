@@ -498,15 +498,17 @@ arc(r_0006_0004__ascends,r_0007_0013__form,r_0006_0005__with_com).
 arc(r_0006_0012__can,r_0006_0013__destroy,scope).
 arc(r_0006_0013__destroy,r_0006_0003__raider,arg1).
 arc(r_0006_0013__destroy,r_0006_0011__you,arg0).
-arc(r_0006_0013__destroy,r_0006_0019__or,z_0006_1007).
+arc(r_0006_0013__destroy,r_0006_0019__or,r_0006_1007).
 arc(r_0006_0017__lasers,r_0006_0011__you,genv).
 arc(r_0006_0019__or,r_0006_0017__lasers,r_0006_0015__with_mnr).
 arc(r_0006_0019__or,r_0006_0024__bombs,r_0006_0020__with_mnr).
 arc(r_0006_0024__bombs,r_0006_0023__smart,attrib3).
 arc(r_0006_0027__disintegrate,r_0006_0024__bombs,arg0).
-arc(r_0006_0027__disintegrate,z_0006_1017,arg1).
-arc(r_0006_0028__quantificational__r_0006_0028__everything,r_0006_0027__disintegrate,scope).
-arc(r_0006_0028__quantificational__r_0006_0028__everything,z_0006_1017,restriction).
+arc(r_0006_0027__disintegrate,r_0006_1017,arg1).
+arc(r_0006_0028__quantificational__everything,r_0006_0027__disintegrate,scope).
+arc(r_0006_0028__quantificational__everything,r_0006_1017,restriction).
+arc(r_0006_1017,r_0006_0029__hostile,attrib2).
+arc(r_0006_1017,r_0006_0031__sight,r_0006_0030__within).
 arc(r_0006_1022__abs,r_0007_0001__Having,restriction).
 arc(r_0006_1022__abs,r_0007_0007__can,scope).
 arc(r_0007_0001__Having,r_0007_0002__annihilated,catenative).
@@ -527,8 +529,6 @@ arc(r_0007_0015__set,r_0007_0017__safely,mnr3).
 arc(r_0007_0015__set,r_0007_0019__down,dir4).
 arc(r_0007_0019__down,r_0007_0018__back,quality1).
 arc(r_0007_0019__down,r_0007_0022__surface,r_0007_0020__on).
-arc(z_0006_1017,r_0006_0029__hostile,attrib2).
-arc(z_0006_1017,r_0006_0031__sight,r_0006_0030__within).
 
 </pre>
 <br>
@@ -548,9 +548,9 @@ fof(id__6_A_Planetoid__7_A_Planetoid,axiom,
       &amp; isA(ENTITYX9,r_0006_0017__lasers)
       &amp; genv(ENTITYX9) = HEARERX10
       &amp; HEARERX10 = r_0006_0011__you
-      &amp; isA(QUANTX14,r_0006_0028__quantificational__r_0006_0028__everything)
+      &amp; isA(QUANTX14,r_0006_0028__quantificational__everything)
       &amp; restriction(QUANTX14) = ENTITYX13
-      &amp; isA(ENTITYX13,z_0006_1017)
+      &amp; isA(ENTITYX13,r_0006_1017)
       &amp; attrib2(ENTITYX13) = ATTRIBX15
       &amp; r_0006_0030__within(ENTITYX13) = ENTITYX16
       &amp; scope(QUANTX14) = EVENTX18
@@ -586,7 +586,7 @@ fof(id__6_A_Planetoid__7_A_Planetoid,axiom,
       &amp; isA(EVENTX20,r_0006_0013__destroy)
       &amp; arg0(EVENTX20) = r_0006_0011__you
       &amp; arg1(EVENTX20) = RAIDERX6
-      &amp; z_0006_1007(EVENTX20) = CONJX8
+      &amp; r_0006_1007(EVENTX20) = CONJX8
       &amp; isA(CONNX23,r_0006_1022__abs)
       &amp; restriction(CONNX23) = EVENTX27
       &amp; isA(EVENTX27,r_0007_0001__Having)

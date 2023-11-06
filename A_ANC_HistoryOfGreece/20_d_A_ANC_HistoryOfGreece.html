@@ -175,22 +175,22 @@ Athens became the most powerful , heralding the start of the classical Greek per
 <br>
 <pre>
 arc(r_0032_0002__became,r_0032_0001__Athens,arg0).
-arc(r_0032_0002__became,z_0032_1004,prd2).
+arc(r_0032_0002__became,r_0032_1004,prd2).
 arc(r_0032_0005__powerful,r_0032_0004__most,quality1).
 arc(r_0032_0007__heralding,r_0032_0009__start,arg1).
 arc(r_0032_0009__start,r_0032_0014__period,r_0032_0010__of).
 arc(r_0032_0014__period,r_0032_0012__classical,attrib2).
 arc(r_0032_0014__period,r_0032_0013__Greek,attrib3).
+arc(r_0032_1004,r_0032_0005__powerful,attrib2).
 arc(r_0032_1005__abs,r_0032_0002__became,scope).
 arc(r_0032_1005__abs,r_0032_0007__heralding,restriction).
-arc(z_0032_1004,r_0032_0005__powerful,attrib2).
 
 </pre>
 <br>
 <pre>
 fof(id__32_A_ANC_HistoryOfGreece,axiom,
     ? [CONNX6,EVENTX13,EVENTX14,ENTITYX1,ENTITYX9,ENTITYX10,ATTRIBX11,ATTRIBX12,ATTRIBX2,QUALITYX3] :
-      ( isA(ENTITYX1,z_0032_1004)
+      ( isA(ENTITYX1,r_0032_1004)
       &amp; attrib2(ENTITYX1) = ATTRIBX2
       &amp; isA(ENTITYX9,r_0032_0009__start)
       &amp; r_0032_0010__of(ENTITYX9) = ENTITYX10

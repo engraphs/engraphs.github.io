@@ -614,6 +614,8 @@ arc(r_0124_0012__became,r_0124_0011__finally,tmp6).
 arc(r_0124_0012__became,r_0124_0013__part,prd2).
 arc(r_0124_0013__part,r_0124_0017__nation,r_0124_0014__of).
 arc(r_0124_0017__nation,r_0124_0016__Greek,attrib2).
+arc(r_0124_1032,r_0126_0007__islands,r_0126_0005__of).
+arc(r_0124_1044,r_0127_0006__more,attrib1).
 arc(r_0125_0004__was,r_0124_0017__nation,arg0).
 arc(r_0125_0004__was,r_0125_0006__fragmented,prd2).
 arc(r_0125_0006__fragmented,r_0125_0005__politically,quality1).
@@ -629,10 +631,10 @@ arc(r_0125_0019__and,r_0125_0021__escalated,conj2).
 arc(r_0125_0021__escalated,r_0125_0020__tension,arg0).
 arc(r_0125_0021__escalated,r_0125_0024__war,r_0125_0022__into_dir).
 arc(r_0125_0024__war,r_0125_0023__civil,attrib1).
+arc(r_0126_0003__bypassed,r_0124_1032,arg1).
 arc(r_0126_0003__bypassed,r_0125_0024__war,arg0).
-arc(r_0126_0003__bypassed,z_0124_1032,arg1).
-arc(r_0126_0004__quantificational__r_0126_0004__most,r_0126_0009__although_cnt,scope).
-arc(r_0126_0004__quantificational__r_0126_0004__most,z_0124_1032,restriction).
+arc(r_0126_0004__quantificational__most,r_0124_1032,restriction).
+arc(r_0126_0004__quantificational__most,r_0126_0009__although_cnt,scope).
 arc(r_0126_0009__although_cnt,r_0126_0003__bypassed,scope).
 arc(r_0126_0009__although_cnt,r_0126_0011__was,restriction).
 arc(r_0126_0011__was,r_0126_0013__fighting,arg0).
@@ -643,12 +645,10 @@ arc(r_0127_0001__Even__r_0127_0002__after_tmp,r_0127_0015__not,scope).
 arc(r_0127_0005__stopped,r_0125_0024__war,arg0).
 arc(r_0127_0005__stopped,r_0127_0010__later,tmp3).
 arc(r_0127_0006__more,r_0127_0009__decade,r_0127_0007__than).
-arc(r_0127_0010__later,z_0124_1044,modifier1).
+arc(r_0127_0010__later,r_0124_1044,modifier1).
 arc(r_0127_0014__was,r_0124_0017__nation,arg0).
 arc(r_0127_0014__was,r_0127_0016__stable,prd2).
 arc(r_0127_0015__not,r_0127_0014__was,scope).
-arc(z_0124_1032,r_0126_0007__islands,r_0126_0005__of).
-arc(z_0124_1044,r_0127_0006__more,attrib1).
 
 </pre>
 <br>
@@ -685,7 +685,7 @@ fof(id__124_A_ANC_HistoryOfGreece__125_A_ANC_HistoryOfGreece__126_A_ANC_HistoryO
       &amp; isA(ENTITYX34,r_0126_0013__fighting)
       &amp; attrib1(ENTITYX34) = ATTRIBX35
       &amp; CIVIL_WARX39 = CIVIL_WARX24
-      &amp; isA(ENTITYX41,z_0124_1044)
+      &amp; isA(ENTITYX41,r_0124_1044)
       &amp; attrib1(ENTITYX41) = ATTRIBX42
       &amp; isA(ENTITYX43,r_0127_0009__decade)
       &amp; GREEK_NATIONX46 = GREEK_NATIONX7
@@ -720,9 +720,9 @@ fof(id__124_A_ANC_HistoryOfGreece__125_A_ANC_HistoryOfGreece__126_A_ANC_HistoryO
       &amp; arg0(EVENTX26) = ENTITYX23
       &amp; arg0(EVENTX26) = ENTITYX23
       &amp; r_0125_0022__into_dir(EVENTX26) = CIVIL_WARX24
-      &amp; isA(QUANTX30,r_0126_0004__quantificational__r_0126_0004__most)
+      &amp; isA(QUANTX30,r_0126_0004__quantificational__most)
       &amp; restriction(QUANTX30) = ENTITYX29
-      &amp; isA(ENTITYX29,z_0124_1032)
+      &amp; isA(ENTITYX29,r_0124_1032)
       &amp; r_0126_0005__of(ENTITYX29) = ENTITYX31
       &amp; scope(QUANTX30) = CONNX33
       &amp; isA(CONNX33,r_0126_0009__although_cnt)

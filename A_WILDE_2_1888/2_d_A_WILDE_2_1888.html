@@ -337,14 +337,14 @@ It was a large lovely garden , with soft green grass .
 </svg>
 <br>
 <pre>
-arc(r_0002_0001__quantificational__r_0002_0001__Every,r_0002_0002__afternoon,restriction).
-arc(r_0002_0001__quantificational__r_0002_0001__Every,r_0002_0004__as_tmp,scope).
+arc(r_0002_0001__quantificational__Every,r_0002_0002__afternoon,restriction).
+arc(r_0002_0001__quantificational__Every,r_0002_0004__as_tmp,scope).
 arc(r_0002_0004__as_tmp,r_0002_0006__were,restriction).
 arc(r_0002_0004__as_tmp,r_0002_0013__used,scope).
 arc(r_0002_0006__were,r_0002_0007__coming,catenative).
 arc(r_0002_0007__coming,r_0002_0009__school,r_0002_0008__from_clr_dir).
 arc(r_0002_0007__coming,r_0002_0012__children,arg0).
-arc(r_0002_0013__used,z_0002_1017,scope).
+arc(r_0002_0013__used,r_0002_1017,scope).
 arc(r_0002_0015__go,r_0002_0012__children,arg0).
 arc(r_0002_0015__go,r_0002_0022__garden,r_0002_0018__in_clr_loc).
 arc(r_0002_0016__and,r_0002_0015__go,conj1).
@@ -352,6 +352,8 @@ arc(r_0002_0016__and,r_0002_0017__play,conj2).
 arc(r_0002_0017__play,r_0002_0012__children,arg0).
 arc(r_0002_0017__play,r_0002_0022__garden,r_0002_0018__in_clr_loc).
 arc(r_0002_0022__garden,r_0002_0020__Giant,genv).
+arc(r_0002_1017,r_0002_0002__afternoon,tmp).
+arc(r_0002_1017,r_0002_0016__and,catenative).
 arc(r_0003_0002__was,r_0002_0022__garden,arg0).
 arc(r_0003_0002__was,r_0003_0006__garden,prd2).
 arc(r_0003_0006__garden,r_0003_0004__large,attrib2).
@@ -359,8 +361,6 @@ arc(r_0003_0006__garden,r_0003_0005__lovely,attrib3).
 arc(r_0003_0006__garden,r_0003_0011__grass,r_0003_0008__with).
 arc(r_0003_0011__grass,r_0003_0009__soft,attrib1).
 arc(r_0003_0011__grass,r_0003_0010__green,attrib2).
-arc(z_0002_1017,r_0002_0002__afternoon,tmp).
-arc(z_0002_1017,r_0002_0016__and,catenative).
 
 </pre>
 <br>
@@ -399,7 +399,7 @@ fof(id__2_A_WILDE_2_1888__3_A_WILDE_2_1888,axiom,
       &amp; isA(ATTRIBX22,r_0003_0005__lovely)
       &amp; isA(ATTRIBX24,r_0003_0009__soft)
       &amp; isA(ATTRIBX25,r_0003_0010__green)
-      &amp; isA(QUANTX2,r_0002_0001__quantificational__r_0002_0001__Every)
+      &amp; isA(QUANTX2,r_0002_0001__quantificational__Every)
       &amp; restriction(QUANTX2) = ENTITYX1
       &amp; isA(ENTITYX1,r_0002_0002__afternoon)
       &amp; scope(QUANTX2) = CONNX4
@@ -410,7 +410,7 @@ fof(id__2_A_WILDE_2_1888__3_A_WILDE_2_1888,axiom,
       &amp; scope(CONNX4) = OPERATORX16
       &amp; isA(OPERATORX16,r_0002_0013__used)
       &amp; scope(OPERATORX16) = EVENTX18
-      &amp; isA(EVENTX18,z_0002_1017)
+      &amp; isA(EVENTX18,r_0002_1017)
       &amp; tmp(EVENTX18) = ENTITYX1
       &amp; catenative(EVENTX18) = STATEX10
       &amp; isA(EVENTX26,r_0003_0002__was)

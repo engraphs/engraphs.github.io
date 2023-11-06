@@ -796,8 +796,9 @@ arc(r_0055_1010__cnt,r_0055_0017__put,restriction).
 arc(r_0055_1019__question,r_0055_0023__Why,scope).
 arc(r_0055_1036__utterance,r_0056_0002__Because_cnt,part1).
 arc(r_0055_1049__question,r_0057_0003__expect,scope).
+arc(r_0055_1075,r_0055_0013__Forrest,genv).
+arc(r_0056_0002__Because_cnt,r_0055_1043,scope).
 arc(r_0056_0002__Because_cnt,r_0056_0005__not,restriction).
-arc(r_0056_0002__Because_cnt,z_0055_1043,scope).
 arc(r_0056_0004___apos_m,r_0055_0018__you,arg0).
 arc(r_0056_0005__not,r_0056_0004___apos_m,scope).
 arc(r_0056_0009__snapped,r_0055_0018__you,arg0).
@@ -814,18 +815,17 @@ arc(r_0059_0003___apos_ll,r_0059_0004__be,scope).
 arc(r_0059_0004__be,r_0059_0007__next,catenative).
 arc(r_0059_0005__telling,r_0055_0003__he,arg2).
 arc(r_0059_0005__telling,r_0055_0018__you,arg0).
-arc(r_0059_0005__telling,r_0059_0011__quantificational__r_0059_0011__all,arg1).
+arc(r_0059_0005__telling,r_0059_0011__quantificational__all,arg1).
 arc(r_0059_0007__next,r_0059_0005__telling,scope).
 arc(r_0059_0010__spent,r_0055_0018__you,arg0).
+arc(r_0059_0010__spent,r_0055_1075,r_0059_0017__without_mnr).
 arc(r_0059_0010__spent,r_0059_0013__hours,arg1).
 arc(r_0059_0010__spent,r_0059_0014__together,com5).
 arc(r_0059_0010__spent,r_0059_0016__Balicou,r_0059_0015__on_loc).
-arc(r_0059_0010__spent,z_0055_1075,r_0059_0017__without_mnr).
-arc(r_0059_0011__quantificational__r_0059_0011__all,r_0059_0010__spent,scope).
-arc(r_0059_0011__quantificational__r_0059_0011__all,r_0059_0013__hours,restriction).
+arc(r_0059_0011__quantificational__all,r_0059_0010__spent,scope).
+arc(r_0059_0011__quantificational__all,r_0059_0013__hours,restriction).
 arc(r_0059_0019__kissing,r_0055_0018__you,arg1).
-arc(r_0059_0019__kissing,z_0055_1075,arg0).
-arc(z_0055_1075,r_0055_0013__Forrest,genv).
+arc(r_0059_0019__kissing,r_0055_1075,arg0).
 
 </pre>
 <br>
@@ -882,7 +882,7 @@ fof(id__55_A_lob_N02__56_A_lob_N02__57_A_lob_N02__58_A_lob_N02__59_A_lob_N02,axi
       &amp; isA(NOT_IN_LOVEX42,r_0056_0004___apos_m)
       &amp; arg0(NOT_IN_LOVEX42) = BERYLX40
       &amp; scope(CONNX39) = EVENTX44
-      &amp; isA(EVENTX44,z_0055_1043)
+      &amp; isA(EVENTX44,r_0055_1043)
       &amp; STATEX52 = EVENTX54
       &amp; isA(EVENTX54,r_0057_0006__believe)
       &amp; arg0(EVENTX54) = PIERSX51
@@ -895,7 +895,7 @@ fof(id__55_A_lob_N02__56_A_lob_N02__57_A_lob_N02__58_A_lob_N02__59_A_lob_N02,axi
       &amp; arg2(EVENTX77) = PIERSX64
       &amp; arg1(EVENTX77) = STATEX66
       &amp; STATEX66 = QUANTX69
-      &amp; isA(QUANTX69,r_0059_0011__quantificational__r_0059_0011__all)
+      &amp; isA(QUANTX69,r_0059_0011__quantificational__all)
       &amp; restriction(QUANTX69) = ENTITYX68
       &amp; isA(ENTITYX68,r_0059_0013__hours)
       &amp; scope(QUANTX69) = EVENTX76
@@ -930,7 +930,7 @@ fof(id__55_A_lob_N02__56_A_lob_N02__57_A_lob_N02__58_A_lob_N02__59_A_lob_N02,axi
       &amp; isA(EVENTX74,r_0059_0019__kissing)
       &amp; arg0(EVENTX74) = ENTITYX71
       &amp; arg1(EVENTX74) = BERYLX73
-      &amp; isA(ENTITYX71,z_0055_1075)
+      &amp; isA(ENTITYX71,r_0055_1075)
       &amp; genv(ENTITYX71) = FORRESTX72
       &amp; FORRESTX72 = r_0055_0013__Forrest
       &amp; ( BERYLX73 = BERYLX67

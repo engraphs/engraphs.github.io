@@ -789,6 +789,7 @@ arc(r_0125_1009__question,r_0126_0003__knew,scope).
 arc(r_0125_1019__utterance,r_0128_0003__looks,part1).
 arc(r_0125_1029__cnt,r_0129_0008__had__r_0129_0009__in,scope).
 arc(r_0125_1029__cnt,r_0129_0011__wash,restriction).
+arc(r_0125_1051,r_0130_0015__and,attrib2).
 arc(r_0126_0003__knew,r_0125_0006__him,arg0).
 arc(r_0126_0003__knew,r_0126_0004__then,tmp3).
 arc(r_0127_0003__was,r_0125_0006__him,arg0).
@@ -800,14 +801,14 @@ arc(r_0128_0005__resigned,r_0128_0004__quite,quality1).
 arc(r_0128_0008__said,r_0125_1019__utterance,arg1).
 arc(r_0128_0008__said,r_0128_0010__aunt,arg0).
 arc(r_0128_0010__aunt,r_0128_0009__my,genv).
+arc(r_0129_0003___apos_s,r_0125_1035,prd2).
 arc(r_0129_0003___apos_s,r_0129_0002__That,arg0).
-arc(r_0129_0003___apos_s,z_0125_1035,prd2).
 arc(r_0129_0008__had__r_0129_0009__in,r_0129_0006__woman,arg1).
 arc(r_0129_0008__had__r_0129_0009__in,r_0129_0007__we,arg0).
 arc(r_0129_0011__wash,r_0125_0006__him,arg1).
 arc(r_0129_0011__wash,r_0129_0006__woman,arg0).
+arc(r_0129_0013__said,r_0125_1035,arg1).
 arc(r_0129_0013__said,r_0129_0006__woman,arg0).
-arc(r_0129_0013__said,z_0125_1035,arg1).
 arc(r_0130_0002__said,r_0129_0006__woman,arg0).
 arc(r_0130_0002__said,r_0130_0004__just,arg1).
 arc(r_0130_0004__just,r_0130_0006__as_if_mnr,scope).
@@ -818,11 +819,11 @@ arc(r_0130_0006__as_if_mnr,r_0130_0008__was,restriction).
 arc(r_0130_0008__was,r_0125_0006__him,arg0).
 arc(r_0130_0008__was,r_0130_0009__asleep,prd2).
 arc(r_0130_0012__looked,r_0125_0006__him,arg0).
-arc(r_0130_0012__looked,z_0125_1051,arg1).
+arc(r_0130_0012__looked,r_0125_1051,arg1).
 arc(r_0130_0015__and,r_0130_0014__peaceful,conj1).
 arc(r_0130_0015__and,r_0130_0016__resigned,conj2).
-arc(r_0131_0001__quantificational__r_0131_0001__No,r_0131_0002__one,restriction).
-arc(r_0131_0001__quantificational__r_0131_0001__No,r_0131_0003__would,scope).
+arc(r_0131_0001__quantificational__No,r_0131_0002__one,restriction).
+arc(r_0131_0001__quantificational__No,r_0131_0003__would,scope).
 arc(r_0131_0003__would,r_0131_0004__think,scope).
 arc(r_0131_0004__think,r_0131_0002__one,arg0).
 arc(r_0131_0004__think,r_0131_0006___apos_d,arg1).
@@ -831,7 +832,6 @@ arc(r_0131_0007__make,r_0125_0006__him,arg0).
 arc(r_0131_0007__make,r_0131_0011__corpse,prd2).
 arc(r_0131_0011__corpse,r_0131_0008__such,attrib1).
 arc(r_0131_0011__corpse,r_0131_0010__beautiful,attrib3).
-arc(z_0125_1051,r_0130_0015__and,attrib2).
 
 </pre>
 <br>
@@ -876,7 +876,7 @@ fof(id__125_A_JOYCE_1914__126_A_JOYCE_1914__127_A_JOYCE_1914__128_A_JOYCE_1914__
       &amp; isA(EVENTX34,r_0129_0013__said)
       &amp; arg1(EVENTX34) = ENTITYX27
       &amp; arg0(EVENTX34) = WOMANX28
-      &amp; isA(ENTITYX27,z_0125_1035)
+      &amp; isA(ENTITYX27,r_0125_1035)
       &amp; isA(CONNX30,r_0125_1029__cnt)
       &amp; scope(CONNX30) = EVENTX33
       &amp; isA(EVENTX33,r_0129_0008__had__r_0129_0009__in)
@@ -892,7 +892,7 @@ fof(id__125_A_JOYCE_1914__126_A_JOYCE_1914__127_A_JOYCE_1914__128_A_JOYCE_1914__
       &amp; PRIESTX39 = r_0125_0006__him
       &amp; ( PRIESTX46 = PRIESTX39
         | PRIESTX46 = r_0125_0006__him )
-      &amp; isA(ENTITYX47,z_0125_1051)
+      &amp; isA(ENTITYX47,r_0125_1051)
       &amp; attrib2(ENTITYX47) = ATTRIBX48
       &amp; ( PRIESTX42 = PRIESTX39
         | PRIESTX42 = r_0125_0006__him )
@@ -948,7 +948,7 @@ fof(id__125_A_JOYCE_1914__126_A_JOYCE_1914__127_A_JOYCE_1914__128_A_JOYCE_1914__
       &amp; isA(EVENTX54,r_0130_0002__said)
       &amp; arg0(EVENTX54) = WOMANX37
       &amp; arg1(EVENTX54) = STATEX38
-      &amp; isA(QUANTX56,r_0131_0001__quantificational__r_0131_0001__No)
+      &amp; isA(QUANTX56,r_0131_0001__quantificational__No)
       &amp; restriction(QUANTX56) = PERSONSX55
       &amp; isA(PERSONSX55,r_0131_0002__one)
       &amp; scope(QUANTX56) = OPERATORX64

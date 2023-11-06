@@ -333,7 +333,7 @@ arc(r_0005_0008__sang,r_0005_0002__birds,arg0).
 arc(r_0005_0008__sang,r_0005_0010__sweetly,mnr2).
 arc(r_0005_0009__so,r_0005_0014__used,emb2).
 arc(r_0005_0010__sweetly,r_0005_0009__so,quality1).
-arc(r_0005_0014__used,z_0005_1016,scope).
+arc(r_0005_0014__used,r_0005_1016,scope).
 arc(r_0005_0016__stop,r_0005_0013__children,arg0).
 arc(r_0005_0016__stop,r_0005_0018__games,arg1).
 arc(r_0005_0018__games,r_0005_0013__children,genv).
@@ -341,6 +341,7 @@ arc(r_0005_0019__in_order_cnt,r_0005_0016__stop,scope).
 arc(r_0005_0019__in_order_cnt,r_0005_0021__listen,restriction).
 arc(r_0005_0021__listen,r_0005_0002__birds,r_0005_0022__to_clr).
 arc(r_0005_0021__listen,r_0005_0013__children,arg0).
+arc(r_0005_1016,r_0005_0019__in_order_cnt,catenative).
 arc(r_0006_0003__happy,r_0006_0002__How,quality1).
 arc(r_0006_0005__are,r_0005_0013__children,arg0).
 arc(r_0006_0005__are,r_0006_0003__happy,prd2).
@@ -348,7 +349,6 @@ arc(r_0006_0005__are,r_0006_0006__here,loc5).
 arc(r_0006_0005__are,r_0006_0010__cried,prn8).
 arc(r_0006_0010__cried,r_0005_0013__children,arg0).
 arc(r_0006_0010__cried,r_0005_0013__children,r_0006_0011__to_dir).
-arc(z_0005_1016,r_0005_0019__in_order_cnt,catenative).
 
 </pre>
 <br>
@@ -358,7 +358,7 @@ fof(id__5_A_WILDE_2_1888__6_A_WILDE_2_1888,axiom,
       ( STATEX6 = OPERATORX15
       &amp; isA(OPERATORX15,r_0005_0014__used)
       &amp; scope(OPERATORX15) = EVENTX17
-      &amp; isA(EVENTX17,z_0005_1016)
+      &amp; isA(EVENTX17,r_0005_1016)
       &amp; catenative(EVENTX17) = STATEX8
       &amp; STATEX8 = CONNX11
       &amp; isA(CONNX11,r_0005_0019__in_order_cnt)

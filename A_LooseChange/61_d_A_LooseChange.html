@@ -714,32 +714,40 @@ arc(r_0114_0011__when_tmp,r_0114_0003__picking,scope).
 arc(r_0114_0011__when_tmp,r_0114_0013__said,restriction).
 arc(r_0114_0013__said,r_0114_0001__She,arg0).
 arc(r_0114_0013__said,r_0114_1012__utterance,arg1).
-arc(r_0114_0016__quantificational__r_0114_0016__No,r_0114_0017__hotel,restriction).
-arc(r_0114_0016__quantificational__r_0114_0016__No,z_0114_1021,scope).
+arc(r_0114_0016__quantificational__No,r_0114_0017__hotel,restriction).
+arc(r_0114_0016__quantificational__No,r_0114_1021,scope).
 arc(r_0114_0017__hotel,r_0114_0021__square,prn4).
 arc(r_0114_0021__square,r_0114_0019__just,quality1).
-arc(r_0114_1012__utterance,r_0114_0016__quantificational__r_0114_0016__No,part1).
+arc(r_0114_1012__utterance,r_0114_0016__quantificational__No,part1).
+arc(r_0114_1021,r_0114_0017__hotel,r_0114_1016).
+arc(r_0114_1045,r_0115_0021__fingernails,r_0115_0018__of).
+arc(r_0114_1051,r_0115_0024__collar,arg0).
+arc(r_0114_1051,r_0115_0030__unironed,prd2).
+arc(r_0114_1069,r_0115_0015__dirt,conj1).
+arc(r_0114_1069,r_0115_0024__collar,conj2).
+arc(r_0114_1069,r_0115_0034__cut,conj3).
+arc(r_0114_1069,r_0115_0040__fringe,conj4).
 arc(r_0115_0002__was,r_0115_0003__then,prd2_tmp3).
 arc(r_0115_0002__was,r_0115_0005__began,arg0).
 arc(r_0115_0005__began,r_0115_0007__notice,catenative).
 arc(r_0115_0007__notice,r_0115_0004__I,arg0).
 arc(r_0115_0007__notice,r_0115_0008__things,arg1).
-arc(r_0115_0008__things,z_0114_1069,prn4).
+arc(r_0115_0008__things,r_0114_1069,prn4).
 arc(r_0115_0010__had,r_0115_0011__not,catenative).
 arc(r_0115_0011__not,r_0115_0012__seen,scope).
 arc(r_0115_0012__seen,r_0115_0004__I,arg0).
 arc(r_0115_0012__seen,r_0115_0008__things,arg1).
 arc(r_0115_0012__seen,r_0115_0013__before,tmp4).
-arc(r_0115_0015__dirt,z_0114_1045,r_0115_0016__under).
-arc(r_0115_0017__quantificational__r_0115_0017__each,r_0115_0015__dirt,scope).
-arc(r_0115_0017__quantificational__r_0115_0017__each,z_0114_1045,restriction).
+arc(r_0115_0015__dirt,r_0114_1045,r_0115_0016__under).
+arc(r_0115_0017__quantificational__each,r_0114_1045,restriction).
+arc(r_0115_0017__quantificational__each,r_0115_0015__dirt,scope).
 arc(r_0115_0021__fingernails,r_0114_0001__She,genv).
 arc(r_0115_0021__fingernails,r_0115_0020__chipped,attrib2).
 arc(r_0115_0024__collar,r_0115_0027__blouse,r_0115_0025__of).
 arc(r_0115_0027__blouse,r_0114_0001__She,genv).
 arc(r_0115_0028__crumpled,r_0115_0024__collar,arg0).
+arc(r_0115_0029__and,r_0114_1051,conj2).
 arc(r_0115_0029__and,r_0115_0028__crumpled,conj1).
-arc(r_0115_0029__and,z_0114_1051,conj2).
 arc(r_0115_0034__cut,r_0115_0033__tiny,attrib2).
 arc(r_0115_0034__cut,r_0115_0037__cheek,r_0115_0035__on).
 arc(r_0115_0037__cheek,r_0114_0001__She,genv).
@@ -749,14 +757,6 @@ arc(r_0115_0045__been,r_0115_0046__cut,catenative).
 arc(r_0115_0046__cut,r_0115_0040__fringe,arg1).
 arc(r_0115_0046__cut,r_0115_0049__nail_clippers,r_0115_0047__with_mnr).
 arc(r_0115_0049__nail_clippers,r_0115_0048__blunt,attrib1).
-arc(z_0114_1021,r_0114_0017__hotel,z_0114_1016).
-arc(z_0114_1045,r_0115_0021__fingernails,r_0115_0018__of).
-arc(z_0114_1051,r_0115_0024__collar,arg0).
-arc(z_0114_1051,r_0115_0030__unironed,prd2).
-arc(z_0114_1069,r_0115_0015__dirt,conj1).
-arc(z_0114_1069,r_0115_0024__collar,conj2).
-arc(z_0114_1069,r_0115_0034__cut,conj3).
-arc(z_0114_1069,r_0115_0040__fringe,conj4).
 
 </pre>
 <br>
@@ -777,13 +777,13 @@ fof(id__114_A_LooseChange__115_A_LooseChange,axiom,
       &amp; STATEX10 = CONJX23
       &amp; isA(CONJX23,r_0114_1012__utterance)
       &amp; part1(CONJX23) = QUANTX18
-      &amp; isA(QUANTX18,r_0114_0016__quantificational__r_0114_0016__No)
+      &amp; isA(QUANTX18,r_0114_0016__quantificational__No)
       &amp; restriction(QUANTX18) = ENTITYX17
       &amp; isA(ENTITYX17,r_0114_0017__hotel)
       &amp; prn4(ENTITYX17) = ENTITYX19
       &amp; scope(QUANTX18) = EVENTX22
-      &amp; isA(EVENTX22,z_0114_1021)
-      &amp; z_0114_1016(EVENTX22) = ENTITYX17
+      &amp; isA(EVENTX22,r_0114_1021)
+      &amp; r_0114_1016(EVENTX22) = ENTITYX17
       &amp; STATEX29 = EVENTX71
       &amp; isA(EVENTX71,r_0115_0005__began)
       &amp; catenative(EVENTX71) = STATEX30
@@ -822,14 +822,14 @@ fof(id__114_A_LooseChange__115_A_LooseChange,axiom,
       &amp; isA(ENTITYX31,r_0115_0008__things)
       &amp; prn4(ENTITYX31) = ENTITYX38
       &amp; SPEAKERX32 = r_0115_0004__I
-      &amp; isA(ENTITYX38,z_0114_1069)
+      &amp; isA(ENTITYX38,r_0114_1069)
       &amp; conj1(ENTITYX38) = ENTITYX39
       &amp; conj2(ENTITYX38) = ENTITYX46
       &amp; conj3(ENTITYX38) = ENTITYX54
       &amp; conj4(ENTITYX38) = ENTITYX58
-      &amp; isA(QUANTX41,r_0115_0017__quantificational__r_0115_0017__each)
+      &amp; isA(QUANTX41,r_0115_0017__quantificational__each)
       &amp; restriction(QUANTX41) = ENTITYX40
-      &amp; isA(ENTITYX40,z_0114_1045)
+      &amp; isA(ENTITYX40,r_0114_1045)
       &amp; r_0115_0018__of(ENTITYX40) = ENTITYX42
       &amp; scope(QUANTX41) = ENTITYX39
       &amp; isA(ENTITYX39,r_0115_0015__dirt)
@@ -843,7 +843,7 @@ fof(id__114_A_LooseChange__115_A_LooseChange,axiom,
       &amp; isA(EVENTX49,r_0115_0028__crumpled)
       &amp; arg0(EVENTX49) = ENTITYX46
       &amp; conj2(CONJX53) = EVENTX52
-      &amp; isA(EVENTX52,z_0114_1051)
+      &amp; isA(EVENTX52,r_0114_1051)
       &amp; arg0(EVENTX52) = ENTITYX46
       &amp; prd2(EVENTX52) = ATTRIBX50
       &amp; isA(ENTITYX46,r_0115_0024__collar)

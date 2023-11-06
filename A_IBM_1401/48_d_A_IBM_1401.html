@@ -982,7 +982,7 @@ arc(r_0066_0024__Line,r_0066_0022__Major,attrib2).
 arc(r_0066_0024__Line,r_0066_0023__Total,attrib3).
 arc(r_0067_0008__program,r_0067_0010__get,emb3).
 arc(r_0067_0010__get,r_0067_0014__Line,arg1).
-arc(r_0067_0014__Line,r_0066_0024__Line,z_0064_1062).
+arc(r_0067_0014__Line,r_0066_0024__Line,r_0064_1062).
 arc(r_0067_0014__Line,r_0067_0012__Major,attrib3).
 arc(r_0067_0014__Line,r_0067_0013__Total,attrib4).
 arc(r_0067_0015__would,r_0067_0016__be,scope).
@@ -992,20 +992,20 @@ arc(r_0067_0017__written__r_0067_0018__out,r_0067_0008__program,arg1).
 arc(r_0067_0017__written__r_0067_0018__out,r_0067_0020__detail,r_0067_0019__in_mnr).
 arc(r_0067_0017__written__r_0067_0018__out,r_0067_0022__step,abs).
 arc(r_0067_0022__step,r_0067_0024__step,r_0067_0023__by).
-arc(r_0068_0008__quantificational__r_0068_0008__all,r_0068_0014__are,scope).
-arc(r_0068_0008__quantificational__r_0068_0008__all,z_0064_1082,restriction).
+arc(r_0068_0008__quantificational__all,r_0064_1082,restriction).
+arc(r_0068_0008__quantificational__all,r_0068_0014__are,scope).
 arc(r_0068_0011__has,r_0068_0013__write,catenative).
+arc(r_0068_0013__write,r_0064_1082,arg1).
 arc(r_0068_0013__write,r_0068_0010__programmer,arg0).
-arc(r_0068_0013__write,z_0064_1082,arg1).
+arc(r_0068_0014__are,r_0064_1082,arg0).
 arc(r_0068_0014__are,r_0065_0006__IBM__r_0065_0007__Report_r_0065_0008__Program_r_0065_0009__Generator,r_0068_0002__with_com).
 arc(r_0068_0014__are,r_0068_0016__two__r_0068_0017__statements,prd2).
-arc(r_0068_0014__are,z_0064_1082,arg0).
 arc(r_0069_0002___apos_s,r_0069_0005__easy,prd2).
 arc(r_0069_0002___apos_s,r_0069_0007__write,arg0).
 arc(r_0069_0004__as,r_0069_0003__just,quality1).
 arc(r_0069_0005__easy,r_0069_0004__as,quality1).
 arc(r_0069_0007__write,r_0069_0009__statements,arg1).
-arc(r_0069_0009__statements,r_0068_0016__two__r_0068_0017__statements,z_0064_1092).
+arc(r_0069_0009__statements,r_0068_0016__two__r_0068_0017__statements,r_0064_1092).
 arc(r_0069_0009__statements,r_0069_0011__generate,emb4).
 arc(r_0069_0011__generate,r_0069_0013__rest,arg1).
 arc(r_0069_0013__rest,r_0069_0016__report,r_0069_0014__of).
@@ -1103,7 +1103,7 @@ fof(id__64_A_IBM_1401__65_A_IBM_1401__66_A_IBM_1401__67_A_IBM_1401__68_A_IBM_140
       &amp; isA(ENTITYX56,r_0067_0008__program)
       &amp; emb3(ENTITYX56) = STATEX57
       &amp; isA(ENTITYX60,r_0067_0014__Line)
-      &amp; z_0064_1062(ENTITYX60) = LINEX63
+      &amp; r_0064_1062(ENTITYX60) = LINEX63
       &amp; attrib3(ENTITYX60) = ATTRIBX64
       &amp; attrib4(ENTITYX60) = ATTRIBX65
       &amp; LINEX63 = LINEX50
@@ -1115,7 +1115,7 @@ fof(id__64_A_IBM_1401__65_A_IBM_1401__66_A_IBM_1401__67_A_IBM_1401__68_A_IBM_140
       &amp; isA(ENTITYX78,r_0068_0010__programmer)
       &amp; isA(STATEMENTSX83,r_0068_0016__two__r_0068_0017__statements)
       &amp; isA(ENTITYX90,r_0069_0009__statements)
-      &amp; z_0064_1092(ENTITYX90) = STATEMENTSX93
+      &amp; r_0064_1092(ENTITYX90) = STATEMENTSX93
       &amp; emb4(ENTITYX90) = STATEX94
       &amp; STATEMENTSX93 = STATEMENTSX83
       &amp; isA(ENTITYX97,r_0069_0013__rest)
@@ -1153,10 +1153,10 @@ fof(id__64_A_IBM_1401__65_A_IBM_1401__66_A_IBM_1401__67_A_IBM_1401__68_A_IBM_140
       &amp; isA(EVENTX74,r_0067_0016__be)
       &amp; r_0067_0001__Without_com(EVENTX74) = REPORT_GENERATORX55
       &amp; catenative(EVENTX74) = CATENATIVEX68
-      &amp; isA(QUANTX77,r_0068_0008__quantificational__r_0068_0008__all)
+      &amp; isA(QUANTX77,r_0068_0008__quantificational__all)
       &amp; isA(EVENTX81,r_0068_0011__has)
       &amp; catenative(EVENTX81) = STATEX79
-      &amp; isA(ENTITYX76,z_0064_1082)
+      &amp; isA(ENTITYX76,r_0064_1082)
       &amp; restriction(QUANTX77) = ENTITYX76
       &amp; scope(QUANTX77) = EVENTX84
       &amp; isA(EVENTX84,r_0068_0014__are)

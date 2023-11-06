@@ -403,11 +403,11 @@ I know it 's a bit of a stereotype that English food is n't very good , but nowa
 <br>
 <pre>
 arc(r_0004_0002__know,r_0004_0001__I,arg0).
-arc(r_0004_0002__know,r_0004_0005__quantificational__r_0004_0005__a_bit,arg1).
+arc(r_0004_0002__know,r_0004_0005__quantificational__a_bit,arg1).
 arc(r_0004_0004___apos_s,r_0004_0013__n_apos_t,arg0).
-arc(r_0004_0004___apos_s,z_0004_1006,prd2).
-arc(r_0004_0005__quantificational__r_0004_0005__a_bit,r_0004_0004___apos_s,scope).
-arc(r_0004_0005__quantificational__r_0004_0005__a_bit,z_0004_1006,restriction).
+arc(r_0004_0004___apos_s,r_0004_1006,prd2).
+arc(r_0004_0005__quantificational__a_bit,r_0004_0004___apos_s,scope).
+arc(r_0004_0005__quantificational__a_bit,r_0004_1006,restriction).
 arc(r_0004_0012__is,r_0004_0010__English__r_0004_0011__food,arg0).
 arc(r_0004_0012__is,r_0004_0015__good,prd2).
 arc(r_0004_0013__n_apos_t,r_0004_0012__is,scope).
@@ -429,7 +429,7 @@ arc(r_0004_0036__and,r_0004_0035__diversity,conj1).
 arc(r_0004_0036__and,r_0004_0037__range,conj2).
 arc(r_0004_0036__and,r_0004_0039__food,r_0004_0038__of).
 arc(r_0004_0041__choose,r_0004_0039__food,r_0004_0042__from_dir).
-arc(z_0004_1006,r_0004_0008__stereotype,r_0004_0006__of).
+arc(r_0004_1006,r_0004_0008__stereotype,r_0004_0006__of).
 
 </pre>
 <br>
@@ -437,9 +437,9 @@ arc(z_0004_1006,r_0004_0008__stereotype,r_0004_0006__of).
 fof(id__4_A_OPENCities,axiom,
     ? [STATEX1,STATEX7,CONJX33,CONJX32,EVENTX31,EVENTX28,EVENTX22,EVENTX21,EVENTX14,QUANTX4,EVENTX13,OPERATORX11,EVENTX12,ENTITYX23,ENTITYX25,ENTITYX29,ENTITYX30,ENTITYX16,ENTITYX17,ENTITYX3,ENTITYX8,ENTITYX5,ATTRIBX24,ATTRIBX18,ATTRIBX9,QUALITYX15,QUALITYX10] :
       ( STATEX1 = QUANTX4
-      &amp; isA(QUANTX4,r_0004_0005__quantificational__r_0004_0005__a_bit)
+      &amp; isA(QUANTX4,r_0004_0005__quantificational__a_bit)
       &amp; restriction(QUANTX4) = ENTITYX3
-      &amp; isA(ENTITYX3,z_0004_1006)
+      &amp; isA(ENTITYX3,r_0004_1006)
       &amp; r_0004_0006__of(ENTITYX3) = ENTITYX5
       &amp; scope(QUANTX4) = EVENTX13
       &amp; isA(EVENTX13,r_0004_0004___apos_s)

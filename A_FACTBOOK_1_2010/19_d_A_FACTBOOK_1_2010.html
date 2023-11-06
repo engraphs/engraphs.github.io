@@ -560,6 +560,8 @@ arc(r_0045_0001__Crimean_Congo__r_0045_0002__hemorrhagic_r_0045_0003__fever,r_00
 arc(r_0045_0007__borne,r_0045_0005__tick,arg0_lgs).
 arc(r_0045_0007__borne,r_0045_0009__disease,arg1).
 arc(r_0045_0009__disease,r_0045_0008__viral,attrib2).
+arc(r_0045_1009,r_0045_0001__Crimean_Congo__r_0045_0002__hemorrhagic_r_0045_0003__fever,r_0045_1004).
+arc(r_0045_1041,r_0048_0002__onset,r_0045_1027).
 arc(r_0046_0002__may,r_0046_0004__result,scope).
 arc(r_0046_0003__also,r_0046_0002__may,scope).
 arc(r_0046_0004__result,r_0046_0001__infection,arg0).
@@ -590,8 +592,6 @@ arc(r_0048_0022__and,r_0048_0023__gums,conj4).
 arc(r_0049_0003__is,r_0049_0001__mortality__r_0049_0002__rate,arg0).
 arc(r_0049_0003__is,r_0049_0005__30__r_0049_0006___,prd2).
 arc(r_0049_0005__30__r_0049_0006___,r_0049_0004__approximately,quality1).
-arc(z_0045_1009,r_0045_0001__Crimean_Congo__r_0045_0002__hemorrhagic_r_0045_0003__fever,z_0045_1004).
-arc(z_0045_1041,r_0048_0002__onset,z_0045_1027).
 
 </pre>
 <br>
@@ -655,8 +655,8 @@ fof(id__45_A_FACTBOOK_1_2010__46_A_FACTBOOK_1_2010__47_A_FACTBOOK_1_2010__48_A_F
       &amp; isA(ATTRIBX21,r_0047_0001__geographic)
       &amp; isA(ATTRIBX29,r_0048_0001__sudden)
       &amp; isA(QUALITYX45,r_0049_0004__approximately)
-      &amp; isA(EVENTX10,z_0045_1009)
-      &amp; z_0045_1004(EVENTX10) = r_0045_0001__Crimean_Congo__r_0045_0002__hemorrhagic_r_0045_0003__fever
+      &amp; isA(EVENTX10,r_0045_1009)
+      &amp; r_0045_1004(EVENTX10) = r_0045_0001__Crimean_Congo__r_0045_0002__hemorrhagic_r_0045_0003__fever
       &amp; isA(OPERATORX12,r_0046_0003__also)
       &amp; scope(OPERATORX12) = OPERATORX18
       &amp; isA(OPERATORX18,r_0046_0002__may)
@@ -667,8 +667,8 @@ fof(id__45_A_FACTBOOK_1_2010__46_A_FACTBOOK_1_2010__47_A_FACTBOOK_1_2010__48_A_F
       &amp; isA(EVENTX23,r_0047_0003__includes)
       &amp; arg0(EVENTX23) = ENTITYX20
       &amp; arg1(EVENTX23) = ENTITYX22
-      &amp; isA(EVENTX42,z_0045_1041)
-      &amp; z_0045_1027(EVENTX42) = ENTITYX28
+      &amp; isA(EVENTX42,r_0045_1041)
+      &amp; r_0045_1027(EVENTX42) = ENTITYX28
       &amp; isA(EVENTX46,r_0049_0003__is)
       &amp; arg0(EVENTX46) = ENTITYX43
       &amp; prd2(EVENTX46) = ENTITYX44 ) ).

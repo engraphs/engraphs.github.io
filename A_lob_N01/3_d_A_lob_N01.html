@@ -582,7 +582,9 @@ arc(r_0005_0012__much,r_0005_0011__so,quality1).
 arc(r_0005_0013__confidence,r_0005_0012__much,attrib1).
 arc(r_0005_0013__confidence,r_0005_0015__her,r_0005_0014__in).
 arc(r_0005_1008__question,r_0005_0007__why,scope).
-arc(r_0005_1052__utterance,z_0005_1060,part1).
+arc(r_0005_1052__utterance,r_0005_1060,part1).
+arc(r_0005_1060,r_0008_0003__luck,r_0005_1057).
+arc(r_0005_1060,r_0008_0005__air__r_0008_0006__Marshal,voc).
 arc(r_0006_0004__checked__r_0006_0005__back,r_0005_0015__her,arg0).
 arc(r_0006_0004__checked__r_0006_0005__back,r_0006_0001__Once,tmp1).
 arc(r_0006_0004__checked__r_0006_0005__back,r_0006_0002__again,tmp2).
@@ -609,8 +611,6 @@ arc(r_0008_0003__luck,r_0008_0002__Good,attrib1).
 arc(r_0008_0010__said,r_0005_0015__her,arg0).
 arc(r_0008_0010__said,r_0005_1052__utterance,arg1).
 arc(r_0008_0010__said,r_0008_0011__gently,mnr7).
-arc(z_0005_1060,r_0008_0003__luck,z_0005_1057).
-arc(z_0005_1060,r_0008_0005__air__r_0008_0006__Marshal,voc).
 
 </pre>
 <br>
@@ -660,9 +660,9 @@ fof(id__5_A_lob_N01__6_A_lob_N01__7_A_lob_N01__8_A_lob_N01,axiom,
       &amp; STATEX50 = CONJX62
       &amp; isA(CONJX62,r_0005_1052__utterance)
       &amp; part1(CONJX62) = EVENTX61
-      &amp; isA(EVENTX61,z_0005_1060)
+      &amp; isA(EVENTX61,r_0005_1060)
       &amp; voc(EVENTX61) = ENTITYX56
-      &amp; z_0005_1057(EVENTX61) = ENTITYX58
+      &amp; r_0005_1057(EVENTX61) = ENTITYX58
       &amp; ALASTAIRX10 = r_0005_0001__Alastair
       &amp; isA(ENTITYX11,r_0005_0013__confidence)
       &amp; attrib1(ENTITYX11) = ATTRIBX12

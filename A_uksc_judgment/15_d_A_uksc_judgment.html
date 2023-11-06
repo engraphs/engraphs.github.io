@@ -368,11 +368,11 @@ But why did that need a prorogation of five weeks ?
 </svg>
 <br>
 <pre>
-arc(r_0028_0001__quantificational__r_0028_0001__Everything,r_0028_0002__was,scope).
-arc(r_0028_0001__quantificational__r_0028_0001__Everything,z_0028_1003,restriction).
+arc(r_0028_0001__quantificational__Everything,r_0028_0002__was,scope).
+arc(r_0028_0001__quantificational__Everything,r_0028_1003,restriction).
 arc(r_0028_0002__was,r_0028_0003__focussed,catenative).
 arc(r_0028_0003__focussed,r_0028_0006__need,r_0028_0004__on_clr).
-arc(r_0028_0003__focussed,z_0028_1003,arg1).
+arc(r_0028_0003__focussed,r_0028_1003,arg1).
 arc(r_0028_0006__need,r_0028_0013__and,r_0028_0007__for).
 arc(r_0028_0012__Speech,r_0028_0009__new,attrib2).
 arc(r_0028_0012__Speech,r_0028_0010__Queen,genv).
@@ -385,14 +385,14 @@ arc(r_0028_0017__holding,r_0028_0026__rather,mod4).
 arc(r_0028_0022__beginning,r_0028_0021__week,arg0).
 arc(r_0028_0022__beginning,r_0028_0025__October,arg1).
 arc(r_0028_0025__October,r_0028_0024__14th,attrib2).
-arc(r_0028_0026__rather,z_0028_1024,r_0028_0027__than).
+arc(r_0028_0026__rather,r_0028_1024,r_0028_0027__than).
 arc(r_0028_0030__week,r_0028_0029__previous,attrib2).
+arc(r_0028_1024,r_0028_0030__week,tmp).
 arc(r_0028_1030__question,r_0029_0002__why,scope).
 arc(r_0029_0002__why,r_0029_0005__need,scope).
 arc(r_0029_0005__need,r_0028_0006__need,arg0).
 arc(r_0029_0005__need,r_0029_0007__prorogation,arg1).
 arc(r_0029_0007__prorogation,r_0029_0009__five__r_0029_0010__weeks,r_0029_0008__of).
-arc(z_0028_1024,r_0028_0030__week,tmp).
 
 </pre>
 <br>
@@ -409,7 +409,7 @@ fof(id__28_A_uksc_judgment__29_A_uksc_judgment,axiom,
       &amp; r_0028_0019__in_tmp(EVENTX26) = ENTITYX15
       &amp; mod4(EVENTX26) = QUALITYX18
       &amp; EVENTX19 = EVENTX25
-      &amp; isA(EVENTX25,z_0028_1024)
+      &amp; isA(EVENTX25,r_0028_1024)
       &amp; tmp(EVENTX25) = ENTITYX22
       &amp; isA(NEEDX6,r_0028_0006__need)
       &amp; r_0028_0007__for(NEEDX6) = ENTITYX7
@@ -439,9 +439,9 @@ fof(id__28_A_uksc_judgment__29_A_uksc_judgment,axiom,
       &amp; attrib2(r_0028_0025__October) = ATTRIBX16
       &amp; isA(QUALITYX18,r_0028_0026__rather)
       &amp; r_0028_0027__than(QUALITYX18) = EVENTX19
-      &amp; isA(QUANTX2,r_0028_0001__quantificational__r_0028_0001__Everything)
+      &amp; isA(QUANTX2,r_0028_0001__quantificational__Everything)
       &amp; restriction(QUANTX2) = ENTITYX1
-      &amp; isA(ENTITYX1,z_0028_1003)
+      &amp; isA(ENTITYX1,r_0028_1003)
       &amp; scope(QUANTX2) = EVENTX28
       &amp; isA(EVENTX28,r_0028_0002__was)
       &amp; catenative(EVENTX28) = CATENATIVEX4

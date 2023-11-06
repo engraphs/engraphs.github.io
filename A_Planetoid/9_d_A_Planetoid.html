@@ -389,34 +389,34 @@ You start off with three ships , but for every 10,000 points you score , you gai
 </svg>
 <br>
 <pre>
-arc(r_0013_0001__However,r_0013_0004__quantificational__r_0013_0004__every,scope).
-arc(r_0013_0004__quantificational__r_0013_0004__every,r_0013_0010__get,scope).
-arc(r_0013_0004__quantificational__r_0013_0004__every,z_0013_1005,restriction).
+arc(r_0013_0001__However,r_0013_0004__quantificational__every,scope).
+arc(r_0013_0004__quantificational__every,r_0013_0010__get,scope).
+arc(r_0013_0004__quantificational__every,r_0013_1005,restriction).
 arc(r_0013_0010__get,r_0013_0009__you,arg0).
 arc(r_0013_0010__get,r_0013_0015__and,arg1).
-arc(r_0013_0010__get,z_0013_1005,r_0013_0003__after_tmp).
+arc(r_0013_0010__get,r_0013_1005,r_0013_0003__after_tmp).
 arc(r_0013_0013__planetoid,r_0013_0012__new,attrib2).
 arc(r_0013_0015__and,r_0013_0013__planetoid,conj1).
 arc(r_0013_0015__and,r_0013_0018__set,conj2).
 arc(r_0013_0018__set,r_0013_0017__new,attrib2).
 arc(r_0013_0018__set,r_0013_0020__life__r_0013_0022__forms,r_0013_0019__of).
 arc(r_0013_0024__defend,r_0013_0018__set,arg1).
+arc(r_0013_1005,r_0013_0005__five__r_0013_0006__attack_r_0013_0007__waves,nlyr2).
+arc(r_0013_1026,r_0014_0011__10,000__r_0014_0012__points,nlyr2).
 arc(r_0014_0002__start__r_0014_0003__off,r_0013_0009__you,arg0).
 arc(r_0014_0002__start__r_0014_0003__off,r_0014_0005__three_r_0014_0006__ships,r_0014_0004__with_com).
 arc(r_0014_0008__but,r_0014_0002__start__r_0014_0003__off,conj1).
-arc(r_0014_0008__but,r_0014_0010__quantificational__r_0014_0010__every,conj2).
-arc(r_0014_0010__quantificational__r_0014_0010__every,r_0014_0017__gain,scope).
-arc(r_0014_0010__quantificational__r_0014_0010__every,z_0013_1026,restriction).
+arc(r_0014_0008__but,r_0014_0010__quantificational__every,conj2).
+arc(r_0014_0010__quantificational__every,r_0013_1026,restriction).
+arc(r_0014_0010__quantificational__every,r_0014_0017__gain,scope).
 arc(r_0014_0014__score,r_0013_0009__you,arg0).
 arc(r_0014_0014__score,r_0014_0011__10,000__r_0014_0012__points,arg1).
 arc(r_0014_0017__gain,r_0013_0009__you,arg0).
+arc(r_0014_0017__gain,r_0013_1026,r_0014_0009__for_rst).
 arc(r_0014_0017__gain,r_0014_0020__plus,arg1).
-arc(r_0014_0017__gain,z_0013_1026,r_0014_0009__for_rst).
 arc(r_0014_0020__plus,r_0014_0019__ship,conj1).
 arc(r_0014_0020__plus,r_0014_0023__bomb,conj2).
 arc(r_0014_0023__bomb,r_0014_0022__smart,attrib2).
-arc(z_0013_1005,r_0013_0005__five__r_0013_0006__attack_r_0013_0007__waves,nlyr2).
-arc(z_0013_1026,r_0014_0011__10,000__r_0014_0012__points,nlyr2).
 
 </pre>
 <br>
@@ -454,9 +454,9 @@ fof(id__13_A_Planetoid__14_A_Planetoid,axiom,
       &amp; isA(ATTRIBX31,r_0014_0022__smart)
       &amp; isA(OPERATORX1,r_0013_0001__However)
       &amp; scope(OPERATORX1) = QUANTX3
-      &amp; isA(QUANTX3,r_0013_0004__quantificational__r_0013_0004__every)
+      &amp; isA(QUANTX3,r_0013_0004__quantificational__every)
       &amp; restriction(QUANTX3) = ENTITYX2
-      &amp; isA(ENTITYX2,z_0013_1005)
+      &amp; isA(ENTITYX2,r_0013_1005)
       &amp; nlyr2(ENTITYX2) = ENTITYX4
       &amp; scope(QUANTX3) = EVENTX15
       &amp; isA(EVENTX15,r_0013_0010__get)
@@ -470,9 +470,9 @@ fof(id__13_A_Planetoid__14_A_Planetoid,axiom,
       &amp; arg0(EVENTX20) = HEARERX18
       &amp; r_0014_0004__with_com(EVENTX20) = ENTITYX19
       &amp; conj2(CONJX33) = QUANTX22
-      &amp; isA(QUANTX22,r_0014_0010__quantificational__r_0014_0010__every)
+      &amp; isA(QUANTX22,r_0014_0010__quantificational__every)
       &amp; restriction(QUANTX22) = ENTITYX21
-      &amp; isA(ENTITYX21,z_0013_1026)
+      &amp; isA(ENTITYX21,r_0013_1026)
       &amp; nlyr2(ENTITYX21) = ENTITYX23
       &amp; scope(QUANTX22) = EVENTX32
       &amp; isA(EVENTX32,r_0014_0017__gain)
