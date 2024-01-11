@@ -155,7 +155,7 @@ It said pressure was being put on members and associates all over the country .
 <title>0052_0009&#45;&gt;0052_0014</title>
 <path fill="none" stroke="#000000" d="M209.6116,-91.7869C219.6234,-85.0322 231.9528,-76.6443 242.895,-69 256.3397,-59.6076 271.0849,-49.0572 283.6372,-40"/>
 <polygon fill="#000000" stroke="#000000" points="285.8812,-42.6966 291.9339,-34.0008 281.7795,-37.0241 285.8812,-42.6966"/>
-<text text-anchor="middle" x="278.395" y="-57.8" font-family="fixed" font-size="14.00" fill="#000000">over</text>
+<text text-anchor="middle" x="290.395" y="-57.8" font-family="fixed" font-size="14.00" fill="#000000">all_over</text>
 </g>
 </g>
 </svg>
@@ -169,7 +169,7 @@ arc(r_0052_0006__put,r_0052_0003__pressure,arg1).
 arc(r_0052_0006__put,r_0052_0009__and,r_0052_0007__on_clr).
 arc(r_0052_0009__and,r_0052_0008__members,conj1).
 arc(r_0052_0009__and,r_0052_0010__associates,conj2).
-arc(r_0052_0009__and,r_0052_0014__country,r_0052_0012__over).
+arc(r_0052_0009__and,r_0052_0014__country,r_0052_0011__all__r_0052_0012__over).
 
 </pre>
 <br>
@@ -188,7 +188,7 @@ fof(id__52_A_lob_A02,axiom,
       &amp; r_0052_0007__on_clr(EVENTX10) = ENTITYX6
       &amp; isA(ENTITYX2,r_0052_0003__pressure)
       &amp; isA(ENTITYX6,r_0052_0009__and)
-      &amp; r_0052_0012__over(ENTITYX6) = ENTITYX7
+      &amp; r_0052_0011__all__r_0052_0012__over(ENTITYX6) = ENTITYX7
       &amp; conj1(ENTITYX6) = ENTITYX8
       &amp; conj2(ENTITYX6) = ENTITYX9
       &amp; isA(ENTITYX7,r_0052_0014__country)
@@ -266,9 +266,11 @@ fof(id__52_A_lob_A02,axiom,
 <line x1="1140.48" y1="488" x2="1200" y2="519" style="stroke:#000000;stroke-width:2;"/>
 <line x1="1380.24" y1="427" x2="1140" y2="458" style="stroke:#000000;stroke-width:2;"/>
 <text x="1560.24" y="478" text-anchor="middle">PP</text>
-<text x="1380.36" y="539" text-anchor="middle">Q</text>
-<text x="1380.36" y="600" text-anchor="middle">all</text>
-<line x1="1380.36" y1="549" x2="1380.36" y2="580" style="stroke:#000000;stroke-width:2;"/>
+<text x="1380.96" y="539" text-anchor="middle">ADVP-MOD</text>
+<text x="1380.36" y="600" text-anchor="middle">ADV</text>
+<text x="1380.36" y="661" text-anchor="middle">all</text>
+<line x1="1380.36" y1="610" x2="1380.36" y2="641" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1380.96" y1="549" x2="1380" y2="580" style="stroke:#000000;stroke-width:2;"/>
 <line x1="1560.24" y1="488" x2="1380" y2="519" style="stroke:#000000;stroke-width:2;"/>
 <text x="1500.72" y="539" text-anchor="middle">P-ROLE</text>
 <text x="1500.72" y="600" text-anchor="middle">over</text>
@@ -309,7 +311,7 @@ fof(id__52_A_lob_A02,axiom,
                                                               (NP (NLYR (NP (NS members;{member}))
                                                                         (CONJP (CONJ and;{and})
                                                                                (NP (NS associates;{associate}))))
-                                                                  (PP (Q all;{all})
+                                                                  (PP (ADVP-MOD (ADV all;{all}))
                                                                       (P-ROLE over;{over})
                                                                       (NP (D the;{the})
                                                                           (N country;{country})))))))))

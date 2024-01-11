@@ -272,7 +272,7 @@ In the past , the focus was on foreigners from different cultures living in Japa
 <title>0024_0031&#45;&gt;0024_0035</title>
 <path fill="none" stroke="#000000" d="M567.9475,-173.9735C569.8434,-162.1918 572.3588,-146.5607 574.5155,-133.1581"/>
 <polygon fill="#000000" stroke="#000000" points="578.0163,-133.4324 576.1496,-123.0034 571.1052,-132.3203 578.0163,-133.4324"/>
-<text text-anchor="middle" x="605.0467" y="-144.8" font-family="fixed" font-size="14.00" fill="#000000">over[loc]</text>
+<text text-anchor="middle" x="617.0467" y="-144.8" font-family="fixed" font-size="14.00" fill="#000000">all_over[loc]</text>
 </g>
 </g>
 </svg>
@@ -295,7 +295,7 @@ arc(r_0024_0026__capabilities,r_0024_0025__communicative,attrib2).
 arc(r_0024_0026__capabilities,r_0024_0028__learners,r_0024_0027__of).
 arc(r_0024_0028__learners,r_0024_0030__Japanese,r_0024_0029__of).
 arc(r_0024_0031__studying,r_0024_0028__learners,arg0).
-arc(r_0024_0031__studying,r_0024_0035__world,r_0024_0033__over_loc2).
+arc(r_0024_0031__studying,r_0024_0035__world,r_0024_0032__all__r_0024_0033__over_loc2).
 
 </pre>
 <br>
@@ -319,7 +319,7 @@ fof(id__24_A_NINJAL_mission,axiom,
       &amp; r_0024_0027__of(ENTITYX11) = ENTITYX13
       &amp; isA(EVENTX16,r_0024_0031__studying)
       &amp; arg0(EVENTX16) = ENTITYX13
-      &amp; r_0024_0033__over_loc2(EVENTX16) = ENTITYX15
+      &amp; r_0024_0032__all__r_0024_0033__over_loc2(EVENTX16) = ENTITYX15
       &amp; isA(ENTITYX13,r_0024_0028__learners)
       &amp; r_0024_0029__of(ENTITYX13) = LANGUAGEX14
       &amp; isA(LANGUAGEX14,r_0024_0030__Japanese)
@@ -512,9 +512,11 @@ fof(id__24_A_NINJAL_mission,axiom,
 <line x1="3660.96" y1="671" x2="3660.96" y2="702" style="stroke:#000000;stroke-width:2;"/>
 <line x1="3900.72" y1="610" x2="3660" y2="641" style="stroke:#000000;stroke-width:2;"/>
 <text x="3960.72" y="661" text-anchor="middle">PP-LOC</text>
-<text x="3780.36" y="722" text-anchor="middle">Q</text>
-<text x="3780.36" y="783" text-anchor="middle">all</text>
-<line x1="3780.36" y1="732" x2="3780.36" y2="763" style="stroke:#000000;stroke-width:2;"/>
+<text x="3780.96" y="722" text-anchor="middle">ADVP-MOD</text>
+<text x="3780.36" y="783" text-anchor="middle">ADV</text>
+<text x="3780.36" y="844" text-anchor="middle">all</text>
+<line x1="3780.36" y1="793" x2="3780.36" y2="824" style="stroke:#000000;stroke-width:2;"/>
+<line x1="3780.96" y1="732" x2="3780" y2="763" style="stroke:#000000;stroke-width:2;"/>
 <line x1="3960.72" y1="671" x2="3780" y2="702" style="stroke:#000000;stroke-width:2;"/>
 <text x="3900.72" y="722" text-anchor="middle">P-ROLE</text>
 <text x="3900.72" y="783" text-anchor="middle">over</text>
@@ -578,7 +580,7 @@ fof(id__24_A_NINJAL_mission,axiom,
                                                      (PP (P-ROLE of;{of})
                                                          (NP;{LANGUAGE} (N Japanese;{Japanese})))
                                                      (IP-PPL (VAG;~I studying;{study})
-                                                             (PP-LOC (Q all;{all})
+                                                             (PP-LOC (ADVP-MOD (ADV all;{all}))
                                                                      (P-ROLE over;{over})
                                                                      (NP (D the;{the})
                                                                          (N world;{world}))))))))))))
