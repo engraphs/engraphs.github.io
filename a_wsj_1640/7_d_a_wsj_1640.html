@@ -300,19 +300,19 @@ Even though electronic espionage may cost U.S. firms billions of dollars a year 
 <pre>
 arc(r_0011_0001__Even_though_cnt,r_0011_0004__may,restriction).
 arc(r_0011_0001__Even_though_cnt,r_0011_0014__most__quantificational,scope).
-arc(r_0011_0003__espionage,r_0011_0002__electronic,attrib1).
+arc(r_0011_0003__espionage,r_0011_0002__electronic,attrib).
 arc(r_0011_0004__may,r_0011_0005__cost,scope).
 arc(r_0011_0005__cost,r_0011_0003__espionage,arg0).
 arc(r_0011_0005__cost,r_0011_0007__firms,arg2).
 arc(r_0011_0005__cost,r_0011_0008__billions,arg1).
-arc(r_0011_0007__firms,r_0011_0006__U__dot__S__dot__,attrib1).
+arc(r_0011_0007__firms,r_0011_0006__U_dot_S_dot_,attrib).
 arc(r_0011_0008__billions,r_0011_0010__dollars,r_0011_0009__of).
-arc(r_0011_0008__billions,r_0011_0012__year,mnr3).
+arc(r_0011_0008__billions,r_0011_0012__year,mnr).
 arc(r_0011_0014__most__quantificational,r_0011_0015__are,scope).
 arc(r_0011_0014__most__quantificational,z_0011_1017,restriction).
-arc(r_0011_0015__are,r_0011_0016__n__apos__t,scope).
-arc(r_0011_0016__n__apos__t,r_0011_0018__taking,scope).
-arc(r_0011_0018__taking,r_0011_0017__yet,tmp2).
+arc(r_0011_0015__are,r_0011_0016__n_apos_t,scope).
+arc(r_0011_0016__n_apos_t,r_0011_0018__taking,scope).
+arc(r_0011_0018__taking,r_0011_0017__yet,tmp).
 arc(r_0011_0018__taking,r_0011_0019__precautions,arg1).
 arc(r_0011_0018__taking,z_0011_1017,arg0).
 arc(r_0011_0023__said,r_0011_0022__experts,arg0).
@@ -323,7 +323,7 @@ arc(z_0011_1003__utterance,r_0011_0001__Even_though_cnt,part1).
 <br>
 <pre>
 fof(id__11_a_wsj_1640,axiom,
-    ? [STATEX1,STATEX7,CATENATIVEX18,EVENTX26,CONJX24,CONNX4,QUANTX16,EVENTX23,OPERATORX21,EVENTX22,EVENTX14,EVENTX13,ENTITYX25,ENTITYX15,ENTITYX20,ENTITYX5,ENTITYX8,ENTITYX10,ENTITYX11,ENTITYX12,ATTRIBX9,ATTRIBX6,QUALITYX19] :
+    ? [STATEX1,STATEX7,STATEX18,EVENTX26,CONJX24,CONNX4,QUANTX16,EVENTX23,OPERATORX21,EVENTX22,EVENTX14,EVENTX13,ENTITYX25,ENTITYX15,ENTITYX20,ENTITYX5,ENTITYX8,ENTITYX10,ENTITYX11,ENTITYX12,ATTRIBX9,ATTRIBX6,QUALITYX19] :
       ( STATEX1 = CONJX24
       &amp; isA(CONJX24,z_0011_1003__utterance)
       &amp; part1(CONJX24) = CONNX4
@@ -337,14 +337,14 @@ fof(id__11_a_wsj_1640,axiom,
       &amp; isA(ENTITYX15,z_0011_1017)
       &amp; scope(QUANTX16) = EVENTX23
       &amp; isA(EVENTX23,r_0011_0015__are)
-      &amp; scope(EVENTX23) = CATENATIVEX18
+      &amp; scope(EVENTX23) = STATEX18
       &amp; STATEX7 = EVENTX13
       &amp; isA(EVENTX13,r_0011_0005__cost)
       &amp; arg0(EVENTX13) = ENTITYX5
       &amp; arg2(EVENTX13) = ENTITYX8
       &amp; arg1(EVENTX13) = ENTITYX10
-      &amp; CATENATIVEX18 = OPERATORX21
-      &amp; isA(OPERATORX21,r_0011_0016__n__apos__t)
+      &amp; STATEX18 = OPERATORX21
+      &amp; isA(OPERATORX21,r_0011_0016__n_apos_t)
       &amp; scope(OPERATORX21) = EVENTX22
       &amp; isA(EVENTX22,r_0011_0018__taking)
       &amp; arg0(EVENTX22) = ENTITYX15
@@ -362,7 +362,7 @@ fof(id__11_a_wsj_1640,axiom,
       &amp; isA(ENTITYX20,r_0011_0019__precautions)
       &amp; isA(ENTITYX25,r_0011_0022__experts)
       &amp; isA(ATTRIBX6,r_0011_0002__electronic)
-      &amp; isA(ATTRIBX9,r_0011_0006__U__dot__S__dot__)
+      &amp; isA(ATTRIBX9,r_0011_0006__U_dot_S_dot_)
       &amp; isA(QUALITYX19,r_0011_0017__yet)
       &amp; isA(EVENTX26,r_0011_0023__said)
       &amp; arg1(EVENTX26) = STATEX1
@@ -371,140 +371,140 @@ fof(id__11_a_wsj_1640,axiom,
 
 </pre>
 <br>
-<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns:exslt="http://exslt.org/common" width="2400" height="671" viewBox="-24.00 -3.355 3000.00 838.75">
-<text x="1200.60" y="51" text-anchor="middle">IP-MAT</text>
-<text x="951.30" y="112" text-anchor="middle">utterance-OB1</text>
-<text x="950.60" y="173" text-anchor="middle">IP-MAT</text>
-<text x="601.10" y="234" text-anchor="middle">PP-SCON-CNT</text>
-<text x="51.10" y="295" text-anchor="middle">P-CONN</text>
-<text x="51.10" y="356" text-anchor="middle">Even_though</text>
-<line x1="51.10" y1="305" x2="51.10" y2="336" style="stroke:#000000;stroke-width:2;"/>
-<line x1="601.10" y1="244" x2="50" y2="275" style="stroke:#000000;stroke-width:2;"/>
-<text x="650.60" y="295" text-anchor="middle">IP-ADV</text>
-<text x="200.60" y="356" text-anchor="middle">NP-SBJ</text>
-<text x="150.40" y="417" text-anchor="middle">ADJP</text>
-<text x="151.0" y="478" text-anchor="middle">ADJ</text>
-<text x="151.0" y="539" text-anchor="middle">electronic</text>
-<line x1="151.0" y1="488" x2="151.0" y2="519" style="stroke:#000000;stroke-width:2;"/>
-<line x1="150.40" y1="427" x2="150" y2="458" style="stroke:#000000;stroke-width:2;"/>
-<line x1="200.60" y1="366" x2="150" y2="397" style="stroke:#000000;stroke-width:2;"/>
-<text x="250.90" y="417" text-anchor="middle">N</text>
-<text x="250.90" y="478" text-anchor="middle">espionage</text>
-<line x1="250.90" y1="427" x2="250.90" y2="458" style="stroke:#000000;stroke-width:2;"/>
-<line x1="200.60" y1="366" x2="250" y2="397" style="stroke:#000000;stroke-width:2;"/>
-<line x1="650.60" y1="305" x2="200" y2="336" style="stroke:#000000;stroke-width:2;"/>
-<text x="351.0" y="356" text-anchor="middle">MD;~cat_Vi</text>
-<text x="351.0" y="417" text-anchor="middle">may</text>
-<line x1="351.0" y1="366" x2="351.0" y2="397" style="stroke:#000000;stroke-width:2;"/>
-<line x1="650.60" y1="305" x2="350" y2="336" style="stroke:#000000;stroke-width:2;"/>
-<text x="801.0" y="356" text-anchor="middle">IP-INF-CAT</text>
-<text x="450.90" y="417" text-anchor="middle">VB;~In/pr</text>
-<text x="450.90" y="478" text-anchor="middle">cost</text>
-<line x1="450.90" y1="427" x2="450.90" y2="458" style="stroke:#000000;stroke-width:2;"/>
-<line x1="801.0" y1="366" x2="450" y2="397" style="stroke:#000000;stroke-width:2;"/>
-<text x="600.60" y="417" text-anchor="middle">NP-OB2</text>
-<text x="550.40" y="478" text-anchor="middle">ADJP</text>
-<text x="550.40" y="539" text-anchor="middle">ADJ</text>
-<text x="550.40" y="600" text-anchor="middle">U.S.</text>
-<line x1="550.40" y1="549" x2="550.40" y2="580" style="stroke:#000000;stroke-width:2;"/>
-<line x1="550.40" y1="488" x2="550" y2="519" style="stroke:#000000;stroke-width:2;"/>
-<line x1="600.60" y1="427" x2="550" y2="458" style="stroke:#000000;stroke-width:2;"/>
-<text x="650.5" y="478" text-anchor="middle">NS</text>
-<text x="650.5" y="539" text-anchor="middle">firms</text>
-<line x1="650.5" y1="488" x2="650.5" y2="519" style="stroke:#000000;stroke-width:2;"/>
-<line x1="600.60" y1="427" x2="650" y2="458" style="stroke:#000000;stroke-width:2;"/>
-<line x1="801.0" y1="366" x2="600" y2="397" style="stroke:#000000;stroke-width:2;"/>
-<text x="950.60" y="417" text-anchor="middle">NP-OB1</text>
-<text x="750.80" y="478" text-anchor="middle">NS</text>
-<text x="750.80" y="539" text-anchor="middle">billions</text>
-<line x1="750.80" y1="488" x2="750.80" y2="519" style="stroke:#000000;stroke-width:2;"/>
-<line x1="950.60" y1="427" x2="750" y2="458" style="stroke:#000000;stroke-width:2;"/>
-<text x="900.20" y="478" text-anchor="middle">PP</text>
-<text x="850.60" y="539" text-anchor="middle">P-ROLE</text>
-<text x="850.60" y="600" text-anchor="middle">of</text>
-<line x1="850.60" y1="549" x2="850.60" y2="580" style="stroke:#000000;stroke-width:2;"/>
-<line x1="900.20" y1="488" x2="850" y2="519" style="stroke:#000000;stroke-width:2;"/>
-<text x="950.20" y="539" text-anchor="middle">NP</text>
-<text x="950.70" y="600" text-anchor="middle">NS</text>
-<text x="950.70" y="661" text-anchor="middle">dollars</text>
-<line x1="950.70" y1="610" x2="950.70" y2="641" style="stroke:#000000;stroke-width:2;"/>
-<line x1="950.20" y1="549" x2="950" y2="580" style="stroke:#000000;stroke-width:2;"/>
-<line x1="900.20" y1="488" x2="950" y2="519" style="stroke:#000000;stroke-width:2;"/>
-<line x1="950.60" y1="427" x2="900" y2="458" style="stroke:#000000;stroke-width:2;"/>
-<text x="1100.60" y="478" text-anchor="middle">NP-MNR</text>
-<text x="1050.10" y="539" text-anchor="middle">D</text>
-<text x="1050.10" y="600" text-anchor="middle">a</text>
-<line x1="1050.10" y1="549" x2="1050.10" y2="580" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1100.60" y1="488" x2="1050" y2="519" style="stroke:#000000;stroke-width:2;"/>
-<text x="1150.40" y="539" text-anchor="middle">N</text>
-<text x="1150.40" y="600" text-anchor="middle">year</text>
-<line x1="1150.40" y1="549" x2="1150.40" y2="580" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1100.60" y1="488" x2="1150" y2="519" style="stroke:#000000;stroke-width:2;"/>
-<line x1="950.60" y1="427" x2="1100" y2="458" style="stroke:#000000;stroke-width:2;"/>
-<line x1="801.0" y1="366" x2="950" y2="397" style="stroke:#000000;stroke-width:2;"/>
-<line x1="650.60" y1="305" x2="800" y2="336" style="stroke:#000000;stroke-width:2;"/>
-<line x1="601.10" y1="244" x2="650" y2="275" style="stroke:#000000;stroke-width:2;"/>
-<line x1="950.60" y1="183" x2="600" y2="214" style="stroke:#000000;stroke-width:2;"/>
-<text x="1250.40" y="234" text-anchor="middle">PUNC</text>
-<text x="1250.40" y="295" text-anchor="middle">,</text>
-<line x1="1250.40" y1="244" x2="1250.40" y2="275" style="stroke:#000000;stroke-width:2;"/>
-<line x1="950.60" y1="183" x2="1250" y2="214" style="stroke:#000000;stroke-width:2;"/>
-<text x="1350.60" y="234" text-anchor="middle">NP-SBJ</text>
-<text x="1350.80" y="295" text-anchor="middle">Q;_nphd_</text>
-<text x="1350.80" y="356" text-anchor="middle">most</text>
-<line x1="1350.80" y1="305" x2="1350.80" y2="336" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1350.60" y1="244" x2="1350" y2="275" style="stroke:#000000;stroke-width:2;"/>
-<line x1="950.60" y1="183" x2="1350" y2="214" style="stroke:#000000;stroke-width:2;"/>
-<text x="1451.10" y="234" text-anchor="middle">BEP;~cat_Vg</text>
-<text x="1451.10" y="295" text-anchor="middle">are</text>
-<line x1="1451.10" y1="244" x2="1451.10" y2="275" style="stroke:#000000;stroke-width:2;"/>
-<line x1="950.60" y1="183" x2="1450" y2="214" style="stroke:#000000;stroke-width:2;"/>
-<text x="1701.0" y="234" text-anchor="middle">IP-PPL-CAT</text>
-<text x="1551.40" y="295" text-anchor="middle">NEG;_clitic_</text>
-<text x="1551.40" y="356" text-anchor="middle">n&lt;apos&gt;t</text>
-<line x1="1551.40" y1="305" x2="1551.40" y2="336" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1701.0" y1="244" x2="1550" y2="275" style="stroke:#000000;stroke-width:2;"/>
-<text x="1650.80" y="295" text-anchor="middle">ADVP-TMP</text>
-<text x="1650.30" y="356" text-anchor="middle">ADV</text>
-<text x="1650.30" y="417" text-anchor="middle">yet</text>
-<line x1="1650.30" y1="366" x2="1650.30" y2="397" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1650.80" y1="305" x2="1650" y2="336" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1701.0" y1="244" x2="1650" y2="275" style="stroke:#000000;stroke-width:2;"/>
-<text x="1750.70" y="295" text-anchor="middle">VAG;~Tn</text>
-<text x="1750.70" y="356" text-anchor="middle">taking</text>
-<line x1="1750.70" y1="305" x2="1750.70" y2="336" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1701.0" y1="244" x2="1750" y2="275" style="stroke:#000000;stroke-width:2;"/>
-<text x="1850.60" y="295" text-anchor="middle">NP-OB1</text>
-<text x="1851.10" y="356" text-anchor="middle">NS</text>
-<text x="1851.10" y="417" text-anchor="middle">precautions</text>
-<line x1="1851.10" y1="366" x2="1851.10" y2="397" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1850.60" y1="305" x2="1850" y2="336" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1701.0" y1="244" x2="1850" y2="275" style="stroke:#000000;stroke-width:2;"/>
-<line x1="950.60" y1="183" x2="1700" y2="214" style="stroke:#000000;stroke-width:2;"/>
-<line x1="951.30" y1="122" x2="950" y2="153" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1200.60" y1="61" x2="950" y2="92" style="stroke:#000000;stroke-width:2;"/>
-<text x="1950.40" y="112" text-anchor="middle">PUNC</text>
-<text x="1950.40" y="173" text-anchor="middle">,</text>
-<line x1="1950.40" y1="122" x2="1950.40" y2="153" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1200.60" y1="61" x2="1950" y2="92" style="stroke:#000000;stroke-width:2;"/>
-<text x="2100.60" y="112" text-anchor="middle">NP-SBJ</text>
-<text x="2050.30" y="173" text-anchor="middle">D</text>
-<text x="2050.30" y="234" text-anchor="middle">the</text>
-<line x1="2050.30" y1="183" x2="2050.30" y2="214" style="stroke:#000000;stroke-width:2;"/>
-<line x1="2100.60" y1="122" x2="2050" y2="153" style="stroke:#000000;stroke-width:2;"/>
-<text x="2150.70" y="173" text-anchor="middle">NS</text>
-<text x="2150.70" y="234" text-anchor="middle">experts</text>
-<line x1="2150.70" y1="183" x2="2150.70" y2="214" style="stroke:#000000;stroke-width:2;"/>
-<line x1="2100.60" y1="122" x2="2150" y2="153" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1200.60" y1="61" x2="2100" y2="92" style="stroke:#000000;stroke-width:2;"/>
-<text x="2250.70" y="112" text-anchor="middle">VBD;~Tr</text>
-<text x="2250.70" y="173" text-anchor="middle">said</text>
-<line x1="2250.70" y1="122" x2="2250.70" y2="153" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1200.60" y1="61" x2="2250" y2="92" style="stroke:#000000;stroke-width:2;"/>
-<text x="2350.40" y="112" text-anchor="middle">PUNC</text>
-<text x="2350.40" y="173" text-anchor="middle">.</text>
-<line x1="2350.40" y1="122" x2="2350.40" y2="153" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1200.60" y1="61" x2="2350" y2="92" style="stroke:#000000;stroke-width:2;"/>
+<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns:exslt="http://exslt.org/common" width="1991" height="605" viewBox="-19.91 -3.025 2389.2 726.0">
+<text x="995.5" y="45" text-anchor="middle">IP-MAT</text>
+<text x="836" y="100" text-anchor="middle">utterance-OB1</text>
+<text x="836" y="155" text-anchor="middle">IP-MAT</text>
+<text x="495" y="210" text-anchor="middle">PP-SCON-CNT</text>
+<text x="60.5" y="265" text-anchor="middle">P-CONN</text>
+<text x="60.5" y="320" text-anchor="middle">Even_though</text>
+<line x1="60.5" y1="275" x2="60.5" y2="300" style="stroke:#000000;stroke-width:2;"/>
+<line x1="495" y1="220" x2="60.5" y2="245" style="stroke:#000000;stroke-width:2;"/>
+<text x="555.5" y="265" text-anchor="middle">IP-ADV</text>
+<text x="225.5" y="320" text-anchor="middle">NP-SBJ</text>
+<text x="176" y="375" text-anchor="middle">ADJP</text>
+<text x="176" y="430" text-anchor="middle">ADJ</text>
+<text x="176" y="485" text-anchor="middle">electronic</text>
+<line x1="176" y1="440" x2="176" y2="465" style="stroke:#000000;stroke-width:2;"/>
+<line x1="176" y1="385" x2="176" y2="410" style="stroke:#000000;stroke-width:2;"/>
+<line x1="225.5" y1="330" x2="176" y2="355" style="stroke:#000000;stroke-width:2;"/>
+<text x="280.5" y="375" text-anchor="middle">N</text>
+<text x="280.5" y="430" text-anchor="middle">espionage</text>
+<line x1="280.5" y1="385" x2="280.5" y2="410" style="stroke:#000000;stroke-width:2;"/>
+<line x1="225.5" y1="330" x2="280.5" y2="355" style="stroke:#000000;stroke-width:2;"/>
+<line x1="555.5" y1="275" x2="225.5" y2="300" style="stroke:#000000;stroke-width:2;"/>
+<text x="385" y="320" text-anchor="middle">MD;~cat_Vi</text>
+<text x="385" y="375" text-anchor="middle">may</text>
+<line x1="385" y1="330" x2="385" y2="355" style="stroke:#000000;stroke-width:2;"/>
+<line x1="555.5" y1="275" x2="385" y2="300" style="stroke:#000000;stroke-width:2;"/>
+<text x="715" y="320" text-anchor="middle">IP-INF-CAT</text>
+<text x="489.5" y="375" text-anchor="middle">VB;~In/pr</text>
+<text x="489.5" y="430" text-anchor="middle">cost</text>
+<line x1="489.5" y1="385" x2="489.5" y2="410" style="stroke:#000000;stroke-width:2;"/>
+<line x1="715" y1="330" x2="489.5" y2="355" style="stroke:#000000;stroke-width:2;"/>
+<text x="594" y="375" text-anchor="middle">NP-OB2</text>
+<text x="566.5" y="430" text-anchor="middle">ADJP</text>
+<text x="566.5" y="485" text-anchor="middle">ADJ</text>
+<text x="566.5" y="540" text-anchor="middle">U.S.</text>
+<line x1="566.5" y1="495" x2="566.5" y2="520" style="stroke:#000000;stroke-width:2;"/>
+<line x1="566.5" y1="440" x2="566.5" y2="465" style="stroke:#000000;stroke-width:2;"/>
+<line x1="594" y1="385" x2="566.5" y2="410" style="stroke:#000000;stroke-width:2;"/>
+<text x="621.5" y="430" text-anchor="middle">NS</text>
+<text x="621.5" y="485" text-anchor="middle">firms</text>
+<line x1="621.5" y1="440" x2="621.5" y2="465" style="stroke:#000000;stroke-width:2;"/>
+<line x1="594" y1="385" x2="621.5" y2="410" style="stroke:#000000;stroke-width:2;"/>
+<line x1="715" y1="330" x2="594" y2="355" style="stroke:#000000;stroke-width:2;"/>
+<text x="819.5" y="375" text-anchor="middle">NP-OB1</text>
+<text x="693" y="430" text-anchor="middle">NS</text>
+<text x="693" y="485" text-anchor="middle">billions</text>
+<line x1="693" y1="440" x2="693" y2="465" style="stroke:#000000;stroke-width:2;"/>
+<line x1="819.5" y1="385" x2="693" y2="410" style="stroke:#000000;stroke-width:2;"/>
+<text x="808.5" y="430" text-anchor="middle">PP</text>
+<text x="770" y="485" text-anchor="middle">P-ROLE</text>
+<text x="770" y="540" text-anchor="middle">of</text>
+<line x1="770" y1="495" x2="770" y2="520" style="stroke:#000000;stroke-width:2;"/>
+<line x1="808.5" y1="440" x2="770" y2="465" style="stroke:#000000;stroke-width:2;"/>
+<text x="841.5" y="485" text-anchor="middle">NP</text>
+<text x="841.5" y="540" text-anchor="middle">NS</text>
+<text x="841.5" y="595" text-anchor="middle">dollars</text>
+<line x1="841.5" y1="550" x2="841.5" y2="575" style="stroke:#000000;stroke-width:2;"/>
+<line x1="841.5" y1="495" x2="841.5" y2="520" style="stroke:#000000;stroke-width:2;"/>
+<line x1="808.5" y1="440" x2="841.5" y2="465" style="stroke:#000000;stroke-width:2;"/>
+<line x1="819.5" y1="385" x2="808.5" y2="410" style="stroke:#000000;stroke-width:2;"/>
+<text x="935" y="430" text-anchor="middle">NP-MNR</text>
+<text x="907.5" y="485" text-anchor="middle">D</text>
+<text x="907.5" y="540" text-anchor="middle">a</text>
+<line x1="907.5" y1="495" x2="907.5" y2="520" style="stroke:#000000;stroke-width:2;"/>
+<line x1="935" y1="440" x2="907.5" y2="465" style="stroke:#000000;stroke-width:2;"/>
+<text x="962.5" y="485" text-anchor="middle">N</text>
+<text x="962.5" y="540" text-anchor="middle">year</text>
+<line x1="962.5" y1="495" x2="962.5" y2="520" style="stroke:#000000;stroke-width:2;"/>
+<line x1="935" y1="440" x2="962.5" y2="465" style="stroke:#000000;stroke-width:2;"/>
+<line x1="819.5" y1="385" x2="935" y2="410" style="stroke:#000000;stroke-width:2;"/>
+<line x1="715" y1="330" x2="819.5" y2="355" style="stroke:#000000;stroke-width:2;"/>
+<line x1="555.5" y1="275" x2="715" y2="300" style="stroke:#000000;stroke-width:2;"/>
+<line x1="495" y1="220" x2="555.5" y2="245" style="stroke:#000000;stroke-width:2;"/>
+<line x1="836" y1="165" x2="495" y2="190" style="stroke:#000000;stroke-width:2;"/>
+<text x="1017.5" y="210" text-anchor="middle">PUNC</text>
+<text x="1017.5" y="265" text-anchor="middle">,</text>
+<line x1="1017.5" y1="220" x2="1017.5" y2="245" style="stroke:#000000;stroke-width:2;"/>
+<line x1="836" y1="165" x2="1017.5" y2="190" style="stroke:#000000;stroke-width:2;"/>
+<text x="1089" y="210" text-anchor="middle">NP-SBJ</text>
+<text x="1089" y="265" text-anchor="middle">Q;_nphd_</text>
+<text x="1089" y="320" text-anchor="middle">most</text>
+<line x1="1089" y1="275" x2="1089" y2="300" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1089" y1="220" x2="1089" y2="245" style="stroke:#000000;stroke-width:2;"/>
+<line x1="836" y1="165" x2="1089" y2="190" style="stroke:#000000;stroke-width:2;"/>
+<text x="1193.5" y="210" text-anchor="middle">BEP;~cat_Vg</text>
+<text x="1193.5" y="265" text-anchor="middle">are</text>
+<line x1="1193.5" y1="220" x2="1193.5" y2="245" style="stroke:#000000;stroke-width:2;"/>
+<line x1="836" y1="165" x2="1193.5" y2="190" style="stroke:#000000;stroke-width:2;"/>
+<text x="1463" y="210" text-anchor="middle">IP-PPL-CAT</text>
+<text x="1320" y="265" text-anchor="middle">NEG;_clitic_</text>
+<text x="1320" y="320" text-anchor="middle">n&apos;t</text>
+<line x1="1320" y1="275" x2="1320" y2="300" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1463" y1="220" x2="1320" y2="245" style="stroke:#000000;stroke-width:2;"/>
+<text x="1430" y="265" text-anchor="middle">ADVP-TMP</text>
+<text x="1430" y="320" text-anchor="middle">ADV</text>
+<text x="1430" y="375" text-anchor="middle">yet</text>
+<line x1="1430" y1="330" x2="1430" y2="355" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1430" y1="275" x2="1430" y2="300" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1463" y1="220" x2="1430" y2="245" style="stroke:#000000;stroke-width:2;"/>
+<text x="1512.5" y="265" text-anchor="middle">VAG;~Tn</text>
+<text x="1512.5" y="320" text-anchor="middle">taking</text>
+<line x1="1512.5" y1="275" x2="1512.5" y2="300" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1463" y1="220" x2="1512.5" y2="245" style="stroke:#000000;stroke-width:2;"/>
+<text x="1611.5" y="265" text-anchor="middle">NP-OB1</text>
+<text x="1611.5" y="320" text-anchor="middle">NS</text>
+<text x="1611.5" y="375" text-anchor="middle">precautions</text>
+<line x1="1611.5" y1="330" x2="1611.5" y2="355" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1611.5" y1="275" x2="1611.5" y2="300" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1463" y1="220" x2="1611.5" y2="245" style="stroke:#000000;stroke-width:2;"/>
+<line x1="836" y1="165" x2="1463" y2="190" style="stroke:#000000;stroke-width:2;"/>
+<line x1="836" y1="110" x2="836" y2="135" style="stroke:#000000;stroke-width:2;"/>
+<line x1="995.5" y1="55" x2="836" y2="80" style="stroke:#000000;stroke-width:2;"/>
+<text x="1699.5" y="100" text-anchor="middle">PUNC</text>
+<text x="1699.5" y="155" text-anchor="middle">,</text>
+<line x1="1699.5" y1="110" x2="1699.5" y2="135" style="stroke:#000000;stroke-width:2;"/>
+<line x1="995.5" y1="55" x2="1699.5" y2="80" style="stroke:#000000;stroke-width:2;"/>
+<text x="1793" y="100" text-anchor="middle">NP-SBJ</text>
+<text x="1754.5" y="155" text-anchor="middle">D</text>
+<text x="1754.5" y="210" text-anchor="middle">the</text>
+<line x1="1754.5" y1="165" x2="1754.5" y2="190" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1793" y1="110" x2="1754.5" y2="135" style="stroke:#000000;stroke-width:2;"/>
+<text x="1820.5" y="155" text-anchor="middle">NS</text>
+<text x="1820.5" y="210" text-anchor="middle">experts</text>
+<line x1="1820.5" y1="165" x2="1820.5" y2="190" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1793" y1="110" x2="1820.5" y2="135" style="stroke:#000000;stroke-width:2;"/>
+<line x1="995.5" y1="55" x2="1793" y2="80" style="stroke:#000000;stroke-width:2;"/>
+<text x="1897.5" y="100" text-anchor="middle">VBD;~Tr</text>
+<text x="1897.5" y="155" text-anchor="middle">said</text>
+<line x1="1897.5" y1="110" x2="1897.5" y2="135" style="stroke:#000000;stroke-width:2;"/>
+<line x1="995.5" y1="55" x2="1897.5" y2="80" style="stroke:#000000;stroke-width:2;"/>
+<text x="1963.5" y="100" text-anchor="middle">PUNC</text>
+<text x="1963.5" y="155" text-anchor="middle">.</text>
+<line x1="1963.5" y1="110" x2="1963.5" y2="135" style="stroke:#000000;stroke-width:2;"/>
+<line x1="995.5" y1="55" x2="1963.5" y2="80" style="stroke:#000000;stroke-width:2;"/>
 </svg>
 <br>
 <pre>

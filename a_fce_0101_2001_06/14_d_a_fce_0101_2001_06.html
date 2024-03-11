@@ -160,27 +160,27 @@ arc(r_0014_0004__planning,r_0014_0001__Whitestone_r_0014_0002__College,arg0).
 arc(r_0014_0004__planning,r_0014_0006__run,arg1).
 arc(r_0014_0006__run,r_0014_0001__Whitestone_r_0014_0002__College,arg0).
 arc(r_0014_0006__run,r_0014_0008__activities_r_0014_0009__weekend,arg1).
-arc(r_0014_0006__run,r_0014_0013__time,r_0014_0010__at_tmp4).
-arc(r_0014_0006__run,r_0014_0015__year,tmp5).
-arc(r_0014_0013__time,r_0014_0012__same,attrib2).
-arc(r_0014_0015__year,r_0014_0014__next,attrib1).
+arc(r_0014_0006__run,r_0014_0013__time,r_0014_0010__at_tmp).
+arc(r_0014_0006__run,r_0014_0015__year,tmp).
+arc(r_0014_0013__time,r_0014_0012__same,attrib).
+arc(r_0014_0015__year,r_0014_0014__next,attrib).
 
 </pre>
 <br>
 <pre>
 fof(id__14_a_fce_0101_2001_06,axiom,
-    ? [CATENATIVEX1,STATEX2,EVENTX10,EVENTX9,EVENTX8,ENTITYX3,ENTITYX4,ENTITYX6,ATTRIBX7,ATTRIBX5] :
-      ( CATENATIVEX1 = EVENTX9
+    ? [STATEX1,STATEX2,EVENTX10,EVENTX9,EVENTX8,ACTIVITY_WEEKEND2X3,ENTITYX4,ENTITYX6,ATTRIBX7,ATTRIBX5] :
+      ( STATEX1 = EVENTX9
       &amp; isA(EVENTX9,r_0014_0004__planning)
       &amp; arg0(EVENTX9) = r_0014_0001__Whitestone_r_0014_0002__College
       &amp; arg1(EVENTX9) = STATEX2
       &amp; STATEX2 = EVENTX8
       &amp; isA(EVENTX8,r_0014_0006__run)
       &amp; arg0(EVENTX8) = r_0014_0001__Whitestone_r_0014_0002__College
-      &amp; arg1(EVENTX8) = ENTITYX3
+      &amp; arg1(EVENTX8) = ACTIVITY_WEEKEND2X3
       &amp; r_0014_0010__at_tmp4(EVENTX8) = ENTITYX4
       &amp; tmp5(EVENTX8) = ENTITYX6
-      &amp; isA(ENTITYX3,r_0014_0008__activities_r_0014_0009__weekend)
+      &amp; isA(ACTIVITY_WEEKEND2X3,r_0014_0008__activities_r_0014_0009__weekend)
       &amp; isA(ENTITYX4,r_0014_0013__time)
       &amp; attrib2(ENTITYX4) = ATTRIBX5
       &amp; isA(ENTITYX6,r_0014_0015__year)
@@ -188,95 +188,95 @@ fof(id__14_a_fce_0101_2001_06,axiom,
       &amp; isA(ATTRIBX5,r_0014_0012__same)
       &amp; isA(ATTRIBX7,r_0014_0014__next)
       &amp; isA(EVENTX10,r_0014_0003__is)
-      &amp; scope(EVENTX10) = CATENATIVEX1 ) ).
+      &amp; scope(EVENTX10) = STATEX1 ) ).
 
 
 </pre>
 <br>
-<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns:exslt="http://exslt.org/common" width="1600" height="488" viewBox="-16.00 -2.440 2000.00 610.00">
-<text x="800.60" y="51" text-anchor="middle">IP-MAT</text>
-<text x="100.60" y="112" text-anchor="middle">NP-SBJ</text>
-<text x="51.0" y="173" text-anchor="middle">NPR</text>
-<text x="51.0" y="234" text-anchor="middle">Whitestone</text>
-<line x1="51.0" y1="183" x2="51.0" y2="214" style="stroke:#000000;stroke-width:2;"/>
-<line x1="100.60" y1="122" x2="50" y2="153" style="stroke:#000000;stroke-width:2;"/>
-<text x="150.70" y="173" text-anchor="middle">NPR</text>
-<text x="150.70" y="234" text-anchor="middle">College</text>
-<line x1="150.70" y1="183" x2="150.70" y2="214" style="stroke:#000000;stroke-width:2;"/>
-<line x1="100.60" y1="122" x2="150" y2="153" style="stroke:#000000;stroke-width:2;"/>
-<line x1="800.60" y1="61" x2="100" y2="92" style="stroke:#000000;stroke-width:2;"/>
-<text x="251.10" y="112" text-anchor="middle">BEP;~cat_Vg</text>
-<text x="251.10" y="173" text-anchor="middle">is</text>
-<line x1="251.10" y1="122" x2="251.10" y2="153" style="stroke:#000000;stroke-width:2;"/>
-<line x1="800.60" y1="61" x2="250" y2="92" style="stroke:#000000;stroke-width:2;"/>
-<text x="901.0" y="112" text-anchor="middle">IP-PPL-CAT</text>
-<text x="350.80" y="173" text-anchor="middle">VAG;~Tt</text>
-<text x="350.80" y="234" text-anchor="middle">planning</text>
-<line x1="350.80" y1="183" x2="350.80" y2="214" style="stroke:#000000;stroke-width:2;"/>
-<line x1="901.0" y1="122" x2="350" y2="153" style="stroke:#000000;stroke-width:2;"/>
-<text x="951.0" y="173" text-anchor="middle">IP-INF-OB1</text>
-<text x="450.20" y="234" text-anchor="middle">TO</text>
-<text x="450.20" y="295" text-anchor="middle">to</text>
-<line x1="450.20" y1="244" x2="450.20" y2="275" style="stroke:#000000;stroke-width:2;"/>
-<line x1="951.0" y1="183" x2="450" y2="214" style="stroke:#000000;stroke-width:2;"/>
-<text x="550.60" y="234" text-anchor="middle">VB;~Tn</text>
-<text x="550.60" y="295" text-anchor="middle">run</text>
-<line x1="550.60" y1="244" x2="550.60" y2="275" style="stroke:#000000;stroke-width:2;"/>
-<line x1="951.0" y1="183" x2="550" y2="214" style="stroke:#000000;stroke-width:2;"/>
-<text x="750.60" y="234" text-anchor="middle">NP-OB1</text>
-<text x="650.70" y="295" text-anchor="middle">D</text>
-<text x="650.70" y="356" text-anchor="middle">another</text>
-<line x1="650.70" y1="305" x2="650.70" y2="336" style="stroke:#000000;stroke-width:2;"/>
-<line x1="750.60" y1="244" x2="650" y2="275" style="stroke:#000000;stroke-width:2;"/>
-<text x="751.0" y="295" text-anchor="middle">NS</text>
-<text x="751.0" y="356" text-anchor="middle">activities</text>
-<line x1="751.0" y1="305" x2="751.0" y2="336" style="stroke:#000000;stroke-width:2;"/>
-<line x1="750.60" y1="244" x2="750" y2="275" style="stroke:#000000;stroke-width:2;"/>
-<text x="850.70" y="295" text-anchor="middle">N</text>
-<text x="850.70" y="356" text-anchor="middle">weekend</text>
-<line x1="850.70" y1="305" x2="850.70" y2="336" style="stroke:#000000;stroke-width:2;"/>
-<line x1="750.60" y1="244" x2="850" y2="275" style="stroke:#000000;stroke-width:2;"/>
-<line x1="951.0" y1="183" x2="750" y2="214" style="stroke:#000000;stroke-width:2;"/>
-<text x="1100.60" y="234" text-anchor="middle">PP-TMP</text>
-<text x="950.60" y="295" text-anchor="middle">P-ROLE</text>
-<text x="950.60" y="356" text-anchor="middle">at</text>
-<line x1="950.60" y1="305" x2="950.60" y2="336" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1100.60" y1="244" x2="950" y2="275" style="stroke:#000000;stroke-width:2;"/>
-<text x="1150.20" y="295" text-anchor="middle">NP</text>
-<text x="1050.30" y="356" text-anchor="middle">D</text>
-<text x="1050.30" y="417" text-anchor="middle">the</text>
-<line x1="1050.30" y1="366" x2="1050.30" y2="397" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1150.20" y1="305" x2="1050" y2="336" style="stroke:#000000;stroke-width:2;"/>
-<text x="1150.40" y="356" text-anchor="middle">ADJP</text>
-<text x="1150.40" y="417" text-anchor="middle">ADJ</text>
-<text x="1150.40" y="478" text-anchor="middle">same</text>
-<line x1="1150.40" y1="427" x2="1150.40" y2="458" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1150.40" y1="366" x2="1150" y2="397" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1150.20" y1="305" x2="1150" y2="336" style="stroke:#000000;stroke-width:2;"/>
-<text x="1250.40" y="356" text-anchor="middle">N</text>
-<text x="1250.40" y="417" text-anchor="middle">time</text>
-<line x1="1250.40" y1="366" x2="1250.40" y2="397" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1150.20" y1="305" x2="1250" y2="336" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1100.60" y1="244" x2="1150" y2="275" style="stroke:#000000;stroke-width:2;"/>
-<line x1="951.0" y1="183" x2="1100" y2="214" style="stroke:#000000;stroke-width:2;"/>
-<text x="1400.60" y="234" text-anchor="middle">NP-TMP</text>
-<text x="1350.40" y="295" text-anchor="middle">ADJP</text>
-<text x="1350.40" y="356" text-anchor="middle">ADJ</text>
-<text x="1350.40" y="417" text-anchor="middle">next</text>
-<line x1="1350.40" y1="366" x2="1350.40" y2="397" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1350.40" y1="305" x2="1350" y2="336" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1400.60" y1="244" x2="1350" y2="275" style="stroke:#000000;stroke-width:2;"/>
-<text x="1450.40" y="295" text-anchor="middle">N</text>
-<text x="1450.40" y="356" text-anchor="middle">year</text>
-<line x1="1450.40" y1="305" x2="1450.40" y2="336" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1400.60" y1="244" x2="1450" y2="275" style="stroke:#000000;stroke-width:2;"/>
-<line x1="951.0" y1="183" x2="1400" y2="214" style="stroke:#000000;stroke-width:2;"/>
-<line x1="901.0" y1="122" x2="950" y2="153" style="stroke:#000000;stroke-width:2;"/>
-<line x1="800.60" y1="61" x2="900" y2="92" style="stroke:#000000;stroke-width:2;"/>
-<text x="1550.40" y="112" text-anchor="middle">PUNC</text>
-<text x="1550.40" y="173" text-anchor="middle">.</text>
-<line x1="1550.40" y1="122" x2="1550.40" y2="153" style="stroke:#000000;stroke-width:2;"/>
-<line x1="800.60" y1="61" x2="1550" y2="92" style="stroke:#000000;stroke-width:2;"/>
+<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns:exslt="http://exslt.org/common" width="1177" height="440" viewBox="-11.77 -2.200 1412.4 528.0">
+<text x="588.5" y="45" text-anchor="middle">IP-MAT</text>
+<text x="93.5" y="100" text-anchor="middle">NP-SBJ</text>
+<text x="55" y="155" text-anchor="middle">NPR</text>
+<text x="55" y="210" text-anchor="middle">Whitestone</text>
+<line x1="55" y1="165" x2="55" y2="190" style="stroke:#000000;stroke-width:2;"/>
+<line x1="93.5" y1="110" x2="55" y2="135" style="stroke:#000000;stroke-width:2;"/>
+<text x="148.5" y="155" text-anchor="middle">NPR</text>
+<text x="148.5" y="210" text-anchor="middle">College</text>
+<line x1="148.5" y1="165" x2="148.5" y2="190" style="stroke:#000000;stroke-width:2;"/>
+<line x1="93.5" y1="110" x2="148.5" y2="135" style="stroke:#000000;stroke-width:2;"/>
+<line x1="588.5" y1="55" x2="93.5" y2="80" style="stroke:#000000;stroke-width:2;"/>
+<text x="247.5" y="100" text-anchor="middle">BEP;~cat_Vg</text>
+<text x="247.5" y="155" text-anchor="middle">is</text>
+<line x1="247.5" y1="110" x2="247.5" y2="135" style="stroke:#000000;stroke-width:2;"/>
+<line x1="588.5" y1="55" x2="247.5" y2="80" style="stroke:#000000;stroke-width:2;"/>
+<text x="715" y="100" text-anchor="middle">IP-PPL-CAT</text>
+<text x="352" y="155" text-anchor="middle">VAG;~Tt</text>
+<text x="352" y="210" text-anchor="middle">planning</text>
+<line x1="352" y1="165" x2="352" y2="190" style="stroke:#000000;stroke-width:2;"/>
+<line x1="715" y1="110" x2="352" y2="135" style="stroke:#000000;stroke-width:2;"/>
+<text x="759" y="155" text-anchor="middle">IP-INF-OB1</text>
+<text x="423.5" y="210" text-anchor="middle">TO</text>
+<text x="423.5" y="265" text-anchor="middle">to</text>
+<line x1="423.5" y1="220" x2="423.5" y2="245" style="stroke:#000000;stroke-width:2;"/>
+<line x1="759" y1="165" x2="423.5" y2="190" style="stroke:#000000;stroke-width:2;"/>
+<text x="484" y="210" text-anchor="middle">VB;~Tn</text>
+<text x="484" y="265" text-anchor="middle">run</text>
+<line x1="484" y1="220" x2="484" y2="245" style="stroke:#000000;stroke-width:2;"/>
+<line x1="759" y1="165" x2="484" y2="190" style="stroke:#000000;stroke-width:2;"/>
+<text x="649" y="210" text-anchor="middle">NP-OB1</text>
+<text x="555.5" y="265" text-anchor="middle">D</text>
+<text x="555.5" y="320" text-anchor="middle">another</text>
+<line x1="555.5" y1="275" x2="555.5" y2="300" style="stroke:#000000;stroke-width:2;"/>
+<line x1="649" y1="220" x2="555.5" y2="245" style="stroke:#000000;stroke-width:2;"/>
+<text x="649" y="265" text-anchor="middle">NS</text>
+<text x="649" y="320" text-anchor="middle">activities</text>
+<line x1="649" y1="275" x2="649" y2="300" style="stroke:#000000;stroke-width:2;"/>
+<line x1="649" y1="220" x2="649" y2="245" style="stroke:#000000;stroke-width:2;"/>
+<text x="742.5" y="265" text-anchor="middle">N</text>
+<text x="742.5" y="320" text-anchor="middle">weekend</text>
+<line x1="742.5" y1="275" x2="742.5" y2="300" style="stroke:#000000;stroke-width:2;"/>
+<line x1="649" y1="220" x2="742.5" y2="245" style="stroke:#000000;stroke-width:2;"/>
+<line x1="759" y1="165" x2="649" y2="190" style="stroke:#000000;stroke-width:2;"/>
+<text x="896.5" y="210" text-anchor="middle">PP-TMP</text>
+<text x="814" y="265" text-anchor="middle">P-ROLE</text>
+<text x="814" y="320" text-anchor="middle">at</text>
+<line x1="814" y1="275" x2="814" y2="300" style="stroke:#000000;stroke-width:2;"/>
+<line x1="896.5" y1="220" x2="814" y2="245" style="stroke:#000000;stroke-width:2;"/>
+<text x="929.5" y="265" text-anchor="middle">NP</text>
+<text x="874.5" y="320" text-anchor="middle">D</text>
+<text x="874.5" y="375" text-anchor="middle">the</text>
+<line x1="874.5" y1="330" x2="874.5" y2="355" style="stroke:#000000;stroke-width:2;"/>
+<line x1="929.5" y1="275" x2="874.5" y2="300" style="stroke:#000000;stroke-width:2;"/>
+<text x="929.5" y="320" text-anchor="middle">ADJP</text>
+<text x="929.5" y="375" text-anchor="middle">ADJ</text>
+<text x="929.5" y="430" text-anchor="middle">same</text>
+<line x1="929.5" y1="385" x2="929.5" y2="410" style="stroke:#000000;stroke-width:2;"/>
+<line x1="929.5" y1="330" x2="929.5" y2="355" style="stroke:#000000;stroke-width:2;"/>
+<line x1="929.5" y1="275" x2="929.5" y2="300" style="stroke:#000000;stroke-width:2;"/>
+<text x="984.5" y="320" text-anchor="middle">N</text>
+<text x="984.5" y="375" text-anchor="middle">time</text>
+<line x1="984.5" y1="330" x2="984.5" y2="355" style="stroke:#000000;stroke-width:2;"/>
+<line x1="929.5" y1="275" x2="984.5" y2="300" style="stroke:#000000;stroke-width:2;"/>
+<line x1="896.5" y1="220" x2="929.5" y2="245" style="stroke:#000000;stroke-width:2;"/>
+<line x1="759" y1="165" x2="896.5" y2="190" style="stroke:#000000;stroke-width:2;"/>
+<text x="1067" y="210" text-anchor="middle">NP-TMP</text>
+<text x="1039.5" y="265" text-anchor="middle">ADJP</text>
+<text x="1039.5" y="320" text-anchor="middle">ADJ</text>
+<text x="1039.5" y="375" text-anchor="middle">next</text>
+<line x1="1039.5" y1="330" x2="1039.5" y2="355" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1039.5" y1="275" x2="1039.5" y2="300" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1067" y1="220" x2="1039.5" y2="245" style="stroke:#000000;stroke-width:2;"/>
+<text x="1094.5" y="265" text-anchor="middle">N</text>
+<text x="1094.5" y="320" text-anchor="middle">year</text>
+<line x1="1094.5" y1="275" x2="1094.5" y2="300" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1067" y1="220" x2="1094.5" y2="245" style="stroke:#000000;stroke-width:2;"/>
+<line x1="759" y1="165" x2="1067" y2="190" style="stroke:#000000;stroke-width:2;"/>
+<line x1="715" y1="110" x2="759" y2="135" style="stroke:#000000;stroke-width:2;"/>
+<line x1="588.5" y1="55" x2="715" y2="80" style="stroke:#000000;stroke-width:2;"/>
+<text x="1149.5" y="100" text-anchor="middle">PUNC</text>
+<text x="1149.5" y="155" text-anchor="middle">.</text>
+<line x1="1149.5" y1="110" x2="1149.5" y2="135" style="stroke:#000000;stroke-width:2;"/>
+<line x1="588.5" y1="55" x2="1149.5" y2="80" style="stroke:#000000;stroke-width:2;"/>
 </svg>
 <br>
 <pre>
@@ -286,9 +286,9 @@ fof(id__14_a_fce_0101_2001_06,axiom,
           (IP-PPL-CAT (VAG;~Tt planning;{plan})
                       (IP-INF-OB1 (TO to;{to})
                                   (VB;~Tn run;{run})
-                                  (NP-OB1 (D another;{another})
-                                          (NS activities;{activity})
-                                          (N weekend;{weekend}))
+                                  (NP-OB1;{ACTIVITY_WEEKEND2} (D another;{another})
+                                                              (NS activities;{activity})
+                                                              (N weekend;{weekend}))
                                   (PP-TMP (P-ROLE at;{at})
                                           (NP (D the;{the})
                                               (ADJP (ADJ same;{same}))

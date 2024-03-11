@@ -219,7 +219,7 @@ arc(r_0032_0002__understand,r_0032_0001__I,arg0).
 arc(r_0032_0002__understand,r_0032_0011__and,arg1).
 arc(r_0032_0005__are,r_0032_0004__badgers,arg0).
 arc(r_0032_0005__are,r_0032_0008__predator,prd2).
-arc(r_0032_0008__predator,r_0032_0007__natural,attrib2).
+arc(r_0032_0008__predator,r_0032_0007__natural,attrib).
 arc(r_0032_0008__predator,r_0032_0010__hedgehogs,r_0032_0009__of).
 arc(r_0032_0011__and,r_0032_0005__are,conj1).
 arc(r_0032_0011__and,r_0032_0013__consequently,conj2).
@@ -227,173 +227,171 @@ arc(r_0032_0013__consequently,r_0032_0015__avoid,scope).
 arc(r_0032_0015__avoid,r_0032_0010__hedgehogs,arg0).
 arc(r_0032_0015__avoid,r_0032_0016__sites,arg1).
 arc(r_0032_0019__are,r_0032_0004__badgers,arg0).
-arc(r_0032_0019__are,r_0032_0016__sites,loc1).
+arc(r_0032_0019__are,r_0032_0016__sites,loc).
 arc(r_0032_0019__are,r_0032_0020__present,prd2).
 
 </pre>
 <br>
 <pre>
 fof(id__32_a_hedgehog,axiom,
-    ? [STATEX1,HEDGEHOGSX10,BADGERSX12,EVENTX17,CONJX16,OPERATORX9,EVENTX15,EVENTX14,EVENTX8,ENTITYX11,BADGERSX4,ENTITYX5,HEDGEHOGSX7,ATTRIBX13,ATTRIBX6] :
-      ( STATEX1 = CONJX16
-      &amp; isA(CONJX16,r_0032_0011__and)
-      &amp; conj1(CONJX16) = EVENTX8
-      &amp; isA(EVENTX8,r_0032_0005__are)
-      &amp; arg0(EVENTX8) = BADGERSX4
-      &amp; arg0(EVENTX8) = BADGERSX4
-      &amp; prd2(EVENTX8) = ENTITYX5
-      &amp; conj2(CONJX16) = OPERATORX9
-      &amp; isA(OPERATORX9,r_0032_0013__consequently)
-      &amp; scope(OPERATORX9) = EVENTX15
-      &amp; isA(EVENTX15,r_0032_0015__avoid)
-      &amp; arg0(EVENTX15) = HEDGEHOGSX10
-      &amp; arg0(EVENTX15) = HEDGEHOGSX10
-      &amp; arg1(EVENTX15) = ENTITYX11
-      &amp; isA(BADGERSX4,r_0032_0004__badgers)
-      &amp; isA(ENTITYX5,r_0032_0008__predator)
-      &amp; attrib2(ENTITYX5) = ATTRIBX6
-      &amp; r_0032_0009__of(ENTITYX5) = HEDGEHOGSX7
-      &amp; isA(HEDGEHOGSX7,r_0032_0010__hedgehogs)
-      &amp; HEDGEHOGSX10 = HEDGEHOGSX7
-      &amp; isA(EVENTX14,r_0032_0019__are)
-      &amp; loc1(EVENTX14) = ENTITYX11
-      &amp; arg0(EVENTX14) = BADGERSX12
-      &amp; prd2(EVENTX14) = ATTRIBX13
-      &amp; isA(ENTITYX11,r_0032_0016__sites)
-      &amp; BADGERSX12 = BADGERSX4
-      &amp; isA(ATTRIBX6,r_0032_0007__natural)
-      &amp; isA(ATTRIBX13,r_0032_0020__present)
-      &amp; isA(EVENTX17,r_0032_0002__understand)
-      &amp; arg0(EVENTX17) = r_0032_0001__I
-      &amp; arg1(EVENTX17) = STATEX1 ) ).
+    ? [STATEX1,HEDGEHOGSX8,BADGERSX10,EVENTX15,CONJX14,OPERATORX7,EVENTX13,EVENTX12,EVENTX6,ENTITYX9,BADGERSX2,ENTITYX3,HEDGEHOGSX5,ATTRIBX11,ATTRIBX4] :
+      ( STATEX1 = CONJX14
+      &amp; isA(CONJX14,r_0032_0011__and)
+      &amp; conj1(CONJX14) = EVENTX6
+      &amp; isA(EVENTX6,r_0032_0005__are)
+      &amp; arg0(EVENTX6) = BADGERSX2
+      &amp; prd2(EVENTX6) = ENTITYX3
+      &amp; conj2(CONJX14) = OPERATORX7
+      &amp; isA(OPERATORX7,r_0032_0013__consequently)
+      &amp; scope(OPERATORX7) = EVENTX13
+      &amp; isA(EVENTX13,r_0032_0015__avoid)
+      &amp; arg0(EVENTX13) = HEDGEHOGSX8
+      &amp; arg1(EVENTX13) = ENTITYX9
+      &amp; isA(BADGERSX2,r_0032_0004__badgers)
+      &amp; isA(ENTITYX3,r_0032_0008__predator)
+      &amp; attrib2(ENTITYX3) = ATTRIBX4
+      &amp; r_0032_0009__of(ENTITYX3) = HEDGEHOGSX5
+      &amp; isA(HEDGEHOGSX5,r_0032_0010__hedgehogs)
+      &amp; HEDGEHOGSX8 = HEDGEHOGSX5
+      &amp; isA(EVENTX12,r_0032_0019__are)
+      &amp; loc1(EVENTX12) = ENTITYX9
+      &amp; arg0(EVENTX12) = BADGERSX10
+      &amp; prd2(EVENTX12) = ATTRIBX11
+      &amp; isA(ENTITYX9,r_0032_0016__sites)
+      &amp; BADGERSX10 = BADGERSX2
+      &amp; isA(ATTRIBX4,r_0032_0007__natural)
+      &amp; isA(ATTRIBX11,r_0032_0020__present)
+      &amp; isA(EVENTX15,r_0032_0002__understand)
+      &amp; arg0(EVENTX15) = r_0032_0001__I
+      &amp; arg1(EVENTX15) = STATEX1 ) ).
 
 
 </pre>
 <br>
-<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns:exslt="http://exslt.org/common" width="2100" height="671" viewBox="-21.00 -3.355 2625.00 838.75">
-<text x="1050.60" y="51" text-anchor="middle">IP-MAT</text>
-<text x="50.60" y="112" text-anchor="middle">NP-SBJ</text>
-<text x="50.30" y="173" text-anchor="middle">PRO</text>
-<text x="50.30" y="234" text-anchor="middle">I</text>
-<line x1="50.30" y1="183" x2="50.30" y2="214" style="stroke:#000000;stroke-width:2;"/>
-<line x1="50.60" y1="122" x2="50" y2="153" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1050.60" y1="61" x2="50" y2="92" style="stroke:#000000;stroke-width:2;"/>
-<text x="151.0" y="112" text-anchor="middle">VBP</text>
-<text x="151.0" y="173" text-anchor="middle">understand</text>
-<line x1="151.0" y1="122" x2="151.0" y2="153" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1050.60" y1="61" x2="150" y2="92" style="stroke:#000000;stroke-width:2;"/>
-<text x="1101.0" y="112" text-anchor="middle">CP-THT-OB1</text>
-<text x="1100.60" y="173" text-anchor="middle">IP-SUB</text>
-<text x="1100.40" y="234" text-anchor="middle">ILYR</text>
-<text x="600.40" y="295" text-anchor="middle">ILYR</text>
-<text x="250.40" y="356" text-anchor="middle">C</text>
-<text x="250.40" y="417" text-anchor="middle">that</text>
-<line x1="250.40" y1="366" x2="250.40" y2="397" style="stroke:#000000;stroke-width:2;"/>
-<line x1="600.40" y1="305" x2="250" y2="336" style="stroke:#000000;stroke-width:2;"/>
-<text x="350.60" y="356" text-anchor="middle">NP-SBJ</text>
-<text x="350.70" y="417" text-anchor="middle">NS</text>
-<text x="350.70" y="478" text-anchor="middle">badgers</text>
-<line x1="350.70" y1="427" x2="350.70" y2="458" style="stroke:#000000;stroke-width:2;"/>
-<line x1="350.60" y1="366" x2="350" y2="397" style="stroke:#000000;stroke-width:2;"/>
-<line x1="600.40" y1="305" x2="350" y2="336" style="stroke:#000000;stroke-width:2;"/>
-<text x="450.70" y="356" text-anchor="middle">BEP;~Ln</text>
-<text x="450.70" y="417" text-anchor="middle">are</text>
-<line x1="450.70" y1="366" x2="450.70" y2="397" style="stroke:#000000;stroke-width:2;"/>
-<line x1="600.40" y1="305" x2="450" y2="336" style="stroke:#000000;stroke-width:2;"/>
-<text x="750.70" y="356" text-anchor="middle">NP-PRD2</text>
-<text x="550.10" y="417" text-anchor="middle">D</text>
-<text x="550.10" y="478" text-anchor="middle">a</text>
-<line x1="550.10" y1="427" x2="550.10" y2="458" style="stroke:#000000;stroke-width:2;"/>
-<line x1="750.70" y1="366" x2="550" y2="397" style="stroke:#000000;stroke-width:2;"/>
-<text x="650.40" y="417" text-anchor="middle">ADJP</text>
-<text x="650.70" y="478" text-anchor="middle">ADJ</text>
-<text x="650.70" y="539" text-anchor="middle">natural</text>
-<line x1="650.70" y1="488" x2="650.70" y2="519" style="stroke:#000000;stroke-width:2;"/>
-<line x1="650.40" y1="427" x2="650" y2="458" style="stroke:#000000;stroke-width:2;"/>
-<line x1="750.70" y1="366" x2="650" y2="397" style="stroke:#000000;stroke-width:2;"/>
-<text x="750.80" y="417" text-anchor="middle">N</text>
-<text x="750.80" y="478" text-anchor="middle">predator</text>
-<line x1="750.80" y1="427" x2="750.80" y2="458" style="stroke:#000000;stroke-width:2;"/>
-<line x1="750.70" y1="366" x2="750" y2="397" style="stroke:#000000;stroke-width:2;"/>
-<text x="900.20" y="417" text-anchor="middle">PP</text>
-<text x="850.60" y="478" text-anchor="middle">P-ROLE</text>
-<text x="850.60" y="539" text-anchor="middle">of</text>
-<line x1="850.60" y1="488" x2="850.60" y2="519" style="stroke:#000000;stroke-width:2;"/>
-<line x1="900.20" y1="427" x2="850" y2="458" style="stroke:#000000;stroke-width:2;"/>
-<text x="950.20" y="478" text-anchor="middle">NP</text>
-<text x="950.90" y="539" text-anchor="middle">NS</text>
-<text x="950.90" y="600" text-anchor="middle">hedgehogs</text>
-<line x1="950.90" y1="549" x2="950.90" y2="580" style="stroke:#000000;stroke-width:2;"/>
-<line x1="950.20" y1="488" x2="950" y2="519" style="stroke:#000000;stroke-width:2;"/>
-<line x1="900.20" y1="427" x2="950" y2="458" style="stroke:#000000;stroke-width:2;"/>
-<line x1="750.70" y1="366" x2="900" y2="397" style="stroke:#000000;stroke-width:2;"/>
-<line x1="600.40" y1="305" x2="750" y2="336" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1100.40" y1="244" x2="600" y2="275" style="stroke:#000000;stroke-width:2;"/>
-<text x="1500.5" y="295" text-anchor="middle">CONJP</text>
-<text x="1050.40" y="356" text-anchor="middle">CONJ</text>
-<text x="1050.40" y="417" text-anchor="middle">and</text>
-<line x1="1050.40" y1="366" x2="1050.40" y2="397" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1500.5" y1="305" x2="1050" y2="336" style="stroke:#000000;stroke-width:2;"/>
-<text x="1550.40" y="356" text-anchor="middle">ILYR</text>
-<text x="1150.40" y="417" text-anchor="middle">C</text>
-<text x="1150.40" y="478" text-anchor="middle">that</text>
-<line x1="1150.40" y1="427" x2="1150.40" y2="458" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1550.40" y1="366" x2="1150" y2="397" style="stroke:#000000;stroke-width:2;"/>
-<text x="1250.80" y="417" text-anchor="middle">ADVP-CNT</text>
-<text x="1251.20" y="478" text-anchor="middle">ADV</text>
-<text x="1251.20" y="539" text-anchor="middle">consequently</text>
-<line x1="1251.20" y1="488" x2="1251.20" y2="519" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1250.80" y1="427" x2="1250" y2="458" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1550.40" y1="366" x2="1250" y2="397" style="stroke:#000000;stroke-width:2;"/>
-<text x="1350.60" y="417" text-anchor="middle">NP-SBJ</text>
-<text x="1350.40" y="478" text-anchor="middle">PRO</text>
-<text x="1350.40" y="539" text-anchor="middle">they</text>
-<line x1="1350.40" y1="488" x2="1350.40" y2="519" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1350.60" y1="427" x2="1350" y2="458" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1550.40" y1="366" x2="1350" y2="397" style="stroke:#000000;stroke-width:2;"/>
-<text x="1450.5" y="417" text-anchor="middle">VBP</text>
-<text x="1450.5" y="478" text-anchor="middle">avoid</text>
-<line x1="1450.5" y1="427" x2="1450.5" y2="458" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1550.40" y1="366" x2="1450" y2="397" style="stroke:#000000;stroke-width:2;"/>
-<text x="1750.60" y="417" text-anchor="middle">NP-OB1</text>
-<text x="1550.5" y="478" text-anchor="middle">NS</text>
-<text x="1550.5" y="539" text-anchor="middle">sites</text>
-<line x1="1550.5" y1="488" x2="1550.5" y2="519" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1750.60" y1="427" x2="1550" y2="458" style="stroke:#000000;stroke-width:2;"/>
-<text x="1800.60" y="478" text-anchor="middle">IP-REL</text>
-<text x="1650.80" y="539" text-anchor="middle">ADVP-LOC</text>
-<text x="1650.5" y="600" text-anchor="middle">RADV</text>
-<text x="1650.5" y="661" text-anchor="middle">where</text>
-<line x1="1650.5" y1="610" x2="1650.5" y2="641" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1650.80" y1="549" x2="1650" y2="580" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1800.60" y1="488" x2="1650" y2="519" style="stroke:#000000;stroke-width:2;"/>
-<text x="1750.60" y="539" text-anchor="middle">NP-SBJ</text>
-<text x="1750.70" y="600" text-anchor="middle">NS</text>
-<text x="1750.70" y="661" text-anchor="middle">badgers</text>
-<line x1="1750.70" y1="610" x2="1750.70" y2="641" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1750.60" y1="549" x2="1750" y2="580" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1800.60" y1="488" x2="1750" y2="519" style="stroke:#000000;stroke-width:2;"/>
-<text x="1850.70" y="539" text-anchor="middle">BEP;~La</text>
-<text x="1850.70" y="600" text-anchor="middle">are</text>
-<line x1="1850.70" y1="549" x2="1850.70" y2="580" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1800.60" y1="488" x2="1850" y2="519" style="stroke:#000000;stroke-width:2;"/>
-<text x="1950.90" y="539" text-anchor="middle">ADJP-PRD2</text>
-<text x="1950.70" y="600" text-anchor="middle">ADJ</text>
-<text x="1950.70" y="661" text-anchor="middle">present</text>
-<line x1="1950.70" y1="610" x2="1950.70" y2="641" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1950.90" y1="549" x2="1950" y2="580" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1800.60" y1="488" x2="1950" y2="519" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1750.60" y1="427" x2="1800" y2="458" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1550.40" y1="366" x2="1750" y2="397" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1500.5" y1="305" x2="1550" y2="336" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1100.40" y1="244" x2="1500" y2="275" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1100.60" y1="183" x2="1100" y2="214" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1101.0" y1="122" x2="1100" y2="153" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1050.60" y1="61" x2="1100" y2="92" style="stroke:#000000;stroke-width:2;"/>
-<text x="2050.40" y="112" text-anchor="middle">PUNC</text>
-<text x="2050.40" y="173" text-anchor="middle">.</text>
-<line x1="2050.40" y1="122" x2="2050.40" y2="153" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1050.60" y1="61" x2="2050" y2="92" style="stroke:#000000;stroke-width:2;"/>
+<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns:exslt="http://exslt.org/common" width="1584" height="605" viewBox="-15.84 -3.025 1900.8 726.0">
+<text x="792" y="45" text-anchor="middle">IP-MAT</text>
+<text x="33" y="100" text-anchor="middle">NP-SBJ</text>
+<text x="33" y="155" text-anchor="middle">PRO</text>
+<text x="33" y="210" text-anchor="middle">I</text>
+<line x1="33" y1="165" x2="33" y2="190" style="stroke:#000000;stroke-width:2;"/>
+<line x1="33" y1="110" x2="33" y2="135" style="stroke:#000000;stroke-width:2;"/>
+<line x1="792" y1="55" x2="33" y2="80" style="stroke:#000000;stroke-width:2;"/>
+<text x="121" y="100" text-anchor="middle">VBP</text>
+<text x="121" y="155" text-anchor="middle">understand</text>
+<line x1="121" y1="110" x2="121" y2="135" style="stroke:#000000;stroke-width:2;"/>
+<line x1="792" y1="55" x2="121" y2="80" style="stroke:#000000;stroke-width:2;"/>
+<text x="852.5" y="100" text-anchor="middle">CP-THT-OB1</text>
+<text x="852.5" y="155" text-anchor="middle">IP-SUB</text>
+<text x="852.5" y="210" text-anchor="middle">ILYR</text>
+<text x="473" y="265" text-anchor="middle">ILYR</text>
+<text x="203.5" y="320" text-anchor="middle">C</text>
+<text x="203.5" y="375" text-anchor="middle">that</text>
+<line x1="203.5" y1="330" x2="203.5" y2="355" style="stroke:#000000;stroke-width:2;"/>
+<line x1="473" y1="275" x2="203.5" y2="300" style="stroke:#000000;stroke-width:2;"/>
+<text x="269.5" y="320" text-anchor="middle">NP-SBJ</text>
+<text x="269.5" y="375" text-anchor="middle">NS</text>
+<text x="269.5" y="430" text-anchor="middle">badgers</text>
+<line x1="269.5" y1="385" x2="269.5" y2="410" style="stroke:#000000;stroke-width:2;"/>
+<line x1="269.5" y1="330" x2="269.5" y2="355" style="stroke:#000000;stroke-width:2;"/>
+<line x1="473" y1="275" x2="269.5" y2="300" style="stroke:#000000;stroke-width:2;"/>
+<text x="346.5" y="320" text-anchor="middle">BEP;~Ln</text>
+<text x="346.5" y="375" text-anchor="middle">are</text>
+<line x1="346.5" y1="330" x2="346.5" y2="355" style="stroke:#000000;stroke-width:2;"/>
+<line x1="473" y1="275" x2="346.5" y2="300" style="stroke:#000000;stroke-width:2;"/>
+<text x="577.5" y="320" text-anchor="middle">NP-PRD2</text>
+<text x="412.5" y="375" text-anchor="middle">D</text>
+<text x="412.5" y="430" text-anchor="middle">a</text>
+<line x1="412.5" y1="385" x2="412.5" y2="410" style="stroke:#000000;stroke-width:2;"/>
+<line x1="577.5" y1="330" x2="412.5" y2="355" style="stroke:#000000;stroke-width:2;"/>
+<text x="478.5" y="375" text-anchor="middle">ADJP</text>
+<text x="478.5" y="430" text-anchor="middle">ADJ</text>
+<text x="478.5" y="485" text-anchor="middle">natural</text>
+<line x1="478.5" y1="440" x2="478.5" y2="465" style="stroke:#000000;stroke-width:2;"/>
+<line x1="478.5" y1="385" x2="478.5" y2="410" style="stroke:#000000;stroke-width:2;"/>
+<line x1="577.5" y1="330" x2="478.5" y2="355" style="stroke:#000000;stroke-width:2;"/>
+<text x="561" y="375" text-anchor="middle">N</text>
+<text x="561" y="430" text-anchor="middle">predator</text>
+<line x1="561" y1="385" x2="561" y2="410" style="stroke:#000000;stroke-width:2;"/>
+<line x1="577.5" y1="330" x2="561" y2="355" style="stroke:#000000;stroke-width:2;"/>
+<text x="687.5" y="375" text-anchor="middle">PP</text>
+<text x="638" y="430" text-anchor="middle">P-ROLE</text>
+<text x="638" y="485" text-anchor="middle">of</text>
+<line x1="638" y1="440" x2="638" y2="465" style="stroke:#000000;stroke-width:2;"/>
+<line x1="687.5" y1="385" x2="638" y2="410" style="stroke:#000000;stroke-width:2;"/>
+<text x="720.5" y="430" text-anchor="middle">NP</text>
+<text x="720.5" y="485" text-anchor="middle">NS</text>
+<text x="720.5" y="540" text-anchor="middle">hedgehogs</text>
+<line x1="720.5" y1="495" x2="720.5" y2="520" style="stroke:#000000;stroke-width:2;"/>
+<line x1="720.5" y1="440" x2="720.5" y2="465" style="stroke:#000000;stroke-width:2;"/>
+<line x1="687.5" y1="385" x2="720.5" y2="410" style="stroke:#000000;stroke-width:2;"/>
+<line x1="577.5" y1="330" x2="687.5" y2="355" style="stroke:#000000;stroke-width:2;"/>
+<line x1="473" y1="275" x2="577.5" y2="300" style="stroke:#000000;stroke-width:2;"/>
+<line x1="852.5" y1="220" x2="473" y2="245" style="stroke:#000000;stroke-width:2;"/>
+<text x="1149.5" y="265" text-anchor="middle">CONJP</text>
+<text x="797.5" y="320" text-anchor="middle">CONJ</text>
+<text x="797.5" y="375" text-anchor="middle">and</text>
+<line x1="797.5" y1="330" x2="797.5" y2="355" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1149.5" y1="275" x2="797.5" y2="300" style="stroke:#000000;stroke-width:2;"/>
+<text x="1177" y="320" text-anchor="middle">ILYR</text>
+<text x="852.5" y="375" text-anchor="middle">C</text>
+<text x="852.5" y="430" text-anchor="middle">that</text>
+<line x1="852.5" y1="385" x2="852.5" y2="410" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1177" y1="330" x2="852.5" y2="355" style="stroke:#000000;stroke-width:2;"/>
+<text x="946" y="375" text-anchor="middle">ADVP-CNT</text>
+<text x="946" y="430" text-anchor="middle">ADV</text>
+<text x="946" y="485" text-anchor="middle">consequently</text>
+<line x1="946" y1="440" x2="946" y2="465" style="stroke:#000000;stroke-width:2;"/>
+<line x1="946" y1="385" x2="946" y2="410" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1177" y1="330" x2="946" y2="355" style="stroke:#000000;stroke-width:2;"/>
+<text x="1045" y="375" text-anchor="middle">NP-SBJ</text>
+<text x="1045" y="430" text-anchor="middle">PRO</text>
+<text x="1045" y="485" text-anchor="middle">they</text>
+<line x1="1045" y1="440" x2="1045" y2="465" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1045" y1="385" x2="1045" y2="410" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1177" y1="330" x2="1045" y2="355" style="stroke:#000000;stroke-width:2;"/>
+<text x="1105.5" y="375" text-anchor="middle">VBP</text>
+<text x="1105.5" y="430" text-anchor="middle">avoid</text>
+<line x1="1105.5" y1="385" x2="1105.5" y2="410" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1177" y1="330" x2="1105.5" y2="355" style="stroke:#000000;stroke-width:2;"/>
+<text x="1331" y="375" text-anchor="middle">NP-OB1</text>
+<text x="1160.5" y="430" text-anchor="middle">NS</text>
+<text x="1160.5" y="485" text-anchor="middle">sites</text>
+<line x1="1160.5" y1="440" x2="1160.5" y2="465" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1331" y1="385" x2="1160.5" y2="410" style="stroke:#000000;stroke-width:2;"/>
+<text x="1358.5" y="430" text-anchor="middle">IP-REL</text>
+<text x="1232" y="485" text-anchor="middle">ADVP-LOC</text>
+<text x="1232" y="540" text-anchor="middle">RADV</text>
+<text x="1232" y="595" text-anchor="middle">where</text>
+<line x1="1232" y1="550" x2="1232" y2="575" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1232" y1="495" x2="1232" y2="520" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1358.5" y1="440" x2="1232" y2="465" style="stroke:#000000;stroke-width:2;"/>
+<text x="1314.5" y="485" text-anchor="middle">NP-SBJ</text>
+<text x="1314.5" y="540" text-anchor="middle">NS</text>
+<text x="1314.5" y="595" text-anchor="middle">badgers</text>
+<line x1="1314.5" y1="550" x2="1314.5" y2="575" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1314.5" y1="495" x2="1314.5" y2="520" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1358.5" y1="440" x2="1314.5" y2="465" style="stroke:#000000;stroke-width:2;"/>
+<text x="1391.5" y="485" text-anchor="middle">BEP;~La</text>
+<text x="1391.5" y="540" text-anchor="middle">are</text>
+<line x1="1391.5" y1="495" x2="1391.5" y2="520" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1358.5" y1="440" x2="1391.5" y2="465" style="stroke:#000000;stroke-width:2;"/>
+<text x="1479.5" y="485" text-anchor="middle">ADJP-PRD2</text>
+<text x="1479.5" y="540" text-anchor="middle">ADJ</text>
+<text x="1479.5" y="595" text-anchor="middle">present</text>
+<line x1="1479.5" y1="550" x2="1479.5" y2="575" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1479.5" y1="495" x2="1479.5" y2="520" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1358.5" y1="440" x2="1479.5" y2="465" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1331" y1="385" x2="1358.5" y2="410" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1177" y1="330" x2="1331" y2="355" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1149.5" y1="275" x2="1177" y2="300" style="stroke:#000000;stroke-width:2;"/>
+<line x1="852.5" y1="220" x2="1149.5" y2="245" style="stroke:#000000;stroke-width:2;"/>
+<line x1="852.5" y1="165" x2="852.5" y2="190" style="stroke:#000000;stroke-width:2;"/>
+<line x1="852.5" y1="110" x2="852.5" y2="135" style="stroke:#000000;stroke-width:2;"/>
+<line x1="792" y1="55" x2="852.5" y2="80" style="stroke:#000000;stroke-width:2;"/>
+<text x="1556.5" y="100" text-anchor="middle">PUNC</text>
+<text x="1556.5" y="155" text-anchor="middle">.</text>
+<line x1="1556.5" y1="110" x2="1556.5" y2="135" style="stroke:#000000;stroke-width:2;"/>
+<line x1="792" y1="55" x2="1556.5" y2="80" style="stroke:#000000;stroke-width:2;"/>
 </svg>
 <br>
 <pre>

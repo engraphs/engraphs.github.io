@@ -163,20 +163,20 @@ The conference was jointly sponsored by the New York Institute of Technology Sch
 <pre>
 arc(r_0005_0003__was,r_0005_0005__sponsored,scope).
 arc(r_0005_0005__sponsored,r_0005_0002__conference,arg1).
-arc(r_0005_0005__sponsored,r_0005_0004__jointly,mnr1).
+arc(r_0005_0005__sponsored,r_0005_0004__jointly,mnr).
 arc(r_0005_0005__sponsored,r_0005_0016__and,arg0_r_0005_0006__by_lgs).
 arc(r_0005_0016__and,r_0005_0008__New_r_0005_0009__York_r_0005_0010__Institute_r_0005_0011__of_r_0005_0012__Technology_r_0005_0013__School_r_0005_0014__of_r_0005_0015__Management,conj1).
 arc(r_0005_0016__and,r_0005_0018__Armed_r_0005_0019__Forces_r_0005_0020__Communications_r_0005_0021__and_r_0005_0022__Electronics_r_0005_0023__Association,conj2).
-arc(r_0005_0018__Armed_r_0005_0019__Forces_r_0005_0020__Communications_r_0005_0021__and_r_0005_0022__Electronics_r_0005_0023__Association,r_0005_0030__trade_r_0005_0031__group,prn9).
-arc(r_0005_0030__trade_r_0005_0031__group,r_0005_0026__joint,attrib2).
-arc(r_0005_0030__trade_r_0005_0031__group,r_0005_0027__industry_r_0005_0029__government,nlyr3).
+arc(r_0005_0018__Armed_r_0005_0019__Forces_r_0005_0020__Communications_r_0005_0021__and_r_0005_0022__Electronics_r_0005_0023__Association,r_0005_0030__trade_r_0005_0031__group,prn).
+arc(r_0005_0030__trade_r_0005_0031__group,r_0005_0026__joint,attrib).
+arc(r_0005_0030__trade_r_0005_0031__group,r_0005_0027__industry_r_0005_0029__government,nlyr).
 
 </pre>
 <br>
 <pre>
 fof(id__5_a_wsj_1640,axiom,
-    ? [CATENATIVEX2,EVENTX9,EVENTX8,CONFERENCEX1,ENTITYX4,ENTITYX5,ENTITYX7,QUALITYX3,ATTRIBX6] :
-      ( CATENATIVEX2 = EVENTX8
+    ? [STATEX2,EVENTX9,EVENTX8,CONFERENCEX1,ENTITYX4,ENTITYX5,ENTITYX7,QUALITYX3,ATTRIBX6] :
+      ( STATEX2 = EVENTX8
       &amp; isA(EVENTX8,r_0005_0005__sponsored)
       &amp; arg0_r_0005_0006__by_lgs(EVENTX8) = ENTITYX4
       &amp; arg1(EVENTX8) = CONFERENCEX1
@@ -195,167 +195,167 @@ fof(id__5_a_wsj_1640,axiom,
       &amp; prn9(r_0005_0018__Armed_r_0005_0019__Forces_r_0005_0020__Communications_r_0005_0021__and_r_0005_0022__Electronics_r_0005_0023__Association) = ENTITYX5
       &amp; isA(ATTRIBX6,r_0005_0026__joint)
       &amp; isA(EVENTX9,r_0005_0003__was)
-      &amp; scope(EVENTX9) = CATENATIVEX2 ) ).
+      &amp; scope(EVENTX9) = STATEX2 ) ).
 
 
 </pre>
 <br>
-<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns:exslt="http://exslt.org/common" width="3200" height="732" viewBox="-32.00 -3.660 4000.00 915.00">
-<text x="1600.60" y="51" text-anchor="middle">IP-MAT</text>
-<text x="100.60" y="112" text-anchor="middle">NP-SBJ</text>
-<text x="50.30" y="173" text-anchor="middle">D</text>
-<text x="50.30" y="234" text-anchor="middle">The</text>
-<line x1="50.30" y1="183" x2="50.30" y2="214" style="stroke:#000000;stroke-width:2;"/>
-<line x1="100.60" y1="122" x2="50" y2="153" style="stroke:#000000;stroke-width:2;"/>
-<text x="151.0" y="173" text-anchor="middle">N</text>
-<text x="151.0" y="234" text-anchor="middle">conference</text>
-<line x1="151.0" y1="183" x2="151.0" y2="214" style="stroke:#000000;stroke-width:2;"/>
-<line x1="100.60" y1="122" x2="150" y2="153" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1600.60" y1="61" x2="100" y2="92" style="stroke:#000000;stroke-width:2;"/>
-<text x="252.0" y="112" text-anchor="middle">BED;~cat_Ve_passive_</text>
-<text x="252.0" y="173" text-anchor="middle">was</text>
-<line x1="252.0" y1="122" x2="252.0" y2="153" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1600.60" y1="61" x2="250" y2="92" style="stroke:#000000;stroke-width:2;"/>
-<text x="1701.0" y="112" text-anchor="middle">IP-PPL-CAT</text>
-<text x="350.80" y="173" text-anchor="middle">ADVP-MNR</text>
-<text x="350.70" y="234" text-anchor="middle">ADV</text>
-<text x="350.70" y="295" text-anchor="middle">jointly</text>
-<line x1="350.70" y1="244" x2="350.70" y2="275" style="stroke:#000000;stroke-width:2;"/>
-<line x1="350.80" y1="183" x2="350" y2="214" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1701.0" y1="122" x2="350" y2="153" style="stroke:#000000;stroke-width:2;"/>
-<text x="450.90" y="173" text-anchor="middle">VVN;~Tn</text>
-<text x="450.90" y="234" text-anchor="middle">sponsored</text>
-<line x1="450.90" y1="183" x2="450.90" y2="214" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1701.0" y1="122" x2="450" y2="153" style="stroke:#000000;stroke-width:2;"/>
-<text x="1800.60" y="173" text-anchor="middle">PP-LGS</text>
-<text x="550.60" y="234" text-anchor="middle">P-ROLE</text>
-<text x="550.60" y="295" text-anchor="middle">by</text>
-<line x1="550.60" y1="244" x2="550.60" y2="275" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1800.60" y1="183" x2="550" y2="214" style="stroke:#000000;stroke-width:2;"/>
-<text x="1850.20" y="234" text-anchor="middle">NP</text>
-<text x="1850.40" y="295" text-anchor="middle">NLYR</text>
-<text x="1050.20" y="356" text-anchor="middle">NP</text>
-<text x="650.30" y="417" text-anchor="middle">D</text>
-<text x="650.30" y="478" text-anchor="middle">the</text>
-<line x1="650.30" y1="427" x2="650.30" y2="458" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1050.20" y1="366" x2="650" y2="397" style="stroke:#000000;stroke-width:2;"/>
-<text x="750.30" y="417" text-anchor="middle">NPR</text>
-<text x="750.30" y="478" text-anchor="middle">New</text>
-<line x1="750.30" y1="427" x2="750.30" y2="458" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1050.20" y1="366" x2="750" y2="397" style="stroke:#000000;stroke-width:2;"/>
-<text x="850.40" y="417" text-anchor="middle">NPR</text>
-<text x="850.40" y="478" text-anchor="middle">York</text>
-<line x1="850.40" y1="427" x2="850.40" y2="458" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1050.20" y1="366" x2="850" y2="397" style="stroke:#000000;stroke-width:2;"/>
-<text x="950.90" y="417" text-anchor="middle">NPR</text>
-<text x="950.90" y="478" text-anchor="middle">Institute</text>
-<line x1="950.90" y1="427" x2="950.90" y2="458" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1050.20" y1="366" x2="950" y2="397" style="stroke:#000000;stroke-width:2;"/>
-<text x="1050.30" y="417" text-anchor="middle">NPR</text>
-<text x="1050.30" y="478" text-anchor="middle">of</text>
-<line x1="1050.30" y1="427" x2="1050.30" y2="458" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1050.20" y1="366" x2="1050" y2="397" style="stroke:#000000;stroke-width:2;"/>
-<text x="1151.0" y="417" text-anchor="middle">NPR</text>
-<text x="1151.0" y="478" text-anchor="middle">Technology</text>
-<line x1="1151.0" y1="427" x2="1151.0" y2="458" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1050.20" y1="366" x2="1150" y2="397" style="stroke:#000000;stroke-width:2;"/>
-<text x="1250.60" y="417" text-anchor="middle">NPR</text>
-<text x="1250.60" y="478" text-anchor="middle">School</text>
-<line x1="1250.60" y1="427" x2="1250.60" y2="458" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1050.20" y1="366" x2="1250" y2="397" style="stroke:#000000;stroke-width:2;"/>
-<text x="1350.30" y="417" text-anchor="middle">NPR</text>
-<text x="1350.30" y="478" text-anchor="middle">of</text>
-<line x1="1350.30" y1="427" x2="1350.30" y2="458" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1050.20" y1="366" x2="1350" y2="397" style="stroke:#000000;stroke-width:2;"/>
-<text x="1451.0" y="417" text-anchor="middle">NPR</text>
-<text x="1451.0" y="478" text-anchor="middle">Management</text>
-<line x1="1451.0" y1="427" x2="1451.0" y2="458" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1050.20" y1="366" x2="1450" y2="397" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1850.40" y1="305" x2="1050" y2="336" style="stroke:#000000;stroke-width:2;"/>
-<text x="2300.5" y="356" text-anchor="middle">CONJP</text>
-<text x="1550.40" y="417" text-anchor="middle">CONJ</text>
-<text x="1550.40" y="478" text-anchor="middle">and</text>
-<line x1="1550.40" y1="427" x2="1550.40" y2="458" style="stroke:#000000;stroke-width:2;"/>
-<line x1="2300.5" y1="366" x2="1550" y2="397" style="stroke:#000000;stroke-width:2;"/>
-<text x="2350.20" y="417" text-anchor="middle">NP</text>
-<text x="1650.30" y="478" text-anchor="middle">D</text>
-<text x="1650.30" y="539" text-anchor="middle">the</text>
-<line x1="1650.30" y1="488" x2="1650.30" y2="519" style="stroke:#000000;stroke-width:2;"/>
-<line x1="2350.20" y1="427" x2="1650" y2="458" style="stroke:#000000;stroke-width:2;"/>
-<text x="1750.5" y="478" text-anchor="middle">NPR</text>
-<text x="1750.5" y="539" text-anchor="middle">Armed</text>
-<line x1="1750.5" y1="488" x2="1750.5" y2="519" style="stroke:#000000;stroke-width:2;"/>
-<line x1="2350.20" y1="427" x2="1750" y2="458" style="stroke:#000000;stroke-width:2;"/>
-<text x="1850.60" y="478" text-anchor="middle">NPR</text>
-<text x="1850.60" y="539" text-anchor="middle">Forces</text>
-<line x1="1850.60" y1="488" x2="1850.60" y2="519" style="stroke:#000000;stroke-width:2;"/>
-<line x1="2350.20" y1="427" x2="1850" y2="458" style="stroke:#000000;stroke-width:2;"/>
-<text x="1951.40" y="478" text-anchor="middle">NPR</text>
-<text x="1951.40" y="539" text-anchor="middle">Communications</text>
-<line x1="1951.40" y1="488" x2="1951.40" y2="519" style="stroke:#000000;stroke-width:2;"/>
-<line x1="2350.20" y1="427" x2="1950" y2="458" style="stroke:#000000;stroke-width:2;"/>
-<text x="2050.30" y="478" text-anchor="middle">NPR</text>
-<text x="2050.30" y="539" text-anchor="middle">and</text>
-<line x1="2050.30" y1="488" x2="2050.30" y2="519" style="stroke:#000000;stroke-width:2;"/>
-<line x1="2350.20" y1="427" x2="2050" y2="458" style="stroke:#000000;stroke-width:2;"/>
-<text x="2151.10" y="478" text-anchor="middle">NPR</text>
-<text x="2151.10" y="539" text-anchor="middle">Electronics</text>
-<line x1="2151.10" y1="488" x2="2151.10" y2="519" style="stroke:#000000;stroke-width:2;"/>
-<line x1="2350.20" y1="427" x2="2150" y2="458" style="stroke:#000000;stroke-width:2;"/>
-<text x="2251.10" y="478" text-anchor="middle">NPR</text>
-<text x="2251.10" y="539" text-anchor="middle">Association</text>
-<line x1="2251.10" y1="488" x2="2251.10" y2="519" style="stroke:#000000;stroke-width:2;"/>
-<line x1="2350.20" y1="427" x2="2250" y2="458" style="stroke:#000000;stroke-width:2;"/>
-<text x="2350.40" y="478" text-anchor="middle">PUNC</text>
-<text x="2350.40" y="539" text-anchor="middle">,</text>
-<line x1="2350.40" y1="488" x2="2350.40" y2="519" style="stroke:#000000;stroke-width:2;"/>
-<line x1="2350.20" y1="427" x2="2350" y2="458" style="stroke:#000000;stroke-width:2;"/>
-<text x="2750.30" y="478" text-anchor="middle">PRN</text>
-<text x="2750.20" y="539" text-anchor="middle">NP</text>
-<text x="2450.10" y="600" text-anchor="middle">D</text>
-<text x="2450.10" y="661" text-anchor="middle">a</text>
-<line x1="2450.10" y1="610" x2="2450.10" y2="641" style="stroke:#000000;stroke-width:2;"/>
-<line x1="2750.20" y1="549" x2="2450" y2="580" style="stroke:#000000;stroke-width:2;"/>
-<text x="2550.40" y="600" text-anchor="middle">ADJP</text>
-<text x="2550.5" y="661" text-anchor="middle">ADJ</text>
-<text x="2550.5" y="722" text-anchor="middle">joint</text>
-<line x1="2550.5" y1="671" x2="2550.5" y2="702" style="stroke:#000000;stroke-width:2;"/>
-<line x1="2550.40" y1="610" x2="2550" y2="641" style="stroke:#000000;stroke-width:2;"/>
-<line x1="2750.20" y1="549" x2="2550" y2="580" style="stroke:#000000;stroke-width:2;"/>
-<text x="2750.40" y="600" text-anchor="middle">NLYR</text>
-<text x="2650.80" y="661" text-anchor="middle">N</text>
-<text x="2650.80" y="722" text-anchor="middle">industry</text>
-<line x1="2650.80" y1="671" x2="2650.80" y2="702" style="stroke:#000000;stroke-width:2;"/>
-<line x1="2750.40" y1="610" x2="2650" y2="641" style="stroke:#000000;stroke-width:2;"/>
-<text x="2751.40" y="661" text-anchor="middle">PUNC</text>
-<text x="2751.40" y="722" text-anchor="middle">&lt;hyphen&gt;</text>
-<line x1="2751.40" y1="671" x2="2751.40" y2="702" style="stroke:#000000;stroke-width:2;"/>
-<line x1="2750.40" y1="610" x2="2750" y2="641" style="stroke:#000000;stroke-width:2;"/>
-<text x="2851.0" y="661" text-anchor="middle">N</text>
-<text x="2851.0" y="722" text-anchor="middle">government</text>
-<line x1="2851.0" y1="671" x2="2851.0" y2="702" style="stroke:#000000;stroke-width:2;"/>
-<line x1="2750.40" y1="610" x2="2850" y2="641" style="stroke:#000000;stroke-width:2;"/>
-<line x1="2750.20" y1="549" x2="2750" y2="580" style="stroke:#000000;stroke-width:2;"/>
-<text x="2950.5" y="600" text-anchor="middle">N</text>
-<text x="2950.5" y="661" text-anchor="middle">trade</text>
-<line x1="2950.5" y1="610" x2="2950.5" y2="641" style="stroke:#000000;stroke-width:2;"/>
-<line x1="2750.20" y1="549" x2="2950" y2="580" style="stroke:#000000;stroke-width:2;"/>
-<text x="3050.5" y="600" text-anchor="middle">N</text>
-<text x="3050.5" y="661" text-anchor="middle">group</text>
-<line x1="3050.5" y1="610" x2="3050.5" y2="641" style="stroke:#000000;stroke-width:2;"/>
-<line x1="2750.20" y1="549" x2="3050" y2="580" style="stroke:#000000;stroke-width:2;"/>
-<line x1="2750.30" y1="488" x2="2750" y2="519" style="stroke:#000000;stroke-width:2;"/>
-<line x1="2350.20" y1="427" x2="2750" y2="458" style="stroke:#000000;stroke-width:2;"/>
-<line x1="2300.5" y1="366" x2="2350" y2="397" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1850.40" y1="305" x2="2300" y2="336" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1850.20" y1="244" x2="1850" y2="275" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1800.60" y1="183" x2="1850" y2="214" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1701.0" y1="122" x2="1800" y2="153" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1600.60" y1="61" x2="1700" y2="92" style="stroke:#000000;stroke-width:2;"/>
-<text x="3150.40" y="112" text-anchor="middle">PUNC</text>
-<text x="3150.40" y="173" text-anchor="middle">.</text>
-<line x1="3150.40" y1="122" x2="3150.40" y2="153" style="stroke:#000000;stroke-width:2;"/>
-<line x1="1600.60" y1="61" x2="3150" y2="92" style="stroke:#000000;stroke-width:2;"/>
+<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns:exslt="http://exslt.org/common" width="2563" height="660" viewBox="-25.63 -3.300 3075.6 792.0">
+<text x="1281.5" y="45" text-anchor="middle">IP-MAT</text>
+<text x="82.5" y="100" text-anchor="middle">NP-SBJ</text>
+<text x="27.5" y="155" text-anchor="middle">D</text>
+<text x="27.5" y="210" text-anchor="middle">The</text>
+<line x1="27.5" y1="165" x2="27.5" y2="190" style="stroke:#000000;stroke-width:2;"/>
+<line x1="82.5" y1="110" x2="27.5" y2="135" style="stroke:#000000;stroke-width:2;"/>
+<text x="110" y="155" text-anchor="middle">N</text>
+<text x="110" y="210" text-anchor="middle">conference</text>
+<line x1="110" y1="165" x2="110" y2="190" style="stroke:#000000;stroke-width:2;"/>
+<line x1="82.5" y1="110" x2="110" y2="135" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1281.5" y1="55" x2="82.5" y2="80" style="stroke:#000000;stroke-width:2;"/>
+<text x="275" y="100" text-anchor="middle">BED;~cat_Ve_passive_</text>
+<text x="275" y="155" text-anchor="middle">was</text>
+<line x1="275" y1="110" x2="275" y2="135" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1281.5" y1="55" x2="275" y2="80" style="stroke:#000000;stroke-width:2;"/>
+<text x="1446.5" y="100" text-anchor="middle">IP-PPL-CAT</text>
+<text x="429" y="155" text-anchor="middle">ADVP-MNR</text>
+<text x="429" y="210" text-anchor="middle">ADV</text>
+<text x="429" y="265" text-anchor="middle">jointly</text>
+<line x1="429" y1="220" x2="429" y2="245" style="stroke:#000000;stroke-width:2;"/>
+<line x1="429" y1="165" x2="429" y2="190" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1446.5" y1="110" x2="429" y2="135" style="stroke:#000000;stroke-width:2;"/>
+<text x="522.5" y="155" text-anchor="middle">VVN;~Tn</text>
+<text x="522.5" y="210" text-anchor="middle">sponsored</text>
+<line x1="522.5" y1="165" x2="522.5" y2="190" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1446.5" y1="110" x2="522.5" y2="135" style="stroke:#000000;stroke-width:2;"/>
+<text x="1540" y="155" text-anchor="middle">PP-LGS</text>
+<text x="605" y="210" text-anchor="middle">P-ROLE</text>
+<text x="605" y="265" text-anchor="middle">by</text>
+<line x1="605" y1="220" x2="605" y2="245" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1540" y1="165" x2="605" y2="190" style="stroke:#000000;stroke-width:2;"/>
+<text x="1573" y="210" text-anchor="middle">NP</text>
+<text x="1573" y="265" text-anchor="middle">NLYR</text>
+<text x="968" y="320" text-anchor="middle">NP</text>
+<text x="665.5" y="375" text-anchor="middle">D</text>
+<text x="665.5" y="430" text-anchor="middle">the</text>
+<line x1="665.5" y1="385" x2="665.5" y2="410" style="stroke:#000000;stroke-width:2;"/>
+<line x1="968" y1="330" x2="665.5" y2="355" style="stroke:#000000;stroke-width:2;"/>
+<text x="720.5" y="375" text-anchor="middle">NPR</text>
+<text x="720.5" y="430" text-anchor="middle">New</text>
+<line x1="720.5" y1="385" x2="720.5" y2="410" style="stroke:#000000;stroke-width:2;"/>
+<line x1="968" y1="330" x2="720.5" y2="355" style="stroke:#000000;stroke-width:2;"/>
+<text x="775.5" y="375" text-anchor="middle">NPR</text>
+<text x="775.5" y="430" text-anchor="middle">York</text>
+<line x1="775.5" y1="385" x2="775.5" y2="410" style="stroke:#000000;stroke-width:2;"/>
+<line x1="968" y1="330" x2="775.5" y2="355" style="stroke:#000000;stroke-width:2;"/>
+<text x="852.5" y="375" text-anchor="middle">NPR</text>
+<text x="852.5" y="430" text-anchor="middle">Institute</text>
+<line x1="852.5" y1="385" x2="852.5" y2="410" style="stroke:#000000;stroke-width:2;"/>
+<line x1="968" y1="330" x2="852.5" y2="355" style="stroke:#000000;stroke-width:2;"/>
+<text x="929.5" y="375" text-anchor="middle">NPR</text>
+<text x="929.5" y="430" text-anchor="middle">of</text>
+<line x1="929.5" y1="385" x2="929.5" y2="410" style="stroke:#000000;stroke-width:2;"/>
+<line x1="968" y1="330" x2="929.5" y2="355" style="stroke:#000000;stroke-width:2;"/>
+<text x="1012" y="375" text-anchor="middle">NPR</text>
+<text x="1012" y="430" text-anchor="middle">Technology</text>
+<line x1="1012" y1="385" x2="1012" y2="410" style="stroke:#000000;stroke-width:2;"/>
+<line x1="968" y1="330" x2="1012" y2="355" style="stroke:#000000;stroke-width:2;"/>
+<text x="1100" y="375" text-anchor="middle">NPR</text>
+<text x="1100" y="430" text-anchor="middle">School</text>
+<line x1="1100" y1="385" x2="1100" y2="410" style="stroke:#000000;stroke-width:2;"/>
+<line x1="968" y1="330" x2="1100" y2="355" style="stroke:#000000;stroke-width:2;"/>
+<text x="1160.5" y="375" text-anchor="middle">NPR</text>
+<text x="1160.5" y="430" text-anchor="middle">of</text>
+<line x1="1160.5" y1="385" x2="1160.5" y2="410" style="stroke:#000000;stroke-width:2;"/>
+<line x1="968" y1="330" x2="1160.5" y2="355" style="stroke:#000000;stroke-width:2;"/>
+<text x="1243" y="375" text-anchor="middle">NPR</text>
+<text x="1243" y="430" text-anchor="middle">Management</text>
+<line x1="1243" y1="385" x2="1243" y2="410" style="stroke:#000000;stroke-width:2;"/>
+<line x1="968" y1="330" x2="1243" y2="355" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1573" y1="275" x2="968" y2="300" style="stroke:#000000;stroke-width:2;"/>
+<text x="1903" y="320" text-anchor="middle">CONJP</text>
+<text x="1325.5" y="375" text-anchor="middle">CONJ</text>
+<text x="1325.5" y="430" text-anchor="middle">and</text>
+<line x1="1325.5" y1="385" x2="1325.5" y2="410" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1903" y1="330" x2="1325.5" y2="355" style="stroke:#000000;stroke-width:2;"/>
+<text x="1930.5" y="375" text-anchor="middle">NP</text>
+<text x="1380.5" y="430" text-anchor="middle">D</text>
+<text x="1380.5" y="485" text-anchor="middle">the</text>
+<line x1="1380.5" y1="440" x2="1380.5" y2="465" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1930.5" y1="385" x2="1380.5" y2="410" style="stroke:#000000;stroke-width:2;"/>
+<text x="1435.5" y="430" text-anchor="middle">NPR</text>
+<text x="1435.5" y="485" text-anchor="middle">Armed</text>
+<line x1="1435.5" y1="440" x2="1435.5" y2="465" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1930.5" y1="385" x2="1435.5" y2="410" style="stroke:#000000;stroke-width:2;"/>
+<text x="1496" y="430" text-anchor="middle">NPR</text>
+<text x="1496" y="485" text-anchor="middle">Forces</text>
+<line x1="1496" y1="440" x2="1496" y2="465" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1930.5" y1="385" x2="1496" y2="410" style="stroke:#000000;stroke-width:2;"/>
+<text x="1606" y="430" text-anchor="middle">NPR</text>
+<text x="1606" y="485" text-anchor="middle">Communications</text>
+<line x1="1606" y1="440" x2="1606" y2="465" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1930.5" y1="385" x2="1606" y2="410" style="stroke:#000000;stroke-width:2;"/>
+<text x="1710.5" y="430" text-anchor="middle">NPR</text>
+<text x="1710.5" y="485" text-anchor="middle">and</text>
+<line x1="1710.5" y1="440" x2="1710.5" y2="465" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1930.5" y1="385" x2="1710.5" y2="410" style="stroke:#000000;stroke-width:2;"/>
+<text x="1798.5" y="430" text-anchor="middle">NPR</text>
+<text x="1798.5" y="485" text-anchor="middle">Electronics</text>
+<line x1="1798.5" y1="440" x2="1798.5" y2="465" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1930.5" y1="385" x2="1798.5" y2="410" style="stroke:#000000;stroke-width:2;"/>
+<text x="1919.5" y="430" text-anchor="middle">NPR</text>
+<text x="1919.5" y="485" text-anchor="middle">Association</text>
+<line x1="1919.5" y1="440" x2="1919.5" y2="465" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1930.5" y1="385" x2="1919.5" y2="410" style="stroke:#000000;stroke-width:2;"/>
+<text x="2007.5" y="430" text-anchor="middle">PUNC</text>
+<text x="2007.5" y="485" text-anchor="middle">,</text>
+<line x1="2007.5" y1="440" x2="2007.5" y2="465" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1930.5" y1="385" x2="2007.5" y2="410" style="stroke:#000000;stroke-width:2;"/>
+<text x="2271.5" y="430" text-anchor="middle">PRN</text>
+<text x="2271.5" y="485" text-anchor="middle">NP</text>
+<text x="2062.5" y="540" text-anchor="middle">D</text>
+<text x="2062.5" y="595" text-anchor="middle">a</text>
+<line x1="2062.5" y1="550" x2="2062.5" y2="575" style="stroke:#000000;stroke-width:2;"/>
+<line x1="2271.5" y1="495" x2="2062.5" y2="520" style="stroke:#000000;stroke-width:2;"/>
+<text x="2117.5" y="540" text-anchor="middle">ADJP</text>
+<text x="2117.5" y="595" text-anchor="middle">ADJ</text>
+<text x="2117.5" y="650" text-anchor="middle">joint</text>
+<line x1="2117.5" y1="605" x2="2117.5" y2="630" style="stroke:#000000;stroke-width:2;"/>
+<line x1="2117.5" y1="550" x2="2117.5" y2="575" style="stroke:#000000;stroke-width:2;"/>
+<line x1="2271.5" y1="495" x2="2117.5" y2="520" style="stroke:#000000;stroke-width:2;"/>
+<text x="2271.5" y="540" text-anchor="middle">NLYR</text>
+<text x="2189" y="595" text-anchor="middle">N</text>
+<text x="2189" y="650" text-anchor="middle">industry</text>
+<line x1="2189" y1="605" x2="2189" y2="630" style="stroke:#000000;stroke-width:2;"/>
+<line x1="2271.5" y1="550" x2="2189" y2="575" style="stroke:#000000;stroke-width:2;"/>
+<text x="2260.5" y="595" text-anchor="middle">PUNC</text>
+<text x="2260.5" y="650" text-anchor="middle">-</text>
+<line x1="2260.5" y1="605" x2="2260.5" y2="630" style="stroke:#000000;stroke-width:2;"/>
+<line x1="2271.5" y1="550" x2="2260.5" y2="575" style="stroke:#000000;stroke-width:2;"/>
+<text x="2343" y="595" text-anchor="middle">N</text>
+<text x="2343" y="650" text-anchor="middle">government</text>
+<line x1="2343" y1="605" x2="2343" y2="630" style="stroke:#000000;stroke-width:2;"/>
+<line x1="2271.5" y1="550" x2="2343" y2="575" style="stroke:#000000;stroke-width:2;"/>
+<line x1="2271.5" y1="495" x2="2271.5" y2="520" style="stroke:#000000;stroke-width:2;"/>
+<text x="2425.5" y="540" text-anchor="middle">N</text>
+<text x="2425.5" y="595" text-anchor="middle">trade</text>
+<line x1="2425.5" y1="550" x2="2425.5" y2="575" style="stroke:#000000;stroke-width:2;"/>
+<line x1="2271.5" y1="495" x2="2425.5" y2="520" style="stroke:#000000;stroke-width:2;"/>
+<text x="2480.5" y="540" text-anchor="middle">N</text>
+<text x="2480.5" y="595" text-anchor="middle">group</text>
+<line x1="2480.5" y1="550" x2="2480.5" y2="575" style="stroke:#000000;stroke-width:2;"/>
+<line x1="2271.5" y1="495" x2="2480.5" y2="520" style="stroke:#000000;stroke-width:2;"/>
+<line x1="2271.5" y1="440" x2="2271.5" y2="465" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1930.5" y1="385" x2="2271.5" y2="410" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1903" y1="330" x2="1930.5" y2="355" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1573" y1="275" x2="1903" y2="300" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1573" y1="220" x2="1573" y2="245" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1540" y1="165" x2="1573" y2="190" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1446.5" y1="110" x2="1540" y2="135" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1281.5" y1="55" x2="1446.5" y2="80" style="stroke:#000000;stroke-width:2;"/>
+<text x="2535.5" y="100" text-anchor="middle">PUNC</text>
+<text x="2535.5" y="155" text-anchor="middle">.</text>
+<line x1="2535.5" y1="110" x2="2535.5" y2="135" style="stroke:#000000;stroke-width:2;"/>
+<line x1="1281.5" y1="55" x2="2535.5" y2="80" style="stroke:#000000;stroke-width:2;"/>
 </svg>
 <br>
 <pre>
