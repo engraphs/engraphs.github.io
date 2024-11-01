@@ -34,46 +34,33 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 388)">
 <title>%3</title>
 <polygon fill="white" stroke="transparent" points="-4,4 -4,-388 472.19,-388 472.19,4 -4,4"/>
-<!-- 0044_0004__not -->
-<g id="node1" class="node">
-<title>0044_0004__not</title>
-<ellipse fill="none" stroke="black" cx="163.85" cy="-279" rx="27" ry="18"/>
-<text text-anchor="middle" x="163.85" y="-275.3" font-family="fixed" font-size="14.00">not</text>
-</g>
 <!-- 0044_0003__is -->
-<g id="node2" class="node">
+<g id="node1" class="node">
 <title>0044_0003__is</title>
 <ellipse fill="none" stroke="black" cx="145.85" cy="-192" rx="27" ry="18"/>
 <text text-anchor="middle" x="145.85" y="-188.3" font-family="fixed" font-size="14.00">is</text>
 </g>
-<!-- 0044_0004__not&#45;&gt;0044_0003__is -->
-<g id="edge1" class="edge">
-<title>0044_0004__not&#45;&gt;0044_0003__is</title>
-<path fill="none" stroke="black" d="M160.2,-260.8C157.72,-249.09 154.39,-233.34 151.56,-219.97"/>
-<polygon fill="black" stroke="black" points="154.92,-218.94 149.42,-209.89 148.07,-220.39 154.92,-218.94"/>
-<text text-anchor="middle" x="182.85" y="-231.8" font-family="fixed" font-size="14.00">[scope]</text>
-</g>
 <!-- 0044_0005__a_0044_0007__cloud -->
-<g id="node3" class="node">
+<g id="node2" class="node">
 <title>0044_0005__a_0044_0007__cloud</title>
 <ellipse fill="none" stroke="black" cx="44.85" cy="-105" rx="44.69" ry="18"/>
 <text text-anchor="middle" x="44.85" y="-101.3" font-family="fixed" font-size="14.00">a_cloud</text>
 </g>
 <!-- 0044_0003__is&#45;&gt;0044_0005__a_0044_0007__cloud -->
-<g id="edge2" class="edge">
+<g id="edge1" class="edge">
 <title>0044_0003__is&#45;&gt;0044_0005__a_0044_0007__cloud</title>
 <path fill="none" stroke="black" d="M129.01,-177.48C121.04,-171.03 111.41,-163.17 102.85,-156 92.15,-147.04 80.48,-137.02 70.43,-128.32"/>
 <polygon fill="black" stroke="black" points="72.61,-125.58 62.76,-121.67 68.02,-130.87 72.61,-125.58"/>
 <text text-anchor="middle" x="124.35" y="-144.8" font-family="fixed" font-size="14.00">[arg0]</text>
 </g>
 <!-- 0044_0009__the_0044_0010__sky -->
-<g id="node4" class="node">
+<g id="node3" class="node">
 <title>0044_0009__the_0044_0010__sky</title>
 <ellipse fill="none" stroke="black" cx="152.85" cy="-105" rx="44.69" ry="18"/>
 <text text-anchor="middle" x="152.85" y="-101.3" font-family="fixed" font-size="14.00">the_sky</text>
 </g>
 <!-- 0044_0003__is&#45;&gt;0044_0009__the_0044_0010__sky -->
-<g id="edge3" class="edge">
+<g id="edge2" class="edge">
 <title>0044_0003__is&#45;&gt;0044_0009__the_0044_0010__sky</title>
 <path fill="none" stroke="black" d="M147.26,-173.8C148.22,-162.16 149.51,-146.55 150.6,-133.24"/>
 <polygon fill="black" stroke="black" points="154.1,-133.43 151.43,-123.18 147.12,-132.85 154.1,-133.43"/>
@@ -91,6 +78,19 @@
 <path fill="none" stroke="black" d="M44.85,-86.8C44.85,-75.16 44.85,-59.55 44.85,-46.24"/>
 <polygon fill="black" stroke="black" points="48.35,-46.18 44.85,-36.18 41.35,-46.18 48.35,-46.18"/>
 <text text-anchor="middle" x="69.35" y="-57.8" font-family="fixed" font-size="14.00">[attrib]</text>
+</g>
+<!-- 0044_0004__not -->
+<g id="node4" class="node">
+<title>0044_0004__not</title>
+<ellipse fill="none" stroke="black" cx="163.85" cy="-279" rx="27" ry="18"/>
+<text text-anchor="middle" x="163.85" y="-275.3" font-family="fixed" font-size="14.00">not</text>
+</g>
+<!-- 0044_0004__not&#45;&gt;0044_0003__is -->
+<g id="edge3" class="edge">
+<title>0044_0004__not&#45;&gt;0044_0003__is</title>
+<path fill="none" stroke="black" d="M160.2,-260.8C157.72,-249.09 154.39,-233.34 151.56,-219.97"/>
+<polygon fill="black" stroke="black" points="154.92,-218.94 149.42,-209.89 148.07,-220.39 154.92,-218.94"/>
+<text text-anchor="middle" x="182.85" y="-231.8" font-family="fixed" font-size="14.00">[scope]</text>
 </g>
 <!-- 0044_0014__are -->
 <g id="node6" class="node">
@@ -200,9 +200,9 @@
 </svg>
 <br>
 <pre>
-arc(r_0044_0004__not,r_0044_0003__is,keep_scope).
 arc(r_0044_0003__is,r_0044_0005__a_r_0044_0007__cloud,arg0).
 arc(r_0044_0003__is,r_0044_0009__the_r_0044_0010__sky,r_0044_0008__in__loc).
+arc(r_0044_0004__not,r_0044_0003__is,keep_scope).
 arc(r_0044_0005__a_r_0044_0007__cloud,r_0044_0006__single,attrib).
 arc(r_0044_0014__are,r_0044_0012__the_r_0044_0013__stars,arg0).
 arc(r_0044_0014__are,r_0044_0017__and,prd2).

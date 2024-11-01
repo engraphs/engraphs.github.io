@@ -66,24 +66,37 @@ Section 4 : Reduced Speeds : Heavy Traffic or Bad Weather
 <polygon fill="black" stroke="black" points="175.8,-46.18 172.3,-36.18 168.8,-46.18 175.8,-46.18"/>
 <text text-anchor="middle" x="196.8" y="-57.8" font-family="fixed" font-size="14.00">[attrib]</text>
 </g>
-<!-- 0021_0009__or -->
+<!-- 0021_0008__Traffic -->
 <g id="node4" class="node">
+<title>0021_0008__Traffic</title>
+<ellipse fill="none" stroke="black" cx="273.3" cy="-105" rx="37.09" ry="18"/>
+<text text-anchor="middle" x="273.3" y="-101.3" font-family="fixed" font-size="14.00">traffic</text>
+</g>
+<!-- 0021_0007__Heavy -->
+<g id="node5" class="node">
+<title>0021_0007__Heavy</title>
+<ellipse fill="none" stroke="black" cx="276.3" cy="-18" rx="38.19" ry="18"/>
+<text text-anchor="middle" x="276.3" y="-14.3" font-family="fixed" font-size="14.00">heavy</text>
+</g>
+<!-- 0021_0008__Traffic&#45;&gt;0021_0007__Heavy -->
+<g id="edge3" class="edge">
+<title>0021_0008__Traffic&#45;&gt;0021_0007__Heavy</title>
+<path fill="none" stroke="black" d="M273.9,-86.8C274.31,-75.16 274.86,-59.55 275.33,-46.24"/>
+<polygon fill="black" stroke="black" points="278.83,-46.29 275.69,-36.18 271.84,-46.05 278.83,-46.29"/>
+<text text-anchor="middle" x="299.8" y="-57.8" font-family="fixed" font-size="14.00">[attrib]</text>
+</g>
+<!-- 0021_0009__or -->
+<g id="node6" class="node">
 <title>0021_0009__or</title>
 <ellipse fill="none" stroke="black" cx="273.3" cy="-192" rx="27" ry="18"/>
 <text text-anchor="middle" x="273.3" y="-188.3" font-family="fixed" font-size="14.00">or</text>
 </g>
 <!-- 0021_0009__or&#45;&gt;0021_0005__Speeds -->
-<g id="edge3" class="edge">
+<g id="edge4" class="edge">
 <title>0021_0009__or&#45;&gt;0021_0005__Speeds</title>
 <path fill="none" stroke="black" d="M257.07,-177.34C241.23,-164.02 216.88,-143.53 198.34,-127.92"/>
 <polygon fill="black" stroke="black" points="200.44,-125.11 190.53,-121.35 195.93,-130.47 200.44,-125.11"/>
 <text text-anchor="middle" x="246.3" y="-144.8" font-family="fixed" font-size="14.00">[prn]</text>
-</g>
-<!-- 0021_0008__Traffic -->
-<g id="node5" class="node">
-<title>0021_0008__Traffic</title>
-<ellipse fill="none" stroke="black" cx="273.3" cy="-105" rx="37.09" ry="18"/>
-<text text-anchor="middle" x="273.3" y="-101.3" font-family="fixed" font-size="14.00">traffic</text>
 </g>
 <!-- 0021_0009__or&#45;&gt;0021_0008__Traffic -->
 <g id="edge5" class="edge">
@@ -104,19 +117,6 @@ Section 4 : Reduced Speeds : Heavy Traffic or Bad Weather
 <path fill="none" stroke="black" d="M292.87,-179.46C303.19,-173.05 315.83,-164.63 326.3,-156 336.01,-147.99 345.89,-138.27 354.21,-129.53"/>
 <polygon fill="black" stroke="black" points="356.81,-131.88 361.08,-122.18 351.69,-127.1 356.81,-131.88"/>
 <text text-anchor="middle" x="366.8" y="-144.8" font-family="fixed" font-size="14.00">[conj2]</text>
-</g>
-<!-- 0021_0007__Heavy -->
-<g id="node6" class="node">
-<title>0021_0007__Heavy</title>
-<ellipse fill="none" stroke="black" cx="276.3" cy="-18" rx="38.19" ry="18"/>
-<text text-anchor="middle" x="276.3" y="-14.3" font-family="fixed" font-size="14.00">heavy</text>
-</g>
-<!-- 0021_0008__Traffic&#45;&gt;0021_0007__Heavy -->
-<g id="edge4" class="edge">
-<title>0021_0008__Traffic&#45;&gt;0021_0007__Heavy</title>
-<path fill="none" stroke="black" d="M273.9,-86.8C274.31,-75.16 274.86,-59.55 275.33,-46.24"/>
-<polygon fill="black" stroke="black" points="278.83,-46.29 275.69,-36.18 271.84,-46.05 278.83,-46.29"/>
-<text text-anchor="middle" x="299.8" y="-57.8" font-family="fixed" font-size="14.00">[attrib]</text>
 </g>
 <!-- 0021_0010__Bad -->
 <g id="node8" class="node">
@@ -149,8 +149,8 @@ Section 4 : Reduced Speeds : Heavy Traffic or Bad Weather
 <pre>
 arc(r_0021_0005__Speeds,r_0021_0001__Section_r_0021_0002__4,prn).
 arc(r_0021_0005__Speeds,r_0021_0004__Reduced,attrib).
-arc(r_0021_0009__or,r_0021_0005__Speeds,prn).
 arc(r_0021_0008__Traffic,r_0021_0007__Heavy,attrib).
+arc(r_0021_0009__or,r_0021_0005__Speeds,prn).
 arc(r_0021_0009__or,r_0021_0008__Traffic,conj1).
 arc(r_0021_0009__or,r_0021_0011__Weather,conj2).
 arc(r_0021_0011__Weather,r_0021_0010__Bad,attrib).

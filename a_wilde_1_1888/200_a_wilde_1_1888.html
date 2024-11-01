@@ -34,50 +34,50 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 475)">
 <title>%3</title>
 <polygon fill="white" stroke="transparent" points="-4,4 -4,-475 454.14,-475 454.14,4 -4,4"/>
-<!-- 0200_0004__not -->
-<g id="node1" class="node">
-<title>0200_0004__not</title>
-<ellipse fill="none" stroke="black" cx="232.69" cy="-192" rx="27" ry="18"/>
-<text text-anchor="middle" x="232.69" y="-188.3" font-family="fixed" font-size="14.00">not</text>
-</g>
 <!-- 0200_0003__must_0200_0005__lie -->
-<g id="node2" class="node">
+<g id="node1" class="node">
 <title>0200_0003__must_0200_0005__lie</title>
 <ellipse fill="none" stroke="black" cx="232.69" cy="-105" rx="48.19" ry="18"/>
 <text text-anchor="middle" x="232.69" y="-101.3" font-family="fixed" font-size="14.00">must_lie</text>
 </g>
-<!-- 0200_0004__not&#45;&gt;0200_0003__must_0200_0005__lie -->
-<g id="edge1" class="edge">
-<title>0200_0004__not&#45;&gt;0200_0003__must_0200_0005__lie</title>
-<path fill="none" stroke="black" d="M232.69,-173.8C232.69,-162.16 232.69,-146.55 232.69,-133.24"/>
-<polygon fill="black" stroke="black" points="236.19,-133.18 232.69,-123.18 229.19,-133.18 236.19,-133.18"/>
-<text text-anchor="middle" x="258.69" y="-144.8" font-family="fixed" font-size="14.00">[scope]</text>
-</g>
 <!-- 0200_0002__You -->
-<g id="node3" class="node">
+<g id="node2" class="node">
 <title>0200_0002__You</title>
 <ellipse fill="none" stroke="black" cx="309.69" cy="-18" rx="27.1" ry="18"/>
 <text text-anchor="middle" x="309.69" y="-14.3" font-family="fixed" font-size="14.00">you</text>
 </g>
 <!-- 0200_0003__must_0200_0005__lie&#45;&gt;0200_0002__You -->
-<g id="edge2" class="edge">
+<g id="edge1" class="edge">
 <title>0200_0003__must_0200_0005__lie&#45;&gt;0200_0002__You</title>
 <path fill="none" stroke="black" d="M244.27,-87.16C251.44,-77.15 261.09,-64.42 270.69,-54 275.22,-49.08 280.37,-44.1 285.4,-39.5"/>
 <polygon fill="black" stroke="black" points="287.96,-41.91 293.11,-32.65 283.31,-36.68 287.96,-41.91"/>
 <text text-anchor="middle" x="292.19" y="-57.8" font-family="fixed" font-size="14.00">[arg0]</text>
 </g>
 <!-- 0200_0006__here -->
-<g id="node4" class="node">
+<g id="node3" class="node">
 <title>0200_0006__here</title>
 <ellipse fill="none" stroke="black" cx="215.69" cy="-18" rx="30.59" ry="18"/>
 <text text-anchor="middle" x="215.69" y="-14.3" font-family="fixed" font-size="14.00">here</text>
 </g>
 <!-- 0200_0003__must_0200_0005__lie&#45;&gt;0200_0006__here -->
-<g id="edge3" class="edge">
+<g id="edge2" class="edge">
 <title>0200_0003__must_0200_0005__lie&#45;&gt;0200_0006__here</title>
 <path fill="none" stroke="black" d="M223.26,-87.05C220.62,-81.47 218.09,-75.12 216.69,-69 215.06,-61.83 214.39,-53.94 214.24,-46.58"/>
 <polygon fill="black" stroke="black" points="217.74,-46.36 214.32,-36.33 210.74,-46.31 217.74,-46.36"/>
 <text text-anchor="middle" x="232.19" y="-57.8" font-family="fixed" font-size="14.00">[loc]</text>
+</g>
+<!-- 0200_0004__not -->
+<g id="node4" class="node">
+<title>0200_0004__not</title>
+<ellipse fill="none" stroke="black" cx="232.69" cy="-192" rx="27" ry="18"/>
+<text text-anchor="middle" x="232.69" y="-188.3" font-family="fixed" font-size="14.00">not</text>
+</g>
+<!-- 0200_0004__not&#45;&gt;0200_0003__must_0200_0005__lie -->
+<g id="edge3" class="edge">
+<title>0200_0004__not&#45;&gt;0200_0003__must_0200_0005__lie</title>
+<path fill="none" stroke="black" d="M232.69,-173.8C232.69,-162.16 232.69,-146.55 232.69,-133.24"/>
+<polygon fill="black" stroke="black" points="236.19,-133.18 232.69,-123.18 229.19,-133.18 236.19,-133.18"/>
+<text text-anchor="middle" x="258.69" y="-144.8" font-family="fixed" font-size="14.00">[scope]</text>
 </g>
 <!-- 0200_0009__shouted -->
 <g id="node5" class="node">
@@ -168,9 +168,9 @@
 </svg>
 <br>
 <pre>
-arc(r_0200_0004__not,r_0200_0003__must_r_0200_0005__lie,keep_scope).
 arc(r_0200_0003__must_r_0200_0005__lie,r_0200_0002__You,arg0).
 arc(r_0200_0003__must_r_0200_0005__lie,r_0200_0006__here,loc).
+arc(r_0200_0004__not,r_0200_0003__must_r_0200_0005__lie,keep_scope).
 arc(r_0200_0009__shouted,r_0200_0010__the_r_0200_0011__Watchman,arg0).
 arc(r_0200_0009__shouted,z_0200_1003__utterance,arg1).
 arc(r_0200_0013__and,r_0200_0009__shouted,coord_conj1).

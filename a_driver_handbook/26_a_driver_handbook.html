@@ -66,24 +66,37 @@ Section 5 : Reduced Speeds : Towing Vehicles , Buses , or Large Trucks
 <polygon fill="black" stroke="black" points="175.48,-46.22 172.09,-36.18 168.48,-46.13 175.48,-46.22"/>
 <text text-anchor="middle" x="196.8" y="-57.8" font-family="fixed" font-size="14.00">[attrib]</text>
 </g>
-<!-- 0026_0012__or -->
+<!-- 0026_0008__Vehicles -->
 <g id="node4" class="node">
+<title>0026_0008__Vehicles</title>
+<ellipse fill="none" stroke="black" cx="279.3" cy="-105" rx="47.39" ry="18"/>
+<text text-anchor="middle" x="279.3" y="-101.3" font-family="fixed" font-size="14.00">vehicles</text>
+</g>
+<!-- 0026_0007__Towing -->
+<g id="node5" class="node">
+<title>0026_0007__Towing</title>
+<ellipse fill="none" stroke="black" cx="279.3" cy="-18" rx="40.89" ry="18"/>
+<text text-anchor="middle" x="279.3" y="-14.3" font-family="fixed" font-size="14.00">towing</text>
+</g>
+<!-- 0026_0008__Vehicles&#45;&gt;0026_0007__Towing -->
+<g id="edge3" class="edge">
+<title>0026_0008__Vehicles&#45;&gt;0026_0007__Towing</title>
+<path fill="none" stroke="black" d="M279.3,-86.8C279.3,-75.16 279.3,-59.55 279.3,-46.24"/>
+<polygon fill="black" stroke="black" points="282.8,-46.18 279.3,-36.18 275.8,-46.18 282.8,-46.18"/>
+<text text-anchor="middle" x="303.8" y="-57.8" font-family="fixed" font-size="14.00">[attrib]</text>
+</g>
+<!-- 0026_0012__or -->
+<g id="node6" class="node">
 <title>0026_0012__or</title>
 <ellipse fill="none" stroke="black" cx="345.3" cy="-192" rx="27" ry="18"/>
 <text text-anchor="middle" x="345.3" y="-188.3" font-family="fixed" font-size="14.00">or</text>
 </g>
 <!-- 0026_0012__or&#45;&gt;0026_0005__Speeds -->
-<g id="edge3" class="edge">
+<g id="edge4" class="edge">
 <title>0026_0012__or&#45;&gt;0026_0005__Speeds</title>
 <path fill="none" stroke="black" d="M322.53,-182.32C305.46,-175.61 281.63,-165.85 261.3,-156 241.88,-146.6 220.78,-134.95 203.89,-125.27"/>
 <polygon fill="black" stroke="black" points="205.38,-122.09 194.97,-120.11 201.88,-128.15 205.38,-122.09"/>
 <text text-anchor="middle" x="278.3" y="-144.8" font-family="fixed" font-size="14.00">[prn]</text>
-</g>
-<!-- 0026_0008__Vehicles -->
-<g id="node5" class="node">
-<title>0026_0008__Vehicles</title>
-<ellipse fill="none" stroke="black" cx="279.3" cy="-105" rx="47.39" ry="18"/>
-<text text-anchor="middle" x="279.3" y="-101.3" font-family="fixed" font-size="14.00">vehicles</text>
 </g>
 <!-- 0026_0012__or&#45;&gt;0026_0008__Vehicles -->
 <g id="edge5" class="edge">
@@ -118,19 +131,6 @@ Section 5 : Reduced Speeds : Towing Vehicles , Buses , or Large Trucks
 <polygon fill="black" stroke="black" points="456.52,-131.06 461.49,-121.7 451.77,-125.92 456.52,-131.06"/>
 <text text-anchor="middle" x="464.8" y="-144.8" font-family="fixed" font-size="14.00">[conj3]</text>
 </g>
-<!-- 0026_0007__Towing -->
-<g id="node6" class="node">
-<title>0026_0007__Towing</title>
-<ellipse fill="none" stroke="black" cx="279.3" cy="-18" rx="40.89" ry="18"/>
-<text text-anchor="middle" x="279.3" y="-14.3" font-family="fixed" font-size="14.00">towing</text>
-</g>
-<!-- 0026_0008__Vehicles&#45;&gt;0026_0007__Towing -->
-<g id="edge4" class="edge">
-<title>0026_0008__Vehicles&#45;&gt;0026_0007__Towing</title>
-<path fill="none" stroke="black" d="M279.3,-86.8C279.3,-75.16 279.3,-59.55 279.3,-46.24"/>
-<polygon fill="black" stroke="black" points="282.8,-46.18 279.3,-36.18 275.8,-46.18 282.8,-46.18"/>
-<text text-anchor="middle" x="303.8" y="-57.8" font-family="fixed" font-size="14.00">[attrib]</text>
-</g>
 <!-- 0026_0013__Large -->
 <g id="node9" class="node">
 <title>0026_0013__Large</title>
@@ -162,8 +162,8 @@ Section 5 : Reduced Speeds : Towing Vehicles , Buses , or Large Trucks
 <pre>
 arc(r_0026_0005__Speeds,r_0026_0001__Section_r_0026_0002__5,prn).
 arc(r_0026_0005__Speeds,r_0026_0004__Reduced,attrib).
-arc(r_0026_0012__or,r_0026_0005__Speeds,prn).
 arc(r_0026_0008__Vehicles,r_0026_0007__Towing,attrib).
+arc(r_0026_0012__or,r_0026_0005__Speeds,prn).
 arc(r_0026_0012__or,r_0026_0008__Vehicles,conj1).
 arc(r_0026_0012__or,r_0026_0010__Buses,conj2).
 arc(r_0026_0012__or,r_0026_0014__Trucks,conj3).
