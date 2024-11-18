@@ -168,7 +168,7 @@ symptoms are generally mild with fever and some liver abnormalities , but the di
 <title>0054_0015__may_0054_0016__progress&#45;&gt;0054_0023__or</title>
 <path fill="none" stroke="black" d="M398.39,-263.48C440.89,-247.14 509.25,-220.84 549.37,-205.41"/>
 <polygon fill="black" stroke="black" points="550.85,-208.59 558.93,-201.74 548.34,-202.06 550.85,-208.59"/>
-<text text-anchor="middle" x="506.15" y="-231.8" font-family="fixed" font-size="14.00">to[dir]</text>
+<text text-anchor="middle" x="520.15" y="-231.8" font-family="fixed" font-size="14.00">to[clr][dir]</text>
 </g>
 <!-- 0054_0019__fever -->
 <g id="node12" class="node">
@@ -248,7 +248,7 @@ arc(r_0054_0007__and,r_0054_0008__some_r_0054_0009__liver_r_0054_0010__abnormali
 arc(r_0054_0012__but,r_0054_0002__are,coord_conj1).
 arc(r_0054_0012__but,r_0054_0015__may_r_0054_0016__progress,coord_conj2).
 arc(r_0054_0015__may_r_0054_0016__progress,r_0054_0013__the_r_0054_0014__disease,arg0).
-arc(r_0054_0015__may_r_0054_0016__progress,r_0054_0023__or,r_0054_0017__to__dir).
+arc(r_0054_0015__may_r_0054_0016__progress,r_0054_0023__or,r_0054_0017__to__clr_dir).
 arc(r_0054_0019__fever,r_0054_0018__hemorrhagic,attrib).
 arc(r_0054_0023__or,r_0054_0019__fever,conj1).
 arc(r_0054_0023__or,r_0054_0021__encephalitis,conj2).
@@ -345,11 +345,11 @@ arc(r_0054_0025__disease,r_0054_0024__ocular,attrib).
 <line x1="1045" y1="275" x2="1045" y2="300" style="stroke:#000000;stroke-width:2;"/>
 <line x1="1364" y1="220" x2="1045" y2="245" style="stroke:#000000;stroke-width:2;"/>
 <text x="1485" y="265" text-anchor="middle">IP-INF-CAT</text>
-<text x="1144" y="320" text-anchor="middle">VB</text>
+<text x="1144" y="320" text-anchor="middle">VB;~Ipr</text>
 <text x="1144" y="375" text-anchor="middle">progress</text>
 <line x1="1144" y1="330" x2="1144" y2="355" style="stroke:#000000;stroke-width:2;"/>
 <line x1="1485" y1="275" x2="1144" y2="300" style="stroke:#000000;stroke-width:2;"/>
-<text x="1529" y="320" text-anchor="middle">PP-DIR</text>
+<text x="1529" y="320" text-anchor="middle">PP-CLR-DIR</text>
 <text x="1221" y="375" text-anchor="middle">P-ROLE</text>
 <text x="1221" y="430" text-anchor="middle">to</text>
 <line x1="1221" y1="385" x2="1221" y2="410" style="stroke:#000000;stroke-width:2;"/>
@@ -431,16 +431,16 @@ arc(r_0054_0025__disease,r_0054_0024__ocular,attrib).
                        (ILYR (NP-SBJ (D the;{the})
                                      (N disease;{disease}))
                              (MD;~cat_Vi may;{may})
-                             (IP-INF-CAT (VB progress;{progress})
-                                         (PP-DIR (P-ROLE to;{to})
-                                                 (NP (NLYR (NP (ADJP (ADJ hemorrhagic;{hemorrhagic}))
-                                                               (N fever;{fever}))
-                                                           (PUNC ,)
-                                                           (CONJP (NP (N encephalitis;{encephalitis})))
-                                                           (PUNC ,)
-                                                           (CONJP (CONJ or;{or})
-                                                                  (NP (ADJP (ADJ ocular;{ocular}))
-                                                                      (N disease;{disease}))))))))))
+                             (IP-INF-CAT (VB;~Ipr progress;{progress[to]})
+                                         (PP-CLR-DIR (P-ROLE to;{to})
+                                                     (NP (NLYR (NP (ADJP (ADJ hemorrhagic;{hemorrhagic}))
+                                                                   (N fever;{fever}))
+                                                               (PUNC ,)
+                                                               (CONJP (NP (N encephalitis;{encephalitis})))
+                                                               (PUNC ,)
+                                                               (CONJP (CONJ or;{or})
+                                                                      (NP (ADJP (ADJ ocular;{ocular}))
+                                                                          (N disease;{disease}))))))))))
           (PUNC ;))
   (ID 54_a_factbook_1_2010))
 </pre>

@@ -90,7 +90,7 @@ I pondered deeply , then , over the adventures of the jungle .
 <title>0006_0002__pondered&#45;&gt;0006_0008__the_0006_0009__adventures</title>
 <path fill="none" stroke="black" d="M187.94,-176.99C201.43,-170.64 217.54,-163 232,-156 252.04,-146.3 274.22,-135.35 292.67,-126.17"/>
 <polygon fill="black" stroke="black" points="294.29,-129.28 301.68,-121.69 291.17,-123.01 294.29,-129.28"/>
-<text text-anchor="middle" x="292.5" y="-144.8" font-family="fixed" font-size="14.00">over[dir]</text>
+<text text-anchor="middle" x="306" y="-144.8" font-family="fixed" font-size="14.00">over[clr][dir]</text>
 </g>
 <!-- 0006_0011__the_0006_0012__jungle -->
 <g id="node6" class="node">
@@ -112,7 +112,7 @@ I pondered deeply , then , over the adventures of the jungle .
 arc(r_0006_0002__pondered,r_0006_0001__I,arg0).
 arc(r_0006_0002__pondered,r_0006_0003__deeply,mnr).
 arc(r_0006_0002__pondered,r_0006_0005__then,tmp).
-arc(r_0006_0002__pondered,r_0006_0008__the_r_0006_0009__adventures,r_0006_0007__over__dir).
+arc(r_0006_0002__pondered,r_0006_0008__the_r_0006_0009__adventures,r_0006_0007__over__clr_dir).
 arc(r_0006_0008__the_r_0006_0009__adventures,r_0006_0011__the_r_0006_0012__jungle,r_0006_0010__of).
 
 </pre>
@@ -125,7 +125,7 @@ arc(r_0006_0008__the_r_0006_0009__adventures,r_0006_0011__the_r_0006_0012__jungl
 <line x1="33" y1="165" x2="33" y2="190" style="stroke:#000000;stroke-width:2;"/>
 <line x1="33" y1="110" x2="33" y2="135" style="stroke:#000000;stroke-width:2;"/>
 <line x1="456.5" y1="55" x2="33" y2="80" style="stroke:#000000;stroke-width:2;"/>
-<text x="110" y="100" text-anchor="middle">VBD</text>
+<text x="110" y="100" text-anchor="middle">VBD;~Ipr</text>
 <text x="110" y="155" text-anchor="middle">pondered</text>
 <line x1="110" y1="110" x2="110" y2="135" style="stroke:#000000;stroke-width:2;"/>
 <line x1="456.5" y1="55" x2="110" y2="80" style="stroke:#000000;stroke-width:2;"/>
@@ -149,7 +149,7 @@ arc(r_0006_0008__the_r_0006_0009__adventures,r_0006_0011__the_r_0006_0012__jungl
 <text x="412.5" y="155" text-anchor="middle">,</text>
 <line x1="412.5" y1="110" x2="412.5" y2="135" style="stroke:#000000;stroke-width:2;"/>
 <line x1="456.5" y1="55" x2="412.5" y2="80" style="stroke:#000000;stroke-width:2;"/>
-<text x="649" y="100" text-anchor="middle">PP-DIR</text>
+<text x="649" y="100" text-anchor="middle">PP-CLR-DIR</text>
 <text x="473" y="155" text-anchor="middle">P-ROLE</text>
 <text x="473" y="210" text-anchor="middle">over</text>
 <line x1="473" y1="165" x2="473" y2="190" style="stroke:#000000;stroke-width:2;"/>
@@ -189,17 +189,17 @@ arc(r_0006_0008__the_r_0006_0009__adventures,r_0006_0011__the_r_0006_0012__jungl
 <br>
 <pre>
 ( (IP-MAT (NP-SBJ (PRO I;{I}))
-          (VBD pondered;{ponder})
+          (VBD;~Ipr pondered;{ponder[over]})
           (ADVP-MNR (ADV deeply;{deeply}))
           (PUNC ,)
           (ADVP-TMP (ADV then;{then}))
           (PUNC ,)
-          (PP-DIR (P-ROLE over;{over})
-                  (NP (D the;{the})
-                      (NS adventures;{adventure})
-                      (PP (P-ROLE of;{of})
-                          (NP (D the;{the})
-                              (N jungle;{jungle})))))
+          (PP-CLR-DIR (P-ROLE over;{over})
+                      (NP (D the;{the})
+                          (NS adventures;{adventure})
+                          (PP (P-ROLE of;{of})
+                              (NP (D the;{the})
+                                  (N jungle;{jungle})))))
           (PUNC .))
   (ID 6_a_saint_exupery_1943))
 </pre>
