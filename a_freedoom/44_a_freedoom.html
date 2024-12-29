@@ -29,11 +29,11 @@
 The primary instinct of all monsters is to move towards you .
 <br>
 <br>
-<svg width="360pt" height="305pt"
- viewBox="0.00 0.00 360.30 305.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="387pt" height="305pt"
+ viewBox="0.00 0.00 387.30 305.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 301)">
 <title>%3</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-301 356.3,-301 356.3,4 -4,4"/>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-301 383.3,-301 383.3,4 -4,4"/>
 <!-- 0044_0001__The_0044_0003__instinct -->
 <g id="node1" class="node">
 <title>0044_0001__The_0044_0003__instinct</title>
@@ -123,7 +123,7 @@ The primary instinct of all monsters is to move towards you .
 <title>0044_0009__move&#45;&gt;0044_0011__you</title>
 <path fill="none" stroke="black" d="M267.3,-86.8C267.3,-75.16 267.3,-59.55 267.3,-46.24"/>
 <polygon fill="black" stroke="black" points="270.8,-46.18 267.3,-36.18 263.8,-46.18 270.8,-46.18"/>
-<text text-anchor="middle" x="309.8" y="-57.8" font-family="fixed" font-size="14.00">towards[dir]</text>
+<text text-anchor="middle" x="323.3" y="-57.8" font-family="fixed" font-size="14.00">towards[clr][dir]</text>
 </g>
 </g>
 </svg>
@@ -135,7 +135,7 @@ arc(r_0044_0005__all__quant,r_0044_0006__monsters,restriction).
 arc(r_0044_0005__all__quant,r_0044_0007__is,scope).
 arc(r_0044_0007__is,r_0044_0001__The_r_0044_0003__instinct,arg0).
 arc(r_0044_0007__is,r_0044_0009__move,prd2).
-arc(r_0044_0009__move,r_0044_0011__you,r_0044_0010__towards__dir).
+arc(r_0044_0009__move,r_0044_0011__you,r_0044_0010__towards__clr_dir).
 
 </pre>
 <br>
@@ -186,7 +186,7 @@ arc(r_0044_0009__move,r_0044_0011__you,r_0044_0010__towards__dir).
 <text x="643.5" y="210" text-anchor="middle">move</text>
 <line x1="643.5" y1="165" x2="643.5" y2="190" style="stroke:#000000;stroke-width:2;"/>
 <line x1="682" y1="110" x2="643.5" y2="135" style="stroke:#000000;stroke-width:2;"/>
-<text x="748" y="155" text-anchor="middle">PP-DIR</text>
+<text x="748" y="155" text-anchor="middle">PP-CLR-DIR</text>
 <text x="720.5" y="210" text-anchor="middle">P-ROLE</text>
 <text x="720.5" y="265" text-anchor="middle">towards</text>
 <line x1="720.5" y1="220" x2="720.5" y2="245" style="stroke:#000000;stroke-width:2;"/>
@@ -215,8 +215,8 @@ arc(r_0044_0009__move,r_0044_0011__you,r_0044_0010__towards__dir).
           (BEP;~equ_Vt is;{be})
           (IP-INF-PRD2 (TO to;{to})
                        (VB;~Ipr move;{move[towards]})
-                       (PP-DIR (P-ROLE towards;{towards})
-                               (NP (PRO you;{you}))))
+                       (PP-CLR-DIR (P-ROLE towards;{towards})
+                                   (NP (PRO you;{you}))))
           (PUNC .))
   (ID 44_a_freedoom))
 </pre>
