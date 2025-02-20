@@ -90,7 +90,7 @@ I crammed my mouth with stirabout for fear I might give utterance to my anger .
 <title>0051_0002__crammed&#45;&gt;0051_0008__fear</title>
 <path fill="none" stroke="black" d="M114.44,-460.97C129.81,-455.18 147.39,-447.44 162,-438 173.91,-430.31 185.54,-419.77 194.87,-410.36"/>
 <polygon fill="black" stroke="black" points="197.41,-412.76 201.81,-403.12 192.36,-407.91 197.41,-412.76"/>
-<text text-anchor="middle" x="208" y="-426.8" font-family="fixed" font-size="14.00">for[cnt]</text>
+<text text-anchor="middle" x="226.5" y="-426.8" font-family="fixed" font-size="14.00">for[nim][cnt]</text>
 </g>
 <!-- 0051_0004__mouth&#45;&gt;0051_0001__I -->
 <g id="edge5" class="edge">
@@ -159,7 +159,7 @@ I crammed my mouth with stirabout for fear I might give utterance to my anger .
 arc(r_0051_0002__crammed,r_0051_0001__I,arg0).
 arc(r_0051_0002__crammed,r_0051_0004__mouth,arg1).
 arc(r_0051_0002__crammed,r_0051_0006__stirabout,r_0051_0005__with__clr).
-arc(r_0051_0002__crammed,r_0051_0008__fear,r_0051_0007__for__cnt).
+arc(r_0051_0002__crammed,r_0051_0008__fear,r_0051_0007__for__nim_cnt).
 arc(r_0051_0004__mouth,r_0051_0001__I,genv).
 arc(r_0051_0008__fear,r_0051_0010__might_r_0051_0011__give,emb).
 arc(r_0051_0010__might_r_0051_0011__give,r_0051_0001__I,arg0).
@@ -205,7 +205,7 @@ arc(r_0051_0015__anger,r_0051_0001__I,genv).
 <line x1="423.5" y1="165" x2="423.5" y2="190" style="stroke:#000000;stroke-width:2;"/>
 <line x1="390.5" y1="110" x2="423.5" y2="135" style="stroke:#000000;stroke-width:2;"/>
 <line x1="605" y1="55" x2="390.5" y2="80" style="stroke:#000000;stroke-width:2;"/>
-<text x="814" y="100" text-anchor="middle">PP-CNT</text>
+<text x="814" y="100" text-anchor="middle">PP-NIM-CNT</text>
 <text x="506" y="155" text-anchor="middle">P-ROLE</text>
 <text x="506" y="210" text-anchor="middle">for</text>
 <line x1="506" y1="165" x2="506" y2="190" style="stroke:#000000;stroke-width:2;"/>
@@ -274,15 +274,15 @@ arc(r_0051_0015__anger,r_0051_0001__I,genv).
                   (N mouth;{mouth}))
           (PP-CLR (P-ROLE with;{with})
                   (NP (N stirabout;{stirabout})))
-          (PP-CNT (P-ROLE for;{for})
-                  (NP (N fear;{fear})
-                      (CP-THT (IP-SUB (NP-SBJ (PRO I;{I}))
-                                      (MD;~cat_Vi might;{may})
-                                      (IP-INF-CAT (VB give;{give})
-                                                  (NP-OB1 (N utterance;{utterance})
-                                                          (PP (P-ROLE to;{to})
-                                                              (NP (NP-GENV (PRO;_genm_ my;{my}))
-                                                                  (N anger;{anger})))))))))
+          (PP-NIM-CNT (P-ROLE for;{for})
+                      (NP (N fear;{fear})
+                          (CP-THT (IP-SUB (NP-SBJ (PRO I;{I}))
+                                          (MD;~cat_Vi might;{may})
+                                          (IP-INF-CAT (VB give;{give})
+                                                      (NP-OB1 (N utterance;{utterance})
+                                                              (PP (P-ROLE to;{to})
+                                                                  (NP (NP-GENV (PRO;_genm_ my;{my}))
+                                                                      (N anger;{anger})))))))))
           (PUNC .))
   (ID 51_a_joyce_1914))
 </pre>

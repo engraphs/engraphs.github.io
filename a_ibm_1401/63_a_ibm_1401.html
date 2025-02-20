@@ -77,7 +77,7 @@
 <title>0063_0003__produce&#45;&gt;0063_0017__abilities</title>
 <path fill="none" stroke="black" d="M541.31,-262.61C559.23,-249.13 585.45,-229.41 605.4,-214.39"/>
 <polygon fill="black" stroke="black" points="607.64,-217.09 613.53,-208.28 603.44,-211.49 607.64,-217.09"/>
-<text text-anchor="middle" x="639.34" y="-231.8" font-family="fixed" font-size="14.00">because_of[cnt]</text>
+<text text-anchor="middle" x="657.84" y="-231.8" font-family="fixed" font-size="14.00">because_of[nim][cnt]</text>
 </g>
 <!-- 0063_0004__important -->
 <g id="node5" class="node">
@@ -183,7 +183,7 @@
 <pre>
 arc(r_0063_0003__produce,r_0063_0001__1401_r_0063_0002__computers,arg0).
 arc(r_0063_0003__produce,r_0063_0005__reports,arg1).
-arc(r_0063_0003__produce,r_0063_0017__abilities,r_0063_0011__because_of__cnt).
+arc(r_0063_0003__produce,r_0063_0017__abilities,r_0063_0011__because_of__nim_cnt).
 arc(r_0063_0005__reports,r_0063_0004__important,attrib).
 arc(r_0063_0005__reports,r_0063_0007__management,r_0063_0006__for).
 arc(r_0063_0005__reports,r_0063_0009__record_r_0063_0010__time,r_0063_0008__in).
@@ -251,7 +251,7 @@ arc(r_0063_0017__abilities,r_0063_0015__and,nlyr).
 <line x1="676.5" y1="165" x2="709.5" y2="190" style="stroke:#000000;stroke-width:2;"/>
 <line x1="500.5" y1="110" x2="676.5" y2="135" style="stroke:#000000;stroke-width:2;"/>
 <line x1="759" y1="55" x2="500.5" y2="80" style="stroke:#000000;stroke-width:2;"/>
-<text x="1116.5" y="100" text-anchor="middle">PP-CNT</text>
+<text x="1116.5" y="100" text-anchor="middle">PP-NIM-CNT</text>
 <text x="825" y="155" text-anchor="middle">P-ROLE</text>
 <text x="825" y="210" text-anchor="middle">because_of</text>
 <line x1="825" y1="165" x2="825" y2="190" style="stroke:#000000;stroke-width:2;"/>
@@ -314,13 +314,13 @@ arc(r_0063_0017__abilities,r_0063_0015__and,nlyr).
                   (PP (P-ROLE in;{in})
                       (NP (N record;{record})
                           (N time;{time}))))
-          (PP-CNT (P-ROLE because_of;{because_of})
-                  (NP (NP-GENV;{COMPUTERS1401} (PRO;_genm_ their;{their}))
-                      (ADJP (ADJ outstanding;{outstanding}))
-                      (NLYR (NLYR (NP (N processing;{processing}))
-                                  (CONJP (CONJ and;{and})
-                                         (NP (N printing;{printing})))))
-                      (NS abilities;{ability})))
+          (PP-NIM-CNT (P-ROLE because_of;{because_of})
+                      (NP (NP-GENV;{COMPUTERS1401} (PRO;_genm_ their;{their}))
+                          (ADJP (ADJ outstanding;{outstanding}))
+                          (NLYR (NLYR (NP (N processing;{processing}))
+                                      (CONJP (CONJ and;{and})
+                                             (NP (N printing;{printing})))))
+                          (NS abilities;{ability})))
           (PUNC .))
   (ID 63_a_ibm_1401))
 </pre>

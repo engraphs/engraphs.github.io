@@ -29,11 +29,11 @@
 infection occurs through contact with water , food , or soil contaminated by animal urine ;
 <br>
 <br>
-<svg width="396pt" height="305pt"
- viewBox="0.00 0.00 396.05 305.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="378pt" height="305pt"
+ viewBox="0.00 0.00 377.84 305.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 301)">
 <title>%3</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-301 392.05,-301 392.05,4 -4,4"/>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-301 373.84,-301 373.84,4 -4,4"/>
 <!-- 0059_0002__occurs -->
 <g id="node1" class="node">
 <title>0059_0002__occurs</title>
@@ -64,7 +64,7 @@ infection occurs through contact with water , food , or soil contaminated by ani
 <title>0059_0002__occurs&#45;&gt;0059_0004__contact</title>
 <path fill="none" stroke="black" d="M98.2,-262.01C103.82,-256.06 110.24,-249.23 116.05,-243 123.97,-234.5 132.6,-225.13 140.23,-216.83"/>
 <polygon fill="black" stroke="black" points="143,-218.99 147.18,-209.26 137.84,-214.26 143,-218.99"/>
-<text text-anchor="middle" x="176.05" y="-231.8" font-family="fixed" font-size="14.00">through[mnr]</text>
+<text text-anchor="middle" x="194.55" y="-231.8" font-family="fixed" font-size="14.00">through[nim][mnr]</text>
 </g>
 <!-- 0059_0010__or -->
 <g id="node4" class="node">
@@ -142,20 +142,20 @@ infection occurs through contact with water , food , or soil contaminated by ani
 <title>0059_0012__contaminated&#45;&gt;0059_0014__animal_0059_0015__urine</title>
 <path fill="none" stroke="black" d="M297.05,-173.8C297.05,-162.16 297.05,-146.55 297.05,-133.24"/>
 <polygon fill="black" stroke="black" points="300.55,-133.18 297.05,-123.18 293.55,-133.18 300.55,-133.18"/>
-<text text-anchor="middle" x="342.55" y="-144.8" font-family="fixed" font-size="14.00">[arg0]by[lgs]</text>
+<text text-anchor="middle" x="327.05" y="-144.8" font-family="fixed" font-size="14.00">by[arg0]</text>
 </g>
 </g>
 </svg>
 <br>
 <pre>
 arc(r_0059_0002__occurs,r_0059_0001__infection,arg0).
-arc(r_0059_0002__occurs,r_0059_0004__contact,r_0059_0003__through__mnr).
+arc(r_0059_0002__occurs,r_0059_0004__contact,r_0059_0003__through__nim_mnr).
 arc(r_0059_0004__contact,r_0059_0010__or,r_0059_0005__with).
 arc(r_0059_0010__or,r_0059_0006__water,conj1).
 arc(r_0059_0010__or,r_0059_0008__food,conj2).
 arc(r_0059_0010__or,r_0059_0011__soil,conj3).
 arc(r_0059_0012__contaminated,r_0059_0010__or,arg1).
-arc(r_0059_0012__contaminated,r_0059_0014__animal_r_0059_0015__urine,arg0_r_0059_0013__by__lgs).
+arc(r_0059_0012__contaminated,r_0059_0014__animal_r_0059_0015__urine,r_0059_0013__by_arg0).
 
 </pre>
 <br>
@@ -171,7 +171,7 @@ arc(r_0059_0012__contaminated,r_0059_0014__animal_r_0059_0015__urine,arg0_r_0059
 <text x="132" y="155" text-anchor="middle">occurs</text>
 <line x1="132" y1="110" x2="132" y2="135" style="stroke:#000000;stroke-width:2;"/>
 <line x1="544.5" y1="55" x2="132" y2="80" style="stroke:#000000;stroke-width:2;"/>
-<text x="599.5" y="100" text-anchor="middle">PP-MNR</text>
+<text x="599.5" y="100" text-anchor="middle">PP-NIM-MNR</text>
 <text x="203.5" y="155" text-anchor="middle">P-ROLE</text>
 <text x="203.5" y="210" text-anchor="middle">through</text>
 <line x1="203.5" y1="165" x2="203.5" y2="190" style="stroke:#000000;stroke-width:2;"/>
@@ -258,19 +258,19 @@ arc(r_0059_0012__contaminated,r_0059_0014__animal_r_0059_0015__urine,arg0_r_0059
 <pre>
 ( (IP-MAT (NP-SBJ (N infection;{infection}))
           (VBP;~I occurs;{occur})
-          (PP-MNR (P-ROLE through;{through})
-                  (NP (N contact;{contact})
-                      (PP (P-ROLE with;{with})
-                          (NP (NLYR (NP (N water;{water}))
-                                    (PUNC ,)
-                                    (CONJP (NP (N food;{food})))
-                                    (PUNC ,)
-                                    (CONJP (CONJ or;{or})
-                                           (NP (N soil;{soil}))))
-                              (IP-PPL (VVN;~Tn contaminated;{contaminate})
-                                      (PP-LGS (P-ROLE by;{by})
-                                              (NP (N animal;{animal})
-                                                  (N urine;{urine}))))))))
+          (PP-NIM-MNR (P-ROLE through;{through})
+                      (NP (N contact;{contact})
+                          (PP (P-ROLE with;{with})
+                              (NP (NLYR (NP (N water;{water}))
+                                        (PUNC ,)
+                                        (CONJP (NP (N food;{food})))
+                                        (PUNC ,)
+                                        (CONJP (CONJ or;{or})
+                                               (NP (N soil;{soil}))))
+                                  (IP-PPL (VVN;~Tn contaminated;{contaminate})
+                                          (PP-LGS (P-ROLE by;{by})
+                                                  (NP (N animal;{animal})
+                                                      (N urine;{urine}))))))))
           (PUNC ;))
   (ID 59_a_factbook_1_2010))
 </pre>

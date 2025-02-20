@@ -64,7 +64,7 @@ Stand the beaker on a hot plate and keep the solution warm for 30 minutes to coa
 <title>0094_0001__Stand&#45;&gt;0094_0005__a_0094_0007__plate</title>
 <path fill="none" stroke="black" d="M181.44,-173.8C181.44,-162.16 181.44,-146.55 181.44,-133.24"/>
 <polygon fill="black" stroke="black" points="184.94,-133.18 181.44,-123.18 177.94,-133.18 184.94,-133.18"/>
-<text text-anchor="middle" x="205.44" y="-144.8" font-family="fixed" font-size="14.00">on[loc]</text>
+<text text-anchor="middle" x="223.94" y="-144.8" font-family="fixed" font-size="14.00">on[nim][loc]</text>
 </g>
 <!-- 0094_0006__hot -->
 <g id="node4" class="node">
@@ -168,7 +168,7 @@ Stand the beaker on a hot plate and keep the solution warm for 30 minutes to coa
 <title>0094_0009__keep&#45;&gt;0094_0014__30_0094_0015__minutes</title>
 <path fill="none" stroke="black" d="M539.4,-91.64C563.68,-77.97 603.19,-55.73 632.1,-39.46"/>
 <polygon fill="black" stroke="black" points="634.09,-42.36 641.09,-34.4 630.66,-36.26 634.09,-42.36"/>
-<text text-anchor="middle" x="631.44" y="-57.8" font-family="fixed" font-size="14.00">for[tmp]</text>
+<text text-anchor="middle" x="649.94" y="-57.8" font-family="fixed" font-size="14.00">for[nim][tmp]</text>
 </g>
 <!-- 0094_0017__coagulate&#45;&gt;0094_0010__the_0094_0011__solution -->
 <g id="edge9" class="edge">
@@ -208,13 +208,13 @@ Stand the beaker on a hot plate and keep the solution warm for 30 minutes to coa
 <br>
 <pre>
 arc(r_0094_0001__Stand,r_0094_0002__the_r_0094_0003__beaker,arg1).
-arc(r_0094_0001__Stand,r_0094_0005__a_r_0094_0007__plate,r_0094_0004__on__loc).
+arc(r_0094_0001__Stand,r_0094_0005__a_r_0094_0007__plate,r_0094_0004__on__nim_loc).
 arc(r_0094_0005__a_r_0094_0007__plate,r_0094_0006__hot,attrib).
 arc(r_0094_0008__and,r_0094_0001__Stand,conj1).
 arc(r_0094_0008__and,z_0094_1012__cnt,conj2).
 arc(r_0094_0009__keep,r_0094_0010__the_r_0094_0011__solution,arg1).
 arc(r_0094_0009__keep,r_0094_0012__warm,prd).
-arc(r_0094_0009__keep,r_0094_0014__30_r_0094_0015__minutes,r_0094_0013__for__tmp).
+arc(r_0094_0009__keep,r_0094_0014__30_r_0094_0015__minutes,r_0094_0013__for__nim_tmp).
 arc(r_0094_0017__coagulate,r_0094_0010__the_r_0094_0011__solution,arg0).
 arc(r_0094_0017__coagulate,r_0094_0018__the_r_0094_0019__precipitate,arg1).
 arc(z_0094_1004__imperative,r_0094_0008__and,keep_scope).
@@ -241,7 +241,7 @@ arc(z_0094_1012__cnt,r_0094_0017__coagulate,restriction_).
 <line x1="143" y1="275" x2="143" y2="300" style="stroke:#000000;stroke-width:2;"/>
 <line x1="115.5" y1="220" x2="143" y2="245" style="stroke:#000000;stroke-width:2;"/>
 <line x1="203.5" y1="165" x2="115.5" y2="190" style="stroke:#000000;stroke-width:2;"/>
-<text x="291.5" y="210" text-anchor="middle">PP-LOC</text>
+<text x="291.5" y="210" text-anchor="middle">PP-NIM-LOC</text>
 <text x="209" y="265" text-anchor="middle">P-ROLE</text>
 <text x="209" y="320" text-anchor="middle">on</text>
 <line x1="209" y1="275" x2="209" y2="300" style="stroke:#000000;stroke-width:2;"/>
@@ -290,7 +290,7 @@ arc(z_0094_1012__cnt,r_0094_0017__coagulate,restriction_).
 <line x1="704" y1="330" x2="704" y2="355" style="stroke:#000000;stroke-width:2;"/>
 <line x1="704" y1="275" x2="704" y2="300" style="stroke:#000000;stroke-width:2;"/>
 <line x1="869" y1="220" x2="704" y2="245" style="stroke:#000000;stroke-width:2;"/>
-<text x="847" y="265" text-anchor="middle">PP-TMP</text>
+<text x="847" y="265" text-anchor="middle">PP-NIM-TMP</text>
 <text x="781" y="320" text-anchor="middle">P-ROLE</text>
 <text x="781" y="375" text-anchor="middle">for</text>
 <line x1="781" y1="330" x2="781" y2="355" style="stroke:#000000;stroke-width:2;"/>
@@ -341,18 +341,18 @@ arc(z_0094_1012__cnt,r_0094_0017__coagulate,restriction_).
 ( (IP-IMP (ILYR (ILYR (VB Stand;{stand})
                       (NP-OB1 (D the;{the})
                               (N beaker;{beaker}))
-                      (PP-LOC (P-ROLE on;{on})
-                              (NP (D a;{a})
-                                  (ADJP (ADJ hot;{hot}))
-                                  (N plate;{plate}))))
+                      (PP-NIM-LOC (P-ROLE on;{on})
+                                  (NP (D a;{a})
+                                      (ADJP (ADJ hot;{hot}))
+                                      (N plate;{plate}))))
                 (CONJP (CONJ and;{and})
                        (ILYR (VB keep;{keep})
                              (NP-OB1 (D the;{the})
                                      (N solution;{solution}))
                              (ADJP-PRD (ADJ warm;{warm}))
-                             (PP-TMP (P-ROLE for;{for})
-                                     (NP (NUM 30)
-                                         (NS minutes;{minute})))
+                             (PP-NIM-TMP (P-ROLE for;{for})
+                                         (NP (NUM 30)
+                                             (NS minutes;{minute})))
                              (PP-SCON-CNT (IP-INF (TO to;{to})
                                                   (VB coagulate;{coagulate})
                                                   (NP-OB1 (D the;{the})

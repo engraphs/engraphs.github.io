@@ -62,9 +62,9 @@ Get the Government Receiving Station on the sender and tell them what we found ,
 <!-- 0072_0001__Get&#45;&gt;0072_0007__the_0072_0008__sender -->
 <g id="edge2" class="edge">
 <title>0072_0001__Get&#45;&gt;0072_0007__the_0072_0008__sender</title>
-<path fill="none" stroke="black" d="M146.71,-264.34C131.01,-251.26 107.03,-231.28 88.44,-215.78"/>
-<polygon fill="black" stroke="black" points="90.5,-212.95 80.58,-209.24 86.02,-218.33 90.5,-212.95"/>
-<text text-anchor="middle" x="143.09" y="-231.8" font-family="fixed" font-size="14.00">on[loc]</text>
+<path fill="none" stroke="black" d="M143.35,-266.72C132.78,-260.31 119.77,-251.82 109.09,-243 99.72,-235.25 90.27,-225.83 82.26,-217.26"/>
+<polygon fill="black" stroke="black" points="84.68,-214.73 75.35,-209.71 79.51,-219.45 84.68,-214.73"/>
+<text text-anchor="middle" x="151.59" y="-231.8" font-family="fixed" font-size="14.00">on[nim][loc]</text>
 </g>
 <!-- 0072_0004__Receiving -->
 <g id="node4" class="node">
@@ -182,7 +182,7 @@ Get the Government Receiving Station on the sender and tell them what we found ,
 <br>
 <pre>
 arc(r_0072_0001__Get,r_0072_0002__the_r_0072_0003__Government_r_0072_0005__Station,arg1).
-arc(r_0072_0001__Get,r_0072_0007__the_r_0072_0008__sender,r_0072_0006__on__loc).
+arc(r_0072_0001__Get,r_0072_0007__the_r_0072_0008__sender,r_0072_0006__on__nim_loc).
 arc(r_0072_0004__Receiving,r_0072_0002__the_r_0072_0003__Government_r_0072_0005__Station,arg0).
 arc(r_0072_0009__and,r_0072_0001__Get,conj1).
 arc(r_0072_0009__and,r_0072_0010__tell,conj2).
@@ -225,7 +225,7 @@ arc(z_0072_1012__question,r_0072_0014__found,keep_scope).
 <line x1="368.5" y1="275" x2="368.5" y2="300" style="stroke:#000000;stroke-width:2;"/>
 <line x1="236.5" y1="220" x2="368.5" y2="245" style="stroke:#000000;stroke-width:2;"/>
 <line x1="297" y1="165" x2="236.5" y2="190" style="stroke:#000000;stroke-width:2;"/>
-<text x="500.5" y="210" text-anchor="middle">PP-LOC</text>
+<text x="500.5" y="210" text-anchor="middle">PP-NIM-LOC</text>
 <text x="440" y="265" text-anchor="middle">P-ROLE</text>
 <text x="440" y="320" text-anchor="middle">on</text>
 <line x1="440" y1="275" x2="440" y2="300" style="stroke:#000000;stroke-width:2;"/>
@@ -317,9 +317,9 @@ arc(z_0072_1012__question,r_0072_0014__found,keep_scope).
                                            (NLYR (N Government;{government}))
                                            (IP-PPL (VAG;~I Receiving;{receive}))
                                            (N Station;{station}))
-                      (PP-LOC (P-ROLE on;{on})
-                              (NP (D the;{the})
-                                  (N sender;{sender}))))
+                      (PP-NIM-LOC (P-ROLE on;{on})
+                                  (NP (D the;{the})
+                                      (N sender;{sender}))))
                 (CONJP (CONJ and;{and})
                        (ILYR (VB;~Dn.w tell;{tell})
                              (NP-OB2;{GOVSTATION} (PRO them;{they}))

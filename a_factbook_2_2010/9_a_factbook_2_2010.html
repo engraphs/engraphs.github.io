@@ -90,7 +90,7 @@ In civil law the sources recognized as authoritative are principally legislation
 <title>0009_0009__are&#45;&gt;0009_0002__civil_0009_0003__law</title>
 <path fill="none" stroke="black" d="M355.04,-273.11C408.9,-262.75 537.09,-237.28 643.24,-210 647.02,-209.03 650.92,-207.98 654.82,-206.89"/>
 <polygon fill="black" stroke="black" points="655.83,-210.24 664.48,-204.12 653.9,-203.51 655.83,-210.24"/>
-<text text-anchor="middle" x="586.74" y="-231.8" font-family="fixed" font-size="14.00">in[loc]</text>
+<text text-anchor="middle" x="605.24" y="-231.8" font-family="fixed" font-size="14.00">in[nim][loc]</text>
 </g>
 <!-- 0009_0023__and -->
 <g id="node6" class="node">
@@ -233,7 +233,7 @@ In civil law the sources recognized as authoritative are principally legislation
 <title>0009_0019__enacted&#45;&gt;0009_0021__governments</title>
 <path fill="none" stroke="black" d="M603.61,-175.01C616.69,-162.24 635.21,-144.14 650.01,-129.68"/>
 <polygon fill="black" stroke="black" points="652.65,-131.99 657.36,-122.5 647.76,-126.98 652.65,-131.99"/>
-<text text-anchor="middle" x="680.74" y="-144.8" font-family="fixed" font-size="14.00">[arg0]by[lgs]</text>
+<text text-anchor="middle" x="665.24" y="-144.8" font-family="fixed" font-size="14.00">by[arg0]</text>
 </g>
 <!-- 0009_0024__secondarily -->
 <g id="node17" class="node">
@@ -254,7 +254,7 @@ In civil law the sources recognized as authoritative are principally legislation
 <pre>
 arc(r_0009_0006__recognized,r_0009_0004__the_r_0009_0005__sources,arg1).
 arc(r_0009_0006__recognized,r_0009_0008__authoritative,r_0009_0007__as__prd).
-arc(r_0009_0009__are,r_0009_0002__civil_r_0009_0003__law,r_0009_0001__In__loc).
+arc(r_0009_0009__are,r_0009_0002__civil_r_0009_0003__law,r_0009_0001__In__nim_loc).
 arc(r_0009_0009__are,r_0009_0004__the_r_0009_0005__sources,arg0).
 arc(r_0009_0009__are,r_0009_0023__and,prd2).
 arc(r_0009_0011__legislation,r_0009_0010__principally,qual).
@@ -264,7 +264,7 @@ arc(r_0009_0014__codifications,r_0009_0017__or,r_0009_0015__in).
 arc(r_0009_0017__or,r_0009_0016__constitutions,conj1).
 arc(r_0009_0017__or,r_0009_0018__statutes,conj2).
 arc(r_0009_0019__enacted,r_0009_0017__or,arg1).
-arc(r_0009_0019__enacted,r_0009_0021__governments,arg0_r_0009_0020__by__lgs).
+arc(r_0009_0019__enacted,r_0009_0021__governments,r_0009_0020__by_arg0).
 arc(r_0009_0023__and,r_0009_0011__legislation,conj1).
 arc(r_0009_0023__and,r_0009_0026__custom,conj2).
 arc(r_0009_0026__custom,r_0009_0024__secondarily,qual).
@@ -273,7 +273,7 @@ arc(r_0009_0026__custom,r_0009_0024__secondarily,qual).
 <br>
 <svg xmlns="http://www.w3.org/2000/svg" width="2354" height="715" viewBox="-23.54 -3.575 2824.8 858.0">
 <text x="1177" y="45" text-anchor="middle">IP-MAT</text>
-<text x="88" y="100" text-anchor="middle">PP-LOC</text>
+<text x="88" y="100" text-anchor="middle">PP-NIM-LOC</text>
 <text x="33" y="155" text-anchor="middle">P-ROLE</text>
 <text x="33" y="210" text-anchor="middle">In</text>
 <line x1="33" y1="165" x2="33" y2="190" style="stroke:#000000;stroke-width:2;"/>
@@ -438,9 +438,9 @@ arc(r_0009_0026__custom,r_0009_0024__secondarily,qual).
 </svg>
 <br>
 <pre>
-( (IP-MAT (PP-LOC (P-ROLE In;{in})
-                  (NP (N civil;{civil})
-                      (N law;{law})))
+( (IP-MAT (PP-NIM-LOC (P-ROLE In;{in})
+                      (NP (N civil;{civil})
+                          (N law;{law})))
           (NP-SBJ (D the;{the})
                   (NS sources;{source})
                   (IP-PPL (NP-LGS *)

@@ -127,9 +127,9 @@ Hepatitis A - viral disease that interferes with the functioning of the liver ; 
 <!-- 0011_0015__spread&#45;&gt;0011_0017__consumption -->
 <g id="edge7" class="edge">
 <title>0011_0015__spread&#45;&gt;0011_0017__consumption</title>
-<path fill="none" stroke="black" d="M441.86,-351.15C465.15,-337.5 501.03,-316.47 527.75,-300.81"/>
-<polygon fill="black" stroke="black" points="529.57,-303.79 536.43,-295.72 526.03,-297.76 529.57,-303.79"/>
-<text text-anchor="middle" x="546.24" y="-318.8" font-family="fixed" font-size="14.00">through[mnr]</text>
+<path fill="none" stroke="black" d="M449.59,-354.17C465.57,-348.06 485,-339.71 501.24,-330 514.01,-322.37 527,-312.32 537.76,-303.23"/>
+<polygon fill="black" stroke="black" points="540.24,-305.72 545.52,-296.53 535.67,-300.42 540.24,-305.72"/>
+<text text-anchor="middle" x="587.74" y="-318.8" font-family="fixed" font-size="14.00">through[nim][mnr]</text>
 </g>
 <!-- 0011_0027__principally -->
 <g id="node9" class="node">
@@ -142,7 +142,7 @@ Hepatitis A - viral disease that interferes with the functioning of the liver ; 
 <title>0011_0015__spread&#45;&gt;0011_0027__principally</title>
 <path fill="none" stroke="black" d="M418.24,-347.8C418.24,-336.16 418.24,-320.55 418.24,-307.24"/>
 <polygon fill="black" stroke="black" points="421.74,-307.18 418.24,-297.18 414.74,-307.18 421.74,-307.18"/>
-<text text-anchor="middle" x="439.24" y="-318.8" font-family="fixed" font-size="14.00">[mod]</text>
+<text text-anchor="middle" x="457.74" y="-318.8" font-family="fixed" font-size="14.00">[nim][mod]</text>
 </g>
 <!-- 0011_0020__or -->
 <g id="node10" class="node">
@@ -283,8 +283,8 @@ arc(r_0011_0007__interferes,r_0011_0005__disease,arg0).
 arc(r_0011_0007__interferes,r_0011_0009__the_r_0011_0010__functioning,r_0011_0008__with__clr).
 arc(r_0011_0009__the_r_0011_0010__functioning,r_0011_0012__the_r_0011_0013__liver,r_0011_0011__of).
 arc(r_0011_0015__spread,r_0011_0005__disease,arg1).
-arc(r_0011_0015__spread,r_0011_0017__consumption,r_0011_0016__through__mnr).
-arc(r_0011_0015__spread,r_0011_0027__principally,mod).
+arc(r_0011_0015__spread,r_0011_0017__consumption,r_0011_0016__through__nim_mnr).
+arc(r_0011_0015__spread,r_0011_0027__principally,nim_mod).
 arc(r_0011_0017__consumption,r_0011_0020__or,r_0011_0018__of).
 arc(r_0011_0020__or,r_0011_0019__food,conj1).
 arc(r_0011_0020__or,r_0011_0021__water,conj2).
@@ -381,7 +381,7 @@ arc(z_0011_1022,r_0011_0001__Hepatitis_r_0011_0002__A,z_0011_1002).
 <text x="1094.5" y="320" text-anchor="middle">spread</text>
 <line x1="1094.5" y1="275" x2="1094.5" y2="300" style="stroke:#000000;stroke-width:2;"/>
 <line x1="1760" y1="220" x2="1094.5" y2="245" style="stroke:#000000;stroke-width:2;"/>
-<text x="1540" y="265" text-anchor="middle">PP-MNR</text>
+<text x="1540" y="265" text-anchor="middle">PP-NIM-MNR</text>
 <text x="1171.5" y="320" text-anchor="middle">P-ROLE</text>
 <text x="1171.5" y="375" text-anchor="middle">through</text>
 <line x1="1171.5" y1="330" x2="1171.5" y2="355" style="stroke:#000000;stroke-width:2;"/>
@@ -453,7 +453,7 @@ arc(z_0011_1022,r_0011_0001__Hepatitis_r_0011_0002__A,z_0011_1002).
 <text x="1974.5" y="320" text-anchor="middle">,</text>
 <line x1="1974.5" y1="275" x2="1974.5" y2="300" style="stroke:#000000;stroke-width:2;"/>
 <line x1="1760" y1="220" x2="1974.5" y2="245" style="stroke:#000000;stroke-width:2;"/>
-<text x="2238.5" y="265" text-anchor="middle">ADVP-MOD</text>
+<text x="2238.5" y="265" text-anchor="middle">ADVP-NIM-MOD</text>
 <text x="2062.5" y="320" text-anchor="middle">ADV</text>
 <text x="2062.5" y="375" text-anchor="middle">principally</text>
 <line x1="2062.5" y1="330" x2="2062.5" y2="355" style="stroke:#000000;stroke-width:2;"/>
@@ -515,24 +515,24 @@ arc(z_0011_1022,r_0011_0001__Hepatitis_r_0011_0002__A,z_0011_1002).
                (PUNC ;)
                (IP-PPL (NP-LGS *)
                        (VVN;~Tn spread;{spread})
-                       (PP-MNR (P-ROLE through;{through})
-                               (NP (N consumption;{consumption})
-                                   (PP (P-ROLE of;{of})
-                                       (NP (NLYR (NP (N food;{food}))
-                                                 (CONJP (CONJ or;{or})
-                                                        (NP (N water;{water}))))
-                                           (IP-PPL (NP-LGS *)
-                                                   (VVN;~Tn.pr contaminated;{contaminate[with]})
-                                                   (PP-CLR (P-ROLE with;{with})
-                                                           (NP (ADJP (ADJ fecal;{fecal}))
-                                                               (N matter;{matter}))))))))
+                       (PP-NIM-MNR (P-ROLE through;{through})
+                                   (NP (N consumption;{consumption})
+                                       (PP (P-ROLE of;{of})
+                                           (NP (NLYR (NP (N food;{food}))
+                                                     (CONJP (CONJ or;{or})
+                                                            (NP (N water;{water}))))
+                                               (IP-PPL (NP-LGS *)
+                                                       (VVN;~Tn.pr contaminated;{contaminate[with]})
+                                                       (PP-CLR (P-ROLE with;{with})
+                                                               (NP (ADJP (ADJ fecal;{fecal}))
+                                                                   (N matter;{matter}))))))))
                        (PUNC ,)
-                       (ADVP-MOD (ADV principally;{principally})
-                                 (PP (P-ROLE in;{in})
-                                     (NP (NS areas;{area})
-                                         (PP (P-ROLE of;{of})
-                                             (NP (ADJP (ADJ poor;{poor}))
-                                                 (N sanitation;{sanitation}))))))
+                       (ADVP-NIM-MOD (ADV principally;{principally})
+                                     (PP (P-ROLE in;{in})
+                                         (NP (NS areas;{area})
+                                             (PP (P-ROLE of;{of})
+                                                 (NP (ADJP (ADJ poor;{poor}))
+                                                     (N sanitation;{sanitation}))))))
                        (PUNC ;)))))
   (ID 11_a_factbook_1_2010))
 </pre>

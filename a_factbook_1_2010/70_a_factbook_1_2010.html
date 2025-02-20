@@ -103,7 +103,7 @@ aerosolized dust or soil contact disease acquired through inhalation of aerosols
 <title>0070_0007__acquired&#45;&gt;0070_0009__inhalation</title>
 <path fill="none" stroke="black" d="M346.65,-260.8C347.06,-249.16 347.61,-233.55 348.08,-220.24"/>
 <polygon fill="black" stroke="black" points="351.58,-220.29 348.43,-210.18 344.58,-220.05 351.58,-220.29"/>
-<text text-anchor="middle" x="392.04" y="-231.8" font-family="fixed" font-size="14.00">through[cnt]</text>
+<text text-anchor="middle" x="410.04" y="-231.8" font-family="fixed" font-size="14.00">through[nim][cnt]</text>
 </g>
 <!-- 0070_0011__aerosols -->
 <g id="node7" class="node">
@@ -164,7 +164,7 @@ arc(r_0070_0002__dust,r_0070_0001__aerosolized,attrib).
 arc(r_0070_0003__or,r_0070_0002__dust,conj1).
 arc(r_0070_0003__or,r_0070_0004__soil_r_0070_0005__contact_r_0070_0006__disease,conj2).
 arc(r_0070_0007__acquired,r_0070_0003__or,arg1).
-arc(r_0070_0007__acquired,r_0070_0009__inhalation,r_0070_0008__through__cnt).
+arc(r_0070_0007__acquired,r_0070_0009__inhalation,r_0070_0008__through__nim_cnt).
 arc(r_0070_0009__inhalation,r_0070_0011__aerosols,r_0070_0010__of).
 arc(r_0070_0012__contaminated,r_0070_0011__aerosols,arg1).
 arc(r_0070_0012__contaminated,r_0070_0014__rodent_r_0070_0015__urine,r_0070_0013__with__clr).
@@ -218,7 +218,7 @@ arc(z_0070_1014,r_0070_0003__or,z_0070_1002).
 <text x="550" y="265" text-anchor="middle">acquired</text>
 <line x1="550" y1="220" x2="550" y2="245" style="stroke:#000000;stroke-width:2;"/>
 <line x1="880" y1="165" x2="550" y2="190" style="stroke:#000000;stroke-width:2;"/>
-<text x="957" y="210" text-anchor="middle">PP-CNT</text>
+<text x="957" y="210" text-anchor="middle">PP-NIM-CNT</text>
 <text x="632.5" y="265" text-anchor="middle">P-ROLE</text>
 <text x="632.5" y="320" text-anchor="middle">through</text>
 <line x1="632.5" y1="275" x2="632.5" y2="300" style="stroke:#000000;stroke-width:2;"/>
@@ -285,15 +285,15 @@ arc(z_0070_1014,r_0070_0003__or,z_0070_1002).
                              (N disease;{disease}))))
             (IP-PPL (NP-LGS *)
                     (VVN;~Tn acquired;{acquire})
-                    (PP-CNT (P-ROLE through;{through})
-                            (NP (N inhalation;{inhalation})
-                                (PP (P-ROLE of;{of})
-                                    (NP (NS aerosols;{aerosol})
-                                        (IP-PPL (NP-LGS *)
-                                                (VVN;~Tn.pr contaminated;{contaminate[with]})
-                                                (PP-CLR (P-ROLE with;{with})
-                                                        (NP (N rodent;{rodent})
-                                                            (N urine;{urine}))))))))))
+                    (PP-NIM-CNT (P-ROLE through;{through})
+                                (NP (N inhalation;{inhalation})
+                                    (PP (P-ROLE of;{of})
+                                        (NP (NS aerosols;{aerosol})
+                                            (IP-PPL (NP-LGS *)
+                                                    (VVN;~Tn.pr contaminated;{contaminate[with]})
+                                                    (PP-CLR (P-ROLE with;{with})
+                                                            (NP (N rodent;{rodent})
+                                                                (N urine;{urine}))))))))))
         (PUNC :))
   (ID 70_a_factbook_1_2010))
 </pre>
