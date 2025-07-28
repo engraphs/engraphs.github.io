@@ -148,7 +148,7 @@ Go through a turnstile at the back of the car park and follow the footpath past 
 <title>0004_0013__follow&#45;&gt;0004_0017__Garston_0004_0018__Hall</title>
 <path fill="none" stroke="orange" stroke-width="2" d="M316.55,-287.18C341.61,-272.62 380.72,-249.9 410.25,-232.74"/>
 <polygon fill="orange" stroke="orange" stroke-width="2" points="411.95,-235.8 418.84,-227.75 408.43,-229.75 411.95,-235.8"/>
-<text text-anchor="middle" x="429.71" y="-251.87" font-family="fixed" font-size="14.00">past[nim][loc]</text>
+<text text-anchor="middle" x="415.84" y="-251.87" font-family="fixed" font-size="14.00">past[nim]</text>
 </g>
 </g>
 </svg>
@@ -161,7 +161,7 @@ arc(r_0004_0006__the_r_0004_0007__back,r_0004_0009__the_r_0004_0010__car_r_0004_
 arc(r_0004_0012__and,r_0004_0001__Go_r_0004_0002__through,coord_conj1).
 arc(r_0004_0012__and,r_0004_0013__follow,coord_conj2).
 arc(r_0004_0013__follow,r_0004_0014__the_r_0004_0015__footpath,arg1).
-arc(r_0004_0013__follow,r_0004_0017__Garston_r_0004_0018__Hall,r_0004_0016__past__nim_loc).
+arc(r_0004_0013__follow,r_0004_0017__Garston_r_0004_0018__Hall,r_0004_0016__past__nim).
 arc(r_0004_0013__follow,z_0004_1002,arg0).
 
 </pre>
@@ -174,7 +174,7 @@ arc(r_0004_0013__follow,z_0004_1002,arg0).
 <text x="38.5" y="265" text-anchor="middle">Go</text>
 <line x1="38.5" y1="220" x2="38.5" y2="245" style="stroke:#000000;stroke-width:2;"/>
 <line x1="357.5" y1="165" x2="38.5" y2="190" style="stroke:#000000;stroke-width:2;"/>
-<text x="396" y="210" text-anchor="middle">PP-CLR-DIR</text>
+<text x="396" y="210" text-anchor="middle">PP-CLR</text>
 <text x="115.5" y="265" text-anchor="middle">P-ROLE</text>
 <text x="115.5" y="320" text-anchor="middle">through</text>
 <line x1="115.5" y1="275" x2="115.5" y2="300" style="stroke:#000000;stroke-width:2;"/>
@@ -247,7 +247,7 @@ arc(r_0004_0013__follow,z_0004_1002,arg0).
 <line x1="935" y1="330" x2="935" y2="355" style="stroke:#000000;stroke-width:2;"/>
 <line x1="907.5" y1="275" x2="935" y2="300" style="stroke:#000000;stroke-width:2;"/>
 <line x1="973.5" y1="220" x2="907.5" y2="245" style="stroke:#000000;stroke-width:2;"/>
-<text x="1078" y="265" text-anchor="middle">PP-NIM-LOC</text>
+<text x="1078" y="265" text-anchor="middle">PP-NIM</text>
 <text x="1012" y="320" text-anchor="middle">P-ROLE</text>
 <text x="1012" y="375" text-anchor="middle">past</text>
 <line x1="1012" y1="330" x2="1012" y2="355" style="stroke:#000000;stroke-width:2;"/>
@@ -274,23 +274,23 @@ arc(r_0004_0013__follow,z_0004_1002,arg0).
 <br>
 <pre>
 ( (IP-IMP (ILYR (ILYR (VB;~Ipr Go;{go[through]})
-                      (PP-CLR-DIR (P-ROLE through;{through})
-                                  (NP (D a;{a})
-                                      (N turnstile;{turnstile})
-                                      (PP (P-ROLE at;{at})
-                                          (NP (D the;{the})
-                                              (N back;{back})
-                                              (PP (P-ROLE of;{of})
-                                                  (NP;{CAR_PARK} (D the;{the})
-                                                                 (N car;{car})
-                                                                 (N park;{park}))))))))
+                      (PP-CLR (P-ROLE through;{through})
+                              (NP (D a;{a})
+                                  (N turnstile;{turnstile})
+                                  (PP (P-ROLE at;{at})
+                                      (NP (D the;{the})
+                                          (N back;{back})
+                                          (PP (P-ROLE of;{of})
+                                              (NP;{CAR_PARK} (D the;{the})
+                                                             (N car;{car})
+                                                             (N park;{park}))))))))
                 (CONJP (CONJ and;{and})
                        (ILYR (VB;~Tn follow;{follow})
                              (NP-OB1 (D the;{the})
                                      (N footpath;{footpath}))
-                             (PP-NIM-LOC (P-ROLE past;{past})
-                                         (NP (NPR Garston;{Garston})
-                                             (NPR Hall;{Hall}))))))
+                             (PP-NIM (P-ROLE past;{past})
+                                     (NP (NPR Garston;{Garston})
+                                         (NPR Hall;{Hall}))))))
           (PUNC .))
   (ID 4_a_maptext))
 </pre>

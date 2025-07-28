@@ -107,13 +107,13 @@ I thought something like this might happen when I saw that the gun was &mdash;&r
 <!-- 0405_0008__when -->
 <g id="node7" class="node">
 <title>0405_0008__when</title>
-<polygon fill="lightblue" stroke="black" points="178.78,-510.85 304.29,-569.18 53.27,-569.18 178.78,-510.85"/>
-<text text-anchor="middle" x="178.78" y="-546.19" font-family="fixed" font-size="14.00">when[tmp]</text>
+<polygon fill="lightblue" stroke="black" points="178.78,-510.85 254.44,-569.18 103.12,-569.18 178.78,-510.85"/>
+<text text-anchor="middle" x="178.78" y="-546.19" font-family="fixed" font-size="14.00">when</text>
 </g>
 <!-- 0405_0008__when&#45;&gt;0405_0002__thought -->
 <g id="edge6" class="edge">
 <title>0405_0008__when&#45;&gt;0405_0002__thought</title>
-<path fill="none" stroke="blue" stroke-width="2" d="M162.96,-517.65C159.06,-509.64 155.01,-500.98 151.53,-492.85 148.08,-484.78 144.64,-475.93 141.59,-467.7"/>
+<path fill="none" stroke="blue" stroke-width="2" d="M164.65,-521.13C160.26,-512.19 155.52,-502.17 151.53,-492.85 148.08,-484.78 144.64,-475.93 141.59,-467.7"/>
 <polygon fill="blue" stroke="blue" stroke-width="2" points="144.88,-466.53 138.18,-458.32 138.3,-468.91 144.88,-466.53"/>
 <text text-anchor="middle" x="174.41" y="-479.55" font-family="fixed" font-size="14.00">[scope]</text>
 </g>
@@ -126,8 +126,8 @@ I thought something like this might happen when I saw that the gun was &mdash;&r
 <!-- 0405_0008__when&#45;&gt;0405_0010__saw -->
 <g id="edge7" class="edge">
 <title>0405_0008__when&#45;&gt;0405_0010__saw</title>
-<path fill="none" stroke="red" stroke-width="2" d="M192.69,-516.99C199.61,-501.19 207.93,-482.21 214.73,-466.69"/>
-<polygon fill="red" stroke="red" stroke-width="2" points="217.78,-468.45 218.59,-457.89 211.37,-465.64 217.78,-468.45"/>
+<path fill="none" stroke="red" stroke-width="2" d="M191.27,-520.23C198.46,-503.83 207.47,-483.25 214.75,-466.65"/>
+<polygon fill="red" stroke="red" stroke-width="2" points="217.89,-468.2 218.7,-457.63 211.48,-465.39 217.89,-468.2"/>
 <text text-anchor="middle" x="248.41" y="-479.55" font-family="fixed" font-size="14.00">[restriction]</text>
 </g>
 <!-- 0405_0010__saw&#45;&gt;0405_0001__I -->
@@ -172,8 +172,8 @@ arc(r_0405_0002__thought,r_0405_0006__might,arg1).
 arc(r_0405_0003__something,r_0405_0005__this,r_0405_0004__like).
 arc(r_0405_0006__might,r_0405_0007__happen,keep_scope).
 arc(r_0405_0007__happen,r_0405_0003__something,arg0).
-arc(r_0405_0008__when_tmp,r_0405_0002__thought,scope).
-arc(r_0405_0008__when_tmp,r_0405_0010__saw,restriction).
+arc(r_0405_0008__when,r_0405_0002__thought,scope).
+arc(r_0405_0008__when,r_0405_0010__saw,restriction).
 arc(r_0405_0010__saw,r_0405_0001__I,arg0).
 arc(r_0405_0010__saw,r_0405_0014__was,arg1).
 arc(r_0405_0014__was,r_0405_0012__the_r_0405_0013__gun,arg0).
@@ -224,7 +224,7 @@ arc(r_0405_0014__was,r_0405_0012__the_r_0405_0013__gun,arg0).
 <line x1="379.5" y1="165" x2="561" y2="190" style="stroke:#000000;stroke-width:2;"/>
 <line x1="379.5" y1="110" x2="379.5" y2="135" style="stroke:#000000;stroke-width:2;"/>
 <line x1="599.5" y1="55" x2="379.5" y2="80" style="stroke:#000000;stroke-width:2;"/>
-<text x="880" y="100" text-anchor="middle">PP-SCON-TMP</text>
+<text x="880" y="100" text-anchor="middle">PP-SCON</text>
 <text x="649" y="155" text-anchor="middle">P-CONN</text>
 <text x="649" y="210" text-anchor="middle">when</text>
 <line x1="649" y1="165" x2="649" y2="190" style="stroke:#000000;stroke-width:2;"/>
@@ -282,14 +282,14 @@ arc(r_0405_0014__was,r_0405_0012__the_r_0405_0013__gun,arg0).
                                           (NP (D;_nphd_ this;{this}))))
                               (MD;~cat_Vi might;{may})
                               (IP-INF-CAT (VB;~I happen;{happen}))))
-          (PP-SCON-TMP (P-CONN when;{when})
-                       (IP-ADV (NP-SBJ;{DORLE} (PRO I;{I}))
-                               (VBD;~Tf saw;{see})
-                               (CP-THT-OB1 (IP-SUB (C that;{that})
-                                                   (NP-SBJ (D the;{the})
-                                                           (N gun;{gun}))
-                                                   (BED;~La was;{be})
-                                                   (PUNC &lt;mdash&gt;)))))
+          (PP-SCON (P-CONN when;{when})
+                   (IP-ADV (NP-SBJ;{DORLE} (PRO I;{I}))
+                           (VBD;~Tf saw;{see})
+                           (CP-THT-OB1 (IP-SUB (C that;{that})
+                                               (NP-SBJ (D the;{the})
+                                                       (N gun;{gun}))
+                                               (BED;~La was;{be})
+                                               (PUNC &lt;mdash&gt;)))))
           (PURQ &lt;rdquo&gt;))
   (ID 405_a_dick_1952))
 </pre>

@@ -218,21 +218,21 @@ Consultation with a travel medicine physician is needed to evaluate individual r
 <!-- z_0007_1003 -->
 <g id="node15" class="node">
 <title>z_0007_1003</title>
-<polygon fill="lightblue" stroke="black" points="255.31,-416.45 320.36,-474.79 190.25,-474.79 255.31,-416.45"/>
-<text text-anchor="middle" x="255.31" y="-451.8" font-family="fixed" font-size="14.00">[cnt]</text>
+<polygon fill="lightblue" stroke="black" points="255.31,-416.45 326.72,-474.79 183.89,-474.79 255.31,-416.45"/>
+<text text-anchor="middle" x="255.31" y="-451.8" font-family="fixed" font-size="14.00">[nim]</text>
 </g>
 <!-- z_0007_1003&#45;&gt;0007_0007__is -->
 <g id="edge15" class="edge">
 <title>z_0007_1003&#45;&gt;0007_0007__is</title>
-<path fill="none" stroke="blue" stroke-width="2" d="M241.6,-428.09C237.17,-418.89 232.51,-408.38 229.06,-398.45 224.15,-384.36 220.16,-368.31 217.21,-354.66"/>
+<path fill="none" stroke="blue" stroke-width="2" d="M241.33,-427.53C236.98,-418.46 232.44,-408.17 229.06,-398.45 224.15,-384.36 220.16,-368.31 217.21,-354.66"/>
 <polygon fill="blue" stroke="blue" stroke-width="2" points="220.66,-354.03 215.23,-344.93 213.8,-355.43 220.66,-354.03"/>
 <text text-anchor="middle" x="252.93" y="-385.15" font-family="fixed" font-size="14.00">[scope]</text>
 </g>
 <!-- z_0007_1003&#45;&gt;0007_0013__and -->
 <g id="edge16" class="edge">
 <title>z_0007_1003&#45;&gt;0007_0013__and</title>
-<path fill="none" stroke="red" stroke-width="2" d="M266.37,-425.86C274.22,-405.66 284.79,-378.45 293.08,-357.1"/>
-<polygon fill="red" stroke="red" stroke-width="2" points="296.33,-358.4 296.69,-347.81 289.81,-355.87 296.33,-358.4"/>
+<path fill="none" stroke="red" stroke-width="2" d="M266.62,-425.21C274.49,-404.97 284.99,-377.94 293.21,-356.77"/>
+<polygon fill="red" stroke="red" stroke-width="2" points="296.42,-358.18 296.77,-347.6 289.89,-355.65 296.42,-358.18"/>
 <text text-anchor="middle" x="322.93" y="-385.15" font-family="fixed" font-size="14.00">[restriction]</text>
 </g>
 </g>
@@ -253,8 +253,8 @@ arc(r_0007_0014__recommend,r_0007_0017__measures,arg1).
 arc(r_0007_0017__measures,r_0007_0015__appropriate,attrib).
 arc(r_0007_0017__measures,r_0007_0016__preventive,attrib).
 arc(r_0007_0017__measures,r_0007_0019__vaccines,r_0007_0018__such_as).
-arc(z_0007_1003__cnt,r_0007_0007__is,scope_).
-arc(z_0007_1003__cnt,r_0007_0013__and,restriction_).
+arc(z_0007_1003__nim,r_0007_0007__is,scope).
+arc(z_0007_1003__nim,r_0007_0013__and,restriction).
 
 </pre>
 <br>
@@ -304,7 +304,7 @@ arc(z_0007_1003__cnt,r_0007_0013__and,restriction_).
 <line x1="830.5" y1="165" x2="830.5" y2="190" style="stroke:#000000;stroke-width:2;"/>
 <line x1="797.5" y1="110" x2="830.5" y2="135" style="stroke:#000000;stroke-width:2;"/>
 <line x1="935" y1="55" x2="797.5" y2="80" style="stroke:#000000;stroke-width:2;"/>
-<text x="1342" y="100" text-anchor="middle">PP-SCON-CNT</text>
+<text x="1342" y="100" text-anchor="middle">PP-SCON-NIM</text>
 <text x="1342" y="155" text-anchor="middle">IP-INF</text>
 <text x="896.5" y="210" text-anchor="middle">TO</text>
 <text x="896.5" y="265" text-anchor="middle">to</text>
@@ -390,7 +390,7 @@ arc(z_0007_1003__cnt,r_0007_0013__and,restriction_).
           (BEP;~cat_Ve_passive_ is;{be})
           (IP-PPL-CAT (NP-LGS *)
                       (VVN;~Tn needed;{need}))
-          (PP-SCON-CNT (IP-INF (TO to;{to})
+          (PP-SCON-NIM (IP-INF (TO to;{to})
                                (ILYR (ILYR (VB;~Tn evaluate;{evaluate})
                                            (NP-OB1 (ADJP (ADJ individual;{individual}))
                                                    (N risk;{risk})))

@@ -36,8 +36,8 @@ When she arrived in the other country she made sure she got a pair of blue glass
 <!-- 0018_0001__When -->
 <g id="node1" class="node">
 <title>0018_0001__When</title>
-<polygon fill="lightblue" stroke="black" points="254.06,-471.95 379.57,-530.29 128.55,-530.29 254.06,-471.95"/>
-<text text-anchor="middle" x="254.06" y="-507.3" font-family="fixed" font-size="14.00">when[tmp]</text>
+<polygon fill="lightblue" stroke="black" points="254.06,-471.95 329.72,-530.29 178.4,-530.29 254.06,-471.95"/>
+<text text-anchor="middle" x="254.06" y="-507.3" font-family="fixed" font-size="14.00">when</text>
 </g>
 <!-- 0018_0003__arrived_0018_0004__in -->
 <g id="node2" class="node">
@@ -48,7 +48,7 @@ When she arrived in the other country she made sure she got a pair of blue glass
 <!-- 0018_0001__When&#45;&gt;0018_0003__arrived_0018_0004__in -->
 <g id="edge1" class="edge">
 <title>0018_0001__When&#45;&gt;0018_0003__arrived_0018_0004__in</title>
-<path fill="none" stroke="red" stroke-width="2" d="M231.35,-482.02C224.3,-473.16 216.61,-463.24 209.81,-453.95 203.56,-445.41 197.01,-435.92 191.16,-427.22"/>
+<path fill="none" stroke="red" stroke-width="2" d="M234.92,-486.49C226.98,-476.59 217.77,-464.84 209.81,-453.95 203.56,-445.41 197.01,-435.92 191.16,-427.22"/>
 <polygon fill="red" stroke="red" stroke-width="2" points="194.09,-425.3 185.63,-418.91 188.26,-429.18 194.09,-425.3"/>
 <text text-anchor="middle" x="248.68" y="-440.65" font-family="fixed" font-size="14.00">[restriction]</text>
 </g>
@@ -61,8 +61,8 @@ When she arrived in the other country she made sure she got a pair of blue glass
 <!-- 0018_0001__When&#45;&gt;0018_0009__made -->
 <g id="edge2" class="edge">
 <title>0018_0001__When&#45;&gt;0018_0009__made</title>
-<path fill="none" stroke="blue" stroke-width="2" d="M273.5,-480.46C284.57,-463.74 298.36,-442.9 309.3,-426.35"/>
-<polygon fill="blue" stroke="blue" stroke-width="2" points="312.09,-428.48 314.69,-418.21 306.25,-424.62 312.09,-428.48"/>
+<path fill="none" stroke="blue" stroke-width="2" d="M270.85,-484.47C282.31,-467.15 297.5,-444.2 309.34,-426.29"/>
+<polygon fill="blue" stroke="blue" stroke-width="2" points="312.13,-428.43 314.73,-418.16 306.29,-424.56 312.13,-428.43"/>
 <text text-anchor="middle" x="325.68" y="-440.65" font-family="fixed" font-size="14.00">[scope]</text>
 </g>
 <!-- 0018_0005__the_0018_0007__country -->
@@ -187,8 +187,8 @@ When she arrived in the other country she made sure she got a pair of blue glass
 </svg>
 <br>
 <pre>
-arc(r_0018_0001__When_tmp,r_0018_0003__arrived_r_0018_0004__in,restriction).
-arc(r_0018_0001__When_tmp,r_0018_0009__made,scope).
+arc(r_0018_0001__When,r_0018_0003__arrived_r_0018_0004__in,restriction).
+arc(r_0018_0001__When,r_0018_0009__made,scope).
 arc(r_0018_0003__arrived_r_0018_0004__in,r_0018_0005__the_r_0018_0007__country,arg1).
 arc(r_0018_0003__arrived_r_0018_0004__in,r_0018_0008__she,arg0).
 arc(r_0018_0005__the_r_0018_0007__country,r_0018_0006__other,attrib).
@@ -204,7 +204,7 @@ arc(r_0018_0017__glasses,r_0018_0016__blue,attrib).
 <br>
 <svg xmlns="http://www.w3.org/2000/svg" width="1232" height="495" viewBox="-12.32 -2.475 1478.4 594.0">
 <text x="616" y="45" text-anchor="middle">IP-MAT</text>
-<text x="236.5" y="100" text-anchor="middle">PP-SCON-TMP</text>
+<text x="236.5" y="100" text-anchor="middle">PP-SCON</text>
 <text x="33" y="155" text-anchor="middle">P-CONN</text>
 <text x="33" y="210" text-anchor="middle">When</text>
 <line x1="33" y1="165" x2="33" y2="190" style="stroke:#000000;stroke-width:2;"/>
@@ -220,7 +220,7 @@ arc(r_0018_0017__glasses,r_0018_0016__blue,attrib).
 <text x="176" y="265" text-anchor="middle">arrived</text>
 <line x1="176" y1="220" x2="176" y2="245" style="stroke:#000000;stroke-width:2;"/>
 <line x1="269.5" y1="165" x2="176" y2="190" style="stroke:#000000;stroke-width:2;"/>
-<text x="346.5" y="210" text-anchor="middle">PP-CLR-LOC</text>
+<text x="346.5" y="210" text-anchor="middle">PP-CLR</text>
 <text x="253" y="265" text-anchor="middle">P-ROLE</text>
 <text x="253" y="320" text-anchor="middle">in</text>
 <line x1="253" y1="275" x2="253" y2="300" style="stroke:#000000;stroke-width:2;"/>
@@ -309,13 +309,13 @@ arc(r_0018_0017__glasses,r_0018_0016__blue,attrib).
 </svg>
 <br>
 <pre>
-( (IP-MAT (PP-SCON-TMP (P-CONN When;{when})
-                       (IP-ADV (NP-SBJ;{PERSON} (PRO she;{she}))
-                               (VBD;~Ipr arrived;{arrive[in]})
-                               (PP-CLR-LOC (P-ROLE in;{in})
-                                           (NP (D the;{the})
-                                               (ADJP (ADJ other;{other}))
-                                               (N country;{country})))))
+( (IP-MAT (PP-SCON (P-CONN When;{when})
+                   (IP-ADV (NP-SBJ;{PERSON} (PRO she;{she}))
+                           (VBD;~Ipr arrived;{arrive[in]})
+                           (PP-CLR (P-ROLE in;{in})
+                                   (NP (D the;{the})
+                                       (ADJP (ADJ other;{other}))
+                                       (N country;{country})))))
           (NP-SBJ;{PERSON} (PRO she;{she}))
           (VBD;~Cf.a made;{make})
           (ADJP-PRD (ADJ sure;{sure}))

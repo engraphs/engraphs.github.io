@@ -36,8 +36,8 @@ When a mystery is too overpowering, one dare not disobey.
 <!-- 0063_0001__When -->
 <g id="node1" class="node">
 <title>0063_0001__When</title>
-<polygon fill="lightblue" stroke="black" points="278.04,-455.35 403.55,-513.68 152.53,-513.68 278.04,-455.35"/>
-<text text-anchor="middle" x="278.04" y="-490.69" font-family="fixed" font-size="14.00">when[tmp]</text>
+<polygon fill="lightblue" stroke="black" points="278.04,-455.35 353.7,-513.68 202.38,-513.68 278.04,-455.35"/>
+<text text-anchor="middle" x="278.04" y="-490.69" font-family="fixed" font-size="14.00">when</text>
 </g>
 <!-- 0063_0004__is -->
 <g id="node2" class="node">
@@ -48,7 +48,7 @@ When a mystery is too overpowering, one dare not disobey.
 <!-- 0063_0001__When&#45;&gt;0063_0004__is -->
 <g id="edge1" class="edge">
 <title>0063_0001__When&#45;&gt;0063_0004__is</title>
-<path fill="none" stroke="red" stroke-width="2" d="M249.98,-467.88C241.67,-458.99 233.33,-448.44 227.79,-437.35 221.03,-423.78 217.36,-407.4 215.38,-393.37"/>
+<path fill="none" stroke="red" stroke-width="2" d="M254.68,-472.75C244.94,-462.98 234.38,-450.54 227.79,-437.35 221.03,-423.78 217.36,-407.4 215.38,-393.37"/>
 <polygon fill="red" stroke="red" stroke-width="2" points="218.9,-393.37 214.29,-383.83 211.94,-394.16 218.9,-393.37"/>
 <text text-anchor="middle" x="266.67" y="-424.05" font-family="fixed" font-size="14.00">[restriction]</text>
 </g>
@@ -61,7 +61,7 @@ When a mystery is too overpowering, one dare not disobey.
 <!-- 0063_0001__When&#45;&gt;0063_0010__not -->
 <g id="edge2" class="edge">
 <title>0063_0001__When&#45;&gt;0063_0010__not</title>
-<path fill="none" stroke="blue" stroke-width="2" d="M295.65,-463.15C300.23,-454.89 305,-445.87 309.04,-437.35 315.88,-422.92 322.54,-406.5 327.84,-392.67"/>
+<path fill="none" stroke="blue" stroke-width="2" d="M293.57,-466.88C298.75,-457.67 304.39,-447.17 309.04,-437.35 315.88,-422.92 322.54,-406.5 327.84,-392.67"/>
 <polygon fill="blue" stroke="blue" stroke-width="2" points="330.99,-394.25 331.23,-383.66 324.43,-391.79 330.99,-394.25"/>
 <text text-anchor="middle" x="341.67" y="-424.05" font-family="fixed" font-size="14.00">[scope]</text>
 </g>
@@ -147,8 +147,8 @@ When a mystery is too overpowering, one dare not disobey.
 </svg>
 <br>
 <pre>
-arc(r_0063_0001__When_tmp,r_0063_0004__is,restriction).
-arc(r_0063_0001__When_tmp,r_0063_0010__not,scope).
+arc(r_0063_0001__When,r_0063_0004__is,restriction).
+arc(r_0063_0001__When,r_0063_0010__not,scope).
 arc(r_0063_0004__is,r_0063_0002__a_r_0063_0003__mystery,arg0).
 arc(r_0063_0004__is,r_0063_0006__overpowering,prd).
 arc(r_0063_0006__overpowering,r_0063_0005__too,qual).
@@ -160,7 +160,7 @@ arc(r_0063_0011__disobey,r_0063_0008__one,arg0).
 <br>
 <svg xmlns="http://www.w3.org/2000/svg" width="913" height="385" viewBox="-9.13 -1.925 1095.6 462.0">
 <text x="456.5" y="45" text-anchor="middle">IP-MAT</text>
-<text x="231" y="100" text-anchor="middle">PP-SCON-TMP</text>
+<text x="231" y="100" text-anchor="middle">PP-SCON</text>
 <text x="33" y="155" text-anchor="middle">P-CONN</text>
 <text x="33" y="210" text-anchor="middle">When</text>
 <line x1="33" y1="165" x2="33" y2="190" style="stroke:#000000;stroke-width:2;"/>
@@ -180,7 +180,7 @@ arc(r_0063_0011__disobey,r_0063_0008__one,arg0).
 <text x="236.5" y="265" text-anchor="middle">is</text>
 <line x1="236.5" y1="220" x2="236.5" y2="245" style="stroke:#000000;stroke-width:2;"/>
 <line x1="264" y1="165" x2="236.5" y2="190" style="stroke:#000000;stroke-width:2;"/>
-<text x="368.5" y="210" text-anchor="middle">ADJP-PRD2</text>
+<text x="368.5" y="210" text-anchor="middle">ADJP-PRD</text>
 <text x="302.5" y="265" text-anchor="middle">ADVP</text>
 <text x="302.5" y="320" text-anchor="middle">ADV</text>
 <text x="302.5" y="375" text-anchor="middle">too</text>
@@ -225,12 +225,12 @@ arc(r_0063_0011__disobey,r_0063_0008__one,arg0).
 </svg>
 <br>
 <pre>
-( (IP-MAT (PP-SCON-TMP (P-CONN When;{when})
-                       (IP-ADV (NP-SBJ (D a;{a})
-                                       (N mystery;{mystery}))
-                               (BEP;~La is;{be})
-                               (ADJP-PRD2 (ADVP (ADV too;{too}))
-                                          (ADJ overpowering;{overpowering}))))
+( (IP-MAT (PP-SCON (P-CONN When;{when})
+                   (IP-ADV (NP-SBJ (D a;{a})
+                                   (N mystery;{mystery}))
+                           (BEP;~La is;{be})
+                           (ADJP-PRD (ADVP (ADV too;{too}))
+                                     (ADJ overpowering;{overpowering}))))
           (PUNC ,)
           (NP-SBJ (NUM one;{one}))
           (MD;~cat_Vi dare;{dare})

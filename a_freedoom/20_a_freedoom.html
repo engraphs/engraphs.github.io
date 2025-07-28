@@ -36,8 +36,8 @@ If you're struggling with the difficulty of the game, one option is to change to
 <!-- 0020_0001__If -->
 <g id="node1" class="node">
 <title>0020_0001__If</title>
-<polygon fill="lightblue" stroke="black" points="188.5,-416.45 311.89,-474.79 65.11,-474.79 188.5,-416.45"/>
-<text text-anchor="middle" x="188.5" y="-451.8" font-family="fixed" font-size="14.00">if[cnt][cnd]</text>
+<polygon fill="lightblue" stroke="black" points="188.5,-416.45 222.79,-474.79 154.2,-474.79 188.5,-416.45"/>
+<text text-anchor="middle" x="188.5" y="-451.8" font-family="fixed" font-size="14.00">if</text>
 </g>
 <!-- 0020_0003&#39;re -->
 <g id="node2" class="node">
@@ -48,7 +48,7 @@ If you're struggling with the difficulty of the game, one option is to change to
 <!-- 0020_0001__If&#45;&gt;0020_0003&#39;re -->
 <g id="edge1" class="edge">
 <title>0020_0001__If&#45;&gt;0020_0003&#39;re</title>
-<path fill="none" stroke="red" stroke-width="2" d="M160.79,-429.23C152.39,-420.28 143.91,-409.63 138.25,-398.45 131.38,-384.9 127.5,-368.52 125.32,-354.49"/>
+<path fill="none" stroke="red" stroke-width="2" d="M173.41,-441.67C162,-431.24 146.86,-415.45 138.25,-398.45 131.38,-384.9 127.5,-368.52 125.32,-354.49"/>
 <polygon fill="red" stroke="red" stroke-width="2" points="128.84,-354.41 124.09,-344.94 121.89,-355.3 128.84,-354.41"/>
 <text text-anchor="middle" x="177.12" y="-385.15" font-family="fixed" font-size="14.00">[restriction]</text>
 </g>
@@ -61,7 +61,7 @@ If you're struggling with the difficulty of the game, one option is to change to
 <!-- 0020_0001__If&#45;&gt;0020_0014__is -->
 <g id="edge2" class="edge">
 <title>0020_0001__If&#45;&gt;0020_0014__is</title>
-<path fill="none" stroke="blue" stroke-width="2" d="M206.04,-424.22C210.62,-415.97 215.41,-406.95 219.5,-398.45 226.54,-383.81 233.51,-367.13 239.04,-353.19"/>
+<path fill="none" stroke="blue" stroke-width="2" d="M199.97,-434.98C206.08,-424.35 213.54,-410.85 219.5,-398.45 226.54,-383.81 233.51,-367.13 239.04,-353.19"/>
 <polygon fill="blue" stroke="blue" stroke-width="2" points="242.21,-354.7 242.59,-344.12 235.69,-352.16 242.21,-354.7"/>
 <text text-anchor="middle" x="252.12" y="-385.15" font-family="fixed" font-size="14.00">[scope]</text>
 </g>
@@ -186,8 +186,8 @@ If you're struggling with the difficulty of the game, one option is to change to
 </svg>
 <br>
 <pre>
-arc(r_0020_0001__If_cnt_cnd,r_0020_0003___apos_re,restriction).
-arc(r_0020_0001__If_cnt_cnd,r_0020_0014__is,scope).
+arc(r_0020_0001__If,r_0020_0003___apos_re,restriction).
+arc(r_0020_0001__If,r_0020_0014__is,scope).
 arc(r_0020_0003___apos_re,r_0020_0004__struggling_r_0020_0005__with,keep_scope).
 arc(r_0020_0004__struggling_r_0020_0005__with,r_0020_0002__you,arg0).
 arc(r_0020_0004__struggling_r_0020_0005__with,r_0020_0006__the_r_0020_0007__difficulty,arg1).
@@ -202,7 +202,7 @@ arc(r_0020_0018__an_r_0020_0020__skill_r_0020_0021__level,r_0020_0019__easier,at
 <br>
 <svg xmlns="http://www.w3.org/2000/svg" width="1551" height="550" viewBox="-15.51 -2.750 1861.2 660.0">
 <text x="775.5" y="45" text-anchor="middle">IP-MAT</text>
-<text x="385" y="100" text-anchor="middle">PP-SCON-CNT-CND</text>
+<text x="385" y="100" text-anchor="middle">PP-SCON</text>
 <text x="33" y="155" text-anchor="middle">P-CONN</text>
 <text x="33" y="210" text-anchor="middle">If</text>
 <line x1="33" y1="165" x2="33" y2="190" style="stroke:#000000;stroke-width:2;"/>
@@ -276,7 +276,7 @@ arc(r_0020_0018__an_r_0020_0020__skill_r_0020_0021__level,r_0020_0019__easier,at
 <text x="1006.5" y="155" text-anchor="middle">is</text>
 <line x1="1006.5" y1="110" x2="1006.5" y2="135" style="stroke:#000000;stroke-width:2;"/>
 <line x1="775.5" y1="55" x2="1006.5" y2="80" style="stroke:#000000;stroke-width:2;"/>
-<text x="1281.5" y="100" text-anchor="middle">IP-INF-PRD2</text>
+<text x="1281.5" y="100" text-anchor="middle">IP-INF-PRD</text>
 <text x="1094.5" y="155" text-anchor="middle">TO</text>
 <text x="1094.5" y="210" text-anchor="middle">to</text>
 <line x1="1094.5" y1="165" x2="1094.5" y2="190" style="stroke:#000000;stroke-width:2;"/>
@@ -319,27 +319,27 @@ arc(r_0020_0018__an_r_0020_0020__skill_r_0020_0021__level,r_0020_0019__easier,at
 </svg>
 <br>
 <pre>
-( (IP-MAT (PP-SCON-CNT-CND (P-CONN If;{if})
-                           (IP-ADV (NP-SBJ (PRO you;{you}))
-                                   (BEP;~cat_Vg &lt;apos&gt;re;{be})
-                                   (IP-PPL-CAT (VAG;~Ipr struggling;{struggle[with]})
-                                               (PP-CLR (P-ROLE with;{with})
+( (IP-MAT (PP-SCON (P-CONN If;{if})
+                   (IP-ADV (NP-SBJ (PRO you;{you}))
+                           (BEP;~cat_Vg &lt;apos&gt;re;{be})
+                           (IP-PPL-CAT (VAG;~Ipr struggling;{struggle[with]})
+                                       (PP-CLR (P-ROLE with;{with})
+                                               (NP (D the;{the})
+                                                   (N difficulty;{difficulty})
+                                                   (PP (P-ROLE of;{of})
                                                        (NP (D the;{the})
-                                                           (N difficulty;{difficulty})
-                                                           (PP (P-ROLE of;{of})
-                                                               (NP (D the;{the})
-                                                                   (N game;{game}))))))))
+                                                           (N game;{game}))))))))
           (PUNC ,)
           (NP-SBJ (D one;{one})
                   (N option;{option}))
           (BEP;~equ_Vt is;{be})
-          (IP-INF-PRD2 (TO to;{to})
-                       (VB;~Ipr change;{change[to]})
-                       (PP-CLR (P-ROLE to;{to})
-                               (NP (D an;{an})
-                                   (ADJP (ADJR easier;{easy}))
-                                   (N skill;{skill})
-                                   (N level;{level}))))
+          (IP-INF-PRD (TO to;{to})
+                      (VB;~Ipr change;{change[to]})
+                      (PP-CLR (P-ROLE to;{to})
+                              (NP (D an;{an})
+                                  (ADJP (ADJR easier;{easy}))
+                                  (N skill;{skill})
+                                  (N level;{level}))))
           (PUNC .))
   (ID 20_a_freedoom))
 </pre>

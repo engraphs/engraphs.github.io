@@ -36,8 +36,8 @@ As the Spring Drive adopts a crystal oscillator not a balance, the accuracy is n
 <!-- 0063_0001__As -->
 <g id="node1" class="node">
 <title>0063_0001__As</title>
-<polygon fill="lightblue" stroke="black" points="328.29,-549.74 413.49,-608.07 243.08,-608.07 328.29,-549.74"/>
-<text text-anchor="middle" x="328.29" y="-585.08" font-family="fixed" font-size="14.00">as[cnt]</text>
+<polygon fill="lightblue" stroke="black" points="328.29,-549.74 371.07,-608.07 285.51,-608.07 328.29,-549.74"/>
+<text text-anchor="middle" x="328.29" y="-585.08" font-family="fixed" font-size="14.00">as</text>
 </g>
 <!-- 0063_0005__adopts -->
 <g id="node2" class="node">
@@ -48,7 +48,7 @@ As the Spring Drive adopts a crystal oscillator not a balance, the accuracy is n
 <!-- 0063_0001__As&#45;&gt;0063_0005__adopts -->
 <g id="edge1" class="edge">
 <title>0063_0001__As&#45;&gt;0063_0005__adopts</title>
-<path fill="none" stroke="red" stroke-width="2" d="M305.42,-565.01C297.09,-555.49 288.4,-543.83 283.04,-531.74 276.99,-518.11 273.99,-501.91 272.53,-488.01"/>
+<path fill="none" stroke="red" stroke-width="2" d="M311.88,-572.06C301.9,-561.62 289.82,-547.03 283.04,-531.74 276.99,-518.11 273.99,-501.91 272.53,-488.01"/>
 <polygon fill="red" stroke="red" stroke-width="2" points="276.02,-487.79 271.75,-478.09 269.04,-488.34 276.02,-487.79"/>
 <text text-anchor="middle" x="321.91" y="-518.44" font-family="fixed" font-size="14.00">[restriction]</text>
 </g>
@@ -61,7 +61,7 @@ As the Spring Drive adopts a crystal oscillator not a balance, the accuracy is n
 <!-- 0063_0001__As&#45;&gt;0063_0016__not -->
 <g id="edge2" class="edge">
 <title>0063_0001__As&#45;&gt;0063_0016__not</title>
-<path fill="none" stroke="blue" stroke-width="2" d="M344.8,-560.44C350.01,-551.43 355.62,-541.28 360.29,-531.74 367.34,-517.33 374.22,-500.91 379.7,-487.08"/>
+<path fill="none" stroke="blue" stroke-width="2" d="M341.1,-566.74C347.24,-556.39 354.49,-543.59 360.29,-531.74 367.34,-517.33 374.22,-500.91 379.7,-487.08"/>
 <polygon fill="blue" stroke="blue" stroke-width="2" points="382.85,-488.64 383.21,-478.05 376.32,-486.11 382.85,-488.64"/>
 <text text-anchor="middle" x="392.91" y="-518.44" font-family="fixed" font-size="14.00">[scope]</text>
 </g>
@@ -186,8 +186,8 @@ As the Spring Drive adopts a crystal oscillator not a balance, the accuracy is n
 </svg>
 <br>
 <pre>
-arc(r_0063_0001__As_cnt,r_0063_0005__adopts,restriction_).
-arc(r_0063_0001__As_cnt,r_0063_0016__not,scope_).
+arc(r_0063_0001__As,r_0063_0005__adopts,restriction).
+arc(r_0063_0001__As,r_0063_0016__not,scope).
 arc(r_0063_0005__adopts,r_0063_0002__the_r_0063_0003__Spring_r_0063_0004__Drive,arg0).
 arc(r_0063_0005__adopts,r_0063_0009__not,arg1).
 arc(r_0063_0009__not,r_0063_0006__a_r_0063_0007__crystal_r_0063_0008__oscillator,conj1).
@@ -202,7 +202,7 @@ arc(r_0063_0019__a_r_0063_0020__difference,r_0063_0022__position,r_0063_0021__in
 <br>
 <svg xmlns="http://www.w3.org/2000/svg" width="1826" height="495" viewBox="-18.26 -2.475 2191.2 594.0">
 <text x="913" y="45" text-anchor="middle">IP-MAT</text>
-<text x="368.5" y="100" text-anchor="middle">PP-SCON-CNT</text>
+<text x="368.5" y="100" text-anchor="middle">PP-SCON</text>
 <text x="33" y="155" text-anchor="middle">P-CONN</text>
 <text x="33" y="210" text-anchor="middle">As</text>
 <line x1="33" y1="165" x2="33" y2="190" style="stroke:#000000;stroke-width:2;"/>
@@ -325,17 +325,17 @@ arc(r_0063_0019__a_r_0063_0020__difference,r_0063_0022__position,r_0063_0021__in
 </svg>
 <br>
 <pre>
-( (IP-MAT (PP-SCON-CNT (P-CONN As;{as})
-                       (IP-ADV (NP-SBJ;{SPRING_DRIVE} (D the;{the})
-                                                      (NPR Spring;{Spring})
-                                                      (NPR Drive;{Drive}))
-                               (VBP adopts;{adopt})
-                               (NP-OB1 (NLYR (NLYR (D a;{a})
-                                                   (N crystal;{crystal})
-                                                   (N oscillator;{oscillator}))
-                                             (CONJP (NEG not;{not})
-                                                    (NLYR (D a;{a})
-                                                          (N balance;{balance})))))))
+( (IP-MAT (PP-SCON (P-CONN As;{as})
+                   (IP-ADV (NP-SBJ;{SPRING_DRIVE} (D the;{the})
+                                                  (NPR Spring;{Spring})
+                                                  (NPR Drive;{Drive}))
+                           (VBP adopts;{adopt})
+                           (NP-OB1 (NLYR (NLYR (D a;{a})
+                                               (N crystal;{crystal})
+                                               (N oscillator;{oscillator}))
+                                         (CONJP (NEG not;{not})
+                                                (NLYR (D a;{a})
+                                                      (N balance;{balance})))))))
           (PUNC ,)
           (NP-SBJ (D the;{the})
                   (N accuracy;{accuracy}))

@@ -152,21 +152,21 @@ The faster you go, the less time you have to avoid a hazard or collision.
 <!-- z_0019_1007 -->
 <g id="node11" class="node">
 <title>z_0019_1007</title>
-<polygon fill="lightblue" stroke="black" points="328.81,-283.17 393.87,-341.51 263.76,-341.51 328.81,-283.17"/>
-<text text-anchor="middle" x="328.81" y="-318.51" font-family="fixed" font-size="14.00">[cnt]</text>
+<polygon fill="lightblue" stroke="black" points="328.81,-283.17 400.23,-341.51 257.4,-341.51 328.81,-283.17"/>
+<text text-anchor="middle" x="328.81" y="-318.51" font-family="fixed" font-size="14.00">[nim]</text>
 </g>
 <!-- z_0019_1007&#45;&gt;0019_0010__have -->
 <g id="edge9" class="edge">
 <title>z_0019_1007&#45;&gt;0019_0010__have</title>
-<path fill="none" stroke="blue" stroke-width="2" d="M313.61,-296.43C308.25,-286.93 302.57,-275.81 298.56,-265.17 295.63,-257.37 293.25,-248.7 291.38,-240.55"/>
+<path fill="none" stroke="blue" stroke-width="2" d="M313.14,-295.6C307.92,-286.29 302.45,-275.5 298.56,-265.17 295.63,-257.37 293.25,-248.7 291.38,-240.55"/>
 <polygon fill="blue" stroke="blue" stroke-width="2" points="294.85,-240.04 289.39,-230.96 287.99,-241.46 294.85,-240.04"/>
 <text text-anchor="middle" x="322.44" y="-251.87" font-family="fixed" font-size="14.00">[scope]</text>
 </g>
 <!-- z_0019_1007&#45;&gt;0019_0012__avoid -->
 <g id="edge10" class="edge">
 <title>z_0019_1007&#45;&gt;0019_0012__avoid</title>
-<path fill="none" stroke="red" stroke-width="2" d="M339.92,-292.84C346.33,-276.55 354.39,-256.06 360.93,-239.44"/>
-<polygon fill="red" stroke="red" stroke-width="2" points="364.07,-241.02 364.47,-230.43 357.55,-238.46 364.07,-241.02"/>
+<path fill="none" stroke="red" stroke-width="2" d="M340.26,-291.97C346.57,-275.94 354.4,-256.04 360.79,-239.78"/>
+<polygon fill="red" stroke="red" stroke-width="2" points="364.05,-241.07 364.45,-230.48 357.54,-238.5 364.05,-241.07"/>
 <text text-anchor="middle" x="395.44" y="-251.87" font-family="fixed" font-size="14.00">[restriction]</text>
 </g>
 <!-- z_0019_1016 -->
@@ -199,8 +199,8 @@ arc(r_0019_0010__have,r_0019_0006__the_r_0019_0008__time,arg1).
 arc(r_0019_0010__have,r_0019_0009__you,arg0).
 arc(r_0019_0012__avoid,r_0019_0009__you,arg0).
 arc(r_0019_0012__avoid,r_0019_0013__a_r_0019_0014__hazard_r_0019_0015__or_r_0019_0016__collision,arg1).
-arc(z_0019_1007__cnt,r_0019_0010__have,scope_).
-arc(z_0019_1007__cnt,r_0019_0012__avoid,restriction_).
+arc(z_0019_1007__nim,r_0019_0010__have,scope).
+arc(z_0019_1007__nim,r_0019_0012__avoid,restriction).
 arc(z_0019_1016,r_0019_0001__The,z_0019_1012).
 arc(z_0019_1016,r_0019_0006__the_r_0019_0008__time,z_0019_1003).
 
@@ -270,7 +270,7 @@ arc(z_0019_1016,r_0019_0006__the_r_0019_0008__time,z_0019_1003).
 <text x="709.5" y="265" text-anchor="middle">have</text>
 <line x1="709.5" y1="220" x2="709.5" y2="245" style="stroke:#000000;stroke-width:2;"/>
 <line x1="841.5" y1="165" x2="709.5" y2="190" style="stroke:#000000;stroke-width:2;"/>
-<text x="946" y="210" text-anchor="middle">PP-SCON-CNT</text>
+<text x="946" y="210" text-anchor="middle">PP-SCON-NIM</text>
 <text x="946" y="265" text-anchor="middle">IP-INF2</text>
 <text x="775.5" y="320" text-anchor="middle">TO</text>
 <text x="775.5" y="375" text-anchor="middle">to</text>
@@ -329,7 +329,7 @@ arc(z_0019_1016,r_0019_0006__the_r_0019_0008__time,z_0019_1003).
             (IP-REL (NP-OB1 *T*)
                     (NP-SBJ (PRO you;{you}))
                     (HVP;~Tn have;{have})
-                    (PP-SCON-CNT (IP-INF2 (TO to;{to})
+                    (PP-SCON-NIM (IP-INF2 (TO to;{to})
                                           (VB;~Tn avoid;{avoid})
                                           (NP-OB1 (D a;{a})
                                                   (NLYR (NLYR (N hazard;{hazard}))

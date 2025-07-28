@@ -81,14 +81,14 @@ It was mounted so that it could make a full circle.
 <!-- 0314_0004__so_that -->
 <g id="node5" class="node">
 <title>0314_0004__so_that</title>
-<polygon fill="lightblue" stroke="black" points="133.69,-416.45 266.63,-474.79 0.75,-474.79 133.69,-416.45"/>
-<text text-anchor="middle" x="133.69" y="-451.8" font-family="fixed" font-size="14.00">so_that[cnt]</text>
+<polygon fill="lightblue" stroke="black" points="133.69,-416.45 224.2,-474.79 43.18,-474.79 133.69,-416.45"/>
+<text text-anchor="middle" x="133.69" y="-451.8" font-family="fixed" font-size="14.00">so_that</text>
 </g>
 <!-- 0314_0004__so_that&#45;&gt;0314_0002__was -->
 <g id="edge4" class="edge">
 <title>0314_0004__so_that&#45;&gt;0314_0002__was</title>
-<path fill="none" stroke="blue" stroke-width="2" d="M116.29,-423.9C104.16,-402.65 88.03,-374.42 75.92,-353.23"/>
-<polygon fill="blue" stroke="blue" stroke-width="2" points="79,-351.55 71,-344.61 72.92,-355.03 79,-351.55"/>
+<path fill="none" stroke="blue" stroke-width="2" d="M117.78,-426.5C105.46,-404.94 88.43,-375.12 75.81,-353.03"/>
+<polygon fill="blue" stroke="blue" stroke-width="2" points="78.99,-351.54 70.99,-344.6 72.91,-355.02 78.99,-351.54"/>
 <text text-anchor="middle" x="124.31" y="-385.15" font-family="fixed" font-size="14.00">[scope]</text>
 </g>
 <!-- 0314_0006__could -->
@@ -100,8 +100,8 @@ It was mounted so that it could make a full circle.
 <!-- 0314_0004__so_that&#45;&gt;0314_0006__could -->
 <g id="edge5" class="edge">
 <title>0314_0004__so_that&#45;&gt;0314_0006__could</title>
-<path fill="none" stroke="red" stroke-width="2" d="M151.08,-423.9C163.22,-402.65 179.35,-374.42 191.45,-353.23"/>
-<polygon fill="red" stroke="red" stroke-width="2" points="194.46,-355.03 196.38,-344.61 188.38,-351.55 194.46,-355.03"/>
+<path fill="none" stroke="red" stroke-width="2" d="M149.6,-426.5C161.92,-404.94 178.95,-375.12 191.57,-353.03"/>
+<polygon fill="red" stroke="red" stroke-width="2" points="194.47,-355.02 196.39,-344.6 188.39,-351.54 194.47,-355.02"/>
 <text text-anchor="middle" x="214.31" y="-385.15" font-family="fixed" font-size="14.00">[restriction]</text>
 </g>
 <!-- 0314_0007__make -->
@@ -157,8 +157,8 @@ It was mounted so that it could make a full circle.
 arc(r_0314_0002__was,r_0314_0003__mounted,keep_scope).
 arc(r_0314_0003__mounted,r_0314_0001__It,arg1).
 arc(r_0314_0003__mounted,star_z_0314_1009,arg0).
-arc(r_0314_0004__so_that_cnt,r_0314_0002__was,scope_).
-arc(r_0314_0004__so_that_cnt,r_0314_0006__could,restriction_).
+arc(r_0314_0004__so_that,r_0314_0002__was,scope).
+arc(r_0314_0004__so_that,r_0314_0006__could,restriction).
 arc(r_0314_0006__could,r_0314_0007__make,keep_scope).
 arc(r_0314_0007__make,r_0314_0001__It,arg0).
 arc(r_0314_0007__make,r_0314_0008__a_r_0314_0010__circle,arg1).
@@ -188,7 +188,7 @@ arc(r_0314_0008__a_r_0314_0010__circle,r_0314_0009__full,attrib).
 <line x1="390.5" y1="165" x2="390.5" y2="190" style="stroke:#000000;stroke-width:2;"/>
 <line x1="357.5" y1="110" x2="390.5" y2="135" style="stroke:#000000;stroke-width:2;"/>
 <line x1="489.5" y1="55" x2="357.5" y2="80" style="stroke:#000000;stroke-width:2;"/>
-<text x="676.5" y="100" text-anchor="middle">PP-SCON-CNT</text>
+<text x="676.5" y="100" text-anchor="middle">PP-SCON</text>
 <text x="467.5" y="155" text-anchor="middle">P-CONN</text>
 <text x="467.5" y="210" text-anchor="middle">so_that</text>
 <line x1="467.5" y1="165" x2="467.5" y2="190" style="stroke:#000000;stroke-width:2;"/>
@@ -239,13 +239,13 @@ arc(r_0314_0008__a_r_0314_0010__circle,r_0314_0009__full,attrib).
           (BED;~cat_Ve_passive_ was;{be})
           (IP-PPL-CAT (NP-LGS *)
                       (VVN;~Tn mounted;{mount}))
-          (PP-SCON-CNT (P-CONN so_that;{so_that})
-                       (IP-ADV (NP-SBJ;{GUN} (PRO it;{it}))
-                               (MD;~cat_Vi could;{can})
-                               (IP-INF-CAT (VB;~Tn make;{make})
-                                           (NP-OB1 (D a;{a})
-                                                   (ADJP (ADJ full;{full}))
-                                                   (N circle;{circle})))))
+          (PP-SCON (P-CONN so_that;{so_that})
+                   (IP-ADV (NP-SBJ;{GUN} (PRO it;{it}))
+                           (MD;~cat_Vi could;{can})
+                           (IP-INF-CAT (VB;~Tn make;{make})
+                                       (NP-OB1 (D a;{a})
+                                               (ADJP (ADJ full;{full}))
+                                               (N circle;{circle})))))
           (PUNC .))
   (ID 314_a_dick_1952))
 </pre>

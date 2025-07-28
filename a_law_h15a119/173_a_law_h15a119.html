@@ -87,8 +87,8 @@
 <!-- z_0173_1012 -->
 <g id="node6" class="node">
 <title>z_0173_1012</title>
-<polygon fill="lightblue" stroke="black" points="466.47,-383.58 531.52,-441.92 401.41,-441.92 466.47,-383.58"/>
-<text text-anchor="middle" x="466.47" y="-418.92" font-family="fixed" font-size="14.00">[cnt]</text>
+<polygon fill="lightblue" stroke="black" points="466.47,-383.58 537.89,-441.92 395.05,-441.92 466.47,-383.58"/>
+<text text-anchor="middle" x="466.47" y="-418.92" font-family="fixed" font-size="14.00">[nim]</text>
 </g>
 <!-- 0173_0010__may&#45;&gt;z_0173_1012 -->
 <g id="edge4" class="edge">
@@ -106,8 +106,8 @@
 <!-- z_0173_1012&#45;&gt;0173_0011__request -->
 <g id="edge20" class="edge">
 <title>z_0173_1012&#45;&gt;0173_0011__request</title>
-<path fill="none" stroke="blue" stroke-width="2" d="M446.96,-400.7C429.92,-382.54 405.06,-356.07 386.54,-336.34"/>
-<polygon fill="blue" stroke="blue" stroke-width="2" points="389.23,-334.1 379.84,-329.2 384.13,-338.89 389.23,-334.1"/>
+<path fill="none" stroke="blue" stroke-width="2" d="M446.22,-399.91C429.27,-381.85 405,-356 386.77,-336.58"/>
+<polygon fill="blue" stroke="blue" stroke-width="2" points="389.33,-334.2 379.93,-329.3 384.22,-338.99 389.33,-334.2"/>
 <text text-anchor="middle" x="437.09" y="-352.28" font-family="fixed" font-size="14.00">[scope]</text>
 </g>
 <!-- 0173_0022__show -->
@@ -119,8 +119,8 @@
 <!-- z_0173_1012&#45;&gt;0173_0022__show -->
 <g id="edge21" class="edge">
 <title>z_0173_1012&#45;&gt;0173_0022__show</title>
-<path fill="none" stroke="red" stroke-width="2" d="M486.16,-400.7C503.57,-382.32 529.05,-355.44 547.82,-335.64"/>
-<polygon fill="red" stroke="red" stroke-width="2" points="550.26,-338.15 554.6,-328.49 545.18,-333.34 550.26,-338.15"/>
+<path fill="none" stroke="red" stroke-width="2" d="M486.91,-399.91C504.3,-381.55 529.34,-355.14 547.84,-335.62"/>
+<polygon fill="red" stroke="red" stroke-width="2" points="550.16,-338.26 554.5,-328.59 545.08,-333.44 550.16,-338.26"/>
 <text text-anchor="middle" x="573.09" y="-352.28" font-family="fixed" font-size="14.00">[restriction]</text>
 </g>
 <!-- 0173_0011__request&#45;&gt;0173_0004__A_0173_0005__business_0173_0006__operator -->
@@ -313,7 +313,7 @@
 arc(r_0173_0007__handling,r_0173_0004__A_r_0173_0005__business_r_0173_0006__operator,arg0).
 arc(r_0173_0007__handling,r_0173_0009__information,arg1).
 arc(r_0173_0009__information,r_0173_0008__personal,attrib).
-arc(r_0173_0010__may,z_0173_1012__cnt,keep_scope).
+arc(r_0173_0010__may,z_0173_1012__nim,keep_scope).
 arc(r_0173_0011__request,r_0173_0004__A_r_0173_0005__business_r_0173_0006__operator,arg0).
 arc(r_0173_0011__request,r_0173_0012__a_r_0173_0013__person,arg1).
 arc(r_0173_0014__making,r_0173_0012__a_r_0173_0013__person,arg0).
@@ -329,8 +329,8 @@ arc(r_0173_0026__identify,r_0173_0027__the_r_0173_0030__data,arg1).
 arc(r_0173_0027__the_r_0173_0030__data,r_0173_0028__retained,attrib).
 arc(r_0173_0027__the_r_0173_0030__data,r_0173_0029__personal,attrib).
 arc(r_0173_0027__the_r_0173_0030__data,r_0173_0032__question,r_0173_0031__in).
-arc(z_0173_1012__cnt,r_0173_0011__request,scope_).
-arc(z_0173_1012__cnt,r_0173_0022__show,restriction_).
+arc(z_0173_1012__nim,r_0173_0011__request,scope).
+arc(z_0173_1012__nim,r_0173_0022__show,restriction).
 
 </pre>
 <br>
@@ -445,7 +445,7 @@ arc(z_0173_1012__cnt,r_0173_0022__show,restriction_).
 <line x1="1248.5" y1="220" x2="1281.5" y2="245" style="stroke:#000000;stroke-width:2;"/>
 <line x1="1188" y1="165" x2="1248.5" y2="190" style="stroke:#000000;stroke-width:2;"/>
 <line x1="1589.5" y1="110" x2="1188" y2="135" style="stroke:#000000;stroke-width:2;"/>
-<text x="1936" y="155" text-anchor="middle">PP-SCON-CNT</text>
+<text x="1936" y="155" text-anchor="middle">PP-SCON-NIM</text>
 <text x="1936" y="210" text-anchor="middle">IP-INF</text>
 <text x="1523.5" y="265" text-anchor="middle">TO</text>
 <text x="1523.5" y="320" text-anchor="middle">to</text>
@@ -541,7 +541,7 @@ arc(z_0173_1012__cnt,r_0173_0022__show,restriction_).
                                                   (NP (NLYR (NLYR (N disclosure;{disclosure}))
                                                             (CONJP (CONJ and;{and})
                                                                    (NLYR (NS others;{other})))))))))
-                      (PP-SCON-CNT (IP-INF (TO to;{to})
+                      (PP-SCON-NIM (IP-INF (TO to;{to})
                                            (VB;~Tnt show;{show})
                                            (NP-DOB1 (ADJP (ADJ sufficient;{sufficient}))
                                                     (NS items;{item}))

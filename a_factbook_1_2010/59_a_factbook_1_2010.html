@@ -63,7 +63,7 @@ infection occurs through contact with water, food, or soil contaminated by anima
 <title>0059_0002__occurs&#45;&gt;0059_0004__contact</title>
 <path fill="none" stroke="orange" stroke-width="2" d="M99.67,-290.26C112.05,-276.79 129.44,-257.89 143.67,-242.43"/>
 <polygon fill="orange" stroke="orange" stroke-width="2" points="146.23,-244.81 150.42,-235.09 141.08,-240.08 146.23,-244.81"/>
-<text text-anchor="middle" x="197.3" y="-257.89" font-family="fixed" font-size="14.00">through[nim][mnr]</text>
+<text text-anchor="middle" x="178.93" y="-257.89" font-family="fixed" font-size="14.00">through[nim]</text>
 </g>
 <!-- 0059_0010__or -->
 <g id="node4" class="node">
@@ -148,7 +148,7 @@ infection occurs through contact with water, food, or soil contaminated by anima
 <br>
 <pre>
 arc(r_0059_0002__occurs,r_0059_0001__infection,arg0).
-arc(r_0059_0002__occurs,r_0059_0004__contact,r_0059_0003__through__nim_mnr).
+arc(r_0059_0002__occurs,r_0059_0004__contact,r_0059_0003__through__nim).
 arc(r_0059_0004__contact,r_0059_0010__or,r_0059_0005__with).
 arc(r_0059_0010__or,r_0059_0006__water,conj1).
 arc(r_0059_0010__or,r_0059_0008__food,conj2).
@@ -170,7 +170,7 @@ arc(r_0059_0012__contaminated,r_0059_0014__animal_r_0059_0015__urine,r_0059_0013
 <text x="132" y="155" text-anchor="middle">occurs</text>
 <line x1="132" y1="110" x2="132" y2="135" style="stroke:#000000;stroke-width:2;"/>
 <line x1="577.5" y1="55" x2="132" y2="80" style="stroke:#000000;stroke-width:2;"/>
-<text x="632.5" y="100" text-anchor="middle">PP-NIM-MNR</text>
+<text x="632.5" y="100" text-anchor="middle">PP-NIM</text>
 <text x="203.5" y="155" text-anchor="middle">P-ROLE</text>
 <text x="203.5" y="210" text-anchor="middle">through</text>
 <line x1="203.5" y1="165" x2="203.5" y2="190" style="stroke:#000000;stroke-width:2;"/>
@@ -257,19 +257,19 @@ arc(r_0059_0012__contaminated,r_0059_0014__animal_r_0059_0015__urine,r_0059_0013
 <pre>
 ( (IP-MAT (NP-SBJ (N infection;{infection}))
           (VBP;~I occurs;{occur})
-          (PP-NIM-MNR (P-ROLE through;{through})
-                      (NP (N contact;{contact})
-                          (PP (P-ROLE with;{with})
-                              (NP (NLYR (NLYR (N water;{water}))
-                                        (PUNC ,)
-                                        (CONJP (NLYR (N food;{food})))
-                                        (PUNC ,)
-                                        (CONJP (CONJ or;{or})
-                                               (NLYR (N soil;{soil}))))
-                                  (IP-PPL (VVN;~Tn contaminated;{contaminate})
-                                          (PP-LGS (P-ROLE;_lgs_ by;{by})
-                                                  (NP (N animal;{animal})
-                                                      (N urine;{urine}))))))))
+          (PP-NIM (P-ROLE through;{through})
+                  (NP (N contact;{contact})
+                      (PP (P-ROLE with;{with})
+                          (NP (NLYR (NLYR (N water;{water}))
+                                    (PUNC ,)
+                                    (CONJP (NLYR (N food;{food})))
+                                    (PUNC ,)
+                                    (CONJP (CONJ or;{or})
+                                           (NLYR (N soil;{soil}))))
+                              (IP-PPL (VVN;~Tn contaminated;{contaminate})
+                                      (PP-LGS (P-ROLE;_lgs_ by;{by})
+                                              (NP (N animal;{animal})
+                                                  (N urine;{urine}))))))))
           (PUNC ;))
   (ID 59_a_factbook_1_2010))
 </pre>

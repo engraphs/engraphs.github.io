@@ -36,8 +36,8 @@ As they passed the column he looked up at the statue:
 <!-- 0226_0001__As -->
 <g id="node1" class="node">
 <title>0226_0001__As</title>
-<polygon fill="lightblue" stroke="black" points="205,-188.78 290.2,-247.12 119.79,-247.12 205,-188.78"/>
-<text text-anchor="middle" x="205" y="-224.12" font-family="fixed" font-size="14.00">as[cnt]</text>
+<polygon fill="lightblue" stroke="black" points="205,-188.78 247.78,-247.12 162.22,-247.12 205,-188.78"/>
+<text text-anchor="middle" x="205" y="-224.12" font-family="fixed" font-size="14.00">as</text>
 </g>
 <!-- 0226_0003__passed -->
 <g id="node2" class="node">
@@ -48,7 +48,7 @@ As they passed the column he looked up at the statue:
 <!-- 0226_0001__As&#45;&gt;0226_0003__passed -->
 <g id="edge1" class="edge">
 <title>0226_0001__As&#45;&gt;0226_0003__passed</title>
-<path fill="none" stroke="red" stroke-width="2" d="M183.14,-203.36C175.16,-193.84 166.66,-182.36 160.75,-170.78 156.83,-163.11 153.78,-154.34 151.44,-146.06"/>
+<path fill="none" stroke="red" stroke-width="2" d="M189.14,-210.28C179.71,-199.74 168.18,-185.33 160.75,-170.78 156.83,-163.11 153.78,-154.34 151.44,-146.06"/>
 <polygon fill="red" stroke="red" stroke-width="2" points="154.9,-145.46 149.09,-136.6 148.11,-147.15 154.9,-145.46"/>
 <text text-anchor="middle" x="199.62" y="-157.48" font-family="fixed" font-size="14.00">[restriction]</text>
 </g>
@@ -61,7 +61,7 @@ As they passed the column he looked up at the statue:
 <!-- 0226_0001__As&#45;&gt;0226_0007__looked_0226_0008__up -->
 <g id="edge2" class="edge">
 <title>0226_0001__As&#45;&gt;0226_0007__looked_0226_0008__up</title>
-<path fill="none" stroke="blue" stroke-width="2" d="M221.49,-199.6C226.89,-190.52 232.82,-180.28 238,-170.78 242.5,-162.51 247.16,-153.43 251.36,-145.04"/>
+<path fill="none" stroke="blue" stroke-width="2" d="M217.88,-205.64C224.13,-195.25 231.64,-182.46 238,-170.78 242.5,-162.51 247.16,-153.43 251.36,-145.04"/>
 <polygon fill="blue" stroke="blue" stroke-width="2" points="254.48,-146.63 255.77,-136.11 248.2,-143.53 254.48,-146.63"/>
 <text text-anchor="middle" x="271.62" y="-157.48" font-family="fixed" font-size="14.00">[scope]</text>
 </g>
@@ -121,8 +121,8 @@ As they passed the column he looked up at the statue:
 </svg>
 <br>
 <pre>
-arc(r_0226_0001__As_cnt,r_0226_0003__passed,restriction_).
-arc(r_0226_0001__As_cnt,r_0226_0007__looked_r_0226_0008__up,scope_).
+arc(r_0226_0001__As,r_0226_0003__passed,restriction).
+arc(r_0226_0001__As,r_0226_0007__looked_r_0226_0008__up,scope).
 arc(r_0226_0003__passed,r_0226_0002__they,arg0).
 arc(r_0226_0003__passed,r_0226_0004__the_r_0226_0005__column,arg1).
 arc(r_0226_0007__looked_r_0226_0008__up,r_0226_0006__he,arg0).
@@ -132,7 +132,7 @@ arc(r_0226_0007__looked_r_0226_0008__up,r_0226_0010__the_r_0226_0011__statue,r_0
 <br>
 <svg xmlns="http://www.w3.org/2000/svg" width="748" height="330" viewBox="-7.48 -1.650 897.6 396.0">
 <text x="374" y="45" text-anchor="middle">IP-MAT</text>
-<text x="159.5" y="100" text-anchor="middle">PP-SCON-CNT</text>
+<text x="159.5" y="100" text-anchor="middle">PP-SCON</text>
 <text x="33" y="155" text-anchor="middle">P-CONN</text>
 <text x="33" y="210" text-anchor="middle">As</text>
 <line x1="33" y1="165" x2="33" y2="190" style="stroke:#000000;stroke-width:2;"/>
@@ -197,11 +197,11 @@ arc(r_0226_0007__looked_r_0226_0008__up,r_0226_0010__the_r_0226_0011__statue,r_0
 </svg>
 <br>
 <pre>
-( (IP-MAT (PP-SCON-CNT (P-CONN As;{as})
-                       (IP-ADV (NP-SBJ;{MAYOR+COUNCILLORS} (PRO they;{they}))
-                               (VBD passed;{pass})
-                               (NP-OB1 (D the;{the})
-                                       (N column;{column}))))
+( (IP-MAT (PP-SCON (P-CONN As;{as})
+                   (IP-ADV (NP-SBJ;{MAYOR+COUNCILLORS} (PRO they;{they}))
+                           (VBD passed;{pass})
+                           (NP-OB1 (D the;{the})
+                                   (N column;{column}))))
           (NP-SBJ;{MAYOR} (PRO he;{he}))
           (VBD looked;{look})
           (RP up;{up})

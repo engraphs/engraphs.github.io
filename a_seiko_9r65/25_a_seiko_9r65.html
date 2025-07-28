@@ -178,13 +178,13 @@ Accuracy of monthly rate of &lt;plusmn&gt; 15 seconds (daily rate of &lt;plusmn&
 <!-- 0025_0025__while -->
 <g id="node13" class="node">
 <title>0025_0025__while</title>
-<polygon fill="lightblue" stroke="black" points="448.8,-510.85 564.77,-569.18 332.84,-569.18 448.8,-510.85"/>
-<text text-anchor="middle" x="448.8" y="-546.19" font-family="fixed" font-size="14.00">while[cnt]</text>
+<polygon fill="lightblue" stroke="black" points="448.8,-510.85 522.34,-569.18 375.26,-569.18 448.8,-510.85"/>
+<text text-anchor="middle" x="448.8" y="-546.19" font-family="fixed" font-size="14.00">while</text>
 </g>
 <!-- 0025_0025__while&#45;&gt;0025_0023__is -->
 <g id="edge11" class="edge">
 <title>0025_0025__while&#45;&gt;0025_0023__is</title>
-<path fill="none" stroke="blue" stroke-width="2" d="M432.06,-518.86C427.89,-510.61 423.72,-501.53 420.55,-492.85 415.4,-478.73 411.37,-462.57 408.45,-448.84"/>
+<path fill="none" stroke="blue" stroke-width="2" d="M433.83,-522.3C429.09,-513.18 424.16,-502.75 420.55,-492.85 415.4,-478.73 411.37,-462.57 408.45,-448.84"/>
 <polygon fill="blue" stroke="blue" stroke-width="2" points="411.89,-448.18 406.51,-439.06 405.03,-449.55 411.89,-448.18"/>
 <text text-anchor="middle" x="444.43" y="-479.55" font-family="fixed" font-size="14.00">[scope]</text>
 </g>
@@ -197,8 +197,8 @@ Accuracy of monthly rate of &lt;plusmn&gt; 15 seconds (daily rate of &lt;plusmn&
 <!-- 0025_0025__while&#45;&gt;0025_0026__using -->
 <g id="edge12" class="edge">
 <title>0025_0025__while&#45;&gt;0025_0026__using</title>
-<path fill="none" stroke="red" stroke-width="2" d="M460.67,-516.28C468.31,-495.38 478.18,-468.39 485.67,-447.89"/>
-<polygon fill="red" stroke="red" stroke-width="2" points="488.91,-449.23 489.06,-438.63 482.34,-446.82 488.91,-449.23"/>
+<path fill="none" stroke="red" stroke-width="2" d="M459.69,-518.95C467.47,-497.67 477.9,-469.15 485.72,-447.76"/>
+<polygon fill="red" stroke="red" stroke-width="2" points="488.91,-449.23 489.06,-438.64 482.34,-446.83 488.91,-449.23"/>
 <text text-anchor="middle" x="514.43" y="-479.55" font-family="fixed" font-size="14.00">[restriction]</text>
 </g>
 <!-- 0025_0027__a_0025_0028__mainspring -->
@@ -261,8 +261,8 @@ arc(r_0025_0018__equivalent,r_0025_0020__a_r_0025_0021__quartz_r_0025_0022__watc
 arc(r_0025_0023__is,r_0025_0024__achieved,keep_scope).
 arc(r_0025_0024__achieved,r_0025_0001__Accuracy,arg1).
 arc(r_0025_0024__achieved,star_z_0025_1018,arg0).
-arc(r_0025_0025__while_cnt,r_0025_0023__is,scope_).
-arc(r_0025_0025__while_cnt,r_0025_0026__using,restriction_).
+arc(r_0025_0025__while,r_0025_0023__is,scope).
+arc(r_0025_0025__while,r_0025_0026__using,restriction).
 arc(r_0025_0026__using,r_0025_0027__a_r_0025_0028__mainspring,arg1).
 arc(r_0025_0026__using,z_0025_1014,arg0).
 arc(z_0025_1008,r_0025_0004__rate,arg0).
@@ -402,7 +402,7 @@ arc(z_0025_1008,r_0025_0011__rate,prd).
 <line x1="1925" y1="165" x2="1925" y2="190" style="stroke:#000000;stroke-width:2;"/>
 <line x1="1892" y1="110" x2="1925" y2="135" style="stroke:#000000;stroke-width:2;"/>
 <line x1="1155" y1="55" x2="1892" y2="80" style="stroke:#000000;stroke-width:2;"/>
-<text x="2112" y="100" text-anchor="middle">PP-SCON-CNT</text>
+<text x="2112" y="100" text-anchor="middle">PP-SCON</text>
 <text x="2002" y="155" text-anchor="middle">P-CONN</text>
 <text x="2002" y="210" text-anchor="middle">while</text>
 <line x1="2002" y1="165" x2="2002" y2="190" style="stroke:#000000;stroke-width:2;"/>
@@ -456,10 +456,10 @@ arc(z_0025_1008,r_0025_0011__rate,prd).
           (BEP;~cat_Ve_passive_ is;{be})
           (IP-PPL-CAT (NP-LGS *)
                       (VVN;~Tn achieved;{achieve}))
-          (PP-SCON-CNT (P-CONN while;{while})
-                       (IP-PPL3 (VAG using;{use})
-                                (NP-OB1 (D a;{a})
-                                        (N mainspring;{mainspring}))))
+          (PP-SCON (P-CONN while;{while})
+                   (IP-PPL3 (VAG using;{use})
+                            (NP-OB1 (D a;{a})
+                                    (N mainspring;{mainspring}))))
           (PUNC .))
   (ID 25_a_seiko_9r65))
 </pre>

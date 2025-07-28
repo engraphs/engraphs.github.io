@@ -120,14 +120,14 @@ A rise of oxygen concentration from 1-2 p.p.m is accompanied by a voltage drop o
 <!-- 0026_0018__while -->
 <g id="node8" class="node">
 <title>0026_0018__while</title>
-<polygon fill="lightblue" stroke="black" points="505.26,-510.85 621.22,-569.18 389.29,-569.18 505.26,-510.85"/>
-<text text-anchor="middle" x="505.26" y="-546.19" font-family="fixed" font-size="14.00">while[cnt]</text>
+<polygon fill="lightblue" stroke="black" points="505.26,-510.85 578.8,-569.18 431.72,-569.18 505.26,-510.85"/>
+<text text-anchor="middle" x="505.26" y="-546.19" font-family="fixed" font-size="14.00">while</text>
 </g>
 <!-- 0026_0018__while&#45;&gt;0026_0009__is -->
 <g id="edge7" class="edge">
 <title>0026_0018__while&#45;&gt;0026_0009__is</title>
-<path fill="none" stroke="blue" stroke-width="2" d="M489.72,-518.29C478.93,-497.14 464.6,-469.07 453.81,-447.92"/>
-<polygon fill="blue" stroke="blue" stroke-width="2" points="456.95,-446.38 449.29,-439.06 450.72,-449.56 456.95,-446.38"/>
+<path fill="none" stroke="blue" stroke-width="2" d="M491.38,-521.53C480.38,-499.99 465.03,-469.91 453.66,-447.63"/>
+<polygon fill="blue" stroke="blue" stroke-width="2" points="456.84,-446.17 449.18,-438.85 450.61,-449.35 456.84,-446.17"/>
 <text text-anchor="middle" x="498.88" y="-479.55" font-family="fixed" font-size="14.00">[scope]</text>
 </g>
 <!-- 0026_0025__would -->
@@ -139,8 +139,8 @@ A rise of oxygen concentration from 1-2 p.p.m is accompanied by a voltage drop o
 <!-- 0026_0018__while&#45;&gt;0026_0025__would -->
 <g id="edge8" class="edge">
 <title>0026_0018__while&#45;&gt;0026_0025__would</title>
-<path fill="none" stroke="red" stroke-width="2" d="M521.09,-518.62C532.32,-497.26 547.32,-468.71 558.52,-447.39"/>
-<polygon fill="red" stroke="red" stroke-width="2" points="561.51,-449.24 563.06,-438.76 555.31,-445.98 561.51,-449.24"/>
+<path fill="none" stroke="red" stroke-width="2" d="M519.39,-521.85C530.7,-500.33 546.56,-470.15 558.32,-447.77"/>
+<polygon fill="red" stroke="red" stroke-width="2" points="561.42,-449.41 562.97,-438.93 555.22,-446.15 561.42,-449.41"/>
 <text text-anchor="middle" x="581.88" y="-479.55" font-family="fixed" font-size="14.00">[restriction]</text>
 </g>
 <!-- 0026_0026__produce -->
@@ -231,8 +231,8 @@ arc(r_0026_0009__is,r_0026_0010__accompanied,keep_scope).
 arc(r_0026_0010__accompanied,r_0026_0001__A_r_0026_0002__rise,arg1).
 arc(r_0026_0010__accompanied,r_0026_0012__a_r_0026_0013__voltage_r_0026_0014__drop,r_0026_0011__by_arg0).
 arc(r_0026_0012__a_r_0026_0013__voltage_r_0026_0014__drop,r_0026_0016__1723_r_0026_0017__mv,r_0026_0015__of).
-arc(r_0026_0018__while_cnt,r_0026_0009__is,scope_).
-arc(r_0026_0018__while_cnt,r_0026_0025__would,restriction_).
+arc(r_0026_0018__while,r_0026_0009__is,scope).
+arc(r_0026_0018__while,r_0026_0025__would,restriction).
 arc(r_0026_0020__a_r_0026_0021__rise,r_0026_0023__9__hyphen__10_r_0026_0024__p_dot_p_dot_m,r_0026_0022__from).
 arc(r_0026_0025__would,r_0026_0026__produce,keep_scope).
 arc(r_0026_0026__produce,r_0026_0020__a_r_0026_0021__rise,arg0).
@@ -332,7 +332,7 @@ arc(r_0026_0031__173_r_0026_0032__mv,r_0026_0030__only,qual).
 <line x1="1149.5" y1="165" x2="1215.5" y2="190" style="stroke:#000000;stroke-width:2;"/>
 <line x1="1089" y1="110" x2="1149.5" y2="135" style="stroke:#000000;stroke-width:2;"/>
 <line x1="1199" y1="55" x2="1089" y2="80" style="stroke:#000000;stroke-width:2;"/>
-<text x="1870" y="100" text-anchor="middle">PP-SCON-CNT</text>
+<text x="1870" y="100" text-anchor="middle">PP-SCON</text>
 <text x="1430" y="155" text-anchor="middle">P-CONN</text>
 <text x="1430" y="210" text-anchor="middle">while</text>
 <line x1="1430" y1="165" x2="1430" y2="190" style="stroke:#000000;stroke-width:2;"/>
@@ -436,21 +436,21 @@ arc(r_0026_0031__173_r_0026_0032__mv,r_0026_0030__only,qual).
                                   (PP (P-ROLE of;{of})
                                       (NP (NUM 1723)
                                           (N mv;{mv}))))))
-          (PP-SCON-CNT (P-CONN while;{while})
-                       (PUNC ,)
-                       (IP-ADV (NP-SBJ (D a;{a})
-                                       (N rise;{rise})
-                                       (PP (P-ROLE from;{from})
-                                           (NP (NUM 9_-_10)
-                                               (N p&lt;dot&gt;p&lt;dot&gt;m;{p&lt;dot&gt;p&lt;dot&gt;m}))))
-                               (MD;~cat_Vi would;{will})
-                               (IP-INF-CAT (VB produce;{produce})
-                                           (NP-OB1 (D a;{a})
-                                                   (N change;{change})
-                                                   (PP (P-ROLE of;{of})
-                                                       (NP (ADVP (ADV only;{only}))
-                                                           (NUM 173)
-                                                           (N mv;{mv})))))))
+          (PP-SCON (P-CONN while;{while})
+                   (PUNC ,)
+                   (IP-ADV (NP-SBJ (D a;{a})
+                                   (N rise;{rise})
+                                   (PP (P-ROLE from;{from})
+                                       (NP (NUM 9_-_10)
+                                           (N p&lt;dot&gt;p&lt;dot&gt;m;{p&lt;dot&gt;p&lt;dot&gt;m}))))
+                           (MD;~cat_Vi would;{will})
+                           (IP-INF-CAT (VB produce;{produce})
+                                       (NP-OB1 (D a;{a})
+                                               (N change;{change})
+                                               (PP (P-ROLE of;{of})
+                                                   (NP (ADVP (ADV only;{only}))
+                                                       (NUM 173)
+                                                       (N mv;{mv})))))))
           (PUNC .))
   (ID 26_a_lob_j01))
 </pre>

@@ -76,7 +76,7 @@ I rode a bike to Goodwill in the rain and snow.
 <title>0022_0002__rode&#45;&gt;0022_0006__Goodwill</title>
 <path fill="none" stroke="orange" stroke-width="2" d="M176.6,-95.02C184.19,-82.28 194.58,-64.83 203.4,-50.01"/>
 <polygon fill="orange" stroke="orange" stroke-width="2" points="206.4,-51.82 208.5,-41.44 200.38,-48.24 206.4,-51.82"/>
-<text text-anchor="middle" x="236.88" y="-63.09" font-family="fixed" font-size="14.00">to[nim][loc]</text>
+<text text-anchor="middle" x="223" y="-63.09" font-family="fixed" font-size="14.00">to[nim]</text>
 </g>
 <!-- 0022_0008__the_0022_0009__rain_0022_0010__and_0022_0011__snow -->
 <g id="node5" class="node">
@@ -87,9 +87,9 @@ I rode a bike to Goodwill in the rain and snow.
 <!-- 0022_0002__rode&#45;&gt;0022_0008__the_0022_0009__rain_0022_0010__and_0022_0011__snow -->
 <g id="edge4" class="edge">
 <title>0022_0002__rode&#45;&gt;0022_0008__the_0022_0009__rain_0022_0010__and_0022_0011__snow</title>
-<path fill="none" stroke="orange" stroke-width="2" d="M195.24,-104.76C218.32,-98.06 251.16,-87.82 279,-76.39 301.86,-67.01 326.49,-54.82 346.72,-44.22"/>
-<polygon fill="orange" stroke="orange" stroke-width="2" points="348.21,-47.39 355.4,-39.62 344.93,-41.21 348.21,-47.39"/>
-<text text-anchor="middle" x="361" y="-63.09" font-family="fixed" font-size="14.00">in[nim][mnr]</text>
+<path fill="none" stroke="orange" stroke-width="2" d="M192.13,-102.06C227.41,-87.51 291.1,-61.24 336.69,-42.43"/>
+<polygon fill="orange" stroke="orange" stroke-width="2" points="337.74,-45.79 345.65,-38.74 335.07,-39.32 337.74,-45.79"/>
+<text text-anchor="middle" x="322.62" y="-63.09" font-family="fixed" font-size="14.00">in[nim]</text>
 </g>
 </g>
 </svg>
@@ -97,8 +97,8 @@ I rode a bike to Goodwill in the rain and snow.
 <pre>
 arc(r_0022_0002__rode,r_0022_0001__I,arg0).
 arc(r_0022_0002__rode,r_0022_0003__a_r_0022_0004__bike,arg1).
-arc(r_0022_0002__rode,r_0022_0006__Goodwill,r_0022_0005__to__nim_loc).
-arc(r_0022_0002__rode,r_0022_0008__the_r_0022_0009__rain_r_0022_0010__and_r_0022_0011__snow,r_0022_0007__in__nim_mnr).
+arc(r_0022_0002__rode,r_0022_0006__Goodwill,r_0022_0005__to__nim).
+arc(r_0022_0002__rode,r_0022_0008__the_r_0022_0009__rain_r_0022_0010__and_r_0022_0011__snow,r_0022_0007__in__nim).
 
 </pre>
 <br>
@@ -124,7 +124,7 @@ arc(r_0022_0002__rode,r_0022_0008__the_r_0022_0009__rain_r_0022_0010__and_r_0022
 <line x1="225.5" y1="165" x2="225.5" y2="190" style="stroke:#000000;stroke-width:2;"/>
 <line x1="198" y1="110" x2="225.5" y2="135" style="stroke:#000000;stroke-width:2;"/>
 <line x1="374" y1="55" x2="198" y2="80" style="stroke:#000000;stroke-width:2;"/>
-<text x="330" y="100" text-anchor="middle">PP-NIM-LOC</text>
+<text x="330" y="100" text-anchor="middle">PP-NIM</text>
 <text x="286" y="155" text-anchor="middle">P-ROLE</text>
 <text x="286" y="210" text-anchor="middle">to</text>
 <line x1="286" y1="165" x2="286" y2="190" style="stroke:#000000;stroke-width:2;"/>
@@ -136,7 +136,7 @@ arc(r_0022_0002__rode,r_0022_0008__the_r_0022_0009__rain_r_0022_0010__and_r_0022
 <line x1="363" y1="165" x2="363" y2="190" style="stroke:#000000;stroke-width:2;"/>
 <line x1="330" y1="110" x2="363" y2="135" style="stroke:#000000;stroke-width:2;"/>
 <line x1="374" y1="55" x2="330" y2="80" style="stroke:#000000;stroke-width:2;"/>
-<text x="550" y="100" text-anchor="middle">PP-NIM-MNR</text>
+<text x="550" y="100" text-anchor="middle">PP-NIM</text>
 <text x="440" y="155" text-anchor="middle">P-ROLE</text>
 <text x="440" y="210" text-anchor="middle">in</text>
 <line x1="440" y1="165" x2="440" y2="190" style="stroke:#000000;stroke-width:2;"/>
@@ -179,13 +179,13 @@ arc(r_0022_0002__rode,r_0022_0008__the_r_0022_0009__rain_r_0022_0010__and_r_0022
           (VBD;~Tn rode;{ride})
           (NP-OB1 (D a;{a})
                   (N bike;{bike}))
-          (PP-NIM-LOC (P-ROLE to;{to})
-                      (NP;{GOODWILL} (NPR Goodwill;{Goodwill})))
-          (PP-NIM-MNR (P-ROLE in;{in})
-                      (NP (D the;{the})
-                          (NLYR (NLYR (N rain;{rain}))
-                                (CONJP (CONJ and;{and})
-                                       (NLYR (N snow;{snow}))))))
+          (PP-NIM (P-ROLE to;{to})
+                  (NP;{GOODWILL} (NPR Goodwill;{Goodwill})))
+          (PP-NIM (P-ROLE in;{in})
+                  (NP (D the;{the})
+                      (NLYR (NLYR (N rain;{rain}))
+                            (CONJP (CONJ and;{and})
+                                   (NLYR (N snow;{snow}))))))
           (PUNC .))
   (ID 22_a_goodwill))
 </pre>

@@ -76,7 +76,7 @@ The thorniest problem for next week's conference is to settle the relationships 
 <title>0100_0008__conference&#45;&gt;0100_0006__week</title>
 <path fill="none" stroke="black" d="M191.8,-288.79C191.8,-275.59 191.8,-257.67 191.8,-242.49"/>
 <polygon fill="black" stroke="black" points="195.3,-242.56 191.8,-232.56 188.3,-242.56 195.3,-242.56"/>
-<text text-anchor="middle" x="212.43" y="-257.89" font-family="fixed" font-size="14.00">[genv]</text>
+<text text-anchor="middle" x="209.05" y="-257.89" font-family="fixed" font-size="14.00">[gen]</text>
 </g>
 <!-- 0100_0005__next -->
 <g id="node5" class="node">
@@ -202,7 +202,7 @@ The thorniest problem for next week's conference is to settle the relationships 
 arc(r_0100_0001__The_r_0100_0003__problem,r_0100_0002__thorniest,attrib).
 arc(r_0100_0001__The_r_0100_0003__problem,r_0100_0008__conference,r_0100_0004__for).
 arc(r_0100_0006__week,r_0100_0005__next,attrib).
-arc(r_0100_0008__conference,r_0100_0006__week,genv).
+arc(r_0100_0008__conference,r_0100_0006__week,gen).
 arc(r_0100_0009__is,r_0100_0001__The_r_0100_0003__problem,arg0).
 arc(r_0100_0009__is,r_0100_0011__settle,prd).
 arc(r_0100_0011__settle,r_0100_0012__the_r_0100_0013__relationships,arg1).
@@ -237,7 +237,7 @@ arc(r_0100_0017__the_rest,r_0100_0019__the_r_0100_0020__country,r_0100_0018__of)
 <line x1="264" y1="220" x2="264" y2="245" style="stroke:#000000;stroke-width:2;"/>
 <line x1="401.5" y1="165" x2="264" y2="190" style="stroke:#000000;stroke-width:2;"/>
 <text x="434.5" y="210" text-anchor="middle">NP</text>
-<text x="379.5" y="265" text-anchor="middle">NP-GENV</text>
+<text x="379.5" y="265" text-anchor="middle">NP-GEN</text>
 <text x="324.5" y="320" text-anchor="middle">ADJP</text>
 <text x="324.5" y="375" text-anchor="middle">ADJ</text>
 <text x="324.5" y="430" text-anchor="middle">next</text>
@@ -264,7 +264,7 @@ arc(r_0100_0017__the_rest,r_0100_0019__the_r_0100_0020__country,r_0100_0018__of)
 <text x="632.5" y="155" text-anchor="middle">is</text>
 <line x1="632.5" y1="110" x2="632.5" y2="135" style="stroke:#000000;stroke-width:2;"/>
 <line x1="770" y1="55" x2="632.5" y2="80" style="stroke:#000000;stroke-width:2;"/>
-<text x="1089" y="100" text-anchor="middle">IP-INF-PRD2</text>
+<text x="1089" y="100" text-anchor="middle">IP-INF-PRD</text>
 <text x="720.5" y="155" text-anchor="middle">TO</text>
 <text x="720.5" y="210" text-anchor="middle">to</text>
 <line x1="720.5" y1="165" x2="720.5" y2="190" style="stroke:#000000;stroke-width:2;"/>
@@ -339,22 +339,22 @@ arc(r_0100_0017__the_rest,r_0100_0019__the_r_0100_0020__country,r_0100_0018__of)
                   (ADJP (ADJS thorniest;{thorny}))
                   (N problem;{problem})
                   (PP (P-ROLE for;{for})
-                      (NP (NP-GENV (ADJP (ADJ next;{next}))
-                                   (N week;{week})
-                                   (GENM &lt;apos&gt;s))
+                      (NP (NP-GEN (ADJP (ADJ next;{next}))
+                                  (N week;{week})
+                                  (GENM &lt;apos&gt;s))
                           (N conference;{conference}))))
           (BEP;~equ_Vt is;{be})
-          (IP-INF-PRD2 (TO to;{to})
-                       (VB settle;{settle})
-                       (NP-OB1 (D the;{the})
-                               (NS relationships;{relationship})
-                               (PP (P-ROLE between;{between})
-                                   (NP (NLYR (NLYR (PRO them;{they}))
-                                             (CONJP (CONJ and;{and})
-                                                    (NLYR (D;_nphd_ the_rest;{the_rest})
-                                                          (PP (P-ROLE of;{of})
-                                                              (NP (D the;{the})
-                                                                  (N country;{country}))))))))))
+          (IP-INF-PRD (TO to;{to})
+                      (VB settle;{settle})
+                      (NP-OB1 (D the;{the})
+                              (NS relationships;{relationship})
+                              (PP (P-ROLE between;{between})
+                                  (NP (NLYR (NLYR (PRO them;{they}))
+                                            (CONJP (CONJ and;{and})
+                                                   (NLYR (D;_nphd_ the_rest;{the_rest})
+                                                         (PP (P-ROLE of;{of})
+                                                             (NP (D the;{the})
+                                                                 (N country;{country}))))))))))
           (PUNC .))
   (ID 100_a_lob_a02))
 </pre>

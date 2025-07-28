@@ -48,9 +48,9 @@ manifests as fever, headache, and painfully swollen lymph nodes;
 <!-- 0043_0001__manifests&#45;&gt;0043_0007__and -->
 <g id="edge1" class="edge">
 <title>0043_0001__manifests&#45;&gt;0043_0007__and</title>
-<path fill="none" stroke="black" d="M167.29,-289.81C162.9,-284.2 158.57,-277.75 155.65,-271.19 152.06,-263.15 149.64,-253.99 148.01,-245.32"/>
-<polygon fill="black" stroke="black" points="151.47,-244.81 146.48,-235.46 144.56,-245.88 151.47,-244.81"/>
-<text text-anchor="middle" x="178.15" y="-257.89" font-family="fixed" font-size="14.00">as[prd]</text>
+<path fill="none" stroke="black" d="M170.76,-289.29C167.21,-283.67 163.6,-277.34 160.9,-271.19 157.28,-262.94 154.27,-253.69 151.87,-245"/>
+<polygon fill="black" stroke="black" points="155.31,-244.32 149.44,-235.5 148.53,-246.06 155.31,-244.32"/>
+<text text-anchor="middle" x="181.52" y="-257.89" font-family="fixed" font-size="14.00">as[clr]</text>
 </g>
 <!-- z_0043_1002 -->
 <g id="node3" class="node">
@@ -134,7 +134,7 @@ manifests as fever, headache, and painfully swollen lymph nodes;
 </svg>
 <br>
 <pre>
-arc(r_0043_0001__manifests,r_0043_0007__and,r_0043_0002__as__prd).
+arc(r_0043_0001__manifests,r_0043_0007__and,r_0043_0002__as__clr1).
 arc(r_0043_0001__manifests,z_0043_1002,arg0).
 arc(r_0043_0007__and,r_0043_0003__fever,conj1).
 arc(r_0043_0007__and,r_0043_0005__headache,conj2).
@@ -150,7 +150,7 @@ arc(r_0043_0010__lymph_r_0043_0011__nodes,r_0043_0009__swollen,attrib).
 <text x="66" y="155" text-anchor="middle">manifests</text>
 <line x1="66" y1="110" x2="66" y2="135" style="stroke:#000000;stroke-width:2;"/>
 <line x1="423.5" y1="55" x2="66" y2="80" style="stroke:#000000;stroke-width:2;"/>
-<text x="462" y="100" text-anchor="middle">PP-CLR-PRD2</text>
+<text x="462" y="100" text-anchor="middle">PP-CLR</text>
 <text x="165" y="155" text-anchor="middle">P-ROLE</text>
 <text x="165" y="210" text-anchor="middle">as</text>
 <line x1="165" y1="165" x2="165" y2="190" style="stroke:#000000;stroke-width:2;"/>
@@ -218,16 +218,16 @@ arc(r_0043_0010__lymph_r_0043_0011__nodes,r_0043_0009__swollen,attrib).
 <br>
 <pre>
 ( (IP-MAT (VBP;~phr_Vpr manifests;{manifest[as]})
-          (PP-CLR-PRD2 (P-ROLE as;{as})
-                       (NP (NLYR (NLYR (N fever;{fever}))
-                                 (PUNC ,)
-                                 (CONJP (NLYR (N headache;{headache})))
-                                 (PUNC ,)
-                                 (CONJP (CONJ and;{and})
-                                        (NLYR (ADJP (ADJ painfully;{painfully}))
-                                              (ADJP (ADJ swollen;{swollen}))
-                                              (N lymph;{lymph})
-                                              (NS nodes;{node}))))))
+          (PP-CLR (P-ROLE as;{as})
+                  (NP (NLYR (NLYR (N fever;{fever}))
+                            (PUNC ,)
+                            (CONJP (NLYR (N headache;{headache})))
+                            (PUNC ,)
+                            (CONJP (CONJ and;{and})
+                                   (NLYR (ADJP (ADJ painfully;{painfully}))
+                                         (ADJP (ADJ swollen;{swollen}))
+                                         (N lymph;{lymph})
+                                         (NS nodes;{node}))))))
           (PUNC ;))
   (ID 43_a_factbook_1_2010))
 </pre>

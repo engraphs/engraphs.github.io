@@ -36,8 +36,8 @@ When companies order an IBM 1401 Data Processing System, methods - programming s
 <!-- 0002_0001__When -->
 <g id="node1" class="node">
 <title>0002_0001__When</title>
-<polygon fill="lightblue" stroke="black" points="510.97,-605.24 636.49,-663.57 385.46,-663.57 510.97,-605.24"/>
-<text text-anchor="middle" x="510.97" y="-640.58" font-family="fixed" font-size="14.00">when[tmp]</text>
+<polygon fill="lightblue" stroke="black" points="510.97,-605.24 586.63,-663.57 435.31,-663.57 510.97,-605.24"/>
+<text text-anchor="middle" x="510.97" y="-640.58" font-family="fixed" font-size="14.00">when</text>
 </g>
 <!-- 0002_0003__order -->
 <g id="node2" class="node">
@@ -48,7 +48,7 @@ When companies order an IBM 1401 Data Processing System, methods - programming s
 <!-- 0002_0001__When&#45;&gt;0002_0003__order -->
 <g id="edge1" class="edge">
 <title>0002_0001__When&#45;&gt;0002_0003__order</title>
-<path fill="none" stroke="red" stroke-width="2" d="M483.6,-617.59C475.83,-608.76 468.25,-598.29 463.72,-587.24 458.12,-573.57 456.34,-557.36 456.09,-543.47"/>
+<path fill="none" stroke="red" stroke-width="2" d="M488.07,-622.47C478.84,-612.75 469.12,-600.4 463.72,-587.24 458.12,-573.57 456.34,-557.36 456.09,-543.47"/>
 <polygon fill="red" stroke="red" stroke-width="2" points="459.59,-543.62 456.23,-533.57 452.59,-543.52 459.59,-543.62"/>
 <text text-anchor="middle" x="502.6" y="-573.94" font-family="fixed" font-size="14.00">[restriction]</text>
 </g>
@@ -61,7 +61,7 @@ When companies order an IBM 1401 Data Processing System, methods - programming s
 <!-- 0002_0001__When&#45;&gt;0002_0015__are -->
 <g id="edge2" class="edge">
 <title>0002_0001__When&#45;&gt;0002_0015__are</title>
-<path fill="none" stroke="blue" stroke-width="2" d="M528.38,-612.82C532.76,-604.64 537.27,-595.71 540.97,-587.24 547.2,-573.01 552.96,-556.78 557.47,-543.03"/>
+<path fill="none" stroke="blue" stroke-width="2" d="M526.36,-616.55C531.35,-607.42 536.69,-597.02 540.97,-587.24 547.2,-573.01 552.96,-556.78 557.47,-543.03"/>
 <polygon fill="blue" stroke="blue" stroke-width="2" points="560.76,-544.23 560.46,-533.64 554.09,-542.1 560.76,-544.23"/>
 <text text-anchor="middle" x="572.6" y="-573.94" font-family="fixed" font-size="14.00">[scope]</text>
 </g>
@@ -251,8 +251,8 @@ When companies order an IBM 1401 Data Processing System, methods - programming s
 </svg>
 <br>
 <pre>
-arc(r_0002_0001__When_tmp,r_0002_0003__order,restriction).
-arc(r_0002_0001__When_tmp,r_0002_0015__are,scope).
+arc(r_0002_0001__When,r_0002_0003__order,restriction).
+arc(r_0002_0001__When,r_0002_0015__are,scope).
 arc(r_0002_0003__order,r_0002_0002__companies,arg0).
 arc(r_0002_0003__order,r_0002_0004__an_r_0002_0005__IBM_r_0002_0006__1401_r_0002_0007__Data_r_0002_0008__Processing_r_0002_0009__System,arg1).
 arc(r_0002_0013__programming,r_0002_0011__methods,arg1).
@@ -272,7 +272,7 @@ arc(r_0002_0027__applications,r_0002_0026__finished,attrib).
 <br>
 <svg xmlns="http://www.w3.org/2000/svg" width="2497" height="550" viewBox="-24.97 -2.750 2996.4 660.0">
 <text x="1248.5" y="45" text-anchor="middle">IP-MAT</text>
-<text x="319" y="100" text-anchor="middle">PP-SCON-TMP</text>
+<text x="319" y="100" text-anchor="middle">PP-SCON</text>
 <text x="33" y="155" text-anchor="middle">P-CONN</text>
 <text x="33" y="210" text-anchor="middle">When</text>
 <line x1="33" y1="165" x2="33" y2="190" style="stroke:#000000;stroke-width:2;"/>
@@ -396,7 +396,7 @@ arc(r_0002_0027__applications,r_0002_0026__finished,attrib).
 <line x1="2068" y1="385" x2="2101" y2="410" style="stroke:#000000;stroke-width:2;"/>
 <line x1="1974.5" y1="330" x2="2068" y2="355" style="stroke:#000000;stroke-width:2;"/>
 <line x1="2057" y1="275" x2="1974.5" y2="300" style="stroke:#000000;stroke-width:2;"/>
-<text x="2299" y="320" text-anchor="middle">PP-CLR-DIR</text>
+<text x="2299" y="320" text-anchor="middle">PP-CLR</text>
 <text x="2189" y="375" text-anchor="middle">P-ROLE</text>
 <text x="2189" y="430" text-anchor="middle">into</text>
 <line x1="2189" y1="385" x2="2189" y2="410" style="stroke:#000000;stroke-width:2;"/>
@@ -425,15 +425,15 @@ arc(r_0002_0027__applications,r_0002_0026__finished,attrib).
 </svg>
 <br>
 <pre>
-( (IP-MAT (PP-SCON-TMP (P-CONN When;{when})
-                       (IP-ADV (NP-SBJ (NS companies;{company}))
-                               (VBP;~Tn order;{order})
-                               (NP-OB1;{IBM1401} (D an;{an})
-                                                 (NPR IBM;{IBM})
-                                                 (NPR 1401)
-                                                 (NPR Data;{Data})
-                                                 (NPR Processing;{Processing})
-                                                 (NPR System;{System}))))
+( (IP-MAT (PP-SCON (P-CONN When;{when})
+                   (IP-ADV (NP-SBJ (NS companies;{company}))
+                           (VBP;~Tn order;{order})
+                           (NP-OB1;{IBM1401} (D an;{an})
+                                             (NPR IBM;{IBM})
+                                             (NPR 1401)
+                                             (NPR Data;{Data})
+                                             (NPR Processing;{Processing})
+                                             (NPR System;{System}))))
           (PUNC ,)
           (NP-SBJ;{METHODS_STAFF} (IP-PPL (NP-OB1 (NS methods;{method}))
                                           (PUNC -)
@@ -450,9 +450,9 @@ arc(r_0002_0027__applications,r_0002_0026__finished,attrib).
                                                    (NS requirements;{requirement})
                                                    (PP (P-ROLE of;{of})
                                                        (NP (N management;{management}))))
-                                           (PP-CLR-DIR (P-ROLE into;{into})
-                                                       (NP (ADJP (ADJ finished;{finished}))
-                                                           (NS applications;{application})))))))
+                                           (PP-CLR (P-ROLE into;{into})
+                                                   (NP (ADJP (ADJ finished;{finished}))
+                                                       (NS applications;{application})))))))
           (PUNC .))
   (ID 2_a_ibm_1401))
 </pre>

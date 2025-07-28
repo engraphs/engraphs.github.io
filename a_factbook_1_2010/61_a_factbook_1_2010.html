@@ -172,20 +172,20 @@ untreated, the disease can result in kidney damage, liver failure, meningitis, o
 <!-- z_0061_1002 -->
 <g id="node12" class="node">
 <title>z_0061_1002</title>
-<polygon fill="lightblue" stroke="black" points="257.44,-516.86 369.16,-575.2 145.72,-575.2 257.44,-516.86"/>
-<text text-anchor="middle" x="257.44" y="-552.2" font-family="fixed" font-size="14.00">[cnt][cnd]</text>
+<polygon fill="lightblue" stroke="black" points="257.44,-516.86 326.74,-575.2 188.14,-575.2 257.44,-516.86"/>
+<text text-anchor="middle" x="257.44" y="-552.2" font-family="fixed" font-size="14.00">[cnd]</text>
 </g>
 <!-- z_0061_1002&#45;&gt;0061_0001__untreated -->
 <g id="edge11" class="edge">
 <title>z_0061_1002&#45;&gt;0061_0001__untreated</title>
-<path fill="none" stroke="red" stroke-width="2" d="M234.96,-528.07C228.25,-519.19 221.33,-508.97 216.19,-498.86 209.12,-484.96 203.64,-468.54 199.74,-454.58"/>
+<path fill="none" stroke="red" stroke-width="2" d="M238.36,-532.49C230.66,-522.67 222.2,-510.69 216.19,-498.86 209.12,-484.96 203.64,-468.54 199.74,-454.58"/>
 <polygon fill="red" stroke="red" stroke-width="2" points="203.16,-453.83 197.25,-445.04 196.39,-455.6 203.16,-453.83"/>
 <text text-anchor="middle" x="254.06" y="-485.56" font-family="fixed" font-size="14.00">[restriction]</text>
 </g>
 <!-- z_0061_1002&#45;&gt;0061_0005__can -->
 <g id="edge12" class="edge">
 <title>z_0061_1002&#45;&gt;0061_0005__can</title>
-<path fill="none" stroke="blue" stroke-width="2" d="M277.03,-526.67C282.69,-517.96 288.63,-508.2 293.44,-498.86 300.79,-484.57 307.55,-468.05 312.78,-454.12"/>
+<path fill="none" stroke="blue" stroke-width="2" d="M274.45,-530.6C280.84,-520.97 287.89,-509.64 293.44,-498.86 300.79,-484.57 307.55,-468.05 312.78,-454.12"/>
 <polygon fill="blue" stroke="blue" stroke-width="2" points="315.96,-455.63 316.1,-445.04 309.38,-453.23 315.96,-455.63"/>
 <text text-anchor="middle" x="325.06" y="-485.56" font-family="fixed" font-size="14.00">[scope]</text>
 </g>
@@ -203,14 +203,14 @@ arc(r_0061_0016__or,r_0061_0011__liver_r_0061_0012__failure,conj2).
 arc(r_0061_0016__or,r_0061_0014__meningitis,conj3).
 arc(r_0061_0016__or,r_0061_0018__distress,conj4).
 arc(r_0061_0018__distress,r_0061_0017__respiratory,attrib).
-arc(z_0061_1002__cnt_cnd,r_0061_0001__untreated,restriction_).
-arc(z_0061_1002__cnt_cnd,r_0061_0005__can,scope_).
+arc(z_0061_1002__cnd,r_0061_0001__untreated,restriction).
+arc(z_0061_1002__cnd,r_0061_0005__can,scope).
 
 </pre>
 <br>
 <svg xmlns="http://www.w3.org/2000/svg" width="1463" height="550" viewBox="-14.63 -2.750 1755.6 660.0">
 <text x="731.5" y="45" text-anchor="middle">IP-MAT</text>
-<text x="82.5" y="100" text-anchor="middle">PP-SCON-CNT-CND</text>
+<text x="82.5" y="100" text-anchor="middle">PP-SCON-CND</text>
 <text x="82.5" y="155" text-anchor="middle">IP-PPL2</text>
 <text x="33" y="210" text-anchor="middle">NP-LGS</text>
 <text x="33" y="265" text-anchor="middle">*</text>
@@ -323,8 +323,8 @@ arc(z_0061_1002__cnt_cnd,r_0061_0005__can,scope_).
 </svg>
 <br>
 <pre>
-( (IP-MAT (PP-SCON-CNT-CND (IP-PPL2 (NP-LGS *)
-                                    (VVN;~Tn untreated;{untreat})))
+( (IP-MAT (PP-SCON-CND (IP-PPL2 (NP-LGS *)
+                                (VVN;~Tn untreated;{untreat})))
           (PUNC ,)
           (NP-SBJ (D the;{the})
                   (N disease;{disease}))

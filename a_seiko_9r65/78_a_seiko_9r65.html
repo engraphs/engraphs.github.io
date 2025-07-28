@@ -120,21 +120,21 @@ Please see the power reserve indicator to check the level of the remaining power
 <!-- z_0078_1004 -->
 <g id="node8" class="node">
 <title>z_0078_1004</title>
-<polygon fill="lightblue" stroke="black" points="309.02,-377.56 374.07,-435.9 243.96,-435.9 309.02,-377.56"/>
-<text text-anchor="middle" x="309.02" y="-412.9" font-family="fixed" font-size="14.00">[cnt]</text>
+<polygon fill="lightblue" stroke="black" points="309.02,-377.56 380.44,-435.9 237.6,-435.9 309.02,-377.56"/>
+<text text-anchor="middle" x="309.02" y="-412.9" font-family="fixed" font-size="14.00">[nim]</text>
 </g>
 <!-- z_0078_1004&#45;&gt;0078_0002__see -->
 <g id="edge7" class="edge">
 <title>z_0078_1004&#45;&gt;0078_0002__see</title>
-<path fill="none" stroke="blue" stroke-width="2" d="M293.24,-391.23C287.63,-381.69 281.73,-370.42 277.77,-359.56 274.93,-351.79 272.8,-343.13 271.22,-334.98"/>
+<path fill="none" stroke="blue" stroke-width="2" d="M292.75,-390.4C287.29,-381.04 281.62,-370.11 277.77,-359.56 274.93,-351.79 272.8,-343.13 271.22,-334.98"/>
 <polygon fill="blue" stroke="blue" stroke-width="2" points="274.72,-334.68 269.6,-325.4 267.81,-335.84 274.72,-334.68"/>
 <text text-anchor="middle" x="301.64" y="-346.26" font-family="fixed" font-size="14.00">[scope]</text>
 </g>
 <!-- z_0078_1004&#45;&gt;0078_0008__check -->
 <g id="edge8" class="edge">
 <title>z_0078_1004&#45;&gt;0078_0008__check</title>
-<path fill="none" stroke="red" stroke-width="2" d="M319.83,-386.65C325.86,-370.62 333.35,-350.66 339.49,-334.33"/>
-<polygon fill="red" stroke="red" stroke-width="2" points="342.75,-335.58 342.99,-324.98 336.2,-333.12 342.75,-335.58"/>
+<path fill="none" stroke="red" stroke-width="2" d="M320.05,-386.07C326.07,-370.04 333.52,-350.21 339.6,-334.02"/>
+<polygon fill="red" stroke="red" stroke-width="2" points="342.83,-335.38 343.07,-324.79 336.27,-332.92 342.83,-335.38"/>
 <text text-anchor="middle" x="374.64" y="-346.26" font-family="fixed" font-size="14.00">[restriction]</text>
 </g>
 </g>
@@ -147,8 +147,8 @@ arc(r_0078_0008__check,r_0078_0009__the_r_0078_0010__level,arg1).
 arc(r_0078_0008__check,z_0078_1002,arg0).
 arc(r_0078_0009__the_r_0078_0010__level,r_0078_0012__the_r_0078_0014__power,r_0078_0011__of).
 arc(r_0078_0012__the_r_0078_0014__power,r_0078_0013__remaining,attrib).
-arc(z_0078_1004__cnt,r_0078_0002__see,scope_).
-arc(z_0078_1004__cnt,r_0078_0008__check,restriction_).
+arc(z_0078_1004__nim,r_0078_0002__see,scope).
+arc(z_0078_1004__nim,r_0078_0008__check,restriction).
 
 </pre>
 <br>
@@ -180,7 +180,7 @@ arc(z_0078_1004__cnt,r_0078_0008__check,restriction_).
 <line x1="368.5" y1="165" x2="368.5" y2="190" style="stroke:#000000;stroke-width:2;"/>
 <line x1="275" y1="110" x2="368.5" y2="135" style="stroke:#000000;stroke-width:2;"/>
 <line x1="484" y1="55" x2="275" y2="80" style="stroke:#000000;stroke-width:2;"/>
-<text x="665.5" y="100" text-anchor="middle">PP-SCON-CNT</text>
+<text x="665.5" y="100" text-anchor="middle">PP-SCON-NIM</text>
 <text x="665.5" y="155" text-anchor="middle">IP-INF2</text>
 <text x="445.5" y="210" text-anchor="middle">TO</text>
 <text x="445.5" y="265" text-anchor="middle">to</text>
@@ -237,7 +237,7 @@ arc(z_0078_1004__cnt,r_0078_0008__check,restriction_).
                   (N power;{power})
                   (N reserve;{reserve})
                   (N indicator;{indicator}))
-          (PP-SCON-CNT (IP-INF2 (TO to;{to})
+          (PP-SCON-NIM (IP-INF2 (TO to;{to})
                                 (VB check;{check})
                                 (NP-OB1 (D the;{the})
                                         (N level;{level})

@@ -36,8 +36,8 @@ Once the beam has locked onto the pod, you can deactivate the tractor beam.
 <!-- 0006_0001__Once -->
 <g id="node1" class="node">
 <title>0006_0001__Once</title>
-<polygon fill="lightblue" stroke="black" points="155.97,-322.06 274.05,-380.4 37.88,-380.4 155.97,-322.06"/>
-<text text-anchor="middle" x="155.97" y="-357.4" font-family="fixed" font-size="14.00">once[tmp]</text>
+<polygon fill="lightblue" stroke="black" points="155.97,-322.06 224.2,-380.4 87.73,-380.4 155.97,-322.06"/>
+<text text-anchor="middle" x="155.97" y="-357.4" font-family="fixed" font-size="14.00">once</text>
 </g>
 <!-- 0006_0004__has -->
 <g id="node2" class="node">
@@ -48,7 +48,7 @@ Once the beam has locked onto the pod, you can deactivate the tractor beam.
 <!-- 0006_0001__Once&#45;&gt;0006_0004__has -->
 <g id="edge1" class="edge">
 <title>0006_0001__Once&#45;&gt;0006_0004__has</title>
-<path fill="none" stroke="red" stroke-width="2" d="M132.55,-333.14C125.74,-324.32 118.78,-314.18 113.72,-304.06 106.79,-290.22 101.72,-273.8 98.23,-259.83"/>
+<path fill="none" stroke="red" stroke-width="2" d="M136.47,-338.09C128.51,-328.25 119.76,-316.14 113.72,-304.06 106.79,-290.22 101.72,-273.8 98.23,-259.83"/>
 <polygon fill="red" stroke="red" stroke-width="2" points="101.69,-259.26 96.04,-250.3 94.87,-260.83 101.69,-259.26"/>
 <text text-anchor="middle" x="152.59" y="-290.76" font-family="fixed" font-size="14.00">[restriction]</text>
 </g>
@@ -61,7 +61,7 @@ Once the beam has locked onto the pod, you can deactivate the tractor beam.
 <!-- 0006_0001__Once&#45;&gt;0006_0011__can -->
 <g id="edge2" class="edge">
 <title>0006_0001__Once&#45;&gt;0006_0011__can</title>
-<path fill="none" stroke="blue" stroke-width="2" d="M175.21,-331.17C180.59,-322.61 186.26,-313.1 190.97,-304.06 198.46,-289.68 205.63,-273.14 211.28,-259.23"/>
+<path fill="none" stroke="blue" stroke-width="2" d="M172.33,-335.68C178.52,-326.04 185.41,-314.72 190.97,-304.06 198.46,-289.68 205.63,-273.14 211.28,-259.23"/>
 <polygon fill="blue" stroke="blue" stroke-width="2" points="214.45,-260.73 214.88,-250.14 207.94,-258.15 214.45,-260.73"/>
 <text text-anchor="middle" x="222.59" y="-290.76" font-family="fixed" font-size="14.00">[scope]</text>
 </g>
@@ -141,8 +141,8 @@ Once the beam has locked onto the pod, you can deactivate the tractor beam.
 </svg>
 <br>
 <pre>
-arc(r_0006_0001__Once_tmp,r_0006_0004__has,restriction_).
-arc(r_0006_0001__Once_tmp,r_0006_0011__can,scope_).
+arc(r_0006_0001__Once,r_0006_0004__has,restriction).
+arc(r_0006_0001__Once,r_0006_0011__can,scope).
 arc(r_0006_0004__has,r_0006_0005__locked_r_0006_0006__onto,keep_scope).
 arc(r_0006_0005__locked_r_0006_0006__onto,r_0006_0002__the_r_0006_0003__beam,arg0).
 arc(r_0006_0005__locked_r_0006_0006__onto,r_0006_0007__the_r_0006_0008__pod,arg1).
@@ -154,7 +154,7 @@ arc(r_0006_0012__deactivate,r_0006_0010__you,arg0).
 <br>
 <svg xmlns="http://www.w3.org/2000/svg" width="1144" height="440" viewBox="-11.44 -2.200 1372.8 528.0">
 <text x="572" y="45" text-anchor="middle">IP-MAT</text>
-<text x="280.5" y="100" text-anchor="middle">PP-SCON-TMP</text>
+<text x="280.5" y="100" text-anchor="middle">PP-SCON</text>
 <text x="33" y="155" text-anchor="middle">P-CONN</text>
 <text x="33" y="210" text-anchor="middle">Once</text>
 <line x1="33" y1="165" x2="33" y2="190" style="stroke:#000000;stroke-width:2;"/>
@@ -179,7 +179,7 @@ arc(r_0006_0012__deactivate,r_0006_0010__you,arg0).
 <text x="341" y="320" text-anchor="middle">locked</text>
 <line x1="341" y1="275" x2="341" y2="300" style="stroke:#000000;stroke-width:2;"/>
 <line x1="429" y1="220" x2="341" y2="245" style="stroke:#000000;stroke-width:2;"/>
-<text x="473" y="265" text-anchor="middle">PP-CLR-DIR</text>
+<text x="473" y="265" text-anchor="middle">PP-CLR</text>
 <text x="418" y="320" text-anchor="middle">P-ROLE</text>
 <text x="418" y="375" text-anchor="middle">onto</text>
 <line x1="418" y1="330" x2="418" y2="355" style="stroke:#000000;stroke-width:2;"/>
@@ -239,14 +239,14 @@ arc(r_0006_0012__deactivate,r_0006_0010__you,arg0).
 </svg>
 <br>
 <pre>
-( (IP-MAT (PP-SCON-TMP (P-CONN Once;{once})
-                       (IP-ADV (NP-SBJ;{BEAM} (D the;{the})
-                                              (N beam;{beam}))
-                               (HVP;~cat_Ve has;{have})
-                               (IP-PPL-CAT (VVN;~Ipr locked;{lock[onto]})
-                                           (PP-CLR-DIR (P-ROLE onto;{onto})
-                                                       (NP;{POD} (D the;{the})
-                                                                 (N pod;{pod}))))))
+( (IP-MAT (PP-SCON (P-CONN Once;{once})
+                   (IP-ADV (NP-SBJ;{BEAM} (D the;{the})
+                                          (N beam;{beam}))
+                           (HVP;~cat_Ve has;{have})
+                           (IP-PPL-CAT (VVN;~Ipr locked;{lock[onto]})
+                                       (PP-CLR (P-ROLE onto;{onto})
+                                               (NP;{POD} (D the;{the})
+                                                         (N pod;{pod}))))))
           (PUNC ,)
           (NP-SBJ;{PLAYER} (PRO you;{you}))
           (MD;~cat_Vi can;{can})

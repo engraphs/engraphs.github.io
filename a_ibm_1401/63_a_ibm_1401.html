@@ -76,7 +76,7 @@
 <title>0063_0003__produce&#45;&gt;0063_0017__abilities</title>
 <path fill="none" stroke="orange" stroke-width="2" d="M559.62,-290.69C576.9,-276.56 601.77,-256.22 621.34,-240.23"/>
 <polygon fill="orange" stroke="orange" stroke-width="2" points="623.43,-243.04 628.95,-234 619,-237.62 623.43,-243.04"/>
-<text text-anchor="middle" x="673.89" y="-257.89" font-family="fixed" font-size="14.00">because_of[nim][cnt]</text>
+<text text-anchor="middle" x="658.89" y="-257.89" font-family="fixed" font-size="14.00">because_of[nim]</text>
 </g>
 <!-- 0063_0004__important -->
 <g id="node5" class="node">
@@ -122,7 +122,7 @@
 <title>0063_0017__abilities&#45;&gt;0063_0001__1401_0063_0002__computers</title>
 <path fill="none" stroke="black" d="M631.69,-196.19C614.29,-181.5 588.94,-160.09 569.12,-143.37"/>
 <polygon fill="black" stroke="black" points="571.51,-140.8 561.62,-137.03 567,-146.15 571.51,-140.8"/>
-<text text-anchor="middle" x="625.52" y="-163.5" font-family="fixed" font-size="14.00">[genv]</text>
+<text text-anchor="middle" x="622.14" y="-163.5" font-family="fixed" font-size="14.00">[gen]</text>
 </g>
 <!-- 0063_0015__and -->
 <g id="node8" class="node">
@@ -182,13 +182,13 @@
 <pre>
 arc(r_0063_0003__produce,r_0063_0001__1401_r_0063_0002__computers,arg0).
 arc(r_0063_0003__produce,r_0063_0005__reports,arg1).
-arc(r_0063_0003__produce,r_0063_0017__abilities,r_0063_0011__because_of__nim_cnt).
+arc(r_0063_0003__produce,r_0063_0017__abilities,r_0063_0011__because_of__nim).
 arc(r_0063_0005__reports,r_0063_0004__important,attrib).
 arc(r_0063_0005__reports,r_0063_0007__management,r_0063_0006__for).
 arc(r_0063_0005__reports,r_0063_0009__record_r_0063_0010__time,r_0063_0008__in).
 arc(r_0063_0015__and,r_0063_0014__processing,conj1).
 arc(r_0063_0015__and,r_0063_0016__printing,conj2).
-arc(r_0063_0017__abilities,r_0063_0001__1401_r_0063_0002__computers,genv).
+arc(r_0063_0017__abilities,r_0063_0001__1401_r_0063_0002__computers,gen).
 arc(r_0063_0017__abilities,r_0063_0013__outstanding,attrib).
 arc(r_0063_0017__abilities,r_0063_0015__and,modifier).
 
@@ -250,13 +250,13 @@ arc(r_0063_0017__abilities,r_0063_0015__and,modifier).
 <line x1="676.5" y1="165" x2="709.5" y2="190" style="stroke:#000000;stroke-width:2;"/>
 <line x1="500.5" y1="110" x2="676.5" y2="135" style="stroke:#000000;stroke-width:2;"/>
 <line x1="759" y1="55" x2="500.5" y2="80" style="stroke:#000000;stroke-width:2;"/>
-<text x="1116.5" y="100" text-anchor="middle">PP-NIM-CNT</text>
+<text x="1116.5" y="100" text-anchor="middle">PP-NIM</text>
 <text x="825" y="155" text-anchor="middle">P-ROLE</text>
 <text x="825" y="210" text-anchor="middle">because_of</text>
 <line x1="825" y1="165" x2="825" y2="190" style="stroke:#000000;stroke-width:2;"/>
 <line x1="1116.5" y1="110" x2="825" y2="135" style="stroke:#000000;stroke-width:2;"/>
 <text x="1171.5" y="155" text-anchor="middle">NP</text>
-<text x="935" y="210" text-anchor="middle">NP-GENV</text>
+<text x="935" y="210" text-anchor="middle">NP-GEN</text>
 <text x="935" y="265" text-anchor="middle">PRO;_genm_</text>
 <text x="935" y="320" text-anchor="middle">their</text>
 <line x1="935" y1="275" x2="935" y2="300" style="stroke:#000000;stroke-width:2;"/>
@@ -313,13 +313,13 @@ arc(r_0063_0017__abilities,r_0063_0015__and,modifier).
                   (PP (P-ROLE in;{in})
                       (NP (N record;{record})
                           (N time;{time}))))
-          (PP-NIM-CNT (P-ROLE because_of;{because_of})
-                      (NP (NP-GENV;{COMPUTERS1401} (PRO;_genm_ their;{their}))
-                          (ADJP (ADJ outstanding;{outstanding}))
-                          (NLYR (NLYR (NLYR (N processing;{processing}))
-                                      (CONJP (CONJ and;{and})
-                                             (NLYR (N printing;{printing})))))
-                          (NS abilities;{ability})))
+          (PP-NIM (P-ROLE because_of;{because_of})
+                  (NP (NP-GEN;{COMPUTERS1401} (PRO;_genm_ their;{their}))
+                      (ADJP (ADJ outstanding;{outstanding}))
+                      (NLYR (NLYR (NLYR (N processing;{processing}))
+                                  (CONJP (CONJ and;{and})
+                                         (NLYR (N printing;{printing})))))
+                      (NS abilities;{ability})))
           (PUNC .))
   (ID 63_a_ibm_1401))
 </pre>

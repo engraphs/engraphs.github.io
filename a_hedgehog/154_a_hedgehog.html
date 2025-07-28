@@ -126,21 +126,21 @@ The hedgehog is a more challenging species for us to take on board.
 <!-- z_0154_1002 -->
 <g id="node9" class="node">
 <title>z_0154_1002</title>
-<polygon fill="lightblue" stroke="black" points="282.2,-377.56 347.25,-435.9 217.14,-435.9 282.2,-377.56"/>
-<text text-anchor="middle" x="282.2" y="-412.9" font-family="fixed" font-size="14.00">[cnt]</text>
+<polygon fill="lightblue" stroke="black" points="282.2,-377.56 353.61,-435.9 210.78,-435.9 282.2,-377.56"/>
+<text text-anchor="middle" x="282.2" y="-412.9" font-family="fixed" font-size="14.00">[nim]</text>
 </g>
 <!-- z_0154_1002&#45;&gt;0154_0003__is -->
 <g id="edge7" class="edge">
 <title>z_0154_1002&#45;&gt;0154_0003__is</title>
-<path fill="none" stroke="blue" stroke-width="2" d="M268.94,-389.19C264.37,-379.89 259.3,-369.32 254.95,-359.56 251.26,-351.3 247.47,-342.25 244.07,-333.88"/>
+<path fill="none" stroke="blue" stroke-width="2" d="M268.52,-388.34C264.06,-379.25 259.17,-369.03 254.95,-359.56 251.26,-351.3 247.47,-342.25 244.07,-333.88"/>
 <polygon fill="blue" stroke="blue" stroke-width="2" points="247.36,-332.68 240.39,-324.7 240.86,-335.28 247.36,-332.68"/>
 <text text-anchor="middle" x="278.82" y="-346.26" font-family="fixed" font-size="14.00">[scope]</text>
 </g>
 <!-- z_0154_1002&#45;&gt;0154_0011__take_0154_0012__on -->
 <g id="edge8" class="edge">
 <title>z_0154_1002&#45;&gt;0154_0011__take_0154_0012__on</title>
-<path fill="none" stroke="red" stroke-width="2" d="M294.43,-388.1C301.83,-371.55 311.26,-350.44 318.85,-333.46"/>
-<polygon fill="red" stroke="red" stroke-width="2" points="321.88,-335.28 322.76,-324.72 315.49,-332.42 321.88,-335.28"/>
+<path fill="none" stroke="red" stroke-width="2" d="M294.81,-387.23C302.1,-370.94 311.26,-350.45 318.69,-333.83"/>
+<polygon fill="red" stroke="red" stroke-width="2" points="321.85,-335.33 322.74,-324.77 315.46,-332.47 321.85,-335.33"/>
 <text text-anchor="middle" x="353.82" y="-346.26" font-family="fixed" font-size="14.00">[restriction]</text>
 </g>
 </g>
@@ -153,8 +153,8 @@ arc(r_0154_0004__a_r_0154_0007__species,r_0154_0006__challenging,attrib).
 arc(r_0154_0006__challenging,r_0154_0005__more,qual).
 arc(r_0154_0011__take_r_0154_0012__on,r_0154_0009__us,arg0).
 arc(r_0154_0011__take_r_0154_0012__on,r_0154_0013__board,arg1).
-arc(z_0154_1002__cnt,r_0154_0003__is,scope_).
-arc(z_0154_1002__cnt,r_0154_0011__take_r_0154_0012__on,restriction_).
+arc(z_0154_1002__nim,r_0154_0003__is,scope).
+arc(z_0154_1002__nim,r_0154_0011__take_r_0154_0012__on,restriction).
 
 </pre>
 <br>
@@ -174,7 +174,7 @@ arc(z_0154_1002__cnt,r_0154_0011__take_r_0154_0012__on,restriction_).
 <text x="181.5" y="155" text-anchor="middle">is</text>
 <line x1="181.5" y1="110" x2="181.5" y2="135" style="stroke:#000000;stroke-width:2;"/>
 <line x1="511.5" y1="55" x2="181.5" y2="80" style="stroke:#000000;stroke-width:2;"/>
-<text x="374" y="100" text-anchor="middle">NP-PRD2</text>
+<text x="374" y="100" text-anchor="middle">NP-PRD</text>
 <text x="247.5" y="155" text-anchor="middle">D</text>
 <text x="247.5" y="210" text-anchor="middle">a</text>
 <line x1="247.5" y1="165" x2="247.5" y2="190" style="stroke:#000000;stroke-width:2;"/>
@@ -196,7 +196,7 @@ arc(z_0154_1002__cnt,r_0154_0011__take_r_0154_0012__on,restriction_).
 <line x1="489.5" y1="165" x2="489.5" y2="190" style="stroke:#000000;stroke-width:2;"/>
 <line x1="374" y1="110" x2="489.5" y2="135" style="stroke:#000000;stroke-width:2;"/>
 <line x1="511.5" y1="55" x2="374" y2="80" style="stroke:#000000;stroke-width:2;"/>
-<text x="748" y="100" text-anchor="middle">PP-SCON-CNT</text>
+<text x="748" y="100" text-anchor="middle">PP-SCON-NIM</text>
 <text x="748" y="155" text-anchor="middle">IP-INF</text>
 <text x="561" y="210" text-anchor="middle">P-CONN</text>
 <text x="561" y="265" text-anchor="middle">for</text>
@@ -238,11 +238,11 @@ arc(z_0154_1002__cnt,r_0154_0011__take_r_0154_0012__on,restriction_).
 ( (IP-MAT (NP-SBJ;{HEDGEHOG} (D The;{the})
                              (N hedgehog;{hedgehog}))
           (BEP;~Ln is;{be})
-          (NP-PRD2 (D a;{a})
-                   (ADJP (ADVP (ADVR more;{more}))
-                         (ADJ challenging;{challenging}))
-                   (NS species;{specie}))
-          (PP-SCON-CNT (IP-INF (P-CONN for;{for})
+          (NP-PRD (D a;{a})
+                  (ADJP (ADVP (ADVR more;{more}))
+                        (ADJ challenging;{challenging}))
+                  (NS species;{specie}))
+          (PP-SCON-NIM (IP-INF (P-CONN for;{for})
                                (NP-SBJ (PRO us;{we}))
                                (TO to;{to})
                                (VB;~phr_Vp.n take;{take[on]})

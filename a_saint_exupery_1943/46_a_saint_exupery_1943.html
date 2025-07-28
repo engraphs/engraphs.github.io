@@ -68,8 +68,8 @@ It said: &ldquo;If you please &mdash; draw me a sheep!&rdquo;
 <!-- 0046_0005__If -->
 <g id="node4" class="node">
 <title>0046_0005__If</title>
-<polygon fill="lightblue" stroke="black" points="145,-188.78 268.39,-247.12 21.61,-247.12 145,-188.78"/>
-<text text-anchor="middle" x="145" y="-224.12" font-family="fixed" font-size="14.00">if[cnt][cnd]</text>
+<polygon fill="lightblue" stroke="black" points="145,-188.78 179.29,-247.12 110.71,-247.12 145,-188.78"/>
+<text text-anchor="middle" x="145" y="-224.12" font-family="fixed" font-size="14.00">if</text>
 </g>
 <!-- z_0046_1002&#45;&gt;0046_0005__If -->
 <g id="edge9" class="edge">
@@ -87,7 +87,7 @@ It said: &ldquo;If you please &mdash; draw me a sheep!&rdquo;
 <!-- 0046_0005__If&#45;&gt;0046_0007__please -->
 <g id="edge3" class="edge">
 <title>0046_0005__If&#45;&gt;0046_0007__please</title>
-<path fill="none" stroke="red" stroke-width="2" d="M117.84,-201.27C109.48,-192.29 100.88,-181.7 94.75,-170.78 90.48,-163.18 87.19,-154.38 84.7,-146.03"/>
+<path fill="none" stroke="red" stroke-width="2" d="M130.31,-213.78C119.11,-203.24 104.08,-187.39 94.75,-170.78 90.48,-163.18 87.19,-154.38 84.7,-146.03"/>
 <polygon fill="red" stroke="red" stroke-width="2" points="88.12,-145.26 82.2,-136.47 81.35,-147.03 88.12,-145.26"/>
 <text text-anchor="middle" x="133.62" y="-157.48" font-family="fixed" font-size="14.00">[restriction]</text>
 </g>
@@ -100,8 +100,8 @@ It said: &ldquo;If you please &mdash; draw me a sheep!&rdquo;
 <!-- 0046_0005__If&#45;&gt;0046_0009__draw -->
 <g id="edge4" class="edge">
 <title>0046_0005__If&#45;&gt;0046_0009__draw</title>
-<path fill="none" stroke="blue" stroke-width="2" d="M161.78,-196.41C170.84,-180.06 181.97,-159.98 190.92,-143.84"/>
-<polygon fill="blue" stroke="blue" stroke-width="2" points="193.74,-145.98 195.53,-135.53 187.62,-142.58 193.74,-145.98"/>
+<path fill="none" stroke="blue" stroke-width="2" d="M156.08,-206.68C165.76,-189.22 179.94,-163.66 190.87,-143.93"/>
+<polygon fill="blue" stroke="blue" stroke-width="2" points="193.78,-145.9 195.57,-135.46 187.66,-142.51 193.78,-145.9"/>
 <text text-anchor="middle" x="209.62" y="-157.48" font-family="fixed" font-size="14.00">[scope]</text>
 </g>
 <!-- 0046_0006__you -->
@@ -162,13 +162,13 @@ It said: &ldquo;If you please &mdash; draw me a sheep!&rdquo;
 <pre>
 arc(r_0046_0002__said,r_0046_0001__It,arg0).
 arc(r_0046_0002__said,z_0046_1002__utterance,arg1).
-arc(r_0046_0005__If_cnt_cnd,r_0046_0007__please,restriction).
-arc(r_0046_0005__If_cnt_cnd,r_0046_0009__draw,scope).
+arc(r_0046_0005__If,r_0046_0007__please,restriction).
+arc(r_0046_0005__If,r_0046_0009__draw,scope).
 arc(r_0046_0007__please,r_0046_0006__you,arg0).
 arc(r_0046_0009__draw,r_0046_0010__me,arg2).
 arc(r_0046_0009__draw,r_0046_0011__a_r_0046_0012__sheep,arg1).
 arc(r_0046_0009__draw,z_0046_1004,arg0).
-arc(z_0046_1002__utterance,r_0046_0005__If_cnt_cnd,part1).
+arc(z_0046_1002__utterance,r_0046_0005__If,part1).
 
 </pre>
 <br>
@@ -194,7 +194,7 @@ arc(z_0046_1002__utterance,r_0046_0005__If_cnt_cnd,part1).
 <line x1="434.5" y1="55" x2="225.5" y2="80" style="stroke:#000000;stroke-width:2;"/>
 <text x="533.5" y="100" text-anchor="middle">utterance-OB1</text>
 <text x="533.5" y="155" text-anchor="middle">IP-IMP</text>
-<text x="352" y="210" text-anchor="middle">PP-SCON-CNT-CND</text>
+<text x="352" y="210" text-anchor="middle">PP-SCON</text>
 <text x="286" y="265" text-anchor="middle">P-CONN</text>
 <text x="286" y="320" text-anchor="middle">If</text>
 <line x1="286" y1="275" x2="286" y2="300" style="stroke:#000000;stroke-width:2;"/>
@@ -253,9 +253,9 @@ arc(z_0046_1002__utterance,r_0046_0005__If_cnt_cnd,part1).
           (VBD;~Tr said;{say})
           (PUNC :)
           (PULQ &lt;ldquo&gt;)
-          (utterance-OB1 (IP-IMP (PP-SCON-CNT-CND (P-CONN If;{if})
-                                                  (IP-ADV (NP-SBJ (PRO you;{you}))
-                                                          (VBP please;{please})))
+          (utterance-OB1 (IP-IMP (PP-SCON (P-CONN If;{if})
+                                          (IP-ADV (NP-SBJ (PRO you;{you}))
+                                                  (VBP please;{please})))
                                  (PUNC &lt;mdash&gt;)
                                  (VB draw;{draw})
                                  (NP-OB2;{PRINCE} (PRO me;{I}))

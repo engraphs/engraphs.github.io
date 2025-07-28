@@ -36,8 +36,8 @@ If a monster gets injured by another monster, it'll retaliate against the one th
 <!-- 0039_0001__If -->
 <g id="node1" class="node">
 <title>0039_0001__If</title>
-<polygon fill="lightblue" stroke="black" points="198.98,-455.35 322.37,-513.68 75.59,-513.68 198.98,-455.35"/>
-<text text-anchor="middle" x="198.98" y="-490.69" font-family="fixed" font-size="14.00">if[cnt][cnd]</text>
+<polygon fill="lightblue" stroke="black" points="198.98,-455.35 233.28,-513.68 164.69,-513.68 198.98,-455.35"/>
+<text text-anchor="middle" x="198.98" y="-490.69" font-family="fixed" font-size="14.00">if</text>
 </g>
 <!-- 0039_0004__gets -->
 <g id="node2" class="node">
@@ -48,7 +48,7 @@ If a monster gets injured by another monster, it'll retaliate against the one th
 <!-- 0039_0001__If&#45;&gt;0039_0004__gets -->
 <g id="edge1" class="edge">
 <title>0039_0001__If&#45;&gt;0039_0004__gets</title>
-<path fill="none" stroke="red" stroke-width="2" d="M173.44,-467.23C166.03,-458.38 158.63,-448.01 153.73,-437.35 147.49,-423.74 144.08,-407.54 142.21,-393.64"/>
+<path fill="none" stroke="red" stroke-width="2" d="M184.46,-479.44C174.25,-468.89 161.13,-453.46 153.73,-437.35 147.49,-423.74 144.08,-407.54 142.21,-393.64"/>
 <polygon fill="red" stroke="red" stroke-width="2" points="145.7,-393.28 141.14,-383.71 138.74,-394.03 145.7,-393.28"/>
 <text text-anchor="middle" x="192.61" y="-424.05" font-family="fixed" font-size="14.00">[restriction]</text>
 </g>
@@ -61,7 +61,7 @@ If a monster gets injured by another monster, it'll retaliate against the one th
 <!-- 0039_0001__If&#45;&gt;0039_0011&#39;ll -->
 <g id="edge2" class="edge">
 <title>0039_0001__If&#45;&gt;0039_0011&#39;ll</title>
-<path fill="none" stroke="blue" stroke-width="2" d="M216.73,-463.33C221.51,-455 226.57,-445.89 230.98,-437.35 238.5,-422.82 246.22,-406.38 252.49,-392.57"/>
+<path fill="none" stroke="blue" stroke-width="2" d="M210.5,-474.06C216.78,-463.38 224.56,-449.76 230.98,-437.35 238.5,-422.82 246.22,-406.38 252.49,-392.57"/>
 <polygon fill="blue" stroke="blue" stroke-width="2" points="255.65,-394.08 256.55,-383.52 249.26,-391.21 255.65,-394.08"/>
 <text text-anchor="middle" x="263.61" y="-424.05" font-family="fixed" font-size="14.00">[scope]</text>
 </g>
@@ -226,8 +226,8 @@ If a monster gets injured by another monster, it'll retaliate against the one th
 </svg>
 <br>
 <pre>
-arc(r_0039_0001__If_cnt_cnd,r_0039_0004__gets,restriction).
-arc(r_0039_0001__If_cnt_cnd,r_0039_0011___apos_ll,scope).
+arc(r_0039_0001__If,r_0039_0004__gets,restriction).
+arc(r_0039_0001__If,r_0039_0011___apos_ll,scope).
 arc(r_0039_0004__gets,r_0039_0005__injured,keep_scope).
 arc(r_0039_0005__injured,r_0039_0002__a_r_0039_0003__monster,arg1).
 arc(r_0039_0005__injured,r_0039_0007__another_r_0039_0008__monster,r_0039_0006__by_arg0).
@@ -246,7 +246,7 @@ arc(r_0039_0022__called,star_z_0039_1011,arg0).
 <br>
 <svg xmlns="http://www.w3.org/2000/svg" width="2398" height="440" viewBox="-23.98 -2.200 2877.6 528.0">
 <text x="1199" y="45" text-anchor="middle">IP-MAT</text>
-<text x="390.5" y="100" text-anchor="middle">PP-SCON-CNT-CND</text>
+<text x="390.5" y="100" text-anchor="middle">PP-SCON</text>
 <text x="33" y="155" text-anchor="middle">P-CONN</text>
 <text x="33" y="210" text-anchor="middle">If</text>
 <line x1="33" y1="165" x2="33" y2="190" style="stroke:#000000;stroke-width:2;"/>
@@ -395,14 +395,14 @@ arc(r_0039_0022__called,star_z_0039_1011,arg0).
 </svg>
 <br>
 <pre>
-( (IP-MAT (PP-SCON-CNT-CND (P-CONN If;{if})
-                           (IP-ADV (NP-SBJ;{MONSTER1} (D a;{a})
-                                                      (N monster;{monster}))
-                                   (VBP;~cat_Ve_passive_ gets;{get})
-                                   (IP-PPL-CAT (VVN;~Tn injured;{injure})
-                                               (PP-LGS (P-ROLE;_lgs_ by;{by})
-                                                       (NP;{MONSTER2} (D another;{another})
-                                                                      (N monster;{monster}))))))
+( (IP-MAT (PP-SCON (P-CONN If;{if})
+                   (IP-ADV (NP-SBJ;{MONSTER1} (D a;{a})
+                                              (N monster;{monster}))
+                           (VBP;~cat_Ve_passive_ gets;{get})
+                           (IP-PPL-CAT (VVN;~Tn injured;{injure})
+                                       (PP-LGS (P-ROLE;_lgs_ by;{by})
+                                               (NP;{MONSTER2} (D another;{another})
+                                                              (N monster;{monster}))))))
           (PUNC ,)
           (NP-SBJ;{MONSTER1} (PRO it;{it}))
           (MD;~cat_Vi &lt;apos&gt;ll;{will})

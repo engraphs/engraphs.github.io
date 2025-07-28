@@ -36,8 +36,8 @@ As the Captain closed the door the young woman turned.
 <!-- 0038_0001__As -->
 <g id="node1" class="node">
 <title>0038_0001__As</title>
-<polygon fill="lightblue" stroke="black" points="253.41,-283.17 346.04,-341.51 160.78,-341.51 253.41,-283.17"/>
-<text text-anchor="middle" x="253.41" y="-318.51" font-family="fixed" font-size="14.00">as[tmp]</text>
+<polygon fill="lightblue" stroke="black" points="253.41,-283.17 296.19,-341.51 210.63,-341.51 253.41,-283.17"/>
+<text text-anchor="middle" x="253.41" y="-318.51" font-family="fixed" font-size="14.00">as</text>
 </g>
 <!-- 0038_0004__closed -->
 <g id="node2" class="node">
@@ -48,7 +48,7 @@ As the Captain closed the door the young woman turned.
 <!-- 0038_0001__As&#45;&gt;0038_0004__closed -->
 <g id="edge1" class="edge">
 <title>0038_0001__As&#45;&gt;0038_0004__closed</title>
-<path fill="none" stroke="red" stroke-width="2" d="M228.07,-298.71C219.17,-289.32 210.16,-277.67 205.16,-265.17 202.15,-257.65 200.81,-249.11 200.36,-240.99"/>
+<path fill="none" stroke="red" stroke-width="2" d="M235.81,-306.4C224.85,-296.12 211.63,-281.36 205.16,-265.17 202.15,-257.65 200.81,-249.11 200.36,-240.99"/>
 <polygon fill="red" stroke="red" stroke-width="2" points="203.87,-241.03 200.34,-231.04 196.87,-241.05 203.87,-241.03"/>
 <text text-anchor="middle" x="243.03" y="-251.87" font-family="fixed" font-size="14.00">[restriction]</text>
 </g>
@@ -61,8 +61,8 @@ As the Captain closed the door the young woman turned.
 <!-- 0038_0001__As&#45;&gt;0038_0010__turned -->
 <g id="edge2" class="edge">
 <title>0038_0001__As&#45;&gt;0038_0010__turned</title>
-<path fill="none" stroke="blue" stroke-width="2" d="M268.7,-292.55C277.53,-276.1 288.62,-255.43 297.54,-238.8"/>
-<polygon fill="blue" stroke="blue" stroke-width="2" points="300.52,-240.65 302.16,-230.19 294.35,-237.35 300.52,-240.65"/>
+<path fill="none" stroke="blue" stroke-width="2" d="M265.41,-298.7C274.61,-281.55 287.39,-257.72 297.46,-238.96"/>
+<polygon fill="blue" stroke="blue" stroke-width="2" points="300.54,-240.62 302.18,-230.15 294.37,-237.31 300.54,-240.62"/>
 <text text-anchor="middle" x="315.03" y="-251.87" font-family="fixed" font-size="14.00">[scope]</text>
 </g>
 <!-- 0038_0002__the_0038_0003__Captain -->
@@ -121,8 +121,8 @@ As the Captain closed the door the young woman turned.
 </svg>
 <br>
 <pre>
-arc(r_0038_0001__As_tmp,r_0038_0004__closed,restriction_).
-arc(r_0038_0001__As_tmp,r_0038_0010__turned,scope_).
+arc(r_0038_0001__As,r_0038_0004__closed,restriction).
+arc(r_0038_0001__As,r_0038_0010__turned,scope).
 arc(r_0038_0004__closed,r_0038_0002__the_r_0038_0003__Captain,arg0).
 arc(r_0038_0004__closed,r_0038_0005__the_r_0038_0006__door,arg1).
 arc(r_0038_0007__the_r_0038_0009__woman,r_0038_0008__young,attrib).
@@ -132,7 +132,7 @@ arc(r_0038_0010__turned,r_0038_0007__the_r_0038_0009__woman,arg0).
 <br>
 <svg xmlns="http://www.w3.org/2000/svg" width="671" height="330" viewBox="-6.71 -1.650 805.2 396.0">
 <text x="335.5" y="45" text-anchor="middle">IP-MAT</text>
-<text x="192.5" y="100" text-anchor="middle">PP-SCON-TMP</text>
+<text x="192.5" y="100" text-anchor="middle">PP-SCON</text>
 <text x="33" y="155" text-anchor="middle">P-CONN</text>
 <text x="33" y="210" text-anchor="middle">As</text>
 <line x1="33" y1="165" x2="33" y2="190" style="stroke:#000000;stroke-width:2;"/>
@@ -191,12 +191,12 @@ arc(r_0038_0010__turned,r_0038_0007__the_r_0038_0009__woman,arg0).
 </svg>
 <br>
 <pre>
-( (IP-MAT (PP-SCON-TMP (P-CONN As;{as})
-                       (IP-ADV (NP-SBJ;{CAPTAIN} (D the;{the})
-                                                 (N Captain;{captain}))
-                               (VBD;~Tn closed;{close})
-                               (NP-OB1 (D the;{the})
-                                       (N door;{door}))))
+( (IP-MAT (PP-SCON (P-CONN As;{as})
+                   (IP-ADV (NP-SBJ;{CAPTAIN} (D the;{the})
+                                             (N Captain;{captain}))
+                           (VBD;~Tn closed;{close})
+                           (NP-OB1 (D the;{the})
+                                   (N door;{door}))))
           (NP-SBJ;{NASHA} (D the;{the})
                           (ADJP (ADJ young;{young}))
                           (N woman;{woman}))

@@ -132,9 +132,9 @@ Amazing mechanism created by high quality workmanship, and admiration goes to sk
 <!-- 0017_0011__goes&#45;&gt;0017_0010__admiration -->
 <g id="edge7" class="edge">
 <title>0017_0011__goes&#45;&gt;0017_0010__admiration</title>
-<path fill="none" stroke="black" d="M474.27,-196.99C489.96,-190.6 509.53,-181.54 525.41,-170.78 537.91,-162.31 550.28,-151.14 560.43,-141.01"/>
-<polygon fill="black" stroke="black" points="562.87,-143.52 567.34,-133.92 557.85,-138.64 562.87,-143.52"/>
-<text text-anchor="middle" x="566.91" y="-157.48" font-family="fixed" font-size="14.00">[arg0]</text>
+<path fill="none" stroke="black" d="M467.97,-192.79C489.75,-178.21 523.75,-155.45 549.4,-138.28"/>
+<polygon fill="black" stroke="black" points="551.15,-141.31 557.52,-132.84 547.26,-135.49 551.15,-141.31"/>
+<text text-anchor="middle" x="546.91" y="-157.48" font-family="fixed" font-size="14.00">[arg0]</text>
 </g>
 <!-- 0017_0014__craftsmen -->
 <g id="node10" class="node">
@@ -147,7 +147,7 @@ Amazing mechanism created by high quality workmanship, and admiration goes to sk
 <title>0017_0011__goes&#45;&gt;0017_0014__craftsmen</title>
 <path fill="none" stroke="orange" stroke-width="2" d="M446.41,-188.53C446.41,-176.38 446.41,-160.25 446.41,-146.17"/>
 <polygon fill="orange" stroke="orange" stroke-width="2" points="449.91,-146.53 446.41,-136.53 442.91,-146.53 449.91,-146.53"/>
-<text text-anchor="middle" x="483.91" y="-157.48" font-family="fixed" font-size="14.00">to[nim][dir]</text>
+<text text-anchor="middle" x="470.41" y="-157.48" font-family="fixed" font-size="14.00">to[nim]</text>
 </g>
 <!-- z_0017_1006&#45;&gt;0017_0002__mechanism -->
 <g id="edge11" class="edge">
@@ -193,7 +193,7 @@ arc(r_0017_0006__quality_r_0017_0007__workmanship,r_0017_0005__high,attrib).
 arc(r_0017_0009__and,r_0017_0011__goes,coord_conj2).
 arc(r_0017_0009__and,z_0017_1006,coord_conj1).
 arc(r_0017_0011__goes,r_0017_0010__admiration,arg0).
-arc(r_0017_0011__goes,r_0017_0014__craftsmen,r_0017_0012__to__nim_dir).
+arc(r_0017_0011__goes,r_0017_0014__craftsmen,r_0017_0012__to__nim).
 arc(r_0017_0014__craftsmen,r_0017_0013__skilled,attrib).
 arc(r_0017_0014__craftsmen,r_0017_0016__passion,r_0017_0015__with).
 arc(z_0017_1006,r_0017_0002__mechanism,prd).
@@ -204,7 +204,7 @@ arc(z_0017_1006,r_0017_0002__mechanism,prd).
 <text x="676.5" y="45" text-anchor="middle">IP-MAT</text>
 <text x="649" y="100" text-anchor="middle">ILYR</text>
 <text x="319" y="155" text-anchor="middle">ILYR</text>
-<text x="319" y="210" text-anchor="middle">NP-PRD2</text>
+<text x="319" y="210" text-anchor="middle">NP-PRD</text>
 <text x="38.5" y="265" text-anchor="middle">ADJP</text>
 <text x="38.5" y="320" text-anchor="middle">ADJ</text>
 <text x="38.5" y="375" text-anchor="middle">Amazing</text>
@@ -265,7 +265,7 @@ arc(z_0017_1006,r_0017_0002__mechanism,prd).
 <text x="885.5" y="320" text-anchor="middle">goes</text>
 <line x1="885.5" y1="275" x2="885.5" y2="300" style="stroke:#000000;stroke-width:2;"/>
 <line x1="1023" y1="220" x2="885.5" y2="245" style="stroke:#000000;stroke-width:2;"/>
-<text x="1105.5" y="265" text-anchor="middle">PP-NIM-DIR</text>
+<text x="1105.5" y="265" text-anchor="middle">PP-NIM</text>
 <text x="946" y="320" text-anchor="middle">P-ROLE</text>
 <text x="946" y="375" text-anchor="middle">to</text>
 <line x1="946" y1="330" x2="946" y2="355" style="stroke:#000000;stroke-width:2;"/>
@@ -305,22 +305,22 @@ arc(z_0017_1006,r_0017_0002__mechanism,prd).
 </svg>
 <br>
 <pre>
-( (IP-MAT (ILYR (ILYR (NP-PRD2 (ADJP (ADJ Amazing;{amazing}))
-                               (N mechanism;{mechanism})
-                               (IP-PPL (VVN created;{create})
-                                       (PP-LGS (P-ROLE;_lgs_ by;{by})
-                                               (NP (ADJP (ADJ high;{high}))
-                                                   (N quality;{quality})
-                                                   (N workmanship;{workmanship}))))))
+( (IP-MAT (ILYR (ILYR (NP-PRD (ADJP (ADJ Amazing;{amazing}))
+                              (N mechanism;{mechanism})
+                              (IP-PPL (VVN created;{create})
+                                      (PP-LGS (P-ROLE;_lgs_ by;{by})
+                                              (NP (ADJP (ADJ high;{high}))
+                                                  (N quality;{quality})
+                                                  (N workmanship;{workmanship}))))))
                 (PUNC ,)
                 (CONJP (CONJ and;{and})
                        (ILYR (NP-SBJ (N admiration;{admiration}))
                              (VBP goes;{go})
-                             (PP-NIM-DIR (P-ROLE to;{to})
-                                         (NP (ADJP (ADJ skilled;{skilled}))
-                                             (NS craftsmen;{craftsman})
-                                             (PP (P-ROLE with;{with})
-                                                 (NP (N passion;{passion}))))))))
+                             (PP-NIM (P-ROLE to;{to})
+                                     (NP (ADJP (ADJ skilled;{skilled}))
+                                         (NS craftsmen;{craftsman})
+                                         (PP (P-ROLE with;{with})
+                                             (NP (N passion;{passion}))))))))
           (PUNC .))
   (ID 17_a_seiko_9r65))
 </pre>

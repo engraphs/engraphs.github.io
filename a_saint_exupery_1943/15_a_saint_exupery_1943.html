@@ -36,8 +36,8 @@ But since the grown-ups were not able to understand it, I made another drawing:
 <!-- 0015_0002__since -->
 <g id="node1" class="node">
 <title>0015_0002__since</title>
-<polygon fill="lightblue" stroke="black" points="222.32,-588.63 336.16,-646.96 108.47,-646.96 222.32,-588.63"/>
-<text text-anchor="middle" x="222.32" y="-623.97" font-family="fixed" font-size="14.00">since[cnt]</text>
+<polygon fill="lightblue" stroke="black" points="222.32,-588.63 293.74,-646.96 150.9,-646.96 222.32,-588.63"/>
+<text text-anchor="middle" x="222.32" y="-623.97" font-family="fixed" font-size="14.00">since</text>
 </g>
 <!-- 0015_0006__not -->
 <g id="node2" class="node">
@@ -48,7 +48,7 @@ But since the grown-ups were not able to understand it, I made another drawing:
 <!-- 0015_0002__since&#45;&gt;0015_0006__not -->
 <g id="edge1" class="edge">
 <title>0015_0002__since&#45;&gt;0015_0006__not</title>
-<path fill="none" stroke="red" stroke-width="2" d="M195.86,-601.74C187.84,-592.74 179.89,-581.97 175.07,-570.63 169.27,-557.01 167.08,-540.8 166.43,-526.9"/>
+<path fill="none" stroke="red" stroke-width="2" d="M200.06,-606.31C190.73,-596.5 180.74,-583.96 175.07,-570.63 169.27,-557.01 167.08,-540.8 166.43,-526.9"/>
 <polygon fill="red" stroke="red" stroke-width="2" points="169.93,-526.94 166.28,-516.99 162.93,-527.05 169.93,-526.94"/>
 <text text-anchor="middle" x="213.94" y="-557.33" font-family="fixed" font-size="14.00">[restriction]</text>
 </g>
@@ -61,7 +61,7 @@ But since the grown-ups were not able to understand it, I made another drawing:
 <!-- 0015_0002__since&#45;&gt;0015_0013__made -->
 <g id="edge2" class="edge">
 <title>0015_0002__since&#45;&gt;0015_0013__made</title>
-<path fill="none" stroke="blue" stroke-width="2" d="M239.33,-597.11C243.85,-588.7 248.53,-579.43 252.32,-570.63 258.47,-556.32 264.06,-539.97 268.39,-526.16"/>
+<path fill="none" stroke="blue" stroke-width="2" d="M237.46,-600.54C242.54,-591.27 248.01,-580.64 252.32,-570.63 258.47,-556.32 264.06,-539.97 268.39,-526.16"/>
 <polygon fill="blue" stroke="blue" stroke-width="2" points="271.69,-527.33 271.24,-516.74 264.99,-525.3 271.69,-527.33"/>
 <text text-anchor="middle" x="283.94" y="-557.33" font-family="fixed" font-size="14.00">[scope]</text>
 </g>
@@ -154,8 +154,8 @@ But since the grown-ups were not able to understand it, I made another drawing:
 </svg>
 <br>
 <pre>
-arc(r_0015_0002__since_cnt,r_0015_0006__not,restriction_).
-arc(r_0015_0002__since_cnt,r_0015_0013__made,scope_).
+arc(r_0015_0002__since,r_0015_0006__not,restriction).
+arc(r_0015_0002__since,r_0015_0013__made,scope).
 arc(r_0015_0005__were,r_0015_0007__able,keep_scope).
 arc(r_0015_0006__not,r_0015_0005__were,keep_scope).
 arc(r_0015_0007__able,r_0015_0009__understand,keep_scope).
@@ -172,7 +172,7 @@ arc(r_0015_0013__made,r_0015_0014__another_r_0015_0015__drawing,arg1).
 <text x="49.5" y="155" text-anchor="middle">But</text>
 <line x1="49.5" y1="110" x2="49.5" y2="135" style="stroke:#000000;stroke-width:2;"/>
 <line x1="594" y1="55" x2="49.5" y2="80" style="stroke:#000000;stroke-width:2;"/>
-<text x="440" y="100" text-anchor="middle">PP-SCON-CNT</text>
+<text x="440" y="100" text-anchor="middle">PP-SCON</text>
 <text x="132" y="155" text-anchor="middle">P-CONN</text>
 <text x="132" y="210" text-anchor="middle">since</text>
 <line x1="132" y1="165" x2="132" y2="190" style="stroke:#000000;stroke-width:2;"/>
@@ -196,7 +196,7 @@ arc(r_0015_0013__made,r_0015_0014__another_r_0015_0015__drawing,arg1).
 <text x="423.5" y="265" text-anchor="middle">not</text>
 <line x1="423.5" y1="220" x2="423.5" y2="245" style="stroke:#000000;stroke-width:2;"/>
 <line x1="473" y1="165" x2="423.5" y2="190" style="stroke:#000000;stroke-width:2;"/>
-<text x="616" y="210" text-anchor="middle">ADJP-PRD2</text>
+<text x="616" y="210" text-anchor="middle">ADJP-PRD</text>
 <text x="500.5" y="265" text-anchor="middle">ADJ;_cat_</text>
 <text x="500.5" y="320" text-anchor="middle">able</text>
 <line x1="500.5" y1="275" x2="500.5" y2="300" style="stroke:#000000;stroke-width:2;"/>
@@ -252,15 +252,15 @@ arc(r_0015_0013__made,r_0015_0014__another_r_0015_0015__drawing,arg1).
 <br>
 <pre>
 ( (IP-MAT (CONJ;_cl_ But;{but})
-          (PP-SCON-CNT (P-CONN since;{since})
-                       (IP-ADV (NP-SBJ (D the;{the})
-                                       (NS grown_-_ups;{grown_ups}))
-                               (BED;~La were;{be})
-                               (NEG not;{not})
-                               (ADJP-PRD2 (ADJ;_cat_ able;{able})
-                                          (IP-INF (TO to;{to})
-                                                  (VB;~Tn understand;{understand})
-                                                  (NP-OB1;{ARTWORK} (PRO it;{it}))))))
+          (PP-SCON (P-CONN since;{since})
+                   (IP-ADV (NP-SBJ (D the;{the})
+                                   (NS grown_-_ups;{grown_ups}))
+                           (BED;~La were;{be})
+                           (NEG not;{not})
+                           (ADJP-PRD (ADJ;_cat_ able;{able})
+                                     (IP-INF (TO to;{to})
+                                             (VB;~Tn understand;{understand})
+                                             (NP-OB1;{ARTWORK} (PRO it;{it}))))))
           (PUNC ,)
           (NP-SBJ (PRO I;{I}))
           (VBD;~Tn made;{make})

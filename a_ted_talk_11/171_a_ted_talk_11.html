@@ -36,8 +36,8 @@ If you think of it, the whole system of public education around the world is a p
 <!-- 0171_0001__If -->
 <g id="node1" class="node">
 <title>0171_0001__If</title>
-<polygon fill="lightblue" stroke="black" points="155.81,-377.56 279.2,-435.9 32.42,-435.9 155.81,-377.56"/>
-<text text-anchor="middle" x="155.81" y="-412.9" font-family="fixed" font-size="14.00">if[cnt][cnd]</text>
+<polygon fill="lightblue" stroke="black" points="155.81,-377.56 190.11,-435.9 121.52,-435.9 155.81,-377.56"/>
+<text text-anchor="middle" x="155.81" y="-412.9" font-family="fixed" font-size="14.00">if</text>
 </g>
 <!-- 0171_0003__think -->
 <g id="node2" class="node">
@@ -48,7 +48,7 @@ If you think of it, the whole system of public education around the world is a p
 <!-- 0171_0001__If&#45;&gt;0171_0003__think -->
 <g id="edge1" class="edge">
 <title>0171_0001__If&#45;&gt;0171_0003__think</title>
-<path fill="none" stroke="red" stroke-width="2" d="M130.45,-389.16C123.28,-380.37 116.18,-370.11 111.56,-359.56 108.24,-351.97 106.16,-343.31 104.86,-335.11"/>
+<path fill="none" stroke="red" stroke-width="2" d="M141.5,-401.65C131.45,-391.1 118.61,-375.66 111.56,-359.56 108.24,-351.97 106.16,-343.31 104.86,-335.11"/>
 <polygon fill="red" stroke="red" stroke-width="2" points="108.37,-334.95 103.72,-325.43 101.41,-335.77 108.37,-334.95"/>
 <text text-anchor="middle" x="150.44" y="-346.26" font-family="fixed" font-size="14.00">[restriction]</text>
 </g>
@@ -61,7 +61,7 @@ If you think of it, the whole system of public education around the world is a p
 <!-- 0171_0001__If&#45;&gt;0171_0016__is -->
 <g id="edge2" class="edge">
 <title>0171_0001__If&#45;&gt;0171_0016__is</title>
-<path fill="none" stroke="blue" stroke-width="2" d="M174.17,-385.97C179.15,-377.56 184.38,-368.31 188.81,-359.56 193.02,-351.27 197.17,-342.06 200.81,-333.55"/>
+<path fill="none" stroke="blue" stroke-width="2" d="M167.58,-396.9C174.17,-386.18 182.34,-372.33 188.81,-359.56 193.02,-351.27 197.17,-342.06 200.81,-333.55"/>
 <polygon fill="blue" stroke="blue" stroke-width="2" points="203.94,-335.15 204.55,-324.57 197.48,-332.46 203.94,-335.15"/>
 <text text-anchor="middle" x="221.44" y="-346.26" font-family="fixed" font-size="14.00">[scope]</text>
 </g>
@@ -199,8 +199,8 @@ If you think of it, the whole system of public education around the world is a p
 </svg>
 <br>
 <pre>
-arc(r_0171_0001__If_cnt_cnd,r_0171_0003__think,restriction).
-arc(r_0171_0001__If_cnt_cnd,r_0171_0016__is,scope).
+arc(r_0171_0001__If,r_0171_0003__think,restriction).
+arc(r_0171_0001__If,r_0171_0016__is,scope).
 arc(r_0171_0003__think,r_0171_0002__you,arg0).
 arc(r_0171_0003__think,r_0171_0005__it,r_0171_0004__of__clr1).
 arc(r_0171_0007__the_r_0171_0009__system,r_0171_0008__whole,attrib).
@@ -216,7 +216,7 @@ arc(r_0171_0017__a_r_0171_0019__process,r_0171_0021__university_r_0171_0022__ent
 <br>
 <svg xmlns="http://www.w3.org/2000/svg" width="1584" height="440" viewBox="-15.84 -2.200 1900.8 528.0">
 <text x="792" y="45" text-anchor="middle">IP-MAT</text>
-<text x="154" y="100" text-anchor="middle">PP-SCON-CNT-CND</text>
+<text x="154" y="100" text-anchor="middle">PP-SCON</text>
 <text x="33" y="155" text-anchor="middle">P-CONN</text>
 <text x="33" y="210" text-anchor="middle">If</text>
 <line x1="33" y1="165" x2="33" y2="190" style="stroke:#000000;stroke-width:2;"/>
@@ -304,7 +304,7 @@ arc(r_0171_0017__a_r_0171_0019__process,r_0171_0021__university_r_0171_0022__ent
 <text x="984.5" y="155" text-anchor="middle">is</text>
 <line x1="984.5" y1="110" x2="984.5" y2="135" style="stroke:#000000;stroke-width:2;"/>
 <line x1="792" y1="55" x2="984.5" y2="80" style="stroke:#000000;stroke-width:2;"/>
-<text x="1276" y="100" text-anchor="middle">NP-PRD2</text>
+<text x="1276" y="100" text-anchor="middle">NP-PRD</text>
 <text x="1050.5" y="155" text-anchor="middle">D</text>
 <text x="1050.5" y="210" text-anchor="middle">a</text>
 <line x1="1050.5" y1="165" x2="1050.5" y2="190" style="stroke:#000000;stroke-width:2;"/>
@@ -343,11 +343,11 @@ arc(r_0171_0017__a_r_0171_0019__process,r_0171_0021__university_r_0171_0022__ent
 </svg>
 <br>
 <pre>
-( (IP-MAT (PP-SCON-CNT-CND (P-CONN If;{if})
-                           (IP-ADV (NP-SBJ (PRO you;{you}))
-                                   (VBP think;{think})
-                                   (PP-CLR (P-ROLE of;{of})
-                                           (NP (PRO it;{it})))))
+( (IP-MAT (PP-SCON (P-CONN If;{if})
+                   (IP-ADV (NP-SBJ (PRO you;{you}))
+                           (VBP think;{think})
+                           (PP-CLR (P-ROLE of;{of})
+                                   (NP (PRO it;{it})))))
           (PUNC ,)
           (NP-SBJ (D the;{the})
                   (ADJP (ADJ whole;{whole}))
@@ -359,12 +359,12 @@ arc(r_0171_0017__a_r_0171_0019__process,r_0171_0021__university_r_0171_0022__ent
                               (NP (D the;{the})
                                   (N world;{world}))))))
           (BEP;~Ln is;{be})
-          (NP-PRD2 (D a;{a})
-                   (ADJP (ADJ protracted;{protracted}))
-                   (N process;{process})
-                   (PP (P-ROLE of;{of})
-                       (NP (N university;{university})
-                           (N entrance;{entrance}))))
+          (NP-PRD (D a;{a})
+                  (ADJP (ADJ protracted;{protracted}))
+                  (N process;{process})
+                  (PP (P-ROLE of;{of})
+                      (NP (N university;{university})
+                          (N entrance;{entrance}))))
           (PUNC .))
   (ID 171_a_ted_talk_11))
 </pre>

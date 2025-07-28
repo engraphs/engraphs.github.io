@@ -36,8 +36,8 @@ If either player hits the wall he misses a turn.
 <!-- 0011_0001__If -->
 <g id="node1" class="node">
 <title>0011_0001__If</title>
-<polygon fill="lightblue" stroke="black" points="191.03,-188.78 314.42,-247.12 67.64,-247.12 191.03,-188.78"/>
-<text text-anchor="middle" x="191.03" y="-224.12" font-family="fixed" font-size="14.00">if[cnt][cnd]</text>
+<polygon fill="lightblue" stroke="black" points="191.03,-188.78 225.32,-247.12 156.73,-247.12 191.03,-188.78"/>
+<text text-anchor="middle" x="191.03" y="-224.12" font-family="fixed" font-size="14.00">if</text>
 </g>
 <!-- 0011_0004__hits -->
 <g id="node2" class="node">
@@ -48,7 +48,7 @@ If either player hits the wall he misses a turn.
 <!-- 0011_0001__If&#45;&gt;0011_0004__hits -->
 <g id="edge1" class="edge">
 <title>0011_0001__If&#45;&gt;0011_0004__hits</title>
-<path fill="none" stroke="red" stroke-width="2" d="M162.59,-202.04C154.28,-193.12 146.24,-182.37 141.78,-170.78 138.87,-163.23 137.77,-154.68 137.62,-146.56"/>
+<path fill="none" stroke="red" stroke-width="2" d="M175.8,-214.76C164.05,-204.53 148.66,-188.64 141.78,-170.78 138.87,-163.23 137.77,-154.68 137.62,-146.56"/>
 <polygon fill="red" stroke="red" stroke-width="2" points="141.11,-146.74 137.98,-136.62 134.12,-146.48 141.11,-146.74"/>
 <text text-anchor="middle" x="179.65" y="-157.48" font-family="fixed" font-size="14.00">[restriction]</text>
 </g>
@@ -61,7 +61,7 @@ If either player hits the wall he misses a turn.
 <!-- 0011_0001__If&#45;&gt;0011_0008__misses -->
 <g id="edge2" class="edge">
 <title>0011_0001__If&#45;&gt;0011_0008__misses</title>
-<path fill="none" stroke="blue" stroke-width="2" d="M207.08,-195.87C211.13,-187.78 215.36,-179.01 219.03,-170.78 222.67,-162.62 226.34,-153.65 229.61,-145.34"/>
+<path fill="none" stroke="blue" stroke-width="2" d="M201.71,-206.44C207.13,-195.92 213.68,-182.77 219.03,-170.78 222.67,-162.62 226.34,-153.65 229.61,-145.34"/>
 <polygon fill="blue" stroke="blue" stroke-width="2" points="232.79,-146.82 233.12,-136.23 226.25,-144.3 232.79,-146.82"/>
 <text text-anchor="middle" x="249.65" y="-157.48" font-family="fixed" font-size="14.00">[scope]</text>
 </g>
@@ -115,8 +115,8 @@ If either player hits the wall he misses a turn.
 </svg>
 <br>
 <pre>
-arc(r_0011_0001__If_cnt_cnd,r_0011_0004__hits,restriction).
-arc(r_0011_0001__If_cnt_cnd,r_0011_0008__misses,scope).
+arc(r_0011_0001__If,r_0011_0004__hits,restriction).
+arc(r_0011_0001__If,r_0011_0008__misses,scope).
 arc(r_0011_0004__hits,r_0011_0002__either_r_0011_0003__player,arg0).
 arc(r_0011_0004__hits,r_0011_0005__the_r_0011_0006__wall,arg1).
 arc(r_0011_0008__misses,r_0011_0002__either_r_0011_0003__player,arg0).
@@ -126,7 +126,7 @@ arc(r_0011_0008__misses,r_0011_0009__a_r_0011_0010__turn,arg1).
 <br>
 <svg xmlns="http://www.w3.org/2000/svg" width="693" height="330" viewBox="-6.93 -1.650 831.6 396.0">
 <text x="346.5" y="45" text-anchor="middle">IP-MAT</text>
-<text x="192.5" y="100" text-anchor="middle">PP-SCON-CNT-CND</text>
+<text x="192.5" y="100" text-anchor="middle">PP-SCON</text>
 <text x="33" y="155" text-anchor="middle">P-CONN</text>
 <text x="33" y="210" text-anchor="middle">If</text>
 <line x1="33" y1="165" x2="33" y2="190" style="stroke:#000000;stroke-width:2;"/>
@@ -185,12 +185,12 @@ arc(r_0011_0008__misses,r_0011_0009__a_r_0011_0010__turn,arg1).
 </svg>
 <br>
 <pre>
-( (IP-MAT (PP-SCON-CNT-CND (P-CONN If;{if})
-                           (IP-ADV (NP-SBJ;{PLAYER} (D either;{either})
-                                                    (N player;{player}))
-                                   (VBP;~Tn hits;{hit})
-                                   (NP-OB1;{WALL} (D the;{the})
-                                                  (N wall;{wall}))))
+( (IP-MAT (PP-SCON (P-CONN If;{if})
+                   (IP-ADV (NP-SBJ;{PLAYER} (D either;{either})
+                                            (N player;{player}))
+                           (VBP;~Tn hits;{hit})
+                           (NP-OB1;{WALL} (D the;{the})
+                                          (N wall;{wall}))))
           (NP-SBJ;{PLAYER} (PRO he;{he}))
           (VBP;~Tn misses;{miss})
           (NP-OB1 (D a;{a})

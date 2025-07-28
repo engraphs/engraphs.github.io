@@ -94,14 +94,14 @@
 <!-- 0161_0008__as -->
 <g id="node6" class="node">
 <title>0161_0008__as</title>
-<polygon fill="lightblue" stroke="black" points="198,-422.47 283.2,-480.81 112.79,-480.81 198,-422.47"/>
-<text text-anchor="middle" x="198" y="-457.81" font-family="fixed" font-size="14.00">as[cnt]</text>
+<polygon fill="lightblue" stroke="black" points="198,-422.47 240.78,-480.81 155.22,-480.81 198,-422.47"/>
+<text text-anchor="middle" x="198" y="-457.81" font-family="fixed" font-size="14.00">as</text>
 </g>
 <!-- 0161_0008__as&#45;&gt;0161_0007__shouted -->
 <g id="edge4" class="edge">
 <title>0161_0008__as&#45;&gt;0161_0007__shouted</title>
-<path fill="none" stroke="blue" stroke-width="2" d="M178.76,-435.36C161.67,-413.14 136.69,-380.67 118.84,-357.48"/>
-<polygon fill="blue" stroke="blue" stroke-width="2" points="121.68,-355.42 112.81,-349.63 116.13,-359.69 121.68,-355.42"/>
+<path fill="none" stroke="blue" stroke-width="2" d="M183.53,-441.55C166.53,-419.47 138.19,-382.62 118.6,-357.15"/>
+<polygon fill="blue" stroke="blue" stroke-width="2" points="121.51,-355.2 112.64,-349.41 115.96,-359.47 121.51,-355.2"/>
 <text text-anchor="middle" x="177.62" y="-391.17" font-family="fixed" font-size="14.00">[scope]</text>
 </g>
 <!-- 0161_0009__each -->
@@ -113,8 +113,8 @@
 <!-- 0161_0008__as&#45;&gt;0161_0009__each -->
 <g id="edge5" class="edge">
 <title>0161_0008__as&#45;&gt;0161_0009__each</title>
-<path fill="none" stroke="red" stroke-width="2" d="M217.42,-435.36C234.59,-413.27 259.62,-381.05 277.62,-357.88"/>
-<polygon fill="red" stroke="red" stroke-width="2" points="280.35,-360.07 283.72,-350.02 274.83,-355.77 280.35,-360.07"/>
+<path fill="none" stroke="red" stroke-width="2" d="M212.39,-441.83C229.31,-420.06 257.57,-383.68 277.41,-358.15"/>
+<polygon fill="red" stroke="red" stroke-width="2" points="280.11,-360.38 283.48,-350.33 274.59,-356.08 280.11,-360.38"/>
 <text text-anchor="middle" x="294.62" y="-391.17" font-family="fixed" font-size="14.00">[restriction]</text>
 </g>
 <!-- 0161_0010__chest -->
@@ -157,8 +157,8 @@
 arc(r_0161_0002__Heave,z_0161_1004,arg0).
 arc(r_0161_0007__shouted,r_0161_0006__they,arg0).
 arc(r_0161_0007__shouted,z_0161_1002__utterance,arg1).
-arc(r_0161_0008__as_cnt,r_0161_0007__shouted,scope_).
-arc(r_0161_0008__as_cnt,r_0161_0009__each__quant,restriction_).
+arc(r_0161_0008__as,r_0161_0007__shouted,scope).
+arc(r_0161_0008__as,r_0161_0009__each__quant,restriction).
 arc(r_0161_0009__each__quant,r_0161_0010__chest,restriction).
 arc(r_0161_0009__each__quant,r_0161_0011__came_r_0161_0012__up,scope).
 arc(r_0161_0011__came_r_0161_0012__up,r_0161_0010__chest,arg0).
@@ -202,7 +202,7 @@ arc(z_0161_1002__utterance,r_0161_0002__Heave,part1).
 <text x="379.5" y="155" text-anchor="middle">shouted</text>
 <line x1="379.5" y1="110" x2="379.5" y2="135" style="stroke:#000000;stroke-width:2;"/>
 <line x1="379.5" y1="55" x2="379.5" y2="80" style="stroke:#000000;stroke-width:2;"/>
-<text x="561" y="100" text-anchor="middle">PP-SCON-CNT</text>
+<text x="561" y="100" text-anchor="middle">PP-SCON</text>
 <text x="451" y="155" text-anchor="middle">P-CONN</text>
 <text x="451" y="210" text-anchor="middle">as</text>
 <line x1="451" y1="165" x2="451" y2="190" style="stroke:#000000;stroke-width:2;"/>
@@ -242,11 +242,11 @@ arc(z_0161_1002__utterance,r_0161_0002__Heave,part1).
           (PURQ &lt;rdquo&gt;)
           (NP-SBJ;{SAILORS} (PRO they;{they}))
           (VBD;~Tr shouted;{shout})
-          (PP-SCON-CNT (P-CONN as;{as})
-                       (IP-ADV (NP-SBJ (Q each;{each})
-                                       (N chest;{chest}))
-                               (VBD came;{come})
-                               (RP up;{up})))
+          (PP-SCON (P-CONN as;{as})
+                   (IP-ADV (NP-SBJ (Q each;{each})
+                                   (N chest;{chest}))
+                           (VBD came;{come})
+                           (RP up;{up})))
           (PUNC .))
   (ID 161_a_wilde_1_1888))
 </pre>

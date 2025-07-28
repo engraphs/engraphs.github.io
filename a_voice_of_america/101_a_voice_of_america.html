@@ -52,16 +52,16 @@ Chinese mines are among the most dangerous in the world.
 <polygon fill="black" stroke="black" points="58.11,-143.96 52.49,-134.98 51.29,-145.51 58.11,-143.96"/>
 <text text-anchor="middle" x="83.41" y="-157.48" font-family="fixed" font-size="14.00">[attrib]</text>
 </g>
-<!-- 0101_0003__are -->
+<!-- 0101_0003__are_0101_0004__among -->
 <g id="node3" class="node">
-<title>0101_0003__are</title>
-<ellipse fill="none" stroke="black" cx="110.91" cy="-302.62" rx="27" ry="19.45"/>
-<text text-anchor="middle" x="110.91" y="-299.07" font-family="fixed" font-size="14.00">are</text>
+<title>0101_0003__are_0101_0004__among</title>
+<ellipse fill="none" stroke="black" cx="110.91" cy="-302.62" rx="62.76" ry="19.45"/>
+<text text-anchor="middle" x="110.91" y="-299.07" font-family="fixed" font-size="14.00">are_among</text>
 </g>
-<!-- 0101_0003__are&#45;&gt;0101_0002__mines -->
+<!-- 0101_0003__are_0101_0004__among&#45;&gt;0101_0002__mines -->
 <g id="edge2" class="edge">
-<title>0101_0003__are&#45;&gt;0101_0002__mines</title>
-<path fill="none" stroke="black" d="M98.68,-285.12C94.56,-279.06 90.18,-272 86.91,-265.17 82.92,-256.86 79.51,-247.44 76.76,-238.73"/>
+<title>0101_0003__are_0101_0004__among&#45;&gt;0101_0002__mines</title>
+<path fill="none" stroke="black" d="M97.44,-283.28C93.69,-277.65 89.85,-271.32 86.91,-265.17 82.92,-256.86 79.51,-247.44 76.76,-238.73"/>
 <polygon fill="black" stroke="black" points="80.16,-237.9 73.96,-229.3 73.45,-239.88 80.16,-237.9"/>
 <text text-anchor="middle" x="106.41" y="-251.87" font-family="fixed" font-size="14.00">[arg0]</text>
 </g>
@@ -71,12 +71,12 @@ Chinese mines are among the most dangerous in the world.
 <ellipse fill="none" stroke="black" cx="174.91" cy="-208.23" rx="27.22" ry="19.45"/>
 <text text-anchor="middle" x="174.91" y="-204.68" font-family="fixed" font-size="14.00">the</text>
 </g>
-<!-- 0101_0003__are&#45;&gt;0101_0005__the -->
+<!-- 0101_0003__are_0101_0004__among&#45;&gt;0101_0005__the -->
 <g id="edge3" class="edge">
-<title>0101_0003__are&#45;&gt;0101_0005__the</title>
-<path fill="none" stroke="black" d="M122.65,-284.67C132.21,-270.87 145.87,-251.14 156.83,-235.32"/>
-<polygon fill="black" stroke="black" points="159.56,-237.52 162.38,-227.31 153.81,-233.54 159.56,-237.52"/>
-<text text-anchor="middle" x="187.16" y="-251.87" font-family="fixed" font-size="14.00">among[prd]</text>
+<title>0101_0003__are_0101_0004__among&#45;&gt;0101_0005__the</title>
+<path fill="none" stroke="black" d="M123.55,-283.36C132.99,-269.73 146.04,-250.9 156.62,-235.63"/>
+<polygon fill="black" stroke="black" points="159.47,-237.65 162.29,-227.44 153.72,-233.67 159.47,-237.65"/>
+<text text-anchor="middle" x="168.41" y="-251.87" font-family="fixed" font-size="14.00">[arg1]</text>
 </g>
 <!-- 0101_0007__dangerous -->
 <g id="node5" class="node">
@@ -122,8 +122,8 @@ Chinese mines are among the most dangerous in the world.
 <br>
 <pre>
 arc(r_0101_0002__mines,r_0101_0001__Chinese,attrib).
-arc(r_0101_0003__are,r_0101_0002__mines,arg0).
-arc(r_0101_0003__are,r_0101_0005__the,r_0101_0004__among__prd).
+arc(r_0101_0003__are_r_0101_0004__among,r_0101_0002__mines,arg0).
+arc(r_0101_0003__are_r_0101_0004__among,r_0101_0005__the,arg1).
 arc(r_0101_0005__the,r_0101_0007__dangerous,attrib).
 arc(r_0101_0005__the,r_0101_0009__the_r_0101_0010__world,r_0101_0008__in).
 arc(r_0101_0007__dangerous,r_0101_0006__most,qual).
@@ -148,7 +148,7 @@ arc(r_0101_0007__dangerous,r_0101_0006__most,qual).
 <text x="176" y="155" text-anchor="middle">are</text>
 <line x1="176" y1="110" x2="176" y2="135" style="stroke:#000000;stroke-width:2;"/>
 <line x1="363" y1="55" x2="176" y2="80" style="stroke:#000000;stroke-width:2;"/>
-<text x="445.5" y="100" text-anchor="middle">PP-CLR-PRD2</text>
+<text x="445.5" y="100" text-anchor="middle">PP-CLR</text>
 <text x="253" y="155" text-anchor="middle">P-ROLE</text>
 <text x="253" y="210" text-anchor="middle">among</text>
 <line x1="253" y1="165" x2="253" y2="190" style="stroke:#000000;stroke-width:2;"/>
@@ -198,13 +198,13 @@ arc(r_0101_0007__dangerous,r_0101_0006__most,qual).
 ( (IP-MAT (NP-SBJ (ADJP (ADJ Chinese;{chinese}))
                   (NS mines;{mine}))
           (BEP;~Ipr are;{be[among]})
-          (PP-CLR-PRD2 (P-ROLE among;{among})
-                       (NP (D the;{the})
-                           (ADJP (ADVP (ADVS most;{most}))
-                                 (ADJ dangerous;{dangerous}))
-                           (PP (P-ROLE in;{in})
-                               (NP (D the;{the})
-                                   (N world;{world})))))
+          (PP-CLR (P-ROLE among;{among})
+                  (NP (D the;{the})
+                      (ADJP (ADVP (ADVS most;{most}))
+                            (ADJ dangerous;{dangerous}))
+                      (PP (P-ROLE in;{in})
+                          (NP (D the;{the})
+                              (N world;{world})))))
           (PUNC .))
   (ID 101_a_voice_of_america;p00d0457))
 </pre>
