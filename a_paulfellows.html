@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta charset="utf-8" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>TSPC a_paulfellows</title>
+  <style type="text/css">
+  a:hover {
+    background-color: #ddbbbb; color: black;
+  }
+  </style>
+</head>
+<body>
+<p><a href="index.html">Top</a>&nbsp;&nbsp;&nbsp;&nbsp;<b>a_paulfellows</b><table border="0" cellpadding="4px">
+  <tr>
+    <th align="left">title</th>
+    <td>
+Transcript of talk by Paul Fellows at RISC OS User Group Of London (ROUGOL): ARX, Arthur and RISC OS
+    </td>
+  </tr>
+  <tr>
+    <th align="left">date</th>
+    <td>
+15th October 2012
+    </td>
+  </tr>
+  <tr>
+    <th align="left">source</th>
+    <td>
+Available from <a href="http://www.rougol.jellybaby.net/meetings/2012/PaulFellows/" target="_blank">http://www.rougol.jellybaby.net/meetings/2012/PaulFellows/</a>
+    </td>
+  </tr>
+</table>
+<br>
+<table border="1" cellpadding="4px">
+  <tr>
+    <td><a name="1"></a><a href="a_paulfellows/1_a_paulfellows.html">1</a></td><td>I was hauled in, in front of the board of directors at Acorn, and they said &ldquo;the hardware is being made and we have got no software, you guys aren't doing very much at Acornsoft, can you make us a BBC like operating system, you've got 5 months?&rdquo;, as that's when the hardware is going to hit the streets.</td>
+  </tr>
+  <tr>
+    <td><a name="2"></a><a href="a_paulfellows/2_a_paulfellows.html">2</a></td><td>And like an idiot I said &ldquo;yes&rdquo;, we hadn't got very much to do.</td>
+  </tr>
+  <tr>
+    <td><a name="3"></a><a href="a_paulfellows/3_a_paulfellows.html">3</a></td><td>The reason they came to us was because we'd done the graphics extension ROM for the Master, we'd been part of the recent machine that had gone out the door and because we'd done the fancy BASIC interpreter that could access more memory, thus proving we could do hard things, and done all the languages you could possibly want for the BBC Micro, so we really didn't have much else to do.</td>
+  </tr>
+  <tr>
+    <td><a name="4"></a><a href="a_paulfellows/4_a_paulfellows.html">4</a></td><td>Who were we?</td>
+  </tr>
+  <tr>
+    <td><a name="5"></a><a href="a_paulfellows/5_a_paulfellows.html">5</a></td><td>It was the Acornsoft languages group, myself, I was the team leader, I was the fool that said &ldquo;yes we can do it&rdquo;.</td>
+  </tr>
+  <tr>
+    <td><a name="6"></a><a href="a_paulfellows/6_a_paulfellows.html">6</a></td><td>I got to write the I2C drivers, actually I was given some I2C drivers by John Biggs, who's at ARM today, they were written in Modula2 which had been ripped off out of the ARX implementation, he said &ldquo;here, this is how you do it, make the Real Time Clock work, that'll be fine, just test it for me will you?&rdquo;.</td>
+  </tr>
+  <tr>
+    <td><a name="7"></a><a href="a_paulfellows/7_a_paulfellows.html">7</a></td><td>Not having a compiler that worked on the nascent version of Arthur that we had at the time, I transliterated it all into assembler, it went 400 times faster and it got slightly upset that I was driving the bus too fast.</td>
+  </tr>
+  <tr>
+    <td><a name="8"></a><a href="a_paulfellows/8_a_paulfellows.html">8</a></td><td>I also did things like the colour palette.</td>
+  </tr>
+  <tr>
+    <td><a name="9"></a><a href="a_paulfellows/9_a_paulfellows.html">9</a></td><td>Tony Thompson, who had done that implementation of BASIC 64, he got to do the core of the operating system, so the real guts of Arthur itself.</td>
+  </tr>
+  <tr>
+    <td><a name="10"></a><a href="a_paulfellows/10_a_paulfellows.html">10</a></td><td>That brought it out of reset, powered it up, organised all the memory and so forth.</td>
+  </tr>
+  <tr>
+    <td><a name="11"></a><a href="a_paulfellows/11_a_paulfellows.html">11</a></td><td>We had a really interesting time with part of that, we had one of the machines that we just could not get this thing to boot reliably.</td>
+  </tr>
+  <tr>
+    <td><a name="12"></a><a href="a_paulfellows/12_a_paulfellows.html">12</a></td><td>You could boot it, turn it off, reboot it and sometimes it would work and sometimes it wouldn't.</td>
+  </tr>
+  <tr>
+    <td><a name="13"></a><a href="a_paulfellows/13_a_paulfellows.html">13</a></td><td>It turned out, it would boot fine if you left it long enough, but if you didn't turn it off for very long then it didn't reset properly, and this was because the fan on the board was still spinning and the back EMF on the fan was enough power to keep the ARM running.</td>
+  </tr>
+  <tr>
+    <td><a name="14"></a><a href="a_paulfellows/14_a_paulfellows.html">14</a></td><td>And that's why you've got an ARM in your phone today, it would take no power to keep a 3 micron ARM with 25000 transistors would run for 30 seconds off the energy stored in the fan.</td>
+  </tr>
+  <tr>
+    <td><a name="15"></a><a href="a_paulfellows/15_a_paulfellows.html">15</a></td><td>Stuart Swales, wrote fileswitch and I think the Heap manager as well, we couldn't have done it without Stuart, he just fixed everything.</td>
+  </tr>
+  <tr>
+    <td><a name="16"></a><a href="a_paulfellows/16_a_paulfellows.html">16</a></td><td>Richard Manby, graphics extension ROM author, did the graphics and in RISC OS 2 he went on to do Draw which is really quite a fantastic program.</td>
+  </tr>
+  <tr>
+    <td><a name="17"></a><a href="a_paulfellows/17_a_paulfellows.html">17</a></td><td>Then we've got our ace games programmer out of semi-retirement where he'd been out writing games for the beeb with no market for them, Tim.</td>
+  </tr>
+  <tr>
+    <td><a name="18"></a><a href="a_paulfellows/18_a_paulfellows.html">18</a></td><td>Tim works at Broadcom these days, he did the text, the sound, the keyboard, the serial.</td>
+  </tr>
+  <tr>
+    <td><a name="19"></a><a href="a_paulfellows/19_a_paulfellows.html">19</a></td><td>We drafted in a couple of other guys from Acorn as the team grew.</td>
+  </tr>
+  <tr>
+    <td><a name="20"></a><a href="a_paulfellows/20_a_paulfellows.html">20</a></td><td>We got Nick Reeves who did the disk filing system stuff and Brian Cockburn, that was the team, just those guys.</td>
+  </tr>
+  <tr>
+    <td><a name="21"></a><a href="a_paulfellows/21_a_paulfellows.html">21</a></td><td>Tony is at ARM, Stuart has retired, Richard Manby works at ANT in Cambridge on embedded browsers, Tim works on chips with Sophie at Broadcom, things like Raspberry Pi core chips and related work, Nick Reeves is at ARM and Brian is at Amino.</td>
+  </tr>
+  <tr>
+    <td><a name="22"></a><a href="a_paulfellows/22_a_paulfellows.html">22</a></td><td>Amino is a company that I started with Martin Gilbert in 1997, Martin designed the Master 128.</td>
+  </tr>
+  <tr>
+    <td><a name="23"></a><a href="a_paulfellows/23_a_paulfellows.html">23</a></td><td>If you look inside one of these Amino set top boxes you find there's a boot ROM in the NOR flash, and a filing system on the NAND flash, and the boot ROM doesn't half look like the core operating system and a load of separate relocatable modules, it boots up and runs &lt;ast&gt; exec!</td>
+  </tr>
+  <tr>
+    <td><a name="24"></a><a href="a_paulfellows/24_a_paulfellows.html">24</a></td><td>Boot and that's inside the NAND flash which goes &lsquo;run Linux&rsquo;.</td>
+  </tr>
+  <tr>
+    <td><a name="25"></a><a href="a_paulfellows/25_a_paulfellows.html">25</a></td><td>I think we sold 4.5 million of those set-top-boxes, which is more instances of an operating system than Acorn ever managed.</td>
+  </tr>
+  <tr>
+    <td><a name="26"></a><a href="a_paulfellows/26_a_paulfellows.html">26</a></td><td>Things got serious when I got some hardware on my desk, this is the first piece of hardware I got (A500 second processor card), you can see the four core chips, the ARM, MEMC, VIDC and IOC, in their square flat-pack holders, the RAM over there, some operating system software of some sort in these EEPROMs here, and the TUBE interface.</td>
+  </tr>
+  <tr>
+    <td><a name="27"></a><a href="a_paulfellows/27_a_paulfellows.html">27</a></td><td>So this was plugged into, via a tube interface, a BBC Micro, so it was a giant second processor (as it says on the board &ldquo;A500 second processor&rdquo;).</td>
+  </tr>
+  <tr>
+    <td><a name="28"></a><a href="a_paulfellows/28_a_paulfellows.html">28</a></td><td>This was the development board that we had, we first had one and gradually got to the point of having one each to do the development work on.</td>
+  </tr>
+  <tr>
+    <td><a name="29"></a><a href="a_paulfellows/29_a_paulfellows.html">29</a></td><td>You could attach a keyboard to it, graphics output from it to a monitor, so gradually the functionality of Arthur came to life and you could migrate more and more of the IO features over onto the board from the BBC Micro.</td>
+  </tr>
+  <tr>
+    <td><a name="30"></a><a href="a_paulfellows/30_a_paulfellows.html">30</a></td><td>Of course this thing could never run entirely standalone it always needed that host micro to get it going.</td>
+  </tr>
+  <tr>
+    <td><a name="31"></a><a href="a_paulfellows/31_a_paulfellows.html">31</a></td><td>We got everything going, the sound, graphics, the memory management and everything running on here as the initial systems.</td>
+  </tr>
+  <tr>
+    <td><a name="32"></a><a href="a_paulfellows/32_a_paulfellows.html">32</a></td><td>There's still quite a few of these boards around and they still work.</td>
+  </tr>
+  <tr>
+    <td><a name="33"></a><a href="a_paulfellows/33_a_paulfellows.html">33</a></td><td>The first stand alone machine, the A500, which is very confusing because they're both called A500, but the other one was the A500 second processor.</td>
+  </tr>
+  <tr>
+    <td><a name="34"></a><a href="a_paulfellows/34_a_paulfellows.html">34</a></td><td>There's a photo of said machine with its lid on and lid off.</td>
+  </tr>
+  <tr>
+    <td><a name="35"></a><a href="a_paulfellows/35_a_paulfellows.html">35</a></td><td>I thought it was quite smart, this design with this plastic moulding on the front and the keyboard that plugged in.</td>
+  </tr>
+  <tr>
+    <td><a name="36"></a><a href="a_paulfellows/36_a_paulfellows.html">36</a></td><td>I think this is actually my computer, I can tell it's mine because it's got red stickies on some of the function keys, to change the names of what those buttons did, because the keyboard was designed for ARX and had some weird buttons on it that nobody ever knew what they were supposed to do, so we stuck some labels on, I think it was Tipex on this one to make it more appropriate.</td>
+  </tr>
+  <tr>
+    <td><a name="37"></a><a href="a_paulfellows/37_a_paulfellows.html">37</a></td><td>It's booted up there running what seems to be RISC OS 2 to me.</td>
+  </tr>
+  <tr>
+    <td><a name="38"></a><a href="a_paulfellows/38_a_paulfellows.html">38</a></td><td>Inside you've got the floppy drive, hard drive, podule bus, you've all seen this, it's very similar to any other Archimedes.</td>
+  </tr>
+  <tr>
+    <td><a name="39"></a><a href="a_paulfellows/39_a_paulfellows.html">39</a></td><td>There's the fan that you have to stop in order to reboot it.</td>
+  </tr>
+  <tr>
+    <td><a name="40"></a><a href="a_paulfellows/40_a_paulfellows.html">40</a></td><td>Then the real machines came along, the Archimedes, they changed one important thing, the keyboard.</td>
+  </tr>
+  <tr>
+    <td><a name="41"></a><a href="a_paulfellows/41_a_paulfellows.html">41</a></td><td>A different style of keyboard and keyboard connector.</td>
+  </tr>
+  <tr>
+    <td><a name="42"></a><a href="a_paulfellows/42_a_paulfellows.html">42</a></td><td>I don't quite know where the keyboard came from, but there was obviously a micro in there which would chuck it (the keyboard data) to us down the serial lead.</td>
+  </tr>
+  <tr>
+    <td><a name="43"></a><a href="a_paulfellows/43_a_paulfellows.html">43</a></td><td>One of my funny stories is trying to debug the interface between Tony's software and the keyboard, myself and Stuart and Tony and Bruce (Brian Cockburn) were there all night trying to get this damn thing to work, because the guys who made the keyboard had got this fantastically useless protocol that they'd come up with.</td>
+  </tr>
+  <tr>
+    <td><a name="44"></a><a href="a_paulfellows/44_a_paulfellows.html">44</a></td><td>The keyboard sent you 0xFF, you replied 0xFF, then it sent you 0xFF again, you replied 0xFF, then it sent 0xFE, and you were supposed to reply 0xFE.</td>
+  </tr>
+  <tr>
+    <td><a name="45"></a><a href="a_paulfellows/45_a_paulfellows.html">45</a></td><td>The only trouble was, when you received an 0xFF from it, you didn't know if it was the first one or the second one.</td>
+  </tr>
+  <tr>
+    <td><a name="46"></a><a href="a_paulfellows/46_a_paulfellows.html">46</a></td><td>We spent ages trying to create some code on the ARM end make it reliably boot up and start the keyboard properly.</td>
+  </tr>
+  <tr>
+    <td><a name="47"></a><a href="a_paulfellows/47_a_paulfellows.html">47</a></td><td>Eventually, at about 1:30 in the morning I suggested we just send it something illegal, so we sent it F0, well you would wouldn't you?</td>
+  </tr>
+  <tr>
+    <td><a name="48"></a><a href="a_paulfellows/48_a_paulfellows.html">48</a></td><td>The keyboard took that and went &ldquo;oh I don't know how to deal with that, I'll start again&rdquo; and sent 0xFF, but this time we knew it was the first one, and it's still like that today, because we never could get to the bottom of why it didn't work.</td>
+  </tr>
+  <tr>
+    <td><a name="49"></a><a href="a_paulfellows/49_a_paulfellows.html">49</a></td><td>So that's it with its lid off, all the rest of the bits that were hidden under the drives and so forth.</td>
+  </tr>
+  <tr>
+    <td><a name="50"></a><a href="a_paulfellows/50_a_paulfellows.html">50</a></td><td>There's an awful lot of components on there by today's standards, I think it broke the CAD program because there were more than 512, the CAD program that the guys were trying to use to design the hardware couldn't handle it.</td>
+  </tr>
+  <tr>
+    <td><a name="51"></a><a href="a_paulfellows/51_a_paulfellows.html">51</a></td><td>Software wise, the core operating system was made to look like the BBC MOS, with relocatable modules made to look like those sideways ROMs, all the service calls in the Beeb are mirrored by those that go chaining through, but you don't have to do hardware paging to go from one to the other.</td>
+  </tr>
+  <tr>
+    <td><a name="52"></a><a href="a_paulfellows/52_a_paulfellows.html">52</a></td><td>Underneath all versions of RISC OS still have a BBC inside them and in fact if you turn on one of my Amino set top boxes, with the debug lead in, it doesn't half look like that.</td>
+  </tr>
+  <tr>
+    <td><a name="53"></a><a href="a_paulfellows/53_a_paulfellows.html">53</a></td><td>In 2007 I finished my association with Amino set top boxes and did another company with Adrian Chritchlow and some other guys who were from the Acorn world, and we built something called AlertMe.com in Cambridge which does home gateways, which are connected to the internet, have a modem in them and through a collection of Zigbee based sensors have got a burglar alarm function.</td>
+  </tr>
+  <tr>
+    <td><a name="54"></a><a href="a_paulfellows/54_a_paulfellows.html">54</a></td><td>There's a programmable infra-red sensor and some magnetics ones and key-fob and so forth and you can do it really well.</td>
+  </tr>
+  <tr>
+    <td><a name="55"></a><a href="a_paulfellows/55_a_paulfellows.html">55</a></td><td>Those little sensors have all got a small processor with 5K RAM and 128K ROM and they don't half look like these inside as well.</td>
+  </tr>
+  <tr>
+    <td><a name="56"></a><a href="a_paulfellows/56_a_paulfellows.html">56</a></td><td>All the Amino set top boxes and all the AlertMe sensors are the great grandchildren of all of this.</td>
+  </tr>
+  <tr>
+    <td><a name="57"></a><a href="a_paulfellows/57_a_paulfellows.html">57</a></td><td>I kept the faith, I've built another 5 million units that have got an operating system just like this one in them that probably no one has ever really heard of.</td>
+  </tr>
+  <tr>
+    <td><a name="58"></a><a href="a_paulfellows/58_a_paulfellows.html">58</a></td><td>Why change a good plan eh?</td>
+  </tr>
+  <tr>
+    <td><a name="59"></a><a href="a_paulfellows/59_a_paulfellows.html">59</a></td><td>I want to talk a little about my friend Neil, sadly no longer with us.</td>
+  </tr>
+  <tr>
+    <td><a name="60"></a><a href="a_paulfellows/60_a_paulfellows.html">60</a></td><td>By that stage we were here, Arthur 1.something that fired up and looked like that.</td>
+  </tr>
+  <tr>
+    <td><a name="61"></a><a href="a_paulfellows/61_a_paulfellows.html">61</a></td><td>And it did what the management had asked us to do, it built a BBC Micro.</td>
+  </tr>
+  <tr>
+    <td><a name="62"></a><a href="a_paulfellows/62_a_paulfellows.html">62</a></td><td>But Neil came along and said &ldquo;I've finished writing these games&rdquo;, that was his best game ever &lsquo;Planetoid&rsquo;, defender, a great game.</td>
+  </tr>
+  <tr>
+    <td><a name="63"></a><a href="a_paulfellows/63_a_paulfellows.html">63</a></td><td>He got interested in writing a font manager to run on Arthur, so he wrote two, a bitmap one which was all well and good but a bit clunky and horrible.</td>
+  </tr>
+  <tr>
+    <td><a name="64"></a><a href="a_paulfellows/64_a_paulfellows.html">64</a></td><td>Then he wrote an outline font manager later that was so much nicer, which is the one that's still in there today I think.</td>
+  </tr>
+  <tr>
+    <td><a name="65"></a><a href="a_paulfellows/65_a_paulfellows.html">65</a></td><td>And he wrote a Window Manager, I think he just wrote that because he wanted to, the addition of these two modules transformed Arthur from that command-line world to a desktop based system.</td>
+  </tr>
+  <tr>
+    <td><a name="66"></a><a href="a_paulfellows/66_a_paulfellows.html">66</a></td><td>There's a cautionary tale behind this, Richard Manby wrote this (Arthur Desktop), in BASIC as a demonstration of the Window Manager and what it could do, using the bitmap fonts and so forth, the outline font manager wasn't ready at this point.</td>
+  </tr>
+  <tr>
+    <td><a name="67"></a><a href="a_paulfellows/67_a_paulfellows.html">67</a></td><td>As a piece of demo-ware it escaped into the wild, they burnt it into the ROM and it's what it boots up with, but it was a demonstration of how you can write programs to use the window manager, but never underestimate the marketing department, they'll get you every time, if you write a demo, they'll sell it.</td>
+  </tr>
+  <tr>
+    <td><a name="68"></a><a href="a_paulfellows/68_a_paulfellows.html">68</a></td><td>How many times have we all been bitten by that one?</td>
+  </tr>
+  <tr>
+    <td><a name="69"></a><a href="a_paulfellows/69_a_paulfellows.html">69</a></td><td>So after we'd written that, the great show-down meeting happened, as it says here, the ARX and the ARm on THURsday showdown meeting.</td>
+  </tr>
+  <tr>
+    <td><a name="70"></a><a href="a_paulfellows/70_a_paulfellows.html">70</a></td><td>In the boardroom at Acorn, in the morning the team from Paolo-Alto turned up with their 4MB A500 with a hard-drive running ARX to do a demonstration of how far they'd got and what a wonderful thing it was.</td>
+  </tr>
+  <tr>
+    <td><a name="71"></a><a href="a_paulfellows/71_a_paulfellows.html">71</a></td><td>But big mistake, they'd told us what their demo was going to be before hand.</td>
+  </tr>
+  <tr>
+    <td><a name="72"></a><a href="a_paulfellows/72_a_paulfellows.html">72</a></td><td>So they'd got a ticking clock running, and they said &ldquo;and you can click on another one and run several of these at once, you won't be able to do that on Arthur as it can't multitask, look!&rdquo;, they clicked on three or four of them and got them running.</td>
+  </tr>
+  <tr>
+    <td><a name="73"></a><a href="a_paulfellows/73_a_paulfellows.html">73</a></td><td>When the fourth one started the system started to engage virtual memory and started swapping, on a 4 MB machine and the hands on the clock started ticking once every 16 seconds.</td>
+  </tr>
+  <tr>
+    <td><a name="74"></a><a href="a_paulfellows/74_a_paulfellows.html">74</a></td><td>So they did their demonstration and we turned up, Tim Dobson had written a clock program, we turned up with an A305 with 256 KB RAM, an Arthur desktop and a ticking clock program, and we ran 16 of them which ticked smoothly, and ARX got cancelled the next day.</td>
+  </tr>
+  <tr>
+    <td><a name="75"></a><a href="a_paulfellows/75_a_paulfellows.html">75</a></td><td>It (ARX) was hopeless, there was no way that we (Acorn) could afford to go to market with a machine that needed 4 MB of RAM and a hard drive, in those days, and even then was going to be that slow.</td>
+  </tr>
+  <tr>
+    <td><a name="76"></a><a href="a_paulfellows/76_a_paulfellows.html">76</a></td><td>We were absolutely going to have to launch it with the smallest amount of RAM and no hard drive.</td>
+  </tr>
+</table>
+<br>
+<br>
+<br>
+</body>
+</html>
