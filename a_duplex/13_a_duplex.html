@@ -52,44 +52,44 @@ We were played two recordings, both of which worked very well.
 <polygon fill="blue" stroke="blue" stroke-width="2" points="102.5,-133.2 99,-123.2 95.5,-133.2 102.5,-133.2"/>
 <text text-anchor="middle" x="123" y="-144.8" font-family="fixed" font-size="14.00">[scope]</text>
 </g>
-<!-- 0013_0001__We -->
+<!-- staz_0013_5009 -->
 <g id="node3" class="node">
+<title>staz_0013_5009</title>
+<ellipse fill="none" stroke="black" cx="27" cy="-18" rx="27" ry="18"/>
+<text text-anchor="middle" x="27" y="-14.3" font-family="fixed" font-size="14.00">*</text>
+</g>
+<!-- 0013_0003__played&#45;&gt;staz_0013_5009 -->
+<g id="edge2" class="edge">
+<title>0013_0003__played&#45;&gt;staz_0013_5009</title>
+<path fill="none" stroke="black" d="M77.84,-89.81C70.07,-83.96 61.58,-76.73 55,-69 48.89,-61.81 43.46,-53.08 39.05,-44.94"/>
+<polygon fill="black" stroke="black" points="42.03,-43.09 34.36,-35.79 35.8,-46.28 42.03,-43.09"/>
+<text text-anchor="middle" x="75" y="-57.8" font-family="fixed" font-size="14.00">[arg0]</text>
+</g>
+<!-- 0013_0001__We -->
+<g id="node4" class="node">
 <title>0013_0001__We</title>
 <ellipse fill="none" stroke="black" cx="99" cy="-18" rx="27" ry="18"/>
 <text text-anchor="middle" x="99" y="-14.3" font-family="fixed" font-size="14.00">we</text>
 </g>
 <!-- 0013_0003__played&#45;&gt;0013_0001__We -->
-<g id="edge2" class="edge">
+<g id="edge3" class="edge">
 <title>0013_0003__played&#45;&gt;0013_0001__We</title>
 <path fill="none" stroke="black" d="M99,-86.8C99,-75.16 99,-59.55 99,-46.24"/>
 <polygon fill="black" stroke="black" points="102.5,-46.18 99,-36.18 95.5,-46.18 102.5,-46.18"/>
 <text text-anchor="middle" x="119" y="-57.8" font-family="fixed" font-size="14.00">[arg2]</text>
 </g>
 <!-- 0013_0004__two_0013_0005__recordings -->
-<g id="node4" class="node">
+<g id="node5" class="node">
 <title>0013_0004__two_0013_0005__recordings</title>
 <ellipse fill="none" stroke="black" cx="223" cy="-18" rx="76.09" ry="18"/>
 <text text-anchor="middle" x="223" y="-14.3" font-family="fixed" font-size="14.00">two_recordings</text>
 </g>
 <!-- 0013_0003__played&#45;&gt;0013_0004__two_0013_0005__recordings -->
-<g id="edge3" class="edge">
+<g id="edge4" class="edge">
 <title>0013_0003__played&#45;&gt;0013_0004__two_0013_0005__recordings</title>
 <path fill="none" stroke="black" d="M120.03,-89.58C139.43,-76.28 168.51,-56.35 190.83,-41.05"/>
 <polygon fill="black" stroke="black" points="193.05,-43.77 199.32,-35.23 189.09,-38 193.05,-43.77"/>
 <text text-anchor="middle" x="189" y="-57.8" font-family="fixed" font-size="14.00">[arg1]</text>
-</g>
-<!-- staz_0013_5009 -->
-<g id="node5" class="node">
-<title>staz_0013_5009</title>
-<ellipse fill="none" stroke="black" cx="27" cy="-18" rx="27" ry="18"/>
-<text text-anchor="middle" x="27" y="-14.3" font-family="fixed" font-size="14.00">*</text>
-</g>
-<!-- 0013_0003__played&#45;&gt;staz_0013_5009 -->
-<g id="edge4" class="edge">
-<title>0013_0003__played&#45;&gt;staz_0013_5009</title>
-<path fill="none" stroke="black" d="M77.84,-89.81C70.07,-83.96 61.58,-76.73 55,-69 48.89,-61.81 43.46,-53.08 39.05,-44.94"/>
-<polygon fill="black" stroke="black" points="42.03,-43.09 34.36,-35.79 35.8,-46.28 42.03,-43.09"/>
-<text text-anchor="middle" x="75" y="-57.8" font-family="fixed" font-size="14.00">[arg0]</text>
 </g>
 <!-- 0013_0007__both -->
 <g id="node6" class="node">
@@ -167,10 +167,10 @@ We were played two recordings, both of which worked very well.
 </svg>
 <br>
 <pre>
-arc(r_0013_0002__were,r_0013_0003__played,keep_scope).
+arc(r_0013_0002__were,r_0013_0003__played,scope).
+arc(r_0013_0003__played,star_z_0013_5009,arg0).
 arc(r_0013_0003__played,r_0013_0001__We,arg2).
 arc(r_0013_0003__played,r_0013_0004__two_r_0013_0005__recordings,arg1).
-arc(r_0013_0003__played,star_z_0013_5009,arg0).
 arc(r_0013_0007__both__quant,r_0013_0010__worked,scope).
 arc(r_0013_0007__both__quant,z_0013_5004,restriction).
 arc(r_0013_0010__worked,r_0013_0012__well,nim).

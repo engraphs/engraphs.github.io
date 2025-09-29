@@ -52,31 +52,31 @@
 <polygon fill="blue" stroke="blue" stroke-width="2" points="63.5,-133.2 60,-123.2 56.5,-133.2 63.5,-133.2"/>
 <text text-anchor="middle" x="84" y="-144.8" font-family="fixed" font-size="14.00">[scope]</text>
 </g>
-<!-- 0351_0002__A_0351_0003__machine -->
-<g id="node3" class="node">
-<title>0351_0002__A_0351_0003__machine</title>
-<ellipse fill="none" stroke="black" cx="145" cy="-18" rx="56.59" ry="18"/>
-<text text-anchor="middle" x="145" y="-14.3" font-family="fixed" font-size="14.00">a_machine</text>
-</g>
-<!-- 0351_0006__made&#45;&gt;0351_0002__A_0351_0003__machine -->
-<g id="edge2" class="edge">
-<title>0351_0006__made&#45;&gt;0351_0002__A_0351_0003__machine</title>
-<path fill="none" stroke="black" d="M67.88,-87.42C73.38,-77.02 81.42,-63.77 91,-54 96.22,-48.68 102.38,-43.76 108.64,-39.38"/>
-<polygon fill="black" stroke="black" points="110.73,-42.2 117.16,-33.78 106.88,-36.35 110.73,-42.2"/>
-<text text-anchor="middle" x="111" y="-57.8" font-family="fixed" font-size="14.00">[arg1]</text>
-</g>
 <!-- staz_0351_5008 -->
-<g id="node4" class="node">
+<g id="node3" class="node">
 <title>staz_0351_5008</title>
 <ellipse fill="none" stroke="black" cx="27" cy="-18" rx="27" ry="18"/>
 <text text-anchor="middle" x="27" y="-14.3" font-family="fixed" font-size="14.00">*</text>
 </g>
 <!-- 0351_0006__made&#45;&gt;staz_0351_5008 -->
-<g id="edge3" class="edge">
+<g id="edge2" class="edge">
 <title>0351_0006__made&#45;&gt;staz_0351_5008</title>
 <path fill="none" stroke="black" d="M42.24,-89.37C36.61,-83.66 31.06,-76.64 28,-69 25.2,-61.99 24.18,-53.96 24.07,-46.43"/>
 <polygon fill="black" stroke="black" points="27.57,-46.37 24.41,-36.26 20.57,-46.14 27.57,-46.37"/>
 <text text-anchor="middle" x="48" y="-57.8" font-family="fixed" font-size="14.00">[arg0]</text>
+</g>
+<!-- 0351_0002__A_0351_0003__machine -->
+<g id="node4" class="node">
+<title>0351_0002__A_0351_0003__machine</title>
+<ellipse fill="none" stroke="black" cx="145" cy="-18" rx="56.59" ry="18"/>
+<text text-anchor="middle" x="145" y="-14.3" font-family="fixed" font-size="14.00">a_machine</text>
+</g>
+<!-- 0351_0006__made&#45;&gt;0351_0002__A_0351_0003__machine -->
+<g id="edge3" class="edge">
+<title>0351_0006__made&#45;&gt;0351_0002__A_0351_0003__machine</title>
+<path fill="none" stroke="black" d="M67.88,-87.42C73.38,-77.02 81.42,-63.77 91,-54 96.22,-48.68 102.38,-43.76 108.64,-39.38"/>
+<polygon fill="black" stroke="black" points="110.73,-42.2 117.16,-33.78 106.88,-36.35 110.73,-42.2"/>
+<text text-anchor="middle" x="111" y="-57.8" font-family="fixed" font-size="14.00">[arg1]</text>
 </g>
 <!-- 0351_0008__do -->
 <g id="node5" class="node">
@@ -102,7 +102,7 @@
 <title>0351_0008__do&#45;&gt;0351_0009__a_0351_0010__job</title>
 <path fill="none" stroke="black" d="M172.72,-180.73C184.4,-166.72 201.87,-145.76 215.34,-129.6"/>
 <polygon fill="black" stroke="black" points="218.25,-131.57 221.96,-121.64 212.87,-127.09 218.25,-131.57"/>
-<text text-anchor="middle" x="224" y="-144.8" font-family="fixed" font-size="14.00">[arg1]</text>
+<text text-anchor="middle" x="225" y="-144.8" font-family="fixed" font-size="14.00">[arg1]</text>
 </g>
 <!-- 0351_1001____sta_ -->
 <g id="node7" class="node">
@@ -140,13 +140,13 @@
 </svg>
 <br>
 <pre>
-arc(r_0351_0005__was,r_0351_0006__made,keep_scope).
-arc(r_0351_0006__made,r_0351_0002__A_r_0351_0003__machine,arg1).
+arc(r_0351_0005__was,r_0351_0006__made,scope).
 arc(r_0351_0006__made,star_z_0351_5008,arg0).
+arc(r_0351_0006__made,r_0351_0002__A_r_0351_0003__machine,arg1).
 arc(r_0351_0008__do,r_0351_0002__A_r_0351_0003__machine,arg0).
 arc(r_0351_0008__do,r_0351_0009__a_r_0351_0010__job,arg1).
-arc(r_0351_1001____star__,r_0351_0005__was,scope_).
-arc(r_0351_1001____star__,r_0351_0008__do,restriction_).
+arc(r_0351_1001____star__,r_0351_0005__was,scope).
+arc(r_0351_1001____star__,r_0351_0008__do,restriction).
 arc(z_0351_5011,r_0351_0002__A_r_0351_0003__machine,z_0351_5002).
 
 </pre>

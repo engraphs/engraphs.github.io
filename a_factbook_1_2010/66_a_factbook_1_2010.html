@@ -144,7 +144,7 @@ may manifest as either urinary or intestinal disease resulting in decreased work
 <text text-anchor="middle" x="297.19" y="-231.8" font-family="fixed" font-size="14.00">[arg1]</text>
 </g>
 <!-- 0066_0012__work -->
-<g id="node11" class="node">
+<g id="node12" class="node">
 <title>0066_0012__work</title>
 <ellipse fill="none" stroke="black" cx="301.19" cy="-105" rx="32.49" ry="18"/>
 <text text-anchor="middle" x="301.19" y="-101.3" font-family="fixed" font-size="14.00">work</text>
@@ -175,25 +175,25 @@ may manifest as either urinary or intestinal disease resulting in decreased work
 <ellipse fill="none" stroke="black" cx="232.19" cy="-192" rx="54.69" ry="18"/>
 <text text-anchor="middle" x="232.19" y="-188.3" font-family="fixed" font-size="14.00">decreased</text>
 </g>
-<!-- 0066_0011__decreased&#45;&gt;0066_0012__work -->
-<g id="edge9" class="edge">
-<title>0066_0011__decreased&#45;&gt;0066_0012__work</title>
-<path fill="none" stroke="black" d="M245.83,-174.21C256.2,-161.43 270.61,-143.68 282.13,-129.49"/>
-<polygon fill="black" stroke="black" points="284.94,-131.58 288.52,-121.61 279.5,-127.17 284.94,-131.58"/>
-<text text-anchor="middle" x="290.19" y="-144.8" font-family="fixed" font-size="14.00">[arg1]</text>
-</g>
 <!-- staz_0066_5010 -->
-<g id="node12" class="node">
+<g id="node11" class="node">
 <title>staz_0066_5010</title>
 <ellipse fill="none" stroke="black" cx="213.19" cy="-105" rx="27" ry="18"/>
 <text text-anchor="middle" x="213.19" y="-101.3" font-family="fixed" font-size="14.00">*</text>
 </g>
 <!-- 0066_0011__decreased&#45;&gt;staz_0066_5010 -->
-<g id="edge10" class="edge">
+<g id="edge9" class="edge">
 <title>0066_0011__decreased&#45;&gt;staz_0066_5010</title>
 <path fill="none" stroke="black" d="M221.58,-174.17C218.61,-168.6 215.77,-162.23 214.19,-156 212.39,-148.87 211.68,-140.99 211.52,-133.64"/>
 <polygon fill="black" stroke="black" points="215.02,-133.42 211.63,-123.38 208.02,-133.34 215.02,-133.42"/>
 <text text-anchor="middle" x="234.19" y="-144.8" font-family="fixed" font-size="14.00">[arg0]</text>
+</g>
+<!-- 0066_0011__decreased&#45;&gt;0066_0012__work -->
+<g id="edge10" class="edge">
+<title>0066_0011__decreased&#45;&gt;0066_0012__work</title>
+<path fill="none" stroke="black" d="M245.83,-174.21C256.2,-161.43 270.61,-143.68 282.13,-129.49"/>
+<polygon fill="black" stroke="black" points="284.94,-131.58 288.52,-121.61 279.5,-127.17 284.94,-131.58"/>
+<text text-anchor="middle" x="290.19" y="-144.8" font-family="fixed" font-size="14.00">[arg1]</text>
 </g>
 <!-- 0066_0014__learning -->
 <g id="node14" class="node">
@@ -212,7 +212,7 @@ may manifest as either urinary or intestinal disease resulting in decreased work
 </svg>
 <br>
 <pre>
-arc(r_0066_0001__may,r_0066_0002__manifest,keep_scope).
+arc(r_0066_0001__may,r_0066_0002__manifest,scope).
 arc(r_0066_0002__manifest,r_0066_0008__disease,r_0066_0003__as__clr).
 arc(r_0066_0002__manifest,z_0066_5002,arg0).
 arc(r_0066_0004__either_r_0066_0006__or,r_0066_0005__urinary,conj1).
@@ -220,8 +220,8 @@ arc(r_0066_0004__either_r_0066_0006__or,r_0066_0007__intestinal,conj2).
 arc(r_0066_0008__disease,r_0066_0004__either_r_0066_0006__or,attrib).
 arc(r_0066_0009__resulting_r_0066_0010__in,r_0066_0008__disease,arg0).
 arc(r_0066_0009__resulting_r_0066_0010__in,r_0066_0013__or,arg1).
-arc(r_0066_0011__decreased,r_0066_0012__work,arg1).
 arc(r_0066_0011__decreased,star_z_0066_5010,arg0).
+arc(r_0066_0011__decreased,r_0066_0012__work,arg1).
 arc(r_0066_0013__or,r_0066_0012__work,conj1).
 arc(r_0066_0013__or,r_0066_0015__capacity,conj2).
 arc(r_0066_0015__capacity,r_0066_0014__learning,attrib).

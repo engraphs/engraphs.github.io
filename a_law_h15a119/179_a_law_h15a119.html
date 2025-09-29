@@ -137,37 +137,37 @@
 <text text-anchor="middle" x="84.74" y="-144.8" font-family="fixed" font-size="14.00">[attrib]</text>
 </g>
 <!-- 0179_0012__requested&#45;&gt;0179_0005__a_0179_0006__business_0179_0007__operator -->
-<g id="edge7" class="edge">
+<g id="edge8" class="edge">
 <title>0179_0012__requested&#45;&gt;0179_0005__a_0179_0006__business_0179_0007__operator</title>
 <path fill="none" stroke="black" d="M592.19,-436.38C528.6,-392.35 347.69,-267.06 273.3,-215.54"/>
 <polygon fill="black" stroke="black" points="274.98,-212.45 264.77,-209.64 271,-218.21 274.98,-212.45"/>
 <text text-anchor="middle" x="456.74" y="-318.8" font-family="fixed" font-size="14.00">[arg2]</text>
 </g>
-<!-- 0179_0030__or -->
-<g id="node9" class="node">
-<title>0179_0030__or</title>
-<polygon fill="lightgreen" stroke="black" points="602.74,-366 589.24,-384 562.24,-384 548.74,-366 562.24,-348 589.24,-348 602.74,-366"/>
-<text text-anchor="middle" x="575.74" y="-362.3" font-family="fixed" font-size="14.00">or</text>
-</g>
-<!-- 0179_0012__requested&#45;&gt;0179_0030__or -->
-<g id="edge8" class="edge">
-<title>0179_0012__requested&#45;&gt;0179_0030__or</title>
-<path fill="none" stroke="black" d="M598.44,-435.74C593.69,-430.19 588.94,-423.7 585.74,-417 582.39,-409.97 580.16,-401.86 578.68,-394.25"/>
-<polygon fill="black" stroke="black" points="582.13,-393.65 577.09,-384.33 575.22,-394.76 582.13,-393.65"/>
-<text text-anchor="middle" x="605.74" y="-405.8" font-family="fixed" font-size="14.00">[arg1]</text>
-</g>
 <!-- staz_0179_5020 -->
-<g id="node10" class="node">
+<g id="node9" class="node">
 <title>staz_0179_5020</title>
 <ellipse fill="none" stroke="black" cx="647.74" cy="-366" rx="27" ry="18"/>
 <text text-anchor="middle" x="647.74" y="-362.3" font-family="fixed" font-size="14.00">*</text>
 </g>
 <!-- 0179_0012__requested&#45;&gt;staz_0179_5020 -->
-<g id="edge9" class="edge">
+<g id="edge7" class="edge">
 <title>0179_0012__requested&#45;&gt;staz_0179_5020</title>
 <path fill="none" stroke="black" d="M621.42,-434.8C626.04,-422.89 632.28,-406.82 637.53,-393.31"/>
 <polygon fill="black" stroke="black" points="640.94,-394.19 641.3,-383.6 634.42,-391.65 640.94,-394.19"/>
 <text text-anchor="middle" x="653.74" y="-405.8" font-family="fixed" font-size="14.00">[arg0]</text>
+</g>
+<!-- 0179_0030__or -->
+<g id="node10" class="node">
+<title>0179_0030__or</title>
+<polygon fill="lightgreen" stroke="black" points="602.74,-366 589.24,-384 562.24,-384 548.74,-366 562.24,-348 589.24,-348 602.74,-366"/>
+<text text-anchor="middle" x="575.74" y="-362.3" font-family="fixed" font-size="14.00">or</text>
+</g>
+<!-- 0179_0012__requested&#45;&gt;0179_0030__or -->
+<g id="edge9" class="edge">
+<title>0179_0012__requested&#45;&gt;0179_0030__or</title>
+<path fill="none" stroke="black" d="M598.44,-435.74C593.69,-430.19 588.94,-423.7 585.74,-417 582.39,-409.97 580.16,-401.86 578.68,-394.25"/>
+<polygon fill="black" stroke="black" points="582.13,-393.65 577.09,-384.33 575.22,-394.76 582.13,-393.65"/>
+<text text-anchor="middle" x="605.74" y="-405.8" font-family="fixed" font-size="14.00">[arg1]</text>
 </g>
 <!-- 0179_0014__notify -->
 <g id="node11" class="node">
@@ -400,10 +400,10 @@ arc(r_0179_0004__When,r_0179_0050__may,scope).
 arc(r_0179_0008__handling,r_0179_0005__a_r_0179_0006__business_r_0179_0007__operator,arg0).
 arc(r_0179_0008__handling,r_0179_0010__information,arg1).
 arc(r_0179_0010__information,r_0179_0009__personal,attrib).
-arc(r_0179_0011__is,r_0179_0012__requested,keep_scope).
+arc(r_0179_0011__is,r_0179_0012__requested,scope).
+arc(r_0179_0012__requested,star_z_0179_5020,arg0).
 arc(r_0179_0012__requested,r_0179_0005__a_r_0179_0006__business_r_0179_0007__operator,arg2).
 arc(r_0179_0012__requested,r_0179_0030__or,arg1).
-arc(r_0179_0012__requested,star_z_0179_5020,arg0).
 arc(r_0179_0014__notify,r_0179_0005__a_r_0179_0006__business_r_0179_0007__operator,arg0).
 arc(r_0179_0014__notify,r_0179_0015__the_r_0179_0016__Purpose,arg1).
 arc(r_0179_0014__notify,r_0179_0020__the_r_0179_0021__provision,r_0179_0019__under__nim).
@@ -417,7 +417,7 @@ arc(r_0179_0032__make,r_0179_0033__a_r_0179_0034__disclosure,arg1).
 arc(r_0179_0032__make,r_0179_0036__the_r_0179_0037__provision,r_0179_0035__under__nim).
 arc(r_0179_0036__the_r_0179_0037__provision,r_0179_0039__paragraph_r_0179_0041__1,r_0179_0038__of).
 arc(r_0179_0039__paragraph_r_0179_0041__1,r_0179_0044__Article_r_0179_0045__25,r_0179_0043__of).
-arc(r_0179_0050__may,r_0179_0051__collect,keep_scope).
+arc(r_0179_0050__may,r_0179_0051__collect,scope).
 arc(r_0179_0051__collect,r_0179_0047__the_r_0179_0048__business_r_0179_0049__operator,arg0).
 arc(r_0179_0051__collect,r_0179_0052__charges,arg1).
 arc(r_0179_0052__charges,r_0179_0054__taking,r_0179_0053__for).

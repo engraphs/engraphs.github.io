@@ -72,7 +72,7 @@ Consultation with a travel medicine physician is needed to evaluate individual r
 <text text-anchor="middle" x="190.29" y="-231.8" font-family="fixed" font-size="14.00">[scope]</text>
 </g>
 <!-- 0007_0008__needed&#45;&gt;0007_0001__Consultation -->
-<g id="edge3" class="edge">
+<g id="edge4" class="edge">
 <title>0007_0008__needed&#45;&gt;0007_0001__Consultation</title>
 <path fill="none" stroke="black" d="M169.21,-174.61C179.06,-162.11 192.79,-144.69 203.96,-130.53"/>
 <polygon fill="black" stroke="black" points="206.74,-132.65 210.18,-122.63 201.24,-128.32 206.74,-132.65"/>
@@ -85,7 +85,7 @@ Consultation with a travel medicine physician is needed to evaluate individual r
 <text text-anchor="middle" x="114.29" y="-101.3" font-family="fixed" font-size="14.00">*</text>
 </g>
 <!-- 0007_0008__needed&#45;&gt;staz_0007_5014 -->
-<g id="edge4" class="edge">
+<g id="edge3" class="edge">
 <title>0007_0008__needed&#45;&gt;staz_0007_5014</title>
 <path fill="none" stroke="black" d="M141.77,-174.75C137.29,-169.11 132.65,-162.55 129.29,-156 125.65,-148.91 122.74,-140.78 120.48,-133.17"/>
 <polygon fill="black" stroke="black" points="123.8,-132.01 117.82,-123.26 117.04,-133.83 123.8,-132.01"/>
@@ -240,21 +240,21 @@ Consultation with a travel medicine physician is needed to evaluate individual r
 <br>
 <pre>
 arc(r_0007_0001__Consultation,r_0007_0003__a_r_0007_0004__travel_r_0007_0005__medicine_r_0007_0006__physician,r_0007_0002__with).
-arc(r_0007_0007__is,r_0007_0008__needed,keep_scope).
-arc(r_0007_0008__needed,r_0007_0001__Consultation,arg1).
+arc(r_0007_0007__is,r_0007_0008__needed,scope).
 arc(r_0007_0008__needed,star_z_0007_5014,arg0).
+arc(r_0007_0008__needed,r_0007_0001__Consultation,arg1).
 arc(r_0007_0010__evaluate,r_0007_0001__Consultation,arg0).
 arc(r_0007_0010__evaluate,r_0007_0012__risk,arg1).
 arc(r_0007_0012__risk,r_0007_0011__individual,attrib).
-arc(r_0007_0013__and,r_0007_0010__evaluate,coord_conj1).
-arc(r_0007_0013__and,r_0007_0014__recommend,coord_conj2).
+arc(r_0007_0013__and,r_0007_0010__evaluate,conj1).
+arc(r_0007_0013__and,r_0007_0014__recommend,conj2).
 arc(r_0007_0014__recommend,r_0007_0001__Consultation,arg0).
 arc(r_0007_0014__recommend,r_0007_0017__measures,arg1).
 arc(r_0007_0017__measures,r_0007_0015__appropriate,attrib).
 arc(r_0007_0017__measures,r_0007_0016__preventive,attrib).
 arc(r_0007_0017__measures,r_0007_0019__vaccines,r_0007_0018__such_as).
-arc(r_0007_1001____star__,r_0007_0007__is,scope_).
-arc(r_0007_1001____star__,r_0007_0013__and,restriction_).
+arc(r_0007_1001____star__,r_0007_0007__is,scope).
+arc(r_0007_1001____star__,r_0007_0013__and,restriction).
 
 </pre>
 <br>

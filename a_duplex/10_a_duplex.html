@@ -176,13 +176,13 @@ Indeed, the recipient of the call may have no idea they are talking to a robot.
 <pre>
 arc(r_0010_0003__the_r_0010_0004__recipient,r_0010_0006__the_r_0010_0007__call,r_0010_0005__of).
 arc(r_0010_0008__may,r_0010_0001__Indeed,nim).
-arc(r_0010_0008__may,r_0010_0009__have,keep_scope).
+arc(r_0010_0008__may,r_0010_0009__have,scope).
 arc(r_0010_0009__have,r_0010_0003__the_r_0010_0004__recipient,arg0).
 arc(r_0010_0009__have,r_0010_0011__idea,arg1).
 arc(r_0010_0010__no__quant,r_0010_0008__may,scope).
 arc(r_0010_0010__no__quant,r_0010_0011__idea,restriction).
 arc(r_0010_0011__idea,r_0010_0013__are,emb).
-arc(r_0010_0013__are,r_0010_0014__talking_r_0010_0015__to,keep_scope).
+arc(r_0010_0013__are,r_0010_0014__talking_r_0010_0015__to,scope).
 arc(r_0010_0014__talking_r_0010_0015__to,r_0010_0003__the_r_0010_0004__recipient,arg0).
 arc(r_0010_0014__talking_r_0010_0015__to,r_0010_0016__a_r_0010_0017__robot,arg1).
 
@@ -294,8 +294,8 @@ arc(r_0010_0014__talking_r_0010_0015__to,r_0010_0016__a_r_0010_0017__robot,arg1)
                   (NP-SBJ;{RECIPIENT} (D the;{the})
                                       (N recipient;{recipient})
                                       (PP (P-ROLE of;{of})
-                                          (NP;{CALL} (D the;{the})
-                                                     (N call;{call}))))
+                                          (NP (D the;{the})
+                                              (N call;{call}))))
                   (MD;~cat_Vi may;{may})
                   (IP-INF-CAT (HV;~Tn have;{have})
                               (NP-OB1 (Q no;{no})

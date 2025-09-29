@@ -189,31 +189,31 @@ By contrast, European firms will spend &lt;dollar&gt; 150 million this year on e
 <polygon fill="blue" stroke="blue" stroke-width="2" points="544.16,-307.79 544.76,-297.21 537.7,-305.11 544.16,-307.79"/>
 <text text-anchor="middle" x="560.05" y="-318.8" font-family="fixed" font-size="14.00">[scope]</text>
 </g>
-<!-- 0012_0021__spend -->
-<g id="node13" class="node">
-<title>0012_0021__spend</title>
-<ellipse fill="none" stroke="black" cx="551.05" cy="-192" rx="37.09" ry="18"/>
-<text text-anchor="middle" x="551.05" y="-188.3" font-family="fixed" font-size="14.00">spend</text>
-</g>
-<!-- 0012_0019__expected&#45;&gt;0012_0021__spend -->
-<g id="edge13" class="edge">
-<title>0012_0019__expected&#45;&gt;0012_0021__spend</title>
-<path fill="none" stroke="black" d="M551.05,-260.8C551.05,-249.16 551.05,-233.55 551.05,-220.24"/>
-<polygon fill="black" stroke="black" points="554.55,-220.18 551.05,-210.18 547.55,-220.18 554.55,-220.18"/>
-<text text-anchor="middle" x="571.05" y="-231.8" font-family="fixed" font-size="14.00">[arg1]</text>
-</g>
 <!-- staz_0012_5015 -->
-<g id="node14" class="node">
+<g id="node13" class="node">
 <title>staz_0012_5015</title>
 <ellipse fill="none" stroke="black" cx="633.05" cy="-192" rx="27" ry="18"/>
 <text text-anchor="middle" x="633.05" y="-188.3" font-family="fixed" font-size="14.00">*</text>
 </g>
 <!-- 0012_0019__expected&#45;&gt;staz_0012_5015 -->
-<g id="edge14" class="edge">
+<g id="edge13" class="edge">
 <title>0012_0019__expected&#45;&gt;staz_0012_5015</title>
 <path fill="none" stroke="black" d="M572.55,-262.62C580.01,-256.84 588.22,-249.98 595.05,-243 602.82,-235.05 610.43,-225.5 616.78,-216.88"/>
 <polygon fill="black" stroke="black" points="619.68,-218.84 622.66,-208.67 613.99,-214.76 619.68,-218.84"/>
 <text text-anchor="middle" x="627.05" y="-231.8" font-family="fixed" font-size="14.00">[arg0]</text>
+</g>
+<!-- 0012_0021__spend -->
+<g id="node14" class="node">
+<title>0012_0021__spend</title>
+<ellipse fill="none" stroke="black" cx="551.05" cy="-192" rx="37.09" ry="18"/>
+<text text-anchor="middle" x="551.05" y="-188.3" font-family="fixed" font-size="14.00">spend</text>
+</g>
+<!-- 0012_0019__expected&#45;&gt;0012_0021__spend -->
+<g id="edge14" class="edge">
+<title>0012_0019__expected&#45;&gt;0012_0021__spend</title>
+<path fill="none" stroke="black" d="M551.05,-260.8C551.05,-249.16 551.05,-233.55 551.05,-220.24"/>
+<polygon fill="black" stroke="black" points="554.55,-220.18 551.05,-210.18 547.55,-220.18 554.55,-220.18"/>
+<text text-anchor="middle" x="571.05" y="-231.8" font-family="fixed" font-size="14.00">[arg1]</text>
 </g>
 <!-- 0012_0021__spend&#45;&gt;0012_0005__firms -->
 <g id="edge15" class="edge">
@@ -254,18 +254,18 @@ By contrast, European firms will spend &lt;dollar&gt; 150 million this year on e
 <pre>
 arc(r_0012_0005__firms,r_0012_0004__European,attrib).
 arc(r_0012_0006__will,r_0012_0002__contrast,r_0012_0001__By__nim).
-arc(r_0012_0006__will,r_0012_0007__spend,keep_scope).
+arc(r_0012_0006__will,r_0012_0007__spend,scope).
 arc(r_0012_0007__spend,r_0012_0005__firms,arg0).
 arc(r_0012_0007__spend,r_0012_0008___dollar__r_0012_0009__150_r_0012_0010__million,arg1).
 arc(r_0012_0007__spend,r_0012_0011__this_r_0012_0012__year,nim).
 arc(r_0012_0007__spend,r_0012_0015__security,r_0012_0013__on__nim).
 arc(r_0012_0015__security,r_0012_0014__electronic,attrib).
-arc(r_0012_0017__and,r_0012_0006__will,coord_conj1).
-arc(r_0012_0017__and,r_0012_0018__are,coord_conj2).
+arc(r_0012_0017__and,r_0012_0006__will,conj1).
+arc(r_0012_0017__and,r_0012_0018__are,conj2).
 arc(r_0012_0018__are,r_0012_0002__contrast,r_0012_0001__By__nim).
-arc(r_0012_0018__are,r_0012_0019__expected,keep_scope).
-arc(r_0012_0019__expected,r_0012_0021__spend,arg1).
+arc(r_0012_0018__are,r_0012_0019__expected,scope).
 arc(r_0012_0019__expected,star_z_0012_5015,arg0).
+arc(r_0012_0019__expected,r_0012_0021__spend,arg1).
 arc(r_0012_0021__spend,r_0012_0005__firms,arg0).
 arc(r_0012_0021__spend,r_0012_0022___dollar__r_0012_0023__1_r_0012_0024__billion,arg1).
 arc(r_0012_0021__spend,r_0012_0026__1992,r_0012_0025__by__nim).
