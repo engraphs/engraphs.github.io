@@ -126,9 +126,9 @@ When a business operator handling personal information has an employee handle pe
 <!-- 0112_0005__handling&#45;&gt;0112_0002__a_0112_0003__business_0112_0004__operator -->
 <g id="edge3" class="edge">
 <title>0112_0005__handling&#45;&gt;0112_0002__a_0112_0003__business_0112_0004__operator</title>
-<path fill="none" stroke="black" d="M204.86,-264.34C233.94,-250.53 279.24,-229.02 312.49,-213.23"/>
-<polygon fill="black" stroke="black" points="314,-216.39 321.53,-208.94 310.99,-210.07 314,-216.39"/>
-<text text-anchor="middle" x="296.1" y="-231.8" font-family="fixed" font-size="14.00">[arg0]</text>
+<path fill="none" stroke="black" d="M202.6,-263.68C221.95,-253.38 248.92,-239.37 273.1,-228 284.15,-222.8 296.18,-217.48 307.53,-212.61"/>
+<polygon fill="black" stroke="black" points="309.04,-215.77 316.87,-208.64 306.3,-209.33 309.04,-215.77"/>
+<text text-anchor="middle" x="307.1" y="-231.8" font-family="fixed" font-size="14.00">[inv][arg0]</text>
 </g>
 <!-- 0112_0007__information -->
 <g id="node6" class="node">
@@ -345,7 +345,7 @@ When a business operator handling personal information has an employee handle pe
 <pre>
 arc(r_0112_0001__When,r_0112_0008__has,restriction).
 arc(r_0112_0001__When,r_0112_0016__shall,scope).
-arc(r_0112_0005__handling,r_0112_0002__a_r_0112_0003__business_r_0112_0004__operator,arg0).
+arc(r_0112_0005__handling,r_0112_0002__a_r_0112_0003__business_r_0112_0004__operator,inv_arg0).
 arc(r_0112_0005__handling,r_0112_0007__information,arg1).
 arc(r_0112_0007__information,r_0112_0006__personal,attrib).
 arc(r_0112_0008__has,r_0112_0002__a_r_0112_0003__business_r_0112_0004__operator,arg0).
@@ -564,12 +564,12 @@ arc(r_0112_1001____star__,r_0112_0026__ensure,restriction).
 <br>
 <pre>
 ( (IP-MAT (PP-SCON (P-CONN When;{when})
-                   (IP-ADV (NP-SBJ;{BUSINESS} (D a;{a})
-                                              (N business;{business})
-                                              (N operator;{operator})
-                                              (IP-PPL (VAG;~Tn handling;{handle})
-                                                      (NP-OB1 (ADJP (ADJ personal;{personal}))
-                                                              (N information;{information}))))
+                   (IP-ADV (NP-SBJ;{OPER} (D a;{a})
+                                          (N business;{business})
+                                          (N operator;{operator})
+                                          (IP-PPL (VAG;~Tn handling;{handle})
+                                                  (NP-OB1 (ADJP (ADJ personal;{personal}))
+                                                          (N information;{information}))))
                            (HVP;~Cn.i has;{have})
                            (NP-OB1 (D an;{an})
                                    (N employee;{employee}))
@@ -577,7 +577,7 @@ arc(r_0112_1001____star__,r_0112_0026__ensure,restriction).
                                        (NP-OB1 (ADJP (ADJ personal;{personal}))
                                                (NS data;{data})))))
           (PUNC ,)
-          (NP-SBJ;{BUSINESS} (PRO it;{it}))
+          (NP-SBJ;{OPER} (PRO it;{it}))
           (MD;~cat_Vi shall;{shall})
           (IP-INF-CAT (VB exercise;{exercise})
                       (NP-OB1 (ADJP (AJLYR (AJLYR (ADJ necessary;{necessary}))

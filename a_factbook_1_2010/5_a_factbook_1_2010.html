@@ -36,8 +36,8 @@ The diseases listed do not necessarily represent the total disease burden experi
 <!-- 0005_0003__listed -->
 <g id="node1" class="node">
 <title>0005_0003__listed</title>
-<ellipse fill="none" stroke="black" cx="71" cy="-192" rx="34.39" ry="18"/>
-<text text-anchor="middle" x="71" y="-188.3" font-family="fixed" font-size="14.00">listed</text>
+<ellipse fill="none" stroke="black" cx="64" cy="-192" rx="34.39" ry="18"/>
+<text text-anchor="middle" x="64" y="-188.3" font-family="fixed" font-size="14.00">listed</text>
 </g>
 <!-- staz_0005_5002 -->
 <g id="node2" class="node">
@@ -48,9 +48,9 @@ The diseases listed do not necessarily represent the total disease burden experi
 <!-- 0005_0003__listed&#45;&gt;staz_0005_5002 -->
 <g id="edge1" class="edge">
 <title>0005_0003__listed&#45;&gt;staz_0005_5002</title>
-<path fill="none" stroke="black" d="M61.8,-174.33C58.65,-168.55 55.13,-162.01 52,-156 47.85,-148.05 43.44,-139.32 39.5,-131.41"/>
-<polygon fill="black" stroke="black" points="42.55,-129.69 34.97,-122.28 36.28,-132.8 42.55,-129.69"/>
-<text text-anchor="middle" x="72" y="-144.8" font-family="fixed" font-size="14.00">[arg0]</text>
+<path fill="none" stroke="black" d="M50.03,-175.17C45.61,-169.46 41.08,-162.75 38,-156 34.76,-148.88 32.44,-140.75 30.8,-133.14"/>
+<polygon fill="black" stroke="black" points="34.23,-132.43 28.96,-123.24 27.35,-133.71 34.23,-132.43"/>
+<text text-anchor="middle" x="58" y="-144.8" font-family="fixed" font-size="14.00">[arg0]</text>
 </g>
 <!-- 0005_0001__The_0005_0002__diseases -->
 <g id="node3" class="node">
@@ -61,9 +61,9 @@ The diseases listed do not necessarily represent the total disease burden experi
 <!-- 0005_0003__listed&#45;&gt;0005_0001__The_0005_0002__diseases -->
 <g id="edge2" class="edge">
 <title>0005_0003__listed&#45;&gt;0005_0001__The_0005_0002__diseases</title>
-<path fill="none" stroke="black" d="M83.6,-175.01C93.43,-162.55 107.24,-145.02 118.49,-130.75"/>
-<polygon fill="black" stroke="black" points="121.32,-132.81 124.77,-122.79 115.83,-128.48 121.32,-132.81"/>
-<text text-anchor="middle" x="129" y="-144.8" font-family="fixed" font-size="14.00">[arg1]</text>
+<path fill="none" stroke="black" d="M77.57,-175.41C88.56,-162.79 104.22,-144.8 116.85,-130.3"/>
+<polygon fill="black" stroke="black" points="119.57,-132.49 123.5,-122.65 114.3,-127.9 119.57,-132.49"/>
+<text text-anchor="middle" x="140" y="-144.8" font-family="fixed" font-size="14.00">[inv][arg1]</text>
 </g>
 <!-- 0005_0004__do_0005_0007__represent -->
 <g id="node4" class="node">
@@ -141,7 +141,7 @@ The diseases listed do not necessarily represent the total disease burden experi
 <title>0005_0012__experienced&#45;&gt;0005_0008__the_0005_0010__disease_0005_0011__burden</title>
 <path fill="none" stroke="black" d="M531.68,-174.61C517.41,-161.84 497.4,-143.94 481.4,-129.62"/>
 <polygon fill="black" stroke="black" points="483.7,-126.98 473.91,-122.92 479.03,-132.2 483.7,-126.98"/>
-<text text-anchor="middle" x="529" y="-144.8" font-family="fixed" font-size="14.00">[arg1]</text>
+<text text-anchor="middle" x="543" y="-144.8" font-family="fixed" font-size="14.00">[inv][arg1]</text>
 </g>
 <!-- 0005_0014__the_0005_0016__population -->
 <g id="node10" class="node">
@@ -174,13 +174,13 @@ The diseases listed do not necessarily represent the total disease burden experi
 <br>
 <pre>
 arc(r_0005_0003__listed,star_z_0005_5002,arg0).
-arc(r_0005_0003__listed,r_0005_0001__The_r_0005_0002__diseases,arg1).
+arc(r_0005_0003__listed,r_0005_0001__The_r_0005_0002__diseases,inv_arg1).
 arc(r_0005_0004__do_r_0005_0007__represent,r_0005_0001__The_r_0005_0002__diseases,arg0).
 arc(r_0005_0004__do_r_0005_0007__represent,r_0005_0006__necessarily,nim).
 arc(r_0005_0004__do_r_0005_0007__represent,r_0005_0008__the_r_0005_0010__disease_r_0005_0011__burden,arg1).
 arc(r_0005_0005__not,r_0005_0004__do_r_0005_0007__represent,keep_scope).
 arc(r_0005_0008__the_r_0005_0010__disease_r_0005_0011__burden,r_0005_0009__total,attrib).
-arc(r_0005_0012__experienced,r_0005_0008__the_r_0005_0010__disease_r_0005_0011__burden,arg1).
+arc(r_0005_0012__experienced,r_0005_0008__the_r_0005_0010__disease_r_0005_0011__burden,inv_arg1).
 arc(r_0005_0012__experienced,r_0005_0014__the_r_0005_0016__population,r_0005_0013__by_arg0).
 arc(r_0005_0014__the_r_0005_0016__population,r_0005_0015__local,attrib).
 
