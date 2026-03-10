@@ -29,6 +29,158 @@
 Now I can finish my play,&rdquo;
 <br>
 <br>
+<svg width="204pt" height="315pt"
+ viewBox="0.00 0.00 204.44 315.00">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 311)">
+<title>%3</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-311 200.44,-311 200.44,4 -4,4"/>
+<!-- r_0157_0003__can -->
+<g id="node1" class="node">
+<title>r_0157_0003__can</title>
+<polygon fill="pink" stroke="black" points="60.55,-307 7.46,-272.5 113.64,-272.5 60.55,-307"/>
+<text text-anchor="middle" x="60.55" y="-280.3" font-family="fixed" font-size="14.00">can</text>
+</g>
+<!-- r_0157_0001__Now -->
+<g id="node2" class="node">
+<title>r_0157_0001__Now</title>
+<ellipse fill="none" stroke="black" cx="30.55" cy="-192" rx="30.59" ry="18"/>
+<text text-anchor="middle" x="30.55" y="-188.3" font-family="fixed" font-size="14.00">Now</text>
+</g>
+<!-- r_0157_0003__can&#45;&gt;r_0157_0001__Now -->
+<g id="edge1" class="edge">
+<title>r_0157_0003__can&#45;&gt;r_0157_0001__Now</title>
+<path fill="none" stroke="orange" stroke-width="2" d="M53.72,-272.2C49.06,-264.37 43.11,-253.39 39.55,-243 37.06,-235.74 35.22,-227.64 33.88,-220.11"/>
+<polygon fill="orange" stroke="orange" stroke-width="2" points="37.3,-219.33 32.3,-209.99 30.38,-220.41 37.3,-219.33"/>
+<text text-anchor="middle" x="58.05" y="-231.8" font-family="fixed" font-size="14.00">[nim]</text>
+</g>
+<!-- r_0157_0004__finish -->
+<g id="node3" class="node">
+<title>r_0157_0004__finish</title>
+<polygon fill="pink" stroke="black" points="134.05,-210 79.05,-210 79.05,-174 134.05,-174 134.05,-210"/>
+<text text-anchor="middle" x="106.55" y="-188.3" font-family="fixed" font-size="14.00">finish</text>
+</g>
+<!-- r_0157_0003__can&#45;&gt;r_0157_0004__finish -->
+<g id="edge2" class="edge">
+<title>r_0157_0003__can&#45;&gt;r_0157_0004__finish</title>
+<path fill="none" stroke="red" stroke-width="2" d="M66,-272.32C72.63,-259.36 84.04,-237.03 93.07,-219.37"/>
+<polygon fill="red" stroke="red" stroke-width="2" points="96.36,-220.62 97.8,-210.12 90.13,-217.43 96.36,-220.62"/>
+<text text-anchor="middle" x="114.55" y="-231.8" font-family="fixed" font-size="14.00">[scope]</text>
+</g>
+<!-- r_0157_0002__I -->
+<g id="node4" class="node">
+<title>r_0157_0002__I</title>
+<ellipse fill="none" stroke="black" cx="91.55" cy="-18" rx="27" ry="18"/>
+<text text-anchor="middle" x="91.55" y="-14.3" font-family="fixed" font-size="14.00">I</text>
+</g>
+<!-- r_0157_0004__finish&#45;&gt;r_0157_0002__I -->
+<g id="edge3" class="edge">
+<title>r_0157_0004__finish&#45;&gt;r_0157_0002__I</title>
+<path fill="none" stroke="black" d="M99.31,-173.76C94.04,-160.23 87.35,-140.77 84.55,-123 80.47,-97.12 83.24,-67.25 86.42,-46.19"/>
+<polygon fill="black" stroke="black" points="89.92,-46.47 88.09,-36.04 83.01,-45.34 89.92,-46.47"/>
+<text text-anchor="middle" x="106.05" y="-101.3" font-family="fixed" font-size="14.00">[arg0]</text>
+</g>
+<!-- r_0157_0006__play -->
+<g id="node5" class="node">
+<title>r_0157_0006__play</title>
+<ellipse fill="none" stroke="black" cx="166.55" cy="-105" rx="29.8" ry="18"/>
+<text text-anchor="middle" x="166.55" y="-101.3" font-family="fixed" font-size="14.00">play</text>
+</g>
+<!-- r_0157_0004__finish&#45;&gt;r_0157_0006__play -->
+<g id="edge4" class="edge">
+<title>r_0157_0004__finish&#45;&gt;r_0157_0006__play</title>
+<path fill="none" stroke="black" d="M118.69,-173.8C127.59,-161.18 139.8,-143.9 149.65,-129.93"/>
+<polygon fill="black" stroke="black" points="152.53,-131.93 155.44,-121.74 146.81,-127.89 152.53,-131.93"/>
+<text text-anchor="middle" x="161.05" y="-144.8" font-family="fixed" font-size="14.00">[arg1]</text>
+</g>
+<!-- r_0157_0006__play&#45;&gt;r_0157_0002__I -->
+<g id="edge5" class="edge">
+<title>r_0157_0006__play&#45;&gt;r_0157_0002__I</title>
+<path fill="none" stroke="purple" stroke-width="2" d="M153.14,-88.8C141.55,-75.67 124.64,-56.5 111.46,-41.57"/>
+<polygon fill="purple" stroke="purple" stroke-width="2" points="113.83,-38.96 104.59,-33.78 108.58,-43.59 113.83,-38.96"/>
+<text text-anchor="middle" x="152.05" y="-57.8" font-family="fixed" font-size="14.00">[gen]</text>
+</g>
+</g>
+</svg>
+<pre>
+arc(r_0157_0003__can, r_0157_0001__Now, nim2).
+arc(r_0157_0003__can, r_0157_0004__finish, scope).
+arc(r_0157_0004__finish, r_0157_0002__I, arg0).
+arc(r_0157_0004__finish, r_0157_0006__play, arg1).
+arc(r_0157_0006__play, r_0157_0002__I, gen).
+</pre>
+<br><hr><br>
+<svg width="226pt" height="218pt"
+ viewBox="0.00 0.00 226.44 218.00">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 214)">
+<title>%3</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-214 222.44,-214 222.44,4 -4,4"/>
+<!-- r_0157_0006__play -->
+<g id="node1" class="node">
+<title>r_0157_0006__play</title>
+<ellipse fill="none" stroke="black" cx="29.9" cy="-105" rx="29.8" ry="18"/>
+<text text-anchor="middle" x="29.9" y="-101.3" font-family="fixed" font-size="14.00">play</text>
+</g>
+<!-- r_0157_0002__I -->
+<g id="node2" class="node">
+<title>r_0157_0002__I</title>
+<ellipse fill="none" stroke="black" cx="62.9" cy="-18" rx="27" ry="18"/>
+<text text-anchor="middle" x="62.9" y="-14.3" font-family="fixed" font-size="14.00">I</text>
+</g>
+<!-- r_0157_0006__play&#45;&gt;r_0157_0002__I -->
+<g id="edge1" class="edge">
+<title>r_0157_0006__play&#45;&gt;r_0157_0002__I</title>
+<path fill="none" stroke="purple" stroke-width="2" d="M34.14,-87.07C36.81,-77.26 40.56,-64.76 44.9,-54 46.21,-50.73 47.73,-47.36 49.31,-44.06"/>
+<polygon fill="purple" stroke="purple" stroke-width="2" points="52.46,-45.6 53.84,-35.09 46.21,-42.44 52.46,-45.6"/>
+<text text-anchor="middle" x="63.4" y="-57.8" font-family="fixed" font-size="14.00">[gen]</text>
+</g>
+<!-- r_0157_0003__can_r_0157_0004__finish -->
+<g id="node3" class="node">
+<title>r_0157_0003__can_r_0157_0004__finish</title>
+<polygon fill="pink" stroke="black" points="137.9,-210 53.9,-210 53.9,-174 137.9,-174 137.9,-210"/>
+<text text-anchor="middle" x="95.9" y="-188.3" font-family="fixed" font-size="14.00">can finish</text>
+</g>
+<!-- r_0157_0003__can_r_0157_0004__finish&#45;&gt;r_0157_0006__play -->
+<g id="edge2" class="edge">
+<title>r_0157_0003__can_r_0157_0004__finish&#45;&gt;r_0157_0006__play</title>
+<path fill="none" stroke="black" d="M57.78,-173.84C50.55,-169.02 43.74,-163.1 38.9,-156 34.33,-149.31 31.88,-141 30.62,-133.07"/>
+<polygon fill="black" stroke="black" points="34.09,-132.64 29.57,-123.06 27.13,-133.37 34.09,-132.64"/>
+<text text-anchor="middle" x="60.4" y="-144.8" font-family="fixed" font-size="14.00">[arg1]</text>
+</g>
+<!-- r_0157_0003__can_r_0157_0004__finish&#45;&gt;r_0157_0002__I -->
+<g id="edge3" class="edge">
+<title>r_0157_0003__can_r_0157_0004__finish&#45;&gt;r_0157_0002__I</title>
+<path fill="none" stroke="black" d="M96.28,-173.7C96.4,-147.28 94.74,-95.58 81.9,-54 80.85,-50.59 79.45,-47.14 77.88,-43.8"/>
+<polygon fill="black" stroke="black" points="80.92,-42.04 73.19,-34.79 74.71,-45.28 80.92,-42.04"/>
+<text text-anchor="middle" x="116.4" y="-101.3" font-family="fixed" font-size="14.00">[arg0]</text>
+</g>
+<!-- r_0157_0001__Now -->
+<g id="node4" class="node">
+<title>r_0157_0001__Now</title>
+<ellipse fill="none" stroke="black" cx="187.9" cy="-105" rx="30.59" ry="18"/>
+<text text-anchor="middle" x="187.9" y="-101.3" font-family="fixed" font-size="14.00">Now</text>
+</g>
+<!-- r_0157_0003__can_r_0157_0004__finish&#45;&gt;r_0157_0001__Now -->
+<g id="edge4" class="edge">
+<title>r_0157_0003__can_r_0157_0004__finish&#45;&gt;r_0157_0001__Now</title>
+<path fill="none" stroke="orange" stroke-width="2" d="M114.51,-173.8C128.91,-160.5 148.94,-142 164.43,-127.68"/>
+<polygon fill="orange" stroke="orange" stroke-width="2" points="167.1,-129.98 172.07,-120.63 162.35,-124.84 167.1,-129.98"/>
+<text text-anchor="middle" x="165.4" y="-144.8" font-family="fixed" font-size="14.00">[nim]</text>
+</g>
+</g>
+</svg>
+<pre>
+fof(formula,axiom,
+    ? [R_0157_0001__NOW,R_0157_0002__I,R_0157_0006__PLAY,R_0157_0003__CAN_R_0157_0004__FINISH] :
+      ( r_0157_0001__Now(R_0157_0001__NOW)
+      &amp; r_0157_0002__I(R_0157_0002__I)
+      &amp; r_0157_0003__can_r_0157_0004__finish(R_0157_0003__CAN_R_0157_0004__FINISH)
+      &amp; has_arg1(R_0157_0003__CAN_R_0157_0004__FINISH,R_0157_0006__PLAY)
+      &amp; r_0157_0006__play(R_0157_0006__PLAY)
+      &amp; has_gen(R_0157_0006__PLAY,R_0157_0002__I)
+      &amp; has_arg0(R_0157_0003__CAN_R_0157_0004__FINISH,R_0157_0002__I)
+      &amp; has_nim2(R_0157_0003__CAN_R_0157_0004__FINISH,R_0157_0001__NOW) ) ).
+</pre>
+<br><hr><br>
 <svg width="369pt" height="252pt"
  viewBox="0.00 0.00 409.00 279.00">
 <g id="graph0" class="graph" transform="scale(0.9 0.9) rotate(0) translate(4 275)">
@@ -342,158 +494,6 @@ Now I can finish my play,&rdquo;
           (PUNC ,)
           (PURQ &lt;rdquo&gt;))
   (ID 157_a_wilde_1_1888))
-</pre>
-<br><hr><br>
-<svg width="177pt" height="315pt"
- viewBox="0.00 0.00 177.44 315.00">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 311)">
-<title>%3</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-311 173.44,-311 173.44,4 -4,4"/>
-<!-- r_0157_0006__play -->
-<g id="node1" class="node">
-<title>r_0157_0006__play</title>
-<ellipse fill="none" stroke="black" cx="29.9" cy="-105" rx="29.8" ry="18"/>
-<text text-anchor="middle" x="29.9" y="-101.3" font-family="fixed" font-size="14.00">play</text>
-</g>
-<!-- r_0157_0002__I -->
-<g id="node2" class="node">
-<title>r_0157_0002__I</title>
-<ellipse fill="none" stroke="black" cx="62.9" cy="-18" rx="27" ry="18"/>
-<text text-anchor="middle" x="62.9" y="-14.3" font-family="fixed" font-size="14.00">I</text>
-</g>
-<!-- r_0157_0006__play&#45;&gt;r_0157_0002__I -->
-<g id="edge1" class="edge">
-<title>r_0157_0006__play&#45;&gt;r_0157_0002__I</title>
-<path fill="none" stroke="purple" stroke-width="2" d="M34.14,-87.07C36.81,-77.26 40.56,-64.76 44.9,-54 46.21,-50.73 47.73,-47.36 49.31,-44.06"/>
-<polygon fill="purple" stroke="purple" stroke-width="2" points="52.46,-45.6 53.84,-35.09 46.21,-42.44 52.46,-45.6"/>
-<text text-anchor="middle" x="63.4" y="-57.8" font-family="fixed" font-size="14.00">[gen]</text>
-</g>
-<!-- r_0157_0004__finish -->
-<g id="node3" class="node">
-<title>r_0157_0004__finish</title>
-<polygon fill="pink" stroke="black" points="90.4,-210 35.4,-210 35.4,-174 90.4,-174 90.4,-210"/>
-<text text-anchor="middle" x="62.9" y="-188.3" font-family="fixed" font-size="14.00">finish</text>
-</g>
-<!-- r_0157_0004__finish&#45;&gt;r_0157_0006__play -->
-<g id="edge2" class="edge">
-<title>r_0157_0004__finish&#45;&gt;r_0157_0006__play</title>
-<path fill="none" stroke="black" d="M48.89,-173.67C45.13,-168.28 41.42,-162.13 38.9,-156 35.98,-148.9 34.01,-140.85 32.68,-133.32"/>
-<polygon fill="black" stroke="black" points="36.1,-132.55 31.18,-123.17 29.17,-133.57 36.1,-132.55"/>
-<text text-anchor="middle" x="60.4" y="-144.8" font-family="fixed" font-size="14.00">[arg1]</text>
-</g>
-<!-- r_0157_0004__finish&#45;&gt;r_0157_0002__I -->
-<g id="edge3" class="edge">
-<title>r_0157_0004__finish&#45;&gt;r_0157_0002__I</title>
-<path fill="none" stroke="black" d="M74.37,-173.9C77.44,-168.42 80.33,-162.17 81.9,-156 93.05,-112.06 93.05,-97.94 81.9,-54 81.02,-50.54 79.73,-47.06 78.22,-43.7"/>
-<polygon fill="black" stroke="black" points="81.26,-41.97 73.57,-34.69 75.04,-45.18 81.26,-41.97"/>
-<text text-anchor="middle" x="111.4" y="-101.3" font-family="fixed" font-size="14.00">[arg0]</text>
-</g>
-<!-- r_0157_0003__can -->
-<g id="node4" class="node">
-<title>r_0157_0003__can</title>
-<polygon fill="pink" stroke="black" points="100.9,-307 47.81,-272.5 153.99,-272.5 100.9,-307"/>
-<text text-anchor="middle" x="100.9" y="-280.3" font-family="fixed" font-size="14.00">can</text>
-</g>
-<!-- r_0157_0003__can&#45;&gt;r_0157_0004__finish -->
-<g id="edge4" class="edge">
-<title>r_0157_0003__can&#45;&gt;r_0157_0004__finish</title>
-<path fill="none" stroke="red" stroke-width="2" d="M87.38,-272.31C79.26,-265.01 69.62,-254.6 64.9,-243 62.05,-236 60.91,-227.98 60.64,-220.45"/>
-<polygon fill="red" stroke="red" stroke-width="2" points="64.14,-220.31 60.75,-210.27 57.14,-220.23 64.14,-220.31"/>
-<text text-anchor="middle" x="90.9" y="-231.8" font-family="fixed" font-size="14.00">[scope]</text>
-</g>
-<!-- r_0157_0001__Now -->
-<g id="node5" class="node">
-<title>r_0157_0001__Now</title>
-<ellipse fill="none" stroke="black" cx="138.9" cy="-192" rx="30.59" ry="18"/>
-<text text-anchor="middle" x="138.9" y="-188.3" font-family="fixed" font-size="14.00">Now</text>
-</g>
-<!-- r_0157_0003__can&#45;&gt;r_0157_0001__Now -->
-<g id="edge5" class="edge">
-<title>r_0157_0003__can&#45;&gt;r_0157_0001__Now</title>
-<path fill="none" stroke="orange" stroke-width="2" d="M105.41,-272.32C110.91,-259.28 120.42,-236.76 127.9,-219.05"/>
-<polygon fill="orange" stroke="orange" stroke-width="2" points="131.14,-220.36 131.81,-209.79 124.7,-217.64 131.14,-220.36"/>
-<text text-anchor="middle" x="141.4" y="-231.8" font-family="fixed" font-size="14.00">[nim]</text>
-</g>
-</g>
-</svg>
-<pre>
-arc(r_0157_0003__can,r_0157_0001__Now,nim).
-arc(r_0157_0003__can,r_0157_0004__finish,scope).
-arc(r_0157_0004__finish,r_0157_0002__I,arg0).
-arc(r_0157_0004__finish,r_0157_0006__play,arg1).
-arc(r_0157_0006__play,r_0157_0002__I,gen).
-</pre>
-<br><hr><br>
-<svg width="226pt" height="218pt"
- viewBox="0.00 0.00 226.44 218.00">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 214)">
-<title>%3</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-214 222.44,-214 222.44,4 -4,4"/>
-<!-- r_0157_0003__can_r_0157_0004__finish -->
-<g id="node1" class="node">
-<title>r_0157_0003__can_r_0157_0004__finish</title>
-<polygon fill="pink" stroke="black" points="139.55,-210 55.55,-210 55.55,-174 139.55,-174 139.55,-210"/>
-<text text-anchor="middle" x="97.55" y="-188.3" font-family="fixed" font-size="14.00">can finish</text>
-</g>
-<!-- r_0157_0001__Now -->
-<g id="node2" class="node">
-<title>r_0157_0001__Now</title>
-<ellipse fill="none" stroke="black" cx="30.55" cy="-105" rx="30.59" ry="18"/>
-<text text-anchor="middle" x="30.55" y="-101.3" font-family="fixed" font-size="14.00">Now</text>
-</g>
-<!-- r_0157_0003__can_r_0157_0004__finish&#45;&gt;r_0157_0001__Now -->
-<g id="edge1" class="edge">
-<title>r_0157_0003__can_r_0157_0004__finish&#45;&gt;r_0157_0001__Now</title>
-<path fill="none" stroke="orange" stroke-width="2" d="M65.65,-173.89C58.58,-168.9 51.67,-162.89 46.55,-156 41.5,-149.21 38.01,-140.77 35.61,-132.78"/>
-<polygon fill="orange" stroke="orange" stroke-width="2" points="38.99,-131.86 33.12,-123.03 32.2,-133.59 38.99,-131.86"/>
-<text text-anchor="middle" x="65.05" y="-144.8" font-family="fixed" font-size="14.00">[nim]</text>
-</g>
-<!-- r_0157_0002__I -->
-<g id="node3" class="node">
-<title>r_0157_0002__I</title>
-<ellipse fill="none" stroke="black" cx="113.55" cy="-18" rx="27" ry="18"/>
-<text text-anchor="middle" x="113.55" y="-14.3" font-family="fixed" font-size="14.00">I</text>
-</g>
-<!-- r_0157_0003__can_r_0157_0004__finish&#45;&gt;r_0157_0002__I -->
-<g id="edge2" class="edge">
-<title>r_0157_0003__can_r_0157_0004__finish&#45;&gt;r_0157_0002__I</title>
-<path fill="none" stroke="black" d="M98.96,-173.69C100.66,-153.05 103.66,-117.49 106.55,-87 107.82,-73.57 109.34,-58.65 110.64,-46.22"/>
-<polygon fill="black" stroke="black" points="114.15,-46.35 111.72,-36.04 107.19,-45.62 114.15,-46.35"/>
-<text text-anchor="middle" x="128.05" y="-101.3" font-family="fixed" font-size="14.00">[arg0]</text>
-</g>
-<!-- r_0157_0006__play -->
-<g id="node4" class="node">
-<title>r_0157_0006__play</title>
-<ellipse fill="none" stroke="black" cx="188.55" cy="-105" rx="29.8" ry="18"/>
-<text text-anchor="middle" x="188.55" y="-101.3" font-family="fixed" font-size="14.00">play</text>
-</g>
-<!-- r_0157_0003__can_r_0157_0004__finish&#45;&gt;r_0157_0006__play -->
-<g id="edge3" class="edge">
-<title>r_0157_0003__can_r_0157_0004__finish&#45;&gt;r_0157_0006__play</title>
-<path fill="none" stroke="black" d="M115.96,-173.8C130.2,-160.5 150.01,-142 165.33,-127.68"/>
-<polygon fill="black" stroke="black" points="167.97,-130.01 172.89,-120.63 163.19,-124.9 167.97,-130.01"/>
-<text text-anchor="middle" x="170.05" y="-144.8" font-family="fixed" font-size="14.00">[arg1]</text>
-</g>
-<!-- r_0157_0006__play&#45;&gt;r_0157_0002__I -->
-<g id="edge4" class="edge">
-<title>r_0157_0006__play&#45;&gt;r_0157_0002__I</title>
-<path fill="none" stroke="purple" stroke-width="2" d="M175.14,-88.8C163.55,-75.67 146.64,-56.5 133.46,-41.57"/>
-<polygon fill="purple" stroke="purple" stroke-width="2" points="135.83,-38.96 126.59,-33.78 130.58,-43.59 135.83,-38.96"/>
-<text text-anchor="middle" x="174.05" y="-57.8" font-family="fixed" font-size="14.00">[gen]</text>
-</g>
-</g>
-</svg>
-<pre>
-fof(formula,axiom,
-    ? [R_0157_0001__NOW,R_0157_0002__I,R_0157_0006__PLAY,R_0157_0003__CAN_R_0157_0004__FINISH] :
-      ( r_0157_0001__Now(R_0157_0001__NOW)
-      &amp; r_0157_0002__I(R_0157_0002__I)
-      &amp; r_0157_0003__can_r_0157_0004__finish(R_0157_0003__CAN_R_0157_0004__FINISH)
-      &amp; has_arg1(R_0157_0003__CAN_R_0157_0004__FINISH,R_0157_0006__PLAY)
-      &amp; r_0157_0006__play(R_0157_0006__PLAY)
-      &amp; has_gen(R_0157_0006__PLAY,R_0157_0002__I)
-      &amp; has_arg0(R_0157_0003__CAN_R_0157_0004__FINISH,R_0157_0002__I)
-      &amp; has_nim(R_0157_0003__CAN_R_0157_0004__FINISH,R_0157_0001__NOW) ) ).
 </pre>
 <br>
 <br>
