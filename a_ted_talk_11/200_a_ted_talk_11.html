@@ -367,27 +367,22 @@ arc(r_0200_0013__not, r_0200_0012__is, keep_scope).
 </svg>
 <pre>
 fof(formula,axiom,
-    ( ~ ? [R_0200_0014__OFTEN,R_0200_0016__THANKFULLY,Z_000_200_A_TED_TALK_11_30,R_0200_0012__IS] :
-          ( r_0200_0014__often(R_0200_0014__OFTEN)
-          &amp; r_0200_0016__thankfully(R_0200_0016__THANKFULLY)
-          &amp; z_000_200_a_ted_talk_11_30(Z_000_200_A_TED_TALK_11_30)
-          &amp; r_0200_0012__is(R_0200_0012__IS)
-          &amp; has_arg0(R_0200_0012__IS,Z_000_200_A_TED_TALK_11_30)
-          &amp; has_nim44(R_0200_0012__IS,R_0200_0016__THANKFULLY)
-          &amp; has_clr39(R_0200_0012__IS,R_0200_0014__OFTEN) )
-    &amp; ! [R_0200_0004__IS_R_0200_0005__COOKING,R_0200_0002__MY,R_0200_0003__WIFE,R_0200_0006__A_R_0200_0007__MEAL,R_0200_0009__HOME,Z_000_200_A_TED_TALK_11_30] :
-        ( ( r_0200_0002__my(R_0200_0002__MY)
-          &amp; r_0200_0006__a_r_0200_0007__meal(R_0200_0006__A_R_0200_0007__MEAL)
-          &amp; r_0200_0009__home(R_0200_0009__HOME)
-          &amp; z_000_200_a_ted_talk_11_30(Z_000_200_A_TED_TALK_11_30)
-          &amp; r_0200_0004__is_r_0200_0005__cooking(R_0200_0004__IS_R_0200_0005__COOKING)
-          &amp; has_nim30(R_0200_0004__IS_R_0200_0005__COOKING,Z_000_200_A_TED_TALK_11_30)
-          &amp; has_r_0200_0008__at_nim25(R_0200_0004__IS_R_0200_0005__COOKING,R_0200_0009__HOME)
-          &amp; has_arg1(R_0200_0004__IS_R_0200_0005__COOKING,R_0200_0006__A_R_0200_0007__MEAL)
-          &amp; has_arg0(R_0200_0004__IS_R_0200_0005__COOKING,R_0200_0003__WIFE)
-          &amp; r_0200_0003__wife(R_0200_0003__WIFE)
-          &amp; has_gen(R_0200_0003__WIFE,R_0200_0002__MY) )
-       =&gt; ? [Z_000_200_A_TED_TALK_11_1] : z_000_200_a_ted_talk_11_1(Z_000_200_A_TED_TALK_11_1) ) ) ).
+    ( ! [R_200_4_IS_COOKING,R_200_3_WIFE,R_200_2_MY,R_200_6_A_MEAL,Z_200_A_TED_TALK_11_30,R_200_9_HOME] :
+        ( ( my(R_200_2_MY)
+          &amp; a_meal(R_200_6_A_MEAL)
+          &amp; home(R_200_9_HOME)
+          &amp; is_cooking(R_200_4_IS_COOKING,R_200_3_WIFE,R_200_6_A_MEAL)
+          &amp; wife(R_200_3_WIFE)
+          &amp; gen(R_200_3_WIFE,R_200_2_MY)
+          &amp; nim30(R_200_4_IS_COOKING,Z_200_A_TED_TALK_11_30)
+          &amp; at_nim25(R_200_4_IS_COOKING,R_200_9_HOME) )
+       =&gt; ? [Z_200_A_TED_TALK_11_1] : true )
+    &amp; ~ ? [R_200_12_IS,Z_200_A_TED_TALK_11_30,R_200_14_OFTEN,R_200_16_THANKFULLY] :
+          ( often(R_200_14_OFTEN)
+          &amp; thankfully(R_200_16_THANKFULLY)
+          &amp; is(R_200_12_IS,Z_200_A_TED_TALK_11_30)
+          &amp; clr39(R_200_12_IS,R_200_14_OFTEN)
+          &amp; nim44(R_200_12_IS,R_200_16_THANKFULLY) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="721pt" height="387pt"

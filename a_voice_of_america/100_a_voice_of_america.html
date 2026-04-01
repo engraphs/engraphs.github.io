@@ -428,32 +428,26 @@ arc(r_0100_0021__details, r_0100_0020__other, attrib57).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0100_0001__THE_R_0100_0002__XINHUA_R_0100_0003__NEWS_R_0100_0004__AGENCY,R_0100_0006__POLICE,R_0100_0010__OWNER,R_0100_0012__MANAGERS,R_0100_0014__THE_R_0100_0015__MINE,R_0100_0011__AND,R_0100_0007__HAVE_R_0100_0008__DETAINED,R_0100_0005__SAYS,R_0100_0017__BUT] :
-      ( r_0100_0001__The_r_0100_0002__Xinhua_r_0100_0003__news_r_0100_0004__agency(R_0100_0001__THE_R_0100_0002__XINHUA_R_0100_0003__NEWS_R_0100_0004__AGENCY)
-      &amp; r_0100_0006__police(R_0100_0006__POLICE)
-      &amp; r_0100_0010__owner(R_0100_0010__OWNER)
-      &amp; r_0100_0012__managers(R_0100_0012__MANAGERS)
-      &amp; r_0100_0014__the_r_0100_0015__mine(R_0100_0014__THE_R_0100_0015__MINE)
-      &amp; r_0100_0017__but(R_0100_0017__BUT)
-      &amp; ! [R_0100_0021__DETAILS,R_0100_0020__OTHER] :
-          ( ( r_0100_0020__other(R_0100_0020__OTHER)
-            &amp; r_0100_0021__details(R_0100_0021__DETAILS)
-            &amp; has_attrib57(R_0100_0021__DETAILS,R_0100_0020__OTHER) )
-         =&gt; ? [R_0100_0018__PROVIDED] :
-              ( r_0100_0018__provided(R_0100_0018__PROVIDED)
-              &amp; has_arg1(R_0100_0018__PROVIDED,R_0100_0021__DETAILS)
-              &amp; has_arg0(R_0100_0018__PROVIDED,R_0100_0001__THE_R_0100_0002__XINHUA_R_0100_0003__NEWS_R_0100_0004__AGENCY) ) )
-      &amp; has_conj1(R_0100_0017__BUT,R_0100_0005__SAYS)
-      &amp; r_0100_0005__says(R_0100_0005__SAYS)
-      &amp; has_arg1(R_0100_0005__SAYS,R_0100_0007__HAVE_R_0100_0008__DETAINED)
-      &amp; r_0100_0007__have_r_0100_0008__detained(R_0100_0007__HAVE_R_0100_0008__DETAINED)
-      &amp; has_arg1(R_0100_0007__HAVE_R_0100_0008__DETAINED,R_0100_0011__AND)
-      &amp; r_0100_0011__and(R_0100_0011__AND)
-      &amp; has_r_0100_0013__of(R_0100_0011__AND,R_0100_0014__THE_R_0100_0015__MINE)
-      &amp; has_conj2(R_0100_0011__AND,R_0100_0012__MANAGERS)
-      &amp; has_conj1(R_0100_0011__AND,R_0100_0010__OWNER)
-      &amp; has_arg0(R_0100_0007__HAVE_R_0100_0008__DETAINED,R_0100_0006__POLICE)
-      &amp; has_arg0(R_0100_0005__SAYS,R_0100_0001__THE_R_0100_0002__XINHUA_R_0100_0003__NEWS_R_0100_0004__AGENCY) ) ).
+    ? [R_100_17_BUT,R_100_5_SAYS,R_100_1_THE_XINHUA_NEWS_AGENCY,R_100_7_HAVE_DETAINED,R_100_6_POLICE,R_100_11_AND,R_100_10_OWNER,R_100_12_MANAGERS,R_100_14_THE_MINE] :
+      ( the_Xinhua_news_agency(R_100_1_THE_XINHUA_NEWS_AGENCY)
+      &amp; police(R_100_6_POLICE)
+      &amp; owner(R_100_10_OWNER)
+      &amp; managers(R_100_12_MANAGERS)
+      &amp; the_mine(R_100_14_THE_MINE)
+      &amp; ! [R_100_21_DETAILS,R_100_20_OTHER] :
+          ( ( other(R_100_20_OTHER)
+            &amp; details(R_100_21_DETAILS)
+            &amp; attrib57(R_100_21_DETAILS,R_100_20_OTHER) )
+         =&gt; ? [R_100_18_PROVIDED] : provided(R_100_18_PROVIDED,R_100_1_THE_XINHUA_NEWS_AGENCY,R_100_21_DETAILS) )
+      &amp; conj2(CONJ2)
+      &amp; but(R_100_17_BUT)
+      &amp; conj1(R_100_17_BUT,R_100_5_SAYS)
+      &amp; says(R_100_5_SAYS,R_100_1_THE_XINHUA_NEWS_AGENCY,R_100_7_HAVE_DETAINED)
+      &amp; have_detained(R_100_7_HAVE_DETAINED,R_100_6_POLICE,R_100_11_AND)
+      &amp; and(R_100_11_AND)
+      &amp; conj1(R_100_11_AND,R_100_10_OWNER)
+      &amp; conj2(R_100_11_AND,R_100_12_MANAGERS)
+      &amp; of(R_100_11_AND,R_100_14_THE_MINE) ) ).
 </pre>
 <br><hr><br>
 <svg width="1003pt" height="523pt"

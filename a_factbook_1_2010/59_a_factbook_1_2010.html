@@ -276,24 +276,21 @@ arc(r_0059_0012__contaminated, r_0059_0014__animal_r_0059_0015__urine, arg0).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0059_0001__INFECTION,R_0059_0006__WATER,R_0059_0008__FOOD,R_0059_0011__SOIL,R_0059_0010__OR,R_0059_0004__CONTACT,R_0059_0002__OCCURS,R_0059_0014__ANIMAL_R_0059_0015__URINE,R_0059_0012__CONTAMINATED] :
-      ( r_0059_0001__infection(R_0059_0001__INFECTION)
-      &amp; r_0059_0006__water(R_0059_0006__WATER)
-      &amp; r_0059_0008__food(R_0059_0008__FOOD)
-      &amp; r_0059_0011__soil(R_0059_0011__SOIL)
-      &amp; r_0059_0014__animal_r_0059_0015__urine(R_0059_0014__ANIMAL_R_0059_0015__URINE)
-      &amp; r_0059_0012__contaminated(R_0059_0012__CONTAMINATED)
-      &amp; has_arg0(R_0059_0012__CONTAMINATED,R_0059_0014__ANIMAL_R_0059_0015__URINE)
-      &amp; has_arg1(R_0059_0012__CONTAMINATED,R_0059_0010__OR)
-      &amp; r_0059_0010__or(R_0059_0010__OR)
-      &amp; has_conj3(R_0059_0010__OR,R_0059_0011__SOIL)
-      &amp; has_conj2(R_0059_0010__OR,R_0059_0008__FOOD)
-      &amp; has_conj1(R_0059_0010__OR,R_0059_0006__WATER)
-      &amp; r_0059_0002__occurs(R_0059_0002__OCCURS)
-      &amp; has_r_0059_0003__through_nim10(R_0059_0002__OCCURS,R_0059_0004__CONTACT)
-      &amp; r_0059_0004__contact(R_0059_0004__CONTACT)
-      &amp; has_r_0059_0005__with(R_0059_0004__CONTACT,R_0059_0010__OR)
-      &amp; has_arg0(R_0059_0002__OCCURS,R_0059_0001__INFECTION) ) ).
+    ? [R_59_2_OCCURS,R_59_1_INFECTION,R_59_4_CONTACT,R_59_12_CONTAMINATED,R_59_14_ANIMAL_URINE,R_59_10_OR,R_59_6_WATER,R_59_8_FOOD,R_59_11_SOIL] :
+      ( infection(R_59_1_INFECTION)
+      &amp; animal_urine(R_59_14_ANIMAL_URINE)
+      &amp; water(R_59_6_WATER)
+      &amp; food(R_59_8_FOOD)
+      &amp; soil(R_59_11_SOIL)
+      &amp; occurs(R_59_2_OCCURS,R_59_1_INFECTION)
+      &amp; through_nim10(R_59_2_OCCURS,R_59_4_CONTACT)
+      &amp; contact(R_59_4_CONTACT)
+      &amp; with(R_59_4_CONTACT,R_59_10_OR)
+      &amp; or(R_59_10_OR)
+      &amp; conj1(R_59_10_OR,R_59_6_WATER)
+      &amp; conj2(R_59_10_OR,R_59_8_FOOD)
+      &amp; conj3(R_59_10_OR,R_59_11_SOIL)
+      &amp; contaminated(R_59_12_CONTAMINATED,R_59_14_ANIMAL_URINE,R_59_10_OR) ) ).
 </pre>
 <br><hr><br>
 <svg width="739pt" height="432pt"

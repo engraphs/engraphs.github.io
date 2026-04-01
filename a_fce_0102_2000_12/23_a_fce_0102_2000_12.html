@@ -212,18 +212,14 @@ arc(r_0023_0010__country, r_0023_0001__You, gen).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0023_0001__YOU,R_0023_0010__COUNTRY,R_0023_0006__A_R_0023_0007__STORY,R_0023_0004__TO_R_0023_0005__WRITE,R_0023_0002__HAVE_R_0023_0003__DECIDED] :
-      ( r_0023_0001__You(R_0023_0001__YOU)
-      &amp; r_0023_0002__have_r_0023_0003__decided(R_0023_0002__HAVE_R_0023_0003__DECIDED)
-      &amp; has_arg1(R_0023_0002__HAVE_R_0023_0003__DECIDED,R_0023_0004__TO_R_0023_0005__WRITE)
-      &amp; r_0023_0004__to_r_0023_0005__write(R_0023_0004__TO_R_0023_0005__WRITE)
-      &amp; has_arg1(R_0023_0004__TO_R_0023_0005__WRITE,R_0023_0006__A_R_0023_0007__STORY)
-      &amp; r_0023_0006__a_r_0023_0007__story(R_0023_0006__A_R_0023_0007__STORY)
-      &amp; has_r_0023_0008__from(R_0023_0006__A_R_0023_0007__STORY,R_0023_0010__COUNTRY)
-      &amp; r_0023_0010__country(R_0023_0010__COUNTRY)
-      &amp; has_gen(R_0023_0010__COUNTRY,R_0023_0001__YOU)
-      &amp; has_arg0(R_0023_0004__TO_R_0023_0005__WRITE,R_0023_0001__YOU)
-      &amp; has_arg0(R_0023_0002__HAVE_R_0023_0003__DECIDED,R_0023_0001__YOU) ) ).
+    ? [R_23_2_HAVE_DECIDED,R_23_4_TO_WRITE,R_23_6_A_STORY,R_23_10_COUNTRY,R_23_1_YOU] :
+      ( you(R_23_1_YOU)
+      &amp; have_decided(R_23_2_HAVE_DECIDED,R_23_1_YOU,R_23_4_TO_WRITE)
+      &amp; to_write(R_23_4_TO_WRITE,R_23_1_YOU,R_23_6_A_STORY)
+      &amp; a_story(R_23_6_A_STORY)
+      &amp; from(R_23_6_A_STORY,R_23_10_COUNTRY)
+      &amp; country(R_23_10_COUNTRY)
+      &amp; gen(R_23_10_COUNTRY,R_23_1_YOU) ) ).
 </pre>
 <br><hr><br>
 <svg width="466pt" height="387pt"

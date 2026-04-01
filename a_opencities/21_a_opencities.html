@@ -482,35 +482,27 @@ arc(r_0021_0021__jobs, r_0021_0019__our, gen).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0021_0009__PEOPLE,R_0021_0012__IMMIGRANTS,R_0021_0010__COMPLAINING,R_0021_0014__HERE,R_0021_0013__COMING,R_0021_0019__OUR,R_0021_0021__JOBS,R_0021_0016__TAKING_R_0021_0017__AWAY,R_0021_0015__AND] :
-      ( r_0021_0009__people(R_0021_0009__PEOPLE)
-      &amp; r_0021_0012__immigrants(R_0021_0012__IMMIGRANTS)
-      &amp; r_0021_0014__here(R_0021_0014__HERE)
-      &amp; r_0021_0019__our(R_0021_0019__OUR)
-      &amp; r_0021_0015__and(R_0021_0015__AND)
-      &amp; has_conj2(R_0021_0015__AND,R_0021_0016__TAKING_R_0021_0017__AWAY)
-      &amp; r_0021_0016__taking_r_0021_0017__away(R_0021_0016__TAKING_R_0021_0017__AWAY)
-      &amp; has_arg1(R_0021_0016__TAKING_R_0021_0017__AWAY,R_0021_0021__JOBS)
-      &amp; r_0021_0021__jobs(R_0021_0021__JOBS)
-      &amp; has_gen(R_0021_0021__JOBS,R_0021_0019__OUR)
-      &amp; has_arg0(R_0021_0016__TAKING_R_0021_0017__AWAY,R_0021_0012__IMMIGRANTS)
-      &amp; has_conj1(R_0021_0015__AND,R_0021_0013__COMING)
-      &amp; r_0021_0013__coming(R_0021_0013__COMING)
-      &amp; has_nim41(R_0021_0013__COMING,R_0021_0014__HERE)
-      &amp; has_arg0(R_0021_0013__COMING,R_0021_0012__IMMIGRANTS)
-      &amp; r_0021_0010__complaining(R_0021_0010__COMPLAINING)
-      &amp; has_r_0021_0011__about_clr33(R_0021_0010__COMPLAINING,R_0021_0012__IMMIGRANTS)
-      &amp; has_arg0(R_0021_0010__COMPLAINING,R_0021_0009__PEOPLE)
-      &amp; ! [R_0021_0008__HEAR,R_0021_0001__I] :
-          ( ( r_0021_0001__I(R_0021_0001__I)
-            &amp; r_0021_0008__hear(R_0021_0008__HEAR)
-            &amp; has_arg1(R_0021_0008__HEAR,R_0021_0009__PEOPLE)
-            &amp; has_arg0(R_0021_0008__HEAR,R_0021_0001__I) )
-         =&gt; ~ ? [R_0021_0005__IT,R_0021_0002__CA_R_0021_0004__UNDERSTAND] :
-                ( r_0021_0005__it(R_0021_0005__IT)
-                &amp; r_0021_0002__ca_r_0021_0004__understand(R_0021_0002__CA_R_0021_0004__UNDERSTAND)
-                &amp; has_arg1(R_0021_0002__CA_R_0021_0004__UNDERSTAND,R_0021_0005__IT)
-                &amp; has_arg0(R_0021_0002__CA_R_0021_0004__UNDERSTAND,R_0021_0001__I) ) ) ) ).
+    ? [R_21_10_COMPLAINING,R_21_9_PEOPLE,R_21_15_AND,R_21_13_COMING,R_21_14_HERE,R_21_16_TAKING_AWAY,R_21_12_IMMIGRANTS,R_21_21_JOBS,R_21_19_OUR] :
+      ( people(R_21_9_PEOPLE)
+      &amp; here(R_21_14_HERE)
+      &amp; immigrants(R_21_12_IMMIGRANTS)
+      &amp; our(R_21_19_OUR)
+      &amp; ! [R_21_8_HEAR,R_21_1_I] :
+          ( ( i(R_21_1_I)
+            &amp; hear(R_21_8_HEAR,R_21_1_I,R_21_9_PEOPLE) )
+         =&gt; ~ ? [R_21_2_CA_UNDERSTAND,R_21_5_IT] :
+                ( it(R_21_5_IT)
+                &amp; ca_understand(R_21_2_CA_UNDERSTAND,R_21_1_I,R_21_5_IT) ) )
+      &amp; complaining(R_21_10_COMPLAINING,R_21_9_PEOPLE)
+      &amp; about_clr33(R_21_10_COMPLAINING,R_21_12_IMMIGRANTS)
+      &amp; and(R_21_15_AND)
+      &amp; conj1(R_21_15_AND,R_21_13_COMING)
+      &amp; coming(R_21_13_COMING,R_21_12_IMMIGRANTS)
+      &amp; nim41(R_21_13_COMING,R_21_14_HERE)
+      &amp; conj2(R_21_15_AND,R_21_16_TAKING_AWAY)
+      &amp; taking_away(R_21_16_TAKING_AWAY,R_21_12_IMMIGRANTS,R_21_21_JOBS)
+      &amp; jobs(R_21_21_JOBS)
+      &amp; gen(R_21_21_JOBS,R_21_19_OUR) ) ).
 </pre>
 <br><hr><br>
 <svg width="1059pt" height="658pt"

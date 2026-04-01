@@ -537,41 +537,33 @@ arc(r_0017_0022__an_r_0017_0024__bonus, r_0017_0026__2000_r_0017_0027__points, r
 </svg>
 <pre>
 fof(formula,axiom,
-    ! [R_0017_0014__AND,R_0017_0002__YOU,R_0017_0004__THE_R_0017_0005__POD,R_0017_0003__RETRIEVE,R_0017_0008__THE_R_0017_0009__REACTOR,R_0017_0012__CRITICAL,R_0017_0013__PHASE,R_0017_0007__SEND,R_0017_0016__THE_R_0017_0017__PLANET,R_0017_0018__SAFELY,R_0017_0015__LEAVE] :
-      ( ( r_0017_0002__you(R_0017_0002__YOU)
-        &amp; r_0017_0004__the_r_0017_0005__pod(R_0017_0004__THE_R_0017_0005__POD)
-        &amp; r_0017_0008__the_r_0017_0009__reactor(R_0017_0008__THE_R_0017_0009__REACTOR)
-        &amp; r_0017_0012__critical(R_0017_0012__CRITICAL)
-        &amp; r_0017_0016__the_r_0017_0017__planet(R_0017_0016__THE_R_0017_0017__PLANET)
-        &amp; r_0017_0018__safely(R_0017_0018__SAFELY)
-        &amp; r_0017_0014__and(R_0017_0014__AND)
-        &amp; has_conj3(R_0017_0014__AND,R_0017_0015__LEAVE)
-        &amp; r_0017_0015__leave(R_0017_0015__LEAVE)
-        &amp; has_nim52(R_0017_0015__LEAVE,R_0017_0018__SAFELY)
-        &amp; has_arg1(R_0017_0015__LEAVE,R_0017_0016__THE_R_0017_0017__PLANET)
-        &amp; has_arg0(R_0017_0015__LEAVE,R_0017_0002__YOU)
-        &amp; has_conj2(R_0017_0014__AND,R_0017_0007__SEND)
-        &amp; r_0017_0007__send(R_0017_0007__SEND)
-        &amp; has_r_0017_0010__into_clr32(R_0017_0007__SEND,R_0017_0013__PHASE)
-        &amp; r_0017_0013__phase(R_0017_0013__PHASE)
-        &amp; has_attrib36(R_0017_0013__PHASE,R_0017_0012__CRITICAL)
-        &amp; has_gen(R_0017_0013__PHASE,R_0017_0008__THE_R_0017_0009__REACTOR)
-        &amp; has_arg1(R_0017_0007__SEND,R_0017_0008__THE_R_0017_0009__REACTOR)
-        &amp; has_arg0(R_0017_0007__SEND,R_0017_0002__YOU)
-        &amp; has_conj1(R_0017_0014__AND,R_0017_0003__RETRIEVE)
-        &amp; r_0017_0003__retrieve(R_0017_0003__RETRIEVE)
-        &amp; has_arg1(R_0017_0003__RETRIEVE,R_0017_0004__THE_R_0017_0005__POD)
-        &amp; has_arg0(R_0017_0003__RETRIEVE,R_0017_0002__YOU) )
-     =&gt; ? [R_0017_0020__YOU,R_0017_0023__EXTRA,R_0017_0026__2000_R_0017_0027__POINTS,R_0017_0022__AN_R_0017_0024__BONUS,R_0017_0021__RECEIVE] :
-          ( r_0017_0020__you(R_0017_0020__YOU)
-          &amp; r_0017_0023__extra(R_0017_0023__EXTRA)
-          &amp; r_0017_0026__2000_r_0017_0027__points(R_0017_0026__2000_R_0017_0027__POINTS)
-          &amp; r_0017_0021__receive(R_0017_0021__RECEIVE)
-          &amp; has_arg1(R_0017_0021__RECEIVE,R_0017_0022__AN_R_0017_0024__BONUS)
-          &amp; r_0017_0022__an_r_0017_0024__bonus(R_0017_0022__AN_R_0017_0024__BONUS)
-          &amp; has_r_0017_0025__of(R_0017_0022__AN_R_0017_0024__BONUS,R_0017_0026__2000_R_0017_0027__POINTS)
-          &amp; has_attrib65(R_0017_0022__AN_R_0017_0024__BONUS,R_0017_0023__EXTRA)
-          &amp; has_arg0(R_0017_0021__RECEIVE,R_0017_0020__YOU) ) ) ).
+    ! [R_17_14_AND,R_17_3_RETRIEVE,R_17_4_THE_POD,R_17_7_SEND,R_17_13_PHASE,R_17_12_CRITICAL,R_17_8_THE_REACTOR,R_17_15_LEAVE,R_17_2_YOU,R_17_16_THE_PLANET,R_17_18_SAFELY] :
+      ( ( the_pod(R_17_4_THE_POD)
+        &amp; critical(R_17_12_CRITICAL)
+        &amp; the_reactor(R_17_8_THE_REACTOR)
+        &amp; you(R_17_2_YOU)
+        &amp; the_planet(R_17_16_THE_PLANET)
+        &amp; safely(R_17_18_SAFELY)
+        &amp; and(R_17_14_AND)
+        &amp; conj1(R_17_14_AND,R_17_3_RETRIEVE)
+        &amp; retrieve(R_17_3_RETRIEVE,R_17_2_YOU,R_17_4_THE_POD)
+        &amp; conj2(R_17_14_AND,R_17_7_SEND)
+        &amp; send(R_17_7_SEND,R_17_2_YOU,R_17_8_THE_REACTOR)
+        &amp; into_clr32(R_17_7_SEND,R_17_13_PHASE)
+        &amp; phase(R_17_13_PHASE)
+        &amp; attrib36(R_17_13_PHASE,R_17_12_CRITICAL)
+        &amp; gen(R_17_13_PHASE,R_17_8_THE_REACTOR)
+        &amp; conj3(R_17_14_AND,R_17_15_LEAVE)
+        &amp; leave(R_17_15_LEAVE,R_17_2_YOU,R_17_16_THE_PLANET)
+        &amp; nim52(R_17_15_LEAVE,R_17_18_SAFELY) )
+     =&gt; ? [R_17_21_RECEIVE,R_17_20_YOU,R_17_22_AN_BONUS,R_17_23_EXTRA,R_17_26_2000_POINTS] :
+          ( you(R_17_20_YOU)
+          &amp; extra(R_17_23_EXTRA)
+          &amp; 2000_points(R_17_26_2000_POINTS)
+          &amp; receive(R_17_21_RECEIVE,R_17_20_YOU,R_17_22_AN_BONUS)
+          &amp; an_bonus(R_17_22_AN_BONUS)
+          &amp; attrib65(R_17_22_AN_BONUS,R_17_23_EXTRA)
+          &amp; of(R_17_22_AN_BONUS,R_17_26_2000_POINTS) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="1166pt" height="478pt"

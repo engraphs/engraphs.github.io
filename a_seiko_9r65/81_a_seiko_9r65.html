@@ -251,19 +251,14 @@ arc(r_0081_0015__turn, r_0081_0016__free, prd).
 </svg>
 <pre>
 fof(formula,axiom,
-    ! [R_0081_0003__TURN,R_0081_0002__YOU,R_0081_0004__THE_R_0081_0005__CROWN,R_0081_0006__COUNTERCLOCKWISE] :
-      ( ( r_0081_0002__you(R_0081_0002__YOU)
-        &amp; r_0081_0004__the_r_0081_0005__crown(R_0081_0004__THE_R_0081_0005__CROWN)
-        &amp; r_0081_0006__counterclockwise(R_0081_0006__COUNTERCLOCKWISE)
-        &amp; r_0081_0003__turn(R_0081_0003__TURN)
-        &amp; has_prd(R_0081_0003__TURN,R_0081_0006__COUNTERCLOCKWISE)
-        &amp; has_arg1(R_0081_0003__TURN,R_0081_0004__THE_R_0081_0005__CROWN)
-        &amp; has_arg0(R_0081_0003__TURN,R_0081_0002__YOU) )
-     =&gt; ? [R_0081_0016__FREE,R_0081_0014__WILL_R_0081_0015__TURN] :
-          ( r_0081_0016__free(R_0081_0016__FREE)
-          &amp; r_0081_0014__will_r_0081_0015__turn(R_0081_0014__WILL_R_0081_0015__TURN)
-          &amp; has_prd(R_0081_0014__WILL_R_0081_0015__TURN,R_0081_0016__FREE)
-          &amp; has_arg0(R_0081_0014__WILL_R_0081_0015__TURN,R_0081_0004__THE_R_0081_0005__CROWN) ) ) ).
+    ! [R_81_3_TURN,R_81_2_YOU,R_81_4_THE_CROWN,R_81_6_COUNTERCLOCKWISE] :
+      ( ( you(R_81_2_YOU)
+        &amp; the_crown(R_81_4_THE_CROWN)
+        &amp; counterclockwise(R_81_6_COUNTERCLOCKWISE)
+        &amp; turn(R_81_3_TURN,R_81_2_YOU,R_81_4_THE_CROWN,R_81_6_COUNTERCLOCKWISE) )
+     =&gt; ? [R_81_14_WILL_TURN,R_81_16_FREE] :
+          ( free(R_81_16_FREE)
+          &amp; will_turn(R_81_14_WILL_TURN,R_81_4_THE_CROWN,R_81_16_FREE) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="764pt" height="387pt"

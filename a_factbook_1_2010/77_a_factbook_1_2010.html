@@ -276,24 +276,22 @@ arc(r_0077_0011__and, r_0077_0012__vomiting, conj4).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0077_0001__SYMPTOMS,R_0077_0003__STIFF,R_0077_0004__NECK,R_0077_0006__HIGH,R_0077_0007__FEVER,R_0077_0009__HEADACHES,R_0077_0012__VOMITING,R_0077_0011__AND,R_0077_0002__INCLUDE] :
-      ( r_0077_0001__symptoms(R_0077_0001__SYMPTOMS)
-      &amp; r_0077_0003__stiff(R_0077_0003__STIFF)
-      &amp; r_0077_0006__high(R_0077_0006__HIGH)
-      &amp; r_0077_0009__headaches(R_0077_0009__HEADACHES)
-      &amp; r_0077_0012__vomiting(R_0077_0012__VOMITING)
-      &amp; r_0077_0002__include(R_0077_0002__INCLUDE)
-      &amp; has_arg1(R_0077_0002__INCLUDE,R_0077_0011__AND)
-      &amp; r_0077_0011__and(R_0077_0011__AND)
-      &amp; has_conj4(R_0077_0011__AND,R_0077_0012__VOMITING)
-      &amp; has_conj3(R_0077_0011__AND,R_0077_0009__HEADACHES)
-      &amp; has_conj2(R_0077_0011__AND,R_0077_0007__FEVER)
-      &amp; r_0077_0007__fever(R_0077_0007__FEVER)
-      &amp; has_attrib19(R_0077_0007__FEVER,R_0077_0006__HIGH)
-      &amp; has_conj1(R_0077_0011__AND,R_0077_0004__NECK)
-      &amp; r_0077_0004__neck(R_0077_0004__NECK)
-      &amp; has_attrib10(R_0077_0004__NECK,R_0077_0003__STIFF)
-      &amp; has_arg0(R_0077_0002__INCLUDE,R_0077_0001__SYMPTOMS) ) ).
+    ? [R_77_2_INCLUDE,R_77_1_SYMPTOMS,R_77_11_AND,R_77_4_NECK,R_77_3_STIFF,R_77_7_FEVER,R_77_6_HIGH,R_77_9_HEADACHES,R_77_12_VOMITING] :
+      ( symptoms(R_77_1_SYMPTOMS)
+      &amp; stiff(R_77_3_STIFF)
+      &amp; high(R_77_6_HIGH)
+      &amp; headaches(R_77_9_HEADACHES)
+      &amp; vomiting(R_77_12_VOMITING)
+      &amp; include(R_77_2_INCLUDE,R_77_1_SYMPTOMS,R_77_11_AND)
+      &amp; and(R_77_11_AND)
+      &amp; conj1(R_77_11_AND,R_77_4_NECK)
+      &amp; neck(R_77_4_NECK)
+      &amp; attrib10(R_77_4_NECK,R_77_3_STIFF)
+      &amp; conj2(R_77_11_AND,R_77_7_FEVER)
+      &amp; fever(R_77_7_FEVER)
+      &amp; attrib19(R_77_7_FEVER,R_77_6_HIGH)
+      &amp; conj3(R_77_11_AND,R_77_9_HEADACHES)
+      &amp; conj4(R_77_11_AND,R_77_12_VOMITING) ) ).
 </pre>
 <br><hr><br>
 <svg width="576pt" height="342pt"

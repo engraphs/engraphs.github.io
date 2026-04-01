@@ -345,27 +345,29 @@ arc(z_000_12_a_opencities_30, r_0012_0012__the_r_0012_0013__world, r_0012_0011__
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0012_0001__NOWADAYS,R_0012_0002__YOU,R_0012_0004__GO_R_0012_0005__SHOPPING,R_0012_0012__THE_R_0012_0013__WORLD,Z_000_12_A_OPENCITIES_30,R_0012_0008__STUFF,R_0012_0007__FIND,R_0012_0006__AND,R_0012_0003__CAN] :
-      ( r_0012_0001__Nowadays(R_0012_0001__NOWADAYS)
-      &amp; r_0012_0002__you(R_0012_0002__YOU)
-      &amp; r_0012_0012__the_r_0012_0013__world(R_0012_0012__THE_R_0012_0013__WORLD)
-      &amp; r_0012_0003__can(R_0012_0003__CAN)
-      &amp; has_keep_scope(R_0012_0003__CAN,R_0012_0006__AND)
-      &amp; r_0012_0006__and(R_0012_0006__AND)
-      &amp; has_conj2(R_0012_0006__AND,R_0012_0007__FIND)
-      &amp; r_0012_0007__find(R_0012_0007__FIND)
-      &amp; has_arg1(R_0012_0007__FIND,R_0012_0008__STUFF)
-      &amp; r_0012_0008__stuff(R_0012_0008__STUFF)
-      &amp; has_r_0012_0009__from(R_0012_0008__STUFF,Z_000_12_A_OPENCITIES_30)
-      &amp; z_000_12_a_opencities_30(Z_000_12_A_OPENCITIES_30)
-      &amp; has_r_0012_0011__over(Z_000_12_A_OPENCITIES_30,R_0012_0012__THE_R_0012_0013__WORLD)
-      &amp; has_arg0(R_0012_0007__FIND,R_0012_0002__YOU)
-      &amp; has_conj1(R_0012_0006__AND,R_0012_0004__GO_R_0012_0005__SHOPPING)
-      &amp; r_0012_0004__go_r_0012_0005__shopping(R_0012_0004__GO_R_0012_0005__SHOPPING)
-      &amp; has_arg0(R_0012_0004__GO_R_0012_0005__SHOPPING,R_0012_0002__YOU)
-      &amp; has_nim2(R_0012_0003__CAN,R_0012_0001__NOWADAYS)
-      &amp; ( z_000_12_a_opencities_30(Z_000_12_A_OPENCITIES_30)
-       =&gt; r_0012_0007__find(R_0012_0007__FIND) ) ) ).
+    ? [R_12_1_NOWADAYS] :
+      ( nowadays(R_12_1_NOWADAYS)
+      &amp; ? [R_12_6_AND,R_12_4_GO_SHOPPING,R_12_7_FIND,R_12_2_YOU,R_12_8_STUFF,Z_12_A_OPENCITIES_30,R_12_12_THE_WORLD] :
+          ( you(R_12_2_YOU)
+          &amp; the_world(R_12_12_THE_WORLD)
+          &amp; and(R_12_6_AND)
+          &amp; conj1(R_12_6_AND,R_12_4_GO_SHOPPING)
+          &amp; go_shopping(R_12_4_GO_SHOPPING,R_12_2_YOU)
+          &amp; conj2(R_12_6_AND,R_12_7_FIND)
+          &amp; find(R_12_7_FIND,R_12_2_YOU,R_12_8_STUFF)
+          &amp; stuff(R_12_8_STUFF)
+          &amp; from(R_12_8_STUFF,Z_12_A_OPENCITIES_30)
+          &amp; z_12_a_opencities_30(Z_12_A_OPENCITIES_30)
+          &amp; over(Z_12_A_OPENCITIES_30,R_12_12_THE_WORLD) )
+      &amp; ! [Z_12_A_OPENCITIES_30,R_12_12_THE_WORLD] :
+          ( ( the_world(R_12_12_THE_WORLD)
+            &amp; z_12_a_opencities_30(Z_12_A_OPENCITIES_30)
+            &amp; over(Z_12_A_OPENCITIES_30,R_12_12_THE_WORLD) )
+         =&gt; ? [R_12_7_FIND,R_12_2_YOU,R_12_8_STUFF] :
+              ( you(R_12_2_YOU)
+              &amp; find(R_12_7_FIND,R_12_2_YOU,R_12_8_STUFF)
+              &amp; stuff(R_12_8_STUFF)
+              &amp; from(R_12_8_STUFF,Z_12_A_OPENCITIES_30) ) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="599pt" height="523pt"

@@ -331,25 +331,21 @@ arc(r_0028_0014__retiring, r_0028_0016__2065, r_0028_0015__in_nim44).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0028_0007__CHILDREN,R_0028_0009__SCHOOL,R_0028_0010__THIS_R_0028_0011__YEAR,R_0028_0008__STARTING] :
-      ( r_0028_0007__children(R_0028_0007__CHILDREN)
-      &amp; r_0028_0009__school(R_0028_0009__SCHOOL)
-      &amp; r_0028_0010__this_r_0028_0011__year(R_0028_0010__THIS_R_0028_0011__YEAR)
-      &amp; r_0028_0008__starting(R_0028_0008__STARTING)
-      &amp; has_nim28(R_0028_0008__STARTING,R_0028_0010__THIS_R_0028_0011__YEAR)
-      &amp; has_arg1(R_0028_0008__STARTING,R_0028_0009__SCHOOL)
-      &amp; has_arg0(R_0028_0008__STARTING,R_0028_0007__CHILDREN)
-      &amp; ! [R_0028_0003__THINK,R_0028_0002__YOU,R_0028_0005__IT] :
-          ( ( r_0028_0002__you(R_0028_0002__YOU)
-            &amp; r_0028_0005__it(R_0028_0005__IT)
-            &amp; r_0028_0003__think(R_0028_0003__THINK)
-            &amp; has_r_0028_0004__of_clr14(R_0028_0003__THINK,R_0028_0005__IT)
-            &amp; has_arg0(R_0028_0003__THINK,R_0028_0002__YOU) )
-         =&gt; ? [R_0028_0016__2065,R_0028_0012__WILL_R_0028_0013__BE_R_0028_0014__RETIRING] :
-              ( r_0028_0016__2065(R_0028_0016__2065)
-              &amp; r_0028_0012__will_r_0028_0013__be_r_0028_0014__retiring(R_0028_0012__WILL_R_0028_0013__BE_R_0028_0014__RETIRING)
-              &amp; has_r_0028_0015__in_nim44(R_0028_0012__WILL_R_0028_0013__BE_R_0028_0014__RETIRING,R_0028_0016__2065)
-              &amp; has_arg0(R_0028_0012__WILL_R_0028_0013__BE_R_0028_0014__RETIRING,R_0028_0007__CHILDREN) ) ) ) ).
+    ? [R_28_8_STARTING,R_28_7_CHILDREN,R_28_9_SCHOOL,R_28_10_THIS_YEAR] :
+      ( children(R_28_7_CHILDREN)
+      &amp; school(R_28_9_SCHOOL)
+      &amp; this_year(R_28_10_THIS_YEAR)
+      &amp; ! [R_28_3_THINK,R_28_2_YOU,R_28_5_IT] :
+          ( ( you(R_28_2_YOU)
+            &amp; it(R_28_5_IT)
+            &amp; think(R_28_3_THINK,R_28_2_YOU)
+            &amp; of_clr14(R_28_3_THINK,R_28_5_IT) )
+         =&gt; ? [R_28_12_WILL_BE_RETIRING,R_28_16_2065] :
+              ( 2065(R_28_16_2065)
+              &amp; will_be_retiring(R_28_12_WILL_BE_RETIRING,R_28_7_CHILDREN)
+              &amp; in_nim44(R_28_12_WILL_BE_RETIRING,R_28_16_2065) ) )
+      &amp; starting(R_28_8_STARTING,R_28_7_CHILDREN,R_28_9_SCHOOL)
+      &amp; nim28(R_28_8_STARTING,R_28_10_THIS_YEAR) ) ).
 </pre>
 <br><hr><br>
 <svg width="686pt" height="297pt"

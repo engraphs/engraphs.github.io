@@ -508,37 +508,31 @@ arc(r_0087_0022__to_r_0087_0023__wound, r_0087_0019__Who, arg0).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0087_0012__ANGER,R_0087_0019__WHO,R_0087_0020__HATH_R_0087_0021__DARED_R_0087_0022__TO_R_0087_0023__WOUND,UTTERANCE_87_A_WILDE_2_1888_53,R_0087_0015__HE,R_0087_0016__SAID,R_0087_0014__AND] :
-      ( r_0087_0012__anger(R_0087_0012__ANGER)
-      &amp; r_0087_0015__he(R_0087_0015__HE)
-      &amp; r_0087_0019__Who(R_0087_0019__WHO)
-      &amp; r_0087_0014__and(R_0087_0014__AND)
-      &amp; has_conj2(R_0087_0014__AND,R_0087_0016__SAID)
-      &amp; r_0087_0016__said(R_0087_0016__SAID)
-      &amp; has_arg0(R_0087_0016__SAID,R_0087_0015__HE)
-      &amp; has_arg1(R_0087_0016__SAID,UTTERANCE_87_A_WILDE_2_1888_53)
+    ? [R_87_14_AND,R_87_16_SAID,R_87_15_HE,UTTERANCE_87_A_WILDE_2_1888_53,R_87_20_HATH_DARED_TO_WOUND,R_87_19_WHO,R_87_12_ANGER] :
+      ( he(R_87_15_HE)
+      &amp; who(R_87_19_WHO)
+      &amp; anger(R_87_12_ANGER)
+      &amp; ! [R_87_4_CAME,R_87_3_HE,R_87_6_CLOSE,R_87_5_QUITE] :
+          ( ( he(R_87_3_HE)
+            &amp; quite(R_87_5_QUITE)
+            &amp; came(R_87_4_CAME,R_87_3_HE)
+            &amp; clr15(R_87_4_CAME,R_87_6_CLOSE)
+            &amp; close(R_87_6_CLOSE)
+            &amp; qual16(R_87_6_CLOSE,R_87_5_QUITE) )
+         =&gt; ? [R_87_1_AND_GREW,R_87_8_FACE,R_87_7_HIS,R_87_10_RED] :
+              ( his(R_87_7_HIS)
+              &amp; and_grew(R_87_1_AND_GREW,R_87_8_FACE,R_87_10_RED)
+              &amp; face(R_87_8_FACE)
+              &amp; gen(R_87_8_FACE,R_87_7_HIS)
+              &amp; red(R_87_10_RED)
+              &amp; with(R_87_10_RED,R_87_12_ANGER) ) )
+      &amp; conj1(CONJ1)
+      &amp; and(R_87_14_AND)
+      &amp; conj2(R_87_14_AND,R_87_16_SAID)
+      &amp; said(R_87_16_SAID,R_87_15_HE,UTTERANCE_87_A_WILDE_2_1888_53)
       &amp; utterance_87_a_wilde_2_1888_53(UTTERANCE_87_A_WILDE_2_1888_53)
-      &amp; has_part1(UTTERANCE_87_A_WILDE_2_1888_53,R_0087_0020__HATH_R_0087_0021__DARED_R_0087_0022__TO_R_0087_0023__WOUND)
-      &amp; r_0087_0020__hath_r_0087_0021__dared_r_0087_0022__to_r_0087_0023__wound(R_0087_0020__HATH_R_0087_0021__DARED_R_0087_0022__TO_R_0087_0023__WOUND)
-      &amp; has_arg0(R_0087_0020__HATH_R_0087_0021__DARED_R_0087_0022__TO_R_0087_0023__WOUND,R_0087_0019__WHO)
-      &amp; has_arg1(R_0087_0020__HATH_R_0087_0021__DARED_R_0087_0022__TO_R_0087_0023__WOUND,R_0087_0012__ANGER)
-      &amp; ! [R_0087_0004__CAME,R_0087_0003__HE,R_0087_0005__QUITE,R_0087_0006__CLOSE] :
-          ( ( r_0087_0003__he(R_0087_0003__HE)
-            &amp; r_0087_0005__quite(R_0087_0005__QUITE)
-            &amp; r_0087_0004__came(R_0087_0004__CAME)
-            &amp; has_clr15(R_0087_0004__CAME,R_0087_0006__CLOSE)
-            &amp; r_0087_0006__close(R_0087_0006__CLOSE)
-            &amp; has_qual16(R_0087_0006__CLOSE,R_0087_0005__QUITE)
-            &amp; has_arg0(R_0087_0004__CAME,R_0087_0003__HE) )
-         =&gt; ? [R_0087_0007__HIS,R_0087_0008__FACE,R_0087_0010__RED,R_0087_0001__AND_R_0087_0009__GREW] :
-              ( r_0087_0007__his(R_0087_0007__HIS)
-              &amp; r_0087_0001__And_r_0087_0009__grew(R_0087_0001__AND_R_0087_0009__GREW)
-              &amp; has_prd(R_0087_0001__AND_R_0087_0009__GREW,R_0087_0010__RED)
-              &amp; r_0087_0010__red(R_0087_0010__RED)
-              &amp; has_r_0087_0011__with(R_0087_0010__RED,R_0087_0012__ANGER)
-              &amp; has_arg0(R_0087_0001__AND_R_0087_0009__GREW,R_0087_0008__FACE)
-              &amp; r_0087_0008__face(R_0087_0008__FACE)
-              &amp; has_gen(R_0087_0008__FACE,R_0087_0007__HIS) ) ) ) ).
+      &amp; part1(UTTERANCE_87_A_WILDE_2_1888_53,R_87_20_HATH_DARED_TO_WOUND)
+      &amp; hath_dared_to_wound(R_87_20_HATH_DARED_TO_WOUND,R_87_19_WHO,R_87_12_ANGER) ) ).
 </pre>
 <br><hr><br>
 <svg width="1127pt" height="523pt"

@@ -360,30 +360,24 @@ arc(r_0013_0009__staying, r_0013_0010__safe, prd).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0013_0001__ALWAYS,R_0013_0003__YOU,R_0013_0005__ALL,R_0013_0007__WELL,R_0013_0006__DOING,R_0013_0010__SAFE,R_0013_0009__STAYING,R_0013_0008__AND,R_0013_0004__ARE,R_0013_1001____STAR__,R_0013_0002__HOPE] :
-      ( r_0013_0001__Always(R_0013_0001__ALWAYS)
-      &amp; r_0013_0003__you(R_0013_0003__YOU)
-      &amp; r_0013_0005__all(R_0013_0005__ALL)
-      &amp; r_0013_0007__well(R_0013_0007__WELL)
-      &amp; r_0013_0010__safe(R_0013_0010__SAFE)
-      &amp; r_0013_1001____star__(R_0013_1001____STAR__)
-      &amp; r_0013_0002__hope(R_0013_0002__HOPE)
-      &amp; has_arg0(R_0013_0002__HOPE,R_0013_1001____STAR__)
-      &amp; has_arg1(R_0013_0002__HOPE,R_0013_0004__ARE)
-      &amp; r_0013_0004__are(R_0013_0004__ARE)
-      &amp; has_keep_scope(R_0013_0004__ARE,R_0013_0008__AND)
-      &amp; r_0013_0008__and(R_0013_0008__AND)
-      &amp; has_conj2(R_0013_0008__AND,R_0013_0009__STAYING)
-      &amp; r_0013_0009__staying(R_0013_0009__STAYING)
-      &amp; has_prd(R_0013_0009__STAYING,R_0013_0010__SAFE)
-      &amp; has_nim18(R_0013_0009__STAYING,R_0013_0005__ALL)
-      &amp; has_arg0(R_0013_0009__STAYING,R_0013_0003__YOU)
-      &amp; has_conj1(R_0013_0008__AND,R_0013_0006__DOING)
-      &amp; r_0013_0006__doing(R_0013_0006__DOING)
-      &amp; has_nim25(R_0013_0006__DOING,R_0013_0007__WELL)
-      &amp; has_nim18(R_0013_0006__DOING,R_0013_0005__ALL)
-      &amp; has_arg0(R_0013_0006__DOING,R_0013_0003__YOU)
-      &amp; has_nim5(R_0013_0002__HOPE,R_0013_0001__ALWAYS) ) ).
+    ? [R_13_2_HOPE,R_13_1001__STAR_,R_13_1_ALWAYS] :
+      ( _star_(R_13_1001__STAR_)
+      &amp; always(R_13_1_ALWAYS)
+      &amp; hope(R_13_2_HOPE,R_13_1001__STAR_,R_13_4_ARE)
+      &amp; ~ ? [R_13_8_AND,R_13_6_DOING,R_13_7_WELL,R_13_9_STAYING,R_13_3_YOU,R_13_5_ALL,R_13_10_SAFE] :
+            ( well(R_13_7_WELL)
+            &amp; you(R_13_3_YOU)
+            &amp; all(R_13_5_ALL)
+            &amp; safe(R_13_10_SAFE)
+            &amp; and(R_13_8_AND)
+            &amp; conj1(R_13_8_AND,R_13_6_DOING)
+            &amp; doing(R_13_6_DOING,R_13_3_YOU)
+            &amp; nim18(R_13_6_DOING,R_13_5_ALL)
+            &amp; nim25(R_13_6_DOING,R_13_7_WELL)
+            &amp; conj2(R_13_8_AND,R_13_9_STAYING)
+            &amp; staying(R_13_9_STAYING,R_13_3_YOU,R_13_10_SAFE)
+            &amp; nim18(R_13_9_STAYING,R_13_5_ALL) )
+      &amp; nim5(R_13_2_HOPE,R_13_1_ALWAYS) ) ).
 </pre>
 <br><hr><br>
 <svg width="542pt" height="432pt"

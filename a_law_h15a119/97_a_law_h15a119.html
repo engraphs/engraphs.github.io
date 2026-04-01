@@ -518,39 +518,35 @@ arc(r_0097_0029__or, r_0097_0032__an_r_0097_0033__individual, r_0097_0031__of).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0097_0009__CASES,R_0097_0015__PERSONAL,R_0097_0016__INFORMATION,R_0097_0012__THE_R_0097_0013__ACQUISITION,R_0097_0018__URGENTLY,R_0097_0025__LIFE,R_0097_0027__BODY,R_0097_0030__PROPERTY,R_0097_0032__AN_R_0097_0033__INDIVIDUAL,R_0097_0029__OR,R_0097_0021__THE_R_0097_0022__PROTECTION,Z_000_97_A_LAW_H15A119_49,R_0097_0017__IS_R_0097_0019__REQUIRED] :
-      ( r_0097_0009__cases(R_0097_0009__CASES)
-      &amp; r_0097_0015__personal(R_0097_0015__PERSONAL)
-      &amp; r_0097_0018__urgently(R_0097_0018__URGENTLY)
-      &amp; r_0097_0025__life(R_0097_0025__LIFE)
-      &amp; r_0097_0027__body(R_0097_0027__BODY)
-      &amp; r_0097_0030__property(R_0097_0030__PROPERTY)
-      &amp; r_0097_0032__an_r_0097_0033__individual(R_0097_0032__AN_R_0097_0033__INDIVIDUAL)
-      &amp; z_000_97_a_law_h15a119_49(Z_000_97_A_LAW_H15A119_49)
-      &amp; r_0097_0017__is_r_0097_0019__required(R_0097_0017__IS_R_0097_0019__REQUIRED)
-      &amp; has_arg0(R_0097_0017__IS_R_0097_0019__REQUIRED,Z_000_97_A_LAW_H15A119_49)
-      &amp; has_r_0097_0020__for_nim59(R_0097_0017__IS_R_0097_0019__REQUIRED,R_0097_0021__THE_R_0097_0022__PROTECTION)
-      &amp; r_0097_0021__the_r_0097_0022__protection(R_0097_0021__THE_R_0097_0022__PROTECTION)
-      &amp; has_r_0097_0023__of(R_0097_0021__THE_R_0097_0022__PROTECTION,R_0097_0029__OR)
-      &amp; r_0097_0029__or(R_0097_0029__OR)
-      &amp; has_r_0097_0031__of(R_0097_0029__OR,R_0097_0032__AN_R_0097_0033__INDIVIDUAL)
-      &amp; has_conj3(R_0097_0029__OR,R_0097_0030__PROPERTY)
-      &amp; has_conj2(R_0097_0029__OR,R_0097_0027__BODY)
-      &amp; has_conj1(R_0097_0029__OR,R_0097_0025__LIFE)
-      &amp; has_nim51(R_0097_0017__IS_R_0097_0019__REQUIRED,R_0097_0018__URGENTLY)
-      &amp; has_arg1(R_0097_0017__IS_R_0097_0019__REQUIRED,R_0097_0012__THE_R_0097_0013__ACQUISITION)
-      &amp; r_0097_0012__the_r_0097_0013__acquisition(R_0097_0012__THE_R_0097_0013__ACQUISITION)
-      &amp; has_r_0097_0014__of(R_0097_0012__THE_R_0097_0013__ACQUISITION,R_0097_0016__INFORMATION)
-      &amp; r_0097_0016__information(R_0097_0016__INFORMATION)
-      &amp; has_attrib41(R_0097_0016__INFORMATION,R_0097_0015__PERSONAL)
-      &amp; has_r_0097_0010__in_nim29(R_0097_0017__IS_R_0097_0019__REQUIRED,R_0097_0009__CASES)
-      &amp; ~ ? [R_0097_0001__HOWEVER,R_0097_0003__THIS_R_0097_0004__PROVISION,R_0097_0005__SHALL_R_0097_0007__APPLY] :
-            ( r_0097_0001__However(R_0097_0001__HOWEVER)
-            &amp; r_0097_0003__this_r_0097_0004__provision(R_0097_0003__THIS_R_0097_0004__PROVISION)
-            &amp; r_0097_0005__shall_r_0097_0007__apply(R_0097_0005__SHALL_R_0097_0007__APPLY)
-            &amp; has_r_0097_0008__in_nim22(R_0097_0005__SHALL_R_0097_0007__APPLY,R_0097_0009__CASES)
-            &amp; has_arg0(R_0097_0005__SHALL_R_0097_0007__APPLY,R_0097_0003__THIS_R_0097_0004__PROVISION)
-            &amp; has_nim2(R_0097_0005__SHALL_R_0097_0007__APPLY,R_0097_0001__HOWEVER) ) ) ).
+    ? [R_97_17_IS_REQUIRED,Z_97_A_LAW_H15A119_49,R_97_12_THE_ACQUISITION,R_97_16_INFORMATION,R_97_15_PERSONAL,R_97_18_URGENTLY,R_97_9_CASES,R_97_21_THE_PROTECTION,R_97_29_OR,R_97_25_LIFE,R_97_27_BODY,R_97_30_PROPERTY,R_97_32_AN_INDIVIDUAL] :
+      ( personal(R_97_15_PERSONAL)
+      &amp; urgently(R_97_18_URGENTLY)
+      &amp; cases(R_97_9_CASES)
+      &amp; life(R_97_25_LIFE)
+      &amp; body(R_97_27_BODY)
+      &amp; property(R_97_30_PROPERTY)
+      &amp; an_individual(R_97_32_AN_INDIVIDUAL)
+      &amp; ~ ? [R_97_5_SHALL_APPLY,R_97_3_THIS_PROVISION,R_97_1_HOWEVER] :
+            ( this_provision(R_97_3_THIS_PROVISION)
+            &amp; however(R_97_1_HOWEVER)
+            &amp; shall_apply(R_97_5_SHALL_APPLY,R_97_3_THIS_PROVISION)
+            &amp; nim2(R_97_5_SHALL_APPLY,R_97_1_HOWEVER)
+            &amp; in_nim22(R_97_5_SHALL_APPLY,R_97_9_CASES) )
+      &amp; is_required(R_97_17_IS_REQUIRED,Z_97_A_LAW_H15A119_49,R_97_12_THE_ACQUISITION)
+      &amp; the_acquisition(R_97_12_THE_ACQUISITION)
+      &amp; of(R_97_12_THE_ACQUISITION,R_97_16_INFORMATION)
+      &amp; information(R_97_16_INFORMATION)
+      &amp; attrib41(R_97_16_INFORMATION,R_97_15_PERSONAL)
+      &amp; nim51(R_97_17_IS_REQUIRED,R_97_18_URGENTLY)
+      &amp; in_nim29(R_97_17_IS_REQUIRED,R_97_9_CASES)
+      &amp; for_nim59(R_97_17_IS_REQUIRED,R_97_21_THE_PROTECTION)
+      &amp; the_protection(R_97_21_THE_PROTECTION)
+      &amp; of(R_97_21_THE_PROTECTION,R_97_29_OR)
+      &amp; or(R_97_29_OR)
+      &amp; conj1(R_97_29_OR,R_97_25_LIFE)
+      &amp; conj2(R_97_29_OR,R_97_27_BODY)
+      &amp; conj3(R_97_29_OR,R_97_30_PROPERTY)
+      &amp; of(R_97_29_OR,R_97_32_AN_INDIVIDUAL) ) ).
 </pre>
 <br><hr><br>
 <svg width="1534pt" height="658pt"

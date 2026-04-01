@@ -450,32 +450,26 @@ arc(r_0002_0023__hurt, z_000_2_a_voice_of_america_66, arg0).
 </svg>
 <pre>
 fof(formula,axiom,
-    ~ ? [R_0002_0004__IMMEDIATELY,R_0002_0005__CLEAR,R_0002_0021__ANYONE,Z_000_2_A_VOICE_OF_AMERICA_66,R_0002_0020__IF_R_0002_0022__WAS_R_0002_0023__HURT,R_0002_0019__OR,R_0002_0002__WAS] :
-        ( r_0002_0004__immediately(R_0002_0004__IMMEDIATELY)
-        &amp; r_0002_0005__clear(R_0002_0005__CLEAR)
-        &amp; r_0002_0021__anyone(R_0002_0021__ANYONE)
-        &amp; z_000_2_a_voice_of_america_66(Z_000_2_A_VOICE_OF_AMERICA_66)
-        &amp; r_0002_0002__was(R_0002_0002__WAS)
-        &amp; has_arg0(R_0002_0002__WAS,R_0002_0019__OR)
-        &amp; r_0002_0019__or(R_0002_0019__OR)
-        &amp; has_conj2(R_0002_0019__OR,R_0002_0020__IF_R_0002_0022__WAS_R_0002_0023__HURT)
-        &amp; r_0002_0020__if_r_0002_0022__was_r_0002_0023__hurt(R_0002_0020__IF_R_0002_0022__WAS_R_0002_0023__HURT)
-        &amp; has_arg0(R_0002_0020__IF_R_0002_0022__WAS_R_0002_0023__HURT,Z_000_2_A_VOICE_OF_AMERICA_66)
-        &amp; has_arg1(R_0002_0020__IF_R_0002_0022__WAS_R_0002_0023__HURT,R_0002_0021__ANYONE)
-        &amp; ! [R_0002_0018__OCCURRED,R_0002_0016__THE_R_0002_0017__ATTACK] :
-            ( ( r_0002_0016__the_r_0002_0017__attack(R_0002_0016__THE_R_0002_0017__ATTACK)
-              &amp; r_0002_0018__occurred(R_0002_0018__OCCURRED)
-              &amp; has_arg0(R_0002_0018__OCCURRED,R_0002_0016__THE_R_0002_0017__ATTACK) )
-           =&gt; ? [R_0002_0007__THE_R_0002_0008__PRESIDENT,R_0002_0014__MOGADISHU,R_0002_0011__THE_R_0002_0012__PALACE,R_0002_0006__IF_R_0002_0009__WAS] :
-                ( r_0002_0007__the_r_0002_0008__president(R_0002_0007__THE_R_0002_0008__PRESIDENT)
-                &amp; r_0002_0014__Mogadishu(R_0002_0014__MOGADISHU)
-                &amp; r_0002_0006__if_r_0002_0009__was(R_0002_0006__IF_R_0002_0009__WAS)
-                &amp; has_r_0002_0010__in_clr32(R_0002_0006__IF_R_0002_0009__WAS,R_0002_0011__THE_R_0002_0012__PALACE)
-                &amp; r_0002_0011__the_r_0002_0012__palace(R_0002_0011__THE_R_0002_0012__PALACE)
-                &amp; has_r_0002_0013__in(R_0002_0011__THE_R_0002_0012__PALACE,R_0002_0014__MOGADISHU)
-                &amp; has_arg0(R_0002_0006__IF_R_0002_0009__WAS,R_0002_0007__THE_R_0002_0008__PRESIDENT) ) )
-        &amp; has_prd(R_0002_0002__WAS,R_0002_0005__CLEAR)
-        &amp; has_nim10(R_0002_0002__WAS,R_0002_0004__IMMEDIATELY) ) ).
+    ~ ? [R_2_2_WAS,R_2_19_OR,R_2_20_IF_WAS_HURT,Z_2_A_VOICE_OF_AMERICA_66,R_2_21_ANYONE,R_2_4_IMMEDIATELY,R_2_5_CLEAR] :
+        ( anyone(R_2_21_ANYONE)
+        &amp; immediately(R_2_4_IMMEDIATELY)
+        &amp; clear(R_2_5_CLEAR)
+        &amp; was(R_2_2_WAS,R_2_19_OR,R_2_5_CLEAR)
+        &amp; ! [R_2_18_OCCURRED,R_2_16_THE_ATTACK] :
+            ( ( the_attack(R_2_16_THE_ATTACK)
+              &amp; occurred(R_2_18_OCCURRED,R_2_16_THE_ATTACK) )
+           =&gt; ? [R_2_6_IF_WAS,R_2_7_THE_PRESIDENT,R_2_11_THE_PALACE,R_2_14_MOGADISHU] :
+                ( the_president(R_2_7_THE_PRESIDENT)
+                &amp; mogadishu(R_2_14_MOGADISHU)
+                &amp; if_was(R_2_6_IF_WAS,R_2_7_THE_PRESIDENT)
+                &amp; in_clr32(R_2_6_IF_WAS,R_2_11_THE_PALACE)
+                &amp; the_palace(R_2_11_THE_PALACE)
+                &amp; in(R_2_11_THE_PALACE,R_2_14_MOGADISHU) ) )
+        &amp; conj1(CONJ1)
+        &amp; or(R_2_19_OR)
+        &amp; conj2(R_2_19_OR,R_2_20_IF_WAS_HURT)
+        &amp; if_was_hurt(R_2_20_IF_WAS_HURT,Z_2_A_VOICE_OF_AMERICA_66,R_2_21_ANYONE)
+        &amp; nim10(R_2_2_WAS,R_2_4_IMMEDIATELY) ) ).
 </pre>
 <br><hr><br>
 <svg width="1128pt" height="478pt"

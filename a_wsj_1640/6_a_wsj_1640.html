@@ -275,19 +275,12 @@ arc(r_0006_0014__transmitted, z_000_6_a_wsj_1640_40, arg0).
 </svg>
 <pre>
 fof(formula,axiom,
-    ! [R_0006_0013__IS_R_0006_0014__TRANSMITTED,R_0006_0001__ANY_R_0006_0002__SECRET,R_0006_0016__THE_R_0006_0017__AIR,Z_000_6_A_WSJ_1640_40] :
-      ( ( r_0006_0001__Any_r_0006_0002__secret(R_0006_0001__ANY_R_0006_0002__SECRET)
-        &amp; r_0006_0016__the_r_0006_0017__air(R_0006_0016__THE_R_0006_0017__AIR)
-        &amp; z_000_6_a_wsj_1640_40(Z_000_6_A_WSJ_1640_40)
-        &amp; r_0006_0013__is_r_0006_0014__transmitted(R_0006_0013__IS_R_0006_0014__TRANSMITTED)
-        &amp; has_arg0(R_0006_0013__IS_R_0006_0014__TRANSMITTED,Z_000_6_A_WSJ_1640_40)
-        &amp; has_r_0006_0015__over_nim47(R_0006_0013__IS_R_0006_0014__TRANSMITTED,R_0006_0016__THE_R_0006_0017__AIR)
-        &amp; has_arg1(R_0006_0013__IS_R_0006_0014__TRANSMITTED,R_0006_0001__ANY_R_0006_0002__SECRET) )
-     =&gt; ? [Z_000_6_A_WSJ_1640_13,R_0006_0003__CAN_R_0006_0004__BE_R_0006_0005__PIRATED] :
-          ( z_000_6_a_wsj_1640_13(Z_000_6_A_WSJ_1640_13)
-          &amp; r_0006_0003__can_r_0006_0004__be_r_0006_0005__pirated(R_0006_0003__CAN_R_0006_0004__BE_R_0006_0005__PIRATED)
-          &amp; has_arg0(R_0006_0003__CAN_R_0006_0004__BE_R_0006_0005__PIRATED,Z_000_6_A_WSJ_1640_13)
-          &amp; has_arg1(R_0006_0003__CAN_R_0006_0004__BE_R_0006_0005__PIRATED,R_0006_0001__ANY_R_0006_0002__SECRET) ) ) ).
+    ! [R_6_13_IS_TRANSMITTED,Z_6_A_WSJ_1640_40,R_6_1_ANY_SECRET,R_6_16_THE_AIR] :
+      ( ( any_secret(R_6_1_ANY_SECRET)
+        &amp; the_air(R_6_16_THE_AIR)
+        &amp; is_transmitted(R_6_13_IS_TRANSMITTED,Z_6_A_WSJ_1640_40,R_6_1_ANY_SECRET)
+        &amp; over_nim47(R_6_13_IS_TRANSMITTED,R_6_16_THE_AIR) )
+     =&gt; ? [R_6_3_CAN_BE_PIRATED,Z_6_A_WSJ_1640_13] : can_be_pirated(R_6_3_CAN_BE_PIRATED,Z_6_A_WSJ_1640_13,R_6_1_ANY_SECRET) ) ).
 </pre>
 <br><hr><br>
 <svg width="781pt" height="342pt"

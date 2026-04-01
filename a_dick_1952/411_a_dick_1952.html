@@ -332,25 +332,18 @@ arc(r_0411_0011__that_r_0411_0014__was, r_0411_1001____star__, prd).
 </svg>
 <pre>
 fof(formula,axiom,
-    ! [R_0411_0010__SAW,R_0411_0001__I,R_0411_0012__THE_R_0411_0013__GUN,R_0411_1001____STAR__,R_0411_0011__THAT_R_0411_0014__WAS] :
-      ( ( r_0411_0001__I(R_0411_0001__I)
-        &amp; r_0411_0012__the_r_0411_0013__gun(R_0411_0012__THE_R_0411_0013__GUN)
-        &amp; r_0411_1001____star__(R_0411_1001____STAR__)
-        &amp; r_0411_0010__saw(R_0411_0010__SAW)
-        &amp; has_arg1(R_0411_0010__SAW,R_0411_0011__THAT_R_0411_0014__WAS)
-        &amp; r_0411_0011__that_r_0411_0014__was(R_0411_0011__THAT_R_0411_0014__WAS)
-        &amp; has_prd(R_0411_0011__THAT_R_0411_0014__WAS,R_0411_1001____STAR__)
-        &amp; has_arg0(R_0411_0011__THAT_R_0411_0014__WAS,R_0411_0012__THE_R_0411_0013__GUN)
-        &amp; has_arg0(R_0411_0010__SAW,R_0411_0001__I) )
-     =&gt; ? [R_0411_0005__THIS,R_0411_0003__SOMETHING,R_0411_0006__MIGHT_R_0411_0007__HAPPEN,R_0411_0002__THOUGHT] :
-          ( r_0411_0005__this(R_0411_0005__THIS)
-          &amp; r_0411_0002__thought(R_0411_0002__THOUGHT)
-          &amp; has_arg1(R_0411_0002__THOUGHT,R_0411_0006__MIGHT_R_0411_0007__HAPPEN)
-          &amp; r_0411_0006__might_r_0411_0007__happen(R_0411_0006__MIGHT_R_0411_0007__HAPPEN)
-          &amp; has_arg0(R_0411_0006__MIGHT_R_0411_0007__HAPPEN,R_0411_0003__SOMETHING)
-          &amp; r_0411_0003__something(R_0411_0003__SOMETHING)
-          &amp; has_r_0411_0004__like(R_0411_0003__SOMETHING,R_0411_0005__THIS)
-          &amp; has_arg0(R_0411_0002__THOUGHT,R_0411_0001__I) ) ) ).
+    ! [R_411_10_SAW,R_411_1_I,R_411_11_THAT_WAS,R_411_12_THE_GUN,R_411_1001__STAR_] :
+      ( ( i(R_411_1_I)
+        &amp; the_gun(R_411_12_THE_GUN)
+        &amp; _star_(R_411_1001__STAR_)
+        &amp; saw(R_411_10_SAW,R_411_1_I,R_411_11_THAT_WAS)
+        &amp; that_was(R_411_11_THAT_WAS,R_411_12_THE_GUN,R_411_1001__STAR_) )
+     =&gt; ? [R_411_2_THOUGHT,R_411_6_MIGHT_HAPPEN,R_411_3_SOMETHING,R_411_5_THIS] :
+          ( this(R_411_5_THIS)
+          &amp; thought(R_411_2_THOUGHT,R_411_1_I,R_411_6_MIGHT_HAPPEN)
+          &amp; might_happen(R_411_6_MIGHT_HAPPEN,R_411_3_SOMETHING)
+          &amp; something(R_411_3_SOMETHING)
+          &amp; like(R_411_3_SOMETHING,R_411_5_THIS) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="796pt" height="342pt"

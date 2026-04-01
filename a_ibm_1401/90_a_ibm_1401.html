@@ -316,24 +316,20 @@ arc(z_000_90_a_ibm_1401_25, r_0090_0012__them, r_0090_0011__of).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0090_0001__YOUR,R_0090_0002__IBM_R_0090_0003__SALES_R_0090_0004__REPRESENTATIVE,R_0090_0007__PLEASED,R_0090_0005__WILL_R_0090_0006__BE] :
-      ( r_0090_0001__Your(R_0090_0001__YOUR)
-      &amp; r_0090_0005__will_r_0090_0006__be(R_0090_0005__WILL_R_0090_0006__BE)
-      &amp; has_prd(R_0090_0005__WILL_R_0090_0006__BE,R_0090_0007__PLEASED)
-      &amp; r_0090_0007__pleased(R_0090_0007__PLEASED)
-      &amp; ! [Z_000_90_A_IBM_1401_25,R_0090_0012__THEM] :
-          ( ( r_0090_0012__them(R_0090_0012__THEM)
-            &amp; z_000_90_a_ibm_1401_25(Z_000_90_A_IBM_1401_25)
-            &amp; has_r_0090_0011__of(Z_000_90_A_IBM_1401_25,R_0090_0012__THEM) )
-         =&gt; ? [Z_000_90_A_IBM_1401_20,R_0090_0008__TO_R_0090_0009__DISCUSS] :
-              ( z_000_90_a_ibm_1401_20(Z_000_90_A_IBM_1401_20)
-              &amp; r_0090_0008__to_r_0090_0009__discuss(R_0090_0008__TO_R_0090_0009__DISCUSS)
-              &amp; has_arg1(R_0090_0008__TO_R_0090_0009__DISCUSS,Z_000_90_A_IBM_1401_25)
-              &amp; has_arg0(R_0090_0008__TO_R_0090_0009__DISCUSS,Z_000_90_A_IBM_1401_20)
-              &amp; has_r_0090_0013__with_nim37(R_0090_0008__TO_R_0090_0009__DISCUSS,R_0090_0001__YOUR) ) )
-      &amp; has_arg0(R_0090_0005__WILL_R_0090_0006__BE,R_0090_0002__IBM_R_0090_0003__SALES_R_0090_0004__REPRESENTATIVE)
-      &amp; r_0090_0002__IBM_r_0090_0003__Sales_r_0090_0004__Representative(R_0090_0002__IBM_R_0090_0003__SALES_R_0090_0004__REPRESENTATIVE)
-      &amp; has_gen(R_0090_0002__IBM_R_0090_0003__SALES_R_0090_0004__REPRESENTATIVE,R_0090_0001__YOUR) ) ).
+    ? [R_90_5_WILL_BE,R_90_2_IBM_SALES_REPRESENTATIVE,R_90_1_YOUR,R_90_7_PLEASED] :
+      ( your(R_90_1_YOUR)
+      &amp; will_be(R_90_5_WILL_BE,R_90_2_IBM_SALES_REPRESENTATIVE,R_90_7_PLEASED)
+      &amp; iBM_Sales_Representative(R_90_2_IBM_SALES_REPRESENTATIVE)
+      &amp; gen(R_90_2_IBM_SALES_REPRESENTATIVE,R_90_1_YOUR)
+      &amp; ! [Z_90_A_IBM_1401_25,R_90_12_THEM] :
+          ( ( them(R_90_12_THEM)
+            &amp; z_90_a_ibm_1401_25(Z_90_A_IBM_1401_25)
+            &amp; of(Z_90_A_IBM_1401_25,R_90_12_THEM) )
+         =&gt; ? [R_90_8_TO_DISCUSS,Z_90_A_IBM_1401_20] :
+              ( to_discuss(R_90_8_TO_DISCUSS,Z_90_A_IBM_1401_20,Z_90_A_IBM_1401_25)
+              &amp; with_nim37(R_90_8_TO_DISCUSS,R_90_1_YOUR) ) )
+      &amp; emb20(EMB20)
+      &amp; pleased(R_90_7_PLEASED) ) ).
 </pre>
 <br><hr><br>
 <svg width="682pt" height="387pt"

@@ -414,32 +414,28 @@ arc(r_0026_0017__all_quant, r_0026_0018__the_r_0026_0019__trees, restriction).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0026_0001__THE_R_0026_0002__SNOW,R_0026_0004__UP,R_0026_0005__THE_R_0026_0006__GRASS,R_0026_0009__GREAT,R_0026_0010__WHITE,R_0026_0011__CLOAK,R_0026_0003__COVERED,R_0026_0013__AND] :
-      ( r_0026_0001__The_r_0026_0002__Snow(R_0026_0001__THE_R_0026_0002__SNOW)
-      &amp; r_0026_0004__up(R_0026_0004__UP)
-      &amp; r_0026_0005__the_r_0026_0006__grass(R_0026_0005__THE_R_0026_0006__GRASS)
-      &amp; r_0026_0009__great(R_0026_0009__GREAT)
-      &amp; r_0026_0010__white(R_0026_0010__WHITE)
-      &amp; r_0026_0013__and(R_0026_0013__AND)
-      &amp; ! [R_0026_0018__THE_R_0026_0019__TREES] :
-          ( r_0026_0018__the_r_0026_0019__trees(R_0026_0018__THE_R_0026_0019__TREES)
-         =&gt; ? [R_0026_0014__THE_R_0026_0015__FROST,R_0026_0020__SILVER,R_0026_0016__PAINTED] :
-              ( r_0026_0014__the_r_0026_0015__Frost(R_0026_0014__THE_R_0026_0015__FROST)
-              &amp; r_0026_0020__silver(R_0026_0020__SILVER)
-              &amp; r_0026_0016__painted(R_0026_0016__PAINTED)
-              &amp; has_prd(R_0026_0016__PAINTED,R_0026_0020__SILVER)
-              &amp; has_arg1(R_0026_0016__PAINTED,R_0026_0018__THE_R_0026_0019__TREES)
-              &amp; has_arg0(R_0026_0016__PAINTED,R_0026_0014__THE_R_0026_0015__FROST) ) )
-      &amp; has_conj1(R_0026_0013__AND,R_0026_0003__COVERED)
-      &amp; r_0026_0003__covered(R_0026_0003__COVERED)
-      &amp; has_r_0026_0007__with_nim22(R_0026_0003__COVERED,R_0026_0011__CLOAK)
-      &amp; r_0026_0011__cloak(R_0026_0011__CLOAK)
-      &amp; has_attrib29(R_0026_0011__CLOAK,R_0026_0010__WHITE)
-      &amp; has_attrib26(R_0026_0011__CLOAK,R_0026_0009__GREAT)
-      &amp; has_gen(R_0026_0011__CLOAK,R_0026_0001__THE_R_0026_0002__SNOW)
-      &amp; has_arg1(R_0026_0003__COVERED,R_0026_0005__THE_R_0026_0006__GRASS)
-      &amp; has_nim11(R_0026_0003__COVERED,R_0026_0004__UP)
-      &amp; has_arg0(R_0026_0003__COVERED,R_0026_0001__THE_R_0026_0002__SNOW) ) ).
+    ? [R_26_13_AND,R_26_3_COVERED,R_26_5_THE_GRASS,R_26_4_UP,R_26_11_CLOAK,R_26_9_GREAT,R_26_10_WHITE,R_26_1_THE_SNOW] :
+      ( the_grass(R_26_5_THE_GRASS)
+      &amp; up(R_26_4_UP)
+      &amp; great(R_26_9_GREAT)
+      &amp; white(R_26_10_WHITE)
+      &amp; the_Snow(R_26_1_THE_SNOW)
+      &amp; ! [R_26_18_THE_TREES] :
+          ( the_trees(R_26_18_THE_TREES)
+         =&gt; ? [R_26_16_PAINTED,R_26_14_THE_FROST,R_26_20_SILVER] :
+              ( the_Frost(R_26_14_THE_FROST)
+              &amp; silver(R_26_20_SILVER)
+              &amp; painted(R_26_16_PAINTED,R_26_14_THE_FROST,R_26_18_THE_TREES,R_26_20_SILVER) ) )
+      &amp; conj2(CONJ2)
+      &amp; and(R_26_13_AND)
+      &amp; conj1(R_26_13_AND,R_26_3_COVERED)
+      &amp; covered(R_26_3_COVERED,R_26_1_THE_SNOW,R_26_5_THE_GRASS)
+      &amp; nim11(R_26_3_COVERED,R_26_4_UP)
+      &amp; with_nim22(R_26_3_COVERED,R_26_11_CLOAK)
+      &amp; cloak(R_26_11_CLOAK)
+      &amp; attrib26(R_26_11_CLOAK,R_26_9_GREAT)
+      &amp; attrib29(R_26_11_CLOAK,R_26_10_WHITE)
+      &amp; gen(R_26_11_CLOAK,R_26_1_THE_SNOW) ) ).
 </pre>
 <br><hr><br>
 <svg width="875pt" height="342pt"

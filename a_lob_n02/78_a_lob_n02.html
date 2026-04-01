@@ -566,41 +566,31 @@ arc(z_000_78_a_lob_n02_76, r_0078_0027__confidential, attrib77).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0078_0001__SHE,R_0078_0002__WAVERED,UTTERANCE_78_A_LOB_N02_27,R_0078_0005__AT_LAST,R_0078_0007__SLOWLY,R_0078_0006__SAID,R_0078_0004__AND] :
-      ( r_0078_0001__She(R_0078_0001__SHE)
-      &amp; r_0078_0005__at_last(R_0078_0005__AT_LAST)
-      &amp; r_0078_0007__slowly(R_0078_0007__SLOWLY)
-      &amp; r_0078_0004__and(R_0078_0004__AND)
-      &amp; has_conj2(R_0078_0004__AND,R_0078_0006__SAID)
-      &amp; r_0078_0006__said(R_0078_0006__SAID)
-      &amp; has_nim20(R_0078_0006__SAID,R_0078_0007__SLOWLY)
-      &amp; has_nim15(R_0078_0006__SAID,R_0078_0005__AT_LAST)
-      &amp; has_arg0(R_0078_0006__SAID,R_0078_0001__SHE)
-      &amp; has_arg1(R_0078_0006__SAID,UTTERANCE_78_A_LOB_N02_27)
+    ? [R_78_4_AND,R_78_2_WAVERED,R_78_6_SAID,R_78_1_SHE,UTTERANCE_78_A_LOB_N02_27,R_78_5_AT_LAST,R_78_7_SLOWLY] :
+      ( she(R_78_1_SHE)
+      &amp; at_last(R_78_5_AT_LAST)
+      &amp; slowly(R_78_7_SLOWLY)
+      &amp; and(R_78_4_AND)
+      &amp; conj1(R_78_4_AND,R_78_2_WAVERED)
+      &amp; wavered(R_78_2_WAVERED,R_78_1_SHE)
+      &amp; conj2(R_78_4_AND,R_78_6_SAID)
+      &amp; said(R_78_6_SAID,R_78_1_SHE,UTTERANCE_78_A_LOB_N02_27)
+      &amp; ! [R_78_12_MUST_DRAG,R_78_11_YOU,R_78_14_THE_TRUTH] :
+          ( ( you(R_78_11_YOU)
+            &amp; the_truth(R_78_14_THE_TRUTH)
+            &amp; must_drag(R_78_12_MUST_DRAG,R_78_11_YOU,R_78_14_THE_TRUTH)
+            &amp; out_of_clr49(R_78_12_MUST_DRAG,R_78_1_SHE) )
+         =&gt; ? [R_78_20_MUST_ASK,R_78_23_TO_REGARD,Z_78_A_LOB_N02_76,R_78_27_CONFIDENTIAL,R_78_22_YOU] :
+              ( confidential(R_78_27_CONFIDENTIAL)
+              &amp; you(R_78_22_YOU)
+              &amp; must_ask(R_78_20_MUST_ASK,R_78_1_SHE,R_78_23_TO_REGARD,R_78_22_YOU)
+              &amp; to_regard(R_78_23_TO_REGARD,R_78_22_YOU,R_78_14_THE_TRUTH,Z_78_A_LOB_N02_76)
+              &amp; z_78_a_lob_n02_76(Z_78_A_LOB_N02_76)
+              &amp; attrib77(Z_78_A_LOB_N02_76,R_78_27_CONFIDENTIAL) ) )
+      &amp; part1(PART1)
       &amp; utterance_78_a_lob_n02_27(UTTERANCE_78_A_LOB_N02_27)
-      &amp; ! [R_0078_0012__MUST_R_0078_0013__DRAG,R_0078_0011__YOU,R_0078_0014__THE_R_0078_0015__TRUTH] :
-          ( ( r_0078_0011__you(R_0078_0011__YOU)
-            &amp; r_0078_0014__the_r_0078_0015__truth(R_0078_0014__THE_R_0078_0015__TRUTH)
-            &amp; r_0078_0012__must_r_0078_0013__drag(R_0078_0012__MUST_R_0078_0013__DRAG)
-            &amp; has_arg1(R_0078_0012__MUST_R_0078_0013__DRAG,R_0078_0014__THE_R_0078_0015__TRUTH)
-            &amp; has_arg0(R_0078_0012__MUST_R_0078_0013__DRAG,R_0078_0011__YOU)
-            &amp; has_r_0078_0016__out_of_clr49(R_0078_0012__MUST_R_0078_0013__DRAG,R_0078_0001__SHE) )
-         =&gt; ? [R_0078_0022__YOU,R_0078_0027__CONFIDENTIAL,Z_000_78_A_LOB_N02_76,R_0078_0023__TO_R_0078_0024__REGARD,R_0078_0020__MUST_R_0078_0021__ASK] :
-              ( r_0078_0022__you(R_0078_0022__YOU)
-              &amp; r_0078_0027__confidential(R_0078_0027__CONFIDENTIAL)
-              &amp; r_0078_0020__must_r_0078_0021__ask(R_0078_0020__MUST_R_0078_0021__ASK)
-              &amp; has_arg1(R_0078_0020__MUST_R_0078_0021__ASK,R_0078_0023__TO_R_0078_0024__REGARD)
-              &amp; r_0078_0023__to_r_0078_0024__regard(R_0078_0023__TO_R_0078_0024__REGARD)
-              &amp; has_prd(R_0078_0023__TO_R_0078_0024__REGARD,Z_000_78_A_LOB_N02_76)
-              &amp; z_000_78_a_lob_n02_76(Z_000_78_A_LOB_N02_76)
-              &amp; has_attrib77(Z_000_78_A_LOB_N02_76,R_0078_0027__CONFIDENTIAL)
-              &amp; has_arg0(R_0078_0023__TO_R_0078_0024__REGARD,R_0078_0022__YOU)
-              &amp; has_arg1(R_0078_0023__TO_R_0078_0024__REGARD,R_0078_0014__THE_R_0078_0015__TRUTH)
-              &amp; has_arg2(R_0078_0020__MUST_R_0078_0021__ASK,R_0078_0022__YOU)
-              &amp; has_arg0(R_0078_0020__MUST_R_0078_0021__ASK,R_0078_0001__SHE) ) )
-      &amp; has_conj1(R_0078_0004__AND,R_0078_0002__WAVERED)
-      &amp; r_0078_0002__wavered(R_0078_0002__WAVERED)
-      &amp; has_arg0(R_0078_0002__WAVERED,R_0078_0001__SHE) ) ).
+      &amp; nim15(R_78_6_SAID,R_78_5_AT_LAST)
+      &amp; nim20(R_78_6_SAID,R_78_7_SLOWLY) ) ).
 </pre>
 <br><hr><br>
 <svg width="1193pt" height="568pt"

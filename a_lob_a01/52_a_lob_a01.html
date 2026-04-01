@@ -251,21 +251,17 @@ arc(r_0052_0012__post, r_0052_0003__he, gen).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0052_0001__HE,R_0052_0003__HE,R_0052_0007__OUTSTANDING,R_0052_0008__SERVICE,R_0052_0012__POST,R_0052_0004__WOULD_R_0052_0005__PERFORM,R_0052_0002__BELIEVED] :
-      ( r_0052_0001__He(R_0052_0001__HE)
-      &amp; r_0052_0003__he(R_0052_0003__HE)
-      &amp; r_0052_0007__outstanding(R_0052_0007__OUTSTANDING)
-      &amp; r_0052_0002__believed(R_0052_0002__BELIEVED)
-      &amp; has_arg1(R_0052_0002__BELIEVED,R_0052_0004__WOULD_R_0052_0005__PERFORM)
-      &amp; r_0052_0004__would_r_0052_0005__perform(R_0052_0004__WOULD_R_0052_0005__PERFORM)
-      &amp; has_r_0052_0010__in_nim30(R_0052_0004__WOULD_R_0052_0005__PERFORM,R_0052_0012__POST)
-      &amp; r_0052_0012__post(R_0052_0012__POST)
-      &amp; has_gen(R_0052_0012__POST,R_0052_0003__HE)
-      &amp; has_arg1(R_0052_0004__WOULD_R_0052_0005__PERFORM,R_0052_0008__SERVICE)
-      &amp; r_0052_0008__service(R_0052_0008__SERVICE)
-      &amp; has_attrib20(R_0052_0008__SERVICE,R_0052_0007__OUTSTANDING)
-      &amp; has_arg0(R_0052_0004__WOULD_R_0052_0005__PERFORM,R_0052_0003__HE)
-      &amp; has_arg0(R_0052_0002__BELIEVED,R_0052_0001__HE) ) ).
+    ? [R_52_2_BELIEVED,R_52_1_HE,R_52_4_WOULD_PERFORM,R_52_8_SERVICE,R_52_7_OUTSTANDING,R_52_12_POST,R_52_3_HE] :
+      ( he(R_52_1_HE)
+      &amp; outstanding(R_52_7_OUTSTANDING)
+      &amp; he(R_52_3_HE)
+      &amp; believed(R_52_2_BELIEVED,R_52_1_HE,R_52_4_WOULD_PERFORM)
+      &amp; would_perform(R_52_4_WOULD_PERFORM,R_52_3_HE,R_52_8_SERVICE)
+      &amp; service(R_52_8_SERVICE)
+      &amp; attrib20(R_52_8_SERVICE,R_52_7_OUTSTANDING)
+      &amp; in_nim30(R_52_4_WOULD_PERFORM,R_52_12_POST)
+      &amp; post(R_52_12_POST)
+      &amp; gen(R_52_12_POST,R_52_3_HE) ) ).
 </pre>
 <br><hr><br>
 <svg width="645pt" height="387pt"

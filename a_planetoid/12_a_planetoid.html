@@ -601,42 +601,34 @@ arc(r_0012_0031__become, r_0012_0032__mutants, prd).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0012_0011__SINCE,R_0012_0004__ONLY,R_0012_0005__ONE_R_0012_0006__LIFE_R_0012_0008__FORM,R_0012_0013__THE_R_0012_0014__RAIDER,R_0012_0015__ABDUCTING] :
-      ( r_0012_0004__only(R_0012_0004__ONLY)
-      &amp; r_0012_0013__the_r_0012_0014__raider(R_0012_0013__THE_R_0012_0014__RAIDER)
-      &amp; r_0012_0015__abducting(R_0012_0015__ABDUCTING)
-      &amp; has_arg0(R_0012_0015__ABDUCTING,R_0012_0013__THE_R_0012_0014__RAIDER)
-      &amp; has_arg1(R_0012_0015__ABDUCTING,R_0012_0005__ONE_R_0012_0006__LIFE_R_0012_0008__FORM)
-      &amp; r_0012_0005__one_r_0012_0006__life_r_0012_0008__form(R_0012_0005__ONE_R_0012_0006__LIFE_R_0012_0008__FORM)
-      &amp; has_qual11(R_0012_0005__ONE_R_0012_0006__LIFE_R_0012_0008__FORM,R_0012_0004__ONLY)
-      &amp; r_0012_0011__since(R_0012_0011__SINCE)
-      &amp; ! [R_0012_0017__REACHES,R_0012_0021__THE_R_0012_0022__SCREEN,R_0012_0018__THE_R_0012_0019__TOP] :
-          ( ( r_0012_0021__the_r_0012_0022__screen(R_0012_0021__THE_R_0012_0022__SCREEN)
-            &amp; r_0012_0017__reaches(R_0012_0017__REACHES)
-            &amp; has_arg1(R_0012_0017__REACHES,R_0012_0018__THE_R_0012_0019__TOP)
-            &amp; r_0012_0018__the_r_0012_0019__top(R_0012_0018__THE_R_0012_0019__TOP)
-            &amp; has_r_0012_0020__of(R_0012_0018__THE_R_0012_0019__TOP,R_0012_0021__THE_R_0012_0022__SCREEN)
-            &amp; has_arg0(R_0012_0017__REACHES,R_0012_0013__THE_R_0012_0014__RAIDER) )
-         =&gt; ? [R_0012_0023__THE_R_0012_0024__PLANETOID,R_0012_0025__EXPLODES,R_0012_0027__AND] :
-              ( r_0012_0023__the_r_0012_0024__planetoid(R_0012_0023__THE_R_0012_0024__PLANETOID)
-              &amp; r_0012_0027__and(R_0012_0027__AND)
-              &amp; ! [R_0012_0029__THE_R_0012_0030__RAIDERS] :
-                  ( r_0012_0029__the_r_0012_0030__raiders(R_0012_0029__THE_R_0012_0030__RAIDERS)
-                 =&gt; ? [R_0012_0032__MUTANTS,R_0012_0031__BECOME] :
-                      ( r_0012_0032__mutants(R_0012_0032__MUTANTS)
-                      &amp; r_0012_0031__become(R_0012_0031__BECOME)
-                      &amp; has_prd(R_0012_0031__BECOME,R_0012_0032__MUTANTS)
-                      &amp; has_arg0(R_0012_0031__BECOME,R_0012_0029__THE_R_0012_0030__RAIDERS) ) )
-              &amp; has_conj1(R_0012_0027__AND,R_0012_0025__EXPLODES)
-              &amp; r_0012_0025__explodes(R_0012_0025__EXPLODES)
-              &amp; has_arg0(R_0012_0025__EXPLODES,R_0012_0023__THE_R_0012_0024__PLANETOID) ) )
-      &amp; ! [R_0012_0009__REMAINS] :
-          ( ( r_0012_0009__remains(R_0012_0009__REMAINS)
-            &amp; has_arg0(R_0012_0009__REMAINS,R_0012_0005__ONE_R_0012_0006__LIFE_R_0012_0008__FORM) )
-         =&gt; ? [Z_000_12_A_PLANETOID_1,R_0012_0001__LOOK_R_0012_0002__OUT] :
-              ( z_000_12_a_planetoid_1(Z_000_12_A_PLANETOID_1)
-              &amp; r_0012_0001__Look_r_0012_0002__out(R_0012_0001__LOOK_R_0012_0002__OUT)
-              &amp; has_arg0(R_0012_0001__LOOK_R_0012_0002__OUT,Z_000_12_A_PLANETOID_1) ) ) ) ).
+    ? [R_12_11_SINCE,R_12_15_ABDUCTING,R_12_13_THE_RAIDER,R_12_5_ONE_LIFE_FORM,R_12_4_ONLY] :
+      ( the_raider(R_12_13_THE_RAIDER)
+      &amp; only(R_12_4_ONLY)
+      &amp; ! [R_12_9_REMAINS] :
+          ( remains(R_12_9_REMAINS,R_12_5_ONE_LIFE_FORM)
+         =&gt; ? [R_12_1_LOOK_OUT,Z_12_A_PLANETOID_1] : look_out(R_12_1_LOOK_OUT,Z_12_A_PLANETOID_1) )
+      &amp; conj2(CONJ2)
+      &amp; ! [R_12_17_REACHES,R_12_18_THE_TOP,R_12_21_THE_SCREEN] :
+          ( ( the_screen(R_12_21_THE_SCREEN)
+            &amp; reaches(R_12_17_REACHES,R_12_13_THE_RAIDER,R_12_18_THE_TOP)
+            &amp; the_top(R_12_18_THE_TOP)
+            &amp; of(R_12_18_THE_TOP,R_12_21_THE_SCREEN) )
+         =&gt; ? [R_12_27_AND,R_12_25_EXPLODES,R_12_23_THE_PLANETOID] :
+              ( the_planetoid(R_12_23_THE_PLANETOID)
+              &amp; ! [R_12_29_THE_RAIDERS] :
+                  ( the_raiders(R_12_29_THE_RAIDERS)
+                 =&gt; ? [R_12_31_BECOME,R_12_32_MUTANTS] :
+                      ( mutants(R_12_32_MUTANTS)
+                      &amp; become(R_12_31_BECOME,R_12_29_THE_RAIDERS,R_12_32_MUTANTS) ) )
+              &amp; conj2(CONJ2)
+              &amp; and(R_12_27_AND)
+              &amp; conj1(R_12_27_AND,R_12_25_EXPLODES)
+              &amp; explodes(R_12_25_EXPLODES,R_12_23_THE_PLANETOID) ) )
+      &amp; conj1(CONJ1)
+      &amp; since(R_12_11_SINCE)
+      &amp; abducting(R_12_15_ABDUCTING,R_12_13_THE_RAIDER,R_12_5_ONE_LIFE_FORM)
+      &amp; one_life_form(R_12_5_ONE_LIFE_FORM)
+      &amp; qual11(R_12_5_ONE_LIFE_FORM,R_12_4_ONLY) ) ).
 </pre>
 <br><hr><br>
 <svg width="1442pt" height="432pt"

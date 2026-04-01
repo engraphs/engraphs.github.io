@@ -195,16 +195,14 @@ arc(r_0136_0006__and, r_0136_0007__water, conj2).
 </svg>
 <pre>
 fof(formula,axiom,
-    ~ ? [R_0136_0001__METAL,R_0136_0005__FOOD,R_0136_0007__WATER,R_0136_0006__AND,R_0136_0002__DOES_R_0136_0004__NEED] :
-        ( r_0136_0001__Metal(R_0136_0001__METAL)
-        &amp; r_0136_0005__food(R_0136_0005__FOOD)
-        &amp; r_0136_0007__water(R_0136_0007__WATER)
-        &amp; r_0136_0002__does_r_0136_0004__need(R_0136_0002__DOES_R_0136_0004__NEED)
-        &amp; has_arg1(R_0136_0002__DOES_R_0136_0004__NEED,R_0136_0006__AND)
-        &amp; r_0136_0006__and(R_0136_0006__AND)
-        &amp; has_conj2(R_0136_0006__AND,R_0136_0007__WATER)
-        &amp; has_conj1(R_0136_0006__AND,R_0136_0005__FOOD)
-        &amp; has_arg0(R_0136_0002__DOES_R_0136_0004__NEED,R_0136_0001__METAL) ) ).
+    ~ ? [R_136_2_DOES_NEED,R_136_1_METAL,R_136_6_AND,R_136_5_FOOD,R_136_7_WATER] :
+        ( metal(R_136_1_METAL)
+        &amp; food(R_136_5_FOOD)
+        &amp; water(R_136_7_WATER)
+        &amp; does_need(R_136_2_DOES_NEED,R_136_1_METAL,R_136_6_AND)
+        &amp; and(R_136_6_AND)
+        &amp; conj1(R_136_6_AND,R_136_5_FOOD)
+        &amp; conj2(R_136_6_AND,R_136_7_WATER) ) ).
 </pre>
 <br><hr><br>
 <svg width="399pt" height="297pt"

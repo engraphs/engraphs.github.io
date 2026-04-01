@@ -563,42 +563,33 @@ arc(r_0098_0033__announce, r_0098_0032__publicly, nim87).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0098_0005__A_R_0098_0006__BUSINESS_R_0098_0007__OPERATOR,R_0098_0009__PERSONAL,R_0098_0010__INFORMATION,R_0098_0008__HANDLING] :
-      ( r_0098_0005__a_r_0098_0006__business_r_0098_0007__operator(R_0098_0005__A_R_0098_0006__BUSINESS_R_0098_0007__OPERATOR)
-      &amp; r_0098_0009__personal(R_0098_0009__PERSONAL)
-      &amp; r_0098_0008__handling(R_0098_0008__HANDLING)
-      &amp; has_arg1(R_0098_0008__HANDLING,R_0098_0010__INFORMATION)
-      &amp; r_0098_0010__information(R_0098_0010__INFORMATION)
-      &amp; has_attrib24(R_0098_0010__INFORMATION,R_0098_0009__PERSONAL)
-      &amp; has_arg0(R_0098_0008__HANDLING,R_0098_0005__A_R_0098_0006__BUSINESS_R_0098_0007__OPERATOR)
-      &amp; ! [R_0098_0011__HAS_R_0098_0012__CHANGED,R_0098_0016__UTILIZATION,R_0098_0013__THE_R_0098_0014__PURPOSE] :
-          ( ( r_0098_0016__Utilization(R_0098_0016__UTILIZATION)
-            &amp; r_0098_0011__has_r_0098_0012__changed(R_0098_0011__HAS_R_0098_0012__CHANGED)
-            &amp; has_arg1(R_0098_0011__HAS_R_0098_0012__CHANGED,R_0098_0013__THE_R_0098_0014__PURPOSE)
-            &amp; r_0098_0013__the_r_0098_0014__Purpose(R_0098_0013__THE_R_0098_0014__PURPOSE)
-            &amp; has_r_0098_0015__of(R_0098_0013__THE_R_0098_0014__PURPOSE,R_0098_0016__UTILIZATION)
-            &amp; has_arg0(R_0098_0011__HAS_R_0098_0012__CHANGED,R_0098_0005__A_R_0098_0006__BUSINESS_R_0098_0007__OPERATOR) )
-         =&gt; ? [R_0098_0018__THE_R_0098_0019__BUSINESS_R_0098_0020__OPERATOR,R_0098_0023__THE_R_0098_0024__PERSON,R_0098_0027__CHANGED,R_0098_0030__UTILIZATION,R_0098_0026__THE_R_0098_0028__PURPOSE,R_0098_0022__NOTIFY,R_0098_0032__PUBLICLY,R_0098_0033__ANNOUNCE,R_0098_0031__OR,R_0098_0021__SHALL] :
-              ( r_0098_0018__the_r_0098_0019__business_r_0098_0020__operator(R_0098_0018__THE_R_0098_0019__BUSINESS_R_0098_0020__OPERATOR)
-              &amp; r_0098_0023__the_r_0098_0024__person(R_0098_0023__THE_R_0098_0024__PERSON)
-              &amp; r_0098_0027__changed(R_0098_0027__CHANGED)
-              &amp; r_0098_0030__Utilization(R_0098_0030__UTILIZATION)
-              &amp; r_0098_0032__publicly(R_0098_0032__PUBLICLY)
-              &amp; r_0098_0021__shall(R_0098_0021__SHALL)
-              &amp; has_keep_scope(R_0098_0021__SHALL,R_0098_0031__OR)
-              &amp; r_0098_0031__or(R_0098_0031__OR)
-              &amp; has_conj2(R_0098_0031__OR,R_0098_0033__ANNOUNCE)
-              &amp; r_0098_0033__announce(R_0098_0033__ANNOUNCE)
-              &amp; has_nim87(R_0098_0033__ANNOUNCE,R_0098_0032__PUBLICLY)
-              &amp; has_arg0(R_0098_0033__ANNOUNCE,R_0098_0018__THE_R_0098_0019__BUSINESS_R_0098_0020__OPERATOR)
-              &amp; has_arg1(R_0098_0033__ANNOUNCE,R_0098_0010__INFORMATION)
-              &amp; has_conj1(R_0098_0031__OR,R_0098_0022__NOTIFY)
-              &amp; ~ ( has_r_0098_0025__of_clr69(R_0098_0022__NOTIFY,R_0098_0026__THE_R_0098_0028__PURPOSE)
-                  &amp; r_0098_0026__the_r_0098_0028__Purpose(R_0098_0026__THE_R_0098_0028__PURPOSE)
-                  &amp; has_r_0098_0029__of(R_0098_0026__THE_R_0098_0028__PURPOSE,R_0098_0030__UTILIZATION)
-                  &amp; has_attrib72(R_0098_0026__THE_R_0098_0028__PURPOSE,R_0098_0027__CHANGED)
-                  &amp; has_arg1(R_0098_0022__NOTIFY,R_0098_0023__THE_R_0098_0024__PERSON)
-                  &amp; has_arg0(R_0098_0022__NOTIFY,R_0098_0018__THE_R_0098_0019__BUSINESS_R_0098_0020__OPERATOR) ) ) ) ) ).
+    ? [R_98_8_HANDLING,R_98_5_A_BUSINESS_OPERATOR,R_98_10_INFORMATION,R_98_9_PERSONAL] :
+      ( a_business_operator(R_98_5_A_BUSINESS_OPERATOR)
+      &amp; personal(R_98_9_PERSONAL)
+      &amp; ! [R_98_11_HAS_CHANGED,R_98_13_THE_PURPOSE,R_98_16_UTILIZATION] :
+          ( ( utilization(R_98_16_UTILIZATION)
+            &amp; has_changed(R_98_11_HAS_CHANGED,R_98_5_A_BUSINESS_OPERATOR,R_98_13_THE_PURPOSE)
+            &amp; the_Purpose(R_98_13_THE_PURPOSE)
+            &amp; of(R_98_13_THE_PURPOSE,R_98_16_UTILIZATION) )
+         =&gt; ~ ? [R_98_31_OR,R_98_22_NOTIFY,R_98_23_THE_PERSON,R_98_26_THE_PURPOSE,R_98_27_CHANGED,R_98_30_UTILIZATION,R_98_33_ANNOUNCE,R_98_18_THE_BUSINESS_OPERATOR,R_98_32_PUBLICLY] :
+                ( the_person(R_98_23_THE_PERSON)
+                &amp; changed(R_98_27_CHANGED)
+                &amp; utilization(R_98_30_UTILIZATION)
+                &amp; the_business_operator(R_98_18_THE_BUSINESS_OPERATOR)
+                &amp; publicly(R_98_32_PUBLICLY)
+                &amp; or(R_98_31_OR)
+                &amp; conj1(R_98_31_OR,R_98_22_NOTIFY)
+                &amp; notify(R_98_22_NOTIFY,R_98_18_THE_BUSINESS_OPERATOR,R_98_23_THE_PERSON)
+                &amp; of_clr69(R_98_22_NOTIFY,R_98_26_THE_PURPOSE)
+                &amp; the_Purpose(R_98_26_THE_PURPOSE)
+                &amp; attrib72(R_98_26_THE_PURPOSE,R_98_27_CHANGED)
+                &amp; of(R_98_26_THE_PURPOSE,R_98_30_UTILIZATION)
+                &amp; conj2(R_98_31_OR,R_98_33_ANNOUNCE)
+                &amp; announce(R_98_33_ANNOUNCE,R_98_18_THE_BUSINESS_OPERATOR,R_98_10_INFORMATION)
+                &amp; nim87(R_98_33_ANNOUNCE,R_98_32_PUBLICLY) ) )
+      &amp; handling(R_98_8_HANDLING,R_98_5_A_BUSINESS_OPERATOR,R_98_10_INFORMATION)
+      &amp; information(R_98_10_INFORMATION)
+      &amp; attrib24(R_98_10_INFORMATION,R_98_9_PERSONAL) ) ).
 </pre>
 <br><hr><br>
 <svg width="1737pt" height="432pt"

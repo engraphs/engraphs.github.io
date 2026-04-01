@@ -637,46 +637,35 @@ arc(r_0002_0034__batter, r_0002_0003__she, gen).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0002_0006__THIS_R_0002_0007__BUTTER,R_0002_0009__BITTER,R_0002_0008___APOS_S,R_0002_0029__BETTER,R_0002_0030__BUTTER,R_0002_0027__A_BIT,R_0002_0003__SHE,R_0002_0034__BATTER,R_0002_0035__BETTER,R_0002_0026__BUT_R_0002_0031__WILL_R_0002_0032__MAKE,UTTERANCE_2_A_BETTY_BOTTER_13,R_0002_0001__BUT_R_0002_0004__SAID] :
-      ( r_0002_0003__she(R_0002_0003__SHE)
-      &amp; r_0002_0006__this_r_0002_0007__butter(R_0002_0006__THIS_R_0002_0007__BUTTER)
-      &amp; r_0002_0009__bitter(R_0002_0009__BITTER)
-      &amp; r_0002_0029__better(R_0002_0029__BETTER)
-      &amp; r_0002_0035__better(R_0002_0035__BETTER)
-      &amp; r_0002_0001__But_r_0002_0004__said(R_0002_0001__BUT_R_0002_0004__SAID)
-      &amp; has_arg0(R_0002_0001__BUT_R_0002_0004__SAID,R_0002_0003__SHE)
-      &amp; has_arg1(R_0002_0001__BUT_R_0002_0004__SAID,UTTERANCE_2_A_BETTY_BOTTER_13)
+    ? [R_2_1_BUT_SAID,UTTERANCE_2_A_BETTY_BOTTER_13,R_2_8__APOS_S,R_2_6_THIS_BUTTER,R_2_9_BITTER,R_2_26_BUT_WILL_MAKE,R_2_27_A_BIT,R_2_30_BUTTER,R_2_29_BETTER,R_2_34_BATTER,R_2_3_SHE,R_2_35_BETTER] :
+      ( this_butter(R_2_6_THIS_BUTTER)
+      &amp; bitter(R_2_9_BITTER)
+      &amp; better(R_2_29_BETTER)
+      &amp; she(R_2_3_SHE)
+      &amp; better(R_2_35_BETTER)
+      &amp; but_said(R_2_1_BUT_SAID,R_2_3_SHE,UTTERANCE_2_A_BETTY_BOTTER_13)
+      &amp; ! [R_2_13_PUT,R_2_17_BATTER] :
+          ( ( put(R_2_13_PUT,R_2_3_SHE,R_2_6_THIS_BUTTER)
+            &amp; in_clr43(R_2_13_PUT,R_2_17_BATTER)
+            &amp; batter(R_2_17_BATTER)
+            &amp; gen(R_2_17_BATTER,R_2_3_SHE) )
+         =&gt; ? [R_2_20_WILL_MAKE,R_2_23_BATTER,R_2_24_BITTER] :
+              ( bitter(R_2_24_BITTER)
+              &amp; will_make(R_2_20_WILL_MAKE,R_2_6_THIS_BUTTER,R_2_23_BATTER,R_2_24_BITTER)
+              &amp; batter(R_2_23_BATTER)
+              &amp; gen(R_2_23_BATTER,R_2_3_SHE) ) )
+      &amp; part2(PART2)
       &amp; utterance_2_a_betty_botter_13(UTTERANCE_2_A_BETTY_BOTTER_13)
-      &amp; has_part3(UTTERANCE_2_A_BETTY_BOTTER_13,R_0002_0026__BUT_R_0002_0031__WILL_R_0002_0032__MAKE)
-      &amp; r_0002_0026__But_r_0002_0031__Will_r_0002_0032__make(R_0002_0026__BUT_R_0002_0031__WILL_R_0002_0032__MAKE)
-      &amp; has_prd(R_0002_0026__BUT_R_0002_0031__WILL_R_0002_0032__MAKE,R_0002_0035__BETTER)
-      &amp; has_arg1(R_0002_0026__BUT_R_0002_0031__WILL_R_0002_0032__MAKE,R_0002_0034__BATTER)
-      &amp; r_0002_0034__batter(R_0002_0034__BATTER)
-      &amp; has_gen(R_0002_0034__BATTER,R_0002_0003__SHE)
-      &amp; has_arg0(R_0002_0026__BUT_R_0002_0031__WILL_R_0002_0032__MAKE,R_0002_0027__A_BIT)
-      &amp; r_0002_0027__a_bit(R_0002_0027__A_BIT)
-      &amp; has_r_0002_0028__of(R_0002_0027__A_BIT,R_0002_0030__BUTTER)
-      &amp; r_0002_0030__butter(R_0002_0030__BUTTER)
-      &amp; has_attrib80(R_0002_0030__BUTTER,R_0002_0029__BETTER)
-      &amp; ! [R_0002_0013__PUT,R_0002_0017__BATTER] :
-          ( ( r_0002_0013__put(R_0002_0013__PUT)
-            &amp; has_r_0002_0015__in_clr43(R_0002_0013__PUT,R_0002_0017__BATTER)
-            &amp; r_0002_0017__batter(R_0002_0017__BATTER)
-            &amp; has_gen(R_0002_0017__BATTER,R_0002_0003__SHE)
-            &amp; has_arg1(R_0002_0013__PUT,R_0002_0006__THIS_R_0002_0007__BUTTER)
-            &amp; has_arg0(R_0002_0013__PUT,R_0002_0003__SHE) )
-         =&gt; ? [R_0002_0023__BATTER,R_0002_0024__BITTER,R_0002_0020__WILL_R_0002_0021__MAKE] :
-              ( r_0002_0024__bitter(R_0002_0024__BITTER)
-              &amp; r_0002_0020__will_r_0002_0021__make(R_0002_0020__WILL_R_0002_0021__MAKE)
-              &amp; has_prd(R_0002_0020__WILL_R_0002_0021__MAKE,R_0002_0024__BITTER)
-              &amp; has_arg1(R_0002_0020__WILL_R_0002_0021__MAKE,R_0002_0023__BATTER)
-              &amp; r_0002_0023__batter(R_0002_0023__BATTER)
-              &amp; has_gen(R_0002_0023__BATTER,R_0002_0003__SHE)
-              &amp; has_arg0(R_0002_0020__WILL_R_0002_0021__MAKE,R_0002_0006__THIS_R_0002_0007__BUTTER) ) )
-      &amp; has_part1(UTTERANCE_2_A_BETTY_BOTTER_13,R_0002_0008___APOS_S)
-      &amp; r_0002_0008___apos_s(R_0002_0008___APOS_S)
-      &amp; has_prd(R_0002_0008___APOS_S,R_0002_0009__BITTER)
-      &amp; has_arg0(R_0002_0008___APOS_S,R_0002_0006__THIS_R_0002_0007__BUTTER) ) ).
+      &amp; part1(UTTERANCE_2_A_BETTY_BOTTER_13,R_2_8__APOS_S)
+      &amp; _apos_s(R_2_8__APOS_S,R_2_6_THIS_BUTTER,R_2_9_BITTER)
+      &amp; part3(UTTERANCE_2_A_BETTY_BOTTER_13,R_2_26_BUT_WILL_MAKE)
+      &amp; but_Will_make(R_2_26_BUT_WILL_MAKE,R_2_27_A_BIT,R_2_34_BATTER,R_2_35_BETTER)
+      &amp; a_bit(R_2_27_A_BIT)
+      &amp; of(R_2_27_A_BIT,R_2_30_BUTTER)
+      &amp; butter(R_2_30_BUTTER)
+      &amp; attrib80(R_2_30_BUTTER,R_2_29_BETTER)
+      &amp; batter(R_2_34_BATTER)
+      &amp; gen(R_2_34_BATTER,R_2_3_SHE) ) ).
 </pre>
 <br><hr><br>
 <svg width="1515pt" height="432pt"

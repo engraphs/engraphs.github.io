@@ -505,40 +505,32 @@ arc(r_0002_0024__the_r_0002_0026__forest, r_0002_0025__primeval, attrib70).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0002_0025__PRIMEVAL,R_0002_0024__THE_R_0002_0026__FOREST,R_0002_0014__A_R_0002_0015__BOOK,R_0002_0018__TRUE,R_0002_0021__NATURE,R_0002_0019__STORIES,Z_000_2_A_SAINT_EXUPERY_1943_46,R_0002_0017__CALLED] :
-      ( r_0002_0018__True(R_0002_0018__TRUE)
-      &amp; r_0002_0021__Nature(R_0002_0021__NATURE)
-      &amp; r_0002_0025__primeval(R_0002_0025__PRIMEVAL)
-      &amp; z_000_2_a_saint_exupery_1943_46(Z_000_2_A_SAINT_EXUPERY_1943_46)
-      &amp; r_0002_0017__called(R_0002_0017__CALLED)
-      &amp; has_arg0(R_0002_0017__CALLED,Z_000_2_A_SAINT_EXUPERY_1943_46)
-      &amp; has_prd(R_0002_0017__CALLED,R_0002_0019__STORIES)
-      &amp; r_0002_0019__Stories(R_0002_0019__STORIES)
-      &amp; has_r_0002_0020__from(R_0002_0019__STORIES,R_0002_0021__NATURE)
-      &amp; has_attrib51(R_0002_0019__STORIES,R_0002_0018__TRUE)
-      &amp; has_arg1(R_0002_0017__CALLED,R_0002_0014__A_R_0002_0015__BOOK)
-      &amp; r_0002_0014__a_r_0002_0015__book(R_0002_0014__A_R_0002_0015__BOOK)
-      &amp; has_r_0002_0023__about(R_0002_0014__A_R_0002_0015__BOOK,R_0002_0024__THE_R_0002_0026__FOREST)
-      &amp; r_0002_0024__the_r_0002_0026__forest(R_0002_0024__THE_R_0002_0026__FOREST)
-      &amp; has_attrib70(R_0002_0024__THE_R_0002_0026__FOREST,R_0002_0025__PRIMEVAL)
-      &amp; ! [R_0002_0004__WAS,R_0002_0003__I,R_0002_0005__SIX_R_0002_0006__YEARS,R_0002_0007__OLD] :
-          ( ( r_0002_0003__I(R_0002_0003__I)
-            &amp; r_0002_0005__six_r_0002_0006__years(R_0002_0005__SIX_R_0002_0006__YEARS)
-            &amp; r_0002_0004__was(R_0002_0004__WAS)
-            &amp; has_prd(R_0002_0004__WAS,R_0002_0007__OLD)
-            &amp; r_0002_0007__old(R_0002_0007__OLD)
-            &amp; has_nim15(R_0002_0007__OLD,R_0002_0005__SIX_R_0002_0006__YEARS)
-            &amp; has_arg0(R_0002_0004__WAS,R_0002_0003__I) )
-         =&gt; ? [R_0002_0001__ONCE,R_0002_0011__MAGNIFICENT,R_0002_0010__A_R_0002_0012__PICTURE,R_0002_0009__SAW] :
-              ( r_0002_0001__Once(R_0002_0001__ONCE)
-              &amp; r_0002_0011__magnificent(R_0002_0011__MAGNIFICENT)
-              &amp; r_0002_0009__saw(R_0002_0009__SAW)
-              &amp; has_arg1(R_0002_0009__SAW,R_0002_0010__A_R_0002_0012__PICTURE)
-              &amp; r_0002_0010__a_r_0002_0012__picture(R_0002_0010__A_R_0002_0012__PICTURE)
-              &amp; has_r_0002_0013__in(R_0002_0010__A_R_0002_0012__PICTURE,R_0002_0014__A_R_0002_0015__BOOK)
-              &amp; has_attrib30(R_0002_0010__A_R_0002_0012__PICTURE,R_0002_0011__MAGNIFICENT)
-              &amp; has_arg0(R_0002_0009__SAW,R_0002_0003__I)
-              &amp; has_nim2(R_0002_0009__SAW,R_0002_0001__ONCE) ) ) ) ).
+    ? [R_2_17_CALLED,Z_2_A_SAINT_EXUPERY_1943_46,R_2_14_A_BOOK,R_2_24_THE_FOREST,R_2_25_PRIMEVAL,R_2_19_STORIES,R_2_18_TRUE,R_2_21_NATURE] :
+      ( primeval(R_2_25_PRIMEVAL)
+      &amp; true(R_2_18_TRUE)
+      &amp; nature(R_2_21_NATURE)
+      &amp; ! [R_2_4_WAS,R_2_3_I,R_2_7_OLD,R_2_5_SIX_YEARS] :
+          ( ( i(R_2_3_I)
+            &amp; six_years(R_2_5_SIX_YEARS)
+            &amp; was(R_2_4_WAS,R_2_3_I,R_2_7_OLD)
+            &amp; old(R_2_7_OLD)
+            &amp; nim15(R_2_7_OLD,R_2_5_SIX_YEARS) )
+         =&gt; ? [R_2_9_SAW,R_2_10_A_PICTURE,R_2_11_MAGNIFICENT,R_2_1_ONCE] :
+              ( magnificent(R_2_11_MAGNIFICENT)
+              &amp; once(R_2_1_ONCE)
+              &amp; saw(R_2_9_SAW,R_2_3_I,R_2_10_A_PICTURE)
+              &amp; a_picture(R_2_10_A_PICTURE)
+              &amp; attrib30(R_2_10_A_PICTURE,R_2_11_MAGNIFICENT)
+              &amp; in(R_2_10_A_PICTURE,R_2_14_A_BOOK)
+              &amp; nim2(R_2_9_SAW,R_2_1_ONCE) ) )
+      &amp; called(R_2_17_CALLED,Z_2_A_SAINT_EXUPERY_1943_46,R_2_14_A_BOOK,R_2_19_STORIES)
+      &amp; a_book(R_2_14_A_BOOK)
+      &amp; about(R_2_14_A_BOOK,R_2_24_THE_FOREST)
+      &amp; the_forest(R_2_24_THE_FOREST)
+      &amp; attrib70(R_2_24_THE_FOREST,R_2_25_PRIMEVAL)
+      &amp; stories(R_2_19_STORIES)
+      &amp; attrib51(R_2_19_STORIES,R_2_18_TRUE)
+      &amp; from(R_2_19_STORIES,R_2_21_NATURE) ) ).
 </pre>
 <br><hr><br>
 <svg width="1152pt" height="432pt"

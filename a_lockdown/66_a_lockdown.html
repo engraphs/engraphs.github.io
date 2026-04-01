@@ -505,38 +505,34 @@ arc(z_000_66_a_lockdown_2, r_0066_0016__have, conj2).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0066_0002__THEN,R_0066_0003__I,R_0066_0001__BUT_R_0066_0004__KNOW,R_0066_0014__SO,R_0066_0015__I,R_0066_0023__GUILT,R_0066_0020__A_R_0066_0021__PANG,R_0066_0018__A_BIT,R_0066_0016__HAVE_R_0066_0017__HAD,Z_000_66_A_LOCKDOWN_2] :
-      ( r_0066_0002__then(R_0066_0002__THEN)
-      &amp; r_0066_0003__I(R_0066_0003__I)
-      &amp; r_0066_0014__so(R_0066_0014__SO)
-      &amp; r_0066_0015__I(R_0066_0015__I)
-      &amp; r_0066_0023__guilt(R_0066_0023__GUILT)
-      &amp; z_000_66_a_lockdown_2(Z_000_66_A_LOCKDOWN_2)
-      &amp; has_conj2(Z_000_66_A_LOCKDOWN_2,R_0066_0016__HAVE_R_0066_0017__HAD)
-      &amp; r_0066_0016__have_r_0066_0017__had(R_0066_0016__HAVE_R_0066_0017__HAD)
-      &amp; has_arg1(R_0066_0016__HAVE_R_0066_0017__HAD,R_0066_0018__A_BIT)
-      &amp; r_0066_0018__a_bit(R_0066_0018__A_BIT)
-      &amp; has_r_0066_0019__of(R_0066_0018__A_BIT,R_0066_0020__A_R_0066_0021__PANG)
-      &amp; r_0066_0020__a_r_0066_0021__pang(R_0066_0020__A_R_0066_0021__PANG)
-      &amp; has_r_0066_0022__of(R_0066_0020__A_R_0066_0021__PANG,R_0066_0023__GUILT)
-      &amp; has_arg0(R_0066_0016__HAVE_R_0066_0017__HAD,R_0066_0015__I)
-      &amp; has_nim42(R_0066_0016__HAVE_R_0066_0017__HAD,R_0066_0014__SO)
-      &amp; has_conj1(Z_000_66_A_LOCKDOWN_2,R_0066_0001__BUT_R_0066_0004__KNOW)
-      &amp; r_0066_0001__But_r_0066_0004__know(R_0066_0001__BUT_R_0066_0004__KNOW)
-      &amp; ! [Z_000_66_A_LOCKDOWN_16] :
-          ( z_000_66_a_lockdown_16(Z_000_66_A_LOCKDOWN_16)
-         =&gt; ? [R_0066_0006__PROBABLY,R_0066_0012__LOCKDOWN_R_0066_0013__BREACHES,R_0066_0008__A_R_0066_0009__JUSTIFICATION,R_0066_0007__HAS] :
-              ( r_0066_0006__probably(R_0066_0006__PROBABLY)
-              &amp; r_0066_0007__has(R_0066_0007__HAS)
-              &amp; has_arg0(R_0066_0007__HAS,Z_000_66_A_LOCKDOWN_16)
-              &amp; has_arg1(R_0066_0007__HAS,R_0066_0008__A_R_0066_0009__JUSTIFICATION)
-              &amp; r_0066_0008__a_r_0066_0009__justification(R_0066_0008__A_R_0066_0009__JUSTIFICATION)
-              &amp; has_r_0066_0010__for(R_0066_0008__A_R_0066_0009__JUSTIFICATION,R_0066_0012__LOCKDOWN_R_0066_0013__BREACHES)
-              &amp; r_0066_0012__lockdown_r_0066_0013__breaches(R_0066_0012__LOCKDOWN_R_0066_0013__BREACHES)
-              &amp; has_gen(R_0066_0012__LOCKDOWN_R_0066_0013__BREACHES,Z_000_66_A_LOCKDOWN_16)
-              &amp; has_nim19(R_0066_0007__HAS,R_0066_0006__PROBABLY) ) )
-      &amp; has_arg0(R_0066_0001__BUT_R_0066_0004__KNOW,R_0066_0003__I)
-      &amp; has_nim6(R_0066_0001__BUT_R_0066_0004__KNOW,R_0066_0002__THEN) ) ).
+    ? [Z_66_A_LOCKDOWN_2,R_66_1_BUT_KNOW,R_66_3_I,R_66_2_THEN,R_66_16_HAVE_HAD,R_66_15_I,R_66_18_A_BIT,R_66_20_A_PANG,R_66_23_GUILT,R_66_14_SO] :
+      ( i(R_66_3_I)
+      &amp; then(R_66_2_THEN)
+      &amp; i(R_66_15_I)
+      &amp; guilt(R_66_23_GUILT)
+      &amp; so(R_66_14_SO)
+      &amp; z_66_a_lockdown_2(Z_66_A_LOCKDOWN_2)
+      &amp; conj1(Z_66_A_LOCKDOWN_2,R_66_1_BUT_KNOW)
+      &amp; ! [Z_66_A_LOCKDOWN_16] :
+          ( true
+         =&gt; ? [R_66_7_HAS,R_66_8_A_JUSTIFICATION,R_66_12_LOCKDOWN_BREACHES,R_66_6_PROBABLY] :
+              ( probably(R_66_6_PROBABLY)
+              &amp; has(R_66_7_HAS,Z_66_A_LOCKDOWN_16,R_66_8_A_JUSTIFICATION)
+              &amp; a_justification(R_66_8_A_JUSTIFICATION)
+              &amp; for(R_66_8_A_JUSTIFICATION,R_66_12_LOCKDOWN_BREACHES)
+              &amp; lockdown_breaches(R_66_12_LOCKDOWN_BREACHES)
+              &amp; gen(R_66_12_LOCKDOWN_BREACHES,Z_66_A_LOCKDOWN_16)
+              &amp; nim19(R_66_7_HAS,R_66_6_PROBABLY) ) )
+      &amp; arg1(ARG1)
+      &amp; but_know(R_66_1_BUT_KNOW,R_66_3_I)
+      &amp; nim6(R_66_1_BUT_KNOW,R_66_2_THEN)
+      &amp; conj2(Z_66_A_LOCKDOWN_2,R_66_16_HAVE_HAD)
+      &amp; have_had(R_66_16_HAVE_HAD,R_66_15_I,R_66_18_A_BIT)
+      &amp; a_bit(R_66_18_A_BIT)
+      &amp; of(R_66_18_A_BIT,R_66_20_A_PANG)
+      &amp; a_pang(R_66_20_A_PANG)
+      &amp; of(R_66_20_A_PANG,R_66_23_GUILT)
+      &amp; nim42(R_66_16_HAVE_HAD,R_66_14_SO) ) ).
 </pre>
 <br><hr><br>
 <svg width="1048pt" height="523pt"

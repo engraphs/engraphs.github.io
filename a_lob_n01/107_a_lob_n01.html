@@ -359,27 +359,20 @@ arc(r_0107_0013__give, r_0107_0015__ideas, arg1).
 </svg>
 <pre>
 fof(formula,axiom,
-    ! [R_0107_0003__SPOTTED,R_0107_0002__THEY,R_0107_0004__US,R_0107_0006__DUE,R_0107_0009__ANCONA,R_0107_0007__EAST,R_0107_0005__FLYING] :
-      ( ( r_0107_0002__they(R_0107_0002__THEY)
-        &amp; r_0107_0004__us(R_0107_0004__US)
-        &amp; r_0107_0006__due(R_0107_0006__DUE)
-        &amp; r_0107_0009__Ancona(R_0107_0009__ANCONA)
-        &amp; r_0107_0003__spotted(R_0107_0003__SPOTTED)
-        &amp; has_arg1(R_0107_0003__SPOTTED,R_0107_0005__FLYING)
-        &amp; r_0107_0005__flying(R_0107_0005__FLYING)
-        &amp; has_arg1(R_0107_0005__FLYING,R_0107_0007__EAST)
-        &amp; r_0107_0007__east(R_0107_0007__EAST)
-        &amp; has_r_0107_0008__over(R_0107_0007__EAST,R_0107_0009__ANCONA)
-        &amp; has_attrib18(R_0107_0007__EAST,R_0107_0006__DUE)
-        &amp; has_arg0(R_0107_0005__FLYING,R_0107_0004__US)
-        &amp; has_arg0(R_0107_0003__SPOTTED,R_0107_0002__THEY) )
-     =&gt; ? [R_0107_0014__THEM,R_0107_0015__IDEAS,R_0107_0012__MIGHT_R_0107_0013__GIVE] :
-          ( r_0107_0014__them(R_0107_0014__THEM)
-          &amp; r_0107_0015__ideas(R_0107_0015__IDEAS)
-          &amp; r_0107_0012__might_r_0107_0013__give(R_0107_0012__MIGHT_R_0107_0013__GIVE)
-          &amp; has_arg1(R_0107_0012__MIGHT_R_0107_0013__GIVE,R_0107_0015__IDEAS)
-          &amp; has_arg2(R_0107_0012__MIGHT_R_0107_0013__GIVE,R_0107_0014__THEM)
-          &amp; has_arg0(R_0107_0012__MIGHT_R_0107_0013__GIVE,R_0107_0003__SPOTTED) ) ) ).
+    ! [R_107_3_SPOTTED,R_107_2_THEY,R_107_5_FLYING,R_107_4_US,R_107_7_EAST,R_107_6_DUE,R_107_9_ANCONA] :
+      ( ( they(R_107_2_THEY)
+        &amp; us(R_107_4_US)
+        &amp; due(R_107_6_DUE)
+        &amp; ancona(R_107_9_ANCONA)
+        &amp; spotted(R_107_3_SPOTTED,R_107_2_THEY,R_107_5_FLYING)
+        &amp; flying(R_107_5_FLYING,R_107_4_US,R_107_7_EAST)
+        &amp; east(R_107_7_EAST)
+        &amp; attrib18(R_107_7_EAST,R_107_6_DUE)
+        &amp; over(R_107_7_EAST,R_107_9_ANCONA) )
+     =&gt; ? [R_107_12_MIGHT_GIVE,R_107_15_IDEAS,R_107_14_THEM] :
+          ( ideas(R_107_15_IDEAS)
+          &amp; them(R_107_14_THEM)
+          &amp; might_give(R_107_12_MIGHT_GIVE,R_107_3_SPOTTED,R_107_15_IDEAS,R_107_14_THEM) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="728pt" height="387pt"

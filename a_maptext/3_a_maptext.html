@@ -220,20 +220,17 @@ arc(r_0003_0007__arrive, r_0003_0009__a_r_0003_0010__car_r_0003_0011__park, r_00
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0003_0003__THIS_R_0003_0004__ROAD,Z_000_3_A_MAPTEXT_1,R_0003_0001__CONTINUE,R_0003_0006__YOU,R_0003_0009__A_R_0003_0010__CAR_R_0003_0011__PARK,R_0003_0007__ARRIVE,R_0003_0005__UNTIL] :
-      ( r_0003_0003__this_r_0003_0004__road(R_0003_0003__THIS_R_0003_0004__ROAD)
-      &amp; r_0003_0006__you(R_0003_0006__YOU)
-      &amp; r_0003_0009__a_r_0003_0010__car_r_0003_0011__park(R_0003_0009__A_R_0003_0010__CAR_R_0003_0011__PARK)
-      &amp; z_000_3_a_maptext_1(Z_000_3_A_MAPTEXT_1)
-      &amp; r_0003_0005__until(R_0003_0005__UNTIL)
-      &amp; has_conj1(R_0003_0005__UNTIL,R_0003_0007__ARRIVE)
-      &amp; r_0003_0007__arrive(R_0003_0007__ARRIVE)
-      &amp; has_r_0003_0008__at_clr24(R_0003_0007__ARRIVE,R_0003_0009__A_R_0003_0010__CAR_R_0003_0011__PARK)
-      &amp; has_arg0(R_0003_0007__ARRIVE,R_0003_0006__YOU)
-      &amp; has_conj2(R_0003_0005__UNTIL,R_0003_0001__CONTINUE)
-      &amp; r_0003_0001__Continue(R_0003_0001__CONTINUE)
-      &amp; has_arg0(R_0003_0001__CONTINUE,Z_000_3_A_MAPTEXT_1)
-      &amp; has_r_0003_0002__along_clr7(R_0003_0001__CONTINUE,R_0003_0003__THIS_R_0003_0004__ROAD) ) ).
+    ? [R_3_5_UNTIL,R_3_7_ARRIVE,R_3_6_YOU,R_3_9_A_CAR_PARK,R_3_1_CONTINUE,Z_3_A_MAPTEXT_1,R_3_3_THIS_ROAD] :
+      ( you(R_3_6_YOU)
+      &amp; a_car_park(R_3_9_A_CAR_PARK)
+      &amp; this_road(R_3_3_THIS_ROAD)
+      &amp; until(R_3_5_UNTIL)
+      &amp; conj1(R_3_5_UNTIL,R_3_7_ARRIVE)
+      &amp; arrive(R_3_7_ARRIVE,R_3_6_YOU)
+      &amp; at_clr24(R_3_7_ARRIVE,R_3_9_A_CAR_PARK)
+      &amp; conj2(R_3_5_UNTIL,R_3_1_CONTINUE)
+      &amp; continue(R_3_1_CONTINUE,Z_3_A_MAPTEXT_1)
+      &amp; along_clr7(R_3_1_CONTINUE,R_3_3_THIS_ROAD) ) ).
 </pre>
 <br><hr><br>
 <svg width="487pt" height="297pt"

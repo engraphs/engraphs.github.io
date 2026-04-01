@@ -237,19 +237,17 @@ arc(r_0007_0006__other, r_0007_0008__that, r_0007_0007__than).
 </svg>
 <pre>
 fof(formula,axiom,
-    ! [R_0007_0005__LEGITIMACY,R_0007_0004__DEMOCRATIC,R_0007_0008__THAT,R_0007_0006__OTHER] :
-      ( ( r_0007_0004__democratic(R_0007_0004__DEMOCRATIC)
-        &amp; r_0007_0008__that(R_0007_0008__THAT)
-        &amp; r_0007_0005__legitimacy(R_0007_0005__LEGITIMACY)
-        &amp; has_attrib15(R_0007_0005__LEGITIMACY,R_0007_0006__OTHER)
-        &amp; r_0007_0006__other(R_0007_0006__OTHER)
-        &amp; has_r_0007_0007__than(R_0007_0006__OTHER,R_0007_0008__THAT)
-        &amp; has_attrib10(R_0007_0005__LEGITIMACY,R_0007_0004__DEMOCRATIC) )
-     =&gt; ? [R_0007_0001__IT,R_0007_0002__HAS] :
-          ( r_0007_0001__It(R_0007_0001__IT)
-          &amp; r_0007_0002__has(R_0007_0002__HAS)
-          &amp; has_arg1(R_0007_0002__HAS,R_0007_0005__LEGITIMACY)
-          &amp; has_arg0(R_0007_0002__HAS,R_0007_0001__IT) ) ) ).
+    ! [R_7_5_LEGITIMACY,R_7_4_DEMOCRATIC,R_7_6_OTHER,R_7_8_THAT] :
+      ( ( democratic(R_7_4_DEMOCRATIC)
+        &amp; that(R_7_8_THAT)
+        &amp; legitimacy(R_7_5_LEGITIMACY)
+        &amp; attrib10(R_7_5_LEGITIMACY,R_7_4_DEMOCRATIC)
+        &amp; attrib15(R_7_5_LEGITIMACY,R_7_6_OTHER)
+        &amp; other(R_7_6_OTHER)
+        &amp; than(R_7_6_OTHER,R_7_8_THAT) )
+     =&gt; ? [R_7_2_HAS,R_7_1_IT] :
+          ( it(R_7_1_IT)
+          &amp; has(R_7_2_HAS,R_7_1_IT,R_7_5_LEGITIMACY) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="426pt" height="297pt"

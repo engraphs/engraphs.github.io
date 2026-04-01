@@ -289,23 +289,21 @@ arc(z_000_88_a_lob_j01_21, r_0088_0008__available, prd).
 </svg>
 <pre>
 fof(formula,axiom,
-    ! [R_0088_0002__REAGENTS] :
-      ( r_0088_0002__reagents(R_0088_0002__REAGENTS)
-     =&gt; ? [R_0088_0004__ANALYTICAL,R_0088_0005__REAGENT,R_0088_0006__QUALITY,R_0088_0003__ARE,R_0088_0008__AVAILABLE,Z_000_88_A_LOB_J01_21,R_0088_0007__WHERE] :
-          ( r_0088_0004__analytical(R_0088_0004__ANALYTICAL)
-          &amp; r_0088_0005__reagent(R_0088_0005__REAGENT)
-          &amp; r_0088_0008__available(R_0088_0008__AVAILABLE)
-          &amp; r_0088_0007__where(R_0088_0007__WHERE)
-          &amp; has_conj1(R_0088_0007__WHERE,Z_000_88_A_LOB_J01_21)
-          &amp; z_000_88_a_lob_j01_21(Z_000_88_A_LOB_J01_21)
-          &amp; has_prd(Z_000_88_A_LOB_J01_21,R_0088_0008__AVAILABLE)
-          &amp; has_conj2(R_0088_0007__WHERE,R_0088_0003__ARE)
-          &amp; r_0088_0003__are(R_0088_0003__ARE)
-          &amp; has_prd(R_0088_0003__ARE,R_0088_0006__QUALITY)
-          &amp; r_0088_0006__quality(R_0088_0006__QUALITY)
-          &amp; has_attrib13(R_0088_0006__QUALITY,R_0088_0005__REAGENT)
-          &amp; has_attrib10(R_0088_0006__QUALITY,R_0088_0004__ANALYTICAL)
-          &amp; has_arg0(R_0088_0003__ARE,R_0088_0002__REAGENTS) ) ) ).
+    ! [R_88_2_REAGENTS] :
+      ( reagents(R_88_2_REAGENTS)
+     =&gt; ? [R_88_7_WHERE,Z_88_A_LOB_J01_21,R_88_8_AVAILABLE,R_88_3_ARE,R_88_6_QUALITY,R_88_4_ANALYTICAL,R_88_5_REAGENT] :
+          ( available(R_88_8_AVAILABLE)
+          &amp; analytical(R_88_4_ANALYTICAL)
+          &amp; reagent(R_88_5_REAGENT)
+          &amp; where(R_88_7_WHERE)
+          &amp; conj1(R_88_7_WHERE,Z_88_A_LOB_J01_21)
+          &amp; z_88_a_lob_j01_21(Z_88_A_LOB_J01_21)
+          &amp; prd(Z_88_A_LOB_J01_21,R_88_8_AVAILABLE)
+          &amp; conj2(R_88_7_WHERE,R_88_3_ARE)
+          &amp; are(R_88_3_ARE,R_88_2_REAGENTS,R_88_6_QUALITY)
+          &amp; quality(R_88_6_QUALITY)
+          &amp; attrib10(R_88_6_QUALITY,R_88_4_ANALYTICAL)
+          &amp; attrib13(R_88_6_QUALITY,R_88_5_REAGENT) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="464pt" height="252pt"

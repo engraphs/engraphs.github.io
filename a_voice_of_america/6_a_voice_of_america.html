@@ -477,35 +477,29 @@ arc(z_000_6_a_voice_of_america_12, r_0006_0007__Malik_r_0006_0008__Faridullah_r_
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0006_0001__THE_R_0006_0002__OFFICIALS,R_0006_0003__SAY,R_0006_0004__PROMINENT,R_0006_0005__TRIBAL,R_0006_0006__LEADER,R_0006_0007__MALIK_R_0006_0008__FARIDULLAH_R_0006_0009__KHAN,Z_000_6_A_VOICE_OF_AMERICA_12] :
-      ( r_0006_0001__The_r_0006_0002__officials(R_0006_0001__THE_R_0006_0002__OFFICIALS)
-      &amp; r_0006_0004__prominent(R_0006_0004__PROMINENT)
-      &amp; r_0006_0005__tribal(R_0006_0005__TRIBAL)
-      &amp; r_0006_0007__Malik_r_0006_0008__Faridullah_r_0006_0009__Khan(R_0006_0007__MALIK_R_0006_0008__FARIDULLAH_R_0006_0009__KHAN)
-      &amp; z_000_6_a_voice_of_america_12(Z_000_6_A_VOICE_OF_AMERICA_12)
-      &amp; has_arg0(Z_000_6_A_VOICE_OF_AMERICA_12,R_0006_0007__MALIK_R_0006_0008__FARIDULLAH_R_0006_0009__KHAN)
-      &amp; has_prd(Z_000_6_A_VOICE_OF_AMERICA_12,R_0006_0006__LEADER)
-      &amp; r_0006_0006__leader(R_0006_0006__LEADER)
-      &amp; has_attrib17(R_0006_0006__LEADER,R_0006_0005__TRIBAL)
-      &amp; has_attrib14(R_0006_0006__LEADER,R_0006_0004__PROMINENT)
-      &amp; r_0006_0003__say(R_0006_0003__SAY)
-      &amp; ! [R_0006_0019__WAS_R_0006_0020__AMBUSHED,R_0006_0018__VEHICLE,R_0006_0022__THE_R_0006_0023__KANI_R_0006_0024__WAM_R_0006_0025__AREA,Z_000_6_A_VOICE_OF_AMERICA_57] :
-          ( ( r_0006_0022__the_r_0006_0023__Kani_r_0006_0024__Wam_r_0006_0025__area(R_0006_0022__THE_R_0006_0023__KANI_R_0006_0024__WAM_R_0006_0025__AREA)
-            &amp; z_000_6_a_voice_of_america_57(Z_000_6_A_VOICE_OF_AMERICA_57)
-            &amp; r_0006_0019__was_r_0006_0020__ambushed(R_0006_0019__WAS_R_0006_0020__AMBUSHED)
-            &amp; has_arg0(R_0006_0019__WAS_R_0006_0020__AMBUSHED,Z_000_6_A_VOICE_OF_AMERICA_57)
-            &amp; has_r_0006_0021__in_nim64(R_0006_0019__WAS_R_0006_0020__AMBUSHED,R_0006_0022__THE_R_0006_0023__KANI_R_0006_0024__WAM_R_0006_0025__AREA)
-            &amp; has_arg1(R_0006_0019__WAS_R_0006_0020__AMBUSHED,R_0006_0018__VEHICLE)
-            &amp; r_0006_0018__vehicle(R_0006_0018__VEHICLE)
-            &amp; has_gen(R_0006_0018__VEHICLE,R_0006_0007__MALIK_R_0006_0008__FARIDULLAH_R_0006_0009__KHAN) )
-         =&gt; ? [R_0006_0013__SOUTH_R_0006_0014__WAZIRISTAN,R_0006_0015__SUNDAY,R_0006_0010__WAS_R_0006_0011__TRAVELING] :
-              ( r_0006_0013__South_r_0006_0014__Waziristan(R_0006_0013__SOUTH_R_0006_0014__WAZIRISTAN)
-              &amp; r_0006_0015__Sunday(R_0006_0015__SUNDAY)
-              &amp; r_0006_0010__was_r_0006_0011__traveling(R_0006_0010__WAS_R_0006_0011__TRAVELING)
-              &amp; has_nim41(R_0006_0010__WAS_R_0006_0011__TRAVELING,R_0006_0015__SUNDAY)
-              &amp; has_r_0006_0012__in_clr36(R_0006_0010__WAS_R_0006_0011__TRAVELING,R_0006_0013__SOUTH_R_0006_0014__WAZIRISTAN)
-              &amp; has_arg0(R_0006_0010__WAS_R_0006_0011__TRAVELING,R_0006_0007__MALIK_R_0006_0008__FARIDULLAH_R_0006_0009__KHAN) ) )
-      &amp; has_arg0(R_0006_0003__SAY,R_0006_0001__THE_R_0006_0002__OFFICIALS) ) ).
+    ? [R_6_3_SAY,R_6_1_THE_OFFICIALS,Z_6_A_VOICE_OF_AMERICA_12,R_6_7_MALIK_FARIDULLAH_KHAN,R_6_6_LEADER,R_6_4_PROMINENT,R_6_5_TRIBAL] :
+      ( the_officials(R_6_1_THE_OFFICIALS)
+      &amp; malik_Faridullah_Khan(R_6_7_MALIK_FARIDULLAH_KHAN)
+      &amp; prominent(R_6_4_PROMINENT)
+      &amp; tribal(R_6_5_TRIBAL)
+      &amp; ! [R_6_19_WAS_AMBUSHED,Z_6_A_VOICE_OF_AMERICA_57,R_6_18_VEHICLE,R_6_22_THE_KANI_WAM_AREA] :
+          ( ( the_Kani_Wam_area(R_6_22_THE_KANI_WAM_AREA)
+            &amp; was_ambushed(R_6_19_WAS_AMBUSHED,Z_6_A_VOICE_OF_AMERICA_57,R_6_18_VEHICLE)
+            &amp; vehicle(R_6_18_VEHICLE)
+            &amp; gen(R_6_18_VEHICLE,R_6_7_MALIK_FARIDULLAH_KHAN)
+            &amp; in_nim64(R_6_19_WAS_AMBUSHED,R_6_22_THE_KANI_WAM_AREA) )
+         =&gt; ? [R_6_10_WAS_TRAVELING,R_6_15_SUNDAY,R_6_13_SOUTH_WAZIRISTAN] :
+              ( sunday(R_6_15_SUNDAY)
+              &amp; south_Waziristan(R_6_13_SOUTH_WAZIRISTAN)
+              &amp; was_traveling(R_6_10_WAS_TRAVELING,R_6_7_MALIK_FARIDULLAH_KHAN)
+              &amp; nim41(R_6_10_WAS_TRAVELING,R_6_15_SUNDAY)
+              &amp; in_clr36(R_6_10_WAS_TRAVELING,R_6_13_SOUTH_WAZIRISTAN) ) )
+      &amp; arg1(ARG1)
+      &amp; say(R_6_3_SAY,R_6_1_THE_OFFICIALS)
+      &amp; z_6_a_voice_of_america_12(Z_6_A_VOICE_OF_AMERICA_12,R_6_7_MALIK_FARIDULLAH_KHAN,R_6_6_LEADER)
+      &amp; leader(R_6_6_LEADER)
+      &amp; attrib14(R_6_6_LEADER,R_6_4_PROMINENT)
+      &amp; attrib17(R_6_6_LEADER,R_6_5_TRIBAL) ) ).
 </pre>
 <br><hr><br>
 <svg width="1293pt" height="432pt"

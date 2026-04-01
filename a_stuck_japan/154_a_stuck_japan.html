@@ -289,23 +289,17 @@ arc(r_0154_0010__thought, r_0154_0009__I, arg0).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [UTTERANCE_154_A_STUCK_JAPAN_4,R_0154_0009__I,R_0154_0010__THOUGHT] :
-      ( r_0154_0009__I(R_0154_0009__I)
-      &amp; r_0154_0010__thought(R_0154_0010__THOUGHT)
-      &amp; has_arg0(R_0154_0010__THOUGHT,R_0154_0009__I)
-      &amp; has_arg1(R_0154_0010__THOUGHT,UTTERANCE_154_A_STUCK_JAPAN_4)
-      &amp; utterance_154_a_stuck_japan_4(UTTERANCE_154_A_STUCK_JAPAN_4)
-      &amp; ! [Z_000_154_A_STUCK_JAPAN_12,R_0154_0005__YOU,R_0154_0006__HAVE] :
-          ( ( r_0154_0005__you(R_0154_0005__YOU)
-            &amp; z_000_154_a_stuck_japan_12(Z_000_154_A_STUCK_JAPAN_12)
-            &amp; r_0154_0006__have(R_0154_0006__HAVE)
-            &amp; has_arg1(R_0154_0006__HAVE,Z_000_154_A_STUCK_JAPAN_12)
-            &amp; has_arg0(R_0154_0006__HAVE,R_0154_0005__YOU) )
-         =&gt; ? [R_0154_0003__THAT,R_0154_0002__IS] :
-              ( r_0154_0003__that(R_0154_0003__THAT)
-              &amp; r_0154_0002__Is(R_0154_0002__IS)
-              &amp; has_prd(R_0154_0002__IS,Z_000_154_A_STUCK_JAPAN_12)
-              &amp; has_arg0(R_0154_0002__IS,R_0154_0003__THAT) ) ) ) ).
+    ? [R_154_10_THOUGHT,R_154_9_I,UTTERANCE_154_A_STUCK_JAPAN_4] :
+      ( i(R_154_9_I)
+      &amp; thought(R_154_10_THOUGHT,R_154_9_I,UTTERANCE_154_A_STUCK_JAPAN_4)
+      &amp; ! [R_154_6_HAVE,R_154_5_YOU,Z_154_A_STUCK_JAPAN_12] :
+          ( ( you(R_154_5_YOU)
+            &amp; have(R_154_6_HAVE,R_154_5_YOU,Z_154_A_STUCK_JAPAN_12) )
+         =&gt; ? [R_154_2_IS,R_154_3_THAT] :
+              ( that(R_154_3_THAT)
+              &amp; is(R_154_2_IS,R_154_3_THAT,Z_154_A_STUCK_JAPAN_12) ) )
+      &amp; part1(PART1)
+      &amp; utterance_154_a_stuck_japan_4(UTTERANCE_154_A_STUCK_JAPAN_4) ) ).
 </pre>
 <br><hr><br>
 <svg width="501pt" height="387pt"

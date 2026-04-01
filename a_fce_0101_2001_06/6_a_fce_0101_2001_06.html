@@ -316,26 +316,19 @@ arc(r_0006_0014__the_r_0006_0015__errors, r_0006_0017__the_r_0006_0018__article,
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0006_0001__THEN,R_0006_0003__A_R_0006_0004__LETTER,R_0006_0009__THE_R_0006_0010__NEWSPAPER,R_0006_0006__THE_R_0006_0007__EDITOR,Z_000_6_A_FCE_0101_2001_06_1,R_0006_0002__WRITE] :
-      ( r_0006_0001__Then(R_0006_0001__THEN)
-      &amp; r_0006_0003__a_r_0006_0004__letter(R_0006_0003__A_R_0006_0004__LETTER)
-      &amp; r_0006_0009__the_r_0006_0010__newspaper(R_0006_0009__THE_R_0006_0010__NEWSPAPER)
-      &amp; z_000_6_a_fce_0101_2001_06_1(Z_000_6_A_FCE_0101_2001_06_1)
-      &amp; ! [R_0006_0014__THE_R_0006_0015__ERRORS,R_0006_0017__THE_R_0006_0018__ARTICLE] :
-          ( ( r_0006_0017__the_r_0006_0018__article(R_0006_0017__THE_R_0006_0018__ARTICLE)
-            &amp; r_0006_0014__the_r_0006_0015__errors(R_0006_0014__THE_R_0006_0015__ERRORS)
-            &amp; has_r_0006_0016__in(R_0006_0014__THE_R_0006_0015__ERRORS,R_0006_0017__THE_R_0006_0018__ARTICLE) )
-         =&gt; ? [R_0006_0012__CORRECTING] :
-              ( r_0006_0012__correcting(R_0006_0012__CORRECTING)
-              &amp; has_arg1(R_0006_0012__CORRECTING,R_0006_0014__THE_R_0006_0015__ERRORS)
-              &amp; has_arg0(R_0006_0012__CORRECTING,R_0006_0003__A_R_0006_0004__LETTER) ) )
-      &amp; r_0006_0002__write(R_0006_0002__WRITE)
-      &amp; has_arg0(R_0006_0002__WRITE,Z_000_6_A_FCE_0101_2001_06_1)
-      &amp; has_arg2(R_0006_0002__WRITE,R_0006_0006__THE_R_0006_0007__EDITOR)
-      &amp; r_0006_0006__the_r_0006_0007__editor(R_0006_0006__THE_R_0006_0007__EDITOR)
-      &amp; has_r_0006_0008__of(R_0006_0006__THE_R_0006_0007__EDITOR,R_0006_0009__THE_R_0006_0010__NEWSPAPER)
-      &amp; has_arg1(R_0006_0002__WRITE,R_0006_0003__A_R_0006_0004__LETTER)
-      &amp; has_nim2(R_0006_0002__WRITE,R_0006_0001__THEN) ) ).
+    ? [R_6_2_WRITE,Z_6_A_FCE_101_2001_6_1,R_6_3_A_LETTER,R_6_6_THE_EDITOR,R_6_9_THE_NEWSPAPER,R_6_1_THEN] :
+      ( a_letter(R_6_3_A_LETTER)
+      &amp; the_newspaper(R_6_9_THE_NEWSPAPER)
+      &amp; then(R_6_1_THEN)
+      &amp; write(R_6_2_WRITE,Z_6_A_FCE_101_2001_6_1,R_6_3_A_LETTER,R_6_6_THE_EDITOR)
+      &amp; the_editor(R_6_6_THE_EDITOR)
+      &amp; of(R_6_6_THE_EDITOR,R_6_9_THE_NEWSPAPER)
+      &amp; nim2(R_6_2_WRITE,R_6_1_THEN)
+      &amp; ! [R_6_14_THE_ERRORS,R_6_17_THE_ARTICLE] :
+          ( ( the_article(R_6_17_THE_ARTICLE)
+            &amp; the_errors(R_6_14_THE_ERRORS)
+            &amp; in(R_6_14_THE_ERRORS,R_6_17_THE_ARTICLE) )
+         =&gt; ? [R_6_12_CORRECTING] : correcting(R_6_12_CORRECTING,R_6_3_A_LETTER,R_6_14_THE_ERRORS) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="858pt" height="297pt"

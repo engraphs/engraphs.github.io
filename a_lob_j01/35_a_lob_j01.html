@@ -502,39 +502,30 @@ arc(r_0035_0029__diffusing, r_0035_0031__the_r_0035_0032__electrolyte, r_0035_00
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0035_0027__OXYGEN,R_0035_0028__CONTINUOUSLY,R_0035_0031__THE_R_0035_0032__ELECTROLYTE,R_0035_0029__DIFFUSING] :
-      ( r_0035_0027__oxygen(R_0035_0027__OXYGEN)
-      &amp; r_0035_0028__continuously(R_0035_0028__CONTINUOUSLY)
-      &amp; r_0035_0031__the_r_0035_0032__electrolyte(R_0035_0031__THE_R_0035_0032__ELECTROLYTE)
-      &amp; r_0035_0029__diffusing(R_0035_0029__DIFFUSING)
-      &amp; has_r_0035_0030__through_nim84(R_0035_0029__DIFFUSING,R_0035_0031__THE_R_0035_0032__ELECTROLYTE)
-      &amp; has_nim76(R_0035_0029__DIFFUSING,R_0035_0028__CONTINUOUSLY)
-      &amp; has_arg0(R_0035_0029__DIFFUSING,R_0035_0027__OXYGEN)
-      &amp; ! [R_0035_0007__WERE_R_0035_0008__USED,R_0035_0005__THIS_R_0035_0006__TYPE,R_0035_0003__VOLTMETERS,R_0035_0010__THE_R_0035_0011__NA_R_0035_0013__NA_BSUB_2_AST__BSUB_0_R_0035_0014__CELL,Z_000_35_A_LOB_J01_23] :
-          ( ( r_0035_0005__this_r_0035_0006__type(R_0035_0005__THIS_R_0035_0006__TYPE)
-            &amp; r_0035_0010__the_r_0035_0011__Na_r_0035_0013__Na_bsub_2_ast__bsub_0_r_0035_0014__cell(R_0035_0010__THE_R_0035_0011__NA_R_0035_0013__NA_BSUB_2_AST__BSUB_0_R_0035_0014__CELL)
-            &amp; z_000_35_a_lob_j01_23(Z_000_35_A_LOB_J01_23)
-            &amp; r_0035_0007__were_r_0035_0008__used(R_0035_0007__WERE_R_0035_0008__USED)
-            &amp; has_arg0(R_0035_0007__WERE_R_0035_0008__USED,Z_000_35_A_LOB_J01_23)
-            &amp; has_r_0035_0009__with_nim30(R_0035_0007__WERE_R_0035_0008__USED,R_0035_0010__THE_R_0035_0011__NA_R_0035_0013__NA_BSUB_2_AST__BSUB_0_R_0035_0014__CELL)
-            &amp; has_arg1(R_0035_0007__WERE_R_0035_0008__USED,R_0035_0003__VOLTMETERS)
-            &amp; r_0035_0003__voltmeters(R_0035_0003__VOLTMETERS)
-            &amp; has_r_0035_0004__of(R_0035_0003__VOLTMETERS,R_0035_0005__THIS_R_0035_0006__TYPE) )
-         =&gt; ? [R_0035_0001__THUS,R_0035_0017__POSSIBLE,R_0035_0023__THE_R_0035_0024__CIRCUIT_R_0035_0025__SODIUM,R_0035_0020__THE_R_0035_0021__CONTAMINATION,Z_000_35_A_LOB_J01_41,R_0035_0018__TO_R_0035_0019__ESTIMATE,R_0035_0016__IS] :
-              ( r_0035_0001__Thus(R_0035_0001__THUS)
-              &amp; r_0035_0017__possible(R_0035_0017__POSSIBLE)
-              &amp; z_000_35_a_lob_j01_41(Z_000_35_A_LOB_J01_41)
-              &amp; r_0035_0016__is(R_0035_0016__IS)
-              &amp; has_arg0(R_0035_0016__IS,R_0035_0018__TO_R_0035_0019__ESTIMATE)
-              &amp; r_0035_0018__to_r_0035_0019__estimate(R_0035_0018__TO_R_0035_0019__ESTIMATE)
-              &amp; has_arg0(R_0035_0018__TO_R_0035_0019__ESTIMATE,Z_000_35_A_LOB_J01_41)
-              &amp; has_arg1(R_0035_0018__TO_R_0035_0019__ESTIMATE,R_0035_0020__THE_R_0035_0021__CONTAMINATION)
-              &amp; r_0035_0020__the_r_0035_0021__contamination(R_0035_0020__THE_R_0035_0021__CONTAMINATION)
-              &amp; has_r_0035_0022__of(R_0035_0020__THE_R_0035_0021__CONTAMINATION,R_0035_0023__THE_R_0035_0024__CIRCUIT_R_0035_0025__SODIUM)
-              &amp; r_0035_0023__the_r_0035_0024__circuit_r_0035_0025__sodium(R_0035_0023__THE_R_0035_0024__CIRCUIT_R_0035_0025__SODIUM)
-              &amp; has_r_0035_0026__from(R_0035_0023__THE_R_0035_0024__CIRCUIT_R_0035_0025__SODIUM,R_0035_0027__OXYGEN)
-              &amp; has_prd(R_0035_0016__IS,R_0035_0017__POSSIBLE)
-              &amp; has_nim2(R_0035_0016__IS,R_0035_0001__THUS) ) ) ) ).
+    ? [R_35_29_DIFFUSING,R_35_27_OXYGEN,R_35_28_CONTINUOUSLY,R_35_31_THE_ELECTROLYTE] :
+      ( oxygen(R_35_27_OXYGEN)
+      &amp; continuously(R_35_28_CONTINUOUSLY)
+      &amp; the_electrolyte(R_35_31_THE_ELECTROLYTE)
+      &amp; ! [R_35_7_WERE_USED,Z_35_A_LOB_J01_23,R_35_3_VOLTMETERS,R_35_5_THIS_TYPE,R_35_10_THE_NA_NA_BSUB_2_AST_BSUB_CELL] :
+          ( ( this_type(R_35_5_THIS_TYPE)
+            &amp; the_Na_Na_bsub_2_ast_bsub_cell(R_35_10_THE_NA_NA_BSUB_2_AST_BSUB_CELL)
+            &amp; were_used(R_35_7_WERE_USED,Z_35_A_LOB_J01_23,R_35_3_VOLTMETERS)
+            &amp; voltmeters(R_35_3_VOLTMETERS)
+            &amp; of(R_35_3_VOLTMETERS,R_35_5_THIS_TYPE)
+            &amp; with_nim30(R_35_7_WERE_USED,R_35_10_THE_NA_NA_BSUB_2_AST_BSUB_CELL) )
+         =&gt; ? [R_35_16_IS,R_35_18_TO_ESTIMATE,Z_35_A_LOB_J01_41,R_35_20_THE_CONTAMINATION,R_35_23_THE_CIRCUIT_SODIUM,R_35_1_THUS,R_35_17_POSSIBLE] :
+              ( thus(R_35_1_THUS)
+              &amp; possible(R_35_17_POSSIBLE)
+              &amp; is(R_35_16_IS,R_35_18_TO_ESTIMATE,R_35_17_POSSIBLE)
+              &amp; to_estimate(R_35_18_TO_ESTIMATE,Z_35_A_LOB_J01_41,R_35_20_THE_CONTAMINATION)
+              &amp; the_contamination(R_35_20_THE_CONTAMINATION)
+              &amp; of(R_35_20_THE_CONTAMINATION,R_35_23_THE_CIRCUIT_SODIUM)
+              &amp; the_circuit_sodium(R_35_23_THE_CIRCUIT_SODIUM)
+              &amp; from(R_35_23_THE_CIRCUIT_SODIUM,R_35_27_OXYGEN)
+              &amp; nim2(R_35_16_IS,R_35_1_THUS) ) )
+      &amp; diffusing(R_35_29_DIFFUSING,R_35_27_OXYGEN)
+      &amp; nim76(R_35_29_DIFFUSING,R_35_28_CONTINUOUSLY)
+      &amp; through_nim84(R_35_29_DIFFUSING,R_35_31_THE_ELECTROLYTE) ) ).
 </pre>
 <br><hr><br>
 <svg width="1713pt" height="523pt"

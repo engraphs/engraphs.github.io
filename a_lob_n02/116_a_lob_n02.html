@@ -316,25 +316,22 @@ arc(r_0116_0015__said, r_0116_0016__shortly, nim41).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [UTTERANCE_116_A_LOB_N02_4,R_0116_0014__SHE,R_0116_0016__SHORTLY,R_0116_0015__SAID] :
-      ( r_0116_0014__she(R_0116_0014__SHE)
-      &amp; r_0116_0016__shortly(R_0116_0016__SHORTLY)
-      &amp; r_0116_0015__said(R_0116_0015__SAID)
-      &amp; has_nim41(R_0116_0015__SAID,R_0116_0016__SHORTLY)
-      &amp; has_arg0(R_0116_0015__SAID,R_0116_0014__SHE)
-      &amp; has_arg1(R_0116_0015__SAID,UTTERANCE_116_A_LOB_N02_4)
+    ? [R_116_15_SAID,R_116_14_SHE,UTTERANCE_116_A_LOB_N02_4,R_116_16_SHORTLY] :
+      ( she(R_116_14_SHE)
+      &amp; shortly(R_116_16_SHORTLY)
+      &amp; said(R_116_15_SAID,R_116_14_SHE,UTTERANCE_116_A_LOB_N02_4)
+      &amp; ! [Z_116_A_LOB_N02_29] :
+          ( true
+         =&gt; ? [R_116_3__APOS_VE,R_116_2_YOU,R_116_4_AN_ANSWER,R_116_8_SORTS] :
+              ( you(R_116_2_YOU)
+              &amp; sorts(R_116_8_SORTS)
+              &amp; _apos_ve(R_116_3__APOS_VE,R_116_2_YOU,R_116_4_AN_ANSWER)
+              &amp; an_answer(R_116_4_AN_ANSWER)
+              &amp; of(R_116_4_AN_ANSWER,R_116_8_SORTS)
+              &amp; for_nim29(R_116_3__APOS_VE,Z_116_A_LOB_N02_29) ) )
+      &amp; part1(PART1)
       &amp; utterance_116_a_lob_n02_4(UTTERANCE_116_A_LOB_N02_4)
-      &amp; ! [Z_000_116_A_LOB_N02_29] :
-          ( z_000_116_a_lob_n02_29(Z_000_116_A_LOB_N02_29)
-         =&gt; ? [R_0116_0002__YOU,R_0116_0008__SORTS,R_0116_0004__AN_R_0116_0005__ANSWER,R_0116_0003___APOS_VE] :
-              ( r_0116_0002__You(R_0116_0002__YOU)
-              &amp; r_0116_0008__sorts(R_0116_0008__SORTS)
-              &amp; r_0116_0003___apos_ve(R_0116_0003___APOS_VE)
-              &amp; has_r_0116_0010__for_nim29(R_0116_0003___APOS_VE,Z_000_116_A_LOB_N02_29)
-              &amp; has_arg1(R_0116_0003___APOS_VE,R_0116_0004__AN_R_0116_0005__ANSWER)
-              &amp; r_0116_0004__an_r_0116_0005__answer(R_0116_0004__AN_R_0116_0005__ANSWER)
-              &amp; has_r_0116_0007__of(R_0116_0004__AN_R_0116_0005__ANSWER,R_0116_0008__SORTS)
-              &amp; has_arg0(R_0116_0003___APOS_VE,R_0116_0002__YOU) ) ) ) ).
+      &amp; nim41(R_116_15_SAID,R_116_16_SHORTLY) ) ).
 </pre>
 <br><hr><br>
 <svg width="811pt" height="342pt"

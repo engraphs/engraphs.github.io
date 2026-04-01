@@ -473,37 +473,28 @@ arc(r_0041_0024__to_r_0041_0025__sleep, r_0041_0009__he, arg0).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0041_0005__GOLDEN,R_0041_0004__A_R_0041_0006__BEDROOM,R_0041_0009__HE,R_0041_0003__HAVE,UTTERANCE_41_A_WILDE_1_1888_4,R_0041_0011__SOFTLY,R_0041_0010__SAID,R_0041_0017__ROUND,R_0041_0016__LOOKED,R_0041_0022__TO_R_0041_0023__GO_R_0041_0024__TO_R_0041_0025__SLEEP,R_0041_0021__PREPARED,R_0041_0019__AND,R_0041_0014__AS] :
-      ( r_0041_0005__golden(R_0041_0005__GOLDEN)
-      &amp; r_0041_0009__he(R_0041_0009__HE)
-      &amp; r_0041_0011__softly(R_0041_0011__SOFTLY)
-      &amp; r_0041_0017__round(R_0041_0017__ROUND)
-      &amp; r_0041_0014__as(R_0041_0014__AS)
-      &amp; has_conj1(R_0041_0014__AS,R_0041_0019__AND)
-      &amp; r_0041_0019__and(R_0041_0019__AND)
-      &amp; has_conj2(R_0041_0019__AND,R_0041_0021__PREPARED)
-      &amp; r_0041_0021__prepared(R_0041_0021__PREPARED)
-      &amp; has_arg1(R_0041_0021__PREPARED,R_0041_0022__TO_R_0041_0023__GO_R_0041_0024__TO_R_0041_0025__SLEEP)
-      &amp; r_0041_0022__to_r_0041_0023__go_r_0041_0024__to_r_0041_0025__sleep(R_0041_0022__TO_R_0041_0023__GO_R_0041_0024__TO_R_0041_0025__SLEEP)
-      &amp; has_arg0(R_0041_0022__TO_R_0041_0023__GO_R_0041_0024__TO_R_0041_0025__SLEEP,R_0041_0009__HE)
-      &amp; has_arg0(R_0041_0021__PREPARED,R_0041_0009__HE)
-      &amp; has_conj1(R_0041_0019__AND,R_0041_0016__LOOKED)
-      &amp; r_0041_0016__looked(R_0041_0016__LOOKED)
-      &amp; has_nim48(R_0041_0016__LOOKED,R_0041_0017__ROUND)
-      &amp; has_arg0(R_0041_0016__LOOKED,R_0041_0009__HE)
-      &amp; has_conj2(R_0041_0014__AS,R_0041_0010__SAID)
-      &amp; r_0041_0010__said(R_0041_0010__SAID)
-      &amp; has_nim28(R_0041_0010__SAID,R_0041_0011__SOFTLY)
-      &amp; has_arg2(R_0041_0010__SAID,R_0041_0009__HE)
-      &amp; has_arg0(R_0041_0010__SAID,R_0041_0009__HE)
-      &amp; has_arg1(R_0041_0010__SAID,UTTERANCE_41_A_WILDE_1_1888_4)
+    ? [R_41_14_AS,R_41_19_AND,R_41_16_LOOKED,R_41_17_ROUND,R_41_21_PREPARED,R_41_22_TO_GO_TO_SLEEP,R_41_10_SAID,UTTERANCE_41_A_WILDE_1_1888_4,R_41_3_HAVE,R_41_4_A_BEDROOM,R_41_5_GOLDEN,R_41_9_HE,R_41_11_SOFTLY] :
+      ( round(R_41_17_ROUND)
+      &amp; golden(R_41_5_GOLDEN)
+      &amp; he(R_41_9_HE)
+      &amp; softly(R_41_11_SOFTLY)
+      &amp; as(R_41_14_AS)
+      &amp; conj1(R_41_14_AS,R_41_19_AND)
+      &amp; and(R_41_19_AND)
+      &amp; conj1(R_41_19_AND,R_41_16_LOOKED)
+      &amp; looked(R_41_16_LOOKED,R_41_9_HE)
+      &amp; nim48(R_41_16_LOOKED,R_41_17_ROUND)
+      &amp; conj2(R_41_19_AND,R_41_21_PREPARED)
+      &amp; prepared(R_41_21_PREPARED,R_41_9_HE,R_41_22_TO_GO_TO_SLEEP)
+      &amp; to_go_to_sleep(R_41_22_TO_GO_TO_SLEEP,R_41_9_HE)
+      &amp; conj2(R_41_14_AS,R_41_10_SAID)
+      &amp; said(R_41_10_SAID,R_41_9_HE,UTTERANCE_41_A_WILDE_1_1888_4,R_41_9_HE)
       &amp; utterance_41_a_wilde_1_1888_4(UTTERANCE_41_A_WILDE_1_1888_4)
-      &amp; has_part1(UTTERANCE_41_A_WILDE_1_1888_4,R_0041_0003__HAVE)
-      &amp; r_0041_0003__have(R_0041_0003__HAVE)
-      &amp; has_arg0(R_0041_0003__HAVE,R_0041_0009__HE)
-      &amp; has_arg1(R_0041_0003__HAVE,R_0041_0004__A_R_0041_0006__BEDROOM)
-      &amp; r_0041_0004__a_r_0041_0006__bedroom(R_0041_0004__A_R_0041_0006__BEDROOM)
-      &amp; has_attrib14(R_0041_0004__A_R_0041_0006__BEDROOM,R_0041_0005__GOLDEN) ) ).
+      &amp; part1(UTTERANCE_41_A_WILDE_1_1888_4,R_41_3_HAVE)
+      &amp; have(R_41_3_HAVE,R_41_9_HE,R_41_4_A_BEDROOM)
+      &amp; a_bedroom(R_41_4_A_BEDROOM)
+      &amp; attrib14(R_41_4_A_BEDROOM,R_41_5_GOLDEN)
+      &amp; nim28(R_41_10_SAID,R_41_11_SOFTLY) ) ).
 </pre>
 <br><hr><br>
 <svg width="1097pt" height="432pt"

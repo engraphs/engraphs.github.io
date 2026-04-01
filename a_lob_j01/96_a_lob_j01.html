@@ -358,28 +358,25 @@ arc(r_0096_0015__2_r_0096_0016___percnt__r_0096_0018__nitrate, r_0096_0017__ammo
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0096_0017__AMMONIUM,R_0096_0015__2_R_0096_0016___PERCNT__R_0096_0018__NITRATE,R_0096_0012__100_R_0096_0013__ML,Z_000_96_A_LOB_J01_1,R_0096_0010__STIRRING,R_0096_0009__BY] :
-      ( r_0096_0017__ammonium(R_0096_0017__AMMONIUM)
-      &amp; z_000_96_a_lob_j01_1(Z_000_96_A_LOB_J01_1)
-      &amp; r_0096_0009__by(R_0096_0009__BY)
-      &amp; has_conj1(R_0096_0009__BY,R_0096_0010__STIRRING)
-      &amp; r_0096_0010__stirring(R_0096_0010__STIRRING)
-      &amp; has_arg0(R_0096_0010__STIRRING,Z_000_96_A_LOB_J01_1)
-      &amp; has_r_0096_0011__with_clr31(R_0096_0010__STIRRING,R_0096_0012__100_R_0096_0013__ML)
-      &amp; r_0096_0012__100_r_0096_0013__ml(R_0096_0012__100_R_0096_0013__ML)
-      &amp; has_r_0096_0014__of(R_0096_0012__100_R_0096_0013__ML,R_0096_0015__2_R_0096_0016___PERCNT__R_0096_0018__NITRATE)
-      &amp; r_0096_0015__2_r_0096_0016___percnt__r_0096_0018__nitrate(R_0096_0015__2_R_0096_0016___PERCNT__R_0096_0018__NITRATE)
-      &amp; has_attrib44(R_0096_0015__2_R_0096_0016___PERCNT__R_0096_0018__NITRATE,R_0096_0017__AMMONIUM)
-      &amp; ! [R_0096_0003__PORTION,R_0096_0005__THE_R_0096_0006__PRECIPITATE] :
-          ( ( r_0096_0005__the_r_0096_0006__precipitate(R_0096_0005__THE_R_0096_0006__PRECIPITATE)
-            &amp; r_0096_0003__portion(R_0096_0003__PORTION)
-            &amp; has_r_0096_0004__of(R_0096_0003__PORTION,R_0096_0005__THE_R_0096_0006__PRECIPITATE) )
-         =&gt; ? [R_0096_0007__THREE_R_0096_0008__TIMES,R_0096_0001__WASH] :
-              ( r_0096_0007__three_r_0096_0008__times(R_0096_0007__THREE_R_0096_0008__TIMES)
-              &amp; r_0096_0001__Wash(R_0096_0001__WASH)
-              &amp; has_arg0(R_0096_0001__WASH,Z_000_96_A_LOB_J01_1)
-              &amp; has_nim17(R_0096_0001__WASH,R_0096_0007__THREE_R_0096_0008__TIMES)
-              &amp; has_arg1(R_0096_0001__WASH,R_0096_0003__PORTION) ) ) ) ).
+    ? [R_96_9_BY,R_96_10_STIRRING,Z_96_A_LOB_J01_1,R_96_12_100_ML,R_96_15_2_PERCNT_NITRATE,R_96_17_AMMONIUM] :
+      ( ammonium(R_96_17_AMMONIUM)
+      &amp; ! [R_96_3_PORTION,R_96_5_THE_PRECIPITATE] :
+          ( ( the_precipitate(R_96_5_THE_PRECIPITATE)
+            &amp; portion(R_96_3_PORTION)
+            &amp; of(R_96_3_PORTION,R_96_5_THE_PRECIPITATE) )
+         =&gt; ? [R_96_1_WASH,R_96_7_THREE_TIMES] :
+              ( three_times(R_96_7_THREE_TIMES)
+              &amp; wash(R_96_1_WASH,Z_96_A_LOB_J01_1,R_96_3_PORTION)
+              &amp; nim17(R_96_1_WASH,R_96_7_THREE_TIMES) ) )
+      &amp; conj2(CONJ2)
+      &amp; by(R_96_9_BY)
+      &amp; conj1(R_96_9_BY,R_96_10_STIRRING)
+      &amp; stirring(R_96_10_STIRRING,Z_96_A_LOB_J01_1)
+      &amp; with_clr31(R_96_10_STIRRING,R_96_12_100_ML)
+      &amp; 100_ml(R_96_12_100_ML)
+      &amp; of(R_96_12_100_ML,R_96_15_2_PERCNT_NITRATE)
+      &amp; 2_percnt_nitrate(R_96_15_2_PERCNT_NITRATE)
+      &amp; attrib44(R_96_15_2_PERCNT_NITRATE,R_96_17_AMMONIUM) ) ).
 </pre>
 <br><hr><br>
 <svg width="877pt" height="432pt"

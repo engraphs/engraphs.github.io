@@ -139,14 +139,14 @@ arc(z_000_82_a_ibm_1401_1, r_0082_0002__schools, nim2).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0082_0001__EXECUTIVE,R_0082_0004__MANAGEMENT_R_0082_0005__PERSONNEL,R_0082_0002__SCHOOLS,Z_000_82_A_IBM_1401_1] :
-      ( r_0082_0001__Executive(R_0082_0001__EXECUTIVE)
-      &amp; r_0082_0004__management_r_0082_0005__personnel(R_0082_0004__MANAGEMENT_R_0082_0005__PERSONNEL)
-      &amp; z_000_82_a_ibm_1401_1(Z_000_82_A_IBM_1401_1)
-      &amp; has_nim2(Z_000_82_A_IBM_1401_1,R_0082_0002__SCHOOLS)
-      &amp; r_0082_0002__schools(R_0082_0002__SCHOOLS)
-      &amp; has_r_0082_0003__for(R_0082_0002__SCHOOLS,R_0082_0004__MANAGEMENT_R_0082_0005__PERSONNEL)
-      &amp; has_attrib3(R_0082_0002__SCHOOLS,R_0082_0001__EXECUTIVE) ) ).
+    ? [Z_82_A_IBM_1401_1,R_82_2_SCHOOLS,R_82_1_EXECUTIVE,R_82_4_MANAGEMENT_PERSONNEL] :
+      ( executive(R_82_1_EXECUTIVE)
+      &amp; management_personnel(R_82_4_MANAGEMENT_PERSONNEL)
+      &amp; z_82_a_ibm_1401_1(Z_82_A_IBM_1401_1)
+      &amp; nim2(Z_82_A_IBM_1401_1,R_82_2_SCHOOLS)
+      &amp; schools(R_82_2_SCHOOLS)
+      &amp; attrib3(R_82_2_SCHOOLS,R_82_1_EXECUTIVE)
+      &amp; for(R_82_2_SCHOOLS,R_82_4_MANAGEMENT_PERSONNEL) ) ).
 </pre>
 <br><hr><br>
 <svg width="354pt" height="252pt"

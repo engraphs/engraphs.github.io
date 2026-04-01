@@ -183,17 +183,13 @@ arc(r_0181_0005__talk, r_0181_0001__We, arg0).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0181_0001__WE,R_0181_0003__SIT,R_0181_0005__TALK,R_0181_0004__AND,R_0181_0002__WOULD] :
-      ( r_0181_0001__We(R_0181_0001__WE)
-      &amp; r_0181_0002__would(R_0181_0002__WOULD)
-      &amp; has_keep_scope(R_0181_0002__WOULD,R_0181_0004__AND)
-      &amp; r_0181_0004__and(R_0181_0004__AND)
-      &amp; has_conj2(R_0181_0004__AND,R_0181_0005__TALK)
-      &amp; r_0181_0005__talk(R_0181_0005__TALK)
-      &amp; has_arg0(R_0181_0005__TALK,R_0181_0001__WE)
-      &amp; has_conj1(R_0181_0004__AND,R_0181_0003__SIT)
-      &amp; r_0181_0003__sit(R_0181_0003__SIT)
-      &amp; has_arg0(R_0181_0003__SIT,R_0181_0001__WE) ) ).
+    ~ ? [R_181_4_AND,R_181_3_SIT,R_181_5_TALK,R_181_1_WE] :
+        ( we(R_181_1_WE)
+        &amp; and(R_181_4_AND)
+        &amp; conj1(R_181_4_AND,R_181_3_SIT)
+        &amp; sit(R_181_3_SIT,R_181_1_WE)
+        &amp; conj2(R_181_4_AND,R_181_5_TALK)
+        &amp; talk(R_181_5_TALK,R_181_1_WE) ) ).
 </pre>
 <br><hr><br>
 <svg width="239pt" height="297pt"

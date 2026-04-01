@@ -548,46 +548,39 @@ arc(r_0011_0028__be, r_0011_0029__the_r_0011_0030__case, prd).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0011_0002__DINNER,R_0011_0004__HE,R_0011_0005__HAS_R_0011_0006__SATISFIED,R_0011_0018__PERFECT,R_0011_0019__ORDER,R_0011_0027__USUALLY,R_0011_0029__THE_R_0011_0030__CASE,R_0011_0026__WILL_R_0011_0028__BE] :
-      ( r_0011_0002__dinner(R_0011_0002__DINNER)
-      &amp; r_0011_0004__he(R_0011_0004__HE)
-      &amp; r_0011_0018__perfect(R_0011_0018__PERFECT)
-      &amp; r_0011_0027__usually(R_0011_0027__USUALLY)
-      &amp; r_0011_0029__the_r_0011_0030__case(R_0011_0029__THE_R_0011_0030__CASE)
-      &amp; r_0011_0026__will_r_0011_0028__be(R_0011_0026__WILL_R_0011_0028__BE)
-      &amp; has_prd(R_0011_0026__WILL_R_0011_0028__BE,R_0011_0029__THE_R_0011_0030__CASE)
-      &amp; has_nim81(R_0011_0026__WILL_R_0011_0028__BE,R_0011_0027__USUALLY)
-      &amp; has_arg0(R_0011_0026__WILL_R_0011_0028__BE,R_0011_0019__ORDER)
-      &amp; r_0011_0019__order(R_0011_0019__ORDER)
-      &amp; has_attrib52(R_0011_0019__ORDER,R_0011_0018__PERFECT)
-      &amp; r_0011_0005__has_r_0011_0006__satisfied(R_0011_0005__HAS_R_0011_0006__SATISFIED)
-      &amp; ! [R_0011_0022__NOT] :
-          ( ~ ? [R_0011_0010__LAMPS,R_0011_0012__CANDLES,R_0011_0015__GAS__HYPHEN__BURNERS,R_0011_0014__OR,Z_000_11_A_BEETON_1861_66,R_0011_0023__LIGHTED] :
-                ( r_0011_0010__lamps(R_0011_0010__LAMPS)
-                &amp; r_0011_0012__candles(R_0011_0012__CANDLES)
-                &amp; r_0011_0015__gas__hyphen__burners(R_0011_0015__GAS__HYPHEN__BURNERS)
-                &amp; z_000_11_a_beeton_1861_66(Z_000_11_A_BEETON_1861_66)
-                &amp; r_0011_0023__lighted(R_0011_0023__LIGHTED)
-                &amp; has_arg0(R_0011_0023__LIGHTED,Z_000_11_A_BEETON_1861_66)
-                &amp; has_arg1(R_0011_0023__LIGHTED,R_0011_0014__OR)
-                &amp; r_0011_0014__or(R_0011_0014__OR)
-                &amp; has_conj3(R_0011_0014__OR,R_0011_0015__GAS__HYPHEN__BURNERS)
-                &amp; has_conj2(R_0011_0014__OR,R_0011_0012__CANDLES)
-                &amp; has_conj1(R_0011_0014__OR,R_0011_0010__LAMPS) )
-         =&gt; ? [R_0011_0010__LAMPS,R_0011_0012__CANDLES,R_0011_0015__GAS__HYPHEN__BURNERS,R_0011_0014__OR,R_0011_0008__THAT_R_0011_0016__ARE] :
-              ( r_0011_0010__lamps(R_0011_0010__LAMPS)
-              &amp; r_0011_0012__candles(R_0011_0012__CANDLES)
-              &amp; r_0011_0015__gas__hyphen__burners(R_0011_0015__GAS__HYPHEN__BURNERS)
-              &amp; r_0011_0008__that_r_0011_0016__are(R_0011_0008__THAT_R_0011_0016__ARE)
-              &amp; has_r_0011_0017__in_clr51(R_0011_0008__THAT_R_0011_0016__ARE,R_0011_0019__ORDER)
-              &amp; has_arg0(R_0011_0008__THAT_R_0011_0016__ARE,R_0011_0014__OR)
-              &amp; r_0011_0014__or(R_0011_0014__OR)
-              &amp; has_conj3(R_0011_0014__OR,R_0011_0015__GAS__HYPHEN__BURNERS)
-              &amp; has_conj2(R_0011_0014__OR,R_0011_0012__CANDLES)
-              &amp; has_conj1(R_0011_0014__OR,R_0011_0010__LAMPS) ) )
-      &amp; has_arg2(R_0011_0005__HAS_R_0011_0006__SATISFIED,R_0011_0004__HE)
-      &amp; has_arg0(R_0011_0005__HAS_R_0011_0006__SATISFIED,R_0011_0004__HE)
-      &amp; has_r_0011_0001__Before_nim5(R_0011_0005__HAS_R_0011_0006__SATISFIED,R_0011_0002__DINNER) ) ).
+    ? [R_11_5_HAS_SATISFIED,R_11_4_HE,R_11_2_DINNER,R_11_26_WILL_BE,R_11_19_ORDER,R_11_18_PERFECT,R_11_27_USUALLY,R_11_29_THE_CASE] :
+      ( he(R_11_4_HE)
+      &amp; dinner(R_11_2_DINNER)
+      &amp; perfect(R_11_18_PERFECT)
+      &amp; usually(R_11_27_USUALLY)
+      &amp; the_case(R_11_29_THE_CASE)
+      &amp; ( ~ ? [R_11_23_LIGHTED,Z_11_A_BEETON_1861_66,R_11_14_OR,R_11_10_LAMPS,R_11_12_CANDLES,R_11_15_GAS_HYPHEN_BURNERS] :
+              ( lamps(R_11_10_LAMPS)
+              &amp; candles(R_11_12_CANDLES)
+              &amp; gas_hyphen_burners(R_11_15_GAS_HYPHEN_BURNERS)
+              &amp; lighted(R_11_23_LIGHTED,Z_11_A_BEETON_1861_66,R_11_14_OR)
+              &amp; or(R_11_14_OR)
+              &amp; conj1(R_11_14_OR,R_11_10_LAMPS)
+              &amp; conj2(R_11_14_OR,R_11_12_CANDLES)
+              &amp; conj3(R_11_14_OR,R_11_15_GAS_HYPHEN_BURNERS) )
+       =&gt; ? [R_11_8_THAT_ARE,R_11_14_OR,R_11_10_LAMPS,R_11_12_CANDLES,R_11_15_GAS_HYPHEN_BURNERS] :
+            ( lamps(R_11_10_LAMPS)
+            &amp; candles(R_11_12_CANDLES)
+            &amp; gas_hyphen_burners(R_11_15_GAS_HYPHEN_BURNERS)
+            &amp; that_are(R_11_8_THAT_ARE,R_11_14_OR)
+            &amp; or(R_11_14_OR)
+            &amp; conj1(R_11_14_OR,R_11_10_LAMPS)
+            &amp; conj2(R_11_14_OR,R_11_12_CANDLES)
+            &amp; conj3(R_11_14_OR,R_11_15_GAS_HYPHEN_BURNERS)
+            &amp; in_clr51(R_11_8_THAT_ARE,R_11_19_ORDER) ) )
+      &amp; arg1(ARG1)
+      &amp; has_satisfied(R_11_5_HAS_SATISFIED,R_11_4_HE)
+      &amp; arg2(R_11_5_HAS_SATISFIED,R_11_4_HE)
+      &amp; before_nim5(R_11_5_HAS_SATISFIED,R_11_2_DINNER)
+      &amp; will_be(R_11_26_WILL_BE,R_11_19_ORDER,R_11_29_THE_CASE)
+      &amp; order(R_11_19_ORDER)
+      &amp; attrib52(R_11_19_ORDER,R_11_18_PERFECT)
+      &amp; nim81(R_11_26_WILL_BE,R_11_27_USUALLY) ) ).
 </pre>
 <br><hr><br>
 <svg width="1382pt" height="432pt"

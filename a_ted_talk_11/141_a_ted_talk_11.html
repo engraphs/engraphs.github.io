@@ -424,32 +424,25 @@ arc(r_0141_0021__education, r_0141_0020__public, attrib60).
 </svg>
 <pre>
 fof(formula,axiom,
-    ! [R_0141_0003__WERE,R_0141_0002__YOU,R_0141_0006__EDUCATION,R_0141_0009__AN_R_0141_0010__ALIEN,R_0141_0005__VISIT,R_0141_0015__WHAT,R_0141_0020__PUBLIC,R_0141_0021__EDUCATION,R_0141_0016___APOS_S,UTTERANCE_141_A_TED_TALK_11_41,R_0141_0013__SAY,R_0141_0012__AND] :
-      ( ( r_0141_0002__you(R_0141_0002__YOU)
-        &amp; r_0141_0006__education(R_0141_0006__EDUCATION)
-        &amp; r_0141_0009__an_r_0141_0010__alien(R_0141_0009__AN_R_0141_0010__ALIEN)
-        &amp; r_0141_0015__What(R_0141_0015__WHAT)
-        &amp; r_0141_0020__public(R_0141_0020__PUBLIC)
-        &amp; r_0141_0003__were(R_0141_0003__WERE)
-        &amp; has_keep_scope(R_0141_0003__WERE,R_0141_0012__AND)
-        &amp; r_0141_0012__and(R_0141_0012__AND)
-        &amp; has_conj2(R_0141_0012__AND,R_0141_0013__SAY)
-        &amp; r_0141_0013__say(R_0141_0013__SAY)
-        &amp; has_arg0(R_0141_0013__SAY,R_0141_0002__YOU)
-        &amp; has_arg1(R_0141_0013__SAY,UTTERANCE_141_A_TED_TALK_11_41)
-        &amp; utterance_141_a_ted_talk_11_41(UTTERANCE_141_A_TED_TALK_11_41)
-        &amp; has_part1(UTTERANCE_141_A_TED_TALK_11_41,R_0141_0016___APOS_S)
-        &amp; r_0141_0016___apos_s(R_0141_0016___APOS_S)
-        &amp; has_arg0(R_0141_0016___APOS_S,R_0141_0021__EDUCATION)
-        &amp; r_0141_0021__education(R_0141_0021__EDUCATION)
-        &amp; has_attrib60(R_0141_0021__EDUCATION,R_0141_0020__PUBLIC)
-        &amp; has_r_0141_0018__for_clr55(R_0141_0016___APOS_S,R_0141_0015__WHAT)
-        &amp; has_conj1(R_0141_0012__AND,R_0141_0005__VISIT)
-        &amp; r_0141_0005__visit(R_0141_0005__VISIT)
-        &amp; has_r_0141_0008__as_nim26(R_0141_0005__VISIT,R_0141_0009__AN_R_0141_0010__ALIEN)
-        &amp; has_arg1(R_0141_0005__VISIT,R_0141_0006__EDUCATION)
-        &amp; has_arg0(R_0141_0005__VISIT,R_0141_0002__YOU) )
-     =&gt; ? [Z_000_141_A_TED_TALK_11_1] : z_000_141_a_ted_talk_11_1(Z_000_141_A_TED_TALK_11_1) ) ).
+    ( ~ ? [R_141_12_AND,R_141_5_VISIT,R_141_6_EDUCATION,R_141_9_AN_ALIEN,R_141_13_SAY,R_141_2_YOU,UTTERANCE_141_A_TED_TALK_11_41,R_141_16__APOS_S,R_141_21_EDUCATION,R_141_20_PUBLIC,R_141_15_WHAT] :
+          ( education(R_141_6_EDUCATION)
+          &amp; an_alien(R_141_9_AN_ALIEN)
+          &amp; you(R_141_2_YOU)
+          &amp; public(R_141_20_PUBLIC)
+          &amp; what(R_141_15_WHAT)
+          &amp; and(R_141_12_AND)
+          &amp; conj1(R_141_12_AND,R_141_5_VISIT)
+          &amp; visit(R_141_5_VISIT,R_141_2_YOU,R_141_6_EDUCATION)
+          &amp; as_nim26(R_141_5_VISIT,R_141_9_AN_ALIEN)
+          &amp; conj2(R_141_12_AND,R_141_13_SAY)
+          &amp; say(R_141_13_SAY,R_141_2_YOU,UTTERANCE_141_A_TED_TALK_11_41)
+          &amp; utterance_141_a_ted_talk_11_41(UTTERANCE_141_A_TED_TALK_11_41)
+          &amp; part1(UTTERANCE_141_A_TED_TALK_11_41,R_141_16__APOS_S)
+          &amp; _apos_s(R_141_16__APOS_S,R_141_21_EDUCATION)
+          &amp; education(R_141_21_EDUCATION)
+          &amp; attrib60(R_141_21_EDUCATION,R_141_20_PUBLIC)
+          &amp; for_clr55(R_141_16__APOS_S,R_141_15_WHAT) )
+   =&gt; ? [Z_141_A_TED_TALK_11_1] : true ) ).
 </pre>
 <br><hr><br>
 <svg width="1014pt" height="613pt"

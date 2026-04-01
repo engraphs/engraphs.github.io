@@ -553,40 +553,32 @@ arc(r_0006_0025__overcome, r_0006_0005__this_r_0006_0006__disease, arg1).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0006_0001__TOGETHER,R_0006_0002__WE,R_0006_0005__THIS_R_0006_0006__DISEASE,R_0006_0003__ARE_R_0006_0004__TACKLING,R_0006_0009__I,R_0006_0013__YOU,R_0006_0011__TO_R_0006_0012__REASSURE,R_0006_0010__WANT,R_0006_0008__AND] :
-      ( r_0006_0001__Together(R_0006_0001__TOGETHER)
-      &amp; r_0006_0002__we(R_0006_0002__WE)
-      &amp; r_0006_0005__this_r_0006_0006__disease(R_0006_0005__THIS_R_0006_0006__DISEASE)
-      &amp; r_0006_0009__I(R_0006_0009__I)
-      &amp; r_0006_0013__you(R_0006_0013__YOU)
-      &amp; r_0006_0008__and(R_0006_0008__AND)
-      &amp; has_conj2(R_0006_0008__AND,R_0006_0010__WANT)
-      &amp; r_0006_0010__want(R_0006_0010__WANT)
-      &amp; has_arg1(R_0006_0010__WANT,R_0006_0011__TO_R_0006_0012__REASSURE)
-      &amp; r_0006_0011__to_r_0006_0012__reassure(R_0006_0011__TO_R_0006_0012__REASSURE)
-      &amp; ! [R_0006_0017__REMAIN,R_0006_0018__UNITED,R_0006_0020__RESOLUTE,R_0006_0019__AND] :
-          ( ( r_0006_0018__united(R_0006_0018__UNITED)
-            &amp; r_0006_0020__resolute(R_0006_0020__RESOLUTE)
-            &amp; r_0006_0017__remain(R_0006_0017__REMAIN)
-            &amp; has_prd(R_0006_0017__REMAIN,R_0006_0019__AND)
-            &amp; r_0006_0019__and(R_0006_0019__AND)
-            &amp; has_conj2(R_0006_0019__AND,R_0006_0020__RESOLUTE)
-            &amp; has_conj1(R_0006_0019__AND,R_0006_0018__UNITED)
-            &amp; has_arg0(R_0006_0017__REMAIN,R_0006_0002__WE) )
-         =&gt; ? [R_0006_0022__THEN,R_0006_0014__THAT_R_0006_0024__WILL_R_0006_0025__OVERCOME] :
-              ( r_0006_0022__then(R_0006_0022__THEN)
-              &amp; r_0006_0014__that_r_0006_0024__will_r_0006_0025__overcome(R_0006_0014__THAT_R_0006_0024__WILL_R_0006_0025__OVERCOME)
-              &amp; has_arg1(R_0006_0014__THAT_R_0006_0024__WILL_R_0006_0025__OVERCOME,R_0006_0005__THIS_R_0006_0006__DISEASE)
-              &amp; has_arg0(R_0006_0014__THAT_R_0006_0024__WILL_R_0006_0025__OVERCOME,R_0006_0002__WE)
-              &amp; has_nim65(R_0006_0014__THAT_R_0006_0024__WILL_R_0006_0025__OVERCOME,R_0006_0022__THEN) ) )
-      &amp; has_arg2(R_0006_0011__TO_R_0006_0012__REASSURE,R_0006_0013__YOU)
-      &amp; has_arg0(R_0006_0011__TO_R_0006_0012__REASSURE,R_0006_0009__I)
-      &amp; has_arg0(R_0006_0010__WANT,R_0006_0009__I)
-      &amp; has_conj1(R_0006_0008__AND,R_0006_0003__ARE_R_0006_0004__TACKLING)
-      &amp; r_0006_0003__are_r_0006_0004__tackling(R_0006_0003__ARE_R_0006_0004__TACKLING)
-      &amp; has_arg1(R_0006_0003__ARE_R_0006_0004__TACKLING,R_0006_0005__THIS_R_0006_0006__DISEASE)
-      &amp; has_arg0(R_0006_0003__ARE_R_0006_0004__TACKLING,R_0006_0002__WE)
-      &amp; has_nim4(R_0006_0003__ARE_R_0006_0004__TACKLING,R_0006_0001__TOGETHER) ) ).
+    ? [R_6_8_AND,R_6_3_ARE_TACKLING,R_6_2_WE,R_6_5_THIS_DISEASE,R_6_1_TOGETHER,R_6_10_WANT,R_6_11_TO_REASSURE,R_6_9_I,R_6_13_YOU] :
+      ( we(R_6_2_WE)
+      &amp; this_disease(R_6_5_THIS_DISEASE)
+      &amp; together(R_6_1_TOGETHER)
+      &amp; i(R_6_9_I)
+      &amp; you(R_6_13_YOU)
+      &amp; and(R_6_8_AND)
+      &amp; conj1(R_6_8_AND,R_6_3_ARE_TACKLING)
+      &amp; are_tackling(R_6_3_ARE_TACKLING,R_6_2_WE,R_6_5_THIS_DISEASE)
+      &amp; nim4(R_6_3_ARE_TACKLING,R_6_1_TOGETHER)
+      &amp; conj2(R_6_8_AND,R_6_10_WANT)
+      &amp; want(R_6_10_WANT,R_6_9_I,R_6_11_TO_REASSURE)
+      &amp; ! [R_6_17_REMAIN,R_6_19_AND,R_6_18_UNITED,R_6_20_RESOLUTE] :
+          ( ( united(R_6_18_UNITED)
+            &amp; resolute(R_6_20_RESOLUTE)
+            &amp; remain(R_6_17_REMAIN,R_6_2_WE,R_6_19_AND)
+            &amp; and(R_6_19_AND)
+            &amp; conj1(R_6_19_AND,R_6_18_UNITED)
+            &amp; conj2(R_6_19_AND,R_6_20_RESOLUTE) )
+         =&gt; ? [R_6_14_THAT_WILL_OVERCOME,R_6_22_THEN] :
+              ( then(R_6_22_THEN)
+              &amp; that_will_overcome(R_6_14_THAT_WILL_OVERCOME,R_6_2_WE,R_6_5_THIS_DISEASE)
+              &amp; nim65(R_6_14_THAT_WILL_OVERCOME,R_6_22_THEN) ) )
+      &amp; arg1(ARG1)
+      &amp; to_reassure(R_6_11_TO_REASSURE,R_6_9_I)
+      &amp; arg2(R_6_11_TO_REASSURE,R_6_13_YOU) ) ).
 </pre>
 <br><hr><br>
 <svg width="1136pt" height="658pt"

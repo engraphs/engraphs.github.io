@@ -372,29 +372,21 @@ arc(r_0017_0015__disperse, r_0017_0016__gatherings, arg1).
 </svg>
 <pre>
 fof(formula,axiom,
-    ! [R_0017_0005__BREAK,R_0017_0004__PEOPLE,R_0017_0006__THE_R_0017_0007__RULES] :
-      ( ( r_0017_0004__people(R_0017_0004__PEOPLE)
-        &amp; r_0017_0006__the_r_0017_0007__rules(R_0017_0006__THE_R_0017_0007__RULES)
-        &amp; r_0017_0005__break(R_0017_0005__BREAK)
-        &amp; has_arg1(R_0017_0005__BREAK,R_0017_0006__THE_R_0017_0007__RULES)
-        &amp; has_arg0(R_0017_0005__BREAK,R_0017_0004__PEOPLE) )
-     =&gt; ? [R_0017_0001__SO,R_0017_0009__THE_R_0017_0010__POLICE,R_0017_0013__FINES,R_0017_0012__ISSUE,R_0017_0016__GATHERINGS,R_0017_0015__DISPERSE,R_0017_0014__AND,R_0017_0011__WILL] :
-          ( r_0017_0001__So(R_0017_0001__SO)
-          &amp; r_0017_0009__the_r_0017_0010__police(R_0017_0009__THE_R_0017_0010__POLICE)
-          &amp; r_0017_0013__fines(R_0017_0013__FINES)
-          &amp; r_0017_0016__gatherings(R_0017_0016__GATHERINGS)
-          &amp; r_0017_0011__will(R_0017_0011__WILL)
-          &amp; has_keep_scope(R_0017_0011__WILL,R_0017_0014__AND)
-          &amp; r_0017_0014__and(R_0017_0014__AND)
-          &amp; has_conj2(R_0017_0014__AND,R_0017_0015__DISPERSE)
-          &amp; r_0017_0015__disperse(R_0017_0015__DISPERSE)
-          &amp; has_arg1(R_0017_0015__DISPERSE,R_0017_0016__GATHERINGS)
-          &amp; has_arg0(R_0017_0015__DISPERSE,R_0017_0009__THE_R_0017_0010__POLICE)
-          &amp; has_conj1(R_0017_0014__AND,R_0017_0012__ISSUE)
-          &amp; r_0017_0012__issue(R_0017_0012__ISSUE)
-          &amp; has_arg1(R_0017_0012__ISSUE,R_0017_0013__FINES)
-          &amp; has_arg0(R_0017_0012__ISSUE,R_0017_0009__THE_R_0017_0010__POLICE)
-          &amp; has_nim2(R_0017_0011__WILL,R_0017_0001__SO) ) ) ).
+    ! [R_17_5_BREAK,R_17_4_PEOPLE,R_17_6_THE_RULES] :
+      ( ( people(R_17_4_PEOPLE)
+        &amp; the_rules(R_17_6_THE_RULES)
+        &amp; break(R_17_5_BREAK,R_17_4_PEOPLE,R_17_6_THE_RULES) )
+     =&gt; ? [R_17_1_SO] :
+          ( so(R_17_1_SO)
+          &amp; ? [R_17_14_AND,R_17_12_ISSUE,R_17_13_FINES,R_17_15_DISPERSE,R_17_9_THE_POLICE,R_17_16_GATHERINGS] :
+              ( fines(R_17_13_FINES)
+              &amp; the_police(R_17_9_THE_POLICE)
+              &amp; gatherings(R_17_16_GATHERINGS)
+              &amp; and(R_17_14_AND)
+              &amp; conj1(R_17_14_AND,R_17_12_ISSUE)
+              &amp; issue(R_17_12_ISSUE,R_17_9_THE_POLICE,R_17_13_FINES)
+              &amp; conj2(R_17_14_AND,R_17_15_DISPERSE)
+              &amp; disperse(R_17_15_DISPERSE,R_17_9_THE_POLICE,R_17_16_GATHERINGS) ) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="704pt" height="342pt"

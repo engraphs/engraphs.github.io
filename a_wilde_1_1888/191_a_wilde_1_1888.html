@@ -498,38 +498,31 @@ arc(r_0191_0024__lands, r_0191_0023__strange, attrib68).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0191_0005__HE,R_0191_0023__STRANGE,R_0191_0024__LANDS,Z_000_191_A_WILDE_1_1888_49,R_0191_0020__HAD_R_0191_0021__SEEN] :
-      ( r_0191_0005__he(R_0191_0005__HE)
-      &amp; r_0191_0023__strange(R_0191_0023__STRANGE)
-      &amp; z_000_191_a_wilde_1_1888_49(Z_000_191_A_WILDE_1_1888_49)
-      &amp; r_0191_0020__had_r_0191_0021__seen(R_0191_0020__HAD_R_0191_0021__SEEN)
-      &amp; has_arg1(R_0191_0020__HAD_R_0191_0021__SEEN,Z_000_191_A_WILDE_1_1888_49)
-      &amp; has_r_0191_0022__in_nim67(R_0191_0020__HAD_R_0191_0021__SEEN,R_0191_0024__LANDS)
-      &amp; r_0191_0024__lands(R_0191_0024__LANDS)
-      &amp; has_attrib68(R_0191_0024__LANDS,R_0191_0023__STRANGE)
-      &amp; has_arg0(R_0191_0020__HAD_R_0191_0021__SEEN,R_0191_0005__HE)
-      &amp; ! [R_0191_0002__THE_R_0191_0004__DAY,R_0191_0003__NEXT] :
-          ( ( r_0191_0003__next(R_0191_0003__NEXT)
-            &amp; r_0191_0002__the_r_0191_0004__day(R_0191_0002__THE_R_0191_0004__DAY)
-            &amp; has_attrib7(R_0191_0002__THE_R_0191_0004__DAY,R_0191_0003__NEXT) )
-         =&gt; ? [R_0191_0008__THE_R_0191_0009__PRINCE_R_0191_0010___APOS_S,R_0191_0011__SHOULDER,R_0191_0006__SAT,R_0191_0016__STORIES,R_0191_0014__TOLD,R_0191_0013__AND] :
-              ( r_0191_0008__the_r_0191_0009__Prince_r_0191_0010___apos_s(R_0191_0008__THE_R_0191_0009__PRINCE_R_0191_0010___APOS_S)
-              &amp; r_0191_0013__and(R_0191_0013__AND)
-              &amp; has_conj2(R_0191_0013__AND,R_0191_0014__TOLD)
-              &amp; r_0191_0014__told(R_0191_0014__TOLD)
-              &amp; has_arg1(R_0191_0014__TOLD,R_0191_0016__STORIES)
-              &amp; r_0191_0016__stories(R_0191_0016__STORIES)
-              &amp; has_r_0191_0017__of(R_0191_0016__STORIES,Z_000_191_A_WILDE_1_1888_49)
-              &amp; has_arg2(R_0191_0014__TOLD,R_0191_0008__THE_R_0191_0009__PRINCE_R_0191_0010___APOS_S)
-              &amp; has_arg0(R_0191_0014__TOLD,R_0191_0005__HE)
-              &amp; has_nim2(R_0191_0014__TOLD,R_0191_0002__THE_R_0191_0004__DAY)
-              &amp; has_conj1(R_0191_0013__AND,R_0191_0006__SAT)
-              &amp; r_0191_0006__sat(R_0191_0006__SAT)
-              &amp; has_r_0191_0007__on_clr22(R_0191_0006__SAT,R_0191_0011__SHOULDER)
-              &amp; r_0191_0011__shoulder(R_0191_0011__SHOULDER)
-              &amp; has_gen(R_0191_0011__SHOULDER,R_0191_0008__THE_R_0191_0009__PRINCE_R_0191_0010___APOS_S)
-              &amp; has_arg0(R_0191_0006__SAT,R_0191_0005__HE)
-              &amp; has_nim2(R_0191_0006__SAT,R_0191_0002__THE_R_0191_0004__DAY) ) ) ) ).
+    ? [R_191_20_HAD_SEEN,R_191_5_HE,Z_191_A_WILDE_1_1888_49,R_191_24_LANDS,R_191_23_STRANGE] :
+      ( he(R_191_5_HE)
+      &amp; strange(R_191_23_STRANGE)
+      &amp; ! [R_191_2_THE_DAY,R_191_3_NEXT] :
+          ( ( next(R_191_3_NEXT)
+            &amp; the_day(R_191_2_THE_DAY)
+            &amp; attrib7(R_191_2_THE_DAY,R_191_3_NEXT) )
+         =&gt; ? [R_191_13_AND,R_191_6_SAT,R_191_11_SHOULDER,R_191_14_TOLD,R_191_16_STORIES,R_191_8_THE_PRINCE_APOS_S] :
+              ( the_Prince_apos_s(R_191_8_THE_PRINCE_APOS_S)
+              &amp; and(R_191_13_AND)
+              &amp; conj1(R_191_13_AND,R_191_6_SAT)
+              &amp; sat(R_191_6_SAT,R_191_5_HE)
+              &amp; nim2(R_191_6_SAT,R_191_2_THE_DAY)
+              &amp; on_clr22(R_191_6_SAT,R_191_11_SHOULDER)
+              &amp; shoulder(R_191_11_SHOULDER)
+              &amp; gen(R_191_11_SHOULDER,R_191_8_THE_PRINCE_APOS_S)
+              &amp; conj2(R_191_13_AND,R_191_14_TOLD)
+              &amp; told(R_191_14_TOLD,R_191_5_HE,R_191_16_STORIES,R_191_8_THE_PRINCE_APOS_S)
+              &amp; stories(R_191_16_STORIES)
+              &amp; of(R_191_16_STORIES,Z_191_A_WILDE_1_1888_49)
+              &amp; nim2(R_191_14_TOLD,R_191_2_THE_DAY) ) )
+      &amp; had_seen(R_191_20_HAD_SEEN,R_191_5_HE,Z_191_A_WILDE_1_1888_49)
+      &amp; in_nim67(R_191_20_HAD_SEEN,R_191_24_LANDS)
+      &amp; lands(R_191_24_LANDS)
+      &amp; attrib68(R_191_24_LANDS,R_191_23_STRANGE) ) ).
 </pre>
 <br><hr><br>
 <svg width="1072pt" height="613pt"

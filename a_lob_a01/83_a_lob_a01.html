@@ -304,25 +304,20 @@ arc(r_0083_0014__and, r_0083_0015__children, conj2).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0083_0003__THE_R_0083_0004__DRUG_R_0083_0005__PROFITS,Z_000_83_A_LOB_A01_1,R_0083_0002__PROBE,R_0083_0006__AND] :
-      ( r_0083_0003__the_r_0083_0004__drug_r_0083_0005__profits(R_0083_0003__THE_R_0083_0004__DRUG_R_0083_0005__PROFITS)
-      &amp; z_000_83_a_lob_a01_1(Z_000_83_A_LOB_A01_1)
-      &amp; r_0083_0006__and(R_0083_0006__AND)
-      &amp; has_conj2(R_0083_0006__AND,R_0083_0008__N_APOS_T)
-      &amp; ~ ? [R_0083_0013__MOTHERS,R_0083_0015__CHILDREN,R_0083_0014__AND,R_0083_0007__DO_R_0083_0009__TAKE_R_0083_0011__OUT] :
-            ( r_0083_0013__mothers(R_0083_0013__MOTHERS)
-            &amp; r_0083_0015__children(R_0083_0015__CHILDREN)
-            &amp; r_0083_0007__do_r_0083_0009__take_r_0083_0011__out(R_0083_0007__DO_R_0083_0009__TAKE_R_0083_0011__OUT)
-            &amp; has_arg0(R_0083_0007__DO_R_0083_0009__TAKE_R_0083_0011__OUT,Z_000_83_A_LOB_A01_1)
-            &amp; has_r_0083_0012__of_nim33(R_0083_0007__DO_R_0083_0009__TAKE_R_0083_0011__OUT,R_0083_0014__AND)
-            &amp; r_0083_0014__and(R_0083_0014__AND)
-            &amp; has_conj2(R_0083_0014__AND,R_0083_0015__CHILDREN)
-            &amp; has_conj1(R_0083_0014__AND,R_0083_0013__MOTHERS)
-            &amp; has_arg1(R_0083_0007__DO_R_0083_0009__TAKE_R_0083_0011__OUT,R_0083_0003__THE_R_0083_0004__DRUG_R_0083_0005__PROFITS) )
-      &amp; has_conj1(R_0083_0006__AND,R_0083_0002__PROBE)
-      &amp; r_0083_0002__Probe(R_0083_0002__PROBE)
-      &amp; has_arg0(R_0083_0002__PROBE,Z_000_83_A_LOB_A01_1)
-      &amp; has_arg1(R_0083_0002__PROBE,R_0083_0003__THE_R_0083_0004__DRUG_R_0083_0005__PROFITS) ) ).
+    ? [R_83_6_AND,R_83_2_PROBE,Z_83_A_LOB_A01_1,R_83_3_THE_DRUG_PROFITS] :
+      ( the_drug_profits(R_83_3_THE_DRUG_PROFITS)
+      &amp; and(R_83_6_AND)
+      &amp; conj1(R_83_6_AND,R_83_2_PROBE)
+      &amp; probe(R_83_2_PROBE,Z_83_A_LOB_A01_1,R_83_3_THE_DRUG_PROFITS)
+      &amp; conj2(R_83_6_AND,R_83_8_N_APOS_T)
+      &amp; ~ ? [R_83_7_DO_TAKE_OUT,R_83_14_AND,R_83_13_MOTHERS,R_83_15_CHILDREN] :
+            ( mothers(R_83_13_MOTHERS)
+            &amp; children(R_83_15_CHILDREN)
+            &amp; do_take_out(R_83_7_DO_TAKE_OUT,Z_83_A_LOB_A01_1,R_83_3_THE_DRUG_PROFITS)
+            &amp; of_nim33(R_83_7_DO_TAKE_OUT,R_83_14_AND)
+            &amp; and(R_83_14_AND)
+            &amp; conj1(R_83_14_AND,R_83_13_MOTHERS)
+            &amp; conj2(R_83_14_AND,R_83_15_CHILDREN) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="731pt" height="478pt"

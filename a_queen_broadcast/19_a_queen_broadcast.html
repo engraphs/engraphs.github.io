@@ -293,22 +293,19 @@ arc(r_0019_0012__one, r_0019_0001__We, r_0019_0013__of).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0019_0001__WE,R_0019_0002__WILL_R_0019_0003__SUCCEED,R_0019_0008__WILL,R_0019_0005__AND] :
-      ( r_0019_0001__We(R_0019_0001__WE)
-      &amp; r_0019_0005__and(R_0019_0005__AND)
-      &amp; has_conj2(R_0019_0005__AND,R_0019_0008__WILL)
-      &amp; r_0019_0008__will(R_0019_0008__WILL)
-      &amp; ! [R_0019_0012__ONE] :
-          ( ( r_0019_0012__one(R_0019_0012__ONE)
-            &amp; has_r_0019_0013__of(R_0019_0012__ONE,R_0019_0001__WE) )
-         =&gt; ? [R_0019_0006__THAT_R_0019_0007__SUCCESS,R_0019_0009__BELONG] :
-              ( r_0019_0006__that_r_0019_0007__success(R_0019_0006__THAT_R_0019_0007__SUCCESS)
-              &amp; r_0019_0009__belong(R_0019_0009__BELONG)
-              &amp; has_r_0019_0010__to_clr31(R_0019_0009__BELONG,R_0019_0012__ONE)
-              &amp; has_arg0(R_0019_0009__BELONG,R_0019_0006__THAT_R_0019_0007__SUCCESS) ) )
-      &amp; has_conj1(R_0019_0005__AND,R_0019_0002__WILL_R_0019_0003__SUCCEED)
-      &amp; r_0019_0002__will_r_0019_0003__succeed(R_0019_0002__WILL_R_0019_0003__SUCCEED)
-      &amp; has_arg0(R_0019_0002__WILL_R_0019_0003__SUCCEED,R_0019_0001__WE) ) ).
+    ? [R_19_5_AND,R_19_2_WILL_SUCCEED,R_19_1_WE] :
+      ( we(R_19_1_WE)
+      &amp; and(R_19_5_AND)
+      &amp; conj1(R_19_5_AND,R_19_2_WILL_SUCCEED)
+      &amp; will_succeed(R_19_2_WILL_SUCCEED,R_19_1_WE)
+      &amp; conj2(R_19_5_AND,R_19_8_WILL)
+      &amp; ~ ! [R_19_12_ONE] :
+            ( ( one(R_19_12_ONE)
+              &amp; of(R_19_12_ONE,R_19_1_WE) )
+           =&gt; ? [R_19_9_BELONG,R_19_6_THAT_SUCCESS] :
+                ( that_success(R_19_6_THAT_SUCCESS)
+                &amp; belong(R_19_9_BELONG,R_19_6_THAT_SUCCESS)
+                &amp; to_clr31(R_19_9_BELONG,R_19_12_ONE) ) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="624pt" height="478pt"

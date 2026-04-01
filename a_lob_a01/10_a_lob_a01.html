@@ -496,36 +496,32 @@ arc(r_0010_0023__an_r_0010_0025__number, r_0010_0027__members, r_0010_0026__of).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0010_0013__LORDS,R_0010_0018__REMAINS,R_0010_0019__LABOUR,R_0010_0024__ADEQUATE,R_0010_0027__MEMBERS,R_0010_0023__AN_R_0010_0025__NUMBER,R_0010_0020__HAS_R_0010_0021__TO_R_0010_0022__HAVE,R_0010_0016__WHILE,R_0010_0015__BUT] :
-      ( r_0010_0013__Lords(R_0010_0013__LORDS)
-      &amp; r_0010_0019__labour(R_0010_0019__LABOUR)
-      &amp; r_0010_0024__adequate(R_0010_0024__ADEQUATE)
-      &amp; r_0010_0027__members(R_0010_0027__MEMBERS)
-      &amp; r_0010_0015__but(R_0010_0015__BUT)
-      &amp; has_conj2(R_0010_0015__BUT,R_0010_0016__WHILE)
-      &amp; r_0010_0016__while(R_0010_0016__WHILE)
-      &amp; has_conj2(R_0010_0016__WHILE,R_0010_0020__HAS_R_0010_0021__TO_R_0010_0022__HAVE)
-      &amp; r_0010_0020__has_r_0010_0021__to_r_0010_0022__have(R_0010_0020__HAS_R_0010_0021__TO_R_0010_0022__HAVE)
-      &amp; has_arg1(R_0010_0020__HAS_R_0010_0021__TO_R_0010_0022__HAVE,R_0010_0023__AN_R_0010_0025__NUMBER)
-      &amp; r_0010_0023__an_r_0010_0025__number(R_0010_0023__AN_R_0010_0025__NUMBER)
-      &amp; has_r_0010_0026__of(R_0010_0023__AN_R_0010_0025__NUMBER,R_0010_0027__MEMBERS)
-      &amp; has_attrib66(R_0010_0023__AN_R_0010_0025__NUMBER,R_0010_0024__ADEQUATE)
-      &amp; has_arg0(R_0010_0020__HAS_R_0010_0021__TO_R_0010_0022__HAVE,R_0010_0019__LABOUR)
-      &amp; has_conj1(R_0010_0016__WHILE,R_0010_0018__REMAINS)
-      &amp; r_0010_0018__remains(R_0010_0018__REMAINS)
-      &amp; has_arg0(R_0010_0018__REMAINS,R_0010_0013__LORDS)
-      &amp; ! [R_0010_0002__LABOUR_R_0010_0003__SENTIMENT] :
-          ( r_0010_0002__labour_r_0010_0003__sentiment(R_0010_0002__LABOUR_R_0010_0003__SENTIMENT)
-         =&gt; ? [R_0010_0005__STILL,R_0010_0010__THE_R_0010_0011__HOUSE,R_0010_0007__THE_R_0010_0008__ABOLITION,R_0010_0004__WOULD_R_0010_0006__FAVOUR] :
-              ( r_0010_0005__still(R_0010_0005__STILL)
-              &amp; r_0010_0004__would_r_0010_0006__favour(R_0010_0004__WOULD_R_0010_0006__FAVOUR)
-              &amp; has_arg1(R_0010_0004__WOULD_R_0010_0006__FAVOUR,R_0010_0007__THE_R_0010_0008__ABOLITION)
-              &amp; r_0010_0007__the_r_0010_0008__abolition(R_0010_0007__THE_R_0010_0008__ABOLITION)
-              &amp; has_r_0010_0009__of(R_0010_0007__THE_R_0010_0008__ABOLITION,R_0010_0010__THE_R_0010_0011__HOUSE)
-              &amp; r_0010_0010__the_r_0010_0011__House(R_0010_0010__THE_R_0010_0011__HOUSE)
-              &amp; has_r_0010_0012__of(R_0010_0010__THE_R_0010_0011__HOUSE,R_0010_0013__LORDS)
-              &amp; has_nim14(R_0010_0004__WOULD_R_0010_0006__FAVOUR,R_0010_0005__STILL)
-              &amp; has_arg0(R_0010_0004__WOULD_R_0010_0006__FAVOUR,R_0010_0002__LABOUR_R_0010_0003__SENTIMENT) ) ) ) ).
+    ? [R_10_15_BUT,R_10_16_WHILE,R_10_18_REMAINS,R_10_13_LORDS,R_10_20_HAS_TO_HAVE,R_10_19_LABOUR,R_10_23_AN_NUMBER,R_10_24_ADEQUATE,R_10_27_MEMBERS] :
+      ( lords(R_10_13_LORDS)
+      &amp; labour(R_10_19_LABOUR)
+      &amp; adequate(R_10_24_ADEQUATE)
+      &amp; members(R_10_27_MEMBERS)
+      &amp; ! [R_10_2_LABOUR_SENTIMENT] :
+          ( labour_sentiment(R_10_2_LABOUR_SENTIMENT)
+         =&gt; ? [R_10_4_WOULD_FAVOUR,R_10_7_THE_ABOLITION,R_10_10_THE_HOUSE,R_10_5_STILL] :
+              ( still(R_10_5_STILL)
+              &amp; would_favour(R_10_4_WOULD_FAVOUR,R_10_2_LABOUR_SENTIMENT,R_10_7_THE_ABOLITION)
+              &amp; the_abolition(R_10_7_THE_ABOLITION)
+              &amp; of(R_10_7_THE_ABOLITION,R_10_10_THE_HOUSE)
+              &amp; the_House(R_10_10_THE_HOUSE)
+              &amp; of(R_10_10_THE_HOUSE,R_10_13_LORDS)
+              &amp; nim14(R_10_4_WOULD_FAVOUR,R_10_5_STILL) ) )
+      &amp; conj1(CONJ1)
+      &amp; but(R_10_15_BUT)
+      &amp; conj2(R_10_15_BUT,R_10_16_WHILE)
+      &amp; while(R_10_16_WHILE)
+      &amp; conj1(R_10_16_WHILE,R_10_18_REMAINS)
+      &amp; remains(R_10_18_REMAINS,R_10_13_LORDS)
+      &amp; conj2(R_10_16_WHILE,R_10_20_HAS_TO_HAVE)
+      &amp; has_to_have(R_10_20_HAS_TO_HAVE,R_10_19_LABOUR,R_10_23_AN_NUMBER)
+      &amp; an_number(R_10_23_AN_NUMBER)
+      &amp; attrib66(R_10_23_AN_NUMBER,R_10_24_ADEQUATE)
+      &amp; of(R_10_23_AN_NUMBER,R_10_27_MEMBERS) ) ).
 </pre>
 <br><hr><br>
 <svg width="1262pt" height="478pt"

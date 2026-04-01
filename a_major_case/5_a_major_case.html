@@ -263,19 +263,16 @@ arc(r_0005_0008__filed, z_000_5_a_major_case_23, arg0).
 </svg>
 <pre>
 fof(formula,axiom,
-    ! [R_0005_0004__OR,R_0005_0002__WITNESS_R_0005_0003__STATEMENTS,R_0005_0005__AFFIDAVITS] :
-      ( ( r_0005_0002__witness_r_0005_0003__statements(R_0005_0002__WITNESS_R_0005_0003__STATEMENTS)
-        &amp; r_0005_0005__affidavits(R_0005_0005__AFFIDAVITS)
-        &amp; r_0005_0004__or(R_0005_0004__OR)
-        &amp; has_conj2(R_0005_0004__OR,R_0005_0005__AFFIDAVITS)
-        &amp; has_conj1(R_0005_0004__OR,R_0005_0002__WITNESS_R_0005_0003__STATEMENTS) )
-     =&gt; ? [R_0005_0010__THAT_R_0005_0011__EFFECT,Z_000_5_A_MAJOR_CASE_23,R_0005_0006__HAVE_R_0005_0007__BEEN_R_0005_0008__FILED] :
-          ( r_0005_0010__that_r_0005_0011__effect(R_0005_0010__THAT_R_0005_0011__EFFECT)
-          &amp; z_000_5_a_major_case_23(Z_000_5_A_MAJOR_CASE_23)
-          &amp; r_0005_0006__have_r_0005_0007__been_r_0005_0008__filed(R_0005_0006__HAVE_R_0005_0007__BEEN_R_0005_0008__FILED)
-          &amp; has_arg0(R_0005_0006__HAVE_R_0005_0007__BEEN_R_0005_0008__FILED,Z_000_5_A_MAJOR_CASE_23)
-          &amp; has_r_0005_0009__to_nim30(R_0005_0006__HAVE_R_0005_0007__BEEN_R_0005_0008__FILED,R_0005_0010__THAT_R_0005_0011__EFFECT)
-          &amp; has_arg1(R_0005_0006__HAVE_R_0005_0007__BEEN_R_0005_0008__FILED,R_0005_0004__OR) ) ) ).
+    ! [R_5_4_OR,R_5_2_WITNESS_STATEMENTS,R_5_5_AFFIDAVITS] :
+      ( ( witness_statements(R_5_2_WITNESS_STATEMENTS)
+        &amp; affidavits(R_5_5_AFFIDAVITS)
+        &amp; or(R_5_4_OR)
+        &amp; conj1(R_5_4_OR,R_5_2_WITNESS_STATEMENTS)
+        &amp; conj2(R_5_4_OR,R_5_5_AFFIDAVITS) )
+     =&gt; ? [R_5_6_HAVE_BEEN_FILED,Z_5_A_MAJOR_CASE_23,R_5_10_THAT_EFFECT] :
+          ( that_effect(R_5_10_THAT_EFFECT)
+          &amp; have_been_filed(R_5_6_HAVE_BEEN_FILED,Z_5_A_MAJOR_CASE_23,R_5_4_OR)
+          &amp; to_nim30(R_5_6_HAVE_BEEN_FILED,R_5_10_THAT_EFFECT) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="576pt" height="297pt"

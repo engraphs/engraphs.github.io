@@ -642,48 +642,40 @@ arc(r_0084_0039__traffic, r_0084_0041__the_r_0084_0042__A31, r_0084_0040__on).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0084_0027__HORSE,R_0084_0030__CARTS,R_0084_0029__DRAWN] :
-      ( r_0084_0027__horse(R_0084_0027__HORSE)
-      &amp; r_0084_0030__carts(R_0084_0030__CARTS)
-      &amp; r_0084_0029__drawn(R_0084_0029__DRAWN)
-      &amp; has_arg1(R_0084_0029__DRAWN,R_0084_0030__CARTS)
-      &amp; has_arg0(R_0084_0029__DRAWN,R_0084_0027__HORSE)
-      &amp; ! [R_0084_0001__AN_R_0084_0004__DAY_R_0084_0005__EVENT,R_0084_0008__150TH,R_0084_0011__ROPLEY_R_0084_0012__SCHOOL,R_0084_0007__THE_R_0084_0009__ANNIVERSARY,R_0084_0006__CELEBRATING] :
-          ( ( r_0084_0001__An_r_0084_0004__day_r_0084_0005__event(R_0084_0001__AN_R_0084_0004__DAY_R_0084_0005__EVENT)
-            &amp; r_0084_0008__150th(R_0084_0008__150TH)
-            &amp; r_0084_0011__Ropley_r_0084_0012__School(R_0084_0011__ROPLEY_R_0084_0012__SCHOOL)
-            &amp; r_0084_0006__celebrating(R_0084_0006__CELEBRATING)
-            &amp; has_arg1(R_0084_0006__CELEBRATING,R_0084_0007__THE_R_0084_0009__ANNIVERSARY)
-            &amp; r_0084_0007__the_r_0084_0009__anniversary(R_0084_0007__THE_R_0084_0009__ANNIVERSARY)
-            &amp; has_r_0084_0010__of(R_0084_0007__THE_R_0084_0009__ANNIVERSARY,R_0084_0011__ROPLEY_R_0084_0012__SCHOOL)
-            &amp; has_attrib19(R_0084_0007__THE_R_0084_0009__ANNIVERSARY,R_0084_0008__150TH)
-            &amp; has_arg0(R_0084_0006__CELEBRATING,R_0084_0001__AN_R_0084_0004__DAY_R_0084_0005__EVENT) )
-         =&gt; ! [R_0084_0038__SLOWED,R_0084_0021__ROPLEY,R_0084_0023__BISHOPS_R_0084_0024__SUTTON,R_0084_0035__VICTORIAN,R_0084_0036__COSTUME,R_0084_0033__CHILDREN,R_0084_0032__AND,R_0084_0018__A_R_0084_0019__PROCESSION,R_0084_0041__THE_R_0084_0042__A31,R_0084_0039__TRAFFIC] :
-              ( ( r_0084_0021__Ropley(R_0084_0021__ROPLEY)
-                &amp; r_0084_0023__Bishops_r_0084_0024__Sutton(R_0084_0023__BISHOPS_R_0084_0024__SUTTON)
-                &amp; r_0084_0035__Victorian(R_0084_0035__VICTORIAN)
-                &amp; r_0084_0041__the_r_0084_0042__A31(R_0084_0041__THE_R_0084_0042__A31)
-                &amp; r_0084_0038__slowed(R_0084_0038__SLOWED)
-                &amp; has_arg1(R_0084_0038__SLOWED,R_0084_0039__TRAFFIC)
-                &amp; r_0084_0039__traffic(R_0084_0039__TRAFFIC)
-                &amp; has_r_0084_0040__on(R_0084_0039__TRAFFIC,R_0084_0041__THE_R_0084_0042__A31)
-                &amp; has_arg0(R_0084_0038__SLOWED,R_0084_0018__A_R_0084_0019__PROCESSION)
-                &amp; r_0084_0018__a_r_0084_0019__procession(R_0084_0018__A_R_0084_0019__PROCESSION)
-                &amp; has_r_0084_0026__of(R_0084_0018__A_R_0084_0019__PROCESSION,R_0084_0032__AND)
-                &amp; r_0084_0032__and(R_0084_0032__AND)
-                &amp; has_conj2(R_0084_0032__AND,R_0084_0033__CHILDREN)
-                &amp; r_0084_0033__children(R_0084_0033__CHILDREN)
-                &amp; has_r_0084_0034__in(R_0084_0033__CHILDREN,R_0084_0036__COSTUME)
-                &amp; r_0084_0036__costume(R_0084_0036__COSTUME)
-                &amp; has_attrib94(R_0084_0036__COSTUME,R_0084_0035__VICTORIAN)
-                &amp; has_conj1(R_0084_0032__AND,R_0084_0030__CARTS)
-                &amp; has_r_0084_0022__to(R_0084_0018__A_R_0084_0019__PROCESSION,R_0084_0023__BISHOPS_R_0084_0024__SUTTON)
-                &amp; has_r_0084_0020__from(R_0084_0018__A_R_0084_0019__PROCESSION,R_0084_0021__ROPLEY) )
-             =&gt; ? [R_0084_0014__ANOTHER_R_0084_0015__HIGHLIGHT,R_0084_0013__IS] :
-                  ( r_0084_0014__another_r_0084_0015__highlight(R_0084_0014__ANOTHER_R_0084_0015__HIGHLIGHT)
-                  &amp; r_0084_0013__is(R_0084_0013__IS)
-                  &amp; has_prd(R_0084_0013__IS,R_0084_0014__ANOTHER_R_0084_0015__HIGHLIGHT)
-                  &amp; has_arg0(R_0084_0013__IS,R_0084_0001__AN_R_0084_0004__DAY_R_0084_0005__EVENT) ) ) ) ) ).
+    ? [R_84_29_DRAWN,R_84_27_HORSE,R_84_30_CARTS] :
+      ( horse(R_84_27_HORSE)
+      &amp; carts(R_84_30_CARTS)
+      &amp; ! [R_84_6_CELEBRATING,R_84_1_AN_DAY_EVENT,R_84_7_THE_ANNIVERSARY,R_84_8_150TH,R_84_11_ROPLEY_SCHOOL] :
+          ( ( an_day_event(R_84_1_AN_DAY_EVENT)
+            &amp; 150th(R_84_8_150TH)
+            &amp; ropley_School(R_84_11_ROPLEY_SCHOOL)
+            &amp; celebrating(R_84_6_CELEBRATING,R_84_1_AN_DAY_EVENT,R_84_7_THE_ANNIVERSARY)
+            &amp; the_anniversary(R_84_7_THE_ANNIVERSARY)
+            &amp; attrib19(R_84_7_THE_ANNIVERSARY,R_84_8_150TH)
+            &amp; of(R_84_7_THE_ANNIVERSARY,R_84_11_ROPLEY_SCHOOL) )
+         =&gt; ! [R_84_38_SLOWED,R_84_18_A_PROCESSION,R_84_21_ROPLEY,R_84_23_BISHOPS_SUTTON,R_84_32_AND,R_84_33_CHILDREN,R_84_36_COSTUME,R_84_35_VICTORIAN,R_84_39_TRAFFIC,R_84_41_THE_A31] :
+              ( ( ropley(R_84_21_ROPLEY)
+                &amp; bishops_Sutton(R_84_23_BISHOPS_SUTTON)
+                &amp; victorian(R_84_35_VICTORIAN)
+                &amp; the_A31(R_84_41_THE_A31)
+                &amp; slowed(R_84_38_SLOWED,R_84_18_A_PROCESSION,R_84_39_TRAFFIC)
+                &amp; a_procession(R_84_18_A_PROCESSION)
+                &amp; from(R_84_18_A_PROCESSION,R_84_21_ROPLEY)
+                &amp; to(R_84_18_A_PROCESSION,R_84_23_BISHOPS_SUTTON)
+                &amp; of(R_84_18_A_PROCESSION,R_84_32_AND)
+                &amp; and(R_84_32_AND)
+                &amp; conj1(R_84_32_AND,R_84_30_CARTS)
+                &amp; conj2(R_84_32_AND,R_84_33_CHILDREN)
+                &amp; children(R_84_33_CHILDREN)
+                &amp; in(R_84_33_CHILDREN,R_84_36_COSTUME)
+                &amp; costume(R_84_36_COSTUME)
+                &amp; attrib94(R_84_36_COSTUME,R_84_35_VICTORIAN)
+                &amp; traffic(R_84_39_TRAFFIC)
+                &amp; on(R_84_39_TRAFFIC,R_84_41_THE_A31) )
+             =&gt; ? [R_84_13_IS,R_84_14_ANOTHER_HIGHLIGHT] :
+                  ( another_highlight(R_84_14_ANOTHER_HIGHLIGHT)
+                  &amp; is(R_84_13_IS,R_84_1_AN_DAY_EVENT,R_84_14_ANOTHER_HIGHLIGHT) ) ) )
+      &amp; drawn(R_84_29_DRAWN,R_84_27_HORSE,R_84_30_CARTS) ) ).
 </pre>
 <br><hr><br>
 <svg width="1897pt" height="613pt"

@@ -332,25 +332,20 @@ arc(r_0048_0020__said, r_0048_0019__he, arg0).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0048_0019__HE,R_0048_0020__SAID] :
-      ( r_0048_0019__he(R_0048_0019__HE)
-      &amp; r_0048_0020__said(R_0048_0020__SAID)
-      &amp; has_arg0(R_0048_0020__SAID,R_0048_0019__HE)
-      &amp; ! [R_0048_0012__NOT] :
-          ( ~ ? [R_0048_0007__A_R_0048_0008__STATUE,R_0048_0014__THE_R_0048_0015__RAIN,R_0048_0011__CAN_R_0048_0013__KEEP_R_0048_0016__OFF] :
-                ( r_0048_0007__a_r_0048_0008__statue(R_0048_0007__A_R_0048_0008__STATUE)
-                &amp; r_0048_0014__the_r_0048_0015__rain(R_0048_0014__THE_R_0048_0015__RAIN)
-                &amp; r_0048_0011__can_r_0048_0013__keep_r_0048_0016__off(R_0048_0011__CAN_R_0048_0013__KEEP_R_0048_0016__OFF)
-                &amp; has_arg1(R_0048_0011__CAN_R_0048_0013__KEEP_R_0048_0016__OFF,R_0048_0014__THE_R_0048_0015__RAIN)
-                &amp; has_arg0(R_0048_0011__CAN_R_0048_0013__KEEP_R_0048_0016__OFF,R_0048_0007__A_R_0048_0008__STATUE) )
-         =&gt; ? [R_0048_0002__WHAT,R_0048_0007__A_R_0048_0008__STATUE,R_0048_0004__THE_R_0048_0005__USE,R_0048_0003__IS] :
-              ( r_0048_0002__What(R_0048_0002__WHAT)
-              &amp; r_0048_0007__a_r_0048_0008__statue(R_0048_0007__A_R_0048_0008__STATUE)
-              &amp; r_0048_0003__is(R_0048_0003__IS)
-              &amp; has_prd(R_0048_0003__IS,R_0048_0004__THE_R_0048_0005__USE)
-              &amp; r_0048_0004__the_r_0048_0005__use(R_0048_0004__THE_R_0048_0005__USE)
-              &amp; has_r_0048_0006__of(R_0048_0004__THE_R_0048_0005__USE,R_0048_0007__A_R_0048_0008__STATUE)
-              &amp; has_arg0(R_0048_0003__IS,R_0048_0002__WHAT) ) ) ) ).
+    ? [R_48_20_SAID,R_48_19_HE] :
+      ( he(R_48_19_HE)
+      &amp; ( ~ ? [R_48_11_CAN_KEEP_OFF,R_48_7_A_STATUE,R_48_14_THE_RAIN] :
+              ( a_statue(R_48_7_A_STATUE)
+              &amp; the_rain(R_48_14_THE_RAIN)
+              &amp; can_keep_off(R_48_11_CAN_KEEP_OFF,R_48_7_A_STATUE,R_48_14_THE_RAIN) )
+       =&gt; ? [R_48_3_IS,R_48_2_WHAT,R_48_4_THE_USE,R_48_7_A_STATUE] :
+            ( what(R_48_2_WHAT)
+            &amp; a_statue(R_48_7_A_STATUE)
+            &amp; is(R_48_3_IS,R_48_2_WHAT,R_48_4_THE_USE)
+            &amp; the_use(R_48_4_THE_USE)
+            &amp; of(R_48_4_THE_USE,R_48_7_A_STATUE) ) )
+      &amp; arg1(ARG1)
+      &amp; said(R_48_20_SAID,R_48_19_HE) ) ).
 </pre>
 <br><hr><br>
 <svg width="841pt" height="387pt"

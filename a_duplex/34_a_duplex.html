@@ -183,17 +183,14 @@ arc(r_0034_0008__replied, r_0034_0006__the_r_0034_0007__voice, arg0).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0034_0003__A_R_0034_0004__BEAT,R_0034_0006__THE_R_0034_0007__VOICE,R_0034_0002__MISSING,R_0034_0008__REPLIED,R_0034_0001__WITHOUT] :
-      ( r_0034_0003__a_r_0034_0004__beat(R_0034_0003__A_R_0034_0004__BEAT)
-      &amp; r_0034_0006__the_r_0034_0007__voice(R_0034_0006__THE_R_0034_0007__VOICE)
-      &amp; r_0034_0001__Without(R_0034_0001__WITHOUT)
-      &amp; has_conj2(R_0034_0001__WITHOUT,R_0034_0008__REPLIED)
-      &amp; r_0034_0008__replied(R_0034_0008__REPLIED)
-      &amp; has_arg0(R_0034_0008__REPLIED,R_0034_0006__THE_R_0034_0007__VOICE)
-      &amp; has_conj1(R_0034_0001__WITHOUT,R_0034_0002__MISSING)
-      &amp; r_0034_0002__missing(R_0034_0002__MISSING)
-      &amp; has_arg0(R_0034_0002__MISSING,R_0034_0006__THE_R_0034_0007__VOICE)
-      &amp; has_arg1(R_0034_0002__MISSING,R_0034_0003__A_R_0034_0004__BEAT) ) ).
+    ? [R_34_1_WITHOUT,R_34_2_MISSING,R_34_3_A_BEAT,R_34_8_REPLIED,R_34_6_THE_VOICE] :
+      ( a_beat(R_34_3_A_BEAT)
+      &amp; the_voice(R_34_6_THE_VOICE)
+      &amp; without(R_34_1_WITHOUT)
+      &amp; conj1(R_34_1_WITHOUT,R_34_2_MISSING)
+      &amp; missing(R_34_2_MISSING,R_34_6_THE_VOICE,R_34_3_A_BEAT)
+      &amp; conj2(R_34_1_WITHOUT,R_34_8_REPLIED)
+      &amp; replied(R_34_8_REPLIED,R_34_6_THE_VOICE) ) ).
 </pre>
 <br><hr><br>
 <svg width="1074pt" height="387pt"

@@ -521,38 +521,31 @@ arc(r_0023_0021__given, z_000_23_a_driver_handbook_61, arg0).
 </svg>
 <pre>
 fof(formula,axiom,
-    ! [R_0023_0013__BY,R_0023_0004__YOU,R_0023_0007__NORMAL,R_0023_0009__REASONABLE,R_0023_0008__AND,R_0023_0012__TRAFFIC,R_0023_0006__THE_R_0023_0010__MOVEMENT,R_0023_0005__BLOCK,R_0023_0015__TOO,R_0023_0016__SLOWLY,R_0023_0014__DRIVING] :
-      ( ( r_0023_0004__you(R_0023_0004__YOU)
-        &amp; r_0023_0007__normal(R_0023_0007__NORMAL)
-        &amp; r_0023_0009__reasonable(R_0023_0009__REASONABLE)
-        &amp; r_0023_0012__traffic(R_0023_0012__TRAFFIC)
-        &amp; r_0023_0015__too(R_0023_0015__TOO)
-        &amp; r_0023_0013__by(R_0023_0013__BY)
-        &amp; has_conj1(R_0023_0013__BY,R_0023_0014__DRIVING)
-        &amp; r_0023_0014__driving(R_0023_0014__DRIVING)
-        &amp; has_nim44(R_0023_0014__DRIVING,R_0023_0016__SLOWLY)
-        &amp; r_0023_0016__slowly(R_0023_0016__SLOWLY)
-        &amp; has_qual45(R_0023_0016__SLOWLY,R_0023_0015__TOO)
-        &amp; has_arg0(R_0023_0014__DRIVING,R_0023_0004__YOU)
-        &amp; has_conj2(R_0023_0013__BY,R_0023_0005__BLOCK)
-        &amp; r_0023_0005__block(R_0023_0005__BLOCK)
-        &amp; has_arg1(R_0023_0005__BLOCK,R_0023_0006__THE_R_0023_0010__MOVEMENT)
-        &amp; r_0023_0006__the_r_0023_0010__movement(R_0023_0006__THE_R_0023_0010__MOVEMENT)
-        &amp; has_r_0023_0011__of(R_0023_0006__THE_R_0023_0010__MOVEMENT,R_0023_0012__TRAFFIC)
-        &amp; has_attrib19(R_0023_0006__THE_R_0023_0010__MOVEMENT,R_0023_0008__AND)
-        &amp; r_0023_0008__and(R_0023_0008__AND)
-        &amp; has_conj2(R_0023_0008__AND,R_0023_0009__REASONABLE)
-        &amp; has_conj1(R_0023_0008__AND,R_0023_0007__NORMAL)
-        &amp; has_arg0(R_0023_0005__BLOCK,R_0023_0004__YOU) )
-     =&gt; ? [R_0023_0001__HOWEVER,R_0023_0022__A_R_0023_0023__TICKET,Z_000_23_A_DRIVER_HANDBOOK_61,R_0023_0019__MAY_R_0023_0020__BE_R_0023_0021__GIVEN] :
-          ( r_0023_0001__However(R_0023_0001__HOWEVER)
-          &amp; r_0023_0022__a_r_0023_0023__ticket(R_0023_0022__A_R_0023_0023__TICKET)
-          &amp; z_000_23_a_driver_handbook_61(Z_000_23_A_DRIVER_HANDBOOK_61)
-          &amp; r_0023_0019__may_r_0023_0020__be_r_0023_0021__given(R_0023_0019__MAY_R_0023_0020__BE_R_0023_0021__GIVEN)
-          &amp; has_arg0(R_0023_0019__MAY_R_0023_0020__BE_R_0023_0021__GIVEN,Z_000_23_A_DRIVER_HANDBOOK_61)
-          &amp; has_arg1(R_0023_0019__MAY_R_0023_0020__BE_R_0023_0021__GIVEN,R_0023_0022__A_R_0023_0023__TICKET)
-          &amp; has_arg2(R_0023_0019__MAY_R_0023_0020__BE_R_0023_0021__GIVEN,R_0023_0004__YOU)
-          &amp; has_nim2(R_0023_0019__MAY_R_0023_0020__BE_R_0023_0021__GIVEN,R_0023_0001__HOWEVER) ) ) ).
+    ! [R_23_13_BY,R_23_14_DRIVING,R_23_16_SLOWLY,R_23_15_TOO,R_23_5_BLOCK,R_23_4_YOU,R_23_6_THE_MOVEMENT,R_23_8_AND,R_23_7_NORMAL,R_23_9_REASONABLE,R_23_12_TRAFFIC] :
+      ( ( too(R_23_15_TOO)
+        &amp; you(R_23_4_YOU)
+        &amp; normal(R_23_7_NORMAL)
+        &amp; reasonable(R_23_9_REASONABLE)
+        &amp; traffic(R_23_12_TRAFFIC)
+        &amp; by(R_23_13_BY)
+        &amp; conj1(R_23_13_BY,R_23_14_DRIVING)
+        &amp; driving(R_23_14_DRIVING,R_23_4_YOU)
+        &amp; nim44(R_23_14_DRIVING,R_23_16_SLOWLY)
+        &amp; slowly(R_23_16_SLOWLY)
+        &amp; qual45(R_23_16_SLOWLY,R_23_15_TOO)
+        &amp; conj2(R_23_13_BY,R_23_5_BLOCK)
+        &amp; block(R_23_5_BLOCK,R_23_4_YOU,R_23_6_THE_MOVEMENT)
+        &amp; the_movement(R_23_6_THE_MOVEMENT)
+        &amp; attrib19(R_23_6_THE_MOVEMENT,R_23_8_AND)
+        &amp; and(R_23_8_AND)
+        &amp; conj1(R_23_8_AND,R_23_7_NORMAL)
+        &amp; conj2(R_23_8_AND,R_23_9_REASONABLE)
+        &amp; of(R_23_6_THE_MOVEMENT,R_23_12_TRAFFIC) )
+     =&gt; ? [R_23_19_MAY_BE_GIVEN,Z_23_A_DRIVER_HANDBOOK_61,R_23_22_A_TICKET,R_23_1_HOWEVER] :
+          ( a_ticket(R_23_22_A_TICKET)
+          &amp; however(R_23_1_HOWEVER)
+          &amp; may_be_given(R_23_19_MAY_BE_GIVEN,Z_23_A_DRIVER_HANDBOOK_61,R_23_22_A_TICKET,R_23_4_YOU)
+          &amp; nim2(R_23_19_MAY_BE_GIVEN,R_23_1_HOWEVER) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="1084pt" height="432pt"

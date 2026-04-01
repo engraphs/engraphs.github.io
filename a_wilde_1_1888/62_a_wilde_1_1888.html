@@ -438,34 +438,28 @@ arc(r_0062_0017__be, r_0062_0018__happiness, prd).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0062_0001__MY,R_0062_0002__COURTIERS,R_0062_0004__ME,R_0062_0006__HAPPY,R_0062_0005__THE_R_0062_0007__PRINCE,R_0062_0003__CALLED,R_0062_0009__AND] :
-      ( r_0062_0001__My(R_0062_0001__MY)
-      &amp; r_0062_0004__me(R_0062_0004__ME)
-      &amp; r_0062_0006__Happy(R_0062_0006__HAPPY)
-      &amp; r_0062_0009__and(R_0062_0009__AND)
-      &amp; ! [R_0062_0017__BE,R_0062_0016__PLEASURE,R_0062_0018__HAPPINESS] :
-          ( ( r_0062_0016__pleasure(R_0062_0016__PLEASURE)
-            &amp; r_0062_0018__happiness(R_0062_0018__HAPPINESS)
-            &amp; r_0062_0017__be(R_0062_0017__BE)
-            &amp; has_prd(R_0062_0017__BE,R_0062_0018__HAPPINESS)
-            &amp; has_arg0(R_0062_0017__BE,R_0062_0016__PLEASURE) )
-         =&gt; ? [R_0062_0010__HAPPY,R_0062_0011__INDEED,R_0062_0012__I,R_0062_0013__WAS] :
-              ( r_0062_0010__happy(R_0062_0010__HAPPY)
-              &amp; r_0062_0011__indeed(R_0062_0011__INDEED)
-              &amp; r_0062_0012__I(R_0062_0012__I)
-              &amp; r_0062_0013__was(R_0062_0013__WAS)
-              &amp; has_arg0(R_0062_0013__WAS,R_0062_0012__I)
-              &amp; has_nim32(R_0062_0013__WAS,R_0062_0011__INDEED)
-              &amp; has_prd(R_0062_0013__WAS,R_0062_0010__HAPPY) ) )
-      &amp; has_conj1(R_0062_0009__AND,R_0062_0003__CALLED)
-      &amp; r_0062_0003__called(R_0062_0003__CALLED)
-      &amp; has_prd(R_0062_0003__CALLED,R_0062_0005__THE_R_0062_0007__PRINCE)
-      &amp; r_0062_0005__the_r_0062_0007__Prince(R_0062_0005__THE_R_0062_0007__PRINCE)
-      &amp; has_attrib18(R_0062_0005__THE_R_0062_0007__PRINCE,R_0062_0006__HAPPY)
-      &amp; has_arg1(R_0062_0003__CALLED,R_0062_0004__ME)
-      &amp; has_arg0(R_0062_0003__CALLED,R_0062_0002__COURTIERS)
-      &amp; r_0062_0002__courtiers(R_0062_0002__COURTIERS)
-      &amp; has_gen(R_0062_0002__COURTIERS,R_0062_0001__MY) ) ).
+    ? [R_62_9_AND,R_62_3_CALLED,R_62_2_COURTIERS,R_62_1_MY,R_62_4_ME,R_62_5_THE_PRINCE,R_62_6_HAPPY] :
+      ( my(R_62_1_MY)
+      &amp; me(R_62_4_ME)
+      &amp; happy(R_62_6_HAPPY)
+      &amp; ! [R_62_17_BE,R_62_16_PLEASURE,R_62_18_HAPPINESS] :
+          ( ( pleasure(R_62_16_PLEASURE)
+            &amp; happiness(R_62_18_HAPPINESS)
+            &amp; be(R_62_17_BE,R_62_16_PLEASURE,R_62_18_HAPPINESS) )
+         =&gt; ? [R_62_13_WAS,R_62_12_I,R_62_11_INDEED,R_62_10_HAPPY] :
+              ( i(R_62_12_I)
+              &amp; indeed(R_62_11_INDEED)
+              &amp; happy(R_62_10_HAPPY)
+              &amp; was(R_62_13_WAS,R_62_12_I,R_62_10_HAPPY)
+              &amp; nim32(R_62_13_WAS,R_62_11_INDEED) ) )
+      &amp; conj2(CONJ2)
+      &amp; and(R_62_9_AND)
+      &amp; conj1(R_62_9_AND,R_62_3_CALLED)
+      &amp; called(R_62_3_CALLED,R_62_2_COURTIERS,R_62_4_ME,R_62_5_THE_PRINCE)
+      &amp; courtiers(R_62_2_COURTIERS)
+      &amp; gen(R_62_2_COURTIERS,R_62_1_MY)
+      &amp; the_Prince(R_62_5_THE_PRINCE)
+      &amp; attrib18(R_62_5_THE_PRINCE,R_62_6_HAPPY) ) ).
 </pre>
 <br><hr><br>
 <svg width="865pt" height="387pt"

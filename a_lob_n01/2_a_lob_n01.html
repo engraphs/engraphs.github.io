@@ -493,35 +493,24 @@ arc(r_0002_0020__career, r_0002_0004__he, gen).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0002_0015__NECESSARILY,R_0002_0012__SOMETHING,R_0002_0004__HE,R_0002_0020__CAREER,Z_000_2_A_LOB_N01_50,R_0002_0014__MUST_R_0002_0016__BE_R_0002_0017__SUBORDINATED] :
-      ( r_0002_0004__he(R_0002_0004__HE)
-      &amp; r_0002_0012__something(R_0002_0012__SOMETHING)
-      &amp; r_0002_0015__necessarily(R_0002_0015__NECESSARILY)
-      &amp; z_000_2_a_lob_n01_50(Z_000_2_A_LOB_N01_50)
-      &amp; r_0002_0014__must_r_0002_0016__be_r_0002_0017__subordinated(R_0002_0014__MUST_R_0002_0016__BE_R_0002_0017__SUBORDINATED)
-      &amp; has_arg0(R_0002_0014__MUST_R_0002_0016__BE_R_0002_0017__SUBORDINATED,Z_000_2_A_LOB_N01_50)
-      &amp; has_r_0002_0018__to_clr57(R_0002_0014__MUST_R_0002_0016__BE_R_0002_0017__SUBORDINATED,R_0002_0020__CAREER)
-      &amp; r_0002_0020__career(R_0002_0020__CAREER)
-      &amp; has_gen(R_0002_0020__CAREER,R_0002_0004__HE)
-      &amp; has_arg1(R_0002_0014__MUST_R_0002_0016__BE_R_0002_0017__SUBORDINATED,R_0002_0012__SOMETHING)
-      &amp; has_nim44(R_0002_0014__MUST_R_0002_0016__BE_R_0002_0017__SUBORDINATED,R_0002_0015__NECESSARILY)
-      &amp; ! [R_0002_0003__LIFE,R_0002_0002__HIS] :
-          ( ( r_0002_0002__his(R_0002_0002__HIS)
-            &amp; r_0002_0003__life(R_0002_0003__LIFE)
-            &amp; has_gen(R_0002_0003__LIFE,R_0002_0002__HIS) )
-         =&gt; ? [R_0002_0010__WOMEN,X_000_2_A_LOB_N01_23,R_0002_0008__TO_R_0002_0009__REGARD,Z_000_2_A_LOB_N01_19,R_0002_0005__HAD_R_0002_0006__BEEN_R_0002_0007__INCLINED] :
-              ( r_0002_0010__women(R_0002_0010__WOMEN)
-              &amp; x_000_2_a_lob_n01_23(X_000_2_A_LOB_N01_23)
-              &amp; z_000_2_a_lob_n01_19(Z_000_2_A_LOB_N01_19)
-              &amp; r_0002_0005__had_r_0002_0006__been_r_0002_0007__inclined(R_0002_0005__HAD_R_0002_0006__BEEN_R_0002_0007__INCLINED)
-              &amp; has_arg0(R_0002_0005__HAD_R_0002_0006__BEEN_R_0002_0007__INCLINED,Z_000_2_A_LOB_N01_19)
-              &amp; has_prd(R_0002_0005__HAD_R_0002_0006__BEEN_R_0002_0007__INCLINED,R_0002_0008__TO_R_0002_0009__REGARD)
-              &amp; r_0002_0008__to_r_0002_0009__regard(R_0002_0008__TO_R_0002_0009__REGARD)
-              &amp; has_arg0(R_0002_0008__TO_R_0002_0009__REGARD,X_000_2_A_LOB_N01_23)
-              &amp; has_prd(R_0002_0008__TO_R_0002_0009__REGARD,R_0002_0012__SOMETHING)
-              &amp; has_arg1(R_0002_0008__TO_R_0002_0009__REGARD,R_0002_0010__WOMEN)
-              &amp; has_arg1(R_0002_0005__HAD_R_0002_0006__BEEN_R_0002_0007__INCLINED,R_0002_0004__HE)
-              &amp; has_nim2(R_0002_0005__HAD_R_0002_0006__BEEN_R_0002_0007__INCLINED,R_0002_0003__LIFE) ) ) ) ).
+    ? [R_2_14_MUST_BE_SUBORDINATED,Z_2_A_LOB_N01_50,R_2_12_SOMETHING,R_2_15_NECESSARILY,R_2_20_CAREER,R_2_4_HE] :
+      ( something(R_2_12_SOMETHING)
+      &amp; necessarily(R_2_15_NECESSARILY)
+      &amp; he(R_2_4_HE)
+      &amp; ! [R_2_3_LIFE,R_2_2_HIS] :
+          ( ( his(R_2_2_HIS)
+            &amp; life(R_2_3_LIFE)
+            &amp; gen(R_2_3_LIFE,R_2_2_HIS) )
+         =&gt; ? [R_2_5_HAD_BEEN_INCLINED,Z_2_A_LOB_N01_19,R_2_8_TO_REGARD,X_2_A_LOB_N01_23,R_2_10_WOMEN] :
+              ( women(R_2_10_WOMEN)
+              &amp; had_been_inclined(R_2_5_HAD_BEEN_INCLINED,Z_2_A_LOB_N01_19,R_2_4_HE,R_2_8_TO_REGARD)
+              &amp; to_regard(R_2_8_TO_REGARD,X_2_A_LOB_N01_23,R_2_10_WOMEN,R_2_12_SOMETHING)
+              &amp; nim2(R_2_5_HAD_BEEN_INCLINED,R_2_3_LIFE) ) )
+      &amp; must_be_subordinated(R_2_14_MUST_BE_SUBORDINATED,Z_2_A_LOB_N01_50,R_2_12_SOMETHING)
+      &amp; nim44(R_2_14_MUST_BE_SUBORDINATED,R_2_15_NECESSARILY)
+      &amp; to_clr57(R_2_14_MUST_BE_SUBORDINATED,R_2_20_CAREER)
+      &amp; career(R_2_20_CAREER)
+      &amp; gen(R_2_20_CAREER,R_2_4_HE) ) ).
 </pre>
 <br><hr><br>
 <svg width="1065pt" height="613pt"

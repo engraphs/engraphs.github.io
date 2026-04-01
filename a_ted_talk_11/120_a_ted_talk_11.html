@@ -318,25 +318,21 @@ arc(r_0120_0011__travel, r_0120_0013__the_r_0120_0014__world, r_0120_0012__aroun
 </svg>
 <pre>
 fof(formula,axiom,
-    ! [R_0120_0010__AND,R_0120_0006__YOU,R_0120_0009__AMERICA,R_0120_0007__MOVE,R_0120_0013__THE_R_0120_0014__WORLD,R_0120_0011__TRAVEL] :
-      ( ( r_0120_0006__you(R_0120_0006__YOU)
-        &amp; r_0120_0009__America(R_0120_0009__AMERICA)
-        &amp; r_0120_0013__the_r_0120_0014__world(R_0120_0013__THE_R_0120_0014__WORLD)
-        &amp; r_0120_0010__and(R_0120_0010__AND)
-        &amp; has_conj2(R_0120_0010__AND,R_0120_0011__TRAVEL)
-        &amp; r_0120_0011__travel(R_0120_0011__TRAVEL)
-        &amp; has_r_0120_0012__around_nim38(R_0120_0011__TRAVEL,R_0120_0013__THE_R_0120_0014__WORLD)
-        &amp; has_arg0(R_0120_0011__TRAVEL,R_0120_0006__YOU)
-        &amp; has_conj1(R_0120_0010__AND,R_0120_0007__MOVE)
-        &amp; r_0120_0007__move(R_0120_0007__MOVE)
-        &amp; has_r_0120_0008__to_nim26(R_0120_0007__MOVE,R_0120_0009__AMERICA)
-        &amp; has_arg0(R_0120_0007__MOVE,R_0120_0006__YOU) )
-     =&gt; ? [R_0120_0002__SOMETHING,R_0120_0004__YOU,R_0120_0001__BUT_R_0120_0003__STRIKES] :
-          ( r_0120_0002__something(R_0120_0002__SOMETHING)
-          &amp; r_0120_0004__you(R_0120_0004__YOU)
-          &amp; r_0120_0001__But_r_0120_0003__strikes(R_0120_0001__BUT_R_0120_0003__STRIKES)
-          &amp; has_arg1(R_0120_0001__BUT_R_0120_0003__STRIKES,R_0120_0004__YOU)
-          &amp; has_arg0(R_0120_0001__BUT_R_0120_0003__STRIKES,R_0120_0002__SOMETHING) ) ) ).
+    ! [R_120_10_AND,R_120_7_MOVE,R_120_9_AMERICA,R_120_11_TRAVEL,R_120_6_YOU,R_120_13_THE_WORLD] :
+      ( ( america(R_120_9_AMERICA)
+        &amp; you(R_120_6_YOU)
+        &amp; the_world(R_120_13_THE_WORLD)
+        &amp; and(R_120_10_AND)
+        &amp; conj1(R_120_10_AND,R_120_7_MOVE)
+        &amp; move(R_120_7_MOVE,R_120_6_YOU)
+        &amp; to_nim26(R_120_7_MOVE,R_120_9_AMERICA)
+        &amp; conj2(R_120_10_AND,R_120_11_TRAVEL)
+        &amp; travel(R_120_11_TRAVEL,R_120_6_YOU)
+        &amp; around_nim38(R_120_11_TRAVEL,R_120_13_THE_WORLD) )
+     =&gt; ? [R_120_1_BUT_STRIKES,R_120_2_SOMETHING,R_120_4_YOU] :
+          ( something(R_120_2_SOMETHING)
+          &amp; you(R_120_4_YOU)
+          &amp; but_strikes(R_120_1_BUT_STRIKES,R_120_2_SOMETHING,R_120_4_YOU) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="694pt" height="432pt"

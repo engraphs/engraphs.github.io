@@ -425,32 +425,30 @@ arc(r_0098_0024__occurred, r_0098_0021__a_r_0098_0022__gas_r_0098_0023__explosio
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0098_0001__CHINA_R_0098_0002___APOS_S,R_0098_0003__STATE__HYPHEN__RUN,R_0098_0004__MEDIA,R_0098_0005__SAY] :
-      ( r_0098_0001__China_r_0098_0002___apos_s(R_0098_0001__CHINA_R_0098_0002___APOS_S)
-      &amp; r_0098_0005__say(R_0098_0005__SAY)
-      &amp; ! [R_0098_0024__OCCURRED,R_0098_0021__A_R_0098_0022__GAS_R_0098_0023__EXPLOSION] :
-          ( ( r_0098_0021__a_r_0098_0022__gas_r_0098_0023__explosion(R_0098_0021__A_R_0098_0022__GAS_R_0098_0023__EXPLOSION)
-            &amp; r_0098_0024__occurred(R_0098_0024__OCCURRED)
-            &amp; has_arg0(R_0098_0024__OCCURRED,R_0098_0021__A_R_0098_0022__GAS_R_0098_0023__EXPLOSION) )
-         =&gt; ? [R_0098_0019__SATURDAY,R_0098_0006__39_R_0098_0007__PEOPLE,R_0098_0012__PRIVATELY__HYPHEN__OWNED,R_0098_0016__SHAANXI,R_0098_0017__PROVINCE,R_0098_0011__THE_R_0098_0013__COAL_R_0098_0014__MINE,R_0098_0008__WERE_R_0098_0009__WORKING] :
-              ( r_0098_0006__39_r_0098_0007__people(R_0098_0006__39_R_0098_0007__PEOPLE)
-              &amp; r_0098_0012__privately__hyphen__owned(R_0098_0012__PRIVATELY__HYPHEN__OWNED)
-              &amp; r_0098_0016__Shaanxi(R_0098_0016__SHAANXI)
-              &amp; r_0098_0019__Saturday(R_0098_0019__SATURDAY)
-              &amp; r_0098_0008__were_r_0098_0009__working(R_0098_0008__WERE_R_0098_0009__WORKING)
-              &amp; has_r_0098_0010__at_clr30(R_0098_0008__WERE_R_0098_0009__WORKING,R_0098_0011__THE_R_0098_0013__COAL_R_0098_0014__MINE)
-              &amp; r_0098_0011__the_r_0098_0013__coal_r_0098_0014__mine(R_0098_0011__THE_R_0098_0013__COAL_R_0098_0014__MINE)
-              &amp; has_r_0098_0015__in(R_0098_0011__THE_R_0098_0013__COAL_R_0098_0014__MINE,R_0098_0017__PROVINCE)
-              &amp; r_0098_0017__province(R_0098_0017__PROVINCE)
-              &amp; has_attrib44(R_0098_0017__PROVINCE,R_0098_0016__SHAANXI)
-              &amp; has_attrib33(R_0098_0011__THE_R_0098_0013__COAL_R_0098_0014__MINE,R_0098_0012__PRIVATELY__HYPHEN__OWNED)
-              &amp; has_arg0(R_0098_0008__WERE_R_0098_0009__WORKING,R_0098_0006__39_R_0098_0007__PEOPLE)
-              &amp; has_r_0098_0018__on_nim52(R_0098_0008__WERE_R_0098_0009__WORKING,R_0098_0019__SATURDAY) ) )
-      &amp; has_arg0(R_0098_0005__SAY,R_0098_0004__MEDIA)
-      &amp; r_0098_0004__media(R_0098_0004__MEDIA)
-      &amp; has_attrib3(R_0098_0004__MEDIA,R_0098_0003__STATE__HYPHEN__RUN)
-      &amp; r_0098_0003__state__hyphen__run(R_0098_0003__STATE__HYPHEN__RUN)
-      &amp; has_gen(R_0098_0003__STATE__HYPHEN__RUN,R_0098_0001__CHINA_R_0098_0002___APOS_S) ) ).
+    ? [R_98_5_SAY,R_98_4_MEDIA,R_98_3_STATE_HYPHEN_RUN,R_98_1_CHINA_APOS_S] :
+      ( china_apos_s(R_98_1_CHINA_APOS_S)
+      &amp; ! [R_98_24_OCCURRED,R_98_21_A_GAS_EXPLOSION] :
+          ( ( a_gas_explosion(R_98_21_A_GAS_EXPLOSION)
+            &amp; occurred(R_98_24_OCCURRED,R_98_21_A_GAS_EXPLOSION) )
+         =&gt; ? [R_98_8_WERE_WORKING,R_98_6_39_PEOPLE,R_98_11_THE_COAL_MINE,R_98_12_PRIVATELY_HYPHEN_OWNED,R_98_17_PROVINCE,R_98_16_SHAANXI,R_98_19_SATURDAY] :
+              ( 39_people(R_98_6_39_PEOPLE)
+              &amp; privately_hyphen_owned(R_98_12_PRIVATELY_HYPHEN_OWNED)
+              &amp; shaanxi(R_98_16_SHAANXI)
+              &amp; saturday(R_98_19_SATURDAY)
+              &amp; were_working(R_98_8_WERE_WORKING,R_98_6_39_PEOPLE)
+              &amp; at_clr30(R_98_8_WERE_WORKING,R_98_11_THE_COAL_MINE)
+              &amp; the_coal_mine(R_98_11_THE_COAL_MINE)
+              &amp; attrib33(R_98_11_THE_COAL_MINE,R_98_12_PRIVATELY_HYPHEN_OWNED)
+              &amp; in(R_98_11_THE_COAL_MINE,R_98_17_PROVINCE)
+              &amp; province(R_98_17_PROVINCE)
+              &amp; attrib44(R_98_17_PROVINCE,R_98_16_SHAANXI)
+              &amp; on_nim52(R_98_8_WERE_WORKING,R_98_19_SATURDAY) ) )
+      &amp; arg1(ARG1)
+      &amp; say(R_98_5_SAY,R_98_4_MEDIA)
+      &amp; media(R_98_4_MEDIA)
+      &amp; attrib3(R_98_4_MEDIA,R_98_3_STATE_HYPHEN_RUN)
+      &amp; state_hyphen_run(R_98_3_STATE_HYPHEN_RUN)
+      &amp; gen(R_98_3_STATE_HYPHEN_RUN,R_98_1_CHINA_APOS_S) ) ).
 </pre>
 <br><hr><br>
 <svg width="1219pt" height="478pt"

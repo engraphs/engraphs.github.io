@@ -562,43 +562,33 @@ arc(r_0005_0018__faced, r_0005_0025__February_r_0005_0026__6, r_0005_0024__on_ni
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0005_0003__UNDER_AGE,R_0005_0005__HE,R_0005_0002__BEING,R_0005_0006__WAS,R_0005_0001__DESPITE,R_0005_0015__HE,R_0005_0017__EVANS,R_0005_0016__AND,R_0005_0019__A_R_0005_0020__FIRING_R_0005_0021__SQUAD,R_0005_0023__LOCRE,R_0005_0025__FEBRUARY_R_0005_0026__6,R_0005_0018__FACED,R_0005_0014__AND] :
-      ( r_0005_0003__under_age(R_0005_0003__UNDER_AGE)
-      &amp; r_0005_0005__he(R_0005_0005__HE)
-      &amp; r_0005_0015__he(R_0005_0015__HE)
-      &amp; r_0005_0017__Evans(R_0005_0017__EVANS)
-      &amp; r_0005_0019__a_r_0005_0020__firing_r_0005_0021__squad(R_0005_0019__A_R_0005_0020__FIRING_R_0005_0021__SQUAD)
-      &amp; r_0005_0023__Locre(R_0005_0023__LOCRE)
-      &amp; r_0005_0025__February_r_0005_0026__6(R_0005_0025__FEBRUARY_R_0005_0026__6)
-      &amp; r_0005_0014__and(R_0005_0014__AND)
-      &amp; has_conj2(R_0005_0014__AND,R_0005_0018__FACED)
-      &amp; r_0005_0018__faced(R_0005_0018__FACED)
-      &amp; has_r_0005_0024__on_nim74(R_0005_0018__FACED,R_0005_0025__FEBRUARY_R_0005_0026__6)
-      &amp; has_r_0005_0022__at_nim68(R_0005_0018__FACED,R_0005_0023__LOCRE)
-      &amp; has_arg1(R_0005_0018__FACED,R_0005_0019__A_R_0005_0020__FIRING_R_0005_0021__SQUAD)
-      &amp; has_arg0(R_0005_0018__FACED,R_0005_0016__AND)
-      &amp; r_0005_0016__and(R_0005_0016__AND)
-      &amp; has_conj2(R_0005_0016__AND,R_0005_0017__EVANS)
-      &amp; has_conj1(R_0005_0016__AND,R_0005_0015__HE)
-      &amp; has_conj1(R_0005_0014__AND,R_0005_0001__DESPITE)
-      &amp; r_0005_0001__Despite(R_0005_0001__DESPITE)
-      &amp; has_conj2(R_0005_0001__DESPITE,R_0005_0006__WAS)
-      &amp; r_0005_0006__was(R_0005_0006__WAS)
-      &amp; ! [R_0005_0009__REPRESENTATION,R_0005_0012__TRIAL] :
-          ( ( r_0005_0009__representation(R_0005_0009__REPRESENTATION)
-            &amp; has_r_0005_0010__at(R_0005_0009__REPRESENTATION,R_0005_0012__TRIAL)
-            &amp; r_0005_0012__trial(R_0005_0012__TRIAL)
-            &amp; has_gen(R_0005_0012__TRIAL,R_0005_0005__HE) )
-         =&gt; ? [Z_000_5_A_JOSEPH_BYERS_21,R_0005_0007__GIVEN] :
-              ( z_000_5_a_joseph_byers_21(Z_000_5_A_JOSEPH_BYERS_21)
-              &amp; r_0005_0007__given(R_0005_0007__GIVEN)
-              &amp; has_arg0(R_0005_0007__GIVEN,Z_000_5_A_JOSEPH_BYERS_21)
-              &amp; has_arg1(R_0005_0007__GIVEN,R_0005_0009__REPRESENTATION)
-              &amp; has_arg2(R_0005_0007__GIVEN,R_0005_0005__HE) ) )
-      &amp; has_conj1(R_0005_0001__DESPITE,R_0005_0002__BEING)
-      &amp; r_0005_0002__being(R_0005_0002__BEING)
-      &amp; has_arg0(R_0005_0002__BEING,R_0005_0005__HE)
-      &amp; has_prd(R_0005_0002__BEING,R_0005_0003__UNDER_AGE) ) ).
+    ? [R_5_14_AND,R_5_1_DESPITE,R_5_2_BEING,R_5_5_HE,R_5_3_UNDER_AGE,R_5_18_FACED,R_5_16_AND,R_5_15_HE,R_5_17_EVANS,R_5_19_A_FIRING_SQUAD,R_5_23_LOCRE,R_5_25_FEBRUARY_6] :
+      ( he(R_5_5_HE)
+      &amp; under_age(R_5_3_UNDER_AGE)
+      &amp; he(R_5_15_HE)
+      &amp; evans(R_5_17_EVANS)
+      &amp; a_firing_squad(R_5_19_A_FIRING_SQUAD)
+      &amp; locre(R_5_23_LOCRE)
+      &amp; february_6(R_5_25_FEBRUARY_6)
+      &amp; and(R_5_14_AND)
+      &amp; conj1(R_5_14_AND,R_5_1_DESPITE)
+      &amp; despite(R_5_1_DESPITE)
+      &amp; conj1(R_5_1_DESPITE,R_5_2_BEING)
+      &amp; being(R_5_2_BEING,R_5_5_HE,R_5_3_UNDER_AGE)
+      &amp; conj2(R_5_1_DESPITE,R_5_6_WAS)
+      &amp; ~ ! [R_5_9_REPRESENTATION,R_5_12_TRIAL] :
+            ( ( representation(R_5_9_REPRESENTATION)
+              &amp; at(R_5_9_REPRESENTATION,R_5_12_TRIAL)
+              &amp; trial(R_5_12_TRIAL)
+              &amp; gen(R_5_12_TRIAL,R_5_5_HE) )
+           =&gt; ? [R_5_7_GIVEN,Z_5_A_JOSEPH_BYERS_21] : given(R_5_7_GIVEN,Z_5_A_JOSEPH_BYERS_21,R_5_9_REPRESENTATION,R_5_5_HE) )
+      &amp; conj2(R_5_14_AND,R_5_18_FACED)
+      &amp; faced(R_5_18_FACED,R_5_16_AND,R_5_19_A_FIRING_SQUAD)
+      &amp; and(R_5_16_AND)
+      &amp; conj1(R_5_16_AND,R_5_15_HE)
+      &amp; conj2(R_5_16_AND,R_5_17_EVANS)
+      &amp; at_nim68(R_5_18_FACED,R_5_23_LOCRE)
+      &amp; on_nim74(R_5_18_FACED,R_5_25_FEBRUARY_6) ) ).
 </pre>
 <br><hr><br>
 <svg width="1192pt" height="432pt"

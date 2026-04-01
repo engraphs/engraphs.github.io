@@ -518,39 +518,33 @@ arc(r_0237_0016__the_r_0237_0017__Art_r_0237_0018__Professor, r_0237_0020__the_r
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0237_0008__HE,Z_000_237_A_WILDE_1_1888_31,R_0237_0011__LONGER,R_0237_0012__USEFUL,R_0237_0009__IS,R_0237_0002__AS,UTTERANCE_237_A_WILDE_1_1888_4,R_0237_0020__THE_R_0237_0021__UNIVERSITY,R_0237_0016__THE_R_0237_0017__ART_R_0237_0018__PROFESSOR,R_0237_0015__SAID] :
-      ( r_0237_0008__he(R_0237_0008__HE)
-      &amp; r_0237_0020__the_r_0237_0021__University(R_0237_0020__THE_R_0237_0021__UNIVERSITY)
-      &amp; z_000_237_a_wilde_1_1888_31(Z_000_237_A_WILDE_1_1888_31)
-      &amp; r_0237_0015__said(R_0237_0015__SAID)
-      &amp; has_arg0(R_0237_0015__SAID,R_0237_0016__THE_R_0237_0017__ART_R_0237_0018__PROFESSOR)
-      &amp; r_0237_0016__the_r_0237_0017__Art_r_0237_0018__Professor(R_0237_0016__THE_R_0237_0017__ART_R_0237_0018__PROFESSOR)
-      &amp; has_r_0237_0019__at(R_0237_0016__THE_R_0237_0017__ART_R_0237_0018__PROFESSOR,R_0237_0020__THE_R_0237_0021__UNIVERSITY)
-      &amp; has_arg1(R_0237_0015__SAID,UTTERANCE_237_A_WILDE_1_1888_4)
+    ? [R_237_15_SAID,R_237_16_THE_ART_PROFESSOR,R_237_20_THE_UNIVERSITY,UTTERANCE_237_A_WILDE_1_1888_4,R_237_2_AS,R_237_9_IS,R_237_8_HE,R_237_12_USEFUL,R_237_11_LONGER,Z_237_A_WILDE_1_1888_31] :
+      ( the_University(R_237_20_THE_UNIVERSITY)
+      &amp; he(R_237_8_HE)
+      &amp; ( true
+       =&gt; true )
+      &amp; said(R_237_15_SAID,R_237_16_THE_ART_PROFESSOR,UTTERANCE_237_A_WILDE_1_1888_4)
+      &amp; the_Art_Professor(R_237_16_THE_ART_PROFESSOR)
+      &amp; at(R_237_16_THE_ART_PROFESSOR,R_237_20_THE_UNIVERSITY)
       &amp; utterance_237_a_wilde_1_1888_4(UTTERANCE_237_A_WILDE_1_1888_4)
-      &amp; has_part1(UTTERANCE_237_A_WILDE_1_1888_4,R_0237_0002__AS)
-      &amp; r_0237_0002__As(R_0237_0002__AS)
-      &amp; has_conj2(R_0237_0002__AS,R_0237_0009__IS)
-      &amp; r_0237_0009__is(R_0237_0009__IS)
-      &amp; has_prd(R_0237_0009__IS,R_0237_0012__USEFUL)
-      &amp; r_0237_0012__useful(R_0237_0012__USEFUL)
-      &amp; has_qual30(R_0237_0012__USEFUL,R_0237_0011__LONGER)
-      &amp; r_0237_0011__longer(R_0237_0011__LONGER)
-      &amp; has_nim31(R_0237_0011__LONGER,Z_000_237_A_WILDE_1_1888_31)
-      &amp; has_arg0(R_0237_0009__IS,R_0237_0008__HE)
-      &amp; ! [Z_000_237_A_WILDE_1_1888_17] :
-          ( z_000_237_a_wilde_1_1888_17(Z_000_237_A_WILDE_1_1888_17)
-         =&gt; ? [R_0237_0003__HE,R_0237_0006__LONGER,R_0237_0007__BEAUTIFUL,R_0237_0004__IS] :
-              ( r_0237_0003__he(R_0237_0003__HE)
-              &amp; r_0237_0004__is(R_0237_0004__IS)
-              &amp; has_prd(R_0237_0004__IS,R_0237_0007__BEAUTIFUL)
-              &amp; r_0237_0007__beautiful(R_0237_0007__BEAUTIFUL)
-              &amp; has_qual16(R_0237_0007__BEAUTIFUL,R_0237_0006__LONGER)
-              &amp; r_0237_0006__longer(R_0237_0006__LONGER)
-              &amp; has_nim17(R_0237_0006__LONGER,Z_000_237_A_WILDE_1_1888_17)
-              &amp; has_arg0(R_0237_0004__IS,R_0237_0003__HE) ) )
-      &amp; ( z_000_237_a_wilde_1_1888_31(Z_000_237_A_WILDE_1_1888_31)
-       =&gt; r_0237_0009__is(R_0237_0009__IS) ) ) ).
+      &amp; part1(UTTERANCE_237_A_WILDE_1_1888_4,R_237_2_AS)
+      &amp; ! [Z_237_A_WILDE_1_1888_17] :
+          ( true
+         =&gt; ? [R_237_4_IS,R_237_3_HE,R_237_7_BEAUTIFUL,R_237_6_LONGER] :
+              ( he(R_237_3_HE)
+              &amp; is(R_237_4_IS,R_237_3_HE,R_237_7_BEAUTIFUL)
+              &amp; beautiful(R_237_7_BEAUTIFUL)
+              &amp; qual16(R_237_7_BEAUTIFUL,R_237_6_LONGER)
+              &amp; longer(R_237_6_LONGER)
+              &amp; nim17(R_237_6_LONGER,Z_237_A_WILDE_1_1888_17) ) )
+      &amp; conj1(CONJ1)
+      &amp; as(R_237_2_AS)
+      &amp; conj2(R_237_2_AS,R_237_9_IS)
+      &amp; is(R_237_9_IS,R_237_8_HE,R_237_12_USEFUL)
+      &amp; useful(R_237_12_USEFUL)
+      &amp; qual30(R_237_12_USEFUL,R_237_11_LONGER)
+      &amp; longer(R_237_11_LONGER)
+      &amp; nim31(R_237_11_LONGER,Z_237_A_WILDE_1_1888_31) ) ).
 </pre>
 <br><hr><br>
 <svg width="960pt" height="432pt"

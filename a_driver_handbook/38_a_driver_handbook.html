@@ -400,33 +400,28 @@ arc(r_0038_0022__driving, z_000_38_a_driver_handbook_1, arg0).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0038_0002__THE_R_0038_0003__CROSSING_R_0038_0004__GUARD_R_0038_0005___APOS_S,R_0038_0006__SAFETY,R_0038_0010__OR,R_0038_0013__SAFELY,R_0038_0019__THE_R_0038_0020__ROAD,R_0038_0016__THE_R_0038_0017__SIDE,R_0038_0012__TO_R_0038_0014__GET,Z_000_38_A_DRIVER_HANDBOOK_1,R_0038_0008__ALLOW,R_0038_0023__AHEAD,R_0038_0022__DRIVING,R_0038_0021__BEFORE] :
-      ( r_0038_0002__the_r_0038_0003__crossing_r_0038_0004__guard_r_0038_0005___apos_s(R_0038_0002__THE_R_0038_0003__CROSSING_R_0038_0004__GUARD_R_0038_0005___APOS_S)
-      &amp; r_0038_0013__safely(R_0038_0013__SAFELY)
-      &amp; r_0038_0019__the_r_0038_0020__road(R_0038_0019__THE_R_0038_0020__ROAD)
-      &amp; r_0038_0023__ahead(R_0038_0023__AHEAD)
-      &amp; z_000_38_a_driver_handbook_1(Z_000_38_A_DRIVER_HANDBOOK_1)
-      &amp; r_0038_0021__before(R_0038_0021__BEFORE)
-      &amp; has_conj1(R_0038_0021__BEFORE,R_0038_0022__DRIVING)
-      &amp; r_0038_0022__driving(R_0038_0022__DRIVING)
-      &amp; has_arg0(R_0038_0022__DRIVING,Z_000_38_A_DRIVER_HANDBOOK_1)
-      &amp; has_nim62(R_0038_0022__DRIVING,R_0038_0023__AHEAD)
-      &amp; has_conj2(R_0038_0021__BEFORE,R_0038_0008__ALLOW)
-      &amp; r_0038_0008__allow(R_0038_0008__ALLOW)
-      &amp; has_arg0(R_0038_0008__ALLOW,Z_000_38_A_DRIVER_HANDBOOK_1)
-      &amp; has_arg1(R_0038_0008__ALLOW,R_0038_0012__TO_R_0038_0014__GET)
-      &amp; r_0038_0012__to_r_0038_0014__get(R_0038_0012__TO_R_0038_0014__GET)
-      &amp; has_r_0038_0015__to_clr43(R_0038_0012__TO_R_0038_0014__GET,R_0038_0016__THE_R_0038_0017__SIDE)
-      &amp; r_0038_0016__the_r_0038_0017__side(R_0038_0016__THE_R_0038_0017__SIDE)
-      &amp; has_r_0038_0018__of(R_0038_0016__THE_R_0038_0017__SIDE,R_0038_0019__THE_R_0038_0020__ROAD)
-      &amp; has_nim35(R_0038_0012__TO_R_0038_0014__GET,R_0038_0013__SAFELY)
-      &amp; has_arg0(R_0038_0012__TO_R_0038_0014__GET,R_0038_0010__OR)
-      &amp; r_0038_0010__or(R_0038_0010__OR)
-      &amp; has_conj2(R_0038_0010__OR,R_0038_0002__THE_R_0038_0003__CROSSING_R_0038_0004__GUARD_R_0038_0005___APOS_S)
-      &amp; has_conj1(R_0038_0010__OR,R_0038_0002__THE_R_0038_0003__CROSSING_R_0038_0004__GUARD_R_0038_0005___APOS_S)
-      &amp; has_r_0038_0001__For_nim5(R_0038_0008__ALLOW,R_0038_0006__SAFETY)
-      &amp; r_0038_0006__safety(R_0038_0006__SAFETY)
-      &amp; has_gen(R_0038_0006__SAFETY,R_0038_0002__THE_R_0038_0003__CROSSING_R_0038_0004__GUARD_R_0038_0005___APOS_S) ) ).
+    ? [R_38_21_BEFORE,R_38_22_DRIVING,R_38_23_AHEAD,R_38_8_ALLOW,Z_38_A_DRIVER_HANDBOOK_1,R_38_12_TO_GET,R_38_10_OR,R_38_13_SAFELY,R_38_16_THE_SIDE,R_38_19_THE_ROAD,R_38_6_SAFETY,R_38_2_THE_CROSSING_GUARD_APOS_S] :
+      ( ahead(R_38_23_AHEAD)
+      &amp; safely(R_38_13_SAFELY)
+      &amp; the_road(R_38_19_THE_ROAD)
+      &amp; the_crossing_guard_apos_s(R_38_2_THE_CROSSING_GUARD_APOS_S)
+      &amp; before(R_38_21_BEFORE)
+      &amp; conj1(R_38_21_BEFORE,R_38_22_DRIVING)
+      &amp; driving(R_38_22_DRIVING,Z_38_A_DRIVER_HANDBOOK_1)
+      &amp; nim62(R_38_22_DRIVING,R_38_23_AHEAD)
+      &amp; conj2(R_38_21_BEFORE,R_38_8_ALLOW)
+      &amp; allow(R_38_8_ALLOW,Z_38_A_DRIVER_HANDBOOK_1,R_38_12_TO_GET)
+      &amp; to_get(R_38_12_TO_GET,R_38_10_OR)
+      &amp; or(R_38_10_OR)
+      &amp; conj1(R_38_10_OR,R_38_2_THE_CROSSING_GUARD_APOS_S)
+      &amp; conj2(R_38_10_OR,R_38_2_THE_CROSSING_GUARD_APOS_S)
+      &amp; nim35(R_38_12_TO_GET,R_38_13_SAFELY)
+      &amp; to_clr43(R_38_12_TO_GET,R_38_16_THE_SIDE)
+      &amp; the_side(R_38_16_THE_SIDE)
+      &amp; of(R_38_16_THE_SIDE,R_38_19_THE_ROAD)
+      &amp; for_nim5(R_38_8_ALLOW,R_38_6_SAFETY)
+      &amp; safety(R_38_6_SAFETY)
+      &amp; gen(R_38_6_SAFETY,R_38_2_THE_CROSSING_GUARD_APOS_S) ) ).
 </pre>
 <br><hr><br>
 <svg width="962pt" height="342pt"

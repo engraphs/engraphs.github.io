@@ -443,34 +443,32 @@ arc(r_0010_0020__welcome, r_0010_0018__Mickey, arg0).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0010_0014__AND] :
-      ( r_0010_0014__and(R_0010_0014__AND)
-      &amp; ! [R_0010_0017__CIRCUMSTANCES] :
-          ( r_0010_0017__circumstances(R_0010_0017__CIRCUMSTANCES)
-         =&gt; ? [R_0010_0002__MY,R_0010_0003__FATHER,R_0010_0018__MICKEY,R_0010_0019__WILL_R_0010_0020__WELCOME] :
-              ( r_0010_0002__my(R_0010_0002__MY)
-              &amp; r_0010_0018__Mickey(R_0010_0018__MICKEY)
-              &amp; r_0010_0019__will_r_0010_0020__welcome(R_0010_0019__WILL_R_0010_0020__WELCOME)
-              &amp; has_arg0(R_0010_0019__WILL_R_0010_0020__WELCOME,R_0010_0018__MICKEY)
-              &amp; has_arg1(R_0010_0019__WILL_R_0010_0020__WELCOME,R_0010_0003__FATHER)
-              &amp; r_0010_0003__father(R_0010_0003__FATHER)
-              &amp; has_gen(R_0010_0003__FATHER,R_0010_0002__MY)
-              &amp; has_r_0010_0015__under_nim47(R_0010_0019__WILL_R_0010_0020__WELCOME,R_0010_0017__CIRCUMSTANCES) ) )
-      &amp; ! [R_0010_0004__IS,R_0010_0002__MY,R_0010_0003__FATHER,R_0010_0006__NIGHT_R_0010_0007__SHIFT] :
-          ( ( r_0010_0002__my(R_0010_0002__MY)
-            &amp; r_0010_0006__night_r_0010_0007__shift(R_0010_0006__NIGHT_R_0010_0007__SHIFT)
-            &amp; r_0010_0004__is(R_0010_0004__IS)
-            &amp; has_r_0010_0005__on_clr19(R_0010_0004__IS,R_0010_0006__NIGHT_R_0010_0007__SHIFT)
-            &amp; has_arg0(R_0010_0004__IS,R_0010_0003__FATHER)
-            &amp; r_0010_0003__father(R_0010_0003__FATHER)
-            &amp; has_gen(R_0010_0003__FATHER,R_0010_0002__MY) )
-         =&gt; ? [R_0010_0010__HOME,R_0010_0012__THE_R_0010_0013__MORNING,R_0010_0009__COMES] :
-              ( r_0010_0010__home(R_0010_0010__HOME)
-              &amp; r_0010_0012__the_r_0010_0013__morning(R_0010_0012__THE_R_0010_0013__MORNING)
-              &amp; r_0010_0009__comes(R_0010_0009__COMES)
-              &amp; has_r_0010_0011__in_nim35(R_0010_0009__COMES,R_0010_0012__THE_R_0010_0013__MORNING)
-              &amp; has_clr29(R_0010_0009__COMES,R_0010_0010__HOME)
-              &amp; has_arg0(R_0010_0009__COMES,R_0010_0003__FATHER) ) ) ) ).
+    ? [R_10_14_AND] :
+      ( ! [R_10_17_CIRCUMSTANCES] :
+          ( circumstances(R_10_17_CIRCUMSTANCES)
+         =&gt; ? [R_10_19_WILL_WELCOME,R_10_18_MICKEY,R_10_3_FATHER,R_10_2_MY] :
+              ( mickey(R_10_18_MICKEY)
+              &amp; my(R_10_2_MY)
+              &amp; will_welcome(R_10_19_WILL_WELCOME,R_10_18_MICKEY,R_10_3_FATHER)
+              &amp; father(R_10_3_FATHER)
+              &amp; gen(R_10_3_FATHER,R_10_2_MY)
+              &amp; under_nim47(R_10_19_WILL_WELCOME,R_10_17_CIRCUMSTANCES) ) )
+      &amp; conj2(CONJ2)
+      &amp; ! [R_10_4_IS,R_10_3_FATHER,R_10_2_MY,R_10_6_NIGHT_SHIFT] :
+          ( ( my(R_10_2_MY)
+            &amp; night_shift(R_10_6_NIGHT_SHIFT)
+            &amp; is(R_10_4_IS,R_10_3_FATHER)
+            &amp; father(R_10_3_FATHER)
+            &amp; gen(R_10_3_FATHER,R_10_2_MY)
+            &amp; on_clr19(R_10_4_IS,R_10_6_NIGHT_SHIFT) )
+         =&gt; ? [R_10_9_COMES,R_10_10_HOME,R_10_12_THE_MORNING] :
+              ( home(R_10_10_HOME)
+              &amp; the_morning(R_10_12_THE_MORNING)
+              &amp; comes(R_10_9_COMES,R_10_3_FATHER)
+              &amp; clr29(R_10_9_COMES,R_10_10_HOME)
+              &amp; in_nim35(R_10_9_COMES,R_10_12_THE_MORNING) ) )
+      &amp; conj1(CONJ1)
+      &amp; and(R_10_14_AND) ) ).
 </pre>
 <br><hr><br>
 <svg width="993pt" height="387pt"

@@ -560,39 +560,33 @@ arc(r_0011_0023__said, r_0011_0021__the_r_0011_0022__experts, arg0).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0011_0002__ELECTRONIC,R_0011_0003__ESPIONAGE,R_0011_0006__U_DOT_S_DOT_,R_0011_0007__FIRMS,R_0011_0010__DOLLARS,R_0011_0011__A_R_0011_0012__YEAR,R_0011_0008__BILLIONS,R_0011_0004__MAY_R_0011_0005__COST,R_0011_0001__EVEN_THOUGH,UTTERANCE_11_A_WSJ_1640_2,R_0011_0021__THE_R_0011_0022__EXPERTS,R_0011_0023__SAID] :
-      ( r_0011_0002__electronic(R_0011_0002__ELECTRONIC)
-      &amp; r_0011_0006__U_dot_S_dot_(R_0011_0006__U_DOT_S_DOT_)
-      &amp; r_0011_0010__dollars(R_0011_0010__DOLLARS)
-      &amp; r_0011_0011__a_r_0011_0012__year(R_0011_0011__A_R_0011_0012__YEAR)
-      &amp; r_0011_0021__the_r_0011_0022__experts(R_0011_0021__THE_R_0011_0022__EXPERTS)
-      &amp; r_0011_0023__said(R_0011_0023__SAID)
-      &amp; has_arg0(R_0011_0023__SAID,R_0011_0021__THE_R_0011_0022__EXPERTS)
-      &amp; has_arg1(R_0011_0023__SAID,UTTERANCE_11_A_WSJ_1640_2)
+    ? [R_11_23_SAID,R_11_21_THE_EXPERTS,UTTERANCE_11_A_WSJ_1640_2,R_11_1_EVEN_THOUGH,R_11_4_MAY_COST,R_11_3_ESPIONAGE,R_11_2_ELECTRONIC,R_11_8_BILLIONS,R_11_11_A_YEAR,R_11_10_DOLLARS,R_11_7_FIRMS,R_11_6_U_DOT_S_DOT_] :
+      ( the_experts(R_11_21_THE_EXPERTS)
+      &amp; electronic(R_11_2_ELECTRONIC)
+      &amp; a_year(R_11_11_A_YEAR)
+      &amp; dollars(R_11_10_DOLLARS)
+      &amp; u_dot_S_dot_(R_11_6_U_DOT_S_DOT_)
+      &amp; said(R_11_23_SAID,R_11_21_THE_EXPERTS,UTTERANCE_11_A_WSJ_1640_2)
       &amp; utterance_11_a_wsj_1640_2(UTTERANCE_11_A_WSJ_1640_2)
-      &amp; has_part1(UTTERANCE_11_A_WSJ_1640_2,R_0011_0001__EVEN_THOUGH)
-      &amp; r_0011_0001__Even_though(R_0011_0001__EVEN_THOUGH)
-      &amp; ! [Z_000_11_A_WSJ_1640_41] :
-          ( z_000_11_a_wsj_1640_41(Z_000_11_A_WSJ_1640_41)
-         =&gt; ~ ? [R_0011_0017__YET,R_0011_0019__PRECAUTIONS,R_0011_0015__ARE_R_0011_0018__TAKING] :
-                ( r_0011_0017__yet(R_0011_0017__YET)
-                &amp; r_0011_0019__precautions(R_0011_0019__PRECAUTIONS)
-                &amp; r_0011_0015__are_r_0011_0018__taking(R_0011_0015__ARE_R_0011_0018__TAKING)
-                &amp; has_arg0(R_0011_0015__ARE_R_0011_0018__TAKING,Z_000_11_A_WSJ_1640_41)
-                &amp; has_arg1(R_0011_0015__ARE_R_0011_0018__TAKING,R_0011_0019__PRECAUTIONS)
-                &amp; has_nim49(R_0011_0015__ARE_R_0011_0018__TAKING,R_0011_0017__YET) ) )
-      &amp; has_conj1(R_0011_0001__EVEN_THOUGH,R_0011_0004__MAY_R_0011_0005__COST)
-      &amp; r_0011_0004__may_r_0011_0005__cost(R_0011_0004__MAY_R_0011_0005__COST)
-      &amp; has_arg1(R_0011_0004__MAY_R_0011_0005__COST,R_0011_0008__BILLIONS)
-      &amp; r_0011_0008__billions(R_0011_0008__BILLIONS)
-      &amp; has_nim34(R_0011_0008__BILLIONS,R_0011_0011__A_R_0011_0012__YEAR)
-      &amp; has_r_0011_0009__of(R_0011_0008__BILLIONS,R_0011_0010__DOLLARS)
-      &amp; has_arg2(R_0011_0004__MAY_R_0011_0005__COST,R_0011_0007__FIRMS)
-      &amp; r_0011_0007__firms(R_0011_0007__FIRMS)
-      &amp; has_attrib20(R_0011_0007__FIRMS,R_0011_0006__U_DOT_S_DOT_)
-      &amp; has_arg0(R_0011_0004__MAY_R_0011_0005__COST,R_0011_0003__ESPIONAGE)
-      &amp; r_0011_0003__espionage(R_0011_0003__ESPIONAGE)
-      &amp; has_attrib9(R_0011_0003__ESPIONAGE,R_0011_0002__ELECTRONIC) ) ).
+      &amp; part1(UTTERANCE_11_A_WSJ_1640_2,R_11_1_EVEN_THOUGH)
+      &amp; ! [Z_11_A_WSJ_1640_41] :
+          ( true
+         =&gt; ~ ? [R_11_15_ARE_TAKING,R_11_19_PRECAUTIONS,R_11_17_YET] :
+                ( precautions(R_11_19_PRECAUTIONS)
+                &amp; yet(R_11_17_YET)
+                &amp; are_taking(R_11_15_ARE_TAKING,Z_11_A_WSJ_1640_41,R_11_19_PRECAUTIONS)
+                &amp; nim49(R_11_15_ARE_TAKING,R_11_17_YET) ) )
+      &amp; conj2(CONJ2)
+      &amp; even_though(R_11_1_EVEN_THOUGH)
+      &amp; conj1(R_11_1_EVEN_THOUGH,R_11_4_MAY_COST)
+      &amp; may_cost(R_11_4_MAY_COST,R_11_3_ESPIONAGE,R_11_8_BILLIONS,R_11_7_FIRMS)
+      &amp; espionage(R_11_3_ESPIONAGE)
+      &amp; attrib9(R_11_3_ESPIONAGE,R_11_2_ELECTRONIC)
+      &amp; billions(R_11_8_BILLIONS)
+      &amp; nim34(R_11_8_BILLIONS,R_11_11_A_YEAR)
+      &amp; of(R_11_8_BILLIONS,R_11_10_DOLLARS)
+      &amp; firms(R_11_7_FIRMS)
+      &amp; attrib20(R_11_7_FIRMS,R_11_6_U_DOT_S_DOT_) ) ).
 </pre>
 <br><hr><br>
 <svg width="1129pt" height="478pt"

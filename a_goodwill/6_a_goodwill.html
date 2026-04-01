@@ -358,28 +358,20 @@ arc(z_000_6_a_goodwill_36, r_0006_0014__to_r_0006_0015__buy, restriction).
 </svg>
 <pre>
 fof(formula,axiom,
-    ! [R_0006_0008__N_APOS_T] :
-      ( ~ ? [R_0006_0002__I,R_0006_0011__THE_R_0006_0012__SNACK_R_0006_0013__BAR,R_0006_0009__GO,R_0006_0016__A_R_0006_0017__SODA,R_0006_0014__TO_R_0006_0015__BUY,Z_000_6_A_GOODWILL_36,R_0006_0007__COULD] :
-            ( r_0006_0002__I(R_0006_0002__I)
-            &amp; r_0006_0011__the_r_0006_0012__snack_r_0006_0013__bar(R_0006_0011__THE_R_0006_0012__SNACK_R_0006_0013__BAR)
-            &amp; r_0006_0016__a_r_0006_0017__soda(R_0006_0016__A_R_0006_0017__SODA)
-            &amp; r_0006_0007__could(R_0006_0007__COULD)
-            &amp; has_keep_scope(R_0006_0007__COULD,Z_000_6_A_GOODWILL_36)
-            &amp; z_000_6_a_goodwill_36(Z_000_6_A_GOODWILL_36)
-            &amp; has_conj1(Z_000_6_A_GOODWILL_36,R_0006_0014__TO_R_0006_0015__BUY)
-            &amp; r_0006_0014__to_r_0006_0015__buy(R_0006_0014__TO_R_0006_0015__BUY)
-            &amp; has_arg1(R_0006_0014__TO_R_0006_0015__BUY,R_0006_0016__A_R_0006_0017__SODA)
-            &amp; has_arg0(R_0006_0014__TO_R_0006_0015__BUY,R_0006_0002__I)
-            &amp; has_conj2(Z_000_6_A_GOODWILL_36,R_0006_0009__GO)
-            &amp; r_0006_0009__go(R_0006_0009__GO)
-            &amp; has_r_0006_0010__to_clr29(R_0006_0009__GO,R_0006_0011__THE_R_0006_0012__SNACK_R_0006_0013__BAR)
-            &amp; has_arg0(R_0006_0009__GO,R_0006_0002__I) )
-     =&gt; ? [R_0006_0002__I,R_0006_0004__SAD,R_0006_0003__WAS] :
-          ( r_0006_0002__I(R_0006_0002__I)
-          &amp; r_0006_0004__sad(R_0006_0004__SAD)
-          &amp; r_0006_0003__was(R_0006_0003__WAS)
-          &amp; has_prd(R_0006_0003__WAS,R_0006_0004__SAD)
-          &amp; has_arg0(R_0006_0003__WAS,R_0006_0002__I) ) ) ).
+    ( ~ ~ ? [Z_6_A_GOODWILL_36,R_6_14_TO_BUY,R_6_16_A_SODA,R_6_9_GO,R_6_2_I,R_6_11_THE_SNACK_BAR] :
+            ( a_soda(R_6_16_A_SODA)
+            &amp; i(R_6_2_I)
+            &amp; the_snack_bar(R_6_11_THE_SNACK_BAR)
+            &amp; z_6_a_goodwill_36(Z_6_A_GOODWILL_36)
+            &amp; conj1(Z_6_A_GOODWILL_36,R_6_14_TO_BUY)
+            &amp; to_buy(R_6_14_TO_BUY,R_6_2_I,R_6_16_A_SODA)
+            &amp; conj2(Z_6_A_GOODWILL_36,R_6_9_GO)
+            &amp; go(R_6_9_GO,R_6_2_I)
+            &amp; to_clr29(R_6_9_GO,R_6_11_THE_SNACK_BAR) )
+   =&gt; ? [R_6_3_WAS,R_6_2_I,R_6_4_SAD] :
+        ( i(R_6_2_I)
+        &amp; sad(R_6_4_SAD)
+        &amp; was(R_6_3_WAS,R_6_2_I,R_6_4_SAD) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="674pt" height="387pt"

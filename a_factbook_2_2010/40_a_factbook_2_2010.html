@@ -249,22 +249,20 @@ arc(r_0040_0008__or, r_0040_0009__corporations, conj2).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0040_0001__PRIVATE,R_0040_0002__LAW,R_0040_0006__PRIVATE,R_0040_0007__CITIZENS,R_0040_0009__CORPORATIONS,R_0040_0008__OR,R_0040_0004__ISSUES,R_0040_0003__COVERS] :
-      ( r_0040_0001__Private(R_0040_0001__PRIVATE)
-      &amp; r_0040_0006__private(R_0040_0006__PRIVATE)
-      &amp; r_0040_0009__corporations(R_0040_0009__CORPORATIONS)
-      &amp; r_0040_0003__covers(R_0040_0003__COVERS)
-      &amp; has_arg1(R_0040_0003__COVERS,R_0040_0004__ISSUES)
-      &amp; r_0040_0004__issues(R_0040_0004__ISSUES)
-      &amp; has_r_0040_0005__between(R_0040_0004__ISSUES,R_0040_0008__OR)
-      &amp; r_0040_0008__or(R_0040_0008__OR)
-      &amp; has_conj2(R_0040_0008__OR,R_0040_0009__CORPORATIONS)
-      &amp; has_conj1(R_0040_0008__OR,R_0040_0007__CITIZENS)
-      &amp; r_0040_0007__citizens(R_0040_0007__CITIZENS)
-      &amp; has_attrib19(R_0040_0007__CITIZENS,R_0040_0006__PRIVATE)
-      &amp; has_arg0(R_0040_0003__COVERS,R_0040_0002__LAW)
-      &amp; r_0040_0002__law(R_0040_0002__LAW)
-      &amp; has_attrib3(R_0040_0002__LAW,R_0040_0001__PRIVATE) ) ).
+    ? [R_40_3_COVERS,R_40_2_LAW,R_40_1_PRIVATE,R_40_4_ISSUES,R_40_8_OR,R_40_7_CITIZENS,R_40_6_PRIVATE,R_40_9_CORPORATIONS] :
+      ( private(R_40_1_PRIVATE)
+      &amp; private(R_40_6_PRIVATE)
+      &amp; corporations(R_40_9_CORPORATIONS)
+      &amp; covers(R_40_3_COVERS,R_40_2_LAW,R_40_4_ISSUES)
+      &amp; law(R_40_2_LAW)
+      &amp; attrib3(R_40_2_LAW,R_40_1_PRIVATE)
+      &amp; issues(R_40_4_ISSUES)
+      &amp; between(R_40_4_ISSUES,R_40_8_OR)
+      &amp; or(R_40_8_OR)
+      &amp; conj1(R_40_8_OR,R_40_7_CITIZENS)
+      &amp; citizens(R_40_7_CITIZENS)
+      &amp; attrib19(R_40_7_CITIZENS,R_40_6_PRIVATE)
+      &amp; conj2(R_40_8_OR,R_40_9_CORPORATIONS) ) ).
 </pre>
 <br><hr><br>
 <svg width="523pt" height="387pt"

@@ -182,16 +182,14 @@ arc(r_0029_0010__control, r_0029_0009__electronic, attrib24).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0029_0004__THE_R_0029_0005__MAINSPRING,R_0029_0001__THE_R_0029_0002__POWER,R_0029_0009__ELECTRONIC,R_0029_0010__CONTROL,R_0029_0006__IS_R_0029_0007__REGULATED] :
-      ( r_0029_0004__the_r_0029_0005__mainspring(R_0029_0004__THE_R_0029_0005__MAINSPRING)
-      &amp; r_0029_0009__electronic(R_0029_0009__ELECTRONIC)
-      &amp; r_0029_0006__is_r_0029_0007__regulated(R_0029_0006__IS_R_0029_0007__REGULATED)
-      &amp; has_arg0(R_0029_0006__IS_R_0029_0007__REGULATED,R_0029_0010__CONTROL)
-      &amp; r_0029_0010__control(R_0029_0010__CONTROL)
-      &amp; has_attrib24(R_0029_0010__CONTROL,R_0029_0009__ELECTRONIC)
-      &amp; has_arg1(R_0029_0006__IS_R_0029_0007__REGULATED,R_0029_0001__THE_R_0029_0002__POWER)
-      &amp; r_0029_0001__The_r_0029_0002__power(R_0029_0001__THE_R_0029_0002__POWER)
-      &amp; has_r_0029_0003__of(R_0029_0001__THE_R_0029_0002__POWER,R_0029_0004__THE_R_0029_0005__MAINSPRING) ) ).
+    ? [R_29_6_IS_REGULATED,R_29_10_CONTROL,R_29_9_ELECTRONIC,R_29_1_THE_POWER,R_29_4_THE_MAINSPRING] :
+      ( electronic(R_29_9_ELECTRONIC)
+      &amp; the_mainspring(R_29_4_THE_MAINSPRING)
+      &amp; is_regulated(R_29_6_IS_REGULATED,R_29_10_CONTROL,R_29_1_THE_POWER)
+      &amp; control(R_29_10_CONTROL)
+      &amp; attrib24(R_29_10_CONTROL,R_29_9_ELECTRONIC)
+      &amp; the_power(R_29_1_THE_POWER)
+      &amp; of(R_29_1_THE_POWER,R_29_4_THE_MAINSPRING) ) ).
 </pre>
 <br><hr><br>
 <svg width="520pt" height="297pt"

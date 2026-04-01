@@ -377,28 +377,23 @@ arc(r_0006_0018__to_r_0006_0019__sit, r_0006_0006__the_r_0006_0007__bulldog, arg
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0006_0001__JOHN,R_0006_0004__ALRIGHT,R_0006_0006__THE_R_0006_0007__BULLDOG,R_0006_0002__GOT_R_0006_0003__ON,R_0006_0008__BUT] :
-      ( r_0006_0001__John(R_0006_0001__JOHN)
-      &amp; r_0006_0004__alright(R_0006_0004__ALRIGHT)
-      &amp; r_0006_0006__the_r_0006_0007__bulldog(R_0006_0006__THE_R_0006_0007__BULLDOG)
-      &amp; r_0006_0008__but(R_0006_0008__BUT)
-      &amp; ! [R_0006_0016__TOLD,R_0006_0018__TO_R_0006_0019__SIT] :
-          ( ( r_0006_0016__told(R_0006_0016__TOLD)
-            &amp; has_arg1(R_0006_0016__TOLD,R_0006_0018__TO_R_0006_0019__SIT)
-            &amp; r_0006_0018__to_r_0006_0019__sit(R_0006_0018__TO_R_0006_0019__SIT)
-            &amp; has_arg0(R_0006_0018__TO_R_0006_0019__SIT,R_0006_0006__THE_R_0006_0007__BULLDOG)
-            &amp; has_arg2(R_0006_0016__TOLD,R_0006_0006__THE_R_0006_0007__BULLDOG)
-            &amp; has_arg0(R_0006_0016__TOLD,R_0006_0001__JOHN) )
-         =&gt; ? [R_0006_0013__UP,R_0006_0010__KEPT_R_0006_0011__ON_R_0006_0012__STANDING] :
-              ( r_0006_0013__up(R_0006_0013__UP)
-              &amp; r_0006_0010__kept_r_0006_0011__on_r_0006_0012__standing(R_0006_0010__KEPT_R_0006_0011__ON_R_0006_0012__STANDING)
-              &amp; has_clr36(R_0006_0010__KEPT_R_0006_0011__ON_R_0006_0012__STANDING,R_0006_0013__UP)
-              &amp; has_arg0(R_0006_0010__KEPT_R_0006_0011__ON_R_0006_0012__STANDING,R_0006_0006__THE_R_0006_0007__BULLDOG) ) )
-      &amp; has_conj1(R_0006_0008__BUT,R_0006_0002__GOT_R_0006_0003__ON)
-      &amp; r_0006_0002__got_r_0006_0003__on(R_0006_0002__GOT_R_0006_0003__ON)
-      &amp; has_r_0006_0005__with_nim17(R_0006_0002__GOT_R_0006_0003__ON,R_0006_0006__THE_R_0006_0007__BULLDOG)
-      &amp; has_nim11(R_0006_0002__GOT_R_0006_0003__ON,R_0006_0004__ALRIGHT)
-      &amp; has_arg0(R_0006_0002__GOT_R_0006_0003__ON,R_0006_0001__JOHN) ) ).
+    ? [R_6_8_BUT,R_6_2_GOT_ON,R_6_1_JOHN,R_6_4_ALRIGHT,R_6_6_THE_BULLDOG] :
+      ( john(R_6_1_JOHN)
+      &amp; alright(R_6_4_ALRIGHT)
+      &amp; the_bulldog(R_6_6_THE_BULLDOG)
+      &amp; ! [R_6_16_TOLD,R_6_18_TO_SIT] :
+          ( ( told(R_6_16_TOLD,R_6_1_JOHN,R_6_18_TO_SIT,R_6_6_THE_BULLDOG)
+            &amp; to_sit(R_6_18_TO_SIT,R_6_6_THE_BULLDOG) )
+         =&gt; ? [R_6_10_KEPT_ON_STANDING,R_6_13_UP] :
+              ( up(R_6_13_UP)
+              &amp; kept_on_standing(R_6_10_KEPT_ON_STANDING,R_6_6_THE_BULLDOG)
+              &amp; clr36(R_6_10_KEPT_ON_STANDING,R_6_13_UP) ) )
+      &amp; conj2(CONJ2)
+      &amp; but(R_6_8_BUT)
+      &amp; conj1(R_6_8_BUT,R_6_2_GOT_ON)
+      &amp; got_on(R_6_2_GOT_ON,R_6_1_JOHN)
+      &amp; nim11(R_6_2_GOT_ON,R_6_4_ALRIGHT)
+      &amp; with_nim17(R_6_2_GOT_ON,R_6_6_THE_BULLDOG) ) ).
 </pre>
 <br><hr><br>
 <svg width="908pt" height="387pt"

@@ -493,37 +493,27 @@ arc(z_000_107_a_lob_a01_2, r_0107_0008__retorted, scope).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0107_0003__ANGRY,R_0107_0004__TORIES,R_0107_0006__MR_R_0107_0007__BROWN,R_0107_0001__INTERRUPTED,UTTERANCE_107_A_LOB_A01_28,R_0107_0008__RETORTED,Z_000_107_A_LOB_A01_2] :
-      ( r_0107_0003__angry(R_0107_0003__ANGRY)
-      &amp; r_0107_0006__Mr_r_0107_0007__Brown(R_0107_0006__MR_R_0107_0007__BROWN)
-      &amp; z_000_107_a_lob_a01_2(Z_000_107_A_LOB_A01_2)
-      &amp; has_conj2(Z_000_107_A_LOB_A01_2,R_0107_0008__RETORTED)
-      &amp; r_0107_0008__retorted(R_0107_0008__RETORTED)
-      &amp; has_arg0(R_0107_0008__RETORTED,R_0107_0006__MR_R_0107_0007__BROWN)
-      &amp; has_arg1(R_0107_0008__RETORTED,UTTERANCE_107_A_LOB_A01_28)
-      &amp; utterance_107_a_lob_a01_28(UTTERANCE_107_A_LOB_A01_28)
-      &amp; ! [R_0107_0017__NOTHING_QUANT] :
-          ( ! [Z_000_107_A_LOB_A01_45,R_0107_0011__THE_R_0107_0012__JACKALS,R_0107_0020__CAN_R_0107_0021__DO] :
-              ( ( r_0107_0011__The_r_0107_0012__jackals(R_0107_0011__THE_R_0107_0012__JACKALS)
-                &amp; z_000_107_a_lob_a01_45(Z_000_107_A_LOB_A01_45)
-                &amp; r_0107_0020__can_r_0107_0021__do(R_0107_0020__CAN_R_0107_0021__DO)
-                &amp; has_arg1(R_0107_0020__CAN_R_0107_0021__DO,Z_000_107_A_LOB_A01_45)
-                &amp; has_arg0(R_0107_0020__CAN_R_0107_0021__DO,R_0107_0011__THE_R_0107_0012__JACKALS) )
-             =&gt; ? [R_0107_0018__BETTER,R_0107_0015__THERE_R_0107_0016__IS] :
-                  ( r_0107_0018__better(R_0107_0018__BETTER)
-                  &amp; r_0107_0015__there_r_0107_0016__is(R_0107_0015__THERE_R_0107_0016__IS)
-                  &amp; has_arg0(R_0107_0015__THERE_R_0107_0016__IS,Z_000_107_A_LOB_A01_45)
-                  &amp; has_prd(R_0107_0015__THERE_R_0107_0016__IS,R_0107_0018__BETTER) ) )
-         =&gt; ? [R_0107_0011__THE_R_0107_0012__JACKALS,R_0107_0013__BAY] :
-              ( r_0107_0011__The_r_0107_0012__jackals(R_0107_0011__THE_R_0107_0012__JACKALS)
-              &amp; r_0107_0013__bay(R_0107_0013__BAY)
-              &amp; has_arg0(R_0107_0013__BAY,R_0107_0011__THE_R_0107_0012__JACKALS) ) )
-      &amp; has_conj1(Z_000_107_A_LOB_A01_2,R_0107_0001__INTERRUPTED)
-      &amp; r_0107_0001__Interrupted(R_0107_0001__INTERRUPTED)
-      &amp; has_arg1(R_0107_0001__INTERRUPTED,R_0107_0006__MR_R_0107_0007__BROWN)
-      &amp; has_arg0(R_0107_0001__INTERRUPTED,R_0107_0004__TORIES)
-      &amp; r_0107_0004__tories(R_0107_0004__TORIES)
-      &amp; has_attrib10(R_0107_0004__TORIES,R_0107_0003__ANGRY) ) ).
+    ? [Z_107_A_LOB_A01_2,R_107_1_INTERRUPTED,R_107_4_TORIES,R_107_3_ANGRY,R_107_8_RETORTED,R_107_6_MR_BROWN,UTTERANCE_107_A_LOB_A01_28] :
+      ( angry(R_107_3_ANGRY)
+      &amp; mr_Brown(R_107_6_MR_BROWN)
+      &amp; z_107_a_lob_a01_2(Z_107_A_LOB_A01_2)
+      &amp; conj1(Z_107_A_LOB_A01_2,R_107_1_INTERRUPTED)
+      &amp; interrupted(R_107_1_INTERRUPTED,R_107_4_TORIES,R_107_6_MR_BROWN)
+      &amp; tories(R_107_4_TORIES)
+      &amp; attrib10(R_107_4_TORIES,R_107_3_ANGRY)
+      &amp; conj2(Z_107_A_LOB_A01_2,R_107_8_RETORTED)
+      &amp; retorted(R_107_8_RETORTED,R_107_6_MR_BROWN,UTTERANCE_107_A_LOB_A01_28)
+      &amp; ( ! [R_107_20_CAN_DO,R_107_11_THE_JACKALS,Z_107_A_LOB_A01_45] :
+            ( ( the_jackals(R_107_11_THE_JACKALS)
+              &amp; can_do(R_107_20_CAN_DO,R_107_11_THE_JACKALS,Z_107_A_LOB_A01_45) )
+           =&gt; ? [R_107_15_THERE_IS,R_107_18_BETTER] :
+                ( better(R_107_18_BETTER)
+                &amp; there_is(R_107_15_THERE_IS,Z_107_A_LOB_A01_45,R_107_18_BETTER) ) )
+       =&gt; ? [R_107_13_BAY,R_107_11_THE_JACKALS] :
+            ( the_jackals(R_107_11_THE_JACKALS)
+            &amp; bay(R_107_13_BAY,R_107_11_THE_JACKALS) ) )
+      &amp; part1(PART1)
+      &amp; utterance_107_a_lob_a01_28(UTTERANCE_107_A_LOB_A01_28) ) ).
 </pre>
 <br><hr><br>
 <svg width="1138pt" height="387pt"

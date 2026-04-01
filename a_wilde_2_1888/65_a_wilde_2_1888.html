@@ -496,37 +496,31 @@ arc(r_0065_0028__seen, r_0065_0027__ever, nim77).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0065_0003__THE_R_0065_0004__PEOPLE,R_0065_0022__MOST,R_0065_0023__BEAUTIFUL,R_0065_0021__THE_R_0065_0024__GARDEN,R_0065_0027__EVER,R_0065_0026__HAD_R_0065_0028__SEEN] :
-      ( r_0065_0003__the_r_0065_0004__people(R_0065_0003__THE_R_0065_0004__PEOPLE)
-      &amp; r_0065_0022__most(R_0065_0022__MOST)
-      &amp; r_0065_0027__ever(R_0065_0027__EVER)
-      &amp; r_0065_0026__had_r_0065_0028__seen(R_0065_0026__HAD_R_0065_0028__SEEN)
-      &amp; has_nim77(R_0065_0026__HAD_R_0065_0028__SEEN,R_0065_0027__EVER)
-      &amp; has_arg1(R_0065_0026__HAD_R_0065_0028__SEEN,R_0065_0021__THE_R_0065_0024__GARDEN)
-      &amp; r_0065_0021__the_r_0065_0024__garden(R_0065_0021__THE_R_0065_0024__GARDEN)
-      &amp; has_attrib60(R_0065_0021__THE_R_0065_0024__GARDEN,R_0065_0023__BEAUTIFUL)
-      &amp; r_0065_0023__beautiful(R_0065_0023__BEAUTIFUL)
-      &amp; has_qual61(R_0065_0023__BEAUTIFUL,R_0065_0022__MOST)
-      &amp; has_arg0(R_0065_0026__HAD_R_0065_0028__SEEN,R_0065_0003__THE_R_0065_0004__PEOPLE)
-      &amp; ! [R_0065_0005__WERE_R_0065_0006__GOING,R_0065_0008__MARKET,R_0065_0011__O_APOS_CLOCK,R_0065_0010__TWELVE] :
-          ( ( r_0065_0008__market(R_0065_0008__MARKET)
-            &amp; r_0065_0011__o_apos_clock(R_0065_0011__O_APOS_CLOCK)
-            &amp; r_0065_0005__were_r_0065_0006__going(R_0065_0005__WERE_R_0065_0006__GOING)
-            &amp; has_r_0065_0009__at_nim27(R_0065_0005__WERE_R_0065_0006__GOING,R_0065_0010__TWELVE)
-            &amp; r_0065_0010__twelve(R_0065_0010__TWELVE)
-            &amp; has_qual30(R_0065_0010__TWELVE,R_0065_0011__O_APOS_CLOCK)
-            &amp; has_r_0065_0007__to_nim21(R_0065_0005__WERE_R_0065_0006__GOING,R_0065_0008__MARKET)
-            &amp; has_arg0(R_0065_0005__WERE_R_0065_0006__GOING,R_0065_0003__THE_R_0065_0004__PEOPLE) )
-         =&gt; ? [R_0065_0014__THE_R_0065_0015__GIANT,R_0065_0018__THE_R_0065_0019__CHILDREN,R_0065_0016__PLAYING,R_0065_0001__AND_R_0065_0013__FOUND] :
-              ( r_0065_0014__the_r_0065_0015__Giant(R_0065_0014__THE_R_0065_0015__GIANT)
-              &amp; r_0065_0018__the_r_0065_0019__children(R_0065_0018__THE_R_0065_0019__CHILDREN)
-              &amp; r_0065_0001__And_r_0065_0013__found(R_0065_0001__AND_R_0065_0013__FOUND)
-              &amp; has_arg1(R_0065_0001__AND_R_0065_0013__FOUND,R_0065_0016__PLAYING)
-              &amp; r_0065_0016__playing(R_0065_0016__PLAYING)
-              &amp; has_r_0065_0020__in_nim57(R_0065_0016__PLAYING,R_0065_0021__THE_R_0065_0024__GARDEN)
-              &amp; has_r_0065_0017__with_nim49(R_0065_0016__PLAYING,R_0065_0018__THE_R_0065_0019__CHILDREN)
-              &amp; has_arg0(R_0065_0016__PLAYING,R_0065_0014__THE_R_0065_0015__GIANT)
-              &amp; has_arg0(R_0065_0001__AND_R_0065_0013__FOUND,R_0065_0003__THE_R_0065_0004__PEOPLE) ) ) ) ).
+    ? [R_65_26_HAD_SEEN,R_65_3_THE_PEOPLE,R_65_21_THE_GARDEN,R_65_23_BEAUTIFUL,R_65_22_MOST,R_65_27_EVER] :
+      ( the_people(R_65_3_THE_PEOPLE)
+      &amp; most(R_65_22_MOST)
+      &amp; ever(R_65_27_EVER)
+      &amp; ! [R_65_5_WERE_GOING,R_65_8_MARKET,R_65_10_TWELVE,R_65_11_O_APOS_CLOCK] :
+          ( ( market(R_65_8_MARKET)
+            &amp; o_apos_clock(R_65_11_O_APOS_CLOCK)
+            &amp; were_going(R_65_5_WERE_GOING,R_65_3_THE_PEOPLE)
+            &amp; to_nim21(R_65_5_WERE_GOING,R_65_8_MARKET)
+            &amp; at_nim27(R_65_5_WERE_GOING,R_65_10_TWELVE)
+            &amp; twelve(R_65_10_TWELVE)
+            &amp; qual30(R_65_10_TWELVE,R_65_11_O_APOS_CLOCK) )
+         =&gt; ? [R_65_1_AND_FOUND,R_65_16_PLAYING,R_65_14_THE_GIANT,R_65_18_THE_CHILDREN] :
+              ( the_Giant(R_65_14_THE_GIANT)
+              &amp; the_children(R_65_18_THE_CHILDREN)
+              &amp; and_found(R_65_1_AND_FOUND,R_65_3_THE_PEOPLE,R_65_16_PLAYING)
+              &amp; playing(R_65_16_PLAYING,R_65_14_THE_GIANT)
+              &amp; with_nim49(R_65_16_PLAYING,R_65_18_THE_CHILDREN)
+              &amp; in_nim57(R_65_16_PLAYING,R_65_21_THE_GARDEN) ) )
+      &amp; had_seen(R_65_26_HAD_SEEN,R_65_3_THE_PEOPLE,R_65_21_THE_GARDEN)
+      &amp; the_garden(R_65_21_THE_GARDEN)
+      &amp; attrib60(R_65_21_THE_GARDEN,R_65_23_BEAUTIFUL)
+      &amp; beautiful(R_65_23_BEAUTIFUL)
+      &amp; qual61(R_65_23_BEAUTIFUL,R_65_22_MOST)
+      &amp; nim77(R_65_26_HAD_SEEN,R_65_27_EVER) ) ).
 </pre>
 <br><hr><br>
 <svg width="1371pt" height="387pt"

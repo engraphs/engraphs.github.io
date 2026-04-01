@@ -289,23 +289,20 @@ arc(r_0017_0011__nothing_quant, z_000_17_a_lob_n02_30, restriction).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0017_0001__MRS_R_0017_0002__DEANE,R_0017_0005__SUITABLE,R_0017_0004__A_R_0017_0006__COMMENT,R_0017_0003__MADE,R_0017_0008__BUT] :
-      ( r_0017_0001__Mrs_r_0017_0002__Deane(R_0017_0001__MRS_R_0017_0002__DEANE)
-      &amp; r_0017_0005__suitable(R_0017_0005__SUITABLE)
-      &amp; r_0017_0008__but(R_0017_0008__BUT)
-      &amp; ! [Z_000_17_A_LOB_N02_30] :
-          ( z_000_17_a_lob_n02_30(Z_000_17_A_LOB_N02_30)
-         =&gt; ? [R_0017_0009__BERYL,R_0017_0010__SAID] :
-              ( r_0017_0009__Beryl(R_0017_0009__BERYL)
-              &amp; r_0017_0010__said(R_0017_0010__SAID)
-              &amp; has_arg1(R_0017_0010__SAID,Z_000_17_A_LOB_N02_30)
-              &amp; has_arg0(R_0017_0010__SAID,R_0017_0009__BERYL) ) )
-      &amp; has_conj1(R_0017_0008__BUT,R_0017_0003__MADE)
-      &amp; r_0017_0003__made(R_0017_0003__MADE)
-      &amp; has_arg1(R_0017_0003__MADE,R_0017_0004__A_R_0017_0006__COMMENT)
-      &amp; r_0017_0004__a_r_0017_0006__comment(R_0017_0004__A_R_0017_0006__COMMENT)
-      &amp; has_attrib14(R_0017_0004__A_R_0017_0006__COMMENT,R_0017_0005__SUITABLE)
-      &amp; has_arg0(R_0017_0003__MADE,R_0017_0001__MRS_R_0017_0002__DEANE) ) ).
+    ? [R_17_8_BUT,R_17_3_MADE,R_17_1_MRS_DEANE,R_17_4_A_COMMENT,R_17_5_SUITABLE] :
+      ( mrs_Deane(R_17_1_MRS_DEANE)
+      &amp; suitable(R_17_5_SUITABLE)
+      &amp; ! [Z_17_A_LOB_N02_30] :
+          ( true
+         =&gt; ? [R_17_10_SAID,R_17_9_BERYL] :
+              ( beryl(R_17_9_BERYL)
+              &amp; said(R_17_10_SAID,R_17_9_BERYL,Z_17_A_LOB_N02_30) ) )
+      &amp; conj2(CONJ2)
+      &amp; but(R_17_8_BUT)
+      &amp; conj1(R_17_8_BUT,R_17_3_MADE)
+      &amp; made(R_17_3_MADE,R_17_1_MRS_DEANE,R_17_4_A_COMMENT)
+      &amp; a_comment(R_17_4_A_COMMENT)
+      &amp; attrib14(R_17_4_A_COMMENT,R_17_5_SUITABLE) ) ).
 </pre>
 <br><hr><br>
 <svg width="542pt" height="297pt"

@@ -610,42 +610,31 @@ arc(z_000_52_a_lob_n01_2, r_0052_0026__if, scope).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0052_0032__THE_R_0052_0033__ROADS,Z_000_52_A_LOB_N01_91,R_0052_0034__WOULD_R_0052_0035__PERMIT,Z_000_52_A_LOB_N01_3,R_0052_0001__PROVIDED,Z_000_52_A_LOB_N01_2] :
-      ( r_0052_0032__the_r_0052_0033__roads(R_0052_0032__THE_R_0052_0033__ROADS)
-      &amp; z_000_52_a_lob_n01_3(Z_000_52_A_LOB_N01_3)
-      &amp; z_000_52_a_lob_n01_91(Z_000_52_A_LOB_N01_91)
-      &amp; z_000_52_a_lob_n01_2(Z_000_52_A_LOB_N01_2)
-      &amp; ! [R_0052_0028__DROVE,R_0052_0027__THEY,R_0052_0029__AS,R_0052_0030__FAST] :
-          ( ( r_0052_0027__they(R_0052_0027__THEY)
-            &amp; r_0052_0029__as(R_0052_0029__AS)
-            &amp; r_0052_0028__drove(R_0052_0028__DROVE)
-            &amp; has_nim82(R_0052_0028__DROVE,R_0052_0030__FAST)
-            &amp; r_0052_0030__fast(R_0052_0030__FAST)
-            &amp; has_r_0052_0031__as(R_0052_0030__FAST,Z_000_52_A_LOB_N01_91)
-            &amp; has_qual83(R_0052_0030__FAST,R_0052_0029__AS)
-            &amp; has_arg0(R_0052_0028__DROVE,R_0052_0027__THEY) )
-         =&gt; ~ ? [R_0052_0037__THEY,R_0052_0043__BARLETTA,R_0052_0045__MIDDAY,R_0052_0041__TO_R_0052_0042__REACH,R_0052_0025__AND_R_0052_0038__COULD_R_0052_0040__HOPE] :
-                ( r_0052_0037__they(R_0052_0037__THEY)
-                &amp; r_0052_0043__Barletta(R_0052_0043__BARLETTA)
-                &amp; r_0052_0045__midday(R_0052_0045__MIDDAY)
-                &amp; r_0052_0025__and_r_0052_0038__could_r_0052_0040__hope(R_0052_0025__AND_R_0052_0038__COULD_R_0052_0040__HOPE)
-                &amp; has_arg1(R_0052_0025__AND_R_0052_0038__COULD_R_0052_0040__HOPE,R_0052_0041__TO_R_0052_0042__REACH)
-                &amp; r_0052_0041__to_r_0052_0042__reach(R_0052_0041__TO_R_0052_0042__REACH)
-                &amp; has_r_0052_0044__before_nim128(R_0052_0041__TO_R_0052_0042__REACH,R_0052_0045__MIDDAY)
-                &amp; has_arg1(R_0052_0041__TO_R_0052_0042__REACH,R_0052_0043__BARLETTA)
-                &amp; has_arg0(R_0052_0041__TO_R_0052_0042__REACH,R_0052_0037__THEY)
-                &amp; has_arg0(R_0052_0025__AND_R_0052_0038__COULD_R_0052_0040__HOPE,R_0052_0037__THEY) ) )
-      &amp; has_conj1(Z_000_52_A_LOB_N01_2,R_0052_0001__PROVIDED)
-      &amp; r_0052_0001__Provided(R_0052_0001__PROVIDED)
-      &amp; has_arg0(R_0052_0001__PROVIDED,Z_000_52_A_LOB_N01_3)
-      &amp; has_arg1(R_0052_0001__PROVIDED,R_0052_0004__NOT)
-      &amp; ~ ? [R_0052_0002__THEY,R_0052_0003__DID_R_0052_0005__STOP] :
-            ( r_0052_0002__they(R_0052_0002__THEY)
-            &amp; r_0052_0003__did_r_0052_0005__stop(R_0052_0003__DID_R_0052_0005__STOP)
-            &amp; has_arg0(R_0052_0003__DID_R_0052_0005__STOP,R_0052_0002__THEY) )
-      &amp; r_0052_0034__would_r_0052_0035__permit(R_0052_0034__WOULD_R_0052_0035__PERMIT)
-      &amp; has_arg1(R_0052_0034__WOULD_R_0052_0035__PERMIT,Z_000_52_A_LOB_N01_91)
-      &amp; has_arg0(R_0052_0034__WOULD_R_0052_0035__PERMIT,R_0052_0032__THE_R_0052_0033__ROADS) ) ).
+    ? [R_52_34_WOULD_PERMIT,R_52_32_THE_ROADS,Z_52_A_LOB_N01_91,Z_52_A_LOB_N01_2,R_52_1_PROVIDED,Z_52_A_LOB_N01_3] :
+      ( the_roads(R_52_32_THE_ROADS)
+      &amp; would_permit(R_52_34_WOULD_PERMIT,R_52_32_THE_ROADS,Z_52_A_LOB_N01_91)
+      &amp; ! [R_52_28_DROVE,R_52_27_THEY,R_52_30_FAST,R_52_29_AS] :
+          ( ( they(R_52_27_THEY)
+            &amp; as(R_52_29_AS)
+            &amp; drove(R_52_28_DROVE,R_52_27_THEY)
+            &amp; nim82(R_52_28_DROVE,R_52_30_FAST)
+            &amp; fast(R_52_30_FAST)
+            &amp; qual83(R_52_30_FAST,R_52_29_AS)
+            &amp; as(R_52_30_FAST,Z_52_A_LOB_N01_91) )
+         =&gt; ~ ? [R_52_25_AND_COULD_HOPE,R_52_41_TO_REACH,R_52_37_THEY,R_52_43_BARLETTA,R_52_45_MIDDAY] :
+                ( they(R_52_37_THEY)
+                &amp; barletta(R_52_43_BARLETTA)
+                &amp; midday(R_52_45_MIDDAY)
+                &amp; and_could_hope(R_52_25_AND_COULD_HOPE,R_52_37_THEY,R_52_41_TO_REACH)
+                &amp; to_reach(R_52_41_TO_REACH,R_52_37_THEY,R_52_43_BARLETTA)
+                &amp; before_nim128(R_52_41_TO_REACH,R_52_45_MIDDAY) ) )
+      &amp; conj2(CONJ2)
+      &amp; z_52_a_lob_n01_2(Z_52_A_LOB_N01_2)
+      &amp; conj1(Z_52_A_LOB_N01_2,R_52_1_PROVIDED)
+      &amp; provided(R_52_1_PROVIDED,Z_52_A_LOB_N01_3,R_52_4_NOT)
+      &amp; ~ ? [R_52_3_DID_STOP,R_52_2_THEY] :
+            ( they(R_52_2_THEY)
+            &amp; did_stop(R_52_3_DID_STOP,R_52_2_THEY) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="2134pt" height="478pt"

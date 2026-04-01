@@ -520,39 +520,34 @@ arc(r_0043_0023__said, r_0043_0024__stiffly, nim66).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [UTTERANCE_43_A_LOB_N02_4,R_0043_0022__HE,R_0043_0024__STIFFLY,R_0043_0023__SAID] :
-      ( r_0043_0022__he(R_0043_0022__HE)
-      &amp; r_0043_0024__stiffly(R_0043_0024__STIFFLY)
-      &amp; r_0043_0023__said(R_0043_0023__SAID)
-      &amp; has_nim66(R_0043_0023__SAID,R_0043_0024__STIFFLY)
-      &amp; has_arg0(R_0043_0023__SAID,R_0043_0022__HE)
-      &amp; has_arg1(R_0043_0023__SAID,UTTERANCE_43_A_LOB_N02_4)
+    ? [R_43_23_SAID,R_43_22_HE,UTTERANCE_43_A_LOB_N02_4,R_43_24_STIFFLY] :
+      ( he(R_43_22_HE)
+      &amp; stiffly(R_43_24_STIFFLY)
+      &amp; said(R_43_23_SAID,R_43_22_HE,UTTERANCE_43_A_LOB_N02_4)
       &amp; utterance_43_a_lob_n02_4(UTTERANCE_43_A_LOB_N02_4)
-      &amp; has_part1(UTTERANCE_43_A_LOB_N02_4,R_0043_0007__NOT)
-      &amp; ~ ? [R_0043_0003__YOUR,R_0043_0004__EMPLOYEE,R_0043_0009__BUSINESS,R_0043_0006___APOS_S] :
-            ( r_0043_0003__your(R_0043_0003__YOUR)
-            &amp; r_0043_0006___apos_s(R_0043_0006___APOS_S)
-            &amp; ! [R_0043_0015__AND,R_0043_0014__WHYS,R_0043_0016__WHEREFORES,R_0043_0018__YOUR,R_0043_0019__ACTIONS] :
-                ( ( r_0043_0014__whys(R_0043_0014__WHYS)
-                  &amp; r_0043_0016__wherefores(R_0043_0016__WHEREFORES)
-                  &amp; r_0043_0018__your(R_0043_0018__YOUR)
-                  &amp; r_0043_0015__and(R_0043_0015__AND)
-                  &amp; has_r_0043_0017__of(R_0043_0015__AND,R_0043_0019__ACTIONS)
-                  &amp; r_0043_0019__actions(R_0043_0019__ACTIONS)
-                  &amp; has_gen(R_0043_0019__ACTIONS,R_0043_0018__YOUR)
-                  &amp; has_conj2(R_0043_0015__AND,R_0043_0016__WHEREFORES)
-                  &amp; has_conj1(R_0043_0015__AND,R_0043_0014__WHYS) )
-               =&gt; ? [Z_000_43_A_LOB_N02_15,R_0043_0010__TO_R_0043_0011__UNDERSTAND] :
-                    ( z_000_43_a_lob_n02_15(Z_000_43_A_LOB_N02_15)
-                    &amp; r_0043_0010__to_r_0043_0011__understand(R_0043_0010__TO_R_0043_0011__UNDERSTAND)
-                    &amp; has_arg0(R_0043_0010__TO_R_0043_0011__UNDERSTAND,Z_000_43_A_LOB_N02_15)
-                    &amp; has_arg1(R_0043_0010__TO_R_0043_0011__UNDERSTAND,R_0043_0015__AND) ) )
-            &amp; has_prd(R_0043_0006___APOS_S,R_0043_0009__BUSINESS)
-            &amp; r_0043_0009__business(R_0043_0009__BUSINESS)
-            &amp; has_gen(R_0043_0009__BUSINESS,R_0043_0022__HE)
-            &amp; has_r_0043_0002__As_nim9(R_0043_0006___APOS_S,R_0043_0004__EMPLOYEE)
-            &amp; r_0043_0004__employee(R_0043_0004__EMPLOYEE)
-            &amp; has_gen(R_0043_0004__EMPLOYEE,R_0043_0003__YOUR) ) ) ).
+      &amp; part1(UTTERANCE_43_A_LOB_N02_4,R_43_7_NOT)
+      &amp; ~ ? [R_43_6__APOS_S,R_43_9_BUSINESS,R_43_4_EMPLOYEE,R_43_3_YOUR] :
+            ( your(R_43_3_YOUR)
+            &amp; ! [R_43_15_AND,R_43_14_WHYS,R_43_16_WHEREFORES,R_43_19_ACTIONS,R_43_18_YOUR] :
+                ( ( whys(R_43_14_WHYS)
+                  &amp; wherefores(R_43_16_WHEREFORES)
+                  &amp; your(R_43_18_YOUR)
+                  &amp; and(R_43_15_AND)
+                  &amp; conj1(R_43_15_AND,R_43_14_WHYS)
+                  &amp; conj2(R_43_15_AND,R_43_16_WHEREFORES)
+                  &amp; of(R_43_15_AND,R_43_19_ACTIONS)
+                  &amp; actions(R_43_19_ACTIONS)
+                  &amp; gen(R_43_19_ACTIONS,R_43_18_YOUR) )
+               =&gt; ? [R_43_10_TO_UNDERSTAND,Z_43_A_LOB_N02_15] : to_understand(R_43_10_TO_UNDERSTAND,Z_43_A_LOB_N02_15,R_43_15_AND) )
+            &amp; arg0(ARG0)
+            &amp; _apos_s(R_43_6__APOS_S)
+            &amp; prd(R_43_6__APOS_S,R_43_9_BUSINESS)
+            &amp; business(R_43_9_BUSINESS)
+            &amp; gen(R_43_9_BUSINESS,R_43_22_HE)
+            &amp; as_nim9(R_43_6__APOS_S,R_43_4_EMPLOYEE)
+            &amp; employee(R_43_4_EMPLOYEE)
+            &amp; gen(R_43_4_EMPLOYEE,R_43_3_YOUR) )
+      &amp; nim66(R_43_23_SAID,R_43_24_STIFFLY) ) ).
 </pre>
 <br><hr><br>
 <svg width="1115pt" height="432pt"

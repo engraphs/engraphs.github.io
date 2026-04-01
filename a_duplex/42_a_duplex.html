@@ -507,38 +507,27 @@ arc(z_000_42_a_duplex_74, r_0042_0027__to_r_0042_0028__book, restriction).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0042_0007__WE,R_0042_0012__A_R_0042_0013__WORLD,R_0042_0009__TO_R_0042_0010__LIVE,R_0042_0006__DO_R_0042_0008__WANT] :
-      ( r_0042_0007__we(R_0042_0007__WE)
-      &amp; r_0042_0012__a_r_0042_0013__world(R_0042_0012__A_R_0042_0013__WORLD)
-      &amp; ~ ? [R_0042_0018__EVEN,R_0042_0015__PEOPLE,Z_000_42_A_DUPLEX_55,R_0042_0024__TWO__HYPHEN__MINUTE,R_0042_0023__A_R_0042_0025__PHONE_R_0042_0026__CALL,R_0042_0021__TO_R_0042_0022__MAKE,R_0042_0029__A_R_0042_0030__HAIRCUT,R_0042_0027__TO_R_0042_0028__BOOK,Z_000_42_A_DUPLEX_74,R_0042_0016__CA_R_0042_0019__BE_R_0042_0020__BOTHERED] :
-            ( r_0042_0015__people(R_0042_0015__PEOPLE)
-            &amp; r_0042_0018__even(R_0042_0018__EVEN)
-            &amp; r_0042_0024__two__hyphen__minute(R_0042_0024__TWO__HYPHEN__MINUTE)
-            &amp; r_0042_0029__a_r_0042_0030__haircut(R_0042_0029__A_R_0042_0030__HAIRCUT)
-            &amp; z_000_42_a_duplex_55(Z_000_42_A_DUPLEX_55)
-            &amp; r_0042_0016__ca_r_0042_0019__be_r_0042_0020__bothered(R_0042_0016__CA_R_0042_0019__BE_R_0042_0020__BOTHERED)
-            &amp; has_arg1(R_0042_0016__CA_R_0042_0019__BE_R_0042_0020__BOTHERED,Z_000_42_A_DUPLEX_74)
-            &amp; z_000_42_a_duplex_74(Z_000_42_A_DUPLEX_74)
-            &amp; has_conj1(Z_000_42_A_DUPLEX_74,R_0042_0027__TO_R_0042_0028__BOOK)
-            &amp; r_0042_0027__to_r_0042_0028__book(R_0042_0027__TO_R_0042_0028__BOOK)
-            &amp; has_arg1(R_0042_0027__TO_R_0042_0028__BOOK,R_0042_0029__A_R_0042_0030__HAIRCUT)
-            &amp; has_arg0(R_0042_0027__TO_R_0042_0028__BOOK,R_0042_0015__PEOPLE)
-            &amp; has_conj2(Z_000_42_A_DUPLEX_74,R_0042_0021__TO_R_0042_0022__MAKE)
-            &amp; r_0042_0021__to_r_0042_0022__make(R_0042_0021__TO_R_0042_0022__MAKE)
-            &amp; has_arg1(R_0042_0021__TO_R_0042_0022__MAKE,R_0042_0023__A_R_0042_0025__PHONE_R_0042_0026__CALL)
-            &amp; r_0042_0023__a_r_0042_0025__phone_r_0042_0026__call(R_0042_0023__A_R_0042_0025__PHONE_R_0042_0026__CALL)
-            &amp; has_attrib67(R_0042_0023__A_R_0042_0025__PHONE_R_0042_0026__CALL,R_0042_0024__TWO__HYPHEN__MINUTE)
-            &amp; has_arg0(R_0042_0021__TO_R_0042_0022__MAKE,R_0042_0015__PEOPLE)
-            &amp; has_arg0(R_0042_0016__CA_R_0042_0019__BE_R_0042_0020__BOTHERED,Z_000_42_A_DUPLEX_55)
-            &amp; has_arg2(R_0042_0016__CA_R_0042_0019__BE_R_0042_0020__BOTHERED,R_0042_0015__PEOPLE)
-            &amp; has_nim49(R_0042_0016__CA_R_0042_0019__BE_R_0042_0020__BOTHERED,R_0042_0018__EVEN)
-            &amp; has_nim38(R_0042_0016__CA_R_0042_0019__BE_R_0042_0020__BOTHERED,R_0042_0012__A_R_0042_0013__WORLD) )
-      &amp; r_0042_0006__do_r_0042_0008__want(R_0042_0006__DO_R_0042_0008__WANT)
-      &amp; has_arg1(R_0042_0006__DO_R_0042_0008__WANT,R_0042_0009__TO_R_0042_0010__LIVE)
-      &amp; r_0042_0009__to_r_0042_0010__live(R_0042_0009__TO_R_0042_0010__LIVE)
-      &amp; has_r_0042_0011__in_clr32(R_0042_0009__TO_R_0042_0010__LIVE,R_0042_0012__A_R_0042_0013__WORLD)
-      &amp; has_arg0(R_0042_0009__TO_R_0042_0010__LIVE,R_0042_0007__WE)
-      &amp; has_arg0(R_0042_0006__DO_R_0042_0008__WANT,R_0042_0007__WE) ) ).
+    ? [R_42_6_DO_WANT,R_42_9_TO_LIVE,R_42_7_WE,R_42_12_A_WORLD] :
+      ( we(R_42_7_WE)
+      &amp; a_world(R_42_12_A_WORLD)
+      &amp; do_want(R_42_6_DO_WANT,R_42_7_WE,R_42_9_TO_LIVE)
+      &amp; to_live(R_42_9_TO_LIVE,R_42_7_WE)
+      &amp; in_clr32(R_42_9_TO_LIVE,R_42_12_A_WORLD)
+      &amp; ~ ? [R_42_16_CA_BE_BOTHERED,Z_42_A_DUPLEX_55,Z_42_A_DUPLEX_74,R_42_27_TO_BOOK,R_42_29_A_HAIRCUT,R_42_21_TO_MAKE,R_42_23_A_PHONE_CALL,R_42_24_TWO_HYPHEN_MINUTE,R_42_15_PEOPLE,R_42_18_EVEN] :
+            ( a_haircut(R_42_29_A_HAIRCUT)
+            &amp; two_hyphen_minute(R_42_24_TWO_HYPHEN_MINUTE)
+            &amp; people(R_42_15_PEOPLE)
+            &amp; even(R_42_18_EVEN)
+            &amp; ca_be_bothered(R_42_16_CA_BE_BOTHERED,Z_42_A_DUPLEX_55,Z_42_A_DUPLEX_74,R_42_15_PEOPLE)
+            &amp; z_42_a_duplex_74(Z_42_A_DUPLEX_74)
+            &amp; conj1(Z_42_A_DUPLEX_74,R_42_27_TO_BOOK)
+            &amp; to_book(R_42_27_TO_BOOK,R_42_15_PEOPLE,R_42_29_A_HAIRCUT)
+            &amp; conj2(Z_42_A_DUPLEX_74,R_42_21_TO_MAKE)
+            &amp; to_make(R_42_21_TO_MAKE,R_42_15_PEOPLE,R_42_23_A_PHONE_CALL)
+            &amp; a_phone_call(R_42_23_A_PHONE_CALL)
+            &amp; attrib67(R_42_23_A_PHONE_CALL,R_42_24_TWO_HYPHEN_MINUTE)
+            &amp; nim38(R_42_16_CA_BE_BOTHERED,R_42_12_A_WORLD)
+            &amp; nim49(R_42_16_CA_BE_BOTHERED,R_42_18_EVEN) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="1307pt" height="613pt"

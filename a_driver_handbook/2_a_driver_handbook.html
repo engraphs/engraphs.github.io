@@ -670,51 +670,43 @@ arc(r_0002_0035__pass, r_0002_0030__the_r_0002_0031__vehicle, arg0).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0002_0014__THE_R_0002_0015__VEHICLE,R_0002_0017__DOWNHILL,R_0002_0016__FACING,R_0002_0030__THE_R_0002_0031__VEHICLE,R_0002_0033__UPHILL,R_0002_0032__GOING] :
-      ( r_0002_0014__the_r_0002_0015__vehicle(R_0002_0014__THE_R_0002_0015__VEHICLE)
-      &amp; r_0002_0017__downhill(R_0002_0017__DOWNHILL)
-      &amp; r_0002_0030__the_r_0002_0031__vehicle(R_0002_0030__THE_R_0002_0031__VEHICLE)
-      &amp; r_0002_0033__uphill(R_0002_0033__UPHILL)
-      &amp; r_0002_0032__going(R_0002_0032__GOING)
-      &amp; has_clr89(R_0002_0032__GOING,R_0002_0033__UPHILL)
-      &amp; has_arg0(R_0002_0032__GOING,R_0002_0030__THE_R_0002_0031__VEHICLE)
-      &amp; r_0002_0016__facing(R_0002_0016__FACING)
-      &amp; has_clr46(R_0002_0016__FACING,R_0002_0017__DOWNHILL)
-      &amp; has_arg0(R_0002_0016__FACING,R_0002_0014__THE_R_0002_0015__VEHICLE)
-      &amp; ! [Z_000_2_A_DRIVER_HANDBOOK_28] :
-          ( z_000_2_a_driver_handbook_28(Z_000_2_A_DRIVER_HANDBOOK_28)
-         =&gt; ? [R_0002_0007__STEEP,R_0002_0006__A_R_0002_0008__ROAD,R_0002_0011__CAN_R_0002_0012__PASS] :
-              ( r_0002_0007__steep(R_0002_0007__STEEP)
-              &amp; r_0002_0011__can_r_0002_0012__pass(R_0002_0011__CAN_R_0002_0012__PASS)
-              &amp; has_arg0(R_0002_0011__CAN_R_0002_0012__PASS,Z_000_2_A_DRIVER_HANDBOOK_28)
-              &amp; has_nim25(R_0002_0011__CAN_R_0002_0012__PASS,R_0002_0006__A_R_0002_0008__ROAD)
-              &amp; r_0002_0006__a_r_0002_0008__road(R_0002_0006__A_R_0002_0008__ROAD)
-              &amp; has_attrib19(R_0002_0006__A_R_0002_0008__ROAD,R_0002_0007__STEEP) ) )
-      &amp; ! [R_0002_0004__MEET,R_0002_0002__TWO_R_0002_0003__VEHICLES,R_0002_0007__STEEP,R_0002_0006__A_R_0002_0008__ROAD] :
-          ( ( r_0002_0002__two_r_0002_0003__vehicles(R_0002_0002__TWO_R_0002_0003__VEHICLES)
-            &amp; r_0002_0007__steep(R_0002_0007__STEEP)
-            &amp; r_0002_0004__meet(R_0002_0004__MEET)
-            &amp; has_r_0002_0005__on_nim16(R_0002_0004__MEET,R_0002_0006__A_R_0002_0008__ROAD)
-            &amp; r_0002_0006__a_r_0002_0008__road(R_0002_0006__A_R_0002_0008__ROAD)
-            &amp; has_attrib19(R_0002_0006__A_R_0002_0008__ROAD,R_0002_0007__STEEP)
-            &amp; has_arg0(R_0002_0004__MEET,R_0002_0002__TWO_R_0002_0003__VEHICLES) )
-         =&gt; ? [R_0002_0025__WAY,R_0002_0020__THE_R_0002_0021__RIGHT,R_0002_0018__MUST_R_0002_0019__YIELD,R_0002_0027__BACKING_R_0002_0028__UP,R_0002_0034__CAN_R_0002_0035__PASS,R_0002_0029__UNTIL,R_0002_0026__BY] :
-              ( r_0002_0025__way(R_0002_0025__WAY)
-              &amp; r_0002_0026__by(R_0002_0026__BY)
-              &amp; has_conj1(R_0002_0026__BY,R_0002_0029__UNTIL)
-              &amp; r_0002_0029__until(R_0002_0029__UNTIL)
-              &amp; has_conj1(R_0002_0029__UNTIL,R_0002_0034__CAN_R_0002_0035__PASS)
-              &amp; r_0002_0034__can_r_0002_0035__pass(R_0002_0034__CAN_R_0002_0035__PASS)
-              &amp; has_arg0(R_0002_0034__CAN_R_0002_0035__PASS,R_0002_0030__THE_R_0002_0031__VEHICLE)
-              &amp; has_conj2(R_0002_0029__UNTIL,R_0002_0027__BACKING_R_0002_0028__UP)
-              &amp; r_0002_0027__backing_r_0002_0028__up(R_0002_0027__BACKING_R_0002_0028__UP)
-              &amp; has_arg0(R_0002_0027__BACKING_R_0002_0028__UP,R_0002_0014__THE_R_0002_0015__VEHICLE)
-              &amp; has_conj2(R_0002_0026__BY,R_0002_0018__MUST_R_0002_0019__YIELD)
-              &amp; r_0002_0018__must_r_0002_0019__yield(R_0002_0018__MUST_R_0002_0019__YIELD)
-              &amp; has_arg1(R_0002_0018__MUST_R_0002_0019__YIELD,R_0002_0020__THE_R_0002_0021__RIGHT)
-              &amp; r_0002_0020__the_r_0002_0021__right(R_0002_0020__THE_R_0002_0021__RIGHT)
-              &amp; has_r_0002_0023__of(R_0002_0020__THE_R_0002_0021__RIGHT,R_0002_0025__WAY)
-              &amp; has_arg0(R_0002_0018__MUST_R_0002_0019__YIELD,R_0002_0014__THE_R_0002_0015__VEHICLE) ) ) ) ).
+    ? [R_2_16_FACING,R_2_14_THE_VEHICLE,R_2_17_DOWNHILL,R_2_32_GOING,R_2_30_THE_VEHICLE,R_2_33_UPHILL] :
+      ( the_vehicle(R_2_14_THE_VEHICLE)
+      &amp; downhill(R_2_17_DOWNHILL)
+      &amp; the_vehicle(R_2_30_THE_VEHICLE)
+      &amp; uphill(R_2_33_UPHILL)
+      &amp; ! [R_2_4_MEET,R_2_2_TWO_VEHICLES,R_2_6_A_ROAD,R_2_7_STEEP] :
+          ( ( two_vehicles(R_2_2_TWO_VEHICLES)
+            &amp; steep(R_2_7_STEEP)
+            &amp; meet(R_2_4_MEET,R_2_2_TWO_VEHICLES)
+            &amp; on_nim16(R_2_4_MEET,R_2_6_A_ROAD)
+            &amp; a_road(R_2_6_A_ROAD)
+            &amp; attrib19(R_2_6_A_ROAD,R_2_7_STEEP) )
+         =&gt; ? [R_2_26_BY,R_2_29_UNTIL,R_2_34_CAN_PASS,R_2_27_BACKING_UP,R_2_18_MUST_YIELD,R_2_20_THE_RIGHT,R_2_25_WAY] :
+              ( way(R_2_25_WAY)
+              &amp; by(R_2_26_BY)
+              &amp; conj1(R_2_26_BY,R_2_29_UNTIL)
+              &amp; until(R_2_29_UNTIL)
+              &amp; conj1(R_2_29_UNTIL,R_2_34_CAN_PASS)
+              &amp; can_pass(R_2_34_CAN_PASS,R_2_30_THE_VEHICLE)
+              &amp; conj2(R_2_29_UNTIL,R_2_27_BACKING_UP)
+              &amp; backing_up(R_2_27_BACKING_UP,R_2_14_THE_VEHICLE)
+              &amp; conj2(R_2_26_BY,R_2_18_MUST_YIELD)
+              &amp; must_yield(R_2_18_MUST_YIELD,R_2_14_THE_VEHICLE,R_2_20_THE_RIGHT)
+              &amp; the_right(R_2_20_THE_RIGHT)
+              &amp; of(R_2_20_THE_RIGHT,R_2_25_WAY) ) )
+      &amp; ! [Z_2_A_DRIVER_HANDBOOK_28] :
+          ( true
+         =&gt; ? [R_2_11_CAN_PASS,R_2_6_A_ROAD,R_2_7_STEEP] :
+              ( steep(R_2_7_STEEP)
+              &amp; can_pass(R_2_11_CAN_PASS,Z_2_A_DRIVER_HANDBOOK_28)
+              &amp; nim25(R_2_11_CAN_PASS,R_2_6_A_ROAD)
+              &amp; a_road(R_2_6_A_ROAD)
+              &amp; attrib19(R_2_6_A_ROAD,R_2_7_STEEP) ) )
+      &amp; facing(R_2_16_FACING,R_2_14_THE_VEHICLE)
+      &amp; clr46(R_2_16_FACING,R_2_17_DOWNHILL)
+      &amp; going(R_2_32_GOING,R_2_30_THE_VEHICLE)
+      &amp; clr89(R_2_32_GOING,R_2_33_UPHILL) ) ).
 </pre>
 <br><hr><br>
 <svg width="1519pt" height="432pt"

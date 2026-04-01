@@ -495,40 +495,34 @@ arc(r_0048_0022__laughing, r_0048_0012__the_r_0048_0013__flowers, arg0).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0048_0001__THE_R_0048_0002__BIRDS,R_0048_0005__ABOUT,R_0048_0004__FLYING,R_0048_0009__DELIGHT,R_0048_0007__TWITTERING,R_0048_0006__AND,R_0048_0003__WERE,R_0048_0012__THE_R_0048_0013__FLOWERS,R_0048_0019__GREEN,R_0048_0018__THE_R_0048_0020__GRASS,R_0048_0016__UP,R_0048_0015__LOOKING,R_0048_0022__LAUGHING,R_0048_0021__AND,R_0048_0014__WERE,R_0048_0011__AND] :
-      ( r_0048_0001__The_r_0048_0002__birds(R_0048_0001__THE_R_0048_0002__BIRDS)
-      &amp; r_0048_0005__about(R_0048_0005__ABOUT)
-      &amp; r_0048_0009__delight(R_0048_0009__DELIGHT)
-      &amp; r_0048_0012__the_r_0048_0013__flowers(R_0048_0012__THE_R_0048_0013__FLOWERS)
-      &amp; r_0048_0019__green(R_0048_0019__GREEN)
-      &amp; r_0048_0011__and(R_0048_0011__AND)
-      &amp; has_conj2(R_0048_0011__AND,R_0048_0014__WERE)
-      &amp; r_0048_0014__were(R_0048_0014__WERE)
-      &amp; has_keep_scope(R_0048_0014__WERE,R_0048_0021__AND)
-      &amp; r_0048_0021__and(R_0048_0021__AND)
-      &amp; has_conj2(R_0048_0021__AND,R_0048_0022__LAUGHING)
-      &amp; r_0048_0022__laughing(R_0048_0022__LAUGHING)
-      &amp; has_arg0(R_0048_0022__LAUGHING,R_0048_0012__THE_R_0048_0013__FLOWERS)
-      &amp; has_conj1(R_0048_0021__AND,R_0048_0015__LOOKING)
-      &amp; r_0048_0015__looking(R_0048_0015__LOOKING)
-      &amp; has_clr49(R_0048_0015__LOOKING,R_0048_0016__UP)
-      &amp; r_0048_0016__up(R_0048_0016__UP)
-      &amp; has_r_0048_0017__through(R_0048_0016__UP,R_0048_0018__THE_R_0048_0020__GRASS)
-      &amp; r_0048_0018__the_r_0048_0020__grass(R_0048_0018__THE_R_0048_0020__GRASS)
-      &amp; has_attrib58(R_0048_0018__THE_R_0048_0020__GRASS,R_0048_0019__GREEN)
-      &amp; has_arg0(R_0048_0015__LOOKING,R_0048_0012__THE_R_0048_0013__FLOWERS)
-      &amp; has_conj1(R_0048_0011__AND,R_0048_0003__WERE)
-      &amp; r_0048_0003__were(R_0048_0003__WERE)
-      &amp; has_keep_scope(R_0048_0003__WERE,R_0048_0006__AND)
-      &amp; r_0048_0006__and(R_0048_0006__AND)
-      &amp; has_conj2(R_0048_0006__AND,R_0048_0007__TWITTERING)
-      &amp; r_0048_0007__twittering(R_0048_0007__TWITTERING)
-      &amp; has_r_0048_0008__with_nim28(R_0048_0007__TWITTERING,R_0048_0009__DELIGHT)
-      &amp; has_arg0(R_0048_0007__TWITTERING,R_0048_0001__THE_R_0048_0002__BIRDS)
-      &amp; has_conj1(R_0048_0006__AND,R_0048_0004__FLYING)
-      &amp; r_0048_0004__flying(R_0048_0004__FLYING)
-      &amp; has_nim16(R_0048_0004__FLYING,R_0048_0005__ABOUT)
-      &amp; has_arg0(R_0048_0004__FLYING,R_0048_0001__THE_R_0048_0002__BIRDS) ) ).
+    ? [R_48_11_AND] :
+      ( and(R_48_11_AND)
+      &amp; conj1(R_48_11_AND,R_48_3_WERE)
+      &amp; ~ ? [R_48_6_AND,R_48_4_FLYING,R_48_5_ABOUT,R_48_7_TWITTERING,R_48_1_THE_BIRDS,R_48_9_DELIGHT] :
+            ( about(R_48_5_ABOUT)
+            &amp; the_birds(R_48_1_THE_BIRDS)
+            &amp; delight(R_48_9_DELIGHT)
+            &amp; and(R_48_6_AND)
+            &amp; conj1(R_48_6_AND,R_48_4_FLYING)
+            &amp; flying(R_48_4_FLYING,R_48_1_THE_BIRDS)
+            &amp; nim16(R_48_4_FLYING,R_48_5_ABOUT)
+            &amp; conj2(R_48_6_AND,R_48_7_TWITTERING)
+            &amp; twittering(R_48_7_TWITTERING,R_48_1_THE_BIRDS)
+            &amp; with_nim28(R_48_7_TWITTERING,R_48_9_DELIGHT) )
+      &amp; conj2(R_48_11_AND,R_48_14_WERE)
+      &amp; ~ ? [R_48_21_AND,R_48_15_LOOKING,R_48_16_UP,R_48_18_THE_GRASS,R_48_19_GREEN,R_48_22_LAUGHING,R_48_12_THE_FLOWERS] :
+            ( green(R_48_19_GREEN)
+            &amp; the_flowers(R_48_12_THE_FLOWERS)
+            &amp; and(R_48_21_AND)
+            &amp; conj1(R_48_21_AND,R_48_15_LOOKING)
+            &amp; looking(R_48_15_LOOKING,R_48_12_THE_FLOWERS)
+            &amp; clr49(R_48_15_LOOKING,R_48_16_UP)
+            &amp; up(R_48_16_UP)
+            &amp; through(R_48_16_UP,R_48_18_THE_GRASS)
+            &amp; the_grass(R_48_18_THE_GRASS)
+            &amp; attrib58(R_48_18_THE_GRASS,R_48_19_GREEN)
+            &amp; conj2(R_48_21_AND,R_48_22_LAUGHING)
+            &amp; laughing(R_48_22_LAUGHING,R_48_12_THE_FLOWERS) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="1049pt" height="568pt"

@@ -321,22 +321,20 @@ arc(r_0014_1001____star__, r_0014_0001__You, arg0).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0014_0001__YOU,R_0014_0005__WORK,R_0014_0002__CAN_R_0014_0003__TRAVEL,R_0014_0006__BUT] :
-      ( r_0014_0001__You(R_0014_0001__YOU)
-      &amp; r_0014_0005__work(R_0014_0005__WORK)
-      &amp; r_0014_0006__but(R_0014_0006__BUT)
-      &amp; ! [R_0014_0013__CAN_R_0014_1001____STAR__] :
-          ( ( r_0014_0013__can_r_0014_1001____star__(R_0014_0013__CAN_R_0014_1001____STAR__)
-            &amp; has_arg0(R_0014_0013__CAN_R_0014_1001____STAR__,R_0014_0001__YOU) )
-         =&gt; ? [R_0014_0010__HOME,R_0014_0007__SHOULD_R_0014_0008__WORK] :
-              ( r_0014_0010__home(R_0014_0010__HOME)
-              &amp; r_0014_0007__should_r_0014_0008__work(R_0014_0007__SHOULD_R_0014_0008__WORK)
-              &amp; has_r_0014_0009__from_nim30(R_0014_0007__SHOULD_R_0014_0008__WORK,R_0014_0010__HOME)
-              &amp; has_arg0(R_0014_0007__SHOULD_R_0014_0008__WORK,R_0014_0001__YOU) ) )
-      &amp; has_conj1(R_0014_0006__BUT,R_0014_0002__CAN_R_0014_0003__TRAVEL)
-      &amp; r_0014_0002__can_r_0014_0003__travel(R_0014_0002__CAN_R_0014_0003__TRAVEL)
-      &amp; has_r_0014_0004__to_and_from_clr15(R_0014_0002__CAN_R_0014_0003__TRAVEL,R_0014_0005__WORK)
-      &amp; has_arg0(R_0014_0002__CAN_R_0014_0003__TRAVEL,R_0014_0001__YOU) ) ).
+    ? [R_14_6_BUT,R_14_2_CAN_TRAVEL,R_14_1_YOU,R_14_5_WORK] :
+      ( you(R_14_1_YOU)
+      &amp; work(R_14_5_WORK)
+      &amp; ! [R_14_13_CAN__STAR_] :
+          ( can__star_(R_14_13_CAN__STAR_,R_14_1_YOU)
+         =&gt; ? [R_14_7_SHOULD_WORK,R_14_10_HOME] :
+              ( home(R_14_10_HOME)
+              &amp; should_work(R_14_7_SHOULD_WORK,R_14_1_YOU)
+              &amp; from_nim30(R_14_7_SHOULD_WORK,R_14_10_HOME) ) )
+      &amp; conj2(CONJ2)
+      &amp; but(R_14_6_BUT)
+      &amp; conj1(R_14_6_BUT,R_14_2_CAN_TRAVEL)
+      &amp; can_travel(R_14_2_CAN_TRAVEL,R_14_1_YOU)
+      &amp; to_and_from_clr15(R_14_2_CAN_TRAVEL,R_14_5_WORK) ) ).
 </pre>
 <br><hr><br>
 <svg width="715pt" height="387pt"

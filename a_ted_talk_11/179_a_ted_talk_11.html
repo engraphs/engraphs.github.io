@@ -318,23 +318,17 @@ arc(r_0179_0014__had, r_0179_0015__a_r_0179_0016__job, arg1).
 </svg>
 <pre>
 fof(formula,axiom,
-    ! [R_0179_0003__WAS,R_0179_0002__I,R_0179_0004__A_R_0179_0005__STUDENT] :
-      ( ( r_0179_0002__I(R_0179_0002__I)
-        &amp; r_0179_0004__a_r_0179_0005__student(R_0179_0004__A_R_0179_0005__STUDENT)
-        &amp; r_0179_0003__was(R_0179_0003__WAS)
-        &amp; has_prd(R_0179_0003__WAS,R_0179_0004__A_R_0179_0005__STUDENT)
-        &amp; has_arg0(R_0179_0003__WAS,R_0179_0002__I) )
-     =&gt; ! [R_0179_0009__HAD,R_0179_0008__YOU,R_0179_0010__A_R_0179_0011__DEGREE] :
-          ( ( r_0179_0008__you(R_0179_0008__YOU)
-            &amp; r_0179_0010__a_r_0179_0011__degree(R_0179_0010__A_R_0179_0011__DEGREE)
-            &amp; r_0179_0009__had(R_0179_0009__HAD)
-            &amp; has_arg1(R_0179_0009__HAD,R_0179_0010__A_R_0179_0011__DEGREE)
-            &amp; has_arg0(R_0179_0009__HAD,R_0179_0008__YOU) )
-         =&gt; ? [R_0179_0015__A_R_0179_0016__JOB,R_0179_0014__HAD] :
-              ( r_0179_0015__a_r_0179_0016__job(R_0179_0015__A_R_0179_0016__JOB)
-              &amp; r_0179_0014__had(R_0179_0014__HAD)
-              &amp; has_arg1(R_0179_0014__HAD,R_0179_0015__A_R_0179_0016__JOB)
-              &amp; has_arg0(R_0179_0014__HAD,R_0179_0008__YOU) ) ) ) ).
+    ! [R_179_3_WAS,R_179_2_I,R_179_4_A_STUDENT] :
+      ( ( i(R_179_2_I)
+        &amp; a_student(R_179_4_A_STUDENT)
+        &amp; was(R_179_3_WAS,R_179_2_I,R_179_4_A_STUDENT) )
+     =&gt; ! [R_179_9_HAD,R_179_8_YOU,R_179_10_A_DEGREE] :
+          ( ( you(R_179_8_YOU)
+            &amp; a_degree(R_179_10_A_DEGREE)
+            &amp; had(R_179_9_HAD,R_179_8_YOU,R_179_10_A_DEGREE) )
+         =&gt; ? [R_179_14_HAD,R_179_15_A_JOB] :
+              ( a_job(R_179_15_A_JOB)
+              &amp; had(R_179_14_HAD,R_179_8_YOU,R_179_15_A_JOB) ) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="615pt" height="252pt"

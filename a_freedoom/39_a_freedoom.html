@@ -280,21 +280,16 @@ arc(r_0039_0016__that_r_0039_0017__injured, r_0039_0014__the_r_0039_0015__one, a
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0039_0002__A_R_0039_0003__MONSTER,R_0039_0014__THE_R_0039_0015__ONE,R_0039_0016__THAT_R_0039_0017__INJURED] :
-      ( r_0039_0002__a_r_0039_0003__monster(R_0039_0002__A_R_0039_0003__MONSTER)
-      &amp; r_0039_0014__the_r_0039_0015__one(R_0039_0014__THE_R_0039_0015__ONE)
-      &amp; r_0039_0016__that_r_0039_0017__injured(R_0039_0016__THAT_R_0039_0017__INJURED)
-      &amp; has_arg0(R_0039_0016__THAT_R_0039_0017__INJURED,R_0039_0014__THE_R_0039_0015__ONE)
-      &amp; has_arg1(R_0039_0016__THAT_R_0039_0017__INJURED,R_0039_0002__A_R_0039_0003__MONSTER)
-      &amp; ! [R_0039_0004__GETS_R_0039_0005__INJURED,R_0039_0007__ANOTHER_R_0039_0008__MONSTER] :
-          ( ( r_0039_0007__another_r_0039_0008__monster(R_0039_0007__ANOTHER_R_0039_0008__MONSTER)
-            &amp; r_0039_0004__gets_r_0039_0005__injured(R_0039_0004__GETS_R_0039_0005__INJURED)
-            &amp; has_arg0(R_0039_0004__GETS_R_0039_0005__INJURED,R_0039_0007__ANOTHER_R_0039_0008__MONSTER)
-            &amp; has_arg1(R_0039_0004__GETS_R_0039_0005__INJURED,R_0039_0002__A_R_0039_0003__MONSTER) )
-         =&gt; ? [R_0039_0011___APOS_LL_R_0039_0012__RETALIATE] :
-              ( r_0039_0011___apos_ll_r_0039_0012__retaliate(R_0039_0011___APOS_LL_R_0039_0012__RETALIATE)
-              &amp; has_r_0039_0013__against_clr37(R_0039_0011___APOS_LL_R_0039_0012__RETALIATE,R_0039_0014__THE_R_0039_0015__ONE)
-              &amp; has_arg0(R_0039_0011___APOS_LL_R_0039_0012__RETALIATE,R_0039_0002__A_R_0039_0003__MONSTER) ) ) ) ).
+    ? [R_39_16_THAT_INJURED,R_39_14_THE_ONE,R_39_2_A_MONSTER] :
+      ( the_one(R_39_14_THE_ONE)
+      &amp; a_monster(R_39_2_A_MONSTER)
+      &amp; ! [R_39_4_GETS_INJURED,R_39_7_ANOTHER_MONSTER] :
+          ( ( another_monster(R_39_7_ANOTHER_MONSTER)
+            &amp; gets_injured(R_39_4_GETS_INJURED,R_39_7_ANOTHER_MONSTER,R_39_2_A_MONSTER) )
+         =&gt; ? [R_39_11__APOS_LL_RETALIATE] :
+              ( _apos_ll_retaliate(R_39_11__APOS_LL_RETALIATE,R_39_2_A_MONSTER)
+              &amp; against_clr37(R_39_11__APOS_LL_RETALIATE,R_39_14_THE_ONE) ) )
+      &amp; that_injured(R_39_16_THAT_INJURED,R_39_14_THE_ONE,R_39_2_A_MONSTER) ) ).
 </pre>
 <br><hr><br>
 <svg width="1203pt" height="342pt"

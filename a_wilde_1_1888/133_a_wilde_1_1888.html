@@ -534,40 +534,34 @@ arc(r_0133_0025__is, r_0133_0026__silent, prd).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0133_0002__NIGHT,R_0133_0003__LONG,R_0133_0004__HE,R_0133_0006__THE_R_0133_0007__STARS,R_0133_0005__WATCHES,R_0133_0023__THEN,R_0133_0024__HE,R_0133_0026__SILENT,R_0133_0025__IS,R_0133_0009__AND_R_0133_0022__AND] :
-      ( r_0133_0002__night(R_0133_0002__NIGHT)
-      &amp; r_0133_0004__he(R_0133_0004__HE)
-      &amp; r_0133_0006__the_r_0133_0007__stars(R_0133_0006__THE_R_0133_0007__STARS)
-      &amp; r_0133_0023__then(R_0133_0023__THEN)
-      &amp; r_0133_0024__he(R_0133_0024__HE)
-      &amp; r_0133_0026__silent(R_0133_0026__SILENT)
-      &amp; r_0133_0009__and_r_0133_0022__and(R_0133_0009__AND_R_0133_0022__AND)
-      &amp; has_conj3(R_0133_0009__AND_R_0133_0022__AND,R_0133_0025__IS)
-      &amp; r_0133_0025__is(R_0133_0025__IS)
-      &amp; has_prd(R_0133_0025__IS,R_0133_0026__SILENT)
-      &amp; has_arg0(R_0133_0025__IS,R_0133_0024__HE)
-      &amp; has_nim63(R_0133_0025__IS,R_0133_0023__THEN)
-      &amp; ! [R_0133_0014__SHINES,R_0133_0011__THE_R_0133_0012__MORNING_R_0133_0013__STAR] :
-          ( ( r_0133_0011__the_r_0133_0012__morning_r_0133_0013__star(R_0133_0011__THE_R_0133_0012__MORNING_R_0133_0013__STAR)
-            &amp; r_0133_0014__shines(R_0133_0014__SHINES)
-            &amp; has_arg0(R_0133_0014__SHINES,R_0133_0011__THE_R_0133_0012__MORNING_R_0133_0013__STAR) )
-         =&gt; ? [R_0133_0015__HE,R_0133_0020__JOY,R_0133_0017__ONE_R_0133_0018__CRY,R_0133_0016__UTTERS] :
-              ( r_0133_0015__he(R_0133_0015__HE)
-              &amp; r_0133_0020__joy(R_0133_0020__JOY)
-              &amp; r_0133_0016__utters(R_0133_0016__UTTERS)
-              &amp; has_arg1(R_0133_0016__UTTERS,R_0133_0017__ONE_R_0133_0018__CRY)
-              &amp; r_0133_0017__one_r_0133_0018__cry(R_0133_0017__ONE_R_0133_0018__CRY)
-              &amp; has_r_0133_0019__of(R_0133_0017__ONE_R_0133_0018__CRY,R_0133_0020__JOY)
-              &amp; has_arg0(R_0133_0016__UTTERS,R_0133_0015__HE) ) )
-      &amp; has_conj1(R_0133_0009__AND_R_0133_0022__AND,R_0133_0005__WATCHES)
-      &amp; r_0133_0005__watches(R_0133_0005__WATCHES)
-      &amp; has_arg1(R_0133_0005__WATCHES,R_0133_0006__THE_R_0133_0007__STARS)
-      &amp; has_arg0(R_0133_0005__WATCHES,R_0133_0004__HE)
-      &amp; has_nim4(R_0133_0005__WATCHES,R_0133_0003__LONG)
-      &amp; r_0133_0003__long(R_0133_0003__LONG)
-      &amp; has_nim5(R_0133_0003__LONG,R_0133_0002__NIGHT)
-      &amp; ( r_0133_0002__night(R_0133_0002__NIGHT)
-       =&gt; r_0133_0005__watches(R_0133_0005__WATCHES) ) ) ).
+    ? [R_133_9_AND_AND,R_133_5_WATCHES,R_133_4_HE,R_133_6_THE_STARS,R_133_3_LONG,R_133_2_NIGHT,R_133_25_IS,R_133_24_HE,R_133_23_THEN,R_133_26_SILENT] :
+      ( he(R_133_4_HE)
+      &amp; the_stars(R_133_6_THE_STARS)
+      &amp; night(R_133_2_NIGHT)
+      &amp; he(R_133_24_HE)
+      &amp; then(R_133_23_THEN)
+      &amp; silent(R_133_26_SILENT)
+      &amp; ( true
+       =&gt; true )
+      &amp; ! [R_133_14_SHINES,R_133_11_THE_MORNING_STAR] :
+          ( ( the_morning_star(R_133_11_THE_MORNING_STAR)
+            &amp; shines(R_133_14_SHINES,R_133_11_THE_MORNING_STAR) )
+         =&gt; ? [R_133_16_UTTERS,R_133_15_HE,R_133_17_ONE_CRY,R_133_20_JOY] :
+              ( he(R_133_15_HE)
+              &amp; joy(R_133_20_JOY)
+              &amp; utters(R_133_16_UTTERS,R_133_15_HE,R_133_17_ONE_CRY)
+              &amp; one_cry(R_133_17_ONE_CRY)
+              &amp; of(R_133_17_ONE_CRY,R_133_20_JOY) ) )
+      &amp; conj2(CONJ2)
+      &amp; and_and(R_133_9_AND_AND)
+      &amp; conj1(R_133_9_AND_AND,R_133_5_WATCHES)
+      &amp; watches(R_133_5_WATCHES,R_133_4_HE,R_133_6_THE_STARS)
+      &amp; nim4(R_133_5_WATCHES,R_133_3_LONG)
+      &amp; long(R_133_3_LONG)
+      &amp; nim5(R_133_3_LONG,R_133_2_NIGHT)
+      &amp; conj3(R_133_9_AND_AND,R_133_25_IS)
+      &amp; is(R_133_25_IS,R_133_24_HE,R_133_26_SILENT)
+      &amp; nim63(R_133_25_IS,R_133_23_THEN) ) ).
 </pre>
 <br><hr><br>
 <svg width="1123pt" height="387pt"

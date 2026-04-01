@@ -245,22 +245,19 @@ arc(z_000_20_a_factbook_1_2010_1, r_0020_0002__diseases, nim2).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0020_0001__VECTORBORNE,R_0020_0002__DISEASES,R_0020_0009__INFECTED,R_0020_0008__AN_R_0020_0010__ARTHROPOD,R_0020_0005__THE_R_0020_0006__BITE,Z_000_20_A_FACTBOOK_1_2010_9,R_0020_0003__ACQUIRED,Z_000_20_A_FACTBOOK_1_2010_1] :
-      ( r_0020_0001__vectorborne(R_0020_0001__VECTORBORNE)
-      &amp; r_0020_0009__infected(R_0020_0009__INFECTED)
-      &amp; z_000_20_a_factbook_1_2010_9(Z_000_20_A_FACTBOOK_1_2010_9)
-      &amp; z_000_20_a_factbook_1_2010_1(Z_000_20_A_FACTBOOK_1_2010_1)
-      &amp; has_nim2(Z_000_20_A_FACTBOOK_1_2010_1,R_0020_0002__DISEASES)
-      &amp; r_0020_0002__diseases(R_0020_0002__DISEASES)
-      &amp; has_attrib3(R_0020_0002__DISEASES,R_0020_0001__VECTORBORNE)
-      &amp; r_0020_0003__acquired(R_0020_0003__ACQUIRED)
-      &amp; has_arg0(R_0020_0003__ACQUIRED,Z_000_20_A_FACTBOOK_1_2010_9)
-      &amp; has_r_0020_0004__through_nim16(R_0020_0003__ACQUIRED,R_0020_0005__THE_R_0020_0006__BITE)
-      &amp; r_0020_0005__the_r_0020_0006__bite(R_0020_0005__THE_R_0020_0006__BITE)
-      &amp; has_r_0020_0007__of(R_0020_0005__THE_R_0020_0006__BITE,R_0020_0008__AN_R_0020_0010__ARTHROPOD)
-      &amp; r_0020_0008__an_r_0020_0010__arthropod(R_0020_0008__AN_R_0020_0010__ARTHROPOD)
-      &amp; has_attrib27(R_0020_0008__AN_R_0020_0010__ARTHROPOD,R_0020_0009__INFECTED)
-      &amp; has_arg1(R_0020_0003__ACQUIRED,R_0020_0002__DISEASES) ) ).
+    ? [R_20_3_ACQUIRED,Z_20_A_FACTBOOK_1_2010_9,R_20_5_THE_BITE,R_20_8_AN_ARTHROPOD,R_20_9_INFECTED,Z_20_A_FACTBOOK_1_2010_1,R_20_2_DISEASES,R_20_1_VECTORBORNE] :
+      ( infected(R_20_9_INFECTED)
+      &amp; vectorborne(R_20_1_VECTORBORNE)
+      &amp; acquired(R_20_3_ACQUIRED,Z_20_A_FACTBOOK_1_2010_9,R_20_2_DISEASES)
+      &amp; diseases(R_20_2_DISEASES)
+      &amp; attrib3(R_20_2_DISEASES,R_20_1_VECTORBORNE)
+      &amp; through_nim16(R_20_3_ACQUIRED,R_20_5_THE_BITE)
+      &amp; the_bite(R_20_5_THE_BITE)
+      &amp; of(R_20_5_THE_BITE,R_20_8_AN_ARTHROPOD)
+      &amp; an_arthropod(R_20_8_AN_ARTHROPOD)
+      &amp; attrib27(R_20_8_AN_ARTHROPOD,R_20_9_INFECTED)
+      &amp; z_20_a_factbook_1_2010_1(Z_20_A_FACTBOOK_1_2010_1)
+      &amp; nim2(Z_20_A_FACTBOOK_1_2010_1,R_20_2_DISEASES) ) ).
 </pre>
 <br><hr><br>
 <svg width="610pt" height="432pt"

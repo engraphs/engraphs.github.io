@@ -252,20 +252,18 @@ arc(r_0101_0011__doubt, r_0101_0012__it, arg1).
 </svg>
 <pre>
 fof(formula,axiom,
-    ! [R_0101_0006__OPINION,R_0101_0004__YOUR,R_0101_0005__GOOD] :
-      ( ( r_0101_0004__your(R_0101_0004__YOUR)
-        &amp; r_0101_0005__good(R_0101_0005__GOOD)
-        &amp; r_0101_0006__opinion(R_0101_0006__OPINION)
-        &amp; has_attrib13(R_0101_0006__OPINION,R_0101_0005__GOOD)
-        &amp; has_r_0101_0007__of(R_0101_0006__OPINION,R_0101_0004__YOUR)
-        &amp; has_gen(R_0101_0006__OPINION,R_0101_0004__YOUR) )
-     =&gt; ? [R_0101_0010__I,R_0101_0012__IT,R_0101_0011__DOUBT] :
-          ( r_0101_0010__I(R_0101_0010__I)
-          &amp; r_0101_0012__it(R_0101_0012__IT)
-          &amp; r_0101_0011__doubt(R_0101_0011__DOUBT)
-          &amp; has_arg1(R_0101_0011__DOUBT,R_0101_0012__IT)
-          &amp; has_arg0(R_0101_0011__DOUBT,R_0101_0010__I)
-          &amp; has_r_0101_0002__For_nim7(R_0101_0011__DOUBT,R_0101_0006__OPINION) ) ) ).
+    ! [R_101_6_OPINION,R_101_5_GOOD,R_101_4_YOUR] :
+      ( ( good(R_101_5_GOOD)
+        &amp; your(R_101_4_YOUR)
+        &amp; opinion(R_101_6_OPINION)
+        &amp; attrib13(R_101_6_OPINION,R_101_5_GOOD)
+        &amp; gen(R_101_6_OPINION,R_101_4_YOUR)
+        &amp; of(R_101_6_OPINION,R_101_4_YOUR) )
+     =&gt; ? [R_101_11_DOUBT,R_101_10_I,R_101_12_IT] :
+          ( i(R_101_10_I)
+          &amp; it(R_101_12_IT)
+          &amp; doubt(R_101_11_DOUBT,R_101_10_I,R_101_12_IT)
+          &amp; for_nim7(R_101_11_DOUBT,R_101_6_OPINION) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="547pt" height="297pt"

@@ -470,34 +470,21 @@ arc(r_0079_0019__to_r_0079_0020__stop, z_000_79_a_lob_a02_53, arg0).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0079_0001__HE,R_0079_0003__MR_R_0079_0004__KAUNDA,R_0079_0009__STATEMENTS,R_0079_0012__VIOLENCE,R_0079_0010__HAD_R_0079_0011__STIMULATED,R_0079_0016__HAD,R_0079_0014__BUT,R_0079_0005__MUST_R_0079_0006__KNOW,R_0079_0002__SAID] :
-      ( r_0079_0001__He(R_0079_0001__HE)
-      &amp; r_0079_0003__Mr_r_0079_0004__Kaunda(R_0079_0003__MR_R_0079_0004__KAUNDA)
-      &amp; r_0079_0012__violence(R_0079_0012__VIOLENCE)
-      &amp; r_0079_0002__said(R_0079_0002__SAID)
-      &amp; has_arg1(R_0079_0002__SAID,R_0079_0005__MUST_R_0079_0006__KNOW)
-      &amp; r_0079_0005__must_r_0079_0006__know(R_0079_0005__MUST_R_0079_0006__KNOW)
-      &amp; has_arg1(R_0079_0005__MUST_R_0079_0006__KNOW,R_0079_0014__BUT)
-      &amp; r_0079_0014__but(R_0079_0014__BUT)
-      &amp; has_conj2(R_0079_0014__BUT,R_0079_0016__HAD)
-      &amp; r_0079_0016__had(R_0079_0016__HAD)
-      &amp; ! [Z_000_79_A_LOB_A02_53,R_0079_0019__TO_R_0079_0020__STOP] :
-          ( ( z_000_79_a_lob_a02_53(Z_000_79_A_LOB_A02_53)
-            &amp; r_0079_0019__to_r_0079_0020__stop(R_0079_0019__TO_R_0079_0020__STOP)
-            &amp; has_arg0(R_0079_0019__TO_R_0079_0020__STOP,Z_000_79_A_LOB_A02_53)
-            &amp; has_arg1(R_0079_0019__TO_R_0079_0020__STOP,R_0079_0012__VIOLENCE) )
-         =&gt; ? [R_0079_0017__DONE] :
-              ( r_0079_0017__done(R_0079_0017__DONE)
-              &amp; has_arg1(R_0079_0017__DONE,Z_000_79_A_LOB_A02_53)
-              &amp; has_arg0(R_0079_0017__DONE,R_0079_0003__MR_R_0079_0004__KAUNDA) ) )
-      &amp; has_conj1(R_0079_0014__BUT,R_0079_0010__HAD_R_0079_0011__STIMULATED)
-      &amp; r_0079_0010__had_r_0079_0011__stimulated(R_0079_0010__HAD_R_0079_0011__STIMULATED)
-      &amp; has_arg1(R_0079_0010__HAD_R_0079_0011__STIMULATED,R_0079_0012__VIOLENCE)
-      &amp; has_arg0(R_0079_0010__HAD_R_0079_0011__STIMULATED,R_0079_0009__STATEMENTS)
-      &amp; r_0079_0009__statements(R_0079_0009__STATEMENTS)
-      &amp; has_gen(R_0079_0009__STATEMENTS,R_0079_0003__MR_R_0079_0004__KAUNDA)
-      &amp; has_arg0(R_0079_0005__MUST_R_0079_0006__KNOW,R_0079_0003__MR_R_0079_0004__KAUNDA)
-      &amp; has_arg0(R_0079_0002__SAID,R_0079_0001__HE) ) ).
+    ? [R_79_2_SAID,R_79_1_HE,R_79_5_MUST_KNOW,R_79_14_BUT,R_79_10_HAD_STIMULATED,R_79_9_STATEMENTS,R_79_3_MR_KAUNDA,R_79_12_VIOLENCE] :
+      ( he(R_79_1_HE)
+      &amp; mr_Kaunda(R_79_3_MR_KAUNDA)
+      &amp; violence(R_79_12_VIOLENCE)
+      &amp; said(R_79_2_SAID,R_79_1_HE,R_79_5_MUST_KNOW)
+      &amp; must_know(R_79_5_MUST_KNOW,R_79_3_MR_KAUNDA,R_79_14_BUT)
+      &amp; but(R_79_14_BUT)
+      &amp; conj1(R_79_14_BUT,R_79_10_HAD_STIMULATED)
+      &amp; had_stimulated(R_79_10_HAD_STIMULATED,R_79_9_STATEMENTS,R_79_12_VIOLENCE)
+      &amp; statements(R_79_9_STATEMENTS)
+      &amp; gen(R_79_9_STATEMENTS,R_79_3_MR_KAUNDA)
+      &amp; conj2(R_79_14_BUT,R_79_16_HAD)
+      &amp; ~ ! [R_79_19_TO_STOP,Z_79_A_LOB_A02_53] :
+            ( to_stop(R_79_19_TO_STOP,Z_79_A_LOB_A02_53,R_79_12_VIOLENCE)
+           =&gt; ? [R_79_17_DONE] : done(R_79_17_DONE,R_79_3_MR_KAUNDA,Z_79_A_LOB_A02_53) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="1012pt" height="658pt"

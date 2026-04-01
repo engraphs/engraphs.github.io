@@ -343,28 +343,24 @@ arc(z_000_35_a_factbook_2_2010_17, r_0035_0007__1789_r_0035_0009__1799, prd).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0035_0003__THE_R_0035_0004__FRENCH_R_0035_0005__REVOLUTION,R_0035_0007__1789_R_0035_0009__1799,Z_000_35_A_FACTBOOK_2_2010_17] :
-      ( r_0035_0003__the_r_0035_0004__French_r_0035_0005__Revolution(R_0035_0003__THE_R_0035_0004__FRENCH_R_0035_0005__REVOLUTION)
-      &amp; r_0035_0007__1789_r_0035_0009__1799(R_0035_0007__1789_R_0035_0009__1799)
-      &amp; z_000_35_a_factbook_2_2010_17(Z_000_35_A_FACTBOOK_2_2010_17)
-      &amp; has_prd(Z_000_35_A_FACTBOOK_2_2010_17,R_0035_0007__1789_R_0035_0009__1799)
-      &amp; has_arg0(Z_000_35_A_FACTBOOK_2_2010_17,R_0035_0003__THE_R_0035_0004__FRENCH_R_0035_0005__REVOLUTION)
-      &amp; ! [R_0035_0018__SYSTEM,R_0035_0015__SINGLE,R_0035_0016__NATIONAL,R_0035_0017__LEGAL] :
-          ( ( r_0035_0015__single(R_0035_0015__SINGLE)
-            &amp; r_0035_0016__national(R_0035_0016__NATIONAL)
-            &amp; r_0035_0017__legal(R_0035_0017__LEGAL)
-            &amp; r_0035_0018__system(R_0035_0018__SYSTEM)
-            &amp; has_attrib43(R_0035_0018__SYSTEM,R_0035_0017__LEGAL)
-            &amp; has_attrib40(R_0035_0018__SYSTEM,R_0035_0016__NATIONAL)
-            &amp; has_attrib37(R_0035_0018__SYSTEM,R_0035_0015__SINGLE) )
-         =&gt; ? [R_0035_0001__PRIOR,R_0035_0012__FRANCE,R_0035_0013__HAD] :
-              ( r_0035_0012__France(R_0035_0012__FRANCE)
-              &amp; r_0035_0013__had(R_0035_0013__HAD)
-              &amp; has_arg1(R_0035_0013__HAD,R_0035_0018__SYSTEM)
-              &amp; has_arg0(R_0035_0013__HAD,R_0035_0012__FRANCE)
-              &amp; has_nim2(R_0035_0013__HAD,R_0035_0001__PRIOR)
-              &amp; r_0035_0001__Prior(R_0035_0001__PRIOR)
-              &amp; has_r_0035_0002__to(R_0035_0001__PRIOR,R_0035_0003__THE_R_0035_0004__FRENCH_R_0035_0005__REVOLUTION) ) ) ) ).
+    ? [Z_35_A_FACTBOOK_2_2010_17,R_35_3_THE_FRENCH_REVOLUTION,R_35_7_1789_1799] :
+      ( the_French_Revolution(R_35_3_THE_FRENCH_REVOLUTION)
+      &amp; 1789_1799(R_35_7_1789_1799)
+      &amp; ! [R_35_18_SYSTEM,R_35_15_SINGLE,R_35_16_NATIONAL,R_35_17_LEGAL] :
+          ( ( single(R_35_15_SINGLE)
+            &amp; national(R_35_16_NATIONAL)
+            &amp; legal(R_35_17_LEGAL)
+            &amp; system(R_35_18_SYSTEM)
+            &amp; attrib37(R_35_18_SYSTEM,R_35_15_SINGLE)
+            &amp; attrib40(R_35_18_SYSTEM,R_35_16_NATIONAL)
+            &amp; attrib43(R_35_18_SYSTEM,R_35_17_LEGAL) )
+         =&gt; ? [R_35_13_HAD,R_35_12_FRANCE,R_35_1_PRIOR] :
+              ( france(R_35_12_FRANCE)
+              &amp; had(R_35_13_HAD,R_35_12_FRANCE,R_35_18_SYSTEM)
+              &amp; nim2(R_35_13_HAD,R_35_1_PRIOR)
+              &amp; prior(R_35_1_PRIOR)
+              &amp; to(R_35_1_PRIOR,R_35_3_THE_FRENCH_REVOLUTION) ) )
+      &amp; z_35_a_factbook_2_2010_17(Z_35_A_FACTBOOK_2_2010_17,R_35_3_THE_FRENCH_REVOLUTION,R_35_7_1789_1799) ) ).
 </pre>
 <br><hr><br>
 <svg width="838pt" height="342pt"

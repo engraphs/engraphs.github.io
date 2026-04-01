@@ -497,38 +497,32 @@ arc(r_0155_0027__occasional, r_0155_0023__not_r_0155_0025__so, qual64).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0155_0007__I,R_0155_0012__JAPAN,R_0155_0019__ENORMOUS,R_0155_0020__AFFECTION,R_0155_0023__NOT_R_0155_0025__SO,R_0155_0027__OCCASIONAL,R_0155_0030__EXASPERATION,R_0155_0022__THE_R_0155_0028__BOUT,R_0155_0018__BOTH_R_0155_0021__AND,R_0155_0015__INSPIRES] :
-      ( r_0155_0007__I(R_0155_0007__I)
-      &amp; r_0155_0012__Japan(R_0155_0012__JAPAN)
-      &amp; r_0155_0019__enormous(R_0155_0019__ENORMOUS)
-      &amp; r_0155_0023__not_r_0155_0025__so(R_0155_0023__NOT_R_0155_0025__SO)
-      &amp; r_0155_0030__exasperation(R_0155_0030__EXASPERATION)
-      &amp; r_0155_0015__inspires(R_0155_0015__INSPIRES)
-      &amp; has_arg1(R_0155_0015__INSPIRES,R_0155_0018__BOTH_R_0155_0021__AND)
-      &amp; r_0155_0018__both_r_0155_0021__and(R_0155_0018__BOTH_R_0155_0021__AND)
-      &amp; has_conj2(R_0155_0018__BOTH_R_0155_0021__AND,R_0155_0022__THE_R_0155_0028__BOUT)
-      &amp; r_0155_0022__the_r_0155_0028__bout(R_0155_0022__THE_R_0155_0028__BOUT)
-      &amp; has_r_0155_0029__of(R_0155_0022__THE_R_0155_0028__BOUT,R_0155_0030__EXASPERATION)
-      &amp; has_attrib63(R_0155_0022__THE_R_0155_0028__BOUT,R_0155_0027__OCCASIONAL)
-      &amp; r_0155_0027__occasional(R_0155_0027__OCCASIONAL)
-      &amp; has_qual64(R_0155_0027__OCCASIONAL,R_0155_0023__NOT_R_0155_0025__SO)
-      &amp; has_conj1(R_0155_0018__BOTH_R_0155_0021__AND,R_0155_0020__AFFECTION)
-      &amp; r_0155_0020__affection(R_0155_0020__AFFECTION)
-      &amp; has_attrib52(R_0155_0020__AFFECTION,R_0155_0019__ENORMOUS)
-      &amp; has_arg0(R_0155_0015__INSPIRES,R_0155_0012__JAPAN)
-      &amp; has_r_0155_0016__in_nim44(R_0155_0015__INSPIRES,R_0155_0007__I)
-      &amp; ! [R_0155_0006__THIS] :
-          ( r_0155_0006__this(R_0155_0006__THIS)
-         =&gt; ? [R_0155_0002__YET,R_0155_0010__TO_R_0155_0011__MISS,R_0155_0001__AND_R_0155_0008__AM_R_0155_0009__GOING] :
-              ( r_0155_0002__yet(R_0155_0002__YET)
-              &amp; r_0155_0001__And_r_0155_0008__am_r_0155_0009__going(R_0155_0001__AND_R_0155_0008__AM_R_0155_0009__GOING)
-              &amp; has_arg1(R_0155_0001__AND_R_0155_0008__AM_R_0155_0009__GOING,R_0155_0010__TO_R_0155_0011__MISS)
-              &amp; r_0155_0010__to_r_0155_0011__miss(R_0155_0010__TO_R_0155_0011__MISS)
-              &amp; has_arg1(R_0155_0010__TO_R_0155_0011__MISS,R_0155_0012__JAPAN)
-              &amp; has_arg0(R_0155_0010__TO_R_0155_0011__MISS,R_0155_0007__I)
-              &amp; has_arg0(R_0155_0001__AND_R_0155_0008__AM_R_0155_0009__GOING,R_0155_0007__I)
-              &amp; has_r_0155_0004__despite_nim12(R_0155_0001__AND_R_0155_0008__AM_R_0155_0009__GOING,R_0155_0006__THIS)
-              &amp; has_nim4(R_0155_0001__AND_R_0155_0008__AM_R_0155_0009__GOING,R_0155_0002__YET) ) ) ) ).
+    ? [R_155_15_INSPIRES,R_155_12_JAPAN,R_155_18_BOTH_AND,R_155_20_AFFECTION,R_155_19_ENORMOUS,R_155_22_THE_BOUT,R_155_27_OCCASIONAL,R_155_23_NOT_SO,R_155_30_EXASPERATION,R_155_7_I] :
+      ( japan(R_155_12_JAPAN)
+      &amp; enormous(R_155_19_ENORMOUS)
+      &amp; not_so(R_155_23_NOT_SO)
+      &amp; exasperation(R_155_30_EXASPERATION)
+      &amp; i(R_155_7_I)
+      &amp; ! [R_155_6_THIS] :
+          ( this(R_155_6_THIS)
+         =&gt; ? [R_155_1_AND_AM_GOING,R_155_10_TO_MISS,R_155_2_YET] :
+              ( yet(R_155_2_YET)
+              &amp; and_am_going(R_155_1_AND_AM_GOING,R_155_7_I,R_155_10_TO_MISS)
+              &amp; to_miss(R_155_10_TO_MISS,R_155_7_I,R_155_12_JAPAN)
+              &amp; nim4(R_155_1_AND_AM_GOING,R_155_2_YET)
+              &amp; despite_nim12(R_155_1_AND_AM_GOING,R_155_6_THIS) ) )
+      &amp; inspires(R_155_15_INSPIRES,R_155_12_JAPAN,R_155_18_BOTH_AND)
+      &amp; both_and(R_155_18_BOTH_AND)
+      &amp; conj1(R_155_18_BOTH_AND,R_155_20_AFFECTION)
+      &amp; affection(R_155_20_AFFECTION)
+      &amp; attrib52(R_155_20_AFFECTION,R_155_19_ENORMOUS)
+      &amp; conj2(R_155_18_BOTH_AND,R_155_22_THE_BOUT)
+      &amp; the_bout(R_155_22_THE_BOUT)
+      &amp; attrib63(R_155_22_THE_BOUT,R_155_27_OCCASIONAL)
+      &amp; occasional(R_155_27_OCCASIONAL)
+      &amp; qual64(R_155_27_OCCASIONAL,R_155_23_NOT_SO)
+      &amp; of(R_155_22_THE_BOUT,R_155_30_EXASPERATION)
+      &amp; in_nim44(R_155_15_INSPIRES,R_155_7_I) ) ).
 </pre>
 <br><hr><br>
 <svg width="1284pt" height="568pt"

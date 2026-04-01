@@ -375,28 +375,24 @@ arc(r_0102_0016__palm, r_0102_0001__She, gen).
 </svg>
 <pre>
 fof(formula,axiom,
-    ! [R_0102_0008__TRIED,R_0102_0007__HE] :
-      ( ( r_0102_0007__he(R_0102_0007__HE)
-        &amp; r_0102_0008__tried(R_0102_0008__TRIED)
-        &amp; ! [R_0102_0012__THE_R_0102_0013__COINS] :
-            ( r_0102_0012__the_r_0102_0013__coins(R_0102_0012__THE_R_0102_0013__COINS)
-           =&gt; ? [R_0102_0001__SHE,R_0102_0016__PALM,R_0102_0009__TO_R_0102_0010__WREST] :
-                ( r_0102_0001__She(R_0102_0001__SHE)
-                &amp; r_0102_0009__to_r_0102_0010__wrest(R_0102_0009__TO_R_0102_0010__WREST)
-                &amp; has_r_0102_0014__from_clr39(R_0102_0009__TO_R_0102_0010__WREST,R_0102_0016__PALM)
-                &amp; r_0102_0016__palm(R_0102_0016__PALM)
-                &amp; has_gen(R_0102_0016__PALM,R_0102_0001__SHE)
-                &amp; has_arg1(R_0102_0009__TO_R_0102_0010__WREST,R_0102_0012__THE_R_0102_0013__COINS)
-                &amp; has_arg0(R_0102_0009__TO_R_0102_0010__WREST,R_0102_0007__HE) ) )
-        &amp; has_arg0(R_0102_0008__TRIED,R_0102_0007__HE) )
-     =&gt; ? [R_0102_0001__SHE,R_0102_0003__HIS,R_0102_0004__HAND,R_0102_0002__SLAPPED_R_0102_0005__AWAY] :
-          ( r_0102_0001__She(R_0102_0001__SHE)
-          &amp; r_0102_0003__his(R_0102_0003__HIS)
-          &amp; r_0102_0002__slapped_r_0102_0005__away(R_0102_0002__SLAPPED_R_0102_0005__AWAY)
-          &amp; has_arg1(R_0102_0002__SLAPPED_R_0102_0005__AWAY,R_0102_0004__HAND)
-          &amp; r_0102_0004__hand(R_0102_0004__HAND)
-          &amp; has_gen(R_0102_0004__HAND,R_0102_0003__HIS)
-          &amp; has_arg0(R_0102_0002__SLAPPED_R_0102_0005__AWAY,R_0102_0001__SHE) ) ) ).
+    ! [R_102_8_TRIED,R_102_7_HE] :
+      ( ( he(R_102_7_HE)
+        &amp; ! [R_102_12_THE_COINS] :
+            ( the_coins(R_102_12_THE_COINS)
+           =&gt; ? [R_102_9_TO_WREST,R_102_16_PALM,R_102_1_SHE] :
+                ( she(R_102_1_SHE)
+                &amp; to_wrest(R_102_9_TO_WREST,R_102_7_HE,R_102_12_THE_COINS)
+                &amp; from_clr39(R_102_9_TO_WREST,R_102_16_PALM)
+                &amp; palm(R_102_16_PALM)
+                &amp; gen(R_102_16_PALM,R_102_1_SHE) ) )
+        &amp; arg1(ARG1)
+        &amp; tried(R_102_8_TRIED,R_102_7_HE) )
+     =&gt; ? [R_102_2_SLAPPED_AWAY,R_102_1_SHE,R_102_4_HAND,R_102_3_HIS] :
+          ( she(R_102_1_SHE)
+          &amp; his(R_102_3_HIS)
+          &amp; slapped_away(R_102_2_SLAPPED_AWAY,R_102_1_SHE,R_102_4_HAND)
+          &amp; hand(R_102_4_HAND)
+          &amp; gen(R_102_4_HAND,R_102_3_HIS) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="694pt" height="387pt"

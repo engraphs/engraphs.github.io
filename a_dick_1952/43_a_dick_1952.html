@@ -170,13 +170,12 @@ arc(r_0043_0005__exist, r_0043_0004__possibly, nim10).
 </svg>
 <pre>
 fof(formula,axiom,
-    ! [R_0043_0002__LIFE] :
-      ( r_0043_0002__life(R_0043_0002__LIFE)
-     =&gt; ? [R_0043_0004__POSSIBLY,R_0043_0003__COULD_R_0043_0005__EXIST] :
-          ( r_0043_0004__possibly(R_0043_0004__POSSIBLY)
-          &amp; r_0043_0003__could_r_0043_0005__exist(R_0043_0003__COULD_R_0043_0005__EXIST)
-          &amp; has_nim10(R_0043_0003__COULD_R_0043_0005__EXIST,R_0043_0004__POSSIBLY)
-          &amp; has_arg0(R_0043_0003__COULD_R_0043_0005__EXIST,R_0043_0002__LIFE) ) ) ).
+    ! [R_43_2_LIFE] :
+      ( life(R_43_2_LIFE)
+     =&gt; ? [R_43_3_COULD_EXIST,R_43_4_POSSIBLY] :
+          ( possibly(R_43_4_POSSIBLY)
+          &amp; could_exist(R_43_3_COULD_EXIST,R_43_2_LIFE)
+          &amp; nim10(R_43_3_COULD_EXIST,R_43_4_POSSIBLY) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="261pt" height="207pt"

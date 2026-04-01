@@ -467,35 +467,28 @@ arc(r_0045_0024__causing, r_0045_0025__the_r_0045_0026__crash, arg1).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0045_0001__OFFICIALS,R_0045_0003__THE_R_0045_0004__AIRCRAFT,R_0045_0008__NATO,R_0045_0007__A_R_0045_0009__MISSION,R_0045_0011__THE_R_0045_0012__COUNTRY_R_0045_0013___APOS_S,R_0045_0014__SOUTH,R_0045_0005__WAS_R_0045_0006__SUPPORTING,R_0045_0002__SAY,R_0045_0016__BUT,R_0045_0022__ENEMY_R_0045_0023__ACTION,R_0045_0025__THE_R_0045_0026__CRASH,R_0045_0024__CAUSING] :
-      ( r_0045_0001__Officials(R_0045_0001__OFFICIALS)
-      &amp; r_0045_0003__the_r_0045_0004__aircraft(R_0045_0003__THE_R_0045_0004__AIRCRAFT)
-      &amp; r_0045_0008__NATO(R_0045_0008__NATO)
-      &amp; r_0045_0011__the_r_0045_0012__country_r_0045_0013___apos_s(R_0045_0011__THE_R_0045_0012__COUNTRY_R_0045_0013___APOS_S)
-      &amp; r_0045_0022__enemy_r_0045_0023__action(R_0045_0022__ENEMY_R_0045_0023__ACTION)
-      &amp; r_0045_0025__the_r_0045_0026__crash(R_0045_0025__THE_R_0045_0026__CRASH)
-      &amp; r_0045_0024__causing(R_0045_0024__CAUSING)
-      &amp; has_arg1(R_0045_0024__CAUSING,R_0045_0025__THE_R_0045_0026__CRASH)
-      &amp; has_arg0(R_0045_0024__CAUSING,R_0045_0022__ENEMY_R_0045_0023__ACTION)
-      &amp; r_0045_0016__but(R_0045_0016__BUT)
-      &amp; ! [R_0045_0020__INDICATION] :
-          ( ( r_0045_0020__indication(R_0045_0020__INDICATION)
-            &amp; has_r_0045_0021__of(R_0045_0020__INDICATION,R_0045_0022__ENEMY_R_0045_0023__ACTION) )
-         =&gt; ? [R_0045_0017__THERE_R_0045_0018__IS] :
-              ( r_0045_0017__there_r_0045_0018__is(R_0045_0017__THERE_R_0045_0018__IS)
-              &amp; has_arg0(R_0045_0017__THERE_R_0045_0018__IS,R_0045_0020__INDICATION) ) )
-      &amp; has_conj1(R_0045_0016__BUT,R_0045_0002__SAY)
-      &amp; r_0045_0002__say(R_0045_0002__SAY)
-      &amp; has_arg1(R_0045_0002__SAY,R_0045_0005__WAS_R_0045_0006__SUPPORTING)
-      &amp; r_0045_0005__was_r_0045_0006__supporting(R_0045_0005__WAS_R_0045_0006__SUPPORTING)
-      &amp; has_r_0045_0010__in_nim32(R_0045_0005__WAS_R_0045_0006__SUPPORTING,R_0045_0014__SOUTH)
-      &amp; r_0045_0014__south(R_0045_0014__SOUTH)
-      &amp; has_gen(R_0045_0014__SOUTH,R_0045_0011__THE_R_0045_0012__COUNTRY_R_0045_0013___APOS_S)
-      &amp; has_arg1(R_0045_0005__WAS_R_0045_0006__SUPPORTING,R_0045_0007__A_R_0045_0009__MISSION)
-      &amp; r_0045_0007__a_r_0045_0009__mission(R_0045_0007__A_R_0045_0009__MISSION)
-      &amp; has_attrib24(R_0045_0007__A_R_0045_0009__MISSION,R_0045_0008__NATO)
-      &amp; has_arg0(R_0045_0005__WAS_R_0045_0006__SUPPORTING,R_0045_0003__THE_R_0045_0004__AIRCRAFT)
-      &amp; has_arg0(R_0045_0002__SAY,R_0045_0001__OFFICIALS) ) ).
+    ? [R_45_16_BUT,R_45_2_SAY,R_45_1_OFFICIALS,R_45_5_WAS_SUPPORTING,R_45_3_THE_AIRCRAFT,R_45_7_A_MISSION,R_45_8_NATO,R_45_14_SOUTH,R_45_11_THE_COUNTRY_APOS_S,R_45_24_CAUSING,R_45_22_ENEMY_ACTION,R_45_25_THE_CRASH] :
+      ( officials(R_45_1_OFFICIALS)
+      &amp; the_aircraft(R_45_3_THE_AIRCRAFT)
+      &amp; nATO(R_45_8_NATO)
+      &amp; the_country_apos_s(R_45_11_THE_COUNTRY_APOS_S)
+      &amp; enemy_action(R_45_22_ENEMY_ACTION)
+      &amp; the_crash(R_45_25_THE_CRASH)
+      &amp; ! [R_45_20_INDICATION] :
+          ( ( indication(R_45_20_INDICATION)
+            &amp; of(R_45_20_INDICATION,R_45_22_ENEMY_ACTION) )
+         =&gt; ? [R_45_17_THERE_IS] : there_is(R_45_17_THERE_IS,R_45_20_INDICATION) )
+      &amp; conj2(CONJ2)
+      &amp; but(R_45_16_BUT)
+      &amp; conj1(R_45_16_BUT,R_45_2_SAY)
+      &amp; say(R_45_2_SAY,R_45_1_OFFICIALS,R_45_5_WAS_SUPPORTING)
+      &amp; was_supporting(R_45_5_WAS_SUPPORTING,R_45_3_THE_AIRCRAFT,R_45_7_A_MISSION)
+      &amp; a_mission(R_45_7_A_MISSION)
+      &amp; attrib24(R_45_7_A_MISSION,R_45_8_NATO)
+      &amp; in_nim32(R_45_5_WAS_SUPPORTING,R_45_14_SOUTH)
+      &amp; south(R_45_14_SOUTH)
+      &amp; gen(R_45_14_SOUTH,R_45_11_THE_COUNTRY_APOS_S)
+      &amp; causing(R_45_24_CAUSING,R_45_22_ENEMY_ACTION,R_45_25_THE_CRASH) ) ).
 </pre>
 <br><hr><br>
 <svg width="1185pt" height="478pt"

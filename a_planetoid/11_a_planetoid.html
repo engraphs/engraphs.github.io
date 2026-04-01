@@ -249,19 +249,14 @@ arc(r_0011_0008__a_r_0011_0009__cloud, r_0011_0011__spores, r_0011_0010__of).
 </svg>
 <pre>
 fof(formula,axiom,
-    ! [R_0011_0003__ARE_R_0011_0004__DESTROYED,R_0011_0002__MEGACYTES,Z_000_11_A_PLANETOID_12] :
-      ( ( r_0011_0002__megacytes(R_0011_0002__MEGACYTES)
-        &amp; z_000_11_a_planetoid_12(Z_000_11_A_PLANETOID_12)
-        &amp; r_0011_0003__are_r_0011_0004__destroyed(R_0011_0003__ARE_R_0011_0004__DESTROYED)
-        &amp; has_arg0(R_0011_0003__ARE_R_0011_0004__DESTROYED,Z_000_11_A_PLANETOID_12)
-        &amp; has_arg1(R_0011_0003__ARE_R_0011_0004__DESTROYED,R_0011_0002__MEGACYTES) )
-     =&gt; ? [R_0011_0011__SPORES,R_0011_0008__A_R_0011_0009__CLOUD,R_0011_0007__RELEASE] :
-          ( r_0011_0011__spores(R_0011_0011__SPORES)
-          &amp; r_0011_0007__release(R_0011_0007__RELEASE)
-          &amp; has_arg1(R_0011_0007__RELEASE,R_0011_0008__A_R_0011_0009__CLOUD)
-          &amp; r_0011_0008__a_r_0011_0009__cloud(R_0011_0008__A_R_0011_0009__CLOUD)
-          &amp; has_r_0011_0010__of(R_0011_0008__A_R_0011_0009__CLOUD,R_0011_0011__SPORES)
-          &amp; has_arg0(R_0011_0007__RELEASE,R_0011_0002__MEGACYTES) ) ) ).
+    ! [R_11_3_ARE_DESTROYED,Z_11_A_PLANETOID_12,R_11_2_MEGACYTES] :
+      ( ( megacytes(R_11_2_MEGACYTES)
+        &amp; are_destroyed(R_11_3_ARE_DESTROYED,Z_11_A_PLANETOID_12,R_11_2_MEGACYTES) )
+     =&gt; ? [R_11_7_RELEASE,R_11_8_A_CLOUD,R_11_11_SPORES] :
+          ( spores(R_11_11_SPORES)
+          &amp; release(R_11_7_RELEASE,R_11_2_MEGACYTES,R_11_8_A_CLOUD)
+          &amp; a_cloud(R_11_8_A_CLOUD)
+          &amp; of(R_11_8_A_CLOUD,R_11_11_SPORES) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="1207pt" height="342pt"

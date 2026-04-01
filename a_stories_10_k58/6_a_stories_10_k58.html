@@ -581,42 +581,34 @@ arc(r_0006_0026__go, x_000_6_a_stories_10_k58_75, arg0).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0006_0001__MICKEY,R_0006_0003__UP,R_0006_0006__PUPPY_R_0006_0007__WAYS,R_0006_0002__CLAMBERED,R_0006_0019__AND,R_0006_0008__AND] :
-      ( r_0006_0001__Mickey(R_0006_0001__MICKEY)
-      &amp; r_0006_0003__up(R_0006_0003__UP)
-      &amp; r_0006_0008__and(R_0006_0008__AND)
-      &amp; has_conj2(R_0006_0008__AND,R_0006_0019__AND)
-      &amp; r_0006_0019__and(R_0006_0019__AND)
-      &amp; has_conj2(R_0006_0019__AND,R_0006_0023__NOT)
-      &amp; ~ ? [R_0006_0021__TERROR,R_0006_0027__DOWN,X_000_6_A_STORIES_10_K58_75,R_0006_0026__GO,R_0006_0022__WOULD_R_0006_0024__LET] :
-            ( r_0006_0027__down(R_0006_0027__DOWN)
-            &amp; x_000_6_a_stories_10_k58_75(X_000_6_A_STORIES_10_K58_75)
-            &amp; r_0006_0022__would_r_0006_0024__let(R_0006_0022__WOULD_R_0006_0024__LET)
-            &amp; has_prd(R_0006_0022__WOULD_R_0006_0024__LET,R_0006_0026__GO)
-            &amp; r_0006_0026__go(R_0006_0026__GO)
-            &amp; has_arg0(R_0006_0026__GO,X_000_6_A_STORIES_10_K58_75)
-            &amp; has_clr78(R_0006_0026__GO,R_0006_0027__DOWN)
-            &amp; has_arg0(R_0006_0022__WOULD_R_0006_0024__LET,R_0006_0021__TERROR)
-            &amp; r_0006_0021__terror(R_0006_0021__TERROR)
-            &amp; has_gen(R_0006_0021__TERROR,R_0006_0001__MICKEY)
-            &amp; has_arg1(R_0006_0022__WOULD_R_0006_0024__LET,R_0006_0001__MICKEY) )
-      &amp; ! [R_0006_0010__ARRIVING,R_0006_0012__THE_R_0006_0013__TOP_R_0006_0014__STEP] :
-          ( ( r_0006_0012__the_r_0006_0013__top_r_0006_0014__step(R_0006_0012__THE_R_0006_0013__TOP_R_0006_0014__STEP)
-            &amp; r_0006_0010__arriving(R_0006_0010__ARRIVING)
-            &amp; has_r_0006_0011__on_clr38(R_0006_0010__ARRIVING,R_0006_0012__THE_R_0006_0013__TOP_R_0006_0014__STEP)
-            &amp; has_arg0(R_0006_0010__ARRIVING,R_0006_0001__MICKEY) )
-         =&gt; ? [R_0006_0017__THE_R_0006_0018__HEIGHT,R_0006_0016__REALISED] :
-              ( r_0006_0017__the_r_0006_0018__height(R_0006_0017__THE_R_0006_0018__HEIGHT)
-              &amp; r_0006_0016__realised(R_0006_0016__REALISED)
-              &amp; has_arg1(R_0006_0016__REALISED,R_0006_0017__THE_R_0006_0018__HEIGHT)
-              &amp; has_arg0(R_0006_0016__REALISED,R_0006_0001__MICKEY) ) )
-      &amp; has_conj1(R_0006_0008__AND,R_0006_0002__CLAMBERED)
-      &amp; r_0006_0002__clambered(R_0006_0002__CLAMBERED)
-      &amp; has_r_0006_0004__in_nim15(R_0006_0002__CLAMBERED,R_0006_0006__PUPPY_R_0006_0007__WAYS)
-      &amp; r_0006_0006__puppy_r_0006_0007__ways(R_0006_0006__PUPPY_R_0006_0007__WAYS)
-      &amp; has_gen(R_0006_0006__PUPPY_R_0006_0007__WAYS,R_0006_0001__MICKEY)
-      &amp; has_clr9(R_0006_0002__CLAMBERED,R_0006_0003__UP)
-      &amp; has_arg0(R_0006_0002__CLAMBERED,R_0006_0001__MICKEY) ) ).
+    ? [R_6_8_AND,R_6_2_CLAMBERED,R_6_3_UP,R_6_6_PUPPY_WAYS,R_6_1_MICKEY,R_6_19_AND] :
+      ( up(R_6_3_UP)
+      &amp; mickey(R_6_1_MICKEY)
+      &amp; and(R_6_8_AND)
+      &amp; conj1(R_6_8_AND,R_6_2_CLAMBERED)
+      &amp; clambered(R_6_2_CLAMBERED,R_6_1_MICKEY)
+      &amp; clr9(R_6_2_CLAMBERED,R_6_3_UP)
+      &amp; in_nim15(R_6_2_CLAMBERED,R_6_6_PUPPY_WAYS)
+      &amp; puppy_ways(R_6_6_PUPPY_WAYS)
+      &amp; gen(R_6_6_PUPPY_WAYS,R_6_1_MICKEY)
+      &amp; conj2(R_6_8_AND,R_6_19_AND)
+      &amp; ! [R_6_10_ARRIVING,R_6_12_THE_TOP_STEP] :
+          ( ( the_top_step(R_6_12_THE_TOP_STEP)
+            &amp; arriving(R_6_10_ARRIVING,R_6_1_MICKEY)
+            &amp; on_clr38(R_6_10_ARRIVING,R_6_12_THE_TOP_STEP) )
+         =&gt; ? [R_6_16_REALISED,R_6_17_THE_HEIGHT] :
+              ( the_height(R_6_17_THE_HEIGHT)
+              &amp; realised(R_6_16_REALISED,R_6_1_MICKEY,R_6_17_THE_HEIGHT) ) )
+      &amp; conj1(CONJ1)
+      &amp; and(R_6_19_AND)
+      &amp; conj2(R_6_19_AND,R_6_23_NOT)
+      &amp; ~ ? [R_6_22_WOULD_LET,R_6_21_TERROR,R_6_26_GO,X_6_A_STORIES_10_K58_75,R_6_27_DOWN] :
+            ( down(R_6_27_DOWN)
+            &amp; would_let(R_6_22_WOULD_LET,R_6_21_TERROR,R_6_1_MICKEY,R_6_26_GO)
+            &amp; terror(R_6_21_TERROR)
+            &amp; gen(R_6_21_TERROR,R_6_1_MICKEY)
+            &amp; go(R_6_26_GO,X_6_A_STORIES_10_K58_75)
+            &amp; clr78(R_6_26_GO,R_6_27_DOWN) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="1219pt" height="523pt"

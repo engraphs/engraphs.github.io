@@ -469,37 +469,28 @@ arc(r_0301_0023__outline, r_0301_0016__the_r_0301_0018__paragraph, gen).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0301_0011__THE_R_0301_0012__REPORTS,R_0301_0017__PRECEDING,R_0301_0016__THE_R_0301_0018__PARAGRAPH,Z_000_301_A_LAW_H15A119_36,R_0301_0013__SET_R_0301_0014__FORTH] :
-      ( r_0301_0011__the_r_0301_0012__reports(R_0301_0011__THE_R_0301_0012__REPORTS)
-      &amp; r_0301_0017__preceding(R_0301_0017__PRECEDING)
-      &amp; z_000_301_a_law_h15a119_36(Z_000_301_A_LAW_H15A119_36)
-      &amp; r_0301_0013__set_r_0301_0014__forth(R_0301_0013__SET_R_0301_0014__FORTH)
-      &amp; has_arg0(R_0301_0013__SET_R_0301_0014__FORTH,Z_000_301_A_LAW_H15A119_36)
-      &amp; has_r_0301_0015__in_nim45(R_0301_0013__SET_R_0301_0014__FORTH,R_0301_0016__THE_R_0301_0018__PARAGRAPH)
-      &amp; r_0301_0016__the_r_0301_0018__paragraph(R_0301_0016__THE_R_0301_0018__PARAGRAPH)
-      &amp; has_attrib48(R_0301_0016__THE_R_0301_0018__PARAGRAPH,R_0301_0017__PRECEDING)
-      &amp; has_arg1(R_0301_0013__SET_R_0301_0014__FORTH,R_0301_0011__THE_R_0301_0012__REPORTS)
-      &amp; ! [R_0301_0005__YEAR] :
-          ( r_0301_0005__year(R_0301_0005__YEAR)
-         =&gt; ? [R_0301_0006__THE_R_0301_0007__PRIME_R_0301_0008__MINISTER,R_0301_0010__COMPILE,R_0301_0020__PUBLICLY,R_0301_0023__OUTLINE,R_0301_0021__ANNOUNCE,R_0301_0019__AND,R_0301_0009__SHALL] :
-              ( r_0301_0006__the_r_0301_0007__Prime_r_0301_0008__Minister(R_0301_0006__THE_R_0301_0007__PRIME_R_0301_0008__MINISTER)
-              &amp; r_0301_0020__publicly(R_0301_0020__PUBLICLY)
-              &amp; r_0301_0009__shall(R_0301_0009__SHALL)
-              &amp; has_keep_scope(R_0301_0009__SHALL,R_0301_0019__AND)
-              &amp; r_0301_0019__and(R_0301_0019__AND)
-              &amp; has_conj2(R_0301_0019__AND,R_0301_0021__ANNOUNCE)
-              &amp; r_0301_0021__announce(R_0301_0021__ANNOUNCE)
-              &amp; has_arg1(R_0301_0021__ANNOUNCE,R_0301_0023__OUTLINE)
-              &amp; r_0301_0023__outline(R_0301_0023__OUTLINE)
-              &amp; has_gen(R_0301_0023__OUTLINE,R_0301_0016__THE_R_0301_0018__PARAGRAPH)
-              &amp; has_nim57(R_0301_0021__ANNOUNCE,R_0301_0020__PUBLICLY)
-              &amp; has_arg0(R_0301_0021__ANNOUNCE,R_0301_0006__THE_R_0301_0007__PRIME_R_0301_0008__MINISTER)
-              &amp; has_nim24(R_0301_0021__ANNOUNCE,R_0301_0005__YEAR)
-              &amp; has_conj1(R_0301_0019__AND,R_0301_0010__COMPILE)
-              &amp; r_0301_0010__compile(R_0301_0010__COMPILE)
-              &amp; has_arg1(R_0301_0010__COMPILE,R_0301_0011__THE_R_0301_0012__REPORTS)
-              &amp; has_arg0(R_0301_0010__COMPILE,R_0301_0006__THE_R_0301_0007__PRIME_R_0301_0008__MINISTER)
-              &amp; has_nim24(R_0301_0010__COMPILE,R_0301_0005__YEAR) ) ) ) ).
+    ? [R_301_13_SET_FORTH,Z_301_A_LAW_H15A119_36,R_301_11_THE_REPORTS,R_301_16_THE_PARAGRAPH,R_301_17_PRECEDING] :
+      ( the_reports(R_301_11_THE_REPORTS)
+      &amp; preceding(R_301_17_PRECEDING)
+      &amp; ! [R_301_5_YEAR] :
+          ( year(R_301_5_YEAR)
+         =&gt; ~ ? [R_301_19_AND,R_301_10_COMPILE,R_301_21_ANNOUNCE,R_301_6_THE_PRIME_MINISTER,R_301_23_OUTLINE,R_301_20_PUBLICLY] :
+                ( the_Prime_Minister(R_301_6_THE_PRIME_MINISTER)
+                &amp; publicly(R_301_20_PUBLICLY)
+                &amp; and(R_301_19_AND)
+                &amp; conj1(R_301_19_AND,R_301_10_COMPILE)
+                &amp; compile(R_301_10_COMPILE,R_301_6_THE_PRIME_MINISTER,R_301_11_THE_REPORTS)
+                &amp; nim24(R_301_10_COMPILE,R_301_5_YEAR)
+                &amp; conj2(R_301_19_AND,R_301_21_ANNOUNCE)
+                &amp; announce(R_301_21_ANNOUNCE,R_301_6_THE_PRIME_MINISTER,R_301_23_OUTLINE)
+                &amp; outline(R_301_23_OUTLINE)
+                &amp; gen(R_301_23_OUTLINE,R_301_16_THE_PARAGRAPH)
+                &amp; nim24(R_301_21_ANNOUNCE,R_301_5_YEAR)
+                &amp; nim57(R_301_21_ANNOUNCE,R_301_20_PUBLICLY) ) )
+      &amp; set_forth(R_301_13_SET_FORTH,Z_301_A_LAW_H15A119_36,R_301_11_THE_REPORTS)
+      &amp; in_nim45(R_301_13_SET_FORTH,R_301_16_THE_PARAGRAPH)
+      &amp; the_paragraph(R_301_16_THE_PARAGRAPH)
+      &amp; attrib48(R_301_16_THE_PARAGRAPH,R_301_17_PRECEDING) ) ).
 </pre>
 <br><hr><br>
 <svg width="1247pt" height="478pt"

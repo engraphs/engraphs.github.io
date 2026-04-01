@@ -276,21 +276,18 @@ arc(r_0008_0011__transport, r_0008_0013__the_r_0008_0014__airport, r_0008_0012__
 </svg>
 <pre>
 fof(formula,axiom,
-    ! [R_0008_0003__AND,R_0008_0002__ACCOMMODATION,R_0008_0004__TRAVEL_R_0008_0005__COSTS] :
-      ( ( r_0008_0002__accommodation(R_0008_0002__ACCOMMODATION)
-        &amp; r_0008_0004__travel_r_0008_0005__costs(R_0008_0004__TRAVEL_R_0008_0005__COSTS)
-        &amp; r_0008_0003__and(R_0008_0003__AND)
-        &amp; has_conj2(R_0008_0003__AND,R_0008_0004__TRAVEL_R_0008_0005__COSTS)
-        &amp; has_conj1(R_0008_0003__AND,R_0008_0002__ACCOMMODATION) )
-     =&gt; ? [R_0008_0013__THE_R_0008_0014__AIRPORT,R_0008_0011__TRANSPORT,Z_000_8_A_FCE_0100_2000_06_20,R_0008_0006__ARE_R_0008_0007__PAID] :
-          ( r_0008_0013__the_r_0008_0014__airport(R_0008_0013__THE_R_0008_0014__AIRPORT)
-          &amp; z_000_8_a_fce_0100_2000_06_20(Z_000_8_A_FCE_0100_2000_06_20)
-          &amp; r_0008_0006__are_r_0008_0007__paid(R_0008_0006__ARE_R_0008_0007__PAID)
-          &amp; has_arg0(R_0008_0006__ARE_R_0008_0007__PAID,Z_000_8_A_FCE_0100_2000_06_20)
-          &amp; has_arg1(R_0008_0006__ARE_R_0008_0007__PAID,R_0008_0003__AND)
-          &amp; has_r_0008_0010__including_nim32(R_0008_0006__ARE_R_0008_0007__PAID,R_0008_0011__TRANSPORT)
-          &amp; r_0008_0011__transport(R_0008_0011__TRANSPORT)
-          &amp; has_r_0008_0012__to_and_from(R_0008_0011__TRANSPORT,R_0008_0013__THE_R_0008_0014__AIRPORT) ) ) ).
+    ! [R_8_3_AND,R_8_2_ACCOMMODATION,R_8_4_TRAVEL_COSTS] :
+      ( ( accommodation(R_8_2_ACCOMMODATION)
+        &amp; travel_costs(R_8_4_TRAVEL_COSTS)
+        &amp; and(R_8_3_AND)
+        &amp; conj1(R_8_3_AND,R_8_2_ACCOMMODATION)
+        &amp; conj2(R_8_3_AND,R_8_4_TRAVEL_COSTS) )
+     =&gt; ? [R_8_6_ARE_PAID,Z_8_A_FCE_100_2000_6_20,R_8_11_TRANSPORT,R_8_13_THE_AIRPORT] :
+          ( the_airport(R_8_13_THE_AIRPORT)
+          &amp; are_paid(R_8_6_ARE_PAID,Z_8_A_FCE_100_2000_6_20,R_8_3_AND)
+          &amp; including_nim32(R_8_6_ARE_PAID,R_8_11_TRANSPORT)
+          &amp; transport(R_8_11_TRANSPORT)
+          &amp; to_and_from(R_8_11_TRANSPORT,R_8_13_THE_AIRPORT) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="789pt" height="297pt"

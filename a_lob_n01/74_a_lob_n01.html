@@ -427,31 +427,26 @@ arc(r_0074_0019__intelligence, r_0074_0018__her, gen).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0074_0002__HAD,R_0074_0009__ALASTAIR,R_0074_0015__TREMENDOUS,R_0074_0018__HER,R_0074_0019__INTELLIGENCE,R_0074_0014__A_R_0074_0016__ADMIRATION,R_0074_0010__SEEMED_R_0074_0011__TO_R_0074_0012__HAVE_R_0074_0013__DEVELOPED,R_0074_0008__BUT] :
-      ( r_0074_0009__Alastair(R_0074_0009__ALASTAIR)
-      &amp; r_0074_0015__tremendous(R_0074_0015__TREMENDOUS)
-      &amp; r_0074_0018__her(R_0074_0018__HER)
-      &amp; r_0074_0008__but(R_0074_0008__BUT)
-      &amp; has_conj2(R_0074_0008__BUT,R_0074_0010__SEEMED_R_0074_0011__TO_R_0074_0012__HAVE_R_0074_0013__DEVELOPED)
-      &amp; r_0074_0010__seemed_r_0074_0011__to_r_0074_0012__have_r_0074_0013__developed(R_0074_0010__SEEMED_R_0074_0011__TO_R_0074_0012__HAVE_R_0074_0013__DEVELOPED)
-      &amp; has_arg1(R_0074_0010__SEEMED_R_0074_0011__TO_R_0074_0012__HAVE_R_0074_0013__DEVELOPED,R_0074_0014__A_R_0074_0016__ADMIRATION)
-      &amp; r_0074_0014__a_r_0074_0016__admiration(R_0074_0014__A_R_0074_0016__ADMIRATION)
-      &amp; has_r_0074_0017__for(R_0074_0014__A_R_0074_0016__ADMIRATION,R_0074_0019__INTELLIGENCE)
-      &amp; r_0074_0019__intelligence(R_0074_0019__INTELLIGENCE)
-      &amp; has_gen(R_0074_0019__INTELLIGENCE,R_0074_0018__HER)
-      &amp; has_attrib43(R_0074_0014__A_R_0074_0016__ADMIRATION,R_0074_0015__TREMENDOUS)
-      &amp; has_arg0(R_0074_0010__SEEMED_R_0074_0011__TO_R_0074_0012__HAVE_R_0074_0013__DEVELOPED,R_0074_0009__ALASTAIR)
-      &amp; has_conj1(R_0074_0008__BUT,R_0074_0002__HAD)
-      &amp; r_0074_0002__had(R_0074_0002__HAD)
-      &amp; ! [R_0074_0005__CONTACT,R_0074_0007__HER] :
-          ( ( r_0074_0007__her(R_0074_0007__HER)
-            &amp; r_0074_0005__contact(R_0074_0005__CONTACT)
-            &amp; has_r_0074_0006__with(R_0074_0005__CONTACT,R_0074_0007__HER) )
-         =&gt; ? [R_0074_0001__GEOFFREY,R_0074_0003__HAD] :
-              ( r_0074_0001__Geoffrey(R_0074_0001__GEOFFREY)
-              &amp; r_0074_0003__had(R_0074_0003__HAD)
-              &amp; has_arg1(R_0074_0003__HAD,R_0074_0005__CONTACT)
-              &amp; has_arg0(R_0074_0003__HAD,R_0074_0001__GEOFFREY) ) ) ) ).
+    ? [R_74_8_BUT,R_74_10_SEEMED_TO_HAVE_DEVELOPED,R_74_9_ALASTAIR,R_74_14_A_ADMIRATION,R_74_15_TREMENDOUS,R_74_19_INTELLIGENCE,R_74_18_HER] :
+      ( alastair(R_74_9_ALASTAIR)
+      &amp; tremendous(R_74_15_TREMENDOUS)
+      &amp; her(R_74_18_HER)
+      &amp; but(R_74_8_BUT)
+      &amp; conj1(R_74_8_BUT,R_74_2_HAD)
+      &amp; ~ ! [R_74_5_CONTACT,R_74_7_HER] :
+            ( ( her(R_74_7_HER)
+              &amp; contact(R_74_5_CONTACT)
+              &amp; with(R_74_5_CONTACT,R_74_7_HER) )
+           =&gt; ? [R_74_3_HAD,R_74_1_GEOFFREY] :
+                ( geoffrey(R_74_1_GEOFFREY)
+                &amp; had(R_74_3_HAD,R_74_1_GEOFFREY,R_74_5_CONTACT) ) )
+      &amp; conj2(R_74_8_BUT,R_74_10_SEEMED_TO_HAVE_DEVELOPED)
+      &amp; seemed_to_have_developed(R_74_10_SEEMED_TO_HAVE_DEVELOPED,R_74_9_ALASTAIR,R_74_14_A_ADMIRATION)
+      &amp; a_admiration(R_74_14_A_ADMIRATION)
+      &amp; attrib43(R_74_14_A_ADMIRATION,R_74_15_TREMENDOUS)
+      &amp; for(R_74_14_A_ADMIRATION,R_74_19_INTELLIGENCE)
+      &amp; intelligence(R_74_19_INTELLIGENCE)
+      &amp; gen(R_74_19_INTELLIGENCE,R_74_18_HER) ) ).
 </pre>
 <br><hr><br>
 <svg width="993pt" height="523pt"

@@ -480,36 +480,27 @@ arc(z_000_43_a_duplex_62, r_0043_0025__head, prd).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [UTTERANCE_43_A_DUPLEX_4,R_0043_0022__SCOTT_R_0043_0023__HUFFMAN,R_0043_0021__EXPLAINED,R_0043_0029__GOOGLE_R_0043_0030__ASSISTANT,R_0043_0027__ENGINEERING,R_0043_0025__HEAD,Z_000_43_A_DUPLEX_62] :
-      ( r_0043_0022__Scott_r_0043_0023__Huffman(R_0043_0022__SCOTT_R_0043_0023__HUFFMAN)
-      &amp; r_0043_0029__Google_r_0043_0030__Assistant(R_0043_0029__GOOGLE_R_0043_0030__ASSISTANT)
-      &amp; z_000_43_a_duplex_62(Z_000_43_A_DUPLEX_62)
-      &amp; has_prd(Z_000_43_A_DUPLEX_62,R_0043_0025__HEAD)
-      &amp; r_0043_0025__head(R_0043_0025__HEAD)
-      &amp; has_r_0043_0026__of(R_0043_0025__HEAD,R_0043_0027__ENGINEERING)
-      &amp; r_0043_0027__engineering(R_0043_0027__ENGINEERING)
-      &amp; has_r_0043_0028__for(R_0043_0027__ENGINEERING,R_0043_0029__GOOGLE_R_0043_0030__ASSISTANT)
-      &amp; has_arg0(Z_000_43_A_DUPLEX_62,R_0043_0022__SCOTT_R_0043_0023__HUFFMAN)
-      &amp; r_0043_0021__explained(R_0043_0021__EXPLAINED)
-      &amp; has_arg0(R_0043_0021__EXPLAINED,R_0043_0022__SCOTT_R_0043_0023__HUFFMAN)
-      &amp; has_arg1(R_0043_0021__EXPLAINED,UTTERANCE_43_A_DUPLEX_4)
+    ? [R_43_21_EXPLAINED,UTTERANCE_43_A_DUPLEX_4,Z_43_A_DUPLEX_62,R_43_22_SCOTT_HUFFMAN,R_43_25_HEAD,R_43_27_ENGINEERING,R_43_29_GOOGLE_ASSISTANT] :
+      ( scott_Huffman(R_43_22_SCOTT_HUFFMAN)
+      &amp; google_Assistant(R_43_29_GOOGLE_ASSISTANT)
+      &amp; explained(R_43_21_EXPLAINED,R_43_22_SCOTT_HUFFMAN,UTTERANCE_43_A_DUPLEX_4)
+      &amp; ( ~ ? [R_43_8_DOES_WANT,R_43_11_TO_RECEIVE,R_43_6_THE_BUSINESS,R_43_13_THOSE_APPOINTMENTS,R_43_4_SOME_REASON] :
+              ( the_business(R_43_6_THE_BUSINESS)
+              &amp; those_appointments(R_43_13_THOSE_APPOINTMENTS)
+              &amp; some_reason(R_43_4_SOME_REASON)
+              &amp; does_want(R_43_8_DOES_WANT,R_43_6_THE_BUSINESS,R_43_11_TO_RECEIVE)
+              &amp; to_receive(R_43_11_TO_RECEIVE,R_43_6_THE_BUSINESS,R_43_13_THOSE_APPOINTMENTS)
+              &amp; for_nim13(R_43_8_DOES_WANT,R_43_4_SOME_REASON) )
+       =&gt; ? [R_43_16_CAN_BOW_OUT,R_43_6_THE_BUSINESS] :
+            ( the_business(R_43_6_THE_BUSINESS)
+            &amp; can_bow_out(R_43_16_CAN_BOW_OUT,R_43_6_THE_BUSINESS) ) )
+      &amp; part1(PART1)
       &amp; utterance_43_a_duplex_4(UTTERANCE_43_A_DUPLEX_4)
-      &amp; ! [R_0043_0009__N_APOS_T] :
-          ( ~ ? [R_0043_0004__SOME_R_0043_0005__REASON,R_0043_0006__THE_R_0043_0007__BUSINESS,R_0043_0013__THOSE_R_0043_0014__APPOINTMENTS,R_0043_0011__TO_R_0043_0012__RECEIVE,R_0043_0008__DOES_R_0043_0010__WANT] :
-                ( r_0043_0004__some_r_0043_0005__reason(R_0043_0004__SOME_R_0043_0005__REASON)
-                &amp; r_0043_0006__the_r_0043_0007__business(R_0043_0006__THE_R_0043_0007__BUSINESS)
-                &amp; r_0043_0013__those_r_0043_0014__appointments(R_0043_0013__THOSE_R_0043_0014__APPOINTMENTS)
-                &amp; r_0043_0008__does_r_0043_0010__want(R_0043_0008__DOES_R_0043_0010__WANT)
-                &amp; has_arg1(R_0043_0008__DOES_R_0043_0010__WANT,R_0043_0011__TO_R_0043_0012__RECEIVE)
-                &amp; r_0043_0011__to_r_0043_0012__receive(R_0043_0011__TO_R_0043_0012__RECEIVE)
-                &amp; has_arg1(R_0043_0011__TO_R_0043_0012__RECEIVE,R_0043_0013__THOSE_R_0043_0014__APPOINTMENTS)
-                &amp; has_arg0(R_0043_0011__TO_R_0043_0012__RECEIVE,R_0043_0006__THE_R_0043_0007__BUSINESS)
-                &amp; has_arg0(R_0043_0008__DOES_R_0043_0010__WANT,R_0043_0006__THE_R_0043_0007__BUSINESS)
-                &amp; has_r_0043_0003__for_nim13(R_0043_0008__DOES_R_0043_0010__WANT,R_0043_0004__SOME_R_0043_0005__REASON) )
-         =&gt; ? [R_0043_0006__THE_R_0043_0007__BUSINESS,R_0043_0016__CAN_R_0043_0017__BOW_R_0043_0018__OUT] :
-              ( r_0043_0006__the_r_0043_0007__business(R_0043_0006__THE_R_0043_0007__BUSINESS)
-              &amp; r_0043_0016__can_r_0043_0017__bow_r_0043_0018__out(R_0043_0016__CAN_R_0043_0017__BOW_R_0043_0018__OUT)
-              &amp; has_arg0(R_0043_0016__CAN_R_0043_0017__BOW_R_0043_0018__OUT,R_0043_0006__THE_R_0043_0007__BUSINESS) ) ) ) ).
+      &amp; z_43_a_duplex_62(Z_43_A_DUPLEX_62,R_43_22_SCOTT_HUFFMAN,R_43_25_HEAD)
+      &amp; head(R_43_25_HEAD)
+      &amp; of(R_43_25_HEAD,R_43_27_ENGINEERING)
+      &amp; engineering(R_43_27_ENGINEERING)
+      &amp; for(R_43_27_ENGINEERING,R_43_29_GOOGLE_ASSISTANT) ) ).
 </pre>
 <br><hr><br>
 <svg width="1482pt" height="432pt"

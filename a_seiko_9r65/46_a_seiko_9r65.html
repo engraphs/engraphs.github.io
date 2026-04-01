@@ -222,17 +222,13 @@ arc(r_0046_0006__mounted, z_000_46_a_seiko_9r65_18, arg0).
 </svg>
 <pre>
 fof(formula,axiom,
-    ! [R_0046_0003__OR,R_0046_0002__MOTOR,R_0046_0004__BATTERY] :
-      ( ( r_0046_0002__motor(R_0046_0002__MOTOR)
-        &amp; r_0046_0004__battery(R_0046_0004__BATTERY)
-        &amp; r_0046_0003__or(R_0046_0003__OR)
-        &amp; has_conj2(R_0046_0003__OR,R_0046_0004__BATTERY)
-        &amp; has_conj1(R_0046_0003__OR,R_0046_0002__MOTOR) )
-     =&gt; ? [Z_000_46_A_SEIKO_9R65_18,R_0046_0005__IS_R_0046_0006__MOUNTED] :
-          ( z_000_46_a_seiko_9r65_18(Z_000_46_A_SEIKO_9R65_18)
-          &amp; r_0046_0005__is_r_0046_0006__mounted(R_0046_0005__IS_R_0046_0006__MOUNTED)
-          &amp; has_arg0(R_0046_0005__IS_R_0046_0006__MOUNTED,Z_000_46_A_SEIKO_9R65_18)
-          &amp; has_arg1(R_0046_0005__IS_R_0046_0006__MOUNTED,R_0046_0003__OR) ) ) ).
+    ! [R_46_3_OR,R_46_2_MOTOR,R_46_4_BATTERY] :
+      ( ( motor(R_46_2_MOTOR)
+        &amp; battery(R_46_4_BATTERY)
+        &amp; or(R_46_3_OR)
+        &amp; conj1(R_46_3_OR,R_46_2_MOTOR)
+        &amp; conj2(R_46_3_OR,R_46_4_BATTERY) )
+     =&gt; ? [R_46_5_IS_MOUNTED,Z_46_A_SEIKO_9R65_18] : is_mounted(R_46_5_IS_MOUNTED,Z_46_A_SEIKO_9R65_18,R_46_3_OR) ) ).
 </pre>
 <br><hr><br>
 <svg width="327pt" height="297pt"

@@ -305,23 +305,19 @@ arc(r_0038_0013__some_r_0038_0015__music, r_0038_0014__lovely, attrib38).
 </svg>
 <pre>
 fof(formula,axiom,
-    ! [R_0038_0012__HEARD,R_0038_0003__THE_R_0038_0004__GIANT,R_0038_0014__LOVELY,R_0038_0013__SOME_R_0038_0015__MUSIC] :
-      ( ( r_0038_0003__the_r_0038_0004__Giant(R_0038_0003__THE_R_0038_0004__GIANT)
-        &amp; r_0038_0014__lovely(R_0038_0014__LOVELY)
-        &amp; r_0038_0012__heard(R_0038_0012__HEARD)
-        &amp; has_arg1(R_0038_0012__HEARD,R_0038_0013__SOME_R_0038_0015__MUSIC)
-        &amp; r_0038_0013__some_r_0038_0015__music(R_0038_0013__SOME_R_0038_0015__MUSIC)
-        &amp; has_attrib38(R_0038_0013__SOME_R_0038_0015__MUSIC,R_0038_0014__LOVELY)
-        &amp; has_arg0(R_0038_0012__HEARD,R_0038_0003__THE_R_0038_0004__GIANT) )
-     =&gt; ? [R_0038_0001__ONE_R_0038_0002__MORNING,R_0038_0007__AWAKE,R_0038_0009__BED,R_0038_0005__WAS_R_0038_0006__LYING] :
-          ( r_0038_0001__One_r_0038_0002__morning(R_0038_0001__ONE_R_0038_0002__MORNING)
-          &amp; r_0038_0007__awake(R_0038_0007__AWAKE)
-          &amp; r_0038_0009__bed(R_0038_0009__BED)
-          &amp; r_0038_0005__was_r_0038_0006__lying(R_0038_0005__WAS_R_0038_0006__LYING)
-          &amp; has_r_0038_0008__in_nim23(R_0038_0005__WAS_R_0038_0006__LYING,R_0038_0009__BED)
-          &amp; has_prd(R_0038_0005__WAS_R_0038_0006__LYING,R_0038_0007__AWAKE)
-          &amp; has_arg0(R_0038_0005__WAS_R_0038_0006__LYING,R_0038_0003__THE_R_0038_0004__GIANT)
-          &amp; has_nim2(R_0038_0005__WAS_R_0038_0006__LYING,R_0038_0001__ONE_R_0038_0002__MORNING) ) ) ).
+    ! [R_38_12_HEARD,R_38_3_THE_GIANT,R_38_13_SOME_MUSIC,R_38_14_LOVELY] :
+      ( ( the_Giant(R_38_3_THE_GIANT)
+        &amp; lovely(R_38_14_LOVELY)
+        &amp; heard(R_38_12_HEARD,R_38_3_THE_GIANT,R_38_13_SOME_MUSIC)
+        &amp; some_music(R_38_13_SOME_MUSIC)
+        &amp; attrib38(R_38_13_SOME_MUSIC,R_38_14_LOVELY) )
+     =&gt; ? [R_38_5_WAS_LYING,R_38_1_ONE_MORNING,R_38_7_AWAKE,R_38_9_BED] :
+          ( one_morning(R_38_1_ONE_MORNING)
+          &amp; awake(R_38_7_AWAKE)
+          &amp; bed(R_38_9_BED)
+          &amp; was_lying(R_38_5_WAS_LYING,R_38_3_THE_GIANT,R_38_7_AWAKE)
+          &amp; nim2(R_38_5_WAS_LYING,R_38_1_ONE_MORNING)
+          &amp; in_nim23(R_38_5_WAS_LYING,R_38_9_BED) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="698pt" height="297pt"

@@ -280,20 +280,16 @@ arc(r_0080_0014__lost, r_0080_0015__that_r_0080_0016__capacity, arg1).
 </svg>
 <pre>
 fof(formula,axiom,
-    ! [R_0080_0012__KIDS,R_0080_0003__THE_R_0080_0004__TIME,R_0080_0009__ADULTS,R_0080_0006__GET_R_0080_0007__TO_R_0080_0008__BE] :
-      ( ( r_0080_0003__the_r_0080_0004__time(R_0080_0003__THE_R_0080_0004__TIME)
-        &amp; r_0080_0009__adults(R_0080_0009__ADULTS)
-        &amp; r_0080_0012__kids(R_0080_0012__KIDS)
-        &amp; r_0080_0006__get_r_0080_0007__to_r_0080_0008__be(R_0080_0006__GET_R_0080_0007__TO_R_0080_0008__BE)
-        &amp; has_arg0(R_0080_0006__GET_R_0080_0007__TO_R_0080_0008__BE,R_0080_0012__KIDS)
-        &amp; has_prd(R_0080_0006__GET_R_0080_0007__TO_R_0080_0008__BE,R_0080_0009__ADULTS)
-        &amp; has_nim19(R_0080_0006__GET_R_0080_0007__TO_R_0080_0008__BE,R_0080_0003__THE_R_0080_0004__TIME) )
-     =&gt; ? [R_0080_0015__THAT_R_0080_0016__CAPACITY,R_0080_0001__AND_R_0080_0013__HAVE_R_0080_0014__LOST] :
-          ( r_0080_0015__that_r_0080_0016__capacity(R_0080_0015__THAT_R_0080_0016__CAPACITY)
-          &amp; r_0080_0001__And_r_0080_0013__have_r_0080_0014__lost(R_0080_0001__AND_R_0080_0013__HAVE_R_0080_0014__LOST)
-          &amp; has_arg1(R_0080_0001__AND_R_0080_0013__HAVE_R_0080_0014__LOST,R_0080_0015__THAT_R_0080_0016__CAPACITY)
-          &amp; has_arg0(R_0080_0001__AND_R_0080_0013__HAVE_R_0080_0014__LOST,R_0080_0012__KIDS)
-          &amp; has_r_0080_0002__by_nim7(R_0080_0001__AND_R_0080_0013__HAVE_R_0080_0014__LOST,R_0080_0003__THE_R_0080_0004__TIME) ) ) ).
+    ! [R_80_6_GET_TO_BE,R_80_12_KIDS,R_80_3_THE_TIME,R_80_9_ADULTS] :
+      ( ( kids(R_80_12_KIDS)
+        &amp; the_time(R_80_3_THE_TIME)
+        &amp; adults(R_80_9_ADULTS)
+        &amp; get_to_be(R_80_6_GET_TO_BE,R_80_12_KIDS,R_80_9_ADULTS)
+        &amp; nim19(R_80_6_GET_TO_BE,R_80_3_THE_TIME) )
+     =&gt; ? [R_80_1_AND_HAVE_LOST,R_80_15_THAT_CAPACITY] :
+          ( that_capacity(R_80_15_THAT_CAPACITY)
+          &amp; and_have_lost(R_80_1_AND_HAVE_LOST,R_80_12_KIDS,R_80_15_THAT_CAPACITY)
+          &amp; by_nim7(R_80_1_AND_HAVE_LOST,R_80_3_THE_TIME) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="779pt" height="342pt"

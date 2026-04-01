@@ -141,14 +141,12 @@ arc(r_0021_0004__needs, r_0021_0005__taxation, arg1).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0021_0002__MODERN,R_0021_0001__A_R_0021_0003__GOVERNMENT,R_0021_0005__TAXATION,R_0021_0004__NEEDS] :
-      ( r_0021_0002__modern(R_0021_0002__MODERN)
-      &amp; r_0021_0005__taxation(R_0021_0005__TAXATION)
-      &amp; r_0021_0004__needs(R_0021_0004__NEEDS)
-      &amp; has_arg1(R_0021_0004__NEEDS,R_0021_0005__TAXATION)
-      &amp; has_arg0(R_0021_0004__NEEDS,R_0021_0001__A_R_0021_0003__GOVERNMENT)
-      &amp; r_0021_0001__A_r_0021_0003__government(R_0021_0001__A_R_0021_0003__GOVERNMENT)
-      &amp; has_attrib5(R_0021_0001__A_R_0021_0003__GOVERNMENT,R_0021_0002__MODERN) ) ).
+    ? [R_21_4_NEEDS,R_21_1_A_GOVERNMENT,R_21_2_MODERN,R_21_5_TAXATION] :
+      ( modern(R_21_2_MODERN)
+      &amp; taxation(R_21_5_TAXATION)
+      &amp; needs(R_21_4_NEEDS,R_21_1_A_GOVERNMENT,R_21_5_TAXATION)
+      &amp; a_government(R_21_1_A_GOVERNMENT)
+      &amp; attrib5(R_21_1_A_GOVERNMENT,R_21_2_MODERN) ) ).
 </pre>
 <br><hr><br>
 <svg width="974pt" height="432pt"

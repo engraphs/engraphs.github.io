@@ -291,24 +291,20 @@ arc(r_0033_0012__obstacles, r_0033_0011__tremendous, attrib30).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0033_0008__PEOPLE,R_0033_0011__TREMENDOUS,R_0033_0012__OBSTACLES,R_0033_0010__FACE] :
-      ( r_0033_0008__people(R_0033_0008__PEOPLE)
-      &amp; r_0033_0011__tremendous(R_0033_0011__TREMENDOUS)
-      &amp; r_0033_0010__face(R_0033_0010__FACE)
-      &amp; has_arg1(R_0033_0010__FACE,R_0033_0012__OBSTACLES)
-      &amp; r_0033_0012__obstacles(R_0033_0012__OBSTACLES)
-      &amp; has_attrib30(R_0033_0012__OBSTACLES,R_0033_0011__TREMENDOUS)
-      &amp; has_arg0(R_0033_0010__FACE,R_0033_0008__PEOPLE)
-      &amp; ! [R_0033_0002__YEAR] :
-          ( r_0033_0002__year(R_0033_0002__YEAR)
-         =&gt; ? [R_0033_0004__WE,R_0033_0006__THOUSANDS,R_0033_0005__HELP] :
-              ( r_0033_0004__we(R_0033_0004__WE)
-              &amp; r_0033_0005__help(R_0033_0005__HELP)
-              &amp; has_arg1(R_0033_0005__HELP,R_0033_0006__THOUSANDS)
-              &amp; r_0033_0006__thousands(R_0033_0006__THOUSANDS)
-              &amp; has_r_0033_0007__of(R_0033_0006__THOUSANDS,R_0033_0008__PEOPLE)
-              &amp; has_arg0(R_0033_0005__HELP,R_0033_0004__WE)
-              &amp; has_nim2(R_0033_0005__HELP,R_0033_0002__YEAR) ) ) ) ).
+    ? [R_33_10_FACE,R_33_8_PEOPLE,R_33_12_OBSTACLES,R_33_11_TREMENDOUS] :
+      ( people(R_33_8_PEOPLE)
+      &amp; tremendous(R_33_11_TREMENDOUS)
+      &amp; ! [R_33_2_YEAR] :
+          ( year(R_33_2_YEAR)
+         =&gt; ? [R_33_5_HELP,R_33_4_WE,R_33_6_THOUSANDS] :
+              ( we(R_33_4_WE)
+              &amp; help(R_33_5_HELP,R_33_4_WE,R_33_6_THOUSANDS)
+              &amp; thousands(R_33_6_THOUSANDS)
+              &amp; of(R_33_6_THOUSANDS,R_33_8_PEOPLE)
+              &amp; nim2(R_33_5_HELP,R_33_2_YEAR) ) )
+      &amp; face(R_33_10_FACE,R_33_8_PEOPLE,R_33_12_OBSTACLES)
+      &amp; obstacles(R_33_12_OBSTACLES)
+      &amp; attrib30(R_33_12_OBSTACLES,R_33_11_TREMENDOUS) ) ).
 </pre>
 <br><hr><br>
 <svg width="608pt" height="387pt"

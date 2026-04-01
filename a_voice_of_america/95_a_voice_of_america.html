@@ -372,31 +372,24 @@ arc(r_0095_0016__and, r_0095_0017__explosives, conj2).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0095_0001__THE_R_0095_0002__STATE_R_0095_0003__NEWS_R_0095_0004__AGENCY,R_0095_0007__POLICE,R_0095_0011__SUDANESE,R_0095_0010__EIGHT_R_0095_0012__MEN,R_0095_0009__ARRESTED,R_0095_0015__ARMS,R_0095_0017__EXPLOSIVES,R_0095_0016__AND,R_0095_0014__CONFISCATED,R_0095_0013__AND,R_0095_0006__THAT_R_0095_0008__HAD,R_0095_0005__REPORTED] :
-      ( r_0095_0001__The_r_0095_0002__state_r_0095_0003__news_r_0095_0004__agency(R_0095_0001__THE_R_0095_0002__STATE_R_0095_0003__NEWS_R_0095_0004__AGENCY)
-      &amp; r_0095_0007__police(R_0095_0007__POLICE)
-      &amp; r_0095_0011__Sudanese(R_0095_0011__SUDANESE)
-      &amp; r_0095_0015__arms(R_0095_0015__ARMS)
-      &amp; r_0095_0017__explosives(R_0095_0017__EXPLOSIVES)
-      &amp; r_0095_0005__reported(R_0095_0005__REPORTED)
-      &amp; has_arg1(R_0095_0005__REPORTED,R_0095_0006__THAT_R_0095_0008__HAD)
-      &amp; r_0095_0006__that_r_0095_0008__had(R_0095_0006__THAT_R_0095_0008__HAD)
-      &amp; has_keep_scope(R_0095_0006__THAT_R_0095_0008__HAD,R_0095_0013__AND)
-      &amp; r_0095_0013__and(R_0095_0013__AND)
-      &amp; has_conj2(R_0095_0013__AND,R_0095_0014__CONFISCATED)
-      &amp; r_0095_0014__confiscated(R_0095_0014__CONFISCATED)
-      &amp; has_arg1(R_0095_0014__CONFISCATED,R_0095_0016__AND)
-      &amp; r_0095_0016__and(R_0095_0016__AND)
-      &amp; has_conj2(R_0095_0016__AND,R_0095_0017__EXPLOSIVES)
-      &amp; has_conj1(R_0095_0016__AND,R_0095_0015__ARMS)
-      &amp; has_arg0(R_0095_0014__CONFISCATED,R_0095_0007__POLICE)
-      &amp; has_conj1(R_0095_0013__AND,R_0095_0009__ARRESTED)
-      &amp; r_0095_0009__arrested(R_0095_0009__ARRESTED)
-      &amp; has_arg1(R_0095_0009__ARRESTED,R_0095_0010__EIGHT_R_0095_0012__MEN)
-      &amp; r_0095_0010__eight_r_0095_0012__men(R_0095_0010__EIGHT_R_0095_0012__MEN)
-      &amp; has_attrib30(R_0095_0010__EIGHT_R_0095_0012__MEN,R_0095_0011__SUDANESE)
-      &amp; has_arg0(R_0095_0009__ARRESTED,R_0095_0007__POLICE)
-      &amp; has_arg0(R_0095_0005__REPORTED,R_0095_0001__THE_R_0095_0002__STATE_R_0095_0003__NEWS_R_0095_0004__AGENCY) ) ).
+    ? [R_95_5_REPORTED,R_95_1_THE_STATE_NEWS_AGENCY] :
+      ( the_state_news_agency(R_95_1_THE_STATE_NEWS_AGENCY)
+      &amp; reported(R_95_5_REPORTED,R_95_1_THE_STATE_NEWS_AGENCY,R_95_6_THAT_HAD)
+      &amp; ~ ? [R_95_13_AND,R_95_9_ARRESTED,R_95_10_EIGHT_MEN,R_95_11_SUDANESE,R_95_14_CONFISCATED,R_95_7_POLICE,R_95_16_AND,R_95_15_ARMS,R_95_17_EXPLOSIVES] :
+            ( sudanese(R_95_11_SUDANESE)
+            &amp; police(R_95_7_POLICE)
+            &amp; arms(R_95_15_ARMS)
+            &amp; explosives(R_95_17_EXPLOSIVES)
+            &amp; and(R_95_13_AND)
+            &amp; conj1(R_95_13_AND,R_95_9_ARRESTED)
+            &amp; arrested(R_95_9_ARRESTED,R_95_7_POLICE,R_95_10_EIGHT_MEN)
+            &amp; eight_men(R_95_10_EIGHT_MEN)
+            &amp; attrib30(R_95_10_EIGHT_MEN,R_95_11_SUDANESE)
+            &amp; conj2(R_95_13_AND,R_95_14_CONFISCATED)
+            &amp; confiscated(R_95_14_CONFISCATED,R_95_7_POLICE,R_95_16_AND)
+            &amp; and(R_95_16_AND)
+            &amp; conj1(R_95_16_AND,R_95_15_ARMS)
+            &amp; conj2(R_95_16_AND,R_95_17_EXPLOSIVES) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="916pt" height="568pt"

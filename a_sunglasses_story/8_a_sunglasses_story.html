@@ -523,37 +523,23 @@ arc(r_0008_0015__the_r_0008_0017__lenses, r_0008_0016__yellow, attrib55).
 </svg>
 <pre>
 fof(formula,axiom,
-    ! [Z_000_8_A_SUNGLASSES_STORY_2] :
-      ( ( z_000_8_a_sunglasses_story_2(Z_000_8_A_SUNGLASSES_STORY_2)
-        &amp; ! [Z_000_8_A_SUNGLASSES_STORY_6] :
-            ( z_000_8_a_sunglasses_story_6(Z_000_8_A_SUNGLASSES_STORY_6)
-           =&gt; ? [R_0008_0004__SEEN,Z_000_8_A_SUNGLASSES_STORY_25,R_0008_0006__BEEN_R_0008_0007__TAUGHT,R_0008_0009__EXPERIENCED,R_0008_0008__AND,R_0008_0003__HAS] :
-                ( z_000_8_a_sunglasses_story_25(Z_000_8_A_SUNGLASSES_STORY_25)
-                &amp; r_0008_0003__has(R_0008_0003__HAS)
-                &amp; has_keep_scope(R_0008_0003__HAS,R_0008_0008__AND)
-                &amp; r_0008_0008__and(R_0008_0008__AND)
-                &amp; has_conj3(R_0008_0008__AND,R_0008_0009__EXPERIENCED)
-                &amp; r_0008_0009__experienced(R_0008_0009__EXPERIENCED)
-                &amp; has_arg0(R_0008_0009__EXPERIENCED,Z_000_8_A_SUNGLASSES_STORY_6)
-                &amp; has_arg1(R_0008_0009__EXPERIENCED,Z_000_8_A_SUNGLASSES_STORY_2)
-                &amp; has_conj2(R_0008_0008__AND,R_0008_0006__BEEN_R_0008_0007__TAUGHT)
-                &amp; r_0008_0006__been_r_0008_0007__taught(R_0008_0006__BEEN_R_0008_0007__TAUGHT)
-                &amp; has_arg2(R_0008_0006__BEEN_R_0008_0007__TAUGHT,Z_000_8_A_SUNGLASSES_STORY_6)
-                &amp; has_arg0(R_0008_0006__BEEN_R_0008_0007__TAUGHT,Z_000_8_A_SUNGLASSES_STORY_25)
-                &amp; has_arg1(R_0008_0006__BEEN_R_0008_0007__TAUGHT,Z_000_8_A_SUNGLASSES_STORY_2)
-                &amp; has_conj1(R_0008_0008__AND,R_0008_0004__SEEN)
-                &amp; r_0008_0004__seen(R_0008_0004__SEEN)
-                &amp; has_arg0(R_0008_0004__SEEN,Z_000_8_A_SUNGLASSES_STORY_6)
-                &amp; has_arg1(R_0008_0004__SEEN,Z_000_8_A_SUNGLASSES_STORY_2) ) ) )
-     =&gt; ? [R_0008_0012__THE_R_0008_0013__BRAIN,R_0008_0016__YELLOW,R_0008_0015__THE_R_0008_0017__LENSES,R_0008_0010__HAS_R_0008_0011__ENTERED] :
-          ( r_0008_0012__the_r_0008_0013__brain(R_0008_0012__THE_R_0008_0013__BRAIN)
-          &amp; r_0008_0016__yellow(R_0008_0016__YELLOW)
-          &amp; r_0008_0010__has_r_0008_0011__entered(R_0008_0010__HAS_R_0008_0011__ENTERED)
-          &amp; has_arg0(R_0008_0010__HAS_R_0008_0011__ENTERED,Z_000_8_A_SUNGLASSES_STORY_2)
-          &amp; has_r_0008_0014__through_nim52(R_0008_0010__HAS_R_0008_0011__ENTERED,R_0008_0015__THE_R_0008_0017__LENSES)
-          &amp; r_0008_0015__the_r_0008_0017__lenses(R_0008_0015__THE_R_0008_0017__LENSES)
-          &amp; has_attrib55(R_0008_0015__THE_R_0008_0017__LENSES,R_0008_0016__YELLOW)
-          &amp; has_arg1(R_0008_0010__HAS_R_0008_0011__ENTERED,R_0008_0012__THE_R_0008_0013__BRAIN) ) ) ).
+    ( ! [Z_8_A_SUNGLASSES_STORY_6] :
+        ( true
+       =&gt; ~ ? [R_8_8_AND,R_8_4_SEEN,R_8_6_BEEN_TAUGHT,Z_8_A_SUNGLASSES_STORY_25,R_8_9_EXPERIENCED,Z_8_A_SUNGLASSES_STORY_2] :
+              ( and(R_8_8_AND)
+              &amp; conj1(R_8_8_AND,R_8_4_SEEN)
+              &amp; seen(R_8_4_SEEN,Z_8_A_SUNGLASSES_STORY_6,Z_8_A_SUNGLASSES_STORY_2)
+              &amp; conj2(R_8_8_AND,R_8_6_BEEN_TAUGHT)
+              &amp; been_taught(R_8_6_BEEN_TAUGHT,Z_8_A_SUNGLASSES_STORY_25,Z_8_A_SUNGLASSES_STORY_2,Z_8_A_SUNGLASSES_STORY_6)
+              &amp; conj3(R_8_8_AND,R_8_9_EXPERIENCED)
+              &amp; experienced(R_8_9_EXPERIENCED,Z_8_A_SUNGLASSES_STORY_6,Z_8_A_SUNGLASSES_STORY_2) ) )
+   =&gt; ? [R_8_10_HAS_ENTERED,Z_8_A_SUNGLASSES_STORY_2,R_8_12_THE_BRAIN,R_8_15_THE_LENSES,R_8_16_YELLOW] :
+        ( the_brain(R_8_12_THE_BRAIN)
+        &amp; yellow(R_8_16_YELLOW)
+        &amp; has_entered(R_8_10_HAS_ENTERED,Z_8_A_SUNGLASSES_STORY_2,R_8_12_THE_BRAIN)
+        &amp; through_nim52(R_8_10_HAS_ENTERED,R_8_15_THE_LENSES)
+        &amp; the_lenses(R_8_15_THE_LENSES)
+        &amp; attrib55(R_8_15_THE_LENSES,R_8_16_YELLOW) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="1085pt" height="432pt"

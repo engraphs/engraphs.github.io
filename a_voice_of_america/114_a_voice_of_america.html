@@ -264,21 +264,19 @@ arc(r_0114_0012__all_quant, r_0114_0013__three_r_0114_0014__operations, restrict
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0114_0001__THE_R_0114_0002__MILITARY,R_0114_0003__SAYS] :
-      ( r_0114_0001__The_r_0114_0002__military(R_0114_0001__THE_R_0114_0002__MILITARY)
-      &amp; r_0114_0003__says(R_0114_0003__SAYS)
-      &amp; ! [R_0114_0013__THREE_R_0114_0014__OPERATIONS] :
-          ( r_0114_0013__three_r_0114_0014__operations(R_0114_0013__THREE_R_0114_0014__OPERATIONS)
-         =&gt; ? [R_0114_0004__U_DOT_S_DOT__R_0114_0005__SPECIAL_R_0114_0006__FORCES,R_0114_0009__IRAQI,R_0114_0008__THE_R_0114_0010__ARMY,R_0114_0007__ADVISED] :
-              ( r_0114_0004__U_dot_S_dot__r_0114_0005__Special_r_0114_0006__Forces(R_0114_0004__U_DOT_S_DOT__R_0114_0005__SPECIAL_R_0114_0006__FORCES)
-              &amp; r_0114_0009__Iraqi(R_0114_0009__IRAQI)
-              &amp; r_0114_0007__advised(R_0114_0007__ADVISED)
-              &amp; has_r_0114_0011__in_nim31(R_0114_0007__ADVISED,R_0114_0013__THREE_R_0114_0014__OPERATIONS)
-              &amp; has_arg1(R_0114_0007__ADVISED,R_0114_0008__THE_R_0114_0010__ARMY)
-              &amp; r_0114_0008__the_r_0114_0010__army(R_0114_0008__THE_R_0114_0010__ARMY)
-              &amp; has_attrib23(R_0114_0008__THE_R_0114_0010__ARMY,R_0114_0009__IRAQI)
-              &amp; has_arg0(R_0114_0007__ADVISED,R_0114_0004__U_DOT_S_DOT__R_0114_0005__SPECIAL_R_0114_0006__FORCES) ) )
-      &amp; has_arg0(R_0114_0003__SAYS,R_0114_0001__THE_R_0114_0002__MILITARY) ) ).
+    ? [R_114_3_SAYS,R_114_1_THE_MILITARY] :
+      ( the_military(R_114_1_THE_MILITARY)
+      &amp; ! [R_114_13_THREE_OPERATIONS] :
+          ( three_operations(R_114_13_THREE_OPERATIONS)
+         =&gt; ? [R_114_7_ADVISED,R_114_4_U_DOT_S_DOT_SPECIAL_FORCES,R_114_8_THE_ARMY,R_114_9_IRAQI] :
+              ( u_dot_S_dot_Special_Forces(R_114_4_U_DOT_S_DOT_SPECIAL_FORCES)
+              &amp; iraqi(R_114_9_IRAQI)
+              &amp; advised(R_114_7_ADVISED,R_114_4_U_DOT_S_DOT_SPECIAL_FORCES,R_114_8_THE_ARMY)
+              &amp; the_army(R_114_8_THE_ARMY)
+              &amp; attrib23(R_114_8_THE_ARMY,R_114_9_IRAQI)
+              &amp; in_nim31(R_114_7_ADVISED,R_114_13_THREE_OPERATIONS) ) )
+      &amp; arg1(ARG1)
+      &amp; says(R_114_3_SAYS,R_114_1_THE_MILITARY) ) ).
 </pre>
 <br><hr><br>
 <svg width="687pt" height="297pt"

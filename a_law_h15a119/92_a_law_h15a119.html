@@ -398,31 +398,27 @@ arc(r_0092_0018__means, r_0092_0017__wrongful, attrib48).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0092_0001__A_R_0092_0002__BUSINESS_R_0092_0003__OPERATOR,R_0092_0005__PERSONAL,R_0092_0006__INFORMATION,R_0092_0004__HANDLING] :
-      ( r_0092_0001__A_r_0092_0002__business_r_0092_0003__operator(R_0092_0001__A_R_0092_0002__BUSINESS_R_0092_0003__OPERATOR)
-      &amp; r_0092_0005__personal(R_0092_0005__PERSONAL)
-      &amp; ~ ? [R_0092_0010__PERSONAL,R_0092_0011__INFORMATION,R_0092_0013__A_R_0092_0014__DECEPTION,R_0092_0016__OTHER,R_0092_0017__WRONGFUL,R_0092_0018__MEANS,R_0092_0015__OR,R_0092_0007__SHALL_R_0092_0009__ACQUIRE] :
-            ( r_0092_0010__personal(R_0092_0010__PERSONAL)
-            &amp; r_0092_0013__a_r_0092_0014__deception(R_0092_0013__A_R_0092_0014__DECEPTION)
-            &amp; r_0092_0016__other(R_0092_0016__OTHER)
-            &amp; r_0092_0017__wrongful(R_0092_0017__WRONGFUL)
-            &amp; r_0092_0007__shall_r_0092_0009__acquire(R_0092_0007__SHALL_R_0092_0009__ACQUIRE)
-            &amp; has_r_0092_0012__by_nim34(R_0092_0007__SHALL_R_0092_0009__ACQUIRE,R_0092_0015__OR)
-            &amp; r_0092_0015__or(R_0092_0015__OR)
-            &amp; has_conj2(R_0092_0015__OR,R_0092_0018__MEANS)
-            &amp; r_0092_0018__means(R_0092_0018__MEANS)
-            &amp; has_attrib48(R_0092_0018__MEANS,R_0092_0017__WRONGFUL)
-            &amp; has_attrib45(R_0092_0018__MEANS,R_0092_0016__OTHER)
-            &amp; has_conj1(R_0092_0015__OR,R_0092_0013__A_R_0092_0014__DECEPTION)
-            &amp; has_arg1(R_0092_0007__SHALL_R_0092_0009__ACQUIRE,R_0092_0011__INFORMATION)
-            &amp; r_0092_0011__information(R_0092_0011__INFORMATION)
-            &amp; has_attrib26(R_0092_0011__INFORMATION,R_0092_0010__PERSONAL)
-            &amp; has_arg0(R_0092_0007__SHALL_R_0092_0009__ACQUIRE,R_0092_0001__A_R_0092_0002__BUSINESS_R_0092_0003__OPERATOR) )
-      &amp; r_0092_0004__handling(R_0092_0004__HANDLING)
-      &amp; has_arg1(R_0092_0004__HANDLING,R_0092_0006__INFORMATION)
-      &amp; r_0092_0006__information(R_0092_0006__INFORMATION)
-      &amp; has_attrib13(R_0092_0006__INFORMATION,R_0092_0005__PERSONAL)
-      &amp; has_arg0(R_0092_0004__HANDLING,R_0092_0001__A_R_0092_0002__BUSINESS_R_0092_0003__OPERATOR) ) ).
+    ? [R_92_4_HANDLING,R_92_1_A_BUSINESS_OPERATOR,R_92_6_INFORMATION,R_92_5_PERSONAL] :
+      ( a_business_operator(R_92_1_A_BUSINESS_OPERATOR)
+      &amp; personal(R_92_5_PERSONAL)
+      &amp; handling(R_92_4_HANDLING,R_92_1_A_BUSINESS_OPERATOR,R_92_6_INFORMATION)
+      &amp; information(R_92_6_INFORMATION)
+      &amp; attrib13(R_92_6_INFORMATION,R_92_5_PERSONAL)
+      &amp; ~ ? [R_92_7_SHALL_ACQUIRE,R_92_11_INFORMATION,R_92_10_PERSONAL,R_92_15_OR,R_92_13_A_DECEPTION,R_92_18_MEANS,R_92_16_OTHER,R_92_17_WRONGFUL] :
+            ( personal(R_92_10_PERSONAL)
+            &amp; a_deception(R_92_13_A_DECEPTION)
+            &amp; other(R_92_16_OTHER)
+            &amp; wrongful(R_92_17_WRONGFUL)
+            &amp; shall_acquire(R_92_7_SHALL_ACQUIRE,R_92_1_A_BUSINESS_OPERATOR,R_92_11_INFORMATION)
+            &amp; information(R_92_11_INFORMATION)
+            &amp; attrib26(R_92_11_INFORMATION,R_92_10_PERSONAL)
+            &amp; by_nim34(R_92_7_SHALL_ACQUIRE,R_92_15_OR)
+            &amp; or(R_92_15_OR)
+            &amp; conj1(R_92_15_OR,R_92_13_A_DECEPTION)
+            &amp; conj2(R_92_15_OR,R_92_18_MEANS)
+            &amp; means(R_92_18_MEANS)
+            &amp; attrib45(R_92_18_MEANS,R_92_16_OTHER)
+            &amp; attrib48(R_92_18_MEANS,R_92_17_WRONGFUL) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="1010pt" height="432pt"

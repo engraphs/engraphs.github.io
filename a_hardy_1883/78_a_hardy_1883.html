@@ -519,39 +519,29 @@ arc(r_0078_0024__a_r_0078_0027__diversion, r_0078_0025__not_r_0078_0026__unwelco
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0078_0001__THE_R_0078_0002__HEDGE__HYPHEN__CARPENTER,R_0078_0005__A_R_0078_0006__SONG,R_0078_0008__THE_R_0078_0009__COMPANY,R_0078_0003__WAS_R_0078_0004__SUGGESTING] :
-      ( r_0078_0001__The_r_0078_0002__hedge__hyphen__carpenter(R_0078_0001__THE_R_0078_0002__HEDGE__HYPHEN__CARPENTER)
-      &amp; r_0078_0005__a_r_0078_0006__song(R_0078_0005__A_R_0078_0006__SONG)
-      &amp; r_0078_0008__the_r_0078_0009__company(R_0078_0008__THE_R_0078_0009__COMPANY)
-      &amp; ! [Z_000_78_A_HARDY_1883_33] :
-          ( z_000_78_a_hardy_1883_33(Z_000_78_A_HARDY_1883_33)
-         =&gt; ? [R_0078_0013__JUST,R_0078_0014__THEN,R_0078_0017__TO_R_0078_0018__UNDERTAKE,Z_000_78_A_HARDY_1883_45,R_0078_0015__WAS_R_0078_0016__INCLINED,R_0078_0021__THE_R_0078_0022__KNOCK,R_0078_0025__NOT_R_0078_0026__UNWELCOME,R_0078_0024__A_R_0078_0027__DIVERSION,R_0078_0023__AFFORDED,R_0078_0020__SO_THAT] :
-              ( r_0078_0013__just(R_0078_0013__JUST)
-              &amp; r_0078_0021__the_r_0078_0022__knock(R_0078_0021__THE_R_0078_0022__KNOCK)
-              &amp; r_0078_0025__not_r_0078_0026__unwelcome(R_0078_0025__NOT_R_0078_0026__UNWELCOME)
-              &amp; z_000_78_a_hardy_1883_45(Z_000_78_A_HARDY_1883_45)
-              &amp; r_0078_0020__so_that(R_0078_0020__SO_THAT)
-              &amp; has_conj1(R_0078_0020__SO_THAT,R_0078_0023__AFFORDED)
-              &amp; r_0078_0023__afforded(R_0078_0023__AFFORDED)
-              &amp; has_arg1(R_0078_0023__AFFORDED,R_0078_0024__A_R_0078_0027__DIVERSION)
-              &amp; r_0078_0024__a_r_0078_0027__diversion(R_0078_0024__A_R_0078_0027__DIVERSION)
-              &amp; has_attrib72(R_0078_0024__A_R_0078_0027__DIVERSION,R_0078_0025__NOT_R_0078_0026__UNWELCOME)
-              &amp; has_arg0(R_0078_0023__AFFORDED,R_0078_0021__THE_R_0078_0022__KNOCK)
-              &amp; has_conj2(R_0078_0020__SO_THAT,R_0078_0015__WAS_R_0078_0016__INCLINED)
-              &amp; r_0078_0015__was_r_0078_0016__inclined(R_0078_0015__WAS_R_0078_0016__INCLINED)
-              &amp; has_arg0(R_0078_0015__WAS_R_0078_0016__INCLINED,Z_000_78_A_HARDY_1883_45)
-              &amp; has_arg2(R_0078_0015__WAS_R_0078_0016__INCLINED,Z_000_78_A_HARDY_1883_33)
-              &amp; has_arg1(R_0078_0015__WAS_R_0078_0016__INCLINED,R_0078_0017__TO_R_0078_0018__UNDERTAKE)
-              &amp; r_0078_0017__to_r_0078_0018__undertake(R_0078_0017__TO_R_0078_0018__UNDERTAKE)
-              &amp; has_arg0(R_0078_0017__TO_R_0078_0018__UNDERTAKE,Z_000_78_A_HARDY_1883_33)
-              &amp; has_arg1(R_0078_0017__TO_R_0078_0018__UNDERTAKE,R_0078_0005__A_R_0078_0006__SONG)
-              &amp; has_nim36(R_0078_0015__WAS_R_0078_0016__INCLINED,R_0078_0014__THEN)
-              &amp; r_0078_0014__then(R_0078_0014__THEN)
-              &amp; has_qual37(R_0078_0014__THEN,R_0078_0013__JUST) ) )
-      &amp; r_0078_0003__was_r_0078_0004__suggesting(R_0078_0003__WAS_R_0078_0004__SUGGESTING)
-      &amp; has_r_0078_0007__to_clr22(R_0078_0003__WAS_R_0078_0004__SUGGESTING,R_0078_0008__THE_R_0078_0009__COMPANY)
-      &amp; has_arg1(R_0078_0003__WAS_R_0078_0004__SUGGESTING,R_0078_0005__A_R_0078_0006__SONG)
-      &amp; has_arg0(R_0078_0003__WAS_R_0078_0004__SUGGESTING,R_0078_0001__THE_R_0078_0002__HEDGE__HYPHEN__CARPENTER) ) ).
+    ? [R_78_3_WAS_SUGGESTING,R_78_1_THE_HEDGE_HYPHEN_CARPENTER,R_78_5_A_SONG,R_78_8_THE_COMPANY] :
+      ( the_hedge_hyphen_carpenter(R_78_1_THE_HEDGE_HYPHEN_CARPENTER)
+      &amp; a_song(R_78_5_A_SONG)
+      &amp; the_company(R_78_8_THE_COMPANY)
+      &amp; was_suggesting(R_78_3_WAS_SUGGESTING,R_78_1_THE_HEDGE_HYPHEN_CARPENTER,R_78_5_A_SONG)
+      &amp; to_clr22(R_78_3_WAS_SUGGESTING,R_78_8_THE_COMPANY)
+      &amp; ! [Z_78_A_HARDY_1883_33] :
+          ( true
+         =&gt; ? [R_78_20_SO_THAT,R_78_23_AFFORDED,R_78_21_THE_KNOCK,R_78_24_A_DIVERSION,R_78_25_NOT_UNWELCOME,R_78_15_WAS_INCLINED,Z_78_A_HARDY_1883_45,R_78_17_TO_UNDERTAKE,R_78_14_THEN,R_78_13_JUST] :
+              ( the_knock(R_78_21_THE_KNOCK)
+              &amp; not_unwelcome(R_78_25_NOT_UNWELCOME)
+              &amp; just(R_78_13_JUST)
+              &amp; so_that(R_78_20_SO_THAT)
+              &amp; conj1(R_78_20_SO_THAT,R_78_23_AFFORDED)
+              &amp; afforded(R_78_23_AFFORDED,R_78_21_THE_KNOCK,R_78_24_A_DIVERSION)
+              &amp; a_diversion(R_78_24_A_DIVERSION)
+              &amp; attrib72(R_78_24_A_DIVERSION,R_78_25_NOT_UNWELCOME)
+              &amp; conj2(R_78_20_SO_THAT,R_78_15_WAS_INCLINED)
+              &amp; was_inclined(R_78_15_WAS_INCLINED,Z_78_A_HARDY_1883_45,R_78_17_TO_UNDERTAKE,Z_78_A_HARDY_1883_33)
+              &amp; to_undertake(R_78_17_TO_UNDERTAKE,Z_78_A_HARDY_1883_33,R_78_5_A_SONG)
+              &amp; nim36(R_78_15_WAS_INCLINED,R_78_14_THEN)
+              &amp; then(R_78_14_THEN)
+              &amp; qual37(R_78_14_THEN,R_78_13_JUST) ) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="1527pt" height="387pt"

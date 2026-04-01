@@ -402,31 +402,27 @@ arc(r_0014_0021__a_r_0014_0023__bomb, r_0014_0022__smart, attrib63).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0014_0001__YOU,R_0014_0005__THREE_R_0014_0006__SHIPS,R_0014_0002__START_R_0014_0003__OFF,R_0014_0008__BUT] :
-      ( r_0014_0001__You(R_0014_0001__YOU)
-      &amp; r_0014_0005__three_r_0014_0006__ships(R_0014_0005__THREE_R_0014_0006__SHIPS)
-      &amp; r_0014_0008__but(R_0014_0008__BUT)
-      &amp; ! [R_0014_0011__10_COMMA_000_R_0014_0012__POINTS,R_0014_0014__SCORE] :
-          ( ( r_0014_0011__10_comma_000_r_0014_0012__points(R_0014_0011__10_COMMA_000_R_0014_0012__POINTS)
-            &amp; r_0014_0014__score(R_0014_0014__SCORE)
-            &amp; has_arg1(R_0014_0014__SCORE,R_0014_0011__10_COMMA_000_R_0014_0012__POINTS)
-            &amp; has_arg0(R_0014_0014__SCORE,R_0014_0001__YOU) )
-         =&gt; ? [R_0014_0018__A_R_0014_0019__SHIP,R_0014_0022__SMART,R_0014_0021__A_R_0014_0023__BOMB,R_0014_0020__PLUS,R_0014_0017__GAIN] :
-              ( r_0014_0018__a_r_0014_0019__ship(R_0014_0018__A_R_0014_0019__SHIP)
-              &amp; r_0014_0022__smart(R_0014_0022__SMART)
-              &amp; r_0014_0017__gain(R_0014_0017__GAIN)
-              &amp; has_arg1(R_0014_0017__GAIN,R_0014_0020__PLUS)
-              &amp; r_0014_0020__plus(R_0014_0020__PLUS)
-              &amp; has_conj2(R_0014_0020__PLUS,R_0014_0021__A_R_0014_0023__BOMB)
-              &amp; r_0014_0021__a_r_0014_0023__bomb(R_0014_0021__A_R_0014_0023__BOMB)
-              &amp; has_attrib63(R_0014_0021__A_R_0014_0023__BOMB,R_0014_0022__SMART)
-              &amp; has_conj1(R_0014_0020__PLUS,R_0014_0018__A_R_0014_0019__SHIP)
-              &amp; has_r_0014_0009__for_nim28(R_0014_0017__GAIN,R_0014_0011__10_COMMA_000_R_0014_0012__POINTS)
-              &amp; has_arg0(R_0014_0017__GAIN,R_0014_0001__YOU) ) )
-      &amp; has_conj1(R_0014_0008__BUT,R_0014_0002__START_R_0014_0003__OFF)
-      &amp; r_0014_0002__start_r_0014_0003__off(R_0014_0002__START_R_0014_0003__OFF)
-      &amp; has_r_0014_0004__with_clr14(R_0014_0002__START_R_0014_0003__OFF,R_0014_0005__THREE_R_0014_0006__SHIPS)
-      &amp; has_arg0(R_0014_0002__START_R_0014_0003__OFF,R_0014_0001__YOU) ) ).
+    ? [R_14_8_BUT,R_14_2_START_OFF,R_14_1_YOU,R_14_5_THREE_SHIPS] :
+      ( you(R_14_1_YOU)
+      &amp; three_ships(R_14_5_THREE_SHIPS)
+      &amp; ! [R_14_14_SCORE,R_14_11_10_COMMA_POINTS] :
+          ( ( 10_comma_points(R_14_11_10_COMMA_POINTS)
+            &amp; score(R_14_14_SCORE,R_14_1_YOU,R_14_11_10_COMMA_POINTS) )
+         =&gt; ? [R_14_17_GAIN,R_14_20_PLUS,R_14_18_A_SHIP,R_14_21_A_BOMB,R_14_22_SMART] :
+              ( a_ship(R_14_18_A_SHIP)
+              &amp; smart(R_14_22_SMART)
+              &amp; gain(R_14_17_GAIN,R_14_1_YOU,R_14_20_PLUS)
+              &amp; plus(R_14_20_PLUS)
+              &amp; conj1(R_14_20_PLUS,R_14_18_A_SHIP)
+              &amp; conj2(R_14_20_PLUS,R_14_21_A_BOMB)
+              &amp; a_bomb(R_14_21_A_BOMB)
+              &amp; attrib63(R_14_21_A_BOMB,R_14_22_SMART)
+              &amp; for_nim28(R_14_17_GAIN,R_14_11_10_COMMA_POINTS) ) )
+      &amp; conj2(CONJ2)
+      &amp; but(R_14_8_BUT)
+      &amp; conj1(R_14_8_BUT,R_14_2_START_OFF)
+      &amp; start_off(R_14_2_START_OFF,R_14_1_YOU)
+      &amp; with_clr14(R_14_2_START_OFF,R_14_5_THREE_SHIPS) ) ).
 </pre>
 <br><hr><br>
 <svg width="1021pt" height="478pt"

@@ -612,45 +612,31 @@ arc(z_000_148_a_joyce_1914_71, r_0148_0026__friends, prd).
 </svg>
 <pre>
 fof(formula,axiom,
-    ( ! [R_0148_0026__FRIENDS,R_0148_0028__A_R_0148_0029__BODY,R_0148_0027__THAT_R_0148_0030__CAN_R_0148_0031__TRUST] :
-        ( ( r_0148_0026__friends(R_0148_0026__FRIENDS)
-          &amp; r_0148_0028__a_r_0148_0029__body(R_0148_0028__A_R_0148_0029__BODY)
-          &amp; r_0148_0027__that_r_0148_0030__can_r_0148_0031__trust(R_0148_0027__THAT_R_0148_0030__CAN_R_0148_0031__TRUST)
-          &amp; has_arg0(R_0148_0027__THAT_R_0148_0030__CAN_R_0148_0031__TRUST,R_0148_0028__A_R_0148_0029__BODY)
-          &amp; has_arg1(R_0148_0027__THAT_R_0148_0030__CAN_R_0148_0031__TRUST,R_0148_0026__FRIENDS) )
-       =&gt; ? [R_0148_0010__OLD,R_0148_0009__THE_R_0148_0011__FRIENDS,Z_000_148_A_JOYCE_1914_71] :
-            ( r_0148_0010__old(R_0148_0010__OLD)
-            &amp; z_000_148_a_joyce_1914_71(Z_000_148_A_JOYCE_1914_71)
-            &amp; has_prd(Z_000_148_A_JOYCE_1914_71,R_0148_0026__FRIENDS)
-            &amp; has_arg0(Z_000_148_A_JOYCE_1914_71,R_0148_0009__THE_R_0148_0011__FRIENDS)
-            &amp; r_0148_0009__the_r_0148_0011__friends(R_0148_0009__THE_R_0148_0011__FRIENDS)
-            &amp; has_attrib23(R_0148_0009__THE_R_0148_0011__FRIENDS,R_0148_0010__OLD) ) )
-    &amp; ! [R_0148_0007__FRIENDS] :
-        ( r_0148_0007__friends(R_0148_0007__FRIENDS)
-       =&gt; ! [R_0148_0019__ALL_QUANT] :
-            ( ! [Z_000_148_A_JOYCE_1914_49] :
-                ( z_000_148_a_joyce_1914_49(Z_000_148_A_JOYCE_1914_49)
-               =&gt; ? [Z_000_148_A_JOYCE_1914_57,R_0148_0021__SAID,Z_000_148_A_JOYCE_1914_65,R_0148_0023__DONE,R_0148_0022__AND,R_0148_0020__IS] :
-                    ( z_000_148_a_joyce_1914_57(Z_000_148_A_JOYCE_1914_57)
-                    &amp; z_000_148_a_joyce_1914_65(Z_000_148_A_JOYCE_1914_65)
-                    &amp; r_0148_0020__is(R_0148_0020__IS)
-                    &amp; has_keep_scope(R_0148_0020__IS,R_0148_0022__AND)
-                    &amp; r_0148_0022__and(R_0148_0022__AND)
-                    &amp; has_conj2(R_0148_0022__AND,R_0148_0023__DONE)
-                    &amp; r_0148_0023__done(R_0148_0023__DONE)
-                    &amp; has_arg0(R_0148_0023__DONE,Z_000_148_A_JOYCE_1914_65)
-                    &amp; has_arg1(R_0148_0023__DONE,Z_000_148_A_JOYCE_1914_49)
-                    &amp; has_conj1(R_0148_0022__AND,R_0148_0021__SAID)
-                    &amp; r_0148_0021__said(R_0148_0021__SAID)
-                    &amp; has_arg0(R_0148_0021__SAID,Z_000_148_A_JOYCE_1914_57)
-                    &amp; has_arg1(R_0148_0021__SAID,Z_000_148_A_JOYCE_1914_49) ) )
-           =&gt; ? [R_0148_0010__OLD,R_0148_0009__THE_R_0148_0011__FRIENDS,R_0148_0002__AH_R_0148_0004__THERE_R_0148_0005___APOS_S] :
-                ( r_0148_0010__old(R_0148_0010__OLD)
-                &amp; r_0148_0002__Ah_r_0148_0004__there_r_0148_0005___apos_s(R_0148_0002__AH_R_0148_0004__THERE_R_0148_0005___APOS_S)
-                &amp; has_r_0148_0008__like_clr20(R_0148_0002__AH_R_0148_0004__THERE_R_0148_0005___APOS_S,R_0148_0009__THE_R_0148_0011__FRIENDS)
-                &amp; r_0148_0009__the_r_0148_0011__friends(R_0148_0009__THE_R_0148_0011__FRIENDS)
-                &amp; has_attrib23(R_0148_0009__THE_R_0148_0011__FRIENDS,R_0148_0010__OLD)
-                &amp; has_arg0(R_0148_0002__AH_R_0148_0004__THERE_R_0148_0005___APOS_S,R_0148_0007__FRIENDS) ) ) ) ) ).
+    ( ! [R_148_7_FRIENDS] :
+        ( friends(R_148_7_FRIENDS)
+       =&gt; ( ! [Z_148_A_JOYCE_1914_49] :
+              ( true
+             =&gt; ~ ? [R_148_22_AND,R_148_21_SAID,Z_148_A_JOYCE_1914_57,R_148_23_DONE,Z_148_A_JOYCE_1914_65] :
+                    ( and(R_148_22_AND)
+                    &amp; conj1(R_148_22_AND,R_148_21_SAID)
+                    &amp; said(R_148_21_SAID,Z_148_A_JOYCE_1914_57,Z_148_A_JOYCE_1914_49)
+                    &amp; conj2(R_148_22_AND,R_148_23_DONE)
+                    &amp; done(R_148_23_DONE,Z_148_A_JOYCE_1914_65,Z_148_A_JOYCE_1914_49) ) )
+         =&gt; ? [R_148_2_AH_THERE_APOS_S,R_148_9_THE_FRIENDS,R_148_10_OLD] :
+              ( old(R_148_10_OLD)
+              &amp; ah_there_apos_s(R_148_2_AH_THERE_APOS_S,R_148_7_FRIENDS)
+              &amp; like_clr20(R_148_2_AH_THERE_APOS_S,R_148_9_THE_FRIENDS)
+              &amp; the_friends(R_148_9_THE_FRIENDS)
+              &amp; attrib23(R_148_9_THE_FRIENDS,R_148_10_OLD) ) ) )
+    &amp; ! [R_148_27_THAT_CAN_TRUST,R_148_28_A_BODY,R_148_26_FRIENDS] :
+        ( ( a_body(R_148_28_A_BODY)
+          &amp; friends(R_148_26_FRIENDS)
+          &amp; that_can_trust(R_148_27_THAT_CAN_TRUST,R_148_28_A_BODY,R_148_26_FRIENDS) )
+       =&gt; ? [Z_148_A_JOYCE_1914_71,R_148_9_THE_FRIENDS,R_148_10_OLD] :
+            ( old(R_148_10_OLD)
+            &amp; z_148_a_joyce_1914_71(Z_148_A_JOYCE_1914_71,R_148_9_THE_FRIENDS,R_148_26_FRIENDS)
+            &amp; the_friends(R_148_9_THE_FRIENDS)
+            &amp; attrib23(R_148_9_THE_FRIENDS,R_148_10_OLD) ) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="1501pt" height="387pt"

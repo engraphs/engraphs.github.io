@@ -343,27 +343,22 @@ arc(r_0043_0017__destination, r_0043_0007__they, gen).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0043_0001__ALASTAIR,R_0043_0002__TALKED] :
-      ( r_0043_0001__Alastair(R_0043_0001__ALASTAIR)
-      &amp; r_0043_0002__talked(R_0043_0002__TALKED)
-      &amp; ! [R_0043_0008__WERE,R_0043_0007__THEY,R_0043_0009__STILL,R_0043_0012__FOUR_R_0043_0013__HUNDRED_R_0043_0014__MILES,R_0043_0010__MORE,R_0043_0017__DESTINATION] :
-          ( ( r_0043_0007__they(R_0043_0007__THEY)
-            &amp; r_0043_0009__still(R_0043_0009__STILL)
-            &amp; r_0043_0012__four_r_0043_0013__hundred_r_0043_0014__miles(R_0043_0012__FOUR_R_0043_0013__HUNDRED_R_0043_0014__MILES)
-            &amp; r_0043_0008__were(R_0043_0008__WERE)
-            &amp; has_r_0043_0015__from_nim43(R_0043_0008__WERE,R_0043_0017__DESTINATION)
-            &amp; r_0043_0017__destination(R_0043_0017__DESTINATION)
-            &amp; has_gen(R_0043_0017__DESTINATION,R_0043_0007__THEY)
-            &amp; has_prd(R_0043_0008__WERE,R_0043_0010__MORE)
-            &amp; r_0043_0010__more(R_0043_0010__MORE)
-            &amp; has_r_0043_0011__than(R_0043_0010__MORE,R_0043_0012__FOUR_R_0043_0013__HUNDRED_R_0043_0014__MILES)
-            &amp; has_nim24(R_0043_0008__WERE,R_0043_0009__STILL)
-            &amp; has_arg0(R_0043_0008__WERE,R_0043_0007__THEY) )
-         =&gt; ? [Z_000_43_A_LOB_N01_10,R_0043_0004__RUNNING_R_0043_0005__IN] :
-              ( z_000_43_a_lob_n01_10(Z_000_43_A_LOB_N01_10)
-              &amp; r_0043_0004__running_r_0043_0005__in(R_0043_0004__RUNNING_R_0043_0005__IN)
-              &amp; has_arg0(R_0043_0004__RUNNING_R_0043_0005__IN,Z_000_43_A_LOB_N01_10) ) )
-      &amp; has_arg0(R_0043_0002__TALKED,R_0043_0001__ALASTAIR) ) ).
+    ? [R_43_2_TALKED,R_43_1_ALASTAIR] :
+      ( alastair(R_43_1_ALASTAIR)
+      &amp; ! [R_43_8_WERE,R_43_9_STILL,R_43_10_MORE,R_43_12_FOUR_HUNDRED_MILES,R_43_17_DESTINATION,R_43_7_THEY] :
+          ( ( still(R_43_9_STILL)
+            &amp; four_hundred_miles(R_43_12_FOUR_HUNDRED_MILES)
+            &amp; they(R_43_7_THEY)
+            &amp; were(R_43_8_WERE,R_43_7_THEY,R_43_10_MORE)
+            &amp; more(R_43_10_MORE)
+            &amp; than(R_43_10_MORE,R_43_12_FOUR_HUNDRED_MILES)
+            &amp; nim24(R_43_8_WERE,R_43_9_STILL)
+            &amp; from_nim43(R_43_8_WERE,R_43_17_DESTINATION)
+            &amp; destination(R_43_17_DESTINATION)
+            &amp; gen(R_43_17_DESTINATION,R_43_7_THEY) )
+         =&gt; ? [R_43_4_RUNNING_IN,Z_43_A_LOB_N01_10] : running_in(R_43_4_RUNNING_IN,Z_43_A_LOB_N01_10) )
+      &amp; of_clr10(R_43_3_OF_CLR10)
+      &amp; talked(R_43_2_TALKED,R_43_1_ALASTAIR) ) ).
 </pre>
 <br><hr><br>
 <svg width="837pt" height="432pt"

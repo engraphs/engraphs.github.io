@@ -276,24 +276,23 @@ arc(r_0027_0011__fever, r_0027_0010__hemorrhagic, attrib31).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0027_0001__SEVERITY,R_0027_0004__INFLUENZA__HYPHEN__LIKE,R_0027_0005__SYMPTOMS,R_0027_0007__SEVERE,R_0027_0008__HEPATITIS,R_0027_0010__HEMORRHAGIC,R_0027_0011__FEVER,R_0027_0009__AND,R_0027_0002__RANGES] :
-      ( r_0027_0001__severity(R_0027_0001__SEVERITY)
-      &amp; r_0027_0004__influenza__hyphen__like(R_0027_0004__INFLUENZA__HYPHEN__LIKE)
-      &amp; r_0027_0007__severe(R_0027_0007__SEVERE)
-      &amp; r_0027_0010__hemorrhagic(R_0027_0010__HEMORRHAGIC)
-      &amp; r_0027_0002__ranges(R_0027_0002__RANGES)
-      &amp; has_r_0027_0006__to_clr19(R_0027_0002__RANGES,R_0027_0009__AND)
-      &amp; r_0027_0009__and(R_0027_0009__AND)
-      &amp; has_conj2(R_0027_0009__AND,R_0027_0011__FEVER)
-      &amp; r_0027_0011__fever(R_0027_0011__FEVER)
-      &amp; has_attrib31(R_0027_0011__FEVER,R_0027_0010__HEMORRHAGIC)
-      &amp; has_conj1(R_0027_0009__AND,R_0027_0008__HEPATITIS)
-      &amp; r_0027_0008__hepatitis(R_0027_0008__HEPATITIS)
-      &amp; has_attrib22(R_0027_0008__HEPATITIS,R_0027_0007__SEVERE)
-      &amp; has_r_0027_0003__from_clr10(R_0027_0002__RANGES,R_0027_0005__SYMPTOMS)
-      &amp; r_0027_0005__symptoms(R_0027_0005__SYMPTOMS)
-      &amp; has_attrib11(R_0027_0005__SYMPTOMS,R_0027_0004__INFLUENZA__HYPHEN__LIKE)
-      &amp; has_arg0(R_0027_0002__RANGES,R_0027_0001__SEVERITY) ) ).
+    ? [R_27_2_RANGES,R_27_1_SEVERITY,R_27_5_SYMPTOMS,R_27_4_INFLUENZA_HYPHEN_LIKE,R_27_9_AND,R_27_8_HEPATITIS,R_27_7_SEVERE,R_27_11_FEVER,R_27_10_HEMORRHAGIC] :
+      ( severity(R_27_1_SEVERITY)
+      &amp; influenza_hyphen_like(R_27_4_INFLUENZA_HYPHEN_LIKE)
+      &amp; severe(R_27_7_SEVERE)
+      &amp; hemorrhagic(R_27_10_HEMORRHAGIC)
+      &amp; ranges(R_27_2_RANGES,R_27_1_SEVERITY)
+      &amp; from_clr10(R_27_2_RANGES,R_27_5_SYMPTOMS)
+      &amp; symptoms(R_27_5_SYMPTOMS)
+      &amp; attrib11(R_27_5_SYMPTOMS,R_27_4_INFLUENZA_HYPHEN_LIKE)
+      &amp; to_clr19(R_27_2_RANGES,R_27_9_AND)
+      &amp; and(R_27_9_AND)
+      &amp; conj1(R_27_9_AND,R_27_8_HEPATITIS)
+      &amp; hepatitis(R_27_8_HEPATITIS)
+      &amp; attrib22(R_27_8_HEPATITIS,R_27_7_SEVERE)
+      &amp; conj2(R_27_9_AND,R_27_11_FEVER)
+      &amp; fever(R_27_11_FEVER)
+      &amp; attrib31(R_27_11_FEVER,R_27_10_HEMORRHAGIC) ) ).
 </pre>
 <br><hr><br>
 <svg width="674pt" height="387pt"

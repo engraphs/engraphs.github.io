@@ -413,31 +413,23 @@ arc(r_0008_0025__mutate, r_0008_0022__the_r_0008_0023__raider, arg0).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0008_0006__A_R_0008_0007__LIFE_R_0008_0009__FORM,R_0008_0011__THE_R_0008_0012__RAIDER,R_0008_0013__CARRYING] :
-      ( r_0008_0006__a_r_0008_0007__life_r_0008_0009__form(R_0008_0006__A_R_0008_0007__LIFE_R_0008_0009__FORM)
-      &amp; r_0008_0011__the_r_0008_0012__raider(R_0008_0011__THE_R_0008_0012__RAIDER)
-      &amp; r_0008_0013__carrying(R_0008_0013__CARRYING)
-      &amp; has_arg0(R_0008_0013__CARRYING,R_0008_0011__THE_R_0008_0012__RAIDER)
-      &amp; has_arg1(R_0008_0013__CARRYING,R_0008_0006__A_R_0008_0007__LIFE_R_0008_0009__FORM)
-      &amp; ! [R_0008_0004__N_APOS_T] :
-          ( ~ ? [R_0008_0002__YOU,R_0008_0003__DO_R_0008_0005__RESCUE,R_0008_0019__THE_R_0008_0020__SCREEN,R_0008_0016__THE_R_0008_0017__TOP,R_0008_0015__REACHES,R_0008_0010__BEFORE] :
-                ( r_0008_0002__you(R_0008_0002__YOU)
-                &amp; r_0008_0019__the_r_0008_0020__screen(R_0008_0019__THE_R_0008_0020__SCREEN)
-                &amp; r_0008_0010__before(R_0008_0010__BEFORE)
-                &amp; has_conj1(R_0008_0010__BEFORE,R_0008_0015__REACHES)
-                &amp; r_0008_0015__reaches(R_0008_0015__REACHES)
-                &amp; has_arg1(R_0008_0015__REACHES,R_0008_0016__THE_R_0008_0017__TOP)
-                &amp; r_0008_0016__the_r_0008_0017__top(R_0008_0016__THE_R_0008_0017__TOP)
-                &amp; has_r_0008_0018__of(R_0008_0016__THE_R_0008_0017__TOP,R_0008_0019__THE_R_0008_0020__SCREEN)
-                &amp; has_arg0(R_0008_0015__REACHES,R_0008_0011__THE_R_0008_0012__RAIDER)
-                &amp; has_conj2(R_0008_0010__BEFORE,R_0008_0003__DO_R_0008_0005__RESCUE)
-                &amp; r_0008_0003__do_r_0008_0005__rescue(R_0008_0003__DO_R_0008_0005__RESCUE)
-                &amp; has_arg1(R_0008_0003__DO_R_0008_0005__RESCUE,R_0008_0006__A_R_0008_0007__LIFE_R_0008_0009__FORM)
-                &amp; has_arg0(R_0008_0003__DO_R_0008_0005__RESCUE,R_0008_0002__YOU) )
-         =&gt; ? [R_0008_0022__THE_R_0008_0023__RAIDER,R_0008_0024__WILL_R_0008_0025__MUTATE] :
-              ( r_0008_0022__the_r_0008_0023__raider(R_0008_0022__THE_R_0008_0023__RAIDER)
-              &amp; r_0008_0024__will_r_0008_0025__mutate(R_0008_0024__WILL_R_0008_0025__MUTATE)
-              &amp; has_arg0(R_0008_0024__WILL_R_0008_0025__MUTATE,R_0008_0022__THE_R_0008_0023__RAIDER) ) ) ) ).
+    ? [R_8_13_CARRYING,R_8_11_THE_RAIDER,R_8_6_A_LIFE_FORM] :
+      ( the_raider(R_8_11_THE_RAIDER)
+      &amp; a_life_form(R_8_6_A_LIFE_FORM)
+      &amp; ( ~ ? [R_8_10_BEFORE,R_8_15_REACHES,R_8_16_THE_TOP,R_8_19_THE_SCREEN,R_8_3_DO_RESCUE,R_8_2_YOU] :
+              ( the_screen(R_8_19_THE_SCREEN)
+              &amp; you(R_8_2_YOU)
+              &amp; before(R_8_10_BEFORE)
+              &amp; conj1(R_8_10_BEFORE,R_8_15_REACHES)
+              &amp; reaches(R_8_15_REACHES,R_8_11_THE_RAIDER,R_8_16_THE_TOP)
+              &amp; the_top(R_8_16_THE_TOP)
+              &amp; of(R_8_16_THE_TOP,R_8_19_THE_SCREEN)
+              &amp; conj2(R_8_10_BEFORE,R_8_3_DO_RESCUE)
+              &amp; do_rescue(R_8_3_DO_RESCUE,R_8_2_YOU,R_8_6_A_LIFE_FORM) )
+       =&gt; ? [R_8_24_WILL_MUTATE,R_8_22_THE_RAIDER] :
+            ( the_raider(R_8_22_THE_RAIDER)
+            &amp; will_mutate(R_8_24_WILL_MUTATE,R_8_22_THE_RAIDER) ) )
+      &amp; carrying(R_8_13_CARRYING,R_8_11_THE_RAIDER,R_8_6_A_LIFE_FORM) ) ).
 </pre>
 <br><hr><br>
 <svg width="1072pt" height="432pt"

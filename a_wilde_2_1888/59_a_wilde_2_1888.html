@@ -468,36 +468,30 @@ arc(r_0059_0020__became, r_0059_0022__again, nim64).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0059_0018__THE_R_0059_0019__GARDEN,R_0059_0021__WINTER,R_0059_0022__AGAIN,R_0059_0020__BECAME,R_0059_0017__AND] :
-      ( r_0059_0018__the_r_0059_0019__garden(R_0059_0018__THE_R_0059_0019__GARDEN)
-      &amp; r_0059_0021__winter(R_0059_0021__WINTER)
-      &amp; r_0059_0022__again(R_0059_0022__AGAIN)
-      &amp; r_0059_0017__and(R_0059_0017__AND)
-      &amp; has_conj2(R_0059_0017__AND,R_0059_0020__BECAME)
-      &amp; r_0059_0020__became(R_0059_0020__BECAME)
-      &amp; has_nim64(R_0059_0020__BECAME,R_0059_0022__AGAIN)
-      &amp; has_prd(R_0059_0020__BECAME,R_0059_0021__WINTER)
-      &amp; has_arg0(R_0059_0020__BECAME,R_0059_0018__THE_R_0059_0019__GARDEN)
-      &amp; ! [R_0059_0005__SAW,R_0059_0003__THE_R_0059_0004__CHILDREN,R_0059_0006__HIM] :
-          ( ( r_0059_0003__the_r_0059_0004__children(R_0059_0003__THE_R_0059_0004__CHILDREN)
-            &amp; r_0059_0006__him(R_0059_0006__HIM)
-            &amp; r_0059_0005__saw(R_0059_0005__SAW)
-            &amp; has_arg1(R_0059_0005__SAW,R_0059_0006__HIM)
-            &amp; has_arg0(R_0059_0005__SAW,R_0059_0003__THE_R_0059_0004__CHILDREN) )
-         =&gt; ? [R_0059_0013__ALL,R_0059_0015__AWAY,R_0059_0011__THAT_R_0059_0014__RAN,R_0059_0009__SO,R_0059_0010__FRIGHTENED,R_0059_0001__BUT_R_0059_0008__WERE] :
-              ( r_0059_0013__all(R_0059_0013__ALL)
-              &amp; r_0059_0015__away(R_0059_0015__AWAY)
-              &amp; r_0059_0001__But_r_0059_0008__were(R_0059_0001__BUT_R_0059_0008__WERE)
-              &amp; has_prd(R_0059_0001__BUT_R_0059_0008__WERE,R_0059_0010__FRIGHTENED)
-              &amp; r_0059_0010__frightened(R_0059_0010__FRIGHTENED)
-              &amp; has_qual26(R_0059_0010__FRIGHTENED,R_0059_0009__SO)
-              &amp; r_0059_0009__so(R_0059_0009__SO)
-              &amp; has_emb34(R_0059_0009__SO,R_0059_0011__THAT_R_0059_0014__RAN)
-              &amp; r_0059_0011__that_r_0059_0014__ran(R_0059_0011__THAT_R_0059_0014__RAN)
-              &amp; has_clr45(R_0059_0011__THAT_R_0059_0014__RAN,R_0059_0015__AWAY)
-              &amp; has_nim40(R_0059_0011__THAT_R_0059_0014__RAN,R_0059_0013__ALL)
-              &amp; has_arg0(R_0059_0011__THAT_R_0059_0014__RAN,R_0059_0003__THE_R_0059_0004__CHILDREN)
-              &amp; has_arg0(R_0059_0001__BUT_R_0059_0008__WERE,R_0059_0003__THE_R_0059_0004__CHILDREN) ) ) ) ).
+    ? [R_59_17_AND,R_59_20_BECAME,R_59_18_THE_GARDEN,R_59_22_AGAIN,R_59_21_WINTER] :
+      ( the_garden(R_59_18_THE_GARDEN)
+      &amp; again(R_59_22_AGAIN)
+      &amp; winter(R_59_21_WINTER)
+      &amp; ! [R_59_5_SAW,R_59_3_THE_CHILDREN,R_59_6_HIM] :
+          ( ( the_children(R_59_3_THE_CHILDREN)
+            &amp; him(R_59_6_HIM)
+            &amp; saw(R_59_5_SAW,R_59_3_THE_CHILDREN,R_59_6_HIM) )
+         =&gt; ? [R_59_1_BUT_WERE,R_59_10_FRIGHTENED,R_59_9_SO,R_59_11_THAT_RAN,R_59_15_AWAY,R_59_13_ALL] :
+              ( away(R_59_15_AWAY)
+              &amp; all(R_59_13_ALL)
+              &amp; but_were(R_59_1_BUT_WERE,R_59_3_THE_CHILDREN,R_59_10_FRIGHTENED)
+              &amp; frightened(R_59_10_FRIGHTENED)
+              &amp; qual26(R_59_10_FRIGHTENED,R_59_9_SO)
+              &amp; so(R_59_9_SO)
+              &amp; emb34(R_59_9_SO,R_59_11_THAT_RAN)
+              &amp; that_ran(R_59_11_THAT_RAN,R_59_3_THE_CHILDREN)
+              &amp; clr45(R_59_11_THAT_RAN,R_59_15_AWAY)
+              &amp; nim40(R_59_11_THAT_RAN,R_59_13_ALL) ) )
+      &amp; conj1(CONJ1)
+      &amp; and(R_59_17_AND)
+      &amp; conj2(R_59_17_AND,R_59_20_BECAME)
+      &amp; became(R_59_20_BECAME,R_59_18_THE_GARDEN,R_59_21_WINTER)
+      &amp; nim64(R_59_20_BECAME,R_59_22_AGAIN) ) ).
 </pre>
 <br><hr><br>
 <svg width="1091pt" height="387pt"

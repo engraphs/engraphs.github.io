@@ -521,37 +521,34 @@ arc(r_0068_0025__trouble, r_0068_0024__serious, attrib69).
 </svg>
 <pre>
 fof(formula,axiom,
-    ! [R_0068_0010__AND,R_0068_0011__BADGERS,R_0068_0013__HEDGEHOGS,R_0068_0012__AND,R_0068_0017__SCARCE,R_0068_0016__THESE_R_0068_0018__RESOURCES,R_0068_0014__COMPETE] :
-      ( ( r_0068_0011__badgers(R_0068_0011__BADGERS)
-        &amp; r_0068_0013__hedgehogs(R_0068_0013__HEDGEHOGS)
-        &amp; r_0068_0017__scarce(R_0068_0017__SCARCE)
-        &amp; r_0068_0010__and(R_0068_0010__AND)
-        &amp; has_conj2(R_0068_0010__AND,R_0068_0014__COMPETE)
-        &amp; r_0068_0014__compete(R_0068_0014__COMPETE)
-        &amp; has_r_0068_0015__for_clr47(R_0068_0014__COMPETE,R_0068_0016__THESE_R_0068_0018__RESOURCES)
-        &amp; r_0068_0016__these_r_0068_0018__resources(R_0068_0016__THESE_R_0068_0018__RESOURCES)
-        &amp; has_attrib50(R_0068_0016__THESE_R_0068_0018__RESOURCES,R_0068_0017__SCARCE)
-        &amp; has_arg0(R_0068_0014__COMPETE,R_0068_0012__AND)
-        &amp; r_0068_0012__and(R_0068_0012__AND)
-        &amp; has_conj2(R_0068_0012__AND,R_0068_0013__HEDGEHOGS)
-        &amp; has_conj1(R_0068_0012__AND,R_0068_0011__BADGERS)
-        &amp; ! [R_0068_0008__REFUGE,R_0068_0007__SAFE] :
-            ( ( r_0068_0007__safe(R_0068_0007__SAFE)
-              &amp; r_0068_0008__refuge(R_0068_0008__REFUGE)
-              &amp; has_attrib20(R_0068_0008__REFUGE,R_0068_0007__SAFE) )
-           =&gt; ? [R_0068_0004__THERE_R_0068_0005__IS] :
-                ( r_0068_0004__there_r_0068_0005__is(R_0068_0004__THERE_R_0068_0005__IS)
-                &amp; has_arg0(R_0068_0004__THERE_R_0068_0005__IS,R_0068_0008__REFUGE) ) ) )
-     =&gt; ? [R_0068_0001__HOWEVER,R_0068_0020__HEDGEHOGS,R_0068_0024__SERIOUS,R_0068_0025__TROUBLE,R_0068_0021__MAY_R_0068_0022__BE] :
-          ( r_0068_0001__However(R_0068_0001__HOWEVER)
-          &amp; r_0068_0020__hedgehogs(R_0068_0020__HEDGEHOGS)
-          &amp; r_0068_0024__serious(R_0068_0024__SERIOUS)
-          &amp; r_0068_0021__may_r_0068_0022__be(R_0068_0021__MAY_R_0068_0022__BE)
-          &amp; has_r_0068_0023__in_clr68(R_0068_0021__MAY_R_0068_0022__BE,R_0068_0025__TROUBLE)
-          &amp; r_0068_0025__trouble(R_0068_0025__TROUBLE)
-          &amp; has_attrib69(R_0068_0025__TROUBLE,R_0068_0024__SERIOUS)
-          &amp; has_arg0(R_0068_0021__MAY_R_0068_0022__BE,R_0068_0020__HEDGEHOGS)
-          &amp; has_nim2(R_0068_0021__MAY_R_0068_0022__BE,R_0068_0001__HOWEVER) ) ) ).
+    ! [R_68_10_AND,R_68_14_COMPETE,R_68_12_AND,R_68_11_BADGERS,R_68_13_HEDGEHOGS,R_68_16_THESE_RESOURCES,R_68_17_SCARCE] :
+      ( ( badgers(R_68_11_BADGERS)
+        &amp; hedgehogs(R_68_13_HEDGEHOGS)
+        &amp; scarce(R_68_17_SCARCE)
+        &amp; ! [R_68_8_REFUGE,R_68_7_SAFE] :
+            ( ( safe(R_68_7_SAFE)
+              &amp; refuge(R_68_8_REFUGE)
+              &amp; attrib20(R_68_8_REFUGE,R_68_7_SAFE) )
+           =&gt; ? [R_68_4_THERE_IS] : there_is(R_68_4_THERE_IS,R_68_8_REFUGE) )
+        &amp; conj1(CONJ1)
+        &amp; and(R_68_10_AND)
+        &amp; conj2(R_68_10_AND,R_68_14_COMPETE)
+        &amp; compete(R_68_14_COMPETE,R_68_12_AND)
+        &amp; and(R_68_12_AND)
+        &amp; conj1(R_68_12_AND,R_68_11_BADGERS)
+        &amp; conj2(R_68_12_AND,R_68_13_HEDGEHOGS)
+        &amp; for_clr47(R_68_14_COMPETE,R_68_16_THESE_RESOURCES)
+        &amp; these_resources(R_68_16_THESE_RESOURCES)
+        &amp; attrib50(R_68_16_THESE_RESOURCES,R_68_17_SCARCE) )
+     =&gt; ? [R_68_21_MAY_BE,R_68_20_HEDGEHOGS,R_68_1_HOWEVER,R_68_25_TROUBLE,R_68_24_SERIOUS] :
+          ( hedgehogs(R_68_20_HEDGEHOGS)
+          &amp; however(R_68_1_HOWEVER)
+          &amp; serious(R_68_24_SERIOUS)
+          &amp; may_be(R_68_21_MAY_BE,R_68_20_HEDGEHOGS)
+          &amp; nim2(R_68_21_MAY_BE,R_68_1_HOWEVER)
+          &amp; in_clr68(R_68_21_MAY_BE,R_68_25_TROUBLE)
+          &amp; trouble(R_68_25_TROUBLE)
+          &amp; attrib69(R_68_25_TROUBLE,R_68_24_SERIOUS) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="1199pt" height="523pt"

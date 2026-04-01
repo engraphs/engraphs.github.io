@@ -450,34 +450,25 @@ arc(z_000_29_a_fce_0102_2000_06_35, r_0029_0014__explaining, restriction).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0029_0002__A_R_0029_0003__LETTER,R_0029_0005__A_R_0029_0006__FRIEND,Z_000_29_A_FCE_0102_2000_06_1,R_0029_0001__WRITE,R_0029_0015__WHY,R_0029_0016__YOUR,R_0029_0017__FRIEND,R_0029_0021__THE_R_0029_0022__PROGRAMME,R_0029_0018__SHOULD_R_0029_0019__LISTEN,R_0029_0014__EXPLAINING,Z_000_29_A_FCE_0102_2000_06_35] :
-      ( r_0029_0002__a_r_0029_0003__letter(R_0029_0002__A_R_0029_0003__LETTER)
-      &amp; r_0029_0005__a_r_0029_0006__friend(R_0029_0005__A_R_0029_0006__FRIEND)
-      &amp; r_0029_0015__why(R_0029_0015__WHY)
-      &amp; r_0029_0016__your(R_0029_0016__YOUR)
-      &amp; r_0029_0021__the_r_0029_0022__programme(R_0029_0021__THE_R_0029_0022__PROGRAMME)
-      &amp; z_000_29_a_fce_0102_2000_06_1(Z_000_29_A_FCE_0102_2000_06_1)
-      &amp; z_000_29_a_fce_0102_2000_06_35(Z_000_29_A_FCE_0102_2000_06_35)
-      &amp; has_conj1(Z_000_29_A_FCE_0102_2000_06_35,R_0029_0014__EXPLAINING)
-      &amp; r_0029_0014__explaining(R_0029_0014__EXPLAINING)
-      &amp; has_arg0(R_0029_0014__EXPLAINING,Z_000_29_A_FCE_0102_2000_06_1)
-      &amp; has_arg1(R_0029_0014__EXPLAINING,R_0029_0018__SHOULD_R_0029_0019__LISTEN)
-      &amp; r_0029_0018__should_r_0029_0019__listen(R_0029_0018__SHOULD_R_0029_0019__LISTEN)
-      &amp; has_r_0029_0020__to_clr60(R_0029_0018__SHOULD_R_0029_0019__LISTEN,R_0029_0021__THE_R_0029_0022__PROGRAMME)
-      &amp; has_arg0(R_0029_0018__SHOULD_R_0029_0019__LISTEN,R_0029_0017__FRIEND)
-      &amp; r_0029_0017__friend(R_0029_0017__FRIEND)
-      &amp; has_gen(R_0029_0017__FRIEND,R_0029_0016__YOUR)
-      &amp; has_nim53(R_0029_0018__SHOULD_R_0029_0019__LISTEN,R_0029_0015__WHY)
-      &amp; has_conj2(Z_000_29_A_FCE_0102_2000_06_35,R_0029_0001__WRITE)
-      &amp; r_0029_0001__Write(R_0029_0001__WRITE)
-      &amp; has_arg0(R_0029_0001__WRITE,Z_000_29_A_FCE_0102_2000_06_1)
-      &amp; has_arg2(R_0029_0001__WRITE,R_0029_0005__A_R_0029_0006__FRIEND)
-      &amp; has_arg1(R_0029_0001__WRITE,R_0029_0002__A_R_0029_0003__LETTER)
-      &amp; ~ ? [R_0029_0011__THE_R_0029_0012__BOOK,R_0029_0008__HAS_R_0029_0010__READ] :
-            ( r_0029_0011__the_r_0029_0012__book(R_0029_0011__THE_R_0029_0012__BOOK)
-            &amp; r_0029_0008__has_r_0029_0010__read(R_0029_0008__HAS_R_0029_0010__READ)
-            &amp; has_arg1(R_0029_0008__HAS_R_0029_0010__READ,R_0029_0011__THE_R_0029_0012__BOOK)
-            &amp; has_arg0(R_0029_0008__HAS_R_0029_0010__READ,R_0029_0005__A_R_0029_0006__FRIEND) ) ) ).
+    ? [Z_29_A_FCE_102_2000_6_35,R_29_14_EXPLAINING,R_29_18_SHOULD_LISTEN,R_29_17_FRIEND,R_29_16_YOUR,R_29_15_WHY,R_29_21_THE_PROGRAMME,R_29_1_WRITE,Z_29_A_FCE_102_2000_6_1,R_29_2_A_LETTER,R_29_5_A_FRIEND] :
+      ( your(R_29_16_YOUR)
+      &amp; why(R_29_15_WHY)
+      &amp; the_programme(R_29_21_THE_PROGRAMME)
+      &amp; a_letter(R_29_2_A_LETTER)
+      &amp; a_friend(R_29_5_A_FRIEND)
+      &amp; ~ ? [R_29_8_HAS_READ,R_29_11_THE_BOOK] :
+            ( the_book(R_29_11_THE_BOOK)
+            &amp; has_read(R_29_8_HAS_READ,R_29_5_A_FRIEND,R_29_11_THE_BOOK) )
+      &amp; z_29_a_fce_102_2000_6_35(Z_29_A_FCE_102_2000_6_35)
+      &amp; conj1(Z_29_A_FCE_102_2000_6_35,R_29_14_EXPLAINING)
+      &amp; explaining(R_29_14_EXPLAINING,Z_29_A_FCE_102_2000_6_1,R_29_18_SHOULD_LISTEN)
+      &amp; should_listen(R_29_18_SHOULD_LISTEN,R_29_17_FRIEND)
+      &amp; friend(R_29_17_FRIEND)
+      &amp; gen(R_29_17_FRIEND,R_29_16_YOUR)
+      &amp; nim53(R_29_18_SHOULD_LISTEN,R_29_15_WHY)
+      &amp; to_clr60(R_29_18_SHOULD_LISTEN,R_29_21_THE_PROGRAMME)
+      &amp; conj2(Z_29_A_FCE_102_2000_6_35,R_29_1_WRITE)
+      &amp; write(R_29_1_WRITE,Z_29_A_FCE_102_2000_6_1,R_29_2_A_LETTER,R_29_5_A_FRIEND) ) ).
 </pre>
 <br><hr><br>
 <svg width="1047pt" height="432pt"

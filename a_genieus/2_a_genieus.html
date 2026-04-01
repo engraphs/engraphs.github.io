@@ -362,27 +362,20 @@ arc(r_0002_0023__hand, r_0002_0008__daughter, gen).
 </svg>
 <pre>
 fof(formula,axiom,
-    ! [R_0002_0004__WANT,R_0002_0003__YOU,R_0002_0007__MY,R_0002_0008__DAUGHTER,R_0002_0005__TO_R_0002_0006__MARRY] :
-      ( ( r_0002_0003__you(R_0002_0003__YOU)
-        &amp; r_0002_0007__my(R_0002_0007__MY)
-        &amp; r_0002_0004__want(R_0002_0004__WANT)
-        &amp; has_arg1(R_0002_0004__WANT,R_0002_0005__TO_R_0002_0006__MARRY)
-        &amp; r_0002_0005__to_r_0002_0006__marry(R_0002_0005__TO_R_0002_0006__MARRY)
-        &amp; has_arg1(R_0002_0005__TO_R_0002_0006__MARRY,R_0002_0008__DAUGHTER)
-        &amp; r_0002_0008__daughter(R_0002_0008__DAUGHTER)
-        &amp; has_gen(R_0002_0008__DAUGHTER,R_0002_0007__MY)
-        &amp; has_arg0(R_0002_0005__TO_R_0002_0006__MARRY,R_0002_0003__YOU)
-        &amp; has_arg0(R_0002_0004__WANT,R_0002_0003__YOU) )
-     =&gt; ? [R_0002_0016__YOU,R_0002_0023__HAND,R_0002_0020__WORTHY,R_0002_0017__MUST_R_0002_0018__PROVE] :
-          ( r_0002_0016__you(R_0002_0016__YOU)
-          &amp; r_0002_0017__must_r_0002_0018__prove(R_0002_0017__MUST_R_0002_0018__PROVE)
-          &amp; has_prd(R_0002_0017__MUST_R_0002_0018__PROVE,R_0002_0020__WORTHY)
-          &amp; r_0002_0020__worthy(R_0002_0020__WORTHY)
-          &amp; has_r_0002_0021__of(R_0002_0020__WORTHY,R_0002_0023__HAND)
-          &amp; r_0002_0023__hand(R_0002_0023__HAND)
-          &amp; has_gen(R_0002_0023__HAND,R_0002_0008__DAUGHTER)
-          &amp; has_arg1(R_0002_0017__MUST_R_0002_0018__PROVE,R_0002_0016__YOU)
-          &amp; has_arg0(R_0002_0017__MUST_R_0002_0018__PROVE,R_0002_0016__YOU) ) ) ).
+    ! [R_2_4_WANT,R_2_5_TO_MARRY,R_2_3_YOU,R_2_8_DAUGHTER,R_2_7_MY] :
+      ( ( you(R_2_3_YOU)
+        &amp; my(R_2_7_MY)
+        &amp; want(R_2_4_WANT,R_2_3_YOU,R_2_5_TO_MARRY)
+        &amp; to_marry(R_2_5_TO_MARRY,R_2_3_YOU,R_2_8_DAUGHTER)
+        &amp; daughter(R_2_8_DAUGHTER)
+        &amp; gen(R_2_8_DAUGHTER,R_2_7_MY) )
+     =&gt; ? [R_2_17_MUST_PROVE,R_2_16_YOU,R_2_20_WORTHY,R_2_23_HAND] :
+          ( you(R_2_16_YOU)
+          &amp; must_prove(R_2_17_MUST_PROVE,R_2_16_YOU,R_2_16_YOU,R_2_20_WORTHY)
+          &amp; worthy(R_2_20_WORTHY)
+          &amp; of(R_2_20_WORTHY,R_2_23_HAND)
+          &amp; hand(R_2_23_HAND)
+          &amp; gen(R_2_23_HAND,R_2_8_DAUGHTER) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="1113pt" height="342pt"

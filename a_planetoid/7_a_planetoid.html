@@ -468,37 +468,29 @@ arc(z_000_7_a_planetoid_2, r_0007_0007__can, scope).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0007_0009__THE_R_0007_0011__LIFE_R_0007_0013__FORM,R_0007_0010__PLUMMETTING,R_0007_0003__THE_R_0007_0004__RAIDER,R_0007_0006__YOU,R_0007_0001__HAVING_R_0007_0002__ANNIHILATED,R_0007_0008__INTERCEPT,R_0007_0017__SAFELY,R_0007_0018__BACK,R_0007_0019__DOWN,R_0007_0021__THE_R_0007_0022__SURFACE,R_0007_0015__SET,R_0007_0014__AND,R_0007_0007__CAN,Z_000_7_A_PLANETOID_2] :
-      ( r_0007_0003__the_r_0007_0004__raider(R_0007_0003__THE_R_0007_0004__RAIDER)
-      &amp; r_0007_0006__you(R_0007_0006__YOU)
-      &amp; r_0007_0009__the_r_0007_0011__life_r_0007_0013__form(R_0007_0009__THE_R_0007_0011__LIFE_R_0007_0013__FORM)
-      &amp; r_0007_0017__safely(R_0007_0017__SAFELY)
-      &amp; r_0007_0018__back(R_0007_0018__BACK)
-      &amp; r_0007_0021__the_r_0007_0022__surface(R_0007_0021__THE_R_0007_0022__SURFACE)
-      &amp; z_000_7_a_planetoid_2(Z_000_7_A_PLANETOID_2)
-      &amp; has_conj2(Z_000_7_A_PLANETOID_2,R_0007_0007__CAN)
-      &amp; r_0007_0007__can(R_0007_0007__CAN)
-      &amp; has_keep_scope(R_0007_0007__CAN,R_0007_0014__AND)
-      &amp; r_0007_0014__and(R_0007_0014__AND)
-      &amp; has_conj2(R_0007_0014__AND,R_0007_0015__SET)
-      &amp; r_0007_0015__set(R_0007_0015__SET)
-      &amp; has_r_0007_0020__on_nim59(R_0007_0015__SET,R_0007_0021__THE_R_0007_0022__SURFACE)
-      &amp; has_clr50(R_0007_0015__SET,R_0007_0019__DOWN)
-      &amp; r_0007_0019__down(R_0007_0019__DOWN)
-      &amp; has_qual51(R_0007_0019__DOWN,R_0007_0018__BACK)
-      &amp; has_nim47(R_0007_0015__SET,R_0007_0017__SAFELY)
-      &amp; has_arg1(R_0007_0015__SET,R_0007_0009__THE_R_0007_0011__LIFE_R_0007_0013__FORM)
-      &amp; has_arg0(R_0007_0015__SET,R_0007_0006__YOU)
-      &amp; has_conj1(R_0007_0014__AND,R_0007_0008__INTERCEPT)
-      &amp; r_0007_0008__intercept(R_0007_0008__INTERCEPT)
-      &amp; has_arg1(R_0007_0008__INTERCEPT,R_0007_0009__THE_R_0007_0011__LIFE_R_0007_0013__FORM)
-      &amp; has_arg0(R_0007_0008__INTERCEPT,R_0007_0006__YOU)
-      &amp; has_conj1(Z_000_7_A_PLANETOID_2,R_0007_0001__HAVING_R_0007_0002__ANNIHILATED)
-      &amp; r_0007_0001__Having_r_0007_0002__annihilated(R_0007_0001__HAVING_R_0007_0002__ANNIHILATED)
-      &amp; has_arg0(R_0007_0001__HAVING_R_0007_0002__ANNIHILATED,R_0007_0006__YOU)
-      &amp; has_arg1(R_0007_0001__HAVING_R_0007_0002__ANNIHILATED,R_0007_0003__THE_R_0007_0004__RAIDER)
-      &amp; r_0007_0010__plummetting(R_0007_0010__PLUMMETTING)
-      &amp; has_arg0(R_0007_0010__PLUMMETTING,R_0007_0009__THE_R_0007_0011__LIFE_R_0007_0013__FORM) ) ).
+    ? [R_7_10_PLUMMETTING,R_7_9_THE_LIFE_FORM,Z_7_A_PLANETOID_2,R_7_1_HAVING_ANNIHILATED,R_7_6_YOU,R_7_3_THE_RAIDER] :
+      ( the_life_form(R_7_9_THE_LIFE_FORM)
+      &amp; you(R_7_6_YOU)
+      &amp; the_raider(R_7_3_THE_RAIDER)
+      &amp; plummetting(R_7_10_PLUMMETTING,R_7_9_THE_LIFE_FORM)
+      &amp; z_7_a_planetoid_2(Z_7_A_PLANETOID_2)
+      &amp; conj1(Z_7_A_PLANETOID_2,R_7_1_HAVING_ANNIHILATED)
+      &amp; having_annihilated(R_7_1_HAVING_ANNIHILATED,R_7_6_YOU,R_7_3_THE_RAIDER)
+      &amp; conj2(Z_7_A_PLANETOID_2,R_7_7_CAN)
+      &amp; ~ ? [R_7_14_AND,R_7_8_INTERCEPT,R_7_15_SET,R_7_19_DOWN,R_7_18_BACK,R_7_17_SAFELY,R_7_21_THE_SURFACE] :
+            ( back(R_7_18_BACK)
+            &amp; safely(R_7_17_SAFELY)
+            &amp; the_surface(R_7_21_THE_SURFACE)
+            &amp; and(R_7_14_AND)
+            &amp; conj1(R_7_14_AND,R_7_8_INTERCEPT)
+            &amp; intercept(R_7_8_INTERCEPT,R_7_6_YOU,R_7_9_THE_LIFE_FORM)
+            &amp; conj2(R_7_14_AND,R_7_15_SET)
+            &amp; set(R_7_15_SET,R_7_6_YOU,R_7_9_THE_LIFE_FORM)
+            &amp; clr50(R_7_15_SET,R_7_19_DOWN)
+            &amp; down(R_7_19_DOWN)
+            &amp; qual51(R_7_19_DOWN,R_7_18_BACK)
+            &amp; nim47(R_7_15_SET,R_7_17_SAFELY)
+            &amp; on_nim59(R_7_15_SET,R_7_21_THE_SURFACE) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="1043pt" height="387pt"

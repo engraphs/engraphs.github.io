@@ -305,25 +305,20 @@ arc(r_0060_0011__condition, r_0060_0010__stable, attrib32).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0060_0001__WHO,R_0060_0003__THEY,R_0060_0006__TREATMENT,R_0060_0004__ARE_R_0060_0005__RECEIVING,R_0060_0010__STABLE,R_0060_0011__CONDITION,R_0060_0008__ARE,R_0060_0007__AND,R_0060_0002__SAYS] :
-      ( r_0060_0001__WHO(R_0060_0001__WHO)
-      &amp; r_0060_0003__they(R_0060_0003__THEY)
-      &amp; r_0060_0006__treatment(R_0060_0006__TREATMENT)
-      &amp; r_0060_0010__stable(R_0060_0010__STABLE)
-      &amp; r_0060_0002__says(R_0060_0002__SAYS)
-      &amp; has_arg1(R_0060_0002__SAYS,R_0060_0007__AND)
-      &amp; r_0060_0007__and(R_0060_0007__AND)
-      &amp; has_conj2(R_0060_0007__AND,R_0060_0008__ARE)
-      &amp; r_0060_0008__are(R_0060_0008__ARE)
-      &amp; has_r_0060_0009__in_clr31(R_0060_0008__ARE,R_0060_0011__CONDITION)
-      &amp; r_0060_0011__condition(R_0060_0011__CONDITION)
-      &amp; has_attrib32(R_0060_0011__CONDITION,R_0060_0010__STABLE)
-      &amp; has_arg0(R_0060_0008__ARE,R_0060_0003__THEY)
-      &amp; has_conj1(R_0060_0007__AND,R_0060_0004__ARE_R_0060_0005__RECEIVING)
-      &amp; r_0060_0004__are_r_0060_0005__receiving(R_0060_0004__ARE_R_0060_0005__RECEIVING)
-      &amp; has_arg1(R_0060_0004__ARE_R_0060_0005__RECEIVING,R_0060_0006__TREATMENT)
-      &amp; has_arg0(R_0060_0004__ARE_R_0060_0005__RECEIVING,R_0060_0003__THEY)
-      &amp; has_arg0(R_0060_0002__SAYS,R_0060_0001__WHO) ) ).
+    ? [R_60_2_SAYS,R_60_1_WHO,R_60_7_AND,R_60_4_ARE_RECEIVING,R_60_6_TREATMENT,R_60_8_ARE,R_60_3_THEY,R_60_11_CONDITION,R_60_10_STABLE] :
+      ( wHO(R_60_1_WHO)
+      &amp; treatment(R_60_6_TREATMENT)
+      &amp; they(R_60_3_THEY)
+      &amp; stable(R_60_10_STABLE)
+      &amp; says(R_60_2_SAYS,R_60_1_WHO,R_60_7_AND)
+      &amp; and(R_60_7_AND)
+      &amp; conj1(R_60_7_AND,R_60_4_ARE_RECEIVING)
+      &amp; are_receiving(R_60_4_ARE_RECEIVING,R_60_3_THEY,R_60_6_TREATMENT)
+      &amp; conj2(R_60_7_AND,R_60_8_ARE)
+      &amp; are(R_60_8_ARE,R_60_3_THEY)
+      &amp; in_clr31(R_60_8_ARE,R_60_11_CONDITION)
+      &amp; condition(R_60_11_CONDITION)
+      &amp; attrib32(R_60_11_CONDITION,R_60_10_STABLE) ) ).
 </pre>
 <br><hr><br>
 <svg width="557pt" height="478pt"

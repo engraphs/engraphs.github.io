@@ -526,39 +526,29 @@ arc(r_0003_0022__been, r_0003_0023__clearer, prd).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0003_0001__I,R_0003_0002__NEVER,R_0003_0006__A_R_0003_0007__DISTRACTION,R_0003_0004__TO_R_0003_0005__BE,R_0003_0003__WANTED,R_0003_0019__MESSAGE,R_0003_0023__CLEARER,R_0003_0020__COULD_R_0003_0021__HAVE_R_0003_0022__BEEN,R_0003_0017__AND,R_0003_0010__ACCEPT,R_0003_0008__AND] :
-      ( r_0003_0001__I(R_0003_0001__I)
-      &amp; r_0003_0002__never(R_0003_0002__NEVER)
-      &amp; r_0003_0006__a_r_0003_0007__distraction(R_0003_0006__A_R_0003_0007__DISTRACTION)
-      &amp; r_0003_0023__clearer(R_0003_0023__CLEARER)
-      &amp; r_0003_0008__and(R_0003_0008__AND)
-      &amp; has_conj2(R_0003_0008__AND,R_0003_0010__ACCEPT)
-      &amp; r_0003_0010__accept(R_0003_0010__ACCEPT)
-      &amp; has_arg1(R_0003_0010__ACCEPT,R_0003_0017__AND)
-      &amp; r_0003_0017__and(R_0003_0017__AND)
-      &amp; has_conj2(R_0003_0017__AND,R_0003_0020__COULD_R_0003_0021__HAVE_R_0003_0022__BEEN)
-      &amp; r_0003_0020__could_r_0003_0021__have_r_0003_0022__been(R_0003_0020__COULD_R_0003_0021__HAVE_R_0003_0022__BEEN)
-      &amp; has_prd(R_0003_0020__COULD_R_0003_0021__HAVE_R_0003_0022__BEEN,R_0003_0023__CLEARER)
-      &amp; has_arg0(R_0003_0020__COULD_R_0003_0021__HAVE_R_0003_0022__BEEN,R_0003_0019__MESSAGE)
-      &amp; r_0003_0019__message(R_0003_0019__MESSAGE)
-      &amp; has_gen(R_0003_0019__MESSAGE,R_0003_0001__I)
-      &amp; has_conj1(R_0003_0017__AND,R_0003_0015__NOT)
-      &amp; ~ ? [R_0003_0013__TIMING,R_0003_0016__IDEAL,R_0003_0014__WAS] :
-            ( r_0003_0016__ideal(R_0003_0016__IDEAL)
-            &amp; r_0003_0014__was(R_0003_0014__WAS)
-            &amp; has_prd(R_0003_0014__WAS,R_0003_0016__IDEAL)
-            &amp; has_arg0(R_0003_0014__WAS,R_0003_0013__TIMING)
-            &amp; r_0003_0013__timing(R_0003_0013__TIMING)
-            &amp; has_gen(R_0003_0013__TIMING,R_0003_0001__I) )
-      &amp; has_arg0(R_0003_0010__ACCEPT,R_0003_0001__I)
-      &amp; has_conj1(R_0003_0008__AND,R_0003_0003__WANTED)
-      &amp; r_0003_0003__wanted(R_0003_0003__WANTED)
-      &amp; has_arg1(R_0003_0003__WANTED,R_0003_0004__TO_R_0003_0005__BE)
-      &amp; r_0003_0004__to_r_0003_0005__be(R_0003_0004__TO_R_0003_0005__BE)
-      &amp; has_prd(R_0003_0004__TO_R_0003_0005__BE,R_0003_0006__A_R_0003_0007__DISTRACTION)
-      &amp; has_arg0(R_0003_0004__TO_R_0003_0005__BE,R_0003_0001__I)
-      &amp; has_nim7(R_0003_0003__WANTED,R_0003_0002__NEVER)
-      &amp; has_arg0(R_0003_0003__WANTED,R_0003_0001__I) ) ).
+    ? [R_3_8_AND,R_3_3_WANTED,R_3_4_TO_BE,R_3_6_A_DISTRACTION,R_3_2_NEVER,R_3_10_ACCEPT,R_3_17_AND,R_3_20_COULD_HAVE_BEEN,R_3_19_MESSAGE,R_3_1_I,R_3_23_CLEARER] :
+      ( a_distraction(R_3_6_A_DISTRACTION)
+      &amp; never(R_3_2_NEVER)
+      &amp; i(R_3_1_I)
+      &amp; clearer(R_3_23_CLEARER)
+      &amp; and(R_3_8_AND)
+      &amp; conj1(R_3_8_AND,R_3_3_WANTED)
+      &amp; wanted(R_3_3_WANTED,R_3_1_I,R_3_4_TO_BE)
+      &amp; to_be(R_3_4_TO_BE,R_3_1_I,R_3_6_A_DISTRACTION)
+      &amp; nim7(R_3_3_WANTED,R_3_2_NEVER)
+      &amp; conj2(R_3_8_AND,R_3_10_ACCEPT)
+      &amp; accept(R_3_10_ACCEPT,R_3_1_I,R_3_17_AND)
+      &amp; and(R_3_17_AND)
+      &amp; conj1(R_3_17_AND,R_3_15_NOT)
+      &amp; ~ ? [R_3_14_WAS,R_3_13_TIMING,R_3_16_IDEAL] :
+            ( ideal(R_3_16_IDEAL)
+            &amp; was(R_3_14_WAS,R_3_13_TIMING,R_3_16_IDEAL)
+            &amp; timing(R_3_13_TIMING)
+            &amp; gen(R_3_13_TIMING,R_3_1_I) )
+      &amp; conj2(R_3_17_AND,R_3_20_COULD_HAVE_BEEN)
+      &amp; could_have_been(R_3_20_COULD_HAVE_BEEN,R_3_19_MESSAGE,R_3_23_CLEARER)
+      &amp; message(R_3_19_MESSAGE)
+      &amp; gen(R_3_19_MESSAGE,R_3_1_I) ) ).
 </pre>
 <br><hr><br>
 <svg width="1049pt" height="613pt"

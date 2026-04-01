@@ -584,44 +584,31 @@ arc(r_0094_0024__replaced, z_000_94_a_seiko_9r65_76, arg0).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0094_0010__DISASSEMBLY,R_0094_0012__CLEANING,R_0094_0011__AND,Z_000_94_A_SEIKO_9R65_48,R_0094_0014__OVERHAULED] :
-      ( r_0094_0010__disassembly(R_0094_0010__DISASSEMBLY)
-      &amp; r_0094_0012__cleaning(R_0094_0012__CLEANING)
-      &amp; z_000_94_a_seiko_9r65_48(Z_000_94_A_SEIKO_9R65_48)
-      &amp; r_0094_0014__overhauled(R_0094_0014__OVERHAULED)
-      &amp; has_arg0(R_0094_0014__OVERHAULED,Z_000_94_A_SEIKO_9R65_48)
-      &amp; has_arg1(R_0094_0014__OVERHAULED,R_0094_0011__AND)
-      &amp; r_0094_0011__and(R_0094_0011__AND)
-      &amp; has_conj2(R_0094_0011__AND,R_0094_0012__CLEANING)
-      &amp; has_conj1(R_0094_0011__AND,R_0094_0010__DISASSEMBLY)
-      &amp; ! [R_0094_0005__IS,R_0094_0003__YOUR,R_0094_0004__WATCH,Z_000_94_A_SEIKO_9R65_19,R_0094_0006__INSPECTED,Z_000_94_A_SEIKO_9R65_27,R_0094_0008__ADJUSTED,R_0094_0007__AND] :
-          ( ( r_0094_0003__your(R_0094_0003__YOUR)
-            &amp; z_000_94_a_seiko_9r65_19(Z_000_94_A_SEIKO_9R65_19)
-            &amp; z_000_94_a_seiko_9r65_27(Z_000_94_A_SEIKO_9R65_27)
-            &amp; r_0094_0005__is(R_0094_0005__IS)
-            &amp; has_keep_scope(R_0094_0005__IS,R_0094_0007__AND)
-            &amp; r_0094_0007__and(R_0094_0007__AND)
-            &amp; has_conj2(R_0094_0007__AND,R_0094_0008__ADJUSTED)
-            &amp; r_0094_0008__adjusted(R_0094_0008__ADJUSTED)
-            &amp; has_arg0(R_0094_0008__ADJUSTED,Z_000_94_A_SEIKO_9R65_27)
-            &amp; has_r_0094_0009__by_nim34(R_0094_0008__ADJUSTED,R_0094_0011__AND)
-            &amp; has_arg1(R_0094_0008__ADJUSTED,R_0094_0004__WATCH)
-            &amp; r_0094_0004__watch(R_0094_0004__WATCH)
-            &amp; has_gen(R_0094_0004__WATCH,R_0094_0003__YOUR)
-            &amp; has_conj1(R_0094_0007__AND,R_0094_0006__INSPECTED)
-            &amp; r_0094_0006__inspected(R_0094_0006__INSPECTED)
-            &amp; has_arg0(R_0094_0006__INSPECTED,Z_000_94_A_SEIKO_9R65_19)
-            &amp; has_r_0094_0009__by_nim34(R_0094_0006__INSPECTED,R_0094_0011__AND)
-            &amp; has_arg1(R_0094_0006__INSPECTED,R_0094_0004__WATCH) )
-         =&gt; ? [R_0094_0021__WATCH,R_0094_0017__THE_R_0094_0018__MOVEMENT,Z_000_94_A_SEIKO_9R65_76,R_0094_0001___WHITE_CIRCLE__R_0094_0022__MAY_R_0094_0023__BE_R_0094_0024__REPLACED] :
-              ( z_000_94_a_seiko_9r65_76(Z_000_94_A_SEIKO_9R65_76)
-              &amp; r_0094_0001___white_circle__r_0094_0022__may_r_0094_0023__be_r_0094_0024__replaced(R_0094_0001___WHITE_CIRCLE__R_0094_0022__MAY_R_0094_0023__BE_R_0094_0024__REPLACED)
-              &amp; has_arg0(R_0094_0001___WHITE_CIRCLE__R_0094_0022__MAY_R_0094_0023__BE_R_0094_0024__REPLACED,Z_000_94_A_SEIKO_9R65_76)
-              &amp; has_arg1(R_0094_0001___WHITE_CIRCLE__R_0094_0022__MAY_R_0094_0023__BE_R_0094_0024__REPLACED,R_0094_0017__THE_R_0094_0018__MOVEMENT)
-              &amp; r_0094_0017__the_r_0094_0018__movement(R_0094_0017__THE_R_0094_0018__MOVEMENT)
-              &amp; has_r_0094_0019__of(R_0094_0017__THE_R_0094_0018__MOVEMENT,R_0094_0021__WATCH)
-              &amp; r_0094_0021__watch(R_0094_0021__WATCH)
-              &amp; has_gen(R_0094_0021__WATCH,R_0094_0003__YOUR) ) ) ) ).
+    ? [R_94_14_OVERHAULED,Z_94_A_SEIKO_9R65_48,R_94_11_AND,R_94_10_DISASSEMBLY,R_94_12_CLEANING] :
+      ( disassembly(R_94_10_DISASSEMBLY)
+      &amp; cleaning(R_94_12_CLEANING)
+      &amp; ( ~ ? [R_94_7_AND,R_94_6_INSPECTED,Z_94_A_SEIKO_9R65_19,R_94_8_ADJUSTED,Z_94_A_SEIKO_9R65_27,R_94_4_WATCH,R_94_3_YOUR] :
+              ( your(R_94_3_YOUR)
+              &amp; and(R_94_7_AND)
+              &amp; conj1(R_94_7_AND,R_94_6_INSPECTED)
+              &amp; inspected(R_94_6_INSPECTED,Z_94_A_SEIKO_9R65_19,R_94_4_WATCH)
+              &amp; watch(R_94_4_WATCH)
+              &amp; gen(R_94_4_WATCH,R_94_3_YOUR)
+              &amp; by_nim34(R_94_6_INSPECTED,R_94_11_AND)
+              &amp; conj2(R_94_7_AND,R_94_8_ADJUSTED)
+              &amp; adjusted(R_94_8_ADJUSTED,Z_94_A_SEIKO_9R65_27,R_94_4_WATCH)
+              &amp; by_nim34(R_94_8_ADJUSTED,R_94_11_AND) )
+       =&gt; ? [R_94_1__WHITE_CIRCLE_MAY_BE_REPLACED,Z_94_A_SEIKO_9R65_76,R_94_17_THE_MOVEMENT,R_94_21_WATCH,R_94_3_YOUR] :
+            ( your(R_94_3_YOUR)
+            &amp; _white_circle_may_be_replaced(R_94_1__WHITE_CIRCLE_MAY_BE_REPLACED,Z_94_A_SEIKO_9R65_76,R_94_17_THE_MOVEMENT)
+            &amp; the_movement(R_94_17_THE_MOVEMENT)
+            &amp; of(R_94_17_THE_MOVEMENT,R_94_21_WATCH)
+            &amp; watch(R_94_21_WATCH)
+            &amp; gen(R_94_21_WATCH,R_94_3_YOUR) ) )
+      &amp; overhauled(R_94_14_OVERHAULED,Z_94_A_SEIKO_9R65_48,R_94_11_AND)
+      &amp; and(R_94_11_AND)
+      &amp; conj1(R_94_11_AND,R_94_10_DISASSEMBLY)
+      &amp; conj2(R_94_11_AND,R_94_12_CLEANING) ) ).
 </pre>
 <br><hr><br>
 <svg width="1372pt" height="478pt"

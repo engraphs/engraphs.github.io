@@ -293,20 +293,18 @@ arc(r_0129_0010__exist, r_0129_0008__life, arg0).
 </svg>
 <pre>
 fof(formula,axiom,
-    ! [R_0129_0003__REASONING,R_0129_0002__OUR] :
-      ( ( r_0129_0002__our(R_0129_0002__OUR)
-        &amp; r_0129_0003__reasoning(R_0129_0003__REASONING)
-        &amp; has_gen(R_0129_0003__REASONING,R_0129_0002__OUR) )
-     =&gt; ? [R_0129_0005__US,R_0129_0004__TELLS] :
-          ( r_0129_0005__us(R_0129_0005__US)
-          &amp; r_0129_0004__tells(R_0129_0004__TELLS)
-          &amp; ! [R_0129_0008__LIFE] :
-              ( r_0129_0008__life(R_0129_0008__LIFE)
-             =&gt; ? [R_0129_0006__THAT_R_0129_0009__COULD_R_0129_0010__EXIST] :
-                  ( r_0129_0006__that_r_0129_0009__could_r_0129_0010__exist(R_0129_0006__THAT_R_0129_0009__COULD_R_0129_0010__EXIST)
-                  &amp; has_arg0(R_0129_0006__THAT_R_0129_0009__COULD_R_0129_0010__EXIST,R_0129_0008__LIFE) ) )
-          &amp; has_arg2(R_0129_0004__TELLS,R_0129_0005__US)
-          &amp; has_arg0(R_0129_0004__TELLS,R_0129_0003__REASONING) ) ) ).
+    ! [R_129_3_REASONING,R_129_2_OUR] :
+      ( ( our(R_129_2_OUR)
+        &amp; reasoning(R_129_3_REASONING)
+        &amp; gen(R_129_3_REASONING,R_129_2_OUR) )
+     =&gt; ? [R_129_4_TELLS,R_129_5_US] :
+          ( us(R_129_5_US)
+          &amp; ! [R_129_8_LIFE] :
+              ( life(R_129_8_LIFE)
+             =&gt; ? [R_129_6_THAT_COULD_EXIST] : that_could_exist(R_129_6_THAT_COULD_EXIST,R_129_8_LIFE) )
+          &amp; arg1(ARG1)
+          &amp; tells(R_129_4_TELLS,R_129_3_REASONING)
+          &amp; arg2(R_129_4_TELLS,R_129_5_US) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="479pt" height="252pt"

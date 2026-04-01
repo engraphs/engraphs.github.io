@@ -491,35 +491,28 @@ arc(r_0007_0028__fast, r_0007_0030__conditions, r_0007_0029__for).
 </svg>
 <pre>
 fof(formula,axiom,
-    ! [R_0007_0005__ARE_R_0007_0006__DRIVING,R_0007_0004__YOU,R_0007_0007__45_R_0007_0008__MPH,R_0007_0010__A_R_0007_0011__55_R_0007_0012__MPH_R_0007_0013__SPEED_R_0007_0014__ZONE,R_0007_0017__DENSE,R_0007_0016__A_R_0007_0018__FOG] :
-      ( ( r_0007_0004__you(R_0007_0004__YOU)
-        &amp; r_0007_0007__45_r_0007_0008__mph(R_0007_0007__45_R_0007_0008__MPH)
-        &amp; r_0007_0010__a_r_0007_0011__55_r_0007_0012__mph_r_0007_0013__speed_r_0007_0014__zone(R_0007_0010__A_R_0007_0011__55_R_0007_0012__MPH_R_0007_0013__SPEED_R_0007_0014__ZONE)
-        &amp; r_0007_0017__dense(R_0007_0017__DENSE)
-        &amp; r_0007_0005__are_r_0007_0006__driving(R_0007_0005__ARE_R_0007_0006__DRIVING)
-        &amp; has_r_0007_0015__during_nim41(R_0007_0005__ARE_R_0007_0006__DRIVING,R_0007_0016__A_R_0007_0018__FOG)
-        &amp; r_0007_0016__a_r_0007_0018__fog(R_0007_0016__A_R_0007_0018__FOG)
-        &amp; has_attrib44(R_0007_0016__A_R_0007_0018__FOG,R_0007_0017__DENSE)
-        &amp; has_r_0007_0009__in_nim27(R_0007_0005__ARE_R_0007_0006__DRIVING,R_0007_0010__A_R_0007_0011__55_R_0007_0012__MPH_R_0007_0013__SPEED_R_0007_0014__ZONE)
-        &amp; has_arg1(R_0007_0005__ARE_R_0007_0006__DRIVING,R_0007_0007__45_R_0007_0008__MPH)
-        &amp; has_arg0(R_0007_0005__ARE_R_0007_0006__DRIVING,R_0007_0004__YOU) )
-     =&gt; ? [R_0007_0001__FOR_EXAMPLE,R_0007_0027__TOO,R_0007_0030__CONDITIONS,R_0007_0028__FAST,Z_000_7_A_DRIVER_HANDBOOK_67,R_0007_0025__DRIVING,Z_000_7_A_DRIVER_HANDBOOK_60,R_0007_0021__COULD_R_0007_0022__BE_R_0007_0023__CITED] :
-          ( r_0007_0001__For_example(R_0007_0001__FOR_EXAMPLE)
-          &amp; r_0007_0027__too(R_0007_0027__TOO)
-          &amp; r_0007_0030__conditions(R_0007_0030__CONDITIONS)
-          &amp; z_000_7_a_driver_handbook_60(Z_000_7_A_DRIVER_HANDBOOK_60)
-          &amp; z_000_7_a_driver_handbook_67(Z_000_7_A_DRIVER_HANDBOOK_67)
-          &amp; r_0007_0021__could_r_0007_0022__be_r_0007_0023__cited(R_0007_0021__COULD_R_0007_0022__BE_R_0007_0023__CITED)
-          &amp; has_arg0(R_0007_0021__COULD_R_0007_0022__BE_R_0007_0023__CITED,Z_000_7_A_DRIVER_HANDBOOK_60)
-          &amp; has_r_0007_0024__for_clr67(R_0007_0021__COULD_R_0007_0022__BE_R_0007_0023__CITED,R_0007_0025__DRIVING)
-          &amp; r_0007_0025__driving(R_0007_0025__DRIVING)
-          &amp; has_arg0(R_0007_0025__DRIVING,Z_000_7_A_DRIVER_HANDBOOK_67)
-          &amp; has_nim72(R_0007_0025__DRIVING,R_0007_0028__FAST)
-          &amp; r_0007_0028__fast(R_0007_0028__FAST)
-          &amp; has_r_0007_0029__for(R_0007_0028__FAST,R_0007_0030__CONDITIONS)
-          &amp; has_qual73(R_0007_0028__FAST,R_0007_0027__TOO)
-          &amp; has_arg1(R_0007_0021__COULD_R_0007_0022__BE_R_0007_0023__CITED,R_0007_0004__YOU)
-          &amp; has_nim2(R_0007_0021__COULD_R_0007_0022__BE_R_0007_0023__CITED,R_0007_0001__FOR_EXAMPLE) ) ) ).
+    ! [R_7_5_ARE_DRIVING,R_7_4_YOU,R_7_7_45_MPH,R_7_10_A_55_MPH_SPEED_ZONE,R_7_16_A_FOG,R_7_17_DENSE] :
+      ( ( you(R_7_4_YOU)
+        &amp; 45_mph(R_7_7_45_MPH)
+        &amp; a_55_mph_speed_zone(R_7_10_A_55_MPH_SPEED_ZONE)
+        &amp; dense(R_7_17_DENSE)
+        &amp; are_driving(R_7_5_ARE_DRIVING,R_7_4_YOU,R_7_7_45_MPH)
+        &amp; in_nim27(R_7_5_ARE_DRIVING,R_7_10_A_55_MPH_SPEED_ZONE)
+        &amp; during_nim41(R_7_5_ARE_DRIVING,R_7_16_A_FOG)
+        &amp; a_fog(R_7_16_A_FOG)
+        &amp; attrib44(R_7_16_A_FOG,R_7_17_DENSE) )
+     =&gt; ? [R_7_21_COULD_BE_CITED,Z_7_A_DRIVER_HANDBOOK_60,R_7_1_FOR_EXAMPLE,R_7_25_DRIVING,Z_7_A_DRIVER_HANDBOOK_67,R_7_28_FAST,R_7_27_TOO,R_7_30_CONDITIONS] :
+          ( for_example(R_7_1_FOR_EXAMPLE)
+          &amp; too(R_7_27_TOO)
+          &amp; conditions(R_7_30_CONDITIONS)
+          &amp; could_be_cited(R_7_21_COULD_BE_CITED,Z_7_A_DRIVER_HANDBOOK_60,R_7_4_YOU)
+          &amp; nim2(R_7_21_COULD_BE_CITED,R_7_1_FOR_EXAMPLE)
+          &amp; for_clr67(R_7_21_COULD_BE_CITED,R_7_25_DRIVING)
+          &amp; driving(R_7_25_DRIVING,Z_7_A_DRIVER_HANDBOOK_67)
+          &amp; nim72(R_7_25_DRIVING,R_7_28_FAST)
+          &amp; fast(R_7_28_FAST)
+          &amp; qual73(R_7_28_FAST,R_7_27_TOO)
+          &amp; for(R_7_28_FAST,R_7_30_CONDITIONS) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="1379pt" height="432pt"

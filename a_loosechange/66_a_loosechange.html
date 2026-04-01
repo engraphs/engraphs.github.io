@@ -306,25 +306,20 @@ arc(r_0066_0015__owed, r_0066_0016__her, arg2).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0066_0002__I,R_0066_0012__THE_R_0066_0013__TWENTY__HYPHEN__PENCES,R_0066_0016__HER,R_0066_0015__OWED] :
-      ( r_0066_0002__I(R_0066_0002__I)
-      &amp; r_0066_0012__the_r_0066_0013__twenty__hyphen__pences(R_0066_0012__THE_R_0066_0013__TWENTY__HYPHEN__PENCES)
-      &amp; r_0066_0016__her(R_0066_0016__HER)
-      &amp; r_0066_0015__owed(R_0066_0015__OWED)
-      &amp; has_arg2(R_0066_0015__OWED,R_0066_0016__HER)
-      &amp; has_arg1(R_0066_0015__OWED,R_0066_0012__THE_R_0066_0013__TWENTY__HYPHEN__PENCES)
-      &amp; has_arg0(R_0066_0015__OWED,R_0066_0002__I)
-      &amp; ! [R_0066_0003__GOT,R_0066_0004__BACK,R_0066_0006__THE_R_0066_0007__TEA] :
-          ( ( r_0066_0004__back(R_0066_0004__BACK)
-            &amp; r_0066_0006__the_r_0066_0007__tea(R_0066_0006__THE_R_0066_0007__TEA)
-            &amp; r_0066_0003__got(R_0066_0003__GOT)
-            &amp; has_r_0066_0005__with_nim17(R_0066_0003__GOT,R_0066_0006__THE_R_0066_0007__TEA)
-            &amp; has_clr11(R_0066_0003__GOT,R_0066_0004__BACK)
-            &amp; has_arg0(R_0066_0003__GOT,R_0066_0002__I) )
-         =&gt; ? [R_0066_0010__PUSHED] :
-              ( r_0066_0010__pushed(R_0066_0010__PUSHED)
-              &amp; has_r_0066_0011__over_clr32(R_0066_0010__PUSHED,R_0066_0012__THE_R_0066_0013__TWENTY__HYPHEN__PENCES)
-              &amp; has_arg0(R_0066_0010__PUSHED,R_0066_0002__I) ) ) ) ).
+    ? [R_66_15_OWED,R_66_2_I,R_66_12_THE_TWENTY_HYPHEN_PENCES,R_66_16_HER] :
+      ( i(R_66_2_I)
+      &amp; the_twenty_hyphen_pences(R_66_12_THE_TWENTY_HYPHEN_PENCES)
+      &amp; her(R_66_16_HER)
+      &amp; ! [R_66_3_GOT,R_66_4_BACK,R_66_6_THE_TEA] :
+          ( ( back(R_66_4_BACK)
+            &amp; the_tea(R_66_6_THE_TEA)
+            &amp; got(R_66_3_GOT,R_66_2_I)
+            &amp; clr11(R_66_3_GOT,R_66_4_BACK)
+            &amp; with_nim17(R_66_3_GOT,R_66_6_THE_TEA) )
+         =&gt; ? [R_66_10_PUSHED] :
+              ( pushed(R_66_10_PUSHED,R_66_2_I)
+              &amp; over_clr32(R_66_10_PUSHED,R_66_12_THE_TWENTY_HYPHEN_PENCES) ) )
+      &amp; owed(R_66_15_OWED,R_66_2_I,R_66_12_THE_TWENTY_HYPHEN_PENCES,R_66_16_HER) ) ).
 </pre>
 <br><hr><br>
 <svg width="756pt" height="297pt"

@@ -183,17 +183,15 @@ arc(r_0035_0009__garden, r_0035_0001__I, gen).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0035_0001__I,R_0035_0002__RECENTLY,R_0035_0004__A_R_0035_0005__HEDGEHOG_R_0035_0006__HOUSE,R_0035_0009__GARDEN,R_0035_0003__BUILT] :
-      ( r_0035_0001__I(R_0035_0001__I)
-      &amp; r_0035_0002__recently(R_0035_0002__RECENTLY)
-      &amp; r_0035_0004__a_r_0035_0005__hedgehog_r_0035_0006__house(R_0035_0004__A_R_0035_0005__HEDGEHOG_R_0035_0006__HOUSE)
-      &amp; r_0035_0003__built(R_0035_0003__BUILT)
-      &amp; has_r_0035_0007__in_nim20(R_0035_0003__BUILT,R_0035_0009__GARDEN)
-      &amp; r_0035_0009__garden(R_0035_0009__GARDEN)
-      &amp; has_gen(R_0035_0009__GARDEN,R_0035_0001__I)
-      &amp; has_arg1(R_0035_0003__BUILT,R_0035_0004__A_R_0035_0005__HEDGEHOG_R_0035_0006__HOUSE)
-      &amp; has_nim5(R_0035_0003__BUILT,R_0035_0002__RECENTLY)
-      &amp; has_arg0(R_0035_0003__BUILT,R_0035_0001__I) ) ).
+    ? [R_35_3_BUILT,R_35_4_A_HEDGEHOG_HOUSE,R_35_2_RECENTLY,R_35_9_GARDEN,R_35_1_I] :
+      ( a_hedgehog_house(R_35_4_A_HEDGEHOG_HOUSE)
+      &amp; recently(R_35_2_RECENTLY)
+      &amp; i(R_35_1_I)
+      &amp; built(R_35_3_BUILT,R_35_1_I,R_35_4_A_HEDGEHOG_HOUSE)
+      &amp; nim5(R_35_3_BUILT,R_35_2_RECENTLY)
+      &amp; in_nim20(R_35_3_BUILT,R_35_9_GARDEN)
+      &amp; garden(R_35_9_GARDEN)
+      &amp; gen(R_35_9_GARDEN,R_35_1_I) ) ).
 </pre>
 <br><hr><br>
 <svg width="422pt" height="252pt"

@@ -478,38 +478,30 @@ arc(z_000_9_a_history_of_qed_42, r_0009_0020__automaton, prd).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0009_0013__A_R_0009_0014__NDFA,R_0009_0024__THE_R_0009_0025__SEARCH,R_0009_0022__TO_R_0009_0023__DO,R_0009_0016__NON,R_0009_0018__DETERMINISTIC,R_0009_0019__FINITE,R_0009_0020__AUTOMATON,Z_000_9_A_HISTORY_OF_QED_42] :
-      ( r_0009_0013__a_r_0009_0014__NDFA(R_0009_0013__A_R_0009_0014__NDFA)
-      &amp; r_0009_0016__non(R_0009_0016__NON)
-      &amp; r_0009_0018__deterministic(R_0009_0018__DETERMINISTIC)
-      &amp; r_0009_0019__finite(R_0009_0019__FINITE)
-      &amp; r_0009_0024__the_r_0009_0025__search(R_0009_0024__THE_R_0009_0025__SEARCH)
-      &amp; z_000_9_a_history_of_qed_42(Z_000_9_A_HISTORY_OF_QED_42)
-      &amp; has_prd(Z_000_9_A_HISTORY_OF_QED_42,R_0009_0020__AUTOMATON)
-      &amp; r_0009_0020__automaton(R_0009_0020__AUTOMATON)
-      &amp; has_attrib52(R_0009_0020__AUTOMATON,R_0009_0019__FINITE)
-      &amp; has_attrib49(R_0009_0020__AUTOMATON,R_0009_0018__DETERMINISTIC)
-      &amp; has_qual44(R_0009_0020__AUTOMATON,R_0009_0016__NON)
-      &amp; has_arg0(Z_000_9_A_HISTORY_OF_QED_42,R_0009_0013__A_R_0009_0014__NDFA)
-      &amp; r_0009_0022__to_r_0009_0023__do(R_0009_0022__TO_R_0009_0023__DO)
-      &amp; has_arg1(R_0009_0022__TO_R_0009_0023__DO,R_0009_0024__THE_R_0009_0025__SEARCH)
-      &amp; has_arg0(R_0009_0022__TO_R_0009_0023__DO,R_0009_0013__A_R_0009_0014__NDFA)
-      &amp; ! [R_0009_0010__EXPRESSION,R_0009_0009__REGULAR,R_0009_0011__THAT_R_0009_0012__CREATED] :
-          ( ( r_0009_0009__regular(R_0009_0009__REGULAR)
-            &amp; r_0009_0011__that_r_0009_0012__created(R_0009_0011__THAT_R_0009_0012__CREATED)
-            &amp; has_arg1(R_0009_0011__THAT_R_0009_0012__CREATED,R_0009_0013__A_R_0009_0014__NDFA)
-            &amp; has_arg0(R_0009_0011__THAT_R_0009_0012__CREATED,R_0009_0010__EXPRESSION)
-            &amp; r_0009_0010__expression(R_0009_0010__EXPRESSION)
-            &amp; has_attrib23(R_0009_0010__EXPRESSION,R_0009_0009__REGULAR) )
-         =&gt; ? [R_0009_0001__KEN_R_0009_0002___APOS_S,R_0009_0003__QED,R_0009_0005__MACHINE_R_0009_0006__CODE,R_0009_0004__COMPILED] :
-              ( r_0009_0001__Ken_r_0009_0002___apos_s(R_0009_0001__KEN_R_0009_0002___APOS_S)
-              &amp; r_0009_0005__machine_r_0009_0006__code(R_0009_0005__MACHINE_R_0009_0006__CODE)
-              &amp; r_0009_0004__compiled(R_0009_0004__COMPILED)
-              &amp; has_r_0009_0007__for_nim20(R_0009_0004__COMPILED,R_0009_0010__EXPRESSION)
-              &amp; has_arg1(R_0009_0004__COMPILED,R_0009_0005__MACHINE_R_0009_0006__CODE)
-              &amp; has_arg0(R_0009_0004__COMPILED,R_0009_0003__QED)
-              &amp; r_0009_0003__QED(R_0009_0003__QED)
-              &amp; has_gen(R_0009_0003__QED,R_0009_0001__KEN_R_0009_0002___APOS_S) ) ) ) ).
+    ? [R_9_22_TO_DO,R_9_24_THE_SEARCH,Z_9_A_HISTORY_OF_QED_42,R_9_13_A_NDFA,R_9_20_AUTOMATON,R_9_18_DETERMINISTIC,R_9_19_FINITE,R_9_16_NON] :
+      ( the_search(R_9_24_THE_SEARCH)
+      &amp; a_NDFA(R_9_13_A_NDFA)
+      &amp; deterministic(R_9_18_DETERMINISTIC)
+      &amp; finite(R_9_19_FINITE)
+      &amp; non(R_9_16_NON)
+      &amp; ! [R_9_11_THAT_CREATED,R_9_10_EXPRESSION,R_9_9_REGULAR] :
+          ( ( regular(R_9_9_REGULAR)
+            &amp; that_created(R_9_11_THAT_CREATED,R_9_10_EXPRESSION,R_9_13_A_NDFA)
+            &amp; expression(R_9_10_EXPRESSION)
+            &amp; attrib23(R_9_10_EXPRESSION,R_9_9_REGULAR) )
+         =&gt; ? [R_9_4_COMPILED,R_9_3_QED,R_9_1_KEN_APOS_S,R_9_5_MACHINE_CODE] :
+              ( ken_apos_s(R_9_1_KEN_APOS_S)
+              &amp; machine_code(R_9_5_MACHINE_CODE)
+              &amp; compiled(R_9_4_COMPILED,R_9_3_QED,R_9_5_MACHINE_CODE)
+              &amp; qED(R_9_3_QED)
+              &amp; gen(R_9_3_QED,R_9_1_KEN_APOS_S)
+              &amp; for_nim20(R_9_4_COMPILED,R_9_10_EXPRESSION) ) )
+      &amp; to_do(R_9_22_TO_DO,R_9_13_A_NDFA,R_9_24_THE_SEARCH)
+      &amp; z_9_a_history_of_qed_42(Z_9_A_HISTORY_OF_QED_42,R_9_13_A_NDFA,R_9_20_AUTOMATON)
+      &amp; automaton(R_9_20_AUTOMATON)
+      &amp; attrib49(R_9_20_AUTOMATON,R_9_18_DETERMINISTIC)
+      &amp; attrib52(R_9_20_AUTOMATON,R_9_19_FINITE)
+      &amp; qual44(R_9_20_AUTOMATON,R_9_16_NON) ) ).
 </pre>
 <br><hr><br>
 <svg width="1309pt" height="432pt"

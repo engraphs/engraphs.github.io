@@ -493,38 +493,34 @@ arc(z_000_30_a_lob_n02_2, r_0030_0013__for_when, conj2).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0030_0014__BLANCHE,R_0030_0016__JACK,R_0030_0015__AND,R_0030_0017__LEFT,R_0030_0019__HE,R_0030_0020__WENT,R_0030_0013__FOR_WHEN,Z_000_30_A_LOB_N02_2] :
-      ( r_0030_0014__Blanche(R_0030_0014__BLANCHE)
-      &amp; r_0030_0016__Jack(R_0030_0016__JACK)
-      &amp; r_0030_0019__he(R_0030_0019__HE)
-      &amp; z_000_30_a_lob_n02_2(Z_000_30_A_LOB_N02_2)
-      &amp; has_conj2(Z_000_30_A_LOB_N02_2,R_0030_0013__FOR_WHEN)
-      &amp; r_0030_0013__for_when(R_0030_0013__FOR_WHEN)
-      &amp; has_conj2(R_0030_0013__FOR_WHEN,R_0030_0020__WENT)
-      &amp; r_0030_0020__went(R_0030_0020__WENT)
-      &amp; has_arg0(R_0030_0020__WENT,R_0030_0019__HE)
-      &amp; has_r_0030_0021__with_nim64(R_0030_0020__WENT,R_0030_0015__AND)
-      &amp; r_0030_0015__and(R_0030_0015__AND)
-      &amp; has_conj2(R_0030_0015__AND,R_0030_0016__JACK)
-      &amp; has_conj1(R_0030_0015__AND,R_0030_0014__BLANCHE)
-      &amp; has_conj1(R_0030_0013__FOR_WHEN,R_0030_0017__LEFT)
-      &amp; r_0030_0017__left(R_0030_0017__LEFT)
-      &amp; has_arg0(R_0030_0017__LEFT,R_0030_0015__AND)
-      &amp; ! [R_0030_0005__CHANCE,R_0030_0008__PRIVATE,R_0030_0007__ANY_R_0030_0009__CONVERSATION] :
-          ( ( r_0030_0008__private(R_0030_0008__PRIVATE)
-            &amp; r_0030_0005__chance(R_0030_0005__CHANCE)
-            &amp; has_r_0030_0006__of(R_0030_0005__CHANCE,R_0030_0007__ANY_R_0030_0009__CONVERSATION)
-            &amp; r_0030_0007__any_r_0030_0009__conversation(R_0030_0007__ANY_R_0030_0009__CONVERSATION)
-            &amp; has_attrib23(R_0030_0007__ANY_R_0030_0009__CONVERSATION,R_0030_0008__PRIVATE) )
-         =&gt; ? [R_0030_0001__HE,R_0030_0003__HER,R_0030_0010__THAT_R_0030_0011__EVENING,R_0030_0002__GAVE] :
-              ( r_0030_0001__He(R_0030_0001__HE)
-              &amp; r_0030_0003__her(R_0030_0003__HER)
-              &amp; r_0030_0010__that_r_0030_0011__evening(R_0030_0010__THAT_R_0030_0011__EVENING)
-              &amp; r_0030_0002__gave(R_0030_0002__GAVE)
-              &amp; has_nim28(R_0030_0002__GAVE,R_0030_0010__THAT_R_0030_0011__EVENING)
-              &amp; has_arg1(R_0030_0002__GAVE,R_0030_0005__CHANCE)
-              &amp; has_arg2(R_0030_0002__GAVE,R_0030_0003__HER)
-              &amp; has_arg0(R_0030_0002__GAVE,R_0030_0001__HE) ) ) ) ).
+    ? [Z_30_A_LOB_N02_2,R_30_13_FOR_WHEN,R_30_17_LEFT,R_30_20_WENT,R_30_19_HE,R_30_15_AND,R_30_14_BLANCHE,R_30_16_JACK] :
+      ( he(R_30_19_HE)
+      &amp; blanche(R_30_14_BLANCHE)
+      &amp; jack(R_30_16_JACK)
+      &amp; ! [R_30_5_CHANCE,R_30_7_ANY_CONVERSATION,R_30_8_PRIVATE] :
+          ( ( private(R_30_8_PRIVATE)
+            &amp; chance(R_30_5_CHANCE)
+            &amp; of(R_30_5_CHANCE,R_30_7_ANY_CONVERSATION)
+            &amp; any_conversation(R_30_7_ANY_CONVERSATION)
+            &amp; attrib23(R_30_7_ANY_CONVERSATION,R_30_8_PRIVATE) )
+         =&gt; ? [R_30_2_GAVE,R_30_1_HE,R_30_3_HER,R_30_10_THAT_EVENING] :
+              ( he(R_30_1_HE)
+              &amp; her(R_30_3_HER)
+              &amp; that_evening(R_30_10_THAT_EVENING)
+              &amp; gave(R_30_2_GAVE,R_30_1_HE,R_30_5_CHANCE,R_30_3_HER)
+              &amp; nim28(R_30_2_GAVE,R_30_10_THAT_EVENING) ) )
+      &amp; conj1(CONJ1)
+      &amp; z_30_a_lob_n02_2(Z_30_A_LOB_N02_2)
+      &amp; conj2(Z_30_A_LOB_N02_2,R_30_13_FOR_WHEN)
+      &amp; for_when(R_30_13_FOR_WHEN)
+      &amp; conj1(R_30_13_FOR_WHEN,R_30_17_LEFT)
+      &amp; left(R_30_17_LEFT,R_30_15_AND)
+      &amp; and(R_30_15_AND)
+      &amp; conj1(R_30_15_AND,R_30_14_BLANCHE)
+      &amp; conj2(R_30_15_AND,R_30_16_JACK)
+      &amp; conj2(R_30_13_FOR_WHEN,R_30_20_WENT)
+      &amp; went(R_30_20_WENT,R_30_19_HE)
+      &amp; with_nim64(R_30_20_WENT,R_30_15_AND) ) ).
 </pre>
 <br><hr><br>
 <svg width="1007pt" height="523pt"

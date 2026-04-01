@@ -168,16 +168,14 @@ arc(r_0065_0004__susceptible, r_0065_0006__impacts, r_0065_0005__to).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0065_0001__MECHANICAL,R_0065_0002__WATCHES,R_0065_0006__IMPACTS,R_0065_0004__SUSCEPTIBLE,R_0065_0003__ARE] :
-      ( r_0065_0001__Mechanical(R_0065_0001__MECHANICAL)
-      &amp; r_0065_0006__impacts(R_0065_0006__IMPACTS)
-      &amp; r_0065_0003__are(R_0065_0003__ARE)
-      &amp; has_prd(R_0065_0003__ARE,R_0065_0004__SUSCEPTIBLE)
-      &amp; r_0065_0004__susceptible(R_0065_0004__SUSCEPTIBLE)
-      &amp; has_r_0065_0005__to(R_0065_0004__SUSCEPTIBLE,R_0065_0006__IMPACTS)
-      &amp; has_arg0(R_0065_0003__ARE,R_0065_0002__WATCHES)
-      &amp; r_0065_0002__watches(R_0065_0002__WATCHES)
-      &amp; has_attrib3(R_0065_0002__WATCHES,R_0065_0001__MECHANICAL) ) ).
+    ? [R_65_3_ARE,R_65_2_WATCHES,R_65_1_MECHANICAL,R_65_4_SUSCEPTIBLE,R_65_6_IMPACTS] :
+      ( mechanical(R_65_1_MECHANICAL)
+      &amp; impacts(R_65_6_IMPACTS)
+      &amp; are(R_65_3_ARE,R_65_2_WATCHES,R_65_4_SUSCEPTIBLE)
+      &amp; watches(R_65_2_WATCHES)
+      &amp; attrib3(R_65_2_WATCHES,R_65_1_MECHANICAL)
+      &amp; susceptible(R_65_4_SUSCEPTIBLE)
+      &amp; to(R_65_4_SUSCEPTIBLE,R_65_6_IMPACTS) ) ).
 </pre>
 <br><hr><br>
 <svg width="375pt" height="252pt"

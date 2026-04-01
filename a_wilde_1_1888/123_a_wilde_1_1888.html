@@ -333,26 +333,23 @@ arc(r_0123_0010__a_r_0123_0012__time, r_0123_0011__long, attrib30).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0123_0001__HE,R_0123_0011__LONG,R_0123_0010__A_R_0123_0012__TIME,R_0123_0014__THE_R_0123_0015__CHURCH_R_0123_0016__STEEPLE,R_0123_0009__SAT,R_0123_0008__AND] :
-      ( r_0123_0001__He(R_0123_0001__HE)
-      &amp; r_0123_0011__long(R_0123_0011__LONG)
-      &amp; r_0123_0014__the_r_0123_0015__church_r_0123_0016__steeple(R_0123_0014__THE_R_0123_0015__CHURCH_R_0123_0016__STEEPLE)
-      &amp; r_0123_0008__and(R_0123_0008__AND)
-      &amp; has_conj2(R_0123_0008__AND,R_0123_0009__SAT)
-      &amp; r_0123_0009__sat(R_0123_0009__SAT)
-      &amp; has_r_0123_0013__on_top_of_nim38(R_0123_0009__SAT,R_0123_0014__THE_R_0123_0015__CHURCH_R_0123_0016__STEEPLE)
-      &amp; has_nim27(R_0123_0009__SAT,R_0123_0010__A_R_0123_0012__TIME)
-      &amp; r_0123_0010__a_r_0123_0012__time(R_0123_0010__A_R_0123_0012__TIME)
-      &amp; has_attrib30(R_0123_0010__A_R_0123_0012__TIME,R_0123_0011__LONG)
-      &amp; has_arg0(R_0123_0009__SAT,R_0123_0001__HE)
-      &amp; ! [R_0123_0004__THE_R_0123_0006__MONUMENTS,R_0123_0005__PUBLIC] :
-          ( ( r_0123_0005__public(R_0123_0005__PUBLIC)
-            &amp; r_0123_0004__the_r_0123_0006__monuments(R_0123_0004__THE_R_0123_0006__MONUMENTS)
-            &amp; has_attrib14(R_0123_0004__THE_R_0123_0006__MONUMENTS,R_0123_0005__PUBLIC) )
-         =&gt; ? [R_0123_0002__VISITED] :
-              ( r_0123_0002__visited(R_0123_0002__VISITED)
-              &amp; has_arg1(R_0123_0002__VISITED,R_0123_0004__THE_R_0123_0006__MONUMENTS)
-              &amp; has_arg0(R_0123_0002__VISITED,R_0123_0001__HE) ) ) ) ).
+    ? [R_123_8_AND,R_123_9_SAT,R_123_1_HE,R_123_10_A_TIME,R_123_11_LONG,R_123_14_THE_CHURCH_STEEPLE] :
+      ( he(R_123_1_HE)
+      &amp; long(R_123_11_LONG)
+      &amp; the_church_steeple(R_123_14_THE_CHURCH_STEEPLE)
+      &amp; ! [R_123_4_THE_MONUMENTS,R_123_5_PUBLIC] :
+          ( ( public(R_123_5_PUBLIC)
+            &amp; the_monuments(R_123_4_THE_MONUMENTS)
+            &amp; attrib14(R_123_4_THE_MONUMENTS,R_123_5_PUBLIC) )
+         =&gt; ? [R_123_2_VISITED] : visited(R_123_2_VISITED,R_123_1_HE,R_123_4_THE_MONUMENTS) )
+      &amp; conj1(CONJ1)
+      &amp; and(R_123_8_AND)
+      &amp; conj2(R_123_8_AND,R_123_9_SAT)
+      &amp; sat(R_123_9_SAT,R_123_1_HE)
+      &amp; nim27(R_123_9_SAT,R_123_10_A_TIME)
+      &amp; a_time(R_123_10_A_TIME)
+      &amp; attrib30(R_123_10_A_TIME,R_123_11_LONG)
+      &amp; on_top_of_nim38(R_123_9_SAT,R_123_14_THE_CHURCH_STEEPLE) ) ).
 </pre>
 <br><hr><br>
 <svg width="741pt" height="342pt"

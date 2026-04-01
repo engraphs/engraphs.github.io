@@ -361,24 +361,22 @@ arc(z_000_81_a_hedgehog_3, r_0081_0002__else, qual6).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0081_0009__MY,R_0081_0010__SPEECH,R_0081_0013__ENDED_R_0081_0014__UP_R_0081_0015__MAKING,R_0081_0011__BEFORE] :
-      ( r_0081_0009__my(R_0081_0009__MY)
-      &amp; r_0081_0011__before(R_0081_0011__BEFORE)
-      &amp; has_conj1(R_0081_0011__BEFORE,R_0081_0013__ENDED_R_0081_0014__UP_R_0081_0015__MAKING)
-      &amp; r_0081_0013__ended_r_0081_0014__up_r_0081_0015__making(R_0081_0013__ENDED_R_0081_0014__UP_R_0081_0015__MAKING)
-      &amp; has_arg1(R_0081_0013__ENDED_R_0081_0014__UP_R_0081_0015__MAKING,R_0081_0010__SPEECH)
-      &amp; r_0081_0010__speech(R_0081_0010__SPEECH)
-      &amp; has_gen(R_0081_0010__SPEECH,R_0081_0009__MY)
-      &amp; has_arg0(R_0081_0013__ENDED_R_0081_0014__UP_R_0081_0015__MAKING,R_0081_0009__MY)
-      &amp; ! [Z_000_81_A_HEDGEHOG_3,R_0081_0002__ELSE] :
-          ( ( r_0081_0002__else(R_0081_0002__ELSE)
-            &amp; z_000_81_a_hedgehog_3(Z_000_81_A_HEDGEHOG_3)
-            &amp; has_qual6(Z_000_81_A_HEDGEHOG_3,R_0081_0002__ELSE) )
-         =&gt; ? [R_0081_0007__NOTICE,R_0081_0003__SEEMS_R_0081_0004__TO_R_0081_0005__HAVE_R_0081_0006__HAD] :
-              ( r_0081_0003__seems_r_0081_0004__to_r_0081_0005__have_r_0081_0006__had(R_0081_0003__SEEMS_R_0081_0004__TO_R_0081_0005__HAVE_R_0081_0006__HAD)
-              &amp; has_arg0(R_0081_0003__SEEMS_R_0081_0004__TO_R_0081_0005__HAVE_R_0081_0006__HAD,Z_000_81_A_HEDGEHOG_3)
-              &amp; has_arg1(R_0081_0003__SEEMS_R_0081_0004__TO_R_0081_0005__HAVE_R_0081_0006__HAD,R_0081_0007__NOTICE)
-              &amp; ~ has_r_0081_0008__of(R_0081_0007__NOTICE,R_0081_0010__SPEECH) ) ) ) ).
+    ? [R_81_11_BEFORE,R_81_13_ENDED_UP_MAKING,R_81_10_SPEECH,R_81_9_MY] :
+      ( my(R_81_9_MY)
+      &amp; ! [Z_81_A_HEDGEHOG_3,R_81_2_ELSE] :
+          ( ( else(R_81_2_ELSE)
+            &amp; z_81_a_hedgehog_3(Z_81_A_HEDGEHOG_3)
+            &amp; qual6(Z_81_A_HEDGEHOG_3,R_81_2_ELSE) )
+         =&gt; ? [R_81_3_SEEMS_TO_HAVE_HAD,R_81_7_NOTICE] :
+              ( seems_to_have_had(R_81_3_SEEMS_TO_HAVE_HAD,Z_81_A_HEDGEHOG_3,R_81_7_NOTICE)
+              &amp; notice(R_81_7_NOTICE)
+              &amp; of(R_81_7_NOTICE,R_81_10_SPEECH) ) )
+      &amp; conj2(CONJ2)
+      &amp; before(R_81_11_BEFORE)
+      &amp; conj1(R_81_11_BEFORE,R_81_13_ENDED_UP_MAKING)
+      &amp; ended_up_making(R_81_13_ENDED_UP_MAKING,R_81_9_MY,R_81_10_SPEECH)
+      &amp; speech(R_81_10_SPEECH)
+      &amp; gen(R_81_10_SPEECH,R_81_9_MY) ) ).
 </pre>
 <br><hr><br>
 <svg width="756pt" height="432pt"

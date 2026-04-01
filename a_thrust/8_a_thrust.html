@@ -237,19 +237,17 @@ arc(r_0008_0011__mission, r_0008_0010__successful, attrib26).
 </svg>
 <pre>
 fof(formula,axiom,
-    ! [R_0008_0011__MISSION,R_0008_0010__SUCCESSFUL] :
-      ( ( r_0008_0010__successful(R_0008_0010__SUCCESSFUL)
-        &amp; r_0008_0011__mission(R_0008_0011__MISSION)
-        &amp; has_attrib26(R_0008_0011__MISSION,R_0008_0010__SUCCESSFUL) )
-     =&gt; ? [R_0008_0001__YOU,R_0008_0003__A_R_0008_0004__BONUS,R_0008_0006__THE_R_0008_0007__END,R_0008_0002__RECEIVE] :
-          ( r_0008_0001__You(R_0008_0001__YOU)
-          &amp; r_0008_0003__a_r_0008_0004__bonus(R_0008_0003__A_R_0008_0004__BONUS)
-          &amp; r_0008_0002__receive(R_0008_0002__RECEIVE)
-          &amp; has_r_0008_0005__at_nim15(R_0008_0002__RECEIVE,R_0008_0006__THE_R_0008_0007__END)
-          &amp; r_0008_0006__the_r_0008_0007__end(R_0008_0006__THE_R_0008_0007__END)
-          &amp; has_r_0008_0008__of(R_0008_0006__THE_R_0008_0007__END,R_0008_0011__MISSION)
-          &amp; has_arg1(R_0008_0002__RECEIVE,R_0008_0003__A_R_0008_0004__BONUS)
-          &amp; has_arg0(R_0008_0002__RECEIVE,R_0008_0001__YOU) ) ) ).
+    ! [R_8_11_MISSION,R_8_10_SUCCESSFUL] :
+      ( ( successful(R_8_10_SUCCESSFUL)
+        &amp; mission(R_8_11_MISSION)
+        &amp; attrib26(R_8_11_MISSION,R_8_10_SUCCESSFUL) )
+     =&gt; ? [R_8_2_RECEIVE,R_8_1_YOU,R_8_3_A_BONUS,R_8_6_THE_END] :
+          ( you(R_8_1_YOU)
+          &amp; a_bonus(R_8_3_A_BONUS)
+          &amp; receive(R_8_2_RECEIVE,R_8_1_YOU,R_8_3_A_BONUS)
+          &amp; at_nim15(R_8_2_RECEIVE,R_8_6_THE_END)
+          &amp; the_end(R_8_6_THE_END)
+          &amp; of(R_8_6_THE_END,R_8_11_MISSION) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="513pt" height="342pt"

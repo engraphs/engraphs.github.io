@@ -412,32 +412,22 @@ arc(r_0010_0018__interests, r_0010_0002__the_r_0010_0004__time, gen).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0010_0003__SAME,R_0010_0002__THE_R_0010_0004__TIME,R_0010_0008__HAS] :
-      ( r_0010_0003__same(R_0010_0003__SAME)
-      &amp; r_0010_0008__has(R_0010_0008__HAS)
-      &amp; ! [R_0010_0013__FACILITY,R_0010_0018__INTERESTS,Z_000_10_A_LOB_A02_39,R_0010_0015__TO_R_0010_0016__SAFEGUARD,R_0010_0014__POSSIBLE] :
-          ( ( z_000_10_a_lob_a02_39(Z_000_10_A_LOB_A02_39)
-            &amp; r_0010_0013__facility(R_0010_0013__FACILITY)
-            &amp; has_attrib36(R_0010_0013__FACILITY,R_0010_0014__POSSIBLE)
-            &amp; r_0010_0014__possible(R_0010_0014__POSSIBLE)
-            &amp; has_emb39(R_0010_0014__POSSIBLE,R_0010_0015__TO_R_0010_0016__SAFEGUARD)
-            &amp; r_0010_0015__to_r_0010_0016__safeguard(R_0010_0015__TO_R_0010_0016__SAFEGUARD)
-            &amp; has_arg0(R_0010_0015__TO_R_0010_0016__SAFEGUARD,Z_000_10_A_LOB_A02_39)
-            &amp; has_arg1(R_0010_0015__TO_R_0010_0016__SAFEGUARD,R_0010_0018__INTERESTS)
-            &amp; r_0010_0018__interests(R_0010_0018__INTERESTS)
-            &amp; has_gen(R_0010_0018__INTERESTS,R_0010_0002__THE_R_0010_0004__TIME) )
-         =&gt; ? [R_0010_0005__THE_R_0010_0006__PRIME_R_0010_0007__MINISTER,R_0010_0010__COMMONWEALTH,R_0010_0011__GOVERNMENTS,R_0010_0009__OFFERED] :
-              ( r_0010_0005__the_r_0010_0006__Prime_r_0010_0007__Minister(R_0010_0005__THE_R_0010_0006__PRIME_R_0010_0007__MINISTER)
-              &amp; r_0010_0010__commonwealth(R_0010_0010__COMMONWEALTH)
-              &amp; r_0010_0009__offered(R_0010_0009__OFFERED)
-              &amp; has_arg1(R_0010_0009__OFFERED,R_0010_0013__FACILITY)
-              &amp; has_arg2(R_0010_0009__OFFERED,R_0010_0011__GOVERNMENTS)
-              &amp; r_0010_0011__governments(R_0010_0011__GOVERNMENTS)
-              &amp; has_attrib26(R_0010_0011__GOVERNMENTS,R_0010_0010__COMMONWEALTH)
-              &amp; has_arg0(R_0010_0009__OFFERED,R_0010_0005__THE_R_0010_0006__PRIME_R_0010_0007__MINISTER) ) )
-      &amp; has_r_0010_0001__At_nim5(R_0010_0008__HAS,R_0010_0002__THE_R_0010_0004__TIME)
-      &amp; r_0010_0002__the_r_0010_0004__time(R_0010_0002__THE_R_0010_0004__TIME)
-      &amp; has_attrib8(R_0010_0002__THE_R_0010_0004__TIME,R_0010_0003__SAME) ) ).
+    ? [R_10_2_THE_TIME,R_10_3_SAME] :
+      ( same(R_10_3_SAME)
+      &amp; ! [R_10_13_FACILITY,R_10_14_POSSIBLE,R_10_15_TO_SAFEGUARD,Z_10_A_LOB_A02_39,R_10_18_INTERESTS] :
+          ( ( facility(R_10_13_FACILITY)
+            &amp; attrib36(R_10_13_FACILITY,R_10_14_POSSIBLE)
+            &amp; possible(R_10_14_POSSIBLE)
+            &amp; emb39(R_10_14_POSSIBLE,R_10_15_TO_SAFEGUARD)
+            &amp; to_safeguard(R_10_15_TO_SAFEGUARD,Z_10_A_LOB_A02_39,R_10_18_INTERESTS)
+            &amp; interests(R_10_18_INTERESTS)
+            &amp; gen(R_10_18_INTERESTS,R_10_2_THE_TIME) )
+         =&gt; ? [R_10_9_OFFERED,R_10_5_THE_PRIME_MINISTER,R_10_11_GOVERNMENTS,R_10_10_COMMONWEALTH] :
+              ( the_Prime_Minister(R_10_5_THE_PRIME_MINISTER)
+              &amp; commonwealth(R_10_10_COMMONWEALTH)
+              &amp; offered(R_10_9_OFFERED,R_10_5_THE_PRIME_MINISTER,R_10_13_FACILITY,R_10_11_GOVERNMENTS)
+              &amp; governments(R_10_11_GOVERNMENTS)
+              &amp; attrib26(R_10_11_GOVERNMENTS,R_10_10_COMMONWEALTH) ) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="1002pt" height="387pt"

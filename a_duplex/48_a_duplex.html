@@ -301,25 +301,21 @@ arc(z_000_48_a_duplex_1, r_0048_0001__A_r_0048_0003__trick, nim2).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0048_0002__NIFTY,R_0048_0001__A_R_0048_0003__TRICK,R_0048_0006__TOURIST_R_0048_0007__HOTSPOTS,R_0048_0004__TO_R_0048_0005__AVOID] :
-      ( r_0048_0002__nifty(R_0048_0002__NIFTY)
-      &amp; r_0048_0006__tourist_r_0048_0007__hotspots(R_0048_0006__TOURIST_R_0048_0007__HOTSPOTS)
-      &amp; ! [R_0048_0010___APOS_RE,R_0048_0009__YOU,R_0048_0013__HOME,R_0048_0011__FAR] :
-          ( ( r_0048_0009__you(R_0048_0009__YOU)
-            &amp; r_0048_0013__home(R_0048_0013__HOME)
-            &amp; r_0048_0010___apos_re(R_0048_0010___APOS_RE)
-            &amp; has_prd(R_0048_0010___APOS_RE,R_0048_0011__FAR)
-            &amp; r_0048_0011__far(R_0048_0011__FAR)
-            &amp; has_r_0048_0012__from(R_0048_0011__FAR,R_0048_0013__HOME)
-            &amp; has_arg0(R_0048_0010___APOS_RE,R_0048_0009__YOU) )
-         =&gt; ? [Z_000_48_A_DUPLEX_1] :
-              ( z_000_48_a_duplex_1(Z_000_48_A_DUPLEX_1)
-              &amp; has_nim2(Z_000_48_A_DUPLEX_1,R_0048_0001__A_R_0048_0003__TRICK) ) )
-      &amp; r_0048_0004__to_r_0048_0005__avoid(R_0048_0004__TO_R_0048_0005__AVOID)
-      &amp; has_arg1(R_0048_0004__TO_R_0048_0005__AVOID,R_0048_0006__TOURIST_R_0048_0007__HOTSPOTS)
-      &amp; has_arg0(R_0048_0004__TO_R_0048_0005__AVOID,R_0048_0001__A_R_0048_0003__TRICK)
-      &amp; r_0048_0001__A_r_0048_0003__trick(R_0048_0001__A_R_0048_0003__TRICK)
-      &amp; has_attrib5(R_0048_0001__A_R_0048_0003__TRICK,R_0048_0002__NIFTY) ) ).
+    ? [R_48_4_TO_AVOID,R_48_1_A_TRICK,R_48_2_NIFTY,R_48_6_TOURIST_HOTSPOTS] :
+      ( nifty(R_48_2_NIFTY)
+      &amp; tourist_hotspots(R_48_6_TOURIST_HOTSPOTS)
+      &amp; to_avoid(R_48_4_TO_AVOID,R_48_1_A_TRICK,R_48_6_TOURIST_HOTSPOTS)
+      &amp; a_trick(R_48_1_A_TRICK)
+      &amp; attrib5(R_48_1_A_TRICK,R_48_2_NIFTY)
+      &amp; ! [R_48_10__APOS_RE,R_48_9_YOU,R_48_11_FAR,R_48_13_HOME] :
+          ( ( you(R_48_9_YOU)
+            &amp; home(R_48_13_HOME)
+            &amp; _apos_re(R_48_10__APOS_RE,R_48_9_YOU,R_48_11_FAR)
+            &amp; far(R_48_11_FAR)
+            &amp; from(R_48_11_FAR,R_48_13_HOME) )
+         =&gt; ? [Z_48_A_DUPLEX_1] :
+              ( z_48_a_duplex_1(Z_48_A_DUPLEX_1)
+              &amp; nim2(Z_48_A_DUPLEX_1,R_48_1_A_TRICK) ) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="594pt" height="342pt"

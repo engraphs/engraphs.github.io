@@ -480,36 +480,29 @@ arc(r_0030_0020__a_r_0030_0023__rabbit, r_0030_0022__little, attrib64).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0030_0001__HE,R_0030_0006__A_R_0030_0007__WALL,R_0030_0003__A_R_0030_0004__DOOR,R_0030_0002__FOUND,Z_000_30_A_POTTER_1902_36,R_0030_0011__WAS_R_0030_0012__LOCKED,R_0030_0014__AND,R_0030_0009__BUT] :
-      ( r_0030_0001__He(R_0030_0001__HE)
-      &amp; r_0030_0006__a_r_0030_0007__wall(R_0030_0006__A_R_0030_0007__WALL)
-      &amp; z_000_30_a_potter_1902_36(Z_000_30_A_POTTER_1902_36)
-      &amp; r_0030_0009__but(R_0030_0009__BUT)
-      &amp; has_conj2(R_0030_0009__BUT,R_0030_0014__AND)
-      &amp; r_0030_0014__and(R_0030_0014__AND)
-      &amp; ! [R_0030_0018__ROOM,R_0030_0021__FAT,R_0030_0022__LITTLE,R_0030_0020__A_R_0030_0023__RABBIT,R_0030_0019__FOR_R_0030_0024__TO_R_0030_0025__SQUEEZE] :
-          ( ( r_0030_0018__room(R_0030_0018__ROOM)
-            &amp; r_0030_0021__fat(R_0030_0021__FAT)
-            &amp; r_0030_0022__little(R_0030_0022__LITTLE)
-            &amp; r_0030_0019__for_r_0030_0024__to_r_0030_0025__squeeze(R_0030_0019__FOR_R_0030_0024__TO_R_0030_0025__SQUEEZE)
-            &amp; has_arg0(R_0030_0019__FOR_R_0030_0024__TO_R_0030_0025__SQUEEZE,R_0030_0020__A_R_0030_0023__RABBIT)
-            &amp; r_0030_0020__a_r_0030_0023__rabbit(R_0030_0020__A_R_0030_0023__RABBIT)
-            &amp; has_attrib64(R_0030_0020__A_R_0030_0023__RABBIT,R_0030_0022__LITTLE)
-            &amp; has_attrib61(R_0030_0020__A_R_0030_0023__RABBIT,R_0030_0021__FAT)
-            &amp; has_r_0030_0026__underneath_clr76(R_0030_0019__FOR_R_0030_0024__TO_R_0030_0025__SQUEEZE,R_0030_0018__ROOM) )
-         =&gt; ? [R_0030_0015__THERE_R_0030_0016__WAS] :
-              ( r_0030_0015__there_r_0030_0016__was(R_0030_0015__THERE_R_0030_0016__WAS)
-              &amp; has_arg0(R_0030_0015__THERE_R_0030_0016__WAS,R_0030_0018__ROOM) ) )
-      &amp; has_conj1(R_0030_0014__AND,R_0030_0011__WAS_R_0030_0012__LOCKED)
-      &amp; r_0030_0011__was_r_0030_0012__locked(R_0030_0011__WAS_R_0030_0012__LOCKED)
-      &amp; has_arg0(R_0030_0011__WAS_R_0030_0012__LOCKED,Z_000_30_A_POTTER_1902_36)
-      &amp; has_arg1(R_0030_0011__WAS_R_0030_0012__LOCKED,R_0030_0003__A_R_0030_0004__DOOR)
-      &amp; r_0030_0003__a_r_0030_0004__door(R_0030_0003__A_R_0030_0004__DOOR)
-      &amp; has_r_0030_0005__in(R_0030_0003__A_R_0030_0004__DOOR,R_0030_0006__A_R_0030_0007__WALL)
-      &amp; has_conj1(R_0030_0009__BUT,R_0030_0002__FOUND)
-      &amp; r_0030_0002__found(R_0030_0002__FOUND)
-      &amp; has_arg1(R_0030_0002__FOUND,R_0030_0003__A_R_0030_0004__DOOR)
-      &amp; has_arg0(R_0030_0002__FOUND,R_0030_0001__HE) ) ).
+    ? [R_30_9_BUT,R_30_2_FOUND,R_30_1_HE,R_30_14_AND,R_30_11_WAS_LOCKED,Z_30_A_POTTER_1902_36,R_30_3_A_DOOR,R_30_6_A_WALL] :
+      ( he(R_30_1_HE)
+      &amp; a_wall(R_30_6_A_WALL)
+      &amp; but(R_30_9_BUT)
+      &amp; conj1(R_30_9_BUT,R_30_2_FOUND)
+      &amp; found(R_30_2_FOUND,R_30_1_HE,R_30_3_A_DOOR)
+      &amp; a_door(R_30_3_A_DOOR)
+      &amp; in(R_30_3_A_DOOR,R_30_6_A_WALL)
+      &amp; conj2(R_30_9_BUT,R_30_14_AND)
+      &amp; ! [R_30_19_FOR_TO_SQUEEZE,R_30_20_A_RABBIT,R_30_21_FAT,R_30_22_LITTLE,R_30_18_ROOM] :
+          ( ( fat(R_30_21_FAT)
+            &amp; little(R_30_22_LITTLE)
+            &amp; room(R_30_18_ROOM)
+            &amp; for_to_squeeze(R_30_19_FOR_TO_SQUEEZE,R_30_20_A_RABBIT)
+            &amp; a_rabbit(R_30_20_A_RABBIT)
+            &amp; attrib61(R_30_20_A_RABBIT,R_30_21_FAT)
+            &amp; attrib64(R_30_20_A_RABBIT,R_30_22_LITTLE)
+            &amp; underneath_clr76(R_30_19_FOR_TO_SQUEEZE,R_30_18_ROOM) )
+         =&gt; ? [R_30_15_THERE_WAS] : there_was(R_30_15_THERE_WAS,R_30_18_ROOM) )
+      &amp; conj2(CONJ2)
+      &amp; and(R_30_14_AND)
+      &amp; conj1(R_30_14_AND,R_30_11_WAS_LOCKED)
+      &amp; was_locked(R_30_11_WAS_LOCKED,Z_30_A_POTTER_1902_36,R_30_3_A_DOOR) ) ).
 </pre>
 <br><hr><br>
 <svg width="1163pt" height="568pt"

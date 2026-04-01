@@ -276,21 +276,17 @@ arc(r_0046_0009__see, z_000_46_a_lockdown_22, arg0).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0046_0003__HORRIFYING,R_0046_0004__WHEN,R_0046_0005__I,R_0046_0006__REALISED,R_0046_0002__WAS] :
-      ( r_0046_0003__horrifying(R_0046_0003__HORRIFYING)
-      &amp; r_0046_0004__when(R_0046_0004__WHEN)
-      &amp; r_0046_0005__I(R_0046_0005__I)
-      &amp; r_0046_0002__was(R_0046_0002__WAS)
-      &amp; has_arg0(R_0046_0002__WAS,R_0046_0006__REALISED)
-      &amp; r_0046_0006__realised(R_0046_0006__REALISED)
-      &amp; ! [Z_000_46_A_LOCKDOWN_22] :
-          ( z_000_46_a_lockdown_22(Z_000_46_A_LOCKDOWN_22)
-         =&gt; ? [R_0046_0008__COULD_R_0046_0009__SEE] :
-              ( r_0046_0008__could_r_0046_0009__see(R_0046_0008__COULD_R_0046_0009__SEE)
-              &amp; has_arg0(R_0046_0008__COULD_R_0046_0009__SEE,Z_000_46_A_LOCKDOWN_22) ) )
-      &amp; has_arg0(R_0046_0006__REALISED,R_0046_0005__I)
-      &amp; has_nim12(R_0046_0006__REALISED,R_0046_0004__WHEN)
-      &amp; has_prd(R_0046_0002__WAS,R_0046_0003__HORRIFYING) ) ).
+    ? [R_46_2_WAS,R_46_6_REALISED,R_46_5_I,R_46_4_WHEN,R_46_3_HORRIFYING] :
+      ( i(R_46_5_I)
+      &amp; when(R_46_4_WHEN)
+      &amp; horrifying(R_46_3_HORRIFYING)
+      &amp; was(R_46_2_WAS,R_46_6_REALISED,R_46_3_HORRIFYING)
+      &amp; ! [Z_46_A_LOCKDOWN_22] :
+          ( true
+         =&gt; ? [R_46_8_COULD_SEE] : could_see(R_46_8_COULD_SEE,Z_46_A_LOCKDOWN_22) )
+      &amp; arg1(ARG1)
+      &amp; realised(R_46_6_REALISED,R_46_5_I)
+      &amp; nim12(R_46_6_REALISED,R_46_4_WHEN) ) ).
 </pre>
 <br><hr><br>
 <svg width="537pt" height="342pt"

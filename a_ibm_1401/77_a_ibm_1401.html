@@ -166,16 +166,16 @@ arc(z_000_77_a_ibm_1401_1, r_0077_0002__services, nim2).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0077_0001__OTHER,R_0077_0006__IBM_R_0077_0007__CUSTOMER,R_0077_0003__AVAILABLE,R_0077_0002__SERVICES,Z_000_77_A_IBM_1401_1] :
-      ( r_0077_0001__Other(R_0077_0001__OTHER)
-      &amp; r_0077_0006__IBM_r_0077_0007__customer(R_0077_0006__IBM_R_0077_0007__CUSTOMER)
-      &amp; z_000_77_a_ibm_1401_1(Z_000_77_A_IBM_1401_1)
-      &amp; has_nim2(Z_000_77_A_IBM_1401_1,R_0077_0002__SERVICES)
-      &amp; r_0077_0002__services(R_0077_0002__SERVICES)
-      &amp; has_attrib8(R_0077_0002__SERVICES,R_0077_0003__AVAILABLE)
-      &amp; r_0077_0003__available(R_0077_0003__AVAILABLE)
-      &amp; has_r_0077_0004__to(R_0077_0003__AVAILABLE,R_0077_0006__IBM_R_0077_0007__CUSTOMER)
-      &amp; has_attrib3(R_0077_0002__SERVICES,R_0077_0001__OTHER) ) ).
+    ? [Z_77_A_IBM_1401_1,R_77_2_SERVICES,R_77_1_OTHER,R_77_3_AVAILABLE,R_77_6_IBM_CUSTOMER] :
+      ( other(R_77_1_OTHER)
+      &amp; iBM_customer(R_77_6_IBM_CUSTOMER)
+      &amp; z_77_a_ibm_1401_1(Z_77_A_IBM_1401_1)
+      &amp; nim2(Z_77_A_IBM_1401_1,R_77_2_SERVICES)
+      &amp; services(R_77_2_SERVICES)
+      &amp; attrib3(R_77_2_SERVICES,R_77_1_OTHER)
+      &amp; attrib8(R_77_2_SERVICES,R_77_3_AVAILABLE)
+      &amp; available(R_77_3_AVAILABLE)
+      &amp; to(R_77_3_AVAILABLE,R_77_6_IBM_CUSTOMER) ) ).
 </pre>
 <br><hr><br>
 <svg width="394pt" height="297pt"

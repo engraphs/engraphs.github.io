@@ -421,31 +421,21 @@ arc(z_000_79_a_seiko_9r65_49, r_0079_0018__to_r_0079_0019__wind, restriction).
 </svg>
 <pre>
 fof(formula,axiom,
-    ! [R_0079_0003__STARTING_R_0079_0004__TO_R_0079_0005__USE,R_0079_0007__STOPPED,R_0079_0006__A_R_0079_0008__WATCH,Z_000_79_A_SEIKO_9R65_7] :
-      ( ( r_0079_0007__stopped(R_0079_0007__STOPPED)
-        &amp; z_000_79_a_seiko_9r65_7(Z_000_79_A_SEIKO_9R65_7)
-        &amp; r_0079_0003__starting_r_0079_0004__to_r_0079_0005__use(R_0079_0003__STARTING_R_0079_0004__TO_R_0079_0005__USE)
-        &amp; has_arg0(R_0079_0003__STARTING_R_0079_0004__TO_R_0079_0005__USE,Z_000_79_A_SEIKO_9R65_7)
-        &amp; has_arg1(R_0079_0003__STARTING_R_0079_0004__TO_R_0079_0005__USE,R_0079_0006__A_R_0079_0008__WATCH)
-        &amp; r_0079_0006__a_r_0079_0008__watch(R_0079_0006__A_R_0079_0008__WATCH)
-        &amp; has_attrib18(R_0079_0006__A_R_0079_0008__WATCH,R_0079_0007__STOPPED) )
-     =&gt; ? [Z_000_79_A_SEIKO_9R65_31,R_0079_0014__YOU,R_0079_0016__THE_R_0079_0017__CROWN,R_0079_0013__THAT_R_0079_0015__TURN,R_0079_0020__THE_R_0079_0021__MAINSPRING,R_0079_0018__TO_R_0079_0019__WIND,Z_000_79_A_SEIKO_9R65_49,R_0079_0001___WHITE_CIRCLE__R_0079_0011__IS_R_0079_0012__RECOMMENDED] :
-          ( r_0079_0014__you(R_0079_0014__YOU)
-          &amp; r_0079_0016__the_r_0079_0017__crown(R_0079_0016__THE_R_0079_0017__CROWN)
-          &amp; r_0079_0020__the_r_0079_0021__mainspring(R_0079_0020__THE_R_0079_0021__MAINSPRING)
-          &amp; z_000_79_a_seiko_9r65_31(Z_000_79_A_SEIKO_9R65_31)
-          &amp; r_0079_0001___white_circle__r_0079_0011__is_r_0079_0012__recommended(R_0079_0001___WHITE_CIRCLE__R_0079_0011__IS_R_0079_0012__RECOMMENDED)
-          &amp; has_arg1(R_0079_0001___WHITE_CIRCLE__R_0079_0011__IS_R_0079_0012__RECOMMENDED,Z_000_79_A_SEIKO_9R65_49)
-          &amp; z_000_79_a_seiko_9r65_49(Z_000_79_A_SEIKO_9R65_49)
-          &amp; has_conj1(Z_000_79_A_SEIKO_9R65_49,R_0079_0018__TO_R_0079_0019__WIND)
-          &amp; r_0079_0018__to_r_0079_0019__wind(R_0079_0018__TO_R_0079_0019__WIND)
-          &amp; has_arg1(R_0079_0018__TO_R_0079_0019__WIND,R_0079_0020__THE_R_0079_0021__MAINSPRING)
-          &amp; has_arg0(R_0079_0018__TO_R_0079_0019__WIND,R_0079_0014__YOU)
-          &amp; has_conj2(Z_000_79_A_SEIKO_9R65_49,R_0079_0013__THAT_R_0079_0015__TURN)
-          &amp; r_0079_0013__that_r_0079_0015__turn(R_0079_0013__THAT_R_0079_0015__TURN)
-          &amp; has_arg1(R_0079_0013__THAT_R_0079_0015__TURN,R_0079_0016__THE_R_0079_0017__CROWN)
-          &amp; has_arg0(R_0079_0013__THAT_R_0079_0015__TURN,R_0079_0014__YOU)
-          &amp; has_arg0(R_0079_0001___WHITE_CIRCLE__R_0079_0011__IS_R_0079_0012__RECOMMENDED,Z_000_79_A_SEIKO_9R65_31) ) ) ).
+    ! [R_79_3_STARTING_TO_USE,Z_79_A_SEIKO_9R65_7,R_79_6_A_WATCH,R_79_7_STOPPED] :
+      ( ( stopped(R_79_7_STOPPED)
+        &amp; starting_to_use(R_79_3_STARTING_TO_USE,Z_79_A_SEIKO_9R65_7,R_79_6_A_WATCH)
+        &amp; a_watch(R_79_6_A_WATCH)
+        &amp; attrib18(R_79_6_A_WATCH,R_79_7_STOPPED) )
+     =&gt; ? [R_79_1__WHITE_CIRCLE_IS_RECOMMENDED,Z_79_A_SEIKO_9R65_31,Z_79_A_SEIKO_9R65_49,R_79_18_TO_WIND,R_79_20_THE_MAINSPRING,R_79_13_THAT_TURN,R_79_14_YOU,R_79_16_THE_CROWN] :
+          ( the_mainspring(R_79_20_THE_MAINSPRING)
+          &amp; you(R_79_14_YOU)
+          &amp; the_crown(R_79_16_THE_CROWN)
+          &amp; _white_circle_is_recommended(R_79_1__WHITE_CIRCLE_IS_RECOMMENDED,Z_79_A_SEIKO_9R65_31,Z_79_A_SEIKO_9R65_49)
+          &amp; z_79_a_seiko_9r65_49(Z_79_A_SEIKO_9R65_49)
+          &amp; conj1(Z_79_A_SEIKO_9R65_49,R_79_18_TO_WIND)
+          &amp; to_wind(R_79_18_TO_WIND,R_79_14_YOU,R_79_20_THE_MAINSPRING)
+          &amp; conj2(Z_79_A_SEIKO_9R65_49,R_79_13_THAT_TURN)
+          &amp; that_turn(R_79_13_THAT_TURN,R_79_14_YOU,R_79_16_THE_CROWN) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="1036pt" height="387pt"

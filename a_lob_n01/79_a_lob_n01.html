@@ -619,45 +619,36 @@ arc(r_0079_0030__cattle, r_0079_0029__grazing, attrib81).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0079_0001__SHE,R_0079_0007__THE_R_0079_0008__RUNWAY,R_0079_0012__QUITE,R_0079_0013__SERVICEABLE,R_0079_0010__FOUND,R_0079_0009__AND,R_0079_0002__HAD,R_0079_0018__ALASTAIR,R_0079_0019__HAD_R_0079_0020__FEARED,R_0079_0023__WHOLE,R_0079_0022__THE_R_0079_0024__LANDING_R_0079_0025__AREA,R_0079_0029__GRAZING,R_0079_0030__CATTLE,R_0079_0026__WAS_R_0079_0027__OBSTRUCTED,R_0079_0017__AS,R_0079_0015__ALTHOUGH] :
-      ( r_0079_0001__She(R_0079_0001__SHE)
-      &amp; r_0079_0007__the_r_0079_0008__runway(R_0079_0007__THE_R_0079_0008__RUNWAY)
-      &amp; r_0079_0012__quite(R_0079_0012__QUITE)
-      &amp; r_0079_0018__Alastair(R_0079_0018__ALASTAIR)
-      &amp; r_0079_0023__whole(R_0079_0023__WHOLE)
-      &amp; r_0079_0029__grazing(R_0079_0029__GRAZING)
-      &amp; r_0079_0015__although(R_0079_0015__ALTHOUGH)
-      &amp; has_conj1(R_0079_0015__ALTHOUGH,R_0079_0017__AS)
-      &amp; r_0079_0017__as(R_0079_0017__AS)
-      &amp; has_conj2(R_0079_0017__AS,R_0079_0026__WAS_R_0079_0027__OBSTRUCTED)
-      &amp; r_0079_0026__was_r_0079_0027__obstructed(R_0079_0026__WAS_R_0079_0027__OBSTRUCTED)
-      &amp; has_arg0(R_0079_0026__WAS_R_0079_0027__OBSTRUCTED,R_0079_0030__CATTLE)
-      &amp; r_0079_0030__cattle(R_0079_0030__CATTLE)
-      &amp; has_attrib81(R_0079_0030__CATTLE,R_0079_0029__GRAZING)
-      &amp; has_arg1(R_0079_0026__WAS_R_0079_0027__OBSTRUCTED,R_0079_0022__THE_R_0079_0024__LANDING_R_0079_0025__AREA)
-      &amp; r_0079_0022__the_r_0079_0024__landing_r_0079_0025__area(R_0079_0022__THE_R_0079_0024__LANDING_R_0079_0025__AREA)
-      &amp; has_attrib65(R_0079_0022__THE_R_0079_0024__LANDING_R_0079_0025__AREA,R_0079_0023__WHOLE)
-      &amp; has_conj1(R_0079_0017__AS,R_0079_0019__HAD_R_0079_0020__FEARED)
-      &amp; r_0079_0019__had_r_0079_0020__feared(R_0079_0019__HAD_R_0079_0020__FEARED)
-      &amp; has_arg0(R_0079_0019__HAD_R_0079_0020__FEARED,R_0079_0018__ALASTAIR)
-      &amp; has_conj2(R_0079_0015__ALTHOUGH,R_0079_0002__HAD)
-      &amp; r_0079_0002__had(R_0079_0002__HAD)
-      &amp; has_keep_scope(R_0079_0002__HAD,R_0079_0009__AND)
-      &amp; r_0079_0009__and(R_0079_0009__AND)
-      &amp; has_conj2(R_0079_0009__AND,R_0079_0010__FOUND)
-      &amp; r_0079_0010__found(R_0079_0010__FOUND)
-      &amp; has_prd(R_0079_0010__FOUND,R_0079_0013__SERVICEABLE)
-      &amp; r_0079_0013__serviceable(R_0079_0013__SERVICEABLE)
-      &amp; has_qual35(R_0079_0013__SERVICEABLE,R_0079_0012__QUITE)
-      &amp; has_arg1(R_0079_0010__FOUND,R_0079_0007__THE_R_0079_0008__RUNWAY)
-      &amp; has_arg0(R_0079_0010__FOUND,R_0079_0001__SHE)
-      &amp; ! [R_0079_0005__INCH] :
-          ( ( r_0079_0005__inch(R_0079_0005__INCH)
-            &amp; has_r_0079_0006__of(R_0079_0005__INCH,R_0079_0007__THE_R_0079_0008__RUNWAY) )
-         =&gt; ? [R_0079_0003__EXAMINED] :
-              ( r_0079_0003__examined(R_0079_0003__EXAMINED)
-              &amp; has_arg1(R_0079_0003__EXAMINED,R_0079_0005__INCH)
-              &amp; has_arg0(R_0079_0003__EXAMINED,R_0079_0001__SHE) ) ) ) ).
+    ? [R_79_15_ALTHOUGH,R_79_17_AS,R_79_19_HAD_FEARED,R_79_18_ALASTAIR,R_79_26_WAS_OBSTRUCTED,R_79_30_CATTLE,R_79_29_GRAZING,R_79_22_THE_LANDING_AREA,R_79_23_WHOLE] :
+      ( alastair(R_79_18_ALASTAIR)
+      &amp; grazing(R_79_29_GRAZING)
+      &amp; whole(R_79_23_WHOLE)
+      &amp; although(R_79_15_ALTHOUGH)
+      &amp; conj1(R_79_15_ALTHOUGH,R_79_17_AS)
+      &amp; as(R_79_17_AS)
+      &amp; conj1(R_79_17_AS,R_79_19_HAD_FEARED)
+      &amp; had_feared(R_79_19_HAD_FEARED,R_79_18_ALASTAIR)
+      &amp; conj2(R_79_17_AS,R_79_26_WAS_OBSTRUCTED)
+      &amp; was_obstructed(R_79_26_WAS_OBSTRUCTED,R_79_30_CATTLE,R_79_22_THE_LANDING_AREA)
+      &amp; cattle(R_79_30_CATTLE)
+      &amp; attrib81(R_79_30_CATTLE,R_79_29_GRAZING)
+      &amp; the_landing_area(R_79_22_THE_LANDING_AREA)
+      &amp; attrib65(R_79_22_THE_LANDING_AREA,R_79_23_WHOLE)
+      &amp; conj2(R_79_15_ALTHOUGH,R_79_2_HAD)
+      &amp; ~ ? [R_79_9_AND,R_79_10_FOUND,R_79_1_SHE,R_79_7_THE_RUNWAY,R_79_13_SERVICEABLE,R_79_12_QUITE] :
+            ( she(R_79_1_SHE)
+            &amp; the_runway(R_79_7_THE_RUNWAY)
+            &amp; quite(R_79_12_QUITE)
+            &amp; ! [R_79_5_INCH] :
+                ( ( inch(R_79_5_INCH)
+                  &amp; of(R_79_5_INCH,R_79_7_THE_RUNWAY) )
+               =&gt; ? [R_79_3_EXAMINED] : examined(R_79_3_EXAMINED,R_79_1_SHE,R_79_5_INCH) )
+            &amp; conj1(CONJ1)
+            &amp; and(R_79_9_AND)
+            &amp; conj2(R_79_9_AND,R_79_10_FOUND)
+            &amp; found(R_79_10_FOUND,R_79_1_SHE,R_79_7_THE_RUNWAY,R_79_13_SERVICEABLE)
+            &amp; serviceable(R_79_13_SERVICEABLE)
+            &amp; qual35(R_79_13_SERVICEABLE,R_79_12_QUITE) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="1396pt" height="387pt"

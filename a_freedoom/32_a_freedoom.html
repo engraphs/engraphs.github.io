@@ -264,21 +264,19 @@ arc(r_0032_0009__line, r_0032_0011__sight, r_0032_0010__of).
 </svg>
 <pre>
 fof(formula,axiom,
-    ! [R_0032_0006___APOS_RE,R_0032_0005__YOU,R_0032_0001__MONSTERS,R_0032_0011__SIGHT,R_0032_0009__LINE] :
-      ( ( r_0032_0001__Monsters(R_0032_0001__MONSTERS)
-        &amp; r_0032_0005__you(R_0032_0005__YOU)
-        &amp; r_0032_0011__sight(R_0032_0011__SIGHT)
-        &amp; r_0032_0006___apos_re(R_0032_0006___APOS_RE)
-        &amp; has_r_0032_0007__in_clr22(R_0032_0006___APOS_RE,R_0032_0009__LINE)
-        &amp; r_0032_0009__line(R_0032_0009__LINE)
-        &amp; has_r_0032_0010__of(R_0032_0009__LINE,R_0032_0011__SIGHT)
-        &amp; has_gen(R_0032_0009__LINE,R_0032_0001__MONSTERS)
-        &amp; has_arg0(R_0032_0006___APOS_RE,R_0032_0005__YOU) )
-     =&gt; ? [R_0032_0002__ONLY,R_0032_0003__ATTACK] :
-          ( r_0032_0002__only(R_0032_0002__ONLY)
-          &amp; r_0032_0003__attack(R_0032_0003__ATTACK)
-          &amp; has_nim5(R_0032_0003__ATTACK,R_0032_0002__ONLY)
-          &amp; has_arg0(R_0032_0003__ATTACK,R_0032_0001__MONSTERS) ) ) ).
+    ! [R_32_6__APOS_RE,R_32_5_YOU,R_32_9_LINE,R_32_1_MONSTERS,R_32_11_SIGHT] :
+      ( ( you(R_32_5_YOU)
+        &amp; monsters(R_32_1_MONSTERS)
+        &amp; sight(R_32_11_SIGHT)
+        &amp; _apos_re(R_32_6__APOS_RE,R_32_5_YOU)
+        &amp; in_clr22(R_32_6__APOS_RE,R_32_9_LINE)
+        &amp; line(R_32_9_LINE)
+        &amp; gen(R_32_9_LINE,R_32_1_MONSTERS)
+        &amp; of(R_32_9_LINE,R_32_11_SIGHT) )
+     =&gt; ? [R_32_3_ATTACK,R_32_2_ONLY] :
+          ( only(R_32_2_ONLY)
+          &amp; attack(R_32_3_ATTACK,R_32_1_MONSTERS)
+          &amp; nim5(R_32_3_ATTACK,R_32_2_ONLY) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="511pt" height="387pt"

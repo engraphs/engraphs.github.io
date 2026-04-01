@@ -604,44 +604,40 @@ arc(r_0076_0031__concentration, r_0076_0022__the_r_0076_0024__oxygen, gen).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0076_0001__HOWEVER,R_0076_0003__IT,R_0076_0009__SUITABLE,R_0076_0008__A_R_0076_0010__ELECTROLYTE,R_0076_0006__DEVELOPMENT,R_0076_0004__WILL_R_0076_0005__REQUIRE,R_0076_0011__AND] :
-      ( r_0076_0001__However(R_0076_0001__HOWEVER)
-      &amp; r_0076_0003__it(R_0076_0003__IT)
-      &amp; r_0076_0009__suitable(R_0076_0009__SUITABLE)
-      &amp; r_0076_0011__and(R_0076_0011__AND)
-      &amp; ! [R_0076_0025__VARIES,R_0076_0023__DISSOLVED,R_0076_0022__THE_R_0076_0024__OXYGEN,R_0076_0019__THE_R_0076_0020__ACTIVITY,R_0076_0026__SUFFICIENTLY,R_0076_0031__CONCENTRATION,R_0076_0028__CHANGES] :
-          ( ( r_0076_0023__dissolved(R_0076_0023__DISSOLVED)
-            &amp; r_0076_0026__sufficiently(R_0076_0026__SUFFICIENTLY)
-            &amp; r_0076_0025__varies(R_0076_0025__VARIES)
-            &amp; has_r_0076_0027__with_nim80(R_0076_0025__VARIES,R_0076_0028__CHANGES)
-            &amp; r_0076_0028__changes(R_0076_0028__CHANGES)
-            &amp; has_r_0076_0029__in(R_0076_0028__CHANGES,R_0076_0031__CONCENTRATION)
-            &amp; r_0076_0031__concentration(R_0076_0031__CONCENTRATION)
-            &amp; has_gen(R_0076_0031__CONCENTRATION,R_0076_0022__THE_R_0076_0024__OXYGEN)
-            &amp; r_0076_0022__the_r_0076_0024__oxygen(R_0076_0022__THE_R_0076_0024__OXYGEN)
-            &amp; has_attrib67(R_0076_0022__THE_R_0076_0024__OXYGEN,R_0076_0023__DISSOLVED)
-            &amp; has_nim74(R_0076_0025__VARIES,R_0076_0026__SUFFICIENTLY)
-            &amp; has_arg0(R_0076_0025__VARIES,R_0076_0019__THE_R_0076_0020__ACTIVITY)
-            &amp; r_0076_0019__the_r_0076_0020__activity(R_0076_0019__THE_R_0076_0020__ACTIVITY)
-            &amp; has_r_0076_0021__of(R_0076_0019__THE_R_0076_0020__ACTIVITY,R_0076_0022__THE_R_0076_0024__OXYGEN) )
-         =&gt; ? [R_0076_0012__EVEN_THEN,R_0076_0015__ONLY,R_0076_0017__USEFUL,R_0076_0014__WILL_R_0076_0016__BE] :
-              ( r_0076_0012__even_then(R_0076_0012__EVEN_THEN)
-              &amp; r_0076_0015__only(R_0076_0015__ONLY)
-              &amp; r_0076_0017__useful(R_0076_0017__USEFUL)
-              &amp; r_0076_0014__will_r_0076_0016__be(R_0076_0014__WILL_R_0076_0016__BE)
-              &amp; has_prd(R_0076_0014__WILL_R_0076_0016__BE,R_0076_0017__USEFUL)
-              &amp; has_nim44(R_0076_0014__WILL_R_0076_0016__BE,R_0076_0015__ONLY)
-              &amp; has_arg0(R_0076_0014__WILL_R_0076_0016__BE,R_0076_0008__A_R_0076_0010__ELECTROLYTE)
-              &amp; has_nim35(R_0076_0014__WILL_R_0076_0016__BE,R_0076_0012__EVEN_THEN) ) )
-      &amp; has_conj1(R_0076_0011__AND,R_0076_0004__WILL_R_0076_0005__REQUIRE)
-      &amp; r_0076_0004__will_r_0076_0005__require(R_0076_0004__WILL_R_0076_0005__REQUIRE)
-      &amp; has_arg1(R_0076_0004__WILL_R_0076_0005__REQUIRE,R_0076_0006__DEVELOPMENT)
-      &amp; r_0076_0006__development(R_0076_0006__DEVELOPMENT)
-      &amp; has_r_0076_0007__of(R_0076_0006__DEVELOPMENT,R_0076_0008__A_R_0076_0010__ELECTROLYTE)
-      &amp; r_0076_0008__a_r_0076_0010__electrolyte(R_0076_0008__A_R_0076_0010__ELECTROLYTE)
-      &amp; has_attrib26(R_0076_0008__A_R_0076_0010__ELECTROLYTE,R_0076_0009__SUITABLE)
-      &amp; has_arg0(R_0076_0004__WILL_R_0076_0005__REQUIRE,R_0076_0003__IT)
-      &amp; has_nim4(R_0076_0004__WILL_R_0076_0005__REQUIRE,R_0076_0001__HOWEVER) ) ).
+    ? [R_76_11_AND,R_76_4_WILL_REQUIRE,R_76_3_IT,R_76_6_DEVELOPMENT,R_76_8_A_ELECTROLYTE,R_76_9_SUITABLE,R_76_1_HOWEVER] :
+      ( it(R_76_3_IT)
+      &amp; suitable(R_76_9_SUITABLE)
+      &amp; however(R_76_1_HOWEVER)
+      &amp; ! [R_76_25_VARIES,R_76_19_THE_ACTIVITY,R_76_26_SUFFICIENTLY,R_76_28_CHANGES,R_76_31_CONCENTRATION,R_76_22_THE_OXYGEN,R_76_23_DISSOLVED] :
+          ( ( sufficiently(R_76_26_SUFFICIENTLY)
+            &amp; dissolved(R_76_23_DISSOLVED)
+            &amp; varies(R_76_25_VARIES,R_76_19_THE_ACTIVITY)
+            &amp; the_activity(R_76_19_THE_ACTIVITY)
+            &amp; of(R_76_19_THE_ACTIVITY,R_76_22_THE_OXYGEN)
+            &amp; the_oxygen(R_76_22_THE_OXYGEN)
+            &amp; attrib67(R_76_22_THE_OXYGEN,R_76_23_DISSOLVED)
+            &amp; nim74(R_76_25_VARIES,R_76_26_SUFFICIENTLY)
+            &amp; with_nim80(R_76_25_VARIES,R_76_28_CHANGES)
+            &amp; changes(R_76_28_CHANGES)
+            &amp; in(R_76_28_CHANGES,R_76_31_CONCENTRATION)
+            &amp; concentration(R_76_31_CONCENTRATION)
+            &amp; gen(R_76_31_CONCENTRATION,R_76_22_THE_OXYGEN) )
+         =&gt; ? [R_76_14_WILL_BE,R_76_12_EVEN_THEN,R_76_15_ONLY,R_76_17_USEFUL] :
+              ( even_then(R_76_12_EVEN_THEN)
+              &amp; only(R_76_15_ONLY)
+              &amp; useful(R_76_17_USEFUL)
+              &amp; will_be(R_76_14_WILL_BE,R_76_8_A_ELECTROLYTE,R_76_17_USEFUL)
+              &amp; nim35(R_76_14_WILL_BE,R_76_12_EVEN_THEN)
+              &amp; nim44(R_76_14_WILL_BE,R_76_15_ONLY) ) )
+      &amp; conj2(CONJ2)
+      &amp; and(R_76_11_AND)
+      &amp; conj1(R_76_11_AND,R_76_4_WILL_REQUIRE)
+      &amp; will_require(R_76_4_WILL_REQUIRE,R_76_3_IT,R_76_6_DEVELOPMENT)
+      &amp; development(R_76_6_DEVELOPMENT)
+      &amp; of(R_76_6_DEVELOPMENT,R_76_8_A_ELECTROLYTE)
+      &amp; a_electrolyte(R_76_8_A_ELECTROLYTE)
+      &amp; attrib26(R_76_8_A_ELECTROLYTE,R_76_9_SUITABLE)
+      &amp; nim4(R_76_4_WILL_REQUIRE,R_76_1_HOWEVER) ) ).
 </pre>
 <br><hr><br>
 <svg width="1534pt" height="568pt"

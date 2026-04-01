@@ -642,46 +642,40 @@ arc(r_0064_0037__that_r_0064_0040__contained, r_0064_0038__the_r_0064_0039__hous
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0064_0024__CASUAL,R_0064_0023__A_R_0064_0025__RAINFALL,R_0064_0026__WAS_R_0064_0027__UTILIZED,R_0064_0022__AND] :
-      ( r_0064_0024__casual(R_0064_0024__CASUAL)
-      &amp; r_0064_0022__and(R_0064_0022__AND)
-      &amp; has_conj2(R_0064_0022__AND,R_0064_0026__WAS_R_0064_0027__UTILIZED)
-      &amp; r_0064_0026__was_r_0064_0027__utilized(R_0064_0026__WAS_R_0064_0027__UTILIZED)
-      &amp; ! [R_0064_0036__UTENSIL,R_0064_0038__THE_R_0064_0039__HOUSE,R_0064_0037__THAT_R_0064_0040__CONTAINED] :
-          ( ( r_0064_0036__utensil(R_0064_0036__UTENSIL)
-            &amp; r_0064_0038__the_r_0064_0039__house(R_0064_0038__THE_R_0064_0039__HOUSE)
-            &amp; r_0064_0037__that_r_0064_0040__contained(R_0064_0037__THAT_R_0064_0040__CONTAINED)
-            &amp; has_arg0(R_0064_0037__THAT_R_0064_0040__CONTAINED,R_0064_0038__THE_R_0064_0039__HOUSE)
-            &amp; has_arg1(R_0064_0037__THAT_R_0064_0040__CONTAINED,R_0064_0036__UTENSIL) )
-         =&gt; ? [R_0064_0033__CATCHERS,Z_000_64_A_HARDY_1883_78,R_0064_0029__TURNING_R_0064_0030__OUT] :
-              ( r_0064_0033__catchers(R_0064_0033__CATCHERS)
-              &amp; z_000_64_a_hardy_1883_78(Z_000_64_A_HARDY_1883_78)
-              &amp; r_0064_0029__turning_r_0064_0030__out(R_0064_0029__TURNING_R_0064_0030__OUT)
-              &amp; has_arg0(R_0064_0029__TURNING_R_0064_0030__OUT,Z_000_64_A_HARDY_1883_78)
-              &amp; has_arg1(R_0064_0029__TURNING_R_0064_0030__OUT,R_0064_0036__UTENSIL)
-              &amp; has_r_0064_0032__as_nim88(R_0064_0029__TURNING_R_0064_0030__OUT,R_0064_0033__CATCHERS) ) )
-      &amp; has_arg0(R_0064_0026__WAS_R_0064_0027__UTILIZED,R_0064_0023__A_R_0064_0025__RAINFALL)
-      &amp; r_0064_0023__a_r_0064_0025__rainfall(R_0064_0023__A_R_0064_0025__RAINFALL)
-      &amp; has_attrib65(R_0064_0023__A_R_0064_0025__RAINFALL,R_0064_0024__CASUAL)
-      &amp; ! [R_0064_0009__DOMICILES,R_0064_0008__ELEVATED] :
-          ( ( r_0064_0008__elevated(R_0064_0008__ELEVATED)
-            &amp; r_0064_0009__domiciles(R_0064_0009__DOMICILES)
-            &amp; has_attrib22(R_0064_0009__DOMICILES,R_0064_0008__ELEVATED) )
-         =&gt; ? [R_0064_0003__HIGHER_R_0064_0004__CROWSTAIRS,R_0064_0012__GRAND,R_0064_0015__HOUSEKEEPING,R_0064_0011__THE_R_0064_0013__DIFFICULTY,R_0064_0020__WATER,R_0064_0017__AN_R_0064_0018__INSUFFICIENCY,R_0064_0001__FOR_R_0064_0016__WAS] :
-              ( r_0064_0003__Higher_r_0064_0004__Crowstairs(R_0064_0003__HIGHER_R_0064_0004__CROWSTAIRS)
-              &amp; r_0064_0012__grand(R_0064_0012__GRAND)
-              &amp; r_0064_0015__housekeeping(R_0064_0015__HOUSEKEEPING)
-              &amp; r_0064_0020__water(R_0064_0020__WATER)
-              &amp; r_0064_0001__For_r_0064_0016__was(R_0064_0001__FOR_R_0064_0016__WAS)
-              &amp; has_prd(R_0064_0001__FOR_R_0064_0016__WAS,R_0064_0017__AN_R_0064_0018__INSUFFICIENCY)
-              &amp; r_0064_0017__an_r_0064_0018__insufficiency(R_0064_0017__AN_R_0064_0018__INSUFFICIENCY)
-              &amp; has_r_0064_0019__of(R_0064_0017__AN_R_0064_0018__INSUFFICIENCY,R_0064_0020__WATER)
-              &amp; has_arg0(R_0064_0001__FOR_R_0064_0016__WAS,R_0064_0011__THE_R_0064_0013__DIFFICULTY)
-              &amp; r_0064_0011__the_r_0064_0013__difficulty(R_0064_0011__THE_R_0064_0013__DIFFICULTY)
-              &amp; has_r_0064_0014__of(R_0064_0011__THE_R_0064_0013__DIFFICULTY,R_0064_0015__HOUSEKEEPING)
-              &amp; has_attrib32(R_0064_0011__THE_R_0064_0013__DIFFICULTY,R_0064_0012__GRAND)
-              &amp; has_r_0064_0006__as_at_nim19(R_0064_0001__FOR_R_0064_0016__WAS,R_0064_0009__DOMICILES)
-              &amp; has_r_0064_0002__at_nim9(R_0064_0001__FOR_R_0064_0016__WAS,R_0064_0003__HIGHER_R_0064_0004__CROWSTAIRS) ) ) ) ).
+    ? [R_64_22_AND,R_64_26_WAS_UTILIZED,R_64_23_A_RAINFALL,R_64_24_CASUAL] :
+      ( casual(R_64_24_CASUAL)
+      &amp; ! [R_64_9_DOMICILES,R_64_8_ELEVATED] :
+          ( ( elevated(R_64_8_ELEVATED)
+            &amp; domiciles(R_64_9_DOMICILES)
+            &amp; attrib22(R_64_9_DOMICILES,R_64_8_ELEVATED) )
+         =&gt; ? [R_64_1_FOR_WAS,R_64_11_THE_DIFFICULTY,R_64_12_GRAND,R_64_15_HOUSEKEEPING,R_64_17_AN_INSUFFICIENCY,R_64_20_WATER,R_64_3_HIGHER_CROWSTAIRS] :
+              ( grand(R_64_12_GRAND)
+              &amp; housekeeping(R_64_15_HOUSEKEEPING)
+              &amp; water(R_64_20_WATER)
+              &amp; higher_Crowstairs(R_64_3_HIGHER_CROWSTAIRS)
+              &amp; for_was(R_64_1_FOR_WAS,R_64_11_THE_DIFFICULTY,R_64_17_AN_INSUFFICIENCY)
+              &amp; the_difficulty(R_64_11_THE_DIFFICULTY)
+              &amp; attrib32(R_64_11_THE_DIFFICULTY,R_64_12_GRAND)
+              &amp; of(R_64_11_THE_DIFFICULTY,R_64_15_HOUSEKEEPING)
+              &amp; an_insufficiency(R_64_17_AN_INSUFFICIENCY)
+              &amp; of(R_64_17_AN_INSUFFICIENCY,R_64_20_WATER)
+              &amp; at_nim9(R_64_1_FOR_WAS,R_64_3_HIGHER_CROWSTAIRS)
+              &amp; as_at_nim19(R_64_1_FOR_WAS,R_64_9_DOMICILES) ) )
+      &amp; conj1(CONJ1)
+      &amp; and(R_64_22_AND)
+      &amp; conj2(R_64_22_AND,R_64_26_WAS_UTILIZED)
+      &amp; ! [R_64_37_THAT_CONTAINED,R_64_38_THE_HOUSE,R_64_36_UTENSIL] :
+          ( ( the_house(R_64_38_THE_HOUSE)
+            &amp; utensil(R_64_36_UTENSIL)
+            &amp; that_contained(R_64_37_THAT_CONTAINED,R_64_38_THE_HOUSE,R_64_36_UTENSIL) )
+         =&gt; ? [R_64_29_TURNING_OUT,Z_64_A_HARDY_1883_78,R_64_33_CATCHERS] :
+              ( catchers(R_64_33_CATCHERS)
+              &amp; turning_out(R_64_29_TURNING_OUT,Z_64_A_HARDY_1883_78,R_64_36_UTENSIL)
+              &amp; as_nim88(R_64_29_TURNING_OUT,R_64_33_CATCHERS) ) )
+      &amp; by_nim78(R_64_28_BY_NIM78)
+      &amp; was_utilized(R_64_26_WAS_UTILIZED,R_64_23_A_RAINFALL)
+      &amp; a_rainfall(R_64_23_A_RAINFALL)
+      &amp; attrib65(R_64_23_A_RAINFALL,R_64_24_CASUAL) ) ).
 </pre>
 <br><hr><br>
 <svg width="1944pt" height="523pt"

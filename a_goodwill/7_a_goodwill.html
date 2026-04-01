@@ -264,23 +264,17 @@ arc(r_0007_0008__spend, r_0007_0009__money, arg1).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0007_0001__NOW,R_0007_0002__I,R_0007_0005__A_R_0007_0006__SODA,R_0007_0004__BUY,R_0007_0009__MONEY,R_0007_0008__SPEND,R_0007_0007__AND,R_0007_0003__CAN] :
-      ( r_0007_0001__Now(R_0007_0001__NOW)
-      &amp; r_0007_0002__I(R_0007_0002__I)
-      &amp; r_0007_0005__a_r_0007_0006__soda(R_0007_0005__A_R_0007_0006__SODA)
-      &amp; r_0007_0009__money(R_0007_0009__MONEY)
-      &amp; r_0007_0003__can(R_0007_0003__CAN)
-      &amp; has_keep_scope(R_0007_0003__CAN,R_0007_0007__AND)
-      &amp; r_0007_0007__and(R_0007_0007__AND)
-      &amp; has_conj2(R_0007_0007__AND,R_0007_0008__SPEND)
-      &amp; r_0007_0008__spend(R_0007_0008__SPEND)
-      &amp; has_arg1(R_0007_0008__SPEND,R_0007_0009__MONEY)
-      &amp; has_arg0(R_0007_0008__SPEND,R_0007_0002__I)
-      &amp; has_conj1(R_0007_0007__AND,R_0007_0004__BUY)
-      &amp; r_0007_0004__buy(R_0007_0004__BUY)
-      &amp; has_arg1(R_0007_0004__BUY,R_0007_0005__A_R_0007_0006__SODA)
-      &amp; has_arg0(R_0007_0004__BUY,R_0007_0002__I)
-      &amp; has_nim2(R_0007_0003__CAN,R_0007_0001__NOW) ) ).
+    ? [R_7_1_NOW] :
+      ( now(R_7_1_NOW)
+      &amp; ? [R_7_7_AND,R_7_4_BUY,R_7_5_A_SODA,R_7_8_SPEND,R_7_2_I,R_7_9_MONEY] :
+          ( a_soda(R_7_5_A_SODA)
+          &amp; i(R_7_2_I)
+          &amp; money(R_7_9_MONEY)
+          &amp; and(R_7_7_AND)
+          &amp; conj1(R_7_7_AND,R_7_4_BUY)
+          &amp; buy(R_7_4_BUY,R_7_2_I,R_7_5_A_SODA)
+          &amp; conj2(R_7_7_AND,R_7_8_SPEND)
+          &amp; spend(R_7_8_SPEND,R_7_2_I,R_7_9_MONEY) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="397pt" height="342pt"

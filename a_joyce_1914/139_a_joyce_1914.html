@@ -289,22 +289,14 @@ arc(z_000_139_a_joyce_1914_10, r_0139_0006__all_quant, scope).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0139_0002__GOD,Z_000_139_A_JOYCE_1914_10,R_0139_0003__KNOWS] :
-      ( r_0139_0002__God(R_0139_0002__GOD)
-      &amp; r_0139_0003__knows(R_0139_0003__KNOWS)
-      &amp; has_arg1(R_0139_0003__KNOWS,Z_000_139_A_JOYCE_1914_10)
-      &amp; z_000_139_a_joyce_1914_10(Z_000_139_A_JOYCE_1914_10)
-      &amp; ! [Z_000_139_A_JOYCE_1914_17,R_0139_0008__COULD_R_0139_1001____STAR__] :
-          ( ( z_000_139_a_joyce_1914_17(Z_000_139_A_JOYCE_1914_17)
-            &amp; r_0139_0008__could_r_0139_1001____star__(R_0139_0008__COULD_R_0139_1001____STAR__)
-            &amp; has_arg0(R_0139_0008__COULD_R_0139_1001____STAR__,Z_000_139_A_JOYCE_1914_17)
-            &amp; has_arg1(R_0139_0008__COULD_R_0139_1001____STAR__,Z_000_139_A_JOYCE_1914_17) )
-         =&gt; ? [R_0139_0004__WE,R_0139_0005__DONE] :
-              ( r_0139_0004__we(R_0139_0004__WE)
-              &amp; r_0139_0005__done(R_0139_0005__DONE)
-              &amp; has_arg1(R_0139_0005__DONE,Z_000_139_A_JOYCE_1914_17)
-              &amp; has_arg0(R_0139_0005__DONE,R_0139_0004__WE) ) )
-      &amp; has_arg0(R_0139_0003__KNOWS,R_0139_0002__GOD) ) ).
+    ? [R_139_3_KNOWS,R_139_2_GOD] :
+      ( god(R_139_2_GOD)
+      &amp; knows(R_139_3_KNOWS,R_139_2_GOD,Z_139_A_JOYCE_1914_10)
+      &amp; ~ ! [R_139_8_COULD__STAR_,Z_139_A_JOYCE_1914_17] :
+            ( could__star_(R_139_8_COULD__STAR_,Z_139_A_JOYCE_1914_17,Z_139_A_JOYCE_1914_17)
+           =&gt; ? [R_139_5_DONE,R_139_4_WE] :
+                ( we(R_139_4_WE)
+                &amp; done(R_139_5_DONE,R_139_4_WE,Z_139_A_JOYCE_1914_17) ) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="511pt" height="387pt"

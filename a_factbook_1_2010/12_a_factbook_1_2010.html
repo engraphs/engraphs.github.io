@@ -195,18 +195,16 @@ arc(r_0012_0007__and, r_0012_0008__diarrhea, conj3).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0012_0001__VICTIMS,R_0012_0003__FEVER,R_0012_0005__JAUNDICE,R_0012_0008__DIARRHEA,R_0012_0007__AND,R_0012_0002__EXHIBIT] :
-      ( r_0012_0001__victims(R_0012_0001__VICTIMS)
-      &amp; r_0012_0003__fever(R_0012_0003__FEVER)
-      &amp; r_0012_0005__jaundice(R_0012_0005__JAUNDICE)
-      &amp; r_0012_0008__diarrhea(R_0012_0008__DIARRHEA)
-      &amp; r_0012_0002__exhibit(R_0012_0002__EXHIBIT)
-      &amp; has_arg1(R_0012_0002__EXHIBIT,R_0012_0007__AND)
-      &amp; r_0012_0007__and(R_0012_0007__AND)
-      &amp; has_conj3(R_0012_0007__AND,R_0012_0008__DIARRHEA)
-      &amp; has_conj2(R_0012_0007__AND,R_0012_0005__JAUNDICE)
-      &amp; has_conj1(R_0012_0007__AND,R_0012_0003__FEVER)
-      &amp; has_arg0(R_0012_0002__EXHIBIT,R_0012_0001__VICTIMS) ) ).
+    ? [R_12_2_EXHIBIT,R_12_1_VICTIMS,R_12_7_AND,R_12_3_FEVER,R_12_5_JAUNDICE,R_12_8_DIARRHEA] :
+      ( victims(R_12_1_VICTIMS)
+      &amp; fever(R_12_3_FEVER)
+      &amp; jaundice(R_12_5_JAUNDICE)
+      &amp; diarrhea(R_12_8_DIARRHEA)
+      &amp; exhibit(R_12_2_EXHIBIT,R_12_1_VICTIMS,R_12_7_AND)
+      &amp; and(R_12_7_AND)
+      &amp; conj1(R_12_7_AND,R_12_3_FEVER)
+      &amp; conj2(R_12_7_AND,R_12_5_JAUNDICE)
+      &amp; conj3(R_12_7_AND,R_12_8_DIARRHEA) ) ).
 </pre>
 <br><hr><br>
 <svg width="407pt" height="297pt"

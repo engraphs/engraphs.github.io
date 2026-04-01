@@ -182,15 +182,13 @@ arc(r_0245_0008__melt, r_0245_0010__the_r_0245_0011__furnace, r_0245_0009__in_ni
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0245_0002__THIS_R_0245_0004__LEAD_R_0245_0005__HEART,R_0245_0003__BROKEN] :
-      ( r_0245_0002__This_r_0245_0004__lead_r_0245_0005__heart(R_0245_0002__THIS_R_0245_0004__LEAD_R_0245_0005__HEART)
-      &amp; ~ ? [R_0245_0010__THE_R_0245_0011__FURNACE,R_0245_0006__WILL_R_0245_0008__MELT] :
-            ( r_0245_0010__the_r_0245_0011__furnace(R_0245_0010__THE_R_0245_0011__FURNACE)
-            &amp; r_0245_0006__will_r_0245_0008__melt(R_0245_0006__WILL_R_0245_0008__MELT)
-            &amp; has_r_0245_0009__in_nim24(R_0245_0006__WILL_R_0245_0008__MELT,R_0245_0010__THE_R_0245_0011__FURNACE)
-            &amp; has_arg0(R_0245_0006__WILL_R_0245_0008__MELT,R_0245_0002__THIS_R_0245_0004__LEAD_R_0245_0005__HEART) )
-      &amp; r_0245_0003__broken(R_0245_0003__BROKEN)
-      &amp; has_arg0(R_0245_0003__BROKEN,R_0245_0002__THIS_R_0245_0004__LEAD_R_0245_0005__HEART) ) ).
+    ? [R_245_3_BROKEN,R_245_2_THIS_LEAD_HEART] :
+      ( this_lead_heart(R_245_2_THIS_LEAD_HEART)
+      &amp; broken(R_245_3_BROKEN,R_245_2_THIS_LEAD_HEART)
+      &amp; ~ ? [R_245_6_WILL_MELT,R_245_10_THE_FURNACE] :
+            ( the_furnace(R_245_10_THE_FURNACE)
+            &amp; will_melt(R_245_6_WILL_MELT,R_245_2_THIS_LEAD_HEART)
+            &amp; in_nim24(R_245_6_WILL_MELT,R_245_10_THE_FURNACE) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="517pt" height="252pt"

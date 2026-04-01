@@ -470,36 +470,31 @@ arc(z_000_2_a_meteors_28, r_0002_0017__as, restriction).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0002_0002__YOUR,R_0002_0003__LASER_R_0002_0005__SHIP,R_0002_0010__METEORS,R_0002_0007__A_R_0002_0008__HAIL,Z_000_2_A_METEORS_1,R_0002_0001__STEER,R_0002_0015__LASER_R_0002_0016__BOLTS,R_0002_0011__SMASHING,R_0002_0017__AS,Z_000_2_A_METEORS_28] :
-      ( r_0002_0002__your(R_0002_0002__YOUR)
-      &amp; r_0002_0010__meteors(R_0002_0010__METEORS)
-      &amp; z_000_2_a_meteors_1(Z_000_2_A_METEORS_1)
-      &amp; z_000_2_a_meteors_28(Z_000_2_A_METEORS_28)
-      &amp; has_conj1(Z_000_2_A_METEORS_28,R_0002_0017__AS)
-      &amp; r_0002_0017__as(R_0002_0017__AS)
-      &amp; ! [R_0002_0024__SIDES] :
-          ( r_0002_0024__sides(R_0002_0024__SIDES)
-         =&gt; ? [R_0002_0019__HURTLE] :
-              ( r_0002_0019__hurtle(R_0002_0019__HURTLE)
-              &amp; has_r_0002_0022__on_nim64(R_0002_0019__HURTLE,R_0002_0024__SIDES)
-              &amp; has_arg0(R_0002_0019__HURTLE,R_0002_0010__METEORS)
-              &amp; has_r_0002_0020__towards_clr58(R_0002_0019__HURTLE,R_0002_0002__YOUR) ) )
-      &amp; has_conj2(R_0002_0017__AS,R_0002_0011__SMASHING)
-      &amp; r_0002_0011__smashing(R_0002_0011__SMASHING)
-      &amp; has_arg0(R_0002_0011__SMASHING,Z_000_2_A_METEORS_1)
-      &amp; has_r_0002_0013__with_nim38(R_0002_0011__SMASHING,R_0002_0015__LASER_R_0002_0016__BOLTS)
-      &amp; r_0002_0015__laser_r_0002_0016__bolts(R_0002_0015__LASER_R_0002_0016__BOLTS)
-      &amp; has_gen(R_0002_0015__LASER_R_0002_0016__BOLTS,R_0002_0002__YOUR)
-      &amp; has_arg1(R_0002_0011__SMASHING,R_0002_0010__METEORS)
-      &amp; has_conj2(Z_000_2_A_METEORS_28,R_0002_0001__STEER)
-      &amp; r_0002_0001__Steer(R_0002_0001__STEER)
-      &amp; has_arg0(R_0002_0001__STEER,Z_000_2_A_METEORS_1)
-      &amp; has_r_0002_0006__through_clr17(R_0002_0001__STEER,R_0002_0007__A_R_0002_0008__HAIL)
-      &amp; r_0002_0007__a_r_0002_0008__hail(R_0002_0007__A_R_0002_0008__HAIL)
-      &amp; has_r_0002_0009__of(R_0002_0007__A_R_0002_0008__HAIL,R_0002_0010__METEORS)
-      &amp; has_arg1(R_0002_0001__STEER,R_0002_0003__LASER_R_0002_0005__SHIP)
-      &amp; r_0002_0003__laser_r_0002_0005__ship(R_0002_0003__LASER_R_0002_0005__SHIP)
-      &amp; has_gen(R_0002_0003__LASER_R_0002_0005__SHIP,R_0002_0002__YOUR) ) ).
+    ? [Z_2_A_METEORS_28,R_2_17_AS,R_2_11_SMASHING,R_2_15_LASER_BOLTS,R_2_1_STEER,Z_2_A_METEORS_1,R_2_3_LASER_SHIP,R_2_2_YOUR,R_2_7_A_HAIL,R_2_10_METEORS] :
+      ( your(R_2_2_YOUR)
+      &amp; meteors(R_2_10_METEORS)
+      &amp; z_2_a_meteors_28(Z_2_A_METEORS_28)
+      &amp; conj1(Z_2_A_METEORS_28,R_2_17_AS)
+      &amp; ! [R_2_24_SIDES] :
+          ( sides(R_2_24_SIDES)
+         =&gt; ? [R_2_19_HURTLE] :
+              ( hurtle(R_2_19_HURTLE,R_2_10_METEORS)
+              &amp; towards_clr58(R_2_19_HURTLE,R_2_2_YOUR)
+              &amp; on_nim64(R_2_19_HURTLE,R_2_24_SIDES) ) )
+      &amp; conj1(CONJ1)
+      &amp; as(R_2_17_AS)
+      &amp; conj2(R_2_17_AS,R_2_11_SMASHING)
+      &amp; smashing(R_2_11_SMASHING,Z_2_A_METEORS_1,R_2_10_METEORS)
+      &amp; with_nim38(R_2_11_SMASHING,R_2_15_LASER_BOLTS)
+      &amp; laser_bolts(R_2_15_LASER_BOLTS)
+      &amp; gen(R_2_15_LASER_BOLTS,R_2_2_YOUR)
+      &amp; conj2(Z_2_A_METEORS_28,R_2_1_STEER)
+      &amp; steer(R_2_1_STEER,Z_2_A_METEORS_1,R_2_3_LASER_SHIP)
+      &amp; laser_ship(R_2_3_LASER_SHIP)
+      &amp; gen(R_2_3_LASER_SHIP,R_2_2_YOUR)
+      &amp; through_clr17(R_2_1_STEER,R_2_7_A_HAIL)
+      &amp; a_hail(R_2_7_A_HAIL)
+      &amp; of(R_2_7_A_HAIL,R_2_10_METEORS) ) ).
 </pre>
 <br><hr><br>
 <svg width="1077pt" height="387pt"

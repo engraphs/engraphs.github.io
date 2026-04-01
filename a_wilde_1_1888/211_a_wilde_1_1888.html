@@ -554,40 +554,31 @@ arc(r_0211_0026__wings, r_0211_0001__He, gen).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0211_0001__HE,R_0211_0022__WARM,R_0211_0019__TO_R_0211_0020__KEEP,R_0211_0018__TRIED,R_0211_0026__WINGS,R_0211_0024__FLAPPING,R_0211_0023__BY,R_0211_0017__AND] :
-      ( r_0211_0001__He(R_0211_0001__HE)
-      &amp; r_0211_0022__warm(R_0211_0022__WARM)
-      &amp; r_0211_0017__and(R_0211_0017__AND)
-      &amp; has_conj2(R_0211_0017__AND,R_0211_0023__BY)
-      &amp; r_0211_0023__by(R_0211_0023__BY)
-      &amp; has_conj1(R_0211_0023__BY,R_0211_0024__FLAPPING)
-      &amp; r_0211_0024__flapping(R_0211_0024__FLAPPING)
-      &amp; has_arg1(R_0211_0024__FLAPPING,R_0211_0026__WINGS)
-      &amp; r_0211_0026__wings(R_0211_0026__WINGS)
-      &amp; has_gen(R_0211_0026__WINGS,R_0211_0001__HE)
-      &amp; has_arg0(R_0211_0024__FLAPPING,R_0211_0001__HE)
-      &amp; has_conj2(R_0211_0023__BY,R_0211_0018__TRIED)
-      &amp; r_0211_0018__tried(R_0211_0018__TRIED)
-      &amp; has_clr51(R_0211_0018__TRIED,R_0211_0019__TO_R_0211_0020__KEEP)
-      &amp; r_0211_0019__to_r_0211_0020__keep(R_0211_0019__TO_R_0211_0020__KEEP)
-      &amp; has_prd(R_0211_0019__TO_R_0211_0020__KEEP,R_0211_0022__WARM)
-      &amp; has_arg1(R_0211_0019__TO_R_0211_0020__KEEP,R_0211_0001__HE)
-      &amp; has_arg0(R_0211_0019__TO_R_0211_0020__KEEP,R_0211_0001__HE)
-      &amp; has_arg0(R_0211_0018__TRIED,R_0211_0001__HE)
-      &amp; ! [R_0211_0014__NOT] :
-          ( ~ ? [R_0211_0011__THE_R_0211_0012__BAKER,R_0211_0013__WAS_R_0211_0015__LOOKING] :
-                ( r_0211_0011__the_r_0211_0012__baker(R_0211_0011__THE_R_0211_0012__BAKER)
-                &amp; r_0211_0013__was_r_0211_0015__looking(R_0211_0013__WAS_R_0211_0015__LOOKING)
-                &amp; has_arg0(R_0211_0013__WAS_R_0211_0015__LOOKING,R_0211_0011__THE_R_0211_0012__BAKER) )
-         =&gt; ? [R_0211_0006__THE_R_0211_0007__BAKER_R_0211_0008___APOS_S,R_0211_0009__DOOR,R_0211_0004__CRUMBS,R_0211_0002__PICKED_R_0211_0003__UP] :
-              ( r_0211_0006__the_r_0211_0007__baker_r_0211_0008___apos_s(R_0211_0006__THE_R_0211_0007__BAKER_R_0211_0008___APOS_S)
-              &amp; r_0211_0002__picked_r_0211_0003__up(R_0211_0002__PICKED_R_0211_0003__UP)
-              &amp; has_arg1(R_0211_0002__PICKED_R_0211_0003__UP,R_0211_0004__CRUMBS)
-              &amp; r_0211_0004__crumbs(R_0211_0004__CRUMBS)
-              &amp; has_r_0211_0005__outside(R_0211_0004__CRUMBS,R_0211_0009__DOOR)
-              &amp; r_0211_0009__door(R_0211_0009__DOOR)
-              &amp; has_gen(R_0211_0009__DOOR,R_0211_0006__THE_R_0211_0007__BAKER_R_0211_0008___APOS_S)
-              &amp; has_arg0(R_0211_0002__PICKED_R_0211_0003__UP,R_0211_0001__HE) ) ) ) ).
+    ? [R_211_17_AND,R_211_23_BY,R_211_24_FLAPPING,R_211_26_WINGS,R_211_18_TRIED,R_211_19_TO_KEEP,R_211_1_HE,R_211_22_WARM] :
+      ( he(R_211_1_HE)
+      &amp; warm(R_211_22_WARM)
+      &amp; ( ~ ? [R_211_13_WAS_LOOKING,R_211_11_THE_BAKER] :
+              ( the_baker(R_211_11_THE_BAKER)
+              &amp; was_looking(R_211_13_WAS_LOOKING,R_211_11_THE_BAKER) )
+       =&gt; ? [R_211_2_PICKED_UP,R_211_4_CRUMBS,R_211_9_DOOR,R_211_6_THE_BAKER_APOS_S] :
+            ( the_baker_apos_s(R_211_6_THE_BAKER_APOS_S)
+            &amp; picked_up(R_211_2_PICKED_UP,R_211_1_HE,R_211_4_CRUMBS)
+            &amp; crumbs(R_211_4_CRUMBS)
+            &amp; outside(R_211_4_CRUMBS,R_211_9_DOOR)
+            &amp; door(R_211_9_DOOR)
+            &amp; gen(R_211_9_DOOR,R_211_6_THE_BAKER_APOS_S) ) )
+      &amp; conj1(CONJ1)
+      &amp; and(R_211_17_AND)
+      &amp; conj2(R_211_17_AND,R_211_23_BY)
+      &amp; by(R_211_23_BY)
+      &amp; conj1(R_211_23_BY,R_211_24_FLAPPING)
+      &amp; flapping(R_211_24_FLAPPING,R_211_1_HE,R_211_26_WINGS)
+      &amp; wings(R_211_26_WINGS)
+      &amp; gen(R_211_26_WINGS,R_211_1_HE)
+      &amp; conj2(R_211_23_BY,R_211_18_TRIED)
+      &amp; tried(R_211_18_TRIED,R_211_1_HE)
+      &amp; clr51(R_211_18_TRIED,R_211_19_TO_KEEP)
+      &amp; to_keep(R_211_19_TO_KEEP,R_211_1_HE,R_211_1_HE,R_211_22_WARM) ) ).
 </pre>
 <br><hr><br>
 <svg width="1152pt" height="432pt"

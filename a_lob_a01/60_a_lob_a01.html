@@ -274,23 +274,19 @@ arc(z_000_60_a_lob_a01_27, r_0060_0011__the_r_0060_0012__West_r_0060_0014__Chanc
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0060_0008__DR_R_0060_0009__ADENAUER,R_0060_0013__GERMAN,R_0060_0011__THE_R_0060_0012__WEST_R_0060_0014__CHANCELLOR,Z_000_60_A_LOB_A01_27] :
-      ( r_0060_0008__Dr_r_0060_0009__Adenauer(R_0060_0008__DR_R_0060_0009__ADENAUER)
-      &amp; r_0060_0013__German(R_0060_0013__GERMAN)
-      &amp; z_000_60_a_lob_a01_27(Z_000_60_A_LOB_A01_27)
-      &amp; has_prd(Z_000_60_A_LOB_A01_27,R_0060_0011__THE_R_0060_0012__WEST_R_0060_0014__CHANCELLOR)
-      &amp; r_0060_0011__the_r_0060_0012__West_r_0060_0014__Chancellor(R_0060_0011__THE_R_0060_0012__WEST_R_0060_0014__CHANCELLOR)
-      &amp; has_attrib33(R_0060_0011__THE_R_0060_0012__WEST_R_0060_0014__CHANCELLOR,R_0060_0013__GERMAN)
-      &amp; has_arg0(Z_000_60_A_LOB_A01_27,R_0060_0008__DR_R_0060_0009__ADENAUER)
-      &amp; ~ ? [R_0060_0001__HE,R_0060_0005__PERSONAL,R_0060_0006__TALKS,R_0060_0002__DID_R_0060_0004__MENTION] :
-            ( r_0060_0001__He(R_0060_0001__HE)
-            &amp; r_0060_0005__personal(R_0060_0005__PERSONAL)
-            &amp; r_0060_0002__did_r_0060_0004__mention(R_0060_0002__DID_R_0060_0004__MENTION)
-            &amp; has_arg1(R_0060_0002__DID_R_0060_0004__MENTION,R_0060_0006__TALKS)
-            &amp; r_0060_0006__talks(R_0060_0006__TALKS)
-            &amp; has_r_0060_0007__with(R_0060_0006__TALKS,R_0060_0008__DR_R_0060_0009__ADENAUER)
-            &amp; has_attrib12(R_0060_0006__TALKS,R_0060_0005__PERSONAL)
-            &amp; has_arg0(R_0060_0002__DID_R_0060_0004__MENTION,R_0060_0001__HE) ) ) ).
+    ? [Z_60_A_LOB_A01_27,R_60_8_DR_ADENAUER,R_60_11_THE_WEST_CHANCELLOR,R_60_13_GERMAN] :
+      ( dr_Adenauer(R_60_8_DR_ADENAUER)
+      &amp; german(R_60_13_GERMAN)
+      &amp; ~ ? [R_60_2_DID_MENTION,R_60_1_HE,R_60_6_TALKS,R_60_5_PERSONAL] :
+            ( he(R_60_1_HE)
+            &amp; personal(R_60_5_PERSONAL)
+            &amp; did_mention(R_60_2_DID_MENTION,R_60_1_HE,R_60_6_TALKS)
+            &amp; talks(R_60_6_TALKS)
+            &amp; attrib12(R_60_6_TALKS,R_60_5_PERSONAL)
+            &amp; with(R_60_6_TALKS,R_60_8_DR_ADENAUER) )
+      &amp; z_60_a_lob_a01_27(Z_60_A_LOB_A01_27,R_60_8_DR_ADENAUER,R_60_11_THE_WEST_CHANCELLOR)
+      &amp; the_West_Chancellor(R_60_11_THE_WEST_CHANCELLOR)
+      &amp; attrib33(R_60_11_THE_WEST_CHANCELLOR,R_60_13_GERMAN) ) ).
 </pre>
 <br><hr><br>
 <svg width="694pt" height="387pt"

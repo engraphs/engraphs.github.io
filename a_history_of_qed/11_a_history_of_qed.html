@@ -236,19 +236,15 @@ arc(r_0011_0007__get, r_0011_0012__recently, r_0011_0011__until_nim32).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0011_0002__WHO,R_0011_0003__SAID] :
-      ( r_0011_0002__Who(R_0011_0002__WHO)
-      &amp; r_0011_0003__said(R_0011_0003__SAID)
-      &amp; has_arg1(R_0011_0003__SAID,R_0011_0006__N_APOS_T)
-      &amp; ~ ? [R_0011_0004__YOU,R_0011_0008__A_R_0011_0009__SOFTWARE_R_0011_0010__PATENT,R_0011_0012__RECENTLY,R_0011_0005__COULD_R_0011_0007__GET] :
-            ( r_0011_0004__you(R_0011_0004__YOU)
-            &amp; r_0011_0008__a_r_0011_0009__software_r_0011_0010__patent(R_0011_0008__A_R_0011_0009__SOFTWARE_R_0011_0010__PATENT)
-            &amp; r_0011_0012__recently(R_0011_0012__RECENTLY)
-            &amp; r_0011_0005__could_r_0011_0007__get(R_0011_0005__COULD_R_0011_0007__GET)
-            &amp; has_r_0011_0011__until_nim32(R_0011_0005__COULD_R_0011_0007__GET,R_0011_0012__RECENTLY)
-            &amp; has_arg1(R_0011_0005__COULD_R_0011_0007__GET,R_0011_0008__A_R_0011_0009__SOFTWARE_R_0011_0010__PATENT)
-            &amp; has_arg0(R_0011_0005__COULD_R_0011_0007__GET,R_0011_0004__YOU) )
-      &amp; has_arg0(R_0011_0003__SAID,R_0011_0002__WHO) ) ).
+    ? [R_11_3_SAID,R_11_2_WHO] :
+      ( who(R_11_2_WHO)
+      &amp; said(R_11_3_SAID,R_11_2_WHO,R_11_6_N_APOS_T)
+      &amp; ~ ? [R_11_5_COULD_GET,R_11_4_YOU,R_11_8_A_SOFTWARE_PATENT,R_11_12_RECENTLY] :
+            ( you(R_11_4_YOU)
+            &amp; a_software_patent(R_11_8_A_SOFTWARE_PATENT)
+            &amp; recently(R_11_12_RECENTLY)
+            &amp; could_get(R_11_5_COULD_GET,R_11_4_YOU,R_11_8_A_SOFTWARE_PATENT)
+            &amp; until_nim32(R_11_5_COULD_GET,R_11_12_RECENTLY) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="613pt" height="387pt"

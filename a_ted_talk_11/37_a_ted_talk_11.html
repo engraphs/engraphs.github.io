@@ -264,21 +264,19 @@ arc(r_0037_0010__talents, r_0037_0009__tremendous, attrib24).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0037_0002__MY,R_0037_0003__CONTENTION,R_0037_0001__AND_R_0037_0004__IS] :
-      ( r_0037_0002__my(R_0037_0002__MY)
-      &amp; r_0037_0001__And_r_0037_0004__is(R_0037_0001__AND_R_0037_0004__IS)
-      &amp; ! [R_0037_0007__KIDS] :
-          ( r_0037_0007__kids(R_0037_0007__KIDS)
-         =&gt; ? [R_0037_0009__TREMENDOUS,R_0037_0010__TALENTS,R_0037_0008__HAVE] :
-              ( r_0037_0009__tremendous(R_0037_0009__TREMENDOUS)
-              &amp; r_0037_0008__have(R_0037_0008__HAVE)
-              &amp; has_arg1(R_0037_0008__HAVE,R_0037_0010__TALENTS)
-              &amp; r_0037_0010__talents(R_0037_0010__TALENTS)
-              &amp; has_attrib24(R_0037_0010__TALENTS,R_0037_0009__TREMENDOUS)
-              &amp; has_arg0(R_0037_0008__HAVE,R_0037_0007__KIDS) ) )
-      &amp; has_arg0(R_0037_0001__AND_R_0037_0004__IS,R_0037_0003__CONTENTION)
-      &amp; r_0037_0003__contention(R_0037_0003__CONTENTION)
-      &amp; has_gen(R_0037_0003__CONTENTION,R_0037_0002__MY) ) ).
+    ? [R_37_1_AND_IS,R_37_3_CONTENTION,R_37_2_MY] :
+      ( my(R_37_2_MY)
+      &amp; ! [R_37_7_KIDS] :
+          ( kids(R_37_7_KIDS)
+         =&gt; ? [R_37_8_HAVE,R_37_10_TALENTS,R_37_9_TREMENDOUS] :
+              ( tremendous(R_37_9_TREMENDOUS)
+              &amp; have(R_37_8_HAVE,R_37_7_KIDS,R_37_10_TALENTS)
+              &amp; talents(R_37_10_TALENTS)
+              &amp; attrib24(R_37_10_TALENTS,R_37_9_TREMENDOUS) ) )
+      &amp; prd(PRD)
+      &amp; and_is(R_37_1_AND_IS,R_37_3_CONTENTION)
+      &amp; contention(R_37_3_CONTENTION)
+      &amp; gen(R_37_3_CONTENTION,R_37_2_MY) ) ).
 </pre>
 <br><hr><br>
 <svg width="484pt" height="297pt"

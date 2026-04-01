@@ -170,15 +170,13 @@ arc(r_0157_0006__play, r_0157_0002__I, gen).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0157_0001__NOW,R_0157_0002__I,R_0157_0006__PLAY,R_0157_0003__CAN_R_0157_0004__FINISH] :
-      ( r_0157_0001__Now(R_0157_0001__NOW)
-      &amp; r_0157_0002__I(R_0157_0002__I)
-      &amp; r_0157_0003__can_r_0157_0004__finish(R_0157_0003__CAN_R_0157_0004__FINISH)
-      &amp; has_arg1(R_0157_0003__CAN_R_0157_0004__FINISH,R_0157_0006__PLAY)
-      &amp; r_0157_0006__play(R_0157_0006__PLAY)
-      &amp; has_gen(R_0157_0006__PLAY,R_0157_0002__I)
-      &amp; has_arg0(R_0157_0003__CAN_R_0157_0004__FINISH,R_0157_0002__I)
-      &amp; has_nim2(R_0157_0003__CAN_R_0157_0004__FINISH,R_0157_0001__NOW) ) ).
+    ? [R_157_3_CAN_FINISH,R_157_6_PLAY,R_157_2_I,R_157_1_NOW] :
+      ( i(R_157_2_I)
+      &amp; now(R_157_1_NOW)
+      &amp; can_finish(R_157_3_CAN_FINISH,R_157_2_I,R_157_6_PLAY)
+      &amp; play(R_157_6_PLAY)
+      &amp; gen(R_157_6_PLAY,R_157_2_I)
+      &amp; nim2(R_157_3_CAN_FINISH,R_157_1_NOW) ) ).
 </pre>
 <br><hr><br>
 <svg width="369pt" height="252pt"

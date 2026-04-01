@@ -168,16 +168,15 @@ arc(r_0085_0006__the_r_0085_0007__onset, r_0085_0009__symptoms, r_0085_0008__of)
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0085_0001__DEATH,R_0085_0009__SYMPTOMS,R_0085_0006__THE_R_0085_0007__ONSET,R_0085_0004__DAYS,R_0085_0002__OCCURS] :
-      ( r_0085_0001__death(R_0085_0001__DEATH)
-      &amp; r_0085_0009__symptoms(R_0085_0009__SYMPTOMS)
-      &amp; r_0085_0002__occurs(R_0085_0002__OCCURS)
-      &amp; has_r_0085_0003__within_nim10(R_0085_0002__OCCURS,R_0085_0004__DAYS)
-      &amp; r_0085_0004__days(R_0085_0004__DAYS)
-      &amp; has_r_0085_0005__of(R_0085_0004__DAYS,R_0085_0006__THE_R_0085_0007__ONSET)
-      &amp; r_0085_0006__the_r_0085_0007__onset(R_0085_0006__THE_R_0085_0007__ONSET)
-      &amp; has_r_0085_0008__of(R_0085_0006__THE_R_0085_0007__ONSET,R_0085_0009__SYMPTOMS)
-      &amp; has_arg0(R_0085_0002__OCCURS,R_0085_0001__DEATH) ) ).
+    ? [R_85_2_OCCURS,R_85_1_DEATH,R_85_4_DAYS,R_85_6_THE_ONSET,R_85_9_SYMPTOMS] :
+      ( death(R_85_1_DEATH)
+      &amp; symptoms(R_85_9_SYMPTOMS)
+      &amp; occurs(R_85_2_OCCURS,R_85_1_DEATH)
+      &amp; within_nim10(R_85_2_OCCURS,R_85_4_DAYS)
+      &amp; days(R_85_4_DAYS)
+      &amp; of(R_85_4_DAYS,R_85_6_THE_ONSET)
+      &amp; the_onset(R_85_6_THE_ONSET)
+      &amp; of(R_85_6_THE_ONSET,R_85_9_SYMPTOMS) ) ).
 </pre>
 <br><hr><br>
 <svg width="442pt" height="387pt"

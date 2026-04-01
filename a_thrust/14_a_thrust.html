@@ -290,21 +290,16 @@ arc(r_0014_0012__damaged, z_000_14_a_thrust_30, arg0).
 </svg>
 <pre>
 fof(formula,axiom,
-    ! [R_0014_0003__SHOOT,R_0014_0002__YOU,R_0014_0004__THE_R_0014_0005__REACTOR,R_0014_0006__REPEATEDLY] :
-      ( ( r_0014_0002__you(R_0014_0002__YOU)
-        &amp; r_0014_0004__the_r_0014_0005__reactor(R_0014_0004__THE_R_0014_0005__REACTOR)
-        &amp; r_0014_0006__repeatedly(R_0014_0006__REPEATEDLY)
-        &amp; r_0014_0003__shoot(R_0014_0003__SHOOT)
-        &amp; has_nim16(R_0014_0003__SHOOT,R_0014_0006__REPEATEDLY)
-        &amp; has_arg1(R_0014_0003__SHOOT,R_0014_0004__THE_R_0014_0005__REACTOR)
-        &amp; has_arg0(R_0014_0003__SHOOT,R_0014_0002__YOU) )
-     =&gt; ? [R_0014_0011__CRITICALLY,Z_000_14_A_THRUST_30,R_0014_0009__WILL_R_0014_0010__BECOME_R_0014_0012__DAMAGED] :
-          ( r_0014_0011__critically(R_0014_0011__CRITICALLY)
-          &amp; z_000_14_a_thrust_30(Z_000_14_A_THRUST_30)
-          &amp; r_0014_0009__will_r_0014_0010__become_r_0014_0012__damaged(R_0014_0009__WILL_R_0014_0010__BECOME_R_0014_0012__DAMAGED)
-          &amp; has_arg0(R_0014_0009__WILL_R_0014_0010__BECOME_R_0014_0012__DAMAGED,Z_000_14_A_THRUST_30)
-          &amp; has_nim32(R_0014_0009__WILL_R_0014_0010__BECOME_R_0014_0012__DAMAGED,R_0014_0011__CRITICALLY)
-          &amp; has_arg1(R_0014_0009__WILL_R_0014_0010__BECOME_R_0014_0012__DAMAGED,R_0014_0004__THE_R_0014_0005__REACTOR) ) ) ).
+    ! [R_14_3_SHOOT,R_14_2_YOU,R_14_4_THE_REACTOR,R_14_6_REPEATEDLY] :
+      ( ( you(R_14_2_YOU)
+        &amp; the_reactor(R_14_4_THE_REACTOR)
+        &amp; repeatedly(R_14_6_REPEATEDLY)
+        &amp; shoot(R_14_3_SHOOT,R_14_2_YOU,R_14_4_THE_REACTOR)
+        &amp; nim16(R_14_3_SHOOT,R_14_6_REPEATEDLY) )
+     =&gt; ? [R_14_9_WILL_BECOME_DAMAGED,Z_14_A_THRUST_30,R_14_11_CRITICALLY] :
+          ( critically(R_14_11_CRITICALLY)
+          &amp; will_become_damaged(R_14_9_WILL_BECOME_DAMAGED,Z_14_A_THRUST_30,R_14_4_THE_REACTOR)
+          &amp; nim32(R_14_9_WILL_BECOME_DAMAGED,R_14_11_CRITICALLY) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="661pt" height="252pt"

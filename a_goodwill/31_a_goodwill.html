@@ -320,24 +320,20 @@ arc(r_0031_0013__had, r_0031_0012__ever, nim35).
 </svg>
 <pre>
 fof(formula,axiom,
-    ! [R_0031_0009__INSTRUCTOR,R_0031_0001__MY,R_0031_0008__OTHER,R_0031_0012__EVER,R_0031_0011___APOS_VE_R_0031_0013__HAD] :
-      ( ( r_0031_0001__My(R_0031_0001__MY)
-        &amp; r_0031_0008__other(R_0031_0008__OTHER)
-        &amp; r_0031_0012__ever(R_0031_0012__EVER)
-        &amp; r_0031_0011___apos_ve_r_0031_0013__had(R_0031_0011___APOS_VE_R_0031_0013__HAD)
-        &amp; has_nim35(R_0031_0011___APOS_VE_R_0031_0013__HAD,R_0031_0012__EVER)
-        &amp; has_arg1(R_0031_0011___APOS_VE_R_0031_0013__HAD,R_0031_0009__INSTRUCTOR)
-        &amp; r_0031_0009__instructor(R_0031_0009__INSTRUCTOR)
-        &amp; has_attrib21(R_0031_0009__INSTRUCTOR,R_0031_0008__OTHER)
-        &amp; has_arg0(R_0031_0011___APOS_VE_R_0031_0013__HAD,R_0031_0001__MY) )
-     =&gt; ? [R_0031_0002__INSTRUCTOR,R_0031_0004__A_R_0031_0005__ROLE,R_0031_0003__PLAYED] :
-          ( r_0031_0003__played(R_0031_0003__PLAYED)
-          &amp; has_arg1(R_0031_0003__PLAYED,R_0031_0004__A_R_0031_0005__ROLE)
-          &amp; r_0031_0004__a_r_0031_0005__role(R_0031_0004__A_R_0031_0005__ROLE)
-          &amp; has_r_0031_0006__like(R_0031_0004__A_R_0031_0005__ROLE,R_0031_0009__INSTRUCTOR)
-          &amp; has_arg0(R_0031_0003__PLAYED,R_0031_0002__INSTRUCTOR)
-          &amp; r_0031_0002__instructor(R_0031_0002__INSTRUCTOR)
-          &amp; has_gen(R_0031_0002__INSTRUCTOR,R_0031_0001__MY) ) ) ).
+    ! [R_31_11__APOS_VE_HAD,R_31_1_MY,R_31_9_INSTRUCTOR,R_31_8_OTHER,R_31_12_EVER] :
+      ( ( my(R_31_1_MY)
+        &amp; other(R_31_8_OTHER)
+        &amp; ever(R_31_12_EVER)
+        &amp; _apos_ve_had(R_31_11__APOS_VE_HAD,R_31_1_MY,R_31_9_INSTRUCTOR)
+        &amp; instructor(R_31_9_INSTRUCTOR)
+        &amp; attrib21(R_31_9_INSTRUCTOR,R_31_8_OTHER)
+        &amp; nim35(R_31_11__APOS_VE_HAD,R_31_12_EVER) )
+     =&gt; ? [R_31_3_PLAYED,R_31_2_INSTRUCTOR,R_31_4_A_ROLE] :
+          ( played(R_31_3_PLAYED,R_31_2_INSTRUCTOR,R_31_4_A_ROLE)
+          &amp; instructor(R_31_2_INSTRUCTOR)
+          &amp; gen(R_31_2_INSTRUCTOR,R_31_1_MY)
+          &amp; a_role(R_31_4_A_ROLE)
+          &amp; like(R_31_4_A_ROLE,R_31_9_INSTRUCTOR) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="690pt" height="387pt"

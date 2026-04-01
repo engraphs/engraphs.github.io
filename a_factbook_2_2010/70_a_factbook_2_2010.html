@@ -580,42 +580,34 @@ arc(r_0070_0025__rulings, r_0070_0019__courts, gen).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0070_0010__JEWISH,R_0070_0011__PEOPLE,R_0070_0016__DISPUTES,R_0070_0018__JEWISH,R_0070_0019__COURTS,R_0070_0014__TO_R_0070_0015__SETTLE,R_0070_0013__DECIDE,R_0070_0025__RULINGS,R_0070_0021__BE_R_0070_0022__BOUND,R_0070_0020__AND,R_0070_0012__MAY,R_0070_0009__BUT] :
-      ( r_0070_0010__Jewish(R_0070_0010__JEWISH)
-      &amp; r_0070_0016__disputes(R_0070_0016__DISPUTES)
-      &amp; r_0070_0018__Jewish(R_0070_0018__JEWISH)
-      &amp; r_0070_0009__but(R_0070_0009__BUT)
-      &amp; has_conj2(R_0070_0009__BUT,R_0070_0012__MAY)
-      &amp; r_0070_0012__may(R_0070_0012__MAY)
-      &amp; has_keep_scope(R_0070_0012__MAY,R_0070_0020__AND)
-      &amp; r_0070_0020__and(R_0070_0020__AND)
-      &amp; has_conj2(R_0070_0020__AND,R_0070_0021__BE_R_0070_0022__BOUND)
-      &amp; r_0070_0021__be_r_0070_0022__bound(R_0070_0021__BE_R_0070_0022__BOUND)
-      &amp; has_arg0(R_0070_0021__BE_R_0070_0022__BOUND,R_0070_0025__RULINGS)
-      &amp; r_0070_0025__rulings(R_0070_0025__RULINGS)
-      &amp; has_gen(R_0070_0025__RULINGS,R_0070_0019__COURTS)
-      &amp; r_0070_0019__courts(R_0070_0019__COURTS)
-      &amp; has_attrib54(R_0070_0019__COURTS,R_0070_0018__JEWISH)
-      &amp; has_arg1(R_0070_0021__BE_R_0070_0022__BOUND,R_0070_0011__PEOPLE)
-      &amp; r_0070_0011__people(R_0070_0011__PEOPLE)
-      &amp; has_attrib30(R_0070_0011__PEOPLE,R_0070_0010__JEWISH)
-      &amp; has_conj1(R_0070_0020__AND,R_0070_0013__DECIDE)
-      &amp; r_0070_0013__decide(R_0070_0013__DECIDE)
-      &amp; has_arg1(R_0070_0013__DECIDE,R_0070_0014__TO_R_0070_0015__SETTLE)
-      &amp; r_0070_0014__to_r_0070_0015__settle(R_0070_0014__TO_R_0070_0015__SETTLE)
-      &amp; has_r_0070_0017__through_nim53(R_0070_0014__TO_R_0070_0015__SETTLE,R_0070_0019__COURTS)
-      &amp; has_arg1(R_0070_0014__TO_R_0070_0015__SETTLE,R_0070_0016__DISPUTES)
-      &amp; has_arg0(R_0070_0014__TO_R_0070_0015__SETTLE,R_0070_0011__PEOPLE)
-      &amp; has_arg0(R_0070_0013__DECIDE,R_0070_0011__PEOPLE)
-      &amp; ! [R_0070_0002__COUNTRY] :
-          ( r_0070_0002__country(R_0070_0002__COUNTRY)
-         =&gt; ? [R_0070_0004__FULLY,R_0070_0007__HALAKHA,R_0070_0003__IS_R_0070_0005__GOVERNED] :
-              ( r_0070_0004__fully(R_0070_0004__FULLY)
-              &amp; r_0070_0007__halakha(R_0070_0007__HALAKHA)
-              &amp; r_0070_0003__is_r_0070_0005__governed(R_0070_0003__IS_R_0070_0005__GOVERNED)
-              &amp; has_arg0(R_0070_0003__IS_R_0070_0005__GOVERNED,R_0070_0007__HALAKHA)
-              &amp; has_nim12(R_0070_0003__IS_R_0070_0005__GOVERNED,R_0070_0004__FULLY)
-              &amp; has_arg1(R_0070_0003__IS_R_0070_0005__GOVERNED,R_0070_0002__COUNTRY) ) ) ) ).
+    ? [R_70_9_BUT] :
+      ( ! [R_70_2_COUNTRY] :
+          ( country(R_70_2_COUNTRY)
+         =&gt; ? [R_70_3_IS_GOVERNED,R_70_7_HALAKHA,R_70_4_FULLY] :
+              ( halakha(R_70_7_HALAKHA)
+              &amp; fully(R_70_4_FULLY)
+              &amp; is_governed(R_70_3_IS_GOVERNED,R_70_7_HALAKHA,R_70_2_COUNTRY)
+              &amp; nim12(R_70_3_IS_GOVERNED,R_70_4_FULLY) ) )
+      &amp; conj1(CONJ1)
+      &amp; but(R_70_9_BUT)
+      &amp; conj2(R_70_9_BUT,R_70_12_MAY)
+      &amp; ~ ? [R_70_20_AND,R_70_13_DECIDE,R_70_14_TO_SETTLE,R_70_16_DISPUTES,R_70_21_BE_BOUND,R_70_25_RULINGS,R_70_19_COURTS,R_70_18_JEWISH,R_70_11_PEOPLE,R_70_10_JEWISH] :
+            ( disputes(R_70_16_DISPUTES)
+            &amp; jewish(R_70_18_JEWISH)
+            &amp; jewish(R_70_10_JEWISH)
+            &amp; and(R_70_20_AND)
+            &amp; conj1(R_70_20_AND,R_70_13_DECIDE)
+            &amp; decide(R_70_13_DECIDE,R_70_11_PEOPLE,R_70_14_TO_SETTLE)
+            &amp; people(R_70_11_PEOPLE)
+            &amp; attrib30(R_70_11_PEOPLE,R_70_10_JEWISH)
+            &amp; to_settle(R_70_14_TO_SETTLE,R_70_11_PEOPLE,R_70_16_DISPUTES)
+            &amp; through_nim53(R_70_14_TO_SETTLE,R_70_19_COURTS)
+            &amp; courts(R_70_19_COURTS)
+            &amp; attrib54(R_70_19_COURTS,R_70_18_JEWISH)
+            &amp; conj2(R_70_20_AND,R_70_21_BE_BOUND)
+            &amp; be_bound(R_70_21_BE_BOUND,R_70_25_RULINGS,R_70_11_PEOPLE)
+            &amp; rulings(R_70_25_RULINGS)
+            &amp; gen(R_70_25_RULINGS,R_70_19_COURTS) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="1224pt" height="613pt"

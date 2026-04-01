@@ -538,40 +538,30 @@ arc(z_000_33_a_lockdown_50, r_0033_0014__her, gen).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0033_0001__SO,R_0033_0002__I,R_0033_0003__JUST,Z_000_33_A_LOCKDOWN_32,R_0033_0010__DO,R_0033_0013__LEAVE,R_0033_0012__AND,R_0033_0007___APOS_M_R_0033_0008__GOING,R_0033_0004__THINK] :
-      ( r_0033_0001__So(R_0033_0001__SO)
-      &amp; r_0033_0002__I(R_0033_0002__I)
-      &amp; r_0033_0003__just(R_0033_0003__JUST)
-      &amp; r_0033_0004__think(R_0033_0004__THINK)
-      &amp; has_arg1(R_0033_0004__THINK,R_0033_0007___APOS_M_R_0033_0008__GOING)
-      &amp; r_0033_0007___apos_m_r_0033_0008__going(R_0033_0007___APOS_M_R_0033_0008__GOING)
-      &amp; has_keep_scope(R_0033_0007___APOS_M_R_0033_0008__GOING,R_0033_0012__AND)
-      &amp; r_0033_0012__and(R_0033_0012__AND)
-      &amp; has_conj2(R_0033_0012__AND,R_0033_0013__LEAVE)
-      &amp; r_0033_0013__leave(R_0033_0013__LEAVE)
-      &amp; ! [R_0033_0020__WANTS,R_0033_0014__HER,R_0033_1001____STAR__] :
-          ( ( r_0033_0014__her(R_0033_0014__HER)
-            &amp; r_0033_0020__wants(R_0033_0020__WANTS)
-            &amp; has_arg1(R_0033_0020__WANTS,R_0033_1001____STAR__)
-            &amp; r_0033_1001____star__(R_0033_1001____STAR__)
-            &amp; has_arg0(R_0033_1001____STAR__,R_0033_0014__HER)
-            &amp; has_arg0(R_0033_0020__WANTS,R_0033_0014__HER) )
-         =&gt; ? [Z_000_33_A_LOCKDOWN_50,R_0033_0015__TO_R_0033_0016__DISINFECT] :
-              ( r_0033_0015__to_r_0033_0016__disinfect(R_0033_0015__TO_R_0033_0016__DISINFECT)
-              &amp; has_arg1(R_0033_0015__TO_R_0033_0016__DISINFECT,Z_000_33_A_LOCKDOWN_50)
-              &amp; z_000_33_a_lockdown_50(Z_000_33_A_LOCKDOWN_50)
-              &amp; has_gen(Z_000_33_A_LOCKDOWN_50,R_0033_0014__HER)
-              &amp; has_arg0(R_0033_0015__TO_R_0033_0016__DISINFECT,R_0033_0014__HER) ) )
-      &amp; has_arg0(R_0033_0013__LEAVE,R_0033_0002__I)
-      &amp; has_conj1(R_0033_0012__AND,R_0033_0010__DO)
-      &amp; r_0033_0010__do(R_0033_0010__DO)
-      &amp; has_arg1(R_0033_0010__DO,Z_000_33_A_LOCKDOWN_32)
-      &amp; z_000_33_a_lockdown_32(Z_000_33_A_LOCKDOWN_32)
-      &amp; has_gen(Z_000_33_A_LOCKDOWN_32,R_0033_0002__I)
-      &amp; has_arg0(R_0033_0010__DO,R_0033_0002__I)
-      &amp; has_nim8(R_0033_0004__THINK,R_0033_0003__JUST)
-      &amp; has_arg0(R_0033_0004__THINK,R_0033_0002__I)
-      &amp; has_nim2(R_0033_0004__THINK,R_0033_0001__SO) ) ).
+    ? [R_33_4_THINK,R_33_2_I,R_33_1_SO,R_33_3_JUST] :
+      ( i(R_33_2_I)
+      &amp; so(R_33_1_SO)
+      &amp; just(R_33_3_JUST)
+      &amp; think(R_33_4_THINK,R_33_2_I,R_33_7__APOS_M_GOING)
+      &amp; ~ ? [R_33_12_AND,R_33_10_DO,Z_33_A_LOCKDOWN_32,R_33_13_LEAVE] :
+            ( and(R_33_12_AND)
+            &amp; conj1(R_33_12_AND,R_33_10_DO)
+            &amp; do(R_33_10_DO,R_33_2_I,Z_33_A_LOCKDOWN_32)
+            &amp; z_33_a_lockdown_32(Z_33_A_LOCKDOWN_32)
+            &amp; gen(Z_33_A_LOCKDOWN_32,R_33_2_I)
+            &amp; conj2(R_33_12_AND,R_33_13_LEAVE)
+            &amp; ! [R_33_20_WANTS,R_33_1001__STAR_,R_33_14_HER] :
+                ( ( her(R_33_14_HER)
+                  &amp; wants(R_33_20_WANTS,R_33_14_HER,R_33_1001__STAR_)
+                  &amp; _star_(R_33_1001__STAR_,R_33_14_HER) )
+               =&gt; ? [R_33_15_TO_DISINFECT,Z_33_A_LOCKDOWN_50] :
+                    ( to_disinfect(R_33_15_TO_DISINFECT,R_33_14_HER,Z_33_A_LOCKDOWN_50)
+                    &amp; z_33_a_lockdown_50(Z_33_A_LOCKDOWN_50)
+                    &amp; gen(Z_33_A_LOCKDOWN_50,R_33_14_HER) ) )
+            &amp; arg1(ARG1)
+            &amp; leave(R_33_13_LEAVE,R_33_2_I) )
+      &amp; nim2(R_33_4_THINK,R_33_1_SO)
+      &amp; nim8(R_33_4_THINK,R_33_3_JUST) ) ).
 </pre>
 <br><hr><br>
 <svg width="1023pt" height="613pt"

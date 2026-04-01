@@ -168,16 +168,14 @@ arc(r_0016_0006__speed_r_0016_0007__zones, r_0016_0005__reduced, attrib13).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0016_0001__CONSTRUCTION_R_0016_0002__ZONES,R_0016_0003__USUALLY,R_0016_0005__REDUCED,R_0016_0006__SPEED_R_0016_0007__ZONES,R_0016_0004__HAVE] :
-      ( r_0016_0001__Construction_r_0016_0002__zones(R_0016_0001__CONSTRUCTION_R_0016_0002__ZONES)
-      &amp; r_0016_0003__usually(R_0016_0003__USUALLY)
-      &amp; r_0016_0005__reduced(R_0016_0005__REDUCED)
-      &amp; r_0016_0004__have(R_0016_0004__HAVE)
-      &amp; has_arg1(R_0016_0004__HAVE,R_0016_0006__SPEED_R_0016_0007__ZONES)
-      &amp; r_0016_0006__speed_r_0016_0007__zones(R_0016_0006__SPEED_R_0016_0007__ZONES)
-      &amp; has_attrib13(R_0016_0006__SPEED_R_0016_0007__ZONES,R_0016_0005__REDUCED)
-      &amp; has_nim7(R_0016_0004__HAVE,R_0016_0003__USUALLY)
-      &amp; has_arg0(R_0016_0004__HAVE,R_0016_0001__CONSTRUCTION_R_0016_0002__ZONES) ) ).
+    ? [R_16_4_HAVE,R_16_1_CONSTRUCTION_ZONES,R_16_6_SPEED_ZONES,R_16_5_REDUCED,R_16_3_USUALLY] :
+      ( construction_zones(R_16_1_CONSTRUCTION_ZONES)
+      &amp; reduced(R_16_5_REDUCED)
+      &amp; usually(R_16_3_USUALLY)
+      &amp; have(R_16_4_HAVE,R_16_1_CONSTRUCTION_ZONES,R_16_6_SPEED_ZONES)
+      &amp; speed_zones(R_16_6_SPEED_ZONES)
+      &amp; attrib13(R_16_6_SPEED_ZONES,R_16_5_REDUCED)
+      &amp; nim7(R_16_4_HAVE,R_16_3_USUALLY) ) ).
 </pre>
 <br><hr><br>
 <svg width="427pt" height="207pt"

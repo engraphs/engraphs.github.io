@@ -262,21 +262,16 @@ arc(r_0012_0010__all_quant, r_0012_0011__sides, restriction).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0012_0001__HENCE,R_0012_0004__WAS] :
-      ( r_0012_0001__Hence(R_0012_0001__HENCE)
-      &amp; r_0012_0004__was(R_0012_0004__WAS)
-      &amp; ! [R_0012_0011__SIDES] :
-          ( r_0012_0011__sides(R_0012_0011__SIDES)
-         =&gt; ? [R_0012_0002__THE_R_0012_0003__HOUSE,R_0012_0007__THE_R_0012_0008__ELEMENTS,Z_000_12_A_HARDY_1883_13,R_0012_0005__EXPOSED] :
-              ( r_0012_0002__the_r_0012_0003__house(R_0012_0002__THE_R_0012_0003__HOUSE)
-              &amp; r_0012_0007__the_r_0012_0008__elements(R_0012_0007__THE_R_0012_0008__ELEMENTS)
-              &amp; z_000_12_a_hardy_1883_13(Z_000_12_A_HARDY_1883_13)
-              &amp; r_0012_0005__exposed(R_0012_0005__EXPOSED)
-              &amp; has_arg0(R_0012_0005__EXPOSED,Z_000_12_A_HARDY_1883_13)
-              &amp; has_r_0012_0009__on_nim28(R_0012_0005__EXPOSED,R_0012_0011__SIDES)
-              &amp; has_r_0012_0006__to_clr20(R_0012_0005__EXPOSED,R_0012_0007__THE_R_0012_0008__ELEMENTS)
-              &amp; has_arg1(R_0012_0005__EXPOSED,R_0012_0002__THE_R_0012_0003__HOUSE) ) )
-      &amp; has_nim2(R_0012_0004__WAS,R_0012_0001__HENCE) ) ).
+    ? [R_12_1_HENCE] :
+      ( hence(R_12_1_HENCE)
+      &amp; ! [R_12_11_SIDES] :
+          ( sides(R_12_11_SIDES)
+         =&gt; ? [R_12_5_EXPOSED,Z_12_A_HARDY_1883_13,R_12_2_THE_HOUSE,R_12_7_THE_ELEMENTS] :
+              ( the_house(R_12_2_THE_HOUSE)
+              &amp; the_elements(R_12_7_THE_ELEMENTS)
+              &amp; exposed(R_12_5_EXPOSED,Z_12_A_HARDY_1883_13,R_12_2_THE_HOUSE)
+              &amp; to_clr20(R_12_5_EXPOSED,R_12_7_THE_ELEMENTS)
+              &amp; on_nim28(R_12_5_EXPOSED,R_12_11_SIDES) ) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="541pt" height="252pt"

@@ -374,26 +374,23 @@ arc(r_0003_0014__all_quant, r_0003_0015__the_r_0003_0016__time, restriction).
 </svg>
 <pre>
 fof(formula,axiom,
-    ! [R_0003_0002__ONE] :
-      ( r_0003_0002__one(R_0003_0002__ONE)
-     =&gt; ? [R_0003_0004__EVER,R_0003_0009__STRANGE,R_0003_0006__THAT_R_0003_0008__IS,R_0003_0003__HAS_R_0003_0005__THOUGHT] :
-          ( r_0003_0004__ever(R_0003_0004__EVER)
-          &amp; r_0003_0009__strange(R_0003_0009__STRANGE)
-          &amp; r_0003_0003__has_r_0003_0005__thought(R_0003_0003__HAS_R_0003_0005__THOUGHT)
-          &amp; has_arg1(R_0003_0003__HAS_R_0003_0005__THOUGHT,R_0003_0006__THAT_R_0003_0008__IS)
-          &amp; r_0003_0006__that_r_0003_0008__is(R_0003_0006__THAT_R_0003_0008__IS)
-          &amp; ! [R_0003_0015__THE_R_0003_0016__TIME] :
-              ( r_0003_0015__the_r_0003_0016__time(R_0003_0015__THE_R_0003_0016__TIME)
-             =&gt; ? [R_0003_0011__PEOPLE,R_0003_0013__SUNGLASSES,R_0003_0010__THAT_R_0003_0012__WEAR] :
-                  ( r_0003_0011__people(R_0003_0011__PEOPLE)
-                  &amp; r_0003_0013__sunglasses(R_0003_0013__SUNGLASSES)
-                  &amp; r_0003_0010__that_r_0003_0012__wear(R_0003_0010__THAT_R_0003_0012__WEAR)
-                  &amp; has_nim39(R_0003_0010__THAT_R_0003_0012__WEAR,R_0003_0015__THE_R_0003_0016__TIME)
-                  &amp; has_arg1(R_0003_0010__THAT_R_0003_0012__WEAR,R_0003_0013__SUNGLASSES)
-                  &amp; has_arg0(R_0003_0010__THAT_R_0003_0012__WEAR,R_0003_0011__PEOPLE) ) )
-          &amp; has_prd(R_0003_0006__THAT_R_0003_0008__IS,R_0003_0009__STRANGE)
-          &amp; has_nim10(R_0003_0003__HAS_R_0003_0005__THOUGHT,R_0003_0004__EVER)
-          &amp; has_arg0(R_0003_0003__HAS_R_0003_0005__THOUGHT,R_0003_0002__ONE) ) ) ).
+    ! [R_3_2_ONE] :
+      ( one(R_3_2_ONE)
+     =&gt; ? [R_3_3_HAS_THOUGHT,R_3_6_THAT_IS,R_3_9_STRANGE,R_3_4_EVER] :
+          ( strange(R_3_9_STRANGE)
+          &amp; ever(R_3_4_EVER)
+          &amp; has_thought(R_3_3_HAS_THOUGHT,R_3_2_ONE,R_3_6_THAT_IS)
+          &amp; ! [R_3_15_THE_TIME] :
+              ( the_time(R_3_15_THE_TIME)
+             =&gt; ? [R_3_10_THAT_WEAR,R_3_11_PEOPLE,R_3_13_SUNGLASSES] :
+                  ( people(R_3_11_PEOPLE)
+                  &amp; sunglasses(R_3_13_SUNGLASSES)
+                  &amp; that_wear(R_3_10_THAT_WEAR,R_3_11_PEOPLE,R_3_13_SUNGLASSES)
+                  &amp; nim39(R_3_10_THAT_WEAR,R_3_15_THE_TIME) ) )
+          &amp; arg0(ARG0)
+          &amp; that_is(R_3_6_THAT_IS)
+          &amp; prd(R_3_6_THAT_IS,R_3_9_STRANGE)
+          &amp; nim10(R_3_3_HAS_THOUGHT,R_3_4_EVER) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="724pt" height="387pt"

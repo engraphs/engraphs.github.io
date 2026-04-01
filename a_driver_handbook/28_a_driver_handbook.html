@@ -695,49 +695,44 @@ arc(z_000_28_a_driver_handbook_65, r_0028_0027__closest, attrib78).
 </svg>
 <pre>
 fof(formula,axiom,
-    ! [R_0028_0006__AND,R_0028_0009__FOUR_R_0028_0010__LANES,R_0028_0012__MORE,Z_000_28_A_DRIVER_HANDBOOK_36,R_0028_0011__OR,R_0028_0014__YOUR,R_0028_0015__DIRECTION,R_0028_0007__THERE_R_0028_0008__ARE] :
-      ( ( r_0028_0009__four_r_0028_0010__lanes(R_0028_0009__FOUR_R_0028_0010__LANES)
-        &amp; r_0028_0012__more(R_0028_0012__MORE)
-        &amp; r_0028_0014__your(R_0028_0014__YOUR)
-        &amp; r_0028_0006__and(R_0028_0006__AND)
-        &amp; has_conj2(R_0028_0006__AND,R_0028_0007__THERE_R_0028_0008__ARE)
-        &amp; r_0028_0007__there_r_0028_0008__are(R_0028_0007__THERE_R_0028_0008__ARE)
-        &amp; has_r_0028_0013__in_clr43(R_0028_0007__THERE_R_0028_0008__ARE,R_0028_0015__DIRECTION)
-        &amp; r_0028_0015__direction(R_0028_0015__DIRECTION)
-        &amp; has_gen(R_0028_0015__DIRECTION,R_0028_0014__YOUR)
-        &amp; has_arg0(R_0028_0007__THERE_R_0028_0008__ARE,R_0028_0011__OR)
-        &amp; r_0028_0011__or(R_0028_0011__OR)
-        &amp; has_conj2(R_0028_0011__OR,Z_000_28_A_DRIVER_HANDBOOK_36)
-        &amp; z_000_28_a_driver_handbook_36(Z_000_28_A_DRIVER_HANDBOOK_36)
-        &amp; has_attrib37(Z_000_28_A_DRIVER_HANDBOOK_36,R_0028_0012__MORE)
-        &amp; has_conj1(R_0028_0011__OR,R_0028_0009__FOUR_R_0028_0010__LANES)
-        &amp; ! [R_0028_0003__LANES] :
-            ( r_0028_0003__lanes(R_0028_0003__LANES)
-           =&gt; ? [R_0028_0005__MARKED,R_0028_0004__ARE] :
-                ( r_0028_0005__marked(R_0028_0005__MARKED)
-                &amp; r_0028_0004__are(R_0028_0004__ARE)
-                &amp; has_prd(R_0028_0004__ARE,R_0028_0005__MARKED)
-                &amp; has_arg0(R_0028_0004__ARE,R_0028_0003__LANES) ) ) )
-     =&gt; ? [R_0028_0018__MAY] :
-          ( r_0028_0018__may(R_0028_0018__MAY)
-          &amp; ! [Z_000_28_A_DRIVER_HANDBOOK_65,R_0028_0024__THE_R_0028_0025__TWO_R_0028_0026__LANES,R_0028_0030__RIGHT,R_0028_0033__THE_R_0028_0034__ROAD,R_0028_0029__THE_R_0028_0031__EDGE,R_0028_0027__CLOSEST] :
-              ( ( r_0028_0024__the_r_0028_0025__two_r_0028_0026__lanes(R_0028_0024__THE_R_0028_0025__TWO_R_0028_0026__LANES)
-                &amp; r_0028_0030__right(R_0028_0030__RIGHT)
-                &amp; r_0028_0033__the_r_0028_0034__road(R_0028_0033__THE_R_0028_0034__ROAD)
-                &amp; z_000_28_a_driver_handbook_65(Z_000_28_A_DRIVER_HANDBOOK_65)
-                &amp; has_attrib78(Z_000_28_A_DRIVER_HANDBOOK_65,R_0028_0027__CLOSEST)
-                &amp; r_0028_0027__closest(R_0028_0027__CLOSEST)
-                &amp; has_r_0028_0028__to(R_0028_0027__CLOSEST,R_0028_0029__THE_R_0028_0031__EDGE)
-                &amp; r_0028_0029__the_r_0028_0031__edge(R_0028_0029__THE_R_0028_0031__EDGE)
-                &amp; has_r_0028_0032__of(R_0028_0029__THE_R_0028_0031__EDGE,R_0028_0033__THE_R_0028_0034__ROAD)
-                &amp; has_attrib87(R_0028_0029__THE_R_0028_0031__EDGE,R_0028_0030__RIGHT)
-                &amp; has_r_0028_0023__of(Z_000_28_A_DRIVER_HANDBOOK_65,R_0028_0024__THE_R_0028_0025__TWO_R_0028_0026__LANES) )
-             =&gt; ? [R_0028_0019__ONLY,R_0028_0020__DRIVE] :
-                  ( r_0028_0019__only(R_0028_0019__ONLY)
-                  &amp; r_0028_0020__drive(R_0028_0020__DRIVE)
-                  &amp; has_r_0028_0021__in_nim65(R_0028_0020__DRIVE,Z_000_28_A_DRIVER_HANDBOOK_65)
-                  &amp; has_nim57(R_0028_0020__DRIVE,R_0028_0019__ONLY)
-                  &amp; has_arg0(R_0028_0020__DRIVE,R_0028_0014__YOUR) ) ) ) ) ).
+    ! [R_28_6_AND,R_28_7_THERE_ARE,R_28_11_OR,R_28_9_FOUR_LANES,Z_28_A_DRIVER_HANDBOOK_36,R_28_12_MORE,R_28_15_DIRECTION,R_28_14_YOUR] :
+      ( ( four_lanes(R_28_9_FOUR_LANES)
+        &amp; more(R_28_12_MORE)
+        &amp; your(R_28_14_YOUR)
+        &amp; ! [R_28_3_LANES] :
+            ( lanes(R_28_3_LANES)
+           =&gt; ? [R_28_4_ARE,R_28_5_MARKED] :
+                ( marked(R_28_5_MARKED)
+                &amp; are(R_28_4_ARE,R_28_3_LANES,R_28_5_MARKED) ) )
+        &amp; conj1(CONJ1)
+        &amp; and(R_28_6_AND)
+        &amp; conj2(R_28_6_AND,R_28_7_THERE_ARE)
+        &amp; there_are(R_28_7_THERE_ARE,R_28_11_OR)
+        &amp; or(R_28_11_OR)
+        &amp; conj1(R_28_11_OR,R_28_9_FOUR_LANES)
+        &amp; conj2(R_28_11_OR,Z_28_A_DRIVER_HANDBOOK_36)
+        &amp; z_28_a_driver_handbook_36(Z_28_A_DRIVER_HANDBOOK_36)
+        &amp; attrib37(Z_28_A_DRIVER_HANDBOOK_36,R_28_12_MORE)
+        &amp; in_clr43(R_28_7_THERE_ARE,R_28_15_DIRECTION)
+        &amp; direction(R_28_15_DIRECTION)
+        &amp; gen(R_28_15_DIRECTION,R_28_14_YOUR) )
+     =&gt; ~ ! [Z_28_A_DRIVER_HANDBOOK_65,R_28_27_CLOSEST,R_28_29_THE_EDGE,R_28_30_RIGHT,R_28_33_THE_ROAD,R_28_24_THE_TWO_LANES] :
+            ( ( right(R_28_30_RIGHT)
+              &amp; the_road(R_28_33_THE_ROAD)
+              &amp; the_two_lanes(R_28_24_THE_TWO_LANES)
+              &amp; z_28_a_driver_handbook_65(Z_28_A_DRIVER_HANDBOOK_65)
+              &amp; attrib78(Z_28_A_DRIVER_HANDBOOK_65,R_28_27_CLOSEST)
+              &amp; closest(R_28_27_CLOSEST)
+              &amp; to(R_28_27_CLOSEST,R_28_29_THE_EDGE)
+              &amp; the_edge(R_28_29_THE_EDGE)
+              &amp; attrib87(R_28_29_THE_EDGE,R_28_30_RIGHT)
+              &amp; of(R_28_29_THE_EDGE,R_28_33_THE_ROAD)
+              &amp; of(Z_28_A_DRIVER_HANDBOOK_65,R_28_24_THE_TWO_LANES) )
+           =&gt; ? [R_28_20_DRIVE,R_28_19_ONLY] :
+                ( only(R_28_19_ONLY)
+                &amp; drive(R_28_20_DRIVE,R_28_14_YOUR)
+                &amp; nim57(R_28_20_DRIVE,R_28_19_ONLY)
+                &amp; in_nim65(R_28_20_DRIVE,Z_28_A_DRIVER_HANDBOOK_65) ) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="1398pt" height="568pt"

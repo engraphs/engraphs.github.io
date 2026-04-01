@@ -426,33 +426,25 @@ arc(r_0011_0021__the_r_0011_0022__reasons, r_0011_0024__the_r_0011_0025__decisio
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0011_0003__JUDICIAL,R_0011_0004__REVIEW_R_0011_0005__PROCEEDINGS,R_0011_0007__THERE_R_0011_0008__HAS] :
-      ( r_0011_0003__judicial(R_0011_0003__JUDICIAL)
-      &amp; r_0011_0007__there_r_0011_0008__has(R_0011_0007__THERE_R_0011_0008__HAS)
-      &amp; ! [R_0011_0011__CONFIRMATION,R_0011_0013__THEY,R_0011_0016__ACCURATE,R_0011_0018__COMPLETE,R_0011_0017__OR,R_0011_0024__THE_R_0011_0025__DECISION,R_0011_0021__THE_R_0011_0022__REASONS,R_0011_0015__AN_R_0011_0019__RECORD,R_0011_0012__THAT_R_0011_0014__CONSTITUTE] :
-          ( ( r_0011_0013__they(R_0011_0013__THEY)
-            &amp; r_0011_0016__accurate(R_0011_0016__ACCURATE)
-            &amp; r_0011_0018__complete(R_0011_0018__COMPLETE)
-            &amp; r_0011_0024__the_r_0011_0025__decision(R_0011_0024__THE_R_0011_0025__DECISION)
-            &amp; r_0011_0011__confirmation(R_0011_0011__CONFIRMATION)
-            &amp; has_emb30(R_0011_0011__CONFIRMATION,R_0011_0012__THAT_R_0011_0014__CONSTITUTE)
-            &amp; r_0011_0012__that_r_0011_0014__constitute(R_0011_0012__THAT_R_0011_0014__CONSTITUTE)
-            &amp; has_arg1(R_0011_0012__THAT_R_0011_0014__CONSTITUTE,R_0011_0015__AN_R_0011_0019__RECORD)
-            &amp; r_0011_0015__an_r_0011_0019__record(R_0011_0015__AN_R_0011_0019__RECORD)
-            &amp; has_r_0011_0020__of(R_0011_0015__AN_R_0011_0019__RECORD,R_0011_0021__THE_R_0011_0022__REASONS)
-            &amp; r_0011_0021__the_r_0011_0022__reasons(R_0011_0021__THE_R_0011_0022__REASONS)
-            &amp; has_r_0011_0023__for(R_0011_0021__THE_R_0011_0022__REASONS,R_0011_0024__THE_R_0011_0025__DECISION)
-            &amp; has_attrib41(R_0011_0015__AN_R_0011_0019__RECORD,R_0011_0017__OR)
-            &amp; r_0011_0017__or(R_0011_0017__OR)
-            &amp; has_conj2(R_0011_0017__OR,R_0011_0018__COMPLETE)
-            &amp; has_conj1(R_0011_0017__OR,R_0011_0016__ACCURATE)
-            &amp; has_arg0(R_0011_0012__THAT_R_0011_0014__CONSTITUTE,R_0011_0013__THEY) )
-         =&gt; ? [R_0011_0009__BEEN] :
-              ( r_0011_0009__been(R_0011_0009__BEEN)
-              &amp; has_arg0(R_0011_0009__BEEN,R_0011_0011__CONFIRMATION) ) )
-      &amp; has_r_0011_0001__Unusually_r_0011_0002__in_nim7(R_0011_0007__THERE_R_0011_0008__HAS,R_0011_0004__REVIEW_R_0011_0005__PROCEEDINGS)
-      &amp; r_0011_0004__review_r_0011_0005__proceedings(R_0011_0004__REVIEW_R_0011_0005__PROCEEDINGS)
-      &amp; has_attrib8(R_0011_0004__REVIEW_R_0011_0005__PROCEEDINGS,R_0011_0003__JUDICIAL) ) ).
+    ? [R_11_4_REVIEW_PROCEEDINGS,R_11_3_JUDICIAL] :
+      ( judicial(R_11_3_JUDICIAL)
+      &amp; ! [R_11_11_CONFIRMATION,R_11_12_THAT_CONSTITUTE,R_11_13_THEY,R_11_15_AN_RECORD,R_11_17_OR,R_11_16_ACCURATE,R_11_18_COMPLETE,R_11_21_THE_REASONS,R_11_24_THE_DECISION] :
+          ( ( they(R_11_13_THEY)
+            &amp; accurate(R_11_16_ACCURATE)
+            &amp; complete(R_11_18_COMPLETE)
+            &amp; the_decision(R_11_24_THE_DECISION)
+            &amp; confirmation(R_11_11_CONFIRMATION)
+            &amp; emb30(R_11_11_CONFIRMATION,R_11_12_THAT_CONSTITUTE)
+            &amp; that_constitute(R_11_12_THAT_CONSTITUTE,R_11_13_THEY,R_11_15_AN_RECORD)
+            &amp; an_record(R_11_15_AN_RECORD)
+            &amp; attrib41(R_11_15_AN_RECORD,R_11_17_OR)
+            &amp; or(R_11_17_OR)
+            &amp; conj1(R_11_17_OR,R_11_16_ACCURATE)
+            &amp; conj2(R_11_17_OR,R_11_18_COMPLETE)
+            &amp; of(R_11_15_AN_RECORD,R_11_21_THE_REASONS)
+            &amp; the_reasons(R_11_21_THE_REASONS)
+            &amp; for(R_11_21_THE_REASONS,R_11_24_THE_DECISION) )
+         =&gt; ? [R_11_9_BEEN] : been(R_11_9_BEEN,R_11_11_CONFIRMATION) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="1260pt" height="523pt"

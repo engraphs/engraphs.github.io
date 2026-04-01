@@ -372,28 +372,21 @@ arc(r_0017_0018__now, r_0017_0017__right, qual45).
 </svg>
 <pre>
 fof(formula,axiom,
-    ! [R_0017_0004__N_APOS_T] :
-      ( ~ ? [R_0017_0002__YOU,R_0017_0006__IT,R_0017_0003__DO_R_0017_0005__PICK_R_0017_0007__UP] :
-            ( r_0017_0002__you(R_0017_0002__YOU)
-            &amp; r_0017_0006__it(R_0017_0006__IT)
-            &amp; r_0017_0003__do_r_0017_0005__pick_r_0017_0007__up(R_0017_0003__DO_R_0017_0005__PICK_R_0017_0007__UP)
-            &amp; has_arg1(R_0017_0003__DO_R_0017_0005__PICK_R_0017_0007__UP,R_0017_0006__IT)
-            &amp; has_arg0(R_0017_0003__DO_R_0017_0005__PICK_R_0017_0007__UP,R_0017_0002__YOU) )
-     =&gt; ? [R_0017_0011__LIKELY,R_0017_0010___APOS_S] :
-          ( r_0017_0011__likely(R_0017_0011__LIKELY)
-          &amp; r_0017_0010___apos_s(R_0017_0010___APOS_S)
-          &amp; has_arg0(R_0017_0010___APOS_S,R_0017_0014__N_APOS_T)
-          &amp; ~ ? [R_0017_0002__YOU,R_0017_0016__IT,R_0017_0017__RIGHT,R_0017_0018__NOW,R_0017_0013__DO_R_0017_0015__NEED] :
-                ( r_0017_0002__you(R_0017_0002__YOU)
-                &amp; r_0017_0016__it(R_0017_0016__IT)
-                &amp; r_0017_0017__right(R_0017_0017__RIGHT)
-                &amp; r_0017_0013__do_r_0017_0015__need(R_0017_0013__DO_R_0017_0015__NEED)
-                &amp; has_nim44(R_0017_0013__DO_R_0017_0015__NEED,R_0017_0018__NOW)
-                &amp; r_0017_0018__now(R_0017_0018__NOW)
-                &amp; has_qual45(R_0017_0018__NOW,R_0017_0017__RIGHT)
-                &amp; has_arg1(R_0017_0013__DO_R_0017_0015__NEED,R_0017_0016__IT)
-                &amp; has_arg0(R_0017_0013__DO_R_0017_0015__NEED,R_0017_0002__YOU) )
-          &amp; has_prd(R_0017_0010___APOS_S,R_0017_0011__LIKELY) ) ) ).
+    ( ~ ? [R_17_3_DO_PICK_UP,R_17_2_YOU,R_17_6_IT] :
+          ( you(R_17_2_YOU)
+          &amp; it(R_17_6_IT)
+          &amp; do_pick_up(R_17_3_DO_PICK_UP,R_17_2_YOU,R_17_6_IT) )
+   =&gt; ? [R_17_10__APOS_S,R_17_11_LIKELY] :
+        ( likely(R_17_11_LIKELY)
+        &amp; _apos_s(R_17_10__APOS_S,R_17_14_N_APOS_T,R_17_11_LIKELY)
+        &amp; ~ ? [R_17_13_DO_NEED,R_17_2_YOU,R_17_16_IT,R_17_18_NOW,R_17_17_RIGHT] :
+              ( you(R_17_2_YOU)
+              &amp; it(R_17_16_IT)
+              &amp; right(R_17_17_RIGHT)
+              &amp; do_need(R_17_13_DO_NEED,R_17_2_YOU,R_17_16_IT)
+              &amp; nim44(R_17_13_DO_NEED,R_17_18_NOW)
+              &amp; now(R_17_18_NOW)
+              &amp; qual45(R_17_18_NOW,R_17_17_RIGHT) ) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="833pt" height="297pt"

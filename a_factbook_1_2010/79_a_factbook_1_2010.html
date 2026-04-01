@@ -222,20 +222,19 @@ arc(r_0079_0018__onset, r_0079_0020__symptoms, r_0079_0019__of).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0079_0001__DEATH,R_0079_0009__CASES,R_0079_0004__5_R_0079_0006__15_R_0079_0007___PERCNT_,R_0079_0020__SYMPTOMS,R_0079_0018__ONSET,R_0079_0013__24_R_0079_0015__48_R_0079_0016__HOURS,R_0079_0002__OCCURS] :
-      ( r_0079_0001__death(R_0079_0001__DEATH)
-      &amp; r_0079_0009__cases(R_0079_0009__CASES)
-      &amp; r_0079_0020__symptoms(R_0079_0020__SYMPTOMS)
-      &amp; r_0079_0002__occurs(R_0079_0002__OCCURS)
-      &amp; has_r_0079_0011__typically_r_0079_0012__within_nim32(R_0079_0002__OCCURS,R_0079_0013__24_R_0079_0015__48_R_0079_0016__HOURS)
-      &amp; r_0079_0013__24_r_0079_0015__48_r_0079_0016__hours(R_0079_0013__24_R_0079_0015__48_R_0079_0016__HOURS)
-      &amp; has_r_0079_0017__of(R_0079_0013__24_R_0079_0015__48_R_0079_0016__HOURS,R_0079_0018__ONSET)
-      &amp; r_0079_0018__onset(R_0079_0018__ONSET)
-      &amp; has_r_0079_0019__of(R_0079_0018__ONSET,R_0079_0020__SYMPTOMS)
-      &amp; has_r_0079_0003__in_nim10(R_0079_0002__OCCURS,R_0079_0004__5_R_0079_0006__15_R_0079_0007___PERCNT_)
-      &amp; r_0079_0004__5_r_0079_0006__15_r_0079_0007___percnt_(R_0079_0004__5_R_0079_0006__15_R_0079_0007___PERCNT_)
-      &amp; has_r_0079_0008__of(R_0079_0004__5_R_0079_0006__15_R_0079_0007___PERCNT_,R_0079_0009__CASES)
-      &amp; has_arg0(R_0079_0002__OCCURS,R_0079_0001__DEATH) ) ).
+    ? [R_79_2_OCCURS,R_79_1_DEATH,R_79_4_5_15_PERCNT_,R_79_9_CASES,R_79_13_24_48_HOURS,R_79_18_ONSET,R_79_20_SYMPTOMS] :
+      ( death(R_79_1_DEATH)
+      &amp; cases(R_79_9_CASES)
+      &amp; symptoms(R_79_20_SYMPTOMS)
+      &amp; occurs(R_79_2_OCCURS,R_79_1_DEATH)
+      &amp; in_nim10(R_79_2_OCCURS,R_79_4_5_15_PERCNT_)
+      &amp; 5_15_percnt_(R_79_4_5_15_PERCNT_)
+      &amp; of(R_79_4_5_15_PERCNT_,R_79_9_CASES)
+      &amp; typically_within_nim32(R_79_2_OCCURS,R_79_13_24_48_HOURS)
+      &amp; 24_48_hours(R_79_13_24_48_HOURS)
+      &amp; of(R_79_13_24_48_HOURS,R_79_18_ONSET)
+      &amp; onset(R_79_18_ONSET)
+      &amp; of(R_79_18_ONSET,R_79_20_SYMPTOMS) ) ).
 </pre>
 <br><hr><br>
 <svg width="845pt" height="387pt"

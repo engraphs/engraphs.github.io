@@ -471,35 +471,28 @@ arc(r_0001_0018__ago, r_0001_0015__a_r_0001_0017__days, nim45).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0001_0005__A_R_0001_0006__SITUATION,R_0001_0007__I,R_0001_0008__EVER,R_0001_0009__IMAGINED,R_0001_0011__INTENDED,R_0001_0010__OR] :
-      ( r_0001_0005__a_r_0001_0006__situation(R_0001_0005__A_R_0001_0006__SITUATION)
-      &amp; r_0001_0007__I(R_0001_0007__I)
-      &amp; r_0001_0008__ever(R_0001_0008__EVER)
-      &amp; ! [R_0001_0014__POSTED,R_0001_0016__FEW,R_0001_0015__A_R_0001_0017__DAYS,R_0001_0018__AGO] :
-          ( ( r_0001_0016__few(R_0001_0016__FEW)
-            &amp; r_0001_0014__posted(R_0001_0014__POSTED)
-            &amp; has_nim44(R_0001_0014__POSTED,R_0001_0018__AGO)
-            &amp; r_0001_0018__ago(R_0001_0018__AGO)
-            &amp; has_nim45(R_0001_0018__AGO,R_0001_0015__A_R_0001_0017__DAYS)
-            &amp; r_0001_0015__a_r_0001_0017__days(R_0001_0015__A_R_0001_0017__DAYS)
-            &amp; has_attrib48(R_0001_0015__A_R_0001_0017__DAYS,R_0001_0016__FEW)
-            &amp; has_arg0(R_0001_0014__POSTED,R_0001_0007__I) )
-         =&gt; ~ ? [R_0001_0002__THIS,R_0001_0001__HEY_EVERYONE__COMMA__R_0001_0003__IS] :
-                ( r_0001_0002__this(R_0001_0002__THIS)
-                &amp; r_0001_0001__Hey_everyone__comma__r_0001_0003__is(R_0001_0001__HEY_EVERYONE__COMMA__R_0001_0003__IS)
-                &amp; has_prd(R_0001_0001__HEY_EVERYONE__COMMA__R_0001_0003__IS,R_0001_0005__A_R_0001_0006__SITUATION)
-                &amp; has_arg0(R_0001_0001__HEY_EVERYONE__COMMA__R_0001_0003__IS,R_0001_0002__THIS) ) )
-      &amp; r_0001_0010__or(R_0001_0010__OR)
-      &amp; has_conj2(R_0001_0010__OR,R_0001_0011__INTENDED)
-      &amp; r_0001_0011__intended(R_0001_0011__INTENDED)
-      &amp; has_nim22(R_0001_0011__INTENDED,R_0001_0008__EVER)
-      &amp; has_arg0(R_0001_0011__INTENDED,R_0001_0007__I)
-      &amp; has_arg1(R_0001_0011__INTENDED,R_0001_0005__A_R_0001_0006__SITUATION)
-      &amp; has_conj1(R_0001_0010__OR,R_0001_0009__IMAGINED)
-      &amp; r_0001_0009__imagined(R_0001_0009__IMAGINED)
-      &amp; has_nim22(R_0001_0009__IMAGINED,R_0001_0008__EVER)
-      &amp; has_arg0(R_0001_0009__IMAGINED,R_0001_0007__I)
-      &amp; has_arg1(R_0001_0009__IMAGINED,R_0001_0005__A_R_0001_0006__SITUATION) ) ).
+    ? [R_1_10_OR,R_1_9_IMAGINED,R_1_11_INTENDED,R_1_7_I,R_1_5_A_SITUATION,R_1_8_EVER] :
+      ( i(R_1_7_I)
+      &amp; a_situation(R_1_5_A_SITUATION)
+      &amp; ever(R_1_8_EVER)
+      &amp; or(R_1_10_OR)
+      &amp; conj1(R_1_10_OR,R_1_9_IMAGINED)
+      &amp; imagined(R_1_9_IMAGINED,R_1_7_I,R_1_5_A_SITUATION)
+      &amp; nim22(R_1_9_IMAGINED,R_1_8_EVER)
+      &amp; conj2(R_1_10_OR,R_1_11_INTENDED)
+      &amp; intended(R_1_11_INTENDED,R_1_7_I,R_1_5_A_SITUATION)
+      &amp; nim22(R_1_11_INTENDED,R_1_8_EVER)
+      &amp; ! [R_1_14_POSTED,R_1_18_AGO,R_1_15_A_DAYS,R_1_16_FEW] :
+          ( ( few(R_1_16_FEW)
+            &amp; posted(R_1_14_POSTED,R_1_7_I)
+            &amp; nim44(R_1_14_POSTED,R_1_18_AGO)
+            &amp; ago(R_1_18_AGO)
+            &amp; nim45(R_1_18_AGO,R_1_15_A_DAYS)
+            &amp; a_days(R_1_15_A_DAYS)
+            &amp; attrib48(R_1_15_A_DAYS,R_1_16_FEW) )
+         =&gt; ~ ? [R_1_1_HEY_EVERYONE_COMMA_IS,R_1_2_THIS] :
+                ( this(R_1_2_THIS)
+                &amp; hey_everyone_comma_is(R_1_1_HEY_EVERYONE_COMMA_IS,R_1_2_THIS,R_1_5_A_SITUATION) ) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="888pt" height="342pt"

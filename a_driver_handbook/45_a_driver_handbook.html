@@ -492,41 +492,37 @@ arc(z_000_45_a_driver_handbook_47, r_0045_0017__two_or_more_r_0045_0018__lanes, 
 </svg>
 <pre>
 fof(formula,axiom,
-    ( ! [R_0045_0021__DIRECTION] :
-        ( r_0045_0021__direction(R_0045_0021__DIRECTION)
-       =&gt; ? [R_0045_0012__DIVIDED,R_0045_0014__MULTILANE,R_0045_0013__OR,R_0045_0011__A_R_0045_0015__HIGHWAY,R_0045_0017__TWO_OR_MORE_R_0045_0018__LANES,Z_000_45_A_DRIVER_HANDBOOK_47] :
-            ( r_0045_0012__divided(R_0045_0012__DIVIDED)
-            &amp; r_0045_0014__multilane(R_0045_0014__MULTILANE)
-            &amp; z_000_45_a_driver_handbook_47(Z_000_45_A_DRIVER_HANDBOOK_47)
-            &amp; has_prd(Z_000_45_A_DRIVER_HANDBOOK_47,R_0045_0017__TWO_OR_MORE_R_0045_0018__LANES)
-            &amp; r_0045_0017__two_or_more_r_0045_0018__lanes(R_0045_0017__TWO_OR_MORE_R_0045_0018__LANES)
-            &amp; has_r_0045_0019__in(R_0045_0017__TWO_OR_MORE_R_0045_0018__LANES,R_0045_0021__DIRECTION)
-            &amp; has_arg0(Z_000_45_A_DRIVER_HANDBOOK_47,R_0045_0011__A_R_0045_0015__HIGHWAY)
-            &amp; r_0045_0011__a_r_0045_0015__highway(R_0045_0011__A_R_0045_0015__HIGHWAY)
-            &amp; has_attrib32(R_0045_0011__A_R_0045_0015__HIGHWAY,R_0045_0013__OR)
-            &amp; r_0045_0013__or(R_0045_0013__OR)
-            &amp; has_conj2(R_0045_0013__OR,R_0045_0014__MULTILANE)
-            &amp; has_conj1(R_0045_0013__OR,R_0045_0012__DIVIDED) ) )
-    &amp; ! [R_0045_0005__IS,R_0045_0002__THE_R_0045_0003__SCHOOL_R_0045_0004__BUS,R_0045_0008__OTHER,R_0045_0012__DIVIDED,R_0045_0014__MULTILANE,R_0045_0013__OR,R_0045_0011__A_R_0045_0015__HIGHWAY,R_0045_0007__THE_R_0045_0009__SIDE] :
-        ( ( r_0045_0002__the_r_0045_0003__school_r_0045_0004__bus(R_0045_0002__THE_R_0045_0003__SCHOOL_R_0045_0004__BUS)
-          &amp; r_0045_0008__other(R_0045_0008__OTHER)
-          &amp; r_0045_0012__divided(R_0045_0012__DIVIDED)
-          &amp; r_0045_0014__multilane(R_0045_0014__MULTILANE)
-          &amp; r_0045_0005__is(R_0045_0005__IS)
-          &amp; has_r_0045_0006__on_clr18(R_0045_0005__IS,R_0045_0007__THE_R_0045_0009__SIDE)
-          &amp; r_0045_0007__the_r_0045_0009__side(R_0045_0007__THE_R_0045_0009__SIDE)
-          &amp; has_r_0045_0010__of(R_0045_0007__THE_R_0045_0009__SIDE,R_0045_0011__A_R_0045_0015__HIGHWAY)
-          &amp; r_0045_0011__a_r_0045_0015__highway(R_0045_0011__A_R_0045_0015__HIGHWAY)
-          &amp; has_attrib32(R_0045_0011__A_R_0045_0015__HIGHWAY,R_0045_0013__OR)
-          &amp; r_0045_0013__or(R_0045_0013__OR)
-          &amp; has_conj2(R_0045_0013__OR,R_0045_0014__MULTILANE)
-          &amp; has_conj1(R_0045_0013__OR,R_0045_0012__DIVIDED)
-          &amp; has_attrib21(R_0045_0007__THE_R_0045_0009__SIDE,R_0045_0008__OTHER)
-          &amp; has_arg0(R_0045_0005__IS,R_0045_0002__THE_R_0045_0003__SCHOOL_R_0045_0004__BUS) )
-       =&gt; ~ ? [R_0045_0024__YOU,R_0045_0025__DO_R_0045_0027__NEED_R_0045_0028__TO_R_0045_0029__STOP] :
-              ( r_0045_0024__you(R_0045_0024__YOU)
-              &amp; r_0045_0025__do_r_0045_0027__need_r_0045_0028__to_r_0045_0029__stop(R_0045_0025__DO_R_0045_0027__NEED_R_0045_0028__TO_R_0045_0029__STOP)
-              &amp; has_arg0(R_0045_0025__DO_R_0045_0027__NEED_R_0045_0028__TO_R_0045_0029__STOP,R_0045_0024__YOU) ) ) ) ).
+    ( ! [R_45_5_IS,R_45_2_THE_SCHOOL_BUS,R_45_7_THE_SIDE,R_45_8_OTHER,R_45_11_A_HIGHWAY,R_45_13_OR,R_45_12_DIVIDED,R_45_14_MULTILANE] :
+        ( ( the_school_bus(R_45_2_THE_SCHOOL_BUS)
+          &amp; other(R_45_8_OTHER)
+          &amp; divided(R_45_12_DIVIDED)
+          &amp; multilane(R_45_14_MULTILANE)
+          &amp; is(R_45_5_IS,R_45_2_THE_SCHOOL_BUS)
+          &amp; on_clr18(R_45_5_IS,R_45_7_THE_SIDE)
+          &amp; the_side(R_45_7_THE_SIDE)
+          &amp; attrib21(R_45_7_THE_SIDE,R_45_8_OTHER)
+          &amp; of(R_45_7_THE_SIDE,R_45_11_A_HIGHWAY)
+          &amp; a_highway(R_45_11_A_HIGHWAY)
+          &amp; attrib32(R_45_11_A_HIGHWAY,R_45_13_OR)
+          &amp; or(R_45_13_OR)
+          &amp; conj1(R_45_13_OR,R_45_12_DIVIDED)
+          &amp; conj2(R_45_13_OR,R_45_14_MULTILANE) )
+       =&gt; ~ ? [R_45_25_DO_NEED_TO_STOP,R_45_24_YOU] :
+              ( you(R_45_24_YOU)
+              &amp; do_need_to_stop(R_45_25_DO_NEED_TO_STOP,R_45_24_YOU) ) )
+    &amp; ! [R_45_21_DIRECTION] :
+        ( direction(R_45_21_DIRECTION)
+       =&gt; ? [Z_45_A_DRIVER_HANDBOOK_47,R_45_11_A_HIGHWAY,R_45_13_OR,R_45_12_DIVIDED,R_45_14_MULTILANE,R_45_17_TWO_OR_MORE_LANES] :
+            ( divided(R_45_12_DIVIDED)
+            &amp; multilane(R_45_14_MULTILANE)
+            &amp; z_45_a_driver_handbook_47(Z_45_A_DRIVER_HANDBOOK_47,R_45_11_A_HIGHWAY,R_45_17_TWO_OR_MORE_LANES)
+            &amp; a_highway(R_45_11_A_HIGHWAY)
+            &amp; attrib32(R_45_11_A_HIGHWAY,R_45_13_OR)
+            &amp; or(R_45_13_OR)
+            &amp; conj1(R_45_13_OR,R_45_12_DIVIDED)
+            &amp; conj2(R_45_13_OR,R_45_14_MULTILANE)
+            &amp; two_or_more_lanes(R_45_17_TWO_OR_MORE_LANES)
+            &amp; in(R_45_17_TWO_OR_MORE_LANES,R_45_21_DIRECTION) ) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="1259pt" height="568pt"

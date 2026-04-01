@@ -386,29 +386,26 @@ arc(r_0110_0018__hit, r_0110_0019__the_r_0110_0020__mine, arg1).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0110_0002__AFGHAN,R_0110_0001__AN_R_0110_0003__ARMY_R_0110_0004__SPOKESMAN,R_0110_0005__SAID] :
-      ( r_0110_0002__Afghan(R_0110_0002__AFGHAN)
-      &amp; r_0110_0005__said(R_0110_0005__SAID)
-      &amp; ! [R_0110_0018__HIT,R_0110_0006__THE_R_0110_0007__TROOPS,R_0110_0017__VEHICLE,R_0110_0019__THE_R_0110_0020__MINE] :
-          ( ( r_0110_0006__the_r_0110_0007__troops(R_0110_0006__THE_R_0110_0007__TROOPS)
-            &amp; r_0110_0019__the_r_0110_0020__mine(R_0110_0019__THE_R_0110_0020__MINE)
-            &amp; r_0110_0018__hit(R_0110_0018__HIT)
-            &amp; has_arg1(R_0110_0018__HIT,R_0110_0019__THE_R_0110_0020__MINE)
-            &amp; has_arg0(R_0110_0018__HIT,R_0110_0017__VEHICLE)
-            &amp; r_0110_0017__vehicle(R_0110_0017__VEHICLE)
-            &amp; has_gen(R_0110_0017__VEHICLE,R_0110_0006__THE_R_0110_0007__TROOPS) )
-         =&gt; ? [R_0110_0012__NEARBY,R_0110_0013__PAKISTANI,R_0110_0011__THE_R_0110_0014__BORDER,R_0110_0008__WERE_R_0110_0009__TRAVELING] :
-              ( r_0110_0012__nearby(R_0110_0012__NEARBY)
-              &amp; r_0110_0013__Pakistani(R_0110_0013__PAKISTANI)
-              &amp; r_0110_0008__were_r_0110_0009__traveling(R_0110_0008__WERE_R_0110_0009__TRAVELING)
-              &amp; has_r_0110_0010__towards_clr29(R_0110_0008__WERE_R_0110_0009__TRAVELING,R_0110_0011__THE_R_0110_0014__BORDER)
-              &amp; r_0110_0011__the_r_0110_0014__border(R_0110_0011__THE_R_0110_0014__BORDER)
-              &amp; has_attrib35(R_0110_0011__THE_R_0110_0014__BORDER,R_0110_0013__PAKISTANI)
-              &amp; has_attrib32(R_0110_0011__THE_R_0110_0014__BORDER,R_0110_0012__NEARBY)
-              &amp; has_arg0(R_0110_0008__WERE_R_0110_0009__TRAVELING,R_0110_0006__THE_R_0110_0007__TROOPS) ) )
-      &amp; has_arg0(R_0110_0005__SAID,R_0110_0001__AN_R_0110_0003__ARMY_R_0110_0004__SPOKESMAN)
-      &amp; r_0110_0001__An_r_0110_0003__Army_r_0110_0004__spokesman(R_0110_0001__AN_R_0110_0003__ARMY_R_0110_0004__SPOKESMAN)
-      &amp; has_attrib5(R_0110_0001__AN_R_0110_0003__ARMY_R_0110_0004__SPOKESMAN,R_0110_0002__AFGHAN) ) ).
+    ? [R_110_5_SAID,R_110_1_AN_ARMY_SPOKESMAN,R_110_2_AFGHAN] :
+      ( afghan(R_110_2_AFGHAN)
+      &amp; ! [R_110_18_HIT,R_110_17_VEHICLE,R_110_6_THE_TROOPS,R_110_19_THE_MINE] :
+          ( ( the_troops(R_110_6_THE_TROOPS)
+            &amp; the_mine(R_110_19_THE_MINE)
+            &amp; hit(R_110_18_HIT,R_110_17_VEHICLE,R_110_19_THE_MINE)
+            &amp; vehicle(R_110_17_VEHICLE)
+            &amp; gen(R_110_17_VEHICLE,R_110_6_THE_TROOPS) )
+         =&gt; ? [R_110_8_WERE_TRAVELING,R_110_11_THE_BORDER,R_110_12_NEARBY,R_110_13_PAKISTANI] :
+              ( nearby(R_110_12_NEARBY)
+              &amp; pakistani(R_110_13_PAKISTANI)
+              &amp; were_traveling(R_110_8_WERE_TRAVELING,R_110_6_THE_TROOPS)
+              &amp; towards_clr29(R_110_8_WERE_TRAVELING,R_110_11_THE_BORDER)
+              &amp; the_border(R_110_11_THE_BORDER)
+              &amp; attrib32(R_110_11_THE_BORDER,R_110_12_NEARBY)
+              &amp; attrib35(R_110_11_THE_BORDER,R_110_13_PAKISTANI) ) )
+      &amp; arg1(ARG1)
+      &amp; said(R_110_5_SAID,R_110_1_AN_ARMY_SPOKESMAN)
+      &amp; an_Army_spokesman(R_110_1_AN_ARMY_SPOKESMAN)
+      &amp; attrib5(R_110_1_AN_ARMY_SPOKESMAN,R_110_2_AFGHAN) ) ).
 </pre>
 <br><hr><br>
 <svg width="1024pt" height="387pt"

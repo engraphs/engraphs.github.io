@@ -611,45 +611,35 @@ arc(z_000_47_a_freedoom_50, r_0047_0016__killing, restriction).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0047_0001__IT,R_0047_0002__ALSO,R_0047_0004__MONSTER_R_0047_0005__IN__HYPHEN__FIGHTING,R_0047_0003__ENCOURAGES,Z_000_47_A_FREEDOOM_2] :
-      ( r_0047_0001__It(R_0047_0001__IT)
-      &amp; r_0047_0002__also(R_0047_0002__ALSO)
-      &amp; r_0047_0004__monster_r_0047_0005__in__hyphen__fighting(R_0047_0004__MONSTER_R_0047_0005__IN__HYPHEN__FIGHTING)
-      &amp; z_000_47_a_freedoom_2(Z_000_47_A_FREEDOOM_2)
-      &amp; ! [R_0047_0008__DONE,R_0047_0009__EFFECTIVELY,Z_000_47_A_FREEDOOM_24,Z_000_47_A_FREEDOOM_25] :
-          ( ( r_0047_0009__effectively(R_0047_0009__EFFECTIVELY)
-            &amp; z_000_47_a_freedoom_24(Z_000_47_A_FREEDOOM_24)
-            &amp; z_000_47_a_freedoom_25(Z_000_47_A_FREEDOOM_25)
-            &amp; r_0047_0008__done(R_0047_0008__DONE)
-            &amp; has_arg0(R_0047_0008__DONE,Z_000_47_A_FREEDOOM_25)
-            &amp; has_arg1(R_0047_0008__DONE,Z_000_47_A_FREEDOOM_24)
-            &amp; has_nim29(R_0047_0008__DONE,R_0047_0009__EFFECTIVELY) )
-         =&gt; ? [R_0047_0019__YOU,R_0047_0023__AMMUNITION,R_0047_0020___APOS_LL_R_0047_0021__SAVE,R_0047_0011__THEY,R_0047_0015__ENERGY,R_0047_0012___APOS_LL_R_0047_0013__SPEND,R_0047_0016__KILLING,Z_000_47_A_FREEDOOM_50,R_0047_0018__AND] :
-              ( r_0047_0011__they(R_0047_0011__THEY)
-              &amp; r_0047_0019__you(R_0047_0019__YOU)
-              &amp; r_0047_0023__ammunition(R_0047_0023__AMMUNITION)
-              &amp; r_0047_0018__and(R_0047_0018__AND)
-              &amp; has_conj1(R_0047_0018__AND,Z_000_47_A_FREEDOOM_50)
-              &amp; z_000_47_a_freedoom_50(Z_000_47_A_FREEDOOM_50)
-              &amp; has_conj1(Z_000_47_A_FREEDOOM_50,R_0047_0016__KILLING)
-              &amp; r_0047_0016__killing(R_0047_0016__KILLING)
-              &amp; has_arg0(R_0047_0016__KILLING,R_0047_0011__THEY)
-              &amp; has_arg1(R_0047_0016__KILLING,R_0047_0004__MONSTER_R_0047_0005__IN__HYPHEN__FIGHTING)
-              &amp; has_conj2(Z_000_47_A_FREEDOOM_50,R_0047_0012___APOS_LL_R_0047_0013__SPEND)
-              &amp; r_0047_0012___apos_ll_r_0047_0013__spend(R_0047_0012___APOS_LL_R_0047_0013__SPEND)
-              &amp; has_arg1(R_0047_0012___APOS_LL_R_0047_0013__SPEND,R_0047_0015__ENERGY)
-              &amp; r_0047_0015__energy(R_0047_0015__ENERGY)
-              &amp; has_gen(R_0047_0015__ENERGY,R_0047_0011__THEY)
-              &amp; has_arg0(R_0047_0012___APOS_LL_R_0047_0013__SPEND,R_0047_0011__THEY)
-              &amp; has_conj2(R_0047_0018__AND,R_0047_0020___APOS_LL_R_0047_0021__SAVE)
-              &amp; r_0047_0020___apos_ll_r_0047_0021__save(R_0047_0020___APOS_LL_R_0047_0021__SAVE)
-              &amp; has_r_0047_0022__on_clr72(R_0047_0020___APOS_LL_R_0047_0021__SAVE,R_0047_0023__AMMUNITION)
-              &amp; has_arg0(R_0047_0020___APOS_LL_R_0047_0021__SAVE,R_0047_0019__YOU) ) )
-      &amp; has_conj1(Z_000_47_A_FREEDOOM_2,R_0047_0003__ENCOURAGES)
-      &amp; r_0047_0003__encourages(R_0047_0003__ENCOURAGES)
-      &amp; has_arg1(R_0047_0003__ENCOURAGES,R_0047_0004__MONSTER_R_0047_0005__IN__HYPHEN__FIGHTING)
-      &amp; has_nim7(R_0047_0003__ENCOURAGES,R_0047_0002__ALSO)
-      &amp; has_arg0(R_0047_0003__ENCOURAGES,R_0047_0001__IT) ) ).
+    ? [Z_47_A_FREEDOOM_2,R_47_3_ENCOURAGES,R_47_1_IT,R_47_4_MONSTER_IN_HYPHEN_FIGHTING,R_47_2_ALSO] :
+      ( it(R_47_1_IT)
+      &amp; monster_in_hyphen_fighting(R_47_4_MONSTER_IN_HYPHEN_FIGHTING)
+      &amp; also(R_47_2_ALSO)
+      &amp; ! [R_47_8_DONE,Z_47_A_FREEDOOM_25,Z_47_A_FREEDOOM_24,R_47_9_EFFECTIVELY] :
+          ( ( effectively(R_47_9_EFFECTIVELY)
+            &amp; done(R_47_8_DONE,Z_47_A_FREEDOOM_25,Z_47_A_FREEDOOM_24)
+            &amp; nim29(R_47_8_DONE,R_47_9_EFFECTIVELY) )
+         =&gt; ? [R_47_18_AND,Z_47_A_FREEDOOM_50,R_47_16_KILLING,R_47_12__APOS_LL_SPEND,R_47_15_ENERGY,R_47_11_THEY,R_47_20__APOS_LL_SAVE,R_47_19_YOU,R_47_23_AMMUNITION] :
+              ( they(R_47_11_THEY)
+              &amp; you(R_47_19_YOU)
+              &amp; ammunition(R_47_23_AMMUNITION)
+              &amp; and(R_47_18_AND)
+              &amp; conj1(R_47_18_AND,Z_47_A_FREEDOOM_50)
+              &amp; z_47_a_freedoom_50(Z_47_A_FREEDOOM_50)
+              &amp; conj1(Z_47_A_FREEDOOM_50,R_47_16_KILLING)
+              &amp; killing(R_47_16_KILLING,R_47_11_THEY,R_47_4_MONSTER_IN_HYPHEN_FIGHTING)
+              &amp; conj2(Z_47_A_FREEDOOM_50,R_47_12__APOS_LL_SPEND)
+              &amp; _apos_ll_spend(R_47_12__APOS_LL_SPEND,R_47_11_THEY,R_47_15_ENERGY)
+              &amp; energy(R_47_15_ENERGY)
+              &amp; gen(R_47_15_ENERGY,R_47_11_THEY)
+              &amp; conj2(R_47_18_AND,R_47_20__APOS_LL_SAVE)
+              &amp; _apos_ll_save(R_47_20__APOS_LL_SAVE,R_47_19_YOU)
+              &amp; on_clr72(R_47_20__APOS_LL_SAVE,R_47_23_AMMUNITION) ) )
+      &amp; conj2(CONJ2)
+      &amp; z_47_a_freedoom_2(Z_47_A_FREEDOOM_2)
+      &amp; conj1(Z_47_A_FREEDOOM_2,R_47_3_ENCOURAGES)
+      &amp; encourages(R_47_3_ENCOURAGES,R_47_1_IT,R_47_4_MONSTER_IN_HYPHEN_FIGHTING)
+      &amp; nim7(R_47_3_ENCOURAGES,R_47_2_ALSO) ) ).
 </pre>
 <br><hr><br>
 <svg width="1170pt" height="523pt"

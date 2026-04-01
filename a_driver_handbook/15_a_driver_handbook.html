@@ -222,17 +222,14 @@ arc(r_0015_0008__driving_r_0015_0009__conditions, r_0015_0007__ideal, attrib20).
 </svg>
 <pre>
 fof(formula,axiom,
-    ! [R_0015_0002__SPEED_R_0015_0003__LIMITS] :
-      ( r_0015_0002__speed_r_0015_0003__limits(R_0015_0002__SPEED_R_0015_0003__LIMITS)
-     =&gt; ? [R_0015_0007__IDEAL,R_0015_0008__DRIVING_R_0015_0009__CONDITIONS,Z_000_15_A_DRIVER_HANDBOOK_12,R_0015_0004__ARE_R_0015_0005__BASED] :
-          ( r_0015_0007__ideal(R_0015_0007__IDEAL)
-          &amp; z_000_15_a_driver_handbook_12(Z_000_15_A_DRIVER_HANDBOOK_12)
-          &amp; r_0015_0004__are_r_0015_0005__based(R_0015_0004__ARE_R_0015_0005__BASED)
-          &amp; has_arg0(R_0015_0004__ARE_R_0015_0005__BASED,Z_000_15_A_DRIVER_HANDBOOK_12)
-          &amp; has_r_0015_0006__on_clr19(R_0015_0004__ARE_R_0015_0005__BASED,R_0015_0008__DRIVING_R_0015_0009__CONDITIONS)
-          &amp; r_0015_0008__driving_r_0015_0009__conditions(R_0015_0008__DRIVING_R_0015_0009__CONDITIONS)
-          &amp; has_attrib20(R_0015_0008__DRIVING_R_0015_0009__CONDITIONS,R_0015_0007__IDEAL)
-          &amp; has_arg1(R_0015_0004__ARE_R_0015_0005__BASED,R_0015_0002__SPEED_R_0015_0003__LIMITS) ) ) ).
+    ! [R_15_2_SPEED_LIMITS] :
+      ( speed_limits(R_15_2_SPEED_LIMITS)
+     =&gt; ? [R_15_4_ARE_BASED,Z_15_A_DRIVER_HANDBOOK_12,R_15_8_DRIVING_CONDITIONS,R_15_7_IDEAL] :
+          ( ideal(R_15_7_IDEAL)
+          &amp; are_based(R_15_4_ARE_BASED,Z_15_A_DRIVER_HANDBOOK_12,R_15_2_SPEED_LIMITS)
+          &amp; on_clr19(R_15_4_ARE_BASED,R_15_8_DRIVING_CONDITIONS)
+          &amp; driving_conditions(R_15_8_DRIVING_CONDITIONS)
+          &amp; attrib20(R_15_8_DRIVING_CONDITIONS,R_15_7_IDEAL) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="477pt" height="297pt"

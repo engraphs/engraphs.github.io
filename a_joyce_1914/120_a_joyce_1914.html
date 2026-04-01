@@ -440,35 +440,30 @@ arc(r_0120_0020__a_r_0120_0022__world, r_0120_0021__better, attrib58).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0120_0001__MY,R_0120_0002__AUNT,R_0120_0003__WAITED,R_0120_0005__ELIZA,R_0120_0006__SIGHED,R_0120_0004__UNTIL,R_0120_0016__HE,R_0120_0021__BETTER,R_0120_0020__A_R_0120_0022__WORLD,R_0120_0012__AH_R_0120_0014__WELL_R_0120_0017___APOS_S_R_0120_0018__GONE,UTTERANCE_120_A_JOYCE_1914_34,R_0120_0008__THEN,R_0120_0009__SAID,R_0120_0007__AND] :
-      ( r_0120_0001__My(R_0120_0001__MY)
-      &amp; r_0120_0005__Eliza(R_0120_0005__ELIZA)
-      &amp; r_0120_0008__then(R_0120_0008__THEN)
-      &amp; r_0120_0016__he(R_0120_0016__HE)
-      &amp; r_0120_0021__better(R_0120_0021__BETTER)
-      &amp; r_0120_0007__and(R_0120_0007__AND)
-      &amp; has_conj2(R_0120_0007__AND,R_0120_0009__SAID)
-      &amp; r_0120_0009__said(R_0120_0009__SAID)
-      &amp; has_nim25(R_0120_0009__SAID,R_0120_0008__THEN)
-      &amp; has_arg0(R_0120_0009__SAID,R_0120_0002__AUNT)
-      &amp; r_0120_0002__aunt(R_0120_0002__AUNT)
-      &amp; has_gen(R_0120_0002__AUNT,R_0120_0001__MY)
-      &amp; has_arg1(R_0120_0009__SAID,UTTERANCE_120_A_JOYCE_1914_34)
+    ? [R_120_7_AND,R_120_4_UNTIL,R_120_6_SIGHED,R_120_5_ELIZA,R_120_3_WAITED,R_120_9_SAID,R_120_2_AUNT,R_120_1_MY,UTTERANCE_120_A_JOYCE_1914_34,R_120_12_AH_WELL_APOS_S_GONE,R_120_16_HE,R_120_20_A_WORLD,R_120_21_BETTER,R_120_8_THEN] :
+      ( eliza(R_120_5_ELIZA)
+      &amp; my(R_120_1_MY)
+      &amp; he(R_120_16_HE)
+      &amp; better(R_120_21_BETTER)
+      &amp; then(R_120_8_THEN)
+      &amp; and(R_120_7_AND)
+      &amp; conj1(R_120_7_AND,R_120_4_UNTIL)
+      &amp; until(R_120_4_UNTIL)
+      &amp; conj1(R_120_4_UNTIL,R_120_6_SIGHED)
+      &amp; sighed(R_120_6_SIGHED,R_120_5_ELIZA)
+      &amp; conj2(R_120_4_UNTIL,R_120_3_WAITED)
+      &amp; waited(R_120_3_WAITED,R_120_2_AUNT)
+      &amp; aunt(R_120_2_AUNT)
+      &amp; gen(R_120_2_AUNT,R_120_1_MY)
+      &amp; conj2(R_120_7_AND,R_120_9_SAID)
+      &amp; said(R_120_9_SAID,R_120_2_AUNT,UTTERANCE_120_A_JOYCE_1914_34)
       &amp; utterance_120_a_joyce_1914_34(UTTERANCE_120_A_JOYCE_1914_34)
-      &amp; has_part1(UTTERANCE_120_A_JOYCE_1914_34,R_0120_0012__AH_R_0120_0014__WELL_R_0120_0017___APOS_S_R_0120_0018__GONE)
-      &amp; r_0120_0012__Ah_r_0120_0014__well_r_0120_0017___apos_s_r_0120_0018__gone(R_0120_0012__AH_R_0120_0014__WELL_R_0120_0017___APOS_S_R_0120_0018__GONE)
-      &amp; has_r_0120_0019__to_nim55(R_0120_0012__AH_R_0120_0014__WELL_R_0120_0017___APOS_S_R_0120_0018__GONE,R_0120_0020__A_R_0120_0022__WORLD)
-      &amp; r_0120_0020__a_r_0120_0022__world(R_0120_0020__A_R_0120_0022__WORLD)
-      &amp; has_attrib58(R_0120_0020__A_R_0120_0022__WORLD,R_0120_0021__BETTER)
-      &amp; has_arg0(R_0120_0012__AH_R_0120_0014__WELL_R_0120_0017___APOS_S_R_0120_0018__GONE,R_0120_0016__HE)
-      &amp; has_conj1(R_0120_0007__AND,R_0120_0004__UNTIL)
-      &amp; r_0120_0004__until(R_0120_0004__UNTIL)
-      &amp; has_conj1(R_0120_0004__UNTIL,R_0120_0006__SIGHED)
-      &amp; r_0120_0006__sighed(R_0120_0006__SIGHED)
-      &amp; has_arg0(R_0120_0006__SIGHED,R_0120_0005__ELIZA)
-      &amp; has_conj2(R_0120_0004__UNTIL,R_0120_0003__WAITED)
-      &amp; r_0120_0003__waited(R_0120_0003__WAITED)
-      &amp; has_arg0(R_0120_0003__WAITED,R_0120_0002__AUNT) ) ).
+      &amp; part1(UTTERANCE_120_A_JOYCE_1914_34,R_120_12_AH_WELL_APOS_S_GONE)
+      &amp; ah_well_apos_s_gone(R_120_12_AH_WELL_APOS_S_GONE,R_120_16_HE)
+      &amp; to_nim55(R_120_12_AH_WELL_APOS_S_GONE,R_120_20_A_WORLD)
+      &amp; a_world(R_120_20_A_WORLD)
+      &amp; attrib58(R_120_20_A_WORLD,R_120_21_BETTER)
+      &amp; nim25(R_120_9_SAID,R_120_8_THEN) ) ).
 </pre>
 <br><hr><br>
 <svg width="983pt" height="523pt"

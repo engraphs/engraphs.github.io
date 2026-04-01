@@ -305,21 +305,17 @@ arc(r_0018_0015__have, r_0018_0016__100_r_0018_0017___percnt__r_0018_0018__healt
 </svg>
 <pre>
 fof(formula,axiom,
-    ! [R_0018_0015__HAVE,R_0018_0004__YOU,R_0018_0014__ALREADY,R_0018_0016__100_R_0018_0017___PERCNT__R_0018_0018__HEALTH] :
-      ( ( r_0018_0004__you(R_0018_0004__YOU)
-        &amp; r_0018_0014__already(R_0018_0014__ALREADY)
-        &amp; r_0018_0016__100_r_0018_0017___percnt__r_0018_0018__health(R_0018_0016__100_R_0018_0017___PERCNT__R_0018_0018__HEALTH)
-        &amp; r_0018_0015__have(R_0018_0015__HAVE)
-        &amp; has_arg1(R_0018_0015__HAVE,R_0018_0016__100_R_0018_0017___PERCNT__R_0018_0018__HEALTH)
-        &amp; has_nim35(R_0018_0015__HAVE,R_0018_0014__ALREADY)
-        &amp; has_arg0(R_0018_0015__HAVE,R_0018_0004__YOU) )
-     =&gt; ~ ? [R_0018_0002__FOR_EXAMPLE,R_0018_0009__A_R_0018_0010__HEALTH_R_0018_0011__PACK,R_0018_0005__CA_R_0018_0007__PICK_R_0018_0008__UP] :
-            ( r_0018_0002__for_example(R_0018_0002__FOR_EXAMPLE)
-            &amp; r_0018_0009__a_r_0018_0010__health_r_0018_0011__pack(R_0018_0009__A_R_0018_0010__HEALTH_R_0018_0011__PACK)
-            &amp; r_0018_0005__ca_r_0018_0007__pick_r_0018_0008__up(R_0018_0005__CA_R_0018_0007__PICK_R_0018_0008__UP)
-            &amp; has_arg1(R_0018_0005__CA_R_0018_0007__PICK_R_0018_0008__UP,R_0018_0009__A_R_0018_0010__HEALTH_R_0018_0011__PACK)
-            &amp; has_arg0(R_0018_0005__CA_R_0018_0007__PICK_R_0018_0008__UP,R_0018_0004__YOU)
-            &amp; has_nim4(R_0018_0005__CA_R_0018_0007__PICK_R_0018_0008__UP,R_0018_0002__FOR_EXAMPLE) ) ) ).
+    ! [R_18_15_HAVE,R_18_4_YOU,R_18_16_100_PERCNT_HEALTH,R_18_14_ALREADY] :
+      ( ( you(R_18_4_YOU)
+        &amp; 100_percnt_health(R_18_16_100_PERCNT_HEALTH)
+        &amp; already(R_18_14_ALREADY)
+        &amp; have(R_18_15_HAVE,R_18_4_YOU,R_18_16_100_PERCNT_HEALTH)
+        &amp; nim35(R_18_15_HAVE,R_18_14_ALREADY) )
+     =&gt; ~ ? [R_18_5_CA_PICK_UP,R_18_9_A_HEALTH_PACK,R_18_2_FOR_EXAMPLE] :
+            ( a_health_pack(R_18_9_A_HEALTH_PACK)
+            &amp; for_example(R_18_2_FOR_EXAMPLE)
+            &amp; ca_pick_up(R_18_5_CA_PICK_UP,R_18_4_YOU,R_18_9_A_HEALTH_PACK)
+            &amp; nim4(R_18_5_CA_PICK_UP,R_18_2_FOR_EXAMPLE) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="883pt" height="252pt"

@@ -155,14 +155,12 @@ arc(r_0073_0004__reach, r_0073_0008__epidemic_r_0073_0009__outbreaks, r_0073_000
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0073_0001__FATALITY_R_0073_0002__RATE,R_0073_0005__50_R_0073_0006___PERCNT_,R_0073_0008__EPIDEMIC_R_0073_0009__OUTBREAKS,R_0073_0003__CAN_R_0073_0004__REACH] :
-      ( r_0073_0001__fatality_r_0073_0002__rate(R_0073_0001__FATALITY_R_0073_0002__RATE)
-      &amp; r_0073_0005__50_r_0073_0006___percnt_(R_0073_0005__50_R_0073_0006___PERCNT_)
-      &amp; r_0073_0008__epidemic_r_0073_0009__outbreaks(R_0073_0008__EPIDEMIC_R_0073_0009__OUTBREAKS)
-      &amp; r_0073_0003__can_r_0073_0004__reach(R_0073_0003__CAN_R_0073_0004__REACH)
-      &amp; has_r_0073_0007__in_nim20(R_0073_0003__CAN_R_0073_0004__REACH,R_0073_0008__EPIDEMIC_R_0073_0009__OUTBREAKS)
-      &amp; has_arg1(R_0073_0003__CAN_R_0073_0004__REACH,R_0073_0005__50_R_0073_0006___PERCNT_)
-      &amp; has_arg0(R_0073_0003__CAN_R_0073_0004__REACH,R_0073_0001__FATALITY_R_0073_0002__RATE) ) ).
+    ? [R_73_3_CAN_REACH,R_73_1_FATALITY_RATE,R_73_5_50_PERCNT_,R_73_8_EPIDEMIC_OUTBREAKS] :
+      ( fatality_rate(R_73_1_FATALITY_RATE)
+      &amp; 50_percnt_(R_73_5_50_PERCNT_)
+      &amp; epidemic_outbreaks(R_73_8_EPIDEMIC_OUTBREAKS)
+      &amp; can_reach(R_73_3_CAN_REACH,R_73_1_FATALITY_RATE,R_73_5_50_PERCNT_)
+      &amp; in_nim20(R_73_3_CAN_REACH,R_73_8_EPIDEMIC_OUTBREAKS) ) ).
 </pre>
 <br><hr><br>
 <svg width="481pt" height="252pt"

@@ -218,20 +218,16 @@ arc(z_000_26_a_factbook_1_2010_9, r_0026_0008__disease, prd).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0026_0004__MOSQUITO,R_0026_0007__VIRAL,R_0026_0008__DISEASE,R_0026_0006__BORNE,R_0026_0001__YELLOW_R_0026_0002__FEVER,Z_000_26_A_FACTBOOK_1_2010_1,Z_000_26_A_FACTBOOK_1_2010_9] :
-      ( r_0026_0001__Yellow_r_0026_0002__fever(R_0026_0001__YELLOW_R_0026_0002__FEVER)
-      &amp; r_0026_0004__mosquito(R_0026_0004__MOSQUITO)
-      &amp; r_0026_0007__viral(R_0026_0007__VIRAL)
-      &amp; z_000_26_a_factbook_1_2010_9(Z_000_26_A_FACTBOOK_1_2010_9)
-      &amp; has_prd(Z_000_26_A_FACTBOOK_1_2010_9,R_0026_0008__DISEASE)
-      &amp; r_0026_0008__disease(R_0026_0008__DISEASE)
-      &amp; has_attrib19(R_0026_0008__DISEASE,R_0026_0007__VIRAL)
-      &amp; has_arg0(Z_000_26_A_FACTBOOK_1_2010_9,R_0026_0001__YELLOW_R_0026_0002__FEVER)
-      &amp; z_000_26_a_factbook_1_2010_1(Z_000_26_A_FACTBOOK_1_2010_1)
-      &amp; has_nim2(Z_000_26_A_FACTBOOK_1_2010_1,R_0026_0001__YELLOW_R_0026_0002__FEVER)
-      &amp; r_0026_0006__borne(R_0026_0006__BORNE)
-      &amp; has_arg1(R_0026_0006__BORNE,R_0026_0008__DISEASE)
-      &amp; has_arg0(R_0026_0006__BORNE,R_0026_0004__MOSQUITO) ) ).
+    ? [R_26_6_BORNE,R_26_4_MOSQUITO,Z_26_A_FACTBOOK_1_2010_1,Z_26_A_FACTBOOK_1_2010_9,R_26_1_YELLOW_FEVER,R_26_8_DISEASE,R_26_7_VIRAL] :
+      ( mosquito(R_26_4_MOSQUITO)
+      &amp; yellow_fever(R_26_1_YELLOW_FEVER)
+      &amp; viral(R_26_7_VIRAL)
+      &amp; borne(R_26_6_BORNE,R_26_4_MOSQUITO,R_26_8_DISEASE)
+      &amp; disease(R_26_8_DISEASE)
+      &amp; attrib19(R_26_8_DISEASE,R_26_7_VIRAL)
+      &amp; z_26_a_factbook_1_2010_1(Z_26_A_FACTBOOK_1_2010_1)
+      &amp; nim2(Z_26_A_FACTBOOK_1_2010_1,R_26_1_YELLOW_FEVER)
+      &amp; z_26_a_factbook_1_2010_9(Z_26_A_FACTBOOK_1_2010_9,R_26_1_YELLOW_FEVER,R_26_8_DISEASE) ) ).
 </pre>
 <br><hr><br>
 <svg width="390pt" height="342pt"

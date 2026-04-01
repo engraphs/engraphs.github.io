@@ -164,16 +164,11 @@ arc(z_000_24_a_thrust_1, r_0024_0006__150_r_0024_0007__points, prd).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0024_0002__A_R_0024_0003__FUEL_R_0024_0004__TANK,Z_000_24_A_THRUST_2,R_0024_0001__DESTROYING,R_0024_0006__150_R_0024_0007__POINTS,Z_000_24_A_THRUST_1] :
-      ( r_0024_0002__a_r_0024_0003__fuel_r_0024_0004__tank(R_0024_0002__A_R_0024_0003__FUEL_R_0024_0004__TANK)
-      &amp; r_0024_0006__150_r_0024_0007__points(R_0024_0006__150_R_0024_0007__POINTS)
-      &amp; z_000_24_a_thrust_2(Z_000_24_A_THRUST_2)
-      &amp; z_000_24_a_thrust_1(Z_000_24_A_THRUST_1)
-      &amp; has_prd(Z_000_24_A_THRUST_1,R_0024_0006__150_R_0024_0007__POINTS)
-      &amp; has_arg0(Z_000_24_A_THRUST_1,R_0024_0001__DESTROYING)
-      &amp; r_0024_0001__Destroying(R_0024_0001__DESTROYING)
-      &amp; has_arg0(R_0024_0001__DESTROYING,Z_000_24_A_THRUST_2)
-      &amp; has_arg1(R_0024_0001__DESTROYING,R_0024_0002__A_R_0024_0003__FUEL_R_0024_0004__TANK) ) ).
+    ? [Z_24_A_THRUST_1,R_24_1_DESTROYING,Z_24_A_THRUST_2,R_24_2_A_FUEL_TANK,R_24_6_150_POINTS] :
+      ( a_fuel_tank(R_24_2_A_FUEL_TANK)
+      &amp; 150_points(R_24_6_150_POINTS)
+      &amp; z_24_a_thrust_1(Z_24_A_THRUST_1,R_24_1_DESTROYING,R_24_6_150_POINTS)
+      &amp; destroying(R_24_1_DESTROYING,Z_24_A_THRUST_2,R_24_2_A_FUEL_TANK) ) ).
 </pre>
 <br><hr><br>
 <svg width="312pt" height="207pt"

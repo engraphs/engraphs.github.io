@@ -272,24 +272,18 @@ arc(r_0012_0009__makes, r_0012_0010__sense, prd).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0012_0003__WELFARE_R_0012_0004__RECIPIENTS,R_0012_0006__TAX_R_0012_0007__PAYERS,Z_000_12_A_GOODWILL_6,R_0012_0002__TURNING,R_0012_0008__JUST,R_0012_0010__SENSE,R_0012_0009__MAKES,Z_000_12_A_GOODWILL_1,R_0012_0001__BECAUSE] :
-      ( r_0012_0003__welfare_r_0012_0004__recipients(R_0012_0003__WELFARE_R_0012_0004__RECIPIENTS)
-      &amp; r_0012_0006__tax_r_0012_0007__payers(R_0012_0006__TAX_R_0012_0007__PAYERS)
-      &amp; r_0012_0008__just(R_0012_0008__JUST)
-      &amp; r_0012_0010__sense(R_0012_0010__SENSE)
-      &amp; z_000_12_a_goodwill_1(Z_000_12_A_GOODWILL_1)
-      &amp; z_000_12_a_goodwill_6(Z_000_12_A_GOODWILL_6)
-      &amp; r_0012_0001__Because(R_0012_0001__BECAUSE)
-      &amp; has_conj2(R_0012_0001__BECAUSE,Z_000_12_A_GOODWILL_1)
-      &amp; has_conj1(R_0012_0001__BECAUSE,R_0012_0009__MAKES)
-      &amp; r_0012_0009__makes(R_0012_0009__MAKES)
-      &amp; has_prd(R_0012_0009__MAKES,R_0012_0010__SENSE)
-      &amp; has_nim22(R_0012_0009__MAKES,R_0012_0008__JUST)
-      &amp; has_arg0(R_0012_0009__MAKES,R_0012_0002__TURNING)
-      &amp; r_0012_0002__turning(R_0012_0002__TURNING)
-      &amp; has_arg0(R_0012_0002__TURNING,Z_000_12_A_GOODWILL_6)
-      &amp; has_r_0012_0005__into_clr17(R_0012_0002__TURNING,R_0012_0006__TAX_R_0012_0007__PAYERS)
-      &amp; has_arg1(R_0012_0002__TURNING,R_0012_0003__WELFARE_R_0012_0004__RECIPIENTS) ) ).
+    ? [R_12_1_BECAUSE,R_12_9_MAKES,R_12_2_TURNING,Z_12_A_GOODWILL_6,R_12_3_WELFARE_RECIPIENTS,R_12_6_TAX_PAYERS,R_12_8_JUST,R_12_10_SENSE,Z_12_A_GOODWILL_1] :
+      ( welfare_recipients(R_12_3_WELFARE_RECIPIENTS)
+      &amp; tax_payers(R_12_6_TAX_PAYERS)
+      &amp; just(R_12_8_JUST)
+      &amp; sense(R_12_10_SENSE)
+      &amp; because(R_12_1_BECAUSE)
+      &amp; conj1(R_12_1_BECAUSE,R_12_9_MAKES)
+      &amp; makes(R_12_9_MAKES,R_12_2_TURNING,R_12_10_SENSE)
+      &amp; turning(R_12_2_TURNING,Z_12_A_GOODWILL_6,R_12_3_WELFARE_RECIPIENTS)
+      &amp; into_clr17(R_12_2_TURNING,R_12_6_TAX_PAYERS)
+      &amp; nim22(R_12_9_MAKES,R_12_8_JUST)
+      &amp; conj2(R_12_1_BECAUSE,Z_12_A_GOODWILL_1) ) ).
 </pre>
 <br><hr><br>
 <svg width="549pt" height="342pt"

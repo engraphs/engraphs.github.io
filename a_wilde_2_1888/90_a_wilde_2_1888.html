@@ -388,32 +388,23 @@ arc(r_0090_0013__slay, r_0090_1001____star__, arg1).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0090_0003__ME,R_0090_1001____STAR__,Z_000_90_A_WILDE_2_1888_1,R_0090_0002__TELL,R_0090_0010__BIG,R_0090_0011__SWORD,R_0090_0008__TAKE,R_0090_0013__SLAY,R_0090_0012__AND,R_0090_0007__MIGHT,R_0090_0005__THAT] :
-      ( r_0090_0003__me(R_0090_0003__ME)
-      &amp; r_0090_0010__big(R_0090_0010__BIG)
-      &amp; r_0090_1001____star__(R_0090_1001____STAR__)
-      &amp; z_000_90_a_wilde_2_1888_1(Z_000_90_A_WILDE_2_1888_1)
-      &amp; r_0090_0005__that(R_0090_0005__THAT)
-      &amp; has_conj1(R_0090_0005__THAT,R_0090_0007__MIGHT)
-      &amp; r_0090_0007__might(R_0090_0007__MIGHT)
-      &amp; has_keep_scope(R_0090_0007__MIGHT,R_0090_0012__AND)
-      &amp; r_0090_0012__and(R_0090_0012__AND)
-      &amp; has_conj2(R_0090_0012__AND,R_0090_0013__SLAY)
-      &amp; r_0090_0013__slay(R_0090_0013__SLAY)
-      &amp; has_arg1(R_0090_0013__SLAY,R_0090_1001____STAR__)
-      &amp; has_arg0(R_0090_0013__SLAY,R_0090_0003__ME)
-      &amp; has_conj1(R_0090_0012__AND,R_0090_0008__TAKE)
-      &amp; r_0090_0008__take(R_0090_0008__TAKE)
-      &amp; has_arg1(R_0090_0008__TAKE,R_0090_0011__SWORD)
-      &amp; r_0090_0011__sword(R_0090_0011__SWORD)
-      &amp; has_attrib32(R_0090_0011__SWORD,R_0090_0010__BIG)
-      &amp; has_gen(R_0090_0011__SWORD,R_0090_0003__ME)
-      &amp; has_arg0(R_0090_0008__TAKE,R_0090_0003__ME)
-      &amp; has_conj2(R_0090_0005__THAT,R_0090_0002__TELL)
-      &amp; r_0090_0002__tell(R_0090_0002__TELL)
-      &amp; has_arg0(R_0090_0002__TELL,Z_000_90_A_WILDE_2_1888_1)
-      &amp; has_arg1(R_0090_0002__TELL,R_0090_1001____STAR__)
-      &amp; has_arg2(R_0090_0002__TELL,R_0090_0003__ME) ) ).
+    ? [R_90_5_THAT,R_90_2_TELL,Z_90_A_WILDE_2_1888_1,R_90_1001__STAR_,R_90_3_ME] :
+      ( _star_(R_90_1001__STAR_)
+      &amp; me(R_90_3_ME)
+      &amp; that(R_90_5_THAT)
+      &amp; conj1(R_90_5_THAT,R_90_7_MIGHT)
+      &amp; ~ ? [R_90_12_AND,R_90_8_TAKE,R_90_11_SWORD,R_90_10_BIG,R_90_13_SLAY] :
+            ( big(R_90_10_BIG)
+            &amp; and(R_90_12_AND)
+            &amp; conj1(R_90_12_AND,R_90_8_TAKE)
+            &amp; take(R_90_8_TAKE,R_90_3_ME,R_90_11_SWORD)
+            &amp; sword(R_90_11_SWORD)
+            &amp; attrib32(R_90_11_SWORD,R_90_10_BIG)
+            &amp; gen(R_90_11_SWORD,R_90_3_ME)
+            &amp; conj2(R_90_12_AND,R_90_13_SLAY)
+            &amp; slay(R_90_13_SLAY,R_90_3_ME,R_90_1001__STAR_) )
+      &amp; conj2(R_90_5_THAT,R_90_2_TELL)
+      &amp; tell(R_90_2_TELL,Z_90_A_WILDE_2_1888_1,R_90_1001__STAR_,R_90_3_ME) ) ).
 </pre>
 <br><hr><br>
 <svg width="685pt" height="432pt"

@@ -410,32 +410,28 @@ arc(z_000_100_a_lob_j01_14, r_0100_0007__the_r_0100_0008__200_r_0100_0009__ml_r_
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0100_0016__2_R_0100_0017__LITRES,R_0100_0023__POLYTHENE,R_0100_0022__A_R_0100_0024__BOTTLE,R_0100_0020__WATER,Z_000_100_A_LOB_J01_1,R_0100_0014__DILUTE,R_0100_0013__AND,R_0100_0019__DISTILLED] :
-      ( r_0100_0016__2_r_0100_0017__litres(R_0100_0016__2_R_0100_0017__LITRES)
-      &amp; r_0100_0023__polythene(R_0100_0023__POLYTHENE)
-      &amp; z_000_100_a_lob_j01_1(Z_000_100_A_LOB_J01_1)
-      &amp; r_0100_0019__distilled(R_0100_0019__DISTILLED)
-      &amp; has_arg0(R_0100_0019__DISTILLED,R_0100_0020__WATER)
-      &amp; r_0100_0020__water(R_0100_0020__WATER)
-      &amp; has_r_0100_0021__in(R_0100_0020__WATER,R_0100_0022__A_R_0100_0024__BOTTLE)
-      &amp; r_0100_0022__a_r_0100_0024__bottle(R_0100_0022__A_R_0100_0024__BOTTLE)
-      &amp; has_attrib62(R_0100_0022__A_R_0100_0024__BOTTLE,R_0100_0023__POLYTHENE)
-      &amp; r_0100_0013__and(R_0100_0013__AND)
-      &amp; has_conj2(R_0100_0013__AND,R_0100_0014__DILUTE)
-      &amp; r_0100_0014__dilute(R_0100_0014__DILUTE)
-      &amp; has_arg0(R_0100_0014__DILUTE,Z_000_100_A_LOB_J01_1)
-      &amp; has_r_0100_0018__with_nim50(R_0100_0014__DILUTE,R_0100_0020__WATER)
-      &amp; has_r_0100_0015__to_nim42(R_0100_0014__DILUTE,R_0100_0016__2_R_0100_0017__LITRES)
-      &amp; ! [Z_000_100_A_LOB_J01_14,R_0100_0007__THE_R_0100_0008__200_R_0100_0009__ML_R_0100_0010__POLYTHENE_R_0100_0011__BOTTLES] :
-          ( ( r_0100_0007__the_r_0100_0008__200_r_0100_0009__ml_r_0100_0010__polythene_r_0100_0011__bottles(R_0100_0007__THE_R_0100_0008__200_R_0100_0009__ML_R_0100_0010__POLYTHENE_R_0100_0011__BOTTLES)
-            &amp; z_000_100_a_lob_j01_14(Z_000_100_A_LOB_J01_14)
-            &amp; has_r_0100_0006__of(Z_000_100_A_LOB_J01_14,R_0100_0007__THE_R_0100_0008__200_R_0100_0009__ML_R_0100_0010__POLYTHENE_R_0100_0011__BOTTLES) )
-         =&gt; ? [R_0100_0002__THE_R_0100_0003__SOLUTIONS,R_0100_0001__COMBINE] :
-              ( r_0100_0002__the_r_0100_0003__solutions(R_0100_0002__THE_R_0100_0003__SOLUTIONS)
-              &amp; r_0100_0001__Combine(R_0100_0001__COMBINE)
-              &amp; has_r_0100_0004__from_nim14(R_0100_0001__COMBINE,Z_000_100_A_LOB_J01_14)
-              &amp; has_arg0(R_0100_0001__COMBINE,Z_000_100_A_LOB_J01_1)
-              &amp; has_arg1(R_0100_0001__COMBINE,R_0100_0002__THE_R_0100_0003__SOLUTIONS) ) ) ) ).
+    ? [R_100_13_AND,R_100_14_DILUTE,Z_100_A_LOB_J01_1,R_100_16_2_LITRES,R_100_19_DISTILLED,R_100_20_WATER,R_100_22_A_BOTTLE,R_100_23_POLYTHENE] :
+      ( 2_litres(R_100_16_2_LITRES)
+      &amp; polythene(R_100_23_POLYTHENE)
+      &amp; ! [Z_100_A_LOB_J01_14,R_100_7_THE_200_ML_POLYTHENE_BOTTLES] :
+          ( ( the_200_ml_polythene_bottles(R_100_7_THE_200_ML_POLYTHENE_BOTTLES)
+            &amp; z_100_a_lob_j01_14(Z_100_A_LOB_J01_14)
+            &amp; of(Z_100_A_LOB_J01_14,R_100_7_THE_200_ML_POLYTHENE_BOTTLES) )
+         =&gt; ? [R_100_1_COMBINE,R_100_2_THE_SOLUTIONS] :
+              ( the_solutions(R_100_2_THE_SOLUTIONS)
+              &amp; combine(R_100_1_COMBINE,Z_100_A_LOB_J01_1,R_100_2_THE_SOLUTIONS)
+              &amp; from_nim14(R_100_1_COMBINE,Z_100_A_LOB_J01_14) ) )
+      &amp; conj1(CONJ1)
+      &amp; and(R_100_13_AND)
+      &amp; conj2(R_100_13_AND,R_100_14_DILUTE)
+      &amp; dilute(R_100_14_DILUTE,Z_100_A_LOB_J01_1)
+      &amp; to_nim42(R_100_14_DILUTE,R_100_16_2_LITRES)
+      &amp; with_nim50(R_100_14_DILUTE,R_100_20_WATER)
+      &amp; water(R_100_20_WATER)
+      &amp; in(R_100_20_WATER,R_100_22_A_BOTTLE)
+      &amp; a_bottle(R_100_22_A_BOTTLE)
+      &amp; attrib62(R_100_22_A_BOTTLE,R_100_23_POLYTHENE)
+      &amp; distilled(R_100_19_DISTILLED,R_100_20_WATER) ) ).
 </pre>
 <br><hr><br>
 <svg width="1090pt" height="478pt"

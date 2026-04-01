@@ -305,28 +305,25 @@ arc(r_0012_0014__home, r_0012_0001__You, gen).
 </svg>
 <pre>
 fof(formula,axiom,
-    ( ~ ? [R_0012_0005__FRIENDS,R_0012_0007__RELATIVES,R_0012_0006__OR,R_0012_0001__YOU,R_0012_0014__HOME,R_0012_0009__DO_R_0012_0011__LIVE] :
-          ( r_0012_0001__You(R_0012_0001__YOU)
-          &amp; r_0012_0005__friends(R_0012_0005__FRIENDS)
-          &amp; r_0012_0007__relatives(R_0012_0007__RELATIVES)
-          &amp; r_0012_0009__do_r_0012_0011__live(R_0012_0009__DO_R_0012_0011__LIVE)
-          &amp; has_r_0012_0012__in_clr36(R_0012_0009__DO_R_0012_0011__LIVE,R_0012_0014__HOME)
-          &amp; r_0012_0014__home(R_0012_0014__HOME)
-          &amp; has_gen(R_0012_0014__HOME,R_0012_0001__YOU)
-          &amp; has_arg0(R_0012_0009__DO_R_0012_0011__LIVE,R_0012_0006__OR)
-          &amp; r_0012_0006__or(R_0012_0006__OR)
-          &amp; has_conj2(R_0012_0006__OR,R_0012_0007__RELATIVES)
-          &amp; has_conj1(R_0012_0006__OR,R_0012_0005__FRIENDS) )
-    &amp; ~ ? [R_0012_0001__YOU,R_0012_0005__FRIENDS,R_0012_0007__RELATIVES,R_0012_0006__OR,R_0012_0002__SHOULD_R_0012_0004__MEET] :
-          ( r_0012_0001__You(R_0012_0001__YOU)
-          &amp; r_0012_0005__friends(R_0012_0005__FRIENDS)
-          &amp; r_0012_0007__relatives(R_0012_0007__RELATIVES)
-          &amp; r_0012_0002__should_r_0012_0004__meet(R_0012_0002__SHOULD_R_0012_0004__MEET)
-          &amp; has_arg1(R_0012_0002__SHOULD_R_0012_0004__MEET,R_0012_0006__OR)
-          &amp; r_0012_0006__or(R_0012_0006__OR)
-          &amp; has_conj2(R_0012_0006__OR,R_0012_0007__RELATIVES)
-          &amp; has_conj1(R_0012_0006__OR,R_0012_0005__FRIENDS)
-          &amp; has_arg0(R_0012_0002__SHOULD_R_0012_0004__MEET,R_0012_0001__YOU) ) ) ).
+    ( ~ ? [R_12_2_SHOULD_MEET,R_12_1_YOU,R_12_6_OR,R_12_5_FRIENDS,R_12_7_RELATIVES] :
+          ( you(R_12_1_YOU)
+          &amp; friends(R_12_5_FRIENDS)
+          &amp; relatives(R_12_7_RELATIVES)
+          &amp; should_meet(R_12_2_SHOULD_MEET,R_12_1_YOU,R_12_6_OR)
+          &amp; or(R_12_6_OR)
+          &amp; conj1(R_12_6_OR,R_12_5_FRIENDS)
+          &amp; conj2(R_12_6_OR,R_12_7_RELATIVES) )
+    &amp; ~ ? [R_12_9_DO_LIVE,R_12_6_OR,R_12_5_FRIENDS,R_12_7_RELATIVES,R_12_14_HOME,R_12_1_YOU] :
+          ( friends(R_12_5_FRIENDS)
+          &amp; relatives(R_12_7_RELATIVES)
+          &amp; you(R_12_1_YOU)
+          &amp; do_live(R_12_9_DO_LIVE,R_12_6_OR)
+          &amp; or(R_12_6_OR)
+          &amp; conj1(R_12_6_OR,R_12_5_FRIENDS)
+          &amp; conj2(R_12_6_OR,R_12_7_RELATIVES)
+          &amp; in_clr36(R_12_9_DO_LIVE,R_12_14_HOME)
+          &amp; home(R_12_14_HOME)
+          &amp; gen(R_12_14_HOME,R_12_1_YOU) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="630pt" height="387pt"

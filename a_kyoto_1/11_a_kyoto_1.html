@@ -423,31 +423,26 @@ arc(r_0011_0018__not, z_000_11_a_kyoto_1_53, keep_scope).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0011_0003__MANY,R_0011_0004__WORKS,R_0011_0001__THERE_R_0011_0002__ARE] :
-      ( r_0011_0003__many(R_0011_0003__MANY)
-      &amp; ~ ? [R_0011_0006__EVEN,R_0011_0007__EXPERTS,R_0011_0014__REALLY,R_0011_0015__HIS,R_0011_0016__WORK,R_0011_0013__ARE,R_0011_0017__OR,R_0011_0005__THAT_R_0011_0008__CAN_R_0011_0010__AGREE] :
-            ( r_0011_0006__even(R_0011_0006__EVEN)
-            &amp; r_0011_0007__experts(R_0011_0007__EXPERTS)
-            &amp; r_0011_0014__really(R_0011_0014__REALLY)
-            &amp; r_0011_0015__his(R_0011_0015__HIS)
-            &amp; r_0011_0005__that_r_0011_0008__can_r_0011_0010__agree(R_0011_0005__THAT_R_0011_0008__CAN_R_0011_0010__AGREE)
-            &amp; has_arg1(R_0011_0005__THAT_R_0011_0008__CAN_R_0011_0010__AGREE,R_0011_0017__OR)
-            &amp; r_0011_0017__or(R_0011_0017__OR)
-            &amp; has_conj2(R_0011_0017__OR,R_0011_0018__NOT)
-            &amp; ~ ? [Z_000_11_A_KYOTO_1_53] : z_000_11_a_kyoto_1_53(Z_000_11_A_KYOTO_1_53)
-            &amp; has_conj1(R_0011_0017__OR,R_0011_0013__ARE)
-            &amp; r_0011_0013__are(R_0011_0013__ARE)
-            &amp; has_prd(R_0011_0013__ARE,R_0011_0016__WORK)
-            &amp; r_0011_0016__work(R_0011_0016__WORK)
-            &amp; has_gen(R_0011_0016__WORK,R_0011_0015__HIS)
-            &amp; has_nim41(R_0011_0013__ARE,R_0011_0014__REALLY)
-            &amp; has_arg0(R_0011_0013__ARE,R_0011_0004__WORKS)
-            &amp; has_arg0(R_0011_0005__THAT_R_0011_0008__CAN_R_0011_0010__AGREE,R_0011_0007__EXPERTS)
-            &amp; has_nim17(R_0011_0005__THAT_R_0011_0008__CAN_R_0011_0010__AGREE,R_0011_0006__EVEN) )
-      &amp; r_0011_0001__There_r_0011_0002__are(R_0011_0001__THERE_R_0011_0002__ARE)
-      &amp; has_arg0(R_0011_0001__THERE_R_0011_0002__ARE,R_0011_0004__WORKS)
-      &amp; r_0011_0004__works(R_0011_0004__WORKS)
-      &amp; has_attrib7(R_0011_0004__WORKS,R_0011_0003__MANY) ) ).
+    ? [R_11_1_THERE_ARE,R_11_4_WORKS,R_11_3_MANY] :
+      ( many(R_11_3_MANY)
+      &amp; there_are(R_11_1_THERE_ARE,R_11_4_WORKS)
+      &amp; works(R_11_4_WORKS)
+      &amp; attrib7(R_11_4_WORKS,R_11_3_MANY)
+      &amp; ~ ? [R_11_5_THAT_CAN_AGREE,R_11_7_EXPERTS,R_11_17_OR,R_11_13_ARE,R_11_14_REALLY,R_11_16_WORK,R_11_15_HIS,R_11_6_EVEN] :
+            ( experts(R_11_7_EXPERTS)
+            &amp; really(R_11_14_REALLY)
+            &amp; his(R_11_15_HIS)
+            &amp; even(R_11_6_EVEN)
+            &amp; that_can_agree(R_11_5_THAT_CAN_AGREE,R_11_7_EXPERTS,R_11_17_OR)
+            &amp; or(R_11_17_OR)
+            &amp; conj1(R_11_17_OR,R_11_13_ARE)
+            &amp; are(R_11_13_ARE,R_11_4_WORKS,R_11_16_WORK)
+            &amp; work(R_11_16_WORK)
+            &amp; gen(R_11_16_WORK,R_11_15_HIS)
+            &amp; nim41(R_11_13_ARE,R_11_14_REALLY)
+            &amp; conj2(R_11_17_OR,R_11_18_NOT)
+            &amp; ~ ? [Z_11_A_KYOTO_1_53] : true
+            &amp; nim17(R_11_5_THAT_CAN_AGREE,R_11_6_EVEN) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="838pt" height="523pt"

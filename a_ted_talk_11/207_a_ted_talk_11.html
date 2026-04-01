@@ -606,44 +606,35 @@ arc(r_0207_0028__is, r_0207_0031__wrong, prd).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0207_0001__I,R_0207_0004__GREAT,R_0207_0003__A_R_0207_0005__T__HYPHEN__SHIRT,R_0207_0006__RECENTLY,R_0207_0002__SAW,UTTERANCE_207_A_TED_TALK_11_32,R_0207_0009__SAID] :
-      ( r_0207_0001__I(R_0207_0001__I)
-      &amp; r_0207_0004__great(R_0207_0004__GREAT)
-      &amp; r_0207_0006__recently(R_0207_0006__RECENTLY)
-      &amp; r_0207_0009__said(R_0207_0009__SAID)
-      &amp; has_arg0(R_0207_0009__SAID,R_0207_0003__A_R_0207_0005__T__HYPHEN__SHIRT)
-      &amp; r_0207_0003__a_r_0207_0005__t__hyphen__shirt(R_0207_0003__A_R_0207_0005__T__HYPHEN__SHIRT)
-      &amp; has_attrib10(R_0207_0003__A_R_0207_0005__T__HYPHEN__SHIRT,R_0207_0004__GREAT)
-      &amp; has_arg1(R_0207_0009__SAID,UTTERANCE_207_A_TED_TALK_11_32)
-      &amp; utterance_207_a_ted_talk_11_32(UTTERANCE_207_A_TED_TALK_11_32)
-      &amp; ! [R_0207_0022__AND,R_0207_0013__A_R_0207_0014__MAN,R_0207_0017__MIND,R_0207_0019__A_R_0207_0020__FOREST,R_0207_0015__SPEAKS] :
-          ( ( r_0207_0013__a_r_0207_0014__man(R_0207_0013__A_R_0207_0014__MAN)
-            &amp; r_0207_0019__a_r_0207_0020__forest(R_0207_0019__A_R_0207_0020__FOREST)
-            &amp; r_0207_0022__and(R_0207_0022__AND)
-            &amp; ! [R_0207_0024__WOMAN] :
-                ( r_0207_0024__woman(R_0207_0024__WOMAN)
-               =&gt; ? [R_0207_0025__HEARS] :
-                    ( r_0207_0025__hears(R_0207_0025__HEARS)
-                    &amp; has_arg0(R_0207_0025__HEARS,R_0207_0024__WOMAN)
-                    &amp; has_arg1(R_0207_0025__HEARS,R_0207_0013__A_R_0207_0014__MAN) ) )
-            &amp; has_conj1(R_0207_0022__AND,R_0207_0015__SPEAKS)
-            &amp; r_0207_0015__speaks(R_0207_0015__SPEAKS)
-            &amp; has_r_0207_0018__in_nim57(R_0207_0015__SPEAKS,R_0207_0019__A_R_0207_0020__FOREST)
-            &amp; has_arg1(R_0207_0015__SPEAKS,R_0207_0017__MIND)
-            &amp; r_0207_0017__mind(R_0207_0017__MIND)
-            &amp; has_gen(R_0207_0017__MIND,R_0207_0013__A_R_0207_0014__MAN)
-            &amp; has_arg0(R_0207_0015__SPEAKS,R_0207_0013__A_R_0207_0014__MAN) )
-         =&gt; ? [R_0207_0030__STILL,R_0207_0031__WRONG,R_0207_0028__IS] :
-              ( r_0207_0030__still(R_0207_0030__STILL)
-              &amp; r_0207_0031__wrong(R_0207_0031__WRONG)
-              &amp; r_0207_0028__is(R_0207_0028__IS)
-              &amp; has_prd(R_0207_0028__IS,R_0207_0031__WRONG)
-              &amp; has_nim85(R_0207_0028__IS,R_0207_0030__STILL)
-              &amp; has_arg0(R_0207_0028__IS,R_0207_0013__A_R_0207_0014__MAN) ) )
-      &amp; r_0207_0002__saw(R_0207_0002__SAW)
-      &amp; has_nim17(R_0207_0002__SAW,R_0207_0006__RECENTLY)
-      &amp; has_arg1(R_0207_0002__SAW,R_0207_0003__A_R_0207_0005__T__HYPHEN__SHIRT)
-      &amp; has_arg0(R_0207_0002__SAW,R_0207_0001__I) ) ).
+    ? [R_207_2_SAW,R_207_1_I,R_207_6_RECENTLY,R_207_9_SAID,R_207_3_A_T_HYPHEN_SHIRT,R_207_4_GREAT,UTTERANCE_207_A_TED_TALK_11_32] :
+      ( i(R_207_1_I)
+      &amp; recently(R_207_6_RECENTLY)
+      &amp; great(R_207_4_GREAT)
+      &amp; saw(R_207_2_SAW,R_207_1_I,R_207_3_A_T_HYPHEN_SHIRT)
+      &amp; a_t_hyphen_shirt(R_207_3_A_T_HYPHEN_SHIRT)
+      &amp; attrib10(R_207_3_A_T_HYPHEN_SHIRT,R_207_4_GREAT)
+      &amp; nim17(R_207_2_SAW,R_207_6_RECENTLY)
+      &amp; said(R_207_9_SAID,R_207_3_A_T_HYPHEN_SHIRT,UTTERANCE_207_A_TED_TALK_11_32)
+      &amp; ! [R_207_22_AND,R_207_15_SPEAKS,R_207_17_MIND,R_207_13_A_MAN,R_207_19_A_FOREST] :
+          ( ( a_man(R_207_13_A_MAN)
+            &amp; a_forest(R_207_19_A_FOREST)
+            &amp; ! [R_207_24_WOMAN] :
+                ( woman(R_207_24_WOMAN)
+               =&gt; ? [R_207_25_HEARS] : hears(R_207_25_HEARS,R_207_24_WOMAN,R_207_13_A_MAN) )
+            &amp; conj2(CONJ2)
+            &amp; and(R_207_22_AND)
+            &amp; conj1(R_207_22_AND,R_207_15_SPEAKS)
+            &amp; speaks(R_207_15_SPEAKS,R_207_13_A_MAN,R_207_17_MIND)
+            &amp; mind(R_207_17_MIND)
+            &amp; gen(R_207_17_MIND,R_207_13_A_MAN)
+            &amp; in_nim57(R_207_15_SPEAKS,R_207_19_A_FOREST) )
+         =&gt; ? [R_207_28_IS,R_207_30_STILL,R_207_31_WRONG] :
+              ( still(R_207_30_STILL)
+              &amp; wrong(R_207_31_WRONG)
+              &amp; is(R_207_28_IS,R_207_13_A_MAN,R_207_31_WRONG)
+              &amp; nim85(R_207_28_IS,R_207_30_STILL) ) )
+      &amp; part1(PART1)
+      &amp; utterance_207_a_ted_talk_11_32(UTTERANCE_207_A_TED_TALK_11_32) ) ).
 </pre>
 <br><hr><br>
 <svg width="1377pt" height="568pt"

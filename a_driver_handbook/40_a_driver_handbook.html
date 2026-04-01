@@ -358,28 +358,22 @@ arc(z_000_40_a_driver_handbook_28, r_0040_0011__to_r_0040_0012__let, restriction
 </svg>
 <pre>
 fof(formula,axiom,
-    ! [R_0040_0008__PREPARING,R_0040_0001__SOME_R_0040_0002__SCHOOL_R_0040_0003__BUSES,R_0040_0009__TO_R_0040_0010__STOP,R_0040_0013__CHILDREN,R_0040_0015__THE_R_0040_0016__BUS,R_0040_0011__TO_R_0040_0012__LET,Z_000_40_A_DRIVER_HANDBOOK_28] :
-      ( ( r_0040_0001__Some_r_0040_0002__school_r_0040_0003__buses(R_0040_0001__SOME_R_0040_0002__SCHOOL_R_0040_0003__BUSES)
-        &amp; r_0040_0013__children(R_0040_0013__CHILDREN)
-        &amp; r_0040_0015__the_r_0040_0016__bus(R_0040_0015__THE_R_0040_0016__BUS)
-        &amp; r_0040_0008__preparing(R_0040_0008__PREPARING)
-        &amp; has_keep_scope(R_0040_0008__PREPARING,Z_000_40_A_DRIVER_HANDBOOK_28)
-        &amp; z_000_40_a_driver_handbook_28(Z_000_40_A_DRIVER_HANDBOOK_28)
-        &amp; has_conj1(Z_000_40_A_DRIVER_HANDBOOK_28,R_0040_0011__TO_R_0040_0012__LET)
-        &amp; r_0040_0011__to_r_0040_0012__let(R_0040_0011__TO_R_0040_0012__LET)
-        &amp; has_r_0040_0014__off_clr40(R_0040_0011__TO_R_0040_0012__LET,R_0040_0015__THE_R_0040_0016__BUS)
-        &amp; has_arg1(R_0040_0011__TO_R_0040_0012__LET,R_0040_0013__CHILDREN)
-        &amp; has_arg0(R_0040_0011__TO_R_0040_0012__LET,R_0040_0001__SOME_R_0040_0002__SCHOOL_R_0040_0003__BUSES)
-        &amp; has_conj2(Z_000_40_A_DRIVER_HANDBOOK_28,R_0040_0009__TO_R_0040_0010__STOP)
-        &amp; r_0040_0009__to_r_0040_0010__stop(R_0040_0009__TO_R_0040_0010__STOP)
-        &amp; has_arg0(R_0040_0009__TO_R_0040_0010__STOP,R_0040_0001__SOME_R_0040_0002__SCHOOL_R_0040_0003__BUSES) )
-     =&gt; ? [R_0040_0005__YELLOW,R_0040_0006__LIGHTS,R_0040_0004__FLASH] :
-          ( r_0040_0005__yellow(R_0040_0005__YELLOW)
-          &amp; r_0040_0004__flash(R_0040_0004__FLASH)
-          &amp; has_arg1(R_0040_0004__FLASH,R_0040_0006__LIGHTS)
-          &amp; r_0040_0006__lights(R_0040_0006__LIGHTS)
-          &amp; has_attrib12(R_0040_0006__LIGHTS,R_0040_0005__YELLOW)
-          &amp; has_arg0(R_0040_0004__FLASH,R_0040_0001__SOME_R_0040_0002__SCHOOL_R_0040_0003__BUSES) ) ) ).
+    ( ~ ? [Z_40_A_DRIVER_HANDBOOK_28,R_40_11_TO_LET,R_40_13_CHILDREN,R_40_15_THE_BUS,R_40_9_TO_STOP,R_40_1_SOME_SCHOOL_BUSES] :
+          ( children(R_40_13_CHILDREN)
+          &amp; the_bus(R_40_15_THE_BUS)
+          &amp; some_school_buses(R_40_1_SOME_SCHOOL_BUSES)
+          &amp; z_40_a_driver_handbook_28(Z_40_A_DRIVER_HANDBOOK_28)
+          &amp; conj1(Z_40_A_DRIVER_HANDBOOK_28,R_40_11_TO_LET)
+          &amp; to_let(R_40_11_TO_LET,R_40_1_SOME_SCHOOL_BUSES,R_40_13_CHILDREN)
+          &amp; off_clr40(R_40_11_TO_LET,R_40_15_THE_BUS)
+          &amp; conj2(Z_40_A_DRIVER_HANDBOOK_28,R_40_9_TO_STOP)
+          &amp; to_stop(R_40_9_TO_STOP,R_40_1_SOME_SCHOOL_BUSES) )
+   =&gt; ? [R_40_4_FLASH,R_40_1_SOME_SCHOOL_BUSES,R_40_6_LIGHTS,R_40_5_YELLOW] :
+        ( some_school_buses(R_40_1_SOME_SCHOOL_BUSES)
+        &amp; yellow(R_40_5_YELLOW)
+        &amp; flash(R_40_4_FLASH,R_40_1_SOME_SCHOOL_BUSES,R_40_6_LIGHTS)
+        &amp; lights(R_40_6_LIGHTS)
+        &amp; attrib12(R_40_6_LIGHTS,R_40_5_YELLOW) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="746pt" height="432pt"

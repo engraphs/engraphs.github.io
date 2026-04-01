@@ -521,39 +521,34 @@ arc(r_0018_0032__and, r_0018_0033__Italians, conj3).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0018_0002__FOREIGN,R_0018_0001__THE_R_0018_0003__OFFICE,R_0018_0007__SIR_R_0018_0008__RODERICK_R_0018_0009__BARCLAY,R_0018_0004__IS_R_0018_0005__REPRESENTED,R_0018_0012__HAS] :
-      ( r_0018_0002__foreign(R_0018_0002__FOREIGN)
-      &amp; r_0018_0007__Sir_r_0018_0008__Roderick_r_0018_0009__Barclay(R_0018_0007__SIR_R_0018_0008__RODERICK_R_0018_0009__BARCLAY)
-      &amp; r_0018_0012__has(R_0018_0012__HAS)
-      &amp; ! [R_0018_0017__THE_R_0018_0020__MARKET_R_0018_0021__EXCHANGES,R_0018_0018__DETAILED,R_0018_0019__COMMON,R_0018_0024__PAST,R_0018_0023__THE_R_0018_0025__YEAR,R_0018_0027__THE_R_0018_0028__FRENCH,R_0018_0030__GERMANS,R_0018_0033__ITALIANS,R_0018_0032__AND] :
-          ( ( r_0018_0018__detailed(R_0018_0018__DETAILED)
-            &amp; r_0018_0019__common(R_0018_0019__COMMON)
-            &amp; r_0018_0024__past(R_0018_0024__PAST)
-            &amp; r_0018_0027__the_r_0018_0028__French(R_0018_0027__THE_R_0018_0028__FRENCH)
-            &amp; r_0018_0030__Germans(R_0018_0030__GERMANS)
-            &amp; r_0018_0033__Italians(R_0018_0033__ITALIANS)
-            &amp; r_0018_0017__the_r_0018_0020__market_r_0018_0021__exchanges(R_0018_0017__THE_R_0018_0020__MARKET_R_0018_0021__EXCHANGES)
-            &amp; has_r_0018_0026__with(R_0018_0017__THE_R_0018_0020__MARKET_R_0018_0021__EXCHANGES,R_0018_0032__AND)
-            &amp; r_0018_0032__and(R_0018_0032__AND)
-            &amp; has_conj3(R_0018_0032__AND,R_0018_0033__ITALIANS)
-            &amp; has_conj2(R_0018_0032__AND,R_0018_0030__GERMANS)
-            &amp; has_conj1(R_0018_0032__AND,R_0018_0027__THE_R_0018_0028__FRENCH)
-            &amp; has_r_0018_0022__over(R_0018_0017__THE_R_0018_0020__MARKET_R_0018_0021__EXCHANGES,R_0018_0023__THE_R_0018_0025__YEAR)
-            &amp; r_0018_0023__the_r_0018_0025__year(R_0018_0023__THE_R_0018_0025__YEAR)
-            &amp; has_attrib63(R_0018_0023__THE_R_0018_0025__YEAR,R_0018_0024__PAST)
-            &amp; has_attrib50(R_0018_0017__THE_R_0018_0020__MARKET_R_0018_0021__EXCHANGES,R_0018_0019__COMMON)
-            &amp; has_attrib47(R_0018_0017__THE_R_0018_0020__MARKET_R_0018_0021__EXCHANGES,R_0018_0018__DETAILED) )
-         =&gt; ? [R_0018_0014__PART,R_0018_0013__TAKEN] :
-              ( r_0018_0014__part(R_0018_0014__PART)
-              &amp; r_0018_0013__taken(R_0018_0013__TAKEN)
-              &amp; has_r_0018_0015__in_nim42(R_0018_0013__TAKEN,R_0018_0017__THE_R_0018_0020__MARKET_R_0018_0021__EXCHANGES)
-              &amp; has_arg1(R_0018_0013__TAKEN,R_0018_0014__PART)
-              &amp; has_arg0(R_0018_0013__TAKEN,R_0018_0007__SIR_R_0018_0008__RODERICK_R_0018_0009__BARCLAY) ) )
-      &amp; r_0018_0004__is_r_0018_0005__represented(R_0018_0004__IS_R_0018_0005__REPRESENTED)
-      &amp; has_arg0(R_0018_0004__IS_R_0018_0005__REPRESENTED,R_0018_0007__SIR_R_0018_0008__RODERICK_R_0018_0009__BARCLAY)
-      &amp; has_arg1(R_0018_0004__IS_R_0018_0005__REPRESENTED,R_0018_0001__THE_R_0018_0003__OFFICE)
-      &amp; r_0018_0001__The_r_0018_0003__office(R_0018_0001__THE_R_0018_0003__OFFICE)
-      &amp; has_attrib5(R_0018_0001__THE_R_0018_0003__OFFICE,R_0018_0002__FOREIGN) ) ).
+    ? [R_18_4_IS_REPRESENTED,R_18_7_SIR_RODERICK_BARCLAY,R_18_1_THE_OFFICE,R_18_2_FOREIGN] :
+      ( sir_Roderick_Barclay(R_18_7_SIR_RODERICK_BARCLAY)
+      &amp; foreign(R_18_2_FOREIGN)
+      &amp; is_represented(R_18_4_IS_REPRESENTED,R_18_7_SIR_RODERICK_BARCLAY,R_18_1_THE_OFFICE)
+      &amp; the_office(R_18_1_THE_OFFICE)
+      &amp; attrib5(R_18_1_THE_OFFICE,R_18_2_FOREIGN)
+      &amp; ~ ! [R_18_17_THE_MARKET_EXCHANGES,R_18_18_DETAILED,R_18_19_COMMON,R_18_23_THE_YEAR,R_18_24_PAST,R_18_32_AND,R_18_27_THE_FRENCH,R_18_30_GERMANS,R_18_33_ITALIANS] :
+            ( ( detailed(R_18_18_DETAILED)
+              &amp; common(R_18_19_COMMON)
+              &amp; past(R_18_24_PAST)
+              &amp; the_French(R_18_27_THE_FRENCH)
+              &amp; germans(R_18_30_GERMANS)
+              &amp; italians(R_18_33_ITALIANS)
+              &amp; the_market_exchanges(R_18_17_THE_MARKET_EXCHANGES)
+              &amp; attrib47(R_18_17_THE_MARKET_EXCHANGES,R_18_18_DETAILED)
+              &amp; attrib50(R_18_17_THE_MARKET_EXCHANGES,R_18_19_COMMON)
+              &amp; over(R_18_17_THE_MARKET_EXCHANGES,R_18_23_THE_YEAR)
+              &amp; the_year(R_18_23_THE_YEAR)
+              &amp; attrib63(R_18_23_THE_YEAR,R_18_24_PAST)
+              &amp; with(R_18_17_THE_MARKET_EXCHANGES,R_18_32_AND)
+              &amp; and(R_18_32_AND)
+              &amp; conj1(R_18_32_AND,R_18_27_THE_FRENCH)
+              &amp; conj2(R_18_32_AND,R_18_30_GERMANS)
+              &amp; conj3(R_18_32_AND,R_18_33_ITALIANS) )
+           =&gt; ? [R_18_13_TAKEN,R_18_14_PART] :
+                ( part(R_18_14_PART)
+                &amp; taken(R_18_13_TAKEN,R_18_7_SIR_RODERICK_BARCLAY,R_18_14_PART)
+                &amp; in_nim42(R_18_13_TAKEN,R_18_17_THE_MARKET_EXCHANGES) ) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="1526pt" height="658pt"

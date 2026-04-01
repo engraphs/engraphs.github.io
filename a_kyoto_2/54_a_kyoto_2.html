@@ -264,21 +264,19 @@ arc(r_0054_0012__things, r_0054_0011__living, attrib28).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0054_0002__THE_R_0054_0003__BACKGROUND,R_0054_0005__ANY_R_0054_0006__BUDDHIST,R_0054_0007__KNOWS] :
-      ( r_0054_0002__the_r_0054_0003__background(R_0054_0002__THE_R_0054_0003__BACKGROUND)
-      &amp; r_0054_0005__any_r_0054_0006__Buddhist(R_0054_0005__ANY_R_0054_0006__BUDDHIST)
-      &amp; r_0054_0007__knows(R_0054_0007__KNOWS)
-      &amp; ! [R_0054_0012__THINGS,R_0054_0011__LIVING] :
-          ( ( r_0054_0011__living(R_0054_0011__LIVING)
-            &amp; r_0054_0012__things(R_0054_0012__THINGS)
-            &amp; has_attrib28(R_0054_0012__THINGS,R_0054_0011__LIVING) )
-         =&gt; ? [R_0054_0014__BUDDHA__HYPHEN__NATURE,R_0054_0008__THAT_R_0054_0013__HAVE] :
-              ( r_0054_0014__Buddha__hyphen__nature(R_0054_0014__BUDDHA__HYPHEN__NATURE)
-              &amp; r_0054_0008__that_r_0054_0013__have(R_0054_0008__THAT_R_0054_0013__HAVE)
-              &amp; has_arg1(R_0054_0008__THAT_R_0054_0013__HAVE,R_0054_0014__BUDDHA__HYPHEN__NATURE)
-              &amp; has_arg0(R_0054_0008__THAT_R_0054_0013__HAVE,R_0054_0012__THINGS) ) )
-      &amp; has_arg0(R_0054_0007__KNOWS,R_0054_0005__ANY_R_0054_0006__BUDDHIST)
-      &amp; has_r_0054_0001__As_nim5(R_0054_0007__KNOWS,R_0054_0002__THE_R_0054_0003__BACKGROUND) ) ).
+    ? [R_54_7_KNOWS,R_54_5_ANY_BUDDHIST,R_54_2_THE_BACKGROUND] :
+      ( any_Buddhist(R_54_5_ANY_BUDDHIST)
+      &amp; the_background(R_54_2_THE_BACKGROUND)
+      &amp; ! [R_54_12_THINGS,R_54_11_LIVING] :
+          ( ( living(R_54_11_LIVING)
+            &amp; things(R_54_12_THINGS)
+            &amp; attrib28(R_54_12_THINGS,R_54_11_LIVING) )
+         =&gt; ? [R_54_8_THAT_HAVE,R_54_14_BUDDHA_HYPHEN_NATURE] :
+              ( buddha_hyphen_nature(R_54_14_BUDDHA_HYPHEN_NATURE)
+              &amp; that_have(R_54_8_THAT_HAVE,R_54_12_THINGS,R_54_14_BUDDHA_HYPHEN_NATURE) ) )
+      &amp; arg1(ARG1)
+      &amp; knows(R_54_7_KNOWS,R_54_5_ANY_BUDDHIST)
+      &amp; as_nim5(R_54_7_KNOWS,R_54_2_THE_BACKGROUND) ) ).
 </pre>
 <br><hr><br>
 <svg width="812pt" height="297pt"

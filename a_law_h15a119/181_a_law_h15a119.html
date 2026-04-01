@@ -220,20 +220,18 @@ arc(z_000_181_a_law_h15a119_1, r_0181_0002__Processing, nim4).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0181_0006__ENTITIES,R_0181_0008__PERSONAL,R_0181_0009__INFORMATION,R_0181_0007__HANDLING,R_0181_0004__COMPLAINTS,R_0181_0002__PROCESSING,Z_000_181_A_LAW_H15A119_1] :
-      ( r_0181_0006__Entities(R_0181_0006__ENTITIES)
-      &amp; r_0181_0008__Personal(R_0181_0008__PERSONAL)
-      &amp; z_000_181_a_law_h15a119_1(Z_000_181_A_LAW_H15A119_1)
-      &amp; has_nim4(Z_000_181_A_LAW_H15A119_1,R_0181_0002__PROCESSING)
-      &amp; r_0181_0002__Processing(R_0181_0002__PROCESSING)
-      &amp; has_r_0181_0003__of(R_0181_0002__PROCESSING,R_0181_0004__COMPLAINTS)
-      &amp; r_0181_0004__Complaints(R_0181_0004__COMPLAINTS)
-      &amp; has_r_0181_0005__by(R_0181_0004__COMPLAINTS,R_0181_0006__ENTITIES)
-      &amp; r_0181_0007__Handling(R_0181_0007__HANDLING)
-      &amp; has_arg1(R_0181_0007__HANDLING,R_0181_0009__INFORMATION)
-      &amp; r_0181_0009__Information(R_0181_0009__INFORMATION)
-      &amp; has_attrib23(R_0181_0009__INFORMATION,R_0181_0008__PERSONAL)
-      &amp; has_arg0(R_0181_0007__HANDLING,R_0181_0006__ENTITIES) ) ).
+    ? [R_181_7_HANDLING,R_181_9_INFORMATION,R_181_8_PERSONAL,Z_181_A_LAW_H15A119_1,R_181_2_PROCESSING,R_181_4_COMPLAINTS,R_181_6_ENTITIES] :
+      ( personal(R_181_8_PERSONAL)
+      &amp; entities(R_181_6_ENTITIES)
+      &amp; handling(R_181_7_HANDLING,R_181_6_ENTITIES,R_181_9_INFORMATION)
+      &amp; information(R_181_9_INFORMATION)
+      &amp; attrib23(R_181_9_INFORMATION,R_181_8_PERSONAL)
+      &amp; z_181_a_law_h15a119_1(Z_181_A_LAW_H15A119_1)
+      &amp; nim4(Z_181_A_LAW_H15A119_1,R_181_2_PROCESSING)
+      &amp; processing(R_181_2_PROCESSING)
+      &amp; of(R_181_2_PROCESSING,R_181_4_COMPLAINTS)
+      &amp; complaints(R_181_4_COMPLAINTS)
+      &amp; by(R_181_4_COMPLAINTS,R_181_6_ENTITIES) ) ).
 </pre>
 <br><hr><br>
 <svg width="588pt" height="478pt"

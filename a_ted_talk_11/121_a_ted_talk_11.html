@@ -237,19 +237,17 @@ arc(r_0121_0007__the_r_0121_0009__hierarchy, r_0121_0011__subjects, r_0121_0010_
 </svg>
 <pre>
 fof(formula,axiom,
-    ! [R_0121_0002__EDUCATION_R_0121_0003__SYSTEM,R_0121_0005__EARTH] :
-      ( ( r_0121_0005__Earth(R_0121_0005__EARTH)
-        &amp; r_0121_0002__education_r_0121_0003__system(R_0121_0002__EDUCATION_R_0121_0003__SYSTEM)
-        &amp; has_r_0121_0004__on(R_0121_0002__EDUCATION_R_0121_0003__SYSTEM,R_0121_0005__EARTH) )
-     =&gt; ? [R_0121_0008__SAME,R_0121_0011__SUBJECTS,R_0121_0007__THE_R_0121_0009__HIERARCHY,R_0121_0006__HAS] :
-          ( r_0121_0008__same(R_0121_0008__SAME)
-          &amp; r_0121_0011__subjects(R_0121_0011__SUBJECTS)
-          &amp; r_0121_0006__has(R_0121_0006__HAS)
-          &amp; has_arg1(R_0121_0006__HAS,R_0121_0007__THE_R_0121_0009__HIERARCHY)
-          &amp; r_0121_0007__the_r_0121_0009__hierarchy(R_0121_0007__THE_R_0121_0009__HIERARCHY)
-          &amp; has_r_0121_0010__of(R_0121_0007__THE_R_0121_0009__HIERARCHY,R_0121_0011__SUBJECTS)
-          &amp; has_attrib20(R_0121_0007__THE_R_0121_0009__HIERARCHY,R_0121_0008__SAME)
-          &amp; has_arg0(R_0121_0006__HAS,R_0121_0002__EDUCATION_R_0121_0003__SYSTEM) ) ) ).
+    ! [R_121_2_EDUCATION_SYSTEM,R_121_5_EARTH] :
+      ( ( earth(R_121_5_EARTH)
+        &amp; education_system(R_121_2_EDUCATION_SYSTEM)
+        &amp; on(R_121_2_EDUCATION_SYSTEM,R_121_5_EARTH) )
+     =&gt; ? [R_121_6_HAS,R_121_7_THE_HIERARCHY,R_121_8_SAME,R_121_11_SUBJECTS] :
+          ( same(R_121_8_SAME)
+          &amp; subjects(R_121_11_SUBJECTS)
+          &amp; has(R_121_6_HAS,R_121_2_EDUCATION_SYSTEM,R_121_7_THE_HIERARCHY)
+          &amp; the_hierarchy(R_121_7_THE_HIERARCHY)
+          &amp; attrib20(R_121_7_THE_HIERARCHY,R_121_8_SAME)
+          &amp; of(R_121_7_THE_HIERARCHY,R_121_11_SUBJECTS) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="571pt" height="252pt"

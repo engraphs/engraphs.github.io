@@ -495,39 +495,30 @@ arc(r_0014_0021__the_r_0014_0022__world, r_0014_0020__all_round, qual60).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0014_0015__PEOPLE,R_0014_0017__COLOURFUL,R_0014_0020__ALL_ROUND,R_0014_0021__THE_R_0014_0022__WORLD,R_0014_0018__CLOTHES,R_0014_0016__WEARING] :
-      ( r_0014_0015__people(R_0014_0015__PEOPLE)
-      &amp; r_0014_0017__colourful(R_0014_0017__COLOURFUL)
-      &amp; r_0014_0020__all_round(R_0014_0020__ALL_ROUND)
-      &amp; r_0014_0016__wearing(R_0014_0016__WEARING)
-      &amp; has_arg1(R_0014_0016__WEARING,R_0014_0018__CLOTHES)
-      &amp; r_0014_0018__clothes(R_0014_0018__CLOTHES)
-      &amp; has_r_0014_0019__from(R_0014_0018__CLOTHES,R_0014_0021__THE_R_0014_0022__WORLD)
-      &amp; r_0014_0021__the_r_0014_0022__world(R_0014_0021__THE_R_0014_0022__WORLD)
-      &amp; has_qual60(R_0014_0021__THE_R_0014_0022__WORLD,R_0014_0020__ALL_ROUND)
-      &amp; has_attrib51(R_0014_0018__CLOTHES,R_0014_0017__COLOURFUL)
-      &amp; has_arg0(R_0014_0016__WEARING,R_0014_0015__PEOPLE)
-      &amp; ! [R_0014_0013__AND,R_0014_0001__I,R_0014_0011__THE_R_0014_0012__STREET,R_0014_0008__WALK_R_0014_0009__OUT,R_0014_0014__SEE] :
-          ( ( r_0014_0001__I(R_0014_0001__I)
-            &amp; r_0014_0011__the_r_0014_0012__street(R_0014_0011__THE_R_0014_0012__STREET)
-            &amp; r_0014_0013__and(R_0014_0013__AND)
-            &amp; has_conj2(R_0014_0013__AND,R_0014_0014__SEE)
-            &amp; r_0014_0014__see(R_0014_0014__SEE)
-            &amp; has_arg1(R_0014_0014__SEE,R_0014_0015__PEOPLE)
-            &amp; has_arg0(R_0014_0014__SEE,R_0014_0001__I)
-            &amp; has_conj1(R_0014_0013__AND,R_0014_0008__WALK_R_0014_0009__OUT)
-            &amp; r_0014_0008__walk_r_0014_0009__out(R_0014_0008__WALK_R_0014_0009__OUT)
-            &amp; has_r_0014_0010__in_nim33(R_0014_0008__WALK_R_0014_0009__OUT,R_0014_0011__THE_R_0014_0012__STREET)
-            &amp; has_arg0(R_0014_0008__WALK_R_0014_0009__OUT,R_0014_0001__I) )
-         =&gt; ? [R_0014_0003__THAT,R_0014_0005__TERRIFIC,R_0014_0004___APOS_S,R_0014_0002__THINK] :
-              ( r_0014_0003__that(R_0014_0003__THAT)
-              &amp; r_0014_0005__terrific(R_0014_0005__TERRIFIC)
-              &amp; r_0014_0002__think(R_0014_0002__THINK)
-              &amp; has_arg1(R_0014_0002__THINK,R_0014_0004___APOS_S)
-              &amp; r_0014_0004___apos_s(R_0014_0004___APOS_S)
-              &amp; has_prd(R_0014_0004___APOS_S,R_0014_0005__TERRIFIC)
-              &amp; has_arg0(R_0014_0004___APOS_S,R_0014_0003__THAT)
-              &amp; has_arg0(R_0014_0002__THINK,R_0014_0001__I) ) ) ) ).
+    ? [R_14_16_WEARING,R_14_15_PEOPLE,R_14_18_CLOTHES,R_14_17_COLOURFUL,R_14_21_THE_WORLD,R_14_20_ALL_ROUND] :
+      ( people(R_14_15_PEOPLE)
+      &amp; colourful(R_14_17_COLOURFUL)
+      &amp; all_round(R_14_20_ALL_ROUND)
+      &amp; ! [R_14_13_AND,R_14_8_WALK_OUT,R_14_11_THE_STREET,R_14_14_SEE,R_14_1_I] :
+          ( ( the_street(R_14_11_THE_STREET)
+            &amp; i(R_14_1_I)
+            &amp; and(R_14_13_AND)
+            &amp; conj1(R_14_13_AND,R_14_8_WALK_OUT)
+            &amp; walk_out(R_14_8_WALK_OUT,R_14_1_I)
+            &amp; in_nim33(R_14_8_WALK_OUT,R_14_11_THE_STREET)
+            &amp; conj2(R_14_13_AND,R_14_14_SEE)
+            &amp; see(R_14_14_SEE,R_14_1_I,R_14_15_PEOPLE) )
+         =&gt; ? [R_14_2_THINK,R_14_4__APOS_S,R_14_3_THAT,R_14_5_TERRIFIC] :
+              ( that(R_14_3_THAT)
+              &amp; terrific(R_14_5_TERRIFIC)
+              &amp; think(R_14_2_THINK,R_14_1_I,R_14_4__APOS_S)
+              &amp; _apos_s(R_14_4__APOS_S,R_14_3_THAT,R_14_5_TERRIFIC) ) )
+      &amp; wearing(R_14_16_WEARING,R_14_15_PEOPLE,R_14_18_CLOTHES)
+      &amp; clothes(R_14_18_CLOTHES)
+      &amp; attrib51(R_14_18_CLOTHES,R_14_17_COLOURFUL)
+      &amp; from(R_14_18_CLOTHES,R_14_21_THE_WORLD)
+      &amp; the_world(R_14_21_THE_WORLD)
+      &amp; qual60(R_14_21_THE_WORLD,R_14_20_ALL_ROUND) ) ).
 </pre>
 <br><hr><br>
 <svg width="1012pt" height="613pt"

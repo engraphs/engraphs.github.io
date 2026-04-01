@@ -265,19 +265,15 @@ arc(r_0011_0010__be, r_0011_0011__sad, prd).
 </svg>
 <pre>
 fof(formula,axiom,
-    ! [R_0011_0004__N_APOS_T] :
-      ( ~ ? [R_0011_0002__I,R_0011_0006__HERE,R_0011_0003__WAS_R_0011_0005__WORKING] :
-            ( r_0011_0002__I(R_0011_0002__I)
-            &amp; r_0011_0006__here(R_0011_0006__HERE)
-            &amp; r_0011_0003__was_r_0011_0005__working(R_0011_0003__WAS_R_0011_0005__WORKING)
-            &amp; has_nim16(R_0011_0003__WAS_R_0011_0005__WORKING,R_0011_0006__HERE)
-            &amp; has_arg0(R_0011_0003__WAS_R_0011_0005__WORKING,R_0011_0002__I) )
-     =&gt; ? [R_0011_0002__I,R_0011_0011__SAD,R_0011_0009__WOULD_R_0011_0010__BE] :
-          ( r_0011_0002__I(R_0011_0002__I)
-          &amp; r_0011_0011__sad(R_0011_0011__SAD)
-          &amp; r_0011_0009__would_r_0011_0010__be(R_0011_0009__WOULD_R_0011_0010__BE)
-          &amp; has_prd(R_0011_0009__WOULD_R_0011_0010__BE,R_0011_0011__SAD)
-          &amp; has_arg0(R_0011_0009__WOULD_R_0011_0010__BE,R_0011_0002__I) ) ) ).
+    ( ~ ? [R_11_3_WAS_WORKING,R_11_2_I,R_11_6_HERE] :
+          ( i(R_11_2_I)
+          &amp; here(R_11_6_HERE)
+          &amp; was_working(R_11_3_WAS_WORKING,R_11_2_I)
+          &amp; nim16(R_11_3_WAS_WORKING,R_11_6_HERE) )
+   =&gt; ? [R_11_9_WOULD_BE,R_11_2_I,R_11_11_SAD] :
+        ( i(R_11_2_I)
+        &amp; sad(R_11_11_SAD)
+        &amp; would_be(R_11_9_WOULD_BE,R_11_2_I,R_11_11_SAD) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="770pt" height="297pt"

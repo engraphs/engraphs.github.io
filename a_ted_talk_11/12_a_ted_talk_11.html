@@ -314,25 +314,20 @@ arc(r_0012_0009__an_r_0012_0010__interest, r_0012_0012__education, r_0012_0011__
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0012_0004__I,Z_000_12_A_TED_TALK_11_7,R_0012_0005__FIND,R_0012_0001__ACTUALLY,R_0012_0006__IS] :
-      ( r_0012_0001__Actually(R_0012_0001__ACTUALLY)
-      &amp; r_0012_0004__I(R_0012_0004__I)
-      &amp; z_000_12_a_ted_talk_11_7(Z_000_12_A_TED_TALK_11_7)
-      &amp; r_0012_0006__is(R_0012_0006__IS)
-      &amp; has_arg0(R_0012_0006__IS,Z_000_12_A_TED_TALK_11_7)
-      &amp; ! [Z_000_12_A_TED_TALK_11_21] :
-          ( z_000_12_a_ted_talk_11_21(Z_000_12_A_TED_TALK_11_21)
-         =&gt; ? [R_0012_0012__EDUCATION,R_0012_0009__AN_R_0012_0010__INTEREST,R_0012_0008__HAS] :
-              ( r_0012_0012__education(R_0012_0012__EDUCATION)
-              &amp; r_0012_0008__has(R_0012_0008__HAS)
-              &amp; has_arg0(R_0012_0008__HAS,Z_000_12_A_TED_TALK_11_21)
-              &amp; has_arg1(R_0012_0008__HAS,R_0012_0009__AN_R_0012_0010__INTEREST)
-              &amp; r_0012_0009__an_r_0012_0010__interest(R_0012_0009__AN_R_0012_0010__INTEREST)
-              &amp; has_r_0012_0011__in(R_0012_0009__AN_R_0012_0010__INTEREST,R_0012_0012__EDUCATION) ) )
-      &amp; has_nim2(R_0012_0006__IS,R_0012_0001__ACTUALLY)
-      &amp; r_0012_0005__find(R_0012_0005__FIND)
-      &amp; has_arg1(R_0012_0005__FIND,Z_000_12_A_TED_TALK_11_7)
-      &amp; has_arg0(R_0012_0005__FIND,R_0012_0004__I) ) ).
+    ? [R_12_5_FIND,R_12_4_I,R_12_6_IS,Z_12_A_TED_TALK_11_7,R_12_1_ACTUALLY] :
+      ( i(R_12_4_I)
+      &amp; actually(R_12_1_ACTUALLY)
+      &amp; find(R_12_5_FIND,R_12_4_I,Z_12_A_TED_TALK_11_7)
+      &amp; ! [Z_12_A_TED_TALK_11_21] :
+          ( true
+         =&gt; ? [R_12_8_HAS,R_12_9_AN_INTEREST,R_12_12_EDUCATION] :
+              ( education(R_12_12_EDUCATION)
+              &amp; has(R_12_8_HAS,Z_12_A_TED_TALK_11_21,R_12_9_AN_INTEREST)
+              &amp; an_interest(R_12_9_AN_INTEREST)
+              &amp; in(R_12_9_AN_INTEREST,R_12_12_EDUCATION) ) )
+      &amp; prd(PRD)
+      &amp; is(R_12_6_IS,Z_12_A_TED_TALK_11_7)
+      &amp; nim2(R_12_6_IS,R_12_1_ACTUALLY) ) ).
 </pre>
 <br><hr><br>
 <svg width="583pt" height="342pt"

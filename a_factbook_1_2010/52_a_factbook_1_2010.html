@@ -290,24 +290,23 @@ arc(r_0052_0011__contact, r_0052_0013__blood, r_0052_0012__with).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0052_0001__INFECTION,R_0052_0003__ALSO,R_0052_0008__INFECTED,R_0052_0009__MEAT,R_0052_0013__BLOOD,R_0052_0011__CONTACT,R_0052_0010__OR,R_0052_0006__HANDLING,R_0052_0002__MAY_R_0052_0004__OCCUR] :
-      ( r_0052_0001__infection(R_0052_0001__INFECTION)
-      &amp; r_0052_0003__also(R_0052_0003__ALSO)
-      &amp; r_0052_0008__infected(R_0052_0008__INFECTED)
-      &amp; r_0052_0013__blood(R_0052_0013__BLOOD)
-      &amp; r_0052_0002__may_r_0052_0004__occur(R_0052_0002__MAY_R_0052_0004__OCCUR)
-      &amp; has_r_0052_0005__through_nim16(R_0052_0002__MAY_R_0052_0004__OCCUR,R_0052_0006__HANDLING)
-      &amp; r_0052_0006__handling(R_0052_0006__HANDLING)
-      &amp; has_r_0052_0007__of(R_0052_0006__HANDLING,R_0052_0010__OR)
-      &amp; r_0052_0010__or(R_0052_0010__OR)
-      &amp; has_conj2(R_0052_0010__OR,R_0052_0011__CONTACT)
-      &amp; r_0052_0011__contact(R_0052_0011__CONTACT)
-      &amp; has_r_0052_0012__with(R_0052_0011__CONTACT,R_0052_0013__BLOOD)
-      &amp; has_conj1(R_0052_0010__OR,R_0052_0009__MEAT)
-      &amp; r_0052_0009__meat(R_0052_0009__MEAT)
-      &amp; has_attrib25(R_0052_0009__MEAT,R_0052_0008__INFECTED)
-      &amp; has_nim8(R_0052_0002__MAY_R_0052_0004__OCCUR,R_0052_0003__ALSO)
-      &amp; has_arg0(R_0052_0002__MAY_R_0052_0004__OCCUR,R_0052_0001__INFECTION) ) ).
+    ? [R_52_2_MAY_OCCUR,R_52_1_INFECTION,R_52_3_ALSO,R_52_6_HANDLING,R_52_10_OR,R_52_9_MEAT,R_52_8_INFECTED,R_52_11_CONTACT,R_52_13_BLOOD] :
+      ( infection(R_52_1_INFECTION)
+      &amp; also(R_52_3_ALSO)
+      &amp; infected(R_52_8_INFECTED)
+      &amp; blood(R_52_13_BLOOD)
+      &amp; may_occur(R_52_2_MAY_OCCUR,R_52_1_INFECTION)
+      &amp; nim8(R_52_2_MAY_OCCUR,R_52_3_ALSO)
+      &amp; through_nim16(R_52_2_MAY_OCCUR,R_52_6_HANDLING)
+      &amp; handling(R_52_6_HANDLING)
+      &amp; of(R_52_6_HANDLING,R_52_10_OR)
+      &amp; or(R_52_10_OR)
+      &amp; conj1(R_52_10_OR,R_52_9_MEAT)
+      &amp; meat(R_52_9_MEAT)
+      &amp; attrib25(R_52_9_MEAT,R_52_8_INFECTED)
+      &amp; conj2(R_52_10_OR,R_52_11_CONTACT)
+      &amp; contact(R_52_11_CONTACT)
+      &amp; with(R_52_11_CONTACT,R_52_13_BLOOD) ) ).
 </pre>
 <br><hr><br>
 <svg width="670pt" height="568pt"

@@ -324,28 +324,21 @@ arc(z_000_40_a_factbook_1_2010_7, r_0040_0004__disease, prd).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0040_0003__BACTERIAL,R_0040_0004__DISEASE,R_0040_0007__FLEAS,R_0040_0005__TRANSMITTED,R_0040_0008__NORMALLY,R_0040_0011__RATS,Z_000_40_A_FACTBOOK_1_2010_24,R_0040_0009__ASSOCIATED,R_0040_0001__PLAGUE,Z_000_40_A_FACTBOOK_1_2010_1,Z_000_40_A_FACTBOOK_1_2010_7] :
-      ( r_0040_0001__Plague(R_0040_0001__PLAGUE)
-      &amp; r_0040_0003__bacterial(R_0040_0003__BACTERIAL)
-      &amp; r_0040_0007__fleas(R_0040_0007__FLEAS)
-      &amp; r_0040_0008__normally(R_0040_0008__NORMALLY)
-      &amp; r_0040_0011__rats(R_0040_0011__RATS)
-      &amp; z_000_40_a_factbook_1_2010_24(Z_000_40_A_FACTBOOK_1_2010_24)
-      &amp; z_000_40_a_factbook_1_2010_7(Z_000_40_A_FACTBOOK_1_2010_7)
-      &amp; has_prd(Z_000_40_A_FACTBOOK_1_2010_7,R_0040_0004__DISEASE)
-      &amp; r_0040_0004__disease(R_0040_0004__DISEASE)
-      &amp; has_attrib9(R_0040_0004__DISEASE,R_0040_0003__BACTERIAL)
-      &amp; has_arg0(Z_000_40_A_FACTBOOK_1_2010_7,R_0040_0001__PLAGUE)
-      &amp; z_000_40_a_factbook_1_2010_1(Z_000_40_A_FACTBOOK_1_2010_1)
-      &amp; has_nim2(Z_000_40_A_FACTBOOK_1_2010_1,R_0040_0001__PLAGUE)
-      &amp; r_0040_0009__associated(R_0040_0009__ASSOCIATED)
-      &amp; has_arg0(R_0040_0009__ASSOCIATED,Z_000_40_A_FACTBOOK_1_2010_24)
-      &amp; has_r_0040_0010__with_clr34(R_0040_0009__ASSOCIATED,R_0040_0011__RATS)
-      &amp; has_nim26(R_0040_0009__ASSOCIATED,R_0040_0008__NORMALLY)
-      &amp; has_arg1(R_0040_0009__ASSOCIATED,R_0040_0007__FLEAS)
-      &amp; r_0040_0005__transmitted(R_0040_0005__TRANSMITTED)
-      &amp; has_arg0(R_0040_0005__TRANSMITTED,R_0040_0007__FLEAS)
-      &amp; has_arg1(R_0040_0005__TRANSMITTED,R_0040_0004__DISEASE) ) ).
+    ? [R_40_5_TRANSMITTED,R_40_9_ASSOCIATED,Z_40_A_FACTBOOK_1_2010_24,R_40_7_FLEAS,R_40_8_NORMALLY,R_40_11_RATS,Z_40_A_FACTBOOK_1_2010_1,Z_40_A_FACTBOOK_1_2010_7,R_40_1_PLAGUE,R_40_4_DISEASE,R_40_3_BACTERIAL] :
+      ( fleas(R_40_7_FLEAS)
+      &amp; normally(R_40_8_NORMALLY)
+      &amp; rats(R_40_11_RATS)
+      &amp; plague(R_40_1_PLAGUE)
+      &amp; bacterial(R_40_3_BACTERIAL)
+      &amp; transmitted(R_40_5_TRANSMITTED,R_40_7_FLEAS,R_40_4_DISEASE)
+      &amp; disease(R_40_4_DISEASE)
+      &amp; attrib9(R_40_4_DISEASE,R_40_3_BACTERIAL)
+      &amp; associated(R_40_9_ASSOCIATED,Z_40_A_FACTBOOK_1_2010_24,R_40_7_FLEAS)
+      &amp; nim26(R_40_9_ASSOCIATED,R_40_8_NORMALLY)
+      &amp; with_clr34(R_40_9_ASSOCIATED,R_40_11_RATS)
+      &amp; z_40_a_factbook_1_2010_1(Z_40_A_FACTBOOK_1_2010_1)
+      &amp; nim2(Z_40_A_FACTBOOK_1_2010_1,R_40_1_PLAGUE)
+      &amp; z_40_a_factbook_1_2010_7(Z_40_A_FACTBOOK_1_2010_7,R_40_1_PLAGUE,R_40_4_DISEASE) ) ).
 </pre>
 <br><hr><br>
 <svg width="633pt" height="523pt"

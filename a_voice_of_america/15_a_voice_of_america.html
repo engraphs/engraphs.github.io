@@ -141,14 +141,12 @@ arc(r_0015_0004__denies, r_0015_0005__the_r_0015_0006__allegations, arg1).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0015_0001__THE_R_0015_0002__COMPANY,R_0015_0003__STRONGLY,R_0015_0005__THE_R_0015_0006__ALLEGATIONS,R_0015_0004__DENIES] :
-      ( r_0015_0001__The_r_0015_0002__company(R_0015_0001__THE_R_0015_0002__COMPANY)
-      &amp; r_0015_0003__strongly(R_0015_0003__STRONGLY)
-      &amp; r_0015_0005__the_r_0015_0006__allegations(R_0015_0005__THE_R_0015_0006__ALLEGATIONS)
-      &amp; r_0015_0004__denies(R_0015_0004__DENIES)
-      &amp; has_arg1(R_0015_0004__DENIES,R_0015_0005__THE_R_0015_0006__ALLEGATIONS)
-      &amp; has_nim7(R_0015_0004__DENIES,R_0015_0003__STRONGLY)
-      &amp; has_arg0(R_0015_0004__DENIES,R_0015_0001__THE_R_0015_0002__COMPANY) ) ).
+    ? [R_15_4_DENIES,R_15_1_THE_COMPANY,R_15_5_THE_ALLEGATIONS,R_15_3_STRONGLY] :
+      ( the_company(R_15_1_THE_COMPANY)
+      &amp; the_allegations(R_15_5_THE_ALLEGATIONS)
+      &amp; strongly(R_15_3_STRONGLY)
+      &amp; denies(R_15_4_DENIES,R_15_1_THE_COMPANY,R_15_5_THE_ALLEGATIONS)
+      &amp; nim7(R_15_4_DENIES,R_15_3_STRONGLY) ) ).
 </pre>
 <br><hr><br>
 <svg width="365pt" height="162pt"

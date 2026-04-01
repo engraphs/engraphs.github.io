@@ -480,36 +480,30 @@ arc(z_000_4_a_fce_0102_2000_12_4, r_0004_0003__the_r_0004_0004__events, r_0004_0
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0004_0003__THE_R_0004_0004__EVENTS,R_0004_0005__YOU,R_0004_0006__WENT,R_0004_0015__THE_R_0004_0016__FESTIVAL,R_0004_0019__EVEN,R_0004_0020__BETTER,R_0004_0021__NEXT,R_0004_0022__YEAR,R_0004_0014__THAT_R_0004_0017__COULD_R_0004_0018__BE,R_0004_0013__FEEL,R_0004_0011__BUT] :
-      ( r_0004_0003__the_r_0004_0004__events(R_0004_0003__THE_R_0004_0004__EVENTS)
-      &amp; r_0004_0005__you(R_0004_0005__YOU)
-      &amp; r_0004_0015__the_r_0004_0016__festival(R_0004_0015__THE_R_0004_0016__FESTIVAL)
-      &amp; r_0004_0019__even(R_0004_0019__EVEN)
-      &amp; r_0004_0021__next(R_0004_0021__NEXT)
-      &amp; r_0004_0011__but(R_0004_0011__BUT)
-      &amp; has_conj2(R_0004_0011__BUT,R_0004_0013__FEEL)
-      &amp; r_0004_0013__feel(R_0004_0013__FEEL)
-      &amp; has_arg1(R_0004_0013__FEEL,R_0004_0014__THAT_R_0004_0017__COULD_R_0004_0018__BE)
-      &amp; r_0004_0014__that_r_0004_0017__could_r_0004_0018__be(R_0004_0014__THAT_R_0004_0017__COULD_R_0004_0018__BE)
-      &amp; has_nim62(R_0004_0014__THAT_R_0004_0017__COULD_R_0004_0018__BE,R_0004_0022__YEAR)
-      &amp; r_0004_0022__year(R_0004_0022__YEAR)
-      &amp; has_attrib63(R_0004_0022__YEAR,R_0004_0021__NEXT)
-      &amp; has_prd(R_0004_0014__THAT_R_0004_0017__COULD_R_0004_0018__BE,R_0004_0020__BETTER)
-      &amp; r_0004_0020__better(R_0004_0020__BETTER)
-      &amp; has_qual57(R_0004_0020__BETTER,R_0004_0019__EVEN)
-      &amp; has_arg0(R_0004_0014__THAT_R_0004_0017__COULD_R_0004_0018__BE,R_0004_0015__THE_R_0004_0016__FESTIVAL)
-      &amp; has_arg0(R_0004_0013__FEEL,R_0004_0005__YOU)
-      &amp; ! [Z_000_4_A_FCE_0102_2000_12_4] :
-          ( ( z_000_4_a_fce_0102_2000_12_4(Z_000_4_A_FCE_0102_2000_12_4)
-            &amp; has_r_0004_0002__of(Z_000_4_A_FCE_0102_2000_12_4,R_0004_0003__THE_R_0004_0004__EVENTS) )
-         =&gt; ? [R_0004_0009__GOOD,R_0004_0008__WERE] :
-              ( r_0004_0009__good(R_0004_0009__GOOD)
-              &amp; r_0004_0008__were(R_0004_0008__WERE)
-              &amp; has_arg0(R_0004_0008__WERE,Z_000_4_A_FCE_0102_2000_12_4)
-              &amp; has_prd(R_0004_0008__WERE,R_0004_0009__GOOD) ) )
-      &amp; r_0004_0006__went(R_0004_0006__WENT)
-      &amp; has_arg0(R_0004_0006__WENT,R_0004_0005__YOU)
-      &amp; has_r_0004_0007__to_clr24(R_0004_0006__WENT,R_0004_0003__THE_R_0004_0004__EVENTS) ) ).
+    ? [R_4_6_WENT,R_4_3_THE_EVENTS,R_4_11_BUT,R_4_13_FEEL,R_4_5_YOU,R_4_14_THAT_COULD_BE,R_4_15_THE_FESTIVAL,R_4_22_YEAR,R_4_21_NEXT,R_4_20_BETTER,R_4_19_EVEN] :
+      ( the_events(R_4_3_THE_EVENTS)
+      &amp; you(R_4_5_YOU)
+      &amp; the_festival(R_4_15_THE_FESTIVAL)
+      &amp; next(R_4_21_NEXT)
+      &amp; even(R_4_19_EVEN)
+      &amp; went(R_4_6_WENT,R_4_5_YOU)
+      &amp; to_clr24(R_4_6_WENT,R_4_3_THE_EVENTS)
+      &amp; ! [Z_4_A_FCE_102_2000_12_4] :
+          ( ( z_4_a_fce_102_2000_12_4(Z_4_A_FCE_102_2000_12_4)
+            &amp; of(Z_4_A_FCE_102_2000_12_4,R_4_3_THE_EVENTS) )
+         =&gt; ? [R_4_8_WERE,R_4_9_GOOD] :
+              ( good(R_4_9_GOOD)
+              &amp; were(R_4_8_WERE,Z_4_A_FCE_102_2000_12_4,R_4_9_GOOD) ) )
+      &amp; conj1(CONJ1)
+      &amp; but(R_4_11_BUT)
+      &amp; conj2(R_4_11_BUT,R_4_13_FEEL)
+      &amp; feel(R_4_13_FEEL,R_4_5_YOU,R_4_14_THAT_COULD_BE)
+      &amp; that_could_be(R_4_14_THAT_COULD_BE,R_4_15_THE_FESTIVAL,R_4_20_BETTER)
+      &amp; better(R_4_20_BETTER)
+      &amp; qual57(R_4_20_BETTER,R_4_19_EVEN)
+      &amp; nim62(R_4_14_THAT_COULD_BE,R_4_22_YEAR)
+      &amp; year(R_4_22_YEAR)
+      &amp; attrib63(R_4_22_YEAR,R_4_21_NEXT) ) ).
 </pre>
 <br><hr><br>
 <svg width="989pt" height="478pt"

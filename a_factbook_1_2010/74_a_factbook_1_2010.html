@@ -245,22 +245,19 @@ arc(z_000_74_a_factbook_1_2010_1, r_0074_0001__respiratory_r_0074_0002__disease,
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0074_0001__RESPIRATORY_R_0074_0002__DISEASE,R_0074_0005__CLOSE,R_0074_0009__INFECTIOUS,R_0074_0008__AN_R_0074_0010__PERSON,R_0074_0006__CONTACT,Z_000_74_A_FACTBOOK_1_2010_8,R_0074_0003__ACQUIRED,Z_000_74_A_FACTBOOK_1_2010_1] :
-      ( r_0074_0001__respiratory_r_0074_0002__disease(R_0074_0001__RESPIRATORY_R_0074_0002__DISEASE)
-      &amp; r_0074_0005__close(R_0074_0005__CLOSE)
-      &amp; r_0074_0009__infectious(R_0074_0009__INFECTIOUS)
-      &amp; z_000_74_a_factbook_1_2010_8(Z_000_74_A_FACTBOOK_1_2010_8)
-      &amp; z_000_74_a_factbook_1_2010_1(Z_000_74_A_FACTBOOK_1_2010_1)
-      &amp; has_nim2(Z_000_74_A_FACTBOOK_1_2010_1,R_0074_0001__RESPIRATORY_R_0074_0002__DISEASE)
-      &amp; r_0074_0003__acquired(R_0074_0003__ACQUIRED)
-      &amp; has_arg0(R_0074_0003__ACQUIRED,Z_000_74_A_FACTBOOK_1_2010_8)
-      &amp; has_r_0074_0004__through_nim15(R_0074_0003__ACQUIRED,R_0074_0006__CONTACT)
-      &amp; r_0074_0006__contact(R_0074_0006__CONTACT)
-      &amp; has_r_0074_0007__with(R_0074_0006__CONTACT,R_0074_0008__AN_R_0074_0010__PERSON)
-      &amp; r_0074_0008__an_r_0074_0010__person(R_0074_0008__AN_R_0074_0010__PERSON)
-      &amp; has_attrib27(R_0074_0008__AN_R_0074_0010__PERSON,R_0074_0009__INFECTIOUS)
-      &amp; has_attrib16(R_0074_0006__CONTACT,R_0074_0005__CLOSE)
-      &amp; has_arg1(R_0074_0003__ACQUIRED,R_0074_0001__RESPIRATORY_R_0074_0002__DISEASE) ) ).
+    ? [R_74_3_ACQUIRED,Z_74_A_FACTBOOK_1_2010_8,R_74_6_CONTACT,R_74_5_CLOSE,R_74_8_AN_PERSON,R_74_9_INFECTIOUS,Z_74_A_FACTBOOK_1_2010_1,R_74_1_RESPIRATORY_DISEASE] :
+      ( close(R_74_5_CLOSE)
+      &amp; infectious(R_74_9_INFECTIOUS)
+      &amp; respiratory_disease(R_74_1_RESPIRATORY_DISEASE)
+      &amp; acquired(R_74_3_ACQUIRED,Z_74_A_FACTBOOK_1_2010_8,R_74_1_RESPIRATORY_DISEASE)
+      &amp; through_nim15(R_74_3_ACQUIRED,R_74_6_CONTACT)
+      &amp; contact(R_74_6_CONTACT)
+      &amp; attrib16(R_74_6_CONTACT,R_74_5_CLOSE)
+      &amp; with(R_74_6_CONTACT,R_74_8_AN_PERSON)
+      &amp; an_person(R_74_8_AN_PERSON)
+      &amp; attrib27(R_74_8_AN_PERSON,R_74_9_INFECTIOUS)
+      &amp; z_74_a_factbook_1_2010_1(Z_74_A_FACTBOOK_1_2010_1)
+      &amp; nim2(Z_74_A_FACTBOOK_1_2010_1,R_74_1_RESPIRATORY_DISEASE) ) ).
 </pre>
 <br><hr><br>
 <svg width="620pt" height="432pt"

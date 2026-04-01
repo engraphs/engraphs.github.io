@@ -468,37 +468,27 @@ arc(z_000_49_a_lob_a01_35, r_0049_0013__saying, restriction).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0049_0001__SENATOR_R_0049_0002__ROBERTSON,R_0049_0003__LATER,R_0049_0008__A_R_0049_0009__LETTER,R_0049_0011__MR_R_0049_0012__KENNEDY,R_0049_0007__SENT,R_0049_0017__SEVERAL,R_0049_0020__WEAVER_R_0049_0021___APOS_S,R_0049_0022__LOYALTY,R_0049_0018__COMPLAINTS,R_0049_0015__HAD_R_0049_0016__RECEIVED,R_0049_0013__SAYING,Z_000_49_A_LOB_A01_35,R_0049_0006__HAD,R_0049_0004__DISCLOSED] :
-      ( r_0049_0001__Senator_r_0049_0002__Robertson(R_0049_0001__SENATOR_R_0049_0002__ROBERTSON)
-      &amp; r_0049_0003__later(R_0049_0003__LATER)
-      &amp; r_0049_0008__a_r_0049_0009__letter(R_0049_0008__A_R_0049_0009__LETTER)
-      &amp; r_0049_0011__Mr_r_0049_0012__Kennedy(R_0049_0011__MR_R_0049_0012__KENNEDY)
-      &amp; r_0049_0017__several(R_0049_0017__SEVERAL)
-      &amp; r_0049_0020__Weaver_r_0049_0021___apos_s(R_0049_0020__WEAVER_R_0049_0021___APOS_S)
-      &amp; r_0049_0004__disclosed(R_0049_0004__DISCLOSED)
-      &amp; has_arg1(R_0049_0004__DISCLOSED,R_0049_0006__HAD)
-      &amp; r_0049_0006__had(R_0049_0006__HAD)
-      &amp; has_keep_scope(R_0049_0006__HAD,Z_000_49_A_LOB_A01_35)
-      &amp; z_000_49_a_lob_a01_35(Z_000_49_A_LOB_A01_35)
-      &amp; has_conj1(Z_000_49_A_LOB_A01_35,R_0049_0013__SAYING)
-      &amp; r_0049_0013__saying(R_0049_0013__SAYING)
-      &amp; has_arg1(R_0049_0013__SAYING,R_0049_0015__HAD_R_0049_0016__RECEIVED)
-      &amp; r_0049_0015__had_r_0049_0016__received(R_0049_0015__HAD_R_0049_0016__RECEIVED)
-      &amp; has_arg1(R_0049_0015__HAD_R_0049_0016__RECEIVED,R_0049_0018__COMPLAINTS)
-      &amp; r_0049_0018__complaints(R_0049_0018__COMPLAINTS)
-      &amp; has_r_0049_0019__about(R_0049_0018__COMPLAINTS,R_0049_0022__LOYALTY)
-      &amp; r_0049_0022__loyalty(R_0049_0022__LOYALTY)
-      &amp; has_gen(R_0049_0022__LOYALTY,R_0049_0020__WEAVER_R_0049_0021___APOS_S)
-      &amp; has_attrib50(R_0049_0018__COMPLAINTS,R_0049_0017__SEVERAL)
-      &amp; has_arg0(R_0049_0015__HAD_R_0049_0016__RECEIVED,R_0049_0001__SENATOR_R_0049_0002__ROBERTSON)
-      &amp; has_arg0(R_0049_0013__SAYING,R_0049_0001__SENATOR_R_0049_0002__ROBERTSON)
-      &amp; has_conj2(Z_000_49_A_LOB_A01_35,R_0049_0007__SENT)
-      &amp; r_0049_0007__sent(R_0049_0007__SENT)
-      &amp; has_arg2(R_0049_0007__SENT,R_0049_0011__MR_R_0049_0012__KENNEDY)
-      &amp; has_arg1(R_0049_0007__SENT,R_0049_0008__A_R_0049_0009__LETTER)
-      &amp; has_arg0(R_0049_0007__SENT,R_0049_0001__SENATOR_R_0049_0002__ROBERTSON)
-      &amp; has_nim7(R_0049_0004__DISCLOSED,R_0049_0003__LATER)
-      &amp; has_arg0(R_0049_0004__DISCLOSED,R_0049_0001__SENATOR_R_0049_0002__ROBERTSON) ) ).
+    ? [R_49_4_DISCLOSED,R_49_1_SENATOR_ROBERTSON,R_49_3_LATER] :
+      ( senator_Robertson(R_49_1_SENATOR_ROBERTSON)
+      &amp; later(R_49_3_LATER)
+      &amp; disclosed(R_49_4_DISCLOSED,R_49_1_SENATOR_ROBERTSON,R_49_6_HAD)
+      &amp; ~ ? [Z_49_A_LOB_A01_35,R_49_13_SAYING,R_49_15_HAD_RECEIVED,R_49_18_COMPLAINTS,R_49_17_SEVERAL,R_49_22_LOYALTY,R_49_20_WEAVER_APOS_S,R_49_7_SENT,R_49_8_A_LETTER,R_49_11_MR_KENNEDY] :
+            ( several(R_49_17_SEVERAL)
+            &amp; weaver_apos_s(R_49_20_WEAVER_APOS_S)
+            &amp; a_letter(R_49_8_A_LETTER)
+            &amp; mr_Kennedy(R_49_11_MR_KENNEDY)
+            &amp; z_49_a_lob_a01_35(Z_49_A_LOB_A01_35)
+            &amp; conj1(Z_49_A_LOB_A01_35,R_49_13_SAYING)
+            &amp; saying(R_49_13_SAYING,R_49_1_SENATOR_ROBERTSON,R_49_15_HAD_RECEIVED)
+            &amp; had_received(R_49_15_HAD_RECEIVED,R_49_1_SENATOR_ROBERTSON,R_49_18_COMPLAINTS)
+            &amp; complaints(R_49_18_COMPLAINTS)
+            &amp; attrib50(R_49_18_COMPLAINTS,R_49_17_SEVERAL)
+            &amp; about(R_49_18_COMPLAINTS,R_49_22_LOYALTY)
+            &amp; loyalty(R_49_22_LOYALTY)
+            &amp; gen(R_49_22_LOYALTY,R_49_20_WEAVER_APOS_S)
+            &amp; conj2(Z_49_A_LOB_A01_35,R_49_7_SENT)
+            &amp; sent(R_49_7_SENT,R_49_1_SENATOR_ROBERTSON,R_49_8_A_LETTER,R_49_11_MR_KENNEDY) )
+      &amp; nim7(R_49_4_DISCLOSED,R_49_3_LATER) ) ).
 </pre>
 <br><hr><br>
 <svg width="1105pt" height="658pt"

@@ -262,21 +262,19 @@ arc(r_0276_0009__said, r_0276_0010__impatiently, nim25).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [UTTERANCE_276_A_DICK_1952_4,R_0276_0008__DORLE,R_0276_0010__IMPATIENTLY,R_0276_0009__SAID] :
-      ( r_0276_0008__Dorle(R_0276_0008__DORLE)
-      &amp; r_0276_0010__impatiently(R_0276_0010__IMPATIENTLY)
-      &amp; r_0276_0009__said(R_0276_0009__SAID)
-      &amp; has_nim25(R_0276_0009__SAID,R_0276_0010__IMPATIENTLY)
-      &amp; has_arg0(R_0276_0009__SAID,R_0276_0008__DORLE)
-      &amp; has_arg1(R_0276_0009__SAID,UTTERANCE_276_A_DICK_1952_4)
+    ? [R_276_9_SAID,R_276_8_DORLE,UTTERANCE_276_A_DICK_1952_4,R_276_10_IMPATIENTLY] :
+      ( dorle(R_276_8_DORLE)
+      &amp; impatiently(R_276_10_IMPATIENTLY)
+      &amp; said(R_276_9_SAID,R_276_8_DORLE,UTTERANCE_276_A_DICK_1952_4)
+      &amp; ! [Z_276_A_DICK_1952_10] :
+          ( true
+         =&gt; ? [R_276_2_THERE_APOS_S,R_276_5_THERE] :
+              ( there(R_276_5_THERE)
+              &amp; there_apos_s(R_276_2_THERE_APOS_S,Z_276_A_DICK_1952_10)
+              &amp; clr13(R_276_2_THERE_APOS_S,R_276_5_THERE) ) )
+      &amp; part1(PART1)
       &amp; utterance_276_a_dick_1952_4(UTTERANCE_276_A_DICK_1952_4)
-      &amp; ! [Z_000_276_A_DICK_1952_10] :
-          ( z_000_276_a_dick_1952_10(Z_000_276_A_DICK_1952_10)
-         =&gt; ? [R_0276_0005__THERE,R_0276_0002__THERE_R_0276_0003___APOS_S] :
-              ( r_0276_0005__there(R_0276_0005__THERE)
-              &amp; r_0276_0002__There_r_0276_0003___apos_s(R_0276_0002__THERE_R_0276_0003___APOS_S)
-              &amp; has_arg0(R_0276_0002__THERE_R_0276_0003___APOS_S,Z_000_276_A_DICK_1952_10)
-              &amp; has_clr13(R_0276_0002__THERE_R_0276_0003___APOS_S,R_0276_0005__THERE) ) ) ) ).
+      &amp; nim25(R_276_9_SAID,R_276_10_IMPATIENTLY) ) ).
 </pre>
 <br><hr><br>
 <svg width="547pt" height="252pt"

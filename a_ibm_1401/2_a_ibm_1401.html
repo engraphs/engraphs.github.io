@@ -475,37 +475,26 @@ arc(r_0002_0027__applications, r_0002_0026__finished, attrib70).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0002_0011__METHODS,R_0002_0014__STAFFS,R_0002_0013__PROGRAMMING] :
-      ( r_0002_0011__methods(R_0002_0011__METHODS)
-      &amp; r_0002_0014__staffs(R_0002_0014__STAFFS)
-      &amp; r_0002_0013__programming(R_0002_0013__PROGRAMMING)
-      &amp; has_arg0(R_0002_0013__PROGRAMMING,R_0002_0014__STAFFS)
-      &amp; has_arg1(R_0002_0013__PROGRAMMING,R_0002_0011__METHODS)
-      &amp; ! [R_0002_0003__ORDER,R_0002_0002__COMPANIES,R_0002_0004__AN_R_0002_0005__IBM_R_0002_0006__1401_R_0002_0007__DATA_R_0002_0008__PROCESSING_R_0002_0009__SYSTEM] :
-          ( ( r_0002_0002__companies(R_0002_0002__COMPANIES)
-            &amp; r_0002_0004__an_r_0002_0005__IBM_r_0002_0006__1401_r_0002_0007__Data_r_0002_0008__Processing_r_0002_0009__System(R_0002_0004__AN_R_0002_0005__IBM_R_0002_0006__1401_R_0002_0007__DATA_R_0002_0008__PROCESSING_R_0002_0009__SYSTEM)
-            &amp; r_0002_0003__order(R_0002_0003__ORDER)
-            &amp; has_arg1(R_0002_0003__ORDER,R_0002_0004__AN_R_0002_0005__IBM_R_0002_0006__1401_R_0002_0007__DATA_R_0002_0008__PROCESSING_R_0002_0009__SYSTEM)
-            &amp; has_arg0(R_0002_0003__ORDER,R_0002_0002__COMPANIES) )
-         =&gt; ? [R_0002_0024__MANAGEMENT,R_0002_0021__THE_R_0002_0022__REQUIREMENTS,R_0002_0026__FINISHED,R_0002_0027__APPLICATIONS,Z_000_2_A_IBM_1401_52,R_0002_0020__TRANSLATING,R_0002_0017__THE_R_0002_0018__RESPONSIBILITY,Z_000_2_A_IBM_1401_40,R_0002_0015__ARE_R_0002_0016__GIVEN] :
-              ( r_0002_0024__management(R_0002_0024__MANAGEMENT)
-              &amp; r_0002_0026__finished(R_0002_0026__FINISHED)
-              &amp; z_000_2_a_ibm_1401_40(Z_000_2_A_IBM_1401_40)
-              &amp; z_000_2_a_ibm_1401_52(Z_000_2_A_IBM_1401_52)
-              &amp; r_0002_0015__are_r_0002_0016__given(R_0002_0015__ARE_R_0002_0016__GIVEN)
-              &amp; has_arg0(R_0002_0015__ARE_R_0002_0016__GIVEN,Z_000_2_A_IBM_1401_40)
-              &amp; has_arg1(R_0002_0015__ARE_R_0002_0016__GIVEN,R_0002_0017__THE_R_0002_0018__RESPONSIBILITY)
-              &amp; r_0002_0017__the_r_0002_0018__responsibility(R_0002_0017__THE_R_0002_0018__RESPONSIBILITY)
-              &amp; has_r_0002_0019__of(R_0002_0017__THE_R_0002_0018__RESPONSIBILITY,R_0002_0020__TRANSLATING)
-              &amp; r_0002_0020__translating(R_0002_0020__TRANSLATING)
-              &amp; has_arg0(R_0002_0020__TRANSLATING,Z_000_2_A_IBM_1401_52)
-              &amp; has_r_0002_0025__into_clr69(R_0002_0020__TRANSLATING,R_0002_0027__APPLICATIONS)
-              &amp; r_0002_0027__applications(R_0002_0027__APPLICATIONS)
-              &amp; has_attrib70(R_0002_0027__APPLICATIONS,R_0002_0026__FINISHED)
-              &amp; has_arg1(R_0002_0020__TRANSLATING,R_0002_0021__THE_R_0002_0022__REQUIREMENTS)
-              &amp; r_0002_0021__the_r_0002_0022__requirements(R_0002_0021__THE_R_0002_0022__REQUIREMENTS)
-              &amp; has_r_0002_0023__of(R_0002_0021__THE_R_0002_0022__REQUIREMENTS,R_0002_0024__MANAGEMENT)
-              &amp; has_arg2(R_0002_0015__ARE_R_0002_0016__GIVEN,R_0002_0014__STAFFS) ) ) ) ).
+    ? [R_2_13_PROGRAMMING,R_2_14_STAFFS,R_2_11_METHODS] :
+      ( staffs(R_2_14_STAFFS)
+      &amp; methods(R_2_11_METHODS)
+      &amp; ! [R_2_3_ORDER,R_2_2_COMPANIES,R_2_4_AN_IBM_1401_DATA_PROCESSING_SYSTEM] :
+          ( ( companies(R_2_2_COMPANIES)
+            &amp; an_IBM_1401_Data_Processing_System(R_2_4_AN_IBM_1401_DATA_PROCESSING_SYSTEM)
+            &amp; order(R_2_3_ORDER,R_2_2_COMPANIES,R_2_4_AN_IBM_1401_DATA_PROCESSING_SYSTEM) )
+         =&gt; ? [R_2_15_ARE_GIVEN,Z_2_A_IBM_1401_40,R_2_17_THE_RESPONSIBILITY,R_2_20_TRANSLATING,Z_2_A_IBM_1401_52,R_2_21_THE_REQUIREMENTS,R_2_24_MANAGEMENT,R_2_27_APPLICATIONS,R_2_26_FINISHED] :
+              ( management(R_2_24_MANAGEMENT)
+              &amp; finished(R_2_26_FINISHED)
+              &amp; are_given(R_2_15_ARE_GIVEN,Z_2_A_IBM_1401_40,R_2_17_THE_RESPONSIBILITY,R_2_14_STAFFS)
+              &amp; the_responsibility(R_2_17_THE_RESPONSIBILITY)
+              &amp; of(R_2_17_THE_RESPONSIBILITY,R_2_20_TRANSLATING)
+              &amp; translating(R_2_20_TRANSLATING,Z_2_A_IBM_1401_52,R_2_21_THE_REQUIREMENTS)
+              &amp; the_requirements(R_2_21_THE_REQUIREMENTS)
+              &amp; of(R_2_21_THE_REQUIREMENTS,R_2_24_MANAGEMENT)
+              &amp; into_clr69(R_2_20_TRANSLATING,R_2_27_APPLICATIONS)
+              &amp; applications(R_2_27_APPLICATIONS)
+              &amp; attrib70(R_2_27_APPLICATIONS,R_2_26_FINISHED) ) )
+      &amp; programming(R_2_13_PROGRAMMING,R_2_14_STAFFS,R_2_11_METHODS) ) ).
 </pre>
 <br><hr><br>
 <svg width="1523pt" height="432pt"

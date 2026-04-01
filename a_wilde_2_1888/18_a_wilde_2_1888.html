@@ -441,34 +441,30 @@ arc(r_0018_0018__the_r_0018_0020__garden, r_0018_0021__inside, qual59).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0018_0001__THEY,R_0018_0019__BEAUTIFUL,R_0018_0021__INSIDE,R_0018_0018__THE_R_0018_0020__GARDEN,R_0018_0016__TALK,R_0018_0015__AND,R_0018_0002__USED] :
-      ( r_0018_0001__They(R_0018_0001__THEY)
-      &amp; r_0018_0019__beautiful(R_0018_0019__BEAUTIFUL)
-      &amp; r_0018_0021__inside(R_0018_0021__INSIDE)
-      &amp; r_0018_0002__used(R_0018_0002__USED)
-      &amp; has_keep_scope(R_0018_0002__USED,R_0018_0015__AND)
-      &amp; r_0018_0015__and(R_0018_0015__AND)
-      &amp; has_conj2(R_0018_0015__AND,R_0018_0016__TALK)
-      &amp; r_0018_0016__talk(R_0018_0016__TALK)
-      &amp; has_r_0018_0017__about_clr51(R_0018_0016__TALK,R_0018_0018__THE_R_0018_0020__GARDEN)
-      &amp; r_0018_0018__the_r_0018_0020__garden(R_0018_0018__THE_R_0018_0020__GARDEN)
-      &amp; has_qual59(R_0018_0018__THE_R_0018_0020__GARDEN,R_0018_0021__INSIDE)
-      &amp; has_attrib54(R_0018_0018__THE_R_0018_0020__GARDEN,R_0018_0019__BEAUTIFUL)
-      &amp; has_arg0(R_0018_0016__TALK,R_0018_0001__THEY)
-      &amp; ! [R_0018_0012__WERE,R_0018_0011__LESSONS,R_0018_0013__OVER] :
-          ( ( r_0018_0013__over(R_0018_0013__OVER)
-            &amp; r_0018_0012__were(R_0018_0012__WERE)
-            &amp; has_clr37(R_0018_0012__WERE,R_0018_0013__OVER)
-            &amp; has_arg0(R_0018_0012__WERE,R_0018_0011__LESSONS)
-            &amp; r_0018_0011__lessons(R_0018_0011__LESSONS)
-            &amp; has_gen(R_0018_0011__LESSONS,R_0018_0001__THEY) )
-         =&gt; ? [R_0018_0007__HIGH,R_0018_0006__THE_R_0018_0008__WALL,R_0018_0004__WANDER] :
-              ( r_0018_0007__high(R_0018_0007__HIGH)
-              &amp; r_0018_0004__wander(R_0018_0004__WANDER)
-              &amp; has_r_0018_0005__round_clr17(R_0018_0004__WANDER,R_0018_0006__THE_R_0018_0008__WALL)
-              &amp; r_0018_0006__the_r_0018_0008__wall(R_0018_0006__THE_R_0018_0008__WALL)
-              &amp; has_attrib20(R_0018_0006__THE_R_0018_0008__WALL,R_0018_0007__HIGH)
-              &amp; has_arg0(R_0018_0004__WANDER,R_0018_0001__THEY) ) ) ) ).
+    ~ ? [R_18_15_AND,R_18_16_TALK,R_18_1_THEY,R_18_18_THE_GARDEN,R_18_19_BEAUTIFUL,R_18_21_INSIDE] :
+        ( they(R_18_1_THEY)
+        &amp; beautiful(R_18_19_BEAUTIFUL)
+        &amp; inside(R_18_21_INSIDE)
+        &amp; ! [R_18_12_WERE,R_18_11_LESSONS,R_18_13_OVER] :
+            ( ( over(R_18_13_OVER)
+              &amp; were(R_18_12_WERE,R_18_11_LESSONS)
+              &amp; lessons(R_18_11_LESSONS)
+              &amp; gen(R_18_11_LESSONS,R_18_1_THEY)
+              &amp; clr37(R_18_12_WERE,R_18_13_OVER) )
+           =&gt; ? [R_18_4_WANDER,R_18_6_THE_WALL,R_18_7_HIGH] :
+                ( high(R_18_7_HIGH)
+                &amp; wander(R_18_4_WANDER,R_18_1_THEY)
+                &amp; round_clr17(R_18_4_WANDER,R_18_6_THE_WALL)
+                &amp; the_wall(R_18_6_THE_WALL)
+                &amp; attrib20(R_18_6_THE_WALL,R_18_7_HIGH) ) )
+        &amp; conj1(CONJ1)
+        &amp; and(R_18_15_AND)
+        &amp; conj2(R_18_15_AND,R_18_16_TALK)
+        &amp; talk(R_18_16_TALK,R_18_1_THEY)
+        &amp; about_clr51(R_18_16_TALK,R_18_18_THE_GARDEN)
+        &amp; the_garden(R_18_18_THE_GARDEN)
+        &amp; attrib54(R_18_18_THE_GARDEN,R_18_19_BEAUTIFUL)
+        &amp; qual59(R_18_18_THE_GARDEN,R_18_21_INSIDE) ) ).
 </pre>
 <br><hr><br>
 <svg width="970pt" height="432pt"

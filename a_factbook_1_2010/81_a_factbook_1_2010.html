@@ -272,24 +272,21 @@ arc(z_000_81_a_factbook_1_2010_1, r_0081_0002__contact_r_0081_0003__disease, nim
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0081_0001__ANIMAL,R_0081_0002__CONTACT_R_0081_0003__DISEASE,R_0081_0006__DIRECT,R_0081_0009__LOCAL,R_0081_0010__ANIMALS,R_0081_0007__CONTACT,Z_000_81_A_FACTBOOK_1_2010_11,R_0081_0004__ACQUIRED,Z_000_81_A_FACTBOOK_1_2010_1] :
-      ( r_0081_0001__animal(R_0081_0001__ANIMAL)
-      &amp; r_0081_0006__direct(R_0081_0006__DIRECT)
-      &amp; r_0081_0009__local(R_0081_0009__LOCAL)
-      &amp; z_000_81_a_factbook_1_2010_11(Z_000_81_A_FACTBOOK_1_2010_11)
-      &amp; z_000_81_a_factbook_1_2010_1(Z_000_81_A_FACTBOOK_1_2010_1)
-      &amp; has_nim2(Z_000_81_A_FACTBOOK_1_2010_1,R_0081_0002__CONTACT_R_0081_0003__DISEASE)
-      &amp; r_0081_0002__contact_r_0081_0003__disease(R_0081_0002__CONTACT_R_0081_0003__DISEASE)
-      &amp; has_attrib3(R_0081_0002__CONTACT_R_0081_0003__DISEASE,R_0081_0001__ANIMAL)
-      &amp; r_0081_0004__acquired(R_0081_0004__ACQUIRED)
-      &amp; has_arg0(R_0081_0004__ACQUIRED,Z_000_81_A_FACTBOOK_1_2010_11)
-      &amp; has_r_0081_0005__through_nim18(R_0081_0004__ACQUIRED,R_0081_0007__CONTACT)
-      &amp; r_0081_0007__contact(R_0081_0007__CONTACT)
-      &amp; has_r_0081_0008__with(R_0081_0007__CONTACT,R_0081_0010__ANIMALS)
-      &amp; r_0081_0010__animals(R_0081_0010__ANIMALS)
-      &amp; has_attrib28(R_0081_0010__ANIMALS,R_0081_0009__LOCAL)
-      &amp; has_attrib19(R_0081_0007__CONTACT,R_0081_0006__DIRECT)
-      &amp; has_arg1(R_0081_0004__ACQUIRED,R_0081_0002__CONTACT_R_0081_0003__DISEASE) ) ).
+    ? [R_81_4_ACQUIRED,Z_81_A_FACTBOOK_1_2010_11,R_81_7_CONTACT,R_81_6_DIRECT,R_81_10_ANIMALS,R_81_9_LOCAL,Z_81_A_FACTBOOK_1_2010_1,R_81_2_CONTACT_DISEASE,R_81_1_ANIMAL] :
+      ( direct(R_81_6_DIRECT)
+      &amp; local(R_81_9_LOCAL)
+      &amp; animal(R_81_1_ANIMAL)
+      &amp; acquired(R_81_4_ACQUIRED,Z_81_A_FACTBOOK_1_2010_11,R_81_2_CONTACT_DISEASE)
+      &amp; contact_disease(R_81_2_CONTACT_DISEASE)
+      &amp; attrib3(R_81_2_CONTACT_DISEASE,R_81_1_ANIMAL)
+      &amp; through_nim18(R_81_4_ACQUIRED,R_81_7_CONTACT)
+      &amp; contact(R_81_7_CONTACT)
+      &amp; attrib19(R_81_7_CONTACT,R_81_6_DIRECT)
+      &amp; with(R_81_7_CONTACT,R_81_10_ANIMALS)
+      &amp; animals(R_81_10_ANIMALS)
+      &amp; attrib28(R_81_10_ANIMALS,R_81_9_LOCAL)
+      &amp; z_81_a_factbook_1_2010_1(Z_81_A_FACTBOOK_1_2010_1)
+      &amp; nim2(Z_81_A_FACTBOOK_1_2010_1,R_81_2_CONTACT_DISEASE) ) ).
 </pre>
 <br><hr><br>
 <svg width="615pt" height="432pt"

@@ -249,17 +249,12 @@ arc(r_0017_0010__asked, z_000_17_a_ted_talk_11_25, arg0).
 </svg>
 <pre>
 fof(formula,axiom,
-    ! [R_0017_0003__WORK,R_0017_0002__YOU,R_0017_0005__EDUCATION] :
-      ( ( r_0017_0002__you(R_0017_0002__YOU)
-        &amp; r_0017_0005__education(R_0017_0005__EDUCATION)
-        &amp; r_0017_0003__work(R_0017_0003__WORK)
-        &amp; has_r_0017_0004__in_nim14(R_0017_0003__WORK,R_0017_0005__EDUCATION)
-        &amp; has_arg0(R_0017_0003__WORK,R_0017_0002__YOU) )
-     =&gt; ~ ? [Z_000_17_A_TED_TALK_11_25,R_0017_0010__ASKED] :
-            ( z_000_17_a_ted_talk_11_25(Z_000_17_A_TED_TALK_11_25)
-            &amp; r_0017_0010__asked(R_0017_0010__ASKED)
-            &amp; has_arg0(R_0017_0010__ASKED,Z_000_17_A_TED_TALK_11_25)
-            &amp; has_arg1(R_0017_0010__ASKED,R_0017_0002__YOU) ) ) ).
+    ! [R_17_3_WORK,R_17_2_YOU,R_17_5_EDUCATION] :
+      ( ( you(R_17_2_YOU)
+        &amp; education(R_17_5_EDUCATION)
+        &amp; work(R_17_3_WORK,R_17_2_YOU)
+        &amp; in_nim14(R_17_3_WORK,R_17_5_EDUCATION) )
+     =&gt; ~ ? [R_17_10_ASKED,Z_17_A_TED_TALK_11_25] : asked(R_17_10_ASKED,Z_17_A_TED_TALK_11_25,R_17_2_YOU) ) ).
 </pre>
 <br><hr><br>
 <svg width="474pt" height="297pt"

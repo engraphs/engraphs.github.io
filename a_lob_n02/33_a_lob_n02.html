@@ -425,33 +425,23 @@ arc(z_000_33_a_lob_n02_39, r_0033_0014__letting_r_0033_0015__in, restriction).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [UTTERANCE_33_A_LOB_N02_4,R_0033_0011__HE,R_0033_0012__ASKED,R_0033_0016__THE_R_0033_0017__CLUTCH,R_0033_0014__LETTING_R_0033_0015__IN,Z_000_33_A_LOB_N02_39] :
-      ( r_0033_0011__he(R_0033_0011__HE)
-      &amp; r_0033_0016__the_r_0033_0017__clutch(R_0033_0016__THE_R_0033_0017__CLUTCH)
-      &amp; z_000_33_a_lob_n02_39(Z_000_33_A_LOB_N02_39)
-      &amp; has_conj1(Z_000_33_A_LOB_N02_39,R_0033_0014__LETTING_R_0033_0015__IN)
-      &amp; r_0033_0014__letting_r_0033_0015__in(R_0033_0014__LETTING_R_0033_0015__IN)
-      &amp; has_arg1(R_0033_0014__LETTING_R_0033_0015__IN,R_0033_0016__THE_R_0033_0017__CLUTCH)
-      &amp; has_arg0(R_0033_0014__LETTING_R_0033_0015__IN,R_0033_0011__HE)
-      &amp; has_conj2(Z_000_33_A_LOB_N02_39,R_0033_0012__ASKED)
-      &amp; r_0033_0012__asked(R_0033_0012__ASKED)
-      &amp; has_arg0(R_0033_0012__ASKED,R_0033_0011__HE)
-      &amp; has_arg1(R_0033_0012__ASKED,UTTERANCE_33_A_LOB_N02_4)
-      &amp; utterance_33_a_lob_n02_4(UTTERANCE_33_A_LOB_N02_4)
-      &amp; ! [Z_000_33_A_LOB_N02_12,R_0033_0005__YOU,R_0033_0007__TO_R_0033_0008__DO,R_0033_0006__WANT] :
-          ( ( r_0033_0005__you(R_0033_0005__YOU)
-            &amp; z_000_33_a_lob_n02_12(Z_000_33_A_LOB_N02_12)
-            &amp; r_0033_0006__want(R_0033_0006__WANT)
-            &amp; has_arg1(R_0033_0006__WANT,R_0033_0007__TO_R_0033_0008__DO)
-            &amp; r_0033_0007__to_r_0033_0008__do(R_0033_0007__TO_R_0033_0008__DO)
-            &amp; has_arg1(R_0033_0007__TO_R_0033_0008__DO,Z_000_33_A_LOB_N02_12)
-            &amp; has_arg0(R_0033_0007__TO_R_0033_0008__DO,R_0033_0005__YOU)
-            &amp; has_arg0(R_0033_0006__WANT,R_0033_0005__YOU) )
-         =&gt; ? [R_0033_0003__THAT,R_0033_0002__IS] :
-              ( r_0033_0003__that(R_0033_0003__THAT)
-              &amp; r_0033_0002__Is(R_0033_0002__IS)
-              &amp; has_prd(R_0033_0002__IS,Z_000_33_A_LOB_N02_12)
-              &amp; has_arg0(R_0033_0002__IS,R_0033_0003__THAT) ) ) ) ).
+    ? [Z_33_A_LOB_N02_39,R_33_14_LETTING_IN,R_33_16_THE_CLUTCH,R_33_12_ASKED,R_33_11_HE,UTTERANCE_33_A_LOB_N02_4] :
+      ( the_clutch(R_33_16_THE_CLUTCH)
+      &amp; he(R_33_11_HE)
+      &amp; z_33_a_lob_n02_39(Z_33_A_LOB_N02_39)
+      &amp; conj1(Z_33_A_LOB_N02_39,R_33_14_LETTING_IN)
+      &amp; letting_in(R_33_14_LETTING_IN,R_33_11_HE,R_33_16_THE_CLUTCH)
+      &amp; conj2(Z_33_A_LOB_N02_39,R_33_12_ASKED)
+      &amp; asked(R_33_12_ASKED,R_33_11_HE,UTTERANCE_33_A_LOB_N02_4)
+      &amp; ! [R_33_6_WANT,R_33_7_TO_DO,R_33_5_YOU,Z_33_A_LOB_N02_12] :
+          ( ( you(R_33_5_YOU)
+            &amp; want(R_33_6_WANT,R_33_5_YOU,R_33_7_TO_DO)
+            &amp; to_do(R_33_7_TO_DO,R_33_5_YOU,Z_33_A_LOB_N02_12) )
+         =&gt; ? [R_33_2_IS,R_33_3_THAT] :
+              ( that(R_33_3_THAT)
+              &amp; is(R_33_2_IS,R_33_3_THAT,Z_33_A_LOB_N02_12) ) )
+      &amp; part1(PART1)
+      &amp; utterance_33_a_lob_n02_4(UTTERANCE_33_A_LOB_N02_4) ) ).
 </pre>
 <br><hr><br>
 <svg width="736pt" height="387pt"

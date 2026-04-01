@@ -436,34 +436,27 @@ arc(z_000_34_a_freedoom_52, r_0034_0022__necromancer, conj2).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0034_0008__CERTAIN,R_0034_0009__MONSTERS,R_0034_0017__YOU,R_0034_0011__CAN_R_0034_0013__LOCK_R_0034_0014__ON,R_0034_0019__MINIGUN_R_0034_0020__ZOMBIE,R_0034_0022__NECROMANCER,Z_000_34_A_FREEDOOM_52,Z_000_34_A_FREEDOOM_50] :
-      ( r_0034_0008__certain(R_0034_0008__CERTAIN)
-      &amp; r_0034_0017__you(R_0034_0017__YOU)
-      &amp; r_0034_0019__minigun_r_0034_0020__zombie(R_0034_0019__MINIGUN_R_0034_0020__ZOMBIE)
-      &amp; r_0034_0022__necromancer(R_0034_0022__NECROMANCER)
-      &amp; z_000_34_a_freedoom_50(Z_000_34_A_FREEDOOM_50)
-      &amp; has_prd(Z_000_34_A_FREEDOOM_50,Z_000_34_A_FREEDOOM_52)
-      &amp; z_000_34_a_freedoom_52(Z_000_34_A_FREEDOOM_52)
-      &amp; has_conj2(Z_000_34_A_FREEDOOM_52,R_0034_0022__NECROMANCER)
-      &amp; has_conj1(Z_000_34_A_FREEDOOM_52,R_0034_0019__MINIGUN_R_0034_0020__ZOMBIE)
-      &amp; has_arg0(Z_000_34_A_FREEDOOM_50,R_0034_0009__MONSTERS)
-      &amp; r_0034_0009__monsters(R_0034_0009__MONSTERS)
-      &amp; has_attrib22(R_0034_0009__MONSTERS,R_0034_0008__CERTAIN)
-      &amp; r_0034_0011__can_r_0034_0013__lock_r_0034_0014__on(R_0034_0011__CAN_R_0034_0013__LOCK_R_0034_0014__ON)
-      &amp; has_r_0034_0016__to_clr45(R_0034_0011__CAN_R_0034_0013__LOCK_R_0034_0014__ON,R_0034_0017__YOU)
-      &amp; has_arg0(R_0034_0011__CAN_R_0034_0013__LOCK_R_0034_0014__ON,R_0034_0009__MONSTERS)
-      &amp; ! [R_0034_0007__FACING,R_0034_0001__THIS_R_0034_0002__ADVICE] :
-          ( ( r_0034_0001__This_r_0034_0002__advice(R_0034_0001__THIS_R_0034_0002__ADVICE)
-            &amp; r_0034_0007__facing(R_0034_0007__FACING)
-            &amp; has_arg1(R_0034_0007__FACING,R_0034_0009__MONSTERS)
-            &amp; has_arg0(R_0034_0007__FACING,R_0034_0001__THIS_R_0034_0002__ADVICE) )
-         =&gt; ? [R_0034_0004__PARTICULARLY,R_0034_0005__IMPORTANT,R_0034_0003__IS] :
-              ( r_0034_0004__particularly(R_0034_0004__PARTICULARLY)
-              &amp; r_0034_0003__is(R_0034_0003__IS)
-              &amp; has_prd(R_0034_0003__IS,R_0034_0005__IMPORTANT)
-              &amp; r_0034_0005__important(R_0034_0005__IMPORTANT)
-              &amp; has_qual10(R_0034_0005__IMPORTANT,R_0034_0004__PARTICULARLY)
-              &amp; has_arg0(R_0034_0003__IS,R_0034_0001__THIS_R_0034_0002__ADVICE) ) ) ) ).
+    ? [R_34_11_CAN_LOCK_ON,R_34_17_YOU,Z_34_A_FREEDOOM_50,R_34_9_MONSTERS,R_34_8_CERTAIN,Z_34_A_FREEDOOM_52,R_34_19_MINIGUN_ZOMBIE,R_34_22_NECROMANCER] :
+      ( you(R_34_17_YOU)
+      &amp; certain(R_34_8_CERTAIN)
+      &amp; minigun_zombie(R_34_19_MINIGUN_ZOMBIE)
+      &amp; necromancer(R_34_22_NECROMANCER)
+      &amp; ! [R_34_7_FACING,R_34_1_THIS_ADVICE] :
+          ( ( this_advice(R_34_1_THIS_ADVICE)
+            &amp; facing(R_34_7_FACING,R_34_1_THIS_ADVICE,R_34_9_MONSTERS) )
+         =&gt; ? [R_34_3_IS,R_34_5_IMPORTANT,R_34_4_PARTICULARLY] :
+              ( particularly(R_34_4_PARTICULARLY)
+              &amp; is(R_34_3_IS,R_34_1_THIS_ADVICE,R_34_5_IMPORTANT)
+              &amp; important(R_34_5_IMPORTANT)
+              &amp; qual10(R_34_5_IMPORTANT,R_34_4_PARTICULARLY) ) )
+      &amp; can_lock_on(R_34_11_CAN_LOCK_ON,R_34_9_MONSTERS)
+      &amp; monsters(R_34_9_MONSTERS)
+      &amp; attrib22(R_34_9_MONSTERS,R_34_8_CERTAIN)
+      &amp; to_clr45(R_34_11_CAN_LOCK_ON,R_34_17_YOU)
+      &amp; z_34_a_freedoom_50(Z_34_A_FREEDOOM_50,R_34_9_MONSTERS,Z_34_A_FREEDOOM_52)
+      &amp; z_34_a_freedoom_52(Z_34_A_FREEDOOM_52)
+      &amp; conj1(Z_34_A_FREEDOOM_52,R_34_19_MINIGUN_ZOMBIE)
+      &amp; conj2(Z_34_A_FREEDOOM_52,R_34_22_NECROMANCER) ) ).
 </pre>
 <br><hr><br>
 <svg width="1532pt" height="478pt"

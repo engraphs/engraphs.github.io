@@ -372,29 +372,26 @@ arc(r_0175_0012__is, r_0175_0013__bare, prd).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0175_0009__HER,R_0175_0010__LITTLE,R_0175_0011__HEAD,R_0175_0013__BARE,R_0175_0012__IS,R_0175_0008__AND] :
-      ( r_0175_0009__her(R_0175_0009__HER)
-      &amp; r_0175_0010__little(R_0175_0010__LITTLE)
-      &amp; r_0175_0013__bare(R_0175_0013__BARE)
-      &amp; r_0175_0008__and(R_0175_0008__AND)
-      &amp; has_conj2(R_0175_0008__AND,R_0175_0012__IS)
-      &amp; r_0175_0012__is(R_0175_0012__IS)
-      &amp; has_prd(R_0175_0012__IS,R_0175_0013__BARE)
-      &amp; has_arg0(R_0175_0012__IS,R_0175_0011__HEAD)
-      &amp; r_0175_0011__head(R_0175_0011__HEAD)
-      &amp; has_attrib32(R_0175_0011__HEAD,R_0175_0010__LITTLE)
-      &amp; has_gen(R_0175_0011__HEAD,R_0175_0009__HER)
-      &amp; ! [R_0175_0005__OR,R_0175_0004__SHOES,R_0175_0006__STOCKINGS] :
-          ( ( r_0175_0004__shoes(R_0175_0004__SHOES)
-            &amp; r_0175_0006__stockings(R_0175_0006__STOCKINGS)
-            &amp; r_0175_0005__or(R_0175_0005__OR)
-            &amp; has_conj2(R_0175_0005__OR,R_0175_0006__STOCKINGS)
-            &amp; has_conj1(R_0175_0005__OR,R_0175_0004__SHOES) )
-         =&gt; ? [R_0175_0001__SHE,R_0175_0002__HAS] :
-              ( r_0175_0001__She(R_0175_0001__SHE)
-              &amp; r_0175_0002__has(R_0175_0002__HAS)
-              &amp; has_arg1(R_0175_0002__HAS,R_0175_0005__OR)
-              &amp; has_arg0(R_0175_0002__HAS,R_0175_0001__SHE) ) ) ) ).
+    ? [R_175_8_AND,R_175_12_IS,R_175_11_HEAD,R_175_10_LITTLE,R_175_9_HER,R_175_13_BARE] :
+      ( little(R_175_10_LITTLE)
+      &amp; her(R_175_9_HER)
+      &amp; bare(R_175_13_BARE)
+      &amp; ! [R_175_5_OR,R_175_4_SHOES,R_175_6_STOCKINGS] :
+          ( ( shoes(R_175_4_SHOES)
+            &amp; stockings(R_175_6_STOCKINGS)
+            &amp; or(R_175_5_OR)
+            &amp; conj1(R_175_5_OR,R_175_4_SHOES)
+            &amp; conj2(R_175_5_OR,R_175_6_STOCKINGS) )
+         =&gt; ? [R_175_2_HAS,R_175_1_SHE] :
+              ( she(R_175_1_SHE)
+              &amp; has(R_175_2_HAS,R_175_1_SHE,R_175_5_OR) ) )
+      &amp; conj1(CONJ1)
+      &amp; and(R_175_8_AND)
+      &amp; conj2(R_175_8_AND,R_175_12_IS)
+      &amp; is(R_175_12_IS,R_175_11_HEAD,R_175_13_BARE)
+      &amp; head(R_175_11_HEAD)
+      &amp; attrib32(R_175_11_HEAD,R_175_10_LITTLE)
+      &amp; gen(R_175_11_HEAD,R_175_9_HER) ) ).
 </pre>
 <br><hr><br>
 <svg width="559pt" height="387pt"

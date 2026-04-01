@@ -412,29 +412,24 @@ arc(r_0174_0018__crying, r_0174_0016__she, arg0).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0174_0016__SHE,R_0174_0017__IS_R_0174_0018__CRYING,R_0174_0015__AND] :
-      ( r_0174_0016__she(R_0174_0016__SHE)
-      &amp; r_0174_0015__and(R_0174_0015__AND)
-      &amp; has_conj2(R_0174_0015__AND,R_0174_0017__IS_R_0174_0018__CRYING)
-      &amp; r_0174_0017__is_r_0174_0018__crying(R_0174_0017__IS_R_0174_0018__CRYING)
-      &amp; has_arg0(R_0174_0017__IS_R_0174_0018__CRYING,R_0174_0016__SHE)
-      &amp; ! [R_0174_0009__NOT] :
-          ( ~ ? [R_0174_0007__SHE,R_0174_0011__HOME,R_0174_0012__SOME_R_0174_0013__MONEY,R_0174_0008__DOES_R_0174_0010__BRING] :
-                ( r_0174_0007__she(R_0174_0007__SHE)
-                &amp; r_0174_0011__home(R_0174_0011__HOME)
-                &amp; r_0174_0012__some_r_0174_0013__money(R_0174_0012__SOME_R_0174_0013__MONEY)
-                &amp; r_0174_0008__does_r_0174_0010__bring(R_0174_0008__DOES_R_0174_0010__BRING)
-                &amp; has_arg1(R_0174_0008__DOES_R_0174_0010__BRING,R_0174_0012__SOME_R_0174_0013__MONEY)
-                &amp; has_nim31(R_0174_0008__DOES_R_0174_0010__BRING,R_0174_0011__HOME)
-                &amp; has_arg0(R_0174_0008__DOES_R_0174_0010__BRING,R_0174_0007__SHE) )
-         =&gt; ? [R_0174_0001__HER,R_0174_0002__FATHER,R_0174_0005__HER,R_0174_0003__WILL_R_0174_0004__BEAT] :
-              ( r_0174_0001__Her(R_0174_0001__HER)
-              &amp; r_0174_0005__her(R_0174_0005__HER)
-              &amp; r_0174_0003__will_r_0174_0004__beat(R_0174_0003__WILL_R_0174_0004__BEAT)
-              &amp; has_arg1(R_0174_0003__WILL_R_0174_0004__BEAT,R_0174_0005__HER)
-              &amp; has_arg0(R_0174_0003__WILL_R_0174_0004__BEAT,R_0174_0002__FATHER)
-              &amp; r_0174_0002__father(R_0174_0002__FATHER)
-              &amp; has_gen(R_0174_0002__FATHER,R_0174_0001__HER) ) ) ) ).
+    ? [R_174_15_AND,R_174_17_IS_CRYING,R_174_16_SHE] :
+      ( she(R_174_16_SHE)
+      &amp; ( ~ ? [R_174_8_DOES_BRING,R_174_7_SHE,R_174_12_SOME_MONEY,R_174_11_HOME] :
+              ( she(R_174_7_SHE)
+              &amp; some_money(R_174_12_SOME_MONEY)
+              &amp; home(R_174_11_HOME)
+              &amp; does_bring(R_174_8_DOES_BRING,R_174_7_SHE,R_174_12_SOME_MONEY)
+              &amp; nim31(R_174_8_DOES_BRING,R_174_11_HOME) )
+       =&gt; ? [R_174_3_WILL_BEAT,R_174_2_FATHER,R_174_1_HER,R_174_5_HER] :
+            ( her(R_174_1_HER)
+            &amp; her(R_174_5_HER)
+            &amp; will_beat(R_174_3_WILL_BEAT,R_174_2_FATHER,R_174_5_HER)
+            &amp; father(R_174_2_FATHER)
+            &amp; gen(R_174_2_FATHER,R_174_1_HER) ) )
+      &amp; conj1(CONJ1)
+      &amp; and(R_174_15_AND)
+      &amp; conj2(R_174_15_AND,R_174_17_IS_CRYING)
+      &amp; is_crying(R_174_17_IS_CRYING,R_174_16_SHE) ) ).
 </pre>
 <br><hr><br>
 <svg width="853pt" height="342pt"

@@ -317,25 +317,22 @@ arc(r_0014_0014__expired, r_0014_0015__yet, nim41).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0014_0001__I,R_0014_0003__IT,R_0014_0007__YESTERDAY,R_0014_0004__THE_R_0014_0005__DAY,R_0014_0002__BOUGHT,R_0014_0009__AND] :
-      ( r_0014_0001__I(R_0014_0001__I)
-      &amp; r_0014_0003__it(R_0014_0003__IT)
-      &amp; r_0014_0007__yesterday(R_0014_0007__YESTERDAY)
-      &amp; r_0014_0009__and(R_0014_0009__AND)
-      &amp; has_conj2(R_0014_0009__AND,R_0014_0013__N_APOS_T)
-      &amp; ~ ? [R_0014_0010__THE_R_0014_0011__DATE,R_0014_0015__YET,R_0014_0012__HAS_R_0014_0014__EXPIRED] :
-            ( r_0014_0010__the_r_0014_0011__date(R_0014_0010__THE_R_0014_0011__DATE)
-            &amp; r_0014_0015__yet(R_0014_0015__YET)
-            &amp; r_0014_0012__has_r_0014_0014__expired(R_0014_0012__HAS_R_0014_0014__EXPIRED)
-            &amp; has_nim41(R_0014_0012__HAS_R_0014_0014__EXPIRED,R_0014_0015__YET)
-            &amp; has_arg0(R_0014_0012__HAS_R_0014_0014__EXPIRED,R_0014_0010__THE_R_0014_0011__DATE) )
-      &amp; has_conj1(R_0014_0009__AND,R_0014_0002__BOUGHT)
-      &amp; r_0014_0002__bought(R_0014_0002__BOUGHT)
-      &amp; has_nim12(R_0014_0002__BOUGHT,R_0014_0004__THE_R_0014_0005__DAY)
-      &amp; r_0014_0004__the_r_0014_0005__day(R_0014_0004__THE_R_0014_0005__DAY)
-      &amp; has_r_0014_0006__before(R_0014_0004__THE_R_0014_0005__DAY,R_0014_0007__YESTERDAY)
-      &amp; has_arg1(R_0014_0002__BOUGHT,R_0014_0003__IT)
-      &amp; has_arg0(R_0014_0002__BOUGHT,R_0014_0001__I) ) ).
+    ? [R_14_9_AND,R_14_2_BOUGHT,R_14_1_I,R_14_3_IT,R_14_4_THE_DAY,R_14_7_YESTERDAY] :
+      ( i(R_14_1_I)
+      &amp; it(R_14_3_IT)
+      &amp; yesterday(R_14_7_YESTERDAY)
+      &amp; and(R_14_9_AND)
+      &amp; conj1(R_14_9_AND,R_14_2_BOUGHT)
+      &amp; bought(R_14_2_BOUGHT,R_14_1_I,R_14_3_IT)
+      &amp; nim12(R_14_2_BOUGHT,R_14_4_THE_DAY)
+      &amp; the_day(R_14_4_THE_DAY)
+      &amp; before(R_14_4_THE_DAY,R_14_7_YESTERDAY)
+      &amp; conj2(R_14_9_AND,R_14_13_N_APOS_T)
+      &amp; ~ ? [R_14_12_HAS_EXPIRED,R_14_10_THE_DATE,R_14_15_YET] :
+            ( the_date(R_14_10_THE_DATE)
+            &amp; yet(R_14_15_YET)
+            &amp; has_expired(R_14_12_HAS_EXPIRED,R_14_10_THE_DATE)
+            &amp; nim41(R_14_12_HAS_EXPIRED,R_14_15_YET) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="653pt" height="342pt"

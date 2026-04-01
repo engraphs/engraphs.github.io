@@ -339,24 +339,22 @@ arc(z_000_12_a_loosechange_25, z_000_12_a_loosechange_26, arg0).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [Z_000_12_A_LOOSECHANGE_2] :
-      ( z_000_12_a_loosechange_2(Z_000_12_A_LOOSECHANGE_2)
-      &amp; ! [Z_000_12_A_LOOSECHANGE_26] :
-          ( z_000_12_a_loosechange_26(Z_000_12_A_LOOSECHANGE_26)
-         =&gt; ? [R_0012_0012__LONDONERS,Z_000_12_A_LOOSECHANGE_25] :
-              ( r_0012_0012__Londoners(R_0012_0012__LONDONERS)
-              &amp; z_000_12_a_loosechange_25(Z_000_12_A_LOOSECHANGE_25)
-              &amp; has_arg0(Z_000_12_A_LOOSECHANGE_25,Z_000_12_A_LOOSECHANGE_26)
-              &amp; has_prd(Z_000_12_A_LOOSECHANGE_25,R_0012_0012__LONDONERS) ) )
-      &amp; ! [Z_000_12_A_LOOSECHANGE_4] :
-          ( z_000_12_a_loosechange_4(Z_000_12_A_LOOSECHANGE_4)
-         =&gt; ? [R_0012_0005__THE_R_0012_0006__PLACE,R_0012_0007__AT_ONCE,R_0012_0002__SEEMED_R_0012_0003__TO_R_0012_0004__LEAVE] :
-              ( r_0012_0005__the_r_0012_0006__place(R_0012_0005__THE_R_0012_0006__PLACE)
-              &amp; r_0012_0007__at_once(R_0012_0007__AT_ONCE)
-              &amp; r_0012_0002__seemed_r_0012_0003__to_r_0012_0004__leave(R_0012_0002__SEEMED_R_0012_0003__TO_R_0012_0004__LEAVE)
-              &amp; has_arg0(R_0012_0002__SEEMED_R_0012_0003__TO_R_0012_0004__LEAVE,Z_000_12_A_LOOSECHANGE_4)
-              &amp; has_nim19(R_0012_0002__SEEMED_R_0012_0003__TO_R_0012_0004__LEAVE,R_0012_0007__AT_ONCE)
-              &amp; has_arg1(R_0012_0002__SEEMED_R_0012_0003__TO_R_0012_0004__LEAVE,R_0012_0005__THE_R_0012_0006__PLACE) ) ) ) ).
+    ? [Z_12_A_LOOSECHANGE_2] :
+      ( ! [Z_12_A_LOOSECHANGE_26] :
+          ( true
+         =&gt; ? [Z_12_A_LOOSECHANGE_25,R_12_12_LONDONERS] :
+              ( londoners(R_12_12_LONDONERS)
+              &amp; z_12_a_loosechange_25(Z_12_A_LOOSECHANGE_25,Z_12_A_LOOSECHANGE_26,R_12_12_LONDONERS) ) )
+      &amp; conj2(CONJ2)
+      &amp; ! [Z_12_A_LOOSECHANGE_4] :
+          ( true
+         =&gt; ? [R_12_2_SEEMED_TO_LEAVE,R_12_5_THE_PLACE,R_12_7_AT_ONCE] :
+              ( the_place(R_12_5_THE_PLACE)
+              &amp; at_once(R_12_7_AT_ONCE)
+              &amp; seemed_to_leave(R_12_2_SEEMED_TO_LEAVE,Z_12_A_LOOSECHANGE_4,R_12_5_THE_PLACE)
+              &amp; nim19(R_12_2_SEEMED_TO_LEAVE,R_12_7_AT_ONCE) ) )
+      &amp; conj1(CONJ1)
+      &amp; z_12_a_loosechange_2(Z_12_A_LOOSECHANGE_2) ) ).
 </pre>
 <br><hr><br>
 <svg width="765pt" height="478pt"

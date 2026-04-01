@@ -347,24 +347,18 @@ arc(r_0091_0013__contacted, r_0091_0016__oliver_dot_colvile_dot_mp_commat_parlia
 </svg>
 <pre>
 fof(formula,axiom,
-    ! [R_0091_0004__ARE,R_0091_0002__ANY_R_0091_0003__MEMBERS,R_0091_0005__INTERESTED] :
-      ( ( r_0091_0002__any_r_0091_0003__Members(R_0091_0002__ANY_R_0091_0003__MEMBERS)
-        &amp; r_0091_0005__interested(R_0091_0005__INTERESTED)
-        &amp; r_0091_0004__are(R_0091_0004__ARE)
-        &amp; has_prd(R_0091_0004__ARE,R_0091_0005__INTERESTED)
-        &amp; has_arg0(R_0091_0004__ARE,R_0091_0002__ANY_R_0091_0003__MEMBERS) )
-     =&gt; ! [R_0091_0013__CONTACTED,R_0091_0007__I,R_0091_0016__OLIVER_DOT_COLVILE_DOT_MP_COMMAT_PARLIAMENT_DOT_UK] :
-          ( ( r_0091_0007__I(R_0091_0007__I)
-            &amp; r_0091_0016__oliver_dot_colvile_dot_mp_commat_parliament_dot_uk(R_0091_0016__OLIVER_DOT_COLVILE_DOT_MP_COMMAT_PARLIAMENT_DOT_UK)
-            &amp; r_0091_0013__contacted(R_0091_0013__CONTACTED)
-            &amp; has_r_0091_0015__on_nim44(R_0091_0013__CONTACTED,R_0091_0016__OLIVER_DOT_COLVILE_DOT_MP_COMMAT_PARLIAMENT_DOT_UK)
-            &amp; has_arg1(R_0091_0013__CONTACTED,R_0091_0007__I)
-            &amp; has_arg0(R_0091_0013__CONTACTED,R_0091_0002__ANY_R_0091_0003__MEMBERS) )
-         =&gt; ? [R_0091_0010__DELIGHTED,R_0091_0008__SHOULD_R_0091_0009__BE] :
-              ( r_0091_0010__delighted(R_0091_0010__DELIGHTED)
-              &amp; r_0091_0008__should_r_0091_0009__be(R_0091_0008__SHOULD_R_0091_0009__BE)
-              &amp; has_prd(R_0091_0008__SHOULD_R_0091_0009__BE,R_0091_0010__DELIGHTED)
-              &amp; has_arg0(R_0091_0008__SHOULD_R_0091_0009__BE,R_0091_0007__I) ) ) ) ).
+    ! [R_91_4_ARE,R_91_2_ANY_MEMBERS,R_91_5_INTERESTED] :
+      ( ( any_Members(R_91_2_ANY_MEMBERS)
+        &amp; interested(R_91_5_INTERESTED)
+        &amp; are(R_91_4_ARE,R_91_2_ANY_MEMBERS,R_91_5_INTERESTED) )
+     =&gt; ! [R_91_13_CONTACTED,R_91_7_I,R_91_16_OLIVER_DOT_COLVILE_DOT_MP_COMMAT_PARLIAMENT_DOT_UK] :
+          ( ( i(R_91_7_I)
+            &amp; oliver_dot_colvile_dot_mp_commat_parliament_dot_uk(R_91_16_OLIVER_DOT_COLVILE_DOT_MP_COMMAT_PARLIAMENT_DOT_UK)
+            &amp; contacted(R_91_13_CONTACTED,R_91_2_ANY_MEMBERS,R_91_7_I)
+            &amp; on_nim44(R_91_13_CONTACTED,R_91_16_OLIVER_DOT_COLVILE_DOT_MP_COMMAT_PARLIAMENT_DOT_UK) )
+         =&gt; ? [R_91_8_SHOULD_BE,R_91_10_DELIGHTED] :
+              ( delighted(R_91_10_DELIGHTED)
+              &amp; should_be(R_91_8_SHOULD_BE,R_91_7_I,R_91_10_DELIGHTED) ) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="937pt" height="297pt"

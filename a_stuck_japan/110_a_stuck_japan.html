@@ -532,42 +532,29 @@ arc(r_0110_0026__to_r_0110_0027__start, z_000_110_a_stuck_japan_73, arg0).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0110_0009__A_R_0110_0010__COUNTRY,R_0110_0013__IMMIGRATION,R_0110_0018__FALLING,R_0110_0019__FERTILITY,R_0110_0015__A_R_0110_0016__SOLUTION,R_0110_0011__THAT_R_0110_0012__REJECTS,R_0110_0024__GOOD,R_0110_0023__A_R_0110_0025__PLACE,Z_000_110_A_STUCK_JAPAN_73,R_0110_0026__TO_R_0110_0027__START] :
-      ( r_0110_0009__a_r_0110_0010__country(R_0110_0009__A_R_0110_0010__COUNTRY)
-      &amp; r_0110_0013__immigration(R_0110_0013__IMMIGRATION)
-      &amp; r_0110_0018__falling(R_0110_0018__FALLING)
-      &amp; r_0110_0024__good(R_0110_0024__GOOD)
-      &amp; z_000_110_a_stuck_japan_73(Z_000_110_A_STUCK_JAPAN_73)
-      &amp; r_0110_0026__to_r_0110_0027__start(R_0110_0026__TO_R_0110_0027__START)
-      &amp; has_arg0(R_0110_0026__TO_R_0110_0027__START,Z_000_110_A_STUCK_JAPAN_73)
-      &amp; has_arg1(R_0110_0026__TO_R_0110_0027__START,R_0110_0023__A_R_0110_0025__PLACE)
-      &amp; r_0110_0023__a_r_0110_0025__place(R_0110_0023__A_R_0110_0025__PLACE)
-      &amp; has_attrib68(R_0110_0023__A_R_0110_0025__PLACE,R_0110_0024__GOOD)
-      &amp; r_0110_0011__that_r_0110_0012__rejects(R_0110_0011__THAT_R_0110_0012__REJECTS)
-      &amp; has_prd(R_0110_0011__THAT_R_0110_0012__REJECTS,R_0110_0015__A_R_0110_0016__SOLUTION)
-      &amp; r_0110_0015__a_r_0110_0016__solution(R_0110_0015__A_R_0110_0016__SOLUTION)
-      &amp; has_r_0110_0017__to(R_0110_0015__A_R_0110_0016__SOLUTION,R_0110_0019__FERTILITY)
-      &amp; r_0110_0019__fertility(R_0110_0019__FERTILITY)
-      &amp; has_attrib53(R_0110_0019__FERTILITY,R_0110_0018__FALLING)
-      &amp; has_arg1(R_0110_0011__THAT_R_0110_0012__REJECTS,R_0110_0013__IMMIGRATION)
-      &amp; has_arg0(R_0110_0011__THAT_R_0110_0012__REJECTS,R_0110_0009__A_R_0110_0010__COUNTRY)
-      &amp; ! [R_0110_0003__WANT,R_0110_0002__YOU,R_0110_0006__WHAT,R_0110_0007__HAPPENS,R_0110_0004__TO_R_0110_0005__SEE] :
-          ( ( r_0110_0002__you(R_0110_0002__YOU)
-            &amp; r_0110_0006__what(R_0110_0006__WHAT)
-            &amp; r_0110_0003__want(R_0110_0003__WANT)
-            &amp; has_arg1(R_0110_0003__WANT,R_0110_0004__TO_R_0110_0005__SEE)
-            &amp; r_0110_0004__to_r_0110_0005__see(R_0110_0004__TO_R_0110_0005__SEE)
-            &amp; has_arg1(R_0110_0004__TO_R_0110_0005__SEE,R_0110_0007__HAPPENS)
-            &amp; r_0110_0007__happens(R_0110_0007__HAPPENS)
-            &amp; has_r_0110_0008__to_nim26(R_0110_0007__HAPPENS,R_0110_0009__A_R_0110_0010__COUNTRY)
-            &amp; has_arg0(R_0110_0007__HAPPENS,R_0110_0006__WHAT)
-            &amp; has_arg0(R_0110_0004__TO_R_0110_0005__SEE,R_0110_0002__YOU)
-            &amp; has_arg0(R_0110_0003__WANT,R_0110_0002__YOU) )
-         =&gt; ? [R_0110_0021__JAPAN,R_0110_0022__IS] :
-              ( r_0110_0021__Japan(R_0110_0021__JAPAN)
-              &amp; r_0110_0022__is(R_0110_0022__IS)
-              &amp; has_prd(R_0110_0022__IS,R_0110_0023__A_R_0110_0025__PLACE)
-              &amp; has_arg0(R_0110_0022__IS,R_0110_0021__JAPAN) ) ) ) ).
+    ? [R_110_11_THAT_REJECTS,R_110_9_A_COUNTRY,R_110_13_IMMIGRATION,R_110_15_A_SOLUTION,R_110_19_FERTILITY,R_110_18_FALLING,R_110_26_TO_START,Z_110_A_STUCK_JAPAN_73,R_110_23_A_PLACE,R_110_24_GOOD] :
+      ( a_country(R_110_9_A_COUNTRY)
+      &amp; immigration(R_110_13_IMMIGRATION)
+      &amp; falling(R_110_18_FALLING)
+      &amp; good(R_110_24_GOOD)
+      &amp; ! [R_110_3_WANT,R_110_4_TO_SEE,R_110_2_YOU,R_110_7_HAPPENS,R_110_6_WHAT] :
+          ( ( you(R_110_2_YOU)
+            &amp; what(R_110_6_WHAT)
+            &amp; want(R_110_3_WANT,R_110_2_YOU,R_110_4_TO_SEE)
+            &amp; to_see(R_110_4_TO_SEE,R_110_2_YOU,R_110_7_HAPPENS)
+            &amp; happens(R_110_7_HAPPENS,R_110_6_WHAT)
+            &amp; to_nim26(R_110_7_HAPPENS,R_110_9_A_COUNTRY) )
+         =&gt; ? [R_110_22_IS,R_110_21_JAPAN] :
+              ( japan(R_110_21_JAPAN)
+              &amp; is(R_110_22_IS,R_110_21_JAPAN,R_110_23_A_PLACE) ) )
+      &amp; that_rejects(R_110_11_THAT_REJECTS,R_110_9_A_COUNTRY,R_110_13_IMMIGRATION,R_110_15_A_SOLUTION)
+      &amp; a_solution(R_110_15_A_SOLUTION)
+      &amp; to(R_110_15_A_SOLUTION,R_110_19_FERTILITY)
+      &amp; fertility(R_110_19_FERTILITY)
+      &amp; attrib53(R_110_19_FERTILITY,R_110_18_FALLING)
+      &amp; to_start(R_110_26_TO_START,Z_110_A_STUCK_JAPAN_73,R_110_23_A_PLACE)
+      &amp; a_place(R_110_23_A_PLACE)
+      &amp; attrib68(R_110_23_A_PLACE,R_110_24_GOOD) ) ).
 </pre>
 <br><hr><br>
 <svg width="1236pt" height="703pt"

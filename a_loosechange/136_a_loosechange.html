@@ -400,30 +400,24 @@ arc(z_000_136_a_loosechange_30, r_0136_0011__saying, restriction).
 </svg>
 <pre>
 fof(formula,axiom,
-    ! [Z_000_136_A_LOOSECHANGE_30,R_0136_0001__I,R_0136_0007__SHE,R_0136_0008__SMILED,R_0136_0016__LONDON,R_0136_0015__LOVE,UTTERANCE_136_A_LOOSECHANGE_38,R_0136_0011__SAYING] :
-      ( ( r_0136_0001__I(R_0136_0001__I)
-        &amp; r_0136_0007__she(R_0136_0007__SHE)
-        &amp; r_0136_0016__London(R_0136_0016__LONDON)
-        &amp; z_000_136_a_loosechange_30(Z_000_136_A_LOOSECHANGE_30)
-        &amp; has_conj1(Z_000_136_A_LOOSECHANGE_30,R_0136_0011__SAYING)
-        &amp; r_0136_0011__saying(R_0136_0011__SAYING)
-        &amp; has_arg0(R_0136_0011__SAYING,R_0136_0007__SHE)
-        &amp; has_arg1(R_0136_0011__SAYING,UTTERANCE_136_A_LOOSECHANGE_38)
+    ! [Z_136_A_LOOSECHANGE_30,R_136_11_SAYING,UTTERANCE_136_A_LOOSECHANGE_38,R_136_15_LOVE,R_136_16_LONDON,R_136_8_SMILED,R_136_7_SHE,R_136_1_I] :
+      ( ( london(R_136_16_LONDON)
+        &amp; she(R_136_7_SHE)
+        &amp; i(R_136_1_I)
+        &amp; z_136_a_loosechange_30(Z_136_A_LOOSECHANGE_30)
+        &amp; conj1(Z_136_A_LOOSECHANGE_30,R_136_11_SAYING)
+        &amp; saying(R_136_11_SAYING,R_136_7_SHE,UTTERANCE_136_A_LOOSECHANGE_38)
         &amp; utterance_136_a_loosechange_38(UTTERANCE_136_A_LOOSECHANGE_38)
-        &amp; has_part1(UTTERANCE_136_A_LOOSECHANGE_38,R_0136_0015__LOVE)
-        &amp; r_0136_0015__love(R_0136_0015__LOVE)
-        &amp; has_arg1(R_0136_0015__LOVE,R_0136_0016__LONDON)
-        &amp; has_arg0(R_0136_0015__LOVE,R_0136_0007__SHE)
-        &amp; has_conj2(Z_000_136_A_LOOSECHANGE_30,R_0136_0008__SMILED)
-        &amp; r_0136_0008__smiled(R_0136_0008__SMILED)
-        &amp; has_arg0(R_0136_0008__SMILED,R_0136_0007__SHE)
-        &amp; has_r_0136_0009__at_clr27(R_0136_0008__SMILED,R_0136_0001__I) )
-     =&gt; ? [R_0136_0004__UGLY,R_0136_0003__THE_R_0136_0005__GAP,R_0136_0002__NOTICED] :
-          ( r_0136_0004__ugly(R_0136_0004__UGLY)
-          &amp; ~ ( has_arg1(R_0136_0002__NOTICED,R_0136_0003__THE_R_0136_0005__GAP)
-              &amp; r_0136_0003__the_r_0136_0005__gap(R_0136_0003__THE_R_0136_0005__GAP)
-              &amp; has_attrib10(R_0136_0003__THE_R_0136_0005__GAP,R_0136_0004__UGLY)
-              &amp; has_arg0(R_0136_0002__NOTICED,R_0136_0001__I) ) ) ) ).
+        &amp; part1(UTTERANCE_136_A_LOOSECHANGE_38,R_136_15_LOVE)
+        &amp; love(R_136_15_LOVE,R_136_7_SHE,R_136_16_LONDON)
+        &amp; conj2(Z_136_A_LOOSECHANGE_30,R_136_8_SMILED)
+        &amp; smiled(R_136_8_SMILED,R_136_7_SHE)
+        &amp; at_clr27(R_136_8_SMILED,R_136_1_I) )
+     =&gt; ? [R_136_2_NOTICED,R_136_3_THE_GAP,R_136_4_UGLY] :
+          ( ugly(R_136_4_UGLY)
+          &amp; noticed(R_136_2_NOTICED,R_136_1_I,R_136_3_THE_GAP)
+          &amp; the_gap(R_136_3_THE_GAP)
+          &amp; attrib10(R_136_3_THE_GAP,R_136_4_UGLY) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="755pt" height="432pt"

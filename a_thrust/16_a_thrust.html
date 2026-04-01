@@ -358,25 +358,21 @@ arc(r_0016_0017__failed, r_0016_0014__the_r_0016_0015__mission, arg0).
 </svg>
 <pre>
 fof(formula,axiom,
-    ! [R_0016_0005__AND,R_0016_0002__THIS,R_0016_0003__HAPPENS] :
-      ( ( r_0016_0002__this(R_0016_0002__THIS)
-        &amp; r_0016_0005__and(R_0016_0005__AND)
-        &amp; has_conj2(R_0016_0005__AND,R_0016_0008__NOT)
-        &amp; ~ ? [R_0016_0006__YOU,R_0016_0010__THE_R_0016_0011__POD,R_0016_0007__HAVE_R_0016_0009__COLLECTED] :
-              ( r_0016_0006__you(R_0016_0006__YOU)
-              &amp; r_0016_0010__the_r_0016_0011__pod(R_0016_0010__THE_R_0016_0011__POD)
-              &amp; r_0016_0007__have_r_0016_0009__collected(R_0016_0007__HAVE_R_0016_0009__COLLECTED)
-              &amp; has_arg1(R_0016_0007__HAVE_R_0016_0009__COLLECTED,R_0016_0010__THE_R_0016_0011__POD)
-              &amp; has_arg0(R_0016_0007__HAVE_R_0016_0009__COLLECTED,R_0016_0006__YOU) )
-        &amp; has_conj1(R_0016_0005__AND,R_0016_0003__HAPPENS)
-        &amp; r_0016_0003__happens(R_0016_0003__HAPPENS)
-        &amp; has_arg0(R_0016_0003__HAPPENS,R_0016_0002__THIS) )
-     =&gt; ? [R_0016_0013__THEN,R_0016_0014__THE_R_0016_0015__MISSION,R_0016_0016__HAS_R_0016_0017__FAILED] :
-          ( r_0016_0013__then(R_0016_0013__THEN)
-          &amp; r_0016_0014__the_r_0016_0015__mission(R_0016_0014__THE_R_0016_0015__MISSION)
-          &amp; r_0016_0016__has_r_0016_0017__failed(R_0016_0016__HAS_R_0016_0017__FAILED)
-          &amp; has_arg0(R_0016_0016__HAS_R_0016_0017__FAILED,R_0016_0014__THE_R_0016_0015__MISSION)
-          &amp; has_nim36(R_0016_0016__HAS_R_0016_0017__FAILED,R_0016_0013__THEN) ) ) ).
+    ! [R_16_5_AND,R_16_3_HAPPENS,R_16_2_THIS] :
+      ( ( this(R_16_2_THIS)
+        &amp; and(R_16_5_AND)
+        &amp; conj1(R_16_5_AND,R_16_3_HAPPENS)
+        &amp; happens(R_16_3_HAPPENS,R_16_2_THIS)
+        &amp; conj2(R_16_5_AND,R_16_8_NOT)
+        &amp; ~ ? [R_16_7_HAVE_COLLECTED,R_16_6_YOU,R_16_10_THE_POD] :
+              ( you(R_16_6_YOU)
+              &amp; the_pod(R_16_10_THE_POD)
+              &amp; have_collected(R_16_7_HAVE_COLLECTED,R_16_6_YOU,R_16_10_THE_POD) ) )
+     =&gt; ? [R_16_16_HAS_FAILED,R_16_14_THE_MISSION,R_16_13_THEN] :
+          ( the_mission(R_16_14_THE_MISSION)
+          &amp; then(R_16_13_THEN)
+          &amp; has_failed(R_16_16_HAS_FAILED,R_16_14_THE_MISSION)
+          &amp; nim36(R_16_16_HAS_FAILED,R_16_13_THEN) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="743pt" height="432pt"

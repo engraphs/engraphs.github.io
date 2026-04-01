@@ -468,36 +468,29 @@ arc(r_0024_0022__water, r_0024_0021__cold, attrib57).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_0024_0002__PIERS,R_0024_0004__ALOOF,R_0024_0001__BUT_R_0024_0003__REMAINED,R_0024_0006__AND] :
-      ( r_0024_0002__Piers(R_0024_0002__PIERS)
-      &amp; r_0024_0004__aloof(R_0024_0004__ALOOF)
-      &amp; r_0024_0006__and(R_0024_0006__AND)
-      &amp; ! [R_0024_0009__SUGGESTED,R_0024_0008__BERYL,R_0024_0011__A_R_0024_0012__SECOND_R_0024_0013__PARTY,R_0024_0016__FOLLOWING,R_0024_0015__THE_R_0024_0017__WEEK,R_0024_0010__HAVING] :
-          ( ( r_0024_0008__Beryl(R_0024_0008__BERYL)
-            &amp; r_0024_0011__a_r_0024_0012__second_r_0024_0013__party(R_0024_0011__A_R_0024_0012__SECOND_R_0024_0013__PARTY)
-            &amp; r_0024_0016__following(R_0024_0016__FOLLOWING)
-            &amp; r_0024_0009__suggested(R_0024_0009__SUGGESTED)
-            &amp; has_arg1(R_0024_0009__SUGGESTED,R_0024_0010__HAVING)
-            &amp; r_0024_0010__having(R_0024_0010__HAVING)
-            &amp; has_nim41(R_0024_0010__HAVING,R_0024_0015__THE_R_0024_0017__WEEK)
-            &amp; r_0024_0015__the_r_0024_0017__week(R_0024_0015__THE_R_0024_0017__WEEK)
-            &amp; has_attrib44(R_0024_0015__THE_R_0024_0017__WEEK,R_0024_0016__FOLLOWING)
-            &amp; has_arg1(R_0024_0010__HAVING,R_0024_0011__A_R_0024_0012__SECOND_R_0024_0013__PARTY)
-            &amp; has_arg0(R_0024_0010__HAVING,R_0024_0008__BERYL)
-            &amp; has_arg0(R_0024_0009__SUGGESTED,R_0024_0008__BERYL) )
-         =&gt; ? [R_0024_0021__COLD,R_0024_0022__WATER,R_0024_0024__THE_R_0024_0025__PROJECT,R_0024_0020__POURED] :
-              ( r_0024_0021__cold(R_0024_0021__COLD)
-              &amp; r_0024_0024__the_r_0024_0025__project(R_0024_0024__THE_R_0024_0025__PROJECT)
-              &amp; r_0024_0020__poured(R_0024_0020__POURED)
-              &amp; has_r_0024_0023__on_clr65(R_0024_0020__POURED,R_0024_0024__THE_R_0024_0025__PROJECT)
-              &amp; has_arg1(R_0024_0020__POURED,R_0024_0022__WATER)
-              &amp; r_0024_0022__water(R_0024_0022__WATER)
-              &amp; has_attrib57(R_0024_0022__WATER,R_0024_0021__COLD)
-              &amp; has_arg0(R_0024_0020__POURED,R_0024_0002__PIERS) ) )
-      &amp; has_conj1(R_0024_0006__AND,R_0024_0001__BUT_R_0024_0003__REMAINED)
-      &amp; r_0024_0001__But_r_0024_0003__remained(R_0024_0001__BUT_R_0024_0003__REMAINED)
-      &amp; has_prd(R_0024_0001__BUT_R_0024_0003__REMAINED,R_0024_0004__ALOOF)
-      &amp; has_arg0(R_0024_0001__BUT_R_0024_0003__REMAINED,R_0024_0002__PIERS) ) ).
+    ? [R_24_6_AND,R_24_1_BUT_REMAINED,R_24_2_PIERS,R_24_4_ALOOF] :
+      ( piers(R_24_2_PIERS)
+      &amp; aloof(R_24_4_ALOOF)
+      &amp; ! [R_24_9_SUGGESTED,R_24_10_HAVING,R_24_8_BERYL,R_24_11_A_SECOND_PARTY,R_24_15_THE_WEEK,R_24_16_FOLLOWING] :
+          ( ( beryl(R_24_8_BERYL)
+            &amp; a_second_party(R_24_11_A_SECOND_PARTY)
+            &amp; following(R_24_16_FOLLOWING)
+            &amp; suggested(R_24_9_SUGGESTED,R_24_8_BERYL,R_24_10_HAVING)
+            &amp; having(R_24_10_HAVING,R_24_8_BERYL,R_24_11_A_SECOND_PARTY)
+            &amp; nim41(R_24_10_HAVING,R_24_15_THE_WEEK)
+            &amp; the_week(R_24_15_THE_WEEK)
+            &amp; attrib44(R_24_15_THE_WEEK,R_24_16_FOLLOWING) )
+         =&gt; ? [R_24_20_POURED,R_24_22_WATER,R_24_21_COLD,R_24_24_THE_PROJECT] :
+              ( cold(R_24_21_COLD)
+              &amp; the_project(R_24_24_THE_PROJECT)
+              &amp; poured(R_24_20_POURED,R_24_2_PIERS,R_24_22_WATER)
+              &amp; water(R_24_22_WATER)
+              &amp; attrib57(R_24_22_WATER,R_24_21_COLD)
+              &amp; on_clr65(R_24_20_POURED,R_24_24_THE_PROJECT) ) )
+      &amp; conj2(CONJ2)
+      &amp; and(R_24_6_AND)
+      &amp; conj1(R_24_6_AND,R_24_1_BUT_REMAINED)
+      &amp; but_remained(R_24_1_BUT_REMAINED,R_24_2_PIERS,R_24_4_ALOOF) ) ).
 </pre>
 <br><hr><br>
 <svg width="1152pt" height="478pt"

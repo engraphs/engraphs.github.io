@@ -492,46 +492,33 @@ arc(r_0024_0016__hygienic, z_000_24_a_lockdown_44, nim44).
 </svg>
 <pre>
 fof(formula,axiom,
-    ( ! [Z_000_24_A_LOCKDOWN_44] :
-        ( z_000_24_a_lockdown_44(Z_000_24_A_LOCKDOWN_44)
-       =&gt; ? [R_0024_0012__SURE,R_0024_0016__HYGIENIC,R_0024_0014___APOS_S,Z_000_24_A_LOCKDOWN_2,R_0024_0011__MAKING] :
-            ( r_0024_0012__sure(R_0024_0012__SURE)
-            &amp; z_000_24_a_lockdown_2(Z_000_24_A_LOCKDOWN_2)
-            &amp; r_0024_0011__making(R_0024_0011__MAKING)
-            &amp; has_arg0(R_0024_0011__MAKING,Z_000_24_A_LOCKDOWN_2)
-            &amp; has_arg1(R_0024_0011__MAKING,R_0024_0014___APOS_S)
-            &amp; r_0024_0014___apos_s(R_0024_0014___APOS_S)
-            &amp; has_prd(R_0024_0014___APOS_S,R_0024_0016__HYGIENIC)
-            &amp; r_0024_0016__hygienic(R_0024_0016__HYGIENIC)
-            &amp; has_nim44(R_0024_0016__HYGIENIC,Z_000_24_A_LOCKDOWN_44)
-            &amp; has_prd(R_0024_0011__MAKING,R_0024_0012__SURE) ) )
-    &amp; ! [R_0024_0005__A_R_0024_0006__PALAVER,R_0024_0004__SUCH] :
-        ( ( r_0024_0004__such(R_0024_0004__SUCH)
-          &amp; r_0024_0005__a_r_0024_0006__palaver(R_0024_0005__A_R_0024_0006__PALAVER)
-          &amp; has_attrib10(R_0024_0005__A_R_0024_0006__PALAVER,R_0024_0004__SUCH) )
-       =&gt; ? [R_0024_0012__SURE,Z_000_24_A_LOCKDOWN_44,R_0024_0016__HYGIENIC,R_0024_0014___APOS_S,Z_000_24_A_LOCKDOWN_2,R_0024_0011__MAKING,R_0024_0010__AND,R_0024_0002___APOS_S] :
-            ( r_0024_0012__sure(R_0024_0012__SURE)
-            &amp; z_000_24_a_lockdown_2(Z_000_24_A_LOCKDOWN_2)
-            &amp; z_000_24_a_lockdown_44(Z_000_24_A_LOCKDOWN_44)
-            &amp; r_0024_0002___apos_s(R_0024_0002___APOS_S)
-            &amp; has_arg0(R_0024_0002___APOS_S,R_0024_0010__AND)
-            &amp; r_0024_0010__and(R_0024_0010__AND)
-            &amp; has_conj2(R_0024_0010__AND,R_0024_0011__MAKING)
-            &amp; r_0024_0011__making(R_0024_0011__MAKING)
-            &amp; has_arg0(R_0024_0011__MAKING,Z_000_24_A_LOCKDOWN_2)
-            &amp; has_arg1(R_0024_0011__MAKING,R_0024_0014___APOS_S)
-            &amp; r_0024_0014___apos_s(R_0024_0014___APOS_S)
-            &amp; has_prd(R_0024_0014___APOS_S,R_0024_0016__HYGIENIC)
-            &amp; r_0024_0016__hygienic(R_0024_0016__HYGIENIC)
-            &amp; has_nim44(R_0024_0016__HYGIENIC,Z_000_24_A_LOCKDOWN_44)
-            &amp; has_prd(R_0024_0011__MAKING,R_0024_0012__SURE)
-            &amp; ! [Z_000_24_A_LOCKDOWN_24] :
-                ( z_000_24_a_lockdown_24(Z_000_24_A_LOCKDOWN_24)
-               =&gt; ? [R_0024_0008__WASHING] :
-                    ( r_0024_0008__washing(R_0024_0008__WASHING)
-                    &amp; has_arg1(R_0024_0008__WASHING,Z_000_24_A_LOCKDOWN_24)
-                    &amp; has_arg0(R_0024_0008__WASHING,Z_000_24_A_LOCKDOWN_2) ) )
-            &amp; has_prd(R_0024_0002___APOS_S,R_0024_0005__A_R_0024_0006__PALAVER) ) ) ) ).
+    ( ! [R_24_5_A_PALAVER,R_24_4_SUCH] :
+        ( ( such(R_24_4_SUCH)
+          &amp; a_palaver(R_24_5_A_PALAVER)
+          &amp; attrib10(R_24_5_A_PALAVER,R_24_4_SUCH) )
+       =&gt; ? [R_24_2__APOS_S,R_24_10_AND,R_24_11_MAKING,Z_24_A_LOCKDOWN_2,R_24_14__APOS_S,R_24_16_HYGIENIC,Z_24_A_LOCKDOWN_44,R_24_12_SURE] :
+            ( sure(R_24_12_SURE)
+            &amp; _apos_s(R_24_2__APOS_S,R_24_10_AND,R_24_5_A_PALAVER)
+            &amp; ! [Z_24_A_LOCKDOWN_24] :
+                ( true
+               =&gt; ? [R_24_8_WASHING] : washing(R_24_8_WASHING,Z_24_A_LOCKDOWN_2,Z_24_A_LOCKDOWN_24) )
+            &amp; conj1(CONJ1)
+            &amp; and(R_24_10_AND)
+            &amp; conj2(R_24_10_AND,R_24_11_MAKING)
+            &amp; making(R_24_11_MAKING,Z_24_A_LOCKDOWN_2,R_24_14__APOS_S,R_24_12_SURE)
+            &amp; _apos_s(R_24_14__APOS_S)
+            &amp; prd(R_24_14__APOS_S,R_24_16_HYGIENIC)
+            &amp; hygienic(R_24_16_HYGIENIC)
+            &amp; nim44(R_24_16_HYGIENIC,Z_24_A_LOCKDOWN_44) ) )
+    &amp; ! [Z_24_A_LOCKDOWN_44] :
+        ( true
+       =&gt; ? [R_24_11_MAKING,Z_24_A_LOCKDOWN_2,R_24_14__APOS_S,R_24_16_HYGIENIC,R_24_12_SURE] :
+            ( sure(R_24_12_SURE)
+            &amp; making(R_24_11_MAKING,Z_24_A_LOCKDOWN_2,R_24_14__APOS_S,R_24_12_SURE)
+            &amp; _apos_s(R_24_14__APOS_S)
+            &amp; prd(R_24_14__APOS_S,R_24_16_HYGIENIC)
+            &amp; hygienic(R_24_16_HYGIENIC)
+            &amp; nim44(R_24_16_HYGIENIC,Z_24_A_LOCKDOWN_44) ) ) ) ).
 </pre>
 <br><hr><br>
 <svg width="789pt" height="478pt"
