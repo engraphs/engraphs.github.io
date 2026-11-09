@@ -53,14 +53,15 @@ Shooting the reactor will damage it, and the guns will cease firing until power 
 <polygon fill="black" stroke="black" points="108.2,-130.57 113.71,-121.52 103.76,-125.16 108.2,-130.57"/>
 <text text-anchor="middle" x="115.5" y="-144.8" font-family="fixed" font-size="14.00">[arg1]</text>
 </g>
-<!-- z_000_12_a_thrust_4 -->
+<!-- x_000_12_a_thrust_4 -->
 <g id="node3" class="node">
-<title>z_000_12_a_thrust_4</title>
+<title>x_000_12_a_thrust_4</title>
 <ellipse fill="none" stroke="black" cx="27" cy="-105" rx="27" ry="18"/>
+<text text-anchor="middle" x="27" y="-101.3" font-family="fixed" font-size="14.00">__</text>
 </g>
-<!-- r_0012_0001__Shooting&#45;&gt;z_000_12_a_thrust_4 -->
+<!-- r_0012_0001__Shooting&#45;&gt;x_000_12_a_thrust_4 -->
 <g id="edge2" class="edge">
-<title>r_0012_0001__Shooting&#45;&gt;z_000_12_a_thrust_4</title>
+<title>r_0012_0001__Shooting&#45;&gt;x_000_12_a_thrust_4</title>
 <path fill="none" stroke="black" d="M47.46,-178.86C39.74,-172.69 32.32,-164.99 28,-156 24.64,-149.01 23.5,-140.8 23.45,-133.08"/>
 <polygon fill="black" stroke="black" points="26.95,-133.18 23.93,-123.02 19.95,-132.84 26.95,-133.18"/>
 <text text-anchor="middle" x="49.5" y="-144.8" font-family="fixed" font-size="14.00">[arg0]</text>
@@ -244,7 +245,7 @@ Shooting the reactor will damage it, and the guns will cease firing until power 
 </svg>
 <pre>
 arc(r_0012_0001__Shooting, r_0012_0002__the_r_0012_0003__reactor, arg1).
-arc(r_0012_0001__Shooting, z_000_12_a_thrust_4, arg0).
+arc(r_0012_0001__Shooting, x_000_12_a_thrust_4, arg0).
 arc(r_0012_0004__will, r_0012_0005__damage, scope).
 arc(r_0012_0005__damage, r_0012_0001__Shooting, arg0).
 arc(r_0012_0005__damage, r_0012_0002__the_r_0012_0003__reactor, arg1).
@@ -285,14 +286,15 @@ arc(r_0012_0018__restored, z_000_12_a_thrust_52, arg0).
 <polygon fill="black" stroke="black" points="108.65,-43.5 114.28,-34.52 104.28,-38.03 108.65,-43.5"/>
 <text text-anchor="middle" x="115.5" y="-57.8" font-family="fixed" font-size="14.00">[arg1]</text>
 </g>
-<!-- z_000_12_a_thrust_4 -->
+<!-- x_000_12_a_thrust_4 -->
 <g id="node3" class="node">
-<title>z_000_12_a_thrust_4</title>
+<title>x_000_12_a_thrust_4</title>
 <ellipse fill="none" stroke="black" cx="27" cy="-18" rx="27" ry="18"/>
+<text text-anchor="middle" x="27" y="-14.3" font-family="fixed" font-size="14.00">__</text>
 </g>
-<!-- r_0012_0001__Shooting&#45;&gt;z_000_12_a_thrust_4 -->
+<!-- r_0012_0001__Shooting&#45;&gt;x_000_12_a_thrust_4 -->
 <g id="edge2" class="edge">
-<title>r_0012_0001__Shooting&#45;&gt;z_000_12_a_thrust_4</title>
+<title>r_0012_0001__Shooting&#45;&gt;x_000_12_a_thrust_4</title>
 <path fill="none" stroke="black" d="M43.55,-86.73C37.32,-81.86 31.62,-75.95 28,-69 24.41,-62.12 23.21,-53.95 23.16,-46.23"/>
 <polygon fill="black" stroke="black" points="26.66,-46.31 23.7,-36.14 19.67,-45.94 26.66,-46.31"/>
 <text text-anchor="middle" x="49.5" y="-57.8" font-family="fixed" font-size="14.00">[arg0]</text>
@@ -411,14 +413,14 @@ arc(r_0012_0018__restored, z_000_12_a_thrust_52, arg0).
 </svg>
 <pre>
 fof(formula,axiom,
-    ? [R_12_8_AND,R_12_4_WILL_DAMAGE,R_12_1_SHOOTING,Z_12_A_THRUST_4,R_12_2_THE_REACTOR,R_12_14_UNTIL,R_12_16_CAN_BE_RESTORED,Z_12_A_THRUST_52,R_12_15_POWER,R_12_11_WILL_CEASE_FIRING,R_12_9_THE_GUNS] :
+    ? [R_12_8_AND,R_12_4_WILL_DAMAGE,R_12_1_SHOOTING,X_12_A_THRUST_4,R_12_2_THE_REACTOR,R_12_14_UNTIL,R_12_16_CAN_BE_RESTORED,Z_12_A_THRUST_52,R_12_15_POWER,R_12_11_WILL_CEASE_FIRING,R_12_9_THE_GUNS] :
       ( the_reactor(R_12_2_THE_REACTOR)
       &amp; power(R_12_15_POWER)
       &amp; the_guns(R_12_9_THE_GUNS)
       &amp; and(R_12_8_AND)
       &amp; conj1(R_12_8_AND,R_12_4_WILL_DAMAGE)
       &amp; will_damage(R_12_4_WILL_DAMAGE,R_12_1_SHOOTING,R_12_2_THE_REACTOR)
-      &amp; shooting(R_12_1_SHOOTING,Z_12_A_THRUST_4,R_12_2_THE_REACTOR)
+      &amp; shooting(R_12_1_SHOOTING,X_12_A_THRUST_4,R_12_2_THE_REACTOR)
       &amp; conj2(R_12_8_AND,R_12_14_UNTIL)
       &amp; until(R_12_14_UNTIL)
       &amp; conj1(R_12_14_UNTIL,R_12_16_CAN_BE_RESTORED)
@@ -605,7 +607,7 @@ fof(formula,axiom,
 <g id="node18" class="node">
 <title>n12_a_thrust_53</title>
 <g id="a_node18"><a xlink:title="12_a_thrust@53">
-<text text-anchor="middle" x="867.5" y="-57.4" font-family="Helvetica,sans-Serif" font-size="12.00">*</text>
+<text text-anchor="middle" x="869.5" y="-57.4" font-family="Helvetica,sans-Serif" font-size="12.00">*</text>
 </a>
 </g>
 </g>
@@ -667,14 +669,14 @@ fof(formula,axiom,
 <g id="node23" class="node">
 <title>n12_a_thrust_3</title>
 <g id="a_node23"><a xlink:title="12_a_thrust@3">
-<text text-anchor="middle" x="287.5" y="-407.4" font-family="Helvetica,sans-Serif" font-size="12.00">ILYR</text>
+<text text-anchor="middle" x="288.5" y="-407.4" font-family="Helvetica,sans-Serif" font-size="12.00">ILYR</text>
 </a>
 </g>
 </g>
 <!-- n12_a_thrust_2&#45;&gt;n12_a_thrust_3 -->
 <g id="edge20" class="edge">
 <title>n12_a_thrust_2&#45;&gt;n12_a_thrust_3</title>
-<path fill="none" stroke="#000000" stroke-width="1.5" d="M368.5,-448.5C368.5,-448.5 332.36,-431.99 308.36,-421.03"/>
+<path fill="none" stroke="#000000" stroke-width="1.5" d="M368.5,-448.5C368.5,-448.5 332.81,-431.99 309.1,-421.03"/>
 </g>
 <!-- n12_a_thrust_20 -->
 <g id="node34" class="node">
@@ -707,111 +709,111 @@ fof(formula,axiom,
 <g id="node24" class="node">
 <title>n12_a_thrust_4</title>
 <g id="a_node24"><a xlink:title="12_a_thrust@4">
-<text text-anchor="middle" x="113.5" y="-157.4" font-family="Helvetica,sans-Serif" font-size="12.00">IP&#45;PPL&#45;SBJ</text>
+<text text-anchor="middle" x="110.5" y="-157.4" font-family="Helvetica,sans-Serif" font-size="12.00">IP&#45;PPL3&#45;SBJ</text>
 </a>
 </g>
 </g>
 <!-- n12_a_thrust_3&#45;&gt;n12_a_thrust_4 -->
 <g id="edge21" class="edge">
 <title>n12_a_thrust_3&#45;&gt;n12_a_thrust_4</title>
-<path fill="none" stroke="#000000" stroke-width="1.5" d="M287.5,-398.5C287.5,-398.5 152.5,-382.88 152.5,-311.5 152.5,-311.5 152.5,-311.5 152.5,-259.5 152.5,-224.89 131.24,-187.97 120.12,-171.01"/>
+<path fill="none" stroke="#000000" stroke-width="1.5" d="M288.5,-398.5C288.5,-398.5 151.5,-383.63 151.5,-311.5 151.5,-311.5 151.5,-311.5 151.5,-259.5 151.5,-224.83 129.39,-188.23 117.64,-171.23"/>
 </g>
 <!-- n12_a_thrust_12 -->
 <g id="node29" class="node">
 <title>n12_a_thrust_12</title>
 <g id="a_node29"><a xlink:title="12_a_thrust@12">
-<text text-anchor="middle" x="200.5" y="-157.4" font-family="Helvetica,sans-Serif" font-size="12.00">MD;_cat_Vi_</text>
+<text text-anchor="middle" x="201.5" y="-157.4" font-family="Helvetica,sans-Serif" font-size="12.00">MD;_cat_Vi_</text>
 </a>
 </g>
 </g>
 <!-- n12_a_thrust_3&#45;&gt;n12_a_thrust_12 -->
 <g id="edge31" class="edge">
 <title>n12_a_thrust_3&#45;&gt;n12_a_thrust_12</title>
-<path fill="none" stroke="#000000" stroke-width="1.5" d="M287.5,-398.5C287.5,-398.5 239.5,-355.66 239.5,-311.5 239.5,-311.5 239.5,-311.5 239.5,-259.5 239.5,-224.89 218.24,-187.97 207.12,-171.01"/>
+<path fill="none" stroke="#000000" stroke-width="1.5" d="M288.5,-398.5C288.5,-398.5 240.5,-355.66 240.5,-311.5 240.5,-311.5 240.5,-311.5 240.5,-259.5 240.5,-224.89 219.24,-187.97 208.12,-171.01"/>
 </g>
 <!-- n12_a_thrust_14 -->
 <g id="node30" class="node">
 <title>n12_a_thrust_14</title>
 <g id="a_node30"><a xlink:title="12_a_thrust@14">
-<text text-anchor="middle" x="287.5" y="-157.4" font-family="Helvetica,sans-Serif" font-size="12.00">IP&#45;INF&#45;CAT</text>
+<text text-anchor="middle" x="288.5" y="-157.4" font-family="Helvetica,sans-Serif" font-size="12.00">IP&#45;INF&#45;CAT</text>
 </a>
 </g>
 </g>
 <!-- n12_a_thrust_3&#45;&gt;n12_a_thrust_14 -->
 <g id="edge34" class="edge">
 <title>n12_a_thrust_3&#45;&gt;n12_a_thrust_14</title>
-<path fill="none" stroke="#000000" stroke-width="1.5" d="M287.5,-398.5C287.5,-398.5 287.5,-350.17 287.5,-311.5 287.5,-311.5 287.5,-311.5 287.5,-259.5 287.5,-227.17 287.5,-188.85 287.5,-171.24"/>
+<path fill="none" stroke="#000000" stroke-width="1.5" d="M288.5,-398.5C288.5,-398.5 288.5,-350.17 288.5,-311.5 288.5,-311.5 288.5,-311.5 288.5,-259.5 288.5,-227.17 288.5,-188.85 288.5,-171.24"/>
 </g>
 <!-- n12_a_thrust_3&#45;&gt;n12_a_thrust_20 -->
 <!-- n12_a_thrust_5 -->
 <g id="node25" class="node">
 <title>n12_a_thrust_5</title>
 <g id="a_node25"><a xlink:title="12_a_thrust@5">
-<text text-anchor="middle" x="42.5" y="-107.4" font-family="Helvetica,sans-Serif" font-size="12.00">VAG;_Tn_</text>
+<text text-anchor="middle" x="39.5" y="-107.4" font-family="Helvetica,sans-Serif" font-size="12.00">VAG;_Tn_</text>
 </a>
 </g>
 </g>
 <!-- n12_a_thrust_4&#45;&gt;n12_a_thrust_5 -->
 <g id="edge22" class="edge">
 <title>n12_a_thrust_4&#45;&gt;n12_a_thrust_5</title>
-<path fill="none" stroke="#000000" stroke-width="1.5" d="M114.5,-148.5C114.5,-148.5 82.37,-131.99 61.04,-121.03"/>
+<path fill="none" stroke="#000000" stroke-width="1.5" d="M111.5,-148.5C111.5,-148.5 79.37,-131.99 58.04,-121.03"/>
 </g>
 <!-- n12_a_thrust_7 -->
 <g id="node26" class="node">
 <title>n12_a_thrust_7</title>
 <g id="a_node26"><a xlink:title="{REACTOR}&#10;12_a_thrust@7">
-<text text-anchor="middle" x="113.5" y="-107.4" font-family="Helvetica,sans-Serif" font-size="12.00">NP&#45;OB1</text>
+<text text-anchor="middle" x="110.5" y="-107.4" font-family="Helvetica,sans-Serif" font-size="12.00">NP&#45;OB1</text>
 </a>
 </g>
 </g>
 <!-- n12_a_thrust_4&#45;&gt;n12_a_thrust_7 -->
 <g id="edge24" class="edge">
 <title>n12_a_thrust_4&#45;&gt;n12_a_thrust_7</title>
-<path fill="none" stroke="#000000" stroke-width="1.5" d="M114.5,-148.5C114.5,-148.5 114.06,-132.18 113.76,-121.22"/>
+<path fill="none" stroke="#000000" stroke-width="1.5" d="M111.5,-148.5C111.5,-148.5 111.06,-132.18 110.76,-121.22"/>
 </g>
 <!-- n12_a_thrust_4&#45;&gt;n12_a_thrust_12 -->
 <!-- n12_a_thrust_5&#45;&gt;n12_a_thrust_6 -->
 <g id="edge23" class="edge">
 <title>n12_a_thrust_5&#45;&gt;n12_a_thrust_6</title>
-<path fill="none" stroke="#000000" stroke-width="1.5" d="M52.5,-98.5C52.5,-98.5 41.18,-43.79 36.5,-21.14"/>
+<path fill="none" stroke="#000000" stroke-width="1.5" d="M49.5,-98.5C49.5,-98.5 40.07,-43.79 36.16,-21.14"/>
 </g>
 <!-- n12_a_thrust_5&#45;&gt;n12_a_thrust_7 -->
 <!-- n12_a_thrust_8 -->
 <g id="node27" class="node">
 <title>n12_a_thrust_8</title>
 <g id="a_node27"><a xlink:title="12_a_thrust@8">
-<text text-anchor="middle" x="102.5" y="-57.4" font-family="Helvetica,sans-Serif" font-size="12.00">D</text>
+<text text-anchor="middle" x="101.5" y="-57.4" font-family="Helvetica,sans-Serif" font-size="12.00">D</text>
 </a>
 </g>
 </g>
 <!-- n12_a_thrust_7&#45;&gt;n12_a_thrust_8 -->
 <g id="edge26" class="edge">
 <title>n12_a_thrust_7&#45;&gt;n12_a_thrust_8</title>
-<path fill="none" stroke="#000000" stroke-width="1.5" d="M114.5,-98.5C114.5,-98.5 109.21,-82.18 105.65,-71.22"/>
+<path fill="none" stroke="#000000" stroke-width="1.5" d="M111.5,-98.5C111.5,-98.5 107.09,-82.18 104.13,-71.22"/>
 </g>
 <!-- n12_a_thrust_10 -->
 <g id="node28" class="node">
 <title>n12_a_thrust_10</title>
 <g id="a_node28"><a xlink:title="12_a_thrust@10">
-<text text-anchor="middle" x="132.5" y="-57.4" font-family="Helvetica,sans-Serif" font-size="12.00">N</text>
+<text text-anchor="middle" x="131.5" y="-57.4" font-family="Helvetica,sans-Serif" font-size="12.00">N</text>
 </a>
 </g>
 </g>
 <!-- n12_a_thrust_7&#45;&gt;n12_a_thrust_10 -->
 <g id="edge28" class="edge">
 <title>n12_a_thrust_7&#45;&gt;n12_a_thrust_10</title>
-<path fill="none" stroke="#000000" stroke-width="1.5" d="M114.5,-98.5C114.5,-98.5 122.44,-82.18 127.77,-71.22"/>
+<path fill="none" stroke="#000000" stroke-width="1.5" d="M111.5,-98.5C111.5,-98.5 120.32,-82.18 126.25,-71.22"/>
 </g>
 <!-- n12_a_thrust_8&#45;&gt;n12_a_thrust_9 -->
 <g id="edge27" class="edge">
 <title>n12_a_thrust_8&#45;&gt;n12_a_thrust_9</title>
-<path fill="none" stroke="#000000" stroke-width="1.5" d="M111.5,-48.5C111.5,-48.5 102.68,-32.18 96.75,-21.22"/>
+<path fill="none" stroke="#000000" stroke-width="1.5" d="M110.5,-48.5C110.5,-48.5 102.12,-32.18 96.49,-21.22"/>
 </g>
 <!-- n12_a_thrust_8&#45;&gt;n12_a_thrust_10 -->
 <!-- n12_a_thrust_10&#45;&gt;n12_a_thrust_11 -->
 <g id="edge30" class="edge">
 <title>n12_a_thrust_10&#45;&gt;n12_a_thrust_11</title>
-<path fill="none" stroke="#000000" stroke-width="1.5" d="M134.73,-49.79C136.63,-41.46 139.37,-29.52 141.28,-21.2"/>
+<path fill="none" stroke="#000000" stroke-width="1.5" d="M133.93,-49.79C136.01,-41.46 138.99,-29.52 141.08,-21.2"/>
 </g>
 <!-- n12_a_thrust_12&#45;&gt;n12_a_thrust_13 -->
 <g id="edge33" class="edge">
@@ -830,7 +832,7 @@ fof(formula,axiom,
 <!-- n12_a_thrust_14&#45;&gt;n12_a_thrust_15 -->
 <g id="edge36" class="edge">
 <title>n12_a_thrust_14&#45;&gt;n12_a_thrust_15</title>
-<path fill="none" stroke="#000000" stroke-width="1.5" d="M284.5,-148.5C284.5,-148.5 262.19,-131.99 247.38,-121.03"/>
+<path fill="none" stroke="#000000" stroke-width="1.5" d="M285.5,-148.5C285.5,-148.5 262.74,-131.99 247.63,-121.03"/>
 </g>
 <!-- n12_a_thrust_17 -->
 <g id="node32" class="node">
@@ -843,7 +845,7 @@ fof(formula,axiom,
 <!-- n12_a_thrust_14&#45;&gt;n12_a_thrust_17 -->
 <g id="edge38" class="edge">
 <title>n12_a_thrust_14&#45;&gt;n12_a_thrust_17</title>
-<path fill="none" stroke="#000000" stroke-width="1.5" d="M284.5,-148.5C284.5,-148.5 292,-132.18 297.03,-121.22"/>
+<path fill="none" stroke="#000000" stroke-width="1.5" d="M285.5,-148.5C285.5,-148.5 292.56,-132.18 297.3,-121.22"/>
 </g>
 <!-- n12_a_thrust_15&#45;&gt;n12_a_thrust_16 -->
 <g id="edge37" class="edge">
@@ -950,14 +952,14 @@ fof(formula,axiom,
 <g id="node46" class="node">
 <title>n12_a_thrust_39</title>
 <g id="a_node46"><a xlink:title="12_a_thrust@39">
-<text text-anchor="middle" x="660.5" y="-307.4" font-family="Helvetica,sans-Serif" font-size="12.00">PP&#45;SCON</text>
+<text text-anchor="middle" x="661.5" y="-307.4" font-family="Helvetica,sans-Serif" font-size="12.00">PP&#45;SCON</text>
 </a>
 </g>
 </g>
 <!-- n12_a_thrust_25&#45;&gt;n12_a_thrust_39 -->
 <g id="edge68" class="edge">
 <title>n12_a_thrust_25&#45;&gt;n12_a_thrust_39</title>
-<path fill="none" stroke="#000000" stroke-width="1.5" d="M468.5,-348.5C468.5,-348.5 569.86,-328.97 625.28,-318.29"/>
+<path fill="none" stroke="#000000" stroke-width="1.5" d="M468.5,-348.5C468.5,-348.5 570.38,-328.97 626.1,-318.29"/>
 </g>
 <!-- n12_a_thrust_27 -->
 <g id="node39" class="node">
@@ -1000,90 +1002,90 @@ fof(formula,axiom,
 <!-- n12_a_thrust_31&#45;&gt;n12_a_thrust_32 -->
 <g id="edge59" class="edge">
 <title>n12_a_thrust_31&#45;&gt;n12_a_thrust_32</title>
-<path fill="none" stroke="#000000" stroke-width="1.5" d="M488.5,-298.5C488.5,-298.5 476.98,-284.41 472.5,-271 464.07,-245.74 465.5,-238.13 465.5,-211.5 465.5,-211.5 465.5,-211.5 465.5,-109.5 465.5,-76.14 479.27,-38.32 486.37,-21.03"/>
+<path fill="none" stroke="#000000" stroke-width="1.5" d="M488.5,-298.5C488.5,-298.5 477.72,-284.27 473.5,-271 465.42,-245.63 466.5,-238.13 466.5,-211.5 466.5,-211.5 466.5,-211.5 466.5,-109.5 466.5,-76.22 479.72,-38.36 486.54,-21.05"/>
 </g>
 <!-- n12_a_thrust_31&#45;&gt;n12_a_thrust_33 -->
 <!-- n12_a_thrust_34 -->
 <g id="node43" class="node">
 <title>n12_a_thrust_34</title>
 <g id="a_node43"><a xlink:title="12_a_thrust@34">
-<text text-anchor="middle" x="516.5" y="-257.4" font-family="Helvetica,sans-Serif" font-size="12.00">VB;_cat_Vg_</text>
+<text text-anchor="middle" x="517.5" y="-257.4" font-family="Helvetica,sans-Serif" font-size="12.00">VB;_cat_Vg_</text>
 </a>
 </g>
 </g>
 <!-- n12_a_thrust_33&#45;&gt;n12_a_thrust_34 -->
 <g id="edge62" class="edge">
 <title>n12_a_thrust_33&#45;&gt;n12_a_thrust_34</title>
-<path fill="none" stroke="#000000" stroke-width="1.5" d="M571.5,-298.5C571.5,-298.5 546.96,-281.99 530.66,-271.03"/>
+<path fill="none" stroke="#000000" stroke-width="1.5" d="M571.5,-298.5C571.5,-298.5 547.41,-281.99 531.41,-271.03"/>
 </g>
 <!-- n12_a_thrust_36 -->
 <g id="node44" class="node">
 <title>n12_a_thrust_36</title>
 <g id="a_node44"><a xlink:title="12_a_thrust@36">
-<text text-anchor="middle" x="605.5" y="-257.4" font-family="Helvetica,sans-Serif" font-size="12.00">IP&#45;PPL&#45;CAT</text>
+<text text-anchor="middle" x="606.5" y="-257.4" font-family="Helvetica,sans-Serif" font-size="12.00">IP&#45;PPL&#45;CAT</text>
 </a>
 </g>
 </g>
 <!-- n12_a_thrust_33&#45;&gt;n12_a_thrust_36 -->
 <g id="edge64" class="edge">
 <title>n12_a_thrust_33&#45;&gt;n12_a_thrust_36</title>
-<path fill="none" stroke="#000000" stroke-width="1.5" d="M571.5,-298.5C571.5,-298.5 586.49,-282.18 596.57,-271.22"/>
+<path fill="none" stroke="#000000" stroke-width="1.5" d="M571.5,-298.5C571.5,-298.5 586.93,-282.18 597.3,-271.22"/>
 </g>
 <!-- n12_a_thrust_33&#45;&gt;n12_a_thrust_39 -->
 <!-- n12_a_thrust_34&#45;&gt;n12_a_thrust_35 -->
 <g id="edge63" class="edge">
 <title>n12_a_thrust_34&#45;&gt;n12_a_thrust_35</title>
-<path fill="none" stroke="#000000" stroke-width="1.5" d="M528.5,-248.5C528.5,-248.5 530.5,-200.18 530.5,-161.5 530.5,-161.5 530.5,-161.5 530.5,-109.5 530.5,-77.07 534.91,-38.79 537.18,-21.22"/>
+<path fill="none" stroke="#000000" stroke-width="1.5" d="M529.5,-248.5C529.5,-248.5 530.5,-200.17 530.5,-161.5 530.5,-161.5 530.5,-161.5 530.5,-109.5 530.5,-77.07 534.91,-38.79 537.18,-21.22"/>
 </g>
 <!-- n12_a_thrust_34&#45;&gt;n12_a_thrust_36 -->
 <!-- n12_a_thrust_37 -->
 <g id="node45" class="node">
 <title>n12_a_thrust_37</title>
 <g id="a_node45"><a xlink:title="12_a_thrust@37">
-<text text-anchor="middle" x="598.5" y="-207.4" font-family="Helvetica,sans-Serif" font-size="12.00">VAG;_I_</text>
+<text text-anchor="middle" x="600.5" y="-207.4" font-family="Helvetica,sans-Serif" font-size="12.00">VAG;_I_</text>
 </a>
 </g>
 </g>
 <!-- n12_a_thrust_36&#45;&gt;n12_a_thrust_37 -->
 <g id="edge66" class="edge">
 <title>n12_a_thrust_36&#45;&gt;n12_a_thrust_37</title>
-<path fill="none" stroke="#000000" stroke-width="1.5" d="M604.08,-249.79C602.87,-241.46 601.13,-229.52 599.91,-221.2"/>
+<path fill="none" stroke="#000000" stroke-width="1.5" d="M605.29,-249.79C604.24,-241.46 602.75,-229.52 601.71,-221.2"/>
 </g>
 <!-- n12_a_thrust_37&#45;&gt;n12_a_thrust_38 -->
 <g id="edge67" class="edge">
 <title>n12_a_thrust_37&#45;&gt;n12_a_thrust_38</title>
-<path fill="none" stroke="#000000" stroke-width="1.5" d="M598.21,-199.95C597.2,-166.58 593.83,-55.36 592.8,-21.42"/>
+<path fill="none" stroke="#000000" stroke-width="1.5" d="M600.11,-199.95C598.77,-166.58 594.27,-55.36 592.9,-21.42"/>
 </g>
 <!-- n12_a_thrust_40 -->
 <g id="node47" class="node">
 <title>n12_a_thrust_40</title>
 <g id="a_node47"><a xlink:title="12_a_thrust@40">
-<text text-anchor="middle" x="682.5" y="-257.4" font-family="Helvetica,sans-Serif" font-size="12.00">P&#45;CONN</text>
+<text text-anchor="middle" x="683.5" y="-257.4" font-family="Helvetica,sans-Serif" font-size="12.00">P&#45;CONN</text>
 </a>
 </g>
 </g>
 <!-- n12_a_thrust_39&#45;&gt;n12_a_thrust_40 -->
 <g id="edge70" class="edge">
 <title>n12_a_thrust_39&#45;&gt;n12_a_thrust_40</title>
-<path fill="none" stroke="#000000" stroke-width="1.5" d="M669.5,-298.5C669.5,-298.5 675.23,-282.18 679.08,-271.22"/>
+<path fill="none" stroke="#000000" stroke-width="1.5" d="M670.5,-298.5C670.5,-298.5 676.23,-282.18 680.08,-271.22"/>
 </g>
 <!-- n12_a_thrust_42 -->
 <g id="node48" class="node">
 <title>n12_a_thrust_42</title>
 <g id="a_node48"><a xlink:title="12_a_thrust@42">
-<text text-anchor="middle" x="746.5" y="-257.4" font-family="Helvetica,sans-Serif" font-size="12.00">IP&#45;ADV</text>
+<text text-anchor="middle" x="747.5" y="-257.4" font-family="Helvetica,sans-Serif" font-size="12.00">IP&#45;ADV</text>
 </a>
 </g>
 </g>
 <!-- n12_a_thrust_39&#45;&gt;n12_a_thrust_42 -->
 <g id="edge72" class="edge">
 <title>n12_a_thrust_39&#45;&gt;n12_a_thrust_42</title>
-<path fill="none" stroke="#000000" stroke-width="1.5" d="M669.5,-298.5C669.5,-298.5 703.86,-281.99 726.67,-271.03"/>
+<path fill="none" stroke="#000000" stroke-width="1.5" d="M670.5,-298.5C670.5,-298.5 704.86,-281.99 727.67,-271.03"/>
 </g>
 <!-- n12_a_thrust_40&#45;&gt;n12_a_thrust_41 -->
 <g id="edge71" class="edge">
 <title>n12_a_thrust_40&#45;&gt;n12_a_thrust_41</title>
-<path fill="none" stroke="#000000" stroke-width="1.5" d="M691.5,-248.5C691.5,-248.5 660.54,-240.23 648.5,-221 634.37,-198.43 641.5,-188.13 641.5,-161.5 641.5,-161.5 641.5,-161.5 641.5,-109.5 641.5,-77.17 641.5,-38.85 641.5,-21.24"/>
+<path fill="none" stroke="#000000" stroke-width="1.5" d="M692.5,-248.5C692.5,-248.5 660.84,-240.48 648.5,-221 634.25,-198.51 641.5,-188.13 641.5,-161.5 641.5,-161.5 641.5,-161.5 641.5,-109.5 641.5,-77.17 641.5,-38.85 641.5,-21.24"/>
 </g>
 <!-- n12_a_thrust_40&#45;&gt;n12_a_thrust_42 -->
 <!-- n12_a_thrust_43 -->
@@ -1097,7 +1099,7 @@ fof(formula,axiom,
 <!-- n12_a_thrust_42&#45;&gt;n12_a_thrust_43 -->
 <g id="edge74" class="edge">
 <title>n12_a_thrust_42&#45;&gt;n12_a_thrust_43</title>
-<path fill="none" stroke="#000000" stroke-width="1.5" d="M747.5,-248.5C747.5,-248.5 715.82,-231.99 694.78,-221.03"/>
+<path fill="none" stroke="#000000" stroke-width="1.5" d="M748.5,-248.5C748.5,-248.5 716.37,-231.99 695.04,-221.03"/>
 </g>
 <!-- n12_a_thrust_46 -->
 <g id="node51" class="node">
@@ -1110,7 +1112,7 @@ fof(formula,axiom,
 <!-- n12_a_thrust_42&#45;&gt;n12_a_thrust_46 -->
 <g id="edge77" class="edge">
 <title>n12_a_thrust_42&#45;&gt;n12_a_thrust_46</title>
-<path fill="none" stroke="#000000" stroke-width="1.5" d="M747.5,-248.5C747.5,-248.5 749.7,-232.18 751.19,-221.22"/>
+<path fill="none" stroke="#000000" stroke-width="1.5" d="M748.5,-248.5C748.5,-248.5 750.26,-232.18 751.45,-221.22"/>
 </g>
 <!-- n12_a_thrust_48 -->
 <g id="node52" class="node">
@@ -1123,26 +1125,26 @@ fof(formula,axiom,
 <!-- n12_a_thrust_42&#45;&gt;n12_a_thrust_48 -->
 <g id="edge80" class="edge">
 <title>n12_a_thrust_42&#45;&gt;n12_a_thrust_48</title>
-<path fill="none" stroke="#000000" stroke-width="1.5" d="M747.5,-248.5C747.5,-248.5 788.55,-231.99 815.81,-221.03"/>
+<path fill="none" stroke="#000000" stroke-width="1.5" d="M748.5,-248.5C748.5,-248.5 789.1,-231.99 816.07,-221.03"/>
 </g>
 <!-- n12_a_thrust_44 -->
 <g id="node50" class="node">
 <title>n12_a_thrust_44</title>
 <g id="a_node50"><a xlink:title="12_a_thrust@44">
-<text text-anchor="middle" x="681.5" y="-157.4" font-family="Helvetica,sans-Serif" font-size="12.00">N</text>
+<text text-anchor="middle" x="680.5" y="-157.4" font-family="Helvetica,sans-Serif" font-size="12.00">N</text>
 </a>
 </g>
 </g>
 <!-- n12_a_thrust_43&#45;&gt;n12_a_thrust_44 -->
 <g id="edge75" class="edge">
 <title>n12_a_thrust_43&#45;&gt;n12_a_thrust_44</title>
-<path fill="none" stroke="#000000" stroke-width="1.5" d="M688.5,-198.5C688.5,-198.5 685.41,-182.18 683.34,-171.22"/>
+<path fill="none" stroke="#000000" stroke-width="1.5" d="M688.5,-198.5C688.5,-198.5 684.97,-182.18 682.6,-171.22"/>
 </g>
 <!-- n12_a_thrust_43&#45;&gt;n12_a_thrust_46 -->
 <!-- n12_a_thrust_44&#45;&gt;n12_a_thrust_45 -->
 <g id="edge76" class="edge">
 <title>n12_a_thrust_44&#45;&gt;n12_a_thrust_45</title>
-<path fill="none" stroke="#000000" stroke-width="1.5" d="M682.29,-149.79C684.47,-122.91 690.56,-47.75 692.73,-21.05"/>
+<path fill="none" stroke="#000000" stroke-width="1.5" d="M681.35,-149.79C683.71,-122.91 690.32,-47.75 692.66,-21.05"/>
 </g>
 <!-- n12_a_thrust_46&#45;&gt;n12_a_thrust_47 -->
 <g id="edge79" class="edge">
@@ -1211,7 +1213,7 @@ fof(formula,axiom,
 <!-- n12_a_thrust_52&#45;&gt;n12_a_thrust_53 -->
 <g id="edge87" class="edge">
 <title>n12_a_thrust_52&#45;&gt;n12_a_thrust_53</title>
-<path fill="none" stroke="#000000" stroke-width="1.5" d="M859.5,-98.5C859.5,-98.5 863.03,-82.18 865.4,-71.22"/>
+<path fill="none" stroke="#000000" stroke-width="1.5" d="M860.5,-98.5C860.5,-98.5 864.47,-82.18 867.14,-71.22"/>
 </g>
 <!-- n12_a_thrust_52&#45;&gt;n12_a_thrust_54 -->
 <!-- n12_a_thrust_54&#45;&gt;n12_a_thrust_55 -->
@@ -1227,9 +1229,9 @@ fof(formula,axiom,
 </g>
 </svg>
 <pre>
-( (IP-MAT (ILYR (ILYR (IP-PPL-SBJ (VAG;_Tn_ Shooting;{shoot})
-                                  (NP-OB1;{REACTOR} (D the;{the})
-                                                    (N reactor;{reactor})))
+( (IP-MAT (ILYR (ILYR (IP-PPL3-SBJ (VAG;_Tn_ Shooting;{shoot})
+                                   (NP-OB1;{REACTOR} (D the;{the})
+                                                     (N reactor;{reactor})))
                       (MD;_cat_Vi_ will;{will})
                       (IP-INF-CAT (VB;_Tn_ damage;{damage})
                                   (NP-OB1;{REACTOR} (PRO it;{it}))))
